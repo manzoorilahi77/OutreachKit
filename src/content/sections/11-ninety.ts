@@ -23,14 +23,14 @@ export const ninety: Section = {
           when: "Weeks 2–3",
           title: ["Build the template and two demos"],
           text: [
-            "One reusable template for your category, filled with real content. Two spec demos for real local businesses. This is the only week you are allowed to spend on design.",
+            "One reusable template for your category, filled with real content. Two spec demos for real local businesses, with clearly marked placeholders in place of their photos until they give written permission. This is the only week you are allowed to spend on design.",
           ],
         },
         {
           when: "Weeks 3–6",
           title: ["Source 200, contact 200"],
           text: [
-            "Five 60-minute blocks a week. Fifty qualified leads a week. Send every single one a demo screenshot. Expect roughly 25–35 replies and 8–12 calls across the period.",
+            "Five 60-minute blocks a week. Fifty qualified leads a week. Send every single one a text-only first message, then the demo screenshot once they reply. Expect roughly 2–10 replies and 1–5 calls across the period (planning estimates).",
           ],
         },
         {

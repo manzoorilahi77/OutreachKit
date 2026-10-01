@@ -22,14 +22,12 @@ export const reach: Section = {
               [
                 "Before you contact anyone, build a ",
                 { strong: ["one-page mockup"] },
-                " using their real name, real photos from their Instagram or Google profile, and their real service area. Ninety minutes with a template.",
+                " using their real name and their real service area, with clearly marked placeholders where their photos would go. Ninety minutes with a template.",
               ],
               ["Put it on a subdomain: ", { mono: "theirname.yourstudio.com" }, "."],
               ["Screenshot it on a phone."],
               [
-                "Send the screenshot as the ",
-                { em: ["first"] },
-                " message. You are no longer asking for their time; you are showing them something that already exists with their name on it.",
+                "Send a text-only first message: no screenshot, image or attachment. Once they reply, send the screenshot and the link. You are no longer asking for their time; you are showing them something that already exists with their name on it.",
               ],
               [
                 "Take it down after 30 days if they do not respond. Say so in the message — it is honest and it creates a real deadline.",
@@ -39,7 +37,7 @@ export const reach: Section = {
           {
             type: "p",
             inline: [
-              "Use only images they published publicly, and take the demo down if they ask. Never imply the site is already live.",
+              "Never use their photos without their written permission, and take the demo down if they ask. Never imply the site is already live.",
             ],
             variant: "fine",
           },
@@ -53,7 +51,7 @@ export const reach: Section = {
                 when: "Day 0",
                 title: ["Instagram or Facebook DM"],
                 text: [
-                  "One specific compliment about a recent job, one sentence on what you noticed missing, the demo screenshot, one question.",
+                  "One specific compliment about a recent job, one sentence on what you noticed missing, one question. Text only: no screenshot, image or attachment.",
                 ],
               },
               {

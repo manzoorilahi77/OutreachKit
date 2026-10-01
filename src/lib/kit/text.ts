@@ -6,7 +6,8 @@ import type { Kit, KitNode } from "./types";
 /** Button and label text the kit shows around its content. */
 export const CHROME = {
   copy: "Copy",
-  openerCopy: "Copy line + link",
+  openerCopy: "Copy DM line",
+  openerCopyLink: "Line + link (for reply or email)",
   hook: "Hook",
   linkLine: "Link line",
 } as const;
@@ -41,7 +42,7 @@ export function nodeText(n: KitNode): string {
       return n.label + CHROME.copy + n.text;
     case "openers":
       return n.items
-        .map((o, i) => String(i + 1).padStart(2, "0") + o[0] + CHROME.openerCopy + o[1] + CHROME.hook + o[2] + CHROME.linkLine + o[3])
+        .map((o, i) => String(i + 1).padStart(2, "0") + o[0] + CHROME.openerCopy + CHROME.openerCopyLink + o[1] + CHROME.hook + o[2] + CHROME.linkLine + o[3])
         .join("");
     case "table":
       return n.head.join("") + n.rows.map((r) => r.map((c) => inlineText(c.inline)).join("")).join("");
@@ -63,7 +64,7 @@ export function kitText(kit: Kit): KitText {
   for (const s of kit.sections)
     for (const n of s.nodes) {
       if (n.k === "copyBlock") clips.push(n.text);
-      if (n.k === "openers") for (const o of n.items) clips.push(o[1] + "\n\n" + o[3]);
+      if (n.k === "openers") for (const o of n.items) clips.push(o[1], o[1] + "\n\n" + o[3]);
     }
   return {
     header: kit.header.title + kit.header.chips.map((c) => c.text).join("") + kit.header.note,

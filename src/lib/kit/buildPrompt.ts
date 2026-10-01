@@ -48,7 +48,7 @@ The business
 - Owner's first name: {Owner}
 - Phone: {their published phone}   Email: {their published email}
 - Google profile URL: {maps link}   Instagram: {handle}
-- Photos I am supplying: {list the image files pulled from their public profiles}
+- Photos I am supplying: {the image files the owner has given me written permission to use — leave blank until then}
 - Their offering to feature: {list the services, menu items, programmes or inventory in their own words}
 - Hours: {their published hours}
 
@@ -82,7 +82,7 @@ Extend the template's existing contact form and its validation rather than writi
 
 Constraints — do not break these
 1. Invent nothing. No fabricated reviews, testimonials, client names, licence numbers, years in business, awards, certifications, insurance details or statistics. Where I have not supplied content, render a visible placeholder such as [REVIEW 1 — pull from Google profile] rather than plausible filler.
-2. Use only the images I supply. No stock photography, no AI-generated photos of work. Anything missing stays on public/placeholder.svg.
+2. Never use the prospect's own photos without their written permission. Until I tell you I hold it, every photo slot uses public/placeholder.svg, clearly marked as a placeholder on the page. Once I do, use only the images I supply. No stock photography, no AI-generated photos of work.
 3. Render a small line in the footer: "Demo site — not affiliated with {Business Name}." I remove it once they pay.
 4. Do not use their logo unless I supply the file. Set the wordmark in type instead.
 5. Do not add analytics, tracking pixels, cookie banners or third-party scripts to the demo.
@@ -125,7 +125,7 @@ Do not do this in one pass. Four reviewable steps, stop and report after each:
 
 Artifacts to deliver
 - The working repo, committed, ready to push.
-- Screenshots from the existing /demo-shots route at 390px, so I can attach one to the DM without a device.
+- Screenshots from the existing /demo-shots route at 390px, so I can send one once they reply, without a device.
 - A README section listing exactly what I still need from the owner: photos, review text, licence number, offering list, prices, hours.
 - Three headline alternatives in a comment at the top of the hero, so I have something to A/B on the call.
 - Deployment: set the real domain in site.config.ts, deploy to Vercel. My demo URL pattern is ${X.demoPattern}`;

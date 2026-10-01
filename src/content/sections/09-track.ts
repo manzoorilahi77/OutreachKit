@@ -60,7 +60,7 @@ export const track: Section = {
               ],
               [
                 { kind: "name", inline: ["Contacted → Replied"] },
-                { kind: "n", inline: ["12 – 20%"] },
+                { kind: "n", inline: ["1 – 5%"] },
               ],
               [
                 { kind: "name", inline: ["Replied → Call booked"] },

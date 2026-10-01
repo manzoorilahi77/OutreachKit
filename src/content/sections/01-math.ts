@@ -39,7 +39,7 @@ export const math: Section = {
       tone: "plain",
       inline: [
         { strong: ["The whole business in one line."] },
-        " 250 profiles sourced → 100 qualified → 100 contacted → 12–18 replies → 5–7 calls → 2–3 closes. Every number below exists to make one of those six arrows less leaky. If you close three builds a month at $2,000 and keep 70% on a $80/month care plan, you are at $72k of build revenue and roughly $20k of recurring by the end of year one.",
+        " 250 profiles sourced → 100 qualified → 100 contacted → 1–5 replies → 0.4–2.5 calls → 0.1–0.8 closes (planning estimates). Every number below exists to make one of those six arrows less leaky. If you close three builds a month at $2,000 and keep 70% on a $80/month care plan, you are at $72k of build revenue and roughly $20k of recurring by the end of year one.",
       ],
     },
     {

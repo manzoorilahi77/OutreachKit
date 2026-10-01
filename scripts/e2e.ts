@@ -2,9 +2,10 @@
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { chromium } from "@playwright/test";
+import { patchSnapshot } from "../golden/corrections";
 
 const base = `http://localhost:${process.env.PORT ?? 3100}`;
-const golden = JSON.parse(readFileSync("golden/original/fencing-austin-desktop.json", "utf8")) as { clips: string[]; sections: string[] };
+const golden = patchSnapshot(JSON.parse(readFileSync("golden/original/fencing-austin-desktop.json", "utf8")));
 
 const browser = await chromium.launch();
 const ctx = await browser.newContext({ viewport: { width: 1280, height: 900 }, permissions: ["clipboard-read", "clipboard-write"] });
@@ -33,9 +34,15 @@ async function consoleFlow() {
   // Copy the build prompt and check the clipboard holds exactly what the original builds.
   await kit.getByRole("button", { name: "Copy", exact: true }).first().click();
   assert.equal(await page.evaluate(() => navigator.clipboard.readText()), golden.clips[0]);
-  // First opener, "line + link"
-  await kit.getByRole("button", { name: "Copy line + link" }).first().click();
-  assert.equal(await page.evaluate(() => navigator.clipboard.readText()), golden.clips[1]);
+  // First opener: the DM button copies the line only; the second button adds the link (correction 2).
+  await kit.getByRole("button", { name: "Copy DM line" }).first().click();
+  const first = await page.evaluate(() => navigator.clipboard.readText());
+  assert.equal(first, golden.clips[1]);
+  assert.ok(!first.includes("https://"), "the DM line has no link");
+  await kit.getByRole("button", { name: "Line + link (for reply or email)" }).first().click();
+  const withLink = await page.evaluate(() => navigator.clipboard.readText());
+  assert.equal(withLink, golden.clips[2]);
+  assert.ok(withLink.startsWith(first) && withLink.includes("https://"));
   // Opener count and message count
   assert.equal(await kit.locator('section[aria-label="openers"] li').count(), 15);
   console.log("console: build, URL sync, copy payloads match the original");

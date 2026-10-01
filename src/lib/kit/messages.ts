@@ -4,17 +4,15 @@ import type { KitContext, Message } from "./types";
 export function messages(X: KitContext): Message[] {
   const P=X.price, D=X.demo, YOU=X.you, BRAND=X.brand;
   return [
-["DM 1 · day 0 · send from your phone, with the demo screenshot attached",
+["DM 1 · day 0 · send from your phone, text only: no screenshot, image or attachment",
 `Hey {Owner} — that {specific recent job} you posted last week is sharp work.
 
-Quick thing. I searched "${X.q0} ${X.city}" and couldn't find you anywhere except Instagram. So I built a page for {Business Name} to see what it would look like — your photos, your service area, a quote form that texts you. Took me an evening.
-
-Here it is: ${D}
+Quick thing. I searched "${X.q0} ${X.city}" and couldn't find you anywhere except Instagram. So I built a page for {Business Name} to see what it would look like — your service area, a quote form that texts you, and marked placeholders where your photos would go. Took me an evening.
 
 No catch, and no pitch unless you want one. Worth two minutes?`],
 
 ["DM 2 · day 3 · only if no reply",
-`{Owner} — did that link come through? Here it is again: ${D}
+`{Owner} — did my message come through? Here is the page I mentioned: ${D}
 
 If it's not for you, just say so and I'll leave you alone. If it is, the real version can be live on your own domain in about a week.`],
 
@@ -22,7 +20,7 @@ If it's not for you, just say so and I'll leave you alone. If it is, the real ve
 `"Hi, is this {Owner}? — I'm ${YOU}, I build websites for ${X.catL} companies here in ${X.city}. I sent you something on Instagram a couple of days ago, did it come through?"
 
 IF NO:
-"No worries, it's easy to miss. Short version — I built a sample site for {Business Name} using your own photos. It's live right now at ${D}. Can I text you the link so you can look at it tonight?"
+"No worries, it's easy to miss. Short version — I built a sample site for {Business Name} with marked placeholders where your photos would go. It's live right now at ${D}. Can I text you the link so you can look at it tonight?"
 
 IF YES:
 "What did you think?"
@@ -60,7 +58,7 @@ CLOSE:
 
 Hi {Owner},
 
-I build websites for ${X.catL} companies around ${X.city}. Rather than ask for your time, I built a sample for {Business Name} first — your own photos, your service area, and a quote form:
+I build websites for ${X.catL} companies around ${X.city}. Rather than ask for your time, I built a sample for {Business Name} first — marked placeholders where your photos would go, your service area, and a quote form:
 
 ${D}
 

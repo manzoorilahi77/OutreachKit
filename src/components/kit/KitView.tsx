@@ -74,7 +74,10 @@ function Node({ n }: { n: KitNode }) {
                   <span className="font-medium tabular-nums text-muted">{String(i + 1).padStart(2, "0")}</span>
                   <strong>{o[0]}</strong>
                 </span>
-                <CopyButton text={o[1] + "\n\n" + o[3]} label={CHROME.openerCopy} />
+                <span className="flex flex-wrap gap-2">
+                  <CopyButton text={o[1]} label={CHROME.openerCopy} />
+                  <CopyButton text={o[1] + "\n\n" + o[3]} label={CHROME.openerCopyLink} />
+                </span>
               </div>
               <p className="text-lg">{o[1]}</p>
               <div><span className="block text-sm text-muted">{CHROME.hook}</span><p className="text-sm">{o[2]}</p></div>

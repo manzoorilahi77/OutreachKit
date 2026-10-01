@@ -169,7 +169,7 @@ export function generateKit(input: KitInput): Kit {
     h4("Fifteen opening lines — angle, hook and sample link"),
     p("fine", "Each one is a different ", strong("angle"), ". The ", strong("hook"),
       " is what you must find on their profile first — it is the proof you are a person who looked, and nothing sends without it. The ",
-      strong("link line"), " carries your sample site. Copy takes the line and the link together."),
+      strong("link line"), " carries your sample site. The DM copy button copies the line only. A second button, “Line + link (for reply or email)”, copies the line plus the link."),
     { k: "openers", items: openers(X) },
     p("fine", "Sample-site URL pattern for this territory: ", mono(X.demoPattern),
       " — one folder per city, one page per business, so you can run fifty demos off one domain and take any of them down in seconds."));
@@ -237,7 +237,7 @@ export function generateKit(input: KitInput): Kit {
   sec("block",
     h4("Your 60-minute block — " + device + "-primary"),
     { k: "timeline", items: runBlocks(mobileFirst) },
-    p("muted", "Five blocks a week is roughly 50 qualified leads. At the funnel ratios in section 09 that is two to three closes a month."));
+    p("muted", "Five blocks a week is roughly 50 qualified leads. At the funnel ratios in section 09 that is roughly 0.1 to 1.5 closes a month (a planning estimate)."));
 
   return {
     input,

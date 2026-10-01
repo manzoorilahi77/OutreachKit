@@ -1,5 +1,5 @@
 // pnpm golden:sweep: a wider differential check than the committed fixtures. Builds the kit in the ORIGINAL page
-// and in the TS port for every category x device, cycling through all states and city positions
+// (with the three corrections applied to the original) and in the TS port for every category x device, cycling through all states and city positions
 // (including a free-typed city), and compares the section text and copy payloads.
 import { chromium } from "@playwright/test";
 import { STATES } from "../src/data";
@@ -7,6 +7,7 @@ import { CATS } from "../src/lib/kit/categories";
 import { generateKit } from "../src/lib/kit/generate";
 import { kitText } from "../src/lib/kit/text";
 import type { KitInput } from "../src/lib/kit/types";
+import { patchSnapshot } from "../golden/corrections";
 import { readSource } from "./lib/source";
 
 const codes = Object.keys(STATES) as (keyof typeof STATES)[];
@@ -46,7 +47,7 @@ await browser.close();
 let bad = 0;
 inputs.forEach((input, i) => {
   const got = kitText(generateKit(input));
-  const want = originals[i]!;
+  const want = patchSnapshot(originals[i]! as { header: string; sections: string[]; clips: string[] });
   const problems: string[] = [];
   if (got.header !== want.header) problems.push("header");
   want.sections.forEach((s, k) => { if (got.sections[k] !== s) problems.push(`section ${k}`); });
