@@ -1,0 +1,33 @@
+// Extracted verbatim from docs/source/territory-desk.html by scripts/extract-data.ts.
+// Do not edit by hand: run `pnpm extract:data`, and `pnpm parity` will confirm it still matches.
+
+export const COLS: string[] = [
+  "Date sourced",
+  "Business name",
+  "Owner first name",
+  "Category",
+  "City",
+  "State",
+  "Phone",
+  "Email",
+  "Instagram handle",
+  "Facebook page",
+  "Google Maps URL",
+  "Website found?",
+  "Website URL",
+  "Site verdict",
+  "Google review count",
+  "Google rating",
+  "Followers",
+  "Last post date",
+  "Score /10",
+  "Tier",
+  "Demo URL",
+  "Demo built date",
+  "First contact date",
+  "Channel",
+  "Replied?",
+  "Stage",
+  "Next action date",
+  "Notes",
+];

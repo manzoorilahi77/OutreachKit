@@ -6,7 +6,8 @@ import { join, extname } from "node:path";
 const ALLOWED_HEX = new Set(["#0f2a4a", "#2c2e33", "#f7f5f2", "#1e6fff"]);
 const ROOTS = ["src", "public/brand", "supabase"];
 const EXTS = new Set([".ts", ".tsx", ".css", ".svg", ".html", ".mjs", ".sql", ".md"]);
-const SKIP_FILES = new Set(["src/lib/contrast.ts"]);
+// src/data/style.ts holds the CLIENT demo-site palettes the build prompt describes; they are data, never app UI.
+const SKIP_FILES = new Set(["src/lib/contrast.ts", "src/data/style.ts"]);
 
 function walk(dir: string, out: string[] = []): string[] {
   let entries: string[] = [];

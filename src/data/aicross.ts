@@ -1,0 +1,103 @@
+// Extracted verbatim from docs/source/territory-desk.html by scripts/extract-data.ts.
+// Do not edit by hand: run `pnpm extract:data`, and `pnpm parity` will confirm it still matches.
+
+import type { CrossRow } from "./types";
+
+export const AICROSS: CrossRow[] = [
+  [
+    "Productise their tool into a niche SaaS for the whole trade",
+    "Every operator in the category, monthly",
+    49,
+    299,
+    "\"I built this for one fencing company. There are 900 in this state with the same problem.\"",
+    "The hardest part of vertical SaaS is knowing the workflow. Your first client just taught it to you and paid for the build.",
+  ],
+  [
+    "License the tool to their supplier or franchisor as a member benefit",
+    "The supplier or franchise HQ, annually",
+    5000,
+    40000,
+    "\"Give this to all 400 of your installers. It makes them stickier to you than any rebate.\"",
+    "Suppliers have real budgets and are desperate for reasons their dealers stay loyal. One deal replaces a year of retail work.",
+  ],
+  [
+    "Sell the same automation to their subs and trade partners",
+    "Each sub, at your normal rate",
+    800,
+    3000,
+    "\"The same missed-call system, already proven on a business they know. I can have it live for you Friday.\"",
+    "Zero education needed — the referrer already demoed it for you.",
+  ],
+  [
+    "Dealer locator or installer portal for the manufacturer",
+    "The manufacturer",
+    8000,
+    35000,
+    "\"Your installer list is a PDF. It should be a searchable map that routes leads to them and reports back to you.\"",
+    "Manufacturer-scale budget, reached only through the installer relationship you already earned.",
+  ],
+  [
+    "White-label your AI receptionist to other agencies",
+    "Agency reseller seats, monthly",
+    200,
+    500,
+    "\"You sell it, I run it, your name is on the front. You keep the margin and none of the support load.\"",
+    "Turns one build into recurring revenue with no prospecting, and other agencies buy faster than end clients do.",
+  ],
+  [
+    "Industry benchmark data product",
+    "Operators in the trade, monthly",
+    99,
+    499,
+    "\"Anonymised close rates, ticket sizes and lead costs across forty companies in this trade. Nobody else has this data.\"",
+    "Only possible once you run several clients' systems. Compounding, defensible, and it sells itself to the same list.",
+  ],
+  [
+    "City marketplace with AI matching",
+    "Advertisers and top-slot listings, monthly",
+    50,
+    300,
+    "\"I'm building the {city} {trade} directory with real matching. Your listing is free; the top slot isn't.\"",
+    "Every prospect you failed to close becomes a listing instead of a dead row in the sheet.",
+  ],
+  [
+    "Association or chamber AI workshop and toolkit",
+    "The association, per session",
+    1500,
+    6000,
+    "\"Two hours for your members on what actually works and what will embarrass them. I'll bring a written toolkit.\"",
+    "One session in front of eighty owners in your exact category. The best-converting room you will ever stand in.",
+  ],
+  [
+    "Integration listing on a field-service platform's marketplace",
+    "Platform revenue share or referral",
+    0,
+    0,
+    "\"I'll build and maintain the connector. List it and send me the installs.\"",
+    "The platform does your distribution. Slow to start, then entirely passive.",
+  ],
+  [
+    "The same vertical tool, next metro",
+    "New clients in the same trade",
+    0,
+    0,
+    "\"Same tool, same trade, different city — and I can show you it running for someone doing exactly your job.\"",
+    "The build is already paid for. Every additional metro is close to pure margin.",
+  ],
+  [
+    "AI rescue work on someone else's failed build",
+    "The stranded client",
+    1500,
+    6000,
+    "\"Someone sold you a chatbot that quotes prices you don't charge. I'll make it accurate or turn it off.\"",
+    "A growing category. These leads arrive already convinced of the value and just want it to work.",
+  ],
+  [
+    "Fractional AI lead for a group of small operators",
+    "3–6 operators sharing one retainer, monthly",
+    600,
+    2000,
+    "\"None of you can afford a technology person. All six of you together can afford one day a week of me.\"",
+    "Shared retainers survive downturns far better than a single client's discretionary marketing spend.",
+  ],
+];

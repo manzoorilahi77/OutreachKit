@@ -1,0 +1,103 @@
+// Extracted verbatim from docs/source/territory-desk.html by scripts/extract-data.ts.
+// Do not edit by hand: run `pnpm extract:data`, and `pnpm parity` will confirm it still matches.
+
+import type { CrossRow } from "./types";
+
+export const CROSS: CrossRow[] = [
+  [
+    "Their subcontractors and trade partners",
+    "The sub, at full price",
+    0,
+    0,
+    "\"Who else is on your job sites? If I build for them, you get two months of care free.\"",
+    "Every trade works beside three or four others. One good client is a warm door to all of them, and the introduction costs you nothing.",
+  ],
+  [
+    "Their suppliers and distributors",
+    "The supplier",
+    2500,
+    8000,
+    "\"Your supply house has 400 installers on its books and a website from 2014. Introduce me.\"",
+    "Suppliers have real budgets, buy annually, and their installer list is the exact prospect list you have been building by hand.",
+  ],
+  [
+    "Their referral partners — realtors, designers, property managers",
+    "The partner",
+    1500,
+    4000,
+    "\"You said {realtor} sends you work. They need a page for the vendors they recommend — that page is you.\"",
+    "These people refer for a living, which means they refer you too. One partner can produce a client a quarter.",
+  ],
+  [
+    "The same trade in the next town over",
+    "The new client",
+    0,
+    0,
+    "\"I only work with one {trade} per town. Yours is taken — {next town} isn't.\"",
+    "Non-competing geography lets you reuse the identical template, pitch and case study. Fastest possible second sale.",
+  ],
+  [
+    "A group deal through their trade association or chamber",
+    "5–10 members at once",
+    900,
+    2500,
+    "\"Get five members to sign in the same month and everyone pays the group rate.\"",
+    "One conversation becomes five builds, and the association does the selling for you.",
+  ],
+  [
+    "Their second location or new service line",
+    "The same owner, new budget",
+    900,
+    2500,
+    "\"You opened a second yard. That needs its own page or it won't rank there.\"",
+    "New budget line, existing trust, zero acquisition cost.",
+  ],
+  [
+    "White-label for other freelancers and agencies",
+    "The agency",
+    600,
+    1800,
+    "\"You sell the strategy, I build the sites. Your name on the front, my hands on the back.\"",
+    "Removes prospecting entirely on that slice of your revenue. Lower per-project fee, far higher volume.",
+  ],
+  [
+    "Referral commission on tools you already recommend",
+    "The vendor",
+    0,
+    0,
+    "\"I'm putting {tool} in anyway — I take a referral fee from them, and you should know that.\"",
+    "Real recurring money on call tracking, hosting, review platforms and booking tools. Disclose it to the client every single time.",
+  ],
+  [
+    "Photography sold on to their supplier or manufacturer",
+    "The manufacturer",
+    500,
+    2000,
+    "\"Your fence supplier has no photos of their product installed. I shot yours last month.\"",
+    "One photo day, sold twice, and the manufacturer becomes a client.",
+  ],
+  [
+    "Their competitors' unhappy clients",
+    "The new client",
+    0,
+    0,
+    "\"Their agency went quiet six months ago. Mine answers the same day.\"",
+    "Rescue work closes faster than a first-time build — they already believe in the product, they just want a different supplier.",
+  ],
+  [
+    "Insurance, financing and warranty partners",
+    "The partner",
+    1500,
+    4000,
+    "\"Three of your trades send work to the same financing rep. That rep needs a landing page.\"",
+    "Adjacent B2B buyers with budgets, reachable only through the trade relationship you already have.",
+  ],
+  [
+    "A city-wide directory you own in this category",
+    "Advertisers, monthly",
+    0,
+    0,
+    "\"I'm building the {city} {trade} directory. Your listing is free — the top slot isn't.\"",
+    "Turns your prospect list into an asset. Every business you failed to close becomes a $50–200/month listing instead of a dead lead.",
+  ],
+];

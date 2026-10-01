@@ -1,0 +1,31 @@
+// Extracted verbatim from docs/source/territory-desk.html by scripts/extract-data.ts.
+// Do not edit by hand: run `pnpm extract:data`, and `pnpm parity` will confirm it still matches.
+
+export const BASECOMP: Record<string, string> = {
+  Hero: "Hero",
+  TrustStrip: "Trust row",
+  ResponseStrip: "Trust row",
+  CredentialsBar: "Trust row",
+  ServicesGrid: "Service grid",
+  ServiceMenu: "Service grid",
+  ProgramsGrid: "Service grid",
+  InventoryGrid: "Service grid",
+  MenuBlock: "Service grid",
+  CapabilitiesTable: "Service grid",
+  ServicesBlock: "Service grid",
+  SymptomGrid: "Service grid",
+  FAQ: "FAQ",
+  ParentFAQ: "FAQ",
+  ResourcesOrFAQ: "FAQ",
+  QuoteForm: "Contact form",
+  RFQForm: "Contact form",
+  EnrollForm: "Contact form",
+  ReservationForm: "Contact form",
+  DateCheckForm: "Contact form",
+  ServiceForm: "Contact form",
+  EnquiryForm: "Contact form",
+  WhoWeHelp: "About",
+  PractitionerBio: "About",
+  Contacts: "Contact CTA",
+  Footer: "root layout",
+};
