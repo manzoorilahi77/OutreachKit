@@ -23,7 +23,9 @@ async function writeClipboard(text: string): Promise<boolean> {
   }
 }
 
-export function CopyButton({ text, label = "Copy", className = "" }: { text: string; label?: string; className?: string }) {
+export function CopyButton({
+  text, label = "Copy", copiedLabel = "Copied", className = "",
+}: { text: string; label?: string; copiedLabel?: string; className?: string }) {
   const [state, setState] = useState<State>("idle");
   const timer = useRef<ReturnType<typeof setTimeout>>(undefined);
   useEffect(() => () => clearTimeout(timer.current), []);
@@ -42,7 +44,7 @@ export function CopyButton({ text, label = "Copy", className = "" }: { text: str
     >
       {state === "copied" ? <CheckIcon /> : state === "error" ? <AlertIcon /> : <CopyIcon />}
       <span aria-live="polite">
-        {state === "copied" ? "Copied" : state === "error" ? "Couldn't copy. Select the text and copy by hand." : label}
+        {state === "copied" ? copiedLabel : state === "error" ? "Couldn't copy. Select the text and copy by hand." : label}
       </span>
     </button>
   );

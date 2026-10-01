@@ -5,7 +5,7 @@ export function TableWrap({ label, children }: { label: string; children: React.
       role="region"
       aria-label={label}
       tabIndex={0}
-      className="max-w-full overflow-x-auto rounded-lg border border-line"
+      className="relative max-w-full overflow-x-auto rounded-lg border border-line"
     >
       <table className="w-full min-w-[40rem] border-collapse text-left text-base">{children}</table>
     </div>

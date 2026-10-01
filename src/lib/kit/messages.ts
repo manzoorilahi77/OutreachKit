@@ -1,5 +1,4 @@
 // Ported from the original's `messages` (docs/source/territory-desk.html), body unchanged apart from types.
-import { money } from "./helpers";
 import type { KitContext, Message } from "./types";
 
 export function messages(X: KitContext): Message[] {
