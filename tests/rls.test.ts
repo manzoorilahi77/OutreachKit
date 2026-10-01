@@ -9,9 +9,9 @@ if (!up && process.env.RLS_REQUIRED) throw new Error("RLS_REQUIRED is set but th
 
 describe.skipIf(!up)("row level security", () => {
   const env = localEnv();
-  const url = env.NEXT_PUBLIC_SUPABASE_URL!;
+  const url = env.NEXT_PUBLIC_SUPABASE_URL ?? "http://localhost:54321"; // unused when the stack is down: the suite is skipped
   const opts = { auth: { persistSession: false, autoRefreshToken: false } };
-  const admin = createClient(url, env.SUPABASE_SERVICE_ROLE_KEY!, opts);
+  const admin = createClient(url, env.SUPABASE_SERVICE_ROLE_KEY ?? "unset", opts);
   const stamp = Date.now();
   const emails = { a: `rls-a-${stamp}@example.com`, b: `rls-b-${stamp}@example.com` };
   const password = "correct horse battery staple";
@@ -19,7 +19,7 @@ describe.skipIf(!up)("row level security", () => {
   let aId = "", bId = "", kitId = "", leadId = "";
 
   async function signedIn(email: string) {
-    const c = createClient(url, env.NEXT_PUBLIC_SUPABASE_ANON_KEY!, opts);
+    const c = createClient(url, env.NEXT_PUBLIC_SUPABASE_ANON_KEY ?? "unset", opts);
     const { data, error } = await c.auth.signInWithPassword({ email, password });
     if (error) throw error;
     return { c, id: data.user.id };
@@ -32,7 +32,7 @@ describe.skipIf(!up)("row level security", () => {
     }
     ({ c: a, id: aId } = await signedIn(emails.a));
     ({ c: b, id: bId } = await signedIn(emails.b));
-    anon = createClient(url, env.NEXT_PUBLIC_SUPABASE_ANON_KEY!, opts);
+    anon = createClient(url, env.NEXT_PUBLIC_SUPABASE_ANON_KEY ?? "unset", opts);
 
     const kit = await a.from("kits").insert({ category: "Fencing & gates", device: "desktop", state: "TX", city: "Austin" }).select().single();
     expect(kit.error).toBeNull();

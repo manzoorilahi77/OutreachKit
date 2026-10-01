@@ -9,8 +9,8 @@ const up = await stackIsUp();
 describe.skipIf(!up)("live ratios from lead_events", () => {
   const env = localEnv();
   const opts = { auth: { persistSession: false, autoRefreshToken: false } };
-  const admin = createClient(env.NEXT_PUBLIC_SUPABASE_URL!, env.SUPABASE_SERVICE_ROLE_KEY!, opts);
-  const user = createClient(env.NEXT_PUBLIC_SUPABASE_URL!, env.NEXT_PUBLIC_SUPABASE_ANON_KEY!, opts);
+  const admin = createClient(env.NEXT_PUBLIC_SUPABASE_URL ?? "http://localhost:54321", env.SUPABASE_SERVICE_ROLE_KEY ?? "unset", opts);
+  const user = createClient(env.NEXT_PUBLIC_SUPABASE_URL ?? "http://localhost:54321", env.NEXT_PUBLIC_SUPABASE_ANON_KEY ?? "unset", opts);
   let userId = "";
 
   beforeAll(async () => {
