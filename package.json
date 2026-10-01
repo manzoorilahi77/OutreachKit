@@ -16,7 +16,9 @@
     "shots": "tsx scripts/screenshots.ts",
     "extract:data": "tsx scripts/extract-data.ts",
     "extract:content": "tsx scripts/extract-content.ts",
-    "parity": "tsx scripts/parity.ts"
+    "parity": "tsx scripts/parity.ts",
+    "golden:record": "tsx scripts/golden-record.ts",
+    "golden:sweep": "tsx scripts/golden-sweep.ts"
   },
   "dependencies": {
     "next": "15.5.27",
