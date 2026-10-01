@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+/* Four brand colours. Everything else is an opacity tint of these. */
+:root {
+  --navy: #0f2a4a;
+  --charcoal: #2c2e33;
+  --warm: #f7f5f2;
+  --electric: #1e6fff;
+
+  --bg: var(--warm);
+  --fg: var(--charcoal);
+  --head: var(--navy);
+  --surface: color-mix(in srgb, var(--navy) 4%, var(--warm));
+  --line: color-mix(in srgb, var(--charcoal) 22%, var(--warm));
+  --muted: color-mix(in srgb, var(--charcoal) 72%, var(--warm));
+  --solid-bg: var(--navy);
+  --solid-fg: var(--warm);
+  --accent: var(--electric);
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: var(--navy);
+    --fg: var(--warm);
+    --head: var(--warm);
+    --surface: color-mix(in srgb, var(--warm) 6%, var(--navy));
+    --line: color-mix(in srgb, var(--warm) 26%, var(--navy));
+    --muted: color-mix(in srgb, var(--warm) 72%, var(--navy));
+    --solid-bg: var(--warm);
+    --solid-fg: var(--navy);
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg: var(--navy);
+  --fg: var(--warm);
+  --head: var(--warm);
+  --surface: color-mix(in srgb, var(--warm) 6%, var(--navy));
+  --line: color-mix(in srgb, var(--warm) 26%, var(--navy));
+  --muted: color-mix(in srgb, var(--warm) 72%, var(--navy));
+  --solid-bg: var(--warm);
+  --solid-fg: var(--navy);
+  color-scheme: dark;
+}
+
+@theme {
+  --color-*: initial;
+  --font-weight-*: initial;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+}
+
+@theme inline {
+  --color-navy: var(--navy);
+  --color-charcoal: var(--charcoal);
+  --color-warm: var(--warm);
+  --color-electric: var(--electric);
+  --color-bg: var(--bg);
+  --color-fg: var(--fg);
+  --color-head: var(--head);
+  --color-surface: var(--surface);
+  --color-line: var(--line);
+  --color-muted: var(--muted);
+  --color-fill: var(--solid-bg);
+  --color-on-fill: var(--solid-fg);
+  --color-accent: var(--accent);
+  --font-sans: var(--font-jost), "Jost", system-ui, sans-serif;
+}
+
+html {
+  font-size: 112.5%; /* 18px base: many of these customers are over 60 */
+  background: var(--bg);
+  scroll-padding-top: 5rem;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-jost), "Jost", system-ui, sans-serif;
+  font-weight: 400;
+  font-synthesis: none;
+  line-height: 1.55;
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, strong, th, label.field-label {
+  font-weight: 500;
+  color: var(--head);
+}
+strong { color: inherit; }
+b { font-weight: 500; }
+
+a { color: var(--head); text-decoration: underline; text-underline-offset: 3px; }
+
+:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { scroll-behavior: auto !important; transition: none !important; animation: none !important; }
+}
