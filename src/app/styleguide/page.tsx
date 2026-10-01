@@ -12,6 +12,7 @@ import { SectionHead } from "@/components/ui/SectionHead";
 import { Field, Input, Select } from "@/components/ui/Field";
 import { Segmented } from "@/components/ui/Segmented";
 import { AlertIcon, CheckIcon, CopyIcon, MoonIcon, SunIcon } from "@/components/ui/Icons";
+import { FilterDemo } from "./FilterDemo";
 
 export const metadata: Metadata = { title: "Styleguide" };
 
@@ -85,7 +86,7 @@ export default function Styleguide() {
             return (
               <li key={k} className="overflow-hidden rounded-lg border border-line">
                 <div className={`flex h-28 items-end p-3 ${swatch[k]}`}>
-                  <strong className="text-lg text-inherit">{b.name}</strong>
+                  <strong className="text-2xl leading-tight text-inherit">{b.name}</strong>
                 </div>
                 <dl className="p-3 text-base">
                   <dt className="text-sm text-muted">{b.role}</dt>
@@ -184,7 +185,11 @@ export default function Styleguide() {
         </ul>
       </Block>
 
-      <Block id="tiles" num="06" title="Stat tiles and notes">
+      <Block id="filters" num="06" title="Filter and copy chips">
+        <FilterDemo />
+      </Block>
+
+      <Block id="tiles" num="07" title="Stat tiles and notes">
         <div className="grid gap-3 sm:grid-cols-3">
           <StatTile label="Sample tile" value="00" note="Real figures arrive with the playbook" />
           <StatTile label="Sample tile" value="00 – 00" note="Planning estimate" />
@@ -197,7 +202,7 @@ export default function Styleguide() {
         </div>
       </Block>
 
-      <Block id="table" num="07" title="Table" sub="Wide tables scroll inside their own container. The page never scrolls sideways.">
+      <Block id="table" num="08" title="Table" sub="Wide tables scroll inside their own container. The page never scrolls sideways.">
         <TableWrap label="Sample table">
           <thead>
             <tr>
@@ -212,7 +217,7 @@ export default function Styleguide() {
         </TableWrap>
       </Block>
 
-      <Block id="forms" num="08" title="Form controls">
+      <Block id="forms" num="09" title="Form controls">
         <div className="grid max-w-3xl gap-4 sm:grid-cols-2">
           <Field id="sg-name" label="Your name" hint="Used in the messages. You can change it later.">
             <Input id="sg-name" placeholder="Maria Lopez" />
@@ -230,7 +235,7 @@ export default function Styleguide() {
         </div>
       </Block>
 
-      <Block id="logos" num="09" title="Logos" sub="The brand files, scaled by their native aspect ratio. Clear space on every side equals the anchor-mark width.">
+      <Block id="logos" num="10" title="Logos" sub="The brand files, scaled by their native aspect ratio. Clear space on every side equals the anchor-mark width.">
         <div className="grid gap-4 md:grid-cols-2">
           {logoRows.map((r) => (
             <figure key={r.kind} className={`rounded-lg border border-line ${r.on === "navy" ? "bg-navy" : "bg-warm"}`}>

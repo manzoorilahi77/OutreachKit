@@ -24,6 +24,7 @@
     "e2e": "tsx scripts/e2e.ts",
     "changes": "tsx scripts/changes.ts",
     "stack": "tsx scripts/local-stack/stack.ts",
+    "a11y": "tsx scripts/a11y.ts",
     "shots:auth": "tsx scripts/shots-auth.ts",
     "gen:types": "tsx scripts/gen-db-types.ts",
     "test:rls": "RLS_REQUIRED=1 vitest run tests/rls.test.ts"
@@ -36,6 +37,7 @@
     "react-dom": "19.3.0"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
     "@eslint/eslintrc": "^3.3.1",
     "@playwright/test": "^1.63.0",
     "@tailwindcss/postcss": "^4.3.3",

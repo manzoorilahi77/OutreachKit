@@ -8,7 +8,7 @@ const styles: Record<ChipVariant, string> = {
   "tier-c": "bg-transparent text-fg/70 border border-fg/60",
   hot: "bg-transparent text-head border-2 border-accent",
   warm: "bg-transparent text-head border border-head",
-  skip: "bg-fg/10 text-fg/70 border border-transparent",
+  skip: "bg-fg/8 text-fg/80 border border-transparent",
   plain: "bg-surface text-fg border border-line",
 };
 

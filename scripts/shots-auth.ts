@@ -21,7 +21,8 @@ async function link(to: string) {
 
 const browser = await chromium.launch();
 
-async function shoot(path: string, phase: string, name: string, prepare?: (p: Page) => Promise<void>, signedOut = false) {
+async function shoot(path: string, phaseIn: string, name: string, prepare?: (p: Page) => Promise<void>, signedOut = false) {
+  const phase = process.env.SHOTS_PHASE ?? phaseIn;
   mkdirSync(`docs/screenshots/phase-${phase}`, { recursive: true });
   for (const width of [390, 1280]) for (const scheme of ["light", "dark"] as const) {
     const ctx = await browser.newContext({ viewport: { width, height: 900 }, colorScheme: scheme, ...(signedOut ? {} : { storageState: state }) });

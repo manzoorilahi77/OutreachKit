@@ -69,6 +69,23 @@ async function consoleFlow() {
   console.log("console: free-typed city");
 }
 
+async function themeFlow() {
+  const dark = await browser.newContext({ colorScheme: "dark" });
+  const p = await dark.newPage();
+  await p.goto(base + "/", { waitUntil: "load" });
+  await p.waitForTimeout(400);
+  const bg = () => p.evaluate(() => getComputedStyle(document.body).backgroundColor);
+  assert.equal(await bg(), "rgb(15, 42, 74)", "dark by system preference: navy field");
+  await p.getByRole("button", { name: "Light mode" }).click();
+  assert.equal(await bg(), "rgb(247, 245, 242)", "manual toggle to Warm White");
+  await p.reload({ waitUntil: "load" });
+  assert.equal(await bg(), "rgb(247, 245, 242)", "the choice is remembered");
+  const color = await p.evaluate(() => getComputedStyle(document.body).color);
+  assert.equal(color, "rgb(44, 46, 51)");
+  await dark.close();
+  console.log("theme: system preference, manual toggle, remembered");
+}
+
 async function boardFlow() {
   await page.goto(base + "/", { waitUntil: "networkidle" });
   const rows = page.locator('[aria-label="Category board"] tbody tr');
@@ -239,6 +256,7 @@ async function leadsFlow() {
 
 await consoleFlow();
 await boardFlow();
+await themeFlow();
 if (env.NEXT_PUBLIC_SUPABASE_URL) { await accountFlow(); await leadsFlow(); }
 else console.log("account: skipped (no Supabase configured)");
 assert.deepEqual(errors, [], "no console errors");
