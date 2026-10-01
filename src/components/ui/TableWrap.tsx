@@ -1,5 +1,5 @@
 // Tables scroll inside this container, never the page.
-export function TableWrap({ label, children }: { label: string; children: React.ReactNode }) {
+export function TableWrap({ label, minWidth = 640, children }: { label: string; minWidth?: number; children: React.ReactNode }) {
   return (
     <div
       role="region"
@@ -7,7 +7,7 @@ export function TableWrap({ label, children }: { label: string; children: React.
       tabIndex={0}
       className="relative max-w-full overflow-x-auto rounded-lg border border-line"
     >
-      <table className="w-full min-w-[40rem] border-collapse text-left text-base">{children}</table>
+      <table className="w-full border-collapse text-left text-base" style={{ minWidth }}>{children}</table>
     </div>
   );
 }

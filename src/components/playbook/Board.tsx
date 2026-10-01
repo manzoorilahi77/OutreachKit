@@ -62,7 +62,7 @@ export function Board() {
                   {sk ? (
                     <button type="button" onClick={() => setSort(nextSort(sort, sk))} className="inline-flex min-h-11 items-center gap-1 font-medium text-head">
                       {c.label}
-                      <span aria-hidden className="w-3 text-xs">{active ? (sort.dir === 1 ? "▲" : "▼") : ""}</span>
+                      <span aria-hidden className="w-3 text-sm">{active ? (sort.dir === 1 ? "▲" : "▼") : ""}</span>
                     </button>
                   ) : (
                     c.label

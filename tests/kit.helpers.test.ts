@@ -27,7 +27,7 @@ describe("market size", () => {
     expect(marketSize("TX", "Houston")[0]).toBe("Major metro");
     expect(marketSize("TX", "Austin")).toEqual(["Mid-size market", 40]);
     expect(marketSize("TX", "Katy")).toEqual(["Smaller market", 16]);
-    expect(marketSize("TX", "Bentonville")).toEqual(["Unlisted town — assume a smaller market", 12]);
+    expect(marketSize("TX", "Siloam Springs")).toEqual(["Unlisted town — assume a smaller market", 12]);
     expect(marketSize("", "x")).toEqual(["Unknown", 25]);
   });
 });

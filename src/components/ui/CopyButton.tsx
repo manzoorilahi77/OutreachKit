@@ -1,27 +1,10 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { writeClipboard } from "@/lib/clipboard";
 import { AlertIcon, CheckIcon, CopyIcon } from "./Icons";
 
 type State = "idle" | "copied" | "error";
-
-async function writeClipboard(text: string): Promise<boolean> {
-  try {
-    await navigator.clipboard.writeText(text);
-    return true;
-  } catch {
-    const t = document.createElement("textarea");
-    t.value = text;
-    t.setAttribute("readonly", "");
-    t.style.position = "fixed";
-    t.style.opacity = "0";
-    document.body.appendChild(t);
-    t.select();
-    const ok = document.execCommand("copy");
-    document.body.removeChild(t);
-    return ok;
-  }
-}
 
 export function CopyButton({
   text, label = "Copy", copiedLabel = "Copied", className = "",
