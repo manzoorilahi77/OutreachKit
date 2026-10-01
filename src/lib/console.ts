@@ -47,14 +47,15 @@ export function toKitInput(s: ConsoleState, details: { you?: string; brand?: str
 export function toQuery(s: ConsoleState): string {
   const q = new URLSearchParams();
   if (s.cat) q.set("cat", s.cat);
-  if (s.device !== "desktop") q.set("dev", s.device);
   if (s.st) q.set("st", s.st);
   const city = effectiveCity(s);
   if (city) q.set("city", city);
+  // The device is only written once there is something else to restore, so a bare URL stays bare.
+  if (q.size > 0) q.set("dev", s.device);
   return q.toString();
 }
 
-export function fromQuery(search: string): ConsoleState {
+export function fromQuery(search: string, defaultDevice: Device = "desktop"): ConsoleState {
   const q = new URLSearchParams(search);
   const cat = q.get("cat");
   const st = q.get("st") as StateCode | null;
@@ -63,7 +64,7 @@ export function fromQuery(search: string): ConsoleState {
   const listed = validSt ? STATES[validSt][1].split("|").includes(city) : false;
   return {
     cat: cat && CATS.some((c) => c.n === cat) ? cat : null,
-    device: q.get("dev") === "mobile" ? "mobile" : "desktop",
+    device: q.get("dev") === "mobile" ? "mobile" : q.get("dev") === "desktop" ? "desktop" : defaultDevice,
     st: validSt,
     listCity: listed ? city : "",
     freeCity: validSt && city && !listed ? city : "",

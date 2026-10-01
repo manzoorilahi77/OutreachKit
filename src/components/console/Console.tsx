@@ -16,19 +16,23 @@ import {
 } from "@/lib/console";
 import { CATS } from "@/lib/kit/categories";
 import { generateKit } from "@/lib/kit/generate";
-import type { Kit, KitInput } from "@/lib/kit/types";
+import type { Device, Kit, KitInput } from "@/lib/kit/types";
+import { SaveKit, type SaveMode } from "@/components/kit/SaveKit";
 
 export interface ConsoleDetails { you: string; brand: string; domain: string }
 
 export function Console({
   initialDetails,
-  kitActions,
+  initialDevice = "desktop",
+  saveMode = "off",
 }: {
   /** Step 4 values from the signed-in profile. Blank gives bracketed placeholders, as in the original. */
   initialDetails?: Partial<ConsoleDetails>;
-  kitActions?: (input: KitInput) => React.ReactNode;
+  initialDevice?: Device;
+  saveMode?: SaveMode;
 }) {
-  const [s, setS] = useState<ConsoleState>(EMPTY_CONSOLE);
+  const start: ConsoleState = { ...EMPTY_CONSOLE, device: initialDevice };
+  const [s, setS] = useState<ConsoleState>(start);
   const [details, setDetails] = useState<ConsoleDetails>({ you: "", brand: "", domain: "", ...initialDetails });
   const [famF, setFamF] = useState<"all" | FamKey>("all");
   const [awaiting, setAwaiting] = useState(false);
@@ -41,7 +45,7 @@ export function Console({
   useEffect(() => {
     const q = window.location.search;
     if (!q) return;
-    const restored = fromQuery(q);
+    const restored = fromQuery(q, initialDevice);
     setS(restored);
     if (new URLSearchParams(q).get("build") === "1") build(restored);
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -68,7 +72,7 @@ export function Console({
   }
 
   function reset() {
-    setS(EMPTY_CONSOLE);
+    setS(start);
     setFamF("all");
     setBuilt(null);
     setRunStatus(null);
@@ -193,7 +197,7 @@ export function Console({
       <div ref={kitRef} className="scroll-mt-20">
         {built && (
           <div className="border-t border-head p-4 sm:p-6">
-            <KitView kit={built.kit} actions={kitActions?.(built.input)} />
+            <KitView kit={built.kit} actions={<SaveKit input={built.input} mode={saveMode} />} />
           </div>
         )}
       </div>

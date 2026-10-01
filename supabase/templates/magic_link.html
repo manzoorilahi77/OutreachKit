@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+  <body style="margin:0;padding:24px;background:#F7F5F2;color:#2C2E33;font-family:Jost,Arial,sans-serif;font-size:18px;line-height:1.55;">
+    <div style="max-width:520px;margin:0 auto;">
+      <p style="margin:0 0 16px;color:#0F2A4A;font-size:22px;">Famysys Outreach Kit</p>
+      <p style="margin:0 0 16px;">Here is your sign-in link. It works once and expires in an hour.</p>
+      <p style="margin:0 0 24px;">
+        <a href="{{ .ConfirmationURL }}" style="display:inline-block;padding:12px 20px;background:#0F2A4A;color:#F7F5F2;text-decoration:none;border-radius:6px;">Sign in</a>
+      </p>
+      <p style="margin:0 0 8px;">If the button does not open, paste this address into your browser:</p>
+      <p style="margin:0 0 24px;word-break:break-all;">{{ .ConfirmationURL }}</p>
+      <p style="margin:0;color:#2C2E33;">If you did not ask for this, you can ignore the email. Nothing changes until someone uses the link.</p>
+    </div>
+  </body>
+</html>

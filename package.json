@@ -4,7 +4,9 @@
   "private": true,
   "type": "module",
   "packageManager": "pnpm@11.20.0",
-  "engines": { "node": ">=22" },
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -20,9 +22,15 @@
     "golden:record": "tsx scripts/golden-record.ts",
     "golden:sweep": "tsx scripts/golden-sweep.ts",
     "e2e": "tsx scripts/e2e.ts",
-    "changes": "tsx scripts/changes.ts"
+    "changes": "tsx scripts/changes.ts",
+    "stack": "tsx scripts/local-stack/stack.ts",
+    "shots:auth": "tsx scripts/shots-auth.ts",
+    "gen:types": "tsx scripts/gen-db-types.ts",
+    "test:rls": "RLS_REQUIRED=1 vitest run tests/rls.test.ts"
   },
   "dependencies": {
+    "@supabase/ssr": "^0.12.7",
+    "@supabase/supabase-js": "^2.117.2",
     "next": "15.5.27",
     "react": "19.3.0",
     "react-dom": "19.3.0"

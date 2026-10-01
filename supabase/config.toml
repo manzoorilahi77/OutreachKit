@@ -1,0 +1,22 @@
+# For `supabase start` (needs Docker) and `supabase link` / `supabase db push` against a hosted project.
+# Day to day without Docker, `pnpm stack up` runs an equivalent local stack; see README.
+project_id = "famysys-outreach-kit"
+
+[api]
+schemas = ["public"]
+
+[auth]
+site_url = "http://localhost:3100"
+additional_redirect_urls = ["http://localhost:3100/auth/callback"]
+enable_signup = true
+
+[auth.email]
+enable_confirmations = true
+
+[auth.email.template.magic_link]
+subject = "Your Famysys Outreach Kit sign-in link"
+content_path = "./supabase/templates/magic_link.html"
+
+[auth.email.template.confirmation]
+subject = "Your Famysys Outreach Kit sign-in link"
+content_path = "./supabase/templates/magic_link.html"

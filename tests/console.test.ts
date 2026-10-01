@@ -21,6 +21,9 @@ describe("console state", () => {
     const s = { ...EMPTY_CONSOLE, cat: "Fencing & gates", device: "mobile" as const, st: "TX" as const, listCity: "Austin" };
     expect(fromQuery(toQuery(s))).toEqual(s);
     expect(fromQuery("cat=Nope&st=ZZ&city=x")).toEqual(EMPTY_CONSOLE);
+    expect(fromQuery("cat=Nope", "mobile").device).toBe("mobile"); // no dev in the URL: the profile default
+    expect(fromQuery("dev=desktop", "mobile").device).toBe("desktop");
+    expect(toQuery(EMPTY_CONSOLE)).toBe("");
     expect(fromQuery("cat=Fencing%20%26%20gates&st=AR&city=Siloam%20Springs").freeCity).toBe("Siloam Springs");
   });
   it("lists all 51 states by name", () => {

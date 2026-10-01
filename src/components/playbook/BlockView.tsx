@@ -6,6 +6,7 @@ import { TableWrap, td, th } from "@/components/ui/TableWrap";
 import { Board } from "./Board";
 import { CopyHeader } from "./CopyHeader";
 import { InlineView, chipVariant } from "./InlineView";
+import { RatiosTable } from "@/components/leads/RatiosTable";
 import { Scorer } from "./Scorer";
 
 const cellKind = { name: "font-medium text-head", n: "tabular-nums", mono: "tabular-nums font-medium text-head" } as const;
@@ -111,6 +112,7 @@ export function BlockView({ block, widgets = {} }: { block: Block; widgets?: Par
         </ol>
       );
     case "table":
+      if (block.rows[0]?.[0]?.inline[0] === "Profiles per hour") return <RatiosTable block={block} />;
       return (
         <TableWrap label={block.head.map((h) => h.map((x) => (typeof x === "string" ? x : "")).join("")).join(", ")}>
           <thead>
