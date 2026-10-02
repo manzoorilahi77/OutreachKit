@@ -7,7 +7,8 @@ const ALLOWED_HEX = new Set(["#0f2a4a", "#2c2e33", "#f7f5f2", "#1e6fff"]);
 const ROOTS = ["src", "public/brand", "supabase"];
 const EXTS = new Set([".ts", ".tsx", ".css", ".svg", ".html", ".mjs", ".sql", ".md"]);
 // src/data/style.ts holds the CLIENT demo-site palettes the build prompt describes; they are data, never app UI.
-const SKIP_FILES = new Set(["src/lib/contrast.ts", "src/data/style.ts"]);
+// src/themes/library.ts is the base-website template's 50 client demo-site combos, vendored by pnpm themes:sync; data, never app UI.
+export const SKIP_FILES = new Set(["src/lib/contrast.ts", "src/data/style.ts", "src/themes/library.ts"]);
 
 function walk(dir: string, out: string[] = []): string[] {
   let entries: string[] = [];

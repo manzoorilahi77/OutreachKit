@@ -1,0 +1,848 @@
+{
+  "schemaVersion": 1,
+  "category": "Fencing & gates",
+  "slug": "fencing-gates",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A pilot",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Pilot file. Price ranges are planning figures for a mid-size US market, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Gates and openers",
+      "contains": "Walk gates, double drive gates, swing versus slide, automatic openers, keypad and remote access, and what a gate needs from the posts that hold it",
+      "why": "Gates are decided separately from the fence run, usually after the fence style is settled, and they carry the most hardware and the most callbacks."
+    },
+    {
+      "section": "HOA and permit help",
+      "contains": "Height limits, setbacks, which side faces the neighbour, the HOA approval packet, the utility locate before digging, and who files the permit",
+      "why": "Many fence jobs stall waiting on an HOA board or a permit. A page that explains the paperwork removes the reason to wait."
+    },
+    {
+      "section": "Property line and neighbour FAQ",
+      "contains": "Survey pins, building just inside the line, sharing the cost of a boundary fence, and talking to the neighbour before the post holes go in",
+      "why": "A neighbour dispute is the fear that quietly delays the decision. Answering it in plain words gets the estimate booked."
+    },
+    {
+      "section": "Fence finder by purpose",
+      "contains": "Dog containment with dig guards and picket spacing, pool barriers with self-closing self-latching gates, privacy height, and decorative front-yard fencing",
+      "why": "Homeowners start from the problem, a dog that gets out or a new pool, not from a material. This page meets them there."
+    },
+    {
+      "section": "Fence repairs and storm damage",
+      "contains": "Leaning posts, rotted posts, broken pickets, sagging gates, wind-damaged panels, and what to document for an insurance claim",
+      "why": "Repair calls are small, fast and urgent, and a repair on an old fence is how most replacement conversations start."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C30",
+      "siteType": "local-conversion",
+      "name": "Yard Sign",
+      "heroLayout": "split-photo",
+      "mood": ["direct", "workmanlike", "quick"],
+      "bestFor": "Single-crew outfits that win on a fast estimate and a phone that gets answered",
+      "pairsWithTier": "starter",
+      "headlineSample": "Fence installation and repair in {City}",
+      "whyItFits": "Denim and butter reads like a work truck, and the geometric caps hold up on a phone in bright sun. The page is built around the estimate button and nothing else."
+    },
+    {
+      "id": "b",
+      "themeId": "C39",
+      "siteType": "portfolio-showcase",
+      "name": "Finished Lines",
+      "heroLayout": "before-after",
+      "mood": ["crafted", "grounded", "proud"],
+      "bestFor": "Crews with a deep backlog of finished cedar, iron and gate work to show",
+      "pairsWithTier": "standard",
+      "headlineSample": "Cedar, iron and gates, built straight in {City}",
+      "whyItFits": "The family's own combo. The slab headings feel like a carpenter's stamp, and the linen ground lets wood grain and black iron carry the page."
+    },
+    {
+      "id": "c",
+      "themeId": "C4",
+      "siteType": "premium-brand",
+      "name": "Estate Gate",
+      "heroLayout": "full-bleed-photo",
+      "mood": ["quiet", "exacting", "heirloom"],
+      "bestFor": "Ornamental iron, custom driveway gates and estate perimeters with a long sales cycle",
+      "pairsWithTier": "premium",
+      "headlineSample": "Custom iron fences and driveway gates for {City} homes",
+      "whyItFits": "Navy and brass match powder-coated iron and gate hardware, and the serif display signals a made-to-order build rather than a quick quote."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your Google listing has Call and Directions but no website, so anyone comparing fence companies in {City} can't see a single gate or panel you've built before they pick up the phone.",
+      "hook": "Open their Maps listing and confirm there is no Website button. Screenshot it for when they reply.",
+      "linkLine": "Here's what would sit behind that button: {demo-link}"
+    },
+    {
+      "angle": "Facebook-only link",
+      "line": "The website link on your listing goes to your Facebook page. Fine for regulars, but someone pricing a cedar privacy fence wants styles and an estimate form, not a feed.",
+      "hook": "Tap their Website link and confirm it lands on Facebook. Note the newest fence job they shared there.",
+      "linkLine": "A page built for the fence buyer instead of the feed: {demo-link}"
+    },
+    {
+      "angle": "Dead free host",
+      "line": "The site on your listing still carries a free-host banner and hasn't changed in a while. Someone about to spend real money on a fence wonders if you'll be around for the gate adjustment.",
+      "hook": "Open the site and look for a builder banner, an old copyright year or a contact form that errors. Note which one you found.",
+      "linkLine": "Same fence company, current and fast: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "I opened your site on my phone and the fence gallery ran off the side of the screen. People pricing a fence are often standing in their own yard, phone in hand.",
+      "hook": "Only if they have a site. Load it on your phone and note exactly what breaks: menu, gallery or call button. Screenshot it for when they reply.",
+      "linkLine": "The same fence company, rebuilt for a phone: {demo-link}"
+    },
+    {
+      "angle": "No estimate form",
+      "line": "Right now the only way to ask you for a fence estimate is to call. A lot of homeowners pace off the yard after dinner and would rather send the footage and the gate count than leave a voicemail.",
+      "hook": "Check the listing, the social pages and any site for a form. If there is none, the angle holds.",
+      "linkLine": "Here's an estimate form that asks for footage, gates and HOA status: {demo-link}"
+    },
+    {
+      "angle": "Good work, nowhere to live",
+      "line": "Your cedar and iron jobs on Instagram are clean work, and they're scattered between holiday posts. A gallery sorted by fence style would do the selling for you.",
+      "hook": "Pick two finished jobs on their grid you could name by material and style. Mention one by name if they reply.",
+      "linkLine": "Your fence jobs, sorted by style: {demo-link}"
+    },
+    {
+      "angle": "Reviews stuck on Google",
+      "line": "You've got Google reviews about gates that finally latch and crews that cleaned up the post-hole dirt. None of that reaches anyone who isn't already on your listing.",
+      "hook": "Read their reviews and copy one specific phrase about a fence or gate job. Quote it back if they reply.",
+      "linkLine": "Those reviews next to the fence work they describe: {demo-link}"
+    },
+    {
+      "angle": "Before the spring rush",
+      "line": "Spring is when every fence company in {City} gets buried in estimate calls. The ones homeowners can find in the winter are the ones with a full spring schedule.",
+      "hook": "Use this from January to early March. Name the month in the reply.",
+      "linkLine": "Ready before the spring fence rush: {demo-link}"
+    },
+    {
+      "angle": "After-hours calls",
+      "line": "When the neighbour's dog gets through a broken fence at nine at night, that homeowner wants a repair booked right then. Voicemail sends them to the next fence company on the list.",
+      "hook": "Call their listed number after hours. If it goes to a full or generic voicemail, the angle holds.",
+      "linkLine": "A fence repair request that works at night: {demo-link}"
+    },
+    {
+      "angle": "Hiring a crew",
+      "line": "Saw you're hiring fence installers. Good post-hole crews check whether a company looks established before they apply, the same way customers do.",
+      "hook": "Only if they posted a hiring story, a help-wanted note or a sign on the truck. Note the date of the post.",
+      "linkLine": "A fence company page with a careers section: {demo-link}"
+    },
+    {
+      "angle": "Service area",
+      "line": "Your listing says you fence {City} and the towns around it, but there's no page telling a homeowner in {Neighborhood} you'll build there. That town name is what they type.",
+      "hook": "Find the towns they mention in posts or reviews. Use the one furthest from their address.",
+      "linkLine": "A fence page for each town you cover: {demo-link}"
+    },
+    {
+      "angle": "Payment plans",
+      "line": "If you offer payment plans on fence jobs, that belongs on a page. A full backyard privacy fence is the kind of number people want split up before they ask for an estimate.",
+      "hook": "Only if they mention financing somewhere: a post, a review, the truck. If they don't, skip this angle.",
+      "linkLine": "Fence financing explained before the estimate: {demo-link}"
+    },
+    {
+      "angle": "Licence and insurance",
+      "line": "Fence work means digging near buried lines and building on property lines. A page that shows your licence and insurance answers the first worry a careful homeowner has.",
+      "hook": "Check the state registry if fencing is licensed there. Note that a record exists; never quote a number you didn't see.",
+      "linkLine": "Licence, insurance and the locate call, all in one fence page: {demo-link}"
+    },
+    {
+      "angle": "Referral-only",
+      "line": "Sounds like most of your fence work comes from neighbours seeing a finished job. That works until the street runs out, and even a referral looks you up before calling.",
+      "hook": "Look for review text like 'saw their fence next door' or 'neighbour recommended'. Quote it back.",
+      "linkLine": "Where a neighbour's fence referral would land: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "That {specific recent job} you posted is clean fence work. A job like that should be the first thing a stranger sees, not three scrolls down a feed.",
+      "hook": "Pick the newest finished fence or gate on their grid and name it exactly: material, style, and the street if they tagged it.",
+      "linkLine": "That fence job, front and centre: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hey {Owner} — that {specific recent job} you posted is clean fence work.\n\nI searched for fence companies in {City} and found your social pages but no site for {Business Name}. I put together a sample page to see how your fences and gates would look with an estimate form on it, with marked placeholders where your photos would go.\n\nWant me to send it over?",
+    "dm2": "{Owner} — following up in case my last message got buried. Here's the sample fence site for {Business Name}: {demo-link}\n\nIt has a gallery sorted by style, an estimate form that asks for footage and gates, and a page for HOA questions. If it's not for you, say so and I'll leave you be.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for fence companies here in {City}. I sent you a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"Easy to miss. Short version: I built a sample fence site for {Business Name}, with an estimate form that asks for footage and gate count, and marked placeholders where your photos would go. Can I email you the link so you can look tonight?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range} depending on how many style and town pages you want, then {Care Range} a month for hosting and changes. For a fence company your size I'd normally quote about {Build Price}, which is less than one backyard run.\"\n\"Can I walk you through it for ten minutes this week, Tuesday or Thursday?\"\n\nCLOSE:\n\"I'll send a one-page scope and an invoice for the deposit. We start the day it clears.\"",
+    "objections": [
+      {
+        "objection": "I get all my work from referrals.",
+        "handler": "\"That means your fences sell themselves. A referral still looks you up before calling, and right now they find a Facebook page. The site is where a neighbour's recommendation lands.\""
+      },
+      {
+        "objection": "My nephew does my website.",
+        "handler": "\"Good, that's cheaper than me. Happy to hand over what I built, the style gallery and the estimate form. If it stalls before spring, the offer stands.\""
+      },
+      {
+        "objection": "It's winter, nobody's buying fences.",
+        "handler": "\"That's why now is the month. The site gets built and found while it's quiet, so it's working when the spring estimate calls start.\""
+      },
+      {
+        "objection": "I already pay for leads from a lead site.",
+        "handler": "\"Shared leads go to several fence companies at once and you pay whether you win the job or not. Your own site sends that homeowner to one fence company.\""
+      },
+      {
+        "objection": "People just want the cheapest fence.",
+        "handler": "\"Some do. The site is for the ones comparing workmanship: post depth, concrete, a gate that doesn't sag. That's what makes your number make sense.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you it'd be about {Build Price}, because it's a gallery, an estimate form and a few town pages. That's less than one fence job.\""
+      }
+    ],
+    "email": {
+      "subject": "Fence site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for fence companies around {City}. {Business Name} has good fence and gate work on its social pages, but no site a homeowner finds when they search.\n\nRather than ask for your time, I built a sample first: a gallery sorted by fence style, an estimate form that asks for footage and gate count, and a page for HOA and permit questions, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it out for {Build Range}, plus {Care Range} a month for hosting and changes. If not, no problem, it comes down at the end of the month.\n\nWorth ten minutes on the phone this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"{Owner}, it's {Your Name}. I build websites for fence companies in {City}, and I put together a sample one for {Business Name}. I'll email you the link. Have a look when you're off the job. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner} — I'm taking the {Business Name} fence demo down on Friday to free up the space.\n\nWant me to leave it up? One word is fine either way.",
+    "nurture": "Hey {Owner} — spring fence season is a few weeks out and the estimate calls are about to start. Thought of you.\n\nThe site is still here whenever you want it, and nothing's changed on price. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Price the gallery by project count, not page count. A fence site sells on finished jobs sorted by style.",
+      "Each material or style page is its own line once the core build is done; cedar, vinyl, iron and chain-link each answer a different search.",
+      "An estimate form that collects footage, gate count and HOA status is worth more than a contact form. Price it as its own line.",
+      "Only quote gate-automation content for companies that install openers. Otherwise leave it out of scope.",
+      "Peg the build to one mid-size privacy fence job, never to an hourly rate.",
+      "Keep storm-repair pages small and quick to build so they are ready before the next windstorm."
+    ],
+    "lineItems": [
+      {
+        "item": "Style or material page (each)",
+        "min": 250,
+        "max": 600,
+        "unit": "per-page",
+        "description": "Max when the page needs a comparison table, care notes and its own gallery of finished fences.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Estimate form with footage and gate fields",
+        "min": 400,
+        "max": 1000,
+        "unit": "one-time",
+        "description": "Max with photo upload, HOA status, a yard sketch field and routing to two estimators.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "HOA and permit help page",
+        "min": 300,
+        "max": 700,
+        "unit": "per-page",
+        "description": "Max when it covers several towns' height and setback rules and includes a printable HOA approval checklist.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Gate and opener showcase",
+        "min": 400,
+        "max": 900,
+        "unit": "one-time",
+        "description": "Max when it covers swing, slide and automatic gates with access-control options and opener service.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Town service-area page (each)",
+        "min": 200,
+        "max": 450,
+        "unit": "per-page",
+        "description": "Max when each town page gets its own finished fence jobs and local permit notes.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Storm-repair landing page",
+        "min": 300,
+        "max": 700,
+        "unit": "one-time",
+        "description": "Max with an urgent repair form, a claim-photo checklist and a banner they can switch on after a storm.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Spanish-language estimate path",
+        "min": 400,
+        "max": 1000,
+        "unit": "one-time",
+        "description": "Max when the gallery captions, estimate form and HOA page are all translated, not only the home page.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Finished-fence photo and drone day",
+      "min": 600,
+      "max": 1500,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"One morning at your three best fence jobs, ground and drone, gives you a year of posts and a gallery that sells the next gate.\"",
+      "when": "Month 2, or the week they finish a job they're proud of."
+    },
+    {
+      "name": "Google profile management for fence jobs",
+      "min": 200,
+      "max": 400,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Every week a new fence or gate goes on your Google profile with the town in the caption, so the map listing always has something fresh to show.\"",
+      "when": "Day 30, once the site is live and there's a new job to post."
+    },
+    {
+      "name": "Review requests with a yard-sign code",
+      "min": 99,
+      "max": 249,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Every finished fence gets a text asking for a review, and the yard sign carries a code the neighbours can scan.\"",
+      "when": "Day 30. The easiest second sale."
+    },
+    {
+      "name": "Yard sign, truck and estimate-sheet artwork",
+      "min": 200,
+      "max": 600,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A new fence is a billboard for a couple of weeks. A yard sign with your name and the site on it makes it do the work.\"",
+      "when": "Right after launch."
+    },
+    {
+      "name": "Late-winter privacy and pet fence push",
+      "min": 300,
+      "max": 600,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A February push for privacy and dog fences lands before every other fence company's spring schedule fills.\"",
+      "when": "Pitch in December, run in February."
+    },
+    {
+      "name": "Neighbour postcards after each install",
+      "min": 150,
+      "max": 400,
+      "unit": "per-job",
+      "scalesWithMarket": true,
+      "pitchLine": "\"When a fence goes up, the houses on either side get a postcard with the finished job on it. They've already seen the crew.\"",
+      "when": "Month 2, once there are finished jobs on the site to point at."
+    },
+    {
+      "name": "Style sheet for realtors and HOA boards",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A one-page fence style sheet for realtors and HOA boards puts your name in front of the people who approve and recommend fences.\"",
+      "when": "Month 3, after the HOA page is live."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Landscapers and hardscapers on the same backyard jobs",
+        "whoPays": "The landscaper, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"Who puts in the sod and pavers after your fence goes up? I'll build their site too, and your fence page links to theirs.\"",
+        "whyItWorks": "Backyard projects run in sequence and the trades already refer each other. One introduction from a fence owner is a warm door."
+      },
+      {
+        "route": "The fence supply yard",
+        "whoPays": "The supply yard",
+        "min": 2500,
+        "max": 8000,
+        "unit": "one-time",
+        "pitchLine": "\"Your fence supply yard sells to installers all over the region and their site is dated. Introduce me and I'll build their installer finder.\"",
+        "whyItWorks": "Supply yards have real budgets and their installer list is exactly the prospect list you have been building by hand."
+      },
+      {
+        "route": "HOA management companies",
+        "whoPays": "The management company",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The HOA board approves fence requests through email chains. I can build them a request page with the height and style rules on it.\"",
+        "whyItWorks": "Fence owners deal with HOA managers every week. The manager has a real problem and a budget line for resident tools."
+      },
+      {
+        "route": "Pool builders who need code barriers",
+        "whoPays": "The pool builder, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"Every pool you fence needs a barrier that passes inspection, so the pool builders around {City} already know you. I build for them too.\"",
+        "whyItWorks": "Pool builders sell bigger tickets than fence companies and buy websites on the same logic."
+      },
+      {
+        "route": "Realtors listing homes with new fences",
+        "whoPays": "The agent or brokerage",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"A new privacy fence shows up in every listing photo. The agents who sell those houses need a vendor page, and your fence company is on it.\"",
+        "whyItWorks": "Agents recommend vendors for a living and pay for pages that make them look organised to sellers."
+      },
+      {
+        "route": "Dog trainers and boarding kennels",
+        "whoPays": "The trainer, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"Dog trainers tell owners to fix the fence before anything else. They need a site, and their clients need a fence company's number.\"",
+        "whyItWorks": "A two-way referral: the trainer sends containment jobs, the fence company sends new dog owners."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Materials-list assistant for the supply yard's installers",
+        "whoPays": "The supply yard, annually",
+        "min": 3000,
+        "max": 12000,
+        "unit": "per-year",
+        "pitchLine": "\"Give every installer on your books a tool that turns a yard sketch into a fence materials list, priced from your yard.\"",
+        "whyItWorks": "It ties installers to one yard's prices, which is worth more to the yard than a rebate."
+      },
+      {
+        "route": "HOA fence-request checker",
+        "whoPays": "The HOA management company, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"An assistant checks each fence request against the HOA's height and style rules before the board ever sees it.\"",
+        "whyItWorks": "Boards meet rarely and resubmissions waste everyone's month. The manager pays to stop the back-and-forth."
+      },
+      {
+        "route": "Quote follow-up for the landscaper",
+        "whoPays": "The landscaper",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"The landscaper who shares your backyard fence jobs loses quotes to slow follow-up. Same text-back you have, built for them.\"",
+        "whyItWorks": "You already built it once. The second build is configuration, and the referral came from a client who trusts you."
+      },
+      {
+        "route": "Pool barrier code chatbot for pool builders",
+        "whoPays": "The pool builder",
+        "min": 1200,
+        "max": 3000,
+        "unit": "one-time",
+        "pitchLine": "\"Pool buyers ask about barrier heights and gate latches at night. A chatbot trained on the local pool fence code answers them.\"",
+        "whyItWorks": "Code questions slow pool sales. The fence owner's code knowledge is the training material."
+      },
+      {
+        "route": "Repair-ticket triage for property managers",
+        "whoPays": "The property manager, monthly",
+        "min": 200,
+        "max": 500,
+        "unit": "monthly",
+        "pitchLine": "\"Property managers get broken fence and gate tickets every week. An assistant sorts them by urgency from the tenant's description and sends repairs to one fence company.\"",
+        "whyItWorks": "The manager saves dispatch time and the fence client gets steady repair work. Both sides pay attention to it."
+      },
+      {
+        "route": "Gate opener dealer's support assistant",
+        "whoPays": "The gate opener dealer",
+        "min": 1500,
+        "max": 5000,
+        "unit": "one-time",
+        "pitchLine": "\"The dealer who sells your gate openers gets the same troubleshooting calls every week. An assistant trained on their manuals takes them.\"",
+        "whyItWorks": "Dealers carry the support cost of every installer they sell to. Cutting repeat calls is an easy budget conversation."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Missed-call text-back for fence estimate calls",
+      "kind": "automation",
+      "oneTimeMin": 0,
+      "oneTimeMax": 300,
+      "monthlyMin": 99,
+      "monthlyMax": 199,
+      "pitchLine": "\"Every missed call from the job site gets a text asking for the address and the fence they want. You call back with the answer already in hand.\"",
+      "whenAndWhatItTakes": "Day 30. Needs their business number forwarded and two lines of wording they approve."
+    },
+    {
+      "name": "Fence price calculator by style and linear foot",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"A homeowner picks cedar or vinyl, enters the footage and the gates, and sees a ballpark range before they call. You stop driving out to people who wanted a cheaper fence.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their real price per foot by style, gate prices and the minimum job they take."
+    },
+    {
+      "name": "Photo-to-footage fence estimator",
+      "kind": "ai",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"The homeowner uploads yard photos and a rough sketch, and the tool drafts the fence footage and gate count for you to check.\"",
+      "whenAndWhatItTakes": "Month 4, after the calculator. Needs a set of past jobs with measured footage to tune against. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Job pipeline from estimate to install",
+      "kind": "software",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 9000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Every fence estimate, deposit, locate ticket and install date on one board instead of a notebook in the truck.\"",
+      "whenAndWhatItTakes": "Month 3, once the form is producing. Needs their stages, who estimates, and how deposits are taken."
+    },
+    {
+      "name": "Utility locate and permit reminder flow",
+      "kind": "automation",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"When a fence job is booked, the locate request and the permit check get a reminder on the right day, so nobody digs before the lines are marked.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their booking flow and which towns require a fence permit."
+    },
+    {
+      "name": "HOA approval packet generator",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3500,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Pick the fence style and the run, and it prints the HOA packet: drawing, height, materials and the spec sheet.\"",
+      "whenAndWhatItTakes": "Month 4, or the first time a job stalls on HOA approval. Needs their style specs and two past approved packets."
+    },
+    {
+      "name": "After-hours receptionist for fence and gate calls",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 250,
+      "monthlyMax": 600,
+      "pitchLine": "\"It answers at nine at night, asks for the address, the fence style and whether it's a repair, and books the estimate. You hear the recording in the morning.\"",
+      "whenAndWhatItTakes": "Month 3, once they trust you. Needs their calendar, service list and the questions they always ask. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Crew app with post-depth and photo checklist",
+      "kind": "software",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 18000,
+      "monthlyMin": 250,
+      "monthlyMax": 700,
+      "pitchLine": "\"The crew checks off post depth, concrete and gate swing on the phone, with a photo at each step. You see every fence job without driving to it.\"",
+      "whenAndWhatItTakes": "Month 6, when they run two crews. Needs their install checklist and a foreman willing to test it."
+    },
+    {
+      "name": "Materials takeoff from a site sketch",
+      "kind": "ai",
+      "oneTimeMin": 2500,
+      "oneTimeMax": 7000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Draw the fence line on the estimate and it lists posts, rails, pickets, concrete and gate hardware for the supply order.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their framing rules by style and a few past materials lists to check against. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Deposit and progress invoicing for fence jobs",
+      "kind": "automation",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Deposit at booking, balance when the last gate is hung, sent automatically with a card link.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their deposit rule and the payment account they already use."
+    },
+    {
+      "name": "Customer portal with style approval and install date",
+      "kind": "software",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"The homeowner signs off on the fence style, sees the locate status and the install date, and stops calling to ask.\"",
+      "whenAndWhatItTakes": "Month 6. Needs the job pipeline in place first."
+    },
+    {
+      "name": "Review reply drafts for fence and gate jobs",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1200,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"Every new review gets a reply drafted in your voice that names the fence job, ready for you to approve from your phone.\"",
+      "whenAndWhatItTakes": "Month 2, alongside the review requests. Needs ten of their past replies to learn the voice. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Gate service plan tracker",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Every automatic gate you install goes on a yearly service plan, and the tracker books the visit and bills it.\"",
+      "whenAndWhatItTakes": "Month 6, only for companies installing gate openers. Needs their opener list and a service price."
+    },
+    {
+      "name": "Content writer for style and town pages",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 250,
+      "monthlyMax": 600,
+      "pitchLine": "\"A new fence style or town page every month, drafted from your finished jobs and your notes, checked by you before it goes live.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their job notes and approval on every page. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Stain and warranty check-in sequence",
+      "kind": "automation",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"A year after a cedar fence goes in, the homeowner gets a reminder to stain it and a warranty check. That's repeat fence work from people who already said yes.\"",
+      "whenAndWhatItTakes": "Month 4. Needs a list of past jobs with install dates and the stain service price."
+    },
+    {
+      "name": "Job costing by fence material and crew",
+      "kind": "software",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 6000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"See which fence styles actually make money once materials, labour and gate hardware are counted.\"",
+      "whenAndWhatItTakes": "Month 6. Needs materials invoices and crew hours for a season of jobs."
+    },
+    {
+      "name": "Chatbot on fence styles, HOA rules and lead times",
+      "kind": "ai",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3500,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"It answers 'can I do a six-foot fence in my HOA' and 'how soon can you start' at midnight, from your real rules and schedule.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their style list, HOA notes and current lead time, updated monthly. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Voice-to-estimate notes for the truck",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4500,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"Walk the fence line, talk into the phone, and it drafts the estimate with footage, gates and removal of the old fence.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their estimate template and pricing rules. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Supplier price-sheet updater",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"When the supply yard changes picket and post prices, the fence calculator and the estimate template update the same day.\"",
+      "whenAndWhatItTakes": "Month 6, after the calculator. Needs the supply yard's price sheet format."
+    },
+    {
+      "name": "Applicant screener for fence installers",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"Applicants for fence installer and helper jobs answer the questions you always ask, and you only call the ones with a licence and a ride.\"",
+      "whenAndWhatItTakes": "Any time they post a hiring note. Needs their must-haves and the pay range. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the fence calculator for every installer",
+      "whoPays": "Fence companies, monthly per operator",
+      "min": 49,
+      "max": 199,
+      "unit": "monthly",
+      "pitchLine": "\"I built this fence price calculator for one company. Every fence installer in the state has the same estimate problem.\"",
+      "whyItWorks": "The hardest part of vertical software is knowing the workflow. The first client taught it to you and paid for the build."
+    },
+    {
+      "route": "License the installer finder to a fence materials distributor",
+      "whoPays": "The distributor, annually",
+      "min": 5000,
+      "max": 25000,
+      "unit": "per-year",
+      "pitchLine": "\"Put a find-an-installer map on your site for every fence company that buys from you. They stay loyal to the yard that sends them work.\"",
+      "whyItWorks": "Distributors spend on dealer loyalty already. A tool their installers use daily is stickier than a rebate."
+    },
+    {
+      "route": "Certified-installer portal for a fence manufacturer",
+      "whoPays": "The vinyl or ornamental iron manufacturer",
+      "min": 8000,
+      "max": 30000,
+      "unit": "one-time",
+      "pitchLine": "\"Your certified fence installers need warranty registration, spec sheets and a locator. I've built that workflow for an installer already.\"",
+      "whyItWorks": "Manufacturers have marketing budgets and a channel problem. The installer client is your proof that you know the trade."
+    },
+    {
+      "route": "Fence contractors' association member toolkit",
+      "whoPays": "The association, per bundle",
+      "min": 1500,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer every member fence company a site template, an estimate form and an HOA page as a membership benefit.\"",
+      "whyItWorks": "Associations need reasons to renew. One deal reaches dozens of owners who already trust the association."
+    },
+    {
+      "route": "White-label fence site template for agencies",
+      "whoPays": "The agency, per site",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency gets fence clients and builds them from scratch. License my fence template with the estimate form and style pages built in.\"",
+      "whyItWorks": "Agencies sell the client; you sell them the part you've already perfected."
+    },
+    {
+      "route": "Dealer locator and service requests for a gate operator distributor",
+      "whoPays": "The gate operator distributor",
+      "min": 5000,
+      "max": 20000,
+      "unit": "one-time",
+      "pitchLine": "\"Homeowners with a stuck gate opener search for service. A locator that routes them to your dealers keeps the work in your network.\"",
+      "whyItWorks": "Service requests are revenue the distributor currently loses to whoever answers first."
+    },
+    {
+      "route": "Multi-location fence franchise groups",
+      "whoPays": "The franchise group, per location",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "pitchLine": "\"Each of your fence territories needs town pages and an estimate form that routes to the right owner. I build it once and roll it out.\"",
+      "whyItWorks": "One contract becomes many locations, all on the same template."
+    },
+    {
+      "route": "Fence request portal across a property management portfolio",
+      "whoPays": "The management firm, annually",
+      "min": 3000,
+      "max": 12000,
+      "unit": "per-year",
+      "pitchLine": "\"Every community you manage gets the same fence request and approval page, with each HOA's own height and style rules.\"",
+      "whyItWorks": "Firms managing many associations buy once and roll out everywhere, and fence requests are a steady complaint."
+    },
+    {
+      "route": "New-home fence option pages for home builders",
+      "whoPays": "The home builder",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"New-home buyers ask about a fence before closing. A fence options page in your design centre sells the upgrade and routes it to one installer.\"",
+      "whyItWorks": "Builders like upgrade revenue and a vendor who shows up organised. The fence client becomes the default installer."
+    },
+    {
+      "route": "Monthly fence material cost sheet for installers",
+      "whoPays": "Installers, monthly",
+      "min": 29,
+      "max": 99,
+      "unit": "monthly",
+      "pitchLine": "\"A short monthly sheet on where cedar, vinyl and post prices are heading, built from supply yard price lists installers share with you.\"",
+      "whyItWorks": "Installers re-price jobs constantly. Built only from data they contribute, it never claims more than the sheets show."
+    },
+    {
+      "route": "The same fence stack in the next metro",
+      "whoPays": "New fence clients in a new metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I only work with one fence company per town. Yours is taken in {City}. The next metro isn't.\"",
+      "whyItWorks": "Non-competing geography lets you reuse the template, the pitch and the finished-job proof."
+    },
+    {
+      "route": "Rescue failed fence-company builds",
+      "whoPays": "The stranded fence company",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"Someone started your fence site and disappeared. I can finish it on a template I've already shipped for another fence company.\"",
+      "whyItWorks": "Stranded clients already decided to buy. They need someone who can show finished fence work fast."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Fence site build plus care plan, one contract",
+      "min": 1800,
+      "max": 3000,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The fence site and the care plan go on the same contract, so a phone number change is a text to me, not a weekend for you.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Review requests and Google profile management",
+      "min": 200,
+      "max": 400,
+      "unit": "monthly",
+      "trigger": "The first fence job finished since launch, with photos to post.",
+      "line": "\"That new gate job is the first thing on your Google profile now. Let's make every finished fence do that.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "Finished-fence photo and drone day",
+      "min": 600,
+      "max": 1500,
+      "unit": "per-shoot",
+      "trigger": "They post a job they're proud of, or the gallery still has only a handful of fence projects.",
+      "line": "\"Let's shoot your three best fence jobs in one morning. The gallery and a year of posts come out of it.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Fence price calculator by style and linear foot",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "trigger": "Sixty days of estimate-form data shows the same styles and footage asked for again and again.",
+      "line": "\"Most of your fence requests are the same three styles. A calculator answers them before you drive out.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "After-hours receptionist for fence and gate calls",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "trigger": "They mention missing calls on a job, or the missed-call log shows evening repair calls.",
+      "line": "\"Those fence repair calls after dark are going to someone else. This answers them and books the estimate.\""
+    },
+    {
+      "rung": 6,
+      "day": 120,
+      "offer": "HOA approval packet generator",
+      "min": 1200,
+      "max": 3500,
+      "unit": "one-time",
+      "trigger": "A fence job stalls waiting on an HOA board.",
+      "line": "\"That fence job stuck at the HOA is the reason for this. The packet goes in complete the first time.\""
+    },
+    {
+      "rung": 7,
+      "day": 180,
+      "offer": "Job pipeline from estimate to install",
+      "min": 3000,
+      "max": 9000,
+      "unit": "one-time",
+      "trigger": "They mention a second crew or a backlog of several weeks.",
+      "line": "\"Two fence crews and a backlog won't fit in a notebook. Let's put every job on one board.\""
+    },
+    {
+      "rung": 8,
+      "day": 365,
+      "offer": "Stain and warranty check-in sequence",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "trigger": "The first anniversary of the earliest cedar fence jobs since launch.",
+      "line": "\"Last spring's cedar fences need stain this spring. Let's remind every one of those customers.\""
+    }
+  ]
+}

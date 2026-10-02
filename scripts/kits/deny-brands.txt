@@ -1,0 +1,129 @@
+# Names a category kit must never use: third-party software, marketplaces, AI vendors and lead platforms.
+# One per line, matched as a whole word, case-insensitive. A line starting with "=" matches case-sensitively
+# (for names that are also ordinary words). Names that are mostly ordinary words (Square, Clover, Hearth,
+# Boulevard, Swept, Bark) are left out: false positives such as "Square footage" outnumber the catches.
+# Instagram, Facebook, Google, Nextdoor and TikTok are the channels the playbook itself prospects on,
+# so they are allowed.
+#
+# lead platforms and marketplaces
+Angi
+Angie's List
+HomeAdvisor
+Thumbtack
+Yelp
+Houzz
+=Porch
+Networx
+Craigslist
+Groupon
+Etsy
+Amazon
+eBay
+Zillow
+Redfin
+Realtor.com
+=Indeed
+ZipRecruiter
+Care.com
+=Rover
+Wag!
+DoorDash
+Grubhub
+Uber Eats
+Postmates
+OpenTable
+Resy
+=Toast
+The Knot
+WeddingWire
+Zola
+Bark.com
+# website builders and link pages
+Wix
+Squarespace
+GoDaddy
+WordPress
+Weebly
+Shopify
+Webflow
+Linktree
+Carrd
+# booking, field-service and practice software
+Jobber
+Housecall Pro
+ServiceTitan
+Workiz
+GorillaDesk
+FieldEdge
+Service Fusion
+Vagaro
+Booksy
+StyleSeat
+GlossGenius
+Fresha
+Mindbody
+Schedulicity
+Calendly
+Acuity
+Setmore
+ZenMaid
+Launch27
+BookingKoala
+Janitorial Manager
+CleanGuru
+=Aspire
+LMN
+SingleOps
+Buildertrend
+CompanyCam
+JobNimbus
+AccuLynx
+Tekmetric
+Shopmonkey
+=Mitchell
+Gingr
+PetExec
+Brightwheel
+Procare
+Jane App
+SimplePractice
+TherapyNotes
+# payments, finance and back office
+QuickBooks
+Xero
+FreshBooks
+Stripe
+PayPal
+Venmo
+Affirm
+Klarna
+GreenSky
+Wisetack
+Synchrony
+Gusto
+ADP
+# marketing and automation
+Mailchimp
+Constant Contact
+HubSpot
+Salesforce
+Zapier
+Make.com
+Twilio
+Podium
+Birdeye
+NiceJob
+Broadly
+Canva
+Yext
+# AI vendors and models
+OpenAI
+ChatGPT
+GPT
+Claude
+Anthropic
+Gemini
+Copilot
+Midjourney
+=Llama
+Perplexity

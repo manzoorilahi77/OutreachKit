@@ -1,0 +1,843 @@
+{
+  "schemaVersion": 1,
+  "category": "Hair salons & suites",
+  "slug": "hair-salons-suites",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A pilot",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Pilot file. Low-ticket category: software and AI prices are held well below the build. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Colour consultation request",
+      "contains": "Current colour, recent box dye or lightener, the goal look, a slot for the client's own reference pictures, and booking a strand or patch test before the colour appointment",
+      "why": "Colour clients won't book a long appointment blind. A consultation step filters the corrections from the touch-ups and sets the price before the chair."
+    },
+    {
+      "section": "Extensions method guide",
+      "contains": "Tape-in, k-tip and hand-tied wefts compared by wear, upkeep visits and removal, plus the consultation deposit and the move-up appointment schedule",
+      "why": "Extension clients research methods for weeks before they book. The stylist who explains them plainly gets the consultation."
+    },
+    {
+      "section": "Suite directory",
+      "contains": "One card per independent stylist in the building: specialty, hours, booking link and suite number, so each renter keeps a separate business",
+      "why": "Suite renters share a front door but book separately, and customers often know the building before they know the stylist's name."
+    },
+    {
+      "section": "Finding the suite",
+      "contains": "Parking, which entrance, the buzzer or door code process, the hallway to the salon suite, and what to do if you're running late",
+      "why": "Salon suites hide inside office buildings. A first visit that starts lost in a hallway starts badly."
+    },
+    {
+      "section": "Bridal and event hair",
+      "contains": "Trial appointment booking, on-location fees, party size, timing on the day, and the deposit that holds the date",
+      "why": "Wedding hair is booked months ahead with a trial, and brides compare stylists on how organised the process looks."
+    },
+    {
+      "section": "Curly and textured hair specialties",
+      "contains": "Curly cuts, textured hair, silk press, protective styles, what to arrive with and how long each service takes",
+      "why": "People with curly or textured hair search specifically for a stylist who knows their hair, and leave a salon that can't say so."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C22",
+      "siteType": "booking-first",
+      "name": "Chair Ready",
+      "heroLayout": "card-stack",
+      "mood": ["friendly", "easy", "bright"],
+      "bestFor": "Solo suite renters who need a booking button and a price menu more than a portfolio",
+      "pairsWithTier": "starter",
+      "headlineSample": "Cuts, colour and blowouts in {City}. Book online.",
+      "whyItFits": "Soft rounded type and a warm peach ground feel like a friendly chair, and the stacked cards put the next service and the Book button first."
+    },
+    {
+      "id": "b",
+      "themeId": "C35",
+      "siteType": "portfolio-showcase",
+      "name": "Colour Book",
+      "heroLayout": "split-photo",
+      "mood": ["polished", "warm", "confident"],
+      "bestFor": "Colourists and extension specialists whose transformations do the selling",
+      "pairsWithTier": "standard",
+      "headlineSample": "Balayage, colour and extensions in {City}",
+      "whyItFits": "The family combo, Sage Spa, fails CTA contrast and reads as quiet spa rather than colour work. Rosewood's fashion serif suits a hair salon portfolio and passes AA."
+    },
+    {
+      "id": "c",
+      "themeId": "C48",
+      "siteType": "premium-brand",
+      "name": "Salon Noir",
+      "heroLayout": "full-bleed-photo",
+      "mood": ["editorial", "dramatic", "exclusive"],
+      "bestFor": "High-end colour and bridal stylists who want a waitlist, not a discount",
+      "pairsWithTier": "premium",
+      "headlineSample": "Hair colour by appointment in {City}",
+      "whyItFits": "A dark editorial page makes hair colour the brightest thing on screen, and the Didone display signals a premium chair without saying it."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your Google listing for the salon has hours and a phone number but no website, so someone searching for balayage in {City} can't see your work or a price before they decide.",
+      "hook": "Open their Maps listing and confirm there is no Website button. Screenshot it for when they reply.",
+      "linkLine": "Here's what would sit behind that button: {demo-link}"
+    },
+    {
+      "angle": "Bio link only",
+      "line": "Your bio link goes straight to a booking app with service names and no hair work around them. A new client deciding between stylists wants to see colour before they pick a slot.",
+      "hook": "Tap their bio link and note where it lands: a booking app, a link page or a Facebook page.",
+      "linkLine": "Your salon menu and your work on one page: {demo-link}"
+    },
+    {
+      "angle": "Dead free host",
+      "line": "The salon site on your listing is an old free page with last year's hours on it. Clients notice that before they notice your colour work.",
+      "hook": "Open the site and find one stale detail: old hours, an old price, a dead booking button. Note it.",
+      "linkLine": "Same salon, current and easy to book: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "I opened your salon site on my phone and the service menu was too small to read without zooming. Most hair appointments get booked from a phone on the couch.",
+      "hook": "Only if they have a site. Load it on your phone and note what breaks. Screenshot it for when they reply.",
+      "linkLine": "The same salon, rebuilt for a phone: {demo-link}"
+    },
+    {
+      "angle": "No prices anywhere",
+      "line": "There's no price for colour or extensions anywhere I could find. A new client who can't tell if a balayage is in budget usually books the stylist who says so.",
+      "hook": "Check the listing, the posts and any booking page for prices. If there are none, the angle holds.",
+      "linkLine": "A hair menu with real prices and times: {demo-link}"
+    },
+    {
+      "angle": "Transformations, nowhere to live",
+      "line": "Your colour transformations are the best thing on your grid, and they're mixed in with memes and product reposts. A salon gallery sorted by service would book the next one.",
+      "hook": "Pick one recent colour or extension post you can describe exactly. Mention it if they reply.",
+      "linkLine": "Your hair work, sorted by service: {demo-link}"
+    },
+    {
+      "angle": "Reviews stuck on Google",
+      "line": "Your Google reviews mention a colour correction that finally fixed someone's box dye. That review should sit right next to the booking button, not three taps away.",
+      "hook": "Read their reviews and copy one phrase about a specific hair service. Quote it back if they reply.",
+      "linkLine": "Your reviews next to the hair services they describe: {demo-link}"
+    },
+    {
+      "angle": "Prom and wedding season",
+      "line": "Prom and wedding season fill a stylist's Saturdays fast. The salons with a trial booking page take those dates first, before anyone has to call.",
+      "hook": "Use this in January through March for spring events, or late summer for holiday parties. Name the event.",
+      "linkLine": "Bridal and event hair, bookable now: {demo-link}"
+    },
+    {
+      "angle": "Late-night booking",
+      "line": "Someone finds your hair work at eleven at night and wants the first Saturday slot. Right now they have to DM and wait, and some of them book whoever answers first.",
+      "hook": "Look for comments asking 'do you have openings' or 'how do I book'. Note one.",
+      "linkLine": "A salon page that books at midnight: {demo-link}"
+    },
+    {
+      "angle": "Renting a chair",
+      "line": "Saw you're looking for a stylist to rent a chair in the salon. Good stylists check whether the salon looks established before they reach out.",
+      "hook": "Only if they posted 'chair available', 'booth rent' or a hiring story. Note the date.",
+      "linkLine": "A salon page with a join-the-team section: {demo-link}"
+    },
+    {
+      "angle": "Hard-to-find suite",
+      "line": "Your salon suite is inside a building that new clients have never been in. A page with parking, the entrance and the suite number saves the first visit from starting late.",
+      "hook": "Check their posts or reviews for directions questions or a mention of the suite building.",
+      "linkLine": "A first-visit guide to your suite: {demo-link}"
+    },
+    {
+      "angle": "Gift cards",
+      "line": "December is when people want to buy a salon gift card for someone. If there's nowhere to buy one online, they buy a candle instead.",
+      "hook": "Use this from November to mid-December. Check whether they sell gift cards anywhere online.",
+      "linkLine": "A salon gift card page, ready for December: {demo-link}"
+    },
+    {
+      "angle": "Licence and training",
+      "line": "You've done real training in colour and extensions, and none of it shows up anywhere a new hair client would look. That's the reason they'd pick you over the salon down the road.",
+      "hook": "Look for certificates, class photos or 'certified in' in their bio or posts. Never invent a credential.",
+      "linkLine": "Your training next to your hair work: {demo-link}"
+    },
+    {
+      "angle": "Regulars only",
+      "line": "Sounds like your chair is full of regulars who've followed you for years. When a few move away, the new clients who replace them look you up first.",
+      "hook": "Look for posts like 'my clients of years' or reviews saying 'followed her from her old salon'. Quote it.",
+      "linkLine": "Where a new salon client would land: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "That {specific recent job} you posted is lovely hair work. A colour result like that should be the first thing a new client sees, not buried in the grid.",
+      "hook": "Pick their newest colour, cut or extension post and name it exactly: the service and the result.",
+      "linkLine": "That hair transformation, front and centre: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner} — that {specific recent job} you posted is lovely hair work.\n\nI looked for a salon site for {Business Name} and only found the booking app and your social pages. I put together a sample page with your menu, prices and a booking button, with marked placeholders where your photos would go.\n\nWould you like me to send it over?",
+    "dm2": "{Owner} — following up in case my message got lost in your requests. Here's the sample salon site for {Business Name}: {demo-link}\n\nIt has a priced hair menu, a colour consultation form and a first-visit guide to the suite. If it's not for you, say so and I won't message again.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for hair salons and suite stylists here in {City}. I sent you a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"Easy to miss between clients. Short version: I built a sample salon site for {Business Name} with your menu, a colour consultation form and a booking button, with marked placeholders where your photos would go. Can I email you the link to look at tonight?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range}, then {Care Range} a month for hosting and menu changes. For a salon like yours I'd normally quote about {Build Price}.\"\n\"Can I walk you through it for ten minutes between clients this week? Monday is usually quiet for stylists.\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. We start the day it clears.\"",
+    "objections": [
+      {
+        "objection": "My booking app is my website.",
+        "handler": "\"It takes the booking, but it can't show your colour work or explain a consultation. The site sits in front of it and sends people to book with you, not the next stylist in the app.\""
+      },
+      {
+        "objection": "All my clients come from Instagram.",
+        "handler": "\"Instagram finds them. The site is where they check prices and book at midnight without waiting on a DM. It links straight back to your grid.\""
+      },
+      {
+        "objection": "I'm fully booked.",
+        "handler": "\"Then the site is for raising prices and filling cancellations. A waitlist and a priced menu let you choose who sits in your chair.\""
+      },
+      {
+        "objection": "I rent a suite, I'm not a real salon.",
+        "handler": "\"Suite stylists are exactly who this is for. You're a business with one chair, and the site makes that look intentional, not small.\""
+      },
+      {
+        "objection": "My friend takes my photos and posts for me.",
+        "handler": "\"Great, keep that. The site uses the photos you approve and stays put while the feed moves on. Nobody has to post anything new for it to work.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}, because it's a priced menu, a booking button and a gallery. A few colour appointments cover it.\""
+      }
+    ],
+    "email": {
+      "subject": "Salon site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for hair salons and suite stylists around {City}. {Business Name} has beautiful hair work on its social pages, but no site where a new client can see prices and book.\n\nI built a sample first rather than ask for your time: a priced hair menu, a colour consultation form, a first-visit guide to the suite and a booking button, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and menu changes. If not, no problem, it comes down at the end of the month.\n\nWorth ten minutes on the phone between clients?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build websites for hair salons in {City}, and I put together a sample one for {Business Name}. I'll email you the link so you can look between clients. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner} — I'm taking the {Business Name} salon demo down on Friday to free up the space.\n\nWant me to leave it up? One word is fine either way.",
+    "nurture": "Hi {Owner} — holiday party and gift card season is coming, and salon calendars fill fast in December. Thought of you.\n\nThe site is still here whenever you want it, and nothing's changed on price. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to a handful of colour appointments, never to a month of rent. Their tickets are small, so the build has to be.",
+      "Price the menu by service count, not page count. A long colour and extensions menu with times and prices is the real work.",
+      "The colour consultation form is its own line. It is what turns a scroll into a booked correction.",
+      "For a suite building, price each stylist's directory card separately and sell the building owner the frame.",
+      "Keep monthly add-ons under what one regular spends per visit. Anything higher gets cancelled in a slow month.",
+      "Sell gift card and bridal pages ahead of their season, never during it."
+    ],
+    "lineItems": [
+      {
+        "item": "Priced hair menu with times (each extra category)",
+        "min": 100,
+        "max": 250,
+        "unit": "per-page",
+        "description": "Max when the category has add-on pricing by hair length or density and its own before-and-after gallery.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Colour consultation form",
+        "min": 250,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max with reference-picture upload, colour history questions and a patch-test booking step.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Extensions method guide",
+        "min": 200,
+        "max": 500,
+        "unit": "per-page",
+        "description": "Max when it compares several methods with upkeep schedules and a consultation deposit flow.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Bridal and event hair page",
+        "min": 250,
+        "max": 600,
+        "unit": "per-page",
+        "description": "Max with a trial booking step, on-location fee calculator and party-size enquiry form.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Suite directory card (each stylist)",
+        "min": 100,
+        "max": 250,
+        "unit": "per-page",
+        "description": "Max when each card links to that stylist's own booking and a short gallery of their hair work.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Online gift card store",
+        "min": 200,
+        "max": 500,
+        "unit": "one-time",
+        "description": "Max with printable and emailed cards, preset amounts and a holiday banner.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Spanish-language salon menu",
+        "min": 250,
+        "max": 700,
+        "unit": "one-time",
+        "description": "Max when the menu, policies and consultation form are all translated.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Salon content day for colour and cuts",
+      "min": 300,
+      "max": 800,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"One afternoon shooting your best colour clients, with their written OK, gives the salon a month of posts and a gallery that books.\"",
+      "when": "Month 2, scheduled around a day with several colour clients who agree to be photographed."
+    },
+    {
+      "name": "Google profile upkeep for the salon",
+      "min": 150,
+      "max": 300,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"New hair work on your Google profile every week, with the service named, so people searching for a stylist nearby see you're busy.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Review requests after each salon visit",
+      "min": 49,
+      "max": 129,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A day after their hair appointment, clients get a short text asking for a review while they still love their colour.\"",
+      "when": "Day 30. The easiest second sale."
+    },
+    {
+      "name": "Holiday gift card campaign",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A December push for salon gift cards, on the site and in your stories, so the gift goes to your chair.\"",
+      "when": "Pitch in October, run from Thanksgiving to Christmas."
+    },
+    {
+      "name": "Bridal season salon push",
+      "min": 250,
+      "max": 600,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A January push to engaged couples for bridal hair trials fills your spring Saturdays before other stylists do.\"",
+      "when": "Pitch in December, run in January and February."
+    },
+    {
+      "name": "Suite door sign and salon card artwork",
+      "min": 150,
+      "max": 400,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A suite door sign and a salon card with your booking code on it, so the person in the next chair can book you too.\"",
+      "when": "Right after launch."
+    },
+    {
+      "name": "Monthly salon post planning",
+      "min": 200,
+      "max": 500,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"You do the hair, I plan the month of salon posts and captions around your openings and services.\"",
+      "when": "Month 3, if they say posting is the part they hate."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "The salon suite building owner",
+        "whoPays": "The building owner",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"Your building has a salon suite on every door and no site that lists them. I'll build the directory and the leasing page.\"",
+        "whyItWorks": "Suite owners need tenants and a reason for stylists to stay. The stylist client introduces you from inside the building."
+      },
+      {
+        "route": "The other stylists in the same suite building",
+        "whoPays": "Each stylist, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The stylist next door saw your salon site. I'll build theirs on the same template so the building looks consistent.\"",
+        "whyItWorks": "Suite neighbours see each other's sites every day. The second sale in a building is the easiest you'll make."
+      },
+      {
+        "route": "Wedding planners and photographers",
+        "whoPays": "The planner, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The planner who sends you bridal hair parties needs a vendor page that lists their hair and makeup team. That's you.\"",
+        "whyItWorks": "Wedding vendors refer in circles. One trusted bridal stylist opens the whole circle."
+      },
+      {
+        "route": "The beauty supply distributor",
+        "whoPays": "The distributor",
+        "min": 2500,
+        "max": 8000,
+        "unit": "one-time",
+        "pitchLine": "\"Your hair colour supplier sells to every salon in the region and needs a stylist-facing class calendar. Introduce me.\"",
+        "whyItWorks": "Distributors run education events and need sign-ups. Their salon list is your prospect list."
+      },
+      {
+        "route": "Nail, lash and brow techs in the same building",
+        "whoPays": "Each studio, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The lash and nail studios down the hall share your hair clients. I build for them on the same booking-first layout.\"",
+        "whyItWorks": "Same client, same building, same problem. The template carries over almost unchanged."
+      },
+      {
+        "route": "Cosmetology schools",
+        "whoPays": "The school",
+        "min": 1500,
+        "max": 5000,
+        "unit": "one-time",
+        "pitchLine": "\"The cosmetology school you trained at needs a page that books hair services on the student floor. You can introduce me to the director.\"",
+        "whyItWorks": "Schools sell discounted hair services to the public and need bookings. Alumni stylists are trusted introductions."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Leasing assistant for the suite building",
+        "whoPays": "The building owner, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Stylists asking about an open salon suite get answers on size, rent and move-in at any hour, and the owner gets a tour request.\"",
+        "whyItWorks": "Empty suites cost the owner every month. An assistant that books tours is an easy line in a leasing budget."
+      },
+      {
+        "route": "Stylist finder for the beauty supply distributor",
+        "whoPays": "The distributor, annually",
+        "min": 3000,
+        "max": 12000,
+        "unit": "per-year",
+        "pitchLine": "\"Clients ask which salons near them use your colour line. A finder that matches them to trained stylists keeps those salons ordering from you.\"",
+        "whyItWorks": "It makes the distributor useful to its salons, which is the loyalty they already pay rebates for."
+      },
+      {
+        "route": "Vendor matcher for wedding planners",
+        "whoPays": "The planner",
+        "min": 1000,
+        "max": 3000,
+        "unit": "one-time",
+        "pitchLine": "\"The planner's couples describe the look they want, and the assistant suggests hair and makeup vendors from the planner's own list.\"",
+        "whyItWorks": "Planners field the same vendor questions constantly. The bridal hair client is the first vendor on the list."
+      },
+      {
+        "route": "Rebooking assistant for nail and lash studios",
+        "whoPays": "The studio, monthly",
+        "min": 79,
+        "max": 199,
+        "unit": "monthly",
+        "pitchLine": "\"The same rebooking texts you run for the salon, tuned to fill and lash refill timing, for the studio down the hall.\"",
+        "whyItWorks": "You built it once for hair. A second studio is configuration, sold through a neighbour."
+      },
+      {
+        "route": "Student-floor booking assistant for cosmetology schools",
+        "whoPays": "The school",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The assistant explains student hair services, prices and timing, and books clients onto the floor when instructors are on.\"",
+        "whyItWorks": "Schools need a steady flow of practice clients. Filling the student floor is a measurable win they'll pay for."
+      },
+      {
+        "route": "After-hours receptionist for other suite stylists",
+        "whoPays": "Each stylist, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"The stylist next door misses calls with foils in. The same receptionist you use answers their salon line too.\"",
+        "whyItWorks": "Every one-chair business has the same missed-call problem, and the building is a ready-made cluster."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Rebooking texts timed to each hair service",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"A root touch-up client gets a rebooking text when their hair is due, not on a random Tuesday. Your chair stays full without you chasing.\"",
+      "whenAndWhatItTakes": "Day 30. Needs their service list with typical rebooking gaps and access to the booking calendar."
+    },
+    {
+      "name": "Deposit and no-show protection for long hair services",
+      "kind": "software",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Colour and extension appointments take a deposit at booking, so a no-show on a long hair service still pays something.\"",
+      "whenAndWhatItTakes": "At build, or the first time they complain about a no-show. Needs their deposit policy and payment account."
+    },
+    {
+      "name": "Consultation intake from client hair pictures",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"A new colour client uploads their current hair and their goal, and you get a summary with the likely service and time before you reply.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their service menu and how they price corrections. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Client colour formula card",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2500,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Every colour formula, developer and processing time saved on the client's card, so the next salon visit matches the last.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the stylist's current formula notes, even if they're on paper."
+    },
+    {
+      "name": "Patch-test and consultation reminder flow",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"New colour clients get reminded to come in for the patch test before the big hair appointment, so it never gets skipped.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their patch-test rule and booking access."
+    },
+    {
+      "name": "DM responder for salon price and availability questions",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"'How much is balayage' and 'any openings Saturday' get an answer in seconds from your real menu, with a booking link.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the priced menu and booking access, updated whenever prices change. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Suite rent and booth-fee tracker",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 49,
+      "monthlyMax": 99,
+      "pitchLine": "\"For the salon owner renting chairs: rent due dates, late notices and who has paid, in one place instead of a group chat.\"",
+      "whenAndWhatItTakes": "Month 3, only for owners renting chairs or suites. Needs the renter list and rent terms."
+    },
+    {
+      "name": "Caption writer for hair transformation posts",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Post the hair transformation, and a caption in your voice with the service named is ready for you to approve.\"",
+      "whenAndWhatItTakes": "Month 2. Needs a few of their past captions to learn the voice. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Retail hair product shelf and reorder list",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Know which shampoo and styling products sell in the salon and get a reorder list before the shelf runs empty.\"",
+      "whenAndWhatItTakes": "Month 4, only if they sell retail. Needs their product list and sales records."
+    },
+    {
+      "name": "Lapsed-client win-back sequence",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Clients who haven't sat in your salon chair in a few months get a friendly note and a booking link. Some of them just forgot.\"",
+      "whenAndWhatItTakes": "Month 3. Needs client visit history from the booking system."
+    },
+    {
+      "name": "Salon phone receptionist",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 199,
+      "monthlyMax": 399,
+      "pitchLine": "\"When your hands are in foils, the salon phone still gets answered, the question gets handled and the appointment gets booked.\"",
+      "whenAndWhatItTakes": "Month 3, once they trust you. Needs the menu, policies and booking access. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Salon memberships and blowout packages",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2500,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"A monthly blowout or gloss membership billed automatically turns occasional hair clients into steady income.\"",
+      "whenAndWhatItTakes": "Month 4. Needs a package they want to sell and a payment account."
+    },
+    {
+      "name": "Review reply drafts for the salon",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 49,
+      "monthlyMax": 149,
+      "pitchLine": "\"Every salon review gets a warm reply drafted in your voice that mentions the hair service, ready to approve from your phone.\"",
+      "whenAndWhatItTakes": "Month 2, alongside the review requests. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Bridal hair party planner",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"The bride enters the party, the stylist sees the timeline and each person's hair service, and the deposit is collected up front.\"",
+      "whenAndWhatItTakes": "Month 4, before bridal season. Needs their bridal pricing and on-location rules."
+    },
+    {
+      "name": "Extension upkeep reminders",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Extension clients get a reminder when their move-up appointment is due, so the hair stays healthy and the chair stays booked.\"",
+      "whenAndWhatItTakes": "Month 3, only for extension specialists. Needs their methods and upkeep schedules."
+    },
+    {
+      "name": "Hair style match quiz",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 99,
+      "monthlyMax": 199,
+      "pitchLine": "\"New clients answer a few questions about their hair and their routine, and the quiz suggests the right service from your menu.\"",
+      "whenAndWhatItTakes": "Month 5. Needs the full menu and the stylist's rules for who suits which service. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Commission and chair-rent payout report",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"For a salon with stylists on commission: who earned what, product sales included, at the end of every pay period.\"",
+      "whenAndWhatItTakes": "Month 5, only for salons with staff. Needs their commission rules and booking data."
+    },
+    {
+      "name": "Colour formula and aftercare knowledge base",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Assistants and new stylists search the salon's own colour notes and aftercare rules instead of interrupting you mid-service.\"",
+      "whenAndWhatItTakes": "Month 6, for salons with assistants. Needs their written notes and approval of every answer. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Client gallery with photo consent records",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Every hair photo in the gallery is tied to the client's signed OK to post it, so nothing goes up without permission.\"",
+      "whenAndWhatItTakes": "Month 3. Needs a consent wording they approve and a habit of asking at checkout."
+    },
+    {
+      "name": "Cancellation filler that texts the salon waitlist",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 49,
+      "monthlyMax": 99,
+      "pitchLine": "\"A hair appointment cancels, and the waitlist gets a text offering the slot to whoever fits the service length.\"",
+      "whenAndWhatItTakes": "Month 4. Needs booking access and a waitlist. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the rebooking and formula tools for independent stylists",
+      "whoPays": "Stylists, monthly per chair",
+      "min": 19,
+      "max": 79,
+      "unit": "monthly",
+      "pitchLine": "\"I built rebooking and colour formula cards for one salon. Every suite stylist in the country juggles the same notebook.\"",
+      "whyItWorks": "The first client taught you the workflow and paid for it. Suite renters are many, small and easy to reach in clusters."
+    },
+    {
+      "route": "Directory and leasing sites for salon suite building chains",
+      "whoPays": "The suite building group, annually",
+      "min": 3000,
+      "max": 12000,
+      "unit": "per-year",
+      "pitchLine": "\"Every salon suite building you run needs a stylist directory and a leasing page. I've built it for one building already.\"",
+      "whyItWorks": "Groups with many buildings buy once and roll out, and empty suites give them a reason to move quickly."
+    },
+    {
+      "route": "Stylist locator for a beauty supply distributor",
+      "whoPays": "The distributor",
+      "min": 5000,
+      "max": 20000,
+      "unit": "one-time",
+      "pitchLine": "\"Your salon customers want new clients. A locator on your site that sends hair clients to them makes your account the one they keep.\"",
+      "whyItWorks": "Distributors compete on loyalty. A tool their salons depend on beats another rebate."
+    },
+    {
+      "route": "Graduate launch kit for cosmetology schools",
+      "whoPays": "The school, annually",
+      "min": 1500,
+      "max": 6000,
+      "unit": "per-year",
+      "pitchLine": "\"Every graduate leaves with a salon page, a priced menu and a booking button. It's a reason to enrol at your school.\"",
+      "whyItWorks": "Schools sell outcomes. A launch kit for every graduating class is a recurring contract and a pipeline of future clients."
+    },
+    {
+      "route": "Certified-stylist locator for a hair colour or extension brand",
+      "whoPays": "The brand's education team",
+      "min": 8000,
+      "max": 30000,
+      "unit": "one-time",
+      "pitchLine": "\"Clients search for a stylist certified in your extension method. A locator tied to your class records sends them to the right chair.\"",
+      "whyItWorks": "Brands train stylists and want proof it sells product. The salon client shows you know the workflow."
+    },
+    {
+      "route": "State cosmetology association member toolkit",
+      "whoPays": "The association",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer every member salon a booking-first site template and a priced menu builder as a member benefit.\"",
+      "whyItWorks": "Associations need renewals. One deal reaches many owners who trust the association."
+    },
+    {
+      "route": "White-label salon site template for agencies",
+      "whoPays": "The agency, per site",
+      "min": 400,
+      "max": 1200,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency picks up salon clients and builds from scratch. License my booking-first salon template with the menu and consultation form built in.\"",
+      "whyItWorks": "Agencies sell the client; you sell them the part you've already perfected."
+    },
+    {
+      "route": "Barbers and nail studios in the same suite buildings",
+      "whoPays": "Each studio, at your normal rate",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"Every barber and nail studio in the suite building has the same problem as the hair salon. I work the building door to door.\"",
+      "whyItWorks": "A building is a dense cluster of one-chair businesses. Proof from the salon next door is the whole pitch."
+    },
+    {
+      "route": "Salon suite franchise groups",
+      "whoPays": "The franchise group, per location",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "pitchLine": "\"Each location needs a stylist directory and a leasing page that routes to the right manager. I build it once and roll it out.\"",
+      "whyItWorks": "One contract becomes many locations on the same template."
+    },
+    {
+      "route": "Vendor booking pages for bridal show organisers",
+      "whoPays": "The bridal show organiser",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"Couples at the bridal show want to book a hair trial on the spot. A vendor booking page for every exhibitor makes that happen.\"",
+      "whyItWorks": "Organisers sell exhibitor space on results. Bookings at the show are a result they can sell next year."
+    },
+    {
+      "route": "The same salon stack in the next metro",
+      "whoPays": "New salon clients in a new metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I keep one salon per suite building in {City}. The buildings in the next metro are wide open.\"",
+      "whyItWorks": "Non-competing geography lets you reuse the template, the pitch and the finished hair salon proof."
+    },
+    {
+      "route": "Rescue stalled salon booking setups",
+      "whoPays": "The stuck salon",
+      "min": 500,
+      "max": 2000,
+      "unit": "one-time",
+      "pitchLine": "\"Someone half-set-up your salon booking and disappeared. I can finish it on a setup I've already run for another stylist.\"",
+      "whyItWorks": "Stuck salon owners have already decided to buy. They need someone who has done it before."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Salon site build plus care plan, one contract",
+      "min": 1200,
+      "max": 2000,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The salon site and the care plan go on one contract, so a price change on the menu is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 14,
+      "offer": "Deposit and no-show protection for long hair services",
+      "min": 300,
+      "max": 900,
+      "unit": "one-time",
+      "trigger": "They mention a no-show on a colour or extension appointment.",
+      "line": "\"That no-show on the colour appointment is exactly what a deposit at booking stops.\""
+    },
+    {
+      "rung": 3,
+      "day": 30,
+      "offer": "Review requests and rebooking texts",
+      "min": 49,
+      "max": 129,
+      "unit": "monthly",
+      "trigger": "The site has been live a month and the booking calendar shows gaps between regulars.",
+      "line": "\"Your hair clients already love you. Let's ask them for a review and rebook them on time.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Salon content day for colour and cuts",
+      "min": 300,
+      "max": 800,
+      "unit": "per-shoot",
+      "trigger": "The gallery still shows only a handful of hair transformations.",
+      "line": "\"One afternoon with your colour clients fills the salon gallery for a season.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "DM responder for salon price and availability questions",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "trigger": "They say they spend evenings answering 'how much' and 'any openings' DMs.",
+      "line": "\"Those late-night hair DMs get answered from your menu while you sleep.\""
+    },
+    {
+      "rung": 6,
+      "day": 120,
+      "offer": "Salon memberships and blowout packages",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "trigger": "They have regulars who come in on a steady rhythm and pay per visit.",
+      "line": "\"Your regulars already come every month. A salon membership makes it automatic for both of you.\""
+    },
+    {
+      "rung": 7,
+      "day": 180,
+      "offer": "Introduction to the suite building owner",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "trigger": "They mention a suite neighbour asking who built the salon site.",
+      "line": "\"Your building has no directory of its stylists. Would you introduce me to the owner?\""
+    }
+  ]
+}

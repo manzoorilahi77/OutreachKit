@@ -1,0 +1,225 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "famysys-outreach-kit/category-kit/v1",
+  "title": "Category kit — per-category content layered over the Territory Desk port",
+  "description": "One file per category at src/kits/<kitSlug>.json, where kitSlug(name) = name.toLowerCase().replace(/&/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,''). Holds ONLY what is specific to the category. City, state, market size, device and the rep's details are computed by src/lib/kit at build time and are never stored here. All money is USD for a mid-size US market (multiplier 1.0); the engine scales rows marked scalesWithMarket with the same 1.15 / 1 / 0.85 / 0.8 factor priceModel uses.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion", "category", "slug", "provenance", "pageStructurePlus",
+    "designDirections", "openers", "sequence", "pricing", "whatElseYouSell",
+    "crossSell", "softwareAI", "routesToBiggerBuyer", "upsellLadder"
+  ],
+  "$defs": {
+    "copy": {
+      "type": "string",
+      "minLength": 8,
+      "maxLength": 420,
+      "description": "Sales copy. Only these brace placeholders are allowed, here and in every other string: {Owner} {Business Name} {specific recent job} {Your Phone} {Your Physical Address} {Neighborhood} {City} {Your Name} {Your Studio} {demo-link} {Build Range} {Build Price} {Care Range}. The engine fills {City} {Your Name} {Your Studio} {demo-link} and the three prices ({Build Range} = the Standard tier's scaled min–max, {Build Price} = its recommended quote, {Care Range} = the care plan's min–max), so a file never states a market-dependent price; the rest stay visible for the rep, exactly like the original's messages. The email body ends with the original's sign-off: {Your Name}, {Your Studio} · {Your Phone}, {Your Physical Address} and the opt-out line."
+    },
+    "usd": { "type": "integer", "minimum": 0, "maximum": 100000 },
+    "unit": { "enum": ["one-time", "monthly", "per-job", "per-year", "per-shoot", "per-page", "per-hour"] },
+    "pricedItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "min", "max", "unit", "pitchLine", "when"],
+      "properties": {
+        "name": { "type": "string", "minLength": 3, "maxLength": 80 },
+        "min": { "$ref": "#/$defs/usd" },
+        "max": { "$ref": "#/$defs/usd" },
+        "unit": { "$ref": "#/$defs/unit" },
+        "scalesWithMarket": { "type": "boolean" },
+        "pitchLine": { "$ref": "#/$defs/copy" },
+        "when": { "type": "string", "maxLength": 220 }
+      }
+    },
+    "routeItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["route", "whoPays", "min", "max", "unit", "pitchLine", "whyItWorks"],
+      "properties": {
+        "route": { "type": "string", "maxLength": 90 },
+        "whoPays": { "type": "string", "maxLength": 90 },
+        "min": { "$ref": "#/$defs/usd", "description": "0 with max 0 renders as 'Your normal rate', as in the original." },
+        "max": { "$ref": "#/$defs/usd" },
+        "unit": { "$ref": "#/$defs/unit" },
+        "pitchLine": { "$ref": "#/$defs/copy" },
+        "whyItWorks": { "type": "string", "maxLength": 260 }
+      }
+    }
+  },
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "category": { "type": "string", "description": "Exactly as on the board (src/data/board.ts `n`)." },
+    "slug": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["generatedBy", "generatedAt", "reviewStatus"],
+      "properties": {
+        "generatedBy": { "type": "string" },
+        "generatedAt": { "type": "string", "format": "date" },
+        "reviewStatus": { "enum": ["unreviewed", "spot-checked", "approved"] },
+        "reviewedBy": { "type": ["string", "null"] },
+        "notes": { "type": "string", "maxLength": 400 }
+      }
+    },
+
+    "pageStructurePlus": {
+      "description": "Sections this category needs beyond the archetype's sections and the family's 'Plus, specific to' list. Rendered as 'Plus, for <category>'. Must not repeat either.",
+      "type": "array", "minItems": 4, "maxItems": 6,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["section", "contains", "why"],
+        "properties": {
+          "section": { "type": "string", "maxLength": 60 },
+          "contains": { "type": "string", "maxLength": 240 },
+          "why": { "type": "string", "maxLength": 200 }
+        }
+      }
+    },
+
+    "designDirections": {
+      "description": "Exactly three directions. Each picks a combo from the base-website template's 50-combo theme system (src/themes/library.ts, vendored). The combo carries the palette AND the typography direction, so nothing here restates a hex value or a font name.",
+      "type": "array", "minItems": 3, "maxItems": 3,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["id", "themeId", "siteType", "name", "heroLayout", "mood", "bestFor", "pairsWithTier", "headlineSample", "whyItFits"],
+        "properties": {
+          "id": { "enum": ["a", "b", "c"] },
+          "themeId": { "type": "string", "pattern": "^C([1-9]|[1-4][0-9]|50)$" },
+          "siteType": { "enum": ["local-conversion", "portfolio-showcase", "premium-brand", "booking-first", "menu-and-order", "enrolment", "catalog", "editorial-trust", "emergency-response", "b2b-capability"] },
+          "name": { "type": "string", "maxLength": 40 },
+          "heroLayout": { "enum": ["split-photo", "full-bleed-photo", "type-led", "card-stack", "before-after", "menu-board"] },
+          "mood": { "type": "array", "minItems": 3, "maxItems": 3, "items": { "type": "string", "maxLength": 18 } },
+          "bestFor": { "type": "string", "maxLength": 140 },
+          "pairsWithTier": { "enum": ["starter", "standard", "premium"], "description": "Matches the pricing table's Starter / Standard / Premium rows." },
+          "headlineSample": { "type": "string", "maxLength": 70, "description": "Preview h1. Contains {City}." },
+          "whyItFits": { "type": "string", "maxLength": 220 }
+        }
+      }
+    },
+
+    "openers": {
+      "description": "Fifteen, one per angle. `line` is what 'Copy DM line' copies, so it carries NO link (Correction 2). `linkLine` is appended by 'Line + link (for reply or email)'.",
+      "type": "array", "minItems": 15, "maxItems": 15,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["angle", "line", "hook", "linkLine"],
+        "properties": {
+          "angle": { "type": "string", "maxLength": 40 },
+          "line": { "$ref": "#/$defs/copy" },
+          "hook": { "type": "string", "maxLength": 220 },
+          "linkLine": { "type": "string", "maxLength": 200, "description": "Contains {demo-link} exactly once." }
+        }
+      }
+    },
+
+    "sequence": {
+      "description": "Bodies for the original's eight blocks. Labels, days and channels stay the engine's (src/lib/kit/messages.ts), so the Leads sequence dates (Day 0/2/5/9/14/45) keep matching.",
+      "type": "object", "additionalProperties": false,
+      "required": ["dm1", "dm2", "call", "objections", "email", "voicemail", "takedown", "nurture"],
+      "properties": {
+        "dm1": { "type": "string", "maxLength": 700, "description": "Day 0. Text only: no link, no screenshot, no attachment." },
+        "dm2": { "type": "string", "maxLength": 700, "description": "Day 3. First message that carries {demo-link}." },
+        "call": { "type": "string", "maxLength": 1400 },
+        "objections": {
+          "type": "array", "minItems": 4, "maxItems": 8,
+          "items": {
+            "type": "object", "additionalProperties": false, "required": ["objection", "handler"],
+            "properties": { "objection": { "type": "string", "maxLength": 120 }, "handler": { "type": "string", "maxLength": 420 } }
+          }
+        },
+        "email": {
+          "type": "object", "additionalProperties": false, "required": ["subject", "body"],
+          "properties": { "subject": { "type": "string", "maxLength": 60 }, "body": { "type": "string", "maxLength": 1400 } }
+        },
+        "voicemail": { "type": "string", "maxLength": 400 },
+        "takedown": { "type": "string", "maxLength": 600 },
+        "nurture": { "type": "string", "maxLength": 600 }
+      }
+    },
+
+    "pricing": {
+      "type": "object", "additionalProperties": false,
+      "required": ["bullets", "lineItems"],
+      "properties": {
+        "bullets": { "type": "array", "minItems": 5, "maxItems": 7, "items": { "type": "string", "maxLength": 160 } },
+        "lineItems": {
+          "description": "Add-ons only. The build tiers and the care plan come from priceModel and are never restated here.",
+          "type": "array", "minItems": 5, "maxItems": 10,
+          "items": {
+            "type": "object", "additionalProperties": false,
+            "required": ["item", "min", "max", "unit", "description", "scalesWithMarket"],
+            "properties": {
+              "item": { "type": "string", "maxLength": 60 },
+              "min": { "$ref": "#/$defs/usd" },
+              "max": { "$ref": "#/$defs/usd" },
+              "unit": { "$ref": "#/$defs/unit" },
+              "description": { "type": "string", "maxLength": 180, "description": "What moves it from min to max." },
+              "scalesWithMarket": { "type": "boolean" }
+            }
+          }
+        }
+      }
+    },
+
+    "whatElseYouSell": {
+      "description": "Replaces the family's three upsells with 6–10 for this category. Marketing and presence work for the same client.",
+      "type": "array", "minItems": 6, "maxItems": 10, "items": { "$ref": "#/$defs/pricedItem" }
+    },
+
+    "crossSell": {
+      "description": "The app's own definition: a DIFFERENT buyer you reach because this client trusts you (their subs, suppliers, referral partners, neighbours on the job). Split by what you sell that buyer.",
+      "type": "object", "additionalProperties": false,
+      "required": ["withoutAI", "withAI"],
+      "properties": {
+        "withoutAI": { "type": "array", "minItems": 6, "maxItems": 6, "items": { "$ref": "#/$defs/routeItem" } },
+        "withAI": { "type": "array", "minItems": 6, "maxItems": 6, "items": { "$ref": "#/$defs/routeItem" } }
+      }
+    },
+
+    "softwareAI": {
+      "description": "Twenty software, AI and automation products for the SAME client, easiest first sale first.",
+      "type": "array", "minItems": 20, "maxItems": 20,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["name", "kind", "oneTimeMin", "oneTimeMax", "monthlyMin", "monthlyMax", "pitchLine", "whenAndWhatItTakes"],
+        "properties": {
+          "name": { "type": "string", "maxLength": 70 },
+          "kind": { "enum": ["software", "ai", "automation"] },
+          "oneTimeMin": { "$ref": "#/$defs/usd" },
+          "oneTimeMax": { "$ref": "#/$defs/usd" },
+          "monthlyMin": { "$ref": "#/$defs/usd" },
+          "monthlyMax": { "$ref": "#/$defs/usd" },
+          "pitchLine": { "$ref": "#/$defs/copy" },
+          "whenAndWhatItTakes": { "type": "string", "maxLength": 260 }
+        }
+      }
+    },
+
+    "routesToBiggerBuyer": {
+      "description": "Twelve routes that turn one build into many: productise for the whole trade, associations, suppliers' dealer networks, franchise groups, agency white-label.",
+      "type": "array", "minItems": 12, "maxItems": 12, "items": { "$ref": "#/$defs/routeItem" }
+    },
+
+    "upsellLadder": {
+      "description": "Ordered rungs, day 0 first, days non-decreasing. May name items from the lists above.",
+      "type": "array", "minItems": 6, "maxItems": 8,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["rung", "day", "offer", "min", "max", "unit", "trigger", "line"],
+        "properties": {
+          "rung": { "type": "integer", "minimum": 1, "maximum": 8 },
+          "day": { "type": "integer", "minimum": 0, "maximum": 730 },
+          "offer": { "type": "string", "maxLength": 70 },
+          "min": { "$ref": "#/$defs/usd" },
+          "max": { "$ref": "#/$defs/usd" },
+          "unit": { "$ref": "#/$defs/unit" },
+          "trigger": { "type": "string", "maxLength": 160 },
+          "line": { "$ref": "#/$defs/copy" }
+        }
+      }
+    }
+  }
+}

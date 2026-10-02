@@ -27,7 +27,9 @@
     "a11y": "tsx scripts/a11y.ts",
     "shots:auth": "tsx scripts/shots-auth.ts",
     "gen:types": "tsx scripts/gen-db-types.ts",
-    "test:rls": "RLS_REQUIRED=1 vitest run tests/rls.test.ts"
+    "test:rls": "RLS_REQUIRED=1 vitest run tests/rls.test.ts",
+    "themes:sync": "tsx scripts/themes-sync.ts",
+    "kits:check": "tsx scripts/kits-check.ts"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.7",
@@ -44,6 +46,8 @@
     "@types/node": "^22.20.4",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
+    "ajv": "^8.20.0",
+    "ajv-formats": "^3.0.1",
     "eslint": "^9.39.5",
     "eslint-config-next": "15.5.27",
     "tailwindcss": "^4.3.3",
