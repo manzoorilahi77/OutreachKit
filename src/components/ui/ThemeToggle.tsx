@@ -10,7 +10,7 @@ export function ThemeToggle() {
 
   useEffect(() => {
     const set = document.documentElement.dataset.theme;
-    setTheme(set === "dark" || set === "light" ? set : matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    setTheme(set === "dark" ? "dark" : "light"); // light unless the rep chose dark
   }, []);
 
   function toggle() {

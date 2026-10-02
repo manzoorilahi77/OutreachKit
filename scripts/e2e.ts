@@ -70,24 +70,41 @@ async function consoleFlow() {
 }
 
 async function themeFlow() {
+  // Light is the default even when the system prefers dark; dark is a manual choice that is remembered.
   const dark = await browser.newContext({ colorScheme: "dark" });
   const p = await dark.newPage();
   await p.goto(base + "/", { waitUntil: "load" });
   await p.waitForTimeout(400);
   const bg = () => p.evaluate(() => getComputedStyle(document.body).backgroundColor);
-  assert.equal(await bg(), "rgb(15, 42, 74)", "dark by system preference: navy field");
-  await p.getByRole("button", { name: "Light mode" }).click();
-  assert.equal(await bg(), "rgb(247, 245, 242)", "manual toggle to Warm White");
+  assert.equal(await bg(), "rgb(247, 245, 242)", "light (Warm White) by default, whatever the system says");
+  assert.equal(await p.evaluate(() => getComputedStyle(document.body).color), "rgb(44, 46, 51)");
+  await p.getByRole("button", { name: "Dark mode" }).click();
+  assert.equal(await bg(), "rgb(15, 42, 74)", "manual toggle to navy");
   await p.reload({ waitUntil: "load" });
-  assert.equal(await bg(), "rgb(247, 245, 242)", "the choice is remembered");
-  const color = await p.evaluate(() => getComputedStyle(document.body).color);
-  assert.equal(color, "rgb(44, 46, 51)");
+  assert.equal(await bg(), "rgb(15, 42, 74)", "the choice is remembered");
+  await p.getByRole("button", { name: "Light mode" }).click();
+  assert.equal(await bg(), "rgb(247, 245, 242)");
   await dark.close();
-  console.log("theme: system preference, manual toggle, remembered");
+  console.log("theme: light by default, manual dark toggle, remembered");
+}
+
+async function homeFlow() {
+  // The Kit Console is the home page; the playbook is a set of section pages.
+  await page.goto(base + "/", { waitUntil: "load" });
+  assert.equal(await page.getByRole("heading", { name: "Kit Console", level: 2 }).count(), 1);
+  assert.equal(await page.locator("section#math").count(), 0, "no playbook sections on the home page");
+  await page.goto(base + "/playbook", { waitUntil: "load" });
+  assert.equal(await page.locator('main ul > li a[href^="/playbook/"]').count(), 10, "ten section cards plus the console card");
+  await page.getByRole("link", { name: /Read this section/ }).first().click();
+  await page.waitForURL(/\/playbook\/math$/);
+  await page.getByRole("link", { name: /Next · 02/ }).click();
+  await page.waitForURL(/\/playbook\/choose$/);
+  assert.equal(await page.getByRole("link", { name: /04\s+Field kit builder/ }).getAttribute("href"), "/");
+  console.log("home: Kit Console first, playbook as section pages");
 }
 
 async function boardFlow() {
-  await page.goto(base + "/", { waitUntil: "networkidle" });
+  await page.goto(base + "/playbook/board", { waitUntil: "networkidle" });
   const rows = page.locator('[aria-label="Category board"] tbody tr');
   assert.equal(await rows.count(), 124);
   const board = page.locator("#board");
@@ -245,7 +262,7 @@ async function leadsFlow() {
   assert.match(lines[1]!, /,Instagram DM,No,Contacted,/);
 
   // Section 09 shows the target next to "not enough data" below 100 leads
-  await page.goto(base + "/#track", { waitUntil: "load" });
+  await page.goto(base + "/playbook/track", { waitUntil: "load" });
   const ratios = await page.locator('[aria-label="The six ratios: planning target and your live ratio"]').innerText();
   assert.match(ratios, /Contacted → Replied\s+1 – 5%\s+Not enough data/);
   assert.match(ratios, /Profiles per hour\s+40 – 60\s+Not tracked/);
@@ -257,6 +274,7 @@ async function leadsFlow() {
 await consoleFlow();
 await boardFlow();
 await themeFlow();
+await homeFlow();
 if (env.NEXT_PUBLIC_SUPABASE_URL) { await accountFlow(); await leadsFlow(); }
 else console.log("account: skipped (no Supabase configured)");
 assert.deepEqual(errors, [], "no console errors");

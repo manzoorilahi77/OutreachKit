@@ -19,20 +19,6 @@
   color-scheme: light;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: var(--navy);
-    --fg: var(--warm);
-    --head: var(--warm);
-    --surface: color-mix(in srgb, var(--warm) 6%, var(--navy));
-    --line: color-mix(in srgb, var(--warm) 26%, var(--navy));
-    --muted: color-mix(in srgb, var(--warm) 72%, var(--navy));
-    --solid-bg: var(--warm);
-    --solid-fg: var(--navy);
-    color-scheme: dark;
-  }
-}
-
 :root[data-theme="dark"] {
   --bg: var(--navy);
   --fg: var(--warm);

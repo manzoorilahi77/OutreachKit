@@ -48,7 +48,7 @@ export async function RatiosTable({ block }: { block: TableBlock }) {
               <td className={`${td} font-medium text-head`}><InlineView parts={r[0]!.inline} /></td>
               <td className={`${td} whitespace-nowrap tabular-nums`}><InlineView parts={r[1]!.inline} /></td>
               <td className={`${td} whitespace-nowrap tabular-nums`}>
-                {i === 0 ? "Not tracked" : !session ? <Link href="/login?next=/%23track">Sign in to see yours</Link> : live ? formatRatio(live[ORDER[i - 1]!]) : ""}
+                {i === 0 ? "Not tracked" : !session ? <Link href="/login?next=/playbook/track">Sign in to see yours</Link> : live ? formatRatio(live[ORDER[i - 1]!]) : ""}
               </td>
             </tr>
           ))}

@@ -3,10 +3,11 @@
 A web app for selling websites and software to local service businesses in the US. It ports the single-file tool
 *The Territory Desk* (`docs/source/territory-desk.html`) and adds accounts, saved kits and a lead tracker.
 
-- **Playbook**: all 11 sections, the 124-category board (sort, family and tier filters), the 30-second scorer.
-- **Kit console**: category → desktop or phone → state and city → your details. It builds the same field kit as the original:
+- **Kit Console** (the home page): category → desktop or phone → state and city → your details. It builds the same field kit as the original:
   searches, hashtags, sources, site blueprint, build prompt, 15 openers, 8 messages, pricing, upsell, cross-sell and AI ladders,
   and the 60-minute block. It works signed out, with bracketed placeholders.
+- **Playbook** (`/playbook`): a card for each of the 11 sections, each section on its own page with previous and next links; the
+  124-category board (sort, family and tier filters) and the 30-second scorer live there.
 - **Accounts**: email sign-in link, no password. Your details (Step 4) are saved once. Kits are saved as inputs and rebuilt on view.
 - **Leads**: one row per business with the 28 sheet columns, the scorer saved per lead, the 8 pipeline stages, next actions from the
   Day 0/2/5/9/14/45 sequence, live ratios next to the playbook targets, and a CSV export with the original's exact 28-column header.
@@ -85,6 +86,8 @@ Playwright needs a browser once: `pnpm exec playwright install chromium`.
 
 ## Brand
 
+The app opens in light mode (Warm White) whatever the system setting; the header button switches to the navy dark mode and remembers the choice.
+
 Colours, fonts and logos come from the Famysys Brand Kit: four colours (Deep Enterprise Blue `#0F2A4A`, Graphite Charcoal `#2C2E33`,
 Warm White `#F7F5F2`, Electric Blue `#1E6FFF`) and tints of them; Jost 400 and 500 only; logos used as files and scaled by their native
 aspect ratio. Electric Blue is never used for small text: it measures 4.04:1 on Warm White, so it appears only as a ring, a dot, a rule
@@ -95,7 +98,7 @@ The per-family palettes in `src/data/style.ts` style the *client demo sites* the
 ## Layout
 
 ```
-src/app/            routes: / (playbook + console), /kits, /leads, /account, /login, /styleguide
+src/app/            routes: / (Kit Console), /playbook and /playbook/[section], /kits, /leads, /account, /login, /styleguide
 src/components/     ui/ (primitives), playbook/, console/, kit/, leads/, account/
 src/data/           the original's constants, typed
 src/content/        the original's prose as structured blocks

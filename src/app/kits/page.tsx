@@ -16,7 +16,7 @@ export default async function KitsPage() {
     <div className="mx-auto max-w-6xl space-y-6 px-4 py-12 sm:px-6">
       <SectionHead num="Account" title="Saved kits" sub="Each one is rebuilt from the playbook data when you open it, using your current details." />
       {!kits?.length ? (
-        <p>No saved kits yet. Build one in <Link href="/#kitsec">the kit console</Link> and choose Save this kit.</p>
+        <p>No saved kits yet. Build one in <Link href="/">the Kit Console</Link> and choose Save this kit.</p>
       ) : (
         <TableWrap label="Saved kits">
           <thead>

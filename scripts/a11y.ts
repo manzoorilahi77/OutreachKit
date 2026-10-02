@@ -47,9 +47,16 @@ await c0.close();
 const screens: { path: string; signedIn: boolean; prep?: (p: Page) => Promise<void> }[] = [
   { path: "/", signedIn: false },
   { path: "/?cat=Fencing+%26+gates&st=TX&city=Austin&build=1", signedIn: false },
+  { path: "/playbook", signedIn: false },
+  { path: "/playbook/math", signedIn: false },
+  { path: "/playbook/board", signedIn: false },
+  { path: "/playbook/filter", signedIn: false },
+  { path: "/playbook/track", signedIn: false },
+  { path: "/playbook/reach", signedIn: false },
   { path: "/styleguide", signedIn: false },
   { path: "/login", signedIn: false },
   { path: "/", signedIn: true },
+  { path: "/playbook/track", signedIn: true },
   { path: "/account", signedIn: true },
   { path: "/kits", signedIn: true },
   { path: kitHref, signedIn: true },
@@ -60,7 +67,8 @@ const screens: { path: string; signedIn: boolean; prep?: (p: Page) => Promise<vo
 
 let bad = 0;
 for (const sc of screens) for (const width of [390, 1280]) for (const scheme of ["light", "dark"] as const) {
-  const ctx = await browser.newContext({ viewport: { width, height: 900 }, colorScheme: scheme, ...(sc.signedIn ? { storageState: state } : {}) });
+  const ctx = await browser.newContext({ viewport: { width, height: 900 }, ...(sc.signedIn ? { storageState: state } : {}) });
+  if (scheme === "dark") await ctx.addInitScript(() => localStorage.setItem("ok-theme", "dark"));
   const page = await ctx.newPage();
   await page.goto(base + sc.path, { waitUntil: "load" });
   await page.waitForTimeout(600);

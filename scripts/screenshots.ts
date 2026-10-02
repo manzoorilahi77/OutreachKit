@@ -15,7 +15,8 @@ for (const path of paths) {
   const slug = path === "/" ? "home" : path.replace(/^\//, "").replace(/[^a-z0-9]+/gi, "-");
   for (const width of [390, 1280]) {
     for (const scheme of ["light", "dark"] as const) {
-      const ctx = await browser.newContext({ viewport: { width, height: 900 }, colorScheme: scheme });
+      const ctx = await browser.newContext({ viewport: { width, height: 900 } });
+      if (scheme === "dark") await ctx.addInitScript(() => localStorage.setItem("ok-theme", "dark"));
       const page = await ctx.newPage();
       await page.goto(base + path, { waitUntil: "networkidle" });
       await page.evaluate(() => document.fonts.ready);

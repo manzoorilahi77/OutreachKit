@@ -25,12 +25,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const viewport: Viewport = {
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#F7F5F2" },
-    { media: "(prefers-color-scheme: dark)", color: "#0F2A4A" },
-  ],
-};
+export const viewport: Viewport = { themeColor: "#F7F5F2" };
 
 const themeInit = `try{var t=localStorage.getItem('ok-theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t}catch(e){}`;
 

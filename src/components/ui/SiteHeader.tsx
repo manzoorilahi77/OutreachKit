@@ -19,7 +19,8 @@ export async function SiteHeader() {
       </div>
       <nav aria-label="Main" className="border-t border-warm/20">
         <ul className="mx-auto flex max-w-6xl items-center gap-1 overflow-x-auto px-2 sm:px-4">
-          <li><Link href="/" className={link}>Playbook</Link></li>
+          <li><Link href="/" className={link}>Kit Console</Link></li>
+          <li><Link href="/playbook" className={link}>Playbook</Link></li>
           {session && (
             <>
               <li><Link href="/kits" className={link}>Saved kits</Link></li>

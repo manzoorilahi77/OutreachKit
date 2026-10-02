@@ -25,7 +25,8 @@ async function shoot(path: string, phaseIn: string, name: string, prepare?: (p: 
   const phase = process.env.SHOTS_PHASE ?? phaseIn;
   mkdirSync(`docs/screenshots/phase-${phase}`, { recursive: true });
   for (const width of [390, 1280]) for (const scheme of ["light", "dark"] as const) {
-    const ctx = await browser.newContext({ viewport: { width, height: 900 }, colorScheme: scheme, ...(signedOut ? {} : { storageState: state }) });
+    const ctx = await browser.newContext({ viewport: { width, height: 900 }, ...(signedOut ? {} : { storageState: state }) });
+    if (scheme === "dark") await ctx.addInitScript(() => localStorage.setItem("ok-theme", "dark"));
     const page = await ctx.newPage();
     await page.goto(base + path, { waitUntil: "load" });
     await page.waitForTimeout(500);
@@ -82,6 +83,6 @@ await shoot(kitHref!, "07", "kit-view");
 await shoot("/leads", "08", "leads");
 await shoot("/leads/new", "08", "lead-new");
 await shoot(leadPath, "08", "lead-detail");
-await shoot("/#track", "08", "playbook-ratios", async (p) => { await p.locator("#track").scrollIntoViewIfNeeded(); });
+await shoot("/playbook/track", "08", "playbook-ratios");
 await browser.close();
 console.log("Signed-in screenshots written.");
