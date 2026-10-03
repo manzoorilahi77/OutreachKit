@@ -1,0 +1,577 @@
+<title>The Outreach Reset</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Public+Sans:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --bg:#F7F5F2; --surface:#FFFFFF; --surface-2:#EFECE7; --sunk:#E8E4DE;
+  --ink:#14202E; --ink-2:#3B4757; --muted:#6A7483; --line:#DDD8D0; --line-2:#C2BCB2;
+  --band:#0F2A4A; --band-ink:#F7F5F2; --band-muted:#A9B8CB;
+  --accent:#1E6FFF; --accent-ink:#1553C7; --accent-soft:#E5EDFF;
+  --a:#1D7148; --a-soft:#DFF0E6; --b:#8F620C; --b-soft:#F6EBD3; --c:#6A7483; --c-soft:#ECEAE6;
+  --hot:#B5361B; --hot-soft:#F8E3DC;
+  --display:"Jost","Avenir Next","Segoe UI",sans-serif;
+  --body:"Public Sans","Helvetica Neue",Arial,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#0A1521; --surface:#10202F; --surface-2:#16293B; --sunk:#0D1B28;
+    --ink:#E5EBF2; --ink-2:#B2BFCD; --muted:#8696A8; --line:#223548; --line-2:#334B62;
+    --band:#061019; --band-ink:#E5EBF2; --band-muted:#8EA2B9;
+    --accent:#6C9DFF; --accent-ink:#8DB3FF; --accent-soft:#12284A;
+    --a:#5BC48D; --a-soft:#0F2A1D; --b:#DDAE4C; --b-soft:#2C2210; --c:#8696A8; --c-soft:#1A2938;
+    --hot:#F0866A; --hot-soft:#3A1A12;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#0A1521; --surface:#10202F; --surface-2:#16293B; --sunk:#0D1B28;
+  --ink:#E5EBF2; --ink-2:#B2BFCD; --muted:#8696A8; --line:#223548; --line-2:#334B62;
+  --band:#061019; --band-ink:#E5EBF2; --band-muted:#8EA2B9;
+  --accent:#6C9DFF; --accent-ink:#8DB3FF; --accent-soft:#12284A;
+  --a:#5BC48D; --a-soft:#0F2A1D; --b:#DDAE4C; --b-soft:#2C2210; --c:#8696A8; --c-soft:#1A2938;
+  --hot:#F0866A; --hot-soft:#3A1A12;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:var(--display);margin:0;line-height:1.15;text-wrap:balance}
+p{margin:0;max-width:68ch}
+a{color:var(--accent-ink);text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+.mono{font-family:var(--mono)}
+
+/* masthead band */
+.band{background:var(--band);color:var(--band-ink);padding-inline:20px}
+.band-in{max-width:1180px;margin:0 auto;padding-block:40px 30px;display:flex;flex-direction:column;gap:16px}
+.eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--band-muted)}
+h1{font-size:clamp(38px,7vw,66px);font-weight:600;letter-spacing:-.02em}
+h1 span{font-weight:400;color:var(--band-muted)}
+.lede{font-size:18px;max-width:64ch;color:var(--band-ink);opacity:.92}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.14);margin-top:6px}
+.facts div{background:var(--band);padding:12px 14px;display:flex;flex-direction:column;gap:2px}
+.facts dt{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--band-muted)}
+.facts dd{margin:0;font-family:var(--display);font-size:19px;font-weight:500;font-variant-numeric:tabular-nums}
+.facts dd small{font-size:13px;color:var(--band-muted);font-weight:400}
+
+/* layout */
+.shell{max-width:1180px;margin:0 auto;padding-inline:20px;display:grid;grid-template-columns:210px minmax(0,1fr);gap:40px}
+aside.idx{position:sticky;top:env(safe-area-inset-top,0px);align-self:start;padding-block:28px;max-height:100vh;overflow-y:auto}
+aside.idx ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px;counter-reset:s}
+aside.idx a{display:grid;grid-template-columns:26px 1fr;gap:6px;padding:7px 8px;font-family:var(--display);font-size:14.5px;color:var(--ink-2);text-decoration:none;border-left:2px solid transparent}
+aside.idx a b{font-family:var(--mono);font-size:11px;font-weight:500;color:var(--muted);padding-top:2px}
+aside.idx a:hover{background:var(--surface-2);border-left-color:var(--accent);color:var(--ink)}
+main{padding-block:12px 100px;min-width:0}
+section{padding-top:52px;display:flex;flex-direction:column;gap:18px;scroll-margin-top:12px}
+.sh{display:flex;flex-direction:column;gap:6px;padding-bottom:12px;border-bottom:1px solid var(--line-2)}
+.sh .k{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent-ink)}
+h2{font-size:clamp(26px,3.6vw,34px);font-weight:600;letter-spacing:-.01em}
+h3{font-size:19px;font-weight:600}
+h4{font-size:15.5px;font-weight:600}
+.sub{color:var(--ink-2);font-size:16px}
+.small{font-size:14px;color:var(--muted)}
+
+@media (max-width:900px){
+  .shell{grid-template-columns:1fr;gap:0}
+  aside.idx{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:var(--bg);padding-block:0;border-bottom:1px solid var(--line);max-height:none;margin-inline:-20px;padding-inline:12px}
+  aside.idx ol{flex-direction:row;overflow-x:auto;gap:0;scrollbar-width:thin}
+  aside.idx a{white-space:nowrap;border-left:none;border-bottom:2px solid transparent;font-size:13.5px;grid-template-columns:auto auto}
+  aside.idx a:hover{border-bottom-color:var(--accent)}
+}
+
+/* blocks */
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+.wide{grid-template-columns:repeat(auto-fit,minmax(min(330px,100%),1fr))}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
+.card{background:var(--surface);border:1px solid var(--line);padding:18px 20px;display:flex;flex-direction:column;gap:10px}
+.card h3{font-size:17.5px}
+ul.l,ol.l{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:6px}
+ul.l li::marker{color:var(--accent)}
+.callout{background:var(--accent-soft);border:1px solid color-mix(in srgb,var(--accent) 35%,transparent);padding:14px 18px;font-size:15.5px}
+.callout.warn{background:var(--b-soft);border-color:color-mix(in srgb,var(--b) 40%,transparent)}
+.callout.stop{background:var(--hot-soft);border-color:color-mix(in srgb,var(--hot) 40%,transparent)}
+.pill{display:inline-block;font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;padding:2px 7px;border:1px solid var(--line-2);color:var(--ink-2);background:var(--surface-2);white-space:nowrap}
+.pill.A{color:var(--a);background:var(--a-soft);border-color:var(--a)}
+.pill.B{color:var(--b);background:var(--b-soft);border-color:var(--b)}
+.pill.C{color:var(--c);background:var(--c-soft);border-color:var(--line-2)}
+.pill.hi{color:var(--a);background:var(--a-soft);border-color:var(--a)}
+.pill.md{color:var(--b);background:var(--b-soft);border-color:var(--b)}
+.pill.lo{color:var(--hot);background:var(--hot-soft);border-color:var(--hot)}
+.pill.ac{color:var(--accent-ink);background:var(--accent-soft);border-color:var(--accent)}
+
+/* pick lists */
+.lineup{display:flex;flex-direction:column;border-top:1px solid var(--line)}
+.lineup li{list-style:none;display:grid;grid-template-columns:44px 1fr auto;gap:10px;align-items:baseline;padding:8px 0;border-bottom:1px solid var(--line)}
+.lineup ul{margin:0;padding:0}
+.lineup .sc{font-family:var(--display);font-size:20px;font-weight:600;font-variant-numeric:tabular-nums;color:var(--ink)}
+.lineup .nm{font-family:var(--display);font-size:15.5px;font-weight:500}
+.lineup .nm small{display:block;font-family:var(--body);font-size:13.5px;color:var(--muted);font-weight:400;line-height:1.45}
+
+/* tables */
+.tw{overflow-x:auto;border:1px solid var(--line);background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--line)}
+thead th{background:var(--surface-2);font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:500;position:sticky;top:0}
+tbody tr:hover{background:var(--sunk)}
+td.n{font-variant-numeric:tabular-nums;white-space:nowrap}
+td b{font-family:var(--display);font-weight:600;font-size:14.5px}
+.t-ch{min-width:820px}
+.t-cat{min-width:1080px}
+.t-cmp{min-width:720px}
+td .note{display:block;color:var(--muted);font-size:13px;line-height:1.45;margin-top:3px}
+.tags{font-family:var(--mono);font-size:12px;color:var(--accent-ink)}
+.win{color:var(--a);font-weight:600}
+.lose{color:var(--hot);font-weight:600}
+
+/* filters */
+.bar{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+button.f{font-family:var(--display);font-size:13.5px;padding:5px 11px;border:1px solid var(--line-2);background:var(--surface);color:var(--ink-2);cursor:pointer}
+button.f[aria-pressed="true"]{background:var(--band);color:var(--band-ink);border-color:var(--band)}
+:root[data-theme="dark"] button.f[aria-pressed="true"]{background:var(--accent);color:#06101C;border-color:var(--accent)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) button.f[aria-pressed="true"]{background:var(--accent);color:#06101C;border-color:var(--accent)}}
+button.f:hover{border-color:var(--accent)}
+input#q{font-family:var(--body);font-size:15px;padding:7px 10px;border:1px solid var(--line-2);background:var(--surface);color:var(--ink);min-width:0;flex:1 1 200px;max-width:320px}
+.count{font-family:var(--mono);font-size:12px;color:var(--muted)}
+
+/* family details */
+details.fam{background:var(--surface);border:1px solid var(--line)}
+details.fam + details.fam{border-top:none}
+details.fam summary{cursor:pointer;padding:13px 16px;display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;list-style:none}
+details.fam summary::-webkit-details-marker{display:none}
+details.fam summary::before{content:"+";font-family:var(--mono);color:var(--accent-ink);width:14px}
+details.fam[open] summary::before{content:"\2212"}
+details.fam summary h3{font-size:17px;flex:1 1 200px}
+.fb{padding:4px 18px 18px 42px;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.fb h4{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:500;margin-bottom:6px}
+.fb ul{margin:0;padding-left:1.1em;font-size:14.5px;display:flex;flex-direction:column;gap:4px}
+.fb p{font-size:14.5px}
+.fb .pitch{grid-column:1/-1;font-style:italic;border-left:2px solid var(--accent);padding-left:12px;color:var(--ink-2)}
+@media (max-width:560px){.fb{padding-left:18px}}
+
+/* sequence */
+.seq{display:flex;flex-direction:column;border:1px solid var(--line);background:var(--surface)}
+.seq > div{display:grid;grid-template-columns:76px 1fr;gap:14px;padding:12px 16px;border-bottom:1px solid var(--line)}
+.seq > div:last-child{border-bottom:none}
+.seq .d{font-family:var(--mono);font-size:12px;color:var(--accent-ink);text-transform:uppercase;letter-spacing:.06em;padding-top:2px}
+.seq b{font-family:var(--display);font-weight:600}
+.seq span{display:block;font-size:14.5px;color:var(--ink-2)}
+
+/* copy blocks */
+.cb{border:1px solid var(--line-2);background:var(--surface);display:flex;flex-direction:column}
+.cb-h{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:8px 12px;background:var(--surface-2);border-bottom:1px solid var(--line)}
+.cb-h span{font-family:var(--display);font-weight:600;font-size:14.5px}
+.cb pre{margin:0;padding:14px 16px;font-family:var(--mono);font-size:13px;line-height:1.65;white-space:pre-wrap;overflow-wrap:anywhere;color:var(--ink);max-height:300px;overflow:auto}
+.cb pre.tall{max-height:620px}
+button.copy{font-family:var(--mono);font-size:12px;padding:5px 10px;border:1px solid var(--line-2);background:var(--surface);color:var(--ink);cursor:pointer;white-space:nowrap}
+button.copy:hover{border-color:var(--accent);color:var(--accent-ink)}
+button.copy.ok{border-color:var(--a);color:var(--a);background:var(--a-soft)}
+
+/* objections */
+.obj{display:flex;flex-direction:column;border:1px solid var(--line);background:var(--surface)}
+.obj > div{padding:12px 16px;border-bottom:1px solid var(--line);display:grid;grid-template-columns:minmax(150px,240px) 1fr;gap:14px}
+.obj > div:last-child{border-bottom:none}
+.obj q{font-family:var(--display);font-weight:600;quotes:"\201C" "\201D"}
+.obj p{font-size:14.5px;color:var(--ink-2)}
+@media (max-width:620px){.obj > div,.seq > div{grid-template-columns:1fr;gap:4px}}
+
+/* rhythm */
+.day{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.day div{background:var(--surface);padding:12px 14px;display:flex;flex-direction:column;gap:4px}
+.day .t{font-family:var(--mono);font-size:11px;letter-spacing:.08em;color:var(--accent-ink);text-transform:uppercase}
+.day b{font-family:var(--display);font-weight:600;font-size:15.5px}
+.day span{font-size:13.5px;color:var(--ink-2);line-height:1.45}
+
+/* verdict */
+.verdict{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:0;border:2px solid var(--band)}
+:root[data-theme="dark"] .verdict{border-color:var(--accent)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .verdict{border-color:var(--accent)}}
+.verdict > div{padding:16px 18px;display:flex;flex-direction:column;gap:6px;border-right:1px solid var(--line)}
+.verdict > div:last-child{border-right:none}
+.verdict .ph{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink)}
+.verdict h3{font-size:18px}
+.verdict p{font-size:14.5px;color:var(--ink-2)}
+
+footer{margin-top:64px;border-top:1px solid var(--line-2);padding-top:18px;display:flex;flex-direction:column;gap:10px}
+footer p{font-size:13.5px;color:var(--muted)}
+
+.big{font-size:18.5px;line-height:1.55;max-width:70ch;color:var(--ink)}
+.card.cause h3{font-size:17px}.card.cause p{font-size:14.5px;color:var(--ink-2)}
+.st{display:inline-block;font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;padding:2px 7px;border:1px solid;white-space:nowrap;width:max-content}
+.st.conf{color:var(--hot);background:var(--hot-soft);border-color:var(--hot)}
+.st.likely{color:var(--b);background:var(--b-soft);border-color:var(--b)}
+.st.need{color:var(--accent-ink);background:var(--accent-soft);border-color:var(--accent)}
+.st.go{color:var(--a);background:var(--a-soft);border-color:var(--a)}
+.st.dim{color:var(--c);background:var(--c-soft);border-color:var(--line-2)}
+.lab{display:inline-block;font-family:var(--mono);font-size:10px;font-weight:500;padding:0 5px;border:1px solid;margin-right:3px}
+.lab.E{color:var(--a);border-color:var(--a)}.lab.P{color:var(--b);border-color:var(--b)}
+.t-seg{min-width:900px}
+td{line-height:1.5}
+.callout.fix{background:var(--surface);border:2px solid var(--hot)}
+.callout.fix ol{margin-top:8px}
+ol.src{margin:0;padding-left:1.4em;display:flex;flex-direction:column;gap:5px;font-size:14px}
+.seq .d{line-height:1.35}
+</style>
+<header class="band">
+  <div class="band-in">
+    <div class="eyebrow">Prompt D, run 3 Oct 2026 &middot; Famysys &middot; winning US software projects</div>
+    <h1>The Outreach Reset</h1>
+    <p class="lede">Why the first round of outreach got zero replies, what the research says about how US companies actually hire a software firm like Famysys, and the new targets, offers, messages and 30-day test plan to replace it.</p>
+    <dl class="facts">
+      <div><dt>Instagram first DM</dt><dd>Text only <small>until accepted</small></dd></div>
+      <div><dt>Free LinkedIn notes</dt><dd>3 <small>per month, 200 chars</small></dd></div>
+      <div><dt>Replies expected from 200 emails</dt><dd>1&ndash;7 <small>at published averages</small></dd></div>
+      <div><dt>Cold emails per meeting</dt><dd>344 <small>Gong, average rep</small></dd></div>
+    </dl>
+  </div>
+</header>
+
+<div class="shell">
+<aside class="idx" aria-label="Sections">
+  <ol>
+    <li><a href="#verdict"><b>01</b>The verdict</a></li>
+    <li><a href="#diagnosis"><b>02</b>Diagnosis</a></li>
+    <li><a href="#research"><b>03</b>Research findings</a></li>
+    <li><a href="#segments"><b>04</b>New targets</a></li>
+    <li><a href="#offers"><b>05</b>Entry offers</a></li>
+    <li><a href="#channels"><b>06</b>Channels</a></li>
+    <li><a href="#messages"><b>07</b>New messages</a></li>
+    <li><a href="#fixes"><b>08</b>Trust &amp; setup fixes</a></li>
+    <li><a href="#plan"><b>09</b>30-day plan</a></li>
+    <li><a href="#sources"><b>10</b>Sources</a></li>
+  </ol>
+</aside>
+
+<main>
+
+<section id="verdict">
+  <div class="sh"><div class="k">01 &middot; Summary</div><h2>The verdict</h2></div>
+  <p class="big">Zero replies was not mainly a wording problem. Three things stacked up. The channels could not carry the message. The buyer was wrong for software projects. And a buyer who checked Famysys found large claims with no names, reviews or team behind them. Fix delivery and trust first, switch to US agencies and companies with open developer roles, and open with small paid tests instead of a pitch.</p>
+
+  <div class="grid3">
+    <div class="card cause"><span class="st conf">Cause 1 &middot; Confirmed</span><h3>The channels couldn't deliver it</h3><p>Instagram shows a non-follower's first message as a text-only request, so the demo screenshot could not appear. Cold email went out from a free Gmail address, which Google's policy forbids for unsolicited commercial mail and which can never build sender reputation.</p></div>
+    <div class="card cause"><span class="st likely">Cause 2 &middot; Likely</span><h3>The wrong buyer for software</h3><p>Local trades with no website have small budgets and rarely buy software from a firm they don't know. Small, simple web work is also the work most exposed to DIY and AI tools.</p></div>
+    <div class="card cause"><span class="st conf">Cause 3 &middot; Confirmed</span><h3>Nothing to verify</h3><p>famysys.com claims &ldquo;SOC2 Type II Compliant&rdquo;, &ldquo;48+ engagements&rdquo;, &ldquo;120+ systems in production&rdquo; and &ldquo;99.9% uptime&rdquo;, but names no clients, shows no team and has no reviews. 74% of B2B buyers read reviews before buying.</p></div>
+  </div>
+
+  <div class="callout fix"><b>Fix first, this week.</b>
+    <ol class="l">
+      <li>Stop cold email from famysys.sales@gmail.com. Set up a separate sending domain on Google Workspace with SPF, DKIM and DMARC, and start warming it up.</li>
+      <li>Remove or prove every number and the SOC 2 claim on famysys.com. Add a team page with the founder's real name.</li>
+      <li>Open a free Clutch profile and ask five past clients for reviews.</li>
+      <li>Stop Instagram DMs for software work. Move that time to LinkedIn with US agency owners.</li>
+      <li>Update the us-it-lead-drafts company profile with the new sending address, real results with numbers and your US overlap hours.</li>
+    </ol>
+  </div>
+</section>
+
+<section id="diagnosis">
+  <div class="sh"><div class="k">02 &middot; Phase 1</div><h2>Diagnosis, cause by cause</h2>
+  <p class="sub">Checked in order, because each cause hides the ones after it. A message that never arrives can't be judged on its wording. Exact send counts weren't supplied, so anything that depends on them is marked Needs data, with a test.</p></div>
+
+  <div class="tw"><table class="t-cmp"><thead><tr><th>Area</th><th>Status</th><th>Evidence</th><th>What to do</th></tr></thead><tbody>
+    <tr><td><b>Delivery: Instagram</b></td><td><span class="st conf">Confirmed</span></td><td>Messages from accounts the owner doesn't follow arrive as requests and can only be text until accepted (Meta, Jan 2024). Business inboxes split Primary, General and Requests, and a request isn't marked seen until accepted. Meta's spam rules target repeated commercial contact without consent.</td><td>Stop using Instagram as a cold channel for software. Use it only to engage with people you will reach elsewhere.</td></tr>
+    <tr><td><b>Delivery: email</b></td><td><span class="st conf">Confirmed handicap</span><br><span class="st need">Placement: needs data</span></td><td>Gmail Program Policies: &ldquo;Don't use Gmail to distribute spam or unsolicited commercial mail&rdquo;, with account limits or termination as the penalty. A gmail.com sender can't publish SPF, DKIM or DMARC, can't use Postmaster Tools, and builds no domain reputation of its own. From November 2025 Gmail is rejecting more non-compliant mail.</td><td>Move to your own sending domain. Before any new send, check the inbox with mail-tester (aim for 9/10 or better) and a seed test.</td></tr>
+    <tr><td><b>Delivery: LinkedIn</b></td><td><span class="st likely">Likely</span></td><td>Free accounts get personalised notes on only 3 invitations a month, 200 characters each. Weekly invite caps exist but aren't published. A note barely changes acceptance (26.42% vs 26.37%) but lifts replies after acceptance (9.36% vs 5.44%).</td><td>Connect without a note, engage with their posts, and message after they accept.</td></tr>
+    <tr><td><b>Volume</b></td><td><span class="st need">Needs data</span></td><td>At 10 emails a day for a month (the cap in your lead-drafts skill), about 200 emails go out. Published reply rates run from 0.45% (Belkins, 7.5M emails) to 3.43% (Instantly), so that is 1&ndash;7 replies at best. Gong finds the average rep needs 344 cold emails per meeting.</td><td>Zero from 200 is a weak signal on its own. Judge each segment after about 300 delivered emails.</td></tr>
+    <tr><td><b>Targeting</b></td><td><span class="st likely">Likely</span></td><td>In Clutch's survey of US small businesses (Dec 2025), 45% use only internal teams and 13% use only external partners. Freelance posts for simple coding work fell 21% after ChatGPT (SSRN). Upwork's CEO: &ldquo;lower-complexity work continues to shift toward automation.&rdquo;</td><td>Move to buyers who already pay for development: agencies with overflow, companies hiring developers, and growing firms with operations problems.</td></tr>
+    <tr><td><b>Offer</b></td><td><span class="st likely">Likely</span></td><td>A website for a trade business is a commodity. Demand is moving toward AI work: Upwork's AI-related spend rose 22%+, and AI integration skills rose 178%. Most buyers now start with low-risk entry projects (paid discovery, audits, trials).</td><td>Open with a small, fixed-price, paid test. Mention AI integration where it fits.</td></tr>
+    <tr><td><b>Trust</b></td><td><span class="st conf">Confirmed</span></td><td>TrustRadius 2026: 74% read reviews, 53% talk to a peer, and 79% already knew the vendor before researching. G2 2026: 51% of software buyers start research in an AI chatbot, and review-site citations build the most trust in its answer. famysys.com has no reviews, no named clients and no team page, but makes audit-level claims.</td><td>See section 08: proof, reviews and a team page before volume.</td></tr>
+    <tr><td><b>Message</b></td><td><span class="st likely">Likely</span></td><td>The demo-first DM depended on an image that couldn't appear. The earlier emails led with a pitch. Gong: pitching in a cold email cuts replies by up to 57%; the best emails are 3&ndash;4 sentences and under 100 words. Instantly: 58% of replies come from the first email, and top performers stay under 80 words.</td><td>Under 90 words, one true trigger, one proof point, one easy question. Section 07.</td></tr>
+  </tbody></table></div>
+</section>
+
+<section id="research">
+  <div class="sh"><div class="k">03 &middot; Phase 2</div><h2>What the research says</h2>
+  <p class="sub"><span class="lab E">E</span> marks evidence (surveys, platform rules, law, measured data). <span class="lab P">P</span> marks a practitioner or vendor view. Full links are in section 10. Several popular statistics could not be traced to a primary source and are left out.</p></div>
+
+  <div class="grid2 wide">
+    <div class="card"><h3>How US buyers find a software firm</h3><ul class="l">
+      <li><span class="lab E">E</span> 51% of B2B software buyers start research in an AI chatbot, up from 29% in April 2025; 33% bought from a vendor they hadn't known before (G2, 2026).</li>
+      <li><span class="lab E">E</span> 79% already knew the vendor before researching; the average shortlist is 2.7 vendors; vendor brochures ranked last (TrustRadius, July 2026).</li>
+      <li><span class="lab E">E</span> Fewer than 60% of professional-services buyers ask for referrals, down from over 70% in 2013 (Hinge, 2018).</li>
+      <li>No current survey splits discovery between referrals, Clutch, Upwork, Google and LinkedIn for software services. Not found.</li>
+    </ul></div>
+    <div class="card"><h3>Who buys, and for how much</h3><ul class="l">
+      <li><span class="lab E">E</span> 55% of US small businesses plan to raise tech spend in 2026. Top needs: web development 39%, mobile apps 38%, software 37%, AI 32% (Clutch, Dec 2025).</li>
+      <li><span class="lab E">E</span> Most Clutch-reviewed projects fall between $10,000 and $49,999 (Clutch pricing, Sept 2026).</li>
+      <li><span class="lab E">E</span> Clutch rates: India $25&ndash;49/hr, US $50&ndash;99/hr. Accelerance 2026: senior Asia $31&ndash;41/hr, LatAm $60&ndash;75/hr.</li>
+      <li><span class="lab P">P</span> A custom MVP usually costs $15K&ndash;75K; offshore $10K&ndash;50K.</li>
+    </ul></div>
+    <div class="card"><h3>Trust and time zones</h3><ul class="l">
+      <li><span class="lab E">E</span> Each extra hour of time-zone gap cuts live communication by about 11% (Organization Science, 2024).</li>
+      <li><span class="lab P">P</span> US leads say the India team is unreachable from about 2&ndash;6pm their time. LatAm firms sell workday overlap as their advantage.</li>
+      <li><span class="lab P">P</span> Indian firms that win US work publish exact overlap hours, write short direct updates, and sell business results rather than technologies.</li>
+      <li><span class="lab E">E</span> Deloitte 2024: cost is now the top reason for outsourcing for only 34%. 42% buy for specialised talent.</li>
+    </ul></div>
+    <div class="card"><h3>What AI changed</h3><ul class="l">
+      <li><span class="lab E">E</span> Upwork Q2 2026: total spend down about 4%; AI-related work up 22%+ to about $330M.</li>
+      <li><span class="lab E">E</span> Upwork 2026 skills: AI integration +178%, AI chatbot development +71%. Full-stack is still the top coding skill.</li>
+      <li><span class="lab E">E</span> In 45% of tasks, AI-written code introduced security flaws (Veracode, 2025).</li>
+      <li><span class="lab P">P</span> Cleaning up apps built quickly with AI tools is a growing paid niche, at roughly $1.5K&ndash;8K.</li>
+    </ul></div>
+    <div class="card"><h3>Channels that firms like yours use</h3><ul class="l">
+      <li><span class="lab P">P</span> E2M Solutions (India and California, about 200 staff) grew through agency coaches, event sponsorships and a fixed monthly white-label plan.</li>
+      <li><span class="lab P">P</span> Seahawk Media started from hosting-company partnerships and WordCamp.</li>
+      <li><span class="lab P">P</span> A white-label dev-shop owner says cold email to agencies has &ldquo;collapsed&rdquo;. He builds relationships with three people per agency instead.</li>
+      <li><span class="lab P">P</span> Well-researched trigger emails reportedly get 15&ndash;25% replies. No controlled study backs this.</li>
+    </ul></div>
+    <div class="card"><h3>Platform facts</h3><ul class="l">
+      <li><span class="lab E">E</span> Clutch: the profile is free; you add client references and Clutch emails the clients. Ad packages need a 12-month commitment.</li>
+      <li><span class="lab P">P</span> Upwork: Agency Basic can't bid. Agency Plus is about $19.99 a month, and Connects cost $0.15 each. Specialized Profiles were removed in May 2026. Wins come from replying within an hour, in 2&ndash;3 sentences.</li>
+      <li><span class="lab E">E</span> Contra accepts studios and agencies, with no commission.</li>
+      <li><span class="lab E">E</span> Hacker News hiring threads ban agencies. r/startups allows promotion only in its pinned thread.</li>
+    </ul></div>
+  </div>
+
+  <div class="callout warn"><b>Rules that apply to every send.</b> CAN-SPAM has no B2B exception. Every email needs an honest header and subject, must identify itself as an ad, must carry a valid postal address (your Houston private mailbox qualifies if it is registered with a commercial mail receiving agency), and must honour opt-outs within 10 business days. Penalties reach $53,088 per email. Most sales calls to business lines are outside the Do Not Call rules, but a small-business owner's mobile may be treated as residential. Never use autodialers or cold texts.</div>
+</section>
+
+<section id="segments">
+  <div class="sh"><div class="k">04 &middot; Phase 3</div><h2>New targets, scored</h2>
+  <p class="sub">Each segment is scored 1&ndash;5 per factor, and higher is always better. &ldquo;Accepts offshore&rdquo; is high when the buyer already expects an overseas team. The scores are my judgement from the research above, not measured data.</p></div>
+
+  <div class="tw"><table class="t-seg"><thead><tr><th>Segment</th><th>Budget</th><th>Buys often</th><th>Reachable</th><th>Accepts offshore</th><th>Proof fit</th><th>Visible trigger</th><th>Total /30</th><th>Verdict</th></tr></thead><tbody id="segBody"></tbody></table></div>
+
+  <div class="callout"><b>Decision.</b> Test <b>US digital and web agencies</b> (white-label overflow) and <b>companies with open developer roles</b> first. Grow <b>growing businesses running on spreadsheets</b> through inbound and agency partners, because that is where your portfolio (ordering, booking, auctions, day-books) fits best. <b>Drop local businesses with no website</b> as a cold-outreach target for Famysys. Agencies already sell to them, so serve those businesses by building for the agencies.</div>
+</section>
+
+<section id="offers">
+  <div class="sh"><div class="k">05 &middot; Phase 4</div><h2>Entry offers that lower the buyer's risk</h2>
+  <p class="sub">The first project should be small, fixed-price and paid. That proves delivery without asking a stranger for trust. Never put prices in the first email; discuss them on the call.</p></div>
+  <div class="tw"><table class="t-cmp"><thead><tr><th>Segment</th><th>Entry offer</th><th>What they get</th><th>Price basis</th><th>Path to bigger work</th></tr></thead><tbody>
+    <tr><td><b>US agencies</b></td><td>Paid test ticket</td><td>One real ticket from their backlog, fixed price, done in 1&ndash;2 weeks under their brand. NDA signed, the agency owns the code, and your team works in their task tool.</td><td>India $25&ndash;49/hr (Clutch); senior Asia $31&ndash;41/hr (Accelerance). Price it so they can mark up 50%+.</td><td>A fixed monthly capacity plan, the model E2M grew on.</td></tr>
+    <tr><td><b>Companies with an open developer role</b></td><td>2-week trial developer</td><td>A named React, Node or TypeScript developer working in their sprint, with a stated daily overlap with their time zone.</td><td>Toptal and Turing both use 2-week trials as standard.</td><td>Month-to-month contract, then a second developer or a full team.</td></tr>
+    <tr><td><b>Growing businesses on spreadsheets</b></td><td>Workflow audit / discovery sprint</td><td>A 2-week map of one process (orders, bookings, quotes), the system that would fix it, a fixed quote and a clickable prototype.</td><td>Practitioners price discovery at 5&ndash;10% of the build; about $2.5K&ndash;5K for a $30&ndash;80K build.</td><td>A fixed-price build, then a support retainer.</td></tr>
+    <tr><td><b>Funded startups and founders</b></td><td>MVP scoping sprint</td><td>Scope, architecture, a cost range and a clickable flow in 1&ndash;2 weeks.</td><td>Offshore MVP builds run $10K&ndash;50K (practitioner range).</td><td>The MVP build, then ongoing development.</td></tr>
+    <tr><td><b>Apps built with AI tools that broke</b></td><td>Code and security audit</td><td>A written report: security holes, what to keep and what to rebuild.</td><td>$2K&ndash;8K for a small codebase (Fora Soft).</td><td>The fixes, then maintenance.</td></tr>
+  </tbody></table></div>
+</section>
+
+<section id="channels">
+  <div class="sh"><div class="k">06 &middot; Phase 5</div><h2>Channels by segment</h2>
+  <p class="sub">Ranked by expected results for a young firm with no US reviews yet. Every segment includes one inbound channel, so buyers can find you as well as you finding them.</p></div>
+  <div class="tw"><table class="t-cmp"><thead><tr><th>Segment</th><th>1st</th><th>2nd</th><th>3rd</th><th>Inbound</th><th>Weekly effort</th></tr></thead><tbody>
+    <tr><td><b>US agencies</b></td><td>LinkedIn: connect with owner, sales lead and PM; comment for a week; then message</td><td>Email from your new domain, opening with a trigger (a hiring post or a recent launch)</td><td>Agency communities and events, partner programs at hosting and plugin companies</td><td>A white-label page on famysys.com; Clutch reviews</td><td class="n">6&ndash;8 hrs</td></tr>
+    <tr><td><b>Open developer roles</b></td><td>Email to the hiring manager, not the recruiter (us-it-lead-drafts, Campaign C)</td><td>LinkedIn to the engineering lead</td><td>Upwork Agency Plus: small scoped jobs, reply within the hour</td><td>Developer profiles on Contra</td><td class="n">6&ndash;8 hrs</td></tr>
+    <tr><td><b>Growing businesses</b></td><td>Through agency partners</td><td>Email with a specific operations trigger (new location, hiring office staff)</td><td>Founder posts on LinkedIn, 2&ndash;3 a week, on one topic</td><td>Case-study pages with numbers; Clutch; consistent details AI chatbots can quote</td><td class="n">3&ndash;4 hrs</td></tr>
+    <tr><td><b>Founders and startups</b></td><td>Funding announcements (famysys-new-business-leads skill)</td><td>Upwork and Contra</td><td>Indie Hackers stories (no self-promotion)</td><td>MVP case pages</td><td class="n">Later</td></tr>
+  </tbody></table></div>
+</section>
+
+<section id="messages">
+  <div class="sh"><div class="k">07 &middot; Phase 6</div><h2>The new messages</h2>
+  <p class="sub">Plain text, under 90 words, no link or attachment in the first email, one true trigger, one question. Every email ends with the Houston signature, the postal address and the opt-out line from the company profile. Replace the braces with facts you have checked.</p></div>
+
+  <h3>Before and after: the old day-5 email, rewritten for an agency</h3>
+  <div class="grid2 wide" id="rewrite"></div>
+  <div class="card"><h4>What changed, and why</h4><ul class="l">
+    <li>The buyer changes from a trade owner to an agency owner, who already pays for development.</li>
+    <li>The opening uses a trigger the reader can check, their own hiring post, instead of an observation about a missing website.</li>
+    <li>The &ldquo;we build websites&rdquo; pitch is cut, since pitching lowers replies by up to 57% (Gong).</li>
+    <li>The demo link is removed: no links in the first email, for deliverability and trust.</li>
+    <li>The overlap hours are stated, which answers the main objection to an India-based team before it is asked.</li>
+    <li>&ldquo;White-label, NDA, you own the code&rdquo; covers the three things agencies worry about.</li>
+    <li>The ask changes from a 15-minute walkthrough to a small paid test, which is easier to say yes to.</li>
+    <li>The false deadline (&ldquo;I'll take it down&rdquo;) is gone. It doesn't fit a partner relationship.</li>
+  </ul></div>
+
+  <h3>Sequence A &middot; US agencies (white-label overflow)</h3>
+  <div class="grid2 wide" id="seqA"></div>
+  <h3>Sequence B &middot; Companies with an open developer role</h3>
+  <div class="grid2 wide" id="seqB"></div>
+  <h3>LinkedIn and job-post replies</h3>
+  <div class="grid2 wide" id="seqC"></div>
+
+  <h3>A/B tests for the first email</h3>
+  <div class="tw"><table class="t-cmp"><thead><tr><th>Segment</th><th>What changes</th><th>Version A</th><th>Version B</th><th>Hypothesis</th></tr></thead><tbody>
+    <tr><td><b>Agencies</b></td><td>Trigger</td><td>Their open developer or PM job post</td><td>A site they launched in the last 60 days, named</td><td>A hiring post signals capacity pain right now, so A gets more replies.</td></tr>
+    <tr><td><b>Agencies</b></td><td>Offer</td><td>Paid test ticket</td><td>&ldquo;Send me a ticket and I'll quote it within 24 hours&rdquo;</td><td>A free quote is easier to say yes to, but fewer of those replies become paid work.</td></tr>
+    <tr><td><b>Developer roles</b></td><td>Offer</td><td>2-week trial developer</td><td>A fixed price for one backlog feature</td><td>Smaller teams prefer a fixed scope. Teams with a long-open role prefer a person.</td></tr>
+    <tr><td><b>Developer roles</b></td><td>Proof</td><td>The developer's years in the stack</td><td>A similar system they built (for example, a 7-role ordering platform)</td><td>Specific project proof beats years of experience.</td></tr>
+  </tbody></table></div>
+  <p class="small">Change one thing per test. Send at least 100 of each version before comparing.</p>
+</section>
+
+<section id="fixes">
+  <div class="sh"><div class="k">08 &middot; Phase 7</div><h2>Trust and sending setup</h2></div>
+  <div class="tw"><table class="t-cmp"><thead><tr><th>When</th><th>Fix</th><th>Detail</th><th>Cost</th></tr></thead><tbody>
+    <tr><td><span class="st conf">Now</span></td><td><b>Separate sending domain</b></td><td>Register a look-alike domain for outreach and keep famysys.com for clients. Two Google Workspace inboxes with real names. SPF, DKIM and DMARC (start at p=none). Warm up 2&ndash;3 weeks, then 15&ndash;25 new emails per inbox per day.</td><td>Domain + per-inbox fee; 2 hrs to set up</td></tr>
+    <tr><td><span class="st conf">Now</span></td><td><b>Website claims</b></td><td>Unless Famysys holds a current SOC 2 Type II report from a CPA firm, remove &ldquo;SOC2 Type II Compliant&rdquo;. A buyer's first security questionnaire will ask for it. Keep 48+, 120+ and 99.9% only if you can show the list or the monitoring behind them.</td><td>1 hr</td></tr>
+    <tr><td><span class="st conf">Now</span></td><td><b>Team page</b></td><td>The founder's name, photo and LinkedIn; the &ldquo;nearly 3 decades&rdquo; story with real employers; your delivery leads.</td><td>3 hrs</td></tr>
+    <tr><td><span class="st likely">This week</span></td><td><b>Overlap hours</b></td><td>One line on the site and in every email: &ldquo;Our team is online {X}am&ndash;{Y}pm Central every weekday.&rdquo; Only promise hours you staff.</td><td>Decision</td></tr>
+    <tr><td><span class="st likely">This week</span></td><td><b>Clutch profile</b></td><td>Free profile. Add five past clients as references; Clutch contacts them. Reviews from India or the Gulf are fine; label them honestly.</td><td>2 hrs + client time</td></tr>
+    <tr><td><span class="st likely">This week</span></td><td><b>Case studies with numbers</b></td><td>Two pages with a measured result (orders a day, hours saved, bookings). Your lead-drafts profile still says &ldquo;[FILL IN]&rdquo; for results.</td><td>4 hrs each</td></tr>
+    <tr><td><span class="st likely">This week</span></td><td><b>Sender LinkedIn profiles</b></td><td>Photo, headline (&ldquo;Dev partner for US agencies&rdquo;), Famysys as the current role, two recent posts.</td><td>1 hr</td></tr>
+    <tr><td><span class="st need">This month</span></td><td><b>List hygiene</b></td><td>Verify every address before sending. Stop if bounces pass 2% or anyone reports spam.</td><td>Verification tool</td></tr>
+    <tr><td><span class="st need">This month</span></td><td><b>Upwork and Contra</b></td><td>Upwork Agency Plus plus Connects. A Contra studio profile. Bid only on small, clearly scoped jobs that match a portfolio piece exactly.</td><td>~$20/mo + Connects</td></tr>
+    <tr><td><span class="st need">This month</span></td><td><b>&ldquo;Where are you based?&rdquo;</b></td><td>&ldquo;Famysys is registered in Houston and our delivery team works from Chennai, with {X} hours of overlap with Central time. You'll have one US point of contact.&rdquo;</td><td>&mdash;</td></tr>
+  </tbody></table></div>
+</section>
+
+<section id="plan">
+  <div class="sh"><div class="k">09 &middot; Phase 8</div><h2>The 30-day test plan</h2>
+  <p class="sub">No cold email is sent until the new domain is warm and scores 9/10 or better on mail-tester. LinkedIn, Upwork and the trust fixes fill the first two weeks.</p></div>
+  <div class="seq">
+    <div><span class="d">Week 1<br>Oct 5&ndash;11</span><div><b>Fix and build</b><span>Pause Gmail sends. Domain, inboxes, DNS records, start warm-up. Fix website claims, add the team page. Clutch profile and five reference requests. Build a list of 100 US agencies (directories, LinkedIn) and 50 open developer roles. Connect with 100 agency people on LinkedIn without a note.</span></div></div>
+    <div><span class="d">Week 2<br>Oct 12&ndash;18</span><div><b>Warm channels</b><span>Comment on prospects' posts. Message accepted connections. Upwork Agency Plus: 10 proposals on small jobs, each within an hour of posting. Publish two case-study pages. Run mail-tester and a seed test.</span></div></div>
+    <div><span class="d">Week 3<br>Oct 19&ndash;25</span><div><b>Start email</b><span>15 a day per inbox across 2 inboxes, about 150 for the week. Half to agencies (version A/B), half to developer roles (version A/B). Follow-ups as scheduled.</span></div></div>
+    <div><span class="d">Week 4<br>Oct 26&ndash;Nov 1</span><div><b>Scale or switch</b><span>Raise to 20&ndash;25 a day per inbox if bounces stay under 2% and nobody has complained. Run the weekly review and apply the decision rules below.</span></div></div>
+  </div>
+
+  <div class="grid2 wide">
+    <div class="card"><h3>Decision rules</h3><ul class="l">
+      <li>mail-tester under 9/10, or the seed test shows spam: no sends until it is fixed.</li>
+      <li>Bounces over 2% or any spam complaint: stop and re-verify the list.</li>
+      <li>After 300 delivered emails in a segment, positive replies under 1%: change the segment or the offer, not the wording.</li>
+      <li>Positive replies of 1&ndash;3%: test the subject line and opening line.</li>
+      <li>Over 3%: add a third inbox and scale.</li>
+      <li>Replies but no meetings: the offer is too big; switch to the smaller test.</li>
+      <li>LinkedIn acceptance under 20%: fix the sender's profile first.</li>
+      <li>No Upwork interviews after 20 proposals: narrow the job filter and reply faster.</li>
+    </ul></div>
+    <div class="card"><h3>What to expect in month one</h3><p>About 400&ndash;500 cold emails, at the published average of one meeting per 344 emails, gives 1&ndash;2 meetings from email alone. LinkedIn and Upwork should add 2&ndash;4 more. A realistic month-one target is <b>4&ndash;6 discovery calls and 1&ndash;2 paid test projects</b>. The month-one goal is to find which segment replies, not to make revenue.</p></div>
+  </div>
+  <div id="review"></div>
+</section>
+
+<section id="sources">
+  <div class="sh"><div class="k">10 &middot; Sources</div><h2>Sources</h2>
+  <p class="sub">Researched 3 Oct 2026. Some help pages carry no date. Claims that could not be traced to a primary source are left out.</p></div>
+  <ol class="src" id="srcList"></ol>
+</section>
+
+<footer>
+  <p><b>Method.</b> Prompt D from The Outreach Desk, run with web research on 3 Oct 2026. Exact send counts were not supplied, so the diagnosis uses the 10-a-day cap from the us-it-lead-drafts skill as the volume assumption. Segment scores are judgement. Prices are public ranges, not quotes.</p>
+</footer>
+</main>
+</div>
+
+<script>
+const $=id=>document.getElementById(id);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+function block(title,text){return `<div class="cb"><div class="cb-h"><span>${esc(title)}</span><button class="copy" type="button">Copy</button></div><pre>${esc(text)}</pre></div>`;}
+document.addEventListener("click",e=>{
+  const b=e.target.closest("button.copy");if(!b)return;
+  const pre=b.closest(".cb").querySelector("pre");const t=pre.textContent;
+  const done=()=>{b.textContent="Copied";b.classList.add("ok");setTimeout(()=>{b.textContent="Copy";b.classList.remove("ok")},1600);};
+  const fallback=()=>{const r=document.createRange();r.selectNodeContents(pre);const s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent="Selected, press Ctrl/Cmd+C";};
+  try{navigator.clipboard.writeText(t).then(done,fallback);}catch(err){fallback();}
+});
+
+const SEG=[
+ ["US digital & web agencies needing white-label dev","Overflow builds, WordPress, React, Node",3,5,4,5,4,4,"Test now"],
+ ["Companies with an open developer role","Role open 30+ days, several similar roles",5,4,4,3,3,5,"Test now"],
+ ["Growing businesses ($5M–100M) on spreadsheets or old systems","Ordering, booking, quoting, portals, AI integration",4,2,3,3,5,2,"Inbound + via agencies"],
+ ["Funded startups and non-technical founders","Recent funding, product launch",3,2,3,3,3,4,"Later, via skill"],
+ ["Apps built with AI tools that need rescue","Bugs, security gaps, can't scale",3,3,2,3,2,3,"Content offer"],
+ ["Local service businesses with no website","The original target",1,1,3,1,3,2,"Drop for cold outreach"]
+];
+$("segBody").innerHTML=SEG.map(s=>{const t=s.slice(2,8).reduce((a,b)=>a+b,0);const cls=t>=23?"conf":t>=17?"likely":"out";return `<tr><td><b>${esc(s[0])}</b><span class="note">${esc(s[1])}</span></td>${s.slice(2,8).map(v=>`<td class="n">${v}</td>`).join("")}<td class="n"><b>${t}</b></td><td><span class="st ${cls==="conf"?"go":cls==="likely"?"likely":"dim"}">${esc(s[8])}</span></td></tr>`}).join("");
+
+const SIG=`Best Regards,
+Aisha Naikar
+Business Development Manager, Famysys
+www.famysys.com | +1 (346) 464-5842
+10193 W Grand Parkway S., Ste. 103-229, Houston, TX 77407
+
+If this isn't relevant, just reply "no thanks" and I won't email again.`;
+
+$("rewrite").innerHTML=block("Before (Outreach Desk, day 5)",`Subject: {Business} – {City}
+
+Hi {first name},
+
+I'm {your name} at {firm}. We build websites and booking systems for {category} businesses.
+
+I noticed {specific observation}. So I put together a sample site for {business} using your public photos:
+{demo link}
+
+If it's useful, I can walk you through it in 15 minutes this week. If not, no problem, I'll take it down on {date}.`)+block("After (agency, white-label)",`Subject: Overflow Dev for {Agency}
+
+Hi {first name},
+
+Saw {Agency} is hiring a {role} (posted {date}).
+
+While you hire, we build overflow projects under your brand: WordPress, React and Node. NDA first, you own the code, and our team is online {X}am–{Y}pm Central.
+
+Would a small paid test, one ticket at a fixed price, be worth trying?
+
+Thank you for your time.
+
+${SIG}`);
+
+$("seqA").innerHTML=[
+["Touch 1 · Day 0","(See the rewrite above, or Version B:)\n\nSubject: {Client Site} Launch\n\nHi {first name},\n\nThe {client site} build {Agency} launched in {month} is sharp, especially {specific detail}.\n\nWhen launches like that stack up, we take overflow development under your brand. NDA first, you own the code, {X}am–{Y}pm Central overlap.\n\nIs extra dev capacity something you'd use in the next quarter?\n\nThank you for your time.\n\n"+SIG],
+["Touch 2 · Day 4","Hi {first name},\n\nOne example of the work: we built a restaurant ordering system where web orders, QR orders, the kitchen and riders all run on one order record, with 7 user roles.\n\nFor an agency, that means we can take the complex back end while your team owns design and the client.\n\nWant the short case page?\n\n"+SIG],
+["Touch 3 · Day 9","Hi {first name},\n\nA different question: when a client asks for something your team can't take on this month, what happens today? Freelancers, overtime, or saying no?\n\nIf you send us any ticket, we'll quote it within 24 hours so you can price it to your client before you commit.\n\n"+SIG],
+["Touch 4 · Day 16","Hi {first name},\n\nI'll stop here. If {Agency} wants a backup dev team for busy months, reply \"later\" and I'll check back in {month}.\n\nThank you for your time.\n\n"+SIG]
+].map(x=>block(x[0],x[1])).join("");
+
+$("seqB").innerHTML=[
+["Touch 1 · Day 0","Subject: {Role} at {Company}\n\nHi {first name},\n\nNoticed the {role} post at {Company} has been open since {date}.\n\nWhile you keep hiring, we can add a {stack} developer to your sprint on a 2-week trial, with {N} hours a day of overlap with {their time zone}. Month to month after that.\n\nWould two anonymized profiles that match the role be useful?\n\nThank you for your time.\n\n"+SIG],
+["Touch 2 · Day 4","Hi {first name},\n\nOne of the two in short: {years} years in {stack}, most recently the back end of a live auction platform with 9 user roles and auto-extending bids.\n\nWant the full profile and a 20-minute technical call with them?\n\n"+SIG],
+["Touch 3 · Day 9","Hi {first name},\n\nIf a contractor is more than you need, we also take one feature from the backlog at a fixed price.\n\nIs there one piece of work stuck behind this hire?\n\n"+SIG],
+["Touch 4 · Day 16","Hi {first name},\n\nI'll leave it here. If the role is still open next month and you want a stopgap, reply and I'll send the profiles the same day.\n\nThank you for your time.\n\n"+SIG]
+].map(x=>block(x[0],x[1])).join("");
+
+$("seqC").innerHTML=[
+["LinkedIn · connect, then message","Connect with no note. Free accounts only get 3 notes a month, and notes don't raise acceptance.\n\nIf you do use a note (200 characters max):\nHi {first name}, I look after partnerships at Famysys. We build under agency brands. I follow {Agency}'s work and would be glad to connect.\n\nAfter they accept, and after you've commented on one of their posts:\nThanks for connecting, {first name}. Quick question: when {Agency} has more dev work than people, what do you do today? We take overflow under agency brands, NDA first, you own the code. Happy to share how it works if useful."],
+["Reply to a job post or Upwork listing","Hi {name},\n\nYour post asks for {requirement in their words}.\n\nWe built {closest project} on {stack}. Here's how I'd approach yours:\n1. {first step}\n2. {second step}\n3. {third step}\n\nOne question before I quote: {clarifying question}.\n\nWe can start {date}, with {X}am–{Y}pm Central overlap.\n\n{name}, Famysys"]
+].map(x=>block(x[0],x[1])).join("");
+
+$("review").innerHTML=block("Weekly review template (paste into Claude with Prompt D)",`WEEK OF: {date}
+Segment / version | Sent | Delivered | Bounced | Replies | Positive | Meetings | Proposals
+Agencies A        |      |           |         |         |          |          |
+Agencies B        |      |           |         |         |          |          |
+Dev roles A       |      |           |         |         |          |          |
+Dev roles B       |      |           |         |         |          |          |
+LinkedIn: invites {n} · accepted {n} · messages {n} · replies {n}
+Upwork: proposals {n} · views {n} · interviews {n} · hires {n}
+Clutch: reviews requested {n} · published {n}
+mail-tester score: {n}/10 · spam complaints: {n}
+
+Ask: compare to the decision rules in The Outreach Reset, name the weakest stage, and give 3 specific fixes for next week.`);
+
+const SRC=[
+["Meta: stricter message settings (message requests are text-only until accepted)","https://about.fb.com/news/2024/01/introducing-stricter-message-settings-for-teens-on-instagram-and-facebook/","Jan 2024"],
+["Meta spam policy","https://transparency.meta.com/policies/community-standards/spam","current"],
+["Google: Gmail Program Policies","https://support.google.com/mail/answer/16734397","Nov 2025"],
+["Google: email sender guidelines (all senders)","https://support.google.com/a/answer/81126","in force Feb 2024"],
+["Google: sender guidelines FAQ (enforcement from Nov 2025)","https://support.google.com/a/answer/14229414","n.d."],
+["Google Postmaster Tools","https://support.google.com/a/answer/9981691","n.d."],
+["Yahoo sender best practices","https://senders.yahooinc.com/best-practices/","Feb 2024"],
+["Microsoft: Outlook.com high-volume sender requirements","https://techcommunity.microsoft.com/blog/microsoftdefenderforoffice365blog/strengthening-email-ecosystem-outlook%E2%80%99s-new-requirements-for-high%E2%80%90volume-senders/4399730","Apr 2025"],
+["FTC: CAN-SPAM Act compliance guide","https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business","Jan 2024"],
+["FTC: Do Not Call Q&A for telemarketers","https://www.ftc.gov/business-guidance/resources/qa-telemarketers-sellers-about-dnc-provisions-tsr-0","Sep 2025"],
+["47 CFR 64.1200 (TCPA rules)","https://www.law.cornell.edu/cfr/text/47/64.1200","current"],
+["LinkedIn Help: personalised invitation notes","https://www.linkedin.com/help/linkedin/answer/46662","2026"],
+["LinkedIn User Agreement","https://www.linkedin.com/legal/user-agreement","Nov 2025"],
+["Cleverly: LinkedIn benchmarks","https://www.cleverly.co/blog/linkedin-benchmarks","Apr 2026"],
+["Instantly: cold email benchmark report 2026","https://instantly.ai/cold-email-benchmark-report-2026","Jan 2026"],
+["Belkins: cold email response rates","https://belkins.io/blog/cold-email-response-rates","Jun 2026"],
+["Hunter: state of cold email","https://hunter.io/the-state-of-cold-email-2025","2025"],
+["Gong: does cold email still work","https://www.gong.io/blog/does-cold-email-even-work-any-more-heres-what-the-data-says/","Jul 2025"],
+["G2: half of B2B buyers start research in AI chatbots","https://www.prnewswire.com/news-releases/new-g2-research-half-of-b2b-software-buyers-now-start-their-research-with-ai-chatbots-302742807.html","2026"],
+["TrustRadius 2026 B2B Buying Disconnect (HG Insights summary)","https://hginsights.com/blog/trust-more-verify-everything-what-the-2026-b2b-buying-disconnect-report-says-about-where-buying-is-actually-heading/","Jul 2026"],
+["Hinge: professional services buyer behaviour","https://hingemarketing.com/blog/story/new-research-study-shows-significant-changes-in-professional-services-buyer-behavior","Sep 2018"],
+["Deloitte Global Outsourcing Survey 2024","https://www.deloitte.com/global/en/issues/work/global-outsourcing-survey.html","2024"],
+["Clutch: software development pricing","https://clutch.co/developers/pricing","Sep 2026"],
+["Accelerance: 2026 outsourcing rate trends","https://www.accelerance.com/blog/2026-outsourcing-rate-trends-asia-europe-latam","Nov 2025"],
+["Organization Science: time zones and communication","https://pubsonline.informs.org/doi/10.1287/orsc.2023.17558","2024"],
+["Veracode: GenAI code security report","https://www.veracode.com/resources/analyst-reports/2025-genai-code-security-report/","2025"],
+["Upwork Q2 2026 results (SEC 8-K)","https://www.sec.gov/Archives/edgar/data/0001627475/000162747526000046/upwork2q26-pressrelease.htm","Aug 2026"],
+["Demirci, Hannane & Zhu: generative AI and online freelancing (SSRN)","https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4602944","2023–25"],
+["Clutch: submit client references","https://help.clutch.co/en/knowledge/submit-client-references","current"],
+["Clutch: review methodology","https://clutch.co/methodology","current"],
+["Clutch: sponsorship","https://clutch.co/sponsorship","current"],
+["Contra: studios and agencies","https://help.contra.com/en/articles/15902602","Jul 2026"],
+["Hacker News: Who wants to be hired (agencies off topic)","https://news.ycombinator.com/item?id=49922568","Oct 2026"],
+["E2M Solutions founder interview (podcast)","https://podcasts.apple.com/us/podcast/id1669305312?i=1000659488668","Jun 2024"],
+["Haus Advisors: white-label agency partnerships (Adam Weil)","https://hausadvisors.com/podcast/white-label-agency-partnerships-weil","n.d."],
+["Haus Advisors: outbound sales for agencies","https://hausadvisors.com/blog/outbound-sales-for-agencies","n.d."],
+["Kanopy Labs: technical discovery cost","https://kanopylabs.com/blog/how-much-does-technical-discovery-phase-cost","Sep 2026"],
+["Fora Soft: code audit","https://www.forasoft.com/blog/article/what-is-code-auditing-and-how-to-conduct-it-evaluation-criteria-1673","Sep 2026"],
+["Toptal: offshore developers (2-week trial)","https://www.toptal.com/developers/offshore","2026"]
+];
+$("srcList").innerHTML=SRC.map(s=>`<li><a href="${s[1]}" target="_blank" rel="noopener">${esc(s[0])}</a> <span class="small">· ${esc(s[2])}</span></li>`).join("");
+</script>
