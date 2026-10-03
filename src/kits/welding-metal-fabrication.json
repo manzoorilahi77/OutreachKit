@@ -1,0 +1,842 @@
+{
+  "schemaVersion": 1,
+  "category": "Welding & metal fabrication",
+  "slug": "welding-metal-fabrication",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "B2b family batch, rfq archetype. Shops serve both industry and homeowners, so the site carries two doors. Welding certifications stay as bracketed placeholders. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Mobile welding call-out",
+      "contains": "On-site welding for trailers, loader buckets, gates and structural steel, what the welding rig carries, the travel radius and how call-out time is billed",
+      "why": "A broken trailer hitch or a cracked bucket can't come to the shop. Buyers with equipment down decide on whoever shows a mobile rig and a callback time."
+    },
+    {
+      "section": "Architectural and residential metalwork",
+      "contains": "Railings, stair stringers, gates, range hoods, fire pits and custom furniture frames, with how a homeowner or designer starts a job and the typical lead time",
+      "why": "Homeowners and designers search for custom metal work differently from plant buyers. A separate door keeps the industrial page clean and still catches them."
+    },
+    {
+      "section": "Metals and finish options",
+      "contains": "Mild steel, stainless and aluminum, and the finishes on offer: powder coat, galvanizing, paint, brushed or raw with clear coat, and which finishes go out to a partner",
+      "why": "Finish drives cost and lead time more than the welding does. Buyers who see finish options up front send a complete request."
+    },
+    {
+      "section": "Repeat parts and fixture library",
+      "contains": "How repeat brackets, frames and guards are reordered by part number, which jigs and fixtures the shop keeps on file, and batch sizes it takes",
+      "why": "Plant maintenance buyers come back for the same part. Showing a reorder path turns a one-off fabrication job into a standing account."
+    },
+    {
+      "section": "Broken equipment repair intake",
+      "contains": "What can be welded back and what should be replaced: cracked frames, worn cutting edges, hardfacing, hitch and axle repair, with a photo intake for the break",
+      "why": "Repair buyers want a yes or no before they haul a machine in. A clear repair-versus-replace page saves both sides a trip."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C39",
+      "siteType": "local-conversion",
+      "name": "Shop Door",
+      "heroLayout": "split-photo",
+      "mood": [
+        "plain",
+        "workmanlike",
+        "steady"
+      ],
+      "bestFor": "One- and two-welder shops doing repair, gates, trailers and walk-in jobs",
+      "pairsWithTier": "starter",
+      "headlineSample": "Welding and metal fabrication in {City}",
+      "whyItFits": "Brick and Linen's slab type reads like a stamped shop sign, which suits a small welding shop that sells on craft and a callback."
+    },
+    {
+      "id": "b",
+      "themeId": "C19",
+      "siteType": "b2b-capability",
+      "name": "Fab Spec",
+      "heroLayout": "card-stack",
+      "mood": [
+        "exact",
+        "industrial",
+        "organised"
+      ],
+      "bestFor": "Fabrication shops quoting contractors, plants and equipment dealers",
+      "pairsWithTier": "standard",
+      "headlineSample": "Custom metal fabrication for {City} contractors and plants",
+      "whyItFits": "The family combo. Gunmetal with an arc-orange accent and mono labels fits process lists, material thickness and lead times."
+    },
+    {
+      "id": "c",
+      "themeId": "C48",
+      "siteType": "portfolio-showcase",
+      "name": "Made in Steel",
+      "heroLayout": "full-bleed-photo",
+      "mood": [
+        "crafted",
+        "dark",
+        "precise"
+      ],
+      "bestFor": "Architectural fabricators selling stairs, railings and feature metalwork to designers and builders",
+      "pairsWithTier": "premium",
+      "headlineSample": "Architectural metalwork fabricated in {City}",
+      "whyItFits": "Noir Editorial gives finished steel and real shop photos a dark gallery, which is how designers and architects judge custom fabrication."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your welding shop's Google listing has hours and a phone number but no website, so a plant buyer who needs a guard fabricated can't see what metal you work or how big a job you take.",
+      "hook": "Open their Maps listing and confirm there is no Website button. Screenshot it for when they reply.",
+      "linkLine": "What a fabrication buyer would find behind that button: {demo-link}"
+    },
+    {
+      "angle": "Facebook-only link",
+      "line": "Your listing links to Facebook, where the custom gates sit next to trailer repairs and shop dog posts. A contractor looking for a fabricator wants the processes and materials in one place.",
+      "hook": "Tap the Website link and confirm it lands on Facebook. Note one industrial and one residential post.",
+      "linkLine": "Both sides of the welding shop, on one site: {demo-link}"
+    },
+    {
+      "angle": "Dead free host",
+      "line": "The site on your listing still runs on a free host with a contact form that doesn't send. A buyer with a drawing to quote gives a fab shop one try.",
+      "hook": "Open the site and test the form or look for a builder banner or an old year. Note what you find.",
+      "linkLine": "Same fab shop, with a form that delivers: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "On my phone your welding site's gallery loads sideways and the call button is off the screen. Mobile welding customers search from beside a broken trailer.",
+      "hook": "Only if they have a site. Load it on your phone and note what breaks. Screenshot it for when they reply.",
+      "linkLine": "Your welding site, working on a phone: {demo-link}"
+    },
+    {
+      "angle": "No way to send a drawing",
+      "line": "There's no way to send your shop a sketch or a DXF except texting your cell. A request page that takes the drawing, the metal and the quantity would bring in cleaner fabrication jobs.",
+      "hook": "Check any site and the listing for an upload or quote form. If there is none, the angle holds.",
+      "linkLine": "A fabrication request that takes the drawing: {demo-link}"
+    },
+    {
+      "angle": "Finished steel, nowhere to live",
+      "line": "Your stair stringers and powder-coated railings are better work than most fab shops post, and they scroll away on Instagram in a week.",
+      "hook": "Find one finished metal piece in their posts. Name it if they reply.",
+      "linkLine": "Your metalwork on a project page that stays put: {demo-link}"
+    },
+    {
+      "angle": "Reviews stuck on Google",
+      "line": "Your reviews mention welding a cracked frame the same day. A farm or contractor in a hurry would read that before calling anyone else, if it were on a site.",
+      "hook": "Read their reviews and copy one phrase about speed or a specific repair. Quote it if they reply.",
+      "linkLine": "Your repair reviews next to the mobile welding page: {demo-link}"
+    },
+    {
+      "angle": "Planting and harvest repairs",
+      "line": "When planting or harvest starts, equipment breaks and farmers search for a mobile welder that afternoon. The welding shops they find on their phones get the repairs.",
+      "hook": "Use this in rural or farm areas a few weeks before the local planting or harvest season. Name the season.",
+      "linkLine": "A mobile welding page ready for the busy season: {demo-link}"
+    },
+    {
+      "angle": "Breakdowns after hours",
+      "line": "A trailer hitch snaps on a Saturday and the owner searches for a welder who can come out. If your shop's line rings out after five, that job goes to the next rig.",
+      "hook": "Call their number after hours or on a weekend. Note whether it rings out or goes to voicemail.",
+      "linkLine": "A welding page that takes the breakdown call after hours: {demo-link}"
+    },
+    {
+      "angle": "Hiring a welder",
+      "line": "Saw the post that your shop is hiring a welder. Good welders size up a fab shop online before they apply, and so do the contractors who send you work.",
+      "hook": "Only if they posted a hiring note or a job listing. Note the date and whether it's still open.",
+      "linkLine": "A fabrication shop site with a careers section: {demo-link}"
+    },
+    {
+      "angle": "Mobile welding radius",
+      "line": "Your truck rig shows up at job sites across the county, but nothing says how far your mobile welding goes. A contractor two towns over has no idea you'd come.",
+      "hook": "Look for posts showing the rig at sites in other towns. Name the furthest one.",
+      "linkLine": "A mobile welding coverage page: {demo-link}"
+    },
+    {
+      "angle": "Deposits on custom metal",
+      "line": "Custom gates and railings take weeks and real steel, and homeowners ask about deposits and payment before they commit. A fab page that explains your deposit terms saves the awkward call.",
+      "hook": "Only if they do residential custom work. Check posts for gates, railings or furniture first.",
+      "linkLine": "Custom metal work with deposit terms explained: {demo-link}"
+    },
+    {
+      "angle": "Insurance for site welding",
+      "line": "General contractors ask a welding sub for a certificate of insurance before they let a rig on site. A page that says you're insured for field welding gets you past that check faster.",
+      "hook": "Look for 'insured' on their listing or posts. Never claim coverage or certifications you didn't see.",
+      "linkLine": "Insurance and field welding details on one page: {demo-link}"
+    },
+    {
+      "angle": "Word-of-mouth fab work",
+      "line": "It sounds like your fabrication work comes from a few contractors and the farm down the road. When their buyer changes, the new one searches for a metal shop instead of asking around.",
+      "hook": "Look for reviews or posts that thank a repeat customer or a contractor. Quote it.",
+      "linkLine": "Where a new buyer finds your fab shop: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "That {specific recent job} you posted is real fabrication. A piece like that belongs on a page a contractor can send to their client before they ask you for a price.",
+      "hook": "Pick their newest welding or fabrication post and name it: the piece, the metal and the finish.",
+      "linkLine": "That metal job on a project page: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner} — that {specific recent job} you posted is good fabrication.\n\nI looked for a site for {Business Name} and found social pages, but nowhere a contractor could send a drawing or a homeowner could see your gates and railings. I put together a sample welding shop page with a drawing request and a mobile welding section, with marked placeholders where your photos would go.\n\nWould it help if I sent it over?",
+    "dm2": "{Owner} — following up in case my last message got lost in the shop. Here's the sample site for {Business Name}: {demo-link}\n\nIt has a fabrication request that takes a drawing, a mobile welding page with your travel radius, and a separate door for custom residential metal work. If it's not useful, say so and I'll leave you alone.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for welding and fabrication shops here in {City}. I sent you a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"No surprise, you're under a hood all day. Short version: I built a sample site for {Business Name} with a drawing upload, a mobile welding page and a gallery for your custom metal work, with marked placeholders where your photos would go. Can I email you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range}, then {Care Range} a month for hosting and changes. For a shop your size I'd quote about {Build Price}, about what one set of custom railings brings in.\"\n\"Can I show you for ten minutes this week, at lunch or after you shut the shop?\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. We start the day it clears.\"",
+    "objections": [
+      {
+        "objection": "I've got more welding work than I can handle.",
+        "handler": "\"Then the site picks which work you get. A drawing request with metal and quantity lets you turn down the small stuff and keep the fabrication jobs that pay.\""
+      },
+      {
+        "objection": "My customers just text me pictures.",
+        "handler": "\"Keep that. The request page gives them a place to send the picture plus the metal, size and deadline, so you aren't texting back five questions.\""
+      },
+      {
+        "objection": "Contractors find me through other contractors.",
+        "handler": "\"They still look you up before handing you a structural job. The site shows them your processes and insurance before they ask.\""
+      },
+      {
+        "objection": "My nephew can make me a website.",
+        "handler": "\"He probably can. What I add is the fab request that asks the right questions and a mobile welding page that ranks for breakdown searches. I can hand him the layout if you'd rather.\""
+      },
+      {
+        "objection": "Half my work is homeowners, half is industrial. One site won't fit.",
+        "handler": "\"That's why it has two doors: one for plants and contractors with drawings, one for gates and railings with a gallery. Same shop, two front counters.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}, because it's a drawing request, a mobile welding page and two galleries. That's about one custom gate.\""
+      }
+    ],
+    "email": {
+      "subject": "Fabrication request page for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for welding and metal fabrication shops around {City}. {Business Name} posts good work, but a contractor with a drawing or a homeowner wanting a railing has nowhere to send it except your phone.\n\nI built a sample first rather than ask for your time: a fabrication request that takes a drawing, the metal and the quantity, a mobile welding page with your travel radius, a repair intake for broken equipment, and a gallery for custom metal work, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and changes. If not, no problem, it comes down at the end of the month.\n\nWorth ten minutes on the phone this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build websites for welding and fab shops in {City}, and I made a sample site for {Business Name} with a drawing upload. I'll email you the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner} — I'm taking the {Business Name} welding demo down on Friday to make room.\n\nWant me to keep it up? One word either way is fine.",
+    "nurture": "Hi {Owner} — contractors around {City} are lining up fabrication subs for the spring build season. Thought of you.\n\nThe welding shop site is still here whenever you want it, and the price hasn't changed. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to one custom railing or gate job, not to a day of mobile repair.",
+      "The fabrication request with drawing upload is the core. Price the rest as additions to it.",
+      "Price the residential metalwork gallery by project count, not page count.",
+      "Charge for the mobile welding page and its coverage pages separately; they chase a different search than fabrication.",
+      "Keep the monthly add-ons below a few hours of shop rate so a slow month never makes them a question.",
+      "Quote the repeat parts library only when they already reorder the same part for a plant."
+    ],
+    "lineItems": [
+      {
+        "item": "Fabrication request with drawing upload",
+        "min": 350,
+        "max": 850,
+        "unit": "one-time",
+        "description": "Max with metal, thickness, quantity, finish, deadline and multi-file upload for drawings and site photos.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Mobile welding page with coverage",
+        "min": 300,
+        "max": 700,
+        "unit": "one-time",
+        "description": "Max with a radius map, what the rig carries, call-out billing and a breakdown request that texts the owner.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Metalwork gallery (per project)",
+        "min": 75,
+        "max": 200,
+        "unit": "per-page",
+        "description": "Max when each project carries the metal, finish, dimensions and a short build note.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Finish and material guide",
+        "min": 200,
+        "max": 500,
+        "unit": "one-time",
+        "description": "Max with powder coat colour cards, galvanizing and stainless notes and lead time effects per finish.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Repeat parts reorder page",
+        "min": 300,
+        "max": 800,
+        "unit": "one-time",
+        "description": "Max with a private part list per customer, reorder by part number and quantity breaks.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Equipment repair photo intake",
+        "min": 250,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max with machine type, break location, photo upload and a haul-in or come-out choice.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Shop and rig photo day",
+      "min": 400,
+      "max": 1000,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"One afternoon shooting the welding bays, the rig and finished steel gives the fab site real pictures instead of none.\"",
+      "when": "Month 2, on a day with finished pieces waiting for pickup."
+    },
+    {
+      "name": "Google profile upkeep for welding and fab",
+      "min": 120,
+      "max": 250,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Each week a new repair or fabrication job goes on your Google profile, tagged mobile welding or custom metal, so both searches find you.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Contractor and plant buyer outreach",
+      "min": 300,
+      "max": 800,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A short monthly note to the maintenance managers and GCs near your shop, showing a recent fabrication job and the drawing request.\"",
+      "when": "Month 3, once the request page has a few real jobs behind it."
+    },
+    {
+      "name": "Rig and truck lettering artwork",
+      "min": 200,
+      "max": 600,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Your welding rig parks at job sites all week. Lettering with the mobile welding number and the site address works every hour it's parked.\"",
+      "when": "Right after launch."
+    },
+    {
+      "name": "Designer and architect lookbook",
+      "min": 500,
+      "max": 1200,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A short printed and PDF book of your railings, stairs and feature metal to leave with interior designers and builders.\"",
+      "when": "Month 3, once there are enough residential metal projects to fill it."
+    },
+    {
+      "name": "Review requests after repairs",
+      "min": 79,
+      "max": 179,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"After every same-day welding repair, the customer gets a short review request while they're still relieved.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Harvest and planting season campaign",
+      "min": 300,
+      "max": 700,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Before planting starts, a campaign to farms near the shop: mobile welding, hardfacing and a number to save.\"",
+      "when": "A few weeks before the local planting or harvest season, in farm areas only."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Powder coating and galvanizing partners",
+        "whoPays": "The coater, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"Who powder coats your gates and railings? Coaters need a colour chart and a drop-off page as much as you needed a site.\"",
+        "whyItWorks": "Coaters depend on fab shops for work and listen when a regular customer recommends you."
+      },
+      {
+        "route": "The steel service center they buy from",
+        "whoPays": "The steel supplier",
+        "min": 2500,
+        "max": 8000,
+        "unit": "one-time",
+        "pitchLine": "\"Your steel supplier sells to every welding shop in the area with a stock list nobody can search. Introduce me.\"",
+        "whyItWorks": "Service centers have budgets, and their counter customers are your next prospect list."
+      },
+      {
+        "route": "Fence, gate and railing installers",
+        "whoPays": "The installer, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The fence company you build ornamental gates for needs a site that sells those gates. I'll build it.\"",
+        "whyItWorks": "They resell the shop's fabrication, so a better installer site means more metal orders."
+      },
+      {
+        "route": "Trailer dealers and farm equipment shops",
+        "whoPays": "The dealer",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The trailer dealer who sends you hitch and frame repairs has an inventory page from years ago. You can get me in the door.\"",
+        "whyItWorks": "Dealers trust the welder who keeps their customers rolling, and they have inventory sites worth rebuilding."
+      },
+      {
+        "route": "General contractors who sub structural steel",
+        "whoPays": "The general contractor",
+        "min": 2000,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"The GC who subs you the stair and lintel work has a projects page nobody updates. A welding sub's introduction gets me a meeting.\"",
+        "whyItWorks": "GCs need project portfolios to win bids, and the fab shop sees their projects first-hand."
+      },
+      {
+        "route": "Interior designers who spec custom metal",
+        "whoPays": "The design studio",
+        "min": 1500,
+        "max": 4500,
+        "unit": "one-time",
+        "pitchLine": "\"The designer who sent you that hood and railing has a portfolio stuck in a PDF. Introduce me and I'll put it online.\"",
+        "whyItWorks": "Designers who spec custom fabrication care about portfolio sites and trust the makers they use."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Colour and finish quote assistant for the coater",
+        "whoPays": "The powder coater",
+        "min": 1000,
+        "max": 3000,
+        "unit": "one-time",
+        "pitchLine": "\"Fab shops and homeowners upload part photos and sizes, and the coater gets a draft powder coat quote by surface area and colour.\"",
+        "whyItWorks": "Coaters quote dozens of small parts a week. A draft quote saves them hours, and the welding client sends them traffic."
+      },
+      {
+        "route": "Stock and cut-list assistant for the steel supplier",
+        "whoPays": "The steel supplier, annually",
+        "min": 3000,
+        "max": 12000,
+        "unit": "per-year",
+        "pitchLine": "\"Fab shops paste in a cut list, and the assistant matches it to the supplier's stock lengths and drafts the order.\"",
+        "whyItWorks": "It keeps shops ordering from one service center, which the center values more than a discount."
+      },
+      {
+        "route": "Gate and railing configurator for the fence installer",
+        "whoPays": "The fence installer",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"Homeowners describe the gate opening and style, and the fence installer gets a draft ornamental gate quote with the fab shop's pricing.\"",
+        "whyItWorks": "It sells the welding client's metal through someone else's customers."
+      },
+      {
+        "route": "Repair triage assistant for the trailer dealer",
+        "whoPays": "The trailer dealer, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Dealer customers describe a cracked trailer frame or broken hitch, and the assistant sorts it into warranty, dealer repair or the welding shop.\"",
+        "whyItWorks": "Dealers want fewer service calls, and the welding client is already where the hard repairs go."
+      },
+      {
+        "route": "Bid summary assistant for the general contractor",
+        "whoPays": "The general contractor, monthly",
+        "min": 200,
+        "max": 500,
+        "unit": "monthly",
+        "pitchLine": "\"The GC drops in plan sets and gets a summary of the miscellaneous metals scope to send to fab subs.\"",
+        "whyItWorks": "GCs lose time pulling steel scopes from drawings, and the fab client proves the scope is right."
+      },
+      {
+        "route": "Concept-to-spec assistant for the designer",
+        "whoPays": "The design studio, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"The designer describes a custom metal piece, and the assistant drafts a spec sheet with metal, finish and dimensions for the fabricator.\"",
+        "whyItWorks": "Designers send cleaner requests, and the welding client gets jobs that are easier to quote."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Missed-call text-back for breakdown repairs",
+      "kind": "automation",
+      "oneTimeMin": 0,
+      "oneTimeMax": 300,
+      "monthlyMin": 79,
+      "monthlyMax": 179,
+      "pitchLine": "\"Someone calls about a broken trailer while you're welding, gets a text asking where it is and what cracked, and you call back knowing whether to load the rig.\"",
+      "whenAndWhatItTakes": "Day 30. Needs the shop number forwarded and wording they approve."
+    },
+    {
+      "name": "Fabrication quote calculator by weight and hours",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Enter the steel, the weld length and the finish, and it drafts the fabrication quote from your shop rate and material markup.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their shop rate, material markup, finish costs and a few past quotes to check against."
+    },
+    {
+      "name": "Drawing-to-cut-list helper",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"Upload a customer's sketch or PDF drawing, and it drafts the steel cut list and weld notes for you to check before quoting.\"",
+      "whenAndWhatItTakes": "Month 3. Needs a set of past drawings with the cut lists they produced. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Job board for the shop floor",
+      "kind": "software",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"Every fabrication job on one screen: cut, weld, finish, out for coating, ready for pickup, so nobody asks the owner where a part is.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their job steps and a screen in the shop."
+    },
+    {
+      "name": "Pickup-ready texts",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 40,
+      "monthlyMax": 100,
+      "pitchLine": "\"When a gate or bracket comes back from powder coat, the customer gets a text that it's ready, with shop hours.\"",
+      "whenAndWhatItTakes": "Month 3, with the job board. Needs customer phone numbers on each job."
+    },
+    {
+      "name": "Quote writer from shop-floor voice notes",
+      "kind": "ai",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 120,
+      "monthlyMax": 300,
+      "pitchLine": "\"Talk through the welding job at the bench, and a clean written quote with scope, metal and lead time is ready to send.\"",
+      "whenAndWhatItTakes": "Month 3. Needs past quotes and their standard terms. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Repeat parts portal for plant customers",
+      "kind": "software",
+      "oneTimeMin": 2500,
+      "oneTimeMax": 7000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"Plant buyers log in, see the brackets and guards you've made them before, and reorder by part number without a drawing.\"",
+      "whenAndWhatItTakes": "Month 5, once a plant reorders the same part twice. Needs part drawings and prices for each repeat customer."
+    },
+    {
+      "name": "Repair photo triage",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"Customers upload a photo of the cracked frame or bucket, and it sorts the welding repair into shop, mobile or replace for you to confirm.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the repair intake and a few hundred past repair photos with the owner's call. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Steel price update on open quotes",
+      "kind": "automation",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1200,
+      "monthlyMin": 50,
+      "monthlyMax": 120,
+      "pitchLine": "\"When your steel supplier's price changes, every open fabrication quote older than two weeks gets flagged for a recheck.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the quote calculator and a price sheet from their supplier."
+    },
+    {
+      "name": "Material offcut inventory",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Log the plate, tube and angle offcuts in the rack, and the quote calculator checks them before you order new metal.\"",
+      "whenAndWhatItTakes": "Month 5. Needs a weekend to log the rack and a phone at the saw."
+    },
+    {
+      "name": "Mobile welding dispatch map",
+      "kind": "software",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"Breakdown calls drop on a map with the rig's location, so the owner can stack nearby field welding jobs into one trip.\"",
+      "whenAndWhatItTakes": "Month 5, once mobile work is a steady share. Needs the rig's phone and the job list."
+    },
+    {
+      "name": "Weld procedure and job notes search",
+      "kind": "ai",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3500,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"A welder asks how the shop handled that stainless rail last spring, and gets the owner's job notes and settings instead of guessing.\"",
+      "whenAndWhatItTakes": "Month 6. Needs written job notes and procedures the owner approves. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Job costing per fabrication order",
+      "kind": "software",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"See which fabrication jobs made money once steel, consumables, coating and welder hours are counted.\"",
+      "whenAndWhatItTakes": "Month 6. Needs hours and material per job for a few months."
+    },
+    {
+      "name": "Chatbot for metal and finish questions",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 120,
+      "monthlyMax": 300,
+      "pitchLine": "\"It answers 'do you weld aluminum' and 'how long for a powder-coated railing' from your real shop answers, then takes the drawing.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their service list, finishes and lead times. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Invoicing with deposit and balance reminders",
+      "kind": "automation",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Custom metal jobs get a deposit invoice at approval and a balance reminder the day the piece is ready.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their accounting system and deposit terms."
+    },
+    {
+      "name": "Residential project tracker for homeowners",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Homeowners waiting on a custom gate or railing see where it is: drawn, cut, welded, coated, install date.\"",
+      "whenAndWhatItTakes": "Month 5, with the shop job board. Needs residential jobs flagged on the board."
+    },
+    {
+      "name": "Review reply drafts for welding customers",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 69,
+      "monthlyMax": 179,
+      "pitchLine": "\"Every review about a fab job or a roadside weld gets a reply drafted in your voice, ready to approve between jobs.\"",
+      "whenAndWhatItTakes": "Month 2, with the review requests. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Bid notice watcher for miscellaneous metals",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"It reads local bid boards and plan rooms each week and flags railings, stairs and miscellaneous steel packages your shop can quote.\"",
+      "whenAndWhatItTakes": "Month 6. Needs the boards they use and the job sizes they want. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Bilingual helper and welder screening",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"Welder and helper applicants answer the shop's questions on processes and positions in their language, and you only call the ones who fit.\"",
+      "whenAndWhatItTakes": "Whenever they're hiring. Needs must-haves, pay range and shift. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Shop safety and inspection log",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Daily checks on the welding leads, gas cylinders, hoods and extinguishers logged on a phone, ready when a customer's safety team asks.\"",
+      "whenAndWhatItTakes": "Month 6. Needs their current checklist and who signs it."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the fab quote calculator for welding shops",
+      "whoPays": "Welding and fabrication shops, monthly",
+      "min": 59,
+      "max": 199,
+      "unit": "monthly",
+      "pitchLine": "\"I built a fabrication quote calculator for one shop. Every small welding shop prices steel on a calculator and a guess.\"",
+      "whyItWorks": "The first shop taught you the quoting math and paid for it. Every metro has dozens of shops with the same problem."
+    },
+    {
+      "route": "Shop finder licensed to a welding supply distributor",
+      "whoPays": "The welding supply distributor, annually",
+      "min": 5000,
+      "max": 20000,
+      "unit": "per-year",
+      "pitchLine": "\"Put a find-a-welder map on your site for every fab shop that buys gas and wire from your branches.\"",
+      "whyItWorks": "Gas and wire distributors already spend on shop loyalty. Sending shops jobs keeps them buying."
+    },
+    {
+      "route": "Fabricators' trade association member kit",
+      "whoPays": "The association",
+      "min": 1500,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer every member fab shop a drawing request page and a capability template as a membership benefit.\"",
+      "whyItWorks": "Associations need renewal reasons, and one deal reaches many welding shop owners."
+    },
+    {
+      "route": "Mobile welding network sites",
+      "whoPays": "The network operator, per territory",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "pitchLine": "\"Each mobile welding territory needs a breakdown request that routes to the nearest rig. I build the template once.\"",
+      "whyItWorks": "One contract, many territories, one template."
+    },
+    {
+      "route": "Vendor portal for a plant's maintenance department",
+      "whoPays": "The manufacturing plant",
+      "min": 8000,
+      "max": 30000,
+      "unit": "one-time",
+      "pitchLine": "\"Every outside fab shop and machine shop sends quotes and drawings into one portal tied to your work orders.\"",
+      "whyItWorks": "Plants juggle dozens of small metal vendors. The welding client's reorder workflow proves you understand it."
+    },
+    {
+      "route": "White-label fab shop template for agencies",
+      "whoPays": "The agency, per site",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency lands welding clients and starts from a blank page. License my fabrication template with the drawing request built in.\"",
+      "whyItWorks": "Agencies sell the client; you sell them the part you already perfected."
+    },
+    {
+      "route": "Same welding kit in the next county",
+      "whoPays": "New fab shop clients in a new area",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I build for one welding and fabrication shop per area. {City} is taken. The next county is open.\"",
+      "whyItWorks": "Non-competing geography lets you reuse the template, the pitch and the shop as proof."
+    },
+    {
+      "route": "Trailer manufacturer's repair network",
+      "whoPays": "The trailer manufacturer, annually",
+      "min": 3000,
+      "max": 12000,
+      "unit": "per-year",
+      "pitchLine": "\"Your trailer owners need frame and hitch repair near home. A map of vetted welding shops cuts your warranty calls.\"",
+      "whyItWorks": "Manufacturers want repairs handled close to the owner, and the welding client is the first vetted shop."
+    },
+    {
+      "route": "Agricultural co-op member services page",
+      "whoPays": "The co-op",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"Your members need mobile welding at harvest. A member services page with vetted repair shops keeps them in the co-op.\"",
+      "whyItWorks": "Co-ops sell member value, and rural welders are the service members miss most."
+    },
+    {
+      "route": "Railing and stair estimator sponsored by fab shops",
+      "whoPays": "Sponsoring fab shops, monthly",
+      "min": 99,
+      "max": 249,
+      "unit": "monthly",
+      "pitchLine": "\"Homeowners estimate a metal railing or stair from length and style, and the sponsoring welding shop gets the request.\"",
+      "whyItWorks": "It uses only the sponsor's own rates, so it never claims market data, and sends the sponsor ready buyers."
+    },
+    {
+      "route": "Rescue stalled fabrication software builds",
+      "whoPays": "The stranded fab shop",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"Someone started your quoting or shop-floor tool and disappeared. I've already built that fabrication workflow.\"",
+      "whyItWorks": "Stranded clients already decided to buy. They need someone who knows the shop workflow."
+    },
+    {
+      "route": "Trade school welding programme placement page",
+      "whoPays": "The trade school",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Your welding graduates need shops to hire them. A placement page listing local fab shops fills both sides.\"",
+      "whyItWorks": "Schools are measured on placements, and the welding client is a hiring shop with a story to tell."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Welding shop site build plus care plan, one contract",
+      "min": 1800,
+      "max": 3000,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The welding site and the care plan go on one contract, so adding a new process or a new gallery is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Review requests and Google profile upkeep",
+      "min": 120,
+      "max": 250,
+      "unit": "monthly",
+      "trigger": "A month live, and a same-day welding repair customer has left a thank-you.",
+      "line": "\"That customer whose trailer you fixed on a Saturday is the review the next breakdown search needs.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "Shop and rig photo day",
+      "min": 400,
+      "max": 1000,
+      "unit": "per-shoot",
+      "trigger": "The gallery is still running on placeholders and a big fabrication job is about to ship.",
+      "line": "\"That stair is leaving the shop next week. Let's shoot it, and the welding bays, before it goes.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Fabrication quote calculator",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "trigger": "Sixty days of drawing requests show they're quoting the same kinds of brackets, gates and frames.",
+      "line": "\"Half your requests are the same few metal jobs. A calculator drafts those quotes before you finish your coffee.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Job board for the shop floor",
+      "min": 2000,
+      "max": 5000,
+      "unit": "one-time",
+      "trigger": "They mention a customer asking where their part is, or a job that sat at the coater.",
+      "line": "\"Nobody should have to call you to find a part. The fab board shows every job's step.\""
+    },
+    {
+      "rung": 6,
+      "day": 150,
+      "offer": "Repeat parts portal for plant customers",
+      "min": 2500,
+      "max": 7000,
+      "unit": "one-time",
+      "trigger": "A plant reorders the same welded part for the second time.",
+      "line": "\"That plant just reordered the same guard. Give them a portal and they'll never shop the part around.\""
+    },
+    {
+      "rung": 7,
+      "day": 240,
+      "offer": "Designer and architect lookbook",
+      "min": 500,
+      "max": 1200,
+      "unit": "one-time",
+      "trigger": "The residential metalwork gallery passes a dozen finished projects.",
+      "line": "\"You've got enough railings and stairs for a book. Designers keep printed metalwork books on the desk.\""
+    }
+  ]
+}

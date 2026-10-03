@@ -1,0 +1,847 @@
+{
+  "schemaVersion": 1,
+  "category": "Security & alarm install",
+  "slug": "security-alarm-install",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "B2b family batch, quote archetype override. Licensed low-voltage trade: no camera, panel or monitoring brands, no crime or insurance outcome claims, no privacy-law advice, and the alarm licence stays a placeholder. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Camera coverage planner",
+      "contains": "Upload a floor plan or photos, mark entrances, parking, registers and blind spots, and say what each camera needs to see, for the site survey",
+      "why": "Buyers think in areas, not camera counts. A coverage planner turns 'I need cameras' into a scoped security quote."
+    },
+    {
+      "section": "Alarm monitoring plans explained",
+      "contains": "Self-monitoring versus professional monitoring, what happens when an alarm trips, cellular backup, contract terms as the company sets them, and cancellation",
+      "why": "Monitoring contracts are where trust is won or lost. Plain terms beat the door-knocker contracts customers have been burned by."
+    },
+    {
+      "section": "Taking over an existing system",
+      "contains": "Switching from another alarm or camera provider, which sensors, cameras and wiring can be reused, and what has to be replaced",
+      "why": "Many buyers already have equipment from a company they're leaving. A takeover page wins them without a full rip-out quote."
+    },
+    {
+      "section": "Access control for businesses",
+      "contains": "Door readers, key fobs and mobile credentials, visitor management, multi-door and multi-site admin, and integration with the alarm and camera system",
+      "why": "Access control is the business buyer's biggest security ticket. A page for it moves the installer from home alarms to commercial contracts."
+    },
+    {
+      "section": "Footage storage and privacy",
+      "contains": "Where camera footage is stored, who can view it, retention as the owner chooses, camera signage, and a note to confirm local rules with their own adviser",
+      "why": "Business owners and landlords ask where recordings go before they sign. Answering plainly removes a quiet objection."
+    },
+    {
+      "section": "Alarm and camera service plans",
+      "contains": "Annual system checks, battery and sensor replacement, camera cleaning and firmware updates, and the response window for service calls",
+      "why": "Owners worry that the security installer disappears after install. A visible service plan sells the recurring revenue the trade depends on."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C13",
+      "siteType": "local-conversion",
+      "name": "Armed and Watching",
+      "heroLayout": "split-photo",
+      "mood": [
+        "alert",
+        "steady",
+        "direct"
+      ],
+      "bestFor": "Owner-operator installers selling cameras and alarms to homes and small shops",
+      "pairsWithTier": "starter",
+      "headlineSample": "Security cameras and alarm systems in {City}",
+      "whyItFits": "Obsidian Amber was built for monitoring and alerting. Its dark base and amber accent feel like a control panel without looking like a scare tactic."
+    },
+    {
+      "id": "b",
+      "themeId": "C19",
+      "siteType": "b2b-capability",
+      "name": "Site Secure",
+      "heroLayout": "card-stack",
+      "mood": [
+        "exact",
+        "technical",
+        "organised"
+      ],
+      "bestFor": "Security integrators bidding cameras, alarms and access control for businesses and property managers",
+      "pairsWithTier": "standard",
+      "headlineSample": "Cameras, alarms and access control for {City} businesses",
+      "whyItFits": "The family combo. Mono labels and a gunmetal page suit door counts, camera specs and monitoring terms in a capability table."
+    },
+    {
+      "id": "c",
+      "themeId": "C6",
+      "siteType": "premium-brand",
+      "name": "Integrated Systems",
+      "heroLayout": "type-led",
+      "mood": [
+        "calm",
+        "precise",
+        "corporate"
+      ],
+      "bestFor": "Established firms selling integrated security to multi-site owners, schools and offices",
+      "pairsWithTier": "premium",
+      "headlineSample": "Integrated security systems for {City} buildings and campuses",
+      "whyItFits": "Cobalt Wire's light, neutral sans reads as corporate and procurement-ready, which is how multi-site owners judge a security integrator."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your security company's Google listing has no website, so a shop owner who just had a break-in can't see what alarm or camera systems you put in before they call.",
+      "hook": "Open their Maps listing and confirm there is no Website button. Screenshot it for when they reply.",
+      "linkLine": "What that shop owner could see instead: {demo-link}"
+    },
+    {
+      "angle": "Facebook-only link",
+      "line": "Your listing goes to a Facebook page with camera install shots and promo posts. A business owner comparing security installers wants monitoring terms and a quote form, not a feed.",
+      "hook": "Tap the Website link and confirm it lands on Facebook. Note the newest install post.",
+      "linkLine": "A security site built for the buyer comparing installers: {demo-link}"
+    },
+    {
+      "angle": "Dead free host",
+      "line": "The site on your listing shows a free-host banner and a camera package from years ago. In security, an outdated site makes people wonder if the monitoring is outdated too.",
+      "hook": "Open the site and note one stale detail: old products, an old year or a dead form.",
+      "linkLine": "Same security company, current and trustworthy: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "On my phone your alarm site's quote button sits under a pop-up that won't close. People look for security help on their phone, often right after something happened.",
+      "hook": "Only if they have a site. Load it on your phone and note what breaks. Screenshot it for when they reply.",
+      "linkLine": "Your security site on a phone: {demo-link}"
+    },
+    {
+      "angle": "No site survey request",
+      "line": "There's no way to request a security site survey except calling. A form that takes a floor plan, entry count and what the cameras need to see would bring in scoped jobs.",
+      "hook": "Check their site and listing for a survey or quote form with upload. If none, the angle holds.",
+      "linkLine": "A site survey request with floor plan upload: {demo-link}"
+    },
+    {
+      "angle": "Clean installs, nowhere to live",
+      "line": "Your posts of tidy camera runs and labelled rack panels show the craft that separates a good security installer from a cheap one, and they disappear in a week.",
+      "hook": "Find one clean wiring, rack or camera mount post. Name the job type if they reply.",
+      "linkLine": "Your install work on a page that stays: {demo-link}"
+    },
+    {
+      "angle": "Reviews about response",
+      "line": "A review saying your tech came the same day when an alarm panel kept false-alarming is the line a frustrated customer of another company needs to see.",
+      "hook": "Read their reviews and copy one phrase about service or response. Quote it if they reply.",
+      "linkLine": "Your service reviews beside the takeover page: {demo-link}"
+    },
+    {
+      "angle": "Holiday and season break-ins",
+      "line": "Before the holidays, shop owners and homeowners leaving town start thinking about cameras and alarms. The security installers they find that month get the jobs.",
+      "hook": "Use in autumn before the holidays, or before a local busy travel season. Name it.",
+      "linkLine": "A security page ready for the pre-holiday rush: {demo-link}"
+    },
+    {
+      "angle": "Calls after a break-in",
+      "line": "Break-ins get discovered at six in the morning, and the owner calls a security company before opening. If your line goes to voicemail, the camera job goes elsewhere.",
+      "hook": "Call their number early or late and note whether anything takes the request.",
+      "linkLine": "A security page that takes the early morning call: {demo-link}"
+    },
+    {
+      "angle": "Hiring a low-voltage tech",
+      "line": "Saw you're hiring a low-voltage technician. Good techs check an alarm company online before they apply, and so do the businesses you bid on.",
+      "hook": "Only if they posted a hiring note or job listing. Note the date.",
+      "linkLine": "A security company site with a careers page: {demo-link}"
+    },
+    {
+      "angle": "Service area",
+      "line": "Your vans install cameras across the county, but nothing online lists the towns you cover. A business owner two towns away assumes you won't come out for a security survey.",
+      "hook": "Look for posts or reviews from other towns. Name the furthest one.",
+      "linkLine": "Security coverage pages by town: {demo-link}"
+    },
+    {
+      "angle": "Monitoring and payment plans",
+      "line": "People hesitate on a security system because of upfront cost and long monitoring contracts. A page that explains your payment options and monitoring terms plainly answers it before the call.",
+      "hook": "Only if they offer monitoring or payment plans. Check posts and listing first. Never state their terms for them.",
+      "linkLine": "Alarm monitoring and payment options, explained: {demo-link}"
+    },
+    {
+      "angle": "Licensed and insured",
+      "line": "Business owners ask whether a security installer is licensed for alarm work and insured before they hand over door codes. A page that shows what you hold answers it.",
+      "hook": "Look for licence or insurance mentions on their listing or vans. Never claim a licence or number you didn't see.",
+      "linkLine": "Licensing and insurance on one security page: {demo-link}"
+    },
+    {
+      "angle": "Referrals from electricians",
+      "line": "It sounds like a lot of your security work comes through electricians and builders. When they change their low-voltage sub, the work stops unless owners can find you directly.",
+      "hook": "Look for posts or reviews mentioning builders or electricians. Quote one.",
+      "linkLine": "Where a direct security buyer would find you: {demo-link}"
+    },
+    {
+      "angle": "A specific recent install",
+      "line": "That {specific recent job} you posted is clean security work. An install like that belongs on a page a business owner can look at before booking a survey.",
+      "hook": "Pick their newest install post and name it: the property type and whether it was cameras, alarm or access control.",
+      "linkLine": "That install on a security project page: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner} — that {specific recent job} you posted is clean security work.\n\nI looked for a site for {Business Name} and couldn't find anywhere an owner could request a site survey, read your monitoring terms or see your camera installs. I put together a sample security site with a coverage planner and a monitoring plans page, with marked placeholders where your photos would go.\n\nWould it help if I sent it over?",
+    "dm2": "{Owner} — following up in case my last message got buried between installs. Here's the sample security site for {Business Name}: {demo-link}\n\nIt has a site survey request with floor plan upload, a plain-language monitoring page, and a takeover page for people leaving another alarm company. If it's not useful, tell me and I'll leave you alone.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for security and alarm companies here in {City}. I sent you a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"Easy to miss when you're pulling cable. Short version: I built a sample site for {Business Name} with a camera coverage planner, a monitoring plans page and an access control page, with marked placeholders where your photos would go. Can I email you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range}, then {Care Range} a month for hosting and changes. For a security company your size I'd quote about {Build Price}, about one small business camera system.\"\n\"Can I walk you through it for ten minutes this week, between surveys?\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. We start the day it clears.\"",
+    "objections": [
+      {
+        "objection": "We get our work from builders and electricians.",
+        "handler": "\"Keep them. The site is for the business owner who searches after a break-in and the customer leaving a national alarm company, neither of whom knows your builder.\""
+      },
+      {
+        "objection": "Customers buy cheap cameras online and install them themselves.",
+        "handler": "\"Some do, and they call when the cameras miss the license plate or the app stops working. A takeover and service page catches exactly those people.\""
+      },
+      {
+        "objection": "I don't want to post prices for security systems.",
+        "handler": "\"You don't have to. The page explains what drives the price, like door count, camera count and monitoring, and the survey request does the rest.\""
+      },
+      {
+        "objection": "The big national alarm companies spend more than me on ads.",
+        "handler": "\"They do. You win on being local, licensed and reachable. The site says that clearly, with monitoring terms people can actually read.\""
+      },
+      {
+        "objection": "I'm too busy installing to deal with a website.",
+        "handler": "\"That's why it's built already. I need about twenty minutes and a few of your install photos, and I write the security pages from what you tell me.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}, because it's a survey request, a monitoring page and an access control page. About one small camera system.\""
+      }
+    ],
+    "email": {
+      "subject": "Security survey page for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for security, camera and alarm companies around {City}. I couldn't find a way for a business owner to request a site survey from {Business Name}, read your monitoring terms or see your camera installs.\n\nI built a sample first rather than ask for your time: a site survey request with floor plan upload, a camera coverage planner, a plain-language monitoring page, an access control page and a takeover page for people switching providers, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and changes. If not, no problem, it comes down at the end of the month.\n\nWorth ten minutes on the phone this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build websites for security and alarm companies in {City}, and I made a sample site for {Business Name} with a site survey request. I'll email you the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner} — I'm taking the {Business Name} security demo down on Friday.\n\nWant me to keep it up? One word is fine either way.",
+    "nurture": "Hi {Owner} — shop owners and homeowners around {City} start asking about cameras and alarms before the holidays. Thought of you.\n\nThe security site is still here, same price. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to one small business camera system, not to a single doorbell camera.",
+      "The survey request and the monitoring page are the core. Price everything else as additions.",
+      "Price residential and commercial sections separately; access control and multi-site work sell to a different buyer.",
+      "Never write crime, response-time or insurance-discount claims; describe the system and let the owner's insurer speak for itself.",
+      "Charge for the takeover page on its own; switching customers are the fastest closes in this trade.",
+      "Keep monthly add-ons well below one monitoring contract's annual value."
+    ],
+    "lineItems": [
+      {
+        "item": "Site survey request with floor plan upload",
+        "min": 350,
+        "max": 800,
+        "unit": "one-time",
+        "description": "Max with floor plan and photo upload, entry and camera area checkboxes and a survey calendar.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Camera coverage planner",
+        "min": 400,
+        "max": 1000,
+        "unit": "one-time",
+        "description": "Max with a mark-up tool on the uploaded plan, coverage goals per area and a summary sent with the request.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Monitoring plans page",
+        "min": 200,
+        "max": 500,
+        "unit": "one-time",
+        "description": "Max with a side-by-side of self and professional monitoring, alarm response steps and terms the owner approves.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Access control page for businesses",
+        "min": 250,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max with door reader types, credential options, multi-site admin and a business inquiry form.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "System takeover page",
+        "min": 200,
+        "max": 500,
+        "unit": "one-time",
+        "description": "Max with a reuse checklist, photo upload of the existing panel and a takeover request.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Industry page (each)",
+        "min": 200,
+        "max": 500,
+        "unit": "per-page",
+        "description": "Max when the page covers a vertical such as retail, offices, warehouses or churches with sample layouts.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Install and panel photo session",
+      "min": 300,
+      "max": 800,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"One session shooting clean camera mounts, labelled racks and keypad installs gives the security site proof without showing anyone's floor plan.\"",
+      "when": "Month 2, at jobs where the owner agrees and nothing sensitive is visible."
+    },
+    {
+      "name": "Google profile upkeep for security installs",
+      "min": 120,
+      "max": 250,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Weekly posts of camera, alarm and access control installs keep the profile current when someone searches right after a break-in.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Business owner outreach for access control",
+      "min": 300,
+      "max": 800,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A short monthly note to offices, clinics and shops nearby about key fob and door reader systems, pointing to the access control page.\"",
+      "when": "Month 3, once the access control page is live."
+    },
+    {
+      "name": "Van lettering and yard sign artwork",
+      "min": 200,
+      "max": 600,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"The yard sign and window decal on every alarm customer's property is a small billboard. Fresh artwork with the website keeps it working.\"",
+      "when": "Right after launch, at the next sign order."
+    },
+    {
+      "name": "Pre-holiday security campaign",
+      "min": 300,
+      "max": 700,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Before the holidays, a campaign to homes and shops near past installs offering a camera and alarm check-up.\"",
+      "when": "Early autumn each year."
+    },
+    {
+      "name": "Review requests after install",
+      "min": 79,
+      "max": 179,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A week after the system goes live, the customer gets a short review request while the security app is still new and impressive.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Takeover offer mailer",
+      "min": 250,
+      "max": 600,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A mailer to neighbourhoods and business parks offering to take over existing alarm systems without a full replacement.\"",
+      "when": "Month 4, once the takeover page is live."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Electricians who sub low-voltage work to them",
+        "whoPays": "The electrician, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The electrician who brings you in for cameras and alarms on new builds needs a commercial page as much as you did.\"",
+        "whyItWorks": "Electricians and security installers share every new build."
+      },
+      {
+        "route": "Locksmiths and door hardware companies",
+        "whoPays": "The locksmith, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The locksmith who installs the door hardware for your access control jobs needs a site that takes lockout and rekey calls.\"",
+        "whyItWorks": "Access control jobs need both trades, so they refer each other constantly."
+      },
+      {
+        "route": "Small business owners they protect",
+        "whoPays": "The business owner",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The shop owner whose cameras you installed has a website from years ago. You can introduce me while you're on site.\"",
+        "whyItWorks": "Owners trust the person who just secured their business."
+      },
+      {
+        "route": "Property managers with multiple buildings",
+        "whoPays": "The property management company",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"Property managers ask you for new fobs and door schedules every week. Their tenant request page is usually a dead email address, and you can introduce me to fix it.\"",
+        "whyItWorks": "Managers trust the vendor who controls who gets into their buildings."
+      },
+      {
+        "route": "Home builders and remodelers",
+        "whoPays": "The builder",
+        "min": 2000,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"The builder who has you pre-wire security in every new home has a portfolio site that doesn't show any of it.\"",
+        "whyItWorks": "Builders trust their low-voltage partner and need better portfolios."
+      },
+      {
+        "route": "IT and network support providers",
+        "whoPays": "The IT provider, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The IT company that set up the network your security cameras run on serves the same businesses and needs a clearer services page.\"",
+        "whyItWorks": "Camera and network work overlap, and both serve the same small business owners."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Service call intake for the locksmith",
+        "whoPays": "The locksmith, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"Callers describe the lockout or the door hardware problem, and the locksmith gets a drafted job with address and urgency before calling back.\"",
+        "whyItWorks": "Built around the access control jobs the security client shares with them."
+      },
+      {
+        "route": "Visitor sign-in assistant for business clients",
+        "whoPays": "The business owner, monthly",
+        "min": 75,
+        "max": 200,
+        "unit": "monthly",
+        "pitchLine": "\"Visitors sign in on a tablet, the assistant tells the right employee, and the log sits with the access control records.\"",
+        "whyItWorks": "It extends the security client's access control system to the front desk."
+      },
+      {
+        "route": "Tenant access request assistant for property managers",
+        "whoPays": "The property manager, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Tenants request a new fob or after-hours door access by text, and the assistant logs it for the manager to approve.\"",
+        "whyItWorks": "Managers field these requests daily, and the security client runs the system."
+      },
+      {
+        "route": "Low-voltage scope summariser for the builder",
+        "whoPays": "The builder, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"The builder uploads plans, and the assistant drafts the security, data and AV pre-wire scope for each home for the low-voltage sub.\"",
+        "whyItWorks": "Builders save time and the security client gets clean scopes."
+      },
+      {
+        "route": "Ticket triage for the IT provider",
+        "whoPays": "The IT provider, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Business clients describe a problem, and the assistant sorts it into network, computer or camera system tickets before a tech calls.\"",
+        "whyItWorks": "Camera issues go to the security partner, the rest stays with IT."
+      },
+      {
+        "route": "Shop owner incident report helper",
+        "whoPays": "The business owner, per year",
+        "min": 300,
+        "max": 900,
+        "unit": "per-year",
+        "pitchLine": "\"After an incident, the owner describes what happened and the assistant drafts a plain incident summary with times, to attach with their exported security footage.\"",
+        "whyItWorks": "Owners struggle with paperwork after a break-in, and the security client already supports them."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Missed-call text-back after break-ins",
+      "kind": "automation",
+      "oneTimeMin": 0,
+      "oneTimeMax": 300,
+      "monthlyMin": 79,
+      "monthlyMax": 179,
+      "pitchLine": "\"Someone calls about cameras while you're on a ladder, gets a text asking for the address and what happened, and you call back with a security survey slot.\"",
+      "whenAndWhatItTakes": "Day 30. Needs the business number forwarded and wording they approve."
+    },
+    {
+      "name": "Camera and alarm quote builder",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Pick cameras, sensors, keypads and labour from your own price list, and the security quote with monitoring options builds itself.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their equipment price list, labour rates and monitoring plans."
+    },
+    {
+      "name": "Survey notes to proposal writer",
+      "kind": "ai",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 120,
+      "monthlyMax": 300,
+      "pitchLine": "\"Talk through the site survey walking out to the van, and a drafted security proposal with camera locations and scope is ready to review.\"",
+      "whenAndWhatItTakes": "Month 3, after the quote builder. Needs past proposals. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Monitoring contract e-sign and renewal reminders",
+      "kind": "automation",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1200,
+      "monthlyMin": 50,
+      "monthlyMax": 120,
+      "pitchLine": "\"Alarm monitoring agreements get signed on a phone, and the customer gets a friendly note before the term renews.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their agreement wording, reviewed by their own adviser, and term dates."
+    },
+    {
+      "name": "Customer system records",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Every customer's panel, zones, cameras, recorder location and install date in one record, so any tech can service the security system.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their install records and a tech to fill gaps."
+    },
+    {
+      "name": "Coverage sketch from floor plan",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"Upload the customer's floor plan and goals, and it drafts suggested camera positions for the security tech to check on site.\"",
+      "whenAndWhatItTakes": "Month 5. Needs past plans with the final camera layouts and the tech's review of every draft. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Service ticket portal",
+      "kind": "software",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"Customers report an offline camera or a beeping alarm keypad, pick a time and see when the tech is coming.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the customer records and tech schedule."
+    },
+    {
+      "name": "Camera offline alerts to the office",
+      "kind": "automation",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"When a customer's recorder reports a camera offline, the office gets an alert and the customer gets a note that the security company is on it.\"",
+      "whenAndWhatItTakes": "Month 5. Needs recorders that can send alerts and the customer's permission."
+    },
+    {
+      "name": "After-hours call answering",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 200,
+      "monthlyMax": 500,
+      "pitchLine": "\"It answers the alarm company line at night, separates service problems from new security inquiries, and books the right one.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their call rules and on-call process. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Access control admin training hub",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Short how-to pages and clips for each business client's door system: add a fob, remove an employee, pull a door report.\"",
+      "whenAndWhatItTakes": "Month 5, once access control jobs are steady. Needs screen recordings from their systems."
+    },
+    {
+      "name": "Equipment and job costing tracker",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"See which security jobs made money once cameras, cable, labour and return trips are counted.\"",
+      "whenAndWhatItTakes": "Month 6. Needs equipment costs and hours per job."
+    },
+    {
+      "name": "Chatbot for camera and monitoring questions",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"It answers 'can I see cameras on my phone' and 'what happens if the alarm goes off' from the company's approved security answers, then books a survey.\"",
+      "whenAndWhatItTakes": "Month 4. Needs approved answers only. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Service plan renewal and battery reminders",
+      "kind": "automation",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 40,
+      "monthlyMax": 100,
+      "pitchLine": "\"Customers get a reminder when sensor batteries are due and when their alarm service plan renews, with a booking link.\"",
+      "whenAndWhatItTakes": "Month 4, with the customer records. Needs install and plan dates."
+    },
+    {
+      "name": "Takeover equipment checker",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"A prospect uploads a photo of their old alarm panel or recorder, and it drafts what can likely be reused for the security tech to confirm.\"",
+      "whenAndWhatItTakes": "Month 5. Needs past takeover jobs and the tech's notes. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Multi-site security dashboard",
+      "kind": "software",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"A business with several locations sees each site's alarm status, camera health and open service tickets on one screen.\"",
+      "whenAndWhatItTakes": "Month 7, once a multi-site client signs. Needs the customer records and ticket portal."
+    },
+    {
+      "name": "Review reply drafts for security customers",
+      "kind": "ai",
+      "oneTimeMin": 250,
+      "oneTimeMax": 600,
+      "monthlyMin": 59,
+      "monthlyMax": 149,
+      "pitchLine": "\"When a customer posts about their new cameras or a fast alarm repair, a reply that never mentions their address is ready to approve.\"",
+      "whenAndWhatItTakes": "Month 2, with review requests. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Bid notice watcher for security contracts",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 120,
+      "monthlyMax": 300,
+      "pitchLine": "\"Schools, towns and housing authorities post camera and access control bids. It flags the ones in the installer's region with walk-through dates.\"",
+      "whenAndWhatItTakes": "Month 6. Needs the portals they're registered on. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Technician applicant screener",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 59,
+      "monthlyMax": 149,
+      "pitchLine": "\"Low-voltage applicants answer questions on cable runs, ladders, licensing progress and background checks, and the owner calls the fits.\"",
+      "whenAndWhatItTakes": "Whenever they're hiring. Needs must-haves and pay range. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Tech schedule and route board",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Surveys, installs and service calls on one board per tech, with security system notes attached to each stop.\"",
+      "whenAndWhatItTakes": "Month 5. Needs tech list and job durations."
+    },
+    {
+      "name": "Install checklist and handover pack",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 40,
+      "monthlyMax": 100,
+      "pitchLine": "\"Techs tick through the install checklist, and the customer gets a handover pack with app logins, zone list and how to arm the alarm.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their install steps and handover documents."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Survey-and-quote kit for independent installers",
+      "whoPays": "Independent security installers, monthly",
+      "min": 79,
+      "max": 249,
+      "unit": "monthly",
+      "pitchLine": "\"Independent camera and alarm installers quote from scribbled notes. The floor plan survey and quote builder I made for one installer fits them all.\"",
+      "whyItWorks": "The first installer paid for it and taught you the survey workflow."
+    },
+    {
+      "route": "Distributor's installer locator",
+      "whoPays": "The security equipment distributor, annually",
+      "min": 5000,
+      "max": 20000,
+      "unit": "per-year",
+      "pitchLine": "\"Owners on the distributor's site find a licensed security installer nearby who buys from that distributor.\"",
+      "whyItWorks": "Distributors want installer loyalty and busy customers."
+    },
+    {
+      "route": "State alarm association member package",
+      "whoPays": "The association",
+      "min": 1500,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Members get a survey request, monitoring page and takeover page as part of membership, built on the alarm template.\"",
+      "whyItWorks": "Associations need tangible benefits; one deal reaches many alarm dealers."
+    },
+    {
+      "route": "Monitoring centre dealer programme",
+      "whoPays": "The monitoring centre, per dealer",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "pitchLine": "\"Your dealers sell monitoring and need sites that explain it clearly. I build a security dealer site that sends accounts to your centre.\"",
+      "whyItWorks": "Wholesale monitoring centres grow when their dealers grow."
+    },
+    {
+      "route": "School district or campus access control portal",
+      "whoPays": "The district or campus",
+      "min": 8000,
+      "max": 30000,
+      "unit": "one-time",
+      "pitchLine": "\"Staff badge requests, visitor logs and door schedules in one portal across every building, tied to the existing access control system.\"",
+      "whyItWorks": "Campuses buy security administration tools; the client's install gives you the context."
+    },
+    {
+      "route": "Agency licence for the security template",
+      "whoPays": "The agency, per site",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "pitchLine": "\"Agencies with an alarm client can skip writing monitoring and takeover pages. Mine are ready to brand.\"",
+      "whyItWorks": "Agencies sell the client; you sell the security content and forms."
+    },
+    {
+      "route": "One alarm dealer per territory",
+      "whoPays": "Security installers in other territories",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"The security site is live for an installer near {City}. I'll take one alarm company per territory after that.\"",
+      "whyItWorks": "Exclusivity is the pitch, and installers rarely work outside their area."
+    },
+    {
+      "route": "Retail chains' loss prevention teams",
+      "whoPays": "The retail chain, annually",
+      "min": 3000,
+      "max": 12000,
+      "unit": "per-year",
+      "pitchLine": "\"Loss prevention managers see every store's camera health, alarm events and service tickets in one view, from the security installer's data.\"",
+      "whyItWorks": "Chains want one view across stores, and the client's multi-site dashboard proves it."
+    },
+    {
+      "route": "Self-storage operators",
+      "whoPays": "The storage operator",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Gate codes, unit alarms and cameras across facilities, managed from one admin page the security installer maintains.\"",
+      "whyItWorks": "Storage operators sell security as the product and buy tools that show it."
+    },
+    {
+      "route": "Security cost estimator, sponsored",
+      "whoPays": "Sponsoring installers, monthly",
+      "min": 79,
+      "max": 249,
+      "unit": "monthly",
+      "pitchLine": "\"Owners estimate a camera or alarm system from the sponsoring installer's own prices and send the survey request directly.\"",
+      "whyItWorks": "It never claims market prices, only the sponsor's own."
+    },
+    {
+      "route": "Rescue of unfinished alarm company apps",
+      "whoPays": "The alarm company with a stalled project",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"A service portal or quote tool left half-built is a short job. The camera, panel and monitoring logic already runs for another security company.\"",
+      "whyItWorks": "Budget already committed; they need someone who knows alarm workflows."
+    },
+    {
+      "route": "Houses of worship security programmes",
+      "whoPays": "The church or faith organisation",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Faith communities want cameras, door control and a volunteer safety team page. I build it with the local security installer behind it.\"",
+      "whyItWorks": "Congregations ask local installers about security, and the client is already the one they trust."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Security site build plus care plan, one contract",
+      "min": 1800,
+      "max": 3000,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The security site and the care plan go on one contract, so new camera or alarm pages are a message to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Review requests and Google profile upkeep",
+      "min": 120,
+      "max": 250,
+      "unit": "monthly",
+      "trigger": "A customer thanks them for a fast install or alarm repair.",
+      "line": "\"That thank-you after the alarm repair is the review the next security search needs to see.\""
+    },
+    {
+      "rung": 3,
+      "day": 60,
+      "offer": "Camera and alarm quote builder",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "trigger": "Survey requests pile up and quotes go out days late.",
+      "line": "\"Your surveys are waiting on quotes. Build them from your price list the same afternoon.\""
+    },
+    {
+      "rung": 4,
+      "day": 90,
+      "offer": "Monitoring contract e-sign and renewal reminders",
+      "min": 500,
+      "max": 1200,
+      "unit": "one-time",
+      "trigger": "A monitoring customer lapses or a paper agreement goes missing.",
+      "line": "\"Monitoring is the recurring money. Sign it on a phone and remind before renewal so no alarm account slips.\""
+    },
+    {
+      "rung": 5,
+      "day": 150,
+      "offer": "Business owner outreach for access control",
+      "min": 300,
+      "max": 800,
+      "unit": "monthly",
+      "trigger": "The first access control job is finished and photographed.",
+      "line": "\"You've done one door system. Let's show every office nearby what key fob access looks like.\""
+    },
+    {
+      "rung": 6,
+      "day": 240,
+      "offer": "Service ticket portal",
+      "min": 2000,
+      "max": 5000,
+      "unit": "one-time",
+      "trigger": "Service calls start crowding out new installs on the schedule.",
+      "line": "\"Let customers log their own security service tickets and pick a time, and the phone calms down.\""
+    },
+    {
+      "rung": 7,
+      "day": 365,
+      "offer": "Multi-site security dashboard",
+      "min": 3000,
+      "max": 8000,
+      "unit": "one-time",
+      "trigger": "A business with several locations signs on.",
+      "line": "\"Give that multi-site client one security screen for every location and the account stays yours.\""
+    }
+  ]
+}

@@ -1,0 +1,838 @@
+{
+  "schemaVersion": 1,
+  "category": "Fire safety & extinguisher service",
+  "slug": "fire-safety-extinguisher-service",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "B2b family batch, rfq archetype. Licensed, compliance-driven trade: copy never promises a passed inspection, never interprets the fire code and never names a code section or licence number. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Extinguisher inspection due-date reminders",
+      "contains": "Look up when the tag says the next annual inspection is due, sign up for reminders, and a plain note on the periodic maintenance and hydrostatic testing the client performs",
+      "why": "Most small businesses only think about extinguishers when the tag runs out or an inspector visits. A reminder signup turns that moment into a standing account."
+    },
+    {
+      "section": "Fire marshal deficiency clearing",
+      "contains": "Upload the deficiency notice from the fire marshal or insurer, see which items the client can correct, the visit window, and the paperwork returned after service",
+      "why": "A deficiency notice comes with a deadline. Owners holding one choose the fire protection company that says how fast it can clear the list."
+    },
+    {
+      "section": "Kitchen hood suppression service",
+      "contains": "Restaurant hood suppression inspections, fusible link changes, nozzle checks, K-class extinguishers, and coordination with the hood cleaning company",
+      "why": "Restaurant owners buy hood suppression and extinguisher service together. A dedicated page wins the account that pays for both."
+    },
+    {
+      "section": "Extinguisher types and placement",
+      "contains": "Which fire extinguisher class suits offices, shops, kitchens, server rooms and vehicles, mounting and signage, cabinets, and new-unit sales",
+      "why": "New tenants and new businesses don't know what to buy. A plain guide brings them to the service company before the big-box store."
+    },
+    {
+      "section": "Emergency and exit light testing",
+      "contains": "Monthly and annual emergency light and exit sign tests, battery and lamp replacement, and written logs left for the inspector",
+      "why": "Exit lights fail the same inspection as extinguishers. Bundling them gives the fire safety visit more value per stop."
+    },
+    {
+      "section": "Staff fire extinguisher training",
+      "contains": "Hands-on extinguisher training sessions for employees, what a session covers, group sizes, and the attendance record the client provides",
+      "why": "Insurers and safety managers ask for employee training. Offering it on the page opens a second budget at the same customer."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C10",
+      "siteType": "local-conversion",
+      "name": "Tag Date",
+      "heroLayout": "split-photo",
+      "mood": [
+        "clear",
+        "dependable",
+        "plain"
+      ],
+      "bestFor": "Owner-operated extinguisher service routes covering shops, offices and restaurants",
+      "pairsWithTier": "starter",
+      "headlineSample": "Fire extinguisher inspection and service in {City}",
+      "whyItFits": "Steel Invoice reads like an inspection tag and a service ticket: neutral, legible and built around one request button."
+    },
+    {
+      "id": "b",
+      "themeId": "C19",
+      "siteType": "b2b-capability",
+      "name": "Compliance Desk",
+      "heroLayout": "card-stack",
+      "mood": [
+        "exact",
+        "organised",
+        "serious"
+      ],
+      "bestFor": "Fire protection companies bidding multi-site accounts, property managers and facilities teams",
+      "pairsWithTier": "standard",
+      "headlineSample": "Fire protection service for {City} businesses and buildings",
+      "whyItFits": "The family combo. Gunmetal with a signal-orange accent fits fire safety, and the mono labels keep inspection schedules and service types tabular."
+    },
+    {
+      "id": "c",
+      "themeId": "C5",
+      "siteType": "editorial-trust",
+      "name": "Service Record",
+      "heroLayout": "type-led",
+      "mood": [
+        "documented",
+        "careful",
+        "established"
+      ],
+      "bestFor": "Established firms selling inspection records and multi-location compliance tracking",
+      "pairsWithTier": "premium",
+      "headlineSample": "Fire safety inspections in {City}, documented every visit",
+      "whyItFits": "Counting House was made for audit trails, which is exactly what a fire inspection record is for a safety manager or insurer."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your Google listing for extinguisher service has no website, so a new restaurant owner told to get their fire extinguishers tagged has no way to check you before calling.",
+      "hook": "Open their Maps listing and confirm there is no Website button. Screenshot it for when they reply.",
+      "linkLine": "What that restaurant owner could open instead: {demo-link}"
+    },
+    {
+      "angle": "Facebook-only link",
+      "line": "Your listing links to a Facebook page with fire safety tips and truck photos. A facilities manager needs to see inspection services, coverage and how to book, not a feed.",
+      "hook": "Tap the Website link and confirm it lands on Facebook. Note the most recent post date.",
+      "linkLine": "A fire protection site built for the facilities buyer: {demo-link}"
+    },
+    {
+      "angle": "Dead free host",
+      "line": "The site on your listing is a free page that lists extinguisher service and nothing else. Buyers comparing fire protection vendors want inspections, hood systems and exit lights in one place.",
+      "hook": "Open the site and note what's missing or stale: services, a form, an old year.",
+      "linkLine": "Same fire safety company, complete and current: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "On my phone your fire safety site's service list runs off the screen. Store managers usually look up an extinguisher company right after an inspector leaves.",
+      "hook": "Only if they have a site. Load it on your phone and note what breaks. Screenshot it for when they reply.",
+      "linkLine": "The same extinguisher service site on a phone: {demo-link}"
+    },
+    {
+      "angle": "No inspection request",
+      "line": "There's no way to book an annual extinguisher inspection except calling. A request form with the address, unit count and tag date would fill your route without phone tag.",
+      "hook": "Check their site and listing for a booking or request form. If there is none, the angle holds.",
+      "linkLine": "An inspection request that asks for unit count and tag date: {demo-link}"
+    },
+    {
+      "angle": "Hood work, nowhere to live",
+      "line": "Your posts of restaurant hood suppression service show work most extinguisher companies can't do, and a restaurant owner searching for it will never scroll that far.",
+      "hook": "Find one hood system or kitchen post. If there's none, use another specialty service they show.",
+      "linkLine": "Your hood suppression service on its own page: {demo-link}"
+    },
+    {
+      "angle": "Reviews from owners",
+      "line": "A review from a shop owner saying your tech cleared their fire marshal list the same week is what the next owner with a deficiency notice needs to read.",
+      "hook": "Read their reviews and copy one phrase about speed or an inspection. Quote it if they reply.",
+      "linkLine": "Your reviews next to the deficiency request: {demo-link}"
+    },
+    {
+      "angle": "Insurance renewal season",
+      "line": "When business insurance renews, underwriters ask for current extinguisher tags and inspection records. Owners search for fire safety service that week.",
+      "hook": "Use any time; sharper in the months when local commercial policies commonly renew. Name the month if you know it.",
+      "linkLine": "Ready for the insurance renewal rush: {demo-link}"
+    },
+    {
+      "angle": "After a kitchen fire",
+      "line": "When a cook discharges an extinguisher on a grease fire at nine at night, the owner needs it recharged before the next service. If your fire safety line rings out, they call the next one.",
+      "hook": "Call their number in the evening and note whether it rings out or offers an after-hours option.",
+      "linkLine": "A fire safety page that takes the recharge call after hours: {demo-link}"
+    },
+    {
+      "angle": "Hiring a service tech",
+      "line": "Saw you're hiring an extinguisher technician. Good techs check whether a fire protection company looks established before they apply.",
+      "hook": "Only if they posted a hiring note or listing. Note the date.",
+      "linkLine": "A fire protection site with a careers page: {demo-link}"
+    },
+    {
+      "angle": "Route coverage",
+      "line": "Your service trucks cover towns well beyond {City}, but nothing online lists them. A business two towns over assumes the nearest fire extinguisher company is someone else.",
+      "hook": "Look for service mentions or reviews from nearby towns. Name the furthest one.",
+      "linkLine": "Coverage pages for your extinguisher routes: {demo-link}"
+    },
+    {
+      "angle": "Multi-site annual billing",
+      "line": "Chains and property managers want one annual fire safety contract for every location, billed together. A page that offers it gets you past the single-store price comparison.",
+      "hook": "Only if they serve multi-location customers. Look for chains or managers in reviews.",
+      "linkLine": "Multi-site fire safety accounts, explained: {demo-link}"
+    },
+    {
+      "angle": "Licence and insurance trust",
+      "line": "Facilities buyers ask a fire protection vendor for their state licence and insurance before the first inspection. A page that shows the ones you hold answers it early.",
+      "hook": "Look for licence or insurance mentions on their listing or truck. Never claim a licence or number you didn't see.",
+      "linkLine": "Licensing and insurance on one fire safety page: {demo-link}"
+    },
+    {
+      "angle": "Route built on handshakes",
+      "line": "It sounds like your extinguisher route grew store by store from owners who know you. When a store sells, the new owner searches for fire safety service instead of reading the old tag.",
+      "hook": "Look for reviews or posts about long-time customers. Quote one.",
+      "linkLine": "Where a new store owner would find you: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "That {specific recent job} you posted is real fire protection work. A job like that belongs on a page a facilities manager can forward before they request an inspection.",
+      "hook": "Pick their newest service post and name it: the building type and the fire safety work done.",
+      "linkLine": "That job on a fire safety project page: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner} — that {specific recent job} you posted is solid fire protection work.\n\nI looked for a site for {Business Name} and couldn't find anywhere a business owner could book an extinguisher inspection or send a fire marshal's deficiency list. I put together a sample fire safety page with an inspection request and a deficiency upload, with marked placeholders where your photos would go.\n\nWould it help if I sent it over?",
+    "dm2": "{Owner} — following up in case my last message got buried between service calls. Here's the sample site for {Business Name}: {demo-link}\n\nIt has an inspection request with unit count and tag date, a page for clearing fire marshal deficiencies, and separate pages for hood suppression and exit lights. If it's not useful, say so and I'll leave you alone.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for fire protection and extinguisher service companies here in {City}. I sent you a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"Easy to miss on a route day. Short version: I built a sample site for {Business Name} with an inspection request, a deficiency upload and reminder signups for tag dates, with marked placeholders where your photos would go. Can I email you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range}, then {Care Range} a month for hosting and changes. For a fire safety company your size I'd quote about {Build Price}, which a handful of new annual accounts covers.\"\n\"Can I walk you through it for ten minutes this week, at the end of a route day?\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. We start the day it clears.\"",
+    "objections": [
+      {
+        "objection": "The fire marshal sends people to us.",
+        "handler": "\"Good. Those owners still look you up before calling, and the site lets them upload the deficiency list so you show up with the right parts.\""
+      },
+      {
+        "objection": "Our customers renew every year. We don't need new ones.",
+        "handler": "\"Renewals are the best part of this trade. The site is for the store that sells, the new tenant and the chain that wants one fire safety vendor for every location.\""
+      },
+      {
+        "objection": "We're a small route, not a big fire protection company.",
+        "handler": "\"That's who this is for. A small extinguisher route with a clean site and a reminder signup looks as steady as a big outfit to a store owner.\""
+      },
+      {
+        "objection": "I can't say what the code requires on a website. It's a liability.",
+        "handler": "\"Agreed, and the site doesn't. It describes the services you perform and says to confirm requirements with the local fire marshal. You approve every word.\""
+      },
+      {
+        "objection": "Big national fire companies win the chains.",
+        "handler": "\"Some do. Regional chains and property managers often want a local vendor who answers the phone. A multi-site page shows you can handle every location.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}, because it's an inspection request, a deficiency upload and tag-date reminders. A few new annual accounts pay for it.\""
+      }
+    ],
+    "email": {
+      "subject": "Inspection request page for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for fire protection and extinguisher service companies around {City}. I couldn't find a way for a business owner to book an inspection with {Business Name} or send you a fire marshal's deficiency list online.\n\nI built a sample first rather than ask for your time: an inspection request with unit count and tag date, a deficiency upload, reminder signups, and pages for hood suppression and exit light testing, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and changes. If not, no problem, it comes down at the end of the month.\n\nWorth ten minutes on the phone this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build websites for fire extinguisher service companies in {City}, and I put together a sample inspection request page for {Business Name}. I'll email the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner} — I'm taking the {Business Name} fire safety demo down on Friday.\n\nWant me to leave it up? One word either way is fine.",
+    "nurture": "Hi {Owner} — a lot of businesses around {City} renew insurance and get asked for current extinguisher tags this time of year. Thought of you.\n\nThe fire safety site is still here whenever you want it, same price. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to a handful of new annual inspection accounts, not to one extinguisher sale.",
+      "The inspection request and the reminder signup are the core. Price everything else as additions.",
+      "Price specialty pages one at a time: hood suppression, exit lights, sprinkler inspection and training each sell to a different budget.",
+      "Have the owner approve every sentence about inspections and never let the page interpret the code.",
+      "Charge for the multi-site account page separately; it wins chains and property managers.",
+      "Keep monthly add-ons below one small store's annual inspection so they never feel heavy."
+    ],
+    "lineItems": [
+      {
+        "item": "Inspection request with tag date",
+        "min": 350,
+        "max": 800,
+        "unit": "one-time",
+        "description": "Max with address, unit count by type, tag date, hood system checkbox and a route-day picker.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Deficiency notice upload",
+        "min": 250,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max with notice upload, deadline field, item checklist and a text alert to the owner.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Tag-date reminder signup",
+        "min": 300,
+        "max": 700,
+        "unit": "one-time",
+        "description": "Max with reminders by email and text before the due month and a one-click booking link.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Specialty service page (each)",
+        "min": 200,
+        "max": 500,
+        "unit": "per-page",
+        "description": "Max when the page covers a full service, such as hood suppression or exit lights, with its own request form.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Multi-site account page",
+        "min": 300,
+        "max": 700,
+        "unit": "one-time",
+        "description": "Max with a location list upload, one schedule for all sites and a combined invoice explanation.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Coverage area pages (each)",
+        "min": 150,
+        "max": 400,
+        "unit": "per-page",
+        "description": "Max when each page names the business districts and route days served in that town.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "New business permit mailer",
+      "min": 200,
+      "max": 600,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Each month, newly opened businesses in your area get a short letter offering a first fire extinguisher inspection and placement check.\"",
+      "when": "Month 2. Uses public new-business and certificate-of-occupancy listings."
+    },
+    {
+      "name": "Google profile upkeep for fire protection",
+      "min": 120,
+      "max": 250,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Weekly posts of hood systems, exit lights and extinguisher service keep your Google profile current when a store owner searches after an inspection.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Restaurant owner outreach",
+      "min": 300,
+      "max": 700,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A short monthly note to restaurants near your routes about hood suppression and K-class extinguisher service, with the request link.\"",
+      "when": "Month 3, once the hood suppression page is live."
+    },
+    {
+      "name": "Truck lettering and tag artwork",
+      "min": 200,
+      "max": 600,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Your inspection tag is on every extinguisher you service. A tag and truck design with the website and number turns each one into a reorder card.\"",
+      "when": "Right after launch, before the next tag order."
+    },
+    {
+      "name": "Fire safety training flyer and booking page",
+      "min": 250,
+      "max": 600,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A one-page flyer offering hands-on extinguisher training for staff, sent to every account with the booking link.\"",
+      "when": "Month 4, before the slow season."
+    },
+    {
+      "name": "Review requests after inspections",
+      "min": 79,
+      "max": 179,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"After a deficiency is cleared, the owner gets a short review request while the fire marshal's relief is still fresh.\"",
+      "when": "Day 30."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Kitchen hood cleaning companies",
+        "whoPays": "The hood cleaner, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The hood cleaner who works the same restaurants as your suppression techs needs a site that books by kitchen size.\"",
+        "whyItWorks": "Hood cleaning and suppression service share every restaurant and trade referrals weekly."
+      },
+      {
+        "route": "Fire alarm and sprinkler contractors",
+        "whoPays": "The fire alarm or sprinkler contractor, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"If you sub sprinkler or alarm work to another company, they need the same inspection request page you have.\"",
+        "whyItWorks": "Same buyer, same fire marshal, separate licences, so they refer rather than compete."
+      },
+      {
+        "route": "Restaurant groups they service",
+        "whoPays": "The restaurant group",
+        "min": 2000,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"The restaurant group whose hoods you inspect has a menu site that's slow on a phone. Your introduction gets me a meeting.\"",
+        "whyItWorks": "Restaurant owners trust the fire safety tech who keeps them open."
+      },
+      {
+        "route": "Commercial insurance agents",
+        "whoPays": "The insurance agency",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The commercial insurance agents who send you clients needing current extinguisher tags have websites from years ago. Introduce me.\"",
+        "whyItWorks": "Agents and fire safety vendors share commercial clients and refer constantly."
+      },
+      {
+        "route": "Safety equipment and first aid suppliers",
+        "whoPays": "The safety supplier",
+        "min": 1500,
+        "max": 5000,
+        "unit": "one-time",
+        "pitchLine": "\"The first aid cabinet company on your routes visits the same businesses monthly. Their reorder page needs work.\"",
+        "whyItWorks": "Route-based suppliers share stops and recommend each other."
+      },
+      {
+        "route": "Property managers with multiple buildings",
+        "whoPays": "The property management company",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The manager whose buildings get your fire extinguisher tags every year has a tenant portal nobody uses. You can get me in the door.\"",
+        "whyItWorks": "Managers trust the vendor who keeps their buildings inspection-ready."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Booking assistant for the hood cleaner",
+        "whoPays": "The hood cleaner, monthly",
+        "min": 150,
+        "max": 350,
+        "unit": "monthly",
+        "pitchLine": "\"Restaurants describe their hood and cooking volume, and the assistant books the hood cleaning on a closed night and lines it up with suppression service.\"",
+        "whyItWorks": "Built once around the fire safety client's restaurants, sold through their trust."
+      },
+      {
+        "route": "Inspection report summariser for insurance agents",
+        "whoPays": "The insurance agency, monthly",
+        "min": 200,
+        "max": 500,
+        "unit": "monthly",
+        "pitchLine": "\"Agents drop in a client's fire safety inspection reports, and the assistant drafts a plain summary of open items for the renewal file.\"",
+        "whyItWorks": "Agents chase this paperwork every renewal. It also routes open items back to the fire safety client."
+      },
+      {
+        "route": "Deficiency triage for property managers",
+        "whoPays": "The property manager, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Managers upload a fire marshal's report, and the assistant sorts each item by vendor: extinguishers, alarms, sprinklers or exit lights.\"",
+        "whyItWorks": "Managers juggle several fire vendors. Sorting the list saves them hours."
+      },
+      {
+        "route": "Reorder assistant for the safety supplier",
+        "whoPays": "The safety supplier, annually",
+        "min": 2000,
+        "max": 6000,
+        "unit": "per-year",
+        "pitchLine": "\"Businesses tell the assistant what was used from the first aid cabinet, and it drafts the restock order before the next route stop.\"",
+        "whyItWorks": "It keeps businesses on the supplier's route."
+      },
+      {
+        "route": "Pre-inspection checklist assistant for the restaurant group",
+        "whoPays": "The restaurant group, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Each location manager gets a weekly walk-through checklist drafted from that kitchen's last fire and health inspection reports, so nothing repeats.\"",
+        "whyItWorks": "Groups with several kitchens fear repeat findings; the fire safety client already sees every report."
+      },
+      {
+        "route": "Inspection scheduling assistant for the sprinkler partner",
+        "whoPays": "The sprinkler contractor, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Building owners pick an inspection window, and the assistant books the sprinkler partner and the extinguisher visit on the same day.\"",
+        "whyItWorks": "One visit for the owner, two vendors served."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Tag-date reminder texts",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 50,
+      "monthlyMax": 120,
+      "pitchLine": "\"A month before each account's annual extinguisher inspection, the owner gets a text with two route days to pick from.\"",
+      "whenAndWhatItTakes": "Day 30. Needs their customer list with last inspection month and phone numbers."
+    },
+    {
+      "name": "Route-day booking calendar",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Customers book their fire safety inspection only on the days your truck is already in their area, so the route stays tight.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their route days by area and the time each stop usually takes."
+    },
+    {
+      "name": "Digital inspection report with photos",
+      "kind": "software",
+      "oneTimeMin": 2500,
+      "oneTimeMax": 7000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"Techs log each extinguisher by location with a photo and condition, and the owner gets a clean inspection report before the truck leaves.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their current inspection form and a tech willing to test it."
+    },
+    {
+      "name": "Deficiency notice reader",
+      "kind": "ai",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 120,
+      "monthlyMax": 300,
+      "pitchLine": "\"Owners upload the fire marshal's notice, and it pulls out each extinguisher, exit light and hood item into a draft work order for the office to check.\"",
+      "whenAndWhatItTakes": "Month 3. Needs a set of past notices with the work orders they produced. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Missed-call text-back for recharges",
+      "kind": "automation",
+      "oneTimeMin": 0,
+      "oneTimeMax": 300,
+      "monthlyMin": 79,
+      "monthlyMax": 179,
+      "pitchLine": "\"A restaurant calls after a discharge, gets a text asking how many extinguishers and what type, and the tech calls back ready to load the truck.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the business number forwarded and wording they approve."
+    },
+    {
+      "name": "Customer portal for inspection records",
+      "kind": "software",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"Owners and safety managers download every fire safety inspection report and invoice, any time an insurer or inspector asks.\"",
+      "whenAndWhatItTakes": "Month 5, after the digital report. Needs customer logins and report history."
+    },
+    {
+      "name": "Office call answering on route days",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 200,
+      "monthlyMax": 500,
+      "pitchLine": "\"It answers the fire protection line while everyone's on the route, takes the address and unit count, and books the inspection slot.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the booking calendar and the questions they ask on every call. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Unit inventory by location",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Every extinguisher at every account, with type, size, location in the building and the year of the next major service.\"",
+      "whenAndWhatItTakes": "Month 4, built from the digital reports. Needs one full route cycle of data."
+    },
+    {
+      "name": "Maintenance and hydro test due list",
+      "kind": "automation",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1200,
+      "monthlyMin": 50,
+      "monthlyMax": 120,
+      "pitchLine": "\"Each month, the office gets the list of extinguishers coming due for internal maintenance or hydro testing, grouped by route.\"",
+      "whenAndWhatItTakes": "Month 5, after the unit inventory. Needs the client's service intervals as they apply them."
+    },
+    {
+      "name": "Quote writer for new-site placements",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"The tech walks a new tenant space and talks through it, and a quote for extinguishers, cabinets, signage and mounting is drafted for approval.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their price list and past placement quotes. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Multi-site account dashboard",
+      "kind": "software",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"A chain's safety manager sees every location's fire safety status on one screen: inspected, due, or open deficiencies.\"",
+      "whenAndWhatItTakes": "Month 7, once a multi-location account signs. Needs the portal and the account's location list."
+    },
+    {
+      "name": "Chatbot for inspection and service questions",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"It answers 'do you service hood systems' and 'what do I need for a new shop' from the company's own approved answers, then books the extinguisher inspection.\"",
+      "whenAndWhatItTakes": "Month 4. Needs approved answers only, with no code interpretation. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Truck stock and parts tracker",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Know what each service truck carries: spare extinguishers, tags, seals, gauges and fusible links, and what to restock before tomorrow's route.\"",
+      "whenAndWhatItTakes": "Month 5. Needs the parts list and a tech to log usage."
+    },
+    {
+      "name": "Review reply drafts for fire safety customers",
+      "kind": "ai",
+      "oneTimeMin": 250,
+      "oneTimeMax": 600,
+      "monthlyMin": 59,
+      "monthlyMax": 149,
+      "pitchLine": "\"When a shop owner thanks the tech for an extinguisher visit online, a short thank-you naming that inspection is ready for the owner to post.\"",
+      "whenAndWhatItTakes": "Month 2, with review requests. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Annual invoicing by route",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Fire extinguisher inspection invoices go out the day each route is finished, with parts and recharges added from the tech's report.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their accounting system and the digital report."
+    },
+    {
+      "name": "Training session booking and attendance",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 40,
+      "monthlyMax": 100,
+      "pitchLine": "\"Employers book hands-on extinguisher training, staff sign in on a phone, and the attendance record lands in the customer portal.\"",
+      "whenAndWhatItTakes": "Month 6. Needs their training format and session sizes."
+    },
+    {
+      "name": "Inspection notes translator",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Deficiency notes and fire safety instructions for kitchen staff, translated into the languages each restaurant's crew speaks, reviewed by the owner.\"",
+      "whenAndWhatItTakes": "Month 5. Needs the owner's review of each translation. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Bid notice watcher for fire protection",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 120,
+      "monthlyMax": 300,
+      "pitchLine": "\"Public agencies post extinguisher and exit light service contracts. The watcher flags the ones near your routes with due dates.\"",
+      "whenAndWhatItTakes": "Month 6. Needs the portals they're registered on. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Tech applicant screener",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Applicants for extinguisher technician roles answer questions on driving record, lifting and licensing progress, and the owner calls the fits.\"",
+      "whenAndWhatItTakes": "Whenever they're hiring. Needs must-haves and pay range. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Lapsed account win-back",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 30,
+      "monthlyMax": 80,
+      "pitchLine": "\"Accounts that skipped last year's extinguisher inspection get a polite note and a route day, before their insurer asks.\"",
+      "whenAndWhatItTakes": "Month 6. Needs two years of account history."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the digital inspection report for extinguisher routes",
+      "whoPays": "Fire protection companies, monthly per tech",
+      "min": 39,
+      "max": 129,
+      "unit": "monthly",
+      "pitchLine": "\"Small extinguisher companies still fill inspection forms by hand. I sell the digital report I built for one fire safety route to the rest.\"",
+      "whyItWorks": "The first company taught you the inspection workflow, and the paperwork is the same everywhere."
+    },
+    {
+      "route": "Dealer locator for an extinguisher distributor",
+      "whoPays": "The distributor, annually",
+      "min": 5000,
+      "max": 20000,
+      "unit": "per-year",
+      "pitchLine": "\"Businesses searching your distributor site find the nearest licensed fire extinguisher service company that buys from you.\"",
+      "whyItWorks": "Distributors want their service dealers busy and loyal."
+    },
+    {
+      "route": "State fire equipment dealers association kit",
+      "whoPays": "The association",
+      "min": 1500,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Give members an inspection request page and reminder signup as a benefit. Fire safety dealers renew for tools they use daily.\"",
+      "whyItWorks": "One deal reaches many dealers in the state."
+    },
+    {
+      "route": "Life safety roll-up groups buying local companies",
+      "whoPays": "The acquiring group, per acquired company",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Every local fire protection company you acquire needs its site moved onto one standard without losing its local name.\"",
+      "whyItWorks": "Roll-ups buy websites in batches as they close acquisitions."
+    },
+    {
+      "route": "Vendor compliance tracker for a restaurant group",
+      "whoPays": "The restaurant group",
+      "min": 6000,
+      "max": 20000,
+      "unit": "one-time",
+      "pitchLine": "\"Every location's hood suppression, extinguisher, hood cleaning and pest records in one tracker, with due dates flagged.\"",
+      "whyItWorks": "Groups get caught by lapsed fire safety records; the client's inspection data proves you understand it."
+    },
+    {
+      "route": "Agency licence for the fire safety template",
+      "whoPays": "The agency, per site",
+      "min": 500,
+      "max": 1500,
+      "unit": "one-time",
+      "pitchLine": "\"Agencies with a fire protection client start from a generic template. Mine has the inspection request, deficiency upload and tag reminders built in.\"",
+      "whyItWorks": "Agencies sell the client; you sell the compliance workflow."
+    },
+    {
+      "route": "Exclusive build in each neighbouring market",
+      "whoPays": "Fire safety companies in other markets",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I only take one extinguisher service company per market. {City} is done; the neighbouring markets each get one.\"",
+      "whyItWorks": "Exclusivity is the pitch, and the first client's results travel."
+    },
+    {
+      "route": "Insurance carrier risk-control programme",
+      "whoPays": "The carrier's risk-control department, annually",
+      "min": 5000,
+      "max": 20000,
+      "unit": "per-year",
+      "pitchLine": "\"Policyholders upload their fire safety inspection reports to one place, and risk-control staff see open items without chasing PDFs.\"",
+      "whyItWorks": "Carriers spend on loss prevention, and the client's report format is already built."
+    },
+    {
+      "route": "Fire marshal office referral page",
+      "whoPays": "Participating fire protection companies, monthly",
+      "min": 49,
+      "max": 149,
+      "unit": "monthly",
+      "pitchLine": "\"Local fire marshals hand owners a deficiency notice and no vendor list. A neutral directory of licensed extinguisher companies helps both sides.\"",
+      "whyItWorks": "Listed companies pay; the fire marshal office gets a useful page at no cost."
+    },
+    {
+      "route": "Facilities management firms' life safety bundle",
+      "whoPays": "The facilities management firm, annually",
+      "min": 3000,
+      "max": 10000,
+      "unit": "per-year",
+      "pitchLine": "\"You manage buildings with separate fire alarm, sprinkler and extinguisher vendors. One life safety schedule across them all saves your team hours.\"",
+      "whyItWorks": "Facilities firms buy tools that reduce vendor chasing."
+    },
+    {
+      "route": "Rebuild of abandoned inspection apps",
+      "whoPays": "The fire protection company with a dead project",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"An inspection app someone started and dropped can usually be finished. I've already built the extinguisher report and tag-date logic.\"",
+      "whyItWorks": "Budget already approved; they need someone who knows fire safety paperwork."
+    },
+    {
+      "route": "Trade school fire protection course partners",
+      "whoPays": "The training provider",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Your extinguisher technician course needs employers. A page listing local fire safety companies hiring graduates helps enrolment and placement.\"",
+      "whyItWorks": "Training providers sell on placement, and the client is a hiring employer."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Fire safety site build plus care plan, one contract",
+      "min": 1800,
+      "max": 3000,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The fire protection site and the care plan go on one contract, so a new service or town is a message to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Tag-date reminder texts",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "trigger": "They share a customer list with last inspection months.",
+      "line": "\"Your renewals are already on paper. Let the reminders book next year's extinguisher inspections for you.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "Google profile upkeep and review requests",
+      "min": 120,
+      "max": 250,
+      "unit": "monthly",
+      "trigger": "A customer thanks them for clearing a fire marshal list quickly.",
+      "line": "\"That owner you got cleared before the deadline is the review every fire safety search should see.\""
+    },
+    {
+      "rung": 4,
+      "day": 90,
+      "offer": "Digital inspection report with photos",
+      "min": 2500,
+      "max": 7000,
+      "unit": "one-time",
+      "trigger": "An insurer or safety manager asks for a copy of an old paper report.",
+      "line": "\"That report request is why this exists. Every extinguisher inspection becomes a clean record with photos.\""
+    },
+    {
+      "rung": 5,
+      "day": 150,
+      "offer": "Restaurant owner outreach",
+      "min": 300,
+      "max": 700,
+      "unit": "monthly",
+      "trigger": "The hood suppression page has its first few requests.",
+      "line": "\"Restaurants are finding the hood page. Let's tell the ones on your route that you service suppression systems too.\""
+    },
+    {
+      "rung": 6,
+      "day": 240,
+      "offer": "Customer portal for inspection records",
+      "min": 3000,
+      "max": 8000,
+      "unit": "one-time",
+      "trigger": "Several accounts ask for past reports during insurance renewals.",
+      "line": "\"Let owners download their own fire safety records and your phone stops ringing at renewal time.\""
+    },
+    {
+      "rung": 7,
+      "day": 365,
+      "offer": "Multi-site account dashboard",
+      "min": 3000,
+      "max": 8000,
+      "unit": "one-time",
+      "trigger": "A chain or property manager with several locations signs on.",
+      "line": "\"Give that chain one fire safety screen for every location and they won't split the account.\""
+    }
+  ]
+}

@@ -1,0 +1,855 @@
+{
+  "schemaVersion": 1,
+  "category": "Portable toilet & dumpster rental",
+  "slug": "portable-toilet-dumpster-rental",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "B2b family batch, catalog archetype override. Buyers are contractors, homeowners mid-project and event planners. Weight limits, fees and permit rules are the client's own and never stated here. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "What can go in the dumpster",
+      "contains": "Accepted and banned items such as tires, paint, batteries and appliances, clean fill versus mixed debris, and how weight overage and banned-item fees are worked out",
+      "why": "Surprise fees are the top complaint about dumpster rental. Customers pick the hauler that explains the rules before the roll-off arrives."
+    },
+    {
+      "section": "Dumpster size picker by project",
+      "contains": "Ten-yard, twenty-yard and thirty-yard roll-offs matched to jobs like a bathroom remodel, a roof tear-off, a garage cleanout or new construction",
+      "why": "Homeowners don't know yards. A picker that starts with the project gets them to the right roll-off and avoids a second haul."
+    },
+    {
+      "section": "Driveway placement and street permits",
+      "contains": "Placement boards to protect driveways, clearance the truck needs, street placement and HOA rules, and when the hauler coordinates a permit",
+      "why": "Homeowners worry about cracked driveways and city fines. Answering placement up front removes the last reason to delay the order."
+    },
+    {
+      "section": "Jobsite restroom service schedule",
+      "contains": "Portable toilet and hand-wash station servicing by visit day, unit counts by crew size as the company sets them, and holiday and winter service",
+      "why": "Contractors choose the porta potty company that never misses a service day. Showing the schedule is the proof they look for."
+    },
+    {
+      "section": "Restroom trailers and event units",
+      "contains": "Restroom trailers, accessible units, hand-wash and sink stations for weddings, festivals and job trailers, with power and water needs",
+      "why": "Event planners pay more for restroom trailers and book months ahead. A separate page keeps that buyer from bouncing off construction toilets."
+    },
+    {
+      "section": "Swap-out and final pickup requests",
+      "contains": "Request a dumpster swap, an extra restroom service or a final pickup online, with the cut-off for next-day service",
+      "why": "Contractors swap roll-offs on tight timelines. A request they can send from the jobsite keeps them from calling a rival hauler."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C25",
+      "siteType": "local-conversion",
+      "name": "Drop Today",
+      "heroLayout": "split-photo",
+      "mood": [
+        "bright",
+        "quick",
+        "plain"
+      ],
+      "bestFor": "Small haulers renting roll-offs and porta potties to homeowners and remodelers",
+      "pairsWithTier": "starter",
+      "headlineSample": "Dumpster and porta potty rental in {City}",
+      "whyItFits": "Citrus Morning is bright and legible like a roll-off at the curb, and the geometric display type keeps sizes and prices readable on a phone."
+    },
+    {
+      "id": "b",
+      "themeId": "C19",
+      "siteType": "catalog",
+      "name": "Roll-Off Board",
+      "heroLayout": "card-stack",
+      "mood": [
+        "organised",
+        "industrial",
+        "exact"
+      ],
+      "bestFor": "Haulers with a mixed fleet of roll-offs and restroom units sold by size and delivery zone",
+      "pairsWithTier": "standard",
+      "headlineSample": "Roll-off dumpsters and portable restrooms for {City} jobsites",
+      "whyItFits": "The family combo, made for fleet and logistics. Mono labels fit yard sizes, rental days and zones, and the orange accent echoes the roll-off itself."
+    },
+    {
+      "id": "c",
+      "themeId": "C1",
+      "siteType": "b2b-capability",
+      "name": "Jobsite Accounts",
+      "heroLayout": "type-led",
+      "mood": [
+        "procedural",
+        "steady",
+        "clear"
+      ],
+      "bestFor": "Larger operators selling builder accounts, recurring restroom service and multi-site waste programmes",
+      "pairsWithTier": "premium",
+      "headlineSample": "Dumpster and restroom accounts for {City} builders",
+      "whyItFits": "Banker's Indigo is built for billing dashboards. It suits builder accounts with recurring invoices, swap schedules and site lists."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your Google listing for dumpster rental has no website, so a homeowner starting a kitchen tear-out can't see sizes or prices and calls whoever shows them.",
+      "hook": "Open their Maps listing and confirm there is no Website button. Screenshot it for when they reply.",
+      "linkLine": "What that homeowner would see instead: {demo-link}"
+    },
+    {
+      "angle": "Facebook-only link",
+      "line": "Your listing goes to a Facebook page with roll-off photos and a phone number. People renting a dumpster want sizes, what can go in it and a delivery date, not a feed.",
+      "hook": "Tap the Website link and confirm it lands on Facebook. Note the newest post.",
+      "linkLine": "Your roll-offs as a size-and-date page: {demo-link}"
+    },
+    {
+      "angle": "Dead free host",
+      "line": "The site on your listing is a free page with one line about porta potties and a form that doesn't send. A contractor needing restrooms by Monday won't wait for a reply.",
+      "hook": "Open the site and test the form or spot an old banner or year. Note what you find.",
+      "linkLine": "Same rental company, with a form that delivers: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "On my phone your dumpster page shows the price table cut off at the right edge. Remodelers order roll-offs from the driveway on a phone.",
+      "hook": "Only if they have a site. Load it on your phone and note what breaks. Screenshot it for when they reply.",
+      "linkLine": "Your dumpster sizes and rates on a phone: {demo-link}"
+    },
+    {
+      "angle": "No delivery date picker",
+      "line": "There's no way to pick a dumpster size and a drop-off date without calling. A homeowner planning a weekend cleanout orders from the hauler who lets them do it at night.",
+      "hook": "Check their site and listing for an order or availability form. If there is none, the angle holds.",
+      "linkLine": "A roll-off order page with size and drop-off date: {demo-link}"
+    },
+    {
+      "angle": "Clean units, nowhere to live",
+      "line": "Those posts of clean restroom trailers set up at weddings are the best sales tool you have for event rentals, and they're mixed in with jobsite porta potty posts.",
+      "hook": "Find one event restroom or trailer post. If none, use a clean roll-off delivery shot instead.",
+      "linkLine": "Your restroom trailers on their own event page: {demo-link}"
+    },
+    {
+      "angle": "Reviews about the driveway",
+      "line": "A reviewer said your driver set the dumpster on boards and didn't mark the driveway. That's the worry every homeowner has, and the line belongs next to the order form.",
+      "hook": "Read their reviews and copy one phrase about care, timing or cleanliness. Quote it if they reply.",
+      "linkLine": "Your reviews beside the dumpster order form: {demo-link}"
+    },
+    {
+      "angle": "Spring cleanout and build season",
+      "line": "When spring cleanouts and building season start in the same month, every contractor and homeowner searches for dumpster rental at once. The haulers they find online fill their yards first.",
+      "hook": "Use in late winter or early spring. Name the month the local building season usually opens.",
+      "linkLine": "A roll-off rental page ready for spring: {demo-link}"
+    },
+    {
+      "angle": "Orders after dark",
+      "line": "Homeowners decide on the dumpster after the kids are in bed, and contractors line up next week's porta potties on Sunday night. If nobody answers then, the order goes to whoever lets them book.",
+      "hook": "Note their hours. If nothing takes an order after close, the angle holds.",
+      "linkLine": "A rental page that takes the dumpster order at night: {demo-link}"
+    },
+    {
+      "angle": "Hiring a driver",
+      "line": "Saw you're hiring a roll-off driver. Good drivers look at a hauling company online before applying, and a clean site with a careers page helps.",
+      "hook": "Only if they posted a hiring note or a truck sign. Note the date.",
+      "linkLine": "A dumpster rental site with a driver careers page: {demo-link}"
+    },
+    {
+      "angle": "Delivery zones",
+      "line": "You haul roll-offs to towns well outside {City}, but nothing says where you deliver or what it costs. A homeowner twenty minutes out assumes you won't come.",
+      "hook": "Look for delivery mentions or reviews from other towns. Name the furthest one.",
+      "linkLine": "Dumpster delivery zones and fees on one page: {demo-link}"
+    },
+    {
+      "angle": "Builder accounts",
+      "line": "Builders rent roll-offs and porta potties on every job and want one account with monthly billing. If that means a phone call per site, they stay with the big hauler.",
+      "hook": "Only if they serve builders. Look for jobsite photos or contractor reviews first.",
+      "linkLine": "A builder account page for dumpsters and restrooms: {demo-link}"
+    },
+    {
+      "angle": "Permits and HOA rules",
+      "line": "Homeowners ask whether the dumpster can go on the street and what the HOA allows. A page that says how your hauling company handles placement answers it before they hesitate.",
+      "hook": "Look for any permit or placement mention on their listing or posts. Never state their local rules for them.",
+      "linkLine": "Dumpster placement and permits, explained: {demo-link}"
+    },
+    {
+      "angle": "Contractor regulars",
+      "line": "It sounds like your portable toilet routes are built on a few contractors who've used you for years. New builders and remodelers search online first.",
+      "hook": "Look for reviews or posts from repeat contractors. Quote one.",
+      "linkLine": "Where a new builder would find your restroom service: {demo-link}"
+    },
+    {
+      "angle": "A specific recent drop",
+      "line": "That {specific recent job} you posted shows a clean roll-off drop. A job like that belongs on a page a nervous homeowner can look at before ordering.",
+      "hook": "Pick their newest delivery or event post and name it: the roll-off size or restroom setup and the job type.",
+      "linkLine": "That drop on a dumpster rental project page: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner} — that {specific recent job} you posted is a clean drop.\n\nI looked for a site for {Business Name} and couldn't find dumpster sizes, what can go in them, or a way to pick a delivery date. I put together a sample rental page with a size picker by project, a roll-off order with drop-off date and a jobsite restroom section, with marked placeholders where your photos would go.\n\nWould it help if I sent it over?",
+    "dm2": "{Owner} — following up in case my last message got buried between hauls. Here's the sample site for {Business Name}: {demo-link}\n\nIt has a dumpster size picker by project, an order page with a drop-off date, a what-can-go-in-it page, and a builder account section for porta potties. If it's not useful, tell me and I'll leave you alone.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for dumpster and portable toilet rental companies here in {City}. I sent you a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"No surprise, you're driving all day. Short version: I built a sample site for {Business Name} with a dumpster size picker, an order page with drop-off dates and a builder account section for restrooms, with marked placeholders where your photos would go. Can I email you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range}, then {Care Range} a month for hosting and changes. For a hauler your size I'd quote about {Build Price}, which a handful of roll-off rentals covers.\"\n\"Can I walk you through it for ten minutes this week, after your last pickup?\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. We start the day it clears.\"",
+    "objections": [
+      {
+        "objection": "People just call us. They don't want to order a dumpster online.",
+        "handler": "\"Many still will. The ones who call at night or on Sunday get a voicemail, and the site takes that order instead of the competitor's site.\""
+      },
+      {
+        "objection": "We don't want to publish prices. Landfill fees change.",
+        "handler": "\"Show a starting rate per size and explain how weight and fees work. The order still comes to you to confirm before the roll-off goes out.\""
+      },
+      {
+        "objection": "The big waste haulers own this market.",
+        "handler": "\"They own commercial contracts. Homeowners and small builders want a local hauler who answers and shows up on the day. The site makes you look like that before they call.\""
+      },
+      {
+        "objection": "Our yard is booked out in spring anyway.",
+        "handler": "\"Then the site sorts the work: longer rentals, builder accounts and restroom service contracts first, and a wait list for the rest.\""
+      },
+      {
+        "objection": "We're listed on the dumpster lead sites already.",
+        "handler": "\"Those sites sell the same lead to several haulers. Your own order page gets customers who searched your name or your town, with no fee per lead.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}, because it's a size picker, an order page with dates and a builder account section. A handful of roll-off rentals covers it.\""
+      }
+    ],
+    "email": {
+      "subject": "Dumpster order page for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for dumpster and portable toilet rental companies around {City}. I couldn't find {Business Name}'s sizes, rules or a way to book a drop-off date online, which is what homeowners and builders look for first.\n\nI built a sample first rather than ask for your time: a dumpster size picker by project, an order page with a drop-off date, a what-can-go-in-it page, driveway placement notes and a builder account section for jobsite restrooms, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and changes. If not, no problem, it comes down at the end of the month.\n\nWorth ten minutes on the phone this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build websites for dumpster rental companies in {City}, and I made a sample roll-off order page for {Business Name}. I'll email you the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner} — I'm taking the {Business Name} dumpster rental demo down on Friday.\n\nWant me to keep it up? One word either way.",
+    "nurture": "Hi {Owner} — spring cleanouts and building season are coming, and homeowners around {City} will be searching for dumpster rental. Thought of you.\n\nThe roll-off and restroom site is still here, same price. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to a handful of roll-off rentals, not to a single porta potty week.",
+      "The size picker and the order page with a drop-off date are the core; price everything else as additions.",
+      "Price dumpster and restroom sections separately; they sell to different buyers on different schedules.",
+      "Charge for the builder account section on its own; recurring jobsite customers are worth the most.",
+      "Event restroom trailers deserve their own page and price; planners pay more and book further ahead.",
+      "Keep monthly add-ons below the price of one roll-off rental."
+    ],
+    "lineItems": [
+      {
+        "item": "Dumpster size picker by project",
+        "min": 300,
+        "max": 700,
+        "unit": "one-time",
+        "description": "Max with project types, size suggestions with dimensions, starting rates and a link straight to the order page.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Roll-off order with drop-off date",
+        "min": 500,
+        "max": 1200,
+        "unit": "one-time",
+        "description": "Max with an availability calendar per size, placement notes, a map pin and a deposit request.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Accepted items and fees page",
+        "min": 150,
+        "max": 400,
+        "unit": "one-time",
+        "description": "Max with a searchable item list, how overage is worked out and photos of acceptable loads.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Builder account and recurring service section",
+        "min": 400,
+        "max": 900,
+        "unit": "one-time",
+        "description": "Max with an account application, site list, restroom service days and monthly billing explained.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Event restroom trailer page",
+        "min": 250,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max with trailer photos, guest-count guidance as the company sets it, power and water needs and an event date check.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Delivery zone pages (each)",
+        "min": 150,
+        "max": 350,
+        "unit": "per-page",
+        "description": "Max when each town page shows delivery fee, permit notes for that town and nearby jobs.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Swap and pickup request",
+        "min": 200,
+        "max": 500,
+        "unit": "one-time",
+        "description": "Max with order lookup, swap or final pickup choice and a next-day cut-off time.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Clean-unit and drop-off photo set",
+      "min": 300,
+      "max": 800,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"One morning shooting clean restroom units, a trailer interior and a roll-off set on driveway boards gives the rental site real proof.\"",
+      "when": "Month 2, at a jobsite and an event the customers agree to."
+    },
+    {
+      "name": "Google profile upkeep for hauling",
+      "min": 99,
+      "max": 249,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Weekly posts of dumpster drops and restroom setups keep the profile active when someone searches 'roll off dumpster near me'.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Builder and remodeler outreach",
+      "min": 300,
+      "max": 800,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Each month, a short note to new building permit holders nearby offering a jobsite dumpster and porta potty account.\"",
+      "when": "Month 3, using public permit listings."
+    },
+    {
+      "name": "Wedding and event planner outreach",
+      "min": 250,
+      "max": 600,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Before wedding season, a note to venues and planners with restroom trailer photos and an event date check.\"",
+      "when": "Late winter, once the trailer page is live."
+    },
+    {
+      "name": "Roll-off and unit decal artwork",
+      "min": 200,
+      "max": 600,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Every roll-off and porta potty sits at a jobsite for weeks. A clean decal with the order page address turns each one into a sign.\"",
+      "when": "Right after launch, at the next decal reorder."
+    },
+    {
+      "name": "Review requests after final pickup",
+      "min": 79,
+      "max": 179,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"When the dumpster leaves the driveway clean, the homeowner gets a short review request while they're still pleased.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Spring cleanout campaign",
+      "min": 300,
+      "max": 700,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A spring campaign to neighbourhoods near your yard: garage cleanouts, yard debris and estate cleanups, all needing a roll-off.\"",
+      "when": "Late winter each year."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Junk removal and cleanout crews",
+        "whoPays": "The junk removal company, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The junk crew that rents your roll-offs for estate cleanouts needs a booking site of its own.\"",
+        "whyItWorks": "They rent the dumpsters and already trade jobs with the hauler."
+      },
+      {
+        "route": "Remodelers and roofers with accounts",
+        "whoPays": "The remodeler or roofer",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The roofer who orders a roll-off for every tear-off has a website from years ago. Your driver sees him weekly.\"",
+        "whyItWorks": "Contractors trust the hauler who never misses a swap."
+      },
+      {
+        "route": "Wedding and event venues",
+        "whoPays": "The venue",
+        "min": 2000,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"The barn venue that books your restroom trailers every weekend needs a better tour and inquiry page.\"",
+        "whyItWorks": "Venues trust the vendor who makes their events run smoothly."
+      },
+      {
+        "route": "Septic pumping companies",
+        "whoPays": "The septic company, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The septic outfit that handles your pump-outs or shares your disposal site needs a service page as much as your portable toilet side did.\"",
+        "whyItWorks": "Restroom and septic work share trucks, disposal sites and referrals."
+      },
+      {
+        "route": "Scrap metal and recycling yards",
+        "whoPays": "The recycling yard",
+        "min": 1500,
+        "max": 5000,
+        "unit": "one-time",
+        "pitchLine": "\"The scrap yard where you drop metal from roll-offs has a price board nobody can see online. Introduce me.\"",
+        "whyItWorks": "Recyclers depend on haulers and have budgets for walk-in customers."
+      },
+      {
+        "route": "Festival and fair organisers",
+        "whoPays": "The event organiser",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The county fair you supply porta potties to runs its vendor sign-up on paper. You can get me a meeting.\"",
+        "whyItWorks": "Organisers trust the restroom vendor who handles their biggest headache."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Photo-based junk estimate for the cleanout crew",
+        "whoPays": "The junk removal company",
+        "min": 1200,
+        "max": 3000,
+        "unit": "one-time",
+        "pitchLine": "\"Customers upload photos of the garage, and the junk crew gets a draft load estimate and whether a roll-off makes more sense.\"",
+        "whyItWorks": "It saves site visits and sends larger jobs to the dumpster client."
+      },
+      {
+        "route": "Material order assistant for the roofer",
+        "whoPays": "The roofer, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"The roofer enters the job, and the assistant drafts the material order and books the roll-off for tear-off day.\"",
+        "whyItWorks": "It saves the roofer time and ties every tear-off to the hauler."
+      },
+      {
+        "route": "Inquiry assistant for the venue",
+        "whoPays": "The venue, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Couples ask about dates, capacity and restrooms, and the venue's assistant answers from its own info, including the restroom trailer package.\"",
+        "whyItWorks": "Venues lose bookings to slow replies, and every booking needs restroom trailers."
+      },
+      {
+        "route": "Pump-out scheduling assistant for the septic partner",
+        "whoPays": "The septic company, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"Homeowners describe their septic system and last pump date, and the assistant books the septic partner on the same route day as the portable toilet truck.\"",
+        "whyItWorks": "Built around the same disposal and route logic as the portable toilet client."
+      },
+      {
+        "route": "Price board assistant for the recycling yard",
+        "whoPays": "The recycling yard, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"Callers ask what the yard pays for copper or steel, and the assistant answers from today's posted board instead of tying up the scale house.\"",
+        "whyItWorks": "Scale houses are swamped with price calls, and the hauler client is a regular."
+      },
+      {
+        "route": "Vendor planning assistant for festival organisers",
+        "whoPays": "The event organiser, per event",
+        "min": 500,
+        "max": 1500,
+        "unit": "per-job",
+        "pitchLine": "\"Organisers enter expected attendance and hours, and the assistant drafts a vendor plan, including restroom units and dumpsters, using the client's own guidance.\"",
+        "whyItWorks": "It turns planning into an order for the portable toilet client."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Order confirmation and drop-off window texts",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 50,
+      "monthlyMax": 120,
+      "pitchLine": "\"Every dumpster order gets a confirmation, a drop-off window the evening before, and a reminder to clear the driveway spot.\"",
+      "whenAndWhatItTakes": "Day 30. Needs the order page live and the driver's daily route."
+    },
+    {
+      "name": "Container and unit tracker",
+      "kind": "software",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"Which roll-off and which porta potty is at which address, since when, and when it's due back, on one map.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the fleet list with unit numbers and current placements."
+    },
+    {
+      "name": "Driver route planner",
+      "kind": "software",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"Drops, swaps, pickups and restroom service stops ordered into one route per truck, rebuilt when a contractor calls a rush swap.\"",
+      "whenAndWhatItTakes": "Month 3, after the tracker. Needs truck count and service time per stop type."
+    },
+    {
+      "name": "Rental day overage alerts",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 40,
+      "monthlyMax": 100,
+      "pitchLine": "\"Before a dumpster passes its included rental days, the customer gets a text offering pickup or an extension, so the extra-day charge is never a surprise.\"",
+      "whenAndWhatItTakes": "Month 3. Needs included days per size and order dates."
+    },
+    {
+      "name": "Load photo check at pickup",
+      "kind": "ai",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 120,
+      "monthlyMax": 300,
+      "pitchLine": "\"The driver snaps the loaded roll-off, and it flags likely banned items like tires or paint cans for the office to check before the landfill.\"",
+      "whenAndWhatItTakes": "Month 5. Needs a few hundred past load photos with the owner's notes. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Service day proof for restroom routes",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Techs scan each portable toilet when serviced, and the contractor sees a time-stamped log for every unit on the jobsite.\"",
+      "whenAndWhatItTakes": "Month 4. Needs unit tags and a tech willing to test it."
+    },
+    {
+      "name": "Size picker assistant",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"Customers describe the project, like a deck tear-off with shingles, and it suggests the dumpster size and warns about heavy debris rules.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the size picker content and the owner's usual advice. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Builder account portal",
+      "kind": "software",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"Builders see every dumpster and restroom unit on their sites, request swaps and download monthly invoices in one place.\"",
+      "whenAndWhatItTakes": "Month 6. Needs the tracker and builder accounts."
+    },
+    {
+      "name": "Night and weekend order answering",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 200,
+      "monthlyMax": 500,
+      "pitchLine": "\"It answers the rental line after hours, takes the dumpster size, address and date, and books the drop-off for the office to confirm.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the tracker's availability and their rates. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Landfill ticket and weight log",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Each landfill ticket photographed and matched to the dumpster order, so overage billing is backed by the scale weight.\"",
+      "whenAndWhatItTakes": "Month 3. Needs drivers to photograph tickets at the scale."
+    },
+    {
+      "name": "Ticket reader for overage invoices",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"It reads the photographed scale ticket and drafts the roll-off overage line on the invoice for the office to approve.\"",
+      "whenAndWhatItTakes": "Month 4, after the ticket log. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Event restroom planner",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Planners enter guests, hours and whether alcohol is served, and see the restroom units and hand-wash stations the company recommends, using its own ratios.\"",
+      "whenAndWhatItTakes": "Month 5. Needs the owner's unit-count guidance."
+    },
+    {
+      "name": "Invoicing with recurring restroom billing",
+      "kind": "automation",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Jobsite portable toilets bill every four weeks automatically, with extra services added from the tech's log.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their accounting system and billing cycle."
+    },
+    {
+      "name": "Review reply drafts for rental customers",
+      "kind": "ai",
+      "oneTimeMin": 250,
+      "oneTimeMax": 600,
+      "monthlyMin": 59,
+      "monthlyMax": 149,
+      "pitchLine": "\"A homeowner mentions the driver who protected the driveway, and a thank-you reply naming the dumpster job is ready to approve.\"",
+      "whenAndWhatItTakes": "Month 2, with review requests. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Permit reminder by town",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 30,
+      "monthlyMax": 80,
+      "pitchLine": "\"Street-placed dumpster orders in towns that need a permit get a checklist and reminder, based on notes the owner keeps per town.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the owner's town-by-town notes."
+    },
+    {
+      "name": "Unit maintenance and cleaning log",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 50,
+      "monthlyMax": 120,
+      "pitchLine": "\"Every restroom unit and roll-off's repairs, deep cleans and paint touch-ups, so damaged units come off the rental line before a customer sees them.\"",
+      "whenAndWhatItTakes": "Month 6. Needs unit numbers and a yard lead to log work."
+    },
+    {
+      "name": "Driver instruction translator",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 59,
+      "monthlyMax": 149,
+      "pitchLine": "\"Placement notes, gate codes and customer requests for each dumpster stop, translated for every driver, reviewed by the owner.\"",
+      "whenAndWhatItTakes": "Month 5. Needs written route notes and the owner's review. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Event quote writer",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"A planner's email about a wedding or festival becomes a drafted restroom trailer quote with delivery, service and pickup for the owner to send.\"",
+      "whenAndWhatItTakes": "Month 5. Needs past event quotes and the trailer rate sheet. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Driver applicant screener",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 59,
+      "monthlyMax": 149,
+      "pitchLine": "\"Roll-off and service truck driver applicants answer questions on licence class, record and early starts, and the owner calls the fits.\"",
+      "whenAndWhatItTakes": "Whenever they're hiring. Needs must-haves and pay range. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Utilisation by container size",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"See which dumpster sizes are always out and which sit in the yard, before buying the next roll-off.\"",
+      "whenAndWhatItTakes": "Month 7. Needs a few months of tracker data."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "License the container tracker to small haulers",
+      "whoPays": "Independent roll-off haulers, monthly",
+      "min": 79,
+      "max": 249,
+      "unit": "monthly",
+      "pitchLine": "\"Small dumpster companies track cans on a whiteboard. The container map I built for one hauler sells to every one-truck outfit.\"",
+      "whyItWorks": "The first hauler paid for it and taught you the drop-swap-pickup cycle."
+    },
+    {
+      "route": "Portable sanitation association member offer",
+      "whoPays": "The association",
+      "min": 1500,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"A restroom service site with service-day proof and event trailer pages for every portable toilet member.\"",
+      "whyItWorks": "Trade groups want concrete benefits, and one deal reaches many operators."
+    },
+    {
+      "route": "Container manufacturer's dealer map",
+      "whoPays": "The manufacturer, annually",
+      "min": 5000,
+      "max": 20000,
+      "unit": "per-year",
+      "pitchLine": "\"Homeowners land on your site and find the nearest hauler renting your roll-offs. Your buyers get orders and stay loyal.\"",
+      "whyItWorks": "Manufacturers want their customers busy enough to buy more cans."
+    },
+    {
+      "route": "Roll-up groups buying local haulers",
+      "whoPays": "The acquiring group, per company",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Each dumpster company you buy keeps its local name, with an order page and tracker that report to your office.\"",
+      "whyItWorks": "Roll-ups buy websites in batches as they close."
+    },
+    {
+      "route": "Builder jobsite services portal",
+      "whoPays": "The homebuilder",
+      "min": 8000,
+      "max": 25000,
+      "unit": "one-time",
+      "pitchLine": "\"Superintendents order dumpsters, restroom units and fencing for each lot from one portal, with vendor service logs attached.\"",
+      "whyItWorks": "Builders juggle many jobsite vendors, and the hauler client proves the workflow."
+    },
+    {
+      "route": "Agency licence for the hauler template",
+      "whoPays": "The agency, per site",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "pitchLine": "\"Agencies with a hauling client can skip the size picker and order calendar build. Mine's ready to brand.\"",
+      "whyItWorks": "Agencies sell the client; you sell the roll-off ordering engine."
+    },
+    {
+      "route": "Neighbouring-market haulers, one each",
+      "whoPays": "Dumpster companies in other markets",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"The roll-off order page is live for a hauler near {City}. I'll build it for just one dumpster company in each nearby market.\"",
+      "whyItWorks": "Exclusivity is the pitch and haulers rarely cross markets."
+    },
+    {
+      "route": "Municipal bulk pickup and cleanup days",
+      "whoPays": "The municipality",
+      "min": 2000,
+      "max": 8000,
+      "unit": "one-time",
+      "pitchLine": "\"Towns running spring cleanup days need residents to book bulk pickups by street. It's the dumpster order calendar with a different label.\"",
+      "whyItWorks": "Same workflow, public budget, and a reference for the next town."
+    },
+    {
+      "route": "Event production companies",
+      "whoPays": "The production company, annually",
+      "min": 2000,
+      "max": 6000,
+      "unit": "per-year",
+      "pitchLine": "\"Your event plans list restroom trailers, dumpsters and hand-wash stations. A vendor ordering page tied to each event saves your coordinators days.\"",
+      "whyItWorks": "Production companies run many events and buy tools that cut vendor chasing."
+    },
+    {
+      "route": "Dumpster cost calculator with sponsors",
+      "whoPays": "Sponsoring haulers, monthly",
+      "min": 79,
+      "max": 249,
+      "unit": "monthly",
+      "pitchLine": "\"Homeowners estimate a cleanout's roll-off cost from the sponsoring hauler's own rates, then order from that hauler.\"",
+      "whyItWorks": "It never claims market data, only the sponsor's prices."
+    },
+    {
+      "route": "Revive a hauler's unfinished booking build",
+      "whoPays": "The hauler with a half-finished project",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"A dumpster booking tool that stalled halfway is a short job for me. The container and route logic already runs for another hauler.\"",
+      "whyItWorks": "Money already set aside; they need someone who knows the roll-off cycle."
+    },
+    {
+      "route": "Disaster recovery contractors",
+      "whoPays": "The recovery contractor",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"After storms, recovery contractors need roll-offs and restroom units fast. A rapid-order page tied to partner haulers gets them placed.\"",
+      "whyItWorks": "Recovery work is urgent and well-funded, and the hauler client supplies the units."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Dumpster and restroom site build plus care plan, one contract",
+      "min": 1800,
+      "max": 3000,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The dumpster rental site and the care plan go on one contract, so a new size or town is a message to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Order confirmation and drop-off window texts",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "trigger": "Online orders start arriving and a driver finds a car parked in the drop spot.",
+      "line": "\"That blocked driveway is what the reminder fixes. Every roll-off customer clears the spot the night before.\""
+    },
+    {
+      "rung": 3,
+      "day": 60,
+      "offer": "Container and unit tracker",
+      "min": 2000,
+      "max": 5000,
+      "unit": "one-time",
+      "trigger": "They lose track of a roll-off or a porta potty sits on a finished jobsite unbilled.",
+      "line": "\"That forgotten unit is lost rent. A map of every dumpster and restroom unit stops it.\""
+    },
+    {
+      "rung": 4,
+      "day": 90,
+      "offer": "Builder and remodeler outreach",
+      "min": 300,
+      "max": 800,
+      "unit": "monthly",
+      "trigger": "The builder account section gets its first applications.",
+      "line": "\"Builders are finding the account page. Let's put it in front of every new permit holder near your yard.\""
+    },
+    {
+      "rung": 5,
+      "day": 150,
+      "offer": "Service day proof for restroom routes",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "trigger": "A contractor claims a portable toilet wasn't serviced.",
+      "line": "\"That missed-service claim ends with a scan log. Every restroom unit, every visit, time-stamped.\""
+    },
+    {
+      "rung": 6,
+      "day": 240,
+      "offer": "Wedding and event planner outreach",
+      "min": 250,
+      "max": 600,
+      "unit": "monthly",
+      "trigger": "They add restroom trailers to the fleet or book their first wedding.",
+      "line": "\"The trailer's paid for. Let's get it booked every weekend of wedding season.\""
+    },
+    {
+      "rung": 7,
+      "day": 365,
+      "offer": "Builder account portal",
+      "min": 3000,
+      "max": 8000,
+      "unit": "one-time",
+      "trigger": "A builder with several active jobsites asks for one invoice and a unit list.",
+      "line": "\"Give that builder one dumpster and restroom portal, and every new lot comes to you.\""
+    }
+  ]
+}

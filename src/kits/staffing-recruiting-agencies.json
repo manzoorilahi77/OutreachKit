@@ -1,0 +1,847 @@
+{
+  "schemaVersion": 1,
+  "category": "Staffing & recruiting agencies",
+  "slug": "staffing-recruiting-agencies",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "B2b family batch, consult archetype override. Two buyers on one site: employers and candidates. No fill-rate, placement or safety claims, no job board or payroll vendor names, and any agency licence stays a placeholder. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Open jobs board for candidates",
+      "contains": "Searchable open roles by shift, location and pay as the agency posts it, apply-by-text, a bilingual application, and a note on what happens after applying",
+      "why": "Candidates decide in seconds on a phone. A staffing agency with a real jobs board gets the applicants that a flyer or a feed post loses."
+    },
+    {
+      "section": "Shift fill and headcount request",
+      "contains": "For employers: roles, headcount, shift times, start date, site address, PPE and dress requirements, and a callback window from a named recruiter",
+      "why": "Plant and warehouse managers call the staffing firm that answers first. A request they can send at night gets workers on the line by morning."
+    },
+    {
+      "section": "First-day onboarding checklist",
+      "contains": "Which identity and work eligibility documents to bring, safety orientation, PPE, direct deposit set-up, parking and who to ask for at the site",
+      "why": "No-shows on day one often come from confusion. A clear checklist protects the agency's reputation with the employer."
+    },
+    {
+      "section": "Temp-to-hire conversion path",
+      "contains": "How a temp worker becomes a direct hire, the conversion terms as the agency sets them, and what the employer and worker each do",
+      "why": "Employers ask about conversion before signing. Workers ask about it before applying. One page answers both sides of the staffing deal."
+    },
+    {
+      "section": "Timesheets and pay day for workers",
+      "contains": "How hours are submitted and approved, the pay day, pay options the agency offers, and who to call when a shift's hours look wrong",
+      "why": "Pay confusion is the top reason temp workers quit an agency. Answering it on the page keeps the bench full."
+    },
+    {
+      "section": "Jobsite safety visit before placement",
+      "contains": "How recruiters visit a client site before sending workers, what they check, PPE responsibility, and how a worker reports a safety concern",
+      "why": "Light industrial employers and workers both want to know the agency checks the site. It answers a liability question before it is asked."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C25",
+      "siteType": "local-conversion",
+      "name": "Now Hiring",
+      "heroLayout": "split-photo",
+      "mood": [
+        "bright",
+        "welcoming",
+        "quick"
+      ],
+      "bestFor": "Single-office temp agencies that need applicants first and employer orders second",
+      "pairsWithTier": "starter",
+      "headlineSample": "Warehouse and light industrial jobs in {City}, apply today",
+      "whyItFits": "Citrus Morning is warm and readable on a cheap phone, which is where most candidates for temp and light industrial work apply."
+    },
+    {
+      "id": "b",
+      "themeId": "C6",
+      "siteType": "booking-first",
+      "name": "Two Doors",
+      "heroLayout": "card-stack",
+      "mood": [
+        "clear",
+        "even",
+        "credible"
+      ],
+      "bestFor": "Staffing firms serving employers and candidates equally, with a recruiter call booking for each",
+      "pairsWithTier": "standard",
+      "headlineSample": "Staffing for {City} employers, jobs for {City} workers",
+      "whyItFits": "Not the family combo: a dark logistics page reads as cold to job seekers. Cobalt Wire is light and credible for employers while staying friendly on a phone."
+    },
+    {
+      "id": "c",
+      "themeId": "C19",
+      "siteType": "b2b-capability",
+      "name": "Workforce Desk",
+      "heroLayout": "type-led",
+      "mood": [
+        "operational",
+        "exact",
+        "serious"
+      ],
+      "bestFor": "Agencies selling multi-site light industrial staffing programmes to plants and distribution centres",
+      "pairsWithTier": "premium",
+      "headlineSample": "Light industrial staffing for {City} plants and warehouses",
+      "whyItFits": "The family combo suits the employer-facing programme page: shift tables, headcount and site lists read like the ops data a plant manager uses."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your staffing agency's Google listing has no website, so a warehouse manager short three pickers tonight can't see what roles you fill before calling someone else.",
+      "hook": "Open their Maps listing and confirm there is no Website button. Screenshot it for when they reply.",
+      "linkLine": "What that warehouse manager could open instead: {demo-link}"
+    },
+    {
+      "angle": "Facebook-only job posts",
+      "line": "Your open jobs are Facebook posts that scroll away in a day. A candidate looking for second-shift work can't search them, and an employer can't tell you're a real staffing firm.",
+      "hook": "Tap the Website link or bio link and confirm it lands on Facebook. Count how many job posts you see this week.",
+      "linkLine": "A searchable jobs board for your agency: {demo-link}"
+    },
+    {
+      "angle": "Dead free host",
+      "line": "The site on your listing lists jobs that look months old and an application form that doesn't send. Candidates who apply and hear nothing tell their friends.",
+      "hook": "Open the site and check the newest job date or test the form. Note what you find.",
+      "linkLine": "Same staffing agency, with jobs that are current: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "On my phone your recruiting site's application form needs zooming on every field. Temp work applicants tend to apply from a phone between shifts.",
+      "hook": "Only if they have a site. Load it on your phone and try to start an application. Screenshot it for when they reply.",
+      "linkLine": "An application that works on a phone: {demo-link}"
+    },
+    {
+      "angle": "No employer order form",
+      "line": "There's no way for a plant manager to put in a staffing order online. A form asking for roles, headcount, shift and start date would catch the requests that come in at night.",
+      "hook": "Check their site and listing for an employer request form. If there is none, the angle holds.",
+      "linkLine": "A headcount request built for employers: {demo-link}"
+    },
+    {
+      "angle": "Hiring events, nowhere to live",
+      "line": "Your hiring event flyers and team photos show a real recruiting operation, and they disappear after the event. A page that keeps them up tells candidates you hire every week.",
+      "hook": "Find one hiring event or team post. Name the event if they reply.",
+      "linkLine": "Your hiring events on a page that stays: {demo-link}"
+    },
+    {
+      "angle": "Reviews from workers",
+      "line": "A worker's review saying your recruiter got them placed in a week and paid on time is the line the next applicant needs to see beside the jobs board.",
+      "hook": "Read their reviews and copy one phrase from a worker or an employer. Quote it if they reply.",
+      "linkLine": "Worker and employer reviews beside the jobs: {demo-link}"
+    },
+    {
+      "angle": "Peak season staffing",
+      "line": "Warehouses and distribution centres ramp up for the autumn peak and start calling staffing agencies weeks before. The firms they can find online get the big orders.",
+      "hook": "Use from late summer through early autumn, or before a local seasonal ramp. Name the season.",
+      "linkLine": "Ready for the peak season staffing rush: {demo-link}"
+    },
+    {
+      "angle": "Night shift call-outs",
+      "line": "A supervisor finds out at ten at night that two forklift operators called out. If your agency's line goes to voicemail, the staffing order goes to the agency that picks up.",
+      "hook": "Call their number in the evening and note whether anything takes the request.",
+      "linkLine": "A staffing page that takes the night call-out order: {demo-link}"
+    },
+    {
+      "angle": "Hiring internal recruiters",
+      "line": "Saw you're hiring a recruiter for your own office. Good recruiters check whether a staffing firm looks organised online before they join.",
+      "hook": "Only if they posted an internal job. Note the role and date.",
+      "linkLine": "A staffing site with a careers page for your own team: {demo-link}"
+    },
+    {
+      "angle": "Industrial parks you cover",
+      "line": "You place workers in industrial parks across the county, but nothing online names them. A candidate who can't drive far wants to know which job sites are near home.",
+      "hook": "Look for job posts naming towns or parks. Name the cluster you see most.",
+      "linkLine": "Job sites by area on your recruiting page: {demo-link}"
+    },
+    {
+      "angle": "Pay day questions",
+      "line": "Temp workers ask about pay day and how timesheets work before they take a staffing assignment. A page that answers it up front keeps them from going to the agency next door.",
+      "hook": "Look for comments asking about pay or hours on their job posts. If you see them, the angle is strong.",
+      "linkLine": "Pay day and timesheets explained for workers: {demo-link}"
+    },
+    {
+      "angle": "Licence and insurance trust",
+      "line": "Employers ask a staffing firm about workers' comp, liability coverage and any state agency licence before the first order. A page that shows what you hold answers it early.",
+      "hook": "Look for any licence or insurance mention on their listing or posts. Never claim one you didn't see.",
+      "linkLine": "Coverage and licensing on one staffing page: {demo-link}"
+    },
+    {
+      "angle": "A few big clients",
+      "line": "It sounds like most of your staffing orders come from a few plants. When one of them changes its HR manager, the new one may shop agencies from scratch.",
+      "hook": "Look for posts that mention one main employer or industry. Name the industry, not the company.",
+      "linkLine": "Where a new HR manager would find your agency: {demo-link}"
+    },
+    {
+      "angle": "A specific recent placement",
+      "line": "That {specific recent job} you posted is a real recruiting win. A placement like that belongs on a page employers and candidates both see.",
+      "hook": "Pick their newest hiring or placement post and name it: the role, the shift and the type of employer.",
+      "linkLine": "That placement on your staffing site: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner} — that {specific recent job} you posted is a real recruiting win.\n\nI looked for a site for {Business Name} and found job posts on social media, but no jobs board a candidate could search and no way for an employer to send a headcount request. I put together a sample staffing site with both doors, with marked placeholders where your photos would go.\n\nWould it help if I sent it over?",
+    "dm2": "{Owner} — following up in case my last note got buried under applications. Here's the sample staffing site for {Business Name}: {demo-link}\n\nIt has a searchable jobs board with apply-by-text, an employer headcount request, and pages for onboarding and pay day questions. If it's not useful, tell me and I'll leave you alone.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for staffing agencies here in {City}. I sent you a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"No surprise, recruiting days are long. Short version: I built a sample site for {Business Name} with a jobs board candidates can search, an employer headcount request and a first-day checklist, with marked placeholders where your photos would go. Can I email you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range}, then {Care Range} a month for hosting and changes. For an agency your size I'd quote about {Build Price}, less than one direct-hire fee.\"\n\"Can I walk you through it for ten minutes this week, after the morning dispatch?\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. We start the day it clears.\"",
+    "objections": [
+      {
+        "objection": "We post jobs on the big job boards already.",
+        "handler": "\"Keep posting there. Those boards send candidates to your own jobs page, and an applicant who lands on your site stays your applicant instead of seeing a competitor's ad next to yours.\""
+      },
+      {
+        "objection": "Our employers find us through relationships, not the web.",
+        "handler": "\"They do. Their HR team still checks your staffing agency online before signing, and a night supervisor who needs workers wants a request form, not your cell.\""
+      },
+      {
+        "objection": "We already have applicant tracking software.",
+        "handler": "\"Good, the site sits in front of it. Jobs and applications flow to the system you already use, in whatever way it accepts them.\""
+      },
+      {
+        "objection": "Candidates just walk in or text us.",
+        "handler": "\"Keep both. The jobs board and apply-by-text catch the ones who look at night and never walk in.\""
+      },
+      {
+        "objection": "We tried a website. It never brought in employers.",
+        "handler": "\"Most staffing sites are built for candidates only. This one has a separate employer door with a headcount request and a recruiter call booking.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}, because it's two sites in one: a jobs board and an employer request. That's less than one direct-hire fee.\""
+      }
+    ],
+    "email": {
+      "subject": "Jobs board and employer page for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for staffing and recruiting agencies around {City}. {Business Name} posts open jobs on social media, but candidates can't search them and employers have nowhere to send a headcount request.\n\nI built a sample first rather than ask for your time: a jobs board with apply-by-text, an employer headcount request with shifts and start dates, a first-day onboarding checklist and a timesheets and pay day page, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and changes. If not, no problem, it comes down at the end of the month.\n\nWorth ten minutes on the phone this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build websites for staffing agencies in {City}, and I made a sample site for {Business Name} with a jobs board and an employer request form. I'll email you the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner} — I'm taking the {Business Name} staffing demo down on Friday.\n\nWant me to leave it up? One word is fine either way.",
+    "nurture": "Hi {Owner} — warehouses around {City} start planning peak season staffing about now. Thought of you.\n\nThe staffing site with the jobs board and employer request is still here, same price. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to less than one direct-hire fee; it's a staffing agency's easiest comparison.",
+      "Price it as two sites in one: the candidate jobs board and the employer door are each core.",
+      "Charge for bilingual applications separately; light industrial agencies feel that gap first.",
+      "Price industry pages one at a time: warehouse, manufacturing, clerical and skilled trades each read differently to an employer.",
+      "Never publish fill rates, placement counts or pay ranges the agency hasn't posted itself.",
+      "Keep monthly add-ons below one week's markup on a single temp worker."
+    ],
+    "lineItems": [
+      {
+        "item": "Searchable jobs board with apply-by-text",
+        "min": 600,
+        "max": 1500,
+        "unit": "one-time",
+        "description": "Max with filters by shift, location and role, apply-by-text, and jobs the recruiter can post from a phone.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Employer headcount request",
+        "min": 400,
+        "max": 900,
+        "unit": "one-time",
+        "description": "Max with roles, headcount, shifts, PPE, site address and a recruiter call booking.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Bilingual application",
+        "min": 300,
+        "max": 800,
+        "unit": "one-time",
+        "description": "Max with the full application and job pages in two languages and a language toggle that remembers the choice.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Industry page for employers (each)",
+        "min": 250,
+        "max": 600,
+        "unit": "per-page",
+        "description": "Max when each page lists roles filled, shift options and the safety visit process for that industry.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Onboarding and pay day pages",
+        "min": 300,
+        "max": 700,
+        "unit": "one-time",
+        "description": "Max with first-day checklist, document list, timesheet steps and a worker help request.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Location pages by job site cluster (each)",
+        "min": 150,
+        "max": 400,
+        "unit": "per-page",
+        "description": "Max when each page lists open jobs in that area and directions to the agency office.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Hiring event promotion",
+      "min": 200,
+      "max": 500,
+      "unit": "per-job",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Each walk-in hiring day gets a landing page, a flyer and posts in two languages, all pointing to the staffing agency's jobs board.\"",
+      "when": "Before each hiring event, starting the month after launch."
+    },
+    {
+      "name": "Google profile upkeep with job posts",
+      "min": 120,
+      "max": 250,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"New openings posted to your Google profile each week, so 'temp agency near me' shows an agency that's actively hiring.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Employer outreach to plants and warehouses",
+      "min": 400,
+      "max": 1000,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A short monthly note to HR and operations managers at nearby plants, offering a staffing call and the headcount request link.\"",
+      "when": "Month 2, once the employer door is live."
+    },
+    {
+      "name": "Office photo and recruiter headshots",
+      "min": 300,
+      "max": 800,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Real photos of the office and each recruiter make the staffing site feel safe to a first-time applicant and credible to an HR manager.\"",
+      "when": "Month 2."
+    },
+    {
+      "name": "Worker and employer review requests",
+      "min": 99,
+      "max": 199,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Workers who finish an assignment and employers who convert a temp each get a short review request at the right moment.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Peak season recruiting campaign",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Before the autumn peak, a recruiting push for warehouse and seasonal shifts across social and local channels, all landing on the jobs board.\"",
+      "when": "Late summer each year."
+    },
+    {
+      "name": "Employer capability deck",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A short deck for HR meetings: roles filled, safety visit process, onboarding steps and conversion terms, matching the staffing site.\"",
+      "when": "Month 3, before the next employer pitch."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Employers they staff",
+        "whoPays": "The employer",
+        "min": 2500,
+        "max": 8000,
+        "unit": "one-time",
+        "pitchLine": "\"The plant you staff every week has a careers page nobody can find. Your recruiter can introduce me to their HR lead.\"",
+        "whyItWorks": "Employers trust the staffing partner who keeps their lines running."
+      },
+      {
+        "route": "Drug testing and background screening providers",
+        "whoPays": "The screening provider, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The screening clinic your agency sends candidates to needs a booking page that agencies and employers can use.\"",
+        "whyItWorks": "Screening providers depend on agency volume and listen to them."
+      },
+      {
+        "route": "Forklift and safety training schools",
+        "whoPays": "The training school",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The forklift school that trains your candidates has a class schedule in a PDF. Your agency could send them students through a better page.\"",
+        "whyItWorks": "Training schools and staffing firms share the same candidates."
+      },
+      {
+        "route": "Uniform, boot and PPE suppliers",
+        "whoPays": "The supplier, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The boot and PPE shop where your workers gear up needs an order page for agencies and employers.\"",
+        "whyItWorks": "PPE suppliers sell to every new placement."
+      },
+      {
+        "route": "Workforce development boards",
+        "whoPays": "The workforce board",
+        "min": 2000,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"The workforce board you partner with on hiring events has an events page that's hard to use on a phone. You can get me a meeting.\"",
+        "whyItWorks": "Workforce boards fund job-seeker outreach and trust agencies that place people."
+      },
+      {
+        "route": "Shuttle and van transport for workers",
+        "whoPays": "The transport company, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The van service that drives your workers to the industrial park needs a schedule page riders can check.\"",
+        "whyItWorks": "Transport partners depend on staffing agencies for riders."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Job description writer for the employer's HR team",
+        "whoPays": "The employer, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"HR managers describe the role in a sentence, and the assistant drafts a job description in plain language, ready for their careers page or the staffing order.\"",
+        "whyItWorks": "Every employer hates writing job descriptions, and the agency client gets cleaner orders."
+      },
+      {
+        "route": "Appointment assistant for the screening clinic",
+        "whoPays": "The screening provider, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Candidates text to book a screening, and the assistant schedules them and tells the recruiting agency when it's done.\"",
+        "whyItWorks": "Faster screening means faster starts for the agency's placements."
+      },
+      {
+        "route": "Class enrolment assistant for the training school",
+        "whoPays": "The training school, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"Prospective students ask about forklift class dates and costs, and the assistant answers from the school's schedule and books a seat.\"",
+        "whyItWorks": "The staffing client sends students, and the school fills classes."
+      },
+      {
+        "route": "Reorder assistant for the PPE supplier",
+        "whoPays": "The supplier, annually",
+        "min": 2000,
+        "max": 6000,
+        "unit": "per-year",
+        "pitchLine": "\"Agencies tell the assistant next week's new starts and sites, and it drafts the boot, vest and glove order from the supplier's stock.\"",
+        "whyItWorks": "It ties every new placement to one supplier."
+      },
+      {
+        "route": "Job seeker intake assistant for the workforce board",
+        "whoPays": "The workforce board, annually",
+        "min": 3000,
+        "max": 10000,
+        "unit": "per-year",
+        "pitchLine": "\"Job seekers answer a few questions by text, and the assistant points them to hiring events, training and partner staffing agencies.\"",
+        "whyItWorks": "Boards are funded for outreach, and the agency client is a partner."
+      },
+      {
+        "route": "Ride matching for the worker shuttle",
+        "whoPays": "The transport company, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"Workers text their address and shift, and the assistant drafts the van route for the next morning's staffing assignments.\"",
+        "whyItWorks": "Better routes mean fewer no-shows for the agency."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Apply-by-text auto reply",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Every candidate who texts about a job gets an instant reply with the application link and the staffing office's walk-in hours.\"",
+      "whenAndWhatItTakes": "Day 30. Needs a text-enabled number and wording they approve."
+    },
+    {
+      "name": "Shift confirmation texts",
+      "kind": "automation",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"The night before each assignment, workers get the site, start time, PPE list and who to ask for, and must reply to confirm.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the daily assignment list and worker phone numbers."
+    },
+    {
+      "name": "Candidate screener in two languages",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Applicants answer the recruiter's questions on shifts, transport and experience in their language, and the recruiter sees a ranked shortlist.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the recruiters' standard questions and must-haves per role. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Worker availability board",
+      "kind": "software",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"Who's available tomorrow, for which shifts, with which certificates and transport, on one board for the staffing desk.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the worker list and how they currently track availability."
+    },
+    {
+      "name": "Employer portal for orders and timesheets",
+      "kind": "software",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 9000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Employers place headcount orders, approve timesheets and rate workers from one portal, without calling the recruiting office.\"",
+      "whenAndWhatItTakes": "Month 5. Needs employer logins and the timesheet process."
+    },
+    {
+      "name": "Job post writer",
+      "kind": "ai",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1200,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Recruiters type the order details, and it drafts the job post in two languages with shift, pay as approved and requirements, ready for the jobs board.\"",
+      "whenAndWhatItTakes": "Month 2. Needs past posts and the agency's rules for what to publish. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "No-show backfill alerts",
+      "kind": "automation",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1200,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"When a worker doesn't confirm a shift, the next available worker gets an offer by text before the staffing desk opens.\"",
+      "whenAndWhatItTakes": "Month 4, with the availability board and shift confirmations."
+    },
+    {
+      "name": "Onboarding document checklist app",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"New hires upload their documents and complete orientation steps on a phone, and the recruiter sees what's missing before the first shift.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their onboarding steps, reviewed by their own adviser for document handling."
+    },
+    {
+      "name": "Employer call answering after hours",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 200,
+      "monthlyMax": 500,
+      "pitchLine": "\"It answers the agency line at night, takes the supervisor's headcount and shift, and texts the on-call recruiter a summary.\"",
+      "whenAndWhatItTakes": "Month 4. Needs on-call rules and the questions recruiters always ask. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Placement and margin dashboard",
+      "kind": "software",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 6000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"See hours billed, markup and fill time by employer, so the owner knows which staffing accounts are worth chasing.\"",
+      "whenAndWhatItTakes": "Month 6. Needs a few months of hours and bill rates."
+    },
+    {
+      "name": "Resume and application summariser",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"Each application or resume becomes a short recruiter summary: shifts wanted, experience, transport and certificates, ready for the morning call list.\"",
+      "whenAndWhatItTakes": "Month 3. Needs sample applications and the recruiter's preferred summary format. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Redeploy reminders at assignment end",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 40,
+      "monthlyMax": 100,
+      "pitchLine": "\"A week before an assignment ends, the worker gets a note about upcoming jobs, so good temps stay with the agency.\"",
+      "whenAndWhatItTakes": "Month 4. Needs assignment end dates."
+    },
+    {
+      "name": "Worker feedback and rating log",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Supervisors rate each temp after a shift, and the recruiter sees who to send back and who needs a different staffing assignment.\"",
+      "whenAndWhatItTakes": "Month 5, with the employer portal."
+    },
+    {
+      "name": "Chatbot for worker pay and shift questions",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"Workers ask 'when is pay day' or 'where do I report Monday' and get the staffing agency's approved answer instead of calling the office.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the pay and onboarding pages and approved answers only. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Hiring event check-in app",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 40,
+      "monthlyMax": 100,
+      "pitchLine": "\"Candidates check in at the hiring event on a tablet, start the application there, and recruiters see the line in order.\"",
+      "whenAndWhatItTakes": "Month 3, before the next hiring event."
+    },
+    {
+      "name": "Employer proposal writer",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"After an employer meeting, the recruiter's notes become a drafted staffing proposal with roles, shifts, onboarding steps and terms for approval.\"",
+      "whenAndWhatItTakes": "Month 4. Needs past proposals and standard terms. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Certificate expiry tracker",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 40,
+      "monthlyMax": 100,
+      "pitchLine": "\"Forklift cards and safety certificates for every worker, with alerts before they expire so the recruiting desk doesn't send someone unqualified.\"",
+      "whenAndWhatItTakes": "Month 5. Needs certificate records per worker."
+    },
+    {
+      "name": "Review reply drafts for workers and employers",
+      "kind": "ai",
+      "oneTimeMin": 250,
+      "oneTimeMax": 600,
+      "monthlyMin": 59,
+      "monthlyMax": 149,
+      "pitchLine": "\"When a worker or a plant manager posts about the staffing agency, a reply that fits who wrote it is ready for the owner to approve.\"",
+      "whenAndWhatItTakes": "Month 2, with review requests. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Bid notice watcher for public staffing contracts",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 120,
+      "monthlyMax": 300,
+      "pitchLine": "\"Counties, schools and hospitals post temporary staffing contracts on public portals. It flags the ones in the agency's roles and region.\"",
+      "whenAndWhatItTakes": "Month 6. Needs the portals they're registered on. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Referral bonus tracker",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 40,
+      "monthlyMax": 100,
+      "pitchLine": "\"Workers refer friends with a personal link, and the agency tracks which referrals worked enough hours to earn the bonus the agency set.\"",
+      "whenAndWhatItTakes": "Month 5. Needs the agency's referral rules and hours data."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Two-door staffing site as a monthly product",
+      "whoPays": "Independent staffing agencies, monthly",
+      "min": 99,
+      "max": 299,
+      "unit": "monthly",
+      "pitchLine": "\"Independent agencies need a jobs board and an employer door. I license the staffing site monthly with their jobs loaded.\"",
+      "whyItWorks": "The first agency paid for the build and taught you the two-sided workflow."
+    },
+    {
+      "route": "Staffing association member offer",
+      "whoPays": "The association",
+      "min": 2000,
+      "max": 8000,
+      "unit": "one-time",
+      "pitchLine": "\"Member staffing firms get a jobs board, employer request and onboarding pages as a benefit of belonging.\"",
+      "whyItWorks": "Associations want tools members use daily; one deal reaches many agencies."
+    },
+    {
+      "route": "Staffing franchise office pages",
+      "whoPays": "The franchise brand, per office",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "pitchLine": "\"Each staffing office gets local jobs, local employer requests and recruiter pages under the brand. One build, every office.\"",
+      "whyItWorks": "Franchise systems buy per location."
+    },
+    {
+      "route": "Workforce board partner agency portal",
+      "whoPays": "The workforce board",
+      "min": 6000,
+      "max": 20000,
+      "unit": "one-time",
+      "pitchLine": "\"Partner staffing agencies post jobs to one regional portal that job seekers can search, with applications routed to each agency.\"",
+      "whyItWorks": "Boards fund regional job access, and the client's jobs board is the proof."
+    },
+    {
+      "route": "Distribution centre contingent workforce portal",
+      "whoPays": "The distribution centre operator",
+      "min": 8000,
+      "max": 25000,
+      "unit": "one-time",
+      "pitchLine": "\"Every staffing vendor posts confirmed workers, timesheets and ratings to one portal per site, so the operations manager stops reconciling spreadsheets.\"",
+      "whyItWorks": "Large sites juggle several agencies; the client's employer portal shows you understand it."
+    },
+    {
+      "route": "HR consultants' recruiting page template",
+      "whoPays": "The HR consultancy, per client site",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "pitchLine": "\"HR consultants set up careers pages for small employers. My recruiting template gives them a jobs board ready to brand.\"",
+      "whyItWorks": "Consultants sell the client; you sell the jobs board."
+    },
+    {
+      "route": "First staffing firm in each metro",
+      "whoPays": "Staffing agencies in other metros",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I built the two-door site for a staffing agency in {City}. I'll do it for one agency per metro, starting with whoever asks first.\"",
+      "whyItWorks": "Exclusivity sells, and staffing firms rarely compete across metros."
+    },
+    {
+      "route": "Industrial park hiring hub",
+      "whoPays": "The industrial park owner, annually",
+      "min": 2000,
+      "max": 6000,
+      "unit": "per-year",
+      "pitchLine": "\"Tenants in the park post openings to one hiring hub, with partner staffing agencies filling the temp roles.\"",
+      "whyItWorks": "Park owners sell easier hiring to tenants."
+    },
+    {
+      "route": "Community college job placement page",
+      "whoPays": "The college",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Graduates from short certificate programmes need first jobs. A page linking them to local staffing agencies and employers supports placement.\"",
+      "whyItWorks": "Colleges are measured on placement, and the client is a placement partner."
+    },
+    {
+      "route": "Temp cost estimator for employers, sponsored",
+      "whoPays": "Sponsoring staffing agencies, monthly",
+      "min": 99,
+      "max": 299,
+      "unit": "monthly",
+      "pitchLine": "\"Employers estimate a temp worker's weekly cost from the sponsoring agency's own bill rates and send the staffing request.\"",
+      "whyItWorks": "It never claims market rates, only the sponsor's."
+    },
+    {
+      "route": "Rebuild stalled staffing portals",
+      "whoPays": "The agency with an unfinished portal",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"An employer portal or jobs board left half-built is a short project for me. The timesheet and shift logic already runs for another staffing agency.\"",
+      "whyItWorks": "Budget already spent; they need someone who knows temp staffing."
+    },
+    {
+      "route": "Second-chance hiring nonprofits",
+      "whoPays": "The nonprofit, often grant-funded",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Re-entry programmes need employers and staffing partners willing to hire. A jobs page connecting their participants to those openings helps both.\"",
+      "whyItWorks": "Grants fund job access, and the staffing client is the employer link."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Two-door staffing site build plus care plan, one contract",
+      "min": 2200,
+      "max": 3800,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The staffing site and the care plan sit on one contract, so new jobs and new employer pages are a message to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Candidate screener in two languages",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "trigger": "Applications through the jobs board outpace what recruiters can call back.",
+      "line": "\"You're getting more applicants than calls in a day. Let the screener rank them so recruiting starts with the best fits.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "Shift confirmation texts",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "trigger": "An employer complains about a day-one no-show.",
+      "line": "\"That no-show cost your staffing desk trust with the plant. A confirm-by-text the night before catches it while there's time to backfill.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Employer outreach to plants and warehouses",
+      "min": 400,
+      "max": 1000,
+      "unit": "monthly",
+      "trigger": "The employer headcount request brings in its first order.",
+      "line": "\"An employer found the staffing request on their own. Let's put it in front of every plant near your office.\""
+    },
+    {
+      "rung": 5,
+      "day": 120,
+      "offer": "Worker availability board",
+      "min": 2000,
+      "max": 5000,
+      "unit": "one-time",
+      "trigger": "Recruiters start missing fills because availability lives in texts and notebooks.",
+      "line": "\"Your bench lives in each recruiter's phone. Put it on one board and fill orders faster.\""
+    },
+    {
+      "rung": 6,
+      "day": 240,
+      "offer": "Employer portal for orders and timesheets",
+      "min": 3000,
+      "max": 9000,
+      "unit": "one-time",
+      "trigger": "A large employer asks for online timesheet approval or a single view of their temps.",
+      "line": "\"Give that employer a portal for orders and timesheets, and switching staffing agencies becomes a hassle they won't take on.\""
+    },
+    {
+      "rung": 7,
+      "day": 365,
+      "offer": "Placement and margin dashboard",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "trigger": "The owner plans next year's accounts and asks which employers are worth it.",
+      "line": "\"Before you chase new accounts, see which staffing clients actually make money.\""
+    }
+  ]
+}

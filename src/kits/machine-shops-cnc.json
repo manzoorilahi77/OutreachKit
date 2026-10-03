@@ -1,0 +1,833 @@
+{
+  "schemaVersion": 1,
+  "category": "Machine shops & CNC",
+  "slug": "machine-shops-cnc",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "B2b family batch, rfq archetype. Buyer is an engineer or purchasing agent. No tolerances, machine counts or quality registrations are stated; those stay as bracketed placeholders the shop fills. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Prototype to production path",
+      "contains": "How a one-off prototype becomes a short run and then a repeat order, design-for-machining feedback, revision handling and when a fixture is worth building",
+      "why": "Engineers pick a machine shop for the prototype and stay for production only if the path is clear. Showing it wins the first part with the second in mind."
+    },
+    {
+      "section": "Drawing files, revisions and NDA",
+      "contains": "Accepted formats (STEP, IGES, DXF, PDF drawings), how revisions are tracked, NDA before files on request, and how customer files are stored and deleted",
+      "why": "Purchasing won't send a drawing to a CNC shop that looks careless with files. Answering file handling first removes the reason to hesitate."
+    },
+    {
+      "section": "Inspection and traceability records",
+      "contains": "Inspection equipment the shop lists, first-article and in-process reports, material certs and lot traceability, and [quality system, if held] as a placeholder",
+      "why": "Precision machining buyers ask for paperwork before price. A shop that shows what comes with each part shortens the approval."
+    },
+    {
+      "section": "Secondary operations after machining",
+      "contains": "Anodizing, plating, heat treat, passivation, deburr, engraving, assembly and kitting, and which outside processes run through named partner shops",
+      "why": "Buyers want one machining vendor to deliver a finished part. Listing secondary operations stops them splitting the order."
+    },
+    {
+      "section": "Shop load and expedite queue",
+      "contains": "Current lead time window by job type, how rush and expedite work is priced and slotted, and how a buyer reserves spindle time for a known release",
+      "why": "Most RFQs to a machine shop are really a question about when. A live lead-time window answers it before the buyer calls three shops."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C10",
+      "siteType": "local-conversion",
+      "name": "Job Shop",
+      "heroLayout": "split-photo",
+      "mood": [
+        "plain",
+        "capable",
+        "direct"
+      ],
+      "bestFor": "Small job shops taking prototypes, repairs and short runs from local engineers",
+      "pairsWithTier": "starter",
+      "headlineSample": "CNC machining in {City}, prototypes to short runs",
+      "whyItFits": "Steel Invoice's neutral sans and clean tables suit a small machine shop that sells on response time, not on a brand."
+    },
+    {
+      "id": "b",
+      "themeId": "C19",
+      "siteType": "b2b-capability",
+      "name": "Spindle Spec",
+      "heroLayout": "card-stack",
+      "mood": [
+        "exact",
+        "technical",
+        "quiet"
+      ],
+      "bestFor": "Production machine shops quoting OEMs, engineers and purchasing departments",
+      "pairsWithTier": "standard",
+      "headlineSample": "Precision CNC machining for {City} manufacturers",
+      "whyItFits": "The family combo. Mono labels and a dark gunmetal page read like a machine control screen and keep materials and lead times tabular."
+    },
+    {
+      "id": "c",
+      "themeId": "C5",
+      "siteType": "editorial-trust",
+      "name": "Inspection Record",
+      "heroLayout": "type-led",
+      "mood": [
+        "documented",
+        "careful",
+        "established"
+      ],
+      "bestFor": "Established precision shops selling traceability and inspection paperwork to regulated buyers",
+      "pairsWithTier": "premium",
+      "headlineSample": "Precision machining in {City}, inspected and documented",
+      "whyItFits": "Counting House was made for audit trails. Bookish serifs and a ledger feel make inspection reports and material certs the product."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your machine shop shows up on Maps with an address and a phone number and nothing else, so an engineer with a part to quote can't tell what you machine before calling.",
+      "hook": "Open their Maps listing and confirm there is no Website button. Screenshot it for when they reply.",
+      "linkLine": "What an engineer would see behind that button: {demo-link}"
+    },
+    {
+      "angle": "Directory listing only",
+      "line": "The only place I could find your CNC shop online is an old industrial directory entry. Purchasing agents use that to find names, then open the shop's own site to decide.",
+      "hook": "Search the shop name plus city and note where it shows up. If it's only directories, the angle holds.",
+      "linkLine": "A machining site a buyer can actually open: {demo-link}"
+    },
+    {
+      "angle": "Dead free host",
+      "line": "The site on your listing is a free page with a broken contact form and no machine list. An engineer sending a drawing gives a machine shop one chance to answer.",
+      "hook": "Open the site and test the form, or find a builder banner or old year. Note what you find.",
+      "linkLine": "Same machine shop, with a form that works: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "On a phone your machining site's photos push the contact details off the page. Buyers often shortlist CNC shops from the floor or the car.",
+      "hook": "Only if they have a site. Load it on your phone and note what breaks. Screenshot it for when they reply.",
+      "linkLine": "The same CNC site, built for a phone: {demo-link}"
+    },
+    {
+      "angle": "No way to upload a STEP file",
+      "line": "There's no way to send your shop a STEP file and a drawing except by guessing an email address. A request page with file upload and quantity would bring in cleaner machining RFQs.",
+      "hook": "Check their site and listing for a quote form with file upload. If there is none, the angle holds.",
+      "linkLine": "A machining RFQ that takes the model and the drawing: {demo-link}"
+    },
+    {
+      "angle": "Parts posted, then gone",
+      "line": "Your posts of finished CNC parts in aluminum and stainless are the proof engineers look for, and they disappear down the feed in a week.",
+      "hook": "Find one finished part post and name the material and machine type if you can tell.",
+      "linkLine": "Your machined parts on a page that stays: {demo-link}"
+    },
+    {
+      "angle": "Reviews from engineers",
+      "line": "A reviewer thanked your shop for turning a prototype around before their deadline. That's the line a product engineer needs to see next to the CNC quote form.",
+      "hook": "Read their reviews and copy one phrase about turnaround or a specific part. Quote it if they reply.",
+      "linkLine": "Your reviews beside the machining RFQ: {demo-link}"
+    },
+    {
+      "angle": "Year-end engineering budgets",
+      "line": "Engineering teams spend what's left of the budget on prototypes before the fiscal year closes. The machine shops they can find that quarter get the rush parts.",
+      "hook": "Use this in the last quarter of the calendar year or before a big local manufacturer's fiscal year-end.",
+      "linkLine": "A machine shop page ready for year-end prototype runs: {demo-link}"
+    },
+    {
+      "angle": "RFQs after the shift",
+      "line": "Engineers send RFQs at night and on weekends when the design is finally done. If your machine shop only answers the phone on first shift, the part goes to whoever replies first.",
+      "hook": "Call after hours and note whether anything takes a message. Look for posted hours on the listing.",
+      "linkLine": "A CNC site that takes the RFQ after the shift: {demo-link}"
+    },
+    {
+      "angle": "Hiring a machinist",
+      "line": "Saw you're looking for a CNC machinist. Good machinists check a shop's equipment and work online before they apply, the same way buyers do.",
+      "hook": "Only if they posted a hiring note or a sign. Note the date and the role.",
+      "linkLine": "A machine shop site with a careers page: {demo-link}"
+    },
+    {
+      "angle": "Ships beyond the metro",
+      "line": "Your machine shop ships parts out of state, but nothing online says so. An engineer two states away searching for CNC capacity has no reason to send you a drawing.",
+      "hook": "Look for posts or reviews mentioning shipping or out-of-area customers. Name one if you find it.",
+      "linkLine": "A machining site that says where you ship: {demo-link}"
+    },
+    {
+      "angle": "POs and net terms",
+      "line": "New buyers ask a machine shop about purchase orders, net terms and tax forms before the first part. A page that answers those gets the CNC vendor setup done without a call.",
+      "hook": "Only if they already sell to businesses. Check reviews and posts for company customers first.",
+      "linkLine": "Vendor setup answered on the machining site: {demo-link}"
+    },
+    {
+      "angle": "Quality paperwork",
+      "line": "Buyers ask a precision machining shop what inspection paperwork comes with each part before they ask price. A page that lists it answers the question early.",
+      "hook": "Look for any quality registration or inspection mention on their listing or posts. Never claim one you didn't see.",
+      "linkLine": "Inspection and traceability on one machining page: {demo-link}"
+    },
+    {
+      "angle": "A few big customers",
+      "line": "It sounds like your CNC work comes from a few long-time customers. When one of them moves a product line, a shop that never needed a website suddenly needs new buyers fast.",
+      "hook": "Look for posts or reviews that mention one main customer or industry. Name the industry, not the company.",
+      "linkLine": "Where a new machining buyer would land: {demo-link}"
+    },
+    {
+      "angle": "A specific recent part",
+      "line": "That {specific recent job} you posted is real precision machining. A part like that belongs on a project page an engineer can show their boss before sending you the next drawing.",
+      "hook": "Pick their newest part post and name it: material, part type and the machine if visible.",
+      "linkLine": "That part on a machining project page: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner} — that {specific recent job} you posted is clean machining.\n\nI looked for a site for {Business Name} and couldn't find anywhere an engineer could send a STEP file or see what materials you cut. I put together a sample machine shop page with an RFQ that takes the model and drawing, and a prototype-to-production section, with marked placeholders where your photos would go.\n\nWould it help if I sent it over?",
+    "dm2": "{Owner} — following up in case my last note got buried under work orders. Here's the sample site for {Business Name}: {demo-link}\n\nIt has an RFQ with file upload and quantity breaks, a file handling and NDA section, and a lead-time window you can update yourself. If it's not useful, tell me and I'll leave you alone.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for machine shops here in {City}. I sent you a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"Understandable, you're running spindles. Short version: I built a sample site for {Business Name} with an RFQ that takes STEP files and drawings, a section on file handling and NDAs, and a lead-time window, with marked placeholders where your photos would go. Can I email you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range}, then {Care Range} a month for hosting and changes. For a shop your size I'd quote about {Build Price}, less than one decent production order.\"\n\"Can I walk you through it for ten minutes this week, before first shift or after it?\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. We start the day it clears.\"",
+    "objections": [
+      {
+        "objection": "We're full. We don't need more RFQs.",
+        "handler": "\"Then the site is how you pick better work. An RFQ that asks material, quantity and tolerance class up front lets you pass on the jobs that clog the machines.\""
+      },
+      {
+        "objection": "Our customers have been with us for years.",
+        "handler": "\"Good. The site is insurance for the day one of them moves a product line. New machining buyers check a shop's site before they send a drawing.\""
+      },
+      {
+        "objection": "Engineers won't upload files to a small shop's website.",
+        "handler": "\"They will if the page says how files are handled and offers an NDA first. That's why that section is on the demo.\""
+      },
+      {
+        "objection": "We get RFQs from the online sourcing platforms.",
+        "handler": "\"Those buyers shop on price. A direct RFQ page brings engineers who found you by process and region, and they don't take a platform cut.\""
+      },
+      {
+        "objection": "I don't want to publish our machine list for competitors.",
+        "handler": "\"You choose what goes up. Many shops list materials, part size ranges and processes, and keep the exact machines for the quote.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}, because it's an RFQ with file upload, a file handling page and a lead-time window. That's less than one production order.\""
+      }
+    ],
+    "email": {
+      "subject": "RFQ page with file upload for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for machine shops and CNC job shops around {City}. I couldn't find a way for an engineer to send {Business Name} a model and a drawing, or to see what you machine, without calling.\n\nI built a sample first rather than ask for your time: an RFQ that takes STEP files and PDF drawings with quantity breaks, a file handling and NDA section, a prototype-to-production path, and a lead-time window you can update, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and changes. If not, no problem, it comes down at the end of the month.\n\nWorth ten minutes on the phone this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build websites for machine shops in {City}, and I made a sample site for {Business Name} with an RFQ that takes STEP files. I'll email the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner} — I'm taking the {Business Name} machine shop demo down on Friday.\n\nWant me to keep it up a while longer? One word is fine either way.",
+    "nurture": "Hi {Owner} — engineering teams around {City} start spending year-end prototype budgets about now. Thought of you.\n\nThe CNC site with the file upload RFQ is still here, same price. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to one small production order, not to a single prototype part.",
+      "The RFQ with STEP and drawing upload is the core; quote it first and price the rest as additions.",
+      "Charge for secure file handling separately when they need NDAs or restricted storage.",
+      "Price industry pages one at a time; medical, aerospace, energy and food equipment buyers each read capability differently.",
+      "Keep monthly add-ons below an hour or two of spindle time, so nobody questions them at year-end.",
+      "Never write a tolerance, a machine count or a registration on the page unless the shop supplies it in writing."
+    ],
+    "lineItems": [
+      {
+        "item": "RFQ with model and drawing upload",
+        "min": 500,
+        "max": 1200,
+        "unit": "one-time",
+        "description": "Max with multi-file upload, material and finish pickers, quantity breaks, due date and an NDA checkbox.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Secure file handling and NDA flow",
+        "min": 400,
+        "max": 1000,
+        "unit": "one-time",
+        "description": "Max with an e-signed NDA before upload, restricted storage and automatic file deletion after quoting.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Industry page (each)",
+        "min": 250,
+        "max": 600,
+        "unit": "per-page",
+        "description": "Max when each page carries sample parts, materials and the paperwork that industry asks for.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Lead-time window the owner updates",
+        "min": 250,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max with separate windows for prototype, short run and production, editable from a phone.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Downloadable line card and capability sheet",
+        "min": 300,
+        "max": 800,
+        "unit": "one-time",
+        "description": "Max when it carries materials, processes, part size ranges, inspection equipment and the quality placeholder the shop fills.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Part gallery (per part)",
+        "min": 50,
+        "max": 150,
+        "unit": "per-page",
+        "description": "Max when each part shows material, process, secondary operations and quantity, cleared by the customer.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Engineering buyer outreach by industry",
+      "min": 400,
+      "max": 1000,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Each month, a short note to engineers and buyers at manufacturers in one industry, showing a machined part like theirs and the RFQ link.\"",
+      "when": "Month 3, once there are a few cleared parts to show."
+    },
+    {
+      "name": "Part and machine photo day",
+      "min": 500,
+      "max": 1200,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"One afternoon shooting finished parts on a clean surface and the machines cutting gives the CNC site real proof without breaking any NDA.\"",
+      "when": "Month 2, using only parts customers have cleared in writing."
+    },
+    {
+      "name": "Google profile upkeep for machining",
+      "min": 120,
+      "max": 250,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Process and material posts on your Google profile, so 'CNC machining near me' finds a shop that looks active.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Trade show booth and line card design",
+      "min": 600,
+      "max": 1800,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"The regional manufacturing show is where machine shops meet buyers. A booth panel and line card that match the site make the visit count.\"",
+      "when": "Two months before the regional manufacturing show they attend."
+    },
+    {
+      "name": "Sample part case studies",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Short write-ups of how the shop machined a tricky part: the material, the setup, the fix, with the customer's name only if they agree.\"",
+      "when": "Month 4, after two or three good jobs the customer will clear."
+    },
+    {
+      "name": "Engineer reference and review requests",
+      "min": 79,
+      "max": 179,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"After an on-time prototype ships, the engineer gets a short note asking for a review or a reference for the machine shop.\"",
+      "when": "Day 30."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Anodizing, plating and heat treat shops",
+        "whoPays": "The finishing shop, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"Who anodizes and heat treats your machined parts? Finishers need a drop-off and spec page as much as you did.\"",
+        "whyItWorks": "Finishers live on machine shop referrals and trust a shop that sends them parts every week."
+      },
+      {
+        "route": "Tooling and cutting tool distributors",
+        "whoPays": "The tooling distributor",
+        "min": 2500,
+        "max": 8000,
+        "unit": "one-time",
+        "pitchLine": "\"The rep who sells you end mills and inserts covers every CNC shop in the region with a catalog nobody can search. Introduce me.\"",
+        "whyItWorks": "Tooling distributors have budgets and a customer list of every machine shop nearby."
+      },
+      {
+        "route": "Product design and engineering firms",
+        "whoPays": "The design firm",
+        "min": 2000,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"The engineering firm that sends you prototype drawings has a portfolio site from years ago. Your introduction gets me a meeting.\"",
+        "whyItWorks": "Design firms trust the shop that makes their prototypes real and need portfolios to win clients."
+      },
+      {
+        "route": "Sheet metal and welding shops they sub to",
+        "whoPays": "The partner shop, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The fab shop that welds your machined parts into assemblies needs an RFQ page too. I'll build it on the same layout.\"",
+        "whyItWorks": "Partner shops trade work and buyers, and the RFQ layout carries over almost unchanged."
+      },
+      {
+        "route": "Used machine tool dealers",
+        "whoPays": "The machine dealer",
+        "min": 1500,
+        "max": 5000,
+        "unit": "one-time",
+        "pitchLine": "\"The dealer who sold you your last mill lists inventory in a spreadsheet. A machine shop owner's introduction gets me in.\"",
+        "whyItWorks": "Dealers trust repeat buyers, and an inventory site is a clear, budgeted project."
+      },
+      {
+        "route": "Industrial maintenance contractors",
+        "whoPays": "The maintenance contractor",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The millwrights who bring you broken shafts and bushings to machine need a capability page for the plants they serve.\"",
+        "whyItWorks": "They send the machine shop repair work and face the same plant buyers."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Spec-to-quote assistant for the finishing shop",
+        "whoPays": "The finishing shop",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"Machine shops drop in the drawing note for anodize or plating, and the finisher gets a draft quote by part size and spec.\"",
+        "whyItWorks": "Finishers quote many small lots; a draft saves hours and the machine shop sends the traffic."
+      },
+      {
+        "route": "Tool recommendation assistant for the distributor",
+        "whoPays": "The tooling distributor, annually",
+        "min": 3000,
+        "max": 12000,
+        "unit": "per-year",
+        "pitchLine": "\"CNC shops describe the material and operation, and the assistant suggests tools from the distributor's own catalog.\"",
+        "whyItWorks": "It keeps machine shops buying from one distributor, which the distributor values more than a discount."
+      },
+      {
+        "route": "Design-for-machining check for the engineering firm",
+        "whoPays": "The engineering firm, monthly",
+        "min": 200,
+        "max": 500,
+        "unit": "monthly",
+        "pitchLine": "\"Before a drawing goes to the machine shop, the assistant flags features that are hard or costly to machine for the engineer to review.\"",
+        "whyItWorks": "Engineers send cleaner drawings, and the machining client gets parts that quote faster."
+      },
+      {
+        "route": "Assembly quote helper for the partner fab shop",
+        "whoPays": "The partner fab shop",
+        "min": 1000,
+        "max": 3000,
+        "unit": "one-time",
+        "pitchLine": "\"The welding shop that assembles your machined parts drafts its assembly quotes from the same drawing package.\"",
+        "whyItWorks": "Built once around the CNC client's RFQs, sold through their trust."
+      },
+      {
+        "route": "Machine listing writer for the dealer",
+        "whoPays": "The machine dealer, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"The dealer uploads a used machine's nameplate and photos, and the assistant drafts the listing with travels and options for review.\"",
+        "whyItWorks": "Dealers list dozens of machines and hate writing listings."
+      },
+      {
+        "route": "Breakdown parts finder for maintenance contractors",
+        "whoPays": "The maintenance contractor, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Millwrights describe the broken shaft or bushing, and the assistant drafts the machining request with sizes for the shop.\"",
+        "whyItWorks": "Faster repairs for the plant, cleaner requests for the machine shop."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "RFQ acknowledgement and status texts",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 50,
+      "monthlyMax": 120,
+      "pitchLine": "\"Every RFQ gets an instant reply with the date the machine shop will quote by, so the engineer stops sending it to four other shops.\"",
+      "whenAndWhatItTakes": "Day 30. Needs the RFQ form live and their usual quote turnaround."
+    },
+    {
+      "name": "Machining quote calculator by cycle time",
+      "kind": "software",
+      "oneTimeMin": 2500,
+      "oneTimeMax": 6000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"Enter material, stock size, setups and cycle time, and it drafts the CNC quote with quantity breaks from your own shop rates.\"",
+      "whenAndWhatItTakes": "Month 2. Needs shop rates by machine type, material costs and a few past quotes to check against."
+    },
+    {
+      "name": "Drawing reader for RFQ intake",
+      "kind": "ai",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 200,
+      "monthlyMax": 450,
+      "pitchLine": "\"It reads the PDF drawing and pulls material, finish, quantity and title block notes into the quote sheet for the estimator to check.\"",
+      "whenAndWhatItTakes": "Month 3. Needs a set of past drawings with the quote sheets they produced. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Job traveler and routing app",
+      "kind": "software",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 12000,
+      "monthlyMin": 200,
+      "monthlyMax": 500,
+      "pitchLine": "\"Each machining job carries a digital traveler: operations, machine, inspection steps and sign-offs, visible from any terminal on the floor.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their current paper traveler and routing steps."
+    },
+    {
+      "name": "Quote follow-up sequence",
+      "kind": "automation",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 50,
+      "monthlyMax": 120,
+      "pitchLine": "\"A week after a CNC quote goes out, the buyer gets a short check-in, and the shop learns which quotes lost on price or lead time.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the quote log and a reply-to address they watch."
+    },
+    {
+      "name": "Inspection report builder",
+      "kind": "software",
+      "oneTimeMin": 2500,
+      "oneTimeMax": 7000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"Ballooned drawings, measured values and pass or fail in one first-article report that ships with the machined parts.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their current inspection forms and a quality lead to test it."
+    },
+    {
+      "name": "Quote writer from estimator notes",
+      "kind": "ai",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 120,
+      "monthlyMax": 300,
+      "pitchLine": "\"The estimator's rough notes become a clean machining quote with assumptions, exclusions and lead time in the shop's own wording.\"",
+      "whenAndWhatItTakes": "Month 3. Needs past quotes and standard terms. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Customer portal for orders and certs",
+      "kind": "software",
+      "oneTimeMin": 3500,
+      "oneTimeMax": 10000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Buyers log in to see open machining orders, ship dates, inspection reports and material certs without calling the front office.\"",
+      "whenAndWhatItTakes": "Month 6, after the traveler app. Needs the order list and where certs are stored."
+    },
+    {
+      "name": "Material cert matcher",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"It reads each mill cert as bar stock arrives and files it against the CNC jobs that use that heat, ready to ship with the parts.\"",
+      "whenAndWhatItTakes": "Month 5. Needs scanned certs and the job list. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Spindle utilisation dashboard",
+      "kind": "software",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 9000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"See which machines sat idle last week and which ran lights-out, so the next quote's lead time is based on real machine shop load.\"",
+      "whenAndWhatItTakes": "Month 7. Needs machine status from the controls or operator check-ins, and a willing shop lead."
+    },
+    {
+      "name": "Late order warning to buyers",
+      "kind": "automation",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1200,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"When a machining job slips past its promised date on the traveler, the buyer gets a heads-up with a new date before they have to ask.\"",
+      "whenAndWhatItTakes": "Month 5, with the traveler app. Needs promised dates on each order."
+    },
+    {
+      "name": "Setup sheet and program notes search",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 120,
+      "monthlyMax": 300,
+      "pitchLine": "\"A machinist asks how that part was fixtured last time and gets the setup sheet, offsets notes and tooling list instead of guessing.\"",
+      "whenAndWhatItTakes": "Month 6. Needs their setup sheets and program notes in one place. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Repeat part reorder page",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Repeat customers reorder machined parts by part number and revision, with the last price and lead time shown.\"",
+      "whenAndWhatItTakes": "Month 4. Needs repeat part numbers and current prices per customer."
+    },
+    {
+      "name": "Chatbot for material and process questions",
+      "kind": "ai",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 120,
+      "monthlyMax": 300,
+      "pitchLine": "\"It answers 'do you machine titanium' and 'can you do five-axis work' from the shop's real answers, then sends the engineer to the RFQ.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their material and process list. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Job costing per part number",
+      "kind": "software",
+      "oneTimeMin": 2500,
+      "oneTimeMax": 6000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"Compare quoted against actual hours, material and outside processing for each machined part number.\"",
+      "whenAndWhatItTakes": "Month 7. Needs traveler hours and purchase records for a few months."
+    },
+    {
+      "name": "Supplier and outside process tracker",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Know which machined parts are out at anodize or heat treat, when they're due back, and which finisher is running late.\"",
+      "whenAndWhatItTakes": "Month 5. Needs the list of outside processors and the jobs they touch."
+    },
+    {
+      "name": "Year-end prototype budget reminder",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 30,
+      "monthlyMax": 80,
+      "pitchLine": "\"In the last quarter, past prototype customers get a short note offering spindle time before their budget closes.\"",
+      "whenAndWhatItTakes": "Month 3, set to run each autumn. Needs the customer list with past prototype jobs."
+    },
+    {
+      "name": "Review reply and reference drafts",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 69,
+      "monthlyMax": 179,
+      "pitchLine": "\"Every review and reference request about the machine shop gets a draft reply in the owner's voice to approve.\"",
+      "whenAndWhatItTakes": "Month 2, with the reference requests. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Machinist applicant screener",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"CNC operator and machinist applicants answer the shop's questions on controls, setups and shifts, and the owner calls only the fits.\"",
+      "whenAndWhatItTakes": "Whenever they're hiring. Needs must-haves, pay range and shifts. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Sourcing notice watcher",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"It reads public procurement notices each week and flags machining packages that match the shop's materials and part sizes.\"",
+      "whenAndWhatItTakes": "Month 6. Needs the portals they're registered on and the work they want. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the cycle-time quote calculator for job shops",
+      "whoPays": "Machine shops, monthly",
+      "min": 99,
+      "max": 299,
+      "unit": "monthly",
+      "pitchLine": "\"I built a CNC quoting calculator for one job shop. Every small machine shop quotes from a spreadsheet the owner built years ago.\"",
+      "whyItWorks": "The first shop taught you the quoting logic and paid for it. Small shops everywhere quote the same way."
+    },
+    {
+      "route": "Shop finder licensed to a machine tool distributor",
+      "whoPays": "The machine tool distributor, annually",
+      "min": 5000,
+      "max": 25000,
+      "unit": "per-year",
+      "pitchLine": "\"Put a find-a-machine-shop map on your site for every shop running the machines you sold. Engineers find capacity, and your customers get work.\"",
+      "whyItWorks": "Distributors want their machine owners busy, because busy shops buy the next machine."
+    },
+    {
+      "route": "Precision machining association member kit",
+      "whoPays": "The association",
+      "min": 2000,
+      "max": 8000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer every member machine shop an RFQ page with file upload and a capability sheet template as a membership benefit.\"",
+      "whyItWorks": "Associations need renewal reasons, and one deal reaches many shop owners."
+    },
+    {
+      "route": "Manufacturing extension partnership referrals",
+      "whoPays": "The extension centre, per shop",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "pitchLine": "\"Your advisers help small manufacturers grow. A ready RFQ site for each CNC shop you advise is a concrete deliverable.\"",
+      "whyItWorks": "Extension centres fund growth projects for small manufacturers and need vendors who know the work."
+    },
+    {
+      "route": "Supplier portal for an OEM's machined parts",
+      "whoPays": "The OEM",
+      "min": 10000,
+      "max": 35000,
+      "unit": "one-time",
+      "pitchLine": "\"Every outside machine shop gets RFQs, drawings, revisions and certs through one portal tied to your purchase orders.\"",
+      "whyItWorks": "OEMs juggle many small machining suppliers. The shop client's RFQ workflow is proof you understand both sides."
+    },
+    {
+      "route": "White-label machine shop template for industrial agencies",
+      "whoPays": "The agency, per site",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency picks up machining clients and starts from a blank page. License my CNC template with the secure RFQ built in.\"",
+      "whyItWorks": "Agencies sell the client; you sell the file-upload RFQ you already perfected."
+    },
+    {
+      "route": "Same machine shop kit in the next region",
+      "whoPays": "New CNC shop clients in a new region",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I build for one machine shop per region. {City} is spoken for, and the next manufacturing region is open.\"",
+      "whyItWorks": "Non-competing geography lets you reuse the template, pitch and proof."
+    },
+    {
+      "route": "Industrial park tenant capability directory",
+      "whoPays": "The industrial park owner, annually",
+      "min": 2000,
+      "max": 6000,
+      "unit": "per-year",
+      "pitchLine": "\"A directory of every machine shop, fabricator and finisher in the park, so tenants buy from each other and new tenants see the supply chain.\"",
+      "whyItWorks": "Park owners sell space on the strength of the local supply chain."
+    },
+    {
+      "route": "Community college machining programme pipeline",
+      "whoPays": "The college",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Each term ends with CNC operators looking for a first job. A page of local machine shops with open roles turns your programme into a hiring channel.\"",
+      "whyItWorks": "Colleges are judged on placement, and the shop client is a hiring employer."
+    },
+    {
+      "route": "CNC part cost estimator sponsored by shops",
+      "whoPays": "Sponsoring machine shops, monthly",
+      "min": 99,
+      "max": 299,
+      "unit": "monthly",
+      "pitchLine": "\"Engineers get a rough machining cost from material, size and quantity, and the sponsoring shop receives the RFQ.\"",
+      "whyItWorks": "It uses only the sponsor's own rates, so it never claims market data, and sends the sponsor qualified RFQs."
+    },
+    {
+      "route": "Rescue stalled shop-floor software builds",
+      "whoPays": "The stranded machine shop",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Half-built traveler or quoting tools are common in machine shops. I finish them, because I've shipped the same routing and quoting logic for another CNC shop.\"",
+      "whyItWorks": "Stranded clients already decided to buy. They need someone who knows the job shop workflow."
+    },
+    {
+      "route": "Contract manufacturing networks",
+      "whoPays": "The network, per member shop",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "pitchLine": "\"Your network routes jobs to member machine shops. Each one needs a capability page that matches the network's RFQ format.\"",
+      "whyItWorks": "Networks need consistent member pages, and one template serves every member."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Machine shop site build plus care plan, one contract",
+      "min": 2200,
+      "max": 3800,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The CNC site and the care plan sit on one contract, so a new machine or material on the page is an email to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "RFQ acknowledgement and status texts",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "trigger": "The first RFQs arrive through the upload form.",
+      "line": "\"Engineers are sending files. An instant reply with a quote-by date keeps them from sending the part to four machine shops.\""
+    },
+    {
+      "rung": 3,
+      "day": 60,
+      "offer": "Machining quote calculator by cycle time",
+      "min": 2500,
+      "max": 6000,
+      "unit": "one-time",
+      "trigger": "Sixty days of RFQs show the estimator falling behind or quotes going out late.",
+      "line": "\"Your RFQs are piling up on one estimator. A calculator drafts the simple machining quotes so he handles the hard ones.\""
+    },
+    {
+      "rung": 4,
+      "day": 90,
+      "offer": "Part and machine photo day",
+      "min": 500,
+      "max": 1200,
+      "unit": "per-shoot",
+      "trigger": "A customer clears a part for public use, or the gallery still runs on placeholders.",
+      "line": "\"That customer cleared the part. Let's shoot it and the machine that cut it.\""
+    },
+    {
+      "rung": 5,
+      "day": 120,
+      "offer": "Job traveler and routing app",
+      "min": 4000,
+      "max": 12000,
+      "unit": "one-time",
+      "trigger": "They mention a lost traveler, a wrong revision run, or a job nobody could locate.",
+      "line": "\"That wrong-revision job is what a digital traveler stops. Every machining step signed off where it happens.\""
+    },
+    {
+      "rung": 6,
+      "day": 180,
+      "offer": "Inspection report builder",
+      "min": 2500,
+      "max": 7000,
+      "unit": "one-time",
+      "trigger": "A customer asks for first-article reports on every lot.",
+      "line": "\"Your buyer wants first-article reports. Build them from the traveler and they ship with the parts.\""
+    },
+    {
+      "rung": 7,
+      "day": 270,
+      "offer": "Customer portal for orders and certs",
+      "min": 3500,
+      "max": 10000,
+      "unit": "one-time",
+      "trigger": "The front office spends hours answering where-is-my-order calls from repeat buyers.",
+      "line": "\"Those status calls are a portal waiting to happen. Machine shop buyers check it themselves.\""
+    }
+  ]
+}

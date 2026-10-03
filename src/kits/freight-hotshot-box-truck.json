@@ -1,0 +1,823 @@
+{
+  "schemaVersion": 1,
+  "category": "Freight, hotshot & box truck",
+  "slug": "freight-hotshot-box-truck",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "B2b family batch, rfq archetype. Load-board dependent trade, so the pitch is credibility with brokers and direct shippers. Authority numbers, insurance limits and safety data stay as bracketed placeholders. Prices kept low to match the board build. Planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Broker carrier setup packet",
+      "contains": "A downloadable carrier packet with [USDOT and MC numbers as registered], certificate of insurance on request, tax form, and the dispatcher's direct line",
+      "why": "Brokers vet a small freight carrier in minutes. A packet they can grab without emailing gets the hotshot truck set up before the load goes to someone else."
+    },
+    {
+      "section": "Dedicated and recurring freight runs",
+      "contains": "Weekly or daily runs for local shippers, such as parts between plants, store restocks or supplier pickups, with how a recurring lane is priced and scheduled",
+      "why": "Recurring direct freight is what frees a small carrier from load boards. Shippers only offer it to a trucking company that looks steady."
+    },
+    {
+      "section": "Final-mile and liftgate delivery",
+      "contains": "Box truck delivery for furniture, appliances, fixtures and pallets, with liftgate, pallet jack, inside delivery and two-person options",
+      "why": "Retailers and distributors buy box truck capacity by the delivery type. Listing the options wins the final-mile contract."
+    },
+    {
+      "section": "Same-day hot load dispatch",
+      "contains": "How a shipper reaches dispatch for a hot load after hours, what equipment is ready on short notice, and how expedited freight is quoted",
+      "why": "Hotshot work is bought in a panic. The carrier that shows a live dispatch path gets the call when a line is down."
+    },
+    {
+      "section": "Proof of delivery and cargo photos",
+      "contains": "Photos of freight at pickup and drop, securement and tarp shots, signed proof of delivery sent the same day, and how damage claims are reported",
+      "why": "Shippers fear damage and missing paperwork more than price. Showing the proof-of-delivery routine answers both before the first load."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C10",
+      "siteType": "local-conversion",
+      "name": "Ready to Roll",
+      "heroLayout": "split-photo",
+      "mood": [
+        "plain",
+        "direct",
+        "reliable"
+      ],
+      "bestFor": "One-truck hotshot or box truck owner-operators building direct shipper work",
+      "pairsWithTier": "starter",
+      "headlineSample": "Hotshot and box truck freight out of {City}",
+      "whyItFits": "Steel Invoice reads like a rate confirmation: neutral, tidy and fast to scan for a broker checking a carrier."
+    },
+    {
+      "id": "b",
+      "themeId": "C19",
+      "siteType": "b2b-capability",
+      "name": "Lane Sheet",
+      "heroLayout": "card-stack",
+      "mood": [
+        "exact",
+        "operational",
+        "steady"
+      ],
+      "bestFor": "Small fleets running expedited, flatbed hotshot and final-mile freight for brokers and shippers",
+      "pairsWithTier": "standard",
+      "headlineSample": "Expedited freight and final-mile delivery from {City}",
+      "whyItFits": "The family combo was made for logistics and fleet ops. Mono labels suit deck lengths, lanes and dispatch hours."
+    },
+    {
+      "id": "c",
+      "themeId": "C4",
+      "siteType": "editorial-trust",
+      "name": "Carrier Record",
+      "heroLayout": "type-led",
+      "mood": [
+        "established",
+        "accountable",
+        "calm"
+      ],
+      "bestFor": "Carriers pitching dedicated contracts to manufacturers and distributors",
+      "pairsWithTier": "premium",
+      "headlineSample": "A {City} freight carrier your shipping dock can set its clock by",
+      "whyItFits": "Navy and brass with editorial serifs reads like a contract, which is what a shipper signs when it moves a lane to a small carrier."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your trucking company's Google listing has no website, so a broker checking you out before a hotshot load finds a phone number and nothing that says you're a real carrier.",
+      "hook": "Open their Maps listing and confirm there is no Website button. Screenshot it for when they reply.",
+      "linkLine": "What a broker would find behind that button: {demo-link}"
+    },
+    {
+      "angle": "Facebook-only link",
+      "line": "Your listing goes to a Facebook page with photos of the truck and trailer. A shipper's logistics coordinator wants your equipment, lanes and insurance, not a feed.",
+      "hook": "Tap the Website link and confirm it lands on Facebook. Note the truck or trailer type in the latest post.",
+      "linkLine": "A freight carrier page built for shippers: {demo-link}"
+    },
+    {
+      "angle": "Dead free host",
+      "line": "The site on your listing is a free page with a truck photo and a dead contact form. Brokers vetting a box truck carrier read that as a company that may not answer.",
+      "hook": "Open the site and test the form or spot an old year or banner. Note it.",
+      "linkLine": "Same trucking company, current and reachable: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "On my phone your trucking site cuts off the dispatch number. Dispatchers and shippers look up carriers from a phone on the dock.",
+      "hook": "Only if they have a site. Load it on your phone and note what breaks. Screenshot it for when they reply.",
+      "linkLine": "Your freight site on a phone: {demo-link}"
+    },
+    {
+      "angle": "No direct shipper quote",
+      "line": "There's no way for a local shipper to ask you for a freight quote without calling. A form asking for pickup, drop, pallet count and date would bring direct loads that don't come off a board.",
+      "hook": "Check their site and listing for a quote form. If there is none, the angle holds.",
+      "linkLine": "A freight quote request for direct shippers: {demo-link}"
+    },
+    {
+      "angle": "Load photos, nowhere to live",
+      "line": "Your posts of strapped and tarped loads on the gooseneck show care that shippers want to see, and they scroll away by the next haul.",
+      "hook": "Find one load securement or delivery post. Name the freight if they reply.",
+      "linkLine": "Your loads on a page shippers can see: {demo-link}"
+    },
+    {
+      "angle": "Reviews from shippers",
+      "line": "A review from a shop owner saying your box truck got their parts there before the line went down is exactly what the next shipper with a hot load wants to read.",
+      "hook": "Read their reviews and copy one phrase about speed or a specific delivery. Quote it if they reply.",
+      "linkLine": "Shipper reviews next to your dispatch line: {demo-link}"
+    },
+    {
+      "angle": "Peak shipping season",
+      "line": "When retail and construction peaks hit, shippers run short of trucks and search for local carriers. The hotshot and box truck outfits with a real page get the overflow freight.",
+      "hook": "Use before the autumn retail peak or the spring construction season. Name the season.",
+      "linkLine": "A carrier page ready for peak season freight: {demo-link}"
+    },
+    {
+      "angle": "Hot loads after hours",
+      "line": "Hot loads come up at night when a plant is waiting on a part. If your dispatch number rings out after six, that expedited freight goes to the next truck.",
+      "hook": "Call their number in the evening and note whether it rings out or offers a dispatch option.",
+      "linkLine": "A hotshot page with an after-hours dispatch path: {demo-link}"
+    },
+    {
+      "angle": "Hiring a driver",
+      "line": "Saw you're looking for a CDL driver. Good drivers check a trucking company online before they call, and so do the shippers you're trying to win.",
+      "hook": "Only if they posted a hiring note or a truck sign. Note the date.",
+      "linkLine": "A trucking site with a driver hiring page: {demo-link}"
+    },
+    {
+      "angle": "Lanes you run",
+      "line": "You run freight between {City} and the same few cities every week, but nothing online says so. A shipper with that lane would never think to call you.",
+      "hook": "Look for posts or reviews that name the cities they run to. Name the most frequent lane.",
+      "linkLine": "Your regular freight lanes on one page: {demo-link}"
+    },
+    {
+      "angle": "Shipper payment terms",
+      "line": "Direct shippers ask a small carrier about invoicing, payment terms and when the bill comes. A page that answers it makes the first box truck load easy to approve.",
+      "hook": "Only if they already haul for businesses directly. Look for shipper reviews first.",
+      "linkLine": "Freight billing terms answered up front: {demo-link}"
+    },
+    {
+      "angle": "Authority and cargo insurance",
+      "line": "Brokers and shippers check a carrier's authority and cargo insurance before every first load. A page with your carrier packet ready to download saves that back-and-forth.",
+      "hook": "Look for authority details on their truck door or listing. Never state numbers or coverage you didn't see.",
+      "linkLine": "Your carrier packet ready for brokers: {demo-link}"
+    },
+    {
+      "angle": "Load boards only",
+      "line": "It sounds like most of your freight comes off the load boards. A page for direct shippers is how small trucking companies stop racing the board for every load.",
+      "hook": "Look for posts about load board rates or deadhead. If they complain about board rates, the angle is strong.",
+      "linkLine": "Where a direct shipper would find your truck: {demo-link}"
+    },
+    {
+      "angle": "A specific recent load",
+      "line": "That {specific recent job} you posted is a clean haul. A load like that belongs on a page a logistics coordinator can see before giving you their freight.",
+      "hook": "Pick their newest load post and name it: the freight, the equipment and the lane if shown.",
+      "linkLine": "That load on your carrier page: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner} — that {specific recent job} you posted is a clean haul.\n\nI looked for a site for {Business Name} and couldn't find anything a broker or a direct shipper could check before handing you freight. I put together a sample carrier page with a downloadable carrier packet, a direct shipper quote request and your lanes, with marked placeholders where your photos would go.\n\nWould it help if I sent it over?",
+    "dm2": "{Owner} — following up in case my last message got lost on the road. Here's the sample carrier site for {Business Name}: {demo-link}\n\nIt has a carrier packet brokers can download, a freight quote form for direct shippers, and a hot load dispatch section. If it's not useful, tell me and I'll leave you alone.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for small trucking companies here in {City}. I sent you a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"Makes sense, you're driving. Short version: I built a sample carrier site for {Business Name} with a broker packet download, a direct shipper quote form and your regular lanes, with marked placeholders where your photos would go. Can I email you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range}, then {Care Range} a month for hosting and changes. For a carrier your size I'd quote about {Build Price}, about what two or three good loads clear.\"\n\"Can I walk you through it for ten minutes, whenever you're parked?\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. We start the day it clears.\"",
+    "objections": [
+      {
+        "objection": "All my freight comes off the load boards. A website won't change that.",
+        "handler": "\"You're right that it won't replace the boards. It's for the broker checking you before the load and the local shipper who'd rather call a truck direct than post on a board.\""
+      },
+      {
+        "objection": "Brokers already have my packet.",
+        "handler": "\"The ones you've worked with do. New brokers vet you in minutes; a packet they can download without emailing you gets you set up while the load is still open.\""
+      },
+      {
+        "objection": "I'm one truck. Websites are for fleets.",
+        "handler": "\"One truck is exactly who this helps. A shipper choosing between two owner-operators picks the one who looks like a business.\""
+      },
+      {
+        "objection": "My dispatcher handles all of this.",
+        "handler": "\"Great, I'll work with them. The site gives your dispatcher a link to send brokers instead of attaching the same files every day.\""
+      },
+      {
+        "objection": "Freight is slow right now. I can't spend.",
+        "handler": "\"That's why the price is low and the pitch is direct shippers. One recurring local run covers it and doesn't depend on board rates.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}, because it's a carrier packet, a shipper quote form and lane pages. A couple of good loads cover it.\""
+      }
+    ],
+    "email": {
+      "subject": "Carrier page for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for hotshot, box truck and small freight carriers around {City}. I couldn't find anything online a broker or a direct shipper could check before giving {Business Name} a load.\n\nI built a sample first rather than ask for your time: a carrier page with a downloadable broker packet, a freight quote request for direct shippers, your regular lanes, a hot load dispatch section and proof-of-delivery photos, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and changes. If not, no problem, it comes down at the end of the month.\n\nWorth ten minutes on the phone this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build websites for small trucking companies in {City}, and I made a sample carrier page for {Business Name} with a broker packet download. I'll email you the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner} — I'm taking the {Business Name} carrier demo down on Friday.\n\nWant me to leave it up? One word either way.",
+    "nurture": "Hi {Owner} — peak season is coming and shippers around {City} will be short on trucks. Thought of you.\n\nThe carrier page with the broker packet is still here, same price. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to two or three good loads; this trade's margins are thin and board-driven.",
+      "Lead with credibility: the carrier packet and the shipper quote form are the core, everything else is optional.",
+      "Price lane pages one at a time, only for lanes they actually run every week.",
+      "Never state authority numbers, insurance limits or safety scores unless the carrier supplies them in writing.",
+      "Keep monthly add-ons under the cost of one tank of diesel so they survive a slow month.",
+      "Sell final-mile pages only to box truck carriers that already do liftgate or inside delivery."
+    ],
+    "lineItems": [
+      {
+        "item": "Carrier packet download page",
+        "min": 150,
+        "max": 400,
+        "unit": "one-time",
+        "description": "Max with packet PDF layout, equipment list, insurance contact and a form that emails the packet to a broker.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Direct shipper quote request",
+        "min": 250,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max with pickup and drop, pallet or piece count, weight, dimensions, liftgate and a date picker.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Lane page (each)",
+        "min": 100,
+        "max": 250,
+        "unit": "per-page",
+        "description": "Max when each lane page shows the run, frequency, typical freight and a quote button.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Final-mile delivery page",
+        "min": 200,
+        "max": 500,
+        "unit": "one-time",
+        "description": "Max with delivery types, liftgate and inside delivery options and a retailer inquiry form.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Hot load dispatch section",
+        "min": 150,
+        "max": 400,
+        "unit": "one-time",
+        "description": "Max with an after-hours dispatch number, text-to-dispatch and a short hot load form.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Driver hiring page",
+        "min": 200,
+        "max": 500,
+        "unit": "one-time",
+        "description": "Max with an application form, home-time and pay structure as the carrier sets it, and a text-to-apply number.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Truck and trailer photo session",
+      "min": 250,
+      "max": 600,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"One morning shooting the truck, the trailer deck and a secured load gives the freight site real equipment photos brokers trust.\"",
+      "when": "Month 2, on a day the truck is home."
+    },
+    {
+      "name": "Google profile upkeep for the trucking company",
+      "min": 79,
+      "max": 179,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A weekly post of a delivered load keeps the profile alive when a local shipper searches 'box truck delivery near me'.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Local shipper introduction letters",
+      "min": 200,
+      "max": 500,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Each month, a short letter to manufacturers and distributors near the yard offering hotshot and box truck capacity on the lanes you run.\"",
+      "when": "Month 2, once the quote form is live."
+    },
+    {
+      "name": "Truck door and trailer lettering artwork",
+      "min": 150,
+      "max": 400,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Clean truck door lettering with the carrier's name, required markings as the carrier supplies them, and the website, so every dock sees who you are.\"",
+      "when": "Right after launch."
+    },
+    {
+      "name": "Shipper reference collection",
+      "min": 59,
+      "max": 149,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Happy shippers get a short request for a review or a reference line for the carrier page after an on-time hot load.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Capability one-pager for shippers",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A one-page PDF with the trucks, lanes, delivery options and dispatch line that a shipping manager can pin above the dock desk.\"",
+      "when": "Month 2, with the shipper letters."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Local manufacturers and distributors they haul for",
+        "whoPays": "The shipper",
+        "min": 2000,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"The parts maker whose hot loads you run has a product site from years ago. Their shipping manager trusts you.\"",
+        "whyItWorks": "The carrier sees the shipper's dock every week and gets introductions easily."
+      },
+      {
+        "route": "Truck repair and tire shops",
+        "whoPays": "The repair shop, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The diesel shop that keeps your truck running needs a site that takes breakdown calls from other freight carriers.\"",
+        "whyItWorks": "Repair shops live on trucker referrals."
+      },
+      {
+        "route": "Small freight brokers",
+        "whoPays": "The broker",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The small broker who gives you regular hotshot loads has a shipper page that looks unfinished. You can introduce me.\"",
+        "whyItWorks": "Small brokers depend on reliable carriers and listen to them."
+      },
+      {
+        "route": "Furniture and appliance retailers",
+        "whoPays": "The retailer",
+        "min": 2000,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"The furniture store whose deliveries your box truck handles needs a delivery scheduling page. I'll build it with your service on it.\"",
+        "whyItWorks": "Retailers who outsource delivery trust their box truck partner's recommendation."
+      },
+      {
+        "route": "Other owner-operators they run with",
+        "whoPays": "The owner-operator, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The other hotshot drivers you swap loads with need a carrier page as much as you did.\"",
+        "whyItWorks": "Owner-operators share loads and recommend vendors in group chats."
+      },
+      {
+        "route": "Warehouse and cross-dock operators",
+        "whoPays": "The warehouse",
+        "min": 2000,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"The warehouse where you pick up and drop has a capability page nobody updates. Your dispatcher knows their manager.\"",
+        "whyItWorks": "Warehouses sell space and services to shippers and need a credible page."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Shipping request assistant for the manufacturer",
+        "whoPays": "The shipper, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Shipping clerks describe the pallet and the deadline, and the assistant drafts the freight request and sends it to the preferred carrier first.\"",
+        "whyItWorks": "It saves the shipper time and keeps the hotshot client first in line."
+      },
+      {
+        "route": "Breakdown intake for the truck repair shop",
+        "whoPays": "The repair shop, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"A driver texts the symptoms and location, and the diesel shop gets a drafted work order with the truck details before the tow arrives.\"",
+        "whyItWorks": "Built around the carrier's own breakdown calls, sold through their trust."
+      },
+      {
+        "route": "Load summary assistant for the broker",
+        "whoPays": "The broker, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Shippers email messy freight requests, and the broker's assistant drafts a clean load posting with dims, weight and dates.\"",
+        "whyItWorks": "Brokers save time and the freight client gets cleaner loads."
+      },
+      {
+        "route": "Delivery window assistant for the retailer",
+        "whoPays": "The retailer, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Customers pick a delivery window and answer access questions, and the assistant builds the box truck run sheet for the next day.\"",
+        "whyItWorks": "Retailers get fewer failed deliveries, and the box truck client gets better runs."
+      },
+      {
+        "route": "Paperwork assistant for fellow owner-operators",
+        "whoPays": "Each owner-operator, monthly",
+        "min": 49,
+        "max": 129,
+        "unit": "monthly",
+        "pitchLine": "\"Drivers snap rate confirmations and delivery receipts, and the assistant files them and drafts the invoice for each freight load.\"",
+        "whyItWorks": "Every small trucking operator hates paperwork, and the client vouches for it."
+      },
+      {
+        "route": "Dock appointment assistant for the warehouse",
+        "whoPays": "The warehouse, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Carriers request a dock time by text, and the assistant books it against the warehouse schedule so trucks stop waiting in the yard.\"",
+        "whyItWorks": "Detention time frustrates both sides, and the carrier client feels it first."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Missed-call text-back for dispatch",
+      "kind": "automation",
+      "oneTimeMin": 0,
+      "oneTimeMax": 250,
+      "monthlyMin": 59,
+      "monthlyMax": 149,
+      "pitchLine": "\"A shipper calls while you're driving, gets a text asking for pickup, drop and freight, and you call back at the next stop with the hotshot quote ready.\"",
+      "whenAndWhatItTakes": "Day 30. Needs the dispatch number forwarded and wording they approve."
+    },
+    {
+      "name": "Rate calculator by mile and accessorials",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 40,
+      "monthlyMax": 100,
+      "pitchLine": "\"Enter the lane, weight and extras like liftgate or tarps, and it drafts a freight rate from your own per-mile and minimum charges.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their per-mile rates, minimums and accessorial charges."
+    },
+    {
+      "name": "Proof-of-delivery photo app",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 50,
+      "monthlyMax": 120,
+      "pitchLine": "\"Drivers snap the freight at pickup and drop and capture a signature, and the shipper gets the proof of delivery before the truck leaves the dock.\"",
+      "whenAndWhatItTakes": "Month 2. Needs driver phones and the shipper contacts per load."
+    },
+    {
+      "name": "Rate confirmation reader",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 59,
+      "monthlyMax": 149,
+      "pitchLine": "\"Forward a broker's rate confirmation, and it pulls the load number, pickup, drop, rate and terms into the trucking log for review.\"",
+      "whenAndWhatItTakes": "Month 2. Needs a few dozen past rate confirmations. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Invoice and paperwork bundle sender",
+      "kind": "automation",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 40,
+      "monthlyMax": 100,
+      "pitchLine": "\"When the delivery is signed, the invoice, rate confirmation and proof of delivery go to the broker or shipper as one bundle the same hour.\"",
+      "whenAndWhatItTakes": "Month 3, with the POD app. Needs their invoice template and billing contacts."
+    },
+    {
+      "name": "Load and settlement log",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 40,
+      "monthlyMax": 100,
+      "pitchLine": "\"Every freight load with rate, miles, fuel and whether it's paid, so the owner sees what each truck actually earned this month.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their load history and fuel records."
+    },
+    {
+      "name": "Payment follow-up on open invoices",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 30,
+      "monthlyMax": 80,
+      "pitchLine": "\"When a broker or shipper passes the agreed payment date on a freight invoice, a polite follow-up goes out with the paperwork attached again.\"",
+      "whenAndWhatItTakes": "Month 3. Needs invoice dates and payment terms per customer."
+    },
+    {
+      "name": "Dispatch answering for drivers on the road",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"It answers the trucking line while the owner drives, takes the freight details and texts the owner a summary to accept or pass.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their lanes, equipment and the questions they always ask. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Shipper portal for recurring runs",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Shippers with a weekly run see the schedule, add an extra pallet or a stop, and download proof of delivery for every box truck trip.\"",
+      "whenAndWhatItTakes": "Month 5, once a shipper signs a recurring run. Needs the run schedule and the POD app."
+    },
+    {
+      "name": "Backhaul finder from shipper requests",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"It checks direct quote requests against where the truck delivers next, and flags shippers who could fill the empty return leg.\"",
+      "whenAndWhatItTakes": "Month 5. Needs the shipper quote form and the truck's booked loads. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Maintenance and inspection reminder log",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 30,
+      "monthlyMax": 80,
+      "pitchLine": "\"Oil changes, tires, annual inspections and registration dates for each truck and trailer, with a reminder before anything lapses.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their service history and due dates."
+    },
+    {
+      "name": "Broker packet sender",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 600,
+      "monthlyMin": 20,
+      "monthlyMax": 60,
+      "pitchLine": "\"When a new broker fills the packet request form, the carrier packet goes out right away and the dispatcher gets a note to follow up.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the packet PDF and the dispatcher's email."
+    },
+    {
+      "name": "Quote writer for direct freight",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 59,
+      "monthlyMax": 149,
+      "pitchLine": "\"A shipper's email about a pallet run becomes a drafted quote with rate, pickup window and terms for the owner to send from the cab.\"",
+      "whenAndWhatItTakes": "Month 3, after the rate calculator. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Fuel and expense tracker",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 30,
+      "monthlyMax": 80,
+      "pitchLine": "\"Snap fuel receipts and tolls, and see cost per mile on each truck next to what each freight lane pays.\"",
+      "whenAndWhatItTakes": "Month 4. Needs fuel card exports or receipts for a few months."
+    },
+    {
+      "name": "Review reply drafts for shippers",
+      "kind": "ai",
+      "oneTimeMin": 200,
+      "oneTimeMax": 500,
+      "monthlyMin": 49,
+      "monthlyMax": 119,
+      "pitchLine": "\"When a shipper mentions the box truck that saved their week, a reply naming the delivery is ready for the owner to post.\"",
+      "whenAndWhatItTakes": "Month 2, with reference collection. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Lane page refresher",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 49,
+      "monthlyMax": 119,
+      "pitchLine": "\"Each month it drafts updates to the lane pages from the loads actually run, so the freight site shows the routes the truck really covers.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the load log. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Driver document wallet",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 30,
+      "monthlyMax": 80,
+      "pitchLine": "\"Licence, medical card, registration and insurance cards for each trucking driver in one phone folder, with expiry reminders.\"",
+      "whenAndWhatItTakes": "Month 5. Needs scans of current documents."
+    },
+    {
+      "name": "Driver applicant screener",
+      "kind": "ai",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1200,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"CDL and box truck driver applicants answer questions on experience, record and home time, and the owner calls only the fits.\"",
+      "whenAndWhatItTakes": "Whenever they're hiring. Needs must-haves and pay structure. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Shipper prospect list builder",
+      "kind": "ai",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1200,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"It drafts a monthly list of manufacturers and distributors along the freight lanes the truck runs, with a short note for each.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the lanes and the owner's approval of each note. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Final-mile delivery scheduler",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Retail customers pick a delivery window, and the box truck's day is built into a route with stop times and access notes.\"",
+      "whenAndWhatItTakes": "Month 6, once a retailer sends regular deliveries. Needs the retailer's order feed or a daily list."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Carrier page kit for owner-operators",
+      "whoPays": "Owner-operators, monthly",
+      "min": 29,
+      "max": 99,
+      "unit": "monthly",
+      "pitchLine": "\"Every hotshot owner-operator needs a carrier page and a packet download. I host it for a small monthly fee with their truck and lanes filled in.\"",
+      "whyItWorks": "One-truck carriers want credibility but rarely pay for a custom build."
+    },
+    {
+      "route": "Truck stop or diesel shop sponsor programme",
+      "whoPays": "The truck stop or diesel shop, annually",
+      "min": 3000,
+      "max": 10000,
+      "unit": "per-year",
+      "pitchLine": "\"Sponsor free carrier pages for local owner-operators, with your shop listed as their repair partner.\"",
+      "whyItWorks": "Shops want trucker loyalty, and carriers want free pages."
+    },
+    {
+      "route": "Owner-operator association member benefit",
+      "whoPays": "The association",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"Members get a carrier page, packet download and shipper quote form, built from the same freight template.\"",
+      "whyItWorks": "Associations need benefits that small carriers feel quickly."
+    },
+    {
+      "route": "Small brokerage carrier network pages",
+      "whoPays": "The brokerage",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Your vetted hotshot and box truck carriers get matching pages, so shippers see a real network behind your freight brokerage.\"",
+      "whyItWorks": "Brokers sell capacity, and a visible network helps them win shippers."
+    },
+    {
+      "route": "Distributor's dedicated carrier programme",
+      "whoPays": "The distributor",
+      "min": 4000,
+      "max": 12000,
+      "unit": "one-time",
+      "pitchLine": "\"Your local delivery carriers get one portal for runs, proof of delivery and invoices, instead of a dozen texts a day.\"",
+      "whyItWorks": "Distributors juggling small carriers will pay to centralise it; the trucking client proves it works."
+    },
+    {
+      "route": "Agency licence for the carrier template",
+      "whoPays": "The agency, per site",
+      "min": 300,
+      "max": 900,
+      "unit": "one-time",
+      "pitchLine": "\"Agencies with a trucking client can license my carrier template with the packet download and lane pages ready.\"",
+      "whyItWorks": "Agencies avoid rebuilding a niche template; you earn per site."
+    },
+    {
+      "route": "One carrier per lane hub",
+      "whoPays": "Carriers based in other hubs",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I built the carrier page for a hotshot outfit out of {City}. I'll take one freight carrier per hub city on the same terms.\"",
+      "whyItWorks": "Carriers in different hubs don't compete for the same shippers."
+    },
+    {
+      "route": "Industrial park shipping directory",
+      "whoPays": "The industrial park owner, annually",
+      "min": 1500,
+      "max": 5000,
+      "unit": "per-year",
+      "pitchLine": "\"Tenants in the park need local trucks. A shipping directory of vetted hotshot and box truck carriers makes the park easier to lease.\"",
+      "whyItWorks": "Park owners sell convenience, and carriers want to be listed."
+    },
+    {
+      "route": "Furniture and appliance retail groups",
+      "whoPays": "The retail group, annually",
+      "min": 2000,
+      "max": 8000,
+      "unit": "per-year",
+      "pitchLine": "\"Every store in your group books final-mile box truck delivery from one scheduling page, with carrier proof of delivery attached.\"",
+      "whyItWorks": "Retail groups outsource delivery and want one view across stores."
+    },
+    {
+      "route": "Hotshot rate estimator for shippers, sponsored",
+      "whoPays": "Sponsoring carriers, monthly",
+      "min": 49,
+      "max": 149,
+      "unit": "monthly",
+      "pitchLine": "\"Shippers estimate an expedited run from the sponsoring carrier's own rates and send the request straight to that truck.\"",
+      "whyItWorks": "It never claims market rates, only the sponsor's own."
+    },
+    {
+      "route": "Fix half-built trucking dispatch tools",
+      "whoPays": "The small fleet with an unfinished tool",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "pitchLine": "\"A small fleet with a dispatch or POD app someone abandoned can have it working in weeks. The freight load logic is already built.\"",
+      "whyItWorks": "Money already spent; they need someone who knows loads, rate cons and PODs."
+    },
+    {
+      "route": "Community college CDL programme hiring page",
+      "whoPays": "The college or training school",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "pitchLine": "\"New CDL graduates need local carriers hiring. A page of trucking companies taking new drivers helps your placement numbers.\"",
+      "whyItWorks": "Schools sell on placement, and the client is a hiring carrier."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Carrier site build plus care plan, one contract",
+      "min": 1200,
+      "max": 2000,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The carrier site and the care plan go on one contract, so a new truck or lane goes up with a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Broker packet sender",
+      "min": 200,
+      "max": 600,
+      "unit": "one-time",
+      "trigger": "Brokers start requesting the packet from the site.",
+      "line": "\"Brokers are asking. Let the freight packet go out instantly while you're driving.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "Proof-of-delivery photo app",
+      "min": 1000,
+      "max": 2500,
+      "unit": "one-time",
+      "trigger": "A shipper or broker delays payment waiting for paperwork.",
+      "line": "\"That late payment was a missing POD. Snap it at the dock and the trucking invoice goes out the same hour.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Local shipper introduction letters",
+      "min": 200,
+      "max": 500,
+      "unit": "monthly",
+      "trigger": "The first direct shipper quote arrives through the site.",
+      "line": "\"A direct shipper found you. Let's tell every dock along your lanes that you have a box truck available.\""
+    },
+    {
+      "rung": 5,
+      "day": 120,
+      "offer": "Load and settlement log",
+      "min": 1000,
+      "max": 2500,
+      "unit": "one-time",
+      "trigger": "They mention not knowing which loads actually paid after fuel.",
+      "line": "\"See what each freight load really made after fuel, and stop taking the ones that don't.\""
+    },
+    {
+      "rung": 6,
+      "day": 240,
+      "offer": "Shipper portal for recurring runs",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "trigger": "A shipper offers a weekly or daily run.",
+      "line": "\"A recurring run is the goal. Give that shipper a portal and the hotshot lane stays yours.\""
+    }
+  ]
+}

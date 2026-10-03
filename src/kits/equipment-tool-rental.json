@@ -1,0 +1,855 @@
+{
+  "schemaVersion": 1,
+  "category": "Equipment & tool rental",
+  "slug": "equipment-tool-rental",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "B2b family batch, catalog archetype override. Buyers are contractors and DIY homeowners. No equipment manufacturer names, no rental software names, and no operator certification claims. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Contractor rental account application",
+      "contains": "Credit application, tax-exempt certificate upload, PO number rules, authorised renters per company and a saved jobsite list for delivery",
+      "why": "Contractors rent where they have an account. An online application turns a one-off equipment rental into a standing customer."
+    },
+    {
+      "section": "Off-rent, extension and pickup requests",
+      "contains": "Call a machine off rent, extend a rental, or schedule a jobsite pickup online, with the cut-off time for same-day pickup",
+      "why": "Contractors get billed extra days because they couldn't reach the counter to call off rent. Fixing that is a reason to switch rental yards."
+    },
+    {
+      "section": "Check-out and return condition record",
+      "contains": "Time-stamped photos of each machine at check-out and return, hour meter and fuel readings, and how cleaning and fuel charges are worked out",
+      "why": "Damage and fuel disputes sour rental customers. A visible condition record makes the yard look fair before the first rental."
+    },
+    {
+      "section": "Attachments, blades and consumables",
+      "contains": "Buckets, augers, breakers, trencher chains, saw blades, sanding discs and fuel, which fit which rental machine, and what's sold versus rented",
+      "why": "The attachment is often what decides the rental. Listing them by machine sells the add-on and stops wrong-fit returns."
+    },
+    {
+      "section": "Which tool for the job",
+      "contains": "Short guides for common jobs, such as a fence line, a drainage trench, a floor refinish or a stump, naming the equipment and attachments to rent",
+      "why": "Homeowners search the job, not the machine. A job guide catches the search and sends them to the right rental."
+    },
+    {
+      "section": "Used rental fleet for sale",
+      "contains": "Machines leaving the rental fleet, with hours, service history the yard holds, photos and a make-an-offer form",
+      "why": "Contractors who rent a machine often enough want to buy one. A sell-off page turns retired equipment into cash and keeps the buyer close."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C17",
+      "siteType": "local-conversion",
+      "name": "Rent It Today",
+      "heroLayout": "split-photo",
+      "mood": [
+        "direct",
+        "hi-vis",
+        "quick"
+      ],
+      "bestFor": "Single-yard tool rental shops serving homeowners and small trades",
+      "pairsWithTier": "starter",
+      "headlineSample": "Tool and equipment rental in {City}, ready for pickup today",
+      "whyItFits": "Basalt Lime's dark base and lime accent read like hi-vis gear, and the geometric display type is legible across a parking lot or a phone."
+    },
+    {
+      "id": "b",
+      "themeId": "C19",
+      "siteType": "catalog",
+      "name": "Yard Inventory",
+      "heroLayout": "card-stack",
+      "mood": [
+        "organised",
+        "industrial",
+        "specific"
+      ],
+      "bestFor": "Rental yards with a real fleet, sorted by category, with day, week and month rates",
+      "pairsWithTier": "standard",
+      "headlineSample": "Construction equipment rental for {City} contractors",
+      "whyItFits": "The family combo, made for fleet and warehouse ops. Mono labels suit dig depth, lift height and day rates in a catalogue grid."
+    },
+    {
+      "id": "c",
+      "themeId": "C6",
+      "siteType": "b2b-capability",
+      "name": "Contractor Desk",
+      "heroLayout": "type-led",
+      "mood": [
+        "procedural",
+        "clean",
+        "steady"
+      ],
+      "bestFor": "Larger yards selling contractor accounts, delivery and jobsite fleet management",
+      "pairsWithTier": "premium",
+      "headlineSample": "Equipment rental accounts for {City} builders and crews",
+      "whyItFits": "Cobalt Wire was built for business accounts and billing. Its neutral sans and blue accent fit credit applications, POs and off-rent requests."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your rental yard's Google listing has no website, so someone searching for a mini excavator rental on Friday night can't see whether you even carry one.",
+      "hook": "Open their Maps listing and confirm there is no Website button. Screenshot it for when they reply.",
+      "linkLine": "What that Friday-night renter would see instead: {demo-link}"
+    },
+    {
+      "angle": "Facebook-only link",
+      "line": "Your listing sends renters to Facebook, where the new trencher post sits under a holiday-hours notice. A contractor wants to scroll an equipment list with rates, not a feed.",
+      "hook": "Tap the Website link and confirm it lands on Facebook. Note the newest equipment post.",
+      "linkLine": "Your rental fleet as a catalogue: {demo-link}"
+    },
+    {
+      "angle": "Dead free host",
+      "line": "The site on your listing shows a rate sheet PDF from years ago and machines you may not rent anymore. Renters who call about one you sold don't call twice.",
+      "hook": "Open the site and find one stale item: an old rate sheet, a dead link or an old year.",
+      "linkLine": "Same rental yard, with a catalogue you can update: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "On my phone your tool rental page loads as one tiny table. Most renters look for a stump grinder or a floor sander on their phone, standing in the yard.",
+      "hook": "Only if they have a site. Load it on your phone and note what breaks. Screenshot it for when they reply.",
+      "linkLine": "Your rental catalogue on a phone: {demo-link}"
+    },
+    {
+      "angle": "No availability check",
+      "line": "There's no way to check if the scissor lift is free next Tuesday without calling the counter. Contractors book the rental yard that answers that online.",
+      "hook": "Check their site and listing for an availability or reservation form. If there is none, the angle holds.",
+      "linkLine": "An equipment availability check by date: {demo-link}"
+    },
+    {
+      "angle": "Fleet photos, nowhere to live",
+      "line": "You post clean shots of each machine as it comes back serviced, and they vanish down the feed. Those are exactly the photos an equipment catalogue needs.",
+      "hook": "Find one clear machine photo in their posts. Name the machine type if they reply.",
+      "linkLine": "Your rental fleet with a page per machine: {demo-link}"
+    },
+    {
+      "angle": "Reviews about the counter",
+      "line": "A reviewer said your counter showed them how to run the tiller before they left. That's the line a nervous first-time renter wants to see beside the equipment list.",
+      "hook": "Read their reviews and copy one phrase about help or a specific tool. Quote it if they reply.",
+      "linkLine": "Your rental reviews beside the catalogue: {demo-link}"
+    },
+    {
+      "angle": "Spring project season",
+      "line": "The first warm weekend, every homeowner with a fence or a patio project searches for tool rental at once. The yards whose aerators and augers show up online get those reservations.",
+      "hook": "Use in late winter or early spring, or before a long weekend. Name the weekend.",
+      "linkLine": "A rental catalogue ready for spring projects: {demo-link}"
+    },
+    {
+      "angle": "Weekend planning at night",
+      "line": "Homeowners plan Saturday's project on Thursday night, after your counter closes. If they can't reserve the tool rental then, they drive to the big-box store in the morning.",
+      "hook": "Note their posted hours. If nothing takes a reservation after close, the angle holds.",
+      "linkLine": "A tool rental page that reserves after hours: {demo-link}"
+    },
+    {
+      "angle": "Hiring a yard hand",
+      "line": "Saw you're hiring a yard hand or delivery driver. People who like machines check out a rental yard online before they apply.",
+      "hook": "Only if they posted a hiring note. Note the role and date.",
+      "linkLine": "An equipment rental site with a careers page: {demo-link}"
+    },
+    {
+      "angle": "Delivery radius",
+      "line": "You deliver skid steers and lifts to jobsites, but nothing online says how far or what it costs. A contractor in the next county assumes you won't come.",
+      "hook": "Look for delivery mentions on their trailer, listing or posts. Name a town at the edge.",
+      "linkLine": "Equipment delivery zones and fees on one page: {demo-link}"
+    },
+    {
+      "angle": "Contractor credit accounts",
+      "line": "Contractors rent equipment where they have an account with POs and net terms. If applying means a paper form at the counter, they stay with the national yard.",
+      "hook": "Only if they serve contractors. Look for trailers, lifts or contractor reviews first.",
+      "linkLine": "A contractor rental account you can apply for online: {demo-link}"
+    },
+    {
+      "angle": "Damage waiver and insurance",
+      "line": "First-time renters worry about breaking the machine. A page that explains your damage waiver and what insurance a contractor needs answers that before the rental.",
+      "hook": "Look for any waiver or insurance mention on their listing or counter signs. Never state their terms for them.",
+      "linkLine": "Rental waiver and insurance explained plainly: {demo-link}"
+    },
+    {
+      "angle": "Contractors who know the yard",
+      "line": "It sounds like your rental business runs on contractors who've known the counter for years. Their apprentices and new hires search online instead.",
+      "hook": "Look for reviews from long-time contractors. Quote one.",
+      "linkLine": "Where a new contractor would find your yard: {demo-link}"
+    },
+    {
+      "angle": "A new machine in the fleet",
+      "line": "That {specific recent job} you posted is the kind of equipment contractors search for by name. It deserves its own rental page with specs and a reserve button.",
+      "hook": "Pick their newest machine or tool post and name it: the machine type and what it's for.",
+      "linkLine": "That machine on its own rental page: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner} — that {specific recent job} you posted is the kind of machine renters search for by name.\n\nI looked for a site for {Business Name} and couldn't find an equipment list with rates or a way to check availability. I put together a sample rental catalogue with a page per machine, an availability check and a contractor account application, with marked placeholders where your photos would go.\n\nWould it help if I sent it over?",
+    "dm2": "{Owner} — following up in case my last note got buried behind the counter. Here's the sample rental site for {Business Name}: {demo-link}\n\nIt has a catalogue by category with day, week and month rates, an availability check by date, and an off-rent request so contractors stop calling at closing time. If it's not useful, tell me and I'll leave you alone.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for equipment and tool rental yards here in {City}. I sent you a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"Makes sense, the counter keeps you busy. Short version: I built a sample site for {Business Name} with a rental catalogue, an availability check and a contractor account application, with marked placeholders where your photos would go. Can I email you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range}, then {Care Range} a month for hosting and changes. For a yard your size I'd quote about {Build Price}, which a few weeks of one machine on rent covers.\"\n\"Can I walk you through it for ten minutes this week, mid-morning after the rush?\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. We start the day it clears.\"",
+    "objections": [
+      {
+        "objection": "Our fleet changes too often to keep a website current.",
+        "handler": "\"That's why each machine is a card you can hide or add from your phone. Selling a trencher takes one tap off the rental catalogue.\""
+      },
+      {
+        "objection": "We don't want to post prices online.",
+        "handler": "\"Many yards show day, week and month rates and some show 'call for rate' on the big machines. You choose per item, and the availability check still works.\""
+      },
+      {
+        "objection": "Our regular contractors just call the counter.",
+        "handler": "\"Keep that. The site is for the off-rent call at closing time, the new contractor and the homeowner on a Thursday night. It takes calls off the counter.\""
+      },
+      {
+        "objection": "The national rental chains have apps. We can't compete.",
+        "handler": "\"You compete on the counter and the delivery. The site just makes sure renters can see your fleet and reserve before they open the chain's app.\""
+      },
+      {
+        "objection": "We already use rental management software.",
+        "handler": "\"Good. The site sits in front of it: catalogue, availability and account applications, sending reservations to the counter in whatever way your system takes them.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}, because it's a catalogue, an availability check and a contractor account application. A few weeks of one machine on rent pays for it.\""
+      }
+    ],
+    "email": {
+      "subject": "Rental catalogue for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for equipment and tool rental yards around {City}. I couldn't find a list of what {Business Name} rents, the rates, or a way to check if a machine is free on a given day.\n\nI built a sample first rather than ask for your time: a rental catalogue with a page per machine and day, week and month rates, an availability check by date, a contractor account application and an off-rent request, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and changes. If not, no problem, it comes down at the end of the month.\n\nWorth ten minutes on the phone this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build websites for rental yards in {City}, and I made a sample equipment catalogue for {Business Name} with an availability check. I'll email you the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner} — I'm taking the {Business Name} rental catalogue demo down on Friday.\n\nWant me to keep it up? One word is fine either way.",
+    "nurture": "Hi {Owner} — spring project season is coming, and homeowners around {City} will be searching for tool rental the first warm weekend. Thought of you.\n\nThe rental catalogue is still here whenever you want it, same price. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to a few weeks of one mid-size machine on rent, not to a single tool rental.",
+      "The catalogue and the availability check are the core. Price everything else as additions.",
+      "Price the catalogue by fleet size: one card per machine or tool, entered once and editable from a phone.",
+      "Charge for the contractor account application separately; it sells to the yard's highest-value customers.",
+      "Never connect to their rental management system without the vendor's documented method; quote that work on its own.",
+      "Keep monthly add-ons below one day's rate on a mid-size machine."
+    ],
+    "lineItems": [
+      {
+        "item": "Rental catalogue entry (per machine)",
+        "min": 15,
+        "max": 40,
+        "unit": "per-page",
+        "description": "Max when each machine gets specs, rates, attachments, a how-to video link and its condition photos.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Availability check and reservation request",
+        "min": 600,
+        "max": 1500,
+        "unit": "one-time",
+        "description": "Max with date ranges per machine, a blackout calendar the counter controls and a deposit request.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Contractor account application",
+        "min": 400,
+        "max": 900,
+        "unit": "one-time",
+        "description": "Max with credit application, tax-exempt upload, authorised renters and saved jobsites.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Off-rent and pickup request",
+        "min": 250,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max with contract number lookup, pickup scheduling and a confirmation text with the off-rent time.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Delivery zone map and fee table",
+        "min": 250,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max with zones drawn on a map, fees by machine size and jobsite access notes.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Job guide page (each)",
+        "min": 150,
+        "max": 350,
+        "unit": "per-page",
+        "description": "Max when each guide names the machines, attachments and consumables for the job with reserve buttons.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Used fleet sale page",
+        "min": 250,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max with hours, service notes, photos and an offer form per machine.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Fleet photo and walkaround video day",
+      "min": 400,
+      "max": 1000,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"One day photographing each rental machine on a clean backdrop and shooting a short walkaround gives every catalogue card real pictures.\"",
+      "when": "Month 2, on a slow weekday with most of the fleet in the yard."
+    },
+    {
+      "name": "Google profile upkeep for the rental yard",
+      "min": 120,
+      "max": 250,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A weekly post featuring one rental machine and the job it's for keeps the yard showing up for 'equipment rental near me'.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Spring and storm season rental campaigns",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A short campaign before spring, and another after a storm, pushing chainsaws, chippers, pumps and generators from the rental catalogue.\"",
+      "when": "Late winter each year, and the day after any major local storm."
+    },
+    {
+      "name": "Contractor outreach for rental accounts",
+      "min": 300,
+      "max": 800,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Each month, a short note to new contractor registrations and permit holders nearby, offering an equipment rental account and delivery.\"",
+      "when": "Month 3, once the account application is live."
+    },
+    {
+      "name": "How-to video series",
+      "min": 150,
+      "max": 400,
+      "unit": "per-job",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A short how-to for each popular rental tool, filmed at the counter, cuts the 'how does this work' calls and ranks for the job search.\"",
+      "when": "Month 3, starting with the tools that come back misused most."
+    },
+    {
+      "name": "Trailer and delivery truck graphics",
+      "min": 200,
+      "max": 600,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Your delivery trailer sits on jobsites all week. Lettering with the rental catalogue address and phone keeps working while the machine does.\"",
+      "when": "Right after launch."
+    },
+    {
+      "name": "Review requests at equipment return",
+      "min": 79,
+      "max": 179,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"When a renter returns the machine and the job went well, they get a short review request that names the rental.\"",
+      "when": "Day 30."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Small contractors who rent from them",
+        "whoPays": "The contractor",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The fence and landscape contractors who rent your augers and skid steers every week mostly have no website. Your counter can introduce me.\"",
+        "whyItWorks": "Contractors trust the rental yard that keeps them working."
+      },
+      {
+        "route": "Equipment repair and small engine shops",
+        "whoPays": "The repair shop, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The shop that rebuilds your rental fleet engines needs a site that takes repair requests too.\"",
+        "whyItWorks": "Repair shops depend on rental yards and listen when one recommends a vendor."
+      },
+      {
+        "route": "Party and event rental companies",
+        "whoPays": "The event rental company, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The tent and party rental company that borrows your generators and heaters needs an availability catalogue just like this equipment one.\"",
+        "whyItWorks": "Same catalogue layout, different customer, and the yards already trade gear."
+      },
+      {
+        "route": "Lumber yards and building supply stores",
+        "whoPays": "The supply store",
+        "min": 2500,
+        "max": 8000,
+        "unit": "one-time",
+        "pitchLine": "\"The lumber yard down the road sends you homeowners who need a tool rental. Their product catalogue is a bigger version of the same problem.\"",
+        "whyItWorks": "Supply stores have budgets and refer customers both ways."
+      },
+      {
+        "route": "Homebuilders and remodelers with rental accounts",
+        "whoPays": "The builder",
+        "min": 2000,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"The remodeler with the biggest rental account at your yard has a portfolio site from years ago. Your introduction gets me a meeting.\"",
+        "whyItWorks": "Builders trust the yard that delivers their equipment on time."
+      },
+      {
+        "route": "Fuel and propane delivery companies",
+        "whoPays": "The fuel company, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The fuel supplier that tops off your rental machines on jobsites needs an order page for contractors too.\"",
+        "whyItWorks": "Same jobsites, same contractors, complementary service."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Job-to-rental planner for contractors",
+        "whoPays": "The contractor, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"Contractors describe next week's jobs, and the assistant drafts the equipment rental list and books it with the yard.\"",
+        "whyItWorks": "It saves the contractor planning time and sends reservations to the rental client."
+      },
+      {
+        "route": "Repair intake assistant for the engine shop",
+        "whoPays": "The repair shop, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"Customers describe the mower or saw symptoms and upload a photo, and the repair shop gets a drafted work order with likely parts to check.\"",
+        "whyItWorks": "Built once around the rental fleet's repair flow, sold through the yard's trust."
+      },
+      {
+        "route": "Event quote assistant for the party rental partner",
+        "whoPays": "The event rental company",
+        "min": 1000,
+        "max": 3000,
+        "unit": "one-time",
+        "pitchLine": "\"Planners describe guest count and venue, and the assistant drafts the tent, table and generator quote with the equipment yard's add-ons.\"",
+        "whyItWorks": "Both rental businesses share customers and gear."
+      },
+      {
+        "route": "Materials estimator for the lumber yard",
+        "whoPays": "The supply store, annually",
+        "min": 3000,
+        "max": 10000,
+        "unit": "per-year",
+        "pitchLine": "\"Homeowners describe the deck or fence, and the assistant drafts the materials list from the yard's stock and the tools to rent next door.\"",
+        "whyItWorks": "It sells lumber and sends tool rental reservations to the client."
+      },
+      {
+        "route": "Daily jobsite log for the builder",
+        "whoPays": "The builder, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Site leads talk through the day, and the assistant drafts the jobsite log, including which rental equipment can go off rent.\"",
+        "whyItWorks": "Builders save on extra rental days, which keeps them loyal to the yard."
+      },
+      {
+        "route": "Delivery route assistant for the fuel partner",
+        "whoPays": "The fuel company, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"The fuel partner sees which jobsites have rental machines out today and gets a drafted top-off route.\"",
+        "whyItWorks": "It ties two jobsite services together with the rental client in the middle."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Reservation confirmation and pickup reminder texts",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 50,
+      "monthlyMax": 120,
+      "pitchLine": "\"Every equipment reservation gets a confirmation, a pickup reminder the evening before, and what to bring: ID, trailer hitch, gloves.\"",
+      "whenAndWhatItTakes": "Day 30. Needs the reservation form live and their pickup rules."
+    },
+    {
+      "name": "Fleet calendar for the counter",
+      "kind": "software",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"One calendar showing which rental machine is out, due back, in the shop or reserved, so the counter answers availability in seconds.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the fleet list and their current paper or spreadsheet tracking."
+    },
+    {
+      "name": "Rental agreement and waiver e-sign",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Renters sign the agreement and damage waiver on a phone before pickup, so the equipment counter line moves while the machine is loaded.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their agreement and waiver wording, reviewed by their own adviser."
+    },
+    {
+      "name": "Off-rent reminder before the next billing day",
+      "kind": "automation",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 50,
+      "monthlyMax": 120,
+      "pitchLine": "\"Contractors get a text before a rental rolls into another week, asking if the machine can go off rent, so nobody pays for a lift they forgot.\"",
+      "whenAndWhatItTakes": "Month 3, with the fleet calendar. Needs contract dates and contractor numbers."
+    },
+    {
+      "name": "Condition photo log at check-out and return",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Yard staff snap each machine, the hour meter and the fuel gauge at check-out and return, stored against the rental contract.\"",
+      "whenAndWhatItTakes": "Month 3. Needs a tablet in the yard and staff willing to use it."
+    },
+    {
+      "name": "Which-tool assistant on the website",
+      "kind": "ai",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 120,
+      "monthlyMax": 300,
+      "pitchLine": "\"Visitors describe the job, like digging post holes in clay, and it suggests the rental tool and attachment from the yard's own catalogue.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the catalogue and the counter's usual advice for common jobs. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Damage estimate from return photos",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"Compare check-out and return photos, and it drafts a list of new damage and likely repair parts for the yard manager to confirm on the rental.\"",
+      "whenAndWhatItTakes": "Month 6, after the photo log has a few months of data. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Preventive maintenance tracker by hour meter",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Each rental machine's service intervals tracked by hour meter, so it comes off the rental line before it breaks on a jobsite.\"",
+      "whenAndWhatItTakes": "Month 4. Needs service intervals per machine and the hour readings from the photo log."
+    },
+    {
+      "name": "Counter phone answering",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 200,
+      "monthlyMax": 500,
+      "pitchLine": "\"It answers 'do you have a trencher free Saturday' from the fleet calendar and takes the equipment reservation when the counter is slammed.\"",
+      "whenAndWhatItTakes": "Month 5, after the fleet calendar. Needs their rates and rules. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Contractor portal for open rentals",
+      "kind": "software",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"Contractors see every machine they have on rent by jobsite, call one off rent, and download invoices without calling the yard.\"",
+      "whenAndWhatItTakes": "Month 6. Needs the fleet calendar and contractor accounts."
+    },
+    {
+      "name": "Utilisation report by machine",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"See which rental machines earn their keep and which sit in the yard, before deciding what to buy or sell next.\"",
+      "whenAndWhatItTakes": "Month 7. Needs a few months of fleet calendar data."
+    },
+    {
+      "name": "Listing writer for used fleet sales",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Upload photos and the service log of a machine leaving the rental fleet, and it drafts the sale listing for the owner to check.\"",
+      "whenAndWhatItTakes": "Month 6. Needs maintenance records. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Delivery dispatch board",
+      "kind": "software",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"Deliveries and pickups of rental equipment on one board with trailer assignments and jobsite notes, so drivers don't call the counter.\"",
+      "whenAndWhatItTakes": "Month 5. Needs the delivery zones and driver phones."
+    },
+    {
+      "name": "Late return follow-up",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 40,
+      "monthlyMax": 100,
+      "pitchLine": "\"When a rental tool isn't back by close, the renter gets a polite text with the extension option before the counter has to chase.\"",
+      "whenAndWhatItTakes": "Month 3. Needs return times on each contract."
+    },
+    {
+      "name": "Review reply drafts for renters",
+      "kind": "ai",
+      "oneTimeMin": 250,
+      "oneTimeMax": 600,
+      "monthlyMin": 59,
+      "monthlyMax": 149,
+      "pitchLine": "\"A renter praises the stump grinder or complains about a dull blade, and a reply naming the rental is drafted for the owner to approve.\"",
+      "whenAndWhatItTakes": "Month 2, with review requests. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Storm-day demand alerts",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"When a storm or freeze is forecast, it drafts a heads-up to staff and a post listing available chainsaws, pumps and generators for rental.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the fleet calendar and approved post wording. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Contractor credit check workflow",
+      "kind": "automation",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 50,
+      "monthlyMax": 120,
+      "pitchLine": "\"Account applications route to the owner with references and tax-exempt files attached, and the contractor hears back without calling the rental yard.\"",
+      "whenAndWhatItTakes": "Month 3, with the account application. Needs their credit approval steps."
+    },
+    {
+      "name": "Safety briefing card per machine",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 59,
+      "monthlyMax": 149,
+      "pitchLine": "\"Each rental machine gets a one-page plain-language safety card, drafted from the manufacturer's manual and approved by the yard owner.\"",
+      "whenAndWhatItTakes": "Month 4. Needs manuals for each machine and the owner's sign-off. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Counter staff applicant screener",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 59,
+      "monthlyMax": 149,
+      "pitchLine": "\"Applicants for counter, yard and driver roles answer questions on equipment experience and licences, and the owner calls only the fits.\"",
+      "whenAndWhatItTakes": "Whenever they're hiring. Needs must-haves and pay range. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Idle machine weekend specials page",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 50,
+      "monthlyMax": 120,
+      "pitchLine": "\"Rental machines sitting idle this week show up on a specials page with a weekend rate the owner sets, fed straight from the fleet calendar.\"",
+      "whenAndWhatItTakes": "Month 6, after the fleet calendar. Needs the owner's rules for which machines and rates qualify."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the rental catalogue and availability check",
+      "whoPays": "Independent rental yards, monthly",
+      "min": 79,
+      "max": 249,
+      "unit": "monthly",
+      "pitchLine": "\"Independent equipment yards need a catalogue with availability as much as this one did. I license it monthly with their fleet loaded in.\"",
+      "whyItWorks": "The first yard paid for the build and taught you the rental rules."
+    },
+    {
+      "route": "Rental association member programme",
+      "whoPays": "The rental association",
+      "min": 2000,
+      "max": 8000,
+      "unit": "one-time",
+      "pitchLine": "\"A catalogue site and contractor account application for every independent rental member, as a membership benefit.\"",
+      "whyItWorks": "Associations of independent yards need reasons to belong, and one deal reaches many."
+    },
+    {
+      "route": "Equipment dealer's rental-to-own programme",
+      "whoPays": "The equipment dealer, annually",
+      "min": 5000,
+      "max": 20000,
+      "unit": "per-year",
+      "pitchLine": "\"Contractors who rent the same machine every month are your next buyers. A rental-to-own page across your affiliated yards sends them to you.\"",
+      "whyItWorks": "Dealers want the rental customer at the moment they're ready to buy."
+    },
+    {
+      "route": "Multi-yard rental groups",
+      "whoPays": "The rental group, per yard",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "pitchLine": "\"Each yard gets its own catalogue and availability while the group shares one fleet. Built once, rolled out per location.\"",
+      "whyItWorks": "Groups buy per location and value shared inventory."
+    },
+    {
+      "route": "Homebuilder equipment scheduling portal",
+      "whoPays": "The homebuilder",
+      "min": 8000,
+      "max": 25000,
+      "unit": "one-time",
+      "pitchLine": "\"Every superintendent books rental equipment for their lots through one portal, with off-rent tracked so the builder stops paying for idle machines.\"",
+      "whyItWorks": "Builders lose real money on forgotten rentals, and the rental client's data proves it."
+    },
+    {
+      "route": "White-label rental template for agencies",
+      "whoPays": "The agency, per site",
+      "min": 600,
+      "max": 1800,
+      "unit": "one-time",
+      "pitchLine": "\"Agencies with a rental yard client struggle with availability by date. Mine already handles it, ready to brand.\"",
+      "whyItWorks": "Agencies sell the client; you sell the catalogue engine."
+    },
+    {
+      "route": "One rental yard per county",
+      "whoPays": "Rental yards in neighbouring counties",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I've built the equipment catalogue for one yard near {City}. Each neighbouring county gets one yard, first come.\"",
+      "whyItWorks": "Exclusivity sells, and rental yards rarely compete across counties."
+    },
+    {
+      "route": "Hardware co-op member stores with rental counters",
+      "whoPays": "The co-op, per store",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "pitchLine": "\"Member hardware stores with a tool rental counter get a catalogue and reservation page that matches the co-op's look.\"",
+      "whyItWorks": "Co-ops support members' side businesses and buy in batches."
+    },
+    {
+      "route": "Municipal public works loaner programmes",
+      "whoPays": "The municipality",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Towns that lend tools or chippers to residents need a reservation calendar. It's the equipment rental booking system with a different label.\"",
+      "whyItWorks": "Same workflow, a public budget, and a reference that sells to other towns."
+    },
+    {
+      "route": "Rental rate estimator sponsored by yards",
+      "whoPays": "Sponsoring rental yards, monthly",
+      "min": 79,
+      "max": 249,
+      "unit": "monthly",
+      "pitchLine": "\"Homeowners estimate what their project's equipment rental will run using the sponsoring yard's own rates, then reserve with that yard.\"",
+      "whyItWorks": "It never claims market data, only the sponsor's prices."
+    },
+    {
+      "route": "Finish stalled rental software",
+      "whoPays": "The rental yard with a half-built system",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"A yard with an unfinished availability or contract tool doesn't need to start again. I've already shipped the rental fleet logic.\"",
+      "whyItWorks": "Budget already set aside; they need someone who knows rental contracts."
+    },
+    {
+      "route": "Tool library and makerspace bookings",
+      "whoPays": "The tool library or makerspace",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "pitchLine": "\"Community tool libraries lend drills, saws and sanders by date. The equipment catalogue and availability check fit them as is.\"",
+      "whyItWorks": "Grant-funded buyers with a clear need and no in-house developer."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Rental catalogue site build plus care plan, one contract",
+      "min": 1800,
+      "max": 3000,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The rental catalogue and the care plan go on one contract, so a new machine in the fleet is a message to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Reservation confirmation and pickup reminder texts",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "trigger": "The first online reservations arrive and a renter shows up without a hitch or ID.",
+      "line": "\"That renter who came without a hitch is why the reminder exists. Every equipment pickup gets a checklist the night before.\""
+    },
+    {
+      "rung": 3,
+      "day": 60,
+      "offer": "Fleet calendar for the counter",
+      "min": 2000,
+      "max": 5000,
+      "unit": "one-time",
+      "trigger": "The counter double-books a machine or misses a reservation from the site.",
+      "line": "\"The double-booked lift is the sign. One fleet calendar and the rental counter never guesses again.\""
+    },
+    {
+      "rung": 4,
+      "day": 90,
+      "offer": "Fleet photo and walkaround video day",
+      "min": 400,
+      "max": 1000,
+      "unit": "per-shoot",
+      "trigger": "Catalogue cards still run on placeholders and new machines have arrived.",
+      "line": "\"The new machines deserve real photos. One day in the yard fills the equipment catalogue.\""
+    },
+    {
+      "rung": 5,
+      "day": 150,
+      "offer": "Condition photo log at check-out and return",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "trigger": "A damage or fuel charge dispute with a renter.",
+      "line": "\"That damage argument ends with photos. Check-out and return pictures on every rental.\""
+    },
+    {
+      "rung": 6,
+      "day": 240,
+      "offer": "Contractor portal for open rentals",
+      "min": 3000,
+      "max": 8000,
+      "unit": "one-time",
+      "trigger": "Contractor accounts pass a dozen and off-rent calls fill the end of each day.",
+      "line": "\"Let contractors see and call off their own equipment, and the rental counter gets its afternoons back.\""
+    },
+    {
+      "rung": 7,
+      "day": 365,
+      "offer": "Utilisation report by machine",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "trigger": "The owner starts planning next year's fleet purchases.",
+      "line": "\"Before you buy the next machine, see which rental units actually earned their place.\""
+    }
+  ]
+}
