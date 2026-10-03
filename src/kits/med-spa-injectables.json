@@ -1,0 +1,870 @@
+{
+  "schemaVersion": 1,
+  "category": "Med spa & injectables",
+  "slug": "med-spa-injectables",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Care family batch. Health-regulated: no outcome claims, no invented credentials, consent-only galleries. Bigger tickets than the rest of the family, so builds and add-ons run higher. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Treatments by concern",
+      "contains": "Lines, volume, skin texture and sun damage, each mapped to the injectable, filler, laser or microneedling options the clinic offers, with appointment length and the downtime the provider describes",
+      "why": "Med spa clients arrive with a concern, not a treatment name. A page that starts from the concern gets them to the right consultation instead of a wrong booking."
+    },
+    {
+      "section": "Injector and supervision page",
+      "contains": "The medical director's name and [licence type], each injector's [credential] as the clinic publishes it, and how the good-faith exam works before a first neuromodulator or filler appointment",
+      "why": "Clients compare med spas on who holds the syringe. A plain supervision page answers the question they are too polite to ask on the phone."
+    },
+    {
+      "section": "Unit, syringe and area pricing",
+      "contains": "How the clinic prices injectables: per unit, per syringe of filler or per treatment area, with the clinic's own ranges or bracketed placeholders, plus how membership pricing changes the bill",
+      "why": "Injectable prices are quoted three different ways across town. The clinic that explains its own method plainly wins the shopper who is comparing tabs."
+    },
+    {
+      "section": "Screening before injectables",
+      "contains": "What the provider will ask at the consultation: medications, pregnancy, recent dental work or procedures, allergies, and why those details stay off the website form",
+      "why": "Careful clients want to know the clinic screens before it injects. Saying so, without collecting health details on a web form, reads as the safer chair."
+    },
+    {
+      "section": "Consent-led results gallery",
+      "contains": "Only pictures the client signed off on, unretouched, each labelled with the treatment, the number of sessions and the timeframe, beside a plain note that results differ from person to person",
+      "why": "Results pictures are what aesthetics shoppers look for first, and the clinic carries the risk if a gallery overpromises or shows someone without consent."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C40",
+      "siteType": "local-conversion",
+      "name": "Quiet Consult",
+      "heroLayout": "split-photo",
+      "mood": [
+        "calm",
+        "unhurried",
+        "clean"
+      ],
+      "bestFor": "Single-injector clinics and nurse-led med spas that need a credible page and a consultation button first",
+      "pairsWithTier": "starter",
+      "headlineSample": "Injectables and skin treatments in {City}, by consultation",
+      "whyItFits": "Driftwood's warm neutral ground and refined serif feel like a calm treatment room, and the split layout puts the injector's face beside the consult button."
+    },
+    {
+      "id": "b",
+      "themeId": "C8",
+      "siteType": "booking-first",
+      "name": "Clinic Green",
+      "heroLayout": "card-stack",
+      "mood": [
+        "clinical",
+        "reassuring",
+        "fresh"
+      ],
+      "bestFor": "Med spas with a full menu of injectables, lasers and facials that need treatment cards and a booking flow",
+      "pairsWithTier": "standard",
+      "headlineSample": "Medical aesthetics in {City}, supervised and unhurried",
+      "whyItFits": "The family combo, Sage Spa, fails CTA contrast. Evergreen Trust keeps the green spa calm, adds the clinical seriousness a med spa needs, and its Book button passes AA."
+    },
+    {
+      "id": "c",
+      "themeId": "C9",
+      "siteType": "premium-brand",
+      "name": "Membership Noir",
+      "heroLayout": "type-led",
+      "mood": [
+        "discreet",
+        "luxurious",
+        "assured"
+      ],
+      "bestFor": "Established aesthetics clinics selling memberships and premium injectors to clients who expect discretion",
+      "pairsWithTier": "premium",
+      "headlineSample": "A private aesthetics practice in {City}",
+      "whyItFits": "A dark ground with soft gold reads as a members' clinic, and the Didone display carries a premium injector's name without needing a stock face in the hero."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your med spa's Google listing has hours and a phone number but no website, so someone in {City} comparing injectables clinics can't see who you are before they call.",
+      "hook": "Open their Maps listing and confirm there is no Website button. Screenshot it for when they reply.",
+      "linkLine": "Here's what would sit behind that button for the med spa: {demo-link}"
+    },
+    {
+      "angle": "Booking app as the whole site",
+      "line": "Your bio link drops straight into a booking app with treatment names and no explanation. A first-time injectables client wants to know who injects and how pricing works before they pick a slot.",
+      "hook": "Tap their bio link and note where it lands: a booking app, a link page or a Facebook page.",
+      "linkLine": "A med spa page that explains first, then books: {demo-link}"
+    },
+    {
+      "angle": "Stale clinic page",
+      "line": "The aesthetics site on your listing still shows a treatment special from last spring and an injector who seems to have moved on. Careful clients read that as a clinic that isn't paying attention.",
+      "hook": "Open the site and find one stale detail: an old special, a departed injector, a dead booking button. Note it.",
+      "linkLine": "The same clinic, current and calm: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "I opened your med spa site on my phone and the treatment menu ran off the side of the screen. Most people researching filler do it on a phone, late, in private.",
+      "hook": "Only if they have a site. Load it on your phone and note what breaks. Screenshot it for when they reply.",
+      "linkLine": "The med spa, rebuilt for a phone: {demo-link}"
+    },
+    {
+      "angle": "No consultation request",
+      "line": "There's no way to ask for an injectables consultation on your page without calling during clinic hours. Nervous first-timers would rather fill in a short request and hear back.",
+      "hook": "Look for a consult form anywhere: site, listing, bio. If the only route is a phone call, the angle holds.",
+      "linkLine": "A consultation request built for first-time injectables clients: {demo-link}"
+    },
+    {
+      "angle": "Results with nowhere to live",
+      "line": "Your consented results posts are scattered between product promos and holiday hours. A clinic gallery sorted by treatment, labelled honestly, would do the explaining for you.",
+      "hook": "Find one results post that clearly names the treatment. Check the caption mentions consent before you use this angle.",
+      "linkLine": "A consent-led results gallery, sorted by treatment: {demo-link}"
+    },
+    {
+      "angle": "Reviews stuck on Google",
+      "line": "Your Google reviews keep mentioning how unhurried the injector was at the consultation. That's the exact worry a first-time med spa client has, and it isn't on any page they'd read.",
+      "hook": "Read their reviews and copy one phrase about the consultation or the injector. Quote it back if they reply.",
+      "linkLine": "Your reviews beside the consultation button: {demo-link}"
+    },
+    {
+      "angle": "Wedding and holiday season",
+      "line": "Brides and holiday-party guests start asking about injectables and skin treatments weeks ahead. A clinic page that explains timing and books the consult catches them before they call around.",
+      "hook": "Use this in late summer for holiday parties or January for spring weddings. Name the season.",
+      "linkLine": "A med spa page ready for event season: {demo-link}"
+    },
+    {
+      "angle": "Late-night researchers",
+      "line": "Most people read about filler and wrinkle-relaxing injections at night, long after your front desk goes home. Right now there's nothing to read and nowhere to request a consult.",
+      "hook": "Look for comments asking 'how much' or 'do you do consults' that sat unanswered. Note one.",
+      "linkLine": "A med spa page that takes consult requests at midnight: {demo-link}"
+    },
+    {
+      "angle": "Hiring an injector",
+      "line": "Saw you're hiring an aesthetic injector. The good ones check the clinic's website and its supervision setup before they apply.",
+      "hook": "Only if they posted a hiring story or job post for an injector, aesthetician or front desk. Note the date.",
+      "linkLine": "A med spa page with a careers section: {demo-link}"
+    },
+    {
+      "angle": "Clients from nearby towns",
+      "line": "Your reviews mention clients driving in from {Neighborhood} and further out for injectables. A page that says where the clinic is and where to park makes that drive feel planned.",
+      "hook": "Scan reviews for neighbourhoods or towns clients mention. Use the real name in place of {Neighborhood}.",
+      "linkLine": "A med spa page for clients coming from further out: {demo-link}"
+    },
+    {
+      "angle": "Memberships and payment plans",
+      "line": "You mention a membership in your stories, but there's nowhere to read what it includes. A clear membership page does a lot of the selling for a med spa.",
+      "hook": "Check stories and highlights for 'membership', 'VIP' or payment-plan mentions. If there's no page explaining it, the angle holds.",
+      "linkLine": "A med spa membership page that explains itself: {demo-link}"
+    },
+    {
+      "angle": "Supervision and credentials",
+      "line": "Nothing I could find online says who the medical director is or what training your injectors hold. That's the first thing a cautious aesthetics client looks for.",
+      "hook": "Look for 'medical director', 'RN', 'NP' or training mentions in their bio and posts. Never invent a credential.",
+      "linkLine": "Who injects and who supervises, stated plainly: {demo-link}"
+    },
+    {
+      "angle": "Word of mouth only",
+      "line": "It sounds like most of your injectables clients come from friends of clients. Those referrals still search the med spa's name before they book, and right now they find very little.",
+      "hook": "Look for posts thanking clients for referrals or reviews saying 'my friend sent me'. Quote it.",
+      "linkLine": "Where a referred med spa client would land: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "That {specific recent job} you posted is careful aesthetics work, and the caption explains it well. A treatment page built around it would answer the next client's questions too.",
+      "hook": "Pick their newest consented results post or treatment explainer and name it exactly: the treatment and the area.",
+      "linkLine": "That treatment, explained on its own page: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, that {specific recent job} you posted is careful work, and the caption explains it better than most clinics manage.\n\nI looked for a site for {Business Name} and only found the booking app and your social pages. I put together a sample med spa page with treatments by concern, a consultation request and a who-injects section, with marked placeholders where your photos would go.\n\nWould you like me to send it over?",
+    "dm2": "{Owner}, following up in case my message got buried under client DMs. Here's the sample med spa site for {Business Name}: {demo-link}\n\nIt has treatments by concern, a consultation request that keeps health details off the form, and a supervision section with placeholders for your real credentials. If it's not for you, say so and I won't message again.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for med spas and injectables clinics here in {City}. I sent you a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"Easy to miss between appointments. Short version: I built a sample site for {Business Name} with treatments by concern, a consultation request and a page on who injects, with marked placeholders where your photos would go. Can I email you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range}, then {Care Range} a month for hosting and treatment menu changes. For a clinic like yours I'd normally quote about {Build Price}.\"\n\"Nothing on it makes a result claim. Every credential and price comes from you, and anything you haven't given me stays a bracketed placeholder.\"\n\"Could we take fifteen minutes after your last client one evening this week?\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. We start the day it clears.\"",
+    "objections": [
+      {
+        "objection": "We already get messages from marketing agencies every day.",
+        "handler": "\"I know, med spas are pitched constantly. I'm not selling ads or a lead program. It's one site you own, built so a careful client trusts the clinic before the consult.\""
+      },
+      {
+        "objection": "Our booking app already has our treatment menu.",
+        "handler": "\"It lists treatments. It can't explain who supervises, how unit pricing works or what the consultation is like. The site answers those first, then hands the client to your booking app.\""
+      },
+      {
+        "objection": "We have to be careful about what we say online.",
+        "handler": "\"Agreed, and that's how it's built. No outcome claims, no invented credentials, consented pictures only, and you or your medical director sign off every page before it goes live.\""
+      },
+      {
+        "objection": "All our clients come from Instagram.",
+        "handler": "\"Instagram starts the interest. The site is where they check who injects, what it costs and how to book a consult without waiting on a DM. It links straight back to your grid.\""
+      },
+      {
+        "objection": "We're about to rebrand.",
+        "handler": "\"Then build the site with the rebrand, not after it. I can work from the new name and colours, and launch when the signage changes.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}, because of the treatment pages, the supervision page and the consult request. A handful of new injectables clients covers it.\""
+      }
+    ],
+    "email": {
+      "subject": "A site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for med spas and injectables clinics around {City}. {Business Name} has thoughtful treatment posts on its social pages, but no site where a cautious first-time client can read who injects, how pricing works and what the consultation is like.\n\nI built a sample first rather than ask for your time: treatments by concern, a supervision section with bracketed placeholders for your real credentials, unit and syringe pricing explained, and a consultation request that keeps health details off the form. It uses marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and treatment changes. If not, no problem, it comes down at the end of the month.\n\nWorth fifteen minutes after clinic hours?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build websites for med spas in {City}, and I put together a sample one for {Business Name}. I'll email the link so you can look after your last client. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm taking the {Business Name} med spa demo down on Friday to free up the space.\n\nWant me to leave it up a little longer? One word is fine either way.",
+    "nurture": "Hi {Owner}, holiday party season is when injectables consults pile up, and the clinics with a clear consult page take the calm ones first. Thought of you.\n\nThe sample site is still here whenever you want it, and nothing's changed on price. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to a few new injectables clients, not to the clinic's ad budget. Med spas are pitched big retainers daily, and a fixed site price stands out.",
+      "Price treatment pages by concern, not by product. One lines-and-volume page carries more than five thin product pages.",
+      "The supervision and credentials page is its own line, because it needs the medical director's review before it ships.",
+      "Never write the clinic's prices yourself. Quote the pricing explainer with bracketed placeholders and charge for the structure.",
+      "Consent records and a results gallery cost more than a plain gallery. Price the consent step, not the picture count.",
+      "Keep monthly add-ons below the price of a single filler syringe. Clinics compare every monthly line to a treatment.",
+      "Sell membership and event-season pages ahead of the season, never in the rush."
+    ],
+    "lineItems": [
+      {
+        "item": "Treatment-by-concern page (each concern)",
+        "min": 250,
+        "max": 600,
+        "unit": "per-page",
+        "description": "Max when the concern maps to several treatments, each with appointment length, downtime as described by the provider and who should not book.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Supervision and injector credentials page",
+        "min": 300,
+        "max": 800,
+        "unit": "one-time",
+        "description": "Max with several injectors, the good-faith exam explained, and a review round with the medical director.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Unit and syringe pricing explainer",
+        "min": 250,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max when it covers per-unit, per-syringe and per-area methods side by side with membership pricing.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Consent-led results gallery",
+        "min": 500,
+        "max": 1500,
+        "unit": "one-time",
+        "description": "Max with treatment filters, consent records tied to each picture and a takedown request route for clients.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Membership explainer and sign-up page",
+        "min": 400,
+        "max": 1000,
+        "unit": "one-time",
+        "description": "Max with several membership levels, a comparison table and recurring billing hooked to the clinic's payment account.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Consultation request with screening notice",
+        "min": 300,
+        "max": 800,
+        "unit": "one-time",
+        "description": "Max when it routes by treatment interest and explains which health questions are asked in person, not on the form.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Spanish-language treatment pages",
+        "min": 400,
+        "max": 1200,
+        "unit": "one-time",
+        "description": "Max when treatment pages, pricing explainer and consult request are all translated and reviewed by a bilingual staff member.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Consented treatment content day at the clinic",
+      "min": 600,
+      "max": 1500,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"One clinic day filming the treatment rooms, the injectors and consenting clients gives the med spa a season of calm, honest posts.\"",
+      "when": "Month 2, booked on a day with clients who have signed a media consent form in advance."
+    },
+    {
+      "name": "Google profile upkeep for the med spa",
+      "min": 200,
+      "max": 400,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Weekly posts on the clinic's Google profile naming the treatment, the injector and the hours, so people searching for a med spa nearby see a busy, careful clinic.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Review requests after each treatment visit",
+      "min": 79,
+      "max": 199,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A few days after the appointment, once any swelling has settled, the client gets a short note asking how the injectables visit went and whether they'd review it.\"",
+      "when": "Day 30. The easiest second sale."
+    },
+    {
+      "name": "Event-season consultation campaign",
+      "min": 500,
+      "max": 1500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A planned push in the weeks before holiday parties and spring weddings, pointing people to an aesthetics consult instead of a last-minute walk-in.\"",
+      "when": "Pitch in August for the holidays, or December for wedding season."
+    },
+    {
+      "name": "Monthly treatment explainer reels",
+      "min": 400,
+      "max": 1000,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Short explainers where your injector walks through what a filler or laser appointment actually involves, scripted with you and checked before they post.\"",
+      "when": "Month 3, if they say content is the part they never get to."
+    },
+    {
+      "name": "Clinic signage and treatment menu cards",
+      "min": 200,
+      "max": 600,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A treatment-room menu card and a front-desk sign with the consult code, so the client in the chair can book their friend a med spa consult.\"",
+      "when": "Right after launch."
+    },
+    {
+      "name": "Client newsletter for the aesthetics practice",
+      "min": 200,
+      "max": 500,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"One calm email a month to existing aesthetics clients: new treatments, injector availability and membership news. No countdown timers.\"",
+      "when": "Month 3, once the client list is in one place."
+    },
+    {
+      "name": "Neighbourhood pages for the clinic",
+      "min": 300,
+      "max": 700,
+      "unit": "per-page",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A page for each neighbourhood your injectables clients drive in from, with the route, parking and the consult button.\"",
+      "when": "Month 4, once reviews show where clients come from."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "The plastic surgery practice that refers clients",
+        "whoPays": "The surgical practice",
+        "min": 3000,
+        "max": 8000,
+        "unit": "one-time",
+        "pitchLine": "\"The surgeon who sends you non-surgical clients has a dated practice site. I build for clinics with careful medical copy rules already.\"",
+        "whyItWorks": "Surgeons and med spas trade referrals constantly. A med spa owner vouching for you is the only warm way into a surgical office."
+      },
+      {
+        "route": "The aesthetics product distributor's regional rep",
+        "whoPays": "The distributor",
+        "min": 2500,
+        "max": 8000,
+        "unit": "one-time",
+        "pitchLine": "\"Your injectables rep runs training evenings for every clinic in the region and signs people up by text. Introduce me and I'll build the event calendar.\"",
+        "whyItWorks": "Distributors fund education to keep clinics ordering, and their clinic list is your prospect list."
+      },
+      {
+        "route": "The injector training academy",
+        "whoPays": "The academy",
+        "min": 2000,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"The academy where your injectors trained sells courses from a single flyer page. A course site with dates and prerequisites fills those seats.\"",
+        "whyItWorks": "Training academies sell to nurses and practitioners who research carefully. The clinic's injectors are trusted alumni."
+      },
+      {
+        "route": "Bridal boutiques that send brides for skin prep",
+        "whoPays": "The boutique, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The bridal boutique that recommends your med spa for pre-wedding skin treatments needs a site that books fittings online. I build those too.\"",
+        "whyItWorks": "Bridal vendors pass the same client along a chain. One trusted aesthetics clinic opens the boutique's door."
+      },
+      {
+        "route": "Cosmetic dentists in the same plaza",
+        "whoPays": "The dental office, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The cosmetic dentist next to the clinic shares half your aesthetics clients and has the same consult-first problem. I'd build theirs on the same calm layout.\"",
+        "whyItWorks": "Same affluent client, same regulated copy care, and the plaza makes the introduction natural."
+      },
+      {
+        "route": "Lash and brow studios that refer facial clients",
+        "whoPays": "Each studio, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The lash studio that sends you facial and skin clients books from a bio link. I'll give them a small site that points clients back to your med spa too.\"",
+        "whyItWorks": "Small beauty studios trade referrals with the nearest med spa. A shared client base makes the second sale easy."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Course enquiry assistant for the injector academy",
+        "whoPays": "The academy, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Nurses asking about injector courses get answers on dates, prerequisites and fees from the academy's own handbook, and the academy gets a qualified enquiry.\"",
+        "whyItWorks": "Academies answer the same course questions every night. An assistant limited to their handbook is a contained, easy yes."
+      },
+      {
+        "route": "Logistics assistant for the referring surgical practice",
+        "whoPays": "The surgical practice, monthly",
+        "min": 200,
+        "max": 500,
+        "unit": "monthly",
+        "pitchLine": "\"The surgical office's after-hours questions about parking, forms and consult fees get answered from approved text, and anything clinical goes to the front desk.\"",
+        "whyItWorks": "Practices want fewer logistics calls without any clinical risk. Approved answers only is the line they need to hear."
+      },
+      {
+        "route": "Clinic locator for the aesthetics distributor",
+        "whoPays": "The distributor, annually",
+        "min": 3000,
+        "max": 12000,
+        "unit": "per-year",
+        "pitchLine": "\"Consumers ask which med spas near them carry a treatment line. A locator that matches them to trained accounts keeps those clinics loyal to the distributor.\"",
+        "whyItWorks": "It gives the distributor's clinics new clients, which is worth more to them than a rebate."
+      },
+      {
+        "route": "Bridal beauty timeline planner for the boutique",
+        "whoPays": "The bridal boutique",
+        "min": 1000,
+        "max": 3000,
+        "unit": "one-time",
+        "pitchLine": "\"Brides enter the wedding date and the boutique's planner lays out fittings, hair trials and when to book a med spa consult, from the boutique's own vendor list.\"",
+        "whyItWorks": "Boutiques want to look organised and keep vendor partners close. The med spa sits on that list."
+      },
+      {
+        "route": "Consult-request assistant for the cosmetic dentist",
+        "whoPays": "The dental office, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"The same consult flow you built for the med spa answers the dentist's late-night veneer questions from approved text and drops a request on their calendar.\"",
+        "whyItWorks": "You already built the same consult flow for the med spa. A neighbouring office is configuration, not a new build."
+      },
+      {
+        "route": "Refill reminder texts for the lash studio",
+        "whoPays": "The lash studio, monthly",
+        "min": 79,
+        "max": 199,
+        "unit": "monthly",
+        "pitchLine": "\"The lash studio's clients get a refill nudge written in the tech's voice when their set is due, adapted from the med spa's treatment reminders.\"",
+        "whyItWorks": "Small studios can't build this themselves, and the med spa's version proves it works on a shared client."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Treatment-interval rebooking reminders",
+      "kind": "automation",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"A wrinkle-relaxer client hears from the med spa when the provider's usual interval comes round, not on a random Tuesday.\"",
+      "whenAndWhatItTakes": "Day 30. Needs the treatment list with the intervals the medical director sets, and access to the booking calendar."
+    },
+    {
+      "name": "Deposits for consults and long treatment slots",
+      "kind": "software",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 29,
+      "monthlyMax": 99,
+      "pitchLine": "\"Laser series and filler appointments take a deposit at booking, so a no-show in a long aesthetics slot still pays something.\"",
+      "whenAndWhatItTakes": "At build, or the first time they mention a no-show. Needs their deposit and cancellation policy and a payment account."
+    },
+    {
+      "name": "Price and availability responder for clinic DMs",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 149,
+      "monthlyMax": 349,
+      "pitchLine": "\"'How much per unit' and 'any consults Thursday' get an answer from the clinic's approved pricing text, and anything about health or suitability is handed to a person.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the approved pricing explainer, booking access and a list of topics it must never answer. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Membership billing and benefits tracker",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Med spa members are billed monthly, their banked treatment credits are tracked, and the front desk sees what each member has left.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the membership rules, current member list and a payment account."
+    },
+    {
+      "name": "Post-visit check-in texts with the clinic's aftercare sheet",
+      "kind": "automation",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"The day after an injectables visit, the client gets the clinic's own approved aftercare sheet and the number to call with a concern.\"",
+      "whenAndWhatItTakes": "Month 2. Needs aftercare sheets signed off by the medical director, per treatment. Sends only approved text, never advice."
+    },
+    {
+      "name": "Review reply drafts for the aesthetics clinic",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Each med spa review gets a warm reply drafted for approval, and it never confirms that the reviewer was a client or names their treatment.\"",
+      "whenAndWhatItTakes": "Month 2, alongside review requests. Needs their reply tone and privacy rules. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Consent form and photo release tracker",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 49,
+      "monthlyMax": 149,
+      "pitchLine": "\"Every results picture the med spa posts is tied to a signed release, with the date and the uses the client agreed to.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their release wording, reviewed by their own adviser, and a habit of asking at checkout."
+    },
+    {
+      "name": "After-hours phone receptionist for the med spa",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 3500,
+      "monthlyMin": 249,
+      "monthlyMax": 599,
+      "pitchLine": "\"Calls after the clinic closes get answered, consults get booked, and any caller describing a reaction is told to contact the provider's on-call line or emergency services.\"",
+      "whenAndWhatItTakes": "Month 4, once they trust you. Needs policies, booking access and the medical director's escalation wording. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Injectable lot and expiry log",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Each vial and syringe is logged with its lot number and expiry, so the clinic knows what's on the shelf and what's running out.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their current stock sheet and the person who receives deliveries. Keeps stock only, not patient records."
+    },
+    {
+      "name": "Lapsed med spa client win-back",
+      "kind": "automation",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Clients who haven't been into the med spa in a while get a quiet note with the current injector schedule and a consult link.\"",
+      "whenAndWhatItTakes": "Month 3. Needs visit history from the booking system and an opt-out rule."
+    },
+    {
+      "name": "Which-consult-to-book quiz",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 3500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"A visitor describes the aesthetics concern in their own words and is pointed to the right consultation type, never told what treatment they need.\"",
+      "whenAndWhatItTakes": "Month 5. Needs the concern-to-consult map approved by the medical director. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Injector and treatment room schedule board",
+      "kind": "software",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"See which injector, which laser room and which hours are booked across the week, so the med spa stops double-booking the one machine.\"",
+      "whenAndWhatItTakes": "Month 5, for clinics with several injectors or a laser room. Needs staff schedules and the room list."
+    },
+    {
+      "name": "Caption drafts with a claims check",
+      "kind": "ai",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"Post a treatment explainer and get a caption in the clinic's voice, with any promise-of-results wording flagged before it goes up.\"",
+      "whenAndWhatItTakes": "Month 2. Needs a few past captions and the clinic's list of words it won't use. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Gift card and treatment package store",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Facial and skin treatment gift cards on the med spa site, ready for December and Mother's Day.\"",
+      "whenAndWhatItTakes": "Month 2, before a gifting season. Needs the packages they'll sell and a payment account."
+    },
+    {
+      "name": "Promotion wording checker",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"Before an injectables special goes out by email or post, it's checked against the clinic's own advertising rules and anything risky is flagged for a person.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the clinic's written advertising rules from their own adviser. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Injector commission and payout report",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"For med spas paying injectors on production: who treated what, retail included, at the end of every pay period.\"",
+      "whenAndWhatItTakes": "Month 6, only for clinics with staff injectors. Needs commission rules and booking data."
+    },
+    {
+      "name": "Front-desk policy answer search",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 149,
+      "monthlyMax": 349,
+      "pitchLine": "\"New front-desk staff search the med spa's own written policies on deposits, memberships and pre-appointment instructions instead of interrupting an injector.\"",
+      "whenAndWhatItTakes": "Month 6. Needs written policies, with every answer approved before launch. Front-desk topics only. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Waitlist texts when an aesthetics slot opens",
+      "kind": "automation",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"When a filler client drops out, people who asked to see that injector sooner are offered the opening by text, first reply wins.\"",
+      "whenAndWhatItTakes": "Month 4. Needs booking access and a waitlist people opted into."
+    },
+    {
+      "name": "Member drop-off early warning",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"Med spa members who've stopped using their credits are flagged with a suggested personal note, before they cancel the membership.\"",
+      "whenAndWhatItTakes": "Month 7, once membership billing has a few months of data. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Multi-clinic numbers dashboard",
+      "kind": "software",
+      "oneTimeMin": 2500,
+      "oneTimeMax": 6000,
+      "monthlyMin": 149,
+      "monthlyMax": 399,
+      "pitchLine": "\"For owners with a second med spa: consults, treatments, memberships and injector hours side by side for each location.\"",
+      "whenAndWhatItTakes": "Month 9, only when they open or buy a second clinic. Needs booking and payment exports from both."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the consult and consent tools for independent med spas",
+      "whoPays": "Each clinic, monthly",
+      "min": 99,
+      "max": 299,
+      "unit": "monthly",
+      "pitchLine": "\"I built a consult request, a consent tracker and interval reminders for one med spa. Every independent injector juggles the same three binders.\"",
+      "whyItWorks": "The first clinic paid for the workflow. Independent med spas are numerous and talk to each other at training events."
+    },
+    {
+      "route": "Medical director service organisations",
+      "whoPays": "The organisation, annually",
+      "min": 5000,
+      "max": 15000,
+      "unit": "per-year",
+      "pitchLine": "\"You supervise dozens of med spas. A site template with a compliant supervision page and consult flow is something every one of them needs.\"",
+      "whyItWorks": "These organisations already hold the clinic relationships and care about compliant copy. One contract reaches many clinics."
+    },
+    {
+      "route": "Med spa franchise groups",
+      "whoPays": "The franchise group, per location",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Each med spa location needs its own injector bios and consult calendar under one brand. I build the location template once and roll it out.\"",
+      "whyItWorks": "One approval at head office becomes many location builds on the same template."
+    },
+    {
+      "route": "Trained-provider locator for an aesthetics product maker",
+      "whoPays": "The manufacturer's education team",
+      "min": 8000,
+      "max": 30000,
+      "unit": "one-time",
+      "pitchLine": "\"Consumers want an injector who trained on your line. A locator tied to your course records sends them to the right clinic.\"",
+      "whyItWorks": "Manufacturers train injectors and want that training to sell product. The med spa client shows you know the consult workflow."
+    },
+    {
+      "route": "Aesthetics professional association member toolkit",
+      "whoPays": "The association",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer every member clinic a med spa site template with a supervision page and a claims-safe treatment menu as a member benefit.\"",
+      "whyItWorks": "Associations need renewal reasons, and compliant marketing is a constant worry for their members."
+    },
+    {
+      "route": "White-label med spa template for agencies",
+      "whoPays": "The agency, per site",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency runs ads for med spas and patches together landing pages. License my clinic template with the consult flow and supervision page built in.\"",
+      "whyItWorks": "Agencies own the med spa relationship; you sell them the regulated build they don't want to learn."
+    },
+    {
+      "route": "Graduate launch kit for injector training academies",
+      "whoPays": "The academy, annually",
+      "min": 2000,
+      "max": 8000,
+      "unit": "per-year",
+      "pitchLine": "\"Every nurse injector who finishes your course leaves with a starter clinic page and a consult request ready to switch on.\"",
+      "whyItWorks": "Academies sell career outcomes. A launch kit is a recurring contract and a pipeline of future clinic clients."
+    },
+    {
+      "route": "Dermatology groups adding an aesthetics wing",
+      "whoPays": "The dermatology group",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Your practice is adding injectables and lasers alongside medical dermatology. The aesthetics side needs its own consult-first site with your supervision stated plainly.\"",
+      "whyItWorks": "Groups splitting cosmetic from medical work need a separate front door, and a working med spa build is the proof."
+    },
+    {
+      "route": "Insurance brokers who cover med spas",
+      "whoPays": "The broker",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Your med spa clients keep asking what they can safely say online. A resource hub of claims-safe page templates makes your book stickier.\"",
+      "whyItWorks": "Brokers want fewer claims and more renewals. Careful marketing templates serve both."
+    },
+    {
+      "route": "Day spas and wellness centres adding injectables",
+      "whoPays": "The spa",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Your day spa is bringing in a nurse injector. The injectables side needs supervision, screening and consult pages your massage menu never had.\"",
+      "whyItWorks": "Spas expanding into medical aesthetics don't know the copy rules. You've already solved them once."
+    },
+    {
+      "route": "The same med spa build in the next metro",
+      "whoPays": "New clinics in a new metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I keep to one med spa per part of {City}. Clinics an hour away don't compete with mine, and the aesthetics template is ready.\"",
+      "whyItWorks": "Non-competing geography lets you reuse the regulated copy, the template and the finished clinic proof."
+    },
+    {
+      "route": "Rescue stalled med spa rebuilds",
+      "whoPays": "The stuck clinic",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "pitchLine": "\"An agency started your med spa rebuild and went quiet halfway. I can finish it on a clinic setup I've already shipped.\"",
+      "whyItWorks": "Stuck clinics have budget set aside and a deadline. They want someone who has done a med spa before."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Med spa site build plus care plan, one contract",
+      "min": 2500,
+      "max": 4500,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The med spa site and the care plan go on one contract, so a new injector or a price change is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 14,
+      "offer": "Deposits for consults and long treatment slots",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "trigger": "They mention a no-show on a laser series or filler appointment.",
+      "line": "\"That empty laser slot is exactly what a deposit at booking stops.\""
+    },
+    {
+      "rung": 3,
+      "day": 30,
+      "offer": "Review requests and treatment-interval reminders",
+      "min": 79,
+      "max": 199,
+      "unit": "monthly",
+      "trigger": "The site has been live a month and the calendar shows injectables clients drifting past their usual interval.",
+      "line": "\"Your injectables clients are due back on a rhythm. Let's remind them on time and ask the happy ones for a review.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Consented treatment content day at the clinic",
+      "min": 600,
+      "max": 1500,
+      "unit": "per-shoot",
+      "trigger": "The results gallery still shows only a few consented treatment pictures.",
+      "line": "\"One clinic day with consenting clients fills the med spa gallery honestly for a season.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Price and availability responder for clinic DMs",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "trigger": "They say the front desk spends evenings answering 'how much per unit' messages.",
+      "line": "\"Those per-unit pricing DMs get answered from your approved text while the clinic is closed.\""
+    },
+    {
+      "rung": 6,
+      "day": 120,
+      "offer": "Membership billing and benefits tracker",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "trigger": "They are selling memberships but tracking credits in a spreadsheet.",
+      "line": "\"Your med spa members deserve better than a spreadsheet. Let's bill and track their credits properly.\""
+    },
+    {
+      "rung": 7,
+      "day": 180,
+      "offer": "Consent form and photo release tracker",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "trigger": "They ask whether they can post a client's results picture they took months ago.",
+      "line": "\"If you're not sure a results picture has a signed release, the clinic needs the tracker before the next post.\""
+    },
+    {
+      "rung": 8,
+      "day": 270,
+      "offer": "Introduction to the referring plastic surgery practice",
+      "min": 3000,
+      "max": 8000,
+      "unit": "one-time",
+      "trigger": "They mention a surgeon who sends them non-surgical clients and asked who built the med spa site.",
+      "line": "\"The surgeon who sends you injectables clients asked about the site. Would you introduce me?\""
+    }
+  ]
+}

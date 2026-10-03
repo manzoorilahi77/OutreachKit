@@ -128,6 +128,8 @@ function badNumbers(text: string): string[] {
     const before = text.slice(0, m.index);
     const after = text.slice(m.index! + m[0].length);
     if (UNIT_BEFORE.test(before) || UNIT_AFTER.test(after)) continue;
+    // US emergency and crisis numbers are safety information, never a statistic.
+    if (m[0] === "911" || m[0] === "988") continue;
     // A theme combo or type direction id ("C39", "T10") is a name, not a statistic.
     if (/\b[CT]$/.test(before) && /^\d{1,2}$/.test(m[0])) continue;
     if (/\$\s*$/.test(before)) continue;

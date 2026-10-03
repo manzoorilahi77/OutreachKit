@@ -1,0 +1,851 @@
+{
+  "schemaVersion": 1,
+  "category": "Barbershops",
+  "slug": "barbershops",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Care family batch. Smallest ticket in the family: booking, walk-in queue and the Google profile matter more than the site, so every add-on and product is priced low. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Walk-in status and queue",
+      "contains": "Walk-in hours, the current wait for each barber where the shop shares it, a join-the-queue button and a text when the chair is nearly ready",
+      "why": "Half of barbershop customers decide by the wait, not the price. A shop that shows its line wins the guy standing outside the one that doesn't."
+    },
+    {
+      "section": "Fade and cut style guide",
+      "contains": "Low, mid and high fades, skin fades, tapers, line-ups, crops and textured tops, each with a name, a short description and the clipper guard lengths the shop uses",
+      "why": "Most men can't describe the haircut they want. A style guide gives them the word to book, and fewer cuts go wrong in the chair."
+    },
+    {
+      "section": "Kids' cuts and first haircut",
+      "contains": "Kids' pricing, the age the shop starts at, quiet hours for nervous or sensory-sensitive kids, and a first haircut certificate with a lock of hair",
+      "why": "Parents choose a barber on patience. The barbershop that says how it handles a nervous kid gets the whole family for years."
+    },
+    {
+      "section": "Cut club membership",
+      "contains": "Monthly membership for a set number of haircuts or line-ups, beard work included or not, priority booking, and how to pause or cancel",
+      "why": "Regulars who get a fade every two weeks do the maths. A membership page turns that habit into steady monthly income for the barber."
+    },
+    {
+      "section": "Chair rental for barbers",
+      "contains": "Booth rent, what's included (chair, station, products, booking), shop hours, the vibe and a short application",
+      "why": "Barbershop owners are always filling a chair, and good barbers check the shop's online presence before they walk in to ask."
+    },
+    {
+      "section": "Groomsmen haircuts and event grooming",
+      "contains": "Wedding party haircuts and hot towel shaves in the shop or on location, group pricing, timing on the day and the deposit that holds it",
+      "why": "Grooms book barbers months ahead for the whole party. A clear groomsmen page turns a Saturday into a booked group."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C49",
+      "siteType": "booking-first",
+      "name": "Chair Queue",
+      "heroLayout": "card-stack",
+      "mood": [
+        "friendly",
+        "quick",
+        "neighbourhood"
+      ],
+      "bestFor": "One- and two-chair barbershops that need prices, a queue button and hours, not a portfolio",
+      "pairsWithTier": "starter",
+      "headlineSample": "Fades, beards and line-ups in {City}. Walk in or book.",
+      "whyItFits": "Cobalt & Butter's slab type feels like a hand-lettered shop window, and the stacked cards put the wait, the price and Book right under the thumb."
+    },
+    {
+      "id": "b",
+      "themeId": "C4",
+      "siteType": "booking-first",
+      "name": "Navy Chair",
+      "heroLayout": "split-photo",
+      "mood": [
+        "sharp",
+        "classic",
+        "confident"
+      ],
+      "bestFor": "Multi-barber shops with a set menu, barber bios and both walk-ins and appointments",
+      "pairsWithTier": "standard",
+      "headlineSample": "The {City} barbershop. Book your barber.",
+      "whyItFits": "The family combo, Sage Spa, fails CTA contrast and reads as a quiet spa, not a barbershop. Navy & Brass has the classic barber-pole confidence and its brass Book button passes AA."
+    },
+    {
+      "id": "c",
+      "themeId": "C13",
+      "siteType": "premium-brand",
+      "name": "Late Lounge",
+      "heroLayout": "full-bleed-photo",
+      "mood": [
+        "moody",
+        "premium",
+        "relaxed"
+      ],
+      "bestFor": "Upscale barber lounges selling hot towel shaves, memberships and a drink while you wait",
+      "pairsWithTier": "premium",
+      "headlineSample": "Hot towel shaves and precision cuts in {City}",
+      "whyItFits": "Obsidian Amber's dark ground and warm amber read like low lounge lighting, and the geometric display keeps it modern rather than costume vintage."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "The barbershop's Maps listing has good reviews and hours, but no website or booking link, so a guy in {City} searching for a fade near him has to call and hope someone hears the phone over the clippers.",
+      "hook": "Open their Maps listing and confirm there is no Website or booking button. Screenshot it for when they reply.",
+      "linkLine": "Here's what that button could open for the barbershop: {demo-link}"
+    },
+    {
+      "angle": "Booking app with no shop behind it",
+      "line": "Your bio goes straight into a booking app that lists cuts by name with no prices for kids or beard add-ons. New customers want to know what the barbershop charges before they pick a barber.",
+      "hook": "Tap their bio link and note what's missing: prices, add-ons, barber names, the address.",
+      "linkLine": "A barbershop page that shows the menu before the booking: {demo-link}"
+    },
+    {
+      "angle": "Hours that are wrong",
+      "line": "The barbershop's listing says open till eight on Sundays but your last post says closed Sundays. One of those sends a customer to a locked door.",
+      "hook": "Compare their listing hours with their latest posts. Note any mismatch exactly.",
+      "linkLine": "A barbershop page with hours you can change by text: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "I opened the barbershop's site on my phone and the haircut prices were a picture too small to read. Everybody booking a fade is on a phone.",
+      "hook": "Only if they have a site. Load it on your phone and note what breaks. Screenshot it for when they reply.",
+      "linkLine": "The barbershop, rebuilt for a phone: {demo-link}"
+    },
+    {
+      "angle": "No idea how long the wait is",
+      "line": "People keep asking in your comments how long the wait is for walk-ins. A queue they can join from their phone would answer it before they drive over to the barbershop.",
+      "hook": "Look for 'how long's the wait' or 'are you busy' comments. Note one.",
+      "linkLine": "A barbershop page with a walk-in queue: {demo-link}"
+    },
+    {
+      "angle": "Clean fades, buried feed",
+      "line": "The barbers' best fades and tapers are mixed in with memes and shop music clips. A cut gallery with each barber's work sorted would help customers choose a chair.",
+      "hook": "Pick one barber and one cut style they clearly own. Name both if they reply.",
+      "linkLine": "Each barber's cuts, sorted by style: {demo-link}"
+    },
+    {
+      "angle": "Reviews stuck on Google",
+      "line": "A Google review says your barber was the first one who got a kid through a haircut without tears. That's the line that books every nervous parent in the neighbourhood.",
+      "hook": "Read their reviews and copy one phrase about a barber, a kid's cut or the atmosphere. Quote it back.",
+      "linkLine": "Your reviews right beside the barbershop's Book button: {demo-link}"
+    },
+    {
+      "angle": "Back to school rush",
+      "line": "The week before school starts, every parent wants a kids' haircut on the same Saturday. A booking page for the barbershop spreads that rush across the whole week.",
+      "hook": "Use this from late July to the end of August, or before school photos. Check their posts for a back-to-school mention.",
+      "linkLine": "A back-to-school haircut booking page: {demo-link}"
+    },
+    {
+      "angle": "Sunday night booking",
+      "line": "Sunday night is when guys realise they need a haircut before Monday's meeting. If the barbershop can't be booked then, they book whoever can.",
+      "hook": "Look for comments asking 'you open tomorrow?' late at night. Note one.",
+      "linkLine": "A barbershop that books on Sunday night: {demo-link}"
+    },
+    {
+      "angle": "Chair for rent",
+      "line": "Saw the post about a barber chair for rent. Good barbers check how the shop looks online before they come in to talk booth rent.",
+      "hook": "Only if they posted 'chair available', 'booth rent' or 'now hiring barbers'. Note the date.",
+      "linkLine": "A barbershop page with a rent-a-chair section: {demo-link}"
+    },
+    {
+      "angle": "New people in the neighbourhood",
+      "line": "New apartments are filling up around {Neighborhood}, and every guy moving in is searching for a barber nearby. Right now the shop doesn't show up with prices and a booking link.",
+      "hook": "Check for new apartment buildings or a growing neighbourhood near the shop. Use the real name.",
+      "linkLine": "A barbershop page for the new neighbours: {demo-link}"
+    },
+    {
+      "angle": "Cash only, no prices online",
+      "line": "Your door says cash only and nothing online says what a cut and beard costs. A guy without cash finds out at the chair, which is awkward for the barber too.",
+      "hook": "Look for 'cash only' signs in their posts or reviews mentioning payment. Don't push card payments they don't want.",
+      "linkLine": "A barbershop menu with prices and payment info: {demo-link}"
+    },
+    {
+      "angle": "Licensed barbers",
+      "line": "Your barbers are licensed and good at what they do, and nothing online says so. A parent or a guy new to {City} wants to know that before he sits in a stranger's chair.",
+      "hook": "Look for licence certificates on the wall in posts or 'licensed barber' in bios. Never invent one.",
+      "linkLine": "Your barbers' bios and licensing, stated plainly: {demo-link}"
+    },
+    {
+      "angle": "Same faces every week",
+      "line": "The barbershop runs on regulars who've been coming for years, which is great. When one of them moves, the guy who'd replace him searches before he ever walks past.",
+      "hook": "Look for posts celebrating long-time customers or reviews saying 'been coming here for years'. Quote one.",
+      "linkLine": "Where a new barbershop customer would land: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "That {specific recent job} on your page is a clean cut, sharp line-up and all. Work like that should headline the barber's profile, not disappear by the weekend.",
+      "hook": "Pick the newest cut post and name it exactly: the style, the barber and anything distinctive.",
+      "linkLine": "That cut, at the top of the barber's profile: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, that {specific recent job} on the barbershop's page is a clean cut.\n\nI looked for a site for {Business Name} and only found the listing and the booking app. I put together a sample barbershop page with prices, a walk-in queue, a fade guide and a Book button, with marked placeholders where your photos would go.\n\nWant me to send it over?",
+    "dm2": "{Owner}, following up in case it got buried. Here's the sample barbershop site for {Business Name}: {demo-link}\n\nIt shows the menu with prices, a walk-in queue customers join from their phone, a fade style guide and each barber's chair. If it's not for you, just say so and I won't message again.",
+    "call": "\"Hey, is this {Owner}? I'm {Your Name}, I set up websites and booking for barbershops here in {City}. I sent the shop a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"All good, I know you're cutting all day. Short version: I built a sample page for {Business Name} with prices, a walk-in queue and booking for each barber, with marked placeholders where your photos would go. Can I text you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range}, then {Care Range} a month for hosting and price changes. For a shop your size I'd normally quote about {Build Price}.\"\n\"Honestly, the booking and your Google profile do most of the work. The page just makes them look like one shop.\"\n\"Can I swing by on a slow morning this week? Ten minutes, I'll show you on my phone.\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. We start when it clears.\"",
+    "objections": [
+      {
+        "objection": "We're walk-in only, we don't need a website.",
+        "handler": "\"That's fine, the page is built around walk-ins. It shows the wait and lets guys join the queue from their phone, so they show up when the chair's free.\""
+      },
+      {
+        "objection": "The booking app is all we need.",
+        "handler": "\"Keep it. This puts your prices, barbers and the fade guide in front of it and sends people into your booking app. Searchers find the shop, not just a listing inside an app.\""
+      },
+      {
+        "objection": "Barbers come and go, I'd be updating it all the time.",
+        "handler": "\"That's what the monthly care is for. A barber leaves or joins, you text me, the chair page changes that day.\""
+      },
+      {
+        "objection": "Everybody here finds us by word of mouth.",
+        "handler": "\"Word of mouth still ends with a search for the barbershop's name. The page makes sure the first thing they see is the right hours and a way to book.\""
+      },
+      {
+        "objection": "Too expensive for a barbershop.",
+        "handler": "\"It's sized for a barbershop. {Build Range}, and for you about {Build Price}. That's a few weeks of a single chair's cuts, and it works every night the shop's closed.\""
+      }
+    ],
+    "email": {
+      "subject": "A page for {Business Name}",
+      "body": "Hi {Owner},\n\nI set up websites and booking for barbershops around {City}. {Business Name} has solid reviews, but nowhere online that shows the prices, the barbers and the wait in one place.\n\nI built a sample first rather than ask for your time: a priced menu, a walk-in queue customers join from their phone, a fade and cut style guide, and a booking button for each barber, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and changes. If not, no problem, it comes down at the end of the month.\n\nWorth ten minutes on a slow morning?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hey {Owner}, it's {Your Name}. I set up booking pages for barbershops in {City}, and I made a sample for {Business Name}. I'll text you the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm pulling the {Business Name} barbershop demo down Friday to clear space.\n\nWant it left up? One word's fine.",
+    "nurture": "Hey {Owner}, back-to-school and holiday weeks are coming, the two busiest stretches for barbers. Shops with online booking and a queue handle that rush calmer. Thought of you.\n\nThe sample's still here and the price hasn't moved. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to a few weeks of one chair's cuts. A barbershop's ticket is the smallest in the family, so the build has to be too.",
+      "Lead with the booking setup and the Google profile; the page is the frame around them.",
+      "Price per barber chair page, not per page. A five-chair shop is five barbers with their own booking.",
+      "The walk-in queue is its own line. It's the thing walk-in shops actually want.",
+      "Keep every monthly add-on below the price of two haircuts, or it's cut the first slow month.",
+      "Sell the back-to-school page in July and the groomsmen page in January."
+    ],
+    "lineItems": [
+      {
+        "item": "Barber chair page (each barber)",
+        "min": 60,
+        "max": 150,
+        "unit": "per-page",
+        "description": "Max with the barber's own cut gallery, specialties and a direct booking link.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Walk-in queue setup",
+        "min": 200,
+        "max": 500,
+        "unit": "one-time",
+        "description": "Max with a per-barber queue, text alerts when the chair is close and a wait display for the shop screen.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Fade and cut style guide",
+        "min": 150,
+        "max": 400,
+        "unit": "one-time",
+        "description": "Max when every style has its own entry, guard lengths, and the barber's own cut pictures once shot.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Cut club membership page and billing",
+        "min": 200,
+        "max": 500,
+        "unit": "one-time",
+        "description": "Max with several membership levels, beard add-ons and recurring billing on their payment account.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Groomsmen and event grooming page",
+        "min": 150,
+        "max": 400,
+        "unit": "per-page",
+        "description": "Max with a group size form, on-location fees and a deposit to hold the date.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Chair rental and hiring page",
+        "min": 100,
+        "max": 300,
+        "unit": "per-page",
+        "description": "Max with booth rent terms, shop photos once shot and an application form.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Spanish-language barbershop menu",
+        "min": 150,
+        "max": 400,
+        "unit": "one-time",
+        "description": "Max when the menu, policies and queue messages are all translated.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Google profile management for the barbershop",
+      "min": 79,
+      "max": 199,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Correct hours, fresh fade pictures every week and replies to every review, so the barbershop is the one guys nearby actually click.\"",
+      "when": "Day 0 alongside the build. For most shops this is the real sale."
+    },
+    {
+      "name": "Booking setup for every barber chair",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Each barber gets their own calendar, cut menu and hours in the booking app, set up properly once, instead of a shared mess.\"",
+      "when": "At build. Often sold before the site is."
+    },
+    {
+      "name": "Review requests after each haircut",
+      "min": 29,
+      "max": 79,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"An hour after the haircut, while the fade still looks fresh, the customer gets a text asking for a review of their barber.\"",
+      "when": "Day 30. The easiest second sale."
+    },
+    {
+      "name": "Barbershop content morning",
+      "min": 150,
+      "max": 400,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"One slow morning shooting the chairs, the barbers at work and a few willing regulars' cuts gives the shop a season of posts.\"",
+      "when": "Month 2, on the slowest weekday morning."
+    },
+    {
+      "name": "Back-to-school haircut push",
+      "min": 100,
+      "max": 300,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A late-summer push to parents for kids' haircuts, spreading the back-to-school rush across the whole week at the barbershop.\"",
+      "when": "Pitch in July, run in August."
+    },
+    {
+      "name": "Window decal and barber business cards",
+      "min": 100,
+      "max": 300,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A window decal with hours and the queue code, and a card for each barber, so a good haircut turns into the next booking.\"",
+      "when": "Right after launch."
+    },
+    {
+      "name": "Weekly post planning for the barbershop",
+      "min": 100,
+      "max": 300,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"You cut, I plan the week's barbershop posts: open chairs, fresh fades and the Saturday wait.\"",
+      "when": "Month 3, if nobody in the shop posts consistently."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "The barber supply house",
+        "whoPays": "The supply house",
+        "min": 2000,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"The supply house where your barbers buy clippers and blades has a phone-only order line. Introduce me and I'll build the order and class page.\"",
+        "whyItWorks": "Supply houses sell to every barbershop in the region. Their customer list is your prospect list."
+      },
+      {
+        "route": "Barber schools",
+        "whoPays": "The school",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The barber school your guys came from sells cheap cuts on the student floor and books them by phone. A booking page fills those chairs.\"",
+        "whyItWorks": "Schools need practice heads and enrolments. Alumni barbers are trusted introductions."
+      },
+      {
+        "route": "Tattoo shops on the same block",
+        "whoPays": "The tattoo shop, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The tattoo shop next to the barbershop shares half your customers and still takes requests by DM. I'd build theirs next.\"",
+        "whyItWorks": "Neighbouring shops refer and see each other's pages daily."
+      },
+      {
+        "route": "Suit and tailoring shops nearby",
+        "whoPays": "The tailor, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The tailor who fits your customers' wedding suits books fittings by phone. A page with fitting slots and your barbershop's groomsmen offer helps both.\"",
+        "whyItWorks": "Grooms visit the tailor and the barber in the same month. The barber's word opens the tailor's door."
+      },
+      {
+        "route": "Local grooming product makers",
+        "whoPays": "The product maker",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The local beard oil maker whose bottles sit on your barbershop counter sells mostly at markets. A shop site and a stockist list would grow that.\"",
+        "whyItWorks": "Small makers rely on barbers to sell their products. The barber is their best reference."
+      },
+      {
+        "route": "Wedding venues that host groom prep",
+        "whoPays": "The venue, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The venue where your barbers do groomsmen cuts on site needs a vendor page that lists them. I build venue pages too.\"",
+        "whyItWorks": "Venues refer the vendors they trust. A barber who's worked their groom suite is that vendor."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Order-status chat for the barber supply house",
+        "whoPays": "The supply house, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"Barbers ask whether their clipper blades or guards are in stock or ready for pickup and get an answer from the supply house inventory at any hour.\"",
+        "whyItWorks": "Supply houses answer stock questions all day. An assistant tied to their own system takes the easy ones."
+      },
+      {
+        "route": "Practice-head booking assistant for barber schools",
+        "whoPays": "The school",
+        "min": 1200,
+        "max": 3000,
+        "unit": "one-time",
+        "pitchLine": "\"The barber school's assistant explains student haircut prices and supervision and books people into open chairs when instructors are on the floor.\"",
+        "whyItWorks": "Schools need a steady flow of practice heads and can count the result in filled chairs."
+      },
+      {
+        "route": "Fitting booker for the tailor",
+        "whoPays": "The tailor, monthly",
+        "min": 79,
+        "max": 199,
+        "unit": "monthly",
+        "pitchLine": "\"Wedding parties text the tailor their dates and sizes, and the assistant books fittings and suggests the barbershop's groomsmen slot the same week.\"",
+        "whyItWorks": "Tailors juggle group fittings by phone. A booker that also sends business to the barber keeps both happy."
+      },
+      {
+        "route": "Stockist reorder texts for the grooming product maker",
+        "whoPays": "The product maker",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"Barbershops that stock the maker's beard oil get a reorder text when they usually run out, and reply with quantities to place the order.\"",
+        "whyItWorks": "Reorders are where small makers lose sales. Barbershops prefer a text to a form."
+      },
+      {
+        "route": "Groom-day schedule builder for the wedding venue",
+        "whoPays": "The venue",
+        "min": 1000,
+        "max": 2500,
+        "unit": "one-time",
+        "pitchLine": "\"Couples enter the ceremony time and party size, and the venue's planner lays out barber, hair and makeup slots from its own vendor list.\"",
+        "whyItWorks": "Venues want the morning of the wedding to run on time. The barbershop is the first vendor on the list."
+      },
+      {
+        "route": "Request sorter for the tattoo shop next door",
+        "whoPays": "The tattoo shop, monthly",
+        "min": 79,
+        "max": 199,
+        "unit": "monthly",
+        "pitchLine": "\"The tattoo shop next to the barbershop gets its DM requests sorted by size and budget with a draft reply, the way your queue sorts walk-ins.\"",
+        "whyItWorks": "Same block, same customers. They've seen your setup and want their version."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Live wait board for the shop screen",
+      "kind": "software",
+      "oneTimeMin": 200,
+      "oneTimeMax": 500,
+      "monthlyMin": 19,
+      "monthlyMax": 39,
+      "pitchLine": "\"The TV in the barbershop shows who's next for each barber, and the same list is live online for guys deciding whether to walk over.\"",
+      "whenAndWhatItTakes": "At build, alongside the queue. Needs a screen in the shop and each barber's name."
+    },
+    {
+      "name": "No-show fee for booked haircuts",
+      "kind": "software",
+      "oneTimeMin": 150,
+      "oneTimeMax": 400,
+      "monthlyMin": 19,
+      "monthlyMax": 39,
+      "pitchLine": "\"A booked haircut holds a card, and a no-show on a Saturday chair pays a small fee instead of nothing.\"",
+      "whenAndWhatItTakes": "Day 14, or the first time they complain about no-shows. Needs their no-show rule and a payment account."
+    },
+    {
+      "name": "Rebooking text at each customer's cut interval",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 500,
+      "monthlyMin": 29,
+      "monthlyMax": 69,
+      "pitchLine": "\"A guy who gets a fade every two weeks gets a text from his barber on day twelve with open chairs.\"",
+      "whenAndWhatItTakes": "Day 30. Needs visit history from the booking app and each barber's text wording."
+    },
+    {
+      "name": "Text and DM answerer for the barbershop",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"'You open?', 'how much for a cut and beard' and 'what's the wait' get answered from the barbershop's real menu and queue.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the priced menu, hours and queue access. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Phone answering while the barbers cut",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 99,
+      "monthlyMax": 199,
+      "pitchLine": "\"The barbershop phone rings over the clippers and nobody can grab it. Now it gets answered, the question handled and the chair booked.\"",
+      "whenAndWhatItTakes": "Month 3. Needs menu, hours and booking access. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Cut club billing",
+      "kind": "software",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Members pay monthly for their haircuts, the barber sees who's a member at check-in, and nobody counts punches on a card.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the membership rules and a payment account."
+    },
+    {
+      "name": "Review reply drafts for the barbershop",
+      "kind": "ai",
+      "oneTimeMin": 200,
+      "oneTimeMax": 500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Every barbershop review gets a short reply in the owner's voice naming the barber, ready to send from a phone.\"",
+      "whenAndWhatItTakes": "Month 2, with the Google profile management. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Lapsed customer text from the barber",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 500,
+      "monthlyMin": 29,
+      "monthlyMax": 69,
+      "pitchLine": "\"A regular who hasn't sat in the barber's chair for two months gets a short text from him, not a coupon blast.\"",
+      "whenAndWhatItTakes": "Month 3. Needs visit history and an opt-out line."
+    },
+    {
+      "name": "Booth rent due-date tracker",
+      "kind": "software",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"For barbershop owners renting chairs: who owes booth rent this week, who's paid, and a polite reminder that sends itself.\"",
+      "whenAndWhatItTakes": "Month 3, only for shops renting chairs. Needs the renter list and rent terms."
+    },
+    {
+      "name": "Barber commission and tip report",
+      "kind": "software",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 29,
+      "monthlyMax": 69,
+      "pitchLine": "\"For shops paying commission: each barber's cuts, tips and product sales added up at the end of the week.\"",
+      "whenAndWhatItTakes": "Month 4, only for commission shops. Needs pay rules and booking data."
+    },
+    {
+      "name": "Caption drafts for fade and beard posts",
+      "kind": "ai",
+      "oneTimeMin": 200,
+      "oneTimeMax": 600,
+      "monthlyMin": 39,
+      "monthlyMax": 99,
+      "pitchLine": "\"Post a fresh fade and get a caption with the cut named, the barber tagged and the next open chair mentioned.\"",
+      "whenAndWhatItTakes": "Month 2. Needs a few past captions. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Haircut notes per customer",
+      "kind": "software",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 19,
+      "monthlyMax": 39,
+      "pitchLine": "\"Guard numbers, part side and how he likes the neckline saved per customer, so any barber in the shop can give him the same haircut.\"",
+      "whenAndWhatItTakes": "Month 4, for multi-barber shops. Needs a habit of noting the cut at checkout."
+    },
+    {
+      "name": "Style match from a reference picture",
+      "kind": "ai",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1200,
+      "monthlyMin": 49,
+      "monthlyMax": 99,
+      "pitchLine": "\"A customer uploads the haircut he wants, and the barber gets the closest style name from the shop's fade guide to confirm in the chair.\"",
+      "whenAndWhatItTakes": "Month 5, once the fade guide is live. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Slow-hour chair fill texts",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 500,
+      "monthlyMin": 29,
+      "monthlyMax": 69,
+      "pitchLine": "\"Tuesday at two the barbershop is empty, so regulars who opted in get a text that chairs are open now.\"",
+      "whenAndWhatItTakes": "Month 4. Needs booking data showing the slow hours and an opt-in list."
+    },
+    {
+      "name": "Grooming product shelf and reorder list",
+      "kind": "software",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Know which pomades, beard oils and combs sell at the barbershop counter and get a reorder list before the shelf's empty.\"",
+      "whenAndWhatItTakes": "Month 5, only if they sell retail. Needs product list and sales records."
+    },
+    {
+      "name": "Wait time estimator per barber",
+      "kind": "ai",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1200,
+      "monthlyMin": 49,
+      "monthlyMax": 99,
+      "pitchLine": "\"The queue learns how long each barber takes for a fade versus a cut and beard, so the posted wait is close to the truth.\"",
+      "whenAndWhatItTakes": "Month 5, after a couple of months of queue data. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Picture-day and holiday haircut reminders",
+      "kind": "automation",
+      "oneTimeMin": 150,
+      "oneTimeMax": 400,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Parents get a reminder to book kids' haircuts before school picture day and the holidays, while chairs are still open.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the local school calendar and a list of parents who opted in."
+    },
+    {
+      "name": "Bilingual reply drafts for the barbershop",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 39,
+      "monthlyMax": 99,
+      "pitchLine": "\"Questions about haircuts come in English and Spanish; replies are drafted in whichever the customer used, in the barber's tone.\"",
+      "whenAndWhatItTakes": "Month 4, for shops with a bilingual clientele. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Two-shop numbers board",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"For owners with a second barbershop: cuts, waits, no-shows and barber hours side by side for both shops.\"",
+      "whenAndWhatItTakes": "Month 9, only when they open a second location. Needs booking exports from both."
+    },
+    {
+      "name": "Chair renter application screener",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 39,
+      "monthlyMax": 99,
+      "pitchLine": "\"Barbers applying for an open chair get the same questions, and the owner gets a short summary of each one's experience and cut work.\"",
+      "whenAndWhatItTakes": "Month 6, when they have a chair to fill. Needs the owner's must-haves. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the queue and rebooking texts for independent barbers",
+      "whoPays": "Barbers, monthly",
+      "min": 15,
+      "max": 49,
+      "unit": "monthly",
+      "pitchLine": "\"I built a walk-in queue and rebooking texts for one barbershop. Every barber with a chair and a phone needs the same two things.\"",
+      "whyItWorks": "Barbers are many, small and talk to each other. A cheap monthly tool spreads shop to shop."
+    },
+    {
+      "route": "Barbershop franchise locations",
+      "whoPays": "Each franchisee, per location",
+      "min": 500,
+      "max": 1500,
+      "unit": "one-time",
+      "pitchLine": "\"Your barbershop's corporate page doesn't show your own barbers or your wait. I build local pages franchisees are allowed to run.\"",
+      "whyItWorks": "Franchisees want local visibility inside brand rules. One approved template sells to every location."
+    },
+    {
+      "route": "Graduate launch kit for barber schools",
+      "whoPays": "The school, annually",
+      "min": 1500,
+      "max": 5000,
+      "unit": "per-year",
+      "pitchLine": "\"Every new barber leaves school with a page, a priced menu and booking ready the day he's licensed.\"",
+      "whyItWorks": "Schools sell careers. A kit for every graduating class is recurring and fills your pipeline."
+    },
+    {
+      "route": "State barber association member toolkit",
+      "whoPays": "The association",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer every member shop a barbershop page template with a queue and a licensing line as a member benefit.\"",
+      "whyItWorks": "Associations need renewal reasons; one deal reaches many shop owners."
+    },
+    {
+      "route": "White-label barbershop template for agencies",
+      "whoPays": "The agency, per site",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency takes on barbershops and builds them like restaurants. License my template with the queue and fade guide built in.\"",
+      "whyItWorks": "Agencies own the shop; you sell them the barber-specific part."
+    },
+    {
+      "route": "Barber finder for a clipper and trimmer maker",
+      "whoPays": "The maker's education team",
+      "min": 5000,
+      "max": 20000,
+      "unit": "one-time",
+      "pitchLine": "\"Your sponsored barbers need a place customers can find and book them. A barber finder tied to your education events does it.\"",
+      "whyItWorks": "Tool makers invest in barber education and want it to reach customers."
+    },
+    {
+      "route": "Barber expo and battle organisers",
+      "whoPays": "The event organiser",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"Your barber expo sells tickets and battle entries from a flyer. A site with registration, the class schedule and vendor booths sells more.\"",
+      "whyItWorks": "Organisers sell to every barber in the region. Your shop's barbers attend and vouch for you."
+    },
+    {
+      "route": "Stockist map for a men's grooming product brand",
+      "whoPays": "The brand",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Customers want to buy your pomade where they get their haircut. A stockist map sends them to the barbershops that carry it.\"",
+      "whyItWorks": "Grooming brands sell through barbers and want reorders. A map helps both."
+    },
+    {
+      "route": "Barber suite buildings",
+      "whoPays": "The building owner, annually",
+      "min": 2000,
+      "max": 8000,
+      "unit": "per-year",
+      "pitchLine": "\"Your building rents private suites to barbers. A directory of every barber with live booking, plus a leasing page, fills both chairs and suites.\"",
+      "whyItWorks": "Suite owners need tenants and tenants need customers. One building is many barbers."
+    },
+    {
+      "route": "Barbershop health outreach programmes",
+      "whoPays": "The health nonprofit or programme",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Your programme runs blood pressure check days in barbershops. A sign-up page per shop with dates and reminders makes every event easier to fill.\"",
+      "whyItWorks": "Community health programmes already partner with barbershops and need simple sign-ups. The barber client is a partner shop."
+    },
+    {
+      "route": "The same barbershop setup in the next metro",
+      "whoPays": "New barbershops in a new metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"Barbers across the county line keep asking who set up this shop's walk-in queue. They don't cut your customers, so they get the same setup.\"",
+      "whyItWorks": "Non-competing geography lets you reuse the template and the finished barber proof."
+    },
+    {
+      "route": "Fix messy barbershop booking setups",
+      "whoPays": "The stuck shop",
+      "min": 150,
+      "max": 600,
+      "unit": "one-time",
+      "pitchLine": "\"Your booking app has three barbers who left still taking appointments. I'll clean it up and rebuild each chair's calendar properly.\"",
+      "whyItWorks": "Shops with a broken setup already pay for the app. Fixing it is a fast, small yes."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Barbershop page build plus care plan, one contract",
+      "min": 900,
+      "max": 1600,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The barbershop page and the care plan go on one contract, so a new barber or a price change is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 7,
+      "offer": "Google profile management for the barbershop",
+      "min": 79,
+      "max": 199,
+      "unit": "monthly",
+      "trigger": "Their Google listing still shows wrong hours or old pictures after launch.",
+      "line": "\"The page is right, now let's make the barbershop's Google profile match it every week.\""
+    },
+    {
+      "rung": 3,
+      "day": 30,
+      "offer": "Review requests and rebooking texts",
+      "min": 29,
+      "max": 79,
+      "unit": "monthly",
+      "trigger": "The booking app shows regulars stretching past their usual cut interval.",
+      "line": "\"Your regulars get a haircut on a rhythm. Let's text them on time and ask for a review while the fade's fresh.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Cut club billing",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "trigger": "They have regulars who come in every couple of weeks and pay cash each time.",
+      "line": "\"Your every-other-week regulars are already members. Let's bill the cut club monthly.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Phone answering while the barbers cut",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "trigger": "They mention missing calls on busy Saturdays.",
+      "line": "\"Saturday calls nobody can answer over the clippers get picked up and booked.\""
+    },
+    {
+      "rung": 6,
+      "day": 150,
+      "offer": "Barbershop content morning",
+      "min": 150,
+      "max": 400,
+      "unit": "per-shoot",
+      "trigger": "The barber chair pages still show placeholders.",
+      "line": "\"One slow morning fills every barber's page with real cuts.\""
+    },
+    {
+      "rung": 7,
+      "day": 240,
+      "offer": "Introduction to the barber supply house",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "trigger": "They mention a supply rep asking who set up the barbershop's booking.",
+      "line": "\"Your supply house sells to every barbershop around here. Would you introduce me?\""
+    }
+  ]
+}

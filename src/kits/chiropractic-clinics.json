@@ -1,0 +1,860 @@
+{
+  "schemaVersion": 1,
+  "category": "Chiropractic clinics",
+  "slug": "chiropractic-clinics",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Care family batch. Health-regulated: no outcome or cure claims, no invented testimonials, credentials and fees as placeholders, clinical details kept off web forms. Many already pay practice-software vendors, so the pitch is the front door, not the back office. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Adjustment techniques explained",
+      "contains": "The chiropractic techniques the clinic actually uses, such as manual diversified, instrument-assisted, drop table and soft tissue work, in plain words, including low-force options for people nervous about the popping sound",
+      "why": "The first worry new patients have about a chiropractor is the cracking. Explaining the techniques, including gentle ones, gets the nervous ones through the door."
+    },
+    {
+      "section": "Auto accident and injury intake",
+      "contains": "What to bring after a car accident, how the clinic handles [med-pay or PIP paperwork as the practice states it], records requests, and how to reach the clinic if an attorney is involved",
+      "why": "Accident patients arrive with paperwork questions before they have spinal questions. A clinic that explains the process calmly gets the call instead of the ad on the bus."
+    },
+    {
+      "section": "Sports chiropractic and athletes",
+      "contains": "Teams and events the clinic works with as it states them, how the sports chiropractor coordinates with coaches and trainers, and same-week visits around competition",
+      "why": "Athletes and parents of athletes pick the chiropractor other athletes use. A sports page with real affiliations does that work."
+    },
+    {
+      "section": "In-clinic massage and rehab exercise",
+      "contains": "The licensed massage therapist on staff, rehab exercise sessions, how they're booked alongside an adjustment and how each is billed",
+      "why": "Patients compare chiropractic clinics on what else happens under one roof. Showing massage and rehab plainly keeps the visit in one place."
+    },
+    {
+      "section": "Referrals and records for other providers",
+      "contains": "How physicians, physical therapists and attorneys send a referral, the secure records request route, fax or portal details, and the turnaround the clinic commits to",
+      "why": "Referrals are the clinic's steadiest source. A page that makes referring easy is the one other offices bookmark."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C47",
+      "siteType": "local-conversion",
+      "name": "Neighbourhood Clinic",
+      "heroLayout": "split-photo",
+      "mood": [
+        "friendly",
+        "clear",
+        "approachable"
+      ],
+      "bestFor": "Single-chiropractor clinics that need a new patient request, hours and insurance info more than anything",
+      "pairsWithTier": "starter",
+      "headlineSample": "Chiropractic care in {City}. New patients welcome.",
+      "whyItFits": "Teal & Tangerine's humanist type feels warm and unclinical, and the split hero puts the chiropractor's face beside the new patient button."
+    },
+    {
+      "id": "b",
+      "themeId": "C8",
+      "siteType": "booking-first",
+      "name": "Clinic Calendar",
+      "heroLayout": "card-stack",
+      "mood": [
+        "reassuring",
+        "orderly",
+        "calm"
+      ],
+      "bestFor": "Multi-provider chiropractic clinics with massage and rehab that need visit types and real slots",
+      "pairsWithTier": "standard",
+      "headlineSample": "Book a chiropractic visit in {City} this week",
+      "whyItFits": "The family combo, Sage Spa, fails CTA contrast. Evergreen Trust keeps the calm green, reads more clinical and trustworthy, and its Book button passes AA."
+    },
+    {
+      "id": "c",
+      "themeId": "C2",
+      "siteType": "editorial-trust",
+      "name": "Practice Notes",
+      "heroLayout": "type-led",
+      "mood": [
+        "credible",
+        "measured",
+        "established"
+      ],
+      "bestFor": "Established practices with sports, accident and referral work that need to look credible to doctors and attorneys",
+      "pairsWithTier": "premium",
+      "headlineSample": "An established chiropractic practice in {City}",
+      "whyItFits": "Private Vault's warm parchment and refined serif read like a respected practice, and type-led pages suit the referral, records and technique content other providers read."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "The clinic's Maps listing has good reviews and no website, so someone in {City} searching for a chiropractor after a bad week at the desk can't see your techniques or how a first visit works.",
+      "hook": "Open their Maps listing and confirm there is no Website button. Screenshot it for when they reply.",
+      "linkLine": "Here's what would sit behind that button for the clinic: {demo-link}"
+    },
+    {
+      "angle": "Facebook page as the website",
+      "line": "The website link on your listing goes to the chiropractic clinic's Facebook page, where the newest post is a holiday closure. A new patient can't find hours, insurance info or a way to request a visit.",
+      "hook": "Click the link on their listing. If it lands on Facebook, note the date of the latest post.",
+      "linkLine": "The clinic's essentials on one page: {demo-link}"
+    },
+    {
+      "angle": "Template site from a vendor",
+      "line": "Your chiropractic site looks like the same template I've seen on a dozen other clinics, stock spine graphic and all. Nothing on it sounds like you.",
+      "hook": "Look for stock spine images, generic copy or a vendor footer. Never name the vendor back to them.",
+      "linkLine": "A clinic page written in your own voice: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "I opened your clinic site on my phone and the new patient form wouldn't scroll past the first field. That's where most people with a stiff neck try to book.",
+      "hook": "Only if they have a site. Try the new patient path on your phone and note what breaks. Screenshot it for when they reply.",
+      "linkLine": "The clinic, rebuilt for a phone: {demo-link}"
+    },
+    {
+      "angle": "No new patient request",
+      "line": "There's no way to request a first chiropractic visit online, only a phone number for business hours. People researching at night would rather fill in a short request and hear back.",
+      "hook": "Look for any request form or online booking. If the only route is calling, the angle holds.",
+      "linkLine": "A new patient request built for the clinic: {demo-link}"
+    },
+    {
+      "angle": "The cracking worry",
+      "line": "Nothing online explains which adjustment techniques you use, including the gentler ones. For a lot of people the popping sound is the whole reason they haven't booked a chiropractor yet.",
+      "hook": "Check their posts and site for technique explanations. If there are none, the angle holds.",
+      "linkLine": "Chiropractic techniques explained, gentle options included: {demo-link}"
+    },
+    {
+      "angle": "Reviews stuck on Google",
+      "line": "Your Google reviews keep mentioning how the chiropractor explained everything before touching them. That's the reassurance a nervous first-time patient is looking for, and it's not on any page.",
+      "hook": "Read their reviews and copy one phrase about explanation, care or the front desk. Quote it back. Never imply a result.",
+      "linkLine": "Your reviews beside the new patient button: {demo-link}"
+    },
+    {
+      "angle": "New year and back-to-sport",
+      "line": "January resolutions and the start of every sports season bring new people looking for a chiropractor. A clear new patient page catches them before they settle on whoever advertises most.",
+      "hook": "Use this in late December or before a local sports season. Name the moment.",
+      "linkLine": "A new patient page ready for the season: {demo-link}"
+    },
+    {
+      "angle": "Weekend and after-hours searchers",
+      "line": "People tweak their back on a Saturday and start searching for a chiropractor that evening. Right now the clinic can't take a visit request until Monday's phones open.",
+      "hook": "Look for reviews mentioning a weekend or urgent first visit. Note one.",
+      "linkLine": "A clinic page that takes requests on the weekend: {demo-link}"
+    },
+    {
+      "angle": "Hiring an associate",
+      "line": "Saw the clinic is hiring an associate chiropractor. New grads look hard at a practice's website before they agree to an interview.",
+      "hook": "Only if they posted a hiring notice for an associate, front desk or massage therapist. Note the date.",
+      "linkLine": "A chiropractic clinic page with a careers section: {demo-link}"
+    },
+    {
+      "angle": "Patients from nearby towns",
+      "line": "A few reviews mention driving in from {Neighborhood} for an adjustment. A page with parking, directions and early hours would make that drive easier to commit to.",
+      "hook": "Scan reviews for neighbourhoods or towns patients mention. Use the real name.",
+      "linkLine": "A chiropractic page for patients coming from further out: {demo-link}"
+    },
+    {
+      "angle": "Insurance and cash plans unclear",
+      "line": "Your comments keep asking whether the clinic takes their insurance or has a cash rate. A page that answers both would save the front desk a lot of chiropractic calls.",
+      "hook": "Look for insurance or payment questions in comments and reviews. Never state a plan they accept unless they say so.",
+      "linkLine": "Insurance and visit fees, explained on one page: {demo-link}"
+    },
+    {
+      "angle": "Credentials not shown",
+      "line": "I couldn't find anything online about the chiropractor's training or licence, and that's what a careful patient checks before booking someone to adjust their neck.",
+      "hook": "Look for 'DC', school or licence mentions in their bio. Never invent a credential or number.",
+      "linkLine": "The chiropractor's background, stated plainly: {demo-link}"
+    },
+    {
+      "angle": "Referral-dependent",
+      "line": "It looks like most of the clinic's new patients come from other doctors and happy patients. Those referrals still search the chiropractor's name first, and find very little.",
+      "hook": "Look for posts thanking referring providers or reviews saying 'my doctor sent me'. Quote it.",
+      "linkLine": "Where a referred chiropractic patient would land: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "Your post about {specific recent job} explained the chiropractic side clearly without overselling it. That explanation deserves its own page patients can find.",
+      "hook": "Pick their newest educational post, event or team visit and name it exactly. Never a patient case.",
+      "linkLine": "That chiropractic explanation, on its own page: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, your post about {specific recent job} explained the chiropractic side clearly without overselling it.\n\nI looked for a site for {Business Name} and only found the listing and the social pages. I put together a sample clinic page with your techniques explained, a new patient request and an insurance and fees section with placeholders for your real details, with marked placeholders where your photos would go.\n\nWould you like me to send it over?",
+    "dm2": "{Owner}, following up in case my note got lost. Here's the sample clinic site for {Business Name}: {demo-link}\n\nIt explains the adjustment techniques you use, has a new patient request that keeps health details off the form, and a referral page other providers can use. If it's not for you, say so and I won't message again.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for chiropractic clinics here in {City}. I sent the clinic a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"No problem, you're between patients all day. Short version: I built a sample site for {Business Name} with your techniques explained, a new patient request and a referral page, with marked placeholders where your photos would go. Can I email you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range}, then {Care Range} a month for hosting and updates. For a clinic like yours I'd normally quote about {Build Price}.\"\n\"It sits in front of your practice software, it doesn't replace it. No result claims anywhere, and every credential and fee comes from you.\"\n\"Could we take fifteen minutes at lunch one day this week?\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. We start the day it clears.\"",
+    "objections": [
+      {
+        "objection": "Our practice software vendor already gives us a website.",
+        "handler": "\"It does, and it's the same template many clinics nearby use. Keep the software. I build the front door that sounds like you and hands patients into your existing scheduling.\""
+      },
+      {
+        "objection": "Most of our patients are referrals.",
+        "handler": "\"Then the site's job is to confirm the referral was a good one, and to make referring easy. There's a page just for doctors and attorneys to send patients and records.\""
+      },
+      {
+        "objection": "We're careful about advertising rules.",
+        "handler": "\"Good, so am I. No cure or outcome claims, no invented testimonials, and you approve every page. Anything I don't have from you stays a bracketed placeholder.\""
+      },
+      {
+        "objection": "We tried an agency and it was a lot of money for nothing.",
+        "handler": "\"This isn't a marketing retainer. It's a fixed-price site you own, with a small monthly fee for hosting and changes. The sample is already built, so you can judge it before spending anything.\""
+      },
+      {
+        "objection": "We don't want patient information going through a website.",
+        "handler": "\"Agreed. The request form asks for name, contact and preferred time only. Health history stays in your own secure intake system.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For your clinic about {Build Price}, because of the technique, accident and referral pages. A handful of new patients who stay on a care plan covers it.\""
+      }
+    ],
+    "email": {
+      "subject": "A clinic site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for chiropractic clinics around {City}. {Business Name} has warm reviews, but no site where a nervous first-time patient can read which techniques you use, what a first visit costs and how to request one.\n\nI built a sample first rather than ask for your time: adjustment techniques explained, an auto accident intake page, a sports section, a referral and records page for other providers, and a new patient request that keeps health details off the form. It uses marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and updates. If not, no problem, it comes down at the end of the month.\n\nWorth fifteen minutes at lunch one day?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build websites for chiropractic clinics in {City}, and I put together a sample for {Business Name}. I'll email the link so you can look after patients. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm retiring the {Business Name} clinic demo on Friday to make room for other projects.\n\nIf you'd like it kept up, a one-line reply does it.",
+    "nurture": "Hi {Owner}, January brings a wave of new patients looking for a chiropractor, and clinics with a clear new patient page get the careful ones. Thought of you.\n\nThe sample's still here and nothing's changed on price. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to a few new patients on a care plan, not to a single visit fee. A patient who stays for a series is the unit that matters.",
+      "Never compete with their practice software. Price the site as the front door and integrations as a separate line.",
+      "The referral and records page is its own line; it's aimed at a different reader and needs the clinic's process.",
+      "Accident intake pages need the clinic's own paperwork rules. Charge for structure and leave their wording as placeholders.",
+      "Every claim review round with the chiropractor is time. Build one review round into the quote.",
+      "Keep monthly add-ons below the price of a couple of adjustments."
+    ],
+    "lineItems": [
+      {
+        "item": "Adjustment techniques page",
+        "min": 250,
+        "max": 600,
+        "unit": "per-page",
+        "description": "Max when each technique has its own section, a short video slot and a gentle-options explainer.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Auto accident intake page",
+        "min": 300,
+        "max": 800,
+        "unit": "per-page",
+        "description": "Max with a what-to-bring checklist, records request route and a separate request form for accident patients.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Referral and records page for providers",
+        "min": 300,
+        "max": 700,
+        "unit": "one-time",
+        "description": "Max with a provider referral form, records request route and a downloadable referral pad file.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Sports chiropractic page",
+        "min": 250,
+        "max": 600,
+        "unit": "per-page",
+        "description": "Max with team and event listings the clinic supplies and a coach contact route.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Booking link-up with their practice software",
+        "min": 300,
+        "max": 900,
+        "unit": "one-time",
+        "description": "Max when visit types and new patient slots are pulled live from their existing scheduling system.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Additional provider bio",
+        "min": 100,
+        "max": 250,
+        "unit": "per-page",
+        "description": "Max with a first-person paragraph, techniques used and a book-with-this-provider link.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Spanish-language clinic pages",
+        "min": 400,
+        "max": 1000,
+        "unit": "one-time",
+        "description": "Max when new patient, insurance, accident and request pages are translated and checked by bilingual staff.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Clinic and team photo morning",
+      "min": 300,
+      "max": 800,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"One morning photographing the chiropractic team, the adjustment rooms and the front desk, no patients, gives the clinic real faces instead of stock spines.\"",
+      "when": "Month 2, before opening hours."
+    },
+    {
+      "name": "Google profile upkeep for the chiropractic clinic",
+      "min": 150,
+      "max": 300,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Weekly updates on the clinic's Google profile with hours, new patient openings and educational posts, so searches for a chiropractor nearby find a current practice.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Review requests after a patient's third visit",
+      "min": 79,
+      "max": 179,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Once a chiropractic patient has been in a few times and knows the clinic, they get a polite review request that never asks about their condition.\"",
+      "when": "Day 30. Wording reviewed by the clinic first."
+    },
+    {
+      "name": "New year new patient campaign",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A calm January push explaining what a first chiropractic visit involves and how to book it, without discounts that cheapen the practice.\"",
+      "when": "Pitch in November, run in January."
+    },
+    {
+      "name": "Referral provider mailer and lunch kit",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A one-page clinic summary, a referral pad and a short email for the physicians and physical therapists near the chiropractic clinic, ready for lunch-and-learn visits.\"",
+      "when": "Month 3, once the referral page is live."
+    },
+    {
+      "name": "Monthly patient newsletter",
+      "min": 200,
+      "max": 500,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"One calm email a month to existing chiropractic patients: clinic news, hours, a stretching tip the chiropractor approves and open visit times.\"",
+      "when": "Month 3, once the patient email list is in one place."
+    },
+    {
+      "name": "Neighbourhood pages for the clinic",
+      "min": 300,
+      "max": 700,
+      "unit": "per-page",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A page for each nearby neighbourhood patients come from, with directions, parking and the chiropractic new patient button.\"",
+      "when": "Month 4, once reviews show where patients come from."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Personal injury attorneys who send accident patients",
+        "whoPays": "The law office",
+        "min": 2500,
+        "max": 7000,
+        "unit": "one-time",
+        "pitchLine": "\"The injury attorney who sends the clinic car accident patients has a dated site. I build for regulated offices with careful copy already.\"",
+        "whyItWorks": "Chiropractors and injury attorneys refer constantly. The clinic owner's word is the only warm way in."
+      },
+      {
+        "route": "Physical therapy clinics that co-manage patients",
+        "whoPays": "The PT clinic, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The physical therapy clinic you share patients with needs the same referral and records page your chiropractic site has.\"",
+        "whyItWorks": "Co-managing clinics see each other's sites and trust each other's vendors."
+      },
+      {
+        "route": "Massage therapists renting rooms in the clinic",
+        "whoPays": "Each therapist, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The massage therapist renting the room down the hall books by text. A small booking page that points back to the chiropractic clinic helps both.\"",
+        "whyItWorks": "Same patients, same building. The introduction happens at the front desk."
+      },
+      {
+        "route": "Gyms and youth sports clubs",
+        "whoPays": "The gym or club, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The club whose athletes see your sports chiropractor needs a better registration site, with the clinic listed as its care partner.\"",
+        "whyItWorks": "Club directors trust the chiropractor who looks after their athletes."
+      },
+      {
+        "route": "Chiropractic equipment and table dealers",
+        "whoPays": "The dealer",
+        "min": 2500,
+        "max": 8000,
+        "unit": "one-time",
+        "pitchLine": "\"The dealer who sold you your adjusting tables sells to every chiropractic clinic in the region and has a catalogue site from years ago. Introduce me.\"",
+        "whyItWorks": "Dealers' customer lists are your prospect lists, and they have real budgets."
+      },
+      {
+        "route": "Employers near the clinic",
+        "whoPays": "The employer, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The warehouse whose staff come to the chiropractic clinic needs a careers page that mentions local health partners. That's a small build I do often.\"",
+        "whyItWorks": "Local employers already send staff to the clinic; the clinic owner can make the call."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Intake question assistant for the injury attorney",
+        "whoPays": "The law office, monthly",
+        "min": 200,
+        "max": 500,
+        "unit": "monthly",
+        "pitchLine": "\"Accident victims asking the law office about next steps get intake logistics from approved text, and any legal question is passed to a person.\"",
+        "whyItWorks": "Law offices want after-hours intake without giving advice. Approved-text-only is the safe line the chiropractor already uses."
+      },
+      {
+        "route": "Referral status tracker for the co-managing PT clinic",
+        "whoPays": "The PT clinic",
+        "min": 1000,
+        "max": 3000,
+        "unit": "one-time",
+        "pitchLine": "\"Referrals between the chiropractic clinic and the PT clinic are logged with a status, and the front desks get a draft follow-up when one stalls.\"",
+        "whyItWorks": "Both clinics lose referrals in fax piles. A shared tracker helps both and stays non-clinical."
+      },
+      {
+        "route": "Rebooking prompts for the in-clinic massage therapist",
+        "whoPays": "The massage therapist, monthly",
+        "min": 49,
+        "max": 129,
+        "unit": "monthly",
+        "pitchLine": "\"The massage therapist renting in the chiropractic clinic gets rebooking texts written from her own menu, set up like the clinic's.\"",
+        "whyItWorks": "A small add-on sold to someone who already sees the clinic's system working."
+      },
+      {
+        "route": "Registration helper for the youth sports club",
+        "whoPays": "The club",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"Parents asking the club about tryouts, fees and kit get answers from the club handbook, with the chiropractic partner listed under athlete care.\"",
+        "whyItWorks": "Clubs drown in parent questions every season. The sports chiropractor makes the introduction."
+      },
+      {
+        "route": "Quote assistant for the table dealer",
+        "whoPays": "The dealer",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"Chiropractors describe the room and budget, and the dealer's assistant drafts a table and equipment quote from the dealer's own catalogue for review.\"",
+        "whyItWorks": "Dealers build quotes by hand. Faster drafts mean more quotes sent."
+      },
+      {
+        "route": "Benefits question assistant for the local employer",
+        "whoPays": "The employer's HR team, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Staff ask HR which local chiropractic and health partners are nearby and how to book, and get answers from HR's own list.\"",
+        "whyItWorks": "Small HR teams repeat the same answers. The clinic is on the list already."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Visit-plan reminder texts",
+      "kind": "automation",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Chiropractic patients on a visit plan get a reminder before each adjustment and a nudge when they haven't booked the next one.\"",
+      "whenAndWhatItTakes": "Day 30. Needs the schedule export or integration, patient text consent and the clinic's wording. No clinical details in any text."
+    },
+    {
+      "name": "New patient request routing",
+      "kind": "software",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Website requests for a first chiropractic visit land at the front desk sorted by type, accident, sports or general, with a call-back time.\"",
+      "whenAndWhatItTakes": "At build. Needs the front desk's email or task inbox and their visit types."
+    },
+    {
+      "name": "Front desk overflow phone answering",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 199,
+      "monthlyMax": 449,
+      "pitchLine": "\"When the clinic's front desk is busy or closed, calls about hours, insurance and new patient visits get answered and booked; anything clinical is passed to staff.\"",
+      "whenAndWhatItTakes": "Month 3, once they trust you. Needs policies, schedule access and the chiropractor's escalation wording. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Privacy-safe review reply drafts",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 49,
+      "monthlyMax": 149,
+      "pitchLine": "\"Each chiropractic review gets a warm reply drafted for approval that never confirms the reviewer is a patient or mentions their condition.\"",
+      "whenAndWhatItTakes": "Month 2, alongside review requests. Needs the clinic's reply rules. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "No-show and late-cancel log",
+      "kind": "software",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"See which adjustment slots go empty, which patients cancel late, and apply the clinic's own fee policy consistently.\"",
+      "whenAndWhatItTakes": "Month 2. Needs schedule data and their written cancellation policy."
+    },
+    {
+      "name": "Missed-visit follow-up",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 49,
+      "monthlyMax": 99,
+      "pitchLine": "\"A patient who misses a chiropractic visit gets a polite note the same afternoon with a link to rebook.\"",
+      "whenAndWhatItTakes": "Month 2. Needs schedule access and approved wording."
+    },
+    {
+      "name": "Insurance and fee question responder",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"'Do you take my plan' and 'what's a first visit cost' get answered from the clinic's approved fee page, and coverage specifics go to the billing desk.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the approved insurance and fee wording. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Referral source tracker",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"See which physicians, attorneys, gyms and patients refer to the chiropractic clinic, and which ones went quiet this quarter.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the 'how did you hear' field on the request form and their existing referral notes."
+    },
+    {
+      "name": "Accident case document checklist",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 49,
+      "monthlyMax": 149,
+      "pitchLine": "\"For each accident patient, the clinic sees which forms, records requests and claim documents are in and which are missing, without giving anyone legal advice.\"",
+      "whenAndWhatItTakes": "Month 4, only for clinics with accident work. Needs their paperwork list. Tracks documents, not clinical notes."
+    },
+    {
+      "name": "Maintenance plan membership billing",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Cash-pay patients on a monthly chiropractic plan are billed automatically, and the front desk sees visits used and left.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the plan rules, which their own adviser has checked, and a payment account."
+    },
+    {
+      "name": "Educational post drafts with a claims check",
+      "kind": "ai",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 99,
+      "monthlyMax": 199,
+      "pitchLine": "\"The chiropractor picks a topic, a post is drafted in their voice, and any cure or result wording is flagged before it goes out.\"",
+      "whenAndWhatItTakes": "Month 3. Needs past posts and the clinic's banned-word list. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Year-since-last-visit reactivation",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 49,
+      "monthlyMax": 99,
+      "pitchLine": "\"Patients the chiropractic clinic hasn't seen in a year get a short note with current hours and a way to book, nothing about their old complaint.\"",
+      "whenAndWhatItTakes": "Month 5. Needs visit history and an opt-out line."
+    },
+    {
+      "name": "Front desk policy search",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"New front desk staff search the chiropractic clinic's own policies on fees, accident paperwork and scheduling instead of interrupting an adjustment.\"",
+      "whenAndWhatItTakes": "Month 6. Needs written policies, every answer approved. Front desk topics only. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Lunch-and-learn scheduler for referring offices",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Physician and PT offices pick a date for the chiropractor's lunch talk online, and the clinic gets reminders and a visit log.\"",
+      "whenAndWhatItTakes": "Month 5, once the referral page is live. Needs the list of offices they visit."
+    },
+    {
+      "name": "Visit-type matcher for the request form",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"A visitor describes why they're contacting the chiropractic clinic, and the form routes them to new patient, accident or sports intake, never offering a diagnosis.\"",
+      "whenAndWhatItTakes": "Month 5. Needs the visit types and the chiropractor's routing rules. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Home exercise sheet delivery",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"The exercise sheet the chiropractor hands over at the visit arrives by text or email that evening, exactly as written.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their existing exercise sheets. Sends only approved material."
+    },
+    {
+      "name": "Referral thank-you note drafts",
+      "kind": "ai",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1200,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"When a physician or attorney refers a patient, the chiropractor gets a short thank-you note drafted to sign, with no clinical details.\"",
+      "whenAndWhatItTakes": "Month 5, once the referral tracker is in use. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Multi-provider schedule board",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 99,
+      "monthlyMax": 199,
+      "pitchLine": "\"See every chiropractor, massage therapist and rehab room across the week, so new patient slots aren't hidden behind a busy provider.\"",
+      "whenAndWhatItTakes": "Month 6, for clinics with several providers. Needs schedules and room lists."
+    },
+    {
+      "name": "Bilingual message drafts for the clinic",
+      "kind": "ai",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1200,
+      "monthlyMin": 59,
+      "monthlyMax": 149,
+      "pitchLine": "\"Scheduling and fee questions arriving in Spanish get a reply drafted in Spanish from the chiropractic clinic's approved wording.\"",
+      "whenAndWhatItTakes": "Month 4, for clinics with Spanish-speaking patients. Needs translated policies checked by staff. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Practice numbers dashboard",
+      "kind": "software",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 99,
+      "monthlyMax": 299,
+      "pitchLine": "\"New patients, visits, plan sign-ups and referral sources on one chiropractic clinic screen each Monday, without patient-level detail.\"",
+      "whenAndWhatItTakes": "Month 8. Needs schedule and billing exports in summary form."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the clinic front door for independent chiropractors",
+      "whoPays": "Each clinic, monthly",
+      "min": 79,
+      "max": 249,
+      "unit": "monthly",
+      "pitchLine": "\"I built a technique page, a new patient request and a referral page for one chiropractic clinic. Every independent chiropractor on a vendor template needs the same.\"",
+      "whyItWorks": "Independent clinics are many and dislike their software vendor's sites. A cheaper, better front door is easy to explain."
+    },
+    {
+      "route": "State chiropractic association member toolkit",
+      "whoPays": "The association",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer every member a claims-safe chiropractic site template with technique, referral and privacy pages built in.\"",
+      "whyItWorks": "Associations worry about members' advertising compliance. A safe template is a benefit they can point to."
+    },
+    {
+      "route": "Graduate launch kit for chiropractic colleges",
+      "whoPays": "The college career office, annually",
+      "min": 2000,
+      "max": 8000,
+      "unit": "per-year",
+      "pitchLine": "\"Every graduating chiropractor opening a practice leaves with a starter clinic site and a new patient request ready to switch on.\"",
+      "whyItWorks": "Colleges sell practice success. A launch kit for each class is recurring."
+    },
+    {
+      "route": "Practice-growth coaching firms for chiropractors",
+      "whoPays": "The coaching firm, annually",
+      "min": 3000,
+      "max": 10000,
+      "unit": "per-year",
+      "pitchLine": "\"Your coaching clients all need a better clinic site. License my chiropractic template under your programme so every client gets one.\"",
+      "whyItWorks": "Coaches own the relationship with many clinics and want deliverables they don't have to build."
+    },
+    {
+      "route": "Chiropractic franchise groups",
+      "whoPays": "The franchise group, per location",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Franchise chiropractors want a local page that shows their own doctor and neighbourhood without breaking head office's rules. One approved layout serves every clinic in the system.\"",
+      "whyItWorks": "One head-office approval becomes many location builds."
+    },
+    {
+      "route": "White-label clinic template for healthcare agencies",
+      "whoPays": "The agency, per site",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency runs ads for chiropractors and patches landing pages together. License my claims-safe clinic template instead.\"",
+      "whyItWorks": "Agencies avoid regulated copy work. You sell them the part they fear."
+    },
+    {
+      "route": "Clinic locator for an adjusting table maker",
+      "whoPays": "The manufacturer",
+      "min": 5000,
+      "max": 20000,
+      "unit": "one-time",
+      "pitchLine": "\"Patients ask for a chiropractor who uses gentle table techniques. A locator of clinics using your tables answers that and keeps them loyal.\"",
+      "whyItWorks": "Manufacturers want their equipment to bring clinics patients. A locator is visible proof."
+    },
+    {
+      "route": "Malpractice insurers for chiropractors",
+      "whoPays": "The insurer's risk team",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Your insured chiropractors keep asking what they can safely say online. A library of claims-safe page templates reduces your risk and theirs.\"",
+      "whyItWorks": "Insurers pay to prevent advertising complaints, and the template is already built."
+    },
+    {
+      "route": "Multi-discipline clinic groups",
+      "whoPays": "The clinic group",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Your group runs chiropractic, physical therapy and massage under one roof in several towns. One site with provider-level booking ties them together.\"",
+      "whyItWorks": "Groups need a single front door for several disciplines, and you've built each part."
+    },
+    {
+      "route": "Practice brokers selling chiropractic clinics",
+      "whoPays": "The broker",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"A chiropractic clinic with a dated site sells for less. Offer sellers a refresh and buyers a transition page that keeps patients through the handover.\"",
+      "whyItWorks": "Brokers want clinics to look healthy at sale. Patient retention through the handover is their worry."
+    },
+    {
+      "route": "Clinics two towns over",
+      "whoPays": "New chiropractic clients in a new metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"Chiropractors outside {City} don't share patients with my clinic, so they get the same technique, accident and referral pages, already approved once.\"",
+      "whyItWorks": "Non-competing geography lets you reuse claims-safe copy, which is the slowest part to write."
+    },
+    {
+      "route": "Finish half-built clinic site projects",
+      "whoPays": "The stuck clinic",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "pitchLine": "\"Someone started your chiropractic site rebuild and stopped at the technique pages. I can finish it on a clinic structure I've already shipped.\"",
+      "whyItWorks": "Stuck clinics have budget committed and want it done."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Clinic site build plus care plan, one contract",
+      "min": 2000,
+      "max": 3500,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The chiropractic site and the care plan go on one contract, so new hours or a new provider is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 14,
+      "offer": "New patient request routing",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "trigger": "The front desk says web requests are getting lost in the general inbox.",
+      "line": "\"Those chiropractic requests should land sorted at the front desk, not in a shared inbox.\""
+    },
+    {
+      "rung": 3,
+      "day": 30,
+      "offer": "Review requests and visit-plan reminders",
+      "min": 79,
+      "max": 179,
+      "unit": "monthly",
+      "trigger": "The site has been live a month and the schedule shows patients dropping off mid-plan.",
+      "line": "\"Patients drifting off their visit plan just need a reminder. Let's add that, and a careful review request.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Clinic and team photo morning",
+      "min": 300,
+      "max": 800,
+      "unit": "per-shoot",
+      "trigger": "The bios still show placeholders or old headshots.",
+      "line": "\"One morning gives the chiropractic site real faces before the new year rush.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Referral provider mailer and lunch kit",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "trigger": "They mention wanting more physician referrals.",
+      "line": "\"The referral page is live. Let's put it in front of the doctors near the clinic.\""
+    },
+    {
+      "rung": 6,
+      "day": 120,
+      "offer": "Front desk overflow phone answering",
+      "min": 1000,
+      "max": 2500,
+      "unit": "one-time",
+      "trigger": "They say the phones go unanswered while the front desk checks patients in.",
+      "line": "\"New patient calls that ring out during check-in can be answered and booked.\""
+    },
+    {
+      "rung": 7,
+      "day": 180,
+      "offer": "Referral source tracker",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "trigger": "Six months of 'how did you hear' answers are sitting in the request inbox.",
+      "line": "\"You have six months of referral data. Let's see which offices send chiropractic patients and which went quiet.\""
+    },
+    {
+      "rung": 8,
+      "day": 270,
+      "offer": "Introduction to the injury attorney",
+      "min": 2500,
+      "max": 7000,
+      "unit": "one-time",
+      "trigger": "They mention an attorney who sends accident patients asking who built the clinic site.",
+      "line": "\"The attorney who sends you accident patients asked about the site. Would you introduce me?\""
+    }
+  ]
+}

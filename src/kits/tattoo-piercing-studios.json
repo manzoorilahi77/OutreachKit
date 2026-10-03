@@ -1,0 +1,864 @@
+{
+  "schemaVersion": 1,
+  "category": "Tattoo & piercing studios",
+  "slug": "tattoo-piercing-studios",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Care family batch. Artist-driven and Instagram-native; the custom request and deposit flow is the headline sale. Age and licence wording stays as placeholders. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Artist portfolios by style",
+      "contains": "One page per resident and guest artist: fine line, traditional, blackwork, realism or colour work, whether their books are open or closed, and a request button that goes to that artist",
+      "why": "Tattoo clients choose an artist, not a shop. They scroll a style until it matches what they picture, then ask whether the books are open."
+    },
+    {
+      "section": "Custom tattoo request",
+      "contains": "Placement, rough size in inches, colour or black and grey, reference pictures upload, preferred artist, budget range and the deposit that holds a consult or design session",
+      "why": "Artists lose hours to vague DMs. A structured request with a deposit separates serious custom pieces from someone pricing a small flash piece."
+    },
+    {
+      "section": "Piercing menu and jewellery",
+      "contains": "Each piercing placement with its price, implant-grade titanium and solid gold jewellery options, upgrade pricing and the downsize appointment that follows",
+      "why": "Piercing clients compare shops on jewellery quality and the price with jewellery included. A clear menu wins over a vague 'starting at'."
+    },
+    {
+      "section": "Age and ID policy",
+      "contains": "Accepted ID, the minimum age for tattoos, which piercings are offered to minors with a parent present under [state rule], and what paperwork the parent brings",
+      "why": "Parents and teens ask this before anything else, and a studio that states it plainly looks licensed and careful rather than casual."
+    },
+    {
+      "section": "Flash days and guest artists",
+      "contains": "Upcoming flash sheets with sizes and prices, walk-in day dates, guest artist dates and how to claim a design before the day",
+      "why": "Flash days and guest spots sell out from a single post. A page with dates and claimable designs turns a story into a booked shop day."
+    },
+    {
+      "section": "Cover-ups and touch-ups",
+      "contains": "The studio's touch-up policy and window, how cover-up consultations work, what the artist needs to see first, and when they'll suggest fading sessions before a cover-up",
+      "why": "Cover-up clients are nervous and research hard. The studio that explains the process calmly gets trusted with a piece someone regrets."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C39",
+      "siteType": "local-conversion",
+      "name": "Street Shop",
+      "heroLayout": "split-photo",
+      "mood": [
+        "honest",
+        "crafted",
+        "welcoming"
+      ],
+      "bestFor": "Walk-in tattoo and piercing shops that need hours, a piercing menu and a request button before a portfolio",
+      "pairsWithTier": "starter",
+      "headlineSample": "Tattoos and piercing in {City}, walk-ins welcome",
+      "whyItFits": "Brick & Linen's typewriter slab and brick red feel like a hand-painted shop sign, and the split hero puts the street door beside the booking button."
+    },
+    {
+      "id": "b",
+      "themeId": "C48",
+      "siteType": "portfolio-showcase",
+      "name": "Black Book",
+      "heroLayout": "full-bleed-photo",
+      "mood": [
+        "dark",
+        "bold",
+        "artistic"
+      ],
+      "bestFor": "Multi-artist tattoo studios where the portfolios do the selling and each artist takes custom requests",
+      "pairsWithTier": "standard",
+      "headlineSample": "Custom tattoo work by {City} artists",
+      "whyItFits": "The family combo, Sage Spa, fails CTA contrast and reads as a quiet spa, not ink. Noir Editorial makes black and grey and colour work the brightest thing on screen and passes AA."
+    },
+    {
+      "id": "c",
+      "themeId": "C41",
+      "siteType": "premium-brand",
+      "name": "Private Studio",
+      "heroLayout": "type-led",
+      "mood": [
+        "minimal",
+        "gallery",
+        "exclusive"
+      ],
+      "bestFor": "Appointment-only fine line and custom studios with long waitlists and high day rates",
+      "pairsWithTier": "premium",
+      "headlineSample": "A private tattoo studio in {City}. By appointment.",
+      "whyItFits": "Gallery White treats each tattoo like a framed piece, and the Didone display says appointment-only without a single skull in sight."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "The studio's Google listing has strong reviews and no website, so someone in {City} searching for a fine line tattoo artist can't see who works there or how to request a piece.",
+      "hook": "Open their Maps listing and confirm there is no Website button. Screenshot it for when they reply.",
+      "linkLine": "Here's what would sit behind that button for the studio: {demo-link}"
+    },
+    {
+      "angle": "Link page instead of a site",
+      "line": "Your bio goes to a link page with six buttons, and none of them explains how a custom tattoo request works or what the deposit is. People guess, then DM you anyway.",
+      "hook": "Tap their bio link and count the buttons. Note whether any of them explains requests or deposits.",
+      "linkLine": "One tattoo studio page with the request process built in: {demo-link}"
+    },
+    {
+      "angle": "Dead free host",
+      "line": "The shop site on your listing still names an artist who left and a piercing price list from years back. Someone checking it before a walk-in gets the wrong idea.",
+      "hook": "Open the site and find one stale detail: a departed artist, old prices, dead social links. Note it.",
+      "linkLine": "The same tattoo shop, current: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "I tried your shop's site on my phone and the artist pages wouldn't scroll past the first row of tattoos. That's where most people browse artists, late at night on the couch.",
+      "hook": "Only if they have a site. Load it on your phone and note what breaks. Screenshot it for when they reply.",
+      "linkLine": "The studio, rebuilt for a phone: {demo-link}"
+    },
+    {
+      "angle": "Custom requests by DM",
+      "line": "Your highlights say 'DM for custom work', so every tattoo enquiry starts as a guessing game about size and placement. A short request form would hand you that before the first reply.",
+      "hook": "Look for 'DM to book' or 'DM for customs' in their bio or highlights. If there's no form anywhere, the angle holds.",
+      "linkLine": "A custom tattoo request with size, placement and deposit: {demo-link}"
+    },
+    {
+      "angle": "Portfolios lost in the feed",
+      "line": "Each artist's best tattoos are mixed in with flash promos, shop dogs and convention posts. A portfolio per artist, sorted by style, would let clients find their match.",
+      "hook": "Pick one artist and one style they clearly specialise in. Name both if they reply.",
+      "linkLine": "Each tattoo artist's portfolio, sorted by style: {demo-link}"
+    },
+    {
+      "angle": "Reviews stuck on Google",
+      "line": "Your Google reviews keep praising how clean the shop is and how calm the piercer was with a nervous first-timer. That belongs next to the piercing menu, not three taps away.",
+      "hook": "Read their reviews and copy one phrase about cleanliness, calm or aftercare. Quote it back if they reply.",
+      "linkLine": "Your reviews beside the piercing and tattoo menu: {demo-link}"
+    },
+    {
+      "angle": "Flash day coming up",
+      "line": "Your Friday the thirteenth flash day post got a pile of comments asking which designs were still free. A flash page where people claim a design ahead would save you the comment thread.",
+      "hook": "Use this in the weeks before a flash day, a holiday flash event or a guest spot. Check their recent posts for one.",
+      "linkLine": "A flash day page with claimable designs: {demo-link}"
+    },
+    {
+      "angle": "Midnight tattoo DMs",
+      "line": "Tattoo ideas show up at midnight, and so do the 'how much for this' DMs. Right now those people wait until you're back in the shop, and some move on to whoever replies first.",
+      "hook": "Look for unanswered 'price?' or 'books open?' comments on recent posts. Note one.",
+      "linkLine": "A studio page that takes tattoo requests at midnight: {demo-link}"
+    },
+    {
+      "angle": "Hiring an artist or apprentice",
+      "line": "Saw the shop is looking for a resident artist or an apprentice. Strong tattooers look at how the studio presents its artists before they reach out.",
+      "hook": "Only if they posted 'now hiring', 'chair available' or 'taking apprentice applications'. Note the date.",
+      "linkLine": "A tattoo studio page with a join-the-shop section: {demo-link}"
+    },
+    {
+      "angle": "Clients travelling in",
+      "line": "Your comments have people asking whether it's worth the drive from {Neighborhood} for a session with your artists. A page with parking, hours and session-day tips makes that trip feel planned.",
+      "hook": "Look for comments or reviews mentioning a drive or travel. Use the place they name in {Neighborhood}.",
+      "linkLine": "A studio page for clients travelling in for ink: {demo-link}"
+    },
+    {
+      "angle": "Deposits taken by hand",
+      "line": "Your booking post asks people to send the tattoo deposit by app and then message a picture of the receipt. That's a lot of manual checking for every large piece you book.",
+      "hook": "Look for deposit instructions in highlights or captions. Never name the payment app back to them.",
+      "linkLine": "A request flow where the deposit is taken at booking: {demo-link}"
+    },
+    {
+      "angle": "Licensed and spotless",
+      "line": "Nothing online mentions the studio's health department licence or how you sterilise, and that's what a parent or a first-time piercing client checks first.",
+      "hook": "Look for licence certificates or sterilisation posts. Never state a licence number they haven't published.",
+      "linkLine": "Licensing and studio hygiene, stated plainly: {demo-link}"
+    },
+    {
+      "angle": "Waitlist by word of mouth",
+      "line": "Your artists' books seem to fill from friends of past clients. Those people still look up the tattoo studio before a big piece, and find a feed instead of a process.",
+      "hook": "Look for 'books closed' posts or reviews saying 'my friend sent me'. Quote one.",
+      "linkLine": "Where a referred tattoo client would land: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "That {specific recent job} you posted is beautiful tattoo work, linework and placement both. A piece like that should lead the artist's portfolio page, not slide down the grid by Friday.",
+      "hook": "Pick their newest healed or fresh piece and name it exactly: the style, the placement and the artist.",
+      "linkLine": "That tattoo, leading the artist's portfolio: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, that {specific recent job} the studio posted is beautiful work, the linework especially.\n\nI looked for a site for {Business Name} and only found the bio link and your social pages. I put together a sample studio page with artist portfolios by style, a custom tattoo request with a deposit step and a piercing menu, with marked placeholders where your photos would go.\n\nWant me to send it over?",
+    "dm2": "{Owner}, following up in case this got lost in the request pile. Here's the sample site for {Business Name}: {demo-link}\n\nIt has a page per artist, a custom request that asks for size and placement up front, a piercing menu with jewellery options and a flash day page. If it's not for you, say so and I won't message again.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for tattoo and piercing studios here in {City}. I sent the shop a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"No worries, I know the DMs are a mess. Short version: I built a sample site for {Business Name} with a portfolio per artist, a custom tattoo request with a deposit and a piercing menu, with marked placeholders where your photos would go. Can I text you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range}, then {Care Range} a month for hosting, new flash and artist changes. For a studio like yours I'd normally quote about {Build Price}.\"\n\"Can I come by before you open one day this week? Ten minutes, and I'll bring it on a tablet.\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. We start the day it clears.\"",
+    "objections": [
+      {
+        "objection": "Instagram is our portfolio.",
+        "handler": "\"It is, and it stays that way. The site pulls the best tattoos into one page per artist and adds the part Instagram can't do: a request form and a deposit at booking.\""
+      },
+      {
+        "objection": "Our artists' books are closed half the year anyway.",
+        "handler": "\"Then the site runs the waitlist. When books open, the people already on it get told first, and the DM flood never starts.\""
+      },
+      {
+        "objection": "Every artist wants their own thing.",
+        "handler": "\"That's why each artist gets their own page, styles and request button under the studio's name. They can share their page instead of a bio link.\""
+      },
+      {
+        "objection": "We get too many lowballers already.",
+        "handler": "\"The request form shows a shop minimum and asks for size, placement and budget, and the deposit step stops the people who were only pricing.\""
+      },
+      {
+        "objection": "My buddy built our site years ago.",
+        "handler": "\"Keep his work if it's doing the job. If artists have left or prices are old, I can rebuild it so the studio can update flash and artists without calling him.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For your shop about {Build Price}, because of the artist pages, the request flow and the piercing menu. A couple of custom pieces covers it.\""
+      }
+    ],
+    "email": {
+      "subject": "Studio site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for tattoo and piercing studios around {City}. {Business Name} has strong work across its artists' feeds, but no site where a client can find the right artist, request a custom piece and leave a deposit.\n\nI built a sample first rather than ask for your time: a portfolio page per artist, a custom tattoo request with size, placement and deposit, a piercing menu with jewellery options, and a flash day page, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting, flash updates and artist changes. If not, no problem, it comes down at the end of the month.\n\nWorth ten minutes before you open one day?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build websites for tattoo studios in {City} and put together a sample for {Business Name}. I'll text you the link so you can look between sessions. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm taking the {Business Name} studio demo down on Friday to free up the space.\n\nWant it kept up a while longer? One word either way is plenty.",
+    "nurture": "Hi {Owner}, flash day season and holiday gift certificates are coming up, and studios with a request page and a flash page stay out of the DM pile. Thought of you.\n\nThe sample's still here and nothing's changed on price. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Price artist pages per artist, not per page. A five-artist shop is five portfolios, five request routes and five sets of styles.",
+      "The custom request and deposit flow is the headline line item. It is what the owner is actually buying.",
+      "Price the piercing menu by placement count and whether jewellery options and upgrades are included.",
+      "Peg the build to a couple of mid-size custom pieces, never to a full sleeve.",
+      "Flash pages are recurring work. Bundle flash updates into the monthly care rather than quoting each sheet.",
+      "Keep age and licence wording as bracketed placeholders until the owner supplies it."
+    ],
+    "lineItems": [
+      {
+        "item": "Artist portfolio page (each artist)",
+        "min": 150,
+        "max": 400,
+        "unit": "per-page",
+        "description": "Max when the artist has several styles with filters, a healed-work section and their own request route.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Custom tattoo request with deposit",
+        "min": 400,
+        "max": 1000,
+        "unit": "one-time",
+        "description": "Max with reference upload, per-artist routing, a shop minimum, and deposit capture tied to the studio's payment account.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Piercing menu with jewellery options",
+        "min": 250,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max with jewellery upgrades priced per placement, a downsize booking step and a jewellery gallery.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Flash day page with claimable designs",
+        "min": 200,
+        "max": 500,
+        "unit": "one-time",
+        "description": "Max when each flash design can be claimed with a deposit and marked taken automatically.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Guest artist calendar",
+        "min": 150,
+        "max": 400,
+        "unit": "one-time",
+        "description": "Max with guest bios, dates, their own request form and a waitlist for each guest spot.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Age, ID and consent paperwork page",
+        "min": 150,
+        "max": 350,
+        "unit": "one-time",
+        "description": "Max when it includes downloadable parental consent forms the owner supplies and a pre-fill step before arrival.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Online gift certificate store for the studio",
+        "min": 200,
+        "max": 500,
+        "unit": "one-time",
+        "description": "Max with printable certificates, piercing-specific amounts and artist-specific certificates.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Healed tattoo content session",
+      "min": 300,
+      "max": 800,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Invite a handful of past clients back to photograph healed tattoos in good light. Healed ink is what careful clients want to see, and almost no shop shows it.\"",
+      "when": "Month 2, on a quiet weekday, with written consent from each client."
+    },
+    {
+      "name": "Google profile upkeep for the tattoo studio",
+      "min": 100,
+      "max": 250,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Weekly posts on the studio's Google profile naming the artist, the tattoo style and whether books are open, so searches for a tattoo shop nearby find an active one.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Review requests after the healed check",
+      "min": 39,
+      "max": 99,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A few weeks after the session, once the tattoo has healed and they love it, the client gets a note asking for a review that names their artist.\"",
+      "when": "Day 30. The easiest second sale."
+    },
+    {
+      "name": "Flash day promo kit",
+      "min": 150,
+      "max": 400,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Story frames, a countdown post and a flash sheet layout for each tattoo flash day, all pointing to the claim page.\"",
+      "when": "Two weeks before each flash day or holiday flash event."
+    },
+    {
+      "name": "Convention booth banner and artist cards",
+      "min": 200,
+      "max": 600,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A booth banner and artist cards with each tattooer's request code, so convention visitors can book the piece after the show.\"",
+      "when": "A month before the next tattoo convention they attend."
+    },
+    {
+      "name": "Shop window lettering and piercing aftercare cards",
+      "min": 150,
+      "max": 400,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Window lettering with hours and the request code, and aftercare cards in the shop's own wording handed out with every piercing.\"",
+      "when": "Right after launch."
+    },
+    {
+      "name": "Holiday tattoo gift certificate push",
+      "min": 150,
+      "max": 400,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A December push for studio gift certificates, so the person who's been talking about their first tattoo all year gets one from your shop.\"",
+      "when": "Pitch in October, run from Thanksgiving to Christmas."
+    },
+    {
+      "name": "Process reel editing for the artists",
+      "min": 200,
+      "max": 600,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Artists film the stencil, the linework and the wipe; I cut them into short process reels with the artist and style named.\"",
+      "when": "Month 3, if the artists film but never edit."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Regional tattoo convention organisers",
+        "whoPays": "The convention organiser",
+        "min": 2000,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"The convention your artists work every year runs booth sales from a spreadsheet. I'd build the artist list, booth booking and ticket page.\"",
+        "whyItWorks": "Organisers need artists to apply and visitors to buy. Your shop's artists are their exhibitors and vouch for you."
+      },
+      {
+        "route": "The tattoo supply shop that sells to local artists",
+        "whoPays": "The supply shop",
+        "min": 2500,
+        "max": 8000,
+        "unit": "one-time",
+        "pitchLine": "\"The supply shop where your artists buy needles and ink takes orders by phone. An order page with stock levels and pickup times is overdue.\"",
+        "whyItWorks": "Every tattooer in the region is their customer and your prospect. The shop owner's introduction makes it warm."
+      },
+      {
+        "route": "Laser tattoo removal clinics",
+        "whoPays": "The removal clinic",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The laser clinic that fades old tattoos before your cover-ups needs a site that explains sessions and pricing. They already send you clients.\"",
+        "whyItWorks": "Removal and cover-up work feed each other. The studio's referral relationship opens the clinic's door."
+      },
+      {
+        "route": "Independent body jewellery makers",
+        "whoPays": "The jewellery maker",
+        "min": 1500,
+        "max": 5000,
+        "unit": "one-time",
+        "pitchLine": "\"The small jewellery maker your piercers order from needs a wholesale catalogue studios can order from. Your piercer can introduce me.\"",
+        "whyItWorks": "Small makers sell to studios, not the public. A clean wholesale catalogue is a direct revenue tool for them."
+      },
+      {
+        "route": "Barbershops and streetwear stores on the same block",
+        "whoPays": "Each shop, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The barbershop next to your tattoo studio shares half your clients and books by text. I'd build theirs next, with your shop linked.\"",
+        "whyItWorks": "Neighbouring shops cross-refer and see each other's sites daily. The second sale on the block is the easiest."
+      },
+      {
+        "route": "Artists leaving to open their own studio",
+        "whoPays": "The new studio owner, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"When one of your former artists opens a private tattoo studio across town, they already know the site you built and will ask for the same.\"",
+        "whyItWorks": "Artists move on often and stay friendly. A good build travels with them to the next shop."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Exhibitor and visitor assistant for the convention",
+        "whoPays": "The convention organiser",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"Artists asking about booth sizes and visitors asking which tattooers are attending get answers from the organiser's own convention list.\"",
+        "whyItWorks": "Organisers get flooded with the same questions in the month before the show. A contained assistant is an easy yes."
+      },
+      {
+        "route": "Fade-or-cover enquiry router for the laser clinic",
+        "whoPays": "The removal clinic, monthly",
+        "min": 150,
+        "max": 350,
+        "unit": "monthly",
+        "pitchLine": "\"People asking the laser clinic about an old tattoo are told about removal sessions or pointed to partner studios for cover-ups, using the clinic's approved wording.\"",
+        "whyItWorks": "The clinic wants qualified removal clients and a good partner for the rest. Your studio is the partner."
+      },
+      {
+        "route": "Wholesale reorder assistant for the jewellery maker",
+        "whoPays": "The jewellery maker",
+        "min": 1000,
+        "max": 3000,
+        "unit": "one-time",
+        "pitchLine": "\"Piercing studios message what they're running low on, and the assistant drafts the wholesale order from the maker's own catalogue for approval.\"",
+        "whyItWorks": "Reorders by message are how studios already buy. Turning them into clean orders saves the maker hours."
+      },
+      {
+        "route": "Stock and order-status chat for the tattoo supply shop",
+        "whoPays": "The supply shop, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"Tattooers ask whether their usual needles and ink are in stock or their order is ready, and get an answer from the shop's inventory at any hour.\"",
+        "whyItWorks": "Supply shops answer the same stock questions all day. The answers come straight from their own system."
+      },
+      {
+        "route": "Walk-in queue assistant for the barbershop next door",
+        "whoPays": "The barbershop, monthly",
+        "min": 79,
+        "max": 199,
+        "unit": "monthly",
+        "pitchLine": "\"The barbershop beside your tattoo shop gets a walk-in queue clients join from their phone, with a text when their chair is close.\"",
+        "whyItWorks": "Same block, same clients. The barber sees your studio's system working and wants their own version."
+      },
+      {
+        "route": "Request inbox triage for artists going solo",
+        "whoPays": "The new studio owner",
+        "min": 600,
+        "max": 1500,
+        "unit": "one-time",
+        "pitchLine": "\"A tattooer opening their own studio gets every request sorted by size, style and budget, with a draft reply, from day one.\"",
+        "whyItWorks": "Solo artists drown in requests in the first months. They've seen the studio's version and trust it."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Deposit at booking for custom tattoo pieces",
+      "kind": "software",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"The tattoo deposit is taken when the session is booked and applied to the final price, with no receipt-chasing in the DMs.\"",
+      "whenAndWhatItTakes": "At build, or the first time they mention a no-show on a big piece. Needs their deposit rules and a payment account."
+    },
+    {
+      "name": "Tattoo request triage",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Every tattoo request is sorted by size, style, placement and budget, routed to the right artist, with a draft reply waiting.\"",
+      "whenAndWhatItTakes": "Month 2. Needs each artist's styles, minimums and the request form live. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Healed check and touch-up reminders",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 700,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"A few weeks after the session the client gets a note to send a healed picture and book a touch-up inside the studio's window.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their touch-up policy and session records from the booking system."
+    },
+    {
+      "name": "Waitlist for closed tattoo books",
+      "kind": "software",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1200,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"When an artist's books are closed, clients join that artist's waitlist with their idea, instead of DMing every week to ask.\"",
+      "whenAndWhatItTakes": "Month 2. Needs each artist's open and closed status and the request form fields."
+    },
+    {
+      "name": "Digital consent and ID record",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 99,
+      "pitchLine": "\"Consent and release forms are filled on a tablet before the tattoo or piercing, with the ID check recorded and stored in one place.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their current paper forms and record-keeping rules from their own licence requirements."
+    },
+    {
+      "name": "Flash sheet inventory and claim tracker",
+      "kind": "software",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Each flash design is listed once, claimed with a deposit and marked taken, so two people never turn up for the same tattoo.\"",
+      "whenAndWhatItTakes": "Month 2, before the next flash day. Needs the flash sheets and pricing per size."
+    },
+    {
+      "name": "Review reply drafts for the tattoo studio",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 700,
+      "monthlyMin": 39,
+      "monthlyMax": 99,
+      "pitchLine": "\"Each studio review gets a reply drafted in the shop's voice that thanks the right artist by name, ready to approve.\"",
+      "whenAndWhatItTakes": "Month 2, alongside review requests. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Size and placement price estimator",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"A client describes the tattoo, size and placement and gets a rough range from the artist's own rate rules, with the final price always set by the artist.\"",
+      "whenAndWhatItTakes": "Month 4. Needs each artist's hourly or day rate and minimums. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Aftercare text series in the studio's wording",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 700,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"The shop's own tattoo and piercing aftercare sheet arrives by text that evening, with check-ins at the points the shop chooses.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their written aftercare sheets. Sends only their approved text, never new advice."
+    },
+    {
+      "name": "Booth rent and commission split report",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"For shop owners: each tattoo artist's sessions, deposits, commission or booth rent, worked out at the end of every week.\"",
+      "whenAndWhatItTakes": "Month 4, for shops with several artists. Needs their split rules and booking data."
+    },
+    {
+      "name": "Studio phone and DM receptionist",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 149,
+      "monthlyMax": 349,
+      "pitchLine": "\"While the machines are running, the tattoo shop's calls and DMs about hours, walk-ins and piercing prices still get answered.\"",
+      "whenAndWhatItTakes": "Month 3, once they trust you. Needs hours, walk-in rules and the piercing menu. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Reference board brief for the artist",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 59,
+      "monthlyMax": 149,
+      "pitchLine": "\"A client's pile of reference pictures and notes becomes a one-paragraph tattoo brief the artist can read before the consult.\"",
+      "whenAndWhatItTakes": "Month 4, once the request form collects references. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Piercing jewellery stock and reorder list",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Know which piercing jewellery sizes and styles are running low and get a reorder list before the case is empty.\"",
+      "whenAndWhatItTakes": "Month 4, if they pierce. Needs their jewellery list and sales records."
+    },
+    {
+      "name": "Books-open announcement to the waitlist",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 700,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"When a tattoo artist opens books, people on their waitlist hear first, in the order they joined, before the public post goes up.\"",
+      "whenAndWhatItTakes": "Month 3, once the waitlist has names. Needs email or text consent from waitlist members."
+    },
+    {
+      "name": "Caption drafts for tattoo posts",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 59,
+      "monthlyMax": 149,
+      "pitchLine": "\"Post a fresh or healed tattoo and get a caption in the artist's voice with the style, placement and books-open status named.\"",
+      "whenAndWhatItTakes": "Month 2. Needs a few past captions per artist. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Multi-session sleeve and back piece scheduler",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 49,
+      "monthlyMax": 99,
+      "pitchLine": "\"Large tattoo projects get every session booked at the right healing gap, with progress and deposit balance tracked across the whole piece.\"",
+      "whenAndWhatItTakes": "Month 5, for artists doing sleeves and back pieces. Needs their session length and healing gap rules."
+    },
+    {
+      "name": "Guest spot enquiry assistant",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 59,
+      "monthlyMax": 149,
+      "pitchLine": "\"Travelling tattooers asking about a guest spot get the studio's dates, chair fee and rules, and the owner gets a tidy application.\"",
+      "whenAndWhatItTakes": "Month 5, for studios that host guests. Needs their guest policy. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Next-piece check-in for past clients",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 700,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"A year after a tattoo, the client hears from their artist with new flash and open dates. Collectors usually come back to the same chair.\"",
+      "whenAndWhatItTakes": "Month 6. Needs session history and an opt-out line."
+    },
+    {
+      "name": "Tattoo project progress page for clients",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Each big tattoo client gets a private page with their sessions, deposit balance, prep notes and the next date.\"",
+      "whenAndWhatItTakes": "Month 6, after the scheduler is in use. Needs the project records."
+    },
+    {
+      "name": "Cover-up pre-screen for the artist",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"A client uploads the old tattoo they want covered, and the artist gets a summary of its size, darkness and placement before deciding whether to take it on.\"",
+      "whenAndWhatItTakes": "Month 6, for studios doing cover-ups. The artist always makes the call. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the request and deposit tools for independent tattooers",
+      "whoPays": "Artists, monthly",
+      "min": 29,
+      "max": 99,
+      "unit": "monthly",
+      "pitchLine": "\"I built a tattoo request form, deposit and waitlist for one studio. Every tattooer with a bio link is fighting the same DM pile.\"",
+      "whyItWorks": "Artists talk to each other constantly and move between shops. The tool travels with them."
+    },
+    {
+      "route": "Artist pages for a convention circuit",
+      "whoPays": "The convention company, annually",
+      "min": 3000,
+      "max": 10000,
+      "unit": "per-year",
+      "pitchLine": "\"Your tattoo conventions run in several cities. Give every exhibiting artist a page that takes requests before and after each show.\"",
+      "whyItWorks": "Conventions sell booths on the bookings artists get. A request page per artist is a result they can sell next year."
+    },
+    {
+      "route": "Professional piercing and tattoo association toolkit",
+      "whoPays": "The association",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer every member studio a site template with age policy, hygiene and jewellery standards pages built in.\"",
+      "whyItWorks": "Associations sell standards. A template that shows those standards to the public is a member benefit they can point to."
+    },
+    {
+      "route": "White-label tattoo studio template for agencies",
+      "whoPays": "The agency, per site",
+      "min": 400,
+      "max": 1200,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency gets tattoo shop clients and builds generic pages. License my studio template with artist pages and the request flow built in.\"",
+      "whyItWorks": "Agencies sell the client; you sell the part that took you the longest to get right."
+    },
+    {
+      "route": "Artist locator for a tattoo equipment maker",
+      "whoPays": "The maker's artist relations team",
+      "min": 8000,
+      "max": 25000,
+      "unit": "one-time",
+      "pitchLine": "\"Your sponsored tattoo artists need a place where collectors can find and request them. A locator with request routing does it.\"",
+      "whyItWorks": "Equipment makers invest in artist relations and want proof it reaches clients. The studio work shows you know the flow."
+    },
+    {
+      "route": "Studio stockist map for a body jewellery distributor",
+      "whoPays": "The distributor",
+      "min": 5000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Clients want to know which piercing studios near them carry your jewellery. A stockist map sends them through the right studio door.\"",
+      "whyItWorks": "Distributors win loyalty by sending customers to their studios. A map their studios rely on beats a discount."
+    },
+    {
+      "route": "Multi-location tattoo groups",
+      "whoPays": "The group, per location",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "pitchLine": "\"Each of your tattoo shops needs its own artists, hours and walk-in status under one brand. I build the location template once.\"",
+      "whyItWorks": "One owner, many shops, one template rolled out location by location."
+    },
+    {
+      "route": "Aftercare product makers",
+      "whoPays": "The aftercare brand",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Your aftercare balm is sold through tattoo studios. A studio finder and stockist page sends buyers to the shops that stock it.\"",
+      "whyItWorks": "Aftercare brands sell through studios and want them to reorder. A finder helps both."
+    },
+    {
+      "route": "Hygiene course providers for body artists",
+      "whoPays": "The course provider",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Every new tattooer and piercer needs your hygiene course before licensing. A course booking site with dates and reminders fills each class.\"",
+      "whyItWorks": "Course providers sell to every new artist. The studio owner who sends apprentices there makes the introduction."
+    },
+    {
+      "route": "Laser removal clinic groups",
+      "whoPays": "The clinic group",
+      "min": 3000,
+      "max": 8000,
+      "unit": "one-time",
+      "pitchLine": "\"Your removal clinics see clients who want a cover-up instead. A partner network page that routes them to trusted tattoo studios keeps those clients friendly.\"",
+      "whyItWorks": "Clinic groups want a referral story, and you already know the studio side of it."
+    },
+    {
+      "route": "The same tattoo studio build in the next metro",
+      "whoPays": "New studios in a new metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I keep one tattoo studio per part of {City}. Shops in the next metro don't compete with mine, and the artist-page template is ready.\"",
+      "whyItWorks": "Non-competing geography lets you reuse the template, the pitch and finished studio proof."
+    },
+    {
+      "route": "Rescue abandoned studio booking setups",
+      "whoPays": "The stuck studio",
+      "min": 400,
+      "max": 1500,
+      "unit": "one-time",
+      "pitchLine": "\"Someone half-built the shop's online tattoo booking and left deposits switched off. I can finish it on a setup I've already run.\"",
+      "whyItWorks": "Stuck studios already decided to buy. They want someone who has done a tattoo shop before."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Studio site build plus care plan, one contract",
+      "min": 1500,
+      "max": 2500,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The tattoo studio site and the care plan go on one contract, so new flash or a new artist is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 14,
+      "offer": "Deposit at booking for custom tattoo pieces",
+      "min": 300,
+      "max": 900,
+      "unit": "one-time",
+      "trigger": "They mention someone who skipped a custom session after the design was drawn.",
+      "line": "\"That drawn-but-never-tattooed design is exactly what a deposit at booking stops.\""
+    },
+    {
+      "rung": 3,
+      "day": 30,
+      "offer": "Review requests after the healed check",
+      "min": 39,
+      "max": 99,
+      "unit": "monthly",
+      "trigger": "The site has been live a month and recent clients have healed tattoos.",
+      "line": "\"Your clients love their healed tattoos. Let's ask them for a review that names their artist.\""
+    },
+    {
+      "rung": 4,
+      "day": 45,
+      "offer": "Waitlist for closed tattoo books",
+      "min": 500,
+      "max": 1200,
+      "unit": "one-time",
+      "trigger": "An artist posts that their books are closed and the comments fill with 'when do you open'.",
+      "line": "\"Those 'when do your books open' comments become a tattoo waitlist you can announce to.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Tattoo request triage",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "trigger": "They say artists spend evenings sorting requests and DMs.",
+      "line": "\"Your artists should be drawing at night, not sorting tattoo requests.\""
+    },
+    {
+      "rung": 6,
+      "day": 120,
+      "offer": "Healed tattoo content session",
+      "min": 300,
+      "max": 800,
+      "unit": "per-shoot",
+      "trigger": "Artist portfolios show mostly fresh work with no healed pictures.",
+      "line": "\"Healed tattoo pictures are what careful clients look for. One session fills every artist page.\""
+    },
+    {
+      "rung": 7,
+      "day": 180,
+      "offer": "Introduction to the convention organiser",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "trigger": "The shop is preparing for a tattoo convention and complains about the organiser's booth process.",
+      "line": "\"The convention your artists work could use what your studio has. Would you introduce me?\""
+    }
+  ]
+}

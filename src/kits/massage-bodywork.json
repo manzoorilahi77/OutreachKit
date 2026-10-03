@@ -1,0 +1,860 @@
+{
+  "schemaVersion": 1,
+  "category": "Massage & bodywork",
+  "slug": "massage-bodywork",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Care family batch. Low ticket, high retention: booking, rebooking and memberships carry the economics. No health or pain-relief claims. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Massage modality guide",
+      "contains": "Swedish, deep tissue, sports, myofascial, lymphatic drainage and hot stone, each with the pressure range, who usually books it, the session lengths offered and what the bodywork actually feels like",
+      "why": "Most first-time massage clients don't know which modality to pick. The therapist who explains it plainly gets the booking instead of a confused phone call."
+    },
+    {
+      "section": "Pressure, draping and comfort",
+      "contains": "What to wear, how draping works, how to ask for lighter or firmer pressure mid-session, areas a client can ask the therapist to skip, and a plain professional-boundaries statement",
+      "why": "Nervous first-timers decide on comfort and safety, and a clear boundaries statement tells them this is a licensed therapeutic massage practice."
+    },
+    {
+      "section": "Prenatal massage",
+      "contains": "Side-lying positioning, the bolsters used, which stages of pregnancy the therapist books, and when the therapist asks for the client's own provider to OK the session",
+      "why": "Expecting clients search specifically for prenatal massage and choose the therapist who explains positioning and safety before they arrive."
+    },
+    {
+      "section": "Massage memberships and session series",
+      "contains": "Monthly membership with a set session length, packs of sessions, how unused sessions roll over, couples sessions, and how to pause a membership",
+      "why": "Regular massage clients compare the monthly cost, not the single-session price. A clear membership page turns a one-off visit into a standing appointment."
+    },
+    {
+      "section": "Mobile, in-home and chair massage",
+      "contains": "In-home sessions with the table brought to you, travel zones and fees, corporate chair massage days, and event bookings for teams",
+      "why": "Mobile therapists and offices booking chair massage want logistics, travel fees and availability before they ever call."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C34",
+      "siteType": "booking-first",
+      "name": "Warm Room",
+      "heroLayout": "card-stack",
+      "mood": [
+        "warm",
+        "grounded",
+        "simple"
+      ],
+      "bestFor": "Solo massage therapists renting a room who need a session menu and a Book button more than anything else",
+      "pairsWithTier": "starter",
+      "headlineSample": "Deep tissue and relaxation massage in {City}",
+      "whyItFits": "Cacao's warm brown and bookish serif feel like a dim treatment room, and the stacked cards put session length, price and Book in one tap."
+    },
+    {
+      "id": "b",
+      "themeId": "C8",
+      "siteType": "booking-first",
+      "name": "Bodywork Studio",
+      "heroLayout": "split-photo",
+      "mood": [
+        "restful",
+        "clean",
+        "trustworthy"
+      ],
+      "bestFor": "Massage studios with several therapists, a modality menu and memberships",
+      "pairsWithTier": "standard",
+      "headlineSample": "Therapeutic massage in {City}, booked in a minute",
+      "whyItFits": "The family combo, Sage Spa, fails CTA contrast. Evergreen Trust keeps the green calm of a spa, adds a licensed-practice seriousness, and its Book button passes AA."
+    },
+    {
+      "id": "c",
+      "themeId": "C40",
+      "siteType": "premium-brand",
+      "name": "Quiet Hour",
+      "heroLayout": "type-led",
+      "mood": [
+        "spacious",
+        "hushed",
+        "refined"
+      ],
+      "bestFor": "Established bodywork practices with a waitlist, long sessions and a premium price per hour",
+      "pairsWithTier": "premium",
+      "headlineSample": "Unhurried bodywork in {City}, ninety minutes at a time",
+      "whyItFits": "Driftwood's pale neutral ground and refined serif give the page the pace of a long session, and type-led space signals a premium practice without a stock spa photo."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your massage practice shows up on Google Maps with great reviews and no website, so someone in {City} looking for deep tissue tonight can't see your session lengths or prices.",
+      "hook": "Open their Maps listing and confirm there is no Website button. Screenshot it for when they reply.",
+      "linkLine": "Here's what would sit behind that button for your massage practice: {demo-link}"
+    },
+    {
+      "angle": "Facebook page as the website",
+      "line": "The website link on your listing goes to a Facebook page where the newest post is about holiday hours. A new massage client can't tell what a sixty-minute session costs or how to book.",
+      "hook": "Click the link on their listing. If it lands on a Facebook page, note the date of the latest post.",
+      "linkLine": "Your massage menu on its own page, bookable: {demo-link}"
+    },
+    {
+      "angle": "Dead free host",
+      "line": "The massage site on your listing is an old free page with a banner ad across the top. That ad is the first thing a new client sees before your bodywork.",
+      "hook": "Open the site and note the host banner, a broken link or stale prices. Screenshot it for when they reply.",
+      "linkLine": "The same massage practice, without the banner ad: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "I tried to book a ninety-minute massage on your site from my phone and the booking frame cut off halfway down. Most people book a massage from their phone the evening their back starts complaining.",
+      "hook": "Only if they have a site. Try the booking path on your phone and note where it breaks.",
+      "linkLine": "Your massage booking, rebuilt for a phone: {demo-link}"
+    },
+    {
+      "angle": "Which modality do I pick",
+      "line": "Your menu lists Swedish, deep tissue, myofascial and sports massage with no explanation of the difference. First-timers stall right there and book whoever explains it.",
+      "hook": "Check their menu or booking page for modality descriptions. If it's names only, the angle holds.",
+      "linkLine": "A massage modality guide that helps clients pick: {demo-link}"
+    },
+    {
+      "angle": "A calm room with nowhere to show it",
+      "line": "The treatment room in your posts looks calm and well kept, warm towels and all. A massage client deciding where to book wants to see that room before they arrive.",
+      "hook": "Find a post that shows the room, the table setup or the entrance. Describe it exactly if they reply.",
+      "linkLine": "Your massage room shown where new clients decide: {demo-link}"
+    },
+    {
+      "angle": "Reviews stuck on Google",
+      "line": "One of your Google reviews says you were the first massage therapist who actually listened about pressure. That line would book more first sessions than any headline I could write.",
+      "hook": "Read their reviews and copy one phrase about pressure, listening or comfort. Quote it back if they reply.",
+      "linkLine": "Your reviews beside the massage booking button: {demo-link}"
+    },
+    {
+      "angle": "Gift season",
+      "line": "December and Mother's Day are when people go looking for a massage gift certificate. If they can't buy one from your practice online, the gift goes to a chain spa.",
+      "hook": "Use this from November to mid-December or the month before Mother's Day. Check whether they sell gift cards online.",
+      "linkLine": "A massage gift certificate page, ready for the season: {demo-link}"
+    },
+    {
+      "angle": "Booking after hours",
+      "line": "Sore shoulders show up at ten at night, and that's when people message a massage therapist for Saturday. If you're asleep, some of them book the next name in the search.",
+      "hook": "Look for comments or reviews mentioning 'got me in last minute' or questions about openings. Note one.",
+      "linkLine": "A massage practice that books while you sleep: {demo-link}"
+    },
+    {
+      "angle": "Hiring a therapist",
+      "line": "Saw you're looking for a licensed massage therapist to join the studio. Good therapists look at how the practice presents itself before they send a resume.",
+      "hook": "Only if they posted a hiring notice for an LMT or front desk. Note the date.",
+      "linkLine": "A massage studio page with a join-the-team section: {demo-link}"
+    },
+    {
+      "angle": "Mobile service area",
+      "line": "You offer in-home massage, but nowhere says which parts of {City} you'll drive to or what the travel fee is. People ask, wait, and sometimes give up.",
+      "hook": "Look for 'mobile', 'in-home' or 'I come to you' in their bio or posts. Check whether a travel area is stated.",
+      "linkLine": "A mobile massage page with travel zones and fees: {demo-link}"
+    },
+    {
+      "angle": "Memberships and HSA questions",
+      "line": "People keep asking in your comments whether you take HSA cards or do monthly massage memberships. A page that answers both would save you a dozen replies a week.",
+      "hook": "Look for payment or membership questions in comments and reviews. Never claim they accept HSA unless they say so.",
+      "linkLine": "Massage memberships and payment answers on one page: {demo-link}"
+    },
+    {
+      "angle": "Licensed and professional",
+      "line": "Nothing online says you're a licensed massage therapist, and for a first-time client that's the reassurance that separates a real practice from a listing they'd scroll past.",
+      "hook": "Look for 'LMT' or licence mentions in their bio. Never state a licence number they haven't published.",
+      "linkLine": "Your licensed practice, stated calmly: {demo-link}"
+    },
+    {
+      "angle": "Regulars only",
+      "line": "Your massage book seems to run on long-time regulars and their word of mouth. That's a strong practice, and also one that thins out quietly when a few people move or retire.",
+      "hook": "Look for reviews like 'been seeing her for years' or posts thanking long-time clients. Quote one.",
+      "linkLine": "Where a new massage client would land: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "Your post about {specific recent job} explained the bodywork better than most massage menus do. That explanation deserves its own page clients can find.",
+      "hook": "Pick their newest post about a session type, a technique or a client group and name it exactly.",
+      "linkLine": "That massage explanation, on its own page: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, your post about {specific recent job} explained the bodywork more clearly than most massage menus do.\n\nI looked for a site for {Business Name} and only found the booking app and your social pages. I put together a sample massage page with a modality guide, session lengths and prices, and a Book button, with marked placeholders where your photos would go.\n\nWould you like me to send it over?",
+    "dm2": "{Owner}, following up in case my message got lost between sessions. Here's the sample massage site for {Business Name}: {demo-link}\n\nIt has a modality guide, a pressure and draping page for first-timers, and memberships laid out plainly. If it's not for you, say so and I won't message again.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for massage therapists and bodywork studios here in {City}. I sent you a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"No problem, you're on the table most of the day. Short version: I built a sample site for {Business Name} with a modality guide, a session menu and online booking, with marked placeholders where your photos would go. Can I text you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range}, then {Care Range} a month for hosting and menu changes. For a practice like yours I'd normally quote about {Build Price}.\"\n\"Could I take ten minutes between clients this week? Tell me your gap and I'll call then.\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. We start the day it clears.\"",
+    "objections": [
+      {
+        "objection": "My booking app already takes appointments.",
+        "handler": "\"Keep it. The site sits in front of it and explains the modalities, the pressure and what a first session is like, then sends people into your booking app ready to book.\""
+      },
+      {
+        "objection": "I'm fully booked with regulars.",
+        "handler": "\"Then the site is for filling cancellations, selling memberships and gift certificates, and replacing regulars when life moves them away. It works while you're on the table.\""
+      },
+      {
+        "objection": "I rent a room, I'm not a spa.",
+        "handler": "\"That's exactly who this is for. A solo massage therapist with a clear page looks like a calm, licensed practice, not a small one.\""
+      },
+      {
+        "objection": "I get weird messages already, I don't want more attention.",
+        "handler": "\"That's a real worry. The site states your licence, your draping and boundaries policy and books through a form, which filters out the wrong enquiries before they reach you.\""
+      },
+      {
+        "objection": "It's slow after the holidays, I can't spend now.",
+        "handler": "\"January is when people book massage for the new year. If we start now, the page is live for the busy spell, and the deposit is small.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}, because it's a session menu, a modality guide and booking. A handful of new regulars covers it.\""
+      }
+    ],
+    "email": {
+      "subject": "Massage site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for massage therapists and bodywork studios around {City}. {Business Name} has warm reviews on Google, but no site where a new client can read which modality to book, what a session costs and what happens at the first visit.\n\nI built a sample first rather than ask for your time: a modality guide, session lengths and prices, a pressure and draping page for first-timers, and memberships, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and menu changes. If not, no problem, it comes down at the end of the month.\n\nWorth ten minutes between clients?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build websites for massage therapists in {City} and made a sample one for {Business Name}. I'll text the link so you can look between sessions. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm taking the {Business Name} massage demo down on Friday to free up the space.\n\nShould I keep it up for you? A one-word reply is fine.",
+    "nurture": "Hi {Owner}, gift certificate season is coming, and massage is one of the presents people buy at the last minute. Thought of you.\n\nThe site is still here whenever you want it, and nothing's changed on price. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to a handful of new regulars, never to a spa's marketing budget. A solo therapist earns per hour on the table.",
+      "Price by session menu and modality count, not page count. Explaining six modalities clearly is the real work.",
+      "Memberships are the add-on that pays for itself. Price the membership page and billing setup above any gallery.",
+      "Mobile massage pages are priced by travel zones, not by towns listed.",
+      "Keep monthly add-ons below the price of one sixty-minute session. Anything higher is the first cut in a slow month.",
+      "Sell gift certificate pages in October, not on the twentieth of December."
+    ],
+    "lineItems": [
+      {
+        "item": "Modality guide (each extra modality)",
+        "min": 80,
+        "max": 200,
+        "unit": "per-page",
+        "description": "Max when the modality has its own pressure scale, session lengths and a short video slot.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Massage membership page and billing setup",
+        "min": 300,
+        "max": 800,
+        "unit": "one-time",
+        "description": "Max with several membership levels, rollover rules, pause handling and recurring billing on their payment account.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Online gift certificate store",
+        "min": 200,
+        "max": 500,
+        "unit": "one-time",
+        "description": "Max with printable and emailed certificates, session-based amounts and a holiday banner.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Mobile massage travel zones",
+        "min": 200,
+        "max": 500,
+        "unit": "one-time",
+        "description": "Max when travel fees vary by zone and the booking form checks the address against them.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Corporate chair massage enquiry page",
+        "min": 250,
+        "max": 600,
+        "unit": "per-page",
+        "description": "Max with an event-size form, per-therapist hourly rates and a calendar hold request.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "First-visit intake form",
+        "min": 150,
+        "max": 400,
+        "unit": "one-time",
+        "description": "Max with pressure preferences, areas to avoid and therapist preference, routed to their secure intake system for anything health-related.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Spanish-language massage menu",
+        "min": 200,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max when menu, policies and intake form are all translated.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Treatment room and hands content afternoon",
+      "min": 250,
+      "max": 600,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"One quiet afternoon photographing the massage room, the table setup, the entrance and your hands at work on a willing volunteer gives the practice a year of calm pictures.\"",
+      "when": "Month 2, on a day with a gap between sessions."
+    },
+    {
+      "name": "Google profile upkeep for the massage practice",
+      "min": 100,
+      "max": 250,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Fresh posts on your Google profile naming the massage modality and the openings this week, so people searching nearby see an active practice.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Review requests after each massage",
+      "min": 39,
+      "max": 99,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"The evening after a massage, while the client still feels loose, they get a short note asking for a review.\"",
+      "when": "Day 30. The easiest second sale."
+    },
+    {
+      "name": "Holiday massage gift certificate push",
+      "min": 150,
+      "max": 400,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A December campaign for massage gift certificates on the site and in stories, so the present is a session with you, not a chain spa voucher.\"",
+      "when": "Pitch in October, run from Thanksgiving to Christmas, repeat before Mother's Day."
+    },
+    {
+      "name": "Office chair massage outreach kit",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A one-page flyer and an email you can send to office managers nearby, offering chair massage days for their teams.\"",
+      "when": "Month 3, if they mention wanting weekday daytime bookings."
+    },
+    {
+      "name": "Studio door sign and massage appointment cards",
+      "min": 100,
+      "max": 300,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A door sign for the treatment room and appointment cards with your booking code, so a happy massage client can hand one to a friend.\"",
+      "when": "Right after launch."
+    },
+    {
+      "name": "Monthly post planning for the bodywork practice",
+      "min": 150,
+      "max": 400,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"You do the bodywork, I plan a month of posts explaining modalities, openings and stretches you already recommend.\"",
+      "when": "Month 3, if they say posting is the part they skip."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Chiropractors and physical therapists who refer",
+        "whoPays": "The clinic, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The chiropractor who sends you deep tissue clients has a site from years ago. I'd build theirs with a page that points patients back to your massage practice.\"",
+        "whyItWorks": "Massage therapists and clinics refer back and forth. A therapist's word gets you into the clinic owner's office."
+      },
+      {
+        "route": "The wellness centre landlord renting treatment rooms",
+        "whoPays": "The building owner",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"Your wellness building has a massage therapist, an acupuncturist and two empty rooms. I'll build a practitioner directory and a room-rental page.\"",
+        "whyItWorks": "Landlords need tenants and tenants need foot traffic. The therapist inside the building makes the introduction."
+      },
+      {
+        "route": "Massage therapy schools",
+        "whoPays": "The school",
+        "min": 1500,
+        "max": 5000,
+        "unit": "one-time",
+        "pitchLine": "\"The massage school you trained at runs a student clinic with a phone-only booking line. A site that books those student sessions fills the tables.\"",
+        "whyItWorks": "Schools need practice clients for students and enrolments for the next class. Alumni therapists are trusted introductions."
+      },
+      {
+        "route": "Gyms and running clubs that send recovery clients",
+        "whoPays": "The gym, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The gym whose members book your sports massage after race season needs a better site too, with you listed as their recovery partner.\"",
+        "whyItWorks": "Gym owners trust the therapist who keeps their members training. The partner listing gives them a reason to say yes."
+      },
+      {
+        "route": "Yoga and pilates studios nearby",
+        "whoPays": "The studio, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The yoga studio down the street shares half your bodywork clients. I'd build their schedule page in the same calm style, with your practice on it.\"",
+        "whyItWorks": "Same client, same neighbourhood, and the therapist can introduce you at the front desk."
+      },
+      {
+        "route": "Doulas and birth workers who refer prenatal clients",
+        "whoPays": "The doula, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The doula who sends you prenatal massage clients books from a social profile. A small site with her packages and a referral list would include your practice.\"",
+        "whyItWorks": "Birth workers refer within a tight circle. A prenatal massage therapist's recommendation opens it."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Room-rental enquiry assistant for the wellness building",
+        "whoPays": "The building owner, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"A massage therapist or acupuncturist eyeing the vacant room can ask about rent, linens and the shared waiting area late at night, and the landlord wakes up to a viewing booked.\"",
+        "whyItWorks": "An empty room costs the landlord every month. An assistant that books viewings pays for itself with one tenant."
+      },
+      {
+        "route": "Student clinic booking assistant for massage schools",
+        "whoPays": "The school",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The assistant explains student massage sessions, prices and supervision, and books the public onto the clinic floor when instructors are on.\"",
+        "whyItWorks": "Schools need a steady flow of practice clients and can measure the result in filled tables."
+      },
+      {
+        "route": "Recovery session booking prompts for gym members",
+        "whoPays": "The gym, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"After a member logs a race or a heavy training block, the gym's app suggests a recovery massage with its partner therapist and books it.\"",
+        "whyItWorks": "Gyms want to look like they care about recovery. The massage partner is already in place."
+      },
+      {
+        "route": "Package question assistant for the doula collective",
+        "whoPays": "The doula collective, monthly",
+        "min": 79,
+        "max": 199,
+        "unit": "monthly",
+        "pitchLine": "\"Expecting parents asking about birth and postpartum packages get answers from the collective's own pages, including which prenatal massage therapists they recommend.\"",
+        "whyItWorks": "Collectives field the same package questions late at night. The answers come only from their approved text."
+      },
+      {
+        "route": "Chair massage event quote builder for corporate wellness planners",
+        "whoPays": "The wellness event planner",
+        "min": 1000,
+        "max": 2500,
+        "unit": "one-time",
+        "pitchLine": "\"An HR team enters headcount, date and hours, and the planner gets a draft chair massage quote with the therapists needed, ready to send.\"",
+        "whyItWorks": "Event planners resell massage days to offices and hate building quotes by hand. The therapist client supplies the rates."
+      },
+      {
+        "route": "Front-desk assistant for the referring chiropractic office",
+        "whoPays": "The clinic, monthly",
+        "min": 150,
+        "max": 350,
+        "unit": "monthly",
+        "pitchLine": "\"Chiropractic patients who ring at night wanting to add a massage to their adjustment visit get the logistics from approved wording, and anything clinical waits for staff in the morning.\"",
+        "whyItWorks": "Clinics want fewer logistics calls with no clinical risk. The massage therapist who shares their patients vouches for you."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Rebooking nudges timed to each massage client's rhythm",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 700,
+      "monthlyMin": 39,
+      "monthlyMax": 99,
+      "pitchLine": "\"A client who books a massage every four weeks hears from you in week four, with your next openings, before their shoulders remind them.\"",
+      "whenAndWhatItTakes": "Day 30. Needs visit history from the booking system and the therapist's preferred rebooking wording."
+    },
+    {
+      "name": "Deposits and late-cancel fees for long sessions",
+      "kind": "software",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Ninety-minute and couples massage bookings take a deposit up front, so an empty table on Saturday still pays something.\"",
+      "whenAndWhatItTakes": "At build, or the first time they mention a no-show. Needs their cancellation policy and a payment account."
+    },
+    {
+      "name": "DM answerer for massage prices and openings",
+      "kind": "ai",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1200,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"'How much is deep tissue' and 'anything tomorrow' get answered from your real massage menu and calendar while you're mid-session.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the priced menu and booking access, and a rule to hand any health question to the therapist. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Massage membership billing with session rollover",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 39,
+      "monthlyMax": 99,
+      "pitchLine": "\"Members pay monthly, unused massage sessions roll over by your rules, and you see who's due without opening a spreadsheet.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the membership rules they want and a payment account."
+    },
+    {
+      "name": "Client comfort preferences card",
+      "kind": "software",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Pressure, areas to skip, table warmth and music, saved per massage client, so every therapist in the studio starts where the last session ended.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their current notes. Comfort preferences only; health history stays in their secure intake system."
+    },
+    {
+      "name": "Review reply drafts for the massage practice",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 700,
+      "monthlyMin": 39,
+      "monthlyMax": 99,
+      "pitchLine": "\"Each massage review gets a short, warm reply drafted in your voice that never repeats anything personal the client shared on the table.\"",
+      "whenAndWhatItTakes": "Month 2, alongside review requests. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Lapsed massage client check-in",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 700,
+      "monthlyMin": 39,
+      "monthlyMax": 99,
+      "pitchLine": "\"Someone who hasn't been on your massage table in a few months gets a friendly note and your openings. Life got busy, not unhappy.\"",
+      "whenAndWhatItTakes": "Month 3. Needs visit history and an opt-out line."
+    },
+    {
+      "name": "Phone answering while the therapist is on the table",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 149,
+      "monthlyMax": 299,
+      "pitchLine": "\"Your hands are busy for an hour at a time. The massage line still gets answered, questions get handled and the next session gets booked.\"",
+      "whenAndWhatItTakes": "Month 3, once they trust you. Needs the menu, policies and booking access. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Gift certificate balance tracker",
+      "kind": "software",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Every massage gift certificate has a code, a balance and an expiry rule, so redeeming one at the front desk takes seconds, not a notebook search.\"",
+      "whenAndWhatItTakes": "Month 2, before gift season. Needs their certificate rules and any paper certificates still out there."
+    },
+    {
+      "name": "Which-massage-is-right quiz",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 79,
+      "monthlyMax": 149,
+      "pitchLine": "\"A new client says what they want to feel afterwards and how much pressure they like, and the quiz suggests a modality and session length from your menu.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the full modality menu and the therapist's own rules. Never gives health advice. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Chair massage event booking",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Offices book a chair massage day online, staff sign up for ten-minute slots, and the therapist gets the schedule the night before.\"",
+      "whenAndWhatItTakes": "Month 4, if they do corporate days. Needs event rates and the therapists available."
+    },
+    {
+      "name": "Same-day opening texts to the massage waitlist",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 700,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"A two o'clock massage cancels, and clients who said 'any time this week' get a text with the open table before lunch.\"",
+      "whenAndWhatItTakes": "Month 3. Needs booking access and a waitlist clients joined on purpose."
+    },
+    {
+      "name": "Caption writer for bodywork posts",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 59,
+      "monthlyMax": 149,
+      "pitchLine": "\"Post a picture of the massage room or a technique, and a caption in your voice is ready to approve, with any health-claim wording flagged.\"",
+      "whenAndWhatItTakes": "Month 2. Needs a handful of past captions. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Therapist schedule and room split for studios",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 49,
+      "monthlyMax": 99,
+      "pitchLine": "\"For massage studios with several therapists: who's on which table, which room, and which shifts still have gaps this week.\"",
+      "whenAndWhatItTakes": "Month 5, only for studios with staff or renters. Needs schedules and the room list."
+    },
+    {
+      "name": "Therapist-approved stretch sheet after each session",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 700,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"The stretches you already show clients at the end of a massage arrive by text that evening, written and approved by you.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the therapist's own stretch sheets per session type. Sends only their approved text."
+    },
+    {
+      "name": "Returning client note summary before each massage",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 59,
+      "monthlyMax": 149,
+      "pitchLine": "\"Before a returning massage client arrives, the therapist sees a two-line summary of their comfort notes from past sessions.\"",
+      "whenAndWhatItTakes": "Month 5, once comfort preference cards hold a few months of notes. Comfort notes only. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Couples and group massage booking flow",
+      "kind": "software",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Couples and small groups book side-by-side massage tables in one step, with both therapists and the room held together.\"",
+      "whenAndWhatItTakes": "Month 4, only if they have a couples room. Needs room and therapist pairing rules."
+    },
+    {
+      "name": "Membership drop-off nudge",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 59,
+      "monthlyMax": 149,
+      "pitchLine": "\"Massage members who've skipped a couple of months are flagged with a suggested personal note from the therapist, before they cancel.\"",
+      "whenAndWhatItTakes": "Month 6, once membership billing has data. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Therapist pay and commission report",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 49,
+      "monthlyMax": 99,
+      "pitchLine": "\"For massage studios paying per session: who worked which hours, tips and add-ons included, at the end of every pay period.\"",
+      "whenAndWhatItTakes": "Month 6, only for studios with staff therapists. Needs pay rules and booking data."
+    },
+    {
+      "name": "Studio policy answer search for the front desk",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 59,
+      "monthlyMax": 149,
+      "pitchLine": "\"New front-desk staff search the massage studio's own policies on memberships, gift certificates and lateness instead of knocking on a treatment room door.\"",
+      "whenAndWhatItTakes": "Month 6, for studios with a front desk. Needs written policies, each answer approved. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise rebooking and memberships for solo massage therapists",
+      "whoPays": "Therapists, monthly",
+      "min": 19,
+      "max": 69,
+      "unit": "monthly",
+      "pitchLine": "\"I built rebooking and massage memberships for one therapist. Every solo LMT in a rented room is running the same paper system.\"",
+      "whyItWorks": "Solo therapists are many and cluster in wellness buildings. The first client's results are the whole pitch."
+    },
+    {
+      "route": "Wellness building groups renting treatment rooms",
+      "whoPays": "The building group, annually",
+      "min": 3000,
+      "max": 10000,
+      "unit": "per-year",
+      "pitchLine": "\"Every wellness building you run has massage therapists, acupuncturists and empty rooms. One practitioner directory and leasing template covers all of them.\"",
+      "whyItWorks": "Groups with several buildings buy once and roll out, and vacancy gives them urgency."
+    },
+    {
+      "route": "Graduate launch kit for massage schools",
+      "whoPays": "The school, annually",
+      "min": 1500,
+      "max": 6000,
+      "unit": "per-year",
+      "pitchLine": "\"Every graduate leaves with a massage practice page, a priced session menu and booking ready the day their licence comes through.\"",
+      "whyItWorks": "Schools sell careers. A launch kit for each graduating class is a recurring contract and a pipeline of future clients."
+    },
+    {
+      "route": "State massage therapy association member toolkit",
+      "whoPays": "The association",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer every member a booking-first massage site template with a licence line and a boundaries statement built in.\"",
+      "whyItWorks": "Associations need renewal reasons, and professional presentation is a constant member concern."
+    },
+    {
+      "route": "White-label massage site template for agencies",
+      "whoPays": "The agency, per site",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency picks up massage clients and starts from a blank page. License my template with the modality guide and membership page built in.\"",
+      "whyItWorks": "Agencies own the relationship; you sell the part you've already perfected."
+    },
+    {
+      "route": "Massage membership franchise locations",
+      "whoPays": "Each franchisee, per location",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "pitchLine": "\"Your location's page on head office's site doesn't show your own therapists or local massage specials. I build compliant local pages franchisees are allowed to run.\"",
+      "whyItWorks": "Franchisees want local visibility within brand rules. One approved template sells to every location in the group."
+    },
+    {
+      "route": "Therapist directory for a massage supply distributor",
+      "whoPays": "The distributor",
+      "min": 5000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Your table and oil customers want more clients. A find-a-therapist directory on your site keeps them buying from you.\"",
+      "whyItWorks": "Distributors compete on loyalty, and a directory their customers rely on beats a discount."
+    },
+    {
+      "route": "Liability insurers for massage therapists",
+      "whoPays": "The insurer's member services team",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Your policyholders ask what a safe massage practice site should say. A template with boundaries, draping and intake pages is a member benefit.\"",
+      "whyItWorks": "Insurers want fewer complaints and stickier members. Clear policies on a site help with both."
+    },
+    {
+      "route": "Boutique hotels without a spa",
+      "whoPays": "The hotel",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Your guests ask for in-room massage and the front desk calls around. A booking page with your partner therapists turns that into a service you sell.\"",
+      "whyItWorks": "Hotels want the amenity without the spa. The mobile massage client becomes the first partner on the page."
+    },
+    {
+      "route": "Corporate wellness program providers",
+      "whoPays": "The program provider, annually",
+      "min": 3000,
+      "max": 10000,
+      "unit": "per-year",
+      "pitchLine": "\"You sell wellness days to employers and book massage therapists by text. A therapist booking network makes every event run itself.\"",
+      "whyItWorks": "Providers resell therapist time at scale. A system that staffs events reliably is their margin."
+    },
+    {
+      "route": "The same massage practice build in the next metro",
+      "whoPays": "New massage clients in a new metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I keep one massage practice per neighbourhood in {City}. Therapists an hour away don't compete with mine, and the bodywork template is ready.\"",
+      "whyItWorks": "Non-competing geography lets you reuse the template, the pitch and the finished massage proof."
+    },
+    {
+      "route": "Rescue half-built massage booking setups",
+      "whoPays": "The stuck therapist",
+      "min": 300,
+      "max": 1200,
+      "unit": "one-time",
+      "pitchLine": "\"Someone started your online massage booking and left the deposits and memberships half-done. I can finish it on a setup I've run before.\"",
+      "whyItWorks": "Stuck therapists have already decided to buy. They want someone who has done it for a massage practice."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Massage site build plus care plan, one contract",
+      "min": 1200,
+      "max": 2000,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The massage site and the care plan go on one contract, so a new modality or price is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 14,
+      "offer": "Deposits and late-cancel fees for long sessions",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "trigger": "They mention an empty table from a ninety-minute no-show.",
+      "line": "\"That empty ninety-minute massage slot is exactly what a deposit at booking prevents.\""
+    },
+    {
+      "rung": 3,
+      "day": 30,
+      "offer": "Review requests and rebooking nudges",
+      "min": 39,
+      "max": 99,
+      "unit": "monthly",
+      "trigger": "The site has been live a month and the calendar shows regulars drifting past their usual gap.",
+      "line": "\"Your massage regulars come back on a rhythm. Let's remind them on time and ask for a review while they feel good.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Massage membership billing with session rollover",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "trigger": "They have clients booking monthly and paying per massage.",
+      "line": "\"Your monthly massage clients already behave like members. Let's make it official and automatic.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "DM answerer for massage prices and openings",
+      "min": 500,
+      "max": 1200,
+      "unit": "one-time",
+      "trigger": "They say they answer price and opening DMs between sessions every day.",
+      "line": "\"Those between-session massage DMs get answered from your menu while you're working.\""
+    },
+    {
+      "rung": 6,
+      "day": 120,
+      "offer": "Treatment room and hands content afternoon",
+      "min": 250,
+      "max": 600,
+      "unit": "per-shoot",
+      "trigger": "The site still uses placeholders or a single picture of the massage room.",
+      "line": "\"One quiet afternoon fills the massage site and your feed for the year.\""
+    },
+    {
+      "rung": 7,
+      "day": 180,
+      "offer": "Chair massage event booking",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "trigger": "An office asks them about a chair massage day.",
+      "line": "\"That office enquiry could be a page offices book chair massage from directly.\""
+    },
+    {
+      "rung": 8,
+      "day": 240,
+      "offer": "Introduction to the wellness building owner",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "trigger": "They mention an empty room in their building or a neighbour asking who built the massage site.",
+      "line": "\"Your wellness building has empty massage rooms and no practitioner directory. Would you introduce me to the owner?\""
+    }
+  ]
+}

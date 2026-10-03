@@ -1,0 +1,865 @@
+{
+  "schemaVersion": 1,
+  "category": "Home care & senior care",
+  "slug": "home-care-senior-care",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Care family batch. Health-adjacent and licensed: no medical or outcome claims, no invented family testimonials, licence and payment-programme wording as placeholders. Two buyers on one site: families and caregivers, so the hiring side is priced as seriously as the marketing side. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Levels of home care explained",
+      "contains": "Companion care, personal care such as bathing and dressing, respite, overnight and live-in care, and dementia support as the agency provides it, with a plain note on what non-medical home care does not include",
+      "why": "Families arrive confused about the difference between home care and home health. The agency that explains it plainly earns the first call."
+    },
+    {
+      "section": "Caregiver careers",
+      "contains": "Pay range [as supplied], shift types, training provided, how scheduling works, the background check process and a short mobile application",
+      "why": "Caregiver hiring is the agency's constant bottleneck. A careers page that applicants can finish on a phone keeps shifts staffed."
+    },
+    {
+      "section": "How caregivers are screened and matched",
+      "contains": "Background checks and references as the agency performs them, training topics, how a caregiver is matched on personality, language and schedule, and supervisor check-ins",
+      "why": "Letting a stranger into a parent's home is the decision. Families choose the agency that shows exactly how caregivers are chosen."
+    },
+    {
+      "section": "Paying for senior care",
+      "contains": "Private pay hourly rates and shift minimums, how the agency helps with long-term care insurance claims, and veterans or state programmes only where the agency states it takes part [as supplied]",
+      "why": "Cost is the question adult children ask first and the one most agencies hide. Explaining payment routes calmly keeps the family on the page."
+    },
+    {
+      "section": "Family updates and care coordination",
+      "contains": "How families receive visit notes, who the care coordinator is, how schedule changes are requested, and how a family in another city stays informed",
+      "why": "Many buyers are adult children living far away. Seeing how they'll stay informed is what lets them say yes from a distance."
+    },
+    {
+      "section": "Towns and shift minimums",
+      "contains": "Each town the caregiver team covers, shift minimums by area, and how quickly care can start in each",
+      "why": "Families search for home care in their parent's town, often far from their own. A clear coverage list answers the first filter."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C22",
+      "siteType": "local-conversion",
+      "name": "Kitchen Table",
+      "heroLayout": "split-photo",
+      "mood": [
+        "warm",
+        "kind",
+        "reassuring"
+      ],
+      "bestFor": "Small local home care agencies that need a clear phone number, a care request and a careers link above everything",
+      "pairsWithTier": "starter",
+      "headlineSample": "Home care for your parents in {City}",
+      "whyItFits": "Peach Sorbet's soft rounded type and warm ground feel like a kitchen-table conversation, and the split hero puts a real caregiver beside the call button."
+    },
+    {
+      "id": "b",
+      "themeId": "C8",
+      "siteType": "editorial-trust",
+      "name": "Trusted Agency",
+      "heroLayout": "type-led",
+      "mood": [
+        "steady",
+        "credible",
+        "caring"
+      ],
+      "bestFor": "Established senior care agencies that need care levels, screening, payment routes and a serious careers section",
+      "pairsWithTier": "standard",
+      "headlineSample": "Senior care at home in {City}, explained plainly",
+      "whyItFits": "The family combo, Sage Spa, fails CTA contrast. Evergreen Trust keeps the green calm, adds the credibility of an insurer-grade palette, and its buttons pass AA for older readers."
+    },
+    {
+      "id": "c",
+      "themeId": "C34",
+      "siteType": "premium-brand",
+      "name": "Private Duty",
+      "heroLayout": "full-bleed-photo",
+      "mood": [
+        "gracious",
+        "personal",
+        "assured"
+      ],
+      "bestFor": "Private-duty and live-in senior care agencies serving families who expect a concierge level of service",
+      "pairsWithTier": "premium",
+      "headlineSample": "Private home care in {City}, arranged personally",
+      "whyItFits": "Cacao's warm brown and bookish serif feel like a family home rather than a facility, and a full-bleed hero lets a quiet moment at home carry the page."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your agency's Maps listing has a phone number and no website, so a daughter in another state searching for home care for her mother in {City} can't see what you offer before deciding whom to call.",
+      "hook": "Open their Maps listing and confirm there is no Website button. Screenshot it for when they reply.",
+      "linkLine": "Here's what could sit behind that button for the agency: {demo-link}"
+    },
+    {
+      "angle": "Facebook page as the website",
+      "line": "The website link on your listing opens the agency's Facebook page, mostly caregiver birthday posts. Families comparing senior care can't find care levels or a way to ask about starting.",
+      "hook": "Click the link on their listing. If it lands on Facebook, note what the latest posts are about.",
+      "linkLine": "The agency's care options on one page: {demo-link}"
+    },
+    {
+      "angle": "Dated agency site",
+      "line": "The home care site on your listing still shows a phone number that goes to voicemail and a careers link that's broken. Both families and caregivers hit that wall.",
+      "hook": "Open the site and find one stale or broken thing: careers link, old number, missing towns. Note it.",
+      "linkLine": "The same agency, current and working: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "I tried your agency site on my phone and the care request form wouldn't submit. Adult children usually look for home care from their phone, on a lunch break, worried.",
+      "hook": "Only if they have a site. Try the request form on your phone and note what breaks. Screenshot it for when they reply.",
+      "linkLine": "The agency, rebuilt for a phone: {demo-link}"
+    },
+    {
+      "angle": "Caregivers can't apply",
+      "line": "Your posts say you're always hiring caregivers, but the only way to apply is to call the office. Most caregivers job-hunt from their phone between shifts.",
+      "hook": "Look for 'now hiring caregivers' posts and check for an online application. If there isn't one, the angle holds.",
+      "linkLine": "A caregiver careers page they can finish on a phone: {demo-link}"
+    },
+    {
+      "angle": "Care levels unclear",
+      "line": "Nothing online explains the difference between your companion care and personal care, or what you don't do. Families stall right there, and call the agency that explains it.",
+      "hook": "Check their site or listing for care level descriptions. If services are a bare list, the angle holds.",
+      "linkLine": "Levels of home care, explained plainly: {demo-link}"
+    },
+    {
+      "angle": "Reviews stuck on Google",
+      "line": "One of your Google reviews describes a caregiver who learned exactly how a father liked his coffee. That's what a family hopes for, and it's not anywhere they'd read before calling.",
+      "hook": "Read their reviews and copy one phrase about a caregiver's kindness or reliability. Quote it back. Never imply a health result.",
+      "linkLine": "Your reviews beside the care request: {demo-link}"
+    },
+    {
+      "angle": "Holiday visits home",
+      "line": "Over the holidays, adult children visit parents and notice things have changed. The week after, they search for senior care, and the agency with clear answers gets the call.",
+      "hook": "Use this in November and early December. Check whether they've posted about holiday family visits.",
+      "linkLine": "A home care page ready for the holiday conversation: {demo-link}"
+    },
+    {
+      "angle": "Weekend and evening enquiries",
+      "line": "Families decide on home care after a hospital discharge or a fall, often on a Friday night. Right now there's no way to request help until the office opens Monday.",
+      "hook": "Look for after-hours numbers or 'call anytime' claims. If there's only an office line, the angle holds.",
+      "linkLine": "An agency page that takes care requests at any hour: {demo-link}"
+    },
+    {
+      "angle": "Hiring post on Facebook",
+      "line": "Saw your post looking for weekend caregivers in {Neighborhood}. Applicants check whether the agency looks organised before they trust it with their schedule.",
+      "hook": "Only if they posted a caregiver hiring notice. Note the date and the shifts mentioned.",
+      "linkLine": "A caregiver recruiting page for the agency: {demo-link}"
+    },
+    {
+      "angle": "Which towns do you cover",
+      "line": "Your listing doesn't say which towns your caregivers cover. A family searching for senior care in their mother's town can't tell if you're even an option.",
+      "hook": "Check whether their service towns are listed anywhere. Use the real town names when you reply.",
+      "linkLine": "A home care page with every town you cover: {demo-link}"
+    },
+    {
+      "angle": "Paying for care",
+      "line": "Your agency doesn't mention cost or long-term care insurance anywhere online. That's the first thing adult children ask, and the most awkward to ask on the phone.",
+      "hook": "Look for rates, minimums or insurance mentions. Never state a programme they accept unless they say so.",
+      "linkLine": "Paying for home care, explained calmly: {demo-link}"
+    },
+    {
+      "angle": "Licensed and screened",
+      "line": "Nothing online says the agency is licensed or how caregivers are background-checked. Letting someone into a parent's home starts with exactly those two questions.",
+      "hook": "Look for licence or screening mentions on their profiles. Never state a licence number they haven't published.",
+      "linkLine": "Licensing and caregiver screening, shown plainly: {demo-link}"
+    },
+    {
+      "angle": "Hospital and referral-only",
+      "line": "It sounds like most of your clients come from discharge planners and senior living referrals. Families still look the agency up before agreeing, and find very little.",
+      "hook": "Look for posts about hospital partners or referral sources. Don't guess at their client base.",
+      "linkLine": "Where a referred home care family would land: {demo-link}"
+    },
+    {
+      "angle": "A specific recent post",
+      "line": "Your post about {specific recent job} shows the kind of caregiver families hope for. That belongs on a page about how you match caregivers, not just the feed.",
+      "hook": "Pick their newest caregiver spotlight, training day or community event and name it exactly. Never a client's details.",
+      "linkLine": "That caregiver story, on the matching page: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, your post about {specific recent job} shows the kind of caregiver families hope for.\n\nI looked for a site for {Business Name} and only found the listing and social pages. I put together a sample agency page with care levels explained, a caregiver careers section families never see and applicants can finish on a phone, and a care request, with marked placeholders where your photos would go.\n\nWould you like me to send it over?",
+    "dm2": "{Owner}, following up in case my message got buried. Here's the sample home care site for {Business Name}: {demo-link}\n\nIt explains care levels, shows how caregivers are screened and matched, covers paying for care, and has a caregiver application that works on a phone. If it's not for you, say so and I won't message again.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for home care agencies here in {City}. I sent a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"Completely understand, scheduling never stops. Short version: I built a sample site for {Business Name} with care levels, a care request for families and a caregiver application, with marked placeholders where your photos would go. Can I email you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range}, then {Care Range} a month for hosting and updates. For an agency like yours I'd normally quote about {Build Price}.\"\n\"Half of it works for hiring. Every caregiver who applies from a phone is a shift you can staff.\"\n\"Could I walk you through it for fifteen minutes this week?\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. We start the day it clears.\"",
+    "objections": [
+      {
+        "objection": "Our clients come from hospitals and referrals, not the internet.",
+        "handler": "\"Then the site's job is to make the family comfortable after the referral, and to make the discharge planner look good for sending them. They all look the agency up.\""
+      },
+      {
+        "objection": "Our biggest problem is hiring, not clients.",
+        "handler": "\"That's why half the site is for caregivers. A careers page and an application that works on a phone help you staff the clients you already have.\""
+      },
+      {
+        "objection": "The franchise gives us a page already.",
+        "handler": "\"Keep it. If the brand allows a local page, I build one that names your towns, your caregivers and your office, within their rules.\""
+      },
+      {
+        "objection": "We have to be careful what we promise families.",
+        "handler": "\"Agreed. No health claims, no invented testimonials, and licence and payment wording only as you give it to me. You approve every page.\""
+      },
+      {
+        "objection": "We don't publish rates.",
+        "handler": "\"That's your call. The payment page can explain shift minimums and insurance help without a number, and invite a conversation.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For your agency about {Build Price}, because of the careers side and the care pages. One family staying on care for a few months covers it.\""
+      }
+    ],
+    "email": {
+      "subject": "A site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for home care agencies around {City}. {Business Name} has kind words from families on Google, but no site where an adult child can understand your care levels and costs, or where a caregiver can apply from a phone.\n\nI built a sample first rather than ask for your time: levels of care explained, how caregivers are screened and matched, paying for care, the towns you cover, a family care request and a caregiver careers page with a short application. It uses marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and updates. If not, no problem, it comes down at the end of the month.\n\nWorth fifteen minutes this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build websites for home care agencies in {City} and put together a sample for {Business Name}, including a caregiver careers page. I'll email the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm planning to take the {Business Name} agency demo down on Friday.\n\nIf you'd like it left up while you think, just reply and I'll keep it.",
+    "nurture": "Hi {Owner}, the weeks after the holidays are when families who noticed changes in a parent start calling home care agencies, and when caregivers look for new work. Thought of you.\n\nThe sample is still here and nothing's changed on price. {demo-link} if you'd like another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to one family on care for a month or two. Hourly rates are low but care runs for months, and agencies know that maths.",
+      "Price the careers side as seriously as the family side. Hiring is the agency's real bottleneck.",
+      "Price town pages by area covered, not by count of zip codes.",
+      "Payment and licence wording stays as placeholders until the owner supplies it; charge for the structure, not invented facts.",
+      "Franchise locations are priced for what the brand allows locally, often less than a full build.",
+      "Keep monthly add-ons below the cost of a single caregiver shift."
+    ],
+    "lineItems": [
+      {
+        "item": "Caregiver careers page with mobile application",
+        "min": 400,
+        "max": 1000,
+        "unit": "one-time",
+        "description": "Max with several job types, a mobile application, availability questions and routing to the hiring coordinator.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Care level page (each)",
+        "min": 150,
+        "max": 400,
+        "unit": "per-page",
+        "description": "Max when the care level has its own what's-included list, what's not, and a request route.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Town coverage page (each area)",
+        "min": 150,
+        "max": 350,
+        "unit": "per-page",
+        "description": "Max with shift minimums, local start times and nearby hospitals or senior communities named as reference points.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Paying for care explainer",
+        "min": 250,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max with private pay, long-term care insurance help and programme pages the agency supplies wording for.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Referral partner page for discharge planners",
+        "min": 250,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max with a referral form, start-of-care timing, coverage map and a downloadable one-page summary.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Care request routing to the on-call coordinator",
+        "min": 200,
+        "max": 500,
+        "unit": "one-time",
+        "description": "Max when requests route by town and urgency to the right coordinator's phone after hours.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Spanish-language agency pages",
+        "min": 400,
+        "max": 1000,
+        "unit": "one-time",
+        "description": "Max when family pages and the caregiver application are both translated and checked by bilingual staff.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Caregiver team photo day",
+      "min": 300,
+      "max": 800,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A morning photographing your caregivers, coordinators and office, with their consent, so families see real faces instead of stock pictures of smiling seniors.\"",
+      "when": "Month 2, scheduled around a training day when caregivers are in the office."
+    },
+    {
+      "name": "Google profile upkeep for the home care agency",
+      "min": 150,
+      "max": 300,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Weekly updates on the agency's Google profile with towns served, caregiver spotlights and hiring posts, so both families and applicants find a current agency.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Family review requests after the first month of care",
+      "min": 79,
+      "max": 179,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"After a month of home care going well, the family contact gets a respectful note asking whether they'd share their experience.\"",
+      "when": "Day 45. Wording approved by the agency, sent to the family contact only."
+    },
+    {
+      "name": "Caregiver recruiting campaign",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A month of hiring posts, a flyer for community boards and a referral bonus page, all pointing caregivers to the mobile application.\"",
+      "when": "Whenever they say they're turning down clients for lack of staff."
+    },
+    {
+      "name": "Discharge planner and senior living outreach kit",
+      "min": 300,
+      "max": 700,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A one-page agency summary, a referral pad and a short email for discharge planners, social workers and senior living staff who send families your way.\"",
+      "when": "Month 3, once the referral partner page is live."
+    },
+    {
+      "name": "Monthly family newsletter",
+      "min": 200,
+      "max": 500,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A calm monthly email for client families: caregiver spotlights, office news and seasonal home safety reminders the agency approves.\"",
+      "when": "Month 3, once family contacts are in one list."
+    },
+    {
+      "name": "Vehicle magnets and caregiver badge artwork",
+      "min": 150,
+      "max": 400,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Car magnets and ID badges with the agency name and careers code, so every caregiver's car in a driveway recruits the next caregiver.\"",
+      "when": "Right after launch."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Elder law attorneys who advise the same families",
+        "whoPays": "The law office",
+        "min": 2500,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"The elder law attorney who sends families to your home care agency has a dated site. I build for careful, regulated offices already.\"",
+        "whyItWorks": "Elder law and home care share every family. The agency owner's introduction is the warm way in."
+      },
+      {
+        "route": "Senior move managers and downsizing specialists",
+        "whoPays": "The move manager, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The senior move manager you work alongside books by phone and has no site. I'd build one with your agency listed as a partner.\"",
+        "whyItWorks": "Move managers meet families at the same turning point and refer to home care constantly."
+      },
+      {
+        "route": "Home modification and accessibility contractors",
+        "whoPays": "The contractor, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The contractor who puts in grab bars and ramps for your clients needs a page showing those jobs. Families ask your caregivers who to call.\"",
+        "whyItWorks": "Caregivers see what a home needs and recommend the same contractor every time."
+      },
+      {
+        "route": "Adult day programmes",
+        "whoPays": "The programme",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The adult day programme your clients attend twice a week fills spots by word of mouth. A site with a daily schedule and tour booking would help.\"",
+        "whyItWorks": "Day programmes and home care split the week for the same families and refer back and forth."
+      },
+      {
+        "route": "Caregiver training schools",
+        "whoPays": "The school",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The school that trains the caregivers you hire enrols by flyer. A course site with dates and an application fills classes and your hiring pipeline.\"",
+        "whyItWorks": "The agency is their best employer partner and vouches for you."
+      },
+      {
+        "route": "Independent geriatric care managers",
+        "whoPays": "The care manager, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The geriatric care manager who coordinates your clients' care for distant families has only a directory listing. A calm practice page is a quick build.\"",
+        "whyItWorks": "Care managers choose agencies for families. Helping them deepens the referral."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Intake logistics assistant for the elder law office",
+        "whoPays": "The law office, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Families asking the elder law office about consultation fees and documents to bring get approved answers, and legal questions are passed to a person.\"",
+        "whyItWorks": "Law offices want after-hours intake without giving advice. Admin-only answers are the safe line."
+      },
+      {
+        "route": "Move planning helper for the senior move manager",
+        "whoPays": "The move manager",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"Families describe the move date and home size, and the move manager gets a draft plan and checklist from her own process, with home care partners listed.\"",
+        "whyItWorks": "Move managers build plans by hand for every family. A draft saves them hours."
+      },
+      {
+        "route": "Job photo-to-quote drafts for the accessibility contractor",
+        "whoPays": "The contractor",
+        "min": 1000,
+        "max": 2500,
+        "unit": "one-time",
+        "pitchLine": "\"A family sends pictures of the bathroom and front steps, and the contractor gets a draft scope for grab bars or a ramp from their own price list.\"",
+        "whyItWorks": "Accessibility jobs start with a site visit. Draft scopes from pictures save trips."
+      },
+      {
+        "route": "Tour and enrolment assistant for the adult day programme",
+        "whoPays": "The programme, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"Families asking about the adult day programme's schedule, transport and fees get answers from its own handbook and can book a tour.\"",
+        "whyItWorks": "Day programmes answer the same questions from every family. A contained assistant books tours."
+      },
+      {
+        "route": "Enrolment question assistant for the caregiver school",
+        "whoPays": "The school, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"People thinking about becoming caregivers ask about class dates, cost and job placement and get answers from the school's own pages.\"",
+        "whyItWorks": "More enrolments means more caregivers for the home care agency to hire. Everyone wins."
+      },
+      {
+        "route": "Family update drafts for the geriatric care manager",
+        "whoPays": "The care manager, monthly",
+        "min": 79,
+        "max": 199,
+        "unit": "monthly",
+        "pitchLine": "\"The care manager's notes become a clear weekly update draft for the distant family, which she reviews and sends from her own secure system.\"",
+        "whyItWorks": "Care managers spend evenings writing family updates. A draft they control saves that time."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Applicant first-reply texts",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 49,
+      "monthlyMax": 99,
+      "pitchLine": "\"A caregiver who applies at nine at night gets a text within minutes with interview times, before another home care agency calls them first.\"",
+      "whenAndWhatItTakes": "Day 14, as soon as the careers page is live. Needs the hiring coordinator's interview calendar and wording."
+    },
+    {
+      "name": "After-hours care request routing",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"A family's Friday-night request for home care reaches the on-call coordinator's phone with the town and start date, not Monday's inbox.\"",
+      "whenAndWhatItTakes": "At build or day 14. Needs the on-call rota and town list. Collects contact and needs summary only, no medical history."
+    },
+    {
+      "name": "Applicant pipeline board",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Every caregiver applicant in one place: applied, interviewed, background check, training, first shift, so nobody falls through the cracks.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their hiring steps and the people who move applicants along."
+    },
+    {
+      "name": "Caregiver job question responder",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Applicants asking about pay, shifts, towns and requirements get answers from the agency's approved careers page at any hour, and a link to apply.\"",
+      "whenAndWhatItTakes": "Month 2. Needs approved pay and shift wording. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "After-hours phone answering for families",
+      "kind": "ai",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 249,
+      "monthlyMax": 549,
+      "pitchLine": "\"Calls from worried families after the office closes get answered with the agency's care levels and towns, a coordinator call-back booked, and any emergency directed to emergency services.\"",
+      "whenAndWhatItTakes": "Month 3, once they trust you. Needs care levels, coverage and the owner's escalation wording. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Privacy-safe review reply drafts for the agency",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Each home care review gets a warm reply drafted for approval that never mentions the client's health or confirms details about their care.\"",
+      "whenAndWhatItTakes": "Month 2, alongside review requests. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Family enquiry follow-up",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"A family who asked about senior care but didn't start gets a gentle check-in a week later, and one more a month later, then nothing.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the enquiry list and approved wording."
+    },
+    {
+      "name": "Open shift text-out to available caregivers",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"A caregiver calls out sick, and every available caregiver in that town gets a text with the shift; the first to accept is confirmed.\"",
+      "whenAndWhatItTakes": "Month 4. Needs caregiver availability and towns, kept separate from client details. Works alongside their scheduling system."
+    },
+    {
+      "name": "Caregiver onboarding checklist",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Each new caregiver's documents, background check status and training steps tracked on one checklist until their first home care shift.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their onboarding steps and the state's required documents as the agency lists them."
+    },
+    {
+      "name": "Caregiver referral bonus tracker",
+      "kind": "software",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Caregivers who refer a friend see when the bonus is earned, and the office stops tracking it on sticky notes.\"",
+      "whenAndWhatItTakes": "Month 4, if they run a referral bonus. Needs the bonus rules."
+    },
+    {
+      "name": "Home care hours cost estimator",
+      "kind": "software",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Families enter how many hours a week of care they're thinking about and see a range from the agency's own rates and minimums, with a call to talk it through.\"",
+      "whenAndWhatItTakes": "Month 3, only if the owner agrees to show ranges. Needs their hourly rates and shift minimums."
+    },
+    {
+      "name": "Care needs conversation guide",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"A family describes daily routines their parent needs help with, and the coordinator receives a tidy summary and a suggested care level to discuss, never a health assessment.\"",
+      "whenAndWhatItTakes": "Month 5. Needs the agency's care level definitions and coordinator review of every summary. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Caregiver refresher quiz drafts",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"The agency's own training material becomes short monthly refresher quizzes for caregivers, drafted for the trainer to approve.\"",
+      "whenAndWhatItTakes": "Month 5. Needs the agency's written training material. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Bilingual caregiver message drafts",
+      "kind": "ai",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1200,
+      "monthlyMin": 59,
+      "monthlyMax": 149,
+      "pitchLine": "\"Schedule changes and office notices to caregivers are drafted in English and Spanish from one message the coordinator writes.\"",
+      "whenAndWhatItTakes": "Month 4, for agencies with Spanish-speaking caregivers. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Coordinator handbook search",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"New care coordinators search the agency's own policies on call-outs, client starts and family requests instead of interrupting the owner.\"",
+      "whenAndWhatItTakes": "Month 6. Needs the written office handbook, every answer approved. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Family visit summary drafts",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 3500,
+      "monthlyMin": 149,
+      "monthlyMax": 349,
+      "pitchLine": "\"Caregiver visit notes become a short weekly summary for the distant family, reviewed by the coordinator before it's sent through the agency's secure system.\"",
+      "whenAndWhatItTakes": "Month 7, only inside their secure system with family consent. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Recruiting source report",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"See which job posts, referrals and flyers bring caregivers who actually reach a first shift, and stop paying for the ones that don't.\"",
+      "whenAndWhatItTakes": "Month 5, once the applicant pipeline has a few months of data."
+    },
+    {
+      "name": "Caregiver anniversary and recognition messages",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 500,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Caregivers get a thank-you from the owner on their work anniversary and after a hundred home care visits. Small things keep good people.\"",
+      "whenAndWhatItTakes": "Month 4. Needs start dates and the owner's wording."
+    },
+    {
+      "name": "Family updates page linked to their secure system",
+      "kind": "software",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"Families log in from the agency site to see upcoming caregiver visits and coordinator contacts, pulled from the agency's existing secure system.\"",
+      "whenAndWhatItTakes": "Month 8, only if their scheduling system allows a secure link. Needs their vendor's access and a privacy review."
+    },
+    {
+      "name": "Multi-office numbers board",
+      "kind": "software",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"For owners with a second home care office: enquiries, starts, applicants and caregiver hours side by side, in totals only.\"",
+      "whenAndWhatItTakes": "Month 9, when they open a second office. Needs summary exports from both."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the caregiver recruiting kit for independent agencies",
+      "whoPays": "Each agency, monthly",
+      "min": 99,
+      "max": 299,
+      "unit": "monthly",
+      "pitchLine": "\"I built a mobile caregiver application, first-reply texts and an applicant board for one home care agency. Every agency is short of caregivers.\"",
+      "whyItWorks": "Hiring is the universal pain in home care. A recruiting kit sells without a website conversation."
+    },
+    {
+      "route": "Home care franchise systems",
+      "whoPays": "Each franchisee, per location",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "pitchLine": "\"Your franchisees each need a local careers page and town pages inside brand rules. I build an approved template once.\"",
+      "whyItWorks": "Franchise systems sell territories and need each one staffed. Local recruiting pages are an easy approval."
+    },
+    {
+      "route": "State home care association member toolkit",
+      "whoPays": "The association",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer every member agency a site template with care levels, screening and careers pages built in, free of health claims.\"",
+      "whyItWorks": "Associations need member benefits, and compliant marketing and hiring are top concerns."
+    },
+    {
+      "route": "Partner agency directory for a hospital discharge team",
+      "whoPays": "The hospital's care management department",
+      "min": 5000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Your discharge planners hand families a photocopied list of home care agencies. A searchable directory by town and care level helps families decide faster.\"",
+      "whyItWorks": "Hospitals need safe, quick discharges. The agency client is already one of their partners."
+    },
+    {
+      "route": "Senior living communities adding home care",
+      "whoPays": "The community operator",
+      "min": 3000,
+      "max": 8000,
+      "unit": "one-time",
+      "pitchLine": "\"Your community is adding in-home care for residents and neighbours. It needs its own care levels and careers pages, which I've already built for an agency.\"",
+      "whyItWorks": "Communities expanding into home care don't know the copy or hiring setup. You do."
+    },
+    {
+      "route": "Area agencies on aging",
+      "whoPays": "The agency on aging",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Families call your office to find senior care providers by town. A plain-language resource directory answers that around the clock.\"",
+      "whyItWorks": "Public agencies have budget for access tools, and the home care client is a provider on their list."
+    },
+    {
+      "route": "White-label home care template for agencies",
+      "whoPays": "The marketing agency, per site",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "pitchLine": "\"Your marketing agency picks up home care clients and builds generic sites. License my template with care levels and a caregiver careers flow built in.\"",
+      "whyItWorks": "Agencies sell the client; you sell the part that hires caregivers."
+    },
+    {
+      "route": "Long-term care insurance brokers",
+      "whoPays": "The broker",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Your policyholders ask which home care agencies near them help with claims. A partner page by town makes your service more useful.\"",
+      "whyItWorks": "Brokers want policyholders to feel looked after. A vetted agency list helps them."
+    },
+    {
+      "route": "Graduate job boards for caregiver training networks",
+      "whoPays": "The training network, annually",
+      "min": 2000,
+      "max": 6000,
+      "unit": "per-year",
+      "pitchLine": "\"Every graduate of your caregiver courses needs a first job. A job board with local agencies hiring fills your placement promise.\"",
+      "whyItWorks": "Training networks sell placement. Agencies pay to reach graduates."
+    },
+    {
+      "route": "Groups acquiring home care agencies",
+      "whoPays": "The acquisition group",
+      "min": 5000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Each home care agency you acquire comes with a different site. I move them onto one template with local careers and town pages intact.\"",
+      "whyItWorks": "Roll-ups need consistent brands fast, and they buy in batches."
+    },
+    {
+      "route": "Agencies in the next region",
+      "whoPays": "New home care clients in a new metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"Home care agencies outside {City} don't serve the same families as mine, so they get the same care levels, careers and payment pages.\"",
+      "whyItWorks": "The slow parts, careful wording and the hiring flow, carry straight over."
+    },
+    {
+      "route": "Finish stalled agency site rebuilds",
+      "whoPays": "The stuck agency",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "pitchLine": "\"Someone started your home care site and left the careers page unfinished. I can finish it on an agency setup I've already shipped.\"",
+      "whyItWorks": "Stuck agencies already budgeted the work and need caregivers now."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Agency site build plus care plan, one contract",
+      "min": 2000,
+      "max": 3500,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The home care site and the care plan go on one contract, so a new town or job opening is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 14,
+      "offer": "Applicant first-reply texts",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "trigger": "The first caregiver applications arrive through the new careers page.",
+      "line": "\"Caregivers are applying. Let's reply in minutes, before another agency does.\""
+    },
+    {
+      "rung": 3,
+      "day": 30,
+      "offer": "Caregiver recruiting campaign",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "trigger": "They mention turning down a family because no caregiver was available.",
+      "line": "\"A family you couldn't staff is a recruiting problem. Let's fill the caregiver pipeline.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Applicant pipeline board",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "trigger": "Applicants are being tracked in a spreadsheet or a text thread.",
+      "line": "\"Your caregiver applicants deserve better than a text thread. Let's track them to the first shift.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Discharge planner and senior living outreach kit",
+      "min": 300,
+      "max": 700,
+      "unit": "one-time",
+      "trigger": "They say most new home care clients come from hospital referrals.",
+      "line": "\"Your home care referral page is live. Let's put it in front of every discharge planner nearby.\""
+    },
+    {
+      "rung": 6,
+      "day": 120,
+      "offer": "After-hours phone answering for families",
+      "min": 1200,
+      "max": 3000,
+      "unit": "one-time",
+      "trigger": "They mention weekend calls from families going to voicemail.",
+      "line": "\"Families calling about home care on a Saturday get a calm answer and a coordinator call-back.\""
+    },
+    {
+      "rung": 7,
+      "day": 180,
+      "offer": "Open shift text-out to available caregivers",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "trigger": "A coordinator describes spending a morning calling caregivers to cover one call-out.",
+      "line": "\"That morning of phone calls to cover one caregiver shift can be a single text.\""
+    },
+    {
+      "rung": 8,
+      "day": 270,
+      "offer": "Introduction to the elder law attorney",
+      "min": 2500,
+      "max": 6000,
+      "unit": "one-time",
+      "trigger": "They mention an elder law attorney who refers families and asked who built the site.",
+      "line": "\"The elder law attorney who sends you families asked about the site. Would you introduce me?\""
+    }
+  ]
+}

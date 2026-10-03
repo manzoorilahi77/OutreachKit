@@ -1,0 +1,864 @@
+{
+  "schemaVersion": 1,
+  "category": "Therapists & counsellors",
+  "slug": "therapists-counsellors",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Care family batch. Health-regulated and privacy-sensitive: no testimonials, no outcome claims, the site is never presented as an emergency service, crisis wording stays the therapist's own, and every AI item is admin-only. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Specialties and approaches",
+      "contains": "The concerns the therapist works with, such as anxiety, couples conflict, grief or trauma, and the approaches they're trained in, such as CBT or EMDR, each described in plain words with the [training] the therapist supplies",
+      "why": "People choose a therapist by whether they seem to understand their particular struggle. Plain descriptions of specialties do that without promising results."
+    },
+    {
+      "section": "Find a therapist in the practice",
+      "contains": "For group practices, a clinician directory filterable by specialty, age group, telehealth, evening availability, languages and insurance, with each counselor's own short introduction",
+      "why": "Clients at a group practice don't know which clinician to ask for. A filter gets them to the right fit call instead of a generic intake queue."
+    },
+    {
+      "section": "Telehealth and where we can see you",
+      "contains": "The states the therapist is licensed to see clients in [as supplied], what a telehealth session needs, a private space suggestion, and when in-person sessions are available",
+      "why": "Licensure follows the client's location. Saying plainly who can be seen online saves a disappointing consultation call for both sides."
+    },
+    {
+      "section": "Out-of-network and superbills",
+      "contains": "How superbills work, questions to ask the insurer about out-of-network mental health benefits, the Good Faith Estimate notice for self-pay clients, and how payment is taken",
+      "why": "Cost is the quiet reason people don't start therapy. Explaining reimbursement plainly turns 'I can't afford it' into a question they can actually answer."
+    },
+    {
+      "section": "Not an emergency service",
+      "contains": "A clear notice that the counseling practice isn't monitored for emergencies, the therapist's own wording on what to do in a crisis, local emergency and crisis line options, and normal reply times",
+      "why": "People sometimes reach out at their worst moment. Stating plainly that the site isn't an emergency service protects the client and the therapist."
+    },
+    {
+      "section": "Groups and workshops",
+      "contains": "Therapy groups and workshops with dates, the screening call before joining, group size, fees and what confidentiality means in a group setting",
+      "why": "Groups are a lower-cost way in for many clients and fill slowly by word of mouth. A page with dates and a screening step fills them."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C40",
+      "siteType": "local-conversion",
+      "name": "Quiet Door",
+      "heroLayout": "split-photo",
+      "mood": [
+        "gentle",
+        "private",
+        "warm"
+      ],
+      "bestFor": "Solo therapists who need a calm page, a clear fit statement and a way to request a consultation",
+      "pairsWithTier": "starter",
+      "headlineSample": "Counseling for adults and couples in {City}",
+      "whyItFits": "Driftwood's soft neutral ground and refined serif feel like a quiet office with good light, and the split hero puts the therapist's face beside the consultation button."
+    },
+    {
+      "id": "b",
+      "themeId": "C32",
+      "siteType": "booking-first",
+      "name": "Consult Calendar",
+      "heroLayout": "card-stack",
+      "mood": [
+        "grounded",
+        "steady",
+        "unhurried"
+      ],
+      "bestFor": "Therapists and small practices that want fit calls booked straight into real slots",
+      "pairsWithTier": "standard",
+      "headlineSample": "Book a free consultation call with a {City} therapist",
+      "whyItFits": "The family combo, Sage Spa, fails CTA contrast. Olive Grove keeps an earthy green calm, its bookish serif reads human rather than clinical, and the Book button passes AA."
+    },
+    {
+      "id": "c",
+      "themeId": "C2",
+      "siteType": "editorial-trust",
+      "name": "Group Practice",
+      "heroLayout": "type-led",
+      "mood": [
+        "credible",
+        "thoughtful",
+        "established"
+      ],
+      "bestFor": "Group counseling practices with several clinicians, groups and a referral network to impress",
+      "pairsWithTier": "premium",
+      "headlineSample": "A group therapy practice in {City}, matched with care",
+      "whyItFits": "Private Vault's parchment and refined serif read like an established practice, and type-led pages suit clinician introductions, approaches and resources people read slowly."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your practice listing on Google has an address and a phone number but no website, so someone in {City} quietly searching for an anxiety therapist can't learn anything about how you work before calling.",
+      "hook": "Open their Maps listing and confirm there is no Website button. Screenshot it for when they reply.",
+      "linkLine": "Here's what could sit behind that button for the practice: {demo-link}"
+    },
+    {
+      "angle": "Directory profile only",
+      "line": "The only place I could read about your counseling practice is a therapist directory profile, sitting between dozens of other clinicians. A page of your own lets someone stay with your words a little longer.",
+      "hook": "Search their name and practice. If the top results are directory profiles only, the angle holds. Never name the directory.",
+      "linkLine": "A page that's only about your practice: {demo-link}"
+    },
+    {
+      "angle": "Dated practice page",
+      "line": "The therapy site on your listing still says you're accepting new clients for a group that seems to have ended. Someone reaching out carefully notices details like that.",
+      "hook": "Open the site and find one stale detail: an ended group, an old fee, a broken form. Note it gently.",
+      "linkLine": "The same practice, current and calm: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "I opened your therapy practice site on my phone and the contact form ran off the screen. Most people looking for a counselor do it on a phone, late, when they finally feel ready.",
+      "hook": "Only if they have a site. Try the contact path on your phone and note what breaks. Screenshot it for when they reply.",
+      "linkLine": "The practice, rebuilt for a phone: {demo-link}"
+    },
+    {
+      "angle": "No way to request a consult",
+      "line": "There's no way to request a free consultation call with you online, only a voicemail number. For someone nervous about therapy, a short private request form is a much smaller first step.",
+      "hook": "Look for a consult request or booking link anywhere. If voicemail is the only route, the angle holds.",
+      "linkLine": "A gentle consultation request for the practice: {demo-link}"
+    },
+    {
+      "angle": "Specialties not explained",
+      "line": "Your profile lists couples work, grief and trauma, but nothing describes how you approach them. People choose a therapist when they recognise their own situation in the words.",
+      "hook": "Check what they list as specialties and whether any are explained. Never describe a client case.",
+      "linkLine": "Your specialties and approaches, in plain words: {demo-link}"
+    },
+    {
+      "angle": "Fees hidden",
+      "line": "I couldn't find your session fee or whether you offer superbills anywhere online. Cost is often the question a new therapy client is too embarrassed to ask on the phone.",
+      "hook": "Check listing, profile and site for fees or insurance information. If there's none, the angle holds.",
+      "linkLine": "Fees and out-of-network help, explained calmly: {demo-link}"
+    },
+    {
+      "angle": "January and back-to-school",
+      "line": "January and the start of the school year are when a lot of adults and parents of teens finally look for a therapist. A clear page with availability gets them past the hesitation.",
+      "hook": "Use this in December or August. Check whether they work with teens or adults and name the right season.",
+      "linkLine": "A therapy practice page ready for the new year: {demo-link}"
+    },
+    {
+      "angle": "Late-night researchers",
+      "line": "Most people read about therapists late at night, long after your office line is off. Right now there's nothing for them to read and no private way to reach out until morning.",
+      "hook": "Check their profile for after-hours contact options. If there's only a phone number, the angle holds.",
+      "linkLine": "A practice page that takes consultation requests overnight: {demo-link}"
+    },
+    {
+      "angle": "Adding a clinician",
+      "line": "Saw the practice is looking for another licensed therapist. Clinicians weigh a group practice partly by how it presents itself and its values online.",
+      "hook": "Only if they posted a hiring notice for a clinician, associate or intern. Note the date.",
+      "linkLine": "A counseling practice page with a join-us section: {demo-link}"
+    },
+    {
+      "angle": "Telehealth across the state",
+      "line": "You mention offering telehealth, but nothing says which states you can see clients in. Someone two hours away in {Neighborhood} might not realise they could work with you.",
+      "hook": "Look for 'telehealth', 'virtual' or 'online sessions' in their profile. Never state a licence jurisdiction they haven't published.",
+      "linkLine": "A telehealth page showing who you can see: {demo-link}"
+    },
+    {
+      "angle": "Out-of-network clients",
+      "line": "Your profile says you're out of network, which is fine, but it doesn't explain superbills. Clients who'd happily claim reimbursement don't book because they assume they can't afford therapy.",
+      "hook": "Look for 'out of network', 'private pay' or 'superbill' on their profile. Don't give insurance advice.",
+      "linkLine": "An out-of-network explainer for your practice: {demo-link}"
+    },
+    {
+      "angle": "Licence and training visible",
+      "line": "Your licence and training are listed on a directory but nowhere you control. That's the first thing a careful client, or a referring doctor, checks before booking a counselor.",
+      "hook": "Look for 'LCSW', 'LPC', 'LMFT' or 'PhD' in their profile. Never state a licence number or credential they haven't published.",
+      "linkLine": "Your credentials, stated plainly on your own page: {demo-link}"
+    },
+    {
+      "angle": "Referral-only caseload",
+      "line": "It sounds like your therapy caseload fills from doctor and colleague referrals. Those people still look you up before the first call, and right now they find a directory, not you.",
+      "hook": "Look for posts thanking referral partners or a 'referrals welcome' note. Don't guess at their caseload.",
+      "linkLine": "Where a referred client would land: {demo-link}"
+    },
+    {
+      "angle": "A specific recent post",
+      "line": "Your post about {specific recent job} was gentle and clear, the kind of thing someone reads twice before reaching out. It deserves a permanent home on a practice page.",
+      "hook": "Pick their newest article, post or workshop announcement and name it exactly. Never anything about a client.",
+      "linkLine": "That piece, on your own practice page: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, your post about {specific recent job} was gentle and clear.\n\nI looked for a site for {Business Name} and only found a directory profile. I put together a sample practice page with your specialties in plain words, a private consultation request, a fees and superbills section, and a clear not-an-emergency notice, with marked placeholders where your photos would go.\n\nWould you like me to send it?",
+    "dm2": "{Owner}, following up once in case my note got lost. Here's the sample practice site for {Business Name}: {demo-link}\n\nIt keeps the consultation request to name, contact and a good time to call, explains out-of-network costs, and states plainly that the site isn't an emergency service. If it's not for you, say so and I won't message again.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for therapists and counseling practices here in {City}. I sent a message a couple of days ago, did it reach you?\"\n\nIF NO:\n\"No problem at all, I know you're in sessions. Short version: I built a sample practice page for {Business Name} with your specialties, a private consultation request and a fees section, with marked placeholders where your photos would go. Can I email you the link to look at in your own time?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range}, then {Care Range} a month for hosting and updates. For a practice like yours I'd normally quote about {Build Price}.\"\n\"It's careful by design: no testimonials, no outcome claims, nothing clinical collected on the form, and you approve every word.\"\n\"Would a short call after your last session one evening work?\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. We start the day it clears.\"",
+    "objections": [
+      {
+        "objection": "My directory profile already brings me clients.",
+        "handler": "\"Keep it. The site is where those people go next to read more and request a consult privately. It also gives referring doctors somewhere better to send people.\""
+      },
+      {
+        "objection": "I'm not comfortable marketing myself.",
+        "handler": "\"That's common, and this isn't a sales page. It's a calm description of who you help, how you work and what it costs, in your words. Nothing on it boasts.\""
+      },
+      {
+        "objection": "I worry about privacy and client information.",
+        "handler": "\"Rightly. The form only asks for name, contact and a time to call. Nothing clinical goes through the site, and intake stays in your own secure system.\""
+      },
+      {
+        "objection": "My caseload is full right now.",
+        "handler": "\"Then the site can say so and run a waitlist or point to colleagues, and you'll have it ready when a few clients finish.\""
+      },
+      {
+        "objection": "I'm not very technical.",
+        "handler": "\"You don't need to be. You text or email me a change and it's done. The monthly fee covers that.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For your practice about {Build Price}. A couple of new clients who stay for a course of sessions covers it.\""
+      }
+    ],
+    "email": {
+      "subject": "A practice site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for therapists and counseling practices around {City}. I could only find {Business Name} on a directory, with nowhere of your own where someone could read how you work and reach out privately.\n\nI built a sample first rather than ask for your time: your specialties and approaches in plain words, a private consultation request that asks for nothing clinical, a fees and superbills explainer, telehealth details, and a clear notice that the site isn't an emergency service. It uses marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and updates. If not, no problem, it comes down at the end of the month.\n\nWould a short call after your sessions one evening suit?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build websites for therapists in {City} and put together a sample for {Business Name}. I'll email the link so you can look in your own time. {Your Phone}. Thank you.\"",
+    "takedown": "{Owner}, I'm going to take the {Business Name} practice demo offline on Friday.\n\nIf you'd like more time with it, just let me know and it stays.",
+    "nurture": "Hi {Owner}, January is when many people finally decide to look for a therapist, and a calm page with a private consultation request helps them take that step. Thought of you.\n\nThe sample is still here and the price is the same. {demo-link} if you'd like another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to a couple of clients who stay for a course of sessions. Therapists think in caseload, not in single sessions.",
+      "Charge for the writing. Specialty and approach pages in the therapist's own voice are the real work, and need a review round.",
+      "Group practices are priced per clinician page plus the directory filter, not per page.",
+      "Never collect clinical information on the site. Price an integration with their secure intake system as its own line.",
+      "Keep monthly add-ons below the fee of a single session.",
+      "No testimonial or review features. Don't sell what their licensing rules may prohibit."
+    ],
+    "lineItems": [
+      {
+        "item": "Specialty and approach page (each)",
+        "min": 150,
+        "max": 400,
+        "unit": "per-page",
+        "description": "Max when written from an interview with the therapist, with an approaches section and a gentle next-step link.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Clinician page for group practices (each)",
+        "min": 100,
+        "max": 300,
+        "unit": "per-page",
+        "description": "Max with a first-person introduction, specialties, availability and a fit-call link for that counselor.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Find-a-therapist directory filter",
+        "min": 400,
+        "max": 1000,
+        "unit": "one-time",
+        "description": "Max with filters for specialty, age group, telehealth, evenings, languages and insurance.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Out-of-network and superbill explainer",
+        "min": 200,
+        "max": 500,
+        "unit": "one-time",
+        "description": "Max with a question list for insurers, the Good Faith Estimate notice and a self-pay fee table supplied by the therapist.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Link-up with their secure intake system",
+        "min": 300,
+        "max": 800,
+        "unit": "one-time",
+        "description": "Max when consultation requests and new client paperwork route directly into the therapist's existing secure system.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Groups and workshops page",
+        "min": 200,
+        "max": 500,
+        "unit": "per-page",
+        "description": "Max with dates, a screening call request and fee payment for each group.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Spanish-language practice pages",
+        "min": 300,
+        "max": 900,
+        "unit": "one-time",
+        "description": "Max when specialties, fees, request form and emergency notice are translated and checked by the therapist.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Therapist portrait and office photo session",
+      "min": 250,
+      "max": 600,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A relaxed portrait and a few pictures of the therapy room and waiting area, so a nervous client knows the face and the space before the first session.\"",
+      "when": "Month 2, on a day without sessions in the office."
+    },
+    {
+      "name": "Google profile upkeep for the counseling practice",
+      "min": 79,
+      "max": 199,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Accurate hours, telehealth status and current availability on the practice's Google profile, with no review chasing.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Articles written from therapist interviews",
+      "min": 200,
+      "max": 600,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A short monthly interview becomes an article in your voice on a topic you choose, like what couples counseling is actually like, checked by you before it goes up.\"",
+      "when": "Month 3, if they say they never have time to write."
+    },
+    {
+      "name": "Referral partner packet",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "pitchLine": "\"A one-page summary of who the therapist helps, availability and how to refer, for doctors, school counselors and colleagues.\"",
+      "scalesWithMarket": true,
+      "when": "Month 2, once the site is live."
+    },
+    {
+      "name": "Directory profile rewrite to match the site",
+      "min": 150,
+      "max": 400,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Your therapist directory profiles rewritten so they sound like the practice page and send readers to it.\"",
+      "when": "Right after launch."
+    },
+    {
+      "name": "New availability announcement",
+      "min": 150,
+      "max": 400,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"When the therapist opens a few new client spots, a calm note goes to referral partners and the practice's channels, no urgency language.\"",
+      "when": "Whenever the caseload opens up, often in January or September."
+    },
+    {
+      "name": "Discreet appointment cards and office sign",
+      "min": 100,
+      "max": 300,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Appointment cards and an office door sign that name the practice without the word therapy on the front, for clients who value discretion.\"",
+      "when": "Right after launch."
+    },
+    {
+      "name": "Group and workshop promotion kit",
+      "min": 150,
+      "max": 400,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A flyer, an email for referral partners and a post for each therapy group or workshop, all pointing to the screening call.\"",
+      "when": "Six weeks before each new group starts."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Psychiatric prescribers who co-treat clients",
+        "whoPays": "The prescriber's practice, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The psychiatric nurse practitioner you co-treat with has a single directory profile. I'd build a calm practice page with the same privacy care as your counseling site.\"",
+        "whyItWorks": "Therapists and prescribers refer to each other constantly. The therapist's trust is the introduction."
+      },
+      {
+        "route": "Therapy office suite landlords",
+        "whoPays": "The building owner",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"Your building rents therapy offices by the day and the hour, and fills them by word of mouth. I'll build a clinician directory and an office booking page.\"",
+        "whyItWorks": "Office-share owners need clinicians in every room. The therapist tenant introduces you."
+      },
+      {
+        "route": "Divorce mediators and family law offices",
+        "whoPays": "The mediator, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The mediator who refers couples to your marriage counseling practice explains her process by phone. A clear process and fees page would help her clients too.\"",
+        "whyItWorks": "Mediators and couples therapists share clients at hard moments and trust each other's referrals."
+      },
+      {
+        "route": "Dietitians working with eating concerns",
+        "whoPays": "The dietitian, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The dietitian on your treatment team has no site. I'd build her a careful practice page with the same no-claims approach as yours.\"",
+        "whyItWorks": "Treatment teams refer within a small circle of trusted providers."
+      },
+      {
+        "route": "Psychological testing practices",
+        "whoPays": "The testing practice",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The psychologist your therapy clients see for ADHD and learning assessments has a waitlist by phone. A page explaining the testing process and fees would ease that.\"",
+        "whyItWorks": "Testing practices have long waits and confused families. The referring therapist vouches for you."
+      },
+      {
+        "route": "Postpartum support groups and doulas",
+        "whoPays": "The group or doula collective, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The postpartum support group that sends parents to your anxiety therapy practice meets by word of mouth. A simple page with meeting dates helps more parents find it.\"",
+        "whyItWorks": "Maternal mental health providers refer in a close circle."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Office booking assistant for the therapy suite landlord",
+        "whoPays": "The building owner, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"Clinicians asking whether a therapy office is free on Tuesday afternoons get availability and hourly rates from the landlord's calendar, and can book the room.\"",
+        "whyItWorks": "Hourly office rental lives or dies on easy booking. Every booked hour is income."
+      },
+      {
+        "route": "Scheduling questions assistant for the prescriber's office",
+        "whoPays": "The prescriber's practice, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Patients asking the prescriber's office about appointment times, telehealth and fees get approved answers, and anything about medication goes to staff.\"",
+        "whyItWorks": "Small psychiatric offices miss calls constantly. Admin-only answers carry no clinical risk."
+      },
+      {
+        "route": "Process and fees assistant for the mediator",
+        "whoPays": "The mediator",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"Couples asking the mediator how mediation works and what it costs get answers from her own process page, and a consultation link, never legal advice.\"",
+        "whyItWorks": "Mediators repeat the same explanation to every enquiry. Approved answers save hours."
+      },
+      {
+        "route": "Workshop sign-up assistant for the dietitian",
+        "whoPays": "The dietitian",
+        "min": 600,
+        "max": 1500,
+        "unit": "one-time",
+        "pitchLine": "\"People asking about the dietitian's group workshops get dates, fees and format from her page and can sign up, with nutrition questions passed to her.\"",
+        "whyItWorks": "Workshops fill on easy sign-up. A contained assistant is a small, clear purchase."
+      },
+      {
+        "route": "Waitlist and paperwork assistant for the testing practice",
+        "whoPays": "The testing practice",
+        "min": 1000,
+        "max": 2500,
+        "unit": "one-time",
+        "pitchLine": "\"Families a therapist has referred for testing ask about wait times, forms and fees and get approved answers, join the waitlist and receive the pre-visit paperwork list.\"",
+        "whyItWorks": "Testing practices are buried in logistics calls from anxious families."
+      },
+      {
+        "route": "Meeting finder for the postpartum support collective",
+        "whoPays": "The collective",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"New parents describe what they're looking for and are shown the collective's own vetted groups and meeting times, with the anxiety therapist's practice among the listed counselors.\"",
+        "whyItWorks": "Collectives want parents to find the right group quickly. It only lists their vetted options."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Consultation call booking with real slots",
+      "kind": "software",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Prospective clients pick a free fifteen-minute consultation call from the therapist's real openings, instead of trading voicemails for a week.\"",
+      "whenAndWhatItTakes": "At build. Needs the therapist's consultation hours and a calendar. Collects name, contact and time only."
+    },
+    {
+      "name": "Discreet session reminders",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 600,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Clients get a reminder the day before that says 'your appointment with {Business Name}', never the word therapy or counseling.\"",
+      "whenAndWhatItTakes": "Day 30. Needs schedule access or their secure system's reminder settings, and each client's consent to texts."
+    },
+    {
+      "name": "After-hours consultation request responder",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Someone requesting a consultation at midnight gets a warm acknowledgement, the therapist's own not-an-emergency notice and open call times, and nothing they wrote is analysed or stored beyond the request.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the therapist's approved wording and crisis notice. Logistics only, never clinical. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Late-cancel policy with card on file",
+      "kind": "software",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"The practice's late-cancel policy is agreed at booking and the card on file is charged only when the therapist approves it.\"",
+      "whenAndWhatItTakes": "Month 2, if late cancellations come up. Needs their written policy and payment account."
+    },
+    {
+      "name": "Fee and insurance question responder",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"'What's your session fee' and 'do you give superbills' get answered from the practice's approved fees page, and anything personal is passed to the therapist.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the approved fees and out-of-network wording. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Superbill request workflow",
+      "kind": "software",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Out-of-network clients request a monthly superbill in one click, and the request lands in the therapist's secure system to generate and send.\"",
+      "whenAndWhatItTakes": "Month 3, for out-of-network practices. Needs their secure system's request or task feature. No billing details pass through the site."
+    },
+    {
+      "name": "Unbooked consultation follow-up",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 500,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Someone who requested a consultation with the therapist but never picked a time gets one gentle reminder, then nothing more.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the consultation request flow live and the therapist's wording."
+    },
+    {
+      "name": "Waitlist with a colleague referral list",
+      "kind": "software",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"When the therapist's caseload is full, people join a private waitlist and see a list of trusted colleagues they could contact sooner.\"",
+      "whenAndWhatItTakes": "Month 3, when they mention turning people away. Needs their colleague list with each colleague's permission."
+    },
+    {
+      "name": "Article drafts from therapist voice memos",
+      "kind": "ai",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"The therapist records a few minutes on a topic, and an article draft in their voice comes back with any outcome-promise wording flagged.\"",
+      "whenAndWhatItTakes": "Month 3. Needs a few memos and the practice's do-not-say list. No client material ever. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Group registration and screening calls",
+      "kind": "software",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"People interested in a therapy group book a screening call, then pay and register once the therapist approves them.\"",
+      "whenAndWhatItTakes": "Month 4, when they run a group. Needs group dates, size limit and fees."
+    },
+    {
+      "name": "Practice paperwork explainer",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"New counseling clients asking what to fill in before the first session, or how telehealth works, get answers from the practice's own instructions.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the written new client instructions. Admin questions only. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Group start and session-change notices",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 500,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Group members get the start date, the telehealth link time and any change to the therapy group schedule without the therapist sending each one.\"",
+      "whenAndWhatItTakes": "Month 4, alongside group registration. Needs members' contact consent."
+    },
+    {
+      "name": "Clinician availability board for group practices",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"The intake coordinator sees which counselors have openings, for which days, telehealth or in person, without asking each clinician.\"",
+      "whenAndWhatItTakes": "Month 4, for group practices. Needs each clinician's opening count, updated weekly."
+    },
+    {
+      "name": "Intake coordinator matching suggestions",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"For a group practice's coordinator: a request's stated specialty, schedule and insurance are matched against clinician openings, and the coordinator makes the call.\"",
+      "whenAndWhatItTakes": "Month 5, once the availability board is in use. Staff-facing only. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Referral source log",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"See which doctors, school counselors and directories send consultation requests, with no client details stored.\"",
+      "whenAndWhatItTakes": "Month 5. Needs a 'how did you hear' field on the request form."
+    },
+    {
+      "name": "Workshop description and email drafts",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"The therapist outlines a parenting or grief workshop, and the page description and partner email are drafted for approval.\"",
+      "whenAndWhatItTakes": "Month 5, before a workshop. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Directory availability sync",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 500,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"When the therapist marks the caseload open or full, the site and a reminder to update each directory profile change together.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the list of directories they're listed on."
+    },
+    {
+      "name": "Practice handbook search for staff",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Admin staff and new clinicians at the counseling practice search its own policies on fees, scheduling and telehealth instead of interrupting a session.\"",
+      "whenAndWhatItTakes": "Month 6, for group practices. Needs the written handbook, every answer approved. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Bilingual consultation reply drafts",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Consultation requests written in Spanish get a scheduling reply drafted in Spanish from the practice's approved wording, for the therapist to send.\"",
+      "whenAndWhatItTakes": "Month 5, for practices serving Spanish speakers. Needs translated wording checked by the therapist. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Caseload and consultation numbers board",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Consultation requests, calls booked and new clients started each month for the counseling practice, in totals only, never names.\"",
+      "whenAndWhatItTakes": "Month 6. Needs request and booking totals from the site and their system."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the private consultation kit for solo therapists",
+      "whoPays": "Therapists, monthly",
+      "min": 29,
+      "max": 99,
+      "unit": "monthly",
+      "pitchLine": "\"I built a private consultation request, discreet reminders and a fees explainer for one therapist. Every solo counselor on a directory profile needs the same.\"",
+      "whyItWorks": "Solo therapists are many and technology-averse. A careful, ready-made kit is easier to say yes to than a custom build."
+    },
+    {
+      "route": "State counseling association member toolkit",
+      "whoPays": "The association",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer every member a therapy practice template with privacy, fees and not-an-emergency pages built in, as a member benefit.\"",
+      "whyItWorks": "Associations worry about members' advertising ethics. A safe template is a benefit they can explain easily."
+    },
+    {
+      "route": "Launch kit for counseling graduate programmes",
+      "whoPays": "The programme, annually",
+      "min": 1500,
+      "max": 5000,
+      "unit": "per-year",
+      "pitchLine": "\"Graduates heading into private practice leave with a practice page and consultation request ready the day they're licensed.\"",
+      "whyItWorks": "Programmes sell career outcomes and alumni stay in touch."
+    },
+    {
+      "route": "Private practice coaching and consulting firms",
+      "whoPays": "The firm, annually",
+      "min": 2000,
+      "max": 8000,
+      "unit": "per-year",
+      "pitchLine": "\"Your coaching clients all need a practice site. License my therapy template so every therapist you coach gets one.\"",
+      "whyItWorks": "Coaches already advise many therapists and want deliverables they don't have to build."
+    },
+    {
+      "route": "Group practices opening more offices",
+      "whoPays": "The group practice",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Your group practice is opening a second office. One site with clinician filters across locations keeps intake in one place.\"",
+      "whyItWorks": "Growing groups need a single front door, and you've built each part already."
+    },
+    {
+      "route": "White-label therapy practice template for agencies",
+      "whoPays": "The agency, per site",
+      "min": 400,
+      "max": 1200,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency picks up therapists and builds sales pages that make them uneasy. License my calm, claims-safe counseling template instead.\"",
+      "whyItWorks": "Agencies avoid the ethics questions; you sell them the part they can't write."
+    },
+    {
+      "route": "Employee assistance programme providers",
+      "whoPays": "The programme provider",
+      "min": 5000,
+      "max": 20000,
+      "unit": "one-time",
+      "pitchLine": "\"Your network counselors are hard for members to choose between. A clinician directory with specialties and availability helps members pick.\"",
+      "whyItWorks": "Programmes are judged on access. A clear directory is visible proof."
+    },
+    {
+      "route": "Liability insurers for mental health professionals",
+      "whoPays": "The insurer's risk team",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Your insured therapists keep asking what's safe to put on a website. A privacy-safe template library with emergency notices reduces risk for both of you.\"",
+      "whyItWorks": "Insurers pay to prevent complaints. The template is already written."
+    },
+    {
+      "route": "Community mental health nonprofits",
+      "whoPays": "The nonprofit",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Your sliding-scale counseling programme is hard to find and harder to understand. A clear page with eligibility, fees and a request form helps people get in.\"",
+      "whyItWorks": "Nonprofits are funded on access and have grant money for exactly this."
+    },
+    {
+      "route": "Therapy office-share companies",
+      "whoPays": "The company, annually",
+      "min": 3000,
+      "max": 10000,
+      "unit": "per-year",
+      "pitchLine": "\"Every building you run rents therapy offices by the hour. A clinician directory and room booking across all of them fills the empty hours.\"",
+      "whyItWorks": "Multi-building operators buy once and roll out."
+    },
+    {
+      "route": "Practices outside my home market",
+      "whoPays": "New therapy clients in a new metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"Therapists a few hours from {City} don't share clients with mine, so the same counseling template, privacy pages and wording carry straight over.\"",
+      "whyItWorks": "Careful wording is the slowest part to write. Reusing it in a new market is pure margin."
+    },
+    {
+      "route": "Rescue abandoned practice site projects",
+      "whoPays": "The stuck therapist",
+      "min": 400,
+      "max": 1500,
+      "unit": "one-time",
+      "pitchLine": "\"Your nephew started the practice site and it's been half-done for a year. I can finish it on a therapist structure I've already shipped.\"",
+      "whyItWorks": "Stuck therapists already decided to have a site. They want it finished calmly."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Practice site build plus care plan, one contract",
+      "min": 1500,
+      "max": 2800,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The practice site and the care plan go on one contract, so opening or closing your caseload is an email to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 14,
+      "offer": "Consultation call booking with real slots",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "trigger": "They say they spend evenings returning voicemails to set up consultation calls.",
+      "line": "\"Those voicemails from people curious about therapy can become consultation calls they book straight into your openings.\""
+    },
+    {
+      "rung": 3,
+      "day": 30,
+      "offer": "Discreet session reminders",
+      "min": 29,
+      "max": 79,
+      "unit": "monthly",
+      "trigger": "They mention a missed session from a client who forgot.",
+      "line": "\"A discreet reminder the day before saves the missed session without saying the word therapy.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Therapist portrait and office photo session",
+      "min": 250,
+      "max": 600,
+      "unit": "per-shoot",
+      "trigger": "The site still shows the placeholder where the therapist's portrait goes.",
+      "line": "\"A real portrait is the most-read part of a therapist's page. Let's fill it.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Fee and insurance question responder",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "trigger": "Consultation requests keep arriving with the same fee and superbill questions.",
+      "line": "\"Most people considering counseling ask about fees first. Let's answer them from your approved page.\""
+    },
+    {
+      "rung": 6,
+      "day": 150,
+      "offer": "Group registration and screening calls",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "trigger": "They mention starting a therapy group or workshop.",
+      "line": "\"Your new group could take screening calls and registrations without a single email thread.\""
+    },
+    {
+      "rung": 7,
+      "day": 240,
+      "offer": "Introduction to the therapy office suite landlord",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "trigger": "They mention empty offices in their building or the landlord asking about the counseling site.",
+      "line": "\"Your building rents therapy offices by the hour with no booking page. Would you introduce me?\""
+    }
+  ]
+}

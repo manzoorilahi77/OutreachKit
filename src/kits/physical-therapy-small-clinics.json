@@ -1,0 +1,860 @@
+{
+  "schemaVersion": 1,
+  "category": "Physical therapy & small clinics",
+  "slug": "physical-therapy-small-clinics",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Care family batch. Health-regulated and referral-driven: the site confirms credibility for referred patients and referring surgeons. No outcome claims, no invented testimonials, direct-access and insurance wording as placeholders. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Direct access and physician referrals",
+      "contains": "Whether a patient can book physical therapy without a prescription in [state, as the clinic states it], what to bring if they have one, and how a referring physician sends orders",
+      "why": "Many people assume they need a doctor's note first and never call. Explaining direct access plainly, in the clinic's own words, removes that step."
+    },
+    {
+      "section": "Pelvic floor therapy, explained privately",
+      "contains": "What a pelvic floor evaluation involves, consent at every step, chaperone options, choosing a therapist's gender, and who the clinic sees, from postpartum to prostate surgery recovery",
+      "why": "Pelvic floor patients research quietly and are often embarrassed. A calm, explicit page is the difference between booking and staying silent."
+    },
+    {
+      "section": "Return to sport and athlete rehab",
+      "contains": "Return-to-sport testing the clinic offers, how the sports rehab team coordinates with coaches and athletic trainers, and the school and club teams it works with, as supplied",
+      "why": "Athletes and parents choose the physio other athletes use. Showing coordination with coaches and a clear testing process does that."
+    },
+    {
+      "section": "Post-surgery rehab and prehab",
+      "contains": "Starting physical therapy before and after joint or ligament surgery, how the clinic follows each surgeon's protocol, and how to book the first visit after the operation",
+      "why": "Post-surgical patients are told to 'find a PT' and pick the one that knows their surgeon's protocol. Saying so wins the referral."
+    },
+    {
+      "section": "Home exercise programme access",
+      "contains": "How patients receive their home exercise programme, the video library or portal the clinic uses, and how to ask a question between visits",
+      "why": "Patients judge a rehab clinic by how supported they feel at home. Showing the programme access makes the clinic feel attentive before the first visit."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C26",
+      "siteType": "local-conversion",
+      "name": "Clinic Next Door",
+      "heroLayout": "split-photo",
+      "mood": [
+        "bright",
+        "friendly",
+        "clear"
+      ],
+      "bestFor": "Single-location PT clinics that need direct access explained, insurance info and a request button first",
+      "pairsWithTier": "starter",
+      "headlineSample": "Physical therapy in {City}. No referral needed to start.",
+      "whyItFits": "Sky Kite's light blue and soft rounded type feel open and approachable, and the split hero puts a therapist beside the evaluation request."
+    },
+    {
+      "id": "b",
+      "themeId": "C8",
+      "siteType": "booking-first",
+      "name": "Evaluation Calendar",
+      "heroLayout": "card-stack",
+      "mood": [
+        "reassuring",
+        "organised",
+        "capable"
+      ],
+      "bestFor": "Small clinics with several physical therapists and specialties that want evaluations booked into real slots",
+      "pairsWithTier": "standard",
+      "headlineSample": "Book a physical therapy evaluation in {City}",
+      "whyItFits": "The family combo, Sage Spa, fails CTA contrast. Evergreen Trust keeps the calm green, reads clinical and trustworthy to referring surgeons, and its Book button passes AA."
+    },
+    {
+      "id": "c",
+      "themeId": "C17",
+      "siteType": "premium-brand",
+      "name": "Performance Rehab",
+      "heroLayout": "full-bleed-photo",
+      "mood": [
+        "athletic",
+        "focused",
+        "modern"
+      ],
+      "bestFor": "Sports rehab and performance clinics serving athletes, teams and cash-pay clients",
+      "pairsWithTier": "premium",
+      "headlineSample": "Sports rehab and return-to-play in {City}",
+      "whyItFits": "Basalt Lime's dark ground and lime accent read like a training facility, and the geometric display suits athletes more than a soft clinic palette."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "The PT clinic's Maps listing has hours and good reviews but no website, so a patient handed a physical therapy referral in {City} can't check you out before choosing where to go.",
+      "hook": "Open their Maps listing and confirm there is no Website button. Screenshot it for when they reply.",
+      "linkLine": "Here's what could sit behind that button for the clinic: {demo-link}"
+    },
+    {
+      "angle": "Facebook page as the website",
+      "line": "The website link on your listing goes to the physical therapy clinic's Facebook page, where the latest post is a staff birthday. A referred patient can't find insurance info or how to book an evaluation.",
+      "hook": "Click the link on their listing. If it lands on Facebook, note the latest post.",
+      "linkLine": "The rehab clinic's essentials on one page: {demo-link}"
+    },
+    {
+      "angle": "Old site from years ago",
+      "line": "The physio site on your listing still lists a therapist who left and a fax number as the main contact. Referring offices notice that, and so do patients.",
+      "hook": "Open the site and find one stale detail: a departed therapist, old hours, a fax-only contact. Note it.",
+      "linkLine": "The same clinic, current: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "I tried your physical therapy site on my phone and the new patient form was a PDF to print. Someone on crutches isn't printing anything.",
+      "hook": "Only if they have a site. Try the new patient path on your phone and note what breaks. Screenshot it for when they reply.",
+      "linkLine": "The clinic, rebuilt for a phone: {demo-link}"
+    },
+    {
+      "angle": "No evaluation request",
+      "line": "There's no way to request a first PT evaluation online, only a phone line during clinic hours. Patients fresh from a surgeon's office would rather tap a request and get a call back.",
+      "hook": "Look for any request form or online booking. If the only route is calling, the angle holds.",
+      "linkLine": "An evaluation request built for the physical therapy clinic: {demo-link}"
+    },
+    {
+      "angle": "Direct access not explained",
+      "line": "Nothing on your page says whether people can start physical therapy without a doctor's prescription. A lot of them assume they can't, and never call.",
+      "hook": "Check their site and listing for 'no referral needed' or 'direct access'. Never state the state's rules yourself.",
+      "linkLine": "Direct access explained in the clinic's words: {demo-link}"
+    },
+    {
+      "angle": "Reviews stuck on Google",
+      "line": "Your Google reviews mention therapists who took time to explain each exercise. That's what a nervous post-surgery patient wants to read, and it's not on any page they'd see.",
+      "hook": "Read their reviews and copy one phrase about attention, explanation or the clinic atmosphere. Quote it back. Never imply a result.",
+      "linkLine": "Your reviews beside the evaluation request: {demo-link}"
+    },
+    {
+      "angle": "Sports season and ski season",
+      "line": "Every fall sports season and ski trip brings sprains and knee worries. Parents and weekend athletes search for sports rehab nearby, and pick the clinic that explains return to play.",
+      "hook": "Use this before fall sports, ski season or a local race. Name the season or event.",
+      "linkLine": "A sports rehab page ready for the season: {demo-link}"
+    },
+    {
+      "angle": "Evening researchers",
+      "line": "People read about physical therapy for their shoulder at night, after work, long after the front desk goes home. Right now there's nowhere to request an evaluation until morning.",
+      "hook": "Look for evening hours or 'call us' as the only contact. If there's no online request, the angle holds.",
+      "linkLine": "A clinic page that takes evaluation requests overnight: {demo-link}"
+    },
+    {
+      "angle": "Hiring a physical therapist",
+      "line": "Saw the clinic is hiring a physical therapist. New grads compare small clinics partly on how the practice presents its specialties and mentorship online.",
+      "hook": "Only if they posted a hiring notice for a PT, PTA or front desk. Note the date.",
+      "linkLine": "A PT clinic page with a careers section: {demo-link}"
+    },
+    {
+      "angle": "Patients from nearby towns",
+      "line": "Your reviews mention patients coming from {Neighborhood} for rehab. A page with parking, early hours and how long a visit takes makes that drive easier twice a week.",
+      "hook": "Scan reviews for neighbourhoods or towns patients mention. Use the real name.",
+      "linkLine": "A rehab clinic page for patients coming from further out: {demo-link}"
+    },
+    {
+      "angle": "Insurance and cash-pay unclear",
+      "line": "Visit limits, copays and cash-pay rehab packages are the questions under half your posts. A plain coverage page means fewer patients put physical therapy off because they assume it's out of reach.",
+      "hook": "Look for insurance or cost questions in comments and reviews. Never state a plan they accept unless they say so.",
+      "linkLine": "Insurance and visit costs, explained on one page: {demo-link}"
+    },
+    {
+      "angle": "Specialty training not shown",
+      "line": "Your therapists seem to have real specialty training in pelvic floor and sports rehab, and nothing online says so. That's exactly what a referring surgeon or a careful patient looks for.",
+      "hook": "Look for specialty mentions in bios or posts. Never state a credential or certification they haven't published.",
+      "linkLine": "Your therapists' specialties, stated plainly: {demo-link}"
+    },
+    {
+      "angle": "Referral-driven caseload",
+      "line": "It looks like most of the clinic's patients come from surgeons and physicians. Each one still looks the physical therapy clinic up before the first visit, and finds very little.",
+      "hook": "Look for posts thanking referring doctors or reviews saying 'my surgeon sent me'. Quote it.",
+      "linkLine": "Where a referred rehab patient would land: {demo-link}"
+    },
+    {
+      "angle": "A specific recent post",
+      "line": "That {specific recent job} piece is the kind of physical therapy explainer a surgeon's patient reads before choosing a clinic. Right now it scrolls away within a week.",
+      "hook": "Pick their newest educational post, workshop or team event and name it exactly. Never a patient case.",
+      "linkLine": "That physical therapy explanation, on its own page: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, your post about {specific recent job} explained the rehab side clearly and without hype.\n\nI looked for a site for {Business Name} and only found the listing and social pages. I put together a sample clinic page with direct access explained, a pelvic floor page, a post-surgery section and an evaluation request, with marked placeholders where your photos would go.\n\nWould you like me to send it over?",
+    "dm2": "{Owner}, following up in case my note got lost between patients. Here's the sample physical therapy site for {Business Name}: {demo-link}\n\nIt explains direct access in your words, covers pelvic floor and sports rehab, and has an evaluation request that keeps health details off the form. If it's not for you, say so and I won't message again.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for physical therapy clinics here in {City}. I sent a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"Understood, you're on the floor with patients all day. Short version: I built a sample site for {Business Name} with direct access explained, specialty pages and an evaluation request, with marked placeholders where your photos would go. Can I email you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range}, then {Care Range} a month for hosting and updates. For a clinic like yours I'd normally quote about {Build Price}.\"\n\"Its main job is confirming the referral: the surgeon sends them, they look you up, and they find a clinic that knows its stuff.\"\n\"Could I take fifteen minutes at the end of a clinic day this week?\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. We start the day it clears.\"",
+    "objections": [
+      {
+        "objection": "Our patients come from physician referrals, not Google.",
+        "handler": "\"Exactly, and every referred patient looks you up before the first visit. The site confirms they've been sent somewhere good, and makes it easy for surgeons' offices to send more.\""
+      },
+      {
+        "objection": "Our EMR company gave us a website.",
+        "handler": "\"Keep the EMR. Their site is a template shared with many clinics. I build the front door that shows your specialties and hands requests to your existing front desk.\""
+      },
+      {
+        "objection": "We can't make claims about outcomes.",
+        "handler": "\"Right, and the site doesn't. It explains what you treat and how, with no promises, no invented testimonials, and every credential from you.\""
+      },
+      {
+        "objection": "Insurance changes too often to put online.",
+        "handler": "\"Then the page explains how to check coverage with your front desk, and you text me when a plan changes. It's covered by the monthly fee.\""
+      },
+      {
+        "objection": "We're too busy to write content.",
+        "handler": "\"You won't. I interview you for half an hour, write the specialty pages, and you approve them. Most clinics change a few words.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For your clinic about {Build Price}, because of the specialty and direct access pages. A couple of patients completing a plan of care covers it.\""
+      }
+    ],
+    "email": {
+      "subject": "A clinic site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for physical therapy clinics around {City}. {Business Name} has strong reviews, but no site where a referred patient can confirm your specialties, see whether they need a prescription, and request an evaluation.\n\nI built a sample first rather than ask for your time: direct access explained with placeholders for your wording, a pelvic floor page, return to sport, post-surgery rehab, home exercise access and an evaluation request that keeps health details off the form. It uses marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and updates. If not, no problem, it comes down at the end of the month.\n\nWorth fifteen minutes at the end of a clinic day?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build websites for physical therapy clinics in {City}, and I've put together a sample for {Business Name}. I'll email the link for after clinic hours. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, a quick note: the {Business Name} clinic demo comes down this Friday.\n\nReply if you'd like me to hold onto it a bit longer.",
+    "nurture": "Hi {Owner}, fall sports and the new year deductible reset both bring a wave of new physical therapy patients, and clinics with a clear evaluation request catch more of them. Thought of you.\n\nThe sample's still here and nothing's changed on price. {demo-link} if you'd like another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to a couple of patients completing a plan of care, not a single visit.",
+      "The site's job is credibility for referred patients and surgeons, so price the specialty pages as the core work.",
+      "Pelvic floor pages need careful wording and a review round; price them above a standard specialty page.",
+      "Never compete with the EMR. Price any scheduling link-up as a separate line.",
+      "Direct access and insurance wording stays as placeholders until the clinic supplies it.",
+      "Keep monthly add-ons below the cost of one visit."
+    ],
+    "lineItems": [
+      {
+        "item": "Specialty page (each)",
+        "min": 200,
+        "max": 500,
+        "unit": "per-page",
+        "description": "Max when written from a therapist interview, with who it's for, what a visit involves and a request link.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Pelvic floor therapy page",
+        "min": 300,
+        "max": 700,
+        "unit": "per-page",
+        "description": "Max with consent and chaperone explanations, therapist choice and a separate private request route.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Surgeon protocol and prehab page",
+        "min": 250,
+        "max": 600,
+        "unit": "per-page",
+        "description": "Max when it lists the local surgeons whose protocols the clinic follows, with their permission, and a post-op booking path.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Referring provider page with order upload",
+        "min": 300,
+        "max": 800,
+        "unit": "one-time",
+        "description": "Max with a secure order upload route through their existing system and a downloadable referral pad.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Scheduling link-up with the clinic EMR",
+        "min": 400,
+        "max": 1000,
+        "unit": "one-time",
+        "description": "Max when evaluation slots are pulled live from their existing scheduling system.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Exercise video library page",
+        "min": 250,
+        "max": 700,
+        "unit": "one-time",
+        "description": "Max with categories by body area, the clinic's own filmed videos and a question link to the therapist.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Spanish-language clinic pages",
+        "min": 400,
+        "max": 1000,
+        "unit": "one-time",
+        "description": "Max when specialty, direct access, insurance and request pages are translated and checked by bilingual staff.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Clinic floor and therapist photo session",
+      "min": 300,
+      "max": 800,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"One morning photographing the therapists, the gym floor and the treatment rooms, with staff as models, so the rehab clinic looks like itself.\"",
+      "when": "Month 2, before patients arrive."
+    },
+    {
+      "name": "Google profile upkeep for the PT clinic",
+      "min": 150,
+      "max": 300,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Weekly physical therapy posts on the clinic's Google profile with specialties, hours and direct access notes, so searches for a physio nearby find a current clinic.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Review requests at discharge",
+      "min": 79,
+      "max": 179,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"When a patient finishes their plan of care, they get a polite note asking about their experience at the clinic, never about their condition.\"",
+      "when": "Day 30. Wording approved by the clinic first."
+    },
+    {
+      "name": "Surgeon office outreach kit",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A one-page summary of the rehab clinic's specialties, protocols and openings, a referral pad and an email for orthopedic and sports medicine offices.\"",
+      "when": "Month 3, once the referring provider page is live."
+    },
+    {
+      "name": "Exercise video filming day",
+      "min": 400,
+      "max": 1000,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A day filming the therapists demonstrating the home exercises they prescribe most, for the video library and for social posts.\"",
+      "when": "Month 4, once the exercise library page is planned."
+    },
+    {
+      "name": "Community workshop promotion",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A flyer, an event page and posts for the clinic's free talks, like running injury prevention or postpartum return to exercise.\"",
+      "when": "Six weeks before each workshop."
+    },
+    {
+      "name": "Monthly patient newsletter for the clinic",
+      "min": 200,
+      "max": 500,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A calm monthly physical therapy email to past patients: a mobility tip the therapists approve, workshop dates and how to come back if something flares.\"",
+      "when": "Month 3, once the patient email list is in one place."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Orthopedic surgery practices that refer",
+        "whoPays": "The surgical practice",
+        "min": 3000,
+        "max": 8000,
+        "unit": "one-time",
+        "pitchLine": "\"The orthopedic practice that sends you post-op patients has a site with no rehab guidance. I build careful clinical pages already, and you can introduce me.\"",
+        "whyItWorks": "Surgeons and their rehab clinics are close partners. The PT owner's introduction is the warm route."
+      },
+      {
+        "route": "High school athletic trainers and club teams",
+        "whoPays": "The club, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The club whose athletes come to your sports rehab clinic registers players from a spreadsheet. A registration site with you as care partner helps both.\"",
+        "whyItWorks": "Club directors trust the clinic that looks after their athletes."
+      },
+      {
+        "route": "Personal trainers and gyms that take discharged patients",
+        "whoPays": "The trainer, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The trainer you hand patients to after discharge books from a bio link. A small site listing your clinic as the rehab partner sends people back both ways.\"",
+        "whyItWorks": "Clinic-to-gym handoffs are routine. Each side wants the other to look professional."
+      },
+      {
+        "route": "Midwives and OB practices referring pelvic floor patients",
+        "whoPays": "The midwifery practice, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The midwifery practice that sends postpartum patients to your pelvic floor therapist has a single page. I'd build a calm practice site with the same privacy care.\"",
+        "whyItWorks": "Pelvic floor referrals come from a tight circle of birth providers."
+      },
+      {
+        "route": "Durable medical equipment and brace shops",
+        "whoPays": "The equipment shop",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The brace and mobility equipment shop your patients visit has a catalogue nobody can search. A site with product categories and fitting appointments would help.\"",
+        "whyItWorks": "Equipment shops depend on clinic referrals. The PT owner opens the door."
+      },
+      {
+        "route": "Running stores that host injury talks",
+        "whoPays": "The store, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The running store where your physical therapists give talks needs an events page and a run club sign-up. Small build, warm introduction.\"",
+        "whyItWorks": "Running stores and sports rehab clinics share the same customers."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Post-op logistics assistant for the surgical practice",
+        "whoPays": "The surgical practice, monthly",
+        "min": 200,
+        "max": 500,
+        "unit": "monthly",
+        "pitchLine": "\"Patients asking the surgeon's office when to start rehab and where get the practice's approved instructions and a list of partner PT clinics, and medical questions go to staff.\"",
+        "whyItWorks": "Surgical offices field the same post-op logistics calls daily. Admin-only answers carry no clinical risk."
+      },
+      {
+        "route": "Registration helper for the sports club",
+        "whoPays": "The club",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"When a player gets hurt, the club's coaches and families can look up its injury reporting steps and return-to-play checklist, with the sports rehab clinic named as the first call.\"",
+        "whyItWorks": "Clubs drown in parent questions at the start of every season."
+      },
+      {
+        "route": "Programme drafting for the personal trainer",
+        "whoPays": "The trainer, monthly",
+        "min": 49,
+        "max": 129,
+        "unit": "monthly",
+        "pitchLine": "\"The trainer enters a discharged rehab client's goals and the clinic's handoff notes the client shared, and gets a draft training plan to review.\"",
+        "whyItWorks": "Trainers spend evenings writing plans. A draft they control saves hours."
+      },
+      {
+        "route": "Visit logistics assistant for the midwifery practice",
+        "whoPays": "The midwifery practice, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"Expecting parents asking the midwives about visit schedules, fees and classes get approved answers, including the pelvic floor clinic they recommend.\"",
+        "whyItWorks": "Small birth practices miss calls constantly. Logistics-only answers are safe."
+      },
+      {
+        "route": "Fitting appointment booker for the brace shop",
+        "whoPays": "The equipment shop, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"Patients sent by the PT clinic for a brace ask about stock and fitting times and book a slot, answered from the shop's own catalogue.\"",
+        "whyItWorks": "Equipment shops lose referred patients who can't get through on the phone."
+      },
+      {
+        "route": "Race-week question assistant for the running store",
+        "whoPays": "The running store",
+        "min": 600,
+        "max": 1500,
+        "unit": "one-time",
+        "pitchLine": "\"Runners asking about the store's group runs, race packet pickup and the next injury talk with the physical therapists get answers from the store's own pages.\"",
+        "whyItWorks": "Race weeks flood small stores with the same questions."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Plan-of-care visit reminders",
+      "kind": "automation",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Physical therapy patients get a reminder before each visit and a nudge when the next one in their plan of care isn't booked yet.\"",
+      "whenAndWhatItTakes": "Day 30. Needs the EMR's schedule export or integration, text consent and the clinic's wording. No clinical details in texts."
+    },
+    {
+      "name": "Evaluation request routing by specialty",
+      "kind": "software",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Evaluation requests from the site reach the front desk tagged pelvic floor, sports rehab or post-op, so the right therapist's slot is offered on the call-back.\"",
+      "whenAndWhatItTakes": "At build. Needs the specialties and which therapists hold them."
+    },
+    {
+      "name": "Clinic line answering during treatment hours",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 199,
+      "monthlyMax": 449,
+      "pitchLine": "\"When the front desk is checking in a full gym, calls about hours, direct access and insurance get answered and evaluations booked; clinical questions go to a therapist.\"",
+      "whenAndWhatItTakes": "Month 3, once they trust you. Needs approved wording and schedule access. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Review reply drafts that protect patient privacy",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Each rehab clinic review gets a thank-you drafted for approval that never confirms the reviewer was treated or mentions an injury.\"",
+      "whenAndWhatItTakes": "Month 2, alongside discharge review requests. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Cancellation backfill from the clinic waitlist",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 49,
+      "monthlyMax": 99,
+      "pitchLine": "\"A physical therapy visit cancels and patients who asked for an earlier time with that therapist are offered it by text.\"",
+      "whenAndWhatItTakes": "Month 3. Needs schedule access and an opt-in waitlist."
+    },
+    {
+      "name": "Referral order intake tracker",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Every physician order is logged as received, patient contacted, evaluation booked, so no referral sits in the fax tray for a week.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their referral steps. Tracks status only; clinical documents stay in the EMR."
+    },
+    {
+      "name": "Insurance verification checklist",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"The front desk works through the same coverage questions for every new PT patient, so visit limits and copays are known before the evaluation.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their current verification steps. Front desk tool, linked to their secure system."
+    },
+    {
+      "name": "Cash-pay visit package billing",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Cash-pay sports rehab and wellness visit packages are sold online and tracked, so the front desk sees visits used and left.\"",
+      "whenAndWhatItTakes": "Month 4, for clinics with cash-pay services. Needs package rules checked by their own adviser and a payment account."
+    },
+    {
+      "name": "Direct access question responder",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"'Do I need a prescription for physical therapy' gets answered from the clinic's own approved direct access wording, with a link to request an evaluation.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the clinic's approved direct access and insurance wording. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Exercise video library with patient access codes",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 49,
+      "monthlyMax": 149,
+      "pitchLine": "\"Patients open the clinic's own home exercise videos with a code from their therapist, instead of hunting through random clips.\"",
+      "whenAndWhatItTakes": "Month 5, after the exercise video filming day. Needs the videos and a list of programmes."
+    },
+    {
+      "name": "Workshop sign-up and reminders",
+      "kind": "software",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"People sign up for the clinic's free running injury or postpartum fitness talks online and get a reminder the day before.\"",
+      "whenAndWhatItTakes": "Month 4, when they run talks. Needs dates and room capacity."
+    },
+    {
+      "name": "Rehab tip posts drafted from therapist notes",
+      "kind": "ai",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"A therapist jots a few lines on a rehab topic, and a post in the clinic's voice comes back with any promise-of-results wording flagged.\"",
+      "whenAndWhatItTakes": "Month 3. Needs past posts and the clinic's do-not-say list. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Post-discharge check-in",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 49,
+      "monthlyMax": 99,
+      "pitchLine": "\"A few months after discharge, former physical therapy patients get a short note with workshop dates and how to come back if they need to.\"",
+      "whenAndWhatItTakes": "Month 5. Needs discharge dates and an opt-out line."
+    },
+    {
+      "name": "Surgeon progress letter drafts",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"The therapist's visit notes become a draft progress letter for the referring surgeon, reviewed and signed by the therapist inside the clinic's secure system.\"",
+      "whenAndWhatItTakes": "Month 6, only inside their secure system. Needs the letter template the clinic already uses. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Specialty matcher for the request form",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"A visitor says in their own words why they want physical therapy and is routed to a pelvic floor, sports rehab or post-op evaluation, never given a diagnosis.\"",
+      "whenAndWhatItTakes": "Month 5. Needs the clinic's routing rules, reviewed by a therapist. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Front desk policy search for the rehab clinic",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"New front desk staff search the PT clinic's own policies on referrals, cancellations and cash-pay packages instead of pulling a therapist off the floor.\"",
+      "whenAndWhatItTakes": "Month 6. Needs written policies with every answer approved. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Spanish reply drafts for the clinic",
+      "kind": "ai",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1200,
+      "monthlyMin": 59,
+      "monthlyMax": 149,
+      "pitchLine": "\"A Spanish-speaking patient asking about rehab visit times or coverage gets an answer back in Spanish, drafted for the front desk to check and send.\"",
+      "whenAndWhatItTakes": "Month 4, for clinics with Spanish-speaking patients. Needs translated wording checked by staff. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Referrals by office dashboard",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"See which surgeons and physicians send physical therapy referrals each month, which ones slowed down, and which never got a lunch visit.\"",
+      "whenAndWhatItTakes": "Month 7, once the referral order tracker has a few months of data."
+    },
+    {
+      "name": "Workshop follow-up texts",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 500,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"The day after a clinic workshop, attendees get the slides, the therapist's tips and a link to request an evaluation if they want one.\"",
+      "whenAndWhatItTakes": "Month 4, alongside workshop sign-up. Needs attendees' contact consent."
+    },
+    {
+      "name": "Therapist, room and equipment board",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 99,
+      "monthlyMax": 199,
+      "pitchLine": "\"See which therapists, treatment rooms and gym equipment are booked across the week, so new evaluations don't stack up behind one busy physio.\"",
+      "whenAndWhatItTakes": "Month 6, for clinics with several therapists. Needs schedules and room lists."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the referral front door for independent PT clinics",
+      "whoPays": "Each clinic, monthly",
+      "min": 79,
+      "max": 249,
+      "unit": "monthly",
+      "pitchLine": "\"I built direct access, specialty and referral pages for one physical therapy clinic. Every independent PT owner on an EMR template site needs the same.\"",
+      "whyItWorks": "Independent clinics compete with hospital-owned rehab. A credible front door is the cheapest way to hold referrals."
+    },
+    {
+      "route": "State physical therapy association member toolkit",
+      "whoPays": "The association",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer every member clinic a site template with direct access and specialty pages built in, with placeholders for each state's wording.\"",
+      "whyItWorks": "Associations campaign on direct access. A template that explains it to the public serves their mission."
+    },
+    {
+      "route": "Physical therapy partner networks",
+      "whoPays": "The network, per location",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Your partner clinics each need local specialty and referral pages under the network brand. I build one approved rehab template and roll it out.\"",
+      "whyItWorks": "Networks grow by adding clinics and need each to look consistent and local."
+    },
+    {
+      "route": "Orthopedic groups opening their own rehab clinics",
+      "whoPays": "The orthopedic group",
+      "min": 4000,
+      "max": 12000,
+      "unit": "one-time",
+      "pitchLine": "\"Your group is opening in-house physical therapy. It needs its own specialty, protocol and evaluation pages, which I've already built for an independent clinic.\"",
+      "whyItWorks": "Groups adding rehab need a separate front door quickly, and you have the proof."
+    },
+    {
+      "route": "Pelvic health training institutes",
+      "whoPays": "The institute",
+      "min": 5000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Patients search for a pelvic floor therapist who trained with you. A locator tied to your course records sends them to the right clinic.\"",
+      "whyItWorks": "Institutes want their training to reach patients. A locator is proof of value for every course."
+    },
+    {
+      "route": "White-label rehab clinic template for healthcare agencies",
+      "whoPays": "The agency, per site",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency builds PT sites from a general medical template. License my rehab template with direct access and pelvic floor pages built in.\"",
+      "whyItWorks": "Agencies avoid regulated specialty writing. You sell the hard part."
+    },
+    {
+      "route": "Workers' compensation case management firms",
+      "whoPays": "The case management firm",
+      "min": 4000,
+      "max": 12000,
+      "unit": "one-time",
+      "pitchLine": "\"Your case managers search phone lists for rehab clinics near each injured worker. A provider directory by town and specialty speeds every referral.\"",
+      "whyItWorks": "Case managers are judged on how fast workers start care. A directory is a measurable gain."
+    },
+    {
+      "route": "Groups acquiring physical therapy clinics",
+      "whoPays": "The acquisition group",
+      "min": 5000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Each physical therapy clinic you acquire arrives with its own dated site. I move them onto one template and keep their local referral pages intact.\"",
+      "whyItWorks": "Roll-ups need consistency fast and buy in batches."
+    },
+    {
+      "route": "School districts and youth leagues",
+      "whoPays": "The district or league",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Your athletic department needs a page explaining injury reporting and return-to-play steps, with partner sports rehab clinics listed.\"",
+      "whyItWorks": "Districts want a clear process for parents, and the sports rehab client is already their partner."
+    },
+    {
+      "route": "Practice consultants for PT clinic owners",
+      "whoPays": "The consulting firm, annually",
+      "min": 3000,
+      "max": 10000,
+      "unit": "per-year",
+      "pitchLine": "\"Your PT owner clients all need a referral-ready site. License my rehab clinic template as part of your programme.\"",
+      "whyItWorks": "Consultants want deliverables for many clinics without building them."
+    },
+    {
+      "route": "Rehab clinics in another region",
+      "whoPays": "New PT clients in a new metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"Physical therapy clinics far from {City} take none of my client's referrals, so they get the same direct access, pelvic floor and post-op pages.\"",
+      "whyItWorks": "Careful clinical wording is slow to write. Reusing it in a new region is margin."
+    },
+    {
+      "route": "Rescue unfinished clinic site projects",
+      "whoPays": "The stuck clinic",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "pitchLine": "\"A freelancer started your physical therapy site and stopped before the specialty pages. I can finish it on a rehab structure I've already shipped.\"",
+      "whyItWorks": "Stuck clinics already budgeted the work and want it finished."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Clinic site build plus care plan, one contract",
+      "min": 2000,
+      "max": 3500,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The physical therapy site and the care plan go on one contract, so a new therapist or specialty is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 14,
+      "offer": "Referral order intake tracker",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "trigger": "They mention a physician order that sat in the fax tray before anyone called the patient.",
+      "line": "\"That lost physician order is exactly what a referral tracker catches.\""
+    },
+    {
+      "rung": 3,
+      "day": 30,
+      "offer": "Plan-of-care visit reminders and discharge review requests",
+      "min": 79,
+      "max": 179,
+      "unit": "monthly",
+      "trigger": "The schedule shows patients dropping off before their plan of care is complete.",
+      "line": "\"Patients leaving rehab halfway usually just need a reminder. Let's add that, and a careful review request at discharge.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Clinic floor and therapist photo session",
+      "min": 300,
+      "max": 800,
+      "unit": "per-shoot",
+      "trigger": "Therapist bios still show placeholders.",
+      "line": "\"One morning on the clinic floor gives every physical therapist a real photo.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Surgeon office outreach kit",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "trigger": "They say they want more referrals from a particular orthopedic group.",
+      "line": "\"The referring provider page is live. Let's put the rehab clinic in front of that orthopedic group.\""
+    },
+    {
+      "rung": 6,
+      "day": 120,
+      "offer": "Exercise video filming day",
+      "min": 400,
+      "max": 1000,
+      "unit": "per-shoot",
+      "trigger": "Patients keep asking for videos of their home exercises.",
+      "line": "\"Those home exercise requests become a clinic video library patients actually use.\""
+    },
+    {
+      "rung": 7,
+      "day": 180,
+      "offer": "Clinic line answering during treatment hours",
+      "min": 1000,
+      "max": 2500,
+      "unit": "one-time",
+      "trigger": "They mention calls ringing out while the front desk checks in patients.",
+      "line": "\"New physical therapy patients calling during the busy hour get answered and booked.\""
+    },
+    {
+      "rung": 8,
+      "day": 270,
+      "offer": "Introduction to the orthopedic surgery practice",
+      "min": 3000,
+      "max": 8000,
+      "unit": "one-time",
+      "trigger": "A referring surgeon's office asks who built the clinic site.",
+      "line": "\"The orthopedic practice that sends you patients asked about the site. Would you introduce me?\""
+    }
+  ]
+}
