@@ -1,0 +1,842 @@
+{
+  "schemaVersion": 1,
+  "category": "Septic & sewer",
+  "slug": "septic-sewer",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Mech family batch, quote archetype. Rural and suburban, urgent and nearly invisible online. County permit and inspection rules vary, so copy uses bracketed placeholders and never states a requirement. No equipment or tank brands. Ranges are planning figures."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "How often to pump your septic tank",
+      "contains": "Tank size, people in the house, garbage disposal use, the date of the last pump-out, and a reminder sign-up for the next one",
+      "why": "Most septic owners have no idea when the tank was last pumped. A plain schedule turns a once-a-crisis customer into a booked pump-out every few years."
+    },
+    {
+      "section": "Drain field warning signs",
+      "contains": "Soggy ground or bright green strips over the leach field, slow drains through the house, gurgling, sewage smell in the yard, and backups in the lowest drain",
+      "why": "Owners search symptoms before they search for a company. Naming the signs plainly tells them whether it's a pump-out or a drain field problem worth a visit."
+    },
+    {
+      "section": "Septic inspection for home sales",
+      "contains": "What a transfer or point-of-sale septic inspection covers, bracketed county and lender requirements, how long before closing to book, and a sample inspection report",
+      "why": "Realtors and buyers need the septic inspection done on a deadline. A clear page with a sample report wins the booking from the agent's phone."
+    },
+    {
+      "section": "New septic system and perc test path",
+      "contains": "Soil and perc test, county permit, system design, conventional versus mound or aerobic treatment unit, install timeline and final county inspection",
+      "why": "Rural land buyers and new builders start from zero. The installer who lays out the steps gets the whole job, from the perc test to the final inspection."
+    },
+    {
+      "section": "Sewer line camera and trenchless options",
+      "contains": "Camera inspection of the sewer lateral, roots and collapsed clay or cast iron pipe, trenchless lining versus digging, and who owns the line up to the city main",
+      "why": "Town homeowners with a backup want to know if the yard gets torn up. Showing trenchless options and the camera footage decides the job."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C39",
+      "siteType": "local-conversion",
+      "name": "County Road",
+      "heroLayout": "split-photo",
+      "mood": [
+        "rooted",
+        "honest",
+        "steady"
+      ],
+      "bestFor": "Family-run septic pumping outfits with a truck or two serving rural roads and small towns",
+      "pairsWithTier": "starter",
+      "headlineSample": "Septic pumping and repair across {City} and the county roads",
+      "whyItFits": "Brick, linen and a slab display face feel like a family name painted on a pump truck, which is exactly the trust a rural septic owner is looking for."
+    },
+    {
+      "id": "b",
+      "themeId": "C50",
+      "siteType": "emergency-response",
+      "name": "Backup Hotline",
+      "heroLayout": "type-led",
+      "mood": [
+        "urgent",
+        "plain",
+        "capable"
+      ],
+      "bestFor": "Septic and sewer contractors that answer backups, alarms and overflowing tanks as well as quoted installs",
+      "pairsWithTier": "standard",
+      "headlineSample": "Septic backup or sewer line clog in {City}? Call now",
+      "whyItFits": "The family's own combo, even for a quote-led trade: a sewage backup is an emergency first and a quote second, and mono labels suit tank sizes and service fees."
+    },
+    {
+      "id": "c",
+      "themeId": "C32",
+      "siteType": "editorial-trust",
+      "name": "Perc to Permit",
+      "heroLayout": "card-stack",
+      "mood": [
+        "patient",
+        "grounded",
+        "thorough"
+      ],
+      "bestFor": "Septic installers designing new systems for rural builds, land buyers and drain field replacements",
+      "pairsWithTier": "premium",
+      "headlineSample": "New septic systems in {City}, from perc test to final inspection",
+      "whyItFits": "Olive and a bookish serif slow the reader down for a long, permit-heavy decision where the steps matter more than speed."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "Listing with no website",
+      "line": "{Business Name} is on the map with a pump truck in the profile shot and no website. When someone's septic alarm goes off, they want to see who comes to their road before they dial.",
+      "hook": "Open their Maps listing and confirm there is no Website button. Screenshot it for when they reply.",
+      "linkLine": "The septic site that listing could link to: {demo-link}"
+    },
+    {
+      "angle": "Facebook as the only page",
+      "line": "Your listing points to Facebook, where the septic posts sit between everything else on the feed. A buyer needing a septic inspection before closing wants a form and a sample report.",
+      "hook": "Tap their Website link and confirm it lands on Facebook. Note the latest septic or sewer post.",
+      "linkLine": "A septic page made for buyers and realtors: {demo-link}"
+    },
+    {
+      "angle": "Abandoned free site",
+      "line": "The septic site on your listing still has a free-host banner and a dead contact page. Rural customers already struggle to find a septic company, and that page makes it harder.",
+      "hook": "Open the site and look for a builder banner, an old copyright year or a dead form. Note which one you found.",
+      "linkLine": "Same septic company, current and easy on a phone: {demo-link}"
+    },
+    {
+      "angle": "Unreadable on a phone",
+      "line": "On my phone, your septic page shows a desktop layout and a number I couldn't tap. Someone with sewage coming up a floor drain is holding a phone, not sitting at a computer.",
+      "hook": "Only if they have a site. Load it on a phone and note whether the number taps and text is readable. Screenshot it for when they reply.",
+      "linkLine": "Your septic site rebuilt for a phone: {demo-link}"
+    },
+    {
+      "angle": "No way to request a pump-out",
+      "line": "There's no way to book a septic pump-out with {Business Name} except calling. Most people remember the tank on a Sunday night and would rather send the address and tank size.",
+      "hook": "Check the listing, the social pages and any site for a request form. If there is none, the angle holds.",
+      "linkLine": "A pump-out request that asks for tank size and lid location: {demo-link}"
+    },
+    {
+      "angle": "Realtor deadline inspections",
+      "line": "A lot of septic inspection calls come from realtors racing a closing date. A page with the inspection steps and a request form gets the agent's booking without three phone calls.",
+      "hook": "Look for any mention of real estate, home sale or transfer inspections in posts or reviews. Quote it if you find it.",
+      "linkLine": "A septic inspection page built for closing deadlines: {demo-link}"
+    },
+    {
+      "angle": "Review about a weekend backup",
+      "line": "One review says you came out on a holiday weekend when the septic backed up into the basement. That's the story the next panicked owner needs to read, and it's stuck on the map.",
+      "hook": "Read their reviews and copy one specific phrase about a backup, a pump-out or a drain field. Quote it back if they reply.",
+      "linkLine": "Those septic reviews on a page owners actually read: {demo-link}"
+    },
+    {
+      "angle": "Spring thaw and wet ground",
+      "line": "Spring thaw and heavy rain are when saturated drain fields start backing up across {City}. The septic company that's easy to find that week takes the calls.",
+      "hook": "Use this in late winter or before the rainy season. Name the season in the reply.",
+      "linkLine": "Ready before the wet-season septic calls: {demo-link}"
+    },
+    {
+      "angle": "Alarms and backups after hours",
+      "line": "Septic alarms and sewer backups don't wait for business hours. If that call rolls to a full mailbox, the owner keeps dialling until another pump truck answers.",
+      "hook": "Call their listed number after hours. If it goes to a full or generic voicemail, the angle holds.",
+      "linkLine": "A septic backup request that works after hours: {demo-link}"
+    },
+    {
+      "angle": "Hiring a truck driver",
+      "line": "Saw you're looking for a CDL driver for the pump truck. Drivers check whether a septic company looks steady before they switch, and there's nothing online to show them.",
+      "hook": "Only if they posted a hiring note, a story or a truck sign. Note the date of the post.",
+      "linkLine": "A septic company page with a careers section: {demo-link}"
+    },
+    {
+      "angle": "Rural roads and townships",
+      "line": "Your reviews mention septic work out in townships well past {City}, but nothing tells someone on a farm road near {Neighborhood} your truck goes there. That's exactly where septic lives.",
+      "hook": "Find townships or roads named in reviews or posts. Use the most rural one.",
+      "linkLine": "A septic page for each township you serve: {demo-link}"
+    },
+    {
+      "angle": "Paying for a drain field",
+      "line": "If {Business Name} offers payments on a new drain field or septic system, say so on a page. That's a number nobody budgets for, and they put off calling until it's worse.",
+      "hook": "Only if they mention financing somewhere: a post, a review, the truck. If not, skip this angle.",
+      "linkLine": "Septic payment options, explained before the quote: {demo-link}"
+    },
+    {
+      "angle": "County registration on show",
+      "line": "Your septic installer registration is on the county or state list, but owners never look there. Putting it on a page is the quickest way to stand out from the guy with a backhoe and no permit.",
+      "hook": "Look them up on the state or county installer list. Note that a record exists; never quote a number you didn't see.",
+      "linkLine": "Registration, insurance and permits on one septic page: {demo-link}"
+    },
+    {
+      "angle": "Everybody knows the truck",
+      "line": "Out here everyone knows your septic truck, so maybe you've never needed a site. New people moving onto acreage don't know anyone yet, and they search.",
+      "hook": "Look for reviews from new arrivals or posts about new builds. Quote it back.",
+      "linkLine": "Where newcomers would find your septic company: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "That {specific recent job} you posted is a clean septic install, level tank and tidy backfill. A buyer comparing installers should see that first, not a feed of road shots.",
+      "hook": "Pick their newest finished job and name it exactly: tank, drain field, mound or sewer line, and the township if tagged.",
+      "linkLine": "That septic job, front and centre: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "{Owner}, saw the {specific recent job} on your page, a clean septic job with tidy backfill.\n\nI searched for septic companies around {City} and found {Business Name} on social, but no site where someone can book a pump-out, request an inspection before a home sale or read the warning signs. I sketched a sample septic page, with marked placeholders where your photos would go.\n\nWant to see it?",
+    "dm2": "{Owner}, following up in case this got buried while you were out on the truck. The sample septic site for {Business Name}: {demo-link}\n\nIt has a pump-out request that asks for tank size and lid location, an inspection page for realtors on a deadline, and a drain field warning signs guide. If it's not for you, say so and I'll leave it.",
+    "call": "\"Hi, {Owner}? {Your Name} here. I build websites for septic and sewer companies around {City}. I sent you a message about a sample site, did it come through?\"\n\nIF NO:\n\"No worries, you're on the road all day. I built a sample septic site for {Business Name} with a pump-out request, a home-sale inspection page and a drain field guide, with marked placeholders where your photos would go. Can I text you the link?\"\n\nIF YES:\n\"What did you think of it?\"\n → let them talk, don't fill the silence\n\"It's not ads and not a lead service, it's a site you own. The build runs {Build Range} depending on how many township and service pages you want, then {Care Range} a month for hosting and changes. For your outfit I'd say about {Build Price}, less than one drain field repair.\"\n\"Could I walk you through it for ten minutes, maybe early one morning before the first pump-out?\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. When it clears I start, and the inspection page goes live first so realtors can find you.\"",
+    "objections": [
+      {
+        "objection": "Everyone out here already knows us.",
+        "handler": "\"The locals do. New owners on acreage and realtors from the city don't, and they search. The site is for the people who haven't met your truck yet.\""
+      },
+      {
+        "objection": "We're booked weeks out on pump-outs already.",
+        "handler": "\"Then the site does triage. Routine pump-outs book themselves into open slots online, and the phone stays free for backups and installs.\""
+      },
+      {
+        "objection": "I can't put prices on septic work. Every system is different.",
+        "handler": "\"We won't. The page explains how you quote, asks for tank size and the last pump date, and you price it. Nothing goes up you haven't approved.\""
+      },
+      {
+        "objection": "Most of our work comes from realtors.",
+        "handler": "\"Then the inspection page is for them. Agents book the septic inspection online with the closing date, and you stop playing phone tag.\""
+      },
+      {
+        "objection": "My wife handles the office and the Facebook page.",
+        "handler": "\"Good, she'll like this. The site takes the bookings she's writing down by hand, and she can still post to Facebook whenever she wants.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you, about {Build Price}, because it's a pump-out request, an inspection page and a few township pages. One new system install pays for it many times over.\""
+      }
+    ],
+    "email": {
+      "subject": "Septic site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for septic and sewer companies around {City}. {Business Name} has good reviews, but there's no site an owner or a realtor finds when they need a pump-out, an inspection before closing or help with a backup.\n\nI built a sample instead of asking for a meeting: a pump-out request that asks for tank size and lid location, a home-sale septic inspection page, a drain field warning signs guide and your registration and insurance shown plainly, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, then {Care Range} a month for hosting and changes. If not, it comes down at the end of the month.\n\nTen minutes on the phone this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"{Owner}, it's {Your Name}. I build sites for septic companies around {City} and made a sample for {Business Name}, pump-out request and inspection page included. I'll text the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm taking the {Business Name} septic demo down Friday to clear space.\n\nWant it kept up? A yes or no is fine.",
+    "nurture": "Hi {Owner}, the spring thaw and the home-selling season are both close, and that's when septic calls stack up. Thought of you.\n\nThe septic site is still ready, same price. {demo-link} if you'd like another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to a fraction of one drain field repair. Septic owners think in pump-outs and installs, not web hours.",
+      "The home-sale inspection page is the wedge with realtors; price it as its own line.",
+      "Quote pumping, inspection, new system and sewer line pages separately. Each has a different buyer.",
+      "Never state a county rule, setback or inspection requirement; use bracketed fields the owner fills.",
+      "Township pages matter more than city pages here. Price per township with jobs behind it.",
+      "Pumping-only outfits need a lighter scope than installers who design systems. Size it to what they sell."
+    ],
+    "lineItems": [
+      {
+        "item": "Pump-out request with tank details",
+        "min": 400,
+        "max": 1000,
+        "unit": "one-time",
+        "description": "Max with tank size, last pump date, lid location sketch, gate code field and routing to the dispatcher.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Home-sale septic inspection page and form",
+        "min": 500,
+        "max": 1200,
+        "unit": "one-time",
+        "description": "Max with closing date, realtor contact fields, a sample report and bracketed county requirements.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "New system path from perc test to final",
+        "min": 600,
+        "max": 1500,
+        "unit": "one-time",
+        "description": "Max when it covers conventional, mound and aerobic systems with a step timeline and a land-buyer request form.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Sewer line camera and trenchless page",
+        "min": 400,
+        "max": 1000,
+        "unit": "one-time",
+        "description": "Max with marked placeholders for camera stills, a dig versus lining comparison and the property-line ownership note.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Township service-area page (each)",
+        "min": 200,
+        "max": 450,
+        "unit": "per-page",
+        "description": "Max when each page has its own jobs, a local review and that county's bracketed permit notes.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Pump-out reminder sign-up",
+        "min": 300,
+        "max": 800,
+        "unit": "one-time",
+        "description": "Max when it takes tank size and household size and schedules a reminder text years ahead.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Review requests after each pump-out",
+      "min": 99,
+      "max": 249,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"After the tank is pumped and the lids are back, the owner gets a text asking how the septic crew did. Rural reviews are rare, so each one counts.\"",
+      "when": "Day 30. The easiest second sale."
+    },
+    {
+      "name": "Google profile upkeep for septic service",
+      "min": 200,
+      "max": 400,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Your Google profile lists every township you cover, posts each septic install and answers questions, so the map shows a company that's active on those roads.\"",
+      "when": "Day 30, once the site is live."
+    },
+    {
+      "name": "Realtor septic inspection packet",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A one-page packet for every listing agent in the county explaining the septic inspection, how far ahead to book and the online request.\"",
+      "when": "Month 2, before the spring selling season."
+    },
+    {
+      "name": "Pump truck lettering artwork",
+      "min": 300,
+      "max": 900,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Your pump truck is the best-known vehicle on every back road. Clean lettering with the site and number makes it work as a septic billboard.\"",
+      "when": "Right after launch, or when a truck is repainted."
+    },
+    {
+      "name": "Septic care mailer to rural routes",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A postcard to rural routes on what not to flush, how often to pump and the warning signs at the drain field, with the septic number on the front.\"",
+      "when": "Month 3, mailed to routes where they already pump."
+    },
+    {
+      "name": "Local Services Ads for septic",
+      "min": 400,
+      "max": 900,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Septic searches are few but urgent. A licence-checked ad catches the backup search before the owner scrolls to a company two counties away.\"",
+      "when": "Month 3, once reviews are flowing and documents are current."
+    },
+    {
+      "name": "New-build and land buyer outreach page",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A page and leave-behind for land agents and rural builders that explains the perc test and septic permit path, ending in a design request.\"",
+      "when": "Month 4, for installers who design new systems."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Excavators who dig for the septic installer",
+        "whoPays": "The excavation contractor, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"Who digs the drain field trenches when you're not running the machine? That excavator needs a site, and your new septic page links to theirs.\"",
+        "whyItWorks": "Septic and excavation crews share almost every install and already refer each other."
+      },
+      {
+        "route": "Rural realtors and land agents",
+        "whoPays": "The realtor or land brokerage",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The land agents who book your septic inspections sell acreage with wells, septic and outbuildings. Their sites rarely explain any of it.\"",
+        "whyItWorks": "Rural agents need specialised listing pages, and the septic company is a trusted vendor."
+      },
+      {
+        "route": "Well drillers and pump installers",
+        "whoPays": "The well contractor, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"Every rural lot needs a well and a septic system, and the setback between them matters. The well driller you work beside needs a site too.\"",
+        "whyItWorks": "Wells and septic go into the same new builds, and both owners already send each other land buyers."
+      },
+      {
+        "route": "Rural home builders",
+        "whoPays": "The home builder",
+        "min": 2500,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"The builders whose new homes you put septic systems under show finished kitchens, not the land prep. Your introduction gets me in to build their site.\"",
+        "whyItWorks": "Builders spend more on sites than trades do, and the septic installer is a voice they trust."
+      },
+      {
+        "route": "Portable toilet and grease trap haulers",
+        "whoPays": "The hauling company",
+        "min": 1500,
+        "max": 3500,
+        "unit": "one-time",
+        "pitchLine": "\"The hauler who takes your overflow or pumps grease traps runs a different service on the same trucks. They need a catalogue-style site.\"",
+        "whyItWorks": "Haulers and septic firms share disposal sites and drivers, and refer work back and forth."
+      },
+      {
+        "route": "Campgrounds and rural venues on septic",
+        "whoPays": "The campground or venue owner",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The campgrounds and wedding barns you pump every season need booking sites far more than septic does. You're already on their property.\"",
+        "whyItWorks": "Rural hospitality owners trust the septic vendor who keeps them open, and their sites are usually poor."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Listing description writer for land agents",
+        "whoPays": "The land brokerage, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"An assistant drafts acreage listings from the agent's notes, with well, septic and access described accurately and flagged for the agent to confirm.\"",
+        "whyItWorks": "Land listings are hard to write and septic details are where agents get caught out."
+      },
+      {
+        "route": "Bid follow-up for the excavator",
+        "whoPays": "The excavation contractor",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"The excavator who digs your septic jobs loses site-prep bids to slow callbacks. Automatic follow-up drafted in their voice fixes it.\"",
+        "whyItWorks": "It's configuration of a tool you've built, and the septic owner's introduction carries trust."
+      },
+      {
+        "route": "Selections assistant for rural builders",
+        "whoPays": "The home builder, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Rural build clients make dozens of choices. An assistant tracks them and flags the ones that affect the septic, like extra bathrooms or a basement bar.\"",
+        "whyItWorks": "Builders lose time to selection changes, and fixture counts change the septic design."
+      },
+      {
+        "route": "Water test report explainer for well drillers",
+        "whoPays": "The well contractor, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"Well owners get lab reports full of numbers. An assistant writes a plain summary the driller reviews and sends, with any septic setback concern noted.\"",
+        "whyItWorks": "Drillers field the same questions on every report, and septic and wells share the same customers."
+      },
+      {
+        "route": "Service request triage for campgrounds",
+        "whoPays": "The campground owner, monthly",
+        "min": 150,
+        "max": 350,
+        "unit": "monthly",
+        "pitchLine": "\"Campers report a smelly or slow restroom at night. An assistant logs it, suggests the first checks and books the septic pump-out if the tank is due.\"",
+        "whyItWorks": "Campgrounds can't afford a closed restroom on a busy weekend, and the septic company gets the call."
+      },
+      {
+        "route": "Route planner for the hauling company",
+        "whoPays": "The hauling company, monthly",
+        "min": 200,
+        "max": 500,
+        "unit": "monthly",
+        "pitchLine": "\"An assistant plans each day's grease trap and portable toilet stops by location and disposal site, and drafts the customer texts.\"",
+        "whyItWorks": "Haulers burn fuel on bad routes, and the septic owner knows exactly which haulers to introduce."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Septic call catcher for the truck",
+      "kind": "automation",
+      "oneTimeMin": 0,
+      "oneTimeMax": 300,
+      "monthlyMin": 99,
+      "monthlyMax": 199,
+      "pitchLine": "\"Calls you miss with the hose running get a text back asking whether sewage is in the house or the alarm is sounding, so backups get called first and pump-outs get booked.\"",
+      "whenAndWhatItTakes": "Day 30. Needs the business number forwarded and the wording approved."
+    },
+    {
+      "name": "Pump-out due-date reminders",
+      "kind": "automation",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Every septic customer gets a text when their tank is due by size and household, with open pump-out days to tap. Years of repeat work, booked automatically.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the customer list with tank sizes and last pump dates, even rough ones."
+    },
+    {
+      "name": "Tank and lid location map",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3500,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Every property's septic tank, lids, drain field and distribution box pinned on a map with notes, so the next driver doesn't spend an hour probing the yard.\"",
+      "whenAndWhatItTakes": "Month 2. Needs drivers to drop a pin and a shot at each job for a season."
+    },
+    {
+      "name": "Septic inspection report builder",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4500,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Tick through tank condition, baffles, levels and drain field checks on a phone, and a clean septic inspection report goes to the realtor before the truck leaves.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their inspection checklist and the county's required form fields, if any."
+    },
+    {
+      "name": "Reply drafts for septic reviews",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1200,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"A plain-spoken reply drafted for each review that mentions the backup, the pump-out or the new drain field, ready to approve from the cab.\"",
+      "whenAndWhatItTakes": "Month 2, with review requests running. Needs ten past replies. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Realtor booking portal for septic inspections",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Agents book the septic inspection against the closing date, upload the seller's records and download the report, without a single phone call to the office.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their inspection slots and report format."
+    },
+    {
+      "name": "Night backup line for septic and sewer",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 3500,
+      "monthlyMin": 250,
+      "monthlyMax": 600,
+      "pitchLine": "\"It answers a sewer backup call at night, tells the owner to stop running water, asks about the alarm and books the first slot, waking the owner only for sewage in the house.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their after-hours rules and fee wording. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Pumping route planner",
+      "kind": "software",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 6000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"Each day's pump-outs ordered by road and disposal site with truck capacity counted, so the driver isn't crossing the county twice.\"",
+      "whenAndWhatItTakes": "Month 4. Needs truck capacities, disposal sites and a few weeks of jobs."
+    },
+    {
+      "name": "Records reader for old septic permits",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"Upload the scanned county septic permit or as-built drawing and it pulls out the tank size, install year and field layout for the job file.\"",
+      "whenAndWhatItTakes": "Month 4. Needs a stack of past permits. Comes with the AI maintenance retainer; a tech checks every extraction."
+    },
+    {
+      "name": "Sewer camera clip report",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3500,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Mark roots, offsets and breaks by footage on the sewer camera run and send the owner a short report with stills and the repair options.\"",
+      "whenAndWhatItTakes": "Month 4, for firms with a camera. Needs two past camera jobs and their wording."
+    },
+    {
+      "name": "Q&A assistant for septic owners",
+      "kind": "ai",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3500,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"It answers 'how often should I pump' and 'is this smell normal' from the septic company's own notes, and books a visit when the answer is 'come look'.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their FAQ notes and service area. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Install quote builder with system options",
+      "kind": "software",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 6000,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"Build a repair, a drain field replacement and a full new septic system option with permit costs, and the owner signs the one they choose.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their pricing for common septic jobs and system types."
+    },
+    {
+      "name": "Spoken notes to septic invoice",
+      "kind": "ai",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3500,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"The driver says the gallons pumped, lids dug and any baffle issue into the phone, and the septic invoice and service note are drafted.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their invoice template and price list. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Aerobic unit service contract tracker",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Every aerobic septic unit under contract with its required service visits, the county report due dates and the last findings, all in one place.\"",
+      "whenAndWhatItTakes": "Month 6, for firms servicing aerobic units. Needs the contract list and any county reporting rules."
+    },
+    {
+      "name": "Deposit and permit-stage billing for installs",
+      "kind": "automation",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"A new septic install bills a deposit at signing, a draw at county approval and the balance after final inspection, each sent on time without the office chasing it.\"",
+      "whenAndWhatItTakes": "Month 6. Needs their draw schedule and payment account."
+    },
+    {
+      "name": "Drain field failure risk notes",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"It reads a year of pump-out notes and flags systems with high levels, solids carryover or soggy fields, so the septic owner can offer a check before a failure.\"",
+      "whenAndWhatItTakes": "Month 7. Needs a year of service notes. Comes with the AI maintenance retainer; it never predicts a failure date."
+    },
+    {
+      "name": "Disposal log and manifest tracker",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3500,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Every load of septage logged by truck, gallons and disposal site, with the monthly manifest ready for the regulator or the treatment plant.\"",
+      "whenAndWhatItTakes": "Month 7. Needs their current manifest forms and disposal sites."
+    },
+    {
+      "name": "Spring thaw alert to past septic customers",
+      "kind": "automation",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"When heavy rain or the thaw is forecast around {City}, past septic customers get a text on easing water use and the number to call if drains slow.\"",
+      "whenAndWhatItTakes": "Month 7. Needs the customer list and a weather feed."
+    },
+    {
+      "name": "Driver training notes from senior pumpers",
+      "kind": "ai",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3500,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"Your senior driver talks through finding buried lids, reading levels and spotting a failing septic field, and it becomes a how-to library for new drivers.\"",
+      "whenAndWhatItTakes": "Month 8. Needs a driver willing to record. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "CDL driver applicant screen",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"Applicants for the pump truck say whether they hold the right CDL class, can handle septage and work early mornings, before anyone calls them.\"",
+      "whenAndWhatItTakes": "Whenever they post a hiring note. Needs must-haves and pay range. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the septic inspection report",
+      "whoPays": "Septic companies, monthly per company",
+      "min": 39,
+      "max": 129,
+      "unit": "monthly",
+      "pitchLine": "\"Every septic company doing home-sale inspections writes reports by hand. I built a clean report builder for one; it works for the whole state.\"",
+      "whyItWorks": "Septic inspection is the same checklist everywhere, and the first client paid for the build."
+    },
+    {
+      "route": "Onsite wastewater association member kit",
+      "whoPays": "The state onsite wastewater association",
+      "min": 1500,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Give every member septic company a site template with a pump-out request, inspection page and registration display.\"",
+      "whyItWorks": "These associations are small, active and keen to raise members' standing with county regulators."
+    },
+    {
+      "route": "Tank maker's installer locator",
+      "whoPays": "The septic tank or treatment unit manufacturer",
+      "min": 6000,
+      "max": 25000,
+      "unit": "one-time",
+      "pitchLine": "\"Owners and builders ask who installs your septic tanks and units locally. A locator with a request form for each installer answers it.\"",
+      "whyItWorks": "Manufacturers depend on installers and have channel budgets but no trade-specific build."
+    },
+    {
+      "route": "County health department septic owner pages",
+      "whoPays": "The county environmental health department",
+      "min": 4000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Your septic owners don't know how often to pump or how to find a registered pumper. A plain owner's page with a registered list fixes that.\"",
+      "whyItWorks": "Counties want fewer failing systems and have outreach money, and a working septic client is proof you know the subject."
+    },
+    {
+      "route": "Septic site template for rural agencies",
+      "whoPays": "The agency, per septic client",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "pitchLine": "\"Rural marketing agencies get asked for septic sites and have nothing ready. License my template with the pump-out and inspection pages built.\"",
+      "whyItWorks": "Agencies serving rural counties lack trade templates and will pay to skip the build."
+    },
+    {
+      "route": "Realtor association septic inspection guide",
+      "whoPays": "The local realtor association",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Your agents lose closings to late septic inspections. A member guide with timelines and a directory of inspecting septic firms prevents that.\"",
+      "whyItWorks": "Associations want to protect deals, and the septic client becomes a featured inspector."
+    },
+    {
+      "route": "Sewer lateral programs for small cities",
+      "whoPays": "The city public works department",
+      "min": 4000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Homeowners don't know they own the sewer line up to the main. A city page explaining it, with a list of licensed sewer contractors, cuts the confused calls.\"",
+      "whyItWorks": "Public works fields the same lateral questions daily, and the sewer client is your proof of expertise."
+    },
+    {
+      "route": "Rural water and septic bundle for land developers",
+      "whoPays": "The land developer",
+      "min": 3000,
+      "max": 9000,
+      "unit": "one-time",
+      "pitchLine": "\"Developers selling rural lots need a page per lot showing perc results, septic options and well notes. I've built the septic side already.\"",
+      "whyItWorks": "Developers sell lots faster when buyers understand the septic path, and they have budgets."
+    },
+    {
+      "route": "Septic franchise or multi-truck group pages",
+      "whoPays": "The septic franchise or regional group, per location",
+      "min": 1200,
+      "max": 3500,
+      "unit": "one-time",
+      "pitchLine": "\"A septic group with trucks in several counties needs a page per yard with its own townships and pump-out request routing.\"",
+      "whyItWorks": "One septic template becomes many locations."
+    },
+    {
+      "route": "Pump-out reminder service for septic companies",
+      "whoPays": "Septic companies outside your area, monthly",
+      "min": 39,
+      "max": 129,
+      "unit": "monthly",
+      "pitchLine": "\"A ready-made pump-out reminder system any septic company can load its customer list into and start booking repeat work.\"",
+      "whyItWorks": "Every pumper has the same untapped list of past customers, so it sells without custom work."
+    },
+    {
+      "route": "Septic company in the next county",
+      "whoPays": "A septic company in a new county",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I build for one septic outfit per county. {City}'s is taken; the next county's best pumper and installer isn't.\"",
+      "whyItWorks": "Septic firms are territorial, so exclusivity sells, and the septic demo carries straight over."
+    },
+    {
+      "route": "Campground and venue septic service agreements",
+      "whoPays": "Campground and venue owners, via the septic client",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"A service agreement page for campgrounds, venues and farms with high septic loads, with seasonal pump schedules built in.\"",
+      "whyItWorks": "Commercial rural accounts are steady septic work, and a proper agreement page makes the client look ready for them."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Septic site build plus care plan, one contract",
+      "min": 1800,
+      "max": 3000,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"Your septic site and the care plan go on one contract, so adding a township or a new fee is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Review requests after each pump-out",
+      "min": 99,
+      "max": 249,
+      "unit": "monthly",
+      "trigger": "The first pump-out or inspection booked through the site.",
+      "line": "\"That first online septic booking deserves a review. Let's ask every customer the evening the lids go back on.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "Realtor septic inspection packet",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "trigger": "A realtor books a septic inspection through the site.",
+      "line": "\"A realtor just booked online. Let's put the septic inspection packet in front of every agent in the county.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Pump-out due-date reminders",
+      "min": 500,
+      "max": 1500,
+      "unit": "one-time",
+      "trigger": "They mention a backlog of past customers who haven't pumped in years.",
+      "line": "\"Those past septic customers are overdue. Let's text each one when their tank is due and fill the slow weeks.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Septic inspection report builder",
+      "min": 1500,
+      "max": 4500,
+      "unit": "one-time",
+      "trigger": "They say they write inspection reports at night after the truck is parked.",
+      "line": "\"You're writing septic reports after dark. This finishes them on the phone in the yard.\""
+    },
+    {
+      "rung": 6,
+      "day": 150,
+      "offer": "Tank and lid location map",
+      "min": 1200,
+      "max": 3500,
+      "unit": "one-time",
+      "trigger": "A new driver joins, or they mention probing a yard for an hour to find a lid.",
+      "line": "\"New driver, same buried lids. Let's pin every septic tank on a map so nobody digs blind again.\""
+    },
+    {
+      "rung": 7,
+      "day": 240,
+      "offer": "Pumping route planner",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "trigger": "They add a second pump truck.",
+      "line": "\"Two septic trucks crossing the county is fuel burned. Let's plan each day by road and disposal site.\""
+    }
+  ]
+}

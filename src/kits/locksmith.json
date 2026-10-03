@@ -1,0 +1,832 @@
+{
+  "schemaVersion": 1,
+  "category": "Locksmith",
+  "slug": "locksmith",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Mech family batch. Vertical crowded with fake listings and bait pricing, so every line leans on being a provably real, local locksmith. Low ticket, so prices are small. No lock, safe or key-machine brands, no arrival-time promises, licence shown only as a placeholder."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Proof you're a real local locksmith",
+      "contains": "Shop or home-base address, the owner's name and face, the marked van, a bracketed state locksmith licence where the state requires one, and how to spot a fake locksmith listing",
+      "why": "Locksmith searches are full of call centres posing as local shops. Customers who have been burned choose the one that proves it is a real person nearby."
+    },
+    {
+      "section": "Car key and fob replacement by vehicle",
+      "contains": "Transponder keys, remote fobs, push-to-start keys, all keys lost versus a spare, what to have ready like the VIN and registration, and cutting keys on site",
+      "why": "Car key buyers compare the locksmith with the dealer. Showing which vehicles you can do on site, without a tow, wins that comparison."
+    },
+    {
+      "section": "Rekey or replace your locks",
+      "contains": "Moving into a new home, lost keys, an ex-tenant or ex-partner, one key for every door, rekeying versus new deadbolts, and what each involves",
+      "why": "New homeowners don't know rekeying exists. Explaining it turns a lockout customer into a whole-house rekey job."
+    },
+    {
+      "section": "Lockout ID and ownership check",
+      "contains": "What ID the locksmith asks for at a house or car lockout, proof of residence or registration, and why the check protects the customer",
+      "why": "Honest locksmiths ask for ID and scammers don't. Explaining the check up front turns an annoyance into a trust signal."
+    },
+    {
+      "section": "Business locks and master key systems",
+      "contains": "Commercial deadbolts, panic bars, master key systems with restricted keys, key control logs, and lock changes after an employee leaves",
+      "why": "Small business owners need a locksmith they can call again and again. A commercial page turns one call into an account."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C19",
+      "siteType": "local-conversion",
+      "name": "Night Shift",
+      "heroLayout": "split-photo",
+      "mood": [
+        "steady",
+        "alert",
+        "plain"
+      ],
+      "bestFor": "Solo mobile locksmiths taking lockout and car key calls from a single van",
+      "pairsWithTier": "starter",
+      "headlineSample": "Locked out in {City}? A local locksmith, not a call centre",
+      "whyItFits": "Gunmetal with a mono-forward type reads like a working tool case at night, and puts the owner's name and address where a fake listing has none."
+    },
+    {
+      "id": "b",
+      "themeId": "C50",
+      "siteType": "emergency-response",
+      "name": "Lockout Line",
+      "heroLayout": "type-led",
+      "mood": [
+        "urgent",
+        "honest",
+        "clear"
+      ],
+      "bestFor": "Locksmith shops with two or more vans covering lockouts, car keys, rekeys and small business accounts",
+      "pairsWithTier": "standard",
+      "headlineSample": "Lockouts, car keys and rekeys in {City}, from a real local shop",
+      "whyItFits": "The family's own combo. Mono labels for the trip fee, hours and shop address make the pricing look honest, which is what beats bait-price listings."
+    },
+    {
+      "id": "c",
+      "themeId": "C39",
+      "siteType": "premium-brand",
+      "name": "Old Key Shop",
+      "heroLayout": "full-bleed-photo",
+      "mood": [
+        "established",
+        "crafted",
+        "trusted"
+      ],
+      "bestFor": "Storefront locksmiths with safes, high-security locks, period door hardware and commercial accounts",
+      "pairsWithTier": "premium",
+      "headlineSample": "{City}'s locksmith shop for safes, high-security locks and keys",
+      "whyItFits": "Brick, linen and a slab display feel like an old key shop with a bench and a counter, the opposite of an anonymous lead-gen page."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "Real listing, no site",
+      "line": "{Business Name} looks like a real local locksmith on the map, with a real address and reviews, but there's no website. The fake locksmith listings around you all have one.",
+      "hook": "Open their Maps listing and confirm there is no Website button. Screenshot it for when they reply.",
+      "linkLine": "A locksmith site that proves you're the real one: {demo-link}"
+    },
+    {
+      "angle": "Facebook link only",
+      "line": "Your listing points to a Facebook page. Someone locked out of their car wants to see your name, your van and your trip fee in ten seconds, not scroll posts.",
+      "hook": "Tap their Website link and confirm it lands on Facebook. Note the latest locksmith post.",
+      "linkLine": "A locksmith page built for a lockout on a phone: {demo-link}"
+    },
+    {
+      "angle": "Template site that looks fake",
+      "line": "Your locksmith site uses the same template and stock van as the lead-gen listings. Honestly, it makes a real shop look like one of the fakes.",
+      "hook": "Open the site and look for stock vans, no address, or a generic template. Note what you found.",
+      "linkLine": "Same locksmith, looking unmistakably local: {demo-link}"
+    },
+    {
+      "angle": "Hard to tap on a phone",
+      "line": "On my phone your locksmith page hides the number below a big banner. Someone standing outside a locked door at night has about thirty seconds of patience.",
+      "hook": "Only if they have a site. Load it on a phone and note whether the number taps. Screenshot it for when they reply.",
+      "linkLine": "Your locksmith site with the number up top: {demo-link}"
+    },
+    {
+      "angle": "No car key request",
+      "line": "There's no way to send {Business Name} the make, model and year for a car key quote. People who lost their only key would rather type it than be put on hold.",
+      "hook": "Check the listing, the social pages and any site for a key request form. If none, the angle holds.",
+      "linkLine": "A car key request that asks for the vehicle: {demo-link}"
+    },
+    {
+      "angle": "Rekey for new homeowners",
+      "line": "Every new homeowner in {City} should rekey, and almost none know it's cheaper than new locks. A rekey page from a local locksmith catches them the week they get the keys.",
+      "hook": "Look for any rekey posts or reviews from new homeowners. Quote one if you find it.",
+      "linkLine": "A rekey page for new homeowners: {demo-link}"
+    },
+    {
+      "angle": "Reviews calling out fair prices",
+      "line": "Your reviews keep saying you charged what you quoted on the phone. In the locksmith trade that line is gold, and it's sitting where nobody comparing locksmiths will read it.",
+      "hook": "Read their reviews and copy a phrase about honest pricing or a fast lockout. Quote it back if they reply.",
+      "linkLine": "Those honest-price locksmith reviews up front: {demo-link}"
+    },
+    {
+      "angle": "Moving season rekeys",
+      "line": "Summer is moving season in {City}, which means new keys, lost keys and landlords changing locks between tenants. The locksmith with a clear rekey page gets those calls.",
+      "hook": "Use this in late spring or before the end-of-month move-in rush. Name the season in the reply.",
+      "linkLine": "Ready for moving-season lock changes: {demo-link}"
+    },
+    {
+      "angle": "Midnight lockouts",
+      "line": "Most lockouts happen late, after a night out or a shift. If your locksmith line rolls to a full voicemail, that person calls the next listing, which is often a call centre.",
+      "hook": "Call their listed number after hours. If it goes to a full or generic voicemail, the angle holds.",
+      "linkLine": "A lockout request that works late at night: {demo-link}"
+    },
+    {
+      "angle": "Hiring an apprentice locksmith",
+      "line": "Saw you're looking for an apprentice locksmith. People who want to learn the trade check whether a shop is real and established, same as customers.",
+      "hook": "Only if they posted a hiring note or story. Note the date of the post.",
+      "linkLine": "A locksmith shop page with a careers section: {demo-link}"
+    },
+    {
+      "angle": "Neighbourhoods the van covers",
+      "line": "Nothing online says your locksmith van covers {Neighborhood}. Fake listings claim every neighbourhood, so a real list of where you actually go stands out.",
+      "hook": "Find neighbourhoods named in their reviews. Use the furthest one.",
+      "linkLine": "A locksmith service map that's actually true: {demo-link}"
+    },
+    {
+      "angle": "Small business lock accounts",
+      "line": "A few of your reviews are from shops and offices. Small businesses rekey every time someone quits, and they want one locksmith they can call every time.",
+      "hook": "Only if reviews mention a business, office or store. Quote one.",
+      "linkLine": "A business locks and master key page: {demo-link}"
+    },
+    {
+      "angle": "Licence where the state asks",
+      "line": "Your state keeps a locksmith register, but customers never check it. Showing your licence and your name on a page is the one thing the fake locksmith listings can't copy.",
+      "hook": "Check whether their state licenses locksmiths and whether they appear. Note it exists; never quote a number you didn't see.",
+      "linkLine": "Licence, name and shop address on one locksmith page: {demo-link}"
+    },
+    {
+      "angle": "Regulars and repeat customers",
+      "line": "Sounds like most of your locksmith work comes from regulars and local shops. Every new resident in {City} searches instead, and finds the fakes first.",
+      "hook": "Look for review text like 'our locksmith for years'. Quote it back.",
+      "linkLine": "Where a new resident would find a real locksmith: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "That {specific recent job} you posted is careful locksmith work, a clean deadbolt fit with no chewed wood. Work like that proves you're real better than any ad.",
+      "hook": "Pick their newest posted job and name it exactly: rekey, car key, safe or business lock.",
+      "linkLine": "That locksmith job, front and centre: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, the {specific recent job} you posted is clean locksmith work.\n\nWhen I searched for a locksmith in {City}, {Business Name} was one of the few listings that looked like a real local shop, but there's no site showing your name, your address and your trip fee next to all the fake ones. I made a sample locksmith page, with marked placeholders where your photos would go.\n\nWant to see it?",
+    "dm2": "{Owner}, following up in case this got buried under lockout calls. The sample locksmith site for {Business Name}: {demo-link}\n\nIt shows your name, shop address and van up top, a car key request that asks for the vehicle, a rekey page for new homeowners and a page on spotting fake locksmiths. If it's not for you, say so and I'll stop.",
+    "call": "\"Hi, {Owner}? {Your Name} here. I build websites for locksmiths in {City}. I sent a message about a sample site, did it come through?\"\n\nIF NO:\n\"No problem. I built a sample locksmith site for {Business Name} that proves you're local: your name, your address, your van, plus a car key request and a rekey page, with marked placeholders where your photos would go. Can I text the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"This is the opposite of the lead sites you compete with. It's yours, with your name on it. The build runs {Build Range}, then {Care Range} a month for hosting and changes. For a shop your size, about {Build Price}.\"\n\"Ten minutes this week to go through it?\"\n\nCLOSE:\n\"I'll send a short scope and a deposit invoice, and the 'real local locksmith' page goes live first.\"",
+    "objections": [
+      {
+        "objection": "The fake listings outrank everyone. A site won't help.",
+        "handler": "\"It won't beat every fake on day one. It gives the people who do find you, through reviews or a referral, proof you're real, so they don't hang up and try the next number.\""
+      },
+      {
+        "objection": "Lockouts are cheap jobs. I can't spend much.",
+        "handler": "\"That's why it's priced for a locksmith, not a remodeler. The rekey, car key and business pages are where the bigger tickets are, and a few of those cover it.\""
+      },
+      {
+        "objection": "I don't want to post prices. The scammers undercut them.",
+        "handler": "\"We post your trip fee and how you quote, not a bait number. Customers burned by a fake locksmith trust the one who's upfront.\""
+      },
+      {
+        "objection": "I'm too busy on calls.",
+        "handler": "\"The site takes car key requests with the vehicle details while you're on a lockout. I need about an hour of your time in total.\""
+      },
+      {
+        "objection": "A friend built my site for free.",
+        "handler": "\"If it shows your name, address and van, keep it. If it looks like the template sites, happy to hand over the 'real locksmith' and rekey pages.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you, about {Build Price}. A handful of rekeys or car keys booked through it covers that.\""
+      }
+    ],
+    "email": {
+      "subject": "Locksmith site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for locksmiths around {City}. {Business Name} is one of the few locksmith listings that looks genuinely local, but there's no site that proves it against the call-centre listings people find first.\n\nI built a sample instead of asking for a meeting: your name, shop address and van up top, a car key request that asks for make, model and year, a rekey page for new homeowners, an ID check page and a guide to spotting fake locksmiths, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, then {Care Range} a month for hosting and changes. If not, it comes down at the end of the month.\n\nTen minutes this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"{Owner}, it's {Your Name}. I build sites for locksmiths in {City} and made one for {Business Name} that shows you're the real local shop. I'll text the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm taking the {Business Name} locksmith demo down Friday.\n\nWant it kept? One word is fine.",
+    "nurture": "Hi {Owner}, moving season and end-of-lease lock changes are coming up. Thought of you.\n\nThe locksmith site is still ready, same price. {demo-link} for another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Low-ticket trade: keep the build at the bottom of the board range and sell proof of being local, not a showcase.",
+      "The 'real local locksmith' page is the core. Without the owner's name and address on it, nothing else works.",
+      "Price car key and rekey pages separately; they carry the bigger tickets in this trade.",
+      "Never post a trip fee, licence number or arrival window the owner hasn't given you; use bracketed fields.",
+      "Commercial master key pages only for locksmiths who already serve businesses.",
+      "Recurring add-ons stay small. A locksmith judges everything against a lockout fee."
+    ],
+    "lineItems": [
+      {
+        "item": "Real local locksmith proof page",
+        "min": 200,
+        "max": 500,
+        "unit": "one-time",
+        "description": "Max with the owner's story, shop or base address map, van shot placeholders and a fake-listing warning checklist.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Car key request by vehicle",
+        "min": 250,
+        "max": 700,
+        "unit": "one-time",
+        "description": "Max with make, model and year pickers, all-keys-lost versus spare, VIN field and routing to the on-call van.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Rekey and lock change page",
+        "min": 150,
+        "max": 400,
+        "unit": "one-time",
+        "description": "Max with a new-homeowner checklist, door count picker and a rekey request form.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Business locks and master key page",
+        "min": 250,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max with a master key planning request, key control explanation and an account sign-up.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Neighbourhood service page (each)",
+        "min": 100,
+        "max": 250,
+        "unit": "per-page",
+        "description": "Max when each page names real jobs and a review from that neighbourhood.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Spanish-language lockout path",
+        "min": 250,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max when the lockout, car key and rekey pages are all translated.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Review requests naming the locksmith",
+      "min": 79,
+      "max": 199,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"After every lockout or rekey, the customer gets a text asking for a review that mentions the locksmith's name. Named reviews are what fake listings can't fake.\"",
+      "when": "Day 30. The easiest second sale."
+    },
+    {
+      "name": "Google profile verification and cleanup",
+      "min": 300,
+      "max": 700,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"I tidy your Google profile so the address, hours and van shots match the site exactly, and report the fake locksmith listings sitting on your street.\"",
+      "when": "Day 30, alongside launch."
+    },
+    {
+      "name": "Weekly locksmith job posts on the profile",
+      "min": 100,
+      "max": 250,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A real rekey, car key or safe job posted to your Google profile each week, so the listing looks alive and local.\"",
+      "when": "Month 2."
+    },
+    {
+      "name": "Realtor and landlord rekey card",
+      "min": 150,
+      "max": 400,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A leave-behind card for realtors and landlords offering rekeys at closing or between tenants, with the locksmith booking page on it.\"",
+      "when": "Month 2, before moving season."
+    },
+    {
+      "name": "Van lettering with name and address",
+      "min": 200,
+      "max": 600,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Lettering with your shop name, address and site on the locksmith van. Customers who've read about scams look for exactly that when it pulls up.\"",
+      "when": "Right after launch."
+    },
+    {
+      "name": "Key tag and keychain giveaways",
+      "min": 150,
+      "max": 400,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Every key you cut goes out on a tag with your locksmith number, so the next lockout calls you from memory, not a search.\"",
+      "when": "Month 2, ordered in a batch."
+    },
+    {
+      "name": "Small business lock check mailer",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A postcard to shops and offices nearby offering a lock and key-control check, from the locksmith already working on that block.\"",
+      "when": "Month 3, once the business page is live."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Realtors who order rekeys at closing",
+        "whoPays": "The realtor or small brokerage",
+        "min": 1000,
+        "max": 2500,
+        "unit": "one-time",
+        "pitchLine": "\"The agents who call you to rekey after closing need a vendor page for their buyers. Your locksmith shop is the first name on it.\"",
+        "whyItWorks": "Realtors live on a trusted vendor list and rarely present it well."
+      },
+      {
+        "route": "Door and garage door installers",
+        "whoPays": "The door installer, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"Whoever hangs new entry doors in {City} needs a locksmith for the hardware, and a site of their own. Your rekey page links to them.\"",
+        "whyItWorks": "Door installers and locksmiths share every new entry door job."
+      },
+      {
+        "route": "Security camera and alarm installers",
+        "whoPays": "The security installer",
+        "min": 1200,
+        "max": 3000,
+        "unit": "one-time",
+        "pitchLine": "\"The alarm and camera installer you refer to sells to the same worried homeowners. Their site is usually a catalogue with no local face.\"",
+        "whyItWorks": "Security installers and locksmiths swap referrals after every break-in."
+      },
+      {
+        "route": "Small landlords changing locks between tenants",
+        "whoPays": "The landlord or property manager",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"Landlords who rekey every turnover need a simple maintenance request page. Lock changes route to your locksmith van.\"",
+        "whyItWorks": "Turnover rekeys are steady work, and landlords want one trusted locksmith."
+      },
+      {
+        "route": "Auto repair shops and used car lots",
+        "whoPays": "The used car dealer",
+        "min": 1200,
+        "max": 3000,
+        "unit": "one-time",
+        "pitchLine": "\"The car lots that call you for spare keys before a sale have weak inventory sites. Your car key work gets me the introduction.\"",
+        "whyItWorks": "Used car lots need second keys constantly and trust the locksmith who makes them."
+      },
+      {
+        "route": "Self-storage facilities",
+        "whoPays": "The storage facility owner",
+        "min": 1200,
+        "max": 3000,
+        "unit": "one-time",
+        "pitchLine": "\"Storage facilities call you to cut locks on unpaid units. Their sites rarely let anyone reserve a unit, and your locksmith work opens the door.\"",
+        "whyItWorks": "Independent storage owners need booking sites and already rely on a locksmith."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Closing checklist helper for realtors",
+        "whoPays": "The realtor team, monthly",
+        "min": 79,
+        "max": 199,
+        "unit": "monthly",
+        "pitchLine": "\"An assistant builds each buyer's after-closing checklist, utilities, rekeying the locks, address change, and books the locksmith from it.\"",
+        "whyItWorks": "Agents want to look helpful after closing, and the locksmith client gets every rekey."
+      },
+      {
+        "route": "Turnover scheduler for landlords",
+        "whoPays": "The property manager, monthly",
+        "min": 100,
+        "max": 250,
+        "unit": "monthly",
+        "pitchLine": "\"When a tenant gives notice, an assistant lines up cleaning, repairs and the lock change with the locksmith, and texts each vendor.\"",
+        "whyItWorks": "Turnovers are chaotic, and the locksmith rides along on every one."
+      },
+      {
+        "route": "Incident report drafts for security installers",
+        "whoPays": "The security installer, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"After a break-in, an assistant drafts the customer's summary of camera clips and recommended upgrades, including the locksmith's door hardware.\"",
+        "whyItWorks": "Security firms want to look thorough after an incident, and lock upgrades flow to the locksmith."
+      },
+      {
+        "route": "Lien-sale notice drafts for storage owners",
+        "whoPays": "The storage facility owner, monthly",
+        "min": 100,
+        "max": 250,
+        "unit": "monthly",
+        "pitchLine": "\"An assistant drafts overdue-unit notices from the owner's own templates and schedules the locksmith for the lock cut, for the owner to review.\"",
+        "whyItWorks": "Storage owners juggle notices by hand, and every cut lock is locksmith work."
+      },
+      {
+        "route": "Vehicle listing writer for car lots",
+        "whoPays": "The used car dealer, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"Photograph the car and the window sticker, and an assistant drafts the listing, including whether a spare key comes with it.\"",
+        "whyItWorks": "Small lots list cars slowly, and the locksmith's introduction gets the meeting."
+      },
+      {
+        "route": "Quote follow-up for the door installer",
+        "whoPays": "The door installer",
+        "min": 500,
+        "max": 1200,
+        "unit": "one-time",
+        "pitchLine": "\"The door installer you work with loses quotes to slow replies. Automatic follow-up, set up the same way as your locksmith texts.\"",
+        "whyItWorks": "It's configuration of something you've built, with a trusted introduction."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Lockout call catcher",
+      "kind": "automation",
+      "oneTimeMin": 0,
+      "oneTimeMax": 200,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"A missed call gets a text asking whether it's a house or car lockout and where they are, so the locksmith calls back the stranded one first.\"",
+      "whenAndWhatItTakes": "Day 30. Needs the business number forwarded and the wording approved."
+    },
+    {
+      "name": "Car key quote lookup by vehicle",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1800,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Enter make, model and year and the locksmith's own price range for a key or fob shows up, so the quote on the phone is instant and consistent.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their price list by key type and the vehicles they can do."
+    },
+    {
+      "name": "Named review replies for the locksmith",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 59,
+      "monthlyMax": 149,
+      "pitchLine": "\"Every review gets a reply drafted in the owner's voice that names the lockout, rekey or car key job, which shows searchers a real locksmith answers.\"",
+      "whenAndWhatItTakes": "Month 2, with review requests running. Needs ten past replies. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "ID and ownership capture at the door",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 99,
+      "pitchLine": "\"The locksmith snaps the customer's ID and proof of residence or registration, and it's stored with the job record, which protects you if a lockout is ever questioned.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their current ID policy and how long they keep records."
+    },
+    {
+      "name": "Key code and master key records",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2500,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Every business master key system, its pinning chart and who holds which key, kept securely so a lost key means a quick rekey, not a re-plan.\"",
+      "whenAndWhatItTakes": "Month 3, for locksmiths with business accounts. Needs their existing charts."
+    },
+    {
+      "name": "After-hours lockout answering line",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2200,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"It answers late lockout calls, explains the trip fee and the ID check, takes the location and wakes the locksmith only when the caller agrees.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their fee wording and on-call rules. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Rekey booking with door count",
+      "kind": "software",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 99,
+      "pitchLine": "\"New homeowners book a rekey online, choose how many doors, and see the locksmith's price before the visit.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their rekey pricing and availability."
+    },
+    {
+      "name": "Q&A assistant on locks and keys",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1800,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"It answers 'can you make a key for my car without the original' and 'is rekeying cheaper than new locks' from the locksmith's notes, and books a visit.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their FAQ notes and vehicle list. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Business account billing for locksmith work",
+      "kind": "automation",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1200,
+      "monthlyMin": 29,
+      "monthlyMax": 99,
+      "pitchLine": "\"Shops and landlords get one monthly statement for every rekey and lock change, sent automatically with a card link.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their account list and payment account."
+    },
+    {
+      "name": "Scam-call pattern notes",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1800,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"It reads the locksmith's call notes and flags callers who say a 'locksmith' quoted low then tripled the price, so you can post honest warnings for {City}.\"",
+      "whenAndWhatItTakes": "Month 4. Needs a few months of call notes. Comes with the AI maintenance retainer; it never names a business."
+    },
+    {
+      "name": "Fob and key blank stock tracker",
+      "kind": "software",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 99,
+      "pitchLine": "\"Track key blanks and fobs in the van by vehicle, and get a reorder list before a car key call has to be turned away.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their current stock list."
+    },
+    {
+      "name": "Voice notes to locksmith invoice",
+      "kind": "ai",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 59,
+      "monthlyMax": 149,
+      "pitchLine": "\"Say the job, lockout, rekey of four cylinders or a programmed fob, and the locksmith invoice is drafted with the ID record attached.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their invoice template. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Moving-season rekey reminders",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 29,
+      "monthlyMax": 99,
+      "pitchLine": "\"Realtor partners and landlords get a reminder text before the end-of-month move-ins, with locksmith rekey slots to book.\"",
+      "whenAndWhatItTakes": "Month 5. Needs the partner list."
+    },
+    {
+      "name": "Locksmith van schedule",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2500,
+      "monthlyMin": 49,
+      "monthlyMax": 149,
+      "pitchLine": "\"Lockouts, rekeys and business jobs on one board by van, so the nearest locksmith takes the urgent call.\"",
+      "whenAndWhatItTakes": "Month 6, at two vans. Needs job types and how they dispatch today."
+    },
+    {
+      "name": "Address history for lock work",
+      "kind": "software",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 99,
+      "pitchLine": "\"Type the address and see every lock, rekey and key cut done there, and who was verified as the owner each time.\"",
+      "whenAndWhatItTakes": "Month 6. Needs past job notes."
+    },
+    {
+      "name": "Profit by locksmith job type",
+      "kind": "software",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 99,
+      "pitchLine": "\"See whether lockouts, car keys or rekeys make the shop money once blanks, fobs, fuel and drive time are counted.\"",
+      "whenAndWhatItTakes": "Month 7. Needs a season of invoices."
+    },
+    {
+      "name": "Employee-leaves lock change alerts",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 29,
+      "monthlyMax": 99,
+      "pitchLine": "\"Business clients get a quarterly nudge to tell the locksmith about staff who've left, so restricted keys get recovered or locks rekeyed.\"",
+      "whenAndWhatItTakes": "Month 7, after the business account page. Needs the account list."
+    },
+    {
+      "name": "Vehicle key programming notes",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1800,
+      "monthlyMin": 59,
+      "monthlyMax": 149,
+      "pitchLine": "\"The locksmith's own notes on programming fobs by vehicle, searchable on the phone in the car, with what worked last time.\"",
+      "whenAndWhatItTakes": "Month 8. Needs a season of car key notes. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Apprentice locksmith training library",
+      "kind": "ai",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 59,
+      "monthlyMax": 149,
+      "pitchLine": "\"The owner records how to pick, rekey and pin a cylinder, and it becomes a locksmith how-to library for the apprentice.\"",
+      "whenAndWhatItTakes": "Month 8, when they hire. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Locksmith applicant background pre-screen",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1200,
+      "monthlyMin": 59,
+      "monthlyMax": 149,
+      "pitchLine": "\"Applicants confirm they'll pass the background check your state requires for locksmiths, can work nights and have a clean licence, before you call.\"",
+      "whenAndWhatItTakes": "When they post a hiring note. Needs must-haves and state rules. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the real-locksmith site for honest shops",
+      "whoPays": "Independent locksmiths, monthly",
+      "min": 29,
+      "max": 99,
+      "unit": "monthly",
+      "pitchLine": "\"Every honest locksmith loses calls to fake listings. A site built around proof of being local is a product every one of them needs.\"",
+      "whyItWorks": "The problem is identical in every city, and low-ticket trades prefer a subscription."
+    },
+    {
+      "route": "Locksmith association verified-member directory",
+      "whoPays": "The state or national locksmith association",
+      "min": 2000,
+      "max": 8000,
+      "unit": "one-time",
+      "pitchLine": "\"Give the public a directory of verified member locksmiths with real addresses, so they can avoid the fakes.\"",
+      "whyItWorks": "Associations fight scam listings and want a public tool to do it."
+    },
+    {
+      "route": "Locksmith supply distributor dealer locator",
+      "whoPays": "The locksmith supply distributor, annually",
+      "min": 3000,
+      "max": 10000,
+      "unit": "per-year",
+      "pitchLine": "\"Your counter sees every real locksmith in the region every week. A public locator of those shops is the best weapon against fake locksmith listings, and it keeps them buying blanks from you.\"",
+      "whyItWorks": "Distributors want shop loyalty and see every real locksmith in the region."
+    },
+    {
+      "route": "Consumer protection office locksmith guide",
+      "whoPays": "The state or city consumer affairs office",
+      "min": 3000,
+      "max": 9000,
+      "unit": "one-time",
+      "pitchLine": "\"Locksmith scams are a standing complaint. A plain public guide on checking a locksmith, with licence lookups, answers it.\"",
+      "whyItWorks": "Consumer offices have outreach budgets and recurring locksmith complaints."
+    },
+    {
+      "route": "Locksmith site template for agencies",
+      "whoPays": "The agency, per locksmith client",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "pitchLine": "\"License my locksmith template, built to look real and local, instead of the generic one that makes clients look like fakes.\"",
+      "whyItWorks": "Agencies need a build that doesn't resemble lead-gen pages."
+    },
+    {
+      "route": "Property management lock-change portal",
+      "whoPays": "The regional property management company",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Your turnover lock changes across many doors need one portal with locksmith booking and key records.\"",
+      "whyItWorks": "Bigger managers want vendor visibility and will pay for it."
+    },
+    {
+      "route": "Roadside assistance vendor pages",
+      "whoPays": "The regional roadside assistance network",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Your car lockout vendors have no way to show drivers who's coming. A vendor page kit for locksmiths in the network fixes that.\"",
+      "whyItWorks": "Roadside networks are judged on the vendor who shows up."
+    },
+    {
+      "route": "Self-storage owner association pages",
+      "whoPays": "The self-storage owners' association",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Storage owners need vetted locksmiths for lock cuts in every town. A member directory of locksmiths who do them solves it.\"",
+      "whyItWorks": "Associations want useful member resources, and lock cuts are a constant need."
+    },
+    {
+      "route": "Car dealer service department key referrals",
+      "whoPays": "The dealership group",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"When a customer needs a key the same day and service is booked out, a page referring them to a vetted local locksmith keeps them happy.\"",
+      "whyItWorks": "Dealers lose goodwill on key delays, and the locksmith becomes the referral."
+    },
+    {
+      "route": "Moving company new-home checklist partners",
+      "whoPays": "The moving company",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "pitchLine": "\"A new-home checklist page for every customer the movers serve, with a vetted locksmith for the rekey on move-in day.\"",
+      "whyItWorks": "Movers want to add value at delivery, and rekeys are the natural first job."
+    },
+    {
+      "route": "One honest locksmith per metro",
+      "whoPays": "A locksmith shop in a new metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I build for one real locksmith per metro. {City} has one; the next metro's most trusted locksmith is still being buried by fakes.\"",
+      "whyItWorks": "The template and the anti-scam pitch carry straight over."
+    },
+    {
+      "route": "Safe and vault specialist sites",
+      "whoPays": "Safe technicians, per site",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Safe technicians who open, move and service safes serve banks, jewellers and gun owners, and need a sharper site than a lockout locksmith.\"",
+      "whyItWorks": "Higher-ticket specialists pay more, and the premium direction is already designed."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Locksmith site build plus care plan, one contract",
+      "min": 1000,
+      "max": 1800,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"Your locksmith site and care plan on one contract, so a new trip fee or van shot is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Review requests naming the locksmith",
+      "min": 79,
+      "max": 199,
+      "unit": "monthly",
+      "trigger": "The first car key or rekey booked through the site.",
+      "line": "\"That rekey came from the site. Let's ask every locksmith customer for a review that names you.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "Google profile verification and cleanup",
+      "min": 300,
+      "max": 700,
+      "unit": "one-time",
+      "trigger": "A fake locksmith listing shows up near their address.",
+      "line": "\"There's a fake locksmith listing on your street. Let's clean up your profile and report it.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Car key quote lookup by vehicle",
+      "min": 600,
+      "max": 1800,
+      "unit": "one-time",
+      "trigger": "Sixty days of car key requests with vehicle details.",
+      "line": "\"You've quoted the same car keys over and over. Let's make the locksmith quote instant.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Realtor and landlord rekey card",
+      "min": 150,
+      "max": 400,
+      "unit": "one-time",
+      "trigger": "A realtor or landlord books a rekey.",
+      "line": "\"A landlord booked a rekey. Let's put a locksmith card in every agent's and landlord's hand before moving season.\""
+    },
+    {
+      "rung": 6,
+      "day": 150,
+      "offer": "Key code and master key records",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "trigger": "They take on a second business master key account.",
+      "line": "\"Two master key systems on paper is a risk. Let's keep every locksmith chart secure and searchable.\""
+    }
+  ]
+}

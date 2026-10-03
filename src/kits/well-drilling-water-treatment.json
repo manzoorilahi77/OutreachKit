@@ -1,0 +1,842 @@
+{
+  "schemaVersion": 1,
+  "category": "Well drilling & water treatment",
+  "slug": "well-drilling-water-treatment",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Mech family batch, quote archetype. Few operators per market, almost none online. Copy never makes health claims about water, never states depth, yield or setback rules, and names no pump, softener or filter brands. Ranges are planning figures."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "No water at the tap: well pump checks",
+      "contains": "Breaker and pressure switch checks, a waterlogged pressure tank, short-cycling, sputtering taps, low yield in a dry spell, and when to call for a pump pull",
+      "why": "A dead well pump means no showers and no toilets. Owners search the symptom first, and the driller who explains it gets the emergency call."
+    },
+    {
+      "section": "New well drilling, step by step",
+      "contains": "Siting the well, bracketed county permit and setback rules, drilling day, casing and grouting, why depth isn't known until drilling, pump install and the first water test",
+      "why": "Land buyers and new builders fear an open-ended drilling bill. Walking through the steps makes the quote and the unknowns feel manageable."
+    },
+    {
+      "section": "Well water test results explained",
+      "contains": "What hardness, iron, manganese, sulphur, pH and bacteria lines on a lab report mean, how often to retest, and which treatment addresses each, with no health claims",
+      "why": "Owners get a lab report full of numbers and no explanation. The company that translates it is the one they ask to fix it."
+    },
+    {
+      "section": "Water treatment system chooser",
+      "contains": "Water softener, iron filter, sediment filter, UV disinfection and reverse osmosis at the sink, chosen by the problem: orange stains, rotten-egg smell, scale or cloudy water",
+      "why": "Treatment buyers start from a symptom on their fixtures, not a product name. Matching symptom to system builds trust before the in-home test."
+    },
+    {
+      "section": "Well inspection for home sales",
+      "contains": "Flow and pressure test, water sample for the lab, bracketed lender and county requirements, how far before closing to book, and a sample report",
+      "why": "Rural home sales hinge on the well report. Realtors book whoever makes it easy to schedule against a closing date."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C49",
+      "siteType": "local-conversion",
+      "name": "Rig and Pump",
+      "heroLayout": "split-photo",
+      "mood": [
+        "sturdy",
+        "friendly",
+        "direct"
+      ],
+      "bestFor": "Family well and pump companies that answer no-water calls and drill a few new wells a month",
+      "pairsWithTier": "starter",
+      "headlineSample": "Well pump repair and new wells around {City}",
+      "whyItFits": "Cobalt and butter with a slab display feel like a family name on a drill rig, approachable for a rural owner with no water and a tight budget."
+    },
+    {
+      "id": "b",
+      "themeId": "C50",
+      "siteType": "emergency-response",
+      "name": "No Water Line",
+      "heroLayout": "type-led",
+      "mood": [
+        "urgent",
+        "clear",
+        "practical"
+      ],
+      "bestFor": "Well contractors taking no-water and pressure tank calls alongside quoted drilling and treatment installs",
+      "pairsWithTier": "standard",
+      "headlineSample": "No water from your well in {City}? Call the pump crew",
+      "whyItFits": "The family's own combo, even for a quote-led trade: a dead well pump is an emergency first, and mono labels suit flow rates, lab values and service fees."
+    },
+    {
+      "id": "c",
+      "themeId": "C5",
+      "siteType": "editorial-trust",
+      "name": "Clear Water Report",
+      "heroLayout": "card-stack",
+      "mood": [
+        "patient",
+        "exact",
+        "reassuring"
+      ],
+      "bestFor": "Water treatment specialists who sell from lab results: softeners, iron filters, UV and whole-house systems",
+      "pairsWithTier": "premium",
+      "headlineSample": "Well water testing and treatment in {City}, explained line by line",
+      "whyItFits": "A ledger palette and bookish serif suit a reading-first page where the buyer reads their own lab report closely before choosing a treatment system."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "Map pin with no site",
+      "line": "{Business Name} has a drill rig in its profile shot and no website on the listing. A family with no water from the well wants to see who services their area before they call.",
+      "hook": "Open their Maps listing and confirm there is no Website button. Screenshot it for when they reply.",
+      "linkLine": "The well and water site that pin could open: {demo-link}"
+    },
+    {
+      "angle": "Facebook instead of a site",
+      "line": "Your listing sends people to Facebook. Someone with orange stains in the tub and a fresh water test wants to compare a softener and an iron filter, not scroll a feed.",
+      "hook": "Tap their Website link and confirm it lands on Facebook. Note the latest well or treatment post.",
+      "linkLine": "A well and water treatment page built for that buyer: {demo-link}"
+    },
+    {
+      "angle": "Broken old domain",
+      "line": "The well drilling site linked from your profile doesn't load properly anymore. Land buyers vetting a driller before a big bill take a dead page as a bad sign.",
+      "hook": "Open the site and note whether it errors, shows a host banner, or has a dead form. Note which one you found.",
+      "linkLine": "Same well company, current and quick to load: {demo-link}"
+    },
+    {
+      "angle": "Phone visitors with dry taps",
+      "line": "Your well pump page squeezes into a tiny column on my phone. Someone whose taps just went dry is standing in a kitchen with a phone, not at a desk.",
+      "hook": "Only if they have a site. Load it on a phone and note what breaks. Screenshot it for when they reply.",
+      "linkLine": "Your well site rebuilt for a phone: {demo-link}"
+    },
+    {
+      "angle": "No water test request",
+      "line": "There's no way to order a well water test or treatment consult from {Business Name} without calling. Plenty of owners decide to test on a weekend when they notice the smell.",
+      "hook": "Check the listing, social pages and any site for a request form. If there is none, the angle holds.",
+      "linkLine": "A water test request that asks what they're seeing: {demo-link}"
+    },
+    {
+      "angle": "Water test results with no explanation",
+      "line": "You post about hardness and iron a lot, but there's no page explaining a well water test line by line. Owners holding a confusing lab report would read every word.",
+      "hook": "Look for posts about lab results, hardness, iron or sulphur. If you find one, quote the topic.",
+      "linkLine": "A well water test explainer for {Business Name}: {demo-link}"
+    },
+    {
+      "angle": "Review about getting water back",
+      "line": "One review says you had their well pump swapped and water running before the kids got home. That's the story that wins the next no-water call, and it's stuck on the map.",
+      "hook": "Read their reviews and copy one phrase about a pump, a new well or a softener. Quote it back if they reply.",
+      "linkLine": "Those well reviews on a page people actually read: {demo-link}"
+    },
+    {
+      "angle": "Drought and low yield season",
+      "line": "In a dry late summer, wells around {City} start sputtering and pumps run dry. The well company that's easy to find that week takes the calls and the deepening jobs.",
+      "hook": "Use this in mid to late summer or during a declared dry spell. Name the season in the reply.",
+      "linkLine": "Ready before the dry-season well calls: {demo-link}"
+    },
+    {
+      "angle": "Dead pump on a weekend",
+      "line": "Well pumps quit on Saturday nights like everything else. If your line goes to a full voicemail, that family with no water keeps calling down the list.",
+      "hook": "Call their listed number after hours. If it goes to a full or generic voicemail, the angle holds.",
+      "linkLine": "A no-water request that works on weekends: {demo-link}"
+    },
+    {
+      "angle": "Looking for a driller's helper",
+      "line": "Saw you're looking for a driller's helper or pump tech. Rig crews are hard to find, and applicants check whether a well company looks established before they apply.",
+      "hook": "Only if they posted a hiring note, story or rig sign. Note the date of the post.",
+      "linkLine": "A well company page with a careers section: {demo-link}"
+    },
+    {
+      "angle": "Counties you drill in",
+      "line": "Your reviews mention wells drilled in counties well past {City}, but nothing online says your rig goes to {Neighborhood}. Rural owners search by county and road.",
+      "hook": "Find the counties or townships named in reviews or posts. Use the most distant.",
+      "linkLine": "A well and pump page for each county you serve: {demo-link}"
+    },
+    {
+      "angle": "Financing a new well",
+      "line": "If {Business Name} offers payments on a new well or a whole-house treatment system, say so on a page. Nobody budgets for drilling, and they need to see it's manageable.",
+      "hook": "Only if they mention financing somewhere: a post, a review, the truck. If not, skip this angle.",
+      "linkLine": "Well and treatment payment options, explained: {demo-link}"
+    },
+    {
+      "angle": "Licensed driller visibility",
+      "line": "Your well driller licence is on the state list, but land buyers never look there. Showing it on a page separates you from a pump guy who doesn't drill.",
+      "hook": "Look them up on the state water well contractor list. Note that a record exists; never quote a number you didn't see.",
+      "linkLine": "Licence, insurance and permits on one well page: {demo-link}"
+    },
+    {
+      "angle": "Waitlist through word of mouth",
+      "line": "Sounds like your drilling schedule fills from word of mouth alone. New arrivals buying rural land don't know anyone to ask, and they search for well drilling first.",
+      "hook": "Look for reviews from newcomers or posts about long waits. Quote it back.",
+      "linkLine": "Where a newcomer would find your well company: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "That {specific recent job} you posted is clean well work, tidy wellhead and a neat pressure tank set-up. A buyer comparing drillers should see that first.",
+      "hook": "Pick their newest finished job and name it: new well, pump swap or treatment system, and the county if tagged.",
+      "linkLine": "That well job, front and centre: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "{Owner}, the {specific recent job} you posted is tidy well work, clean wellhead and a neat tank set-up.\n\nI searched for well companies around {City} and found {Business Name} on social, but no site where someone with no water can reach you, or a land buyer can see how drilling works. I made a sample well and water treatment page, with marked placeholders where your photos would go.\n\nShall I send it?",
+    "dm2": "{Owner}, nudging this in case it got lost while you were on the rig. Sample well site for {Business Name}: {demo-link}\n\nIt has a no-water request that asks about the pressure tank and breaker, a new well step-by-step for land buyers, and a page that explains a water test line by line. Not your thing? Tell me and I'll drop it.",
+    "call": "\"{Owner}? It's {Your Name}. I build websites for well drilling and water treatment companies around {City}. I messaged about a sample site, did it reach you?\"\n\nIF NO:\n\"No problem, you're out on the rig. I built a sample well site for {Business Name} with a no-water request, a drilling step-by-step and a water test explainer, plus marked placeholders where your photos would go. Can I text you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"No ads, no lead contract. It's a site you own. It runs {Build Range} depending on how many county and treatment pages you want, then {Care Range} a month for hosting and edits. For you I'd say about {Build Price}, well under the cost of one pump swap.\"\n\"Can I walk you through it for ten minutes, maybe one evening this week?\"\n\nCLOSE:\n\"I'll send the scope and a deposit invoice. Once it clears I start with the no-water page, so it's catching calls first.\"",
+    "objections": [
+      {
+        "objection": "We're booked months out on drilling already.",
+        "handler": "\"Then the site isn't for more drilling. It's for pump calls and treatment installs that fill the gaps, and for land buyers to join the waitlist without calling.\""
+      },
+      {
+        "objection": "I can't quote a well online. Nobody knows how deep it'll go.",
+        "handler": "\"Exactly what the page says. It explains why depth is unknown and how you price per foot, without a number you haven't approved. That honesty is what buyers trust.\""
+      },
+      {
+        "objection": "Water treatment customers just want the cheapest softener.",
+        "handler": "\"Some do. The ones with iron, sulphur or bacteria on a lab report want someone to explain it. The test explainer page is for them, and they're the bigger jobs.\""
+      },
+      {
+        "objection": "Everybody out here knows us.",
+        "handler": "\"The old families do. People buying acreage from the city don't, and they're the ones drilling new wells. They search first.\""
+      },
+      {
+        "objection": "My son-in-law handles our online stuff.",
+        "handler": "\"Great. If he wants the no-water request and the test explainer, I'll hand them over. If it stalls, the offer stands.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}, because it's a no-water request, a drilling page, a test explainer and a few county pages. One treatment install covers most of it.\""
+      }
+    ],
+    "email": {
+      "subject": "Well and water site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for well drilling and water treatment companies around {City}. {Business Name} does good work going by its reviews, but there's no site an owner finds when the well pump quits or a lab report comes back with iron or bacteria.\n\nI built a sample first: a no-water request that asks about the pressure tank and breaker, a new well step-by-step for land buyers, a water test explainer, a treatment chooser and your licence shown plainly, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, then {Care Range} a month for hosting and edits. If not, it comes down at the end of the month.\n\nTen minutes this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"{Owner}, {Your Name} here. I build sites for well and water companies near {City} and made a sample for {Business Name}, no-water request and test explainer included. I'll text the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm taking down the {Business Name} well site demo on Friday.\n\nIf you'd like it kept, just say so. Either way is fine.",
+    "nurture": "Hi {Owner}, dry season is coming and so are the sputtering wells and pump calls. You came to mind.\n\nThe well and water site is still ready, same price. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to one pump replacement. Well owners think in pump pulls, feet drilled and systems installed.",
+      "Split the scope: drilling pages for land buyers, pump pages for emergencies, treatment pages for lab-report buyers.",
+      "Never state a depth, yield, per-foot price or setback rule; use bracketed fields the owner fills.",
+      "Price the water test explainer as its own line. It's the page treatment buyers read twice.",
+      "County pages matter more than city pages. Quote per county where they hold a licence and real jobs.",
+      "Treatment-only dealers need lighter builds than drillers. Size it to what they actually sell."
+    ],
+    "lineItems": [
+      {
+        "item": "No-water request with pump checks",
+        "min": 400,
+        "max": 1000,
+        "unit": "one-time",
+        "description": "Max with a breaker and pressure tank checklist, symptom picker, gate and dog fields and routing to the on-call pump tech.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "New well drilling step page and request",
+        "min": 600,
+        "max": 1500,
+        "unit": "one-time",
+        "description": "Max with a land-buyer request form, bracketed permit and setback fields and a drilling-day timeline.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Water test explainer page",
+        "min": 500,
+        "max": 1200,
+        "unit": "one-time",
+        "description": "Max when it covers each common lab line, a retest schedule and a test kit or lab sample request.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Treatment system chooser by symptom",
+        "min": 700,
+        "max": 1800,
+        "unit": "one-time",
+        "description": "Max with a symptom picker for stains, smell and scale that routes to softener, iron, UV or sink filter pages.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Home-sale well inspection page and form",
+        "min": 400,
+        "max": 1000,
+        "unit": "one-time",
+        "description": "Max with closing date, realtor fields, a sample report and bracketed lender requirements.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "County service-area page (each)",
+        "min": 200,
+        "max": 450,
+        "unit": "per-page",
+        "description": "Max when each page lists its own jobs, a local review and that county's bracketed permit notes.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Review asks after each pump or treatment job",
+      "min": 99,
+      "max": 249,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"When the water's running again or the new softener is set, the owner gets a text asking for a review. Rural well companies have few reviews, so each one moves them up.\"",
+      "when": "Day 30. The easiest second sale."
+    },
+    {
+      "name": "Google profile care for a well company",
+      "min": 200,
+      "max": 400,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Each new well, pump swap and treatment install gets posted with the county named, and the profile lists every area the rig covers.\"",
+      "when": "Day 30, once the site is live."
+    },
+    {
+      "name": "Annual water test reminder campaign",
+      "min": 200,
+      "max": 400,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Every well owner you've served gets a yearly reminder to test their water, with a sample pickup booking. Each test is a chance at a treatment system.\"",
+      "when": "Month 2, once the test request form is live."
+    },
+    {
+      "name": "Drill rig and truck lettering artwork",
+      "min": 300,
+      "max": 900,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A drill rig parked on a lot for days is the best sign in the county. Clean lettering with the site and number makes every well job an ad.\"",
+      "when": "Right after launch."
+    },
+    {
+      "name": "Rural realtor well inspection packet",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A short packet for rural listing agents on booking the well flow and water test before closing, with the online request.\"",
+      "when": "Month 2, before the spring selling season."
+    },
+    {
+      "name": "Treatment filter and salt delivery route",
+      "min": 300,
+      "max": 700,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A sign-up page for softener salt and filter cartridge delivery on a set route, so treatment customers stay yours instead of buying at the farm store.\"",
+      "when": "Month 3, once they have a base of treatment customers."
+    },
+    {
+      "name": "Dry-season well mailer",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A postcard to rural routes in late summer on signs of a struggling well and pump, with the well company's number for when the taps sputter.\"",
+      "when": "Pitch in early summer, mail before the dry weeks."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Septic installers on the same rural lots",
+        "whoPays": "The septic contractor, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"Every lot you drill a well on needs a septic system a set distance away. The septic installer you work beside needs a site too.\"",
+        "whyItWorks": "Well and septic contractors share land buyers and builders, and refer constantly."
+      },
+      {
+        "route": "Water testing labs",
+        "whoPays": "The independent water testing lab",
+        "min": 2000,
+        "max": 5000,
+        "unit": "one-time",
+        "pitchLine": "\"The lab you send well samples to explains results badly online. Introduce me and I'll build them a sample drop-off and results page.\"",
+        "whyItWorks": "Labs serve every well company in the region and need clearer public pages."
+      },
+      {
+        "route": "Rural electricians who wire pumps",
+        "whoPays": "The electrical contractor, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"Who runs power to the well pump and pressure switch when you set a new well? That electrician needs a site, and your well page links to theirs.\"",
+        "whyItWorks": "Pump wiring is shared work and both trades already send each other jobs."
+      },
+      {
+        "route": "Rural home builders and barn builders",
+        "whoPays": "The builder",
+        "min": 2500,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"The builders whose rural homes and barns you drill for show the finished house, never the land prep. Your introduction gets me in.\"",
+        "whyItWorks": "Builders spend more on sites than trades do and trust the well driller who keeps their schedule."
+      },
+      {
+        "route": "Farm and livestock operations",
+        "whoPays": "The farm owner",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The farms whose stock wells you service sell eggs, beef or hay direct. They need a simple farm store site more than they need anything from you.\"",
+        "whyItWorks": "Farm owners trust the well company that keeps their animals watered, and direct-sale farms need sites."
+      },
+      {
+        "route": "Rural land agents",
+        "whoPays": "The land brokerage",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"Land agents ask you about wells on every listing. Their sites can't explain water, septic or access. Your well introduction gets me the meeting.\"",
+        "whyItWorks": "Land agents sell what buyers don't understand, and the well driller is their go-to vendor."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Results summary writer for the water lab",
+        "whoPays": "The water testing lab, monthly",
+        "min": 200,
+        "max": 500,
+        "unit": "monthly",
+        "pitchLine": "\"Each well water report gets a plain-language summary drafted for the lab to review, so owners stop phoning to ask what the numbers mean.\"",
+        "whyItWorks": "Labs field the same calls daily, and the well company's introduction gets the first demo."
+      },
+      {
+        "route": "Herd water planner for livestock farms",
+        "whoPays": "The farm, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"An assistant tracks stock tank levels, herd size and seasonal use, and flags when the farm's well and pump are being pushed hard.\"",
+        "whyItWorks": "Farms can't afford a dry stock tank, and the well company gets the service call when it's flagged."
+      },
+      {
+        "route": "Acreage listing writer for land agents",
+        "whoPays": "The land brokerage, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"The assistant drafts rural listings that describe wells, water quality and septic accurately from the agent's notes, flagged for the agent to check.\"",
+        "whyItWorks": "Water details are where land listings go wrong, and the driller's referral carries trust."
+      },
+      {
+        "route": "Bid follow-up for rural builders",
+        "whoPays": "The builder",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"Rural builders lose bids to slow callbacks. Automatic follow-up drafted in their voice, set up the same way as the well company's.\"",
+        "whyItWorks": "You've already built it once, and the introduction comes from a trusted trade."
+      },
+      {
+        "route": "Pump wiring checklist for the electrician",
+        "whoPays": "The electrical contractor, monthly",
+        "min": 100,
+        "max": 250,
+        "unit": "monthly",
+        "pitchLine": "\"An assistant turns the well driller's pump specs into a wiring checklist the electrician confirms before the trip out to the lot.\"",
+        "whyItWorks": "Wrong pump wiring means a second rural drive, which both trades hate."
+      },
+      {
+        "route": "Septic and well setback checker for installers",
+        "whoPays": "The septic contractor, monthly",
+        "min": 150,
+        "max": 350,
+        "unit": "monthly",
+        "pitchLine": "\"An assistant reads the site sketch and flags where a planned septic field may sit close to the well, for the installer to confirm with the county.\"",
+        "whyItWorks": "Setback mistakes cost both trades a redesign, and they already share the same lots."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "No-water call text-back",
+      "kind": "automation",
+      "oneTimeMin": 0,
+      "oneTimeMax": 300,
+      "monthlyMin": 99,
+      "monthlyMax": 199,
+      "pitchLine": "\"A missed call gets a text asking whether the house has no water at all or low pressure, and whether the breaker's been checked, so the pump tech knows what to load.\"",
+      "whenAndWhatItTakes": "Day 30. Needs the business number forwarded and the wording approved."
+    },
+    {
+      "name": "Water test reminder and sample booking",
+      "kind": "automation",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Once a year every well customer gets a text to book a water test, with a pickup day or a lab drop-off. Each result is a conversation about treatment.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the customer list and the lab they use."
+    },
+    {
+      "name": "Well record card for every property",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3500,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Depth, casing, pump setting, pressure tank size, last test results and every service visit on one card per well, pulled up by address in the truck.\"",
+      "whenAndWhatItTakes": "Month 2. Needs drilling logs and service notes, even on paper, to load."
+    },
+    {
+      "name": "Plain replies to well and water reviews",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1200,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"Each review gets a short reply drafted in the owner's voice that mentions the pump, the new well or the softener, ready to approve from the rig.\"",
+      "whenAndWhatItTakes": "Month 2, with review asks running. Needs ten past replies. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Lab report reader for treatment quotes",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"Upload a well water lab report and it pulls each value into the treatment quote and drafts the owner's plain-language summary for you to check.\"",
+      "whenAndWhatItTakes": "Month 3. Needs a set of past lab reports with the systems they installed. Comes with the AI maintenance retainer; it makes no health claims."
+    },
+    {
+      "name": "Treatment system quote builder",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4500,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Pick the problems from the water test, and it builds a softener, iron filter and UV option with installed prices and service costs for the owner to choose.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their treatment price list and sizing rules."
+    },
+    {
+      "name": "After-hours well pump line",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 3500,
+      "monthlyMin": 250,
+      "monthlyMax": 600,
+      "pitchLine": "\"At night it walks a caller through the breaker and pressure switch check, books the first morning slot and calls the pump tech only when there are animals or medical needs with no water.\"",
+      "whenAndWhatItTakes": "Month 3, before the dry season. Needs on-call rules and the checks they always ask for. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Salt and filter delivery scheduler",
+      "kind": "automation",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Softener salt and filter cartridges are scheduled by household and system size, billed automatically and dropped on a route, so treatment customers never go to a big-box store.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the treatment customer list and delivery days."
+    },
+    {
+      "name": "Drilling log and report generator",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4500,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"The driller logs formations, water-bearing zones and casing on a tablet at the rig, and the well completion report is ready for the owner and the state.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the state's well log fields and their current paper log."
+    },
+    {
+      "name": "Q&A helper on wells and water treatment",
+      "kind": "ai",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3500,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"It answers 'why does my water smell like eggs' and 'how deep will my well be' from the company's own notes, and books a test when it can't say.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their FAQ notes and areas served. Comes with the AI maintenance retainer; no health claims."
+    },
+    {
+      "name": "Land buyer drilling waitlist",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Land buyers join the drilling waitlist online with the parcel, permit status and target move-in date, and get a text when the rig is a week out.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their current drilling queue and how they order it."
+    },
+    {
+      "name": "Spoken notes to well service invoice",
+      "kind": "ai",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3500,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"The pump tech says what was pulled, replaced and reset into the phone, and the well service invoice and the record card update together.\"",
+      "whenAndWhatItTakes": "Month 5. Needs the invoice template and price list. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Deposit and footage billing for new wells",
+      "kind": "automation",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"A deposit at booking, the footage drilled billed when the rig leaves, and the pump and tank invoiced at hook-up, each sent without the office chasing it.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their billing stages and payment account."
+    },
+    {
+      "name": "Rig and pump truck schedule",
+      "kind": "software",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 6000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"The drill rig's multi-day jobs and the pump truck's same-day calls on one board, with permit and inspection dates blocked in.\"",
+      "whenAndWhatItTakes": "Month 6. Needs their rigs, trucks and how they schedule now."
+    },
+    {
+      "name": "Treatment service due-date tracker",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3500,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Every softener, UV lamp and reverse osmosis filter with its service interval, so each treatment customer is booked before the system quietly stops working.\"",
+      "whenAndWhatItTakes": "Month 6. Needs the treatment install list and service intervals."
+    },
+    {
+      "name": "Water trend notes across a county",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"It reads years of the company's own well water tests and notes which areas tend to show iron or hardness, so treatment mailers go to the right roads.\"",
+      "whenAndWhatItTakes": "Month 7. Needs a stack of past lab results with addresses. Comes with the AI maintenance retainer; it reports only what their own tests show."
+    },
+    {
+      "name": "Dry-spell alert to well owners",
+      "kind": "automation",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"When a dry spell sets in around {City}, well customers get a text on easing water use and the signs of a struggling pump.\"",
+      "whenAndWhatItTakes": "Month 7. Needs the customer list and a drought or weather feed."
+    },
+    {
+      "name": "Profit by well, pump and treatment job",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 5000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"See which work actually pays: drilling, pump calls or treatment installs, once fuel, casing, parts and crew hours are counted.\"",
+      "whenAndWhatItTakes": "Month 8. Needs a season of invoices and hours."
+    },
+    {
+      "name": "Rig crew training library",
+      "kind": "ai",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3500,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"The lead driller talks through setting casing or pulling a pump on a phone, and it becomes a searchable how-to for new well hands.\"",
+      "whenAndWhatItTakes": "Month 8. Needs a driller willing to record. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Driller's helper applicant screen",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"Applicants say whether they hold a CDL, can work long rig days away from home and have run heavy equipment, before the well company calls anyone.\"",
+      "whenAndWhatItTakes": "Whenever they post a hiring note. Needs must-haves and pay. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the well record card for drillers",
+      "whoPays": "Well companies, monthly per company",
+      "min": 39,
+      "max": 129,
+      "unit": "monthly",
+      "pitchLine": "\"Every well driller keeps depth, pump and test history on paper. I built the record card for one; any water well company can use it.\"",
+      "whyItWorks": "The data is the same for every well, and the first client paid for the build."
+    },
+    {
+      "route": "Water well association member site kit",
+      "whoPays": "The state ground water or well drillers association",
+      "min": 1500,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer member well drillers a site template with a no-water request, drilling steps and a licence display as a membership benefit.\"",
+      "whyItWorks": "Drillers' associations are small and close-knit, and few members have usable sites."
+    },
+    {
+      "route": "Treatment equipment dealer network pages",
+      "whoPays": "The water treatment equipment maker's regional distributor",
+      "min": 6000,
+      "max": 25000,
+      "unit": "one-time",
+      "pitchLine": "\"Your dealers sell softeners and filters with no page explaining a water test. I've built the test explainer and chooser for one dealer already.\"",
+      "whyItWorks": "Distributors fund dealer marketing and lack trade-specific templates."
+    },
+    {
+      "route": "Pump and supply wholesaler contractor finder",
+      "whoPays": "The well supply wholesaler, annually",
+      "min": 4000,
+      "max": 15000,
+      "unit": "per-year",
+      "pitchLine": "\"Put a find-a-well-contractor map on your site for every driller and pump installer who buys from you.\"",
+      "whyItWorks": "Wholesalers want contractor loyalty, and a directory drillers rely on beats a discount."
+    },
+    {
+      "route": "County health department private well pages",
+      "whoPays": "The county environmental health department",
+      "min": 4000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Private well owners don't know how often to test or who's licensed to drill. A plain county page with a contractor list answers both.\"",
+      "whyItWorks": "Counties have outreach budgets for private wells and need clear public pages."
+    },
+    {
+      "route": "Well and water site template for rural agencies",
+      "whoPays": "The agency, per well client",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "pitchLine": "\"License my well drilling template with the no-water request, drilling steps and water test explainer already written.\"",
+      "whyItWorks": "Rural agencies get asked for this rarely and have nothing ready."
+    },
+    {
+      "route": "Rural electric co-op member water pages",
+      "whoPays": "The rural electric cooperative",
+      "min": 3000,
+      "max": 9000,
+      "unit": "one-time",
+      "pitchLine": "\"Co-op members on wells call about pump power use and outages. A member page on well pumps and backup power, with local contractors, answers it.\"",
+      "whyItWorks": "Co-ops serve exactly the well-owning households and run member education programmes."
+    },
+    {
+      "route": "Agricultural extension water testing pages",
+      "whoPays": "The extension office or water testing programme",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Extension water testing days need sign-up pages and result explainers. Your well client already has the explainer written.\"",
+      "whyItWorks": "Extension programmes run testing events and need simple, clear pages."
+    },
+    {
+      "route": "Water test explainer licensed to labs",
+      "whoPays": "Water testing labs, monthly",
+      "min": 49,
+      "max": 149,
+      "unit": "monthly",
+      "pitchLine": "\"A results explainer any water lab can put behind its reports, so well owners understand each line without phoning.\"",
+      "whyItWorks": "Every lab has the same support problem, and the content is already built."
+    },
+    {
+      "route": "Multi-county well company location pages",
+      "whoPays": "The regional well company, per yard",
+      "min": 1200,
+      "max": 3500,
+      "unit": "one-time",
+      "pitchLine": "\"A well company with yards in several counties needs a page per yard with its own rig schedule and no-water routing.\"",
+      "whyItWorks": "One well template becomes many locations."
+    },
+    {
+      "route": "Next region's well driller",
+      "whoPays": "A well company in a new region",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I build for one well driller per region. {City}'s is spoken for; the next region's best rig crew isn't.\"",
+      "whyItWorks": "There are few drillers per market, so exclusivity is valuable and the demo carries over."
+    },
+    {
+      "route": "Rural subdivision developer water pages",
+      "whoPays": "The land developer",
+      "min": 3000,
+      "max": 9000,
+      "unit": "one-time",
+      "pitchLine": "\"Each lot in a rural subdivision needs a page on expected well depth range from nearby drilling logs, water quality notes and who to call to drill.\"",
+      "whyItWorks": "Developers sell lots faster when buyers understand water, and they have budgets."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Well and water site build plus care plan",
+      "min": 1800,
+      "max": 3000,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"Your well site and care plan go on one contract, so adding a county or updating the waitlist is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Review asks after each pump or treatment job",
+      "min": 99,
+      "max": 249,
+      "unit": "monthly",
+      "trigger": "The first no-water call or test request through the site.",
+      "line": "\"That family you got water back to is the review the next dry kitchen reads. Let's ask every well customer that evening.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "Annual water test reminder campaign",
+      "min": 200,
+      "max": 400,
+      "unit": "monthly",
+      "trigger": "Visitors read the water test explainer page more than any other.",
+      "line": "\"People are reading the water test page. Let's remind every past well owner to test this year.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Lab report reader for treatment quotes",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "trigger": "Sixty days of test requests with lab reports uploaded.",
+      "line": "\"You've got a stack of water lab reports. Let's turn each into a treatment quote and a summary in minutes.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Salt and filter delivery scheduler",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "trigger": "They install a run of softeners or mention customers buying salt elsewhere.",
+      "line": "\"Those new softener owners are buying salt at the farm store. Let's deliver it on a route and keep the water treatment customer.\""
+    },
+    {
+      "rung": 6,
+      "day": 150,
+      "offer": "Well record card for every property",
+      "min": 1200,
+      "max": 3500,
+      "unit": "one-time",
+      "trigger": "A pump tech arrives at a well with no record of its depth or pump setting.",
+      "line": "\"Your tech pulled a pump blind last week. Let's put every well's depth and pump on a card in the truck.\""
+    },
+    {
+      "rung": 7,
+      "day": 240,
+      "offer": "Rig and pump truck schedule",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "trigger": "They add a second rig or a dedicated pump truck.",
+      "line": "\"A second rig and a pump truck need one well schedule with permits on it. Let's build it.\""
+    }
+  ]
+}

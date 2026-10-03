@@ -1,0 +1,832 @@
+{
+  "schemaVersion": 1,
+  "category": "Appliance repair",
+  "slug": "appliance-repair",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Mech family batch, book archetype. Low ticket, high frequency: the pitch is online booking and reviews, not a showcase, and every price is sized to a $150-600 repair. Brands serviced stay as bracketed placeholders; no appliance brands named. Ranges are planning figures."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Appliance fix-it-first checklist",
+      "contains": "Breaker and outlet, fridge coils and door seal, washer drain filter, dryer lint trap and vent, dishwasher filter, and when to stop and book a technician",
+      "why": "Honest owners win this trade. A checklist that sometimes saves the customer a visit is what makes them book the appliance tech the next time."
+    },
+    {
+      "section": "Model and serial number finder",
+      "contains": "Where the model sticker sits on a refrigerator, washer, dryer, dishwasher, range and microwave, with an upload at booking so the right part comes on the first trip",
+      "why": "The second trip for a part is where appliance repair margin dies. Getting the model number at booking fixes that and shows the customer you're organised."
+    },
+    {
+      "section": "Diagnostic fee, parts wait and second visit",
+      "contains": "What the diagnostic fee covers, whether it's credited to the repair, how parts are ordered, typical wait for parts, and the bracketed parts and labour warranty",
+      "why": "Customers fear paying to be told the fridge is dead. Explaining the fee and the parts wait up front stops the cancellations and the angry reviews."
+    },
+    {
+      "section": "Repair or replace your appliance",
+      "contains": "Appliance age, which repairs are usually worth it, like a washer pump or fridge fan, versus sealed-system or control board failures, and the owner's own rule of thumb",
+      "why": "Half the calls are really 'should I buy a new one'. A straight answer makes the technician the adviser the household calls for every appliance."
+    },
+    {
+      "section": "Landlord appliance repair accounts",
+      "contains": "Multi-unit booking, tenant access notes, billing to the owner not the tenant, unit history for each refrigerator and washer, and a priority line for rentals",
+      "why": "Rental managers book appliance repairs every week. A page just for them turns a one-off homeowner trade into steady account work."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C25",
+      "siteType": "local-conversion",
+      "name": "Same-Day Fix",
+      "heroLayout": "split-photo",
+      "mood": [
+        "bright",
+        "helpful",
+        "quick"
+      ],
+      "bestFor": "Solo appliance techs who want the phone and a simple service request working before they invest in online booking",
+      "pairsWithTier": "starter",
+      "headlineSample": "Washer, dryer and fridge repair in {City}, often same day",
+      "whyItFits": "A warm, sunny palette and geometric display feel like a friendly neighbour with a toolbox, which suits a low-ticket household repair."
+    },
+    {
+      "id": "b",
+      "themeId": "C50",
+      "siteType": "booking-first",
+      "name": "Book the Tech",
+      "heroLayout": "type-led",
+      "mood": [
+        "efficient",
+        "clear",
+        "trustworthy"
+      ],
+      "bestFor": "Appliance repair companies with two or more techs who need customers to book slots and upload model numbers online",
+      "pairsWithTier": "standard",
+      "headlineSample": "Book an appliance repair tech in {City} tonight, online",
+      "whyItFits": "The family's own combo. Mono labels suit fees, time windows and model numbers, and a single red Book button does what this low-ticket trade needs most."
+    },
+    {
+      "id": "c",
+      "themeId": "C12",
+      "siteType": "premium-brand",
+      "name": "Built-In Specialist",
+      "heroLayout": "full-bleed-photo",
+      "mood": [
+        "precise",
+        "quiet",
+        "expert"
+      ],
+      "bestFor": "Technicians who specialise in built-in refrigerators, wall ovens and pro-style ranges in high-end kitchens",
+      "pairsWithTier": "premium",
+      "headlineSample": "Built-in and pro-style appliance service across {City}",
+      "whyItFits": "Carbon and indigo with a neutral grotesque look like a high-end kitchen showroom, which is where a built-in specialist's customers already shop."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "Nothing behind the listing",
+      "line": "{Business Name} has a strong appliance repair rating on the map and no website at all. Someone with a warm fridge full of groceries wants to book a slot, not wait for a callback.",
+      "hook": "Open their Maps listing and confirm there is no Website button. Screenshot it for when they reply.",
+      "linkLine": "The appliance repair booking page that listing could use: {demo-link}"
+    },
+    {
+      "angle": "Facebook page as the link",
+      "line": "Your listing links to Facebook, so someone with a washer that won't drain has to message and wait. Most of them would pick a time slot and be done.",
+      "hook": "Tap their Website link and confirm it lands on Facebook. Note how they handle bookings there.",
+      "linkLine": "A booking page built for appliance repair: {demo-link}"
+    },
+    {
+      "angle": "Stale free-builder page",
+      "line": "The appliance repair site on your profile still shows a free-builder ad and a contact form that goes nowhere. For a quick household fix, people just move to the next name.",
+      "hook": "Open the site and look for a builder ad, an old year or a dead form. Note which one you found.",
+      "linkLine": "Same appliance repair company, with booking that works: {demo-link}"
+    },
+    {
+      "angle": "No booking on mobile",
+      "line": "On a phone, your appliance repair page is a wall of text and a number. People book a haircut on their phone in thirty seconds and expect the same for a broken dryer.",
+      "hook": "Only if they have a site. Try to book from a phone and note where it stalls. Screenshot it for when they reply.",
+      "linkLine": "Your appliance repair site with phone booking: {demo-link}"
+    },
+    {
+      "angle": "No model number at booking",
+      "line": "Right now nobody can send you the model number of their dishwasher or dryer before you show up. That's the difference between fixing it on the first trip and coming back.",
+      "hook": "Check any form or booking they have for a model or appliance field. If there's none, the angle holds.",
+      "linkLine": "A booking form that asks for the appliance model sticker: {demo-link}"
+    },
+    {
+      "angle": "Diagnostic fee confusion in reviews",
+      "line": "One of your reviews is grumbling about the service call fee. A short page that explains the diagnostic fee and whether it comes off the repair heads that off before the technician arrives.",
+      "hook": "Only if a review mentions the trip or diagnostic fee. Quote the review carefully and kindly.",
+      "linkLine": "Appliance repair fees explained before the visit: {demo-link}"
+    },
+    {
+      "angle": "Five-star reviews on the map only",
+      "line": "Your reviews keep naming the tech who fixed a fridge the same afternoon. That's the best appliance repair advert you have, and nobody sees it unless they're already on your listing.",
+      "hook": "Read their reviews and copy one specific phrase about a fridge, washer or dryer fix. Quote it back if they reply.",
+      "linkLine": "Those appliance repair reviews right beside the Book button: {demo-link}"
+    },
+    {
+      "angle": "Holiday oven rush",
+      "line": "Ovens and ranges quit the week before Thanksgiving every year, and so do the fridges packed full for it. The appliance tech with open slots online gets those bookings first.",
+      "hook": "Use this in October or early November. Name the holiday in the reply.",
+      "linkLine": "Ready for the holiday oven and fridge rush: {demo-link}"
+    },
+    {
+      "angle": "Bookings after dinner",
+      "line": "The washer breaks mid-load at eight at night, and that's when people go looking for an appliance repair tech. If all they can do is leave a voicemail, they book someone who has slots online.",
+      "hook": "Call their listed number after hours. If it goes to a full or generic voicemail, the angle holds.",
+      "linkLine": "Appliance repair booking that works after dinner: {demo-link}"
+    },
+    {
+      "angle": "Hiring a second tech",
+      "line": "Saw you're looking for another appliance tech. A good technician wants to see a company that books the day for them, and that's something a site can show.",
+      "hook": "Only if they posted a hiring note or story. Note the date of the post.",
+      "linkLine": "An appliance repair page with a careers section: {demo-link}"
+    },
+    {
+      "angle": "Zip codes covered",
+      "line": "Your listing doesn't say which parts of {City} you'll drive to. Someone in {Neighborhood} searching 'refrigerator repair' wants to know before they book.",
+      "hook": "Look for any mention of their area in posts or reviews. Use the furthest neighbourhood you find.",
+      "linkLine": "An appliance repair service map with booking: {demo-link}"
+    },
+    {
+      "angle": "Rental property managers",
+      "line": "A few of your reviews sound like they're from landlords. Property managers book appliance repairs every week and would love a portal that bills them, not the tenant.",
+      "hook": "Only if reviews mention rentals, tenants or property managers. Quote one.",
+      "linkLine": "A landlord appliance repair account page: {demo-link}"
+    },
+    {
+      "angle": "Insured technician in the home",
+      "line": "Letting a stranger into the kitchen is the real hesitation with appliance repair. Showing that {Business Name} is insured, with a real face and name for the tech, is what gets the booking.",
+      "hook": "Check whether they show insurance or the tech's name anywhere. Never claim a credential they haven't shown.",
+      "linkLine": "An appliance repair page that introduces the tech: {demo-link}"
+    },
+    {
+      "angle": "Word-of-mouth appliance tech",
+      "line": "It sounds like most of your appliance work comes from people who have your number saved. When they move or the next fridge breaks at a new address, they search.",
+      "hook": "Look for review text like 'our go-to' or 'used them for years'. Quote it back.",
+      "linkLine": "Where a returning appliance customer would book: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "That {specific recent job} you posted is a clean appliance fix, tidy panel back on and the old part laid out. Work like that should sit next to a Book button.",
+      "hook": "Pick their newest posted repair and name it exactly: appliance type and the fault fixed.",
+      "linkLine": "That appliance repair, front and centre: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, the {specific recent job} you posted is a neat fix, old part laid out and the panel back on clean.\n\nI looked for appliance repair in {City} and found {Business Name} with great reviews but no way to book a slot or send the model number ahead. I put together a sample booking page for an appliance tech, with marked placeholders where your photos would go.\n\nWant a look?",
+    "dm2": "{Owner}, following up in case this got lost between calls. Here's the sample appliance repair site for {Business Name}: {demo-link}\n\nCustomers pick a time slot, choose the appliance, upload the model sticker and see the diagnostic fee before you arrive. If it's not for you, just say and I'll stop.",
+    "call": "\"Hi, {Owner}? It's {Your Name}. I build booking sites for appliance repair techs here in {City}. I sent you a sample a few days ago, did it come through?\"\n\nIF NO:\n\"No problem. Quick version: I built an appliance repair booking page for {Business Name}. Customers pick a slot, upload the model number and see your diagnostic fee up front, with marked placeholders where your photos would go. Can I text it to you?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"It's built around booking, not a showcase. The build runs {Build Range}, then {Care Range} a month for hosting and changes. For a shop like yours I'd quote about {Build Price}. A handful of repairs booked while you're on other jobs pays for it.\"\n\"Can I show you how the booking works, ten minutes this week?\"\n\nCLOSE:\n\"I'll send a short scope and a deposit invoice, and I'll connect it to your calendar first so bookings start right away.\"",
+    "objections": [
+      {
+        "objection": "My jobs are small. A website isn't worth it.",
+        "handler": "\"That's why this is a booking page, not a showcase. It saves the phone time on every small job and gets you the model number before you drive over.\""
+      },
+      {
+        "objection": "I don't want customers booking themselves. My day changes constantly.",
+        "handler": "\"You set the windows: morning, afternoon, and how many per day. You still confirm each booking. It just stops the back-and-forth.\""
+      },
+      {
+        "objection": "People will complain about the diagnostic fee if I post it.",
+        "handler": "\"They complain more when it's a surprise. Posting it, and whether it comes off the repair, filters out the people who'd argue about it at the door.\""
+      },
+      {
+        "objection": "I get my work from a home warranty company.",
+        "handler": "\"Warranty jobs pay less and they set the rules. Your own booking page brings in full-price customers alongside them.\""
+      },
+      {
+        "objection": "My son can build me a site.",
+        "handler": "\"Good. If he wants the model number upload and the fee page, I'll hand those over. If it stalls, the offer stands.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you, about {Build Price}, because it's booking, a fee page and a model finder. It's sized for a repair business, not a remodeler.\""
+      }
+    ],
+    "email": {
+      "subject": "Booking page for {Business Name}",
+      "body": "Hi {Owner},\n\nI build booking sites for appliance repair techs around {City}. {Business Name} has great reviews, but there's no way for someone with a broken fridge or washer to book a slot or send the model number before you arrive.\n\nI built a sample first: online booking by time window, a model sticker finder and upload, the diagnostic fee explained up front and a repair-or-replace page, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, then {Care Range} a month for hosting and changes. If not, it comes down at the end of the month.\n\nWorth ten minutes this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"{Owner}, it's {Your Name}. I build booking pages for appliance repair techs in {City} and made a sample for {Business Name}, with model number upload. I'll text the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm taking the {Business Name} appliance booking demo down Friday.\n\nWant me to keep it up? Yes or no is fine.",
+    "nurture": "Hi {Owner}, the holiday oven and fridge rush is a few weeks away. Thought of you.\n\nThe appliance repair booking page is still ready, same price. {demo-link} for another look."
+  },
+  "pricing": {
+    "bullets": [
+      "This is a low-ticket trade. Keep the build near the board's range and sell booking and reviews, never a showcase.",
+      "Peg the price to a handful of repairs booked while the tech is busy elsewhere.",
+      "Price online booking and the model upload as the core; everything else is optional.",
+      "Never publish a diagnostic fee or warranty term the owner hasn't given you; use a bracketed field.",
+      "List brands serviced only from the owner's own list, as bracketed placeholders until confirmed.",
+      "Recurring add-ons should stay under a couple of hundred a month. These owners count every dollar."
+    ],
+    "lineItems": [
+      {
+        "item": "Online booking with time windows",
+        "min": 300,
+        "max": 900,
+        "unit": "one-time",
+        "description": "Max when it syncs to their calendar, caps jobs per window and sends a reminder text the morning of the visit.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Model sticker finder and upload",
+        "min": 200,
+        "max": 500,
+        "unit": "one-time",
+        "description": "Max with a sticker location guide for each appliance type and an upload that attaches to the booking.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Appliance type page (each)",
+        "min": 150,
+        "max": 350,
+        "unit": "per-page",
+        "description": "Max when the page lists common faults, the fix-it-first checks and repairs of that appliance.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Landlord account booking page",
+        "min": 300,
+        "max": 800,
+        "unit": "one-time",
+        "description": "Max with unit and tenant fields, owner billing details and a list of past repairs by unit.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Fee and parts-wait explainer",
+        "min": 150,
+        "max": 400,
+        "unit": "one-time",
+        "description": "Max when it covers the diagnostic fee credit, parts ordering, second visit and bracketed warranty terms.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Spanish-language booking path",
+        "min": 300,
+        "max": 800,
+        "unit": "one-time",
+        "description": "Max when booking, the model finder and the fee page are all translated.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Review engine for every appliance repair",
+      "min": 79,
+      "max": 199,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"When the fridge is cold again, the customer gets a text asking for a review with the tech's name in it. In appliance repair, the review count decides who gets booked.\"",
+      "when": "Day 30. The first thing to sell after booking."
+    },
+    {
+      "name": "Google profile booking button and posts",
+      "min": 150,
+      "max": 350,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A Book button on your Google profile plus a weekly post of a real washer or fridge fix, so the map listing books slots directly.\"",
+      "when": "Day 30, once booking is live."
+    },
+    {
+      "name": "Fridge magnet with the booking link",
+      "min": 150,
+      "max": 400,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Leave a magnet on every fridge you fix with the booking page and number. The next appliance in that kitchen to break books you without a search.\"",
+      "when": "Month 2, printed in a batch."
+    },
+    {
+      "name": "Landlord outreach letter",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A short letter and page for local property managers offering appliance repair accounts with owner billing and unit history.\"",
+      "when": "Month 2, once the landlord account page is live."
+    },
+    {
+      "name": "Van magnet and decal artwork",
+      "min": 150,
+      "max": 500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A clean van magnet that says appliance repair, the booking page and the phone. It's parked in a different driveway several times a day.\"",
+      "when": "Right after launch."
+    },
+    {
+      "name": "Holiday oven and fridge check campaign",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"In late October, past customers get a text offering an oven and fridge check before the holidays, with slots to book.\"",
+      "when": "Pitch in early October."
+    },
+    {
+      "name": "Dryer vent cleaning add-on page",
+      "min": 150,
+      "max": 400,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A dryer vent cleaning page that adds to any dryer repair booking. It's an easy add-on for the same visit.\"",
+      "when": "Month 2, for techs who clean vents."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Used appliance resellers",
+        "whoPays": "The used appliance store",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"The shop that buys the appliances you can't save and resells refurbished ones needs a catalogue site. You send each other customers.\"",
+        "whyItWorks": "Repair techs and refurb shops trade parts and referrals, and refurb shops sell online poorly."
+      },
+      {
+        "route": "Small property management firms",
+        "whoPays": "The property manager",
+        "min": 1000,
+        "max": 2500,
+        "unit": "one-time",
+        "pitchLine": "\"The managers who call you for tenant fridges and washers need a maintenance request page. Your appliance repair account is the first vendor on it.\"",
+        "whyItWorks": "Small managers have constant tenant requests and a trusted appliance vendor."
+      },
+      {
+        "route": "Kitchen remodelers",
+        "whoPays": "The kitchen remodeler",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"Kitchen remodelers call you to install and hook up new appliances. Their portfolio sites are usually thin, and your introduction gets me the meeting.\"",
+        "whyItWorks": "Remodelers spend more on sites than repair techs and already trust the appliance tech."
+      },
+      {
+        "route": "Dryer vent and duct cleaners",
+        "whoPays": "The vent cleaning company, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"When you find a clogged dryer vent, who cleans it? That company needs a booking site too, and your dryer page links to theirs.\"",
+        "whyItWorks": "Dryer repairs and vent cleaning go together, so both owners gain a referral partner."
+      },
+      {
+        "route": "Small apartment owners and HOAs",
+        "whoPays": "The building owner or HOA",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"Small buildings with shared laundry rooms need a page where residents report broken washers and dryers. It routes to your appliance repair booking.\"",
+        "whyItWorks": "Shared laundry breaks constantly, and the owner wants complaints handled without their phone."
+      },
+      {
+        "route": "Local appliance stores without service departments",
+        "whoPays": "The independent appliance retailer",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The independent appliance store that refers repairs to you sells new machines with a weak website. Your introduction is the warmest way in.\"",
+        "whyItWorks": "Independent stores compete with big-box sites and need a real one, and they already trust the repair tech."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Listing writer for the used appliance shop",
+        "whoPays": "The used appliance store, monthly",
+        "min": 79,
+        "max": 199,
+        "unit": "monthly",
+        "pitchLine": "\"Photograph a refurbished washer and its model sticker, and an assistant drafts the listing with size, features and the shop's warranty terms.\"",
+        "whyItWorks": "Refurb shops list dozens of machines a month, and listing is their bottleneck."
+      },
+      {
+        "route": "Tenant appliance triage for managers",
+        "whoPays": "The property manager, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"Tenants report 'fridge not cold' at night. An assistant asks about the breaker and the dial, gets the model sticker and books the appliance tech only when needed.\"",
+        "whyItWorks": "Managers cut wasted calls, and the appliance client gets real repairs with model numbers ready."
+      },
+      {
+        "route": "Appliance spec checker for remodelers",
+        "whoPays": "The kitchen remodeler, monthly",
+        "min": 100,
+        "max": 250,
+        "unit": "monthly",
+        "pitchLine": "\"Before cabinets are built, an assistant checks each chosen appliance's cut-out size, power and water hook-up against the plan.\"",
+        "whyItWorks": "Wrong cut-outs cost remodelers days, and the appliance tech is the one who usually finds them."
+      },
+      {
+        "route": "Laundry room fault reports for buildings",
+        "whoPays": "The building owner, monthly",
+        "min": 79,
+        "max": 199,
+        "unit": "monthly",
+        "pitchLine": "\"Residents scan a code on the broken washer, describe the fault, and an assistant logs it by machine and books the appliance repair tech.\"",
+        "whyItWorks": "Shared laundry complaints are endless, and the owner pays to get them off their phone."
+      },
+      {
+        "route": "Product question helper for the appliance store",
+        "whoPays": "The independent appliance retailer, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Shoppers ask whether a dishwasher fits or a dryer needs gas. An assistant answers from the store's own spec sheets and hands off to staff.\"",
+        "whyItWorks": "Independent stores can't staff chat, and the repair tech's introduction gets the first meeting."
+      },
+      {
+        "route": "Vent cleaning booking follow-up",
+        "whoPays": "The vent cleaning company",
+        "min": 500,
+        "max": 1200,
+        "unit": "one-time",
+        "pitchLine": "\"The dryer vent cleaner you refer to loses bookings to slow replies. The same follow-up texts your appliance booking uses, set up for them.\"",
+        "whyItWorks": "It's configuration of what you built, and the referral comes from a trusted tech."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Missed-call text with a booking link",
+      "kind": "automation",
+      "oneTimeMin": 0,
+      "oneTimeMax": 200,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Miss a call while your head's behind a dryer, and the caller gets a text with your appliance repair booking page and a request for the model sticker.\"",
+      "whenAndWhatItTakes": "Day 30. Needs the business number forwarded and the booking page live."
+    },
+    {
+      "name": "Morning-of visit reminder texts",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 600,
+      "monthlyMin": 29,
+      "monthlyMax": 99,
+      "pitchLine": "\"Every booked customer gets a text the morning of the visit with the time window and the tech's name, so fewer appliance techs knock on empty houses.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the booking calendar connected."
+    },
+    {
+      "name": "Review reply drafts for appliance fixes",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 59,
+      "monthlyMax": 149,
+      "pitchLine": "\"Each review gets a short reply drafted that names the fridge, washer or oven and the tech, ready to approve between jobs.\"",
+      "whenAndWhatItTakes": "Month 2, with the review engine running. Needs ten past replies. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Parts order tracker by job",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1800,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Every part ordered for a repair, with its supplier, ETA and customer, and a text to the customer when the part lands so the second visit books itself.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their parts suppliers and how they order today."
+    },
+    {
+      "name": "Model sticker reader",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1800,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"The customer uploads a blurry shot of the sticker inside the dishwasher door, and it reads the model and serial into the booking so the tech can check parts first.\"",
+      "whenAndWhatItTakes": "Month 3. Needs a few dozen past sticker shots. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Appliance repair history by address",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1800,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Type the address and see every appliance in that kitchen and laundry room, its model and every past repair, before the tech knocks.\"",
+      "whenAndWhatItTakes": "Month 3. Needs past invoices they can export."
+    },
+    {
+      "name": "Fault-code lookup for techs",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2200,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"The tech types the error code from a washer or oven display and gets the likely causes from the shop's own repair notes, with the parts they used last time.\"",
+      "whenAndWhatItTakes": "Month 3. Needs a season of repair notes with codes recorded. Comes with the AI maintenance retainer; the tech always confirms."
+    },
+    {
+      "name": "Diagnosis-to-invoice on the phone",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2200,
+      "monthlyMin": 49,
+      "monthlyMax": 149,
+      "pitchLine": "\"Tap the appliance, the fault and the part, and the repair quote and invoice are built at the kitchen counter with a card payment link.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their price list for common appliance repairs."
+    },
+    {
+      "name": "Booking chat for appliance questions",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1800,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"It answers 'do you fix ice makers' and 'is the diagnostic fee credited' from the owner's notes, and books an appliance repair slot at the end.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their FAQ, fee wording and brands-serviced list. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Repair-or-replace estimate helper",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1800,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"The tech enters appliance age and repair price, and the customer sees a plain repair-or-replace note using the owner's own rule, not a sales pitch.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the owner's rule of thumb and typical replacement prices."
+    },
+    {
+      "name": "Voice notes to repair record",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1800,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"The appliance tech says the fault and fix into the phone in the driveway, and the repair record and warranty note are written.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their record format. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Landlord portal with unit history",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Property managers book appliance repairs per unit, approve quotes and see every fridge and washer's history, billed monthly in one statement.\"",
+      "whenAndWhatItTakes": "Month 5, once they have two or more landlord accounts."
+    },
+    {
+      "name": "Parts-arrived rebooking texts",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 29,
+      "monthlyMax": 99,
+      "pitchLine": "\"When an ordered part is marked arrived, the customer gets a text with open slots to finish the appliance repair.\"",
+      "whenAndWhatItTakes": "Month 5, after the parts tracker."
+    },
+    {
+      "name": "Day route for appliance calls",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2500,
+      "monthlyMin": 49,
+      "monthlyMax": 149,
+      "pitchLine": "\"The day's appliance calls ordered by address and time window, so the tech isn't crossing {City} twice before lunch.\"",
+      "whenAndWhatItTakes": "Month 6. Needs a few weeks of bookings."
+    },
+    {
+      "name": "Warranty claim drafts for parts",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1800,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"When a part fails inside its warranty, it drafts the claim from the repair record so the shop gets reimbursed instead of eating the part.\"",
+      "whenAndWhatItTakes": "Month 6. Needs past claims and supplier forms. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Job profit by appliance type",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1800,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"See whether fridges, washers or ovens make the shop money once parts, second trips and drive time are counted.\"",
+      "whenAndWhatItTakes": "Month 7. Needs a season of invoices."
+    },
+    {
+      "name": "Yearly appliance check reminder",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 29,
+      "monthlyMax": 99,
+      "pitchLine": "\"A year after a fridge or dryer repair, the customer gets a text offering a coil clean or vent check, with slots to book.\"",
+      "whenAndWhatItTakes": "Month 7. Needs a customer list with repair dates."
+    },
+    {
+      "name": "Parts stock list for the van",
+      "kind": "software",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 99,
+      "pitchLine": "\"The parts each appliance tech used this month turn into a van stock list, so common belts, igniters and pumps are on board.\"",
+      "whenAndWhatItTakes": "Month 8. Needs a few months of parts records."
+    },
+    {
+      "name": "Tech training notes from the owner",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1800,
+      "monthlyMin": 59,
+      "monthlyMax": 149,
+      "pitchLine": "\"The owner talks through a tricky ice maker or control board diagnosis, and it becomes a searchable appliance how-to for the new tech.\"",
+      "whenAndWhatItTakes": "Month 8, when they hire. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Appliance tech applicant screen",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1200,
+      "monthlyMin": 59,
+      "monthlyMax": 149,
+      "pitchLine": "\"Applicants say which appliances they've repaired, whether they have refrigerant handling certification and their own tools, before you call.\"",
+      "whenAndWhatItTakes": "When they post a hiring note. Needs must-haves and pay. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the appliance booking page",
+      "whoPays": "Appliance repair techs, monthly",
+      "min": 29,
+      "max": 99,
+      "unit": "monthly",
+      "pitchLine": "\"Solo appliance techs everywhere take bookings by voicemail. I built model-number booking for one; any appliance tech can rent it.\"",
+      "whyItWorks": "Low-ticket trades buy subscriptions more easily than builds, and the workflow is identical everywhere."
+    },
+    {
+      "route": "Parts distributor tech directory",
+      "whoPays": "The appliance parts distributor, annually",
+      "min": 3000,
+      "max": 10000,
+      "unit": "per-year",
+      "pitchLine": "\"Put a find-an-appliance-tech map on your site for every repair shop that buys parts from you.\"",
+      "whyItWorks": "Parts distributors want shop loyalty and see every independent tech in the region."
+    },
+    {
+      "route": "Appliance service association member template",
+      "whoPays": "The regional appliance service association",
+      "min": 1000,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer members an appliance repair booking template with a model finder and fee page as part of membership.\"",
+      "whyItWorks": "Small trade associations need tangible benefits for members."
+    },
+    {
+      "route": "Independent appliance retailer service pages",
+      "whoPays": "The appliance retailer",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Stores without a service department send repair calls nowhere. A service booking page routed to a partner appliance tech fixes that.\"",
+      "whyItWorks": "Retailers want after-sale support without hiring techs."
+    },
+    {
+      "route": "Home warranty vendor booking kit",
+      "whoPays": "The home warranty company's regional office",
+      "min": 2000,
+      "max": 8000,
+      "unit": "one-time",
+      "pitchLine": "\"Your appliance vendors can't show customers who's coming or when. A vendor booking page kit across the network solves it.\"",
+      "whyItWorks": "Warranty firms are judged on vendor reliability."
+    },
+    {
+      "route": "Appliance booking template for agencies",
+      "whoPays": "The agency, per appliance client",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "pitchLine": "\"License my appliance repair template with booking, model upload and fee explainer, instead of building another showcase site.\"",
+      "whyItWorks": "Agencies get asked for small trades and need a cheap, fast build."
+    },
+    {
+      "route": "Property management firm vendor portal",
+      "whoPays": "The regional property management company",
+      "min": 3000,
+      "max": 9000,
+      "unit": "one-time",
+      "pitchLine": "\"Your appliance repair vendors across several cities need one booking and history portal. I've built it for one tech already.\"",
+      "whyItWorks": "Bigger managers want vendor visibility and pay for it."
+    },
+    {
+      "route": "Refurbished appliance store network",
+      "whoPays": "Refurb appliance stores, monthly",
+      "min": 49,
+      "max": 149,
+      "unit": "monthly",
+      "pitchLine": "\"A listing and warranty registration site any refurbished appliance store can run, built from the repair work you already know.\"",
+      "whyItWorks": "Refurb stores are a niche with no tailored software."
+    },
+    {
+      "route": "Trade school appliance course pages",
+      "whoPays": "The trade school",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Appliance repair courses struggle to show career paths. A course page with local shops that hire graduates fills seats.\"",
+      "whyItWorks": "Schools need enrolments, and the appliance tech who hires graduates is the introduction."
+    },
+    {
+      "route": "Laundry-room service plans for apartment owners",
+      "whoPays": "Apartment owners, monthly via the tech",
+      "min": 49,
+      "max": 199,
+      "unit": "monthly",
+      "pitchLine": "\"A sign-up page for building owners to put shared washers and dryers on a monthly check and repair plan with your appliance client.\"",
+      "whyItWorks": "Turns one-off laundry calls into recurring revenue across many buildings."
+    },
+    {
+      "route": "One appliance shop per metro",
+      "whoPays": "An appliance repair shop in a new metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I build for one appliance repair shop per metro. {City} has one; the next city's busiest independent appliance tech doesn't.\"",
+      "whyItWorks": "The booking template and demo carry straight over."
+    },
+    {
+      "route": "Built-in appliance specialist network",
+      "whoPays": "High-end appliance specialists, per site",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Specialists in built-in refrigerators and pro ranges serve wealthy kitchens and need a sharper site than a general appliance tech.\"",
+      "whyItWorks": "Higher-ticket specialists pay more, and the premium direction is already designed."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Appliance booking site plus care plan, one contract",
+      "min": 1200,
+      "max": 2000,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"Booking site and care plan on one appliance repair contract, so a fee change or new time window is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Review engine for every appliance repair",
+      "min": 79,
+      "max": 199,
+      "unit": "monthly",
+      "trigger": "The first ten online bookings come through.",
+      "line": "\"Online bookings are coming in. Let's ask every one of those appliance customers for a review the same day.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "Fridge magnet with the booking link",
+      "min": 150,
+      "max": 400,
+      "unit": "one-time",
+      "trigger": "A repeat customer books a second appliance through the site.",
+      "line": "\"That customer booked you again for the dryer. Let's leave a magnet on every fridge so the whole kitchen books you.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Parts order tracker by job",
+      "min": 600,
+      "max": 1800,
+      "unit": "one-time",
+      "trigger": "They mention losing track of ordered parts or customers calling to ask.",
+      "line": "\"Customers keep calling about their parts. Let's track every appliance part and text them when it lands.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Landlord portal with unit history",
+      "min": 1200,
+      "max": 3000,
+      "unit": "one-time",
+      "trigger": "A second property manager books through the landlord account page.",
+      "line": "\"Two landlords are booking now. Let's give them a portal with every unit's appliance history.\""
+    },
+    {
+      "rung": 6,
+      "day": 150,
+      "offer": "Fault-code lookup for techs",
+      "min": 800,
+      "max": 2200,
+      "unit": "one-time",
+      "trigger": "They hire a second appliance tech.",
+      "line": "\"Your new tech doesn't know the error codes yet. Let's put your repair notes in their pocket.\""
+    }
+  ]
+}

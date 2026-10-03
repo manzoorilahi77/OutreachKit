@@ -1,0 +1,860 @@
+{
+  "schemaVersion": 1,
+  "category": "Electrical",
+  "slug": "electrical",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Mech family batch. Licence-gated trade, so copy leans on licence visibility and permits. EV charger and panel pages are the wedge. No panel, charger or generator brands, no amperage specs, no response-time promises. Ranges are planning figures."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Panel upgrade explainer",
+      "contains": "Fuse boxes, full panels with no open slots, breakers that trip under load, adding circuits for a kitchen or shop, utility disconnect and reconnect, permit and inspection",
+      "why": "Panel work is the job that unlocks every other job, and homeowners don't know they need one until an electrician explains why the new appliance won't run."
+    },
+    {
+      "section": "EV charger installation page",
+      "contains": "Garage or driveway location, distance from the panel, a load check, the dedicated circuit, permit, and installing a charger the customer already bought",
+      "why": "New EV owners search for a charger install the week the car arrives. A page that asks for a panel photo and the garage layout turns that search into a quote."
+    },
+    {
+      "section": "Standby generator and transfer switches",
+      "contains": "Whole-home versus essential-circuit backup, transfer switch or interlock, portable generator inlets, fuel source coordination, and where the unit can legally sit",
+      "why": "After an outage, people want backup power fast and fear doing it wrong. A plain page on options makes the electrician the safe first call."
+    },
+    {
+      "section": "Older home wiring and rewiring",
+      "contains": "Knob-and-tube, aluminium branch wiring, two-prong ungrounded outlets, insurer questions on old wiring, and what a room-by-room rewire looks like",
+      "why": "Buyers of older homes get told by an inspector or insurer to deal with the wiring. They pick the electrician who explains it without scaring them."
+    },
+    {
+      "section": "Permits, inspections and code work",
+      "contains": "Which electrical jobs need a permit, who pulls it, inspection scheduling, correcting handyman wiring before a home sale, and the city inspector's sign-off",
+      "why": "Permits are what separate a licensed electrician from the cheaper guy. Showing the process makes the higher quote make sense."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C13",
+      "siteType": "local-conversion",
+      "name": "Live Circuit",
+      "heroLayout": "split-photo",
+      "mood": [
+        "sharp",
+        "alert",
+        "capable"
+      ],
+      "bestFor": "Owner-electricians with one or two vans doing service calls, panel swaps and EV charger installs",
+      "pairsWithTier": "starter",
+      "headlineSample": "Licensed electrician in {City} for panels, outlets and EV chargers",
+      "whyItFits": "Amber on near-black reads like a caution label on a panel cover, and the geometric display type gives a small shop a confident face without photos."
+    },
+    {
+      "id": "b",
+      "themeId": "C50",
+      "siteType": "emergency-response",
+      "name": "Breaker Board",
+      "heroLayout": "type-led",
+      "mood": [
+        "urgent",
+        "exact",
+        "plain"
+      ],
+      "bestFor": "Electrical contractors that take power-out, sparking outlet and storm-damage calls and run a service desk",
+      "pairsWithTier": "standard",
+      "headlineSample": "Power out or sparking outlet in {City}? Call a licensed electrician",
+      "whyItFits": "The family's own combo. Mono labels for licence, hours and service fees read like a breaker schedule, and the red call button is the only colour on the page."
+    },
+    {
+      "id": "c",
+      "themeId": "C2",
+      "siteType": "premium-brand",
+      "name": "Whole-Home Power",
+      "heroLayout": "full-bleed-photo",
+      "mood": [
+        "assured",
+        "quiet",
+        "precise"
+      ],
+      "bestFor": "Electricians selling rewires, standby generators and lighting design to custom homes and large remodels",
+      "pairsWithTier": "premium",
+      "headlineSample": "Rewiring and backup power for {City}'s finest homes",
+      "whyItFits": "A private-bank palette and classical serif suit a high-value electrical job where the buyer is choosing a careful craftsman, not the fastest van."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "Missing Website button",
+      "line": "{Business Name} shows up on the map with an electrician's licence on the van in the profile shot, but there's no website to tap. People hiring someone to open their panel want more than a pin.",
+      "hook": "Open their Maps listing and confirm there is no Website button. Screenshot it for when they reply.",
+      "linkLine": "The electrical site that would sit behind that pin: {demo-link}"
+    },
+    {
+      "angle": "Facebook standing in for a site",
+      "line": "Clicking through from your listing lands on Facebook, where the last panel swap is buried under reposts. A homeowner choosing an electrician wants the licence and a request form first.",
+      "hook": "Tap their Website link and confirm it lands on Facebook. Note the latest electrical job posted.",
+      "linkLine": "An electrician page made for the panel and charger buyer: {demo-link}"
+    },
+    {
+      "angle": "Expired free page",
+      "line": "The link on your listing opens a free page builder's ad more than it opens {Business Name}. For an electrician, looking out of date makes people wonder about the wiring too.",
+      "hook": "Open the site and look for an ad banner, a stale copyright year or a dead form. Note which one you found.",
+      "linkLine": "Same electrical contractor, current and tidy on a phone: {demo-link}"
+    },
+    {
+      "angle": "Tiny text on mobile",
+      "line": "Your electrical site loads as a shrunken desktop page on my phone, so I had to pinch to find the number. Someone with half the house dark is reading by phone light.",
+      "hook": "Only if they have a site. Load it on a phone and note whether text is unreadable or the number won't tap. Screenshot it for when they reply.",
+      "linkLine": "Your electrician site rebuilt for a phone in a dark house: {demo-link}"
+    },
+    {
+      "angle": "No quote request for small jobs",
+      "line": "There's no way to ask {Business Name} about adding an outlet or swapping a light except phoning during the day. Small electrical jobs are what people plan at night.",
+      "hook": "Check the listing, the social pages and any site for a request form. If there is none, the angle holds.",
+      "linkLine": "An electrical request form that asks for a panel shot: {demo-link}"
+    },
+    {
+      "angle": "EV charger wedge",
+      "line": "You've posted a couple of EV charger installs in garages, but there's no charger page a new EV owner would find. They search for that install the week the car arrives.",
+      "hook": "Look for any charger, garage circuit or EV post on their grid. If you find one, lead with it.",
+      "linkLine": "An EV charger installation page for {Business Name}: {demo-link}"
+    },
+    {
+      "angle": "Review praising tidy panel work",
+      "line": "A reviewer wrote that your electrician labelled every breaker and left the panel cleaner than the builder did. Those words would sell the next panel upgrade if they lived on a page.",
+      "hook": "Read their reviews and copy one specific phrase about a panel, a fix or tidy work. Quote it back if they reply.",
+      "linkLine": "Those electrical reviews next to the work they describe: {demo-link}"
+    },
+    {
+      "angle": "Storm and outage season",
+      "line": "Every big storm in {City} leaves people with a damaged service mast or a generator they want hooked up properly. The electrician with a storm page is the one they find in the dark.",
+      "hook": "Use this before storm or ice season, or right after a big outage in their area. Name the event in the reply.",
+      "linkLine": "Ready before the next outage brings electrical calls: {demo-link}"
+    },
+    {
+      "angle": "Sparks and burning smells at night",
+      "line": "A buzzing outlet or a burning smell at nine at night can't wait for morning. If your electrical line rolls to a full mailbox after hours, that family keeps dialling until another electrician answers.",
+      "hook": "Call their listed number after hours. If it goes to a full or generic voicemail, the angle holds.",
+      "linkLine": "An electrical request that works when the power doesn't: {demo-link}"
+    },
+    {
+      "angle": "Hiring journeymen",
+      "line": "Noticed {Business Name} is looking for a journeyman electrician. Good electricians size up a contractor online before they leave steady work, and right now there's nothing to size up.",
+      "hook": "Only if they posted a hiring note, a story or a van sign. Note the date of the post.",
+      "linkLine": "An electrical contractor page with a careers section: {demo-link}"
+    },
+    {
+      "angle": "Suburbs past the city line",
+      "line": "Your reviews mention electrical work in towns well past {City}, but nothing online tells someone in {Neighborhood} you'll drive out. 'Electrician' plus the town is the search.",
+      "hook": "Find towns named in their reviews or posts. Use the furthest one.",
+      "linkLine": "An electrician page for each town you cover: {demo-link}"
+    },
+    {
+      "angle": "Paying for a panel over time",
+      "line": "If {Business Name} lets people pay off a panel upgrade or generator over months, say so on a page. Those are the electrical jobs people put off because of one lump sum.",
+      "hook": "Only if they mention financing somewhere: a post, a review, the van. If not, skip this angle.",
+      "linkLine": "Electrical payment options, explained before the visit: {demo-link}"
+    },
+    {
+      "angle": "Licence lookup nobody does",
+      "line": "Your electrical contractor licence is on the state board, but homeowners never check it. Putting it on a page, plainly, is the fastest way to stand apart from the handyman doing wiring on the side.",
+      "hook": "Look them up on the state licence board. Note that a record exists; never quote a number you didn't see.",
+      "linkLine": "Licence, insurance and permits on one electrician page: {demo-link}"
+    },
+    {
+      "angle": "Builder and realtor referrals only",
+      "line": "It sounds like most of your electrical work comes through builders and a couple of realtors. If one of them retires or switches electricians, the phone goes quiet overnight.",
+      "hook": "Look for review text or posts mentioning builders, realtors or new construction. Quote it back.",
+      "linkLine": "Where your electrical referrals could land: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "That {specific recent job} you posted is careful electrical work, tight bends and a labelled panel. A stranger should see that before they see your phone number.",
+      "hook": "Pick their newest finished job and name it exactly: panel, charger, generator or lighting, and the town if tagged.",
+      "linkLine": "That electrical job, front and centre: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "{Owner}, the {specific recent job} on your page is clean electrical work, labelled breakers and tidy runs.\n\nI looked for an electrician in {City} and found {Business Name} on social, but no site showing your licence, the EV charger and panel work you do, or a way to ask for a quote. I sketched a sample electrician page, with marked placeholders where your photos would go.\n\nWould you like to see it?",
+    "dm2": "{Owner}, circling back in case this got lost under service calls. Sample electrician site for {Business Name}: {demo-link}\n\nIt has a request form that asks for a shot of the panel, an EV charger page, a panel upgrade explainer and your licence and permits up front. Not interested? One word and I'll stop.",
+    "call": "\"{Owner}? It's {Your Name}. I make websites for electricians around {City}. I sent a message about a sample site for {Business Name}, did it reach you?\"\n\nIF NO:\n\"That's fine. Quick version: I built a sample electrician site with a panel-photo request form, an EV charger page and your licence front and centre, with marked placeholders where your photos would go. Want me to text the link?\"\n\nIF YES:\n\"What jumped out at you?\"\n → let them talk, don't fill the silence\n\"This isn't a lead list or ads. It's a site you own outright. It runs {Build Range} depending on how many service and town pages you want, then {Care Range} a month for hosting and edits. For a shop like yours I'd quote about {Build Price}, around one panel upgrade.\"\n\"Can I take ten minutes Thursday to walk you through it?\"\n\nCLOSE:\n\"I'll send the scope and a deposit invoice. When it clears I start, and the EV charger page is live first.\"",
+    "objections": [
+      {
+        "objection": "Builders keep me busy. I don't need homeowner work.",
+        "handler": "\"Then the site is insurance. Builders slow down every few years. A page for panels and EV chargers keeps homeowner work coming in when they do.\""
+      },
+      {
+        "objection": "Every electrical job is different, I can't put prices online.",
+        "handler": "\"We won't. The site explains how you quote, asks for a panel photo and the job details, and you price it. No numbers you haven't approved.\""
+      },
+      {
+        "objection": "I don't want calls from people wanting free advice.",
+        "handler": "\"The request form asks for the address, the job and a panel shot before it reaches you. People who fill that in want an electrician, not a chat.\""
+      },
+      {
+        "objection": "My cousin built me a site a few years back.",
+        "handler": "\"Good to have one. If your cousin wants to add the EV charger page and the request form, I'll hand them over. If it never happens, the offer stands.\""
+      },
+      {
+        "objection": "I'm already paying a lead service.",
+        "handler": "\"Those leads go to three electricians. Your own site sends the panel job to one, and it's still yours when you stop paying the service.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you, about {Build Price}, because it's a request form, an EV charger page, a panel page and a few towns. One charger install covers a good part of it.\""
+      }
+    ],
+    "email": {
+      "subject": "Electrician site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for electricians in and around {City}. {Business Name} does careful work going by its social pages, but there's no site a homeowner finds when they need a panel upgrade or an EV charger.\n\nI built a sample rather than ask for a meeting: a request form that asks for a shot of the panel, an EV charger page, a panel upgrade explainer, a permits page and your licence and insurance shown plainly, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, then {Care Range} a month for hosting and edits. If not, it comes down at the end of the month.\n\nTen minutes on the phone this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"{Owner}, {Your Name} here. I build sites for electricians in {City} and made a sample for {Business Name}, EV charger page included. I'll text you the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm clearing out demos on Friday, including the {Business Name} electrician site.\n\nWant it kept? A yes or no is plenty.",
+    "nurture": "Hi {Owner}, storm season and the next round of EV deliveries are both coming, and the panel calls follow. Thought of you.\n\nThe electrician site is still ready, same price. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to one panel upgrade. Electricians think in panels, circuits and chargers, not design hours.",
+      "The EV charger page is the wedge: price it as its own line and build it first.",
+      "Quote panel, generator, rewiring and lighting pages separately; each serves a different buyer and season.",
+      "Never publish a licence number, service fee or amperage the electrician hasn't given you; leave a bracketed field.",
+      "Builder-heavy electricians need a capability page for contractors as well as homeowner pages. Scope both.",
+      "Town pages only for towns where they hold jobs and, where it matters, a local registration."
+    ],
+    "lineItems": [
+      {
+        "item": "EV charger installation page with request",
+        "min": 400,
+        "max": 1000,
+        "unit": "one-time",
+        "description": "Max with panel and garage photo upload, a distance-from-panel question and routing to the estimator.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Electrical service page (each)",
+        "min": 250,
+        "max": 600,
+        "unit": "per-page",
+        "description": "Max when the page carries its own warning signs, permit notes and finished jobs of that type.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Panel upgrade explainer with request",
+        "min": 500,
+        "max": 1200,
+        "unit": "one-time",
+        "description": "Max with a fuse box and full-panel checklist, a panel shot upload and a utility coordination section.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Generator and transfer switch page",
+        "min": 400,
+        "max": 1000,
+        "unit": "one-time",
+        "description": "Max with whole-home versus essential-circuit comparison, siting rules and a request that asks about fuel.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Town service-area page (each)",
+        "min": 200,
+        "max": 450,
+        "unit": "per-page",
+        "description": "Max when each town page has its own jobs, a local review and permit office notes.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Builder and contractor capability page",
+        "min": 500,
+        "max": 1200,
+        "unit": "one-time",
+        "description": "Max with a project list, insurance certificate request and a bid invitation form for general contractors.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Spanish-language electrical path",
+        "min": 500,
+        "max": 1200,
+        "unit": "one-time",
+        "description": "Max when the request form, panel page and EV charger page are all translated.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Review asks after each electrical job",
+      "min": 99,
+      "max": 249,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"When the lights come back on or the charger lights up green, the customer gets a text asking for a review. Fresh electrician reviews mention the tidy panel, and that sells the next one.\"",
+      "when": "Day 30. The easiest second sale."
+    },
+    {
+      "name": "Licence-checked electrician ads",
+      "min": 500,
+      "max": 1000,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Electricians get the licence-checked badge on the local service ads, which the handyman can't. I set it up for panel and charger searches and dispute the junk calls.\"",
+      "when": "Month 2, once reviews are flowing and licence and insurance documents are current."
+    },
+    {
+      "name": "Google profile posts for each panel and charger",
+      "min": 250,
+      "max": 450,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Every panel upgrade, charger and generator gets posted to your Google profile with the town named, so the map shows an electrician who's busy right now.\"",
+      "when": "Day 30, once the site is live."
+    },
+    {
+      "name": "EV dealership and car club outreach kit",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A leave-behind card and a short page for EV sales staff and local owner clubs, pointing new drivers to your charger installation request.\"",
+      "when": "Month 2, once the EV charger page is live."
+    },
+    {
+      "name": "Panel and wiring safety mailer to older streets",
+      "min": 500,
+      "max": 1200,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Streets of older homes get a plain postcard about fuse boxes, two-prong outlets and panel checks, from the electrician who has worked on that street.\"",
+      "when": "Month 3, aimed at neighbourhoods where they've done rewires."
+    },
+    {
+      "name": "Van lettering and yard sign artwork",
+      "min": 300,
+      "max": 900,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"An electrician's van sits outside for a whole day on a panel swap. Lettering with the licence line and site makes the street remember who did it.\"",
+      "when": "Right after launch, or when they add a van."
+    },
+    {
+      "name": "Post-outage generator campaign",
+      "min": 500,
+      "max": 1200,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"After a long outage in {City}, a generator page, a map post and a postcard to affected streets go out that week, all pointing at a licensed electrician.\"",
+      "when": "Built in a quiet month, switched on after the next big outage."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "The electrical supply house",
+        "whoPays": "The electrical distributor branch",
+        "min": 3000,
+        "max": 9000,
+        "unit": "one-time",
+        "pitchLine": "\"Your electrical supply house sells wire and breakers to every electrician in the county. Introduce me and I'll build their contractor locator and will-call page.\"",
+        "whyItWorks": "Distributors have budgets and the list of every electrician nearby, which is your prospect list."
+      },
+      {
+        "route": "Solar installers who need an electrician",
+        "whoPays": "The solar installer, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The solar crews who call you for panel upgrades before an array goes up need a site too. Your panel page links to them and they send the upgrade back.\"",
+        "whyItWorks": "Solar jobs often need an electrical service upgrade first, so the two trades already hand work back and forth."
+      },
+      {
+        "route": "General contractors who sub the wiring",
+        "whoPays": "The general contractor or remodeler",
+        "min": 2000,
+        "max": 5000,
+        "unit": "one-time",
+        "pitchLine": "\"The remodelers and builders you wire for show kitchens, not electrical. Your introduction gets me in to build their project site.\"",
+        "whyItWorks": "Contractors buy sites to show finished projects, and their electrician is a trusted voice."
+      },
+      {
+        "route": "Home inspectors who flag old wiring",
+        "whoPays": "The home inspector",
+        "min": 1200,
+        "max": 3000,
+        "unit": "one-time",
+        "pitchLine": "\"Every inspection that flags a fuse box or double-tapped breaker sends a buyer looking for an electrician. The inspectors who send you that work need sites too.\"",
+        "whyItWorks": "Inspectors and electricians swap referrals around every home sale."
+      },
+      {
+        "route": "Low-voltage and security installers",
+        "whoPays": "The low-voltage contractor, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The crew pulling cameras, network cable and doorbells behind your electricians needs a site. Your page links to theirs and they send you the line-voltage work.\"",
+        "whyItWorks": "Low-voltage firms work the same remodels and can't touch line voltage, so they refer electrical work by default."
+      },
+      {
+        "route": "Small landlords with outlet and panel calls",
+        "whoPays": "The landlord or property manager",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"Landlords whose units you rewire need a tenant request page. Dead outlets and tripping breakers get reported with a shot and sent to your electricians.\"",
+        "whyItWorks": "Landlords need a reliable electrician and a cleaner way to collect tenant problems."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Material takeoff helper for the supply house",
+        "whoPays": "The electrical distributor, annually",
+        "min": 3000,
+        "max": 12000,
+        "unit": "per-year",
+        "pitchLine": "\"Electricians send a rough room list and the assistant drafts the wire, box and breaker order from that branch's stock, ready to pick up.\"",
+        "whyItWorks": "It locks electricians to one counter, which a distributor values more than a promotion."
+      },
+      {
+        "route": "Site-survey summariser for solar installers",
+        "whoPays": "The solar installer, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Solar crews take panel and meter shots on every survey. An assistant summarises them and flags which jobs will need an electrical service upgrade.\"",
+        "whyItWorks": "Solar companies hate surprise upgrades after the sale, and the electrician gets the flagged work."
+      },
+      {
+        "route": "Change-order drafts for remodelers",
+        "whoPays": "The remodeling contractor, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"When the client adds six recessed lights mid-job, an assistant drafts the change order with the electrical lines priced from the sub's sheet.\"",
+        "whyItWorks": "Remodelers lose money on unbilled changes, and electrical additions are the most common one."
+      },
+      {
+        "route": "Report summaries for home inspectors",
+        "whoPays": "The home inspector, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"Long inspection reports become a one-page summary with the panel, wiring and safety items at the top, written so a buyer understands them.\"",
+        "whyItWorks": "Inspectors compete on clarity and the electrician's referral opens the door."
+      },
+      {
+        "route": "Tenant fault triage for landlords",
+        "whoPays": "The property manager, monthly",
+        "min": 200,
+        "max": 500,
+        "unit": "monthly",
+        "pitchLine": "\"A tenant reports 'half the kitchen has no power'. An assistant walks them through the breaker check, marks real electrical faults urgent and sends them to one electrician.\"",
+        "whyItWorks": "Most tenant power calls are a tripped breaker. The landlord saves trips and the electrician gets the real faults."
+      },
+      {
+        "route": "Quote follow-up for the low-voltage installer",
+        "whoPays": "The low-voltage contractor",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"The camera and network crew behind your electricians loses quotes to slow callbacks. The same follow-up sequence, set up for them.\"",
+        "whyItWorks": "It's configuration of something you've built, and the introduction comes from a trusted electrician."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Text-back when the electrician can't answer",
+      "kind": "automation",
+      "oneTimeMin": 0,
+      "oneTimeMax": 300,
+      "monthlyMin": 99,
+      "monthlyMax": 199,
+      "pitchLine": "\"Hands in a live panel, phone ringing: the caller gets a text asking whether anything is sparking, smoking or fully without power, so you know who to ring first.\"",
+      "whenAndWhatItTakes": "Day 30. Needs their business number forwarded and the wording approved."
+    },
+    {
+      "name": "EV charger install price range tool",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3500,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"An EV owner picks garage or driveway, the rough distance from the panel and whether the panel has space, and sees a charger installation range before the visit.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their real price bands, panel upgrade adders and permit costs."
+    },
+    {
+      "name": "Electrician-voice review responses",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1200,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"A short reply drafted for every new review, naming the panel, charger or rewire and thanking the customer the way you'd say it on the driveway.\"",
+      "whenAndWhatItTakes": "Month 2, with review asks running. Needs ten past replies for the voice. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Panel photo pre-check",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"A homeowner uploads a shot of the open panel door and the tool flags full slots, an old fuse box or missing labels, so the electrician quotes the charger or upgrade knowing what's there.\"",
+      "whenAndWhatItTakes": "Month 3. Needs a set of past panel shots with the electrician's notes. Comes with the AI maintenance retainer; the electrician always confirms on site."
+    },
+    {
+      "name": "Permit and inspection tracker for electrical jobs",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Every electrical permit, rough and final inspection date and result in one list, so no panel swap sits unpaid waiting on a forgotten inspection.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the permit types they pull and the city portals they file in."
+    },
+    {
+      "name": "Utility reconnect and inspection reminders",
+      "kind": "automation",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"When a panel upgrade is booked, the utility disconnect request, the inspection slot and the homeowner's power-off notice go out on schedule without anyone remembering.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their utility's request process and their booking calendar."
+    },
+    {
+      "name": "Load calculation worksheet",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4500,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Enter the house's appliances, heat, charger and square footage on a tablet, and the electrical load worksheet is done and attached to the quote.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the method they use today and the code edition their inspectors follow."
+    },
+    {
+      "name": "After-hours electrical answering assistant",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 3500,
+      "monthlyMin": 250,
+      "monthlyMax": 600,
+      "pitchLine": "\"It answers at night, checks whether the caller has tried the main breaker, tells them to leave a burning-smell outlet alone, and calls the on-call electrician only for real hazards.\"",
+      "whenAndWhatItTakes": "Month 4, before storm season. Needs their on-call rules and safety wording they approve. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Electrical estimate builder with options",
+      "kind": "software",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 6000,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"Build a repair, a partial rewire and a full panel upgrade option on site, with permit fees included, and the customer signs on the tablet.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their price book for common electrical jobs."
+    },
+    {
+      "name": "Q&A assistant on chargers, panels and permits",
+      "kind": "ai",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3500,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"It answers 'can my panel handle an EV charger' and 'do I need a permit for this' from the electrician's own notes, and hands off when a question needs a site visit.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their FAQ notes and service area, refreshed monthly. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Material pull list per electrical job",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Each booked job produces a pull list of wire, boxes, breakers and devices, so the van leaves the shop with everything and nobody drives back to the supply house.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their standard job templates and van stock list."
+    },
+    {
+      "name": "Dictated job notes to electrical invoice",
+      "kind": "ai",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3500,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"Speak the circuits added, devices replaced and hours into the phone, and the electrical invoice is drafted on your template before the van starts.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their price book and invoice layout. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Deposit and draw billing for rewires",
+      "kind": "automation",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"A whole-house rewire runs for days. Billing follows the electrical milestones you set, so the money lands as the inspector signs off rough-in and final, not weeks later.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their draw schedule and existing payment account."
+    },
+    {
+      "name": "Electrician scheduling board",
+      "kind": "software",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 9000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Service calls, charger installs and multi-day rewires on one board by electrician and van, with inspection days blocked in.\"",
+      "whenAndWhatItTakes": "Month 6, at three or more electricians. Needs job types, crew list and how they schedule today."
+    },
+    {
+      "name": "Code-change digest for the shop",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"When the city adopts a new electrical code edition or changes a permit rule, the crew gets a short plain summary of what changes on their jobs.\"",
+      "whenAndWhatItTakes": "Month 6. Needs the jurisdictions they work in. Comes with the AI maintenance retainer; the master electrician reviews each digest."
+    },
+    {
+      "name": "Outage alert to generator customers",
+      "kind": "automation",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"When a storm or ice event is forecast for {City}, generator and transfer switch customers get a text on running a test and the electrician's number if it doesn't start.\"",
+      "whenAndWhatItTakes": "Month 6. Needs the generator customer list and a weather feed."
+    },
+    {
+      "name": "Service history by address for electricians",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3500,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Type the address and see the panel, every circuit added and every past electrical visit at that house before the electrician arrives.\"",
+      "whenAndWhatItTakes": "Month 6. Needs past invoices or job notes they can export."
+    },
+    {
+      "name": "Profit by electrical job type",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 5000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"Find out whether service calls, chargers or rewires actually make the shop money once wire, permits, return trips and hours are counted.\"",
+      "whenAndWhatItTakes": "Month 7. Needs a season of invoices and labour hours."
+    },
+    {
+      "name": "Apprentice hours and skills log",
+      "kind": "ai",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3500,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"Apprentices dictate what they did each day, and it logs their electrical hours by task for the licence board and flags skills they haven't practised.\"",
+      "whenAndWhatItTakes": "Month 7, once they carry apprentices. Needs the state's hour categories. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Journeyman applicant pre-screen",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"Each electrician applicant states their licence level, service versus new-construction experience and whether they'll take storm call-outs before you spend a minute on the phone.\"",
+      "whenAndWhatItTakes": "Whenever they post a hiring note. Needs must-haves and pay range. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the panel photo pre-check for electricians",
+      "whoPays": "Electrical contractors, monthly per shop",
+      "min": 49,
+      "max": 149,
+      "unit": "monthly",
+      "pitchLine": "\"Every electrician quoting an EV charger wants to see the panel first. I built the pre-check for one shop; it works for any of them.\"",
+      "whyItWorks": "The charger wave hits every electrician at once, and the first client already paid for the workflow."
+    },
+    {
+      "route": "Installer locator for an EV charger maker",
+      "whoPays": "The charger manufacturer or its regional distributor",
+      "min": 8000,
+      "max": 30000,
+      "unit": "one-time",
+      "pitchLine": "\"Buyers of your chargers ask who can install them. A locator of licensed electricians with a panel-photo request answers it.\"",
+      "whyItWorks": "Charger makers lose sales to installation worries and have channel budgets to fix it."
+    },
+    {
+      "route": "Car dealership EV install referral page",
+      "whoPays": "The dealership group",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Your EV buyers ask the salesperson about home charging. A page listing a vetted local electrician with a request form answers that before the car leaves the lot.\"",
+      "whyItWorks": "Dealers want the home charging question handled, and the electrician client becomes the first name on the page."
+    },
+    {
+      "route": "Electrical distributor contractor directory",
+      "whoPays": "The electrical distributor, annually",
+      "min": 4000,
+      "max": 15000,
+      "unit": "per-year",
+      "pitchLine": "\"Put a find-an-electrician directory on your site for every contractor who buys at your counters, with panels and chargers as filters.\"",
+      "whyItWorks": "Distributors fight for counter loyalty, and a directory electricians rely on beats a rebate."
+    },
+    {
+      "route": "Electrical contractors' association site benefit",
+      "whoPays": "The state or regional electrical association",
+      "min": 1500,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Give member electricians a site template with a licence display, permits page and EV charger page as part of membership.\"",
+      "whyItWorks": "Associations want renewal reasons and to push licensed work over unlicensed wiring."
+    },
+    {
+      "route": "Licensed electrician template for agencies",
+      "whoPays": "The agency, per electrician client",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "pitchLine": "\"License my electrician template with the panel explainer, charger page and permit page already written, and stop rebuilding it per client.\"",
+      "whyItWorks": "Agencies keep the relationship; you sell them a finished trade-specific build."
+    },
+    {
+      "route": "Utility EV and panel program contractor pages",
+      "whoPays": "The utility's program administrator",
+      "min": 5000,
+      "max": 20000,
+      "unit": "one-time",
+      "pitchLine": "\"Your EV-ready and panel programs need participating electricians to explain them clearly. A page kit for each contractor does that.\"",
+      "whyItWorks": "Utility programs have outreach budgets and depend on contractors to sell them."
+    },
+    {
+      "route": "Solar company electrical partner network",
+      "whoPays": "The regional solar company",
+      "min": 3000,
+      "max": 9000,
+      "unit": "one-time",
+      "pitchLine": "\"Your solar sales need panel upgrades from licensed electricians in every town. A partner portal that books them per job keeps installs on schedule.\"",
+      "whyItWorks": "Solar companies stall on electrical upgrades and will pay to make the hand-off reliable."
+    },
+    {
+      "route": "Electrical apprenticeship programme recruiting site",
+      "whoPays": "The joint apprenticeship committee or trade school",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Electrical apprenticeships compete with every other trade for school leavers. A site where working electricians show the job wins the applications.\"",
+      "whyItWorks": "Programmes have recruiting budgets, and an electrician who takes their apprentices makes the introduction."
+    },
+    {
+      "route": "Storm-outage kit for electricians in other metros",
+      "whoPays": "Electricians outside your metro, monthly",
+      "min": 39,
+      "max": 129,
+      "unit": "monthly",
+      "pitchLine": "\"A switch-on generator page, outage text and service-mast damage request for any electrician, ready the week a storm takes the power down.\"",
+      "whyItWorks": "Outages hit every electrician in a region at once, so a kit sells with no custom work."
+    },
+    {
+      "route": "Commercial electrical capability pages",
+      "whoPays": "The commercial electrical contractor",
+      "min": 3000,
+      "max": 9000,
+      "unit": "one-time",
+      "pitchLine": "\"Commercial electricians bidding tenant fit-outs and lighting retrofits need a capability page and a bid request, not a homeowner site.\"",
+      "whyItWorks": "Residential electricians know the commercial shops, and those buyers spend more."
+    },
+    {
+      "route": "One electrician per metro, next one over",
+      "whoPays": "An electrical contractor in a new metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I work with a single electrical contractor per metro. {City}'s is signed; the next metro's best licensed electrician is still open.\"",
+      "whyItWorks": "Exclusivity matters to licensed trades, and the electrician template carries straight over."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Electrician site build plus care plan, one contract",
+      "min": 1800,
+      "max": 3200,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"Site and care plan on one electrical contract, so a new service fee or licence line is a text to me, not your Saturday.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Review asks after each electrical job",
+      "min": 99,
+      "max": 249,
+      "unit": "monthly",
+      "trigger": "The first panel or charger job booked through the site.",
+      "line": "\"That charger you installed last week is the review the next EV owner reads. Let's ask every electrical customer the same day.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "EV charger install price range tool",
+      "min": 1200,
+      "max": 3500,
+      "unit": "one-time",
+      "trigger": "The EV charger page is the most visited page on the site.",
+      "line": "\"Most visitors land on the charger page. Let's show them a range so the electrician only drives to serious buyers.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Panel photo pre-check",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "trigger": "Sixty days of request forms with panel shots attached.",
+      "line": "\"You've got sixty days of panel shots. Let's have the tool flag full panels before you quote the electrical work.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Licence-checked electrician ads",
+      "min": 500,
+      "max": 1000,
+      "unit": "monthly",
+      "trigger": "Steady new reviews and current licence and insurance documents.",
+      "line": "\"Your electrician reviews are strong enough for the licence-checked ads. Let's own the badge for panel and charger searches.\""
+    },
+    {
+      "rung": 6,
+      "day": 120,
+      "offer": "Post-outage generator campaign",
+      "min": 500,
+      "max": 1200,
+      "unit": "one-time",
+      "trigger": "A storm or outage in their area, or customers asking about backup power.",
+      "line": "\"After that outage, people want generators. Let's put the electrician who does them in front of every dark street.\""
+    },
+    {
+      "rung": 7,
+      "day": 180,
+      "offer": "Electrician scheduling board",
+      "min": 3000,
+      "max": 9000,
+      "unit": "one-time",
+      "trigger": "They hire a third electrician or start juggling multi-day rewires.",
+      "line": "\"Three electricians and rewires that span days need one board with inspections on it. Let's build it.\""
+    },
+    {
+      "rung": 8,
+      "day": 365,
+      "offer": "Apprentice hours and skills log",
+      "min": 1200,
+      "max": 3500,
+      "unit": "one-time",
+      "trigger": "They take on apprentices and mention logging hours for the licence board.",
+      "line": "\"Your apprentices need electrical hours logged for their licence. Let's make it a thirty-second voice note each night.\""
+    }
+  ]
+}

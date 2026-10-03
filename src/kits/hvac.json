@@ -1,0 +1,873 @@
+{
+  "schemaVersion": 1,
+  "category": "HVAC",
+  "slug": "hvac",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Mech family batch. Licensed and agency-saturated, so copy leans on owner-run, answered-phone contrast. No equipment brands, no rebate or tax-credit amounts, no response-time promises. Ranges are planning figures."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Repair or replace your furnace or AC",
+      "contains": "Age of the furnace or air conditioner, repeat breakdowns, refrigerant type on older condensers, uneven rooms, rising utility bills, and when one more repair is the honest call",
+      "why": "Every no-heat or no-cool call ends with 'should I just replace it'. A straight answer before the visit makes the technician the adviser, not the salesman."
+    },
+    {
+      "section": "Heat pump and dual-fuel explainer",
+      "contains": "How a heat pump heats in a cold snap, backup heat strips, dual-fuel with a gas furnace, and bracketed placeholders for any utility rebate the owner confirms",
+      "why": "Homeowners hear about heat pumps from neighbours and the news. The contractor who explains them plainly gets the replacement quote."
+    },
+    {
+      "section": "Right-sizing and load calculation",
+      "contains": "Why a bigger unit short-cycles, a room-by-room load calculation, duct size checks, the hot upstairs bedroom, and what the visit measures",
+      "why": "Buyers compare quotes by tonnage and price. Explaining sizing shows why a cheaper oversized system costs more to live with."
+    },
+    {
+      "section": "HVAC install day, step by step",
+      "contains": "Old equipment removal, attic or crawlspace access, line set and pad, permit and city inspection, thermostat setup, startup readings, and the walkthrough",
+      "why": "A full changeout means a crew in the house for a day. Knowing exactly what happens removes the last reason to put the install off."
+    },
+    {
+      "section": "Ductwork and indoor air quality",
+      "contains": "Leaky ducts, dusty rooms, filter sizes and change intervals, whole-home humidifiers and dehumidifiers, and air cleaners, described without health claims",
+      "why": "Comfort complaints that aren't the equipment are usually the ducts. This page turns a tune-up call into a duct or humidity job."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C10",
+      "siteType": "local-conversion",
+      "name": "Service Ticket",
+      "heroLayout": "split-photo",
+      "mood": [
+        "plain",
+        "steady",
+        "quick"
+      ],
+      "bestFor": "One- and two-van HVAC shops that live on repair calls and want the phone and the service form doing all the work",
+      "pairsWithTier": "starter",
+      "headlineSample": "Furnace and AC repair in {City}, from the owner's own van",
+      "whyItFits": "Steel blue and a neutral grotesque read like a clean service ticket. Nothing on the page competes with the call button."
+    },
+    {
+      "id": "b",
+      "themeId": "C50",
+      "siteType": "emergency-response",
+      "name": "Redline Dispatch",
+      "heroLayout": "type-led",
+      "mood": [
+        "urgent",
+        "clear",
+        "factual"
+      ],
+      "bestFor": "Established heating and cooling companies that take no-heat and no-cool calls after hours and sell a maintenance plan",
+      "pairsWithTier": "standard",
+      "headlineSample": "No heat or no AC in {City}? Call the HVAC team that answers",
+      "whyItFits": "The family's own combo. A red call button on white with mono labels for hours and diagnostic fees says 'open now' faster than any photo of a smiling tech."
+    },
+    {
+      "id": "c",
+      "themeId": "C4",
+      "siteType": "premium-brand",
+      "name": "Quiet Comfort",
+      "heroLayout": "full-bleed-photo",
+      "mood": [
+        "calm",
+        "assured",
+        "considered"
+      ],
+      "bestFor": "Replacement-led contractors selling heat pumps, zoning and whole-home air quality to larger and older homes",
+      "pairsWithTier": "premium",
+      "headlineSample": "Whole-home comfort systems, designed room by room in {City}",
+      "whyItFits": "Navy, brass and an editorial serif slow the reader down for a once-in-fifteen-years purchase where the design of the system matters more than speed."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your Google listing has Call and Directions but no website, so someone with a dead furnace can't check your HVAC hours or service area before deciding who to ring.",
+      "hook": "Open their Maps listing and confirm there is no Website button. Screenshot it for when they reply.",
+      "linkLine": "Here's what would sit behind that button for an HVAC shop: {demo-link}"
+    },
+    {
+      "angle": "Facebook-only link",
+      "line": "The website link on your listing opens Facebook. Someone pricing a new air conditioner wants your maintenance plan and a service form, not a feed of truck posts.",
+      "hook": "Tap their Website link and confirm it lands on Facebook. Note the newest install they posted there.",
+      "linkLine": "A page built for the furnace and AC buyer: {demo-link}"
+    },
+    {
+      "angle": "Dead free host",
+      "line": "The HVAC site on your listing still shows a free-host banner and an old copyright year. People buying a system that lasts fifteen years want to know the installer will be around for the warranty call.",
+      "hook": "Open the site and look for a builder banner, an old copyright year or a dead contact form. Note which one you found.",
+      "linkLine": "Same heating and cooling company, current and quick on a phone: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "I opened your HVAC site on my phone and the call button was hidden behind the menu. Most no-heat searches happen on a phone in a cold kitchen.",
+      "hook": "Only if they have a site. Load it on your phone and note exactly what breaks: menu, call button or form. Screenshot it for when they reply.",
+      "linkLine": "Your HVAC site rebuilt for a phone in a cold house: {demo-link}"
+    },
+    {
+      "angle": "No service request form",
+      "line": "There's no way to book a furnace tune-up or report a noisy condenser except calling. A lot of people would rather type the problem at night than leave a voicemail.",
+      "hook": "Check the listing, the social pages and any site for a form. If there is none, the angle holds.",
+      "linkLine": "A service request that asks what the system is doing: {demo-link}"
+    },
+    {
+      "angle": "Maintenance plan nobody can join",
+      "line": "You mention a maintenance plan in a post, but there's nowhere to sign up for it. A spring AC check and an autumn furnace check is the easiest recurring money in HVAC.",
+      "hook": "Look for any mention of a club, agreement or tune-up plan in posts or reviews. Quote the wording they use.",
+      "linkLine": "Your HVAC maintenance plan with a sign-up button: {demo-link}"
+    },
+    {
+      "angle": "Reviews stuck on Google",
+      "line": "Your reviews mention a tech who came out the same night the furnace quit and explained everything. Nobody reads that unless they're already on your listing.",
+      "hook": "Read their reviews and copy one specific phrase about a heating or cooling repair. Quote it back if they reply.",
+      "linkLine": "Those HVAC reviews next to the services they describe: {demo-link}"
+    },
+    {
+      "angle": "First heat wave",
+      "line": "The first heat wave in {City} is when every air conditioning company's phone lights up at once. The one with a clear site and a working form catches the overflow.",
+      "hook": "Use this in late spring, before the first hot week. Name the season in the reply.",
+      "linkLine": "Ready before the first no-cool call: {demo-link}"
+    },
+    {
+      "angle": "No-heat calls after dark",
+      "line": "Furnaces quit on the coldest night, usually after dinner. When that call goes to voicemail, the family tries the next HVAC number until someone picks up.",
+      "hook": "Call their listed number after hours. If it goes to a full or generic voicemail, the angle holds.",
+      "linkLine": "A no-heat request that still works after dark: {demo-link}"
+    },
+    {
+      "angle": "Hiring techs",
+      "line": "Saw you're hiring an HVAC tech. Good technicians look at whether a company looks organised before they leave a shop that already pays them.",
+      "hook": "Only if they posted a hiring note, a story or a sign on the van. Note the date of the post.",
+      "linkLine": "An HVAC company page with a careers section: {demo-link}"
+    },
+    {
+      "angle": "Service area towns",
+      "line": "Your listing says you service {City} and the towns around it, but nothing tells a homeowner in {Neighborhood} your vans come out there. Town plus 'furnace repair' is what they type.",
+      "hook": "Find the towns they mention in posts or reviews. Use the one furthest from their shop.",
+      "linkLine": "A furnace and AC page for each town you cover: {demo-link}"
+    },
+    {
+      "angle": "Monthly payments on a system",
+      "line": "If you offer monthly payments on a new furnace or air conditioner, that belongs on a page. A full system replacement is the number people want split up before they call.",
+      "hook": "Only if they mention financing somewhere: a post, a review, the van wrap. If they don't, skip this angle.",
+      "linkLine": "HVAC payment options explained before the visit: {demo-link}"
+    },
+    {
+      "angle": "Licence and insurance",
+      "line": "Your HVAC licence is on the state lookup, but a homeowner never sees it. Showing the licence and insurance plainly is what separates you from the guy on a classifieds post.",
+      "hook": "Look them up on the state licence board. Note that a record exists; never quote a number you didn't see.",
+      "linkLine": "Licence, insurance and warranty on one HVAC page: {demo-link}"
+    },
+    {
+      "angle": "Referral-only shop",
+      "line": "Sounds like most of your furnace and AC work comes from repeat customers and their neighbours. That holds until a new family moves in and searches for heating and cooling instead of asking.",
+      "hook": "Look for review text like 'have used them for years' or 'my neighbour recommended'. Quote it back.",
+      "linkLine": "Where an HVAC referral would land: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "That {specific recent job} you posted is a tidy install, clean line set and a level pad. Work like that should be the first thing a stranger sees, not three scrolls down a feed.",
+      "hook": "Pick the newest finished install on their grid and name it exactly: furnace, heat pump or condenser, and the town if they tagged it.",
+      "linkLine": "That HVAC install, front and centre: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hey {Owner}, that {specific recent job} you posted is a clean install, tidy line set and a level pad.\n\nI searched for HVAC companies in {City} and found {Business Name} on social but no site with your hours, your maintenance plan and a way to request a furnace or AC visit. I put together a sample HVAC page to see how it would look, with marked placeholders where your photos would go.\n\nWant me to send it over?",
+    "dm2": "{Owner}, following up in case my last message got buried under service calls. Here's the sample HVAC site for {Business Name}: {demo-link}\n\nIt has a no-heat and no-cool request that asks what the system is doing, a maintenance plan sign-up, and a repair-or-replace guide. If it's not for you, say so and I'll leave you be.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for heating and cooling companies here in {City}. I sent you a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"Easy to miss in the busy season. Short version: I built a sample HVAC site for {Business Name}, with a service request, a maintenance plan sign-up and your licence up front, and marked placeholders where your photos would go. Can I text you the link to look at tonight?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"I know HVAC owners get called by marketing agencies every week. This isn't ads or a lead contract, it's a site you own. The build runs {Build Range} depending on how many town and service pages you want, then {Care Range} a month for hosting and changes. For a shop your size I'd quote about {Build Price}, less than the margin on one system changeout.\"\n\"Can I walk you through it for ten minutes, Tuesday or Thursday evening?\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. We start the day it clears, and it's live before the next heat wave.\"",
+    "objections": [
+      {
+        "objection": "Agencies call me every week. You're just another one.",
+        "handler": "\"Fair, HVAC is the most pitched trade there is. The difference is I built your site first instead of asking for a meeting. No ad budget, no lead contract, and you own the domain either way.\""
+      },
+      {
+        "objection": "I'm already on a lead platform for HVAC calls.",
+        "handler": "\"Those leads go to three or four shops at once and you pay whether you win the job or not. Your own site sends the no-heat call to one company, yours, and it's still there when you stop paying the platform.\""
+      },
+      {
+        "objection": "Most of my work is repeat customers.",
+        "handler": "\"Then the maintenance plan page is for them. Repeat customers sign up for the spring and autumn checks online, and you stop chasing them by phone every season.\""
+      },
+      {
+        "objection": "It's the busy season, I don't have time for this.",
+        "handler": "\"That's when the site earns its keep, because it takes requests while you're in an attic. I need about an hour from you in total, and most of it can be texts.\""
+      },
+      {
+        "objection": "My nephew does my website.",
+        "handler": "\"Good, that's cheaper than me. Happy to hand over the service request form and the maintenance plan page. If it stalls before winter, the offer stands.\""
+      },
+      {
+        "objection": "People just want the cheapest system.",
+        "handler": "\"Some do. The site is for the ones comparing what's in the quote: sizing, ductwork, the warranty, who answers when it breaks. That's what makes your number make sense.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you it'd be about {Build Price}, because it's a service form, a maintenance plan page and a few town pages. One new plan member a month covers it.\""
+      }
+    ],
+    "email": {
+      "subject": "HVAC site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for heating and cooling companies around {City}. {Business Name} has good install work on its social pages, but no site a homeowner finds when their furnace or air conditioner quits.\n\nI built a sample first rather than ask for your time: a service request that asks what the system is doing, a maintenance plan sign-up, a repair-or-replace guide and your licence and insurance shown plainly, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and changes. If not, no problem, it comes down at the end of the month.\n\nWorth ten minutes on the phone this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"{Owner}, it's {Your Name}. I build websites for HVAC companies in {City}, and I put together a sample one for {Business Name}, service form and maintenance plan included. I'll text the link. Have a look between calls. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm taking the {Business Name} HVAC demo down on Friday to free up the space.\n\nWant me to leave it up? One word is fine either way.",
+    "nurture": "Hey {Owner}, the first cold snap is a few weeks out and the no-heat calls are about to start. Thought of you.\n\nThe HVAC site is still here whenever you want it, same price as before. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to the margin on one system changeout, never to an hourly rate. HVAC owners think in installs and plan members.",
+      "Price the maintenance plan sign-up as its own line when it takes payment and books the first tune-up.",
+      "Quote heat pump, furnace, AC and duct pages separately; each answers a different search and a different season.",
+      "Only build the after-hours request path for shops that actually take no-heat calls at night.",
+      "Town pages scale with the service area; quote per town, and only where they have real installs.",
+      "Agency-saturated vertical: lead with the finished demo and a short scope, never a package of ads."
+    ],
+    "lineItems": [
+      {
+        "item": "Maintenance plan sign-up with payment",
+        "min": 600,
+        "max": 1500,
+        "unit": "one-time",
+        "description": "Max when it handles several plan levels, monthly or yearly billing, and books the first tune-up on sign-up.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "HVAC service page (each)",
+        "min": 250,
+        "max": 600,
+        "unit": "per-page",
+        "description": "Max when the page has its own symptom list, a repair-or-replace note and installs of that equipment type.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "No-heat and no-cool request path",
+        "min": 400,
+        "max": 1000,
+        "unit": "one-time",
+        "description": "Max with a symptom picker, system age, thermostat reading and routing to the on-call tech's phone.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Town service-area page (each)",
+        "min": 200,
+        "max": 450,
+        "unit": "per-page",
+        "description": "Max when each town page gets its own installs, a local review and permit notes for that town.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "System replacement estimate request",
+        "min": 700,
+        "max": 1800,
+        "unit": "one-time",
+        "description": "Max with home size, current equipment age, upload of the data plate and a booking slot for the in-home visit.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Heat pump and rebate placeholder page",
+        "min": 400,
+        "max": 900,
+        "unit": "one-time",
+        "description": "Max when it covers cold-climate heat pumps, dual-fuel and bracketed rebate fields the owner fills and keeps current.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Spanish-language service path",
+        "min": 500,
+        "max": 1200,
+        "unit": "one-time",
+        "description": "Max when the service request, maintenance plan and repair-or-replace guide are all translated.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Maintenance plan renewal campaign",
+      "min": 200,
+      "max": 400,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Every plan member gets a reminder before their spring AC check and autumn furnace check, and lapsed members get a renewal nudge. The plan stops leaking members.\"",
+      "when": "Day 30, once the maintenance plan page is live."
+    },
+    {
+      "name": "Review requests after each HVAC visit",
+      "min": 99,
+      "max": 249,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"The evening the furnace is running again, the homeowner gets a text asking how the tech did. Those reviews are what the next no-heat searcher reads.\"",
+      "when": "Day 30. The easiest second sale."
+    },
+    {
+      "name": "Local Services Ads with the licence check",
+      "min": 500,
+      "max": 1000,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"HVAC is licence-checked on those ads, so the badge does the trust work. I set it up, dispute the junk leads and keep it to furnace and AC repair, not duct cleaning tyre-kickers.\"",
+      "when": "Month 2, once reviews are flowing and their licence and insurance documents are current."
+    },
+    {
+      "name": "Google profile posts for each install",
+      "min": 250,
+      "max": 450,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Every new furnace, heat pump or condenser goes on your Google profile with the town in the caption, so the map shows this month's installs.\"",
+      "when": "Day 30, once the site is live and a new install is finished."
+    },
+    {
+      "name": "Install photo day with the crew",
+      "min": 500,
+      "max": 1400,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"One day riding along on two HVAC changeouts gives you before-and-after equipment shots, the crew at work and a gallery that looks like your company, not a stock furnace.\"",
+      "when": "Month 2, or the week they have two installs booked back to back."
+    },
+    {
+      "name": "Van wrap and yard sign artwork",
+      "min": 400,
+      "max": 1200,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Your vans park in a driveway for hours on every HVAC install. A clean wrap and a yard sign with the site on them make the whole street remember who fixed the air.\"",
+      "when": "Right after launch, or when they add a van."
+    },
+    {
+      "name": "Pre-season tune-up mailer",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Before the first heat wave, every past customer gets a postcard offering an AC check, and before the first frost, a furnace check. It fills the slow weeks between seasons.\"",
+      "when": "Pitch in early spring and late summer, mail two weeks later."
+    },
+    {
+      "name": "Aging-system replacement campaign",
+      "min": 500,
+      "max": 1200,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Past repair customers with older furnaces and air conditioners get a plain letter about replacement options before the system dies in a cold snap.\"",
+      "when": "Month 4, once they have a list of repair customers with equipment ages."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "The HVAC supply house counter",
+        "whoPays": "The supply house or distributor branch",
+        "min": 3000,
+        "max": 9000,
+        "unit": "one-time",
+        "pitchLine": "\"Your HVAC supply house sells to every heating and cooling contractor in the region. Introduce me and I'll build their contractor finder and counter-hours page.\"",
+        "whyItWorks": "Distributors have real budgets, and their contractor list is the prospect list you would otherwise build by hand."
+      },
+      {
+        "route": "Electricians who wire the condensers",
+        "whoPays": "The electrical contractor, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"Who runs the disconnect and the circuit when you set a new condenser or heat pump? I'll build their site too, and your install page links to theirs.\"",
+        "whyItWorks": "HVAC and electrical work the same installs and already refer each other. One introduction is a warm door."
+      },
+      {
+        "route": "Insulation and attic sealing crews",
+        "whoPays": "The insulation contractor, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"When your tech finds a bare attic over the furnace, someone blows in insulation after. That crew needs a site, and your sizing page links to them.\"",
+        "whyItWorks": "Insulation is the natural next job after a load calculation. Both sides gain a referral partner."
+      },
+      {
+        "route": "Property managers with rental HVAC calls",
+        "whoPays": "The property manager",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The managers whose rental furnaces you fix need a tenant maintenance request page. I build it, and the no-heat tickets route to your HVAC team.\"",
+        "whyItWorks": "Managers with dozens of doors have a real maintenance problem and an HVAC vendor they already trust."
+      },
+      {
+        "route": "Home inspectors who flag old furnaces",
+        "whoPays": "The home inspector",
+        "min": 1200,
+        "max": 3000,
+        "unit": "one-time",
+        "pitchLine": "\"Every inspection report that flags an aging furnace or condenser sends a buyer looking for an HVAC company. The inspectors you know need sites as much as you did.\"",
+        "whyItWorks": "Inspectors and HVAC shops swap referrals at every sale. The inspector buys a site on the same logic: look established, get booked."
+      },
+      {
+        "route": "Duct cleaning and dryer vent operators",
+        "whoPays": "The duct cleaning company",
+        "min": 1200,
+        "max": 2800,
+        "unit": "one-time",
+        "pitchLine": "\"The duct cleaner you send work to has the same problem you had: no site, all word of mouth. Your air quality page links to them and theirs back to you.\"",
+        "whyItWorks": "Small duct cleaning firms sit next to HVAC in the homeowner's mind, and they rarely have anyone building for them."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Parts lookup assistant for the supply house",
+        "whoPays": "The supply house, annually",
+        "min": 3000,
+        "max": 12000,
+        "unit": "per-year",
+        "pitchLine": "\"Give every HVAC contractor on the branch's books a tool that turns a data plate photo into the right capacitor, motor or board, with branch stock and price.\"",
+        "whyItWorks": "It ties contractors to one branch's counter, which is worth more to the distributor than a rebate."
+      },
+      {
+        "route": "No-heat ticket triage for property managers",
+        "whoPays": "The property manager, monthly",
+        "min": 200,
+        "max": 500,
+        "unit": "monthly",
+        "pitchLine": "\"Tenants text 'the heat's off' at midnight. An assistant asks about the thermostat, the breaker and the filter, marks real outages urgent and sends them to one HVAC company.\"",
+        "whyItWorks": "Managers save dispatch time, and the HVAC client gets steady repair work from accounts that pay on time."
+      },
+      {
+        "route": "Plain-language report summaries for home inspectors",
+        "whoPays": "The home inspector, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"Buyers don't read a long inspection report. An assistant turns it into a one-page summary with furnace, AC and water heater findings first.\"",
+        "whyItWorks": "Inspectors compete on how clear their reports are, and the HVAC owner's introduction makes the first demo easy."
+      },
+      {
+        "route": "Quote follow-up for the electrician partner",
+        "whoPays": "The electrical contractor",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"The electrician who wires your condensers loses panel quotes to slow callbacks. The same follow-up texts your HVAC office runs, set up for them in a week.\"",
+        "whyItWorks": "You built it once for the HVAC client, so the second build is configuration, and the referral came from someone they trust."
+      },
+      {
+        "route": "Energy-audit summary writer for raters",
+        "whoPays": "The independent energy rater, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Energy raters who test homes before an HVAC replacement write long reports. An assistant drafts the homeowner summary, duct leakage and insulation first.\"",
+        "whyItWorks": "Raters work alongside HVAC replacements constantly and have no time for writing. The HVAC owner already knows the good ones."
+      },
+      {
+        "route": "Comfort complaint log for small commercial landlords",
+        "whoPays": "The commercial landlord, monthly",
+        "min": 200,
+        "max": 450,
+        "unit": "monthly",
+        "pitchLine": "\"Strip-mall tenants complain the unit is too hot or too cold. An assistant logs each complaint by rooftop unit and spots the ones that need an HVAC visit, not a thermostat lecture.\"",
+        "whyItWorks": "Small landlords juggle rooftop units and angry tenants with no system. The HVAC client gets the service calls."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Missed-call text-back for no-heat calls",
+      "kind": "automation",
+      "oneTimeMin": 0,
+      "oneTimeMax": 300,
+      "monthlyMin": 99,
+      "monthlyMax": 199,
+      "pitchLine": "\"Every call you miss in an attic gets a text asking for the address and whether the furnace or AC is fully down. You call back knowing which one can't wait.\"",
+      "whenAndWhatItTakes": "Day 30. Needs their business number forwarded and two lines of wording they approve."
+    },
+    {
+      "name": "Maintenance plan member manager",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"Every plan member, their equipment, their last tune-up and their renewal date in one list, with the spring AC checks and autumn furnace checks scheduled from it.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their current member list, plan levels and the tune-up checklist."
+    },
+    {
+      "name": "System replacement price estimator",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4500,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"A homeowner picks the home size, gas or heat pump and efficiency level and sees a ballpark range for a new HVAC system before the in-home visit.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their real price bands by system type and size, and the smallest job they take."
+    },
+    {
+      "name": "Review reply drafts that name the HVAC repair",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1200,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"Each new review gets a reply drafted in your voice that mentions the furnace or AC fix and the tech, ready to approve from the van.\"",
+      "whenAndWhatItTakes": "Month 2, alongside review requests. Needs ten of their past replies to learn the voice. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Tune-up reminder and booking texts",
+      "kind": "automation",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Before each season, every past HVAC customer gets a text with three open tune-up slots. They tap one, and it's on the board.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the customer list with last service dates and their calendar."
+    },
+    {
+      "name": "After-hours HVAC answering line",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 3500,
+      "monthlyMin": 300,
+      "monthlyMax": 700,
+      "pitchLine": "\"It answers at midnight in a cold snap, walks the caller through the thermostat and breaker checks, books the visit and wakes the on-call tech only when it's a real no-heat.\"",
+      "whenAndWhatItTakes": "Month 3, ahead of heating season. Needs their on-call rota, after-hours fee wording and the checks they always ask. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Tech checklist app with startup readings",
+      "kind": "software",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 9000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Techs log pressures, temperature split and filter size on a phone at each tune-up, and the homeowner gets a clean HVAC report before the van leaves.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their tune-up checklist, the readings they record and a tech willing to test it."
+    },
+    {
+      "name": "Data plate reader for equipment age",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"A homeowner uploads the sticker off the furnace or condenser and the tool reads the model and likely age, so the office knows what's in the basement before the call.\"",
+      "whenAndWhatItTakes": "Month 4. Needs a sample of past data plates and their equipment notes. Comes with the AI maintenance retainer; the tech always confirms on site."
+    },
+    {
+      "name": "Good-better-best HVAC proposal builder",
+      "kind": "software",
+      "oneTimeMin": 2500,
+      "oneTimeMax": 7000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"At the kitchen table, the comfort adviser builds three HVAC system options with prices and monthly payments, and the homeowner signs on the tablet.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their equipment tiers, pricing rules and the proposal they use on paper today."
+    },
+    {
+      "name": "Voice-to-quote notes from the in-home visit",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4500,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"Walk the house, talk about the ducts, the return and the attic, and it drafts the HVAC replacement quote on your template.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their quote template and pricing rules. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Filter delivery subscription for plan members",
+      "kind": "automation",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Every plan member gets the right-size furnace filter on their doorstep each season, billed automatically, with your sticker on the box.\"",
+      "whenAndWhatItTakes": "Month 4. Needs filter sizes from the member list and a supply source they already buy from."
+    },
+    {
+      "name": "Chatbot on HVAC symptoms and plan questions",
+      "kind": "ai",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3500,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"It answers 'why is my air conditioning blowing warm' and 'what does the plan cover' at night from your own notes, and takes a number when it doesn't know.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their symptom notes, plan terms and service area, updated monthly. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Dispatch board for HVAC calls and installs",
+      "kind": "software",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 12000,
+      "monthlyMin": 200,
+      "monthlyMax": 500,
+      "pitchLine": "\"Every repair call, tune-up and changeout on one board by tech and van, so the office stops juggling a whiteboard and three phones in a heat wave.\"",
+      "whenAndWhatItTakes": "Month 5, when they run three or more vans. Needs their call types, techs and how they assign work today."
+    },
+    {
+      "name": "Repair-history lookup by address",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Type the address and see every furnace and AC visit, part and reading at that house, so the tech walks in knowing the history.\"",
+      "whenAndWhatItTakes": "Month 5. Needs past invoices or service notes they can export."
+    },
+    {
+      "name": "Replacement-candidate finder from repair notes",
+      "kind": "ai",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"It reads a season of HVAC repair notes and flags homes with old equipment and repeat breakdowns, so the replacement letter goes to the right people.\"",
+      "whenAndWhatItTakes": "Month 6. Needs a season of service notes with equipment ages. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Heat-wave and cold-snap alert to plan members",
+      "kind": "automation",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"When a heat wave or hard freeze is forecast for {City}, plan members get a text with two quick HVAC checks and a priority booking link.\"",
+      "whenAndWhatItTakes": "Month 5. Needs the member list and a weather feed for their service area."
+    },
+    {
+      "name": "Job costing by install and van",
+      "kind": "software",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 6000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"See which HVAC installs actually made money once equipment, line sets, permits, callbacks and crew hours are counted.\"",
+      "whenAndWhatItTakes": "Month 6. Needs equipment invoices and crew hours for a season of installs."
+    },
+    {
+      "name": "Callback and warranty claim tracker",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Every warranty part, callback and labour claim on HVAC equipment tracked until it's paid, so the shop stops eating parts it should be reimbursed for.\"",
+      "whenAndWhatItTakes": "Month 6. Needs their open warranty claims and how they file them now."
+    },
+    {
+      "name": "Tech ride-along training notes",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"Senior techs talk through a tricky heat pump or furnace fix on a phone, and it becomes a searchable how-to for the apprentices.\"",
+      "whenAndWhatItTakes": "Month 7, once they hire apprentices. Needs a senior tech willing to record. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Applicant screener for HVAC techs and apprentices",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"Applicants answer your questions about refrigerant handling, a clean driving record and on-call weekends, and you only call the ones who fit.\"",
+      "whenAndWhatItTakes": "Any time they post a hiring note. Needs their must-haves and the pay range. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the maintenance plan manager for HVAC shops",
+      "whoPays": "HVAC companies, monthly per shop",
+      "min": 49,
+      "max": 199,
+      "unit": "monthly",
+      "pitchLine": "\"I built this maintenance plan manager for one HVAC shop. Every heating and cooling company with a plan runs it off a spreadsheet.\"",
+      "whyItWorks": "The hard part of vertical software is knowing the workflow. The first HVAC client taught it to you and paid for the build."
+    },
+    {
+      "route": "Contractor finder licensed to an HVAC distributor",
+      "whoPays": "The distributor, annually",
+      "min": 5000,
+      "max": 25000,
+      "unit": "per-year",
+      "pitchLine": "\"Put a find-a-contractor map on your site for every HVAC dealer who buys from your branches. They stay loyal to the branch that sends them installs.\"",
+      "whyItWorks": "Distributors already spend on dealer loyalty, and a tool contractors use daily is stickier than a rebate."
+    },
+    {
+      "route": "Dealer site program for an equipment maker's territory",
+      "whoPays": "The equipment manufacturer's regional rep",
+      "min": 8000,
+      "max": 30000,
+      "unit": "one-time",
+      "pitchLine": "\"Your independent HVAC dealers need sites with a service request and plan sign-up. I've built that workflow for one already.\"",
+      "whyItWorks": "Manufacturers have co-op budgets and a dealer presence problem. The HVAC client is your proof you know the trade."
+    },
+    {
+      "route": "HVAC contractors' association member kit",
+      "whoPays": "The state or regional association",
+      "min": 1500,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer every member HVAC contractor a site template with a licence display and maintenance plan page as a membership benefit.\"",
+      "whyItWorks": "Associations need reasons to renew, and licence visibility against unlicensed installers is already on their agenda."
+    },
+    {
+      "route": "HVAC site template for marketing agencies",
+      "whoPays": "The agency, per HVAC client",
+      "min": 700,
+      "max": 1800,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency signs heating and cooling shops and builds each from scratch. License my HVAC template with the no-heat request and plan sign-up already done.\"",
+      "whyItWorks": "Agencies own the HVAC relationship; you sell them the part you've already finished."
+    },
+    {
+      "route": "Trade school HVAC programme pages",
+      "whoPays": "The trade school or community college programme",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"The HVAC programme your client hires from needs a page that sells the course to school leavers and lists the shops that hire graduates.\"",
+      "whyItWorks": "Schools need enrolments and placements; the HVAC owner who hires their graduates is the warm introduction."
+    },
+    {
+      "route": "Utility efficiency-program contractor pages",
+      "whoPays": "The utility's efficiency program administrator",
+      "min": 5000,
+      "max": 20000,
+      "unit": "one-time",
+      "pitchLine": "\"Your participating HVAC contractors need one clear page each explaining the program. I've built the contractor side already.\"",
+      "whyItWorks": "Efficiency programs have outreach budgets and struggle to get contractors to explain them well."
+    },
+    {
+      "route": "Home warranty company's HVAC vendor network",
+      "whoPays": "The home warranty company's regional office",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Your HVAC vendors take your dispatch calls with no way to show customers who they are. A vendor page kit fixes that across the network.\"",
+      "whyItWorks": "Warranty firms live on vendor reliability, and a common page kit makes their network look professional."
+    },
+    {
+      "route": "Seasonal HVAC campaign kit for shops in other metros",
+      "whoPays": "HVAC companies outside your metro, monthly",
+      "min": 49,
+      "max": 149,
+      "unit": "monthly",
+      "pitchLine": "\"A switch-on heat-wave banner, cold-snap text and pre-season tune-up mailer, ready for any HVAC shop the week the weather turns.\"",
+      "whyItWorks": "Every heating and cooling company needs the same campaign twice a year. A kit means no custom build each time."
+    },
+    {
+      "route": "HVAC franchise territory roll-out",
+      "whoPays": "The franchise group, per territory",
+      "min": 1200,
+      "max": 3500,
+      "unit": "one-time",
+      "pitchLine": "\"Each heating and cooling territory needs its own towns, on-call number and plan sign-up routed to the right owner. I build it once and roll it out.\"",
+      "whyItWorks": "One contract becomes many territories on the same template."
+    },
+    {
+      "route": "One HVAC shop per metro, next city over",
+      "whoPays": "An HVAC company in a new metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I build for one heating and cooling company per city. {City} is spoken for; the next metro's best independent HVAC shop isn't.\"",
+      "whyItWorks": "Exclusive geography matters in a saturated vertical, and the template, pitch and demo carry straight over."
+    },
+    {
+      "route": "Commercial rooftop-unit service pages for mechanical contractors",
+      "whoPays": "The commercial mechanical contractor",
+      "min": 3000,
+      "max": 9000,
+      "unit": "one-time",
+      "pitchLine": "\"Commercial HVAC contractors who service rooftop units for restaurants and offices need a capability page and a service agreement request, not a homeowner site.\"",
+      "whyItWorks": "Residential HVAC owners know the commercial shops in town, and those buyers pay more for a sharper site."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "HVAC site build plus care plan, one contract",
+      "min": 2200,
+      "max": 3800,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The HVAC site and the care plan go on one contract, so a new plan price or on-call number is a text to me, not a weekend for you.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Review requests after each HVAC visit",
+      "min": 99,
+      "max": 249,
+      "unit": "monthly",
+      "trigger": "The first furnace or AC repair since launch, with a relieved homeowner.",
+      "line": "\"That family whose furnace you fixed Tuesday is the review the next cold house reads. Let's ask every HVAC customer the same evening.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "Maintenance plan renewal campaign",
+      "min": 200,
+      "max": 400,
+      "unit": "monthly",
+      "trigger": "The first members sign up through the maintenance plan page.",
+      "line": "\"Plan members are signing up online now. Let's make sure every one of them renews before their next furnace check.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Maintenance plan member manager",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "trigger": "They mention tracking plan members in a spreadsheet or missing a tune-up.",
+      "line": "\"Your plan members have outgrown the spreadsheet. This schedules every spring and autumn HVAC check for you.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "After-hours HVAC answering line",
+      "min": 1500,
+      "max": 3500,
+      "unit": "one-time",
+      "trigger": "The missed-call log shows no-heat or no-cool calls after hours during a weather swing.",
+      "line": "\"Those no-heat calls last cold night went to whoever answered first. This answers them and wakes the on-call tech only when it's real.\""
+    },
+    {
+      "rung": 6,
+      "day": 120,
+      "offer": "Local Services Ads with the licence check",
+      "min": 500,
+      "max": 1000,
+      "unit": "monthly",
+      "trigger": "A steady count of new reviews and current licence and insurance documents.",
+      "line": "\"Your reviews are strong enough now for the licence-checked HVAC ads. Let's put the badge in front of the next heat wave's searches.\""
+    },
+    {
+      "rung": 7,
+      "day": 180,
+      "offer": "Dispatch board for HVAC calls and installs",
+      "min": 4000,
+      "max": 12000,
+      "unit": "one-time",
+      "trigger": "They add a third van or mention the office drowning in calls during a heat wave.",
+      "line": "\"Three HVAC vans and a ringing office won't fit on a whiteboard. Let's put every call and changeout on one board.\""
+    },
+    {
+      "rung": 8,
+      "day": 365,
+      "offer": "Replacement-candidate finder from repair notes",
+      "min": 2000,
+      "max": 5000,
+      "unit": "one-time",
+      "trigger": "A full year of repair notes on file and a slow shoulder season ahead.",
+      "line": "\"A year of HVAC repair notes says which old systems are about to fail. Let's write to those homes before the cold does.\""
+    }
+  ]
+}

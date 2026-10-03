@@ -1,0 +1,869 @@
+{
+  "schemaVersion": 1,
+  "category": "Plumbing",
+  "slug": "plumbing",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Mech family batch. Licensed, emergency-intent and crowded, so copy leans on answered phones and plain pricing words. No fixture or water heater brands, no response-time promises. Ranges are planning figures."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Water heater: repair or replace",
+      "contains": "Tank age, rust in the hot water, a leaking tank base, pilot and element failures, sediment noise, tank versus tankless, and the expansion tank code may require",
+      "why": "Most water heater calls start with 'can you fix it today'. An honest repair-or-replace page earns the call before the homeowner phones three plumbers."
+    },
+    {
+      "section": "Main shut-off and leak first aid",
+      "contains": "How to find the main shut-off valve and the curb stop, shutting off a toilet or sink supply, what to do with a burst pipe while the plumber drives over",
+      "why": "Someone standing in water needs one useful thing before they call. The plumber who tells them how to stop the water is the plumber they trust."
+    },
+    {
+      "section": "Clogged drain and main line guide",
+      "contains": "Single slow drain versus every drain backing up, the cleanout, snaking versus hydro-jetting, camera inspection of the line, and roots in older clay pipe",
+      "why": "A homeowner can tell a sink clog from a main line backup if someone explains it, and that decides whether they book a routine visit or an emergency one."
+    },
+    {
+      "section": "Repiping older homes",
+      "contains": "Galvanized and polybutylene pipe, pinhole leaks in copper, low water pressure, how long a repipe takes, drywall patching, and living in the house during the work",
+      "why": "A repipe is the biggest ticket in residential plumbing and the scariest to buy. Explaining the days and the mess closes it."
+    },
+    {
+      "section": "Fixture and remodel plumbing",
+      "contains": "Toilet, faucet, shower valve and disposal swaps, bathroom rough-in for remodels, and the policy on customer-supplied fixtures",
+      "why": "Small fixture jobs fill quiet days and bring the remodel work later. Customers want to know if the plumber installs what they bought."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C6",
+      "siteType": "local-conversion",
+      "name": "Wrench and Phone",
+      "heroLayout": "split-photo",
+      "mood": [
+        "direct",
+        "dependable",
+        "brisk"
+      ],
+      "bestFor": "Owner-operator plumbers running one or two trucks on drain, leak and water heater calls",
+      "pairsWithTier": "starter",
+      "headlineSample": "Leaks, drains and water heaters fixed in {City}",
+      "whyItFits": "Cobalt on white with a plain grotesque feels like clean water and a clear invoice. The call button and the service form are the only loud things."
+    },
+    {
+      "id": "b",
+      "themeId": "C50",
+      "siteType": "emergency-response",
+      "name": "Burst Pipe Line",
+      "heroLayout": "type-led",
+      "mood": [
+        "urgent",
+        "factual",
+        "awake"
+      ],
+      "bestFor": "Plumbing companies that take burst pipe, sewer backup and no-hot-water calls after hours",
+      "pairsWithTier": "standard",
+      "headlineSample": "Burst pipe or backed-up drain in {City}? A plumber picks up",
+      "whyItFits": "The family's own combo. A red call button and mono labels for hours, trip charge and service area read like a dispatch board, which is what a flooded kitchen needs."
+    },
+    {
+      "id": "c",
+      "themeId": "C8",
+      "siteType": "editorial-trust",
+      "name": "Repipe Ready",
+      "heroLayout": "card-stack",
+      "mood": [
+        "reassuring",
+        "careful",
+        "settled"
+      ],
+      "bestFor": "Plumbing contractors selling repipes, sewer line replacement and remodel rough-ins to owners of older homes",
+      "pairsWithTier": "premium",
+      "headlineSample": "Whole-house repiping for {City}'s older homes, explained first",
+      "whyItFits": "Evergreen and a refined serif feel like an insurer's letter, the calm a homeowner wants before letting a crew open walls for a repipe."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Searched plumbers near {Neighborhood} and {Business Name} came up with good reviews and a phone number, but no website. Someone with water on the floor wants to see you're real before they dial.",
+      "hook": "Open their Maps listing and confirm there is no Website button. Screenshot it for when they reply.",
+      "linkLine": "Here's the plumbing site that button could open: {demo-link}"
+    },
+    {
+      "angle": "Facebook page as website",
+      "line": "Your listing's website is your Facebook page. A homeowner deciding who fixes the water heater today wants hours, a trip charge and a service form, which a feed can't give them.",
+      "hook": "Tap their Website link and confirm it lands on Facebook. Note the latest plumbing job they posted.",
+      "linkLine": "The plumbing page that sits where that link goes: {demo-link}"
+    },
+    {
+      "angle": "Old free site",
+      "line": "The plumbing site on your profile still carries a free-host banner and an old year in the footer. People letting a plumber into their house want to know the company is current.",
+      "hook": "Open the site and look for a builder banner, a stale copyright year or a dead form. Note which one you found.",
+      "linkLine": "Same plumbing company, current and fast on a phone: {demo-link}"
+    },
+    {
+      "angle": "Phone layout broken",
+      "line": "On my phone your plumbing site's number wasn't tappable, I had to copy it by hand. That's a lot to ask of someone whose toilet is overflowing.",
+      "hook": "Only if they have a site. Load it on a phone and check whether the number taps to call. Screenshot it for when they reply.",
+      "linkLine": "Your plumbing site with a number that taps to call: {demo-link}"
+    },
+    {
+      "angle": "No way to describe the leak",
+      "line": "There's no way to tell you about a dripping water heater or a slow drain except calling. Plenty of people find the leak at night and would rather type it out and get a call at seven.",
+      "hook": "Check the listing, the social pages and any site for a request form. If there is none, the angle holds.",
+      "linkLine": "A plumbing request that asks where the water is: {demo-link}"
+    },
+    {
+      "angle": "Water heater swaps on the feed",
+      "line": "You post a lot of water heater swaps, clean venting and new expansion tanks. Those belong on a water heater page a stranger finds when their tank starts leaking.",
+      "hook": "Count the water heater jobs on their grid. If there are three or more, use this angle.",
+      "linkLine": "A water heater page built from jobs like those: {demo-link}"
+    },
+    {
+      "angle": "Reviews nobody sees",
+      "line": "One of your reviews says you showed up the same night the basement flooded and wiped your boots. That's the line that wins the next panicked plumbing call, and it's buried on a map listing.",
+      "hook": "Read their reviews and copy one specific phrase about a leak, a drain or a water heater. Quote it back if they reply.",
+      "linkLine": "Those plumbing reviews on a page people actually read: {demo-link}"
+    },
+    {
+      "angle": "Frozen pipe season",
+      "line": "The first hard freeze in {City} means split pipes in crawlspaces and outside spigots. The plumber with a frozen-pipe page and a working form gets the calls the busy shops can't take.",
+      "hook": "Use this in autumn, before the first freeze. Name the season in the reply.",
+      "linkLine": "Ready before the first frozen pipe call: {demo-link}"
+    },
+    {
+      "angle": "Burst pipes at midnight",
+      "line": "Pipes burst and drains back up after hours more often than not. If your plumbing line goes to a full voicemail at night, that customer is dialling the next plumber within a minute.",
+      "hook": "Call their listed number after hours. If it goes to a full or generic voicemail, the angle holds.",
+      "linkLine": "A plumbing request that still works at midnight: {demo-link}"
+    },
+    {
+      "angle": "Looking for a plumber to hire",
+      "line": "Saw you're looking for a licensed plumber or an apprentice. Journeymen check a plumbing company's site before they apply, the same way customers do.",
+      "hook": "Only if they posted a hiring note, a story or a sign on the truck. Note the date of the post.",
+      "linkLine": "A plumbing company page with a careers section: {demo-link}"
+    },
+    {
+      "angle": "Towns you drive to",
+      "line": "You plumb homes well outside {City} going by your reviews, but there's nothing telling someone in {Neighborhood} you'll come out. 'Plumber near me' only works if the page says where 'near' is.",
+      "hook": "Find the towns named in their reviews or posts. Use the furthest one.",
+      "linkLine": "A plumbing page for each town you serve: {demo-link}"
+    },
+    {
+      "angle": "Repipe payment options",
+      "line": "If you offer payments on repipes or sewer line jobs, put that on a page. A whole-house repipe is a number people want broken into months before they invite a plumber in.",
+      "hook": "Only if they mention financing somewhere: a post, a review, the truck. If they don't, skip this angle.",
+      "linkLine": "Plumbing payment options, explained up front: {demo-link}"
+    },
+    {
+      "angle": "Licensed versus handyman",
+      "line": "Your plumbing licence shows on the state lookup, but nobody searching sees it. A licensed plumber next to a handyman ad should look different, and right now you don't.",
+      "hook": "Look them up on the state licence board. Note that a record exists; never quote a number you didn't see.",
+      "linkLine": "Licence and insurance on a plumbing page: {demo-link}"
+    },
+    {
+      "angle": "Word-of-mouth plumber",
+      "line": "Most of your plumbing work sounds like it comes from people who've used you for years. When those customers move away, their buyers search for a plumber from scratch.",
+      "hook": "Look for review text like 'our plumber for years' or 'my mother uses them'. Quote it back.",
+      "linkLine": "Where a plumbing referral would land: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "That {specific recent job} you posted is neat plumbing, straight runs and proper supports. Work like that should greet a stranger, not sit under last week's memes.",
+      "hook": "Pick the newest finished job on their grid and name it exactly: repipe, water heater, drain or fixture, and the town if tagged.",
+      "linkLine": "That plumbing job, front and centre: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, saw the {specific recent job} you posted, tidy work.\n\nWhen I searched for a plumber in {City}, {Business Name} had strong reviews but no site with your hours, your trip charge and a way to report a leak at night. I made a sample plumbing page to see how it would look, with marked placeholders where your photos would go.\n\nShould I send it?",
+    "dm2": "{Owner}, bumping this in case it got lost between calls. The sample plumbing site for {Business Name}: {demo-link}\n\nIt has a leak and drain request that asks where the water is, a main shut-off guide for panicked customers, and a water heater repair-or-replace page. If it's not useful, tell me and I'll stop.",
+    "call": "\"Hi, {Owner}? This is {Your Name}. I build websites for plumbers in {City}. I messaged you about a sample site a few days back, did you see it?\"\n\nIF NO:\n\"No problem, plumbers live on the phone. I built a sample plumbing site for {Business Name} with a leak request form, a shut-off valve guide and your licence up front, plus marked placeholders where your photos would go. Can I text you the link?\"\n\nIF YES:\n\"What did you make of it?\"\n → let them talk, don't fill the silence\n\"It's not a lead service and there's no ad spend. It's a site you own. The build runs {Build Range} depending on how many town and service pages you want, then {Care Range} a month for hosting and changes. For your shop I'd say about {Build Price}, about one water heater swap.\"\n\"Got ten minutes later this week to go through it? Early morning or after six works.\"\n\nCLOSE:\n\"I'll send a short scope and a deposit invoice. Once it clears I start, and you'll see the first version within days.\"",
+    "objections": [
+      {
+        "objection": "I'm too busy as it is. I don't need more calls.",
+        "handler": "\"Then the site is for better calls, not more. Post your trip charge and service area and the price shoppers sort themselves out before they ring you.\""
+      },
+      {
+        "objection": "I get all my plumbing work from referrals.",
+        "handler": "\"Referrals still search your name before they call. Right now they find a map pin. The site gives them your licence, your reviews and a way to describe the leak.\""
+      },
+      {
+        "objection": "I'm already paying for plumbing leads.",
+        "handler": "\"Shared leads go to several plumbers and you pay for the ones you lose. Your own site sends the burst pipe call to one plumber, and it keeps working when you cancel the leads.\""
+      },
+      {
+        "objection": "My daughter set up a site for me.",
+        "handler": "\"That's great. If she wants it, I'll hand over the leak request form and the shut-off guide. If it never gets finished, the offer stays open.\""
+      },
+      {
+        "objection": "I don't want to publish prices. Every job is different.",
+        "handler": "\"Agreed, so we don't list job prices. We list the trip charge and the after-hours fee if you want, and explain how you quote. That alone filters the tyre-kickers.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you, about {Build Price}, because it's a request form, a water heater page and a handful of town pages. Two or three drain calls pay for it.\""
+      }
+    ],
+    "email": {
+      "subject": "Plumbing site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for plumbers in and around {City}. {Business Name} has strong reviews, but no site a homeowner finds when a pipe bursts or the water heater quits.\n\nSo I built a sample instead of asking for a meeting: a leak and drain request that asks where the water is, a main shut-off guide, a water heater repair-or-replace page and your licence and insurance shown plainly, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you'd like it, I move it to a domain you own and finish it for {Build Range}, then {Care Range} a month for hosting and edits. If not, no problem, it comes down at the end of the month.\n\nCould we talk for ten minutes this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, {Your Name} here. I build sites for plumbers in {City} and made a sample for {Business Name}, leak request form and all. I'll text the link so you can look between jobs. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'll take the {Business Name} plumbing demo down Friday unless you want it kept.\n\nJust reply yes or no, either is fine.",
+    "nurture": "Hi {Owner}, freezing nights are coming and so are the split-pipe calls. You crossed my mind.\n\nThe plumbing site is still ready if you want it, same price. {demo-link} for another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to one water heater swap or two drain calls. Plumbers price in jobs, not hours of design.",
+      "Price the leak and drain request as its own line when it asks where the water is and routes to the on-call plumber.",
+      "Quote water heater, drain, repipe and sewer pages separately; they answer different searches and very different tickets.",
+      "Never publish a trip charge or after-hours fee the owner hasn't given you; leave a bracketed field instead.",
+      "Town pages scale with how far the trucks really go; quote per town with real jobs behind it.",
+      "Fixture-only plumbers need a lighter build than repipe and sewer contractors. Size the scope to the biggest job they sell."
+    ],
+    "lineItems": [
+      {
+        "item": "Leak and drain request with photo upload",
+        "min": 400,
+        "max": 1000,
+        "unit": "one-time",
+        "description": "Max with a where-is-the-water picker, shut-off confirmation, photo upload and routing to the on-call plumber.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Plumbing service page (each)",
+        "min": 250,
+        "max": 600,
+        "unit": "per-page",
+        "description": "Max when the page has its own symptom list, a how-we-quote note and finished jobs of that type.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Water heater replacement page with sizing",
+        "min": 500,
+        "max": 1200,
+        "unit": "one-time",
+        "description": "Max with a tank versus tankless comparison, a household-size picker and a request that asks for the data plate.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Town service-area page (each)",
+        "min": 200,
+        "max": 450,
+        "unit": "per-page",
+        "description": "Max when each town page gets its own jobs, a local review and notes on older pipe common in that town.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Repipe explainer with day-by-day plan",
+        "min": 500,
+        "max": 1200,
+        "unit": "one-time",
+        "description": "Max with pipe-material identification help, a printable prep list and a drywall patching section.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Shut-off valve and leak first-aid page",
+        "min": 300,
+        "max": 700,
+        "unit": "one-time",
+        "description": "Max with marked placeholders for valve shots, a curb stop section and a printable fridge sheet.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Spanish-language plumbing path",
+        "min": 500,
+        "max": 1200,
+        "unit": "one-time",
+        "description": "Max when the leak request, shut-off guide and water heater page are all translated.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Review texts the day of each plumbing call",
+      "min": 99,
+      "max": 249,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Once the drain runs clear, the customer gets a text asking how the plumber did. Reviews that mention a fast, clean fix are what the next flooded basement reads.\"",
+      "when": "Day 30. The easiest second sale."
+    },
+    {
+      "name": "Local Services Ads for licensed plumbers",
+      "min": 500,
+      "max": 1000,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"The plumbing ads with the licence check sit above everything when someone types 'emergency plumber'. I set them up and dispute the junk calls so you pay for real leaks.\"",
+      "when": "Month 2, once reviews are flowing and licence and insurance documents are current."
+    },
+    {
+      "name": "Google profile updates with each plumbing job",
+      "min": 250,
+      "max": 450,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Each water heater, repipe and drain job goes on your Google profile with the town named, so the map shows a plumber who's busy this month.\"",
+      "when": "Day 30, once the site is live."
+    },
+    {
+      "name": "Plumbing service agreement page and mailer",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"An annual plumbing check, water heater flush and shut-off valve test, sold as a yearly agreement. Past customers get a mailer about it and sign up online.\"",
+      "when": "Month 3, once they agree what the annual check includes."
+    },
+    {
+      "name": "Truck lettering and magnet artwork",
+      "min": 300,
+      "max": 900,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Your plumbing truck sits in a driveway on every call. Clean lettering with the site and number turns each one into a sign for the whole street.\"",
+      "when": "Right after launch, or when they add a truck."
+    },
+    {
+      "name": "Fridge magnet with the shut-off steps",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Leave a magnet on every customer's fridge showing where to shut off the water, with your plumbing number on it. When the next pipe bursts, it's the first number they see.\"",
+      "when": "Month 2, printed in a batch and left at every call."
+    },
+    {
+      "name": "Freeze-warning postcard to past customers",
+      "min": 400,
+      "max": 900,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Before the first hard freeze, past customers get a postcard on insulating pipes and disconnecting hoses, with your plumbing number for when a pipe splits anyway.\"",
+      "when": "Pitch in early autumn, mail before the first freeze."
+    },
+    {
+      "name": "Realtor and inspector leave-behind sheet",
+      "min": 250,
+      "max": 600,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A one-page sheet for realtors and inspectors listing the plumbing fixes you handle before closing, with a quick-request link for water heater and drain repairs found at inspection.\"",
+      "when": "Month 3, when they mention real estate repair work."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "The plumbing supply branch",
+        "whoPays": "The plumbing supply house",
+        "min": 3000,
+        "max": 9000,
+        "unit": "one-time",
+        "pitchLine": "\"The plumbing supply branch you buy from serves every plumber in the county. Introduce me and I'll build their contractor directory and counter-hours page.\"",
+        "whyItWorks": "Supply houses have budgets and a list of every plumber in the area, which is the prospect list you'd otherwise build by hand."
+      },
+      {
+        "route": "Drywall patchers who follow the repipe",
+        "whoPays": "The drywall repair contractor, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"Who patches the walls after your plumbers open them for a repipe or a leak? They need a site too, and your repipe page can point to them.\"",
+        "whyItWorks": "Every repipe and slab leak leaves holes, and the plumber already hands that work to someone they trust."
+      },
+      {
+        "route": "Bathroom remodelers who use your rough-ins",
+        "whoPays": "The remodeling contractor",
+        "min": 2000,
+        "max": 5000,
+        "unit": "one-time",
+        "pitchLine": "\"The remodelers you rough in bathrooms for sell bigger jobs than you and often have weaker sites. Your plumbing introduction gets me in the door.\"",
+        "whyItWorks": "Remodelers buy sites to show finished bathrooms, and the plumber who works their jobs is a trusted referral."
+      },
+      {
+        "route": "Property managers with tenant leak calls",
+        "whoPays": "The property manager",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"Rental managers call you for every dripping tap and flooded unit. Give them a page where tenants report leaks with a shot of the pipe, and every plumbing ticket lands on your phone.\"",
+        "whyItWorks": "Managers have a real maintenance problem and a plumber they already rely on."
+      },
+      {
+        "route": "Water damage mitigation crews",
+        "whoPays": "The mitigation company, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"When a burst pipe soaks a floor, someone brings fans and dehumidifiers after you fix the leak. That crew needs a site, and your burst-pipe page links to them.\"",
+        "whyItWorks": "Plumbers and small mitigation crews hand each other work weekly. Both sides gain."
+      },
+      {
+        "route": "Realtors who need pre-listing plumbing fixes",
+        "whoPays": "The realtor or small brokerage",
+        "min": 1500,
+        "max": 3500,
+        "unit": "one-time",
+        "pitchLine": "\"The realtors who call you for pre-listing water heater and leak fixes need a vendor page for sellers. Your plumbing company is the first name on it.\"",
+        "whyItWorks": "Realtors live on a vendor list they trust and rarely have a page that presents it well."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Counter order assistant for the plumbing supply",
+        "whoPays": "The supply house, annually",
+        "min": 3000,
+        "max": 12000,
+        "unit": "per-year",
+        "pitchLine": "\"Plumbers text a fitting or valve description and get the right part number, branch stock and pickup time from the plumbing supply counter.\"",
+        "whyItWorks": "It keeps plumbers loyal to one branch, which is worth more to the supply house than a rebate."
+      },
+      {
+        "route": "Leak ticket triage for rental managers",
+        "whoPays": "The property manager, monthly",
+        "min": 200,
+        "max": 500,
+        "unit": "monthly",
+        "pitchLine": "\"Tenants report 'water under the sink' at night. An assistant asks if it's dripping or flowing, tells them where the shut-off is and sends real leaks to one plumber.\"",
+        "whyItWorks": "Managers save dispatch time, and the plumbing client gets steady work from accounts that pay."
+      },
+      {
+        "route": "Drying log writer for mitigation crews",
+        "whoPays": "The mitigation company, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Mitigation crews after a burst pipe log moisture readings by hand. An assistant turns their voice notes into a clean daily drying log.\"",
+        "whyItWorks": "Small crews hate paperwork and need it for every job. The plumber's introduction makes the first demo easy."
+      },
+      {
+        "route": "Selection helper for bathroom remodelers",
+        "whoPays": "The remodeling contractor, monthly",
+        "min": 150,
+        "max": 350,
+        "unit": "monthly",
+        "pitchLine": "\"Remodel clients go round in circles on fixtures. An assistant collects their choices and checks each against the valve and rough-in the plumber needs.\"",
+        "whyItWorks": "Remodelers lose weeks to fixture changes, and a plumbing-aware checklist saves both trades a return trip."
+      },
+      {
+        "route": "Inspection repair request sorter for realtors",
+        "whoPays": "The realtor team, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"An assistant reads the inspection report, pulls out the plumbing, electrical and roof items and drafts repair requests to each vendor.\"",
+        "whyItWorks": "Realtors juggle repair lists under a closing deadline, and the plumber who introduced you gets the plumbing items."
+      },
+      {
+        "route": "Estimate follow-up for the drywall patcher",
+        "whoPays": "The drywall repair contractor",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"The patcher who follows your plumbers loses estimates to slow callbacks. Same follow-up texts your plumbing office uses, set up for them.\"",
+        "whyItWorks": "You built it once for the plumber, so it is configuration, and the referral came from someone they trust."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Missed-call text-back for leak calls",
+      "kind": "automation",
+      "oneTimeMin": 0,
+      "oneTimeMax": 300,
+      "monthlyMin": 99,
+      "monthlyMax": 199,
+      "pitchLine": "\"When you're under a sink and miss a call, the caller gets a text asking if the water is shut off and where the leak is. You call the flooding one first.\"",
+      "whenAndWhatItTakes": "Day 30. Needs their business number forwarded and the wording they approve."
+    },
+    {
+      "name": "Water heater price range tool",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3500,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"A homeowner picks gas or electric, tank or tankless and household size, and sees a water heater replacement range before the plumber drives out.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their real installed price bands and the add-ons they always quote, like expansion tanks and venting."
+    },
+    {
+      "name": "Review reply drafts for plumbing jobs",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1200,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"Each new review gets a reply in your voice that mentions the drain, leak or water heater and the plumber who did it, ready to approve from the truck.\"",
+      "whenAndWhatItTakes": "Month 2, with review texts running. Needs ten past replies to learn the voice. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Annual plumbing check reminders",
+      "kind": "automation",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"A year after each water heater install or drain clearing, the customer gets a text offering a flush or a check, with three open slots to tap.\"",
+      "whenAndWhatItTakes": "Month 2. Needs a customer list with job dates and their calendar."
+    },
+    {
+      "name": "Night leak line that explains the shut-off",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 3500,
+      "monthlyMin": 250,
+      "monthlyMax": 600,
+      "pitchLine": "\"It answers after hours, tells the caller how to shut off the water at the main or the fixture, books the plumbing visit and wakes you only for a real flood.\"",
+      "whenAndWhatItTakes": "Month 3, before freeze season. Needs their on-call rules, after-hours fee wording and shut-off notes. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Drain camera report builder",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4500,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Mark the roots, the belly and the crack at each footage on the camera run, and the homeowner gets a clean drain line report with stills before you leave.\"",
+      "whenAndWhatItTakes": "Month 3, for plumbers who run a camera. Needs two past camera jobs and their report wording."
+    },
+    {
+      "name": "Plumbing quote builder with options",
+      "kind": "software",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 6000,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"Build a repair, a partial repipe and a whole-house repipe option on the tablet, and the homeowner signs the one they want on the spot.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their price book for common plumbing jobs and the quote they write on paper today."
+    },
+    {
+      "name": "Photo triage for leak and fixture requests",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"A customer uploads a shot under the sink or of the water heater label, and the tool suggests which part or fitting is likely needed so the plumber brings it on the first trip.\"",
+      "whenAndWhatItTakes": "Month 4. Needs a sample of past job shots with notes. Comes with the AI maintenance retainer; the plumber confirms on site."
+    },
+    {
+      "name": "Chatbot on plumbing symptoms and fees",
+      "kind": "ai",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3500,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"It answers 'why does my toilet keep running' and 'do you charge to come out' from your own plumbing notes, and takes a number when it isn't sure.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their symptom notes, fee wording and service area. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Deposit and balance invoicing for repipes",
+      "kind": "automation",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Deposit at signing, the next draw when the new plumbing passes inspection, the balance at the final walk, each sent with a card link automatically.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their draw schedule and the payment account they already use."
+    },
+    {
+      "name": "Plumbing dispatch board by truck",
+      "kind": "software",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 9000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Every leak call, drain clearing and water heater install on one board by plumber and truck, so the office stops working off sticky notes.\"",
+      "whenAndWhatItTakes": "Month 5, when they run three or more trucks. Needs their job types, plumbers and how they assign calls now."
+    },
+    {
+      "name": "Voice notes to plumbing invoice",
+      "kind": "ai",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3500,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"Say what you replaced and how long it took into the phone in the truck, and it drafts the plumbing invoice with the parts and labour lines filled in.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their price book and invoice template. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Truck stock tracker",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Each plumber marks fittings, valves and cartridges used on the job, and the restock list for each truck is ready before the supply run.\"",
+      "whenAndWhatItTakes": "Month 5. Needs a stock list per truck and the parts they always run out of."
+    },
+    {
+      "name": "Freeze alert texts to past customers",
+      "kind": "automation",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"When a hard freeze is forecast for {City}, past customers get a text on dripping taps and opening cabinet doors, plus your plumbing number for a split pipe.\"",
+      "whenAndWhatItTakes": "Month 5, before winter. Needs the customer list and a weather feed for the area."
+    },
+    {
+      "name": "Address history for plumbing visits",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3500,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Type the address and see every leak, drain and water heater visit at that house, with pipe material notes, before the plumber knocks.\"",
+      "whenAndWhatItTakes": "Month 6. Needs past invoices or service notes they can export."
+    },
+    {
+      "name": "Repipe candidate finder from service notes",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"It reads a year of plumbing notes and flags homes with galvanized pipe and repeat pinhole leaks, so the repipe letter goes to the right houses.\"",
+      "whenAndWhatItTakes": "Month 6. Needs a year of service notes with pipe material recorded. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Job costing by plumbing call type",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 5000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"See which plumbing work actually pays: drain calls, water heaters or repipes, once parts, drive time and callbacks are counted.\"",
+      "whenAndWhatItTakes": "Month 6. Needs a season of invoices and plumber hours."
+    },
+    {
+      "name": "Permit and inspection tracker",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Every water heater and repipe permit, its inspection date and the result in one list, so no plumbing job sits waiting on a forgotten inspection.\"",
+      "whenAndWhatItTakes": "Month 7. Needs the permit types they pull and the city portals they use."
+    },
+    {
+      "name": "Apprentice how-to library from senior plumbers",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"Your senior plumber talks through a tricky shower valve or water heater vent on a phone, and it becomes a searchable how-to for apprentices.\"",
+      "whenAndWhatItTakes": "Month 7, once they have apprentices. Needs a senior plumber willing to record. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Applicant screener for plumbers and apprentices",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"Before you ring anyone back, each plumbing applicant says whether they hold a journeyman card, can solder and sweat copper, and will take a night on call.\"",
+      "whenAndWhatItTakes": "Any time they post a hiring note. Needs their must-haves and the pay range. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the drain camera report for plumbers",
+      "whoPays": "Plumbing companies, monthly per shop",
+      "min": 39,
+      "max": 149,
+      "unit": "monthly",
+      "pitchLine": "\"I built this drain camera report for one plumber. Every plumbing shop with a camera hands customers a blurry video and no explanation.\"",
+      "whyItWorks": "The first plumber taught you the workflow and paid for the build. Every shop with a camera has the same gap."
+    },
+    {
+      "route": "Plumber directory licensed to a supply house",
+      "whoPays": "The plumbing supply house, annually",
+      "min": 4000,
+      "max": 15000,
+      "unit": "per-year",
+      "pitchLine": "\"Put a find-a-plumber map on your branch site for every licensed plumber who buys at your counter. They stay loyal to the branch sending them jobs.\"",
+      "whyItWorks": "Supply houses compete on contractor loyalty, and a directory plumbers depend on is stickier than a discount."
+    },
+    {
+      "route": "Water heater maker's installer page kit",
+      "whoPays": "The water heater manufacturer's regional rep",
+      "min": 6000,
+      "max": 25000,
+      "unit": "one-time",
+      "pitchLine": "\"Your trained installers need pages that explain tank and tankless options and take a request. I've built that page for a plumber already.\"",
+      "whyItWorks": "Manufacturers fund installer presence and lack anyone who knows the plumbing call flow."
+    },
+    {
+      "route": "Plumbing contractors' association member template",
+      "whoPays": "The state or local plumbing association",
+      "min": 1500,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer member plumbers a site template with a licence display and a shut-off guide as a benefit of joining.\"",
+      "whyItWorks": "Associations need renewal reasons, and licensed-versus-handyman visibility is already their fight."
+    },
+    {
+      "route": "Plumbing site template for agencies",
+      "whoPays": "The agency, per plumbing client",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "pitchLine": "\"License my plumbing template with the leak request, shut-off guide and water heater page done, instead of building each plumber from scratch.\"",
+      "whyItWorks": "Agencies own the plumber relationship; you sell them the finished part."
+    },
+    {
+      "route": "Home warranty plumbing vendor pages",
+      "whoPays": "The home warranty company's regional office",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"The plumbers taking your warranty dispatches have no page to show homeowners who's coming. A vendor page kit fixes that across your plumbing network.\"",
+      "whyItWorks": "Warranty firms are judged on their vendors, and a consistent plumbing vendor page makes the network look reliable."
+    },
+    {
+      "route": "Water utility leak-help partner pages",
+      "whoPays": "The municipal or private water utility",
+      "min": 4000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Customers call the water utility about high bills from leaking toilets. A leak-help page listing licensed local plumbers answers it.\"",
+      "whyItWorks": "Utilities field leak calls they can't fix and want a neutral page to send people to."
+    },
+    {
+      "route": "Apprenticeship programme pages for plumbing schools",
+      "whoPays": "The trade school or union apprenticeship programme",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Union and trade-school plumbing apprenticeships struggle to fill seats. A recruiting page with real plumbers talking about the work fills them.\"",
+      "whyItWorks": "Programmes need applicants, and the plumber who takes their apprentices is the introduction."
+    },
+    {
+      "route": "Freeze-season kit for plumbers in cold states",
+      "whoPays": "Plumbers outside your metro, monthly",
+      "min": 39,
+      "max": 129,
+      "unit": "monthly",
+      "pitchLine": "\"A frozen-pipe page, freeze alert text and shut-off magnet artwork, ready for any plumber the week temperatures drop.\"",
+      "whyItWorks": "Every cold-state plumber needs it the same week, so it sells as a kit with no custom build."
+    },
+    {
+      "route": "Multi-location plumbing franchise pages",
+      "whoPays": "The plumbing franchise group, per location",
+      "min": 1200,
+      "max": 3500,
+      "unit": "one-time",
+      "pitchLine": "\"Each plumbing franchise location needs its own towns, on-call number and leak request routed to that owner. Build once, copy per location.\"",
+      "whyItWorks": "One contract becomes many locations on the same plumbing template."
+    },
+    {
+      "route": "Exclusive plumber in the next metro",
+      "whoPays": "A plumbing company in a new metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I take one plumbing company per metro. {City} has its plumber; the next city's best independent plumber doesn't have me yet.\"",
+      "whyItWorks": "Exclusivity is a real selling point in a crowded trade, and the demo carries straight over."
+    },
+    {
+      "route": "Commercial plumbing capability pages",
+      "whoPays": "The commercial plumbing contractor",
+      "min": 3000,
+      "max": 9000,
+      "unit": "one-time",
+      "pitchLine": "\"Commercial plumbers doing grease traps, backflow testing and restaurant work need a capability page and a service agreement request.\"",
+      "whyItWorks": "Residential plumbers know the commercial shops, and those buyers pay more for a sharper site."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Plumbing site build plus care plan, one contract",
+      "min": 1800,
+      "max": 3200,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The plumbing site and the care plan sit on one contract, so a new trip charge or on-call number is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Review texts the day of each plumbing call",
+      "min": 99,
+      "max": 249,
+      "unit": "monthly",
+      "trigger": "The first leak or drain job booked through the site.",
+      "line": "\"That family whose basement you dried out is the review the next panicked plumbing search reads. Let's ask every customer that evening.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "Fridge magnet with the shut-off steps",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "trigger": "Visits to the shut-off guide page show up in the site stats.",
+      "line": "\"People are reading your shut-off guide. Let's put it on a magnet with your plumbing number on every fridge you visit.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Night leak line that explains the shut-off",
+      "min": 1500,
+      "max": 3500,
+      "unit": "one-time",
+      "trigger": "The missed-call log shows leak calls after nine at night.",
+      "line": "\"Those late leak calls went to whichever plumber answered. This one answers, stops the water and books you.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Local Services Ads for licensed plumbers",
+      "min": 500,
+      "max": 1000,
+      "unit": "monthly",
+      "trigger": "A steady flow of new reviews and current licence and insurance documents.",
+      "line": "\"Your plumbing reviews are strong enough for the licence-checked ads now. Let's be the badge at the top when someone types 'emergency plumber'.\""
+    },
+    {
+      "rung": 6,
+      "day": 120,
+      "offer": "Plumbing service agreement page and mailer",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "trigger": "They mention customers asking for a yearly water heater flush.",
+      "line": "\"Customers are asking for yearly flushes. Let's sell it as a plumbing agreement and mail every past customer.\""
+    },
+    {
+      "rung": 7,
+      "day": 180,
+      "offer": "Plumbing dispatch board by truck",
+      "min": 3000,
+      "max": 9000,
+      "unit": "one-time",
+      "trigger": "They add a third truck or hire an office person.",
+      "line": "\"Three plumbing trucks and one office phone need one board. Let's put every call on it.\""
+    },
+    {
+      "rung": 8,
+      "day": 365,
+      "offer": "Repipe candidate finder from service notes",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "trigger": "A full year of service notes with pipe materials recorded.",
+      "line": "\"A year of plumbing notes shows which houses keep springing pinhole leaks. Let's write to them about a repipe.\""
+    }
+  ]
+}

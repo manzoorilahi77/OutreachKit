@@ -1,0 +1,842 @@
+{
+  "schemaVersion": 1,
+  "category": "Water & fire restoration",
+  "slug": "water-fire-restoration",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Mech family batch. Insurance-driven and franchise-heavy, so copy leans on the independent, locally owned angle. Never promises claim outcomes, coverage or drying times, never gives insurance or legal advice, makes no mold health claims and names no equipment or franchise brands."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "The first 48 hours after water damage",
+      "contains": "Water extraction, moisture mapping, drying equipment placement, daily moisture readings, when wet drywall and carpet pad come out, and what the homeowner should and shouldn't touch",
+      "why": "A flooded homeowner is in shock and wants to know what happens next. A clear first-days page makes the restoration company feel in control before the truck arrives."
+    },
+    {
+      "section": "Your insurance claim, step by step",
+      "contains": "What to photograph first, how the adjuster visit works, the moisture logs and photo documentation the restorer provides, and bracketed notes the owner confirms, with no promise of coverage",
+      "why": "Every restoration job runs through an insurer. Homeowners choose the company that explains the claim process plainly without promising what the policy will pay."
+    },
+    {
+      "section": "Fire and smoke damage cleanup",
+      "contains": "Emergency board-up and roof tarp, soot and smoke residue cleaning, odour treatment, contents cleaning, and when rebuild starts",
+      "why": "Fire customers face a long road and many strangers in the house. Mapping each stage of fire restoration earns their trust for the whole job."
+    },
+    {
+      "section": "Mold remediation process",
+      "contains": "Containment, removal of affected materials, air filtration, cleaning, independent clearance testing where required, and preventing the moisture that caused it, with no health claims",
+      "why": "Mold buyers are anxious and suspicious of upsells. Showing a disciplined remediation process is what separates a pro from a bleach-and-paint crew."
+    },
+    {
+      "section": "Contents pack-out and storage",
+      "contains": "Room-by-room inventory with photos, cleaning of salvageable contents, secure storage, the non-salvageable list for the claim, and return when the house is ready",
+      "why": "People worry about their belongings as much as the house. A pack-out page shows the restoration company treats both with care."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C6",
+      "siteType": "local-conversion",
+      "name": "Local Response",
+      "heroLayout": "split-photo",
+      "mood": [
+        "calm",
+        "capable",
+        "local"
+      ],
+      "bestFor": "Owner-run water damage and mitigation crews with one or two trucks competing against franchise territories",
+      "pairsWithTier": "starter",
+      "headlineSample": "Water damage cleanup in {City}, from a locally owned crew",
+      "whyItFits": "Cobalt on white and a plain grotesque read like clean water and a clear plan, with the local owner's name above everything a franchise page can't say."
+    },
+    {
+      "id": "b",
+      "themeId": "C50",
+      "siteType": "emergency-response",
+      "name": "Flood and Fire Desk",
+      "heroLayout": "type-led",
+      "mood": [
+        "urgent",
+        "steady",
+        "exact"
+      ],
+      "bestFor": "Restoration companies running water, fire and mold jobs with an on-call crew and insurance documentation",
+      "pairsWithTier": "standard",
+      "headlineSample": "Water or fire damage in {City}? Call the local restoration crew",
+      "whyItFits": "The family's own combo. A red call button and mono labels for hours, service area and moisture readings read like a job log, the calm order a flooded family needs."
+    },
+    {
+      "id": "c",
+      "themeId": "C8",
+      "siteType": "editorial-trust",
+      "name": "Claim to Rebuild",
+      "heroLayout": "card-stack",
+      "mood": [
+        "reassuring",
+        "thorough",
+        "patient"
+      ],
+      "bestFor": "Full-service restoration contractors that carry jobs from mitigation through the insurance claim to the finished rebuild",
+      "pairsWithTier": "premium",
+      "headlineSample": "From first call to final rebuild, restoration in {City}",
+      "whyItFits": "Evergreen and a classical serif feel like an insurer's letter, which suits a long, paperwork-heavy restoration where trust matters more than speed."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "Independent with no site",
+      "line": "{Business Name} looks like a locally owned restoration crew on the map, but there's no website. When a basement floods, the franchise pages are all anyone finds.",
+      "hook": "Open their Maps listing and confirm there is no Website button. Screenshot it for when they reply.",
+      "linkLine": "A restoration site that says you're local and owner-run: {demo-link}"
+    },
+    {
+      "angle": "Facebook in place of a site",
+      "line": "Your listing goes to Facebook. Someone standing in an inch of water wants to know what happens in the next few hours, not scroll through drying equipment posts.",
+      "hook": "Tap their Website link and confirm it lands on Facebook. Note the latest water or fire damage job.",
+      "linkLine": "A water damage page made for that moment: {demo-link}"
+    },
+    {
+      "angle": "Outdated restoration site",
+      "line": "The restoration site on your profile has an old year in the footer and a broken contact form. On the worst day of someone's year, that's enough to make them call a franchise instead.",
+      "hook": "Open the site and look for an old year, a host banner or a dead form. Note which you found.",
+      "linkLine": "Same restoration company, current and calm on a phone: {demo-link}"
+    },
+    {
+      "angle": "Phone view during a flood",
+      "line": "Your water damage page loads slowly on my phone and the number isn't tappable. People calling about a burst pipe are on a phone with wet hands.",
+      "hook": "Only if they have a site. Load it on a phone and note load time and the call button. Screenshot it for when they reply.",
+      "linkLine": "Your restoration site rebuilt for a phone in a flooded room: {demo-link}"
+    },
+    {
+      "angle": "No first-days explainer",
+      "line": "Nothing online tells a homeowner what your crew does in the first day after water damage. That's the question they ask on every call, and a page would answer it at 2 a.m.",
+      "hook": "Check whether any page or post explains the mitigation steps. If not, the angle holds.",
+      "linkLine": "A first 48 hours water damage page for {Business Name}: {demo-link}"
+    },
+    {
+      "angle": "Insurance claim confusion",
+      "line": "Most of your restoration jobs go through an insurance claim, and homeowners have no idea how that works. A plain page on the claim steps makes you the calm one in the room.",
+      "hook": "Look for posts or reviews mentioning insurance or adjusters. Quote one if you find it.",
+      "linkLine": "An insurance claim steps page for restoration: {demo-link}"
+    },
+    {
+      "angle": "Reviews about calm in a crisis",
+      "line": "Your reviews talk about a crew that kept a family calm while the basement was pumped out. That's the restoration story that wins the next call, and it lives only on the map.",
+      "hook": "Read their reviews and copy one specific phrase about a flood, fire or mold job. Quote it back if they reply.",
+      "linkLine": "Those restoration reviews next to the water damage page: {demo-link}"
+    },
+    {
+      "angle": "Freeze and storm season",
+      "line": "The first deep freeze and the spring storms bring burst pipes and flooded basements all over {City}. The local restoration crew that's easy to find that week stays busy all season.",
+      "hook": "Use this before winter or the spring storm season. Name the season in the reply.",
+      "linkLine": "Ready before the burst-pipe and storm calls: {demo-link}"
+    },
+    {
+      "angle": "Night flood calls",
+      "line": "Water heaters and supply lines burst overnight. If your restoration line rolls to a full mailbox, that homeowner calls the national number on the franchise ad instead.",
+      "hook": "Call their listed number after hours. If it goes to a full or generic voicemail, the angle holds.",
+      "linkLine": "A water damage request that works overnight: {demo-link}"
+    },
+    {
+      "angle": "Hiring technicians",
+      "line": "Saw you're hiring restoration technicians. Good techs compare a local outfit with the franchises, and a site that shows your crew and your jobs helps them choose you.",
+      "hook": "Only if they posted a hiring note or story. Note the date of the post.",
+      "linkLine": "A restoration company page with a careers section: {demo-link}"
+    },
+    {
+      "angle": "Towns the crew reaches",
+      "line": "Your listing doesn't say your restoration trucks reach {Neighborhood}. Franchise maps claim every town, so a true list of where your crew goes is worth more than it looks.",
+      "hook": "Find towns named in reviews or posts. Use the furthest one.",
+      "linkLine": "A restoration page for each town your crew covers: {demo-link}"
+    },
+    {
+      "angle": "Mold jobs after leaks",
+      "line": "Some of your posts show mold remediation behind old leaks. Mold buyers are wary of upsells, and a page showing your containment and clearance process wins their trust.",
+      "hook": "Only if they post mold work. Note one job you saw.",
+      "linkLine": "A mold remediation process page for {Business Name}: {demo-link}"
+    },
+    {
+      "angle": "Certification and insurance on show",
+      "line": "If your crew holds restoration training certificates, nobody can see them from your listing. Putting certifications and insurance on a page is how a local company stands next to a franchise.",
+      "hook": "Look for certificate logos or mentions on their profile. Never claim a credential they haven't shown.",
+      "linkLine": "Certifications and insurance on one restoration page: {demo-link}"
+    },
+    {
+      "angle": "Plumber and agent referrals",
+      "line": "Sounds like a lot of your restoration work comes from plumbers and insurance agents. If one of them signs with a franchise programme, that work stops overnight.",
+      "hook": "Look for reviews or posts mentioning a plumber or agent referral. Quote it back.",
+      "linkLine": "Where your restoration referrals could land: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "That {specific recent job} you posted shows careful restoration work, containment up and drying equipment set right. A stranger should see that before they see a franchise logo.",
+      "hook": "Pick their newest posted job and name it exactly: water, fire or mold, and the room.",
+      "linkLine": "That restoration job, front and centre: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "{Owner}, the {specific recent job} you posted shows careful restoration work, containment up and the drying set-up done right.\n\nI searched for water damage help in {City} and found mostly franchise pages. {Business Name} looks locally owned, but there's no site explaining what your crew does in the first hours or how the insurance claim works. I made a sample restoration page, with marked placeholders where your photos would go.\n\nWant to see it?",
+    "dm2": "{Owner}, following up in case this got buried under drying jobs. Sample restoration site for {Business Name}: {demo-link}\n\nIt has a first 48 hours water damage page, a plain insurance claim walkthrough that promises nothing about coverage, and fire, mold and pack-out pages, all leading with the fact that you're local. If it's not for you, say so and I'll stop.",
+    "call": "\"Hi, {Owner}? {Your Name} here. I build websites for restoration companies in {City}. I sent a sample site a few days ago, did you see it?\"\n\nIF NO:\n\"No problem, you're on wet jobs all day. I built a sample restoration site for {Business Name} that leads with being locally owned, explains the first 48 hours and walks through the insurance claim, with marked placeholders where your photos would go. Can I text the link?\"\n\nIF YES:\n\"What did you make of it?\"\n → let them talk, don't fill the silence\n\"It's not a lead programme and there's no referral fee. It's a site you own. The build runs {Build Range} depending on how many service and town pages you want, then {Care Range} a month for hosting and changes. For your company I'd say about {Build Price}, a small part of one water job.\"\n\"Ten minutes this week to walk through it?\"\n\nCLOSE:\n\"I'll send a short scope and a deposit invoice. The water damage page goes live first, before the freeze.\"",
+    "objections": [
+      {
+        "objection": "All my work comes from insurance agents and plumbers.",
+        "handler": "\"Then the site is for them as much as homeowners. Agents and plumbers send the homeowner a link, and the claim page makes you look like the safe choice.\""
+      },
+      {
+        "objection": "The franchises outspend me on ads. I can't compete online.",
+        "handler": "\"You won't outspend them. You can out-local them: your name, your crew, your town list. Plenty of people search for an independent after a bad franchise experience.\""
+      },
+      {
+        "objection": "I'm on a program with an insurance company already.",
+        "handler": "\"Program work is valuable and it sets your rates. A site brings in jobs where the homeowner picks the restorer, which you control.\""
+      },
+      {
+        "objection": "I can't talk about insurance online, it's a minefield.",
+        "handler": "\"Agreed, so the page promises nothing. It explains the steps and the documents you provide, and the wording is yours to approve line by line.\""
+      },
+      {
+        "objection": "We're slammed after every storm. I don't need more.",
+        "handler": "\"Then the site is for the quiet months. Mold, fire and contents work keep crews busy between storms.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you, about {Build Price}, because it's a water damage page, the claim walkthrough and fire and mold pages. One mitigation job covers it.\""
+      }
+    ],
+    "email": {
+      "subject": "Restoration site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for restoration companies around {City}. {Business Name} looks locally owned, but when a basement floods the franchise pages are all a homeowner finds.\n\nI built a sample first: a page on what your crew does in the first 48 hours, a plain insurance claim walkthrough that promises nothing about coverage, fire, mold and contents pages, and your crew shown as the local option, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, then {Care Range} a month for hosting and changes. If not, it comes down at the end of the month.\n\nTen minutes this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"{Owner}, it's {Your Name}. I build sites for restoration companies in {City} and made a sample for {Business Name}, water damage and claim pages included. I'll text the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm taking the {Business Name} restoration demo down Friday.\n\nWant it kept? Yes or no is plenty.",
+    "nurture": "Hi {Owner}, freeze season is close and burst pipes come with it. Thought of you.\n\nThe restoration site is still ready, same price. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to a small part of one mitigation job. Restoration owners think in jobs and claims, not pages.",
+      "The first 48 hours page and the claim walkthrough are the core; price them as their own lines.",
+      "Quote water, fire, mold and contents pages separately. Each is a different crisis and buyer.",
+      "Never publish coverage, drying-time or certification claims the owner hasn't approved in writing.",
+      "Referral-partner pages for plumbers and agents are worth more here than town pages.",
+      "Franchise-territory owners can't buy a separate site; qualify for independents first."
+    ],
+    "lineItems": [
+      {
+        "item": "First 48 hours water damage page",
+        "min": 500,
+        "max": 1200,
+        "unit": "one-time",
+        "description": "Max with a step timeline, what-not-to-touch list, moisture reading explainer and an urgent request form.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Insurance claim walkthrough page",
+        "min": 500,
+        "max": 1200,
+        "unit": "one-time",
+        "description": "Max with a photo checklist, adjuster visit steps, a documentation sample and owner-approved bracketed wording.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Restoration service page (each)",
+        "min": 300,
+        "max": 700,
+        "unit": "per-page",
+        "description": "Max for fire, mold or contents pages with their own process steps and finished jobs.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Referral partner landing page",
+        "min": 400,
+        "max": 1000,
+        "unit": "one-time",
+        "description": "Max with separate paths for plumbers, insurance agents and property managers and a partner referral form.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Town service-area page (each)",
+        "min": 200,
+        "max": 450,
+        "unit": "per-page",
+        "description": "Max when each page shows its own jobs and a local review.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Spanish-language emergency path",
+        "min": 500,
+        "max": 1200,
+        "unit": "one-time",
+        "description": "Max when the water damage, claim and fire pages are all translated.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Review requests at job close-out",
+      "min": 99,
+      "max": 249,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"When the drying equipment leaves and the moisture readings are dry, the homeowner gets a text asking for a review. Restoration reviews about calm and care beat any franchise ad.\"",
+      "when": "Day 30. The easiest second sale."
+    },
+    {
+      "name": "Licence-checked ads for water damage",
+      "min": 600,
+      "max": 1500,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Water damage searches are the priciest clicks in the trade. I run the licence-checked local ads tightly to {City} so you pay for real floods, not job seekers.\"",
+      "when": "Month 2, once reviews are flowing and documents are current."
+    },
+    {
+      "name": "Plumber and agent referral kit",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A leave-behind card and a partner page for plumbers, insurance agents and property managers, so every flooded house they see gets your restoration number.\"",
+      "when": "Month 2, once the referral partner page is live."
+    },
+    {
+      "name": "Google profile upkeep for restoration",
+      "min": 250,
+      "max": 450,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Each water, fire and mold job posted with the town named, and the profile kept consistent with the site, so the local crew shows up next to the franchises.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Truck and trailer lettering artwork",
+      "min": 400,
+      "max": 1200,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A restoration truck sits outside a house for days. Lettering that says locally owned, with the site and number, makes the neighbours remember who to call.\"",
+      "when": "Right after launch."
+    },
+    {
+      "name": "Freeze-warning mailer to older neighbourhoods",
+      "min": 500,
+      "max": 1200,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Before the first freeze, older streets get a postcard on protecting pipes and what to do if one bursts, with the restoration number on the fridge side.\"",
+      "when": "Pitch in early autumn."
+    },
+    {
+      "name": "Commercial property manager outreach",
+      "min": 500,
+      "max": 1200,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A page and letter for commercial property managers offering a pre-loss plan, so the restoration crew is already on file when a sprinkler line bursts.\"",
+      "when": "Month 3."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Plumbers who find the leak first",
+        "whoPays": "The plumbing company, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The plumber who fixes the burst pipe before your crew dries the house needs a site too. Your water damage page links to theirs.\"",
+        "whyItWorks": "Plumbers and restoration crews hand each other every flood job."
+      },
+      {
+        "route": "Independent insurance agencies",
+        "whoPays": "The insurance agency",
+        "min": 2000,
+        "max": 5000,
+        "unit": "one-time",
+        "pitchLine": "\"The agents who refer your restoration crew need a page for clients after a loss, explaining who to call first. You're on it.\"",
+        "whyItWorks": "Agents want to help clients after a loss, and the restoration owner already knows them."
+      },
+      {
+        "route": "Rebuild contractors after mitigation",
+        "whoPays": "The general contractor",
+        "min": 2000,
+        "max": 5000,
+        "unit": "one-time",
+        "pitchLine": "\"Whoever rebuilds after your crew finishes mitigation needs a project site. Your introduction gets me in.\"",
+        "whyItWorks": "Mitigation-only firms hand off rebuilds and the two trades refer constantly."
+      },
+      {
+        "route": "Public adjusters on water and fire losses",
+        "whoPays": "The public adjuster",
+        "min": 2000,
+        "max": 5000,
+        "unit": "one-time",
+        "pitchLine": "\"The public adjusters you meet on fire losses need a site that explains their role plainly. You know which ones are good.\"",
+        "whyItWorks": "Adjusters live on referrals from restoration crews."
+      },
+      {
+        "route": "Contents cleaning and storage partners",
+        "whoPays": "The contents cleaning company, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"If you sub out contents cleaning or storage, that partner needs a site, and your pack-out page links to them.\"",
+        "whyItWorks": "Contents firms depend on restoration referrals."
+      },
+      {
+        "route": "Property managers and HOAs",
+        "whoPays": "The property manager or HOA",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"Managers whose units flood from upstairs leaks need a resident incident page. Water emergencies route to your restoration crew.\"",
+        "whyItWorks": "Multi-unit water losses are frequent and managers want one trusted crew."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Loss summary drafts for insurance agents",
+        "whoPays": "The insurance agency, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"After a client's loss, an assistant drafts a plain summary of next steps for the agent to send, with the restoration crew's number included.\"",
+        "whyItWorks": "Agents want to look responsive after a loss, and the restoration client is the first call."
+      },
+      {
+        "route": "Photo inventory sorter for public adjusters",
+        "whoPays": "The public adjuster, monthly",
+        "min": 200,
+        "max": 500,
+        "unit": "monthly",
+        "pitchLine": "\"Adjusters get hundreds of fire and water damage shots per loss. An assistant sorts them by room and item and drafts the photo log.\"",
+        "whyItWorks": "Photo logs eat adjusters' evenings, and the restoration owner's introduction carries trust."
+      },
+      {
+        "route": "Rebuild scope drafts for contractors",
+        "whoPays": "The general contractor, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"From the mitigation crew's tear-out notes, an assistant drafts the rebuild scope for the contractor to price and check.\"",
+        "whyItWorks": "It speeds the hand-off both trades depend on."
+      },
+      {
+        "route": "Leak report triage for property managers",
+        "whoPays": "The property manager, monthly",
+        "min": 200,
+        "max": 500,
+        "unit": "monthly",
+        "pitchLine": "\"Residents report water from the ceiling at night. An assistant tells them how to shut off the unit valve, flags real floods and calls the restoration crew.\"",
+        "whyItWorks": "Managers cut damage and dispatch time, and the restoration client gets the jobs."
+      },
+      {
+        "route": "Leak-call follow-up for plumbers",
+        "whoPays": "The plumbing company",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"The plumber who sends you water damage jobs loses repair quotes to slow callbacks. Follow-up texts set up for them in a week.\"",
+        "whyItWorks": "It's configuration, and the introduction comes from a trusted partner."
+      },
+      {
+        "route": "Contents inventory helper for pack-out partners",
+        "whoPays": "The contents cleaning company, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Photograph each box at pack-out and an assistant drafts the item list by room for the claim, for the crew to check.\"",
+        "whyItWorks": "Contents inventories are tedious and claim-critical, and both firms gain."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Flood call text-back",
+      "kind": "automation",
+      "oneTimeMin": 0,
+      "oneTimeMax": 300,
+      "monthlyMin": 99,
+      "monthlyMax": 199,
+      "pitchLine": "\"A missed restoration call gets a text asking whether the water is still running and whether the main is off, so the crew calls the active flood first.\"",
+      "whenAndWhatItTakes": "Day 30. Needs the business number forwarded and the wording approved."
+    },
+    {
+      "name": "Moisture reading log app",
+      "kind": "software",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 6000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"Techs log daily moisture readings by room and point on a phone, and the drying log for the claim builds itself.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their current drying log format and the meters they use."
+    },
+    {
+      "name": "Restoration review reply drafts",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1200,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"Each review gets a reply drafted in the owner's voice that mentions the water, fire or mold job, without any claim or policy details.\"",
+      "whenAndWhatItTakes": "Month 2, with review requests running. Needs ten past replies. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Job photo documentation by room",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4500,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"Every water damage shot tagged by room, date and stage, so the claim package is organised before the adjuster asks.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their documentation checklist."
+    },
+    {
+      "name": "Overnight water damage answering line",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 300,
+      "monthlyMax": 700,
+      "pitchLine": "\"It answers flood calls overnight, walks the caller through shutting off the water and power safety, takes photos and dispatches the on-call restoration crew.\"",
+      "whenAndWhatItTakes": "Month 3, before freeze season. Needs on-call rules and safety wording they approve. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Drying log narrative writer",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"From the daily moisture readings and tech notes, it drafts the job narrative the adjuster expects, for the owner to check before it goes out.\"",
+      "whenAndWhatItTakes": "Month 3. Needs a few past job files. Comes with the AI maintenance retainer; the owner reviews every word."
+    },
+    {
+      "name": "Equipment tracker by job",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Every dehumidifier, air mover and scrubber tracked by job and day, so nothing is forgotten at a finished house and every day is billed.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their equipment list."
+    },
+    {
+      "name": "Homeowner job portal",
+      "kind": "software",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"The homeowner sees the drying progress, the next visit and the documents sent to their insurer, and stops calling the office for updates.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the moisture log and photo documentation in place first."
+    },
+    {
+      "name": "Contents inventory by photo",
+      "kind": "ai",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Photograph each room's belongings at pack-out and it drafts the itemised contents list for the claim, for the crew to check.\"",
+      "whenAndWhatItTakes": "Month 4. Needs a few past inventories. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Q&A assistant for restoration customers",
+      "kind": "ai",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3500,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"It answers 'how long will the fans run' and 'what does the adjuster need' from the owner's own notes, and never says what a policy covers.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their FAQ notes. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Referral partner tracker",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3500,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Every plumber, agent and manager who refers restoration work, with jobs sent and thank-yous due, so no partner goes quiet unnoticed.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their referral list."
+    },
+    {
+      "name": "Job status texts to homeowners",
+      "kind": "automation",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Each stage, extraction done, drying in progress, ready for rebuild, sends the homeowner a text automatically.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their job stages."
+    },
+    {
+      "name": "Restoration dispatch board",
+      "kind": "software",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 12000,
+      "monthlyMin": 200,
+      "monthlyMax": 500,
+      "pitchLine": "\"New losses, daily drying checks and pack-outs on one board by crew and truck, so a storm week doesn't run off three phones.\"",
+      "whenAndWhatItTakes": "Month 6, at three or more crews."
+    },
+    {
+      "name": "Estimate line drafting from scope notes",
+      "kind": "ai",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 6000,
+      "monthlyMin": 200,
+      "monthlyMax": 500,
+      "pitchLine": "\"From the walkthrough notes, it drafts the mitigation estimate lines on the owner's template, for the estimator to check and adjust.\"",
+      "whenAndWhatItTakes": "Month 6. Needs past estimates and their template. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Receivables chaser for insurance-paid jobs",
+      "kind": "automation",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Unpaid restoration invoices trigger polite reminders to the homeowner and the right contact on schedule, so jobs don't sit unpaid for months.\"",
+      "whenAndWhatItTakes": "Month 6. Needs their open invoices and reminder wording."
+    },
+    {
+      "name": "Mold job clearance tracker",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3500,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Every mold remediation job with containment dates, removal, cleaning and the independent clearance result, in one record.\"",
+      "whenAndWhatItTakes": "Month 7, for firms doing mold work."
+    },
+    {
+      "name": "Freeze alert to past customers",
+      "kind": "automation",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"When a hard freeze is forecast for {City}, past customers get a text on protecting pipes and the restoration number if one bursts.\"",
+      "whenAndWhatItTakes": "Month 7. Needs the customer list and a weather feed."
+    },
+    {
+      "name": "Profit by loss type",
+      "kind": "software",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 6000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"See whether water, fire, mold or contents jobs make the company money once equipment days, labour and slow payments are counted.\"",
+      "whenAndWhatItTakes": "Month 8. Needs a season of jobs and payments."
+    },
+    {
+      "name": "Technician training library",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"The lead tech explains drying set-ups and containment on a phone, and it becomes a restoration how-to library for new hires.\"",
+      "whenAndWhatItTakes": "Month 8. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Restoration tech applicant screen",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"Applicants say whether they can take night flood calls, handle heavy equipment and work in fire-damaged homes, before anyone calls them.\"",
+      "whenAndWhatItTakes": "When they post a hiring note. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the moisture log for independents",
+      "whoPays": "Independent restoration companies, monthly",
+      "min": 59,
+      "max": 199,
+      "unit": "monthly",
+      "pitchLine": "\"Independent restorers compete with franchises that have corporate software. A simple moisture log and documentation app levels that.\"",
+      "whyItWorks": "Independents need claim-ready documentation and can't afford enterprise tools."
+    },
+    {
+      "route": "Independent restorers' association member kit",
+      "whoPays": "The restoration trade association",
+      "min": 2000,
+      "max": 8000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer member restoration companies a locally owned site template with a first 48 hours page and claim walkthrough.\"",
+      "whyItWorks": "Associations of independents want to help members compete with franchises."
+    },
+    {
+      "route": "Equipment rental and supply dealer locator",
+      "whoPays": "The restoration equipment distributor, annually",
+      "min": 4000,
+      "max": 15000,
+      "unit": "per-year",
+      "pitchLine": "\"A locator of independent restoration firms who buy drying equipment from you, so homeowners find a local crew.\"",
+      "whyItWorks": "Distributors want independent customers to survive franchise competition."
+    },
+    {
+      "route": "Insurance agency network after-loss pages",
+      "whoPays": "The agency network or cluster",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Every agency in your network needs an after-loss page for clients. I've written the restoration side already.\"",
+      "whyItWorks": "Agency networks share marketing budgets and need content clients actually use."
+    },
+    {
+      "route": "Restoration template for agencies",
+      "whoPays": "The agency, per restoration client",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "pitchLine": "\"License my restoration template with the first 48 hours page and a compliant claim walkthrough already written.\"",
+      "whyItWorks": "Claim wording is risky to write from scratch, so agencies pay for a vetted version."
+    },
+    {
+      "route": "Commercial property pre-loss plans",
+      "whoPays": "Commercial property managers, per building",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"A pre-loss plan page per building with shut-off locations, contacts and the restoration crew on call.\"",
+      "whyItWorks": "Managers want a plan before the sprinkler bursts, and the restoration client is on it."
+    },
+    {
+      "route": "City emergency management flood pages",
+      "whoPays": "The county emergency management office",
+      "min": 3000,
+      "max": 9000,
+      "unit": "one-time",
+      "pitchLine": "\"After a flood, residents need plain steps on drying out safely and checking contractors. A public page answers it.\"",
+      "whyItWorks": "Emergency offices have outreach budgets and need practical recovery content."
+    },
+    {
+      "route": "Plumbing company partner network",
+      "whoPays": "Regional plumbing companies",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Plumbing companies across the region want a trusted restoration partner page for flooded customers. Build once, sell to each.\"",
+      "whyItWorks": "Plumbers face water damage weekly and want a clean hand-off."
+    },
+    {
+      "route": "Storm-season kit for restorers in other metros",
+      "whoPays": "Restoration companies outside your metro, monthly",
+      "min": 59,
+      "max": 149,
+      "unit": "monthly",
+      "pitchLine": "\"A switch-on storm banner, freeze alert text and flood page any independent restorer can turn on the week weather hits.\"",
+      "whyItWorks": "Every restorer needs it at once, so it sells as a kit."
+    },
+    {
+      "route": "Mitigation-to-rebuild contractor portals",
+      "whoPays": "Restoration companies with rebuild divisions",
+      "min": 4000,
+      "max": 12000,
+      "unit": "one-time",
+      "pitchLine": "\"A portal that carries each restoration job from mitigation to rebuild with the homeowner, the adjuster and the crew in one place.\"",
+      "whyItWorks": "Full-service restorers lose jobs at the hand-off and pay to fix it."
+    },
+    {
+      "route": "Next metro's independent restorer",
+      "whoPays": "A restoration company in a new metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I work with one independent restoration crew per metro. {City}'s is signed; the next city's best locally owned restorer is open.\"",
+      "whyItWorks": "Independents value exclusivity against franchises, and the demo carries over."
+    },
+    {
+      "route": "Mold assessor and testing company sites",
+      "whoPays": "The independent mold assessor",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Independent mold assessors who run clearance testing need sites that explain their role separate from remediation.\"",
+      "whyItWorks": "Assessors depend on restorers for referrals and rarely have good sites."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Restoration site build plus care plan, one contract",
+      "min": 2500,
+      "max": 4500,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"Your restoration site and care plan on one contract, so a storm banner or new crew shot is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Review requests at job close-out",
+      "min": 99,
+      "max": 249,
+      "unit": "monthly",
+      "trigger": "The first water damage job booked through the site.",
+      "line": "\"That family's basement is dry. Let's ask every restoration customer for a review when the fans leave.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "Plumber and agent referral kit",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "trigger": "A plumber or agent sends a job through the partner page.",
+      "line": "\"A plumber just referred through the site. Let's put a restoration card in every partner's truck.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Moisture reading log app",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "trigger": "They mention an adjuster asking for drying logs again.",
+      "line": "\"The adjuster wants drying logs again. Let's have the techs build them on the phone.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Overnight water damage answering line",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "trigger": "A freeze or storm brings overnight calls that went to voicemail.",
+      "line": "\"Those overnight water damage calls went to a franchise. This answers them and dispatches your restoration crew.\""
+    },
+    {
+      "rung": 6,
+      "day": 150,
+      "offer": "Licence-checked ads for water damage",
+      "min": 600,
+      "max": 1500,
+      "unit": "monthly",
+      "trigger": "Steady new reviews and current licence and insurance documents.",
+      "line": "\"Your restoration reviews are strong enough for the licence-checked ads. Let's catch the next freeze's searches.\""
+    },
+    {
+      "rung": 7,
+      "day": 240,
+      "offer": "Restoration dispatch board",
+      "min": 4000,
+      "max": 12000,
+      "unit": "one-time",
+      "trigger": "They add a third crew or run several losses after one storm.",
+      "line": "\"Three crews and a storm week need one restoration board. Let's build it before the next one.\""
+    }
+  ]
+}
