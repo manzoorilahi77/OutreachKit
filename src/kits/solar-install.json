@@ -1,0 +1,864 @@
+{
+  "schemaVersion": 1,
+  "category": "Solar install",
+  "slug": "solar-install",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Ext family batch. Regulated, high-churn trade. Copy never states savings, incentive amounts, system sizes or panel, inverter, battery or financing brands; incentives change, so pages explain them in general terms only. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Solar estimates explained without hype",
+      "contains": "How a production estimate is made, uploading a utility bill, shading and roof direction, net metering rules in plain words, and what can change the number",
+      "why": "Homeowners have been promised the moon at the door. A page that shows how the estimate is built, with no promises, is what earns the consult."
+    },
+    {
+      "section": "Roof readiness before solar",
+      "contains": "Roof age and condition, shading from trees, re-roofing before install, panel removal and reinstall later, and the structural check",
+      "why": "Putting panels on a tired roof is the expensive mistake buyers fear. Answering it up front shows the installer is looking out for the house."
+    },
+    {
+      "section": "Battery backup and outages",
+      "contains": "Whole-home versus essential-loads backup, what solar does during a grid outage without a battery, battery versus generator, and what a backup panel is",
+      "why": "An outage is often what starts the solar conversation. Clear answers on backup sell the battery honestly."
+    },
+    {
+      "section": "Permits, utility approval and solar timeline",
+      "contains": "Site survey, design, permit, install day, inspection and the utility's permission to switch on, with what the homeowner does at each step",
+      "why": "The wait between signing and switching on is where buyers lose faith. A step-by-step timeline keeps the deal from cancelling."
+    },
+    {
+      "section": "Monitoring and service after install",
+      "contains": "Production monitoring, what a dip means, panel cleaning, inverter fault codes, and service for systems whose original seller has disappeared",
+      "why": "Solar sellers come and go, and orphaned owners search for service. A service page wins those jobs and proves staying power."
+    },
+    {
+      "section": "Solar door-knocker red flags",
+      "contains": "Pressure tactics, savings promises, contract terms to read twice, checking a licence on the state registry, and the right to cancel",
+      "why": "Fear of being scammed is the biggest reason solar buyers delay. A local installer that teaches the red flags earns trust fast."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C42",
+      "siteType": "local-conversion",
+      "name": "Local Sun",
+      "heroLayout": "split-photo",
+      "mood": [
+        "clear",
+        "local",
+        "honest"
+      ],
+      "bestFor": "Small local solar installers who win against national sellers by being nearby and answering the phone",
+      "pairsWithTier": "starter",
+      "headlineSample": "Local solar panel installation in {City}",
+      "whyItFits": "Riso blue and a geometric display feel independent and plain-spoken, a clear contrast to the glossy national solar brands."
+    },
+    {
+      "id": "b",
+      "themeId": "C8",
+      "siteType": "editorial-trust",
+      "name": "Straight Answers",
+      "heroLayout": "type-led",
+      "mood": [
+        "reassuring",
+        "credible",
+        "patient"
+      ],
+      "bestFor": "Licensed solar contractors who sell through education, long consults and service after install",
+      "pairsWithTier": "standard",
+      "headlineSample": "Straight answers about solar for {City} homeowners",
+      "whyItFits": "The family's own combo, and the best fit here: evergreen and an old-style serif read like an insurer, which is the trust a regulated, long-contract purchase needs."
+    },
+    {
+      "id": "c",
+      "themeId": "C14",
+      "siteType": "premium-brand",
+      "name": "Home Energy",
+      "heroLayout": "full-bleed-photo",
+      "mood": [
+        "technical",
+        "calm",
+        "resilient"
+      ],
+      "bestFor": "Installers selling solar with battery backup, monitoring and whole-home energy design",
+      "pairsWithTier": "premium",
+      "headlineSample": "Solar and battery backup designed for {City} homes",
+      "whyItFits": "Deep navy with a cyan accent and a mono face feel like an energy dashboard, suited to buyers who want to see the system think."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your listing shows solar installs and good reviews but no website. People tired of solar door-knockers want to check a local installer before they let anyone else in.",
+      "hook": "Open their Maps listing and confirm there's no Website button. Screenshot it for when they reply.",
+      "linkLine": "A local solar page for that button: {demo-link}"
+    },
+    {
+      "angle": "Facebook-only link",
+      "line": "Your website link opens Facebook. Someone weighing solar for months wants plain answers about roofs, batteries and timelines, and a feed can't hold that.",
+      "hook": "Tap their Website link and confirm it's Facebook. Note the newest solar install posted.",
+      "linkLine": "A solar page built for that long decision: {demo-link}"
+    },
+    {
+      "angle": "Dated or dealer site",
+      "line": "Your solar site still talks about incentives that have changed and has a stock hero shot. In a trade full of fly-by-night sellers, a dated page raises the wrong question.",
+      "hook": "Open the site and look for outdated incentive claims, stock imagery or an old copyright year. Note which.",
+      "linkLine": "Same solar company, current and honest: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "On my phone, your solar consult form cut off after the second field. Most homeowners research solar panels on their phones in the evening.",
+      "hook": "Only if they have a site. Load it on your phone and note what breaks. Screenshot it for when they reply.",
+      "linkLine": "Your solar site rebuilt for a phone: {demo-link}"
+    },
+    {
+      "angle": "No bill upload",
+      "line": "There's no way to send you a utility bill before the consult. People serious about solar would rather upload it at night than read it out on the phone.",
+      "hook": "Check the listing and any site for a form or upload. If none, the angle holds.",
+      "linkLine": "A solar consult request with a bill upload: {demo-link}"
+    },
+    {
+      "angle": "Clean arrays in the feed",
+      "line": "Your solar installs on Instagram are tidy work, neat rows and hidden conduit. They're scattered in the feed when a gallery by roof type would show the craftsmanship.",
+      "hook": "Pick two installs you could describe by roof type or layout. Mention one if they reply.",
+      "linkLine": "Your solar installs, sorted by roof type: {demo-link}"
+    },
+    {
+      "angle": "Reviews about honesty",
+      "line": "Your reviews say you told people when solar didn't make sense for their roof. That honesty is rare in this trade, and right now only people already on Google see it.",
+      "hook": "Read their reviews and copy one phrase about honesty or no pressure. Quote it back.",
+      "linkLine": "Those solar reviews where buyers decide: {demo-link}"
+    },
+    {
+      "angle": "Outage season",
+      "line": "After a long outage, people who sat in the dark start asking about solar with battery backup. A plain page on how backup works catches them while it's fresh.",
+      "hook": "Use within weeks of a reported local outage or ahead of storm season. Name the event if they reply.",
+      "linkLine": "A solar and backup page ready for outage season: {demo-link}"
+    },
+    {
+      "angle": "Orphaned system owners",
+      "line": "Plenty of homeowners bought solar from a company that has since vanished. If you service other installers' systems, those owners search every week and can't find you.",
+      "hook": "Only if they mention service or repairs on systems they didn't install. Note the post.",
+      "linkLine": "A solar service page for orphaned systems: {demo-link}"
+    },
+    {
+      "angle": "Hiring installers",
+      "line": "Your hiring post for solar installers will send applicants to look you up. A page with your crews, safety record and installs says this isn't another short-lived outfit.",
+      "hook": "Only if they posted a hiring note. Note the date.",
+      "linkLine": "A solar company page with careers: {demo-link}"
+    },
+    {
+      "angle": "Service area",
+      "line": "You install solar across {City} and nearby towns, but nothing tells a homeowner in {Neighborhood} you're local. 'Solar installer' plus the town is the search.",
+      "hook": "Find towns they mention in posts or reviews. Use the furthest.",
+      "linkLine": "A solar page for every town you serve: {demo-link}"
+    },
+    {
+      "angle": "Ownership options",
+      "line": "If you offer cash, loan and lease options, a page that compares who owns the solar panels in each saves you the same explanation on every consult.",
+      "hook": "Only if they mention financing or ownership options anywhere. Never name a lender.",
+      "linkLine": "Solar ownership options explained plainly: {demo-link}"
+    },
+    {
+      "angle": "Licence and certification",
+      "line": "Solar is licensed electrical and roofing work, and your licence is on the state registry. Showing it, with your insurance and crew certifications, separates you from door-to-door sellers.",
+      "hook": "Check the state contractor registry. Note that a record exists; never quote a number you didn't see.",
+      "linkLine": "Licence and certifications on one solar page: {demo-link}"
+    },
+    {
+      "angle": "Referral-driven installer",
+      "line": "Sounds like a lot of your solar work comes from neighbours who've seen a quiet, tidy install. Those referrals still research the installer before booking a consult.",
+      "hook": "Look for reviews like 'neighbour recommended' or 'saw their panels'. Quote it back.",
+      "linkLine": "Where a solar referral would land: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "That {specific recent job} you posted is a clean solar array, straight rows and tidy wiring. A job like that should be the first thing a careful buyer sees.",
+      "hook": "Pick their newest install and name it: roof type, layout, battery if any, and the town if tagged.",
+      "linkLine": "That solar install, front and centre: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, that {specific recent job} you posted is a clean solar install, tidy rows and wiring.\n\nI looked for local solar installers in {City} and found {Business Name} on social, but no site with plain answers on roofs, batteries and timelines, or a way to send a utility bill. I put together a sample solar site to see how it would look, with marked placeholders where your photos would go.\n\nWould you like to see it?",
+    "dm2": "{Owner}, following up in case my message got lost. Here's the sample solar site for {Business Name}: {demo-link}\n\nIt explains how an estimate is built without promising savings, covers roof readiness and battery backup, shows the permit and utility timeline, and has a consult request with a bill upload. If it's not for you, say so and I'll leave you be.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for local solar installers in {City}. I messaged a couple of days ago, did it reach you?\"\n\nIF NO:\n\"No problem. Short version: I built a sample solar site for {Business Name} that answers roof, battery and timeline questions plainly and takes a utility bill upload, with marked placeholders where your photos would go. Can I email you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"I know solar is crowded with national sellers. This isn't a lead program, it's a site you own that makes you look like the local installer who'll still be here. The build runs {Build Range}, then {Care Range} a month for hosting and keeping incentive notes current. For you I'd quote about {Build Price}, a small slice of one system.\"\n\"Could I walk you through it for fifteen minutes this week?\"\n\nCLOSE:\n\"I'll send a scope and a deposit invoice. We start when it clears, and you review every claim before it goes live.\"",
+    "objections": [
+      {
+        "objection": "I buy solar leads, I don't need a site.",
+        "handler": "\"Bought leads get called by several installers in an hour. A buyer who finds your own site and your reviews has already picked you. It also makes the leads you buy close better.\""
+      },
+      {
+        "objection": "The national solar companies outspend me on marketing.",
+        "handler": "\"They do, and plenty of buyers distrust them for it. A local installer with a real address, honest answers and service after install is what those buyers search for.\""
+      },
+      {
+        "objection": "Incentives keep changing, a site goes stale.",
+        "handler": "\"That's why the care plan exists. The incentive notes are written generally and I update them when the rules change, so the site never promises something that's gone.\""
+      },
+      {
+        "objection": "Solar is all referrals for me.",
+        "handler": "\"Referrals are the best solar leads. Every one of them still checks your licence and reviews before the consult. The site is where that check lands.\""
+      },
+      {
+        "objection": "I'm worried about compliance with what we say online.",
+        "handler": "\"Good. The site makes no savings promises and names no incentive amounts. You approve every page before launch.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}, for the estimate explainer, roof and battery pages, timeline and bill upload. A sliver of one install.\""
+      }
+    ],
+    "email": {
+      "subject": "Local solar site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for local solar installers around {City}. {Business Name} has clean installs on its social pages, but no site where a careful buyer can get plain answers before letting anyone in.\n\nI built a sample first: how a solar estimate is made without promises, roof readiness, battery backup, the permit and utility timeline, service for orphaned systems and a consult request with a bill upload, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and keeping incentive notes current. If not, it comes down at the end of the month.\n\nWorth fifteen minutes on the phone this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, {Your Name} here. I build websites for local solar installers in {City} and made a sample for {Business Name} with plain roof and battery answers. I'll email the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm taking the {Business Name} solar demo down on Friday.\n\nWould you like it kept up? One word is fine.",
+    "nurture": "Hi {Owner}, outage and storm season is coming and backup questions always follow. Thought of you.\n\nThe solar site is still here, same price. {demo-link} if you'd like another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to a small slice of one installed system, never to a lead-buy budget.",
+      "Never write savings figures, incentive amounts or system sizes on the site; the care plan keeps incentive notes general and current.",
+      "Price the consult request with bill upload as its own line; it's what serious buyers use.",
+      "The service page for orphaned systems is a separate line and often the fastest payback.",
+      "Battery and backup content only for installers who actually install storage.",
+      "Every page goes past the owner for compliance before launch; build the review time into the quote."
+    ],
+    "lineItems": [
+      {
+        "item": "Consult request with utility bill upload",
+        "min": 500,
+        "max": 1200,
+        "unit": "one-time",
+        "description": "Max with roof photo upload, outage and backup questions, and secure file handling.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Estimate explainer and red-flags pages",
+        "min": 400,
+        "max": 900,
+        "unit": "one-time",
+        "description": "Max with simple diagrams of shading, roof direction and net metering, reviewed by the owner.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Battery backup page",
+        "min": 300,
+        "max": 800,
+        "unit": "per-page",
+        "description": "Max with whole-home versus essential-loads diagrams and a backup questionnaire.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Orphaned system service page",
+        "min": 300,
+        "max": 800,
+        "unit": "per-page",
+        "description": "Max with a service request form that captures system details and monitoring access.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Permit and utility timeline page",
+        "min": 250,
+        "max": 600,
+        "unit": "per-page",
+        "description": "Max when it covers several local utilities and permit offices.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Install gallery by roof type",
+        "min": 300,
+        "max": 800,
+        "unit": "one-time",
+        "description": "Max with filters for roof type, battery and ground mounts, with install notes.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Town service-area page (each)",
+        "min": 250,
+        "max": 500,
+        "unit": "per-page",
+        "description": "Max when each town page names its utility and permit office and shows local installs.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Drone and install-day solar shoot",
+      "min": 700,
+      "max": 1600,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"One install day filmed from the ground and the air, racking, panels, the clean finished array, gives you the solar gallery and proof the crew is yours, not subcontracted.\"",
+      "when": "Month 2, on their next tidy install."
+    },
+    {
+      "name": "Google profile posts for each solar install",
+      "min": 250,
+      "max": 450,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Every switched-on system goes on your Google profile with the town and roof type, so the map shows a local solar installer that's actually installing.\"",
+      "when": "Day 30, once the site is live."
+    },
+    {
+      "name": "Review requests at permission to operate",
+      "min": 99,
+      "max": 249,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"The day the utility lets the system switch on, the homeowner gets a text asking for a review. That's when the long wait turns into relief.\"",
+      "when": "Day 30. The easiest second sale."
+    },
+    {
+      "name": "Homeowner solar education evenings",
+      "min": 500,
+      "max": 1200,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A library or community hall evening on 'how to buy solar without getting burned', with a landing page and sign-up, puts your solar company in front of the careful buyers.\"",
+      "when": "Month 3, before spring."
+    },
+    {
+      "name": "Yard sign and truck wrap for installs",
+      "min": 300,
+      "max": 900,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A 'solar installed by your local crew' yard sign with the site on it sits beside a new array for weeks. The neighbours read it.\"",
+      "when": "Right after launch."
+    },
+    {
+      "name": "Neighbour letters after each switch-on",
+      "min": 150,
+      "max": 400,
+      "unit": "per-job",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A short letter to the street after a solar install, with the owner's permission, explaining what was done and inviting questions.\"",
+      "when": "Month 2."
+    },
+    {
+      "name": "Outage-season backup campaign",
+      "min": 400,
+      "max": 900,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Before storm season, a battery backup page and a note to past solar customers about adding storage.\"",
+      "when": "Pitch in late spring, run before storm season."
+    },
+    {
+      "name": "Incentive notes upkeep",
+      "min": 100,
+      "max": 250,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"When solar incentive rules change, I update the site's plain-language notes within the week, after you approve them, so nothing promises an incentive that's gone.\"",
+      "when": "From launch, alongside the care plan."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Roofers who re-roof before solar",
+        "whoPays": "The roofing company",
+        "min": 2500,
+        "max": 4500,
+        "unit": "one-time",
+        "pitchLine": "\"Half-worn roofs get replaced before panels go up. The roofer you send those to needs a site, and they send solar-ready roofs back.\"",
+        "whyItWorks": "Roof-before-solar is a natural handoff."
+      },
+      {
+        "route": "Electricians doing panel upgrades",
+        "whoPays": "The electrical contractor",
+        "min": 2000,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"Many solar jobs need a main electrical panel upgrade first. The electrician you call needs a site with an upgrade request form.\"",
+        "whyItWorks": "Electricians are a large, site-buying trade with the same customers."
+      },
+      {
+        "route": "Tree services that clear shading",
+        "whoPays": "The tree service, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"Shade trees kill solar production. The tree crew you send to trim them needs a site, and they spot roofs ready for solar.\"",
+        "whyItWorks": "Tree work often precedes solar."
+      },
+      {
+        "route": "Home energy auditors",
+        "whoPays": "The energy auditor",
+        "min": 1500,
+        "max": 3000,
+        "unit": "one-time",
+        "pitchLine": "\"Energy auditors recommend sealing and insulation before solar. They need a booking site, and the audit is the solar installer's best lead.\"",
+        "whyItWorks": "Audits come before efficient solar sizing."
+      },
+      {
+        "route": "Pool equipment and heat pump installers",
+        "whoPays": "The pool or HVAC company",
+        "min": 1500,
+        "max": 3500,
+        "unit": "one-time",
+        "pitchLine": "\"Pool pumps and heat pumps change a home's usage, and their installers meet solar prospects every week.\"",
+        "whyItWorks": "Big electrical loads drive solar interest."
+      },
+      {
+        "route": "Solar panel cleaners",
+        "whoPays": "The panel cleaning company",
+        "min": 1000,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"Panel cleaners visit solar homes every year. They need a booking site, and they find faulty systems for your service page.\"",
+        "whyItWorks": "Cleaning visits surface repair work."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Roofer's solar-ready roof check",
+        "whoPays": "The roofing company",
+        "min": 1200,
+        "max": 3000,
+        "unit": "one-time",
+        "pitchLine": "\"Roofers get a tool that drafts a roof condition summary from photos, flagging roofs that should be replaced before solar panels go on.\"",
+        "whyItWorks": "Roofers close more re-roofs; solar gets ready roofs."
+      },
+      {
+        "route": "Electrician's panel upgrade quote assistant",
+        "whoPays": "The electrical contractor",
+        "min": 1000,
+        "max": 2500,
+        "unit": "one-time",
+        "pitchLine": "\"Electricians get a tool that drafts a panel upgrade quote from a photo of the existing panel and the planned solar and battery.\"",
+        "whyItWorks": "Faster electrical quotes speed solar starts."
+      },
+      {
+        "route": "Energy auditor's report summariser",
+        "whoPays": "The energy auditor, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"Dense audit reports become a one-page plain summary, with solar readiness noted where it applies.\"",
+        "whyItWorks": "Clear audits book more upgrades."
+      },
+      {
+        "route": "Panel cleaner's production dip flagger",
+        "whoPays": "The panel cleaning company, monthly",
+        "min": 75,
+        "max": 200,
+        "unit": "monthly",
+        "pitchLine": "\"With owner permission, cleaners see monitoring data and an assistant flags solar systems whose dip isn't dirt, for the installer to check.\"",
+        "whyItWorks": "Turns cleaning visits into service leads."
+      },
+      {
+        "route": "HOA solar application checker",
+        "whoPays": "The HOA management company, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"An assistant checks each solar application against the HOA's placement and appearance rules before the board meets.\"",
+        "whyItWorks": "Applications stall solar jobs; managers pay to speed them."
+      },
+      {
+        "route": "Tree service's shading quote tool",
+        "whoPays": "The tree service",
+        "min": 1000,
+        "max": 2500,
+        "unit": "one-time",
+        "pitchLine": "\"Tree crews get a tool that drafts a trimming quote from yard photos, with trees shading a planned solar roof marked first.\"",
+        "whyItWorks": "Faster tree quotes, solar-ready roofs."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Missed-call text-back for solar enquiries",
+      "kind": "automation",
+      "oneTimeMin": 0,
+      "oneTimeMax": 300,
+      "monthlyMin": 99,
+      "monthlyMax": 199,
+      "pitchLine": "\"On a roof racking panels when someone calls? They get a text with the bill upload link and a note that a local solar installer will call back today.\"",
+      "whenAndWhatItTakes": "Day 30. Needs their number forwarded and approved wording."
+    },
+    {
+      "name": "Signed-to-switched-on status texts",
+      "kind": "automation",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 75,
+      "monthlyMax": 175,
+      "pitchLine": "\"Solar customers get a text at each step, design done, permit filed, install booked, inspection passed, utility approval, so the long wait doesn't turn into a cancellation.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their project stages and who updates them."
+    },
+    {
+      "name": "Solar consult scheduler with prep checklist",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 50,
+      "monthlyMax": 125,
+      "pitchLine": "\"Homeowners pick a solar consult slot online and get a prep checklist: a year of bills, roof age, and both decision-makers at the table.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their consult calendar and designer availability."
+    },
+    {
+      "name": "Solar review reply drafts",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 99,
+      "monthlyMax": 199,
+      "pitchLine": "\"When an owner writes that the install crew was spotless and the switch-on painless, a reply mentioning their roof and town is drafted, with no savings claims, for your approval.\"",
+      "whenAndWhatItTakes": "Month 2, with review requests. Needs a dozen past replies. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Utility bill reader for consult prep",
+      "kind": "ai",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Uploaded utility bills are read and summarised into usage by month and rate plan, so the solar designer starts the consult prepared.\"",
+      "whenAndWhatItTakes": "Month 3, once the bill upload is live. Needs sample bills from their utilities. Comes with the AI maintenance retainer; it never states savings to the customer."
+    },
+    {
+      "name": "Solar project pipeline board",
+      "kind": "software",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 12000,
+      "monthlyMin": 200,
+      "monthlyMax": 500,
+      "pitchLine": "\"Every solar deal from consult through design, permit, install, inspection and utility approval on one board, with stuck jobs flagged.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their stages and permit offices."
+    },
+    {
+      "name": "Permit packet assembler",
+      "kind": "software",
+      "oneTimeMin": 2500,
+      "oneTimeMax": 7000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"Pick the town and the solar design, and it assembles the permit packet with the right forms, site plan and spec sheets for that office.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their common permit offices and sample approved packets."
+    },
+    {
+      "name": "Solar FAQ assistant",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"It answers 'what happens in an outage' and 'should I re-roof first' at night, only from your approved solar answers, and never quotes savings or incentives.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their approved answer library. Comes with the AI maintenance retainer, which includes reviewing answers when rules change."
+    },
+    {
+      "name": "Orphaned system service intake",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Owners of systems from vanished solar companies enter their equipment and symptoms, attach monitoring access, and book a paid diagnostic visit.\"",
+      "whenAndWhatItTakes": "Month 3, for installers who service other systems. Needs their diagnostic fee."
+    },
+    {
+      "name": "Shade and roof layout draft",
+      "kind": "ai",
+      "oneTimeMin": 2500,
+      "oneTimeMax": 7000,
+      "monthlyMin": 200,
+      "monthlyMax": 500,
+      "pitchLine": "\"From an address, it drafts usable roof planes and likely shading for the solar designer to check before the site survey.\"",
+      "whenAndWhatItTakes": "Month 5. Needs past designs to test against. Comes with the AI maintenance retainer; a designer approves every layout."
+    },
+    {
+      "name": "Monitoring alert watcher",
+      "kind": "software",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 6000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"With owner permission, every solar system you installed is watched for production drops and faults, and the service team hears before the customer calls.\"",
+      "whenAndWhatItTakes": "Month 5. Needs monitoring access for installed systems."
+    },
+    {
+      "name": "Proposal builder with no-promise language",
+      "kind": "software",
+      "oneTimeMin": 2500,
+      "oneTimeMax": 7000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"Clean solar proposals with equipment, timeline and ownership options laid out plainly, with estimate wording the owner has approved once.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their design outputs and approved wording."
+    },
+    {
+      "name": "Utility approval follow-up reminders",
+      "kind": "automation",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1200,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"When a solar interconnection application sits too long, the office gets a reminder to chase the utility, before the homeowner starts asking.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the pipeline board running."
+    },
+    {
+      "name": "Consult call notes to proposal draft",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"The consult is recorded with permission, and a draft solar proposal summary and follow-up email appear for the rep to edit.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their proposal template. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Crew install checklist with photo proof",
+      "kind": "software",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 18000,
+      "monthlyMin": 250,
+      "monthlyMax": 700,
+      "pitchLine": "\"Installers check off flashing, racking torque, wire management and labels with a shot each, so every solar install passes inspection first time.\"",
+      "whenAndWhatItTakes": "Month 6, with two crews. Needs their install standard and inspector notes."
+    },
+    {
+      "name": "Battery add-on outreach to past customers",
+      "kind": "automation",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 50,
+      "monthlyMax": 125,
+      "pitchLine": "\"Past solar customers without storage get a note before storm season explaining battery backup and offering a consult.\"",
+      "whenAndWhatItTakes": "Month 6. Needs a customer list marked by storage."
+    },
+    {
+      "name": "Job costing by solar system",
+      "kind": "software",
+      "oneTimeMin": 2500,
+      "oneTimeMax": 7000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"See margin per solar job once equipment, permits, crew days, electrical upgrades and callbacks are counted.\"",
+      "whenAndWhatItTakes": "Month 6. Needs a season of job invoices."
+    },
+    {
+      "name": "Incentive rule watcher for staff",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"It watches the solar incentive and net metering sources you choose and drafts a staff note when something changes, for the owner to verify.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the sources they trust. Comes with the AI maintenance retainer; staff verify every change."
+    },
+    {
+      "name": "Solar town page writer",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 200,
+      "monthlyMax": 450,
+      "pitchLine": "\"A new solar town page each month, naming the utility and permit office and showing local installs, drafted and approved by you.\"",
+      "whenAndWhatItTakes": "Month 3. Needs job notes and approval. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Solar installer applicant screener",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"Applicants say whether they've racked panels, work at heights with fall protection and hold electrical credentials, before you call.\"",
+      "whenAndWhatItTakes": "When they post a hiring note. Needs their must-haves. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the signed-to-switched-on status texts",
+      "whoPays": "Solar installers, monthly",
+      "min": 49,
+      "max": 199,
+      "unit": "monthly",
+      "pitchLine": "\"I built status texts that stop solar cancellations during the permit wait for one installer. Every local solar company loses deals in that gap.\"",
+      "whyItWorks": "A shared, painful problem with a simple fix."
+    },
+    {
+      "route": "Installer locator for a solar distributor",
+      "whoPays": "The distributor, annually",
+      "min": 5000,
+      "max": 25000,
+      "unit": "per-year",
+      "pitchLine": "\"Homeowners ask your branch who installs locally. A vetted solar installer map answers that and keeps installers ordering from you.\"",
+      "whyItWorks": "Distributors compete for installer loyalty."
+    },
+    {
+      "route": "Certified installer program for an equipment maker",
+      "whoPays": "The solar equipment manufacturer",
+      "min": 8000,
+      "max": 30000,
+      "unit": "one-time",
+      "pitchLine": "\"Your certified solar installers need warranty registration, service routing and a locator. I've built that workflow for an installer.\"",
+      "whyItWorks": "Manufacturers fund installer programs and need service coverage for orphaned systems."
+    },
+    {
+      "route": "State solar industry association member kit",
+      "whoPays": "The association",
+      "min": 2000,
+      "max": 8000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer member solar companies a no-promise template with red-flag and timeline pages, which supports the association's consumer-protection work.\"",
+      "whyItWorks": "Associations fight bad actors and want members to look trustworthy."
+    },
+    {
+      "route": "Solar template for agencies",
+      "whoPays": "The agency, per solar client",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "pitchLine": "\"Agencies with solar clients need compliant pages fast. License my solar template with no-promise wording built in.\"",
+      "whyItWorks": "Compliance risk makes a vetted template valuable."
+    },
+    {
+      "route": "Orphaned system service network",
+      "whoPays": "Service companies, monthly",
+      "min": 49,
+      "max": 149,
+      "unit": "monthly",
+      "pitchLine": "\"Owners of solar systems from vanished companies search for help. A shared intake that routes them to vetted local service techs pays each tech monthly.\"",
+      "whyItWorks": "Orphaned system owners have nowhere obvious to turn."
+    },
+    {
+      "route": "Credit union solar guide pages",
+      "whoPays": "The credit union",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Credit unions offering solar loans want members to buy from reputable local installers. A plain buying guide with a vetted solar installer list does that.\"",
+      "whyItWorks": "Lenders reduce risk when members buy from good installers."
+    },
+    {
+      "route": "Municipal or co-op solar program portal",
+      "whoPays": "The city, utility co-op or program administrator",
+      "min": 5000,
+      "max": 20000,
+      "unit": "one-time",
+      "pitchLine": "\"Group-buy and community solar programs need a sign-up portal, a plain FAQ and installer routing. The solar client knows the process.\"",
+      "whyItWorks": "Programs have budgets and need trustworthy installers."
+    },
+    {
+      "route": "Home builder solar-ready option pages",
+      "whoPays": "The home builder",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"New-home buyers choose solar or solar-ready options online, and selections route to one local solar installer.\"",
+      "whyItWorks": "Builders add options revenue; the installer becomes default."
+    },
+    {
+      "route": "Storm-season battery campaign kit for installers elsewhere",
+      "whoPays": "Solar installers in other metros",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "pitchLine": "\"The outage-season backup page and past-customer notes, packaged for solar installers in any storm region.\"",
+      "whyItWorks": "Same season, same message, many buyers."
+    },
+    {
+      "route": "Exclusive local solar installer per metro",
+      "whoPays": "A solar company in a new metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I take one local solar installer per metro. {City} has one; the most trusted independent in the next metro gets the demo.\"",
+      "whyItWorks": "Exclusivity matters in a crowded trade."
+    },
+    {
+      "route": "Rescue solar sites left by lead agencies",
+      "whoPays": "The stranded solar installer",
+      "min": 1500,
+      "max": 4500,
+      "unit": "one-time",
+      "pitchLine": "\"Solar installers who leave a lead agency often lose the site with it. I rebuild one they own, compliant and honest.\"",
+      "whyItWorks": "Owners burned by rented sites buy ownership."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Solar site build plus care plan, one contract",
+      "min": 2500,
+      "max": 4500,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The solar site and care plan go on one contract, so when incentive rules change the page changes too.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Review requests at permission to operate",
+      "min": 99,
+      "max": 249,
+      "unit": "monthly",
+      "trigger": "The first system booked through the site gets utility approval.",
+      "line": "\"Your first site-booked solar system just switched on. Let's ask every owner on that day.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "Signed-to-switched-on status texts",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "trigger": "They mention a cancellation or a customer chasing updates during the permit wait.",
+      "line": "\"That cancellation came from silence during the wait. Status texts at every solar step fix it.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Drone and install-day solar shoot",
+      "min": 700,
+      "max": 1600,
+      "unit": "per-shoot",
+      "trigger": "The solar gallery still has marked placeholders, or a showpiece install is booked.",
+      "line": "\"Let's film your next solar install from the air and fill the gallery with your own crew.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Utility bill reader for consult prep",
+      "min": 2000,
+      "max": 5000,
+      "unit": "one-time",
+      "trigger": "Ninety days of bill uploads pile up before consults.",
+      "line": "\"Your designers read every uploaded bill by hand. This summarises them before the consult.\""
+    },
+    {
+      "rung": 6,
+      "day": 150,
+      "offer": "Outage-season backup campaign",
+      "min": 400,
+      "max": 900,
+      "unit": "one-time",
+      "trigger": "A local outage is reported, or storm season is weeks away.",
+      "line": "\"Past solar customers without batteries are thinking about backup now. Let's talk to them first.\""
+    },
+    {
+      "rung": 7,
+      "day": 180,
+      "offer": "Solar project pipeline board",
+      "min": 4000,
+      "max": 12000,
+      "unit": "one-time",
+      "trigger": "They pass the number of active solar jobs one office manager can track by hand.",
+      "line": "\"Too many solar jobs are waiting on permits and utilities to track in a spreadsheet. One board shows what's stuck.\""
+    }
+  ]
+}

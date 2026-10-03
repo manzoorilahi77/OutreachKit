@@ -1,0 +1,864 @@
+{
+  "schemaVersion": 1,
+  "category": "Exterior painting",
+  "slug": "exterior-painting",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Ext family batch. One-crew painters with a truck magnet; prep, colour and winter cabinet work carry the kit. No paint brands named. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "House painting prep, step by step",
+      "contains": "Washing, scraping, sanding, caulking gaps, priming bare wood, masking windows and plants, and the prep a cheap painting bid skips",
+      "why": "Two painting quotes for the same house differ mostly in prep. Showing the steps is how a painter explains the higher number."
+    },
+    {
+      "section": "Exterior colour consultation",
+      "contains": "Sample boards on the wall, body-trim-door combinations, sheen choices, historic palettes, HOA approval, and how a colour visit is booked",
+      "why": "Colour is the decision that stalls a painting job for weeks. Offering help with it moves the start date forward."
+    },
+    {
+      "section": "Coatings and sheen in plain words",
+      "contains": "Acrylic versus oil, flat, satin and gloss, primer types, number of coats, and how long a repaint lasts on wood, stucco, brick and fiber cement",
+      "why": "Homeowners can't compare bids that list different products. A plain explainer makes the painter's spec the standard."
+    },
+    {
+      "section": "Rotten trim and carpentry before painting",
+      "contains": "Rotted fascia, sills, corner boards and siding boards, how carpentry is priced per piece, and why painting over rot fails",
+      "why": "Rot found on ladder day becomes an argument unless it was explained first. Priced carpentry also lifts the job total."
+    },
+    {
+      "section": "Winter cabinet and interior painting",
+      "contains": "Kitchen cabinet painting with doors sprayed off-site, interior rooms, trim and stair rails, booked for the cold months",
+      "why": "Exterior painters go quiet in winter. Cabinet and interior work keeps the crew paid and sells to the same happy customers."
+    },
+    {
+      "section": "Painting weather and schedule",
+      "contains": "Temperature and dew limits, rain days, which side gets painted first, how long a house takes, and how rain delays are communicated",
+      "why": "The question every customer asks after signing is 'when'. A clear weather policy saves calls on every job."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C47",
+      "siteType": "local-conversion",
+      "name": "Fresh Coat",
+      "heroLayout": "split-photo",
+      "mood": [
+        "friendly",
+        "bright",
+        "direct"
+      ],
+      "bestFor": "One-crew house painters who win on a quick estimate and a friendly owner",
+      "pairsWithTier": "starter",
+      "headlineSample": "House painting in {City}, prepped properly",
+      "whyItFits": "Teal and tangerine feel like fresh paint chips, and the humanist type reads like a person, not a franchise. The estimate button stays loud."
+    },
+    {
+      "id": "b",
+      "themeId": "C8",
+      "siteType": "portfolio-showcase",
+      "name": "Same House, New Colour",
+      "heroLayout": "before-after",
+      "mood": [
+        "reassuring",
+        "crisp",
+        "settled"
+      ],
+      "bestFor": "Painting companies with a library of peeling-to-finished houses sorted by colour and siding type",
+      "pairsWithTier": "standard",
+      "headlineSample": "Exterior painting that holds up on {City} houses",
+      "whyItFits": "The family's own combo. A calm evergreen frame doesn't fight the house colours in the gallery, and the before-after hero shows the peeling trim beside the new coat."
+    },
+    {
+      "id": "c",
+      "themeId": "C39",
+      "siteType": "editorial-trust",
+      "name": "Period Colours",
+      "heroLayout": "type-led",
+      "mood": [
+        "heritage",
+        "careful",
+        "warm"
+      ],
+      "bestFor": "Painters restoring Victorians, craftsman bungalows and historic district homes with multi-colour schemes",
+      "pairsWithTier": "premium",
+      "headlineSample": "Painting {City}'s historic homes, one careful coat at a time",
+      "whyItFits": "Brick, linen and a typewriter slab feel like a restoration journal, which suits long write-ups of one old house and its colour scheme."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "Truck magnet, no website",
+      "line": "Your truck magnet has a number but your Google listing has no website. A neighbour who saw the house you painted wants to look you up before calling, and there's nowhere to land.",
+      "hook": "Open their Maps listing and confirm there's no Website button. Note if the truck appears in any job post. Screenshot it for when they reply.",
+      "linkLine": "Where that truck magnet could point: {demo-link}"
+    },
+    {
+      "angle": "Facebook-only link",
+      "line": "The website link on your profile is a Facebook page. Someone deciding between three house painters wants your prep steps and a colour help page, and a feed scatters both.",
+      "hook": "Tap their Website link and confirm it lands on Facebook. Note the newest house they posted.",
+      "linkLine": "A house painting page built for that decision: {demo-link}"
+    },
+    {
+      "angle": "Dead free host",
+      "line": "Your painting site still shows a builder banner and last year's spring special. People hiring a painter for a whole house want to know the business is active this season.",
+      "hook": "Open the site and look for a free-host banner, an expired offer or a stale copyright year. Note which.",
+      "linkLine": "Same painting company, current and fast: {demo-link}"
+    },
+    {
+      "angle": "Gallery breaks on a phone",
+      "line": "Your house painting gallery loads as a long column of tiny thumbnails on my phone. Colour is the whole sale, and people judge it on a phone screen.",
+      "hook": "Only if they have a site. Load it on your phone and note what breaks. Screenshot it for when they reply.",
+      "linkLine": "Your painting gallery, rebuilt to show colour on a phone: {demo-link}"
+    },
+    {
+      "angle": "Estimates by phone only",
+      "line": "Booking a painting estimate with you means a phone call during work hours. People walk around the house on Sunday deciding to repaint and would rather send the address and a few notes then.",
+      "hook": "Check the profile, listing and any site for an estimate form. If there's none, the angle holds.",
+      "linkLine": "A painting estimate request that asks storeys, siding and colour: {demo-link}"
+    },
+    {
+      "angle": "Colour transformations in the feed",
+      "line": "Your before-and-after house colour changes sell painting better than any advert could. Right now they scroll past between job-site selfies.",
+      "hook": "Pick two colour transformations on their grid you can describe by colour. Use one in the reply.",
+      "linkLine": "Your house colour changes, side by side: {demo-link}"
+    },
+    {
+      "angle": "Reviews about the prep",
+      "line": "Your Google reviews keep praising how carefully your crew masked windows and covered plants. That's exactly what scares people about hiring painters, and it isn't on any page.",
+      "hook": "Read their reviews and copy one phrase about prep, cleanup or care. Quote it back if they reply.",
+      "linkLine": "Those painting reviews next to the prep they describe: {demo-link}"
+    },
+    {
+      "angle": "Booking the painting season",
+      "line": "Exterior painting calendars fill in late winter for spring and summer. The painters who are easy to find in February start the season booked.",
+      "hook": "Use from January to March. Name the month in the reply.",
+      "linkLine": "Ready before the painting season fills: {demo-link}"
+    },
+    {
+      "angle": "Winter cabinet work",
+      "line": "When it's too cold to paint outside, kitchen cabinet painting keeps crews busy. If you do it, nobody searching for cabinet painters in {City} can tell.",
+      "hook": "Only if they've posted cabinets or interiors. Note the post date and the cabinet colour.",
+      "linkLine": "A cabinet painting page for your slow months: {demo-link}"
+    },
+    {
+      "angle": "Hiring painters",
+      "line": "Saw the help-wanted post for painters. Experienced brush hands look at a painting company's finished houses before they apply.",
+      "hook": "Only if they posted a hiring note or story. Note the date.",
+      "linkLine": "A painting company page with a careers section: {demo-link}"
+    },
+    {
+      "angle": "Towns they paint",
+      "line": "You paint houses all over {City} and nearby, but there's no page that tells someone in {Neighborhood} you work there. 'House painters' plus the town is what gets typed.",
+      "hook": "Find towns in their posts or reviews. Use the one furthest from their base.",
+      "linkLine": "A house painting page for each town: {demo-link}"
+    },
+    {
+      "angle": "Deposits and payment",
+      "line": "If you split a house painting job into a deposit and a final payment, or offer a plan, say it on a page. People want to know how paying a painter works before they ask for a number.",
+      "hook": "Only if they mention payment terms or financing anywhere. Otherwise skip this angle.",
+      "linkLine": "How paying for a painting job works, explained up front: {demo-link}"
+    },
+    {
+      "angle": "Licence and lead-safe",
+      "line": "Scraping paint on older houses means lead dust, and careful buyers ask about it. Your painting licence and lead-safe certification belong on a page they can check.",
+      "hook": "Check the state registry and any lead-safe certification they mention. Note that a record exists; never quote a number you didn't see.",
+      "linkLine": "Licence and lead-safe painting on one page: {demo-link}"
+    },
+    {
+      "angle": "Word-of-mouth painter",
+      "line": "Sounds like your painting work spreads street to street once a house looks good. Even a neighbour's recommendation gets searched before the call, and right now there's nothing to find.",
+      "hook": "Look for reviews like 'saw the house down the road' or 'neighbour recommended'. Quote it back.",
+      "linkLine": "Where a painting referral would land: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "That {specific recent job} you posted has crisp trim lines and a colour that suits the house. A job like that should greet visitors, not sit three weeks down the feed.",
+      "hook": "Pick the newest finished house on their grid and name it: body colour, trim colour, and the street if tagged.",
+      "linkLine": "That painting job, front and centre: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, that {specific recent job} you posted has clean trim lines, nice work.\n\nI was looking for house painters in {City} and found {Business Name} on social, but no site where someone can see your prep or ask for an estimate. I sketched out a sample painting site to see how it would look, with marked placeholders where your photos would go.\n\nWould you like to see it?",
+    "dm2": "{Owner}, circling back in case my message got lost under estimates. Here's the sample house painting site for {Business Name}: {demo-link}\n\nIt walks through your prep step by step, has a colour help page, a winter cabinet painting page and an estimate request that asks storeys and siding type. If it's not for you, just say and I'll drop it.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for painting contractors in {City}. I sent you a note a couple of days ago, did it reach you?\"\n\nIF NO:\n\"No problem. Short version: I built a sample site for {Business Name} that shows your painting prep, colour help and a cabinet page for winter, with marked placeholders where your photos would go. Can I email you the link?\"\n\nIF YES:\n\"What did you make of it?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range} depending on how many town and service pages you want, then {Care Range} a month for hosting and edits. For a painter your size I'd quote about {Build Price}, roughly what one small exterior repaint brings in.\"\n\"Could I show you around it for ten minutes, maybe one evening this week?\"\n\nCLOSE:\n\"I'll send a short scope and a deposit invoice. We start when it clears, and it'll be live before the spring painting rush.\"",
+    "objections": [
+      {
+        "objection": "My truck and yard signs bring in enough work.",
+        "handler": "\"They clearly work. The people who see the truck still search your name before calling. Right now they find a Facebook page; the site is where that sign pays off.\""
+      },
+      {
+        "objection": "Everyone just wants the lowest painting bid.",
+        "handler": "\"Some do. The prep page is for the ones comparing what's in the bid: scraping, priming, caulk, coats. That's what makes your number look fair.\""
+      },
+      {
+        "objection": "It's winter, I'm barely working.",
+        "handler": "\"That's the month to build it. The cabinet page brings in winter work now, and the exterior pages are ready when people plan spring painting.\""
+      },
+      {
+        "objection": "I'm on a lead app already.",
+        "handler": "\"Those leads go to several painters at once. Your own site sends that homeowner straight to you, and you don't pay per lead.\""
+      },
+      {
+        "objection": "My nephew is doing my website.",
+        "handler": "\"Great, that's cheaper. Happy to pass along the prep page and the estimate form. If it stalls before spring, my offer stands.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}, because it's a gallery, a prep page, colour help and an estimate form. Less than one small house.\""
+      }
+    ],
+    "email": {
+      "subject": "Painting site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for house painters around {City}. {Business Name} has clean painting work on its social pages, but no site that comes up when a homeowner searches for exterior painting.\n\nInstead of asking for a meeting, I built a sample: house painting prep step by step, a colour consultation page, coatings in plain words, a winter cabinet painting page and an estimate request, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you'd like it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and edits. If not, it comes down at the end of the month.\n\nWould ten minutes on the phone this week work?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, {Your Name} here. I build websites for house painters in {City} and put together a sample for {Business Name}, prep page, colour help and all. I'll email the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm clearing out old demos on Friday, including the {Business Name} painting one.\n\nShould I keep it up for you? A yes or no is plenty.",
+    "nurture": "Hi {Owner}, painting season is coming up and calendars around {City} are starting to fill. You came to mind.\n\nThe painting site is still here and the price hasn't moved. {demo-link} if you'd like another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to one small exterior repaint, not an hourly rate.",
+      "Price the gallery by number of houses, sorted by colour and siding type, not by page count.",
+      "The prep and coatings pages are what justify their price; quote them as one line and never skip them.",
+      "Add the cabinet painting page only for painters who actually spray cabinets; it's a winter revenue line for them.",
+      "Colour consultation booking is its own line when they charge for colour visits.",
+      "Keep the care plan small; painters change offers seasonally and need edits more than features."
+    ],
+    "lineItems": [
+      {
+        "item": "Prep and coatings explainer pages",
+        "min": 300,
+        "max": 700,
+        "unit": "one-time",
+        "description": "Max with a step-by-step prep sequence for each siding type and a plain sheen chart.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Estimate request with storeys and siding fields",
+        "min": 350,
+        "max": 800,
+        "unit": "one-time",
+        "description": "Max with photo upload of problem areas, colour-help checkbox and a preferred start month.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Colour consultation booking page",
+        "min": 300,
+        "max": 700,
+        "unit": "one-time",
+        "description": "Max when it takes a paid colour visit booking with deposit and shows past colour schemes by house style.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Cabinet and interior painting page",
+        "min": 300,
+        "max": 700,
+        "unit": "per-page",
+        "description": "Max with its own gallery, a cabinet door count form and a winter booking offer.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Historic home painting page",
+        "min": 300,
+        "max": 800,
+        "unit": "per-page",
+        "description": "Max with lead-safe process details, multi-colour scheme examples and district approval notes.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Town service-area page (each)",
+        "min": 200,
+        "max": 400,
+        "unit": "per-page",
+        "description": "Max when each town page shows houses painted there and common siding types on its streets.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Spanish-language estimate path",
+        "min": 400,
+        "max": 900,
+        "unit": "one-time",
+        "description": "Max when the prep page, estimate form and colour page are all translated.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Colour transformation shoot",
+      "min": 400,
+      "max": 1000,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Before you start the next big colour change, I shoot the house as it is, then again after the last trim coat, same angles. That pair sells your next painting job.\"",
+      "when": "Month 2, booked around their next colour-change house."
+    },
+    {
+      "name": "Google profile posts of painted houses",
+      "min": 200,
+      "max": 350,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Every finished house goes on your Google profile with the colours and the town, so the map shows a busy painter instead of last spring's post.\"",
+      "when": "Day 30, once the site is live."
+    },
+    {
+      "name": "Review asks after the final painting walk",
+      "min": 99,
+      "max": 199,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"After the final walk-around and touch-ups, the homeowner gets a text asking for a review while they're standing in the yard admiring the house.\"",
+      "when": "Day 30. The easiest second sale."
+    },
+    {
+      "name": "Yard signs and truck graphics for painters",
+      "min": 200,
+      "max": 600,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A 'freshly painted by' yard sign stays up a week after the crew leaves. With the site on it, the fresh paint keeps selling.\"",
+      "when": "Right after launch."
+    },
+    {
+      "name": "Street postcards after each painted house",
+      "min": 150,
+      "max": 350,
+      "unit": "per-job",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Houses on a street often need painting at the same time. A postcard of the neighbour's new colours reaches people already eyeing their own peeling trim.\"",
+      "when": "Month 2, once there are houses on the site."
+    },
+    {
+      "name": "Winter cabinet painting campaign",
+      "min": 300,
+      "max": 700,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A November push to past exterior customers offering cabinet painting fills the cold months with indoor work from people who already trust the crew.\"",
+      "when": "Pitch in October, run in November."
+    },
+    {
+      "name": "Spring booking push for exterior repaints",
+      "min": 300,
+      "max": 700,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A late-winter offer for early spring start dates fills the first weeks of exterior painting season before every crew in town is booked.\"",
+      "when": "Pitch in January, run in February."
+    },
+    {
+      "name": "Colour lookbook for realtors and stagers",
+      "min": 300,
+      "max": 700,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A short lookbook of houses you've repainted, with the colour schemes, puts your painting company in front of agents prepping listings.\"",
+      "when": "Month 3, once the gallery has several houses."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Carpenters who fix rot before you paint",
+        "whoPays": "The carpenter, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"Every painting job turns up rotten trim. The carpenter you call for it needs a site, and they meet homeowners who need a painter next.\"",
+        "whyItWorks": "Carpentry and painting run in sequence; referrals flow both ways."
+      },
+      {
+        "route": "Pressure washers who prep houses",
+        "whoPays": "The pressure washing company",
+        "min": 1200,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"The pressure washer who cleans the house before you paint needs a booking site. You already send them work.\"",
+        "whyItWorks": "House washing is a natural pre-painting step; the painter's referral is a warm door."
+      },
+      {
+        "route": "The local paint store",
+        "whoPays": "The paint store owner",
+        "min": 2000,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"The independent paint store where you buy sees every painter and DIYer in town. Introduce me and I'll build their colour and contractor-finder pages.\"",
+        "whyItWorks": "Independent paint stores have budgets and want contractors to stay loyal."
+      },
+      {
+        "route": "Interior designers and colour consultants",
+        "whoPays": "The designer or consultant",
+        "min": 1500,
+        "max": 3500,
+        "unit": "one-time",
+        "pitchLine": "\"The colour consultant who picks your customers' house colours needs a portfolio site, and your painting jobs are their best examples.\"",
+        "whyItWorks": "Designers and painters share clients; a painter's referral carries weight."
+      },
+      {
+        "route": "Home stagers and listing agents",
+        "whoPays": "The stager or agent",
+        "min": 1500,
+        "max": 3500,
+        "unit": "one-time",
+        "pitchLine": "\"Stagers tell sellers to repaint the front door and trim before listing. They need a site, and they need a painter they trust.\"",
+        "whyItWorks": "Stagers buy credibility and send steady pre-listing painting jobs."
+      },
+      {
+        "route": "Cabinet refacing and countertop shops",
+        "whoPays": "The kitchen shop, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"Kitchen shops send customers who want painted cabinets rather than new ones. They need a better site, and your cabinet painting page links to them.\"",
+        "whyItWorks": "Overlapping kitchen customers without competing products."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Colour match assistant for the paint store",
+        "whoPays": "The paint store, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Customers upload a shot of their house and the store's assistant suggests body and trim colours from its own fan deck, then lists local painters.\"",
+        "whyItWorks": "It sells more paint and sends exterior painting work to the client."
+      },
+      {
+        "route": "Listing photo exterior refresh preview for agents",
+        "whoPays": "The brokerage, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Agents upload the front of a listing and see it repainted in a couple of colour schemes, labelled as a preview, with the painter's number beside it.\"",
+        "whyItWorks": "Agents use it to talk sellers into a repaint; the painter gets the job."
+      },
+      {
+        "route": "House wash booking bot for the pressure washer",
+        "whoPays": "The pressure washing company",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"The pressure washer who preps your painting jobs misses bookings at night. An assistant quotes house washes by size and books them.\"",
+        "whyItWorks": "Configuration of a booking flow you know, through a warm referral."
+      },
+      {
+        "route": "Design consultant's moodboard drafter",
+        "whoPays": "The colour consultant",
+        "min": 1000,
+        "max": 2500,
+        "unit": "one-time",
+        "pitchLine": "\"Consultants get a tool that drafts exterior colour moodboards from a house photo and the client's likes, ready for them to refine.\"",
+        "whyItWorks": "Consultants save hours per client; the painting client gets the jobs."
+      },
+      {
+        "route": "Carpenter's rot repair quote drafter",
+        "whoPays": "The carpenter",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"The carpenter you call for rotted sills gets a tool that drafts a repair quote from a few shots, so your painting jobs don't wait on their paperwork.\"",
+        "whyItWorks": "Faster carpentry quotes mean faster painting starts."
+      },
+      {
+        "route": "HOA repaint cycle planner",
+        "whoPays": "The HOA management company, annually",
+        "min": 1500,
+        "max": 5000,
+        "unit": "per-year",
+        "pitchLine": "\"Townhome HOAs repaint buildings in cycles. An assistant tracks which buildings are due, drafts the notices and routes the bids to one painting contractor.\"",
+        "whyItWorks": "Managers juggle repaint schedules by spreadsheet; the painter gets planned work."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Missed-call text-back for painting estimates",
+      "kind": "automation",
+      "oneTimeMin": 0,
+      "oneTimeMax": 300,
+      "monthlyMin": 79,
+      "monthlyMax": 149,
+      "pitchLine": "\"Up a ladder with a brush in hand? The caller gets a text asking for the address and whether it's exterior, interior or cabinets, and you ring back between coats.\"",
+      "whenAndWhatItTakes": "Day 30. Needs their number forwarded and approved wording."
+    },
+    {
+      "name": "House painting price range by size and storeys",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3500,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"A homeowner picks square footage, storeys and siding type and sees a painting range, so the estimate visit starts with realistic expectations.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their pricing by size and siding, trim adders and the smallest job they take."
+    },
+    {
+      "name": "Rain-delay texts to booked customers",
+      "kind": "automation",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 50,
+      "monthlyMax": 125,
+      "pitchLine": "\"When rain pushes a house painting day, every affected customer gets a text with the new date in one tap, instead of ten phone calls at dawn.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their schedule and the customer list for the week."
+    },
+    {
+      "name": "Deposit and completion invoicing for painting jobs",
+      "kind": "automation",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Deposit to hold the start date, balance after the touch-up walk, both sent automatically so the painter isn't chasing cheques.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their deposit rule and payment account."
+    },
+    {
+      "name": "Paint colour preview on the customer's house",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"Homeowners upload a shot of their house and try body, trim and door colours on it, so the painting decision stops stalling on colour.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the colour lines they use. Comes with the AI maintenance retainer; previews are labelled as previews."
+    },
+    {
+      "name": "Painted-house review responses",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 79,
+      "monthlyMax": 179,
+      "pitchLine": "\"Every new review about a painted house gets a reply drafted that mentions the colours and the crew by name, ready to approve between coats.\"",
+      "whenAndWhatItTakes": "Month 2, with review asks. Needs a dozen past replies. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Painting estimate builder with prep line items",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Pick the sides, the prep level and the coats, and a clean painting estimate prints with each prep step listed, so it beats the one-line bid next door.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their estimate template and production rates."
+    },
+    {
+      "name": "Painting job calendar with weather view",
+      "kind": "software",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5500,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"Every booked house painting job on one calendar next to the forecast, so you see which starts are at risk before the crew loads the truck.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their job list and crew count."
+    },
+    {
+      "name": "Square footage draft from house photos",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"From street shots and an aerial view it drafts paintable wall area, trim length and window count for the painter to check before quoting.\"",
+      "whenAndWhatItTakes": "Month 4. Needs past jobs with measured areas. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Colour record by address",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 50,
+      "monthlyMax": 125,
+      "pitchLine": "\"Every house you paint is saved with the exact colours and sheens, so a touch-up years later, or the neighbour who wants 'the same blue', is instant.\"",
+      "whenAndWhatItTakes": "Month 3. Needs past job colour notes."
+    },
+    {
+      "name": "Painter chatbot for prep, sheen and timing",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 125,
+      "monthlyMax": 300,
+      "pitchLine": "\"It answers 'satin or flat for my siding' and 'how long will you be at my house' at night, from your painting notes, and books the estimate.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their coatings notes and current lead time. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Repaint reminder for older paint jobs",
+      "kind": "automation",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 50,
+      "monthlyMax": 125,
+      "pitchLine": "\"Customers whose house you painted years ago get a note in late winter to check the south side and the trim, with a touch-up or repaint offer.\"",
+      "whenAndWhatItTakes": "Month 6. Needs a customer list with paint dates."
+    },
+    {
+      "name": "Cabinet painting quote from kitchen photos",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"A homeowner uploads kitchen shots and it counts doors and drawers and drafts a cabinet painting range for you to confirm.\"",
+      "whenAndWhatItTakes": "Month 4, before winter. Needs their price per door and drawer. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Crew daily log with prep checklist",
+      "kind": "software",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 9000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"The lead painter ticks off washing, scraping, priming and caulking per side with a shot each, so you see every house without driving there.\"",
+      "whenAndWhatItTakes": "Month 6, when they run two crews. Needs their prep checklist."
+    },
+    {
+      "name": "Spoken walk-around to painting notes",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"Walk the house saying which sides peel and where the rot is, and the painting estimate builder fills in from what you said.\"",
+      "whenAndWhatItTakes": "Month 5, after the estimate builder. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Paint and materials cost tracker per house",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3500,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Log gallons, caulk and crew hours per painting job and see which house types actually pay, and which you underbid.\"",
+      "whenAndWhatItTakes": "Month 6. Needs a season of receipts and crew hours."
+    },
+    {
+      "name": "Customer portal with colour sign-off",
+      "kind": "software",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"Homeowners sign off on body and trim colours, see their painting start date and rain delays, and pay the deposit in one place.\"",
+      "whenAndWhatItTakes": "Month 6. Needs the job calendar running first."
+    },
+    {
+      "name": "Painting blog and town page writer",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 200,
+      "monthlyMax": 400,
+      "pitchLine": "\"A monthly house painting page, like the best colours for brick ranches in {Neighborhood}, drafted from your jobs and approved by you.\"",
+      "whenAndWhatItTakes": "Month 3. Needs job notes and approval on every page. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Subcontract painter onboarding pack",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 50,
+      "monthlyMax": 125,
+      "pitchLine": "\"New painters and subs get your prep standards, safety rules and insurance paperwork on their phone before day one.\"",
+      "whenAndWhatItTakes": "Month 6, when they add subs. Needs their standards written down once."
+    },
+    {
+      "name": "Painter applicant screener",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"Painter applicants say whether they can cut a clean line, run a sprayer and climb a forty-foot ladder, before you spend a call.\"",
+      "whenAndWhatItTakes": "When they post a hiring note. Needs their must-haves. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the painting estimate builder",
+      "whoPays": "Painting contractors, monthly",
+      "min": 39,
+      "max": 149,
+      "unit": "monthly",
+      "pitchLine": "\"I built a painting estimate builder that itemises prep for one painter. Most painters still write a one-line bid by hand.\"",
+      "whyItWorks": "The first painter taught you the production rates and paid for it."
+    },
+    {
+      "route": "Contractor finder for an independent paint store group",
+      "whoPays": "The paint store group, annually",
+      "min": 4000,
+      "max": 15000,
+      "unit": "per-year",
+      "pitchLine": "\"A find-a-painter page across your stores sends homeowners to the painting contractors with house accounts, and keeps them buying from you.\"",
+      "whyItWorks": "Paint stores live on contractor accounts and spend on loyalty."
+    },
+    {
+      "route": "Painting contractors' association member kit",
+      "whoPays": "The association",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"Give member painters a template with a prep page, colour help and an estimate form as a membership benefit.\"",
+      "whyItWorks": "One deal reaches many painting owners."
+    },
+    {
+      "route": "Painting template for agencies",
+      "whoPays": "The agency, per painting client",
+      "min": 500,
+      "max": 1200,
+      "unit": "one-time",
+      "pitchLine": "\"Agencies with house painter clients rebuild the same pages. License my painting template with prep and colour pages done.\"",
+      "whyItWorks": "Agencies sell; you supply the finished trade part."
+    },
+    {
+      "route": "Painting franchise territory pages",
+      "whoPays": "The franchise group, per territory",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "pitchLine": "\"House painting franchises need territory pages with local jobs and estimate routing. One build, many owners.\"",
+      "whyItWorks": "Painting franchises add territories often."
+    },
+    {
+      "route": "Colour preview tool licensed to paint retailers",
+      "whoPays": "Paint retailers, monthly",
+      "min": 99,
+      "max": 299,
+      "unit": "monthly",
+      "pitchLine": "\"The house colour preview built for one painter works for any paint counter: customers try colours on their own house and leave with a painter's name.\"",
+      "whyItWorks": "Retailers want tools that move paint; you've already built it."
+    },
+    {
+      "route": "HOA repaint program portal for management firms",
+      "whoPays": "The management firm, annually",
+      "min": 3000,
+      "max": 10000,
+      "unit": "per-year",
+      "pitchLine": "\"Every community the firm manages gets an approved colour palette page, repaint schedule and painter request form.\"",
+      "whyItWorks": "Firms managing many HOAs buy once and roll out everywhere."
+    },
+    {
+      "route": "Trade school painting program career pages",
+      "whoPays": "The trade school",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Painting apprenticeship programs need pages that show students real house painting careers and local employers. Your client can be the first.\"",
+      "whyItWorks": "Schools fund recruitment pages; painters need hires."
+    },
+    {
+      "route": "Monthly house painting cost note",
+      "whoPays": "Painters, monthly",
+      "min": 19,
+      "max": 59,
+      "unit": "monthly",
+      "pitchLine": "\"A short monthly note on paint, caulk and labour cost trends that painting contractors report, so their bids keep up.\"",
+      "whyItWorks": "Built only from shared data; it never claims more than painters report."
+    },
+    {
+      "route": "Cabinet painting add-on kit for painters elsewhere",
+      "whoPays": "Painting companies in other metros",
+      "min": 300,
+      "max": 700,
+      "unit": "one-time",
+      "pitchLine": "\"The winter cabinet painting page, quote tool and campaign, packaged for exterior painters in any cold-weather city.\"",
+      "whyItWorks": "Every northern painter has the same slow winter."
+    },
+    {
+      "route": "Exclusive painter in the next town",
+      "whoPays": "A house painter in a new metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"Promise one painting company per town. When {City} is done, the best one-crew painter in the next town gets the same demo.\"",
+      "whyItWorks": "Exclusivity sells; the template carries over."
+    },
+    {
+      "route": "Rebuild painters' abandoned sites",
+      "whoPays": "The stranded painting company",
+      "min": 1000,
+      "max": 2800,
+      "unit": "one-time",
+      "pitchLine": "\"Lots of painters have a half-finished site someone else started. I can finish it on a painting template that's already live.\"",
+      "whyItWorks": "These owners already decided to buy."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Painting site build plus care plan, one contract",
+      "min": 1500,
+      "max": 2800,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The painting site and care plan sit on one contract, so swapping the spring offer for the cabinet offer is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Review asks after the final painting walk",
+      "min": 99,
+      "max": 199,
+      "unit": "monthly",
+      "trigger": "The first house painted since launch.",
+      "line": "\"That house you just finished is a glowing review waiting. Let's ask every customer at the final walk.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "Colour transformation shoot",
+      "min": 400,
+      "max": 1000,
+      "unit": "per-shoot",
+      "trigger": "They book a house with a big colour change.",
+      "line": "\"That colour change you're starting next week is your best before-and-after. Let's shoot both ends of the painting job.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Rain-delay texts to booked customers",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "trigger": "A rainy week forces them to call every booked painting customer.",
+      "line": "\"Last week's rain cost you a morning of calls. Next time it's one tap.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Paint colour preview on the customer's house",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "trigger": "A signed painting job stalls on colour choice.",
+      "line": "\"That job waiting on a colour decision starts sooner if they see their own house in each colour.\""
+    },
+    {
+      "rung": 6,
+      "day": 120,
+      "offer": "Winter cabinet painting campaign",
+      "min": 300,
+      "max": 700,
+      "unit": "one-time",
+      "trigger": "The exterior calendar thins out as the weather turns cold.",
+      "line": "\"Your exterior painting season is ending. Let's fill winter with cabinets for customers who already love your work.\""
+    },
+    {
+      "rung": 7,
+      "day": 180,
+      "offer": "Painting job calendar with weather view",
+      "min": 2000,
+      "max": 5500,
+      "unit": "one-time",
+      "trigger": "They add a second painting crew.",
+      "line": "\"Two painting crews and the weather need one calendar. Let's stop guessing which starts will slip.\""
+    }
+  ]
+}

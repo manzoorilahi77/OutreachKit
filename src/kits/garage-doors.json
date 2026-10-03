@@ -1,0 +1,864 @@
+{
+  "schemaVersion": 1,
+  "category": "Garage doors",
+  "slug": "garage-doors",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Ext family batch. Split between same-day emergency repairs and planned door replacements; no door or opener brands named. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Broken spring and cable help",
+      "contains": "What a snapped torsion spring sounds like, a door that won't lift, frayed cables, a car trapped inside, the emergency release, and why springs aren't a DIY job",
+      "why": "Most garage door calls start with a bang and a stuck car. A calm page that says what happened and books a same-day visit wins the call."
+    },
+    {
+      "section": "Garage door style gallery by house",
+      "contains": "Carriage-house, raised panel, flush modern and full-view glass doors, window inserts, wood-look steel, and colours shown on real house styles",
+      "why": "Replacement buyers choose with their eyes and want to see the door on a house like theirs before they talk price."
+    },
+    {
+      "section": "Garage door opener comparison",
+      "contains": "Chain, belt and wall-mount jackshaft openers, battery backup, phone control, keypads, quiet operation for rooms above the garage",
+      "why": "Opener questions come on almost every call. Answering them plainly sells the upgrade without a showroom."
+    },
+    {
+      "section": "Insulated and wind-rated garage doors",
+      "contains": "Single, double and triple-layer steel, insulated doors for rooms above or beside the garage, and wind-load doors where local code requires them",
+      "why": "Insulation and wind rating explain why two doors that look alike carry different prices."
+    },
+    {
+      "section": "Garage door tune-up plans",
+      "contains": "Yearly lubrication, roller, hinge and cable checks, spring balance, photo-eye and auto-reverse safety test, and a plan sign-up",
+      "why": "Tune-ups catch a worn spring before it snaps and give the company a reason to see every customer once a year."
+    },
+    {
+      "section": "Commercial overhead and roll-up doors",
+      "contains": "Rolling steel, sectional commercial and dock doors, high-cycle springs, after-hours repair, and preventive maintenance contracts for property managers",
+      "why": "Commercial overhead door work recurs and pays on contract. Managers need to see capacity and response times before calling."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C13",
+      "siteType": "emergency-response",
+      "name": "Stuck Door Hotline",
+      "heroLayout": "type-led",
+      "mood": [
+        "urgent",
+        "calm",
+        "available"
+      ],
+      "bestFor": "Repair-first garage door companies whose phone rings with broken springs and stuck cars",
+      "pairsWithTier": "starter",
+      "headlineSample": "Garage door stuck? Same-day spring repair in {City}",
+      "whyItFits": "Amber on obsidian reads like a warning light without panic, and the geometric display keeps the call button huge on a phone in a dark garage."
+    },
+    {
+      "id": "b",
+      "themeId": "C8",
+      "siteType": "portfolio-showcase",
+      "name": "New Door, New Front",
+      "heroLayout": "before-after",
+      "mood": [
+        "reassuring",
+        "fresh",
+        "settled"
+      ],
+      "bestFor": "Garage door companies balancing repairs with replacement doors and opener upgrades",
+      "pairsWithTier": "standard",
+      "headlineSample": "Garage door repair and new doors installed in {City}",
+      "whyItFits": "The family's own combo. Evergreen and a refined serif calm the repair caller, and the before-after hero shows how much a new door changes the front of a house."
+    },
+    {
+      "id": "c",
+      "themeId": "C32",
+      "siteType": "premium-brand",
+      "name": "Carriage House",
+      "heroLayout": "full-bleed-photo",
+      "mood": [
+        "crafted",
+        "warm",
+        "custom"
+      ],
+      "bestFor": "Custom wood and carriage-house garage door installers working with builders and design-led homeowners",
+      "pairsWithTier": "premium",
+      "headlineSample": "Custom carriage-house garage doors for {City} homes",
+      "whyItFits": "Olive and a bookish serif feel like a woodshop catalogue, suited to doors sold on grain, hardware and craftsmanship."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your listing has a phone number but no website. When a spring snaps at 7am and the car's trapped, people want to see a garage door company is real and local before they dial.",
+      "hook": "Open their Maps listing and confirm there's no Website button. Screenshot it for when they reply.",
+      "linkLine": "A garage door page for that button: {demo-link}"
+    },
+    {
+      "angle": "Facebook-only link",
+      "line": "Your website link opens Facebook. Someone picking a new garage door wants to see styles on houses like theirs, and a feed of mixed posts doesn't show that.",
+      "hook": "Tap their Website link and confirm it lands on Facebook. Note the newest door install posted.",
+      "linkLine": "A garage door style gallery instead of a feed: {demo-link}"
+    },
+    {
+      "angle": "Dead free host",
+      "line": "Your garage door site still carries a free-host banner and an old year in the footer. A panicked homeowner with a stuck door wonders if the number still works.",
+      "hook": "Open the site and look for a banner, stale year or broken form. Note which.",
+      "linkLine": "Same garage door company, current and fast: {demo-link}"
+    },
+    {
+      "angle": "Call button hidden on a phone",
+      "line": "On my phone I had to scroll past three paragraphs to find your number. Garage door emergencies are phone searches, usually standing in the garage.",
+      "hook": "Only if they have a site. Load it on your phone and time how long the number takes to find. Screenshot it for when they reply.",
+      "linkLine": "A garage door site with the call button where the thumb is: {demo-link}"
+    },
+    {
+      "angle": "No way to request a new door",
+      "line": "For repairs, a call works. For a new garage door, people want to send the opening size and the style they like first, and there's no form for that.",
+      "hook": "Check the listing and any site for a quote form. If there's none, the angle holds.",
+      "linkLine": "A new door request that asks size, style and opener: {demo-link}"
+    },
+    {
+      "angle": "Door installs in the feed",
+      "line": "Your new garage door installs on Instagram change the whole front of the house. They're buried between repair clips when a style gallery would sell the next door.",
+      "hook": "Pick two installs you could name by style and colour. Mention one if they reply.",
+      "linkLine": "Your garage door installs, sorted by style: {demo-link}"
+    },
+    {
+      "angle": "Reviews about fast repairs",
+      "line": "Your reviews say you fixed a broken spring the same morning and didn't upsell a new door. That's what a stuck homeowner hopes to hear, and it stays on Google.",
+      "hook": "Read their reviews and copy one phrase about speed or honesty. Quote it back.",
+      "linkLine": "Those garage door reviews where callers decide: {demo-link}"
+    },
+    {
+      "angle": "Cold snap spring failures",
+      "line": "The first hard freeze is when tired garage door springs give up. The company that shows up first in that morning's search gets the call.",
+      "hook": "Use ahead of the first cold weather. Name the season in the reply.",
+      "linkLine": "Ready before the cold-weather spring calls: {demo-link}"
+    },
+    {
+      "angle": "After-hours stuck cars",
+      "line": "A garage door that won't close at night means an open house. If the call goes to voicemail, the homeowner tries the next garage door company until someone picks up.",
+      "hook": "Call their number after hours. If it hits a full or generic voicemail, the angle holds.",
+      "linkLine": "A garage door request that works at night: {demo-link}"
+    },
+    {
+      "angle": "Hiring techs",
+      "line": "Your hiring post for a garage door tech will send applicants to look you up. A page with your trucks, installs and training says the work is steady.",
+      "hook": "Only if they posted a hiring note. Note the date.",
+      "linkLine": "A garage door company page with careers: {demo-link}"
+    },
+    {
+      "angle": "Service area",
+      "line": "You cover {City} and the towns around it, but nothing tells someone in {Neighborhood} you'll come today. 'Garage door repair' plus the town is the whole search.",
+      "hook": "Find towns they mention in posts or reviews. Use the furthest one.",
+      "linkLine": "A garage door page for every town you serve: {demo-link}"
+    },
+    {
+      "angle": "Opener upgrades",
+      "line": "Every repair visit is a chance to sell a quieter opener with battery backup. A page explaining garage door opener options lets people choose before you arrive.",
+      "hook": "Only if they post opener installs. Note one.",
+      "linkLine": "A garage door opener comparison page: {demo-link}"
+    },
+    {
+      "angle": "Licensed and insured",
+      "line": "Garage door springs carry enough tension to hurt someone, and your licence is on the state registry. Showing it on a page separates you from the spring scammers.",
+      "hook": "Check the state contractor registry if garage doors are licensed there. Note that a record exists; never quote a number you didn't see.",
+      "linkLine": "Licence and safety on one garage door page: {demo-link}"
+    },
+    {
+      "angle": "Price-gouging fear",
+      "line": "People have heard stories about garage door repair quotes that balloon once the tech arrives. A page with honest spring and cable price ranges is the fastest way to earn their trust.",
+      "hook": "Look for reviews mentioning fair pricing or 'no upsell'. Quote one back.",
+      "linkLine": "Honest garage door repair ranges, up front: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "That {specific recent job} you posted changes the look of the whole house. A garage door job like that should be the first thing visitors see.",
+      "hook": "Pick their newest install and name it: style, colour, windows, and the street if tagged.",
+      "linkLine": "That garage door job, front and centre: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, that {specific recent job} you posted really changes the front of the house.\n\nI searched for garage door repair in {City} and found {Business Name} on social, but no site with a same-day repair request or a door style gallery. I put together a sample garage door site to see how it would look, with marked placeholders where your photos would go.\n\nWant me to send it?",
+    "dm2": "{Owner}, following up in case my message got lost between service calls. Here's the sample garage door site for {Business Name}: {demo-link}\n\nIt has a broken-spring help page with a same-day request, honest repair ranges, a door style gallery and an opener comparison. If it's not for you, say so and I'll leave you be.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for garage door companies in {City}. I messaged a couple of days ago, did it come through?\"\n\nIF NO:\n\"Easy to miss. Short version: I built a sample site for {Business Name} with a broken-spring page, a same-day repair request and a door style gallery, with marked placeholders where your photos would go. Can I text you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range} depending on how many town and style pages you want, then {Care Range} a month for hosting and changes. For a garage door company your size I'd quote about {Build Price}, roughly one new door installed.\"\n\"Can I walk you through it for ten minutes, maybe after your last call one day this week?\"\n\nCLOSE:\n\"I'll send a short scope and a deposit invoice. It's live before the first cold snap breaks springs.\"",
+    "objections": [
+      {
+        "objection": "Most of my calls come from the big paid search ads.",
+        "handler": "\"Those ads are rented. When people click through and find no site, or a weak one, they call the next door company. Your own site makes every ad click land better.\""
+      },
+      {
+        "objection": "Repair customers just call, they don't browse.",
+        "handler": "\"They don't browse long, but they check. One look at a real local garage door company with reviews and a same-day promise is what makes them call you.\""
+      },
+      {
+        "objection": "The national garage door chains outspend me.",
+        "handler": "\"They do. People are wary of them too. A local page with honest spring prices and your face is exactly what those people look for.\""
+      },
+      {
+        "objection": "The manufacturer gives me a dealer page.",
+        "handler": "\"Keep it. That page sells their doors; it doesn't promise same-day repair in your town. Yours does.\""
+      },
+      {
+        "objection": "My cousin can set something up.",
+        "handler": "\"Fair enough. Happy to hand over the broken-spring page layout. If it stalls before winter, the offer stands.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you, about {Build Price}, for the repair request, honest ranges, a style gallery and a few town pages. About one new door.\""
+      }
+    ],
+    "email": {
+      "subject": "Garage door site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for garage door companies around {City}. {Business Name} has good installs on its social pages, but no site that comes up when someone searches for garage door repair with a car stuck inside.\n\nI built a sample first: a broken spring and cable help page with a same-day request, honest repair ranges, a garage door style gallery, an opener comparison and a tune-up plan sign-up, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and changes. If not, it comes down at the end of the month.\n\nWorth ten minutes on the phone this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, {Your Name} here. I build websites for garage door companies in {City} and made a sample for {Business Name} with a same-day repair request. I'll text the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm taking down the {Business Name} garage door demo on Friday.\n\nWant it kept up? One word is fine.",
+    "nurture": "Hi {Owner}, the first cold mornings are close, and that's when worn garage door springs give out. Thought of you.\n\nThe site's still here, same price. {demo-link} if you'd like another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to one new door installed, not to repair call prices.",
+      "Price the same-day repair request and click-to-call setup as the core; it's the reason they'll buy.",
+      "The style gallery is a separate line and only worth it for companies that sell replacement doors.",
+      "Honest repair ranges are a trust feature; quote them as their own page and confirm the owner is comfortable publishing them.",
+      "Commercial door pages only for companies that already service roll-up or dock doors.",
+      "Town pages matter more here than in most trades; the search is 'garage door repair' plus a town name."
+    ],
+    "lineItems": [
+      {
+        "item": "Same-day repair request with spring and cable fields",
+        "min": 400,
+        "max": 900,
+        "unit": "one-time",
+        "description": "Max with photo upload, 'car trapped' urgency flag and text alerts to the on-call tech.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Garage door style gallery",
+        "min": 400,
+        "max": 1000,
+        "unit": "one-time",
+        "description": "Max when filtered by style, colour and window insert, with doors shown on several house types.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Repair price ranges page",
+        "min": 250,
+        "max": 600,
+        "unit": "per-page",
+        "description": "Max when it covers springs, cables, rollers, openers and off-track doors with what changes each price.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Opener comparison page",
+        "min": 250,
+        "max": 600,
+        "unit": "per-page",
+        "description": "Max with drive-type comparisons, battery backup and phone-control explainers.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Town service-area page (each)",
+        "min": 200,
+        "max": 450,
+        "unit": "per-page",
+        "description": "Max when each town page shows local jobs and its typical response time.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Commercial overhead door page",
+        "min": 300,
+        "max": 800,
+        "unit": "per-page",
+        "description": "Max with a maintenance contract request form and capability list by door type.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Spanish-language repair path",
+        "min": 400,
+        "max": 900,
+        "unit": "one-time",
+        "description": "Max when the repair request, ranges page and gallery are translated.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Garage door install photo morning",
+      "min": 400,
+      "max": 900,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A morning at your three best new garage doors, straight-on and from the street, fills the style gallery and gives you before-and-afters for a year.\"",
+      "when": "Month 2, or right after a striking door replacement."
+    },
+    {
+      "name": "Google profile posts for garage door jobs",
+      "min": 200,
+      "max": 400,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Every week a spring repair or new garage door goes on your Google profile with the town named. In this trade the map listing is where the call starts.\"",
+      "when": "Day 30, once the site is live."
+    },
+    {
+      "name": "Review texts after each door visit",
+      "min": 99,
+      "max": 199,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Once the door goes up smoothly and the car's out, the customer gets a text asking for a review. Relief writes the best ones.\"",
+      "when": "Day 30. The easiest second sale."
+    },
+    {
+      "name": "Local Services Ads for garage door repair",
+      "min": 400,
+      "max": 900,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Garage door repair is a same-day search, and the licence-checked ads sit at the top. I set them up, dispute junk leads and keep them on repair categories.\"",
+      "when": "Month 2, once reviews are flowing."
+    },
+    {
+      "name": "Opener and keypad sticker artwork",
+      "min": 150,
+      "max": 400,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A small sticker on every opener and keypad you touch, with your number and the site, is there the next time a garage door spring snaps.\"",
+      "when": "Right after launch."
+    },
+    {
+      "name": "Truck wrap refresh",
+      "min": 300,
+      "max": 900,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Your service truck parks in a different driveway every hour. A clean wrap with 'same-day garage door repair' and the site works the whole route.\"",
+      "when": "Month 2."
+    },
+    {
+      "name": "Fall tune-up campaign",
+      "min": 300,
+      "max": 700,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A fall tune-up offer to past garage door customers catches worn springs before the freeze and fills the quiet weeks.\"",
+      "when": "Pitch in August, run in September and October."
+    },
+    {
+      "name": "Builder and realtor door upgrade sheet",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A one-page sheet showing how a new garage door changes curb appeal, for agents prepping listings and builders offering upgrades.\"",
+      "when": "Month 3, once the gallery is full."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Epoxy floor installers in the same garages",
+        "whoPays": "The epoxy coating company",
+        "min": 1800,
+        "max": 3000,
+        "unit": "one-time",
+        "pitchLine": "\"People who buy a new garage door often coat the floor next. The epoxy crew you know needs a showroom site.\"",
+        "whyItWorks": "Garage makeovers come in sequence; referrals are natural."
+      },
+      {
+        "route": "Garage storage and cabinet installers",
+        "whoPays": "The garage storage company",
+        "min": 1500,
+        "max": 3500,
+        "unit": "one-time",
+        "pitchLine": "\"Garage cabinet and overhead rack installers work the same garages as your doors. They need a site, and they send door upgrades back.\"",
+        "whyItWorks": "Same room, same homeowner, different budget line."
+      },
+      {
+        "route": "Locksmiths and access control installers",
+        "whoPays": "The locksmith, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"Locksmiths set up keypads and smart locks next to the garage door openers you install. Their site needs the same same-day setup as yours.\"",
+        "whyItWorks": "Both are emergency trades with overlapping customers."
+      },
+      {
+        "route": "Electricians who add garage circuits",
+        "whoPays": "The electrician, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"Opener and EV charger installs both need an outlet in the garage. The electrician you call needs a site too.\"",
+        "whyItWorks": "Electricians are a big referral trade that buys sites."
+      },
+      {
+        "route": "Property managers with rental garages",
+        "whoPays": "The property manager",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"Managers with townhomes and rental garages get door complaints every week. A tenant request page routes them to your garage door client.\"",
+        "whyItWorks": "Managers want one dependable vendor and simple requests."
+      },
+      {
+        "route": "Small home builders choosing doors",
+        "whoPays": "The home builder",
+        "min": 2000,
+        "max": 5000,
+        "unit": "one-time",
+        "pitchLine": "\"The small builders whose new homes get your garage doors need better sites, and you already meet them on every job.\"",
+        "whyItWorks": "Builders buy sites and pick door vendors."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Epoxy crew's floor quote from photos",
+        "whoPays": "The epoxy coating company",
+        "min": 1000,
+        "max": 2500,
+        "unit": "one-time",
+        "pitchLine": "\"The epoxy installer you refer gets a tool that drafts a floor quote from garage photos, and offers a garage door check in the same reply.\"",
+        "whyItWorks": "Cross-promotion built in, warm referral."
+      },
+      {
+        "route": "Tenant door ticket triage",
+        "whoPays": "The property manager, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Tenants type 'garage door won't open' and an assistant asks the right questions, marks trapped cars urgent and sends it to one door company.\"",
+        "whyItWorks": "Managers save dispatch time; the garage door client gets steady work."
+      },
+      {
+        "route": "Storage installer's garage layout planner",
+        "whoPays": "The garage storage company",
+        "min": 1200,
+        "max": 3000,
+        "unit": "one-time",
+        "pitchLine": "\"Homeowners upload a garage photo and get a draft cabinet and rack layout, with door clearance and opener rail position checked.\"",
+        "whyItWorks": "Faster designs close storage jobs; door clearance keeps your client involved."
+      },
+      {
+        "route": "Locksmith's after-hours answering",
+        "whoPays": "The locksmith, monthly",
+        "min": 200,
+        "max": 500,
+        "unit": "monthly",
+        "pitchLine": "\"Late-night lockout calls get answered and booked, and anything about a stuck garage door goes straight to your client.\"",
+        "whyItWorks": "Both trades lose night calls; sharing the answering helps both."
+      },
+      {
+        "route": "Builder upgrade selector for garage doors",
+        "whoPays": "The home builder",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"New-home buyers preview garage door styles and opener upgrades on their elevation, and selections route to the builder's door installer.\"",
+        "whyItWorks": "Upgrade revenue for the builder, and the client becomes the default door vendor."
+      },
+      {
+        "route": "Electrician's EV charger quote assistant",
+        "whoPays": "The electrician",
+        "min": 1000,
+        "max": 2500,
+        "unit": "one-time",
+        "pitchLine": "\"Electricians get a tool that drafts an EV charger quote from panel and garage photos, with garage door opener outlets noted.\"",
+        "whyItWorks": "Charger installs are a growing ask; the garage is shared ground."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Missed-call text-back for stuck garage doors",
+      "kind": "automation",
+      "oneTimeMin": 0,
+      "oneTimeMax": 300,
+      "monthlyMin": 99,
+      "monthlyMax": 199,
+      "pitchLine": "\"Under a door winding a spring when the phone rings? The caller gets a text asking if the car's trapped and what they heard, so the urgent ones get the first callback.\"",
+      "whenAndWhatItTakes": "Day 30. Needs their number forwarded and approved wording."
+    },
+    {
+      "name": "Tech on-the-way texts",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 40,
+      "monthlyMax": 120,
+      "pitchLine": "\"When the garage door tech leaves the last job, the next customer gets a text with a name, a truck photo and an arrival window.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their dispatch list and tech names."
+    },
+    {
+      "name": "Tune-up plan billing and reminders",
+      "kind": "automation",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 50,
+      "monthlyMax": 125,
+      "pitchLine": "\"Tune-up plan members get a reminder each fall and are billed after the visit, so the garage door company sees every customer once a year.\"",
+      "whenAndWhatItTakes": "Month 3, once the plan page is live. Needs plan prices."
+    },
+    {
+      "name": "Repair price range tool",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"A homeowner picks 'loud bang, door won't lift' or 'off track' and sees a fair repair range, which is often what makes them call a garage door company they've never used.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their real repair prices and what changes them."
+    },
+    {
+      "name": "Garage door review reply drafts",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 79,
+      "monthlyMax": 179,
+      "pitchLine": "\"A relieved customer posts that you freed their car before work; a short reply naming the spring fix and the tech is waiting for your tap.\"",
+      "whenAndWhatItTakes": "Month 2, with review texts. Needs a dozen past replies. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Night line for stuck garage doors",
+      "kind": "ai",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 250,
+      "monthlyMax": 600,
+      "pitchLine": "\"It answers at eleven at night, walks the caller through the emergency release if it's safe, books a morning slot and only wakes you for trapped cars.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their calendar, after-hours price and safety script. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Door style preview on the customer's house",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"Homeowners upload a shot of the front and see new garage door styles, colours and windows on their own house, labelled as a preview.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the door lines they sell. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Service call board",
+      "kind": "software",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 6000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"Every repair call, new door quote, order and install on one board, so a garage door order doesn't sit at the distributor while the customer waits.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their call flow and distributor lead times."
+    },
+    {
+      "name": "Spring and part stock tracker for the trucks",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Know which torsion springs, cables and rollers are on each truck, so the tech fixes the garage door on the first visit instead of coming back.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their parts list and a count per truck."
+    },
+    {
+      "name": "Garage door chatbot for symptoms and openers",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 125,
+      "monthlyMax": 300,
+      "pitchLine": "\"It answers 'my door goes down then back up' and 'belt or chain opener' at night, from the owner's notes, and books the visit.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their symptom notes and opener options. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Door and opener install history by address",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 40,
+      "monthlyMax": 120,
+      "pitchLine": "\"Every garage door, spring size and opener installed, saved by address, so the next call starts with the right part on the truck.\"",
+      "whenAndWhatItTakes": "Month 4. Needs past job records."
+    },
+    {
+      "name": "Symptom photo and video diagnosis",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 125,
+      "monthlyMax": 300,
+      "pitchLine": "\"Customers upload a short clip of the door and it suggests likely causes, spring, cable, roller or opener, so the tech brings the right garage door parts.\"",
+      "whenAndWhatItTakes": "Month 5. Needs a library of past calls with outcomes. Comes with the AI maintenance retainer; never tells a customer to touch a spring."
+    },
+    {
+      "name": "New door quote builder with opening sizes",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3500,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Enter the opening, headroom and style and it prices the new garage door, opener and haul-away in one clean quote.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their door price sheet."
+    },
+    {
+      "name": "Commercial door maintenance tracker",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"Every roll-up and dock door under contract with its cycle count, last service and next visit, with reports managers can forward.\"",
+      "whenAndWhatItTakes": "Month 6, once they hold commercial contracts."
+    },
+    {
+      "name": "Spoken service notes to invoice",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"The tech says what was replaced on the garage door, springs, cables, rollers, and an invoice draft appears before they leave the driveway.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their parts price list. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Tech performance by call type",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"See which garage door techs fix on the first visit, sell openers and earn reviews, so coaching is based on the calls, not hunches.\"",
+      "whenAndWhatItTakes": "Month 6, with two or more techs. Needs the service call board running."
+    },
+    {
+      "name": "Old-door replacement nudge",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 40,
+      "monthlyMax": 100,
+      "pitchLine": "\"Customers who had a spring repair on an older garage door get a note months later with replacement styles and a quote link.\"",
+      "whenAndWhatItTakes": "Month 6. Needs repair records marked with door age."
+    },
+    {
+      "name": "Garage door town page writer",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"A new garage door repair page for a town you serve each month, drafted from jobs there and approved by you.\"",
+      "whenAndWhatItTakes": "Month 3. Needs job notes and approval. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Customer page with door history and plan",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 60,
+      "monthlyMax": 150,
+      "pitchLine": "\"Customers see their garage door, opener, spring dates and tune-up plan in one place, and book service in a tap.\"",
+      "whenAndWhatItTakes": "Month 6. Needs install history running."
+    },
+    {
+      "name": "Garage door tech applicant screener",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"Applicants say whether they've wound torsion springs, can lift a door section and take on-call nights, before you spend a call.\"",
+      "whenAndWhatItTakes": "When they post a hiring note. Needs their must-haves. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the repair price range tool",
+      "whoPays": "Garage door companies, monthly",
+      "min": 39,
+      "max": 149,
+      "unit": "monthly",
+      "pitchLine": "\"I built an honest repair range tool for one garage door company. Every independent in the state fights the same price-gouging reputation.\"",
+      "whyItWorks": "A trust problem shared across the trade; one tool fixes it."
+    },
+    {
+      "route": "Dealer site program for a door manufacturer",
+      "whoPays": "The garage door manufacturer",
+      "min": 8000,
+      "max": 30000,
+      "unit": "one-time",
+      "pitchLine": "\"Your garage door dealers all run the same thin page. A program that gives each a real site with local repair pages sells more doors.\"",
+      "whyItWorks": "Manufacturers fund dealer marketing; you know the dealer side."
+    },
+    {
+      "route": "Installer finder for a garage door distributor",
+      "whoPays": "The distributor, annually",
+      "min": 4000,
+      "max": 15000,
+      "unit": "per-year",
+      "pitchLine": "\"Homeowners ask the distributor's counter who installs their doors. A searchable installer map answers that and keeps installers ordering.\"",
+      "whyItWorks": "Distributors spend on installer loyalty."
+    },
+    {
+      "route": "Garage door dealers' association template",
+      "whoPays": "The association",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer member garage door companies a template with a same-day repair request and honest range page.\"",
+      "whyItWorks": "Associations can push trust standards across members."
+    },
+    {
+      "route": "Garage door template for agencies",
+      "whoPays": "The agency, per client",
+      "min": 500,
+      "max": 1200,
+      "unit": "one-time",
+      "pitchLine": "\"Agencies running paid search for garage door companies need landing pages that convert. License my repair template.\"",
+      "whyItWorks": "Agencies already sell to this trade heavily."
+    },
+    {
+      "route": "Garage door franchise territory pages",
+      "whoPays": "The franchise group, per territory",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "pitchLine": "\"Each garage door territory needs town repair pages and a request form routed to the right owner.\"",
+      "whyItWorks": "Repeatable across territories."
+    },
+    {
+      "route": "Opener maker's service locator",
+      "whoPays": "The opener manufacturer",
+      "min": 5000,
+      "max": 20000,
+      "unit": "one-time",
+      "pitchLine": "\"When an opener fails, owners search for help. A locator that routes them to vetted garage door techs keeps service in the network.\"",
+      "whyItWorks": "Service requests are lost revenue for the maker today."
+    },
+    {
+      "route": "Multi-family garage maintenance portal",
+      "whoPays": "The property management firm, annually",
+      "min": 3000,
+      "max": 10000,
+      "unit": "per-year",
+      "pitchLine": "\"Townhome communities with rows of garage doors get one request and maintenance portal, routed to a contracted door company.\"",
+      "whyItWorks": "Big portfolios buy once and roll out."
+    },
+    {
+      "route": "Home warranty company door repair network",
+      "whoPays": "The home warranty provider",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Home warranty companies need dependable garage door techs and a clean claim intake. Build the intake and the vetted network page.\"",
+      "whyItWorks": "Warranty providers struggle to find good door techs."
+    },
+    {
+      "route": "Monthly spring and opener parts price note",
+      "whoPays": "Garage door companies, monthly",
+      "min": 19,
+      "max": 59,
+      "unit": "monthly",
+      "pitchLine": "\"A short monthly note on spring, cable and opener prices garage door companies report, so repair prices keep up.\"",
+      "whyItWorks": "Built only from shared data; it never claims more than members report."
+    },
+    {
+      "route": "Exclusive door company per metro",
+      "whoPays": "A garage door company in a new metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"My garage door clients each get their metro alone. With {City} signed, the most trusted independent door company an hour away is next.\"",
+      "whyItWorks": "Exclusivity matters in an ad-heavy trade."
+    },
+    {
+      "route": "Rescue garage door sites tied to ad agencies",
+      "whoPays": "The garage door company leaving an agency",
+      "min": 1200,
+      "max": 3500,
+      "unit": "one-time",
+      "pitchLine": "\"Garage door owners leaving a pay-per-lead agency often lose the site with it. I rebuild one they own in two weeks.\"",
+      "whyItWorks": "Owners burned by rented sites buy ownership fast."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Garage door site build plus care plan, one contract",
+      "min": 1500,
+      "max": 2500,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The garage door site and care plan go on one contract, so changing a spring price or the on-call number is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Review texts after each door visit",
+      "min": 99,
+      "max": 199,
+      "unit": "monthly",
+      "trigger": "The first repair booked through the site is done.",
+      "line": "\"That first online repair call freed someone's car. Let's get a review from every garage door visit.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "Missed-call text-back for stuck garage doors",
+      "min": 0,
+      "max": 300,
+      "unit": "one-time",
+      "trigger": "They mention missing calls while on a job.",
+      "line": "\"Every missed garage door call is someone else's spring job. A text back keeps them yours.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Local Services Ads for garage door repair",
+      "min": 400,
+      "max": 900,
+      "unit": "monthly",
+      "trigger": "Reviews pass a steady count and their licence and insurance are current.",
+      "line": "\"Your reviews are strong enough for the licence-checked garage door ads now.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Night line for stuck garage doors",
+      "min": 1200,
+      "max": 3000,
+      "unit": "one-time",
+      "trigger": "The call log shows several after-hours garage door calls missed.",
+      "line": "\"Those night calls about doors stuck open are going elsewhere. This answers them.\""
+    },
+    {
+      "rung": 6,
+      "day": 120,
+      "offer": "Fall tune-up campaign",
+      "min": 300,
+      "max": 700,
+      "unit": "one-time",
+      "trigger": "Late summer arrives with open slots in the schedule.",
+      "line": "\"Let's tune up past customers' garage doors before the freeze snaps their springs.\""
+    },
+    {
+      "rung": 7,
+      "day": 180,
+      "offer": "Service call board",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "trigger": "They add a second garage door tech or truck.",
+      "line": "\"Two trucks need one board for calls and door orders. Let's set it up.\""
+    }
+  ]
+}

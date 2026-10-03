@@ -1,0 +1,842 @@
+{
+  "schemaVersion": 1,
+  "category": "Window cleaning",
+  "slug": "window-cleaning",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Ext family batch, book archetype. Small residential tickets; the value is recurring plans and storefront routes, so products stay cheap and route-shaped. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Pane-count window quote",
+      "contains": "Window count by size, storeys, inside and outside, French panes, skylights, sunrooms and hard-to-reach glass, with a price range before booking",
+      "why": "Window cleaning is priced by panes, not hours. A homeowner who can count their windows can book tonight without a visit."
+    },
+    {
+      "section": "Screens, tracks and hard-water add-ons",
+      "contains": "Screen washing and repair, track vacuuming, sill wiping, sprinkler hard-water stains, and sticker or paint removal after construction",
+      "why": "Add-ons are where the margin is. Listing them clearly turns a basic outside-only clean into a full visit."
+    },
+    {
+      "section": "Recurring window cleaning plans",
+      "contains": "Spring and fall, quarterly or monthly plans, inside-out alternation, route days by neighbourhood, and plan sign-up with card on file",
+      "why": "One-off cleans pay the bills; plans build the business. A plan page makes 'see you in the fall' an automatic booking."
+    },
+    {
+      "section": "Storefront window routes",
+      "contains": "Weekly or monthly storefront glass, door glass and signage, before-opening service times, monthly invoicing, and a route sign-up for shop owners",
+      "why": "Storefront routes are steady, small and recurring. Shop owners want to know the day, the time and the monthly price."
+    },
+    {
+      "section": "Water-fed poles, ladders and safety",
+      "contains": "Pure-water poles for second-storey glass, ladder standoffs that protect gutters, insurance, protecting landscaping, and what happens on a rainy day",
+      "why": "Homeowners worry about ladders on their gutters and someone falling. Explaining the method and insurance settles it."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C26",
+      "siteType": "local-conversion",
+      "name": "Sparkle Day",
+      "heroLayout": "split-photo",
+      "mood": [
+        "cheerful",
+        "clear",
+        "simple"
+      ],
+      "bestFor": "One-person window cleaners building a residential list in a few neighbourhoods",
+      "pairsWithTier": "starter",
+      "headlineSample": "Window cleaning in {City}, inside and out",
+      "whyItFits": "Sky blue and soft rounded type feel friendly and light, like clean glass. The page is a pane-count quote and a Book button."
+    },
+    {
+      "id": "b",
+      "themeId": "C8",
+      "siteType": "booking-first",
+      "name": "Clear Every Season",
+      "heroLayout": "card-stack",
+      "mood": [
+        "reassuring",
+        "orderly",
+        "dependable"
+      ],
+      "bestFor": "Window cleaning companies selling recurring residential plans and add-ons with online booking",
+      "pairsWithTier": "standard",
+      "headlineSample": "Streak-free windows on a schedule across {City}",
+      "whyItFits": "The family's own combo. Evergreen and a refined serif read like a dependable service you let into your house, and the card stack shows plans side by side."
+    },
+    {
+      "id": "c",
+      "themeId": "C40",
+      "siteType": "premium-brand",
+      "name": "Estate Glass",
+      "heroLayout": "full-bleed-photo",
+      "mood": [
+        "quiet",
+        "meticulous",
+        "discreet"
+      ],
+      "bestFor": "Window cleaners serving large homes with many panes, skylights, chandeliers and discreet scheduling",
+      "pairsWithTier": "premium",
+      "headlineSample": "Meticulous window care for {City}'s finest homes",
+      "whyItFits": "Driftwood neutrals and an old-style serif feel quiet and expensive, suited to homes where the cleaner is trusted inside and paid for care."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your Maps listing has reviews about spotless glass but nowhere to book. People decide they're sick of streaky windows on a sunny afternoon and want a cleaning date right then.",
+      "hook": "Open their Maps listing and confirm there's no Website button. Screenshot it for when they reply.",
+      "linkLine": "A window cleaning booking page for that button: {demo-link}"
+    },
+    {
+      "angle": "Facebook-only link",
+      "line": "Your listing points to Facebook. Someone wanting their windows cleaned before guests arrive needs a price by pane count and a date, not a feed to scroll.",
+      "hook": "Tap their Website link and confirm it's Facebook. Note the most recent window job posted.",
+      "linkLine": "A window cleaning page with prices and booking: {demo-link}"
+    },
+    {
+      "angle": "Old free site",
+      "line": "Your window cleaning site still has a free-host banner and a contact form that bounces. For a business that sells clear glass, it looks a little foggy.",
+      "hook": "Open the site and look for a banner, a stale copyright or a broken form. Note which.",
+      "linkLine": "The same window cleaner, a clear page: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "Your window cleaning prices sit in a table that I had to pinch and zoom on my phone. Most people book a window washer from their phone.",
+      "hook": "Only if they have a site. Load it on your phone and note what breaks. Screenshot it for when they reply.",
+      "linkLine": "Your window cleaning site rebuilt for phones: {demo-link}"
+    },
+    {
+      "angle": "No price by pane",
+      "line": "Right now, finding out what you charge for windows means messaging you. A quick count of panes and storeys gives a price and books the window cleaning in one go.",
+      "hook": "Check their profile, listing and any site for prices. If there are none, the angle holds.",
+      "linkLine": "A pane-count quote that books itself: {demo-link}"
+    },
+    {
+      "angle": "Satisfying squeegee clips",
+      "line": "Your squeegee clips are the kind people watch twice. Right now they end with nowhere to book a window cleaning, just a comment section.",
+      "hook": "Find a short squeegee or water-fed pole clip on their profile. Note what it shows.",
+      "linkLine": "Those squeegee clips with a Book button below: {demo-link}"
+    },
+    {
+      "angle": "Reviews about care inside",
+      "line": "Your reviews mention shoe covers and towels under every sill. Letting someone in to clean inside windows takes trust, and those reviews are the trust. They just never leave Google.",
+      "hook": "Read their reviews and copy one phrase about care inside the house. Quote it back.",
+      "linkLine": "Those window cleaning reviews where people book: {demo-link}"
+    },
+    {
+      "angle": "Spring cleaning season",
+      "line": "Spring is when everyone notices winter grime on the glass and window cleaning calendars fill in days. Online booking means you're full before your competitors call back.",
+      "hook": "Use in late winter or early spring. Name the season in the reply.",
+      "linkLine": "Spring window cleaning, bookable now: {demo-link}"
+    },
+    {
+      "angle": "Holiday guests",
+      "line": "Before the holidays, people want their windows clean for guests and book at night after work. If booking a window cleaner means a daytime call, the date goes to someone else.",
+      "hook": "Use in October and November. Check whether any online booking exists.",
+      "linkLine": "Holiday window cleaning, bookable at night: {demo-link}"
+    },
+    {
+      "angle": "Hiring a second cleaner",
+      "line": "Saw you're hiring another window cleaner. A plan page that keeps the calendar full is what pays a second person through the slow months.",
+      "hook": "Only if they posted a hiring note. Note the date.",
+      "linkLine": "A window cleaning page with plans and careers: {demo-link}"
+    },
+    {
+      "angle": "Storefront glass",
+      "line": "You clean storefront windows as well as homes. Shop owners want a weekly or monthly window route price and a set day, and there's no page for them to sign up.",
+      "hook": "Only if they've posted storefront or commercial glass. Note the shop type.",
+      "linkLine": "A storefront window route sign-up: {demo-link}"
+    },
+    {
+      "angle": "Recurring plans",
+      "line": "If customers already book you every spring and fall, a window cleaning plan sign-up makes that automatic and fills your routes months ahead.",
+      "hook": "Look for reviews like 'they come every season'. Quote it back.",
+      "linkLine": "A window cleaning plan page: {demo-link}"
+    },
+    {
+      "angle": "Insured on ladders",
+      "line": "Second-storey window cleaning means ladders against someone's house. A page showing your insurance and your pole method settles the nervous homeowner.",
+      "hook": "Check whether they mention insurance or water-fed poles. Never quote a policy you didn't see.",
+      "linkLine": "Insurance and methods on one window cleaning page: {demo-link}"
+    },
+    {
+      "angle": "Recommended in local groups",
+      "line": "Neighbours keep tagging you whenever someone wants a window cleaner recommended. The people who follow that tag can't pick a date or see a price anywhere.",
+      "hook": "Search a neighbourhood or HOA group for their name. Note one thread.",
+      "linkLine": "Where those window cleaning recommendations could book: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "That {specific recent job} you posted shows windows so clear they look open. It deserves to be the first thing people see on a window cleaning page, right above the Book button.",
+      "hook": "Pick their newest job post and name it: house style, sunroom, storefront, and the street if tagged.",
+      "linkLine": "That window cleaning job, front and centre: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, that {specific recent job} you posted is crystal clear glass, lovely work.\n\nI looked for window cleaners in {City} and found {Business Name}, but no way to get a price by window count or book a date without messaging. I mocked up a sample booking site to see how it would look, with marked placeholders where your photos would go.\n\nShall I send it over?",
+    "dm2": "{Owner}, nudging this up in case it got lost. Here's the sample window cleaning site for {Business Name}: {demo-link}\n\nIt has a pane-count quote, online booking, screen and track add-ons, a recurring plan sign-up and a storefront route page. If it's not for you, tell me and I'll leave it there.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build booking sites for window cleaners in {City}. I sent a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"No problem. Quick version: I built a sample site for {Business Name} where customers count their windows, see a price and book, with marked placeholders where your photos would go. Can I text you the link?\"\n\nIF YES:\n\"What did you think of it?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range} depending on plans and storefront pages, then {Care Range} a month for hosting and price changes. For a window cleaner your size I'd quote about {Build Price}, which a handful of plan customers covers.\"\n\"Could I show you around it for ten minutes one evening this week?\"\n\nCLOSE:\n\"I'll send a short scope and a deposit invoice. It's live before spring cleaning season.\"",
+    "objections": [
+      {
+        "objection": "My customers just text me when they want a clean.",
+        "handler": "\"That works for the ones you have. New people won't text a stranger, they'll book whoever shows a price. And a plan means your regulars don't have to remember to text.\""
+      },
+      {
+        "objection": "Window cleaning jobs are too small for a website.",
+        "handler": "\"Each one is. A route of plan customers isn't. The site is there to sign up plans and storefronts, not single cleans.\""
+      },
+      {
+        "objection": "I can't price without seeing the house.",
+        "handler": "\"It gives a range by pane count and storeys, and you confirm on arrival. Most people only need a ballpark to book.\""
+      },
+      {
+        "objection": "Winter is slow and money's tight.",
+        "handler": "\"That's why winter is when to build it. The plan sign-ups fill your spring before the first warm day.\""
+      },
+      {
+        "objection": "I'm fine with word of mouth.",
+        "handler": "\"Word of mouth sends people to search your name. Right now they find a listing with no way to book. The site catches the referral.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}, for the pane-count quote, booking and a plan page. A few plan customers pay it back.\""
+      }
+    ],
+    "email": {
+      "subject": "Booking site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build booking sites for window cleaners around {City}. {Business Name} has glowing reviews, but no site where someone can count their windows, see a price and book.\n\nI built a sample first: a pane-count quote, online booking, screen, track and hard-water add-ons, a recurring cleaning plan and a storefront route sign-up, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and price edits. If not, it comes down at the end of the month.\n\nWorth ten minutes on the phone this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build booking sites for window cleaners in {City} and made a sample for {Business Name} with a pane-count quote. I'll text the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm tidying up demos on Friday and the {Business Name} window cleaning one is on the list.\n\nWant me to keep it? Just a yes or no.",
+    "nurture": "Hi {Owner}, spring window cleaning season is close and calendars fill fast once the sun shows the winter grime. Thought of you.\n\nThe booking site's still here, same price. {demo-link} if you'd like another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to a handful of plan customers, never to a big-ticket build; single cleans are small.",
+      "Price the pane-count quote as its own line; it replaces the back-and-forth over text.",
+      "Plans with card on file are the most valuable piece; price the sign-up separately.",
+      "Only add a storefront route page for cleaners who already do commercial glass.",
+      "Keep add-on pages small: screens, tracks and hard water belong on one page, not three.",
+      "Products for this trade should pay back within one season; keep monthly prices low."
+    ],
+    "lineItems": [
+      {
+        "item": "Pane-count quote with storeys and add-ons",
+        "min": 350,
+        "max": 800,
+        "unit": "one-time",
+        "description": "Max when it covers French panes, skylights, screens, tracks and hard water with inside-out options.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Recurring plan sign-up with card on file",
+        "min": 400,
+        "max": 900,
+        "unit": "one-time",
+        "description": "Max with several plan frequencies, route-day selection and automatic rebooking.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Storefront route sign-up page",
+        "min": 250,
+        "max": 600,
+        "unit": "per-page",
+        "description": "Max with weekly or monthly options, before-opening times and monthly invoicing set up.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Screens, tracks and hard-water page",
+        "min": 200,
+        "max": 450,
+        "unit": "per-page",
+        "description": "Max with before-and-after sliders and a post-construction cleaning request form.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Neighbourhood route page (each)",
+        "min": 150,
+        "max": 300,
+        "unit": "per-page",
+        "description": "Max when each page shows that neighbourhood's route day and local jobs.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Spanish-language booking path",
+        "min": 300,
+        "max": 700,
+        "unit": "one-time",
+        "description": "Max when the quote, plan sign-up and storefront page are all translated.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Squeegee clip filming morning",
+      "min": 250,
+      "max": 600,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A morning filming squeegee passes, water-fed pole rinses and sparkling sunrooms gives you a month of short window cleaning clips.\"",
+      "when": "Month 2, on a bright day with a big glass job booked."
+    },
+    {
+      "name": "Google profile posts of window cleaning jobs",
+      "min": 150,
+      "max": 300,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Each week a sunroom, storefront or second-storey window cleaning job goes on your Google profile with the neighbourhood, so the map shows you're out every day.\"",
+      "when": "Day 30, once the site is live."
+    },
+    {
+      "name": "Review requests after each window clean",
+      "min": 59,
+      "max": 149,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"When the sun hits the clean glass that afternoon, the customer gets a text asking how the window cleaner did. That's when they notice.\"",
+      "when": "Day 30. The easiest second sale."
+    },
+    {
+      "name": "Van magnet and door hanger design",
+      "min": 150,
+      "max": 400,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A neat van magnet and a door hanger with a neighbour discount turn each window cleaning visit into the next house on the street.\"",
+      "when": "Right after launch."
+    },
+    {
+      "name": "Same-street door hangers on route days",
+      "min": 75,
+      "max": 200,
+      "unit": "per-job",
+      "scalesWithMarket": true,
+      "pitchLine": "\"On a route day, the houses either side get a hanger saying their window cleaner is already on the street next month, with a booking code.\"",
+      "when": "Month 2, once route days exist."
+    },
+    {
+      "name": "Spring and holiday cleaning pushes",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Two short pushes a year, spring grime and holiday guests, to past customers and local groups fill the window cleaning calendar at its two peaks.\"",
+      "when": "Pitch in January and September."
+    },
+    {
+      "name": "Storefront route flyer for shop owners",
+      "min": 150,
+      "max": 400,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A one-page flyer with your weekly storefront window price, walked into every shop on the block, turns one commercial stop into a route.\"",
+      "when": "Month 3, for cleaners with any storefront work."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Pressure washers on the same houses",
+        "whoPays": "The pressure washing company",
+        "min": 1200,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"House wash and window cleaning go together on every spring list. The washer you swap customers with needs a booking site too.\"",
+        "whyItWorks": "Same houses, same season, no overlap in service."
+      },
+      {
+        "route": "House cleaners who skip outside glass",
+        "whoPays": "The house cleaning company",
+        "min": 1000,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"Maid services get asked about windows constantly and send it to you. They need a booking site as much as any window cleaner.\"",
+        "whyItWorks": "Residential cleaners are a large, referral-friendly trade that buys booking sites."
+      },
+      {
+        "route": "Gutter cleaners on the ladder route",
+        "whoPays": "The gutter company",
+        "min": 1500,
+        "max": 2500,
+        "unit": "one-time",
+        "pitchLine": "\"Gutter cleaning and window cleaning happen the same spring and fall weeks. Your gutter partner needs a plan sign-up page.\"",
+        "whyItWorks": "Overlapping seasons and customers; both sell plans."
+      },
+      {
+        "route": "Shop owners on the storefront route",
+        "whoPays": "The shop or restaurant owner",
+        "min": 1200,
+        "max": 3000,
+        "unit": "one-time",
+        "pitchLine": "\"The shops whose windows you clean weekly have their own website problems, and they already trust you with their front door.\"",
+        "whyItWorks": "Small retailers need sites and see you every week."
+      },
+      {
+        "route": "Builders who need post-construction glass cleaning",
+        "whoPays": "The home builder, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"Every new build needs stickers and paint scraped off the glass before closing. The builder who calls your window cleaner needs a better site.\"",
+        "whyItWorks": "Small builders are under-served online and refer final-clean trades."
+      },
+      {
+        "route": "Realtors and stagers before listing photos",
+        "whoPays": "The agent or stager",
+        "min": 1200,
+        "max": 3000,
+        "unit": "one-time",
+        "pitchLine": "\"Agents book window cleaning before listing photos. They need a vendor page, and your client is the window cleaner on it.\"",
+        "whyItWorks": "Agents buy credibility and send steady pre-listing work."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Maid service quote bot",
+        "whoPays": "The house cleaning company",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"The maid service you trade window referrals with gets a bot that quotes by bedrooms and bathrooms and offers your window cleaning as an add-on.\"",
+        "whyItWorks": "Configuration of a quote flow you know, with your client built in."
+      },
+      {
+        "route": "Storefront owner's maintenance scheduler",
+        "whoPays": "The shop owner, monthly",
+        "min": 50,
+        "max": 150,
+        "unit": "monthly",
+        "pitchLine": "\"A small assistant that reminds a shop owner when the windows, mats, pest visit and hood cleaning are due, and books the window route day.\"",
+        "whyItWorks": "Owners forget recurring vendors; the window cleaner gets a sticky slot."
+      },
+      {
+        "route": "Listing prep checklist for agents",
+        "whoPays": "The brokerage, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"Agents upload a walkthrough and get a prep checklist, windows, wash, touch-up, with the local vendors to book.\"",
+        "whyItWorks": "Agents want quick seller prep; the window cleaner is first on the list."
+      },
+      {
+        "route": "Builder's closing punch-list assistant",
+        "whoPays": "The home builder",
+        "min": 1000,
+        "max": 2500,
+        "unit": "one-time",
+        "pitchLine": "\"Builders get an assistant that turns walkthrough notes into a closing punch list and books the final window cleaning automatically.\"",
+        "whyItWorks": "Builders need clean closings; the window client gets every final clean."
+      },
+      {
+        "route": "Pressure washer's photo quote",
+        "whoPays": "The pressure washing company",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"Your washing partner gets a tool that quotes driveways and siding from a house shot, with window cleaning offered after.\"",
+        "whyItWorks": "Cross-promotion built into the tool."
+      },
+      {
+        "route": "Gutter partner's cleaning reminders",
+        "whoPays": "The gutter company, monthly",
+        "min": 50,
+        "max": 150,
+        "unit": "monthly",
+        "pitchLine": "\"The gutter cleaner you share houses with gets automated spring and fall reminders that offer your window cleaning in the same text.\"",
+        "whyItWorks": "Shared seasonal timing makes joint reminders natural."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Missed-call text with the pane-count quote",
+      "kind": "automation",
+      "oneTimeMin": 0,
+      "oneTimeMax": 250,
+      "monthlyMin": 49,
+      "monthlyMax": 119,
+      "pitchLine": "\"Squeegee in one hand, pole in the other? Callers you can't answer get a text linking the window count quote, and most book before you're off the ladder.\"",
+      "whenAndWhatItTakes": "Day 30. Needs their number forwarded and the quote page live."
+    },
+    {
+      "name": "Route-day reminders for window customers",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 500,
+      "monthlyMin": 30,
+      "monthlyMax": 90,
+      "pitchLine": "\"Two days before their window cleaning, customers get a text to unlock the side gate and clear the sills, so nobody waits on the porch.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their route days and gate notes."
+    },
+    {
+      "name": "Plan billing for recurring window cleans",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 40,
+      "monthlyMax": 100,
+      "pitchLine": "\"Plan customers are charged after each window cleaning visit is marked done and rebooked for the next season automatically.\"",
+      "whenAndWhatItTakes": "Month 2, once plans are selling. Needs plan prices and a payment account."
+    },
+    {
+      "name": "Storefront monthly invoicing",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 700,
+      "monthlyMin": 30,
+      "monthlyMax": 80,
+      "pitchLine": "\"Every storefront on the window route gets one tidy invoice at month end listing each visit, paid by card link.\"",
+      "whenAndWhatItTakes": "Month 3, once there are several storefront accounts."
+    },
+    {
+      "name": "Window count from a house shot",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"A homeowner uploads front and back shots and it drafts a pane count by storey, so the window cleaning quote is close before anyone counts.\"",
+      "whenAndWhatItTakes": "Month 3. Needs a set of past jobs with counts. Comes with the AI maintenance retainer; you confirm on arrival."
+    },
+    {
+      "name": "Thank-you notes for glass reviews",
+      "kind": "ai",
+      "oneTimeMin": 200,
+      "oneTimeMax": 600,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"When someone praises how clear their sunroom looks, a warm reply mentioning the windows and their neighbourhood is ready for your OK.\"",
+      "whenAndWhatItTakes": "Month 2, with review requests. Needs a few past replies. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Window route planner by neighbourhood",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2500,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Plan customers are grouped into route days by neighbourhood, so the window cleaner does a street in a morning instead of zigzagging.\"",
+      "whenAndWhatItTakes": "Month 3, once there are enough plans to route."
+    },
+    {
+      "name": "Customer glass notes and gate codes",
+      "kind": "software",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1200,
+      "monthlyMin": 30,
+      "monthlyMax": 80,
+      "pitchLine": "\"Each customer's pane count, tricky windows, ladder spots, pets and gate codes saved, so any window cleaner on the crew can do the house.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their customer notes typed in once."
+    },
+    {
+      "name": "Window cleaning FAQ chatbot",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1800,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"It answers 'do you do inside too' and 'what if it rains' at night, from your window cleaning policies, and drops the booking link.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their policies and add-on list. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Before-and-after job report",
+      "kind": "software",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1200,
+      "monthlyMin": 30,
+      "monthlyMax": 80,
+      "pitchLine": "\"After each clean the customer gets a short report with shots of the worst windows before and after, and any broken screens flagged for repair.\"",
+      "whenAndWhatItTakes": "Month 3. Needs a logo and their checklist."
+    },
+    {
+      "name": "Hard-water stain assessor",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Customers upload sprinkler-spotted glass and it suggests whether it's a normal window clean or a hard-water restoration job, for you to confirm.\"",
+      "whenAndWhatItTakes": "Month 5. Needs past hard-water jobs with notes. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Plan member page for window customers",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 40,
+      "monthlyMax": 120,
+      "pitchLine": "\"Members see their next window cleaning date, past reports and can add screens or tracks to the next visit.\"",
+      "whenAndWhatItTakes": "Month 5. Needs plan billing running."
+    },
+    {
+      "name": "Storefront route sheet app",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 40,
+      "monthlyMax": 120,
+      "pitchLine": "\"The storefront window route in order on a phone, with opening times, door codes and a tap to mark each shop done with a shot.\"",
+      "whenAndWhatItTakes": "Month 4, once they run a storefront route."
+    },
+    {
+      "name": "Window cleaning post writer",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"A month of window cleaning posts drafted from your jobs and the season, spring grime, pollen, holiday guests, approved before posting.\"",
+      "whenAndWhatItTakes": "Month 3. Needs approval on every post. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Supplies and mileage tracker",
+      "kind": "software",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 30,
+      "monthlyMax": 80,
+      "pitchLine": "\"Track squeegee rubber, pure-water resin, ladders and mileage per route, and see which window cleaning neighbourhoods actually pay.\"",
+      "whenAndWhatItTakes": "Month 6. Needs a season of receipts."
+    },
+    {
+      "name": "Storefront prospect letter drafter",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Name a street of shops and it drafts a short letter for each, offering a weekly window cleaning slot on the route you already drive.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their storefront price. Comes with the AI maintenance retainer; you send every letter yourself."
+    },
+    {
+      "name": "Crew schedule for a second window cleaner",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 60,
+      "monthlyMax": 175,
+      "pitchLine": "\"When a second window cleaner starts, each gets their own route list, customer notes and job reports on a phone.\"",
+      "whenAndWhatItTakes": "Month 6, when they hire."
+    },
+    {
+      "name": "Screen repair quote helper",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 40,
+      "monthlyMax": 120,
+      "pitchLine": "\"Torn screens get snapped during the window clean, and it drafts a rescreen quote by size for the customer to approve.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their screen prices. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Window cleaning applicant screener",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 50,
+      "monthlyMax": 125,
+      "pitchLine": "\"Window cleaner applicants say whether they're fine on ladders, can work inside homes and pass a background check, before you call.\"",
+      "whenAndWhatItTakes": "When they post a hiring note. Needs their must-haves. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Seasonal rebooking for lapsed window customers",
+      "kind": "software",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 30,
+      "monthlyMax": 80,
+      "pitchLine": "\"A list of everyone who had windows cleaned last year but hasn't rebooked, with one-tap texts offering their usual route day.\"",
+      "whenAndWhatItTakes": "Month 6. Needs last year's customer list."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the pane-count quote",
+      "whoPays": "Window cleaners, monthly",
+      "min": 19,
+      "max": 79,
+      "unit": "monthly",
+      "pitchLine": "\"I built a pane-count quote for one window cleaner. Every window cleaning business answers 'how much for my house' by text all day.\"",
+      "whyItWorks": "Many small operators, one simple tool, a low monthly price."
+    },
+    {
+      "route": "Water-fed pole supplier's operator finder",
+      "whoPays": "The equipment supplier, annually",
+      "min": 2000,
+      "max": 8000,
+      "unit": "per-year",
+      "pitchLine": "\"A find-a-window-cleaner map on the pole and resin supplier's site sends homeowners to the operators who buy from them.\"",
+      "whyItWorks": "Suppliers want operators busy and loyal."
+    },
+    {
+      "route": "Window cleaning association member template",
+      "whoPays": "The trade association",
+      "min": 1000,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer members a window cleaning booking template with plans and storefront pages as a membership benefit.\"",
+      "whyItWorks": "Associations need renewal reasons."
+    },
+    {
+      "route": "Starter site for window cleaning course graduates",
+      "whoPays": "The training provider, per graduate",
+      "min": 150,
+      "max": 400,
+      "unit": "one-time",
+      "pitchLine": "\"Window cleaning start-up courses turn out new operators who all need a booking site the week they finish.\"",
+      "whyItWorks": "Course owners want graduates to succeed and will bundle it."
+    },
+    {
+      "route": "Window cleaning template for agencies",
+      "whoPays": "The agency, per client",
+      "min": 250,
+      "max": 600,
+      "unit": "one-time",
+      "pitchLine": "\"Agencies with a window cleaner client can license my booking template with the pane-count quote built in.\"",
+      "whyItWorks": "Small builds agencies don't want to design from scratch."
+    },
+    {
+      "route": "Exterior cleaning franchise booking sites",
+      "whoPays": "The franchise group, per location",
+      "min": 500,
+      "max": 1500,
+      "unit": "one-time",
+      "pitchLine": "\"Window and exterior cleaning franchises need a booking site per territory with local route days. One template, many owners.\"",
+      "whyItWorks": "Franchises roll out the same build repeatedly."
+    },
+    {
+      "route": "Commercial glass schedule portal for property managers",
+      "whoPays": "The property management firm, annually",
+      "min": 2000,
+      "max": 6000,
+      "unit": "per-year",
+      "pitchLine": "\"Managers with many low-rise buildings get one portal that schedules window cleaning visits and keeps proof-of-service shots.\"",
+      "whyItWorks": "Managers prefer one portal across buildings."
+    },
+    {
+      "route": "Business district storefront program",
+      "whoPays": "The business improvement district",
+      "min": 2000,
+      "max": 6000,
+      "unit": "per-year",
+      "pitchLine": "\"A downtown district can offer every shop a shared window cleaning route sign-up, with one local cleaner doing the whole street.\"",
+      "whyItWorks": "Districts fund clean storefronts and like one simple program."
+    },
+    {
+      "route": "Home cleaning marketplace add-on for maid services",
+      "whoPays": "Maid services, monthly",
+      "min": 29,
+      "max": 79,
+      "unit": "monthly",
+      "pitchLine": "\"Maid services elsewhere can offer outside window cleaning through a partner booking widget routed to local window cleaners.\"",
+      "whyItWorks": "Every maid service gets asked about windows."
+    },
+    {
+      "route": "Spring and holiday campaign kit for other window cleaners",
+      "whoPays": "Window cleaners in other metros",
+      "min": 100,
+      "max": 300,
+      "unit": "one-time",
+      "pitchLine": "\"The spring grime and holiday guest pushes, packaged with posts and texts, for window cleaners anywhere.\"",
+      "whyItWorks": "Every window cleaner has the same two peaks."
+    },
+    {
+      "route": "Exclusive window cleaner per suburb",
+      "whoPays": "A window cleaner in a new suburb",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I keep one window cleaning business per suburb. {City} is covered, so the demo goes to the tidiest operator next door.\"",
+      "whyItWorks": "Suburbs each support a few window cleaners; the demo carries over."
+    },
+    {
+      "route": "Rescue window cleaner sites",
+      "whoPays": "The stranded window cleaner",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "pitchLine": "\"When a window cleaner's old page stops taking bookings, I swap in the pane-count template and they're live again before the next route day.\"",
+      "whyItWorks": "Quick, cheap, already-decided buyers."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Window cleaning booking site plus care plan, one contract",
+      "min": 1000,
+      "max": 1800,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The window cleaning site and care plan go on one contract, so changing a pane price is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Review requests after each window clean",
+      "min": 59,
+      "max": 149,
+      "unit": "monthly",
+      "trigger": "The first window cleaning booked online is done.",
+      "line": "\"That first online booking is a review waiting. Let's ask every window customer the same afternoon.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "Plan billing for recurring window cleans",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "trigger": "The first plan sign-ups arrive.",
+      "line": "\"You've got window plan customers now. Let them pay and rebook on their own.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Window route planner by neighbourhood",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "trigger": "They mention driving across town between window jobs.",
+      "line": "\"Your window customers cluster in a few neighbourhoods. Let's make those route days.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Storefront route flyer for shop owners",
+      "min": 150,
+      "max": 400,
+      "unit": "one-time",
+      "trigger": "They land their first storefront through the site.",
+      "line": "\"One storefront is a start. A flyer down the same block makes it a window route.\""
+    },
+    {
+      "rung": 6,
+      "day": 150,
+      "offer": "Spring and holiday cleaning pushes",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "trigger": "The calendar shows open weeks heading into the spring or holiday peak.",
+      "line": "\"There are gaps before the busy window season. Let's fill them from past customers first.\""
+    },
+    {
+      "rung": 7,
+      "day": 180,
+      "offer": "Crew schedule for a second window cleaner",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "trigger": "They hire a second window cleaner.",
+      "line": "\"Two window cleaners need their own routes and notes. Let's set that up before the new hire starts.\""
+    }
+  ]
+}

@@ -89,7 +89,13 @@ const STOP = new Set([
 
 function categoryNouns(cat: (typeof CATS)[number]): { nouns: Set<string>; stems: string[] } {
   const nouns = new Set<string>();
-  for (const src of [cat.n, ...cat.q]) for (const w of words(src)) if (w.length >= 3 && !GENERIC.has(w)) nouns.add(w);
+  for (const src of [cat.n, ...cat.q])
+    for (const w of words(src))
+      if (w.length >= 3 && !GENERIC.has(w)) {
+        nouns.add(w);
+        // "painting" → "paint", "staining" → "stain": the trade's verb form is as specific as its noun.
+        if (w.length > 6 && w.endsWith("ing")) nouns.add(w.slice(0, -3));
+      }
   for (const t of cat.t) if (t.length >= 3 && !GENERIC.has(t)) nouns.add(depluralise(t));
   return { nouns, stems: cat.t.filter((t) => t.length >= 6).map(depluralise) };
 }
@@ -128,7 +134,7 @@ function badNumbers(text: string): string[] {
   return out;
 }
 
-const EVIDENCE = /%|\bstudies\b|\ba study\b|\bstudy (?:shows|found|says)\b|research shows|on average|\bstatistic(?:s|al|ally)?\b|\bproven\b|\bguarantee(?:d|s)?\b|double your|\b10x\b/gi;
+const EVIDENCE = /%|(?<!case )\bstudies\b|\ba study\b|\bstudy (?:shows|found|says)\b|research shows|on average|\bstatistic(?:s|al|ally)?\b|\bproven\b|\bguarantee(?:d|s)?\b|double your|\b10x\b/gi;
 const LINK = /https?:\/\/|www\.|\{demo-link\}|\b[a-z0-9-]+\.(?:com|net|org|io|co|us|app|site)\b/i;
 const MEDIA_WORDS = /\b(?:screenshots?|attached|attachments?|attach|images?)\b/i;
 const PHOTO_CLAIM = /your (?:own )?photos|photos from your instagram/i;

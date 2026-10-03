@@ -1,0 +1,856 @@
+{
+  "schemaVersion": 1,
+  "category": "Pressure washing & soft wash",
+  "slug": "pressure-washing-soft-wash",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Ext family batch, book archetype. Low ticket and high volume, so products are priced small and lean on instant quotes, wash plans and commercial routes. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Soft wash versus pressure washing",
+      "contains": "Which surfaces get low-pressure soft wash (roofs, vinyl siding, stucco, painted wood) and which get surface cleaners (concrete, pavers), and why roofs are never blasted",
+      "why": "Homeowners fear a washer will strip paint or ruin shingles. Explaining the method by surface is what lets them book without a site visit."
+    },
+    {
+      "section": "Instant quote by surface and size",
+      "contains": "House size and storeys, driveway and patio area, roof size, deck or fence, bundle pricing when several surfaces are washed in one visit",
+      "why": "Pressure washing is bought on the spot. A range by surface lets a homeowner book tonight instead of waiting for a callback."
+    },
+    {
+      "section": "Plants, pets and runoff",
+      "contains": "Pre-wetting and rinsing plants, what the soft wash solution is in plain words, keeping pets inside, window and door prep, and storm drain runoff care",
+      "why": "Chemical worry is the main reason soft wash bookings stall. Calm, specific answers remove it."
+    },
+    {
+      "section": "Rust, oil and stain removal",
+      "contains": "Irrigation rust on siding and concrete, oil spots on driveways, black roof streaks, green algae, gum, and what can and can't come out",
+      "why": "Specific stains are what people search for. Setting honest expectations here avoids the unhappy review after the wash."
+    },
+    {
+      "section": "Commercial and HOA washing",
+      "contains": "Storefronts, dumpster pads, drive-thrus, sidewalks, parking decks, HOA building washes, after-hours scheduling and proof of insurance for property managers",
+      "why": "Commercial accounts recur on a schedule and smooth out the season. Managers need to see capacity and insurance before they ask for a bid."
+    },
+    {
+      "section": "Wash plans by season",
+      "contains": "Yearly house wash, spring and fall concrete cleaning, roof soft wash every few years, plan sign-up and automatic scheduling",
+      "why": "One-off washes don't build a business. A plan page turns a single driveway into a customer every season."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C49",
+      "siteType": "local-conversion",
+      "name": "Driveway Stripes",
+      "heroLayout": "before-after",
+      "mood": [
+        "punchy",
+        "satisfying",
+        "quick"
+      ],
+      "bestFor": "New owner-operators with one rig who sell driveways and house washes off striking before-and-afters",
+      "pairsWithTier": "starter",
+      "headlineSample": "Pressure washing and soft wash in {City}, booked tonight",
+      "whyItFits": "Cobalt, butter and a typewriter slab have personality, which suits a young wash business. The before-after hero shows the clean stripe across a dirty driveway."
+    },
+    {
+      "id": "b",
+      "themeId": "C8",
+      "siteType": "booking-first",
+      "name": "Book the Wash",
+      "heroLayout": "split-photo",
+      "mood": [
+        "reassuring",
+        "clean",
+        "easy"
+      ],
+      "bestFor": "Established wash companies selling house, roof and concrete washes with online booking and wash plans",
+      "pairsWithTier": "standard",
+      "headlineSample": "House, roof and driveway washing in {City}, booked online",
+      "whyItFits": "The family's own combo. Evergreen reads as safe for plants and pets, which calms soft wash worries, and the booking widget sits beside the instant quote."
+    },
+    {
+      "id": "c",
+      "themeId": "C19",
+      "siteType": "b2b-capability",
+      "name": "Night Crew",
+      "heroLayout": "type-led",
+      "mood": [
+        "capable",
+        "scheduled",
+        "insured"
+      ],
+      "bestFor": "Wash companies chasing storefronts, drive-thrus, dumpster pads and HOA contracts with after-hours crews",
+      "pairsWithTier": "premium",
+      "headlineSample": "Commercial pressure washing on your schedule in {City}",
+      "whyItFits": "Gunmetal and a mono face read like a fleet operation, which is what property managers buy. Capacity, insurance and service windows lead."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your listing shows great wash reviews but no website button. Someone staring at a green, streaky house tonight wants to book a soft wash, not wait for a callback.",
+      "hook": "Open their Maps listing and confirm there's no Website button. Screenshot it for when they reply.",
+      "linkLine": "A wash booking page for that button: {demo-link}"
+    },
+    {
+      "angle": "Instagram-only business",
+      "line": "Your driveway reels are oddly satisfying to watch, the clean stripe through the grime. But there's no way to book a pressure washing visit from them except a DM.",
+      "hook": "Find a reel or post with a clean before-and-after stripe. Note how many comments ask 'how much?'.",
+      "linkLine": "Those wash reels, with a Book button underneath: {demo-link}"
+    },
+    {
+      "angle": "Free-host page",
+      "line": "Your washing site is a free one-page builder with a banner on top. For a business that sells clean, the page looks a bit grimy.",
+      "hook": "Open the site and look for a builder banner or broken form. Note which.",
+      "linkLine": "Same pressure washing business, a clean page: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "On my phone, your pressure washing site's price list runs off the screen. People book washes from their phones while looking at the driveway.",
+      "hook": "Only if they have a site. Load it on your phone and note what breaks. Screenshot it for when they reply.",
+      "linkLine": "Your wash site, rebuilt for a phone: {demo-link}"
+    },
+    {
+      "angle": "No prices shown",
+      "line": "Your page doesn't show any wash prices, so every 'how much for a driveway' turns into a message thread. A quick quote by surface answers it and books the soft wash in one go.",
+      "hook": "Check the profile and any site for prices. Count the 'how much' comments on recent posts.",
+      "linkLine": "An instant wash quote by surface and size: {demo-link}"
+    },
+    {
+      "angle": "Comments asking how much",
+      "line": "Plenty of the comments on your house wash posts are people asking for a price. Each one is a booking that slips away if you don't reply fast.",
+      "hook": "Only if you see several 'how much' or 'DM me a price' comments on their posts. Quote one back.",
+      "linkLine": "Where those 'how much' comments could book a wash: {demo-link}"
+    },
+    {
+      "angle": "Reviews about plants and paint",
+      "line": "Your reviews say the roof soft wash took off years of black streaks and didn't hurt a single plant. That's the exact worry people have, and it's stuck on your listing.",
+      "hook": "Read their reviews and copy one phrase about plants, paint or streaks. Quote it back.",
+      "linkLine": "Those soft wash reviews where people decide: {demo-link}"
+    },
+    {
+      "angle": "Spring pollen season",
+      "line": "In spring the pollen and mildew hit every house in {City} at once, and wash calendars fill in a week. Online booking means you're full before anyone else answers.",
+      "hook": "Use in late winter or early spring. Name the season in the reply.",
+      "linkLine": "Spring house washing, bookable now: {demo-link}"
+    },
+    {
+      "angle": "Late-night bookings",
+      "line": "People decide to get the house washed at night, scrolling after the kids are down. If booking a pressure wash means calling during the day, they forget by morning.",
+      "hook": "Call their number after hours or check if any booking link exists. If it's voicemail only, the angle holds.",
+      "linkLine": "Wash booking that works at 10pm: {demo-link}"
+    },
+    {
+      "angle": "Second rig or helper",
+      "line": "Saw you're looking for a helper on the wash rig. A booking site that fills the calendar is what keeps a second person busy.",
+      "hook": "Only if they posted a hiring note or mentioned a second rig or trailer. Note the date.",
+      "linkLine": "A pressure washing page with a careers section: {demo-link}"
+    },
+    {
+      "angle": "Commercial work",
+      "line": "You clearly do storefronts and dumpster pads as well as houses. Property managers want an insured washing contractor with a page they can forward to the owner.",
+      "hook": "Only if they've posted commercial jobs. Note one: storefront, drive-thru, parking deck.",
+      "linkLine": "A commercial pressure washing page for managers: {demo-link}"
+    },
+    {
+      "angle": "Wash plans",
+      "line": "If you wash the same houses every year, a wash plan sign-up on a page turns them into automatic bookings and fills your spring before it starts.",
+      "hook": "Look for reviews from repeat customers like 'our yearly wash'. Quote it back.",
+      "linkLine": "A yearly house wash plan page: {demo-link}"
+    },
+    {
+      "angle": "Insured for roofs",
+      "line": "Soft washing roofs means ladders and chemicals near someone's home. Showing your insurance on a page settles the nervous homeowner before they book.",
+      "hook": "Check whether they mention insurance anywhere. Never quote a policy you didn't see.",
+      "linkLine": "Insurance and wash methods, on one page: {demo-link}"
+    },
+    {
+      "angle": "Neighbourhood group fame",
+      "line": "Your name comes up in neighbourhood groups when people ask who pressure washes driveways. Each of those people searches you and finds no way to book.",
+      "hook": "Search a local neighbourhood or HOA group for their name. Note one recommendation thread.",
+      "linkLine": "Where a neighbourhood group recommendation could book: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "That {specific recent job} you posted is a dramatic clean, the stripe line especially. It should be the first thing visitors see, right above a Book button.",
+      "hook": "Pick their newest before-and-after and name it: surface, colour of the grime, and the street if tagged.",
+      "linkLine": "That wash job, front and centre: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hey {Owner}, that {specific recent job} you posted is a seriously satisfying clean.\n\nI was looking for pressure washing in {City} and found {Business Name}, but no way to see prices or book a wash without messaging. I put together a sample booking site to see how it would look, with marked placeholders where your photos would go.\n\nWant me to send it?",
+    "dm2": "{Owner}, bumping this in case it got buried under 'how much' messages. Here's the sample wash site for {Business Name}: {demo-link}\n\nIt has an instant quote by surface, online booking, a soft wash versus pressure page that calms the plant and paint worries, and a wash plan sign-up. If it's not for you, say so and I'll leave you be.",
+    "call": "\"Hey, is this {Owner}? I'm {Your Name}, I build booking sites for pressure washing companies in {City}. I messaged a couple of days ago, did you see it?\"\n\nIF NO:\n\"No worries. Short version: I built a sample site for {Business Name} where people get a wash price by surface and book online, with marked placeholders where your photos would go. Can I text you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range} depending on how many surfaces and towns you want covered, then {Care Range} a month for hosting and price changes. For a wash business your size I'd quote about {Build Price}, which is a couple of good house-and-driveway days.\"\n\"Can I walk you through it for ten minutes, maybe one evening this week?\"\n\nCLOSE:\n\"I'll send a short scope and a deposit invoice. It's live before spring pollen season.\"",
+    "objections": [
+      {
+        "objection": "I get plenty of work from Facebook and Nextdoor.",
+        "handler": "\"You clearly do. Those posts send people to search your name, and then they have to message you for a price. The site quotes and books them while you're on a driveway.\""
+      },
+      {
+        "objection": "My jobs are too small to need a website.",
+        "handler": "\"Each wash is small, which is why the booking matters. You can't spend twenty minutes messaging about a driveway. The site does the quoting.\""
+      },
+      {
+        "objection": "I can't put prices online, every house is different.",
+        "handler": "\"It shows ranges by size and surface, with a final price confirmed on site. Most people just want to know if it's in the ballpark before they book.\""
+      },
+      {
+        "objection": "Winter's dead for me.",
+        "handler": "\"That's when to build it. Wash plans and spring bookings start filling before the pollen hits.\""
+      },
+      {
+        "objection": "My buddy can build me a free site.",
+        "handler": "\"Free is hard to beat. Happy to hand over the quote-by-surface layout. If it stalls before spring, the offer stands.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}, for the instant quote, booking and a wash plan page. That's a couple of full wash days.\""
+      }
+    ],
+    "email": {
+      "subject": "Booking site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build booking sites for pressure washing and soft wash companies around {City}. {Business Name} has great before-and-afters on social, but no site where someone can see a price and book a wash.\n\nInstead of asking for a call first, I built a sample: an instant quote by surface and size, online booking, a soft wash versus pressure washing page, a plants and pets page, and a wash plan sign-up, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and price edits. If not, it comes down at the end of the month.\n\nWorth ten minutes on the phone this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hey {Owner}, {Your Name} here. I build booking sites for pressure washing companies in {City} and made a sample for {Business Name} with instant quotes. I'll text the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm taking the {Business Name} wash demo down on Friday.\n\nWant it kept up? One word is plenty.",
+    "nurture": "Hey {Owner}, pollen season's around the corner and house wash calendars fill fast. Thought of you.\n\nThe booking site's still here, same price. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to a few busy wash days, never to a big-ticket build; the ticket is small and the volume is the business.",
+      "Price the instant quote by surface as its own line; it replaces most of their messaging.",
+      "Keep the booking setup simple and cheap; deposits only if they suffer no-shows.",
+      "Add the commercial page only for operators who already do storefronts or HOA work.",
+      "Wash plans are where the money is; price the plan sign-up with recurring billing separately.",
+      "Don't upsell big software early; tools for a wash business should pay back inside a season."
+    ],
+    "lineItems": [
+      {
+        "item": "Instant quote by surface and size",
+        "min": 400,
+        "max": 900,
+        "unit": "one-time",
+        "description": "Max when it covers house, roof, concrete, deck and fence with bundle discounts and add-on stains.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Wash plan sign-up with recurring billing",
+        "min": 400,
+        "max": 900,
+        "unit": "one-time",
+        "description": "Max with several plan options, card on file and automatic seasonal booking.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Commercial and HOA washing page",
+        "min": 300,
+        "max": 700,
+        "unit": "per-page",
+        "description": "Max with a bid request form, insurance download and after-hours scheduling options.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Before-and-after slider gallery",
+        "min": 250,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max when sliders are sorted by surface and embed their short wash reels.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Stain guide page (rust, oil, algae)",
+        "min": 200,
+        "max": 450,
+        "unit": "per-page",
+        "description": "Max with a page per stain type and a photo-upload quote request.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Town service-area page (each)",
+        "min": 150,
+        "max": 350,
+        "unit": "per-page",
+        "description": "Max when each town page shows local washes and HOA notes.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Wash reel content day",
+      "min": 300,
+      "max": 700,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"One morning filming your best driveway stripes and roof soft washes in vertical clips gives you a month of reels and the gallery sliders.\"",
+      "when": "Month 2, on a sunny day with a dirty driveway booked."
+    },
+    {
+      "name": "Google profile posts of before-and-after washes",
+      "min": 150,
+      "max": 300,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Every week a before-and-after wash goes on your Google profile with the town named, so your map listing looks like the busiest washer around.\"",
+      "when": "Day 30, once the site is live."
+    },
+    {
+      "name": "Review texts after each wash",
+      "min": 79,
+      "max": 179,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Right after the rinse, while the house still gleams, the customer gets a text asking for a review, with their own before-and-after in the thank-you.\"",
+      "when": "Day 30. The easiest second sale."
+    },
+    {
+      "name": "Trailer wrap and door hanger artwork",
+      "min": 200,
+      "max": 600,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Your wash trailer sits on a street for hours. A wrap with the booking site and door hangers for the neighbours turn one driveway into three.\"",
+      "when": "Right after launch."
+    },
+    {
+      "name": "Street door hangers after each house wash",
+      "min": 100,
+      "max": 250,
+      "unit": "per-job",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Neighbours see one clean house next to theirs. A door hanger with a same-street discount and a booking code catches them that afternoon.\"",
+      "when": "Month 2, once booking is live."
+    },
+    {
+      "name": "Spring pollen wash campaign",
+      "min": 250,
+      "max": 600,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A late-winter push to past customers and local groups books the spring house wash rush before every washer in town starts posting.\"",
+      "when": "Pitch in January, run in February and March."
+    },
+    {
+      "name": "Neighbourhood group posting for wash season",
+      "min": 150,
+      "max": 400,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Before-and-after posts and helpful replies in local groups, written in your voice, whenever someone asks who pressure washes driveways.\"",
+      "when": "Month 2, during the wash season."
+    },
+    {
+      "name": "Commercial wash bid packet",
+      "min": 300,
+      "max": 700,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A short PDF with your insurance, equipment, wash methods and past storefront jobs, ready to send the moment a property manager asks for a bid.\"",
+      "when": "Month 3, once they mention a commercial lead."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Window cleaners on the same houses",
+        "whoPays": "The window cleaning company",
+        "min": 1000,
+        "max": 1800,
+        "unit": "one-time",
+        "pitchLine": "\"House wash customers almost always want the windows done after. The window cleaner you send them to needs a booking site too.\"",
+        "whyItWorks": "Wash-then-windows is a natural pairing; two-way referrals on every house."
+      },
+      {
+        "route": "Exterior painters who need a wash first",
+        "whoPays": "The painting contractor",
+        "min": 1500,
+        "max": 2800,
+        "unit": "one-time",
+        "pitchLine": "\"Painters call you to wash houses before they paint. They need a site with a prep page, and your washing client can introduce you.\"",
+        "whyItWorks": "Painters sell bigger jobs and already trust the washer."
+      },
+      {
+        "route": "Deck and fence stainers",
+        "whoPays": "The staining company, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"After you wash a deck, it needs stain. The stainer you send it to needs a site, and they send concrete washes back.\"",
+        "whyItWorks": "Washing and staining run back to back on decks and fences."
+      },
+      {
+        "route": "Restaurant and retail owners on the wash route",
+        "whoPays": "The restaurant or shop owner",
+        "min": 1500,
+        "max": 3500,
+        "unit": "one-time",
+        "pitchLine": "\"The shops whose sidewalks and dumpster pads you pressure wash at night need sites too. They already trust you with keys.\"",
+        "whyItWorks": "Commercial wash customers are small business owners with their own website problems."
+      },
+      {
+        "route": "Gutter cleaners on the roof line",
+        "whoPays": "The gutter company",
+        "min": 1500,
+        "max": 2500,
+        "unit": "one-time",
+        "pitchLine": "\"Roof soft wash customers ask about gutters next. The gutter cleaner you refer needs a plan sign-up page like yours.\"",
+        "whyItWorks": "Same houses, same season, no overlap."
+      },
+      {
+        "route": "HOA managers who book community washes",
+        "whoPays": "The HOA management company",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"HOAs send violation letters for green siding and dirty sidewalks. A community wash day page routes every unit to your washing client.\"",
+        "whyItWorks": "Managers want one vendor and fewer violation disputes."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Window cleaner's instant quote bot",
+        "whoPays": "The window cleaning company",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"The window cleaner you pair with gets a bot that quotes by pane count from a house shot and books the visit after your wash.\"",
+        "whyItWorks": "Configuration of a quote flow you've built for washing."
+      },
+      {
+        "route": "HOA violation photo sorter",
+        "whoPays": "The HOA management company, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Inspectors upload community drive-by shots and an assistant flags green siding and stained sidewalks, drafts the notice and lists a wash vendor.\"",
+        "whyItWorks": "Managers save inspection time; the washer gets steady HOA work."
+      },
+      {
+        "route": "Restaurant cleaning schedule assistant",
+        "whoPays": "The restaurant group, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Restaurants juggle hood, grease pad and sidewalk cleaning dates. An assistant tracks them and books the pressure washing slot after close.\"",
+        "whyItWorks": "Health inspections make the schedule matter; the washer gets planned nights."
+      },
+      {
+        "route": "Painter's prep estimator",
+        "whoPays": "The painting contractor",
+        "min": 1000,
+        "max": 2500,
+        "unit": "one-time",
+        "pitchLine": "\"Painters get a tool that drafts a house wash and prep scope from photos, with your washing client booked as the first step.\"",
+        "whyItWorks": "Painters need faster estimates; the washer is built in."
+      },
+      {
+        "route": "Stainer's deck condition checker",
+        "whoPays": "The staining company",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"A homeowner uploads a deck shot and the stainer gets a draft condition report: wash only, wash and stain, or replace boards first.\"",
+        "whyItWorks": "Cuts site visits for the stainer and feeds deck washes back."
+      },
+      {
+        "route": "Property manager vendor scheduler",
+        "whoPays": "The property manager, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Managers with several buildings get an assistant that schedules pressure washing, window cleaning and gutter visits around tenant notices.\"",
+        "whyItWorks": "One tool for several exterior vendors, introduced by the one they trust."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Missed-call text-back with a wash quote link",
+      "kind": "automation",
+      "oneTimeMin": 0,
+      "oneTimeMax": 250,
+      "monthlyMin": 59,
+      "monthlyMax": 129,
+      "pitchLine": "\"The wand's running and you can't hear the phone. The caller gets a text with the instant wash quote link and books themselves before you've finished the driveway.\"",
+      "whenAndWhatItTakes": "Day 30. Needs their number forwarded and the quote page live."
+    },
+    {
+      "name": "Day-before wash reminders with prep notes",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 600,
+      "monthlyMin": 40,
+      "monthlyMax": 100,
+      "pitchLine": "\"The day before the soft wash, customers get a text to close windows, move cars and bring pets in, so the crew starts spraying on arrival.\"",
+      "whenAndWhatItTakes": "Month 2, once booking is live. Needs their prep checklist."
+    },
+    {
+      "name": "Wash plan auto-billing and rebooking",
+      "kind": "automation",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 50,
+      "monthlyMax": 125,
+      "pitchLine": "\"Plan members get rebooked for their next house wash automatically and charged after it's done, with no invoices to chase.\"",
+      "whenAndWhatItTakes": "Month 2. Needs plan prices and their payment account."
+    },
+    {
+      "name": "Upload-a-photo wash quote",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2500,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"Someone snaps their driveway or siding and gets a draft pressure washing range in a minute, with the stain type noted for you to confirm.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their price rules by surface and a set of past jobs. Comes with the AI maintenance retainer; a person confirms every price."
+    },
+    {
+      "name": "Review replies for wash customers",
+      "kind": "ai",
+      "oneTimeMin": 250,
+      "oneTimeMax": 700,
+      "monthlyMin": 59,
+      "monthlyMax": 149,
+      "pitchLine": "\"A customer gushes about their bright white siding; a short reply naming the surface and their street is ready before you've wound up the hose.\"",
+      "whenAndWhatItTakes": "Month 2, with review texts. Needs a few past replies. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Wash route planner by street",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Bookings get grouped by street and day, so the rig washes three houses on one block instead of crossing {City} with a full water tank.\"",
+      "whenAndWhatItTakes": "Month 3, once bookings are steady. Needs addresses and job lengths."
+    },
+    {
+      "name": "Wash job sheet with before-and-after capture",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 50,
+      "monthlyMax": 125,
+      "pitchLine": "\"The crew snaps each surface before and after on a phone, notes any existing damage, and the customer gets a clean report with the receipt.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their surfaces list and a logo."
+    },
+    {
+      "name": "Soft wash mix and chemical log",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 40,
+      "monthlyMax": 100,
+      "pitchLine": "\"Log the soft wash mix, dwell time and rinse for every roof and house, so any plant or paint complaint has a record behind it.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their standard mixes by surface."
+    },
+    {
+      "name": "Wash FAQ chatbot",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2500,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"It answers 'will soft wash hurt my roses' and 'do I need to be home' at night, from your notes, and drops the booking link.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their method notes and policies. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Commercial wash contract tracker",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3500,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Every storefront, dumpster pad and drive-thru on a repeating wash schedule, with access notes, gate codes and proof-of-service shots for the manager.\"",
+      "whenAndWhatItTakes": "Month 4, once they land a commercial account. Needs the account list and visit frequency."
+    },
+    {
+      "name": "Surface square-footage draft from aerial view",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"Type an address and it drafts driveway, patio and roof areas from aerial imagery, so the pressure washing quote is close before you drive by.\"",
+      "whenAndWhatItTakes": "Month 5. Needs past jobs with measured areas. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Plan member page for wash customers",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Wash plan members see their next visit, past before-and-afters and add a roof or deck wash with one tap.\"",
+      "whenAndWhatItTakes": "Month 5. Needs the plan billing running."
+    },
+    {
+      "name": "Season-end rebooking nudge",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 40,
+      "monthlyMax": 100,
+      "pitchLine": "\"Everyone who had a house or driveway washed last spring gets a note in February to lock in the same week this year.\"",
+      "whenAndWhatItTakes": "Month 6. Needs last season's customer list."
+    },
+    {
+      "name": "Equipment and chemical cost tracker",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1800,
+      "monthlyMin": 40,
+      "monthlyMax": 100,
+      "pitchLine": "\"Track fuel, surface cleaner wear, pump repairs and soft wash chemical per job, and see which wash types actually pay.\"",
+      "whenAndWhatItTakes": "Month 6. Needs a season of receipts."
+    },
+    {
+      "name": "Stain identifier from customer shots",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Customers upload a stain and it suggests whether it's rust, oil, algae or efflorescence, and which wash add-on fixes it, for you to confirm.\"",
+      "whenAndWhatItTakes": "Month 5. Needs a library of past stain jobs. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Commercial bid drafter for wash contracts",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Enter the site, surfaces and frequency and it drafts a commercial pressure washing bid in your format, ready for you to price and send.\"",
+      "whenAndWhatItTakes": "Month 6, after the first commercial lead. Needs their bid template. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Crew day sheet app",
+      "kind": "software",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 6000,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"Each wash crew sees the day's houses in order, the surfaces sold and any notes, and marks each one done with a shot.\"",
+      "whenAndWhatItTakes": "Month 6, when they add a second rig."
+    },
+    {
+      "name": "Wash promo calendar writer",
+      "kind": "ai",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1200,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"A month of pressure washing posts and offers drafted from your recent jobs and the season, approved by you before anything goes out.\"",
+      "whenAndWhatItTakes": "Month 3. Needs approval on every post. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Damage pre-check record for each wash",
+      "kind": "software",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1200,
+      "monthlyMin": 30,
+      "monthlyMax": 80,
+      "pitchLine": "\"Before the wand comes out, the crew notes cracked paint, loose siding and old oxidation with shots, so nobody blames the washer later.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their walk-around checklist."
+    },
+    {
+      "name": "Wash tech applicant screener",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 75,
+      "monthlyMax": 175,
+      "pitchLine": "\"Wash tech applicants answer whether they can tow a trailer, work weekends and start early, and you only call the ones who fit.\"",
+      "whenAndWhatItTakes": "When they post a hiring note. Needs their must-haves. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the instant wash quote",
+      "whoPays": "Wash businesses, monthly",
+      "min": 29,
+      "max": 99,
+      "unit": "monthly",
+      "pitchLine": "\"I built a quote-by-surface tool for one pressure washing company. Every new wash rig owner answers 'how much for a driveway' all day.\"",
+      "whyItWorks": "Wash businesses are numerous and small; a low monthly price sells itself."
+    },
+    {
+      "route": "Starter site bundle with wash rig sales",
+      "whoPays": "The equipment dealer, per bundle",
+      "min": 400,
+      "max": 900,
+      "unit": "one-time",
+      "pitchLine": "\"Every buyer of a skid or trailer rig is starting a washing business and needs a booking site. Bundle it with the rig.\"",
+      "whyItWorks": "Equipment dealers meet every new operator first and want them to succeed."
+    },
+    {
+      "route": "Soft wash chemical supplier's operator finder",
+      "whoPays": "The chemical supplier, annually",
+      "min": 3000,
+      "max": 12000,
+      "unit": "per-year",
+      "pitchLine": "\"A find-a-soft-washer map on your site sends homeowners to the operators who buy your chemicals.\"",
+      "whyItWorks": "Suppliers spend on loyalty; this sends their customers jobs."
+    },
+    {
+      "route": "Pressure washing association member template",
+      "whoPays": "The trade association",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer members a wash booking template with soft wash explainers and plan sign-ups as a benefit.\"",
+      "whyItWorks": "Wash associations focus on training and standards; a site template fits."
+    },
+    {
+      "route": "Wash training course graduates",
+      "whoPays": "The training company, per graduate",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "pitchLine": "\"Soft wash training courses graduate new operators every month. Each needs a booking site on day one.\"",
+      "whyItWorks": "Course owners want graduates to succeed and will bundle the site."
+    },
+    {
+      "route": "Wash template licensed to agencies",
+      "whoPays": "The agency, per wash client",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "pitchLine": "\"Agencies with pressure washing clients rebuild the same pages. License the booking template with the quote tool.\"",
+      "whyItWorks": "Small, repeatable builds suit agencies."
+    },
+    {
+      "route": "Wash franchise location sites",
+      "whoPays": "The franchise group, per location",
+      "min": 600,
+      "max": 1800,
+      "unit": "one-time",
+      "pitchLine": "\"Exterior cleaning franchises need a booking site per territory with local pricing. Build the washing template once.\"",
+      "whyItWorks": "Many locations, one template."
+    },
+    {
+      "route": "Retail chain sidewalk wash program",
+      "whoPays": "The regional retail or restaurant chain",
+      "min": 3000,
+      "max": 10000,
+      "unit": "per-year",
+      "pitchLine": "\"A chain with many stores needs a scheduling portal for sidewalk and dumpster pad washing that local washers log into.\"",
+      "whyItWorks": "Chains want one portal across many vendors; you know the wash workflow."
+    },
+    {
+      "route": "HOA wash day portal across a management firm",
+      "whoPays": "The management firm, annually",
+      "min": 2000,
+      "max": 6000,
+      "unit": "per-year",
+      "pitchLine": "\"Every community gets a wash day sign-up page with unit notes and violation follow-ups, routed to an approved washer.\"",
+      "whyItWorks": "Management firms buy once for many communities."
+    },
+    {
+      "route": "Wash season playbook for operators elsewhere",
+      "whoPays": "Wash businesses in other metros",
+      "min": 150,
+      "max": 400,
+      "unit": "one-time",
+      "pitchLine": "\"The spring pollen campaign, door hangers and review texts, packaged for any pressure washing company before their season.\"",
+      "whyItWorks": "Every wash business hits the same spring rush."
+    },
+    {
+      "route": "Exclusive washer per town",
+      "whoPays": "A wash company in a new town",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"One washing company per town on my books. With {City} spoken for, the next suburb's sharpest wash rig gets the demo.\"",
+      "whyItWorks": "Small towns each support a wash company; the demo transfers."
+    },
+    {
+      "route": "Rescue wash sites on broken builders",
+      "whoPays": "The stranded wash company",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "pitchLine": "\"Lots of wash businesses have a half-built page from a free builder. I move it to a booking site in a week.\"",
+      "whyItWorks": "Quick, cheap rescues for owners who already tried."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Wash booking site plus care plan, one contract",
+      "min": 1200,
+      "max": 2000,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The booking site and care plan go on one contract, so changing a wash price for summer is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Review texts after each wash",
+      "min": 79,
+      "max": 179,
+      "unit": "monthly",
+      "trigger": "The first wash booked online is done.",
+      "line": "\"That first online booking just finished. Let's get a review from every house wash while it still gleams.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "Wash plan auto-billing and rebooking",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "trigger": "Customers start asking to book the same wash next year.",
+      "line": "\"People are asking to rebook. A wash plan locks them in and bills itself.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Wash reel content day",
+      "min": 300,
+      "max": 700,
+      "unit": "per-shoot",
+      "trigger": "Their reels slow down during a busy wash stretch.",
+      "line": "\"You're too busy washing to film. Let me grab a month of reels in one morning.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Upload-a-photo wash quote",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "trigger": "Ninety days of quote data shows many stain questions the calculator can't answer.",
+      "line": "\"The rust and oil questions keep coming. Let customers upload the stain and get a range.\""
+    },
+    {
+      "rung": 6,
+      "day": 120,
+      "offer": "Wash route planner by street",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "trigger": "They mention driving back and forth across town between washes.",
+      "line": "\"Let's put your washes on the same streets on the same days.\""
+    },
+    {
+      "rung": 7,
+      "day": 180,
+      "offer": "Commercial wash contract tracker",
+      "min": 1200,
+      "max": 3500,
+      "unit": "one-time",
+      "trigger": "They sign a first storefront or HOA washing account.",
+      "line": "\"Commercial accounts need a schedule and proof of service. This keeps them renewing.\""
+    }
+  ]
+}
