@@ -1,0 +1,855 @@
+{
+  "schemaVersion": 1,
+  "category": "Independent auto repair",
+  "slug": "independent-auto-repair",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Auto family batch. Shop owners are on the floor all day, so the call script assumes a 7am call. No shop-management software, parts or tool brands; technician credentials are left as bracketed placeholders. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Warning lights and symptoms guide",
+      "contains": "Check engine light on or flashing, grinding brakes, a transmission that slips or shudders, overheating, a battery light, and plain advice on whether the car is safe to drive in",
+      "why": "Most repair customers search the symptom, not the service. A shop that explains the noise calmly gets the tow-in and the diagnostic booking."
+    },
+    {
+      "section": "Digital inspection and estimate approval",
+      "contains": "How the shop sends inspection findings with notes and pictures of worn brake pads or leaking gaskets, approving each line, and what's urgent versus what can wait",
+      "why": "Fear of being upsold is why people avoid a new mechanic. Showing how estimates are approved line by line is the trust argument in one page."
+    },
+    {
+      "section": "Hybrid, diesel and European service",
+      "contains": "Which makes and drivetrains the shop handles, hybrid battery and inverter work, diesel injectors and emissions parts, European scan tools, and what gets sent to a specialist",
+      "why": "Owners of these vehicles assume an independent shop can't touch them and default to the dealer. Naming the capability wins the comparison."
+    },
+    {
+      "section": "Factory maintenance schedule by mileage",
+      "contains": "What's due at each mileage interval, timing belts, transmission fluid, coolant and spark plugs, and the maintenance records the shop keeps for the factory warranty file",
+      "why": "Many drivers think only the dealer can do warranty-period maintenance. Explaining the interval and the records brings scheduled service in-house."
+    },
+    {
+      "section": "Drop-off, shuttle and loaner options",
+      "contains": "After-hours key drop box, early drop-off, shuttle radius, loaner or rental help, the waiting room, and how the shop texts when the car is ready",
+      "why": "A working parent picks the auto shop that fits the morning commute. The logistics page decides it as often as the price does."
+    },
+    {
+      "section": "Fleet and work-truck accounts",
+      "contains": "Small business vans and pickups, scheduled maintenance by unit, priority bay time, invoices by vehicle, and net terms for approved accounts",
+      "why": "Contractors and delivery businesses need trucks back the same day. A fleet page tells them the shop is set up for repeat accounts."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C10",
+      "siteType": "local-conversion",
+      "name": "Bay Door Open",
+      "heroLayout": "split-photo",
+      "mood": [
+        "honest",
+        "plain",
+        "steady"
+      ],
+      "bestFor": "Neighbourhood repair shops that win on a phone answered and a fair diagnostic fee",
+      "pairsWithTier": "starter",
+      "headlineSample": "Honest auto repair in {City}, same-day diagnostics",
+      "whyItFits": "Steel blue on near-white reads like a clean invoice. The neutral sans keeps services, hours and the diagnostic fee readable without decoration."
+    },
+    {
+      "id": "b",
+      "themeId": "C19",
+      "siteType": "booking-first",
+      "name": "Next Open Bay",
+      "heroLayout": "card-stack",
+      "mood": [
+        "capable",
+        "organised",
+        "direct"
+      ],
+      "bestFor": "Multi-bay shops that want maintenance, brakes and diagnostics booked online into real open slots",
+      "pairsWithTier": "standard",
+      "headlineSample": "Book brake, maintenance and diagnostic work in {City}",
+      "whyItFits": "Not the family combo: repair customers book on clarity and price, and a fashion serif reads like a gallery. Gunmetal and signal orange read like a service bay, and mono numerals suit prices and mileage."
+    },
+    {
+      "id": "c",
+      "themeId": "C48",
+      "siteType": "premium-brand",
+      "name": "Marque Specialist",
+      "heroLayout": "full-bleed-photo",
+      "mood": [
+        "exacting",
+        "enthusiast",
+        "calm"
+      ],
+      "bestFor": "Independent specialists in European, performance or classic cars whose owners would otherwise go to the dealer",
+      "pairsWithTier": "premium",
+      "headlineSample": "European and performance car service in {City}",
+      "whyItFits": "The family combo, used where it belongs: enthusiast owners respond to an editorial, gallery-dark page that treats an engine bay like a portfolio piece."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your shop has a solid rating on Maps but no website, so a driver with a check engine light in {City} can't see what you fix or what a diagnostic costs before picking a mechanic.",
+      "hook": "Open their Maps listing and confirm there's no Website button. Screenshot it for when they reply.",
+      "linkLine": "Here's what could sit behind that button for the shop: {demo-link}"
+    },
+    {
+      "angle": "Facebook page as the website",
+      "line": "The website link for your auto shop goes to a Facebook page whose last post is a holiday closing notice. Someone with grinding brakes wants services and hours, not old posts.",
+      "hook": "Tap their Website link and confirm it lands on Facebook. Note the date of the latest post.",
+      "linkLine": "A repair shop page built for the driver, not the feed: {demo-link}"
+    },
+    {
+      "angle": "Dated shop site",
+      "line": "Your repair shop site still lists a phone extension and a coupon that expired a while back. A driver comparing mechanics reads that as a shop that isn't paying attention.",
+      "hook": "Open the site and look for expired coupons, an old copyright year or a dead contact form. Note which.",
+      "linkLine": "Your auto shop, current and fast: {demo-link}"
+    },
+    {
+      "angle": "Unreadable on a phone",
+      "line": "I pulled up your shop's site on my phone and the services list was tiny text with a call button I couldn't find. People looking for a mechanic are usually on the shoulder or in a parking lot.",
+      "hook": "Only if they have a site. Load it on your phone and note what breaks: menu, services or call button. Screenshot it for when they reply.",
+      "linkLine": "Your repair shop, rebuilt for a phone: {demo-link}"
+    },
+    {
+      "angle": "No way to book service",
+      "line": "Right now the only way to book an oil change or brake check at your shop is to call during the day, which is exactly when your customers are at work and you're under a car.",
+      "hook": "Check the listing, the social pages and any site for a booking or appointment form. If there's none, the angle holds.",
+      "linkLine": "Service booking that fills your open bays: {demo-link}"
+    },
+    {
+      "angle": "Shop work with no showcase",
+      "line": "That engine swap and the rust-free brake line job on your page are the kind of mechanic work that builds trust. Right now they sit between parts-delivery posts.",
+      "hook": "Find two posts of real repair work you can name by job and vehicle. Mention one if they reply.",
+      "linkLine": "Your repair work with its own page: {demo-link}"
+    },
+    {
+      "angle": "Honest-mechanic reviews",
+      "line": "Your reviews keep saying the same thing: told me what could wait, didn't upsell, fixed it right the first time. That's the reason people pick a new mechanic, and it never leaves your listing.",
+      "hook": "Read their reviews and copy one line about honesty or a specific repair. Quote it back if they reply.",
+      "linkLine": "Those reviews next to how your shop approves estimates: {demo-link}"
+    },
+    {
+      "angle": "Pre-winter and road-trip season",
+      "line": "Before the first cold snap in {City}, everyone wants batteries, tires and brakes checked at once, and before summer it's road-trip inspections. The shops that take online bookings fill those weeks first.",
+      "hook": "Use in early fall or late spring. Name the season or the holiday drive in the reply.",
+      "linkLine": "Ready for the pre-winter service rush: {demo-link}"
+    },
+    {
+      "angle": "Calls during lunch rush",
+      "line": "Drivers call auto shops on their lunch break, which is the hour you're short on the counter. A form that collects the car and the symptom catches the calls you can't take.",
+      "hook": "Call at lunch or after closing. If it rings out or hits a full voicemail, the angle holds.",
+      "linkLine": "A repair request that works after the shop closes: {demo-link}"
+    },
+    {
+      "angle": "Hiring a technician",
+      "line": "Saw you're hiring a tech. Good mechanics check whether a shop looks organised and busy before they apply, the same way a careful customer checks before dropping off keys.",
+      "hook": "Only if they posted a hiring note, a sign in the window or a job ad. Note the date.",
+      "linkLine": "A shop page with a careers section for technicians: {demo-link}"
+    },
+    {
+      "angle": "Nearby towns",
+      "line": "Your customers drive in from around {City}, but nothing tells someone in {Neighborhood} your auto shop is close enough to drop off on the way to work. That town name is what they search.",
+      "hook": "Find the towns mentioned in reviews. Use the furthest one with a happy customer.",
+      "linkLine": "A repair page for each town your customers come from: {demo-link}"
+    },
+    {
+      "angle": "Financing big repairs",
+      "line": "If you offer payment plans on transmission or engine work, it belongs on the shop's site. A repair bill that size is the moment people decide whether to fix the car or sell it.",
+      "hook": "Only if they mention financing in a post, review or sign. If they don't, skip this angle.",
+      "linkLine": "Repair financing explained before the estimate: {demo-link}"
+    },
+    {
+      "angle": "Technician credentials and warranty",
+      "line": "Your shop sign mentions certified technicians and a parts-and-labor warranty. A page that shows both, in plain words, is what a driver burned by another mechanic looks for first.",
+      "hook": "Check their sign, listing and posts for certifications or warranty terms. Note only what they publish; never add a credential or term.",
+      "linkLine": "Certifications and repair warranty on one page: {demo-link}"
+    },
+    {
+      "angle": "Word-of-mouth shop",
+      "line": "Sounds like your auto shop runs on regulars who've trusted you for years. When their kids or new neighbours look you up, they find almost nothing.",
+      "hook": "Look for reviews like 'been coming here for years' or 'my dad sent me'. Quote one back.",
+      "linkLine": "Where a regular's mechanic referral would land: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "That {specific recent job} you posted is real mechanic work. A repair like that should be the first thing a stranger sees about the shop.",
+      "hook": "Pick the newest repair post and name it exactly: vehicle, job and what was wrong.",
+      "linkLine": "That repair, front and centre: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hey {Owner} — your reviews keep saying {Business Name} tells people what can wait. That's rare for an auto shop.\n\nI looked for repair shops in {City} and found your listing but no site where someone can book a brake check or see what a diagnostic costs. I put together a sample repair shop page, with marked placeholders where your photos would go.\n\nWant me to send it over?",
+    "dm2": "{Owner} — following up in case my last message got buried. Here's the sample site for {Business Name}: {demo-link}\n\nIt has a symptoms guide for check engine lights and brake noise, a page showing how you approve estimates line by line, and service booking with drop-off options. If it's not for you, say so and I'll leave you be.",
+    "call": "Call at 7am, before the bays fill.\n\n\"Morning, is this {Owner}? I'm {Your Name}, I build websites for auto repair shops here in {City}. I'll be quick, I know the first car's coming in. I sent you a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"Short version: I built a sample site for {Business Name} with a symptoms guide, an estimate-approval page and online booking for maintenance and brakes, with marked placeholders where your photos would go. Can I text you the link to look at lunch?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range} depending on how many service and town pages you want, then {Care Range} a month for hosting and changes. For a shop your size I'd quote about {Build Price}, which is roughly one brake-and-rotor job a month for a few months.\"\n\"Can I show you for ten minutes one morning this week, before you open?\"\n\nCLOSE:\n\"I'll send a one-page scope and an invoice for the deposit. We start the day it clears.\"",
+    "objections": [
+      {
+        "objection": "I'm already full, I don't need more cars.",
+        "handler": "\"Then the site's job is the right cars: scheduled maintenance and the jobs you like doing, booked into open bays, instead of walk-ins with a mystery noise at 4pm.\""
+      },
+      {
+        "objection": "My shop software already has online booking.",
+        "handler": "\"Good, I'll put its booking link front and centre. The software books the appointment; the site is what convinces a stranger to trust your shop with the car.\""
+      },
+      {
+        "objection": "All my work comes from word of mouth.",
+        "handler": "\"That's the best kind. A referral still looks you up before handing over keys, and right now they find a map pin. The site is where a regular's recommendation lands.\""
+      },
+      {
+        "objection": "I'm not putting prices online, every car is different.",
+        "handler": "\"You don't have to price repairs. Post the diagnostic fee and a few maintenance prices, and explain how estimates get approved. That's what an anxious driver needs.\""
+      },
+      {
+        "objection": "I tried a marketing company and it was a waste.",
+        "handler": "\"Most of them sell ads by the month. This is a one-time build you own, plus care. No contract to run ads, no leads shared with the shop down the street.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For your shop about {Build Price}: services, a symptoms guide, booking and an estimate-approval page. That's a couple of brake jobs.\""
+      }
+    ],
+    "email": {
+      "subject": "Repair shop site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for independent auto repair shops around {City}. {Business Name} has the kind of reviews most shops would pay for, but no site where a driver can see what you fix or book a slot.\n\nRather than ask for your time, I built a sample first: a check engine and brake-noise symptoms guide, a page explaining how you approve estimates, service booking with drop-off and shuttle details, and a fleet account page, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and changes. If not, no problem, it comes down at the end of the month.\n\nWorth ten minutes before you open one morning?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"{Owner}, it's {Your Name}. I build websites for auto repair shops in {City} and put together a sample one for {Business Name} with booking and a symptoms guide. I'll text you the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner} — I'm taking the {Business Name} repair shop demo down on Friday to free up the space.\n\nWant me to leave it up? One word is fine either way.",
+    "nurture": "Hey {Owner} — cold weather's coming and the battery, brake and tire calls start with it. Thought of the shop.\n\nThe site is still here whenever you want it, and nothing's changed on price. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to a few brake jobs, never to an hourly rate. Shop owners think in tickets and bay hours.",
+      "The symptoms guide is the page that gets searched. Price each symptom page as its own line after the first few.",
+      "Only quote hybrid, diesel or European pages for shops that have the scan tools and actually take the work.",
+      "An estimate-approval explainer is worth more than a gallery here. Trust sells repair, not photos.",
+      "Fleet account pages are a separate line; quote them only for shops already servicing a few business trucks.",
+      "Schedule the kickoff call for 7am or after close. A long build meeting during the day won't happen."
+    ],
+    "lineItems": [
+      {
+        "item": "Symptom page (each)",
+        "min": 200,
+        "max": 450,
+        "unit": "per-page",
+        "description": "Max when the page covers causes, what's safe to drive, what the diagnostic involves, and a booking link for that symptom.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Estimate-approval and inspection explainer",
+        "min": 300,
+        "max": 700,
+        "unit": "one-time",
+        "description": "Max with a sample inspection report, a 'what can wait' section and the shop's repair warranty wording as supplied.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Specialty make or drivetrain page",
+        "min": 300,
+        "max": 650,
+        "unit": "per-page",
+        "description": "Max when it lists common jobs, the equipment the shop uses and a dealer-versus-independent comparison.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Maintenance-by-mileage schedule page",
+        "min": 300,
+        "max": 800,
+        "unit": "one-time",
+        "description": "Max when it covers the shop's most common makes with interval tables and a book-this-service button on each.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Fleet account request page",
+        "min": 300,
+        "max": 700,
+        "unit": "one-time",
+        "description": "Max with a unit-list upload, a priority-service explainer and a terms application form.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Town page for the shop's service area (each)",
+        "min": 200,
+        "max": 400,
+        "unit": "per-page",
+        "description": "Max when each town page has directions, commute-friendly drop-off notes and reviews from that town.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Spanish-language repair pages",
+        "min": 400,
+        "max": 1000,
+        "unit": "one-time",
+        "description": "Max when the symptoms guide, booking and estimate explainer are all translated, not just the home page.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Shop floor photo and video morning",
+      "min": 400,
+      "max": 1000,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"One early morning filming the bays, the lift, the techs and a brake job start to finish gives the shop a real face online and a year of posts.\"",
+      "when": "Month 2, on a morning before the first car arrives."
+    },
+    {
+      "name": "Google profile management for the auto shop",
+      "min": 200,
+      "max": 400,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Each week a real repair goes on your Google profile with the vehicle and the fix, and the Q&A answers 'do you work on diesels' before someone asks.\"",
+      "when": "Day 30, once the site is live."
+    },
+    {
+      "name": "Review requests after each repair order",
+      "min": 99,
+      "max": 249,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"When the car is picked up, the customer gets a text asking how the repair went and a review link. Honest-mechanic reviews are what new drivers read.\"",
+      "when": "Day 30. The easiest second sale."
+    },
+    {
+      "name": "Pre-winter battery and brake check campaign",
+      "min": 300,
+      "max": 700,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A short campaign for battery tests, brake checks and tire swaps before the first freeze, sent to past customers and run on the shop's Google profile.\"",
+      "when": "Pitch in August, run September to November."
+    },
+    {
+      "name": "Service-due reminder postcards and texts",
+      "min": 150,
+      "max": 400,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Customers due for an oil change or timing belt by mileage get a reminder from the shop, not the dealer.\"",
+      "when": "Month 3, once the shop shares its customer list."
+    },
+    {
+      "name": "Bay-door banner and invoice insert artwork",
+      "min": 150,
+      "max": 450,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A banner over the bay door and an insert in every repair invoice with the site and a booking code, so the next service is booked online.\"",
+      "when": "Right after launch."
+    },
+    {
+      "name": "Neighbourhood new-mover mailer for the shop",
+      "min": 200,
+      "max": 600,
+      "unit": "per-job",
+      "scalesWithMarket": true,
+      "pitchLine": "\"New movers don't have a mechanic yet. A card with the shop, a first-visit diagnostic offer and the site reaches them in their first month.\"",
+      "when": "Month 4, run quarterly."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Tow operators who bring cars to the shop",
+        "whoPays": "The tow company",
+        "min": 1000,
+        "max": 2500,
+        "unit": "one-time",
+        "pitchLine": "\"The tow driver who drops broken-down cars at your shop runs everything off a phone. I'll build them a site and they'll keep bringing you cars.\"",
+        "whyItWorks": "Tow-to-shop referrals already flow. The repair owner's introduction is a warm door and a reason to keep the relationship."
+      },
+      {
+        "route": "Tire and alignment shops nearby",
+        "whoPays": "The tire shop, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"You send alignments to the tire shop and they send you brake and suspension work. Their site is as thin as yours was.\"",
+        "whyItWorks": "Repair shops and tire shops trade work every week. One introduction covers both sides."
+      },
+      {
+        "route": "Auto parts store counters",
+        "whoPays": "The independent parts store",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The independent parts store that delivers to your bays all day needs a site with a shop-account signup and a 'find a mechanic' page.\"",
+        "whyItWorks": "Parts stores sell to every shop in town and have budget. Their shop list is your prospect list."
+      },
+      {
+        "route": "Used-car dealers needing pre-sale inspections",
+        "whoPays": "The dealer",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The small lot that sends you pre-sale inspections needs an inventory site, and 'inspected by an independent shop' is a selling point on it.\"",
+        "whyItWorks": "Small dealers buy sites and value a trusted inspection partner on the listing."
+      },
+      {
+        "route": "Collision and glass shops that refer mechanical work",
+        "whoPays": "The body or glass shop, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The body shop down the road finds bent suspension parts and sends them to you. They need a site as much as you did.\"",
+        "whyItWorks": "Adjacent auto trades refer constantly. Each is a separate buyer with the same problem."
+      },
+      {
+        "route": "Driving schools that need their cars serviced",
+        "whoPays": "The driving school",
+        "min": 1200,
+        "max": 3000,
+        "unit": "one-time",
+        "pitchLine": "\"The driving school whose cars your shop keeps on the road books students by phone. A site with lesson booking is their real need.\"",
+        "whyItWorks": "Fleet customers already trust the shop owner, and the school buys websites on the same logic."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Dispatch text assistant for the tow company",
+        "whoPays": "The tow company, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Stranded drivers text the tow company their location and problem, and an assistant collects the vehicle, the drop-off shop and the address.\"",
+        "whyItWorks": "Tow dispatch is phone-heavy. The repair shop's introduction lands it, and the shop becomes the default drop-off."
+      },
+      {
+        "route": "Parts lookup chat for the parts store",
+        "whoPays": "The parts store, monthly",
+        "min": 200,
+        "max": 500,
+        "unit": "monthly",
+        "pitchLine": "\"DIY customers describe the car and the part, and an assistant checks fitment questions before they drive in, then points tougher jobs to local mechanics.\"",
+        "whyItWorks": "Parts counters lose hours to fitment questions. The shop client gets the jobs DIYers give up on."
+      },
+      {
+        "route": "Listing condition notes for the used-car lot",
+        "whoPays": "The dealer, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Each pre-sale inspection the shop does becomes a plain-language condition note on the lot's listing, drafted for the dealer to approve.\"",
+        "whyItWorks": "Buyers trust an independent inspection. The lot gets better listings and the shop gets steady inspection work."
+      },
+      {
+        "route": "Tire shop's quote text-back",
+        "whoPays": "The tire shop",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"Missed calls at the tire shop get a text asking for tire size and vehicle. Same text-back the repair shop has, set up for them.\"",
+        "whyItWorks": "You already built it once. The second build is configuration on a warm referral."
+      },
+      {
+        "route": "Lesson scheduling assistant for the driving school",
+        "whoPays": "The driving school",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"Parents ask about lesson times, permit rules and pricing at night. An assistant answers from the school's schedule and books the lesson.\"",
+        "whyItWorks": "Driving schools are swamped by parent texts. The shop's fleet relationship opens the door."
+      },
+      {
+        "route": "Supplement photo notes for the body shop",
+        "whoPays": "The collision shop, monthly",
+        "min": 200,
+        "max": 500,
+        "unit": "monthly",
+        "pitchLine": "\"When the body shop finds hidden mechanical damage, an assistant drafts the supplement note from the tech's pictures and comments.\"",
+        "whyItWorks": "Supplements are paperwork the body shop hates. The repair shop sees this handoff every week."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Missed-call text-back for the service counter",
+      "kind": "automation",
+      "oneTimeMin": 0,
+      "oneTimeMax": 300,
+      "monthlyMin": 99,
+      "monthlyMax": 199,
+      "pitchLine": "\"Every call the counter misses gets a text asking for the vehicle and what it's doing. The service writer calls back knowing it's a brake noise, not a mystery.\"",
+      "whenAndWhatItTakes": "Day 30. Needs the shop number forwarded and the wording they approve."
+    },
+    {
+      "name": "Repair status texts from drop-off to pickup",
+      "kind": "automation",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"The customer gets a text when the car is in a bay, when the estimate is ready and when it's done. Fewer 'is my car ready' calls all afternoon.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the shop's job stages and who updates them."
+    },
+    {
+      "name": "Maintenance price list and booking by service",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Oil changes, brake inspections, fluid services and the diagnostic fee, each with a price and a book button tied to open bay time.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their real maintenance prices and how many bays they keep open for booked work."
+    },
+    {
+      "name": "Mileage-based service reminders",
+      "kind": "automation",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1200,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Each customer gets a reminder when the car is likely due for its next service, estimated from the last repair order mileage.\"",
+      "whenAndWhatItTakes": "Month 3. Needs a customer export with last-visit mileage and dates."
+    },
+    {
+      "name": "Symptom intake assistant for the shop site",
+      "kind": "ai",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"A driver types 'grinding when I brake' and the assistant asks the follow-ups your service writer asks, then books the diagnostic with the notes attached to the appointment.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their intake questions and the services they book. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Plain-language estimate explainer",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"Each line on the repair estimate gets a one-sentence explanation a customer understands: what a caliper is, why the rotor goes with the pads.\"",
+      "whenAndWhatItTakes": "Month 4. Needs sample estimates and the shop's wording preferences. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Fleet account portal by vehicle",
+      "kind": "software",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Each fleet customer sees service history, upcoming maintenance and open repairs per truck, and approves estimates without calling the shop.\"",
+      "whenAndWhatItTakes": "Month 5, once a few business fleets are on the books. Needs their unit lists and service history."
+    },
+    {
+      "name": "After-hours key drop check-in",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 40,
+      "monthlyMax": 100,
+      "pitchLine": "\"Customers dropping keys after close fill a short check-in with the car, the symptom and a callback number, so the morning starts with notes, not a pile of envelopes.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their drop-box process and morning routine."
+    },
+    {
+      "name": "Review reply drafts for repair customers",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"Each review gets a reply drafted in the owner's voice that names the repair, ready to approve between cars.\"",
+      "whenAndWhatItTakes": "Month 2. Needs ten past replies. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Declined-work follow-up drafts",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"Customers who declined the brake pads or the coolant flush get a personal note a few weeks later, drafted from the inspection notes, with a booking link.\"",
+      "whenAndWhatItTakes": "Month 4. Needs declined-work data from their repair orders. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Loaner and shuttle scheduler",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Customers reserve a shuttle ride or a loaner when they book the repair, and the shop sees the day's rides in one list.\"",
+      "whenAndWhatItTakes": "Month 5, for shops with a shuttle or loaners. Needs their radius and vehicle count."
+    },
+    {
+      "name": "Technician time and comeback tracker",
+      "kind": "software",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"See hours billed versus hours worked per tech, and which repairs came back, so the shop fixes the pattern instead of guessing.\"",
+      "whenAndWhatItTakes": "Month 6. Needs repair order exports and tech clock times."
+    },
+    {
+      "name": "Tech-note to customer summary writer",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"The tech's shorthand, 'LF cal sticking, rotor scored', becomes a clear note for the customer before the service writer calls.\"",
+      "whenAndWhatItTakes": "Month 5. Needs sample tech notes and approved customer wording. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Content writer for symptom and make pages",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 200,
+      "monthlyMax": 500,
+      "pitchLine": "\"A new symptom or make page each month, drafted from the shop's real repairs and checked by the owner before it goes live.\"",
+      "whenAndWhatItTakes": "Month 3. Needs monthly job notes and owner approval. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Parts ordering checklist for the morning",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 40,
+      "monthlyMax": 100,
+      "pitchLine": "\"Tomorrow's booked jobs produce a parts checklist tonight, so the brake pads and filters are on the shelf before the first car rolls in.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their booking data and common parts per service."
+    },
+    {
+      "name": "Repair warranty registration and lookup",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 40,
+      "monthlyMax": 120,
+      "pitchLine": "\"Each repair's warranty is logged with the parts and mileage, and the customer can look it up instead of digging for an invoice.\"",
+      "whenAndWhatItTakes": "Month 6. Needs the shop's published warranty terms."
+    },
+    {
+      "name": "Diagnostic notes search across past repairs",
+      "kind": "ai",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"A tech types the vehicle and the code and sees how the shop fixed the same problem before, from its own repair history.\"",
+      "whenAndWhatItTakes": "Month 8. Needs a few years of repair orders with notes. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Pre-winter service push automation",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 30,
+      "monthlyMax": 80,
+      "pitchLine": "\"Each fall the shop's customers get battery and brake check invites in batches, so the booked work arrives spread across weeks.\"",
+      "whenAndWhatItTakes": "August. Needs the customer list and how many inspections a day the shop can take."
+    },
+    {
+      "name": "Customer service history portal",
+      "kind": "software",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"Customers log in and see every repair and service on their car, ready to show a buyer when they sell it.\"",
+      "whenAndWhatItTakes": "Month 8. Needs the repair order history exported per customer."
+    },
+    {
+      "name": "Applicant screener for technicians",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"Tech applicants answer your questions on tools, specialties and certifications before you spend a lunch break interviewing them.\"",
+      "whenAndWhatItTakes": "Any time they post a hiring note. Needs their must-haves and pay range. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the symptom intake for every independent shop",
+      "whoPays": "Repair shops, monthly per shop",
+      "min": 49,
+      "max": 199,
+      "unit": "monthly",
+      "pitchLine": "\"The symptom intake I built for one auto shop asks what a good service writer asks. Every independent shop loses calls during the day.\"",
+      "whyItWorks": "Dense category, identical problem. The first shop paid for the intake questions and the booking flow."
+    },
+    {
+      "route": "Shop finder for an independent parts distributor",
+      "whoPays": "The parts distributor, annually",
+      "min": 5000,
+      "max": 20000,
+      "unit": "per-year",
+      "pitchLine": "\"Your delivery trucks visit every repair shop in the region. A find-a-mechanic map on your site sends drivers to the shops buying your parts.\"",
+      "whyItWorks": "Distributors fight for shop loyalty with rebates. Sending shops customers is a stronger tie."
+    },
+    {
+      "route": "Repair shop network or co-op member sites",
+      "whoPays": "The shop network, per member",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "pitchLine": "\"Each member shop in your network needs the same symptoms guide and nationwide-warranty explainer. I build it once and roll it to every member.\"",
+      "whyItWorks": "Networks of independent shops buy for members and need consistent pages that carry their shared warranty."
+    },
+    {
+      "route": "State auto repair association toolkit",
+      "whoPays": "The association, per bundle",
+      "min": 1500,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"A shop-site template, a consumer-rights page and an estimate-approval explainer as a member benefit for every repair shop in the association.\"",
+      "whyItWorks": "Associations need renewal reasons, and one deal reaches dozens of shop owners."
+    },
+    {
+      "route": "White-label repair shop template for agencies",
+      "whoPays": "The agency, per site",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "pitchLine": "\"Agencies that sell ads to auto shops still need a site to send clicks to. Mine has the symptom pages and booking built in.\"",
+      "whyItWorks": "Agencies own the shop relationship; you supply the part they keep rebuilding."
+    },
+    {
+      "route": "Fleet maintenance portal for regional service businesses",
+      "whoPays": "The fleet owner, annually",
+      "min": 3000,
+      "max": 10000,
+      "unit": "per-year",
+      "pitchLine": "\"A regional plumbing or landscaping fleet needs every van's maintenance in one portal, serviced by approved independent shops.\"",
+      "whyItWorks": "Fleet owners buy annually and want one view. The shop client becomes the first approved shop."
+    },
+    {
+      "route": "Technical school career pages for shop owners",
+      "whoPays": "The tech school's career services office",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Students finishing automotive programs need a list of shops hiring. A page where shops post openings serves the school and the trade.\"",
+      "whyItWorks": "Every shop needs techs; schools need placements. The page puts you in front of every shop owner."
+    },
+    {
+      "route": "Extended-warranty claim intake for administrators",
+      "whoPays": "The warranty administrator",
+      "min": 5000,
+      "max": 20000,
+      "unit": "one-time",
+      "pitchLine": "\"Repair shops hate extended-warranty claims. A cleaner claim intake for independent shops is something the administrator can pay for.\"",
+      "whyItWorks": "Administrators lose shops over slow claims. You know the shop side of that workflow."
+    },
+    {
+      "route": "Multi-location repair group rollout",
+      "whoPays": "The repair group, per location",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "pitchLine": "\"An owner who has bought three repair shops needs one site with a page per location and booking that knows which bays are free.\"",
+      "whyItWorks": "Consolidators buy shops and need them online fast and consistent."
+    },
+    {
+      "route": "Monthly repair labor rate survey",
+      "whoPays": "Shop owners, monthly",
+      "min": 19,
+      "max": 59,
+      "unit": "monthly",
+      "pitchLine": "\"A monthly sheet on posted labor rates and diagnostic fees, built only from figures shop owners share with you.\"",
+      "whyItWorks": "Every shop wonders if its rate is right. Built from contributed data, it never claims more than it shows."
+    },
+    {
+      "route": "Auto shop stack in the neighbouring metro",
+      "whoPays": "New repair shops in another metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I keep it to one repair shop per neighbourhood. Yours has {City}. The towns along the next highway exit are open.\"",
+      "whyItWorks": "Non-competing geography reuses the template and the honest-mechanic proof."
+    },
+    {
+      "route": "Rebuild repair shop sites an ad agency abandoned",
+      "whoPays": "The stranded repair shop",
+      "min": 1200,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"When the ad contract ended, the shop site went with it. I rebuild it on a repair template the owner keeps for good.\"",
+      "whyItWorks": "Shops burned by rented sites want ownership. They already decided to spend."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Repair shop site build plus care plan, one contract",
+      "min": 1800,
+      "max": 3000,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The auto shop site and the care plan go on one contract, so new hours or a new diagnostic fee is a text to me, not a job for you after close.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Review requests after each repair order",
+      "min": 99,
+      "max": 249,
+      "unit": "monthly",
+      "trigger": "The first cars booked through the site have been picked up.",
+      "line": "\"The first brake and maintenance bookings from the site are done. Let's make every repair order end in a review request.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "Repair status texts from drop-off to pickup",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "trigger": "They mention the phone ringing all afternoon with 'is it ready' calls.",
+      "line": "\"Those afternoon 'is my car ready' calls stop when the shop texts the status first.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Symptom intake assistant for the shop site",
+      "min": 1200,
+      "max": 3000,
+      "unit": "one-time",
+      "trigger": "Sixty days of booking data shows most requests are vague symptoms the counter has to call back about.",
+      "line": "\"Half your booking requests say 'weird noise'. The intake asks the brake and engine questions before the car arrives.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Mileage-based service reminders",
+      "min": 500,
+      "max": 1200,
+      "unit": "one-time",
+      "trigger": "They mention customers going back to the dealer for scheduled maintenance.",
+      "line": "\"Your customers are getting maintenance reminders from the dealer, not the shop. Let's send them first.\""
+    },
+    {
+      "rung": 6,
+      "day": 150,
+      "offer": "Declined-work follow-up drafts",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "trigger": "A month of inspection data shows declined brake and fluid work piling up.",
+      "line": "\"That declined brake work is still on those cars. A personal note a few weeks later brings a lot of it back to the shop.\""
+    },
+    {
+      "rung": 7,
+      "day": 240,
+      "offer": "Fleet account portal by vehicle",
+      "min": 3000,
+      "max": 8000,
+      "unit": "one-time",
+      "trigger": "They pick up a third business fleet, or a fleet customer asks for history by truck.",
+      "line": "\"Three fleets now. Give them a portal with each truck's repair history so approvals stop waiting on phone tag.\""
+    }
+  ]
+}

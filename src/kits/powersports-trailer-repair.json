@@ -1,0 +1,838 @@
+{
+  "schemaVersion": 1,
+  "category": "Powersports & trailer repair",
+  "slug": "powersports-trailer-repair",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Auto family batch. Niche, loyal riders and almost no web presence, so copy is enthusiast-facing and season-driven. Machines and parts described by type, never by manufacturer. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Trailer axle, brake and wiring service",
+      "contains": "Wheel bearing repacks, electric and surge brakes, breakaway switches, lights and wiring harnesses, leaf springs, couplers and safety chains for utility, boat and car-hauler trailers",
+      "why": "Trailer owners search the failed part, a light that won't work or a hot hub. A page that names each trailer job gets the call before the trip."
+    },
+    {
+      "section": "Winterization and seasonal storage",
+      "contains": "Winterizing motorcycles, ATVs, side-by-sides and RVs, fuel stabilizer, battery tenders, plumbing antifreeze for campers, indoor storage and spring de-winterize",
+      "why": "Storage and winterization lock in the spring tune-up. Riders book the shop that makes the off-season one appointment."
+    },
+    {
+      "section": "Pickup and delivery for bikes and machines",
+      "contains": "Picking up a motorcycle, ATV or side-by-side that won't run, hauling trailers that can't be towed safely, delivery fees by distance, and loading straps and soft ties",
+      "why": "A dead quad in a barn can't get to the shop. Pickup is often the deciding factor, and it deserves its own page."
+    },
+    {
+      "section": "Older and carbureted machines",
+      "contains": "Carburetor cleaning and rebuilds, two-stroke top ends, older dirt bikes and classic motorcycles, discontinued parts sourcing, and what the shop won't take on",
+      "why": "Many dealers turn away older machines. Riders with a project bike search for the independent powersports shop that will touch it."
+    },
+    {
+      "section": "Pre-season tune-ups and trip prep",
+      "contains": "Spring motorcycle tune-ups, hunting-season ATV checks, track-day prep, tire and chain service, and a trip checklist for camper and toy-hauler trailers",
+      "why": "Demand spikes at season start. A pre-season page books the work weeks earlier and spreads the rush."
+    },
+    {
+      "section": "RV roof, slide-out and appliance repair",
+      "contains": "Roof reseal and leak repair, slide-out mechanisms, water heaters, furnaces, fridges and generators, plus mobile RV service at the campsite or driveway",
+      "why": "RV owners need a repair shop that can take a big rig or come to it. A separate RV page stops them assuming it's motorcycles only."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C17",
+      "siteType": "local-conversion",
+      "name": "Trail Ready",
+      "heroLayout": "split-photo",
+      "mood": [
+        "rugged",
+        "energetic",
+        "direct"
+      ],
+      "bestFor": "One-shop powersports mechanics who sell on a fast repair request and pickup for machines that won't run",
+      "pairsWithTier": "starter",
+      "headlineSample": "ATV, motorcycle and trailer repair in {City}",
+      "whyItFits": "Basalt and lime read like trail gear and hi-vis, and the geometric caps keep the request button loud on a phone in the garage."
+    },
+    {
+      "id": "b",
+      "themeId": "C48",
+      "siteType": "portfolio-showcase",
+      "name": "Garage Builds",
+      "heroLayout": "full-bleed-photo",
+      "mood": [
+        "enthusiast",
+        "moody",
+        "crafted"
+      ],
+      "bestFor": "Shops with motorcycle rebuilds, side-by-side builds and restored trailers worth showing off",
+      "pairsWithTier": "standard",
+      "headlineSample": "Powersports builds and repair, {City}",
+      "whyItFits": "The family combo. Riders follow builds, and a near-black gallery makes chrome, engine cases and mud-caked machines look like the magazine shots they collect."
+    },
+    {
+      "id": "c",
+      "themeId": "C10",
+      "siteType": "b2b-capability",
+      "name": "Fleet Trailer Bay",
+      "heroLayout": "type-led",
+      "mood": [
+        "dependable",
+        "organised",
+        "plain"
+      ],
+      "bestFor": "Shops servicing trailer fleets for landscapers, contractors, equipment rental yards and dealers",
+      "pairsWithTier": "premium",
+      "headlineSample": "Trailer fleet service and inspections in {City}",
+      "whyItFits": "Steel blue on white reads like an inspection sheet. Fleet managers compare capacity, turnaround and records, not mood."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your powersports shop has loyal reviews on Maps but no website. Someone in {City} with a quad that won't idle can't see whether you work on their machine before they call.",
+      "hook": "Open their Maps listing and confirm there's no Website button. Screenshot it for when they reply.",
+      "linkLine": "What could sit behind that button for the shop: {demo-link}"
+    },
+    {
+      "angle": "Riding group posts only",
+      "line": "Most of what I can find about your shop is shout-outs in local riding groups. That's great word of mouth, and a rider new to town still has nowhere to see what you fix or how to book.",
+      "hook": "Search their shop name in local riding or trail Facebook groups. Note a recent shout-out.",
+      "linkLine": "Where those riding-group shout-outs would land: {demo-link}"
+    },
+    {
+      "angle": "Forgotten free site",
+      "line": "The site on your listing still shows a winter-hours notice and no mention of trailers or side-by-sides. A rider comparing motorcycle shops reads that as a place that's slowed down.",
+      "hook": "Open the site and look for stale notices, missing services or an old copyright year. Note which.",
+      "linkLine": "Your powersports shop, current: {demo-link}"
+    },
+    {
+      "angle": "Site hard to use in the garage",
+      "line": "On my phone your shop site's service list was a wall of text with no tap-to-call. Riders look you up standing next to the dead bike in the garage, phone in one greasy hand.",
+      "hook": "Only if they have a site. Load it on a phone and note what breaks. Screenshot it for when they reply.",
+      "linkLine": "A motorcycle and ATV shop page built for a phone: {demo-link}"
+    },
+    {
+      "angle": "No repair request",
+      "line": "There's no way to send your shop the machine, the year and what it's doing without calling. A request form for ATVs, bikes and trailers lets you sort the carb cleans from the engine jobs before they show up.",
+      "hook": "Check the listing and social pages for a request form. If there's none, the angle holds.",
+      "linkLine": "A repair request built for bikes, ATVs and trailers: {demo-link}"
+    },
+    {
+      "angle": "Builds with nowhere to live",
+      "line": "That side-by-side build and the restored dirt bike on your page are the kind of work riders drive an hour for. They're buried between parts-arrival posts.",
+      "hook": "Find two builds or rebuilds you can name by machine type and work done. Mention one if they reply.",
+      "linkLine": "Your powersports builds on their own page: {demo-link}"
+    },
+    {
+      "angle": "Reviews about old machines",
+      "line": "Your reviews keep saying you fixed a machine the dealer wouldn't touch. That one line is the whole reason a rider with an older bike would pick your shop.",
+      "hook": "Read their reviews and copy one line about an older machine, a fair price or speed. Quote it back if they reply.",
+      "linkLine": "Those reviews next to the machines you fix: {demo-link}"
+    },
+    {
+      "angle": "Spring riding season",
+      "line": "When the first warm weekend hits {City}, every rider wants their motorcycle running and every camper owner hitches up a trailer with dead lights. The shops riders can book online fill first.",
+      "hook": "Use in late winter. Name the season or the local trail opening in the reply.",
+      "linkLine": "A pre-season tune-up page ready before riding season: {demo-link}"
+    },
+    {
+      "angle": "Requests on weekends",
+      "line": "Riders find out the machine won't start on Saturday morning, when your shop might be closed. A request form catches that ATV or bike before they take it to the dealer on Monday.",
+      "hook": "Check their listed hours. If they close weekends or evenings, the angle holds.",
+      "linkLine": "A weekend repair request for riders: {demo-link}"
+    },
+    {
+      "angle": "Hiring a powersports tech",
+      "line": "Saw you're looking for a powersports tech. Good mechanics who love bikes check out a shop's builds and setup online before they apply.",
+      "hook": "Only if they posted a hiring note. Note the date and role.",
+      "linkLine": "A powersports shop page with a careers section: {demo-link}"
+    },
+    {
+      "angle": "Pickup radius",
+      "line": "Riders bring machines from all over around {City}, but nothing tells someone out in {Neighborhood} whether you'll pick up a dead ATV or what that costs. That's their first question.",
+      "hook": "Find towns or trail areas mentioned in posts or reviews. Use the furthest one.",
+      "linkLine": "A pickup-and-delivery page for bikes and trailers: {demo-link}"
+    },
+    {
+      "angle": "Payments on bigger rebuilds",
+      "line": "If you split engine rebuilds or RV roof jobs into payments, say so on the page. A big repair is when riders decide whether to fix the machine or sell it as-is.",
+      "hook": "Only if they mention payment options somewhere. If not, skip this angle.",
+      "linkLine": "Bigger powersports repairs with payments explained: {demo-link}"
+    },
+    {
+      "angle": "Insured to store your machine",
+      "line": "Leaving a motorcycle or camper at a shop for a few weeks makes people nervous. A page that covers your storage, security and insurance answers that before they hand over the keys.",
+      "hook": "Look for any mention of indoor storage, security or insurance. Never state coverage they didn't publish.",
+      "linkLine": "Storage, security and insurance on one shop page: {demo-link}"
+    },
+    {
+      "angle": "Word-of-mouth riders",
+      "line": "Sounds like your shop runs on riders telling riders. That's the best kind of work, and the friend who gets your name still searches before trailering a machine over.",
+      "hook": "Look for reviews like 'my riding buddy sent me'. Quote one back.",
+      "linkLine": "Where a rider's referral to your shop would land: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "Saw the {specific recent job} on your page. Riders hunting for a powersports mechanic who can handle that kind of work would trailer an hour for it, if they could find it.",
+      "hook": "Pick the newest repair or build post and name it exactly: machine type, problem and what was done.",
+      "linkLine": "That build, front and centre: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hey {Owner} — that {specific recent job} you posted is serious wrenching.\n\nI looked for powersports and trailer repair in {City} and found {Business Name} through riding-group shout-outs, but no site where someone can send their machine and book. I put together a sample shop page for bikes, ATVs and trailers, with marked placeholders where your photos would go.\n\nWant me to send it over?",
+    "dm2": "{Owner} — following up in case my last message got buried. Here's the sample site for {Business Name}: {demo-link}\n\nIt has a repair request for motorcycles, ATVs, side-by-sides and trailers, a winterization and storage page, pickup and delivery, and a page for older carbureted machines. If it's not for you, say so and I'll leave you be.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for powersports and trailer shops here in {City}. I sent you a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"Short version: I built a sample site for {Business Name} with a repair request for bikes, ATVs and trailers, a winterization page and pickup details, with marked placeholders where your photos would go. Can I text you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range} depending on how many machine and service pages you want, then {Care Range} a month for hosting and changes. For a shop your size I'd quote about {Build Price}, about one top-end rebuild.\"\n\"Can I walk you through it for ten minutes this week?\"\n\nCLOSE:\n\"I'll send a one-page scope and an invoice for the deposit. We start the day it clears.\"",
+    "objections": [
+      {
+        "objection": "Riders find me through word of mouth.",
+        "handler": "\"They do, and they still search your name before trailering a machine over. The site is where a riding buddy's recommendation lands.\""
+      },
+      {
+        "objection": "I'm backed up for weeks already.",
+        "handler": "\"Then the request form helps most. You see the machine and the problem first, book the quick carb cleans in gaps and quote the rebuilds properly.\""
+      },
+      {
+        "objection": "It's the off-season, nobody's riding.",
+        "handler": "\"That's when winterization and storage sell, and when the site gets found before spring. It's working the day riding season starts.\""
+      },
+      {
+        "objection": "The dealers get all the online traffic.",
+        "handler": "\"Dealers turn away older machines and trailers. A page that says your shop takes them is exactly what those riders search for.\""
+      },
+      {
+        "objection": "My cousin can put up a page for me.",
+        "handler": "\"Good, that's cheaper. I'll hand over the request form and the winterization page I built. If it stalls before spring, the offer stands.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For your shop about {Build Price}: repair request, machine pages, winterization and pickup. Roughly one rebuild.\""
+      }
+    ],
+    "email": {
+      "subject": "Powersports shop site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for powersports and trailer repair shops around {City}. {Business Name} has loyal riders and good reviews, but no site where someone new can see what you fix or send in their machine.\n\nRather than ask for your time, I built a sample first: a repair request for motorcycles, ATVs, side-by-sides and trailers, a winterization and storage page, pickup and delivery details, and a page for older carbureted machines, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and changes. If not, no problem, it comes down at the end of the month.\n\nWorth ten minutes on the phone this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"{Owner}, it's {Your Name}. I build websites for powersports and trailer shops in {City}, and put together a sample for {Business Name}. I'll text you the link. Have a look when the shop's quiet. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner} — I'm taking the {Business Name} powersports demo down on Friday to free up the space.\n\nWant me to leave it up? One word is fine either way.",
+    "nurture": "Hey {Owner} — riding season is a few weeks out and every bike and trailer in {City} is about to need a tune-up at once. Thought of you.\n\nThe site is still here whenever you want it, and nothing's changed on price. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to roughly one engine rebuild, never to an hourly rate.",
+      "Price each machine type page separately: motorcycles, ATVs and side-by-sides, trailers and RVs answer different searches.",
+      "A repair request that asks machine type, year and symptom is the core product. Charge for it as its own line.",
+      "Winterization and storage pages pay back in one season; put them in the first scope for shops in cold climates.",
+      "Only quote RV pages for shops that can fit an RV or do mobile RV service.",
+      "Fleet trailer pages are a separate line for shops near contractors and rental yards."
+    ],
+    "lineItems": [
+      {
+        "item": "Machine repair request form",
+        "min": 300,
+        "max": 700,
+        "unit": "one-time",
+        "description": "Max with machine type, year, symptom, running-or-not, pickup needed and photo upload.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Machine type page (each)",
+        "min": 200,
+        "max": 450,
+        "unit": "per-page",
+        "description": "Max when the page lists common jobs, the shop's builds for that machine type and a booking link.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Winterization and storage signup",
+        "min": 300,
+        "max": 700,
+        "unit": "one-time",
+        "description": "Max with package options by machine, storage capacity, pickup scheduling and a spring de-winterize booking.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Pickup and delivery request page",
+        "min": 200,
+        "max": 450,
+        "unit": "one-time",
+        "description": "Max with distance-based fees, a map, loading notes and trailer-tow requests.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "RV repair and mobile service page",
+        "min": 300,
+        "max": 700,
+        "unit": "one-time",
+        "description": "Max with separate roof, slide-out and appliance sections and a mobile campsite request form.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Trailer fleet service page",
+        "min": 300,
+        "max": 700,
+        "unit": "one-time",
+        "description": "Max with a unit-list upload, inspection checklist and scheduled yard visits.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Shop build video and photo day",
+      "min": 400,
+      "max": 1000,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"One day filming a motorcycle teardown, a side-by-side on the lift and a trailer brake job gives riders the build content they actually follow.\"",
+      "when": "Month 2, when a build is mid-way on the bench."
+    },
+    {
+      "name": "Google profile management for powersports work",
+      "min": 150,
+      "max": 350,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Weekly posts of ATVs, bikes and trailers you fixed, with the machine type and the town, so 'atv repair near me' finds your shop.\"",
+      "when": "Day 30, once the site is live."
+    },
+    {
+      "name": "Review requests at machine pickup",
+      "min": 79,
+      "max": 199,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"When the rider loads up the fixed machine, they get a text with a review link. Reviews about bikes the dealer wouldn't touch sell your shop.\"",
+      "when": "Day 30. The easiest second sale."
+    },
+    {
+      "name": "Fall winterization campaign",
+      "min": 250,
+      "max": 600,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A push in the fall for motorcycle, ATV and camper winterization, sent to past customers first, fills the storage bays and books spring.\"",
+      "when": "Pitch in August, run September and October."
+    },
+    {
+      "name": "Trail and riding-group sponsorship kit",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A banner, stickers and a QR card for the local trail cleanup or ride day, so every rider there knows the powersports shop that sponsors it.\"",
+      "when": "Before the first group ride of the season."
+    },
+    {
+      "name": "Spring tune-up reminder mailer",
+      "min": 150,
+      "max": 400,
+      "unit": "per-job",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A postcard and text to every rider who stored or winterized with you: book the spring tune-up before the trails open.\"",
+      "when": "Late winter, every year."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Trailer sales lots that need a service partner",
+        "whoPays": "The trailer dealer",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The trailer lot you fix warranty brakes for needs an inventory site. Your shop goes on it as their service partner.\"",
+        "whyItWorks": "Trailer dealers rarely have service bays and need a trusted shop on their site."
+      },
+      {
+        "route": "Campgrounds and RV parks",
+        "whoPays": "The campground owner",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The RV park whose guests call you for slide-outs and water heaters needs a site that books campsites. Your mobile RV service is on it.\"",
+        "whyItWorks": "Campgrounds buy booking sites and want a repair partner for guests."
+      },
+      {
+        "route": "Riding clubs and trail associations",
+        "whoPays": "The club, from dues or sponsors",
+        "min": 800,
+        "max": 2500,
+        "unit": "one-time",
+        "pitchLine": "\"The trail club you sponsor runs on a group chat. A site with trail conditions, rides and a sponsor wall puts your shop in front of every member.\"",
+        "whyItWorks": "Clubs need a home and sponsors; the shop owner is already involved."
+      },
+      {
+        "route": "Boat and marine engine mechanics",
+        "whoPays": "The marine mechanic, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"When a rider asks about their boat motor, who do you send them to? That marine mechanic has the same no-website problem.\"",
+        "whyItWorks": "Powersports and marine customers overlap heavily and trade referrals."
+      },
+      {
+        "route": "Equipment rental yards with trailer fleets",
+        "whoPays": "The rental yard",
+        "min": 2000,
+        "max": 5000,
+        "unit": "one-time",
+        "pitchLine": "\"The rental yard whose trailers you keep road-ready needs a rental booking site. Your trailer service keeps it running.\"",
+        "whyItWorks": "Rental yards have budget and already depend on the shop for trailer upkeep."
+      },
+      {
+        "route": "Hunting outfitters and guide services",
+        "whoPays": "The outfitter",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The outfitter whose ATVs you prep every fall needs a site to book hunts. Your shop keeps their machines on the trail.\"",
+        "whyItWorks": "Outfitters buy booking sites and trust the mechanic who preps their fleet."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Trailer buyer's question assistant for the dealer",
+        "whoPays": "The trailer dealer, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"Buyers ask the trailer lot about payload, brakes and hitch class at night. An assistant answers from the dealer's specs and books service with your shop.\"",
+        "whyItWorks": "Dealers lose sales to slow answers. The shop gets routed service."
+      },
+      {
+        "route": "Campsite and repair booking assistant for the RV park",
+        "whoPays": "The campground, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"Guests ask about sites, hookups and 'my water heater quit'. An assistant books the site and hands RV repair requests to your mobile service.\"",
+        "whyItWorks": "Campground offices are small and swamped in season."
+      },
+      {
+        "route": "Trail conditions summary for the riding club",
+        "whoPays": "The club, from sponsors",
+        "min": 600,
+        "max": 1500,
+        "unit": "one-time",
+        "pitchLine": "\"Members post trail reports in the chat; an assistant drafts a weekly trail conditions summary for the club site, sponsored by your shop.\"",
+        "whyItWorks": "Clubs want current trail info and sponsors want visibility."
+      },
+      {
+        "route": "Marine mechanic's request text-back",
+        "whoPays": "The marine mechanic",
+        "min": 600,
+        "max": 1500,
+        "unit": "one-time",
+        "pitchLine": "\"Missed calls get a text asking for the motor, hours and where the boat is stored. Same text-back setup as the powersports shop.\"",
+        "whyItWorks": "Second build is configuration on a warm referral."
+      },
+      {
+        "route": "Rental return damage notes for the rental yard",
+        "whoPays": "The rental yard, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Returned trailers get a damage check from return pictures, drafted for staff to confirm, with repairs routed to your trailer shop.\"",
+        "whyItWorks": "Rental yards argue over damage constantly. The shop gets the repair work."
+      },
+      {
+        "route": "Hunt booking assistant for the outfitter",
+        "whoPays": "The outfitter",
+        "min": 1000,
+        "max": 2500,
+        "unit": "one-time",
+        "pitchLine": "\"Hunters ask about dates, lodging and whether ATVs are provided. An assistant answers from the outfitter's packages and books the hunt.\"",
+        "whyItWorks": "Outfitters run on phone and email. The powersports client makes the introduction."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Missed-call text-back that asks for the machine",
+      "kind": "automation",
+      "oneTimeMin": 0,
+      "oneTimeMax": 250,
+      "monthlyMin": 79,
+      "monthlyMax": 179,
+      "pitchLine": "\"A missed call gets a text asking for machine type, year and what it's doing. You call back knowing it's a trailer light, not a motorcycle top end.\"",
+      "whenAndWhatItTakes": "Day 30. Needs the shop number forwarded and the wording they approve."
+    },
+    {
+      "name": "Ready-for-pickup and storage texts",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 500,
+      "monthlyMin": 30,
+      "monthlyMax": 80,
+      "pitchLine": "\"Riders get a text when the bike or ATV is ready, and a storage-fee reminder if it sits in the powersports shop too long.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their storage policy and job stages."
+    },
+    {
+      "name": "Winterization signup with spring auto-booking",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 40,
+      "monthlyMax": 100,
+      "pitchLine": "\"Riders pick a winterization package for each machine, schedule pickup, and get the spring de-winterize booked in the same step.\"",
+      "whenAndWhatItTakes": "August. Needs their packages, storage capacity and pickup rules."
+    },
+    {
+      "name": "Service price list by machine type",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 30,
+      "monthlyMax": 80,
+      "pitchLine": "\"Starting prices for motorcycle tune-ups, ATV carb cleans, trailer bearing repacks and RV roof reseals, each with a request button.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their real starting prices for common jobs."
+    },
+    {
+      "name": "Symptom intake assistant for riders",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"A rider types 'quad bogs when I hit the throttle' and the assistant asks fuel, sitting time and carb questions, then books the repair with notes.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their intake questions and services. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Pickup scheduling and route",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 40,
+      "monthlyMax": 100,
+      "pitchLine": "\"Dead bikes, ATVs and trailers needing pickup land on one route by area, with fees calculated and loading notes attached.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their pickup fees and truck-and-trailer capacity."
+    },
+    {
+      "name": "Rider-voice review replies",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 79,
+      "monthlyMax": 179,
+      "pitchLine": "\"A rider thanks the shop for saving an old two-stroke; a reply that talks about that exact dirt bike is drafted for the owner to tweak and post.\"",
+      "whenAndWhatItTakes": "Month 2. Needs ten past replies. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Parts finder for older machines",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"Type the machine and the part, and it searches the shop's supplier lists and past orders for carb kits and gaskets on discontinued models.\"",
+      "whenAndWhatItTakes": "Month 4. Needs supplier price lists and past part orders. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Storage bay inventory board",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 40,
+      "monthlyMax": 100,
+      "pitchLine": "\"Every stored motorcycle, ATV and camper with its bay, battery-tender status and spring date, so nothing gets lost in a packed winter shop.\"",
+      "whenAndWhatItTakes": "Month 3, before storage season. Needs their bay layout and current storage list."
+    },
+    {
+      "name": "Trailer fleet inspection log",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 60,
+      "monthlyMax": 150,
+      "pitchLine": "\"Each fleet trailer gets an inspection record: brakes, bearings, lights, tires, with the next due date sent to the fleet manager.\"",
+      "whenAndWhatItTakes": "Month 5, when a fleet account signs. Needs the unit list and inspection checklist."
+    },
+    {
+      "name": "Bench notes to invoice writer",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 80,
+      "monthlyMax": 200,
+      "pitchLine": "\"The mechanic talks through the motorcycle or ATV job on the bench: jets cleaned, float set, new plug. It drafts the invoice and the rider's summary.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their invoice template and labor rates. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Spring tune-up booking wave",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 700,
+      "monthlyMin": 30,
+      "monthlyMax": 80,
+      "pitchLine": "\"Late winter, riders get tune-up invites in batches so the spring rush spreads across weeks instead of one Saturday.\"",
+      "whenAndWhatItTakes": "January. Needs their customer list and daily capacity."
+    },
+    {
+      "name": "Build log pages for project machines",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 30,
+      "monthlyMax": 80,
+      "pitchLine": "\"Each big rebuild gets a private page where the owner sees progress pictures and parts as the bike or side-by-side comes together.\"",
+      "whenAndWhatItTakes": "Month 4. Needs a phone on the bench and their build stages."
+    },
+    {
+      "name": "Caption writer for build posts",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 700,
+      "monthlyMin": 60,
+      "monthlyMax": 150,
+      "pitchLine": "\"Drop the build clip and notes, and it drafts a caption riders like: machine, problem, fix and a request link.\"",
+      "whenAndWhatItTakes": "Month 3. Needs twenty past captions. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "RV mobile service request triage",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 80,
+      "monthlyMax": 200,
+      "pitchLine": "\"Camper owners describe the leak or dead fridge, and the assistant sorts what can be fixed at the campsite from what needs the RV in the shop.\"",
+      "whenAndWhatItTakes": "Month 5, for shops doing RV work. Needs their mobile service rules. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Season-end maintenance reminders",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 700,
+      "monthlyMin": 30,
+      "monthlyMax": 80,
+      "pitchLine": "\"After hunting season or the last trail ride, owners get a reminder for chain, oil and storage prep on their machine.\"",
+      "whenAndWhatItTakes": "Month 6. Needs customer machine list and season dates."
+    },
+    {
+      "name": "Job costing by machine type",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 40,
+      "monthlyMax": 100,
+      "pitchLine": "\"See whether motorcycles, ATVs, trailers or RVs actually make the shop money once parts hunting and bench time are counted.\"",
+      "whenAndWhatItTakes": "Month 6. Needs a season of invoices and labor hours."
+    },
+    {
+      "name": "Rider service history portal",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 50,
+      "monthlyMax": 120,
+      "pitchLine": "\"Riders see every repair on each machine they own, handy when selling a bike or trailer with records.\"",
+      "whenAndWhatItTakes": "Month 8. Needs past invoices per customer."
+    },
+    {
+      "name": "Win-back notes for lapsed riders",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 60,
+      "monthlyMax": 150,
+      "pitchLine": "\"Riders who skipped a season get a short note drafted from their last service and machine, with a tune-up link.\"",
+      "whenAndWhatItTakes": "Month 8, with a year of history. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Powersports tech applicant screener",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 60,
+      "monthlyMax": 150,
+      "pitchLine": "\"Applicants answer questions on two-stroke, four-stroke, trailer and RV experience before the owner calls.\"",
+      "whenAndWhatItTakes": "Any time they post a hiring note. Needs their must-haves. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the machine repair request",
+      "whoPays": "Powersports shops, monthly",
+      "min": 29,
+      "max": 99,
+      "unit": "monthly",
+      "pitchLine": "\"A repair request that knows ATVs, bikes, trailers and RVs is what every small powersports shop is missing. Almost none have a site.\"",
+      "whyItWorks": "Niche with almost no web presence. The first shop taught you the machine questions."
+    },
+    {
+      "route": "Dealer locator for a powersports parts distributor",
+      "whoPays": "The parts distributor, annually",
+      "min": 3000,
+      "max": 12000,
+      "unit": "per-year",
+      "pitchLine": "\"Riders search for a shop that can fix their machine. A locator of independent shops buying your parts sends them work.\"",
+      "whyItWorks": "Distributors want shop loyalty. Sending riders beats discounts."
+    },
+    {
+      "route": "Trailer manufacturer service network",
+      "whoPays": "The trailer manufacturer",
+      "min": 5000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Your trailer buyers need warranty service near them. A network page routes them to approved independent repair shops.\"",
+      "whyItWorks": "Trailer makers rarely run service; they need partners and a locator."
+    },
+    {
+      "route": "State trail riders association toolkit",
+      "whoPays": "The riders association",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"A member directory of trusted repair shops, trail info and ride calendars, built on what one powersports shop already uses.\"",
+      "whyItWorks": "Associations want member value and shop sponsors. One deal reaches many riders and shops."
+    },
+    {
+      "route": "White-label powersports template for agencies",
+      "whoPays": "The agency, per site",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "pitchLine": "\"Agencies picking up motorcycle and ATV shops can license my template with the machine request and winterization built in.\"",
+      "whyItWorks": "Agencies sell; you supply the niche build."
+    },
+    {
+      "route": "Equipment rental chain trailer program",
+      "whoPays": "The rental company, annually",
+      "min": 3000,
+      "max": 10000,
+      "unit": "per-year",
+      "pitchLine": "\"Every rental branch's trailers inspected and repaired by approved local shops, tracked in one portal.\"",
+      "whyItWorks": "Rental companies need road-ready trailers everywhere. Local shops are the supply."
+    },
+    {
+      "route": "Campground network RV service directory",
+      "whoPays": "The campground association, annually",
+      "min": 2000,
+      "max": 8000,
+      "unit": "per-year",
+      "pitchLine": "\"RV parks across the region list mobile RV repair partners, so guests with a dead water heater get help without leaving the site.\"",
+      "whyItWorks": "Campground groups want guest services; RV techs want steady calls."
+    },
+    {
+      "route": "Multi-shop powersports group rollout",
+      "whoPays": "The shop group, per location",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "pitchLine": "\"An owner running shops in two trail towns needs one brand with a page and request routing per location.\"",
+      "whyItWorks": "Consolidation in niche shops is rising. One template, many locations."
+    },
+    {
+      "route": "Outfitter and guide fleet maintenance program",
+      "whoPays": "Outfitters, annually",
+      "min": 1500,
+      "max": 5000,
+      "unit": "per-year",
+      "pitchLine": "\"Outfitters across the region get pre-season ATV and trailer prep scheduled with approved shops in one plan.\"",
+      "whyItWorks": "Outfitters can't afford breakdowns mid-season. Shops get steady fall work."
+    },
+    {
+      "route": "Monthly powersports labor rate sheet",
+      "whoPays": "Shop owners, monthly",
+      "min": 15,
+      "max": 39,
+      "unit": "monthly",
+      "pitchLine": "\"A short monthly sheet on what independent powersports shops charge for common jobs, built only from rates owners share.\"",
+      "whyItWorks": "Niche shops price blind. Contributed data keeps it honest."
+    },
+    {
+      "route": "Own the next trail town's shop",
+      "whoPays": "A powersports shop in another metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"One powersports and trailer shop per region on my list. You're the {City} shop; the next trail town over has nobody online at all.\"",
+      "whyItWorks": "Easy to own a whole metro. The template and proof travel."
+    },
+    {
+      "route": "Finish abandoned powersports shop sites",
+      "whoPays": "The stranded shop owner",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "pitchLine": "\"A rider buddy started your shop site and stopped at the home page. I finish it on a powersports template that already takes machine requests.\"",
+      "whyItWorks": "Owners with half-built sites already decided to spend."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Powersports shop site build plus care plan, one contract",
+      "min": 1500,
+      "max": 2500,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The powersports site and the care plan go on one contract, so new winter hours or a trailer service is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Review requests at machine pickup",
+      "min": 79,
+      "max": 199,
+      "unit": "monthly",
+      "trigger": "The first machines from site requests are picked up.",
+      "line": "\"Those first riders from the site rolled their bikes out happy. Let's get every one into a review.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "Shop build video and photo day",
+      "min": 400,
+      "max": 1000,
+      "unit": "per-shoot",
+      "trigger": "A standout rebuild is on the bench, or the gallery has only a few machines.",
+      "line": "\"That side-by-side rebuild on the bench is the shoot. One day fills the gallery and a month of rider posts.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Winterization signup with spring auto-booking",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "trigger": "Riders start asking about winter storage, or fall is a month out.",
+      "line": "\"Storage questions are starting. A winterization signup fills the bays and books every spring tune-up at once.\""
+    },
+    {
+      "rung": 5,
+      "day": 120,
+      "offer": "Symptom intake assistant for riders",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "trigger": "Request data shows vague 'won't start' requests the shop calls back about.",
+      "line": "\"Most ATV and bike requests say 'won't run'. The intake asks the fuel and sitting-time questions first.\""
+    },
+    {
+      "rung": 6,
+      "day": 180,
+      "offer": "Storage bay inventory board",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "trigger": "Storage fills past half the bays, or a machine gets misplaced.",
+      "line": "\"The storage bays are packed. A board shows every stored bike and camper and its spring date.\""
+    },
+    {
+      "rung": 7,
+      "day": 270,
+      "offer": "Trailer fleet inspection log",
+      "min": 1200,
+      "max": 3000,
+      "unit": "one-time",
+      "trigger": "A landscaper or rental yard asks the shop to service several trailers.",
+      "line": "\"That landscaper's trailers are a standing account. An inspection log makes it professional and recurring.\""
+    }
+  ]
+}

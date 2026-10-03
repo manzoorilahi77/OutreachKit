@@ -1,0 +1,828 @@
+{
+  "schemaVersion": 1,
+  "category": "Mobile mechanic",
+  "slug": "mobile-mechanic",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Auto family batch. Newer model, often a single van and a phone, so the site sells what can be fixed on site and where. Software kept small against the ticket. No parts or tool brands. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "What we fix in your driveway",
+      "contains": "Brakes, batteries, alternators, starters, serpentine belts, sensors, spark plugs and fluid services done on site, plus what needs a lift and gets referred to a partner shop",
+      "why": "The first question every mobile mechanic gets is 'can you do this here'. A plain list of on-site jobs stops the back-and-forth and builds trust."
+    },
+    {
+      "section": "Where the mobile mechanic can work",
+      "contains": "Driveways, apartment lots, workplace parking garages and quiet streets, level ground, HOA and property-manager rules, and what happens if the lot says no",
+      "why": "Renters and office workers want the repair where the car already sits. They book once they know the mechanic is allowed to work there."
+    },
+    {
+      "section": "Pre-purchase inspections at the seller's place",
+      "contains": "Meeting the private seller or small lot, the inspection checklist, scan for stored codes, test drive notes and a written report the buyer gets before paying",
+      "why": "Used-car buyers need an inspection fast, on the seller's driveway. It's the job that brings the most first-time customers to a mobile mechanic."
+    },
+    {
+      "section": "Parts policy and repair warranty",
+      "contains": "Who sources the parts, quality grades of replacement parts, the rule on customer-supplied parts, and how the repair warranty differs for each",
+      "why": "Customers ask if they can buy their own parts to save money. A clear policy prevents the argument when a cheap part fails a month later."
+    },
+    {
+      "section": "No-start and dead-battery callouts",
+      "contains": "Car won't start, clicking with no crank, battery versus starter versus alternator, same-day callouts, and what to check before the mechanic arrives",
+      "why": "A no-start morning is the most urgent search in this trade. A page that triages it books the callout before a tow is called."
+    },
+    {
+      "section": "Yard servicing for small fleets",
+      "contains": "Early-morning or overnight oil changes and brake work on vans and pickups at the business yard, per-vehicle records, and keeping trucks off the road for minutes, not days",
+      "why": "Contractors lose a day's work when a truck goes to a shop. Servicing in their yard is the pitch, and the page proves the mechanic can handle a fleet."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C30",
+      "siteType": "local-conversion",
+      "name": "Driveway Call",
+      "heroLayout": "split-photo",
+      "mood": [
+        "friendly",
+        "practical",
+        "quick"
+      ],
+      "bestFor": "One-van mobile mechanics who sell on showing up the same day and a fair callout fee",
+      "pairsWithTier": "starter",
+      "headlineSample": "Mobile mechanic in {City}, we come to you",
+      "whyItFits": "Denim and butter feel approachable, not like a dealership. Geometric caps keep 'we come to you' and the call button readable on a phone in a parking lot."
+    },
+    {
+      "id": "b",
+      "themeId": "C48",
+      "siteType": "booking-first",
+      "name": "Van at the Curb",
+      "heroLayout": "card-stack",
+      "mood": [
+        "capable",
+        "sharp",
+        "modern"
+      ],
+      "bestFor": "Mobile mechanics with a steady calendar who want on-site jobs booked into time windows with the address up front",
+      "pairsWithTier": "standard",
+      "headlineSample": "Book a mobile mechanic in {City} for tomorrow",
+      "whyItFits": "The family combo. A dark ground makes engine-bay and van shots read clearly, and the card stack walks from job type to address to time window."
+    },
+    {
+      "id": "c",
+      "themeId": "C19",
+      "siteType": "b2b-capability",
+      "name": "Yard Service",
+      "heroLayout": "type-led",
+      "mood": [
+        "dependable",
+        "efficient",
+        "plain"
+      ],
+      "bestFor": "Mobile mechanics growing into fleet accounts for contractors, delivery vans and landscaping crews",
+      "pairsWithTier": "premium",
+      "headlineSample": "Fleet maintenance at your yard, across {City}",
+      "whyItFits": "Gunmetal and signal orange are fleet colors, and mono numerals suit unit lists and service intervals. Fleet managers read capability, not mood."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "You come up when I search mobile mechanic in {City}, but there's no website on the listing. Someone stuck in a work parking lot can't see if you handle their problem before they call a tow.",
+      "hook": "Open their Maps listing and confirm there's no Website button. Screenshot it for when they reply.",
+      "linkLine": "What a mobile mechanic page behind that button looks like: {demo-link}"
+    },
+    {
+      "angle": "Marketplace profile only",
+      "line": "Your mobile mechanic work lives on a community buy-and-sell profile and a Facebook page. A driver who doesn't know you needs to see the jobs you do on site before letting you under their car.",
+      "hook": "Tap whatever link they list and see where it lands. Note whether it shows services and a way to book.",
+      "linkLine": "Your on-site repair menu with a booking path: {demo-link}"
+    },
+    {
+      "angle": "Abandoned starter site",
+      "line": "The site on your listing looks like it was started and left: placeholder text where your services should be. For a mechanic coming to someone's home, that half-built page costs trust.",
+      "hook": "Open the site and look for template text, broken pages or an old copyright year. Note which.",
+      "linkLine": "The finished version of a mobile mechanic site: {demo-link}"
+    },
+    {
+      "angle": "Call button hidden on mobile",
+      "line": "On a phone your site makes me scroll past a big header before I find the number. Someone whose car won't start is reading it on a phone with one bar of battery.",
+      "hook": "Only if they have a site. Load it on your phone and time how long it takes to reach the number. Screenshot it for when they reply.",
+      "linkLine": "A mobile mechanic page with the call button up top: {demo-link}"
+    },
+    {
+      "angle": "No way to send the address",
+      "line": "Every booking you take means asking for the address, the car and what it's doing over text. A short form gets all three, plus whether the car is in a driveway or a garage, before you call back.",
+      "hook": "Check the listing and social profiles for any request form. If there's none, the angle holds.",
+      "linkLine": "A request form built for on-site car repair: {demo-link}"
+    },
+    {
+      "angle": "Van work worth showing",
+      "line": "Your posts of alternator swaps and brake jobs done in parking lots are exactly what proves a mobile mechanic can do real work outside a shop. They're buried between memes.",
+      "hook": "Find two posts of real on-site jobs you can name by repair and vehicle. Mention one if they reply.",
+      "linkLine": "Your on-site repairs on one page: {demo-link}"
+    },
+    {
+      "angle": "Saved-my-day reviews",
+      "line": "Your reviews talk about showing up at a workplace lot, fixing the car before the shift ended and charging less than the tow and shop would have. That story should be the first thing a new customer reads.",
+      "hook": "Read their reviews and copy one line about speed, location or price. Quote it back if they reply.",
+      "linkLine": "Those reviews next to the jobs you fix on site: {demo-link}"
+    },
+    {
+      "angle": "Cold-morning battery season",
+      "line": "The first cold mornings in {City} mean dead batteries and no-starts all over town. Drivers search for a mechanic who'll come to them, and the one with a clear page gets the callout.",
+      "hook": "Use in late fall and early winter. Name the first cold snap in the reply.",
+      "linkLine": "A no-start page ready for battery season: {demo-link}"
+    },
+    {
+      "angle": "Requests while you're under a car",
+      "line": "When you're on your back under a car in someone's driveway, the phone rings out. A request page catches the next customer while your hands are full.",
+      "hook": "Call during the day. If it goes to voicemail, the angle holds; mention the time.",
+      "linkLine": "Car repair requests that wait for you: {demo-link}"
+    },
+    {
+      "angle": "Second van or helper",
+      "line": "Saw you're looking for a second mechanic or a helper. A mobile operation that looks established online gets better applicants, and lets you split jobs by area.",
+      "hook": "Only if they posted a hiring note or mentioned a second van. Note the date.",
+      "linkLine": "A mobile mechanic site with room for a second van: {demo-link}"
+    },
+    {
+      "angle": "Travel radius",
+      "line": "Your profile says you cover {City}, but someone in {Neighborhood} can't tell if you drive out there or what the callout costs. That's the first thing they wonder before calling a mechanic.",
+      "hook": "Find towns mentioned in their posts or reviews. Use the furthest one they've worked in.",
+      "linkLine": "A service-area map with callout fees for your van: {demo-link}"
+    },
+    {
+      "angle": "Splitting a bigger repair",
+      "line": "If you let customers split a clutch or timing-belt job into payments, put it on the page. Those are the repairs where people decide whether to fix the car or junk it.",
+      "hook": "Only if they mention payments somewhere. If not, skip this angle.",
+      "linkLine": "Bigger mobile repairs with payments explained: {demo-link}"
+    },
+    {
+      "angle": "Insured for on-site work",
+      "line": "Letting a mechanic work in your driveway or office lot raises one quiet question: what if something goes wrong. A page showing your insurance and repair warranty answers it.",
+      "hook": "Look for any mention of insurance or warranty in their posts or van lettering. Never state terms they didn't publish.",
+      "linkLine": "Insurance and repair warranty for on-site work: {demo-link}"
+    },
+    {
+      "angle": "Friends-and-family customers",
+      "line": "Sounds like most of your mobile repair work comes from people who know someone you've helped. When that friend passes your number along, the new customer still looks you up first.",
+      "hook": "Look for reviews like 'my coworker recommended' or names that repeat. Quote one back.",
+      "linkLine": "Where a friend's mechanic referral would land: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "That {specific recent job} you posted is a big repair to pull off without a lift. A job like that should be the first thing someone sees when they find you.",
+      "hook": "Pick the newest on-site repair they posted and name it exactly: vehicle, job and where they did it.",
+      "linkLine": "That on-site repair, front and centre: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hey {Owner} — that {specific recent job} you posted is a serious repair to do without a lift.\n\nI searched for a mobile mechanic in {City} and found {Business Name} on social, but no page that shows what you fix on site or lets someone send their address and car. I put together a sample one, with marked placeholders where your photos would go.\n\nWant me to send it over?",
+    "dm2": "{Owner} — following up in case my last message got buried. Here's the sample mobile mechanic site for {Business Name}: {demo-link}\n\nIt lists the repairs you do in a driveway, has a request form for the address and the car, a no-start page for cold mornings and a pre-purchase inspection page. If it's not for you, say so and I'll leave you be.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for mobile mechanics here in {City}. If you're under a car I can call back. I sent you a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"Short version: I built a sample site for {Business Name} that lists what you fix on site, takes the address and the car up front, and has a page for used-car inspections, with marked placeholders where your photos would go. Can I text you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range} depending on how many repair and area pages you want, then {Care Range} a month for hosting and changes. For a one-van operation I'd quote about {Build Price}, which is a few brake jobs.\"\n\"Can I walk you through it for ten minutes this week, whenever you're between jobs?\"\n\nCLOSE:\n\"I'll send a one-page scope and an invoice for the deposit. We start the day it clears.\"",
+    "objections": [
+      {
+        "objection": "I'm too busy already.",
+        "handler": "\"Then let the site filter the jobs. List what you do on site and what you don't, set the callout fee, and the transmission rebuild requests stop eating your evenings.\""
+      },
+      {
+        "objection": "I get my customers from community groups.",
+        "handler": "\"Keep posting there. When someone in the group says 'call this mechanic', the person still searches your name. Right now they find nothing they can book from.\""
+      },
+      {
+        "objection": "People want to supply their own parts.",
+        "handler": "\"Then say how you handle it. A parts policy on the page settles the warranty question before you're in their driveway arguing about a cheap alternator.\""
+      },
+      {
+        "objection": "I don't have a shop, so a website feels like too much.",
+        "handler": "\"No shop is exactly why you need one. The van is the business, and the site is the only storefront a stranger can check before you show up at their house.\""
+      },
+      {
+        "objection": "I'm thinking about just doing this part-time.",
+        "handler": "\"Then the page saves you the most. It answers the questions and takes the address while you're at your day job, and you pick the jobs that fit your evenings.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}: the on-site repair list, a request form, a no-start page and an inspection page. A few jobs covers it.\""
+      }
+    ],
+    "email": {
+      "subject": "Mobile mechanic site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for mobile mechanics around {City}. {Business Name} has good on-site repair work on social, but nothing a stranger can find that shows what you fix in a driveway or lets them book.\n\nRather than ask for your time, I built a sample first: a list of repairs you do on site, a request form that collects the address and vehicle, a no-start and dead-battery page, and a pre-purchase inspection page, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and changes. If not, no problem, it comes down at the end of the month.\n\nWorth ten minutes on the phone this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"{Owner}, it's {Your Name}. I build websites for mobile mechanics in {City}, and made a sample for {Business Name} that takes the address and the car up front. I'll text you the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner} — I'm taking the {Business Name} mobile mechanic demo down on Friday to free up the space.\n\nWant me to leave it up? One word is fine either way.",
+    "nurture": "Hey {Owner} — the cold mornings are close, and so is dead-battery season. Thought of you and the van.\n\nThe site is still here whenever you want it, and nothing's changed on price. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to a handful of on-site brake or battery jobs. A mobile mechanic counts jobs per day, not hours.",
+      "The on-site repair list is the core page. Price extra repair pages one at a time as they add capability.",
+      "A request form that captures address, vehicle and parking situation is worth more than booking slots here; price it as its own line.",
+      "Only quote fleet yard pages for mechanics who already service a few business vehicles.",
+      "Keep monthly add-ons low; a one-van operation feels every subscription.",
+      "Pre-purchase inspection pages pay for themselves fastest. Offer them in the first scope."
+    ],
+    "lineItems": [
+      {
+        "item": "On-site repair request form",
+        "min": 250,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max with address autocomplete, parking-type options, a symptom field and photo upload of the dashboard warning light.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Repair page for an on-site job (each)",
+        "min": 150,
+        "max": 350,
+        "unit": "per-page",
+        "description": "Max when the page covers symptoms, on-site versus shop work, the callout fee and a booking button.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Pre-purchase inspection page and checklist",
+        "min": 250,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max with a sample report, a request form for the seller's address and a printable checklist.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Service-radius map with callout fees",
+        "min": 150,
+        "max": 400,
+        "unit": "one-time",
+        "description": "Max when callout fees change by zone and each zone gets a short page.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Fleet yard servicing page",
+        "min": 250,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max with a unit-count form, a yard-access checklist and a sample service log.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Parts policy and warranty page",
+        "min": 100,
+        "max": 300,
+        "unit": "per-page",
+        "description": "Max when it compares parts grades, covers customer-supplied parts and uses the warranty terms they supply.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "On-site job filming day",
+      "min": 300,
+      "max": 800,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A day riding along to three driveway repairs gives you short clips of a starter swap or brake job in a parking lot. Proof a mobile mechanic can do real work.\"",
+      "when": "Month 2, on a day with a few varied jobs booked."
+    },
+    {
+      "name": "Google profile set-up as a service-area mechanic",
+      "min": 150,
+      "max": 350,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Set the profile up as a service-area business, then post each on-site repair with the town, so 'mobile mechanic near me' finds you without a shop address.\"",
+      "when": "Day 30, once the site is live."
+    },
+    {
+      "name": "Review requests sent from the van",
+      "min": 79,
+      "max": 179,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Before you pull away from the job, the customer gets a text with a review link. Reviews about a mechanic who came to the office lot sell the next one.\"",
+      "when": "Day 30. The easiest second sale."
+    },
+    {
+      "name": "Van lettering and magnet design",
+      "min": 200,
+      "max": 600,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"The van sits in a driveway for two hours a job. Lettering that says 'mobile mechanic' with the site turns every repair into a sign for the street.\"",
+      "when": "Right after launch."
+    },
+    {
+      "name": "Cold-weather no-start campaign",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A short push for battery tests and no-start callouts before the first freeze, posted on the profile and in local groups.\"",
+      "when": "Pitch in September, run October to December."
+    },
+    {
+      "name": "Used-car buyer flyer for small lots and sellers",
+      "min": 150,
+      "max": 400,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A flyer and a QR card for private sellers and small lots: 'Get it inspected before you buy', with your inspection page on it.\"",
+      "when": "Month 2, once the inspection page is live."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Partner shops that take the jobs needing a lift",
+        "whoPays": "The partner shop, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"When a job needs a lift, which shop gets it? I'll build their site too, and both pages send customers to each other.\"",
+        "whyItWorks": "Mobile mechanics refer the heavy jobs out. The partner shop already gains from the relationship and listens."
+      },
+      {
+        "route": "Small used-car lots that need inspections",
+        "whoPays": "The lot owner",
+        "min": 1200,
+        "max": 3500,
+        "unit": "one-time",
+        "pitchLine": "\"The lot you inspect cars for lists them with no detail. An inventory site with 'independently inspected' on each car helps them sell.\"",
+        "whyItWorks": "Small lots buy websites and value a trusted inspection on the listing."
+      },
+      {
+        "route": "Apartment complexes that let you work in their lots",
+        "whoPays": "The property manager",
+        "min": 800,
+        "max": 2500,
+        "unit": "one-time",
+        "pitchLine": "\"The complex that lets you fix residents' cars in the lot needs a resident services page, and the mobile mechanic is on it.\"",
+        "whyItWorks": "Managers pay for resident perks pages and prefer one vetted mechanic to random ones."
+      },
+      {
+        "route": "Mobile tire and windshield techs",
+        "whoPays": "The mobile tech, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The mobile tire guy you call when a job needs new tires has the same problem you had: a van and no site.\"",
+        "whyItWorks": "Mobile trades hand customers to each other. Each one is a fresh build with a warm intro."
+      },
+      {
+        "route": "Car-sharing and rental hosts with small fleets",
+        "whoPays": "The rental host",
+        "min": 1000,
+        "max": 3000,
+        "unit": "one-time",
+        "pitchLine": "\"The host renting out six cars that you keep running needs a booking site of their own, not just a listing on someone else's app.\"",
+        "whyItWorks": "Small rental hosts depend on a mobile mechanic and want direct bookings. The intro comes with trust."
+      },
+      {
+        "route": "Junk car buyers and scrap yards",
+        "whoPays": "The car buyer",
+        "min": 1000,
+        "max": 2500,
+        "unit": "one-time",
+        "pitchLine": "\"When a repair costs more than the car, who buys it? That cash-for-cars operator needs a quote site, and they'll send repairable cars your way.\"",
+        "whyItWorks": "The mechanic sends them dead cars; they send back fixable ones. Both sides want the link."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Inspection report writer for used-car lots",
+        "whoPays": "The lot owner, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"The mechanic's inspection notes become a clean condition summary on each listing, drafted for the lot owner to approve.\"",
+        "whyItWorks": "Buyers trust an independent inspection. The lot sells faster and the mechanic gets steady inspection work."
+      },
+      {
+        "route": "Maintenance scheduler for rental hosts",
+        "whoPays": "The rental host, monthly",
+        "min": 100,
+        "max": 250,
+        "unit": "monthly",
+        "pitchLine": "\"An assistant reads trip mileage and flags which rental car is due for oil or brakes, then books the mobile mechanic between rentals.\"",
+        "whyItWorks": "Hosts lose bookings to surprise breakdowns. The mechanic gets scheduled, repeat work."
+      },
+      {
+        "route": "Resident request assistant for the apartment complex",
+        "whoPays": "The property manager, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"Residents ask where they can park a broken car and who can fix it. An assistant answers from the lot rules and books the mobile mechanic.\"",
+        "whyItWorks": "Front offices field these questions constantly. The mechanic client is the first vendor on it."
+      },
+      {
+        "route": "Mobile tire tech's quote text-back",
+        "whoPays": "The mobile tire tech",
+        "min": 600,
+        "max": 1500,
+        "unit": "one-time",
+        "pitchLine": "\"Missed calls get a text asking for tire size and where the car is parked. Same text-back the mobile mechanic runs, set up for them.\"",
+        "whyItWorks": "Second build is configuration. The referral comes from a client who trusts you."
+      },
+      {
+        "route": "Instant offer helper for the cash-for-cars buyer",
+        "whoPays": "The car buyer",
+        "min": 1200,
+        "max": 3000,
+        "unit": "one-time",
+        "pitchLine": "\"Sellers describe the car and its problem, and an assistant drafts a price range for the buyer to confirm before dispatching a truck.\"",
+        "whyItWorks": "Speed wins in junk-car buying. The mechanic's diagnosis notes make the offers sharper."
+      },
+      {
+        "route": "Partner shop's intake assistant",
+        "whoPays": "The partner shop",
+        "min": 1000,
+        "max": 2500,
+        "unit": "one-time",
+        "pitchLine": "\"Jobs the mobile mechanic hands over arrive at the shop with the diagnosis, the codes and the customer's notes already written up.\"",
+        "whyItWorks": "Cleaner handoffs mean the shop takes the mechanic's referrals first. Both clients benefit."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Missed-call text-back that asks where the car is",
+      "kind": "automation",
+      "oneTimeMin": 0,
+      "oneTimeMax": 250,
+      "monthlyMin": 79,
+      "monthlyMax": 149,
+      "pitchLine": "\"A missed call gets a text asking for the vehicle, the problem and where it's parked. You call back from under the car with the job already scoped.\"",
+      "whenAndWhatItTakes": "Day 30. Needs their number forwarded and the reply they approve."
+    },
+    {
+      "name": "On-my-way text with arrival window",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 500,
+      "monthlyMin": 30,
+      "monthlyMax": 80,
+      "pitchLine": "\"When the mobile mechanic leaves the last job, the next customer gets an arrival window and a note to leave the keys and pop the hood if they're at work.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their job list for the day and the message wording."
+    },
+    {
+      "name": "Callout and repair price estimator",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 40,
+      "monthlyMax": 100,
+      "pitchLine": "\"Pick the car and the repair, enter the address, and see the callout fee plus a labor range for brakes, batteries or a starter before booking the mechanic.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their callout fees by zone and labor ranges for common on-site repairs."
+    },
+    {
+      "name": "Day route and job board for the van",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 40,
+      "monthlyMax": 100,
+      "pitchLine": "\"Tomorrow's driveway jobs, in drive order, with the parts needed for each, so you load the van once and don't double back across town.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their booking data and typical job lengths."
+    },
+    {
+      "name": "Symptom triage chat for no-start calls",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"A driver types 'clicks but won't start' and the assistant asks the follow-ups a mechanic would, then books a callout or tells them to call a tow.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their triage questions and what they will and won't do on site. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Pre-purchase inspection report builder",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 30,
+      "monthlyMax": 80,
+      "pitchLine": "\"Walk the used car with a checklist on your phone, add notes and codes, and send the buyer a clean inspection report before you leave the seller's driveway.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their inspection checklist and report layout."
+    },
+    {
+      "name": "Inspection note writer for used-car buyers",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 80,
+      "monthlyMax": 200,
+      "pitchLine": "\"Your shorthand inspection notes become a plain summary a buyer understands: what's fine, what's due soon and what to negotiate on.\"",
+      "whenAndWhatItTakes": "Month 4, after the report builder. Needs sample reports and approved wording. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Parts-run list from booked jobs",
+      "kind": "software",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1200,
+      "monthlyMin": 25,
+      "monthlyMax": 75,
+      "pitchLine": "\"Tonight, a list of the brake pads, batteries and belts tomorrow's mobile jobs need, so the morning parts-store stop is one trip.\"",
+      "whenAndWhatItTakes": "Month 3. Needs common parts per repair and their booking data."
+    },
+    {
+      "name": "Review reply drafts for on-site repairs",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 79,
+      "monthlyMax": 179,
+      "pitchLine": "\"When a driver praises the mechanic who fixed their alternator in the office garage, a thank-you that names that exact job is waiting for your OK.\"",
+      "whenAndWhatItTakes": "Month 2. Needs ten past replies. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Deposit for parts on bigger jobs",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 30,
+      "monthlyMax": 80,
+      "pitchLine": "\"Clutch and timing-belt jobs take a parts deposit when booked, so you're never stuck with a special-order part and a customer who changed their mind.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their deposit rule and the payment account they already use."
+    },
+    {
+      "name": "Fleet unit log and service schedule",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Each fleet van gets its own service log and next-due date, and the fleet owner sees what the mobile mechanic did at the yard last night.\"",
+      "whenAndWhatItTakes": "Month 5, once the first fleet signs. Needs their unit list and service intervals."
+    },
+    {
+      "name": "Voice-to-invoice notes for the van",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 80,
+      "monthlyMax": 200,
+      "pitchLine": "\"Finish the job, talk into the phone, and it drafts the invoice with parts, labor and the warranty note before you wipe your hands.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their invoice template and labor rates. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Repair history page for each customer car",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 40,
+      "monthlyMax": 100,
+      "pitchLine": "\"Every car you've worked on gets a simple history link: what was replaced, when and at what mileage. Customers keep coming back to the same mechanic.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their past invoices in any format."
+    },
+    {
+      "name": "Code lookup helper for the mechanic",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"Type the trouble code and the vehicle, and see what the mechanic's own past jobs found for it, before driving out.\"",
+      "whenAndWhatItTakes": "Month 6. Needs a few months of job notes with codes. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Weather and no-show rebooking flow",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 700,
+      "monthlyMin": 30,
+      "monthlyMax": 80,
+      "pitchLine": "\"If heavy rain hits an outdoor repair slot, or the customer isn't at the car, they get two new windows to pick from instantly.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their rain rule and calendar."
+    },
+    {
+      "name": "Win-back notes for past repair customers",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 60,
+      "monthlyMax": 150,
+      "pitchLine": "\"Customers whose brakes or battery you replaced get a check-in at the right time, drafted from what you did on their car.\"",
+      "whenAndWhatItTakes": "Month 6, with six months of job history. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Job costing per on-site repair",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 40,
+      "monthlyMax": 100,
+      "pitchLine": "\"See which repairs pay once drive time, parts runs and callout fees are counted. Some driveway jobs aren't worth the trip.\"",
+      "whenAndWhatItTakes": "Month 6. Needs a few months of invoices and mileage."
+    },
+    {
+      "name": "Fleet maintenance due-date alerts",
+      "kind": "automation",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 40,
+      "monthlyMax": 100,
+      "pitchLine": "\"Fleet vans coming due for oil or brakes trigger a message to the fleet owner offering a yard visit on a set night.\"",
+      "whenAndWhatItTakes": "Month 6, once the fleet log is running. Needs service intervals per unit."
+    },
+    {
+      "name": "Parts policy answer bot",
+      "kind": "ai",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1200,
+      "monthlyMin": 60,
+      "monthlyMax": 150,
+      "pitchLine": "\"Answers 'can I buy my own parts' and 'is that covered' from the mechanic's own policy, so the argument never starts in the driveway.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their written parts and warranty policy. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Helper applicant screener",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 60,
+      "monthlyMax": 150,
+      "pitchLine": "\"Applicants for a second mobile mechanic answer your questions on tools, driving record and on-site experience before you call.\"",
+      "whenAndWhatItTakes": "Any time they post a hiring note. Needs their must-haves. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the on-site request form for mobile mechanics",
+      "whoPays": "Mobile mechanics, monthly per van",
+      "min": 29,
+      "max": 99,
+      "unit": "monthly",
+      "pitchLine": "\"A request form that asks where the car is parked and what it's doing is what every mobile mechanic needs, and almost none have a site.\"",
+      "whyItWorks": "A newer model with almost no web presence. The first client paid for the workflow."
+    },
+    {
+      "route": "Fleet servicing network for regional contractors",
+      "whoPays": "The fleet owner, annually",
+      "min": 3000,
+      "max": 10000,
+      "unit": "per-year",
+      "pitchLine": "\"Your vans get serviced overnight at the yard by approved mobile mechanics across the metro, all logged in one portal.\"",
+      "whyItWorks": "Fleet owners buy annually and hate downtime. The first mechanic client proves the model."
+    },
+    {
+      "route": "Mechanic locator for a parts store chain's regional office",
+      "whoPays": "The parts retailer's regional marketing budget",
+      "min": 5000,
+      "max": 15000,
+      "unit": "per-year",
+      "pitchLine": "\"DIY customers who give up on a repair ask the counter for a mechanic. A locator of mobile mechanics who buy from your stores answers them.\"",
+      "whyItWorks": "Parts retailers want the mechanic's spend. A referral tool earns loyalty."
+    },
+    {
+      "route": "Inspection service for used-car marketplaces' local sellers",
+      "whoPays": "The local dealer group or consignment lot",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"A consignment lot can offer 'inspected on site' on every car, booked to mobile mechanics through one page I already run.\"",
+      "whyItWorks": "Buyers want inspections; lots want speed. Mobile mechanics are the supply."
+    },
+    {
+      "route": "Trade school graduate launch kit",
+      "whoPays": "The automotive program, per graduate cohort",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"Graduates starting their own mobile mechanic business get a site, a request form and a pricing page as part of the program.\"",
+      "whyItWorks": "Schools want graduate success stories. Each graduate becomes a care-plan client."
+    },
+    {
+      "route": "White-label mobile mechanic template for agencies",
+      "whoPays": "The agency, per site",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "pitchLine": "\"Agencies running ads for mobile mechanics need a landing page that asks for the address and the car. License mine.\"",
+      "whyItWorks": "Agencies get the client; you supply the conversion page you already built."
+    },
+    {
+      "route": "Mobile mechanic franchise territories",
+      "whoPays": "The franchisor, per territory",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "pitchLine": "\"Each van territory needs its own radius map, callout fees and request routing. The template already exists.\"",
+      "whyItWorks": "One sale, many territories, same build."
+    },
+    {
+      "route": "Car-sharing host maintenance program",
+      "whoPays": "Hosts, monthly per car",
+      "min": 15,
+      "max": 49,
+      "unit": "monthly",
+      "pitchLine": "\"Rental hosts pay a small monthly fee per car and get scheduled maintenance from a mobile mechanic between trips.\"",
+      "whyItWorks": "Hosts multiply fast and want hands-off upkeep. It turns one mechanic's capacity into recurring revenue."
+    },
+    {
+      "route": "Corporate parking garage repair days",
+      "whoPays": "The building or employer, annually",
+      "min": 2000,
+      "max": 6000,
+      "unit": "per-year",
+      "pitchLine": "\"Employees book brake, battery and oil work while they're at their desks, and a mobile mechanic works the garage on set days.\"",
+      "whyItWorks": "Building managers buy perks annually. One contract fills the mechanic's calendar."
+    },
+    {
+      "route": "Monthly on-site repair pricing sheet",
+      "whoPays": "Mobile mechanics, monthly",
+      "min": 15,
+      "max": 39,
+      "unit": "monthly",
+      "pitchLine": "\"A short monthly sheet on what mobile mechanics charge for callouts and common repairs, built only from members' own invoices.\"",
+      "whyItWorks": "New operators underprice. Contributed data keeps it honest."
+    },
+    {
+      "route": "Same mobile mechanic setup, one more metro",
+      "whoPays": "A mobile mechanic in another metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"One van per metro on my books. {City} is covered by you; the next metro over needs its own mechanic.\"",
+      "whyItWorks": "Non-competing geography reuses the template and the driveway proof."
+    },
+    {
+      "route": "Rescue mechanics stuck on rented landing pages",
+      "whoPays": "The mobile mechanic leaving a rented page",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "pitchLine": "\"If the page you pay a lead company for disappears when you stop paying, I'll build one the van keeps for good.\"",
+      "whyItWorks": "Rented pages vanish with the contract. Ownership is an easy sell."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Mobile mechanic site build plus care plan, one contract",
+      "min": 1200,
+      "max": 2000,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The mobile mechanic site and the care plan go on one contract, so a new callout fee or area is a text to me from the van.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Review requests sent from the van",
+      "min": 79,
+      "max": 179,
+      "unit": "monthly",
+      "trigger": "The first on-site jobs booked from the site are done.",
+      "line": "\"Those first site customers watched you fix their car in the driveway. Let's get that in a review every time.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "Pre-purchase inspection report builder",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "trigger": "The first used-car inspection requests come in through the site.",
+      "line": "\"Inspection requests are coming in. A clean report sent from the seller's driveway makes you the mechanic buyers recommend.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Callout and repair price estimator",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "trigger": "Sixty days of requests show the same price questions for brakes, batteries and starters.",
+      "line": "\"Most of your requests ask the same brake and battery prices. An estimator answers before the mechanic's phone rings.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Symptom triage chat for no-start calls",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "trigger": "Cold mornings arrive and no-start requests pile up faster than they can answer.",
+      "line": "\"No-start season is here. The triage chat sorts the dead batteries from the tow jobs before you call back.\""
+    },
+    {
+      "rung": 6,
+      "day": 150,
+      "offer": "Fleet unit log and service schedule",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "trigger": "A contractor asks the mobile mechanic to service their vans at the yard.",
+      "line": "\"That contractor's vans are a standing yard visit. A unit log makes the fleet account look professional from day one.\""
+    }
+  ]
+}

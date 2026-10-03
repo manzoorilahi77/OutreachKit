@@ -1,0 +1,865 @@
+{
+  "schemaVersion": 1,
+  "category": "Window tint, PPF & wraps",
+  "slug": "window-tint-ppf-wraps",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Auto family batch. Enthusiast tone, but film, coating and vinyl are described by type, never by brand. No shade percentages anywhere; state tint law is pointed to, not quoted. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Film and shade guide",
+      "contains": "Dyed, carbon and ceramic window film side by side, heat rejection versus darkness, glare at night, and how each shade looks from inside the cabin versus from the curb",
+      "why": "Tint buyers pick a shade by seeing it on a car like theirs. A side-by-side guide settles the dark-versus-legal question before the DM thread drags on."
+    },
+    {
+      "section": "State tint law and windshield strip",
+      "contains": "What the state allows on front sides, rear glass and the windshield visor strip, medical exemption paperwork, and what happens at an inspection if the film is too dark",
+      "why": "Every tint buyer asks how dark is legal. A shop that answers it plainly looks like the one that won't get them a ticket."
+    },
+    {
+      "section": "PPF coverage maps",
+      "contains": "Partial front, full front, track pack and full body paint protection film drawn on a car outline, rock-chip zones, self-healing top coat, and wrapped edges versus pre-cut kits",
+      "why": "Paint protection film is bought by zone. Owners of a new car want to see exactly which panels are covered at each level before they put down a deposit."
+    },
+    {
+      "section": "Wrap color and finish lab",
+      "contains": "Gloss, satin, matte and color-shift vinyl, chrome delete and roof wraps, swatch-book visits, how long a color change lasts, and clean removal back to factory paint",
+      "why": "A color-change wrap is a style decision first. Buyers spend weeks on finish and color, and the shop with the clearest swatch path gets the booking."
+    },
+    {
+      "section": "Commercial van and fleet wraps",
+      "contains": "Logo layout on the van, partial versus full wraps, printed graphics, proof rounds, DOT lettering on work trucks, and scheduling a fleet so vehicles rotate off the road",
+      "why": "Business owners buy a wrap on the proof and the turnaround. A page that shows the proof process wins the fleet over a shop that only posts sports cars."
+    },
+    {
+      "section": "Tint curing and film aftercare",
+      "contains": "Keeping windows up while tint cures, haze and small bubbles that clear on their own, the first wash after PPF, and ceramic coating over film",
+      "why": "Most comeback calls are curing questions. Answering them on the site saves a callback and makes the shop look like it has done thousands of cars."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C50",
+      "siteType": "local-conversion",
+      "name": "Shade Card",
+      "heroLayout": "split-photo",
+      "mood": [
+        "crisp",
+        "quick",
+        "confident"
+      ],
+      "bestFor": "Tint-first shops that sell on a fast price by vehicle and a same-week install slot",
+      "pairsWithTier": "starter",
+      "headlineSample": "Ceramic window tint in {City}, priced by vehicle",
+      "whyItFits": "White ground and a single red signal keep it fast on a phone. The mono numerals make a price-by-vehicle table read like a spec sheet."
+    },
+    {
+      "id": "b",
+      "themeId": "C48",
+      "siteType": "portfolio-showcase",
+      "name": "Gloss on Black",
+      "heroLayout": "full-bleed-photo",
+      "mood": [
+        "moody",
+        "precise",
+        "enthusiast"
+      ],
+      "bestFor": "Shops whose Instagram is full of fresh tint, PPF and color-change wraps that deserve a real gallery",
+      "pairsWithTier": "standard",
+      "headlineSample": "Tint, PPF and color-change wraps in {City}",
+      "whyItFits": "The family combo. A near-black ground makes gloss paint, satin vinyl and dark film look the way they do under shop lights, and the fashion serif fits buyers who care about finish."
+    },
+    {
+      "id": "c",
+      "themeId": "C9",
+      "siteType": "premium-brand",
+      "name": "Paint Studio",
+      "heroLayout": "type-led",
+      "mood": [
+        "exclusive",
+        "quiet",
+        "exacting"
+      ],
+      "bestFor": "Full-body PPF and paint-correction studios working on new exotics and collector cars",
+      "pairsWithTier": "premium",
+      "headlineSample": "Full-body paint protection film, {City}",
+      "whyItFits": "Midnight and champagne read like a private studio, not a tint bay. A type-led hero suits owners who book a consultation before a multi-day install."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your Maps listing shows the tint shop's hours and a call button, but no website. Someone in {City} comparing ceramic film can't see a single car you've done before they decide who to message.",
+      "hook": "Open their Maps listing and confirm there's no Website button. Screenshot it for when they reply.",
+      "linkLine": "Here's what could sit behind that button for your tint work: {demo-link}"
+    },
+    {
+      "angle": "Instagram-only link",
+      "line": "The link on your listing goes straight to Instagram. The tint and wrap work looks great there, but someone pricing PPF for a new truck wants coverage levels and a booking slot, not a grid.",
+      "hook": "Tap their Website link and confirm it opens Instagram or Facebook. Note the most recent wrap or PPF post.",
+      "linkLine": "Your film work with coverage levels and a booking path: {demo-link}"
+    },
+    {
+      "angle": "Dead free host",
+      "line": "The site on your listing still has a free-builder banner and lists window tint only, while your feed is mostly PPF and color-change wraps now. A new-car owner reads that as a shop that stopped updating.",
+      "hook": "Open the site and look for a builder banner, an old copyright year or services that don't match their feed. Note which.",
+      "linkLine": "The current shop, tint through full-body film: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "I opened your site on my phone and the tint price table ran off the screen. Most people looking up window film are sitting in the car that needs it.",
+      "hook": "Only if they have a site. Load it on your phone and note what breaks: menu, gallery or price table. Screenshot it for when they reply.",
+      "linkLine": "Your tint and PPF menu, built for a phone: {demo-link}"
+    },
+    {
+      "angle": "Quotes stuck in DMs",
+      "line": "Your posts say DM for pricing. Every one of those threads is you asking year, make, model and which windows, one message at a time, while the film's waiting on the plotter.",
+      "hook": "Find 'DM for price' or 'message for quote' in their bio or captions. Count how many recent posts say it.",
+      "linkLine": "A tint and PPF quote form that asks for the vehicle up front: {demo-link}"
+    },
+    {
+      "angle": "Wraps with nowhere to live",
+      "line": "That satin color-change and the chrome delete on your grid are sharp work, buried between giveaway posts. A wrap gallery sorted by finish would sell the next one for you.",
+      "hook": "Pick two wraps on their grid you can name by finish and vehicle. Mention one by name if they reply.",
+      "linkLine": "Your wraps, sorted by finish: {demo-link}"
+    },
+    {
+      "angle": "Reviews stuck on Google",
+      "line": "Your Google reviews mention no bubbles, clean edges on the PPF and a shop that explained the tint law. Nobody sees that unless they're already on your listing.",
+      "hook": "Read their reviews and copy one phrase about edges, bubbles or the install. Quote it back if they reply.",
+      "linkLine": "Those reviews next to the film work they describe: {demo-link}"
+    },
+    {
+      "angle": "Summer heat and show season",
+      "line": "When the first hot week hits {City}, everyone with a black interior searches for ceramic tint at once, and car-show season brings the wrap and PPF calls right behind it.",
+      "hook": "Use from March to May. Name the month, or the local car show they posted about.",
+      "linkLine": "Ready before the summer tint rush: {demo-link}"
+    },
+    {
+      "angle": "Late-night DMs",
+      "line": "New-car owners research PPF at night after the kids are down. If the only option is a DM that sits until morning, they've messaged three other film shops by then.",
+      "hook": "Check their bio and posts for hours. If they're closed evenings and have no booking link, the angle holds.",
+      "linkLine": "A PPF consult request that works at 11pm: {demo-link}"
+    },
+    {
+      "angle": "Hiring an installer",
+      "line": "Saw you're looking for a tint or wrap installer. Good installers check a shop's work and setup before they apply, the same way a new-car owner picking a PPF shop does.",
+      "hook": "Only if they posted a hiring story or help-wanted note. Note the date of the post.",
+      "linkLine": "A film shop page with a careers section: {demo-link}"
+    },
+    {
+      "angle": "Dealers and the next town",
+      "line": "You tint cars for buyers across {City} and the towns around it, but nothing tells someone in {Neighborhood} you're the film shop for them. That town name is what they type.",
+      "hook": "Find towns or dealerships they mention in captions or reviews. Use the one furthest from the shop.",
+      "linkLine": "A tint and PPF page for each town you pull customers from: {demo-link}"
+    },
+    {
+      "angle": "Payment plans on PPF",
+      "line": "If you offer payments on full-front or full-body PPF, put it on the page. A new-car owner who just signed a loan wants to see the film split up before asking for a price.",
+      "hook": "Only if they mention payments or financing somewhere. If they don't, skip this angle.",
+      "linkLine": "Paint protection film with payments explained up front: {demo-link}"
+    },
+    {
+      "angle": "Film warranty trust",
+      "line": "Your captions mention a lifetime warranty on the film. A page where customers register the install and look up their coverage makes that warranty something they can actually hold.",
+      "hook": "Find a warranty mention in their captions or highlights. Note the wording; never add a term they didn't publish.",
+      "linkLine": "Film warranty lookup built into the shop page: {demo-link}"
+    },
+    {
+      "angle": "Car-meet word of mouth",
+      "line": "Sounds like most of your tint work comes from car meets and people asking who did a friend's wrap. That works, and even those people look you up before trusting you with their paint.",
+      "hook": "Look for comments like 'who did your wrap' tagging them, or meet photos they reposted. Quote one back.",
+      "linkLine": "Where a car-meet referral for your film work would land: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "That {specific recent job} you posted is clean film work. A car like that should be the first thing a stranger sees, not three scrolls down past a giveaway.",
+      "hook": "Pick the newest tint, PPF or wrap on their grid and name it exactly: vehicle, film type and finish.",
+      "linkLine": "That install, front and centre: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hey {Owner} — that {specific recent job} you posted is clean film work.\n\nI searched for tint and PPF shops in {City} and found {Business Name} on Instagram but no site with prices by vehicle or a way to book. I put together a sample page for your tint, PPF and wrap work, with marked placeholders where your photos would go.\n\nWant me to send it over?",
+    "dm2": "{Owner} — following up in case my last message got buried. Here's the sample site for {Business Name}: {demo-link}\n\nIt has tint prices by vehicle, a PPF coverage map from partial front to full body, and a wrap gallery sorted by finish. If it's not for you, say so and I'll leave you be.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for tint and PPF shops here in {City}. I sent you a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"Easy to miss. Short version: I built a sample site for {Business Name} with a tint price table by vehicle, a PPF coverage map and a wrap gallery, with marked placeholders where your photos would go. Can I text you the link so you can look after the bay closes?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range} depending on how many film and wrap pages you want, then {Care Range} a month for hosting and changes. For a shop your size I'd normally quote about {Build Price}, which is a couple of full-front PPF jobs.\"\n\"Can I walk you through it for ten minutes this week, before you open or after you close?\"\n\nCLOSE:\n\"I'll send a one-page scope and an invoice for the deposit. We start the day it clears.\"",
+    "objections": [
+      {
+        "objection": "Instagram is my website.",
+        "handler": "\"Instagram is where they fall for the car. The site is where they see the price for their vehicle, pick a film and put down a deposit without a DM thread.\""
+      },
+      {
+        "objection": "I'm booked out already.",
+        "handler": "\"Then the site's job is to sell the bigger tickets. Fill those slots with full-front PPF and color-change wraps instead of a stack of two-window tint jobs.\""
+      },
+      {
+        "objection": "People just want the cheapest tint.",
+        "handler": "\"Some do, and they'll find them. The site is for the ones who ask about heat rejection, clean edges and a real warranty. That's what makes your price make sense.\""
+      },
+      {
+        "objection": "I don't want to post prices, every car is different.",
+        "handler": "\"You don't have to post a final number. 'Starting at' by vehicle size, and a form that collects year, make and model, gets the tire-kickers out of your DMs.\""
+      },
+      {
+        "objection": "A buddy of mine built me a site.",
+        "handler": "\"Good, that's cheaper than me. Happy to hand him the PPF coverage map and the price table I built. If it stalls before summer, the offer stands.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you it'd be about {Build Price}, because it's a tint price table, a PPF coverage page and a wrap gallery. That's a couple of film jobs.\""
+      }
+    ],
+    "email": {
+      "subject": "Tint and PPF site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for tint, PPF and wrap shops around {City}. {Business Name} has strong film and wrap work on Instagram, but no site where a buyer can price their vehicle or book.\n\nRather than ask for your time, I built a sample first: tint prices by vehicle, a PPF coverage map from partial front to full body, a wrap gallery sorted by finish and a plain page on the state tint law, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and changes. If not, no problem, it comes down at the end of the month.\n\nWorth ten minutes on the phone this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"{Owner}, it's {Your Name}. I build websites for tint and PPF shops in {City}, and I put together a sample one for {Business Name}. I'll text you the link. Have a look when the bay's quiet. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner} — I'm taking the {Business Name} tint and PPF demo down on Friday to free up the space.\n\nWant me to leave it up? One word is fine either way.",
+    "nurture": "Hey {Owner} — the first hot weeks are coming and the ceramic tint searches start with them. Show season is right behind. Thought of you.\n\nThe site is still here whenever you want it, and nothing's changed on price. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to a couple of full-front PPF installs, never to an hourly rate. Film shops think in jobs and bay days.",
+      "Price the PPF coverage map as its own line; a clickable car outline is the page that sells the biggest tickets.",
+      "Tint, PPF and wraps each answer a different search and a different buyer. Quote each service page separately.",
+      "Only quote fleet and van wrap pages for shops that print or lay commercial graphics. Otherwise leave them out.",
+      "A quote form that collects year, make, model and coverage is worth more than a contact form. Charge for it.",
+      "Keep the tint law page short and pointed at the state source; never quote a shade limit you can't verify."
+    ],
+    "lineItems": [
+      {
+        "item": "PPF coverage map with clickable zones",
+        "min": 500,
+        "max": 1200,
+        "unit": "one-time",
+        "description": "Max when every coverage level has its own panel list, starting price by vehicle size and a gallery of finished cars.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Film and shade comparison page",
+        "min": 300,
+        "max": 700,
+        "unit": "per-page",
+        "description": "Max with a heat-rejection table by film type, day and night shade examples, and a windshield strip section.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Wrap gallery by finish and color",
+        "min": 400,
+        "max": 1000,
+        "unit": "one-time",
+        "description": "Max when wraps filter by finish, color family and vehicle type, with a swatch-visit request on each.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Vehicle quote form with coverage picker",
+        "min": 400,
+        "max": 900,
+        "unit": "one-time",
+        "description": "Max with year-make-model fields, a coverage or window picker, photo upload and routing to the PPF or tint lead.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Fleet and van wrap request page",
+        "min": 400,
+        "max": 1000,
+        "unit": "one-time",
+        "description": "Max with logo upload, vehicle count, proof-round explainer and a fleet scheduling note.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "State tint law and exemption page",
+        "min": 200,
+        "max": 500,
+        "unit": "per-page",
+        "description": "Max when it covers neighbouring states for buyers who cross the line, plus the medical exemption steps.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Curing and aftercare page with text link",
+        "min": 200,
+        "max": 450,
+        "unit": "one-time",
+        "description": "Max with separate tint, PPF and wrap care sections and a short link the installer texts at pickup.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Install-bay reel and photo day",
+      "min": 500,
+      "max": 1200,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"One afternoon in the bay filming squeegee passes, PPF edges being wrapped and a color-change reveal gives you a month of reels and a gallery that sells film.\"",
+      "when": "Month 2, or the week a standout wrap or full-body PPF car is in the bay."
+    },
+    {
+      "name": "Google profile posts by vehicle and film",
+      "min": 200,
+      "max": 400,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Every week a finished car goes on your Google profile with the make, the film and the town, so 'ceramic tint near me' finds a fresh tint job.\"",
+      "when": "Day 30, once the site is live."
+    },
+    {
+      "name": "Review requests at the cure check-in",
+      "min": 99,
+      "max": 249,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A few days after pickup, once the tint haze clears, the customer gets a text asking how the film looks and a link to review.\"",
+      "when": "Day 30. The easiest second sale."
+    },
+    {
+      "name": "Spring heat and show-season film push",
+      "min": 300,
+      "max": 700,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A short campaign for ceramic tint before the first hot week, then PPF and wraps before the big local car show.\"",
+      "when": "Pitch in February, run March to May."
+    },
+    {
+      "name": "New-car delivery card for dealership salespeople",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A card the salesperson hands over with the keys: tint and PPF for the car they just bought, with a code that books your bay.\"",
+      "when": "Month 2, once the PPF coverage page is live."
+    },
+    {
+      "name": "Car-meet booth kit and wrap QR stickers",
+      "min": 250,
+      "max": 600,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A banner, a swatch table card and a small QR sticker on every wrapped car, so people at the meet can find the film shop that did it.\"",
+      "when": "Before the first car meet of the season."
+    },
+    {
+      "name": "Shop-car build series on video",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Wrap and film your own shop car in episodes: tint, chrome delete, full-front PPF. Enthusiasts follow a build, then book one.\"",
+      "when": "Month 3, when they have a demo car and a slow week."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Detailers who correct paint before PPF goes on",
+        "whoPays": "The detailer, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"Who does the paint correction before your PPF goes on? I'll build their booking site too, and the two pages send cars to each other.\"",
+        "whyItWorks": "PPF jobs often start with a correction and the two shops already trade cars. One introduction is a warm door."
+      },
+      {
+        "route": "Independent used-car dealers",
+        "whoPays": "The dealer",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The lot that sends you cars for tint before they go on the line needs an inventory site that shows the film as a feature.\"",
+        "whyItWorks": "Independent lots buy websites, and the tint owner already has the relationship and a reason to introduce you."
+      },
+      {
+        "route": "Sign and print shops that print wrap graphics",
+        "whoPays": "The sign shop",
+        "min": 1500,
+        "max": 4500,
+        "unit": "one-time",
+        "pitchLine": "\"Whoever prints your commercial van wraps needs a site that takes artwork and a vehicle count. I'll build it.\"",
+        "whyItWorks": "Print and install shops refer fleet work both ways, and sign shops have a real budget and a dated site."
+      },
+      {
+        "route": "Car audio, lighting and wheel shops",
+        "whoPays": "The audio or wheel shop, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The audio and wheel shop down the road shares your customers' build lists. Their site is as thin as yours was.\"",
+        "whyItWorks": "Enthusiast builds pass through several shops. Each one is a separate buyer with the same Instagram-only problem."
+      },
+      {
+        "route": "Flat-glass film installers for homes and offices",
+        "whoPays": "The flat-glass installer",
+        "min": 1200,
+        "max": 3500,
+        "unit": "one-time",
+        "pitchLine": "\"Homeowners ask you to tint their house windows. The flat-glass film installer you send them to needs a site that shows privacy and heat film by room.\"",
+        "whyItWorks": "Auto tint shops field residential requests they don't do. Passing them on makes the introduction easy."
+      },
+      {
+        "route": "Car club and meet organizers",
+        "whoPays": "The club, from dues or sponsors",
+        "min": 800,
+        "max": 2500,
+        "unit": "one-time",
+        "pitchLine": "\"The meet you sponsor runs on a group chat. A site with the event calendar and a sponsor wall puts your film shop logo on every page.\"",
+        "whyItWorks": "Clubs need a home for events and sponsors, and the tint owner is often already a sponsor."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Wrap mockup assistant for the sign shop",
+        "whoPays": "The sign shop, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Customers upload a logo and pick a van, and the sign shop gets a draft wrap layout to refine instead of starting from a blank template.\"",
+        "whyItWorks": "Mockups eat design hours that sign shops rarely bill. A first draft in minutes is an easy budget line."
+      },
+      {
+        "route": "Add-on explainer for the dealer's finance desk",
+        "whoPays": "The dealership, monthly",
+        "min": 200,
+        "max": 500,
+        "unit": "monthly",
+        "pitchLine": "\"A short assistant that explains tint and PPF options to a buyer at signing, in plain words, and routes the install to one film shop.\"",
+        "whyItWorks": "Dealers sell protection add-ons and hate the confused buyer. The film shop gets every routed install."
+      },
+      {
+        "route": "Detailer's booking text-back",
+        "whoPays": "The detailer",
+        "min": 600,
+        "max": 1500,
+        "unit": "one-time",
+        "pitchLine": "\"The detailer who preps your PPF cars misses calls while buffing. Same text-back that answers your tint inquiries, set up for them.\"",
+        "whyItWorks": "You already built it once. The second build is configuration, and the referral came from a client who trusts you."
+      },
+      {
+        "route": "Event registration assistant for car meets",
+        "whoPays": "The club or meet organizer",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"Show-car registration answered by an assistant: wrap and tint class, parking, rules and sponsor perks, so the organizer stops answering the same DM all week.\"",
+        "whyItWorks": "Meet organizers are volunteers buried in DMs. The tint client's sponsorship opens the door."
+      },
+      {
+        "route": "Warranty lookup assistant for the film distributor",
+        "whoPays": "The regional film distributor",
+        "min": 2000,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"Car owners ask who installed their film and what the warranty covers. An assistant on the distributor's site answers and routes them to an installing shop.\"",
+        "whyItWorks": "Distributors carry warranty questions for every shop they sell to. The tint client proves you know the workflow."
+      },
+      {
+        "route": "Room-by-room film advisor for flat-glass installers",
+        "whoPays": "The flat-glass installer",
+        "min": 1000,
+        "max": 2500,
+        "unit": "one-time",
+        "pitchLine": "\"A homeowner describes the glare in the living room and the assistant suggests heat, privacy or decorative film before the site visit.\"",
+        "whyItWorks": "Residential film buyers don't know what to ask for. The installer gets better first calls."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Missed-call and DM text-back for tint quotes",
+      "kind": "automation",
+      "oneTimeMin": 0,
+      "oneTimeMax": 300,
+      "monthlyMin": 99,
+      "monthlyMax": 199,
+      "pitchLine": "\"Every missed call from the bay gets a text asking for year, make, model and which windows. You call back with the tint quote half done.\"",
+      "whenAndWhatItTakes": "Day 30. Needs their business number forwarded and the wording they approve."
+    },
+    {
+      "name": "Tint and PPF price builder by vehicle and coverage",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"A buyer picks the vehicle size, the film and the coverage level and sees a starting price. Your DMs stop being a price-check line.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their real starting prices by vehicle size, film tier and PPF coverage level."
+    },
+    {
+      "name": "Film warranty registration and lookup",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Every install is registered with the VIN, film type and date, and the owner looks it up later without calling you. Resale buyers can check it too.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their warranty wording as published and the install details they already record."
+    },
+    {
+      "name": "Deposit and reminder flow for full-day PPF installs",
+      "kind": "automation",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1200,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"A full-front PPF slot holds a deposit, sends wash-before-drop-off reminders and confirms the day before, so a no-show doesn't kill a bay day.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their deposit rule, drop-off instructions and the payment account they already use."
+    },
+    {
+      "name": "Instagram DM quote assistant for film and wraps",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"It answers 'how much for ceramic tint on my truck' in the DMs with the vehicle questions you always ask, and hands you a ready quote.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their price sheet, service list and a sample of real DM threads. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Shade preview on the customer's own car",
+      "kind": "ai",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"The buyer uploads a side shot of their car and sees roughly how each tint shade would look, then books the one they picked.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their film shade lineup and before-and-after pairs to tune against. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Bay schedule board for tint, PPF and wraps",
+      "kind": "software",
+      "oneTimeMin": 2500,
+      "oneTimeMax": 7000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"Two-hour tint jobs, two-day PPF installs and week-long wraps on one board by bay and installer, instead of a whiteboard and a group chat.\"",
+      "whenAndWhatItTakes": "Month 3, once bookings are coming from the site. Needs their bays, installers and typical job lengths."
+    },
+    {
+      "name": "Wrap proof approval portal",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Fleet and color-change customers approve the wrap proof, sign off on the finish and see the install date in one link.\"",
+      "whenAndWhatItTakes": "Month 4, for shops doing commercial wraps. Needs their proof process and two past approved proofs."
+    },
+    {
+      "name": "Cure-time and first-wash reminder texts",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 40,
+      "monthlyMax": 100,
+      "pitchLine": "\"After pickup the customer gets a 'keep the windows up' text, then a first-wash note for the PPF. Fewer 'is this bubble normal' calls.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their aftercare rules by film type."
+    },
+    {
+      "name": "Review reply drafts naming the car and the film",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"Every new review gets a reply drafted in your voice that names the vehicle and the film, ready to approve from your phone between tint jobs.\"",
+      "whenAndWhatItTakes": "Month 2, alongside the review requests. Needs ten of their past replies. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Tint law answer bot for the shop site",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"It answers 'how dark can I go on my front windows' from the state rules the shop approves, and points to the official source every time.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the state tint rules they work from, reviewed by the owner. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Film roll inventory and waste tracker",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Track feet used per roll by job, so you know which PPF kits waste film and when to reorder before a full-body job.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their roll sizes and a few weeks of job logs."
+    },
+    {
+      "name": "Dealer work-order portal for tint and PPF",
+      "kind": "software",
+      "oneTimeMin": 2500,
+      "oneTimeMax": 6000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"Dealers drop a stock number, pick the film and coverage, and see when the car is ready. No more calls from the sales desk.\"",
+      "whenAndWhatItTakes": "Month 5, once they do steady dealer work. Needs their dealer price sheet and pickup routine."
+    },
+    {
+      "name": "Wrap mockup generator from a logo",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"A business owner uploads a logo and picks a van or truck, and gets a draft wrap layout to react to before the designer spends an hour.\"",
+      "whenAndWhatItTakes": "Month 5, for shops doing commercial wraps. Needs vehicle templates they use and past layouts. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Caption writer for install reels",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 99,
+      "monthlyMax": 200,
+      "pitchLine": "\"Drop the clip and the job notes, and it drafts a caption with the vehicle, the film type and a booking line, in your voice.\"",
+      "whenAndWhatItTakes": "Month 3. Needs twenty past captions they like. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Annual PPF inspection and coating top-up reminders",
+      "kind": "automation",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 50,
+      "monthlyMax": 120,
+      "pitchLine": "\"A year after the PPF goes on, the owner gets an inspection invite and a coating top-up offer. Repeat film work from people who already paid.\"",
+      "whenAndWhatItTakes": "Month 6. Needs install dates by customer and their inspection price."
+    },
+    {
+      "name": "Job costing by film and square foot",
+      "kind": "software",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"See which tint, PPF and wrap jobs actually make money once film, installer hours and redo time are counted.\"",
+      "whenAndWhatItTakes": "Month 6. Needs film costs and installer hours for a season of jobs."
+    },
+    {
+      "name": "PPF estimate from VIN and walkaround",
+      "kind": "ai",
+      "oneTimeMin": 2500,
+      "oneTimeMax": 6000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"The buyer enters a VIN and a short walkaround clip, and the tool drafts the PPF coverage options and existing chips for you to check.\"",
+      "whenAndWhatItTakes": "Month 6, after the price builder. Needs past quotes by model to tune against. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Fleet wrap rollout tracker",
+      "kind": "software",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"A fleet customer sees which vans are wrapped, which are booked and which are still in the yard, without calling the shop.\"",
+      "whenAndWhatItTakes": "Month 8, when a fleet account signs. Needs the fleet's vehicle list and their install cadence."
+    },
+    {
+      "name": "Applicant screener for tint and wrap installers",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"Applicants answer your questions on film experience and portfolio, and you only call the installers who've laid PPF or vinyl before.\"",
+      "whenAndWhatItTakes": "Any time they post a hiring note. Needs their must-haves and pay range. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the tint and PPF price builder for every film shop",
+      "whoPays": "Film shops, monthly per shop",
+      "min": 49,
+      "max": 149,
+      "unit": "monthly",
+      "pitchLine": "\"I built this tint and PPF price builder for one shop. Every film shop in the state answers the same 'how much for my car' DM all day.\"",
+      "whyItWorks": "The first client taught you the coverage levels and vehicle sizes, and paid for the build."
+    },
+    {
+      "route": "Installer locator for a regional film distributor",
+      "whoPays": "The film distributor, annually",
+      "min": 5000,
+      "max": 20000,
+      "unit": "per-year",
+      "pitchLine": "\"Put a find-an-installer map on your site for every tint shop that buys your film. They stay with the distributor that sends them cars.\"",
+      "whyItWorks": "Distributors already spend on dealer loyalty. A locator their shops rely on is stickier than a rebate."
+    },
+    {
+      "route": "Certified-installer portal for a film or vinyl maker",
+      "whoPays": "The film or vinyl manufacturer",
+      "min": 8000,
+      "max": 30000,
+      "unit": "one-time",
+      "pitchLine": "\"Your certified PPF and wrap installers need warranty registration, pattern updates and a locator. I've built that for a shop already.\"",
+      "whyItWorks": "Manufacturers have marketing budgets and a channel problem. The shop client is proof you know the workflow."
+    },
+    {
+      "route": "Window film trade association member toolkit",
+      "whoPays": "The association, per bundle",
+      "min": 1500,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer every member tint shop a site template, a PPF coverage map and a tint law page as a membership benefit.\"",
+      "whyItWorks": "Associations need reasons to renew. One deal reaches dozens of shop owners who already trust them."
+    },
+    {
+      "route": "White-label film shop template for agencies",
+      "whoPays": "The agency, per site",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency picks up tint and wrap clients and builds from scratch. License my film shop template with the coverage map built in.\"",
+      "whyItWorks": "Agencies sell the client; you sell the part you've already perfected."
+    },
+    {
+      "route": "Protection-package pages for a dealer group",
+      "whoPays": "The dealer group, per rooftop",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "pitchLine": "\"Each of your dealerships sells tint and PPF at delivery. One page per store explains the packages and routes installs to the film shop.\"",
+      "whyItWorks": "Dealer groups buy once and roll out to every rooftop. The film client becomes the default installer."
+    },
+    {
+      "route": "Multi-location tint franchise rollout",
+      "whoPays": "The franchise group, per location",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "pitchLine": "\"Each tint territory needs its own price builder and tint law page. I build it once and roll it out location by location.\"",
+      "whyItWorks": "One contract becomes many locations on the same template."
+    },
+    {
+      "route": "Installer training school enrolment site",
+      "whoPays": "The tint and PPF training school",
+      "min": 2500,
+      "max": 7000,
+      "unit": "one-time",
+      "pitchLine": "\"The school that trains tint and PPF installers needs class dates, enrolment and a graduate directory. I know what shops ask for.\"",
+      "whyItWorks": "Training schools sell to the same trade and buy on the same logic. Their graduates become your next prospects."
+    },
+    {
+      "route": "Fleet graphics program for regional service companies",
+      "whoPays": "The fleet owner, annually",
+      "min": 3000,
+      "max": 10000,
+      "unit": "per-year",
+      "pitchLine": "\"Your plumbing or HVAC fleet adds vans every year. A portal tracks wrap proofs, installs and repairs across every vehicle.\"",
+      "whyItWorks": "Fleet owners buy annually and hate chasing proofs. The wrap shop client makes the introduction."
+    },
+    {
+      "route": "Monthly film cost sheet for installers",
+      "whoPays": "Installers, monthly",
+      "min": 29,
+      "max": 79,
+      "unit": "monthly",
+      "pitchLine": "\"A short monthly sheet on PPF, tint and vinyl roll costs, built from the price lists installers share with you.\"",
+      "whyItWorks": "Shops re-price constantly. Built only from data they contribute, it never claims more than the sheets show."
+    },
+    {
+      "route": "The tint and PPF stack in the next metro",
+      "whoPays": "New film shops in a new metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I only build for one tint and PPF shop per town. Yours is taken in {City}. The metro an hour away isn't.\"",
+      "whyItWorks": "Non-competing geography lets you reuse the template, the pitch and the finished-car proof."
+    },
+    {
+      "route": "Finish stalled film-shop builds",
+      "whoPays": "The stranded tint shop",
+      "min": 1200,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Someone started your wrap and tint site and vanished. I can finish it on a film shop template I've already shipped.\"",
+      "whyItWorks": "Stranded owners already decided to buy. They need someone who can show finished film work fast."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Film shop site build plus care plan, one contract",
+      "min": 1800,
+      "max": 3000,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The tint and PPF site and the care plan go on one contract, so a new film or price change is a text to me, not a night on the laptop.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Review requests at the cure check-in",
+      "min": 99,
+      "max": 249,
+      "unit": "monthly",
+      "trigger": "The first cars booked through the site have picked up and cured.",
+      "line": "\"Those first tint customers from the site are past the haze. Let's ask every one of them for a review.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "Install-bay reel and photo day",
+      "min": 500,
+      "max": 1200,
+      "unit": "per-shoot",
+      "trigger": "A standout wrap or full-body PPF car is booked, or the gallery still has only a handful of cars.",
+      "line": "\"That color-change wrap next week is the shoot. One afternoon fills the gallery and a month of reels.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Tint and PPF price builder by vehicle and coverage",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "trigger": "Sixty days of quote-form data shows the same vehicles and coverage levels asked about again and again.",
+      "line": "\"Most of your PPF requests are full-front on the same few models. A price builder answers them before the DM.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Deposit and reminder flow for full-day PPF installs",
+      "min": 500,
+      "max": 1200,
+      "unit": "one-time",
+      "trigger": "They mention a no-show on a booked PPF or wrap day.",
+      "line": "\"That empty bay day hurt. A deposit on every full-day film slot stops it happening twice.\""
+    },
+    {
+      "rung": 6,
+      "day": 120,
+      "offer": "Instagram DM quote assistant for film and wraps",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "trigger": "They say the DMs are taking evenings, or reply times on Instagram stretch past a day.",
+      "line": "\"Your evenings are going to tint price DMs. This answers them with your vehicle questions and hands you the quote.\""
+    },
+    {
+      "rung": 7,
+      "day": 180,
+      "offer": "Dealer work-order portal for tint and PPF",
+      "min": 2500,
+      "max": 6000,
+      "unit": "one-time",
+      "trigger": "A dealership starts sending cars every week.",
+      "line": "\"That dealer sends you cars for tint every week now. Give their sales desk a film portal instead of your cell number.\""
+    },
+    {
+      "rung": 8,
+      "day": 365,
+      "offer": "Annual PPF inspection and coating top-up reminders",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "trigger": "The first anniversary of the earliest PPF installs booked through the site.",
+      "line": "\"Last year's PPF cars are due a look. Let's invite every one back for an inspection and a top-up.\""
+    }
+  ]
+}

@@ -1,0 +1,847 @@
+{
+  "schemaVersion": 1,
+  "category": "Mobile detailing",
+  "slug": "mobile-detailing",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Auto family batch. Small tickets, so software is priced low and the real product is booking with deposits and maintenance memberships. Chemicals and coatings described by type, never by brand. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Vehicle condition and upcharge guide",
+      "contains": "What counts as heavy pet hair, beach sand, kid-seat crumbs, smoke odor and stained upholstery, how each changes the detail price, and why the detailer confirms on arrival",
+      "why": "Surprise upcharges are the top complaint in mobile detailing. Showing them before booking keeps the price fight out of the driveway."
+    },
+    {
+      "section": "Water, power and driveway setup",
+      "contains": "Whether the rig carries its own water tank and generator, what the detailer needs at the curb, apartment garages, HOA rules on washing, and shade on hot days",
+      "why": "Apartment and condo owners can't book until they know the mobile detailer can work where they park. This page answers it once."
+    },
+    {
+      "section": "Paint correction and ceramic coating",
+      "contains": "Swirl marks and water spots, one-step versus multi-step polishing, coating prep, how long a ceramic coating cures, and the maintenance washes a coated car needs",
+      "why": "Correction and coating are the large tickets, and buyers decide on how clearly the detailer explains the difference between a polish and a coating."
+    },
+    {
+      "section": "Maintenance wash memberships",
+      "contains": "Weekly, every-other-week and monthly maintenance visits, what each visit covers, coated-car upkeep, skipping a visit, and pausing for a trip",
+      "why": "Recurring maintenance details are how a mobile detailer stops chasing new cars every week. Owners join when the routine is spelled out."
+    },
+    {
+      "section": "Lease return and sell-ready details",
+      "contains": "Interior shampoo, headlight restoration, odor removal and paint touch-up before a lease turn-in, a trade-in appraisal or a private sale listing",
+      "why": "A car about to be sold or returned has a deadline and a reason to spend. These buyers search with the occasion in mind, not the service."
+    },
+    {
+      "section": "Office park and fleet detail days",
+      "contains": "Detailing cars in a workplace lot while staff are at their desks, sign-up sheets for employees, sales-team vehicles, and small business fleet washes",
+      "why": "One workplace day fills a mobile detailer's schedule with short drives. Office managers decide on a clear process and proof of insurance."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C45",
+      "siteType": "local-conversion",
+      "name": "Driveway Ready",
+      "heroLayout": "split-photo",
+      "mood": [
+        "bright",
+        "friendly",
+        "fast"
+      ],
+      "bestFor": "Solo mobile detailers who sell interior and exterior packages to busy households",
+      "pairsWithTier": "starter",
+      "headlineSample": "Mobile car detailing in {City}, at your driveway",
+      "whyItFits": "Ultramarine on pale blue reads clean and wet without looking like a car wash tunnel. Geometric caps keep the package names legible on a phone in the sun."
+    },
+    {
+      "id": "b",
+      "themeId": "C48",
+      "siteType": "booking-first",
+      "name": "Slot and Deposit",
+      "heroLayout": "card-stack",
+      "mood": [
+        "glossy",
+        "sharp",
+        "organised"
+      ],
+      "bestFor": "Detailers with a full calendar who need deposits on every slot and fewer no-shows",
+      "pairsWithTier": "standard",
+      "headlineSample": "Book a mobile detail in {City} tonight",
+      "whyItFits": "The family combo. Dark ground makes beading water and deep gloss pop, and the card stack puts packages, slots and the deposit in one scroll."
+    },
+    {
+      "id": "c",
+      "themeId": "C14",
+      "siteType": "premium-brand",
+      "name": "Coating Lab",
+      "heroLayout": "full-bleed-photo",
+      "mood": [
+        "technical",
+        "cool",
+        "premium"
+      ],
+      "bestFor": "Detailers moving up to multi-step paint correction and ceramic coating on enthusiast cars",
+      "pairsWithTier": "premium",
+      "headlineSample": "Paint correction and ceramic coating in {City}",
+      "whyItFits": "Deep navy and cyan read like a clean lab under inspection lights, and mono numerals suit paint-depth readings and cure times."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Searched mobile detailing in {City} and your listing came up with great reviews but no website. Someone deciding between detailers can't see a package or a price before they call.",
+      "hook": "Open their Maps listing and confirm there's no Website button. Screenshot it for when they reply.",
+      "linkLine": "Here's a detailing page that could sit behind that button: {demo-link}"
+    },
+    {
+      "angle": "Link-in-bio dead end",
+      "line": "The link on your profile opens a list of links, and none of them lets someone book an interior detail for Saturday. That's the one thing they came to do.",
+      "hook": "Tap the link in their bio or listing. Note how many taps it takes to reach a booking slot, if one exists at all.",
+      "linkLine": "A detailing page where Book is the first tap: {demo-link}"
+    },
+    {
+      "angle": "Old free site",
+      "line": "Your site still lists the packages and prices from when you started, and your posts show ceramic coating work now. A buyer comparing detailers trusts whichever page looks current.",
+      "hook": "Compare the site's package list with their recent posts. Note anything missing or a price that looks dated.",
+      "linkLine": "Your current detailing menu, coating included: {demo-link}"
+    },
+    {
+      "angle": "Package menu breaks on mobile",
+      "line": "On my phone your detailing package table squeezes into a column I couldn't read. Most people booking a car detail do it from the couch on a phone.",
+      "hook": "Only if they have a site. Load it on your phone and note what breaks: menu, price table or booking button. Screenshot it for when they reply.",
+      "linkLine": "Your detailing packages, readable on a phone: {demo-link}"
+    },
+    {
+      "angle": "No deposit on bookings",
+      "line": "Your posts say DM to book. When someone books a full detail by text and doesn't answer the door, that's a morning gone with no deposit to show for it.",
+      "hook": "Look for 'DM to book' or 'text to book' in their bio. Note whether any booking path takes a deposit.",
+      "linkLine": "Detailing slots that hold a deposit: {demo-link}"
+    },
+    {
+      "angle": "Before-and-afters with no home",
+      "line": "Your interior before-and-afters are the kind people stop scrolling for: the dog hair, the stained seats, then the clean cabin. Right now they disappear down the feed in a week.",
+      "hook": "Find two before-and-after posts you could name by vehicle and problem. Mention one if they reply.",
+      "linkLine": "Your detailing before-and-afters, sorted by problem: {demo-link}"
+    },
+    {
+      "angle": "Reviews nobody reads",
+      "line": "Your reviews mention showing up on time, getting out the smoke smell and leaving the driveway clean. Those are exactly what a nervous first-time detailing customer needs to read.",
+      "hook": "Read their reviews and copy one line about punctuality, odor or a specific car. Quote it back if they reply.",
+      "linkLine": "Those reviews next to the detail packages they praise: {demo-link}"
+    },
+    {
+      "angle": "Pollen and road-salt season",
+      "line": "Spring pollen and the last of the road salt is when every car in {City} needs a proper detail, and the detailers people can book online fill their calendar first.",
+      "hook": "Use in late winter and spring, or after the first snow for salt. Name the season in the reply.",
+      "linkLine": "Ready before the spring detailing rush: {demo-link}"
+    },
+    {
+      "angle": "Booking requests at night",
+      "line": "People decide their car is a mess at night, after loading the kids. If booking a detail means waiting for you to text back tomorrow, the next detailer's calendar gets them.",
+      "hook": "Message them in the evening and see how long a reply takes, or check if their profile lists booking hours.",
+      "linkLine": "Detail booking that works at 10pm: {demo-link}"
+    },
+    {
+      "angle": "Adding a second rig",
+      "line": "Saw you're looking for another detailer for a second van. Good techs check how organised the operation looks before they apply, and so do customers splitting between two rigs.",
+      "hook": "Only if they posted a hiring note or mentioned a second van or trailer. Note the date.",
+      "linkLine": "A detailing site with a careers page and two calendars: {demo-link}"
+    },
+    {
+      "angle": "Service radius",
+      "line": "Your profile says you detail across {City}, but nothing tells someone in {Neighborhood} whether you'll drive there or charge a travel fee. That's the first thing they want to know.",
+      "hook": "Find the towns in their posts or reviews. Use the furthest one they've detailed in.",
+      "linkLine": "A service-area map with travel fees for your detailing: {demo-link}"
+    },
+    {
+      "angle": "Coating payments",
+      "line": "If you split ceramic coating into payments, say so on a page. A multi-year coating is the one detailing service people want to spread out before they ask.",
+      "hook": "Only if they mention payments somewhere. If not, skip this angle.",
+      "linkLine": "Ceramic coating with payments explained up front: {demo-link}"
+    },
+    {
+      "angle": "Insured to work on the car",
+      "line": "Letting a stranger detail a new car in your driveway takes trust. A page that shows you're insured and how you handle a scratch claim answers the question nobody asks out loud.",
+      "hook": "Look for any mention of insurance in their bio, posts or truck. Never state coverage they didn't publish.",
+      "linkLine": "Insurance and process on the detailing site: {demo-link}"
+    },
+    {
+      "angle": "Regulars only",
+      "line": "Sounds like most of your detailing is regulars and their friends. That's a good base, and a friend still looks you up before handing over the keys.",
+      "hook": "Look for reviews like 'my sister recommended' or repeat names in comments. Quote one back.",
+      "linkLine": "Where a friend's detailing referral would land: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "That {specific recent job} you posted is serious detailing. A car turned around like that should be the first thing a stranger sees when they find you.",
+      "hook": "Pick the newest before-and-after on their grid and name it exactly: vehicle, problem and what they did.",
+      "linkLine": "That detail, front and centre: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hey {Owner} — that {specific recent job} you posted is a serious turnaround.\n\nI looked for mobile detailers in {City} and found {Business Name} on social, but no page where someone can pick a package and book a slot. I put together a sample detailing site with packages, upcharges and booking, with marked placeholders where your photos would go.\n\nWant me to send it over?",
+    "dm2": "{Owner} — following up in case my last message got buried. Here's the sample detailing site for {Business Name}: {demo-link}\n\nIt has your packages with prices, a pet-hair and odor upcharge guide, a booking calendar that holds a deposit and a page on what you need at the curb. If it's not for you, say so and I'll leave you be.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for mobile detailers here in {City}. I sent you a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"Easy to miss. Short version: I built a sample detailing site for {Business Name} where customers pick a package, see the upcharges and book with a deposit, with marked placeholders where your photos would go. Can I text you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range} depending on how many packages and areas you cover, then {Care Range} a month for hosting and changes. For a detailer your size I'd quote about {Build Price}.\"\n\"How many no-shows did you eat last month? The deposit alone usually answers that.\"\n\"Can I walk you through it for ten minutes between cars this week?\"\n\nCLOSE:\n\"I'll send a one-page scope and an invoice for the deposit. We start the day it clears.\"",
+    "objections": [
+      {
+        "objection": "I'm booked through Instagram DMs and it works.",
+        "handler": "\"It works while you answer fast. A booking page fills the slot while you're elbow-deep in a back seat, and takes the deposit you can't ask for by text.\""
+      },
+      {
+        "objection": "My customers won't pay a deposit for a detail.",
+        "handler": "\"Regulars can skip it. The deposit is for new bookings, the ones most likely to forget. One no-show covers a lot of the care plan.\""
+      },
+      {
+        "objection": "I'm just a one-man operation.",
+        "handler": "\"That's exactly who it's for. You can't answer the phone with a polisher in your hand. The site books while you work.\""
+      },
+      {
+        "objection": "It's my slow season.",
+        "handler": "\"Then it's the month to build it. It gets found while it's quiet and it's taking bookings when pollen and salt season hit.\""
+      },
+      {
+        "objection": "I'll use a free booking app.",
+        "handler": "\"You can, and I'll link it if you like. The app takes the booking; the site is what convinces a stranger you're the detailer worth booking.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you it'd be about {Build Price}: packages, upcharges, a booking calendar and a service-area page. A handful of full details pays for it.\""
+      }
+    ],
+    "email": {
+      "subject": "Detailing site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for mobile detailers around {City}. {Business Name} has strong before-and-after work on social, but no page where a new customer can choose a package and book.\n\nRather than ask for your time, I built a sample first: your packages with prices, a pet-hair and odor upcharge guide, a service-area map and a booking calendar that takes a deposit, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and changes. If not, no problem, it comes down at the end of the month.\n\nWorth ten minutes on the phone this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"{Owner}, it's {Your Name}. I build websites for mobile detailers in {City}, and I made a sample one for {Business Name} with booking and deposits. I'll text you the link. Look when you're between cars. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner} — I'm taking the {Business Name} detailing demo down on Friday to free up the space.\n\nWant me to leave it up? One word is fine either way.",
+    "nurture": "Hey {Owner} — pollen season is close, which is when every car in {City} needs a detail at once. Thought of you.\n\nThe site is still here whenever you want it, and the price hasn't moved. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to a week of full details, never to an hourly rate. A detailer thinks in cars per day.",
+      "Booking with a deposit is the product. Price the deposit setup as its own line and lead with it.",
+      "Price the upcharge guide separately; pet hair, sand and odor rules take real back-and-forth to get right.",
+      "Only quote correction and coating pages for detailers who actually polish and coat. Otherwise keep it to washes and interiors.",
+      "Memberships are monthly money for the client. Charge a setup fee and keep the monthly low.",
+      "Keep everything small and fast; this trade's ticket can't carry a long build."
+    ],
+    "lineItems": [
+      {
+        "item": "Deposit and reschedule rules on the booking",
+        "min": 250,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max with different deposits by package, a late-cancel rule and text reminders the day before.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Upcharge guide for pet hair, sand and odor",
+        "min": 150,
+        "max": 400,
+        "unit": "per-page",
+        "description": "Max with before-and-after pairs for each condition and a photo-upload step before booking.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Correction and coating page",
+        "min": 250,
+        "max": 600,
+        "unit": "per-page",
+        "description": "Max with a polish-versus-coating comparison, cure-time notes and a coated-car maintenance section.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Maintenance membership signup",
+        "min": 300,
+        "max": 800,
+        "unit": "one-time",
+        "description": "Max with weekly and monthly visit options, card-on-file billing and a pause button for trips.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Service-area map with travel fees",
+        "min": 150,
+        "max": 400,
+        "unit": "one-time",
+        "description": "Max when travel fees change by zone and each zone has its own short page.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Office park and fleet detail day page",
+        "min": 200,
+        "max": 500,
+        "unit": "per-page",
+        "description": "Max with an employee sign-up sheet the office manager shares and a fleet quote form.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Before-and-after reel kit for detailers",
+      "min": 300,
+      "max": 800,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"One morning on two dirty cars gives you the slow-motion foam, the fifty-fifty paint shot and the interior reveal for a month of detailing reels.\"",
+      "when": "Month 2, or the day a truly filthy car is booked."
+    },
+    {
+      "name": "Google profile updates for each detail",
+      "min": 150,
+      "max": 300,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Every week a finished car goes on your Google profile with the package and the neighbourhood, so 'mobile detailing near me' shows fresh work.\"",
+      "when": "Day 30, once the site is live."
+    },
+    {
+      "name": "Review and rebook texts after each detail",
+      "min": 79,
+      "max": 199,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"The evening after a detail, the customer gets a thank-you, a review link and a one-tap rebook for the same package next month.\"",
+      "when": "Day 30. The easiest second sale."
+    },
+    {
+      "name": "Pollen and salt season detail push",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A short campaign for underbody salt washes after winter and exterior details when the pollen hits, sent to past customers first.\"",
+      "when": "Pitch in January, run February to April."
+    },
+    {
+      "name": "Rig and trailer graphics coordination",
+      "min": 200,
+      "max": 600,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Your van sits in a driveway for three hours a job. Lettering with the site and a booking code turns every detail into a sign the neighbours read.\"",
+      "when": "Right after launch."
+    },
+    {
+      "name": "Holiday gift-card detailing campaign",
+      "min": 200,
+      "max": 450,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A detailing gift card is the easy present for the person who has everything and a messy car. One page and a few posts in December.\"",
+      "when": "Pitch in October, run late November to Christmas."
+    },
+    {
+      "name": "Apartment community detail-day flyers",
+      "min": 150,
+      "max": 400,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A flyer for the apartment's mailroom announcing a detail day in their garage, with a booking code for that date only.\"",
+      "when": "Month 3, once the water-and-power page answers the garage question."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Small used-car lots that need cars detailed before listing",
+        "whoPays": "The lot owner",
+        "min": 1200,
+        "max": 3500,
+        "unit": "one-time",
+        "pitchLine": "\"The lot you detail cars for lists them with dark, cluttered photos. They need an inventory site, and your detailing shows up in every listing.\"",
+        "whyItWorks": "Small lots buy websites and trust the detailer who preps their cars. The intro is one text."
+      },
+      {
+        "route": "Window tint and PPF shops that take coated cars",
+        "whoPays": "The tint shop, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The tint shop you send coating customers to for film is probably Instagram-only too. I'll build theirs and both sites point at each other.\"",
+        "whyItWorks": "Detailers and film shops trade customers already. One introduction is a warm door."
+      },
+      {
+        "route": "Apartment and condo property managers",
+        "whoPays": "The property manager",
+        "min": 800,
+        "max": 2500,
+        "unit": "one-time",
+        "pitchLine": "\"The building where you run detail days needs a resident amenities page. Your detailing slot can be one of the perks on it.\"",
+        "whyItWorks": "Managers pay for resident perks pages and like vendors who show up organised."
+      },
+      {
+        "route": "Boat and RV detailers in the same area",
+        "whoPays": "The boat or RV detailer, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"When someone asks you to detail their boat, who do you send them to? That detailer needs a site with marina and storage-lot booking.\"",
+        "whyItWorks": "Adjacent detailers handle what car detailers turn down, so the referral already flows."
+      },
+      {
+        "route": "Local car wash with no detail bay",
+        "whoPays": "The car wash owner",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The tunnel wash nearby gets asked for interior details every day. A site that sells wash memberships and points detail requests to you helps you both.\"",
+        "whyItWorks": "Washes have budgets and a membership problem; the detailer becomes their go-to referral."
+      },
+      {
+        "route": "Realtors who prep cars and homes for moves",
+        "whoPays": "The agent or brokerage",
+        "min": 1000,
+        "max": 3000,
+        "unit": "one-time",
+        "pitchLine": "\"Agents hand movers a vendor list: cleaners, movers, a detailer for the car. A vendor page with your detailing on it makes them look organised.\"",
+        "whyItWorks": "Agents recommend vendors for a living and pay for pages that impress sellers."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Listing description writer for the used-car lot",
+        "whoPays": "The lot owner, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Each car you detail for the lot gets a clean listing description drafted from the VIN and the detail notes, ready for the owner to post.\"",
+        "whyItWorks": "Lot owners write listings at night. The detailer's notes are already the best source on the car's condition."
+      },
+      {
+        "route": "Resident booking assistant for the apartment manager",
+        "whoPays": "The property manager, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"Residents ask the front desk about detail days, parking and laundry. An assistant answers from the building's rules and books the detailer's slots.\"",
+        "whyItWorks": "Front desks are swamped by repeat questions. The detailer client is the first vendor on it."
+      },
+      {
+        "route": "Membership text-back for the car wash",
+        "whoPays": "The car wash owner",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"Missed calls about wash memberships get a text with plans and a signup link, set up the same way as your detailing text-back.\"",
+        "whyItWorks": "You already built it once. The second build is configuration on a warm introduction."
+      },
+      {
+        "route": "Marina booking assistant for the boat detailer",
+        "whoPays": "The boat detailer",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"Boat owners ask about hull size, slip number and storage-lot access. An assistant collects it and books the boat detailer's next dock day.\"",
+        "whyItWorks": "Boat detailing is seasonal and scheduling-heavy. The car detailer's referral opens the door."
+      },
+      {
+        "route": "Supply store product-match assistant",
+        "whoPays": "The detailing supply store",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"Walk-in customers describe their stain or swirl problem and the assistant suggests the right compound, pad or cleaner from the store's own shelves.\"",
+        "whyItWorks": "Supply stores sell to every detailer in town. The detailer client is your proof you know the trade."
+      },
+      {
+        "route": "Vendor recommendation helper for realtors",
+        "whoPays": "The brokerage, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"Sellers ask agents who to call for the car, the carpet and the move. A helper answers from the agent's vetted list, detailer included.\"",
+        "whyItWorks": "Agents want to look helpful without fielding every vendor text. The detailer is already on the list."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Missed-call text-back for detail bookings",
+      "kind": "automation",
+      "oneTimeMin": 0,
+      "oneTimeMax": 250,
+      "monthlyMin": 79,
+      "monthlyMax": 149,
+      "pitchLine": "\"Every call you miss with a buffer running gets a text with your detailing packages and a booking link. You never call back to a customer who already went elsewhere.\"",
+      "whenAndWhatItTakes": "Day 30. Needs their number forwarded and the reply text they approve."
+    },
+    {
+      "name": "Package and add-on price builder for details",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1800,
+      "monthlyMin": 40,
+      "monthlyMax": 120,
+      "pitchLine": "\"The customer picks car size, package and add-ons like pet hair or headlight restoration, and sees the detailing total before booking.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their package prices by vehicle size and add-on list."
+    },
+    {
+      "name": "Day-before reminder and arrival-window texts",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 600,
+      "monthlyMin": 30,
+      "monthlyMax": 80,
+      "pitchLine": "\"The day before, a reminder to clear out the car and leave the spigot on. The morning of, an on-my-way text with the arrival window.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their booking calendar and their prep checklist."
+    },
+    {
+      "name": "Maintenance membership billing and route",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 60,
+      "monthlyMax": 150,
+      "pitchLine": "\"Members are billed monthly and their maintenance washes land on a route by neighbourhood, so you detail five cars on one street instead of crossing town.\"",
+      "whenAndWhatItTakes": "Month 3, once there are a dozen regulars. Needs member list, visit frequency and addresses."
+    },
+    {
+      "name": "Condition check from customer car snaps",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 80,
+      "monthlyMax": 200,
+      "pitchLine": "\"The customer sends interior shots when booking and the tool flags heavy pet hair, stains or sand, so the upcharge is agreed before you arrive.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their upcharge rules and a set of past cars graded by condition. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Booking chat for detailing questions",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 80,
+      "monthlyMax": 200,
+      "pitchLine": "\"It answers 'do you need water', 'how long for a full interior' and 'can you do my apartment garage' at midnight, then books the slot.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their FAQ answers, packages and booking rules. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Route planner for the detailing day",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 50,
+      "monthlyMax": 120,
+      "pitchLine": "\"Tomorrow's details are ordered by drive time and job length, so the coating job gets the shaded morning slot and the quick wash fills the gap.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their typical job lengths and how far they'll drive."
+    },
+    {
+      "name": "Coating care check-ins and top-up offers",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 30,
+      "monthlyMax": 90,
+      "pitchLine": "\"Every ceramic coating customer gets a maintenance-wash invite at the right interval and a top-up offer at the anniversary.\"",
+      "whenAndWhatItTakes": "Month 4. Needs coating dates by customer and their maintenance-wash price."
+    },
+    {
+      "name": "Review reply drafts for detailing customers",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 79,
+      "monthlyMax": 179,
+      "pitchLine": "\"Each review gets a reply drafted in your voice that mentions the car and the package, ready to approve from the van.\"",
+      "whenAndWhatItTakes": "Month 2. Needs ten past replies to learn the voice. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Fleet and office-day sign-up sheet",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 30,
+      "monthlyMax": 80,
+      "pitchLine": "\"The office manager shares one link, employees pick a time slot and a detail package, and you show up to a full lot.\"",
+      "whenAndWhatItTakes": "Month 4, when the first workplace says yes. Needs their office-day packages and how many cars fit in a day."
+    },
+    {
+      "name": "Caption and hook writer for detail reels",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 700,
+      "monthlyMin": 60,
+      "monthlyMax": 150,
+      "pitchLine": "\"Drop the before-and-after clip and it drafts a hook, a caption naming the car and the problem, and a booking line.\"",
+      "whenAndWhatItTakes": "Month 3. Needs twenty captions they like. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Chemical and pad inventory tracker",
+      "kind": "software",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 25,
+      "monthlyMax": 75,
+      "pitchLine": "\"Log what each detail used, and know when the van is low on compound, interior cleaner or microfiber before a coating job.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their supply list and rough use per package."
+    },
+    {
+      "name": "Detailing quote from a walkaround clip",
+      "kind": "ai",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"For correction jobs, the owner films a walkaround and the tool drafts a polishing quote with swirl and scratch notes for you to check.\"",
+      "whenAndWhatItTakes": "Month 5, for detailers doing correction. Needs past correction quotes to tune against. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Job sheet with arrival and finish shots",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 40,
+      "monthlyMax": 100,
+      "pitchLine": "\"Each detail gets a job sheet with arrival and finish shots, so a 'that scratch was there before' dispute ends in seconds.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their walkaround routine and a phone in the van."
+    },
+    {
+      "name": "Win-back texts for lapsed detail customers",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 60,
+      "monthlyMax": 150,
+      "pitchLine": "\"Customers who haven't booked a detail in a few months get a short personal note drafted from their last package and car.\"",
+      "whenAndWhatItTakes": "Month 6, once there's six months of booking history. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Weather-based reschedule flow",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 30,
+      "monthlyMax": 80,
+      "pitchLine": "\"When rain is forecast for an exterior detail, the customer gets two new slots to choose from before you even look at the calendar.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their booking calendar and their rain rule."
+    },
+    {
+      "name": "Gift card and package-pack store",
+      "kind": "software",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1200,
+      "monthlyMin": 20,
+      "monthlyMax": 60,
+      "pitchLine": "\"Sell detailing gift cards and prepaid packs of washes online, redeemed straight into the booking calendar.\"",
+      "whenAndWhatItTakes": "October, ahead of the holiday push. Needs their pack prices and redemption rules."
+    },
+    {
+      "name": "Odor and stain answer guide for customers",
+      "kind": "ai",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1200,
+      "monthlyMin": 60,
+      "monthlyMax": 150,
+      "pitchLine": "\"A customer types 'spilled milk in the back seat a week ago' and gets an honest answer on what a detail can fix and which package to book.\"",
+      "whenAndWhatItTakes": "Month 6. Needs their real results on odor and stain jobs. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Second-rig scheduling and pay sheet",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Two detailing vans on one calendar, jobs split by area, and a pay sheet per tech by package completed.\"",
+      "whenAndWhatItTakes": "Month 8, when they add a second rig. Needs their pay rules and how they split areas."
+    },
+    {
+      "name": "Applicant screener for detail techs",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 60,
+      "monthlyMax": 150,
+      "pitchLine": "\"Applicants answer your questions on polishing experience, license and weekend availability before you spend a call on them.\"",
+      "whenAndWhatItTakes": "Any time they post a hiring note. Needs their must-haves. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the detailing booking and deposit page",
+      "whoPays": "Mobile detailers, monthly per operator",
+      "min": 29,
+      "max": 99,
+      "unit": "monthly",
+      "pitchLine": "\"I built a booking page with deposits and upcharge rules for one mobile detailer. Every detailer with a van has the same no-show problem.\"",
+      "whyItWorks": "Huge supply of young owner-operators who all need the same thing. The first client paid for the workflow."
+    },
+    {
+      "route": "Detailer directory for a supply distributor",
+      "whoPays": "The detailing chemical distributor, annually",
+      "min": 3000,
+      "max": 12000,
+      "unit": "per-year",
+      "pitchLine": "\"Put a find-a-detailer map on your site for every detailer who buys your compounds and coatings. They keep buying from the brand that sends them cars.\"",
+      "whyItWorks": "Distributors spend on loyalty already. A directory their detailers rely on is stickier than a discount."
+    },
+    {
+      "route": "Certified-installer portal for a coating maker",
+      "whoPays": "The ceramic coating manufacturer",
+      "min": 6000,
+      "max": 20000,
+      "unit": "one-time",
+      "pitchLine": "\"When a coated car's owner asks who applied the ceramic and whether it's still covered, your site should answer by VIN and point to a trained detailer nearby.\"",
+      "whyItWorks": "Coating makers sell on warranty and need a channel. The detailer client proves you know the work."
+    },
+    {
+      "route": "Detailing trainer's course and graduate site",
+      "whoPays": "The detailing trainer or academy",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"The academy that trains new detailers needs class dates, enrolment and a graduate directory. Their graduates are my next clients.\"",
+      "whyItWorks": "Training businesses sell to the same trade, and their alumni list is a ready prospect list."
+    },
+    {
+      "route": "White-label detailing site template for agencies",
+      "whoPays": "The agency, per site",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "pitchLine": "\"License my mobile detailing template with packages, upcharges and deposits built in. Your agency just adds the logo.\"",
+      "whyItWorks": "Agencies get small detailing clients they can't afford to build from scratch."
+    },
+    {
+      "route": "Corporate campus car-care programs",
+      "whoPays": "The employer or campus facilities team, annually",
+      "min": 2000,
+      "max": 8000,
+      "unit": "per-year",
+      "pitchLine": "\"Employees book a detail while they work and the company lists it as a perk. One portal across every office park in the metro.\"",
+      "whyItWorks": "Facilities teams buy perks annually and like one vendor portal. It routes work to every detailer on the network."
+    },
+    {
+      "route": "Mobile detailing franchise rollout",
+      "whoPays": "The franchise group, per territory",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "pitchLine": "\"Each of your detailing territories needs its own booking, service-area map and upcharge guide. I build it once and roll it out.\"",
+      "whyItWorks": "One contract becomes many territories on the same template."
+    },
+    {
+      "route": "Apartment portfolio amenity booking",
+      "whoPays": "The property management company, annually",
+      "min": 3000,
+      "max": 10000,
+      "unit": "per-year",
+      "pitchLine": "\"Every community you manage gets a resident booking page for car detailing days, run by approved vendors.\"",
+      "whyItWorks": "Portfolio managers buy once and roll out everywhere. Amenities help them keep tenants."
+    },
+    {
+      "route": "Dealer service-lane detail booking",
+      "whoPays": "The dealership service department",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Service customers waiting on an oil change get offered a detail on the spot, booked to a mobile detailer working the lot.\"",
+      "whyItWorks": "Dealers want add-on revenue without hiring a detail crew. The mobile detailer becomes the house vendor."
+    },
+    {
+      "route": "Monthly detailing supply price sheet",
+      "whoPays": "Detailers, monthly",
+      "min": 15,
+      "max": 49,
+      "unit": "monthly",
+      "pitchLine": "\"A short monthly sheet comparing what detailers pay for compound, coating and microfiber, built from receipts members share.\"",
+      "whyItWorks": "Small operators watch every supply dollar. Built only from shared data, it never claims more than it shows."
+    },
+    {
+      "route": "The detailing stack in the next metro",
+      "whoPays": "New detailers in a new metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I build for one mobile detailer per area. {City} is spoken for, but the suburbs across the river aren't.\"",
+      "whyItWorks": "Non-competing geography lets you reuse the template and the before-and-after proof."
+    },
+    {
+      "route": "Rescue half-built detailer sites",
+      "whoPays": "The stranded detailer",
+      "min": 600,
+      "max": 1800,
+      "unit": "one-time",
+      "pitchLine": "\"A friend started your detailing site and never finished the booking. I can finish it on a template already taking deposits for another detailer.\"",
+      "whyItWorks": "Stranded owners already decided to buy. Speed and a working booking flow close them."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Detailing site build plus care plan, one contract",
+      "min": 1200,
+      "max": 2000,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The detailing site and the care plan go on one contract, so a new package or price change is a text to me, not a weekend job.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Review and rebook texts after each detail",
+      "min": 79,
+      "max": 199,
+      "unit": "monthly",
+      "trigger": "The first details booked through the site are finished.",
+      "line": "\"Your first site bookings are done. Let's get a review and a rebook from every one of those cars.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "Before-and-after reel kit for detailers",
+      "min": 300,
+      "max": 800,
+      "unit": "per-shoot",
+      "trigger": "A truly filthy car gets booked, or the gallery still shows only a few details.",
+      "line": "\"That dog-hair minivan on Saturday is the shoot. One morning fills a month of detailing reels.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Condition check from customer car snaps",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "trigger": "They mention arguing about an upcharge in a driveway.",
+      "line": "\"That upcharge argument won't happen again. The customer sends interior shots and the pet-hair fee is agreed before you drive over.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Maintenance membership billing and route",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "trigger": "Booking data shows a dozen customers rebooking on a regular rhythm.",
+      "line": "\"A dozen of your detailing customers already come back monthly. Put them on a membership and a route.\""
+    },
+    {
+      "rung": 6,
+      "day": 150,
+      "offer": "Fleet and office-day sign-up sheet",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "trigger": "A customer asks if you'd detail cars at their workplace.",
+      "line": "\"Their office lot is a full detailing day with no driving. One sign-up link fills it.\""
+    },
+    {
+      "rung": 7,
+      "day": 240,
+      "offer": "Second-rig scheduling and pay sheet",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "trigger": "They buy or lease a second van or hire a detail tech.",
+      "line": "\"Two detailing vans need one calendar and a fair pay sheet. Let's set it up before the second rig rolls.\""
+    }
+  ]
+}

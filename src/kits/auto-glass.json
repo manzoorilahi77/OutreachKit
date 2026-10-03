@@ -1,0 +1,838 @@
+{
+  "schemaVersion": 1,
+  "category": "Auto glass",
+  "slug": "auto-glass",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Auto family batch. Insurance networks own much of the volume, so copy targets drivers who choose their own glass shop, explains claims without advice, and never names an insurer, glass maker or national chain. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Chip or crack: repair versus replace",
+      "contains": "When a windshield chip can be filled, why a crack that reaches the edge usually means replacement, chips in the driver's line of sight, and how cold nights spread a small crack",
+      "why": "Drivers search the damage before the service. A clear repair-or-replace page books the cheap chip fill today, before it becomes a full windshield."
+    },
+    {
+      "section": "Glass claims and choosing your shop",
+      "contains": "How a windshield claim usually works, the claim number, deductibles, asking your insurer whether you can pick the glass shop, and what the shop handles on the call",
+      "why": "Many drivers assume the insurer's call center decides where the glass goes. Explaining the process is how an independent shop gets chosen."
+    },
+    {
+      "section": "Windshield camera calibration",
+      "contains": "Lane-keep and collision cameras mounted on the windshield, static versus dynamic calibration, which vehicles need it, and the printout the driver gets afterwards",
+      "why": "Owners of newer cars are told calibration matters but not why. The glass shop that explains it wins the higher-ticket replacement."
+    },
+    {
+      "section": "Mobile replacement: weather and drive-away time",
+      "contains": "Where the mobile glass van can work, rain and cold limits, adhesive cure and safe drive-away time, and keeping the tape on and windows cracked afterwards",
+      "why": "Mobile service is the reason people book, and also the source of most worries. Plain rules prevent reschedules and comebacks."
+    },
+    {
+      "section": "Side, back and sunroof glass",
+      "contains": "Door glass after a break-in, back glass with defroster lines, quarter glass, sunroof panels, vacuuming the shards, and temporary covers until the part arrives",
+      "why": "A smashed side window is urgent and often not covered the same way as a windshield. It's a separate search with a separate buyer."
+    },
+    {
+      "section": "Fleet, RV and equipment glass",
+      "contains": "Work trucks and vans on a fleet account, RV windshields, flat glass for tractors and loaders, scheduling at the yard, and invoices by unit",
+      "why": "Fleet and equipment glass is steady work the insurer networks don't control. Managers pick the glass shop that shows it can handle odd sizes."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C1",
+      "siteType": "local-conversion",
+      "name": "Chip Fix",
+      "heroLayout": "split-photo",
+      "mood": [
+        "quick",
+        "clean",
+        "trustworthy"
+      ],
+      "bestFor": "Small glass shops that sell chip repair and same-day windshield replacement on a fast phone call",
+      "pairsWithTier": "starter",
+      "headlineSample": "Windshield chip repair and replacement in {City}",
+      "whyItFits": "Indigo on white reads clean and clear, like the glass itself. The neutral sans keeps the chip-or-crack choice and the call button easy to scan."
+    },
+    {
+      "id": "b",
+      "themeId": "C48",
+      "siteType": "booking-first",
+      "name": "Clear Line",
+      "heroLayout": "card-stack",
+      "mood": [
+        "sharp",
+        "modern",
+        "precise"
+      ],
+      "bestFor": "Mobile glass techs who want windshield replacements booked by vehicle, address and time window",
+      "pairsWithTier": "standard",
+      "headlineSample": "Book mobile windshield replacement in {City}",
+      "whyItFits": "The family combo. A dark ground makes fresh glass and reflections read crisply, and the card stack walks from vehicle to damage to time slot."
+    },
+    {
+      "id": "c",
+      "themeId": "C4",
+      "siteType": "editorial-trust",
+      "name": "Calibration Desk",
+      "heroLayout": "type-led",
+      "mood": [
+        "expert",
+        "assured",
+        "careful"
+      ],
+      "bestFor": "Glass shops investing in camera calibration and selling to owners of newer, sensor-heavy vehicles",
+      "pairsWithTier": "premium",
+      "headlineSample": "Windshield replacement with camera calibration, {City}",
+      "whyItFits": "Navy and brass with a serif display read like a specialist's report, which suits explaining calibration to careful owners and fleet managers."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your glass shop's Maps listing has good reviews and no website. A driver with a fresh windshield crack in {City} can't see whether you come to them or handle the claim before they call.",
+      "hook": "Open their Maps listing and confirm there's no Website button. Screenshot it for when they reply.",
+      "linkLine": "What could sit behind that button for your windshield work: {demo-link}"
+    },
+    {
+      "angle": "Facebook as the glass site",
+      "line": "The website link for your auto glass business opens Facebook. Someone with a cracked windshield wants a quote by vehicle and a time slot, not a scroll through van pictures.",
+      "hook": "Tap their Website link and confirm it lands on Facebook. Note whether a quote option exists there.",
+      "linkLine": "A windshield quote page instead of a feed: {demo-link}"
+    },
+    {
+      "angle": "Stale glass site",
+      "line": "Your auto glass site doesn't mention camera calibration, and most new windshields need it now. A driver with a newer car reads that as a shop that can't do their glass.",
+      "hook": "Open the site and look for calibration, mobile service or an old copyright year. Note what's missing.",
+      "linkLine": "Your glass shop, current, calibration included: {demo-link}"
+    },
+    {
+      "angle": "Quote form broken on a phone",
+      "line": "I tried your windshield quote form on my phone and the vehicle dropdown wouldn't open. People price glass from the parking lot where they noticed the crack.",
+      "hook": "Only if they have a site. Try the quote form on a phone and note what fails. Screenshot it for when they reply.",
+      "linkLine": "A windshield quote form that works on a phone: {demo-link}"
+    },
+    {
+      "angle": "No online glass quote",
+      "line": "The only way to get a windshield price from you is a phone call. A VIN-based quote form gets the exact glass, sensors and all, before you ever pick up.",
+      "hook": "Check the listing and social pages for a quote form. If there's none, the angle holds.",
+      "linkLine": "A VIN-based auto glass quote form: {demo-link}"
+    },
+    {
+      "angle": "Install work with no showcase",
+      "line": "Your posts of a cut-out on a big pickup and a sunroof panel replacement show real glass skill. Nobody comparing windshield shops will scroll far enough to find them.",
+      "hook": "Find two install posts you can name by vehicle and glass type. Mention one if they reply.",
+      "linkLine": "Your glass installs on one page: {demo-link}"
+    },
+    {
+      "angle": "Reviews about the claim",
+      "line": "Your reviews say you handled the insurance call, came to the office and left no leaks. That's what a driver weighing an independent glass shop against the big call center needs to read.",
+      "hook": "Read their reviews and copy one line about the claim, mobile service or leaks. Quote it back if they reply.",
+      "linkLine": "Those reviews next to your windshield services: {demo-link}"
+    },
+    {
+      "angle": "Cold-snap crack season",
+      "line": "The first freezing nights in {City} turn small chips into long cracks overnight. Drivers who search for chip repair that week book whoever answers online.",
+      "hook": "Use in late fall or after a gravel-heavy road season. Name the cold snap in the reply.",
+      "linkLine": "A chip-repair page ready for the first freeze: {demo-link}"
+    },
+    {
+      "angle": "Requests after business hours",
+      "line": "People notice the crack on the drive home and look up glass shops that evening. If the only option is a voicemail, they book the national chain's online form instead.",
+      "hook": "Call after hours. If it hits a full or generic voicemail, the angle holds.",
+      "linkLine": "An evening windshield booking that beats the chains: {demo-link}"
+    },
+    {
+      "angle": "Hiring a glass tech",
+      "line": "Saw you're hiring a glass installer. Good techs look at a shop's vans, work and calibration setup online before they apply, the same way a careful driver does.",
+      "hook": "Only if they posted a hiring note. Note the date and role.",
+      "linkLine": "A glass shop page with a careers section: {demo-link}"
+    },
+    {
+      "angle": "Mobile coverage area",
+      "line": "Your van covers {City} and beyond, but nothing tells someone in {Neighborhood} you'll replace their windshield in the driveway. That town name plus 'mobile windshield' is what they type.",
+      "hook": "Find the towns in their reviews or posts. Use the furthest one.",
+      "linkLine": "A mobile glass page for each town you cover: {demo-link}"
+    },
+    {
+      "angle": "Paying out of pocket",
+      "line": "Plenty of drivers pay for glass themselves because the deductible is close to the price. If you post cash prices or payments, that page answers their first question.",
+      "hook": "Only if they mention cash pricing or payments somewhere. If not, skip this angle.",
+      "linkLine": "Out-of-pocket windshield pricing, explained: {demo-link}"
+    },
+    {
+      "angle": "Calibration and adhesive trust",
+      "line": "Your posts mention calibrating the camera after each windshield. A page that shows that step and the adhesive cure time is what makes a driver trust a smaller glass shop with a newer car.",
+      "hook": "Find posts about calibration or safety procedures. Note only what they publish; never add a certification.",
+      "linkLine": "Calibration and safe drive-away time on one glass page: {demo-link}"
+    },
+    {
+      "angle": "Network work only",
+      "line": "Sounds like a lot of your glass work comes routed through insurer networks at their rates. Drivers who pick their own shop search directly, and right now they find the chains first.",
+      "hook": "Look for review mentions of claims or 'insurance sent me'. Never name the insurer or network back to them.",
+      "linkLine": "Where drivers choosing their own glass shop would land: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "That {specific recent job} you posted is careful glass work. A replacement like that should be the first thing someone sees when they're picking a windshield shop.",
+      "hook": "Pick the newest install post and name it exactly: vehicle, glass and anything special like calibration.",
+      "linkLine": "That glass job, front and centre: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hey {Owner} — that {specific recent job} you posted is careful glass work.\n\nI searched for windshield replacement in {City} and the national chains came up first, while {Business Name} has better reviews but no site where someone can get a quote or book the van. I put together a sample auto glass page, with marked placeholders where your photos would go.\n\nWant me to send it over?",
+    "dm2": "{Owner} — following up in case my last message got buried. Here's the sample glass site for {Business Name}: {demo-link}\n\nIt has a VIN-based windshield quote, a chip-or-crack guide, a page explaining glass claims and choosing your own shop, and a calibration page. If it's not for you, say so and I'll leave you be.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for auto glass shops here in {City}. If you're mid-install I'll call back. I sent you a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"Short version: when I search windshield replacement in your area, the chains show up first. I built a sample site for {Business Name} with a VIN quote form, a claim explainer and mobile booking, with marked placeholders where your photos would go. Can I text you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range} depending on how many town and service pages you want, then {Care Range} a month for hosting and changes. For a shop your size I'd quote about {Build Price}, roughly a handful of windshields.\"\n\"Can I walk you through it for ten minutes this week?\"\n\nCLOSE:\n\"I'll send a one-page scope and an invoice for the deposit. We start the day it clears.\"",
+    "objections": [
+      {
+        "objection": "Insurance networks send me most of my glass work.",
+        "handler": "\"Keep it. The site is for drivers who pay cash or choose their own shop, and for fleets. Those are jobs at your price, not the network's.\""
+      },
+      {
+        "objection": "I can't quote without knowing the exact glass.",
+        "handler": "\"That's why the form asks for the VIN and whether there's a camera or rain sensor. You quote the right windshield the first time.\""
+      },
+      {
+        "objection": "The chains outspend everyone online.",
+        "handler": "\"They do, nationally. In {City}, a local glass shop with real reviews, a real address and a mobile van page is what a driver trusts when they compare.\""
+      },
+      {
+        "objection": "I'm a one-van operation.",
+        "handler": "\"Then booking while you're installing matters more. The page collects the VIN, the damage and the address so you call back ready to quote.\""
+      },
+      {
+        "objection": "Winter's slow for mobile work.",
+        "handler": "\"Winter is crack season. A chip-repair page and an indoor-bay option catch the cold-snap calls the chains can't schedule fast.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}: VIN quote, chip guide, claim page and mobile booking. A few windshields covers it.\""
+      }
+    ],
+    "email": {
+      "subject": "Auto glass site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for auto glass shops around {City}. When I searched windshield replacement in your area, the national chains came up first, while {Business Name} has stronger reviews but no site of its own.\n\nRather than ask for your time, I built a sample first: a VIN-based windshield quote form, a chip-or-crack guide, a page explaining glass claims and choosing your own shop, and a camera calibration page, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and changes. If not, no problem, it comes down at the end of the month.\n\nWorth ten minutes on the phone this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"{Owner}, it's {Your Name}. I build websites for auto glass shops in {City}, and made a sample for {Business Name} with a VIN windshield quote and mobile booking. I'll text you the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner} — I'm taking the {Business Name} auto glass demo down on Friday to free up the space.\n\nWant me to leave it up? One word is fine either way.",
+    "nurture": "Hey {Owner} — the first freezing nights are close, and that's when chips turn into cracks across {City}. Thought of you.\n\nThe site is still here whenever you want it, and nothing's changed on price. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to a handful of windshield replacements, never to an hourly rate.",
+      "The VIN-based quote form is the product. It's what lets a small shop quote like a chain; price it as its own line.",
+      "Price the claim explainer separately and keep it to process. No insurer names, no coverage promises.",
+      "Only quote calibration pages for shops that calibrate in-house or have a named sublet partner.",
+      "Fleet and equipment glass pages pay off for shops near contractors and farms; skip them in dense cities.",
+      "Keep monthly add-ons modest. Glass tickets are mid-sized and network rates squeeze margins."
+    ],
+    "lineItems": [
+      {
+        "item": "VIN-based windshield quote form",
+        "min": 400,
+        "max": 900,
+        "unit": "one-time",
+        "description": "Max with sensor and camera checkboxes, damage photo upload, claim-or-cash choice and mobile address field.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Glass claim explainer page",
+        "min": 250,
+        "max": 600,
+        "unit": "per-page",
+        "description": "Max with a step-by-step claim flow, an FAQ and a 'what we handle on the call' section.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Camera calibration page",
+        "min": 250,
+        "max": 600,
+        "unit": "per-page",
+        "description": "Max with static versus dynamic explanations, a vehicle lookup request and a sample calibration report.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Chip-or-crack decision guide",
+        "min": 200,
+        "max": 450,
+        "unit": "one-time",
+        "description": "Max with a damage comparison chart, a photo upload and a same-day chip booking button.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Mobile service town page (each)",
+        "min": 150,
+        "max": 350,
+        "unit": "per-page",
+        "description": "Max with town-specific reviews, travel notes and weather rules for mobile installs.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Fleet and equipment glass page",
+        "min": 250,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max with a unit-list upload, yard scheduling and a flat-glass request form for equipment.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Windshield install video day",
+      "min": 300,
+      "max": 800,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"One day filming a cut-out, the urethane bead, the glass set and a calibration gives you clips that show why a careful windshield install matters.\"",
+      "when": "Month 2, on a day with a newer car booked."
+    },
+    {
+      "name": "Google profile management for glass jobs",
+      "min": 150,
+      "max": 350,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Weekly windshield and chip-repair posts with the town and vehicle keep the glass shop's profile fresh next to the chains.\"",
+      "when": "Day 30, once the site is live."
+    },
+    {
+      "name": "Review requests after each windshield",
+      "min": 79,
+      "max": 199,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"After the safe drive-away time, the driver gets a text asking how the new windshield looks, with a review link.\"",
+      "when": "Day 30. The easiest second sale."
+    },
+    {
+      "name": "Cold-snap chip repair push",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Before the first freeze, a 'fix the chip before it spreads' campaign to past customers and on the profile fills the chip-repair slots.\"",
+      "when": "Pitch in September, run October and November."
+    },
+    {
+      "name": "Chip-repair cards for parts counters and lots",
+      "min": 150,
+      "max": 400,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A small card on the parts store counter and the used-car lot desk: chipped windshield, scan to book a repair.\"",
+      "when": "Month 2."
+    },
+    {
+      "name": "Glass van lettering refresh",
+      "min": 200,
+      "max": 600,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"The van parks in driveways and office lots all day. Lettering that says mobile windshield replacement with the site does the advertising.\"",
+      "when": "Right after launch."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Body shops that sublet glass work",
+        "whoPays": "The body shop",
+        "min": 2000,
+        "max": 3500,
+        "unit": "one-time",
+        "pitchLine": "\"The body shop that sends you windshields after front-end hits needs a claim walkthrough site. Your glass work gets listed on it.\"",
+        "whyItWorks": "Collision shops sublet glass weekly. The glass client's intro is a warm door."
+      },
+      {
+        "route": "Used-car dealers needing glass before sale",
+        "whoPays": "The dealer",
+        "min": 1200,
+        "max": 3500,
+        "unit": "one-time",
+        "pitchLine": "\"The lot that calls you for cracked windshields on trade-ins needs an inventory site. Clean glass is a selling point on it.\"",
+        "whyItWorks": "Small lots buy sites and already trust the glass tech who preps their cars."
+      },
+      {
+        "route": "Window tint shops next to the glass work",
+        "whoPays": "The tint shop, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"After a new windshield or door glass, customers ask about the windshield strip and side tint. That tint shop needs a site as much as you did.\"",
+        "whyItWorks": "Glass and tint shops trade customers all the time."
+      },
+      {
+        "route": "Residential and storefront glass companies",
+        "whoPays": "The flat-glass company",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"When someone asks you about a broken storefront or shower door, who gets it? The flat-glass company needs a quote site.\"",
+        "whyItWorks": "Auto glass shops field flat-glass requests they pass on. The intro is natural."
+      },
+      {
+        "route": "Farm and equipment dealers",
+        "whoPays": "The equipment dealer",
+        "min": 2000,
+        "max": 5000,
+        "unit": "one-time",
+        "pitchLine": "\"The equipment dealer whose tractor cabs you reglaze needs a parts-and-service site. Your glass gets listed as their service partner.\"",
+        "whyItWorks": "Equipment dealers have budget and a rural customer list the glass shop already serves."
+      },
+      {
+        "route": "Independent insurance agents",
+        "whoPays": "The insurance agency",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"Local agents get asked who to use for a windshield claim. A claims-help page with a local glass shop on it is their own site's missing piece.\"",
+        "whyItWorks": "Agents want to look helpful and buy websites. The glass shop gets named on the page."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Sublet scheduling assistant for the body shop",
+        "whoPays": "The body shop, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"When a collision repair needs glass and calibration, the body shop's assistant books your glass van and tells the estimator the date.\"",
+        "whyItWorks": "Sublet scheduling eats body shop time. The glass client gets every routed job."
+      },
+      {
+        "route": "Trade-in reconditioning list for the dealer",
+        "whoPays": "The dealer, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"Each trade-in's appraisal notes become a reconditioning list, and cracked windshields go straight to the glass shop's queue.\"",
+        "whyItWorks": "Dealers lose days on reconditioning. The glass shop sees steadier lot work."
+      },
+      {
+        "route": "Flat-glass quote assistant",
+        "whoPays": "The flat-glass company",
+        "min": 1000,
+        "max": 2500,
+        "unit": "one-time",
+        "pitchLine": "\"Homeowners describe the broken window or shower door, and the assistant collects measurements and pictures for a flat-glass quote.\"",
+        "whyItWorks": "Flat-glass quoting is measurement-heavy. The auto glass client's intro opens the door."
+      },
+      {
+        "route": "Tint shop's legal-shade answer helper",
+        "whoPays": "The tint shop",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"Drivers with new glass ask how dark the windshield strip can be. A helper answers from the tint shop's approved state rules and books the install.\"",
+        "whyItWorks": "Tint shops get the same law question daily. The glass shop sends them customers."
+      },
+      {
+        "route": "Cab glass part finder for the equipment dealer",
+        "whoPays": "The equipment dealer",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"Farmers type the machine model and which cab panel broke, and the assistant finds the dealer's part number and books glass service.\"",
+        "whyItWorks": "Cab glass is hard to identify. The glass client knows exactly what customers ask."
+      },
+      {
+        "route": "Claim question helper for insurance agents",
+        "whoPays": "The insurance agency, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Clients ask the agency about windshield claims at night. A helper answers from the agency's own guidance and lists local glass shops.\"",
+        "whyItWorks": "Agents field the same glass questions. The glass client is on the answer list."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Missed-call text-back that asks for the VIN",
+      "kind": "automation",
+      "oneTimeMin": 0,
+      "oneTimeMax": 250,
+      "monthlyMin": 79,
+      "monthlyMax": 179,
+      "pitchLine": "\"A missed call gets a text asking for the VIN and a picture of the windshield damage. You call back with the right glass already looked up.\"",
+      "whenAndWhatItTakes": "Day 30. Needs the shop number forwarded and the wording they approve."
+    },
+    {
+      "name": "Drive-away time and aftercare texts",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 500,
+      "monthlyMin": 30,
+      "monthlyMax": 80,
+      "pitchLine": "\"After the install, the driver gets the safe drive-away time, a reminder to leave the tape on and no car wash for a few days.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their adhesive cure rules and aftercare list."
+    },
+    {
+      "name": "Windshield price lookup by vehicle",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 40,
+      "monthlyMax": 120,
+      "pitchLine": "\"Drivers pick year, make and model and see a starting cash price for the windshield, with or without camera calibration.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their cash prices for common vehicles and calibration add-on prices."
+    },
+    {
+      "name": "Mobile glass route and weather planner",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 40,
+      "monthlyMax": 100,
+      "pitchLine": "\"Tomorrow's windshield installs ordered by drive time, with rain and cold flags that suggest moving a job to the bay.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their booking data and weather rules for mobile installs."
+    },
+    {
+      "name": "Damage check from a driver's picture",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"The driver uploads the chip or crack and the tool suggests repair or replacement for a tech to confirm, then books the right glass slot.\"",
+      "whenAndWhatItTakes": "Month 3. Needs past damage pictures labelled repair or replace. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Glass part match from VIN",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Enter the VIN and the tool lists the glass options with sensor brackets, heated wiper areas and camera mounts, so the wrong windshield never gets ordered.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their parts catalog access and ordering habits."
+    },
+    {
+      "name": "Glass claims chatbot for drivers",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"It answers 'can I choose my own glass shop' and 'what's my deductible for a windshield' with the shop's own plain answers and a nudge to check the policy.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the owner-approved claim explainer. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Windshield review reply drafts",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 79,
+      "monthlyMax": 179,
+      "pitchLine": "\"A driver mentions the glass tech who came to their office in the rain; a short reply thanking them for that exact windshield visit is ready to post.\"",
+      "whenAndWhatItTakes": "Month 2. Needs ten past replies. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Calibration record and printout",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 40,
+      "monthlyMax": 100,
+      "pitchLine": "\"Each calibration is logged with the vehicle and result, and the driver gets a clean printout for their records and the insurer.\"",
+      "whenAndWhatItTakes": "Month 4, for shops that calibrate. Needs their calibration steps and report fields."
+    },
+    {
+      "name": "Fleet glass portal by unit",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Fleet managers report a cracked windshield by unit, approve the price and see the install date without calling the glass shop.\"",
+      "whenAndWhatItTakes": "Month 5, once a fleet account signs. Needs their unit list and approval rules."
+    },
+    {
+      "name": "Chip-to-crack follow-up texts",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 700,
+      "monthlyMin": 30,
+      "monthlyMax": 80,
+      "pitchLine": "\"Drivers who got a quote for a chip but didn't book get a reminder when a cold snap is forecast. Chips spread in the cold.\"",
+      "whenAndWhatItTakes": "Month 4. Needs quote records and a weather trigger rule."
+    },
+    {
+      "name": "Glass order and arrival tracker",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 30,
+      "monthlyMax": 80,
+      "pitchLine": "\"Every ordered windshield shows its expected arrival, and the customer is auto-booked once it lands at the shop.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their ordering log and supplier delivery days."
+    },
+    {
+      "name": "Calibration requirement answer tool",
+      "kind": "ai",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"A driver enters the vehicle and learns whether the windshield camera likely needs calibration, from the glass shop's references, flagged for a tech to confirm.\"",
+      "whenAndWhatItTakes": "Month 5. Needs the shop's calibration references. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Break-in side glass rush booking",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 700,
+      "monthlyMin": 30,
+      "monthlyMax": 80,
+      "pitchLine": "\"Someone with a smashed door glass picks the first slot, gets cover-up tips and a text when the van is coming.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their side-glass stock policy and same-day slots."
+    },
+    {
+      "name": "Job voice notes for glass techs",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 80,
+      "monthlyMax": 200,
+      "pitchLine": "\"The glass tech talks through the install: rust at the pinch weld, moldings replaced, calibration done. It drafts the job record and invoice.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their invoice template. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Content writer for vehicle glass pages",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Popular trucks and SUVs get their own windshield page, drafted from installs the glass shop has done and checked by the owner.\"",
+      "whenAndWhatItTakes": "Month 4. Needs monthly install notes and owner approval. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Margin report by glass and claim type",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 50,
+      "monthlyMax": 120,
+      "pitchLine": "\"See which windshield jobs pay once network rates, glass cost and calibration time are counted, cash versus claim.\"",
+      "whenAndWhatItTakes": "Month 6. Needs invoice and glass cost data for a few months."
+    },
+    {
+      "name": "Leak and wind-noise comeback tracker",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 30,
+      "monthlyMax": 80,
+      "pitchLine": "\"Log every windshield comeback by tech and vehicle, so a leak pattern gets fixed in training, not by more callbacks.\"",
+      "whenAndWhatItTakes": "Month 6. Needs their comeback records."
+    },
+    {
+      "name": "Fleet renewal reminder automation",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 700,
+      "monthlyMin": 30,
+      "monthlyMax": 80,
+      "pitchLine": "\"Fleet managers get a quarterly glass check offer for their units, so chips on work trucks are fixed before inspections.\"",
+      "whenAndWhatItTakes": "Month 6, after the fleet portal. Needs fleet contacts and unit counts."
+    },
+    {
+      "name": "Glass installer applicant screener",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 60,
+      "monthlyMax": 150,
+      "pitchLine": "\"Applicants answer questions on urethane experience, calibration and mobile work before the owner spends time on interviews.\"",
+      "whenAndWhatItTakes": "Any time they post a hiring note. Needs their must-haves. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the VIN windshield quote for independents",
+      "whoPays": "Independent glass shops, monthly",
+      "min": 39,
+      "max": 129,
+      "unit": "monthly",
+      "pitchLine": "\"Independent glass shops lose quotes to the chains' online forms. A VIN windshield quote they can drop on their own site levels that.\"",
+      "whyItWorks": "Narrow opening, shared enemy. The first shop taught you the sensor questions."
+    },
+    {
+      "route": "Shop locator for a regional glass distributor",
+      "whoPays": "The glass distributor, annually",
+      "min": 4000,
+      "max": 15000,
+      "unit": "per-year",
+      "pitchLine": "\"A find-an-installer map for every independent shop that buys your windshields. Shops stay with the distributor that sends them drivers.\"",
+      "whyItWorks": "Distributors compete with chains for independents' loyalty."
+    },
+    {
+      "route": "Independent glass association member kit",
+      "whoPays": "The association, per bundle",
+      "min": 1500,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Member glass shops get a site template, a VIN quote and a choose-your-shop claim page as a membership benefit.\"",
+      "whyItWorks": "Independent associations exist to compete with networks. A tangible tool sells renewals."
+    },
+    {
+      "route": "Calibration equipment vendor training site",
+      "whoPays": "The calibration equipment vendor",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Shops buying calibration rigs need training dates, a support library and an installer locator. I've built the shop side already.\"",
+      "whyItWorks": "Equipment vendors sell to the same shops and need a channel site."
+    },
+    {
+      "route": "White-label auto glass template for agencies",
+      "whoPays": "The agency, per site",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "pitchLine": "\"Agencies with glass clients rebuild the same quote page each time. License the windshield template with VIN quoting built in.\"",
+      "whyItWorks": "Agencies sell the client; you supply the specialised part."
+    },
+    {
+      "route": "Fleet glass program for regional fleets",
+      "whoPays": "The fleet operator, annually",
+      "min": 3000,
+      "max": 10000,
+      "unit": "per-year",
+      "pitchLine": "\"Regional fleets report cracked glass by unit and approved independent shops in each town do the work, tracked in one portal.\"",
+      "whyItWorks": "Fleets want speed and one invoice format. The first glass client anchors it."
+    },
+    {
+      "route": "Multi-location glass group rollout",
+      "whoPays": "The glass group, per location",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "pitchLine": "\"A group buying independent glass shops needs one brand, town pages per location and quotes routed to the closest van.\"",
+      "whyItWorks": "Consolidation is common; one contract, many sites."
+    },
+    {
+      "route": "Rental car and car-share damage program",
+      "whoPays": "The rental operator, annually",
+      "min": 2000,
+      "max": 8000,
+      "unit": "per-year",
+      "pitchLine": "\"Rental lots chip windshields constantly. A portal routes each one to a mobile glass shop that fixes it on the lot.\"",
+      "whyItWorks": "Rental operators lose rental days to glass. Steady volume for the glass network."
+    },
+    {
+      "route": "Ag and heavy equipment glass network",
+      "whoPays": "Equipment dealers, per dealer",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "pitchLine": "\"Equipment dealers across the region route cab glass jobs to approved shops through one request form.\"",
+      "whyItWorks": "Cab glass is awkward and dealers want one answer. The first glass client proves the model."
+    },
+    {
+      "route": "Monthly cash windshield price sheet",
+      "whoPays": "Glass shops, monthly",
+      "min": 15,
+      "max": 49,
+      "unit": "monthly",
+      "pitchLine": "\"A short monthly sheet on cash windshield prices for common vehicles, built only from prices independent shops share with you.\"",
+      "whyItWorks": "Independents price against chains blind. Contributed data keeps it honest."
+    },
+    {
+      "route": "Glass shop setup for a fresh metro",
+      "whoPays": "An independent glass shop elsewhere",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"Only one independent windshield shop per area gets this build. {City} is yours; the glass vans across the state line are still behind the chains.\"",
+      "whyItWorks": "Non-competing geography reuses the template and the chain contrast."
+    },
+    {
+      "route": "Rescue glass shops off rented directory pages",
+      "whoPays": "The glass shop leaving a directory plan",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "pitchLine": "\"If your only web page is a paid directory listing, it disappears with the plan. Build a windshield site the shop owns.\"",
+      "whyItWorks": "Owners who already pay for a listing have the budget and the frustration."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Auto glass site build plus care plan, one contract",
+      "min": 1200,
+      "max": 2000,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The glass site and the care plan go on one contract, so a new windshield price or town is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Review requests after each windshield",
+      "min": 79,
+      "max": 199,
+      "unit": "monthly",
+      "trigger": "The first windshields booked through the site are installed.",
+      "line": "\"Your first site windshields are in. Every install should end with a review request to catch up with the chains.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "Drive-away time and aftercare texts",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "trigger": "A comeback or call about tape, car washes or a leak after install.",
+      "line": "\"That aftercare call is the last one. Every driver gets the drive-away time and glass care rules by text.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Windshield price lookup by vehicle",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "trigger": "Sixty days of quote requests show the same handful of vehicles.",
+      "line": "\"Most windshield quotes are the same few trucks and SUVs. A price lookup answers them before the call.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Damage check from a driver's picture",
+      "min": 1000,
+      "max": 2500,
+      "unit": "one-time",
+      "trigger": "Cold weather arrives and chip-versus-crack questions pile up.",
+      "line": "\"Freeze season means 'can this chip be fixed' all day. The picture check sorts them and books the glass slot.\""
+    },
+    {
+      "rung": 6,
+      "day": 150,
+      "offer": "Calibration record and printout",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "trigger": "They buy calibration equipment or start a calibration sublet.",
+      "line": "\"Now that the shop calibrates, give every windshield driver a printout. It's proof the chains don't hand over.\""
+    },
+    {
+      "rung": 7,
+      "day": 240,
+      "offer": "Fleet glass portal by unit",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "trigger": "A fleet sends a third cracked windshield in a month.",
+      "line": "\"That fleet keeps cracking glass. A portal by unit keeps the work with your shop.\""
+    }
+  ]
+}

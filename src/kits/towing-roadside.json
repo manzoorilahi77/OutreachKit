@@ -1,0 +1,833 @@
+{
+  "schemaVersion": 1,
+  "category": "Towing & roadside",
+  "slug": "towing-roadside",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Auto family batch, emergency archetype, licensed trade. Copy contrasts real local operators with call-center lead sites without naming any. Tow permits and fees are bracketed placeholders; no response-time promises. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Find a towed car and impound release",
+      "contains": "How to check whether your car was towed from a lot, the impound yard address and release hours, what ID and paperwork to bring, and where the posted [state-regulated fees] are listed",
+      "why": "The second-biggest towing search is 'where is my car'. A clear release page cuts angry calls and shows the operator plays by the rules."
+    },
+    {
+      "section": "Flatbed, wheel-lift and heavy-duty fleet",
+      "contains": "Which tow truck handles what: flatbeds for AWD and low cars, wheel-lifts for tight lots, motorcycles, box trucks and heavy-duty wreckers, with the operator's real equipment",
+      "why": "Owners of lowered, electric or all-wheel-drive cars worry about damage. Naming the right truck for their car is why they call this towing company."
+    },
+    {
+      "section": "Scheduled and long-distance towing",
+      "contains": "Non-emergency tows booked ahead, moving a car to another city, auction and dealer pickups, project cars that don't run, and how pricing differs from an emergency call",
+      "why": "Scheduled transport is calmer, higher-ticket work. Buyers compare operators on a quote form, not a panicked phone call."
+    },
+    {
+      "section": "After an accident, while the tow truck comes",
+      "contains": "Hazard lights, getting away from traffic, calling police where required, taking pictures of the scene, and choosing which body shop the tow truck takes the car to",
+      "why": "A driver after a crash is scared and searching on the shoulder. Calm steps on the page make this the roadside company they trust with the car."
+    },
+    {
+      "section": "Private property towing for managers",
+      "contains": "Signage requirements as set by [state or city rule], patrol and on-call tows for apartment and retail lots, tow authorisation forms, and the account setup for property managers",
+      "why": "Property managers choose a towing partner on process and paperwork. A dedicated page wins the accounts that keep trucks busy every night."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C50",
+      "siteType": "local-conversion",
+      "name": "Hook and Go",
+      "heroLayout": "type-led",
+      "mood": [
+        "urgent",
+        "plain",
+        "local"
+      ],
+      "bestFor": "One- and two-truck operators who need a stranded driver to call within seconds of landing",
+      "pairsWithTier": "starter",
+      "headlineSample": "Local towing in {City}, call a real driver",
+      "whyItFits": "White ground, black type and one red signal: nothing between a stranded driver and the call button. Mono numerals make the phone number the loudest thing on the page."
+    },
+    {
+      "id": "b",
+      "themeId": "C13",
+      "siteType": "emergency-response",
+      "name": "Amber Beacon",
+      "heroLayout": "split-photo",
+      "mood": [
+        "alert",
+        "steady",
+        "nighttime"
+      ],
+      "bestFor": "Towing companies running several trucks day and night with roadside, accident and lockout calls",
+      "pairsWithTier": "standard",
+      "headlineSample": "Towing and roadside help in {City}, day and night",
+      "whyItFits": "Not the family combo: a stranded driver needs a beacon, not an editorial gallery. Amber on near-black reads like a light bar at night and stays legible on a dimmed phone."
+    },
+    {
+      "id": "c",
+      "themeId": "C19",
+      "siteType": "b2b-capability",
+      "name": "Accounts Desk",
+      "heroLayout": "card-stack",
+      "mood": [
+        "dependable",
+        "organised",
+        "capable"
+      ],
+      "bestFor": "Operators selling private property, fleet, dealer and body-shop accounts alongside emergency calls",
+      "pairsWithTier": "premium",
+      "headlineSample": "Fleet and property towing accounts across {City}",
+      "whyItFits": "Gunmetal and signal orange read like fleet operations, and mono labels suit truck lists, coverage zones and account terms that managers compare."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Searched towing in {City} and the top results were call centers with no address. Your listing has real trucks and real reviews but no website to prove you're the local tow company.",
+      "hook": "Search 'towing near me' in their town and note the out-of-area lead sites. Confirm their listing has no Website button. Screenshot it for when they reply.",
+      "linkLine": "A local towing page that beats the call centers: {demo-link}"
+    },
+    {
+      "angle": "Facebook page as the tow site",
+      "line": "Your listing's website is a Facebook page. A stranded driver on the shoulder wants one big call button and the towns you cover, not a feed of truck pictures from last month.",
+      "hook": "Tap their Website link and confirm it opens Facebook. Note whether the phone number is visible without scrolling.",
+      "linkLine": "One big call button for your tow trucks: {demo-link}"
+    },
+    {
+      "angle": "Dead tow company site",
+      "line": "The towing site on your listing loads slowly and lists services you probably don't run anymore. When someone's broken down at night, a slow page sends them back to the next result.",
+      "hook": "Open the site on a phone and time the load. Note dead links, old copyright or an old phone number.",
+      "linkLine": "Your towing site, loading in a blink: {demo-link}"
+    },
+    {
+      "angle": "Number not tappable on a phone",
+      "line": "On my phone your tow company's number shows as text I can't tap. A driver on the shoulder with hazard lights on won't retype a phone number.",
+      "hook": "Only if they have a site. Try tapping the number on a phone. Screenshot it for when they reply.",
+      "linkLine": "A tap-to-call towing page: {demo-link}"
+    },
+    {
+      "angle": "No way to drop a pin",
+      "line": "When a driver calls your dispatcher, the first two minutes are 'where are you exactly'. A roadside request that shares the location pin and the vehicle saves your dispatch that conversation.",
+      "hook": "Check the listing and site for any request form with location. If there's none, the angle holds.",
+      "linkLine": "A roadside request that sends the location pin: {demo-link}"
+    },
+    {
+      "angle": "Trucks worth showing",
+      "line": "Your posts of the flatbed loading a lowered car and the heavy wrecker on the highway recovery are proof you're a real towing outfit. They vanish down the feed in days.",
+      "hook": "Find two posts of tow or recovery work you can name by truck and job. Mention one if they reply.",
+      "linkLine": "Your tow trucks and recoveries on one page: {demo-link}"
+    },
+    {
+      "angle": "Reviews about showing up",
+      "line": "Your reviews say the tow truck showed up when promised, the driver was kind at an accident and the price matched the phone quote. Those are the three things drivers fear about towing.",
+      "hook": "Read their reviews and copy one line about arrival, price or kindness. Quote it back if they reply.",
+      "linkLine": "Those reviews next to your towing services: {demo-link}"
+    },
+    {
+      "angle": "Winter roadside season",
+      "line": "The first snow in {City} means slide-offs, dead batteries and lockouts all at once. Drivers search for roadside help and land on whoever looks local and open.",
+      "hook": "Use before the first snow or a big storm. Name the storm or month in the reply.",
+      "linkLine": "A winter roadside page ready before the first snow: {demo-link}"
+    },
+    {
+      "angle": "Night calls",
+      "line": "Most of your tow calls probably come after dark. A page that says you run trucks at night, with a real local number, is what a stranded driver needs to see at 2am.",
+      "hook": "Call their number after hours. Note whether a driver answers, it forwards or it hits voicemail.",
+      "linkLine": "A night towing page with your real number: {demo-link}"
+    },
+    {
+      "angle": "Hiring drivers",
+      "line": "Saw you're hiring tow operators. Good drivers check whether a towing company has decent trucks and steady work before they apply, and the website is where they look.",
+      "hook": "Only if they posted a hiring note or truck-door sign. Note the date.",
+      "linkLine": "A towing company page with a driver careers section: {demo-link}"
+    },
+    {
+      "angle": "Highway and town coverage",
+      "line": "You tow across {City} and the highways around it, but nothing tells someone broken down near {Neighborhood} that your truck is close. That's the search they type on the shoulder.",
+      "hook": "Find highways and towns mentioned in their posts or reviews. Use the one furthest from their yard.",
+      "linkLine": "A towing page for every town and highway you cover: {demo-link}"
+    },
+    {
+      "angle": "Card payments at the hook",
+      "line": "If your drivers take cards and tap-to-pay at the truck, say so on the page. A stranded driver with no cash wonders about that before they call a tow.",
+      "hook": "Only if they mention card or mobile payment in posts or reviews. If not, skip this angle.",
+      "linkLine": "Towing payment options, stated plainly: {demo-link}"
+    },
+    {
+      "angle": "Licensed and insured tow operator",
+      "line": "Your truck doors show a state tow permit and insured lettering. A page that shows the same thing separates you from the unlicensed operators every driver has heard about.",
+      "hook": "Look at truck door lettering in their posts and check the state registry. Note that a record exists; never quote a number you didn't see.",
+      "linkLine": "Your tow permit and insurance on one page: {demo-link}"
+    },
+    {
+      "angle": "Dispatch-club work only",
+      "line": "Sounds like a lot of your tows come through motor club dispatch at their rates. Drivers who search directly for a towing company pay your own rate, and right now they find call centers.",
+      "hook": "Look for review mentions of motor club or insurer dispatch. Never name the club back to them.",
+      "linkLine": "Where direct towing customers would land: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "That {specific recent job} you posted is a tough tow to pull off. A recovery like that should be the first thing someone sees when deciding which truck to call.",
+      "hook": "Pick the newest recovery or tow post and name it exactly: vehicle, location type and the truck used.",
+      "linkLine": "That recovery, front and centre: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hey {Owner} — that {specific recent job} you posted is a tough recovery.\n\nI searched for towing in {City} and the top results were call centers with no local address, while {Business Name} has real trucks and reviews but no site of its own. I put together a sample towing page with a big call button and your coverage area, with marked placeholders where your photos would go.\n\nWant me to send it over?",
+    "dm2": "{Owner} — following up in case my last message got buried. Here's the sample towing site for {Business Name}: {demo-link}\n\nIt has a tap-to-call bar, a roadside request that shares the driver's location, a page for finding a towed car, and a private property towing page for managers. If it's not for you, say so and I'll leave you be.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for towing companies here in {City}. If you're on a call I'll ring back. I sent you a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"Short version: when I search towing in your town, out-of-area call centers come up first. I built a sample site for {Business Name} that shows you're the local tow company, with a tap-to-call bar and a location-sharing request, and marked placeholders where your photos would go. Can I text you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range} depending on how many town and service pages you want, then {Care Range} a month for hosting and changes. For an operation your size I'd quote about {Build Price}.\"\n\"Can I walk you through it for ten minutes when you're between calls?\"\n\nCLOSE:\n\"I'll send a one-page scope and an invoice for the deposit. We start the day it clears.\"",
+    "objections": [
+      {
+        "objection": "All my calls come from motor clubs and police rotation.",
+        "handler": "\"Keep them. The site is for the direct calls at your own rate, and for the property managers and body shops who look you up before signing an account.\""
+      },
+      {
+        "objection": "People in a panic don't read websites.",
+        "handler": "\"Right, so the page is one big call button and the towns you cover. It's built for a driver on the shoulder who has ten seconds.\""
+      },
+      {
+        "objection": "The lead sites outrank everyone anyway.",
+        "handler": "\"They show up, then sell the call to whoever pays. A real local towing page with your yard address and real reviews is the thing they can't fake.\""
+      },
+      {
+        "objection": "I'm running trucks all day, I don't have time for this.",
+        "handler": "\"You don't need to. I build it from your listing and your posts, you check it from the cab, and the care plan covers changes by text.\""
+      },
+      {
+        "objection": "I don't want to post prices, every tow is different.",
+        "handler": "\"No problem. The page says how pricing works, hook-up plus mileage, and that the driver confirms before towing. Plain is what earns trust here.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}: call bar, location request, towed-car page and town pages. A few tows a month pays for it.\""
+      }
+    ],
+    "email": {
+      "subject": "Towing site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for towing companies around {City}. When I searched for towing in your area, out-of-area call centers came up first, while {Business Name} has real trucks and reviews but no site of its own.\n\nRather than ask for your time, I built a sample first: a tap-to-call bar, a roadside request that shares the driver's location, a 'find my towed car' page and a private property towing page for managers, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and changes. If not, no problem, it comes down at the end of the month.\n\nWorth ten minutes on the phone this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"{Owner}, it's {Your Name}. I build websites for towing companies in {City}, and put together a sample one for {Business Name} that beats the call centers on search. I'll text you the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner} — I'm taking the {Business Name} towing demo down on Friday to free up the space.\n\nWant me to leave it up? One word is fine either way.",
+    "nurture": "Hey {Owner} — the first snow and the slide-offs are close, and the call centers will be bidding on every tow in {City}. Thought of you.\n\nThe site is still here whenever you want it, and nothing's changed on price. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to a handful of tows a month, never to an hourly rate. Tow owners think in calls and truck hours.",
+      "The call bar and location request are the product. Price the location-sharing request as its own line.",
+      "Town and highway pages matter more here than in most trades; quote them per town the trucks actually cover.",
+      "Only quote private property and impound pages for operators who hold those accounts and permits.",
+      "Never publish a fee, permit number or arrival time the owner hasn't supplied; use bracketed placeholders.",
+      "Keep the build fast and small. This trade's ticket and attention span can't carry a long project."
+    ],
+    "lineItems": [
+      {
+        "item": "Roadside request with location sharing",
+        "min": 300,
+        "max": 700,
+        "unit": "one-time",
+        "description": "Max with vehicle type, drive-type and problem fields, a map pin and a text to dispatch.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Towed-car finder and release page",
+        "min": 250,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max with yard hours, a plate lookup request form and the release checklist in two languages.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Town or highway coverage page (each)",
+        "min": 150,
+        "max": 350,
+        "unit": "per-page",
+        "description": "Max when each page names exits and landmarks, the nearest truck base and reviews from that area.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Private property towing account page",
+        "min": 300,
+        "max": 700,
+        "unit": "one-time",
+        "description": "Max with a sign-order form, authorisation paperwork downloads and an account request form.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Scheduled transport quote form",
+        "min": 250,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max with pickup and drop-off addresses, running or not, vehicle type and a date picker.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Truck and equipment showcase",
+        "min": 200,
+        "max": 500,
+        "unit": "one-time",
+        "description": "Max with a card per truck type, what it can carry and recovery examples.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Truck and recovery photo day",
+      "min": 400,
+      "max": 1000,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A day photographing the tow trucks, the drivers and a staged recovery gives the site real faces and proves you're not a call center.\"",
+      "when": "Month 2, on a quiet weekday."
+    },
+    {
+      "name": "Google profile cleanup against fake towing listings",
+      "min": 200,
+      "max": 450,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"We keep your towing profile complete, post real truck jobs weekly and report the fake listings that copy your town name.\"",
+      "when": "Day 30, once the site is live."
+    },
+    {
+      "name": "Review requests after each tow",
+      "min": 79,
+      "max": 199,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"After the tow is dropped, the driver gets a text asking how the towing went. Reviews about kind, on-time drivers are what panicked people read.\"",
+      "when": "Day 30. The easiest second sale."
+    },
+    {
+      "name": "Winter readiness push",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Before the first snow, the roadside page, profile posts and a 'save our number' text go out, so drivers have your towing number in their phone.\"",
+      "when": "Pitch in October, run before the first forecast snow."
+    },
+    {
+      "name": "Truck door and wrap graphics coordination",
+      "min": 200,
+      "max": 600,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Every tow truck on the highway is a billboard. Door lettering with the site and a big number makes it work.\"",
+      "when": "Right after launch."
+    },
+    {
+      "name": "Property manager sales packet",
+      "min": 250,
+      "max": 600,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A short packet for apartment and retail managers: how your private property towing works, signage, and the account form.\"",
+      "when": "Month 3, after the property towing page is live."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Body shops the trucks deliver wrecks to",
+        "whoPays": "The body shop",
+        "min": 2000,
+        "max": 3500,
+        "unit": "one-time",
+        "pitchLine": "\"The body shop you drop accident cars at has an old site. I'll build them a claim page, and your tow trucks get listed as their recommended tow.\"",
+        "whyItWorks": "Tow-to-body-shop referrals go both ways. The towing client's intro is the warmest door in the trade."
+      },
+      {
+        "route": "Repair shops that receive breakdown tows",
+        "whoPays": "The repair shop, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The repair shops you tow broken cars to need a symptom page and booking. Their customers then ask for your tow truck by name.\"",
+        "whyItWorks": "Every tow ends at a shop. Each shop is a separate buyer you reach through the driver."
+      },
+      {
+        "route": "Apartment and HOA property managers",
+        "whoPays": "The property manager",
+        "min": 800,
+        "max": 2500,
+        "unit": "one-time",
+        "pitchLine": "\"The managers who use your private property towing need a resident parking-rules page. Your tow number is on it.\"",
+        "whyItWorks": "Managers pay for resident pages and want towing rules stated clearly."
+      },
+      {
+        "route": "Junk car buyers and salvage yards",
+        "whoPays": "The salvage yard",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The salvage yard you haul dead cars to needs a cash-for-cars quote site, and the pickups route to your trucks.\"",
+        "whyItWorks": "Salvage yards depend on tow operators and have budget for quote pages."
+      },
+      {
+        "route": "Locksmiths who handle the lockouts you pass on",
+        "whoPays": "The locksmith, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"When a roadside lockout needs a key cut, which locksmith gets it? They're fighting the same fake listings your towing company is.\"",
+        "whyItWorks": "Locksmiths share the call-center problem and the referral flow with towing."
+      },
+      {
+        "route": "Independent used-car dealers using transport",
+        "whoPays": "The dealer",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The lot you haul auction cars for needs an inventory site. Your scheduled transport becomes a delivery option on it.\"",
+        "whyItWorks": "Small dealers buy sites and the tow owner already moves their cars."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Claim intake assistant for the body shop",
+        "whoPays": "The body shop, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"When your tow truck drops a wreck, the body shop's assistant texts the owner for the claim number and pictures before anyone at the shop picks up a phone.\"",
+        "whyItWorks": "Body shops lose hours chasing claim details. The towing client is the handoff point."
+      },
+      {
+        "route": "Resident parking question bot for property managers",
+        "whoPays": "The property manager, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"Residents ask 'can I park a guest overnight' and 'where's my car'. A bot answers from the lot rules and points towed residents to your release page.\"",
+        "whyItWorks": "Managers hate tow complaints. Clear answers cut the angry calls for both of them."
+      },
+      {
+        "route": "Instant offer tool for the salvage yard",
+        "whoPays": "The salvage yard",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"Sellers describe the dead car and the yard gets a drafted offer range to confirm, with pickup routed to your tow trucks.\"",
+        "whyItWorks": "Speed wins salvage deals and every deal needs a tow."
+      },
+      {
+        "route": "Lockout triage for the locksmith",
+        "whoPays": "The locksmith",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"Drivers locked out describe the car and key type, and an assistant books the locksmith or hands the call to your roadside truck.\"",
+        "whyItWorks": "The same triage logic serves both trades; the second build is configuration."
+      },
+      {
+        "route": "Transport scheduling assistant for the dealer",
+        "whoPays": "The dealer, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"The lot's buyer types the auction cars won and an assistant books the tow pickups by location.\"",
+        "whyItWorks": "Dealers lose days waiting on transport. The tow client gets the routed jobs."
+      },
+      {
+        "route": "Repair shop's tow-in intake assistant",
+        "whoPays": "The repair shop",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"Cars towed in after hours arrive with the owner's description and contact already collected by an assistant, ready for the morning.\"",
+        "whyItWorks": "Night drop-offs are a mess for shops. The tow operator sees the problem every night."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Missed-call text-back that asks for the location",
+      "kind": "automation",
+      "oneTimeMin": 0,
+      "oneTimeMax": 250,
+      "monthlyMin": 79,
+      "monthlyMax": 179,
+      "pitchLine": "\"A missed towing call instantly gets a text with a location-share link and three questions: vehicle, problem, safe spot or not. Dispatch calls back already knowing where to send the truck.\"",
+      "whenAndWhatItTakes": "Day 30. Needs the dispatch number forwarded and the wording they approve."
+    },
+    {
+      "name": "Truck-on-the-way text with driver name",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 600,
+      "monthlyMin": 30,
+      "monthlyMax": 90,
+      "pitchLine": "\"Once a tow is dispatched, the stranded driver gets the truck type and the operator's first name, so they know the right wrecker pulled up.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their dispatch steps and driver list."
+    },
+    {
+      "name": "Hook-up and mileage quote calculator",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 30,
+      "monthlyMax": 90,
+      "pitchLine": "\"Scheduled tow customers enter pickup and drop-off and see the hook-up fee plus mileage before booking. No more quoting transport over the phone mid-recovery.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their hook-up fees by truck type and per-mile rates for non-emergency work."
+    },
+    {
+      "name": "Impound release checklist and lot lookup",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 30,
+      "monthlyMax": 90,
+      "pitchLine": "\"A towed driver enters a plate and gets the impound yard, release hours and paperwork list, instead of calling the tow yard angry.\"",
+      "whenAndWhatItTakes": "Month 3, for operators with an impound yard. Needs their release rules and daily tow log."
+    },
+    {
+      "name": "Roadside triage chat for stranded drivers",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"A driver types 'car died on the ramp' and the chat sorts jump start, tire change or tow, takes the pin and passes a clean ticket to dispatch.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their service list, coverage area and dispatch rules. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Dispatch board for trucks and calls",
+      "kind": "software",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"Every open towing call, every truck's status and every drop location on one screen, instead of a dispatcher's notepad and three phones.\"",
+      "whenAndWhatItTakes": "Month 4, when they run three or more trucks. Needs truck list, call types and current dispatch routine."
+    },
+    {
+      "name": "After-hours phone answering assistant",
+      "kind": "ai",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 200,
+      "monthlyMax": 500,
+      "pitchLine": "\"At 3am it answers the tow line, gets the location and the vehicle, and pages the on-call driver with everything written down.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the on-call schedule, coverage zones and the questions dispatch always asks. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Private property tow authorisation log",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 60,
+      "monthlyMax": 150,
+      "pitchLine": "\"Each property tow carries the manager's authorisation, pictures of the violation and the time, ready if a resident disputes it.\"",
+      "whenAndWhatItTakes": "Month 4, for operators with property accounts. Needs the authorisation form and state record-keeping rules they follow."
+    },
+    {
+      "name": "Driver-friendly review responses",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 79,
+      "monthlyMax": 179,
+      "pitchLine": "\"When a stranded driver writes that the tow operator stayed calm on a dark shoulder, a short thanks naming that roadside moment is drafted for the owner to post.\"",
+      "whenAndWhatItTakes": "Month 2. Needs ten past replies to learn the tone. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Tow ticket voice notes to invoice",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 80,
+      "monthlyMax": 200,
+      "pitchLine": "\"The tow driver talks through the job from the cab: pickup, drop, mileage, winch time. It drafts the ticket and the invoice before the next call.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their ticket template and rate sheet. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Motor club and account billing tracker",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"See which dispatch-club and fleet tows are billed, paid or disputed, so unpaid roadside calls stop slipping through.\"",
+      "whenAndWhatItTakes": "Month 5. Needs a few months of tow tickets and payment records."
+    },
+    {
+      "name": "Storm surge call routing",
+      "kind": "automation",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 40,
+      "monthlyMax": 100,
+      "pitchLine": "\"When snow or ice hits, the site switches to a storm banner, roadside requests queue by area and every driver gets an honest wait message.\"",
+      "whenAndWhatItTakes": "Before winter. Needs their storm procedures and coverage zones."
+    },
+    {
+      "name": "Truck maintenance and inspection log",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 40,
+      "monthlyMax": 120,
+      "pitchLine": "\"Every wrecker and flatbed gets a log for pre-trip checks, winch cable inspections and service dates, kept for the insurer and the state.\"",
+      "whenAndWhatItTakes": "Month 6. Needs their truck list and inspection checklist."
+    },
+    {
+      "name": "Scheduled transport booking assistant",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 80,
+      "monthlyMax": 200,
+      "pitchLine": "\"Someone moving a project car across the state chats through running condition, pickup and dates, and gets a drafted transport quote for the owner to send.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their transport rates and the trucks used for long hauls. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Coverage page writer for towns and highways",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Last month's tows near the river exit become next month's coverage page for that stretch of highway, written up for the owner to approve.\"",
+      "whenAndWhatItTakes": "Month 3. Needs monthly call notes and owner approval. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Storage fee clock and owner notices",
+      "kind": "automation",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 40,
+      "monthlyMax": 100,
+      "pitchLine": "\"Each car in the tow yard has its storage clock and the required owner notices sent on the dates the operator sets from state rules.\"",
+      "whenAndWhatItTakes": "Month 6, for operators with storage. Needs their notice schedule as they apply it."
+    },
+    {
+      "name": "Property account portal for managers",
+      "kind": "software",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"Property managers request a tow, see past tows with pictures and download authorisations without phoning the towing office.\"",
+      "whenAndWhatItTakes": "Month 7, once several property accounts are signed. Needs the account list and authorisation process."
+    },
+    {
+      "name": "Call log review for missed revenue",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"It reads a month of call notes and flags tows quoted but never dispatched, and the towns where callers hung up on hold.\"",
+      "whenAndWhatItTakes": "Month 6. Needs call logs and dispatch outcomes. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Job costing per truck and call type",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 60,
+      "monthlyMax": 150,
+      "pitchLine": "\"See which tow trucks and call types make money once fuel, driver time and deadhead miles are counted.\"",
+      "whenAndWhatItTakes": "Month 8. Needs fuel records, driver hours and ticket data."
+    },
+    {
+      "name": "Tow operator applicant screener",
+      "kind": "ai",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1200,
+      "monthlyMin": 80,
+      "monthlyMax": 200,
+      "pitchLine": "\"Applicants answer questions on licence class, night availability and flatbed experience before the owner calls anyone back.\"",
+      "whenAndWhatItTakes": "Any time they post a hiring note. Needs their must-haves. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the location-sharing roadside request",
+      "whoPays": "Towing companies, monthly per company",
+      "min": 39,
+      "max": 129,
+      "unit": "monthly",
+      "pitchLine": "\"A roadside request that sends the stranded driver's pin to dispatch is the one tool every small tow company lacks.\"",
+      "whyItWorks": "Operators share the same dispatch headache. The first client paid for the workflow."
+    },
+    {
+      "route": "State towing association member kit",
+      "whoPays": "The towing association, per bundle",
+      "min": 1500,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Member tow operators get a site template, a towed-car finder and a licensed-operator badge page as a benefit of joining.\"",
+      "whyItWorks": "Associations fight the unlicensed-operator image. A member kit helps them and reaches every operator."
+    },
+    {
+      "route": "Tow truck dealer and upfitter locator",
+      "whoPays": "The truck dealer or upfitter",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"The dealer who sells and upfits wreckers needs a site with inventory and an operator directory. Every customer of theirs is my prospect.\"",
+      "whyItWorks": "Equipment dealers have budget and a buyer list of towing companies."
+    },
+    {
+      "route": "Property management portfolio towing program",
+      "whoPays": "The management company, annually",
+      "min": 3000,
+      "max": 10000,
+      "unit": "per-year",
+      "pitchLine": "\"Every community in the portfolio gets parking rules, a tow request form and a towed-car finder, run by approved operators.\"",
+      "whyItWorks": "Portfolio managers buy once and roll out everywhere. Tow complaints are a constant cost."
+    },
+    {
+      "route": "City or county rotation list portal",
+      "whoPays": "The municipality or sheriff's office",
+      "min": 5000,
+      "max": 20000,
+      "unit": "one-time",
+      "pitchLine": "\"Rotation towing is managed by phone lists. A portal showing which licensed operator is up next, by zone, is a real public service.\"",
+      "whyItWorks": "Agencies buy tools that cut dispatch confusion; operators already know the pain."
+    },
+    {
+      "route": "White-label towing site template for agencies",
+      "whoPays": "The agency, per site",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "pitchLine": "\"Agencies running ads for tow companies need a fast page with a call bar and location request. License the towing template.\"",
+      "whyItWorks": "Agencies own the clients; you supply the page that converts."
+    },
+    {
+      "route": "Multi-yard towing group rollout",
+      "whoPays": "The towing group, per yard",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "pitchLine": "\"Towing groups buying local operators need one brand with a page per yard and requests routed to the closest truck base.\"",
+      "whyItWorks": "Roll-ups in towing are common. One contract, many yards."
+    },
+    {
+      "route": "Fleet roadside program for regional delivery companies",
+      "whoPays": "The fleet operator, annually",
+      "min": 3000,
+      "max": 10000,
+      "unit": "per-year",
+      "pitchLine": "\"Delivery fleets want one roadside number routed to vetted local tow operators in every town they cover.\"",
+      "whyItWorks": "Fleets pay to avoid call-center markups. Local operators become the network."
+    },
+    {
+      "route": "Auto auction transport marketplace",
+      "whoPays": "The regional auto auction",
+      "min": 5000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Buyers at the auction need cars moved. A transport page that routes jobs to local flatbed operators keeps the lot clear.\"",
+      "whyItWorks": "Auctions want cars gone fast; tow operators want scheduled work."
+    },
+    {
+      "route": "Monthly towing rate survey",
+      "whoPays": "Tow operators, monthly",
+      "min": 15,
+      "max": 49,
+      "unit": "monthly",
+      "pitchLine": "\"A short monthly sheet on hook-up and mileage rates in the region, built only from rates operators share with you.\"",
+      "whyItWorks": "Operators price by guesswork. Contributed data keeps it honest."
+    },
+    {
+      "route": "One towing outfit per metro, next metro",
+      "whoPays": "A tow operator in another metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I take one towing company per metro. Your trucks have {City}; the operators an hour up the interstate are still losing calls to lead sites.\"",
+      "whyItWorks": "Non-competing geography reuses the template and the call-center contrast."
+    },
+    {
+      "route": "Replace pay-per-call towing pages",
+      "whoPays": "The tow operator leaving a pay-per-call service",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "pitchLine": "\"If you pay per tow call from a page you don't own, the calls stop the day you stop paying. Build one your trucks keep.\"",
+      "whyItWorks": "Operators resent per-call fees. Ownership is the pitch."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Towing site build plus care plan, one contract",
+      "min": 1000,
+      "max": 1800,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The towing site and the care plan go on one contract, so a new truck or town is a text to me from the cab.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Review requests after each tow",
+      "min": 79,
+      "max": 199,
+      "unit": "monthly",
+      "trigger": "The first tows booked from the site are complete.",
+      "line": "\"Those first site tows went well. Ask every driver you tow for a review and the call centers fall behind.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "Missed-call text-back that asks for the location",
+      "min": 0,
+      "max": 250,
+      "unit": "one-time",
+      "trigger": "They mention calls missed during a recovery or overnight.",
+      "line": "\"Every missed tow call is a stranded driver calling the next number. The text-back holds them with a location pin.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Google profile cleanup against fake towing listings",
+      "min": 200,
+      "max": 450,
+      "unit": "monthly",
+      "trigger": "A fake or out-of-area towing listing shows up above them for their own town.",
+      "line": "\"That fake towing listing is using your town's name. Let's keep your profile stronger and report the copycats.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Storm surge call routing",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "trigger": "Winter is a month out, or the last storm swamped dispatch.",
+      "line": "\"The next ice storm will swamp the tow line. Storm routing gives every caller an honest wait and a place in line.\""
+    },
+    {
+      "rung": 6,
+      "day": 150,
+      "offer": "Private property tow authorisation log",
+      "min": 1200,
+      "max": 3000,
+      "unit": "one-time",
+      "trigger": "They sign a second private property account or face a disputed tow.",
+      "line": "\"That disputed property tow is why this exists. Every tow comes with authorisation and pictures attached.\""
+    },
+    {
+      "rung": 7,
+      "day": 240,
+      "offer": "Dispatch board for trucks and calls",
+      "min": 2000,
+      "max": 5000,
+      "unit": "one-time",
+      "trigger": "They add a third truck or a dedicated dispatcher.",
+      "line": "\"Three tow trucks and a dispatcher won't fit on a notepad. Put every call and truck on one board.\""
+    }
+  ]
+}

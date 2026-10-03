@@ -1,0 +1,865 @@
+{
+  "schemaVersion": 1,
+  "category": "Collision & body shop",
+  "slug": "collision-body-shop",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Auto family batch, quote archetype. Insurance-referral driven, so copy explains the claim process without giving legal or insurance advice and never names an insurer, estimating system or paint maker. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Insurance claim walkthrough",
+      "contains": "What happens after the accident: filing the claim, the adjuster's estimate, supplements when hidden damage turns up, the deductible, and questions to ask your insurer about choosing a collision shop",
+      "why": "Drivers after a wreck are confused and anxious, and most assume the insurer picks the shop. A calm walkthrough is what gets the car towed to this body shop."
+    },
+    {
+      "section": "Paintless dent repair and hail damage",
+      "contains": "When PDR works and when a panel needs filler and paint, door dings, crease dents, hail storms, and what a hail repair day looks like",
+      "why": "PDR and hail work are separate searches with their own urgency. After a storm, the body shop that explains PDR clearly gets the line of dented cars."
+    },
+    {
+      "section": "Paint matching and refinish",
+      "contains": "Reading the factory color code, blending into adjacent panels, tri-coat and pearl finishes, clear coat, and why a bumper can look different under a parking-lot light",
+      "why": "Owners worry the repaired panel won't match. Explaining color matching is how a collision shop shows craft beyond the insurer's estimate."
+    },
+    {
+      "section": "Frame, structure and sensor calibration",
+      "contains": "Frame measuring, structural pulls, pre- and post-repair scans, and recalibrating the cameras and radar behind a bumper or windshield after collision repair",
+      "why": "Modern cars hide sensors in the panels. Owners and adjusters trust a body shop that names the calibration step instead of skipping it."
+    },
+    {
+      "section": "Rental, towing and storage help",
+      "contains": "Getting the wrecked car moved from the tow yard, avoiding daily storage fees, rental car coordination, and how long a typical repair keeps the car in the shop",
+      "why": "The days after a collision are logistics. The body shop that handles the tow yard and the rental removes the reason to go elsewhere."
+    },
+    {
+      "section": "OEM, aftermarket and used parts",
+      "contains": "What each parts type means on the estimate, fit and finish differences, when the shop recommends factory parts, and how to ask about it",
+      "why": "Parts type is the one line on the estimate owners notice. A plain explanation makes the shop look honest rather than defensive."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C6",
+      "siteType": "local-conversion",
+      "name": "Claim Desk",
+      "heroLayout": "split-photo",
+      "mood": [
+        "calm",
+        "clear",
+        "reassuring"
+      ],
+      "bestFor": "Single-location body shops that need the estimate request and claim help in front of a stressed driver",
+      "pairsWithTier": "starter",
+      "headlineSample": "Collision repair in {City}, we handle the claim",
+      "whyItFits": "Clean white and cobalt read like a well-run front office. The neutral sans keeps the claim steps and estimate button readable for someone shaken after a wreck."
+    },
+    {
+      "id": "b",
+      "themeId": "C48",
+      "siteType": "portfolio-showcase",
+      "name": "Straight Panels",
+      "heroLayout": "before-after",
+      "mood": [
+        "precise",
+        "proud",
+        "glossy"
+      ],
+      "bestFor": "Body shops with strong before-and-after work, paint matching and PDR to show",
+      "pairsWithTier": "standard",
+      "headlineSample": "Auto body and paint, done right in {City}",
+      "whyItFits": "The family combo. A near-black ground shows crumpled metal and the finished gloss the way a shop light does, and the before-after hero is the whole sales pitch."
+    },
+    {
+      "id": "c",
+      "themeId": "C8",
+      "siteType": "editorial-trust",
+      "name": "Repair Record",
+      "heroLayout": "type-led",
+      "mood": [
+        "trustworthy",
+        "steady",
+        "thorough"
+      ],
+      "bestFor": "Established collision centers with calibration equipment, fleet accounts and long insurer relationships",
+      "pairsWithTier": "premium",
+      "headlineSample": "Collision repair and sensor calibration for {City}",
+      "whyItFits": "Evergreen and a classical serif read like insurance-grade trust, which is what owners of newer, sensor-heavy cars want before they hand over the keys."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your body shop's listing has strong reviews but no website. A driver who just had a fender-bender in {City} wants to see your collision work before deciding where to tow the car.",
+      "hook": "Open their Maps listing and confirm there's no Website button. Screenshot it for when they reply.",
+      "linkLine": "Here's what could sit behind that button for the body shop: {demo-link}"
+    },
+    {
+      "angle": "Facebook-only collision shop",
+      "line": "The website on your listing is a Facebook page. Fine for regulars, but someone with a crumpled bumper and a claim number wants to know how you handle insurance, not scroll a feed.",
+      "hook": "Tap their Website link and confirm it lands on Facebook. Note the latest repair they posted.",
+      "linkLine": "A body shop page that explains the claim: {demo-link}"
+    },
+    {
+      "angle": "Outdated shop site",
+      "line": "Your collision site still lists an old fax number and a stock photo of a car that isn't yours. Drivers choosing a body shop after an accident look for signs the place is current and careful.",
+      "hook": "Open the site and look for stock photos, an old copyright year or dead links. Note which.",
+      "linkLine": "Your body shop, current and careful: {demo-link}"
+    },
+    {
+      "angle": "Estimate button lost on mobile",
+      "line": "On my phone, your site's estimate button sits under three paragraphs. People request a collision estimate from the roadside or the tow yard, phone in hand.",
+      "hook": "Only if they have a site. Load it on a phone and note where the estimate button sits. Screenshot it for when they reply.",
+      "linkLine": "An estimate request built for the roadside: {demo-link}"
+    },
+    {
+      "angle": "No photo estimate",
+      "line": "There's no way to send your shop pictures of the damage and get a rough estimate. After a minor collision, most drivers want a ballpark before they decide whether to file a claim at all.",
+      "hook": "Check the listing and any site for a damage-upload form. If there's none, the angle holds.",
+      "linkLine": "A damage photo estimate form for the body shop: {demo-link}"
+    },
+    {
+      "angle": "Before-and-afters buried",
+      "line": "The quarter-panel rebuild and the color-matched door on your page are the best collision work I've seen locally. They're mixed in with lunch posts and nobody comparing body shops will find them.",
+      "hook": "Find two before-and-after repairs you can name by panel and vehicle. Mention one if they reply.",
+      "linkLine": "Your collision before-and-afters, sorted by repair: {demo-link}"
+    },
+    {
+      "angle": "Reviews about the claim",
+      "line": "Your reviews mention a body shop that dealt with the insurer for them and a paint match nobody can spot. That's exactly what a nervous driver needs to read, and it stays on your listing.",
+      "hook": "Read their reviews and copy one line about the insurer, paint or communication. Quote it back if they reply.",
+      "linkLine": "Those reviews next to the collision work they describe: {demo-link}"
+    },
+    {
+      "angle": "Hail and ice season",
+      "line": "After the next hailstorm or the first icy week in {City}, every body shop's phone lights up at once. The ones with a dent and hail page catch the calls they can't answer.",
+      "hook": "Use right after a local hailstorm or ahead of winter. Name the storm or the month in the reply.",
+      "linkLine": "A hail and PDR page ready for the next storm: {demo-link}"
+    },
+    {
+      "angle": "Accidents happen after hours",
+      "line": "Most fender-benders happen on the commute home or on a weekend, when your shop is closed. A collision request form catches the driver before the tow yard sends them somewhere else.",
+      "hook": "Call after hours. If it rings out or hits a full voicemail, the angle holds.",
+      "linkLine": "A collision request that works on a Saturday night: {demo-link}"
+    },
+    {
+      "angle": "Hiring a body tech or painter",
+      "line": "Saw you're hiring a body tech or painter. Skilled refinish people look at a collision shop's work online before they apply, the same way a careful car owner does.",
+      "hook": "Only if they posted a hiring note or job ad. Note the role and date.",
+      "linkLine": "A body shop page with a careers section: {demo-link}"
+    },
+    {
+      "angle": "Surrounding towns",
+      "line": "You repair cars from all over {City}, but nothing tells someone whose car got hit in {Neighborhood} that your body shop is the one to tow it to. That's the search they make from the tow truck.",
+      "hook": "Find towns named in their reviews. Use the furthest one.",
+      "linkLine": "A collision page for each town you pull from: {demo-link}"
+    },
+    {
+      "angle": "Paying the deductible",
+      "line": "If you help with deductibles or offer payments on out-of-pocket body work, put it on the page. A deductible is the number that makes people put off the repair.",
+      "hook": "Only if they mention payment help somewhere. Never imply a deductible offer they don't publish; if nothing is posted, skip this angle.",
+      "linkLine": "Payment options for collision work, explained: {demo-link}"
+    },
+    {
+      "angle": "Certifications and repair warranty",
+      "line": "Your sign and listing mention factory training and a lifetime repair warranty. Showing those on a body shop page is what makes a driver of a newer car comfortable towing it to you.",
+      "hook": "Check sign, listing and posts for certifications or warranty terms. Note only what they publish; never add a credential.",
+      "linkLine": "Certifications and repair warranty on one collision page: {demo-link}"
+    },
+    {
+      "angle": "Insurer referrals only",
+      "line": "Sounds like much of your collision work comes through insurer referrals. That can change with one contract, and owners who get to choose a body shop search for one themselves.",
+      "hook": "Look for mentions of insurance partners or 'direct repair' in reviews or signage. Never name the insurer back to them.",
+      "linkLine": "Where a driver choosing their own body shop would land: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "That {specific recent job} you posted is serious collision work. A repair like that should be the first thing someone sees when they're deciding where to take a wrecked car.",
+      "hook": "Pick the newest before-and-after and name it exactly: vehicle, panel and what was done.",
+      "linkLine": "That collision repair, front and centre: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hey {Owner} — that {specific recent job} you posted is serious collision work.\n\nI looked for body shops in {City} and found {Business Name} on Maps and social, but no site that explains the insurance claim or takes damage pictures for an estimate. I put together a sample body shop page, with marked placeholders where your photos would go.\n\nWant me to send it over?",
+    "dm2": "{Owner} — following up in case my last message got buried. Here's the sample body shop site for {Business Name}: {demo-link}\n\nIt has a claim walkthrough for drivers, a damage-upload estimate form, a PDR and hail page, and before-and-after collision work sorted by repair. If it's not for you, say so and I'll leave you be.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for collision and body shops here in {City}. I sent you a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"Short version: I built a sample site for {Business Name} with an insurance claim walkthrough, a damage-upload estimate form and a before-and-after gallery, with marked placeholders where your photos would go. Can I email you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range} depending on how many repair and town pages you want, then {Care Range} a month for hosting and changes. For a shop your size I'd quote about {Build Price}, which is less than a single bumper-and-quarter-panel job.\"\n\"Can I walk you through it for ten minutes this week?\"\n\nCLOSE:\n\"I'll send a one-page scope and an invoice for the deposit. We start the day it clears.\"",
+    "objections": [
+      {
+        "objection": "Insurance sends us most of our work.",
+        "handler": "\"And that's worth protecting. The site is for the drivers who get to choose, and for the day a referral program changes. It also makes the shop look right when an adjuster checks you out.\""
+      },
+      {
+        "objection": "We don't do estimates from pictures.",
+        "handler": "\"Then the form just books the in-person estimate, with the damage pictures attached so you know if it's a scuff or a structural job before they arrive.\""
+      },
+      {
+        "objection": "Our estimating system already has a customer portal.",
+        "handler": "\"Good, I'll link it for repair status. The portal works once they've chosen you; the site is what gets them to choose you from the tow truck.\""
+      },
+      {
+        "objection": "Every collision job is different, I can't post prices.",
+        "handler": "\"You don't have to. The page explains how estimates and supplements work, and what drives cost. Honesty about the process sells better than a price.\""
+      },
+      {
+        "objection": "We're too busy right now.",
+        "handler": "\"Then let the site sort the work: PDR and small dents to a photo form, big hits to a call. You spend counter time on the jobs that pay.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For your shop about {Build Price}: claim walkthrough, photo estimate form, gallery and a hail page. That's less than one panel job.\""
+      }
+    ],
+    "email": {
+      "subject": "Body shop site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for collision and body shops around {City}. {Business Name} has strong before-and-after work and good reviews, but no site a driver finds right after an accident.\n\nRather than ask for your time, I built a sample first: an insurance claim walkthrough written for a shaken driver, a damage-upload estimate form, a paintless dent and hail page, and a before-and-after gallery sorted by repair, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and changes. If not, no problem, it comes down at the end of the month.\n\nWorth ten minutes on the phone this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"{Owner}, it's {Your Name}. I build websites for body shops in {City}, and put together a sample for {Business Name} with a claim walkthrough and a photo estimate form. I'll email you the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner} — I'm taking the {Business Name} body shop demo down on Friday to free up the space.\n\nWant me to leave it up? One word is fine either way.",
+    "nurture": "Hey {Owner} — icy roads and hail season both bring a wave of collision calls, and the shops with a clear claim page catch the drivers who get to choose. Thought of you.\n\nThe site is still here whenever you want it, and nothing's changed on price. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to a fraction of one mid-size collision repair, never to an hourly rate.",
+      "The claim walkthrough is the page that wins self-pay and choose-your-shop drivers. Price it as its own line.",
+      "A photo estimate form that sorts PDR from structural damage is worth more than a contact form.",
+      "Only quote hail and PDR pages for shops that do PDR in-house or have a PDR partner they'll name.",
+      "Calibration pages are a line of their own, and only for shops with the equipment or a sublet partner.",
+      "Never write insurer names, referral program names or repair outcomes on any page; keep it to process."
+    ],
+    "lineItems": [
+      {
+        "item": "Insurance claim walkthrough page",
+        "min": 400,
+        "max": 900,
+        "unit": "one-time",
+        "description": "Max with a step-by-step timeline, a supplement explainer, a printable 'after an accident' checklist and an FAQ.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Damage photo estimate form",
+        "min": 500,
+        "max": 1200,
+        "unit": "one-time",
+        "description": "Max with guided angles for the upload, a claim-number field, a drivable yes-or-no and routing to the estimator.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Hail and PDR landing page",
+        "min": 400,
+        "max": 900,
+        "unit": "one-time",
+        "description": "Max with a storm banner they can switch on, a hail-day booking form and PDR before-and-afters.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Calibration and structural repair page",
+        "min": 300,
+        "max": 700,
+        "unit": "per-page",
+        "description": "Max when it explains pre- and post-scans, frame measuring and sensor recalibration with the shop's own process.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Before-and-after gallery by repair type",
+        "min": 500,
+        "max": 1200,
+        "unit": "one-time",
+        "description": "Max when the gallery filters by bumper, quarter panel, frame, paint and PDR with a slider for each pair.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Town page for collision tows (each)",
+        "min": 200,
+        "max": 450,
+        "unit": "per-page",
+        "description": "Max when each page lists the tow route, nearby tow yards and reviews from that town.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Spanish-language claim and estimate path",
+        "min": 500,
+        "max": 1200,
+        "unit": "one-time",
+        "description": "Max when the claim walkthrough, estimate form and FAQ are all translated.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Teardown-to-delivery photo series",
+      "min": 600,
+      "max": 1500,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"We follow one wrecked car through teardown, frame, paint booth and delivery. It becomes the gallery, a month of posts and proof of how the body shop works.\"",
+      "when": "Month 2, on a structural job the owner is proud of."
+    },
+    {
+      "name": "Google profile management for collision work",
+      "min": 200,
+      "max": 450,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Weekly before-and-after posts with the panel and the town on the body shop's Google profile, plus answers to the claim questions people ask there.\"",
+      "when": "Day 30, once the site is live."
+    },
+    {
+      "name": "Review requests at vehicle delivery",
+      "min": 99,
+      "max": 249,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"When the repaired car is picked up, the owner gets a text asking how the paint match and the claim went, with a review link.\"",
+      "when": "Day 30. The easiest second sale."
+    },
+    {
+      "name": "Post-storm hail response campaign",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Within a day of a hailstorm, the hail page goes live, posts go out and past customers get a dent check invite from the body shop.\"",
+      "when": "Set up before hail season; run within a day of a storm."
+    },
+    {
+      "name": "Tow driver referral cards",
+      "min": 150,
+      "max": 400,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A card tow drivers hand to shaken drivers at the scene: what to do next, and the collision shop that will handle it.\"",
+      "when": "Month 2, after the claim walkthrough is live."
+    },
+    {
+      "name": "Fleet damage program sales sheet",
+      "min": 300,
+      "max": 700,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A one-page sheet for local fleets: how the body shop handles van and truck damage, turnaround, and invoicing by unit.\"",
+      "when": "Month 3, when they want more fleet work."
+    },
+    {
+      "name": "Insurance agent leave-behind kit",
+      "min": 250,
+      "max": 600,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Local independent insurance agents get a folder with the shop's claim walkthrough and repair warranty to hand clients who ask where to go.\"",
+      "when": "Month 3."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Tow operators who bring wrecks to the shop",
+        "whoPays": "The tow company",
+        "min": 1000,
+        "max": 2500,
+        "unit": "one-time",
+        "pitchLine": "\"The tow operator who drops wrecks at your body shop needs a site with a dispatch number and an accident page. I'll build it and your shop stays their first drop.\"",
+        "whyItWorks": "Tow-to-body-shop is the oldest referral in the trade. The owner's intro opens it."
+      },
+      {
+        "route": "Independent insurance agencies",
+        "whoPays": "The insurance agency",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The independent agent who sends clients your way runs a dated site. A claims-help page with a 'trusted repair shops' list is their real need.\"",
+        "whyItWorks": "Agents buy websites, and their clients ask where to fix the car. The shop sits on the list."
+      },
+      {
+        "route": "PDR technicians who work the shop's hail jobs",
+        "whoPays": "The PDR tech, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The paintless dent tech you call after a hailstorm travels storm to storm with no site. Their bookings would come through yours.\"",
+        "whyItWorks": "PDR techs depend on body shop partners. The referral is built in."
+      },
+      {
+        "route": "Auto glass and calibration sublets",
+        "whoPays": "The glass shop, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The glass and calibration shop you sublet to after front-end hits has the same thin site you had.\"",
+        "whyItWorks": "Collision jobs sublet glass and calibration every week. One introduction covers both."
+      },
+      {
+        "route": "Car rental branches near the shop",
+        "whoPays": "The independent rental agency",
+        "min": 1200,
+        "max": 3000,
+        "unit": "one-time",
+        "pitchLine": "\"The local rental agency that puts your customers in cars during repairs needs a site that takes replacement-rental bookings directly.\"",
+        "whyItWorks": "Independent rental agencies live on body shop referrals and buy sites to compete."
+      },
+      {
+        "route": "Paint and body supply houses",
+        "whoPays": "The paint supply house",
+        "min": 2500,
+        "max": 7000,
+        "unit": "one-time",
+        "pitchLine": "\"Your paint and body supply rep sells to every collision shop in the region. Their site needs online ordering and a shop locator.\"",
+        "whyItWorks": "Supply houses have budget and a shop list that is your prospect list."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Accident-scene intake assistant for the tow company",
+        "whoPays": "The tow company, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Drivers text the tow company from the scene; an assistant collects location, vehicle and whether it's drivable, and asks which body shop they want.\"",
+        "whyItWorks": "Tow dispatch is overloaded after crashes. The collision shop becomes the default suggestion."
+      },
+      {
+        "route": "Claims question helper for insurance agencies",
+        "whoPays": "The insurance agency, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Clients ask the agency 'what do I do after a fender-bender' at night. An assistant answers from the agency's own guide and lists their recommended shops.\"",
+        "whyItWorks": "Agents get the same claim questions daily. The body shop is on the answer list."
+      },
+      {
+        "route": "Hail-day booking assistant for the PDR tech",
+        "whoPays": "The PDR tech",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"After a storm, an assistant answers 'can you fix hail dents' and books dent assessment slots at the body shop for the PDR tech.\"",
+        "whyItWorks": "Storm work is a scheduling rush. The body shop hosts the slots, so both sides win."
+      },
+      {
+        "route": "Calibration scheduling helper for the glass shop",
+        "whoPays": "The glass shop",
+        "min": 1000,
+        "max": 2500,
+        "unit": "one-time",
+        "pitchLine": "\"Body shops and drivers ask which cars need calibration after a windshield or bumper. An assistant answers from the glass shop's list and books the slot.\"",
+        "whyItWorks": "Calibration is confusing and growing. The collision shop sends the first users."
+      },
+      {
+        "route": "Rental extension texts for the rental agency",
+        "whoPays": "The rental agency, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"When a collision repair runs long, the rental customer gets a drafted extension message with the new date from the body shop.\"",
+        "whyItWorks": "Rental extensions are constant during supplements. Both businesses save phone time."
+      },
+      {
+        "route": "Paint code helper for the supply house",
+        "whoPays": "The paint supply house",
+        "min": 2000,
+        "max": 5000,
+        "unit": "one-time",
+        "pitchLine": "\"Shops type a color code and vehicle and get the supply house's matching mix notes and stock, without calling the counter.\"",
+        "whyItWorks": "Counters lose hours to color questions. The shop client proves you know the workflow."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Missed-call text-back for accident calls",
+      "kind": "automation",
+      "oneTimeMin": 0,
+      "oneTimeMax": 300,
+      "monthlyMin": 99,
+      "monthlyMax": 199,
+      "pitchLine": "\"Every missed call gets a text asking if the car is drivable, where it is and whether there's a claim number. The estimator calls back with the collision already sorted.\"",
+      "whenAndWhatItTakes": "Day 30. Needs the shop number forwarded and the wording they approve."
+    },
+    {
+      "name": "Repair stage updates by text",
+      "kind": "automation",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1200,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"The owner gets a text at teardown, parts arrival, paint and reassembly, so the body shop stops fielding 'when's my car ready' calls.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the shop's repair stages and who marks each one."
+    },
+    {
+      "name": "Photo estimate intake with guided angles",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"The driver is walked through the four corners and close-ups of the collision damage, so the estimator gets usable pictures the first time.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the estimator's must-have angles and where requests should go."
+    },
+    {
+      "name": "Damage triage from uploaded pictures",
+      "kind": "ai",
+      "oneTimeMin": 2500,
+      "oneTimeMax": 6000,
+      "monthlyMin": 200,
+      "monthlyMax": 500,
+      "pitchLine": "\"Uploaded collision pictures are sorted into likely PDR, cosmetic panel or structural, so the estimator calls the big jobs first. A person still writes every estimate.\"",
+      "whenAndWhatItTakes": "Month 4, after the intake. Needs a few hundred past jobs with pictures and final repair type. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Rental and tow coordination board",
+      "kind": "software",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"Every car in the body shop shows its rental status, tow-yard pickup and storage clock, so nobody pays avoidable storage fees.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their tow partners, rental partners and current tracking sheet."
+    },
+    {
+      "name": "Claim walkthrough chatbot for drivers",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 3500,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"A driver asks 'do I have to use the insurer's shop' or 'what's a supplement' and gets the shop's own plain-language answer, with a reminder to check their policy.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the shop's claim walkthrough, reviewed by the owner. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Supplement documentation drafts",
+      "kind": "ai",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 200,
+      "monthlyMax": 500,
+      "pitchLine": "\"When teardown finds hidden damage, the tech's pictures and notes become a drafted supplement request for the estimator to check and send.\"",
+      "whenAndWhatItTakes": "Month 5. Needs sample supplements and the shop's documentation habits. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Review responses written for collision customers",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"Someone thanks the shop for a paint match on the quarter panel, and a reply mentioning that panel is drafted for the manager to send.\"",
+      "whenAndWhatItTakes": "Month 2. Needs ten past replies. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Fleet damage portal by unit",
+      "kind": "software",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 9000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Fleet managers report van damage with pictures, approve collision estimates and see repair status per unit in one portal.\"",
+      "whenAndWhatItTakes": "Month 6, once a few fleets send work. Needs fleet unit lists and approval rules."
+    },
+    {
+      "name": "Paint booth and bay schedule",
+      "kind": "software",
+      "oneTimeMin": 2500,
+      "oneTimeMax": 7000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"See which cars are in body, prep, the paint booth and reassembly, and spot the bottleneck before it costs a delivery date.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their stage list, booth count and a week of job flow."
+    },
+    {
+      "name": "Delivery-day walkthrough checklist",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 40,
+      "monthlyMax": 100,
+      "pitchLine": "\"At pickup the owner walks the car with a checklist: panel gaps, paint match, sensors and a clean interior, signed on a tablet.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the shop's quality-check list."
+    },
+    {
+      "name": "Calibration requirement lookup",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"Enter the vehicle and the panels being replaced, and see which sensors likely need recalibration, from the shop's own references, flagged for a tech to confirm.\"",
+      "whenAndWhatItTakes": "Month 5. Needs the shop's calibration references and past jobs. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Hail event intake and scheduling",
+      "kind": "automation",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"When a hailstorm hits, the hail page switches on, requests flow into assessment slots, and drivers get a time without calling.\"",
+      "whenAndWhatItTakes": "Before hail season. Needs their assessment capacity per day."
+    },
+    {
+      "name": "Plain-language estimate explainer for owners",
+      "kind": "ai",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"Each line of a collision estimate gets a short explanation an owner understands: blend, R&I, refinish hours and parts type.\"",
+      "whenAndWhatItTakes": "Month 4. Needs sample estimates and owner-approved wording. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Cycle time and comeback report",
+      "kind": "software",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"See days-in-shop by repair type and which body jobs came back, so the owner fixes the slow stage instead of guessing.\"",
+      "whenAndWhatItTakes": "Month 6. Needs job dates and comeback records for a few months."
+    },
+    {
+      "name": "Repair warranty registration for owners",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 40,
+      "monthlyMax": 120,
+      "pitchLine": "\"Every repaired car's warranty is registered with the panels and paint done, and the owner or a later buyer can look it up.\"",
+      "whenAndWhatItTakes": "Month 6. Needs the shop's published warranty terms."
+    },
+    {
+      "name": "Parts arrival tracker with owner alerts",
+      "kind": "automation",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1200,
+      "monthlyMin": 50,
+      "monthlyMax": 120,
+      "pitchLine": "\"When a back-ordered bumper or headlamp lands, the body shop's owner update goes out and the car moves back into a bay.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their parts ordering log."
+    },
+    {
+      "name": "Content writer for repair and town pages",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 250,
+      "monthlyMax": 600,
+      "pitchLine": "\"A new collision repair or town page each month, drafted from finished jobs and approved by the owner before it goes live.\"",
+      "whenAndWhatItTakes": "Month 3. Needs monthly job notes and owner approval. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Customer repair history portal",
+      "kind": "software",
+      "oneTimeMin": 2500,
+      "oneTimeMax": 6000,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"Owners can pull up every collision repair on their car, with before-and-after pictures, when they sell it or file another claim.\"",
+      "whenAndWhatItTakes": "Month 8. Needs the repair order archive."
+    },
+    {
+      "name": "Screener for body tech and painter applicants",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"Applicants answer questions on structural work, refinish experience and training before the manager spends time on an interview.\"",
+      "whenAndWhatItTakes": "Any time they post a hiring note. Needs their must-haves. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the collision photo intake",
+      "whoPays": "Body shops, monthly per location",
+      "min": 99,
+      "max": 299,
+      "unit": "monthly",
+      "pitchLine": "\"Guided damage pictures that land in the estimator's inbox ready to use. Every collision shop in the state wastes calls on blurry uploads.\"",
+      "whyItWorks": "The first shop taught you the angles and routing. The product is ready to sell."
+    },
+    {
+      "route": "Shop finder for a paint and body supply distributor",
+      "whoPays": "The distributor, annually",
+      "min": 5000,
+      "max": 20000,
+      "unit": "per-year",
+      "pitchLine": "\"Put a 'find a collision repair shop' map on your site for every body shop that buys your paint. Shops stay with the supplier who sends them cars.\"",
+      "whyItWorks": "Distributors compete on loyalty. Sending shops work beats a rebate."
+    },
+    {
+      "route": "Multi-shop operator rollout",
+      "whoPays": "The MSO, per location",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Each body shop you acquire needs a claim walkthrough, photo intake and town pages under one brand. Template built, rollout per location.\"",
+      "whyItWorks": "Consolidators buy shops fast and need consistent sites."
+    },
+    {
+      "route": "Collision association member program",
+      "whoPays": "The association, per bundle",
+      "min": 2000,
+      "max": 8000,
+      "unit": "one-time",
+      "pitchLine": "\"Every member collision shop gets the claim walkthrough, photo intake and choose-your-shop explainer as a member benefit.\"",
+      "whyItWorks": "Associations look for tangible member perks. One deal reaches many shops."
+    },
+    {
+      "route": "White-label body shop template for automotive agencies",
+      "whoPays": "The agency, per site",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "pitchLine": "\"Automotive agencies sell body shops on marketing and still hand-build each site. License a collision template with the claim pages done.\"",
+      "whyItWorks": "Agencies own the relationship; you sell them the part they rebuild every time."
+    },
+    {
+      "route": "Fleet damage management for regional fleets",
+      "whoPays": "The fleet operator, annually",
+      "min": 5000,
+      "max": 15000,
+      "unit": "per-year",
+      "pitchLine": "\"Regional delivery and service fleets report damage, approve estimates and track repairs across approved body shops in one portal.\"",
+      "whyItWorks": "Fleets pay annually to cut downtime, and the first shop client becomes the anchor repairer."
+    },
+    {
+      "route": "PDR network storm-booking platform",
+      "whoPays": "PDR companies, per storm event",
+      "min": 1000,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Traveling PDR crews set up at partner body shops after each storm. A booking platform per event fills their days.\"",
+      "whyItWorks": "Storm chasers move constantly and pay per event. Body shops host the slots."
+    },
+    {
+      "route": "Consumer claim guide for a state consumer group",
+      "whoPays": "The consumer advocacy organisation",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"A plain guide to collision repair claims and choosing a shop, for drivers across the state, built on the walkthrough we wrote for one shop.\"",
+      "whyItWorks": "Advocacy groups fund public guides. It positions the studio as the collision expert."
+    },
+    {
+      "route": "Calibration partner network site",
+      "whoPays": "The mobile calibration company",
+      "min": 3000,
+      "max": 8000,
+      "unit": "one-time",
+      "pitchLine": "\"A calibration company serving dozens of body shops needs a booking site with a lookup by vehicle and panel.\"",
+      "whyItWorks": "Calibration is growing and sells only to shops. The collision client is the reference."
+    },
+    {
+      "route": "Monthly collision parts delay report",
+      "whoPays": "Body shops, monthly",
+      "min": 29,
+      "max": 79,
+      "unit": "monthly",
+      "pitchLine": "\"A short monthly sheet on which panels and lamps are back-ordered, built only from delays member shops report.\"",
+      "whyItWorks": "Parts delays drive cycle time. Contributed data keeps it honest and useful."
+    },
+    {
+      "route": "Collision template for a second metro's body shop",
+      "whoPays": "A body shop in another metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I build for one collision shop per market. You hold {City}; the shops two counties over still send drivers to a Facebook page.\"",
+      "whyItWorks": "Non-competing geography reuses the claim pages and before-and-after proof."
+    },
+    {
+      "route": "Rebuild body shop sites lost with a marketing contract",
+      "whoPays": "The body shop leaving an agency",
+      "min": 1500,
+      "max": 4500,
+      "unit": "one-time",
+      "pitchLine": "\"When the marketing contract ended, the collision site went offline with it. I rebuild it on pages the shop owns outright.\"",
+      "whyItWorks": "Shops that lost a rented site already budgeted for one."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Body shop site build plus care plan, one contract",
+      "min": 2000,
+      "max": 3500,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The collision site and the care plan go on one contract, so a hail banner or new estimator's number is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Review requests at vehicle delivery",
+      "min": 99,
+      "max": 249,
+      "unit": "monthly",
+      "trigger": "The first collision repairs from site requests are delivered.",
+      "line": "\"Those first site customers just got their cars back from the body shop. Every delivery should end with a review request.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "Repair stage updates by text",
+      "min": 500,
+      "max": 1200,
+      "unit": "one-time",
+      "trigger": "They mention the counter drowning in status calls during supplements.",
+      "line": "\"The status calls stop when the owner gets a text at teardown, paint and reassembly.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Teardown-to-delivery photo series",
+      "min": 600,
+      "max": 1500,
+      "unit": "per-shoot",
+      "trigger": "A big structural collision job comes in, or the gallery has only a few before-and-afters.",
+      "line": "\"That front-end collision in bay two is the shoot. Teardown to delivery becomes the body shop gallery for a year.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Photo estimate intake with guided angles",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "trigger": "Sixty days of form data shows uploads too blurry or partial to estimate from.",
+      "line": "\"Half the damage uploads miss the angle the estimator needs. Guided pictures fix that before the call.\""
+    },
+    {
+      "rung": 6,
+      "day": 120,
+      "offer": "Hail event intake and scheduling",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "trigger": "Hail season approaches, or a storm hits a nearby town.",
+      "line": "\"The next hailstorm will flood the body shop's phones. Switch on the hail page and let the slots fill themselves.\""
+    },
+    {
+      "rung": 7,
+      "day": 180,
+      "offer": "Supplement documentation drafts",
+      "min": 2000,
+      "max": 5000,
+      "unit": "one-time",
+      "trigger": "They complain about time spent writing supplements, or approvals stall cars.",
+      "line": "\"Supplements are holding cars in the shop. Drafting them from the tech's pictures gets them out the door faster.\""
+    },
+    {
+      "rung": 8,
+      "day": 270,
+      "offer": "Fleet damage portal by unit",
+      "min": 3000,
+      "max": 9000,
+      "unit": "one-time",
+      "trigger": "A local fleet sends a third damaged van, or asks for invoicing by unit.",
+      "line": "\"That fleet keeps sending vans. Give their manager a portal and the collision work stays with you.\""
+    }
+  ]
+}
