@@ -1,0 +1,842 @@
+{
+  "schemaVersion": 1,
+  "category": "Retaining walls & drainage",
+  "slug": "retaining-walls-drainage",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Out family batch. Problem-driven and urgent: buyers arrive after a storm with water where it shouldn't be, so the kit leans on diagnosis, engineering and repair. No wall block or drain product brands named. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Where is the water going? Yard drainage diagnosis",
+      "contains": "Soggy lawn, standing water after storms, water against the foundation, a wet basement wall, washed-out mulch beds, and a symptom checker that points to the likely fix",
+      "why": "Owners know the symptom, not the solution. A diagnosis page turns a vague worry into a booked site visit."
+    },
+    {
+      "section": "French drains, dry wells and downspout lines",
+      "contains": "How a French drain works, channel drains at the driveway, buried downspout lines, pop-up emitters, dry wells and swales, and which fixes which problem",
+      "why": "Buyers have heard the word French drain and little else. Explaining the options shows you sell the right fix, not the biggest one."
+    },
+    {
+      "section": "Retaining wall engineering and permits",
+      "contains": "When a wall over 4 feet needs an engineer, geogrid, drainage stone and pipe behind the wall, surcharge from driveways, and who handles the permit",
+      "why": "Walls fail from water behind them, not from the face. Buyers who see the engineering trust the price."
+    },
+    {
+      "section": "Leaning, bulging and failing wall repair",
+      "contains": "Rotting timber walls, bulging block walls, cracked poured walls, tie-backs, partial rebuilds, and when the whole wall has to come out",
+      "why": "A leaning wall is an urgent, worried call. A repair page catches it before the owner panics and calls whoever answers."
+    },
+    {
+      "section": "Slopes, erosion control and grading",
+      "contains": "Terracing a hillside, regrading so water runs away from the house, swales between neighbours, rock armour on steep banks, and planting to hold soil",
+      "why": "Hillside lots and neighbour runoff are common triggers. Showing the full menu of erosion control earns the bigger site visit."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C6",
+      "siteType": "local-conversion",
+      "name": "Water Problem Solved",
+      "heroLayout": "split-photo",
+      "mood": [
+        "clear",
+        "reassuring",
+        "fast"
+      ],
+      "bestFor": "Drainage crews whose calls come right after storms and who win on a fast site visit",
+      "pairsWithTier": "starter",
+      "headlineSample": "Yard drainage and French drains in {City}",
+      "whyItFits": "Cobalt on white reads clean and technical, like a drainage plan, and the grotesque type keeps symptoms and the call button legible."
+    },
+    {
+      "id": "b",
+      "themeId": "C39",
+      "siteType": "portfolio-showcase",
+      "name": "Holding Ground",
+      "heroLayout": "before-after",
+      "mood": [
+        "sturdy",
+        "grounded",
+        "crafted"
+      ],
+      "bestFor": "Wall builders with a backlog of block, boulder and stone walls to show before and after",
+      "pairsWithTier": "standard",
+      "headlineSample": "Retaining walls built to hold in {City}",
+      "whyItFits": "The family's combo. Brick red and linen sit naturally beside block, boulder and stone, and slab headings feel structural."
+    },
+    {
+      "id": "c",
+      "themeId": "C8",
+      "siteType": "editorial-trust",
+      "name": "Engineered Slope",
+      "heroLayout": "type-led",
+      "mood": [
+        "measured",
+        "expert",
+        "calm"
+      ],
+      "bestFor": "Firms doing engineered walls, hillside terracing and whole-lot grading with longer decisions",
+      "pairsWithTier": "premium",
+      "headlineSample": "Engineered retaining walls and grading for {City} hillsides",
+      "whyItFits": "Evergreen and an old-style serif read like a careful report, which suits buyers comparing engineered proposals rather than quick quotes."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Someone in {City} with water pooling against the foundation searches for yard drainage and finds {Business Name} with no site. They need to see you've fixed one like theirs before they call.",
+      "hook": "Open their Maps listing and confirm no Website button. Screenshot it for when they reply.",
+      "linkLine": "What that worried homeowner would find instead: {demo-link}"
+    },
+    {
+      "angle": "Facebook-only link",
+      "line": "Your listing sends people to Facebook, where a finished boulder wall is buried under weeks of posts. A homeowner with a leaning wall wants a repair page and a way to send pictures, fast.",
+      "hook": "Tap the link and confirm it lands on Facebook. Note the newest wall or drain job there.",
+      "linkLine": "A wall and drainage site instead of a feed: {demo-link}"
+    },
+    {
+      "angle": "Outdated free site",
+      "line": "The site on your listing has a free-host banner and only talks about landscaping. Nothing on it says French drains or retaining walls, which is exactly what people search after a storm.",
+      "hook": "Open their site and check whether drainage or walls even appear. Note what's missing.",
+      "linkLine": "Your wall and drainage work, named the way people search: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "Your site's contact page doesn't load on a phone. People look up drainage help standing in a flooded yard, phone in hand, right after the rain stops.",
+      "hook": "Only if they have a site. Load it on a phone and note what breaks. Screenshot it for when they reply.",
+      "linkLine": "Your drainage site, working on a phone in the rain: {demo-link}"
+    },
+    {
+      "angle": "No way to send the problem",
+      "line": "There's no way to show {Business Name} the problem without a phone call. A form that takes a few pictures of the wet spot or the leaning wall would let you triage before driving out.",
+      "hook": "Check listing, bios and any site for a form with picture upload. If none, the angle holds.",
+      "linkLine": "A request form that takes pictures of the wall or the water: {demo-link}"
+    },
+    {
+      "angle": "Wall builds stuck on social",
+      "line": "The tiered block wall and the boulder terrace on your Instagram are the kind of work that sells itself. They're mixed in with equipment posts where a buyer won't find them.",
+      "hook": "Find two finished walls or drain jobs you can name. Use one by name if they reply.",
+      "linkLine": "Your walls and drainage jobs, sorted by problem solved: {demo-link}"
+    },
+    {
+      "angle": "Reviews about a dry basement",
+      "line": "Your reviews talk about a yard that finally drains and a basement that stayed dry through the last storm. That's what the next worried homeowner needs to read, and it never leaves your listing.",
+      "hook": "Copy one review phrase about water, a wall or a dry basement. Quote it back if they reply.",
+      "linkLine": "Those reviews next to the drainage fixes they describe: {demo-link}"
+    },
+    {
+      "angle": "After the big storm",
+      "line": "After a storm like last week's, half of {City} is looking at water where it shouldn't be. The drainage contractor they find that night is the one who gets the work.",
+      "hook": "Use within a week of heavy rain, snowmelt or a named storm in their area. Name the storm in the reply.",
+      "linkLine": "Ready for the calls after the next storm: {demo-link}"
+    },
+    {
+      "angle": "Rain at night",
+      "line": "Water comes into basements at two in the morning, not during business hours. A drainage request form that takes pictures catches that homeowner while they're still mopping.",
+      "hook": "Call the listed number after hours. A generic or full voicemail means the angle holds.",
+      "linkLine": "A drainage request that works at night: {demo-link}"
+    },
+    {
+      "angle": "Hiring operators",
+      "line": "Saw you're hiring an operator for your wall crew. People who can run an excavator and set block well look at your finished walls before they apply.",
+      "hook": "Only if they posted a hiring note. Note the role and date.",
+      "linkLine": "A retaining wall company site with a careers page: {demo-link}"
+    },
+    {
+      "angle": "Hillside towns",
+      "line": "You build walls in the hillier towns around {City}, but nothing tells a homeowner in {Neighborhood} you work there. 'Retaining wall' plus their town is the search.",
+      "hook": "Find the towns in their captions or reviews; pick the hilliest one they name.",
+      "linkLine": "A wall and drainage page for each town you cover: {demo-link}"
+    },
+    {
+      "angle": "Paying for a big wall",
+      "line": "If you finance retaining walls, say so on the repair page. A failing wall is a bill nobody planned for, and payments are often the first question.",
+      "hook": "Only if they mention financing anywhere public. If not, skip.",
+      "linkLine": "Wall repair financing explained up front: {demo-link}"
+    },
+    {
+      "angle": "Licence and engineering",
+      "line": "Taller walls usually need an engineer and a permit, and homeowners know a failed wall is expensive. Showing your licence, insurance and the engineers you work with settles the first worry.",
+      "hook": "Check the state contractor registry for a record. Never quote a number you didn't see.",
+      "linkLine": "Licence, insurance and engineering on one wall page: {demo-link}"
+    },
+    {
+      "angle": "Referred by the basement guy",
+      "line": "I'd guess plenty of your drainage work comes from waterproofers and home inspectors who point to the yard. Those referrals still look you up first.",
+      "hook": "Look for reviews mentioning an inspector, waterproofer or neighbour. Quote it back.",
+      "linkLine": "Where a drainage referral would land: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "That {specific recent job} you posted is solid wall work, straight courses and proper drainage stone behind it. A stranger should see that first, not three scrolls down.",
+      "hook": "Pick their newest finished wall or drain job and name it: material, height, problem solved, the town if tagged.",
+      "linkLine": "That wall, front and centre: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, that {specific recent job} is a well-built wall, and you can see the drainage stone behind it.\n\nI searched for retaining wall and drainage contractors in {City} and found {Business Name} on Maps, but no site where a homeowner can describe the water problem and send pictures. I built a sample site to show how that could work, with marked placeholders where your photos would go.\n\nWant me to send it?",
+    "dm2": "{Owner}, following up in case my note got buried. Here's the sample wall and drainage site for {Business Name}: {demo-link}\n\nIt has a symptom checker for wet yards, a request form that takes pictures of the problem, and a page on French drains and wall engineering. If it's not for you, say so and I'll leave it.",
+    "call": "\"Hi, {Owner}? I'm {Your Name}. I build websites for drainage and retaining wall contractors in {City}. I sent you a message about a sample site. Did it come through?\"\n\nIF NO:\n\"No worries. It's a sample site for {Business Name} with a drainage symptom checker, a form that takes pictures of the wet spot or the leaning wall, and your walls sorted by problem solved, with marked placeholders where your photos would go. Can I text you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk\n\"It's {Build Range} depending on how many problem and town pages you want, then {Care Range} a month for hosting and changes. For your outfit I'd quote about {Build Price}, which is less than the drainage stone on one wall.\"\n\"Can we go through it for ten minutes, Tuesday or Thursday?\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice, and it's live before the next big rain.\"",
+    "objections": [
+      {
+        "objection": "My phone already rings off the hook after storms.",
+        "handler": "\"That's when you need it most. The picture form lets you sort the real wall failures from the puddles before you drive anywhere.\""
+      },
+      {
+        "objection": "Most of my work comes from landscapers and inspectors.",
+        "handler": "\"Those referrals are gold. The homeowner still searches your name before calling, and a drainage page with finished jobs is what convinces them.\""
+      },
+      {
+        "objection": "I'm not a computer guy.",
+        "handler": "\"You don't need to be. You text me pictures of finished walls and drains, and I handle the rest. Changes are a text too.\""
+      },
+      {
+        "objection": "People think drainage should be cheap.",
+        "handler": "\"Until they see what a failed wall costs. The site shows the pipe, stone and fabric behind your work, and that's what makes your number make sense.\""
+      },
+      {
+        "objection": "I already pay for leads.",
+        "handler": "\"Those drainage leads go to several contractors at once. Your own site sends the person with the soggy yard to you alone.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}: a symptom checker, a picture request form, a wall engineering page and a few town pages. Less than one dry well.\""
+      }
+    ],
+    "email": {
+      "subject": "Drainage and wall site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for retaining wall and drainage contractors around {City}. {Business Name} has solid wall and drain work on its social pages, but no site comes up when a homeowner with a wet yard searches here.\n\nSo I built a sample first: a drainage symptom checker, a request form that takes pictures of the problem, and pages on French drains and wall engineering, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and changes. If not, it comes down at the end of the month.\n\nTen minutes on the phone this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"{Owner}, it's {Your Name}. I build websites for drainage and wall contractors in {City} and made a sample one for {Business Name}. I'll text the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, the {Business Name} drainage demo comes down Friday so I can clear space.\n\nWant it left up? Just say yes or no.",
+    "nurture": "Hey {Owner}, the wet season's coming and the soggy-yard calls come with it. Thought of {Business Name}.\n\nThe sample site is still up, same price: {demo-link}"
+  },
+  "pricing": {
+    "bullets": [
+      "Price by problem solved, not by page: wet yard, wet basement wall, failing wall and eroding slope each get a page and a price line.",
+      "The picture request form is the core of a drainage site. It saves a drive per bad lead, so price it as its own line.",
+      "Peg the build to the drainage stone and pipe on one mid-size job, never to hours.",
+      "Include the engineering and permit page only for contractors who build walls tall enough to need one.",
+      "Charge for a storm-response banner and page; it pays for itself the first rainy week.",
+      "Keep town pages focused on hillier and wetter towns, where the searches actually come from."
+    ],
+    "lineItems": [
+      {
+        "item": "Problem page (wet yard, wall failure, erosion; each)",
+        "min": 250,
+        "max": 650,
+        "unit": "per-page",
+        "description": "Max with a before-and-after set, a short explainer diagram and a matching FAQ.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Picture request form with problem triage",
+        "min": 400,
+        "max": 1000,
+        "unit": "one-time",
+        "description": "Max with multi-picture upload, a symptom checklist and routing for urgent wall failures.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Wall engineering and permit page",
+        "min": 300,
+        "max": 700,
+        "unit": "per-page",
+        "description": "Max when it covers several towns' wall height rules and shows the engineers the client works with.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Storm-response banner and landing page",
+        "min": 300,
+        "max": 700,
+        "unit": "one-time",
+        "description": "Max with an urgent request path, a what-to-document checklist and a switch the client can flip after storms.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Town service-area page (each)",
+        "min": 200,
+        "max": 450,
+        "unit": "per-page",
+        "description": "Max when each town page gets finished local jobs and soil or slope notes.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Drainage diagram set",
+        "min": 300,
+        "max": 800,
+        "unit": "one-time",
+        "description": "Max for a full set of custom diagrams: French drain, dry well, wall section and swale.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Rain-day drainage video shoot",
+      "min": 500,
+      "max": 1300,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Film a finished drain working in the rain, water going into the grate and out at the pop-up. Nothing proves drainage work like that clip.\"",
+      "when": "The next forecast rain after a finished drainage job."
+    },
+    {
+      "name": "Google profile posts of walls and drains",
+      "min": 200,
+      "max": 400,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Each finished wall or drain goes on your Maps profile with the problem it fixed and the town, so storm searchers see you first.\"",
+      "when": "Day 30, once the site is live."
+    },
+    {
+      "name": "Review asks after the first storm",
+      "min": 99,
+      "max": 249,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"After the first real rain on a finished drainage job, the homeowner gets a text asking how it held up and for a review.\"",
+      "when": "Day 30, timed to the next storm."
+    },
+    {
+      "name": "Storm-week drainage ad push",
+      "min": 300,
+      "max": 700,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A ready-to-go campaign for French drains and wall repair switches on in the days after heavy rain, aimed at the wettest neighbourhoods.\"",
+      "when": "Build in the dry months, switch on after the next big storm."
+    },
+    {
+      "name": "Jobsite signs for wall builds",
+      "min": 200,
+      "max": 550,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A wall going up on a hillside is visible from the whole street. A jobsite sign with your name and the site turns that into calls.\"",
+      "when": "Right after launch."
+    },
+    {
+      "name": "Mailers to downhill neighbours",
+      "min": 150,
+      "max": 400,
+      "unit": "per-job",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Water problems run in streets. When you fix one yard, the houses on the same slope get a card showing the drainage fix.\"",
+      "when": "Month 2, after each drainage job on a slope."
+    },
+    {
+      "name": "Inspector and waterproofer referral sheet",
+      "min": 250,
+      "max": 600,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A one-page sheet for home inspectors and basement waterproofers explaining which yard drainage problems you fix, with your contact.\"",
+      "when": "Month 3, once the problem pages are live."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Basement waterproofing contractors",
+        "whoPays": "The waterproofer, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The waterproofer fixing the inside of the wall sends you the outside. I'll build their site and the two link to each other.\"",
+        "whyItWorks": "Inside and outside water fixes are sold to the same worried homeowner. The referral runs both ways."
+      },
+      {
+        "route": "Wall block and drainage supply yards",
+        "whoPays": "The supply yard",
+        "min": 2500,
+        "max": 8000,
+        "unit": "one-time",
+        "pitchLine": "\"Your supply yard sells block, pipe and stone to every wall builder around and has a bare-bones site. Introduce me.\"",
+        "whyItWorks": "Supply yards have budgets and a contractor list that is your prospect list."
+      },
+      {
+        "route": "Civil engineers who stamp wall designs",
+        "whoPays": "The engineering firm",
+        "min": 2000,
+        "max": 5000,
+        "unit": "one-time",
+        "pitchLine": "\"The engineer who stamps your taller walls gets residential calls with no way to take them. A simple request page fixes that.\"",
+        "whyItWorks": "Small engineering firms rarely market themselves. The wall builder is a trusted, steady partner."
+      },
+      {
+        "route": "Gutter installers whose downspouts feed the yard",
+        "whoPays": "The gutter company, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"Gutter crews see downspouts dumping against foundations every day. Their site can send the buried-line jobs to you.\"",
+        "whyItWorks": "The water problem starts at the roof and ends in the yard. Each trade feeds the other."
+      },
+      {
+        "route": "Excavation and grading contractors",
+        "whoPays": "The excavation contractor, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The excavator you sub big digs to needs a site that shows grading and site prep. One introduction from you does it.\"",
+        "whyItWorks": "Excavators rarely market and trust the wall builder who keeps them busy."
+      },
+      {
+        "route": "HOAs with failing common-area walls",
+        "whoPays": "The HOA management company",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"HOAs with long entry and slope walls need a maintenance request page where residents report bulges and washouts.\"",
+        "whyItWorks": "Common-area walls are a liability worry, and the wall builder already inspects them."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Moisture complaint triage for the waterproofer",
+        "whoPays": "The basement waterproofing company",
+        "min": 1200,
+        "max": 3000,
+        "unit": "one-time",
+        "pitchLine": "\"Homeowners describe the wet wall and upload pictures, and the assistant sorts inside fixes from yard drainage, sending the yard jobs to your partner.\"",
+        "whyItWorks": "It saves the waterproofer wasted visits and sends drainage work to the wall client."
+      },
+      {
+        "route": "Block and stone calculator for the supply yard",
+        "whoPays": "The supply yard, annually",
+        "min": 3000,
+        "max": 10000,
+        "unit": "per-year",
+        "pitchLine": "\"Contractors enter wall length and height and get block, cap, geogrid and drainage stone quantities priced from that yard.\"",
+        "whyItWorks": "It keeps wall builders ordering from one yard."
+      },
+      {
+        "route": "Residential enquiry screener for the engineer",
+        "whoPays": "The civil engineering firm",
+        "min": 1000,
+        "max": 2500,
+        "unit": "one-time",
+        "pitchLine": "\"It asks homeowners the wall height, slope and soil questions the engineer needs, before anyone schedules a site visit.\"",
+        "whyItWorks": "Engineers waste hours on calls that don't need them. The wall builder made the intro."
+      },
+      {
+        "route": "Wall inspection log for HOA managers",
+        "whoPays": "The HOA management company, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Residents report wall bulges with a picture; the assistant logs location and severity and flags anything that needs the wall contractor this week.\"",
+        "whyItWorks": "Boards need a record of what they knew and when. The wall client gets the repair queue."
+      },
+      {
+        "route": "Downspout problem sorter for the gutter company",
+        "whoPays": "The gutter contractor",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"Customers describe where the water goes after the downspout, and the assistant tells gutter and drainage jobs apart.\"",
+        "whyItWorks": "Gutter crews already get these questions. Sorting them sends drainage work to your client."
+      },
+      {
+        "route": "Stormwater complaint intake for small towns",
+        "whoPays": "The town public works department",
+        "min": 3000,
+        "max": 10000,
+        "unit": "one-time",
+        "pitchLine": "\"Residents report flooding, washouts and blocked culverts with a picture and location; public works gets a sorted list.\"",
+        "whyItWorks": "Small towns handle this by phone. The drainage client knows exactly what residents report."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Missed-call text-back for wet-yard calls",
+      "kind": "automation",
+      "oneTimeMin": 0,
+      "oneTimeMax": 300,
+      "monthlyMin": 99,
+      "monthlyMax": 199,
+      "pitchLine": "\"Miss a call during a storm week and the caller gets a text asking for the address and a picture of where the water is sitting.\"",
+      "whenAndWhatItTakes": "Day 30. Needs their number forwarded and the wording approved."
+    },
+    {
+      "name": "Review reply drafts for drainage and wall jobs",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1200,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"New reviews get a reply drafted that names the drain or wall and the storm it held through, ready to approve.\"",
+      "whenAndWhatItTakes": "Month 2. Needs ten past replies. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Drainage symptom checker",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3500,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Homeowners answer where the water sits and when, and the checker points to the likely fix and a price range before you visit.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their fixes by symptom and typical price ranges."
+    },
+    {
+      "name": "Deposit and completion billing for wall jobs",
+      "kind": "automation",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Deposit to book the dig, balance when the wall is capped or the drain is backfilled, each sent with a card link.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their deposit rule and payment account."
+    },
+    {
+      "name": "Picture triage for wall and water problems",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"Uploaded pictures of a leaning wall or a soggy yard get sorted into urgent, site visit or simple fix, so storm weeks get handled in the right order.\"",
+      "whenAndWhatItTakes": "Month 3. Needs a set of past job pictures labelled with what was done. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Storm-week dispatch board",
+      "kind": "software",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 6000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"After a storm, every drainage request sits on one board ranked by urgency, with addresses grouped so you see three wet yards on one street in one trip.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the request form live and their urgency rules."
+    },
+    {
+      "name": "After-hours water problem line",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 250,
+      "monthlyMax": 600,
+      "pitchLine": "\"It answers at two in the morning, asks where the water is coming in, tells them what to do tonight from your notes, and books the drainage visit.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their calendar, overnight advice and screening questions. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Utility locate and wall permit reminders",
+      "kind": "automation",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"When a wall or drain job is booked, the locate request and the permit check get reminders on the right days, so the dig never waits.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their booking flow and which towns require wall permits."
+    },
+    {
+      "name": "Wall material calculator for the crew",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 50,
+      "monthlyMax": 120,
+      "pitchLine": "\"Enter wall length, height and block type, and the foreman gets block, caps, geogrid layers, drainage stone and pipe in one list.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their block specs and geogrid rules by height."
+    },
+    {
+      "name": "Drainage chatbot on French drains and wall failure",
+      "kind": "ai",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3500,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"It answers 'is my wall leaning dangerously' and 'will a French drain fix this' from your own guidance, and books a visit when it can't tell.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their answers written once and current lead time. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Customer portal with drainage plan and dig date",
+      "kind": "software",
+      "oneTimeMin": 2500,
+      "oneTimeMax": 7000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"The homeowner sees the drainage plan, the locate status and the dig date, and approves changes without a phone call.\"",
+      "whenAndWhatItTakes": "Month 6. Needs the dispatch board first."
+    },
+    {
+      "name": "Site-walk voice notes to scope",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4500,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"Walk the yard, describe the slope, the wet spot and the wall, and it drafts the scope and estimate with pipe lengths and stone.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their estimate template and pricing rules. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Drain flush and wall inspection reminders",
+      "kind": "automation",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1200,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Each autumn, past drainage customers get a reminder to book a drain flush and a wall check before the wet season.\"",
+      "whenAndWhatItTakes": "Month 6. Needs a list of past jobs and the inspection price."
+    },
+    {
+      "name": "Drainage plan sketcher from yard pictures",
+      "kind": "ai",
+      "oneTimeMin": 2500,
+      "oneTimeMax": 6000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"From pictures and the address it drafts a rough plan of the yard's slope and a suggested drain route, for you to correct on the site visit.\"",
+      "whenAndWhatItTakes": "Month 6. Needs a set of past drainage plans to tune against. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Engineering package tracker",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3500,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Tracks each tall wall from survey to engineer's stamp to permit approval, so nobody digs before the drawings are back.\"",
+      "whenAndWhatItTakes": "Month 6, for builders doing engineered walls. Needs their engineer's turnaround steps."
+    },
+    {
+      "name": "Project write-ups for drainage problem pages",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 200,
+      "monthlyMax": 500,
+      "pitchLine": "\"From job notes and pictures it drafts a short problem-and-fix story for each drainage job, which you approve before it goes up.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their notes and sign-off. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Job costing by wall type and drain length",
+      "kind": "software",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 6000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"See whether boulder walls, block walls or French drains make the most once machine days, stone and dump fees are counted.\"",
+      "whenAndWhatItTakes": "Month 8. Needs a season of receipts and crew days."
+    },
+    {
+      "name": "Crew app with geogrid and drainage stone checklist",
+      "kind": "software",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 15000,
+      "monthlyMin": 200,
+      "monthlyMax": 600,
+      "pitchLine": "\"The crew logs base depth, geogrid layers, pipe and drainage stone with a picture each course, so you can prove what's behind the wall.\"",
+      "whenAndWhatItTakes": "Month 9, with two crews. Needs their build checklist and a foreman to pilot."
+    },
+    {
+      "name": "HOA and commercial wall bid sheet",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3500,
+      "monthlyMin": 50,
+      "monthlyMax": 120,
+      "pitchLine": "\"Bids for common-area walls and drainage come together on one sheet with quantities, insurance and references.\"",
+      "whenAndWhatItTakes": "Month 9, for contractors chasing HOA work. Needs two past bids."
+    },
+    {
+      "name": "Applicant screener for wall crew and operators",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"Applicants for operator and wall crew roles say whether they've run a mini excavator and set block, and you only call the ones who have.\"",
+      "whenAndWhatItTakes": "Whenever they hire. Needs must-haves and pay range. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Drainage symptom checker for every contractor",
+      "whoPays": "Drainage and wall contractors, monthly",
+      "min": 49,
+      "max": 179,
+      "unit": "monthly",
+      "pitchLine": "\"The symptom checker that sorts wet-yard calls for one drainage contractor works for every contractor fielding the same calls after a storm.\"",
+      "whyItWorks": "The first client paid for the logic; others load their own fixes and prices."
+    },
+    {
+      "route": "Certified wall builder locator for a block manufacturer",
+      "whoPays": "The segmental wall block manufacturer",
+      "min": 8000,
+      "max": 30000,
+      "unit": "one-time",
+      "pitchLine": "\"Homeowners who like your wall block need a certified builder. A locator with project galleries sends them to your trained crews.\"",
+      "whyItWorks": "Manufacturers fund installer programs, and the wall client is the proof."
+    },
+    {
+      "route": "Drainage product distributor contractor finder",
+      "whoPays": "The drainage products distributor",
+      "min": 5000,
+      "max": 20000,
+      "unit": "one-time",
+      "pitchLine": "\"Your pipe, grates and emitters go into yards all over the region. A contractor finder sends homeowners to the crews who buy from you.\"",
+      "whyItWorks": "Distributors want loyal contractors and lack a homeowner channel."
+    },
+    {
+      "route": "Landscape contractors' association wall and drainage kit",
+      "whoPays": "The association, per bundle",
+      "min": 1500,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Members get a symptom checker, a picture request form and wall engineering pages, ready to switch on.\"",
+      "whyItWorks": "Associations need member benefits; one deal reaches many contractors."
+    },
+    {
+      "route": "Agency white-label drainage site",
+      "whoPays": "The marketing agency, per site",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "pitchLine": "\"Agencies with drainage clients rebuild the same problem pages each time. License the finished wall and drainage template.\"",
+      "whyItWorks": "Agencies sell the relationship; you supply the specialised build."
+    },
+    {
+      "route": "County stormwater cost-share program portal",
+      "whoPays": "The county or conservation district",
+      "min": 6000,
+      "max": 25000,
+      "unit": "one-time",
+      "pitchLine": "\"Residents apply for the runoff cost-share program, upload the problem and get matched with approved drainage contractors.\"",
+      "whyItWorks": "Public programs run on paper and need cleaner applications. The drainage client knows the process."
+    },
+    {
+      "route": "Waterproofing franchise yard-drainage add-on",
+      "whoPays": "The basement waterproofing franchise, per territory",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "pitchLine": "\"Each waterproofing territory needs an exterior drainage page and request form that routes yard jobs to a partner. Built once, cloned per territory.\"",
+      "whyItWorks": "One agreement covers many territories, and every one has the same yard-water question."
+    },
+    {
+      "route": "Hillside builder lot drainage pages",
+      "whoPays": "The home builder",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"New homes on sloped lots get drainage complaints after the first storm. A warranty request page routes them to one drainage contractor.\"",
+      "whyItWorks": "Builders want warranty calls handled cheaply. The drainage client becomes the default fixer."
+    },
+    {
+      "route": "Property manager drainage and wall request portal",
+      "whoPays": "The management firm, annually",
+      "min": 3000,
+      "max": 12000,
+      "unit": "per-year",
+      "pitchLine": "\"Every property you manage gets one page for flooding, washouts and leaning walls, with pictures and urgency.\"",
+      "whyItWorks": "Firms with many properties buy once; water damage is a constant worry."
+    },
+    {
+      "route": "Insurance adjuster referral page",
+      "whoPays": "The independent adjusting firm",
+      "min": 2000,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"Adjusters need a vetted list of wall and drainage contractors after storms. A referral page with documentation standards serves them.\"",
+      "whyItWorks": "Adjusters value contractors who document well. The wall client is the first listing."
+    },
+    {
+      "route": "One drainage contractor per metro",
+      "whoPays": "A drainage contractor in another metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"After every storm your phone fills with wet-yard calls you can't sort. I set up one drainage contractor per metro with this, and yours hasn't been claimed.\"",
+      "whyItWorks": "Exclusive territory lets you reuse everything."
+    },
+    {
+      "route": "Recover broken drainage contractor sites",
+      "whoPays": "The contractor with a dead site",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"A drainage site that never got its request form working costs you every storm. I can move you onto a wall and drainage build that already takes requests for another contractor.\"",
+      "whyItWorks": "These owners already chose to buy; they need someone who finishes."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Wall and drainage site build plus care plan, one contract",
+      "min": 1800,
+      "max": 3000,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The drainage site and care plan are on one contract, so switching on the storm banner is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Review asks after the first storm and Google profile posts",
+      "min": 200,
+      "max": 400,
+      "unit": "monthly",
+      "trigger": "The first heavy rain after a drainage job finished since launch.",
+      "line": "\"That French drain just held through its first storm. Best moment there is to ask for the review.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "Rain-day drainage video shoot",
+      "min": 500,
+      "max": 1300,
+      "unit": "per-shoot",
+      "trigger": "Rain in the forecast and a recently finished drain to film.",
+      "line": "\"Rain's coming Thursday. Let's film your new drain working. That clip sells drainage better than any page.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Drainage symptom checker",
+      "min": 1200,
+      "max": 3500,
+      "unit": "one-time",
+      "trigger": "Sixty days of request forms show the same few symptoms over and over.",
+      "line": "\"Most of your drainage requests describe the same three problems. The checker answers them with a range first.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Picture triage for wall and water problems",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "trigger": "A storm week with more requests than they can visit.",
+      "line": "\"Last storm week you couldn't see everyone. Triage sorts the leaning walls from the puddles before you drive.\""
+    },
+    {
+      "rung": 6,
+      "day": 150,
+      "offer": "Storm-week dispatch board",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "trigger": "They mention double-trips across town or a second crew.",
+      "line": "\"Two crews and storm weeks need one board for drainage jobs, grouped by street.\""
+    },
+    {
+      "rung": 7,
+      "day": 300,
+      "offer": "Drain flush and wall inspection reminders",
+      "min": 500,
+      "max": 1200,
+      "unit": "one-time",
+      "trigger": "The wet season approaches with a full year of past drainage customers on file.",
+      "line": "\"Everyone you fixed this year should get a drain flush before the wet season. That's a week of booked work.\""
+    }
+  ]
+}

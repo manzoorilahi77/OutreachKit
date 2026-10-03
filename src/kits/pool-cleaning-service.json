@@ -1,0 +1,833 @@
+{
+  "schemaVersion": 1,
+  "category": "Pool cleaning & service",
+  "slug": "pool-cleaning-service",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Out family batch, book archetype. Low ticket, pure recurring revenue: the kit leans on weekly routes, visit reports, autopay and green-pool rescues, with prices sized for a route business. Standard direction is C47, not C39. No chemical or equipment brands named. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "What happens on a weekly pool visit",
+      "contains": "Skimming, brushing, vacuuming, emptying baskets, testing and balancing chemicals, checking the filter pressure, and the visit report with readings sent after every stop",
+      "why": "Pool owners can't see what the tech did while they were at work. A visit checklist and report is what keeps them paying monthly."
+    },
+    {
+      "section": "Green pool rescue",
+      "contains": "Algae clean-ups, shock and filter cleaning, when a drain and clean is needed, how many visits it takes, and the switch to weekly service afterwards",
+      "why": "A green pool is an urgent, embarrassing problem and the most common first job. It turns into a weekly customer."
+    },
+    {
+      "section": "Pool opening and closing",
+      "contains": "Spring opening, cover removal and start-up, autumn closing, winterising lines, and booking windows for each",
+      "why": "In seasonal climates, openings and closings are the two booking rushes of the year. A page that books them fills the route."
+    },
+    {
+      "section": "Pump, filter, heater and salt cell repair",
+      "contains": "Noisy pumps, leaking filters, heaters that won't light, salt cells that need cleaning, leak detection, and replacing equipment",
+      "why": "Equipment repair is where a pool cleaning route earns real money. Owners want to know their weekly tech can fix it too."
+    },
+    {
+      "section": "Route neighbourhoods and waitlist",
+      "contains": "Which neighbourhoods are served on which days, how quickly a new pool can start, and a waitlist sign-up for full routes",
+      "why": "Pool routes are built on density. Showing service days by neighbourhood sells the street and lets owners join when there's room."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C26",
+      "siteType": "local-conversion",
+      "name": "Clear by Friday",
+      "heroLayout": "split-photo",
+      "mood": [
+        "bright",
+        "friendly",
+        "simple"
+      ],
+      "bestFor": "Solo pool techs building a route who need a price, a green-pool offer and a sign-up",
+      "pairsWithTier": "starter",
+      "headlineSample": "Pool cleaning in {City}, weekly or one-time",
+      "whyItFits": "Sky blue reads as clear water, and the soft rounded type feels like a friendly neighbour tech rather than a company."
+    },
+    {
+      "id": "b",
+      "themeId": "C47",
+      "siteType": "booking-first",
+      "name": "Weekly Route",
+      "heroLayout": "card-stack",
+      "mood": [
+        "reliable",
+        "clean",
+        "upbeat"
+      ],
+      "bestFor": "Pool service companies selling weekly plans, openings, closings and repairs by route",
+      "pairsWithTier": "standard",
+      "headlineSample": "Weekly pool service for {City} homes",
+      "whyItFits": "Not the family's brick-and-linen combo, which reads masonry and heritage: teal reads as clean pool water and the humanist type suits a friendly booking page."
+    },
+    {
+      "id": "c",
+      "themeId": "C10",
+      "siteType": "b2b-capability",
+      "name": "Community Pools",
+      "heroLayout": "type-led",
+      "mood": [
+        "accountable",
+        "precise",
+        "plain"
+      ],
+      "bestFor": "Pool service firms bidding HOA, apartment and hotel pools with logs and inspections",
+      "pairsWithTier": "premium",
+      "headlineSample": "Commercial pool service for {City} HOAs and properties",
+      "whyItFits": "Steel blue and a neutral grotesque read like a facilities proposal, which is how managers compare commercial pool contractors."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "A new homeowner in {City} with a pool they don't know how to look after searches for pool service and finds {Business Name} with no site. They want a monthly price and a way to start.",
+      "hook": "Open their Maps listing and confirm there's no Website button. Screenshot it for when they reply.",
+      "linkLine": "What a new pool owner would find instead: {demo-link}"
+    },
+    {
+      "angle": "Facebook-only link",
+      "line": "Your listing goes to Facebook, where the green-to-blue pool from last week is your best ad and it's already buried. Someone with a green pool wants to book a rescue, not scroll.",
+      "hook": "Tap the link and confirm it goes to Facebook. Note any green-to-clean post.",
+      "linkLine": "A pool service page with booking: {demo-link}"
+    },
+    {
+      "angle": "Outdated free site",
+      "line": "Your site still lists an old monthly pool cleaning price and a form that doesn't send. In a route business, a broken sign-up is a lost customer every week.",
+      "hook": "Open the site, try the form, and check prices and the year. Note what's broken.",
+      "linkLine": "Same pool service, with a sign-up that works: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "On a phone your pool service site's book button sits under a pop-up that won't close. Owners look up pool help standing at the edge of a cloudy pool.",
+      "hook": "Only if they have a site. Load it on a phone and note what breaks. Screenshot it for when they reply.",
+      "linkLine": "Your pool booking, working on a phone: {demo-link}"
+    },
+    {
+      "angle": "No online booking",
+      "line": "There's no way to book weekly pool service or a green pool clean-up with {Business Name} online. Most owners would pick a start date, enter the gate code and pay on file in a minute.",
+      "hook": "Check listing, bios and any site for booking. If calling is the only path, the angle holds.",
+      "linkLine": "Online booking for weekly pool service and rescues: {demo-link}"
+    },
+    {
+      "angle": "Green-to-blue posts",
+      "line": "Your green-to-blue pool posts are the most convincing thing a pool tech can share. They scroll away instead of sitting on a rescue page that books the next one.",
+      "hook": "Find a green-to-clean before-and-after they posted. Mention it if they reply.",
+      "linkLine": "Your pool rescues, on a page that books the next one: {demo-link}"
+    },
+    {
+      "angle": "Reviews about the reports",
+      "line": "Your reviews mention a tech who sends readings after every visit and a pool that's never been cloudy since. That's why people stay with a pool service, and it's stuck on your listing.",
+      "hook": "Copy one review phrase about reliability or reports. Quote it back if they reply.",
+      "linkLine": "Those reviews next to your weekly service plans: {demo-link}"
+    },
+    {
+      "angle": "Opening season",
+      "line": "When covers come off in spring, every owner with a green surprise underneath calls a pool service the same week. Being bookable online that week fills the route for the summer.",
+      "hook": "Use in late winter for openings, late summer for closings, or before peak season in warm climates. Name the timing.",
+      "linkLine": "Ready for pool opening season: {demo-link}"
+    },
+    {
+      "angle": "Weekend cloudy water",
+      "line": "Pools turn cloudy on the weekend right before the party. A pool service booking that works on Saturday catches that owner before they try to fix it with the wrong chemicals.",
+      "hook": "Call their number on a weekend. If it hits voicemail, the angle holds.",
+      "linkLine": "A pool service request that works on weekends: {demo-link}"
+    },
+    {
+      "angle": "Hiring a pool tech",
+      "line": "Saw you're hiring a pool tech. Good techs look for a company that seems organised and has a full route.",
+      "hook": "Only if they posted a hiring note. Note the date.",
+      "linkLine": "A pool service site with a careers page: {demo-link}"
+    },
+    {
+      "angle": "Route neighbourhoods",
+      "line": "You already service pools in a few neighbourhoods, but nothing tells someone in {Neighborhood} you're on their street on Thursdays. Density is everything for a pool route.",
+      "hook": "Find neighbourhoods named in reviews or posts; use one where they clearly have customers.",
+      "linkLine": "A pool service page for each route neighbourhood: {demo-link}"
+    },
+    {
+      "angle": "Autopay monthly plans",
+      "line": "If you offer pool service on monthly autopay, say so on the booking page. Owners like one flat number and never thinking about chemicals again.",
+      "hook": "Only if they mention monthly plans or autopay. Otherwise skip.",
+      "linkLine": "Monthly pool plans with autopay: {demo-link}"
+    },
+    {
+      "angle": "Licensed and insured techs",
+      "line": "Some states license pool work, and every owner worries about a tech in the backyard with the kids' toys. Your licence and insurance on the site settle that.",
+      "hook": "Check the state registry if pool service is licensed there. Never quote a number you didn't see.",
+      "linkLine": "Licence, insurance and techs on one pool page: {demo-link}"
+    },
+    {
+      "angle": "Pool owner referrals",
+      "line": "Pool owners talk to other pool owners at every barbecue. When they recommend you, there's nowhere for their friend to book.",
+      "hook": "Look for reviews mentioning friends or neighbours. Quote it back.",
+      "linkLine": "Where the next pool service referral would land: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "That {specific recent job} you posted is a great pool rescue, swamp to sparkling. That should be the first thing a stranger sees.",
+      "hook": "Pick their newest rescue, repair or opening post and name it, town if tagged.",
+      "linkLine": "That pool job, front and centre: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, that {specific recent job} you posted is a great pool rescue.\n\nI was looking for pool service in {City} and found {Business Name} on Maps, but no site where an owner can see your weekly plan and book a start date. I built a sample pool service site with online booking, with marked placeholders where your photos would go.\n\nWant me to send it?",
+    "dm2": "{Owner}, following up in case this got buried. Here's the sample pool service site for {Business Name}: {demo-link}\n\nIt has weekly plans with online booking and autopay, a green pool rescue page, and visit reports explained. If it's not for you, say so and I'll leave it.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for pool service companies in {City}. I sent you a message about a sample site. Did you see it?\"\n\nIF NO:\n\"No problem. It's a sample pool service site for {Business Name}: weekly plans with online booking, a green pool rescue page, and your route neighbourhoods, with marked placeholders where your photos would go. Can I text you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, then ask how many more pools they want on the route\n\"It's {Build Range} depending on how many booking types and neighbourhood pages you want, then {Care Range} a month for hosting and changes. For your route I'd quote about {Build Price}. A few new weekly pools covers it.\"\n\"Ten minutes this week to look at it together?\"\n\nCLOSE:\n\"I'll send a short scope and a deposit invoice. It's live before opening season.\"",
+    "objections": [
+      {
+        "objection": "My route is full.",
+        "handler": "\"Then the waitlist and neighbourhood pages help you add pools only on streets you already drive, and raise prices on the far ones.\""
+      },
+      {
+        "objection": "Pool service is word of mouth.",
+        "handler": "\"It is. Friends still look you up before booking, and right now they can't book. The site turns a recommendation into a start date.\""
+      },
+      {
+        "objection": "I can't afford a big website.",
+        "handler": "\"It's sized for a pool route. A few new weekly pools pays for it, and the booking and autopay save you hours a week.\""
+      },
+      {
+        "objection": "My customers like to text me.",
+        "handler": "\"They still can. The site handles new sign-ups, rescues and openings so your texts are just your regulars.\""
+      },
+      {
+        "objection": "I'm on a lead app already.",
+        "handler": "\"Those pool leads go to several techs at once. Your own booking page sends the owner straight to your route.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}: weekly plans, booking, a rescue page and neighbourhood pages.\""
+      }
+    ],
+    "email": {
+      "subject": "Pool service site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for pool service companies around {City}. {Business Name} has great reviews, but no site comes up where an owner can see your weekly plan and book a start date.\n\nSo I built a sample first: weekly plans with online booking and autopay, a green pool rescue page, and your route neighbourhoods, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and changes. If not, it comes down at the end of the month.\n\nTen minutes on the phone this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"{Owner}, it's {Your Name}. I build websites for pool service companies in {City} and made a sample one for {Business Name} with online booking. I'll text the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm draining the {Business Name} pool service demo on Friday.\n\nWant it kept up? Just a yes or no.",
+    "nurture": "Hi {Owner}, opening season is close and the green-pool calls are about to start. Thought of {Business Name}.\n\nThe sample pool service site is still up, same price: {demo-link}"
+  },
+  "pricing": {
+    "bullets": [
+      "Size the build to the route: a few new weekly pools should pay for it in the first season.",
+      "Online booking with gate code, pool size and autopay is the core; never cut it.",
+      "Price the green pool rescue page separately; it is the most common first job and converts to weekly service.",
+      "Keep monthly products in tens of dollars; this owner bills in monthly pool plans.",
+      "Add the commercial pool page only for firms that want HOA or apartment contracts.",
+      "Neighbourhood pages are cheap and match how pool routes are built; sell them one at a time."
+    ],
+    "lineItems": [
+      {
+        "item": "Weekly plan booking with autopay",
+        "min": 300,
+        "max": 700,
+        "unit": "one-time",
+        "description": "Max with pool size and type, gate code, equipment notes, start date and card-on-file sign-up.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Green pool rescue page with booking",
+        "min": 200,
+        "max": 500,
+        "unit": "per-page",
+        "description": "Max with before-and-after sets, a picture upload and a rescue-to-weekly offer.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Opening and closing booking",
+        "min": 150,
+        "max": 400,
+        "unit": "one-time",
+        "description": "Max with booking windows by week and a cover type field.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Equipment repair request page",
+        "min": 200,
+        "max": 450,
+        "unit": "per-page",
+        "description": "Max with a symptom picker for pumps, filters and heaters and a picture upload.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Neighbourhood route page (each)",
+        "min": 100,
+        "max": 250,
+        "unit": "per-page",
+        "description": "Max when each page shows the service day and a waitlist sign-up.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Commercial pool capability page",
+        "min": 250,
+        "max": 600,
+        "unit": "per-page",
+        "description": "Max with sample chemical logs, inspection notes and a bid request form.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Google profile upkeep for the pool route",
+      "min": 99,
+      "max": 199,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A green-to-blue rescue or a sparkling weekly pool goes on your Maps profile each week with the neighbourhood named.\"",
+      "when": "Day 30, once the site is live."
+    },
+    {
+      "name": "Review asks after the third clean visit",
+      "min": 49,
+      "max": 129,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"After a new customer's third weekly pool visit, when the water has stayed clear, they get a text asking for a review.\"",
+      "when": "Day 30. The easiest second sale."
+    },
+    {
+      "name": "Route-street door hangers",
+      "min": 100,
+      "max": 250,
+      "unit": "per-job",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Houses with pools on streets you already service get a door hanger: 'We clean pools on your street every Thursday.'\"",
+      "when": "Month 2, on routes with room."
+    },
+    {
+      "name": "Opening season campaign",
+      "min": 150,
+      "max": 400,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A campaign as covers come off offers openings and a first month of weekly pool service, aimed at your route neighbourhoods.\"",
+      "when": "Pitch in February, run March to May."
+    },
+    {
+      "name": "Truck magnet and decal artwork",
+      "min": 100,
+      "max": 350,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Your truck parks in a pool owner's driveway every week. A decal with the booking site turns each stop into a sign for the street.\"",
+      "when": "Right after launch."
+    },
+    {
+      "name": "New-owner pool guide",
+      "min": 150,
+      "max": 400,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A short printed and online guide for people who just bought a house with a pool, handed out by realtors, with your weekly plan inside.\"",
+      "when": "Month 3, once there's a realtor to hand it out."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Pool builders who hand off after start-up",
+        "whoPays": "The pool builder, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"Every new pool needs weekly service. The pool builder who sends you owners needs a site, and you send them remodel leads.\"",
+        "whyItWorks": "Service techs see every aging pool; builders hand off every new one."
+      },
+      {
+        "route": "Pool supply store",
+        "whoPays": "The pool supply retailer",
+        "min": 2000,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"The supply store you buy chemicals from has DIY customers asking for help every day. A site with a pro referral page helps both.\"",
+        "whyItWorks": "Stores have budgets and want a service partner for owners who give up on DIY."
+      },
+      {
+        "route": "Pool leak detection and resurfacing specialists",
+        "whoPays": "The specialist, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The leak detection tech you call when water levels drop needs a booking site. They'll send weekly service your way.\"",
+        "whyItWorks": "Specialists depend on route techs for referrals."
+      },
+      {
+        "route": "Realtors selling homes with pools",
+        "whoPays": "The agent or brokerage",
+        "min": 800,
+        "max": 2500,
+        "unit": "one-time",
+        "pitchLine": "\"Listings with a green pool sell slower. A vendor page for pool homes puts your weekly service on the agent's list.\"",
+        "whyItWorks": "Agents refer vendors constantly and every pool home needs service."
+      },
+      {
+        "route": "Pest control and lawn companies on the same routes",
+        "whoPays": "The pest or lawn company, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The pest and lawn crews visit the same backyards on a schedule too. Swap referrals and both routes get denser.\"",
+        "whyItWorks": "Route businesses share neighbourhoods and the same buyer."
+      },
+      {
+        "route": "Vacation rental managers",
+        "whoPays": "The short-term rental manager",
+        "min": 1200,
+        "max": 3500,
+        "unit": "one-time",
+        "pitchLine": "\"Rental managers need pools perfect before every check-in. A vendor booking page tied to turnovers keeps your pool service on their list.\"",
+        "whyItWorks": "Managers have many pools and pay for reliability."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Water test advice assistant for the supply store",
+        "whoPays": "The pool supply retailer, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"DIY owners enter test readings and get plain dosing advice, with an offer for weekly pool service when they're in over their heads.\"",
+        "whyItWorks": "The store sells chemicals and your client gets the owners who give up."
+      },
+      {
+        "route": "Turnover-ready checks for vacation rental managers",
+        "whoPays": "The rental manager, monthly",
+        "min": 75,
+        "max": 200,
+        "unit": "monthly",
+        "pitchLine": "\"Before each guest arrives, the manager gets the latest pool reading and a clear-water picture from the tech, with any issue flagged.\"",
+        "whyItWorks": "Bad pool reviews cost managers bookings; the pool client becomes indispensable."
+      },
+      {
+        "route": "Leak symptom checker for the leak detection specialist",
+        "whoPays": "The leak detection company",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"Owners describe how fast the water drops and whether it stops below the skimmer, and the assistant books a leak test when it looks real.\"",
+        "whyItWorks": "Fewer wasted trips for the specialist, and leads flow both ways."
+      },
+      {
+        "route": "Pool home buyer briefing for realtors",
+        "whoPays": "The agent, per job",
+        "min": 25,
+        "max": 75,
+        "unit": "per-job",
+        "pitchLine": "\"Buyers of a house with a pool get a short plain-language briefing on upkeep and a weekly service offer, branded for the agent.\"",
+        "whyItWorks": "Agents look helpful; the pool client gets new owners at move-in."
+      },
+      {
+        "route": "Remodel lead flagging for the pool builder",
+        "whoPays": "The pool builder",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"Route techs snap cracked plaster or loose tile; the assistant drafts a remodel lead for the builder with the owner's okay.\"",
+        "whyItWorks": "Builders get warm remodel leads and send new pools back."
+      },
+      {
+        "route": "HOA pool log and inspection prep",
+        "whoPays": "The HOA management company, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Community pool readings are logged every visit and the assistant flags anything a health inspector would question.\"",
+        "whyItWorks": "Managers fear failed inspections and closures; the pool client keeps the contract."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Missed-call text-back with pool booking link",
+      "kind": "automation",
+      "oneTimeMin": 0,
+      "oneTimeMax": 200,
+      "monthlyMin": 49,
+      "monthlyMax": 99,
+      "pitchLine": "\"Elbow-deep in a skimmer, you miss the call. The caller gets a text with your weekly pool service booking link and a rescue option if it's green.\"",
+      "whenAndWhatItTakes": "Day 30. Needs their number forwarded and approved wording."
+    },
+    {
+      "name": "Monthly autopay for pool plans",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 600,
+      "monthlyMin": 20,
+      "monthlyMax": 60,
+      "pitchLine": "\"Every weekly pool customer is billed on the first of the month on the card on file. Chemicals and parts are added automatically.\"",
+      "whenAndWhatItTakes": "Month 1. Needs their payment account and plan prices."
+    },
+    {
+      "name": "Visit report with chemical readings",
+      "kind": "software",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 30,
+      "monthlyMax": 80,
+      "pitchLine": "\"After every stop, the owner gets the readings, what was added, a picture of the clear pool and any equipment notes.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their checklist and techs willing to tap through it."
+    },
+    {
+      "name": "Review reply drafts for pool customers",
+      "kind": "ai",
+      "oneTimeMin": 150,
+      "oneTimeMax": 500,
+      "monthlyMin": 39,
+      "monthlyMax": 99,
+      "pitchLine": "\"New reviews about your pool techs get a short thank-you drafted in your voice, which you okay between stops.\"",
+      "whenAndWhatItTakes": "Month 2. Needs ten past replies. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Route optimiser for weekly stops",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 2000,
+      "monthlyMin": 30,
+      "monthlyMax": 80,
+      "pitchLine": "\"New pools slot onto the right service day by street and the day's stops are ordered by drive time.\"",
+      "whenAndWhatItTakes": "Month 3. Needs current routes and tech start points."
+    },
+    {
+      "name": "Green pool picture triage",
+      "kind": "ai",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Owners upload a picture of the pool and the tool sorts it into a quick clean, a full rescue or a drain and clean, with a price range for you to confirm.\"",
+      "whenAndWhatItTakes": "Month 3. Needs past rescue pictures labelled with what it took. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Skipped-visit and storm notices",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 600,
+      "monthlyMin": 20,
+      "monthlyMax": 60,
+      "pitchLine": "\"When a storm or a locked gate means a skipped pool visit, the owner gets a text with the reason and the make-up day.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the visit report in use."
+    },
+    {
+      "name": "Pool care chatbot",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1200,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"It answers 'why is my water cloudy after a party' and 'can I swim after you shock it' from your own guidance, and books a visit if needed.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their answers written once. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Equipment record per pool",
+      "kind": "software",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 20,
+      "monthlyMax": 60,
+      "pitchLine": "\"Each pool's pump, filter, heater and salt cell are recorded with ages and last service, so repair quotes are fast and accurate.\"",
+      "whenAndWhatItTakes": "Month 4. Needs techs logging equipment on their next visit."
+    },
+    {
+      "name": "Equipment age replacement offers",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 20,
+      "monthlyMax": 60,
+      "pitchLine": "\"When a pump or heater on file reaches the age where it usually fails, the owner gets a replacement quote before it dies on a hot weekend.\"",
+      "whenAndWhatItTakes": "Month 6. Needs the equipment records."
+    },
+    {
+      "name": "Dosing helper for techs in the field",
+      "kind": "ai",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"The tech enters readings and pool volume and gets a dosing suggestion from the company's own rules, so new techs don't overshock.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their dosing rules and pool volumes. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Customer portal with reports and invoices",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 2000,
+      "monthlyMin": 30,
+      "monthlyMax": 80,
+      "pitchLine": "\"Owners see every visit report, invoice and upcoming pool service day, and update their card or gate code themselves.\"",
+      "whenAndWhatItTakes": "Month 5. Needs autopay and visit reports in place."
+    },
+    {
+      "name": "After-hours pool service line",
+      "kind": "ai",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Evening callers get help: what to do about a tripped pump tonight, and a repair or rescue booked for tomorrow.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their overnight advice and calendar. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Opening and closing scheduler",
+      "kind": "software",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1200,
+      "monthlyMin": 20,
+      "monthlyMax": 60,
+      "pitchLine": "\"Openings and closings fill week by week by neighbourhood, with cover type and equipment noted, so the rush runs in order.\"",
+      "whenAndWhatItTakes": "Month 6, before the season. Needs their capacity per week."
+    },
+    {
+      "name": "Weekly route summary for the owner",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 40,
+      "monthlyMax": 100,
+      "pitchLine": "\"Every Friday: pools serviced, problem pools, repair quotes sent, chemical spend, and which route has room for new pools.\"",
+      "whenAndWhatItTakes": "Month 6. Needs visit reports in use. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Chemical cost per pool tracker",
+      "kind": "software",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1200,
+      "monthlyMin": 20,
+      "monthlyMax": 60,
+      "pitchLine": "\"See which pools use the most chemicals and time, so you reprice the ones losing money.\"",
+      "whenAndWhatItTakes": "Month 8. Needs a season of visit reports."
+    },
+    {
+      "name": "Repair quote builder from visit notes",
+      "kind": "software",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1200,
+      "monthlyMin": 50,
+      "monthlyMax": 120,
+      "pitchLine": "\"When a tech ticks leaking filter or noisy pump on the pool visit report, a repair quote with parts and labour is built from your price list for you to send.\"",
+      "whenAndWhatItTakes": "Month 6. Needs their parts and labour price list and visit reports in use."
+    },
+    {
+      "name": "Commercial pool chemical log",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 2000,
+      "monthlyMin": 30,
+      "monthlyMax": 80,
+      "pitchLine": "\"HOA and apartment pools get the daily or weekly chemical log health inspectors ask for, filled from each visit.\"",
+      "whenAndWhatItTakes": "Month 9, once they service commercial pools. Needs the local log requirements."
+    },
+    {
+      "name": "Referral reward messages",
+      "kind": "ai",
+      "oneTimeMin": 200,
+      "oneTimeMax": 600,
+      "monthlyMin": 30,
+      "monthlyMax": 80,
+      "pitchLine": "\"Happy pool customers get a personal note offering a free month for each neighbour who signs up, written in your voice.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their referral offer. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Route tech hiring chat",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 40,
+      "monthlyMax": 100,
+      "pitchLine": "\"People asking about the pool tech job answer a few questions about driving record, heat and chemical handling, and the good ones get a ride-along booked.\"",
+      "whenAndWhatItTakes": "Whenever they hire. Needs their requirements. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Pool route booking and reports as a subscription",
+      "whoPays": "Pool service operators, monthly",
+      "min": 19,
+      "max": 79,
+      "unit": "monthly",
+      "pitchLine": "\"Solo pool techs all need booking, autopay and visit reports. Sell the bundle monthly to every route operator in the region.\"",
+      "whyItWorks": "Low price, many operators, identical workflow."
+    },
+    {
+      "route": "Pro referral network for a pool supply chain",
+      "whoPays": "The pool supply chain or distributor",
+      "min": 5000,
+      "max": 20000,
+      "unit": "one-time",
+      "pitchLine": "\"DIY pool owners who give up need a pro. A referral network of service techs who buy from your stores keeps both sides loyal.\"",
+      "whyItWorks": "Chains want to keep the chemical sale when owners switch to a pro."
+    },
+    {
+      "route": "Pool service association member kit",
+      "whoPays": "The association, per bundle",
+      "min": 1000,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Members switch on weekly plan booking, a green pool rescue page and visit reports as a membership perk.\"",
+      "whyItWorks": "Route operators are most of the membership and the least online."
+    },
+    {
+      "route": "Agency template for pool service clients",
+      "whoPays": "The marketing agency, per site",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "pitchLine": "\"Pool route clients can't pay for custom sites. A ready booking-first pool template makes them profitable for an agency.\"",
+      "whyItWorks": "Turns small clients into viable ones."
+    },
+    {
+      "route": "Pool service franchise local pages",
+      "whoPays": "The pool service franchise, per territory",
+      "min": 600,
+      "max": 2000,
+      "unit": "one-time",
+      "pitchLine": "\"Each pool franchise owner gets local booking with their own route days, instead of a national form that loses the lead.\"",
+      "whyItWorks": "Territory owners pay for local sign-ups."
+    },
+    {
+      "route": "Vacation rental pool program",
+      "whoPays": "The vacation rental management company, annually",
+      "min": 2000,
+      "max": 8000,
+      "unit": "per-year",
+      "pitchLine": "\"Every rental pool in your portfolio gets turnover-timed service and readings in one dashboard, from one pool contractor.\"",
+      "whyItWorks": "Managers with many pools buy once and roll it out."
+    },
+    {
+      "route": "County health department pool log submission",
+      "whoPays": "The county health department",
+      "min": 4000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Public and community pools submit chemical logs online instead of on paper, and inspectors see problem pools first.\"",
+      "whyItWorks": "Health departments run inspections on paper and want cleaner data."
+    },
+    {
+      "route": "Apartment portfolio pool contracts",
+      "whoPays": "The apartment management company, annually",
+      "min": 2000,
+      "max": 8000,
+      "unit": "per-year",
+      "pitchLine": "\"Every community pool you manage gets visit reports, chemical logs and repair approvals from one service provider.\"",
+      "whyItWorks": "Large portfolios buy once and value inspection-ready records."
+    },
+    {
+      "route": "Home warranty pool equipment network",
+      "whoPays": "The home warranty company",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Pool equipment claims need a vetted local tech fast. A dispatch page for approved pool service techs speeds every claim.\"",
+      "whyItWorks": "Warranty companies need reliable local techs and clean claim records."
+    },
+    {
+      "route": "Monthly chemical price note for pool techs",
+      "whoPays": "Pool service operators, monthly",
+      "min": 9,
+      "max": 29,
+      "unit": "monthly",
+      "pitchLine": "\"Chlorine spikes wreck a flat monthly pool price. Techs who send in their supply receipts get a short sheet showing what everyone else is paying.\"",
+      "whyItWorks": "Chemical costs swing and techs underprice; contributed data keeps it honest."
+    },
+    {
+      "route": "A pool route owner in the next metro",
+      "whoPays": "A pool service company in another metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"Pool routes live on density. I give one pool service per metro the booking, autopay and report stack, so you're not competing with my other client.\"",
+      "whyItWorks": "Same stack, new territory, no conflict."
+    },
+    {
+      "route": "Fix pool service sites with dead booking",
+      "whoPays": "The pool service with a broken site",
+      "min": 400,
+      "max": 1200,
+      "unit": "one-time",
+      "pitchLine": "\"If your pool site's booking form hasn't sent a message in months, I can move you onto a booking build that's working today.\"",
+      "whyItWorks": "Cheap, fast and the problem is obvious."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Pool service site build plus care plan, one contract",
+      "min": 1200,
+      "max": 2000,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The pool service site and care plan go on one contract, so changing plan prices is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 14,
+      "offer": "Monthly autopay for pool plans",
+      "min": 200,
+      "max": 600,
+      "unit": "one-time",
+      "trigger": "The first online sign-up, or they mention chasing a late payment.",
+      "line": "\"Your first online pool customer is in. Let's put them on autopay before the first visit.\""
+    },
+    {
+      "rung": 3,
+      "day": 30,
+      "offer": "Review asks and Google profile upkeep",
+      "min": 99,
+      "max": 199,
+      "unit": "monthly",
+      "trigger": "New customers from the site have had three clear-water visits.",
+      "line": "\"Three clean visits in, those pool owners are happy. Now's when to ask for reviews.\""
+    },
+    {
+      "rung": 4,
+      "day": 45,
+      "offer": "Visit report with chemical readings",
+      "min": 500,
+      "max": 1500,
+      "unit": "one-time",
+      "trigger": "A customer asks what the tech actually did, or questions a chemical charge.",
+      "line": "\"That 'did you even come' message is what a pool visit report ends. Readings and a picture after every stop.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Route optimiser for weekly stops",
+      "min": 600,
+      "max": 2000,
+      "unit": "one-time",
+      "trigger": "New sign-ups land on streets off the current routes, or they add a second tech.",
+      "line": "\"New pools are coming from all over. The optimiser puts each one on the right service day by street.\""
+    },
+    {
+      "rung": 6,
+      "day": 180,
+      "offer": "Equipment record per pool",
+      "min": 500,
+      "max": 1500,
+      "unit": "one-time",
+      "trigger": "A repair job needed a second trip because nobody knew the pump model.",
+      "line": "\"That second trip for the right pump part is why every pool needs its equipment on file.\""
+    },
+    {
+      "rung": 7,
+      "day": 300,
+      "offer": "Equipment age replacement offers",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "trigger": "Equipment records show a batch of pumps and heaters near the age they usually fail.",
+      "line": "\"A dozen pumps on your route are getting old. Offering replacements before they fail is the best repair work there is.\""
+    }
+  ]
+}

@@ -1,0 +1,842 @@
+{
+  "schemaVersion": 1,
+  "category": "Lawn maintenance & mowing",
+  "slug": "lawn-maintenance-mowing",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Out family batch. Low-ticket recurring work: every price in the kit is sized for an owner who thinks in weekly mows, and the kit leans on sign-ups, route days and autopay. No mower or software brands named. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Mowing plans by lot size",
+      "contains": "Weekly and every-other-week mowing, what's included (mow, edge, trim, blow), prices by lot size band, season length and how to sign up online",
+      "why": "Lawn customers buy on a clear weekly price. A plan page with sign-up turns a quote call into a subscription."
+    },
+    {
+      "section": "Route days, rain delays and gate access",
+      "contains": "Which day the crew is on each street, what happens when it rains, gate codes, dogs in the yard, and skipping a week while on holiday",
+      "why": "Most lawn complaints are about not knowing when the crew comes. Answering it up front keeps customers all season."
+    },
+    {
+      "section": "Spring and fall yard cleanup booking",
+      "contains": "Leaf removal, bed cleanout, first mow of spring, last mow and leaf mulching in autumn, with booking windows and haul-away options",
+      "why": "Cleanups are the two biggest tickets in the lawn year and the door to a season of mowing."
+    },
+    {
+      "section": "Lawn care add-ons menu",
+      "contains": "Aeration, overseeding, hedge trimming, mulch refresh, weed pulling and gutter leaf clearing, each priced to add to an existing mowing plan",
+      "why": "Add-ons raise the value of each mowing customer without new stops on the route."
+    },
+    {
+      "section": "Commercial and HOA grounds maintenance",
+      "contains": "Common-area mowing, entrance beds, seasonal colour, snow tie-ins, monthly service reports and insurance certificates for property managers",
+      "why": "Contract grounds work evens out the season, and managers look for a lawn company that looks organised."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C25",
+      "siteType": "local-conversion",
+      "name": "Mowed This Week",
+      "heroLayout": "split-photo",
+      "mood": [
+        "sunny",
+        "simple",
+        "quick"
+      ],
+      "bestFor": "Solo and two-person mowing outfits that need one page with prices and a sign-up",
+      "pairsWithTier": "starter",
+      "headlineSample": "Weekly lawn mowing in {City}, from your street's route day",
+      "whyItFits": "Citrus warmth feels like a summer Saturday, and the geometric caps make the price and sign-up impossible to miss."
+    },
+    {
+      "id": "b",
+      "themeId": "C39",
+      "siteType": "booking-first",
+      "name": "On the Route",
+      "heroLayout": "card-stack",
+      "mood": [
+        "reliable",
+        "neighbourly",
+        "tidy"
+      ],
+      "bestFor": "Lawn companies with several crews selling weekly plans, cleanups and add-ons by route",
+      "pairsWithTier": "standard",
+      "headlineSample": "Lawn care plans for {City} homes",
+      "whyItFits": "The family's combo. Linen keeps plan cards calm and readable, brick red makes sign-up clear, and slab headings feel local and steady."
+    },
+    {
+      "id": "c",
+      "themeId": "C8",
+      "siteType": "b2b-capability",
+      "name": "Grounds Contract",
+      "heroLayout": "type-led",
+      "mood": [
+        "accountable",
+        "plain",
+        "established"
+      ],
+      "bestFor": "Lawn maintenance firms bidding HOA, office park and church grounds contracts",
+      "pairsWithTier": "premium",
+      "headlineSample": "Grounds maintenance for {City} HOAs and properties",
+      "whyItFits": "Evergreen and an old-style serif read like a facilities proposal, which is how managers compare lawn contractors."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Someone new to {City} searching for lawn mowing finds {Business Name} with a phone number and no site. They want to see a weekly price and whether you cover their street.",
+      "hook": "Open their Maps listing and confirm there's no Website button. Screenshot it for when they reply.",
+      "linkLine": "What a new mowing customer would see: {demo-link}"
+    },
+    {
+      "angle": "Facebook-only link",
+      "line": "Your listing goes to Facebook, where 'taking new lawn customers' is a post from back in spring. Someone moving in wants a mowing price and a sign-up, not a scroll.",
+      "hook": "Tap the link and confirm it goes to Facebook. Note any 'taking new customers' post.",
+      "linkLine": "A lawn care page with prices and sign-up: {demo-link}"
+    },
+    {
+      "angle": "Stale free site",
+      "line": "Your site still lists last season's mowing prices on a free host. Lawn customers sign up in spring, and an old price list makes them call someone else.",
+      "hook": "Open their site and look for an old year, old prices or a builder banner. Note which.",
+      "linkLine": "Same lawn company, current prices: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "On a phone your lawn site's price table runs off the screen. Most people looking for a mowing service are on their phone looking at their own grass.",
+      "hook": "Only if they have a site. Load it on a phone and note what breaks. Screenshot it for when they reply.",
+      "linkLine": "Your lawn prices, readable on a phone: {demo-link}"
+    },
+    {
+      "angle": "No online sign-up",
+      "line": "There's no way to sign up for weekly mowing with {Business Name} without a call and a back-and-forth. A sign-up with lot size and gate code would fill your route while you mow.",
+      "hook": "Check listing, bios and any site for a sign-up or booking. If none, the angle holds.",
+      "linkLine": "A mowing sign-up with lot size, gate code and route day: {demo-link}"
+    },
+    {
+      "angle": "Stripes on Instagram",
+      "line": "Your striped lawns and crisp edges on Instagram are what people want their yard to look like. There's no page that turns that into a weekly lawn care sign-up.",
+      "hook": "Find two clean striped lawns or edges they posted. Mention one if they reply.",
+      "linkLine": "Your best lawns next to a sign-up button: {demo-link}"
+    },
+    {
+      "angle": "Reviews about reliability",
+      "line": "Your reviews say the crew shows up the same day every week and never misses a gate. That's what lawn customers care about most, and it stays on your listing.",
+      "hook": "Copy one review phrase about reliability. Quote it back if they reply.",
+      "linkLine": "Those reviews next to your mowing plans: {demo-link}"
+    },
+    {
+      "angle": "Spring sign-up season",
+      "line": "Lawn customers pick their mowing company in March and stick with it all year. The outfit with a sign-up page in March fills its routes first.",
+      "hook": "Use from February to April, or late summer for fall cleanups. Name the month.",
+      "linkLine": "Ready for spring mowing sign-ups: {demo-link}"
+    },
+    {
+      "angle": "Sunday evening grass",
+      "line": "People decide to hire a lawn service on Sunday evening after mowing it themselves one more time. A sign-up that works then gets them on Tuesday's route.",
+      "hook": "Message or call on a weekend evening. If nothing comes back until Monday, the angle holds.",
+      "linkLine": "A mowing sign-up that works on Sunday night: {demo-link}"
+    },
+    {
+      "angle": "Hiring mowers",
+      "line": "Saw you're hiring for the lawn crew. Reliable workers pick the company that looks organised, the same way customers do.",
+      "hook": "Only if they posted a hiring note. Note the date.",
+      "linkLine": "A lawn company site with a careers page: {demo-link}"
+    },
+    {
+      "angle": "Streets on the route",
+      "line": "Your mowing route covers a few neighbourhoods, but nothing tells someone in {Neighborhood} you're already on their street. That's the easiest sale in lawn care.",
+      "hook": "Find neighbourhoods named in reviews or posts; use one where they clearly have customers.",
+      "linkLine": "A lawn page for each neighbourhood on the route: {demo-link}"
+    },
+    {
+      "angle": "Autopay and prepaid seasons",
+      "line": "If you offer a discount for prepaying the mowing season or autopay, put it on the sign-up. Lawn customers like a simple monthly number.",
+      "hook": "Only if they mention prepay or autopay anywhere. Otherwise skip.",
+      "linkLine": "Prepaid lawn seasons and autopay explained: {demo-link}"
+    },
+    {
+      "angle": "Insured crew",
+      "line": "A mower throws a rock through a window now and then. Showing your insurance on a page tells careful lawn customers you're the real thing, not a kid with a trailer.",
+      "hook": "Look for any mention of insurance. Note what's there; never invent terms.",
+      "linkLine": "Insurance and service promise on one lawn page: {demo-link}"
+    },
+    {
+      "angle": "Neighbour sign-ups",
+      "line": "When one house on a street gets mowed weekly, the neighbours notice the stripes. They still look you up before calling.",
+      "hook": "Look for reviews mentioning neighbours. Quote it back.",
+      "linkLine": "Where the next lawn referral would land: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "That {specific recent job} you posted is a sharp-looking lawn, clean edges and even stripes. That's the yard that should sell your mowing plan.",
+      "hook": "Pick their newest lawn or cleanup post and name it: stripes, edging, cleanup, town if tagged.",
+      "linkLine": "That lawn, front and centre: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, that {specific recent job} you posted has some of the cleanest stripes I've seen.\n\nI was looking for lawn mowing services in {City} and found {Business Name} on Maps, but no site where someone can see your weekly price and sign up for your route. I put together a sample lawn care site, with marked placeholders where your photos would go.\n\nWant me to send it?",
+    "dm2": "{Owner}, following up in case this got buried. Here's the sample lawn care site for {Business Name}: {demo-link}\n\nIt has mowing plans by lot size, an online sign-up with gate code and route day, and cleanup booking for spring and fall. If it's not for you, say so and I'll leave it.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build simple websites for lawn care companies in {City}. I sent you a message about a sample site. Did you see it?\"\n\nIF NO:\n\"No problem. It's a small lawn site for {Business Name}: mowing prices by lot size, an online sign-up and cleanup booking, with marked placeholders where your photos would go. Can I text you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, then ask how many new mowing customers they want this season\n\"It's {Build Range}, kept small on purpose, then {Care Range} a month for hosting and changes. For your outfit I'd quote about {Build Price}. A handful of new weekly lawns covers it.\"\n\"Ten minutes this week to look at it?\"\n\nCLOSE:\n\"I'll send a short scope and a deposit invoice. It's live before spring sign-ups.\"",
+    "objections": [
+      {
+        "objection": "My route is already full.",
+        "handler": "\"Then the site helps you pick tighter routes. Sign-ups from your own streets mean less drive time, and you can turn off the form when you're full.\""
+      },
+      {
+        "objection": "Lawn work doesn't pay enough for a website.",
+        "handler": "\"That's why this one is small and priced for mowing. A handful of new weekly lawns pays for it in the first season.\""
+      },
+      {
+        "objection": "I get customers from Nextdoor.",
+        "handler": "\"Nextdoor is great for the first mention. People still click through to see your prices and sign up. Right now there's nowhere to click.\""
+      },
+      {
+        "objection": "My kid can make me a site.",
+        "handler": "\"Go for it. If you want, I'll hand over the plan table and the sign-up layout. If it stalls before spring, call me.\""
+      },
+      {
+        "objection": "I don't want to post prices.",
+        "handler": "\"We can show a starting price by lot size and confirm after a look. Mowing customers want a ballpark before they call anyone.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}: mowing plans, sign-up, cleanup booking and a page for each neighbourhood on the route.\""
+      }
+    ],
+    "email": {
+      "subject": "Lawn care site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build simple websites for lawn care companies around {City}. {Business Name} has great reviews about reliability, but no site comes up where someone can see your mowing prices and sign up.\n\nSo I built a small sample first: mowing plans by lot size, an online sign-up with gate code and route day, and spring and fall cleanup booking, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and changes. If not, it comes down at the end of the month.\n\nTen minutes on the phone this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"{Owner}, it's {Your Name}. I build small websites for lawn care companies in {City} and made a sample one for {Business Name}. I'll text the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm taking the {Business Name} lawn demo down on Friday.\n\nKeep it up for you? A quick yes or no works.",
+    "nurture": "Hi {Owner}, spring mowing sign-ups are about to start. Thought of {Business Name}.\n\nThe small lawn site is still up, same price: {demo-link}"
+  },
+  "pricing": {
+    "bullets": [
+      "Keep the build small. A mowing company should earn it back from a handful of new weekly lawns in one season.",
+      "The online sign-up with lot size, gate code and route day is the whole point; never cut it to save money.",
+      "Price neighbourhood pages cheaply; they match how mowing routes are actually built.",
+      "Sell monthly products in tens of dollars, not hundreds; this owner prices in weekly mows.",
+      "Add the commercial grounds page only for outfits that want HOA or office contracts.",
+      "Skip galleries beyond a few strong lawns; lawn customers buy reliability and price, not a portfolio."
+    ],
+    "lineItems": [
+      {
+        "item": "Online mowing sign-up with route day",
+        "min": 200,
+        "max": 500,
+        "unit": "one-time",
+        "description": "Max with lot-size pricing, gate code, pet notes, start date and autopay sign-up.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Cleanup booking for spring and fall",
+        "min": 150,
+        "max": 400,
+        "unit": "one-time",
+        "description": "Max with picture upload of the yard, haul-away options and booking windows.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Add-on services menu",
+        "min": 100,
+        "max": 300,
+        "unit": "one-time",
+        "description": "Max when each add-on can be ticked onto an existing mowing plan online.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Neighbourhood route page (each)",
+        "min": 100,
+        "max": 250,
+        "unit": "per-page",
+        "description": "Max when each page shows the route day and a lawn from that neighbourhood.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Commercial and HOA grounds page",
+        "min": 200,
+        "max": 500,
+        "unit": "per-page",
+        "description": "Max with sample service reports, insurance details and a bid request form.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Spanish-language lawn pages",
+        "min": 200,
+        "max": 500,
+        "unit": "one-time",
+        "description": "Max when the sign-up, plans and route-day page are all translated.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Google profile upkeep for the lawn route",
+      "min": 99,
+      "max": 199,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A striped lawn or a finished cleanup goes on your Maps profile each week with the neighbourhood, and your hours stay right through winter.\"",
+      "when": "Day 30, once the site is live."
+    },
+    {
+      "name": "Review asks after the first mow",
+      "min": 49,
+      "max": 129,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"After a new customer's first mow, they get a text asking for a review. With weekly lawns, reviews add up fast.\"",
+      "when": "Day 30. The easiest second sale."
+    },
+    {
+      "name": "Route-street door hangers",
+      "min": 100,
+      "max": 300,
+      "unit": "per-job",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Door hangers on the houses next to your lawns on each route day: 'We already mow your street on Tuesdays.' That's the cheapest mowing customer you'll ever get.\"",
+      "when": "Month 2, on each route day with room to grow."
+    },
+    {
+      "name": "Spring sign-up push",
+      "min": 150,
+      "max": 400,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A short campaign in late winter for weekly mowing plans fills your routes before the grass grows.\"",
+      "when": "Pitch in January, run February to March."
+    },
+    {
+      "name": "Trailer and truck door artwork",
+      "min": 150,
+      "max": 450,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Your trailer is parked on a lawn customer's street every week. Put the sign-up site on it and the neighbours read it all season.\"",
+      "when": "Right after launch."
+    },
+    {
+      "name": "Fall cleanup and aeration campaign",
+      "min": 150,
+      "max": 400,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"An autumn offer to existing mowing customers for leaf cleanup and aeration adds a ticket to every lawn you already service.\"",
+      "when": "Pitch in August, run September to October."
+    },
+    {
+      "name": "Nextdoor recommendation prompt cards",
+      "min": 80,
+      "max": 200,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A small card left after the first mow asks happy lawn customers to recommend you on Nextdoor, with the site address.\"",
+      "when": "Month 2."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Irrigation techs who fix the sprinklers you mow over",
+        "whoPays": "The irrigation company, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"Your mowing crews spot broken sprinkler heads every week. The irrigation tech you call needs a site, and he'll send lawn customers back.\"",
+        "whyItWorks": "Mowers see the problem; irrigation fixes it. A natural two-way referral."
+      },
+      {
+        "route": "Pest and weed control companies",
+        "whoPays": "The lawn treatment company, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The fertiliser and weed control company on the same lawns doesn't mow. Their site can send mowing to you, yours sends treatments to them.\"",
+        "whyItWorks": "Treatment and mowing are separate trades on the same lawn."
+      },
+      {
+        "route": "Outdoor power equipment dealer",
+        "whoPays": "The mower dealer and repair shop",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The shop that sharpens your blades has every lawn crew in town as a customer. A service booking site helps them, and you make the intro.\"",
+        "whyItWorks": "Dealers have budgets and a customer list of lawn businesses."
+      },
+      {
+        "route": "Snow removal partners for winter",
+        "whoPays": "The snow removal contractor, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"If you don't plow, the outfit that does can take your lawn customers in winter and send them back in spring. They need a site too.\"",
+        "whyItWorks": "Seasonal trades hand customers back and forth."
+      },
+      {
+        "route": "Realtors and property managers",
+        "whoPays": "The agent or management company",
+        "min": 800,
+        "max": 2500,
+        "unit": "one-time",
+        "pitchLine": "\"Agents need empty listings mowed and managers need rentals kept up. A vendor request page puts your lawn crew on their list.\"",
+        "whyItWorks": "Steady, simple work from people who refer constantly."
+      },
+      {
+        "route": "Gutter cleaning crews",
+        "whoPays": "The gutter cleaning company, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The gutter cleaner works the same streets in autumn as your leaf cleanups. Trade referrals and both of you fill the season.\"",
+        "whyItWorks": "Same customer, same season, different ladder."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Treatment upsell spotter for the weed control company",
+        "whoPays": "The lawn treatment company, monthly",
+        "min": 50,
+        "max": 150,
+        "unit": "monthly",
+        "pitchLine": "\"Your partner treats lawns but never sees them weekly. The mowing crew flags thin, weedy turf from the route and the treatment company gets a ready-made lead.\"",
+        "whyItWorks": "The treatment company gets warm leads; the lawn crew earns goodwill or a fee."
+      },
+      {
+        "route": "Repair booking assistant for the mower shop",
+        "whoPays": "The outdoor power equipment dealer",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"Lawn crews text a picture of the broken mower and the assistant books a repair slot and says what parts to expect.\"",
+        "whyItWorks": "Spring repair rushes swamp the counter; crews want faster turnarounds."
+      },
+      {
+        "route": "Vacant listing yard check for realtors",
+        "whoPays": "The listing agent, per job",
+        "min": 25,
+        "max": 75,
+        "unit": "per-job",
+        "pitchLine": "\"After each mow, the agent gets a picture and a short note confirming the listing's lawn is ready for showings.\"",
+        "whyItWorks": "Agents need proof without driving out; the lawn crew becomes their default."
+      },
+      {
+        "route": "Winter handoff messages for the snow contractor",
+        "whoPays": "The snow removal contractor",
+        "min": 400,
+        "max": 1000,
+        "unit": "one-time",
+        "pitchLine": "\"In late autumn, lawn customers get a message introducing the snow partner, and in spring the mowing restart offer goes out.\"",
+        "whyItWorks": "Both seasonal businesses keep customers year-round."
+      },
+      {
+        "route": "Resident request sorter for HOA grounds",
+        "whoPays": "The HOA management company, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"Residents report missed mowing or overgrown common areas with a picture; the assistant groups them into one weekly lawn work order.\"",
+        "whyItWorks": "Managers stop forwarding single emails; the lawn client gets clear tickets."
+      },
+      {
+        "route": "Gutter and leaf cleanup bundle assistant",
+        "whoPays": "The gutter cleaning company",
+        "min": 400,
+        "max": 1000,
+        "unit": "one-time",
+        "pitchLine": "\"Autumn customers asking for gutter cleaning get offered a leaf cleanup bundle with your lawn crew, booked in one exchange.\"",
+        "whyItWorks": "Bundled autumn work for both trades from one enquiry."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Missed-call text-back for mowing enquiries",
+      "kind": "automation",
+      "oneTimeMin": 0,
+      "oneTimeMax": 200,
+      "monthlyMin": 49,
+      "monthlyMax": 99,
+      "pitchLine": "\"You can't hear the phone over the mower. The caller gets a text with your mowing sign-up link and a question about their lot size.\"",
+      "whenAndWhatItTakes": "Day 30. Needs their number forwarded and approved wording."
+    },
+    {
+      "name": "Autopay for weekly lawn plans",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 600,
+      "monthlyMin": 20,
+      "monthlyMax": 60,
+      "pitchLine": "\"Mowing customers are charged monthly on the card on file, with a receipt listing each mow. No more chasing cheques under doormats.\"",
+      "whenAndWhatItTakes": "Month 1. Needs their payment account and plan prices."
+    },
+    {
+      "name": "Lot-size price lookup by address",
+      "kind": "software",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1200,
+      "monthlyMin": 20,
+      "monthlyMax": 60,
+      "pitchLine": "\"A homeowner types their address, picks a lot size band and sees the weekly mowing price straight away.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their price bands and service area."
+    },
+    {
+      "name": "Review reply drafts for lawn customers",
+      "kind": "ai",
+      "oneTimeMin": 150,
+      "oneTimeMax": 500,
+      "monthlyMin": 39,
+      "monthlyMax": 99,
+      "pitchLine": "\"Each review gets a reply drafted that mentions the lawn and the crew, ready to approve on a break.\"",
+      "whenAndWhatItTakes": "Month 2. Needs ten past replies. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Rain delay texts by route",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 600,
+      "monthlyMin": 20,
+      "monthlyMax": 60,
+      "pitchLine": "\"When rain pushes Tuesday's mowing route to Wednesday, every customer on it gets a text. The 'where's my crew' calls stop.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their routes listed by day."
+    },
+    {
+      "name": "Route builder for new sign-ups",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 2000,
+      "monthlyMin": 30,
+      "monthlyMax": 80,
+      "pitchLine": "\"New lawn sign-ups drop onto the right route day by street, so each crew's day stays tight and drive time stays low.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their current routes and crew capacity."
+    },
+    {
+      "name": "Lawn chatbot on plans, schedules and add-ons",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1200,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"It answers 'what day do you mow my street' and 'do you bag clippings' from your own answers, and signs people up.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their plan details and route days. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Skip-a-week and pause requests",
+      "kind": "software",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 15,
+      "monthlyMax": 40,
+      "pitchLine": "\"Customers going on holiday pause their mowing online, and the crew's route sheet updates automatically.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the route builder in place."
+    },
+    {
+      "name": "Yard picture cleanup quote",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1800,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Customers upload pictures of an overgrown yard or a leaf-covered lawn, and the tool drafts a cleanup price range for you to confirm.\"",
+      "whenAndWhatItTakes": "Month 4. Needs a set of past cleanups with pictures and prices. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Crew route sheet on the phone",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 2000,
+      "monthlyMin": 30,
+      "monthlyMax": 80,
+      "pitchLine": "\"Each crew sees today's lawns in order, gate codes, dog notes and add-ons, and taps each one done.\"",
+      "whenAndWhatItTakes": "Month 4. Needs routes and customer notes."
+    },
+    {
+      "name": "Season renewal and price update messages",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 600,
+      "monthlyMin": 20,
+      "monthlyMax": 60,
+      "pitchLine": "\"Before spring, every lawn customer gets a renewal with this year's mowing price and one tap to confirm.\"",
+      "whenAndWhatItTakes": "Month 5, before the next season. Needs the customer list and new prices."
+    },
+    {
+      "name": "Missed-spot complaint triage",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 40,
+      "monthlyMax": 100,
+      "pitchLine": "\"Customers send a picture of a missed strip or clippings on the drive; the assistant logs it for the crew and replies with when it'll be fixed.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their fix-it policy. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Add-on upsell at sign-up",
+      "kind": "software",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 15,
+      "monthlyMax": 40,
+      "pitchLine": "\"When someone signs up for mowing, the form offers hedge trimming, aeration and mulch at a plan-holder price.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their add-on prices."
+    },
+    {
+      "name": "Voice notes to lawn estimate",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1200,
+      "monthlyMin": 40,
+      "monthlyMax": 100,
+      "pitchLine": "\"Walk the yard, say lot size, slopes, beds and gates into the phone, and it drafts the mowing estimate.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their pricing rules. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Weekly route summary for the owner",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 40,
+      "monthlyMax": 100,
+      "pitchLine": "\"Every Friday it drafts a short note: lawns mowed, skips, complaints, new sign-ups and which route has room.\"",
+      "whenAndWhatItTakes": "Month 6. Needs the route sheet in use. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Customer portal with mow history",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 2000,
+      "monthlyMin": 30,
+      "monthlyMax": 80,
+      "pitchLine": "\"Customers see their mowing dates, invoices and add-ons, and update the card or gate code themselves.\"",
+      "whenAndWhatItTakes": "Month 6. Needs autopay and the route sheet in place."
+    },
+    {
+      "name": "Job costing per lawn",
+      "kind": "software",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 20,
+      "monthlyMax": 60,
+      "pitchLine": "\"See which lawns actually pay once drive time and minutes on site are counted, so you reprice the ones losing money.\"",
+      "whenAndWhatItTakes": "Month 8. Needs a season of route times."
+    },
+    {
+      "name": "HOA grounds service report generator",
+      "kind": "software",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 20,
+      "monthlyMax": 60,
+      "pitchLine": "\"After each visit, the HOA gets a lawn and grounds report with pictures, work done and requests answered.\"",
+      "whenAndWhatItTakes": "Month 9, once they hold an HOA contract. Needs their checklist."
+    },
+    {
+      "name": "Neighbour referral reward texts",
+      "kind": "ai",
+      "oneTimeMin": 200,
+      "oneTimeMax": 600,
+      "monthlyMin": 30,
+      "monthlyMax": 80,
+      "pitchLine": "\"Happy mowing customers get a personalised text offering a free mow for each neighbour they refer, written in your voice.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their referral offer. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Applicant screener for lawn crew",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 40,
+      "monthlyMax": 100,
+      "pitchLine": "\"Spring hiring means a pile of texts from people who have never pushed a mower. A short chat weeds them out and books interviews with the crew-ready ones.\"",
+      "whenAndWhatItTakes": "Whenever they hire. Needs must-haves and pay. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Mowing sign-up and route kit for solo operators",
+      "whoPays": "Lawn care operators, monthly",
+      "min": 19,
+      "max": 59,
+      "unit": "monthly",
+      "pitchLine": "\"Every one-trailer mowing outfit needs the same sign-up, route day and autopay. Priced in tens of dollars a month, it sells to all of them.\"",
+      "whyItWorks": "Low price, a large pool of operators, identical workflow."
+    },
+    {
+      "route": "Equipment dealer's lawn business starter page",
+      "whoPays": "The outdoor power equipment dealer",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Everyone who buys a commercial mower from you is starting a lawn business. Give them a starter site as part of the purchase.\"",
+      "whyItWorks": "Dealers want to sell more commercial mowers and keep customers loyal."
+    },
+    {
+      "route": "Landscape association mowing member pack",
+      "whoPays": "The association, per bundle",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "pitchLine": "\"Members switch on a mowing plan page, sign-up and route-day booking as a membership perk.\"",
+      "whyItWorks": "Small lawn firms are the bulk of members and the least online."
+    },
+    {
+      "route": "Agency lawn template licence",
+      "whoPays": "The marketing agency, per site",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "pitchLine": "\"Agencies can't make money on lawn clients at full build prices. A ready mowing template lets them serve the low end profitably.\"",
+      "whyItWorks": "It turns unprofitable small clients into profitable ones for agencies."
+    },
+    {
+      "route": "Lawn franchise local sign-up pages",
+      "whoPays": "The lawn care franchise, per territory",
+      "min": 600,
+      "max": 2000,
+      "unit": "one-time",
+      "pitchLine": "\"Each lawn franchise owner gets local sign-up, their own route days and neighbourhood pages, instead of one corporate form.\"",
+      "whyItWorks": "Territory owners pay for local sign-ups that fill their routes."
+    },
+    {
+      "route": "HOA grounds portal for management firms",
+      "whoPays": "The management firm, annually",
+      "min": 2000,
+      "max": 6000,
+      "unit": "per-year",
+      "pitchLine": "\"Every community you manage gets one place for grounds requests, mowing schedules and service reports from its lawn contractor.\"",
+      "whyItWorks": "Firms with many communities buy once; grounds complaints are constant."
+    },
+    {
+      "route": "Senior mowing program for councils on aging",
+      "whoPays": "The local council on aging or nonprofit",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"Seniors request help mowing, volunteers or vetted lawn crews pick up the jobs, and the nonprofit tracks it in one place.\"",
+      "whyItWorks": "Nonprofits get grants for home help and need a simple system."
+    },
+    {
+      "route": "Vacant property lawn service for banks and investors",
+      "whoPays": "The property preservation company",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Vacant homes need mowing with picture proof every visit. A work order and photo log site wins those contracts for local lawn crews.\"",
+      "whyItWorks": "Preservation companies need proof and reliability; the lawn client provides both."
+    },
+    {
+      "route": "Monthly lawn route pricing note",
+      "whoPays": "Lawn operators, monthly",
+      "min": 9,
+      "max": 29,
+      "unit": "monthly",
+      "pitchLine": "\"A short monthly note on mowing prices by lot size in the region, built only from rates lawn operators share with you.\"",
+      "whyItWorks": "Small operators underprice constantly; shared data helps them."
+    },
+    {
+      "route": "Student lawn business starter for trade programs",
+      "whoPays": "The vocational school or youth program",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Students starting a mowing business learn sign-ups, routes and invoicing on a real lawn care site template.\"",
+      "whyItWorks": "Programs need practical tools; the template is already built."
+    },
+    {
+      "route": "One lawn crew per suburb",
+      "whoPays": "A lawn company in another suburb",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"Mowing is won street by street. I build for one lawn outfit per suburb, and yours doesn't have one yet.\"",
+      "whyItWorks": "Tight geography makes exclusivity meaningful."
+    },
+    {
+      "route": "Rescue lawn sites with no sign-up",
+      "whoPays": "The lawn company with a dead-end site",
+      "min": 400,
+      "max": 1200,
+      "unit": "one-time",
+      "pitchLine": "\"If your lawn site is a phone number and a stock picture, I can add sign-up, route days and autopay in a week.\"",
+      "whyItWorks": "Cheap, fast and obviously better."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Lawn site build plus care plan, one contract",
+      "min": 900,
+      "max": 1500,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The lawn site and the care plan go on one contract, so changing mowing prices in spring is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 14,
+      "offer": "Autopay for weekly lawn plans",
+      "min": 200,
+      "max": 600,
+      "unit": "one-time",
+      "trigger": "The first online sign-up comes in, or they mention chasing a late payment.",
+      "line": "\"Your first online mowing sign-up is in. Let's put their card on autopay before the first mow.\""
+    },
+    {
+      "rung": 3,
+      "day": 30,
+      "offer": "Review asks and Google profile upkeep",
+      "min": 99,
+      "max": 199,
+      "unit": "monthly",
+      "trigger": "A month of weekly mows done for new customers from the site.",
+      "line": "\"Your new lawn customers have had four mows each. That's the time to ask for reviews.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Rain delay texts by route",
+      "min": 200,
+      "max": 600,
+      "unit": "one-time",
+      "trigger": "A rainy week brings 'where's my crew' calls.",
+      "line": "\"Those calls in the rain week are what this stops. One text per mowing route.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Route builder for new sign-ups",
+      "min": 600,
+      "max": 2000,
+      "unit": "one-time",
+      "trigger": "Sign-ups start landing on streets off their current routes.",
+      "line": "\"New lawns are coming in from all over. The route builder slots them onto the right mowing day.\""
+    },
+    {
+      "rung": 6,
+      "day": 150,
+      "offer": "Fall cleanup and aeration campaign",
+      "min": 150,
+      "max": 400,
+      "unit": "one-time",
+      "trigger": "Late summer arrives with a full list of mowing customers.",
+      "line": "\"Every lawn you mow needs a leaf cleanup. One offer to your list fills October.\""
+    },
+    {
+      "rung": 7,
+      "day": 240,
+      "offer": "Season renewal and price update messages",
+      "min": 200,
+      "max": 600,
+      "unit": "one-time",
+      "trigger": "Winter, with next season's prices decided.",
+      "line": "\"Let's renew every lawn customer at this year's price before anyone else knocks on their door.\""
+    }
+  ]
+}

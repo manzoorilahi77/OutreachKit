@@ -1,0 +1,833 @@
+{
+  "schemaVersion": 1,
+  "category": "Irrigation & sprinkler repair",
+  "slug": "irrigation-sprinkler-repair",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Out family batch. Low ticket, constant repeat work: the kit leans on seasonal start-ups, blowouts, backflow tests and service plans, with prices sized to small repair jobs. No controller or valve brands named. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Spring sprinkler start-up and autumn blowout booking",
+      "contains": "What a start-up includes, the winterisation blowout before the first freeze, booking windows by month, and what happens if pipes freeze full of water",
+      "why": "Two seasonal visits are the backbone of this trade. A page that books them online fills the route before the rush."
+    },
+    {
+      "section": "Sprinkler trouble guide",
+      "contains": "Broken or stuck heads, a zone that won't turn on, a valve that won't shut off, low pressure, geysers, soggy spots and a controller that resets itself",
+      "why": "Owners describe the symptom, not the part. A trouble guide gets the right repair booked with the right parts on the van."
+    },
+    {
+      "section": "Backflow testing and certification",
+      "contains": "Why the water utility requires a yearly backflow test, what the tester checks, filing the certificate, and repairs if the device fails",
+      "why": "Backflow letters arrive with a deadline. A clear page turns a confusing notice into a booked, recurring appointment."
+    },
+    {
+      "section": "Water-smart irrigation upgrades",
+      "contains": "Weather-based controllers, rain and soil sensors, drip conversion for beds, matched-precipitation nozzles, and checking for a local water rebate",
+      "why": "High water bills and watering limits bring upgrade buyers. Showing the options sells the bigger ticket in a low-ticket trade."
+    },
+    {
+      "section": "HOA and commercial irrigation contracts",
+      "contains": "Monthly irrigation inspections for HOAs, office parks and churches, repair authorisation limits, wet-check reports, and seasonal schedule changes",
+      "why": "Contract work smooths out the season. Property managers look for a page that shows the irrigation company can handle multiple sites."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C47",
+      "siteType": "local-conversion",
+      "name": "Fix My Sprinklers",
+      "heroLayout": "split-photo",
+      "mood": [
+        "friendly",
+        "quick",
+        "clear"
+      ],
+      "bestFor": "One-van irrigation repair techs who win on answering fast and showing up the same week",
+      "pairsWithTier": "starter",
+      "headlineSample": "Sprinkler repair in {City}, booked this week",
+      "whyItFits": "Teal reads as water and tangerine makes the call button pop, and the humanist type feels like a helpful tech, not a company."
+    },
+    {
+      "id": "b",
+      "themeId": "C39",
+      "siteType": "booking-first",
+      "name": "Season Route",
+      "heroLayout": "card-stack",
+      "mood": [
+        "dependable",
+        "organised",
+        "local"
+      ],
+      "bestFor": "Irrigation companies whose year runs on start-ups, blowouts and backflow tests booked by route",
+      "pairsWithTier": "standard",
+      "headlineSample": "Sprinkler start-ups and blowouts in {City}",
+      "whyItFits": "The family's combo. Linen and brick keep the booking cards calm and readable, and slab headings give a small local outfit some weight."
+    },
+    {
+      "id": "c",
+      "themeId": "C10",
+      "siteType": "b2b-capability",
+      "name": "Managed Irrigation",
+      "heroLayout": "type-led",
+      "mood": [
+        "precise",
+        "accountable",
+        "plain"
+      ],
+      "bestFor": "Irrigation firms bidding HOA, office park and municipal maintenance contracts",
+      "pairsWithTier": "premium",
+      "headlineSample": "Irrigation management for {City} HOAs and properties",
+      "whyItFits": "Steel blue and a neutral grotesque read like a facilities proposal, which is how property managers compare irrigation contractors."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Someone in {City} with a sprinkler head shooting water into the street searches for repair and finds {Business Name} with no site. They want to know you fix that and when you can come.",
+      "hook": "Open their Maps listing and confirm there's no Website button. Screenshot it for when they reply.",
+      "linkLine": "What that homeowner would find instead: {demo-link}"
+    },
+    {
+      "angle": "Facebook-only link",
+      "line": "Your listing links to Facebook, where the start-up schedule is a post from weeks ago. A homeowner wants to book a sprinkler start-up, not scroll for the date.",
+      "hook": "Tap the link and confirm it goes to Facebook. Note any seasonal schedule post.",
+      "linkLine": "A sprinkler site where people book the visit: {demo-link}"
+    },
+    {
+      "angle": "Old free-host site",
+      "line": "Your site still has a free-host banner and last year's blowout prices. In a trade that runs on repeat visits, an out-of-date page makes customers call someone else.",
+      "hook": "Open their site and look for old prices, an old year or a builder banner. Note which.",
+      "linkLine": "Same irrigation company, current: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "On a phone your sprinkler site's phone number isn't tappable. People look for irrigation repair standing in a wet lawn.",
+      "hook": "Only if they have a site. Load it on a phone and note what fails. Screenshot it for when they reply.",
+      "linkLine": "Your sprinkler site, working on a phone: {demo-link}"
+    },
+    {
+      "angle": "No way to book a blowout",
+      "line": "There's no way to book a sprinkler blowout or start-up online with {Business Name}. Most customers would pick a slot in a minute and leave the gate code.",
+      "hook": "Check listing, bios and any site for online booking. If none, the angle holds.",
+      "linkLine": "Online booking for start-ups and blowouts: {demo-link}"
+    },
+    {
+      "angle": "Repairs posted, never organised",
+      "line": "You post the satisfying stuff: a cracked lateral dug out and fixed, a valve box cleaned up. Those irrigation repairs would sell more as a trouble guide than as scattered posts.",
+      "hook": "Find two repair posts you can name by problem. Mention one if they reply.",
+      "linkLine": "Your sprinkler repairs, sorted by problem: {demo-link}"
+    },
+    {
+      "angle": "Reviews about the water bill",
+      "line": "Your reviews mention a water bill that dropped after a leak fix and a tech who explained the controller. That's exactly what new irrigation customers want to read, and it stays on your listing.",
+      "hook": "Copy one review phrase about the bill, a leak or the controller. Quote it back if they reply.",
+      "linkLine": "Those reviews next to the sprinkler fixes they describe: {demo-link}"
+    },
+    {
+      "angle": "Blowout season",
+      "line": "Every autumn the blowout calls arrive in the same two weeks before the first freeze. A booking page fills the irrigation route in order instead of by whoever calls loudest.",
+      "hook": "Use from late August through October in freeze climates, or March for start-ups. Name the season.",
+      "linkLine": "Ready for blowout season: {demo-link}"
+    },
+    {
+      "angle": "Weekend sprinkler leaks",
+      "line": "Sprinklers break on Saturday when the system runs and the owner is home to see it. A repair request form catches that call while the water's still running.",
+      "hook": "Call their number on a weekend. If it hits voicemail, the angle holds.",
+      "linkLine": "A sprinkler repair request that works on weekends: {demo-link}"
+    },
+    {
+      "angle": "Hiring a tech",
+      "line": "Saw you're hiring an irrigation tech. Good techs check whether the company looks organised before they apply.",
+      "hook": "Only if they posted a hiring note. Note the role and date.",
+      "linkLine": "An irrigation company site with a careers page: {demo-link}"
+    },
+    {
+      "angle": "Towns on the route",
+      "line": "Your irrigation route covers several towns, but nothing tells someone in {Neighborhood} you come there. 'Sprinkler repair' plus the town is the search.",
+      "hook": "Find towns in their reviews or posts; use one at the edge of their route.",
+      "linkLine": "A sprinkler page for each town on the route: {demo-link}"
+    },
+    {
+      "angle": "Upgrade rebates",
+      "line": "If your water district offers a rebate on smart controllers, that belongs on your irrigation page. It's the easiest upgrade a homeowner says yes to.",
+      "hook": "Check whether their water district has a controller or drip rebate. Only use this if one exists.",
+      "linkLine": "Controller upgrades and rebates explained: {demo-link}"
+    },
+    {
+      "angle": "Licence and backflow certification",
+      "line": "Backflow tests need a certified tester, and many states license irrigation work. Showing your licence and tester certification on a page answers the utility letter's first question.",
+      "hook": "Check the state registry and any backflow tester list for a record. Never quote a number you didn't see.",
+      "linkLine": "Licence, backflow certification and testing on one page: {demo-link}"
+    },
+    {
+      "angle": "Customers for years",
+      "line": "Sounds like a lot of your sprinkler customers have been with you for years. When they move or a neighbour asks, they need a page to send people to.",
+      "hook": "Look for reviews mentioning years of service or neighbours. Quote it back.",
+      "linkLine": "Where the next sprinkler referral would land: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "That {specific recent job} you posted is a tidy irrigation repair. Work like that is what a stranger needs to see before trusting you in their yard.",
+      "hook": "Pick their newest repair or install post and name it: problem, fix, town if tagged.",
+      "linkLine": "That sprinkler job, front and centre: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, that {specific recent job} you posted is a clean sprinkler repair.\n\nI looked up irrigation companies in {City} and found {Business Name} on Maps, but no site where customers can book a start-up or blowout or describe a broken zone. I put together a sample irrigation site, with marked placeholders where your photos would go.\n\nWant me to send it?",
+    "dm2": "{Owner}, following up in case my note got buried. Here's the sample sprinkler site for {Business Name}: {demo-link}\n\nIt has online booking for start-ups, blowouts and backflow tests, a sprinkler trouble guide, and a repair request form. If it's not for you, say so and I'll leave it.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for irrigation companies in {City}. I sent you a message about a sample site. Did it come through?\"\n\nIF NO:\n\"No problem. It's a sample sprinkler site for {Business Name} with online booking for start-ups and blowouts, a trouble guide and a repair form, and marked placeholders where your photos would go. Can I text you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, then ask how they book blowouts today\n\"It's {Build Range} depending on how many booking types and town pages you want, then {Care Range} a month for hosting and changes. For your route I'd quote about {Build Price}, which a couple of weeks of blowouts covers.\"\n\"Ten minutes this week to go through it?\"\n\nCLOSE:\n\"I'll send a short scope and deposit invoice. It's live before blowout season.\"",
+    "objections": [
+      {
+        "objection": "My customers just call me every year.",
+        "handler": "\"They do, all in the same two weeks. Online booking lets them pick a slot and leave the gate code, and you build the irrigation route instead of answering the phone.\""
+      },
+      {
+        "objection": "My jobs are too small to need a website.",
+        "handler": "\"That's why it's priced for a small outfit. A couple of weeks of blowouts covers it, and the booking page takes the busywork off you.\""
+      },
+      {
+        "objection": "I'm already full in the spring.",
+        "handler": "\"Then the site helps you fill the shoulders: backflow tests, controller upgrades and HOA contracts that pay outside the rush.\""
+      },
+      {
+        "objection": "My nephew does my website.",
+        "handler": "\"Great. Happy to hand over the booking layout and the trouble guide. If it stalls before blowout season, the offer stands.\""
+      },
+      {
+        "objection": "I'm on a lead platform already.",
+        "handler": "\"Shared sprinkler leads go to several companies and you pay for each. Your own site books your repeat customers without a fee.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}: seasonal booking, a trouble guide, a backflow page and a few town pages.\""
+      }
+    ],
+    "email": {
+      "subject": "Sprinkler site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for irrigation and sprinkler companies around {City}. {Business Name} has good reviews and repair posts, but no site comes up where customers can book a start-up or blowout.\n\nSo I built a sample first: online booking for start-ups, blowouts and backflow tests, a sprinkler trouble guide and a repair request form, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and changes. If not, it comes down at the end of the month.\n\nTen minutes on the phone this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"{Owner}, it's {Your Name}. I build websites for sprinkler companies in {City} and made a sample one for {Business Name} with blowout booking. I'll text the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm shutting off the {Business Name} sprinkler demo on Friday.\n\nWant it left on? A one-word reply works.",
+    "nurture": "Hi {Owner}, blowout season is a few weeks off and the phone is about to get busy. Thought of {Business Name}.\n\nThe sample sprinkler site with online booking is still up, same price: {demo-link}"
+  },
+  "pricing": {
+    "bullets": [
+      "Size the build to the trade: a few weeks of blowout revenue should cover it, so keep the starter lean.",
+      "Online booking for start-ups, blowouts and backflow tests is the core feature; price each booking type as a line.",
+      "A trouble guide earns repair searches all season; price it once and add symptoms over time.",
+      "Add the HOA and commercial page only for companies that want contract work.",
+      "Keep monthly products small; this owner thinks in visits worth a few hundred dollars.",
+      "Never pad the build with gallery pages; irrigation customers buy on availability and trust, not portfolios."
+    ],
+    "lineItems": [
+      {
+        "item": "Seasonal booking type (start-up, blowout or backflow; each)",
+        "min": 150,
+        "max": 400,
+        "unit": "one-time",
+        "description": "Max with route-based time windows, gate code and controller location fields, and reminder texts.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Sprinkler trouble guide",
+        "min": 250,
+        "max": 600,
+        "unit": "per-page",
+        "description": "Max with symptom pictures, a self-check list and a repair request linked to each symptom.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Backflow testing page with certificate lookup",
+        "min": 200,
+        "max": 500,
+        "unit": "per-page",
+        "description": "Max with utility-specific deadlines and a lookup for past test certificates.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Water-smart upgrade page",
+        "min": 200,
+        "max": 450,
+        "unit": "per-page",
+        "description": "Max when it covers controllers, drip conversion and the local rebate process.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "HOA and commercial capability page",
+        "min": 250,
+        "max": 600,
+        "unit": "per-page",
+        "description": "Max with sample wet-check reports, insurance details and a bid request form.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Town service-area page (each)",
+        "min": 150,
+        "max": 350,
+        "unit": "per-page",
+        "description": "Max when each page lists route days and local water rules.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Google profile upkeep for sprinkler service",
+      "min": 150,
+      "max": 300,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Each week a sprinkler repair or upgrade goes on your Maps profile with the town, and seasonal hours stay correct through blowout season.\"",
+      "when": "Day 30, once the site is live."
+    },
+    {
+      "name": "Review asks after each irrigation visit",
+      "min": 79,
+      "max": 179,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"After every start-up or repair, the customer gets a text asking for a review. With this many visits a year, reviews pile up fast.\"",
+      "when": "Day 30. The easiest second sale."
+    },
+    {
+      "name": "Blowout and start-up reminder postcards",
+      "min": 150,
+      "max": 400,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A postcard to last year's customers with the blowout booking link lands before they think about calling anyone else.\"",
+      "when": "Late August for blowouts, February for start-ups."
+    },
+    {
+      "name": "Van wrap and door hanger artwork",
+      "min": 200,
+      "max": 600,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Your van parks on a dozen streets a day. A wrap with the booking site and a door hanger for the neighbours turns each stop into the next sprinkler call.\"",
+      "when": "Right after launch."
+    },
+    {
+      "name": "Water-bill season upgrade campaign",
+      "min": 250,
+      "max": 550,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"When summer water bills arrive, a campaign for smart controllers and drip conversion reaches the customers most likely to upgrade their irrigation.\"",
+      "when": "Pitch in May, run in July and August."
+    },
+    {
+      "name": "HOA board one-sheet",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A one-page irrigation capability sheet for HOA boards and property managers, with your wet-check report sample.\"",
+      "when": "Month 3, if they want contract work."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Lawn care and mowing companies",
+        "whoPays": "The lawn care company, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The mowing crews on your customers' lawns spot broken heads every week. I'll build their site, and they'll send the sprinkler repairs to you.\"",
+        "whyItWorks": "Mowers see the problems first and rarely fix irrigation. The referral flows naturally."
+      },
+      {
+        "route": "Irrigation supply branch",
+        "whoPays": "The irrigation supply distributor",
+        "min": 2000,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"The supply branch where you buy heads and valves has every irrigation contractor in town on its books. Introduce me.\"",
+        "whyItWorks": "Suppliers have budgets and a contractor list that is your prospect list."
+      },
+      {
+        "route": "Plumbers who get sprinkler calls",
+        "whoPays": "The plumbing company, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"Plumbers get backflow and outdoor leak calls they don't want. Their site can send those to you, and you send indoor work back.\"",
+        "whyItWorks": "Overlap at the backflow device makes a natural two-way referral."
+      },
+      {
+        "route": "Landscape installers who need irrigation",
+        "whoPays": "The landscape company, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"Every new garden needs drip lines. The landscape installer who subs that to you needs a site, and your intro gets it built.\"",
+        "whyItWorks": "Landscapers rely on irrigation subs and trust the one they use."
+      },
+      {
+        "route": "Sod and lawn renovation crews",
+        "whoPays": "The sod company, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"New sod dies without a working sprinkler system. The sod crew you check systems for needs a site too.\"",
+        "whyItWorks": "Sod and irrigation are sold to the same lawn in the same week."
+      },
+      {
+        "route": "HOA management companies",
+        "whoPays": "The HOA management company",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"HOA managers juggle irrigation complaints from residents by email. A common-area request page with zone and location fixes that.\"",
+        "whyItWorks": "Managers have a budget for resident tools and the irrigation client already services their common areas."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Parts lookup assistant for the irrigation supply branch",
+        "whoPays": "The irrigation supply distributor, annually",
+        "min": 2500,
+        "max": 8000,
+        "unit": "per-year",
+        "pitchLine": "\"Contractors describe or picture a broken head or valve and the assistant suggests the matching part in stock at that branch.\"",
+        "whyItWorks": "Wrong-part returns cost the branch time; contractors stay loyal to the one that makes it easy."
+      },
+      {
+        "route": "Property issue spotter for the lawn crew",
+        "whoPays": "The lawn care company, monthly",
+        "min": 75,
+        "max": 200,
+        "unit": "monthly",
+        "pitchLine": "\"Mowing crews snap a broken sprinkler head on the route and the assistant sends the homeowner a repair offer from your partner.\"",
+        "whyItWorks": "The lawn crew earns a referral fee or goodwill; the irrigation client gets repairs."
+      },
+      {
+        "route": "Backflow notice helper for the water utility",
+        "whoPays": "The water utility, annually",
+        "min": 3000,
+        "max": 10000,
+        "unit": "per-year",
+        "pitchLine": "\"Residents with a backflow test notice ask what it means. An assistant answers and lists certified testers, including your client.\"",
+        "whyItWorks": "Utilities field thousands of confused calls; the irrigation client knows the questions."
+      },
+      {
+        "route": "HOA irrigation complaint sorter",
+        "whoPays": "The HOA management company, monthly",
+        "min": 150,
+        "max": 350,
+        "unit": "monthly",
+        "pitchLine": "\"Residents report dry patches and broken heads with a picture; the assistant groups them by zone and sends one sprinkler work order.\"",
+        "whyItWorks": "Managers stop forwarding single complaints; the irrigation client gets organised tickets."
+      },
+      {
+        "route": "Drip design helper for landscape installers",
+        "whoPays": "The landscape company",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"Landscapers guess at drip runs for new beds. Upload the bed layout and get a draft parts list and zone count to send the irrigation sub for a firm price.\"",
+        "whyItWorks": "Faster quotes for the landscaper and a steady stream of drip installs for your client."
+      },
+      {
+        "route": "Sod watering coach for the sod crew",
+        "whoPays": "The sod company",
+        "min": 600,
+        "max": 1500,
+        "unit": "one-time",
+        "pitchLine": "\"New sod customers get watering guidance by text for the first weeks, and a sprinkler check offer if zones look dry.\"",
+        "whyItWorks": "Fewer dead-sod complaints for the sod crew and repair work for the irrigation client."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Missed-call text-back for sprinkler repairs",
+      "kind": "automation",
+      "oneTimeMin": 0,
+      "oneTimeMax": 250,
+      "monthlyMin": 79,
+      "monthlyMax": 149,
+      "pitchLine": "\"Miss a call in a valve box and the caller gets a text asking for the address, which zone is broken and a picture of the head.\"",
+      "whenAndWhatItTakes": "Day 30. Needs their number forwarded and approved wording."
+    },
+    {
+      "name": "Online start-up, blowout and backflow booking",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1800,
+      "monthlyMin": 50,
+      "monthlyMax": 120,
+      "pitchLine": "\"Customers pick a sprinkler blowout slot on their street's route day and leave the gate code. You stop playing phone tag in October.\"",
+      "whenAndWhatItTakes": "Month 1, before the next season. Needs their route days, service prices and capacity per day."
+    },
+    {
+      "name": "Review reply drafts for irrigation visits",
+      "kind": "ai",
+      "oneTimeMin": 200,
+      "oneTimeMax": 700,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Each review gets a reply drafted that mentions the repair or the blowout, ready for your thumbs-up between stops.\"",
+      "whenAndWhatItTakes": "Month 2. Needs ten past replies. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Card-on-file billing after each visit",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 30,
+      "monthlyMax": 100,
+      "pitchLine": "\"The card on file gets charged when the irrigation visit is marked done, with a receipt listing the heads and valves replaced.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their payment account and parts price list."
+    },
+    {
+      "name": "Last-year customer rebooking sequence",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 30,
+      "monthlyMax": 100,
+      "pitchLine": "\"Every customer from last season gets their sprinkler start-up or blowout offer with one-tap booking, before the season opens.\"",
+      "whenAndWhatItTakes": "Month 2. Needs last season's customer list with addresses."
+    },
+    {
+      "name": "Sprinkler symptom picture triage",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2500,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Customers send a picture of the geyser or the soggy spot, and the tool suggests the likely part, so the van has it on board.\"",
+      "whenAndWhatItTakes": "Month 4. Needs past repair pictures labelled with the part used. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Route planner for seasonal visits",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Booked start-ups and blowouts are grouped by street and ordered by drive time, so a tech does more irrigation visits per day.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the booking system live and their tech start points."
+    },
+    {
+      "name": "Backflow certificate tracker and utility filing",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2500,
+      "monthlyMin": 30,
+      "monthlyMax": 100,
+      "pitchLine": "\"Every backflow test result is stored by address with its due date, and the certificate goes to the utility the same day.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the utility's filing format and their tester details."
+    },
+    {
+      "name": "After-hours sprinkler repair line",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1800,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"It answers evening calls, tells them how to shut off the irrigation at the valve tonight, and books the repair.\"",
+      "whenAndWhatItTakes": "Month 4. Needs shut-off instructions and their calendar. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Sprinkler chatbot on watering schedules and rules",
+      "kind": "ai",
+      "oneTimeMin": 700,
+      "oneTimeMax": 2000,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"It answers 'how long should zone three run' and 'what days can I water' from your guidance and the local rules, and books a check if needed.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their schedule guidance and local watering rules. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Zone map per property",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2500,
+      "monthlyMin": 30,
+      "monthlyMax": 100,
+      "pitchLine": "\"Each customer gets a sprinkler zone map with valve locations and head types, so any tech can fix it without hunting.\"",
+      "whenAndWhatItTakes": "Month 5. Needs techs to sketch zones on their next visit."
+    },
+    {
+      "name": "Wet-check report generator",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2500,
+      "monthlyMin": 30,
+      "monthlyMax": 100,
+      "pitchLine": "\"Techs tap through each zone, note issues and pictures, and the HOA or homeowner gets a tidy irrigation report with repair approvals.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their inspection checklist."
+    },
+    {
+      "name": "Freeze warning blowout alerts",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 20,
+      "monthlyMax": 60,
+      "pitchLine": "\"When an early freeze is forecast, unbooked customers get a text to book their blowout before the pipes crack.\"",
+      "whenAndWhatItTakes": "Month 6, before autumn. Needs the customer list and their service area."
+    },
+    {
+      "name": "Water bill savings explainer drafts",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1200,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"From the customer's controller settings and lawn size, it drafts a plain note on what a smart controller or drip conversion could change, for you to check.\"",
+      "whenAndWhatItTakes": "Month 6. Needs their upgrade prices and typical settings. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Customer portal with zone map and visit history",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3500,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Customers see their sprinkler zone map, past visits and next blowout date, and book repairs without calling.\"",
+      "whenAndWhatItTakes": "Month 7. Needs zone maps and booking in place."
+    },
+    {
+      "name": "Voice notes to repair invoice",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1800,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Say what you replaced at the end of the irrigation visit, and it drafts the invoice with parts and labour for you to send.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their parts list and labour rates. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Parts usage and van restock list",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 2000,
+      "monthlyMin": 30,
+      "monthlyMax": 80,
+      "pitchLine": "\"Parts logged on each visit build a restock list for the van, so nobody drives back for a valve diaphragm.\"",
+      "whenAndWhatItTakes": "Month 6. Needs a basic parts list and techs logging parts."
+    },
+    {
+      "name": "HOA monthly irrigation summary writer",
+      "kind": "ai",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"From the month's wet checks it drafts a short summary for the HOA board: zones fixed, water saved, approvals needed.\"",
+      "whenAndWhatItTakes": "Month 8, once they hold HOA contracts. Needs wet-check reports. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Job costing by visit type",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2500,
+      "monthlyMin": 30,
+      "monthlyMax": 100,
+      "pitchLine": "\"See whether start-ups, blowouts, backflow tests or repairs actually pay best per hour once drive time and parts are in.\"",
+      "whenAndWhatItTakes": "Month 9. Needs a season of visits with times and parts."
+    },
+    {
+      "name": "Applicant screener for irrigation techs",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1200,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Applicants say whether they've repaired valves and controllers and have a licence, and you only call the ones who fit.\"",
+      "whenAndWhatItTakes": "Whenever they hire. Needs must-haves and pay range. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Seasonal sprinkler booking for every irrigation outfit",
+      "whoPays": "Irrigation companies, monthly",
+      "min": 29,
+      "max": 99,
+      "unit": "monthly",
+      "pitchLine": "\"Every irrigation company drowns in blowout calls in the same fortnight. Route-day booking built for one works for all of them.\"",
+      "whyItWorks": "Low price, obvious pain and the same workflow everywhere."
+    },
+    {
+      "route": "Contractor finder for an irrigation parts distributor",
+      "whoPays": "The irrigation distributor",
+      "min": 5000,
+      "max": 20000,
+      "unit": "one-time",
+      "pitchLine": "\"Homeowners searching for sprinkler repair could be sent to contractors who buy from your branches. A finder keeps them loyal to you.\"",
+      "whyItWorks": "Distributors want contractor loyalty and lack a homeowner channel."
+    },
+    {
+      "route": "Water utility certified tester directory",
+      "whoPays": "The water utility",
+      "min": 4000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Your backflow notices tell residents to find a certified tester. A searchable tester directory with online submission cuts calls to your office.\"",
+      "whyItWorks": "Utilities run compliance programs and need cleaner submissions."
+    },
+    {
+      "route": "Irrigation association member booking kit",
+      "whoPays": "The association, per bundle",
+      "min": 1000,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Members switch on start-up, blowout and backflow booking with a trouble guide, as a membership benefit.\"",
+      "whyItWorks": "A practical member perk that reaches many small irrigation firms."
+    },
+    {
+      "route": "Smart controller rebate program portal",
+      "whoPays": "The water district",
+      "min": 5000,
+      "max": 20000,
+      "unit": "one-time",
+      "pitchLine": "\"Residents apply for the controller rebate, book an approved contractor and upload the install proof in one flow.\"",
+      "whyItWorks": "Districts fund conservation and need fewer abandoned applications."
+    },
+    {
+      "route": "Agency white-label for irrigation clients",
+      "whoPays": "The marketing agency, per site",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "pitchLine": "\"Agencies don't know how sprinkler companies book by route. License the irrigation template with booking already wired.\"",
+      "whyItWorks": "Agencies get a niche build without learning the trade."
+    },
+    {
+      "route": "Property management irrigation request portal",
+      "whoPays": "The management firm, annually",
+      "min": 2000,
+      "max": 8000,
+      "unit": "per-year",
+      "pitchLine": "\"Every community you manage reports sprinkler problems in one place, with pictures and zones, routed to the contracted irrigation company.\"",
+      "whyItWorks": "Firms with many properties buy once; irrigation complaints are constant in summer."
+    },
+    {
+      "route": "Lawn care franchise irrigation add-on",
+      "whoPays": "The lawn care franchise, per territory",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "pitchLine": "\"Lawn franchise territories get sprinkler questions daily. An add-on page that refers repairs to a local partner earns them a fee.\"",
+      "whyItWorks": "Franchises want add-on revenue without new crews."
+    },
+    {
+      "route": "School and parks irrigation schedule board",
+      "whoPays": "The school district or parks department",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Fields need watering around games and events. A shared schedule board with the irrigation contractor stops soaked sidelines.\"",
+      "whyItWorks": "Public grounds have budgets and visible complaints."
+    },
+    {
+      "route": "Seasonal parts price note for irrigation techs",
+      "whoPays": "Irrigation contractors, monthly",
+      "min": 15,
+      "max": 49,
+      "unit": "monthly",
+      "pitchLine": "\"A short monthly note on head, valve and controller prices, built only from invoices irrigation techs share with you.\"",
+      "whyItWorks": "Cheap, useful, and honest because the data is contributed."
+    },
+    {
+      "route": "Sprinkler outfits in neighbouring metros",
+      "whoPays": "An irrigation company in another metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"The booking flow that took the blowout rush off one irrigation owner's phone is ready for yours, and I only take one per metro.\"",
+      "whyItWorks": "Same template, new territory, no conflict."
+    },
+    {
+      "route": "Take over dead irrigation company sites",
+      "whoPays": "The irrigation company with a broken site",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "pitchLine": "\"If your sprinkler site still shows old prices and no booking, I can move you onto a route-booking build that's already live.\"",
+      "whyItWorks": "They already know the site hurts them; the fix is ready."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Sprinkler site build plus care plan, one contract",
+      "min": 1200,
+      "max": 2200,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The sprinkler site and the care plan sit on one contract, so changing blowout prices is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Review asks after each visit and profile upkeep",
+      "min": 150,
+      "max": 300,
+      "unit": "monthly",
+      "trigger": "The first week of irrigation visits booked through the site.",
+      "line": "\"You did a dozen sprinkler visits this week. Each one could be a review with a single text.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "Last-year customer rebooking sequence",
+      "min": 300,
+      "max": 900,
+      "unit": "one-time",
+      "trigger": "Six weeks before start-up or blowout season, with last season's customer list in hand.",
+      "line": "\"Last year's sprinkler customers are your easiest bookings. One message each, one tap to book.\""
+    },
+    {
+      "rung": 4,
+      "day": 75,
+      "offer": "Route planner for seasonal visits",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "trigger": "Bookings for the season pass what one tech can do without crossing town twice.",
+      "line": "\"Your blowout bookings are scattered across town. Grouping them by street gets an extra irrigation visit into every day.\""
+    },
+    {
+      "rung": 5,
+      "day": 120,
+      "offer": "Backflow certificate tracker and utility filing",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "trigger": "They mention chasing paperwork for backflow certificates.",
+      "line": "\"That stack of backflow paperwork is what this ends. Results stored, certificates filed, reminders sent next year.\""
+    },
+    {
+      "rung": 6,
+      "day": 200,
+      "offer": "Wet-check report generator",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "trigger": "They land or bid on a first HOA or commercial irrigation contract.",
+      "line": "\"HOA boards want an irrigation report every month. This makes it from your checks in minutes.\""
+    },
+    {
+      "rung": 7,
+      "day": 300,
+      "offer": "Freeze warning blowout alerts",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "trigger": "Autumn approaches with a list of customers who haven't booked a blowout.",
+      "line": "\"An early freeze cracks the systems of everyone who forgot. A sprinkler alert books them and saves their pipes.\""
+    }
+  ]
+}
