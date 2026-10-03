@@ -1,0 +1,869 @@
+{
+  "schemaVersion": 1,
+  "category": "Independent restaurants",
+  "slug": "independent-restaurants",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Food family batch. Thin-margin category: lead with direct pickup ordering and the catering form, keep monthly add-ons small. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Today's specials board",
+      "contains": "Soup of the day, the fish that came in this morning and the weekend special, edited by the owner from a phone in a minute and dated so nobody orders yesterday's dish",
+      "why": "Regulars decide on a Thursday night from the specials. A specials board that changes daily tells them the kitchen is open and cooking."
+    },
+    {
+      "section": "First time with our cuisine",
+      "contains": "A short guide to the dishes a newcomer should try first, how they're eaten, the heat level, and the family story behind the recipes, written by the owner",
+      "why": "People searching for authentic cuisine often don't know what to order. The restaurant that explains its dishes plainly turns a curious first visit into a regular."
+    },
+    {
+      "section": "Dietary key for the menu",
+      "contains": "Vegetarian, vegan and spice marks set by the kitchen, a cross-contact note in the owner's own words, and an ask-your-server line for anything not listed",
+      "why": "Groups pick a restaurant by whether the one vegan or gluten-avoiding friend can eat there, and they check the menu before they suggest it."
+    },
+    {
+      "section": "Kids and family night",
+      "contains": "Kids menu, high chairs and booster seats, room for a stroller, crayons at the table, and the family night deal if they run one",
+      "why": "Parents choosing a family restaurant check whether the kids can eat cheaply and whether a stroller fits before they load the car."
+    },
+    {
+      "section": "Holiday meals and gift cards",
+      "contains": "Thanksgiving and Easter pre-order meals with a pickup window, the holiday hours, and dining gift cards bought online",
+      "why": "Holiday pre-orders bring cash in before the January slow month, and diners buy restaurant gift cards in December if they can do it from a phone."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C30",
+      "siteType": "local-conversion",
+      "name": "Open Today",
+      "heroLayout": "menu-board",
+      "mood": [
+        "hungry",
+        "homey",
+        "quick"
+      ],
+      "bestFor": "Diners and family restaurants that need today's hours, the menu and a call button before anything else",
+      "pairsWithTier": "starter",
+      "headlineSample": "Breakfast all day and home cooking in {City}",
+      "whyItFits": "Butter yellow and denim blue read like a diner placemat, and the geometric display type keeps today's hours legible on a phone in a parking lot."
+    },
+    {
+      "id": "b",
+      "themeId": "C32",
+      "siteType": "menu-and-order",
+      "name": "Kitchen Table",
+      "heroLayout": "split-photo",
+      "mood": [
+        "warm",
+        "sensory",
+        "settled"
+      ],
+      "bestFor": "Neighbourhood restaurants that want direct pickup orders and a catering form instead of paying app commission",
+      "pairsWithTier": "standard",
+      "headlineSample": "Family recipes, cooked fresh every night in {City}",
+      "whyItFits": "The family combo, Olive Grove. Cream, olive and a bookish serif feel like a printed menu on a kitchen table, and the Order button passes contrast."
+    },
+    {
+      "id": "c",
+      "themeId": "C48",
+      "siteType": "premium-brand",
+      "name": "Chef's Counter",
+      "heroLayout": "full-bleed-photo",
+      "mood": [
+        "dramatic",
+        "intimate",
+        "seasonal"
+      ],
+      "bestFor": "Chef-driven dining rooms with a tasting menu, a wine list and a private dining room to sell",
+      "pairsWithTier": "premium",
+      "headlineSample": "A seasonal tasting menu, served nightly in {City}",
+      "whyItFits": "A dark editorial page lets the plates glow the way they do under dining-room light, and the Didone display signals a dinner worth booking ahead."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your restaurant's Google listing has the hours and a phone number but no website, so someone deciding where to eat tonight can't read your menu before they pick.",
+      "hook": "Open their Maps listing and confirm there's no Website button. Screenshot it for when they reply.",
+      "linkLine": "Here's what would sit behind that button: {demo-link}"
+    },
+    {
+      "angle": "Menu only as a photo",
+      "line": "The only menu I could find for the restaurant is a phone photo of the printed one, and the prices are too small to read. People pick the place whose menu they can scroll.",
+      "hook": "Check the listing, Facebook and Instagram highlights for the menu. Note whether it's a photo, a PDF or missing.",
+      "linkLine": "Your menu as real text, readable on a phone: {demo-link}"
+    },
+    {
+      "angle": "Facebook-only hours",
+      "line": "The restaurant's hours live on a Facebook post from the spring, and the Google listing says something different. A family that drives over to a locked door doesn't try twice.",
+      "hook": "Compare the hours on Google, Facebook and the door sign in any recent post. Note the mismatch exactly.",
+      "linkLine": "One set of hours, the same everywhere: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "I opened your restaurant site on my phone and the menu ran off the side of the screen. Almost everyone choosing dinner is standing somewhere holding a phone.",
+      "hook": "Only if they have a site. Load the menu page on your phone and note what breaks. Screenshot it for when they reply.",
+      "linkLine": "The same restaurant, rebuilt for a phone: {demo-link}"
+    },
+    {
+      "angle": "Delivery-app-only ordering",
+      "line": "The only way to order pickup from the restaurant online is through a delivery app, which takes a cut of every order. Regulars would happily order direct if there were a button.",
+      "hook": "Tap every order link on their profile. If they all go to delivery apps and none is direct, the angle holds.",
+      "linkLine": "Direct pickup ordering, no commission on regulars: {demo-link}"
+    },
+    {
+      "angle": "Catering with no form",
+      "line": "Your posts say the restaurant caters, but there's no way to ask about trays, headcount or a date without calling during the dinner rush.",
+      "hook": "Look for 'we cater' in their bio, posts or menu. Check whether any page takes a catering enquiry.",
+      "linkLine": "A catering enquiry form with headcount and date: {demo-link}"
+    },
+    {
+      "angle": "Reviews naming dishes",
+      "line": "Your Google reviews keep naming the same dish, and that praise never reaches anyone reading your menu. It should sit right next to the dish they're raving about.",
+      "hook": "Read their reviews and find the dish people mention most. Quote one phrase back if they reply.",
+      "linkLine": "Your reviews next to the dishes they describe: {demo-link}"
+    },
+    {
+      "angle": "Patio season",
+      "line": "Patio weather is when people search for somewhere to eat outside tonight. A restaurant page that says the patio's open, with hours, gets the table.",
+      "hook": "Use this from April to September. Check their posts for a patio, sidewalk tables or a garden.",
+      "linkLine": "A restaurant page that shows the patio is open: {demo-link}"
+    },
+    {
+      "angle": "Hours questions in comments",
+      "line": "Under your last few posts people are asking whether the kitchen is open late and whether you take walk-ins. Every one of those is a diner who almost came in.",
+      "hook": "Find comments asking 'are you open', 'what time' or 'do you take reservations'. Note one with its date.",
+      "linkLine": "Hours and walk-in rules nobody has to ask about: {demo-link}"
+    },
+    {
+      "angle": "Hiring line cooks",
+      "line": "Saw the restaurant is hiring a line cook. Good cooks look at whether the kitchen seems busy and organised before they apply, and the first place they look is online.",
+      "hook": "Only if they posted a hiring story or a 'now hiring' sign. Note the role and the date.",
+      "linkLine": "A restaurant page with a join-the-kitchen section: {demo-link}"
+    },
+    {
+      "angle": "Holiday pre-orders",
+      "line": "Thanksgiving pre-orders are coming, and right now the only way to order a holiday meal from the restaurant is to call and hope someone writes it down.",
+      "hook": "Use this from October to mid-November. Check whether they posted holiday meals, pies or trays last year.",
+      "linkLine": "A holiday pre-order page with pickup times: {demo-link}"
+    },
+    {
+      "angle": "Dietary questions in comments",
+      "line": "People keep asking in your comments whether a dish is vegetarian or how spicy it is. A menu with the kitchen's own dietary marks answers that before the group chat decides.",
+      "hook": "Find comments asking about vegan, gluten or spice. Never state an allergen fact yourself; the kitchen sets every mark.",
+      "linkLine": "A menu with the kitchen's dietary key: {demo-link}"
+    },
+    {
+      "angle": "Regulars-only word of mouth",
+      "line": "Your reviews read like a family restaurant everyone's parents have been going to for years. The newcomers who replace those regulars look you up first.",
+      "hook": "Look for reviews saying 'been coming here for years' or 'our family spot'. Quote one.",
+      "linkLine": "Where a first-time diner would land: {demo-link}"
+    },
+    {
+      "angle": "A specific recent dish",
+      "line": "That {specific recent job} you posted is the kind of dish people drive across town for. It should be the first thing on the restaurant's menu page, not three days down the feed.",
+      "hook": "Pick their newest dish or special post and name it exactly: the dish and what makes it look good.",
+      "linkLine": "That dish, front and centre on your menu: {demo-link}"
+    },
+    {
+      "angle": "Specials lost in the feed",
+      "line": "You post a new special almost every day, and by Friday the soup from Tuesday is still sitting on top of your feed. A specials board on the restaurant's own page always shows today.",
+      "hook": "Scroll their last two weeks of posts and count the specials. Note the most recent one by name.",
+      "linkLine": "A specials board that always shows today: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner} — that {specific recent job} you posted looks like the reason people come back.\n\nI looked for a menu I could read on my phone for {Business Name} and only found your social pages and a delivery app. I put together a sample restaurant page with the menu as text, today's hours and a direct pickup button, with marked placeholders where your photos would go.\n\nWant me to send it over?",
+    "dm2": "{Owner} — following up in case my message got buried between services. Here's the sample restaurant page for {Business Name}: {demo-link}\n\nIt has the menu as real text, a specials board you can edit from your phone, direct pickup ordering and a catering form. If it's not for you, say so and I won't message again.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for independent restaurants here in {City}. I sent you a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"No surprise, it's a busy line. Short version: I built a sample page for {Business Name} with your menu as text, today's hours, direct pickup ordering and a catering form, with marked placeholders where your photos would go. Can I text you the link to look at after close?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range}, then {Care Range} a month for hosting and menu changes. For a restaurant like yours I'd normally quote about {Build Price}.\"\n\"Direct pickup orders skip the app's cut, so the regulars who switch help pay for it. Can I walk you through it for ten minutes between lunch and dinner this week?\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. We start the day it clears, and your menu goes in first.\"",
+    "objections": [
+      {
+        "objection": "We're on the delivery apps already.",
+        "handler": "\"Keep them for new customers. The site gives your regulars a direct pickup button, so the people who already love you stop paying the app's cut on every order.\""
+      },
+      {
+        "objection": "Margins are too thin to spend on a website.",
+        "handler": "\"Understood, which is why this is priced like a slow week, not a renovation. The direct orders and one catering job a month are what pay for it.\""
+      },
+      {
+        "objection": "My nephew does our Facebook page.",
+        "handler": "\"Keep him on it. Facebook is where people see the specials. The site is where the menu, hours and pickup button live, and he can link to it.\""
+      },
+      {
+        "objection": "Everyone already knows where we are.",
+        "handler": "\"Your regulars do. The people searching for dinner nearby tonight don't, and they decide from the menu and the hours on their phone.\""
+      },
+      {
+        "objection": "I change the menu all the time.",
+        "handler": "\"That's why the specials board edits from your phone in a minute, and menu changes are part of the monthly care. Text me the change and it's done that day.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}, because it's a real-text menu, direct pickup and a catering form. A handful of direct orders a week covers the monthly.\""
+      }
+    ],
+    "email": {
+      "subject": "Menu and pickup page for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for independent restaurants around {City}. {Business Name} has dishes people clearly love on its social pages, but no menu a hungry person can read on a phone and no way to order pickup direct.\n\nI built a sample first rather than ask for your time: the menu as real text, today's hours, a specials board you can edit from your phone, direct pickup ordering and a catering form, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and menu changes. If not, no problem, it comes down at the end of the month.\n\nWorth ten minutes between lunch and dinner?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build websites for restaurants in {City}, and I put together a sample menu and pickup page for {Business Name}. I'll text you the link so you can look after close. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner} — I'm taking the {Business Name} menu demo down on Friday to free up the space.\n\nWant me to keep it up? One word is fine either way.",
+    "nurture": "Hi {Owner} — holiday pre-orders and office party catering start filling up in November, and most restaurants take those calls by hand. Thought of you.\n\nThe sample menu page is still here whenever you want it, and nothing's changed on price. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to a few slow weeknights, never to a kitchen repair. Restaurant margins are thin and the owner counts every dollar.",
+      "Price the menu by section count, not page count. A long menu with prices, modifiers and dietary marks is the real work.",
+      "Sell direct pickup ordering as savings against the delivery app's cut, and keep its monthly fee below what one busy night of commission costs.",
+      "The catering form is its own line. It feeds the profitable half of the business and is the easiest add-on to justify.",
+      "Holiday pre-order pages and gift card stores sell in October, not in December when the kitchen is slammed.",
+      "Keep every monthly add-on small enough that a slow January doesn't cancel it."
+    ],
+    "lineItems": [
+      {
+        "item": "Direct pickup ordering setup",
+        "min": 400,
+        "max": 1000,
+        "unit": "one-time",
+        "description": "Max with modifiers, combo meals, scheduled pickup times and a sold-out switch the kitchen controls.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Catering menu and enquiry form",
+        "min": 300,
+        "max": 800,
+        "unit": "one-time",
+        "description": "Max with tray sizes by headcount, a delivery radius note and a deposit request step.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Specials board editable from a phone",
+        "min": 150,
+        "max": 400,
+        "unit": "one-time",
+        "description": "Max when specials auto-expire at close and post to the Google profile too.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Holiday pre-order meal page",
+        "min": 200,
+        "max": 500,
+        "unit": "per-page",
+        "description": "Max with pickup time slots, a cut-off date and a printable kitchen prep list.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Online dining gift cards",
+        "min": 200,
+        "max": 450,
+        "unit": "one-time",
+        "description": "Max with emailed and printable cards, preset amounts and a December banner.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Second-language menu",
+        "min": 250,
+        "max": 700,
+        "unit": "one-time",
+        "description": "Max when the menu, dietary key and catering form are all translated and checked by the owner.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Private dining room page",
+        "min": 200,
+        "max": 500,
+        "unit": "per-page",
+        "description": "Max with set menus by headcount, a floor plan and a minimum-spend note.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Menu photo day in the dining room",
+      "min": 300,
+      "max": 800,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"One slow afternoon shooting the dishes people order most gives the restaurant a menu that looks as good as it tastes, and a month of posts.\"",
+      "when": "Month 2, booked on a quiet weekday afternoon before dinner prep."
+    },
+    {
+      "name": "Google profile upkeep with menu and hours sync",
+      "min": 150,
+      "max": 300,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Your Google profile shows today's menu, holiday hours and a new dish photo every week, so the restaurant looks open when people search for dinner.\"",
+      "when": "Day 30. The easiest second sale for a restaurant."
+    },
+    {
+      "name": "Review requests after pickup orders",
+      "min": 49,
+      "max": 129,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"An hour after a pickup order, the diner gets a short text asking how the meal was, while the food is still on their mind.\"",
+      "when": "Day 30, once direct pickup ordering is live."
+    },
+    {
+      "name": "Office lunch catering push",
+      "min": 300,
+      "max": 700,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A short campaign to the offices within a few miles of the restaurant, offering lunch trays with a simple order form.\"",
+      "when": "Pitch in August for the September return to the office, again in January."
+    },
+    {
+      "name": "Holiday pre-order and gift card campaign",
+      "min": 250,
+      "max": 600,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A November push for holiday meal pre-orders and dining gift cards, on the site and in your stories, so the money lands before the January slow month.\"",
+      "when": "Pitch in October, run from early November to Christmas."
+    },
+    {
+      "name": "Table tent and takeout bag insert artwork",
+      "min": 150,
+      "max": 400,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A table tent and a takeout bag card with a code for direct pickup, so the next order from that diner skips the delivery app.\"",
+      "when": "Right after direct ordering goes live."
+    },
+    {
+      "name": "Local food blogger tasting night",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"I invite a handful of local foodie accounts for a tasting on a slow night, and their posts send people to the restaurant's menu page.\"",
+      "when": "Month 3, on a Monday or Tuesday when the dining room is quiet."
+    },
+    {
+      "name": "Restaurant week and patio season campaign",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A landing page and posts for restaurant week or the patio opening, with the set menu and a reservation or walk-in note.\"",
+      "when": "Six weeks before the local restaurant week or the first warm weekend."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Their produce and meat supplier",
+        "whoPays": "The local food distributor",
+        "min": 2000,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"The supplier who delivers your produce sells to every restaurant in the area and takes orders by phone and fax. Introduce me.\"",
+        "whyItWorks": "Local distributors have real budgets and a customer list that is the restaurant prospect list. The chef's word gets the meeting."
+      },
+      {
+        "route": "The plaza or strip-centre landlord",
+        "whoPays": "The property owner",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"Your landlord has a dining and retail plaza with no site listing its tenants or vacant units. Your restaurant is the anchor that makes the page.\"",
+        "whyItWorks": "Landlords need tenants and foot traffic. A restaurant tenant in good standing is a warm introduction."
+      },
+      {
+        "route": "The bakery or roaster that supplies them",
+        "whoPays": "The bakery or roaster, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The bakery that makes your bread and the roaster behind your coffee both sell wholesale. Their sites can say which restaurants serve them.\"",
+        "whyItWorks": "Small food makers sell to restaurants and the public at once. A customer who features them is the best introduction they get."
+      },
+      {
+        "route": "The venue or hall they cater for",
+        "whoPays": "The venue, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The hall where you cater showers and funerals has no page showing its rooms or its approved caterers. The restaurant can introduce me.\"",
+        "whyItWorks": "Small venues book through caterers they trust. The restaurant is on their list, and you arrive as a known name."
+      },
+      {
+        "route": "The shops on the same block",
+        "whoPays": "Each shop, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The florist and the barber next to the restaurant send customers to each other every day. I build for them on the same street.\"",
+        "whyItWorks": "Neighbouring owners eat at the restaurant and see its site. A block is a ready-made cluster."
+      },
+      {
+        "route": "The local food festival organiser",
+        "whoPays": "The festival committee",
+        "min": 1500,
+        "max": 5000,
+        "unit": "one-time",
+        "pitchLine": "\"The food festival where the restaurant has a booth every summer needs a vendor list, a map and a ticket page. Introduce me to whoever runs it.\"",
+        "whyItWorks": "Festival committees rebuild every year with volunteer effort. A returning restaurant vendor gets you to the organiser."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Reorder assistant for the produce supplier",
+        "whoPays": "The local food distributor, monthly",
+        "min": 300,
+        "max": 900,
+        "unit": "monthly",
+        "pitchLine": "\"Restaurant customers text their produce and meat order at closing, and the supplier gets a clean order sheet before the truck loads.\"",
+        "whyItWorks": "Phone and text orders are the distributor's biggest error source. The restaurant client knows exactly how they order."
+      },
+      {
+        "route": "Leasing enquiry assistant for the plaza landlord",
+        "whoPays": "The property owner, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Anyone asking about an empty unit next to the restaurant gets size, rent range and a tour request at any hour.\"",
+        "whyItWorks": "Empty units cost the landlord every month. A tool that books tours is an easy line in a leasing budget."
+      },
+      {
+        "route": "Approved-caterer matcher for the venue",
+        "whoPays": "The venue, one-time",
+        "min": 800,
+        "max": 2500,
+        "unit": "one-time",
+        "pitchLine": "\"Couples and families describe their event and cuisine, and the venue's assistant suggests caterers from its approved list, the restaurant included.\"",
+        "whyItWorks": "Venues answer the same caterer question every week. The restaurant client is the first name on the list."
+      },
+      {
+        "route": "Wine and beverage distributor's pairing finder",
+        "whoPays": "The beverage distributor",
+        "min": 2000,
+        "max": 8000,
+        "unit": "one-time",
+        "pitchLine": "\"Diners pick a dish and the finder suggests a bottle the restaurant actually stocks from your book. It keeps your labels on their list.\"",
+        "whyItWorks": "Distributors fight for wine-list placement. A tool that sells their bottles at the table is worth more than a discount."
+      },
+      {
+        "route": "Order-taking phone line for the bakery next door",
+        "whoPays": "The bakery, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"The bakery that supplies your bread misses calls with its hands in dough. The same answering setup the restaurant uses takes their orders too.\"",
+        "whyItWorks": "Every small food business has the missed-call problem, and you already know how food orders are phrased."
+      },
+      {
+        "route": "Festival vendor question bot",
+        "whoPays": "The festival committee, per season",
+        "min": 500,
+        "max": 1500,
+        "unit": "one-time",
+        "pitchLine": "\"Restaurant and food-stall vendors asking about booth fees, power and health permits get answers from the festival's own rules, and volunteers stop answering the same email.\"",
+        "whyItWorks": "Organisers drown in vendor questions before every festival. The restaurant client already saw the mess from the vendor side."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Hours and holiday-closure sync",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 500,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Change the restaurant's hours once and the site, the Google profile and the Facebook page all match by the next minute, holiday closures included.\"",
+      "whenAndWhatItTakes": "At build or day 14. Needs the regular hours, the holiday calendar and access to the Google and Facebook pages."
+    },
+    {
+      "name": "Commission-free pickup ordering",
+      "kind": "software",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 39,
+      "monthlyMax": 99,
+      "pitchLine": "\"Regulars order pickup straight from the restaurant's menu page, pay up front, and the ticket prints in the kitchen with no app taking a cut.\"",
+      "whenAndWhatItTakes": "Day 14, or the day they complain about a delivery-app statement. Needs the full menu with modifiers and a payment account."
+    },
+    {
+      "name": "Daily specials editor from a phone",
+      "kind": "software",
+      "oneTimeMin": 150,
+      "oneTimeMax": 400,
+      "monthlyMin": 0,
+      "monthlyMax": 29,
+      "pitchLine": "\"Type the soup of the day on your phone before service and it's on the restaurant's specials board, dated, in under a minute.\"",
+      "whenAndWhatItTakes": "At build. Needs one person in the kitchen who will actually type the specials each morning."
+    },
+    {
+      "name": "Hours and menu answers in DMs and comments",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1200,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"'Are you open now' and 'do you have vegetarian dishes' get answered in seconds from the restaurant's real hours and menu, with a pickup link.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the menu, hours and the kitchen's approved dietary marks, updated with every menu change. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Catering enquiry follow-up sequence",
+      "kind": "automation",
+      "oneTimeMin": 250,
+      "oneTimeMax": 600,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Every catering enquiry gets a same-hour reply with the tray menu, then a nudge two days later, so the restaurant stops losing office orders to a slow callback.\"",
+      "whenAndWhatItTakes": "Month 2, once the catering form has a few enquiries. Needs the catering menu and who answers catering calls."
+    },
+    {
+      "name": "Gift card and holiday pre-order store",
+      "kind": "software",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Holiday meals and dining gift cards sold from the restaurant's own page, with pickup slots and a kitchen prep sheet by day.\"",
+      "whenAndWhatItTakes": "October, before Thanksgiving. Needs the holiday menu, the pickup windows and a payment account."
+    },
+    {
+      "name": "Review reply drafts that name the dish",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 700,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Every restaurant review gets a reply drafted in your voice that thanks them for the dish they mentioned, ready to approve between tickets.\"",
+      "whenAndWhatItTakes": "Month 2, alongside the Google profile upkeep. Needs a few past replies to learn the voice. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Walk-in waitlist with a ready text",
+      "kind": "software",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Friday walk-ins put their name on the restaurant's waitlist from the door and get a text when the table is ready, instead of crowding the host stand.\"",
+      "whenAndWhatItTakes": "Month 3, if they mention a crowded entrance on weekends. Needs a tablet at the host stand."
+    },
+    {
+      "name": "Specials caption writer",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 49,
+      "monthlyMax": 149,
+      "pitchLine": "\"Snap the special, and a short caption in the restaurant's voice with the dish, the price and today's hours is ready to post.\"",
+      "whenAndWhatItTakes": "Month 2. Needs a handful of past captions and the specials board in use. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Catering order builder with trays by headcount",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"An office manager enters headcount and date, picks trays from the restaurant's catering menu and pays a deposit without a single phone call.\"",
+      "whenAndWhatItTakes": "Month 3, once catering enquiries are steady. Needs tray sizes, per-head pricing and delivery rules."
+    },
+    {
+      "name": "After-hours phone answering for pickup orders",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 149,
+      "monthlyMax": 299,
+      "pitchLine": "\"During the rush or after close, the restaurant phone still answers hours questions and sends a pickup ordering link by text.\"",
+      "whenAndWhatItTakes": "Month 4, once they trust the DM answers. Needs the menu, hours and policies. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Sold-out switch for the online menu",
+      "kind": "automation",
+      "oneTimeMin": 150,
+      "oneTimeMax": 400,
+      "monthlyMin": 0,
+      "monthlyMax": 29,
+      "pitchLine": "\"When the kitchen runs out of the short rib, one tap hides it from online ordering until tomorrow, so nobody pays for a dish you can't make.\"",
+      "whenAndWhatItTakes": "Month 3, after the first sold-out complaint. Needs pickup ordering live and a cook willing to tap the button."
+    },
+    {
+      "name": "Regulars' digital punch card",
+      "kind": "software",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Every direct pickup order earns a stamp, and the tenth meal comes with a free dessert, so regulars keep ordering from the restaurant, not the app.\"",
+      "whenAndWhatItTakes": "Month 4. Needs pickup ordering live and a reward the owner is happy to give."
+    },
+    {
+      "name": "Dietary question answers from the kitchen's own notes",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Diners ask whether a dish is vegetarian or contains nuts and get only the kitchen's approved answer, or an ask-your-server reply when it isn't on file.\"",
+      "whenAndWhatItTakes": "Month 5. Needs written dish notes signed off by the chef, re-approved at every menu change. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Lapsed-regular win-back texts",
+      "kind": "automation",
+      "oneTimeMin": 250,
+      "oneTimeMax": 600,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Pickup customers who haven't ordered in a couple of months get a friendly note with this week's special and the menu link.\"",
+      "whenAndWhatItTakes": "Month 4, once there is order history. Needs pickup ordering data and the owner's OK on the offer."
+    },
+    {
+      "name": "New-dish menu description writer",
+      "kind": "ai",
+      "oneTimeMin": 200,
+      "oneTimeMax": 600,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Tell it what's in the new dish and how it's cooked, and you get a short, appetite-first menu line to approve before it goes on the site.\"",
+      "whenAndWhatItTakes": "Month 3, at the next menu change. Needs the chef's notes on each dish. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Plate cost and menu margin sheet",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Every dish on the menu with its ingredient cost and margin, so you know which plates to push on the specials board and which to re-price.\"",
+      "whenAndWhatItTakes": "Month 6. Needs recipes with portion sizes and current supplier prices."
+    },
+    {
+      "name": "Supplier invoice price-jump reader",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 99,
+      "monthlyMax": 199,
+      "pitchLine": "\"Photograph the produce invoice and it flags anything that jumped since last week, so a pricier case of avocados doesn't quietly eat a dish's margin.\"",
+      "whenAndWhatItTakes": "Month 6, after the margin sheet. Needs a few weeks of supplier invoices. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Kitchen shift swap board",
+      "kind": "software",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1200,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Line cooks and servers post the restaurant shifts they can't work and pick up open ones, and the owner approves from a phone instead of a group chat at midnight.\"",
+      "whenAndWhatItTakes": "Month 6, for restaurants with a staff of several. Needs the weekly schedule and staff phone numbers."
+    },
+    {
+      "name": "Prep list forecaster from past orders",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"Each morning the kitchen gets a suggested prep list based on the same weekday's past orders and the weather, so less food ends up in the bin.\"",
+      "whenAndWhatItTakes": "Month 8, with several months of order history. Needs sales data by dish. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the specials board and pickup ordering for independents",
+      "whoPays": "Independent restaurants, monthly",
+      "min": 29,
+      "max": 99,
+      "unit": "monthly",
+      "pitchLine": "\"Every independent restaurant posts specials into a feed that buries them by Friday. A phone-edited specials board with direct pickup is a product.\"",
+      "whyItWorks": "The first restaurant paid for the workflow. Independents are many, cash-careful and easy to find on Maps."
+    },
+    {
+      "route": "State restaurant association member toolkit",
+      "whoPays": "The association",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer member restaurants a menu-first site template with direct pickup as a benefit of membership.\"",
+      "whyItWorks": "Associations need renewal reasons. One deal reaches owners who already trust the association's name."
+    },
+    {
+      "route": "Broadline food distributor's customer program",
+      "whoPays": "The distributor's marketing team",
+      "min": 5000,
+      "max": 20000,
+      "unit": "one-time",
+      "pitchLine": "\"Your restaurant accounts need menus online and pickup ordering. Offer it as a perk to customers who order over a threshold.\"",
+      "whyItWorks": "Distributors compete on loyalty, not just price. A tool their restaurants rely on keeps accounts from switching."
+    },
+    {
+      "route": "Small restaurant groups with several concepts",
+      "whoPays": "The group, per concept",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "pitchLine": "\"Each of your restaurants needs its own menu page and hours, sharing one gift card store. I build the frame once.\"",
+      "whyItWorks": "Groups buy once and roll out across concepts, and the owner already knows your work from one location."
+    },
+    {
+      "route": "Downtown development authority dining guide",
+      "whoPays": "The downtown authority or business improvement district",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Downtown needs a dining guide with every restaurant's hours and cuisine, updated by the restaurants themselves.\"",
+      "whyItWorks": "Downtown districts have marketing budgets and want foot traffic after five. Restaurants are their best story."
+    },
+    {
+      "route": "Food hall operators",
+      "whoPays": "The food hall, per stall plus a frame",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Every stall in the food hall needs a menu page and pickup ordering under one roof brand. I've built the restaurant version already.\"",
+      "whyItWorks": "One operator, many vendors, the same menu template. The hall pays for the frame and stalls pay for their pages."
+    },
+    {
+      "route": "Shared commissary and ghost kitchen brands",
+      "whoPays": "The commissary operator",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"Delivery-only brands in your commissary have menus but no direct ordering page. One template serves every kitchen in the building.\"",
+      "whyItWorks": "Virtual brands launch and close fast. A reusable menu-and-order frame is what the operator wants to offer tenants."
+    },
+    {
+      "route": "Restaurant brokers selling restaurants",
+      "whoPays": "The business broker, per listing",
+      "min": 300,
+      "max": 900,
+      "unit": "one-time",
+      "pitchLine": "\"A restaurant for sale shows better with a clean menu page and real hours online. I make every listing look like a running business.\"",
+      "whyItWorks": "Brokers sell on how established a restaurant looks. They list several a year and pay per listing."
+    },
+    {
+      "route": "Kitchen equipment dealer's customer sites",
+      "whoPays": "The equipment dealer",
+      "min": 3000,
+      "max": 12000,
+      "unit": "one-time",
+      "pitchLine": "\"Every restaurant you outfit needs a menu site on opening day. Bundle it into your new-kitchen package.\"",
+      "whyItWorks": "Dealers meet owners at the moment they're opening and spending. A bundled site makes their quote stand out."
+    },
+    {
+      "route": "Culinary school graduate launch kits",
+      "whoPays": "The culinary school, annually",
+      "min": 1500,
+      "max": 5000,
+      "unit": "per-year",
+      "pitchLine": "\"Graduates opening a pop-up or first restaurant leave with a menu page and a pickup button. It's a reason to enrol.\"",
+      "whyItWorks": "Schools sell outcomes, and every graduating class is a fresh cohort of future restaurant owners."
+    },
+    {
+      "route": "White-label menu-and-order template for agencies",
+      "whoPays": "The agency, per site",
+      "min": 400,
+      "max": 1200,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency picks up restaurant clients and builds from scratch. License my menu-first template with specials and pickup built in.\"",
+      "whyItWorks": "Agencies sell the client; you sell them the restaurant part you've already perfected."
+    },
+    {
+      "route": "One cuisine per neighbourhood, then the next city",
+      "whoPays": "New restaurant clients in a new metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I build for one restaurant per cuisine in each neighbourhood of {City}. The taquerias and noodle shops in the next city are wide open.\"",
+      "whyItWorks": "Owners care about the place across the street, not across the metro. Splitting by cuisine and neighbourhood keeps the pitch clean."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Restaurant menu site plus care plan, one contract",
+      "min": 1200,
+      "max": 2200,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The menu site and the care plan go on one contract, so a price change or a new dish is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 14,
+      "offer": "Commission-free pickup ordering",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "trigger": "They mention a delivery-app statement or the cut it takes.",
+      "line": "\"That delivery-app cut on your regulars' orders is what a direct pickup button on the restaurant's menu stops.\""
+    },
+    {
+      "rung": 3,
+      "day": 30,
+      "offer": "Google profile upkeep with menu and hours sync",
+      "min": 150,
+      "max": 300,
+      "unit": "monthly",
+      "trigger": "The Google listing still shows old hours or a menu that doesn't match the site.",
+      "line": "\"People find the restaurant on Maps first. Let's make the menu and hours there match the kitchen every week.\""
+    },
+    {
+      "rung": 4,
+      "day": 45,
+      "offer": "Catering enquiry follow-up sequence",
+      "min": 250,
+      "max": 600,
+      "unit": "one-time",
+      "trigger": "The catering form has sent its first few enquiries and one went unanswered for a day.",
+      "line": "\"That catering enquiry sat overnight. A same-hour reply with the tray menu keeps the office order from going elsewhere.\""
+    },
+    {
+      "rung": 5,
+      "day": 60,
+      "offer": "Menu photo day in the dining room",
+      "min": 300,
+      "max": 800,
+      "unit": "per-shoot",
+      "trigger": "The menu page still runs on marked placeholders or a few dim phone shots.",
+      "line": "\"One afternoon shooting your best-selling dishes makes the menu page look as good as the food.\""
+    },
+    {
+      "rung": 6,
+      "day": 90,
+      "offer": "Gift card and holiday pre-order store",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "trigger": "They post about holiday hours, pies or trays, or October arrives with no pre-order page.",
+      "line": "\"Holiday meals and dining gift cards from the restaurant's own page bring the cash in before January.\""
+    },
+    {
+      "rung": 7,
+      "day": 150,
+      "offer": "Hours and menu answers in DMs and comments",
+      "min": 400,
+      "max": 1200,
+      "unit": "one-time",
+      "trigger": "They say they spend nights answering 'are you open' and 'is this vegan' messages.",
+      "line": "\"Those late-night menu questions get answered from the kitchen's own notes while you close up.\""
+    },
+    {
+      "rung": 8,
+      "day": 180,
+      "offer": "Introduction to their produce supplier",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "trigger": "They mention the supplier's phone ordering or a missed delivery item.",
+      "line": "\"Your supplier still takes restaurant orders by phone. Would you introduce me to the owner?\""
+    }
+  ]
+}

@@ -1,0 +1,857 @@
+{
+  "schemaVersion": 1,
+  "category": "Meal prep & private chefs",
+  "slug": "meal-prep-private-chefs",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Food family batch. Two businesses in one category: weekly meal prep sells on subscriptions and cut-offs, private chefs sell on trust and a booking step. No nutrition or health outcome claims anywhere. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Weekly meal rotation and order cut-off",
+      "contains": "This week's rotating meals, the order-by day and time, delivery or pickup day, portion sizes, and a countdown so nobody misses the weekly cut-off",
+      "why": "Meal prep customers order on a weekly rhythm. The cut-off is the single fact they need most, and missing it loses a week's order."
+    },
+    {
+      "section": "Meal plans and subscriptions",
+      "contains": "Meals-per-week options, per-meal price the owner sets, how to skip a week, pause for travel or cancel, and when cards are charged",
+      "why": "Subscribers decide on how easy it is to pause and cancel. Clear rules up front turn a trial week into a standing order."
+    },
+    {
+      "section": "Macro labels and meal goals",
+      "contains": "Calories, protein, carbs and fat per meal as calculated by the chef, plus plan styles like high-protein, plant-based or low-carb, with no health promises",
+      "why": "Gym-goers and busy professionals choose meal prep by macros and plan style. They compare labels before they compare prices."
+    },
+    {
+      "section": "Delivery zones and pickup spots",
+      "contains": "Neighbourhoods and zip codes covered, delivery windows by zone, gym or studio pickup points, cooler bag drop-off, and what happens when nobody's home",
+      "why": "The first question from a new meal prep customer is whether you deliver to them. A zone map answers it before they leave."
+    },
+    {
+      "section": "Private chef dinners and in-home cooking",
+      "contains": "Dinner parties, date nights and weekly in-home cooking, what the chef brings, how groceries are billed, the kitchen the chef needs and the consultation step",
+      "why": "Private chef clients are letting someone into their kitchen. They hire the chef whose process feels clear and trustworthy before the first call."
+    },
+    {
+      "section": "Reheating, storage and container returns",
+      "contains": "How long each meal keeps in the fridge, oven and microwave reheating steps, freezing notes, and the reusable container return or deposit program",
+      "why": "New meal prep customers worry about what happens after the bag arrives. Clear reheating and storage notes head off most of the first week's support messages."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C17",
+      "siteType": "local-conversion",
+      "name": "Order by Thursday",
+      "heroLayout": "card-stack",
+      "mood": [
+        "energetic",
+        "clean",
+        "disciplined"
+      ],
+      "bestFor": "Meal preppers selling to gym-goers who need the weekly menu, macros and an order cut-off on one page",
+      "pairsWithTier": "starter",
+      "headlineSample": "Fresh high-protein meal prep, delivered weekly in {City}",
+      "whyItFits": "Basalt and lime on a dark ground feel like a training app, and the geometric display makes the cut-off and macros the loudest things on the page."
+    },
+    {
+      "id": "b",
+      "themeId": "C32",
+      "siteType": "menu-and-order",
+      "name": "Weekly Table",
+      "heroLayout": "split-photo",
+      "mood": [
+        "fresh",
+        "homey",
+        "dependable"
+      ],
+      "bestFor": "Meal prep kitchens with subscriptions, delivery zones and a menu that changes every week",
+      "pairsWithTier": "standard",
+      "headlineSample": "This week's meals, cooked fresh and delivered in {City}",
+      "whyItFits": "The family combo, Olive Grove. Cream, olive and a bookish serif feel like a home kitchen, which is what a weekly meal subscription is really selling."
+    },
+    {
+      "id": "c",
+      "themeId": "C9",
+      "siteType": "premium-brand",
+      "name": "Chef at Home",
+      "heroLayout": "full-bleed-photo",
+      "mood": [
+        "intimate",
+        "refined",
+        "evening"
+      ],
+      "bestFor": "Private and personal chefs selling dinner parties and weekly in-home cooking to busy households",
+      "pairsWithTier": "premium",
+      "headlineSample": "A private chef for dinner parties and weeknights in {City}",
+      "whyItFits": "A dark, quiet palette with a Didone display reads like a members' dining room, and signals a private chef's price without saying it."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your meal prep business has a Google listing and no website, so someone searching for weekly meal delivery can't see this week's menu or the order cut-off.",
+      "hook": "Open their Maps listing and confirm there's no Website button. Screenshot it for when they reply.",
+      "linkLine": "Here's what would sit behind that button: {demo-link}"
+    },
+    {
+      "angle": "Orders on a generic survey form",
+      "line": "Meal prep orders go through a generic survey form that doesn't show prices or totals. Customers want to see their weekly meal order add up before they commit.",
+      "hook": "Click their order link and note what it is: a survey form, a DM request or a payment link with no menu.",
+      "linkLine": "A weekly meal order with real totals: {demo-link}"
+    },
+    {
+      "angle": "Weekly menu only in stories",
+      "line": "This week's meal prep menu goes up as a story and vanishes before half your customers check. A weekly menu page would be there whenever they're ready to order.",
+      "hook": "Watch for the weekly menu story or a highlight called 'menu'. Note the day it goes up.",
+      "linkLine": "A weekly meal menu that stays up: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "I opened your meal prep site on my phone and the menu and order button didn't fit the screen. Meal orders get placed on a phone on Sunday night.",
+      "hook": "Only if they have a site. Load it on your phone and note what breaks. Screenshot it for when they reply.",
+      "linkLine": "The same meal prep site, rebuilt for a phone: {demo-link}"
+    },
+    {
+      "angle": "No subscription option",
+      "line": "Your regulars reorder their meal prep by hand every week. A subscription with skip and pause would keep them on without you chasing anyone on Sunday.",
+      "hook": "Look for posts reminding people to order, or comments like 'same as last week please'. Note one.",
+      "linkLine": "Weekly meal plans with skip and pause: {demo-link}"
+    },
+    {
+      "angle": "January reset season",
+      "line": "January is when people search for weekly meal prep to stick to their resolutions. A meal plan page with a clear first-week offer catches them before February.",
+      "hook": "Use this from late November to January. Check for last year's January posts or offers.",
+      "linkLine": "A January meal plan page, ready to go: {demo-link}"
+    },
+    {
+      "angle": "Cut-off confusion in comments",
+      "line": "People keep asking in your comments when the meal order deadline is. Every one of those questions is a customer who almost missed this week.",
+      "hook": "Find comments like 'is it too late to order' or 'when's the cut-off'. Quote one.",
+      "linkLine": "A meal order cut-off nobody can miss: {demo-link}"
+    },
+    {
+      "angle": "Delivery zone questions",
+      "line": "Under your recent meal prep posts, people keep asking whether you deliver to their neighbourhood. A zone map with delivery windows answers that before they scroll away.",
+      "hook": "Count 'do you deliver to' comments on recent posts. Note one neighbourhood name.",
+      "linkLine": "Meal delivery zones on one page: {demo-link}"
+    },
+    {
+      "angle": "Hiring kitchen help",
+      "line": "Saw you're hiring kitchen help for the meal prep days. Good cooks check whether a kitchen looks busy and organised before they apply.",
+      "hook": "Only if they posted a hiring story or a 'join the kitchen' post. Note the role and the date.",
+      "linkLine": "A meal prep site with a join-the-kitchen section: {demo-link}"
+    },
+    {
+      "angle": "Gym pickup point",
+      "line": "Your meals get picked up at a gym, and nothing online explains how that works. A pickup page with days and times would let the gym's members order without asking.",
+      "hook": "Look for posts tagging a gym or studio as a pickup spot. Note the gym only if they tagged it.",
+      "linkLine": "A gym pickup page for your meals: {demo-link}"
+    },
+    {
+      "angle": "Reviews nobody sees",
+      "line": "Your reviews talk about meals that actually taste good on day four, which is the whole worry with meal prep. That belongs next to the order button.",
+      "hook": "Read their reviews and copy one phrase about taste, portions or convenience. Quote it back if they reply.",
+      "linkLine": "Your meal prep reviews next to the menu: {demo-link}"
+    },
+    {
+      "angle": "Holiday dinner party season",
+      "line": "Holiday dinner parties are when people look for a private chef. A page with sample menus and a booking step catches them before the calendars fill.",
+      "hook": "Use this from October to early December. Look for any private chef dinner posts from last season.",
+      "linkLine": "Private chef dinners, ready to book for the holidays: {demo-link}"
+    },
+    {
+      "angle": "Macro questions in comments",
+      "line": "People keep asking how much protein is in your meals. Macro labels on the meal prep menu answer that and help the gym crowd pick a plan.",
+      "hook": "Find comments asking about protein, calories or carbs. Never estimate macros yourself; the chef supplies every number.",
+      "linkLine": "A meal menu with the chef's macro labels: {demo-link}"
+    },
+    {
+      "angle": "Private chef referrals only",
+      "line": "Sounds like your private chef clients all come from word of mouth. When a family moves away, the next household looking for a personal chef searches online first.",
+      "hook": "Look for posts thanking a client family or reviews mentioning a referral. Quote one without names.",
+      "linkLine": "Where a new private chef client would land: {demo-link}"
+    },
+    {
+      "angle": "A specific recent menu",
+      "line": "That {specific recent job} you posted looks like a meal people would happily eat on a Wednesday at their desk. It should be the first thing on the weekly menu page.",
+      "hook": "Pick their newest meal or dinner post and name it exactly: the dish and the plan or event it was for.",
+      "linkLine": "That meal, front and centre: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner} — that {specific recent job} you posted looks like a meal people would actually look forward to midweek.\n\nI looked for a way to order a week of meals from {Business Name} and only found the weekly story and a DM request. I put together a sample meal prep page with this week's menu, the order cut-off, delivery zones and a weekly plan with skip and pause, with marked placeholders where your photos would go.\n\nWant me to send it over?",
+    "dm2": "{Owner} — following up in case this got lost on a prep day. Here's the sample meal prep page for {Business Name}: {demo-link}\n\nIt has the weekly menu, a cut-off countdown, delivery zones, subscriptions with skip and pause, and a private chef booking page. If it's not for you, say so and I won't message again.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for meal prep kitchens and private chefs here in {City}. I sent you a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"No problem, prep days are long. Short version: I built a sample page for {Business Name} with your weekly menu, an order cut-off, delivery zones and subscriptions with skip and pause, with marked placeholders where your photos would go. Can I text you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range}, then {Care Range} a month for hosting and weekly menu updates. For a meal prep business like yours I'd normally quote about {Build Price}.\"\n\"A handful of customers moving to a weekly plan covers it. Can I walk you through it for ten minutes on a day you're not cooking?\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. We start the day it clears, and the weekly menu and cut-off go live first.\"",
+    "objections": [
+      {
+        "objection": "My customers just DM me their orders.",
+        "handler": "\"That works until you have to total thirty DMs on a Thursday night. The order page totals it, charges it and hands you one prep list.\""
+      },
+      {
+        "objection": "My menu changes every week.",
+        "handler": "\"That's the point of the weekly menu page. You update it from your phone in a few minutes, and the cut-off countdown resets itself.\""
+      },
+      {
+        "objection": "I'm a private chef, I don't need a menu online.",
+        "handler": "\"You don't need a menu. You need sample dinners, how bookings work and a consultation step, so a new family trusts you before they let you into their kitchen.\""
+      },
+      {
+        "objection": "I'm at capacity already.",
+        "handler": "\"Then subscriptions help you plan to that capacity. You know your numbers before you shop, and a waitlist holds the next customers.\""
+      },
+      {
+        "objection": "I use a payment link and that's enough.",
+        "handler": "\"Keep the payment account. The site adds what the link can't: the menu, the cut-off, delivery zones and the weekly plan that renews without you asking.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}, because it's a weekly menu, subscriptions and delivery zones. A few weekly plans cover it.\""
+      }
+    ],
+    "email": {
+      "subject": "Weekly meal order page for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for meal prep kitchens and private chefs around {City}. {Business Name} posts meals people clearly want, but ordering still means catching the weekly story and sending a DM before the cut-off.\n\nI built a sample first rather than ask for your time: this week's menu, an order cut-off countdown, delivery zones, weekly plans with skip and pause, and a private chef booking page, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and weekly menu updates. If not, no problem, it comes down at the end of the month.\n\nWorth ten minutes on a day you're not cooking?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build websites for meal prep businesses and private chefs in {City}, and I put together a sample weekly order page for {Business Name}. I'll text you the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner} — I'm taking the {Business Name} meal prep demo down on Friday to free up the space.\n\nWant me to keep it up? One word is fine either way.",
+    "nurture": "Hi {Owner} — January is when people sign up for weekly meal prep, and holiday dinner parties are when they look for a private chef. Both are coming. Thought of you.\n\nThe sample page is still here whenever you want it, and nothing's changed on price. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to a few weeks of one customer's standing order, not to a month of total sales. That's how a meal prepper measures money.",
+      "Subscriptions with skip and pause are the core of the site. Price the ordering logic, not the number of pages.",
+      "Price delivery zones by how many zones and windows there are. A single pickup point is quick; five zones with time slots is real work.",
+      "Private chef sites price on trust content: sample menus, process and a consultation step. They need fewer pages and more care.",
+      "Macro labels are priced per menu template, and the chef supplies every number. Never calculate them for the client.",
+      "Sell January plan pages in November and holiday dinner party pages in September."
+    ],
+    "lineItems": [
+      {
+        "item": "Weekly meal ordering with cut-off",
+        "min": 400,
+        "max": 1000,
+        "unit": "one-time",
+        "description": "Max with meal quantities, add-ons like snacks and drinks, an automatic cut-off and a printable order sheet per customer.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Delivery zone map with time windows",
+        "min": 200,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max with several zones, different fees and windows per zone, and gym pickup points.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Macro label template for the menu",
+        "min": 150,
+        "max": 400,
+        "unit": "one-time",
+        "description": "Max when labels show on the site and print for the containers, from numbers the chef supplies.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Private chef services and sample menus page",
+        "min": 250,
+        "max": 600,
+        "unit": "per-page",
+        "description": "Max with several sample dinner menus, a process timeline and a consultation request with date and guest count.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Reheating and storage guide",
+        "min": 100,
+        "max": 300,
+        "unit": "per-page",
+        "description": "Max with per-meal instructions linked from a code on each container.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Second-language meal menu",
+        "min": 250,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max when the menu, plan rules and reheating notes are all translated every week.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Weekly meal photo session",
+      "min": 300,
+      "max": 700,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"One session shooting the core meals in their containers and plated gives the weekly menu real pictures that match what arrives in the bag.\"",
+      "when": "Month 2, on a prep day when the core meals are already cooked."
+    },
+    {
+      "name": "Google profile upkeep for the meal prep kitchen",
+      "min": 99,
+      "max": 249,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"This week's meals and delivery areas on your Google profile every week, so people searching for meal prep near them see you're cooking.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Review requests after the first meal week",
+      "min": 29,
+      "max": 99,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"After a new customer's first week of meals, they get a short text asking how it went, while they're deciding whether to reorder.\"",
+      "when": "Day 30. The easiest second sale."
+    },
+    {
+      "name": "January meal plan campaign",
+      "min": 300,
+      "max": 700,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A January push for weekly meal plans with a first-week offer, on the site and in your stories, when people are looking for exactly this.\"",
+      "when": "Pitch in November, run from late December to the end of January."
+    },
+    {
+      "name": "Gym and studio partner flyer kit",
+      "min": 150,
+      "max": 400,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A front-desk flyer and a counter card with a code to order meal prep for pickup at that gym, so members order without asking the trainers.\"",
+      "when": "Right after launch, for each gym or studio pickup point."
+    },
+    {
+      "name": "Cooler bag and container label artwork",
+      "min": 150,
+      "max": 400,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Labels with the meal name, date, reheating code and your brand, plus a cooler bag design, so every delivery looks like the meal prep business it is.\"",
+      "when": "Month 2, once the reheating guide is live."
+    },
+    {
+      "name": "Holiday dinner party push for private chefs",
+      "min": 250,
+      "max": 600,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"An autumn push for private chef holiday dinners, with sample menus and a booking step, before the December calendar fills.\"",
+      "when": "Pitch in September, run from October to early December."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "The gyms where the meals are picked up",
+        "whoPays": "The gym owner, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The gym that hosts your meal pickups has a class schedule nobody can find on a phone. The meal prep owner can introduce me.\"",
+        "whyItWorks": "Gyms and meal preppers share customers. A partner the gym owner already trusts gets you in."
+      },
+      {
+        "route": "Personal trainers and nutrition coaches who refer",
+        "whoPays": "Each trainer or coach, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The trainers who send clients to your meal plans book sessions by DM. They need the same clear booking page.\"",
+        "whyItWorks": "Trainers refer meal prep and meal prep refers trainers. The circle is tight and the introduction is warm."
+      },
+      {
+        "route": "The commercial kitchen they rent",
+        "whoPays": "The kitchen owner",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The shared kitchen where you prep meals rents hours to other cooks with no page showing rates or open times. Introduce me.\"",
+        "whyItWorks": "Shared kitchens need renters. A tenant who preps there weekly is the best introduction."
+      },
+      {
+        "route": "The farm that supplies their produce",
+        "whoPays": "The farm",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The farm behind your meal prep vegetables sells a weekly box with a paper sign-up. A customer who features them gets you a meeting.\"",
+        "whyItWorks": "Small farms sell to cooks and households and need a sign-up page. The meal prepper is a steady, trusted buyer."
+      },
+      {
+        "route": "The wine shop that pairs the chef's dinners",
+        "whoPays": "The wine shop, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The wine shop that pairs bottles for your private chef dinners has no events or tasting page. The chef can make the introduction.\"",
+        "whyItWorks": "Wine shops run tastings and need sign-ups. The private chef sends them customers already."
+      },
+      {
+        "route": "Postpartum doulas and new-parent services",
+        "whoPays": "Each doula practice, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The doulas who recommend your meal plans to new parents book clients by email. They need a clear services page too.\"",
+        "whyItWorks": "New-parent services refer meal prep constantly. Same households, same trust, a template that carries over."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Membership question assistant for the gym",
+        "whoPays": "The gym owner, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"Prospective members ask about classes, prices and trial passes at night, and the gym's assistant answers from its own schedule, meal prep pickup included.\"",
+        "whyItWorks": "Gyms lose trial sign-ups to slow replies. The meal prep client already shares their members."
+      },
+      {
+        "route": "Client check-in assistant for the trainer",
+        "whoPays": "The trainer, monthly",
+        "min": 49,
+        "max": 129,
+        "unit": "monthly",
+        "pitchLine": "\"Training clients get a weekly check-in message and the trainer gets a summary, with a nudge to reorder meals from the partner kitchen.\"",
+        "whyItWorks": "Trainers struggle to keep clients accountable between sessions. A small monthly tool is easy to justify."
+      },
+      {
+        "route": "Renter enquiry assistant for the shared kitchen",
+        "whoPays": "The kitchen owner, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"Caterers and bakers ask about hourly rates, equipment and storage, and the shared kitchen's assistant answers and books a walkthrough.\"",
+        "whyItWorks": "Empty kitchen hours cost the owner money. The meal prep tenant can vouch for the need."
+      },
+      {
+        "route": "Farm box sign-up and swap assistant",
+        "whoPays": "The farm, per season",
+        "min": 500,
+        "max": 1500,
+        "unit": "one-time",
+        "pitchLine": "\"Households sign up for the farm's weekly box and ask to swap or skip, and the farm gets one clean packing list each week.\"",
+        "whyItWorks": "Farm box programs run on spreadsheets and texts. The meal prep client already orders from them every week."
+      },
+      {
+        "route": "Pairing suggester for the wine shop",
+        "whoPays": "The wine shop",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"Customers enter what they're cooking, or the private chef's menu, and get bottles the shop actually stocks.\"",
+        "whyItWorks": "Pairing questions are the shop's most common conversation. A tool that answers them sells bottles at home too."
+      },
+      {
+        "route": "Enquiry assistant for the doula practice",
+        "whoPays": "The doula practice, monthly",
+        "min": 79,
+        "max": 199,
+        "unit": "monthly",
+        "pitchLine": "\"Expecting parents ask about services and availability and get answers from the practice's own information, with a consult link and the partner meal prep plan for after the birth.\"",
+        "whyItWorks": "Doulas field enquiries while with clients. The meal prep client already shares their families."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Order cut-off reminder texts",
+      "kind": "automation",
+      "oneTimeMin": 150,
+      "oneTimeMax": 400,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"The day before the meal order cut-off, regulars who haven't ordered get a short text with this week's menu, so fewer weeks get missed.\"",
+      "whenAndWhatItTakes": "At build or day 14. Needs the cut-off day and time and the customer list with phone numbers."
+    },
+    {
+      "name": "Weekly meal subscriptions with skip and pause",
+      "kind": "software",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1200,
+      "monthlyMin": 39,
+      "monthlyMax": 99,
+      "pitchLine": "\"Customers pick meals per week once, skip a week for travel or pause for a month, and the card is charged on schedule without you chasing anyone.\"",
+      "whenAndWhatItTakes": "Day 14, once they mention reordering by hand. Needs plan sizes, per-meal prices and a payment account."
+    },
+    {
+      "name": "Delivery route planner by zone",
+      "kind": "software",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Each delivery day the meal bags are sorted into a route by zone and window, so the driver stops crisscrossing town with a cooler.\"",
+      "whenAndWhatItTakes": "Month 2, when they add a second delivery day or a driver. Needs the zone map and addresses from orders."
+    },
+    {
+      "name": "Meal menu and cut-off answers in DMs",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"'What's on the menu this week' and 'do you deliver to my area' get answered from this week's meals and the zone map, with the order link.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the weekly menu and zones kept current. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "On-the-way delivery texts",
+      "kind": "automation",
+      "oneTimeMin": 150,
+      "oneTimeMax": 400,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Customers get a text when their meal bag is on the way and when it's dropped, so nobody leaves a week of food on a hot porch.\"",
+      "whenAndWhatItTakes": "Month 2, after the route planner. Needs delivery routes and customer phone numbers."
+    },
+    {
+      "name": "Kitchen production sheet by meal",
+      "kind": "software",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"The moment the cut-off passes, the kitchen gets one prep sheet: how many of each meal, portion sizes and swaps, instead of totalling orders by hand.\"",
+      "whenAndWhatItTakes": "Month 2. Needs weekly ordering live and the recipes named."
+    },
+    {
+      "name": "Private chef menu proposal drafter",
+      "kind": "ai",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1200,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"A family describes the dinner party, guest count and dislikes, and the private chef opens a drafted menu proposal from their own dishes to edit and send.\"",
+      "whenAndWhatItTakes": "Month 3, for private chefs. Needs past menus and pricing rules. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Customer taste and dislike profiles",
+      "kind": "software",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Every meal prep customer's dislikes and swaps saved on their profile, so the kitchen never sends mushrooms to the person who hates them.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the swaps they currently track in notes or memory."
+    },
+    {
+      "name": "Weekly meal description writer",
+      "kind": "ai",
+      "oneTimeMin": 200,
+      "oneTimeMax": 500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Type the week's meals in a few words and get short, appetite-first menu descriptions and a caption for the weekly post, ready to approve.\"",
+      "whenAndWhatItTakes": "Month 2. Needs a few past menus and captions. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Failed card retry and payment reminders",
+      "kind": "automation",
+      "oneTimeMin": 150,
+      "oneTimeMax": 400,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"When a subscriber's card fails, they get a polite text to update it before the meal prep cut-off, so the kitchen doesn't cook for an unpaid order.\"",
+      "whenAndWhatItTakes": "Month 3, once subscriptions are live. Needs the payment account."
+    },
+    {
+      "name": "Review reply drafts for meal prep",
+      "kind": "ai",
+      "oneTimeMin": 200,
+      "oneTimeMax": 500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"When a subscriber praises the chicken bowl or the plant-based plan, a warm meal prep reply quoting that detail is waiting on your phone to approve.\"",
+      "whenAndWhatItTakes": "Month 2, alongside the review requests. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Private chef booking with deposit",
+      "kind": "software",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Families pick a date for the private chef dinner, enter guests and dislikes, and pay a deposit, so the date is held and the shopping can start.\"",
+      "whenAndWhatItTakes": "Month 3, for private chefs. Needs their deposit rule, availability and a payment account."
+    },
+    {
+      "name": "Meal plan matcher",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"New customers answer a few questions about their week and preferences and get a suggested meal plan size and style from your menu, with no health promises.\"",
+      "whenAndWhatItTakes": "Month 4. Needs plan styles and the owner's rules for who fits which. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Container return reminders",
+      "kind": "automation",
+      "oneTimeMin": 100,
+      "oneTimeMax": 300,
+      "monthlyMin": 9,
+      "monthlyMax": 29,
+      "pitchLine": "\"Subscribers get a reminder to leave last week's meal containers out on delivery day, and the deposit tracker shows who still has them.\"",
+      "whenAndWhatItTakes": "Month 4, if they run a reusable container program. Needs the deposit rules."
+    },
+    {
+      "name": "Gift meal plans",
+      "kind": "software",
+      "oneTimeMin": 250,
+      "oneTimeMax": 600,
+      "monthlyMin": 9,
+      "monthlyMax": 29,
+      "pitchLine": "\"Friends and family buy a week of meals for new parents or someone recovering at home, and the recipient picks the delivery week.\"",
+      "whenAndWhatItTakes": "Month 4, before the holidays. Needs gift plan sizes and a payment account."
+    },
+    {
+      "name": "Meal prep phone and text answering",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"On prep days, calls and texts about meal plans, delivery zones and private chef dates still get answered and logged for you.\"",
+      "whenAndWhatItTakes": "Month 5, once they trust the DM answers. Needs menu, zones, plans and policies. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Referral credits for subscribers",
+      "kind": "software",
+      "oneTimeMin": 250,
+      "oneTimeMax": 600,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Subscribers get a meal credit when a friend signs up for a weekly plan with their code, so the gym crowd does the selling.\"",
+      "whenAndWhatItTakes": "Month 5. Needs subscriptions live and a credit the owner is happy to give."
+    },
+    {
+      "name": "Next week's quantity forecaster",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Before the cut-off, it estimates how many of each meal will sell from subscriptions and past weeks, so the grocery order starts early and less goes to waste.\"",
+      "whenAndWhatItTakes": "Month 6, with a few months of order history. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Ingredient overlap planner",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Draft next week's meal menu and it flags ingredients you can share across dishes, so a case of peppers gets used in three meals, not one.\"",
+      "whenAndWhatItTakes": "Month 7. Needs recipes with ingredients and supplier pack sizes. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Food cost per meal tracker",
+      "kind": "software",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"See what each meal really costs in ingredients and containers, so the per-meal price on the plan keeps up when chicken prices jump.\"",
+      "whenAndWhatItTakes": "Month 6. Needs recipes with quantities and current grocery or supplier prices."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise weekly subscriptions for independent meal preppers",
+      "whoPays": "Meal prep owners, monthly",
+      "min": 29,
+      "max": 99,
+      "unit": "monthly",
+      "pitchLine": "\"Every small meal prep kitchen totals DM orders on Thursday night. A weekly menu with cut-off, subscriptions and a prep sheet is a product they'll pay for monthly.\"",
+      "whyItWorks": "The first client paid for the workflow. Meal preppers are many and easy to find through gyms."
+    },
+    {
+      "route": "Personal chef association member toolkit",
+      "whoPays": "The association",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"Give every member private chef a sample-menus page and a booking step with deposit, as a membership benefit.\"",
+      "whyItWorks": "Chef associations need visible benefits. A booking page is what most members still lack."
+    },
+    {
+      "route": "Gym groups' member meal prep program",
+      "whoPays": "The gym group",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer members weekly meal prep pickup at every location from local kitchens, ordered through one page in your app or site.\"",
+      "whyItWorks": "Gym groups want amenities that keep members. The meal prep client already runs pickup at one of their gyms."
+    },
+    {
+      "route": "Culinary school private chef launch kits",
+      "whoPays": "The culinary school, annually",
+      "min": 1500,
+      "max": 5000,
+      "unit": "per-year",
+      "pitchLine": "\"Graduates who go private leave with a chef page, sample menus and a booking step. It's a career path you can put in the brochure.\"",
+      "whyItWorks": "Schools sell outcomes, and private chef work is a common path for their graduates."
+    },
+    {
+      "route": "Shared kitchen operators' tenant storefronts",
+      "whoPays": "The shared kitchen operator",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Every meal prep tenant in your kitchen needs a weekly order page. Offer one template to all of them as part of their rental.\"",
+      "whyItWorks": "Shared kitchens compete for tenants. A ready storefront is a perk that fills hours."
+    },
+    {
+      "route": "Corporate wellness meal programs",
+      "whoPays": "The employer or its benefits provider",
+      "min": 2000,
+      "max": 8000,
+      "unit": "one-time",
+      "pitchLine": "\"Employees order subsidised weekly meal prep from vetted local kitchens through one ordering page the HR team controls.\"",
+      "whyItWorks": "Employers buy perks in bulk. A local meal prep client proves the ordering works."
+    },
+    {
+      "route": "Vacation rental managers' private chef bookings",
+      "whoPays": "The rental management company",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"Guests in your rentals ask for a private chef for the big dinner. A booking page with vetted chefs and sample menus sells it before arrival.\"",
+      "whyItWorks": "Rental managers earn on add-ons and want happy guests. The private chef client is the first one on the page."
+    },
+    {
+      "route": "Luxury apartment concierge services",
+      "whoPays": "The building management company",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Residents ask the concierge for meal delivery and private chefs. A resident page with vetted meal prep and chef partners answers it.\"",
+      "whyItWorks": "High-end buildings sell amenities. Food services are among the most requested."
+    },
+    {
+      "route": "Home care agencies' meal add-on page",
+      "whoPays": "The home care agency",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Families arranging care ask who can cook for their parent. A meal plan add-on page with a local kitchen gives the agency an answer.\"",
+      "whyItWorks": "Agencies get the question constantly and want a trusted partner. The meal prep client fits naturally."
+    },
+    {
+      "route": "Hospital and birth centre new-parent meal partners",
+      "whoPays": "The birth centre or hospital foundation",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"New parents leave with a code for a gift meal plan from a local kitchen. A partner page makes the referral easy for staff.\"",
+      "whyItWorks": "Birth centres look for meaningful extras. Meal plans for new parents are an easy yes, with no health claims needed."
+    },
+    {
+      "route": "White-label meal prep ordering for agencies",
+      "whoPays": "The agency, per site",
+      "min": 500,
+      "max": 1500,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency picks up meal prep clients and can't build subscriptions. License my weekly menu and cut-off template.\"",
+      "whyItWorks": "Agencies sell the client; you sell them the ordering logic you've already built."
+    },
+    {
+      "route": "One meal prep kitchen per gym cluster, metro by metro",
+      "whoPays": "New meal prep clients in a new metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I build for one meal prep kitchen per gym cluster in {City}. The gyms in the next metro have their own preppers still taking DMs.\"",
+      "whyItWorks": "Meal prep markets form around gyms and delivery zones. Non-competing clusters let you reuse the template and the proof."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Meal prep site plus care plan, one contract",
+      "min": 1500,
+      "max": 2500,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The meal prep site and the care plan go on one contract, so next week's menu is a quick update, not a project.\""
+    },
+    {
+      "rung": 2,
+      "day": 14,
+      "offer": "Weekly meal subscriptions with skip and pause",
+      "min": 500,
+      "max": 1200,
+      "unit": "one-time",
+      "trigger": "They mention regulars who reorder the same meals by DM every week.",
+      "line": "\"Your regulars already order the same meals weekly. A subscription makes it automatic for both of you.\""
+    },
+    {
+      "rung": 3,
+      "day": 30,
+      "offer": "Review requests after the first meal week",
+      "min": 29,
+      "max": 99,
+      "unit": "monthly",
+      "trigger": "New customers are finishing their first week of meals with no review follow-up.",
+      "line": "\"Ask new meal customers how week one went, right when they're deciding to reorder.\""
+    },
+    {
+      "rung": 4,
+      "day": 45,
+      "offer": "Delivery route planner by zone",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "trigger": "They add a second delivery day, a new zone or a driver.",
+      "line": "\"A second delivery day is where the meal routes get messy. Let's sort them by zone automatically.\""
+    },
+    {
+      "rung": 5,
+      "day": 60,
+      "offer": "Weekly meal photo session",
+      "min": 300,
+      "max": 700,
+      "unit": "per-shoot",
+      "trigger": "The weekly menu still shows marked placeholders or dark phone shots of containers.",
+      "line": "\"One session shooting your core meals makes the weekly menu look like what arrives in the bag.\""
+    },
+    {
+      "rung": 6,
+      "day": 90,
+      "offer": "January meal plan campaign",
+      "min": 300,
+      "max": 700,
+      "unit": "one-time",
+      "trigger": "November arrives and nothing is planned for January sign-ups.",
+      "line": "\"January is when people look for weekly meal prep. Let's be ready before they search.\""
+    },
+    {
+      "rung": 7,
+      "day": 120,
+      "offer": "Meal menu and cut-off answers in DMs",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "trigger": "They say they answer 'what's on the menu' and 'do you deliver here' all week.",
+      "line": "\"Those weekly meal questions get answered from your menu and zone map while you cook.\""
+    },
+    {
+      "rung": 8,
+      "day": 180,
+      "offer": "Introduction to the gym that hosts pickups",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "trigger": "They mention the gym owner asking who built the meal prep site.",
+      "line": "\"The gym where your meals are picked up has a hard-to-use schedule. Would you introduce me to the owner?\""
+    }
+  ]
+}

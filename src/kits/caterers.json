@@ -1,0 +1,861 @@
+{
+  "schemaVersion": 1,
+  "category": "Caterers",
+  "slug": "caterers",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Food family batch, event archetype. Strongest budgets in the family: weddings and corporate events carry the build, office drop-off carries the monthly. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Sample menus by service style",
+      "contains": "Plated, buffet, family-style, stations and passed hors d'oeuvres, each with a sample menu and a per-person starting price the caterer sets",
+      "why": "Planners and couples choose the service style first and the menu second. A per-person figure for each style is what lets them shortlist."
+    },
+    {
+      "section": "Tasting appointments",
+      "contains": "Who a tasting is for, when tastings run, how many guests can come, the tasting fee and whether it's credited to the catering contract",
+      "why": "Wedding couples rarely sign a catering contract without a tasting. A clear tasting step moves them from enquiry to the table."
+    },
+    {
+      "section": "Office lunch and drop-off catering",
+      "contains": "Boxed lunches, hot trays and breakfast spreads with order cut-off times, minimum headcount, delivery windows and paying on account",
+      "why": "Office managers reorder every week and hate calling. Drop-off is the steady corporate catering money between wedding weekends."
+    },
+    {
+      "section": "Guest dietary planning",
+      "contains": "How the caterer collects guest dietary needs, how special plates are labelled and served, and the caterer's own allergen policy in their words",
+      "why": "Hosts have to account for every guest's needs, and they ask how a caterer handles dietary cards before they ask the price."
+    },
+    {
+      "section": "Event staffing, rentals and bar service",
+      "contains": "Servers and captains per event size, china, glassware and linen options, bartending service where licensed, setup and cleanup, and what the venue must provide",
+      "why": "Quotes from two caterers differ mostly in what's included. Clear inclusions win the comparison before anyone asks."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C40",
+      "siteType": "local-conversion",
+      "name": "Drop-off Desk",
+      "heroLayout": "card-stack",
+      "mood": [
+        "tidy",
+        "reliable",
+        "quick"
+      ],
+      "bestFor": "Caterers whose steady money is office lunches, boxed meals and drop-off trays",
+      "pairsWithTier": "starter",
+      "headlineSample": "Office lunches and drop-off catering across {City}",
+      "whyItFits": "Driftwood's quiet neutrals and old-style serif look like a clean order sheet, and the cards put the tray menu and order cut-off first."
+    },
+    {
+      "id": "b",
+      "themeId": "C32",
+      "siteType": "portfolio-showcase",
+      "name": "Event Table",
+      "heroLayout": "split-photo",
+      "mood": [
+        "generous",
+        "warm",
+        "organised"
+      ],
+      "bestFor": "Full-service caterers selling weddings, showers and corporate events by service style",
+      "pairsWithTier": "standard",
+      "headlineSample": "Wedding and event catering in {City}, from tasting to last plate",
+      "whyItFits": "The family combo, Olive Grove. Cream and olive with a bookish serif feel like a laid table, and the event portfolio reads calm and organised."
+    },
+    {
+      "id": "c",
+      "themeId": "C4",
+      "siteType": "premium-brand",
+      "name": "Black Tie",
+      "heroLayout": "full-bleed-photo",
+      "mood": [
+        "formal",
+        "polished",
+        "evening"
+      ],
+      "bestFor": "Caterers doing plated dinners, galas and high-end weddings who sell on reputation",
+      "pairsWithTier": "premium",
+      "headlineSample": "Plated dinners and galas, catered in {City}",
+      "whyItFits": "Navy and brass on a dark ground feel like an evening reception, and the editorial serif gives menus the weight of a printed place card."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your catering company's Google listing has great reviews and no website, so a couple comparing wedding caterers can't see a menu or a per-person price before they move on.",
+      "hook": "Open their Maps listing and confirm there's no Website button. Screenshot it for when they reply.",
+      "linkLine": "Here's what would sit behind that button: {demo-link}"
+    },
+    {
+      "angle": "Event portfolio stuck on Instagram",
+      "line": "Your catering spreads on Instagram are beautiful, but weddings, office lunches and galas are all mixed in one feed. A planner wants to see the event type they're booking.",
+      "hook": "Scroll their grid and note the event types: weddings, corporate, showers. Name one standout setup.",
+      "linkLine": "Your catering work, sorted by event type: {demo-link}"
+    },
+    {
+      "angle": "No per-person pricing",
+      "line": "I couldn't find a single starting price for the catering anywhere. Couples with a budget usually shortlist the caterer who gives them a per-person figure first.",
+      "hook": "Check the listing, posts and any directory profile for a per-person or package price. If none, the angle holds.",
+      "linkLine": "Catering menus with per-person starting prices: {demo-link}"
+    },
+    {
+      "angle": "PDF menus on a phone",
+      "line": "The catering menu on your site downloads as a PDF that's hard to read on a phone. Most planners are reading menus between meetings, not at a desk.",
+      "hook": "Only if they have a site. Open the menu on your phone and note what happens. Screenshot it for when they reply.",
+      "linkLine": "The same catering menus as real text: {demo-link}"
+    },
+    {
+      "angle": "No date check",
+      "line": "There's no way to check whether the caterer is free on a date without sending an email and waiting. The wedding date is the first thing every couple asks.",
+      "hook": "Look for a contact form and whether it asks for an event date. Note what it asks for, if anything.",
+      "linkLine": "A date check that asks the right question first: {demo-link}"
+    },
+    {
+      "angle": "Engagement season",
+      "line": "Engagement season runs from the holidays into February, and that's when couples shortlist wedding caterers. The ones with a tasting booking page fill their spring calendar first.",
+      "hook": "Use this from November to February. Check for last year's wedding posts to name a venue or season.",
+      "linkLine": "Wedding catering and tasting booking, ready for January: {demo-link}"
+    },
+    {
+      "angle": "Holiday office parties",
+      "line": "Office holiday parties get booked in October. An event catering page with a corporate menu and an enquiry form catches the office managers who are searching now.",
+      "hook": "Use this in September and October. Look for corporate events in their posts from last December.",
+      "linkLine": "A corporate holiday catering page: {demo-link}"
+    },
+    {
+      "angle": "Hiring event servers",
+      "line": "Saw you're hiring event servers for the catering season. Good staff check whether a caterer looks busy and well run before they apply.",
+      "hook": "Only if they posted a hiring story or a staffing call. Note the role and the date.",
+      "linkLine": "A catering site with a join-the-event-team section: {demo-link}"
+    },
+    {
+      "angle": "Travel radius to venues",
+      "line": "Your posts show catered events at venues all over the region. A page that lists the towns and venues you cater keeps couples from assuming you're too far away.",
+      "hook": "List the venues or towns tagged in their event posts. Note the farthest one.",
+      "linkLine": "Your catering area and venues on one page: {demo-link}"
+    },
+    {
+      "angle": "Preferred-vendor lists",
+      "line": "You're on a few venue preferred-caterer lists, and those lists link straight to a Facebook page. The couple clicking through wants menus and a date check.",
+      "hook": "Search a local venue's site for a preferred vendors page. Check whether it lists them and where it links.",
+      "linkLine": "Where a venue's link should land: {demo-link}"
+    },
+    {
+      "angle": "Tasting requests in DMs",
+      "line": "People keep asking in your comments how to book a tasting. A tasting booking step with the fee and dates would turn those questions into catering contracts.",
+      "hook": "Look for comments or reviews mentioning a tasting. Note one.",
+      "linkLine": "A tasting booking page for the catering: {demo-link}"
+    },
+    {
+      "angle": "Reviews nobody reads",
+      "line": "Your reviews talk about guests going back for seconds and staff who cleaned up perfectly. That belongs next to the wedding catering packages, not three taps away on Google.",
+      "hook": "Read their reviews and copy one phrase about a specific event. Quote it back if they reply.",
+      "linkLine": "Your catering reviews next to your packages: {demo-link}"
+    },
+    {
+      "angle": "Planner referrals only",
+      "line": "Sounds like most of your catering comes through a couple of planners. If one of them retires or moves, the couples who'd have found you through that planner look you up online.",
+      "hook": "Look for posts thanking a planner or reviews mentioning one. Name the planner only if they tagged them.",
+      "linkLine": "Where a couple without a planner would land: {demo-link}"
+    },
+    {
+      "angle": "Office lunch reorders",
+      "line": "Your posts show boxed lunches for local offices. Office managers reorder every week, and a drop-off catering order page saves them calling you every Monday.",
+      "hook": "Look for corporate lunch, boxed lunch or breakfast tray posts. Note the company only if they tagged it.",
+      "linkLine": "An office lunch catering order page: {demo-link}"
+    },
+    {
+      "angle": "A specific recent event",
+      "line": "That {specific recent job} you catered looked stunning. A setup like that is what the next couple wants to see before they book a tasting.",
+      "hook": "Pick their newest event post and name it exactly: the event type, the venue if tagged and the service style.",
+      "linkLine": "That event, front and centre on your catering site: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner} — that {specific recent job} you catered looked beautiful.\n\nI looked for a catering site for {Business Name} where a couple could check a date or see a per-person price, and only found your social pages. I put together a sample with menus by service style, a date check and a tasting booking step, with marked placeholders where your photos would go.\n\nWould you like me to send it over?",
+    "dm2": "{Owner} — following up in case this got buried in event week. Here's the sample catering site for {Business Name}: {demo-link}\n\nIt has a date check, sample menus by service style, a tasting booking step and an office lunch order page. If it's not for you, say so and I won't message again.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for caterers here in {City}. I sent you a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"No problem, I know event weeks are a blur. Short version: I built a sample catering site for {Business Name} with a date check, menus by service style and a tasting booking step, with marked placeholders where your photos would go. Can I email you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range}, then {Care Range} a month for hosting and menu updates. For a catering company like yours I'd normally quote about {Build Price}.\"\n\"A single wedding deposit covers most of it. Could I take fifteen minutes on a weekday morning, before your prep starts?\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. We start the day it clears, and the date check goes live first.\"",
+    "objections": [
+      {
+        "objection": "All our catering comes from planners and venues.",
+        "handler": "\"Keep them. The site is where those couples land after the planner says your name. A date check and menus make the planner look good for recommending you.\""
+      },
+      {
+        "objection": "Every event is custom, so I can't put prices online.",
+        "handler": "\"You don't have to publish a quote. A per-person starting price by service style filters out the budgets you can't serve, and the tasting does the rest.\""
+      },
+      {
+        "objection": "We're booked solid through next season.",
+        "handler": "\"Then the site raises the floor. A clear starting price and a tasting fee mean the couples who do enquire are the ones worth your Saturdays.\""
+      },
+      {
+        "objection": "We're on the wedding directories already.",
+        "handler": "\"Keep them. They send couples to compare you with everyone else. Your own site is where the couple stops comparing and books a tasting.\""
+      },
+      {
+        "objection": "We tried a website and it never brought in a single event.",
+        "handler": "\"It probably had a contact page and no date field. This one asks for the date and headcount first, so every enquiry tells you whether it's worth a call.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}, because it's a date check, menus by service style, tasting booking and an office lunch page. One wedding deposit covers most of it.\""
+      }
+    ],
+    "email": {
+      "subject": "Catering site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for caterers around {City}. {Business Name} clearly does beautiful events, but there's nowhere a couple or an office manager can check a date, see a starting price or book a tasting.\n\nI built a sample first rather than ask for your time: a date check, sample menus by service style with per-person starting prices you set, a tasting booking step and an office lunch order page, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and menu updates. If not, no problem, it comes down at the end of the month.\n\nWorth fifteen minutes before prep one morning?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build websites for caterers in {City}, and I put together a sample catering site for {Business Name} with a date check and tasting booking. I'll email you the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner} — I'm taking the {Business Name} catering demo down on Friday to free up the space.\n\nShould I keep it up for you? One word is fine either way.",
+    "nurture": "Hi {Owner} — engagement season starts at the holidays, and couples shortlist caterers in January. Office party bookings land around now too. Thought of you.\n\nThe sample catering site is still here whenever you want it, and nothing's changed on price. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Anchor the build to one wedding deposit, not to a month of revenue. Caterers think in events, so price in events.",
+      "Price sample menus by service style, not by page. Plated, buffet and stations each need their own menu and starting price.",
+      "The tasting booking step is its own line. It is the step between an enquiry and a signed catering contract.",
+      "Office drop-off ordering is what justifies a monthly fee. Weddings are seasonal; office lunches are every week.",
+      "Sell engagement season pages in November and holiday party pages in August, never in the middle of the season.",
+      "Charge per venue for venue-specific pages. Each one ranks for a different couple's search."
+    ],
+    "lineItems": [
+      {
+        "item": "Sample menu page per service style",
+        "min": 150,
+        "max": 400,
+        "unit": "per-page",
+        "description": "Max with dietary marks, per-person starting prices, upgrade options and a printable version for the venue.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Tasting booking with a fee",
+        "min": 300,
+        "max": 700,
+        "unit": "one-time",
+        "description": "Max with set tasting dates, a guest limit, fee payment and the fee credited on the contract automatically.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Office lunch menu with order cut-offs",
+        "min": 300,
+        "max": 800,
+        "unit": "per-page",
+        "description": "Max with boxed lunch builders, minimum headcounts, delivery windows and a request to pay on account.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Pricing guide writing and layout",
+        "min": 300,
+        "max": 800,
+        "unit": "one-time",
+        "description": "Max when the guide covers several service styles, bar packages and rentals with photos and a cover the caterer approves.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Guest dietary planning page",
+        "min": 150,
+        "max": 400,
+        "unit": "per-page",
+        "description": "Max with a guest dietary card form for hosts and the caterer's own allergen policy written and approved by them.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Second-language catering site",
+        "min": 400,
+        "max": 1000,
+        "unit": "one-time",
+        "description": "Max when menus, the date check, the tasting step and the pricing guide are all translated.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Styled tasting photo day",
+      "min": 400,
+      "max": 1000,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"One morning shooting a full catering spread and plated dishes in good light gives every menu page and the pricing guide real food, not stock.\"",
+      "when": "Month 2, scheduled on a tasting day when the kitchen is already plating."
+    },
+    {
+      "name": "Google profile upkeep for the catering company",
+      "min": 150,
+      "max": 300,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"New event photos and catering posts on your Google profile every week, with the event type named, so people searching for a caterer see you're busy.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Review requests after every catered event",
+      "min": 49,
+      "max": 129,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Two days after the wedding or office party, the host gets a short note asking for a review while the compliments from guests are still coming in.\"",
+      "when": "Day 30. The easiest second sale for a caterer."
+    },
+    {
+      "name": "Engagement season wedding catering campaign",
+      "min": 400,
+      "max": 900,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A January push to newly engaged couples that points straight at the tasting booking page, before other caterers fill their spring.\"",
+      "when": "Pitch in November, run from late December to February."
+    },
+    {
+      "name": "Holiday office party catering campaign",
+      "min": 400,
+      "max": 900,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"An October push to office managers for holiday party catering, with the corporate menu and a date check ready to go.\"",
+      "when": "Pitch in August, run from late September to November."
+    },
+    {
+      "name": "Venue landing pages for the caterer",
+      "min": 250,
+      "max": 600,
+      "unit": "per-page",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A page for each venue you cater at, with past event photos and the kitchen setup there, so couples searching that venue find your catering.\"",
+      "when": "Month 3, one venue at a time, starting with the one they cater most."
+    },
+    {
+      "name": "Preferred-vendor one-sheet for planners and venues",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A one-page catering sheet with service styles, starting prices and your date check link that planners and venues can hand to every couple.\"",
+      "when": "Right after launch."
+    },
+    {
+      "name": "Bridal show booth kit",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A banner, a tasting card with a booking code and a sign-up page for the bridal show, so couples who sample your catering book a tasting before they leave.\"",
+      "when": "Six weeks before the local bridal show, usually January."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "The venues they cater at",
+        "whoPays": "The venue owner",
+        "min": 2000,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"The barn venue where you cater most weekends has a gallery and no date check. You can introduce me to the owner.\"",
+        "whyItWorks": "Venues book months ahead like caterers do, with bigger budgets. A caterer they trust walks you in."
+      },
+      {
+        "route": "The wedding planners who refer them",
+        "whoPays": "The planner, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The planner who sends you wedding catering has a feed and no site. Their couples need a page that lists her trusted vendors, starting with you.\"",
+        "whyItWorks": "Planners refer for a living. A planner you build for keeps referring the caterer and now refers you."
+      },
+      {
+        "route": "The party rental company that supplies their linens",
+        "whoPays": "The rental company",
+        "min": 2000,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"Your linen and china supplier rents to every caterer and venue in the area and quotes by email. Introduce me.\"",
+        "whyItWorks": "Rental companies have catalogues to put online and real budgets. The caterer is a steady account with a warm voice."
+      },
+      {
+        "route": "The bartending service they pair with",
+        "whoPays": "The bartending company, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The bar service you work beside at weddings needs a packages page and a date check too. They'd trust a recommendation from the caterer.\"",
+        "whyItWorks": "Bar services work the same events with the same couples. The template carries over almost unchanged."
+      },
+      {
+        "route": "The florists and photographers at the same weddings",
+        "whoPays": "Each vendor, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"Every florist and photographer you see at your catered weddings has the same no-date-check problem. I work the vendor list you already share.\"",
+        "whyItWorks": "Wedding vendors refer in circles. A caterer is at the centre of most of them."
+      },
+      {
+        "route": "The farm or butcher that supplies them",
+        "whoPays": "The farm or butcher shop",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The farm that supplies your catering produce sells to restaurants and the public with no order page. A caterer's introduction carries weight there.\"",
+        "whyItWorks": "Local producers sell wholesale and retail and need both online. The caterer is a known, paying customer."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Date-availability assistant for the venue",
+        "whoPays": "The venue owner, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Couples ask whether the venue is free on their date and get an answer from the calendar at night, with a tour request and the catering partners listed.\"",
+        "whyItWorks": "Venues lose couples who wait a day for a reply. A tool that books tours pays for itself in one booking."
+      },
+      {
+        "route": "Client intake assistant for the planner",
+        "whoPays": "The planner, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"Couples describe their wedding, guest count and budget, and the planner gets a summary and suggested vendors, the caterer included.\"",
+        "whyItWorks": "Planners spend first calls collecting the same details. The caterer client vouches for both of you."
+      },
+      {
+        "route": "Rental quote builder for the rental company",
+        "whoPays": "The rental company",
+        "min": 2000,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"A caterer or couple enters guest count and service style, and the rental company gets a draft linen, china and glassware quote to check.\"",
+        "whyItWorks": "Rental quotes are counting work done by hand. The caterer knows exactly what a typical event order looks like."
+      },
+      {
+        "route": "Bar package planner for the bartending service",
+        "whoPays": "The bartending company",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"Hosts enter guest count and event length and get the bar service's own package options to compare, with a date check.\"",
+        "whyItWorks": "Bar companies answer the same how-much-do-we-need question for every event. A planner turns that into a booking."
+      },
+      {
+        "route": "Timeline helper for the wedding photographer",
+        "whoPays": "The photographer, monthly",
+        "min": 49,
+        "max": 129,
+        "unit": "monthly",
+        "pitchLine": "\"The photographer's couples get a draft wedding day timeline that fits the catering service times, so dinner and the toasts don't collide.\"",
+        "whyItWorks": "Photographers build timelines by hand for every wedding. The caterer's service times make it accurate."
+      },
+      {
+        "route": "Wholesale order assistant for the farm",
+        "whoPays": "The farm or butcher shop, monthly",
+        "min": 99,
+        "max": 299,
+        "unit": "monthly",
+        "pitchLine": "\"Caterers and restaurants text their weekly order, and the farm gets a clean pick list by customer before harvest day.\"",
+        "whyItWorks": "Small producers take orders by text and lose some. The caterer client knows how food businesses order."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Instant enquiry reply with the pricing guide",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 700,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Every catering enquiry gets the pricing guide and a tasting link within minutes, even on a Saturday when you're serving a wedding.\"",
+      "whenAndWhatItTakes": "At build or day 14. Needs the pricing guide and the reply wording the caterer approves."
+    },
+    {
+      "name": "Event date availability calendar",
+      "kind": "software",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1200,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Couples see whether your catering team is free on their date before they enquire, and booked dates close themselves when the deposit lands.\"",
+      "whenAndWhatItTakes": "Day 14. Needs their current bookings and how many events they can staff on one day."
+    },
+    {
+      "name": "Catering proposal builder with per-person menus",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 49,
+      "monthlyMax": 149,
+      "pitchLine": "\"Pick the service style, the menu and the headcount, and a branded catering proposal with per-person pricing, staffing and rentals is ready to send.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their menus, per-person prices, staffing rules and a recent proposal to copy the layout."
+    },
+    {
+      "name": "Menu and date question answers on the site",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"'Do you do vegan plates' and 'are you free the second Saturday in June' get answered from your catering menus and calendar at midnight, with a tasting link.\"",
+      "whenAndWhatItTakes": "Month 2. Needs menus, the availability calendar and their dietary policy in writing. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Deposit and balance reminders",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 700,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Each catering contract's deposit, second payment and final balance get a polite reminder on schedule, so nobody has to chase a couple for money.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their payment schedule terms and a payment account."
+    },
+    {
+      "name": "Tasting appointment scheduler",
+      "kind": "software",
+      "oneTimeMin": 400,
+      "oneTimeMax": 900,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Couples pick a tasting slot from the dates you set, pay the fee and choose dishes to try, so the kitchen knows what to prep.\"",
+      "whenAndWhatItTakes": "Month 2. Needs tasting dates, the fee and the dishes on offer."
+    },
+    {
+      "name": "Proposal drafter from the enquiry form",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"The enquiry says forty guests, buffet, barn wedding in May, and you open a drafted catering proposal from your own menus ready to edit.\"",
+      "whenAndWhatItTakes": "Month 3, after the proposal builder. Needs a handful of past proposals. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Guest dietary card collector",
+      "kind": "software",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1200,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"The host sends one link, each guest enters their meal choice and dietary needs, and the catering team gets a clean list and place-card labels.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their menu choices per event and the wording of their allergen policy."
+    },
+    {
+      "name": "Office lunch reorder reminders",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 700,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Office managers who order catering every week get a Friday reminder with last week's order ready to repeat in one tap.\"",
+      "whenAndWhatItTakes": "Month 3, once office lunch orders are coming through the site. Needs order history."
+    },
+    {
+      "name": "Event timeline and staffing sheet",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Every catered event gets a run sheet: load-in, service times, who's on which station and the venue contact, on every server's phone.\"",
+      "whenAndWhatItTakes": "Month 4. Needs a past run sheet and their staff list."
+    },
+    {
+      "name": "Catering menu description writer",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Describe a new catering dish in a few words and get an appetite-first menu line for proposals and the site, ready to approve.\"",
+      "whenAndWhatItTakes": "Month 3, at the next seasonal menu. Needs the chef's notes. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Review reply drafts for catered events",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 700,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Every catering review gets a warm reply drafted in your voice that mentions the event and the venue, ready to approve between prep shifts.\"",
+      "whenAndWhatItTakes": "Month 2, alongside the review requests. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Per-head food cost calculator",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"See the food and labour cost per guest for each catering menu before you quote, so a cheap buffet doesn't quietly lose money.\"",
+      "whenAndWhatItTakes": "Month 4. Needs recipes with yields, supplier prices and their labour rates."
+    },
+    {
+      "name": "Catering enquiry phone answering",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 199,
+      "monthlyMax": 399,
+      "pitchLine": "\"While you're running an event, calls about catering still get answered, the date, headcount and venue captured, and the pricing guide sent.\"",
+      "whenAndWhatItTakes": "Month 4, once they trust the site answers. Needs menus, calendar and policies. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Final headcount and menu lock reminders",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 500,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Hosts get reminders to confirm the final headcount and meal choices before your cut-off, so the catering order is locked before you buy food.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their cut-off rules and the event calendar."
+    },
+    {
+      "name": "Corporate catering accounts with monthly invoicing",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Regular office clients order catering on their company account and get one invoice a month, which is how their finance team wants to pay.\"",
+      "whenAndWhatItTakes": "Month 5, once they have a few repeat office clients. Needs their account terms and accounting export."
+    },
+    {
+      "name": "Purchase list builder from locked menus",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 99,
+      "monthlyMax": 199,
+      "pitchLine": "\"Locked menus and final headcounts for the week turn into one shopping and supplier order list, grouped by vendor, for the chef to check.\"",
+      "whenAndWhatItTakes": "Month 6. Needs recipes with yields and their supplier list. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Portion forecaster by event type",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 99,
+      "monthlyMax": 199,
+      "pitchLine": "\"It learns how much a wedding buffet really eats versus an office lunch, and suggests catering quantities so less food goes home in boxes.\"",
+      "whenAndWhatItTakes": "Month 8, with several months of event records and leftovers noted. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Event staff availability board",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Servers and bartenders mark which catering shifts they can work, and you fill every event from your phone instead of a group text.\"",
+      "whenAndWhatItTakes": "Month 5, for caterers with a pool of part-time event staff. Needs the staff list."
+    },
+    {
+      "name": "Past event knowledge base for event captains",
+      "kind": "ai",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 99,
+      "monthlyMax": 199,
+      "pitchLine": "\"Captains ask how the kitchen at a venue works or how a past wedding was laid out, and get answers from your own catering notes.\"",
+      "whenAndWhatItTakes": "Month 9, for caterers running several events a weekend. Needs run sheets and venue notes. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the catering proposal builder",
+      "whoPays": "Independent caterers, monthly",
+      "min": 49,
+      "max": 149,
+      "unit": "monthly",
+      "pitchLine": "\"Every independent caterer builds proposals in a word processor at midnight. A per-person catering proposal builder is a product they'll pay for monthly.\"",
+      "whyItWorks": "The first caterer taught you the workflow. Caterers have real margins on events and feel the proposal pain every week."
+    },
+    {
+      "route": "State caterers' and hospitality association toolkit",
+      "whoPays": "The association",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer member caterers a date-check site template and a proposal builder as a membership benefit.\"",
+      "whyItWorks": "Associations need reasons to renew. One deal reaches caterers who already trust the association."
+    },
+    {
+      "route": "Wedding venue groups' preferred-caterer portals",
+      "whoPays": "The venue group",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Every venue in your group has a preferred-caterer list in a PDF. A portal with menus and date checks for each caterer books more couples.\"",
+      "whyItWorks": "Venue groups sell weddings across many properties. Better caterer pages help them close dates."
+    },
+    {
+      "route": "Foodservice distributor's catering customer program",
+      "whoPays": "The distributor's marketing team",
+      "min": 5000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Your catering accounts need date checks and proposals online. Offer the toolkit as a perk to accounts above a volume threshold.\"",
+      "whyItWorks": "Distributors fight for loyal accounts. Tools that help caterers win events help the distributor sell more food."
+    },
+    {
+      "route": "Coworking operators' event and lunch catering ordering",
+      "whoPays": "The coworking operator",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"Members host meetings and launches every week. A catering order page with vetted local caterers makes your spaces easier to book.\"",
+      "whyItWorks": "Operators sell meeting rooms and events. Easy catering is an amenity they can charge for."
+    },
+    {
+      "route": "Bridal show organisers' vendor booking pages",
+      "whoPays": "The bridal show organiser",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"Couples at the show want to book a catering tasting on the spot. A booking page for every exhibitor makes that happen.\"",
+      "whyItWorks": "Organisers sell booths on results. Tastings booked at the show are a result they can sell next year."
+    },
+    {
+      "route": "Funeral homes' reception catering partners",
+      "whoPays": "The funeral home",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "pitchLine": "\"Families ask the funeral home who can cater the reception. A simple partner catering page with set menus and a date request answers that gently.\"",
+      "whyItWorks": "Funeral homes field this question every week and want a dignified answer. Caterers already serve these receptions."
+    },
+    {
+      "route": "Boutique hotels without full kitchens",
+      "whoPays": "The hotel",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Your meeting rooms and courtyard host events, but there's no kitchen. A catering partner page with menus and a date check sells the event package.\"",
+      "whyItWorks": "Small hotels outsource food and want to sell events. A caterer partner page is the missing piece."
+    },
+    {
+      "route": "Culinary school catering program pages",
+      "whoPays": "The culinary school",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"Your students cater real events for practice. A booking page with menus and date checks fills the calendar with paying events.\"",
+      "whyItWorks": "Schools need real events for training and revenue. The caterer client often trained or hires there."
+    },
+    {
+      "route": "White-label catering site template for agencies",
+      "whoPays": "The agency, per site",
+      "min": 500,
+      "max": 1500,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency picks up caterers and builds a generic site. License my date-check catering template with menus by service style.\"",
+      "whyItWorks": "Agencies sell the client; you sell them the part that books tastings, already built."
+    },
+    {
+      "route": "Church and community hall networks",
+      "whoPays": "The denomination's regional office or hall network",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Your halls host receptions and fundraisers every weekend. A shared booking site with approved caterers for each hall would fill them.\"",
+      "whyItWorks": "Hall networks rent space and need caterer lists. A caterer who serves their halls opens the door."
+    },
+    {
+      "route": "One caterer per venue circuit in the next metro",
+      "whoPays": "New catering clients in a new metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I build for one caterer per venue circuit in {City}. The venues an hour away have their own caterers and none of them have a date check.\"",
+      "whyItWorks": "Caterers compete inside a venue circuit, not across a state. Non-competing circuits let you reuse the template and the proof."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Catering site plus care plan, one contract",
+      "min": 2000,
+      "max": 3500,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The catering site and the care plan go on one contract, so a seasonal menu change is an email to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 14,
+      "offer": "Event date availability calendar",
+      "min": 500,
+      "max": 1200,
+      "unit": "one-time",
+      "trigger": "They check a paper diary or a group chat before they can answer a date question on the phone.",
+      "line": "\"Let couples see your open catering dates themselves, and close a date the moment the deposit lands.\""
+    },
+    {
+      "rung": 3,
+      "day": 30,
+      "offer": "Review requests after every catered event",
+      "min": 49,
+      "max": 129,
+      "unit": "monthly",
+      "trigger": "They finish an event with a happy host and no new review follows within the week.",
+      "line": "\"That host was thrilled. Let's ask while the guests are still talking about the catering.\""
+    },
+    {
+      "rung": 4,
+      "day": 45,
+      "offer": "Catering proposal builder with per-person menus",
+      "min": 1200,
+      "max": 3000,
+      "unit": "one-time",
+      "trigger": "They mention spending evenings writing proposals, or a couple says they chose a faster caterer.",
+      "line": "\"Pick the style, the menu and the headcount, and the catering proposal writes itself.\""
+    },
+    {
+      "rung": 5,
+      "day": 60,
+      "offer": "Styled tasting photo day",
+      "min": 400,
+      "max": 1000,
+      "unit": "per-shoot",
+      "trigger": "Menu pages still show marked placeholders or dim event phone shots.",
+      "line": "\"One morning of plated dishes in good light fills every catering menu page and the pricing guide.\""
+    },
+    {
+      "rung": 6,
+      "day": 90,
+      "offer": "Holiday office party catering campaign",
+      "min": 400,
+      "max": 900,
+      "unit": "one-time",
+      "trigger": "August or September arrives and December's calendar still has open Fridays.",
+      "line": "\"Office managers book December catering in October. Let's reach them first.\""
+    },
+    {
+      "rung": 7,
+      "day": 120,
+      "offer": "Guest dietary card collector",
+      "min": 500,
+      "max": 1200,
+      "unit": "one-time",
+      "trigger": "A host sends a messy spreadsheet of guest meal choices and allergies.",
+      "line": "\"One link for the host, every guest's meal and dietary needs in a clean catering list.\""
+    },
+    {
+      "rung": 8,
+      "day": 180,
+      "offer": "Introduction to the venue they cater most",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "trigger": "They mention a venue owner asking who built the catering site.",
+      "line": "\"That venue has no date check either. Would you introduce me to the owner?\""
+    }
+  ]
+}

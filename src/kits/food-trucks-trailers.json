@@ -1,0 +1,852 @@
+{
+  "schemaVersion": 1,
+  "category": "Food trucks & trailers",
+  "slug": "food-trucks-trailers",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Food family batch. Very low budgets: everything is priced against one private event booking, and private events are the real money. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Where the truck is this week",
+      "contains": "A weekly calendar of stops: brewery nights, office park lunches, farmers market Saturdays, each with an address, a map pin, service times and a closed-early or sold-out banner",
+      "why": "Truck fans decide by where it parks today. A live schedule is the one thing that turns a follower into someone walking up to the window."
+    },
+    {
+      "section": "Truck footprint and event requirements",
+      "contains": "Length of the truck or trailer in feet, the level ground it needs, generator or power hookup, service window side, setup time and what the venue or HOA has to allow",
+      "why": "Planners and property managers need to know whether the truck fits the driveway or lot before they ask about menus."
+    },
+    {
+      "section": "Private event truck packages",
+      "contains": "Wedding, office lunch and backyard party options with service hours, a minimum spend, headcount ranges and a short event menu drawn from the truck's best sellers",
+      "why": "Private events are where a truck earns most. Couples and office managers book the truck whose packages they can understand without a phone call."
+    },
+    {
+      "section": "Follow the truck alerts",
+      "contains": "A text or email sign-up for tomorrow's spot, new menu drops and sold-out warnings, with one-tap opt-out",
+      "why": "Regulars want a heads-up, not a daily scroll through stories. An alert list is the truck's own audience, whatever the feeds do."
+    },
+    {
+      "section": "Apartment and office truck days",
+      "contains": "A request form for property managers and office HR: resident or staff count, the lot layout, preferred weekday, and recurring monthly visits",
+      "why": "Property managers book recurring truck days as a resident perk. They want a form they can forward, not a DM thread."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C45",
+      "siteType": "local-conversion",
+      "name": "Today's Spot",
+      "heroLayout": "card-stack",
+      "mood": [
+        "loud",
+        "street",
+        "fast"
+      ],
+      "bestFor": "New trucks that need today's location, the menu and a follow button on one page",
+      "pairsWithTier": "starter",
+      "headlineSample": "Smash burgers from the truck, all over {City}",
+      "whyItFits": "Ultramarine poster colour and geometric display type read like a festival flyer, and the stacked cards put today's stop above everything else."
+    },
+    {
+      "id": "b",
+      "themeId": "C47",
+      "siteType": "menu-and-order",
+      "name": "Truck Schedule",
+      "heroLayout": "menu-board",
+      "mood": [
+        "playful",
+        "bright",
+        "hungry"
+      ],
+      "bestFor": "Established trucks with a weekly route, a window pre-order and an events side to sell",
+      "pairsWithTier": "standard",
+      "headlineSample": "Find the truck today. Tacos al pastor across {City}",
+      "whyItFits": "Picked over the family's Olive Grove: a truck page is read in a parking lot at noon, and teal and tangerine with warm type reads like a truck wrap, not a sit-down menu."
+    },
+    {
+      "id": "c",
+      "themeId": "C32",
+      "siteType": "booking-first",
+      "name": "Event Truck",
+      "heroLayout": "split-photo",
+      "mood": [
+        "warm",
+        "organised",
+        "generous"
+      ],
+      "bestFor": "Trucks and trailers that earn most from weddings, office lunches and private parties",
+      "pairsWithTier": "premium",
+      "headlineSample": "Book the food truck for your wedding in {City}",
+      "whyItFits": "The family combo, Olive Grove, on the events side: cream, olive and a bookish serif look calm and organised to couples and planners booking months ahead."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "The truck has a Google listing with a few great reviews and no website, so someone who loved your tacos last week has no way to find where you're parked today.",
+      "hook": "Search the truck's name on Maps and confirm there's no Website button. Screenshot it for when they reply.",
+      "linkLine": "Here's where that button could send them: {demo-link}"
+    },
+    {
+      "angle": "Schedule only in stories",
+      "line": "Your weekly truck schedule goes up in stories, and it's gone in 24 hours. Anyone who checks on Thursday for the weekend stop is out of luck.",
+      "hook": "Watch their stories for a schedule post, or check highlights for an old one. Note the day it went up.",
+      "linkLine": "A truck schedule that stays up all week: {demo-link}"
+    },
+    {
+      "angle": "Menu board only",
+      "line": "The only menu for the truck online is a photo of the board at the window, half in shadow. People in line decide faster when they've read it on the walk over.",
+      "hook": "Find the menu wherever it lives: a pinned post, a highlight or a photo of the board. Note what's unreadable.",
+      "linkLine": "The truck menu as text, readable in line: {demo-link}"
+    },
+    {
+      "angle": "No event booking form",
+      "line": "Your bio says the truck is available for private events, but the only way to ask is a DM. Office managers and couples want a form they can fill in and forward.",
+      "hook": "Look for 'book us', 'available for events' or 'catering' in the bio or posts. Check that there's no form anywhere.",
+      "linkLine": "A private event form for the truck: {demo-link}"
+    },
+    {
+      "angle": "Wedding season",
+      "line": "Couples book food trucks for spring weddings in the winter. The truck with a clear packages page gets those Saturdays before anyone parks at a festival.",
+      "hook": "Use this from November to March. Check for any wedding or rehearsal dinner posts from last season.",
+      "linkLine": "Wedding truck packages, ready to book: {demo-link}"
+    },
+    {
+      "angle": "Where-are-you comments",
+      "line": "A lot of the comments on your recent posts are people asking where the truck is tomorrow. Every one of those is a lunch you'd have sold if the answer was one tap away.",
+      "hook": "Count comments asking 'where are you today' or 'are you at the brewery Friday'. Quote one.",
+      "linkLine": "Where the truck is, answered before they ask: {demo-link}"
+    },
+    {
+      "angle": "Hiring window help",
+      "line": "Saw the truck is looking for someone to run the window. Good help checks whether a food truck looks busy and steady before they message back.",
+      "hook": "Only if they posted a hiring story or a 'join the crew' post. Note the role and the date.",
+      "linkLine": "A truck page with a join-the-crew section: {demo-link}"
+    },
+    {
+      "angle": "Brewery nights",
+      "line": "You park at the same breweries most weekends. A truck page that lists those nights lets the brewery link to you and lets their crowd plan dinner around it.",
+      "hook": "Find the breweries or bars they tag regularly. Note one by name and the night they're usually there.",
+      "linkLine": "The truck's brewery nights on one page: {demo-link}"
+    },
+    {
+      "angle": "Sold out early",
+      "line": "You posted that the truck sold out early on Saturday. People who missed it would happily pre-order for the next stop if there were a way.",
+      "hook": "Look for 'sold out' or 'thank you, we're done for today' posts. Note the date and the stop.",
+      "linkLine": "Pre-order at the window, next stop: {demo-link}"
+    },
+    {
+      "angle": "Reviews with nowhere to go",
+      "line": "Your Google reviews rave about the street food and the line moving fast, and none of that shows up anywhere a planner looking to book the truck would read.",
+      "hook": "Read the reviews and copy one phrase about a dish or an event. Quote it back if they reply.",
+      "linkLine": "Your reviews next to your event packages: {demo-link}"
+    },
+    {
+      "angle": "Rally and festival season",
+      "line": "Truck rally and festival season is coming, and organisers pick vendors who look established. A real truck page with a menu and photos makes the application easier to say yes to.",
+      "hook": "Use this in late winter and early spring, when vendor applications open. Check for last year's festival posts.",
+      "linkLine": "A truck page that helps the festival application: {demo-link}"
+    },
+    {
+      "angle": "Office and apartment lunches",
+      "line": "Your posts show the truck parked at an apartment complex. Property managers book recurring truck days as a perk, and they want a page they can forward to the board.",
+      "hook": "Look for posts at office parks, apartment complexes or hospitals. Note the property type, not the private address.",
+      "linkLine": "A truck-day request page for property managers: {demo-link}"
+    },
+    {
+      "angle": "Venue paperwork questions",
+      "line": "Wedding venues and office parks usually ask a food truck for insurance and permit paperwork before they say yes. A page that says how to request it makes the truck look ready.",
+      "hook": "Never claim they hold a permit or policy. Only note whether they mention events at venues that would ask.",
+      "linkLine": "A truck page with an event paperwork request: {demo-link}"
+    },
+    {
+      "angle": "Followers only",
+      "line": "Your followers know where the truck is because they follow every story. Someone new in town searching for street food near them never sees any of it.",
+      "hook": "Check whether the truck appears on Maps for 'food truck near me' from their usual stops. Note the result.",
+      "linkLine": "Where a new street food fan would land: {demo-link}"
+    },
+    {
+      "angle": "A specific recent event",
+      "line": "That {specific recent job} you posted looked like a great day for the truck. That's exactly the event the next planner wants to see before they book.",
+      "hook": "Pick their newest event or stop post and name it exactly: the event type and the dish they served.",
+      "linkLine": "That truck event, front and centre: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner} — that {specific recent job} you posted looked like a great day at the window.\n\nI looked for a page that says where {Business Name} is parked this week and only found stories that disappear. I put together a sample truck page with a weekly schedule, the menu as text and a private event form, with marked placeholders where your photos would go.\n\nWant me to send it over?",
+    "dm2": "{Owner} — following up in case this got lost between stops. Here's the sample truck page for {Business Name}: {demo-link}\n\nIt has a schedule you update from your phone, the menu as text, a follow-the-truck sign-up and a private event form. If it's not for you, say so and I won't message again.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for food trucks and trailers here in {City}. I sent you a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"Easy to miss while you're prepping. Short version: I built a sample page for {Business Name} with your weekly stops, the menu as text and a form for weddings and office lunches, with marked placeholders where your photos would go. Can I text you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range}, then {Care Range} a month for hosting and schedule help. For a truck like yours I'd normally quote about {Build Price}.\"\n\"One private event booked through the form covers most of it. Can I show you how the schedule updates from your phone? Ten minutes on a day you're not parked.\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. We start the day it clears, and the event form goes live first.\"",
+    "objections": [
+      {
+        "objection": "I can't afford a website right now.",
+        "handler": "\"Fair. That's why it's priced against one private event, not a season of sales. The event form is there to book that first wedding or office lunch.\""
+      },
+      {
+        "objection": "My customers find me on Instagram.",
+        "handler": "\"Your regulars do. Planners and new people search Google for a food truck, and the schedule page is the one thing that doesn't vanish after a day.\""
+      },
+      {
+        "objection": "My schedule changes at the last minute.",
+        "handler": "\"That's why you change it from your phone in a minute, and the follow-the-truck alerts tell people when a stop moves or you sell out early.\""
+      },
+      {
+        "objection": "I already list my stops on a truck-finder app.",
+        "handler": "\"Keep it. The app shows where you are. The truck page sells the private events, which is where a truck earns its best days.\""
+      },
+      {
+        "objection": "It's my slow season.",
+        "handler": "\"Which is the best time to build it. Couples and offices book spring and summer events in the winter, and the page needs to be there when they look.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}, because it's a schedule, a menu and an event form. One booked event pays for most of it.\""
+      }
+    ],
+    "email": {
+      "subject": "Schedule and events page for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for food trucks and trailers around {City}. {Business Name} has a following and good reviews, but no page that says where the truck is this week or lets a planner book it for an event.\n\nI built a sample first rather than ask for your time: a weekly stop schedule you update from your phone, the menu as text, a follow-the-truck sign-up and a private event form with headcount and date, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and help with the schedule. If not, no problem, it comes down at the end of the month.\n\nWorth ten minutes on a day you're not parked?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build websites for food trucks in {City}, and I put together a sample schedule and events page for {Business Name}. I'll text you the link so you can look after service. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner} — I'm taking the {Business Name} truck demo down on Friday to free up the space.\n\nWant me to keep it up for you? One word is fine either way.",
+    "nurture": "Hi {Owner} — wedding and office party planners start booking next season's food trucks about now. Thought of you.\n\nThe sample truck page is still here whenever you want it, and nothing's changed on price. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Price the whole build against one private event booking, never against a month of window sales. Most trucks run on very thin cash.",
+      "The weekly stop schedule is the heart of the page. Make it editable from a phone or the truck owner will never touch it.",
+      "Sell the private event form as its own line. It is the one part of the site that brings in bigger tickets.",
+      "Keep monthly fees below the cost of one lunch rush's supplies, and offer a lower winter rate to trucks that park for the cold months.",
+      "Trucks with a second unit or a trailer for events pay per unit for its own schedule, not for a second site.",
+      "Sell event packages and wedding pages in the winter, never in the middle of festival season."
+    ],
+    "lineItems": [
+      {
+        "item": "Weekly stop schedule with map pins",
+        "min": 150,
+        "max": 400,
+        "unit": "one-time",
+        "description": "Max with recurring stops, a sold-out banner and stops that expire on their own after the service window.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Private event booking form",
+        "min": 200,
+        "max": 550,
+        "unit": "one-time",
+        "description": "Max with headcount ranges, package choice, power and parking questions and a deposit request.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Event packages page",
+        "min": 150,
+        "max": 400,
+        "unit": "per-page",
+        "description": "Max with separate wedding, office and backyard packages, each with service hours and a sample menu.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Truck spec sheet for planners",
+        "min": 100,
+        "max": 250,
+        "unit": "one-time",
+        "description": "Max with the truck's length in feet, power needs, setup time and a paperwork request link for venues.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Second truck or trailer schedule",
+        "min": 100,
+        "max": 300,
+        "unit": "one-time",
+        "description": "Max when the second unit has its own menu and its own event packages.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Second-language truck menu",
+        "min": 150,
+        "max": 400,
+        "unit": "one-time",
+        "description": "Max when the menu, the schedule labels and the event form are all translated.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Truck wrap code panel and window menu board artwork",
+      "min": 150,
+      "max": 400,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A scannable code on the truck wrap and a clean window menu board, so the person in line can follow the truck before they reach the window.\"",
+      "when": "Right after launch, or whenever the truck gets re-wrapped."
+    },
+    {
+      "name": "Google profile set up for a mobile food business",
+      "min": 79,
+      "max": 199,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A Google profile that shows the truck's service area, menu and event photos, kept fresh each week so street food searches find you.\"",
+      "when": "Day 30. Most trucks have never claimed or filled out their listing."
+    },
+    {
+      "name": "Content day at a busy truck stop",
+      "min": 200,
+      "max": 500,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"One shift shooting the truck, the line and the food coming out the window gives you a month of posts and a real event gallery.\"",
+      "when": "Month 2, booked at their busiest regular stop."
+    },
+    {
+      "name": "Wedding and office event season push",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A winter campaign to couples and office managers for next season's truck bookings, pointing at the event packages page.\"",
+      "when": "Pitch in October or November, run from December to March."
+    },
+    {
+      "name": "Review requests after private truck events",
+      "min": 29,
+      "max": 79,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"The day after a wedding or office lunch, the host gets a short text asking how the truck did, while the party is still fresh.\"",
+      "when": "Month 2, once private events start coming through the form."
+    },
+    {
+      "name": "Festival and rally application pack",
+      "min": 150,
+      "max": 400,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A ready vendor pack for the truck: menu, footprint, power needs and event photos, so festival applications take ten minutes, not an evening.\"",
+      "when": "Late winter, before festival applications open."
+    },
+    {
+      "name": "Office park and apartment truck-day outreach",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A short outreach to property managers near your stops offering a recurring food truck day for residents or staff.\"",
+      "when": "Month 3, aimed at slow weekdays on the truck's schedule."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "The breweries where the truck parks",
+        "whoPays": "Each brewery, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The brewery you park at every Friday has no page saying which food truck is there each night. The truck owner can introduce me.\"",
+        "whyItWorks": "Breweries rely on trucks for food and need a calendar that shows them. The truck is a regular they trust."
+      },
+      {
+        "route": "The commissary kitchen they prep in",
+        "whoPays": "The commissary owner",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"Your commissary has open kitchen slots and parking spaces for trucks and no page that rents them. You can introduce me.\"",
+        "whyItWorks": "Commissaries need tenants, and every food truck in the area needs a commissary. The tenant's word opens the door."
+      },
+      {
+        "route": "The wedding venues that book the truck",
+        "whoPays": "The venue, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The barn venue that keeps booking your truck has no page listing its approved food vendors. The truck can be the first name on it.\"",
+        "whyItWorks": "Rustic and outdoor venues work with trucks often. A vendor that shows up well is the venue's best reference for you."
+      },
+      {
+        "route": "The truck rally organiser",
+        "whoPays": "The rally organiser",
+        "min": 1500,
+        "max": 5000,
+        "unit": "one-time",
+        "pitchLine": "\"The food truck rally you work every month needs a vendor list, a map and a dates page. Introduce me to whoever runs it.\"",
+        "whyItWorks": "Rally organisers juggle vendors and dates by hand. A truck that works the rally regularly gets you a real meeting."
+      },
+      {
+        "route": "The wrap shop that did the truck",
+        "whoPays": "The wrap shop, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The shop that wrapped your truck shows its vehicle work on a feed and nothing else. A portfolio page of food truck wraps would sell their next one.\"",
+        "whyItWorks": "Wrap shops live on proof of their work. A happy truck owner is the warmest intro to them."
+      },
+      {
+        "route": "The farmers market the truck works",
+        "whoPays": "The market board",
+        "min": 1000,
+        "max": 3000,
+        "unit": "one-time",
+        "pitchLine": "\"The Saturday market where the truck parks needs a vendor map, a season calendar and a vendor sign-up page. The truck can introduce me to the manager.\"",
+        "whyItWorks": "Market boards are volunteer-run and stretched. A vendor's introduction gets you past the email inbox."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Tonight's truck answers for the brewery",
+        "whoPays": "The brewery, monthly",
+        "min": 49,
+        "max": 149,
+        "unit": "monthly",
+        "pitchLine": "\"Brewery customers ask which food truck is out back tonight, and the assistant answers from the truck calendar with the menu link.\"",
+        "whyItWorks": "Breweries get the same food question every day. A small monthly line beats staff answering DMs mid-pour."
+      },
+      {
+        "route": "Kitchen-slot booking assistant for the commissary",
+        "whoPays": "The commissary owner, monthly",
+        "min": 99,
+        "max": 299,
+        "unit": "monthly",
+        "pitchLine": "\"Food truck tenants book prep hours and parking spots by text, and the commissary sees a clean schedule instead of a group chat.\"",
+        "whyItWorks": "Commissaries schedule shared kitchens by hand. The truck client knows exactly how tenants ask for time."
+      },
+      {
+        "route": "Vendor application screener for the rally organiser",
+        "whoPays": "The rally organiser, per season",
+        "min": 800,
+        "max": 2500,
+        "unit": "one-time",
+        "pitchLine": "\"Truck applications get sorted by cuisine, power needs and paperwork, so the organiser picks a balanced lineup in an hour.\"",
+        "whyItWorks": "Organisers read dozens of food truck applications each season. Sorting them is a clear, paid-for saving."
+      },
+      {
+        "route": "Wrap quote assistant for the wrap shop",
+        "whoPays": "The wrap shop, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"Truck and trailer owners describe their vehicle and get a first wrap estimate range with a consult booking, any hour.\"",
+        "whyItWorks": "Wrap shops answer the same how-much question all day. The truck client can vouch for the shop and for you."
+      },
+      {
+        "route": "Truck-day picker for the office park manager",
+        "whoPays": "The property management company, monthly",
+        "min": 79,
+        "max": 199,
+        "unit": "monthly",
+        "pitchLine": "\"Tenants vote on cuisines, and the assistant suggests which food truck to book each week from the manager's approved list.\"",
+        "whyItWorks": "Property managers want amenities that tenants notice. The truck client is already on the list."
+      },
+      {
+        "route": "Market vendor question bot for the farmers market",
+        "whoPays": "The market board, per season",
+        "min": 500,
+        "max": 1500,
+        "unit": "one-time",
+        "pitchLine": "\"Shoppers asking which food trucks and stalls are at the market this Saturday get an answer from the vendor list, with a map.\"",
+        "whyItWorks": "Market managers answer the same question all week. A simple season contract fits a small market budget."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Tomorrow's stop posted everywhere at once",
+      "kind": "automation",
+      "oneTimeMin": 150,
+      "oneTimeMax": 400,
+      "monthlyMin": 9,
+      "monthlyMax": 29,
+      "pitchLine": "\"Enter tomorrow's truck stop once and it lands on the site, the Google profile and Facebook, so you stop typing the same address three times.\"",
+      "whenAndWhatItTakes": "Day 14. Needs the schedule page live and access to the truck's Google and Facebook pages."
+    },
+    {
+      "name": "Follow-the-truck text alerts",
+      "kind": "software",
+      "oneTimeMin": 150,
+      "oneTimeMax": 400,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Fans sign up once and get a text when the truck is parked nearby or the stop moves, so a schedule change doesn't cost you a lunch rush.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the schedule page and a sign-up sign at the window."
+    },
+    {
+      "name": "Event deposit and booking calendar",
+      "kind": "software",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Couples and office managers pick an open date, choose a truck package and pay a deposit, so a wedding Saturday is held the moment they decide.\"",
+      "whenAndWhatItTakes": "Month 2, once the first event enquiry comes in. Needs the event packages, deposit rules and a payment account."
+    },
+    {
+      "name": "Where-are-you-today answers in DMs",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 49,
+      "monthlyMax": 99,
+      "pitchLine": "\"'Where's the truck tomorrow' gets answered in seconds from your schedule, with the address and hours, while you're working the window.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the schedule kept current and the menu. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Sold-out switch for the truck page",
+      "kind": "automation",
+      "oneTimeMin": 100,
+      "oneTimeMax": 300,
+      "monthlyMin": 0,
+      "monthlyMax": 19,
+      "pitchLine": "\"One tap when the truck sells out and the schedule shows it, the alert list hears it, and nobody drives over to an empty window.\"",
+      "whenAndWhatItTakes": "Month 2, after the first sold-out day. Needs the schedule page and the alert list."
+    },
+    {
+      "name": "Window pre-order with a pickup time",
+      "kind": "software",
+      "oneTimeMin": 300,
+      "oneTimeMax": 700,
+      "monthlyMin": 29,
+      "monthlyMax": 69,
+      "pitchLine": "\"Office workers order from the truck menu at 11am and pick up at noon without standing in line, and the window sees the ticket first.\"",
+      "whenAndWhatItTakes": "Month 3, if the line regularly runs long at a weekday stop. Needs the menu with prices and a payment account."
+    },
+    {
+      "name": "Event quote drafter for truck bookings",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"A planner sends headcount, hours and the venue, and you get a truck quote drafted from your own packages to check and send.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the packages, minimum spend and travel rules. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Prep planner by truck stop",
+      "kind": "software",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"See what sold at each stop last time and how much to prep for this one, so the truck stops running out of the best seller by one o'clock.\"",
+      "whenAndWhatItTakes": "Month 4. Needs a few weeks of sales by stop from the payment reader."
+    },
+    {
+      "name": "Daily stop caption writer",
+      "kind": "ai",
+      "oneTimeMin": 200,
+      "oneTimeMax": 500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Tomorrow's stop becomes a ready caption with the location, hours and the special, in the truck's voice, for you to approve.\"",
+      "whenAndWhatItTakes": "Month 2. Needs a handful of past captions and the schedule. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Punch card for regulars at the window",
+      "kind": "software",
+      "oneTimeMin": 200,
+      "oneTimeMax": 500,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Regulars collect a stamp on their phone at every truck stop and earn a free plate, so they follow you between locations.\"",
+      "whenAndWhatItTakes": "Month 4. Needs a reward the owner is happy to give and a sign at the window."
+    },
+    {
+      "name": "Event enquiry follow-up texts",
+      "kind": "automation",
+      "oneTimeMin": 150,
+      "oneTimeMax": 400,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Every truck event enquiry gets a reply with the packages within the hour, then a reminder before the date fills, even when you're mid-service.\"",
+      "whenAndWhatItTakes": "Month 2, once the event form is live. Needs the packages page and a reply the owner approves."
+    },
+    {
+      "name": "Review reply drafts for the truck",
+      "kind": "ai",
+      "oneTimeMin": 200,
+      "oneTimeMax": 500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Each Google review of the truck gets a short thank-you drafted in your voice that names the stop or dish they mentioned.\"",
+      "whenAndWhatItTakes": "Month 3, alongside the Google profile work. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Permit and commissary renewal calendar",
+      "kind": "software",
+      "oneTimeMin": 150,
+      "oneTimeMax": 400,
+      "monthlyMin": 9,
+      "monthlyMax": 29,
+      "pitchLine": "\"Every truck permit, inspection and commissary renewal date in one calendar, with reminders weeks ahead so a lapse never parks the truck.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the dates from their current paperwork. It reminds; it never advises on what a permit requires."
+    },
+    {
+      "name": "Next month's stop picker",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 49,
+      "monthlyMax": 99,
+      "pitchLine": "\"It ranks the truck's stops by past sales, weather and nearby events, and suggests next month's schedule for you to approve.\"",
+      "whenAndWhatItTakes": "Month 6, with a season of sales by stop. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Rain and cancellation notices",
+      "kind": "automation",
+      "oneTimeMin": 100,
+      "oneTimeMax": 300,
+      "monthlyMin": 9,
+      "monthlyMax": 29,
+      "pitchLine": "\"If the truck calls off a stop for rain or a breakdown, one message updates the schedule, the alert list and the brewery that was expecting you.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the alert list and the contacts for regular stops."
+    },
+    {
+      "name": "Event line phone answering for the truck",
+      "kind": "ai",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1200,
+      "monthlyMin": 99,
+      "monthlyMax": 199,
+      "pitchLine": "\"When you're slammed at the window, calls about booking the truck still get answered, the date and headcount captured, and the packages texted over.\"",
+      "whenAndWhatItTakes": "Month 5, for trucks booking several events a month. Needs packages and calendar access. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Fuel, propane and supply log",
+      "kind": "software",
+      "oneTimeMin": 200,
+      "oneTimeMax": 500,
+      "monthlyMin": 9,
+      "monthlyMax": 29,
+      "pitchLine": "\"Log fuel, propane and supply runs from your phone by truck, so you know what each stop really costs before you book it again.\"",
+      "whenAndWhatItTakes": "Month 5. Needs the owner to snap receipts for a few weeks."
+    },
+    {
+      "name": "Second-language menu and schedule translator",
+      "kind": "ai",
+      "oneTimeMin": 200,
+      "oneTimeMax": 500,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"The truck menu and this week's stops appear in a second language, drafted automatically and checked by you before they go up.\"",
+      "whenAndWhatItTakes": "Month 4, if their customers are bilingual. Needs the owner or a family member to approve wording. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Event contract and invoice builder",
+      "kind": "software",
+      "oneTimeMin": 300,
+      "oneTimeMax": 700,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"A booked truck event turns into a contract and invoice with the date, hours, headcount and deposit filled in, ready to sign from a phone.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their current event terms, written in their words, and a payment account."
+    },
+    {
+      "name": "Festival application drafter",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 700,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Paste a festival's vendor questions and get answers drafted from the truck's saved menu, footprint and power needs to check and submit.\"",
+      "whenAndWhatItTakes": "Late winter, with the application pack done. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the stop schedule page for every truck",
+      "whoPays": "Food truck owners, monthly",
+      "min": 9,
+      "max": 39,
+      "unit": "monthly",
+      "pitchLine": "\"Every food truck posts its schedule in stories that vanish. A phone-edited stop page with alerts is a cheap product they'll all understand.\"",
+      "whyItWorks": "Trucks can't pay for custom builds, but many can pay a small monthly fee. Volume beats ticket size here."
+    },
+    {
+      "route": "Regional food truck association member pages",
+      "whoPays": "The association",
+      "min": 1000,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Give every member truck a schedule page and the association a directory event planners can search.\"",
+      "whyItWorks": "Truck associations exist to win event bookings for members. A searchable directory is what they're asked for."
+    },
+    {
+      "route": "Truck and trailer builders' delivery package",
+      "whoPays": "The truck builder",
+      "min": 2000,
+      "max": 8000,
+      "unit": "one-time",
+      "pitchLine": "\"Every food truck you deliver leaves with a schedule page and an event form. It's one more reason to buy your build.\"",
+      "whyItWorks": "Builders meet owners at launch, when they're spending. A bundled page costs little and helps close the sale."
+    },
+    {
+      "route": "Commissary networks with many truck tenants",
+      "whoPays": "The commissary operator, per tenant",
+      "min": 100,
+      "max": 300,
+      "unit": "one-time",
+      "pitchLine": "\"Offer every truck in your commissary a schedule page as part of the lease. One template covers them all.\"",
+      "whyItWorks": "Commissaries compete for tenants. A perk that costs them little per truck keeps the bays full."
+    },
+    {
+      "route": "Food truck park operators",
+      "whoPays": "The truck park, frame plus per truck",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"The truck park needs a who's-here-tonight page, every truck's menu and an events calendar. I've built the single-truck version.\"",
+      "whyItWorks": "Truck parks rotate vendors constantly. One operator pays for the frame and every truck feeds it."
+    },
+    {
+      "route": "Brewery groups booking trucks across taprooms",
+      "whoPays": "The brewery group",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"Your taprooms book food trucks every night. A shared truck calendar and a vendor application page saves the managers hours.\"",
+      "whyItWorks": "Groups with several taprooms schedule many trucks a month. One system replaces a spreadsheet per location."
+    },
+    {
+      "route": "City special events office vendor roster",
+      "whoPays": "The city or county events department",
+      "min": 2000,
+      "max": 8000,
+      "unit": "one-time",
+      "pitchLine": "\"The city's summer concerts and markets book food trucks every week. A vendor roster and application page would replace the email chains.\"",
+      "whyItWorks": "Public events offices run on email and spreadsheets. A truck owner who works their events can vouch for the problem."
+    },
+    {
+      "route": "Property management firms' resident truck-day program",
+      "whoPays": "The property management company",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"Run a food truck day at every one of your apartment communities from one booking page, with trucks you've approved.\"",
+      "whyItWorks": "Management firms run many properties and want amenities that renew leases. One contract covers the portfolio."
+    },
+    {
+      "route": "Kitchen incubators launching food entrepreneurs",
+      "whoPays": "The incubator, annually",
+      "min": 1500,
+      "max": 5000,
+      "unit": "per-year",
+      "pitchLine": "\"Every new food truck in your program leaves with a menu, a schedule page and an event form. It's a launch kit you can put in the brochure.\"",
+      "whyItWorks": "Incubators measure success by businesses launched. A ready launch kit is a program feature."
+    },
+    {
+      "route": "Party rental companies adding trucks to their catalogue",
+      "whoPays": "The party rental company",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Customers renting tents and tables ask for food. A food truck add-on page with partner trucks lets you book them in the same order.\"",
+      "whyItWorks": "Rental companies want a bigger order per event. Trucks are an easy add-on the truck client can supply."
+    },
+    {
+      "route": "White-label truck schedule template for agencies",
+      "whoPays": "The agency, per site",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency gets asked for food truck sites and can't make the numbers work. License my schedule-first truck template.\"",
+      "whyItWorks": "Agencies turn away small clients. A cheap ready template lets them say yes and pay you per site."
+    },
+    {
+      "route": "Every truck that crosses into the next county",
+      "whoPays": "New truck clients in a new area",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"Trucks travel. The ones parking at the same rallies as your client come from three counties, and each one is a warm introduction.\"",
+      "whyItWorks": "Truck owners all know each other from rallies and commissaries. One good page gets passed around the lot."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Truck schedule site plus care plan, one contract",
+      "min": 800,
+      "max": 1500,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The truck site and the care plan go on one contract, so a new stop or a menu change is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 14,
+      "offer": "Tomorrow's stop posted everywhere at once",
+      "min": 150,
+      "max": 400,
+      "unit": "one-time",
+      "trigger": "They are still typing the same truck stop into stories, Facebook and Google every night.",
+      "line": "\"Type tomorrow's truck stop once and let it land everywhere.\""
+    },
+    {
+      "rung": 3,
+      "day": 30,
+      "offer": "Google profile set up for a mobile food business",
+      "min": 79,
+      "max": 199,
+      "unit": "monthly",
+      "trigger": "The truck's Google listing is unclaimed, empty or shows a single old address.",
+      "line": "\"People search for a food truck near them on Maps. Let's make sure the truck shows up there with this week's stops.\""
+    },
+    {
+      "rung": 4,
+      "day": 45,
+      "offer": "Event deposit and booking calendar",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "trigger": "The first private event enquiry arrives through the form.",
+      "line": "\"That wedding enquiry is real money. A deposit at booking holds the truck's Saturday the moment they decide.\""
+    },
+    {
+      "rung": 5,
+      "day": 60,
+      "offer": "Truck wrap code panel and window menu board artwork",
+      "min": 150,
+      "max": 400,
+      "unit": "one-time",
+      "trigger": "The alert list is growing slowly and nothing on the truck points to it.",
+      "line": "\"A code on the truck wrap turns every person in line into a follower of the schedule.\""
+    },
+    {
+      "rung": 6,
+      "day": 90,
+      "offer": "Wedding and office event season push",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "trigger": "Autumn arrives and next season's truck event calendar is still empty.",
+      "line": "\"Couples book next summer's food truck this winter. Let's be the truck they find first.\""
+    },
+    {
+      "rung": 7,
+      "day": 120,
+      "offer": "Where-are-you-today answers in DMs",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "trigger": "They say they answer 'where's the truck tomorrow' messages every night after closing.",
+      "line": "\"Those late DMs asking where the truck is tomorrow get answered from your schedule while you clean up.\""
+    },
+    {
+      "rung": 8,
+      "day": 180,
+      "offer": "Introduction to their commissary kitchen",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "trigger": "They mention open bays at the commissary or other trucks asking who built their page.",
+      "line": "\"Your commissary has truck bays to fill and no page for them. Would you introduce me to the owner?\""
+    }
+  ]
+}

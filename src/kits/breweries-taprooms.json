@@ -1,0 +1,866 @@
+{
+  "schemaVersion": 1,
+  "category": "Breweries & taprooms",
+  "slug": "breweries-taprooms",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Food family batch. Licensed alcohol category: every page carries an age notice, copy never targets under-twenty-ones, never encourages heavy drinking and makes no health claims. Licence details stay as bracketed placeholders. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Live taproom beer list",
+      "contains": "Every beer pouring now with style, ABV, short tasting notes, pour sizes and cans to go, kicked kegs marked, updated by the taproom staff from a phone",
+      "why": "Craft beer drinkers check what's pouring before they drive over. A stale tap list is the complaint taprooms hear most."
+    },
+    {
+      "section": "Taproom house rules and age notice",
+      "contains": "Twenty-one-and-over notice and ID policy, kids' hours if allowed, dogs on the patio, outside food, designated driver and non-alcoholic options, and the licence line as [licence details]",
+      "why": "Families and dog owners check the rules before they come, and an age notice is the baseline every alcohol page needs."
+    },
+    {
+      "section": "Food truck schedule at the brewery",
+      "contains": "Which food truck is parked at the taproom each night, its menu link, and the kitchen hours if the brewpub cooks",
+      "why": "People decide dinner and a pint together. If they can't tell whether there's food tonight, they go somewhere that says so."
+    },
+    {
+      "section": "Can releases and beer to go",
+      "contains": "Upcoming can and bottle release dates, per-person limits, crowler and growler fills, and pickup pre-orders only where the brewery's licence allows",
+      "why": "Release days drive the taproom's busiest weekends. Fans plan around the date and want the rules before they queue."
+    },
+    {
+      "section": "Brewery tours and tastings",
+      "contains": "Tour days and times, what's included, tasting flight sizes, group size limits, age rules for tours and a booking step",
+      "why": "Visitors and birthday groups book a brewery tour as an outing. They pick the brewery whose tour page tells them what happens."
+    },
+    {
+      "section": "Mug club and taproom membership",
+      "contains": "Membership perks like a personal mug on the wall, early release access and member nights, the yearly fee and renewal date, written without drinking incentives",
+      "why": "Regulars want the perks spelled out before renewal. A clear membership page turns the taproom's regulars into its steadiest income."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C32",
+      "siteType": "local-conversion",
+      "name": "Taproom Today",
+      "heroLayout": "menu-board",
+      "mood": [
+        "easygoing",
+        "local",
+        "warm"
+      ],
+      "bestFor": "Small taprooms and farmhouse breweries that need hours, today's tap list and directions first",
+      "pairsWithTier": "starter",
+      "headlineSample": "Fresh beer from our taproom in {City}. Twenty-one and over.",
+      "whyItFits": "The family combo, Olive Grove, used at starter: cream and olive suit a farmhouse taproom with a patio, and the menu-board hero puts the tap list on top."
+    },
+    {
+      "id": "b",
+      "themeId": "C39",
+      "siteType": "menu-and-order",
+      "name": "Tap List",
+      "heroLayout": "menu-board",
+      "mood": [
+        "crafted",
+        "industrial",
+        "social"
+      ],
+      "bestFor": "Established breweries with a live tap list, events calendar, cans to go and tours",
+      "pairsWithTier": "standard",
+      "headlineSample": "What's pouring today at our brewery in {City}",
+      "whyItFits": "Picked over Olive Grove for standard: brick, linen and a typewriter slab read like a brewhouse chalkboard and tank labels, which suits a tap list better than a bookish serif."
+    },
+    {
+      "id": "c",
+      "themeId": "C13",
+      "siteType": "premium-brand",
+      "name": "Barrel Room",
+      "heroLayout": "full-bleed-photo",
+      "mood": [
+        "moody",
+        "amber",
+        "small-batch"
+      ],
+      "bestFor": "Breweries known for barrel-aged and limited releases, with a membership and destination taproom",
+      "pairsWithTier": "premium",
+      "headlineSample": "Barrel-aged beer and limited releases from {City}",
+      "whyItFits": "Amber on near-black looks like a beer held to the barrel-room light, and the geometric display gives release names the weight of a label."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your brewery's Google listing has hours and great reviews but no website, so someone planning a Saturday can't see what's on tap or whether there's food.",
+      "hook": "Open their Maps listing and confirm there's no Website button. Screenshot it for when they reply.",
+      "linkLine": "Here's what would sit behind that button: {demo-link}"
+    },
+    {
+      "angle": "Tap list as a chalkboard photo",
+      "line": "The only tap list I could find is a photo of the chalkboard behind the bar, and half the beer names are unreadable. Craft beer fans want to read the list before they drive over.",
+      "hook": "Find the tap list wherever it lives: a pinned post, a story or a photo. Note what's unreadable or out of date.",
+      "linkLine": "A live tap list, readable on a phone: {demo-link}"
+    },
+    {
+      "angle": "Tap list only on a beer app",
+      "line": "Your current beers are listed on a beer check-in app, but your own pages never show what's pouring. Someone searching for the taproom lands on hours and nothing else.",
+      "hook": "Check whether their bio or site links to a third-party menu. Note when it was last updated.",
+      "linkLine": "Your tap list on your own brewery page: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "I opened your brewery site on my phone and the events and tap list sections didn't fit the screen. Most people check a taproom on a phone on the way out the door.",
+      "hook": "Only if they have a site. Load it on your phone and note what breaks. Screenshot it for when they reply.",
+      "linkLine": "The same brewery, rebuilt for a phone: {demo-link}"
+    },
+    {
+      "angle": "Can release hype in stories",
+      "line": "Your can release got a great reaction in stories, and by the next morning there was nowhere to check the date, the limits or what time the taproom opens.",
+      "hook": "Look for release announcements in stories or posts. Note the beer name and the release date.",
+      "linkLine": "A beer release page that stays up: {demo-link}"
+    },
+    {
+      "angle": "Food truck questions",
+      "line": "People keep asking in your comments which food truck is at the brewery tonight. A food truck schedule on the taproom page answers it before they pick somewhere else for dinner.",
+      "hook": "Find 'what food truck is here' or 'is there food tonight' comments. Quote one.",
+      "linkLine": "Tonight's food truck on the taproom page: {demo-link}"
+    },
+    {
+      "angle": "Trivia and event nights",
+      "line": "Your trivia and live music nights get announced one story at a time. A taproom events calendar would let teams plan their week around the brewery.",
+      "hook": "Look for recurring event posts: trivia, run club, music, bingo. Note the night and the event name.",
+      "linkLine": "A brewery events calendar with RSVP: {demo-link}"
+    },
+    {
+      "angle": "Dog and kid questions",
+      "line": "Your reviews and comments keep asking whether dogs are allowed on the patio and whether kids can come to the taproom. A house rules section answers it once.",
+      "hook": "Search reviews and comments for dog, kids or family. Never state the rules yourself; the brewery sets every word.",
+      "linkLine": "Taproom house rules on one page: {demo-link}"
+    },
+    {
+      "angle": "Hiring taproom staff",
+      "line": "Saw the brewery is hiring taproom staff. Good beertenders check whether a taproom looks busy and well run before they apply.",
+      "hook": "Only if they posted a hiring story or a 'now hiring' post. Note the role and the date.",
+      "linkLine": "A brewery page with a join-the-taproom section: {demo-link}"
+    },
+    {
+      "angle": "Where to buy the cans",
+      "line": "People ask in your comments which stores carry your cans. A beer finder with the shops and bars that stock you would send them straight there.",
+      "hook": "Look for 'where can I buy this' comments, or posts tagging stores and bars that carry them.",
+      "linkLine": "A beer finder for your cans: {demo-link}"
+    },
+    {
+      "angle": "Reviews nobody sees",
+      "line": "Your reviews talk about a friendly taproom and a beer people keep coming back for. That belongs next to the tap list, not three taps deep on Google.",
+      "hook": "Read the reviews and copy one phrase about a beer or the taproom. Quote it back if they reply.",
+      "linkLine": "Your brewery reviews next to the tap list: {demo-link}"
+    },
+    {
+      "angle": "Oktoberfest and seasonal beers",
+      "line": "Your autumn seasonal and the Oktoberfest party are coming, and the only place they'll be announced is a feed that moves on in a day. A seasonal beer page stays put.",
+      "hook": "Use this in August and September, or ahead of their anniversary party. Check last year's seasonal posts.",
+      "linkLine": "A seasonal beer and party page for the taproom: {demo-link}"
+    },
+    {
+      "angle": "Private party enquiries",
+      "line": "Your posts show birthday groups and work parties in the taproom, but the only way to ask about booking the space is a DM. A private event form would take the date and group size.",
+      "hook": "Look for group photos, 'book the taproom' mentions or questions about private events. Note one.",
+      "linkLine": "A taproom private event form: {demo-link}"
+    },
+    {
+      "angle": "Mug club regulars",
+      "line": "You clearly have a mug club full of regulars, and the perks and renewal date only live on a sign by the bar. A membership page keeps them renewing.",
+      "hook": "Look for mug club, membership or member night posts. Never invent perks; note what they post.",
+      "linkLine": "A mug club page for the taproom: {demo-link}"
+    },
+    {
+      "angle": "A specific recent beer",
+      "line": "That {specific recent job} you posted looks like the beer people make the trip for. It should be at the top of the brewery's tap list page, not lost in the feed.",
+      "hook": "Pick their newest beer or release post and name it exactly: the beer and its style.",
+      "linkLine": "That beer, front and centre on the tap list: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner} — that {specific recent job} you posted looks like a beer people make the trip for.\n\nI looked for the tap list for {Business Name} and only found a chalkboard photo and some stories. I put together a sample taproom page with a live tap list, an events calendar, tonight's food truck and house rules, with marked placeholders where your photos would go.\n\nWant me to send it over?",
+    "dm2": "{Owner} — following up in case this got buried on a brew day. Here's the sample brewery page for {Business Name}: {demo-link}\n\nIt has a tap list your staff update from a phone, an events calendar, a food truck schedule, release dates and taproom house rules with an age notice. If it's not for you, say so and I won't message again.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for breweries and taprooms here in {City}. I sent you a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"No surprise on a brew day. Short version: I built a sample page for {Business Name} with a live tap list, events, the food truck schedule and house rules, with marked placeholders where your photos would go. Can I email you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range}, then {Care Range} a month for hosting and help keeping the tap list and events current. For a brewery like yours I'd normally quote about {Build Price}.\"\n\"Your staff update the tap list from a phone, so it's never stale. Can I walk you through it for fifteen minutes before the taproom opens one day?\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. We start the day it clears, and the tap list goes live first. You'll check the age notice and licence wording before launch.\"",
+    "objections": [
+      {
+        "objection": "Our tap list is already on a beer app.",
+        "handler": "\"Keep it there for the beer fans who use it. Your own page shows the same list next to hours, events and the food truck, which is what most visitors actually check.\""
+      },
+      {
+        "objection": "We're on Instagram every day, that's enough.",
+        "handler": "\"It's great for buzz. But stories vanish and nobody can search them for Saturday's food truck or the release limits. The page holds the facts and links back to your posts.\""
+      },
+      {
+        "objection": "We're a small taproom, people just show up.",
+        "handler": "\"Your regulars do. Visitors and birthday groups plan ahead, and they pick the taproom whose hours, food and rules they can read on a phone.\""
+      },
+      {
+        "objection": "Alcohol rules make websites complicated.",
+        "handler": "\"That's why the age notice and house rules are built in, and you approve every word about licensing. I don't write anything about the law; I leave a marked spot for your wording.\""
+      },
+      {
+        "objection": "Our brewer's friend built the site.",
+        "handler": "\"Keep what works. If the tap list on it is a month old, the fix is the phone-updated list and the events calendar. That's the part I'd add.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}, because it's a live tap list, an events calendar, release pages and house rules. A few busy release weekends cover it.\""
+      }
+    ],
+    "email": {
+      "subject": "Tap list and events page for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for breweries and taprooms around {City}. {Business Name} has a following and good reviews, but the tap list, events and food truck schedule only live in posts and stories that move on.\n\nI built a sample first rather than ask for your time: a live tap list your staff update from a phone, an events calendar, tonight's food truck, can release dates and taproom house rules with an age notice, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and keeping things current. You approve all licence and age wording. If not, no problem, it comes down at the end of the month.\n\nWorth fifteen minutes before the taproom opens?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build websites for breweries in {City}, and I put together a sample tap list and events page for {Business Name}. I'll email you the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner} — I'm taking the {Business Name} taproom demo down on Friday to free up the space.\n\nWant me to keep it up? One word is fine either way.",
+    "nurture": "Hi {Owner} — holiday release season and the winter events calendar are coming up, and that's when people check what's pouring before they visit. Thought of you.\n\nThe sample taproom page is still here whenever you want it, and nothing's changed on price. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to a couple of busy release weekends, not to the brewhouse budget. Taproom margins carry the site; production rarely does.",
+      "The live tap list is the core feature. Price the phone editor and its sync, not the number of pages.",
+      "Age notices and house rules are part of every build, never an add-on. The brewery approves every word about licensing.",
+      "Events calendars price by event types and ticketing: free trivia is quick, paid tours and release tickets take more work.",
+      "Price beer-to-go and release pre-orders only after the brewery confirms what its licence allows, and keep them as their own line.",
+      "Keep monthly add-ons below what one slow weeknight in the taproom brings in."
+    ],
+    "lineItems": [
+      {
+        "item": "Phone-updated tap list",
+        "min": 300,
+        "max": 800,
+        "unit": "one-time",
+        "description": "Max with styles, ABV, pour sizes, kicked-keg markers, cans to go and a display version for the taproom TV.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Taproom events calendar",
+        "min": 200,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max with recurring trivia and music nights, RSVP, ticketed tours and a weekly email of what's on.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Food truck schedule page",
+        "min": 150,
+        "max": 350,
+        "unit": "per-page",
+        "description": "Max when trucks can be booked from an application form and the schedule shows each truck's menu link.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Can release page with limits",
+        "min": 150,
+        "max": 400,
+        "unit": "per-page",
+        "description": "Max with a countdown, per-person limits, a waitlist sign-up and pre-order pickup where the licence allows.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Brewery tour booking",
+        "min": 250,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max with tour slots, group limits, age confirmation, payment and a reminder the day before.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Beer finder for stores and bars",
+        "min": 300,
+        "max": 900,
+        "unit": "one-time",
+        "description": "Max with a map, filters by beer and a list the distributor or brewery can update from a spreadsheet.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Google profile upkeep with weekly tap list posts",
+      "min": 150,
+      "max": 300,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"What's pouring, this week's events and fresh taproom photos on your Google profile every week, so the brewery looks open and current on Maps.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Taproom and can photo session",
+      "min": 300,
+      "max": 800,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"One afternoon shooting the taproom, the brewhouse and every can on the shelf gives the tap list, release pages and Maps profile real beer photos.\"",
+      "when": "Month 2, before the next can release."
+    },
+    {
+      "name": "Review requests from taproom table cards",
+      "min": 29,
+      "max": 79,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A small card on each taproom table with a code asks visitors for a review of the brewery before they head home.\"",
+      "when": "Day 30. The easiest second sale."
+    },
+    {
+      "name": "Can release day campaign",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A release page, posts and an email to opted-in adult fans for the next limited beer, with the date, limits and taproom hours in one place.\"",
+      "when": "Two to three weeks before each limited release."
+    },
+    {
+      "name": "Oktoberfest and anniversary party campaign",
+      "min": 300,
+      "max": 700,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A landing page and posts for the brewery's biggest party of the year, with tickets, the food trucks and the bands, and the age notice front and centre.\"",
+      "when": "Pitch in July for Oktoberfest, or two months before the anniversary."
+    },
+    {
+      "name": "Online merch shop for the brewery",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Shirts, hats and glassware from the taproom shelf sold online, so visitors who moved away can still wear the brewery's logo.\"",
+      "when": "Month 3, if they sell merch at the bar."
+    },
+    {
+      "name": "Coaster and table tent artwork",
+      "min": 150,
+      "max": 400,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Coasters and table tents with a code to the live tap list and events calendar, so everyone at the bar knows what's on next week at the taproom.\"",
+      "when": "Right after launch."
+    },
+    {
+      "name": "Brewery trail and community calendar submissions",
+      "min": 150,
+      "max": 350,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Your trivia, release days and tours submitted to the local brewery trail, visitor guides and community calendars every month.\"",
+      "when": "Month 3, once the events calendar is running."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "The food trucks that park at the brewery",
+        "whoPays": "Each truck owner, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The food trucks on your taproom schedule post their stops in stories that vanish. I build them a schedule page that links back to the brewery.\"",
+        "whyItWorks": "Trucks and breweries promote each other weekly. The brewery owner's word gets you a quick yes."
+      },
+      {
+        "route": "The bars and restaurants that pour their beer",
+        "whoPays": "Each venue, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The restaurants with your beer on tap have no menu online that says so. The brewery can introduce me to the owners.\"",
+        "whyItWorks": "Accounts trust the brewery rep who visits every week. Each one is a warm restaurant lead."
+      },
+      {
+        "route": "The local beer distributor",
+        "whoPays": "The distribution company",
+        "min": 3000,
+        "max": 8000,
+        "unit": "one-time",
+        "pitchLine": "\"Your distributor carries a long list of craft beer brands and has no way for stores to see what's new. Introduce me.\"",
+        "whyItWorks": "Distributors have budgets and need retailer-facing tools. A brewery partner gets you a real meeting."
+      },
+      {
+        "route": "The homebrew supply shop",
+        "whoPays": "The shop owner",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The homebrew shop where your brewer started sells kits and runs classes with a paper sign-up. The brewery can make the introduction.\"",
+        "whyItWorks": "Homebrew shops and local breweries are close. A class booking page and a shop are a clear sale."
+      },
+      {
+        "route": "The mobile canning company",
+        "whoPays": "The canning company, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The mobile canner that runs your can days books every brewery in the region by email. A booking page with open dates would fill their calendar.\"",
+        "whyItWorks": "Canners serve many breweries and live by their schedule. The brewery client can vouch for them and for you."
+      },
+      {
+        "route": "The regional malt house or hop farm",
+        "whoPays": "The malt house or farm",
+        "min": 2000,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"The local malt house that supplies your grain sells to brewers across the state with a price sheet by email. Introduce me.\"",
+        "whyItWorks": "Regional ingredient suppliers sell to every brewery nearby. A customer who brews with them is the best introduction."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Stop-booking assistant for the food truck",
+        "whoPays": "The truck owner, monthly",
+        "min": 29,
+        "max": 79,
+        "unit": "monthly",
+        "pitchLine": "\"Breweries and taprooms ask the truck about open nights, and the assistant offers dates from the truck's calendar and confirms the booking.\"",
+        "whyItWorks": "Trucks book stops through DMs. A small monthly tool fills nights, and the brewery client sends the first one."
+      },
+      {
+        "route": "Draft list sync for the restaurant accounts",
+        "whoPays": "Each restaurant, monthly",
+        "min": 29,
+        "max": 79,
+        "unit": "monthly",
+        "pitchLine": "\"The restaurant's draft beer list updates when a keg changes, with the brewery's tasting notes drafted for each new beer.\"",
+        "whyItWorks": "Restaurants never keep beer menus current. A small monthly sync is easy to sell through the brewery."
+      },
+      {
+        "route": "Retailer reorder suggestions for the distributor",
+        "whoPays": "The distribution company",
+        "min": 3000,
+        "max": 10000,
+        "unit": "one-time",
+        "pitchLine": "\"Stores get suggested reorders of local craft beer from their past sales and upcoming releases, for the distributor's reps to confirm.\"",
+        "whyItWorks": "Distributors sell on reps' time. A tool that drafts the order makes every store visit faster."
+      },
+      {
+        "route": "Class booking assistant for the homebrew shop",
+        "whoPays": "The shop owner, monthly",
+        "min": 49,
+        "max": 129,
+        "unit": "monthly",
+        "pitchLine": "\"People ask about beginner brewing classes and kits and get dates, a booking link and the right kit suggestion from the shop's own list.\"",
+        "whyItWorks": "Homebrew shops answer the same beginner questions all week. The brewery client is a trusted voice there."
+      },
+      {
+        "route": "Open-date assistant for the mobile canner",
+        "whoPays": "The canning company, monthly",
+        "min": 79,
+        "max": 199,
+        "unit": "monthly",
+        "pitchLine": "\"Breweries ask for a can day and get the canner's open dates, the can sizes offered and a request form, without an email chain.\"",
+        "whyItWorks": "Canners lose time scheduling by email. The brewery client already knows the problem from the other side."
+      },
+      {
+        "route": "Brewer order assistant for the malt house",
+        "whoPays": "The malt house or farm, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"Brewers text their malt order and the assistant confirms varieties, quantities and the delivery date from the malt house's own list.\"",
+        "whyItWorks": "Small suppliers take orders by text and phone. The brewery client orders that way already."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Tap list sync to Google and social",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 500,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Change the tap list once and the brewery site, the Google profile and the taproom TV all show the same beers within a minute.\"",
+      "whenAndWhatItTakes": "Day 14, once the tap list editor is in use. Needs access to the Google profile and the taproom screen."
+    },
+    {
+      "name": "Live tap list editor for staff",
+      "kind": "software",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Whoever changes a keg taps the beer on or off from a phone, and the taproom's list is right before the next customer checks.\"",
+      "whenAndWhatItTakes": "At build. Needs the current beer list with styles and ABV and one staff member per shift who'll use it."
+    },
+    {
+      "name": "Events calendar with paid tickets",
+      "kind": "software",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Trivia teams reserve tables, tour guests and party-goers buy tickets, and the brewery knows the headcount before the night.\"",
+      "whenAndWhatItTakes": "Month 2, when an event sells out or overflows. Needs the event list and a payment account."
+    },
+    {
+      "name": "Taproom question answers in DMs",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"'Are dogs allowed', 'which truck is here tonight' and 'what's on tap' get answered from the brewery's own rules, schedule and tap list.\"",
+      "whenAndWhatItTakes": "Month 2. Needs house rules approved by the owner and the tap list kept current. Never answers legal or age questions beyond the posted rules. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Event reminder texts",
+      "kind": "automation",
+      "oneTimeMin": 150,
+      "oneTimeMax": 400,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Everyone who RSVPs to trivia, a tour or the anniversary party gets a reminder the day before with the taproom address and parking.\"",
+      "whenAndWhatItTakes": "Month 2, with the events calendar. Needs opted-in phone numbers from adults only."
+    },
+    {
+      "name": "Brewery tour booking with age confirmation",
+      "kind": "software",
+      "oneTimeMin": 300,
+      "oneTimeMax": 700,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Groups pick a tour slot, confirm everyone tasting is twenty-one or over, pay, and get a reminder, so tours stop being arranged by DM.\"",
+      "whenAndWhatItTakes": "Month 3, if they run tours. Needs tour times, group limits, prices and the brewery's own age wording."
+    },
+    {
+      "name": "New beer description writer",
+      "kind": "ai",
+      "oneTimeMin": 200,
+      "oneTimeMax": 500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Tell it the style, hops and what the brewer tastes, and get a short tap list description to approve, with no health or strength boasts.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the brewer's notes for each beer. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Mug club membership manager",
+      "kind": "software",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Members sign up and renew online, staff see who's a member at the bar, and the brewery knows its renewal dates without a binder.\"",
+      "whenAndWhatItTakes": "Month 3, if they run a mug club. Needs perks in writing, the yearly fee and a payment account."
+    },
+    {
+      "name": "Review reply drafts for the taproom",
+      "kind": "ai",
+      "oneTimeMin": 200,
+      "oneTimeMax": 500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"A visitor mentions the hazy pale or the patio, and a friendly taproom reply naming it is drafted for the owner to approve.\"",
+      "whenAndWhatItTakes": "Month 2, alongside the Google profile work. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Release day alerts for opted-in fans",
+      "kind": "automation",
+      "oneTimeMin": 150,
+      "oneTimeMax": 400,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Fans who confirmed they're twenty-one or over get a note when a limited beer is announced and on release morning, with limits and taproom hours.\"",
+      "whenAndWhatItTakes": "Month 3. Needs an age-confirmed sign-up list and the release calendar."
+    },
+    {
+      "name": "Release caption writer",
+      "kind": "ai",
+      "oneTimeMin": 150,
+      "oneTimeMax": 400,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Upload the can art details and get a release caption in the brewery's voice with date, limits and an age note, ready to approve.\"",
+      "whenAndWhatItTakes": "Month 3. Needs a few past release captions. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Beer finder for stores and bars",
+      "kind": "software",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Fans search by beer and see the bottle shops and bars that carry the brewery's cans, updated from the distributor's or the brewery's account list.\"",
+      "whenAndWhatItTakes": "Month 4, for breweries in distribution. Needs the account list and permission to name accounts."
+    },
+    {
+      "name": "Private event enquiries with a deposit",
+      "kind": "software",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Groups pick a date and taproom area, enter guest count, and pay a deposit to hold the space, with the house rules attached.\"",
+      "whenAndWhatItTakes": "Month 4. Needs private event rules, minimums and a payment account."
+    },
+    {
+      "name": "Taproom phone answering",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"During a busy release or trivia night, calls about hours, private parties and tours still get answered and the details texted over.\"",
+      "whenAndWhatItTakes": "Month 5, once they trust the DM answers. Needs rules, events and private event terms. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Mug club renewal reminders",
+      "kind": "automation",
+      "oneTimeMin": 100,
+      "oneTimeMax": 300,
+      "monthlyMin": 9,
+      "monthlyMax": 29,
+      "pitchLine": "\"Members get a friendly note before their mug club year runs out, with the perks and a renewal link, so the membership list doesn't quietly shrink.\"",
+      "whenAndWhatItTakes": "Month 4, with the membership manager live."
+    },
+    {
+      "name": "Food truck booking calendar for the brewery",
+      "kind": "software",
+      "oneTimeMin": 300,
+      "oneTimeMax": 700,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Food trucks apply for open nights at the brewery, the manager approves, and the public schedule fills itself in.\"",
+      "whenAndWhatItTakes": "Month 4, if they book several trucks a month. Needs their truck rules and a manager to approve."
+    },
+    {
+      "name": "Keg and wholesale account tracker",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Know which bar has which kegs of your beer, when they were delivered and which are due back to the brewery, instead of a whiteboard in the cold room.\"",
+      "whenAndWhatItTakes": "Month 6, for breweries self-distributing to accounts. Needs the account list and keg counts."
+    },
+    {
+      "name": "Bar account reorder forecaster",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"It suggests when each bar account will need another keg from past deliveries and the season, so the brewery calls before the beer runs out.\"",
+      "whenAndWhatItTakes": "Month 8, with several months of keg tracker data. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Beer style and serving policy guide for staff",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"New beertenders ask about a style on tap or the taproom's ID and serving policy and get the brewery's own answer, written and approved by the owner.\"",
+      "whenAndWhatItTakes": "Month 6. Needs the owner's written policies and beer notes, re-approved when they change. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Brewing schedule to tap list planner",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"From the brew schedule and keg levels, it suggests which beers will kick and what to announce next on the tap list, for the brewer to confirm.\"",
+      "whenAndWhatItTakes": "Month 9. Needs the brew schedule and keg levels kept current. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the phone-updated tap list for taprooms",
+      "whoPays": "Taprooms, monthly",
+      "min": 19,
+      "max": 79,
+      "unit": "monthly",
+      "pitchLine": "\"Every taproom fights a stale tap list. A phone-edited list that syncs to the site, Google and the taproom TV is a product they'll pay monthly for.\"",
+      "whyItWorks": "The first brewery paid for the workflow. Taprooms are easy to find and talk to each other constantly."
+    },
+    {
+      "route": "State brewers guild member toolkit",
+      "whoPays": "The brewers guild",
+      "min": 2000,
+      "max": 8000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer every member brewery a tap-list-first site template with an age notice built in, as a guild benefit.\"",
+      "whyItWorks": "Guilds need member benefits and care about responsible marketing. One deal reaches every brewery in the state."
+    },
+    {
+      "route": "Beer distributors' retailer and brand locator",
+      "whoPays": "The distributor",
+      "min": 5000,
+      "max": 20000,
+      "unit": "one-time",
+      "pitchLine": "\"Fans search for local craft beer and find the stores carrying your brands. Every brewery in your book gets a finder for its cans.\"",
+      "whyItWorks": "Distributors win shelf space by helping beer sell through. A locator does that for every brand they carry."
+    },
+    {
+      "route": "Brewhouse equipment makers' launch kit",
+      "whoPays": "The equipment manufacturer",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Every new brewery you install needs a taproom site and tap list on opening day. Bundle it with the brewhouse.\"",
+      "whyItWorks": "Manufacturers meet owners at opening, when they're spending. A bundled site helps close the equipment quote."
+    },
+    {
+      "route": "Brewery trail with the tourism office",
+      "whoPays": "The tourism office or visitor bureau",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"A regional brewery trail with every taproom's hours, tap list and a passport, with an age notice and a designated-driver note on every page.\"",
+      "whyItWorks": "Tourism offices fund trails and want visitors staying longer. Breweries are a natural draw for them."
+    },
+    {
+      "route": "Brewery collectives and multi-taproom groups",
+      "whoPays": "The brewery group, per taproom",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "pitchLine": "\"Each taproom in your group needs its own tap list and events, sharing one release calendar and merch shop. I build the frame once.\"",
+      "whyItWorks": "Groups buy once and roll out across taprooms, and the owner already knows your work."
+    },
+    {
+      "route": "Cideries, meaderies and small wineries",
+      "whoPays": "Each producer, at your normal rate",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"Cideries and small wineries have the same tasting room problem: what's pouring, events and house rules. The taproom template carries straight over.\"",
+      "whyItWorks": "Same licence-aware tasting room model, same visitors, often on the same trail as the brewery client."
+    },
+    {
+      "route": "Craft beer festival organisers",
+      "whoPays": "The festival organiser",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"The festival needs a brewery list, a tap map by booth, ticketing with age confirmation and a designated-driver ticket. I know the brewery side.\"",
+      "whyItWorks": "Festivals rebuild each year with volunteers. The brewery client attends and can introduce you."
+    },
+    {
+      "route": "Homebrew shop chains and brewing schools",
+      "whoPays": "The shop chain or school",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"Your stores run homebrew classes and sell beer kits by location. One class calendar and kit shop across every store saves the managers time.\"",
+      "whyItWorks": "Chains manage classes by location on paper. The brewery client came up through their shops."
+    },
+    {
+      "route": "Mobile canning networks",
+      "whoPays": "The canning company",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"Your crews can for breweries across several states. A booking site with open dates by region turns scheduling into a form.\"",
+      "whyItWorks": "Canners serve many breweries and schedule by email. The brewery client knows the pain firsthand."
+    },
+    {
+      "route": "White-label taproom template for agencies",
+      "whoPays": "The agency, per site",
+      "min": 500,
+      "max": 1500,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency picks up brewery clients and rebuilds tap lists by hand. License my taproom template with a phone-updated list and age notice.\"",
+      "whyItWorks": "Agencies sell the client; you sell them the brewery part you've already built and checked."
+    },
+    {
+      "route": "One taproom per brewery cluster, region by region",
+      "whoPays": "New brewery clients in a new region",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I build for one taproom per brewery cluster around {City}. The brewery district an hour away has its own scene and no live tap lists.\"",
+      "whyItWorks": "Breweries cluster in districts and visitors hop between them. Non-competing clusters keep the pitch clean."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Brewery site plus care plan, one contract",
+      "min": 1500,
+      "max": 2500,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo and approve the age notice wording.",
+      "line": "\"The brewery site and the care plan go on one contract, so a new beer or an event change is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 14,
+      "offer": "Tap list sync to Google and social",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "trigger": "Staff are still posting a chalkboard photo of the tap list every day.",
+      "line": "\"Update the tap list once, and the site, Google and the taproom TV all match.\""
+    },
+    {
+      "rung": 3,
+      "day": 30,
+      "offer": "Google profile upkeep with weekly tap list posts",
+      "min": 150,
+      "max": 300,
+      "unit": "monthly",
+      "trigger": "The Google listing shows old photos or a beer list from last season.",
+      "line": "\"Visitors find the brewery on Maps first. Let's keep this week's beers and events there.\""
+    },
+    {
+      "rung": 4,
+      "day": 45,
+      "offer": "Events calendar with paid tickets",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "trigger": "Trivia overflows, or a ticketed event is sold through DMs and a cash box.",
+      "line": "\"That full trivia night is a headcount problem a ticketed taproom calendar solves.\""
+    },
+    {
+      "rung": 5,
+      "day": 60,
+      "offer": "Taproom and can photo session",
+      "min": 300,
+      "max": 800,
+      "unit": "per-shoot",
+      "trigger": "Release pages still use marked placeholders or blurry shots of the cans.",
+      "line": "\"One afternoon in the brewhouse fills the tap list and release pages with real beer photos.\""
+    },
+    {
+      "rung": 6,
+      "day": 90,
+      "offer": "Oktoberfest and anniversary party campaign",
+      "min": 300,
+      "max": 700,
+      "unit": "one-time",
+      "trigger": "July arrives, or two months before the brewery's anniversary, with no party page.",
+      "line": "\"The brewery's biggest party deserves its own page, tickets and an age notice up front.\""
+    },
+    {
+      "rung": 7,
+      "day": 120,
+      "offer": "Mug club membership manager",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "trigger": "They mention renewals tracked in a binder or members missing their renewal.",
+      "line": "\"Your mug club regulars renew online, and staff see members at the bar without the binder.\""
+    },
+    {
+      "rung": 8,
+      "day": 180,
+      "offer": "Introduction to their beer distributor",
+      "min": 3000,
+      "max": 8000,
+      "unit": "one-time",
+      "trigger": "They mention fans asking which stores carry the cans, or a new distribution deal.",
+      "line": "\"Your distributor has no way for fans to find local craft beer on shelves. Would you introduce me?\""
+    }
+  ]
+}

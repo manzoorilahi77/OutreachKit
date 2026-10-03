@@ -1,0 +1,852 @@
+{
+  "schemaVersion": 1,
+  "category": "Coffee shops & cafés",
+  "slug": "coffee-shops-caf-s",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Food family batch. Smallest tickets in the family: lead with Google profile management, hours accuracy and bean sales, keep the site lean. Slug drops the accented letter per kitSlug. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Roast list and retail bean bags",
+      "contains": "Each coffee on the shelf with origin, roast level and tasting notes, bag sizes, grind options, and whether it's pickup only or ships",
+      "why": "Regulars want to take home the coffee they drank in the café. A roast list with tasting notes turns the retail shelf into an online order."
+    },
+    {
+      "section": "Laptop, wifi and study details",
+      "contains": "Wifi, outlets, laptop-friendly hours, quiet times, seating count in words, and any no-laptop weekend rules",
+      "why": "Remote workers and students pick a café by wifi and outlets before they think about the espresso, and they check before they pack the bag."
+    },
+    {
+      "section": "Coffee catering boxes",
+      "contains": "Boxes of brewed coffee for meetings with how many cups each pours, pastry trays, cups and milk included, order lead time and pickup or delivery",
+      "why": "Office managers order coffee for a morning meeting the day before. A clear box order is the café's best ticket of the week."
+    },
+    {
+      "section": "Drinks guide and milk options",
+      "contains": "Espresso drinks explained simply, oat, almond and other milks, decaf and half-caf, seasonal drinks, kids' drinks and sweetness levels",
+      "why": "A newcomer staring at the espresso bar menu wants to know what a cortado is and whether there's oat milk before they reach the counter."
+    },
+    {
+      "section": "Café events and community nights",
+      "contains": "Open mic nights, cuppings, latte art throwdowns, book clubs and local artist shows, with dates, times and an RSVP",
+      "why": "Community nights are why a café becomes someone's place. People plan around them only if they can find the date."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C25",
+      "siteType": "local-conversion",
+      "name": "Open Early",
+      "heroLayout": "card-stack",
+      "mood": [
+        "bright",
+        "awake",
+        "friendly"
+      ],
+      "bestFor": "Neighbourhood cafés that need today's hours, the drinks menu and directions on one page",
+      "pairsWithTier": "starter",
+      "headlineSample": "Espresso, pastries and good wifi in {City}, open early",
+      "whyItFits": "Citrus morning colours and geometric display type feel like the first coffee of the day, and the cards put hours and directions first."
+    },
+    {
+      "id": "b",
+      "themeId": "C32",
+      "siteType": "menu-and-order",
+      "name": "Café Counter",
+      "heroLayout": "split-photo",
+      "mood": [
+        "warm",
+        "relaxed",
+        "local"
+      ],
+      "bestFor": "Coffee shops with a food menu, order-ahead pickup, catering boxes and a community calendar",
+      "pairsWithTier": "standard",
+      "headlineSample": "Your neighbourhood coffee shop in {City}, with brunch all day",
+      "whyItFits": "The family combo, Olive Grove. Cream and olive with a bookish serif feel like a café with plants in the window, and the Order button passes contrast."
+    },
+    {
+      "id": "c",
+      "themeId": "C34",
+      "siteType": "premium-brand",
+      "name": "Roaster's Table",
+      "heroLayout": "type-led",
+      "mood": [
+        "rich",
+        "crafted",
+        "patient"
+      ],
+      "bestFor": "Cafés that roast their own beans and sell bags, subscriptions and wholesale",
+      "pairsWithTier": "premium",
+      "headlineSample": "Small-batch coffee, roasted every week in {City}",
+      "whyItFits": "Cacao browns are literally coffee, and the type-led hero puts origins and tasting notes ahead of photos, which is how roasters sell."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your coffee shop's Google listing has great reviews and no website, so someone new in the neighbourhood can't see the drinks menu or whether you do oat milk.",
+      "hook": "Open their Maps listing and confirm there's no Website button. Screenshot it for when they reply.",
+      "linkLine": "Here's what would sit behind that button: {demo-link}"
+    },
+    {
+      "angle": "Hours that don't match",
+      "line": "Your café's hours on Google say one thing and your last post says another. Someone walking over for a 7am espresso to a locked door doesn't come back.",
+      "hook": "Compare Google hours, Facebook hours and the door sign in a recent post. Note the mismatch exactly.",
+      "linkLine": "One set of café hours, the same everywhere: {demo-link}"
+    },
+    {
+      "angle": "Menu board only",
+      "line": "The only coffee menu online is a photo of the chalkboard behind the espresso bar, and half of it is glare. People decide what to order on the walk over.",
+      "hook": "Find the menu wherever it lives: a pinned post, a highlight or a photo. Note what's unreadable.",
+      "linkLine": "The café menu as text, readable on the walk over: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "I opened your coffee shop site on my phone and the menu ran off the screen. Almost everyone checks a café on a phone, usually standing on the sidewalk.",
+      "hook": "Only if they have a site. Load it on your phone and note what breaks. Screenshot it for when they reply.",
+      "linkLine": "The same café, rebuilt for a phone: {demo-link}"
+    },
+    {
+      "angle": "Seasonal drinks launch",
+      "line": "Your autumn drinks are about to launch, and the only place they'll live is a post that's gone from the feed in a few days. A seasonal menu on the café's page stays put.",
+      "hook": "Use this in late August to September, or again before the winter drinks. Check last year's seasonal posts.",
+      "linkLine": "A seasonal coffee menu that stays up: {demo-link}"
+    },
+    {
+      "angle": "Beans sold in-store only",
+      "line": "You sell bags of coffee on the shelf by the register, and there's no way to buy one online. Regulars who move away still want your beans.",
+      "hook": "Look for posts of retail bags or a beans shelf. Check whether any link sells them.",
+      "linkLine": "Your coffee beans, orderable online: {demo-link}"
+    },
+    {
+      "angle": "Wifi questions in reviews",
+      "line": "Your reviews keep mentioning the café's wifi and whether there are outlets. A short laptop and study section answers that for every remote worker deciding where to set up.",
+      "hook": "Search their reviews for wifi, laptop, outlets or study. Quote one.",
+      "linkLine": "A café page with laptop and wifi details: {demo-link}"
+    },
+    {
+      "angle": "Office coffee boxes",
+      "line": "Offices nearby order boxes of coffee for morning meetings, and right now they'd have to call the café and hope someone answers during the rush.",
+      "hook": "Check whether they mention coffee to go, catering or travel boxes anywhere. Note what they call it.",
+      "linkLine": "A coffee catering box order page: {demo-link}"
+    },
+    {
+      "angle": "Hiring baristas",
+      "line": "Saw the coffee shop is hiring a barista. Good baristas look at whether a café seems busy and well run before they apply.",
+      "hook": "Only if they posted a hiring story or a help-wanted sign. Note the role and the date.",
+      "linkLine": "A café page with a join-the-bar section: {demo-link}"
+    },
+    {
+      "angle": "Events lost in stories",
+      "line": "Your open mic and latte art nights get announced in stories and vanish. A café events calendar would let people plan their week around them.",
+      "hook": "Look for event stories, highlights or flyer posts. Note the next event by name and date.",
+      "linkLine": "A café events calendar with RSVP: {demo-link}"
+    },
+    {
+      "angle": "Reviews about one drink",
+      "line": "Your reviews keep naming the same drink as the best in town. That praise should sit next to the drink on the café's menu, not three taps deep on Google.",
+      "hook": "Read their reviews and find the drink people mention most. Quote one phrase back if they reply.",
+      "linkLine": "Your coffee reviews next to the drinks they name: {demo-link}"
+    },
+    {
+      "angle": "December gift cards",
+      "line": "December is when people want a coffee shop gift card for a teacher or a coworker. If there's nowhere to buy one online, they buy a mug from a chain.",
+      "hook": "Use this from November to mid-December. Check whether they sell gift cards anywhere online.",
+      "linkLine": "A café gift card page, ready for December: {demo-link}"
+    },
+    {
+      "angle": "Roaster wholesale enquiries",
+      "line": "You roast your own coffee, and other cafés and offices have to DM to ask about wholesale. A wholesale page with a request form makes the roaster look ready for accounts.",
+      "hook": "Only if they roast. Look for 'roasted in-house' or wholesale questions in comments.",
+      "linkLine": "A roaster wholesale page with a request form: {demo-link}"
+    },
+    {
+      "angle": "Regulars only",
+      "line": "Your café clearly runs on regulars who know everyone's order. When a few of them move away, the people replacing them find a coffee shop on Maps first.",
+      "hook": "Look for reviews like 'my daily spot' or 'they know my order'. Quote one.",
+      "linkLine": "Where a new café regular would land: {demo-link}"
+    },
+    {
+      "angle": "A specific recent drink",
+      "line": "That {specific recent job} you posted looks like a reason to cross town for coffee. It should be the first thing on the café's menu page, not last week's post.",
+      "hook": "Pick their newest drink, latte art or pastry post and name it exactly.",
+      "linkLine": "That drink, front and centre: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner} — that {specific recent job} you posted looks like the reason people make the detour.\n\nI looked up {Business Name} on my phone and found the hours didn't match between Google and your posts, and no menu I could read. I put together a sample café page with the drinks menu as text, today's hours, your events and a beans shelf, with marked placeholders where your photos would go.\n\nWant me to send it over?",
+    "dm2": "{Owner} — following up in case this got buried under the morning rush. Here's the sample café page for {Business Name}: {demo-link}\n\nIt has the drinks menu as text, hours that match Google, a laptop and wifi section, coffee catering boxes and an events calendar. If it's not for you, say so and I won't message again.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I help coffee shops and cafés here in {City} with their Google profile and website. I sent you a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"No surprise during a rush. Short version: I built a sample page for {Business Name} with the drinks menu as text, hours that match Google, catering boxes and events, with marked placeholders where your photos would go. Can I text you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range}, then {Care Range} a month for hosting, hours and menu changes. For a café like yours I'd normally quote about {Build Price}.\"\n\"Honestly, most new customers will find you on Maps, so I'd keep your Google profile right as part of it. Can I show you in ten minutes after the lunch lull?\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. We start the day it clears, and the hours fix goes in first.\"",
+    "objections": [
+      {
+        "objection": "People just walk in. A website won't sell coffee.",
+        "handler": "\"Mostly true, and I won't pretend otherwise. The page is there so the Google listing, hours and menu are right, and so beans, gift cards and catering boxes can sell when you're closed.\""
+      },
+      {
+        "objection": "My Instagram is my website.",
+        "handler": "\"Keep it, it's lovely. But it can't show today's hours or sell a bag of beans at night. The page links straight back to your grid.\""
+      },
+      {
+        "objection": "I can't afford another monthly bill.",
+        "handler": "\"Fair. The monthly is set to be less than a slow morning's takings, and it covers keeping Google, hours and the menu right so you don't have to.\""
+      },
+      {
+        "objection": "I'm on the delivery apps already.",
+        "handler": "\"Keep them for delivery. Order-ahead pickup on your own page lets regulars skip the line without the app taking its cut.\""
+      },
+      {
+        "objection": "My barista does our social media.",
+        "handler": "\"Great, keep that going. The page is the fixed part: hours, menu, events and beans. Your barista can link to it every post.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}, because it's a menu, hours synced with Google and a beans and catering section. A few catering boxes and bean bags cover the monthly.\""
+      }
+    ],
+    "email": {
+      "subject": "Hours, menu and beans page for {Business Name}",
+      "body": "Hi {Owner},\n\nI help coffee shops and cafés around {City} with their Google profile and website. {Business Name} has loyal regulars and great reviews, but the hours online don't all match, and there's no menu or beans page a newcomer can read on a phone.\n\nI built a sample first rather than ask for your time: the drinks menu as text, hours that match Google, a laptop and wifi section, coffee catering boxes, an events calendar and a beans shelf, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and keeping hours and menu right. If not, no problem, it comes down at the end of the month.\n\nWorth ten minutes after the lunch lull?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I help coffee shops in {City} with their Google listing and website, and I put together a sample café page for {Business Name}. I'll text you the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner} — I'm taking the {Business Name} café demo down on Friday to free up the space.\n\nShould I keep it up? One word is fine either way.",
+    "nurture": "Hi {Owner} — gift card season and holiday bean bags are coming, and office coffee orders pick up before the holidays. Thought of you.\n\nThe sample café page is still here whenever you want it, and nothing's changed on price. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to a couple of good weekends, never to a month of sales. A café's tickets are small and its margins are tighter than they look.",
+      "Lead with the Google profile and hours, not the site. For a café, Maps is the storefront and the site supports it.",
+      "Price the beans shelf by the number of coffees and whether it ships. Pickup-only is a small job; shipping adds real work.",
+      "Catering boxes and gift cards are the add-ons that earn money while the café is closed. Price them as their own lines.",
+      "Roasters with wholesale accounts can carry more: price the wholesale portal against one account's monthly order, not the café's tickets.",
+      "Keep every monthly add-on under what a slow morning takes in, or it gets cancelled in February."
+    ],
+    "lineItems": [
+      {
+        "item": "Beans shelf with pickup or shipping",
+        "min": 250,
+        "max": 700,
+        "unit": "one-time",
+        "description": "Max with several coffees, grind options, shipping rates and a sold-out switch the roaster controls.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Coffee catering box order page",
+        "min": 150,
+        "max": 400,
+        "unit": "per-page",
+        "description": "Max with pastry trays, lead times, pickup or delivery choice and a payment step.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Café events calendar with RSVP",
+        "min": 150,
+        "max": 400,
+        "unit": "one-time",
+        "description": "Max with recurring events, ticketed cuppings and an email to RSVPs the day before.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Roaster wholesale request page",
+        "min": 200,
+        "max": 500,
+        "unit": "per-page",
+        "description": "Max with origin notes, sample request, equipment and training mentions and a qualifying form.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Online café gift cards",
+        "min": 150,
+        "max": 400,
+        "unit": "one-time",
+        "description": "Max with emailed and printable cards, preset amounts and a December banner.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Second-language café menu",
+        "min": 150,
+        "max": 450,
+        "unit": "one-time",
+        "description": "Max when the menu, drinks guide and events are all translated.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Google profile management for the café",
+      "min": 150,
+      "max": 300,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Hours, holiday closures, the drinks menu and a fresh coffee photo on your Google profile every week, so the café looks open and current on Maps.\"",
+      "when": "Day 14. For coffee shops this is the main sale, often bigger than the site."
+    },
+    {
+      "name": "Drinks and space photo session",
+      "min": 250,
+      "max": 600,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"One quiet afternoon shooting your signature drinks, the espresso bar and the room in good light gives the café a menu and a Maps profile that look like the real place.\"",
+      "when": "Month 2, booked in the afternoon lull."
+    },
+    {
+      "name": "Review requests from a code on the receipt",
+      "min": 29,
+      "max": 79,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A small code on the receipt and the counter asks for a coffee shop review while the latte is still warm, and the monthly report shows what people mention.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Seasonal drinks launch campaign",
+      "min": 200,
+      "max": 450,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A short launch for the autumn or winter drinks, on the café page, the Google profile and in stories, with a counter sign to match.\"",
+      "when": "Pitch a month before each seasonal menu, usually August and November."
+    },
+    {
+      "name": "Window decal and cup sticker artwork",
+      "min": 150,
+      "max": 400,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A window decal with today's hours and a cup sticker with a code for order-ahead, so every coffee that leaves the shop points back to the café.\"",
+      "when": "Right after launch."
+    },
+    {
+      "name": "Holiday gift card and bean bag campaign",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A December push for café gift cards and holiday coffee bags, online and at the register, so teacher and coworker gifts come from you.\"",
+      "when": "Pitch in October, run from Thanksgiving to Christmas."
+    },
+    {
+      "name": "Local events listing outreach",
+      "min": 150,
+      "max": 350,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Your open mics and cuppings submitted to the local events calendars and community pages each month, so the café's nights get found.\"",
+      "when": "Month 3, once the events calendar is running."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "The bakery that supplies their pastries",
+        "whoPays": "The bakery, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The bakery behind the croissants in your café's case takes custom cake orders by DM. The coffee shop owner can introduce me.\"",
+        "whyItWorks": "Suppliers and cafés talk every morning. A café that's happy with its page is a warm introduction."
+      },
+      {
+        "route": "The roaster that supplies their beans",
+        "whoPays": "The roaster",
+        "min": 2000,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"Your roaster sells to every café in the area and has no wholesale page or bean shop that works. Introduce me.\"",
+        "whyItWorks": "Roasters have retail and wholesale to sell online and a real budget. A café account gets you in."
+      },
+      {
+        "route": "The coworking space down the street",
+        "whoPays": "The coworking operator",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The coworking space whose members drink your coffee has no clear day-pass or tour page. The café can make the introduction.\"",
+        "whyItWorks": "Coworking spaces sell to the same remote workers. The café owner knows the operator by name."
+      },
+      {
+        "route": "The bookshop or record store next door",
+        "whoPays": "The shop, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The bookshop next to the café runs author nights with no events page. I build for the shops on the same block as the coffee shop.\"",
+        "whyItWorks": "Independent shops near a café share customers and promote each other. The block is a cluster."
+      },
+      {
+        "route": "The local dairy that delivers their milk",
+        "whoPays": "The dairy",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The dairy that delivers your café's milk sells to shops and homes and takes orders by phone. A customer's introduction gets me a meeting.\"",
+        "whyItWorks": "Small dairies sell wholesale and direct and need both online. The café is a steady account."
+      },
+      {
+        "route": "Local artists who show on the café walls",
+        "whoPays": "Each artist, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The artists hanging work in your coffee shop sell through DMs. A simple portfolio page with prices sells the piece someone admired over a latte.\"",
+        "whyItWorks": "Café walls rotate artists every month. Each one is a warm, small, quick build."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Custom order intake for the pastry bakery",
+        "whoPays": "The bakery, monthly",
+        "min": 49,
+        "max": 129,
+        "unit": "monthly",
+        "pitchLine": "\"Customers who loved the café's croissants ask the bakery about custom orders, and an assistant collects the date, servings and flavour for the baker.\"",
+        "whyItWorks": "Bakeries lose custom orders in DMs. The coffee shop sees how well the bakery's pastries sell."
+      },
+      {
+        "route": "Wholesale café finder for the roaster",
+        "whoPays": "The roaster",
+        "min": 1500,
+        "max": 5000,
+        "unit": "one-time",
+        "pitchLine": "\"Coffee drinkers search for cafés that pour the roaster's beans, and the finder sends them to accounts like your coffee shop.\"",
+        "whyItWorks": "It makes the roaster useful to its cafés, which keeps accounts loyal."
+      },
+      {
+        "route": "Day-pass question bot for the coworking space",
+        "whoPays": "The coworking operator, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"Remote workers ask about day passes, desks and meeting rooms at night and get answers and a tour booking, with the café next door mentioned for coffee.\"",
+        "whyItWorks": "Coworking spaces lose sign-ups to slow replies. The café already shares their members."
+      },
+      {
+        "route": "Author night RSVP assistant for the bookshop",
+        "whoPays": "The bookshop, per season",
+        "min": 400,
+        "max": 1200,
+        "unit": "one-time",
+        "pitchLine": "\"Readers ask about upcoming author nights and book clubs and get dates and an RSVP, with coffee from the café next door on the night.\"",
+        "whyItWorks": "Bookshops run events on thin staff. A shared event with the café fills both rooms."
+      },
+      {
+        "route": "Standing order assistant for the dairy",
+        "whoPays": "The dairy, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"Cafés text changes to their milk standing order, and the dairy gets a clean delivery list per route before loading.\"",
+        "whyItWorks": "Order changes by phone get missed. The coffee shop client knows exactly how those changes come in."
+      },
+      {
+        "route": "Art sale enquiry assistant for café artists",
+        "whoPays": "The artist or the artist collective",
+        "min": 300,
+        "max": 900,
+        "unit": "one-time",
+        "pitchLine": "\"Coffee shop customers scan a code by a painting and ask about price, size and shipping, and the artist gets a ready buyer.\"",
+        "whyItWorks": "Artists miss sales when nobody's there to answer. The café gets a nicer wall and the artist gets paid."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Café hours sync across listings",
+      "kind": "automation",
+      "oneTimeMin": 150,
+      "oneTimeMax": 400,
+      "monthlyMin": 9,
+      "monthlyMax": 29,
+      "pitchLine": "\"Change the café's hours once and the site, Google and Facebook match, holiday closures and early snow days included.\"",
+      "whenAndWhatItTakes": "At build. Needs the regular hours, the holiday calendar and access to the Google and Facebook pages."
+    },
+    {
+      "name": "Order-ahead coffee pickup",
+      "kind": "software",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 29,
+      "monthlyMax": 69,
+      "pitchLine": "\"Regulars order their usual coffee from the café page on the walk over and pick it up from the end of the bar, skipping the morning line.\"",
+      "whenAndWhatItTakes": "Month 2, if the morning line runs out the door. Needs the drinks menu with modifiers and a payment account."
+    },
+    {
+      "name": "Digital punch card for coffee regulars",
+      "kind": "software",
+      "oneTimeMin": 200,
+      "oneTimeMax": 500,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"The paper stamp card moves to the customer's phone, so the tenth coffee is free and the café can see who its regulars are.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the current reward and a sign by the register."
+    },
+    {
+      "name": "Hours, wifi and milk answers in DMs",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"'Are you open Sunday', 'is there wifi' and 'do you have oat milk' get answered from the café's real hours and menu while the baristas work the bar.\"",
+      "whenAndWhatItTakes": "Month 2. Needs hours, menu and the laptop details kept current. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Coffee bean subscriptions",
+      "kind": "software",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Regulars get a bag of your coffee every two or four weeks, for pickup or shipped, billed automatically, so retail beans become steady income.\"",
+      "whenAndWhatItTakes": "Month 3, once the beans shelf sells. Needs bag sizes, shipping rules and a payment account."
+    },
+    {
+      "name": "Bean subscription ship and pickup notices",
+      "kind": "automation",
+      "oneTimeMin": 100,
+      "oneTimeMax": 300,
+      "monthlyMin": 9,
+      "monthlyMax": 29,
+      "pitchLine": "\"Subscribers get a note when this month's coffee is roasted and ready or shipped, with the tasting notes, so nobody forgets to pick up their bag.\"",
+      "whenAndWhatItTakes": "Month 3, with bean subscriptions live."
+    },
+    {
+      "name": "Review reply drafts for the coffee shop",
+      "kind": "ai",
+      "oneTimeMin": 200,
+      "oneTimeMax": 500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"A reviewer praises the cortado or the corner table, and a friendly café reply mentioning it is drafted for the owner to approve from behind the bar.\"",
+      "whenAndWhatItTakes": "Month 2, alongside Google profile management. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Café gift cards sold online",
+      "kind": "software",
+      "oneTimeMin": 150,
+      "oneTimeMax": 400,
+      "monthlyMin": 9,
+      "monthlyMax": 29,
+      "pitchLine": "\"Coffee shop gift cards bought from a phone at midnight, emailed or printed, and spent at the counter like any other card.\"",
+      "whenAndWhatItTakes": "October, before gift season. Needs card amounts and a payment account."
+    },
+    {
+      "name": "Seasonal drink caption writer",
+      "kind": "ai",
+      "oneTimeMin": 150,
+      "oneTimeMax": 400,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Snap the new seasonal drink and get a short caption in the café's voice with the flavour, the price and today's hours, ready to post.\"",
+      "whenAndWhatItTakes": "Month 2. Needs a few past captions. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Coffee catering box confirmations",
+      "kind": "automation",
+      "oneTimeMin": 100,
+      "oneTimeMax": 300,
+      "monthlyMin": 9,
+      "monthlyMax": 29,
+      "pitchLine": "\"Every catering box order gets a confirmation and a reminder the evening before, and the opening barista sees tomorrow's boxes at a glance.\"",
+      "whenAndWhatItTakes": "Month 2, once the catering box page takes orders."
+    },
+    {
+      "name": "Tasting note writer for new roasts",
+      "kind": "ai",
+      "oneTimeMin": 150,
+      "oneTimeMax": 400,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Tell it the origin, process and what you taste, and get a short roast description for the bag label and the beans shelf, for you to edit.\"",
+      "whenAndWhatItTakes": "Month 3, for cafés that roast or rotate guest coffees. Needs the roaster's own notes. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Wholesale coffee ordering portal",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Offices and other cafés order your roasted coffee on their own account with their own prices and a weekly delivery day.\"",
+      "whenAndWhatItTakes": "Month 4, for roasters with wholesale accounts. Needs the wholesale price list and delivery days."
+    },
+    {
+      "name": "Coffee match quiz",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Customers say how they brew and what they like, and the quiz suggests a bag from the café's current roasts with a buy button.\"",
+      "whenAndWhatItTakes": "Month 4, once the beans shelf has several coffees. Needs the roaster's matching rules. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Event RSVP and cupping tickets",
+      "kind": "software",
+      "oneTimeMin": 200,
+      "oneTimeMax": 500,
+      "monthlyMin": 9,
+      "monthlyMax": 29,
+      "pitchLine": "\"Open mic slots and paid cupping seats get booked from the café events calendar, with a reminder text the day before.\"",
+      "whenAndWhatItTakes": "Month 3, once events run regularly. Needs the event schedule and a payment account for paid seats."
+    },
+    {
+      "name": "Bean stock alerts",
+      "kind": "automation",
+      "oneTimeMin": 100,
+      "oneTimeMax": 300,
+      "monthlyMin": 9,
+      "monthlyMax": 29,
+      "pitchLine": "\"When a coffee on the beans shelf runs low, the roaster gets a heads-up and the page shows it sold out instead of taking orders you can't fill.\"",
+      "whenAndWhatItTakes": "Month 4, with online bean sales live. Needs stock counts."
+    },
+    {
+      "name": "Milk and pastry order forecaster",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 49,
+      "monthlyMax": 99,
+      "pitchLine": "\"Each evening it suggests tomorrow's milk and pastry order for the café from past sales by weekday and weather, so less gets thrown out.\"",
+      "whenAndWhatItTakes": "Month 6, with a few months of register sales. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Barista shift swap board",
+      "kind": "software",
+      "oneTimeMin": 300,
+      "oneTimeMax": 700,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"The 6am opener who needs a Saturday off finds a barista to cover in a tap, and the café owner sees who's on the bar each morning.\"",
+      "whenAndWhatItTakes": "Month 5, for cafés with several part-time baristas. Needs the weekly schedule."
+    },
+    {
+      "name": "Wholesale enquiry responder for the roaster",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"A café or office asks about wholesale coffee and gets the roaster's own terms, a sample request link and questions about volume and equipment.\"",
+      "whenAndWhatItTakes": "Month 5, for roasters. Needs wholesale terms in writing. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Drink recipe cards for new baristas",
+      "kind": "software",
+      "oneTimeMin": 200,
+      "oneTimeMax": 500,
+      "monthlyMin": 9,
+      "monthlyMax": 29,
+      "pitchLine": "\"Every drink on the café menu with its shot, milk and syrup build on a card new baristas can pull up behind the bar.\"",
+      "whenAndWhatItTakes": "Month 5. Needs the owner's drink builds, even if they're on a sticky note."
+    },
+    {
+      "name": "Barista training answers from the café's own recipes",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"New baristas ask how the seasonal latte is built or how to dial in the espresso, and get the café's own answer instead of interrupting the shift lead.\"",
+      "whenAndWhatItTakes": "Month 6, after the recipe cards. Needs the owner's approval of every answer. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise Google profile care and hours sync for cafés",
+      "whoPays": "Independent cafés, monthly",
+      "min": 29,
+      "max": 99,
+      "unit": "monthly",
+      "pitchLine": "\"Every independent coffee shop has wrong holiday hours somewhere. Hours sync plus weekly Google profile care is a small monthly product they understand.\"",
+      "whyItWorks": "Cafés can't pay for builds but notice wrong hours fast. A low monthly fee at volume works."
+    },
+    {
+      "route": "Specialty roasters' wholesale account program",
+      "whoPays": "The roaster",
+      "min": 3000,
+      "max": 12000,
+      "unit": "one-time",
+      "pitchLine": "\"Every café you supply needs a menu page and hours right on Google. Offer it to wholesale accounts as part of buying your coffee.\"",
+      "whyItWorks": "Roasters compete for accounts on service. A perk that helps their cafés sell keeps the beans flowing."
+    },
+    {
+      "route": "Espresso equipment dealers' café opening kit",
+      "whoPays": "The equipment dealer",
+      "min": 2000,
+      "max": 8000,
+      "unit": "one-time",
+      "pitchLine": "\"Every new café you fit out needs a page and a Google profile on opening day. Bundle it with the espresso machine and grinder install.\"",
+      "whyItWorks": "Dealers meet owners at opening, when they're spending. A bundled launch kit makes their quote stand out."
+    },
+    {
+      "route": "Barista training academies' graduate kits",
+      "whoPays": "The academy, annually",
+      "min": 1000,
+      "max": 4000,
+      "unit": "per-year",
+      "pitchLine": "\"Graduates opening a coffee cart or café leave with a menu page and a Google profile set up. It's a reason to take your course.\"",
+      "whyItWorks": "Academies sell outcomes. Each class has a few future café owners."
+    },
+    {
+      "route": "Small café groups with several locations",
+      "whoPays": "The café group, per location",
+      "min": 600,
+      "max": 1800,
+      "unit": "one-time",
+      "pitchLine": "\"Three coffee bars, one beans shop: every location keeps its own espresso menu and opening times, and regulars buy bags from whichever café they love.\"",
+      "whyItWorks": "Groups buy once and roll out, and the owner already knows your work from one café."
+    },
+    {
+      "route": "Coworking chains with an in-house café",
+      "whoPays": "The coworking chain",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Members order from the in-house café ahead of meetings. One order-ahead page for every location's coffee bar makes it work.\"",
+      "whyItWorks": "Coworking chains run cafés as amenities. A shared ordering frame scales across locations."
+    },
+    {
+      "route": "Campus café operators",
+      "whoPays": "The campus dining operator",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Students check which campus coffee shop is open and what's on before class. One hours and menu frame for every campus café answers it.\"",
+      "whyItWorks": "Campus operators manage many small cafés and change hours by semester. One system saves real time."
+    },
+    {
+      "route": "Downtown coffee trail with the visitor bureau",
+      "whoPays": "The visitor bureau or downtown association",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"A downtown coffee trail page with every independent café, hours and a stamp passport gives visitors a reason to walk the district.\"",
+      "whyItWorks": "Tourism groups fund walkable trails. Coffee is easy to sell and the café client is the first stop."
+    },
+    {
+      "route": "Boutique hotels with a lobby café",
+      "whoPays": "The hotel",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "pitchLine": "\"Your lobby coffee bar serves the street as well as guests. A café page with hours and a Google profile brings in the neighbourhood.\"",
+      "whyItWorks": "Hotels want the café to earn on its own. The café template fits with little change."
+    },
+    {
+      "route": "Coffee cart and kiosk operators at farmers markets",
+      "whoPays": "Each cart owner, small monthly",
+      "min": 9,
+      "max": 29,
+      "unit": "monthly",
+      "pitchLine": "\"Coffee carts at the Saturday markets need a page that says which markets they're at this week. The café version shrinks to fit.\"",
+      "whyItWorks": "Carts are tiny businesses but numerous. A small monthly fee across many carts adds up."
+    },
+    {
+      "route": "White-label café template for agencies",
+      "whoPays": "The agency, per site",
+      "min": 300,
+      "max": 900,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency gets coffee shop enquiries too small to build from scratch. License my café template with hours sync and a beans shelf.\"",
+      "whyItWorks": "Agencies turn away small cafés. A ready template lets them say yes and pay you per site."
+    },
+    {
+      "route": "One café per walking radius, then the next neighbourhood",
+      "whoPays": "New café clients in new neighbourhoods",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I take one coffee shop per walking radius in {City}. People walk to coffee, so the café two neighbourhoods over isn't competing.\"",
+      "whyItWorks": "Café customers rarely travel far. Splitting by walking radius keeps clients happy and the template reusable."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Café site plus care plan, one contract",
+      "min": 1000,
+      "max": 1800,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The café site and the care plan go on one contract, so a new seasonal drink or an hours change is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 14,
+      "offer": "Google profile management for the café",
+      "min": 150,
+      "max": 300,
+      "unit": "monthly",
+      "trigger": "The Google listing still shows wrong hours, an old menu or someone else's photos at the top.",
+      "line": "\"Most new coffee customers meet you on Maps first. Let's keep that listing as good as the café.\""
+    },
+    {
+      "rung": 3,
+      "day": 30,
+      "offer": "Review requests from a code on the receipt",
+      "min": 29,
+      "max": 79,
+      "unit": "monthly",
+      "trigger": "The Google profile is being updated weekly and reviews still trickle in slowly.",
+      "line": "\"Your regulars love the coffee. A code on the receipt asks them while the cup is still warm.\""
+    },
+    {
+      "rung": 4,
+      "day": 45,
+      "offer": "Order-ahead coffee pickup",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "trigger": "They mention the morning line running out the door or people leaving it.",
+      "line": "\"That morning line is coffee you're not selling. Order-ahead lets regulars skip it.\""
+    },
+    {
+      "rung": 5,
+      "day": 60,
+      "offer": "Drinks and space photo session",
+      "min": 250,
+      "max": 600,
+      "unit": "per-shoot",
+      "trigger": "The menu page still shows marked placeholders and the Maps profile has dim customer shots.",
+      "line": "\"One afternoon in good light makes the café look on Maps the way it feels inside.\""
+    },
+    {
+      "rung": 6,
+      "day": 90,
+      "offer": "Holiday gift card and bean bag campaign",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "trigger": "October arrives with no gift cards or holiday bags online.",
+      "line": "\"Teacher and coworker gifts should come from your coffee shop. Let's set it up before Thanksgiving.\""
+    },
+    {
+      "rung": 7,
+      "day": 120,
+      "offer": "Coffee bean subscriptions",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "trigger": "Bags on the beans shelf are selling steadily, online or at the register.",
+      "line": "\"People already buy your coffee every few weeks. A bean subscription makes it automatic.\""
+    },
+    {
+      "rung": 8,
+      "day": 180,
+      "offer": "Introduction to the café's roaster",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "trigger": "They mention their roaster asking who built the café page.",
+      "line": "\"Your roaster supplies cafés all over the area with no wholesale page. Would you introduce me?\""
+    }
+  ]
+}

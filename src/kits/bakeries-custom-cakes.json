@@ -1,0 +1,865 @@
+{
+  "schemaVersion": 1,
+  "category": "Bakeries & custom cakes",
+  "slug": "bakeries-custom-cakes",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Food family batch, event archetype. Order-form-first: most custom cake bakers run on DMs. Many are home bakers, so prices stay small and pickup details avoid home addresses. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Custom cake order form",
+      "contains": "Occasion, pickup date, servings needed, tiers, flavour and filling, a slot for the customer's inspiration pictures, budget range, and pickup or delivery, with servings and date asked first",
+      "why": "Custom cake DMs go back and forth for days. A form that asks the date and servings first turns a week of messages into one reply with a price."
+    },
+    {
+      "section": "Cake servings and starting prices",
+      "contains": "Round and sheet cake sizes in inches with how many servings each feeds, tier combinations, the starting price per serving the baker sets, and what adds cost: sugar flowers, fondant, sculpted or tall cakes",
+      "why": "Buyers don't know how many people a six-inch cake feeds. They decide on servings and a starting price before they ever look at design."
+    },
+    {
+      "section": "Flavours, fillings and frostings",
+      "contains": "Cake flavours, fillings and buttercream or ganache options, seasonal flavours, and which ones the baker can make eggless or dairy-free, in the baker's own words",
+      "why": "Flavour is the second question after price, and party hosts need to know early whether the cake works for a guest who avoids eggs or dairy."
+    },
+    {
+      "section": "Lead times, pickup and cake delivery",
+      "contains": "How far ahead to order custom cakes, cupcakes and cookies, the rush order policy, pickup windows and instructions, tiered cake delivery and setup, and how to carry a cake home",
+      "why": "Last-minute buyers need to know right away whether the bakery can do Saturday. A clear lead-time table saves the baker a dozen no-thank-you replies."
+    },
+    {
+      "section": "Today's bakery case",
+      "contains": "Today's breads, pastries and cookies in the case, weekend bread pre-orders, and the usual sell-out time for favourites like croissants or sourdough loaves",
+      "why": "Walk-in bakery customers want to know what's in the case before they drive over, and a sold-out shelf is the most common disappointment."
+    },
+    {
+      "section": "Wedding cake tasting boxes",
+      "contains": "A pickup tasting box of several cake flavours and fillings for couples, its fee, the pickup days, and how the fee comes off the wedding cake order",
+      "why": "Couples choose a wedding cake baker after tasting. A tasting box they can pick up beats trying to schedule a sit-down appointment."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C22",
+      "siteType": "local-conversion",
+      "name": "Order a Cake",
+      "heroLayout": "card-stack",
+      "mood": [
+        "sweet",
+        "friendly",
+        "easy"
+      ],
+      "bestFor": "Home and storefront bakers whose orders are birthday cakes, cupcakes and cookie sets",
+      "pairsWithTier": "starter",
+      "headlineSample": "Custom birthday cakes and cupcakes in {City}",
+      "whyItFits": "Peach and soft rounded type feel like a party box, and the stacked cards put the cake order form and servings guide first."
+    },
+    {
+      "id": "b",
+      "themeId": "C32",
+      "siteType": "portfolio-showcase",
+      "name": "Bakery Window",
+      "heroLayout": "split-photo",
+      "mood": [
+        "warm",
+        "fresh",
+        "crafted"
+      ],
+      "bestFor": "Bakeries with a counter and a custom cake side, showing cakes by occasion beside the daily case",
+      "pairsWithTier": "standard",
+      "headlineSample": "Custom cakes and fresh bread, baked daily in {City}",
+      "whyItFits": "The family combo, Olive Grove. The cream ground flatters crust and buttercream, and the bookish serif reads like a hand-lettered bakery sign."
+    },
+    {
+      "id": "c",
+      "themeId": "C41",
+      "siteType": "premium-brand",
+      "name": "Wedding Cake Atelier",
+      "heroLayout": "full-bleed-photo",
+      "mood": [
+        "elegant",
+        "airy",
+        "bespoke"
+      ],
+      "bestFor": "Wedding cake designers with sugar flowers and tall tiers who book by consultation",
+      "pairsWithTier": "premium",
+      "headlineSample": "Wedding cakes, designed and baked in {City}",
+      "whyItFits": "Gallery white with a Didone display lets one tall wedding cake fill the screen like a gallery piece, and signals a bespoke price without saying it."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your bakery's Google listing has lovely reviews and no website, so someone searching for a custom birthday cake can't see your cakes or a starting price before they pick.",
+      "hook": "Open their Maps listing and confirm there's no Website button. Screenshot it for when they reply.",
+      "linkLine": "Here's what would sit behind that button: {demo-link}"
+    },
+    {
+      "angle": "Orders only through DMs",
+      "line": "Your bio says to DM for custom cake orders. That's a lot of back and forth about servings and dates that one order form could ask in a single go.",
+      "hook": "Check the bio for 'DM to order' or 'message for quotes'. Note the exact wording.",
+      "linkLine": "A custom cake order form that asks the right questions: {demo-link}"
+    },
+    {
+      "angle": "No starting prices",
+      "line": "I couldn't find a starting price for a custom cake anywhere on your pages. A parent with a budget usually orders from the baker who says what a tiered cake starts at.",
+      "hook": "Check highlights, pinned posts and the listing for any cake prices. If none, the angle holds.",
+      "linkLine": "Cake servings and starting prices on one page: {demo-link}"
+    },
+    {
+      "angle": "Order form broken on a phone",
+      "line": "The cake order link in your bio opens a form that's hard to fill in on a phone and never asks for the pickup date. Most cake orders start on a phone at night.",
+      "hook": "Only if they have a form. Open it on your phone and try it. Screenshot it for when they reply.",
+      "linkLine": "The same cake order form, rebuilt for a phone: {demo-link}"
+    },
+    {
+      "angle": "Wedding cake season",
+      "line": "Couples book wedding cake tastings in the winter for spring and summer. A bakery with tasting boxes and a wedding gallery gets those dates first.",
+      "hook": "Use this from November to March. Look for any wedding cake posts from last season.",
+      "linkLine": "Wedding cakes and tasting boxes, ready to order: {demo-link}"
+    },
+    {
+      "angle": "Holiday pre-orders",
+      "line": "Thanksgiving pies and Christmas cookie boxes are coming, and right now holiday bakery orders come in by DM and get tracked on paper.",
+      "hook": "Use this from October to early December. Check for last year's pie or cookie box posts.",
+      "linkLine": "A holiday bakery pre-order page with pickup slots: {demo-link}"
+    },
+    {
+      "angle": "Graduation cakes",
+      "line": "Graduation party season means sheet cakes and cupcake towers for every weekend in May and June. A cake page with servings and a date check catches those orders early.",
+      "hook": "Use this from March to May. Look for graduation cake posts from last year.",
+      "linkLine": "Graduation cakes, sized by servings: {demo-link}"
+    },
+    {
+      "angle": "Booked-out weekends",
+      "line": "You posted that your cake calendar is full for the next few weekends. A booking calendar that shows open dates saves you answering every request with a no.",
+      "hook": "Look for 'booked up', 'no more orders this month' or 'closed for orders' posts. Note the date.",
+      "linkLine": "A cake calendar that shows open dates: {demo-link}"
+    },
+    {
+      "angle": "Hiring a decorator",
+      "line": "Saw the bakery is hiring a cake decorator. Good decorators look at whether the bakery seems busy and organised before they apply.",
+      "hook": "Only if they posted a hiring story or a help-wanted sign. Note the role and the date.",
+      "linkLine": "A bakery page with a join-the-team section: {demo-link}"
+    },
+    {
+      "angle": "Tiered cake delivery area",
+      "line": "Your posts show tiered cakes set up at venues all over the area. A delivery page with towns, fees and setup times stops couples assuming you won't drive a wedding cake that far.",
+      "hook": "List the venues or towns in their wedding cake posts. Note the farthest one.",
+      "linkLine": "Your cake delivery area and setup on one page: {demo-link}"
+    },
+    {
+      "angle": "Reviews about the cake",
+      "line": "Your reviews say the cake tasted even better than it looked. That belongs right next to the cake order form, not buried on Google.",
+      "hook": "Read their reviews and copy one phrase about a specific cake or flavour. Quote it back if they reply.",
+      "linkLine": "Your cake reviews next to the order form: {demo-link}"
+    },
+    {
+      "angle": "Home bakery pickup",
+      "line": "You bake from home, and pickup details end up in DMs one customer at a time. A cake page with pickup windows and instructions, without your home address public, handles it.",
+      "hook": "Only if they say 'home bakery' or 'cottage bakery'. Never claim or question any licence; just note the pickup set-up.",
+      "linkLine": "A home bakery page with pickup windows: {demo-link}"
+    },
+    {
+      "angle": "Flavour questions in comments",
+      "line": "People keep asking in your comments what cake flavours you do and whether there's an eggless option. A flavours and fillings page answers that before they order elsewhere.",
+      "hook": "Find comments asking about flavours, gluten, eggs or dairy. Never state a dietary fact; the baker sets every word.",
+      "linkLine": "A cake flavours and fillings page: {demo-link}"
+    },
+    {
+      "angle": "Word of mouth only",
+      "line": "Sounds like your cake orders come from friends of friends and school parents. When that circle is booked out, the next customer looks for a bakery online.",
+      "hook": "Look for reviews or comments like 'made my daughter's cake' or 'recommended by a friend'. Quote one.",
+      "linkLine": "Where a new cake customer would land: {demo-link}"
+    },
+    {
+      "angle": "A specific recent cake",
+      "line": "That {specific recent job} you posted is gorgeous cake work. It should be the first thing a new customer sees on a bakery page, not lost in the grid.",
+      "hook": "Pick their newest cake post and name it exactly: the occasion, tiers and the standout detail.",
+      "linkLine": "That cake, front and centre: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner} — that {specific recent job} you posted is beautiful cake work.\n\nI looked for a way to order a custom cake from {Business Name} without a long DM thread and couldn't find one. I put together a sample bakery page with a cake order form that asks the date and servings first, a servings guide and a flavours page, with marked placeholders where your photos would go.\n\nWant me to send it over?",
+    "dm2": "{Owner} — following up in case this got lost under the order requests. Here's the sample bakery page for {Business Name}: {demo-link}\n\nIt has a custom cake order form, servings and starting prices you set, a flavours page and pickup instructions. If it's not for you, say so and I won't message again.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for bakeries and custom cake makers here in {City}. I sent you a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"No worries, I know your messages are mostly cake orders. Short version: I built a sample page for {Business Name} with a cake order form that asks date and servings first, a servings guide and a flavours page, with marked placeholders where your photos would go. Can I text you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range}, then {Care Range} a month for hosting and menu changes. For a bakery like yours I'd normally quote about {Build Price}.\"\n\"A few custom cake orders cover it, and the form saves you evenings of DMs. Could I walk you through it for ten minutes on a day you're not decorating?\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. We start the day it clears, and the order form goes live first.\"",
+    "objections": [
+      {
+        "objection": "All my cake orders come through Instagram.",
+        "handler": "\"Keep posting there. The order form just replaces the back and forth: the date, servings and flavour arrive in one message, and the DM becomes a link.\""
+      },
+      {
+        "objection": "Every cake is custom, I can't list prices.",
+        "handler": "\"You don't list a final price. A starting price per serving and what adds cost lets people self-sort, and you still quote each cake.\""
+      },
+      {
+        "objection": "I'm a home baker, I'm not a real bakery.",
+        "handler": "\"Home bakers are exactly who this is for. The page shows pickup windows and instructions without putting your address online, and it makes a one-oven business look intentional.\""
+      },
+      {
+        "objection": "I'm already booked out most weekends.",
+        "handler": "\"Then the site is for choosing better orders. Clear starting prices and lead times filter the last-minute, low-budget requests before they reach you.\""
+      },
+      {
+        "objection": "My cousin made me a free site.",
+        "handler": "\"Keep it if it takes orders well. If it doesn't ask for the date and servings, you're still doing the work in DMs. That form is the part I'd add.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}, because it's an order form, a servings guide and a cake gallery. A few custom orders cover it.\""
+      }
+    ],
+    "email": {
+      "subject": "Cake order page for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for bakeries and custom cake makers around {City}. {Business Name} makes beautiful cakes, but ordering one still means a long DM thread about dates, servings and flavours.\n\nI built a sample first rather than ask for your time: a custom cake order form that asks the date and servings first, a servings and starting-price guide you set, a flavours page and pickup instructions, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and menu changes. If not, no problem, it comes down at the end of the month.\n\nWorth ten minutes on a day you're not decorating?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build websites for bakeries in {City}, and I put together a sample cake order page for {Business Name}. I'll text you the link so you can look when the oven's off. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner} — I'm taking the {Business Name} cake page demo down on Friday to free up the space.\n\nWant me to keep it up? One word is fine either way.",
+    "nurture": "Hi {Owner} — holiday pie and cookie box orders start landing in a few weeks, and wedding cake couples begin booking tastings in January. Thought of you.\n\nThe sample bakery page is still here whenever you want it, and nothing's changed on price. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to a handful of custom cake orders. Many cake makers work from home and every dollar is weighed against ingredients.",
+      "Price the cake gallery by occasion count, not page count: birthdays, weddings, baby showers and cupcakes each need their own set.",
+      "The order form is the line that sells the site. Price it on its questions and logic, not as a contact page.",
+      "Charge storefront bakeries for the daily case and bread pre-orders; home bakers usually don't need them.",
+      "Holiday pre-order pages sell in October and wedding tasting boxes in November, never during the rush.",
+      "Keep monthly add-ons under the profit on one birthday cake, or they'll be cancelled in a slow January."
+    ],
+    "lineItems": [
+      {
+        "item": "Custom cake order form with logic",
+        "min": 250,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max with servings-based size suggestions, lead-time blocking for rush dates, inspiration picture upload and a deposit step.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Cake gallery by occasion",
+        "min": 100,
+        "max": 250,
+        "unit": "per-page",
+        "description": "Max when each occasion has its own starting price, flavour notes and an order button prefilled for that cake type.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Servings and starting-price guide",
+        "min": 150,
+        "max": 400,
+        "unit": "one-time",
+        "description": "Max with round, sheet and tiered sizes, a servings chart and a clear list of what adds cost.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Holiday pre-order page with pickup slots",
+        "min": 200,
+        "max": 500,
+        "unit": "per-page",
+        "description": "Max with pickup slot limits per hour, a cut-off date and a printable bake list for each day.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Daily case and bread pre-order board",
+        "min": 200,
+        "max": 500,
+        "unit": "one-time",
+        "description": "Max when the case updates from a phone, items show sold out, and weekend loaves can be reserved.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Wedding cake tasting box ordering",
+        "min": 200,
+        "max": 450,
+        "unit": "one-time",
+        "description": "Max with flavour choice, pickup days, fee payment and the fee credited on the wedding cake order.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Second-language bakery page",
+        "min": 200,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max when the order form, flavours and pickup instructions are all translated.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Cake photo backdrop and lighting setup",
+      "min": 200,
+      "max": 600,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A simple backdrop and light set up in the bakery, plus one session shooting your best cakes, so every finished cake gets a clean photo before pickup.\"",
+      "when": "Month 2, before the next busy weekend of custom orders."
+    },
+    {
+      "name": "Google profile upkeep for the bakery",
+      "min": 99,
+      "max": 249,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"New cake and pastry photos on your Google profile every week, with the occasion named, so people searching for a custom cake nearby see fresh work.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Review requests after cake pickup",
+      "min": 29,
+      "max": 99,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"The day after the party, the customer gets a short text asking how the cake went down, while the photos are still in their camera roll.\"",
+      "when": "Day 30. The easiest second sale for a bakery."
+    },
+    {
+      "name": "Holiday pies and cookie box campaign",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A November push for holiday pies and cookie boxes, on the bakery page and in your stories, with a cut-off date so the oven schedule stays sane.\"",
+      "when": "Pitch in October, run from early November to mid-December."
+    },
+    {
+      "name": "Engagement season wedding cake push",
+      "min": 250,
+      "max": 600,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A January campaign to newly engaged couples pointing at the wedding cake gallery and tasting boxes, before the spring calendar fills.\"",
+      "when": "Pitch in November, run from late December to February."
+    },
+    {
+      "name": "Cake box sticker and order card artwork",
+      "min": 100,
+      "max": 300,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A sticker for every cake box and a small card with the order code, so every party guest who loved the cake knows where to order the next one.\"",
+      "when": "Right after launch."
+    },
+    {
+      "name": "Graduation and party season push",
+      "min": 200,
+      "max": 450,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A spring push for graduation sheet cakes and cupcake towers, sized by servings, so May weekends fill before the requests turn frantic.\"",
+      "when": "Pitch in February, run from March to May."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "The coffee shop that stocks their pastries",
+        "whoPays": "The café owner, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The café that sells your croissants has no menu online. They'd trust the bakery that fills their pastry case.\"",
+        "whyItWorks": "Wholesale accounts see the bakery's site and want the same. The baker's word gets you the meeting."
+      },
+      {
+        "route": "The cake supply shop they buy from",
+        "whoPays": "The cake supply shop",
+        "min": 2000,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"The cake supply shop where you buy boxes and fondant sells to every baker in town and runs decorating classes with a paper sign-up. Introduce me.\"",
+        "whyItWorks": "Supply shops have a store, classes and a customer list of bakers. A regular customer is the warmest introduction."
+      },
+      {
+        "route": "The wedding venues where their cakes are set up",
+        "whoPays": "The venue, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The venue where your wedding cakes are set up every month has no page listing its dessert vendors. The bakery can be the first name on it.\"",
+        "whyItWorks": "Venues trust vendors who show up on time with a perfect cake. That trust is your introduction."
+      },
+      {
+        "route": "Party planners and balloon decorators",
+        "whoPays": "Each decorator, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The balloon decorator who works the same birthday parties as your cakes takes every booking by DM too. Same problem, same fix.\"",
+        "whyItWorks": "Party vendors refer each other constantly. A cake maker sits in the middle of the kids' party circle."
+      },
+      {
+        "route": "Florists who supply fresh cake flowers",
+        "whoPays": "The florist, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The florist who supplies flowers for your wedding cakes needs a wedding enquiry page too. The baker can make the introduction.\"",
+        "whyItWorks": "Florists and cake designers share couples. The second build in a wedding circle is the easiest."
+      },
+      {
+        "route": "The kids' party venue next door",
+        "whoPays": "The party venue owner",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The play centre that hosts birthday parties sends families to your bakery for cakes. Their party booking page should sell a cake add-on.\"",
+        "whyItWorks": "Party venues want a bigger booking per family. A cake add-on page benefits both the venue and the bakery."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Wholesale pastry reorder assistant for the café",
+        "whoPays": "The café owner, monthly",
+        "min": 49,
+        "max": 149,
+        "unit": "monthly",
+        "pitchLine": "\"The café texts tomorrow's pastry order at close, and the bakery gets a clean bake list by account before the ovens go on.\"",
+        "whyItWorks": "Wholesale orders by text get missed. The bakery client knows exactly how its cafés order."
+      },
+      {
+        "route": "Decorating class booking assistant for the supply shop",
+        "whoPays": "The cake supply shop, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"People ask about cake decorating classes at any hour and get dates, skill level and a booking link from the shop's own class list.\"",
+        "whyItWorks": "Classes fill or fail on quick answers. The supply shop knows the baker client and trusts the introduction."
+      },
+      {
+        "route": "Dessert vendor matcher for the venue",
+        "whoPays": "The venue, one-time",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"Couples describe their wedding cake style and guest count, and the venue's assistant suggests bakers from its approved list.\"",
+        "whyItWorks": "Venues answer dessert vendor questions on every tour. The cake baker is the first name on the list."
+      },
+      {
+        "route": "Balloon and party quote assistant for decorators",
+        "whoPays": "The balloon decorator, monthly",
+        "min": 49,
+        "max": 149,
+        "unit": "monthly",
+        "pitchLine": "\"Parents describe the party theme and size and get a first balloon quote range and a cake suggestion from the partner bakery.\"",
+        "whyItWorks": "Decorators answer how-much DMs all day. Pairing quotes with the bakery client makes both businesses bigger."
+      },
+      {
+        "route": "Wedding flower enquiry assistant for the florist",
+        "whoPays": "The florist, monthly",
+        "min": 79,
+        "max": 199,
+        "unit": "monthly",
+        "pitchLine": "\"Couples share their colours and date and get the florist's starting packages and a consultation link, cake flowers included.\"",
+        "whyItWorks": "Florists juggle enquiries during their busiest weeks. The cake designer client already shares couples with them."
+      },
+      {
+        "route": "Party add-on assistant for the kids' party venue",
+        "whoPays": "The party venue owner, monthly",
+        "min": 79,
+        "max": 199,
+        "unit": "monthly",
+        "pitchLine": "\"Families booking a party get offered a birthday cake from the partner bakery, sized to their guest count, with the order passed straight to the baker.\"",
+        "whyItWorks": "Venues earn more per booking and the bakery gets orders. Both sides pay because both sides win."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Instant reply to custom cake requests",
+      "kind": "automation",
+      "oneTimeMin": 150,
+      "oneTimeMax": 400,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Every cake request gets an instant reply with lead times, the servings guide and when you'll quote, so nobody orders from another bakery while waiting.\"",
+      "whenAndWhatItTakes": "At build or day 14. Needs their lead times and the reply wording the baker approves."
+    },
+    {
+      "name": "Cake deposit at order",
+      "kind": "software",
+      "oneTimeMin": 250,
+      "oneTimeMax": 600,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"A custom cake is only on the calendar once the deposit is paid, so a no-show order no longer leaves you holding a finished three-tier cake.\"",
+      "whenAndWhatItTakes": "Day 14, or the first time they mention an unpaid cake. Needs their deposit rule and a payment account."
+    },
+    {
+      "name": "Bake calendar with daily order limits",
+      "kind": "software",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Set how many cakes you can make each day, and the order form closes a date when it's full, so you stop saying yes to a fourth wedding cake on one Saturday.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their weekly capacity and days off."
+    },
+    {
+      "name": "Cake DM answers for flavours, prices and dates",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"'How much for a two-tier cake for thirty' and 'are you free Saturday' get answered from your servings guide and calendar, with the order form link.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the servings guide, flavours and calendar kept current. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Pickup reminders with instructions",
+      "kind": "automation",
+      "oneTimeMin": 100,
+      "oneTimeMax": 300,
+      "monthlyMin": 9,
+      "monthlyMax": 29,
+      "pitchLine": "\"The day before, every cake customer gets a pickup time, where to park and how to carry the cake flat, so pickups run on time and cakes arrive whole.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their pickup windows and instructions."
+    },
+    {
+      "name": "Weekend bread and pastry pre-orders",
+      "kind": "software",
+      "oneTimeMin": 300,
+      "oneTimeMax": 700,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Regulars reserve Saturday sourdough and croissants by Thursday, so the bakery bakes to real orders and the favourites stop selling out by nine.\"",
+      "whenAndWhatItTakes": "Month 3, for storefront bakeries. Needs the weekend menu and a pre-order cut-off."
+    },
+    {
+      "name": "Inspiration picture reader for cake quotes",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"A customer uploads the cake they saw online, and you get a note on tiers, techniques and the likely price band from your own rules before you reply.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the baker's pricing rules for decoration types. The baker always sets the final quote. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Servings and price calculator",
+      "kind": "software",
+      "oneTimeMin": 200,
+      "oneTimeMax": 500,
+      "monthlyMin": 0,
+      "monthlyMax": 19,
+      "pitchLine": "\"Customers enter their guest count and get the cake sizes that fit and a starting price from your own chart, before they fill in the order form.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their size chart and per-serving starting prices."
+    },
+    {
+      "name": "Cake post caption writer",
+      "kind": "ai",
+      "oneTimeMin": 200,
+      "oneTimeMax": 500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Post the finished cake and get a caption in your voice with the occasion, flavour and an order link, ready to approve.\"",
+      "whenAndWhatItTakes": "Month 2. Needs a handful of past captions. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Birthday reorder reminder a year later",
+      "kind": "automation",
+      "oneTimeMin": 150,
+      "oneTimeMax": 400,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Six weeks before last year's birthday cake date, the parent gets a friendly note asking if they want this year's cake from the same bakery.\"",
+      "whenAndWhatItTakes": "Month 4, once there is order history with occasions and dates."
+    },
+    {
+      "name": "Review reply drafts for the bakery",
+      "kind": "ai",
+      "oneTimeMin": 200,
+      "oneTimeMax": 500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Every bakery review gets a warm reply drafted in your voice that mentions the cake or pastry they loved, ready to approve while the oven runs.\"",
+      "whenAndWhatItTakes": "Month 2, alongside the review requests. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Daily bake list from orders",
+      "kind": "software",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Each morning the bakery gets one list: which cakes, layers, fillings and frostings to make today for this week's pickups.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the order form live and their recipes named."
+    },
+    {
+      "name": "Holiday order cut-off countdown",
+      "kind": "automation",
+      "oneTimeMin": 100,
+      "oneTimeMax": 300,
+      "monthlyMin": 0,
+      "monthlyMax": 19,
+      "pitchLine": "\"The pie and cookie box page counts down to the order cut-off and closes on time, so the bakery isn't taking Thanksgiving orders on Wednesday night.\"",
+      "whenAndWhatItTakes": "October. Needs the holiday menu, the cut-off date and the pickup slots."
+    },
+    {
+      "name": "Bakery phone answering for cake orders",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"With your hands in buttercream, calls about cake orders still get answered, the date and servings captured and the order form texted over.\"",
+      "whenAndWhatItTakes": "Month 4, for storefront bakeries. Needs the servings guide, calendar and policies. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Ingredient cost per cake",
+      "kind": "software",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"See what each cake size really costs in butter, flour and fondant, so your per-serving price keeps up when ingredient prices jump.\"",
+      "whenAndWhatItTakes": "Month 5. Needs recipes with quantities and current supplier prices."
+    },
+    {
+      "name": "Cake flavour matcher",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Customers answer a few questions about the party and the guest of honour, and get two or three cake and filling pairings from your own flavour list.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the flavours and fillings list with the baker's pairing rules. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Wholesale ordering portal for cafés",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Cafés that stock your pastries order tomorrow's bakery delivery from a simple portal with their own prices and a cut-off time.\"",
+      "whenAndWhatItTakes": "Month 5, for bakeries with wholesale accounts. Needs the wholesale price list and delivery days."
+    },
+    {
+      "name": "Dietary questions from the baker's own notes",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Customers ask whether a cake can be eggless or nut-free and get only the baker's approved answer, or a message that the baker will reply personally.\"",
+      "whenAndWhatItTakes": "Month 5. Needs written notes from the baker, approved and re-approved at every flavour change. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Cookie and cupcake set builder",
+      "kind": "software",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Customers build a box of decorated cookies or cupcakes by quantity, colour and theme, pay, and pick a pickup slot from the bakery calendar.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their set sizes, themes and prices."
+    },
+    {
+      "name": "Bakery case demand forecaster",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Each evening it suggests tomorrow's bake for the case from past sales by weekday, weather and pre-orders, so fewer loaves go stale and fewer favourites sell out.\"",
+      "whenAndWhatItTakes": "Month 8, for storefront bakeries with sales history. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the cake order form for home bakers",
+      "whoPays": "Home and cottage bakers, monthly",
+      "min": 9,
+      "max": 39,
+      "unit": "monthly",
+      "pitchLine": "\"Every home cake maker runs orders through DMs. A servings-first cake order form with a deposit and calendar is a cheap monthly product.\"",
+      "whyItWorks": "There are many home bakers, each with a tiny budget. A low monthly price at volume beats custom builds."
+    },
+    {
+      "route": "Home baker and cottage food associations",
+      "whoPays": "The association",
+      "min": 1000,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Give every member baker a cake order page and the association a directory where parents can find a local cake maker.\"",
+      "whyItWorks": "Associations want member benefits that matter. An order page is the thing every member asks about."
+    },
+    {
+      "route": "Cake decorating supply distributors",
+      "whoPays": "The distributor",
+      "min": 5000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Your customers are cake makers who need order pages. Offer the template as a perk with every account, and they'll keep buying supplies from you.\"",
+      "whyItWorks": "Supply distributors compete on loyalty. A tool their bakers use daily is stickier than a discount."
+    },
+    {
+      "route": "Baking and pastry school graduate launch kits",
+      "whoPays": "The school, annually",
+      "min": 1500,
+      "max": 5000,
+      "unit": "per-year",
+      "pitchLine": "\"Graduates who start a cake business leave with an order page and a servings guide. It's a reason to enrol in your program.\"",
+      "whyItWorks": "Schools sell outcomes. Each graduating class brings a fresh group of new bakery owners."
+    },
+    {
+      "route": "Independent grocers' custom cake counters",
+      "whoPays": "The grocery owner, per store",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "pitchLine": "\"Your in-store bakery takes custom cake orders on paper slips. An online cake order form with pickup slots fills the counter's calendar.\"",
+      "whyItWorks": "Independent grocers run several stores and want to compete with chains online. One frame rolls out per store."
+    },
+    {
+      "route": "Kids' party venue chains",
+      "whoPays": "The venue group",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Every location books birthday parties and sends families out for cakes. A cake add-on in your party booking makes each booking bigger.\"",
+      "whyItWorks": "Chains want more revenue per party. The bakery client proves the add-on works at one location."
+    },
+    {
+      "route": "Café and coffee chains buying wholesale pastry",
+      "whoPays": "The café group",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"Your cafés order pastries from several bakeries by text. One ordering portal for all your bakery suppliers saves your managers time.\"",
+      "whyItWorks": "Café groups buy from many local bakers. The bakery client already sells to one of them."
+    },
+    {
+      "route": "Cake box and packaging manufacturers",
+      "whoPays": "The packaging company's marketing team",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Your cake boxes go to bakers all over the country. A free order-page template with your boxes in the photos is a marketing program, not a cost.\"",
+      "whyItWorks": "Packaging makers need reasons for bakers to pick their brand. A useful tool beats another catalogue."
+    },
+    {
+      "route": "Wedding expo organisers' dessert vendor pages",
+      "whoPays": "The expo organiser",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Engaged couples walk the expo floor tasting cake samples. Let each dessert baker take tasting box orders right there from a page with their flavours.\"",
+      "whyItWorks": "Organisers sell booths on results. Tasting boxes ordered at the show are a result they can sell."
+    },
+    {
+      "route": "White-label cake order template for agencies",
+      "whoPays": "The agency, per site",
+      "min": 300,
+      "max": 900,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency turns away bakers because the budget is small. License my servings-first cake order template and say yes at a profit.\"",
+      "whyItWorks": "Agencies get bakery enquiries they can't price. A ready template lets them sell and pay you per site."
+    },
+    {
+      "route": "Farmers market bakery vendor pre-orders",
+      "whoPays": "The market organisation",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "pitchLine": "\"Shoppers want to reserve bread and pastries from market bakers before Saturday. A pre-order page for every bakery vendor sells out the stalls.\"",
+      "whyItWorks": "Markets want vendors to do well so they return. A shared pre-order page is a market-wide benefit."
+    },
+    {
+      "route": "One cake maker per suburb, then the next",
+      "whoPays": "New bakery clients in new suburbs",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I build for one custom cake maker per suburb around {City}. Parents order cakes close to home, so the next suburb is a fresh market.\"",
+      "whyItWorks": "Cake customers rarely drive far for a birthday cake. Splitting by suburb keeps every client happy and the template reusable."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Bakery site plus care plan, one contract",
+      "min": 1200,
+      "max": 2000,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The bakery site and the care plan go on one contract, so a new flavour or a price change is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 14,
+      "offer": "Cake deposit at order",
+      "min": 250,
+      "max": 600,
+      "unit": "one-time",
+      "trigger": "They mention a cake that was never picked up or paid for.",
+      "line": "\"That unpaid cake is exactly what a deposit at order stops.\""
+    },
+    {
+      "rung": 3,
+      "day": 30,
+      "offer": "Review requests after cake pickup",
+      "min": 29,
+      "max": 99,
+      "unit": "monthly",
+      "trigger": "The site has been live a month and Google reviews haven't moved.",
+      "line": "\"Your cake customers love you. Let's ask them the day after the party.\""
+    },
+    {
+      "rung": 4,
+      "day": 45,
+      "offer": "Bake calendar with daily order limits",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "trigger": "They say they took too many cake orders for one weekend.",
+      "line": "\"Set the number of cakes you can make a day, and the order form closes full dates for you.\""
+    },
+    {
+      "rung": 5,
+      "day": 60,
+      "offer": "Cake photo backdrop and lighting setup",
+      "min": 200,
+      "max": 600,
+      "unit": "per-shoot",
+      "trigger": "The cake gallery still shows marked placeholders or cakes shot on a cluttered counter.",
+      "line": "\"A simple backdrop by the bakery window makes every cake photo gallery-ready before pickup.\""
+    },
+    {
+      "rung": 6,
+      "day": 90,
+      "offer": "Holiday pies and cookie box campaign",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "trigger": "October arrives and holiday bakery orders are starting to land in DMs.",
+      "line": "\"Let's get holiday pie and cookie box orders onto one page with a cut-off, before the DMs pile up.\""
+    },
+    {
+      "rung": 7,
+      "day": 120,
+      "offer": "Cake DM answers for flavours, prices and dates",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "trigger": "They say they spend evenings answering the same cake price and date questions.",
+      "line": "\"Those nightly cake questions get answered from your servings guide while you sleep.\""
+    },
+    {
+      "rung": 8,
+      "day": 180,
+      "offer": "Introduction to the café that stocks their pastries",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "trigger": "They mention a café or coffee shop that buys their pastries wholesale.",
+      "line": "\"The café selling your croissants has no menu online. Would you introduce me to the owner?\""
+    }
+  ]
+}
