@@ -1,0 +1,833 @@
+{
+  "schemaVersion": 1,
+  "category": "Drywall & texture",
+  "slug": "drywall-texture",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Int family batch. Mostly subcontractors with a homeowner repair side; copy splits between patch-and-texture homeowners, builders, and hiring hangers and tapers. Asbestos testing stays a referral, never a claim. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Texture matching guide",
+      "contains": "Orange peel, knockdown, skip trowel, hand-applied and smooth level-five finishes, with close-ups, and how a patch is feathered and matched so it disappears under paint",
+      "why": "Homeowners call because they're afraid the patch will show. A texture guide with close-ups proves the drywall finisher can make it vanish."
+    },
+    {
+      "section": "Popcorn ceiling removal",
+      "contains": "Testing the ceiling before scraping through a licensed lab [testing partner], plastic containment, scraping, skim coating smooth or retexturing, primer, and how long each room takes",
+      "why": "Popcorn removal is the most searched homeowner job in this trade, and the asbestos question decides whether people call at all."
+    },
+    {
+      "section": "Drywall repair by damage type",
+      "contains": "Doorknob holes, water-stained and sagging ceilings, settling cracks over doors, nail pops, lifting tape, and a photo-based repair quote",
+      "why": "People search by the damage they're looking at. A page per damage type catches the search and sets the price expectation."
+    },
+    {
+      "section": "Hang and finish for builders and GCs",
+      "contains": "Crew capacity in boards per week, levels of finish, fire-rated assemblies, insurance certificates on request, schedule reliability and a bid request for plans",
+      "why": "Most drywall revenue comes from builders and general contractors, who choose a sub on capacity, paperwork and showing up when framing is done."
+    },
+    {
+      "section": "Careers for hangers and tapers",
+      "contains": "Pay ranges, the path from helper to finisher to crew lead, tools provided, stilts and bench work, and a short apply form",
+      "why": "Drywall shops are limited by crew more than by demand. A real careers page brings applicants a feed post never will."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C30",
+      "siteType": "local-conversion",
+      "name": "Patch and Match",
+      "heroLayout": "split-photo",
+      "mood": [
+        "direct",
+        "friendly",
+        "quick"
+      ],
+      "bestFor": "Small drywall outfits doing homeowner patches, water-damage repair and popcorn removal",
+      "pairsWithTier": "starter",
+      "headlineSample": "Drywall repair and texture matching in {City}",
+      "whyItFits": "Denim and butter with geometric caps feel like a work order, and the page runs straight to the photo repair quote."
+    },
+    {
+      "id": "b",
+      "themeId": "C39",
+      "siteType": "portfolio-showcase",
+      "name": "Smooth Ceilings",
+      "heroLayout": "before-after",
+      "mood": [
+        "crafted",
+        "clean",
+        "honest"
+      ],
+      "bestFor": "Finishers with strong before-and-after ceilings, texture matches and smooth level-five walls to show",
+      "pairsWithTier": "standard",
+      "headlineSample": "Popcorn gone, ceilings smooth, walls patched in {City}",
+      "whyItFits": "The family combo, Terracotta Kiln, fails the CTA contrast rule. Brick and Linen keeps the warm ground with a brick accent that passes, and the slab type suits a tradesman's portfolio."
+    },
+    {
+      "id": "c",
+      "themeId": "C10",
+      "siteType": "b2b-capability",
+      "name": "Board and Mud",
+      "heroLayout": "type-led",
+      "mood": [
+        "capable",
+        "organised",
+        "steady"
+      ],
+      "bestFor": "Hang-and-finish subcontractors selling to builders and GCs, with a careers page that keeps crews full",
+      "pairsWithTier": "premium",
+      "headlineSample": "Hang, tape and finish crews for {City} builders",
+      "whyItFits": "A capability site fits the trade's real buyer, the builder. Steel blue and a plain grotesque read like a bid sheet, with capacity and insurance up front."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Someone in {City} with a hole in the drywall searches, finds your listing, and has nothing to tap but a number. No texture close-ups, no idea if you do small patches.",
+      "hook": "Open their Maps listing and confirm there is no Website button. Screenshot it for when they reply.",
+      "linkLine": "Here's what a drywall repair customer would land on: {demo-link}"
+    },
+    {
+      "angle": "Facebook-only link",
+      "line": "Your listing goes to a Facebook page. A homeowner with a water-stained ceiling wants to see texture matches and send a photo, not scroll your posts.",
+      "hook": "Tap their Website link and confirm it lands on Facebook. Note the newest drywall job there.",
+      "linkLine": "A drywall page that takes a photo of the damage: {demo-link}"
+    },
+    {
+      "angle": "Dead free host",
+      "line": "The drywall site on your listing has a free-host banner and still says you're hiring from a post years old. Builders and homeowners both read that as a shop that's slowed down.",
+      "hook": "Open the site and look for banners, old dates or stale hiring notes. Note which.",
+      "linkLine": "Your drywall company, current: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "On my phone your site's popcorn ceiling photos are tiny thumbnails that don't open. That before-and-after is exactly what sells the job.",
+      "hook": "Only if they have a site. Load it on your phone and note what breaks. Screenshot it for when they reply.",
+      "linkLine": "Drywall before-and-afters that open on a phone: {demo-link}"
+    },
+    {
+      "angle": "No photo repair quote",
+      "line": "Most drywall patches can be roughly priced from one photo with a tape measure in the shot. There's no way to send you that except texting a stranger.",
+      "hook": "Check for any form. If quotes only happen by call or text, the angle holds.",
+      "linkLine": "A drywall repair form that takes a photo of the damage: {demo-link}"
+    },
+    {
+      "angle": "Texture work with nowhere to live",
+      "line": "That knockdown ceiling match you posted is invisible, which is the whole skill. A texture gallery would show homeowners you can make a patch disappear.",
+      "hook": "Find a texture-match or smooth-finish post. Name the texture if they reply.",
+      "linkLine": "Your texture matches sorted by type: {demo-link}"
+    },
+    {
+      "angle": "Reviews stuck on Google",
+      "line": "Your reviews say nobody can find where the drywall patch was and the dust stayed in one room. That's the exact fear people have, and it's stuck on your listing.",
+      "hook": "Copy one review phrase about invisible patches or clean-up. Quote it back if they reply.",
+      "linkLine": "Those reviews next to the drywall work: {demo-link}"
+    },
+    {
+      "angle": "Popcorn removal season",
+      "line": "Winter is when people stuck indoors finally decide to get rid of the popcorn ceiling. The drywall finishers who show up in that search book their slow months.",
+      "hook": "Use this November to February. Mention winter in the reply.",
+      "linkLine": "A popcorn ceiling page ready for winter: {demo-link}"
+    },
+    {
+      "angle": "Water-damage nights",
+      "line": "A ceiling stain from an upstairs leak is found at night. If there's a way to send you a photo then, you're the first drywall call in the morning.",
+      "hook": "Call their listed number after hours. If voicemail only and no form, the angle holds.",
+      "linkLine": "A drywall damage request that works at night: {demo-link}"
+    },
+    {
+      "angle": "Hiring hangers and tapers",
+      "line": "Saw the post looking for drywall hangers and tapers. Good finishers want to see pay, steady builder work and a real company before they switch crews.",
+      "hook": "Only if they posted a hiring note. Note the date and the role.",
+      "linkLine": "A drywall careers page for hangers and tapers: {demo-link}"
+    },
+    {
+      "angle": "Service area",
+      "line": "You hang and finish across {City}, but a homeowner in {Neighborhood} can't tell whether you'll come out for a single drywall patch there.",
+      "hook": "Find towns named in reviews or posts. Use the one furthest out.",
+      "linkLine": "A drywall page for each area you cover: {demo-link}"
+    },
+    {
+      "angle": "Builder bids",
+      "line": "Builders choosing a drywall sub look for capacity, insurance and a crew that shows up after framing inspection. A page saying that does your bidding before you call.",
+      "hook": "Look for builder tags or new-construction posts. If they have any, lead with this.",
+      "linkLine": "A builder-facing drywall capability page: {demo-link}"
+    },
+    {
+      "angle": "Asbestos worry on ceilings",
+      "line": "People with popcorn ceilings in older homes worry about what's in them. A page explaining testing before any drywall scraping answers that before they ask.",
+      "hook": "Check whether they mention testing in posts. Never claim they test; say how it's handled.",
+      "linkLine": "Popcorn testing and removal explained on one drywall page: {demo-link}"
+    },
+    {
+      "angle": "Single-GC dependence",
+      "line": "Looks like most of your drywall work comes through a couple of general contractors. That's steady until one slows down, and homeowner patch work fills the gap.",
+      "hook": "Look for posts tagging the same builder or GC repeatedly. Name them if they reply.",
+      "linkLine": "Where homeowner drywall work would land: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "That {specific recent job} you posted is flat, clean drywall finishing. Work that tidy should be the first thing a builder or homeowner sees.",
+      "hook": "Pick their newest posted job and name it by finish or texture.",
+      "linkLine": "That drywall job, front and centre: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, that {specific recent job} you posted is really clean drywall finishing.\n\nI was looking for drywall contractors in {City} and found {Business Name}, but no site where a homeowner can send a photo of the damage or a builder can see your crew capacity. I put together a sample drywall site, with marked placeholders where your photos would go.\n\nWant me to send it?",
+    "dm2": "{Owner}, following up in case this got buried. Here's the sample drywall site for {Business Name}: {demo-link}\n\nIt has a photo repair form, a texture-matching gallery, a popcorn ceiling page, a builder capability page and a careers page for hangers and tapers. If it's not for you, just say so.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for drywall companies here in {City}. I sent a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"No worries. Short version: I built a sample drywall site for {Business Name}, with a photo repair form for homeowners, a page for builders, and a careers page for tapers, plus marked placeholders where your photos would go. Can I text the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range} depending on how many texture and area pages you want, then {Care Range} a month for hosting and changes. For a drywall shop your size I'd quote about {Build Price}.\"\n\"Is crew or work the bigger problem right now? The careers page and the builder page solve different ones.\"\n\nCLOSE:\n\"I'll send a short scope and the deposit invoice, and we'll start with whichever page fixes your bigger problem.\"",
+    "objections": [
+      {
+        "objection": "I'm a sub, I don't need homeowners.",
+        "handler": "\"Then the site is for builders and hires: capacity, insurance on request, and a careers page. Homeowner patches are optional filler for slow weeks.\""
+      },
+      {
+        "objection": "My problem is crew, not work.",
+        "handler": "\"That's why the careers page leads. Pay, path to finisher and a short apply form brings tapers a feed post never reaches.\""
+      },
+      {
+        "objection": "Patch jobs are too small to bother with.",
+        "handler": "\"Alone, yes. A photo form lets you price them in a minute and batch them on slow days. Popcorn ceilings and water damage aren't small.\""
+      },
+      {
+        "objection": "I get work from a lead platform.",
+        "handler": "\"Shared leads go to several drywall guys and you pay either way. Your own site sends that ceiling to one company, you.\""
+      },
+      {
+        "objection": "Builders don't look at websites.",
+        "handler": "\"New builders and out-of-town GCs do, when their usual sub is booked. The capability page is how they find a second drywall crew.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}: a repair form, a texture gallery, a builder page and a careers page.\""
+      }
+    ],
+    "email": {
+      "subject": "Drywall site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for drywall companies around {City}. {Business Name} has clean finishing work on social, but nothing that shows up when a homeowner searches for drywall repair or a builder looks for a hang-and-finish crew.\n\nSo I built a sample first: a photo repair form, a texture-matching gallery, a popcorn ceiling page, a builder capability page and a careers page for hangers and tapers, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and changes. If not, it comes down at the end of the month.\n\nTen minutes this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"{Owner}, it's {Your Name}. I build websites for drywall companies in {City} and made a sample one for {Business Name}, including a careers page for tapers. I'll text you the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm pulling the {Business Name} drywall demo down on Friday.\n\nKeep it up? One word is fine.",
+    "nurture": "Hi {Owner}, popcorn ceiling season is starting as people head indoors for winter. Thought of you.\n\nThe drywall site is still ready, same price. {demo-link} for another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Ask first whether crew or work is the bottleneck, and lead the build with the careers page or the builder page to match.",
+      "Peg the build to a few homeowner patch jobs or a small slice of one builder contract, never to an hourly rate.",
+      "The photo repair form is the homeowner core. Price it inside the build; extra damage-type pages are cheap lines.",
+      "Price popcorn removal pages only for shops that handle containment and work with a testing partner.",
+      "Builder capability pages need real capacity and insurance details from the client. Leave bracketed placeholders until supplied.",
+      "Keep monthly add-ons small. Drywall shops run lean and won't pay for tools they don't use weekly."
+    ],
+    "lineItems": [
+      {
+        "item": "Damage-type repair page (each)",
+        "min": 150,
+        "max": 350,
+        "unit": "per-page",
+        "description": "Max when the page has before-and-afters, a repair time estimate and an FAQ for that damage.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Photo repair quote form",
+        "min": 250,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max with several uploads, a size helper, a water-source question and text alerts to the owner.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Careers page with apply form",
+        "min": 300,
+        "max": 700,
+        "unit": "one-time",
+        "description": "Max with pay ranges, a role ladder, crew photos and a screening question set.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Builder capability and bid request page",
+        "min": 300,
+        "max": 700,
+        "unit": "one-time",
+        "description": "Max with capacity, finish levels, a plans upload and an insurance-certificate request button.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Popcorn ceiling removal page",
+        "min": 200,
+        "max": 500,
+        "unit": "one-time",
+        "description": "Max with a testing explainer, a containment photo set and a per-room timeline.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Spanish-language careers and repair path",
+        "min": 300,
+        "max": 700,
+        "unit": "one-time",
+        "description": "Max when the careers page, apply form and repair form are all translated.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Raking-light texture and ceiling shoot",
+      "min": 300,
+      "max": 800,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A flashlight held flat to the wall shows a perfect drywall finish. A short shoot like that proves the smooth ceilings better than any caption.\"",
+      "when": "Month 2, at a level-five or popcorn removal job."
+    },
+    {
+      "name": "Google profile posts for drywall repairs",
+      "min": 99,
+      "max": 249,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Each week a patched hole or smooth ceiling goes on your Google profile with the town, so 'drywall repair near me' shows a busy shop.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Review texts after homeowner drywall jobs",
+      "min": 49,
+      "max": 149,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"After the patch is painted, the homeowner gets a text asking for a review. Invisible drywall repairs earn the best ones.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Hiring ad campaign for tapers and hangers",
+      "min": 250,
+      "max": 600,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A short, targeted social ad run pointing drywall finishers in {City} to your careers page, written in the trade's language.\"",
+      "when": "Whenever they mention being short a finisher."
+    },
+    {
+      "name": "Builder capability sheet and truck lettering",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A one-page drywall capability sheet for builders, and lettering that makes the truck on a job site look like a company worth calling.\"",
+      "when": "Right after launch."
+    },
+    {
+      "name": "Winter popcorn ceiling promotion",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A January push for popcorn ceiling removal fills the weeks when builders slow down for the holidays.\"",
+      "when": "Pitch in November, run in January."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Water damage restoration companies",
+        "whoPays": "The restoration company, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"Restoration crews dry out the room and cut out the wet drywall, then someone has to hang it back. They need a site, and you're who they call.\"",
+        "whyItWorks": "Restoration and drywall are consecutive on every water job. Warm, constant referrals."
+      },
+      {
+        "route": "Interior painters who need patches first",
+        "whoPays": "The painter, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"Painters find the bad drywall before they can paint. The painter you take those patches from needs a site too.\"",
+        "whyItWorks": "Painting and drywall share every interior job."
+      },
+      {
+        "route": "Small builders and general contractors",
+        "whoPays": "The builder",
+        "min": 2000,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"The GC you hang drywall for needs a project site showing finished homes, and your walls are in every photo.\"",
+        "whyItWorks": "Builders buy bigger sites and the sub's introduction is warm."
+      },
+      {
+        "route": "Drywall supply yard",
+        "whoPays": "The supply yard",
+        "min": 2500,
+        "max": 7000,
+        "unit": "one-time",
+        "pitchLine": "\"The yard that boom-delivers your board sells to drywall crews across the metro. A crew finder and delivery request page would be worth a lot to them.\"",
+        "whyItWorks": "Supply yards have budgets, and their contractor list is your next prospect list."
+      },
+      {
+        "route": "Insulation contractors",
+        "whoPays": "The insulation contractor, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"Insulation goes in right before you hang. The insulation crew needs a site and shares every new-build schedule with you.\"",
+        "whyItWorks": "Consecutive trades on the same schedule refer naturally."
+      },
+      {
+        "route": "Asbestos testing labs and inspectors",
+        "whoPays": "The testing lab or inspector, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The lab that tests popcorn ceilings before you scrape needs a simple site and booking page, and clean results lead straight to you.\"",
+        "whyItWorks": "Testing is the step before popcorn removal; both sides need each other."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Restoration job photo-to-scope drafts",
+        "whoPays": "The restoration company, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Restoration techs photograph the cut-out walls and get a draft drywall rebuild scope with sheet counts to send the sub.\"",
+        "whyItWorks": "Restorers write rebuild scopes daily, and every one routes drywall to your client."
+      },
+      {
+        "route": "Supply yard order assistant for crews",
+        "whoPays": "The supply yard, annually",
+        "min": 3000,
+        "max": 10000,
+        "unit": "per-year",
+        "pitchLine": "\"Crews text a room list and get a drafted board, mud, tape and bead order with a delivery slot from the yard.\"",
+        "whyItWorks": "Easier ordering keeps crews loyal to one yard."
+      },
+      {
+        "route": "Builder's sub-schedule nudge bot",
+        "whoPays": "The builder",
+        "min": 1000,
+        "max": 3000,
+        "unit": "one-time",
+        "pitchLine": "\"When insulation inspection passes, the bot texts the drywall crew a hang date and confirms the board delivery.\"",
+        "whyItWorks": "Builders lose days to sub coordination; drywall is the biggest gap."
+      },
+      {
+        "route": "Painter's patch-and-paint quote follow-up",
+        "whoPays": "The interior painter",
+        "min": 600,
+        "max": 1500,
+        "unit": "one-time",
+        "pitchLine": "\"The painter you trade patches with loses quotes to slow follow-up. The same follow-up setup, configured for them.\"",
+        "whyItWorks": "A second build of a working tool, introduced by a client."
+      },
+      {
+        "route": "Insulation contractor's rebate question bot",
+        "whoPays": "The insulation contractor",
+        "min": 1000,
+        "max": 2500,
+        "unit": "one-time",
+        "pitchLine": "\"Homeowners ask insulation crews the same efficiency questions. A bot trained on their answers books the attic and wall jobs before drywall.\"",
+        "whyItWorks": "Repetitive questions slow insulation sales and the bot routes work ahead of the drywall."
+      },
+      {
+        "route": "Testing lab's sample booking and results explainer",
+        "whoPays": "The testing lab",
+        "min": 1200,
+        "max": 3000,
+        "unit": "one-time",
+        "pitchLine": "\"Homeowners book a popcorn ceiling sample online and get a plain-language explanation of results, with next steps to a drywall pro.\"",
+        "whyItWorks": "Labs field confused calls about results; plain summaries cut them."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Missed-call text-back asking for a damage photo",
+      "kind": "automation",
+      "oneTimeMin": 0,
+      "oneTimeMax": 200,
+      "monthlyMin": 49,
+      "monthlyMax": 119,
+      "pitchLine": "\"Mud on your hands? The caller gets a text asking for a photo of the drywall damage with a tape measure in it.\"",
+      "whenAndWhatItTakes": "Day 30. Needs their number forwarded and two lines of wording they approve."
+    },
+    {
+      "name": "Applicant pipeline for hangers and tapers",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1800,
+      "monthlyMin": 30,
+      "monthlyMax": 90,
+      "pitchLine": "\"Every drywall applicant in one list with role, experience and a tap-to-call, instead of DMs scattered across three apps.\"",
+      "whenAndWhatItTakes": "Month 1, alongside the careers page. Needs their roles and pay ranges."
+    },
+    {
+      "name": "Review replies for drywall and popcorn jobs",
+      "kind": "ai",
+      "oneTimeMin": 200,
+      "oneTimeMax": 700,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"A homeowner raves about their smooth new ceiling, and a short reply that mentions the popcorn removal is drafted for your okay.\"",
+      "whenAndWhatItTakes": "Month 2. Needs ten past replies. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Drywall patch price guide",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1800,
+      "monthlyMin": 30,
+      "monthlyMax": 90,
+      "pitchLine": "\"Pick doorknob hole, ceiling stain or popcorn room, enter rough size, and see a range before sending the photo.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their minimum charge and prices by damage type."
+    },
+    {
+      "name": "Damage photo to repair estimate draft",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2200,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"A homeowner's photo of a water-stained ceiling comes in and it drafts the drywall repair scope and visit count for you to check.\"",
+      "whenAndWhatItTakes": "Month 4. Needs past repair photos with final prices. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Invoice on completion for patch jobs",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 700,
+      "monthlyMin": 30,
+      "monthlyMax": 90,
+      "pitchLine": "\"Mark the drywall patch done and the invoice with a card link goes out before you've loaded the truck.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their payment account."
+    },
+    {
+      "name": "Board takeoff from builder plans",
+      "kind": "ai",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3500,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"Upload a builder's floor plan and it drafts drywall sheet counts by room and ceiling height for the bid, for you to check.\"",
+      "whenAndWhatItTakes": "Month 4, for shops bidding new construction. Needs past plans with actual board counts. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Builder job schedule with hang, tape and finish days",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3500,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Every house on one drywall board: delivery, hang, tape, coats and sanding days by crew, so no builder gets a no-show.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their crews, builders and typical days per house."
+    },
+    {
+      "name": "After-hours water-damage intake",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1800,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"At night it asks whether the leak is stopped and whether the ceiling sags, takes a photo, and books the first drywall slot.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their calendar and safety questions. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Insurance certificate and lien waiver sender",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 30,
+      "monthlyMax": 90,
+      "pitchLine": "\"When a builder asks for a certificate or a lien waiver, it goes out from the drywall office in minutes, not days.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their document templates and insurer contact."
+    },
+    {
+      "name": "Crew time and sheet log",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2500,
+      "monthlyMin": 40,
+      "monthlyMax": 120,
+      "pitchLine": "\"Each crew logs boards hung and hours per house on a phone, so you see who's fast and which builder jobs run long.\"",
+      "whenAndWhatItTakes": "Month 4. Needs crew leads willing to log daily."
+    },
+    {
+      "name": "Texture page writer",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1200,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"Each month a page like 'matching knockdown after a leak', drafted from your drywall notes and approved before it goes up.\"",
+      "whenAndWhatItTakes": "Month 3. Needs short job notes and approval. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Chatbot on texture, dust and popcorn testing",
+      "kind": "ai",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"It answers 'will the patch show' and 'do I need to test my popcorn ceiling' at midnight, from your own drywall rules.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their FAQ and testing referral process. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Builder bid tracker",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2500,
+      "monthlyMin": 40,
+      "monthlyMax": 120,
+      "pitchLine": "\"Every drywall bid with builder, plan set, price and status in one list, with a reminder to follow up.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their current bids."
+    },
+    {
+      "name": "Job costing by builder and house",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"See which builders' houses actually make money once board, mud, callbacks and crew hours are counted.\"",
+      "whenAndWhatItTakes": "Month 6. Needs the crew log and supply invoices for a season."
+    },
+    {
+      "name": "Popcorn testing and containment reminders",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 600,
+      "monthlyMin": 20,
+      "monthlyMax": 60,
+      "pitchLine": "\"Each popcorn ceiling booking triggers the testing referral and a prep text about clearing the room and containment day.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their testing partner process and prep checklist."
+    },
+    {
+      "name": "Voice notes to drywall repair quote",
+      "kind": "ai",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Talk through the damage room by room and it drafts the drywall repair quote before you leave the driveway.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their quote template and prices. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Supply yard price sync for board and mud",
+      "kind": "software",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 30,
+      "monthlyMax": 90,
+      "pitchLine": "\"When drywall sheet and compound prices change at the yard, bids and the patch guide update the same day.\"",
+      "whenAndWhatItTakes": "Month 6. Needs the yard's price sheet."
+    },
+    {
+      "name": "Applicant screener for drywall finishers",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1200,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Applicants say whether they hang, tape, run stilts or spray texture, and only real drywall finishers reach your phone.\"",
+      "whenAndWhatItTakes": "Month 2, with the careers page. Needs must-haves and pay. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Bilingual drywall job sheet builder",
+      "kind": "software",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1200,
+      "monthlyMin": 20,
+      "monthlyMax": 60,
+      "pitchLine": "\"Pick the punch items from a list and the drywall job sheet prints in English and Spanish side by side, so nothing's lost on site.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their common punch items, checked once by a bilingual crew lead."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the drywall careers page for every shop",
+      "whoPays": "Drywall companies, monthly per operator",
+      "min": 29,
+      "max": 99,
+      "unit": "monthly",
+      "pitchLine": "\"Every drywall shop is short a taper. The careers page and applicant pipeline I built for one shop fit them all.\"",
+      "whyItWorks": "Labour shortage is the trade's universal pain; a small monthly tool spreads fast."
+    },
+    {
+      "route": "Crew finder for a gypsum supply distributor",
+      "whoPays": "The distributor, annually",
+      "min": 4000,
+      "max": 15000,
+      "unit": "per-year",
+      "pitchLine": "\"Builders ask the gypsum yard who's available to hang. A crew finder on the distributor's site routes them to customers.\"",
+      "whyItWorks": "Distributors keep crews loyal by sending them work."
+    },
+    {
+      "route": "Wall and ceiling contractors' association member kit",
+      "whoPays": "The association, per bundle",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"Give member drywall shops a capability page, a careers page and a repair form as a membership benefit.\"",
+      "whyItWorks": "Associations need benefits members use."
+    },
+    {
+      "route": "Apprenticeship and training centre recruiting site",
+      "whoPays": "The trade training centre",
+      "min": 2500,
+      "max": 8000,
+      "unit": "one-time",
+      "pitchLine": "\"The drywall training program needs a site that fills classes, and the shops that hire grads want it too.\"",
+      "whyItWorks": "Training programs have budgets tied to enrolment."
+    },
+    {
+      "route": "White-label drywall template for agencies",
+      "whoPays": "The agency, per site",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "pitchLine": "\"Agencies don't know drywall. License my template with the texture gallery, photo repair form and careers page.\"",
+      "whyItWorks": "Agencies keep the client; you sell the finished drywall module."
+    },
+    {
+      "route": "Restoration franchise drywall partner network",
+      "whoPays": "The restoration franchise, per location",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "pitchLine": "\"Each restoration franchise location needs vetted drywall partners for rebuilds. A partner page per location, from one template.\"",
+      "whyItWorks": "One contract reaches many locations with constant rebuild work."
+    },
+    {
+      "route": "Production builder sub-portal",
+      "whoPays": "The production home builder",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Builders with many lots need a portal where drywall and paint subs see schedules and post completion photos.\"",
+      "whyItWorks": "Builders pay to cut coordination, and you already know the drywall side."
+    },
+    {
+      "route": "Property management turnover patch program",
+      "whoPays": "Property managers, annually",
+      "min": 1500,
+      "max": 5000,
+      "unit": "per-year",
+      "pitchLine": "\"Every rental turnover has wall damage. A fixed-price drywall patch request across the portfolio makes it routine.\"",
+      "whyItWorks": "Managers buy repeatable fixes at set prices."
+    },
+    {
+      "route": "Drywall material price sheet",
+      "whoPays": "Drywall companies, monthly",
+      "min": 19,
+      "max": 59,
+      "unit": "monthly",
+      "pitchLine": "\"Shops send in their board and compound invoices, and each month they get back where drywall material costs are heading, nothing beyond what was sent.\"",
+      "whyItWorks": "Built only from contributed invoices."
+    },
+    {
+      "route": "Starter pack for finishers going solo",
+      "whoPays": "Finishers starting their own shop, per pack",
+      "min": 99,
+      "max": 299,
+      "unit": "one-time",
+      "pitchLine": "\"A finisher going solo needs a patch price sheet, a capability page and a texture gallery. Sell the drywall pack your first client uses.\"",
+      "whyItWorks": "Built once, sold many times."
+    },
+    {
+      "route": "Drywall shop in the next metro",
+      "whoPays": "A drywall client in a new metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"Drywall crews don't compete across metros. The careers-first template that filled one shop's crew goes to the next city.\"",
+      "whyItWorks": "Non-competing geography lets you reuse everything."
+    },
+    {
+      "route": "Repair old drywall company sites",
+      "whoPays": "The drywall shop with a dead site",
+      "min": 400,
+      "max": 1200,
+      "unit": "one-time",
+      "pitchLine": "\"Drywall sites with stale hiring posts and broken forms are common. I move them to a working template quickly.\"",
+      "whyItWorks": "Cheap, fast and easy to say yes to."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Drywall site build plus care plan, one contract",
+      "min": 1200,
+      "max": 2000,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"Drywall site and care plan on one contract, so updating the careers page is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 14,
+      "offer": "Applicant pipeline for hangers and tapers",
+      "min": 600,
+      "max": 1800,
+      "unit": "one-time",
+      "trigger": "The careers page gets its first applications.",
+      "line": "\"Tapers are applying. Let's put every drywall applicant in one list so none slip.\""
+    },
+    {
+      "rung": 3,
+      "day": 30,
+      "offer": "Review texts after homeowner drywall jobs",
+      "min": 49,
+      "max": 149,
+      "unit": "monthly",
+      "trigger": "The first homeowner repair booked through the photo form is finished.",
+      "line": "\"That invisible ceiling patch deserves a review. Let's ask after every drywall repair.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Drywall patch price guide",
+      "min": 600,
+      "max": 1800,
+      "unit": "one-time",
+      "trigger": "Sixty days of photo requests show the same few drywall damage types.",
+      "line": "\"Most photos are doorknob holes and ceiling stains. A price guide answers them before you reply.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Builder job schedule with hang, tape and finish days",
+      "min": 1200,
+      "max": 3500,
+      "unit": "one-time",
+      "trigger": "They pick up a new builder from the capability page or mention a scheduling clash.",
+      "line": "\"A new builder means more houses. Let's put every hang and tape day on one drywall board.\""
+    },
+    {
+      "rung": 6,
+      "day": 150,
+      "offer": "Winter popcorn ceiling promotion",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "trigger": "Builder schedules thin out ahead of the holidays.",
+      "line": "\"Builders slow down in December. Popcorn ceiling removal fills those weeks.\""
+    },
+    {
+      "rung": 7,
+      "day": 240,
+      "offer": "Job costing by builder and house",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "trigger": "They wonder aloud which builder is worth keeping.",
+      "line": "\"Let's see which builder's drywall houses actually make you money.\""
+    }
+  ]
+}

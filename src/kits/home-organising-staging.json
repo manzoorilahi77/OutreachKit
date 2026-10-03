@@ -1,0 +1,842 @@
+{
+  "schemaVersion": 1,
+  "category": "Home organising & staging",
+  "slug": "home-organising-staging",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Int family batch. Instagram-first, affluent buyers who decide fast; copy splits organising sessions and listing staging for agents. Staging copy never promises a faster or higher sale. No product or container brands. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Organising sessions by room",
+      "contains": "Pantries, kitchens, closets, garages, playrooms and home offices, half-day and full-day sessions, how many sessions a room usually takes, and the separate product budget",
+      "why": "Organising clients buy by the room that's driving them mad. A page per room with a session count turns a scroll into a booked first visit."
+    },
+    {
+      "section": "Home staging for listings",
+      "contains": "Vacant and occupied staging, consult-only walkthroughs, furniture and decor rental periods, photo-day prep, de-staging after the sale, and how agents book",
+      "why": "Agents choose a stager on speed, inventory and how the rooms photograph. A clear staging page is what gets them to book the next listing."
+    },
+    {
+      "section": "Moving, unpacking and downsizing",
+      "contains": "Pre-move purges, packing plans, unpack-and-settle days in the new house, senior downsizing with family, and donation and consignment drop-offs",
+      "why": "Moves are the moment people pay for organising. A page built around the move date catches buyers who never thought they'd hire an organiser."
+    },
+    {
+      "section": "Products, labels and shopping",
+      "contains": "Bins, baskets, drawer dividers and shelf risers, custom labels, who shops and how products are billed, and returning what isn't used",
+      "why": "Clients worry about surprise product costs. Explaining the product budget up front makes the session price easy to say yes to."
+    },
+    {
+      "section": "First organising session and privacy",
+      "contains": "What happens at the first visit, a judgement-free approach, confidentiality, what to keep or let go, and how donation runs work",
+      "why": "Embarrassment is the main reason people don't book. A calm first-session page removes it and gets the inquiry sent."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C22",
+      "siteType": "local-conversion",
+      "name": "Fresh Start",
+      "heroLayout": "split-photo",
+      "mood": [
+        "gentle",
+        "upbeat",
+        "tidy"
+      ],
+      "bestFor": "Solo professional organisers booking pantry and closet sessions from an inquiry form",
+      "pairsWithTier": "starter",
+      "headlineSample": "Professional home organizing in {City}, room by room",
+      "whyItFits": "Peach and soft rounded type feel kind and unjudging, which is what an embarrassed first-time client needs, and the page leads to a short inquiry."
+    },
+    {
+      "id": "b",
+      "themeId": "C35",
+      "siteType": "portfolio-showcase",
+      "name": "Before and Beautiful",
+      "heroLayout": "before-after",
+      "mood": [
+        "polished",
+        "warm",
+        "aspirational"
+      ],
+      "bestFor": "Organisers and stagers with strong before-and-after pantries, closets and staged rooms to show",
+      "pairsWithTier": "standard",
+      "headlineSample": "Organized homes and staged listings across {City}",
+      "whyItFits": "The family combo, Terracotta Kiln, fails the CTA contrast rule. Rosewood keeps the warm, design-aware feel with an accent that passes, and its Didone display suits lifestyle before-and-afters."
+    },
+    {
+      "id": "c",
+      "themeId": "C41",
+      "siteType": "premium-brand",
+      "name": "Listing Ready",
+      "heroLayout": "full-bleed-photo",
+      "mood": [
+        "spare",
+        "editorial",
+        "luxe"
+      ],
+      "bestFor": "Stagers working luxury listings and organisers serving high-end homes who sell on taste",
+      "pairsWithTier": "premium",
+      "headlineSample": "Home staging for {City} listings that photograph beautifully",
+      "whyItFits": "Gallery white with a Didone display steps aside so staged rooms look like a magazine spread, the way agents want to present a listing."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Searched professional organizers in {City} and found your listing with lovely reviews, but no website. Someone embarrassed about their pantry wants to read how a first session works before reaching out.",
+      "hook": "Open their Maps listing and confirm there is no Website button. Screenshot it for when they reply.",
+      "linkLine": "Here's what an organizing client would land on: {demo-link}"
+    },
+    {
+      "angle": "Instagram is the whole business",
+      "line": "Your organizing work lives entirely on Instagram and it's gorgeous. But nobody searching 'home organizer {City}' lands on your grid, and DMs are a hard place to book a session.",
+      "hook": "Check the bio link and listing. If both lead to Instagram or nothing, the angle holds.",
+      "linkLine": "Your organizing grid with booking built in: {demo-link}"
+    },
+    {
+      "angle": "Link-in-bio dead end",
+      "line": "Your bio link opens a page of buttons, and none of them explain sessions, product costs or staging. That's where a ready-to-book client gives up.",
+      "hook": "Tap their bio link and note what's there. If it's a list of buttons with no service detail, the angle holds.",
+      "linkLine": "A proper organizing and staging page behind your bio link: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "On my phone your site's before-and-after pantry photos load one at a time and the inquiry button is hidden. Your organizing clients find you on their phones.",
+      "hook": "Only if they have a site. Load it on your phone and note what breaks. Screenshot it for when they reply.",
+      "linkLine": "Your organizing before-and-afters, built for a phone: {demo-link}"
+    },
+    {
+      "angle": "No inquiry form",
+      "line": "Booking an organizer means DMing a stranger about your messiest room. A short form asking which room and when would feel far less awkward.",
+      "hook": "Check for any form or booking. If inquiries only happen through DMs, the angle holds.",
+      "linkLine": "A gentle organizing inquiry form, room by room: {demo-link}"
+    },
+    {
+      "angle": "Staging hidden among organising",
+      "line": "You stage listings too, but it's mixed in with pantries on the grid. Agents looking for a home stager need their own page with inventory and booking.",
+      "hook": "Look for staging posts on their grid. If any, name one.",
+      "linkLine": "A home staging page built for agents: {demo-link}"
+    },
+    {
+      "angle": "Reviews stuck on Google",
+      "line": "Reviewers say you made them feel zero judgement and their home finally works. That's the exact fear new organizing clients have, and it lives only on Maps.",
+      "hook": "Copy one review phrase about judgement, calm or the result. Quote it back if they reply.",
+      "linkLine": "Those reviews next to the organized rooms: {demo-link}"
+    },
+    {
+      "angle": "New-year organising season",
+      "line": "January is when everyone books a home organizer. The organizers who appear in that search in December fill the first quarter.",
+      "hook": "Use this November to January. Mention the new year in the reply.",
+      "linkLine": "Ready for the new-year organizing rush: {demo-link}"
+    },
+    {
+      "angle": "Spring listing season",
+      "line": "Spring is listing season, and agents need stagers booked before photo day. A staging page they can book from at night wins those listings.",
+      "hook": "Use this February to April. Mention spring listings in the reply.",
+      "linkLine": "A staging booking page ready for spring listings: {demo-link}"
+    },
+    {
+      "angle": "Building a team",
+      "line": "Saw you're looking for organizing assistants. Good ones want to see the kind of homes and standards they'd be working with before applying.",
+      "hook": "Only if they posted a hiring note. Note the date.",
+      "linkLine": "An organizing site with a page for new team members: {demo-link}"
+    },
+    {
+      "angle": "Service area",
+      "line": "You organize homes across {City}, but someone in {Neighborhood} can't tell if you'll come to them. That neighbourhood plus 'home organizer' is what they search.",
+      "hook": "Find neighbourhoods named in posts or reviews. Use the most affluent.",
+      "linkLine": "An organizing page for each area you cover: {demo-link}"
+    },
+    {
+      "angle": "Moving and downsizing",
+      "line": "Moves and downsizing are when people finally hire help. A page built around unpacking and senior moves would catch clients who never followed an organizer.",
+      "hook": "Look for any move or unpack post. If they do moves, lead with this.",
+      "linkLine": "A moving and downsizing page for your organizing business: {demo-link}"
+    },
+    {
+      "angle": "Privacy and trust",
+      "line": "Letting someone go through your closets is personal. A page about your first session, privacy and judgement-free approach makes that first message easier to send.",
+      "hook": "Check whether they ever describe the first session. If not, the angle holds.",
+      "linkLine": "Your first organizing session explained, privacy first: {demo-link}"
+    },
+    {
+      "angle": "Agent referrals",
+      "line": "Looks like agents tag you on staged listings. When an agent recommends you to a seller, the seller looks you up before saying yes to staging.",
+      "hook": "Find an agent tag on their staging posts. Name them if they reply.",
+      "linkLine": "Where an agent's staging referral would land: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "That {specific recent job} you posted is the kind of organized room people save and send to their partner. It should be the first thing a new client sees.",
+      "hook": "Pick their newest before-and-after and name the room.",
+      "linkLine": "That organized room, front and centre: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, that {specific recent job} you posted is so satisfying to look at.\n\nI was looking for home organizers in {City} and found {Business Name} on Instagram, but no site where someone can read how a first session works or where agents can book staging. I put together a sample site, with marked placeholders where your photos would go.\n\nWould you like to see it?",
+    "dm2": "{Owner}, following up in case this got lost in your DMs. Here's the sample organizing and staging site for {Business Name}: {demo-link}\n\nIt has sessions by room, a gentle inquiry form, a first-session and privacy page, and a separate staging page for agents. If it's not for you, just say so.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for home organizers and stagers here in {City}. I sent you a message a couple of days ago, did you see it?\"\n\nIF NO:\n\"No worries. Short version: I built a sample site for {Business Name} with organizing sessions by room, a gentle inquiry form and a staging page for agents, plus marked placeholders where your photos would go. Can I text you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range} depending on how many room and staging pages you want, then {Care Range} a month for hosting and changes. For a business your size I'd quote about {Build Price}, roughly a couple of whole-home sessions.\"\n\"Which is growing faster for you, organizing or staging? We'd lead with that.\"\n\nCLOSE:\n\"I'll send a short scope and the deposit invoice, and we'll pull your favourite before-and-afters off Instagram together.\"",
+    "objections": [
+      {
+        "objection": "Instagram brings me all my clients.",
+        "handler": "\"It brings followers. Clients searching 'professional organizer {City}' on Google never see your grid. The site catches them and sends them back to it.\""
+      },
+      {
+        "objection": "I'm booked out already.",
+        "handler": "\"Then the site lets you choose: whole-home and staging work over single drawers, and an inquiry form that tells you the room before you reply.\""
+      },
+      {
+        "objection": "Agents just text me for staging.",
+        "handler": "\"New agents don't have your number yet. A staging page with your inventory and booking is how they find you between referrals.\""
+      },
+      {
+        "objection": "I don't want to post prices.",
+        "handler": "\"We don't need to. We can show 'sessions from' or leave it to the consult call. Most clients just want to know how sessions and products work.\""
+      },
+      {
+        "objection": "I'm not techy.",
+        "handler": "\"You don't have to be. Inquiries arrive as a text or email, and any change is a message to me.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}: sessions by room, an inquiry form, a first-session page and a staging page.\""
+      }
+    ],
+    "email": {
+      "subject": "Organizing and staging site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for home organizers and stagers around {City}. {Business Name} has beautiful before-and-afters on Instagram, but nothing that shows up when someone searches for a professional organizer or an agent looks for a stager.\n\nSo I built a sample first: organizing sessions by room, a gentle inquiry form, a first-session and privacy page, and a staging page agents can book from, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you'd like it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and changes. If not, it comes down at the end of the month.\n\nTen minutes this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"{Owner}, it's {Your Name}. I build websites for home organizers and stagers in {City} and made a sample one for {Business Name}. I'll text you the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm taking the {Business Name} organizing demo down on Friday.\n\nWant it kept? One word is plenty.",
+    "nurture": "Hi {Owner}, the new-year organizing rush is coming and spring listings won't be far behind. Thought of you.\n\nThe site is still ready, same price. {demo-link} for another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to a couple of whole-home organizing sessions, never to an hourly rate.",
+      "Organizing and staging are two buyers. Quote the staging page set as its own line if they do both.",
+      "The inquiry form is the core: room, size of the problem, timeline and a photo option. Keep it short and kind.",
+      "Price the before-and-after gallery by the number of rooms pulled from Instagram and captioned.",
+      "Staging inventory pages only make sense for stagers who own furniture. Consult-only stagers need a simpler page.",
+      "Launch by November so it's found before the January organizing rush."
+    ],
+    "lineItems": [
+      {
+        "item": "Room session page (each)",
+        "min": 150,
+        "max": 400,
+        "unit": "per-page",
+        "description": "Max when the page has several before-and-afters, a session-count guide and a product notes section.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Gentle inquiry form with room and photo",
+        "min": 250,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max with photo upload, a move-date field, a staging-or-organizing switch and booking for a call.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Staging page set for agents",
+        "min": 400,
+        "max": 900,
+        "unit": "one-time",
+        "description": "Max with vacant and occupied staging pages, an inventory gallery and an agent booking form.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Instagram before-and-after curation",
+        "min": 200,
+        "max": 500,
+        "unit": "one-time",
+        "description": "Max when many posts are sorted into rooms, paired before-and-after and captioned.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Moving and downsizing page",
+        "min": 200,
+        "max": 500,
+        "unit": "one-time",
+        "description": "Max with separate unpack, purge and senior downsizing sections and a move-date checklist.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Neighbourhood service-area page (each)",
+        "min": 150,
+        "max": 350,
+        "unit": "per-page",
+        "description": "Max when each page has its own organized rooms and a local review.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Styled before-and-after organizing shoot",
+      "min": 350,
+      "max": 900,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Matched angles before and after, with the labels readable and the light soft. One shoot makes a pantry reveal look the way it felt.\"",
+      "when": "Month 2, booked for the 'before' of their next big room."
+    },
+    {
+      "name": "Instagram and Pinterest organizing content plan",
+      "min": 250,
+      "max": 600,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Reels of drawers being sorted already travel. A steady plan with a booking link turns that reach into organizing sessions.\"",
+      "when": "Month 3."
+    },
+    {
+      "name": "Google profile organizing posts",
+      "min": 99,
+      "max": 249,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A new organized room or staged listing on your Google profile each week, so 'home organizer near me' shows you working.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Review request after the reveal",
+      "min": 49,
+      "max": 129,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"The evening after the organizing reveal, the client gets a text asking for a review while they keep opening the pantry to look.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Agent staging lookbook",
+      "min": 250,
+      "max": 600,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A short digital lookbook of staged rooms and your inventory for agents, so they can picture their listing staged before calling.\"",
+      "when": "Month 2, for stagers."
+    },
+    {
+      "name": "New-year organizing campaign",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Resolutions about clutter peak right after the holidays. Ads and posts that run that week fill your January organizing calendar before other pros do.\"",
+      "when": "Pitch in October, run in late December."
+    },
+    {
+      "name": "Gift card and gift session page",
+      "min": 150,
+      "max": 400,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"An organizing session makes a great gift for new parents and movers. A gift page sells sessions in December and May.\"",
+      "when": "Month 3, before a gifting season."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Realtors and brokerages",
+        "whoPays": "The agent or brokerage",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The agents who book your staging need listing sites and a vendor page, and your staged rooms are their best photos.\"",
+        "whyItWorks": "Agents buy marketing constantly and already trust the stager."
+      },
+      {
+        "route": "Custom closet and garage installers",
+        "whoPays": "The closet company, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"When a client needs a real closet system, you refer an installer. That installer needs a site, and their clients need an organizer.\"",
+        "whyItWorks": "Constant two-way referral between sorting and building."
+      },
+      {
+        "route": "Movers and senior move managers",
+        "whoPays": "The mover, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"Movers see every downsizer and every unpack. The mover you work with needs a site, and their clients need an organizer.\"",
+        "whyItWorks": "Moves trigger organizing; movers hear first."
+      },
+      {
+        "route": "Real estate photographers",
+        "whoPays": "The photographer, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The photographer who shoots your staged listings needs a portfolio site, and your rooms are the best shots in it.\"",
+        "whyItWorks": "Stagers and photographers work every listing together."
+      },
+      {
+        "route": "Estate sale and consignment companies",
+        "whoPays": "The estate sale company",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"Downsizing clients need an estate sale company for what doesn't move. That company needs a site, and they send organizing work back.\"",
+        "whyItWorks": "Downsizing involves both, and estate sale companies rarely have good sites."
+      },
+      {
+        "route": "House cleaning companies",
+        "whoPays": "The cleaning company, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"Cleaners see cluttered homes every week. The cleaning company you trust needs a site, and their clients need a home organizer.\"",
+        "whyItWorks": "Cleaners spot organizing needs first."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Agent listing-prep checklist drafter",
+        "whoPays": "The brokerage, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"Agents upload walkthrough photos and get a draft declutter and staging checklist for the seller, with the stager to book.\"",
+        "whyItWorks": "Agents write that list for every listing; the tool routes staging to your client."
+      },
+      {
+        "route": "Closet installer's design-from-organizer brief",
+        "whoPays": "The closet company",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"The organizer's notes on what's stored become a draft closet design brief, so the installer quotes faster.\"",
+        "whyItWorks": "Both trades save time and the referral sticks."
+      },
+      {
+        "route": "Senior move manager's downsizing planner",
+        "whoPays": "The move manager, monthly",
+        "min": 75,
+        "max": 200,
+        "unit": "monthly",
+        "pitchLine": "\"Families enter the new home's room sizes and get a draft of which furniture fits, with organizing help to book.\"",
+        "whyItWorks": "Downsizing decisions are the slowest part of senior moves."
+      },
+      {
+        "route": "Photographer's shot list from staging notes",
+        "whoPays": "The real estate photographer",
+        "min": 600,
+        "max": 1500,
+        "unit": "one-time",
+        "pitchLine": "\"The stager's room notes become a draft shot list for the photographer, so photo day runs on time.\"",
+        "whyItWorks": "Both get faster listings; agents notice."
+      },
+      {
+        "route": "Estate sale item description writer",
+        "whoPays": "The estate sale company, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"Photos of sale items go in, draft descriptions and category tags come out for the estate sale listing.\"",
+        "whyItWorks": "Writing listings is their slowest task."
+      },
+      {
+        "route": "Cleaning company's add-on organizing offer bot",
+        "whoPays": "The cleaning company",
+        "min": 600,
+        "max": 1500,
+        "unit": "one-time",
+        "pitchLine": "\"When a cleaning client mentions clutter, the bot offers an organizing session and books it with your client.\"",
+        "whyItWorks": "Cleaners earn goodwill and the organizer gets warm clients."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Missed-call text-back for organizing inquiries",
+      "kind": "automation",
+      "oneTimeMin": 0,
+      "oneTimeMax": 200,
+      "monthlyMin": 49,
+      "monthlyMax": 119,
+      "pitchLine": "\"Mid-session with a client? Missed callers get a kind text asking which room needs organizing and whether it's for a move or a listing.\"",
+      "whenAndWhatItTakes": "Day 30. Needs their number forwarded and two lines of wording they approve."
+    },
+    {
+      "name": "Discovery call booking with room questions",
+      "kind": "software",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 30,
+      "monthlyMax": 90,
+      "pitchLine": "\"Clients pick a free discovery call slot and answer three gentle questions about the room, so the organizing call starts informed.\"",
+      "whenAndWhatItTakes": "Month 1. Needs their calendar and questions."
+    },
+    {
+      "name": "Review replies that name the organized room",
+      "kind": "ai",
+      "oneTimeMin": 200,
+      "oneTimeMax": 700,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"A thrilled review about a new playroom gets a warm reply drafted in your voice, ready for one tap.\"",
+      "whenAndWhatItTakes": "Month 2. Needs ten past replies. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Session deposit and product reimbursement invoicing",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 30,
+      "monthlyMax": 90,
+      "pitchLine": "\"Session deposits at booking and organizing product receipts billed after, each sent automatically with a card link.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their deposit rule and product billing policy."
+    },
+    {
+      "name": "Room-photo organizing plan draft",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2200,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"The client uploads photos of the pantry or closet and it drafts a session estimate and a product list for you to adjust.\"",
+      "whenAndWhatItTakes": "Month 4. Needs past rooms with session counts and products used. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Staging inventory catalogue",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3500,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Every sofa, rug and lamp in the staging warehouse tagged with photos and where it's deployed, so you know what's free for the next listing.\"",
+      "whenAndWhatItTakes": "Month 3, for stagers who own inventory. Needs a photo pass of the warehouse."
+    },
+    {
+      "name": "Agent staging request assistant",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2200,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"Agents message at night with an address and photo day; it asks vacant or occupied, room count and style, and holds a staging date.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their calendar and staging intake questions. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Client home map with labels and locations",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1800,
+      "monthlyMin": 20,
+      "monthlyMax": 60,
+      "pitchLine": "\"Each organized home gets a simple map of what lives where, shared with the family, so the system survives after you leave.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their label system and a habit of logging rooms at the end of a session."
+    },
+    {
+      "name": "Staging schedule and de-stage tracker",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Every staged listing with install date, photo day, rental period and de-stage date on one board, so inventory never gets stuck.\"",
+      "whenAndWhatItTakes": "Month 4, for stagers. Needs their rental terms and current listings."
+    },
+    {
+      "name": "Staging layout suggester from listing photos",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"Upload photos of an empty living room and it drafts a staging layout from your own inventory catalogue.\"",
+      "whenAndWhatItTakes": "Month 6, after the inventory catalogue. Needs past staged rooms. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Maintenance refresh reminders",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 600,
+      "monthlyMin": 20,
+      "monthlyMax": 60,
+      "pitchLine": "\"Three months after a big organizing project, the client gets a friendly refresh-session offer. Repeat bookings from happy homes.\"",
+      "whenAndWhatItTakes": "Month 4. Needs past clients with dates."
+    },
+    {
+      "name": "Client page with plan, products and dates",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2200,
+      "monthlyMin": 30,
+      "monthlyMax": 90,
+      "pitchLine": "\"Clients see the organizing plan, approve the product list and see session dates, without a long text thread.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their plan template."
+    },
+    {
+      "name": "Chatbot on sessions, products and privacy",
+      "kind": "ai",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"It answers 'do I need to clean before you come' and 'who buys the bins' at midnight, from your own organizing rules.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their FAQ and availability. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Donation run scheduler",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 600,
+      "monthlyMin": 20,
+      "monthlyMax": 60,
+      "pitchLine": "\"At the end of each organizing session, donation pickups or drop-offs get booked and the client gets a receipt reminder.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their donation partners and process."
+    },
+    {
+      "name": "Revenue by service type",
+      "kind": "software",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 30,
+      "monthlyMax": 90,
+      "pitchLine": "\"See whether pantries, moves or staging actually pay best per hour once product shopping and drive time are counted.\"",
+      "whenAndWhatItTakes": "Month 6. Needs a season of sessions with hours."
+    },
+    {
+      "name": "Room guide writer from captions",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1200,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"Your Instagram captions become a new organizing guide each month, like 'a pantry for a family of five', approved before it's live.\"",
+      "whenAndWhatItTakes": "Month 3. Needs caption access and approval. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Product list builder with links",
+      "kind": "software",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1200,
+      "monthlyMin": 20,
+      "monthlyMax": 60,
+      "pitchLine": "\"Build a client's organizing product list from your favourites, with quantities and sizes, ready to share or shop.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their go-to products and sizes."
+    },
+    {
+      "name": "Voice notes to session summary",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1200,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Talk through what was done and what's next on the drive home, and it drafts the client's organizing session summary.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their summary template. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Gift session sales page and voucher codes",
+      "kind": "software",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1200,
+      "monthlyMin": 20,
+      "monthlyMax": 60,
+      "pitchLine": "\"Sell organizing gift sessions online with a code the recipient redeems when booking.\"",
+      "whenAndWhatItTakes": "Month 3, before December or Mother's Day."
+    },
+    {
+      "name": "Assistant applicant screener",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Organizing assistant applicants answer questions on discretion, lifting and weekend availability, so you call only real fits.\"",
+      "whenAndWhatItTakes": "Any time they post a hiring note. Needs must-haves and pay. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the organizing inquiry and plan tools",
+      "whoPays": "Professional organizers, monthly per operator",
+      "min": 19,
+      "max": 79,
+      "unit": "monthly",
+      "pitchLine": "\"Every solo organizer books through DMs. The inquiry form and plan draft I built for one organizer works for any of them.\"",
+      "whyItWorks": "Many solo operators with the same workflow; cheap monthly tools spread."
+    },
+    {
+      "route": "Organizers' association member site kit",
+      "whoPays": "The professional organizers' association, per bundle",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"Give member organizers a site template with room pages and a gentle inquiry form as a benefit of joining.\"",
+      "whyItWorks": "Associations need benefits members use."
+    },
+    {
+      "route": "Brokerage staging partner program",
+      "whoPays": "The brokerage, annually",
+      "min": 2000,
+      "max": 8000,
+      "unit": "per-year",
+      "pitchLine": "\"A brokerage-wide staging request page with approved stagers by area, so every agent books staging the same way.\"",
+      "whyItWorks": "Brokerages want consistent listings and an easy vendor list."
+    },
+    {
+      "route": "Stagers' inventory sharing network",
+      "whoPays": "Home stagers, monthly",
+      "min": 39,
+      "max": 129,
+      "unit": "monthly",
+      "pitchLine": "\"Stagers across a metro list idle inventory for rent to each other, so a sofa doesn't sit in storage while a listing waits.\"",
+      "whyItWorks": "Idle furniture is money tied up; a shared catalogue fixes it."
+    },
+    {
+      "route": "White-label organizer site for agencies",
+      "whoPays": "The agency, per site",
+      "min": 300,
+      "max": 900,
+      "unit": "one-time",
+      "pitchLine": "\"Agencies get organizer clients who can't afford custom builds. License my organizing template with room pages ready.\"",
+      "whyItWorks": "Low-ticket clients only pay off on a template."
+    },
+    {
+      "route": "Senior living move-in program",
+      "whoPays": "Senior living communities, annually",
+      "min": 2000,
+      "max": 8000,
+      "unit": "per-year",
+      "pitchLine": "\"Senior communities help new residents downsize. A move-in services page with vetted organizers makes it smoother.\"",
+      "whyItWorks": "Communities fill units faster when moves are easy."
+    },
+    {
+      "route": "Relocation company settling-in service",
+      "whoPays": "Corporate relocation firms, annually",
+      "min": 3000,
+      "max": 10000,
+      "unit": "per-year",
+      "pitchLine": "\"Relocating employees get an unpack-and-settle day. A booking page with vetted organizers per city covers it.\"",
+      "whyItWorks": "Relocation firms buy services at scale."
+    },
+    {
+      "route": "Container and closet retailer's organizer finder",
+      "whoPays": "The independent home storage retailer",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"Shoppers buying bins ask who could set it all up. An organizer finder on the store's site answers.\"",
+      "whyItWorks": "Retailers sell more when the product gets used well."
+    },
+    {
+      "route": "Organizing business starter pack",
+      "whoPays": "New organizers, per pack",
+      "min": 99,
+      "max": 299,
+      "unit": "one-time",
+      "pitchLine": "\"New organizers need session pricing sheets, a first-session script and a simple site. Sell the pack your first client uses.\"",
+      "whyItWorks": "Built once, sold many times."
+    },
+    {
+      "route": "Home staging course enrolment site",
+      "whoPays": "The staging training provider",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Staging training programs need a site that fills classes. Your stager client's rooms show students the standard.\"",
+      "whyItWorks": "Training has budgets tied to enrolment."
+    },
+    {
+      "route": "Organizer in another metro",
+      "whoPays": "An organizing client in a new metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"Staging and organizing don't travel across metros, so after {City} the same gentle-inquiry site can go to an Instagram-only pro in the next one.\"",
+      "whyItWorks": "Non-competing geography lets you reuse everything."
+    },
+    {
+      "route": "Replace bio-link pages for organizers",
+      "whoPays": "Organizers stuck on a page of buttons",
+      "min": 300,
+      "max": 900,
+      "unit": "one-time",
+      "pitchLine": "\"Organizers living on a bio-link page of buttons get a real one-page site with room sessions and booking in a week.\"",
+      "whyItWorks": "Cheap, fast, visibly better."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Organizing site build plus care plan, one contract",
+      "min": 1500,
+      "max": 2500,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"Organizing site and care plan on one contract, so a new before-and-after is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Review request after the reveal",
+      "min": 49,
+      "max": 129,
+      "unit": "monthly",
+      "trigger": "The first client booked through the site has their reveal.",
+      "line": "\"That pantry client is thrilled. Let's ask every organizing client the evening of the reveal.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "Styled before-and-after organizing shoot",
+      "min": 350,
+      "max": 900,
+      "unit": "per-shoot",
+      "trigger": "They book a big room that will make a dramatic after.",
+      "line": "\"Let's shoot that garage before you start. The organizing reveal will lead the site.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Agent staging lookbook",
+      "min": 250,
+      "max": 600,
+      "unit": "one-time",
+      "trigger": "An agent books staging through the site.",
+      "line": "\"An agent found your staging page. A lookbook gets the rest of their office booking.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Room-photo organizing plan draft",
+      "min": 800,
+      "max": 2200,
+      "unit": "one-time",
+      "trigger": "Ninety days of inquiries with photos, and they're spending evenings estimating sessions.",
+      "line": "\"You're estimating every organizing inquiry by hand at night. Let the plan draft do the first pass.\""
+    },
+    {
+      "rung": 6,
+      "day": 150,
+      "offer": "Staging schedule and de-stage tracker",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "trigger": "They have several staged listings out at once.",
+      "line": "\"Several staged homes at once means inventory gets lost. Let's put every listing on one staging board.\""
+    },
+    {
+      "rung": 7,
+      "day": 240,
+      "offer": "Maintenance refresh reminders",
+      "min": 200,
+      "max": 600,
+      "unit": "one-time",
+      "trigger": "Past clients mention things slipping a few months later.",
+      "line": "\"Organized homes drift back to old habits. A refresh-session offer brings those clients back to you.\""
+    }
+  ]
+}

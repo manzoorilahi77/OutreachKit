@@ -1,0 +1,833 @@
+{
+  "schemaVersion": 1,
+  "category": "Handyman services",
+  "slug": "handyman-services",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Int family batch. Small tickets, so every add-on and product is priced low; copy leans on the to-do list, minimum visits and what a handyman can't legally do. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Send your handyman to-do list",
+      "contains": "Upload a list of small home jobs with a photo each, half-day and full-day visit blocks, the minimum visit, and what typically fits into one handyman trip",
+      "why": "Handyman customers don't have one job, they have a list. Booking around the list is how a two-hour call becomes a full day."
+    },
+    {
+      "section": "What a handyman does, and what gets referred out",
+      "contains": "Small repairs, patching, doors and trim, fixtures and caulking, versus panel work, gas lines and major plumbing that need a licensed trade, and who they recommend for those",
+      "why": "People worry about hiring a handyman for something that needs a licence. Being clear about limits builds trust and keeps them legal."
+    },
+    {
+      "section": "Mounting and assembly",
+      "contains": "TV mounting on drywall, plaster and brick, floating shelves, curtain rods, mirrors and art, flat-pack furniture assembly and the right anchors for each wall",
+      "why": "Mounting and assembly are the most searched handyman jobs and the easiest first booking. A page per task catches those searches."
+    },
+    {
+      "section": "Home safety and aging-in-place fixes",
+      "contains": "Grab bars into studs, stair railings, smoke and carbon monoxide detector swaps, lever door handles, brighter stair lighting and non-slip treads",
+      "why": "Adult children book these for parents and search by the worry. A calm page with a clear visit price wins that call."
+    },
+    {
+      "section": "Small-repair punch lists for landlords and agents",
+      "contains": "Move-out repair lists, inspection repair items before closing, completion photos for the manager, keys and lockbox access, and invoices that go straight to the owner",
+      "why": "Repeat landlord and agent work is what fills a handyman's slow weeks. These buyers decide on speed and paperwork, not price."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C10",
+      "siteType": "local-conversion",
+      "name": "Tool Belt",
+      "heroLayout": "split-photo",
+      "mood": [
+        "plain",
+        "dependable",
+        "quick"
+      ],
+      "bestFor": "Solo handymen who win on answering the phone and showing up when they said they would",
+      "pairsWithTier": "starter",
+      "headlineSample": "Handyman repairs around the home in {City}, booked fast",
+      "whyItFits": "Steel blue and a plain grotesque read like a work order. Tap-to-call and the to-do list form are the only two things on the first screen."
+    },
+    {
+      "id": "b",
+      "themeId": "C30",
+      "siteType": "booking-first",
+      "name": "Book a Visit",
+      "heroLayout": "card-stack",
+      "mood": [
+        "friendly",
+        "organised",
+        "easy"
+      ],
+      "bestFor": "Handyman services selling half-day and full-day blocks that customers can book and fill with a list",
+      "pairsWithTier": "standard",
+      "headlineSample": "Book a handyman visit for your to-do list in {City}",
+      "whyItFits": "The family combo, Terracotta Kiln, fails the CTA contrast rule. Butter and Denim passes, and its friendly geometric type suits a booking-first site where cards list visit lengths and tasks."
+    },
+    {
+      "id": "c",
+      "themeId": "C8",
+      "siteType": "editorial-trust",
+      "name": "Trusted at Home",
+      "heroLayout": "type-led",
+      "mood": [
+        "steady",
+        "respectful",
+        "careful"
+      ],
+      "bestFor": "Established handyman firms serving older homeowners, landlords and agents who care most about trust",
+      "pairsWithTier": "premium",
+      "headlineSample": "A handyman you can trust in your home, across {City}",
+      "whyItFits": "Evergreen and a refined serif feel like a family insurer, which is what an older homeowner letting someone in wants to feel."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Anyone in {City} searching 'handyman near me' sees your rating on Maps, then nothing to tap but a phone number. A website would show them the small jobs you take.",
+      "hook": "Open their Maps listing and confirm there is no Website button. Screenshot it for when they reply.",
+      "linkLine": "Here's what a handyman customer would land on: {demo-link}"
+    },
+    {
+      "angle": "Facebook-only link",
+      "line": "Your listing's link opens a Facebook page. A homeowner with a list of six small repairs wants to know your minimum visit and whether you mount TVs, not scroll a feed.",
+      "hook": "Tap their Website link and confirm it lands on Facebook. Note the most recent job they posted.",
+      "linkLine": "A handyman page that answers the to-do list question: {demo-link}"
+    },
+    {
+      "angle": "Dead free host",
+      "line": "The handyman site on your listing still has a free-host banner and the services list stops at 'and more'. People booking a stranger into their home read that closely.",
+      "hook": "Open the site and look for a builder banner, old copyright or vague service list. Note which.",
+      "linkLine": "Your handyman business, current and clear: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "Your site's call button sits under the menu on my phone. Handyman calls are made on the spot, standing next to the dripping faucet or the door that won't latch.",
+      "hook": "Only if they have a site. Load it on your phone and note what breaks. Screenshot it for when they reply.",
+      "linkLine": "The same handyman site, fixed for a phone: {demo-link}"
+    },
+    {
+      "angle": "No list upload",
+      "line": "Most handyman calls start with 'I have a few things'. A form where people type the list and add a photo of each job would let you price the visit before you drive over.",
+      "hook": "Check for any form. If booking is only by call or text, the angle holds.",
+      "linkLine": "A to-do list form for handyman visits: {demo-link}"
+    },
+    {
+      "angle": "Small jobs, nowhere to show them",
+      "line": "The shelving wall and the rebuilt gate you posted show you're tidy with small home repairs. Grouped by task, those posts would book the next mounting or door job.",
+      "hook": "Find two small jobs on their page you can name by task. Mention one if they reply.",
+      "linkLine": "Your handyman jobs sorted by task: {demo-link}"
+    },
+    {
+      "angle": "Reviews stuck on Google",
+      "line": "Your reviews say you showed up on time and fixed three things nobody else would bother with. That's exactly what a handyman customer is searching for, and it's buried on Maps.",
+      "hook": "Copy one review phrase about punctuality or small jobs. Quote it back if they reply.",
+      "linkLine": "Those reviews next to the handyman work: {demo-link}"
+    },
+    {
+      "angle": "Spring and fall to-do lists",
+      "line": "Spring and autumn are when every homeowner writes the list: gutters, screens, caulk, sticking doors. The handyman they find that week gets the whole list.",
+      "hook": "Use this March to April or September to October. Name the season in the reply.",
+      "linkLine": "A handyman page ready for the seasonal list: {demo-link}"
+    },
+    {
+      "angle": "Evening booking",
+      "line": "People notice the loose railing at nine at night. If they can book a handyman visit right then, they don't search again in the morning.",
+      "hook": "Call their listed number after hours. If it's voicemail only and there's no booking, the angle holds.",
+      "linkLine": "A handyman booking that works at night: {demo-link}"
+    },
+    {
+      "angle": "Taking on a helper",
+      "line": "Saw you're looking for a second handyman. Someone handy and reliable will check your business out online before they call, and a real site helps them say yes.",
+      "hook": "Only if they posted a hiring note. Note the date.",
+      "linkLine": "A handyman site with a page for new hires: {demo-link}"
+    },
+    {
+      "angle": "Service area",
+      "line": "You do handyman work across {City}, but someone in {Neighborhood} can't tell if you'll drive out for a two-hour job. A page per area answers that.",
+      "hook": "Find areas mentioned in reviews. Use the one furthest from them.",
+      "linkLine": "A handyman page for each area you cover: {demo-link}"
+    },
+    {
+      "angle": "Clear visit pricing",
+      "line": "The first thing anyone asks a handyman is the minimum charge. If you have a set visit rate, a page saying it saves you answering that call over and over.",
+      "hook": "Only if they've ever posted a rate or visit minimum. Otherwise lead with the to-do list angle.",
+      "linkLine": "Handyman visit pricing explained up front: {demo-link}"
+    },
+    {
+      "angle": "Insurance and background trust",
+      "line": "Letting someone into the house for a small home repair is a bigger decision than the job itself. A page with your insurance and who'll actually show up settles that.",
+      "hook": "Check whether they mention insurance anywhere. Note it if they do; never invent it.",
+      "linkLine": "Insurance and who shows up, on one handyman page: {demo-link}"
+    },
+    {
+      "angle": "Word-of-mouth limits",
+      "line": "Sounds like your handyman calendar fills from neighbours and repeat customers. That's great until a few move away, and even a neighbour's referral looks you up first.",
+      "hook": "Look for review text like 'neighbour recommended' or 'use him for everything'. Quote it back.",
+      "linkLine": "Where a handyman referral would land: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "That {specific recent job} you posted is careful handyman work. A small job done that neatly is what convinces a stranger to call.",
+      "hook": "Pick their newest posted job and name the task exactly.",
+      "linkLine": "That handyman job, front and centre: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, that {specific recent job} you posted is tidy handyman work.\n\nI was looking for handyman services in {City} and found {Business Name}, but no site where someone can send their to-do list or see what you take on. I put together a sample handyman site, with marked placeholders where your photos would go.\n\nWant to see it?",
+    "dm2": "{Owner}, following up in case this got buried. Here's the sample handyman site for {Business Name}: {demo-link}\n\nIt has a to-do list form with a photo per job, a clear page on what you do and refer out, and visit blocks people can book. If it's not for you, say the word.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for handyman businesses here in {City}. I sent a message a couple of days ago, did you see it?\"\n\nIF NO:\n\"No problem. Short version: I built a sample handyman site for {Business Name}, with a to-do list form, visit blocks and a page on what you do and don't do, plus marked placeholders where your photos would go. Can I text the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range} depending on how many task and area pages you want, then {Care Range} a month for hosting and changes. For a handyman business your size I'd quote about {Build Price}, and the to-do list form is built to turn short calls into full-day visits.\"\n\"Can I show you around it for ten minutes, Tuesday or Thursday?\"\n\nCLOSE:\n\"I'll send a short scope and a deposit invoice. If you'd rather split it in two payments, that's fine.\"",
+    "objections": [
+      {
+        "objection": "My jobs are too small to pay for a website.",
+        "handler": "\"That's the point of the to-do list form. People send six small jobs at once, and a two-hour call becomes a full day. One extra full day a month covers the care plan.\""
+      },
+      {
+        "objection": "I'm already booked solid with regulars.",
+        "handler": "\"Then the site filters. Visit minimums and the list form keep the one-hinge calls away and let you choose the full days.\""
+      },
+      {
+        "objection": "I'm on a lead platform for handyman jobs.",
+        "handler": "\"Those leads go to several handymen and you pay either way. Your own site sends that homeowner and their whole list to one handyman, you.\""
+      },
+      {
+        "objection": "I don't want to publish prices, every job's different.",
+        "handler": "\"Fair. We publish the visit minimum and the half-day block, not job prices. That's the number people ask before anything else.\""
+      },
+      {
+        "objection": "I'm not great with computers.",
+        "handler": "\"You won't touch it. The list comes to your phone as a text, and changes are a message to me.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}: a to-do list form, a task page set and booking for visit blocks. Two payments if that's easier.\""
+      }
+    ],
+    "email": {
+      "subject": "Handyman site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for handyman businesses around {City}. {Business Name} has strong reviews, but nothing that comes up when someone searches for a handyman with a list of small jobs.\n\nSo I built a sample first: a to-do list form with a photo for each job, a page on what you take on and what you refer out, and half-day and full-day visits people can book, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and changes. If not, it comes down at the end of the month.\n\nTen minutes this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"{Owner}, it's {Your Name}. I build websites for handyman businesses in {City} and made a sample one for {Business Name}. I'll text you the link, look when you're between jobs. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm taking the {Business Name} handyman demo down on Friday.\n\nKeep it or let it go? One word is fine.",
+    "nurture": "Hi {Owner}, it's the time of year when everyone writes their home to-do list. Thought of you.\n\nThe handyman site is still ready, same price. {demo-link} for another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Keep the build small. Handyman jobs are a few hundred dollars, so price the site against a month of visits, not a single job.",
+      "Offer the build in two payments; cash flow matters more than the total for a solo handyman.",
+      "The to-do list form with photo per task is the core. Price it inside the build and keep other add-ons cheap.",
+      "Task pages (TV mounting, door repair, assembly) are low-cost lines; each catches its own search.",
+      "Only quote landlord and agent pages for handymen who already take that work.",
+      "Never quote software over a few thousand dollars. A handyman's money is in volume, not in tools."
+    ],
+    "lineItems": [
+      {
+        "item": "Task page (each)",
+        "min": 100,
+        "max": 300,
+        "unit": "per-page",
+        "description": "Max when the page has a photo set, visit length guidance and an FAQ for that task.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "To-do list form with photo per job",
+        "min": 250,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max with unlimited job rows, photo upload per row, an access-and-parking field and text alerts.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Visit block booking",
+        "min": 200,
+        "max": 500,
+        "unit": "one-time",
+        "description": "Max with half-day and full-day blocks, travel buffers and a deposit option.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Landlord and agent punch-list page",
+        "min": 200,
+        "max": 450,
+        "unit": "one-time",
+        "description": "Max with a separate request form, lockbox field and invoice-to-owner option.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Area page (each)",
+        "min": 100,
+        "max": 250,
+        "unit": "per-page",
+        "description": "Max when each page has its own jobs and a local review.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Spanish-language booking path",
+        "min": 250,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max when the task pages and the to-do list form are all translated.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Google profile upkeep for handyman jobs",
+      "min": 99,
+      "max": 249,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Each week one small handyman job goes on your Google profile, TV mount, door fix or grab bar, so 'handyman near me' shows you working.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Review text after each visit",
+      "min": 49,
+      "max": 129,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Right after you leave, the customer gets a text asking for a review. Handyman reviews pile up fast because the visits are frequent.\"",
+      "when": "Day 30. Easiest second sale."
+    },
+    {
+      "name": "Fridge magnet and door hanger print run",
+      "min": 150,
+      "max": 400,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A fridge magnet with your number left after every visit, and door hangers on the neighbours' doors. The next home repair call comes from the fridge.\"",
+      "when": "Right after launch."
+    },
+    {
+      "name": "Seasonal home maintenance checklist mailer",
+      "min": 150,
+      "max": 400,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A spring and autumn home checklist emailed to past customers, with a button to book a handyman visit to tick it off.\"",
+      "when": "Pitch in February and August."
+    },
+    {
+      "name": "Nextdoor and neighbourhood group posting kit",
+      "min": 100,
+      "max": 300,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Neighbourhood groups are where people ask for a handyman. A kit of short posts and before-and-afters makes replying to those threads easy.\"",
+      "when": "Month 2."
+    },
+    {
+      "name": "Truck magnet artwork",
+      "min": 100,
+      "max": 300,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Your truck sits in driveways all over town. A clean magnet with the site and 'send me your list' turns that into handyman calls.\"",
+      "when": "Right after launch."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Property managers with maintenance tickets",
+        "whoPays": "The property management company",
+        "min": 800,
+        "max": 2500,
+        "unit": "one-time",
+        "pitchLine": "\"The manager you do repair tickets for needs a simple maintenance request page. Your handyman business is who it sends tickets to.\"",
+        "whyItWorks": "Managers have budgets for tenant tools and want reliable small-repair vendors."
+      },
+      {
+        "route": "Realtors with inspection repair lists",
+        "whoPays": "The agent or brokerage",
+        "min": 800,
+        "max": 2500,
+        "unit": "one-time",
+        "pitchLine": "\"Agents need a vendor page for the inspection repair list before closing, and your handyman name is the first line on it.\"",
+        "whyItWorks": "Agents recommend vendors for a living and pay for pages that make them look organised."
+      },
+      {
+        "route": "Licensed electricians and plumbers they refer to",
+        "whoPays": "The electrician or plumber, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"Who do you send the panel and water heater jobs to? I'll build their site, and they'll send small home repairs back to you.\"",
+        "whyItWorks": "A natural two-way referral where both sides need a site."
+      },
+      {
+        "route": "House cleaners and organisers",
+        "whoPays": "The cleaner or organiser, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"House cleaners see the loose towel bar and the broken blind every week. They need a site, and their clients need a handyman's number.\"",
+        "whyItWorks": "Cleaners are in homes constantly and spot small repairs first."
+      },
+      {
+        "route": "Senior home-care agencies",
+        "whoPays": "The home-care agency",
+        "min": 1000,
+        "max": 3000,
+        "unit": "one-time",
+        "pitchLine": "\"Care agencies need grab bars and railings installed for clients. A vendor page with a vetted handyman on it is something they'll pay for.\"",
+        "whyItWorks": "Agencies want safe homes and dependable vendors, and the handyman's safety page is the proof."
+      },
+      {
+        "route": "Short-term rental hosts",
+        "whoPays": "The host or co-host company",
+        "min": 600,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"Rental hosts need fast fixes between guests. A host page with a repair request form routes those jobs to one handyman.\"",
+        "whyItWorks": "Hosts pay for speed, and repeat repairs between bookings are steady work."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Tenant repair-ticket triage for property managers",
+        "whoPays": "The property manager, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"Tenant tickets come in with a photo, get sorted into handyman, plumber or electrician, and the small ones route straight to your client.\"",
+        "whyItWorks": "Managers save dispatch time and the handyman gets steady tickets."
+      },
+      {
+        "route": "Inspection-report repair list extractor for agents",
+        "whoPays": "The brokerage, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"Upload the inspection report and get a plain repair list split into handyman items and licensed-trade items, ready to send.\"",
+        "whyItWorks": "Agents re-type those lists every closing. A tool that drafts them gets used weekly."
+      },
+      {
+        "route": "Cleaner's add-on booking assistant",
+        "whoPays": "The house cleaning company",
+        "min": 600,
+        "max": 1500,
+        "unit": "one-time",
+        "pitchLine": "\"When a cleaning client mentions a broken hinge, the assistant offers a handyman visit and books it.\"",
+        "whyItWorks": "The cleaner earns goodwill and the handyman gets the job."
+      },
+      {
+        "route": "Host turnover issue reporter",
+        "whoPays": "Short-term rental co-hosts, monthly",
+        "min": 50,
+        "max": 150,
+        "unit": "monthly",
+        "pitchLine": "\"Cleaners photograph damage at turnover, the tool writes the repair note and books the handyman before the next guest.\"",
+        "whyItWorks": "Hosts lose bookings to unfixed damage. Fast reporting is worth a small monthly fee."
+      },
+      {
+        "route": "Home-care safety visit planner",
+        "whoPays": "The home-care agency",
+        "min": 1000,
+        "max": 2500,
+        "unit": "one-time",
+        "pitchLine": "\"Care managers answer a short questionnaire and get a draft safety-fix list, grab bars and railings, to send to the handyman.\"",
+        "whyItWorks": "Agencies need a record of safety steps, and the handyman does the work."
+      },
+      {
+        "route": "Electrician's small-job referral bot",
+        "whoPays": "The electrician",
+        "min": 600,
+        "max": 1500,
+        "unit": "one-time",
+        "pitchLine": "\"The electrician's site asks callers what they need and sends light-fixture and small home repair jobs to the handyman instead of wasting a truck roll.\"",
+        "whyItWorks": "Electricians want fewer tiny calls; the handyman wants exactly those."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Missed-call text-back that asks for the to-do list",
+      "kind": "automation",
+      "oneTimeMin": 0,
+      "oneTimeMax": 200,
+      "monthlyMin": 49,
+      "monthlyMax": 99,
+      "pitchLine": "\"Up a ladder when the phone rings? The caller gets a text asking them to send their handyman list with a photo of each job.\"",
+      "whenAndWhatItTakes": "Day 30. Needs their number forwarded and two lines of wording they approve."
+    },
+    {
+      "name": "Handyman visit price guide by task",
+      "kind": "software",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 30,
+      "monthlyMax": 90,
+      "pitchLine": "\"Pick TV mount, door adjust, grab bar or shelf install and see roughly how much of a handyman visit it takes before booking.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their visit minimum, block rates and typical time per task."
+    },
+    {
+      "name": "Review replies for small home repair jobs",
+      "kind": "ai",
+      "oneTimeMin": 200,
+      "oneTimeMax": 600,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Someone thanks you for fixing the sticky slider? A short handyman-style thank-you is drafted for it, and you okay it from the truck.\"",
+      "whenAndWhatItTakes": "Month 2. Needs ten past replies. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Same-day invoice with card link",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 700,
+      "monthlyMin": 30,
+      "monthlyMax": 90,
+      "pitchLine": "\"Finish the handyman visit, tap done, and the invoice with a card link reaches the customer before you've reached the truck.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their payment account and visit rates."
+    },
+    {
+      "name": "To-do list sorter and visit planner",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1800,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"A customer's messy list of home repairs comes in, and it drafts the visit length, the parts to bring and anything that needs a licensed trade.\"",
+      "whenAndWhatItTakes": "Month 3. Needs a few months of past lists with actual visit times. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Visit block calendar with travel buffers",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1800,
+      "monthlyMin": 30,
+      "monthlyMax": 90,
+      "pitchLine": "\"Customers book handyman half-days and full days from your real calendar, with drive time between areas built in.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their working hours, areas and block lengths."
+    },
+    {
+      "name": "Evening handyman booking assistant",
+      "kind": "ai",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 80,
+      "monthlyMax": 200,
+      "pitchLine": "\"It answers evening messages, collects the list and photos, flags anything needing a licence, and books a handyman visit.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their calendar, task list and what they refer out. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Parts list and receipt log per house",
+      "kind": "software",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1200,
+      "monthlyMin": 20,
+      "monthlyMax": 60,
+      "pitchLine": "\"Every hinge, cartridge and anchor bought for a house logged with the receipt, so materials get billed and nothing's forgotten.\"",
+      "whenAndWhatItTakes": "Month 3. Needs a phone habit of snapping receipts."
+    },
+    {
+      "name": "Home record for repeat customers",
+      "kind": "software",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 20,
+      "monthlyMax": 60,
+      "pitchLine": "\"Each house gets a record: paint colours, filter sizes, the faucet model, what was fixed. The next handyman visit starts with answers.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their job notes from repeat customers."
+    },
+    {
+      "name": "Repair photo to parts list helper",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1800,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"The customer's photo of a leaking faucet or broken latch comes in and it drafts the likely parts to pick up before the handyman visit.\"",
+      "whenAndWhatItTakes": "Month 5. Needs past jobs with photos and the parts used. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Seasonal maintenance reminder texts",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 600,
+      "monthlyMin": 20,
+      "monthlyMax": 60,
+      "pitchLine": "\"Each spring and autumn, past customers get a home checklist text with a link to book a handyman visit.\"",
+      "whenAndWhatItTakes": "Month 4. Needs a past customer list and the checklist wording."
+    },
+    {
+      "name": "Landlord ticket board",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1800,
+      "monthlyMin": 30,
+      "monthlyMax": 90,
+      "pitchLine": "\"Each landlord sees their open repair tickets, completion photos and invoices on one page, without calling the handyman for updates.\"",
+      "whenAndWhatItTakes": "Month 5, for handymen with landlord accounts. Needs their landlord list."
+    },
+    {
+      "name": "Chatbot on what the handyman can and can't do",
+      "kind": "ai",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"It answers 'can you replace an outlet' and 'do you mount TVs on brick' at midnight, from your own rules and limits.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their task list and refer-out list, updated as needed. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Membership plan for regular handyman visits",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1800,
+      "monthlyMin": 30,
+      "monthlyMax": 90,
+      "pitchLine": "\"Regulars pay a small monthly amount for a set number of handyman hours a season, booked first and billed automatically.\"",
+      "whenAndWhatItTakes": "Month 6, once they have repeat customers. Needs their hourly rate and how many members they can serve."
+    },
+    {
+      "name": "Weekly earnings by task type",
+      "kind": "software",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1200,
+      "monthlyMin": 20,
+      "monthlyMax": 60,
+      "pitchLine": "\"See whether TV mounting, door work or landlord tickets actually pay best per hour once drive time is counted.\"",
+      "whenAndWhatItTakes": "Month 6. Needs a season of visits with times and tasks."
+    },
+    {
+      "name": "Task page writer from job notes",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 80,
+      "monthlyMax": 200,
+      "pitchLine": "\"Each month a new handyman task page, like 'mounting a TV over a fireplace', drafted from your notes and approved by you.\"",
+      "whenAndWhatItTakes": "Month 3. Needs short job notes and approval on every page. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Voice notes to invoice lines",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1200,
+      "monthlyMin": 50,
+      "monthlyMax": 120,
+      "pitchLine": "\"Say what you fixed and the parts on the way out of the house, and it drafts the invoice lines for the handyman visit.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their rates and invoice format. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Hardware store parts price sync",
+      "kind": "software",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 20,
+      "monthlyMax": 50,
+      "pitchLine": "\"Common parts, anchors, cartridges and hinges, kept at current prices so materials on the handyman invoice are never stale.\"",
+      "whenAndWhatItTakes": "Month 6. Needs their most-used parts list."
+    },
+    {
+      "name": "Booking confirmation and arrival window texts",
+      "kind": "automation",
+      "oneTimeMin": 150,
+      "oneTimeMax": 500,
+      "monthlyMin": 20,
+      "monthlyMax": 60,
+      "pitchLine": "\"Customers get a confirmation, a reminder the night before and an on-my-way text, so nobody misses the handyman.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their calendar and wording."
+    },
+    {
+      "name": "Second handyman applicant screener",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 50,
+      "monthlyMax": 120,
+      "pitchLine": "\"Applicants say which home repairs they can do alone, whether they own tools and have a truck, and you only call the real ones.\"",
+      "whenAndWhatItTakes": "Any time they post a hiring note. Needs must-haves and pay. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the to-do list form for solo handymen",
+      "whoPays": "Handymen, monthly per operator",
+      "min": 19,
+      "max": 59,
+      "unit": "monthly",
+      "pitchLine": "\"The handyman list form with photos per job works for any solo handyman, and there are thousands of them with no site at all.\"",
+      "whyItWorks": "Huge supply of owner-operators; a cheap monthly tool spreads across many."
+    },
+    {
+      "route": "Handyman franchise local pages",
+      "whoPays": "The handyman franchise, per location",
+      "min": 600,
+      "max": 2000,
+      "unit": "one-time",
+      "pitchLine": "\"Handyman franchisees each need local task pages and their own reviews. One template, rolled out per owner.\"",
+      "whyItWorks": "One contract, many locations."
+    },
+    {
+      "route": "Maintenance vendor portal for a property management firm",
+      "whoPays": "The management firm, annually",
+      "min": 2000,
+      "max": 8000,
+      "unit": "per-year",
+      "pitchLine": "\"Every building the firm manages gets one repair request page that routes small jobs to approved handymen.\"",
+      "whyItWorks": "Firms buy once and roll out everywhere; small repairs are constant."
+    },
+    {
+      "route": "Brokerage closing-repair vendor network",
+      "whoPays": "The brokerage, annually",
+      "min": 1500,
+      "max": 5000,
+      "unit": "per-year",
+      "pitchLine": "\"A brokerage-wide page for inspection repair lists, with a vetted handyman in each area and a fast turnaround.\"",
+      "whyItWorks": "Brokerages want smooth closings and look good offering vetted vendors."
+    },
+    {
+      "route": "Senior safety upgrade program with area aging agencies",
+      "whoPays": "The area aging services agency or nonprofit",
+      "min": 2000,
+      "max": 8000,
+      "unit": "per-year",
+      "pitchLine": "\"Aging agencies fund grab bars and railings for seniors. A request portal routes those home safety jobs to vetted handymen.\"",
+      "whyItWorks": "These programs have budgets and need reliable vendors and records."
+    },
+    {
+      "route": "Hardware store pro-desk handyman finder",
+      "whoPays": "The independent hardware store",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"Customers at the hardware counter ask who could install what they just bought. A handyman finder on the store's site answers.\"",
+      "whyItWorks": "Stores keep pro customers loyal by sending them work."
+    },
+    {
+      "route": "White-label handyman site for agencies",
+      "whoPays": "The agency, per site",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "pitchLine": "\"Agencies can't make money building custom sites for a handyman. License my ready handyman template with the list form.\"",
+      "whyItWorks": "Low-ticket clients are only profitable on a template."
+    },
+    {
+      "route": "Short-term rental co-host repair network",
+      "whoPays": "Co-hosting companies, monthly",
+      "min": 99,
+      "max": 299,
+      "unit": "monthly",
+      "pitchLine": "\"Co-hosts managing many rentals need one place to send repair requests to local handymen between guests.\"",
+      "whyItWorks": "Co-hosts manage many units and repairs never stop."
+    },
+    {
+      "route": "Starter pack for new handyman businesses",
+      "whoPays": "People starting a handyman business, per pack",
+      "min": 99,
+      "max": 299,
+      "unit": "one-time",
+      "pitchLine": "\"A visit price sheet, a refer-out list template and a one-page handyman site, sold to people going out on their own.\"",
+      "whyItWorks": "Built once, sold many times, and the buyers are numerous."
+    },
+    {
+      "route": "Home warranty company small-repair dispatch",
+      "whoPays": "The home warranty or home services company",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Home warranty claims for minor items need a handyman, not a licensed trade. A dispatch page routes them to vetted locals.\"",
+      "whyItWorks": "Warranty firms pay to cut costs on minor claims."
+    },
+    {
+      "route": "Another metro's handyman",
+      "whoPays": "A handyman client in a new metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"One handyman per metro keeps it fair. {City} is taken, so the to-do list template goes to a handyman one metro over.\"",
+      "whyItWorks": "Non-competing geography lets you reuse everything."
+    },
+    {
+      "route": "Quick fixes for broken handyman sites",
+      "whoPays": "The handyman with a dead site",
+      "min": 300,
+      "max": 900,
+      "unit": "one-time",
+      "pitchLine": "\"Old handyman sites with dead forms are common. I move them to the list-form template for less than a day's work.\"",
+      "whyItWorks": "A cheap, fast fix closes easily with owners who already tried once."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Handyman site build plus care plan, one contract",
+      "min": 1000,
+      "max": 1800,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"Handyman site and care plan on one contract, paid in two parts if you like, and changes are a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Review text after each visit",
+      "min": 49,
+      "max": 129,
+      "unit": "monthly",
+      "trigger": "The first handyman visits booked through the site are finished.",
+      "line": "\"You do lots of visits a week. A review text after each handyman visit builds the listing fast.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "Fridge magnet and door hanger print run",
+      "min": 150,
+      "max": 400,
+      "unit": "one-time",
+      "trigger": "A repeat customer says they lost the handyman's number.",
+      "line": "\"That customer couldn't find your number. A fridge magnet makes sure the next home repair call comes to you.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Visit block calendar with travel buffers",
+      "min": 600,
+      "max": 1800,
+      "unit": "one-time",
+      "trigger": "Sixty days of list-form requests show customers asking for half-day visits.",
+      "line": "\"Your to-do list requests are mostly half-days. Let people book handyman blocks directly.\""
+    },
+    {
+      "rung": 5,
+      "day": 120,
+      "offer": "Landlord ticket board",
+      "min": 600,
+      "max": 1800,
+      "unit": "one-time",
+      "trigger": "They take on a second landlord or property manager account.",
+      "line": "\"Two landlords sending repair tickets need a handyman board, not a text thread.\""
+    },
+    {
+      "rung": 6,
+      "day": 180,
+      "offer": "Membership plan for regular handyman visits",
+      "min": 600,
+      "max": 1800,
+      "unit": "one-time",
+      "trigger": "They have customers who have booked three or more visits.",
+      "line": "\"Your regulars book every couple of months anyway. A handyman membership makes it steady income.\""
+    },
+    {
+      "rung": 7,
+      "day": 270,
+      "offer": "Seasonal maintenance reminder texts",
+      "min": 200,
+      "max": 600,
+      "unit": "one-time",
+      "trigger": "A full season of past customers on file before spring or autumn.",
+      "line": "\"Every past customer has a spring home list. A reminder sends it to the handyman they already trust.\""
+    }
+  ]
+}

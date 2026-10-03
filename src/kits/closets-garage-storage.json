@@ -1,0 +1,842 @@
+{
+  "schemaVersion": 1,
+  "category": "Closets & garage storage",
+  "slug": "closets-garage-storage",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Int family batch. Design-led, portfolio sells; copy leans on the design consult, closet types, garage systems and finishes. No closet-system, hardware or franchise brands. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Closet design consultation and drawings",
+      "contains": "The in-home measure, a rendered closet design with elevations, finish and hardware samples, a revision round, and how the design becomes the order",
+      "why": "Buyers can't picture a custom closet from a bare wall. The design consultation is the product, and showing it is what books the measure."
+    },
+    {
+      "section": "Closet types and layouts",
+      "contains": "Walk-in and reach-in closets, pantries, laundry rooms, mudroom lockers, kids' closets that grow, and home office wall systems, each with a sample layout",
+      "why": "People shop by room. A page per closet type catches the search and shows them a layout close to their own."
+    },
+    {
+      "section": "Garage storage systems",
+      "contains": "Slatwall panels, overhead ceiling racks, garage cabinets and workbenches, bike and sports gear storage, weight ratings and keeping room for the cars",
+      "why": "Garage buyers decide on capacity and cleanliness. Showing weight ratings and finished garages wins the bigger job."
+    },
+    {
+      "section": "Finishes, hardware and accessories",
+      "contains": "Melamine colours and wood-grain finishes, drawer fronts, soft-close drawers, LED closet lighting, jewellery and valet inserts, tie and belt racks, mirrors and islands",
+      "why": "Accessories are where the ticket grows. Buyers only add them when they see them laid out on a finished closet."
+    },
+    {
+      "section": "Install day: empty, remove and install",
+      "contains": "What to empty beforehand, removing old wire shelving, patching and painting the walls, how long a walk-in or a garage takes, and haul-away",
+      "why": "The fear of emptying a closet holds people back. A clear install-day page turns it into a weekend plan."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C42",
+      "siteType": "local-conversion",
+      "name": "Everything in Its Place",
+      "heroLayout": "split-photo",
+      "mood": [
+        "bright",
+        "orderly",
+        "quick"
+      ],
+      "bestFor": "Small closet and garage installers who win on a fast free measure and clear package prices",
+      "pairsWithTier": "starter",
+      "headlineSample": "Custom closets and garage storage in {City}",
+      "whyItFits": "Riso blue and geometric caps feel crisp and organised, like labelled bins, and the page drives to the free-measure form."
+    },
+    {
+      "id": "b",
+      "themeId": "C40",
+      "siteType": "portfolio-showcase",
+      "name": "Walk-In Gallery",
+      "heroLayout": "before-after",
+      "mood": [
+        "calm",
+        "tidy",
+        "warm"
+      ],
+      "bestFor": "Closet designers with a strong portfolio of walk-ins, pantries and garages to sort by room",
+      "pairsWithTier": "standard",
+      "headlineSample": "Closets and garages designed around your things in {City}",
+      "whyItFits": "The family combo, Terracotta Kiln, fails the CTA contrast rule. Driftwood keeps the refined serif and warm neutrals with a walnut accent that passes and flatters wood-grain shelving."
+    },
+    {
+      "id": "c",
+      "themeId": "C9",
+      "siteType": "premium-brand",
+      "name": "Dressing Room",
+      "heroLayout": "full-bleed-photo",
+      "mood": [
+        "luxe",
+        "quiet",
+        "tailored"
+      ],
+      "bestFor": "Designers selling lit dressing rooms, islands and boutique-style walk-ins in high-end homes",
+      "pairsWithTier": "premium",
+      "headlineSample": "Boutique dressing rooms and walk-in closets for {City} homes",
+      "whyItFits": "Midnight with champagne and a Didone display feel like a boutique at night, which is the feeling a top-end closet buyer is paying for."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your closet company has great reviews on Maps but no website, so someone in {City} dreaming about a walk-in never sees one you've built.",
+      "hook": "Open their Maps listing and confirm there is no Website button. Screenshot it for when they reply.",
+      "linkLine": "Here's what a closet buyer would land on: {demo-link}"
+    },
+    {
+      "angle": "Instagram-only presence",
+      "line": "Your custom closets live on Instagram, and they're lovely. But nobody can search 'pantry organization {City}' and land on your grid, and there's no way to book a measure.",
+      "hook": "Check the bio link and the listing. If both lead to Instagram or nothing, the angle holds.",
+      "linkLine": "Your closets with a measure booking built in: {demo-link}"
+    },
+    {
+      "angle": "Dead free host",
+      "line": "The closet site on your listing has a free-host banner and a gallery that stops years ago. The closets on your Instagram are far better than what it shows.",
+      "hook": "Compare their site's newest closet with their newest post. Note the gap.",
+      "linkLine": "Your newest closets on a current site: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "On my phone your closet gallery crops every walk-in to a sliver. People plan closets on their phones, standing in the closet.",
+      "hook": "Only if they have a site. Load it on your phone and note what breaks. Screenshot it for when they reply.",
+      "linkLine": "Your closet gallery, full-size on a phone: {demo-link}"
+    },
+    {
+      "angle": "No measure booking",
+      "line": "The only way to get a closet design from you is to call. A lot of people would rather pick a measure slot and upload the closet's dimensions at night.",
+      "hook": "Check for any booking or form. If none, the angle holds.",
+      "linkLine": "A closet measure booking with room for dimensions: {demo-link}"
+    },
+    {
+      "angle": "Garages hidden among closets",
+      "line": "You've posted a few garage storage builds between the closets, and they get lost. Garage buyers are a different crowd and would book from a page of their own.",
+      "hook": "Count their garage posts. If there are any, name one.",
+      "linkLine": "A garage storage page separate from your closets: {demo-link}"
+    },
+    {
+      "angle": "Reviews stuck on Google",
+      "line": "Your reviews talk about mornings that are easier now and a garage the car fits back into. That's exactly what a closet buyer wants to hear, and it sits on Maps.",
+      "hook": "Copy one review phrase about mornings, space or the car. Quote it back if they reply.",
+      "linkLine": "Those reviews next to the closets they describe: {demo-link}"
+    },
+    {
+      "angle": "New-year organising rush",
+      "line": "January is when everyone decides this is the year the closet gets sorted. The closet designers who appear in that search book the first quarter.",
+      "hook": "Use this November to January. Mention the new year in the reply.",
+      "linkLine": "Ready for the new-year closet rush: {demo-link}"
+    },
+    {
+      "angle": "Late-night planning",
+      "line": "People measure their closet after the kids are in bed. If they can book a design consult then, they don't go looking for another closet company in the morning.",
+      "hook": "Call their number after hours. If voicemail only and no booking, the angle holds.",
+      "linkLine": "A closet design booking that works at night: {demo-link}"
+    },
+    {
+      "angle": "Hiring installers",
+      "line": "Saw you're hiring a closet installer. Careful installers want to see the quality of closets they'd be building before they apply.",
+      "hook": "Only if they posted a hiring note. Note the date.",
+      "linkLine": "A closet site with a careers page: {demo-link}"
+    },
+    {
+      "angle": "Service area",
+      "line": "You design custom closets across {City}, but no page tells someone in {Neighborhood} you'll come measure there.",
+      "hook": "Find towns in captions or reviews. Use the most affluent one.",
+      "linkLine": "A closet page for each town you cover: {demo-link}"
+    },
+    {
+      "angle": "Pantry and laundry upsell",
+      "line": "Your walk-ins are the hero, but a pantry or laundry system is often the second room a closet client books. A page for each would show them it's possible.",
+      "hook": "Look for any pantry, laundry or mudroom post. If they have one, name it.",
+      "linkLine": "Pantry, laundry and mudroom pages for your closet company: {demo-link}"
+    },
+    {
+      "angle": "Designer credentials and trust",
+      "line": "People letting a closet designer into their bedroom want to know who they are. A page with your designers and how the consult works removes that hesitation.",
+      "hook": "Check whether they ever show who designs. If not, the angle holds.",
+      "linkLine": "Your closet designers and process on one page: {demo-link}"
+    },
+    {
+      "angle": "Builder and realtor referrals",
+      "line": "Sounds like builders and agents send a lot of your closet work. Even a referred homeowner wants to browse your closets before booking a measure.",
+      "hook": "Look for posts tagging builders or agents. Name one if they reply.",
+      "linkLine": "Where a closet referral would land: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "The {specific recent job} you posted is the kind of closet people save to their planning boards. It should greet a buyer the moment they find you.",
+      "hook": "Pick their newest closet or garage and name it: room, finish and the best detail.",
+      "linkLine": "That closet, front and centre: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, the {specific recent job} you posted is a beautiful closet.\n\nI was looking for custom closet companies in {City} and found {Business Name}, but no site where someone can browse by room or book a design consult. I put together a sample closet and garage site, with marked placeholders where your photos would go.\n\nWant me to send it?",
+    "dm2": "{Owner}, circling back in case this got buried. Here's the sample site for {Business Name}: {demo-link}\n\nIt has closets sorted by walk-in, reach-in, pantry and garage, a page on how the design consult works, and a measure booking that takes dimensions. If it's not for you, just say so.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for closet and garage storage companies here in {City}. I sent a message a couple of days ago, did you see it?\"\n\nIF NO:\n\"No worries. Short version: I built a sample closet site for {Business Name}, sorted by room with a garage page and a design consult booking, plus marked placeholders where your photos would go. Can I email you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range} depending on how many room and town pages you want, then {Care Range} a month for hosting and changes. For a closet company your size I'd quote about {Build Price}, less than one walk-in.\"\n\"Can I walk you through it for ten minutes, Tuesday or Thursday?\"\n\nCLOSE:\n\"I'll send a one-page scope and the deposit invoice, and we'll pick your best walk-in for the top of the page.\"",
+    "objections": [
+      {
+        "objection": "Instagram already shows my closets.",
+        "handler": "\"It does, beautifully, to followers. Someone searching 'custom closets {City}' lands on Google. The site catches them and lets them book a measure.\""
+      },
+      {
+        "objection": "The big closet franchises outspend me on ads.",
+        "handler": "\"They do. A local designer with real closets, a named person doing the consult and town pages wins the searches they can't buy.\""
+      },
+      {
+        "objection": "Builders give me most of my closets.",
+        "handler": "\"Builder work is steady until starts slow. Homeowner closets and garages pay better, and the site is where they come from.\""
+      },
+      {
+        "objection": "I'm on a lead platform already.",
+        "handler": "\"Shared leads go to several closet companies at once and you pay either way. Your own site sends that walk-in to one designer, you.\""
+      },
+      {
+        "objection": "I don't want to show prices.",
+        "handler": "\"We don't need to. We show 'reach-in from' and 'walk-in from' bands in your words, or leave prices for the consult. Your call.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}: closets by room, a garage page and a design consult booking. Less than one walk-in.\""
+      }
+    ],
+    "email": {
+      "subject": "Closet and garage site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for closet and garage storage companies around {City}. {Business Name} has gorgeous closets on social, but nothing that comes up when someone searches for custom closets or garage storage.\n\nSo I built a sample first: closets sorted by walk-in, reach-in, pantry and garage, a page explaining your design consult, and a measure booking that takes room dimensions, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and changes. If not, it comes down at the end of the month.\n\nTen minutes this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"{Owner}, it's {Your Name}. I build websites for closet companies in {City} and made a sample one for {Business Name}. I'll email the link, take a look tonight. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm taking the {Business Name} closet demo down on Friday.\n\nKeep it up? One word either way.",
+    "nurture": "Hi {Owner}, the new-year organising rush is a few weeks away and people are already eyeing their closets. Thought of you.\n\nThe closet site is still ready, same price. {demo-link} for another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to less than one walk-in closet, never to an hourly rate.",
+      "Price the gallery by finished closets sorted by room type; the portfolio is what sells this trade.",
+      "Garage storage is a different buyer. Quote its page set as a separate line, not inside the closet build.",
+      "A design-consult booking that takes room dimensions and photos is the core. Price richer intake as its own line.",
+      "Only quote premium dressing-room pages for designers who actually build lit islands and boutique walk-ins.",
+      "Time the launch for autumn so it's found before the January organising rush."
+    ],
+    "lineItems": [
+      {
+        "item": "Closet type page (each)",
+        "min": 200,
+        "max": 500,
+        "unit": "per-page",
+        "description": "Max when the page has a sample layout, finish options and a dozen finished closets of that type.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Garage storage page set",
+        "min": 400,
+        "max": 900,
+        "unit": "one-time",
+        "description": "Max with separate cabinet, slatwall and overhead pages, weight notes and a garage measure form.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Design consult booking with dimensions",
+        "min": 350,
+        "max": 900,
+        "unit": "one-time",
+        "description": "Max with photo upload, wall-by-wall dimensions, a style question and calendar booking.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Finish and accessory showcase",
+        "min": 300,
+        "max": 700,
+        "unit": "one-time",
+        "description": "Max with filterable finishes, hardware and accessories on real closets.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Before-and-after closet story (each)",
+        "min": 150,
+        "max": 400,
+        "unit": "per-page",
+        "description": "Max when the story includes the design drawing, the finished closet and a client quote.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Town service-area page (each)",
+        "min": 150,
+        "max": 400,
+        "unit": "per-page",
+        "description": "Max when each page has its own finished closets and a local review.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Styled closet photo shoot",
+      "min": 500,
+      "max": 1300,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A closet photographed half-empty looks like a store fixture. One styled shoot, folded sweaters and lit shelves, makes three walk-ins look like magazine pages.\"",
+      "when": "Month 2, at their best walk-in."
+    },
+    {
+      "name": "Instagram and Pinterest closet content plan",
+      "min": 300,
+      "max": 700,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Pinned pantry and walk-in ideas are where closet projects begin. Weekly posts of your own finished closets get you onto those pins with your name attached.\"",
+      "when": "Month 3, once there are enough finished rooms."
+    },
+    {
+      "name": "Google profile closet and garage posts",
+      "min": 150,
+      "max": 350,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A new walk-in or garage system on your Google profile each week, captioned by room and town.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Review request a week after install",
+      "min": 79,
+      "max": 199,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A week after the closet goes in, once they've lived with it, the client gets a text asking for a review.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "New-year organising campaign",
+      "min": 300,
+      "max": 700,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A late-December push for 'this is the year the closet gets sorted' books January design consults before the rush.\"",
+      "when": "Pitch in October, run in late December."
+    },
+    {
+      "name": "Spring garage clean-out campaign",
+      "min": 300,
+      "max": 650,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"When the weather turns, everyone opens the garage and sighs. A spring garage storage push catches that weekend.\"",
+      "when": "Pitch in February, run in March and April."
+    },
+    {
+      "name": "Builder and realtor closet brochure",
+      "min": 250,
+      "max": 600,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A closet upgrade brochure builders hand new buyers, and agents leave at listings, puts your walk-ins in front of people moving.\"",
+      "when": "Month 3."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Professional organisers",
+        "whoPays": "The organiser, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"Organisers sort the stuff, you build where it goes. The organiser you work with needs a site, and their clients need a closet designer.\"",
+        "whyItWorks": "Constant two-way referral between the person who sorts and the person who builds."
+      },
+      {
+        "route": "Garage floor coating installers",
+        "whoPays": "The coating installer, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"A new garage floor and new garage storage go together. The coating crew needs a site with finished garages on it.\"",
+        "whyItWorks": "Same garage, consecutive trades, both sell on the after photo."
+      },
+      {
+        "route": "Home builders offering closet upgrades",
+        "whoPays": "The home builder",
+        "min": 2000,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"Builders who use your closets need a design centre page showing upgrades, and your walk-ins sell them.\"",
+        "whyItWorks": "Builders earn on upgrades and the closet company becomes default."
+      },
+      {
+        "route": "Interior designers",
+        "whoPays": "The designer",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"Designers who send you dressing rooms need portfolio sites, and your closets are some of their best rooms.\"",
+        "whyItWorks": "Designers buy on looks and already work with the closet company."
+      },
+      {
+        "route": "Movers and moving managers for downsizers",
+        "whoPays": "The moving company, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"Movers handling downsizers know who's moving into a smaller home with less closet. They need a site, and their clients need storage.\"",
+        "whyItWorks": "Moves trigger closet projects; movers hear about them first."
+      },
+      {
+        "route": "Closet component supplier",
+        "whoPays": "The regional closet component supplier",
+        "min": 2000,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"The supplier you buy panels and hardware from sells to installers across the region. A find-an-installer page benefits everyone.\"",
+        "whyItWorks": "Suppliers have budgets and their installer list is a prospect list."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Organiser's decluttering plan drafter",
+        "whoPays": "The professional organiser, monthly",
+        "min": 75,
+        "max": 200,
+        "unit": "monthly",
+        "pitchLine": "\"The organiser uploads closet photos and gets a draft sort plan and a list of storage that would help, with the closet designer to call.\"",
+        "whyItWorks": "Organisers write those plans for every client; the tool routes builds to your client."
+      },
+      {
+        "route": "Coating installer's garage makeover preview",
+        "whoPays": "The coating installer",
+        "min": 1200,
+        "max": 3000,
+        "unit": "one-time",
+        "pitchLine": "\"Customers upload a garage photo and see a coated floor with wall storage before booking.\"",
+        "whyItWorks": "A preview sells both trades in one go."
+      },
+      {
+        "route": "Builder upgrade-selection assistant for closets",
+        "whoPays": "The home builder",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"Buyers in the design centre ask what closet upgrades fit their floor plan. An assistant answers from the builder's plans.\"",
+        "whyItWorks": "Builders sell more upgrades with faster answers."
+      },
+      {
+        "route": "Designer's storage spec writer",
+        "whoPays": "The interior designer, monthly",
+        "min": 75,
+        "max": 200,
+        "unit": "monthly",
+        "pitchLine": "\"The designer describes the dressing room and gets a draft spec of hanging, drawers and lighting to hand the closet company.\"",
+        "whyItWorks": "Clear specs mean fewer revisions for both."
+      },
+      {
+        "route": "Mover's downsizing storage checklist",
+        "whoPays": "The moving company",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"Downsizing clients answer a few questions and get a storage plan for the new home, with a closet designer to call.\"",
+        "whyItWorks": "Movers add value and the closet company gets warm buyers."
+      },
+      {
+        "route": "Supplier's panel-cut list helper",
+        "whoPays": "The closet component supplier, annually",
+        "min": 2500,
+        "max": 8000,
+        "unit": "per-year",
+        "pitchLine": "\"Installers enter wall sizes and the layout, and the helper drafts a panel cut list and hardware order for the supplier.\"",
+        "whyItWorks": "Easier ordering ties installers to one supplier."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Missed-call text-back for closet measures",
+      "kind": "automation",
+      "oneTimeMin": 0,
+      "oneTimeMax": 250,
+      "monthlyMin": 69,
+      "monthlyMax": 149,
+      "pitchLine": "\"Installing a walk-in when the phone rings? The caller gets a text asking which closet or garage and a photo of the wall.\"",
+      "whenAndWhatItTakes": "Day 30. Needs their number forwarded and two lines of wording they approve."
+    },
+    {
+      "name": "Closet price range builder by type and size",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3500,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Pick reach-in, walk-in, pantry or garage, enter wall lengths and a finish level, and see a range before the measure.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their pricing by linear foot, finish and accessory."
+    },
+    {
+      "name": "Review replies that name the closet",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 69,
+      "monthlyMax": 179,
+      "pitchLine": "\"A five-star note about a new pantry gets a warm reply drafted that mentions the pull-out drawers, ready for your tap.\"",
+      "whenAndWhatItTakes": "Month 2. Needs ten past replies. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Deposit at design sign-off",
+      "kind": "automation",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1200,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"When the client approves the closet drawing, the deposit invoice goes out automatically and the order is released.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their deposit rule and payment account."
+    },
+    {
+      "name": "Closet-photo layout preview",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4500,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"The homeowner uploads a photo of their empty closet with a measurement, and sees a draft shelving and hanging layout before the consult.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their standard modules and finished closets to check previews against. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Design-to-order tracker",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4500,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Every closet from measure to drawing, approval, panel order, delivery and install on one board.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their stages and supplier lead times."
+    },
+    {
+      "name": "Evening design consult booking assistant",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2200,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"It answers late messages, asks which room, the size and the style, and books a closet design consult.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their calendar and intake questions. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Panel cut list and hardware generator",
+      "kind": "software",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 6000,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"Approve the closet drawing and it prints the panel cut list, drawer boxes and hardware for the shop or supplier.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their module library and panel sizes."
+    },
+    {
+      "name": "Client page with drawing approval",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3500,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"The client sees the closet drawing, picks finishes, approves online, and sees the install date.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the design-to-order tracker first."
+    },
+    {
+      "name": "Garage storage weight and layout helper",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"The homeowner lists bikes, bins and tools, and it drafts a garage layout with racks and cabinets that leaves room for the cars.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their garage products and weight ratings. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Install-day prep texts",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 30,
+      "monthlyMax": 90,
+      "pitchLine": "\"Two days before install, the client gets a text: empty the closet, clear the floor, and we'll take the old wire shelving.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their prep checklist."
+    },
+    {
+      "name": "Second-room follow-up sequence",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 30,
+      "monthlyMax": 90,
+      "pitchLine": "\"A few months after the walk-in, the client gets a note with a pantry or garage idea. The second closet room comes from people already happy.\"",
+      "whenAndWhatItTakes": "Month 4. Needs past jobs with rooms and dates."
+    },
+    {
+      "name": "Chatbot on closet finishes and timelines",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2500,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"Questions like 'will a closet island fit in eight feet' and 'how soon can you install' get answered overnight, using your own closet rules.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their FAQ and lead times. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Builder upgrade order portal",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4500,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Builders submit closet upgrade orders by lot and plan, and you see every one in a single list.\"",
+      "whenAndWhatItTakes": "Month 6, for companies with builder accounts. Needs their builder plans."
+    },
+    {
+      "name": "Job costing by closet type",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"See whether walk-ins, pantries or garages actually pay best once panels, hardware and install hours are counted.\"",
+      "whenAndWhatItTakes": "Month 6. Needs supplier invoices and install hours."
+    },
+    {
+      "name": "Room page writer for closets",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1800,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Each month a page like 'small reach-in closet ideas', drafted from your closet notes and approved first.\"",
+      "whenAndWhatItTakes": "Month 3. Needs notes and approval. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Supplier lead-time and price sync",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2200,
+      "monthlyMin": 40,
+      "monthlyMax": 120,
+      "pitchLine": "\"When panel or hardware prices and lead times change, the closet range builder and install dates update.\"",
+      "whenAndWhatItTakes": "Month 6. Needs the supplier's sheet format."
+    },
+    {
+      "name": "Voice notes to closet design brief",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2200,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"Talk through the client's wardrobe and wishes during the measure, and it drafts the closet design brief for the drawing.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their brief template. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Install photo checklist",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1800,
+      "monthlyMin": 30,
+      "monthlyMax": 90,
+      "pitchLine": "\"Installers photograph level, anchors and the finished closet before leaving, so callbacks are rare and the gallery fills itself.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their install checklist."
+    },
+    {
+      "name": "Installer applicant screener",
+      "kind": "ai",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1400,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"Closet installer applicants answer whether they've hung systems, read drawings and own tools, so you call only the real ones.\"",
+      "whenAndWhatItTakes": "Any time they post a hiring note. Needs must-haves and pay. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the closet range builder for independents",
+      "whoPays": "Independent closet companies, monthly per operator",
+      "min": 39,
+      "max": 149,
+      "unit": "monthly",
+      "pitchLine": "\"Independent closet designers all compete with franchises on the 'what does it cost' question. My range builder answers it for any of them.\"",
+      "whyItWorks": "Independents need tools that make them look as organised as franchises."
+    },
+    {
+      "route": "Installer locator for a closet component maker",
+      "whoPays": "The component manufacturer",
+      "min": 6000,
+      "max": 25000,
+      "unit": "one-time",
+      "pitchLine": "\"A maker of closet panels and hardware sells through installers homeowners can't find. A locator with galleries fixes that.\"",
+      "whyItWorks": "Manufacturers fund dealer marketing and want installed sales."
+    },
+    {
+      "route": "Closet franchise local pages",
+      "whoPays": "The closet franchise group, per location",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "pitchLine": "\"Closet franchisees need local galleries and consult booking by territory. One template, rolled out per owner.\"",
+      "whyItWorks": "One contract, many locations."
+    },
+    {
+      "route": "Organisers' association partner directory",
+      "whoPays": "The professional organisers' association, annually",
+      "min": 1500,
+      "max": 5000,
+      "unit": "per-year",
+      "pitchLine": "\"Organiser members need closet and garage builders to refer to. A vetted partner directory is a member benefit.\"",
+      "whyItWorks": "Associations want useful benefits; closet companies pay to be listed."
+    },
+    {
+      "route": "White-label closet template for agencies",
+      "whoPays": "The agency, per site",
+      "min": 500,
+      "max": 1200,
+      "unit": "one-time",
+      "pitchLine": "\"Agencies with closet clients rebuild galleries from scratch. License my closet template with room types and consult booking.\"",
+      "whyItWorks": "Agencies keep the client; you sell the finished module."
+    },
+    {
+      "route": "Production builder closet upgrade program",
+      "whoPays": "The production builder",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Every floor plan gets pre-drawn closet upgrades buyers can pick online, routed to one closet company.\"",
+      "whyItWorks": "Builders earn on upgrades and closets are an easy yes."
+    },
+    {
+      "route": "Senior downsizing service network",
+      "whoPays": "Senior move managers, monthly",
+      "min": 49,
+      "max": 149,
+      "unit": "monthly",
+      "pitchLine": "\"Move managers helping seniors downsize need closet and storage partners in every town. A shared referral board does it.\"",
+      "whyItWorks": "Downsizing is steady and move managers want reliable partners."
+    },
+    {
+      "route": "Garage makeover bundle with coating and storage partners",
+      "whoPays": "Garage coating and storage companies, per bundle",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"One garage makeover page across floor coating, storage and lighting partners, with each partner paying for their part.\"",
+      "whyItWorks": "Bundles sell bigger garages and split marketing cost."
+    },
+    {
+      "route": "Closet panel and hardware cost sheet",
+      "whoPays": "Closet companies, monthly",
+      "min": 19,
+      "max": 69,
+      "unit": "monthly",
+      "pitchLine": "\"Closet shops share their panel and hardware invoices and see monthly where costs are moving, built from nothing but what they sent.\"",
+      "whyItWorks": "Built only from contributed invoices."
+    },
+    {
+      "route": "Starter kit for carpenters adding closets",
+      "whoPays": "Carpenters starting a closet line, per kit",
+      "min": 199,
+      "max": 499,
+      "unit": "one-time",
+      "pitchLine": "\"Carpenters adding closets need a consult script, a range sheet and a gallery page. Sell the closet kit your client runs on.\"",
+      "whyItWorks": "Built once, sold many times."
+    },
+    {
+      "route": "Closet designer in the next metro",
+      "whoPays": "A closet client in a new metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"{City} has its closet designer. The room-by-room closet template goes to an independent one metro over.\"",
+      "whyItWorks": "Non-competing geography lets you reuse everything."
+    },
+    {
+      "route": "Relaunch dated closet company sites",
+      "whoPays": "The closet company with a stale site",
+      "min": 600,
+      "max": 2000,
+      "unit": "one-time",
+      "pitchLine": "\"Closet sites with years-old galleries undersell the work. I move them to a current closet template in days.\"",
+      "whyItWorks": "Fast, visible improvement that's easy to buy."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Closet site build plus care plan, one contract",
+      "min": 1800,
+      "max": 3000,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"Closet site and care plan on one contract, so a new walk-in on the gallery is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Review request a week after install",
+      "min": 79,
+      "max": 199,
+      "unit": "monthly",
+      "trigger": "The first closet booked through the site is installed.",
+      "line": "\"That pantry client has lived with it a week. Let's ask every closet client then.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "Styled closet photo shoot",
+      "min": 500,
+      "max": 1300,
+      "unit": "per-shoot",
+      "trigger": "They install a walk-in they're proud of.",
+      "line": "\"That walk-in deserves a styled shoot. It'll lead the closet gallery for a year.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Closet price range builder by type and size",
+      "min": 1200,
+      "max": 3500,
+      "unit": "one-time",
+      "trigger": "Sixty days of consult requests show many asking price before booking.",
+      "line": "\"Most closet requests ask the price first. The range builder answers before the measure.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Spring garage clean-out campaign",
+      "min": 300,
+      "max": 650,
+      "unit": "one-time",
+      "trigger": "Late winter, with a few garage storage jobs in the gallery.",
+      "line": "\"Garage season is close. Let's push your garage storage before everyone opens the door and sighs.\""
+    },
+    {
+      "rung": 6,
+      "day": 150,
+      "offer": "Design-to-order tracker",
+      "min": 1500,
+      "max": 4500,
+      "unit": "one-time",
+      "trigger": "An order is delayed or they hire a second designer.",
+      "line": "\"That late panel order was a tracking gap. Let's put every closet on one board.\""
+    },
+    {
+      "rung": 7,
+      "day": 240,
+      "offer": "Second-room follow-up sequence",
+      "min": 300,
+      "max": 900,
+      "unit": "one-time",
+      "trigger": "Several past clients ask about a pantry or garage after their walk-in.",
+      "line": "\"Your walk-in clients keep asking about the pantry. Let's offer the second closet room to every one.\""
+    }
+  ]
+}
