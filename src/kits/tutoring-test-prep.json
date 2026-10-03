@@ -1,0 +1,865 @@
+{
+  "schemaVersion": 1,
+  "category": "Tutoring & test prep",
+  "slug": "tutoring-test-prep",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Edu family batch. Hourly and package-priced; season set by report cards and test dates. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Proctored practice test calendar",
+      "contains": "Saturday proctored SAT and ACT practice tests, timing and rules like the real test, score report turnaround, and a review session with a tutor after",
+      "why": "Parents of juniors want a real baseline score before they pay for test prep. A free practice test is the easiest way for a family to start."
+    },
+    {
+      "section": "Test date and deadline planner",
+      "contains": "Upcoming SAT and ACT dates, registration deadlines, when to start prep for each, and how many weeks a typical prep package runs",
+      "why": "Families plan backward from a test date. A planner that says 'start by this week' turns a vague worry into a booked package."
+    },
+    {
+      "section": "Support for learning differences",
+      "contains": "Tutoring for dyslexia, ADHD and processing differences, how tutors work with an IEP or accommodation plan, and accommodations for testing",
+      "why": "Parents of a child who learns differently search specifically for a tutor who understands. They pay more and stay longer when they find one."
+    },
+    {
+      "section": "Center, in-home or online tutoring",
+      "contains": "Sessions at the tutoring center, in the student's home with neighbourhoods covered, or online with a shared whiteboard, and how each is priced",
+      "why": "Busy families choose a reading or math tutor by logistics first. Clear options stop them from picking whoever is closest."
+    },
+    {
+      "section": "Course-aligned help for local schools",
+      "contains": "Math tutoring aligned to the local district's courses, AP and honours subjects, the textbooks each school uses, and help timed to unit tests and finals",
+      "why": "Parents want a tutor who knows their child's actual class. Naming the schools and courses makes a center feel local and specific."
+    },
+    {
+      "section": "College essay coaching",
+      "contains": "Personal statement and supplemental essay coaching, brainstorming sessions, draft rounds, deadline calendar and what the coach will and won't write",
+      "why": "Senior-year families pay for essay help on a hard deadline. A clear scope with ethics stated wins the careful ones."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C30",
+      "siteType": "local-conversion",
+      "name": "Report Card Rescue",
+      "heroLayout": "split-photo",
+      "mood": [
+        "direct",
+        "hopeful",
+        "practical"
+      ],
+      "bestFor": "Solo tutors and small centers that need assessment bookings when report cards land",
+      "pairsWithTier": "starter",
+      "headlineSample": "Math and reading tutoring in {City}. Book an assessment.",
+      "whyItFits": "Butter and denim feels like a notebook and a school jacket, and the geometric display keeps the assessment button clear on a parent's phone."
+    },
+    {
+      "id": "b",
+      "themeId": "C26",
+      "siteType": "enrolment",
+      "name": "Learning Path",
+      "heroLayout": "card-stack",
+      "mood": [
+        "encouraging",
+        "clear",
+        "friendly"
+      ],
+      "bestFor": "Tutoring centers with subjects by grade, test prep packages and a parent progress report",
+      "pairsWithTier": "standard",
+      "headlineSample": "Tutoring and test prep for {City} students of every grade",
+      "whyItFits": "The family combo, made for education. Sky Kite's rounded type feels encouraging to a struggling student, and the cards sort help by grade and subject."
+    },
+    {
+      "id": "c",
+      "themeId": "C44",
+      "siteType": "editorial-trust",
+      "name": "Score Report",
+      "heroLayout": "type-led",
+      "mood": [
+        "rigorous",
+        "credible",
+        "focused"
+      ],
+      "bestFor": "Premium SAT and ACT prep and admissions coaching sold to families comparing serious options",
+      "pairsWithTier": "premium",
+      "headlineSample": "SAT and ACT prep in {City}, one student at a time",
+      "whyItFits": "Vermilion Press reads like a journal, and the editorial serif signals academic seriousness. A type-led hero lets the method lead, not stock photos."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your tutoring listing on Google has a phone number but no website, so a parent searching a math tutor in {City} at report card time can't see subjects, grades or how to start.",
+      "hook": "Open their Maps listing and confirm there is no Website button. Screenshot it for when they reply.",
+      "linkLine": "Here's the tutoring page behind that button: {demo-link}"
+    },
+    {
+      "angle": "Facebook-only link",
+      "line": "The website link for the tutoring center opens Facebook, where the SAT prep schedule is a post from last spring. Parents need this season's test prep dates.",
+      "hook": "Tap the link and find the most recent test prep or class schedule post. Note its date.",
+      "linkLine": "Tutoring subjects and test prep dates, on one page: {demo-link}"
+    },
+    {
+      "angle": "Dead free host",
+      "line": "The tutoring site on your listing lists SAT dates that have already passed. A parent planning test prep stops trusting the page right there.",
+      "hook": "Open the site and find one stale detail: past test dates, old rates, a dead form. Note it.",
+      "linkLine": "Same tutoring, with this year's test dates: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "I opened your tutoring site on my phone and the subject list collapsed into a wall of text. Parents look for a reading tutor on their phone after a teacher conference.",
+      "hook": "Only if they have a site. Load it on your phone and note what breaks. Screenshot it for when they reply.",
+      "linkLine": "The same tutoring center, rebuilt for a phone: {demo-link}"
+    },
+    {
+      "angle": "No assessment booking",
+      "line": "To start tutoring, a parent has to call and explain everything on the phone. An assessment booking with a few questions about grade and subject would do that for them.",
+      "hook": "Look for any assessment, consult or intake form. If it's call-only, the angle holds.",
+      "linkLine": "A tutoring assessment booking that works at night: {demo-link}"
+    },
+    {
+      "angle": "Score gains, nowhere to live",
+      "line": "Your posts celebrating students' SAT score jumps and college acceptances are buried under quotes and memes. A results page would keep selling the test prep.",
+      "hook": "Find a recent score improvement or acceptance post. Note what it says, never invent a number.",
+      "linkLine": "Your test prep results, where parents decide: {demo-link}"
+    },
+    {
+      "angle": "Parent reviews about confidence",
+      "line": "Your reviews have parents saying their child stopped dreading math after tutoring with you. That belongs right beside the assessment button.",
+      "hook": "Read their reviews and copy one phrase about confidence, grades or a test. Quote it if they reply.",
+      "linkLine": "Tutoring parent reviews beside the assessment booking: {demo-link}"
+    },
+    {
+      "angle": "Report card season",
+      "line": "First-quarter report cards go home soon, and that's the week parents start searching for a math or reading tutor. Centers with online booking get those calls first.",
+      "hook": "Use this in October, January and right after spring report cards, or before test dates. Name the moment.",
+      "linkLine": "A report card season tutoring page: {demo-link}"
+    },
+    {
+      "angle": "Homework-time searches",
+      "line": "Parents search for a tutor at nine at night after a homework fight. Right now the tutoring center can only take their name when someone answers in the morning.",
+      "hook": "Look for comments asking about openings, subjects or online tutoring. Note one.",
+      "linkLine": "A tutoring page that books the assessment at 9pm: {demo-link}"
+    },
+    {
+      "angle": "Hiring tutors",
+      "line": "Saw you're hiring math and SAT tutors. Strong tutors look at how the center presents itself before they apply.",
+      "hook": "Only if they posted for tutors. Note the subjects and hours.",
+      "linkLine": "A tutoring center page with a tutor careers section: {demo-link}"
+    },
+    {
+      "angle": "Schools served",
+      "line": "Your students seem to come from schools around {Neighborhood}. A page naming those schools and the courses you tutor makes parents there feel you know their child's class.",
+      "hook": "Check posts and reviews for named schools or courses. Note two or three.",
+      "linkLine": "A tutoring page aligned to local schools: {demo-link}"
+    },
+    {
+      "angle": "Package prices hidden",
+      "line": "I couldn't find an hourly rate or a test prep package price for the tutoring anywhere. Parents comparing tutors tend to start with the one that gives a number.",
+      "hook": "Check every page and post for rates or packages. If none, the angle holds.",
+      "linkLine": "Tutoring rates and test prep packages, priced plainly: {demo-link}"
+    },
+    {
+      "angle": "Tutor qualifications",
+      "line": "Your tutors' teaching certifications and subject degrees are why a parent should trust them with a struggling reader, and they're not shown anywhere.",
+      "hook": "Look for tutor bios, teaching licences or degrees in posts. Never invent a credential.",
+      "linkLine": "Your tutors and their qualifications, by subject: {demo-link}"
+    },
+    {
+      "angle": "Word of mouth from school parents",
+      "line": "It sounds like most tutoring families come from other parents at the same schools. Those parents still look you up before booking.",
+      "hook": "Look for reviews saying 'a friend recommended' or 'my neighbour's son'. Quote it.",
+      "linkLine": "Where a referred tutoring parent would land: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "Seeing {specific recent job} on your page, I'd lead the tutoring site with it. Parents of a struggling reader or a nervous junior want proof that kids like theirs improve.",
+      "hook": "Pick their newest student win: a score gain, an acceptance, a reading level jump. Name it exactly, with permission.",
+      "linkLine": "That student win, front and centre: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner} — that {specific recent job} you posted is a great result for a student.\n\nI looked for a site for {Business Name} and found the listing and your social pages, but no subjects by grade or a way to book an assessment. I put together a sample tutoring page with subjects, test dates and an assessment booking, with marked placeholders where your photos would go.\n\nWould you like me to send it over?",
+    "dm2": "{Owner} — following up in case my message got buried during sessions. Here's the sample site for {Business Name}: {demo-link}\n\nIt has a practice test calendar, a test date planner, support for learning differences, center, in-home and online options, and an assessment booking. If it's not for you, say so and I won't message again.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for tutoring centers and test prep tutors here in {City}. I sent you a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"Easy to miss during after-school sessions. Short version: I built a sample site for {Business Name} with subjects by grade, SAT dates and an assessment booking, with marked placeholders where your photos would go. Can I email you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range}, then {Care Range} a month for hosting and test date updates. For a center your size I'd normally quote about {Build Price}.\"\n\"Can I walk you through it for ten minutes before your afternoon sessions start?\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. We start the day it clears, and it's live before report cards go home.\"",
+    "objections": [
+      {
+        "objection": "All my students come from parent referrals.",
+        "handler": "\"That says the tutoring works. The referred parent still checks you that night, and a page with subjects and an assessment booking is where the recommendation lands.\""
+      },
+      {
+        "objection": "I'm on a tutor marketplace already.",
+        "handler": "\"Keep it if it sends work. The marketplace owns those families and takes a cut. Your own site books them directly, and repeat families never go back through the platform.\""
+      },
+      {
+        "objection": "Summer is dead for tutoring.",
+        "handler": "\"Summer is when to build. Parents search after first-quarter report cards and before the fall SAT, and the page should be ready by August.\""
+      },
+      {
+        "objection": "I'm a solo tutor, not a center.",
+        "handler": "\"That's fine. The site just shows one tutor's subjects, rates and availability. It makes a solo tutor look organised, which is what parents pay more for.\""
+      },
+      {
+        "objection": "We can't promise score improvements.",
+        "handler": "\"Right, and the site doesn't. It shows the method, practice test process and real reviews, never a promised score.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}, because it's subjects by grade, test dates and an assessment booking. One test prep package covers a good part of it.\""
+      }
+    ],
+    "email": {
+      "subject": "Tutoring site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for tutoring centers and test prep tutors around {City}. {Business Name} has happy families on its social pages, but no site where a parent can see subjects by grade and book an assessment.\n\nI built a sample first rather than ask for your time: a proctored practice test calendar, an SAT and ACT date planner, support for learning differences, center, in-home and online options, and an assessment booking, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and test date updates. If not, no problem, it comes down at the end of the month.\n\nWorth ten minutes on the phone before your afternoon sessions?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build websites for tutoring centers in {City}, and I put together a sample one for {Business Name} with an assessment booking and SAT dates. I'll email you the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner} — I'm taking the {Business Name} tutoring demo down on Friday to free up the space.\n\nWant me to leave it up? One word is fine either way.",
+    "nurture": "Hi {Owner} — report cards go home soon, and that's when parents search for a tutor. Thought of you.\n\nThe site is still here whenever you want it, with this year's test dates ready to add, and nothing's changed on price. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to one or two test prep packages, never to the hourly rate.",
+      "Price subjects as one grade-by-subject page, not a page per subject, unless a subject sells as its own package like SAT prep.",
+      "The test date planner needs updating every year. Put it in the monthly plan, not the build.",
+      "Only quote learning differences pages for tutors trained or experienced in that work. Never write claims they can't back.",
+      "Keep monthly add-ons under the price of a couple of tutoring hours.",
+      "Sell in July for fall and in December for spring test dates and second-semester report cards."
+    ],
+    "lineItems": [
+      {
+        "item": "Assessment booking with grade and subject intake",
+        "min": 300,
+        "max": 800,
+        "unit": "one-time",
+        "description": "Max with school, teacher concerns, IEP or accommodation plan note, preferred format and routing to the right tutor.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Practice test sign-up and score report delivery",
+        "min": 400,
+        "max": 900,
+        "unit": "one-time",
+        "description": "Max with seat limits per Saturday, reminders, a score report upload and a review session booking.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Test date and deadline planner",
+        "min": 250,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max when it covers SAT, ACT and AP dates with recommended prep start dates and package suggestions.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "School and course page (each school)",
+        "min": 150,
+        "max": 400,
+        "unit": "per-page",
+        "description": "Max when it lists that school's math sequence, AP courses and the tutors who know them.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Learning differences page",
+        "min": 250,
+        "max": 600,
+        "unit": "per-page",
+        "description": "Max with tutor training named, an approach for each difference and how IEP or accommodation plan goals are used.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "College essay coaching page",
+        "min": 250,
+        "max": 600,
+        "unit": "per-page",
+        "description": "Max with packages, a deadline calendar, a sample timeline and a clear ethics statement.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Spanish-language parent path",
+        "min": 300,
+        "max": 800,
+        "unit": "one-time",
+        "description": "Max when the assessment booking, subjects, rates and policies are all translated.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Tutor headshots and session-in-progress shots",
+      "min": 250,
+      "max": 700,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Headshots of each tutor and a few sessions at the table with consenting older students or staff, so parents see the people who'll teach their child.\"",
+      "when": "Month 2, on an afternoon with tutors on site. Minors only with written parental consent."
+    },
+    {
+      "name": "Tutoring center Google profile care",
+      "min": 150,
+      "max": 300,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Test dates, practice test Saturdays and subject openings posted to the tutoring center's Google profile weekly, so parents searching nearby see an active center.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Review asks after a report card or score release",
+      "min": 49,
+      "max": 129,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"The week report cards or SAT scores come out, families who saw progress get a short text asking for a tutoring review.\"",
+      "when": "Day 30 to set up, timed to the next report card. The easiest second sale."
+    },
+    {
+      "name": "Report card season ads",
+      "min": 400,
+      "max": 900,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Local ads for math and reading tutoring timed to report card weeks, pointed at the assessment booking and paused once tutor hours fill.\"",
+      "when": "Pitch in September and December. Ad spend is on top."
+    },
+    {
+      "name": "SAT and ACT season campaign",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A push for free practice test Saturdays to juniors' parents, eight to ten weeks before each major test date, with the package page ready.\"",
+      "when": "Before the fall and spring SAT and ACT dates."
+    },
+    {
+      "name": "School newsletter and PTA sponsorship artwork",
+      "min": 150,
+      "max": 400,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A small ad for the PTA newsletter and the school directory with a scan code for the tutoring assessment, aimed at the schools you already serve.\"",
+      "when": "August, before school directories print."
+    },
+    {
+      "name": "Monthly parent email for tutoring families",
+      "min": 150,
+      "max": 400,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"One short email a month with upcoming test dates, a reading tip and open tutoring slots, written and sent for the center.\"",
+      "when": "Month 3, once the family list is clean."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Independent college admissions counsellors",
+        "whoPays": "Each counsellor, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The admissions counsellor you swap test prep students with needs a site that explains packages and deadlines. Your referral is the way in.\"",
+        "whyItWorks": "Counsellors and test prep tutors refer to each other constantly, and many counsellors work from home with no real site."
+      },
+      {
+        "route": "Educational psychologists and learning evaluators",
+        "whoPays": "The practice, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The evaluator who diagnoses your dyslexic students needs a page parents can find and book from. The tutoring center can introduce me.\"",
+        "whyItWorks": "Evaluators send families to tutors after testing, and the referral runs both ways."
+      },
+      {
+        "route": "Private schools and microschools nearby",
+        "whoPays": "The school",
+        "min": 2500,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"The microschool where several of your tutoring students attend full time needs an admissions page. You can introduce me to the founder.\"",
+        "whyItWorks": "Small schools buy from people they trust, and they often already rely on outside tutors."
+      },
+      {
+        "route": "Homeschool co-ops",
+        "whoPays": "The co-op",
+        "min": 800,
+        "max": 2500,
+        "unit": "one-time",
+        "pitchLine": "\"The homeschool co-op your tutors teach for needs class sign-ups and a family directory. I'll build it.\"",
+        "whyItWorks": "Co-ops run on volunteers and buy when a trusted teacher recommends someone."
+      },
+      {
+        "route": "Music and art teachers sharing the same families",
+        "whoPays": "Each teacher, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The piano and art teachers your tutoring families also use need booking pages. I build them on the same layout.\"",
+        "whyItWorks": "After-school families buy several activities, and teachers recommend each other."
+      },
+      {
+        "route": "The office building or plaza landlord",
+        "whoPays": "The landlord",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The plaza where your tutoring center rents has suites sitting empty and a leasing sign that never changes. A leasing page with floor plans and parking fills them faster.\"",
+        "whyItWorks": "Landlords pay to fill units, and a stable education tenant is a credible introduction."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Deadline assistant for admissions counsellors",
+        "whoPays": "Each counsellor, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"Families ask about early decision deadlines and essay counts, and the counsellor's assistant answers from their own calendar and package notes.\"",
+        "whyItWorks": "Counsellors answer the same deadline questions every fall. Evenings saved are easy to value."
+      },
+      {
+        "route": "Evaluation intake helper for psychologists",
+        "whoPays": "The practice, monthly",
+        "min": 150,
+        "max": 350,
+        "unit": "monthly",
+        "pitchLine": "\"A parent describes school struggles and what the teacher noticed, and the practice gets a structured intake request, never a diagnosis.\"",
+        "whyItWorks": "Intake calls are long and repetitive. A structured request shortens them."
+      },
+      {
+        "route": "Admissions enquiry assistant for microschools",
+        "whoPays": "The school, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"Parents ask about the microschool's day, tuition and open houses, and get answers from the school's own pages with a visit booking.\"",
+        "whyItWorks": "Founders teach all day and reply at night. Each booked visit is measurable."
+      },
+      {
+        "route": "Class sign-up helper for homeschool co-ops",
+        "whoPays": "The co-op, per semester",
+        "min": 200,
+        "max": 600,
+        "unit": "one-time",
+        "pitchLine": "\"Homeschool families ask which co-op math or reading classes fit their child's level, and the helper suggests options from the co-op's catalogue.\"",
+        "whyItWorks": "Registration week overwhelms volunteer coordinators. One semester proves it."
+      },
+      {
+        "route": "Lesson booking assistant for music and art teachers",
+        "whoPays": "Each teacher, monthly",
+        "min": 39,
+        "max": 99,
+        "unit": "monthly",
+        "pitchLine": "\"Tutoring parents who want piano or art too ask about open slots, and that teacher's assistant answers and books mid-lesson.\"",
+        "whyItWorks": "Solo teachers miss messages while teaching. A small fee costs less than one lesson."
+      },
+      {
+        "route": "Suite enquiry assistant for the landlord",
+        "whoPays": "The landlord, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Tutors, therapists and small offices eyeing the plaza get suite sizes, rent and evening parking answered, and the landlord gets a showing request.\"",
+        "whyItWorks": "Empty suites cost money every month, and tours are easy to count."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Assessment follow-up and package offer",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"After a tutoring assessment, the parent gets the summary and a recommended package the same evening, while the worry is still fresh.\"",
+      "whenAndWhatItTakes": "Day 30. Needs package options and the assessment summary format."
+    },
+    {
+      "name": "Session scheduling with tutor matching",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2500,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Parents pick weekly tutoring times from tutors who teach that subject and grade, and recurring sessions book themselves.\"",
+      "whenAndWhatItTakes": "Month 2. Needs tutor subjects, grade levels and availability."
+    },
+    {
+      "name": "Practice test score tracker",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 29,
+      "monthlyMax": 99,
+      "pitchLine": "\"Each student's SAT and ACT practice scores by section over time, shared with parents, so test prep progress is visible between sessions.\"",
+      "whenAndWhatItTakes": "Month 2, after the first practice test Saturday. Needs score report format."
+    },
+    {
+      "name": "Tutoring enquiry responder",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"'Do you tutor AP Calculus' and 'when should my son start SAT prep' get answered from the center's own pages, with the assessment link.\"",
+      "whenAndWhatItTakes": "Month 2. Needs subjects, tutors, rates and test dates. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Session reminders and missed-session rule",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Families get a reminder before each tutoring session, and late cancels are handled under the center's stated rule.\"",
+      "whenAndWhatItTakes": "Month 2, or the first time they complain about no-shows. Needs the cancellation policy."
+    },
+    {
+      "name": "Package hours and billing tracker",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1800,
+      "monthlyMin": 29,
+      "monthlyMax": 99,
+      "pitchLine": "\"Hours used and remaining on each family's tutoring package, automatic renewal invoices and a parent view, without a spreadsheet.\"",
+      "whenAndWhatItTakes": "Month 3. Needs package types and billing account."
+    },
+    {
+      "name": "Session notes to parents",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"Tutors jot a few words after each session, and parents get a clear note on what was covered and what to practise this week.\"",
+      "whenAndWhatItTakes": "Month 3. Needs tutor approval of every note. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Tutor pay and hours report",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Each tutor's sessions and rates added up for payroll, with cancellations and no-shows handled by the center's rules.\"",
+      "whenAndWhatItTakes": "Month 4, for centers with several tutors. Needs pay rules and session history."
+    },
+    {
+      "name": "Tutoring review thank-you drafts",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 49,
+      "monthlyMax": 149,
+      "pitchLine": "\"A family's review about their child's math grade gets a thank-you from the center director drafted for approval, never naming the student.\"",
+      "whenAndWhatItTakes": "Month 2, with the review asks. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Test prep tip post writer",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Short SAT and reading tips drafted weekly in the tutoring center's voice, timed to upcoming test dates, ready to approve.\"",
+      "whenAndWhatItTakes": "Month 2. Needs past posts and the test calendar. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Online tutoring room",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2500,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"One link per student opens the online tutoring session with the shared whiteboard and the worksheets ready, so nobody hunts for links.\"",
+      "whenAndWhatItTakes": "Month 4, if they tutor online. Needs their video tool and worksheet library."
+    },
+    {
+      "name": "Package renewal before it runs out",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"When a family has a couple of tutoring hours left, they get a renewal note with progress so far and the next recommended package.\"",
+      "whenAndWhatItTakes": "Month 4, once the package tracker is live."
+    },
+    {
+      "name": "Practice question generator by skill",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"A tutor picks a math skill and a level, and gets a fresh set of practice questions with answers to check before handing them over.\"",
+      "whenAndWhatItTakes": "Month 5. Needs the center's skill list and tutor review of every set. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Weak-section finder from practice tests",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"From each practice test, the tutor sees which question types the student keeps missing and a suggested focus for the next sessions.\"",
+      "whenAndWhatItTakes": "Month 5, after several practice tests per student. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Homework help request queue",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Enrolled students submit a tricky homework problem before their tutoring session, so the tutor arrives ready.\"",
+      "whenAndWhatItTakes": "Month 5. Needs a simple upload rule and tutor buy-in."
+    },
+    {
+      "name": "Summer bridge programme registration",
+      "kind": "software",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 19,
+      "monthlyMax": 59,
+      "pitchLine": "\"Summer reading and math bridge sessions sell as weekly blocks by grade, so the slow season has a programme parents can book.\"",
+      "whenAndWhatItTakes": "Month 6, pitched in March. Needs the summer programme outline and prices."
+    },
+    {
+      "name": "Lapsed family welcome-back",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Families who stopped tutoring after a good semester get a note before the next report card with a returning-student offer.\"",
+      "whenAndWhatItTakes": "Month 6. Needs past family list and last session dates."
+    },
+    {
+      "name": "Tutor onboarding assistant",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"New tutors ask how the center runs an assessment or handles a student with an IEP, and get the center's own method.\"",
+      "whenAndWhatItTakes": "Month 6, before fall hiring. Needs the written method and director approval. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Parent progress portal",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2500,
+      "monthlyMin": 29,
+      "monthlyMax": 99,
+      "pitchLine": "\"One login where parents see tutoring session notes, practice scores and hours left, instead of asking at pickup.\"",
+      "whenAndWhatItTakes": "Month 6, once notes and scores are flowing."
+    },
+    {
+      "name": "Essay feedback first pass",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"A student's college essay draft gets a first-pass note on structure and clarity for the coach, who writes the real feedback. It never rewrites the essay.\"",
+      "whenAndWhatItTakes": "Month 9, before senior essay season. Needs the coach's rubric. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the assessment booking and score tracker for solo tutors",
+      "whoPays": "Independent tutors and small centers, monthly",
+      "min": 29,
+      "max": 129,
+      "unit": "monthly",
+      "pitchLine": "\"I built an assessment booking and practice score tracker for one tutoring center. Every solo SAT tutor keeps the same scores in a spreadsheet.\"",
+      "whyItWorks": "Tutors are many and small. A subscription with the hard parts done turns them into volume."
+    },
+    {
+      "route": "Tutoring association member toolkit",
+      "whoPays": "The national or state tutoring association",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer every member tutor a site template with assessment booking and a test date planner, as a membership benefit.\"",
+      "whyItWorks": "Associations need concrete benefits to keep members. One deal reaches many tutors."
+    },
+    {
+      "route": "School district approved tutor directory",
+      "whoPays": "The district or its education foundation, annually",
+      "min": 3000,
+      "max": 10000,
+      "unit": "per-year",
+      "pitchLine": "\"Your teachers get asked for tutor names constantly. An approved local tutor directory with subjects and booking gives them an answer.\"",
+      "whyItWorks": "Districts want to help families without endorsing one business. A directory does that, and the tutoring client is the first listing."
+    },
+    {
+      "route": "Tutoring franchise groups",
+      "whoPays": "The franchise group, per location",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "pitchLine": "\"Each tutoring location needs local school pages, test dates and an assessment booking on one shared template. I roll it out within your brand rules.\"",
+      "whyItWorks": "Franchisors standardise. One approved template becomes every location."
+    },
+    {
+      "route": "Agency licence for the tutoring template",
+      "whoPays": "The agency, per site",
+      "min": 400,
+      "max": 1200,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency gets tutoring clients and rebuilds subject pages every time. License my template with the test date planner built in.\"",
+      "whyItWorks": "Agencies sell the client; you sell the education-specific structure."
+    },
+    {
+      "route": "Test prep book and course publishers' tutor locator",
+      "whoPays": "The publisher",
+      "min": 5000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Students using your SAT prep books want a local tutor who teaches your method. A locator of tutors who use your materials sells more books.\"",
+      "whyItWorks": "Publishers want their materials used in tutoring, and tutors want students. Both sides win."
+    },
+    {
+      "route": "Public library homework help programmes",
+      "whoPays": "The library system, annually",
+      "min": 1500,
+      "max": 5000,
+      "unit": "per-year",
+      "pitchLine": "\"Your branches run homework help and SAT practice nights with volunteer tutors. A sign-up and scheduling page for every branch fills them.\"",
+      "whyItWorks": "Libraries run tutoring programmes on volunteers and need sign-ups, and local tutors often volunteer."
+    },
+    {
+      "route": "Employer tutoring benefit for staff families",
+      "whoPays": "The employer's benefits team, annually",
+      "min": 2000,
+      "max": 8000,
+      "unit": "per-year",
+      "pitchLine": "\"Your staff want help with their kids' math and SAT prep. A booking page for subsidised sessions with local tutors makes the benefit real.\"",
+      "whyItWorks": "Family benefits are a recruiting tool, and the tutoring client is the first provider."
+    },
+    {
+      "route": "Music, coding and chess instructors",
+      "whoPays": "Each instructor, at your normal rate",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"Coding and chess instructors sell lessons to the same parents as tutoring, with the same booking and progress needs. I take the template to them.\"",
+      "whyItWorks": "The enrolment pattern carries over, and the tutoring site is proof parents already trust."
+    },
+    {
+      "route": "College admissions consulting firms",
+      "whoPays": "The consulting firm",
+      "min": 3000,
+      "max": 8000,
+      "unit": "one-time",
+      "pitchLine": "\"Your consultants manage deadlines and essays for dozens of families. A client portal with deadlines and test score tracking keeps them organised.\"",
+      "whyItWorks": "The score tracker and essay workflow are already built, and consultants refer test prep both ways."
+    },
+    {
+      "route": "Tutoring centers outside the district",
+      "whoPays": "New tutoring centers in other districts",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"With one math and SAT tutoring center in {City} running on it, I take the same school-aligned build to centers in districts that never compete.\"",
+      "whyItWorks": "Tutoring is local to school districts, so non-competing areas are easy to reuse."
+    },
+    {
+      "route": "Fix half-built tutoring scheduling setups",
+      "whoPays": "The stuck tutoring business",
+      "min": 500,
+      "max": 2000,
+      "unit": "one-time",
+      "pitchLine": "\"Your tutoring scheduler was set up halfway and parents still book by text. I can finish it, having done it for another center.\"",
+      "whyItWorks": "Stuck owners already decided to buy and want it done before the next report card."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Tutoring site build plus care plan, one contract",
+      "min": 1800,
+      "max": 3000,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The tutoring site and the care plan go on one contract, so next year's SAT dates are a message to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 14,
+      "offer": "Assessment follow-up and package offer",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "trigger": "Assessment bookings arrive and a family goes quiet after the assessment.",
+      "line": "\"That family that went quiet after the tutoring assessment would have heard from you that evening.\""
+    },
+    {
+      "rung": 3,
+      "day": 30,
+      "offer": "Review asks after a report card or score release",
+      "min": 49,
+      "max": 129,
+      "unit": "monthly",
+      "trigger": "Report cards or SAT scores come out for current students.",
+      "line": "\"Report card week is when tutoring parents are happiest. Let's ask them for reviews then.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Practice test score tracker",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "trigger": "They run their first proctored practice test Saturday.",
+      "line": "\"Every practice test score, by section, in one place parents can see. That sells the test prep package.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Package hours and billing tracker",
+      "min": 600,
+      "max": 1800,
+      "unit": "one-time",
+      "trigger": "They mention losing track of hours left on tutoring packages.",
+      "line": "\"No more counting tutoring hours by hand. Families see what's left and renewals invoice themselves.\""
+    },
+    {
+      "rung": 6,
+      "day": 120,
+      "offer": "Session notes to parents",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "trigger": "Parents keep asking at pickup what their child worked on.",
+      "line": "\"A short note after each tutoring session answers the pickup question before it's asked.\""
+    },
+    {
+      "rung": 7,
+      "day": 180,
+      "offer": "SAT and ACT season campaign",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "trigger": "Ten weeks before the next major test date with open test prep slots.",
+      "line": "\"The next SAT is ten weeks out. Let's fill the free practice test and the prep packages now.\""
+    },
+    {
+      "rung": 8,
+      "day": 270,
+      "offer": "Introduction to the admissions counsellor",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "trigger": "They mention a counsellor they swap students with.",
+      "line": "\"The counsellor you share test prep students with needs a site too. Would you introduce me?\""
+    }
+  ]
+}

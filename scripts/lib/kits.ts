@@ -65,7 +65,7 @@ function strings(v: unknown, path = "$", out: [string, string][] = []): [string,
 
 const depluralise = (w: string) =>
   w.length > 4 && /(ses|xes|ches|shes)$/.test(w) ? w.slice(0, -2) : w.length > 3 && /[^s]s$/.test(w) ? w.slice(0, -1) : w;
-const words = (t: string) => (t.toLowerCase().match(/[a-z][a-z'-]*/g) ?? []).map((w) => depluralise(w.replace(/'s$/, "")));
+const words = (t: string) => (t.toLowerCase().match(/[a-z][a-z'-]*/g) ?? []).map((w) => depluralise(w.replace(/'s$|'$/, "")));
 
 // Words that belong to every trade, so they never count as "this category's own noun".
 const GENERIC = new Set([
@@ -128,7 +128,7 @@ function badNumbers(text: string): string[] {
   return out;
 }
 
-const EVIDENCE = /%|\bstud(?:y|ies)\b|research shows|on average|\bstatistic(?:s|al|ally)?\b|\bproven\b|\bguarantee(?:d|s)?\b|double your|\b10x\b/gi;
+const EVIDENCE = /%|\bstudies\b|\ba study\b|\bstudy (?:shows|found|says)\b|research shows|on average|\bstatistic(?:s|al|ally)?\b|\bproven\b|\bguarantee(?:d|s)?\b|double your|\b10x\b/gi;
 const LINK = /https?:\/\/|www\.|\{demo-link\}|\b[a-z0-9-]+\.(?:com|net|org|io|co|us|app|site)\b/i;
 const MEDIA_WORDS = /\b(?:screenshots?|attached|attachments?|attach|images?)\b/i;
 const PHOTO_CLAIM = /your (?:own )?photos|photos from your instagram/i;

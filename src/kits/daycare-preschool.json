@@ -1,0 +1,874 @@
+{
+  "schemaVersion": 1,
+  "category": "Daycare & preschool",
+  "slug": "daycare-preschool",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Edu family batch. Licensed, highest lifetime value in the family. Child photos only with written parental consent. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Tour booking for the child care center",
+      "contains": "Bookable tour times, what parents see on a tour, how long it takes, whether children can come along, and the questions most families ask the director",
+      "why": "Parents want to walk through a daycare before they enrol. The center that books a tour the night a parent searches gets the visit first."
+    },
+    {
+      "section": "A day in each daycare classroom",
+      "contains": "The daily rhythm of the infant, toddler, twos, preschool and pre-K rooms: arrival, meals, outdoor play, nap, learning blocks and pickup",
+      "why": "Parents picture their own child's day. Seeing nap and meal times for the infant room settles more decisions than any curriculum word."
+    },
+    {
+      "section": "Curriculum and kindergarten readiness",
+      "contains": "The learning approach, play-based, Montessori or academic, early literacy and numbers, social skills, and how the preschool prepares children for kindergarten",
+      "why": "Preschool parents compare readiness for school. A plain explanation of the approach wins families who would otherwise default to the nearest center."
+    },
+    {
+      "section": "Meals, allergies and nap",
+      "contains": "Sample weekly menu, who cooks, nut-free and allergy plans, bottles and breast milk handling, nap mats and cribs, and safe sleep for infants",
+      "why": "Infant and allergy parents decide on food and sleep handling. A clear page answers the questions they are nervous to ask on a tour."
+    },
+    {
+      "section": "State licence and inspection record",
+      "contains": "The daycare's state child care licence number, licensed capacity, how parents can look up inspection reports, accreditation, and staff training requirements",
+      "why": "Careful parents look up the licence before they call. Showing it openly tells them the early learning center has nothing to hide."
+    },
+    {
+      "section": "Subsidy and tuition assistance",
+      "contains": "Whether the center accepts state child care subsidy, how to apply, employer dependent-care accounts, sibling and part-time options and registration fee timing",
+      "why": "Some families can only enrol with help paying. A page that explains subsidy plainly fills seats other centers lose to confusion."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C25",
+      "siteType": "local-conversion",
+      "name": "Book a Tour",
+      "heroLayout": "split-photo",
+      "mood": [
+        "warm",
+        "sunny",
+        "reassuring"
+      ],
+      "bestFor": "Single-site daycares and home child care programmes that need tour bookings and waitlist names",
+      "pairsWithTier": "starter",
+      "headlineSample": "Licensed daycare in {City}. Book a tour this week.",
+      "whyItFits": "Citrus Morning feels like a bright classroom, and the geometric display stays clear on a tired parent's phone. The tour button leads every section."
+    },
+    {
+      "id": "b",
+      "themeId": "C26",
+      "siteType": "enrolment",
+      "name": "Little Classrooms",
+      "heroLayout": "card-stack",
+      "mood": [
+        "gentle",
+        "safe",
+        "cheerful"
+      ],
+      "bestFor": "Early learning centers with infant to pre-K rooms, a waitlist and subsidy families",
+      "pairsWithTier": "standard",
+      "headlineSample": "Infant care, preschool and pre-K in {City}",
+      "whyItFits": "The family combo, built for kids and education. Sky Kite's soft rounded type feels safe, and the card stack shows each classroom by age."
+    },
+    {
+      "id": "c",
+      "themeId": "C32",
+      "siteType": "editorial-trust",
+      "name": "Learning Garden",
+      "heroLayout": "type-led",
+      "mood": [
+        "thoughtful",
+        "natural",
+        "grounded"
+      ],
+      "bestFor": "Montessori and play-based preschools whose philosophy is the reason families choose them",
+      "pairsWithTier": "premium",
+      "headlineSample": "A Montessori preschool in {City}, rooted in play",
+      "whyItFits": "Olive Grove's bookish serif and earthy green read like a thoughtful school, and a type-led hero lets the philosophy speak before any photo of a child."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your daycare's Google listing has the hours and a phone number but no website, so a parent searching child care center in {City} can't see the classrooms, ages or how to book a tour.",
+      "hook": "Open their Maps listing and confirm there is no Website button. Screenshot it for when they reply.",
+      "linkLine": "Here's the daycare page behind that button: {demo-link}"
+    },
+    {
+      "angle": "Facebook-only link",
+      "line": "The website link for the preschool opens a Facebook page full of activity posts, but nowhere says which ages have openings. Parents need that before they call.",
+      "hook": "Tap the link and look for any openings, ages or tour info. Note what's missing.",
+      "linkLine": "Preschool classrooms and openings, on one page: {demo-link}"
+    },
+    {
+      "angle": "Dead free host",
+      "line": "The child care site on your listing still shows tuition from a past school year and a contact form that doesn't send. A parent touring daycares notices that.",
+      "hook": "Open the site and find one stale detail: an old year, old staff, a broken form. Note it.",
+      "linkLine": "Same child care center, current and ready for tours: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "I opened your daycare site on my phone and the classroom pages wouldn't fit the screen. Parents research child care on a phone during a feed at 2am.",
+      "hook": "Only if they have a site. Load it on your phone and note what breaks. Screenshot it for when they reply.",
+      "linkLine": "The same daycare, rebuilt for a phone: {demo-link}"
+    },
+    {
+      "angle": "No tour booking",
+      "line": "Booking a tour of the daycare means calling during the day, when the director is in a classroom. A tour booking would take those visits from parents at night.",
+      "hook": "Look for any tour or visit booking. If it's call-only, the angle holds.",
+      "linkLine": "A daycare tour booking that works at night: {demo-link}"
+    },
+    {
+      "angle": "Classroom life, nowhere to live",
+      "line": "Your posts of the preschool's art projects and garden time show a warm place, and they scroll away. A day-in-the-classroom page would keep showing new parents that.",
+      "hook": "Find a recent classroom activity post and note the room or project. Never use a child's photo without consent.",
+      "linkLine": "A day in each preschool classroom: {demo-link}"
+    },
+    {
+      "angle": "Parent reviews about teachers",
+      "line": "Your Google reviews have parents naming teachers who cared for their baby like their own. That kind of daycare review belongs beside the tour button.",
+      "hook": "Read their reviews and copy one phrase about a teacher or the infant room. Quote it if they reply.",
+      "linkLine": "Daycare parent reviews beside the tour booking: {demo-link}"
+    },
+    {
+      "angle": "Fall preschool enrolment",
+      "line": "Families start choosing a preschool for fall in the winter before. The centers with tour booking and a waitlist online fill their pre-K seats first.",
+      "hook": "Use this from November to March for fall, or when they post about openings. Name the season.",
+      "linkLine": "A fall preschool enrolment page, ready for tours: {demo-link}"
+    },
+    {
+      "angle": "Parents research at night",
+      "line": "Expecting parents research infant care late at night, months before they need it. Right now the daycare can only take their name during business hours.",
+      "hook": "Look for comments asking about infant openings or waitlists. Note one.",
+      "linkLine": "An infant waitlist page that works at 11pm: {demo-link}"
+    },
+    {
+      "angle": "Hiring teachers",
+      "line": "Saw you're hiring early childhood teachers for the center. Good teachers check how the daycare presents itself before they apply, the same way parents do.",
+      "hook": "Only if they posted for teachers or aides. Note the role and classroom.",
+      "linkLine": "A child care center page with a careers section: {demo-link}"
+    },
+    {
+      "angle": "Commuter location",
+      "line": "Your daycare sits on the commute from {Neighborhood} to downtown. Parents choose child care on the route to work, and they want drop-off times and parking spelled out.",
+      "hook": "Check their address against nearby roads, offices or transit. Note the commute they'd serve.",
+      "linkLine": "A daycare page with drop-off times and directions: {demo-link}"
+    },
+    {
+      "angle": "Subsidy not mentioned",
+      "line": "I couldn't find whether the daycare accepts state child care subsidy. Families who need help paying end up calling around until one center says yes.",
+      "hook": "Check the listing and posts for subsidy or assistance info. If absent, the angle holds.",
+      "linkLine": "A child care tuition and subsidy page, explained plainly: {demo-link}"
+    },
+    {
+      "angle": "Licence and inspection",
+      "line": "Your state child care licence is public, but nothing on your pages shows it. Careful parents look it up anyway, so the preschool might as well show it first.",
+      "hook": "Look up their licence on the state's public child care search. Note the licence status, never an inspection detail you can't confirm.",
+      "linkLine": "Your licence and staff training, shown openly: {demo-link}"
+    },
+    {
+      "angle": "Waitlist from word of mouth",
+      "line": "It sounds like the daycare fills from siblings and friends of current families. Those parents still look the center up before the tour.",
+      "hook": "Look for 'waitlist full' posts or reviews mentioning siblings. Quote it.",
+      "linkLine": "Where a referred daycare parent would land: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "That {specific recent job} you posted looked like a lovely day at the preschool. A moment like that, shared with parent consent, should open the center's site.",
+      "hook": "Pick their newest event: a graduation, family night, garden day. Name it exactly.",
+      "linkLine": "That preschool moment, front and centre: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner} — that {specific recent job} you posted looked like a lovely day at the center.\n\nI looked for a site for {Business Name} and found the listing and your social pages, but no way to book a tour or see which classrooms have openings. I put together a sample daycare page with each classroom, a tour booking and a waitlist, with marked placeholders where your photos would go.\n\nWould you like me to send it over?",
+    "dm2": "{Owner} — following up in case my message got lost in a busy week. Here's the sample site for {Business Name}: {demo-link}\n\nIt has a day in each classroom, meals and nap, your licence shown openly, a subsidy page, tour booking and the waitlist. If it's not for you, say so and I won't message again.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for daycares and preschools here in {City}. I sent you a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"Easy to miss when you're in a classroom all day. Short version: I built a sample site for {Business Name} with each classroom, tour booking and a waitlist, with marked placeholders where your photos would go. Can I email you the link to look at after pickup?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range}, then {Care Range} a month for hosting and openings updates. For a center your size I'd normally quote about {Build Price}.\"\n\"Can I walk you through it for ten minutes during nap time this week?\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. We start the day it clears, and nothing with a child's photo goes up without the consent you already hold.\"",
+    "objections": [
+      {
+        "objection": "We have a waitlist already.",
+        "handler": "\"Then the site runs the waitlist for you. Families join online with their due date or start date, and you offer seats in order without a binder by the phone.\""
+      },
+      {
+        "objection": "Our parent communication app has a page.",
+        "handler": "\"Keep it for daily reports. It serves enrolled families. The site is for parents who haven't found you yet, and it hands them to the same enrolment process.\""
+      },
+      {
+        "objection": "We can't show children's photos online.",
+        "handler": "\"Agreed, and the site doesn't need them. Rooms, toys, the garden and teachers carry it, and any child photo only goes up with written parental consent.\""
+      },
+      {
+        "objection": "Our corporate office handles marketing.",
+        "handler": "\"If you're independent, this is yours. If you're a franchise, I'll build only what your agreement allows, like a local tour booking and classroom pages.\""
+      },
+      {
+        "objection": "A parent built our website as a favour.",
+        "handler": "\"That's generous, keep them involved. I'll hand over the tour booking and subsidy pages. If they'd rather not update openings each month, the offer stands.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}, because it's every classroom, tour booking, the waitlist and the subsidy page. One enrolled child covers it within a couple of months.\""
+      }
+    ],
+    "email": {
+      "subject": "Daycare site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for daycares and preschools around {City}. {Business Name} shares a warm classroom life on its social pages, but there's no site where a parent can book a tour or join the waitlist.\n\nI built a sample first rather than ask for your time: a day in each classroom, meals, allergies and nap, your state licence shown openly, a subsidy page, tour booking and an online waitlist, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and openings updates. If not, no problem, it comes down at the end of the month.\n\nWorth ten minutes on the phone during nap time?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build websites for daycares in {City}, and I put together a sample one for {Business Name} with tour booking and a waitlist. I'll email you the link to look at after pickup. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner} — I'm taking the {Business Name} daycare demo down on Friday to free up the space.\n\nWant me to leave it up? One word is fine either way.",
+    "nurture": "Hi {Owner} — families start touring preschools for next fall over the winter. Thought of you.\n\nThe site is still here whenever you want it, with tour booking ready to switch on, and nothing's changed on price. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to a month or two of one child's tuition. Daycare owners understand that maths instantly.",
+      "Price classroom pages by room, infant through pre-K, because each has its own rhythm, ratio and openings.",
+      "Tour booking and the waitlist are the two lines that earn the money. Build them first and price them separately.",
+      "Never quote photo work that shows children unless the center confirms written consent exists. Price rooms and teachers instead.",
+      "Franchise centers can only buy what their agreement allows. Check before scoping and price only local pages.",
+      "Sell fall enrolment work in October and November, before winter tours begin."
+    ],
+    "lineItems": [
+      {
+        "item": "Tour booking with director calendar",
+        "min": 400,
+        "max": 900,
+        "unit": "one-time",
+        "description": "Max with tour types by age room, reminders, a pre-tour questionnaire and automatic follow-up after the visit.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Online waitlist by age room and start date",
+        "min": 500,
+        "max": 1200,
+        "unit": "one-time",
+        "description": "Max with due-date entries for infants, sibling priority, a waitlist fee and seat offers by text.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Classroom page (each age room)",
+        "min": 250,
+        "max": 600,
+        "unit": "per-page",
+        "description": "Max with daily rhythm, ratio, teacher bios, sample menu and openings status for that room.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Subsidy and tuition assistance page",
+        "min": 250,
+        "max": 600,
+        "unit": "per-page",
+        "description": "Max with step-by-step subsidy application help, dependent-care account notes and a Spanish version.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Licence and inspection transparency page",
+        "min": 200,
+        "max": 500,
+        "unit": "per-page",
+        "description": "Max with licence details, accreditation, staff training hours and a link to the state lookup explained.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Summer camp and school-age programme page",
+        "min": 300,
+        "max": 700,
+        "unit": "per-page",
+        "description": "Max with weekly themes, field trips, school bus pickup and a separate registration form.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Spanish-language family path",
+        "min": 400,
+        "max": 1000,
+        "unit": "one-time",
+        "description": "Max when tours, waitlist, classrooms, subsidy and policies are all translated.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Empty-classroom and teacher photo day",
+      "min": 400,
+      "max": 1000,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A morning shooting each daycare classroom set up and ready, plus teacher portraits, so the site shows the rooms without needing a single child in frame.\"",
+      "when": "Month 2, before children arrive or on a staff day. Children only with written parental consent."
+    },
+    {
+      "name": "Google profile upkeep for the child care center",
+      "min": 150,
+      "max": 300,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Openings by age room, tour days and center events posted to the daycare's Google profile weekly, so parents searching nearby see current openings.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Parent review requests at the six-month mark",
+      "min": 49,
+      "max": 129,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Six months after enrolment, once the drop-off tears are long gone, daycare parents get a gentle request for a review.\"",
+      "when": "Day 30 to set up. The easiest second sale."
+    },
+    {
+      "name": "Winter preschool tour campaign",
+      "min": 500,
+      "max": 1000,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Local ads for preschool and pre-K tours from January to March, pointed at the tour booking and paused once fall seats fill.\"",
+      "when": "Pitch in November. Ad spend is on top."
+    },
+    {
+      "name": "Infant room awareness for expecting parents",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A flyer and landing page for the infant room placed with prenatal classes and pediatric offices, so expecting parents join the daycare waitlist early.\"",
+      "when": "Whenever the infant room waitlist runs short."
+    },
+    {
+      "name": "Enrolment packet and handbook design",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"The parent handbook and enrolment packet redesigned to match the site, readable on a phone, with the policies parents always ask about up front.\"",
+      "when": "Before the next enrolment season."
+    },
+    {
+      "name": "Monthly family newsletter",
+      "min": 150,
+      "max": 400,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A monthly newsletter for preschool families with classroom themes, menu changes and dates, written and sent for the director.\"",
+      "when": "Month 3, once the family email list is clean."
+    },
+    {
+      "name": "Exterior sign and fence banner",
+      "min": 200,
+      "max": 600,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A fence banner for the child care center with 'Now enrolling' and a scan code to book a tour, for every commuter who drives past.\"",
+      "when": "Before winter tour season."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Pediatric practices near the center",
+        "whoPays": "The practice, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The pediatric office where daycare parents take their kids has a dated site. The center director can introduce me.\"",
+        "whyItWorks": "Pediatricians and child care centers share families and refer both ways. A director's introduction is trusted."
+      },
+      {
+        "route": "Children's photographers who do school picture day",
+        "whoPays": "The photographer, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The photographer who does picture day at the preschool needs an order page by center and classroom. I'll build it.\"",
+        "whyItWorks": "Picture-day photographers serve many centers and live on parent orders. The director picks them, so the introduction counts."
+      },
+      {
+        "route": "Speech, occupational therapy and early intervention providers",
+        "whoPays": "Each provider, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The speech therapist who sees children at your daycare needs a page parents can find. The center's referral opens the door.\"",
+        "whyItWorks": "Therapists visit centers and get referrals from directors. Their practices are small and often have no site."
+      },
+      {
+        "route": "Kids' enrichment visitors: music, soccer, yoga",
+        "whoPays": "Each enrichment provider, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The music and soccer teachers who visit your preschool weekly need booking pages for other centers. I'll build them.\"",
+        "whyItWorks": "Enrichment providers sell to centers, and a director's recommendation is how they win new ones."
+      },
+      {
+        "route": "The building landlord or church that hosts the preschool",
+        "whoPays": "The landlord or congregation",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The church hosting your preschool has no page for its own programmes and hall rental. The director can introduce me.\"",
+        "whyItWorks": "Hosts trust the preschool tenant, and their own sites are often older than the center's."
+      },
+      {
+        "route": "Kindergartens and private elementary schools families move on to",
+        "whoPays": "The school",
+        "min": 2500,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"The private elementary school your pre-K families apply to needs a clearer admissions page. Your recommendation is the way in.\"",
+        "whyItWorks": "Private schools recruit from preschools, and preschool directors are a respected source."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "After-hours appointment request helper for the pediatric practice",
+        "whoPays": "The practice, monthly",
+        "min": 150,
+        "max": 350,
+        "unit": "monthly",
+        "pitchLine": "\"Parents request a well-child visit or a daycare form signed after hours, and the practice gets a tidy request in the morning, never medical advice.\"",
+        "whyItWorks": "Daycare health forms flood pediatric offices each fall. Catching requests cleanly saves staff time."
+      },
+      {
+        "route": "Picture-day order assistant for photographers",
+        "whoPays": "The photographer, per season",
+        "min": 300,
+        "max": 900,
+        "unit": "one-time",
+        "pitchLine": "\"Parents ask which package includes a class photo and how to order for two kids, and the assistant answers from the photographer's price sheet.\"",
+        "whyItWorks": "Picture-day questions arrive in a burst. One season of fewer emails pays for it."
+      },
+      {
+        "route": "Intake screener for early intervention providers",
+        "whoPays": "Each provider, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"A parent describes a concern about speech or motor skills, and the provider gets an organised intake request, never a diagnosis.\"",
+        "whyItWorks": "Providers spend hours on intake calls. A tidy request shortens the first appointment."
+      },
+      {
+        "route": "Center booking assistant for enrichment providers",
+        "whoPays": "Each provider, monthly",
+        "min": 49,
+        "max": 129,
+        "unit": "monthly",
+        "pitchLine": "\"Center directors ask about a visiting music or soccer programme, and the assistant answers with times, prices and a booking.\"",
+        "whyItWorks": "Enrichment businesses sell to busy directors who reply at night."
+      },
+      {
+        "route": "Hall rental assistant for the host church",
+        "whoPays": "The congregation, monthly",
+        "min": 79,
+        "max": 199,
+        "unit": "monthly",
+        "pitchLine": "\"Families asking to rent the fellowship hall for a party get dates, rules and a hold request, without the church office answering every call.\"",
+        "whyItWorks": "Church offices run on volunteers. Rental revenue is easy to see."
+      },
+      {
+        "route": "Admissions question assistant for private elementary schools",
+        "whoPays": "The school, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Preschool parents ask about kindergarten admissions, tours and tuition aid, and get answers from the school's own admissions pages.\"",
+        "whyItWorks": "Admissions offices field the same questions all winter. Each booked tour is a measurable result."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Tour reminder and follow-up sequence",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Parents booked for a daycare tour get a reminder the day before, and a thank-you with enrolment steps the evening after their visit.\"",
+      "whenAndWhatItTakes": "Day 30. Needs tour slots, the enrolment steps and the director's calendar."
+    },
+    {
+      "name": "Waitlist manager with seat offers",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2500,
+      "monthlyMin": 49,
+      "monthlyMax": 149,
+      "pitchLine": "\"Every family on the daycare waitlist sorted by age room and start date, with seat offers sent in order and a deadline to accept.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the current waitlist, even if it's a binder, and the center's priority rules."
+    },
+    {
+      "name": "Online enrolment packet and e-signatures",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 29,
+      "monthlyMax": 99,
+      "pitchLine": "\"Enrolment forms, emergency contacts, allergy plans and handbook sign-off done online, so the first day of child care starts with complete paperwork.\"",
+      "whenAndWhatItTakes": "Month 2, before the next enrolment wave. Needs current forms and the state-required fields."
+    },
+    {
+      "name": "Daycare parent question responder",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 149,
+      "monthlyMax": 299,
+      "pitchLine": "\"'Do you have infant openings for March' and 'do you take subsidy' get answered from the center's own pages, with the tour booking link.\"",
+      "whenAndWhatItTakes": "Month 2. Needs openings, tuition, subsidy and policies, updated monthly. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Tuition autopay and late-pickup fees",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2500,
+      "monthlyMin": 49,
+      "monthlyMax": 149,
+      "pitchLine": "\"Weekly or monthly child care tuition charged automatically, late-pickup fees added from the sign-out time, and subsidy portions tracked separately.\"",
+      "whenAndWhatItTakes": "Month 3, if they still invoice by hand. Needs tuition rates, fee rules and subsidy family list."
+    },
+    {
+      "name": "Openings announcement to the waitlist",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"When a toddler moves up and a seat opens, families waiting for that preschool room get a text the same day.\"",
+      "whenAndWhatItTakes": "Month 3, once the waitlist manager is live."
+    },
+    {
+      "name": "Daycare front desk phone assistant",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 199,
+      "monthlyMax": 399,
+      "pitchLine": "\"When the director is in a classroom, the daycare phone still gets answered, openings questions handled and the tour booked.\"",
+      "whenAndWhatItTakes": "Month 3, once they trust you. Needs openings, tuition and the director's calendar. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Staff ratio and coverage planner",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 49,
+      "monthlyMax": 149,
+      "pitchLine": "\"Expected children per room by hour against the state ratio, so the director sees which teacher shifts keep every classroom in ratio.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the state ratios, staff schedule and attendance patterns."
+    },
+    {
+      "name": "Review reply drafts for the center",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 49,
+      "monthlyMax": 149,
+      "pitchLine": "\"Daycare reviews get a warm reply from the director drafted for approval, thanking teachers by first name and never naming a child.\"",
+      "whenAndWhatItTakes": "Month 2, with the review requests. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Classroom newsletter writer",
+      "kind": "ai",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1200,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Teachers jot this week's preschool theme and activities, and a family-friendly classroom note is drafted for the director to approve.\"",
+      "whenAndWhatItTakes": "Month 3. Needs teacher notes and the center's privacy rules. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Staff training and certification tracker",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Every teacher's CPR, first aid, background check and annual training hours with expiry reminders, ready for the licensing visit.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the state's training requirements and staff records."
+    },
+    {
+      "name": "Re-enrolment and move-up notices",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Families get a notice before their child moves up a room or the school year re-enrolment deadline, with the new tuition and teacher named.\"",
+      "whenAndWhatItTakes": "Month 5. Needs birthdays, room transition rules and the re-enrolment calendar."
+    },
+    {
+      "name": "Subsidy paperwork helper for families",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"Parents ask what documents the state child care subsidy needs, and the helper walks them through the center's own checklist in plain words.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the center's subsidy checklist and director approval. Never decides eligibility. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Licensing inspection prep assistant",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"Staff ask what the licensing visit checks in the infant room, and get answers from the center's own policy binder and checklists.\"",
+      "whenAndWhatItTakes": "Month 6. Needs the policy binder and the state checklist. Director approves the content. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Digital sign-in and sign-out",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 49,
+      "monthlyMax": 149,
+      "pitchLine": "\"Parents sign children in and out on a tablet with a PIN, authorised pickups are checked, and attendance feeds tuition and ratios.\"",
+      "whenAndWhatItTakes": "Month 5, if they still use a paper sheet. Needs authorised pickup lists and state attendance rules."
+    },
+    {
+      "name": "Allergy and medication log",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Each child's allergies and medication instructions visible to every teacher in the room, with doses logged and parents notified.\"",
+      "whenAndWhatItTakes": "Month 5. Needs current allergy plans and medication forms."
+    },
+    {
+      "name": "Tour no-show and lost-enquiry win-back",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Parents who booked a daycare tour and didn't come, or toured and went quiet, get a short note with current openings a few weeks later.\"",
+      "whenAndWhatItTakes": "Month 4, once tour booking has history."
+    },
+    {
+      "name": "Enrolment forecast by age room",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"The director sees which daycare rooms will have open seats in three and six months, from birthdays, move-ups and the waitlist.\"",
+      "whenAndWhatItTakes": "Month 6, after the waitlist manager has data. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Parent daily note drafts",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"Teachers tap meals, naps and a few words, and each parent gets a warm daily note about their child's day at preschool.\"",
+      "whenAndWhatItTakes": "Month 6. Needs teacher approval of every note and parent consent for any photo. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Family portal for documents and closures",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Handbook, menus, calendar and snow-day closures in one family login for enrolled child care families, separate from the public site.\"",
+      "whenAndWhatItTakes": "Month 6. Needs the handbook, calendar and closure policy."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the daycare waitlist and tour booking",
+      "whoPays": "Independent child care centers, monthly per center",
+      "min": 79,
+      "max": 249,
+      "unit": "monthly",
+      "pitchLine": "\"I built a waitlist by age room and a tour booking for one daycare. Every independent center keeps the same binder by the phone.\"",
+      "whyItWorks": "Directors meet at licensing trainings and association events, and a working waitlist is easy to demo."
+    },
+    {
+      "route": "State child care association member toolkit",
+      "whoPays": "The state child care or early learning association",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer every member center a tour-and-waitlist site template with the licence and subsidy pages built in, as a membership benefit.\"",
+      "whyItWorks": "Associations need renewals and practical benefits. One deal reaches many owners who trust the association."
+    },
+    {
+      "route": "Child care resource and referral agency provider pages",
+      "whoPays": "The regional referral agency, annually",
+      "min": 3000,
+      "max": 12000,
+      "unit": "per-year",
+      "pitchLine": "\"Parents call you for openings near them. A provider page template for every licensed daycare you list, with openings updated monthly, helps them find seats.\"",
+      "whyItWorks": "Referral agencies exist to connect families with care, and current openings data is their hardest problem."
+    },
+    {
+      "route": "Early learning franchise groups",
+      "whoPays": "The franchise group, per location",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "pitchLine": "\"Each center needs its own classrooms, tour booking and openings on a shared template. I build it within your brand rules and roll it out.\"",
+      "whyItWorks": "Franchisors standardise and scale. One approved template becomes every location."
+    },
+    {
+      "route": "Agency licence for the child care template",
+      "whoPays": "The agency, per site",
+      "min": 500,
+      "max": 1500,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency gets daycare clients and doesn't know subsidy or consent rules. License my template with those pages and the waitlist built in.\"",
+      "whyItWorks": "The compliance-shaped parts are what agencies get wrong. You sell them the finished version."
+    },
+    {
+      "route": "Employer-sponsored child care seat programmes",
+      "whoPays": "The employer's benefits team, annually",
+      "min": 2000,
+      "max": 8000,
+      "unit": "per-year",
+      "pitchLine": "\"Your employees struggle to find infant care. A page listing reserved seats at partner daycares near your offices makes the benefit real.\"",
+      "whyItWorks": "Employers reserving seats need a way for staff to claim them, and the center client is the first partner."
+    },
+    {
+      "route": "Church and synagogue preschool networks",
+      "whoPays": "The diocese, denomination office or network, annually",
+      "min": 2000,
+      "max": 6000,
+      "unit": "per-year",
+      "pitchLine": "\"Your network runs many congregational preschools with dated sites. One template with tours and waitlists for each one is a single project.\"",
+      "whyItWorks": "Faith-based preschool networks share administration and buy centrally."
+    },
+    {
+      "route": "Home child care provider networks",
+      "whoPays": "The family child care network or association",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"Licensed home daycares need a simple page with their licence, hours and openings. A network template gives every provider one.\"",
+      "whyItWorks": "Home providers are many and small. Selling through their network is the only efficient way in."
+    },
+    {
+      "route": "After-school and school-age programmes",
+      "whoPays": "Each programme, at your normal rate",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"After-school programmes take the same families when children leave pre-K. The daycare template fits them almost unchanged.\"",
+      "whyItWorks": "Same parents, same enrolment problem, and the daycare director knows the programme directors."
+    },
+    {
+      "route": "Head Start and public pre-K grantee sites",
+      "whoPays": "The grantee agency",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Families need to understand eligibility and apply for your free pre-K seats. A plain application and center finder site helps fill them.\"",
+      "whyItWorks": "Grantees must fill seats and reach eligible families, and the subsidy page is already built."
+    },
+    {
+      "route": "Centers in nearby counties",
+      "whoPays": "New child care centers in other counties",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"Once one licensed daycare in {City} runs its tours and waitlist online, I show directors in the next county a working example they can call.\"",
+      "whyItWorks": "Centers rarely compete across counties, and a director's reference is the strongest proof."
+    },
+    {
+      "route": "Fix an abandoned child care software rollout",
+      "whoPays": "The stuck center",
+      "min": 600,
+      "max": 2500,
+      "unit": "one-time",
+      "pitchLine": "\"Your center paid for child care software and never finished the enrolment forms or billing. I can finish it, having done it for another daycare.\"",
+      "whyItWorks": "Stuck directors are already paying and frustrated, so finishing it is an easy yes."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Daycare site build plus care plan, one contract",
+      "min": 2500,
+      "max": 4000,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The daycare site and the care plan go on one contract, so a new opening in the toddler room is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 14,
+      "offer": "Tour reminder and follow-up sequence",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "trigger": "Tour bookings start arriving and a family misses its tour.",
+      "line": "\"That missed daycare tour is what a reminder the day before prevents.\""
+    },
+    {
+      "rung": 3,
+      "day": 30,
+      "offer": "Waitlist manager with seat offers",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "trigger": "The online waitlist passes a few dozen families and the director is still offering seats by phone.",
+      "line": "\"The daycare waitlist is growing. Let seats go out in order by text instead of a morning of calls.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Parent review requests at the six-month mark",
+      "min": 49,
+      "max": 129,
+      "unit": "monthly",
+      "trigger": "The first families enrolled through the site reach their six-month point.",
+      "line": "\"Settled daycare parents write the best reviews. Let's ask them now.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Online enrolment packet and e-signatures",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "trigger": "They mention chasing missing emergency contacts or allergy forms before a start date.",
+      "line": "\"No more chasing missing forms. The enrolment packet is complete before the child's first day.\""
+    },
+    {
+      "rung": 6,
+      "day": 120,
+      "offer": "Winter preschool tour campaign",
+      "min": 500,
+      "max": 1000,
+      "unit": "monthly",
+      "trigger": "It's November and pre-K seats for next fall are still open.",
+      "line": "\"Families start touring for fall over the winter. Let's point ads at the tour booking now.\""
+    },
+    {
+      "rung": 7,
+      "day": 180,
+      "offer": "Staff ratio and coverage planner",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "trigger": "They mention scrambling to stay in ratio when a teacher calls in sick.",
+      "line": "\"See every classroom's ratio by hour before the day starts, not when a teacher calls in.\""
+    },
+    {
+      "rung": 8,
+      "day": 270,
+      "offer": "Introduction to the local child care association",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "trigger": "The director mentions other directors asking about the waitlist at an association meeting.",
+      "line": "\"Other directors noticed your waitlist. Would you introduce me at the association?\""
+    }
+  ]
+}

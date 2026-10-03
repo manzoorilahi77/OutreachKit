@@ -1,0 +1,865 @@
+{
+  "schemaVersion": 1,
+  "category": "Driving schools",
+  "slug": "driving-schools",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Edu family batch. State-licensed; enrolment and behind-the-wheel scheduling are the product. Requirements vary by state, so copy never states hours or ages. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Your state's teen licence steps",
+      "contains": "The permit, classroom drivers ed, behind the wheel hours, supervised practice log and road test in order, as the state requires them, with what the driving school covers at each step",
+      "why": "Parents of a teen don't know the order of the steps. The driving school that lays them out plainly is the one they trust with the whole path."
+    },
+    {
+      "section": "Behind-the-wheel pickup zones",
+      "contains": "Home, high school and workplace pickup areas for behind the wheel lessons, pickup windows by area, the dual-control cars used and what to bring to each drive",
+      "why": "Parents can't drive a teen across town for every lesson. Pickup from school or home can decide which driving school a family picks."
+    },
+    {
+      "section": "Road test day package",
+      "contains": "Use of the driving school's car for the road test, a warm-up lesson before the test, booking the test slot, what examiners check and what happens if a student fails",
+      "why": "Road test day is the most nervous moment of the process. Families pay extra for a familiar car and an instructor on site."
+    },
+    {
+      "section": "Defensive driving and ticket courses",
+      "contains": "Court-approved defensive driving and ticket dismissal courses, point reduction where the state allows, online or classroom formats, and the completion certificate",
+      "why": "Adults with a ticket search urgently and book whoever explains the court-approved course and certificate fastest."
+    },
+    {
+      "section": "Adult, senior and new-to-country drivers",
+      "contains": "Lessons for adults who never learned, seniors refreshing skills, drivers with a foreign licence, highway and parallel parking practice, and lessons in other languages",
+      "why": "Adult learners are anxious and specific. A page written for them fills weekday daytime slots teens can't use."
+    },
+    {
+      "section": "Insurance discount certificate",
+      "contains": "Which courses produce a certificate the family's insurer may accept for a teen or mature driver discount, how to get it, and how to send it to the insurer",
+      "why": "Parents weigh the course price against insurance savings. Explaining the certificate turns the price into an easy decision."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C6",
+      "siteType": "local-conversion",
+      "name": "Book a Drive",
+      "heroLayout": "split-photo",
+      "mood": [
+        "clear",
+        "dependable",
+        "direct"
+      ],
+      "bestFor": "Single-office driving schools that need drivers ed sign-ups and lesson bookings from parents",
+      "pairsWithTier": "starter",
+      "headlineSample": "Drivers ed and driving lessons in {City}. Enrol today.",
+      "whyItFits": "Cobalt Wire's clean blue and grotesque sans read like an official form done right, and the split hero keeps the enrol button beside a training car."
+    },
+    {
+      "id": "b",
+      "themeId": "C26",
+      "siteType": "enrolment",
+      "name": "Road to Licence",
+      "heroLayout": "card-stack",
+      "mood": [
+        "reassuring",
+        "organised",
+        "friendly"
+      ],
+      "bestFor": "Driving schools with teen drivers ed, behind the wheel packages, adult lessons and road test days",
+      "pairsWithTier": "standard",
+      "headlineSample": "Teen drivers ed and behind the wheel training in {City}",
+      "whyItFits": "The family combo. Sky Kite's calm light ground reassures nervous parents, and the card stack walks through the licence steps in order."
+    },
+    {
+      "id": "c",
+      "themeId": "C13",
+      "siteType": "premium-brand",
+      "name": "Road Ready",
+      "heroLayout": "full-bleed-photo",
+      "mood": [
+        "confident",
+        "professional",
+        "focused"
+      ],
+      "bestFor": "Established schools selling premium private lessons, road test packages and defensive driving",
+      "pairsWithTier": "premium",
+      "headlineSample": "Private driving lessons in {City}, from permit to road test",
+      "whyItFits": "Obsidian with amber accents recalls night roads and signal lights, and the geometric display gives the school a confident, professional feel."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your driving school's Google listing has the office hours but no website, so a parent searching drivers ed in {City} can't see the course dates or how behind the wheel lessons work.",
+      "hook": "Open their Maps listing and confirm there is no Website button. Screenshot it for when they reply.",
+      "linkLine": "Here's the driving school page behind that button: {demo-link}"
+    },
+    {
+      "angle": "Facebook-only link",
+      "line": "The website link for the driving school opens Facebook, where the next drivers ed class start date is a post buried under road safety reminders.",
+      "hook": "Tap the link and find the most recent class start post. Note its date.",
+      "linkLine": "Drivers ed class dates and enrolment, on one page: {demo-link}"
+    },
+    {
+      "angle": "Dead free host",
+      "line": "The driving school site on your listing shows drivers ed class dates that have passed. A parent ready to enrol a teen stops right there.",
+      "hook": "Open the site and find one stale detail: past class dates, old prices, a broken enrol form. Note it.",
+      "linkLine": "Same driving school, with this season's classes: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "I opened your driving school site on my phone and the course table spilled off the screen. Teens and parents look up drivers ed on their phones.",
+      "hook": "Only if they have a site. Load it on your phone and note what breaks. Screenshot it for when they reply.",
+      "linkLine": "The same driving school, rebuilt for a phone: {demo-link}"
+    },
+    {
+      "angle": "Phone-only enrolment",
+      "line": "Enrolling in drivers ed with you means calling during office hours, while your instructors are out in the cars. Online enrolment would take those sign-ups any time.",
+      "hook": "Look for an online enrol or payment option. If it's call or walk-in only, the angle holds.",
+      "linkLine": "Drivers ed enrolment that works at night: {demo-link}"
+    },
+    {
+      "angle": "New drivers, nowhere to live",
+      "line": "Your posts of students who just passed the road test are the best thing on the driving school's page, and they're gone in a week. A road test page would keep them working.",
+      "hook": "Find a recent 'passed my test' post and note it. Only use students who were happy to be posted.",
+      "linkLine": "Your newly licensed drivers, where parents decide: {demo-link}"
+    },
+    {
+      "angle": "Reviews about calm instructors",
+      "line": "Your reviews have parents saying an instructor calmed down a nervous teen driver. That review belongs right beside the behind the wheel booking.",
+      "hook": "Read their reviews and copy one phrase about patience, nerves or passing. Quote it if they reply.",
+      "linkLine": "Driving school reviews beside the booking: {demo-link}"
+    },
+    {
+      "angle": "Summer and school-break classes",
+      "line": "Summer and winter break drivers ed classes fill fast because teens are out of school. The driving schools with dates and online enrolment fill theirs first.",
+      "hook": "Use this from March to May for summer and October for winter break. Name the season.",
+      "linkLine": "A summer drivers ed page, ready to enrol: {demo-link}"
+    },
+    {
+      "angle": "Ticket deadline at night",
+      "line": "Someone with a traffic ticket searches for a defensive driving course the night they get it. Right now the driving school can't enrol them until morning.",
+      "hook": "Check whether they offer defensive driving or ticket courses. Note the format.",
+      "linkLine": "A defensive driving course page that enrols at 11pm: {demo-link}"
+    },
+    {
+      "angle": "Hiring driving instructors",
+      "line": "Saw you're hiring driving instructors. Good candidates check how the school looks online before they go through state instructor licensing with you.",
+      "hook": "Only if they posted for instructors. Note the role.",
+      "linkLine": "A driving school page with an instructor careers section: {demo-link}"
+    },
+    {
+      "angle": "Pickup area",
+      "line": "You pick students up for behind the wheel lessons, but nothing says whether that includes {Neighborhood} or the high schools nearby. Parents check that first.",
+      "hook": "Check posts or reviews for pickup mentions. Note the schools or areas named.",
+      "linkLine": "A driving lesson page with pickup zones: {demo-link}"
+    },
+    {
+      "angle": "Course prices hidden",
+      "line": "I couldn't find a drivers ed or lesson package price anywhere. Parents comparing driving schools tend to start with the one that shows a total.",
+      "hook": "Check every page and post for course or lesson prices. If none, the angle holds.",
+      "linkLine": "Drivers ed and lesson packages, priced plainly: {demo-link}"
+    },
+    {
+      "angle": "State licence and instructor credentials",
+      "line": "Your driving school's state licence and instructor certifications are why a careful parent would choose you, and they're not shown anywhere.",
+      "hook": "Look up the school on the state's licensed driving school list. Note only what's public. Never invent a credential.",
+      "linkLine": "Your licence and instructors, shown openly: {demo-link}"
+    },
+    {
+      "angle": "Siblings and classmates",
+      "line": "It sounds like many students come from older siblings and classmates who passed with you. Their parents still look the driving school up first.",
+      "hook": "Look for reviews mentioning siblings or friends. Quote it.",
+      "linkLine": "Where a referred driving school parent would land: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "Seeing {specific recent job} on your page, that's what I'd lead the driving school site with. A nervous parent wants to see teens like theirs pass.",
+      "hook": "Pick their newest pass, class graduation or award post and name it exactly.",
+      "linkLine": "That road test win, front and centre: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner} — that {specific recent job} you posted is a proud day for a new driver.\n\nI looked for a site for {Business Name} and found the listing and your social pages, but no class dates or a way to enrol online. I put together a sample driving school page with the licence steps, class dates and online enrolment, with marked placeholders where your photos would go.\n\nWould you like me to send it over?",
+    "dm2": "{Owner} — following up in case my message got lost while you were out on lessons. Here's the sample driving school site for {Business Name}: {demo-link}\n\nIt has the teen licence steps in order, pickup zones, a road test day package, defensive driving and online enrolment. If it's not for you, say so and I won't message again.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for driving schools here in {City}. I sent you a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"Easy to miss from the passenger seat. Short version: I built a sample site for {Business Name} with the licence steps, class dates and online enrolment, with marked placeholders where your photos would go. Can I email you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range}, then {Care Range} a month for hosting and class date updates. For a driving school your size I'd normally quote about {Build Price}.\"\n\"Can I walk you through it for ten minutes between lessons this week?\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. We start the day it clears, and it's live before the summer drivers ed rush.\"",
+    "objections": [
+      {
+        "objection": "We're always booked out anyway.",
+        "handler": "\"Then the site is for running the waitlist and enrolment without the phone, and for selling road test packages and defensive driving in the gaps.\""
+      },
+      {
+        "objection": "Our scheduling software handles bookings.",
+        "handler": "\"Keep it for instructor calendars. The site explains the licence steps and pickup zones, then sends families into the same scheduler to book.\""
+      },
+      {
+        "objection": "The state lists us, parents find us there.",
+        "handler": "\"The state list gives your name and number. Parents then search you, and a site with prices and dates is what turns that look-up into an enrolment.\""
+      },
+      {
+        "objection": "My son-in-law does our website.",
+        "handler": "\"Good, keep him involved. I'll hand over the licence steps and enrolment pages. If updating class dates every month gets old, the offer stands.\""
+      },
+      {
+        "objection": "Winter is slow, I'm not spending now.",
+        "handler": "\"Winter is when to build. Summer drivers ed enrolment starts in spring, and the page needs to be ranking before then.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}, because it's the licence steps, class dates and online enrolment. A handful of drivers ed students cover it.\""
+      }
+    ],
+    "email": {
+      "subject": "Driving school site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for driving schools around {City}. {Business Name} has proud new drivers on its social pages, but no site where a parent can see class dates and enrol a teen online.\n\nI built a sample first rather than ask for your time: the teen licence steps in order, behind the wheel pickup zones, a road test day package, defensive driving courses, the insurance discount certificate and online enrolment, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and class date updates. If not, no problem, it comes down at the end of the month.\n\nWorth ten minutes on the phone between lessons?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build websites for driving schools in {City}, and I put together a sample one for {Business Name} with online drivers ed enrolment. I'll email you the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner} — I'm taking the {Business Name} driving school demo down on Friday to free up the space.\n\nWant me to leave it up? One word is fine either way.",
+    "nurture": "Hi {Owner} — parents start booking summer drivers ed in the spring. Thought of you.\n\nThe site is still here whenever you want it, with class dates ready to fill in, and nothing's changed on price. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to a handful of drivers ed course fees, never to the cost of a training car.",
+      "Online enrolment with payment and permit details is the main line. Price it on its own.",
+      "Price pickup zone pages by area count, because each lists its own schools and pickup windows.",
+      "Requirements differ by state. Price the licence steps page as research plus copy, and never publish hours or ages you haven't checked.",
+      "Keep monthly add-ons under the price of one behind the wheel lesson.",
+      "Sell in February for summer classes and in September for winter break."
+    ],
+    "lineItems": [
+      {
+        "item": "Online drivers ed enrolment with payment",
+        "min": 400,
+        "max": 1000,
+        "unit": "one-time",
+        "description": "Max with permit number and date fields, parent consent, payment plans and class date selection.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "State licence steps page",
+        "min": 300,
+        "max": 700,
+        "unit": "per-page",
+        "description": "Max when it covers teen, adult and mature driver paths with each state requirement checked and linked.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Pickup zone page (each area)",
+        "min": 150,
+        "max": 400,
+        "unit": "per-page",
+        "description": "Max when each area lists high schools, pickup windows and the instructors who cover it.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Road test day package page",
+        "min": 250,
+        "max": 600,
+        "unit": "per-page",
+        "description": "Max with car use, warm-up lesson, test slot booking help and a retake policy.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Defensive driving and ticket course page",
+        "min": 300,
+        "max": 700,
+        "unit": "per-page",
+        "description": "Max with online and classroom formats, court acceptance notes by county and certificate delivery.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Adult and new-to-country driver page",
+        "min": 200,
+        "max": 500,
+        "unit": "per-page",
+        "description": "Max with lessons in other languages, foreign licence conversion steps and highway practice packages.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Spanish-language family path",
+        "min": 300,
+        "max": 800,
+        "unit": "one-time",
+        "description": "Max when enrolment, licence steps, pricing and policies are all translated.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Training car and instructor photo session",
+      "min": 250,
+      "max": 700,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"The driving school's dual-control cars, the classroom and each instructor photographed properly, so parents see who'll sit next to their teen.\"",
+      "when": "Month 2, on a clean-car day. Students only with written consent, parental for minors."
+    },
+    {
+      "name": "Google profile upkeep for the driving school",
+      "min": 150,
+      "max": 300,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Next drivers ed start dates, open lesson weeks and road test tips posted to the driving school's Google profile weekly, so local searches find current dates.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Review asks the day a student passes",
+      "min": 49,
+      "max": 129,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"The day a student passes the road test, the parent and the new driver get a text asking for a driving school review.\"",
+      "when": "Day 30. The easiest second sale."
+    },
+    {
+      "name": "Spring drivers ed ad campaign",
+      "min": 400,
+      "max": 900,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Local ads for summer drivers ed from March to May, pointed at online enrolment and aimed at parents of teens near permit age.\"",
+      "when": "Pitch in February. Ad spend is on top."
+    },
+    {
+      "name": "Training car decals",
+      "min": 300,
+      "max": 900,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Student driver decals with the driving school's name and a scan code to enrol, so every lesson on the road advertises the next one.\"",
+      "when": "Right after launch, per car in the fleet."
+    },
+    {
+      "name": "High school newsletter and career day materials",
+      "min": 150,
+      "max": 400,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A short ad for high school newsletters and a handout for health class or career day with the drivers ed enrolment code.\"",
+      "when": "August and January, before school publications go out."
+    },
+    {
+      "name": "Defensive driving search campaign",
+      "min": 250,
+      "max": 600,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Small, steady ads for the defensive driving and ticket course aimed at people searching right after a ticket, pointed at the enrolment page.\"",
+      "when": "Month 3, if they offer a court-approved course."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Independent insurance agents",
+        "whoPays": "Each agency, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The insurance agent who asks your families for the course certificate needs a site of their own. The driving school owner can introduce me.\"",
+        "whyItWorks": "Agents and driving schools refer teen families both ways, and small agencies often have dated sites."
+      },
+      {
+        "route": "Used car dealers selling first cars",
+        "whoPays": "The dealer",
+        "min": 2000,
+        "max": 5000,
+        "unit": "one-time",
+        "pitchLine": "\"The used car lot where your new drivers buy their first car needs a first-car page for parents. I'd like an introduction.\"",
+        "whyItWorks": "Dealers want parents of new drivers, and driving schools see those families at the exact moment."
+      },
+      {
+        "route": "Auto repair shops servicing the training fleet",
+        "whoPays": "The shop, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The shop that keeps your training cars on the road needs online booking. A fleet customer's word gets me in.\"",
+        "whyItWorks": "Shops trust their fleet customers, and independent repair sites are often weak."
+      },
+      {
+        "route": "Traffic attorneys",
+        "whoPays": "The law office, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The traffic attorney who sends clients to your ticket course needs a clearer intake page. Your referral relationship is the introduction.\"",
+        "whyItWorks": "Traffic lawyers and defensive driving schools refer clients to each other already."
+      },
+      {
+        "route": "Motorcycle and CDL training schools",
+        "whoPays": "Each school, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The motorcycle safety course and truck driving school nearby need the same enrolment and class date pages. I'll build on the driving school layout.\"",
+        "whyItWorks": "Same regulator, same enrolment shape, and owners in driver training know each other."
+      },
+      {
+        "route": "Immigrant community centres and ESL programmes",
+        "whoPays": "The community organisation",
+        "min": 1200,
+        "max": 3500,
+        "unit": "one-time",
+        "pitchLine": "\"The community centre whose members take your adult driving lessons needs a programmes page in several languages. You can introduce me.\"",
+        "whyItWorks": "Community organisations trust partners who already serve their members well."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Quote request helper for insurance agents",
+        "whoPays": "The agency, monthly",
+        "min": 150,
+        "max": 350,
+        "unit": "monthly",
+        "pitchLine": "\"Parents adding a newly licensed teen ask what the agent needs, and the helper collects the details and the course certificate for a quote.\"",
+        "whyItWorks": "Adding a teen is a high-value policy change. A clean request speeds the quote."
+      },
+      {
+        "route": "First-car finder for used car dealers",
+        "whoPays": "The dealer, monthly",
+        "min": 199,
+        "max": 499,
+        "unit": "monthly",
+        "pitchLine": "\"Parents describe budget and safety must-haves for a teen's first car, and the dealer's assistant suggests cars from current stock and books a test drive.\"",
+        "whyItWorks": "Dealers sell on leads. A booked test drive with a parent is easy to value."
+      },
+      {
+        "route": "Service booking assistant for the repair shop",
+        "whoPays": "The shop, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"Drivers describe the noise or warning light and get booked into an open bay, with the shop's own rules for urgent jobs.\"",
+        "whyItWorks": "Shops miss calls with hands under a car. Each booked job has a ticket value."
+      },
+      {
+        "route": "Ticket intake assistant for traffic attorneys",
+        "whoPays": "The law office, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Someone with a ticket enters the violation, county and court date, and the office gets a structured intake, never legal advice.\"",
+        "whyItWorks": "Ticket clients shop fast. Capturing them the night of the ticket wins the case."
+      },
+      {
+        "route": "Course matcher for motorcycle and CDL schools",
+        "whoPays": "Each school, monthly",
+        "min": 79,
+        "max": 199,
+        "unit": "monthly",
+        "pitchLine": "\"Applicants say what licence class they need and their experience, and the school's assistant points them to the right course and start date.\"",
+        "whyItWorks": "Licence classes confuse applicants. Matching them right is the value."
+      },
+      {
+        "route": "Multilingual programme assistant for community centres",
+        "whoPays": "The organisation, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"Members ask about ESL classes, citizenship help or driving lessons in their own language and get answers from the centre's programme list.\"",
+        "whyItWorks": "Small staff answer the same questions in several languages. Relief is easy to see."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Lesson reminders with pickup details",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Students get a reminder the evening before each behind the wheel lesson with the pickup spot, the instructor's name and 'bring your permit'.\"",
+      "whenAndWhatItTakes": "Day 30. Needs the lesson calendar and pickup addresses."
+    },
+    {
+      "name": "Behind-the-wheel scheduler by instructor and zone",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 49,
+      "monthlyMax": 149,
+      "pitchLine": "\"Students book driving lessons only in slots where an instructor is already near their pickup zone, so the fleet isn't zigzagging across town.\"",
+      "whenAndWhatItTakes": "Month 2. Needs instructor schedules, pickup zones and car assignments."
+    },
+    {
+      "name": "Student hours and completion tracker",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 29,
+      "monthlyMax": 99,
+      "pitchLine": "\"Classroom and behind the wheel hours logged for each student against the state requirement, with the completion certificate ready when they finish.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the state's requirements and current student records."
+    },
+    {
+      "name": "Driving school enquiry answerer",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"'When can my daughter start drivers ed' and 'do you pick up from the high school' get answered from the driving school's own pages, with the enrol link.\"",
+      "whenAndWhatItTakes": "Month 2. Needs class dates, prices, zones and checked state rules. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Payment plans for drivers ed packages",
+      "kind": "software",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1200,
+      "monthlyMin": 19,
+      "monthlyMax": 59,
+      "pitchLine": "\"Families pay the drivers ed package in a few instalments online, and behind the wheel lessons unlock as payments clear.\"",
+      "whenAndWhatItTakes": "Month 3. Needs package prices and payment account."
+    },
+    {
+      "name": "Road test booking nudge",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"When a student nears the end of behind the wheel hours, the family gets a note to book the road test and the road test day package.\"",
+      "whenAndWhatItTakes": "Month 3, once the hours tracker is live."
+    },
+    {
+      "name": "Driving school phone answering",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 199,
+      "monthlyMax": 399,
+      "pitchLine": "\"With every instructor out in a car, the driving school phone still gets answered, the enrolment question handled and the lesson booked.\"",
+      "whenAndWhatItTakes": "Month 3, once they trust you. Needs dates, prices, zones and scheduler access. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Instructor licence and car inspection tracker",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Every instructor's state licence renewal and every training car's inspection and insurance date in one list, with reminders before they lapse.\"",
+      "whenAndWhatItTakes": "Month 4. Needs instructor and fleet records."
+    },
+    {
+      "name": "Driving school review reply drafts",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 49,
+      "monthlyMax": 149,
+      "pitchLine": "\"A parent's review about their teen passing first try gets a reply drafted for the owner to approve, thanking the instructor by first name.\"",
+      "whenAndWhatItTakes": "Month 2, with the review asks. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Lesson feedback notes to parents",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"The instructor taps a few skills after each drive, and the parent gets a short note on what went well and what to practise on supervised drives.\"",
+      "whenAndWhatItTakes": "Month 4. Instructor approves every note. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Online classroom portion portal",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 49,
+      "monthlyMax": 149,
+      "pitchLine": "\"Where the state allows it, the classroom part of drivers ed runs online with progress tracking, so the school isn't limited by classroom seats.\"",
+      "whenAndWhatItTakes": "Month 5, only if the state approves online classroom for the school. Needs approved curriculum."
+    },
+    {
+      "name": "Missed-lesson rebook prompt",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"A student who cancels a driving lesson gets the next open slots in their zone straight away, before the instructor's day has a hole in it.\"",
+      "whenAndWhatItTakes": "Month 4, once the scheduler is live."
+    },
+    {
+      "name": "Permit test practice quiz",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Teens practise the state permit test with questions drawn from the state driver handbook, explained in plain words, branded to the driving school.\"",
+      "whenAndWhatItTakes": "Month 5. Needs the current state handbook and owner review of questions. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Defensive driving certificate delivery",
+      "kind": "software",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1200,
+      "monthlyMin": 19,
+      "monthlyMax": 59,
+      "pitchLine": "\"Ticket course students get their completion certificate by email the moment they finish, ready to send to the court.\"",
+      "whenAndWhatItTakes": "Month 4, if they run a court-approved course. Needs the certificate format."
+    },
+    {
+      "name": "Route plan suggestions for instructors",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"From a student's skill notes, the instructor gets a suggested lesson route near the pickup zone: left turns, merges, parallel parking near the test centre.\"",
+      "whenAndWhatItTakes": "Month 6. Needs instructor input on local routes. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Fleet mileage and maintenance log",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 19,
+      "monthlyMax": 59,
+      "pitchLine": "\"Each training car's mileage, brake checks and oil changes logged per lesson, so a car never fails right before a busy week.\"",
+      "whenAndWhatItTakes": "Month 5. Needs fleet list and service intervals."
+    },
+    {
+      "name": "Unfinished-student win-back",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Students who stopped partway through behind the wheel hours get a note with their remaining hours and open slots, before their permit window gets tight.\"",
+      "whenAndWhatItTakes": "Month 6. Needs student hours history."
+    },
+    {
+      "name": "Road test readiness check",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"From the instructor's lesson notes, the owner sees which students look ready for the road test and which need one more drive.\"",
+      "whenAndWhatItTakes": "Month 6, once lesson notes are flowing. Instructor makes the call. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Multilingual lesson enquiry assistant",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"Adult learners ask about driving lessons in Spanish or another language and get answers and a booking from the school's own pages.\"",
+      "whenAndWhatItTakes": "Month 6, if they serve adult and new-to-country drivers. Needs translated content approved by the owner. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Parent supervised-drive log",
+      "kind": "software",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1200,
+      "monthlyMin": 19,
+      "monthlyMax": 59,
+      "pitchLine": "\"Parents log supervised practice drives on their phone, and the driving school sees whether the teen is on track for the state's practice requirement.\"",
+      "whenAndWhatItTakes": "Month 7. Needs the state's supervised practice rules."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the zone scheduler and hours tracker for driving schools",
+      "whoPays": "Independent driving schools, monthly per school",
+      "min": 79,
+      "max": 249,
+      "unit": "monthly",
+      "pitchLine": "\"I built a pickup-zone scheduler and a state hours tracker for one driving school. Every licensed school in the state follows the same rules and the same paper logs.\"",
+      "whyItWorks": "The state's licensed school list is a ready prospect list, and the rules are identical for every school in it."
+    },
+    {
+      "route": "State driving school association member toolkit",
+      "whoPays": "The state driving school or traffic safety association",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer every member school a site template with your state's licence steps already written and checked, as a membership benefit.\"",
+      "whyItWorks": "State rules make one template useful to every member, and associations need tangible benefits."
+    },
+    {
+      "route": "Insurance carrier teen driver programme pages",
+      "whoPays": "The regional insurance carrier or agency network",
+      "min": 5000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Your teen driver discount needs a list of approved local courses. A finder of licensed driving schools with enrolment links makes the discount usable.\"",
+      "whyItWorks": "Carriers promote safe-driver programmes and need local partners. The driving school client is the first listing."
+    },
+    {
+      "route": "Multi-location driving school groups",
+      "whoPays": "The driving school group, per location",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "pitchLine": "\"Each branch needs its own pickup zones, class dates and instructors on one template, with enrolments routed to the right office. I've built the pattern.\"",
+      "whyItWorks": "One contract becomes every branch, and the state rules are shared across them."
+    },
+    {
+      "route": "Agency licence for the driving school template",
+      "whoPays": "The agency, per site",
+      "min": 400,
+      "max": 1200,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency gets driving school clients and doesn't know the permit-to-road-test steps. License my template with them built in.\"",
+      "whyItWorks": "The regulated structure is the hard part, and you've already done it."
+    },
+    {
+      "route": "High school drivers ed partnerships",
+      "whoPays": "The school district, annually",
+      "min": 2000,
+      "max": 6000,
+      "unit": "per-year",
+      "pitchLine": "\"Your district contracts drivers ed to outside schools. A registration page per high school with class dates and pickup fills the sessions.\"",
+      "whyItWorks": "Districts that outsource drivers ed need sign-ups, and the client is already the contracted school."
+    },
+    {
+      "route": "Court and county defensive driving referral lists",
+      "whoPays": "The county court administration or traffic safety office, annually",
+      "min": 1500,
+      "max": 5000,
+      "unit": "per-year",
+      "pitchLine": "\"People leave court asking where to take the approved course. A page listing approved local providers with enrolment links answers it.\"",
+      "whyItWorks": "Courts want approved courses completed on time, and the client is an approved provider."
+    },
+    {
+      "route": "Fleet safety training for local employers",
+      "whoPays": "The employer's safety or HR team",
+      "min": 2000,
+      "max": 8000,
+      "unit": "one-time",
+      "pitchLine": "\"Your delivery drivers need defensive driving refreshers. A booking portal for your staff with a local driving school makes it routine.\"",
+      "whyItWorks": "Employers with vehicle fleets pay for safety training, and the driving school supplies the instructors."
+    },
+    {
+      "route": "Senior centres' mature driver refresher courses",
+      "whoPays": "The senior centre or community, annually",
+      "min": 1000,
+      "max": 3000,
+      "unit": "per-year",
+      "pitchLine": "\"Your members want a mature driver refresher before their licence renewal. A sign-up page for courses run by a local driving school makes it easy.\"",
+      "whyItWorks": "Senior centres market classes to members and families, and refreshers can carry an insurance benefit."
+    },
+    {
+      "route": "Motorcycle, boating and CDL training schools",
+      "whoPays": "Each school, at your normal rate",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"Motorcycle, boating safety and CDL schools run state-regulated enrolment the same way. The driving school template fits them.\"",
+      "whyItWorks": "The regulated enrolment pattern carries over, and the proof is a working driving school site."
+    },
+    {
+      "route": "Driving schools in other counties",
+      "whoPays": "New driving schools elsewhere in the state",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"Same state, same rules: once one drivers ed school in {City} runs on it, schools in other counties get a template with the state steps already checked.\"",
+      "whyItWorks": "State-specific content is reusable statewide, and schools rarely compete across counties."
+    },
+    {
+      "route": "Fix half-built driving school booking setups",
+      "whoPays": "The stuck driving school",
+      "min": 500,
+      "max": 2000,
+      "unit": "one-time",
+      "pitchLine": "\"Your lesson booking software was set up halfway and instructors still schedule by text. I can finish it, having done it for another driving school.\"",
+      "whyItWorks": "Stuck owners already pay for the software and want it working before summer."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Driving school site build plus care plan, one contract",
+      "min": 1800,
+      "max": 3000,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The driving school site and the care plan go on one contract, so next month's class dates are a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 14,
+      "offer": "Lesson reminders with pickup details",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "trigger": "An instructor waits at a pickup spot for a student who forgot the lesson.",
+      "line": "\"That no-show at pickup is what a reminder with the spot and the permit note prevents.\""
+    },
+    {
+      "rung": 3,
+      "day": 30,
+      "offer": "Review asks the day a student passes",
+      "min": 49,
+      "max": 129,
+      "unit": "monthly",
+      "trigger": "The first students enrolled through the site pass their road test.",
+      "line": "\"Road test day is the happiest day for a driving school family. Let's ask for the review then.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Student hours and completion tracker",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "trigger": "They mention hand-counting behind the wheel hours for completion certificates.",
+      "line": "\"No more counting drive hours on paper. The tracker shows every student against the state requirement.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Behind-the-wheel scheduler by instructor and zone",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "trigger": "They complain instructors waste time driving between pickups across town.",
+      "line": "\"Book driving lessons by zone and the instructors stop zigzagging across town.\""
+    },
+    {
+      "rung": 6,
+      "day": 120,
+      "offer": "Spring drivers ed ad campaign",
+      "min": 400,
+      "max": 900,
+      "unit": "monthly",
+      "trigger": "It's February and summer drivers ed classes have open seats.",
+      "line": "\"Summer drivers ed fills in spring. Let's point ads at online enrolment now.\""
+    },
+    {
+      "rung": 7,
+      "day": 180,
+      "offer": "Permit test practice quiz",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "trigger": "Parents ask whether the school helps teens prepare for the permit test.",
+      "line": "\"A permit practice quiz branded to the driving school brings families in before drivers ed starts.\""
+    },
+    {
+      "rung": 8,
+      "day": 270,
+      "offer": "Introduction to an independent insurance agent",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "trigger": "They mention an agent who keeps asking families for the course certificate.",
+      "line": "\"The agent asking for your certificates needs a better site. Would you introduce me?\""
+    }
+  ]
+}

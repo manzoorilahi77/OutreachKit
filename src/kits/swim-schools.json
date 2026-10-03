@@ -1,0 +1,865 @@
+{
+  "schemaVersion": 1,
+  "category": "Swim schools",
+  "slug": "swim-schools",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Edu family batch. Waitlist and session-driven category: enrolment tools outrank design. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Swim skills checklist by level",
+      "contains": "Each swim level's skills, from blowing bubbles and back floats to freestyle with side breathing, how the instructor assesses them and when a swimmer moves up",
+      "why": "Parents of a swimmer stuck in one level for months want to know what's missing. A visible skills checklist keeps them enrolled instead of switching pools."
+    },
+    {
+      "section": "Session calendar and enrolment dates",
+      "contains": "Session start and end dates, when re-enrolment opens for current swimmers, when the public opens, holiday closures and the make-up window",
+      "why": "Swim lessons sell in sessions, and the good time slots go to whoever enrols first. Parents plan around the opening date, not the class list."
+    },
+    {
+      "section": "Pool and changing room guide",
+      "contains": "Water temperature, indoor or outdoor pool, depth, family changing rooms, swim diapers, the parent viewing area, parking and where to wait",
+      "why": "A parent with an infant and a toddler decides on warm water and a family changing room before anything else."
+    },
+    {
+      "section": "Infant and parent-and-me water classes",
+      "contains": "What a baby swim class covers by age in months, the parent's role in the water, infant self-rescue basics, nap-time scheduling and what to pack",
+      "why": "New parents start swimming earlier than any other activity and want to know exactly what happens in the water with their baby."
+    },
+    {
+      "section": "Adult and fearful swimmer lessons",
+      "contains": "Private lessons for adults who never learned, how instructors handle fear of deep water, triathlon stroke clinics and evening times",
+      "why": "Adults who can't swim are embarrassed to ask. A page that names the fear plainly turns into private lessons at the highest rate."
+    },
+    {
+      "section": "Pre-swim-team stroke clinics",
+      "contains": "Stroke technique clinics for freestyle, backstroke, breaststroke and butterfly, flip turns, tryout prep for the local swim team and summer league",
+      "why": "Families heading toward a swim team want a bridge from lessons to laps, and the pool that offers it keeps them for years longer."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C42",
+      "siteType": "local-conversion",
+      "name": "Lane Line",
+      "heroLayout": "split-photo",
+      "mood": [
+        "clear",
+        "fresh",
+        "quick"
+      ],
+      "bestFor": "Single-pool swim schools that need the next session's enrolment and a phone that gets answered",
+      "pairsWithTier": "starter",
+      "headlineSample": "Swim lessons in {City}. Next session enrolling now.",
+      "whyItFits": "Riso blue is pool water on a page, and the geometric display reads clearly from the parent viewing bench. The page leads with the session enrolment button."
+    },
+    {
+      "id": "b",
+      "themeId": "C26",
+      "siteType": "enrolment",
+      "name": "Water Babies",
+      "heroLayout": "card-stack",
+      "mood": [
+        "calm",
+        "safe",
+        "gentle"
+      ],
+      "bestFor": "Family swim schools with infant to pre-team levels, sessions and a waitlist",
+      "pairsWithTier": "standard",
+      "headlineSample": "Learn-to-swim lessons for {City} babies, kids and adults",
+      "whyItFits": "The family combo, and the best fit in the batch: Sky Kite's light sky ground feels like warm water, and the card stack lists swim levels in order."
+    },
+    {
+      "id": "c",
+      "themeId": "C8",
+      "siteType": "editorial-trust",
+      "name": "Safe Water",
+      "heroLayout": "type-led",
+      "mood": [
+        "trustworthy",
+        "steady",
+        "reassuring"
+      ],
+      "bestFor": "Established swim schools whose instructor training and safety record are the selling point",
+      "pairsWithTier": "premium",
+      "headlineSample": "Water safety and swim lessons {City} parents trust",
+      "whyItFits": "Evergreen and the old-style serif read like a safety handbook, and a type-led hero puts the swim school's training story ahead of any pool shot."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your swim school's Google listing has the pool hours but no website, so a parent searching swimming lessons for kids in {City} can't see levels, session dates or what the water is like.",
+      "hook": "Open their Maps listing and confirm there is no Website button. Screenshot it for when they reply.",
+      "linkLine": "Here's the swim school page behind that button: {demo-link}"
+    },
+    {
+      "angle": "Facebook-only link",
+      "line": "The website link for the swim school opens a Facebook page where session dates are buried under pool closure notices. Parents need the next swim session's start date first.",
+      "hook": "Tap the link and find the most recent session announcement. Note how far down it sits.",
+      "linkLine": "Swim session dates and levels, on one page: {demo-link}"
+    },
+    {
+      "angle": "Dead free host",
+      "line": "The swim school site on your listing lists a summer session from a past year as the next one. A parent trying to enrol in lessons gives up at that date.",
+      "hook": "Open the site and find one stale detail: an old session, old prices, a broken enrolment link. Note it.",
+      "linkLine": "Same swim school, with this season's sessions: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "I opened your swim school site on my phone and the lesson levels came up as a tiny table. Parents read swim levels on their phone in the pool viewing area.",
+      "hook": "Only if they have a site. Load it on your phone and note what breaks. Screenshot it for when they reply.",
+      "linkLine": "The same swim school, rebuilt for a phone: {demo-link}"
+    },
+    {
+      "angle": "Waitlist by phone",
+      "line": "It looks like the only way onto the swim lesson waitlist is to call. Parents who can't get through during lessons often put their name down at the next pool instead.",
+      "hook": "Look for 'call to join the waitlist' or 'message us for openings'. If there's no form, the angle holds.",
+      "linkLine": "A swim waitlist that fills itself at night: {demo-link}"
+    },
+    {
+      "angle": "Level-ups, nowhere to live",
+      "line": "Your posts of kids passing a swim level are the best thing on the page, and they scroll away. A skills checklist by level would show new parents where those swimmers started.",
+      "hook": "Find their latest 'passed level' or first-lap post and note the level named.",
+      "linkLine": "Every swim level and its skills, in order: {demo-link}"
+    },
+    {
+      "angle": "Parent reviews about safety",
+      "line": "Your Google reviews have parents describing a child who was scared of water and now jumps in. That review should sit beside the swim lesson enrolment button.",
+      "hook": "Read their reviews and copy one phrase about fear, safety or confidence in the water. Quote it if they reply.",
+      "linkLine": "Swim parent reviews beside the lessons they describe: {demo-link}"
+    },
+    {
+      "angle": "Before summer pool season",
+      "line": "Parents start looking for swim lessons in spring, before pools and lake trips open. The swim schools with session dates online fill their summer slots first.",
+      "hook": "Use this from February to April, or in August for fall sessions. Name the season.",
+      "linkLine": "A summer swim session page, ready to enrol: {demo-link}"
+    },
+    {
+      "angle": "Late-night enrolment",
+      "line": "Parents plan swim lessons at night, once the baby is asleep. Right now the swim school only takes enrolment when someone can pick up the phone.",
+      "hook": "Look for comments asking 'is there space in Saturday lessons' or 'how do I enrol'. Note one.",
+      "linkLine": "Swim lesson enrolment that works at 10pm: {demo-link}"
+    },
+    {
+      "angle": "Hiring swim instructors",
+      "line": "Saw you're hiring swim instructors for the season. Lifeguard-certified applicants check the swim school's site to see how it trains staff before they apply.",
+      "hook": "Only if they posted for instructors or lifeguards. Note the role and season.",
+      "linkLine": "A swim school page with an instructor careers section: {demo-link}"
+    },
+    {
+      "angle": "Pool location and parking",
+      "line": "Your swim lessons run at a pool that's tricky to find from {Neighborhood}, judging by the directions questions in the comments. A pool guide would end those questions.",
+      "hook": "Check for comments or reviews about finding the pool, parking or which door to use.",
+      "linkLine": "A swim school pool guide with parking and entrances: {demo-link}"
+    },
+    {
+      "angle": "No session price",
+      "line": "I couldn't find what a session of swimming lessons costs anywhere. A parent comparing swim schools picks the one with the price beside the session dates.",
+      "hook": "Check every page and post for session or monthly pricing. If none, the angle holds.",
+      "linkLine": "Swim lesson prices beside every session: {demo-link}"
+    },
+    {
+      "angle": "Instructor certifications",
+      "line": "Your swim instructors' lifeguard, CPR and teaching certifications are what a nervous parent needs to see, and they're not anywhere a new swim family would look.",
+      "hook": "Look for certification mentions in posts or bios. Never claim a certification you can't see.",
+      "linkLine": "Your swim instructors' training, next to their lessons: {demo-link}"
+    },
+    {
+      "angle": "Full from returning swimmers",
+      "line": "The swim school seems to fill from returning families every session. When a few age out to swim team, the families replacing them look you up first.",
+      "hook": "Look for 'sold out' or 'returning swimmers first' posts. Quote it.",
+      "linkLine": "Where a new swim school family would land: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "That {specific recent job} you posted is a big moment for a swimmer. The first lap or first jump like that should open the swim school's site.",
+      "hook": "Pick their newest milestone post: first lap, level pass, swim team tryout. Name it exactly.",
+      "linkLine": "That swim milestone, front and centre: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner} — that {specific recent job} you posted made me smile.\n\nI looked for a site for {Business Name} and found the listing and your social pages, but no session dates or a way to join the swim waitlist online. I put together a sample swim school page with levels, session dates and an online waitlist, with marked placeholders where your photos would go.\n\nWould you like me to send it over?",
+    "dm2": "{Owner} — following up in case my message got lost among parent questions. Here's the sample swim school site for {Business Name}: {demo-link}\n\nIt has a skills checklist for each swim level, a session calendar, a pool guide and an online waitlist. If it's not for you, say so and I won't message again.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for swim schools here in {City}. I sent you a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"Easy to miss from the pool deck. Short version: I built a sample site for {Business Name} with swim levels, session dates and an online waitlist, with marked placeholders where your photos would go. Can I email you the link to look at after lessons?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range}, then {Care Range} a month for hosting and session updates. For a swim school your size I'd normally quote about {Build Price}.\"\n\"Can I walk you through it for ten minutes between lesson blocks this week?\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. We start the day it clears, and the waitlist is live before the next session opens.\"",
+    "objections": [
+      {
+        "objection": "We already have a waitlist. We don't need more swimmers.",
+        "handler": "\"Then the site is for running the waitlist without the phone. Families join online, get offered a slot when one opens and stop calling to ask where they are.\""
+      },
+      {
+        "objection": "Our swim software handles enrolment.",
+        "handler": "\"Keep it for billing and rosters. The site explains levels, water temperature and session dates in plain words, then sends parents into the same system to enrol.\""
+      },
+      {
+        "objection": "Parents find us by word of mouth at the pool.",
+        "handler": "\"That's the best kind of swim school. The referred parent still looks you up that night, and right now they find a phone number. The site is where that recommendation lands.\""
+      },
+      {
+        "objection": "Winter is our slow season.",
+        "handler": "\"Winter is when to build. Parents plan summer swim lessons in February, and the session page needs to be up before they start searching.\""
+      },
+      {
+        "objection": "We rent pool time, we don't own a facility.",
+        "handler": "\"Lots of swim schools do. The site lists each pool you teach at with its own session dates and parking, so parents pick the closest one.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}, because it's levels, sessions, a pool guide and the waitlist. A couple of swimmers enrolled for the year cover it.\""
+      }
+    ],
+    "email": {
+      "subject": "Swim school site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for swim schools around {City}. {Business Name} has happy swimmers on its social pages, but no site where a parent can check session dates and join the waitlist.\n\nI built a sample first rather than ask for your time: a skills checklist for each swim level, a session calendar, a pool and changing room guide and an online waitlist, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and session updates. If not, no problem, it comes down at the end of the month.\n\nWorth ten minutes on the phone between lesson blocks?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build websites for swim schools in {City}, and I put together a sample one for {Business Name} with session dates and an online waitlist. I'll email you the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner} — I'm taking the {Business Name} swim school demo down on Friday to free up the space.\n\nWant me to leave it up? One word is fine either way.",
+    "nurture": "Hi {Owner} — parents start planning summer swim lessons soon, and the session calendar is what they look for first. Thought of you.\n\nThe site is still here whenever you want it, and nothing's changed on price. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to a couple of swimmers enrolled for a year of sessions, never to pool rental costs.",
+      "The waitlist and session enrolment flow is the product. Price it as its own line and build it first.",
+      "Price swim levels as one skills checklist page, not one page per level, unless each level has its own photos and video.",
+      "Swim schools teaching at several pools pay per pool page, because each has its own dates, parking and water notes.",
+      "Keep monthly add-ons under one swimmer's monthly fee. Pool rent eats the margin.",
+      "Sell summer enrolment work in January and fall work in July, before the session opens."
+    ],
+    "lineItems": [
+      {
+        "item": "Online swim waitlist with slot offers",
+        "min": 400,
+        "max": 1000,
+        "unit": "one-time",
+        "description": "Max when families pick level and preferred times, get offered an open slot by text and accept it online.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Skills checklist page for all swim levels",
+        "min": 300,
+        "max": 750,
+        "unit": "one-time",
+        "description": "Max with skills per level, short clips of each skill and a printable progress card.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Pool location page (each)",
+        "min": 200,
+        "max": 450,
+        "unit": "per-page",
+        "description": "Max when each pool has its own session dates, water temperature, changing rooms and parking map.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Session calendar with re-enrolment priority",
+        "min": 300,
+        "max": 700,
+        "unit": "one-time",
+        "description": "Max when current swimmers see a private re-enrolment window before the public date opens.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Infant and parent-and-me class page",
+        "min": 250,
+        "max": 600,
+        "unit": "per-page",
+        "description": "Max with age-in-months groupings, what to pack, swim diaper rules and nap-friendly times.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Pool birthday party booking",
+        "min": 300,
+        "max": 700,
+        "unit": "one-time",
+        "description": "Max with lifeguard count by guest number, deposit, waiver and party room add-on.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Spanish-language swim parent path",
+        "min": 300,
+        "max": 800,
+        "unit": "one-time",
+        "description": "Max when the levels, waitlist, pool guide and safety rules are all translated.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Poolside lesson photo morning",
+      "min": 300,
+      "max": 800,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"One Saturday morning of swim lessons photographed from the deck, only swimmers whose parents signed consent, gives the swim school a real gallery.\"",
+      "when": "Month 2, on a busy lesson morning. Consent forms go out the week before."
+    },
+    {
+      "name": "Swim school Google listing care",
+      "min": 150,
+      "max": 300,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Session openings, pool closures and level-up news posted to the swim school's Google listing weekly, so parents searching lessons nearby see current dates.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Review asks after a swimmer passes a level",
+      "min": 49,
+      "max": 129,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"When a child passes a swim level, the parent gets a text with the new level and a review link, while they're still cheering at the pool.\"",
+      "when": "Day 30. The easiest second sale."
+    },
+    {
+      "name": "Spring swim lesson ad push",
+      "min": 400,
+      "max": 900,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Local ads for kids' and infant swim lessons from February to May, pointed at the session page and paused when the summer slots fill.\"",
+      "when": "Pitch in January. Ad spend is on top."
+    },
+    {
+      "name": "Water safety flyer for preschools and pediatric offices",
+      "min": 150,
+      "max": 400,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A water safety tips sheet with the swim school's name and a scan code for the infant class, made for preschool cubbies and pediatric waiting rooms.\"",
+      "when": "Spring, once the infant class page is live."
+    },
+    {
+      "name": "Pool deck and lobby signage",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A viewing area sign with a scan code to join the waitlist or book a sibling's swim lessons, while the parent is sitting there watching.\"",
+      "when": "Right after launch."
+    },
+    {
+      "name": "Monthly swim school posts",
+      "min": 200,
+      "max": 450,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"I write and schedule the month of swim school posts around session openings, water safety tips and level-up shout-outs.\"",
+      "when": "Month 3, if posting slips every time a session starts."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "The facility that rents you pool time",
+        "whoPays": "The fitness club, hotel or school that owns the pool",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The club whose pool your swim lessons use has no page for lane rental or open swim times. You can introduce me to the manager.\"",
+        "whyItWorks": "Pool owners rent lanes to several groups and need bookings. A swim school that rents every week is a trusted voice."
+      },
+      {
+        "route": "The local swim team's booster club",
+        "whoPays": "The booster club",
+        "min": 1200,
+        "max": 3000,
+        "unit": "one-time",
+        "pitchLine": "\"The summer swim team your stroke clinic feeds needs tryout sign-ups, meet schedules and volunteer slots. I'll build it.\"",
+        "whyItWorks": "Booster clubs are volunteer-run and buy when a parent they trust names someone. The swim school sends them swimmers already."
+      },
+      {
+        "route": "Pool builders and pool service companies",
+        "whoPays": "Each pool company, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The pool builder who hands new owners your swim lesson card needs a better site himself. Your recommendation opens the door.\"",
+        "whyItWorks": "New backyard pool owners need swim lessons, and pool companies like being the ones to suggest it. The referral runs both ways."
+      },
+      {
+        "route": "Pediatric and family practices nearby",
+        "whoPays": "The practice, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The pediatric office that keeps your water safety flyer in the waiting room has a dated site too. I'd like an introduction.\"",
+        "whyItWorks": "Small practices buy from people their community partners trust, and the flyer relationship is already there."
+      },
+      {
+        "route": "Lifeguard and CPR training providers",
+        "whoPays": "The training provider, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The instructor who certifies your swim staff runs CPR and lifeguard classes with a phone-only sign-up. I'll build class registration for them.\"",
+        "whyItWorks": "Trainers fill classes from pools and swim schools. Your client is their customer and their best reference."
+      },
+      {
+        "route": "Swimwear and goggle retailers",
+        "whoPays": "The swim shop",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The swim shop that sells your team suits needs a page for team orders and fittings. Introduce me.\"",
+        "whyItWorks": "Swim shops rely on team and school orders, and the swim school owner is the one parents ask where to buy."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Lane booking assistant for the pool owner",
+        "whoPays": "The pool owner, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Swim clubs and triathletes ask about open lanes and rates, and the assistant answers from the pool's schedule and books the lane.\"",
+        "whyItWorks": "Empty lane hours are lost money. Every booked lane has a price the owner can see."
+      },
+      {
+        "route": "Meet day question bot for the booster club",
+        "whoPays": "The booster club, per season",
+        "min": 300,
+        "max": 900,
+        "unit": "one-time",
+        "pitchLine": "\"Swim team parents ask about warm-up times, heat sheets and volunteer jobs, and the bot answers from the meet packet.\"",
+        "whyItWorks": "Volunteer coaches answer the same meet questions every weekend. One season of quiet phones sells the renewal."
+      },
+      {
+        "route": "New pool owner onboarding assistant for pool builders",
+        "whoPays": "The pool builder, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"New pool owners ask about chemicals, covers and swim lessons for the kids, and the builder's assistant answers and refers them on.\"",
+        "whyItWorks": "Builders field the same questions after every handover. Including a swim lesson referral keeps your client fed too."
+      },
+      {
+        "route": "Appointment request helper for the pediatric practice",
+        "whoPays": "The practice, monthly",
+        "min": 150,
+        "max": 350,
+        "unit": "monthly",
+        "pitchLine": "\"Parents request a well-child visit or a sports physical after hours, and the practice gets a clean request in the morning.\"",
+        "whyItWorks": "It never gives medical advice; it only collects requests. Practices lose families to unanswered phones."
+      },
+      {
+        "route": "Class finder for the CPR and lifeguard trainer",
+        "whoPays": "The trainer, monthly",
+        "min": 49,
+        "max": 129,
+        "unit": "monthly",
+        "pitchLine": "\"People ask which CPR or lifeguard class they need for a job or a renewal, and the assistant matches them to the next class and books it.\"",
+        "whyItWorks": "The certification names confuse people. Matching them correctly is the whole value."
+      },
+      {
+        "route": "Suit size and team order assistant for the swim shop",
+        "whoPays": "The swim shop, monthly",
+        "min": 79,
+        "max": 199,
+        "unit": "monthly",
+        "pitchLine": "\"Swim parents enter age, height and team, and the assistant suggests the right suit size and adds it to the team order.\"",
+        "whyItWorks": "Fit is the shop's biggest return problem, and team orders come from parents the swim school already sends."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Open slot texts to the swim waitlist",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"A swimmer drops a Tuesday lesson, and the next family on the waitlist for that level gets a text to claim the slot.\"",
+      "whenAndWhatItTakes": "Day 30. Needs the waitlist, level rules and roster access."
+    },
+    {
+      "name": "Make-up lesson credit bank",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"A missed swim lesson becomes a credit the parent books into an open spot online, so the front desk stops juggling make-ups by phone.\"",
+      "whenAndWhatItTakes": "Month 2, the first time they complain about make-up requests. Needs the make-up policy and class capacity rules."
+    },
+    {
+      "name": "Swim level progress cards for parents",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2500,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Instructors tick swim skills on a tablet at the pool, and parents see exactly which skill stands between their child and the next level.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the skills list per level and instructor buy-in."
+    },
+    {
+      "name": "Swim parent message responder",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"'Which level for a three-year-old who's never swum' and 'is the water warm' get answered from the swim school's own guide, with the waitlist link.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the levels, pool guide and session dates, updated each session. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Session re-enrolment reminders",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Current swimmers get a reminder before re-enrolment closes, so they keep the same lesson time and the public doesn't take it.\"",
+      "whenAndWhatItTakes": "Month 2, before the next session. Needs session dates and the current roster."
+    },
+    {
+      "name": "Pool closure and weather alerts",
+      "kind": "software",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 19,
+      "monthlyMax": 59,
+      "pitchLine": "\"A thunderstorm or a pool chemistry closure goes out to every family in that lesson block in one tap, with the make-up credit attached to their account.\"",
+      "whenAndWhatItTakes": "Month 3, especially for outdoor pools. Needs rosters by time block."
+    },
+    {
+      "name": "Swim school phone answering",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 199,
+      "monthlyMax": 399,
+      "pitchLine": "\"While every instructor is in the water, the swim school phone still gets answered, the level question handled and the waitlist spot taken.\"",
+      "whenAndWhatItTakes": "Month 3, once they trust you. Needs levels, sessions, pricing and waitlist access. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Instructor certification expiry tracker",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Every swim instructor's lifeguard and CPR expiry date in one list, with a reminder a month before, so nobody teaches on a lapsed certificate.\"",
+      "whenAndWhatItTakes": "Month 3. Needs staff list and certificate dates."
+    },
+    {
+      "name": "Swim review thank-you drafts",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 49,
+      "monthlyMax": 149,
+      "pitchLine": "\"A parent writes about their child's first lap, and a thank-you naming the swim level is drafted for the owner to approve poolside.\"",
+      "whenAndWhatItTakes": "Month 2, with the review asks. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Water safety post writer",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Short water safety tips and level-up posts drafted in the swim school's voice each week, ready to approve before the season's busy months.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the owner's safety rules and a few past posts. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Private lesson booking with instructor choice",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Adults and nervous kids book a private swim lesson with a named instructor and a prepaid package, without a phone call.\"",
+      "whenAndWhatItTakes": "Month 3. Needs instructor availability and private lesson prices."
+    },
+    {
+      "name": "Stuck-at-a-level check-ins",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"A swimmer who has repeated a level twice triggers a note to the parent with the skill they're working on and an offer of a private catch-up.\"",
+      "whenAndWhatItTakes": "Month 4, once progress cards are in use. Needs level history."
+    },
+    {
+      "name": "Level placement helper for new swimmers",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 99,
+      "monthlyMax": 199,
+      "pitchLine": "\"Parents answer questions about whether their child puts their face in, floats or swims a width, and the helper suggests the swim level before enrolment.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the owner's placement rules and level skills. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Lesson plan help for new swim instructors",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"A new instructor asks how to teach a back float to a nervous four-year-old, and gets the swim school's own method, not a guess.\"",
+      "whenAndWhatItTakes": "Month 5, before summer hiring. Needs the written teaching method and owner approval of every answer. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Instructor shift and pool deck schedule",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 29,
+      "monthlyMax": 99,
+      "pitchLine": "\"Which instructor teaches which lane and level each half hour, with swaps requested in the app instead of a group chat.\"",
+      "whenAndWhatItTakes": "Month 4, when summer staff join. Needs staff list and lane plan."
+    },
+    {
+      "name": "Swim party booking and lifeguard count",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Parents book a pool party online, and the number of lifeguards is set from the guest count and ages automatically.\"",
+      "whenAndWhatItTakes": "Month 5, if they host parties. Needs party rules, prices and guard ratios they already use."
+    },
+    {
+      "name": "Lapsed swimmer win-back before summer",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Families who stopped swim lessons in the fall get a spring note with their child's last level and a session date to come back.\"",
+      "whenAndWhatItTakes": "Month 5. Needs past rosters and last-level records."
+    },
+    {
+      "name": "Session fill forecast",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"Before the next swim session is published, the owner sees which levels and times will overflow and which need fewer instructors.\"",
+      "whenAndWhatItTakes": "Month 8, after several sessions of data. Needs rosters, waitlist and re-enrolment history. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Swim progress video library",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2500,
+      "monthlyMin": 29,
+      "monthlyMax": 99,
+      "pitchLine": "\"Short clips of each swim skill by level, so parents know what a rollover breath or a streamline push-off looks like before the next lesson.\"",
+      "whenAndWhatItTakes": "Month 6. Needs instructor-demonstrated clips filmed with adult swimmers or consented students."
+    },
+    {
+      "name": "Waitlist matching by sibling and schedule",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"When slots open, the waitlist suggests offers that fit siblings into back-to-back swim lessons, so one trip to the pool covers both kids.\"",
+      "whenAndWhatItTakes": "Month 6, once the online waitlist has a full session of entries. Needs level and sibling data. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the waitlist and progress cards for independent swim schools",
+      "whoPays": "Swim schools, monthly per pool",
+      "min": 49,
+      "max": 149,
+      "unit": "monthly",
+      "pitchLine": "\"I built an online swim waitlist and level progress cards for one school. Every learn-to-swim programme fights the same phone-and-clipboard waitlist.\"",
+      "whyItWorks": "The first client paid for the workflow. Swim school owners meet at the same certification courses and conferences."
+    },
+    {
+      "route": "Swim instructor certification body locator",
+      "whoPays": "The certifying organisation",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Parents want a swim school that uses your teaching method. A locator tied to your certified instructor records sends them to member schools.\"",
+      "whyItWorks": "Certifying bodies sell courses on the promise that certification brings families. A locator makes that visible."
+    },
+    {
+      "route": "Parks and recreation summer swim lesson registration",
+      "whoPays": "The city recreation department, annually",
+      "min": 2000,
+      "max": 8000,
+      "unit": "per-year",
+      "pitchLine": "\"Your public pools sell out swim lessons in hours on a clunky form. A level-and-session registration built for swim lessons fixes summer.\"",
+      "whyItWorks": "Rec departments run the same session model every summer and face loud parent complaints when registration breaks."
+    },
+    {
+      "route": "Fitness club chains with pools",
+      "whoPays": "The club chain, per location",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "pitchLine": "\"Each of your club pools runs kids' swim lessons with its own waitlist. One swim lesson template rolled out to every location fills them.\"",
+      "whyItWorks": "Chains want swim lessons to drive family memberships. One contract becomes every club with a pool."
+    },
+    {
+      "route": "Swim school franchise groups",
+      "whoPays": "The franchise group, per location",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "pitchLine": "\"Every franchise pool needs session dates, levels and a waitlist on a shared template. I've already built the swim version.\"",
+      "whyItWorks": "Franchisors standardise everything and roll out what works at one location."
+    },
+    {
+      "route": "Agency licence for the swim school template",
+      "whoPays": "The agency, per site",
+      "min": 400,
+      "max": 1200,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency picks up aquatic and swim school clients. License my swim template with levels, sessions and the waitlist built in.\"",
+      "whyItWorks": "Agencies don't know how swim sessions and make-ups work. You sell them the part that took a client to learn."
+    },
+    {
+      "route": "HOA and apartment community pool lesson programmes",
+      "whoPays": "The community association or property manager, per season",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "pitchLine": "\"Your community pool sits empty on summer mornings. A swim lesson sign-up page run with a local swim school makes it an amenity residents use.\"",
+      "whyItWorks": "Associations want visible amenities, and the swim school client supplies the instructors."
+    },
+    {
+      "route": "Triathlon clubs and masters swim groups",
+      "whoPays": "Each club, at your normal rate",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"Masters swim and tri clubs book lane time and stroke clinics the same way a swim school does. I take the template to them.\"",
+      "whyItWorks": "Adult swim groups share pools and coaches with swim schools, and the proof is right there on the deck."
+    },
+    {
+      "route": "Pool equipment distributor dealer network",
+      "whoPays": "The distributor",
+      "min": 5000,
+      "max": 20000,
+      "unit": "one-time",
+      "pitchLine": "\"Your dealers sell new backyard pools. A find-swim-lessons-nearby page for every buyer makes the dealer the helpful one.\"",
+      "whyItWorks": "Distributors look for ways to help dealers close sales. Safety resources do that without discounting."
+    },
+    {
+      "route": "School district learn-to-swim partnerships",
+      "whoPays": "The district or its education foundation, annually",
+      "min": 2000,
+      "max": 6000,
+      "unit": "per-year",
+      "pitchLine": "\"Your second graders get swim lessons through local swim schools. A sign-up and permission slip page for every class makes it run.\"",
+      "whyItWorks": "Districts with swim programmes struggle with permission slips and bus times, and the swim school is already the partner."
+    },
+    {
+      "route": "Swim schools in a second metro",
+      "whoPays": "New swim schools in a new metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"With a waitlist running smoothly for one swim school in {City}, I take the same sessions-and-levels build to pools in the next region.\"",
+      "whyItWorks": "Non-competing geography lets you reuse the template and the finished swim school proof."
+    },
+    {
+      "route": "Fix half-built swim enrolment setups",
+      "whoPays": "The stuck swim school",
+      "min": 500,
+      "max": 2000,
+      "unit": "one-time",
+      "pitchLine": "\"Your swim enrolment system was set up halfway before summer and nobody finished the levels. I've done it for another pool.\"",
+      "whyItWorks": "Stuck owners already decided to buy and face a session deadline."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Swim school site build plus care plan, one contract",
+      "min": 2000,
+      "max": 3500,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The swim school site and the care plan go on one contract, so next session's dates are a message to me, not a late night for you.\""
+    },
+    {
+      "rung": 2,
+      "day": 21,
+      "offer": "Open slot texts to the swim waitlist",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "trigger": "The online waitlist has families on it and a swimmer drops a lesson time.",
+      "line": "\"That dropped Tuesday lesson can be filled tonight by the next family on the swim waitlist.\""
+    },
+    {
+      "rung": 3,
+      "day": 30,
+      "offer": "Review asks after a swimmer passes a level",
+      "min": 49,
+      "max": 129,
+      "unit": "monthly",
+      "trigger": "The first level assessments of the session happen.",
+      "line": "\"Parents cheering a level pass are your best reviewers. Let's ask them that day.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Make-up lesson credit bank",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "trigger": "They mention the front desk spending hours on make-up lesson requests.",
+      "line": "\"Make-up swim lessons can book themselves. Let's turn missed lessons into credits parents use online.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Swim level progress cards for parents",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "trigger": "Parents keep asking why their child hasn't moved up a swim level.",
+      "line": "\"A progress card shows the exact swim skill left, and the 'why hasn't she moved up' question goes away.\""
+    },
+    {
+      "rung": 6,
+      "day": 120,
+      "offer": "Spring swim lesson ad push",
+      "min": 400,
+      "max": 900,
+      "unit": "monthly",
+      "trigger": "Summer session dates are set and the infant and adult classes have open spots.",
+      "line": "\"The summer swim schedule has room in infant and adult lessons. Spring ads fill those first.\""
+    },
+    {
+      "rung": 7,
+      "day": 180,
+      "offer": "Swim school phone answering",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "trigger": "They say the pool phone rings unanswered during every lesson block.",
+      "line": "\"With everyone in the water, an assistant on the swim school phone takes the waitlist calls.\""
+    },
+    {
+      "rung": 8,
+      "day": 270,
+      "offer": "Introduction to the facility that rents the pool",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "trigger": "They mention the pool owner asking about the swim school's new site or waitlist.",
+      "line": "\"The pool owner noticed the waitlist. Would you introduce me so I can build their lane booking?\""
+    }
+  ]
+}

@@ -1,0 +1,865 @@
+{
+  "schemaVersion": 1,
+  "category": "Music lessons & studios",
+  "slug": "music-lessons-studios",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Edu family batch. Recurring weekly lessons, low web sophistication, parents book at night. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Which instrument to start on",
+      "contains": "Piano, guitar, violin, drums, voice and ukulele compared by starting age, hand size, practice noise, and whether to rent or buy the first instrument",
+      "why": "Parents of a six-year-old don't know whether to start piano or guitar. The music school that answers that question gets the first lesson."
+    },
+    {
+      "section": "Teachers by style and genre",
+      "contains": "Each music teacher's instruments and genres, classical, rock, jazz, worship or musical theatre, their teaching style, and which ages they teach best",
+      "why": "A teen who wants to play rock guitar won't stay with a classical teacher. Matching by genre is how studios keep students for years."
+    },
+    {
+      "section": "Student recitals and gig nights",
+      "contains": "Seasonal piano and guitar recitals, student band showcases at local venues, what each student plays, dress, and how families invite grandparents",
+      "why": "Performing is why kids keep practising. Parents choose a music school that gives their child a stage, not just a lesson room."
+    },
+    {
+      "section": "Audition and graded exam prep",
+      "contains": "Preparation for graded music exams, all-state and honour band auditions, college music school auditions, theory lessons and required repertoire",
+      "why": "Serious students and their parents look for a teacher with an audition track record and a plan. They pay more and book more weeks."
+    },
+    {
+      "section": "Rehearsal room and recording rental",
+      "contains": "Hourly rehearsal rooms with backline, the recording booth, engineer rates, demo packages for students and local bands, and booking rules",
+      "why": "Studios with rooms earn from them at night. Local bands book rehearsal and recording time online or go elsewhere."
+    },
+    {
+      "section": "Adult beginner music lessons",
+      "contains": "Lessons for adults returning to piano or picking up guitar for the first time, daytime and evening slots, and how a teacher paces adult learners",
+      "why": "Adults fill daytime lesson slots kids can't use, and they only book when the page says it's not too late to start."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C49",
+      "siteType": "local-conversion",
+      "name": "First Lesson",
+      "heroLayout": "split-photo",
+      "mood": [
+        "playful",
+        "friendly",
+        "quick"
+      ],
+      "bestFor": "Solo music teachers and small studios that need a first-lesson booking and a clear rate",
+      "pairsWithTier": "starter",
+      "headlineSample": "Guitar and piano lessons in {City}. Book a first lesson.",
+      "whyItFits": "Cobalt and butter with a typewriter slab feel like a gig poster, which suits a rock and pop teacher, and the split hero keeps the booking button visible."
+    },
+    {
+      "id": "b",
+      "themeId": "C26",
+      "siteType": "enrolment",
+      "name": "Weekly Lesson",
+      "heroLayout": "card-stack",
+      "mood": [
+        "warm",
+        "encouraging",
+        "organised"
+      ],
+      "bestFor": "Music schools with several teachers, instruments by age and recitals each season",
+      "pairsWithTier": "standard",
+      "headlineSample": "Music lessons for {City} kids and adults",
+      "whyItFits": "The family combo. Sky Kite's rounded type is friendly to young beginners, and the card stack sorts lessons by instrument and teacher."
+    },
+    {
+      "id": "c",
+      "themeId": "C41",
+      "siteType": "premium-brand",
+      "name": "Conservatory",
+      "heroLayout": "full-bleed-photo",
+      "mood": [
+        "elegant",
+        "serious",
+        "classical"
+      ],
+      "bestFor": "Classical piano and strings studios preparing students for auditions and competitions",
+      "pairsWithTier": "premium",
+      "headlineSample": "Classical piano and strings instruction in {City}",
+      "whyItFits": "Gallery White's Didone display reads like a concert programme, and the clean white ground lets a grand piano photo carry the page."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your music studio's Google listing has a phone number but no website, so a parent searching piano lessons in {City} can't see teachers, rates or open lesson times.",
+      "hook": "Open their Maps listing and confirm there is no Website button. Screenshot it for when they reply.",
+      "linkLine": "Here's the music lesson page behind that button: {demo-link}"
+    },
+    {
+      "angle": "Facebook-only link",
+      "line": "The website link for the music school goes to Facebook, where the latest post about open guitar lesson slots is weeks down the page.",
+      "hook": "Tap the link and find the most recent openings or lesson post. Note its date.",
+      "linkLine": "Music lesson openings by instrument, on one page: {demo-link}"
+    },
+    {
+      "angle": "Dead free host",
+      "line": "The music school site on your listing names a teacher who seems to have moved on and a recital date from a past year. Parents notice details like that.",
+      "hook": "Open the site and find one stale detail: an old teacher, a past recital, old rates. Note it.",
+      "linkLine": "Same music school, current and bookable: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "I opened your music lessons site on my phone and the teacher list overlapped the menu. Parents look for a piano teacher on their phone after dinner.",
+      "hook": "Only if they have a site. Load it on your phone and note what breaks. Screenshot it for when they reply.",
+      "linkLine": "The same music school, rebuilt for a phone: {demo-link}"
+    },
+    {
+      "angle": "No first lesson booking",
+      "line": "Starting music lessons with you means leaving a voicemail while you're teaching. A first-lesson booking with the instrument and age would take that parent tonight.",
+      "hook": "Look for any trial or first lesson booking. If it's call or email only, the angle holds.",
+      "linkLine": "A first music lesson booking that works at night: {demo-link}"
+    },
+    {
+      "angle": "Student performances, nowhere to live",
+      "line": "Your clips of students playing their first full song are the best thing on the music school's page, and they're gone in a week. A recitals page would keep them working.",
+      "hook": "Find a recent student performance or recital post and note the piece or instrument.",
+      "linkLine": "Your students' performances, kept where parents look: {demo-link}"
+    },
+    {
+      "angle": "Reviews about patient teachers",
+      "line": "Your reviews have parents saying their child finally practises piano without a fight. That review belongs right beside the first lesson button.",
+      "hook": "Read their reviews and copy one phrase about a teacher or practising. Quote it if they reply.",
+      "linkLine": "Music lesson reviews beside the booking: {demo-link}"
+    },
+    {
+      "angle": "September and holiday-gift starts",
+      "line": "September and right after the holidays, when a guitar or keyboard was a gift, are when families start music lessons. The studio with open times online books them first.",
+      "hook": "Use this in August and late December. Name the moment: back to school or the gift under the tree.",
+      "linkLine": "A new-instrument music lesson page: {demo-link}"
+    },
+    {
+      "angle": "After-dinner booking",
+      "line": "Parents decide on guitar lessons after dinner, once the kids beg again. Right now the music school can't show open times or take a booking at that hour.",
+      "hook": "Look for comments asking 'do you have openings' or 'what age can they start'. Note one.",
+      "linkLine": "A music lesson page that books at 9pm: {demo-link}"
+    },
+    {
+      "angle": "Hiring a music teacher",
+      "line": "Saw you're looking for a drum or voice teacher for the music school. Good teachers look at how the studio presents itself before they reply.",
+      "hook": "Only if they posted for teachers. Note the instrument.",
+      "linkLine": "A music school page with a teach-here section: {demo-link}"
+    },
+    {
+      "angle": "In-home lessons area",
+      "line": "You teach piano in students' homes, but nothing says whether you come to {Neighborhood}. Parents choosing in-home music lessons check that first.",
+      "hook": "Only if they mention in-home or travelling lessons. Check whether areas are listed.",
+      "linkLine": "An in-home music lesson page with your areas: {demo-link}"
+    },
+    {
+      "angle": "Lesson rates hidden",
+      "line": "I couldn't find a monthly or per-lesson rate for music lessons anywhere. Parents comparing piano teachers tend to call the one with a price on the page.",
+      "hook": "Check every page and post for rates. If none, the angle holds.",
+      "linkLine": "Music lesson rates by length, priced plainly: {demo-link}"
+    },
+    {
+      "angle": "Teacher degrees and gigs",
+      "line": "Your teachers' music degrees, orchestra seats and band credits are why a parent should choose the studio, and none of it shows where they'd look.",
+      "hook": "Look for teacher bios, degrees or performing credits in posts. Never invent one.",
+      "linkLine": "Your music teachers, their training and their gigs: {demo-link}"
+    },
+    {
+      "angle": "Siblings and neighbours",
+      "line": "It sounds like most new music students are siblings or friends of current ones. Their parents still look the studio up before the first lesson.",
+      "hook": "Look for reviews mentioning siblings or friends who also take lessons. Quote it.",
+      "linkLine": "Where a referred music parent would land: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "Watching {specific recent job} on your page, that's the clip I'd open the music school site with. It shows a parent exactly where weekly lessons lead.",
+      "hook": "Pick their newest performance, recital or student band post and name it exactly.",
+      "linkLine": "That student performance, front and centre: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner} — that {specific recent job} you posted made me smile.\n\nI looked for a site for {Business Name} and found the listing and your social pages, but no teachers, rates or open lesson times. I put together a sample music lesson page with instruments, teachers by genre and a first-lesson booking, with marked placeholders where your photos would go.\n\nWould you like me to send it over?",
+    "dm2": "{Owner} — following up in case my message got lost between lessons. Here's the sample music school site for {Business Name}: {demo-link}\n\nIt has an instrument chooser, teachers by genre, a recitals page, audition prep and a first-lesson booking. If it's not for you, say so and I won't message again.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for music teachers and music schools here in {City}. I sent you a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"Easy to miss when you're teaching back to back. Short version: I built a sample site for {Business Name} with instruments, teachers and a first-lesson booking, with marked placeholders where your photos would go. Can I email you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range}, then {Care Range} a month for hosting and teacher or rate changes. For a studio your size I'd normally quote about {Build Price}.\"\n\"Can I walk you through it for ten minutes before your first afternoon student?\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. We start the day it clears, and it's live before September sign-ups.\"",
+    "objections": [
+      {
+        "objection": "My students come from word of mouth.",
+        "handler": "\"That means the teaching is good. The referred parent still looks you up, and a page with rates and open times turns that recommendation into a booked first lesson.\""
+      },
+      {
+        "objection": "My lesson software has a sign-up page.",
+        "handler": "\"Keep it for billing and the calendar. It can't help a parent choose piano or guitar, or show your teachers. The site explains, then sends them to the same sign-up.\""
+      },
+      {
+        "objection": "I teach from home, I don't need a website.",
+        "handler": "\"Home studios need it most. The site shows the room, the parking and your rules, so new families feel comfortable arriving at a house.\""
+      },
+      {
+        "objection": "Summer is slow, I'll think about it in fall.",
+        "handler": "\"Fall sign-ups start searching in August. Building in summer means the page is ranking when they look.\""
+      },
+      {
+        "objection": "One of my students' parents made our site.",
+        "handler": "\"Generous of them, keep them involved. I'll hand over the instrument chooser and booking. If updating teachers each term gets old, the offer stands.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}, because it's instruments, teachers and a first-lesson booking. A couple of new weekly students cover it within the year.\""
+      }
+    ],
+    "email": {
+      "subject": "Music lesson site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for music teachers and music schools around {City}. {Business Name} has lovely student performances on its social pages, but no site where a parent can see teachers, rates and open lesson times.\n\nI built a sample first rather than ask for your time: an instrument chooser, teachers by style and genre, a recitals page, audition prep and a first-lesson booking, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and teacher or rate changes. If not, no problem, it comes down at the end of the month.\n\nWorth ten minutes on the phone before your afternoon students?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build websites for music schools in {City}, and I put together a sample one for {Business Name} with a first-lesson booking. I'll email you the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner} — I'm taking the {Business Name} music lesson demo down on Friday to free up the space.\n\nWant me to leave it up? One word is fine either way.",
+    "nurture": "Hi {Owner} — after the holidays, lots of new guitars and keyboards need a teacher. Thought of you.\n\nThe site is still here whenever you want it, and nothing's changed on price. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to a couple of students' year of weekly lessons, never to the price of an instrument.",
+      "Price teacher pages by teacher count. A solo teacher needs one page, a school with many teachers needs a filterable directory.",
+      "The first-lesson booking with instrument and age questions is its own line and the main reason to buy.",
+      "Only quote rehearsal and recording rental for studios that actually have rooms and gear.",
+      "Keep monthly add-ons under one student's monthly tuition.",
+      "Sell in July for September starts and in early December for the post-holiday new-instrument wave."
+    ],
+    "lineItems": [
+      {
+        "item": "First-lesson booking with instrument and age",
+        "min": 300,
+        "max": 750,
+        "unit": "one-time",
+        "description": "Max with teacher matching by instrument, genre and age, a lesson length choice and reminder texts.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Teacher directory with genre filters",
+        "min": 300,
+        "max": 800,
+        "unit": "one-time",
+        "description": "Max with many teachers, instrument and genre filters, a short clip per teacher and open-slot display.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Instrument chooser page",
+        "min": 200,
+        "max": 500,
+        "unit": "per-page",
+        "description": "Max with every instrument compared by age, plus rent-or-buy advice and links to a local music store.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Recitals and showcases page",
+        "min": 200,
+        "max": 500,
+        "unit": "per-page",
+        "description": "Max with recital sign-up, piece submission, venue details and a past performances gallery.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Rehearsal room and recording booking",
+        "min": 400,
+        "max": 900,
+        "unit": "one-time",
+        "description": "Max with several rooms, hourly rates, engineer add-on, deposits and late-night access rules.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Summer rock camp or music camp page",
+        "min": 250,
+        "max": 600,
+        "unit": "per-page",
+        "description": "Max with weekly camp sessions, band placement by level, a final show and registration.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Spanish-language family path",
+        "min": 300,
+        "max": 700,
+        "unit": "one-time",
+        "description": "Max when the booking, rates, instrument chooser and policies are all translated.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Recital filming and teacher clips",
+      "min": 300,
+      "max": 800,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Film the recital from a good angle and a short clip of each music teacher playing, so the site has sound and faces, students only with parent consent.\"",
+      "when": "At the next recital. Consent forms go home with the recital programme."
+    },
+    {
+      "name": "Google profile upkeep for the music school",
+      "min": 99,
+      "max": 249,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Open lesson times by instrument and recital dates posted to the music school's Google profile weekly, so piano and guitar searches nearby find a busy studio.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Review asks after a first recital",
+      "min": 39,
+      "max": 99,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"The day after a student's first recital, proud parents get a short text asking them to review the music school.\"",
+      "when": "Set up before the next recital. The easiest second sale."
+    },
+    {
+      "name": "Back-to-school and new-instrument lesson ads",
+      "min": 300,
+      "max": 700,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Local ads for piano and guitar lessons in late August and right after the holidays, pointed at the first-lesson booking and paused when teachers fill.\"",
+      "when": "Pitch in July and early December. Ad spend is on top."
+    },
+    {
+      "name": "Gift certificate for first music lessons",
+      "min": 150,
+      "max": 400,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A printable gift certificate for a month of music lessons to tuck under a new guitar, sold online through December.\"",
+      "when": "Pitch in October, live by Thanksgiving."
+    },
+    {
+      "name": "Music store counter cards",
+      "min": 100,
+      "max": 300,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Cards for the local music store counter with a scan code to book a first lesson, handed to every family buying a beginner instrument.\"",
+      "when": "Right after launch."
+    },
+    {
+      "name": "Monthly practice tips email for families",
+      "min": 100,
+      "max": 300,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A short monthly email with a practice tip by instrument, recital dates and open slots, written and sent for the studio.\"",
+      "when": "Month 3, once the family list is clean."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "The local music store",
+        "whoPays": "The store owner",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The music store where your students rent their first violin has no rental page. Introduce me and I'll build rentals and repairs online.\"",
+        "whyItWorks": "Music stores depend on teacher referrals for rentals, so the studio owner's introduction is welcomed."
+      },
+      {
+        "route": "Piano tuners and instrument repair shops",
+        "whoPays": "Each technician, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The piano tuner you send families to needs an online booking page. Your recommendation does the selling.\"",
+        "whyItWorks": "Tuners and repair techs live on referrals from teachers and rarely have a working site."
+      },
+      {
+        "route": "Local venues that host student shows",
+        "whoPays": "The venue",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The café or small venue that hosts your student band nights needs an events calendar and booking page. You can introduce me.\"",
+        "whyItWorks": "Small venues fill quiet nights with student shows and trust the teacher who brings an audience."
+      },
+      {
+        "route": "Church music directors and choirs",
+        "whoPays": "The congregation",
+        "min": 1200,
+        "max": 3500,
+        "unit": "one-time",
+        "pitchLine": "\"The church where your voice students sing needs a music ministry page with choir rehearsals and auditions. I'd like an introduction.\"",
+        "whyItWorks": "Music teachers often play or direct at churches, and church sites are rarely kept current."
+      },
+      {
+        "route": "School band and orchestra boosters",
+        "whoPays": "The booster club",
+        "min": 800,
+        "max": 2500,
+        "unit": "one-time",
+        "pitchLine": "\"The middle school band your students play in needs a booster page for fundraising, concert dates and volunteers. I'll build it.\"",
+        "whyItWorks": "Boosters are parent-run and buy when a teacher they trust names someone."
+      },
+      {
+        "route": "Dance and theatre studios needing accompanists",
+        "whoPays": "Each studio, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The theatre studio that hires your pianist for musicals needs a class and audition page. Your teacher's introduction opens the door.\"",
+        "whyItWorks": "Performing arts studios share families and staff, and owners trust each other's recommendations."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Rental and sizing assistant for the music store",
+        "whoPays": "The store, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"Parents ask which violin size fits their child or whether to rent or buy a keyboard, and the store's assistant answers and starts the rental.\"",
+        "whyItWorks": "Sizing questions block rentals. Answering them at night turns into rental contracts."
+      },
+      {
+        "route": "Tuning booking assistant for piano technicians",
+        "whoPays": "Each technician, monthly",
+        "min": 39,
+        "max": 99,
+        "unit": "monthly",
+        "pitchLine": "\"Homeowners ask when their piano was last tuned and book the next visit, and the technician's route fills without phone tag.\"",
+        "whyItWorks": "Technicians are on the road all day and miss calls. One booked tuning a month pays for it."
+      },
+      {
+        "route": "Event and booking enquiries assistant for small venues",
+        "whoPays": "The venue, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"Bands and teachers ask about open nights, sound gear and ticket splits, and the venue gets a hold request at any hour.\"",
+        "whyItWorks": "Venue owners answer booking messages after closing. Each held date has value."
+      },
+      {
+        "route": "Choir rehearsal question line for churches",
+        "whoPays": "The congregation, monthly",
+        "min": 49,
+        "max": 129,
+        "unit": "monthly",
+        "pitchLine": "\"Choir members ask what's on this week's rehearsal list and which robe colour, and get answers from the music director's notes.\"",
+        "whyItWorks": "Volunteer choirs repeat the same questions weekly, and directors welcome a break."
+      },
+      {
+        "route": "Concert and fundraiser assistant for band boosters",
+        "whoPays": "The booster club, per season",
+        "min": 300,
+        "max": 900,
+        "unit": "one-time",
+        "pitchLine": "\"Band parents ask about call times, uniforms and the fundraiser deadline, and get answers from the booster packet.\"",
+        "whyItWorks": "Booster officers are volunteers drowning in parent texts. One season of relief sells the renewal."
+      },
+      {
+        "route": "Audition sign-up assistant for theatre studios",
+        "whoPays": "Each studio, monthly",
+        "min": 79,
+        "max": 199,
+        "unit": "monthly",
+        "pitchLine": "\"Families ask about audition songs, slots and callbacks for the next musical, and the studio's assistant answers and books an audition time.\"",
+        "whyItWorks": "Audition weeks flood small studios. A booked slot is a clear result."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "First-lesson follow-up and enrolment offer",
+      "kind": "automation",
+      "oneTimeMin": 250,
+      "oneTimeMax": 700,
+      "monthlyMin": 29,
+      "monthlyMax": 99,
+      "pitchLine": "\"After a first music lesson, the parent gets a note from the teacher and a link to lock in the weekly slot before someone else takes it.\"",
+      "whenAndWhatItTakes": "Day 30. Needs lesson rates and calendar access."
+    },
+    {
+      "name": "Weekly lesson calendar with teacher slots",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1800,
+      "monthlyMin": 29,
+      "monthlyMax": 99,
+      "pitchLine": "\"Each music teacher's weekly slots shown by instrument, with recurring lessons booked once for the whole term.\"",
+      "whenAndWhatItTakes": "Month 2. Needs teacher availability and lesson lengths."
+    },
+    {
+      "name": "Make-up lesson scheduler",
+      "kind": "software",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1200,
+      "monthlyMin": 19,
+      "monthlyMax": 59,
+      "pitchLine": "\"A missed piano lesson becomes a credit the family books into an open slot, under the studio's make-up rule, with no texting back and forth.\"",
+      "whenAndWhatItTakes": "Month 2, the first time make-ups become a headache. Needs the make-up policy."
+    },
+    {
+      "name": "Music school enquiry answerer",
+      "kind": "ai",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1200,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"'What age can she start violin' and 'do you have Tuesday guitar slots' get answered from the music school's own pages, with the first-lesson link.\"",
+      "whenAndWhatItTakes": "Month 2. Needs instruments, teachers, rates and openings. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Monthly tuition autopay",
+      "kind": "software",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1200,
+      "monthlyMin": 19,
+      "monthlyMax": 79,
+      "pitchLine": "\"Music lesson tuition charged monthly on the same day, with a polite note when a card fails, so the teacher never asks a parent for a cheque.\"",
+      "whenAndWhatItTakes": "Month 2, if they still collect by cash or cheque. Needs rates and payment account."
+    },
+    {
+      "name": "Practice log for students",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1800,
+      "monthlyMin": 19,
+      "monthlyMax": 79,
+      "pitchLine": "\"Students log practice minutes and the pieces they worked on, and the teacher sees the week before the lesson starts.\"",
+      "whenAndWhatItTakes": "Month 3. Needs teacher buy-in and the studio's practice expectations."
+    },
+    {
+      "name": "Lesson reminders and recital deadlines",
+      "kind": "automation",
+      "oneTimeMin": 250,
+      "oneTimeMax": 600,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Families get a reminder before each music lesson, and recital piece and sign-up deadlines go out without the teacher chasing.\"",
+      "whenAndWhatItTakes": "Month 2. Needs lesson calendar and the recital timeline."
+    },
+    {
+      "name": "Music studio phone answering",
+      "kind": "ai",
+      "oneTimeMin": 700,
+      "oneTimeMax": 1800,
+      "monthlyMin": 149,
+      "monthlyMax": 299,
+      "pitchLine": "\"While every teacher is mid-lesson, the music studio phone still gets answered, the instrument question handled and the first lesson booked.\"",
+      "whenAndWhatItTakes": "Month 4, once they trust you. Needs rates, openings and booking access. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Lesson note to parents",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"The teacher says a few words after the lesson, and the parent gets a clear note on the piece, the practice goal and one thing to praise.\"",
+      "whenAndWhatItTakes": "Month 3. Teacher approves every note. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Review reply drafts for the music school",
+      "kind": "ai",
+      "oneTimeMin": 250,
+      "oneTimeMax": 700,
+      "monthlyMin": 39,
+      "monthlyMax": 99,
+      "pitchLine": "\"Music lesson reviews get a short reply drafted in the studio owner's voice, mentioning the instrument and teacher, ready to approve between students.\"",
+      "whenAndWhatItTakes": "Month 2, with the review asks. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Recital programme builder",
+      "kind": "software",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1200,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Students submit their recital piece and composer, the running order builds itself by level, and the printed programme comes out spelled right.\"",
+      "whenAndWhatItTakes": "Month 4, before the next recital. Needs the recital date and format."
+    },
+    {
+      "name": "Rehearsal room booking with door codes",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1800,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Bands book a rehearsal room by the hour, pay up front and get a door code for that slot, so the studio earns at night without staff.\"",
+      "whenAndWhatItTakes": "Month 4, only for studios with rooms. Needs rates and the lock system."
+    },
+    {
+      "name": "Quitting-risk check-in",
+      "kind": "automation",
+      "oneTimeMin": 250,
+      "oneTimeMax": 700,
+      "monthlyMin": 19,
+      "monthlyMax": 59,
+      "pitchLine": "\"A student who missed two music lessons in a row triggers a friendly note to the parent offering a new time or a different piece to reignite interest.\"",
+      "whenAndWhatItTakes": "Month 4. Needs attendance from the lesson calendar."
+    },
+    {
+      "name": "Practice coach between lessons",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Students ask how to count a tricky rhythm or which scale to warm up with, and get the teacher's own guidance for their level, not internet advice.\"",
+      "whenAndWhatItTakes": "Month 5. Needs teacher-written practice notes by level and approval of answers. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Repertoire picker by level and style",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"A teacher enters a student's level and favourite songs, and gets a shortlist of pieces from the studio's own library to choose from.\"",
+      "whenAndWhatItTakes": "Month 5. Needs the studio's repertoire list with levels. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Teacher pay report",
+      "kind": "software",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1200,
+      "monthlyMin": 19,
+      "monthlyMax": 59,
+      "pitchLine": "\"Each music teacher's lessons taught, make-ups and recital hours added up for payroll at the end of the month.\"",
+      "whenAndWhatItTakes": "Month 5, for schools with several teachers. Needs pay rules."
+    },
+    {
+      "name": "Lapsed student welcome-back",
+      "kind": "automation",
+      "oneTimeMin": 250,
+      "oneTimeMax": 700,
+      "monthlyMin": 19,
+      "monthlyMax": 59,
+      "pitchLine": "\"Students who stopped lessons over summer get a note in August with their old teacher's open times.\"",
+      "whenAndWhatItTakes": "Month 6. Needs past student list."
+    },
+    {
+      "name": "Exam and audition prep tracker",
+      "kind": "software",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 19,
+      "monthlyMax": 59,
+      "pitchLine": "\"Required pieces, scales and theory for each student's graded exam or audition, ticked off by the teacher as they're ready.\"",
+      "whenAndWhatItTakes": "Month 6, for studios preparing exam or audition students. Needs requirements per level."
+    },
+    {
+      "name": "Teacher-to-student match helper",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"A new family describes the child's age, favourite music and personality, and the helper suggests the best-fit music teacher with open slots.\"",
+      "whenAndWhatItTakes": "Month 6, for schools with several teachers. Needs teacher profiles and the owner's matching rules. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Retention forecast by teacher",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"The owner sees which teachers' students are likely to drop before summer, from attendance and practice logs, with a suggested check-in.\"",
+      "whenAndWhatItTakes": "Month 8, after months of attendance data. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the first-lesson booking and practice log for private teachers",
+      "whoPays": "Private music teachers, monthly",
+      "min": 19,
+      "max": 79,
+      "unit": "monthly",
+      "pitchLine": "\"I built a first-lesson booking and practice log for one music school. Every private piano teacher tracks the same things in a paper notebook.\"",
+      "whyItWorks": "Private teachers are many and small, and they meet through teachers' associations and recital halls."
+    },
+    {
+      "route": "Music teachers association member toolkit",
+      "whoPays": "The state or local music teachers association",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer every member teacher a studio page template with lesson booking and recital sign-up, as a membership benefit.\"",
+      "whyItWorks": "Teacher associations need practical benefits and already run recitals and exams members care about."
+    },
+    {
+      "route": "Teacher finder for an instrument retailer chain",
+      "whoPays": "The retailer",
+      "min": 5000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Every beginner instrument you sell needs a teacher. A find-a-teacher page with local studios' booking links keeps families coming back for strings and books.\"",
+      "whyItWorks": "Retailers want beginners to stick with it, and teachers drive repeat purchases."
+    },
+    {
+      "route": "Music school franchise groups",
+      "whoPays": "The franchise group, per location",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "pitchLine": "\"Franchise music schools lose families when a location's teacher list is out of date. A shared directory with live open slots per location fixes that across the network.\"",
+      "whyItWorks": "One contract becomes every location, and franchisors roll out what works."
+    },
+    {
+      "route": "Agency licence for the music lesson template",
+      "whoPays": "The agency, per site",
+      "min": 300,
+      "max": 1000,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency picks up music teachers it can't price low enough to build from scratch. License my template with the instrument chooser and booking built in.\"",
+      "whyItWorks": "Agencies turn small music jobs away. A finished template makes them worth taking."
+    },
+    {
+      "route": "Youth orchestra and honour band registration",
+      "whoPays": "The youth orchestra or honour band organisation, annually",
+      "min": 2000,
+      "max": 6000,
+      "unit": "per-year",
+      "pitchLine": "\"Your auditions, seating results, rehearsal schedule and tuition each season need one registration site. I build for the teachers who prepare your players.\"",
+      "whyItWorks": "Youth orchestras run the same audition cycle every year, and private teachers are their feeder network."
+    },
+    {
+      "route": "Rock camp and summer music camp operators",
+      "whoPays": "The camp operator",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Your summer rock camp needs band placement by level, weekly sessions and a final-show page. I built the camp page for a music school already.\"",
+      "whyItWorks": "Camp operators share students with music schools and buy on a hard spring deadline."
+    },
+    {
+      "route": "School district after-school music programmes",
+      "whoPays": "The district or education foundation, annually",
+      "min": 1500,
+      "max": 5000,
+      "unit": "per-year",
+      "pitchLine": "\"Your after-school guitar and piano programmes run through outside teachers. A registration and roster page per school fills them.\"",
+      "whyItWorks": "Districts contract music teachers already, and the client is a warm introduction."
+    },
+    {
+      "route": "Recording studios and rehearsal spaces",
+      "whoPays": "Each studio, at your normal rate",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"Recording studios and rehearsal spaces need hourly booking with door codes, the same one I built for a music school's rooms.\"",
+      "whyItWorks": "The booking pattern is built, and local musicians move between these places."
+    },
+    {
+      "route": "Senior centres' music and choir programmes",
+      "whoPays": "The senior centre or community, annually",
+      "min": 1200,
+      "max": 3500,
+      "unit": "per-year",
+      "pitchLine": "\"Your residents' piano lessons and choir run with a visiting music teacher. A schedule and sign-up page families can see makes it an amenity.\"",
+      "whyItWorks": "Senior communities market activities to families, and music teachers already visit."
+    },
+    {
+      "route": "Music schools in nearby towns",
+      "whoPays": "New music schools in other towns",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"With one piano and guitar school in {City} booking first lessons online, I show studios in neighbouring towns the working example.\"",
+      "whyItWorks": "Music schools rarely compete across towns, and a working example sells itself."
+    },
+    {
+      "route": "Rescue half-finished lesson software setups",
+      "whoPays": "The stuck music studio",
+      "min": 400,
+      "max": 1500,
+      "unit": "one-time",
+      "pitchLine": "\"You started setting up lesson scheduling software and still take bookings by text. I can finish it, having done it for another music school.\"",
+      "whyItWorks": "Stuck owners already pay for the software and want it working before fall."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Music school site build plus care plan, one contract",
+      "min": 1500,
+      "max": 2500,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The music school site and the care plan go on one contract, so a new teacher or rate is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 14,
+      "offer": "First-lesson follow-up and enrolment offer",
+      "min": 250,
+      "max": 700,
+      "unit": "one-time",
+      "trigger": "First-lesson bookings start and a family doesn't commit to a weekly slot.",
+      "line": "\"That family who loved the first guitar lesson but didn't book weekly would have heard from the teacher that night.\""
+    },
+    {
+      "rung": 3,
+      "day": 30,
+      "offer": "Monthly tuition autopay",
+      "min": 400,
+      "max": 1200,
+      "unit": "one-time",
+      "trigger": "They mention chasing late tuition or cheques.",
+      "line": "\"Music lesson tuition can collect itself on the same day each month. No more asking parents at the door.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Review asks after a first recital",
+      "min": 39,
+      "max": 99,
+      "unit": "monthly",
+      "trigger": "The next recital date is set.",
+      "line": "\"Recital parents are your proudest reviewers. Let's ask them the day after.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Make-up lesson scheduler",
+      "min": 500,
+      "max": 1200,
+      "unit": "one-time",
+      "trigger": "They say make-up lesson requests are eating their evenings.",
+      "line": "\"Make-up music lessons can book themselves into open slots under your rule.\""
+    },
+    {
+      "rung": 6,
+      "day": 150,
+      "offer": "Practice log for students",
+      "min": 600,
+      "max": 1800,
+      "unit": "one-time",
+      "trigger": "They complain students arrive unpractised.",
+      "line": "\"A practice log shows you the week before the lesson starts, and parents see it too.\""
+    },
+    {
+      "rung": 7,
+      "day": 240,
+      "offer": "Back-to-school and new-instrument lesson ads",
+      "min": 300,
+      "max": 700,
+      "unit": "monthly",
+      "trigger": "It's July or early December and teachers have open weekly slots.",
+      "line": "\"Your teachers have open slots before the fall and holiday rush. Let's point ads at the first-lesson booking.\""
+    },
+    {
+      "rung": 8,
+      "day": 300,
+      "offer": "Introduction to the local music store",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "trigger": "They mention the store owner asking about the site or referring students.",
+      "line": "\"The music store sends you beginners and has no rental page. Would you introduce me?\""
+    }
+  ]
+}

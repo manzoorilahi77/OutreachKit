@@ -1,0 +1,874 @@
+{
+  "schemaVersion": 1,
+  "category": "Independent gyms & CrossFit",
+  "slug": "independent-gyms-crossfit",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Edu family batch. Adult buyers, not parents; many already pay for gym software with a bundled site, so the pitch sits in front of it. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Foundations on-ramp course",
+      "contains": "The beginner on-ramp: how many sessions, the barbell lifts and movements it teaches, scaling, the coach-to-athlete attention, and when a newcomer joins regular group classes",
+      "why": "Nervous beginners worry about getting hurt or looking lost. A clear on-ramp turns 'I'm not fit enough for CrossFit yet' into a booked first session."
+    },
+    {
+      "section": "Daily workout board",
+      "contains": "Today's workout posted each evening with the movements, the scaled and beginner versions, and the strength piece, archived by date",
+      "why": "Members check tomorrow's workout before deciding to come, and prospects read a week of workouts to judge whether the gym is for them."
+    },
+    {
+      "section": "Drop-in visitors",
+      "contains": "Drop-in fee, which classes visitors can join, the waiver to sign ahead, what to bring, parking, and a gym shirt to buy on the way out",
+      "why": "Travelling athletes pick a box to drop in at from their phone the night before. A drop-in page turns travellers into paid visits and reviews."
+    },
+    {
+      "section": "Equipment and open gym access",
+      "contains": "Racks, platforms, rowers, bikes, dumbbell range and specialty bars, open gym hours, key fob or late-night access rules and what members can use unsupervised",
+      "why": "Lifters and independent trainees join a gym for the equipment and the hours. They want to see the rack count and floor before they visit."
+    },
+    {
+      "section": "Nutrition challenge and body composition",
+      "contains": "Nutrition coaching, the next six-week challenge dates and entry fee, body composition check-ins, and what members get at the end",
+      "why": "January and post-summer challenges are how independent gyms sign new members in a batch. The page has to exist before the challenge is announced."
+    },
+    {
+      "section": "Teens and masters strength classes",
+      "contains": "Teen athlete strength and conditioning, masters classes for members over fifty, how coaches scale lifts for age, and the times each runs",
+      "why": "Parents of teen athletes and older adults both assume a CrossFit gym isn't for them. A dedicated section proves otherwise and fills off-peak hours."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C50",
+      "siteType": "local-conversion",
+      "name": "Whiteboard",
+      "heroLayout": "type-led",
+      "mood": [
+        "raw",
+        "honest",
+        "no-nonsense"
+      ],
+      "bestFor": "Garage-style boxes and strength gyms that need a free class booking and a daily workout, nothing more",
+      "pairsWithTier": "starter",
+      "headlineSample": "CrossFit and barbell classes in {City}. First class free.",
+      "whyItFits": "Redline Mono looks like a timer and a chalk whiteboard, and the type-led hero puts the free class button where the workout would be written."
+    },
+    {
+      "id": "b",
+      "themeId": "C17",
+      "siteType": "booking-first",
+      "name": "Class Grid",
+      "heroLayout": "card-stack",
+      "mood": [
+        "energetic",
+        "focused",
+        "strong"
+      ],
+      "bestFor": "Independent gyms with a full group class timetable, an on-ramp course and open gym",
+      "pairsWithTier": "standard",
+      "headlineSample": "Strength training and group classes in {City}",
+      "whyItFits": "Not the family combo: Sky Kite reads as a kids' school, and these buyers are adults. Basalt Lime is built for fitness, dark like a gym floor, with lime CTAs."
+    },
+    {
+      "id": "c",
+      "themeId": "C4",
+      "siteType": "premium-brand",
+      "name": "Strength House",
+      "heroLayout": "full-bleed-photo",
+      "mood": [
+        "premium",
+        "coached",
+        "serious"
+      ],
+      "bestFor": "Coach-led strength gyms selling semi-private training and nutrition at a higher monthly rate",
+      "pairsWithTier": "premium",
+      "headlineSample": "Coached strength training for {City} adults",
+      "whyItFits": "Navy and brass feel like a members' club rather than a bargain gym, and the serif display signals coaching worth a higher monthly rate."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your gym's Google listing has hours and a phone number but no website, so someone searching a CrossFit gym in {City} can't see the class times or what a first class costs.",
+      "hook": "Open their Maps listing and confirm there is no Website button. Screenshot it for when they reply.",
+      "linkLine": "Here's the gym page behind that button: {demo-link}"
+    },
+    {
+      "angle": "Instagram-only link",
+      "line": "The link on your gym listing opens Instagram, where the class timetable is a highlight from months ago. A newcomer wants the CrossFit schedule and the first-class offer in one place.",
+      "hook": "Tap the link and find where class times live: a highlight, a pinned post, nowhere. Note it.",
+      "linkLine": "Your gym's class times and free first class, on one page: {demo-link}"
+    },
+    {
+      "angle": "Bundled software page",
+      "line": "Your gym's website is the plain page that came with the membership software, with the class list and no coaches, equipment or on-ramp. It books members but doesn't sell the box.",
+      "hook": "Open the site and check whether it's a software template page. Note one missing thing: coaches, equipment, on-ramp.",
+      "linkLine": "A gym site that sits in front of your booking system: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "I opened your gym site on my phone and the class schedule needed sideways scrolling. People check CrossFit class times on their phone in the car before deciding to go.",
+      "hook": "Only if they have a site. Load it on your phone and note what breaks. Screenshot it for when they reply.",
+      "linkLine": "The same gym, rebuilt for a phone: {demo-link}"
+    },
+    {
+      "angle": "No free class booking",
+      "line": "Booking a free first class at the gym means sending a DM and waiting for a coach to answer between classes. A booking button would take that first visit straight away.",
+      "hook": "Look for any 'book a free class' or intro form. If it's DM or call only, the angle holds.",
+      "linkLine": "A free first class booking for the gym: {demo-link}"
+    },
+    {
+      "angle": "Member PRs, nowhere to live",
+      "line": "Your posts of members hitting a deadlift PR or their first pull-up are the best thing the gym shares, and they're gone in a day. A member wins page would keep selling the gym.",
+      "hook": "Find a recent PR, first pull-up or competition post and note the lift or the member's milestone.",
+      "linkLine": "Your gym's member wins, kept where newcomers look: {demo-link}"
+    },
+    {
+      "angle": "Reviews about coaching",
+      "line": "Your Google reviews keep mentioning how the coaches scaled workouts for someone nervous about CrossFit. Those reviews belong next to the free class button.",
+      "hook": "Read their reviews and copy one phrase about coaching or feeling welcome. Quote it if they reply.",
+      "linkLine": "Gym reviews next to the free class booking: {demo-link}"
+    },
+    {
+      "angle": "New Year sign-ups",
+      "line": "January is when people who've put it off finally search for a gym, and the independent gyms with a free class booking ready take those people before the big chains do.",
+      "hook": "Use this from November to early January, or August for back-to-routine. Name the moment.",
+      "linkLine": "A January-ready gym page with a challenge sign-up: {demo-link}"
+    },
+    {
+      "angle": "5am crowd and late searches",
+      "line": "Your earliest class starts before the front desk would ever open, and people decide to try a gym late at night. Right now the box only takes a booking when a coach checks DMs.",
+      "hook": "Check their class times for very early or late classes, and comments asking about times. Note one.",
+      "linkLine": "A gym page that books the 5am class at midnight: {demo-link}"
+    },
+    {
+      "angle": "Hiring coaches",
+      "line": "Saw you're looking for a coach for the gym's group classes. Certified coaches look at how a box presents itself online before they apply.",
+      "hook": "Only if they posted for coaches or front desk. Note the role.",
+      "linkLine": "A gym page with a coach-with-us section: {demo-link}"
+    },
+    {
+      "angle": "Drop-in visitors",
+      "line": "Your gym is near enough to {Neighborhood} hotels that travelling CrossFit athletes look for a drop-in. They need the fee, the waiver and the class times without messaging.",
+      "hook": "Check reviews or tags from visitors and whether drop-in info exists anywhere. Note it.",
+      "linkLine": "A gym drop-in page for visiting athletes: {demo-link}"
+    },
+    {
+      "angle": "Membership price hidden",
+      "line": "I couldn't find a membership price for the gym anywhere. People comparing an independent gym with the chain down the road want a number before they visit.",
+      "hook": "Check every page and post for membership rates. If none, the angle holds.",
+      "linkLine": "Gym memberships with prices and what's included: {demo-link}"
+    },
+    {
+      "angle": "Coach certifications",
+      "line": "Your coaches' strength and conditioning certifications are the reason to pay more than a chain gym, and they're not anywhere a newcomer would see them.",
+      "hook": "Look for certifications in coach bios or posts. Never invent one.",
+      "linkLine": "Your gym coaches and their training, on one page: {demo-link}"
+    },
+    {
+      "angle": "Members bring friends",
+      "line": "Sounds like most new members at the gym come in as a friend of a current one. That friend still looks the box up before showing up to class.",
+      "hook": "Look for 'bring a friend' events or reviews saying 'my friend got me to try it'. Quote it.",
+      "linkLine": "Where a member's friend would land: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "That {specific recent job} you posted looked like a great day at the gym. A competition or community workout like that should open the gym's site.",
+      "hook": "Pick their newest event: an in-house competition, charity workout or lifting meet. Name it exactly.",
+      "linkLine": "That gym moment, front and centre: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner} — that {specific recent job} you posted looked like a great day in the box.\n\nI looked for a site for {Business Name} and found the listing, the socials and a booking page, but nothing that explains the on-ramp or books a free class. I put together a sample gym site with the class timetable, a foundations course page and a free class booking, with marked placeholders where your photos would go.\n\nWould you like me to send it over?",
+    "dm2": "{Owner} — following up in case my message got buried under member DMs. Here's the sample gym site for {Business Name}: {demo-link}\n\nIt has the class grid, a foundations on-ramp page, a daily workout board and a drop-in page, and it hands bookings to the software you already use. If it's not for you, say so and I won't message again.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for independent gyms and CrossFit boxes here in {City}. I sent you a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"Easy to miss between classes. Short version: I built a sample site for {Business Name} with your class grid, an on-ramp page and a free class booking, with marked placeholders where your photos would go. Can I email you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range}, then {Care Range} a month for hosting and timetable changes. For a gym your size I'd normally quote about {Build Price}. It sits in front of your member software, it doesn't replace it.\"\n\"Can I walk you through it for ten minutes in the midday gap between classes?\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. We start the day it clears, and it's live before the January rush.\"",
+    "objections": [
+      {
+        "objection": "My gym software already gives me a website.",
+        "handler": "\"It runs memberships well. The bundled page lists classes but doesn't sell the on-ramp, the coaches or the equipment. This sits in front and sends sign-ups into that same software.\""
+      },
+      {
+        "objection": "Everyone finds us on Instagram.",
+        "handler": "\"Instagram shows the energy. The site is where someone checks the price and books the free class at midnight. It links straight back to the gym's grid.\""
+      },
+      {
+        "objection": "We don't publish prices. We do a no-sweat intro first.",
+        "handler": "\"Keep the intro. Show a 'memberships from' price and book the intro online. People who arrive already know the gym is in budget, so the intro closes faster.\""
+      },
+      {
+        "objection": "One of my members built our site.",
+        "handler": "\"Good, keep them involved. I'll hand over the on-ramp and drop-in pages. If they'd rather not maintain it before January, the offer stands.\""
+      },
+      {
+        "objection": "Summer is dead, I'm not spending.",
+        "handler": "\"Summer is when to build. The January rush starts searching in December, and the free class booking needs to be ranking by then.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}, because it's the class grid, the on-ramp and a free class booking. A couple of members staying the year cover it.\""
+      }
+    ],
+    "email": {
+      "subject": "Gym site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for independent gyms and CrossFit boxes around {City}. {Business Name} has a strong community on its social pages, but no site that explains the on-ramp and books a free class.\n\nI built a sample first rather than ask for your time: the class timetable, a foundations course page, a daily workout board, a drop-in page and a free class booking, with marked placeholders where your photos would go. It hands bookings to the gym software you already use:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and timetable changes. If not, no problem, it comes down at the end of the month.\n\nWorth ten minutes in the midday gap between classes?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build websites for independent gyms in {City}, and I put together a sample one for {Business Name} with a free class booking and an on-ramp page. I'll email you the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner} — I'm taking the {Business Name} gym demo down on Friday to free up the space.\n\nWant me to leave it up? One word is fine either way.",
+    "nurture": "Hi {Owner} — the January gym rush starts searching in December, and a free class booking needs to be live before then. Thought of you.\n\nThe site is still here whenever you want it, and nothing's changed on price. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to a couple of members staying the year, never to the cost of a rack or rower.",
+      "Price it as a layer in front of their gym software. Don't quote a replacement for billing they already pay for.",
+      "The free class or intro booking is its own line. It's the only conversion that matters.",
+      "Price the daily workout board as a setup plus a posting habit. If nobody will post it, leave it out.",
+      "Keep monthly add-ons under one membership. Owners compare everything to the price of a member.",
+      "Sell challenge and January work in October and November, never during the rush itself."
+    ],
+    "lineItems": [
+      {
+        "item": "Free class or no-sweat intro booking",
+        "min": 400,
+        "max": 900,
+        "unit": "one-time",
+        "description": "Max with a waiver signed ahead, goal questions for the coach and handoff into the gym's member software.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Foundations on-ramp page",
+        "min": 250,
+        "max": 600,
+        "unit": "per-page",
+        "description": "Max with session-by-session content, start dates, price and a booking for the first on-ramp session.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Daily workout board",
+        "min": 300,
+        "max": 700,
+        "unit": "one-time",
+        "description": "Max with scaled versions, a searchable archive and posting from a coach's phone.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Drop-in visitor page with waiver and fee",
+        "min": 250,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max with online payment, waiver, class picker and a gym shirt pre-order.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Nutrition challenge landing page",
+        "min": 300,
+        "max": 700,
+        "unit": "per-page",
+        "description": "Max with entry payment, team sign-up, check-in dates and a leaderboard page.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Equipment and floor tour page",
+        "min": 200,
+        "max": 500,
+        "unit": "per-page",
+        "description": "Max with a full equipment list, open gym rules and a short walk-through video.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Spanish-language member path",
+        "min": 300,
+        "max": 800,
+        "unit": "one-time",
+        "description": "Max when the free class booking, on-ramp, waiver and pricing are all translated.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Class-in-action shoot at a busy gym hour",
+      "min": 300,
+      "max": 800,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"One packed evening class shot under real gym light, only members who sign off, gives the box hero shots and a season of posts.\"",
+      "when": "Month 2, scheduled at the busiest class of the week with a sign-up sheet for consent."
+    },
+    {
+      "name": "Gym Google profile management",
+      "min": 150,
+      "max": 300,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"The week's workouts, challenges and member wins posted to the gym's Google profile, so people searching for CrossFit nearby see a busy box.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Review asks after a member's first month",
+      "min": 49,
+      "max": 129,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Thirty days into membership, when the soreness has turned into pride, new gym members get a short text asking for a review.\"",
+      "when": "Day 30. The easiest second sale."
+    },
+    {
+      "name": "January and post-summer gym ad campaigns",
+      "min": 500,
+      "max": 1000,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Local ads for the gym's free class and nutrition challenge, timed to New Year and back-to-routine in September, paused once intro slots fill.\"",
+      "when": "Pitch in October for January and in July for September. Ad spend is on top."
+    },
+    {
+      "name": "Challenge launch kit",
+      "min": 300,
+      "max": 700,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Graphics, an email to past trial visitors and a bring-a-friend offer for the gym's next six-week challenge, all ready the week it's announced.\"",
+      "when": "Six weeks before each challenge starts."
+    },
+    {
+      "name": "Gym shirt and wall graphics design",
+      "min": 200,
+      "max": 600,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A member shirt and a wall graphic with a scan code to book a free class, so every shirt worn around town points back to the gym.\"",
+      "when": "After launch, timed with a challenge or anniversary."
+    },
+    {
+      "name": "Corporate wellness pitch deck and page",
+      "min": 400,
+      "max": 900,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A page and a short deck for local employers offering group strength training memberships to their staff, built for the gym owner to send.\"",
+      "when": "Month 4, if they mention employers nearby or lunchtime classes."
+    },
+    {
+      "name": "Monthly gym content calendar",
+      "min": 200,
+      "max": 500,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"You coach, I plan the gym's month of posts around member wins, the workout of the week and challenge deadlines.\"",
+      "when": "Month 3, if posting falls to whichever coach has time."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Physical therapists and chiropractors who treat members",
+        "whoPays": "The clinic, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The clinic your gym sends sore shoulders to needs a page for lifters and CrossFit athletes. The gym owner's name is the introduction.\"",
+        "whyItWorks": "Clinics want athletes, and gyms already refer injured members to them. The referral relationship is the sale."
+      },
+      {
+        "route": "Meal prep kitchens that supply the gym fridge",
+        "whoPays": "The meal prep business",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The meal prep company stocking your gym fridge takes orders by text. I'll build their weekly menu and pickup order page.\"",
+        "whyItWorks": "Meal prep sells through gyms. The gym owner decides whose meals go in the fridge, so the introduction carries weight."
+      },
+      {
+        "route": "Independent personal trainers renting floor time",
+        "whoPays": "Each trainer, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The trainers who rent time on your gym floor need their own booking page. I'll build them on a template that names your gym.\"",
+        "whyItWorks": "Renting trainers live at the gym and see the new site daily. Each one is a small, fast sale."
+      },
+      {
+        "route": "Local race and charity workout organisers",
+        "whoPays": "The event organiser",
+        "min": 1200,
+        "max": 3500,
+        "unit": "one-time",
+        "pitchLine": "\"The charity workout or fun run your gym enters every year still signs people up on paper. I'll build registration and heats.\"",
+        "whyItWorks": "Organisers lean on gyms for participants and volunteers, and the gym owner's word gets you in."
+      },
+      {
+        "route": "Massage and recovery studios",
+        "whoPays": "The studio, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The recovery studio your members visit after heavy weeks needs online booking. Your recommendation does the selling.\"",
+        "whyItWorks": "Recovery studios rely on gym referrals, and owners in fitness know each other."
+      },
+      {
+        "route": "The commercial landlord of the gym's unit",
+        "whoPays": "The landlord or property manager",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"Warehouse bays like the one your CrossFit box rents sit empty for months with only a sign on the roll-up door. A bay listing page with power, ceiling height and parking would fix that.\"",
+        "whyItWorks": "Landlords pay to fill bays, and a gym tenant that pays rent and draws traffic is a credible introduction."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Intake request assistant for the physical therapy clinic",
+        "whoPays": "The clinic, monthly",
+        "min": 150,
+        "max": 350,
+        "unit": "monthly",
+        "pitchLine": "\"A lifter describes what hurts and when, and the clinic gets a clean appointment request at any hour instead of a voicemail.\"",
+        "whyItWorks": "It never diagnoses; it collects and books. Clinics lose patients to slow callbacks."
+      },
+      {
+        "route": "Macro-matched menu helper for meal prep kitchens",
+        "whoPays": "The meal prep business, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"Customers enter their training goal and the week's meals get suggested from the kitchen's own menu with macros shown.\"",
+        "whyItWorks": "Gym members ask the same 'which meals for cutting' question. Answering it sells bigger weekly orders."
+      },
+      {
+        "route": "Client booking assistant for floor-renting trainers",
+        "whoPays": "Each trainer, monthly",
+        "min": 39,
+        "max": 99,
+        "unit": "monthly",
+        "pitchLine": "\"A trainer's prospects ask about packages and open times, and the assistant answers and books while the trainer coaches.\"",
+        "whyItWorks": "Trainers miss messages mid-session. A low monthly fee is less than one session."
+      },
+      {
+        "route": "Heat and division assistant for event organisers",
+        "whoPays": "The organiser, per event",
+        "min": 400,
+        "max": 1200,
+        "unit": "one-time",
+        "pitchLine": "\"Athletes ask which division and heat they're in and what the standards are, and the assistant answers from the event rules.\"",
+        "whyItWorks": "Event weeks bury organisers in repeat questions. One event pays for it."
+      },
+      {
+        "route": "Booking and rebooking assistant for recovery studios",
+        "whoPays": "The studio, monthly",
+        "min": 79,
+        "max": 199,
+        "unit": "monthly",
+        "pitchLine": "\"Clients ask for a sports massage after leg day and get booked into the next open slot, with a rebook nudge later.\"",
+        "whyItWorks": "Recovery visits are impulsive. Catching the request in the moment is the sale."
+      },
+      {
+        "route": "Unit enquiry assistant for the landlord",
+        "whoPays": "The landlord, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Prospective tenants ask about bay size, roll-up doors and power, and the landlord gets a showing request at any hour.\"",
+        "whyItWorks": "Empty bays cost money every month, and tours are easy to count."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Free class no-show and follow-up texts",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Someone books a free class at the gym and gets a reminder the night before, then a membership offer the day after their workout.\"",
+      "whenAndWhatItTakes": "Day 30. Needs the intro offer, membership options and access to the booking system."
+    },
+    {
+      "name": "Online waiver and drop-in checkout",
+      "kind": "software",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 19,
+      "monthlyMax": 59,
+      "pitchLine": "\"Visitors pay the gym's drop-in fee and sign the waiver on their phone before they walk in, so the coach just says hello.\"",
+      "whenAndWhatItTakes": "At build, or the first time a drop-in arrives mid-warm-up. Needs the waiver wording and drop-in fee."
+    },
+    {
+      "name": "PR and lift log for members",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2500,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Members log squat, deadlift and benchmark workout results in the gym's own log, and the whiteboard PR wall lives online too.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the lifts and benchmark workouts they track."
+    },
+    {
+      "name": "Gym DM answerer for prices and class times",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"'Do I need to be fit to start CrossFit' and 'how much a month' get an honest answer from the gym's own page, with the free class link.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the timetable, membership options and on-ramp details. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Attendance drop-off alerts for coaches",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"A member who used to train three times a week and hasn't checked in for ten days shows up on the coach's list to message.\"",
+      "whenAndWhatItTakes": "Month 2. Needs check-in data from their gym software."
+    },
+    {
+      "name": "Workout programming planner",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 29,
+      "monthlyMax": 99,
+      "pitchLine": "\"The head coach plans the month's strength cycle and workouts in one place, and they publish to the daily workout board automatically.\"",
+      "whenAndWhatItTakes": "Month 3, once the workout board is live. Needs the coach's current programming notes."
+    },
+    {
+      "name": "Front desk phone assistant for the gym",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 199,
+      "monthlyMax": 399,
+      "pitchLine": "\"Mid-class, with music up, the gym phone still gets answered, the membership question handled and the free class booked.\"",
+      "whenAndWhatItTakes": "Month 4, once they trust you. Needs memberships, timetable and booking access. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Nutrition challenge check-in tracker",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Challenge entrants log weekly check-ins and body composition results, and the gym sees a leaderboard instead of a spreadsheet.\"",
+      "whenAndWhatItTakes": "Before the next challenge. Needs challenge rules, scoring and dates."
+    },
+    {
+      "name": "Gym review reply writer",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 49,
+      "monthlyMax": 149,
+      "pitchLine": "\"A member reviews their first deadlift PR, and a reply in the head coach's voice is drafted to approve between classes.\"",
+      "whenAndWhatItTakes": "Month 2, with the review asks. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Workout caption and post drafts",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Tomorrow's gym workout becomes a short post with the scaled version explained, drafted for the coach to approve each evening.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the workout board and past captions. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Coach payroll and class count report",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 29,
+      "monthlyMax": 99,
+      "pitchLine": "\"How many classes each gym coach ran, private sessions included, ready for payroll at the end of every pay period.\"",
+      "whenAndWhatItTakes": "Month 4, for gyms paying coaches per class. Needs pay rates and class history."
+    },
+    {
+      "name": "Freeze-or-downgrade save flow",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"A member trying to cancel their gym membership is offered a freeze or a cheaper plan first. Injuries and busy months often pass.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the freeze rules and the plans they'll offer."
+    },
+    {
+      "name": "Scaling helper for new members",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 99,
+      "monthlyMax": 199,
+      "pitchLine": "\"A new member asks how to scale today's workout for a sore knee or no pull-up yet, and gets the gym's own scaling rules, never medical advice.\"",
+      "whenAndWhatItTakes": "Month 5. Needs the coach's written scaling rules and approval of every answer. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Coaching handbook assistant",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"New gym coaches check how the box warms up, cues lifts and handles a rowdy class, from the owner's own handbook.\"",
+      "whenAndWhatItTakes": "Month 6, for gyms with several coaches. Needs a written handbook and owner sign-off. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Gym retail and supplement shelf ordering",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Members order gym shirts, wraps and protein online for pickup, and the owner sees a reorder list before the shelf empties.\"",
+      "whenAndWhatItTakes": "Month 5, if they sell retail. Needs products and prices."
+    },
+    {
+      "name": "Semi-private training booking",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1800,
+      "monthlyMin": 29,
+      "monthlyMax": 99,
+      "pitchLine": "\"Small-group strength sessions booked and paid as packs, with each coach's open times shown, so the gym sells its highest-margin hour.\"",
+      "whenAndWhatItTakes": "Month 5, when they mention adding semi-private. Needs coach availability and pack prices."
+    },
+    {
+      "name": "Former member comeback offer",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Members who left the gym get a note before January and before the next challenge with a comeback offer and the free class link.\"",
+      "whenAndWhatItTakes": "Month 6. Needs cancelled member history."
+    },
+    {
+      "name": "Member churn risk ranking",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"Each Monday the gym owner sees which members look likely to quit, ranked from check-ins and billing, with a suggested message.\"",
+      "whenAndWhatItTakes": "Month 6, after months of check-in data. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Goal intake summary for coaches",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"A free class booking's answers about goals and injuries become a short brief the coach reads before the newcomer walks into the gym.\"",
+      "whenAndWhatItTakes": "Month 4, once intro bookings carry goal questions. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Open gym key access log",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2500,
+      "monthlyMin": 29,
+      "monthlyMax": 99,
+      "pitchLine": "\"Who opened the gym door after hours and when, tied to the member's account, so late-night open gym access stays safe.\"",
+      "whenAndWhatItTakes": "Month 6, only for gyms with fob or code entry. Needs the access system's export and member list."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the intro booking and on-ramp pages for independent boxes",
+      "whoPays": "Independent gyms, monthly per gym",
+      "min": 39,
+      "max": 129,
+      "unit": "monthly",
+      "pitchLine": "\"I built a free class booking and on-ramp page that sit in front of one gym's software. Every independent box runs the same software and the same weak page.\"",
+      "whyItWorks": "Boxes run on a handful of member systems, so one integration serves many gyms. Owners meet at every local throwdown."
+    },
+    {
+      "route": "Strength coach certification body directory",
+      "whoPays": "The certifying organisation",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"People want a gym with a certified strength coach. A directory tied to your certification records sends them to gyms with your coaches on staff.\"",
+      "whyItWorks": "Certifiers sell courses on career value. Showing that certification brings gym members helps them sell the next course."
+    },
+    {
+      "route": "Equipment supplier gym finder",
+      "whoPays": "The rig and barbell supplier",
+      "min": 5000,
+      "max": 20000,
+      "unit": "one-time",
+      "pitchLine": "\"Your racks and rigs are in hundreds of garages and boxes. A find-a-gym map of your customers makes your brand the one gym owners recommend.\"",
+      "whyItWorks": "Equipment suppliers compete on loyalty, and gyms happily appear on a map that sends them members."
+    },
+    {
+      "route": "Small regional gym chains",
+      "whoPays": "The chain, per location",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "pitchLine": "\"Each of your gym locations needs its own timetable, coaches and free class booking on one shared template. I build it once and roll it out.\"",
+      "whyItWorks": "One contract becomes several locations, and chains already budget for local pages."
+    },
+    {
+      "route": "Agency resale of the gym template",
+      "whoPays": "The agency, per site",
+      "min": 400,
+      "max": 1200,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency takes gym clients and fights their booking software every time. License my template that already hands off to the common gym systems.\"",
+      "whyItWorks": "The software handoff is the hard part, and you've solved it once."
+    },
+    {
+      "route": "Fitness competition series registration",
+      "whoPays": "The series organiser, annually",
+      "min": 3000,
+      "max": 12000,
+      "unit": "per-year",
+      "pitchLine": "\"Every stop in your fitness competition series needs divisions, heats, standards and live results. One platform for the season, from someone who builds for boxes.\"",
+      "whyItWorks": "Series run the same format several times a year, and every gym that competes sees the build."
+    },
+    {
+      "route": "Employer wellness programmes",
+      "whoPays": "The employer's HR or benefits team, annually",
+      "min": 2000,
+      "max": 8000,
+      "unit": "per-year",
+      "pitchLine": "\"Your staff wellness budget could buy group strength training at local independent gyms. A sign-up page that lists participating gyms makes it simple.\"",
+      "whyItWorks": "Employers want wellness uptake they can count, and the gym client is the first participating gym."
+    },
+    {
+      "route": "Strength and conditioning for high school athletics",
+      "whoPays": "The booster club or athletic department, per season",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "pitchLine": "\"Your teams train off-season at a local gym. A sign-up and waiver page for every team's strength block keeps it organised.\"",
+      "whyItWorks": "Athletic departments partner with gyms already, and parents need permission forms in one place."
+    },
+    {
+      "route": "Garage gym and home rig owners",
+      "whoPays": "Individual athletes, small per-year fee",
+      "min": 29,
+      "max": 99,
+      "unit": "per-year",
+      "pitchLine": "\"The PR log and programming planner built for one gym work for garage gym athletes too, sold as a small yearly subscription.\"",
+      "whyItWorks": "The software already exists. Home lifters are a long tail that discovers it through gym members."
+    },
+    {
+      "route": "Martial arts and boxing gyms in the same industrial parks",
+      "whoPays": "Each gym, at your normal rate",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"The boxing and grappling gyms in the bays next to your CrossFit box have the same intro-class problem. I work the park unit by unit.\"",
+      "whyItWorks": "Industrial parks cluster fitness tenants, and the box next door is visible proof."
+    },
+    {
+      "route": "Boxes in other metros",
+      "whoPays": "New gyms in another metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I work with one barbell gym per neighbourhood in {City}. Owners in other cities get the same intro booking and on-ramp setup with no local conflict.\"",
+      "whyItWorks": "Non-competing geography lets you reuse the gym template and the finished proof."
+    },
+    {
+      "route": "Rescue a botched gym software migration",
+      "whoPays": "The stuck gym",
+      "min": 500,
+      "max": 2000,
+      "unit": "one-time",
+      "pitchLine": "\"Switching gym software broke your class links and member sign-ups. I can reconnect the site and the booking flow, because I've done it for another box.\"",
+      "whyItWorks": "Gyms mid-migration are losing sign-ups daily and will pay to stop it."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Gym site build plus care plan, one contract",
+      "min": 1800,
+      "max": 3000,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The gym site and the care plan go on one contract, so a timetable change is a text to me between classes.\""
+    },
+    {
+      "rung": 2,
+      "day": 14,
+      "offer": "Online waiver and drop-in checkout",
+      "min": 300,
+      "max": 900,
+      "unit": "one-time",
+      "trigger": "A drop-in or free class visitor arrives without a waiver signed.",
+      "line": "\"That visitor filling in a waiver mid-warm-up is exactly what an online gym waiver fixes.\""
+    },
+    {
+      "rung": 3,
+      "day": 30,
+      "offer": "Free class no-show and follow-up texts",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "trigger": "A month of free class bookings shows no-shows and visitors who never joined.",
+      "line": "\"Those free class visitors liked the workout. A reminder and a next-day offer brings more of them back to the gym.\""
+    },
+    {
+      "rung": 4,
+      "day": 45,
+      "offer": "Review asks after a member's first month",
+      "min": 49,
+      "max": 129,
+      "unit": "monthly",
+      "trigger": "The first members who joined through the site hit thirty days.",
+      "line": "\"New gym members at day thirty are proud and sore. That's when they'll write a review.\""
+    },
+    {
+      "rung": 5,
+      "day": 75,
+      "offer": "Nutrition challenge check-in tracker and launch kit",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "trigger": "They mention planning the next six-week challenge.",
+      "line": "\"Let's run the gym's next challenge with online sign-up and a leaderboard instead of a spreadsheet.\""
+    },
+    {
+      "rung": 6,
+      "day": 90,
+      "offer": "Attendance drop-off alerts for coaches",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "trigger": "They mention a regular who quietly stopped coming.",
+      "line": "\"The coach finds out a member's slipping in week two, not when the cancellation arrives.\""
+    },
+    {
+      "rung": 7,
+      "day": 120,
+      "offer": "January and post-summer gym ad campaigns",
+      "min": 500,
+      "max": 1000,
+      "unit": "monthly",
+      "trigger": "It's late October and intro slots for January are open.",
+      "line": "\"The January gym rush is coming. Let's point local ads at the free class booking before it starts.\""
+    },
+    {
+      "rung": 8,
+      "day": 180,
+      "offer": "Introduction to the physical therapy clinic",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "trigger": "They mention sending an injured member to a clinic they trust.",
+      "line": "\"The clinic you send sore shoulders to needs a lifter-friendly site. Would you introduce me?\""
+    }
+  ]
+}
