@@ -1,0 +1,851 @@
+{
+  "schemaVersion": 1,
+  "category": "Videographers",
+  "slug": "videographers",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Event family batch. Two pitches in one file: wedding and event films, and real estate and drone video. Demo uses marked placeholders, never their films, until written permission. Drone credentials stay as placeholders. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Highlight film or full-length edit",
+      "contains": "Teaser, highlight film, full ceremony and speeches edit, raw footage, what each film length is for, and delivery time in weeks",
+      "why": "Couples don't know the difference between a highlight and a documentary edit. Explaining film lengths is what moves them up a package."
+    },
+    {
+      "section": "Vows and speeches audio",
+      "contains": "Lapel mics on the officiant and groom, a feed from the DJ board for speeches, backup recorders, and what happens on a windy ceremony lawn",
+      "why": "The fear behind every wedding video enquiry is not hearing the vows. A plain audio plan answers it before the couple asks."
+    },
+    {
+      "section": "Real estate listing video packages",
+      "contains": "Walkthrough video, drone exterior, agent on-camera intro, vertical listing reels, turnaround in hours, and an unbranded cut for the listing service",
+      "why": "Listing agents buy on turnaround and price per listing. A page that answers both gets the repeat agent, which is the steady half of the business."
+    },
+    {
+      "section": "Drone flights and airspace",
+      "contains": "Aerial footage of venues and properties, [remote pilot certificate] placeholder, airspace and weather limits, and what happens if the drone can't fly",
+      "why": "Venues and agents ask whether a drone flight is legal and insured. Saying how flights are cleared removes the doubt without overpromising."
+    },
+    {
+      "section": "Company and event recap films",
+      "contains": "Conference recaps, brand story films, customer testimonial videos, a quote request with deadline, usage rights and where the video will run",
+      "why": "Corporate buyers fill weekdays between wedding weekends. They decide on deadline and usage, so the request form has to ask for both."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C45",
+      "siteType": "local-conversion",
+      "name": "Film Date Check",
+      "heroLayout": "split-photo",
+      "mood": [
+        "bold",
+        "organised",
+        "upbeat"
+      ],
+      "bestFor": "Instagram-first wedding videographers who need packages and a date check more than a showreel",
+      "pairsWithTier": "starter",
+      "headlineSample": "Wedding videographer in {City}. Check your date.",
+      "whyItFits": "The family combo, used where the job is turning reel viewers into enquiries. Poster type and a strong accent keep Check my date beside one film still."
+    },
+    {
+      "id": "b",
+      "themeId": "C48",
+      "siteType": "portfolio-showcase",
+      "name": "Screening Room",
+      "heroLayout": "full-bleed-photo",
+      "mood": [
+        "cinematic",
+        "moody",
+        "intimate"
+      ],
+      "bestFor": "Wedding filmmakers whose highlight films do the selling and who book on style",
+      "pairsWithTier": "standard",
+      "headlineSample": "Wedding films from {City}, made to be rewatched",
+      "whyItFits": "Not the family combo: video plays best on a dark page, like a screening. Noir with a Didone display frames each film without competing with it."
+    },
+    {
+      "id": "c",
+      "themeId": "C6",
+      "siteType": "b2b-capability",
+      "name": "Listing & Brand Video",
+      "heroLayout": "card-stack",
+      "mood": [
+        "crisp",
+        "reliable",
+        "fast"
+      ],
+      "bestFor": "Videographers selling real estate, drone and company video to agents and businesses on a retainer",
+      "pairsWithTier": "premium",
+      "headlineSample": "Listing, drone and brand video for {City} businesses",
+      "whyItFits": "Cobalt and a neo-grotesque read like a dependable vendor, and the card stack sets out packages, turnaround and the brokerage retainer."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "Instagram is the whole business",
+      "line": "Your wedding films live on Instagram as short reels, and a couple who loves one has nowhere to see a full highlight film, your packages or whether you're free on their date.",
+      "hook": "Tap their bio link. If it goes to a DM prompt, a link page or nowhere, the angle holds.",
+      "linkLine": "Your wedding films with packages and a date check: {demo-link}"
+    },
+    {
+      "angle": "No Website button",
+      "line": "Your Maps listing as a videographer has reviews and a phone number but no website. A listing agent or a couple searching for video in {City} can't see a single film from there.",
+      "hook": "Open their Maps listing and confirm there is no Website button. Screenshot it for when they reply.",
+      "linkLine": "The video site that would sit behind that button: {demo-link}"
+    },
+    {
+      "angle": "Films parked on a video channel",
+      "line": "Your highlight films sit on a video channel between other people's suggested videos. Couples who finish your film get offered someone else's wedding next.",
+      "hook": "Find their video channel link and note what plays after their newest wedding film.",
+      "linkLine": "Your wedding films on a page where yours is the only one: {demo-link}"
+    },
+    {
+      "angle": "Showreel stalls on a phone",
+      "line": "I opened your videography site on my phone and the autoplay showreel stalled before the first cut. Couples and agents both check video vendors from their phones.",
+      "hook": "Only if they have a site. Load it on your phone and time the reel. Screenshot it for when they reply.",
+      "linkLine": "The same films, built to play on a phone: {demo-link}"
+    },
+    {
+      "angle": "No starting price",
+      "line": "There's no starting price for a wedding film anywhere I could find. Couples who budget for video late in planning skip the videographer who makes them ask.",
+      "hook": "Check the bio, the site and any pricing guide for a 'from' figure. If there is none, the angle holds.",
+      "linkLine": "A wedding video page with honest starting prices: {demo-link}"
+    },
+    {
+      "angle": "Listing agents can't find packages",
+      "line": "You shoot real estate video too, but there's no page where a listing agent can see the walkthrough and drone package, the turnaround and how to book a shoot.",
+      "hook": "Look for listing videos or agent tags in their posts. Note one property they filmed.",
+      "linkLine": "A real estate video page agents can book from: {demo-link}"
+    },
+    {
+      "angle": "Reviews that mention the vows",
+      "line": "One of your reviews says the couple cried hearing their vows again in the film. That's the line a couple deciding whether video is worth it needs to read next to your packages.",
+      "hook": "Read their reviews and copy one phrase about the film, the audio or the experience. Quote it back if they reply.",
+      "linkLine": "Your reviews beside the wedding films they describe: {demo-link}"
+    },
+    {
+      "angle": "Spring listing season",
+      "line": "Spring listing season is when agents need walkthrough video back fast. A videographer with packages and booking online gets the agents who can't wait for a callback.",
+      "hook": "Use this from February to May. Check whether they've posted listing videos recently.",
+      "linkLine": "Listing video packages ready for spring: {demo-link}"
+    },
+    {
+      "angle": "Late-night film enquiries",
+      "line": "Couples ask about wedding video late at night, often after they've booked the photographer. If they wait until you're done editing the next day, someone else's film has already played.",
+      "hook": "Look for comments asking 'how much for video' or 'are you available'. Note one with its time.",
+      "linkLine": "A videography page that answers with packages straight away: {demo-link}"
+    },
+    {
+      "angle": "Hiring an editor",
+      "line": "Saw you're hiring an editor or second shooter. Good video people look at how established a studio looks before they commit their weekends or their evenings.",
+      "hook": "Only if they posted for an editor, second shooter or assistant. Note the date.",
+      "linkLine": "A videography site with a crew and careers page: {demo-link}"
+    },
+    {
+      "angle": "Destination wedding films",
+      "line": "Your films include a couple of destination weddings, but nothing says you travel or how travel is priced. Couples marrying out of state want a videographer who says so.",
+      "hook": "Look for destination or out-of-state weddings in their posts. Name one if they reply.",
+      "linkLine": "A destination wedding film page with travel pricing: {demo-link}"
+    },
+    {
+      "angle": "Splitting the film payment",
+      "line": "Wedding video is often one of the last vendors couples book, when budgets are tight. A clear retainer and payment schedule makes your film easier to fit in.",
+      "hook": "Look for 'payment plan' or 'retainer' in their pricing info. Note what they publish and never invent terms.",
+      "linkLine": "A wedding film package page with the payment schedule explained: {demo-link}"
+    },
+    {
+      "angle": "Drone flights explained",
+      "line": "Your venue drone shots are great, and venues and agents will ask whether those flights are cleared and insured. A short drone page on the site answers before they ask.",
+      "hook": "Check whether they mention drone certification or insurance. Never state a credential they haven't published.",
+      "linkLine": "Your drone video with flight rules answered: {demo-link}"
+    },
+    {
+      "angle": "Photographer referrals only",
+      "line": "It looks like most of your wedding films come through photographers who recommend you. Couples who book their photographer without a video partner still need to find you.",
+      "hook": "Look for photographers they tag or thank. Name the relationship if they reply.",
+      "linkLine": "Where a couple would find your wedding films on their own: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "That {specific recent job} you posted is a beautiful film. A highlight film like that should play first on your own site, with the venue named, not between other people's reels.",
+      "hook": "Pick their newest posted film and name it exactly: the venue, the couple's moment or the property.",
+      "linkLine": "That film, front and centre: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner} — that {specific recent job} you posted is a beautiful film.\n\nI looked for a website for {Business Name} and only found reels, with no packages or way to check a date. I put together a sample videography site with film packages, a date check and a listing video page, with marked placeholders where your photos would go and marked film slots. I never use anyone's work without written permission.\n\nWould you like me to send it over?",
+    "dm2": "{Owner} — following up in case my message got buried in your edit queue. Here's the sample videography site for {Business Name}: {demo-link}\n\nIt has wedding film packages, a vows audio section, a date check and a separate page for real estate and drone video. Every film slot is a marked placeholder until you choose what goes there. If it's not for you, say so and I won't message again.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for videographers around {City}. I sent you a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"Easy to miss mid-edit. Short version: I built a sample site for {Business Name} with wedding film packages, a date check and a real estate video page. The film slots are marked placeholders, none of your work is on it. Can I email you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n → ask: \"Which pays the bills more reliably right now, weddings or listing agents?\"\n\"The build runs {Build Range}, then {Care Range} a month for hosting, new films and price changes. For a videographer doing both, I'd normally quote about {Build Price}.\"\n\"Can we look at it together for fifteen minutes on a weekday?\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. You choose the films for the site and confirm in writing that I can use them.\"",
+    "objections": [
+      {
+        "objection": "My reels do all my marketing.",
+        "handler": "\"They find people. A couple who loves a reel still wants a full highlight film, packages and a date check before they pay a retainer. The site is where the reel sends them.\""
+      },
+      {
+        "objection": "My films are already on my video channel.",
+        "handler": "\"Keep them there. The site embeds them on a page with only your work, your packages and a booking button, so nothing else autoplays after your film.\""
+      },
+      {
+        "objection": "Wedding and real estate are too different for one site.",
+        "handler": "\"Agreed, so they get separate pages with separate booking. Couples see films and packages, agents see turnaround and listing prices. One site, two front doors.\""
+      },
+      {
+        "objection": "I don't want my films used without permission.",
+        "handler": "\"They aren't. The demo has marked placeholders where your photos would go and marked film slots. Nothing of yours is used until you pick the films and confirm in writing.\""
+      },
+      {
+        "objection": "Couples mostly find me through photographers.",
+        "handler": "\"Keep that. The site gives those photographers a link to send, and catches the couples who booked a photographer without a video partner.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}, because it's wedding packages, a date check and a listing video page. One wedding film covers it.\""
+      }
+    ],
+    "email": {
+      "subject": "Video site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for videographers around {City}. {Business Name} makes beautiful films, but there's no site where a couple can see packages and check a date, or where a listing agent can book a walkthrough.\n\nI built a sample first rather than ask for your time: wedding film packages, a vows audio section, a date check, and a separate real estate and drone video page, with marked placeholders where your photos would go and marked film slots. I never use anyone's work without written permission:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting, new films and price changes. If not, no problem, it comes down at the end of the month.\n\nWorth fifteen minutes on a weekday?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build websites for videographers in {City}, and I put together a sample for {Business Name} with film packages, a date check and a listing video page. I'll email you the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner} — I'm taking the {Business Name} videography demo down on Friday to free up the space.\n\nWant me to leave it up? One word is fine either way.",
+    "nurture": "Hi {Owner} — couples start booking wedding video soon after the holidays, and agents gear up for spring listings around the same time. Thought of you.\n\nThe sample site is still here, film slots still marked placeholders, and nothing's changed on price. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Price wedding video pages against one highlight film package, and real estate pages against a month of listing shoots.",
+      "Build film pages around fast-loading embeds, not autoplay reels. That engineering is real work and belongs in the build price.",
+      "Wedding and real estate get separate booking flows. Quote the second audience as its own line.",
+      "A brokerage retainer page is worth more than another wedding gallery. Price it to the agent volume it can bring.",
+      "Keep monthly add-ons below the price of one listing walkthrough.",
+      "Sell wedding work in the winter and listing work in late winter, ahead of spring."
+    ],
+    "lineItems": [
+      {
+        "item": "Wedding film page (each film)",
+        "min": 100,
+        "max": 300,
+        "unit": "per-page",
+        "description": "Max with the venue named, vendor credits, a short story of the day and the couple's written permission on file.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Real estate video booking page",
+        "min": 400,
+        "max": 1200,
+        "unit": "one-time",
+        "description": "Max with package pricing by home size, drone add-ons, turnaround options and a shoot request that takes the listing address.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Film package comparison and pricing guide",
+        "min": 300,
+        "max": 900,
+        "unit": "one-time",
+        "description": "Max with teaser, highlight, documentary and raw footage options and a guide sent from a date-and-email form.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Drone flight and airspace page",
+        "min": 200,
+        "max": 600,
+        "unit": "per-page",
+        "description": "Max with sample aerials for venues and homes, [remote pilot certificate] placeholder and a no-fly policy.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Company and event recap film page",
+        "min": 300,
+        "max": 900,
+        "unit": "per-page",
+        "description": "Max with case films by industry, usage rights options and a quote form asking deadline and where the video will run.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Private film delivery page for couples",
+        "min": 300,
+        "max": 800,
+        "unit": "one-time",
+        "description": "Max with a password-protected page per couple, download links and a share version for family.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Google profile upkeep for the video studio",
+      "min": 150,
+      "max": 300,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A new wedding film still or listing video on your Google profile every week, with the venue or neighbourhood named, so people searching for a videographer see you working.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Review requests after film delivery",
+      "min": 49,
+      "max": 129,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Once the film is delivered and they've cried through the vows twice, a short message asks the newlyweds to say so in a review.\"",
+      "when": "Day 30. The easiest second sale."
+    },
+    {
+      "name": "Brokerage office presentation for listing video",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A short deck and one-page rate card for a brokerage sales meeting, so every agent in the office sees your listing video packages at once.\"",
+      "when": "Month 2, in late winter before spring listings. Needs one friendly agent to get them in the room."
+    },
+    {
+      "name": "Vertical teaser posting schedule",
+      "min": 200,
+      "max": 500,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"You cut the wedding film, I plan and post the vertical teasers and listing reels across the month, each with the venue or address tagged.\"",
+      "when": "Month 3, if they say posting is what slips during wedding season."
+    },
+    {
+      "name": "Bridal show screening booth kit",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A looping highlight film on a screen, a date-check card and a sign-up code, so couples who stop to watch your wedding video leave as enquiries.\"",
+      "when": "Six weeks before their first winter bridal show."
+    },
+    {
+      "name": "Venue film pages, one a month",
+      "min": 300,
+      "max": 800,
+      "unit": "monthly",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Each month, a page for one venue you've filmed at with that wedding film, so couples searching the venue and videographer find you.\"",
+      "when": "Month 3, once they list venues and couples who gave permission."
+    },
+    {
+      "name": "Photo-and-film bundle page with partner photographers",
+      "min": 300,
+      "max": 700,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A shared page with the photographers you film beside, showing the wedding photo and video bundle and one date check for both.\"",
+      "when": "Month 4, when they name a photographer they book with often."
+    },
+    {
+      "name": "Engagement season wedding film push",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A January push to newly engaged couples with a short highlight film and open dates, before they spend the video budget on something else.\"",
+      "when": "Pitch in October, run January to March."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Single-property sites for listing agents",
+        "whoPays": "The listing agent, per listing",
+        "min": 300,
+        "max": 800,
+        "unit": "per-job",
+        "pitchLine": "\"Every home you film for an agent could have its own property site with the walkthrough video, drone shots and a showing request.\"",
+        "whyItWorks": "Agents already pay the videographer per listing. A property site is an easy add-on through the same relationship."
+      },
+      {
+        "route": "Brokerage recruiting site",
+        "whoPays": "The brokerage",
+        "min": 3000,
+        "max": 8000,
+        "unit": "one-time",
+        "pitchLine": "\"The brokerage your agents work under needs a recruiting site that shows agents what marketing they get, starting with your listing video.\"",
+        "whyItWorks": "Brokerages compete for agents on marketing support. The videographer is already in the office."
+      },
+      {
+        "route": "Wedding DJs who feed the speeches audio",
+        "whoPays": "The DJ, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The DJ whose board you pull the speeches audio from every weekend has the same date-check problem. You can introduce me at the next reception.\"",
+        "whyItWorks": "DJs and videographers work side by side all night and refer couples to each other."
+      },
+      {
+        "route": "Home stagers in the listing videos",
+        "whoPays": "The stager, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The home stager whose rooms you film for listing video has no portfolio site. Your walkthroughs, with their OK, are the before-and-after.\"",
+        "whyItWorks": "Stagers sell to the same agents. A videographer's footage of their work is the proof they lack."
+      },
+      {
+        "route": "Venues the videographer films at often",
+        "whoPays": "The venue owner",
+        "min": 2500,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"The venue where you film weddings every month has no site that shows the day in motion. You can introduce me to the owner.\"",
+        "whyItWorks": "Videographers know which venues are under-served and can supply a venue film with permission."
+      },
+      {
+        "route": "Conference organisers who hire event video",
+        "whoPays": "The conference organiser",
+        "min": 2000,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"The conference you film each year sells tickets from a dated page. A registration site with last year's recap video would sell next year's event.\"",
+        "whyItWorks": "Organisers trust the person who filmed their event and already have the recap to build around."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Listing description writer for agents",
+        "whoPays": "The agent, monthly",
+        "min": 49,
+        "max": 149,
+        "unit": "monthly",
+        "pitchLine": "\"From the walkthrough video and the property details, the agent gets a listing description draft and a caption for the listing reel.\"",
+        "whyItWorks": "Agents write descriptions for every listing. It sits naturally next to the video they already buy."
+      },
+      {
+        "route": "Agent recruiting assistant for brokerages",
+        "whoPays": "The brokerage, monthly",
+        "min": 199,
+        "max": 499,
+        "unit": "monthly",
+        "pitchLine": "\"Agents thinking of switching ask about splits, training and marketing support any hour, and the broker gets a meeting request.\"",
+        "whyItWorks": "Recruiting is how brokerages grow. The videographer's office relationships open the door."
+      },
+      {
+        "route": "Reception song request planner for DJs",
+        "whoPays": "The DJ, monthly",
+        "min": 49,
+        "max": 129,
+        "unit": "monthly",
+        "pitchLine": "\"Couples answer a few questions about their crowd, and the DJ gets a draft wedding reception playlist and run of show to review.\"",
+        "whyItWorks": "DJs plan every wedding the same way by hand. The videographer sees them at work every weekend."
+      },
+      {
+        "route": "Staging quote assistant for home stagers",
+        "whoPays": "The stager, monthly",
+        "min": 79,
+        "max": 199,
+        "unit": "monthly",
+        "pitchLine": "\"An agent uploads room pictures of a vacant listing, and the stager gets a draft furniture plan and quote to check.\"",
+        "whyItWorks": "Stagers quote from pictures under deadline. Faster quotes mean more staged listings the videographer then films."
+      },
+      {
+        "route": "Tour request assistant for filmed venues",
+        "whoPays": "The venue, monthly",
+        "min": 149,
+        "max": 349,
+        "unit": "monthly",
+        "pitchLine": "\"Couples who watch the venue's wedding film can ask about dates and capacity right away and book a tour, at any hour.\"",
+        "whyItWorks": "The venue film creates the interest. An assistant catches it before the couple moves on."
+      },
+      {
+        "route": "Attendee question assistant for conference organisers",
+        "whoPays": "The organiser, per event",
+        "min": 500,
+        "max": 2000,
+        "unit": "per-job",
+        "pitchLine": "\"Attendees ask about sessions, parking and tickets and get answers from the conference's own details, with last year's recap video linked.\"",
+        "whyItWorks": "Organisers drown in repeat questions before an event. The videographer is already a trusted vendor."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Instant film package reply",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 600,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"A couple who asks about wedding video gets your film packages, a highlight film link and a call slot within a minute, even while you're filming.\"",
+      "whenAndWhatItTakes": "At build. Needs the package guide and the reply wording they'd write themselves."
+    },
+    {
+      "name": "Listing shoot booking with access notes",
+      "kind": "software",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Agents book the real estate video shoot with the address, lockbox and drone add-on in one form, and get a confirmation with the turnaround.\"",
+      "whenAndWhatItTakes": "Month 1, before spring listings. Needs their packages by home size and shoot calendar."
+    },
+    {
+      "name": "Film contract and retainer signing",
+      "kind": "software",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Film agreement, e-signature and retainer in one link sent after the consult, so the filming date is locked that evening.\"",
+      "whenAndWhatItTakes": "Month 1. Needs their contract, reviewed by their own attorney, and a payment account."
+    },
+    {
+      "name": "Film and listing video enquiry answerer",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"Couples asking about a highlight film and agents asking about next-day walkthrough video each get answers from your own packages and calendar.\"",
+      "whenAndWhatItTakes": "Month 2. Needs both price lists and calendar access, updated with every change. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Wedding film payment reminders",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Instalments for the film package go out as friendly nudges with a pay link, and the final balance clears weeks before you roll a camera.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the payment schedule per contract."
+    },
+    {
+      "name": "Vows and speeches captions",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 49,
+      "monthlyMax": 149,
+      "pitchLine": "\"The vows and speeches in every wedding film get a caption draft for you to check, so grandparents can follow every word.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the audio files from each film. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Agent turnaround and rush-order tracker",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Every listing video shows its due time, rush fee and edit status, so the agent with a Thursday open house never has to text you.\"",
+      "whenAndWhatItTakes": "Month 3, once they film for several agents a week. Needs their turnaround rules."
+    },
+    {
+      "name": "Couple music and moments questionnaire",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 29,
+      "monthlyMax": 99,
+      "pitchLine": "\"Before the wedding, the couple picks the film's mood, the moments that matter and who must be in it, and you get one sheet for the day.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the questions they ask now and their film styles."
+    },
+    {
+      "name": "Footage logging and selects assistant",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"After a wedding, the footage comes back logged by moment, with suggested selects for the highlight film, so the edit starts from a shortlist.\"",
+      "whenAndWhatItTakes": "Month 4. Needs a few logged weddings to learn their style. Every cut stays theirs. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Agent account billing by listing",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 29,
+      "monthlyMax": 99,
+      "pitchLine": "\"Each agent or brokerage gets one monthly invoice listing every property video, so busy agents pay once instead of per shoot.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their agent list and billing terms."
+    },
+    {
+      "name": "Listing reel captions for the studio's posts",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Post a listing reel or wedding teaser and get a caption that tags the agent or venue and names the neighbourhood, ready to approve.\"",
+      "whenAndWhatItTakes": "Month 3. Needs past captions and tagging rules. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Family share link and download expiry notes",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 600,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Couples get a share link for family once the wedding film is delivered, and a reminder to download it before the delivery link expires.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their delivery method and how long files stay up."
+    },
+    {
+      "name": "Drone flight log and pre-flight checklist",
+      "kind": "software",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Every drone flight over a venue or listing gets logged with location, weather and the airspace check, ready if a venue or agent asks.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their current checklist and insurance details as placeholders until they confirm them."
+    },
+    {
+      "name": "Film review reply drafts",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 49,
+      "monthlyMax": 149,
+      "pitchLine": "\"Each review of a wedding film or listing video gets a reply drafted that names the venue or property, ready to approve between edits.\"",
+      "whenAndWhatItTakes": "Month 2, with the review requests. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Crew and camera kit weekend calendar",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Which shooter, which cameras and which drone go to each wedding or listing shoot, planned before the weekend so nothing is double-booked.\"",
+      "whenAndWhatItTakes": "Month 6, once they run a second shooter. Needs the crew list and kit inventory."
+    },
+    {
+      "name": "Missed-call text-back for video enquiries",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 149,
+      "monthlyMax": 349,
+      "pitchLine": "\"Mid-ceremony with the gimbal in hand, a missed ring from an agent or bride triggers an instant reply offering open shoot days and a quick call.\"",
+      "whenAndWhatItTakes": "Month 5. Needs packages, calendar and escalation rules. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Company video quote builder from a brief",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"A business describes the event recap or brand film it wants, and you get a draft scope with shoot days, edit time and usage to check.\"",
+      "whenAndWhatItTakes": "Month 6, once corporate work is regular. Needs past quotes and day rates. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Anniversary rewatch note",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 600,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"A year after the wedding, the film link lands in their inbox again with an offer to film the family next.\"",
+      "whenAndWhatItTakes": "Month 6. Needs past wedding dates and a follow-on offer."
+    },
+    {
+      "name": "Licensed music tracker per film",
+      "kind": "software",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Every song in every wedding film and listing video is logged with its licence, so a takedown notice never surprises a couple.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their music sources and a list of past films."
+    },
+    {
+      "name": "Edit style answers for contract editors",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Contract editors ask how you open a highlight film, grade skin tones or cut the speeches, and get your own written method.\"",
+      "whenAndWhatItTakes": "Month 8, once they outsource edits. Needs their notes and approval of every answer. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise listing video booking for real estate videographers",
+      "whoPays": "Real estate videographers, monthly",
+      "min": 39,
+      "max": 149,
+      "unit": "monthly",
+      "pitchLine": "\"I built listing video booking with access notes and rush tracking for one videographer. Every real estate shooter juggles the same agent texts.\"",
+      "whyItWorks": "Real estate video is a volume business with the same workflow everywhere. The first client paid for it."
+    },
+    {
+      "route": "Productise the wedding film date check",
+      "whoPays": "Wedding videographers, monthly",
+      "min": 39,
+      "max": 149,
+      "unit": "monthly",
+      "pitchLine": "\"Wedding videographers who live on reels need packages, a date check and a contract. I can set that up in a week for each one.\"",
+      "whyItWorks": "Many are Instagram-only and easy to find. A ready kit removes the build cost that stops them."
+    },
+    {
+      "route": "Brokerage-wide listing video programme",
+      "whoPays": "The brokerage, annually",
+      "min": 5000,
+      "max": 20000,
+      "unit": "per-year",
+      "pitchLine": "\"Every agent in the brokerage books listing video and property sites through one portal, billed to the office.\"",
+      "whyItWorks": "Brokerages buy marketing for agents in bulk, and the videographer client is already their vendor."
+    },
+    {
+      "route": "White-label videographer template for agencies",
+      "whoPays": "The agency, per site",
+      "min": 400,
+      "max": 1200,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency builds showreel sites with no booking. License my two-audience videographer template with wedding and listing flows built in.\"",
+      "whyItWorks": "Agencies sell the design. You sell them the two booking paths they don't know how to build."
+    },
+    {
+      "route": "Site kit for a filmmaking course",
+      "whoPays": "The course creator",
+      "min": 2000,
+      "max": 8000,
+      "unit": "one-time",
+      "pitchLine": "\"Your wedding filmmaking students finish with skills and no booking site. Bundle a ready videographer site kit into the course.\"",
+      "whyItWorks": "Course creators sell outcomes, and a ready site is one their students can show."
+    },
+    {
+      "route": "Drone service operators",
+      "whoPays": "Each operator, at your normal rate",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"Drone pilots doing roof inspections and site surveys need the same drone flight page and booking flow I built for a videographer.\"",
+      "whyItWorks": "The airspace page and booking logic carry over almost unchanged."
+    },
+    {
+      "route": "Real estate photographers adding video",
+      "whoPays": "Each photographer, at your normal rate",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"Listing photographers adding walkthrough video need the same agent booking and rush tracking. Same template, new name.\"",
+      "whyItWorks": "Same agent buyers, same turnaround pressure, and they look for a ready answer."
+    },
+    {
+      "route": "Multi-shooter film studios",
+      "whoPays": "The studio, per filmmaker page",
+      "min": 300,
+      "max": 900,
+      "unit": "per-page",
+      "pitchLine": "\"Every shooter on the studio roster gets a reel page and a calendar of free dates, and couples book any of them through the studio.\"",
+      "whyItWorks": "Studios grow by adding shooters. Every new filmmaker is another page."
+    },
+    {
+      "route": "Listing media franchise territories",
+      "whoPays": "The franchise, per territory",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "pitchLine": "\"Each territory owner needs listing video booking for their own agents on the brand's site. I build the territory page once and roll it out.\"",
+      "whyItWorks": "One contract becomes many territories on the same template."
+    },
+    {
+      "route": "Filmmaker finder for a camera and lens rental house",
+      "whoPays": "The rental house",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"The rental house every local videographer rents lenses from could list them for clients who ask who to hire.\"",
+      "whyItWorks": "Rental houses want loyal pro customers, and sending them work is the strongest loyalty they can offer."
+    },
+    {
+      "route": "Wedding and listing video studios in another metro",
+      "whoPays": "New videographer clients elsewhere",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"Agents and couples in {City} hire videographers who can drive there that morning, so a studio a few hours away is a clean second client for the same build.\"",
+      "whyItWorks": "Both markets are local by drive time, so the template and proof travel without conflict."
+    },
+    {
+      "route": "Finish abandoned film portfolio rebuilds",
+      "whoPays": "The stuck videographer",
+      "min": 500,
+      "max": 2000,
+      "unit": "one-time",
+      "pitchLine": "\"You started a new videography site and the showreel still doesn't load right. I can finish it with booking working on both sides.\"",
+      "whyItWorks": "Half-finished rebuilds are common among filmmakers, and these owners have already decided to pay."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Videography site build plus care plan, one contract",
+      "min": 1800,
+      "max": 3000,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo and confirm in writing which films to use.",
+      "line": "\"The videography site and the care plan go on one contract, so a new film or package price is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 14,
+      "offer": "Listing shoot booking with access notes",
+      "min": 500,
+      "max": 1500,
+      "unit": "one-time",
+      "trigger": "They mention an agent texting a lockbox code at night or a missed listing shoot.",
+      "line": "\"That agent's lockbox text belongs in a listing video booking form, not your messages.\""
+    },
+    {
+      "rung": 3,
+      "day": 30,
+      "offer": "Review requests after film delivery",
+      "min": 49,
+      "max": 129,
+      "unit": "monthly",
+      "trigger": "A couple sends a message saying they've watched their wedding film several times.",
+      "line": "\"That couple can't stop rewatching their film. Let's ask for the review now.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Brokerage office presentation for listing video",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "trigger": "Sixty days of form data show several shoot requests from agents at the same brokerage.",
+      "line": "\"Several agents from one brokerage booked listing video. Let's get in front of the whole office.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Vows and speeches captions",
+      "min": 300,
+      "max": 900,
+      "unit": "one-time",
+      "trigger": "A couple asks for captions so older relatives can follow the wedding film.",
+      "line": "\"Captions on the vows let grandparents follow every word of the film.\""
+    },
+    {
+      "rung": 6,
+      "day": 150,
+      "offer": "Agent account billing by listing",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "trigger": "They have regular agents and mention chasing payments per listing video.",
+      "line": "\"One invoice a month per agent ends chasing payment for every listing video.\""
+    },
+    {
+      "rung": 7,
+      "day": 240,
+      "offer": "Introduction to the brokerage for a recruiting site",
+      "min": 3000,
+      "max": 8000,
+      "unit": "one-time",
+      "trigger": "The broker or office manager has praised their listing video publicly or in person.",
+      "line": "\"The broker likes your listing video. Would you introduce me about their recruiting site?\""
+    }
+  ]
+}

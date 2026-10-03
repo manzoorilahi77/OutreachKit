@@ -1,0 +1,883 @@
+{
+  "schemaVersion": 1,
+  "category": "Wedding & event venues",
+  "slug": "wedding-event-venues",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Event family batch. High value per booking, so the tour request is the conversion. No wedding marketplaces or listing sites named. Capacity and alcohol rules stay as placeholders. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Spaces, capacity and the rain plan",
+      "contains": "Ceremony lawn, barn or reception hall, cocktail patio and bridal suite, each with seated and standing capacity as [capacity], and where the ceremony moves if it rains",
+      "why": "Couples rule a venue out on guest count and rain first. A clear capacity and rain plan keeps them on the page long enough to book a tour."
+    },
+    {
+      "section": "Tour booking and open house dates",
+      "contains": "Private tour slots, open house weekends, how long a walk-through takes, who to bring, and what the coordinator will ask about the date",
+      "why": "Nobody books a venue unseen. The tour is the real conversion, and couples pick the venue that makes the visit easy to schedule."
+    },
+    {
+      "section": "Friday, Sunday and off-season dates",
+      "contains": "Weekday and winter date pricing, open dates in the next few months, micro-wedding and elopement slots, and rehearsal dinner add-ons",
+      "why": "Saturdays in peak months sell themselves. The open Fridays, Sundays and winter dates are where a good page earns the venue money."
+    },
+    {
+      "section": "Vendor rules and load-in",
+      "contains": "Approved caterers and bar service, outside-vendor fees, vendor insurance requirements, load-in and load-out times, open flame, sparkler and confetti rules",
+      "why": "Couples and their planners ask these before signing. Answering them up front stops a booking stalling on a caterer the venue won't allow."
+    },
+    {
+      "section": "Guest stay, parking and shuttle",
+      "contains": "On-site cottage or bridal suite overnight, nearby hotel blocks, shuttle drop-off, parking for guests, and the music cut-off and last-call times",
+      "why": "Rural barns and estates lose couples over logistics. Showing where guests sleep and park answers the worry the parents raise."
+    },
+    {
+      "section": "Showers, rehearsal dinners and company parties",
+      "contains": "Bridal showers, rehearsal dinners, holiday parties and company retreats with weekday packages, AV, and the smaller rooms that suit them",
+      "why": "A wedding venue's quiet weekdays are a corporate planner's search. A separate page catches that without diluting the wedding pitch."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C39",
+      "siteType": "local-conversion",
+      "name": "Barn Door",
+      "heroLayout": "split-photo",
+      "mood": [
+        "rustic",
+        "warm",
+        "welcoming"
+      ],
+      "bestFor": "Family-run barns and farm venues that need a tour button and a capacity answer more than a brand",
+      "pairsWithTier": "starter",
+      "headlineSample": "A barn wedding venue outside {City}. Book a tour.",
+      "whyItFits": "Brick red and linen with a slab serif feel like a working farm, and the split hero puts the barn beside the tour request."
+    },
+    {
+      "id": "b",
+      "themeId": "C45",
+      "siteType": "booking-first",
+      "name": "Date First",
+      "heroLayout": "full-bleed-photo",
+      "mood": [
+        "organised",
+        "joyful",
+        "clear"
+      ],
+      "bestFor": "Venues booking weddings and private events who want the date check and tour slots to lead the page",
+      "pairsWithTier": "standard",
+      "headlineSample": "Check your wedding date at our {City} venue",
+      "whyItFits": "The family combo. A pale ground lets the venue shot carry the emotion while the ultramarine accent keeps Check my date and the tour slots unmissable."
+    },
+    {
+      "id": "c",
+      "themeId": "C2",
+      "siteType": "premium-brand",
+      "name": "The Estate",
+      "heroLayout": "full-bleed-photo",
+      "mood": [
+        "refined",
+        "quiet",
+        "exclusive"
+      ],
+      "bestFor": "Estates, mansions and vineyard venues booking a year or more ahead at the top of the market",
+      "pairsWithTier": "premium",
+      "headlineSample": "An estate wedding venue near {City}, by private tour",
+      "whyItFits": "Old-style refined type and a deep, quiet palette read like a printed invitation, which suits venues that sell exclusivity rather than availability."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your venue's Maps listing has directions and a phone number but no website, so a couple comparing barn venues near {City} can't see the barn, the capacity or a tour slot.",
+      "hook": "Open their Maps listing and confirm there is no Website button. Screenshot it for when they reply.",
+      "linkLine": "Here's the venue site that would sit behind that button: {demo-link}"
+    },
+    {
+      "angle": "Instagram is the brochure",
+      "line": "Your venue lives on Instagram, and a couple has to DM to learn the capacity, the rain plan and whether their date is open. Couples comparing venues at night book tours with the ones that answer first.",
+      "hook": "Tap their bio link and note where it lands: a DM prompt, a PDF, a link page or nowhere.",
+      "linkLine": "Your venue with capacity, dates and a tour button on one page: {demo-link}"
+    },
+    {
+      "angle": "Outdated venue site",
+      "line": "The venue site on your listing still shows a pricing PDF from a couple of seasons ago and an enquiry form with no date field. Couples notice an old price before they notice the barn.",
+      "hook": "Open the site and find one stale detail: an old year on the pricing, a past open house, a dead form. Note it.",
+      "linkLine": "The same venue, current and bookable for a tour: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "I opened your venue site on my phone and the gallery loaded one slow frame at a time. Couples scroll venues on their phones in bed, and the barn deserves better than a spinner.",
+      "hook": "Only if they have a site. Load it on your phone and note what breaks. Screenshot it for when they reply.",
+      "linkLine": "The same venue, rebuilt for a phone: {demo-link}"
+    },
+    {
+      "angle": "No date field on the enquiry",
+      "line": "Your wedding enquiry form doesn't ask for the date, so every venue lead starts with a back-and-forth before you know if it's even open. The date is the first question a venue should ask.",
+      "hook": "Open their contact form and check whether the event date is a field. If not, the angle holds.",
+      "linkLine": "A venue enquiry that asks for the date first: {demo-link}"
+    },
+    {
+      "angle": "Real weddings, nowhere to live",
+      "line": "The fall reception in the barn you posted last month is exactly what couples want to see, and it's already sliding down the feed. A real-weddings page by season would keep it booking tours.",
+      "hook": "Pick one recent wedding they posted and describe the season, the space and the setup. Mention it if they reply.",
+      "linkLine": "Your real weddings, sorted by season and space: {demo-link}"
+    },
+    {
+      "angle": "Couple reviews off the site",
+      "line": "One of your reviews says the coordinator moved the whole ceremony inside in twenty minutes when the rain came. That's the line a nervous couple needs next to the tour button.",
+      "hook": "Read their reviews and copy one phrase about the rain plan, the coordinator or the day. Quote it back if they reply.",
+      "linkLine": "Your couple reviews next to the venue spaces they describe: {demo-link}"
+    },
+    {
+      "angle": "Engagement season",
+      "line": "Between Christmas and Valentine's Day, newly engaged couples tour wedding venues every weekend. The venues with tour slots online fill those Saturdays first.",
+      "hook": "Use this from November to February. Check if they've posted about open houses or tours.",
+      "linkLine": "A venue page with tour slots ready for engagement season: {demo-link}"
+    },
+    {
+      "angle": "Open Fridays and Sundays",
+      "line": "Your venue posts show Saturdays filling, but nothing about Friday, Sunday or winter dates. A page with those prices often fills the dates a busy Saturday venue leaves empty.",
+      "hook": "Look for any mention of off-peak pricing or open dates. If there is none, the angle holds.",
+      "linkLine": "Your open wedding dates and off-peak pricing on one page: {demo-link}"
+    },
+    {
+      "angle": "Hiring a coordinator",
+      "line": "Saw you're hiring a venue coordinator. Good wedding coordinators look at how organised a venue looks online before they apply.",
+      "hook": "Only if they posted a hiring notice for a coordinator, events manager or day-of staff. Note the date.",
+      "linkLine": "A venue site with a careers page that looks the part: {demo-link}"
+    },
+    {
+      "angle": "Hard to find in the country",
+      "line": "Your barn venue sits down a country road. A guest page with the turn-off, parking and shuttle drop-off saves the couple a dozen texts on the day.",
+      "hook": "Check reviews or comments for directions trouble, gravel road questions or parking notes.",
+      "linkLine": "A guest page for finding the venue: {demo-link}"
+    },
+    {
+      "angle": "Payment plans for the venue fee",
+      "line": "Couples ask how the venue fee is split before they book a tour. A page that shows the retainer and the payment schedule removes the question your coordinator answers every week.",
+      "hook": "Look for 'retainer', 'payment plan' or 'deposit' in their posts or FAQ. Note what they publish and never invent terms.",
+      "linkLine": "A venue page with the booking retainer explained: {demo-link}"
+    },
+    {
+      "angle": "Insurance and vendor rules",
+      "line": "Planners ask every wedding venue for its vendor insurance rules and load-in times before they recommend it. A page that answers them gets the venue onto more planner shortlists.",
+      "hook": "Check whether they publish vendor rules anywhere. Never state an insurance or licence detail they haven't published.",
+      "linkLine": "Your venue's vendor rules, answered for planners: {demo-link}"
+    },
+    {
+      "angle": "Planner-referred only",
+      "line": "It looks like most of your weddings come through a few planners who know the venue. Couples without a planner still need somewhere to find the barn and book a tour.",
+      "hook": "Look for tagged planners and thank-you posts to them. Name one if they reply.",
+      "linkLine": "Where a couple without a planner would land: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "That {specific recent job} at the venue looks beautiful. A wedding like that should be the first thing a couple sees when they open your site, not something they find by scrolling.",
+      "hook": "Pick their newest posted wedding or event and name it exactly: the season, the space and the setup.",
+      "linkLine": "That wedding, front and centre: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner} — that {specific recent job} at the venue looks beautiful.\n\nI looked for a website for {Business Name} and only found the social pages, with no way to see capacity or ask about a date. I put together a sample venue site with your spaces, a date check and tour booking, with marked placeholders where your photos would go.\n\nWould you like me to send it over?",
+    "dm2": "{Owner} — following up in case my message got lost among the date enquiries. Here's the sample venue site for {Business Name}: {demo-link}\n\nIt has the spaces with [capacity] placeholders, a rain plan section, open Friday and Sunday dates and tour booking that asks for the wedding date first. If it's not for you, say so and I won't message again.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for wedding and event venues around {City}. I sent you a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"Easy to miss in wedding season. Short version: I built a sample venue site for {Business Name} with your spaces, a date check and tour booking, with marked placeholders where your photos would go. Can I email you the link to look at after this weekend's wedding?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n → ask: \"Which dates are hardest to fill for you, Fridays, Sundays or winter?\"\n\"The build runs {Build Range}, then {Care Range} a month for hosting, open dates and pricing updates. For a venue like yours I'd normally quote about {Build Price}.\"\n\"One booked wedding covers it several times over. Can we walk through it for fifteen minutes on a Tuesday, when the venue is quiet?\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. We start the day it clears, and I'll need your capacity figures and current pricing.\"",
+    "objections": [
+      {
+        "objection": "We're booked solid for next season.",
+        "handler": "\"Then the site is for the season after, and for the Fridays, Sundays and winter dates that aren't booked. Those are pure upside for a venue that's already full on Saturdays.\""
+      },
+      {
+        "objection": "We don't publish prices. Couples need to tour first.",
+        "handler": "\"Keep the full pricing for the tour. A 'weddings from' figure and the date check filter out couples who can't afford you, so your tours are with couples who can.\""
+      },
+      {
+        "objection": "We get our couples from the big wedding listing sites.",
+        "handler": "\"Keep them. Couples who find you there still look for your own site before they book a tour. If they can't find it, the listing sends them to the next venue on the page.\""
+      },
+      {
+        "objection": "Our coordinator handles every enquiry personally.",
+        "handler": "\"Good, that's how venues win. The site makes sure every enquiry arrives with the date, guest count and budget, so the coordinator's first reply can be a tour offer.\""
+      },
+      {
+        "objection": "We tried a site before and it didn't bring anything.",
+        "handler": "\"Was the date the first question on the form? Many venue sites put the date check below the gallery. This one asks for it first and sends couples to a tour slot.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For your venue about {Build Price}, because it's the spaces, a date check and tour booking. One wedding booking more than covers it.\""
+      }
+    ],
+    "email": {
+      "subject": "Venue site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for wedding and event venues around {City}. {Business Name} has beautiful weddings on its social pages, but no site where a couple can check their date, see the capacity and book a tour.\n\nI built a sample first rather than ask for your time: your spaces with [capacity] placeholders, the rain plan, open Friday and Sunday dates, vendor rules and tour booking that asks for the wedding date first, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting, open dates and pricing updates. If not, no problem, it comes down at the end of the month.\n\nWorth fifteen minutes on a quiet weekday?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build websites for wedding venues near {City}, and I put together a sample one for {Business Name} with a date check and tour booking. I'll email you the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner} — I'm taking the {Business Name} venue demo down on Friday to free up the space.\n\nWant me to leave it up? One word is fine either way.",
+    "nurture": "Hi {Owner} — engagement season starts in a couple of months, and couples tour venues every weekend from Christmas to Valentine's Day. Thought of you.\n\nThe venue site is still here whenever you want it, and nothing's changed on price. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to a fraction of one wedding booking, not to a month of the venue's costs. One booking pays for the site several times.",
+      "Price each space separately: barn, ceremony lawn, bridal suite and patio each need capacity, a gallery and a rain note.",
+      "Tour booking with the date as the first field is the core of the build, never an add-on.",
+      "Off-peak date pricing pages earn the most for the least work. Quote them as their own line.",
+      "Corporate and shower pages are a second audience. Price them as an extra page, not part of the wedding build.",
+      "Sell anything for engagement season by October, so it's live before the Christmas proposals."
+    ],
+    "lineItems": [
+      {
+        "item": "Extra venue space page",
+        "min": 250,
+        "max": 700,
+        "unit": "per-page",
+        "description": "Max with seated and standing layouts, a rain plan, a floor plan and a gallery for each season.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Tour booking with open house dates",
+        "min": 500,
+        "max": 1500,
+        "unit": "one-time",
+        "description": "Max with private and group slots, open house registration and reminder texts to the couple.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Off-peak and open dates page",
+        "min": 300,
+        "max": 900,
+        "unit": "per-page",
+        "description": "Max when it shows live open dates by month with Friday, Sunday and winter pricing.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Downloadable venue pricing guide",
+        "min": 300,
+        "max": 900,
+        "unit": "one-time",
+        "description": "Max with several packages, a designed multi-page guide and a date field on the download form.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Virtual walk-through of the venue",
+        "min": 600,
+        "max": 2500,
+        "unit": "one-time",
+        "description": "Max with every space captured, labelled stops and a tour booking button inside the walk-through.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Corporate and private events page",
+        "min": 300,
+        "max": 800,
+        "unit": "per-page",
+        "description": "Max with weekday packages, AV details and a separate enquiry form for company planners.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Spanish-language wedding venue pages",
+        "min": 400,
+        "max": 1200,
+        "unit": "one-time",
+        "description": "Max when spaces, pricing guide, rules and the enquiry form are all translated.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Seasonal styled shoot at the venue",
+      "min": 500,
+      "max": 1500,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"One styled afternoon each season, with the ceremony lawn and barn dressed, gives the venue site real spring, summer and fall weddings to show.\"",
+      "when": "Month 2, on a weekday with vendors who want the shots for their own portfolios."
+    },
+    {
+      "name": "Google profile upkeep for the venue",
+      "min": 150,
+      "max": 350,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"New weddings and open house dates on the venue's Google profile every week, so couples searching for a barn venue nearby see a busy calendar.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Review requests after each wedding",
+      "min": 49,
+      "max": 129,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Two weeks after the wedding, once the honeymoon's over, the couple gets a short note asking for a review of the venue and the coordinator.\"",
+      "when": "Day 30. The easiest second sale."
+    },
+    {
+      "name": "Open house weekend campaign",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A January open house at the venue, promoted to newly engaged couples nearby, with tour registration and a reminder the day before.\"",
+      "when": "Pitch in October, run between Christmas and February."
+    },
+    {
+      "name": "Bridal show booth kit for the venue",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A booth backdrop of the barn, a date-check card and a tour sign-up code, so couples at the bridal show book a walk-through on the spot.\"",
+      "when": "Six weeks before their first winter bridal show."
+    },
+    {
+      "name": "Planner and vendor showcase night",
+      "min": 500,
+      "max": 1500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"An evening at the venue for local planners, florists and photographers, with invitations, RSVPs and a follow-up page of the setup.\"",
+      "when": "Month 4, in the slow season. Needs a list of planners they want on their side."
+    },
+    {
+      "name": "Nearby town and hotel area pages",
+      "min": 200,
+      "max": 500,
+      "unit": "per-page",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A page for each nearby town couples search from, with drive times to the venue and where guests stay.\"",
+      "when": "Month 3, once you know which towns their couples come from."
+    },
+    {
+      "name": "Company holiday party campaign",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A late-summer push to local companies for December holiday parties in the venue's winter dates, when weddings are thin.\"",
+      "when": "Pitch in July, run August to October."
+    },
+    {
+      "name": "Venue wayfinding sign artwork",
+      "min": 200,
+      "max": 600,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Road sign, parking and ceremony-this-way sign artwork in the venue's look, so guests on a country road find the barn.\"",
+      "when": "Right after launch, or when they mention guests getting lost."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Preferred caterers on the venue's list",
+        "whoPays": "Each caterer, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"Every caterer on the venue's preferred list needs a menu page that names the venues they serve. The venue owner can introduce you at the next tasting.\"",
+        "whyItWorks": "Venues control who gets on the list. An introduction from the venue is the strongest referral a caterer gets."
+      },
+      {
+        "route": "Inns and bed-and-breakfasts near the venue",
+        "whoPays": "The innkeeper",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The inn where the wedding party stays every weekend has no page for wedding room blocks. I'll build one that links back to the venue.\"",
+        "whyItWorks": "Rural venues send guests to the same few inns. The venue owner knows exactly which innkeeper needs the help."
+      },
+      {
+        "route": "Shuttle and wedding transport companies",
+        "whoPays": "The transport company, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The shuttle company that runs guests from the hotels to the venue books everything by phone. Same date-first layout, different service.\"",
+        "whyItWorks": "Transport is booked late and in a hurry. The venue's recommendation decides who gets the job."
+      },
+      {
+        "route": "Officiants who marry couples at the venue",
+        "whoPays": "Each officiant, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The officiant who marries many couples on the venue's lawn has no booking page. A small date-check site fits them well.\"",
+        "whyItWorks": "Officiants are one-person businesses with steady referrals from the venue and almost no web presence."
+      },
+      {
+        "route": "Wineries and farm stands next door",
+        "whoPays": "The neighbouring business",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The winery down the road hosts rehearsal dinners for the venue's couples. It needs a private events page as much as the venue did.\"",
+        "whyItWorks": "Rural neighbours share guests and owners talk. One finished venue site is the proof."
+      },
+      {
+        "route": "County tourism office wedding destination page",
+        "whoPays": "The tourism office",
+        "min": 3000,
+        "max": 10000,
+        "unit": "one-time",
+        "pitchLine": "\"The county wants out-of-town weddings. A destination page listing its wedding venues, inns and vendors starts with the venue you already built.\"",
+        "whyItWorks": "Tourism offices have marketing budgets and want local businesses featured. Venue owners sit on their committees."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Tasting and menu enquiry assistant for preferred caterers",
+        "whoPays": "The caterer, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"Couples booked at the venue ask the caterer about menus and tastings, and get answers plus a tasting slot without waiting for a callback.\"",
+        "whyItWorks": "Caterers lose couples between the venue tour and the tasting. The venue introduction gets you in."
+      },
+      {
+        "route": "Wedding room-block assistant for inns",
+        "whoPays": "The innkeeper, monthly",
+        "min": 79,
+        "max": 199,
+        "unit": "monthly",
+        "pitchLine": "\"Guests of a wedding at the venue ask the inn about the room block, check-in and the shuttle, and get answers any hour.\"",
+        "whyItWorks": "Innkeepers answer the same block questions for every wedding. It saves them hours each weekend."
+      },
+      {
+        "route": "Shuttle timing planner for transport companies",
+        "whoPays": "The transport company, per wedding",
+        "min": 50,
+        "max": 150,
+        "unit": "per-job",
+        "pitchLine": "\"Enter the hotels, guest counts and ceremony time, and the shuttle company gets a draft run schedule for the venue to approve.\"",
+        "whyItWorks": "Shuttle timing is where weddings run late. Venues will recommend the company that gets it right."
+      },
+      {
+        "route": "Ceremony script drafts for officiants",
+        "whoPays": "The officiant, monthly",
+        "min": 39,
+        "max": 99,
+        "unit": "monthly",
+        "pitchLine": "\"The couple fills in their story and readings, and the officiant gets a ceremony script draft in their own voice to edit.\"",
+        "whyItWorks": "Officiants rewrite scripts for every wedding. It's small, easy to price, and the venue sends them couples."
+      },
+      {
+        "route": "Group booking assistant for wineries",
+        "whoPays": "The winery, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"Rehearsal dinner and wedding-weekend tasting groups get dates, menus and minimums answered, and the winery gets a booking request.\"",
+        "whyItWorks": "Wineries near venues turn away groups they can't answer fast enough. The venue already sends them couples."
+      },
+      {
+        "route": "Wedding weekend itinerary planner for tourism offices",
+        "whoPays": "The tourism office",
+        "min": 2000,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"Out-of-town guests enter the wedding date and venue, and get a weekend plan with places to stay, eat and visit in the county.\"",
+        "whyItWorks": "Tourism offices are measured on visitor nights. Wedding guests are an easy group to count."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Venue tour scheduler with reminders",
+      "kind": "software",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 99,
+      "pitchLine": "\"Couples pick a tour slot that suits the coordinator's calendar, give their wedding date and guest count, and get a reminder with directions to the barn.\"",
+      "whenAndWhatItTakes": "At build. Needs the coordinator's tour hours and the questions they ask on every tour."
+    },
+    {
+      "name": "After-tour follow-up sequence",
+      "kind": "automation",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"The evening after the venue tour, the couple gets a thank-you, the pricing guide and a reminder that their date is still open, without the coordinator remembering.\"",
+      "whenAndWhatItTakes": "Day 30. Needs the tour list, the pricing guide and the coordinator's follow-up wording."
+    },
+    {
+      "name": "Date hold and retainer signing",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2500,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"A couple who loves the tour can sign the venue agreement and pay the retainer that night, so the date isn't lost to the next couple on Saturday.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their contract, reviewed by their own attorney, and a payment account."
+    },
+    {
+      "name": "Venue enquiry answerer for capacity and dates",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 149,
+      "monthlyMax": 349,
+      "pitchLine": "\"Couples asking about capacity, the rain plan, outside caterers or a Friday in October get an answer from your own venue rules, then a tour slot.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the venue FAQ, pricing rules and calendar access, approved by the coordinator. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Wedding payment schedule reminders",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 29,
+      "monthlyMax": 99,
+      "pitchLine": "\"Each couple gets the next venue payment reminder on time, with the balance and a link, so the coordinator never chases money during wedding planning.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the payment schedule per booking and a payment account."
+    },
+    {
+      "name": "Real wedding write-ups for the venue blog",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"After each wedding, the coordinator answers five quick questions and gets a real-wedding post draft naming the spaces and vendors.\"",
+      "whenAndWhatItTakes": "Month 2. Needs vendor credits and the couple's permission. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Reception floor plan builder",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 49,
+      "monthlyMax": 149,
+      "pitchLine": "\"Couples drag tables, the dance floor and the sweetheart table onto the barn's real floor plan, and the coordinator sees it before the final walk-through.\"",
+      "whenAndWhatItTakes": "Month 4. Needs measured floor plans of each space and their table inventory."
+    },
+    {
+      "name": "Tour notes summariser for the coordinator",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"The coordinator speaks a minute of notes after each venue tour, and gets a summary with the date, budget, worries and next step for the follow-up.\"",
+      "whenAndWhatItTakes": "Month 3. Needs a phone and the tour list. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Vendor load-in schedule and rules sign-off",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 29,
+      "monthlyMax": 99,
+      "pitchLine": "\"Every vendor working a wedding at the venue gets their load-in time and the rules, and signs off on open flame and cleanup before the day.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their vendor rules and the wedding calendar."
+    },
+    {
+      "name": "Venue phone receptionist",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 199,
+      "monthlyMax": 399,
+      "pitchLine": "\"During a Saturday wedding, the venue line still gets answered, the date gets checked and a tour gets booked.\"",
+      "whenAndWhatItTakes": "Month 4, before engagement season. Needs venue FAQ, tour calendar and escalation rules. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Day-of wedding timeline builder",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"The couple builds the wedding day timeline from the venue's template, and every vendor sees the same version on the morning.\"",
+      "whenAndWhatItTakes": "Month 5. Needs the coordinator's standard timeline and vendor arrival rules."
+    },
+    {
+      "name": "Open-date pricing advisor",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 149,
+      "monthlyMax": 349,
+      "pitchLine": "\"See which wedding dates are still open months out and get a suggested Friday, Sunday or winter price to fill them, for you to approve.\"",
+      "whenAndWhatItTakes": "Month 6. Needs a season of bookings, enquiries and prices. Suggestions only, the owner decides. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Review reply drafts for the venue",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 49,
+      "monthlyMax": 149,
+      "pitchLine": "\"Every couple's review gets a warm reply drafted that names their wedding season and the space they used, ready to approve.\"",
+      "whenAndWhatItTakes": "Month 2, alongside the review requests. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Anniversary and vow renewal notes",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"On each couple's anniversary they get a note from the venue, with an invitation to dinner events or a vow renewal on the lawn.\"",
+      "whenAndWhatItTakes": "Month 6. Needs the list of past wedding dates and any events they host."
+    },
+    {
+      "name": "Final guest count and seating collector",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"A month before the wedding, the couple submits the final count, meal choices and seating, and the caterer and venue get the same list.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their final-count deadline and the caterer's format."
+    },
+    {
+      "name": "Wedding post captions for the venue",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Post a wedding at the venue, and a caption naming the season, the space and the vendors is ready to approve.\"",
+      "whenAndWhatItTakes": "Month 3. Needs past captions and vendor credits. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Event staff and bartender shift calendar",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Who's working setup, the ceremony and teardown at the venue each weekend, with shifts that staff confirm from their phones.\"",
+      "whenAndWhatItTakes": "Month 6, for venues with their own staff. Needs the staff list and the event calendar."
+    },
+    {
+      "name": "Venue rules answers for new coordinators",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"New venue coordinators ask the phone about the rain plan, sparkler rules or the bridal suite checkout time, and get the owner's own answer.\"",
+      "whenAndWhatItTakes": "Month 7, before hiring a coordinator. Needs the venue handbook and the owner's approval of every answer. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Open-date alert to earlier enquirers",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 29,
+      "monthlyMax": 99,
+      "pitchLine": "\"When a booked wedding date cancels, couples who asked about that date get a note that it's open again, before it goes back on the calendar.\"",
+      "whenAndWhatItTakes": "Month 6. Needs enquiry history with requested dates."
+    },
+    {
+      "name": "Guest weekend guide writer",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Each couple gets a guest guide draft for their wedding weekend at the venue: where to stay, the shuttle times and the dress code for the lawn.\"",
+      "whenAndWhatItTakes": "Month 8. Needs local lodging, the shuttle plan and each couple's details. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise tour booking for small wedding venues",
+      "whoPays": "Small venues, monthly",
+      "min": 79,
+      "max": 299,
+      "unit": "monthly",
+      "pitchLine": "\"I built date-first tour booking for one barn venue. Every farm wedding venue in the region takes tours by text message.\"",
+      "whyItWorks": "Small venues are many, similar and easy to find. The first one paid for the workflow."
+    },
+    {
+      "route": "Member template for a regional wedding venue association",
+      "whoPays": "The association",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer every member venue a date-first site template with tour booking as a member benefit.\"",
+      "whyItWorks": "Venue associations need renewal reasons. One agreement reaches owners who already trust the group."
+    },
+    {
+      "route": "Hospitality groups with several event venues",
+      "whoPays": "The group, per venue",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Each of your venues needs its own spaces, dates and tour calendar on one shared system. I build it once and roll it out.\"",
+      "whyItWorks": "One contract becomes several venues on the same template."
+    },
+    {
+      "route": "White-label wedding venue template for agencies",
+      "whoPays": "The agency, per site",
+      "min": 600,
+      "max": 1800,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency builds pretty venue sites with no date check. License my venue template with tour booking already working.\"",
+      "whyItWorks": "Agencies sell the client. You sell them the conversion logic they don't have."
+    },
+    {
+      "route": "Wineries and breweries with event rooms",
+      "whoPays": "Each business, at your normal rate",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"Wineries hosting weddings in the barrel room need the same date check and tour booking as a barn venue.\"",
+      "whyItWorks": "Same buyer journey, and the venue template carries over almost unchanged."
+    },
+    {
+      "route": "Golf and country club banquet sales",
+      "whoPays": "The club",
+      "min": 3000,
+      "max": 8000,
+      "unit": "one-time",
+      "pitchLine": "\"Your club's ballroom books weddings and company parties from a PDF. A wedding venue page with tour booking does better.\"",
+      "whyItWorks": "Clubs have budgets and committees that want event revenue. The venue client is the reference."
+    },
+    {
+      "route": "Hotel event sales teams",
+      "whoPays": "The hotel, per property",
+      "min": 2500,
+      "max": 8000,
+      "unit": "one-time",
+      "pitchLine": "\"Couples planning a hotel ballroom wedding want the same date check and tour slots as a barn venue.\"",
+      "whyItWorks": "Independent hotels compete with venues for weddings and rarely have a page built for couples."
+    },
+    {
+      "route": "Launch kits for an event barn builder's clients",
+      "whoPays": "The barn builder",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Every family you build a wedding barn for needs a venue site on opening day. Include it in your contract and I deliver it.\"",
+      "whyItWorks": "Builders win jobs by promising a working business. A ready venue site makes that promise real."
+    },
+    {
+      "route": "Referral swap with venue start-up consultants",
+      "whoPays": "Each new venue, at your normal rate",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"Consultants who help farms open as wedding venues need a web partner. Every new venue they advise needs a site and tour booking.\"",
+      "whyItWorks": "They meet venues before opening, when the site budget is set. A finished venue proves you deliver."
+    },
+    {
+      "route": "Wedding rental booking for historic houses and museums",
+      "whoPays": "The historic site or museum",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Historic houses rent their gardens for weddings to fund upkeep. They need the same date check and tour booking a private venue has.\"",
+      "whyItWorks": "Museums want event income and have grant and board budgets for it."
+    },
+    {
+      "route": "Barn and estate venues one region over",
+      "whoPays": "New venue clients in a new region",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I work with one wedding venue per area around {City}. Venues a couple of hours away don't share couples with them.\"",
+      "whyItWorks": "Couples choose within a drive radius, so the proof and template travel without conflict."
+    },
+    {
+      "route": "Repair half-built venue booking systems",
+      "whoPays": "The stuck venue",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "pitchLine": "\"Someone set up a tour calendar for the venue and never connected the date check. I can finish it the way I did for another wedding venue.\"",
+      "whyItWorks": "These owners already decided to pay. They need someone who has finished one."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Venue site build plus care plan, one contract",
+      "min": 2500,
+      "max": 4500,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The venue site and the care plan go on one contract, so a new open date or price is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 14,
+      "offer": "Venue tour scheduler with reminders",
+      "min": 500,
+      "max": 1500,
+      "unit": "one-time",
+      "trigger": "They mention couples who didn't show up for a tour or got lost on the way.",
+      "line": "\"The couple who missed the venue tour would have had a reminder with the turn-off the day before.\""
+    },
+    {
+      "rung": 3,
+      "day": 30,
+      "offer": "Review requests after each wedding",
+      "min": 49,
+      "max": 129,
+      "unit": "monthly",
+      "trigger": "The first wedding since launch has happened and the couple was thrilled.",
+      "line": "\"That couple loved their day at the venue. Let's ask them once the honeymoon is over.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Seasonal styled shoot at the venue",
+      "min": 500,
+      "max": 1500,
+      "unit": "per-shoot",
+      "trigger": "The real-weddings page still shows marked placeholders for a season.",
+      "line": "\"One styled afternoon fills the empty season on the wedding venue gallery.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "After-tour follow-up sequence",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "trigger": "Sixty days of form data show tours that never turned into a signed date.",
+      "line": "\"Couples who toured the venue and went quiet get a follow-up the coordinator never had time to send.\""
+    },
+    {
+      "rung": 6,
+      "day": 120,
+      "offer": "Date hold and retainer signing",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "trigger": "They mention a couple who loved the tour but lost the date to another booking.",
+      "line": "\"The couple who lost their wedding date could have signed and paid that night.\""
+    },
+    {
+      "rung": 7,
+      "day": 180,
+      "offer": "Open-date pricing advisor",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "trigger": "The calendar shows open Fridays and winter dates two seasons out.",
+      "line": "\"Those open Fridays at the venue are money. Let's price them to fill.\""
+    },
+    {
+      "rung": 8,
+      "day": 240,
+      "offer": "Introduction to the nearby inn",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "trigger": "They mention the inn where their wedding parties stay asking who built the venue site.",
+      "line": "\"The inn your wedding guests use has no room-block page. Would you introduce me?\""
+    }
+  ]
+}

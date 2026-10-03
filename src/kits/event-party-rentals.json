@@ -1,0 +1,869 @@
+{
+  "schemaVersion": 1,
+  "category": "Event & party rentals",
+  "slug": "event-party-rentals",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Event family batch, catalog archetype. A system sale: inventory, availability and deposits. No marketplace, booking or payment brands. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Tent sizing guide",
+      "contains": "Guest count to tent size for seated dinner, cocktail and ceremony layouts, frame versus pole tents, sidewalls, flooring, heaters and lighting, and staking versus water-barrel ballast on patios",
+      "why": "Hosts don't know what size tent they need. The rental company that sizes it for them gets the order and the tables that go under it."
+    },
+    {
+      "section": "Layout request for tables and dance floor",
+      "contains": "Yard or hall dimensions, round versus banquet tables, dance floor, bar and buffet placement, and a returned layout with item counts and a quote",
+      "why": "Customers think in rooms and yards, not item lists. A layout turns a vague party into a complete order."
+    },
+    {
+      "section": "Linen colours and swatches",
+      "contains": "Linen colours by table shape and drop length, napkins, chair covers and sashes, runners, and how to borrow a swatch before the order is final",
+      "why": "Linen is decided by colour and checked against the wedding palette. Swatches on the page stop the order stalling on a photo from a phone."
+    },
+    {
+      "section": "Wedding tablescape collections",
+      "contains": "Farm tables, cross-back chairs, chargers, glassware, flatware and lounge furniture styled as complete sets, priced per guest",
+      "why": "Couples buy a look, not a list of SKUs. A styled set priced per guest is an easier yes than forty line items."
+    },
+    {
+      "section": "School, church and company picnic accounts",
+      "contains": "Purchase orders, tax-exempt forms, insurance certificate requests, invoice billing and a repeat order for the annual carnival, festival or picnic",
+      "why": "Organisations rent the same tents and tables every year and pick the vendor whose paperwork is easy for the committee."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C47",
+      "siteType": "local-conversion",
+      "name": "Party Drop-Off",
+      "heroLayout": "card-stack",
+      "mood": [
+        "cheerful",
+        "quick",
+        "practical"
+      ],
+      "bestFor": "Small table, chair and tent outfits doing backyard birthdays and graduation parties in one county",
+      "pairsWithTier": "starter",
+      "headlineSample": "Tents, tables and chairs delivered in {City}",
+      "whyItFits": "Warm humanist type and a teal and tangerine palette feel like a backyard party, and the stacked cards put the three bestselling rental bundles first."
+    },
+    {
+      "id": "b",
+      "themeId": "C45",
+      "siteType": "catalog",
+      "name": "Rental Warehouse",
+      "heroLayout": "type-led",
+      "mood": [
+        "organised",
+        "bold",
+        "confident"
+      ],
+      "bestFor": "Full-line party rental companies with tents, linens and tableware who need inventory and availability online",
+      "pairsWithTier": "standard",
+      "headlineSample": "Event rentals in {City}. Check your date and reserve.",
+      "whyItFits": "The family combo. Ultramarine poster type gives a big catalogue a clear spine, and the strong accent keeps Check availability visible on every item."
+    },
+    {
+      "id": "c",
+      "themeId": "C39",
+      "siteType": "premium-brand",
+      "name": "Tent & Tablescape",
+      "heroLayout": "full-bleed-photo",
+      "mood": [
+        "warm",
+        "crafted",
+        "romantic"
+      ],
+      "bestFor": "Rental companies chasing weddings with sailcloth tents, farm tables and styled collections",
+      "pairsWithTier": "premium",
+      "headlineSample": "Wedding tents and tablescapes for {City} celebrations",
+      "whyItFits": "Brick and linen with a slab serif reads like a barn wedding, so the styled collections look worth a premium per guest."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your Maps listing for the party rental business has a phone number and no website, so someone pricing a tent for a June graduation party can't see what you carry before they call around.",
+      "hook": "Open their Maps listing and confirm there is no Website button. Screenshot it for when they reply.",
+      "linkLine": "Here's the rental catalogue that would sit behind that button: {demo-link}"
+    },
+    {
+      "angle": "Facebook page as the catalogue",
+      "line": "Your tents, tables and chairs live in Facebook albums, and a host has to scroll back months to find a price. A rental catalogue with a date check would let them reserve instead of messaging.",
+      "hook": "Open their Facebook page and find the album or post with rental prices. Note how far back it is.",
+      "linkLine": "Your rental inventory as a catalogue with a date check: {demo-link}"
+    },
+    {
+      "angle": "Dead free host",
+      "line": "The rental site on your listing still shows last year's tent prices and a contact form that doesn't send. Hosts planning a backyard wedding notice that before they notice the tents.",
+      "hook": "Open the site and find one stale detail: an old price list, a dead form, a past-season banner. Note it.",
+      "linkLine": "The same rental company, current and reservable: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "I opened your rental site on my phone and the chair and table price list ran off the side of the screen. Most party rentals get priced from a phone on a lunch break.",
+      "hook": "Only if they have a site. Load it on your phone and note what breaks. Screenshot it for when they reply.",
+      "linkLine": "The same rental catalogue, rebuilt for a phone: {demo-link}"
+    },
+    {
+      "angle": "No date check",
+      "line": "There's no way to check whether a tent is free on a given Saturday without calling. The rental company that answers that question online usually gets the deposit first.",
+      "hook": "Look for a calendar, an availability checker or a reservation form. If there's only a phone number, the angle holds.",
+      "linkLine": "A rental page that checks the date first: {demo-link}"
+    },
+    {
+      "angle": "Setups with nowhere to live",
+      "line": "That frame tent with string lights and farm tables you posted is the best ad you have, and it's gone from the feed in a week. A rental gallery by event type would keep it selling.",
+      "hook": "Pick one recent tent or table setup they posted and describe it exactly. Mention it if they reply.",
+      "linkLine": "Your event setups, sorted by party type: {demo-link}"
+    },
+    {
+      "angle": "Reviews stuck on Google",
+      "line": "One of your reviews says the crew had the tent up before the caterer arrived. That line belongs next to the Reserve button on a rental page, not three taps away on Google.",
+      "hook": "Read their reviews and copy one phrase about delivery, setup or the tent itself. Quote it back if they reply.",
+      "linkLine": "Your reviews next to the rentals they describe: {demo-link}"
+    },
+    {
+      "angle": "Graduation and wedding season",
+      "line": "Graduation parties and spring weddings book the big tents first. Rental companies with an online date check take those weekends while the others are still returning calls.",
+      "hook": "Use this from January to April. Check whether they have posted about tents filling up or a busy season.",
+      "linkLine": "Tent and table rentals, reservable for the season: {demo-link}"
+    },
+    {
+      "angle": "Late-night party planning",
+      "line": "People plan parties at night after the kids are down. Right now a host who wants forty chairs and a tent at ten at night has to message and hope you see it before another rental company does.",
+      "hook": "Look for comments asking 'are you available on' or 'how much for chairs'. Note one with the time it was posted.",
+      "linkLine": "A rental page that takes a reservation at midnight: {demo-link}"
+    },
+    {
+      "angle": "Hiring a delivery crew",
+      "line": "Saw you're hiring tent crew for the season. Good installers check whether a rental company looks organised before they apply, and a crew page helps them say yes.",
+      "hook": "Only if they posted a hiring notice for drivers, tent crew or warehouse help. Note the date.",
+      "linkLine": "A rental site with a join-the-crew page: {demo-link}"
+    },
+    {
+      "angle": "Delivery zones",
+      "line": "Your posts say you deliver party rentals across a few counties, but nobody can see the delivery fee for their town until they call. A zone map would settle it before the first message.",
+      "hook": "Check their bio and posts for the towns or counties they deliver to. List them before you send.",
+      "linkLine": "Your delivery zones and fees on one rental page: {demo-link}"
+    },
+    {
+      "angle": "Deposits by message",
+      "line": "It looks like reservation deposits happen by message and invoice. An online deposit at the moment of booking holds the tent and stops the double-booked Saturday.",
+      "hook": "Look for 'deposit required' or 'message to reserve' in their posts or bio. Note the wording.",
+      "linkLine": "A rental reservation with the deposit built in: {demo-link}"
+    },
+    {
+      "angle": "Insurance for venue requests",
+      "line": "Venues and schools ask a rental company for an insurance certificate before a tent goes up. A page that says you provide one gets you onto the venue's approved list faster.",
+      "hook": "Check whether they mention insurance, permits or venue requirements anywhere. Never state coverage they haven't published.",
+      "linkLine": "A rental page with the venue paperwork answered: {demo-link}"
+    },
+    {
+      "angle": "Planner referrals only",
+      "line": "Sounds like a lot of your tent and table work comes through a couple of planners. When one of them retires, the hosts they used to send look you up directly.",
+      "hook": "Look for tagged planners or posts thanking a planner. Name the relationship if they reply.",
+      "linkLine": "Where a host would land without a planner: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "That {specific recent job} you set up looks great. A rental setup like that should be the first thing a host sees when they price a tent, not something buried in the feed.",
+      "hook": "Pick their newest posted setup and name it exactly: the tent, the venue or yard, and the table style.",
+      "linkLine": "That rental setup, front and centre: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner} — that {specific recent job} you posted is a great-looking setup.\n\nI looked for a rental catalogue for {Business Name} and only found your social pages and a phone number. I put together a sample site with your tents, tables and chairs, a date check and a reservation form, with marked placeholders where your photos would go.\n\nWould you like me to send it over?",
+    "dm2": "{Owner} — following up in case my message got buried under date requests. Here's the sample rental site for {Business Name}: {demo-link}\n\nIt has a catalogue with day rates, a tent sizing guide, delivery zones and a reservation form that asks for the date first. If it's not for you, say so and I won't message again.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for party and event rental companies here in {City}. I sent you a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"Easy to miss in season. Short version: I built a sample rental site for {Business Name} with a catalogue, a date check and a deposit at reservation, with marked placeholders where your photos would go. Can I email you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n → ask: \"How do you check today which tents are already out on a given Saturday?\"\n\"The build runs {Build Range}, then {Care Range} a month for hosting, price changes and new inventory. For a rental company your size I'd normally quote about {Build Price}.\"\n\"Can I walk you through it for ten minutes on a weekday morning, before the trucks go out?\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. We start the day it clears, and I'll need your item list and rates.\"",
+    "objections": [
+      {
+        "objection": "I keep track of reservations in a notebook and it works.",
+        "handler": "\"Keep it for now. The site checks the date before anyone calls, so the notebook only gets the serious ones. When you're ready, the calendar replaces the notebook and stops the double-booked tent.\""
+      },
+      {
+        "objection": "Prices change too much to put them online.",
+        "handler": "\"Put day rates on the small items and 'from' prices on tents, and I change them with one text on the care plan. Hosts mainly want to know if a tent is in budget before they call.\""
+      },
+      {
+        "objection": "Everyone just messages me on Facebook.",
+        "handler": "\"They will still message. The site gives them the inventory, the delivery fee and a date check first, so the messages you get are ready to reserve, not 'how much for chairs'.\""
+      },
+      {
+        "objection": "It's my slow season.",
+        "handler": "\"That's why now. Graduation and wedding hosts start pricing tents in late winter, and a catalogue built in the quiet months is ready before your first big weekend.\""
+      },
+      {
+        "objection": "I'm worried about people booking things I can't deliver.",
+        "handler": "\"The reservation is a request with a deposit until you confirm it. You set delivery zones and lead times, and anything outside them comes to you as a question, not a booking.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}, because it's a full catalogue, a date check and deposits. One mid-size tent order covers most of it.\""
+      }
+    ],
+    "email": {
+      "subject": "Rental catalogue for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for party and event rental companies around {City}. {Business Name} has great tent and table setups on its social pages, but no catalogue where a host can check a date and reserve.\n\nI built a sample first rather than ask for your time: your tents, tables, chairs and linens with day rates, a tent sizing guide, delivery zones and a reservation form that takes a deposit, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting, price changes and new inventory. If not, no problem, it comes down at the end of the month.\n\nWorth ten minutes on the phone before the trucks go out one morning?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build websites for event rental companies in {City}, and I put together a sample rental catalogue for {Business Name} with a date check and deposits. I'll email you the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner} — I'm taking the {Business Name} rental catalogue demo down on Friday to free up the space.\n\nWant me to leave it up? One word is fine either way.",
+    "nurture": "Hi {Owner} — graduation and wedding hosts start pricing tents soon, and the rental companies with a date check online tend to fill the big weekends first. Thought of you.\n\nThe catalogue is still here whenever you want it, and nothing's changed on price. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Price the catalogue by item count, not page count. Forty items with rates, sizes and pictures is the real work.",
+      "The availability checker and deposit are the system sale. Quote them as the core, never as an optional extra.",
+      "Tent sizing and layout tools are their own lines. They turn a chair order into a tent, floor and lighting order.",
+      "Delivery zones with fees by town save the owner hours of quoting every week. Price that saving, not the map.",
+      "Keep monthly add-ons below what one small backyard party order brings in.",
+      "Sell anything seasonal in the winter, before graduation and wedding hosts start pricing."
+    ],
+    "lineItems": [
+      {
+        "item": "Extra rental inventory items (each group of ten)",
+        "min": 150,
+        "max": 400,
+        "unit": "one-time",
+        "description": "Max when each item needs its own sizes, capacity, linen fit and a styled shot placeholder.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Availability checker tied to inventory counts",
+        "min": 800,
+        "max": 2500,
+        "unit": "one-time",
+        "description": "Max when it tracks quantities per item across overlapping dates and blocks setup and teardown days.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Tent sizing calculator",
+        "min": 400,
+        "max": 1200,
+        "unit": "one-time",
+        "description": "Max with seated, cocktail and ceremony layouts, dance floor and buffet space, and a recommended tent with sidewalls.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Delivery zone and fee map",
+        "min": 300,
+        "max": 900,
+        "unit": "one-time",
+        "description": "Max with several zones, stair and long-carry fees, and after-hours pickup charges.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Layout request form with returned floor plan",
+        "min": 300,
+        "max": 800,
+        "unit": "one-time",
+        "description": "Max with dimension upload, table style choices and a quote built from the layout.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Linen swatch gallery",
+        "min": 200,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max with every colour, size by table shape and a swatch loan request.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Spanish-language rental catalogue",
+        "min": 300,
+        "max": 900,
+        "unit": "one-time",
+        "description": "Max when the catalogue, terms and reservation form are all translated.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Styled tent and tablescape photo day",
+      "min": 300,
+      "max": 900,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"One morning in the yard with a tent up and three table styles set gives the rental catalogue real pictures for every collection.\"",
+      "when": "Month 2, on a weekday when the big tent is back in the yard and dry."
+    },
+    {
+      "name": "Google profile upkeep for the rental yard",
+      "min": 150,
+      "max": 300,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Every weekend's tent and table setups posted to your Google profile with the town named, so hosts searching for party rentals see you're out every Saturday.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Review requests after each rental pickup",
+      "min": 49,
+      "max": 129,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"The day after the crew picks up the chairs and tent, the host gets a short text asking how the party went and for a review.\"",
+      "when": "Day 30. The easiest second sale."
+    },
+    {
+      "name": "Graduation party tent campaign",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A spring push to parents of seniors with a graduation party bundle: one tent, tables, chairs and delivery, priced in one line.\"",
+      "when": "Pitch in January, run February to April."
+    },
+    {
+      "name": "Bridal show booth kit for the rental company",
+      "min": 300,
+      "max": 900,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A booth banner, a collection card and a date-check code for the bridal show, so couples who stop at your tablescape reserve from their phone.\"",
+      "when": "Six weeks before the first winter bridal show they exhibit at."
+    },
+    {
+      "name": "Box truck and trailer lettering artwork",
+      "min": 200,
+      "max": 600,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Your delivery truck sits outside a party for hours. Lettering with the rental catalogue address turns every guest into a lead.\"",
+      "when": "Right after launch, or when they add a truck."
+    },
+    {
+      "name": "Town pages for the delivery area",
+      "min": 150,
+      "max": 400,
+      "unit": "per-page",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A page for each town you deliver tents to, with the delivery fee and setups from that town, so 'party rentals near me' finds you there.\"",
+      "when": "Month 3, once they've named their busiest towns."
+    },
+    {
+      "name": "Venue approved-vendor packet for rentals",
+      "min": 300,
+      "max": 700,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A one-page packet for venue managers: your tent and table range, setup windows and insurance certificate process, ready to send to every venue in the area.\"",
+      "when": "Month 2, before venues update their vendor lists for next season."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Caterers working the same parties",
+        "whoPays": "The caterer, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The caterer who sets up under your tents every weekend has no menu page with headcount pricing. Your rental client can introduce you over the buffet tables.\"",
+        "whyItWorks": "Caterers and rental companies share almost every event. A recommendation from the tent crew lands as trusted."
+      },
+      {
+        "route": "Backyard and farm wedding venue owners",
+        "whoPays": "The property owner",
+        "min": 2000,
+        "max": 5000,
+        "unit": "one-time",
+        "pitchLine": "\"The farm that rents your tents for every wedding has no venue site. I'll build one with your tent and table packages already on it.\"",
+        "whyItWorks": "Tented properties depend on the rental company, and the rental client knows exactly which owners need help taking bookings."
+      },
+      {
+        "route": "Balloon and party decor artists",
+        "whoPays": "The decor artist, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The balloon artist who decorates your tents for birthday parties books everything by DM. Same catalogue layout, smaller inventory.\"",
+        "whyItWorks": "Decor artists refer hosts to the rental company and back again. A shared site look makes the pair easy to book."
+      },
+      {
+        "route": "Festival committees at schools and churches",
+        "whoPays": "The committee or parish office",
+        "min": 800,
+        "max": 2500,
+        "unit": "one-time",
+        "pitchLine": "\"The church festival that rents your tents every summer needs a page for booth sign-ups, volunteer shifts and the schedule.\"",
+        "whyItWorks": "Committees change every year but the rental company stays. Your client knows who's in charge this year."
+      },
+      {
+        "route": "Portable restroom trailer companies",
+        "whoPays": "The restroom company",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"Every outdoor tent wedding also needs restrooms. The restroom trailer company your client refers hosts to needs the same catalogue and date check.\"",
+        "whyItWorks": "Outdoor events need both, and the two companies already trade referrals."
+      },
+      {
+        "route": "Draping and event lighting decorators",
+        "whoPays": "The decorator, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The lighting crew that hangs drape and bistro lights in your tents has no gallery. I'll build it on the same layout as your rental site.\"",
+        "whyItWorks": "They work inside the same tents on the same days. One finished site is the whole proof."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Headcount and menu assistant for caterers",
+        "whoPays": "The caterer, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"A host enters the party date and guest count, and the caterer gets a draft menu quote with the tent and table order noted beside it.\"",
+        "whyItWorks": "Caterers answer the same headcount questions all day. The rental relationship gets you in the door."
+      },
+      {
+        "route": "Wedding enquiry assistant for tented venues",
+        "whoPays": "The property owner, monthly",
+        "min": 149,
+        "max": 349,
+        "unit": "monthly",
+        "pitchLine": "\"Couples asking the farm venue about dates, capacity and tent options get answers at any hour, and the owner gets a tour request.\"",
+        "whyItWorks": "Small venue owners miss enquiries while running events. Every booked tour is a wedding the rental company also serves."
+      },
+      {
+        "route": "Balloon quote assistant from party pictures",
+        "whoPays": "The decor artist, monthly",
+        "min": 49,
+        "max": 149,
+        "unit": "monthly",
+        "pitchLine": "\"A parent sends an inspiration picture of a balloon arch, and the decor artist gets a sized quote draft to approve before replying.\"",
+        "whyItWorks": "Balloon artists quote from pictures all day. A faster quote means more parties under your client's tents."
+      },
+      {
+        "route": "Festival vendor sign-up assistant",
+        "whoPays": "The festival committee, per event",
+        "min": 400,
+        "max": 1200,
+        "unit": "per-job",
+        "pitchLine": "\"Food and craft vendors applying for the church festival get booth sizes, power and fees answered, and the committee gets a clean list.\"",
+        "whyItWorks": "Volunteer committees drown in vendor emails. The tent order and the booth map come from the same plan."
+      },
+      {
+        "route": "Restroom count estimator for trailer companies",
+        "whoPays": "The restroom company, monthly",
+        "min": 79,
+        "max": 199,
+        "unit": "monthly",
+        "pitchLine": "\"Hosts enter guest count, hours and whether alcohol is served, and the restroom company gets a suggested unit count and quote draft.\"",
+        "whyItWorks": "It answers the question every outdoor host asks, and the rental client already sends them those hosts."
+      },
+      {
+        "route": "Lighting mock-up assistant for decorators",
+        "whoPays": "The lighting decorator, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"A couple uploads a picture of the tent or barn, and the decorator gets a draft lighting and drape plan to refine before the quote.\"",
+        "whyItWorks": "Decorators sell on visualising the room. A quicker mock-up closes the tent weddings your client is already serving."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Online deposit at rental reservation",
+      "kind": "software",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"The host pays the deposit the moment they reserve the tent, so a Saturday is held by money, not by a message thread.\"",
+      "whenAndWhatItTakes": "At build, or the first time they mention a host who vanished. Needs their deposit rule and payment account."
+    },
+    {
+      "name": "Balance-due and delivery-window texts",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 29,
+      "monthlyMax": 99,
+      "pitchLine": "\"A week before the party the host gets the balance link, and the day before they get the delivery window and where to put the chairs.\"",
+      "whenAndWhatItTakes": "Day 30. Needs their payment terms, delivery windows and reservation list."
+    },
+    {
+      "name": "Rental DM answerer for prices and dates",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"'How much for forty chairs and a tent on the fourteenth' gets answered from your real rates and calendar, with a link to reserve.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the priced catalogue and calendar access, updated with every price change. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Inventory and date calendar for rentals",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Every tent, table and chair counted against every date, so the office knows what's free on Saturday without walking the warehouse.\"",
+      "whenAndWhatItTakes": "Month 2, after a double-booking scare. Needs a full item count and the current reservation book, paper or not."
+    },
+    {
+      "name": "Delivery and pickup route sheet",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2500,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Each morning the crew gets the stops in order, the load list for each party and the gate notes, on one sheet on their phone.\"",
+      "whenAndWhatItTakes": "Month 3, once they run more than one truck on a Saturday. Needs addresses and load lists from reservations."
+    },
+    {
+      "name": "Signed rental agreement and damage waiver",
+      "kind": "software",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"The host signs the rental terms and picks the damage waiver at checkout, so a torn sidewall isn't an argument later.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their current paper terms, reviewed by their own advisor before it goes live."
+    },
+    {
+      "name": "Yard picture to tent suggestion",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"A host uploads a picture of the backyard and the guest count, and you get a suggested tent size and layout to check before you quote.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their tent sizes, layout rules and site limits. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Return check-in with damage notes",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"When the rental truck comes back, the crew logs missing chairs, stained linens and tent damage against the order before anything is washed.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their damage price list and a phone for the warehouse crew."
+    },
+    {
+      "name": "Rental line phone receptionist",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 199,
+      "monthlyMax": 399,
+      "pitchLine": "\"When the whole crew is out setting up tents on a Saturday, the rental line still gets answered, the date gets checked and the request gets logged.\"",
+      "whenAndWhatItTakes": "Month 4, before the busy season. Needs the catalogue, terms and calendar access. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Wind and rain notices for tent bookings",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"When the forecast turns, hosts with an outdoor party get a note about sidewalls and the weather policy before they start calling.\"",
+      "whenAndWhatItTakes": "Month 3, before spring. Needs their weather policy and the reservation list with tent orders."
+    },
+    {
+      "name": "Linen count and laundry tracker",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 29,
+      "monthlyMax": 99,
+      "pitchLine": "\"Know how many ivory rounds are clean, out or at the laundry before you promise them for Saturday's wedding.\"",
+      "whenAndWhatItTakes": "Month 5, for companies carrying linens. Needs the linen inventory by colour and size."
+    },
+    {
+      "name": "Caption writer for party setup posts",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Post the tent setup, and a caption naming the tent size, table style and town is ready to approve.\"",
+      "whenAndWhatItTakes": "Month 2. Needs a few past captions and the catalogue names. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Repeat-order portal for event accounts",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 49,
+      "monthlyMax": 149,
+      "pitchLine": "\"The school, church or company picnic reorders last year's tents and tables in one click, with their purchase order and insurance paperwork attached.\"",
+      "whenAndWhatItTakes": "Month 6, once they name a few organisations that rent every year. Needs past orders and billing terms."
+    },
+    {
+      "name": "Review reply drafts for the rental company",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 49,
+      "monthlyMax": 149,
+      "pitchLine": "\"Every review about a party gets a reply drafted that names the tent or setup, ready to approve between deliveries.\"",
+      "whenAndWhatItTakes": "Month 2, alongside the review requests. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Annual party rebooking reminders",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 29,
+      "monthlyMax": 99,
+      "pitchLine": "\"The family that rented a tent for last May's birthday party hears from you in March with last year's order ready to repeat.\"",
+      "whenAndWhatItTakes": "Month 6, once a year of reservations is on file. Needs the order history with dates."
+    },
+    {
+      "name": "Party description to rental order builder",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"A host types 'sixty guests, backyard, buffet and a dance floor', and gets a draft rental order with tent, tables, chairs and linens.\"",
+      "whenAndWhatItTakes": "Month 5. Needs the catalogue with counts and their usual ratios per guest. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Crew schedule and tent load list",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Who's on which tent install, which truck, and what has to be loaded for each party, set the night before.\"",
+      "whenAndWhatItTakes": "Month 6, once they run more than two crews in season. Needs the crew list and the reservation calendar."
+    },
+    {
+      "name": "Rental inventory buying forecast",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"Before you buy more chairs or another frame tent, see which items were turned away most often last season and on which dates.\"",
+      "whenAndWhatItTakes": "Month 9, after a full season of reservation and turned-away data. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Tent setup answers for new crew",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"New crew ask the phone how to stake a frame tent on a slope or ballast it on a patio, and get your own written method.\"",
+      "whenAndWhatItTakes": "Month 7, before seasonal hiring. Needs the owner's setup notes and approval of every answer. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Unfinished reservation follow-up",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"A host who checks a date for a tent and leaves without reserving gets a note the next morning asking if they'd like it held.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the availability checker and an email or phone field before the date check."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the rental catalogue and date check",
+      "whoPays": "Small party rental companies, monthly",
+      "min": 49,
+      "max": 199,
+      "unit": "monthly",
+      "pitchLine": "\"I built a catalogue, date check and deposit for one party rental company. Every one-truck rental outfit in the country runs on a notebook.\"",
+      "whyItWorks": "The first client paid for the workflow. Small rental companies are many, similar and easy to find."
+    },
+    {
+      "route": "Member template for a regional rental association",
+      "whoPays": "The association",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer every member a party rental catalogue template with a date check as a member benefit.\"",
+      "whyItWorks": "Associations need renewal reasons. One agreement reaches a room of rental owners who already trust it."
+    },
+    {
+      "route": "Dealer site kit for a tent manufacturer's buyers",
+      "whoPays": "The tent manufacturer's dealer programme",
+      "min": 5000,
+      "max": 20000,
+      "unit": "one-time",
+      "pitchLine": "\"Your tents sell to rental companies with no website. A ready catalogue kit with your tent specs makes every buyer easier to rent from.\"",
+      "whyItWorks": "Manufacturers want their customers renting more tents. A site kit is a dealer benefit they can budget."
+    },
+    {
+      "route": "Catalogue templates for a linen and tableware wholesaler",
+      "whoPays": "The wholesaler",
+      "min": 3000,
+      "max": 12000,
+      "unit": "one-time",
+      "pitchLine": "\"Your rental customers struggle to show linens online. Swatch galleries prebuilt from your colour range help them sell more of your stock.\"",
+      "whyItWorks": "Wholesalers sell more when their customers rent more. The swatch gallery is already built."
+    },
+    {
+      "route": "White-label rental catalogue for agencies",
+      "whoPays": "The agency, per site",
+      "min": 500,
+      "max": 1500,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency gets party rental clients and builds brochure sites. License my catalogue with the availability checker already working.\"",
+      "whyItWorks": "Agencies have the clients but not the reservation logic. You sell them the hard part."
+    },
+    {
+      "route": "Tool rental yards adding party gear",
+      "whoPays": "Each rental yard, at your normal rate",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"Equipment yards that started renting tents and tables need a party section in their catalogue. I've built exactly that.\"",
+      "whyItWorks": "The catalogue logic carries over, and party gear is where those yards want to grow."
+    },
+    {
+      "route": "Inflatable operators adding tents and tables",
+      "whoPays": "Each operator, at your normal rate",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"Bounce house companies keep adding tables, chairs and small tents. A combined party catalogue with one date check is the next step.\"",
+      "whyItWorks": "Same customers and same weekends. The tent and table inventory model is already built."
+    },
+    {
+      "route": "Multi-branch party rental groups",
+      "whoPays": "The group, per branch",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "pitchLine": "\"Each branch needs its own delivery zones and stock on one shared rental catalogue. I build it once and roll it out.\"",
+      "whyItWorks": "One contract becomes several locations on the same template."
+    },
+    {
+      "route": "Workshop at the regional rental trade show",
+      "whoPays": "The show organiser, plus leads",
+      "min": 500,
+      "max": 1500,
+      "unit": "one-time",
+      "pitchLine": "\"A session on taking tent reservations online, using a real party rental company's numbers with their permission.\"",
+      "whyItWorks": "Speaking puts you in front of a room of owners with the same problem, and the client story does the selling."
+    },
+    {
+      "route": "Pavilion booking sites for town parks departments",
+      "whoPays": "The parks department",
+      "min": 3000,
+      "max": 12000,
+      "unit": "one-time",
+      "pitchLine": "\"Residents book park pavilions for parties the same way hosts book tents. The date check and deposit you built for a rental company fits the town.\"",
+      "whyItWorks": "Parks departments buy online reservations and the rental client often supplies the tents for those same parties."
+    },
+    {
+      "route": "Tent and table rental clients in a second metro",
+      "whoPays": "New rental companies in a new metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I keep one party rental company per delivery area in {City}. The rental companies an hour away don't compete with them.\"",
+      "whyItWorks": "Rental companies serve fixed delivery radiuses, so the template and proof travel without conflict."
+    },
+    {
+      "route": "Finish stalled reservation system setups",
+      "whoPays": "The stuck rental company",
+      "min": 500,
+      "max": 2000,
+      "unit": "one-time",
+      "pitchLine": "\"Someone started a party rental reservation system and never loaded the inventory. I can finish it the way I did for another rental company.\"",
+      "whyItWorks": "These owners already decided to buy. They need someone who knows how tent and chair counts work."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Rental catalogue build plus care plan, one contract",
+      "min": 2000,
+      "max": 3500,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The rental catalogue and the care plan go on one contract, so a new tent or a price change is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 14,
+      "offer": "Online deposit at rental reservation",
+      "min": 300,
+      "max": 900,
+      "unit": "one-time",
+      "trigger": "They mention a host who reserved a tent by message and never paid.",
+      "line": "\"That tent you held for a host who disappeared is what a deposit at reservation stops.\""
+    },
+    {
+      "rung": 3,
+      "day": 30,
+      "offer": "Review requests after each rental pickup",
+      "min": 49,
+      "max": 129,
+      "unit": "monthly",
+      "trigger": "The site has been live a month and the party reviews are still mostly on Facebook.",
+      "line": "\"Your hosts loved the tent. Let's ask them the morning after pickup.\""
+    },
+    {
+      "rung": 4,
+      "day": 45,
+      "offer": "Tent sizing calculator",
+      "min": 400,
+      "max": 1200,
+      "unit": "one-time",
+      "trigger": "Form data shows most enquiries ask what size tent they need.",
+      "line": "\"Your messages keep asking what tent fits the party. Let the page answer and send you the order.\""
+    },
+    {
+      "rung": 5,
+      "day": 60,
+      "offer": "Styled tent and tablescape photo day",
+      "min": 300,
+      "max": 900,
+      "unit": "per-shoot",
+      "trigger": "The catalogue still has marked placeholders on the tent and wedding collections.",
+      "line": "\"One morning with the tent up in the yard fills every collection in the rental catalogue.\""
+    },
+    {
+      "rung": 6,
+      "day": 90,
+      "offer": "Inventory and date calendar for rentals",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "trigger": "They mention a double-booked tent or chairs promised twice on one weekend.",
+      "line": "\"A count for every tent and chair against every date ends the double-booked Saturday.\""
+    },
+    {
+      "rung": 7,
+      "day": 150,
+      "offer": "Repeat-order portal for event accounts",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "trigger": "They name schools, churches or companies that rent the same tents every year.",
+      "line": "\"Your annual picnic and festival accounts can reorder last year's tents in one click.\""
+    },
+    {
+      "rung": 8,
+      "day": 180,
+      "offer": "Introduction to a tented farm venue",
+      "min": 2000,
+      "max": 5000,
+      "unit": "one-time",
+      "trigger": "They mention a farm or backyard venue that rents their tents for every wedding.",
+      "line": "\"That farm venue rents your tents every weekend and has no site. Would you introduce me?\""
+    }
+  ]
+}

@@ -1,0 +1,851 @@
+{
+  "schemaVersion": 1,
+  "category": "Bounce house & inflatable rentals",
+  "slug": "bounce-house-inflatable-rentals",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Event family batch, catalog archetype. Booking, calendar and deposits for a low-ticket seasonal trade, so add-ons stay small. Rider and wind limits stay as placeholders. No booking, payment or inflatable brands named. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Inflatable safety rules and attendants",
+      "contains": "Age groups, [rider limit] per unit, no shoes or sharp objects, adult supervision, [wind limit] shutdown rule, and an optional trained attendant for big parties",
+      "why": "Parents decide on safety before price. A plain rules page and an attendant option reassure the mum who's worried about the toddlers."
+    },
+    {
+      "section": "Water slide days",
+      "contains": "Wet versus dry use, hose and water source, splash pool landing, what kids should wear, slip zones on the lawn, and drying time before pickup",
+      "why": "Water slides book out on the hottest weekends. Parents pick the company that explains the wet setup and the mess before they ask."
+    },
+    {
+      "section": "Field day and carnival bundles",
+      "contains": "Obstacle courses, interactive games, dunk tanks and concessions for school field days, carnivals and church festivals, with paperwork and invoicing",
+      "why": "Schools and churches book several inflatables at once and want one quote. A bundle page lands the biggest orders of the season."
+    },
+    {
+      "section": "Cleaning and sanitising between rentals",
+      "contains": "How each bounce house is cleaned and sanitised, vinyl and seam checks, blower and stake inspection, and what parents can ask to see",
+      "why": "Parents picture a dirty bouncer from a stranger's party. Showing the cleaning routine is a quiet reason to choose this company."
+    },
+    {
+      "section": "Birthday bounce house theme picker",
+      "contains": "Unicorn, superhero, princess and sports themed bounce houses, matching banners, plus cotton candy, snow cone and popcorn machines",
+      "why": "Kids pick the theme and parents pay. A picker that matches the bouncer to the birthday theme turns a single unit into a party bundle."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C26",
+      "siteType": "local-conversion",
+      "name": "Backyard Bounce",
+      "heroLayout": "card-stack",
+      "mood": [
+        "playful",
+        "safe",
+        "sunny"
+      ],
+      "bestFor": "One-trailer inflatable operators renting a handful of bounce houses for birthdays in a few towns",
+      "pairsWithTier": "starter",
+      "headlineSample": "Bounce house rentals in {City}, delivered and set up",
+      "whyItFits": "Sky blue and soft rounded type feel like a kids' party, and the card stack shows the bestselling bouncers with prices and a Check date button."
+    },
+    {
+      "id": "b",
+      "themeId": "C45",
+      "siteType": "catalog",
+      "name": "Inflatable Catalogue",
+      "heroLayout": "type-led",
+      "mood": [
+        "bright",
+        "organised",
+        "bold"
+      ],
+      "bestFor": "Operators with water slides, combos and obstacle courses who need inventory, dates and deposits online",
+      "pairsWithTier": "standard",
+      "headlineSample": "Bounce houses and water slides in {City}. Check your date.",
+      "whyItFits": "The family combo. Bold poster type gives a long inflatable catalogue a clear structure, and the strong accent keeps Check availability on every unit."
+    },
+    {
+      "id": "c",
+      "themeId": "C47",
+      "siteType": "booking-first",
+      "name": "Party Zone",
+      "heroLayout": "split-photo",
+      "mood": [
+        "fun",
+        "energetic",
+        "reliable"
+      ],
+      "bestFor": "Full-service party companies selling bundles with attendants to schools, churches and company picnics",
+      "pairsWithTier": "premium",
+      "headlineSample": "Field days, carnivals and backyard bounce parties in {City}",
+      "whyItFits": "Teal and tangerine with warm humanist type feel like a fair, and the split hero puts a bundle builder beside the booking calendar."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your Maps listing for bounce house rentals has reviews and a number but no website. A parent planning a fifth birthday in {City} can't see which bouncers you have or what they cost.",
+      "hook": "Open their Maps listing and confirm there is no Website button. Screenshot it for when they reply.",
+      "linkLine": "The inflatable catalogue that would sit behind that button: {demo-link}"
+    },
+    {
+      "angle": "Bouncers listed in posts",
+      "line": "Your bounce houses are listed one per Facebook post, so a parent scrolls through months of party pictures to find the unicorn combo and its price. A catalogue with a date check ends the scrolling.",
+      "hook": "Open their Facebook page and find how they show inventory. Note how far back the oldest bouncer post is.",
+      "linkLine": "Your bounce houses as a catalogue with a date check: {demo-link}"
+    },
+    {
+      "angle": "Free site with sold-out units",
+      "line": "The inflatable site on your listing still shows water slides you may not rent anymore, with no way to book. Parents notice a dead page before they notice the slides.",
+      "hook": "Open the site and find one stale detail: a retired unit, last summer's price, a broken form. Note it.",
+      "linkLine": "The same bounce house company, current and bookable: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "I opened your bounce house site on my phone and the rental prices sat in a table I had to pinch to read. Parents book party inflatables from the playground bench.",
+      "hook": "Only if they have a site. Load it on your phone and note what breaks. Screenshot it for when they reply.",
+      "linkLine": "The same inflatable rentals, rebuilt for a phone: {demo-link}"
+    },
+    {
+      "angle": "Can't check a Saturday",
+      "line": "There's no way to see whether the castle bouncer is free on a Saturday without messaging. Birthday parents book the first bounce house company that says yes.",
+      "hook": "Look for a calendar or availability checker. If they say 'message to book', the angle holds.",
+      "linkLine": "A bounce house page that shows open Saturdays: {demo-link}"
+    },
+    {
+      "angle": "Party pictures with nowhere to go",
+      "line": "Your shots of kids flying off the water slide are better than any ad, and they're buried in the feed by Tuesday. A gallery by bouncer type would keep them booking.",
+      "hook": "Pick one recent setup post and note the unit and the party. Mention it if they reply.",
+      "linkLine": "Your inflatable setups, sorted by unit: {demo-link}"
+    },
+    {
+      "angle": "Reviews about the setup crew",
+      "line": "One of your reviews says the crew anchored the bounce house in the rain and still had it up before the kids arrived. That belongs next to the Book button for every nervous parent.",
+      "hook": "Read their reviews and copy one phrase about the crew, cleanliness or safety. Quote it back if they reply.",
+      "linkLine": "Your reviews beside the inflatables they describe: {demo-link}"
+    },
+    {
+      "angle": "Water slide season",
+      "line": "The first hot weekend fills every water slide in town. Inflatable companies with online booking take those Saturdays while the others are answering messages.",
+      "hook": "Use this from March to May. Check whether they've posted about water slides or summer dates.",
+      "linkLine": "Water slide rentals bookable before the heat arrives: {demo-link}"
+    },
+    {
+      "angle": "Bedtime bounce house bookings",
+      "line": "Parents plan birthdays after bedtime. A mum who wants a combo bouncer and a snow cone machine at ten at night has to message and hope, and some book whoever answers.",
+      "hook": "Look for comments asking 'is this available on' or 'how much for the combo'. Note one with its time.",
+      "linkLine": "A bounce house page that takes a booking at bedtime: {demo-link}"
+    },
+    {
+      "angle": "Hiring setup crew",
+      "line": "Saw you're hiring summer setup crew for the inflatables. Good crew check whether a company looks organised before they sign on for hot Saturdays.",
+      "hook": "Only if they posted a hiring notice for drivers, setup crew or attendants. Note the date.",
+      "linkLine": "A bounce house site with a join-the-crew page: {demo-link}"
+    },
+    {
+      "angle": "Delivery towns and fees",
+      "line": "Your posts say you deliver bounce houses to several towns, but parents can't see whether there's a travel fee for theirs until they ask.",
+      "hook": "Check their bio and posts for the towns they serve. List them before you send.",
+      "linkLine": "Your inflatable delivery towns and fees on one page: {demo-link}"
+    },
+    {
+      "angle": "Deposits taken by hand",
+      "line": "It looks like bounce house deposits are taken by message and phone. A deposit at booking holds the water slide and stops the no-show party you drove out to.",
+      "hook": "Look for 'deposit to hold' or 'message to reserve' in their posts. Note the wording.",
+      "linkLine": "A bounce house booking with the deposit built in: {demo-link}"
+    },
+    {
+      "angle": "Insurance for schools and parks",
+      "line": "Schools, churches and town parks ask inflatable companies for insurance certificates before field day. A page that says you provide one gets you onto their vendor list.",
+      "hook": "Check whether they mention insurance or inspections anywhere. Never state coverage or credentials they haven't published.",
+      "linkLine": "A bounce house site with the school paperwork answered: {demo-link}"
+    },
+    {
+      "angle": "Word-of-mouth parents",
+      "line": "Sounds like most of your bounce house bookings come from parents who were at a party you set up. Their friends still search before they book, and need somewhere to land.",
+      "hook": "Look for reviews or comments saying 'saw you at a party'. Quote one if they reply.",
+      "linkLine": "Where a parent who saw your bouncer at a party would land: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "That {specific recent job} looked like a great party. A bouncer setup like that should be the first thing a parent sees when they price an inflatable for their own kid.",
+      "hook": "Pick their newest posted setup and name it exactly: the unit, the event and the yard or venue.",
+      "linkLine": "That inflatable setup, front and centre: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner} — that {specific recent job} looked like a great party.\n\nI looked for a website for {Business Name} where a parent could see your bounce houses and check a date, and only found the social pages. I put together a sample inflatable rental site with a catalogue, a date check and deposits, with marked placeholders where your photos would go.\n\nWould you like me to send it over?",
+    "dm2": "{Owner} — following up in case my message got lost under party bookings. Here's the sample bounce house site for {Business Name}: {demo-link}\n\nIt has every inflatable with sizes and prices, a Saturday date check, water slide setup info, safety rules and a deposit at booking. If it's not for you, say so and I won't message again.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for bounce house and inflatable rental companies around {City}. I sent you a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"Easy to miss on a busy weekend. Short version: I built a sample site for {Business Name} with your bounce houses, a date check and deposits, with marked placeholders where your photos would go. Can I email you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n → ask: \"How do you keep track of which bouncer is booked on which Saturday right now?\"\n\"The build runs {Build Range}, then {Care Range} a month for hosting, new units and price changes. For an inflatable company your size I'd normally quote about {Build Price}.\"\n\"Can we go through it for ten minutes on a weekday morning?\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. We start the day it clears, and I'll need your unit list, sizes and prices.\"",
+    "objections": [
+      {
+        "objection": "Parents just message me and it works.",
+        "handler": "\"Keep the messages. The site answers 'is it free and how much' first, so the messages you get are parents ready to book, and the deposit is paid before you load the trailer.\""
+      },
+      {
+        "objection": "It's winter, nobody's booking bounce houses.",
+        "handler": "\"That's the time to build. Parents start booking spring birthdays and water slides as soon as it warms up, and the site should be ready for the first hot weekend.\""
+      },
+      {
+        "objection": "I only have a few bounce houses.",
+        "handler": "\"Then the site is small and quick. A few units with a date check and a deposit is exactly what a parent needs, and it grows when you buy the next slide.\""
+      },
+      {
+        "objection": "My nephew made me a page already.",
+        "handler": "\"Keep the domain. The missing pieces are the Saturday date check and the deposit. I can build those on the address you already have.\""
+      },
+      {
+        "objection": "What if it rains and people want refunds?",
+        "handler": "\"The weather policy goes on the site and in the booking terms the parent agrees to, so the rain conversation is already settled before the party.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}, because it's a catalogue, a date check and deposits. A few weekends of bounce house bookings cover it.\""
+      }
+    ],
+    "email": {
+      "subject": "Bounce house site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for bounce house and inflatable rental companies around {City}. {Business Name} has happy parties all over its social pages, but no site where a parent can see your inflatables, check a Saturday and pay a deposit.\n\nI built a sample first rather than ask for your time: every bounce house and water slide with sizes and prices, a date check, safety rules, delivery towns and a deposit at booking, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting, new units and price changes. If not, no problem, it comes down at the end of the month.\n\nWorth ten minutes on a weekday?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build websites for bounce house companies in {City}, and I put together a sample one for {Business Name} with a date check and deposits. I'll email you the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner} — I'm taking the {Business Name} bounce house demo down on Friday to free up the space.\n\nWant me to leave it up? One word is fine either way.",
+    "nurture": "Hi {Owner} — the first warm weekends are coming, and parents book water slides and spring birthday bouncers early. Thought of you.\n\nThe inflatable site is still here whenever you want it, and nothing's changed on price. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to a few weekends of bookings, never to a season. Single bounce house rentals are small tickets.",
+      "The date check and deposit are the core. Without them it's a brochure, and parents still message.",
+      "Price the catalogue by unit count. Each inflatable needs dimensions, age group, space needed and power.",
+      "Field day and carnival bundles are their own line. They bring the biggest single orders of the year.",
+      "Keep monthly add-ons below the price of one basic bouncer rental.",
+      "Sell everything in the winter. By the first hot weekend the owner is out setting up every day."
+    ],
+    "lineItems": [
+      {
+        "item": "Extra inflatable units in the catalogue (each group of five)",
+        "min": 100,
+        "max": 300,
+        "unit": "one-time",
+        "description": "Max when each unit needs wet and dry options, space and power specs, age groups and a themed shot placeholder.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Date check tied to each inflatable",
+        "min": 500,
+        "max": 1500,
+        "unit": "one-time",
+        "description": "Max with per-unit calendars, multi-day rentals and blocked travel time between parties.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Field day and carnival bundle builder",
+        "min": 300,
+        "max": 900,
+        "unit": "one-time",
+        "description": "Max with several units, attendants, concessions, a school invoice and an insurance certificate request.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Delivery town fee table",
+        "min": 150,
+        "max": 400,
+        "unit": "one-time",
+        "description": "Max with several zones, surface fees for sand or concrete, and stair or long-carry charges.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Safety rules and signed waiver page",
+        "min": 200,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max with an online waiver at booking, wind and rider rules as placeholders and an attendant add-on.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Spanish-language bounce house catalogue",
+        "min": 250,
+        "max": 700,
+        "unit": "one-time",
+        "description": "Max when catalogue, rules, waiver and booking are all translated.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Google profile upkeep for the bounce house company",
+      "min": 100,
+      "max": 250,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Your Google profile fills up with castles, combos and water slides from real backyards, tagged by suburb, so a parent's 'bounce house near me' search shows a busy operator.\"",
+      "when": "Day 30, in season."
+    },
+    {
+      "name": "Review texts the morning after the party",
+      "min": 39,
+      "max": 99,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"The morning after the bouncer is picked up, the parent gets a short text asking how the birthday went and for a quick review.\"",
+      "when": "Day 30. The easiest second sale."
+    },
+    {
+      "name": "Spring water slide booking push",
+      "min": 250,
+      "max": 600,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A March push to local parents with the water slide lineup and open summer Saturdays, before the first heat wave books them out.\"",
+      "when": "Pitch in January, run March to May."
+    },
+    {
+      "name": "Field day mailer to PE teachers and parent groups",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A note to every elementary school's PE teacher and parent group nearby with the field day inflatable bundle and insurance line.\"",
+      "when": "Pitch in January, send in February before field day planning."
+    },
+    {
+      "name": "Inflatable trailer wrap artwork",
+      "min": 200,
+      "max": 600,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A cartoon bouncer and your booking address on the trailer, parked at a kids' party all afternoon, is an advert every dropping-off parent reads.\"",
+      "when": "Right after launch, or when they buy a new trailer."
+    },
+    {
+      "name": "Neighbourhood pages for bounce house delivery",
+      "min": 100,
+      "max": 300,
+      "unit": "per-page",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A page for each town where you set up inflatables, with its delivery fee and parties from there, so local searches find you.\"",
+      "when": "Month 3, once they name their busiest towns."
+    },
+    {
+      "name": "Bouncer setup shoot on a weekday",
+      "min": 200,
+      "max": 500,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"One weekday morning with the inflatables set up in a park or yard gives every unit in the catalogue a proper picture and a short clip.\"",
+      "when": "Month 2, before peak season, on a calm dry day."
+    },
+    {
+      "name": "Party leave-behind cards with a booking code",
+      "min": 100,
+      "max": 300,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A card clipped to the bounce house blower with a booking code, so the parents at the party can book the same unit for their kid.\"",
+      "when": "Right after launch."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Kids' party entertainers on the same birthdays",
+        "whoPays": "The entertainer, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The face painter and the magician at the same birthday parties as your bounce houses book by DM too. A small date-check site fits them.\"",
+        "whyItWorks": "Party entertainers and inflatable companies share parents and refer each other weekly."
+      },
+      {
+        "route": "School parent groups running field day",
+        "whoPays": "The parent group",
+        "min": 500,
+        "max": 1500,
+        "unit": "one-time",
+        "pitchLine": "\"The parent group that books your inflatables for field day runs volunteers on a paper list. A field day page with sign-ups and the schedule fixes it.\"",
+        "whyItWorks": "The bounce house company meets the organisers every spring and knows who's in charge."
+      },
+      {
+        "route": "Trunk-or-treat and fall festival organisers",
+        "whoPays": "The church or community group",
+        "min": 500,
+        "max": 1500,
+        "unit": "one-time",
+        "pitchLine": "\"The fall festival that rents your obstacle course every October needs a page for the schedule, the trunk sign-ups and the bounce house times.\"",
+        "whyItWorks": "Organisers change but the inflatable company stays, and it knows the current contact."
+      },
+      {
+        "route": "Shaved ice and concession vendors",
+        "whoPays": "The vendor, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The shaved ice truck that parks beside your water slides at every summer event has no page with its booking calendar.\"",
+        "whyItWorks": "They work the same events and refer each other. One finished site sells the next."
+      },
+      {
+        "route": "Apartment communities hosting resident parties",
+        "whoPays": "The property manager",
+        "min": 1000,
+        "max": 3000,
+        "unit": "one-time",
+        "pitchLine": "\"The apartment community that books your bouncers for resident pool parties needs an events page residents actually check.\"",
+        "whyItWorks": "Property managers buy resident events to keep tenants. The inflatable company already has the relationship."
+      },
+      {
+        "route": "Party supply stores",
+        "whoPays": "The store",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The party supply store where your customers buy balloons and plates could take theme orders online, and send bounce house bookings back to you.\"",
+        "whyItWorks": "Party stores and inflatable companies share every birthday customer."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Booking assistant for kids' party entertainers",
+        "whoPays": "The entertainer, monthly",
+        "min": 39,
+        "max": 99,
+        "unit": "monthly",
+        "pitchLine": "\"Parents ask the face painter or magician about party length, age groups and open Saturdays, and get answers plus a booking link.\"",
+        "whyItWorks": "Entertainers miss messages while performing. A cheap monthly tool is an easy yes."
+      },
+      {
+        "route": "Field day volunteer scheduler for parent groups",
+        "whoPays": "The parent group, per event",
+        "min": 150,
+        "max": 400,
+        "unit": "per-job",
+        "pitchLine": "\"Parents pick field day volunteer stations, get reminders and swap shifts, and the organiser sees which bounce house needs a monitor.\"",
+        "whyItWorks": "Field day organisers are volunteers with no time. The inflatable company is already on their list."
+      },
+      {
+        "route": "Festival question line for church organisers",
+        "whoPays": "The church, per event",
+        "min": 150,
+        "max": 400,
+        "unit": "per-job",
+        "pitchLine": "\"Families ask the fall festival about times, costumes, the obstacle course and parking, and get answers without calling the church office.\"",
+        "whyItWorks": "Church offices get the same questions before every event, and the inflatable client makes the intro."
+      },
+      {
+        "route": "Daily location posts for concession trucks",
+        "whoPays": "The vendor, monthly",
+        "min": 29,
+        "max": 79,
+        "unit": "monthly",
+        "pitchLine": "\"The shaved ice truck enters where it's parked today, and a post and booking link for summer parties goes out automatically.\"",
+        "whyItWorks": "Small, cheap and solves a daily chore, sold through a partner who works the same events."
+      },
+      {
+        "route": "Resident event RSVP assistant for apartment managers",
+        "whoPays": "The property manager, monthly",
+        "min": 79,
+        "max": 199,
+        "unit": "monthly",
+        "pitchLine": "\"Residents RSVP for the pool party and ask about the bounce house times, guests and parking, and the manager gets a head count.\"",
+        "whyItWorks": "Property managers measure resident events by turnout. RSVPs make the number visible."
+      },
+      {
+        "route": "Theme party planner for party supply stores",
+        "whoPays": "The store, monthly",
+        "min": 79,
+        "max": 199,
+        "unit": "monthly",
+        "pitchLine": "\"A parent picks a birthday theme and guest count, and gets a shopping list from the store with a matching bounce house to book.\"",
+        "whyItWorks": "It sells more party supplies and sends bookings back to the inflatable client."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Deposit at bounce house booking",
+      "kind": "software",
+      "oneTimeMin": 200,
+      "oneTimeMax": 600,
+      "monthlyMin": 19,
+      "monthlyMax": 59,
+      "pitchLine": "\"The parent pays a small deposit when they book the bouncer, so a Saturday is held by money and the no-show party stops costing you a drive.\"",
+      "whenAndWhatItTakes": "At build. Needs their deposit amount and payment account."
+    },
+    {
+      "name": "Night-before setup and space reminder",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 500,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"The night before, the parent gets the setup window, a reminder to clear the yard for the inflatable and where the outlet needs to be.\"",
+      "whenAndWhatItTakes": "Month 1. Needs booking times and their setup requirements."
+    },
+    {
+      "name": "Bouncer availability answerer",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 49,
+      "monthlyMax": 149,
+      "pitchLine": "\"'Is the unicorn combo free on the twelfth' and 'how much is the water slide' get answered from your own calendar and prices, with a booking link.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the catalogue and calendar access. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Online waiver at booking",
+      "kind": "software",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"The parent signs the bounce house rules and waiver when they book, so nobody is hunting for a pen on the lawn.\"",
+      "whenAndWhatItTakes": "Month 1. Needs their current paper waiver, reviewed by their own advisor."
+    },
+    {
+      "name": "Unit and trailer booking calendar",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Every inflatable, blower and trailer on one calendar, so the combo bouncer is never promised to two parties on the same Saturday.\"",
+      "whenAndWhatItTakes": "Month 2, after a double-booking scare. Needs the unit list and current bookings."
+    },
+    {
+      "name": "Weekend delivery route and setup order",
+      "kind": "software",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Saturday's bounce house drops come out in the best driving order, with which unit goes on which trailer and the yard notes for each party.\"",
+      "whenAndWhatItTakes": "Month 3, once they run more than one trailer. Needs booking addresses and unit sizes."
+    },
+    {
+      "name": "Rain and wind call-off notices",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 600,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"When storms are forecast, every parent with an outdoor inflatable gets the weather policy and the reschedule options before they call.\"",
+      "whenAndWhatItTakes": "Month 2, before spring. Needs their weather policy and the booking list."
+    },
+    {
+      "name": "Yard picture fit check",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 49,
+      "monthlyMax": 149,
+      "pitchLine": "\"A parent uploads a picture of the yard, and you get a note on slope, trees and space before you promise the big water slide will fit.\"",
+      "whenAndWhatItTakes": "Month 4. Needs unit footprints and their setup rules. The owner makes the call. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Cleaning and inspection log per inflatable",
+      "kind": "software",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"After each rental, the crew logs the cleaning, any vinyl repairs and the blower check against the unit, ready to show a school or a parent.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the unit list and their cleaning routine."
+    },
+    {
+      "name": "Saturday phone answerer for bounce bookings",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"While you're staking down bouncers all Saturday, the phone still gets answered, the date gets checked and the booking link goes out.\"",
+      "whenAndWhatItTakes": "Month 4, before peak season. Needs catalogue, calendar and rules. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Next-birthday rebooking reminder",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 500,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"A month before next year's birthday, the parent hears from you with last year's bounce house ready to book again.\"",
+      "whenAndWhatItTakes": "Month 6, once a season of bookings is on file. Needs party dates."
+    },
+    {
+      "name": "Bounce house review replies",
+      "kind": "ai",
+      "oneTimeMin": 200,
+      "oneTimeMax": 600,
+      "monthlyMin": 39,
+      "monthlyMax": 99,
+      "pitchLine": "\"Parents who review the party get a cheerful reply drafted that names the bouncer and the birthday, ready to approve from the trailer.\"",
+      "whenAndWhatItTakes": "Month 2, with the review texts. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Inflatable setup captions",
+      "kind": "ai",
+      "oneTimeMin": 200,
+      "oneTimeMax": 600,
+      "monthlyMin": 39,
+      "monthlyMax": 99,
+      "pitchLine": "\"Snap the bounce house set up in the yard and get a caption naming the unit, the theme and the town, ready to post.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the unit names and a few past captions. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Field day bundle suggester",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"A school enters the number of students and hours, and gets a suggested mix of obstacle courses, slides and games with attendants to quote.\"",
+      "whenAndWhatItTakes": "Month 5, before field day season. Needs unit capacities and staffing rules. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Attendant shift scheduler",
+      "kind": "software",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Attendants pick up shifts for field days and big parties, and the owner sees which inflatable has a trained person on it.\"",
+      "whenAndWhatItTakes": "Month 5, once they sell attendant add-ons. Needs the staff list."
+    },
+    {
+      "name": "Blower and vinyl repair tracker",
+      "kind": "software",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Every blower, seam repair and patch is logged per inflatable, so a unit that's due for repair comes off the booking calendar.\"",
+      "whenAndWhatItTakes": "Month 6. Needs the unit and blower list."
+    },
+    {
+      "name": "Next inflatable purchase advisor",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 49,
+      "monthlyMax": 149,
+      "pitchLine": "\"Before buying another bounce house, see which units were asked for and turned away most last season, and on which weekends.\"",
+      "whenAndWhatItTakes": "Month 9, after a full season of booking and turned-away data. Suggestions only. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Setup safety answers for new crew",
+      "kind": "ai",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1200,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"New crew ask the phone how to stake an inflatable on hard ground or when to shut it down for wind, and get the owner's written method.\"",
+      "whenAndWhatItTakes": "Month 7, before hiring summer crew. Needs the owner's setup rules and approval of every answer. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Unfinished bounce house booking nudge",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 500,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Mum looked at the shark water slide for July and closed the tab. By breakfast she has a friendly text holding that slide for her until noon.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the date check with an email or phone field."
+    },
+    {
+      "name": "School invoice and purchase order portal",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 19,
+      "monthlyMax": 59,
+      "pitchLine": "\"Schools book the field day inflatables with a purchase order, download the insurance request form and get one invoice.\"",
+      "whenAndWhatItTakes": "Month 6, once they book schools. Needs their school terms."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise bounce house booking for small operators",
+      "whoPays": "Small inflatable operators, monthly",
+      "min": 29,
+      "max": 99,
+      "unit": "monthly",
+      "pitchLine": "\"I built a bouncer catalogue with a date check, waiver and deposit for one operator. Every one-trailer inflatable business books by DM.\"",
+      "whyItWorks": "Operators are many, small and seasonal. The first client paid for the workflow."
+    },
+    {
+      "route": "Buyer site kit for an inflatable manufacturer",
+      "whoPays": "The manufacturer",
+      "min": 5000,
+      "max": 20000,
+      "unit": "one-time",
+      "pitchLine": "\"Your customers buy bounce houses and have nowhere to rent them out online. A ready catalogue kit with your unit specs helps them buy the next one.\"",
+      "whyItWorks": "Manufacturers sell more when operators book more. The kit is a sales tool they can budget."
+    },
+    {
+      "route": "Template for an inflatable operators trade group",
+      "whoPays": "The trade group",
+      "min": 1000,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Members of the inflatable trade group get a booking-ready bouncer site with safety and cleaning pages, paid for once by the group.\"",
+      "whyItWorks": "Trade groups need member benefits, and safety pages help their reputation."
+    },
+    {
+      "route": "White-label bounce house template for agencies",
+      "whoPays": "The agency, per site",
+      "min": 300,
+      "max": 900,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency builds brochure sites for inflatable companies. License my bounce house template with the per-unit date check already working.\"",
+      "whyItWorks": "Agencies have the clients, not the booking logic."
+    },
+    {
+      "route": "Party franchise territories with inflatables",
+      "whoPays": "The franchise, per territory",
+      "min": 600,
+      "max": 2000,
+      "unit": "one-time",
+      "pitchLine": "\"Each territory owner lists their own bouncers and delivery towns on the brand's booking site, all from one shared build.\"",
+      "whyItWorks": "One contract becomes many territories on the same template."
+    },
+    {
+      "route": "Indoor inflatable parks",
+      "whoPays": "The park",
+      "min": 3000,
+      "max": 8000,
+      "unit": "one-time",
+      "pitchLine": "\"Indoor bounce parks sell birthday party rooms and open jump sessions. They need the same date check plus waivers at the door.\"",
+      "whyItWorks": "Bigger budgets, the same booking logic, and the waiver flow is already built."
+    },
+    {
+      "route": "Tent and table companies adding bouncers",
+      "whoPays": "Each company, at your normal rate",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"Party rental companies buying their first inflatables need bouncer pages with safety rules next to their tents and tables.\"",
+      "whyItWorks": "Same customers and weekends. The inflatable section drops into their catalogue."
+    },
+    {
+      "route": "Talk at an inflatable industry show",
+      "whoPays": "The show organiser, plus leads",
+      "min": 300,
+      "max": 1000,
+      "unit": "one-time",
+      "pitchLine": "\"A short talk on filling summer Saturdays with online bounce house booking, using a real operator's results with their OK.\"",
+      "whyItWorks": "The room is full of operators with the same problem, and the client story does the selling."
+    },
+    {
+      "route": "Rec department event and rental booking",
+      "whoPays": "The town recreation department",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"The town rec department rents inflatables for summer events and needs residents to book park parties online. The bounce house booking flow fits.\"",
+      "whyItWorks": "Rec departments buy booking systems and already know the inflatable client."
+    },
+    {
+      "route": "Mobile game trucks and laser tag operators",
+      "whoPays": "Each operator, at your normal rate",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"Game trucks and mobile laser tag book kids' birthdays the same way a bounce house company does. Same date check, new catalogue.\"",
+      "whyItWorks": "Same parents, same Saturdays, and they often refer each other."
+    },
+    {
+      "route": "Inflatable operators in the next county",
+      "whoPays": "New operator clients elsewhere",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"Bounce house operators only haul so far from {City}, so the company in the next county is a clean second client for the same catalogue.\"",
+      "whyItWorks": "Delivery radius defines the market, so proof and template travel without conflict."
+    },
+    {
+      "route": "Finish half-set-up inflatable booking systems",
+      "whoPays": "The stuck operator",
+      "min": 300,
+      "max": 1200,
+      "unit": "one-time",
+      "pitchLine": "\"Half-built bouncer calendars with no units loaded are common in this trade. I take them over, load every inflatable and switch the deposit on.\"",
+      "whyItWorks": "These operators already decided to pay and need someone who understands per-unit calendars."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Bounce house site build plus care plan, one contract",
+      "min": 1500,
+      "max": 2500,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The bounce house site and the care plan go on one contract, so a new inflatable or price is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 14,
+      "offer": "Online waiver at booking",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "trigger": "They mention a parent who didn't sign the paper rules before the kids started jumping.",
+      "line": "\"The bouncer waiver gets signed at booking, not on the lawn.\""
+    },
+    {
+      "rung": 3,
+      "day": 30,
+      "offer": "Review texts the morning after the party",
+      "min": 39,
+      "max": 99,
+      "unit": "monthly",
+      "trigger": "The site has been live a month and parents are booking online.",
+      "line": "\"Parents loved the bounce house. Let's ask them the morning after.\""
+    },
+    {
+      "rung": 4,
+      "day": 45,
+      "offer": "Unit and trailer booking calendar",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "trigger": "They mention a combo bouncer promised to two parties or a trailer double-booked.",
+      "line": "\"One calendar for every inflatable and trailer ends the double-booked Saturday.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Field day mailer to PE teachers and parent groups",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "trigger": "Form data shows a school or church asking about several inflatables at once.",
+      "line": "\"A school just asked for several bouncers at once. Let's send the field day bundle to every school nearby.\""
+    },
+    {
+      "rung": 6,
+      "day": 150,
+      "offer": "Weekend delivery route and setup order",
+      "min": 500,
+      "max": 1500,
+      "unit": "one-time",
+      "trigger": "They add a second trailer or crew for summer weekends.",
+      "line": "\"Two trailers on a Saturday need one bounce house route, not two phones.\""
+    },
+    {
+      "rung": 7,
+      "day": 270,
+      "offer": "Next inflatable purchase advisor",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "trigger": "Off-season, they mention buying a new water slide or combo for next year.",
+      "line": "\"Before you buy the next inflatable, let's see which ones parents asked for most.\""
+    }
+  ]
+}

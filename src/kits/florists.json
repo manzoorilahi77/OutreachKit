@@ -1,0 +1,864 @@
+{
+  "schemaVersion": 1,
+  "category": "Florists",
+  "slug": "florists",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Event family batch. Two businesses in one: the walk-in shop and the wedding studio. The wedding side is the better sale. No wire services, marketplaces or delivery apps named. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Wedding flower consultation and minimums",
+      "contains": "The wedding floral minimum, consultation booking, palette and inspiration upload, bridal party counts, ceremony arch and centrepieces, installation and strike",
+      "why": "Couples who can't see a minimum book a consultation they can't afford, and the florist loses an evening. Stating it up front books the right weddings."
+    },
+    {
+      "section": "Same-day flower delivery and cutoff",
+      "contains": "Order-by time for same-day delivery, delivery zones and fees, hospital and funeral home notes, and what happens when nobody's home",
+      "why": "Many shop orders are sent, not picked up. Buyers choose the florist who tells them plainly whether flowers will arrive today."
+    },
+    {
+      "section": "Sympathy and funeral flowers",
+      "contains": "Casket sprays, standing sprays, arrangements sent to the family home, ordering for a service time, and the funeral homes the shop delivers to",
+      "why": "Sympathy orders are urgent and emotional. A calm page that handles the service time and the funeral home wins the order from a stranger."
+    },
+    {
+      "section": "Seasonal flower guide",
+      "contains": "What's in season locally by month, peony and dahlia timing, substitutions, and how the season shapes a wedding flower budget",
+      "why": "Couples fall for peonies in October. A seasonal guide sets expectations and shows the florist knows the growers, not just the pictures."
+    },
+    {
+      "section": "Flower subscriptions and business accounts",
+      "contains": "Weekly lobby, restaurant and hotel arrangements, home flower subscriptions, office accounts with monthly invoicing",
+      "why": "Subscriptions are the steady income between holidays and wedding season. Businesses pick a florist whose standing order is easy to set up."
+    },
+    {
+      "section": "Valentine's and Mother's Day pre-orders",
+      "contains": "Pre-order windows, delivery date choices, pickup time slots, limited holiday menus and the order cutoff for each holiday",
+      "why": "Holiday rushes are won before the week itself. A pre-order page spreads the work and stops the phones ringing all day on the fourteenth."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C32",
+      "siteType": "menu-and-order",
+      "name": "Flower Counter",
+      "heroLayout": "menu-board",
+      "mood": [
+        "fresh",
+        "friendly",
+        "simple"
+      ],
+      "bestFor": "Walk-in flower shops selling everyday, sympathy and holiday arrangements with local delivery",
+      "pairsWithTier": "starter",
+      "headlineSample": "Fresh flowers delivered across {City} today",
+      "whyItFits": "Olive green and a bookish serif feel like a neighbourhood flower shop, and the menu board shows arrangements, prices and the same-day cutoff at a glance."
+    },
+    {
+      "id": "b",
+      "themeId": "C45",
+      "siteType": "portfolio-showcase",
+      "name": "Wedding Flower Studio",
+      "heroLayout": "split-photo",
+      "mood": [
+        "joyful",
+        "organised",
+        "fresh"
+      ],
+      "bestFor": "Florists growing the wedding side who need portfolio by venue, a minimum and a date check",
+      "pairsWithTier": "standard",
+      "headlineSample": "Wedding flowers in {City}. Check your date.",
+      "whyItFits": "The family combo. A cool ultramarine ground makes warm bloom colours pop, and poster type keeps the consultation and date check above the gallery."
+    },
+    {
+      "id": "c",
+      "themeId": "C35",
+      "siteType": "premium-brand",
+      "name": "Floral Atelier",
+      "heroLayout": "full-bleed-photo",
+      "mood": [
+        "romantic",
+        "lush",
+        "exclusive"
+      ],
+      "bestFor": "Floral design studios doing installations and luxury weddings by consultation only",
+      "pairsWithTier": "premium",
+      "headlineSample": "Floral design for weddings and events near {City}",
+      "whyItFits": "Rosewood and a Didone display read like a bridal magazine, which suits a studio that sells installations and turns away small orders."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your flower shop's Maps listing has hours and a phone number but no website, so someone sending sympathy flowers in {City} tonight can't see an arrangement or a price.",
+      "hook": "Open their Maps listing and confirm there is no Website button. Screenshot it for when they reply.",
+      "linkLine": "The flower shop site that would sit behind that button: {demo-link}"
+    },
+    {
+      "angle": "Orders taken by message",
+      "line": "It looks like flower orders come in by Facebook message and phone. Someone ordering a birthday arrangement at lunch wants to pick, pay and choose a delivery time without a conversation.",
+      "hook": "Check their Facebook page and bio for 'message to order' or 'call to order'. Note the wording.",
+      "linkLine": "A flower shop page that takes the order and the card message: {demo-link}"
+    },
+    {
+      "angle": "Wire service storefront",
+      "line": "The website on your listing is a relay-network storefront with generic arrangements, not your own floral design. Orders through it usually carry a network fee, and none of your work is on it.",
+      "hook": "Open their website link and check whether it's a templated network storefront with stock arrangements. Note the giveaway.",
+      "linkLine": "Your own flower shop site, with your designs and no relay cut: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "I opened your florist site on my phone and the order form cut off the delivery date field. Flower orders are usually placed from a phone, often in a hurry.",
+      "hook": "Only if they have a site. Try to start an order on your phone and note where it breaks. Screenshot it for when they reply.",
+      "linkLine": "The same flower shop, rebuilt for a phone order: {demo-link}"
+    },
+    {
+      "angle": "No wedding consultation form",
+      "line": "Your site sells arrangements but has nothing for weddings, no consultation form, no minimum and no date check. The wedding side of a florist is where the bigger orders are.",
+      "hook": "Look for a weddings page, a consultation form or a stated minimum. If there's none, the angle holds.",
+      "linkLine": "A wedding flower consultation page with a date check: {demo-link}"
+    },
+    {
+      "angle": "Wedding florals, nowhere to live",
+      "line": "That ceremony arch and those centrepieces you posted are your best advert for the wedding side, and they're mixed in with everyday bouquets. A wedding floral gallery by venue would book consultations.",
+      "hook": "Pick one recent wedding flower post and describe the piece and venue exactly. Mention it if they reply.",
+      "linkLine": "Your wedding florals, sorted by venue and season: {demo-link}"
+    },
+    {
+      "angle": "Reviews about the arrangements",
+      "line": "One of your reviews says the funeral spray was exactly what the family wanted, delivered before the service. That line belongs next to the sympathy flowers on the florist's own site.",
+      "hook": "Read their reviews and copy one phrase about a specific arrangement or delivery. Quote it back if they reply.",
+      "linkLine": "Your reviews beside the flowers they describe: {demo-link}"
+    },
+    {
+      "angle": "Valentine's pre-orders",
+      "line": "Valentine's week is the busiest the flower shop gets, and every order taken by phone that week costs time on the design bench. A pre-order page spreads it across the weeks before.",
+      "hook": "Use this from December to early February, or March to April for Mother's Day. Check if they've posted holiday ordering info.",
+      "linkLine": "A holiday flower pre-order page with delivery dates: {demo-link}"
+    },
+    {
+      "angle": "Late-night sympathy orders",
+      "line": "People order sympathy flowers late at night after hearing the news. If the flower shop can only take the order by phone at nine the next morning, they order from a national site instead.",
+      "hook": "Check their hours and whether anything takes an order after closing. If not, the angle holds.",
+      "linkLine": "A florist page that takes a sympathy order at midnight: {demo-link}"
+    },
+    {
+      "angle": "Hiring a floral designer",
+      "line": "Saw you're hiring a floral designer for the season. Good designers look at the shop's wedding work and how established it looks before they apply.",
+      "hook": "Only if they posted for a designer, delivery driver or holiday help. Note the date.",
+      "linkLine": "A flower shop site with a join-the-studio page: {demo-link}"
+    },
+    {
+      "angle": "Delivery zones",
+      "line": "Your posts mention flower delivery to a few towns, but nobody can see the fee or the cutoff for their address without calling the shop.",
+      "hook": "List the towns or neighbourhoods they mention delivering to before you send.",
+      "linkLine": "Your flower delivery zones, fees and cutoffs on one page: {demo-link}"
+    },
+    {
+      "angle": "Wedding minimum and retainer",
+      "line": "Couples asking about wedding flowers want to know the minimum and the retainer before they book a consultation. Saying it on the site saves the florist an evening with couples who can't afford it.",
+      "hook": "Look for 'minimum', 'retainer' or 'starting at' in their wedding posts. Note what they publish and never invent terms.",
+      "linkLine": "A wedding flower page with the minimum and retainer explained: {demo-link}"
+    },
+    {
+      "angle": "Venue install rules",
+      "line": "Venues ask the florist about install times, open flame rules for candles and when the arch has to come down. A page that answers those makes planners comfortable recommending you.",
+      "hook": "Check whether they mention installation, strike or venue rules. Never state insurance or credentials they haven't published.",
+      "linkLine": "Your floral installs with the venue rules answered: {demo-link}"
+    },
+    {
+      "angle": "Planner and venue referrals",
+      "line": "It looks like your wedding flower work comes mostly through a few planners and venues. Couples planning without a planner search for a wedding florist on their own and need to find you.",
+      "hook": "Look for tagged planners or thank-you posts to a venue. Name the relationship if they reply.",
+      "linkLine": "Where a couple would find your wedding florals on their own: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "Saw the {specific recent job} on your page. Bridal florals like that deserve top billing on a wedding page where couples can book a consultation.",
+      "hook": "Pick their newest posted arrangement or wedding and name it exactly: the piece, the flowers and the venue.",
+      "linkLine": "That floral design, front and centre: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner} — that {specific recent job} you posted is gorgeous floral work.\n\nI looked for a website for {Business Name} where someone could order an arrangement or ask about wedding flowers, and couldn't find one of your own. I put together a sample florist site with an order page, delivery cutoffs and a wedding consultation form, with marked placeholders where your photos would go.\n\nWould you like me to send it over?",
+    "dm2": "{Owner} — following up in case my message got buried under orders. Here's the sample florist site for {Business Name}: {demo-link}\n\nIt has everyday and sympathy arrangements with same-day cutoffs, delivery zones, and a wedding page with your minimum, a date check and a consultation form. If it's not for you, say so and I won't message again.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for florists around {City}. I sent you a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"Easy to miss with flowers to get out. Short version: I built a sample site for {Business Name} with an order page, delivery cutoffs and a wedding consultation form, with marked placeholders where your photos would go. Can I email you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n → ask: \"Which side do you want more of next year, the shop orders or the weddings?\"\n\"The build runs {Build Range}, then {Care Range} a month for hosting, seasonal menus and price changes. For a florist doing both shop and weddings, I'd normally quote about {Build Price}.\"\n\"Can we look at it for ten minutes on a quiet weekday afternoon, away from the holidays?\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. We start the day it clears, and I'll need your arrangement list, delivery zones and wedding minimum.\"",
+    "objections": [
+      {
+        "objection": "The relay network already gives me a website.",
+        "handler": "\"It gives you a storefront with stock designs, and a fee on orders through it. Your own site shows your floral work, keeps the full order value and still lets you take network orders when you want them.\""
+      },
+      {
+        "objection": "Flowers change every week, I can't keep a site updated.",
+        "handler": "\"Sell by style and price, 'designer's choice in your colours', not by exact stems. Seasonal menus are a text to me on the care plan.\""
+      },
+      {
+        "objection": "Most of my orders come by phone.",
+        "handler": "\"Keep the phone. The site takes the late-night sympathy orders and the lunch-break birthday orders that never call, with the card message and delivery time already filled in.\""
+      },
+      {
+        "objection": "Weddings come from planners, not the internet.",
+        "handler": "\"Planners still send couples to look at your work. A wedding page with your minimum and a consultation form means the couples who arrive are ready to book.\""
+      },
+      {
+        "objection": "It's almost Mother's Day, I have no time.",
+        "handler": "\"Then we start right after it. I build from your public info and your menu, you approve it once, and it's ready with pre-orders before the next holiday.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}, because it's online orders, delivery zones and a wedding consultation page. One wedding covers most of it.\""
+      }
+    ],
+    "email": {
+      "subject": "Flower shop site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for florists around {City}. {Business Name} does beautiful floral work, but I couldn't find a site of your own where someone can order an arrangement for delivery or ask about wedding flowers.\n\nI built a sample first rather than ask for your time: everyday and sympathy arrangements with same-day cutoffs, delivery zones, holiday pre-orders and a wedding page with your minimum and a consultation form, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting, seasonal menus and price changes. If not, no problem, it comes down at the end of the month.\n\nWorth ten minutes on a quiet afternoon?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build websites for florists in {City}, and I put together a sample one for {Business Name} with online orders and a wedding consultation page. I'll email you the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner} — I'm taking the {Business Name} florist demo down on Friday to free up the space.\n\nWant me to leave it up? One word is fine either way.",
+    "nurture": "Hi {Owner} — Valentine's pre-orders and newly engaged couples both arrive in January, and the florists with pages ready catch both. Thought of you.\n\nThe flower shop site is still here whenever you want it, and nothing's changed on price. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Price the shop side against a busy holiday week and the wedding side against one wedding. Never price it like a big contractor site.",
+      "Online ordering with card messages and delivery times is the core of the shop build. Quote it in, never as an extra.",
+      "The wedding consultation page is its own line, and the best value in the build. It brings the biggest orders the florist takes.",
+      "Price holiday pre-order pages per holiday. Each one saves a week of phone orders.",
+      "Keep monthly add-ons under the value of a few everyday arrangements.",
+      "Sell anything for Valentine's by early December and anything for weddings by October."
+    ],
+    "lineItems": [
+      {
+        "item": "Online flower ordering with card message and delivery time",
+        "min": 400,
+        "max": 1200,
+        "unit": "one-time",
+        "description": "Max with several sizes per arrangement, add-ons like vases and balloons, and same-day cutoff logic.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Wedding flower consultation page",
+        "min": 300,
+        "max": 900,
+        "unit": "per-page",
+        "description": "Max with a date check, inspiration upload, bridal party counts and a stated minimum and retainer.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Delivery zones with fees and cutoffs",
+        "min": 200,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max with several zones, hospital and funeral home rules and a holiday surcharge.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Holiday pre-order page (each holiday)",
+        "min": 150,
+        "max": 400,
+        "unit": "per-page",
+        "description": "Max with a limited menu, delivery date choices, pickup slots and an order cap per day.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Sympathy flowers page with funeral home list",
+        "min": 200,
+        "max": 500,
+        "unit": "per-page",
+        "description": "Max with service-time ordering, a list of funeral homes served and casket and standing spray options.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Flower subscription sign-up",
+        "min": 300,
+        "max": 900,
+        "unit": "one-time",
+        "description": "Max with weekly, fortnightly and monthly options, business accounts and recurring billing.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Spanish-language flower ordering pages",
+        "min": 300,
+        "max": 800,
+        "unit": "one-time",
+        "description": "Max when ordering, sympathy and wedding pages are all translated.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Google profile upkeep for the flower shop",
+      "min": 150,
+      "max": 300,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"This week's arrangements and wedding florals on your Google profile, with the flowers named, so people searching for a florist nearby see fresh work every few days.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Review requests to the flower sender",
+      "min": 49,
+      "max": 129,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"The day after delivery, the person who sent the flowers gets a note with the delivery confirmed and a request for a review of the arrangement.\"",
+      "when": "Day 30. The easiest second sale."
+    },
+    {
+      "name": "Valentine's and Mother's Day flower campaign",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A pre-order push to past flower customers weeks before each holiday, so orders spread out instead of hitting the design bench all at once.\"",
+      "when": "Pitch in December for Valentine's and March for Mother's Day."
+    },
+    {
+      "name": "Flower shop and wedding gallery photo day",
+      "min": 300,
+      "max": 800,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"One morning photographing the shop's bestselling arrangements and a styled bridal bouquet gives the order page and wedding gallery real pictures.\"",
+      "when": "Month 2, on a quiet weekday when the cooler is full."
+    },
+    {
+      "name": "Funeral home introduction packet",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A short packet for funeral directors with sympathy flower options, the order link families can use and the shop's delivery timing for services.\"",
+      "when": "Month 2. Needs the list of funeral homes they already deliver to."
+    },
+    {
+      "name": "Neighbourhood flower delivery pages",
+      "min": 150,
+      "max": 400,
+      "unit": "per-page",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A page for each town and hospital the flower shop delivers to, so 'flower delivery near' searches from there find you.\"",
+      "when": "Month 3, once they name their busiest delivery areas."
+    },
+    {
+      "name": "Bridal show floral booth kit",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Signage for the floral booth, a card with your wedding minimum and a consultation code, so couples who stop at the arch book a florist meeting there.\"",
+      "when": "Six weeks before their first winter bridal show."
+    },
+    {
+      "name": "Business flower subscription outreach",
+      "min": 300,
+      "max": 700,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A short campaign to offices, restaurants and salons nearby offering a weekly lobby arrangement from the flower shop.\"",
+      "when": "Month 4, in a slow stretch between holidays."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Funeral homes the florist delivers to",
+        "whoPays": "The funeral home",
+        "min": 2500,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"The funeral home you deliver sympathy flowers to every week may have a site where families struggle to find the obituary and service time. The florist can introduce you.\"",
+        "whyItWorks": "Funeral directors trust the florist who never misses a service. Their sites are often old and hard to use."
+      },
+      {
+        "route": "Local flower farms the florist buys from",
+        "whoPays": "The flower farm",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The flower farm that grows your dahlias sells buckets to the public on weekends with no site. I'll build them a harvest and pre-order page.\"",
+        "whyItWorks": "Growers sell to florists and the public, and the florist knows which ones need help."
+      },
+      {
+        "route": "Event rental companies that dress the tables",
+        "whoPays": "The rental company, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The rental company whose linens sit under your centrepieces has no catalogue online. The florist can introduce you at the next install.\"",
+        "whyItWorks": "Florists and rental companies set up the same tables on the same days and refer couples back and forth."
+      },
+      {
+        "route": "Cake bakers on the same weddings",
+        "whoPays": "The baker, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The baker whose wedding cakes you dress with fresh flowers takes orders by message. A tasting and date-check page fits them.\"",
+        "whyItWorks": "Florists and bakers coordinate on cake flowers for every wedding. The introduction is natural."
+      },
+      {
+        "route": "Restaurants and hotels on the flower route",
+        "whoPays": "The restaurant or hotel",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The restaurant that takes your weekly arrangement has no private dining page. Your florist client sees the owner every Monday.\"",
+        "whyItWorks": "Weekly delivery means a weekly conversation with the owner, which is the warmest introduction there is."
+      },
+      {
+        "route": "Churches that host weddings",
+        "whoPays": "The church office",
+        "min": 1000,
+        "max": 3000,
+        "unit": "one-time",
+        "pitchLine": "\"The church where you decorate the altar for weddings has no page explaining how to book a wedding there. I'll build one with the florist's rules included.\"",
+        "whyItWorks": "Church offices answer the same wedding questions by phone, and the florist knows the coordinator."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Service planning assistant for funeral homes",
+        "whoPays": "The funeral home, monthly",
+        "min": 149,
+        "max": 349,
+        "unit": "monthly",
+        "pitchLine": "\"Families ask about service times, visitation and sympathy flowers at any hour, and get gentle answers from the funeral home's own information.\"",
+        "whyItWorks": "Funeral homes answer the same questions at the worst moments. The florist's trust opens the door."
+      },
+      {
+        "route": "Harvest availability assistant for flower farms",
+        "whoPays": "The flower farm, monthly",
+        "min": 49,
+        "max": 129,
+        "unit": "monthly",
+        "pitchLine": "\"Buyers ask what's blooming this week and reserve buckets, and the farm answers from its own weekly harvest list.\"",
+        "whyItWorks": "Growers spend harvest mornings answering texts. A small monthly tool is easy to say yes to."
+      },
+      {
+        "route": "Tablescape quote assistant for rental companies",
+        "whoPays": "The rental company, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"A couple describes their reception tables, and the rental company gets a linen, charger and glassware quote to pair with the florist's centrepieces.\"",
+        "whyItWorks": "Rental companies quote tablescapes by hand, and the florist introduction gives you credibility."
+      },
+      {
+        "route": "Tasting booking assistant for cake bakers",
+        "whoPays": "The baker, monthly",
+        "min": 49,
+        "max": 129,
+        "unit": "monthly",
+        "pitchLine": "\"Couples ask about wedding cake flavours, sizes and dates, and book a tasting, with the florist's cake flower option noted.\"",
+        "whyItWorks": "Bakers miss enquiries while baking. The florist sees them at every wedding."
+      },
+      {
+        "route": "Private dining enquiry assistant for restaurants",
+        "whoPays": "The restaurant, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"Rehearsal dinner and party enquiries get menus, minimums and dates answered, with table flowers from the florist as an add-on.\"",
+        "whyItWorks": "Restaurants lose private events they can't answer fast, and the florist delivers to them weekly."
+      },
+      {
+        "route": "Wedding booking assistant for church offices",
+        "whoPays": "The church, monthly",
+        "min": 49,
+        "max": 149,
+        "unit": "monthly",
+        "pitchLine": "\"Couples ask about booking a wedding at the church, the requirements and the flower rules, and get answers plus a meeting request.\"",
+        "whyItWorks": "Church staff are stretched thin. A small monthly cost saves them hours of repeat calls."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Delivery confirmation texts to the sender",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 600,
+      "monthlyMin": 19,
+      "monthlyMax": 59,
+      "pitchLine": "\"When the flowers are delivered, the sender gets a text saying so, which ends the 'did they arrive' calls to the shop.\"",
+      "whenAndWhatItTakes": "At build. Needs the order form and a way for the driver to mark delivered."
+    },
+    {
+      "name": "Wedding flower retainer and agreement signing",
+      "kind": "software",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1200,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"After the consultation, the couple signs the wedding flower agreement and pays the retainer online, so the date is held before they talk to another florist.\"",
+      "whenAndWhatItTakes": "Month 1. Needs their agreement, reviewed by their own attorney, and a payment account."
+    },
+    {
+      "name": "Flower order and delivery question answerer",
+      "kind": "ai",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1200,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"'Can you deliver to the hospital today', 'do you have peonies' and 'what's your wedding minimum' get answered from the shop's own menu and rules.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the menu, delivery rules and wedding minimum, updated each season. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Driver route sheet for flower deliveries",
+      "kind": "software",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"The delivery driver gets the day's flower drops in order, with service times for funeral homes and notes for hospitals.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the order system and delivery zones."
+    },
+    {
+      "name": "Occasion reminders for flower buyers",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 600,
+      "monthlyMin": 19,
+      "monthlyMax": 59,
+      "pitchLine": "\"Someone who sent birthday flowers last May gets a reminder a week before this year's birthday, with last year's arrangement one tap away.\"",
+      "whenAndWhatItTakes": "Month 3. Needs order history with occasion dates."
+    },
+    {
+      "name": "Card message suggestions",
+      "kind": "ai",
+      "oneTimeMin": 200,
+      "oneTimeMax": 600,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Buyers stuck on what to write get a few card message suggestions for sympathy, birthdays or apologies, in plain words they can edit.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the order form. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Wedding stem count and recipe calculator",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 29,
+      "monthlyMax": 99,
+      "pitchLine": "\"Each bouquet, boutonnière and centrepiece has a recipe, and the calculator totals the stems to order from the wholesaler for the whole wedding.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their standard recipes and wholesaler stem costs."
+    },
+    {
+      "name": "Inspiration picture to wedding flower estimate",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"From a mood board and the number of bridesmaids, the florist receives a first-pass wedding flower budget, already swapping out-of-season blooms.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their recipes, pricing and seasonal notes. The florist approves every estimate. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Flower subscription billing and schedule",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Weekly lobby and home flower subscriptions bill automatically and appear on the delivery route on the right day.\"",
+      "whenAndWhatItTakes": "Month 3, once they have a few subscription customers. Needs pricing and delivery days."
+    },
+    {
+      "name": "Visual wedding flower proposal builder",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 29,
+      "monthlyMax": 99,
+      "pitchLine": "\"The florist drops pictures and prices into a proposal for the couple, piece by piece, and the couple approves or swaps items online.\"",
+      "whenAndWhatItTakes": "Month 4, before engagement season. Needs their proposal format and price list."
+    },
+    {
+      "name": "Holiday rush phone order taker",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 149,
+      "monthlyMax": 349,
+      "pitchLine": "\"During Valentine's week, callers can still order flowers by phone while every designer is at the bench, with the card message taken down.\"",
+      "whenAndWhatItTakes": "Month 4, set up before Valentine's or Mother's Day. Needs the holiday menu and delivery rules. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Holiday order cap and production list",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 19,
+      "monthlyMax": 59,
+      "pitchLine": "\"Holiday flower orders stop at the number the shop can make each day, and the bench gets a production list by arrangement.\"",
+      "whenAndWhatItTakes": "Month 3, before the next holiday. Needs daily capacity and the holiday menu."
+    },
+    {
+      "name": "Flower shop review replies",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Thank-you replies to bouquet reviewers, mentioning the ranunculus or the sympathy spray they praised, waiting for a tap of approval at the design bench.\"",
+      "whenAndWhatItTakes": "Month 2, with the review requests. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Floral post captions",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 49,
+      "monthlyMax": 149,
+      "pitchLine": "\"Share a bridal bouquet or a shop arrangement and the caption comes back listing stems, palette and venue credit, in the florist's voice.\"",
+      "whenAndWhatItTakes": "Month 3. Needs past captions. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Holiday stem ordering forecast",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Before Valentine's and Mother's Day, see how many roses and filler stems last year's orders needed, so the flower order is right and less ends up in the bin.\"",
+      "whenAndWhatItTakes": "Month 9, after a holiday of order data. Suggestions only, the owner orders. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Wedding consultation follow-up",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 600,
+      "monthlyMin": 19,
+      "monthlyMax": 59,
+      "pitchLine": "\"A few days after the florist sends a wedding proposal, the couple gets a friendly note asking if they'd like changes before the date is released.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the proposal list and their follow-up wording."
+    },
+    {
+      "name": "Holiday temp staff flower answers",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 49,
+      "monthlyMax": 149,
+      "pitchLine": "\"Temporary holiday staff ask the phone how the shop wraps roses, prices add-ons or handles a hospital delivery, and get the owner's own answer.\"",
+      "whenAndWhatItTakes": "Month 8, before the Valentine's rush. Needs the owner's notes and approval of every answer. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Business flower account portal",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Offices and hotels manage their standing flower order, add an event arrangement and download invoices without calling the shop.\"",
+      "whenAndWhatItTakes": "Month 6, once they have regular business accounts."
+    },
+    {
+      "name": "Wedding install and delivery schedule",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 19,
+      "monthlyMax": 59,
+      "pitchLine": "\"Every wedding weekend shows which pieces go to which venue, when the arch goes up and when the florals have to be struck.\"",
+      "whenAndWhatItTakes": "Month 5, before wedding season. Needs their wedding calendar and venue rules."
+    },
+    {
+      "name": "Unfinished flower order nudge",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 600,
+      "monthlyMin": 19,
+      "monthlyMax": 59,
+      "pitchLine": "\"Someone who picks an arrangement and leaves before paying gets a note an hour later, while there's still time for same-day delivery.\"",
+      "whenAndWhatItTakes": "Month 4. Needs online ordering with an email or phone field before checkout."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise online ordering for independent florists",
+      "whoPays": "Independent florists, monthly",
+      "min": 39,
+      "max": 149,
+      "unit": "monthly",
+      "pitchLine": "\"I built same-day ordering and a wedding consultation page for one flower shop. Independent florists everywhere want off network storefronts.\"",
+      "whyItWorks": "Independent florists share the same problem and talk to each other at wholesalers and design shows."
+    },
+    {
+      "route": "Member template for a state florist association",
+      "whoPays": "The association",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer every member flower shop an ordering site with a wedding page as a member benefit.\"",
+      "whyItWorks": "Florist associations need renewal reasons and run regular design events where owners meet."
+    },
+    {
+      "route": "Site templates for a flower wholesaler's florists",
+      "whoPays": "The wholesaler",
+      "min": 3000,
+      "max": 12000,
+      "unit": "one-time",
+      "pitchLine": "\"Your florist customers order more stems when they sell more flowers online. A ready florist site kit is a reason to buy from you.\"",
+      "whyItWorks": "Wholesalers grow when their florists grow, and they see every florist every week."
+    },
+    {
+      "route": "White-label florist template for agencies",
+      "whoPays": "The agency, per site",
+      "min": 400,
+      "max": 1200,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency builds pretty flower sites with no same-day cutoff logic. License my florist template with ordering and delivery zones working.\"",
+      "whyItWorks": "Agencies sell design. You sell them the order logic they don't have."
+    },
+    {
+      "route": "Harvest pre-order kit for flower farms",
+      "whoPays": "Flower farms, monthly",
+      "min": 29,
+      "max": 99,
+      "unit": "monthly",
+      "pitchLine": "\"Flower farms selling buckets and CSA shares need weekly pre-orders and pickup slots. The florist build adapts in a day.\"",
+      "whyItWorks": "Farms are a fast-growing, under-served group, reached through the florists who buy from them."
+    },
+    {
+      "route": "Graduate site kits for floral design courses",
+      "whoPays": "The course or school",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"Graduates of your floral design course leave able to make a bouquet but not sell one. A ready florist site kit makes the course worth more.\"",
+      "whyItWorks": "Courses sell outcomes, and a selling site is the outcome students want."
+    },
+    {
+      "route": "Multi-location flower shop groups",
+      "whoPays": "The group, per shop",
+      "min": 600,
+      "max": 2000,
+      "unit": "one-time",
+      "pitchLine": "\"Three shops under one owner means three same-day cutoffs and three driver routes. One florist ordering system can route each order to the nearest cooler.\"",
+      "whyItWorks": "One contract becomes several locations on the same template."
+    },
+    {
+      "route": "Garden centres with floral counters",
+      "whoPays": "Each garden centre, at your normal rate",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"Garden centres with a floral counter need the same flower ordering and delivery zones as a florist, plus their plant catalogue.\"",
+      "whyItWorks": "The ordering logic carries over and garden centres have bigger budgets."
+    },
+    {
+      "route": "Home-studio wedding florists",
+      "whoPays": "Each studio florist, at your normal rate",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"Wedding florists working from a home studio need only the consultation page, minimum and date check, not a shop. A lighter build at a lighter price.\"",
+      "whyItWorks": "Studio florists are many, often Instagram-only, and refer to each other."
+    },
+    {
+      "route": "Sympathy flower ordering for funeral home groups",
+      "whoPays": "The funeral home group",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Families on your obituary pages want to send flowers. A local florist ordering link on every obituary sends them to a shop you trust.\"",
+      "whyItWorks": "Funeral groups want a dignified sympathy flow, and the florist client is the proof it works."
+    },
+    {
+      "route": "Florists in towns outside your delivery area",
+      "whoPays": "New florist clients elsewhere",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"A flower shop only delivers so far from {City}, so the shop two towns over is a fresh client for the same ordering build, not a competitor.\"",
+      "whyItWorks": "Delivery radius defines a florist's market, so the template and proof travel cleanly."
+    },
+    {
+      "route": "Move florists off network storefronts",
+      "whoPays": "The florist",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "pitchLine": "\"Your flower shop site is a network storefront with stock pictures. I'll move it to your own domain with your designs and same-day ordering.\"",
+      "whyItWorks": "Many florists want out and don't know how. You've done it once already."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Florist site build plus care plan, one contract",
+      "min": 1200,
+      "max": 2200,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The flower shop site and the care plan go on one contract, so a seasonal menu change is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 14,
+      "offer": "Delivery confirmation texts to the sender",
+      "min": 200,
+      "max": 600,
+      "unit": "one-time",
+      "trigger": "They mention calls from senders asking whether the flowers arrived.",
+      "line": "\"Those 'did my flowers arrive' calls stop when the sender gets a text at delivery.\""
+    },
+    {
+      "rung": 3,
+      "day": 30,
+      "offer": "Review requests to the flower sender",
+      "min": 49,
+      "max": 129,
+      "unit": "monthly",
+      "trigger": "The site has been live a month and orders are arriving online.",
+      "line": "\"Your flower customers are happy. Let's ask them the day after delivery.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Wedding flower retainer and agreement signing",
+      "min": 400,
+      "max": 1200,
+      "unit": "one-time",
+      "trigger": "Sixty days of form data show wedding consultations that never turned into a booked date.",
+      "line": "\"Couples who loved the consultation can sign and pay the wedding flower retainer the same evening.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Valentine's and Mother's Day flower campaign",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "trigger": "A holiday is about two months away and they mention last year's phone chaos.",
+      "line": "\"Last Valentine's the phone never stopped. This year the flower orders arrive weeks early.\""
+    },
+    {
+      "rung": 6,
+      "day": 150,
+      "offer": "Wedding stem count and recipe calculator",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "trigger": "They mention over-ordering stems for a wedding or a wholesaler bill that surprised them.",
+      "line": "\"The stem count for every wedding bouquet adds itself up before you order.\""
+    },
+    {
+      "rung": 7,
+      "day": 210,
+      "offer": "Introduction to the funeral home",
+      "min": 2500,
+      "max": 6000,
+      "unit": "one-time",
+      "trigger": "They mention a funeral director who praises their sympathy flowers.",
+      "line": "\"The funeral home you deliver to every week could use a better site. Would you introduce me?\""
+    }
+  ]
+}

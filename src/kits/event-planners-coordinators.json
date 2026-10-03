@@ -1,0 +1,851 @@
+{
+  "schemaVersion": 1,
+  "category": "Event planners & coordinators",
+  "slug": "event-planners-coordinators",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Event family batch. Trust-led and portfolio-led; the venue and vendor partner list is the growth lever, so cross-sell leans on it. No marketplaces or planning apps named. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Full planning, partial planning or day-of coordinator",
+      "contains": "What each service level covers, when the planner starts, how many meetings, the month-of handover, who runs the rehearsal, and a short quiz to pick a level",
+      "why": "Couples don't know what a day-of coordinator does versus a full planner. Explaining the levels is what stops them comparing the wrong prices."
+    },
+    {
+      "section": "Wedding budget planner",
+      "contains": "A worksheet splitting a total budget across venue, catering, photography, flowers, attire and entertainment, with where a planner's vendor knowledge saves money",
+      "why": "Budget is the first fight in every engagement. A planner who helps with the numbers before the call earns the trust to be hired."
+    },
+    {
+      "section": "Corporate events and retreats",
+      "contains": "Company retreats, offsites, product launches, conferences and holiday parties, with a request form for headcount, budget range, dates and invoicing details",
+      "why": "Corporate buyers fill weekdays and pay on invoice. They choose the planner whose request form looks like their own procurement process."
+    },
+    {
+      "section": "Twelve-month wedding planning checklist",
+      "contains": "What to book when: venue, photographer, caterer, attire, invitations, rentals and final counts, with the planner's tips at each step and a download behind an email",
+      "why": "Newly engaged couples search for a checklist before they search for a planner. The checklist is the planner's first chance to be useful."
+    },
+    {
+      "section": "Multi-day and cultural weddings",
+      "contains": "Sangeet, mehndi, tea ceremony and other multi-day traditions, guest travel and room blocks, destination logistics, and vendor teams who know the customs",
+      "why": "Families planning multi-day or cultural weddings look for a planner who has done one. Naming the traditions on the page is the proof."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C30",
+      "siteType": "local-conversion",
+      "name": "Day-Of Calm",
+      "heroLayout": "split-photo",
+      "mood": [
+        "calm",
+        "capable",
+        "warm"
+      ],
+      "bestFor": "Day-of and month-of wedding coordinators who sell a clear price and a calm presence",
+      "pairsWithTier": "starter",
+      "headlineSample": "Day-of wedding coordinator in {City}. Is your date open?",
+      "whyItFits": "Butter and denim with geometric type feel friendly and practical, and the split hero puts the coordination price beside the date check."
+    },
+    {
+      "id": "b",
+      "themeId": "C45",
+      "siteType": "portfolio-showcase",
+      "name": "Planned by Type",
+      "heroLayout": "full-bleed-photo",
+      "mood": [
+        "joyful",
+        "organised",
+        "confident"
+      ],
+      "bestFor": "Full-service wedding and event planners who sell on past events, sorted by type and venue",
+      "pairsWithTier": "standard",
+      "headlineSample": "Wedding and event planning in {City}, start to finish",
+      "whyItFits": "The family combo. Ultramarine poster type gives a planner's portfolio a confident, organised frame, which is exactly what couples are buying."
+    },
+    {
+      "id": "c",
+      "themeId": "C9",
+      "siteType": "premium-brand",
+      "name": "Black Tie",
+      "heroLayout": "type-led",
+      "mood": [
+        "luxe",
+        "discreet",
+        "polished"
+      ],
+      "bestFor": "Luxury, destination and multi-day wedding planners and corporate event designers taking few clients",
+      "pairsWithTier": "premium",
+      "headlineSample": "Luxury weddings and private events, planned from {City}",
+      "whyItFits": "A deep, dark page with a Didone display reads like an engraved invitation, which suits planners who sell discretion and a waiting list."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your Maps listing as a wedding planner has lovely reviews but no website, so a newly engaged couple in {City} can't see your service levels or a single event you've planned.",
+      "hook": "Open their Maps listing and confirm there is no Website button. Screenshot it for when they reply.",
+      "linkLine": "The planner site that would sit behind that button: {demo-link}"
+    },
+    {
+      "angle": "Planning business run from a grid",
+      "line": "Your planning business lives on Instagram, which shows the pretty tables but not what a day-of coordinator does versus full planning, or what either costs.",
+      "hook": "Tap their bio link and check where it goes: a DM prompt, a link page or a PDF.",
+      "linkLine": "Your planning services explained, with a date check: {demo-link}"
+    },
+    {
+      "angle": "Pricing PDF from years ago",
+      "line": "The event planner site on your listing links to a pricing PDF with an old year on it. Couples who see a dated price wonder what else is out of date.",
+      "hook": "Open the site and find one stale detail: an old year, a dead form, a past bridal show. Note it.",
+      "linkLine": "The same planning business, current and clear: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "I opened your planning site on my phone and the enquiry form had no date field and overlapped the menu. Couples plan weddings from their phones on the couch.",
+      "hook": "Only if they have a site. Load it on your phone and try the enquiry form. Screenshot it for when they reply.",
+      "linkLine": "The same planner, rebuilt for a phone: {demo-link}"
+    },
+    {
+      "angle": "Service levels not explained",
+      "line": "Your site lists 'coordination' and 'planning' without saying what's in each. Couples comparing planners on price alone usually compare the wrong things.",
+      "hook": "Check whether service levels are explained with what's included. If not, the angle holds.",
+      "linkLine": "Planning levels explained so couples compare the right things: {demo-link}"
+    },
+    {
+      "angle": "Events with no story",
+      "line": "The weddings you've coordinated show calm under pressure, and they're buried in the grid between styled flat-lays. A portfolio by event type would show couples how you work.",
+      "hook": "Pick one recent wedding or corporate event they posted and note the venue and type. Mention it if they reply.",
+      "linkLine": "Your weddings and events, sorted by type and venue: {demo-link}"
+    },
+    {
+      "angle": "Reviews that mention the timeline",
+      "line": "One of your reviews says nobody noticed the cake arrived late because you'd already moved the timeline. That's the sentence an anxious bride needs to read about her planner.",
+      "hook": "Read their reviews and copy one phrase about handling a problem or the day running smoothly. Quote it back if they reply.",
+      "linkLine": "Your reviews beside the events they describe: {demo-link}"
+    },
+    {
+      "angle": "Engagement season enquiries",
+      "line": "Couples engaged over the holidays start hiring wedding planners in January, often before they've picked a venue. A planner with a checklist and a date check ready catches them first.",
+      "hook": "Use this from November to February. Check if they've posted about booking next year's weddings.",
+      "linkLine": "A wedding planning site ready for engagement season: {demo-link}"
+    },
+    {
+      "angle": "Corporate weekdays",
+      "line": "Your posts are all weddings, but you mentioned a company retreat once. Corporate planners fill weekdays and pay on invoice, and they look for a request form, not an Instagram grid.",
+      "hook": "Look for any corporate event, retreat or launch in their posts. Name it if they reply.",
+      "linkLine": "A corporate events page with a proper request form: {demo-link}"
+    },
+    {
+      "angle": "Hiring assistant coordinators",
+      "line": "Saw you're hiring assistant coordinators for wedding season. Good event people check how established a planning business looks before they give up their Saturdays.",
+      "hook": "Only if they posted for assistants, coordinators or interns. Note the date.",
+      "linkLine": "A planner site with a team and careers page: {demo-link}"
+    },
+    {
+      "angle": "Destination and travel weddings",
+      "line": "You've planned weddings outside the area, but nothing on your site says you travel or how destination planning works. Couples marrying away from home want a planner who says so.",
+      "hook": "Look for destination or out-of-state weddings in their posts. Name one if they reply.",
+      "linkLine": "A destination wedding planning page: {demo-link}"
+    },
+    {
+      "angle": "Payment schedule for planning fees",
+      "line": "Couples weighing a full planner want to see how the fee is split across the planning year. A clear retainer and payment schedule makes a bigger package easier to choose.",
+      "hook": "Look for 'retainer' or 'payment' in their pricing info. Note what they publish and never invent terms.",
+      "linkLine": "A planning page with the retainer and payment schedule explained: {demo-link}"
+    },
+    {
+      "angle": "Insurance and vendor contracts",
+      "line": "Venues ask the event planner for insurance and want to know who signs vendor contracts. A page that answers both makes the planner look like the professional in the room.",
+      "hook": "Check whether they mention insurance or contract handling. Never state coverage or credentials they haven't published.",
+      "linkLine": "A planner site with the venue paperwork answered: {demo-link}"
+    },
+    {
+      "angle": "Venue referrals only",
+      "line": "It looks like most of your planning clients come from a couple of venues that recommend you. Couples at other venues, and those still choosing one, need to find the planner directly.",
+      "hook": "Look for posts thanking a venue or tagging the same venue repeatedly. Name the relationship if they reply.",
+      "linkLine": "Where a couple still choosing a venue would find your planning: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "Saw the {specific recent job} you planned. An event that well run should open your portfolio, with the venue and the vendor team credited.",
+      "hook": "Pick their newest posted event and name it exactly: the type, the venue and one detail that went well.",
+      "linkLine": "That event, front and centre: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner} — saw the {specific recent job} you planned. It looked beautifully run.\n\nI looked for a website for {Business Name} that explains your planning levels and lets a couple check a date, and couldn't find one. I put together a sample planner site with service levels, a date check and a portfolio by event type, with marked placeholders where your photos would go.\n\nWould you like me to send it over?",
+    "dm2": "{Owner} — following up in case my message got lost in a busy planning week. Here's the sample site for {Business Name}: {demo-link}\n\nIt explains full planning, partial planning and day-of coordination, has a budget planner, a twelve-month checklist download and a corporate events request form. If it's not for you, say so and I won't message again.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for wedding and event planners around {City}. I sent you a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"Easy to miss in wedding season. Short version: I built a sample site for {Business Name} with your planning levels explained, a date check and a portfolio by event type, with marked placeholders where your photos would go. Can I email you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n → ask: \"Where do most of your couples hear about you now, venues or searching?\"\n\"The build runs {Build Range}, then {Care Range} a month for hosting, new events and price changes. For a planner at your level I'd normally quote about {Build Price}.\"\n\"Can we walk through it for fifteen minutes on a weekday, away from an event?\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. We start the day it clears, and I'll need your service levels, prices and the events you want featured.\"",
+    "objections": [
+      {
+        "objection": "All my clients come from venue referrals.",
+        "handler": "\"That's the best source, and the site makes it stronger. A venue coordinator can send one link that explains your levels and prices, and couples arrive already sold.\""
+      },
+      {
+        "objection": "Every wedding is custom, I can't publish prices.",
+        "handler": "\"Publish 'from' prices for each level, day-of, partial and full. Couples just want to know whether you're in budget before they book a call.\""
+      },
+      {
+        "objection": "I'm booked for this season.",
+        "handler": "\"Then the site is for next season and for raising your prices. Couples planning a year out are searching now, and a checklist download catches them early.\""
+      },
+      {
+        "objection": "I'm listed on the wedding marketplace sites already.",
+        "handler": "\"Keep those. Couples who find a planner there still look for the planner's own site before they enquire. That's where your service levels and date check close it.\""
+      },
+      {
+        "objection": "My work is about relationships, not websites.",
+        "handler": "\"Agreed. The site just shows the relationship before you meet: reviews about calm days, events you've run and how you work. The call does the rest.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}, because it's service levels, a portfolio by event type and a date check. One planning client covers it.\""
+      }
+    ],
+    "email": {
+      "subject": "Planning site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for wedding and event planners around {City}. {Business Name} plans lovely events, but there's no site that explains your service levels or lets a couple check whether you're free on their date.\n\nI built a sample first rather than ask for your time: full planning, partial planning and day-of coordination explained, a budget planner, a twelve-month checklist download, a portfolio by event type and a corporate events request form, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting, new events and price changes. If not, no problem, it comes down at the end of the month.\n\nWorth fifteen minutes on a weekday?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build websites for event planners in {City}, and I put together a sample for {Business Name} with your planning levels and a date check. I'll email you the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner} — I'm taking the {Business Name} planner demo down on Friday to free up the space.\n\nWant me to leave it up? One word is fine either way.",
+    "nurture": "Hi {Owner} — couples engaged over the holidays start looking for planners in January, and corporate teams start booking their retreats around the same time. Thought of you.\n\nThe planning site is still here whenever you want it, and nothing's changed on price. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to one partial-planning client, not a season. Day-of coordinators earn less per event, so offer them the leaner build.",
+      "The service-level explainer is the core of a planner site. Price it in, never as an optional page.",
+      "Price the portfolio by event story, not page count. Each one needs vendor credits and the client's OK.",
+      "Corporate events are a second audience with a different form. Quote that page as its own line.",
+      "Keep monthly add-ons under the fee for one day-of coordination.",
+      "Sell the checklist download and engagement push by October, before proposal season."
+    ],
+    "lineItems": [
+      {
+        "item": "Event story in the portfolio (each event)",
+        "min": 100,
+        "max": 300,
+        "unit": "per-page",
+        "description": "Max with a written story of the planning, full vendor credits, the venue named and the client's written permission.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Planning level quiz",
+        "min": 300,
+        "max": 800,
+        "unit": "one-time",
+        "description": "Max when it asks about budget, time and help needed, recommends a level and sends the answer with the enquiry.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Wedding budget planner worksheet",
+        "min": 300,
+        "max": 900,
+        "unit": "one-time",
+        "description": "Max with live totals by category, local price ranges as placeholders and an email capture to save it.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Corporate event request page",
+        "min": 300,
+        "max": 900,
+        "unit": "per-page",
+        "description": "Max with case studies, headcount and budget fields, invoicing details and a vendor paperwork request line.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Wedding checklist download behind an email",
+        "min": 200,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max with a designed multi-page checklist and a follow-up email offering a consultation.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Multi-day and cultural wedding page",
+        "min": 250,
+        "max": 700,
+        "unit": "per-page",
+        "description": "Max with several traditions explained, guest travel and room block guidance and a vendor team list.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Google profile upkeep for the planning business",
+      "min": 150,
+      "max": 300,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Each wedding or company event you plan goes on your Google profile with the venue named, so people searching for an event planner nearby see steady work.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Review request after the final vendor payment",
+      "min": 49,
+      "max": 129,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Once the last vendor is paid and the wedding is wrapped, the couple gets a note thanking them and asking for a review of their planner.\"",
+      "when": "Day 30. The easiest second sale."
+    },
+    {
+      "name": "Wedding checklist promotion for engagement season",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A January push of your twelve-month wedding checklist to newly engaged couples nearby, so the first planner they hear from is you.\"",
+      "when": "Pitch in October, run between Christmas and March."
+    },
+    {
+      "name": "Venue partner introduction kit",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A short kit for venue coordinators: events you've planned at their venue, your service levels and how you handle their rules, sent to every venue you want on your side.\"",
+      "when": "Month 2. The planner's real growth lever, so pitch it early."
+    },
+    {
+      "name": "Styled shoot production for the planner portfolio",
+      "min": 400,
+      "max": 1200,
+      "unit": "per-job",
+      "scalesWithMarket": true,
+      "pitchLine": "\"I organise a styled event shoot with your vendor team at a venue you want to work with, so the portfolio shows the event design you want to sell.\"",
+      "when": "Month 4, in the off-season."
+    },
+    {
+      "name": "Bridal show booth kit for the planner",
+      "min": 300,
+      "max": 900,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A booth backdrop, a checklist card and a sign-up code for the bridal show, so engaged couples leave with your planning levels on their phone.\"",
+      "when": "Six weeks before their first winter bridal show."
+    },
+    {
+      "name": "Company retreat outreach to office managers",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A late-summer note to HR and office managers nearby with your corporate events page, for holiday parties and spring retreats.\"",
+      "when": "Pitch in July, run August and September."
+    },
+    {
+      "name": "Venue guide pages for planned events",
+      "min": 150,
+      "max": 400,
+      "unit": "per-page",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A guide page for each venue you've planned weddings at: the best ceremony spot, rain plan and load-in quirks, so couples who booked it find their planner.\"",
+      "when": "Month 3, once they list the venues they know best."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Vendors on the planner's recommended list",
+        "whoPays": "Each vendor, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"Every florist, DJ and baker on the planner's recommended list is a site prospect, and the planner's recommendation is the warmest introduction they'll get.\"",
+        "whyItWorks": "Planners control the vendor list, and vendors want to stay on it. One word from the planner opens every door."
+      },
+      {
+        "route": "Venues where the planner runs most weddings",
+        "whoPays": "The venue owner",
+        "min": 2500,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"The venue where you plan a wedding most months still takes tours by phone. You can introduce me to the owner at the next walk-through.\"",
+        "whyItWorks": "Planners and venues refer each other constantly, and the planner knows which owners need help."
+      },
+      {
+        "route": "Hotel sales managers holding room blocks",
+        "whoPays": "The hotel",
+        "min": 2500,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"The hotel where your wedding guests stay has no page for weddings or room blocks. The event planner talks to its sales manager every month.\"",
+        "whyItWorks": "Independent hotels want wedding business and trust the planners who fill their rooms."
+      },
+      {
+        "route": "Invitation and stationery designers",
+        "whoPays": "The stationer, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The stationery designer who does your couples' invitations sells by DM. A small portfolio and order site fits them, and the planner can make the introduction.\"",
+        "whyItWorks": "Stationers depend on planner referrals and are often Instagram-only."
+      },
+      {
+        "route": "Restaurants that host the rehearsal dinners",
+        "whoPays": "The restaurant",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The restaurant where your couples hold the rehearsal dinner has no private events page. The planner books it often enough to introduce you.\"",
+        "whyItWorks": "Private events are high-margin for restaurants, and the planner is a steady source of them."
+      },
+      {
+        "route": "Mehndi artists and ceremony specialists",
+        "whoPays": "Each specialist, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The mehndi artist and ceremony specialists on your multi-day weddings book through word of mouth. A small date-check site with their work fits each one.\"",
+        "whyItWorks": "Cultural wedding vendors rely on planner referrals and rarely have their own sites."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Vendor team availability checker",
+        "whoPays": "The vendors on the planner's team, monthly each",
+        "min": 29,
+        "max": 79,
+        "unit": "monthly",
+        "pitchLine": "\"When a couple books the planner, the assistant checks which vendors on the planner's team are free on that wedding date and drafts the introductions.\"",
+        "whyItWorks": "Vendors pay a little to be checked first, and the planner saves an afternoon of messages per wedding."
+      },
+      {
+        "route": "Event date and minimum spend assistant for venues",
+        "whoPays": "The venue, monthly",
+        "min": 149,
+        "max": 349,
+        "unit": "monthly",
+        "pitchLine": "\"Couples and company planners ask the venue about minimum spend, capacity and open dates, and get a tour or site visit booked at any hour.\"",
+        "whyItWorks": "Venues miss enquiries while hosting events, and the planner's introduction gets you a meeting."
+      },
+      {
+        "route": "Group booking assistant for hotel sales managers",
+        "whoPays": "The hotel, monthly",
+        "min": 149,
+        "max": 349,
+        "unit": "monthly",
+        "pitchLine": "\"Wedding guests and planners ask about the block rate, cut-off date and shuttle, and the hotel's sales manager only handles the exceptions.\"",
+        "whyItWorks": "Hotel sales teams spend hours on repeat block questions. The planner sees it happen every wedding."
+      },
+      {
+        "route": "Invitation wording assistant for stationers",
+        "whoPays": "The stationer, monthly",
+        "min": 29,
+        "max": 79,
+        "unit": "monthly",
+        "pitchLine": "\"Couples enter names, hosts and the wedding details, and the stationer gets invitation wording drafts in the right etiquette to proof.\"",
+        "whyItWorks": "Wording is the slowest part of every stationery order, and the planner sends the stationer couples."
+      },
+      {
+        "route": "Rehearsal dinner menu builder for restaurants",
+        "whoPays": "The restaurant, monthly",
+        "min": 79,
+        "max": 199,
+        "unit": "monthly",
+        "pitchLine": "\"A planner enters the guest count and budget, and the restaurant returns a rehearsal dinner menu and room option within minutes.\"",
+        "whyItWorks": "Faster replies win the private event, and the planner books rehearsal dinners every month."
+      },
+      {
+        "route": "Design consult booking assistant for mehndi artists",
+        "whoPays": "The artist, monthly",
+        "min": 29,
+        "max": 79,
+        "unit": "monthly",
+        "pitchLine": "\"Brides ask the mehndi artist about bridal designs, guest application and timing for the multi-day wedding, and book a consult.\"",
+        "whyItWorks": "Small, cheap and solves the artist's evening DM backlog, sold through a trusted planner."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Instant planning guide reply",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 600,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"While you're cueing a processional, a newly engaged couple's enquiry is already answered with the planning guide and a consult slot.\"",
+      "whenAndWhatItTakes": "At build. Needs the planning guide and the reply wording the planner would send."
+    },
+    {
+      "name": "Planning agreement and retainer signing",
+      "kind": "software",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"After the consultation, the couple signs the planning agreement and pays the retainer online, so the wedding date is on your calendar that night.\"",
+      "whenAndWhatItTakes": "Month 1. Needs their agreement, reviewed by their own attorney, and a payment account."
+    },
+    {
+      "name": "Planner enquiry answerer",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"Couples asking what a day-of coordinator does, whether you travel or if October is open get answers from your own service levels and calendar.\"",
+      "whenAndWhatItTakes": "Month 2. Needs service levels, travel rules and calendar access. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Vendor payment due-date reminders for couples",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Couples get reminders before each wedding vendor payment is due, so the planner isn't the one chasing the caterer's final invoice.\"",
+      "whenAndWhatItTakes": "Month 2. Needs each client's vendor payment schedule."
+    },
+    {
+      "name": "Client planning portal",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 49,
+      "monthlyMax": 149,
+      "pitchLine": "\"Each couple or corporate client sees their checklist, budget, vendor contacts and next meeting in one place, instead of a long email thread with the planner.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the planner's checklist template and budget categories."
+    },
+    {
+      "name": "Day-of timeline shared with every vendor",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 29,
+      "monthlyMax": 99,
+      "pitchLine": "\"The coordinator builds the wedding day timeline once, and every vendor sees the latest version on their phone, with arrival times and contacts.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their timeline template and vendor contact list."
+    },
+    {
+      "name": "Vendor contract summaries",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Upload a vendor contract and get its arrival time, overtime rate, cancellation terms and what's not included, for the planner to check.\"",
+      "whenAndWhatItTakes": "Month 3. Summaries only, never legal advice. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "RSVP and seating chart tracker",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Guests RSVP with meal choices, and the couple drags them onto the reception seating chart the planner and caterer both see.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the venue's table layout and the caterer's meal format."
+    },
+    {
+      "name": "Planning meeting notes to action list",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 49,
+      "monthlyMax": 149,
+      "pitchLine": "\"After each planning meeting, the planner's notes become a list of who does what by when, sent to the couple to confirm.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the planner's notes, typed or spoken. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Corporate event proposal drafts",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"A company's retreat or launch request becomes a draft event proposal with venues, budget split and timeline, ready for the planner to refine.\"",
+      "whenAndWhatItTakes": "Month 5, once corporate work is regular. Needs past proposals and fee rules. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Event planner review replies",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"When a couple or company reviews their planner, a reply naming the event and the venue is drafted, ready to approve on the way to the next one.\"",
+      "whenAndWhatItTakes": "Month 2, with the review requests. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Event recap captions with vendor credits",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 49,
+      "monthlyMax": 149,
+      "pitchLine": "\"After a wedding or company event, the planner gets a recap caption crediting every vendor and the venue, so nobody is left out.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the vendor list per event. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Wedding guest question line",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Guests ask about the dress code, the shuttle, the hotel block and the ceremony time, and get answers so the couple and planner aren't texted all weekend.\"",
+      "whenAndWhatItTakes": "Month 5, sold per wedding or monthly. Needs each event's details. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Vendor team directory with insurance tracking",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Every vendor the planner trusts in one directory, with contact, specialty and when their insurance certificate expires for venue requests.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the vendor list and certificates they already hold."
+    },
+    {
+      "name": "Corporate event registration and badge list",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Attendees register for the company retreat or conference, pick sessions and dietary needs, and the planner prints the badge list.\"",
+      "whenAndWhatItTakes": "Month 6, for planners with corporate clients. Needs an event to launch with."
+    },
+    {
+      "name": "Assistant coordinator scheduling",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Assistant coordinators claim wedding dates, see their call time and role, and the planner sees who's covering every event.\"",
+      "whenAndWhatItTakes": "Month 6, once they run more than one event a weekend. Needs the assistant list and pay rules."
+    },
+    {
+      "name": "Post-event survey for corporate clients",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 600,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"After every company event, attendees and the organiser get a short survey, and the planner gets results to use in next year's proposal.\"",
+      "whenAndWhatItTakes": "Month 6. Needs attendee lists and the questions they want answered."
+    },
+    {
+      "name": "Planner method answers for assistants",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 49,
+      "monthlyMax": 149,
+      "pitchLine": "\"Assistant coordinators ask how the planner runs a grand entrance line-up, a rain call or a late vendor, and get the planner's own answer.\"",
+      "whenAndWhatItTakes": "Month 8, when hiring assistants. Needs the planner's notes and approval of every answer. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Consultation follow-up for undecided couples",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 600,
+      "monthlyMin": 19,
+      "monthlyMax": 59,
+      "pitchLine": "\"Couples who met the planner and haven't signed get a thoughtful follow-up with a relevant past wedding, before the date is offered to someone else.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the consultation list and follow-up wording."
+    },
+    {
+      "name": "Event budget and planner fee tracker",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Each wedding or event shows budget versus spent by category, and the planner's own fee and payments, in one view.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their budget categories and fee structure."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the day-of coordinator kit",
+      "whoPays": "Independent coordinators, monthly",
+      "min": 29,
+      "max": 99,
+      "unit": "monthly",
+      "pitchLine": "\"I built service levels, a date check and a vendor timeline for one wedding planner. Every day-of coordinator explains the same things by hand.\"",
+      "whyItWorks": "Day-of coordinators are many, small and well connected. The first client paid for the workflow."
+    },
+    {
+      "route": "Member template for a planners association chapter",
+      "whoPays": "The chapter",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer every member planner a site template with service levels and a date check as a chapter benefit.\"",
+      "whyItWorks": "Planner chapters meet often and need renewal reasons. One agreement reaches a room of buyers."
+    },
+    {
+      "route": "Site kit for an event planning course",
+      "whoPays": "The course or school",
+      "min": 2000,
+      "max": 8000,
+      "unit": "one-time",
+      "pitchLine": "\"Your event planning graduates finish the course with no site to book clients. A ready planner site kit makes the course worth more.\"",
+      "whyItWorks": "Courses sell outcomes and have a new class every term."
+    },
+    {
+      "route": "White-label planner template for agencies",
+      "whoPays": "The agency, per site",
+      "min": 400,
+      "max": 1200,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency builds pretty planner sites that don't explain service levels. License my event planner template with the quiz and date check built in.\"",
+      "whyItWorks": "Agencies sell the design; you sell the conversion pieces."
+    },
+    {
+      "route": "Multi-planner firms",
+      "whoPays": "The firm, per planner page",
+      "min": 300,
+      "max": 900,
+      "unit": "per-page",
+      "pitchLine": "\"Firms with several lead planners need a profile per planner, matched to wedding style and budget, so couples meet the right one first.\"",
+      "whyItWorks": "Firms grow by adding planners. Every new planner is another page."
+    },
+    {
+      "route": "Destination management companies",
+      "whoPays": "The company",
+      "min": 5000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Companies that plan group trips and incentive events need a corporate request form and portfolio like the one built for an event planner, at a bigger scale.\"",
+      "whyItWorks": "Bigger budgets, the same event workflow, and planners often subcontract with them."
+    },
+    {
+      "route": "In-house event teams at hospitality groups",
+      "whoPays": "The hospitality group",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"A hotel or restaurant group's events team needs the same service levels, portfolio and corporate request form an independent planner uses.\"",
+      "whyItWorks": "Hospitality groups have budgets and want event revenue. The planner client is the reference."
+    },
+    {
+      "route": "Event designers and stylists",
+      "whoPays": "Each designer, at your normal rate",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"Event stylists who design tables and backdrops sell on portfolio and a date check, the same as a planner, with design packages instead of planning levels.\"",
+      "whyItWorks": "The template adapts quickly and stylists refer each other."
+    },
+    {
+      "route": "Shared sites for planner-led vendor teams",
+      "whoPays": "Each team member, monthly",
+      "min": 29,
+      "max": 99,
+      "unit": "monthly",
+      "pitchLine": "\"A wedding planner and their regular vendor team share one site where couples check the whole team's availability for their date.\"",
+      "whyItWorks": "Planners already work with fixed vendor teams, and a shared site turns referrals into bookings for all."
+    },
+    {
+      "route": "Meeting planner page for a visitors bureau",
+      "whoPays": "The visitors bureau",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"The county visitors bureau wants more corporate retreats. A meeting planner page listing local venues and event planners starts with your client.\"",
+      "whyItWorks": "Visitors bureaus have marketing budgets and want local planners featured."
+    },
+    {
+      "route": "Cultural wedding planners in other metros",
+      "whoPays": "New planner clients elsewhere",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"Couples in {City} hire a planner who knows their venues, so a multi-day wedding planner in another metro is a fresh client for the same build.\"",
+      "whyItWorks": "Planning is local by venue knowledge, so proof and template travel without conflict."
+    },
+    {
+      "route": "Rebuild planner sites stuck on a trial template",
+      "whoPays": "The stuck planner",
+      "min": 500,
+      "max": 2000,
+      "unit": "one-time",
+      "pitchLine": "\"Your planning site has been sitting half-finished on a trial template. I'll finish it with service levels and a working date check.\"",
+      "whyItWorks": "These planners have already decided to buy. They need someone who can finish it."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Planner site build plus care plan, one contract",
+      "min": 1800,
+      "max": 3000,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The event planner site and the care plan go on one contract, so a new event story or price is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 14,
+      "offer": "Planning agreement and retainer signing",
+      "min": 500,
+      "max": 1500,
+      "unit": "one-time",
+      "trigger": "They mention a couple who loved the consultation and then took weeks to sign.",
+      "line": "\"That couple could have signed the planning agreement the night of the consultation.\""
+    },
+    {
+      "rung": 3,
+      "day": 30,
+      "offer": "Review request after the final vendor payment",
+      "min": 49,
+      "max": 129,
+      "unit": "monthly",
+      "trigger": "A wedding they planned just wrapped and the couple sent a thank-you.",
+      "line": "\"That couple is thrilled with their wedding planner. Let's ask for the review now.\""
+    },
+    {
+      "rung": 4,
+      "day": 45,
+      "offer": "Venue partner introduction kit",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "trigger": "They name a venue they'd love to get recommended by.",
+      "line": "\"That venue you want to work with should see the weddings you've planned. Let's send the kit.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Day-of timeline shared with every vendor",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "trigger": "They mention a vendor who arrived at the wrong time or had an old timeline.",
+      "line": "\"Every vendor sees the latest wedding timeline, so nobody arrives with last week's version.\""
+    },
+    {
+      "rung": 6,
+      "day": 150,
+      "offer": "Client planning portal",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "trigger": "Sixty days of form data and client emails show the same checklist questions from every couple.",
+      "line": "\"Your couples keep asking where the checklist is. Give them one planning portal.\""
+    },
+    {
+      "rung": 7,
+      "day": 240,
+      "offer": "Introduction to the venue they plan at most",
+      "min": 2500,
+      "max": 6000,
+      "unit": "one-time",
+      "trigger": "They mention a venue owner asking who built the planner's site.",
+      "line": "\"The venue where you plan most weddings asked about your site. Would you introduce me?\""
+    }
+  ]
+}
