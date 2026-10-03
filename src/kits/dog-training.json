@@ -1,0 +1,868 @@
+{
+  "schemaVersion": 1,
+  "category": "Dog training",
+  "slug": "dog-training",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Pet family batch, enrol archetype. Programme pricing runs wide (classes to board-and-train), so add-ons are pegged to one programme sale. Method, credential and outcome claims stay with the trainer. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Behaviour evaluation and problem intake",
+      "contains": "A behaviour questionnaire (pulling, jumping, barking, reactivity, resource guarding, separation distress), the evaluation call or visit, and which programme fits which problem",
+      "why": "Owners of a hard dog shop by problem, not by programme name. An intake that starts with their problem gets the evaluation booked."
+    },
+    {
+      "section": "Board-and-train explained",
+      "contains": "How many weeks the dog stays, the daily training routine, owner video updates, the go-home lesson, follow-up sessions, and where the dog sleeps",
+      "why": "Board-and-train is the biggest purchase in this trade, and the dog leaves home for weeks. Owners buy only when they can picture every day of it."
+    },
+    {
+      "section": "Training method and tools statement",
+      "contains": "The trainer's method in plain words, which tools are and aren't used (flat collar, harness, long line, remote collar or none), and how corrections are handled",
+      "why": "Owners split sharply on methods and tools. Saying it plainly filters out the wrong clients and wins the right ones before the first call."
+    },
+    {
+      "section": "Reactive and aggressive dog cases",
+      "contains": "What counts as a reactive or aggressive case, the private-lesson-only rule, muzzle conditioning, safety at sessions, and when the trainer refers on to a veterinary behaviourist",
+      "why": "Owners of a reactive dog feel embarrassed and worried. A page that names the problem calmly and sets safe rules is why they call this trainer."
+    },
+    {
+      "section": "In-home and real-world training sessions",
+      "contains": "Sessions at the front door, on the owner's street, at a park or a pet store, the travel area, and how outings are scheduled as the dog progresses",
+      "why": "Problems happen at the doorbell and on the sidewalk, not in a training room. Owners pay more for a trainer who comes to where the trouble is."
+    },
+    {
+      "section": "Service and therapy dog prep",
+      "contains": "Public-access manners training, therapy dog evaluation prep, what the trainer does and does not certify, and what the owner is responsible for",
+      "why": "Owners asking about service or therapy dog training need to know exactly what this trainer offers and doesn't certify before they enquire."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C49",
+      "siteType": "local-conversion",
+      "name": "Leash Basics",
+      "heroLayout": "split-photo",
+      "mood": [
+        "upbeat",
+        "plainspoken",
+        "handy"
+      ],
+      "bestFor": "Solo trainers who need an evaluation request, class times and a phone number more than a portfolio",
+      "pairsWithTier": "starter",
+      "headlineSample": "Dog training in {City} that sticks at home",
+      "whyItFits": "Cobalt and butter feel friendly and clear, and the typewriter slab reads like a trainer's notebook. The split hero puts the free evaluation next to a working dog."
+    },
+    {
+      "id": "b",
+      "themeId": "C22",
+      "siteType": "enrolment",
+      "name": "Puppy Class",
+      "heroLayout": "card-stack",
+      "mood": [
+        "warm",
+        "encouraging",
+        "organised"
+      ],
+      "bestFor": "Trainers running group puppy and manners classes who need owners to pick a class time and enrol",
+      "pairsWithTier": "standard",
+      "headlineSample": "Puppy and manners classes in {City}. Save your spot.",
+      "whyItFits": "The family combo. Soft rounded type on a peach ground feels encouraging to new puppy owners, and stacked cards show each class with its schedule and price."
+    },
+    {
+      "id": "c",
+      "themeId": "C17",
+      "siteType": "premium-brand",
+      "name": "Off Leash",
+      "heroLayout": "full-bleed-photo",
+      "mood": [
+        "focused",
+        "capable",
+        "calm"
+      ],
+      "bestFor": "Board-and-train and behaviour specialists selling multi-week programmes to owners of hard dogs",
+      "pairsWithTier": "premium",
+      "headlineSample": "Board-and-train and behaviour work for {City}'s hardest dogs",
+      "whyItFits": "A dark ground, a sharp lime accent and bold geometric type read like serious training, which is what an owner paying for a multi-week programme wants to see."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your Maps listing for the training business has good reviews but no website, so an owner with a puller or a jumper can't see what a programme costs or how it works.",
+      "hook": "Open their Maps listing and confirm there is no Website button. Screenshot it for when they reply.",
+      "linkLine": "What would sit behind that button for your training: {demo-link}"
+    },
+    {
+      "angle": "Instagram bio only",
+      "line": "Your training clips are all on Instagram and the bio link goes to a DM. An owner with a reactive dog wants to read how you work before they message a stranger.",
+      "hook": "Tap their bio link and note where it lands: a DM, a link page or a form.",
+      "linkLine": "Your training programmes on one page: {demo-link}"
+    },
+    {
+      "angle": "Dead free host",
+      "line": "The site on your dog training listing still shows a puppy class schedule from last season. Owners who see old dates assume the class has ended.",
+      "hook": "Open it and note one stale detail: old class dates, an old price, a venue that changed.",
+      "linkLine": "Same trainer, this season's classes: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "I opened your training site on my phone and the class schedule was a table I had to scroll sideways. Puppy owners pick a class from their phone at night with the puppy on their lap.",
+      "hook": "Only if they have a site. Load it on your phone and note what breaks. Screenshot it for when they reply.",
+      "linkLine": "The training site, rebuilt for a phone: {demo-link}"
+    },
+    {
+      "angle": "No class sign-up",
+      "line": "Enrolling in your puppy class means messaging you and waiting. New puppy owners want to pick a Saturday class and pay before the puppy chews another shoe.",
+      "hook": "Look for 'DM to enrol' or 'message for class dates' in their bio or posts.",
+      "linkLine": "A puppy class sign-up that works tonight: {demo-link}"
+    },
+    {
+      "angle": "Before-and-after training clips",
+      "line": "Your before-and-after training clips are the most convincing thing you post, and they're scattered across months of stories. A page by problem, pulling, jumping or reactivity, would book the evaluation.",
+      "hook": "Find one recent clip you can describe exactly: the dog, the problem and what changed.",
+      "linkLine": "Your training wins, sorted by problem: {demo-link}"
+    },
+    {
+      "angle": "Reviews stuck on Google",
+      "line": "A review on your Google profile says their dog can finally walk past other dogs without lunging. That line belongs next to the evaluation button, where the next worried owner reads it.",
+      "hook": "Copy one phrase from a review about a specific behaviour that improved. Quote it back if they reply.",
+      "linkLine": "Your training reviews beside the evaluation request: {demo-link}"
+    },
+    {
+      "angle": "Holiday puppy season",
+      "line": "Holiday puppies arrive in late December, and by mid-January their owners are searching for puppy classes. Trainers with class dates online fill those classes first.",
+      "hook": "Use this in December and January, or in spring when litters go home. Name the season.",
+      "linkLine": "January puppy classes, ready to fill: {demo-link}"
+    },
+    {
+      "angle": "After a bad walk",
+      "line": "Owners decide to get help after a bad walk at 9pm, not during business hours. If booking a training evaluation means a call tomorrow, the moment passes and the dog keeps pulling.",
+      "hook": "Look for comments like 'do you help with leash pulling' or 'how do I book' under their posts.",
+      "linkLine": "An evaluation request that works after a bad walk: {demo-link}"
+    },
+    {
+      "angle": "Hiring an assistant trainer",
+      "line": "Saw you're bringing on an assistant trainer. Good trainers look for a programme with a clear method and an organised class schedule before they apply.",
+      "hook": "Only if they posted a hiring notice or an apprentice call. Note the date.",
+      "linkLine": "A training site with a join-the-team page: {demo-link}"
+    },
+    {
+      "angle": "In-home training area",
+      "line": "You do in-home dog training around {City}, but the profile doesn't say which towns. Owners in the outer suburbs assume you won't drive to them.",
+      "hook": "Check their bio, posts and listing for a service area or 'I come to you'.",
+      "linkLine": "Your in-home training area on a map: {demo-link}"
+    },
+    {
+      "angle": "Board-and-train payment schedule",
+      "line": "Your board-and-train programme is a big decision for most families. A page that sets out the deposit and payment schedule up front makes the yes easier to give.",
+      "hook": "Only if they offer board-and-train. Check whether any price or deposit is posted anywhere.",
+      "linkLine": "A board-and-train page with the deposit and schedule spelled out: {demo-link}"
+    },
+    {
+      "angle": "Method and credentials",
+      "line": "Owners comparing dog trainers want your method, the tools you use and the training you've done. None of that is written anywhere a new client would look.",
+      "hook": "Look for certifications or a method statement in their bio. Never invent a credential; the demo uses a bracketed placeholder.",
+      "linkLine": "Your training method and credentials, plainly stated: {demo-link}"
+    },
+    {
+      "angle": "Vet referrals only",
+      "line": "Sounds like most of your training clients come from vet and groomer referrals. When one of those clinics changes hands, that stream of puppy owners can stop overnight.",
+      "hook": "Look for 'referred by our vet' in reviews or thank-you posts to clinics.",
+      "linkLine": "Where a referred puppy owner would land: {demo-link}"
+    },
+    {
+      "angle": "A specific recent training win",
+      "line": "That {specific recent job} you shared shows real progress. A training result like that is what convinces an owner their own dog can change too.",
+      "hook": "Pick their newest progress post and name it exactly: the dog, the problem and the result.",
+      "linkLine": "That training result, front and centre: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, that {specific recent job} you shared is a great training result.\n\nI looked for a site for {Business Name} where an owner could see your programmes and book an evaluation, and only found the social pages. I put together a sample with puppy class times, a board-and-train page and a behaviour intake form, with marked placeholders where your photos would go.\n\nWould you like me to send it over?",
+    "dm2": "{Owner}, following up in case my message got lost between sessions. Here's the sample training site for {Business Name}: {demo-link}\n\nIt has a class schedule owners can enrol from, a board-and-train page that walks through each week, and a behaviour intake that starts with the owner's problem. If it's not for you, say so and I won't message again.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for dog trainers here in {City}. I sent you a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"Easy to miss when you're out with a dog. Short version: I built a sample training site for {Business Name} with your class schedule, a behaviour intake form and a board-and-train page, with marked placeholders where your photos would go. Can I text you the link to look at tonight?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range}, then {Care Range} a month for hosting and class date changes. For a training business like yours I'd normally quote about {Build Price}.\"\n\"Can I walk you through it for ten minutes between sessions this week?\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. We start the day it clears, and your next class goes up first.\"",
+    "objections": [
+      {
+        "objection": "My classes fill from Instagram.",
+        "handler": "\"Instagram finds them. The site is where they pick a class time, pay and sign the waiver without a DM back and forth. It links straight back to your clips.\""
+      },
+      {
+        "objection": "I can't post prices, every dog is different.",
+        "handler": "\"Post class prices and a 'board-and-train from' line. Behaviour cases still start with an evaluation, and the page says exactly that.\""
+      },
+      {
+        "objection": "Most of my clients come from vet referrals.",
+        "handler": "\"Then the vet says your name and the owner searches it. The site is what they find, and it explains your method before the first call.\""
+      },
+      {
+        "objection": "Results sell training, not websites.",
+        "handler": "\"Agreed, and the site is where owners see those results before they trust you with a reactive dog. It's the clips you already post, sorted by problem.\""
+      },
+      {
+        "objection": "My nephew does my website.",
+        "handler": "\"Great, keep him involved. I'd add the class sign-up, the behaviour intake and the board-and-train page, and he can keep posting to it.\""
+      },
+      {
+        "objection": "Winter is my slow season.",
+        "handler": "\"That's the time to build. The site is ready for January, when the holiday puppies need classes.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For your programmes about {Build Price}. One board-and-train client or a couple of full class enrolments covers most of it.\""
+      }
+    ],
+    "email": {
+      "subject": "Training site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for dog trainers around {City}. {Business Name} has real training results on its social pages, but no site where an owner can see your programmes, pick a class or book an evaluation.\n\nI built a sample first rather than ask for your time: a puppy and manners class schedule with enrolment, a behaviour intake form, a board-and-train page and a plain statement of your method, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and class date changes. If not, no problem, it comes down at the end of the month.\n\nWorth ten minutes on the phone between sessions?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build websites for dog trainers in {City}, and I put together a sample one for {Business Name} with your classes on it. I'll text you the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm taking the {Business Name} training demo down on Friday to free up the space.\n\nWant me to leave it up? One word is fine either way.",
+    "nurture": "Hi {Owner}, holiday puppy season is coming, and January puppy classes fill fast for trainers whose dates are online. Thought of you.\n\nThe site is still here whenever you want it, and nothing's changed on price. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to one or two programme sales. A trainer selling board-and-train can carry more than one who only teaches group classes.",
+      "Price the class schedule by the number of class types and start dates, not by page count.",
+      "The behaviour intake is its own line. It is what turns a worried owner's scroll into a booked evaluation.",
+      "Board-and-train pages earn their own line: the daily routine, the update process and the go-home lesson are real writing.",
+      "Keep monthly add-ons under the price of one group class seat. Anything higher gets cut in a slow winter.",
+      "Never publish a method claim, outcome or credential the trainer hasn't supplied. Budget time to get that wording right with them."
+    ],
+    "lineItems": [
+      {
+        "item": "Class schedule with enrolment (each class type)",
+        "min": 150,
+        "max": 400,
+        "unit": "per-page",
+        "description": "Max when the class has several start dates, a waitlist and level prerequisites.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Behaviour intake questionnaire",
+        "min": 250,
+        "max": 700,
+        "unit": "one-time",
+        "description": "Max with branching questions by problem, clip upload and an evaluation booking step.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Board-and-train programme page",
+        "min": 300,
+        "max": 800,
+        "unit": "per-page",
+        "description": "Max with a week-by-week routine, a sample update and the deposit and payment schedule.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Method and tools statement page",
+        "min": 150,
+        "max": 400,
+        "unit": "per-page",
+        "description": "Max when it covers each tool used, the reasoning and the trainer's own [credential] placeholders.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "In-home training area map",
+        "min": 200,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max with several towns, travel fees by zone and real-world session locations.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Problem pages for pulling, jumping and reactivity",
+        "min": 150,
+        "max": 400,
+        "unit": "per-page",
+        "description": "Max when each problem page has its own clip, the programme that fits and an intake link.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Spanish-language class pages and intake",
+        "min": 300,
+        "max": 800,
+        "unit": "one-time",
+        "description": "Max when the schedule, waiver and behaviour intake are all translated.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Training transformation video day",
+      "min": 300,
+      "max": 900,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"One day filming sessions with a few willing clients, start and finish, gives the training site real before-and-after clips for each problem.\"",
+      "when": "Month 2, on a day with clients at different stages who agree to be filmed."
+    },
+    {
+      "name": "Google profile upkeep for the trainer",
+      "min": 150,
+      "max": 300,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"New class dates and training clips on your Google profile every week, so owners searching for a dog trainer see classes that are actually running.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Review requests at class graduation",
+      "min": 49,
+      "max": 129,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"On graduation night every puppy class family gets a text asking for a review, while they're proud of their dog.\"",
+      "when": "Day 30. The easiest second sale."
+    },
+    {
+      "name": "January puppy class campaign",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A late-December push to new puppy owners near you fills the January puppy classes before the holiday puppies start chewing furniture.\"",
+      "when": "Pitch in November, run late December through January."
+    },
+    {
+      "name": "Graduation certificates and class banner artwork",
+      "min": 100,
+      "max": 300,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A printed graduation certificate and a class banner with the training booking code end up in every family's posts.\"",
+      "when": "Right after launch, before the next graduation."
+    },
+    {
+      "name": "Referral cards for vets, groomers and shelters",
+      "min": 100,
+      "max": 300,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A card with the puppy class dates and an evaluation code for every vet front desk and shelter adoption folder that sends you dogs.\"",
+      "when": "Month 2."
+    },
+    {
+      "name": "Monthly training tips email to past clients",
+      "min": 150,
+      "max": 400,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A short monthly email with one training tip and the next class dates keeps graduates practising and coming back for the next level.\"",
+      "when": "Month 3, once there's a list of graduates."
+    },
+    {
+      "name": "Car magnet and park session signage",
+      "min": 150,
+      "max": 500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Every park training session draws onlookers. A car magnet and a folding sign with the class booking code turn them into enquiries.\"",
+      "when": "Month 2, for trainers who teach outdoors."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "The vet clinic that refers behaviour cases",
+        "whoPays": "The clinic",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The vet who sends you pulling and jumping puppies has a site that never mentions training partners. I can rebuild it, and you can introduce me.\"",
+        "whyItWorks": "Vets refer behaviour work all the time and trust the trainer they send to. That trust gets you past the practice manager."
+      },
+      {
+        "route": "Shelters that send adopters to class",
+        "whoPays": "The shelter, at a reduced rate or a sponsor's",
+        "min": 500,
+        "max": 1500,
+        "unit": "one-time",
+        "pitchLine": "\"The shelter that gives adopters a discount at your training classes needs an adoptable-dog page that stays current.\"",
+        "whyItWorks": "Shelters lean on the trainers who keep adopted dogs from being returned. A sponsor often covers the build."
+      },
+      {
+        "route": "The groomer who sees the same nervous dogs",
+        "whoPays": "The groomer, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The groomer who calls you about a dog that won't stand for nails needs a booking-first grooming site of their own.\"",
+        "whyItWorks": "Groomers and trainers swap difficult dogs constantly. Each knows the other's clients by name."
+      },
+      {
+        "route": "The daycare that rents the trainer its play yard",
+        "whoPays": "The daycare",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The daycare where you teach evening classes has no page for its own boarding and daycare dates. You can introduce me.\"",
+        "whyItWorks": "The trainer is in the building every week, and the daycare has watched the training site fill classes."
+      },
+      {
+        "route": "Breeders who send puppies to the trainer",
+        "whoPays": "The breeder",
+        "min": 1000,
+        "max": 2500,
+        "unit": "one-time",
+        "pitchLine": "\"The breeder who recommends your puppy class to every buyer needs a litter page and a puppy application form.\"",
+        "whyItWorks": "Responsible breeders rely on trainers to make their puppies succeed, and the trainer's word carries weight with them."
+      },
+      {
+        "route": "The pet store that hosts training classes",
+        "whoPays": "The store",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The pet store where you teach Saturday classes needs an events page for training nights, adoption days and local delivery.\"",
+        "whyItWorks": "Independent pet stores use classes to bring people in and want a site that shows it."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Adopter readiness quiz for the shelter",
+        "whoPays": "The shelter or its sponsor",
+        "min": 500,
+        "max": 1500,
+        "unit": "one-time",
+        "pitchLine": "\"Adopters answer a few questions about their routine, and the shelter's quiz suggests dogs to meet plus the training class that fits each one.\"",
+        "whyItWorks": "Fewer returns is the shelter's goal, and the trainer becomes the next step in every match."
+      },
+      {
+        "route": "Puppy buyer question assistant for the breeder",
+        "whoPays": "The breeder, monthly",
+        "min": 49,
+        "max": 149,
+        "unit": "monthly",
+        "pitchLine": "\"Puppy buyers ask the breeder the same questions about go-home day and crate training. An assistant answers from the breeder's own notes and names your puppy class.\"",
+        "whyItWorks": "Breeders spend evenings on repeat questions, and the trainer stays the recommended next step."
+      },
+      {
+        "route": "Class event assistant for the pet store",
+        "whoPays": "The store, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"Shoppers ask the store when the next training night is. An assistant answers with dates, the trainer's class link and what to bring.\"",
+        "whyItWorks": "Event questions pile up at the counter. Answering them online fills the store and the class."
+      },
+      {
+        "route": "Daycare report card writer",
+        "whoPays": "The daycare, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"The daycare where you train turns staff notes into warm daily cards for owners, with your training cues mentioned for dogs in your programmes.\"",
+        "whyItWorks": "Daycares want better owner updates, and the trainer's cues in each card keep training front of mind."
+      },
+      {
+        "route": "Practice-walk planner for the dog walker",
+        "whoPays": "The walker, monthly",
+        "min": 49,
+        "max": 129,
+        "unit": "monthly",
+        "pitchLine": "\"The walker who handles your trainees between sessions gets a weekly plan of cues to practise on walks, drafted from your lesson notes with the owner's OK.\"",
+        "whyItWorks": "Walkers who reinforce training are worth more to owners, and the trainer's results improve."
+      },
+      {
+        "route": "Litter waitlist matcher for the breeder",
+        "whoPays": "The breeder",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"Puppy applications get sorted by home, schedule and experience, so the breeder spends time on the families most likely to train and keep the dog.\"",
+        "whyItWorks": "Breeders take many applications per litter. A tidy shortlist saves them hours and shows the trainer's influence."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Homework reminder texts between lessons",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Two days after each lesson, the owner gets a text with this week's training cue to practise, so the dog shows up to the next session further along.\"",
+      "whenAndWhatItTakes": "Day 30. Needs the weekly homework for each programme and the lesson calendar."
+    },
+    {
+      "name": "Programme deposit and payment schedule",
+      "kind": "software",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Board-and-train and private training packages take a deposit to hold the dates and bill the rest on a schedule, so nobody backs out after the weeks are blocked.\"",
+      "whenAndWhatItTakes": "At build, or the first time a held board-and-train slot falls through. Needs their deposit policy and a payment account."
+    },
+    {
+      "name": "Behaviour intake summary for the trainer",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"A long behaviour intake becomes a short summary for the trainer before the evaluation call: the problem, the triggers and which training programme it probably fits.\"",
+      "whenAndWhatItTakes": "Month 2, once the intake form is live. Needs their programme list; it summarises for the trainer only and never advises owners. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Class roster with make-up credits",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Every class roster, attendance mark and missed-week make-up credit in one place, so a puppy who missed week three catches up in the next class.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their class list and make-up policy."
+    },
+    {
+      "name": "Full-class waitlist and next-session alert",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"When a puppy class fills, owners join the waitlist and get a text the moment the next session opens.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the class schedule and enrolment access."
+    },
+    {
+      "name": "Training DM responder for class and programme questions",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"'When does the next puppy class start' and 'do you do board-and-train' get answered from your real schedule, with the evaluation link.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the schedule and programme prices; behaviour questions always go to the trainer. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Client homework video portal",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Each training client logs in to the videos for their programme week, so the owner practises the same way you taught it.\"",
+      "whenAndWhatItTakes": "Month 3. Needs short videos of each exercise, which can be filmed on a phone."
+    },
+    {
+      "name": "Board-and-train daily update writer",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"You jot a few words about each board-and-train dog's day, and a warm owner update comes back ready to send with the clip.\"",
+      "whenAndWhatItTakes": "Month 3, for trainers running board-and-train. Needs a few past updates they liked. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Board-and-train progress tracker for owners",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Owners see their dog's board-and-train week by week: cues learned, outings done and the go-home lesson date.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their programme outline and a habit of logging progress daily."
+    },
+    {
+      "name": "Graduation review and next-level offer",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"A week after puppy class graduation, families get a review request and an offer for the next training level.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the class levels and graduation dates."
+    },
+    {
+      "name": "Training phone receptionist",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 199,
+      "monthlyMax": 399,
+      "pitchLine": "\"With a leash in each hand, the training line still gets answered: class dates, prices and an evaluation request taken.\"",
+      "whenAndWhatItTakes": "Month 4. Needs schedule, prices and calendar access; behaviour cases are passed to the trainer. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Private lesson package credits",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Six-lesson private training packages with sessions left shown to the owner, so nobody argues about what's been used.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their package sizes and a payment account."
+    },
+    {
+      "name": "Caption writer for training clips",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Post the training clip, and a caption naming the problem and the progress, in your voice, is ready to approve.\"",
+      "whenAndWhatItTakes": "Month 2. Needs a few of their past captions. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Waiver and dog history forms with e-signature",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"The class waiver, bite history and vaccine record are signed and uploaded before the first training night, not on a clipboard in the parking lot.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their waiver wording, reviewed by their own adviser."
+    },
+    {
+      "name": "Tune-up offer for past training clients",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Six months after a programme ends, the owner gets a friendly note offering a refresher session before old dog habits creep back.\"",
+      "whenAndWhatItTakes": "Month 6. Needs programme end dates from the client list."
+    },
+    {
+      "name": "Review reply drafts for training reviews",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 49,
+      "monthlyMax": 149,
+      "pitchLine": "\"Each training review gets a reply drafted that names the dog and what it learned, ready to approve after class.\"",
+      "whenAndWhatItTakes": "Month 2, alongside the review requests. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Assistant trainer schedule and session notes",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Who's teaching which class, which private sessions they cover and the notes from each dog's last lesson, in one place for the whole training team.\"",
+      "whenAndWhatItTakes": "Month 5, once they hire. Needs the class schedule and their note format."
+    },
+    {
+      "name": "Lesson-plan drafter from evaluation notes",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Evaluation notes become a first draft of the dog's training plan in your own structure, which you edit before the first lesson.\"",
+      "whenAndWhatItTakes": "Month 5. Needs a handful of past plans and the trainer's approval of every draft. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Online puppy basics course store",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 29,
+      "monthlyMax": 99,
+      "pitchLine": "\"Owners outside your driving area buy your puppy basics course online and book a remote check-in, so distance stops costing you training clients.\"",
+      "whenAndWhatItTakes": "Month 6. Needs the course videos, which can come from the homework portal, and a payment account."
+    },
+    {
+      "name": "Owner question assistant over the homework library",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Clients ask 'how do I practise loose-leash walking' at night and get your own homework answer and video, with anything behavioural sent to you.\"",
+      "whenAndWhatItTakes": "Month 6, after the homework portal. Needs the video library and the trainer's approval of answers. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the homework portal for independent trainers",
+      "whoPays": "Independent trainers, monthly",
+      "min": 19,
+      "max": 79,
+      "unit": "monthly",
+      "pitchLine": "\"I built a homework portal and class roster for one dog trainer. Every solo trainer sends homework by text and loses track of it.\"",
+      "whyItWorks": "The first client paid for the workflow. Solo trainers are many and gather in a few online groups."
+    },
+    {
+      "route": "Trainer certification programmes' graduate launch kit",
+      "whoPays": "The certification programme, annually",
+      "min": 2000,
+      "max": 8000,
+      "unit": "per-year",
+      "pitchLine": "\"Each trainer who passes your programme leaves with a class schedule, an intake form and a site. It's a reason to choose your training course.\"",
+      "whyItWorks": "Certification bodies sell careers. A launch kit for each cohort is a recurring contract and a pipeline of clients."
+    },
+    {
+      "route": "Dog training franchise territories",
+      "whoPays": "The franchise owner, per territory",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "pitchLine": "\"Each training territory needs its own class schedule and evaluation request routed to the local trainer. I build it once and roll it out.\"",
+      "whyItWorks": "One contract becomes many territories on the same enrolment template."
+    },
+    {
+      "route": "Regional pet store groups hosting training classes",
+      "whoPays": "The store group",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"Every store in your group runs puppy classes with a different trainer. One class finder across all stores fills them.\"",
+      "whyItWorks": "Store groups use classes to drive visits and need one tidy schedule across locations."
+    },
+    {
+      "route": "County shelter network adopter class sign-up",
+      "whoPays": "The shelter network or a grant",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Every adopter in the county gets a free first training class. One sign-up page sends them to partner trainers near home.\"",
+      "whyItWorks": "Shelter networks fund post-adoption support to cut returns, and grants often pay for it."
+    },
+    {
+      "route": "White-label trainer template for agencies",
+      "whoPays": "The agency, per site",
+      "min": 400,
+      "max": 1200,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency picks up a dog trainer and starts from scratch. License my enrolment template with the behaviour intake and board-and-train page built in.\"",
+      "whyItWorks": "Agencies sell the client; you sell them the part you've already built and run."
+    },
+    {
+      "route": "Trainers an hour outside {City}",
+      "whoPays": "New training clients in a new metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I work with one dog trainer per side of {City}. Trainers an hour away don't share your owners, so the same class site travels.\"",
+      "whyItWorks": "Non-competing geography lets you reuse the template, the pitch and the finished training proof."
+    },
+    {
+      "route": "Finish half-built class enrolment setups",
+      "whoPays": "The stuck trainer",
+      "min": 500,
+      "max": 2000,
+      "unit": "one-time",
+      "pitchLine": "\"Someone started your class enrolment and left it half-wired. I've set up puppy class sign-ups for another trainer and can finish yours.\"",
+      "whyItWorks": "Trainers with a stalled setup have already decided to buy. They need someone who has done it before."
+    },
+    {
+      "route": "Dog sports clubs and trial organisers",
+      "whoPays": "The club or organiser",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"Agility and obedience clubs take trial entries by email and paper. An entry page with class lists and waitlists fills the trial without the inbox.\"",
+      "whyItWorks": "Clubs are run by volunteers who hate the entry paperwork, and trainers are often their members."
+    },
+    {
+      "route": "Leash and harness makers' trainer locator",
+      "whoPays": "The maker's marketing team",
+      "min": 5000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Owners who buy your training gear want someone to show them how to use it. A locator of trainers who teach with it sends them to class.\"",
+      "whyItWorks": "Gear makers want product used well. Trainers who recommend it are their best sales channel."
+    },
+    {
+      "route": "Breed clubs' puppy buyer education pages",
+      "whoPays": "The breed club",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "pitchLine": "\"Your breed club tells every puppy buyer to start training early. A page with breed-savvy trainers by region makes that advice usable.\"",
+      "whyItWorks": "Breed clubs care about outcomes for their breed and need a simple way to point buyers to help."
+    },
+    {
+      "route": "Puppy manners workshops for apartment communities",
+      "whoPays": "The property manager, per workshop",
+      "min": 500,
+      "max": 1500,
+      "unit": "per-job",
+      "pitchLine": "\"Your residents' dogs bark in hallways and pull in elevators. A puppy manners workshop sign-up page with a local trainer fixes the complaints.\"",
+      "whyItWorks": "Property managers field dog complaints weekly and will pay for a resident event that eases them."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Training site build plus care plan, one contract",
+      "min": 1800,
+      "max": 3000,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"Training site and care plan on one contract, so next month's class dates go up the day you send them.\""
+    },
+    {
+      "rung": 2,
+      "day": 14,
+      "offer": "Programme deposit and payment schedule",
+      "min": 300,
+      "max": 900,
+      "unit": "one-time",
+      "trigger": "They mention a board-and-train client who backed out after the weeks were held.",
+      "line": "\"That cancelled board-and-train is exactly what a deposit at booking protects.\""
+    },
+    {
+      "rung": 3,
+      "day": 30,
+      "offer": "Review requests at class graduation",
+      "min": 49,
+      "max": 129,
+      "unit": "monthly",
+      "trigger": "The first puppy class since launch graduates.",
+      "line": "\"Your puppy class graduates tonight. Let's ask those families for a review while they're proud.\""
+    },
+    {
+      "rung": 4,
+      "day": 45,
+      "offer": "Homework reminder texts between lessons",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "trigger": "They complain that owners don't practise between training sessions.",
+      "line": "\"A text with this week's training cue two days after class keeps owners practising.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Board-and-train daily update writer",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "trigger": "They say writing nightly updates for board-and-train dogs eats their evenings.",
+      "line": "\"Your evening board-and-train updates can be drafted from a few words per dog.\""
+    },
+    {
+      "rung": 6,
+      "day": 120,
+      "offer": "January puppy class campaign",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "trigger": "It's November and the January puppy class list is still short.",
+      "line": "\"Holiday puppies are coming. A push in late December fills your January puppy classes.\""
+    },
+    {
+      "rung": 7,
+      "day": 180,
+      "offer": "Online puppy basics course store",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "trigger": "They mention enquiries from owners outside their driving area.",
+      "line": "\"Those owners too far away for lessons can still buy your puppy training course.\""
+    }
+  ]
+}

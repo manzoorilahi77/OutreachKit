@@ -1,0 +1,868 @@
+{
+  "schemaVersion": 1,
+  "category": "Pet grooming",
+  "slug": "pet-grooming",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Pet family batch. Low-ticket, high-repeat category: software and AI prices held well below the build. Covers shop and mobile van groomers. No booking-software or marketplace names. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Matted coat and shave-down policy",
+      "contains": "When a matted coat means a shave-down instead of a brush-out, the dematting charge, the owner's sign-off at drop-off, and why the dog's comfort comes before coat length",
+      "why": "Matting is the argument every groomer has at pick-up. Owners who read the policy before drop-off arrive expecting the short cut, not surprised by it."
+    },
+    {
+      "section": "Puppy's first groom",
+      "contains": "The age to start, a short intro visit with bath, nail trim and face tidy only, handling practice on the table, and how many intro visits come before a full puppy haircut",
+      "why": "New puppy owners pick the groomer who explains a gentle first visit, then stay with that groomer for the life of the dog."
+    },
+    {
+      "section": "Mobile grooming van visits",
+      "contains": "What the van needs at the curb (a level parking spot, an outlet or none, water hookup or none), how long it sits in the driveway, towns served by day of the week, and the travel fee",
+      "why": "Mobile grooming customers decide on whether the van can reach their street and park before they ever look at the price."
+    },
+    {
+      "section": "Anxious, senior and reactive dogs",
+      "contains": "Quiet-hour appointments, one dog at a time on the table, the muzzle and handling policy, breaks during the groom, and when the groomer stops and calls the owner",
+      "why": "Owners of nervous or older dogs fear the grooming table more than the bill. They book the groomer who says how a hard day will be handled."
+    },
+    {
+      "section": "Cat grooming",
+      "contains": "Lion cuts, sanitary trims, nail trims, cat-only hours or a separate room, and the plan for a cat who won't tolerate the dryer",
+      "why": "Cat owners can't assume a dog groomer takes cats. A page that says yes and explains how wins bookings most shops turn away."
+    },
+    {
+      "section": "Dog haircut guide: what to ask for",
+      "contains": "Teddy bear cut, puppy cut, breed trim and shave-down compared in plain words, with roughly how long each coat lasts before the next groom",
+      "why": "Owners don't know the names of cuts, and a haircut that misses what they pictured is how a regular is lost after one visit."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C47",
+      "siteType": "local-conversion",
+      "name": "Tub to Towel",
+      "heroLayout": "card-stack",
+      "mood": [
+        "cheerful",
+        "quick",
+        "neighbourly"
+      ],
+      "bestFor": "Solo groomers and home grooming rooms who need a price list, a phone number and a booking request",
+      "pairsWithTier": "starter",
+      "headlineSample": "Dog grooming in {City}, from bath to bandana",
+      "whyItFits": "Teal and tangerine feel playful without looking childish, and stacked cards put the size-and-coat prices and the booking request first."
+    },
+    {
+      "id": "b",
+      "themeId": "C22",
+      "siteType": "booking-first",
+      "name": "Fresh Groom",
+      "heroLayout": "split-photo",
+      "mood": [
+        "warm",
+        "gentle",
+        "tidy"
+      ],
+      "bestFor": "Grooming shops and mobile vans with a full book who need owners to book and rebook without calling",
+      "pairsWithTier": "standard",
+      "headlineSample": "Gentle dog and cat grooming in {City}. Book your spot.",
+      "whyItFits": "The family combo. A warm peach ground and soft rounded type feel like a kind groomer, and the split hero keeps a freshly groomed dog beside the Book button."
+    },
+    {
+      "id": "c",
+      "themeId": "C35",
+      "siteType": "premium-brand",
+      "name": "Show Coat",
+      "heroLayout": "full-bleed-photo",
+      "mood": [
+        "polished",
+        "boutique",
+        "calm"
+      ],
+      "bestFor": "Boutique grooming spas and breed-trim specialists who sell hand-scissoring and spa add-ons",
+      "pairsWithTier": "premium",
+      "headlineSample": "Hand-scissored grooming for {City}'s best-kept dogs",
+      "whyItFits": "Rosewood's fashion serif turns a hand-scissored trim into a boutique service, which is how a spa groomer holds a higher price."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your Maps listing for the grooming shop has hours and a phone number but no website, so a new dog owner can't see what a bath and haircut costs before they call someone else.",
+      "hook": "Open their Maps listing and confirm there is no Website button. Screenshot it for when they reply.",
+      "linkLine": "Here's what would sit behind that button for the grooming shop: {demo-link}"
+    },
+    {
+      "angle": "Facebook page only",
+      "line": "The only link for your grooming is a Facebook page, and the last post with prices is months down the feed. A dog owner new to {City} won't scroll that far.",
+      "hook": "Check where their website field points. If it's Facebook, find the newest post that mentions a grooming price and note its date.",
+      "linkLine": "Your grooming menu on one page instead of a feed: {demo-link}"
+    },
+    {
+      "angle": "Dead free host",
+      "line": "The site on your grooming listing is an old free page with a price list from a while back. A dog owner who sees an old price expects to pay it at pick-up.",
+      "hook": "Open it and note one stale detail: an old price, a closed day, a phone number that changed.",
+      "linkLine": "Same grooming shop, current and bookable: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "I opened your grooming site on my phone and the service list ran off the side of the screen. Most dog owners book a groom from the couch with the dog asleep beside them.",
+      "hook": "Only if they have a site. Load it on your phone and note what breaks. Screenshot it for when they reply.",
+      "linkLine": "The grooming site, rebuilt for a phone: {demo-link}"
+    },
+    {
+      "angle": "Call-only booking",
+      "line": "Booking a groom with you means a phone call in the daytime, which is when you're holding clippers. Dog owners who look at night end up with whoever lets them request a slot.",
+      "hook": "Look for 'call to book' or 'DM to book' in their bio or listing.",
+      "linkLine": "A grooming booking request that works at night: {demo-link}"
+    },
+    {
+      "angle": "Finished grooms with nowhere to live",
+      "line": "Your finished grooms are the best ad the shop has, and each dog scrolls out of sight within a week. A gallery sorted by coat type would keep them booking.",
+      "hook": "Pick one recent before-and-after groom you can describe exactly: the breed and the cut.",
+      "linkLine": "Your finished grooms, sorted by coat: {demo-link}"
+    },
+    {
+      "angle": "Reviews stuck on Google",
+      "line": "One of your Google reviews says a nervous rescue came home calm from the groom. That sentence belongs beside the booking button, where the next nervous dog owner will read it.",
+      "hook": "Read their reviews and copy one phrase about a nervous, senior or matted dog. Quote it back if they reply.",
+      "linkLine": "Your grooming reviews next to the services they describe: {demo-link}"
+    },
+    {
+      "angle": "Spring shedding season",
+      "line": "Spring shedding is when every double-coated dog in {City} needs a deshed at once. Groomers with a deshedding page and open slots take those calls first.",
+      "hook": "Use this from March to May, or for the pre-holiday rush in November. Name the season.",
+      "linkLine": "A deshedding page ready for spring: {demo-link}"
+    },
+    {
+      "angle": "Late-night grooming requests",
+      "line": "Owners notice the overgrown coat at 10pm when the dog jumps on the bed. If getting a grooming slot means a call tomorrow, plenty of them forget by morning.",
+      "hook": "Look for comments like 'any openings' or 'how do I get on your list' under their posts.",
+      "linkLine": "A grooming page that takes requests at midnight: {demo-link}"
+    },
+    {
+      "angle": "Hiring a bather",
+      "line": "Saw you're hiring a bather or an assistant groomer. Good groomers check whether a shop looks organised and careful with dogs before they apply.",
+      "hook": "Only if they posted a hiring notice or a 'now hiring' story. Note the date.",
+      "linkLine": "A grooming site with a join-the-team page: {demo-link}"
+    },
+    {
+      "angle": "Van route by day",
+      "line": "Your mobile grooming van covers several towns, but nobody can tell which day you're on their side of {City}. A route page by day would end the 'do you come to us' messages.",
+      "hook": "Mobile groomers only. Look for town lists in their bio or 'do you come to' comments.",
+      "linkLine": "Your grooming van's route, by day: {demo-link}"
+    },
+    {
+      "angle": "Prepaid grooming packages",
+      "line": "Your regular dogs come in every six weeks anyway. A prepaid grooming package lets owners pay ahead and keeps their dog on your calendar instead of someone else's.",
+      "hook": "Check for punch cards, 'package' or 'membership' in their posts or price list.",
+      "linkLine": "A prepaid grooming package page: {demo-link}"
+    },
+    {
+      "angle": "Safety and training on show",
+      "line": "Owners want to know who has their dog on the table and how a nervous one is handled. Your grooming training and safety rules aren't written anywhere a new client would look.",
+      "hook": "Look for certificates, 'certified groomer' or a safety post in their bio or highlights. Never invent a credential.",
+      "linkLine": "Your grooming safety and training, front and centre: {demo-link}"
+    },
+    {
+      "angle": "Books closed to new dogs",
+      "line": "Sounds like your grooming book is full of regulars and new dogs wait on a list. When a regular moves away, the owner who replaces them looks you up first.",
+      "hook": "Look for 'books closed', 'waitlist only' or 'existing clients only' in their posts.",
+      "linkLine": "Where a new grooming client would land: {demo-link}"
+    },
+    {
+      "angle": "A specific recent groom",
+      "line": "That {specific recent job} came out beautifully. A groom like that should greet every new dog owner who finds the shop, not sit three weeks down the feed.",
+      "hook": "Pick their newest groom post and name it exactly: the breed, the cut and what changed.",
+      "linkLine": "That groom, front and centre: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, that {specific recent job} you posted is lovely grooming work.\n\nI looked for a grooming site for {Business Name} and only found the social pages. I put together a sample page with a menu priced by size and coat, a booking request and your drop-off rules, with marked placeholders where your photos would go.\n\nWould you like me to send it over?",
+    "dm2": "{Owner}, following up in case my message got lost between dogs. Here's the sample grooming site for {Business Name}: {demo-link}\n\nIt has a menu priced by size and coat, a matted-coat policy written out plainly and a booking request that works at night. If it's not for you, say so and I won't message again.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for dog groomers here in {City}. I sent you a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"Easy to miss with a dog on the table. Short version: I built a sample grooming site for {Business Name} with a price list by size and coat, a matted-coat policy and a booking request, with marked placeholders where your photos would go. Can I text you the link to look at tonight?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range}, then {Care Range} a month for hosting and price changes. For a grooming shop like yours I'd normally quote about {Build Price}.\"\n\"Can I walk you through it for ten minutes after your last pick-up one day this week?\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. We start the day it clears.\"",
+    "objections": [
+      {
+        "objection": "My book is full, I can't take new dogs.",
+        "handler": "\"Then the site is for filling cancellations and choosing which dogs you take. A waitlist and a clear price list mean the next dog on your table is one you want.\""
+      },
+      {
+        "objection": "Everyone finds me on Facebook.",
+        "handler": "\"Facebook finds them. The site is where they check what a doodle haircut costs and request a slot at night without a message thread. It links straight back to your page.\""
+      },
+      {
+        "objection": "I can't post prices, every dog is different.",
+        "handler": "\"Ranges by size and coat work, with 'final price confirmed at drop-off' underneath. Owners only need to know they're in the right range before they book.\""
+      },
+      {
+        "objection": "I'm mobile, nobody needs to find a shop.",
+        "handler": "\"That's exactly why. Owners need to know which day the van is on their street and what it needs to park. That's the page.\""
+      },
+      {
+        "objection": "My niece made me a page already.",
+        "handler": "\"Good, nothing she built goes to waste. I'd add the price grid, the matted-coat policy and the booking request, and keep anything of hers that works.\""
+      },
+      {
+        "objection": "It's my slow season.",
+        "handler": "\"That's the best time to build. January is quiet for most groomers, and the site is live before spring shedding fills the book.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For your shop about {Build Price}, because it's a priced menu, a booking request and a gallery. A handful of regular grooms covers it.\""
+      }
+    ],
+    "email": {
+      "subject": "Grooming site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for dog groomers around {City}. {Business Name} has lovely finished grooms on its social pages, but no site where a new owner can see prices by size and coat and request a slot.\n\nI built a sample first rather than ask for your time: a grooming menu priced by size and coat, a matted-coat policy, a first-groom page for puppies and a booking request, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and price changes. If not, no problem, it comes down at the end of the month.\n\nWorth ten minutes on the phone after your last pick-up?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build websites for dog groomers in {City}, and I put together a sample one for {Business Name}. I'll text you the link so you can look between dogs. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm taking the {Business Name} grooming demo down on Friday to free up the space.\n\nWant me to leave it up? One word is fine either way.",
+    "nurture": "Hi {Owner}, the holiday grooming rush is a few weeks out, and the shops with a booking request fill their December slots first. Thought of you.\n\nThe site is still here whenever you want it, and nothing's changed on price. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to a few weeks of grooming tickets, never to a van payment. Their jobs are small, so the build has to be.",
+      "Price the menu by size and coat combinations, not by page count. A grid across several sizes and coat types is the real work.",
+      "A mobile van route page is its own line, priced by the number of towns and service days it covers.",
+      "Keep monthly add-ons under what one regular pays for a bath and tidy. Anything higher gets cancelled after the holiday rush.",
+      "Sell deshedding and holiday pages a month before their season, never during the rush.",
+      "Cat grooming and anxious-dog pages earn their own line: few groomers publish them, so they bring in the bookings other shops turn away."
+    ],
+    "lineItems": [
+      {
+        "item": "Size-and-coat price grid (each extra coat type)",
+        "min": 75,
+        "max": 200,
+        "unit": "per-page",
+        "description": "Max when each coat type has its own add-ons for dematting, hand-scissoring and nail grinding.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Matted coat and shave-down policy page",
+        "min": 150,
+        "max": 400,
+        "unit": "per-page",
+        "description": "Max with a drop-off sign-off form and a before-groom photo consent step.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Mobile van route map by day",
+        "min": 250,
+        "max": 700,
+        "unit": "one-time",
+        "description": "Max with several towns, day-of-week zones and a travel fee looked up by ZIP.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Puppy first-groom page with intro booking",
+        "min": 150,
+        "max": 400,
+        "unit": "per-page",
+        "description": "Max when a series of intro visits books as one bundle with an age check.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Cat grooming page",
+        "min": 150,
+        "max": 400,
+        "unit": "per-page",
+        "description": "Max with cat-only hours, a separate handling policy and its own price grid.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Anxious and senior dog page",
+        "min": 150,
+        "max": 400,
+        "unit": "per-page",
+        "description": "Max with a quiet-hour booking option and a short pre-groom questionnaire about handling.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Spanish-language grooming menu and policies",
+        "min": 250,
+        "max": 700,
+        "unit": "one-time",
+        "description": "Max when the menu, matted-coat policy and drop-off rules are all translated.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Groom-day photo session for the gallery",
+      "min": 250,
+      "max": 700,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"One busy grooming day with a photographer, each owner's written OK on file, fills the gallery and a month of posts with freshly groomed dogs.\"",
+      "when": "Month 2, on a day with several fresh grooms whose owners agree to be featured."
+    },
+    {
+      "name": "Google profile upkeep for the grooming shop",
+      "min": 150,
+      "max": 300,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Fresh finished grooms on your Google profile every week, breed and cut named, so dog owners nearby see a busy table.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Review requests after every groom",
+      "min": 49,
+      "max": 129,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"The evening after pick-up, the owner gets a short text asking for a review while the dog still smells like your grooming shampoo.\"",
+      "when": "Day 30. The easiest second sale."
+    },
+    {
+      "name": "Spring deshedding campaign",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A March push for deshedding treatments aimed at double-coated dog owners, before the fur hits the furniture.\"",
+      "when": "Pitch in February, run March to May."
+    },
+    {
+      "name": "Holiday grooming rush push",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A November push fills the pre-Christmas grooming slots early and opens a waitlist for the dogs who don't fit.\"",
+      "when": "Pitch in October, run through mid-December."
+    },
+    {
+      "name": "Van wrap and door hanger artwork",
+      "min": 250,
+      "max": 800,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Your grooming van parks in a different driveway every hour. Artwork with the booking code on the side and a door hanger for the neighbours makes each stop sell the next.\"",
+      "when": "Right after launch, mobile groomers only."
+    },
+    {
+      "name": "Front-desk cards for vets and rescues",
+      "min": 100,
+      "max": 300,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A small card with your grooming booking code for the vet's front desk and the rescue's adoption folder, so new dogs arrive already pointed at you.\"",
+      "when": "Month 2."
+    },
+    {
+      "name": "Monthly grooming post planning",
+      "min": 150,
+      "max": 400,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"You groom, I plan the month of posts around open slots, shedding season and holiday cuts.\"",
+      "when": "Month 3, if they say posting is the part they skip."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "The vet clinic that refers grooming clients",
+        "whoPays": "The clinic",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The vet that sends you matted dogs has a dated site with no page for nail trims or bath days. I can build it, and you can introduce me.\"",
+        "whyItWorks": "Groomers and vets trade dogs back and forth. The groomer's word gets you past the practice manager."
+      },
+      {
+        "route": "The rescue whose dogs the shop grooms",
+        "whoPays": "The rescue, at a reduced rate or a sponsor's",
+        "min": 500,
+        "max": 1500,
+        "unit": "one-time",
+        "pitchLine": "\"The rescue whose dogs you groom before adoption day needs an adoptable-dog page that actually stays current.\"",
+        "whyItWorks": "Rescues run on volunteers and need simple sites. A sponsor often pays, and the groomer gets credit on every adoption post."
+      },
+      {
+        "route": "Other groomers who cover vacations",
+        "whoPays": "Each groomer, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The mobile groomer who covers your dogs when you're away needs the same booking-first grooming site.\"",
+        "whyItWorks": "Groomers trade overflow with a few trusted peers. Each one has seen your client's site working."
+      },
+      {
+        "route": "Dog walkers who drop dogs at the grooming shop",
+        "whoPays": "Each walker, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The walker who brings three dogs to your grooming table every week needs a page that books walks the same way yours books grooms.\"",
+        "whyItWorks": "Walkers and groomers share the same owners and the same drop-off door. The introduction is a two-minute chat at the counter."
+      },
+      {
+        "route": "The pet boutique next to the shop",
+        "whoPays": "The boutique",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The pet boutique where your grooming clients buy treats needs a page for local pickup and the shared grooming coupon.\"",
+        "whyItWorks": "Neighbouring pet shops share foot traffic and want to look as organised as the groomer next door."
+      },
+      {
+        "route": "The grooming academy the owner trained at",
+        "whoPays": "The academy",
+        "min": 1500,
+        "max": 5000,
+        "unit": "one-time",
+        "pitchLine": "\"The grooming academy you trained at needs a page that books discounted student grooms. You could introduce me to the director.\"",
+        "whyItWorks": "Academies need practice dogs every week. A trusted graduate's introduction opens the door."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Front-desk question assistant for the referring vet",
+        "whoPays": "The clinic, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"The vet clinic that refers your grooming dogs answers hours, parking and drop-off questions all day. An assistant takes those and hands every medical question to staff.\"",
+        "whyItWorks": "Front desks are swamped with logistics calls. Keeping the assistant away from medical questions is what makes it safe to buy."
+      },
+      {
+        "route": "Adoption match quiz for the rescue",
+        "whoPays": "The rescue or its sponsor",
+        "min": 500,
+        "max": 1500,
+        "unit": "one-time",
+        "pitchLine": "\"Adopters answer a few questions about their home and schedule, and the rescue's quiz suggests dogs to meet, with the coat care each dog needs.\"",
+        "whyItWorks": "Better matches mean fewer returns. Coat care is the groomer's expertise, so the groomer stays in the story."
+      },
+      {
+        "route": "Stop planner for a neighbouring mobile groomer",
+        "whoPays": "The mobile groomer, monthly",
+        "min": 79,
+        "max": 199,
+        "unit": "monthly",
+        "pitchLine": "\"The other mobile groomer in town loses an hour a day to driving. A planner that groups grooming stops by street gives it back.\"",
+        "whyItWorks": "Every van groomer feels the drive time. One who sees it working for a friend buys on the spot."
+      },
+      {
+        "route": "Walk report writer for the dog walker",
+        "whoPays": "The walker, monthly",
+        "min": 49,
+        "max": 129,
+        "unit": "monthly",
+        "pitchLine": "\"Dog walkers type a few words after each walk, and a friendly report for the owner comes back ready to send in their voice.\"",
+        "whyItWorks": "Owners pay walkers partly for the update. Writing it nicely is the chore walkers hate."
+      },
+      {
+        "route": "Coat-care product finder for the pet boutique",
+        "whoPays": "The boutique",
+        "min": 1000,
+        "max": 3000,
+        "unit": "one-time",
+        "pitchLine": "\"Shoppers name their dog's breed and coat, and the boutique's site suggests the brushes and shampoos it actually stocks, with the groomer's tips attached.\"",
+        "whyItWorks": "It turns the groomer's advice into the boutique's sales, which keeps both shops recommending each other."
+      },
+      {
+        "route": "Student-groom booking assistant for the academy",
+        "whoPays": "The academy",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The academy's assistant explains student grooming prices and timing, and books dogs onto the floor when instructors are on.\"",
+        "whyItWorks": "A steady flow of practice dogs is something the academy can measure and will pay to keep."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Rebooking texts timed to each dog's coat",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"A doodle on a six-week schedule gets a rebooking text in week five, so the grooming book refills itself without you chasing.\"",
+      "whenAndWhatItTakes": "Day 30. Needs their usual rebooking gap by coat type and access to the grooming calendar."
+    },
+    {
+      "name": "Deposit and no-show rule for long grooms",
+      "kind": "software",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Big-dog grooms and doubles take a deposit at booking, so a no-show on a two-hour doodle still pays something.\"",
+      "whenAndWhatItTakes": "At build, or the first time they complain about a no-show. Needs their deposit rule and a payment account."
+    },
+    {
+      "name": "Grooming DM and text responder",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"'How much for a goldendoodle' and 'any openings Saturday' get answered from your real grooming menu, with the booking request attached as a link.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the size-and-coat price grid and calendar access, updated when prices change. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Dog profile card with cut and handling notes",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Every dog's cut, blade length, shampoo and 'hates the dryer' note saved on its card, so the next groom matches the last one.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their current notes, even if they live on index cards by the table."
+    },
+    {
+      "name": "Pick-up ready text with a finished-groom shot",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"When the groom is done, the owner gets a pick-up text with a shot of their dog, which is also the moment they share the grooming shop with friends.\"",
+      "whenAndWhatItTakes": "Month 2. Needs a shop phone or tablet at the table and the owner's OK to text."
+    },
+    {
+      "name": "Matted-coat estimate from owner-sent pictures",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"Owners send a quick picture of the coat, and you get a likely dematting or shave-down note before they book, so pick-up holds no surprises.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their matting policy and dematting prices, and the groomer approves every note. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Vaccination record upload and expiry tracker",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Owners upload the rabies record once, and the grooming shop sees whose record lapses before their next visit.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their vaccination rule and a place to store records securely."
+    },
+    {
+      "name": "Caption writer for finished grooms",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Post the freshly groomed dog, and a caption in your voice naming the breed and the cut is ready to approve.\"",
+      "whenAndWhatItTakes": "Month 2. Needs a few of their past captions to learn the voice. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Mobile van route and day planner",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2500,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Grooming stops grouped by neighbourhood and day, so the van drives less and fits one more dog before dark.\"",
+      "whenAndWhatItTakes": "Month 3, mobile groomers only. Needs their towns served and the current stop list."
+    },
+    {
+      "name": "Lapsed-dog win-back texts",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Dogs who haven't been groomed in a few months get a friendly note before the coat mats. Some owners just lost track.\"",
+      "whenAndWhatItTakes": "Month 3. Needs visit history from the grooming calendar."
+    },
+    {
+      "name": "Grooming phone receptionist",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 199,
+      "monthlyMax": 399,
+      "pitchLine": "\"With a dog on the table and the dryer running, the grooming phone still gets answered and the slot still gets booked.\"",
+      "whenAndWhatItTakes": "Month 3, once they trust you. Needs the menu, policies and calendar access. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Monthly grooming membership billing",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2500,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Regular dogs on a monthly grooming membership, billed automatically, turn a busy spring and a dead January into the same income.\"",
+      "whenAndWhatItTakes": "Month 4. Needs a membership they want to sell and a payment account."
+    },
+    {
+      "name": "Review reply drafts for grooming reviews",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 49,
+      "monthlyMax": 149,
+      "pitchLine": "\"Every grooming review gets a warm reply drafted that names the dog and the cut, ready to approve from your phone between baths.\"",
+      "whenAndWhatItTakes": "Month 2, alongside the review requests. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Groomer commission and table schedule report",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"For a shop with several groomers: who groomed which dogs, commission owed and tomorrow's table plan, at the end of every day.\"",
+      "whenAndWhatItTakes": "Month 5, only for shops with staff. Needs their commission rules and calendar data."
+    },
+    {
+      "name": "Between-groom brushing reminders for long coats",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Long-coated dog owners get a short brushing reminder between visits, so the next groom is a haircut, not a shave-down.\"",
+      "whenAndWhatItTakes": "Month 3. Needs a list of long-coat regulars and the groomer's brushing tips."
+    },
+    {
+      "name": "Cut and interval match quiz for new owners",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 99,
+      "monthlyMax": 199,
+      "pitchLine": "\"New dog owners answer a few questions about coat and lifestyle, and the quiz suggests the right groom and how often from your menu.\"",
+      "whenAndWhatItTakes": "Month 5. Needs the full menu and the groomer's rules for which cut suits which coat. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Grooming incident and handling log",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Every nick, nervous moment and muzzle use is logged with a time and the owner's sign-off, so a hard day on the grooming table has a record.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their handling policy and a habit of logging at the table."
+    },
+    {
+      "name": "Shop knowledge base for new bathers",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"New bathers search the grooming shop's own cut notes, shampoo rules and handling steps instead of interrupting a groom.\"",
+      "whenAndWhatItTakes": "Month 6, for shops with staff. Needs their written notes and the owner's approval of every answer. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Shampoo and brush shelf with reorder list",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Know which grooming shampoos and brushes sell at the counter, and get a reorder list before the shelf runs empty.\"",
+      "whenAndWhatItTakes": "Month 4, only if they sell retail. Needs their product list and sales records."
+    },
+    {
+      "name": "Cancellation filler for the grooming waitlist",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 49,
+      "monthlyMax": 99,
+      "pitchLine": "\"A groom cancels, and the waitlist gets a text offering the slot to the next dog whose size and coat fit the time.\"",
+      "whenAndWhatItTakes": "Month 4. Needs calendar access and a waitlist. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the coat card and rebooking tools for groomers",
+      "whoPays": "Independent groomers, monthly per table",
+      "min": 19,
+      "max": 79,
+      "unit": "monthly",
+      "pitchLine": "\"I built dog cards and coat-timed rebooking for one grooming shop. Every solo groomer in the country keeps the same index cards.\"",
+      "whyItWorks": "The first client taught you the workflow and paid for it. Solo groomers are many, small and easy to reach in online groups."
+    },
+    {
+      "route": "Grooming van outfitters' buyer launch pack",
+      "whoPays": "The van outfitter, per van sold",
+      "min": 300,
+      "max": 900,
+      "unit": "one-time",
+      "pitchLine": "\"Every groomer who buys a van from you needs a route page and booking on day one. Bundle the grooming site with the van.\"",
+      "whyItWorks": "Outfitters sell on how fast a new owner earns back the van. A ready site is an easy line on the invoice."
+    },
+    {
+      "route": "Salon locator for a grooming supply distributor",
+      "whoPays": "The distributor",
+      "min": 5000,
+      "max": 20000,
+      "unit": "one-time",
+      "pitchLine": "\"Your grooming shop customers want more dogs. A locator on your site that sends owners to them makes yours the account they keep.\"",
+      "whyItWorks": "Distributors compete on loyalty. A tool their groomers depend on beats another discount."
+    },
+    {
+      "route": "Graduate launch kit for grooming schools",
+      "whoPays": "The school, annually",
+      "min": 1500,
+      "max": 6000,
+      "unit": "per-year",
+      "pitchLine": "\"Every grooming graduate leaves with a priced menu, a booking request and a site. It's a reason to enrol at your school.\"",
+      "whyItWorks": "Schools sell outcomes. A launch kit for each class is a recurring contract and a pipeline of future clients."
+    },
+    {
+      "route": "Professional groomers' association member toolkit",
+      "whoPays": "The association",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer every member groomer a booking-first site template and a size-and-coat price grid builder as a member benefit.\"",
+      "whyItWorks": "Associations need renewals. One deal reaches many groomers who already trust the association."
+    },
+    {
+      "route": "White-label grooming site template for agencies",
+      "whoPays": "The agency, per site",
+      "min": 400,
+      "max": 1200,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency picks up a dog groomer now and then and starts from scratch. License my grooming template with the price grid and matted-coat policy built in.\"",
+      "whyItWorks": "Agencies sell the client; you sell them the part you've already perfected."
+    },
+    {
+      "route": "Regional pet store groups with grooming in the back",
+      "whoPays": "The store group, per location",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "pitchLine": "\"Each store's grooming room needs its own booking page that routes to the right salon manager. I build it once and roll it out.\"",
+      "whyItWorks": "One contract becomes many locations on the same grooming template."
+    },
+    {
+      "route": "Vendor booking pages for pet expos and grooming contests",
+      "whoPays": "The event organiser",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"Owners at the pet expo want to book a groom on the spot. A booking page for every grooming exhibitor makes that happen.\"",
+      "whyItWorks": "Organisers sell exhibitor space on results. Bookings at the show are a result they can sell next year."
+    },
+    {
+      "route": "Grooming shops an hour outside {City}",
+      "whoPays": "New grooming clients in a new metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I keep one grooming shop per side of {City}. The groomers an hour away don't compete with you, so the same build travels.\"",
+      "whyItWorks": "Non-competing geography lets you reuse the template, the pitch and the finished grooming proof."
+    },
+    {
+      "route": "Finish half-built grooming booking setups",
+      "whoPays": "The stuck grooming shop",
+      "min": 500,
+      "max": 2000,
+      "unit": "one-time",
+      "pitchLine": "\"Someone started your grooming booking and vanished halfway. I've already run that setup for another groomer and can finish yours.\"",
+      "whyItWorks": "Stuck shop owners have already decided to buy. They need someone who has done it before."
+    },
+    {
+      "route": "Regional groomer and bather job board",
+      "whoPays": "Hiring grooming shops, annually",
+      "min": 300,
+      "max": 1200,
+      "unit": "per-year",
+      "pitchLine": "\"Every grooming shop around {City} is short a bather. A regional job board for groomers fills the posts general boards can't.\"",
+      "whyItWorks": "Hiring is a constant pain in grooming. Shops pay a small yearly fee for a board their trade actually reads."
+    },
+    {
+      "route": "Kennels and daycares adding a grooming room",
+      "whoPays": "The kennel or daycare",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "pitchLine": "\"Your kennel is adding a grooming room. A bath-before-pickup page with the price grid books it from the first week.\"",
+      "whyItWorks": "Facilities adding grooming need exactly what you built, and they already have the dogs in the building."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Grooming site build plus care plan, one contract",
+      "min": 1200,
+      "max": 2000,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"Grooming site and care plan on one contract: when your doodle price goes up, you text me and the menu changes that day.\""
+    },
+    {
+      "rung": 2,
+      "day": 14,
+      "offer": "Deposit and no-show rule for long grooms",
+      "min": 300,
+      "max": 900,
+      "unit": "one-time",
+      "trigger": "They mention a no-show on a big-dog or double-coat groom.",
+      "line": "\"That empty table on a two-hour groom is exactly what a deposit at booking stops.\""
+    },
+    {
+      "rung": 3,
+      "day": 30,
+      "offer": "Review requests and coat-timed rebooking texts",
+      "min": 49,
+      "max": 129,
+      "unit": "monthly",
+      "trigger": "The site has been live a month and the calendar shows regulars overdue for their next groom.",
+      "line": "\"Your grooming regulars already love you. Let's ask them for a review and rebook their dogs on time.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Groom-day photo session for the gallery",
+      "min": 250,
+      "max": 700,
+      "unit": "per-shoot",
+      "trigger": "The gallery still shows only a handful of finished grooms.",
+      "line": "\"One busy grooming day with a photographer fills the gallery for a season.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Grooming DM and text responder",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "trigger": "They say evenings go on answering 'how much for my dog' messages.",
+      "line": "\"Those late 'how much for my dog' messages get answered from your grooming menu while you sleep.\""
+    },
+    {
+      "rung": 6,
+      "day": 120,
+      "offer": "Mobile van route and day planner",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "trigger": "They mention adding a second van or a new town.",
+      "line": "\"A second grooming van doubles the driving. Let's plan the stops before it hits the road.\""
+    },
+    {
+      "rung": 7,
+      "day": 180,
+      "offer": "Introduction to the referring vet clinic",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "trigger": "They mention a vet front desk that sends them matted or nervous dogs.",
+      "line": "\"The vet who sends you dogs has a tired site. Would you introduce me to the practice manager?\""
+    }
+  ]
+}

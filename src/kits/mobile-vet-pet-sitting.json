@@ -1,0 +1,864 @@
+{
+  "schemaVersion": 1,
+  "category": "Mobile vet & pet sitting",
+  "slug": "mobile-vet-pet-sitting",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Pet family batch. Two buyers in one category: mobile vets (licensed, regulated) and sitters and walkers. No medical advice or outcome claims anywhere; every clinical sentence is the vet's. Licence, bonding and insurance stay as bracketed placeholders. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Meet-and-greet visit",
+      "contains": "The first visit at the owner's home, what the sitter checks (keys, alarm, feeding spot, leash, the pet's quirks), the key handoff and the signed care sheet",
+      "why": "Owners won't hand a stranger their house key without meeting them first. Booking the meet-and-greet is the real first sale."
+    },
+    {
+      "section": "Key and home security policy",
+      "contains": "How keys and door codes are stored, lockbox options, alarm codes, what happens to keys after the last visit, and who else ever has access to the home",
+      "why": "Pet sitting means letting someone into the house. Owners judge how keys are handled as closely as how the dog is walked."
+    },
+    {
+      "section": "Sample visit report and GPS walk log",
+      "contains": "What each visit report includes (food, water, potty, medication given as the owner instructed, a shot of the pet), the GPS walk route, and when owners hear from the sitter",
+      "why": "Owners away from home want proof the visit happened. A sample report on the site answers that before they ask."
+    },
+    {
+      "section": "House-call vet visit: what to expect",
+      "contains": "Which appointment types the mobile vet offers at home, what the vet brings, the space needed indoors, what is referred to a clinic or hospital, and the travel fee",
+      "why": "Owners of anxious cats, senior dogs or several pets choose a mobile vet to skip the car ride. They book once they know what can and can't happen at home."
+    },
+    {
+      "section": "End-of-life home visits",
+      "contains": "How to request an end-of-life visit, scheduling and [after-hours availability if offered], aftercare and cremation options, what the family can expect, and a quiet contact route",
+      "why": "Families search for this at the hardest moment. A calm, plain page with a gentle way to reach the vet matters more than any other page on the site."
+    },
+    {
+      "section": "Holiday and vacation sitting calendar",
+      "contains": "Peak holiday dates, overnight stays versus drop-in visits, booking deadlines, holiday surcharges and the waitlist",
+      "why": "Sitters book out over the holidays first. Owners decide on whether their dates are open and what overnights cost."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C47",
+      "siteType": "local-conversion",
+      "name": "Drop-In Visits",
+      "heroLayout": "card-stack",
+      "mood": [
+        "friendly",
+        "dependable",
+        "bright"
+      ],
+      "bestFor": "Solo pet sitters and dog walkers who need their area, visit prices and a meet-and-greet request",
+      "pairsWithTier": "starter",
+      "headlineSample": "Dog walking and pet sitting in {City}, right at home",
+      "whyItFits": "Teal and tangerine feel friendly and dependable, and stacked cards show walk and visit prices with the meet-and-greet request right underneath."
+    },
+    {
+      "id": "b",
+      "themeId": "C22",
+      "siteType": "booking-first",
+      "name": "House Call",
+      "heroLayout": "split-photo",
+      "mood": [
+        "warm",
+        "calm",
+        "trustworthy"
+      ],
+      "bestFor": "Sitting and walking businesses with several staff, and mobile vets who want owners to request visits online",
+      "pairsWithTier": "standard",
+      "headlineSample": "Pet care that comes to your home in {City}",
+      "whyItFits": "The family combo. Peach and soft rounded type feel kind and unhurried, which suits care in the owner's home, and the split hero keeps a calm pet beside the Book button."
+    },
+    {
+      "id": "c",
+      "themeId": "C8",
+      "siteType": "editorial-trust",
+      "name": "Gentle House Call",
+      "heroLayout": "type-led",
+      "mood": [
+        "quiet",
+        "steady",
+        "kind"
+      ],
+      "bestFor": "Mobile veterinary practices and end-of-life home visit services where trust and calm matter most",
+      "pairsWithTier": "premium",
+      "headlineSample": "Veterinary house calls in {City}, unhurried and at home",
+      "whyItFits": "Evergreen and a refined old-style serif feel like a careful practice, and a type-led hero keeps a sensitive service calm rather than cute."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your Maps listing for pet sitting has reviews and a phone number but no website, so an owner planning a trip can't see your visit prices or which neighbourhoods you cover.",
+      "hook": "Open their Maps listing and confirm there is no Website button. Screenshot it for when they reply.",
+      "linkLine": "What would sit behind that button for your pet sitting: {demo-link}"
+    },
+    {
+      "angle": "Facebook page only",
+      "line": "Your mobile vet practice links to a Facebook page, and the list of house-call services lives in a pinned post. Owners of a nervous cat want that on a page they can find again.",
+      "hook": "Check their website field. If it's Facebook, find where services and the area are described and note how far down it sits.",
+      "linkLine": "Your house-call services on one page: {demo-link}"
+    },
+    {
+      "angle": "Dead free host",
+      "line": "The site on your dog walking listing is an old free page with walk prices from a while back and a contact form that may not reach you. A new client who hears nothing moves on.",
+      "hook": "Open it and note one stale detail: old prices, a broken form, an area that changed. Never claim the form fails unless you tested it.",
+      "linkLine": "Same dog walking business, with a contact form that works: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "I opened your pet sitting site on my phone and the meet-and-greet form cut off halfway down. Owners look for sitters on their phone the night they book a trip.",
+      "hook": "Only if they have a site. Load it on your phone and note what breaks. Screenshot it for when they reply.",
+      "linkLine": "The pet sitting site, rebuilt for a phone: {demo-link}"
+    },
+    {
+      "angle": "Phone-only house calls",
+      "line": "Booking a house call with your mobile vet service means phoning during office hours. Owners of a senior dog who can't manage the car want to request a visit at night.",
+      "hook": "Look for 'call to schedule' on the listing and check whether any request form exists.",
+      "linkLine": "A house-call request form that works after hours: {demo-link}"
+    },
+    {
+      "angle": "Visit posts that scroll away",
+      "line": "Your posts from pet sitting visits, the cats waiting by the door and the dogs mid-walk, are the best proof of care you have, and they scroll away in days.",
+      "hook": "Find one recent visit or walk post you can describe exactly: the pet and the moment.",
+      "linkLine": "Your sitting visits on a page that stays: {demo-link}"
+    },
+    {
+      "angle": "Reviews stuck on Google",
+      "line": "A Google review says you kept their elderly cat's routine exactly while they were overseas. That's what every pet owner leaving home wants to read before handing over a key.",
+      "hook": "Copy one phrase from a review about keys, routines, updates or an older pet. Quote it back if they reply.",
+      "linkLine": "Your pet care reviews beside the booking button: {demo-link}"
+    },
+    {
+      "angle": "Holiday sitting calendar",
+      "line": "Pet sitters around {City} book out over Thanksgiving and Christmas first. A holiday calendar with a waitlist fills those overnights without a dozen text threads.",
+      "hook": "Use this from August to October, or in February for spring break. Name the holiday.",
+      "linkLine": "A holiday sitting calendar with a waitlist: {demo-link}"
+    },
+    {
+      "angle": "Last-minute trips",
+      "line": "Owners book a last-minute work trip at 10pm and need a pet sitter by morning. If your sitting service only answers by phone, they find someone who answers online.",
+      "hook": "Look for comments or posts about last-minute sits, or 'text me for availability' in the bio.",
+      "linkLine": "A sitting request that works at 10pm: {demo-link}"
+    },
+    {
+      "angle": "Hiring dog walkers",
+      "line": "Saw you're hiring dog walkers. Applicants check whether a pet sitting business looks organised and insured before they apply, and so do the owners they'll walk for.",
+      "hook": "Only if they posted a hiring notice or a 'join our team' story. Note the date.",
+      "linkLine": "A pet care site with a careers page: {demo-link}"
+    },
+    {
+      "angle": "House-call area and travel fee",
+      "line": "Your mobile vet service covers several towns, but nobody can tell whether you drive to their side of {City} or what the travel fee is before they call.",
+      "hook": "Check the listing and posts for towns served or a travel fee. If neither appears, the angle holds.",
+      "linkLine": "Your house-call area and travel fees on a map: {demo-link}"
+    },
+    {
+      "angle": "Walk packages",
+      "line": "Your weekday dog walking clients pay walk by walk. A monthly walk package on the site would lock in their schedule and steady your income through the slow weeks.",
+      "hook": "Check their prices for packages, punch cards or monthly plans. If there are none, the angle holds.",
+      "linkLine": "A monthly dog walking package page: {demo-link}"
+    },
+    {
+      "angle": "Bonded, insured, background-checked",
+      "line": "Owners handing a pet sitter their house key want to see bonding, insurance and a background check. None of that shows on your listing.",
+      "hook": "Check whether they post insurance, bonding or a background check anywhere. Never invent one; the demo uses bracketed placeholders.",
+      "linkLine": "Your bonding, insurance and key policy, shown plainly: {demo-link}"
+    },
+    {
+      "angle": "Clinic referrals only",
+      "line": "Sounds like your house-call vet work comes mostly from clinic referrals. Families who search for a mobile vet themselves should be able to find you too.",
+      "hook": "Look for 'referred by' in reviews or thank-you posts to clinics.",
+      "linkLine": "Where a family searching for a mobile vet would land: {demo-link}"
+    },
+    {
+      "angle": "A specific recent visit",
+      "line": "That {specific recent job} you posted shows how much care goes into each visit. A pet owner deciding who gets their house key wants to see exactly that.",
+      "hook": "Pick their newest visit, walk or house-call post and name it exactly: the pet and what happened. Never mention a medical detail.",
+      "linkLine": "That visit, front and centre: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, that {specific recent job} you posted shows real care.\n\nI looked for a site for {Business Name} where an owner could check your area and request a visit, and only found the social pages. I put together a sample with your visit types, a meet-and-greet or house-call request and a plain key and home policy, with marked placeholders where your photos would go.\n\nWould you like me to send it over?",
+    "dm2": "{Owner}, following up in case my message got lost between visits. Here's the sample site for {Business Name}: {demo-link}\n\nIt has your service area with travel fees, a visit request that works at night and a sample visit report so owners know what they'll hear while they're away. If it's not for you, say so and I won't message again.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for pet sitters, dog walkers and mobile vets here in {City}. I sent you a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"Easy to miss when you're on the road between homes. Short version: I built a sample site for {Business Name} with your service area, a visit request form and your key policy, with marked placeholders where your photos would go. Can I text you the link to look at tonight?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range}, then {Care Range} a month for hosting and changes. For a pet care business like yours I'd normally quote about {Build Price}.\"\n\"Can I walk you through it for ten minutes between visits this week?\"\n\nIF A VET ASKS ABOUT CLINICAL WORDING:\n\"Nothing clinical goes on the site unless you write or approve it. I handle the logistics: area, booking and what to expect.\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. We start the day it clears.\"",
+    "objections": [
+      {
+        "objection": "I'm full with regulars already.",
+        "handler": "\"Then the site is for the holidays and for choosing new clients. A waitlist and a clear meet-and-greet step mean the next key you take is from someone you want to work with.\""
+      },
+      {
+        "objection": "My clients find me on Nextdoor.",
+        "handler": "\"Nextdoor finds them. The site is where they check your area, read your key policy and request a meet-and-greet without waiting on a reply to a post.\""
+      },
+      {
+        "objection": "I'm already on a sitting app.",
+        "handler": "\"Keep it if it brings new work. The site is where your repeat clients book you directly, so the app's cut isn't taken from regulars who already know you.\""
+      },
+      {
+        "objection": "As a vet I have to be careful what I say online.",
+        "handler": "\"Agreed, and the site gives no medical advice. It covers house-call logistics, the area and how to request a visit, and every clinical sentence is yours to write or approve.\""
+      },
+      {
+        "objection": "I don't want strangers knowing I hold keys.",
+        "handler": "\"The site never lists clients or addresses. It explains your key policy in general terms, which is what makes owners comfortable handing one over.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}, because it's a service-area map, a visit request and your policies. A few weeks of regular dog walks or a handful of house calls covers it.\""
+      }
+    ],
+    "email": {
+      "subject": "Pet care site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for pet sitters, dog walkers and mobile vets around {City}. {Business Name} has warm reviews and visit posts, but no site where an owner can check your area, read how you handle keys and request a visit.\n\nI built a sample first rather than ask for your time: a service-area map with travel fees, a meet-and-greet or house-call request, a key and home security policy and a sample visit report, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and changes. If not, no problem, it comes down at the end of the month.\n\nWorth ten minutes on the phone between visits?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build websites for pet sitters and mobile vets in {City}, and I put together a sample one for {Business Name}. I'll text you the link so you can look between visits. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm taking the {Business Name} pet care demo down on Friday to free up the space.\n\nWant me to leave it up? One word is fine either way.",
+    "nurture": "Hi {Owner}, holiday travel is coming, and the pet sitters with a holiday calendar online are filling their overnights first. Thought of you.\n\nThe site is still here whenever you want it, and nothing's changed on price. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to a few weeks of visits, not one client's month. Sitters and walkers earn per visit, and the build has to match.",
+      "Mobile vet practices carry more budget than solo sitters. Quote the vet toward the top of the range and the solo walker toward the bottom.",
+      "Price the service-area map by towns and travel-fee zones, not by page count.",
+      "The meet-and-greet and key policy pages are their own line. They decide whether an owner hands over a key.",
+      "Keep monthly add-ons under the price of a week of daily walks. Anything higher gets cancelled in a quiet month.",
+      "For veterinary pages, budget review time with the vet: every clinical sentence is theirs, and nothing is written as advice."
+    ],
+    "lineItems": [
+      {
+        "item": "Service-area map with travel-fee zones",
+        "min": 200,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max with several towns, fee zones looked up by ZIP and separate areas for walks and house calls.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Meet-and-greet request with care sheet",
+        "min": 250,
+        "max": 700,
+        "unit": "one-time",
+        "description": "Max with a full care sheet (feeding, medication as instructed, vet contact, home quirks) and an e-signature.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Key and home security policy page",
+        "min": 150,
+        "max": 400,
+        "unit": "per-page",
+        "description": "Max when it covers lockboxes, alarm codes, key return and a [bonding and insurance] placeholder block.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "House-call services page for a mobile vet",
+        "min": 300,
+        "max": 800,
+        "unit": "per-page",
+        "description": "Max when it covers each visit type, space needed at home and what gets referred, all reviewed by the vet.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "End-of-life visit page with a quiet contact route",
+        "min": 300,
+        "max": 800,
+        "unit": "per-page",
+        "description": "Max with aftercare options, a separate gentle request form and after-hours wording supplied by the vet.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Holiday sitting calendar and waitlist",
+        "min": 250,
+        "max": 700,
+        "unit": "one-time",
+        "description": "Max with several peak periods, overnight versus drop-in options and a deposit step.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Spanish-language care forms and policies",
+        "min": 300,
+        "max": 800,
+        "unit": "one-time",
+        "description": "Max when the care sheet, key policy and visit request are all translated.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Walks and visits photo session",
+      "min": 200,
+      "max": 600,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Half a day following real dog walks and drop-in visits, owners' OK on file, gives the site pets that actually look cared for at home.\"",
+      "when": "Month 2, on a day with several clients who agree to their pets being featured. Never photograph house numbers or keys."
+    },
+    {
+      "name": "Google profile upkeep for the pet care business",
+      "min": 150,
+      "max": 300,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Weekly walk and visit posts and a current service area on your Google profile, so owners searching for a pet sitter nearby see you're active.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Review requests after each sitting job",
+      "min": 49,
+      "max": 129,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"The day the owner gets home, they get a short text asking how the sitting went, while they're still relieved the pets are fine.\"",
+      "when": "Day 30. The easiest second sale."
+    },
+    {
+      "name": "Holiday sitting campaign",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Overnight sitting slots over Thanksgiving and Christmas go first. Ads that start in August get each one booked with a deposit before the rush.\"",
+      "when": "Pitch in July, run August to October."
+    },
+    {
+      "name": "Summer travel and spring break sitting push",
+      "min": 150,
+      "max": 400,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Spring break sitters get booked the same night as the flights. A February ad to pet owners nearby puts your name in front of them that week.\"",
+      "when": "Pitch in January, run February to April."
+    },
+    {
+      "name": "Car magnet and walking bag artwork",
+      "min": 150,
+      "max": 500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A car magnet and a walking bag with your booking code, so the neighbours who see you on every dog walk know how to book you.\"",
+      "when": "Right after launch."
+    },
+    {
+      "name": "Referral cards for groomers and pet stores",
+      "min": 100,
+      "max": 300,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A small card with your pet sitting or house-call booking code for the groomer's counter and the pet store's checkout.\"",
+      "when": "Month 2."
+    },
+    {
+      "name": "Monthly pet care post planning",
+      "min": 150,
+      "max": 400,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"You do the walks and visits, I plan the month of posts around open slots, holiday dates and seasonal pet care reminders the vet approves.\"",
+      "when": "Month 3, if posting keeps slipping."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "The clinic that refers house calls",
+        "whoPays": "The clinic",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The clinic that sends you house calls for patients who can't travel has a site that never mentions home visits. You can introduce me.\"",
+        "whyItWorks": "Clinics and mobile vets share patients, and the mobile vet's word gets you past the practice manager."
+      },
+      {
+        "route": "The pet aftercare and cremation provider",
+        "whoPays": "The aftercare provider",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The aftercare provider you work with for end-of-life home visits needs a calm site where families can arrange memorials and pick-up.\"",
+        "whyItWorks": "Aftercare providers depend on vet referrals and need a site that treats grieving families gently."
+      },
+      {
+        "route": "The groomer who shares the sitter's clients",
+        "whoPays": "The groomer, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The groomer whose appointments you drive dogs to between walks needs a booking-first grooming site of their own.\"",
+        "whyItWorks": "Walkers and groomers share the same owners and the same calendar. The introduction is a chat at the counter."
+      },
+      {
+        "route": "Other sitters who cover holidays",
+        "whoPays": "Each sitter, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The pet sitter who takes your overflow at Christmas needs the same meet-and-greet and key policy pages.\"",
+        "whyItWorks": "Sitters trade overflow with a few peers they trust, and each has seen the site working."
+      },
+      {
+        "route": "Apartment buildings where the walker has many dogs",
+        "whoPays": "The property manager",
+        "min": 1000,
+        "max": 3000,
+        "unit": "one-time",
+        "pitchLine": "\"The building where you walk five dogs a day needs a resident pet page with its pet rules and a list of approved dog walkers.\"",
+        "whyItWorks": "Property managers want pet-owning residents happy, and the walker is already a familiar face at the front desk."
+      },
+      {
+        "route": "The boarding kennel that sends overflow",
+        "whoPays": "The kennel",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The kennel that sends you cats and senior dogs who do better at home needs a holiday boarding page of its own.\"",
+        "whyItWorks": "Kennels and sitters split the same holiday demand. Each refers what the other handles better."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Logistics phone line for the referring clinic",
+        "whoPays": "The clinic, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"The clinic that refers your house calls fields evening calls about refill pick-up and opening times. A logistics line answers those and reads out the emergency hospital number for anything urgent.\"",
+        "whyItWorks": "It never answers a medical question, which is exactly what lets a practice sign off on it."
+      },
+      {
+        "route": "Memorial page writer for the aftercare provider",
+        "whoPays": "The aftercare provider, monthly",
+        "min": 149,
+        "max": 399,
+        "unit": "monthly",
+        "pitchLine": "\"Families share a few memories of their pet, and a gentle memorial page draft comes back for them to edit and keep.\"",
+        "whyItWorks": "Aftercare providers want to offer comfort, not paperwork. A memorial page is a service families remember."
+      },
+      {
+        "route": "Overflow matcher for the sitter network",
+        "whoPays": "Each member sitter, monthly",
+        "min": 49,
+        "max": 129,
+        "unit": "monthly",
+        "pitchLine": "\"When a pet sitting request comes in for dates you're full, it goes to the trusted sitter whose area and pets fit best.\"",
+        "whyItWorks": "Every sitter turns work away at the holidays. Passing it to a trusted peer keeps the owner's goodwill."
+      },
+      {
+        "route": "Pet rule and walker finder for the condo board",
+        "whoPays": "The condo board, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"Residents ask the condo office about pet limits and who walks dogs in the building. An assistant answers from the bylaws and lists the approved dog walkers.\"",
+        "whyItWorks": "Boards field the same pet questions weekly, and the walker stays the named recommendation."
+      },
+      {
+        "route": "Reminder writer for the groomer",
+        "whoPays": "The groomer, monthly",
+        "min": 29,
+        "max": 79,
+        "unit": "monthly",
+        "pitchLine": "\"The groomer you drive dogs to sends rebooking reminders drafted from each dog's last visit, and your walk pick-up gets added to the note.\"",
+        "whyItWorks": "Groomers want full books, and the walker becomes part of every reminder."
+      },
+      {
+        "route": "Cat-friendly stay advisor for the kennel",
+        "whoPays": "The kennel",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"Owners answer a few questions about their cat or senior dog, and the kennel's site suggests a suite or an in-home sitter partner.\"",
+        "whyItWorks": "Kennels lose bookings from owners who worry about stress. Offering a sitter partner keeps them in the kennel's circle."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Arrival and departure texts for each visit",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Owners get a text when the pet sitter arrives and leaves, so nobody on a beach wonders whether the cat got fed.\"",
+      "whenAndWhatItTakes": "Day 30. Needs the visit calendar and a phone check-in habit for each sitter."
+    },
+    {
+      "name": "Holiday deposit and cancellation rule for sits",
+      "kind": "software",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Holiday pet sitting takes a deposit at booking, so a cancelled Christmas overnight doesn't cost you the clients you turned away.\"",
+      "whenAndWhatItTakes": "At build, or by August before the holidays. Needs their cancellation policy and a payment account."
+    },
+    {
+      "name": "Pet care DM and text responder",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"'Do you cover my street' and 'are you free over Thanksgiving' get answered from your real area and calendar, with the meet-and-greet link. Health questions always go to the vet.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the service area, prices and calendar access. It never answers health questions. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Client care sheets with key and alarm notes",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Feeding amounts, owner-instructed medication times, the vet's number and the alarm code stored securely per home, so any sitter covering a visit has it.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their current care sheets and a rule for who can see key and alarm details."
+    },
+    {
+      "name": "Visit reports with GPS walk logs",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Each visit ends with a report to the owner: food, water, potty, the walk route and a shot of the pet at home.\"",
+      "whenAndWhatItTakes": "Month 2. Needs a phone app habit for each walker and the owner's OK to receive texts."
+    },
+    {
+      "name": "Visit report writer from sitter notes",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"The sitter taps a few words after each visit, and a warm note for the owner comes back ready to send, in the pet sitting business's own voice.\"",
+      "whenAndWhatItTakes": "Month 3, after visit reports are running. Needs a few sample notes they like. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Walker and sitter route scheduling",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Dog walks and drop-in visits grouped by street and time window, so each walker drives less and nobody's midday walk runs late.\"",
+      "whenAndWhatItTakes": "Month 4, once there's more than one walker. Needs client addresses, visit windows and staff availability."
+    },
+    {
+      "name": "Pet care phone receptionist",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 199,
+      "monthlyMax": 399,
+      "pitchLine": "\"With a leash in one hand and keys in the other, the pet care line still gets answered: area, prices and a visit request taken, with urgent callers given the emergency hospital number.\"",
+      "whenAndWhatItTakes": "Month 4. Needs area, prices and calendar access; it gives no medical advice. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Monthly dog walking packages and billing",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2500,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Weekday dog walking billed as a monthly package, with skipped days credited, so regulars stop paying walk by walk.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the packages they want to sell and a payment account."
+    },
+    {
+      "name": "House-call recall reminders from the vet's own schedule",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"When the mobile vet's own records say a pet is due for a visit, the owner gets a reminder with a house-call request link.\"",
+      "whenAndWhatItTakes": "Month 3, mobile vets only. Needs the due dates the vet already sets; the reminder wording is the vet's."
+    },
+    {
+      "name": "House-call request summary for the vet",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"A long house-call request becomes a short note for the mobile vet: which pet, the owner's stated reason, the address, parking and access. It never suggests a diagnosis.\"",
+      "whenAndWhatItTakes": "Month 3, mobile vets only. Needs the request form live and the vet's approval of the summary format. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "House-call route and travel-fee calculator",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"The mobile vet sees the day's house calls in driving order, and owners see the travel fee for their address before they request a visit.\"",
+      "whenAndWhatItTakes": "Month 4, mobile vets only. Needs fee zones and a typical day's visit list."
+    },
+    {
+      "name": "Review reply drafts for pet care reviews",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 49,
+      "monthlyMax": 149,
+      "pitchLine": "\"Each pet sitting or house-call review gets a reply drafted that thanks the family and names their pet, with no health details, ready to approve.\"",
+      "whenAndWhatItTakes": "Month 2, alongside review requests. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Staff bonding, insurance and background check tracker",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Every walker's background check, insurance certificate and renewal date in one place, so the pet care business can show owners it's current.\"",
+      "whenAndWhatItTakes": "Month 4, once there's staff. Needs their current documents and renewal dates."
+    },
+    {
+      "name": "Next-trip sitting nudge for past clients",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Owners who used your pet sitting at spring break get a note before summer travel, so you're the first sitter they book.\"",
+      "whenAndWhatItTakes": "Month 4. Needs past sit dates from the calendar."
+    },
+    {
+      "name": "Caption writer for walk and visit posts",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Post a shot from today's dog walk, and a caption in your voice, with no address or client detail, is ready to approve.\"",
+      "whenAndWhatItTakes": "Month 3. Needs a few of their past captions. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Sitter payroll and visit-count report",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Each walker's visits, walk minutes and mileage totalled at the end of the pay period, without rebuilding it from texts.\"",
+      "whenAndWhatItTakes": "Month 5, for businesses with staff. Needs their pay rules and visit data."
+    },
+    {
+      "name": "New walker onboarding assistant",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"New dog walkers ask the business's own handbook about key rules, leash rules and what to do if a pet won't eat, instead of calling the owner mid-visit.\"",
+      "whenAndWhatItTakes": "Month 6. Needs their written procedures and the owner's approval of every answer; anything health-related says to call the client's vet. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Client portal for visit history and invoices",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Owners log in to see every pet sitting visit, report and invoice, and book the next walk without a text.\"",
+      "whenAndWhatItTakes": "Month 5. Needs visit records and invoicing in one place."
+    },
+    {
+      "name": "Last-minute sit matcher",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 49,
+      "monthlyMax": 99,
+      "pitchLine": "\"A last-minute pet sitting request goes to the staff sitter whose route, schedule and known pets fit, and the owner hears back within the evening.\"",
+      "whenAndWhatItTakes": "Month 4. Needs staff availability and client history. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise care sheets and visit reports for solo sitters",
+      "whoPays": "Solo pet sitters, monthly",
+      "min": 19,
+      "max": 69,
+      "unit": "monthly",
+      "pitchLine": "\"I built care sheets and visit reports for one pet sitting business. Every solo sitter keeps alarm codes in their notes app.\"",
+      "whyItWorks": "The first client paid for the workflow. Solo sitters are many and gather in a few online groups."
+    },
+    {
+      "route": "Pet sitting franchise territories",
+      "whoPays": "The franchise owner, per territory",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "pitchLine": "\"Franchise owners each cover a patch of town. A shared pet sitting template with a per-territory area map and meet-and-greet form gets every new sitter online fast.\"",
+      "whyItWorks": "One contract becomes many territories on the same template."
+    },
+    {
+      "route": "Professional pet sitter association member toolkit",
+      "whoPays": "The association",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer member pet sitters a ready site with the key policy, care sheet and holiday calendar built in as a member benefit.\"",
+      "whyItWorks": "Associations need renewals and practical benefits. One deal reaches many sitters who trust the association."
+    },
+    {
+      "route": "Mobile vet vehicle outfitters' launch pack",
+      "whoPays": "The outfitter, per vehicle sold",
+      "min": 500,
+      "max": 1500,
+      "unit": "one-time",
+      "pitchLine": "\"Every vet who buys a fitted-out house-call vehicle from you needs a site with a service area and a visit request on day one.\"",
+      "whyItWorks": "Outfitters sell on how fast a new mobile practice starts earning. A ready launch pack is an easy line on a big invoice."
+    },
+    {
+      "route": "Regional house-call vet networks",
+      "whoPays": "The network, annually",
+      "min": 2000,
+      "max": 6000,
+      "unit": "per-year",
+      "pitchLine": "\"Owners search for a mobile vet by town. One network site that routes each request to the right house-call vet fills every member's calendar.\"",
+      "whyItWorks": "Independent mobile vets band together for coverage and need one place owners can find them."
+    },
+    {
+      "route": "White-label pet sitter template for agencies",
+      "whoPays": "The agency, per site",
+      "min": 400,
+      "max": 1200,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency picks up a pet sitter or dog walker now and then. License my template with the key policy and meet-and-greet request built in.\"",
+      "whyItWorks": "Agencies sell the client; you sell them the part you've already built and run."
+    },
+    {
+      "route": "Pet care businesses an hour outside {City}",
+      "whoPays": "New pet care clients in a new metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I work with one pet sitting business per side of {City}. Sitters and mobile vets an hour away don't share your clients, so the build travels.\"",
+      "whyItWorks": "Non-competing geography lets you reuse the template, the pitch and the finished pet care proof."
+    },
+    {
+      "route": "Finish half-built sitter booking setups",
+      "whoPays": "The stuck sitting business",
+      "min": 500,
+      "max": 2000,
+      "unit": "one-time",
+      "pitchLine": "\"Someone started your pet sitting booking and never connected the care sheet. I've done that setup for another sitter and can finish yours.\"",
+      "whyItWorks": "Owners with a stalled setup have already decided to buy. They need someone who has done it before."
+    },
+    {
+      "route": "Apartment developers' resident pet care partner pages",
+      "whoPays": "The developer",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"Your pet-friendly buildings promise residents easy dog walking and pet care. A partner page with vetted walkers and sitters by building makes that true.\"",
+      "whyItWorks": "Developers market pet amenities and need trusted partners behind them."
+    },
+    {
+      "route": "Aftercare providers' partner vet directory",
+      "whoPays": "The aftercare provider",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Families ask your aftercare service for a vet who does home visits. A directory of partner mobile vets by area answers them gently.\"",
+      "whyItWorks": "Aftercare providers serve many vets across a region and want families pointed to trusted ones."
+    },
+    {
+      "route": "New-graduate house-call vet launch kit",
+      "whoPays": "The veterinary school's career office, annually",
+      "min": 2000,
+      "max": 6000,
+      "unit": "per-year",
+      "pitchLine": "\"Graduates starting a mobile vet practice need a service area, a house-call request and a plain what-to-expect page. A kit for each class is a career service.\"",
+      "whyItWorks": "Career offices want practical launch help for graduates, and the kit is a recurring contract."
+    },
+    {
+      "route": "Senior living communities with resident pets",
+      "whoPays": "The community",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "pitchLine": "\"Residents with pets need help with dog walks and house-call vet visits. A resident pet care page with approved providers takes it off the front desk.\"",
+      "whyItWorks": "Senior communities allow pets but can't staff their care. A trusted provider list is a real resident benefit."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Pet care site build plus care plan, one contract",
+      "min": 1500,
+      "max": 2500,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"Pet sitting site and care plan on one contract, so a new town or a holiday rate goes up the day you text me.\""
+    },
+    {
+      "rung": 2,
+      "day": 14,
+      "offer": "Holiday deposit and cancellation rule for sits",
+      "min": 300,
+      "max": 900,
+      "unit": "one-time",
+      "trigger": "They mention a holiday sit cancelled after they turned other clients away.",
+      "line": "\"That cancelled Christmas sit is exactly what a pet sitting deposit protects.\""
+    },
+    {
+      "rung": 3,
+      "day": 30,
+      "offer": "Review requests after each sitting job",
+      "min": 49,
+      "max": 129,
+      "unit": "monthly",
+      "trigger": "The site has been live a month and several sits have finished.",
+      "line": "\"Your pet sitting clients just came home to happy pets. Let's ask them to say so.\""
+    },
+    {
+      "rung": 4,
+      "day": 45,
+      "offer": "Visit reports with GPS walk logs",
+      "min": 300,
+      "max": 900,
+      "unit": "one-time",
+      "trigger": "An owner texts mid-trip asking whether a visit happened.",
+      "line": "\"A report after every visit answers 'did the dog get walked' before anyone asks.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Walker and sitter route scheduling",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "trigger": "They hire a second walker or sitter.",
+      "line": "\"Two dog walkers means two routes. Let's plan them before the midday walks start running late.\""
+    },
+    {
+      "rung": 6,
+      "day": 120,
+      "offer": "Holiday sitting campaign",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "trigger": "It's late summer and the holiday sitting calendar still has open dates.",
+      "line": "\"The holiday pet sitting dates are still open. A push now fills them with deposits.\""
+    },
+    {
+      "rung": 7,
+      "day": 180,
+      "offer": "Introduction to the clinic that refers house calls",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "trigger": "They mention a clinic that sends them house-call or sitting clients.",
+      "line": "\"The clinic that sends you pets has a site that never mentions home visits. Would you introduce me?\""
+    }
+  ]
+}

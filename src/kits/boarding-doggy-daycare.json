@@ -1,0 +1,878 @@
+{
+  "schemaVersion": 1,
+  "category": "Boarding & doggy daycare",
+  "slug": "boarding-doggy-daycare",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Pet family batch. Licensed facilities with holiday peaks, so copy leans on safety, intake and holiday dates. Licence and staffing claims stay as bracketed placeholders. No kennel-software or marketplace names. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Temperament test and first daycare day",
+      "contains": "The temperament evaluation appointment, what staff watch for, the half-day trial, playgroup placement by size and energy, and what happens when a dog isn't suited to group play",
+      "why": "Owners worry their dog won't be accepted or will be overwhelmed. A clear evaluation step is the reason they book the trial instead of waiting."
+    },
+    {
+      "section": "A day in daycare playgroup",
+      "contains": "The day hour by hour: drop-off window, group play, rest time in the suite, lunch, enrichment, pick-up window, and how playgroups are supervised [staff-to-dog ratio if supplied]",
+      "why": "Owners picture the day before they hand over the leash. A schedule turns a room full of dogs into a plan they can trust."
+    },
+    {
+      "section": "Holiday boarding calendar and minimum stays",
+      "contains": "Peak dates for Thanksgiving, Christmas, spring break and summer, minimum-night rules, early check-in and late pick-up, the holiday deposit and when the waitlist opens",
+      "why": "Holiday boarding books up early. Owners decide on whether their dates are still open and what the holiday rules are, then reserve."
+    },
+    {
+      "section": "Kennel suites and runs compared",
+      "contains": "Indoor runs, larger suites, cat condos, outdoor access, bedding, what may come from home (bed, food, toy), and which options suit seniors or bonded pairs",
+      "why": "Boarding owners compare where their dog will sleep. Sizes and pictures of each run decide which kennel gets the stay."
+    },
+    {
+      "section": "Webcams and daily report cards",
+      "contains": "Which play yards have a live camera, viewing hours, the daily report card with meals, play and potty notes, and how updates are texted during a stay",
+      "why": "Owners leaving family behind want to see the dog. A camera or a daily note is often what tips the choice between two kennels."
+    },
+    {
+      "section": "Feeding, medication and emergency plan",
+      "contains": "Feeding from home food, the medication administration fee, how doses are logged as the owner instructs, the emergency vet on file, and when owners get a call",
+      "why": "The question owners keep asking at check-in is what happens if something goes wrong. A written plan answers it before they ask."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C25",
+      "siteType": "local-conversion",
+      "name": "Drop-off Lane",
+      "heroLayout": "split-photo",
+      "mood": [
+        "sunny",
+        "busy",
+        "friendly"
+      ],
+      "bestFor": "Small daycares and home boarders who need hours, the phone and a tour request above everything",
+      "pairsWithTier": "starter",
+      "headlineSample": "Doggy daycare and boarding in {City}. Come see the play yard.",
+      "whyItFits": "A sunny palette and bold geometric headings read like a busy play yard, and the split hero puts hours, the tour request and tap-to-call first."
+    },
+    {
+      "id": "b",
+      "themeId": "C22",
+      "siteType": "booking-first",
+      "name": "Home Away",
+      "heroLayout": "card-stack",
+      "mood": [
+        "warm",
+        "reassuring",
+        "organised"
+      ],
+      "bestFor": "Established kennels and daycares that need owners to check dates, upload records and reserve stays at night",
+      "pairsWithTier": "standard",
+      "headlineSample": "Dog boarding and daycare in {City}, reserved in a minute",
+      "whyItFits": "The family combo. Warm peach and soft rounded type feel like a caring place, and stacked cards put open holiday dates and the Book button first."
+    },
+    {
+      "id": "c",
+      "themeId": "C2",
+      "siteType": "premium-brand",
+      "name": "Pet Resort",
+      "heroLayout": "full-bleed-photo",
+      "mood": [
+        "refined",
+        "spacious",
+        "quiet"
+      ],
+      "bestFor": "Pet resorts with private suites, webcams and spa or training add-ons priced like a hotel stay",
+      "pairsWithTier": "premium",
+      "headlineSample": "Private boarding suites and supervised play in {City}",
+      "whyItFits": "A private-bank palette and refined serif suit a resort priced like a hotel night, where owners buy calm and space rather than a run."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your kennel's Maps listing has a rating and a phone number but no website, so an owner planning a trip can't check boarding dates or rules before they call.",
+      "hook": "Open their Maps listing and confirm there is no Website button. Screenshot it for when they reply.",
+      "linkLine": "What would sit behind that button for the kennel: {demo-link}"
+    },
+    {
+      "angle": "Facebook page only",
+      "line": "Your boarding and daycare link goes to a Facebook page where the holiday dates sit in a post from weeks ago. An owner planning Thanksgiving travel can't find them.",
+      "hook": "Check their website field. If it's Facebook, find the newest post about holiday boarding and note its date.",
+      "linkLine": "Your boarding dates and rules on one page: {demo-link}"
+    },
+    {
+      "angle": "Dead free host",
+      "line": "The site on your daycare listing still shows last year's holiday boarding dates. An owner who reads that wonders whether the kennel is still taking dogs.",
+      "hook": "Open it and note one stale detail: old holiday dates, an old rate, a staff member who left.",
+      "linkLine": "Same daycare, with this season's dates: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "I opened your boarding site on my phone and the daycare rates were a document I had to pinch and zoom to read. Owners check kennels from their phone right after booking a flight.",
+      "hook": "Only if they have a site. Load it on your phone and note what breaks. Screenshot it for when they reply.",
+      "linkLine": "The boarding site, rebuilt for a phone: {demo-link}"
+    },
+    {
+      "angle": "Call-only reservations",
+      "line": "Reserving a boarding stay with you means calling during the drop-off rush. Owners booking a trip at night want to request their dates and hear back from the kennel in the morning.",
+      "hook": "Look for 'call to reserve' or 'message us for availability' on the listing or bio.",
+      "linkLine": "A boarding request form that works at night: {demo-link}"
+    },
+    {
+      "angle": "Play-yard posts that vanish",
+      "line": "Your play-yard videos from daycare are exactly what a nervous owner wants to see, and each one is gone from the feed in a week. A page that keeps them would book the trial day.",
+      "hook": "Find one recent play-yard post you can describe: the dogs, the game, the yard.",
+      "linkLine": "Your play yard on a page that stays put: {demo-link}"
+    },
+    {
+      "angle": "Reviews stuck on Google",
+      "line": "A review on your Google profile says a senior dog came home from boarding relaxed and fed on schedule. That's the sentence every owner leaving a dog behind is hoping to read.",
+      "hook": "Copy one phrase from a review about a first stay, a senior dog or a daily update. Quote it back if they reply.",
+      "linkLine": "Your boarding reviews beside the reserve button: {demo-link}"
+    },
+    {
+      "angle": "Holiday boarding rush",
+      "line": "Holiday boarding books up early. Kennels with an online waitlist and clear minimum stays fill their December runs without the phone ringing all day.",
+      "hook": "Use this from August to October for Thanksgiving and Christmas, or in February for spring break. Name the holiday.",
+      "linkLine": "A holiday boarding waitlist page: {demo-link}"
+    },
+    {
+      "angle": "Flights booked at night",
+      "line": "Owners book flights at 11pm and then go looking for a kennel. If your daycare can't take a boarding request at that hour, they reserve the place that can.",
+      "hook": "Look for comments like 'do you have room that week' under their posts, or late replies to boarding questions.",
+      "linkLine": "A boarding page that takes requests overnight: {demo-link}"
+    },
+    {
+      "angle": "Hiring kennel attendants",
+      "line": "Saw you're hiring kennel attendants and playgroup staff. Applicants who love dogs check whether a daycare looks safe and well run before they apply.",
+      "hook": "Only if they posted a hiring notice or a 'join our pack' story. Note the date.",
+      "linkLine": "A daycare site with a careers page: {demo-link}"
+    },
+    {
+      "angle": "Pet taxi and drive time",
+      "line": "Owners across {City} can't tell whether your daycare offers pick-up or how far you are from their commute. A pick-up zone page would answer that before they ask.",
+      "hook": "Check whether they mention pick-up, a pet taxi or towns served anywhere on their profile.",
+      "linkLine": "Your daycare pick-up zones on a map: {demo-link}"
+    },
+    {
+      "angle": "Daycare packages",
+      "line": "Daycare regulars who come three days a week are paying day by day. Prepaid daycare packages would lock in their week and steady your cash between holidays.",
+      "hook": "Check their rates for packages, punch cards or monthly passes. If there are none, the angle holds.",
+      "linkLine": "A daycare package page: {demo-link}"
+    },
+    {
+      "angle": "Licence and overnight staffing",
+      "line": "Owners leaving a dog for a week want to see the kennel licence, the insurance and whether someone is on site overnight. None of that shows on your boarding listing.",
+      "hook": "Check whether they post a kennel licence, insurance or overnight staffing anywhere. Never invent one; the demo uses a bracketed placeholder.",
+      "linkLine": "Your licence, insurance and overnight care, shown plainly: {demo-link}"
+    },
+    {
+      "angle": "Dog-park word of mouth",
+      "line": "Sounds like most of your daycare dogs come from word of mouth at the dog park. When a regular moves, the new neighbour searching for boarding finds whoever has a site.",
+      "hook": "Look for 'thanks for the referral' posts or reviews that say a friend recommended them.",
+      "linkLine": "Where a new daycare family would land: {demo-link}"
+    },
+    {
+      "angle": "A specific recent play day",
+      "line": "That {specific recent job} looked like a great day in the play yard. Moments like that are what an owner wants to see before their dog's first daycare visit.",
+      "hook": "Pick their newest play-yard or boarding post and name it: the dogs, the activity, the occasion.",
+      "linkLine": "That daycare day, front and centre: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, that {specific recent job} in the play yard made me smile.\n\nI looked for a site for {Business Name} where an owner could check boarding dates and daycare rules, and only found the social pages. I put together a sample with your holiday calendar, a temperament-test request and a boarding request form, with marked placeholders where your photos would go.\n\nWould you like me to send it over?",
+    "dm2": "{Owner}, following up in case my message got lost between drop-offs. Here's the sample boarding and daycare site for {Business Name}: {demo-link}\n\nIt has a holiday boarding calendar with minimum stays, a first-day-of-daycare page and a request form that works at night. If it's not for you, say so and I won't message again.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for dog boarding and daycare facilities here in {City}. I sent you a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"Easy to miss at pick-up time. Short version: I built a sample site for {Business Name} with your holiday boarding dates, a temperament-test request and an intake form for vaccination records, with marked placeholders where your photos would go. Can I email you the link to look at after close?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range}, then {Care Range} a month for hosting and date changes. For a kennel like yours I'd normally quote about {Build Price}.\"\n\"Can I walk you through it for ten minutes during your midday quiet time this week?\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. We start the day it clears, and you'll have the holiday page up before the rush.\"",
+    "objections": [
+      {
+        "objection": "We're full every holiday anyway.",
+        "handler": "\"Then the site is for the rest of the year and for choosing who gets holiday runs. A waitlist with deposits beats a list on a notepad by the phone.\""
+      },
+      {
+        "objection": "We already have kennel software for reservations.",
+        "handler": "\"Keep it. The site sits in front of it, explains your temperament test and holiday rules, and sends owners into your system ready to book.\""
+      },
+      {
+        "objection": "Our dogs all come from word of mouth.",
+        "handler": "\"Word of mouth sends them to search your name. The site is what they find, and it's where they check your boarding rules before they trust you with a week.\""
+      },
+      {
+        "objection": "We don't post rates, add-ons change everything.",
+        "handler": "\"Post the nightly boarding and daily daycare rates, then list add-ons separately. Owners comparing kennels want the base number before they call.\""
+      },
+      {
+        "objection": "I don't have time to write all this.",
+        "handler": "\"I write it from one phone call and your current intake forms. You correct it; you don't draft it.\""
+      },
+      {
+        "objection": "Our state inspector is particular about what we say.",
+        "handler": "\"Good. Nothing about your licence, staffing or ratios goes up unless you supply it. The demo uses bracketed placeholders for every one of them.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For your facility about {Build Price}, because it's a holiday calendar, an intake form and a temperament-test request. A few holiday boarding stays cover it.\""
+      }
+    ],
+    "email": {
+      "subject": "Boarding and daycare site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for dog boarding and daycare facilities around {City}. {Business Name} has happy play-yard posts on its social pages, but no site where an owner can check holiday boarding dates, read your rules and request a stay.\n\nI built a sample first rather than ask for your time: a holiday boarding calendar with minimum stays, a temperament-test request, a day-in-playgroup page and an intake form for vaccination records, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and date changes. If not, no problem, it comes down at the end of the month.\n\nWorth ten minutes on the phone during your midday quiet time?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build websites for dog boarding and daycare in {City}, and I put together a sample one for {Business Name} with your holiday dates on it. I'll email you the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm taking the {Business Name} boarding demo down on Friday to free up the space.\n\nWant me to leave it up for the holiday season? One word is fine either way.",
+    "nurture": "Hi {Owner}, owners are starting to plan holiday travel, and the kennels with an online waitlist are filling their December runs first. Thought of you.\n\nThe site is still here whenever you want it, and nothing's changed on price. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to a few nights of a full kennel, not one dog's stay. Facilities have bigger rooms and bigger budgets than solo pet businesses.",
+      "Price the intake flow on its own: record upload, temperament questions and feeding notes are where the build time goes.",
+      "Holiday waitlist and deposit pages earn their own line and sell best in late summer, before the rush.",
+      "Price webcam pages by the number of yards and cameras, not by page count.",
+      "Keep monthly add-ons under one dog's week of daycare. Above that, the owner weighs it against staff hours.",
+      "Licensed facilities get bracketed placeholders, never invented licence numbers. Budget time to drop in their real documents."
+    ],
+    "lineItems": [
+      {
+        "item": "Temperament test request and trial-day booking",
+        "min": 300,
+        "max": 800,
+        "unit": "one-time",
+        "description": "Max with a behaviour questionnaire, record upload and a choice of trial half-days.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Holiday boarding waitlist with minimum-stay rules",
+        "min": 300,
+        "max": 900,
+        "unit": "one-time",
+        "description": "Max with several peak periods, a deposit step and an automatic offer when a run opens.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Kennel suite and run comparison page",
+        "min": 150,
+        "max": 450,
+        "unit": "per-page",
+        "description": "Max with sizes, outdoor access, cat condos and a separate page for each suite type.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Webcam viewing page",
+        "min": 250,
+        "max": 800,
+        "unit": "one-time",
+        "description": "Max with several play yards, viewing hours and a login limited to current guests.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Day-in-playgroup schedule page",
+        "min": 150,
+        "max": 400,
+        "unit": "per-page",
+        "description": "Max with separate schedules for small, large and senior playgroups.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Pet taxi pick-up zone map",
+        "min": 200,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max with several zones, pick-up windows and a fee looked up by ZIP.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Spanish-language boarding forms and policies",
+        "min": 300,
+        "max": 800,
+        "unit": "one-time",
+        "description": "Max when the intake form, holiday rules and feeding instructions are all translated.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Play-yard video and photo day",
+      "min": 300,
+      "max": 900,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"One morning filming daycare playgroups and the boarding suites, owners' OK on file, gives the site real footage and a season of posts.\"",
+      "when": "Month 2, on a busy weekday with owners who agree to their dogs being featured."
+    },
+    {
+      "name": "Google profile upkeep for the kennel",
+      "min": 150,
+      "max": 300,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Weekly play-yard posts and current holiday boarding hours on your Google profile, so owners searching for a kennel see you're open and busy.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Review requests after each boarding stay",
+      "min": 49,
+      "max": 149,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"The day after pick-up, owners get a short text asking how the stay went, while the relief of a happy dog at home is fresh.\"",
+      "when": "Day 30. The easiest second sale."
+    },
+    {
+      "name": "Holiday boarding ad push",
+      "min": 200,
+      "max": 600,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A late-summer push to owners near the kennel fills Thanksgiving and Christmas runs early, with deposits taken.\"",
+      "when": "Pitch in July, run August to October."
+    },
+    {
+      "name": "Spring break and summer travel campaign",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Families plan spring break and summer trips months ahead. A boarding push in February catches them while they're booking flights.\"",
+      "when": "Pitch in January, run February to April."
+    },
+    {
+      "name": "Weekday daycare fill campaign",
+      "min": 150,
+      "max": 400,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Mondays and Fridays are thin in daycare. A local push to remote workers with a first-week daycare offer fills them.\"",
+      "when": "Month 3, once the calendar shows which weekdays run light."
+    },
+    {
+      "name": "Facility sign and yard banner artwork",
+      "min": 250,
+      "max": 800,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A road sign and a play-yard banner with the daycare booking code, so every car passing at drop-off time knows where to look.\"",
+      "when": "Right after launch."
+    },
+    {
+      "name": "Monthly kennel post planning",
+      "min": 150,
+      "max": 400,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"You run the kennel, I plan the month of daycare posts around open dates, birthdays in playgroup and holiday reminders.\"",
+      "when": "Month 3, if posting keeps slipping."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "The vet clinic down the road from the kennel",
+        "whoPays": "The clinic",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The vet that updates your boarders' vaccines before every holiday has a site that hasn't changed in years. You can introduce me.\"",
+        "whyItWorks": "Kennels and vets swap paperwork and referrals every week. The kennel owner's word reaches the practice manager."
+      },
+      {
+        "route": "The groomer working inside the facility",
+        "whoPays": "The groomer, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The groomer who bathes your boarding dogs before pick-up needs their own booking page, linked from the kennel site.\"",
+        "whyItWorks": "In-house groomers often run their own business. They've watched the kennel site work all week."
+      },
+      {
+        "route": "The trainer who runs classes in the play yard",
+        "whoPays": "The trainer, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The trainer renting your play yard for evening classes needs a class schedule and sign-up page of their own.\"",
+        "whyItWorks": "Trainers who rent space share the kennel's clients and see its site every time they teach."
+      },
+      {
+        "route": "The rescue that boards foster dogs here",
+        "whoPays": "The rescue, at a reduced rate or a sponsor's",
+        "min": 500,
+        "max": 1500,
+        "unit": "one-time",
+        "pitchLine": "\"The rescue whose fosters stay in your kennel between homes needs an adoptable-dog page and a foster sign-up.\"",
+        "whyItWorks": "Rescues trust the kennel that houses their dogs, and a sponsor often covers the build."
+      },
+      {
+        "route": "The pet food store that shares daycare families",
+        "whoPays": "The store",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The pet food store your daycare families shop at needs a page for local delivery and the boarding-stay food bundle you both promote.\"",
+        "whyItWorks": "The store and the kennel trade flyers already. A shared bundle gives both of them a reason to buy."
+      },
+      {
+        "route": "Apartment complexes that recommend the daycare",
+        "whoPays": "The property manager",
+        "min": 1000,
+        "max": 3000,
+        "unit": "one-time",
+        "pitchLine": "\"The apartment complex that hands new residents your daycare flyer needs a pet amenities page with its pet rules and partner discounts.\"",
+        "whyItWorks": "Pet-friendly buildings compete for renters with dogs. The kennel's introduction comes with a partner discount already agreed."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "After-hours call helper for the nearby vet",
+        "whoPays": "The clinic, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"The vet near your kennel gets evening calls about hours and record requests. A helper handles those and gives every urgent caller the emergency clinic's number.\"",
+        "whyItWorks": "It stays out of medical answers entirely, which is what makes a practice comfortable buying it."
+      },
+      {
+        "route": "Foster sign-up assistant for the rescue",
+        "whoPays": "The rescue or its sponsor",
+        "min": 500,
+        "max": 1500,
+        "unit": "one-time",
+        "pitchLine": "\"Would-be fosters answer a few questions about their home, and the rescue gets a tidy summary instead of a pile of messages, with kennel overflow dates noted.\"",
+        "whyItWorks": "Foster recruiting is the rescue's bottleneck, and the kennel benefits when fosters move dogs on."
+      },
+      {
+        "route": "Class waitlist assistant for the visiting trainer",
+        "whoPays": "The trainer, monthly",
+        "min": 49,
+        "max": 129,
+        "unit": "monthly",
+        "pitchLine": "\"Owners asking about the next puppy class in the kennel's play yard get dates, prices and a waitlist spot at any hour.\"",
+        "whyItWorks": "Trainers answer the same class questions all week. A small monthly fee buys their evenings back."
+      },
+      {
+        "route": "Resident pet FAQ for the apartment complex",
+        "whoPays": "The property manager, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"Residents ask about breed rules, pet rent and the nearest doggy daycare. An assistant answers from the lease and sends them to the kennel partner.\"",
+        "whyItWorks": "Leasing offices field pet questions daily, and the kennel stays the named partner in every answer."
+      },
+      {
+        "route": "Food finder for the pet food store",
+        "whoPays": "The store",
+        "min": 1000,
+        "max": 3000,
+        "unit": "one-time",
+        "pitchLine": "\"Shoppers describe their dog's size and what it eats now, and the store's site suggests foods it actually stocks, plus the boarding-stay bundle.\"",
+        "whyItWorks": "It turns advice the counter staff give daily into online orders, and keeps the kennel's bundle in view."
+      },
+      {
+        "route": "Missed-call text-back for the in-house groomer",
+        "whoPays": "The groomer, monthly",
+        "min": 49,
+        "max": 129,
+        "unit": "monthly",
+        "pitchLine": "\"The groomer inside your kennel misses calls with a dog in the tub. A text-back answers the price question and offers a slot.\"",
+        "whyItWorks": "Every solo groomer has the same missed-call problem, and they've seen yours handled."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Vaccination expiry reminders before a stay",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Owners with a boarding reservation get a reminder when a vaccine record will lapse before check-in, so nobody gets turned away at the kennel door.\"",
+      "whenAndWhatItTakes": "Day 30. Needs their vaccine rules and the record dates already on file."
+    },
+    {
+      "name": "Holiday deposit and cancellation rule",
+      "kind": "software",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Holiday boarding takes a deposit at reservation, and a late cancellation releases the run to the waitlist instead of leaving it empty.\"",
+      "whenAndWhatItTakes": "At build, or by August before the holidays. Needs their cancellation policy and a payment account."
+    },
+    {
+      "name": "Boarding availability responder for DMs and texts",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"'Do you have room the week before Christmas' gets an answer from the real boarding calendar, with the request form and the vaccine rules attached as a link.\"",
+      "whenAndWhatItTakes": "Month 2. Needs read access to the reservation calendar and their written rules. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Online intake packet with record upload",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Feeding notes, emergency contacts, vaccine records and the signed boarding agreement arrive before the dog does, not on a clipboard at the counter.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their current paper forms and boarding agreement wording."
+    },
+    {
+      "name": "Daily report card texts with play-yard shots",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Each boarding dog's owner gets an evening text with meals eaten, playgroup notes and a shot from the yard. It's the message that makes them book again.\"",
+      "whenAndWhatItTakes": "Month 2. Needs a staff tablet in the yard and a five-minute end-of-day habit."
+    },
+    {
+      "name": "Report card writer from staff notes",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"Kennel staff tap a few words per dog, and a warm daily report card comes back ready to send, in the facility's voice.\"",
+      "whenAndWhatItTakes": "Month 3, after the report card texts are running. Needs a few sample cards they like. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Kennel occupancy and run assignment board",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 49,
+      "monthlyMax": 149,
+      "pitchLine": "\"Every run, suite and cat condo on one screen with who's in it, who's leaving today and which boarding dogs can't share a wall.\"",
+      "whenAndWhatItTakes": "Month 4, for facilities still running a whiteboard. Needs their run list and current reservations."
+    },
+    {
+      "name": "Kennel phone receptionist",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 199,
+      "monthlyMax": 449,
+      "pitchLine": "\"During the drop-off rush the kennel phone still gets answered: open dates, rates and vaccine rules, with a boarding request taken.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their rates, rules and calendar access. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Daycare package and membership billing",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2500,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Ten-day daycare packs and monthly memberships billed automatically, with each dog's remaining days shown at check-in.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the packages they want to sell and a payment account."
+    },
+    {
+      "name": "Next-trip boarding nudge",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Owners who boarded over spring break get a note before summer travel season, so the kennel is the first place they reserve.\"",
+      "whenAndWhatItTakes": "Month 4. Needs past stay dates from the reservation system."
+    },
+    {
+      "name": "Temperament evaluation summary writer",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Staff notes from the temperament test become a kind, clear summary for the owner: which daycare playgroup fits and what to expect on day one.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their evaluation checklist and approval of every summary before it sends. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Feeding and medication log with staff sign-off",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Every boarding dog's meals and owner-instructed doses logged with a time and a staff initial, so the record is there if an owner asks.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their medication policy and the owner instruction form. It records what owners instruct and never suggests doses."
+    },
+    {
+      "name": "Holiday waitlist matcher",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"When a holiday boarding run opens, the waitlist dog whose dates, size and playgroup fit best gets the offer first.\"",
+      "whenAndWhatItTakes": "Month 5, before the holidays. Needs the waitlist, run sizes and their priority rules. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Kennel staff shift and playgroup rota",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Shifts planned against tomorrow's daycare head count, so each playgroup has its attendant and nobody is short at the overnight check.\"",
+      "whenAndWhatItTakes": "Month 5, for facilities with several staff. Needs their staffing rules and the reservation data."
+    },
+    {
+      "name": "Quiet-weekday daycare fill texts",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"When Friday daycare looks thin on Wednesday, regulars get a text offering an extra play day.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the daycare calendar and a list of regulars who opted in to texts."
+    },
+    {
+      "name": "Review reply drafts for boarding stays",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 49,
+      "monthlyMax": 149,
+      "pitchLine": "\"Each boarding review gets a reply drafted that thanks the family and names their dog, ready for the kennel manager to approve.\"",
+      "whenAndWhatItTakes": "Month 2, alongside the review requests. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Incident report and owner call log",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"A scuffle in playgroup gets logged with the time, the dogs, what staff did and when the owner was called, so the daycare has a record.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their incident policy and a staff habit of logging the same day."
+    },
+    {
+      "name": "Staff handbook assistant for kennel attendants",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"New kennel attendants ask the facility's own handbook about playgroup rules, cleaning steps and check-in, instead of stopping a manager.\"",
+      "whenAndWhatItTakes": "Month 6. Needs their written procedures and the owner's approval of every answer. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Check-out add-ons for baths and extra play",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Owners add a going-home bath, extra play time or a treat bag to the boarding stay when they reserve, not at the counter.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their add-on list and prices."
+    },
+    {
+      "name": "Caption writer for play-yard posts",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Post the daycare clip, and a caption naming the playgroup and the dogs, with owners' OK, is ready to approve.\"",
+      "whenAndWhatItTakes": "Month 3. Needs a few of their past captions to learn the voice. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the intake packet and run board for small kennels",
+      "whoPays": "Small kennels and daycares, monthly",
+      "min": 49,
+      "max": 149,
+      "unit": "monthly",
+      "pitchLine": "\"I built an intake packet and a run board for one kennel. Every small boarding facility is still on clipboards and a whiteboard.\"",
+      "whyItWorks": "The first client paid for the workflow. Small kennels are easy to find and share the same paperwork pain."
+    },
+    {
+      "route": "Pet resort franchise and multi-site groups",
+      "whoPays": "The group, per location",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "pitchLine": "\"Each pet resort location needs its own holiday boarding calendar and tour request, routed to the right manager. I build it once and roll it out.\"",
+      "whyItWorks": "One contract becomes many locations on the same boarding template."
+    },
+    {
+      "route": "Boarding and kennel association member toolkit",
+      "whoPays": "The association",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer member kennels a ready boarding site with the intake form and holiday waitlist as a member benefit.\"",
+      "whyItWorks": "Associations need renewals and practical benefits. One deal reaches many facility owners."
+    },
+    {
+      "route": "Play-yard turf and kennel run suppliers' buyer pack",
+      "whoPays": "The supplier, per new facility",
+      "min": 500,
+      "max": 1500,
+      "unit": "one-time",
+      "pitchLine": "\"Every new daycare that buys your kennel runs and play-yard turf needs a site before opening day. Bundle it into the order.\"",
+      "whyItWorks": "Suppliers sell to new facilities that have no site yet. A ready launch pack is an easy line on a big invoice."
+    },
+    {
+      "route": "White-label daycare template for agencies",
+      "whoPays": "The agency, per site",
+      "min": 500,
+      "max": 1500,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency lands a doggy daycare and starts from a blank page. License my template with the temperament test and holiday calendar built in.\"",
+      "whyItWorks": "Agencies sell the client; you sell them the part you've already built and run."
+    },
+    {
+      "route": "Corporate campuses with on-site doggy daycare",
+      "whoPays": "The employer's facilities team",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Employees bring dogs to the campus daycare and need to reserve days, upload records and see the rules. I've built that for a kennel already.\"",
+      "whyItWorks": "Dog-friendly employers run daycare as a perk and need it to look professional to staff."
+    },
+    {
+      "route": "Animal hospitals with a boarding wing",
+      "whoPays": "The hospital, per location",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "pitchLine": "\"Your hospital boards dogs, but the boarding wing has no page of its own for dates and rules. I build that part and nothing clinical.\"",
+      "whyItWorks": "Hospitals treat boarding as a side line and rarely market it. A separate, non-clinical page is easy for them to approve."
+    },
+    {
+      "route": "Daycares an hour outside {City}",
+      "whoPays": "New kennel clients in a new metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I keep one boarding kennel per side of {City}. Daycares in the next metro don't compete with you, so the same build travels there.\"",
+      "whyItWorks": "Non-competing geography lets you reuse the template, the pitch and the finished kennel proof."
+    },
+    {
+      "route": "Holiday overflow network between partner kennels",
+      "whoPays": "Each member kennel, monthly",
+      "min": 29,
+      "max": 79,
+      "unit": "monthly",
+      "pitchLine": "\"When your kennel is full at Christmas, the overflow goes to a trusted partner instead of a stranger, and they return the favour in spring.\"",
+      "whyItWorks": "Every kennel turns dogs away at peak. A shared overflow list keeps those families with a trusted facility."
+    },
+    {
+      "route": "Pet relocation and moving companies",
+      "whoPays": "The relocation company",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "pitchLine": "\"Families moving cities need boarding for the dog during the move. A partner page listing vetted kennels by city makes your service easier to sell.\"",
+      "whyItWorks": "Relocation firms need trusted boarding at both ends of a move and pay to look organised."
+    },
+    {
+      "route": "Rebuild half-finished daycare websites",
+      "whoPays": "The stuck daycare",
+      "min": 500,
+      "max": 2000,
+      "unit": "one-time",
+      "pitchLine": "\"Someone started your daycare site and stopped before the boarding forms worked. I've built those forms for another kennel and can finish yours.\"",
+      "whyItWorks": "Owners with a half-built site have already decided to buy. They need someone who has done it before."
+    },
+    {
+      "route": "Dog-friendly apartment developers' amenity daycare",
+      "whoPays": "The developer",
+      "min": 2000,
+      "max": 8000,
+      "unit": "one-time",
+      "pitchLine": "\"Your new building has a dog run and a daycare room. Residents need to reserve it and upload records, the same way they would at a kennel.\"",
+      "whyItWorks": "Developers sell pet amenities to renters and need them to work from day one."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Boarding site build plus care plan, one contract",
+      "min": 2000,
+      "max": 3200,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"Kennel site and care plan on one contract, so new holiday boarding dates go up the day you text them to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 14,
+      "offer": "Holiday deposit and cancellation rule",
+      "min": 300,
+      "max": 900,
+      "unit": "one-time",
+      "trigger": "They mention a holiday no-show or a late cancellation that left a run empty.",
+      "line": "\"That empty run at Christmas is exactly what a holiday boarding deposit stops.\""
+    },
+    {
+      "rung": 3,
+      "day": 30,
+      "offer": "Review requests after each boarding stay",
+      "min": 49,
+      "max": 149,
+      "unit": "monthly",
+      "trigger": "The site has been live a month and the first boarders have gone home.",
+      "line": "\"Your boarding families just got their dogs back happy. Let's ask them to say so where other owners look.\""
+    },
+    {
+      "rung": 4,
+      "day": 45,
+      "offer": "Online intake packet with record upload",
+      "min": 1000,
+      "max": 2500,
+      "unit": "one-time",
+      "trigger": "They complain about chasing vaccine records at the check-in counter.",
+      "line": "\"Records, feeding notes and the boarding agreement can arrive before the dog does.\""
+    },
+    {
+      "rung": 5,
+      "day": 75,
+      "offer": "Daily report card texts with play-yard shots",
+      "min": 300,
+      "max": 900,
+      "unit": "one-time",
+      "trigger": "Owners keep texting staff for updates during stays.",
+      "line": "\"One evening text per boarding dog answers every 'how is she doing' before it's asked.\""
+    },
+    {
+      "rung": 6,
+      "day": 120,
+      "offer": "Holiday boarding ad push",
+      "min": 200,
+      "max": 600,
+      "unit": "one-time",
+      "trigger": "It's late summer and the holiday calendar still shows open runs.",
+      "line": "\"The holiday boarding runs are still open. A push now fills them with deposits.\""
+    },
+    {
+      "rung": 7,
+      "day": 180,
+      "offer": "Kennel phone receptionist",
+      "min": 1000,
+      "max": 2500,
+      "unit": "one-time",
+      "trigger": "They say the phone rings through every drop-off and pick-up window.",
+      "line": "\"The kennel phone can answer itself during drop-off, with your real dates and rules.\""
+    },
+    {
+      "rung": 8,
+      "day": 240,
+      "offer": "Introduction to the vet clinic down the road",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "trigger": "They mention the vet who updates their boarders' vaccines before the holidays.",
+      "line": "\"The vet that keeps your boarders' records current has an old site. Would you introduce me?\""
+    }
+  ]
+}
