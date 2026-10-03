@@ -1,0 +1,857 @@
+{
+  "schemaVersion": 1,
+  "category": "Immigration & document services",
+  "slug": "immigration-document-services",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Pro family batch. These are non-attorney document services: copy never implies legal services, never promises an approval or a timeline from any agency, and every build carries a not-a-law-firm notice. Registration and bond details are bracketed placeholders. Spanish version treated as core."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Not a law firm notice, in every language",
+      "contains": "A plain statement that the business is not a law firm, cannot give legal advice or choose immigration forms, the [state registration or bond number] where required, and how to find a licensed attorney or accredited representative",
+      "why": "Many states require it, and families who have been hurt by notario fraud look for this honesty before anything else on the page."
+    },
+    {
+      "section": "Certified translation price list by document",
+      "contains": "Birth and marriage certificates, diplomas, transcripts, bank letters and police records, priced per page or per document, with the certification statement, turnaround and rush options",
+      "why": "Translation buyers compare by document and deadline. A per-document price list answers both and stops the 'how much for my birth certificate' call."
+    },
+    {
+      "section": "Apostille and consular legalization steps",
+      "contains": "Which countries accept an apostille and which need embassy legalization, state versus federal documents, the order of steps, turnaround and mail-in instructions",
+      "why": "People sending documents abroad are confused and on a deadline. A clear sequence makes this office the one that sorts it out."
+    },
+    {
+      "section": "What we can and cannot do",
+      "contains": "Typing forms at the client's direction, translation, copies, notarization, passport photos and mailing, set beside what only an attorney may do: advice, choosing forms and representation",
+      "why": "It protects the business and the client, and it reads as integrity to someone who has heard bad stories about document preparers."
+    },
+    {
+      "section": "Written contract, receipts and original documents",
+      "contains": "A written contract before any service, itemised fees, receipts for every payment, originals returned the same day, and the refund terms required by [state document preparer rules]",
+      "why": "Trust is the whole sale. Showing the paperwork habits up front separates a careful document office from the storefronts people warn each other about."
+    },
+    {
+      "section": "Languages spoken and staff who speak them",
+      "contains": "Each language offered, which staff member speaks it, translation language pairs, and a Spanish version of every page",
+      "why": "Clients pick the document office where they can explain their situation in their own language. Naming the person who speaks it builds that trust."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C47",
+      "siteType": "local-conversion",
+      "name": "Open Door Office",
+      "heroLayout": "split-photo",
+      "mood": [
+        "welcoming",
+        "plain",
+        "bilingual"
+      ],
+      "bestFor": "Single storefront document offices whose clients walk in or call, needing hours, languages and the price list on a phone",
+      "pairsWithTier": "starter",
+      "headlineSample": "Translation and document help in {City}, en español",
+      "whyItFits": "Teal and tangerine with a humanist type feel friendly and community-based. Hours, languages, the not-a-law-firm notice and the call button lead."
+    },
+    {
+      "id": "b",
+      "themeId": "C2",
+      "siteType": "booking-first",
+      "name": "Careful Hands",
+      "heroLayout": "split-photo",
+      "mood": [
+        "discreet",
+        "careful",
+        "steady"
+      ],
+      "bestFor": "Established document offices booking appointments for form typing, translation and apostilles, with a written contract at every visit",
+      "pairsWithTier": "standard",
+      "headlineSample": "Document preparation and certified translation in {City}",
+      "whyItFits": "The family's Private Vault combo. Warm cream and an old-style serif look official and private, which is what a family bringing passports and birth certificates needs."
+    },
+    {
+      "id": "c",
+      "themeId": "C1",
+      "siteType": "catalog",
+      "name": "Document Desk",
+      "heroLayout": "card-stack",
+      "mood": [
+        "exact",
+        "efficient",
+        "transparent"
+      ],
+      "bestFor": "Offices doing mail-in certified translation and apostille work across the state, priced per document with upload and order tracking",
+      "pairsWithTier": "premium",
+      "headlineSample": "Certified translations and apostilles, ordered online from {City}",
+      "whyItFits": "Indigo and a clean grotesque turn a price list into a catalog. Mail-in clients choose a document, upload it and pay, with no visit needed."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your Google listing shows the office hours but no website, so someone who needs a birth certificate translated can't see your prices or languages before they come in.",
+      "hook": "Open their Maps listing and confirm there's no Website button. Screenshot it for when they reply.",
+      "linkLine": "Here's what could sit behind that button for a document office: {demo-link}"
+    },
+    {
+      "angle": "Facebook-only link",
+      "line": "The website on your listing opens a Facebook page. A family choosing a document office wants your translation prices, your contract policy and who speaks Spanish, not a feed.",
+      "hook": "Tap their Website link and confirm it lands on Facebook. Note the latest service they posted about.",
+      "linkLine": "A document services page built for families, not the feed: {demo-link}"
+    },
+    {
+      "angle": "Storefront sign, no site",
+      "line": "Your storefront sign lists translations, apostilles and copies, but none of that exists online. People search before they walk in, especially for something as personal as their documents.",
+      "hook": "Check their street view or a storefront post for the sign. Note the services written on it.",
+      "linkLine": "Your storefront services, online in two languages: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "I opened your document services site on my phone and the Spanish link went nowhere. Most clients look you up on a phone, often in their first language.",
+      "hook": "Only if they have a site. Load it on your phone, try the language switch and note what breaks. Screenshot it for when they reply.",
+      "linkLine": "Your document office site rebuilt for a phone, in both languages: {demo-link}"
+    },
+    {
+      "angle": "No translation prices",
+      "line": "Nothing on your profile says what a certified translation costs per page or how long it takes. That's the first thing someone with a university deadline asks.",
+      "hook": "Check every profile for translation prices. If there are none, the angle holds.",
+      "linkLine": "A certified translation price list by document: {demo-link}"
+    },
+    {
+      "angle": "Reviews about honesty",
+      "line": "Your reviews mention an office that explained clearly what it could and couldn't do and returned every original document. That honesty is rare, and it never reaches anyone off your listing.",
+      "hook": "Read their reviews and copy one phrase about honesty, clear prices or care with documents. Quote it back if they reply.",
+      "linkLine": "Those reviews next to your document services: {demo-link}"
+    },
+    {
+      "angle": "Admissions season",
+      "line": "Spring is when students need diplomas and transcripts translated and apostilled for applications abroad. A page that lists those documents with turnaround times catches them before the deadline.",
+      "hook": "Use this from January to May. Check whether they translate academic documents.",
+      "linkLine": "A transcript and diploma translation page for {Business Name}: {demo-link}"
+    },
+    {
+      "angle": "Messages after closing",
+      "line": "Clients send questions about apostilles and translations after work, when your office is closed. A page with the answers and an upload form would turn those messages into orders.",
+      "hook": "Call or message after hours. If nothing answers or a generic reply comes back, the angle holds.",
+      "linkLine": "An after-hours document request form: {demo-link}"
+    },
+    {
+      "angle": "Hiring bilingual staff",
+      "line": "Saw you're hiring a bilingual assistant for the document office. Good candidates look you up first, and a professional site tells them it's a careful place to work.",
+      "hook": "Only if they posted a hiring note. Note the role and language.",
+      "linkLine": "A document services page with a careers section: {demo-link}"
+    },
+    {
+      "angle": "Mail-in clients statewide",
+      "line": "Your posts mention clients mailing documents from other cities. A mail-in page for apostilles and certified translations, with upload and tracking, turns that into steady work.",
+      "hook": "Look for posts about mail-in, shipping or clients outside {City}.",
+      "linkLine": "A mail-in apostille and translation order page: {demo-link}"
+    },
+    {
+      "angle": "Languages not listed",
+      "line": "Your posts are in Spanish and Portuguese, but your listing doesn't say which languages the office translates. Someone with a Brazilian birth certificate won't know to call.",
+      "hook": "Note every language they post in. Use the actual pair you see; never assume.",
+      "linkLine": "A languages page for {Business Name}, with translation pairs: {demo-link}"
+    },
+    {
+      "angle": "Registration not shown",
+      "line": "Your document preparer registration is on the state list, but clients never see it. Showing the registration, the bond and a not-a-law-firm notice is what separates you from the notario offices people warn each other about.",
+      "hook": "Check the state's document preparer or immigration consultant registry. Note that a record exists; never quote a number you didn't see.",
+      "linkLine": "Registration, notice and fees on one document office page: {demo-link}"
+    },
+    {
+      "angle": "Word-of-mouth only",
+      "line": "Sounds like most of your document clients come from church and family referrals. That's strong, and even a referred family searches the office name before handing over passports.",
+      "hook": "Look for review text like 'my cousin sent me' or 'recommended at church'. Quote it back.",
+      "linkLine": "Where a referred family would land: {demo-link}"
+    },
+    {
+      "angle": "Passport photo walk-ins",
+      "line": "Your sign says passport photos, but nobody searching 'passport photos near me' can find your hours online. Those walk-ins often come back for translations later.",
+      "hook": "Only if they offer passport photos. Check whether hours are on their listing.",
+      "linkLine": "A passport photo and document services page with hours: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "That {specific recent job} you posted is the kind of document work people struggle to find someone careful for. It deserves a page that explains the service, not a post that scrolls away.",
+      "hook": "Pick their newest post about a translation or apostille and name it exactly, without any client details.",
+      "linkLine": "That document service, explained on its own page: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, that {specific recent job} you posted looks like careful document work.\n\nI looked for translation and document services in {City} and found {Business Name}, but no site with your prices, languages and a clear note on what the office does. I put together a sample page in English and Spanish to see how it would look, with marked placeholders where your photos would go.\n\nWould you like me to send it?",
+    "dm2": "{Owner}, following up in case my message got buried. Here's the sample document services site for {Business Name}: {demo-link}\n\nIt has a certified translation price list, apostille steps, a not-a-law-firm notice, a written-contract section and a Spanish version of every page. If it's not for you, just tell me and I'll leave you be.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for translation and document offices here in {City}. I sent you a message a few days ago, did it reach you?\"\n\nIF NO:\n\"No problem. Short version: I built a sample site for {Business Name} in English and Spanish, with a translation price list, apostille steps and a clear notice that the office isn't a law firm, plus marked placeholders where your photos would go. Can I send you the link to look at tonight?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"It's a site you own, in both languages, and it says plainly what you do and don't do, which keeps you on the right side of the state rules. The build runs {Build Range} depending on languages and mail-in ordering, then {Care Range} a month for hosting and price changes. For your office I'd quote about {Build Price}.\"\n\"Can I walk you through it for ten minutes this week?\"\n\nCLOSE:\n\"I'll send a short scope and a deposit invoice. We start when it clears, and you check every Spanish page before it goes live.\"",
+    "objections": [
+      {
+        "objection": "My clients come from the community. They don't search online.",
+        "handler": "\"They come from the community and then check you on their phone before handing over a passport. The site is what confirms the recommendation, in their language.\""
+      },
+      {
+        "objection": "I'm worried a website will get me in trouble with the state.",
+        "handler": "\"That's the right worry. The site puts your not-a-law-firm notice and registration on every page and never says you give advice. It's the careful version of what you already do.\""
+      },
+      {
+        "objection": "My nephew can make me a page in Spanish.",
+        "handler": "\"Good, family help is valuable. Happy to hand over the translation price list and the notice wording. If it stalls, the offer stands.\""
+      },
+      {
+        "objection": "Prices change depending on the document.",
+        "handler": "\"That's why the price list is by document, with 'from' prices and rush options. People expect ranges; they want to know you won't surprise them.\""
+      },
+      {
+        "objection": "I'm busy enough with walk-ins.",
+        "handler": "\"Then the site does a different job: fewer price calls, mail-in apostilles you can do between walk-ins, and documents uploaded before the client arrives.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}, for both languages, the price list, apostille steps and the notice pages. That's a few weeks of translations.\""
+      }
+    ],
+    "email": {
+      "subject": "Bilingual site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for translation and document offices around {City}. {Business Name} has loyal clients, but no site where a family can see your prices, languages and exactly what the office does before they come in.\n\nI built a sample first, in English and Spanish, rather than ask for your time: a certified translation price list by document, apostille and legalization steps, a not-a-law-firm notice, a written-contract and receipts section, and a languages page, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you'd like it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and price changes. If not, no problem, it comes down at the end of the month.\n\nWorth ten minutes on the phone this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"{Owner}, it's {Your Name}. I build websites for document and translation offices in {City}, and I made a sample one for {Business Name} in English and Spanish. I'll send the link. Have a look after closing. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm taking the {Business Name} document services demo down on Friday to free up the space.\n\nShould I keep it up? One word either way is fine.",
+    "nurture": "Hi {Owner}, application season for schools abroad is starting and diploma translations will pick up. You came to mind.\n\nThe bilingual document site is still here whenever you'd like it, same price as before. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Treat the Spanish version as part of the build, not an add-on. A document office without it isn't finished.",
+      "Price extra languages per language, and only where a named staff member can check them.",
+      "The not-a-law-firm notice, contract policy and registration placeholders are mandatory on every build; never quote a build without them.",
+      "Never write approval, speed of any government agency, or 'immigration help' that implies advice. Describe tasks: typing, translating, copying, mailing.",
+      "Mail-in ordering with upload and payment is a separate line; it opens a statewide market and is priced like one.",
+      "Peg the build to a few weeks of translation and apostille orders, never to an hourly rate."
+    ],
+    "lineItems": [
+      {
+        "item": "Certified translation price list with order form",
+        "min": 400,
+        "max": 1000,
+        "unit": "one-time",
+        "description": "Max with per-document pricing, rush options, language pairs and an upload that quotes from page count.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Additional language version (each)",
+        "min": 500,
+        "max": 1200,
+        "unit": "one-time",
+        "description": "Max when every page, the notice and the forms are translated and checked by a staff member who speaks it.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Mail-in apostille and legalization ordering",
+        "min": 600,
+        "max": 1500,
+        "unit": "one-time",
+        "description": "Max with a country picker for apostille versus embassy legalization, payment, shipping labels and a status page.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Notice, contract and receipt policy pages",
+        "min": 250,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max when the owner supplies state-specific contract terms and the notice is set in each language offered.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Appointment booking by service and language",
+        "min": 400,
+        "max": 900,
+        "unit": "one-time",
+        "description": "Max when slots are matched to the staff member who speaks the client's language and the service type.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Passport photo and walk-in hours page",
+        "min": 150,
+        "max": 400,
+        "unit": "one-time",
+        "description": "Max with photo requirements for several countries and a live 'open now' line synced to their hours.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Storefront and staff photo session",
+      "min": 300,
+      "max": 800,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A morning photographing the document office front, the counter and each staff member who translates. Families trust a document office whose people they can see.\"",
+      "when": "Month 2, before the Spanish pages go live."
+    },
+    {
+      "name": "Bilingual Google profile posts",
+      "min": 150,
+      "max": 300,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A weekly post on your Google profile in English and Spanish, apostille steps one week, translation turnaround the next, always with the not-a-law-firm line.\"",
+      "when": "Day 30, once the site is live."
+    },
+    {
+      "name": "Review requests when documents are returned",
+      "min": 79,
+      "max": 179,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"When a client picks up their certified translation and originals, they get a short text in their language asking how the document office did.\"",
+      "when": "Day 30. The easiest second sale."
+    },
+    {
+      "name": "Window lettering with services and notice",
+      "min": 300,
+      "max": 900,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Window lettering that lists translation, apostille and copies in two languages with the not-a-law-firm notice, and the web address big enough to read from the bus stop.\"",
+      "when": "Right after launch."
+    },
+    {
+      "name": "Spanish community bulletin and radio artwork",
+      "min": 200,
+      "max": 600,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Ad artwork for church bulletins and Spanish community radio sites, built around the translation price list and the office's careful-paperwork promise.\"",
+      "when": "Month 2, or before a busy season for document work."
+    },
+    {
+      "name": "Diploma and transcript season campaign",
+      "min": 300,
+      "max": 700,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A short campaign each winter for students sending diplomas and transcripts abroad: a translation landing page, posts and a flyer for school counsellors.\"",
+      "when": "Pitch in November, run January to April."
+    },
+    {
+      "name": "Consulate-line flyer pack",
+      "min": 150,
+      "max": 400,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Small bilingual cards explaining apostille versus legalization, for clients to pass to relatives who need documents for the same country.\"",
+      "when": "Month 3, once apostille orders are steady."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Immigration attorneys the office refers to",
+        "whoPays": "The law practice",
+        "min": 2500,
+        "max": 5000,
+        "unit": "one-time",
+        "pitchLine": "\"Every immigration question you can't answer goes to an attorney. Those attorneys need careful bilingual sites, and your referrals make you a welcome introduction.\"",
+        "whyItWorks": "Attorneys value document offices that send them clients instead of overstepping, and they buy sites at a higher price."
+      },
+      {
+        "route": "Bilingual tax preparers serving the same families",
+        "whoPays": "The tax practice",
+        "min": 1800,
+        "max": 3000,
+        "unit": "one-time",
+        "pitchLine": "\"The tax preparer your document clients use every spring needs a Spanish site with a checklist. You can tell them who built yours.\"",
+        "whyItWorks": "The same families use both offices, and the preparer trusts a neighbour's recommendation."
+      },
+      {
+        "route": "Mobile notaries who share translation clients",
+        "whoPays": "The notary",
+        "min": 900,
+        "max": 1600,
+        "unit": "one-time",
+        "pitchLine": "\"The mobile notary you send apostille signers to needs a simple page with fees and zones. A quick introduction from your document office is all it takes.\"",
+        "whyItWorks": "Notaries are a volume buyer at a low price, and the referral loop runs both ways."
+      },
+      {
+        "route": "Nonprofits running citizenship classes",
+        "whoPays": "The community nonprofit",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The citizenship and English classes your clients attend need a sign-up site in two languages. Your office is already on their resource list.\"",
+        "whyItWorks": "Nonprofits often have grant money for outreach and trust local businesses that serve the same families."
+      },
+      {
+        "route": "Bilingual driving schools",
+        "whoPays": "The driving school",
+        "min": 1500,
+        "max": 3000,
+        "unit": "one-time",
+        "pitchLine": "\"People who just had a foreign licence translated at your document office go straight to a driving school next. Those schools need Spanish booking pages.\"",
+        "whyItWorks": "It's the next step in the same family's paperwork journey, and the school welcomes the referral source."
+      },
+      {
+        "route": "Freelance translators the office subcontracts",
+        "whoPays": "Each freelance translator",
+        "min": 600,
+        "max": 1500,
+        "unit": "one-time",
+        "pitchLine": "\"The freelance translators who cover languages you don't need a one-page profile with their language pairs. Your document office is their best client.\"",
+        "whyItWorks": "Freelancers buy small sites for credibility, and the introduction comes from the person who pays them."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Spanish intake summaries for immigration attorneys",
+        "whoPays": "The law practice, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Immigration attorneys get consultation requests written in Spanish. An assistant drafts an English summary for bilingual staff to check before the attorney reads it.\"",
+        "whyItWorks": "It shortens intake for the attorney, and the document office that introduced it earns goodwill and referrals back."
+      },
+      {
+        "route": "Bilingual tax document checklist assistant",
+        "whoPays": "The tax practice, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"The tax preparer who shares your document clients can text each family a checklist in their language and an assistant answers 'which form is this' about the papers.\"",
+        "whyItWorks": "Preparers lose hours to missing papers every spring, and the families already know the tool from your referral."
+      },
+      {
+        "route": "Spanish appointment confirmations for notaries",
+        "whoPays": "The notary, monthly",
+        "min": 19,
+        "max": 49,
+        "unit": "monthly",
+        "pitchLine": "\"Mobile notaries who take your apostille signers can confirm appointments and ID rules in Spanish automatically, with the not-an-attorney line included.\"",
+        "whyItWorks": "Small cost, fewer wasted drives, and the document office looks well connected."
+      },
+      {
+        "route": "Civics practice assistant for citizenship classes",
+        "whoPays": "The community nonprofit, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"Students in the citizenship classes your document clients attend can practise civics questions in English with Spanish hints, any time of night.\"",
+        "whyItWorks": "Nonprofits can fund it from education grants, and practice between classes is what students ask for."
+      },
+      {
+        "route": "Permit test practice in Spanish for driving schools",
+        "whoPays": "The driving school, monthly",
+        "min": 79,
+        "max": 199,
+        "unit": "monthly",
+        "pitchLine": "\"New drivers who just had a licence translated at your document office can practise the permit test in Spanish with an assistant that explains each answer.\"",
+        "whyItWorks": "Driving schools sell more lessons to students who pass the permit test first."
+      },
+      {
+        "route": "Glossary-checked first drafts for freelance translators",
+        "whoPays": "Each freelance translator, monthly",
+        "min": 49,
+        "max": 149,
+        "unit": "monthly",
+        "pitchLine": "\"Freelance translators who take your overflow get first drafts of routine certificates in their glossary, which they edit and certify themselves.\"",
+        "whyItWorks": "It speeds up the routine documents while the human translator keeps control of every certified translation."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Missed-call text-back in two languages",
+      "kind": "automation",
+      "oneTimeMin": 0,
+      "oneTimeMax": 300,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"A missed call to the document office gets a text in English and Spanish with the translation price list and the hours, so the caller doesn't try the next storefront.\"",
+      "whenAndWhatItTakes": "Day 30. Needs their number forwarded and the wording checked in both languages."
+    },
+    {
+      "name": "Translation quote from an uploaded document",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1800,
+      "monthlyMin": 39,
+      "monthlyMax": 99,
+      "pitchLine": "\"A client uploads a birth certificate or transcript, picks the language pair and sees the certified translation price and turnaround before they visit.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their per-document and per-page prices and rush rules."
+    },
+    {
+      "name": "Ready-for-pickup texts for documents",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"When a translation or apostille is ready, the client gets a text in their language with the pickup hours and a reminder to bring their receipt for the originals.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their order list and pickup wording."
+    },
+    {
+      "name": "Review reply drafts in the client's language",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 49,
+      "monthlyMax": 149,
+      "pitchLine": "\"Each review gets a reply drafted in the language it was written in, thanking the client without mentioning any document or case, ready for the owner to approve.\"",
+      "whenAndWhatItTakes": "Month 2. Needs a few approved replies in each language. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Language-matched appointment calendar",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 39,
+      "monthlyMax": 99,
+      "pitchLine": "\"Clients book a document appointment with the staff member who speaks their language, for the right service and length, instead of waiting in the storefront line.\"",
+      "whenAndWhatItTakes": "Month 3. Needs each staff member's languages, hours and services."
+    },
+    {
+      "name": "Bilingual question assistant with clear limits",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"It answers translation prices, apostille steps and hours in English or Spanish, and when someone asks an immigration question it says plainly the office can't advise and lists how to find an attorney.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their price list, steps pages and the notice wording. Comes with the AI maintenance retainer; answers reviewed monthly."
+    },
+    {
+      "name": "First-draft certificate translations from templates",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"Routine birth, marriage and civil records get a first-draft translation in the office's own layout, which the translator checks, corrects and certifies.\"",
+      "whenAndWhatItTakes": "Month 6. Needs past approved translations by country and document type. Comes with the AI maintenance retainer; a human translator certifies every one."
+    },
+    {
+      "name": "Apostille order tracker with client status page",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Every apostille order tracked from documents received to sent to the state to back in hand, with a status link so clients stop calling to ask.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their apostille steps and mailing method."
+    },
+    {
+      "name": "Written contract and receipt generator",
+      "kind": "automation",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1200,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Each document service gets a written contract and an itemised receipt in the client's language, generated from the order, so the paperwork habits the state expects happen every time.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their contract terms and the state's required wording from the owner."
+    },
+    {
+      "name": "Original document custody log",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Every passport, certificate and diploma left at the document office is logged in and signed back out, so nothing is ever lost and the client sees the record.\"",
+      "whenAndWhatItTakes": "Month 6. Needs their intake steps and who handles originals."
+    },
+    {
+      "name": "Upload quality check for document scans",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"When a client uploads a document for translation, the tool flags a blurry stamp, a cut-off edge or a missing back page before the translator starts.\"",
+      "whenAndWhatItTakes": "Month 5, after the upload quote. Needs a set of good and bad sample scans. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Apostille or legalization country table",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Clients pick the destination country and see whether their document needs an apostille or embassy legalization, from a table the office keeps current.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the owner's current country notes and the countries they serve most."
+    },
+    {
+      "name": "Translation job board by translator and deadline",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 3500,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Every translation order on one board with its language pair, translator and due date, so rush jobs never slip behind the routine ones.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their translators, language pairs and turnaround rules."
+    },
+    {
+      "name": "Name and date consistency checker",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Before a set of translations goes out, the tool compares names, dates and places across every document in the order and flags spelling that doesn't match.\"",
+      "whenAndWhatItTakes": "Month 7. Needs sample document sets. Comes with the AI maintenance retainer; the translator makes every correction."
+    },
+    {
+      "name": "Mail-in payment and shipping label flow",
+      "kind": "automation",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 39,
+      "monthlyMax": 99,
+      "pitchLine": "\"Mail-in apostille and translation clients pay online and get a printable label to send their documents, and a tracked return label goes out when the work is done.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their payment account and shipping account."
+    },
+    {
+      "name": "Bilingual call note summaries",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"After a phone call in Spanish or English, staff get a short draft note of the documents discussed and the next step, saved to the client's document order.\"",
+      "whenAndWhatItTakes": "Month 6. Needs their note format and consent wording for recorded calls. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Bilingual staff applicant screener",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Applicants for a document office assistant role answer questions about languages, typing and handling originals, and you only interview the ones who fit.\"",
+      "whenAndWhatItTakes": "Whenever they post a role. Needs their must-haves. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Monthly orders by service and language",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 39,
+      "monthlyMax": 99,
+      "pitchLine": "\"See how many translations, apostilles and walk-in document services came in each month, by language, so the owner knows which translator to add.\"",
+      "whenAndWhatItTakes": "Month 8. Needs a few months of order data."
+    },
+    {
+      "name": "Mail-in order intake assistant",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"It asks a mail-in client the destination country, the document type and the deadline, then sets up the apostille or translation order for staff to confirm.\"",
+      "whenAndWhatItTakes": "Month 7, once mail-in orders are steady. Needs the country table and price list. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Translation glossary manager",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Office titles, school names and civil registry terms translated the same way every time, kept in one glossary every translator uses.\"",
+      "whenAndWhatItTakes": "Month 6. Needs their existing term lists and past translations."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Mail-in apostille ordering as a subscription",
+      "whoPays": "Document offices in other states, monthly",
+      "min": 49,
+      "max": 149,
+      "unit": "monthly",
+      "pitchLine": "\"The mail-in apostille ordering I built for one document office, with the country table and labels, plugs into any office once their state's steps are loaded.\"",
+      "whyItWorks": "The workflow is the same everywhere except for state steps, so one build serves many offices."
+    },
+    {
+      "route": "Translators' association member pages",
+      "whoPays": "The regional translators' and interpreters' association",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"Give every certified translation member a profile page with language pairs and an order form, as a membership benefit.\"",
+      "whyItWorks": "Associations need visible member benefits, and a working document office proves the page converts."
+    },
+    {
+      "route": "Two-language document office kit for other states",
+      "whoPays": "Document preparers in other states",
+      "min": 1500,
+      "max": 3500,
+      "unit": "one-time",
+      "pitchLine": "\"Everything I built for one document office, the price list, notice pages and contract section in English and Spanish, ready for another state's wording.\"",
+      "whyItWorks": "Translation and careful notice wording are the slow parts, and they're already done once."
+    },
+    {
+      "route": "Multi-location document office groups",
+      "whoPays": "The owner of several storefronts, per location",
+      "min": 1000,
+      "max": 2500,
+      "unit": "one-time",
+      "pitchLine": "\"Each document services storefront needs its own hours, languages and staff, under one brand and one notice. I build it once and add each location.\"",
+      "whyItWorks": "One contract becomes several locations on the same template."
+    },
+    {
+      "route": "Hometown associations and community federations",
+      "whoPays": "The federation or association",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Hometown associations field document questions from members every week. A bilingual resource site with vetted translation and document offices answers them.\"",
+      "whyItWorks": "Associations want to help members safely, and the client is the first vetted office listed."
+    },
+    {
+      "route": "Intake pages for nonprofit immigration legal programmes",
+      "whoPays": "The nonprofit legal programme",
+      "min": 2500,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Nonprofit programmes with accredited representatives need bilingual intake pages and document checklists. The document office you built for sends them clients already.\"",
+      "whyItWorks": "Nonprofits get grants for outreach and value builders who already understand the line between documents and legal advice."
+    },
+    {
+      "route": "Template licence for agencies serving Spanish-speaking businesses",
+      "whoPays": "The marketing agency, per document office client",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency signs document and translation offices and writes the notices from scratch. License my bilingual template with the compliance pages done.\"",
+      "whyItWorks": "Agencies own the relationship; you sell them the careful structure they'd otherwise get wrong."
+    },
+    {
+      "route": "ESL and language school sign-up sites",
+      "whoPays": "The language school",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"English schools and the document office serve the same newcomers. Class calendars and bilingual sign-ups are the same build with a different form.\"",
+      "whyItWorks": "Schools enrol from the same community and trust a builder whose work they already see on the next street."
+    },
+    {
+      "route": "Price-list page subscription for freelance translators",
+      "whoPays": "Freelance certified translators, monthly",
+      "min": 19,
+      "max": 49,
+      "unit": "monthly",
+      "pitchLine": "\"Any freelance translator can run the per-document translation price list and upload quote I built, with their own pairs and rates.\"",
+      "whyItWorks": "Thousands of freelancers need it, and a small monthly price fits their budget."
+    },
+    {
+      "route": "Credit unions with newcomer member services",
+      "whoPays": "The credit union",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Credit unions serving immigrant members get asked about documents and translations at the counter. A bilingual member resources page with vetted local offices helps both.\"",
+      "whyItWorks": "Credit unions market to newcomer communities and want trusted partners to point members to."
+    },
+    {
+      "route": "One document office per neighbourhood",
+      "whoPays": "A document office in another neighbourhood",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I build for one translation and document office per neighbourhood, so I never build for the storefront across the street from my client.\"",
+      "whyItWorks": "Storefront offices compete block by block, and the template and demo carry over unchanged."
+    },
+    {
+      "route": "Rebuild outdated bilingual document sites",
+      "whoPays": "The document office with a broken site",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "pitchLine": "\"Document offices with a half-translated site and a dead Spanish link get the finished version, notices and price list included, on a build already live.\"",
+      "whyItWorks": "Those owners already paid once for a site, so the decision is about finishing, not starting."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Bilingual document office build plus care plan",
+      "min": 1800,
+      "max": 3000,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The document office site and the care plan go on one contract, so a new price or a notice change in either language is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Review requests when documents are returned",
+      "min": 79,
+      "max": 179,
+      "unit": "monthly",
+      "trigger": "The first client who found the office online picks up their translation.",
+      "line": "\"Your first online client just collected their translation. Let's ask every client for a review in their language at pickup.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "Storefront and staff photo session",
+      "min": 300,
+      "max": 800,
+      "unit": "per-shoot",
+      "trigger": "The languages page still shows marked placeholders where staff photos go.",
+      "line": "\"Families want to see who translates their documents. One morning of photos fills the languages page.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Translation quote from an uploaded document",
+      "min": 600,
+      "max": 1800,
+      "unit": "one-time",
+      "trigger": "Sixty days of enquiries that all start with 'how much for my document'.",
+      "line": "\"Every translation enquiry asks the price first. Let the upload answer it before they call.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Apostille order tracker with client status page",
+      "min": 1000,
+      "max": 2500,
+      "unit": "one-time",
+      "trigger": "Mail-in apostille orders start arriving from outside the city.",
+      "line": "\"Mail-in apostille clients can't drop by to ask. A status page tells them where their documents are.\""
+    },
+    {
+      "rung": 6,
+      "day": 120,
+      "offer": "Bilingual question assistant with clear limits",
+      "min": 1000,
+      "max": 2500,
+      "unit": "one-time",
+      "trigger": "After-hours messages pile up with the same price and apostille questions.",
+      "line": "\"Those night messages ask the same document questions. The assistant answers them in both languages and never strays into advice.\""
+    },
+    {
+      "rung": 7,
+      "day": 180,
+      "offer": "First-draft certificate translations from templates",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "trigger": "The translation backlog passes a week or they add a translator.",
+      "line": "\"Routine certificates are eating your translators' week. First drafts in your layout let them check and certify faster.\""
+    },
+    {
+      "rung": 8,
+      "day": 365,
+      "offer": "Original document custody log",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "trigger": "A client asks for proof of when their original passport or certificate was returned.",
+      "line": "\"When a client asks when their passport left the document office, you should have the signed record in seconds.\""
+    }
+  ]
+}

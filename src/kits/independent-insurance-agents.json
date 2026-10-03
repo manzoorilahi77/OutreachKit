@@ -1,0 +1,874 @@
+{
+  "schemaVersion": 1,
+  "category": "Independent insurance agents",
+  "slug": "independent-insurance-agents",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Pro family batch. Regulated: copy never promises savings, approval or a claim outcome and never recommends coverage. Licence numbers and carrier names are bracketed placeholders. No carrier, rater or agency-software names."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Carriers we can quote",
+      "contains": "The agency's carrier appointments as placeholders [carrier names the agency approves], which lines each is used for, and a plain note on independent versus captive agents",
+      "why": "People call an independent insurance agency because it can shop several carriers. Showing that range is the reason they pick you over a single-company office."
+    },
+    {
+      "section": "Life-event insurance explainers",
+      "contains": "Buying a first home, adding a teen driver, starting a business, renting out a room, buying a boat: what kinds of insurance usually come up, as general information with a review booking",
+      "why": "Insurance shopping starts at a life event, not at random. A page for each moment catches the search the week it happens."
+    },
+    {
+      "section": "Claims help and claim numbers",
+      "contains": "How to report a claim, carrier claim lines as placeholders, what the agency does for you during a claim, and what to do after hours",
+      "why": "Claims service is why people stay with an independent agent. Showing it plainly is what convinces a switcher whose last claim went badly."
+    },
+    {
+      "section": "Commercial insurance by trade",
+      "contains": "Short pages for contractors, restaurants, trucking, landlords and retail on the policies those owners usually ask about, plus a commercial quote request",
+      "why": "Commercial accounts carry the agency's bigger commissions, and an owner looks for an agent who already insures businesses like theirs."
+    },
+    {
+      "section": "Certificate of insurance request",
+      "contains": "A COI request form with the certificate holder, job address and additional insured wording, and the usual turnaround",
+      "why": "Contractors need certificates the same day to start a job. A fast COI form keeps commercial clients and shows prospects the agency answers."
+    },
+    {
+      "section": "Policy review and renewal check",
+      "contains": "How an annual review works, which declarations pages to bring, how renewal shopping across carriers is done, and a booking link",
+      "why": "Most switching happens when a renewal notice arrives. A review page gives that unhappy policyholder a calm next step instead of a price site."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C8",
+      "siteType": "local-conversion",
+      "name": "Main Street Agency",
+      "heroLayout": "split-photo",
+      "mood": [
+        "neighbourly",
+        "steady",
+        "clear"
+      ],
+      "bestFor": "One-office independent agencies replacing a carrier-supplied template with a site that gets quote requests and calls",
+      "pairsWithTier": "starter",
+      "headlineSample": "Home, auto and business insurance from a {City} agency",
+      "whyItFits": "Evergreen Trust was drawn for insurance. Deep green and a refined serif feel settled, and the page points at one quote request and the phone."
+    },
+    {
+      "id": "b",
+      "themeId": "C2",
+      "siteType": "booking-first",
+      "name": "Annual Review",
+      "heroLayout": "split-photo",
+      "mood": [
+        "discreet",
+        "personal",
+        "careful"
+      ],
+      "bestFor": "Agencies that win on relationships and want policy reviews and renewal check-ins booked online with a named agent",
+      "pairsWithTier": "standard",
+      "headlineSample": "Your insurance reviewed every year by a {City} agent you know",
+      "whyItFits": "The family's Private Vault combo. Warm cream and an old-style serif read like a private office, which suits a review meeting more than a quote box."
+    },
+    {
+      "id": "c",
+      "themeId": "C4",
+      "siteType": "b2b-capability",
+      "name": "Commercial Lines Desk",
+      "heroLayout": "type-led",
+      "mood": [
+        "assured",
+        "exact",
+        "executive"
+      ],
+      "bestFor": "Agencies with a strong commercial book selling to contractors, fleets and property owners who compare agents like vendors",
+      "pairsWithTier": "premium",
+      "headlineSample": "Commercial insurance for {City} contractors, fleets and landlords",
+      "whyItFits": "Navy, brass and an editorial serif look like a board report. Business owners read capability pages and trade lists before they ever ask for a quote."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your Google listing shows the agency's phone and hours but no website, so someone shopping home or auto insurance can't see which carriers you work with before they call.",
+      "hook": "Open their Maps listing and confirm there's no Website button. Screenshot it for when they reply.",
+      "linkLine": "Here's what could sit behind that button for an independent agency: {demo-link}"
+    },
+    {
+      "angle": "Carrier template site",
+      "line": "Your website looks like the carrier-supplied template a lot of agencies get, with stock families and someone else's colours. An independent insurance agency deserves a site that looks like your office, not the carrier's brochure.",
+      "hook": "Open their site and look for a 'powered by' footer, stock photos or a carrier's logo dominating the header. Note which one you found.",
+      "linkLine": "The same insurance agency, looking like itself: {demo-link}"
+    },
+    {
+      "angle": "Facebook-only link",
+      "line": "The website on your listing opens a Facebook page. A business owner comparing insurance agents for their general liability wants to see your commercial lines and a quote request, not a feed.",
+      "hook": "Tap their Website link and confirm it lands on Facebook. Note the newest post about a policy type.",
+      "linkLine": "An insurance agency page built for the shopper, not the feed: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "I opened your agency site on my phone and the quote button sat under a pop-up I couldn't close. Most people look up an insurance agent on their phone, often from the car after a renewal letter.",
+      "hook": "Only if they have a site. Load it on your phone and note exactly what breaks. Screenshot it for when they reply.",
+      "linkLine": "Your agency site rebuilt for a phone: {demo-link}"
+    },
+    {
+      "angle": "No quote request",
+      "line": "There's no way to ask your agency for an insurance quote except calling during office hours. Plenty of people would rather send their vehicles and address at night and get a call from a real agent in the morning.",
+      "hook": "Check the listing, social pages and any site for a quote form. If there's none, the angle holds.",
+      "linkLine": "A quote request that asks the right insurance questions: {demo-link}"
+    },
+    {
+      "angle": "Reviews about claims",
+      "line": "Your Google reviews talk about an agent who stayed on the phone through a messy claim. That's the strongest reason to switch insurance agents, and it never reaches anyone off your listing.",
+      "hook": "Read their reviews and copy one phrase about a claim or a renewal. Quote it back if they reply.",
+      "linkLine": "Those claim stories next to your insurance services: {demo-link}"
+    },
+    {
+      "angle": "Home-buying season",
+      "line": "Spring is when new buyers in {City} need homeowners insurance before closing, usually with a few days' notice. An agency page for home buyers, with a fast quote request, catches them and their realtor.",
+      "hook": "Use this from February to June. Check whether they post about home insurance or work with local agents.",
+      "linkLine": "A home buyer insurance page ready for closing week: {demo-link}"
+    },
+    {
+      "angle": "Claims after hours",
+      "line": "Accidents and burst pipes don't happen in office hours. When a client calls the agency at night and gets a full voicemail, they don't know which claim line to dial for their insurance carrier.",
+      "hook": "Call their listed number after hours. If it goes to a generic or full voicemail, the angle holds.",
+      "linkLine": "A claims help page that works at night: {demo-link}"
+    },
+    {
+      "angle": "Hiring a CSR or producer",
+      "line": "Saw you're hiring a customer service rep for the agency. Licensed people look at an insurance agency's site before they apply, same as clients do.",
+      "hook": "Only if they posted a hiring note or a job listing. Note the role and the date.",
+      "linkLine": "An insurance agency page with a careers section: {demo-link}"
+    },
+    {
+      "angle": "Licensed in nearby states",
+      "line": "Your posts mention insurance clients across the state line. A page that says where the agency is licensed to write policies is what someone across the border searches for.",
+      "hook": "Look for mentions of other states or towns. Never state where they're licensed unless they've published it.",
+      "linkLine": "Insurance pages for every area you write in: {demo-link}"
+    },
+    {
+      "angle": "Certificate requests",
+      "line": "Your commercial insurance clients probably text you for certificates on job mornings. A COI request form on the site takes the phone tag out and shows contractors you're quick.",
+      "hook": "Only if they mention contractors, commercial lines or COIs anywhere.",
+      "linkLine": "A certificate of insurance request form for contractors: {demo-link}"
+    },
+    {
+      "angle": "Licence and appointments",
+      "line": "Your agency licence is on the state lookup, but a shopper never sees it. Showing the licence, the office address and the carriers you can quote is the first thing that separates a real agency from a call centre.",
+      "hook": "Look them up on the state insurance department lookup. Note that a record exists; never quote a number you didn't see.",
+      "linkLine": "Licence, carriers and office on one insurance agency page: {demo-link}"
+    },
+    {
+      "angle": "Referral-only agency",
+      "line": "Sounds like most of your insurance business comes from existing clients and their families. That works until those households are covered, and even a referral searches the agency name before calling.",
+      "hook": "Look for review text like 'my parents have used them' or 'recommended by'. Quote it back.",
+      "linkLine": "Where an insurance referral would land: {demo-link}"
+    },
+    {
+      "angle": "Renewal shock",
+      "line": "When a renewal notice arrives higher than last year, people start looking for an independent insurance agent who can shop it. A policy review page gives them a calm next step to book with you.",
+      "hook": "Use when renewal increases are local news or when the agency posts about rates. Don't quote any figure.",
+      "linkLine": "A policy review page for {Business Name}: {demo-link}"
+    },
+    {
+      "angle": "A specific recent post",
+      "line": "That {specific recent job} you posted explained a coverage question better than most insurance sites. A post like that should live on the agency site where it keeps answering people.",
+      "hook": "Pick their newest helpful post, a coverage tip or a community event, and name it exactly.",
+      "linkLine": "That insurance explainer, kept on a page that ranks: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, that {specific recent job} you posted was a clear explanation of a coverage question.\n\nI looked for independent insurance agents in {City} and found {Business Name}, but no site of your own showing which carriers you quote, a quote request and how claims help works. I put together a sample agency page to see how it would look, with marked placeholders where your photos would go.\n\nWant me to send it over?",
+    "dm2": "{Owner}, following up in case my note got lost among renewal calls. Here's the sample insurance agency site for {Business Name}: {demo-link}\n\nIt has a quote request for home, auto and business, a carriers section with placeholders for your appointments, a claims help page and a certificate request form. If it's not for you, say so and I'll leave you be.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for independent insurance agencies here in {City}. I sent you a message a few days ago, did it come through?\"\n\nIF NO:\n\"Easy to miss. Short version: I built a sample site for {Business Name} with a quote request, claims help and a COI form, and marked placeholders where your photos would go. Can I email you the link to look at tonight?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"This isn't a lead list or an ad plan, it's an agency site you own instead of a carrier template. The build runs {Build Range} depending on how many commercial and life-event pages you want, then {Care Range} a month for hosting and changes. For an agency your size I'd quote about {Build Price}.\"\n\"Can I walk you through it for ten minutes, Tuesday or Thursday?\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. Once it clears we start, and your compliance contact can review every page before it goes live.\"",
+    "objections": [
+      {
+        "objection": "The carrier gives me a website for free.",
+        "handler": "\"It does, and it looks like every other agent on that carrier. It also sells their products first. Your own site shows that you're independent and can quote several carriers, which is the whole reason to call you.\""
+      },
+      {
+        "objection": "Compliance has to approve anything I publish.",
+        "handler": "\"Good, that's normal. I write plain, general copy with no promises, and I build in a review step so your compliance contact signs off before launch.\""
+      },
+      {
+        "objection": "My business comes from referrals and existing clients.",
+        "handler": "\"That's the healthiest book there is. A referred family still looks you up first, and a commercial client wants a COI form, not a voicemail. The site serves both.\""
+      },
+      {
+        "objection": "People just buy insurance online from the big direct companies now.",
+        "handler": "\"Some do. The ones who want an agent after a bad claim or a big renewal are searching for exactly what you are: local, independent, someone who picks up. The site has to say that.\""
+      },
+      {
+        "objection": "I already buy insurance leads.",
+        "handler": "\"Bought leads go to several agents at once. Your own site sends that shopper to one agency, and nobody else gets the call.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}, for the quote request, claims help, a COI form and a few commercial pages. That's in the range of a single commercial account's yearly commission.\""
+      }
+    ],
+    "email": {
+      "subject": "Agency site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for independent insurance agencies around {City}. {Business Name} has a good name locally, but no site of its own that shows a shopper you're independent and can quote several carriers.\n\nI built a sample first rather than ask for your time: a quote request for home, auto and business, a carriers section with placeholders for your appointments, a claims help page, a certificate of insurance request and a policy review booking, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you'd like it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and changes, with a compliance review before launch. If not, no problem, it comes down at the end of the month.\n\nWorth ten minutes on the phone this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"{Owner}, it's {Your Name}. I build websites for independent insurance agencies in {City}, and I made a sample one for {Business Name} with a quote request and claims help. I'll email the link. Have a look between renewals. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm taking the {Business Name} insurance agency demo down on Friday to free up the space.\n\nShould I keep it up? One word is fine either way.",
+    "nurture": "Hi {Owner}, renewal season is coming and the policy review calls will pick up. Thought of you.\n\nThe agency site is still here whenever you want it, same price as before. {demo-link} if you'd like another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to one decent commercial account's yearly commission, never to an hourly rate.",
+      "Budget a compliance review round into every quote; some agencies need carrier or state sign-off before launch.",
+      "Price commercial trade pages separately and only for trades already on the agency's books.",
+      "The COI request form and the claims page are their own lines because they replace service calls, which is how owners value them.",
+      "Never write savings, 'best rates' or coverage recommendations into any page; keep explainers general and route to a review.",
+      "Charge a little more for bilingual quote and claims pages, and only where the agency already serves in that language."
+    ],
+    "lineItems": [
+      {
+        "item": "Multi-line quote request with line-specific questions",
+        "min": 500,
+        "max": 1200,
+        "unit": "one-time",
+        "description": "Max with separate home, auto, business and life paths, document upload for current declarations pages and routing to the right agent.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Commercial trade page (each)",
+        "min": 250,
+        "max": 550,
+        "unit": "per-page",
+        "description": "Max when the page has its own trade FAQ, a commercial quote request and a short client story the agency approves.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Certificate of insurance request form",
+        "min": 300,
+        "max": 700,
+        "unit": "one-time",
+        "description": "Max with saved certificate holders for repeat clients and an urgent same-day flag that texts the account manager.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Claims help page with carrier claim lines",
+        "min": 250,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max with a claim-type picker that shows the right carrier line and what to photograph, kept current by the care plan.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Life-event insurance explainer page (each)",
+        "min": 200,
+        "max": 450,
+        "unit": "per-page",
+        "description": "Max when the page includes a checklist and a review booking specific to that life event.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Compliance review round and copy log",
+        "min": 200,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max when carrier and state reviewers both comment and a dated copy log is kept for the agency's files.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Spanish-language quote and claims path",
+        "min": 500,
+        "max": 1200,
+        "unit": "one-time",
+        "description": "Max when the quote request, claims page and privacy notice are all translated and reviewed.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Agent headshots and office photo session",
+      "min": 400,
+      "max": 1000,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"One morning of headshots for each agent and the front office replaces the carrier's stock family. People choose an insurance agent by face.\"",
+      "when": "Month 2, or when a new producer joins."
+    },
+    {
+      "name": "Google profile posts on claims and coverage seasons",
+      "min": 150,
+      "max": 350,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Storm prep, teen drivers in summer, holiday travel: a short insurance post on your Google profile each week, written as general information and approved by you.\"",
+      "when": "Day 30, once the site is live."
+    },
+    {
+      "name": "Review requests after a policy is bound or a claim closes",
+      "min": 99,
+      "max": 199,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"When a claim closes or a new policy is bound, the client gets a short text asking how the agency did. Claim stories are what switchers read first.\"",
+      "when": "Day 30. The easiest second sale."
+    },
+    {
+      "name": "Renewal-season client email campaign",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Before the big renewal months, every insurance client gets a note inviting them to book a policy review, so they call you instead of a price site.\"",
+      "when": "Pitch a month before their heaviest renewal period."
+    },
+    {
+      "name": "Local sponsorship page and posts",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"The teams and events your agency sponsors deserve a page and a few posts. Neighbours buy insurance from the agent they see at the ballfield.\"",
+      "when": "The month a sponsored season starts."
+    },
+    {
+      "name": "Monthly household insurance newsletter",
+      "min": 200,
+      "max": 450,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A short monthly email to every insurance household: one seasonal tip, a claims reminder and a review booking link, general information only.\"",
+      "when": "Month 3, once the client list is in one place."
+    },
+    {
+      "name": "LinkedIn profiles for commercial producers",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Business owners check a commercial insurance producer on LinkedIn before a meeting. I rewrite each producer's profile to match the trades on the site.\"",
+      "when": "Month 2, if they write commercial lines."
+    },
+    {
+      "name": "Realtor and lender home-buyer referral pack",
+      "min": 300,
+      "max": 700,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A leave-behind and a matching page for the realtors and loan officers who need homeowners insurance bound before closing, with your fast quote request front and centre.\"",
+      "when": "January, ahead of the spring buying season."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Contractors on the agency's commercial book",
+        "whoPays": "Each contractor, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"You insure a dozen contractors who still send customers to a Facebook page. An introduction from their insurance agent is a warm door for me.\"",
+        "whyItWorks": "The agent knows which commercial clients are growing and talks to them every renewal. Their recommendation carries weight."
+      },
+      {
+        "route": "Realtors who send home buyers for quotes",
+        "whoPays": "The realtor or team",
+        "min": 1500,
+        "max": 3500,
+        "unit": "one-time",
+        "pitchLine": "\"The realtors who send you buyers for a homeowners insurance quote need niche landing pages for their listings and neighbourhoods. Your introduction gets me a meeting.\"",
+        "whyItWorks": "Agents and realtors swap referrals every closing, and a realtor buys landing pages on the same logic you bought the site."
+      },
+      {
+        "route": "Mortgage loan officers who need binders fast",
+        "whoPays": "The loan officer or branch",
+        "min": 1500,
+        "max": 3500,
+        "unit": "one-time",
+        "pitchLine": "\"The loan officers who chase you for an insurance binder before closing need their own pages for first-time buyers. You can make the call.\"",
+        "whyItWorks": "Loan officers are personally branded and buy their own marketing, and they trust the agent who never holds up a closing."
+      },
+      {
+        "route": "Auto body shops on the claims list",
+        "whoPays": "The body shop",
+        "min": 1800,
+        "max": 3500,
+        "unit": "one-time",
+        "pitchLine": "\"The body shops you recommend after an auto insurance claim mostly have weak sites. A word from the agent who sends them work opens the door.\"",
+        "whyItWorks": "Shops depend on referrals after claims and listen closely to the agents who send them cars."
+      },
+      {
+        "route": "Water and fire restoration contractors",
+        "whoPays": "The restoration company",
+        "min": 2000,
+        "max": 4500,
+        "unit": "one-time",
+        "pitchLine": "\"When a client's home insurance claim is a burst pipe, you know who shows up at midnight. That restoration company needs an emergency site.\"",
+        "whyItWorks": "Restoration firms live on agent and adjuster referrals and have real budgets for emergency marketing."
+      },
+      {
+        "route": "HOA and condo association boards",
+        "whoPays": "The association or its manager",
+        "min": 1200,
+        "max": 3000,
+        "unit": "one-time",
+        "pitchLine": "\"The associations whose master insurance policy you write need a simple resident site for notices and documents. You already sit in their meetings.\"",
+        "whyItWorks": "Boards have small budgets but real needs, and the agent is a trusted vendor in the room."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Bid follow-up texts for contractor clients",
+        "whoPays": "The contractor, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"The contractors you insure lose bids to slow callbacks. An assistant drafts follow-ups on every open estimate, and a growing contractor buys more insurance.\"",
+        "whyItWorks": "It's cheap for the contractor, easy to set up, and the agent likes anything that grows a commercial account."
+      },
+      {
+        "route": "Listing description drafts for realtors",
+        "whoPays": "The realtor, monthly",
+        "min": 99,
+        "max": 199,
+        "unit": "monthly",
+        "pitchLine": "\"Realtors who send you insurance quotes write listing copy at night. An assistant drafts it from their notes, checked against fair housing wording.\"",
+        "whyItWorks": "Every listing needs copy, and the realtor checks and approves each draft, so the risk stays with a human."
+      },
+      {
+        "route": "Document checklist assistant for loan officers",
+        "whoPays": "The loan officer, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"Loan officers chase the same documents you chase for insurance binders. An assistant tells each borrower what's missing, in plain words, every few days.\"",
+        "whyItWorks": "Missing documents delay closings, and anything that speeds closings sells itself to a loan officer."
+      },
+      {
+        "route": "Repair status updates for body shops",
+        "whoPays": "The body shop, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"Customers whose cars are in for an insurance repair call the shop daily. An assistant texts status from the shop's board and answers 'when is it ready'.\"",
+        "whyItWorks": "Fewer status calls frees the front desk, and the agent's clients get a better claim experience."
+      },
+      {
+        "route": "Moisture job photo logs for restoration firms",
+        "whoPays": "The restoration company, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Restoration crews take hundreds of shots on an insurance water job. An assistant sorts them by room and day and drafts the log the adjuster asks for.\"",
+        "whyItWorks": "Documentation drives how fast the restoration firm gets paid, so a tool that tidies it pays back on the first job."
+      },
+      {
+        "route": "Meeting minutes drafts for association boards",
+        "whoPays": "The association or management company, monthly",
+        "min": 49,
+        "max": 149,
+        "unit": "monthly",
+        "pitchLine": "\"Volunteer boards hate writing minutes. An assistant drafts them from a recording, including the insurance renewal vote, for the secretary to approve.\"",
+        "whyItWorks": "Small cost, real relief for volunteers, and the insurance agent who introduced it looks helpful."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Missed-call text-back that splits claims from quotes",
+      "kind": "automation",
+      "oneTimeMin": 0,
+      "oneTimeMax": 300,
+      "monthlyMin": 79,
+      "monthlyMax": 149,
+      "pitchLine": "\"A missed call to the agency gets a text asking 'claim, quote or policy change?'. Claims get the carrier claim line right away, quotes get the request form.\"",
+      "whenAndWhatItTakes": "Day 30. Needs their business number forwarded and the claim lines they want shown."
+    },
+    {
+      "name": "COI request queue with saved certificate holders",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Every certificate of insurance request lands in one queue with the holder and job address filled in from last time, so the account manager issues it in minutes.\"",
+      "whenAndWhatItTakes": "Month 2. Needs a list of repeat certificate holders and who issues certificates."
+    },
+    {
+      "name": "Renewal check-in sequence before each policy renews",
+      "kind": "automation",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Weeks before a policy renews, the insurance client gets a note offering a review with their agent, before the renewal notice sends them shopping alone.\"",
+      "whenAndWhatItTakes": "Month 3. Needs an export of renewal dates by household and wording compliance approves."
+    },
+    {
+      "name": "Review reply drafts that never mention policy details",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Each new agency review gets a warm reply drafted in your voice that never confirms a claim, a policy or a carrier, ready to approve.\"",
+      "whenAndWhatItTakes": "Month 2, alongside review requests. Needs ten past replies and their privacy rules. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Declarations page reader for quote intake",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"A shopper uploads their current declarations page and the tool pulls drivers, vehicles, limits and the renewal date into the insurance quote file, so nobody retypes it.\"",
+      "whenAndWhatItTakes": "Month 4. Needs sample declarations pages with personal details removed and their quote file layout. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Policy review booking with agent calendars",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2500,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Clients book an annual insurance review with their own agent, by phone, video or in the office, and get a reminder of which documents to bring.\"",
+      "whenAndWhatItTakes": "Month 2. Needs each agent's hours and the review types they offer."
+    },
+    {
+      "name": "Agency question assistant on claims lines and office process",
+      "kind": "ai",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"At night it tells a client which carrier claim line to call, how to get an ID card and how a policy change works, and it never says what a policy covers.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their claim lines, office process notes and a compliance read. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Household lines list for account rounding",
+      "kind": "software",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"See which insurance households have auto with you but home elsewhere, so the next review conversation is about the whole account, not one policy.\"",
+      "whenAndWhatItTakes": "Month 5. Needs an export of policies by household and line from their agency system."
+    },
+    {
+      "name": "Birthday and policy-anniversary check-in texts",
+      "kind": "automation",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 50,
+      "monthlyMax": 120,
+      "pitchLine": "\"Insurance clients get a short note from their agent on birthdays and policy anniversaries. It's the touch that keeps people from drifting at renewal.\"",
+      "whenAndWhatItTakes": "Month 3. Needs client birthdays and policy start dates, and their preferred wording."
+    },
+    {
+      "name": "Client service portal for ID cards and change requests",
+      "kind": "software",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Clients download ID cards, request a vehicle swap or a mortgagee change and see that the agency got it, instead of calling the front desk.\"",
+      "whenAndWhatItTakes": "Month 8. Needs their most common service requests and who handles each."
+    },
+    {
+      "name": "Commercial application pre-fill assistant",
+      "kind": "ai",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Give it last year's commercial insurance application and loss runs and it drafts this year's submission for the producer to check, field by field.\"",
+      "whenAndWhatItTakes": "Month 6, for agencies writing commercial lines. Needs past applications with sensitive data handled per their policy. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Claim follow-up tracker",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Every open insurance claim the agency is helping with, the adjuster's name and the next check-in date, so no client feels forgotten mid-claim.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their current claim notes and who on staff follows up."
+    },
+    {
+      "name": "Call notes drafted into the client file",
+      "kind": "ai",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"After a client call, the agent gets a draft note of what was asked and promised, ready to paste into the insurance file. Good notes protect the agency.\"",
+      "whenAndWhatItTakes": "Month 6. Needs their note format and consent wording for recorded calls. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Commercial quote pipeline board",
+      "kind": "software",
+      "oneTimeMin": 2500,
+      "oneTimeMax": 6000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"Every commercial insurance prospect from first call to bound policy on one board, with renewal dates for the accounts you didn't win this year.\"",
+      "whenAndWhatItTakes": "Month 6. Needs their quoting stages and the producers who use it."
+    },
+    {
+      "name": "Renewal remarket side-by-side drafter",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"Drop in the quotes from several carriers and it lays out limits, deductibles and premiums side by side for the agent to check. The agent advises, the tool only arranges.\"",
+      "whenAndWhatItTakes": "Month 7. Needs sample quotes and their comparison template. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Non-pay notice alert to the client",
+      "kind": "automation",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"When a carrier's non-payment notice arrives, the insurance client gets a friendly text from the agency the same day, before the policy lapses.\"",
+      "whenAndWhatItTakes": "Month 4. Needs a way to flag those notices as they arrive and wording compliance approves."
+    },
+    {
+      "name": "Licensed staff applicant screener",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"Applicants for a CSR or insurance producer seat answer your questions about licensing status, lines and schedule, and you only call the ones who fit.\"",
+      "whenAndWhatItTakes": "Whenever they post a role. Needs their must-haves and the pay range. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Compliance copy log and approval tracker",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Every page, post and email the agency publishes is logged with who approved it and when, so a carrier or state insurance audit takes an hour, not a week.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their approval steps and anyone outside the agency who must sign off."
+    },
+    {
+      "name": "Spanish client message drafts with agent review",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"Service replies to Spanish-speaking insurance clients get drafted in Spanish for a bilingual staff member to check before sending.\"",
+      "whenAndWhatItTakes": "Month 6, only where a bilingual staff member reviews. Needs their common replies. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Agency book dashboard by line and carrier",
+      "kind": "software",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 6000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"See the agency's book by line, carrier and producer, with retention by month, in one screen instead of three carrier portals.\"",
+      "whenAndWhatItTakes": "Month 9. Needs monthly exports from their agency system and carrier commission statements."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the COI request tool for agencies",
+      "whoPays": "Insurance agencies, monthly per office",
+      "min": 49,
+      "max": 149,
+      "unit": "monthly",
+      "pitchLine": "\"I built a certificate of insurance queue for one agency. Every agency with contractor clients handles COIs by text and email.\"",
+      "whyItWorks": "The first agency taught you the workflow and paid for it. The next one only needs its own certificate holders loaded."
+    },
+    {
+      "route": "Independent agents' association member kit",
+      "whoPays": "The state independent agents' association",
+      "min": 2000,
+      "max": 8000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer every member agency a site template that says 'independent' clearly, with a quote request and claims help, as a membership benefit.\"",
+      "whyItWorks": "Associations exist to help independents compete with direct writers, and members ask for exactly this."
+    },
+    {
+      "route": "Agency network template per member agency",
+      "whoPays": "The agency network or cluster, per member",
+      "min": 500,
+      "max": 1500,
+      "unit": "one-time",
+      "pitchLine": "\"Your network's member agencies all need the same pages with their own names. I build the insurance template once and roll it to each member.\"",
+      "whyItWorks": "Networks add value to keep members, and a shared template is cheap per agency and easy to renew."
+    },
+    {
+      "route": "Regional carrier agent-site programme",
+      "whoPays": "The regional insurance carrier's marketing budget",
+      "min": 10000,
+      "max": 30000,
+      "unit": "one-time",
+      "pitchLine": "\"Your appointed agents run carrier templates that all look alike. Fund a better independent agency site for them and they'll quote you more.\"",
+      "whyItWorks": "Regional carriers compete for agent attention, and co-funded marketing is a lever they already use."
+    },
+    {
+      "route": "Insurance agency template for marketing firms",
+      "whoPays": "The marketing firm, per agency client",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "pitchLine": "\"You sign insurance agencies and build each one by hand. License my agency template with the quote request, COI form and claims page already done.\"",
+      "whyItWorks": "Marketing firms own the agency relationship; you sell them the part you've already built and had reviewed."
+    },
+    {
+      "route": "Rebrand sites for agency acquirers",
+      "whoPays": "The acquiring agency group, per acquired agency",
+      "min": 1200,
+      "max": 3500,
+      "unit": "one-time",
+      "pitchLine": "\"Each insurance agency you buy keeps its local name for a while and then moves to yours. I build the transition site and the move-over pages.\"",
+      "whyItWorks": "Acquirers buy agencies steadily and need the same transition work each time, on a deadline."
+    },
+    {
+      "route": "Commercial trade page library subscription",
+      "whoPays": "Independent agencies, monthly",
+      "min": 39,
+      "max": 129,
+      "unit": "monthly",
+      "pitchLine": "\"A library of plain-language commercial insurance pages for contractors, restaurants and landlords, compliance-friendly and ready for any agency site.\"",
+      "whyItWorks": "Writing careful insurance copy is slow; agencies pay a small monthly fee to skip it."
+    },
+    {
+      "route": "Pre-licensing school class pages",
+      "whoPays": "The insurance pre-licensing school",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Every new insurance agent passes through a pre-licensing class. Those schools need class calendars and sign-ups, and your agency client hires their graduates.\"",
+      "whyItWorks": "Schools sell to every new producer in the state, and an agency owner's introduction is credible."
+    },
+    {
+      "route": "Agency perpetuation advisors",
+      "whoPays": "The perpetuation or valuation advisory firm",
+      "min": 2000,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"Advisors who help insurance agency owners plan a sale need a credible site with an intake for retiring owners. Your agency client knows them.\"",
+      "whyItWorks": "Advisors have small teams and high fees, and they trust referrals from agency owners."
+    },
+    {
+      "route": "Bilingual agency site kit",
+      "whoPays": "Spanish-speaking agencies in other metros",
+      "min": 1500,
+      "max": 3500,
+      "unit": "one-time",
+      "pitchLine": "\"The bilingual quote and claims pages I built for one insurance agency fit every Spanish-speaking agency in the region.\"",
+      "whyItWorks": "Translation and compliance review are the hard part, and they're already done once."
+    },
+    {
+      "route": "One agency per metro, next city over",
+      "whoPays": "An independent agency in a new metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"Only one insurance agency per metro gets this template from me. Agencies across the county line still run carrier pages, and the first to say yes there gets it.\"",
+      "whyItWorks": "Exclusive territory matters to agencies that compete on local trust, and the template and demo carry over."
+    },
+    {
+      "route": "Rescue stalled agency site projects",
+      "whoPays": "The stranded insurance agency",
+      "min": 1200,
+      "max": 3500,
+      "unit": "one-time",
+      "pitchLine": "\"Someone started moving your insurance agency off the carrier template and never finished. I can finish it on a build already live for another agency.\"",
+      "whyItWorks": "Those owners already decided to leave the template and have half their copy approved."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Agency site build plus care plan, one contract",
+      "min": 1800,
+      "max": 3000,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The insurance agency site and the care plan go on one contract, so a new carrier claim line or a compliance edit is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Review requests after a policy is bound or a claim closes",
+      "min": 99,
+      "max": 199,
+      "unit": "monthly",
+      "trigger": "The first claim closes or the first site quote is bound since launch.",
+      "line": "\"That client whose claim just closed is your best insurance review. Let's ask every one the same day.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "Agent headshots and office photo session",
+      "min": 400,
+      "max": 1000,
+      "unit": "per-shoot",
+      "trigger": "The agency site still shows marked placeholders where agent photos go.",
+      "line": "\"Your insurance pages are ready except for faces. One morning of headshots replaces the stock family for good.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "COI request queue with saved certificate holders",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "trigger": "Sixty days of certificate form requests, and an account manager mentions COIs arriving by text.",
+      "line": "\"Your certificate of insurance requests are scattered across texts. Let's put them in one queue with the holders saved.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Renewal check-in sequence before each policy renews",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "trigger": "They mention losing a household at renewal to a direct writer.",
+      "line": "\"That household left at renewal without a word. A review offer before each insurance renewal gives you the first conversation.\""
+    },
+    {
+      "rung": 6,
+      "day": 120,
+      "offer": "Declarations page reader for quote intake",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "trigger": "Quote requests arrive with uploaded declarations pages that a CSR retypes by hand.",
+      "line": "\"Your CSR retypes every declarations page. Let the insurance quote file fill itself from the upload.\""
+    },
+    {
+      "rung": 7,
+      "day": 180,
+      "offer": "Client service portal for ID cards and change requests",
+      "min": 3000,
+      "max": 8000,
+      "unit": "one-time",
+      "trigger": "The front desk says ID card and vehicle change calls eat the morning.",
+      "line": "\"Half your agency's calls are ID cards and vehicle swaps. A portal lets clients do those themselves.\""
+    },
+    {
+      "rung": 8,
+      "day": 365,
+      "offer": "Agency book dashboard by line and carrier",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "trigger": "They hire a second producer or start talking about perpetuation or selling the agency.",
+      "line": "\"Before a new producer or a buyer looks at your book, let's see it clearly by line, carrier and retention.\""
+    }
+  ]
+}

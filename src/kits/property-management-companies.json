@@ -1,0 +1,874 @@
+{
+  "schemaVersion": 1,
+  "category": "Property management companies",
+  "slug": "property-management-companies",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Pro family batch. Two audiences, owners and tenants, with the owner page as the money. Fair housing applies to every rental page; copy never promises rent amounts or vacancy times. Broker licence details are bracketed placeholders. No portal or property software names."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Rental owner proposal and fees",
+      "contains": "What full property management includes, the management fee as a share of rent, leasing and renewal fees, what owners pay for maintenance, and how switching from another manager works",
+      "why": "Owners choose a property manager by comparing fees and what's included. A clear proposal page is the money page of the whole site."
+    },
+    {
+      "section": "Rental analysis request for owners",
+      "contains": "Address, beds and baths, condition and availability date, and what the manager's rental analysis covers, labelled as an opinion of a rent range, not a promise",
+      "why": "Most owner conversations start with 'what would my house rent for'. An honest rental analysis request opens that conversation."
+    },
+    {
+      "section": "Available rentals with published screening criteria",
+      "contains": "Current rental listings, written screening criteria applied the same way to every applicant, application fee, pet and assistance animal policy, and the Equal Housing Opportunity notice",
+      "why": "Tenants want to know if they qualify before paying a fee, and published criteria protect the manager under fair housing rules."
+    },
+    {
+      "section": "Maintenance requests and emergency line",
+      "contains": "What counts as an emergency (no heat, active leak, no water), the after-hours number, a request form with photo upload, and expected response times for routine repairs",
+      "why": "Maintenance response is what tenants review and what owners ask about. A clear page cuts midnight calls about dripping taps."
+    },
+    {
+      "section": "HOA and association management",
+      "contains": "Board support, meeting notices and minutes, dues collection, violations process, vendor coordination and reserve study scheduling for HOAs and small condo associations",
+      "why": "Boards are a different buyer from rental owners. A separate HOA page lets volunteer board members see the company handles associations too."
+    },
+    {
+      "section": "Owner statement and portal preview",
+      "contains": "A sample monthly owner statement, what appears in the owner portal, when rent is disbursed, year-end tax forms and how reserves are held [trust account details]",
+      "why": "Owners who left a bad manager left over missing money and unclear statements. Showing the statement before signing answers that fear."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C10",
+      "siteType": "local-conversion",
+      "name": "Owner Enquiry",
+      "heroLayout": "split-photo",
+      "mood": [
+        "practical",
+        "organised",
+        "direct"
+      ],
+      "bestFor": "Small property managers with a few dozen doors who need owner enquiries, rental listings and the maintenance line working",
+      "pairsWithTier": "starter",
+      "headlineSample": "Rental property management in {City}, owners and tenants",
+      "whyItFits": "Steel blue and a plain grotesque feel like a well-run office. Two clear paths, owners and tenants, from the first screen."
+    },
+    {
+      "id": "b",
+      "themeId": "C2",
+      "siteType": "b2b-capability",
+      "name": "Owner Services Desk",
+      "heroLayout": "card-stack",
+      "mood": [
+        "trustworthy",
+        "careful",
+        "steady"
+      ],
+      "bestFor": "Growing management companies winning owners from other managers, with fees, statements and services laid out for comparison",
+      "pairsWithTier": "standard",
+      "headlineSample": "Property management {City} owners can see into",
+      "whyItFits": "The family's Private Vault combo. Warm cream and an old-style serif feel like a trust office, which is what an owner handing over a rental and its rent needs to see."
+    },
+    {
+      "id": "c",
+      "themeId": "C39",
+      "siteType": "editorial-trust",
+      "name": "Neighbourhood Stewards",
+      "heroLayout": "type-led",
+      "mood": [
+        "rooted",
+        "established",
+        "candid"
+      ],
+      "bestFor": "Long-standing family property management firms with HOA contracts and owner guides, selling on decades in the same neighbourhoods",
+      "pairsWithTier": "premium",
+      "headlineSample": "Managing {City} rentals and HOAs since [year founded]",
+      "whyItFits": "Brick, linen and a typewriter slab feel like a firm with filing cabinets full of history. It suits owner guides and HOA pages read slowly."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your Google listing has the office number but no website, so a rental owner comparing property managers can't see your fees or what management includes.",
+      "hook": "Open their Maps listing and confirm there's no Website button. Screenshot it for when they reply.",
+      "linkLine": "Here's what could sit behind that button for a property manager: {demo-link}"
+    },
+    {
+      "angle": "Portal login is the site",
+      "line": "Your website is mostly a tenant portal login. A rental owner looking for a new property manager lands there and finds nothing written for them.",
+      "hook": "Open their site and check whether the home page is a login screen or a portal template. Note what an owner would see.",
+      "linkLine": "A property management site with an owner page up front: {demo-link}"
+    },
+    {
+      "angle": "Facebook-only link",
+      "line": "The website on your listing opens a Facebook page full of rental listings. Owners deciding who to trust with their property want a proposal and a sample statement, not a feed.",
+      "hook": "Tap their Website link and confirm it lands on Facebook. Note the latest rental they posted.",
+      "linkLine": "An owner-first property management page: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "I opened your property management site on my phone and the maintenance request form wouldn't submit. Tenants report a leak from their phone, standing in the puddle.",
+      "hook": "Only if they have a site. Load it on your phone and try the forms. Screenshot it for when they reply.",
+      "linkLine": "Your property management site rebuilt for a phone: {demo-link}"
+    },
+    {
+      "angle": "No rental analysis request",
+      "line": "There's no way for a rental owner to ask you what their house would rent for. That question is how most owner conversations with a property manager start.",
+      "hook": "Check their site and profiles for a rental analysis or owner enquiry form. If there's none, the angle holds.",
+      "linkLine": "A rental analysis request for owners: {demo-link}"
+    },
+    {
+      "angle": "Owner reviews buried",
+      "line": "Your Google reviews include owners thanking you for keeping their rental full and the books clear, but those sit among tenant reviews. A property owner never sees them on your site.",
+      "hook": "Read their reviews and copy one phrase from an owner, not a tenant. Quote it back if they reply.",
+      "linkLine": "Owner reviews on the page owners actually read: {demo-link}"
+    },
+    {
+      "angle": "Summer leasing season",
+      "line": "Summer is when most leases turn over in {City}. A rentals page with screening criteria and online applications fills homes while you're juggling move-outs.",
+      "hook": "Use this from March to June. Check how they list vacancies now.",
+      "linkLine": "A rental listings page ready for leasing season: {demo-link}"
+    },
+    {
+      "angle": "After-hours maintenance calls",
+      "line": "Tenants call the property manager at midnight about a dripping tap and a burst pipe in the same tone. A maintenance page that says what's an emergency saves the on-call phone for the real ones.",
+      "hook": "Call their listed number after hours. Note whether there's an emergency option.",
+      "linkLine": "A maintenance request and emergency line page: {demo-link}"
+    },
+    {
+      "angle": "Hiring a leasing agent",
+      "line": "Saw you're hiring a leasing agent. Good candidates check whether a property management company looks organised before they apply.",
+      "hook": "Only if they posted a hiring note. Note the role and date.",
+      "linkLine": "A property management page with a careers section: {demo-link}"
+    },
+    {
+      "angle": "Areas managed",
+      "line": "Your listings cover rentals across {City} and {Neighborhood}, but no page says where you manage. An owner in {Neighborhood} types 'property management' plus that name.",
+      "hook": "Map where their current rental listings are. Use the area furthest from their office.",
+      "linkLine": "Property management pages for each area you cover: {demo-link}"
+    },
+    {
+      "angle": "Fees not shown",
+      "line": "Nothing on your profile says what your property management costs. Owners expect a share of rent plus leasing fees; showing your real structure gets you on the shortlist.",
+      "hook": "Check every profile for fee information. If there's none, the angle holds.",
+      "linkLine": "Property management fees shown plainly: {demo-link}"
+    },
+    {
+      "angle": "Broker licence not shown",
+      "line": "Your brokerage licence is on the state lookup, but an owner never sees it. Showing the licence, the trust account practice and the office address is what separates a property manager from a landlord with extra keys.",
+      "hook": "Check the state real estate licence lookup. Note that a record exists; never quote a number you didn't see.",
+      "linkLine": "Licence, fees and owner statements on one page: {demo-link}"
+    },
+    {
+      "angle": "Realtor referrals only",
+      "line": "Sounds like most of your new owners come from realtors who sold them the rental. Even a referred owner searches your property management company before signing.",
+      "hook": "Look for review text or posts mentioning realtors or investors. Quote it back.",
+      "linkLine": "Where a referred rental owner would land: {demo-link}"
+    },
+    {
+      "angle": "HOA boards",
+      "line": "Your posts mention managing a few HOAs, but your site only talks about rentals. Volunteer board members searching for HOA management never learn you do it.",
+      "hook": "Only if they mention HOAs or associations anywhere. Name the type they manage.",
+      "linkLine": "An HOA management page for {Business Name}: {demo-link}"
+    },
+    {
+      "angle": "A specific recent rental",
+      "line": "That {specific recent job} you posted is a well-presented rental. It deserves a listing page with screening criteria and an application, not a post that scrolls away by Friday.",
+      "hook": "Pick their newest rental listing post and name it exactly: neighbourhood, beds and type.",
+      "linkLine": "That rental, with criteria and an application: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, that {specific recent job} you posted is a well-kept rental.\n\nI looked at property management companies in {City} and found {Business Name}, but no page that tells a rental owner your fees, what's included and what a monthly statement looks like. I put together a sample site with an owner page and a tenant side to see how it would look, with marked placeholders where your photos would go.\n\nWould you like me to send it?",
+    "dm2": "{Owner}, following up in case my note got buried under maintenance tickets. Here's the sample property management site for {Business Name}: {demo-link}\n\nIt has an owner proposal page with fees, a rental analysis request, a sample owner statement, rental listings with screening criteria and a maintenance page that sorts emergencies. If it's not for you, just say so.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for property management companies here in {City}. I sent you a message a few days ago, did it reach you?\"\n\nIF NO:\n\"No problem. Short version: I built a sample site for {Business Name} with an owner page, a rental analysis request and a tenant maintenance page, and marked placeholders where your photos would go. Can I email you the link to look at tonight?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"Your portal handles tenants. This is the part that wins owners, which is where the growth is. The build runs {Build Range} depending on how many area pages and the HOA section, then {Care Range} a month for hosting and listing updates. For a company your size I'd quote about {Build Price}, which is roughly what two new doors bring in over a year.\"\n\"Can I walk you through it for ten minutes this week?\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. Once it clears we start, and the owner page is live before leasing season.\"",
+    "objections": [
+      {
+        "objection": "My property software already gives me a website.",
+        "handler": "\"It gives you a portal with a home page. Tenants are fine there. Owners need a proposal, fees and a sample statement, and that's the page that grows your doors.\""
+      },
+      {
+        "objection": "We get owners from realtor referrals.",
+        "handler": "\"Good, keep them. A referred owner still checks your property management company before signing, and a clear owner page closes that referral faster.\""
+      },
+      {
+        "objection": "We're full. We can't take more doors.",
+        "handler": "\"Then the site does a different job: fewer tenant calls, maintenance sorted by urgency, and a waitlist of owners you'd actually choose to take.\""
+      },
+      {
+        "objection": "Tenant reviews are bad no matter what we do.",
+        "handler": "\"Every property manager has that. The site puts owner reviews and your maintenance process where owners read them, and a clear emergency page cuts the angriest calls.\""
+      },
+      {
+        "objection": "I don't want to publish our fees.",
+        "handler": "\"You don't need exact numbers. A plain structure, management as a share of rent plus leasing fee, is enough to get on an owner's shortlist instead of being skipped.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}, for the owner proposal page, rental analysis, listings with criteria and the maintenance page. That's around two new doors' fees for a year.\""
+      }
+    ],
+    "email": {
+      "subject": "Owner page for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for property management companies around {City}. {Business Name} manages good rentals, but no page tells an owner your fees, what management includes or what their statement would look like.\n\nI built a sample first rather than ask for your time: an owner proposal page with fees, a rental analysis request labelled as an estimate, a sample owner statement, rental listings with published screening criteria, a maintenance page that sorts emergencies and an HOA section, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you'd like it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and listing updates. If not, no problem, it comes down at the end of the month.\n\nWorth ten minutes on the phone this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"{Owner}, it's {Your Name}. I build websites for property management companies in {City}, and I made a sample one for {Business Name} with an owner page and a maintenance page. I'll email the link. Have a look when the tickets calm down. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm taking the {Business Name} property management demo down on Friday to free up the space.\n\nWant me to keep it up? One word is fine either way.",
+    "nurture": "Hi {Owner}, leasing season is a few weeks out and owners are lining up rentals for summer. You came to mind.\n\nThe property management site is still here whenever you want it, same price as before. {demo-link} if you'd like another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to the yearly fees from two new doors, never to an hourly rate. Managers think in doors.",
+      "Price the owner side first; the tenant side often exists in their portal and only needs linking.",
+      "Area pages are per area, quoted only where they already manage rentals.",
+      "The HOA section is its own line; boards are a separate buyer with separate questions.",
+      "Never write a promised rent, vacancy time or 'we fill homes fast'. Rental analyses are estimates, labelled as such.",
+      "Screening criteria and fair housing notices are mandatory on every rental page, never an add-on."
+    ],
+    "lineItems": [
+      {
+        "item": "Owner proposal page with fee table",
+        "min": 400,
+        "max": 900,
+        "unit": "one-time",
+        "description": "Max with a side-by-side of service levels, a switching-managers guide and an owner consultation booking.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Rental analysis request with follow-up",
+        "min": 400,
+        "max": 1000,
+        "unit": "one-time",
+        "description": "Max with property detail questions, photo upload and an automatic note that the analysis is an estimated rent range.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Rental listings feed with screening criteria",
+        "min": 500,
+        "max": 1200,
+        "unit": "one-time",
+        "description": "Max when listings pull from their portal feed with filters, published criteria and an apply link per listing.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Area management page (each)",
+        "min": 250,
+        "max": 550,
+        "unit": "per-page",
+        "description": "Max when each page has rentals currently managed there, local rental notes and an owner review from that area.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "HOA management section",
+        "min": 500,
+        "max": 1200,
+        "unit": "one-time",
+        "description": "Max with a board enquiry form, a services list, a sample meeting notice and a resident document page.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Maintenance triage page with photo upload",
+        "min": 300,
+        "max": 800,
+        "unit": "one-time",
+        "description": "Max with an emergency checklist, after-hours routing and a Spanish version for tenants.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Sample owner statement and portal tour",
+        "min": 200,
+        "max": 500,
+        "unit": "one-time",
+        "description": "Max with an annotated statement, a short screen-recorded portal tour and a year-end documents explainer.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Rental listing photo session",
+      "min": 150,
+      "max": 400,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Each vacant rental gets a proper photo session before listing, so it stands out among phone snapshots and the owner sees their property presented well.\"",
+      "when": "From the first vacancy after launch, per rental."
+    },
+    {
+      "name": "Google profile posts for rentals and owner tips",
+      "min": 150,
+      "max": 350,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A weekly post on the property management Google profile, new rentals one week, an owner tip the next, so the listing looks run by people who answer.\"",
+      "when": "Day 30, once the site is live."
+    },
+    {
+      "name": "Owner review requests at lease renewal",
+      "min": 79,
+      "max": 179,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"When an owner's rental renews smoothly, they get a short note asking for a review. Owner reviews balance the tenant ones that every property manager gets.\"",
+      "when": "Day 45, after the first renewals."
+    },
+    {
+      "name": "Quarterly rental owner newsletter",
+      "min": 200,
+      "max": 500,
+      "unit": "per-job",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A short quarterly email to rental owners and prospects: local rental notes, a maintenance season reminder and a link to the rental analysis request.\"",
+      "when": "Month 3, once the owner list is clean."
+    },
+    {
+      "name": "For-rent sign and lockbox card artwork",
+      "min": 150,
+      "max": 400,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"For-rent yard signs with a code to the listing and the screening criteria, so drive-by applicants land on your rental page instead of calling the office.\"",
+      "when": "Right after launch, before the next vacancy."
+    },
+    {
+      "name": "Investor and realtor referral pack",
+      "min": 300,
+      "max": 700,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A one-page leave-behind and a matching owner page for the realtors and investor groups who send you rental owners, with your fee structure and a sample statement.\"",
+      "when": "Month 2, when they name who refers owners."
+    },
+    {
+      "name": "Vacancy ads on Facebook",
+      "min": 150,
+      "max": 400,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Each vacant rental gets a short ad pointing to its listing page with criteria, set up under the housing ad rules, so applicants arrive already pre-qualified.\"",
+      "when": "Month 2, when they carry two or more vacancies at once."
+    },
+    {
+      "name": "HOA resident newsletter",
+      "min": 150,
+      "max": 400,
+      "unit": "per-job",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A tidy newsletter for each HOA you manage, meeting dates, pool rules, dues reminders, that makes the board look organised and keeps the management contract safe.\"",
+      "when": "Month 3, if they manage HOAs."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Maintenance vendors on the approved list",
+        "whoPays": "Each vendor, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"Your plumbers, handymen and HVAC techs get work orders from you every week. A recommendation from the property manager who pays them is a strong door.\"",
+        "whyItWorks": "Vendors depend on the manager's work orders and take the manager's suggestions seriously."
+      },
+      {
+        "route": "Turnover cleaning and paint crews",
+        "whoPays": "The cleaning or turnover company",
+        "min": 1500,
+        "max": 3000,
+        "unit": "one-time",
+        "pitchLine": "\"The crew that turns your rentals between tenants needs a site that says 'move-out cleaning and paint for landlords'. You're their biggest client.\"",
+        "whyItWorks": "Turnover crews want more landlord work, and the manager's word reaches other landlords."
+      },
+      {
+        "route": "Realtors who sell to rental investors",
+        "whoPays": "The realtor or team",
+        "min": 2000,
+        "max": 3500,
+        "unit": "one-time",
+        "pitchLine": "\"The realtors who send you investor owners need niche pages for rental property buyers. You can make the introduction in one text.\"",
+        "whyItWorks": "Investor-focused agents and managers refer constantly, and agents buy niche pages."
+      },
+      {
+        "route": "Landlord-tenant attorneys",
+        "whoPays": "The law practice",
+        "min": 2500,
+        "max": 5000,
+        "unit": "one-time",
+        "pitchLine": "\"The attorney who handles your rental property disputes needs a careful site for landlords. A property manager's introduction carries weight.\"",
+        "whyItWorks": "Landlord attorneys get most clients from managers and value the relationship."
+      },
+      {
+        "route": "Insurance agents writing landlord policies",
+        "whoPays": "The insurance agency",
+        "min": 1800,
+        "max": 3000,
+        "unit": "one-time",
+        "pitchLine": "\"The agent who insures your owners' rental properties has a carrier template site. Your owners are their clients too, so you're a welcome introduction.\"",
+        "whyItWorks": "Agents and managers share the same owners and refer each other naturally."
+      },
+      {
+        "route": "Local real estate investor clubs",
+        "whoPays": "The investor club or association",
+        "min": 1000,
+        "max": 2500,
+        "unit": "one-time",
+        "pitchLine": "\"The investor club where you speak about rental property needs a site for meetings and members. Your talk there makes you their natural recommendation.\"",
+        "whyItWorks": "Clubs run on volunteers and small budgets, but they buy from trusted speakers."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Work order photo reports for maintenance vendors",
+        "whoPays": "Each vendor, monthly",
+        "min": 49,
+        "max": 129,
+        "unit": "monthly",
+        "pitchLine": "\"Vendors on your rental work orders snap before and after shots and get a draft completion report for the property manager, with the invoice attached.\"",
+        "whyItWorks": "Managers approve invoices faster with clean reports, so vendors get paid sooner."
+      },
+      {
+        "route": "Move-out cleaning quotes from photos",
+        "whoPays": "The turnover company, monthly",
+        "min": 79,
+        "max": 199,
+        "unit": "monthly",
+        "pitchLine": "\"Turnover crews get move-out photos from the rental and an assistant drafts a cleaning and paint quote by room for the crew lead to adjust.\"",
+        "whyItWorks": "Faster quotes mean faster turnovers, which the manager and owner both want."
+      },
+      {
+        "route": "Rental deal sheets for investor realtors",
+        "whoPays": "The realtor, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"Realtors selling rental property get a draft deal sheet per listing: estimated rent range from the manager's data, expenses and notes, labelled as an estimate.\"",
+        "whyItWorks": "Investor buyers want numbers fast, and the manager's rent data makes the sheet credible."
+      },
+      {
+        "route": "Intake summaries for landlord-tenant attorneys",
+        "whoPays": "The law practice, monthly",
+        "min": 150,
+        "max": 350,
+        "unit": "monthly",
+        "pitchLine": "\"Landlords who contact the attorney your property management company uses get an intake that collects lease dates and notices, with a draft summary for the attorney.\"",
+        "whyItWorks": "Attorneys save intake time, and the manager's referrals arrive organised."
+      },
+      {
+        "route": "Landlord policy renewal drafts for insurance agents",
+        "whoPays": "The insurance agency, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"The agent insuring your rental owners can send renewal check-ins drafted per property, mentioning vacancy or renovation changes the owner reported.\"",
+        "whyItWorks": "Agents keep more landlord policies, and owners appreciate the manager-agent coordination."
+      },
+      {
+        "route": "Member question assistant for investor clubs",
+        "whoPays": "The investor club, monthly",
+        "min": 49,
+        "max": 149,
+        "unit": "monthly",
+        "pitchLine": "\"Investor club members ask the same rental property questions every meeting. An assistant answers from the club's own talk notes, general information only, and lists local members to contact.\"",
+        "whyItWorks": "Volunteers get their evenings back, and the property manager stays first on the member list."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Missed-call text-back sorting owners, tenants and emergencies",
+      "kind": "automation",
+      "oneTimeMin": 0,
+      "oneTimeMax": 300,
+      "monthlyMin": 79,
+      "monthlyMax": 149,
+      "pitchLine": "\"A missed call to the property management office gets a text: owner, tenant or emergency? Emergencies get the on-call number, owners get the rental analysis link.\"",
+      "whenAndWhatItTakes": "Day 30. Needs their number forwarded and the on-call rota."
+    },
+    {
+      "name": "Owner enquiry and rental analysis pipeline",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Every owner enquiry from the rental analysis form on one board, from first call to signed management agreement, so no owner lead sits in someone's inbox.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their owner sales steps and who follows up."
+    },
+    {
+      "name": "Self-scheduled showings for vacant rentals",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Applicants who meet the published criteria book a rental showing slot themselves, with ID confirmed first, instead of trading texts with the leasing agent.\"",
+      "whenAndWhatItTakes": "Month 3, before leasing season. Needs their showing hours and access method."
+    },
+    {
+      "name": "Review reply drafts that never discuss a tenant",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Each review of the property management company gets a calm reply drafted for approval that never discusses a tenant's account or dispute in public.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their reply policy and a few approved replies. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Maintenance request triage assistant",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Tenants describe the problem and upload a photo; the assistant asks the right follow-ups, marks emergencies for the on-call phone and drafts the work order for the right vendor.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their emergency rules, vendor list and work order format. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Application status texts",
+      "kind": "automation",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 50,
+      "monthlyMax": 120,
+      "pitchLine": "\"Rental applicants get a text at each step, received, screening, decision, so the leasing office stops answering 'did you get my application'.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their application steps and portal export."
+    },
+    {
+      "name": "Vacancy write-ups screened for fair housing wording",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"From a rental's beds, baths and features, it drafts the vacancy ad and flags phrases about who should live there before anything gets posted.\"",
+      "whenAndWhatItTakes": "Month 3. Needs past rental ads they liked. Comes with the AI maintenance retainer; staff approve every ad."
+    },
+    {
+      "name": "Rent comparables drafter for owner analyses",
+      "kind": "ai",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"For each rental analysis request, it pulls the company's own leased comparables nearby and drafts a rent range for the property manager to review and send.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their lease history by address. Comes with the AI maintenance retainer; the manager sets every range."
+    },
+    {
+      "name": "Lease renewal reminder sequence",
+      "kind": "automation",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Ninety days before a lease ends, the owner gets a renewal recommendation request and the tenant gets an intent-to-renew form, on a schedule the manager sets.\"",
+      "whenAndWhatItTakes": "Month 4. Needs lease end dates and their renewal wording."
+    },
+    {
+      "name": "New owner onboarding checklist",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"A new rental owner uploads the deed, insurance, keys inventory and bank details through one checklist, and the property manager sees what's missing.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their onboarding document list."
+    },
+    {
+      "name": "Move-in and move-out inspection app",
+      "kind": "software",
+      "oneTimeMin": 2500,
+      "oneTimeMax": 6000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"Walk each rental room by room with a phone, shots tagged to each item, and a dated inspection report goes to the owner and tenant the same day.\"",
+      "whenAndWhatItTakes": "Month 6. Needs their inspection checklist and report layout."
+    },
+    {
+      "name": "Move-out comparison and deposit itemisation drafts",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"It compares move-in and move-out inspection photos room by room and drafts a deposit itemisation for the property manager to check against the lease and state rules.\"",
+      "whenAndWhatItTakes": "Month 7, after the inspection app. Comes with the AI maintenance retainer; the manager decides every deduction."
+    },
+    {
+      "name": "Vendor work order board",
+      "kind": "software",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"Every rental work order, vendor, owner approval limit and completion photo on one board, so nobody calls three vendors to find out if the water heater got done.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their vendor list and owner approval limits."
+    },
+    {
+      "name": "HOA violation letter drafts",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"From a drive-by note and a photo, it drafts the HOA violation letter citing the association's own rule, for the community manager to approve.\"",
+      "whenAndWhatItTakes": "Month 6, if they manage HOAs. Needs each association's governing rules. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "HOA board meeting packet builder",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Agenda, financials, violation log and vendor bids for each HOA board meeting assembled into one packet, posted for the board a week ahead.\"",
+      "whenAndWhatItTakes": "Month 6. Needs each association's meeting calendar and report formats."
+    },
+    {
+      "name": "Owner monthly note drafter",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"With each owner statement, a short draft note in plain words: rent collected, repairs done, anything coming up on their rental, for the property manager to edit.\"",
+      "whenAndWhatItTakes": "Month 6. Needs their statement export and tone. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Late rent reminder sequence",
+      "kind": "automation",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 50,
+      "monthlyMax": 120,
+      "pitchLine": "\"Tenants get polite rent reminders before and after the due date on the schedule the lease and state rules allow, so the office only calls the real problems.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their lease terms and wording reviewed against state notice rules."
+    },
+    {
+      "name": "Leasing and maintenance applicant screener",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"Applicants for a leasing agent or maintenance tech role at the property management company answer your questions about licences, tools and on-call, and you only interview the fits.\"",
+      "whenAndWhatItTakes": "Whenever they post a role. Needs their must-haves. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Doors and margin dashboard",
+      "kind": "software",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 6000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"See doors under management, owner churn, vacancy days and maintenance hours per rental, so the owner of the company knows which properties are worth keeping.\"",
+      "whenAndWhatItTakes": "Month 9. Needs portal exports and staff time by property."
+    },
+    {
+      "name": "Unit turnover tracker",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"From notice to vacate through cleaning, paint, repairs, photos and listing, every rental turnover's steps and dates on one tracker.\"",
+      "whenAndWhatItTakes": "Month 7, before the summer leasing rush. Needs their turnover steps and vendors."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Owner proposal page as a subscription for managers",
+      "whoPays": "Property management companies, monthly",
+      "min": 49,
+      "max": 149,
+      "unit": "monthly",
+      "pitchLine": "\"The owner proposal, fee table and rental analysis request I built for one property manager plug into any management company's existing portal site.\"",
+      "whyItWorks": "Most managers have a portal and no owner page, so the add-on sells without replacing anything."
+    },
+    {
+      "route": "Residential property managers' association template",
+      "whoPays": "The state or regional chapter",
+      "min": 2000,
+      "max": 8000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer every member property management company an owner page template with screening criteria and fair housing notices done right.\"",
+      "whyItWorks": "Chapters push professional standards, and a compliant template is a benefit members use."
+    },
+    {
+      "route": "Multi-office management group roll-out",
+      "whoPays": "The management group, per office",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "pitchLine": "\"Each property management office needs its own areas, rentals and staff under one brand. I build the owner and tenant pages once and add each office.\"",
+      "whyItWorks": "One contract becomes many offices on the same structure."
+    },
+    {
+      "route": "Leasing sites for build-to-rent communities",
+      "whoPays": "The build-to-rent developer",
+      "min": 5000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"New rental communities need leasing sites with floor plans, criteria and tours. The property manager you built for may already be operating one.\"",
+      "whyItWorks": "Developers have launch budgets and want the local manager's leasing process online on day one."
+    },
+    {
+      "route": "Local operator pages for out-of-state rental investors",
+      "whoPays": "The investment fund or investor group",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Investors buying rentals in {City} from afar need a page showing their local property manager, reporting and maintenance process to reassure their own investors.\"",
+      "whyItWorks": "Funds need credible local partners on paper, and the client manager is that partner."
+    },
+    {
+      "route": "Template for HOA-only management firms",
+      "whoPays": "HOA management companies",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"The HOA management section I built works on its own for firms that only manage associations, with board enquiry, resident documents and meeting notices.\"",
+      "whyItWorks": "HOA firms have the same board-facing needs and rarely a site that speaks to volunteers."
+    },
+    {
+      "route": "White-label for agencies serving landlords",
+      "whoPays": "The agency, per management client",
+      "min": 700,
+      "max": 1800,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency signs property management companies and builds owner pages from scratch. License mine with the fee table and criteria pages already done.\"",
+      "whyItWorks": "Agencies own the relationship; you sell them the owner-acquisition structure."
+    },
+    {
+      "route": "Student rental kit for landlords near campus",
+      "whoPays": "Student-housing landlords and managers",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "pitchLine": "\"Near campus, rentals lease by the bedroom on the academic calendar. A student rental site with parent guarantor forms and roommate matching fits every landlord there.\"",
+      "whyItWorks": "Student rentals follow one calendar, so the kit sells to every landlord at once."
+    },
+    {
+      "route": "Vacation rental managers",
+      "whoPays": "The short-term rental management company",
+      "min": 2000,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"Short-term rental managers need the same owner proposal and statement pages, with a guest booking side instead of tenants. Your client can introduce the ones they know.\"",
+      "whyItWorks": "The owner-acquisition half carries straight over, and these managers fight for owners too."
+    },
+    {
+      "route": "Landlord recruitment pages for housing authorities",
+      "whoPays": "The local housing authority",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Housing authorities need landlords to accept vouchers. A clear page for rental owners explaining inspections, payments and contacts, built by someone who knows property management.\"",
+      "whyItWorks": "Authorities have outreach budgets for landlord recruitment and value a builder who speaks the owner's language."
+    },
+    {
+      "route": "One manager per submarket",
+      "whoPays": "A property manager in an open submarket",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I build for one property management company per part of town, so owners never see my work on two competing sites. Your side of {City} is still open.\"",
+      "whyItWorks": "Managers compete for the same owners by area, which makes exclusivity worth something."
+    },
+    {
+      "route": "Move managers off portal-only sites",
+      "whoPays": "Property managers whose site is a portal login",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "pitchLine": "\"Managers whose whole website is a portal login get a real owner page in front of it, without changing the portal tenants already use.\"",
+      "whyItWorks": "It's an add-on, not a migration, so the decision is small and quick."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Property management site build plus care plan",
+      "min": 2200,
+      "max": 3800,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The property management site and the care plan go on one contract, so a new rental or a fee change is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Google profile posts for rentals and owner tips",
+      "min": 150,
+      "max": 350,
+      "unit": "monthly",
+      "trigger": "The first owner enquiry arrives through the rental analysis form.",
+      "line": "\"An owner found you through the rental analysis page. Weekly posts keep the next owner finding the property manager who looks active.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "Owner review requests at lease renewal",
+      "min": 79,
+      "max": 179,
+      "unit": "monthly",
+      "trigger": "The first lease renewals since launch go through smoothly.",
+      "line": "\"Those renewals went well. Let's ask each rental owner for a review so owners outweigh the tenant noise.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Maintenance request triage assistant",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "trigger": "Sixty days of maintenance requests, and the on-call phone rings for non-emergencies.",
+      "line": "\"The on-call phone is ringing for dripping taps. Let the assistant sort maintenance before it reaches a person.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Self-scheduled showings for vacant rentals",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "trigger": "Leasing season starts with several vacancies at once.",
+      "line": "\"Four vacancies and one leasing agent. Let qualified applicants book their own rental showings.\""
+    },
+    {
+      "rung": 6,
+      "day": 150,
+      "offer": "Owner enquiry and rental analysis pipeline",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "trigger": "Owner enquiries reach several a month and one goes unanswered.",
+      "line": "\"An owner enquiry slipped last week. Put every owner lead on one board until the management agreement is signed.\""
+    },
+    {
+      "rung": 7,
+      "day": 240,
+      "offer": "Move-in and move-out inspection app",
+      "min": 2500,
+      "max": 6000,
+      "unit": "one-time",
+      "trigger": "A deposit dispute comes down to missing move-in photos.",
+      "line": "\"That deposit dispute came down to missing photos. Dated rental inspections settle it before it starts.\""
+    },
+    {
+      "rung": 8,
+      "day": 365,
+      "offer": "Doors and margin dashboard",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "trigger": "Their door count grows past what the owner can track by memory, at year-end planning.",
+      "line": "\"A year of growth means some rentals cost more to manage than they pay. Let's see which ones.\""
+    }
+  ]
+}

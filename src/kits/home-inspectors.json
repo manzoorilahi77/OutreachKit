@@ -1,0 +1,866 @@
+{
+  "schemaVersion": 1,
+  "category": "Home inspectors",
+  "slug": "home-inspectors",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Pro family batch, booking archetype. Realtor referral page is the headline feature. Copy never promises an inspection finds everything and never uses pass or fail. Licence numbers, memberships and standards of practice are bracketed placeholders. No report or scheduling software names."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Realtor partner page for inspection bookings",
+      "contains": "How agents book an inspection for a buyer, report delivery to the agent with the buyer's permission, scheduling inside the option or contingency period, and a plain note that no referral fees are paid",
+      "why": "Most inspections are booked on an agent's recommendation. A page that makes agents' lives easy is the best marketing an inspector can have."
+    },
+    {
+      "section": "Sample inspection report",
+      "contains": "A downloadable sample report with photos, the summary page, how findings are grouped (safety, repair, maintenance, monitor) and how quickly reports are delivered",
+      "why": "Buyers and agents choose inspectors by report quality. Seeing a real sample before booking settles the choice."
+    },
+    {
+      "section": "Radon, sewer scope and termite add-ons explained",
+      "contains": "When radon testing, sewer scope, termite and wood-destroying insect inspection, mold sampling, pool, well and septic checks are worth adding, with the price of each",
+      "why": "Buyers don't know which add-ons apply to their house. A plain guide sells the right ones and saves the phone call."
+    },
+    {
+      "section": "Inspection day, start to finish",
+      "contains": "How long the home inspection takes by house size, whether the buyer should attend, utilities on and attic or crawlspace access, and the walk-through at the end",
+      "why": "First-time buyers are nervous about inspection day. Knowing what to expect makes them book the inspector who explained it."
+    },
+    {
+      "section": "Pre-listing inspections for sellers",
+      "contains": "Why a seller might inspect before listing, what they receive, how repairs can be handled before buyers see the house, and a seller booking path",
+      "why": "Sellers are a second audience that books in the quiet months. A separate page catches listing agents who recommend it."
+    },
+    {
+      "section": "New construction phase inspections",
+      "contains": "Pre-drywall, final walk and eleven-month builder warranty inspections, what each phase covers and how to coordinate access with the builder",
+      "why": "New-build buyers assume an inspection isn't needed. This page explains the phases and turns builder communities into steady work."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C6",
+      "siteType": "local-conversion",
+      "name": "Book the Inspection",
+      "heroLayout": "split-photo",
+      "mood": [
+        "quick",
+        "clear",
+        "dependable"
+      ],
+      "bestFor": "Single-inspector companies who need the price menu, next open slot and the book button working for buyers and agents",
+      "pairsWithTier": "starter",
+      "headlineSample": "Home inspections in {City}, report the same day",
+      "whyItFits": "Cobalt and a neutral grotesque read clean and technical. Price menu, next slot and Book now, with the licence placeholder in the hero."
+    },
+    {
+      "id": "b",
+      "themeId": "C2",
+      "siteType": "booking-first",
+      "name": "Buyer's Side",
+      "heroLayout": "split-photo",
+      "mood": [
+        "reassuring",
+        "thorough",
+        "calm"
+      ],
+      "bestFor": "Established inspection companies booking buyers, sellers and agents online, with add-ons chosen at checkout",
+      "pairsWithTier": "standard",
+      "headlineSample": "A careful home inspection before you buy in {City}",
+      "whyItFits": "The family's Private Vault combo. Warm cream and an old-style serif feel like a trusted advisor, which is the role an inspector plays for a nervous buyer."
+    },
+    {
+      "id": "c",
+      "themeId": "C50",
+      "siteType": "editorial-trust",
+      "name": "The Report Room",
+      "heroLayout": "type-led",
+      "mood": [
+        "precise",
+        "technical",
+        "candid"
+      ],
+      "bestFor": "Multi-inspector firms that win on report quality and education, with sample reports, add-on guides and agent resources",
+      "pairsWithTier": "premium",
+      "headlineSample": "{City} home inspections with reports people actually read",
+      "whyItFits": "A mono-forward type and a data-sheet palette suit a firm that sells precision. Sample reports and guides carry the page."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your Google listing has strong reviews but no website, so a buyer whose agent gave them three home inspector names can't book you or see a sample report.",
+      "hook": "Open their Maps listing and confirm there's no Website button. Screenshot it for when they reply.",
+      "linkLine": "Here's what could sit behind that button for a home inspector: {demo-link}"
+    },
+    {
+      "angle": "Facebook-only link",
+      "line": "The website on your listing opens a Facebook page. A buyer with an inspection deadline needs your price, your next open slot and a book button, not a feed of attic photos.",
+      "hook": "Tap their Website link and confirm it lands on Facebook. Note the latest finding they posted.",
+      "linkLine": "A home inspection page built for booking: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "I opened your inspection site on my phone and the schedule button didn't respond. Buyers book a home inspector on their phone, usually the evening their offer is accepted.",
+      "hook": "Only if they have a site. Load it on your phone and try to book. Screenshot it for when they reply.",
+      "linkLine": "Your home inspection site rebuilt for a phone: {demo-link}"
+    },
+    {
+      "angle": "No online booking",
+      "line": "There's no way to book your home inspection online. With a short contingency window, a buyer who can't pick a slot at 9pm books whoever lets them.",
+      "hook": "Check their listing, social pages and any site for a booking link. If there's none, the angle holds.",
+      "linkLine": "Online home inspection booking with add-ons: {demo-link}"
+    },
+    {
+      "angle": "No prices shown",
+      "line": "Nothing on your profile says what a home inspection costs by house size. Buyers comparing inspectors on a deadline pick the one who shows a price.",
+      "hook": "Check every profile for a price or a 'from' figure. If there's none, the angle holds.",
+      "linkLine": "Inspection prices by house size, shown up front: {demo-link}"
+    },
+    {
+      "angle": "Thoroughness reviews",
+      "line": "Your reviews mention an inspector who spent hours in the crawlspace and explained every item at the walk-through. Buyers choosing an inspector never see that off your listing.",
+      "hook": "Read their reviews and copy one phrase about thoroughness or clear explanations. Quote it back if they reply.",
+      "linkLine": "Those inspection reviews beside a sample report: {demo-link}"
+    },
+    {
+      "angle": "Spring buying season",
+      "line": "Spring is when inspection calendars in {City} fill up. An inspector whose open slots show online gets the buyer whose agent is chasing a date.",
+      "hook": "Use this from February to April. Name the month in the reply.",
+      "linkLine": "A home inspection booking page ready for spring: {demo-link}"
+    },
+    {
+      "angle": "Offers accepted at night",
+      "line": "Offers get accepted at night and the inspection clock starts right away. When your number goes to voicemail, the agent texts the next home inspector on their list.",
+      "hook": "Call their listed number after hours. If it goes to a generic voicemail, the angle holds.",
+      "linkLine": "Home inspection booking that works at night: {demo-link}"
+    },
+    {
+      "angle": "Adding an inspector",
+      "line": "Saw you're bringing on a second home inspector. A site with each inspector's bio and booking gets the new one busy without you handing over your own referrals.",
+      "hook": "Only if they posted about hiring or training a new inspector. Note the date.",
+      "linkLine": "A home inspection site with a page for each inspector: {demo-link}"
+    },
+    {
+      "angle": "Counties served",
+      "line": "Your listing covers {City} and the surrounding towns, but nothing says if you'll drive to {Neighborhood}. Buyers there search 'home inspector' plus their town.",
+      "hook": "Find the towns mentioned in their reviews. Use the one furthest from their base.",
+      "linkLine": "Home inspection pages for each area you cover: {demo-link}"
+    },
+    {
+      "angle": "Realtor referrals",
+      "line": "Most of your home inspections probably come from agents. A realtor partner page that lets them book for a buyer and get the report quickly is the thing agents remember.",
+      "hook": "Look for reviews or posts mentioning agents by name. Never claim a specific agent refers to them.",
+      "linkLine": "A realtor partner page for your inspection company: {demo-link}"
+    },
+    {
+      "angle": "Licence not visible",
+      "line": "Your home inspector licence is on the state lookup, but buyers never see it. Showing the licence, insurance and standards of practice is what separates you from someone with a flashlight.",
+      "hook": "Check the state inspector licence lookup if your state has one. Note that a record exists; never quote a number you didn't see.",
+      "linkLine": "Licence, insurance and standards on one inspection page: {demo-link}"
+    },
+    {
+      "angle": "No sample report",
+      "line": "There's no sample of your inspection report anywhere online. Buyers and agents choose inspectors by the report, and yours never gets compared.",
+      "hook": "Check their site and posts for a sample report or report screenshots. If there's none, the angle holds.",
+      "linkLine": "A sample home inspection report page: {demo-link}"
+    },
+    {
+      "angle": "Radon and sewer add-ons",
+      "line": "Your posts mention radon and sewer scope, but buyers don't know when to add them. A page that explains each add-on with its price sells them without a phone call.",
+      "hook": "Only if they offer add-on tests. Note which ones they mention.",
+      "linkLine": "A home inspection add-ons page with prices: {demo-link}"
+    },
+    {
+      "angle": "A specific recent find",
+      "line": "That {specific recent job} you posted is exactly the kind of inspection find that makes a buyer glad they hired you. It belongs on a page that explains what you look for.",
+      "hook": "Pick their newest post about a finding and name it exactly, without the property address.",
+      "linkLine": "That inspection find, explained on your own page: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, that {specific recent job} you posted is a great catch, the kind a buyer remembers.\n\nI looked for home inspectors in {City} and found {Business Name}, but no site where a buyer or their agent can see your price, a sample report and book a slot. I put together a sample inspection site to see how it would look, with marked placeholders where your photos would go.\n\nWant me to send it over?",
+    "dm2": "{Owner}, following up in case my message got lost in a crawlspace. Here's the sample home inspection site for {Business Name}: {demo-link}\n\nIt has online booking with add-ons, prices by house size, a sample report page, a realtor partner page and an inspection-day guide for first-time buyers. If it's not for you, just say so and I'll leave you be.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for home inspectors here in {City}. I sent you a message a few days ago, did it come through?\"\n\nIF NO:\n\"No worries, you're probably in an attic half the day. Short version: I built a sample site for {Business Name} with online booking, a sample report page and a page just for realtors, with marked placeholders where your photos would go. Can I text you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"This isn't a lead list. It's a booking site you own, with a realtor page agents can send buyers to. The build runs {Build Range} depending on add-on pages and areas, then {Care Range} a month for hosting and price changes. For you I'd quote about {Build Price}, which is a handful of inspections.\"\n\"Can I walk you through it for ten minutes after your last inspection one day this week?\"\n\nCLOSE:\n\"I'll send a short scope and a deposit invoice. We start once it clears, and it's taking bookings before the spring rush.\"",
+    "objections": [
+      {
+        "objection": "All my work comes from realtors.",
+        "handler": "\"That's exactly why the realtor partner page matters. Agents send buyers to a link, and when that link books the inspection in a minute, they keep sending them.\""
+      },
+      {
+        "objection": "My report software gives me a booking page.",
+        "handler": "\"It does, and it looks like every other inspector using it. Your own site has the booking plus your sample report, prices, add-on guides and the realtor page, under your name.\""
+      },
+      {
+        "objection": "I don't want to post prices. Every house is different.",
+        "handler": "\"Prices by square footage with add-ons listed is what buyers on a deadline need. Anything unusual gets a quote, and the site says so.\""
+      },
+      {
+        "objection": "Winter is slow. I can't spend money now.",
+        "handler": "\"Winter is the right time to build it, so it's ranking and taking bookings when spring offers start getting accepted.\""
+      },
+      {
+        "objection": "My nephew built me a site already.",
+        "handler": "\"Good. If it lets a buyer book at 9pm with add-ons and shows a sample report, keep it. If not, the realtor page and booking flow are the parts I'd add.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}, for online booking, the sample report page, the realtor page and add-on guides. That's a handful of inspections, once.\""
+      }
+    ],
+    "email": {
+      "subject": "Booking site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for home inspectors around {City}. {Business Name} has great reviews, but no site where a buyer or their agent can see your prices, look at a sample report and book a slot on the spot.\n\nI built a sample first rather than ask for your time: online booking with radon, sewer scope and termite add-ons, prices by house size, a sample report page, a realtor partner page and an inspection-day guide for first-time buyers, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you'd like it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and price changes. If not, no problem, it comes down at the end of the month.\n\nWorth ten minutes on the phone this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"{Owner}, it's {Your Name}. I build websites for home inspectors in {City}, and I made a sample booking site for {Business Name} with a realtor page. I'll text the link. Have a look when you're out of the attic. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm taking the {Business Name} home inspection demo down on Friday to free up the space.\n\nWant me to keep it up? One word is fine either way.",
+    "nurture": "Hi {Owner}, spring offers are about to start and inspection calendars will fill fast. Thought of you.\n\nThe home inspection site is still here whenever you want it, same price as before. {demo-link} if you'd like another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to a handful of inspections, never to an hourly rate. Inspectors count in inspections per week.",
+      "Online booking with add-ons is the core of the build, not an extra. Without it the site doesn't earn.",
+      "Price the realtor partner page as its own line; it sells to a different reader and earns the most referrals.",
+      "Add-on test pages are quoted per test, only for tests they actually offer and are licensed or trained for.",
+      "Never write 'we find everything', 'pass' or 'fail'. Inspections report observed conditions on the day.",
+      "Sell in late autumn and winter, the quiet season, so the site is ready for spring offers."
+    ],
+    "lineItems": [
+      {
+        "item": "Online booking with add-ons and agent details",
+        "min": 400,
+        "max": 1000,
+        "unit": "one-time",
+        "description": "Max with pricing by square footage and age, add-on selection, buyer's agent fields and agreement e-signature before the visit.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Realtor partner page with agent booking",
+        "min": 300,
+        "max": 700,
+        "unit": "one-time",
+        "description": "Max with a book-for-my-client form, agent report delivery preferences and a printable card for agents' buyer packets.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Add-on test page (each)",
+        "min": 150,
+        "max": 400,
+        "unit": "per-page",
+        "description": "Max when the page explains when the test matters locally, shows a sample result and books the add-on directly.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Sample report page with walkthrough",
+        "min": 200,
+        "max": 500,
+        "unit": "one-time",
+        "description": "Max with an annotated sample report and a short video walk through how to read it.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Area service page (each)",
+        "min": 150,
+        "max": 400,
+        "unit": "per-page",
+        "description": "Max when each page notes local housing types, common findings for that area and a review from there.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "New construction phase inspection page",
+        "min": 250,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max with a booking path for each phase and notes on coordinating access with local builders.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Inspector headshot and truck photo session",
+      "min": 200,
+      "max": 500,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A short session for the inspector's headshot, the truck and a few shots of the tools in use. Buyers want to see who's going into the attic of their future home.\"",
+      "when": "Month 2, or when a new inspector joins."
+    },
+    {
+      "name": "Google profile posts of inspection finds",
+      "min": 150,
+      "max": 300,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A weekly post of an anonymous inspection find, a double-tapped breaker, a missing flashing, so the inspector's listing shows the thoroughness buyers are looking for.\"",
+      "when": "Day 30, once the site is live."
+    },
+    {
+      "name": "Review requests after the report is delivered",
+      "min": 79,
+      "max": 179,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"The day after the inspection report goes out, the buyer gets a short text asking how it went. Those reviews are what agents check before recommending an inspector.\"",
+      "when": "Day 30. The easiest second sale."
+    },
+    {
+      "name": "Realtor office lunch-and-learn kit",
+      "min": 300,
+      "max": 700,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A short slide deck and handout on common inspection findings for agent office meetings, ending with the realtor partner page. It's how inspectors get on agents' lists.\"",
+      "when": "Month 2, once the realtor page is live."
+    },
+    {
+      "name": "Buyer packet inserts for agents",
+      "min": 150,
+      "max": 400,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A one-page insert for agents' buyer packets explaining what a home inspection covers, with a code to book. Agents like handing buyers something useful.\"",
+      "when": "Month 2, with the lunch-and-learn kit."
+    },
+    {
+      "name": "Truck wrap and yard sign artwork",
+      "min": 300,
+      "max": 900,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Truck lettering and a small 'inspection in progress' sign with the site on it. The truck sits in a driveway for hours while the neighbours wonder about their own house.\"",
+      "when": "Right after launch."
+    },
+    {
+      "name": "Annual home maintenance reminders to past clients",
+      "min": 100,
+      "max": 250,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Past home inspection clients get a seasonal note about the furnace, gutters and smoke alarms, signed by the inspector. When they sell, they remember who to recommend.\"",
+      "when": "Month 4, once there's a past-client list."
+    },
+    {
+      "name": "Short inspection find video clips",
+      "min": 300,
+      "max": 700,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Half a day filming short clips of the inspector explaining common finds. Agents share them with buyers, and each one ends on the booking page.\"",
+      "when": "Month 4, in the quiet season."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Buyer's agents who recommend the inspector",
+        "whoPays": "The realtor or team",
+        "min": 2000,
+        "max": 3500,
+        "unit": "one-time",
+        "pitchLine": "\"The agents who keep your home inspector number in their phone need niche neighbourhood pages. You see them every week at inspections.\"",
+        "whyItWorks": "Inspectors spend hours with agents and earn their trust, which makes the introduction natural."
+      },
+      {
+        "route": "Radon mitigation contractors",
+        "whoPays": "The radon mitigation company",
+        "min": 1500,
+        "max": 3000,
+        "unit": "one-time",
+        "pitchLine": "\"Every high radon result on your inspections sends a buyer looking for a mitigator. Those contractors need a clear site, and you can introduce me.\"",
+        "whyItWorks": "Mitigators get their work from test results and value the people who run the tests."
+      },
+      {
+        "route": "Pest control companies doing termite work",
+        "whoPays": "The pest control company",
+        "min": 1800,
+        "max": 3500,
+        "unit": "one-time",
+        "pitchLine": "\"When your termite inspection finds activity, someone treats it before closing. That pest control company needs a site with a real estate treatment page.\"",
+        "whyItWorks": "Real estate treatments are deadline work, and pest firms want to be the name inspectors and agents remember."
+      },
+      {
+        "route": "Sewer line plumbers",
+        "whoPays": "The plumbing company",
+        "min": 1800,
+        "max": 3500,
+        "unit": "one-time",
+        "pitchLine": "\"A sewer scope that finds a cracked line during an inspection means a plumber quote within days. The plumbers who answer fast need a page for real estate deadlines.\"",
+        "whyItWorks": "Plumbers value closing-deadline work, and the inspector is who first sees the problem."
+      },
+      {
+        "route": "Insurance agents needing condition reports",
+        "whoPays": "The insurance agency",
+        "min": 1800,
+        "max": 3000,
+        "unit": "one-time",
+        "pitchLine": "\"Insurance agents who order roof and system condition inspections for older homes send you work. Their agency site is usually a carrier template.\"",
+        "whyItWorks": "Agents and inspectors share buyers at closing, and agents trust an inspector's recommendation."
+      },
+      {
+        "route": "Small home builders",
+        "whoPays": "The builder",
+        "min": 2500,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"The small builders whose homes you inspect at pre-drywall need sites that show their build quality. A good phase inspection relationship opens that door.\"",
+        "whyItWorks": "Builders who welcome inspections are proud of their work and want to show it."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Repair request drafts for buyer's agents",
+        "whoPays": "The realtor, monthly",
+        "min": 99,
+        "max": 199,
+        "unit": "monthly",
+        "pitchLine": "\"Agents turn your inspection report into a repair request at midnight. An assistant drafts the request from the summary for the agent and buyer to edit.\"",
+        "whyItWorks": "It saves agents time on every deal, and they keep recommending the inspector whose reports it reads cleanly."
+      },
+      {
+        "route": "Mitigation quote drafts for radon contractors",
+        "whoPays": "The radon mitigation company, monthly",
+        "min": 79,
+        "max": 199,
+        "unit": "monthly",
+        "pitchLine": "\"Radon mitigators get the inspection test result and house details and an assistant drafts a quote with the system type for them to adjust.\"",
+        "whyItWorks": "Fast quotes win deadline work, and the inspector's results arrive in a familiar format."
+      },
+      {
+        "route": "Treatment report drafts for pest control",
+        "whoPays": "The pest control company, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"After a termite treatment found by the home inspection, the technician dictates notes and gets a draft treatment report for the closing file.\"",
+        "whyItWorks": "Closings wait on paperwork, so a faster report keeps agents and inspectors sending work."
+      },
+      {
+        "route": "Sewer camera notes for plumbers",
+        "whoPays": "The plumbing company, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"Plumbers who follow up your sewer scope findings get draft notes from their camera footage with distances and defects listed, for the plumber to confirm.\"",
+        "whyItWorks": "It speeds up the quote buyers need before their inspection deadline ends."
+      },
+      {
+        "route": "Condition form intake for insurance agents",
+        "whoPays": "The insurance agency, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"Insurance agents receive condition inspection forms from inspectors and an assistant pulls roof age and system details into their quote file.\"",
+        "whyItWorks": "Agents retype these forms by hand today; pulling the fields saves time on every older home."
+      },
+      {
+        "route": "Warranty request triage for builders",
+        "whoPays": "The builder, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"New homeowners send builders warranty requests after the eleven-month inspection. An assistant sorts them by trade and urgency for the builder's site manager.\"",
+        "whyItWorks": "Builders drown in warranty emails, and organised requests protect their reputation."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Missed-call text-back with the inspection booking link",
+      "kind": "automation",
+      "oneTimeMin": 0,
+      "oneTimeMax": 300,
+      "monthlyMin": 79,
+      "monthlyMax": 149,
+      "pitchLine": "\"A call you miss while you're on a roof or in a crawlspace gets a text with the inspection booking link and your next open slots.\"",
+      "whenAndWhatItTakes": "Day 30. Needs their number forwarded and one line of wording."
+    },
+    {
+      "name": "Agent booking portal",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Agents log in once and book a home inspection for any buyer, see the status and get the report when the buyer allows it.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their report delivery rules and the agents they want to invite first."
+    },
+    {
+      "name": "Inspection agreement and payment before the visit",
+      "kind": "automation",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 39,
+      "monthlyMax": 99,
+      "pitchLine": "\"The buyer signs the inspection agreement and pays when they book, so the inspector never chases a signature in the driveway.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their agreement text and the payment account they already use."
+    },
+    {
+      "name": "Review reply drafts for inspection reviews",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Each new review gets a reply drafted in the inspector's voice that thanks the buyer without naming the property or the findings.\"",
+      "whenAndWhatItTakes": "Month 2. Needs ten past replies. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Buyer-friendly report summary drafts",
+      "kind": "ai",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"From the finished inspection report, it drafts a one-page plain-language summary of safety items and major repairs for the inspector to check before it goes to the buyer.\"",
+      "whenAndWhatItTakes": "Month 4. Needs a set of past reports and summaries they'd sign. Comes with the AI maintenance retainer; the inspector approves every summary."
+    },
+    {
+      "name": "Report delivery with agent notification",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"When the inspection report is published, the buyer gets it and the agent gets a notice if the buyer agreed, with a link to book a re-inspection later.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their report delivery method and the buyer permission wording."
+    },
+    {
+      "name": "Add-on suggester at booking",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"When a buyer enters the home's age and foundation type, the booking page suggests sewer scope, radon or termite add-ons using the inspector's own rules.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the inspector's rules for when each add-on makes sense."
+    },
+    {
+      "name": "Voice notes to report narrative drafts",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"Talk through each finding during the home inspection and get draft narrative comments in your report style, so the report is mostly written before you leave.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their comment library and report template. Comes with the AI maintenance retainer; the inspector edits every comment."
+    },
+    {
+      "name": "Inspector calendar and route board",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Every booked inspection across inspectors on one board with drive times and add-on equipment needed, so nobody shows up without the radon monitor.\"",
+      "whenAndWhatItTakes": "Month 6, when there are two or more inspectors. Needs their calendars and equipment list."
+    },
+    {
+      "name": "Radon monitor placement tracker",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Each radon monitor tracked from placement to pickup with the address and start time, so a test never runs short and no monitor gets left behind.\"",
+      "whenAndWhatItTakes": "Month 4, if they offer radon. Needs their monitor list and test length rules."
+    },
+    {
+      "name": "Defect photo tagging assistant",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"Photos from the home inspection get a suggested system and defect tag, roof, electrical, plumbing, for the inspector to confirm before they drop into the report.\"",
+      "whenAndWhatItTakes": "Month 6. Needs a library of tagged past photos. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Agent referral relationship board",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"See which agents booked home inspections this quarter, who went quiet and who to visit next, without any referral fees involved.\"",
+      "whenAndWhatItTakes": "Month 5. Needs the agent field from bookings and their office visit notes."
+    },
+    {
+      "name": "After-hours inspection booking assistant",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"At 10pm it answers 'can you inspect before Friday' and 'what's included', offers the open slots and books the home inspection with add-ons.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their price list, calendar and FAQ. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Re-inspection booking after repairs",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Once the seller finishes repairs, the buyer or agent books a re-inspection of the listed items with one link, priced and scheduled automatically.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their re-inspection price and rules."
+    },
+    {
+      "name": "Past-client maintenance reminder list",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 39,
+      "monthlyMax": 99,
+      "pitchLine": "\"Every past home inspection client tagged by the systems in their report, so the furnace reminder goes to furnace owners and the sump reminder to basement owners.\"",
+      "whenAndWhatItTakes": "Month 6. Needs a client export with report system notes."
+    },
+    {
+      "name": "Agent question assistant on report items",
+      "kind": "ai",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"Agents ask 'where's the water heater note' and it points to the exact inspection report section, and passes anything needing an opinion to the inspector.\"",
+      "whenAndWhatItTakes": "Month 7. Needs report access rules and buyer permission. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Trainee inspector applicant screener",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Applicants for a trainee home inspector role answer questions about trade background, licensing progress and attic comfort, and you only meet the ones who fit.\"",
+      "whenAndWhatItTakes": "Whenever they recruit. Needs their must-haves. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Sample report and finding gallery manager",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Add an anonymised inspection find with one upload and it appears in the site's gallery and sample report pages, with addresses always stripped.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their photo privacy rule."
+    },
+    {
+      "name": "Spanish report summary drafts",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"Spanish-speaking buyers get a draft Spanish summary of their home inspection report, reviewed by a fluent person before it's sent.\"",
+      "whenAndWhatItTakes": "Month 7, only where a fluent reviewer is available. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Inspections by agent and add-on dashboard",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"See home inspections per week, add-on take-up and which agents send the most, so the owner knows where to spend the next lunch-and-learn.\"",
+      "whenAndWhatItTakes": "Month 9. Needs six months of booking data."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Realtor partner page as a subscription for inspectors",
+      "whoPays": "Home inspectors, monthly",
+      "min": 29,
+      "max": 99,
+      "unit": "monthly",
+      "pitchLine": "\"The realtor partner page and agent booking portal I built for one home inspector work for any inspector with their own prices loaded.\"",
+      "whyItWorks": "Every inspector depends on agents, and the page is the same with different prices and areas."
+    },
+    {
+      "route": "Home inspector association member kit",
+      "whoPays": "The state home inspector association",
+      "min": 1500,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer members a booking site template with sample report, realtor page and add-on guides, built around your state's standards of practice.\"",
+      "whyItWorks": "Associations sell membership on business help, and members ask for marketing support."
+    },
+    {
+      "route": "Graduate sites for inspector training schools",
+      "whoPays": "The inspector training school, per graduate",
+      "min": 199,
+      "max": 499,
+      "unit": "one-time",
+      "pitchLine": "\"Every new home inspector leaves training needing a booking site. Schools can bundle it with the course and graduates start booking sooner.\"",
+      "whyItWorks": "Schools compete on graduate success, and the template is already finished."
+    },
+    {
+      "route": "Multi-inspector firm roll-out",
+      "whoPays": "The inspection firm, per inspector",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "pitchLine": "\"Each inspector at a growing firm gets a bio, booking link and area page on the shared home inspection site.\"",
+      "whyItWorks": "Every new inspector hire is a new page and booking calendar."
+    },
+    {
+      "route": "Inspector finder for a testing lab",
+      "whoPays": "The radon or mold testing lab",
+      "min": 3000,
+      "max": 9000,
+      "unit": "one-time",
+      "pitchLine": "\"Labs that process inspectors' samples can offer homeowners a finder of local inspectors who use them, built from the inspection pages I already make.\"",
+      "whyItWorks": "Labs want inspector loyalty, and a finder sends inspectors work, which keeps them sending samples."
+    },
+    {
+      "route": "Partner pages for home warranty providers",
+      "whoPays": "The home warranty provider",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Warranty providers work with home inspectors to reach buyers. A partner page set with co-branded inspection pages gives them a channel.\"",
+      "whyItWorks": "Warranty providers already spend on inspector partnerships and want them to look professional."
+    },
+    {
+      "route": "Template licence for agencies serving inspectors",
+      "whoPays": "The marketing agency, per inspector",
+      "min": 500,
+      "max": 1500,
+      "unit": "one-time",
+      "pitchLine": "\"Agencies that market home inspectors can license the booking, sample report and realtor pages instead of building them per client.\"",
+      "whyItWorks": "Agencies own the inspector relationship and save build time."
+    },
+    {
+      "route": "Commercial property inspector adaptation",
+      "whoPays": "Commercial property inspection firms",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Commercial inspectors need the same sample report and booking flow, written for investors and lenders. The residential inspection build adapts directly.\"",
+      "whyItWorks": "The structure carries over, and commercial firms pay more per build."
+    },
+    {
+      "route": "Bilingual home inspection site set",
+      "whoPays": "Inspectors serving Spanish-speaking buyers",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "pitchLine": "\"The inspection-day guide, add-on pages and booking flow in Spanish fit any inspector who serves Spanish-speaking buyers in their area.\"",
+      "whyItWorks": "Translating technical inspection language well is slow, and it's done once."
+    },
+    {
+      "route": "Brokerage vetted-vendor pages",
+      "whoPays": "The real estate brokerage",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Brokerages want a vendor page agents can send buyers to: inspectors, lenders, movers. The home inspector client is the first listed, and I build the page.\"",
+      "whyItWorks": "Brokerages like organised vendor lists, and the inspector is the one with the relationship."
+    },
+    {
+      "route": "One inspector per county",
+      "whoPays": "A home inspector in an open county",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I build for one home inspection company per county, so agents never see the same site twice. The next county over is open.\"",
+      "whyItWorks": "Inspectors compete for the same agents, which makes exclusivity valuable."
+    },
+    {
+      "route": "Move inspectors off report-software templates",
+      "whoPays": "Inspectors using a generic template site",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "pitchLine": "\"Inspectors whose website is the report software's template get their own home inspection site with the booking still connected underneath.\"",
+      "whyItWorks": "They already book online, so the change is about looking like themselves, not new habits."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Home inspection site build plus care plan",
+      "min": 1500,
+      "max": 2500,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The home inspection site and the care plan go on one contract, so a new price or add-on is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Review requests after the report is delivered",
+      "min": 79,
+      "max": 179,
+      "unit": "monthly",
+      "trigger": "The first inspection booked through the new site is delivered.",
+      "line": "\"That buyer booked online and got their report. Let's ask every inspection client for a review the next day.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "Realtor office lunch-and-learn kit",
+      "min": 300,
+      "max": 700,
+      "unit": "one-time",
+      "trigger": "The realtor partner page is live and they name an agent office they'd like to visit.",
+      "line": "\"The realtor page is ready. Let's give you a short inspection talk for that agent office meeting.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Agent booking portal",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "trigger": "Sixty days of bookings show the same agents booking for several buyers.",
+      "line": "\"Those agents keep booking you for buyers. Give them a login so the next inspection takes a minute.\""
+    },
+    {
+      "rung": 5,
+      "day": 120,
+      "offer": "Buyer-friendly report summary drafts",
+      "min": 1200,
+      "max": 3000,
+      "unit": "one-time",
+      "trigger": "They mention buyers calling with questions the report already answers.",
+      "line": "\"Buyers call because the inspection report is long. A one-page summary you approve answers most of those calls.\""
+    },
+    {
+      "rung": 6,
+      "day": 180,
+      "offer": "Voice notes to report narrative drafts",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "trigger": "Spring volume has them writing reports late at night.",
+      "line": "\"You're writing inspection reports at midnight. Talk them through on site and edit drafts instead.\""
+    },
+    {
+      "rung": 7,
+      "day": 270,
+      "offer": "Inspector calendar and route board",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "trigger": "They hire or train a second inspector.",
+      "line": "\"Two inspectors and one calendar is how radon monitors get forgotten. Let's put both on one board.\""
+    },
+    {
+      "rung": 8,
+      "day": 365,
+      "offer": "Inspections by agent and add-on dashboard",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "trigger": "Their first full year on the site, in the quiet winter months.",
+      "line": "\"A year in, let's see which agents and add-ons drive the inspection business before spring.\""
+    }
+  ]
+}

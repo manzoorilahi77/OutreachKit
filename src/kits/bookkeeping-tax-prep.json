@@ -1,0 +1,869 @@
+{
+  "schemaVersion": 1,
+  "category": "Bookkeeping & tax prep",
+  "slug": "bookkeeping-tax-prep",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Pro family batch. Regulated: copy never promises a refund, a saving or an outcome, and never gives tax advice. Credentials appear only as bracketed placeholders. No software or payroll vendor names. Ranges are planning figures."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Tax season calendar and intake cut-off",
+      "contains": "Filing deadlines for individuals and businesses, quarterly estimate dates, extension cut-offs, and the date the practice stops taking new tax returns for the season",
+      "why": "Tax clients decide inside a narrow window. A visible intake cut-off turns 'I'll call in March' into a booked January appointment."
+    },
+    {
+      "section": "Tax document checklist and secure upload",
+      "contains": "Printable checklists for wage earners, sole proprietors, landlords and small businesses, a secure upload link, and a plain note on what never to send by email",
+      "why": "'What do I bring?' is the first question a new tax client has. A checklist answers it at 11pm and makes the first meeting short."
+    },
+    {
+      "section": "Catch-up and cleanup bookkeeping",
+      "contains": "How months or years of behind books get reconciled, which bank and card statements are needed, how cleanup is quoted, and what a closed set of books looks like at the end",
+      "why": "Owners who are behind feel embarrassed and wait. A calm cleanup page with no judgement is what gets them to call before the deadline does."
+    },
+    {
+      "section": "Bookkeeping by industry",
+      "contains": "Short pages for contractors, restaurants, salons, landlords and online sellers covering job costing, tips, sales tax, rental schedules and inventory, in plain words",
+      "why": "A contractor wants a bookkeeper who already knows job costing. Industry pages let each owner see their own kind of business before they book."
+    },
+    {
+      "section": "Tax notice and letter help",
+      "contains": "What to do when a tax notice arrives, how to send a copy securely, how quickly the office responds, and who may represent clients [EA or CPA credential, if held]",
+      "why": "A notice in the mailbox is the most urgent moment a tax client has, and it is often when they switch preparers. This page catches that search."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C10",
+      "siteType": "local-conversion",
+      "name": "Ledger Ready",
+      "heroLayout": "split-photo",
+      "mood": [
+        "orderly",
+        "plain",
+        "prompt"
+      ],
+      "bestFor": "Solo preparers and one-person bookkeeping offices who mostly need the phone and the tax appointment request to work",
+      "pairsWithTier": "starter",
+      "headlineSample": "Bookkeeping and tax prep for {City} owners and families",
+      "whyItFits": "Steel blue and a neutral grotesque read like a clean invoice. One appointment button, the checklist and the intake cut-off, nothing else competing."
+    },
+    {
+      "id": "b",
+      "themeId": "C2",
+      "siteType": "booking-first",
+      "name": "Year-Round Books",
+      "heroLayout": "split-photo",
+      "mood": [
+        "discreet",
+        "steady",
+        "warm"
+      ],
+      "bestFor": "Bookkeeping practices with monthly clients and a tax season, who want consultations booked and documents uploaded without phone tag",
+      "pairsWithTier": "standard",
+      "headlineSample": "Monthly books and tax returns, handled all year in {City}",
+      "whyItFits": "The family's Private Vault combo. A warm cream ground and a refined serif feel like a private office, which is what someone handing over bank statements needs to see."
+    },
+    {
+      "id": "c",
+      "themeId": "C5",
+      "siteType": "editorial-trust",
+      "name": "Counting House",
+      "heroLayout": "type-led",
+      "mood": [
+        "learned",
+        "careful",
+        "established"
+      ],
+      "bestFor": "Established tax and bookkeeping firms with enrolled agents or CPAs, advisory clients and a library of plain-language guides",
+      "pairsWithTier": "premium",
+      "headlineSample": "A {City} tax and bookkeeping practice, open all twelve months",
+      "whyItFits": "A bookish serif and an accounting-ledger palette suit a firm that wins on long explanations and years of practice, not on a bold offer."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your Google listing has a phone number and hours but no website, so someone choosing a tax preparer can't see who you help or what a return costs before they call.",
+      "hook": "Open their Maps listing and confirm there's no Website button. Screenshot it for when they reply.",
+      "linkLine": "Here's what could sit behind that button for a tax practice: {demo-link}"
+    },
+    {
+      "angle": "Facebook-only link",
+      "line": "The website link on your listing opens a Facebook page. A business owner handing over a year of bank statements wants a private office page and a secure way to send them, not a feed of tax reminders.",
+      "hook": "Tap their Website link and confirm it lands on Facebook. Note the latest deadline reminder they posted.",
+      "linkLine": "A bookkeeping page built for the client, not the feed: {demo-link}"
+    },
+    {
+      "angle": "Old free-host page",
+      "line": "The site linked from your listing still carries a free-host banner and last season's tax deadlines. People trusting you with their return notice the stale dates first.",
+      "hook": "Open the site and look for an old copyright year, last year's filing dates or a dead form. Note which one you found.",
+      "linkLine": "The same tax practice, current and quick on a phone: {demo-link}"
+    },
+    {
+      "angle": "Hard to read on a phone",
+      "line": "I opened your bookkeeping site on my phone and the services ran off the side of the screen. Most owners look for a bookkeeper on their phone after closing up for the night.",
+      "hook": "Only if they have a site. Load it on your phone and note what breaks: menu, fee table or contact form. Screenshot it for when they reply.",
+      "linkLine": "Your bookkeeping site rebuilt for a phone at night: {demo-link}"
+    },
+    {
+      "angle": "No way to book or upload",
+      "line": "There's no way to book a tax appointment or send documents except calling and dropping off a folder. A lot of new clients would rather pick a slot and upload their wage forms at 10pm.",
+      "hook": "Check the listing, social pages and any site for a booking link or upload. If there's neither, the angle holds.",
+      "linkLine": "A tax appointment and secure upload in one place: {demo-link}"
+    },
+    {
+      "angle": "Reviews nobody sees",
+      "line": "Your Google reviews mention a preparer who explained everything and answered a panicked text in April. That reassurance never reaches anyone who isn't already on your listing.",
+      "hook": "Read their reviews and copy one phrase about calm, clarity or being explained to. Quote it back if they reply.",
+      "linkLine": "Those tax client reviews next to the services they describe: {demo-link}"
+    },
+    {
+      "angle": "Before January",
+      "line": "Tax season intake starts the week the wage forms arrive. The bookkeeper with an appointment page and a checklist already up books January while everyone else is still returning voicemails.",
+      "hook": "Use this from October to early January. Name the month in the reply.",
+      "linkLine": "Ready before the first wage forms land: {demo-link}"
+    },
+    {
+      "angle": "Owners do books at night",
+      "line": "Small business owners think about their bookkeeping after the shop closes. When the only option is calling an office that shut at five, the question waits until next quarter.",
+      "hook": "Call their listed number after hours. If it goes to a generic voicemail, the angle holds.",
+      "linkLine": "A bookkeeping enquiry that works after hours: {demo-link}"
+    },
+    {
+      "angle": "Hiring seasonal preparers",
+      "line": "Saw you're hiring a seasonal tax preparer. Good preparers check whether a practice looks established before they commit a whole tax season to it.",
+      "hook": "Only if they posted a hiring note or a job listing. Note the date of the post.",
+      "linkLine": "A tax practice page with a careers section: {demo-link}"
+    },
+    {
+      "angle": "Remote clients",
+      "line": "Your posts mention bookkeeping clients outside {City}. A site that says you work remotely, with secure upload and video meetings, is what an owner two towns over types in.",
+      "hook": "Look for mentions of virtual meetings, other towns or out-of-state clients. Use the town furthest from their office.",
+      "linkLine": "Bookkeeping pages for clients near and far: {demo-link}"
+    },
+    {
+      "angle": "No fees shown",
+      "line": "Nothing on your profile says what a tax return or monthly bookkeeping costs. People don't need an exact price, but a genuine starting range is what gets them to book instead of shopping three preparers.",
+      "hook": "Check every profile for a price or a 'starting at'. If there's none anywhere, the angle holds.",
+      "linkLine": "Bookkeeping and tax fees shown as honest ranges: {demo-link}"
+    },
+    {
+      "angle": "Credentials not shown",
+      "line": "Your credentials appear in a post from last year but nowhere a new tax client would look. Showing the preparer credential, the office address and the privacy policy is the first thing that separates a real practice from a pop-up.",
+      "hook": "Look for any credential they've published themselves. Never quote a number or credential they haven't posted.",
+      "linkLine": "Credentials, privacy and fees on one tax practice page: {demo-link}"
+    },
+    {
+      "angle": "Referral-only practice",
+      "line": "Sounds like most of your bookkeeping clients come from other clients. That works until the referrer retires, and even a referred owner searches your name before handing over their books.",
+      "hook": "Look for review text like 'my friend recommended' or 'been with them for years'. Quote it back.",
+      "linkLine": "Where a referred bookkeeping client would land: {demo-link}"
+    },
+    {
+      "angle": "Tax notice season",
+      "line": "Tax notices go out in waves through the summer, and people search for help the day one arrives. A page that says what to send you and how fast you respond would catch those calls.",
+      "hook": "Use this from May to September. Check whether they mention notices or audits anywhere.",
+      "linkLine": "A tax notice help page for {Business Name}: {demo-link}"
+    },
+    {
+      "angle": "A specific recent post",
+      "line": "That {specific recent job} you posted about was a clear explanation of a tax deadline. A post like that should live on a bookkeeping site where it keeps working, not disappear down a feed.",
+      "hook": "Pick their newest helpful post, a deadline reminder or a tip, and name it exactly.",
+      "linkLine": "That tax tip, kept on a page that ranks: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, that {specific recent job} you posted was a clear, useful tax reminder.\n\nI looked for bookkeeping and tax prep in {City} and found {Business Name} on social, but no site with your fees, a document checklist and a way to book. I put together a sample page to see how it would look, with marked placeholders where your photos would go.\n\nWould you like me to send it?",
+    "dm2": "{Owner}, following up in case my note got buried under client emails. Here's the sample site for {Business Name}: {demo-link}\n\nIt has a tax appointment request, a printable document checklist, a cleanup bookkeeping page and a spot for your credentials and privacy policy. If it's not for you, just say so and I'll leave you be.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for bookkeepers and tax preparers here in {City}. I sent you a message a few days ago, did it reach you?\"\n\nIF NO:\n\"No problem, inboxes are brutal this time of year. Short version: I built a sample site for {Business Name} with appointment booking, a document checklist and secure upload, and marked placeholders where your photos would go. Can I email you the link to look at this evening?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"This isn't marketing or ads, it's a site you own. The build runs {Build Range} depending on how many industry pages you want, then {Care Range} a month for hosting and updates like new deadlines. For a practice your size I'd quote about {Build Price}, which is roughly what a couple of monthly bookkeeping clients bring in.\"\n\"Could I walk you through it for ten minutes, before the season starts?\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. Once it clears we start, and it's live before the wage forms go out.\"",
+    "objections": [
+      {
+        "objection": "All my clients come from referrals.",
+        "handler": "\"That's the best kind. A referred owner still searches your name before handing over their books. The site is what they find, and it's where you send them the checklist.\""
+      },
+      {
+        "objection": "It's tax season, I can't think about this until May.",
+        "handler": "\"Completely fair. Let's book a call for the week after the deadline, and it's built through the summer so it's ready for next January.\""
+      },
+      {
+        "objection": "My accounting software gives me a free page already.",
+        "handler": "\"Those pages are fine for a listing, but they belong to the vendor and look like every other practice. Your own domain carries your fees, your checklist and your name, and it moves with you.\""
+      },
+      {
+        "objection": "I'm full. I don't want more tax clients.",
+        "handler": "\"Then the site does a different job: fewer phone calls, documents uploaded instead of dropped off, and a waitlist for monthly bookkeeping clients you'd actually choose.\""
+      },
+      {
+        "objection": "I can't put prices on a website. Every return is different.",
+        "handler": "\"Nobody expects a fixed price. A 'returns from' range and how you quote cleanup work filters out the shoppers before they take your time.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you I'd quote about {Build Price}, for booking, the checklist, upload and a few industry pages. That's less than one small business client pays you in a quarter.\""
+      }
+    ],
+    "email": {
+      "subject": "Tax practice site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for bookkeeping and tax prep practices around {City}. {Business Name} has helpful posts on social, but no site an owner finds when they search for a bookkeeper or a tax preparer.\n\nI built a sample first rather than ask for your time: a tax appointment request, a printable document checklist with secure upload, a cleanup bookkeeping page, your fee ranges and a place for your credentials and privacy policy, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you'd like it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and deadline updates. If not, no problem, it comes down at the end of the month.\n\nWorth ten minutes on the phone this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"{Owner}, it's {Your Name}. I build websites for bookkeepers and tax preparers in {City}, and I made a sample one for {Business Name} with booking and a document checklist. I'll email the link. Have a look when the day's returns are done. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm taking the {Business Name} tax practice demo down on Friday to free up the space.\n\nWant me to keep it up? One word either way is fine.",
+    "nurture": "Hi {Owner}, the wage forms go out in a few weeks and the January calls are about to start. You came to mind.\n\nThe bookkeeping and tax site is still here whenever you want it, same price as before. {demo-link} if you'd like another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to a couple of monthly bookkeeping clients, never to an hourly rate. Practices think in recurring clients.",
+      "Sell between May and November. From January to mid-April nobody in a tax office answers a sales call.",
+      "Price secure upload and booking as their own lines; they replace a front-desk job and that's how the owner values them.",
+      "Industry pages are separate lines, each one quoted only for an industry they already serve.",
+      "Keep fee pages as ranges the owner approves. Never write a promised refund or saving into any copy.",
+      "Quote a Spanish-language tax path only where they already prepare returns in Spanish."
+    ],
+    "lineItems": [
+      {
+        "item": "Tax appointment booking with intake questions",
+        "min": 400,
+        "max": 1000,
+        "unit": "one-time",
+        "description": "Max with separate paths for individuals, sole proprietors and businesses, a prior-preparer question and reminder texts.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Secure document upload set-up",
+        "min": 300,
+        "max": 900,
+        "unit": "one-time",
+        "description": "Max when uploads are sorted by client and tax year, with a confirmation email and a checklist that ticks off what arrived.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Industry bookkeeping page (each)",
+        "min": 250,
+        "max": 550,
+        "unit": "per-page",
+        "description": "Max when the page has its own FAQ, an example monthly report layout and a short case note the owner approves.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Cleanup bookkeeping quote request",
+        "min": 300,
+        "max": 800,
+        "unit": "one-time",
+        "description": "Max with months-behind and account-count questions that route to a rough quote range the owner sets.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Tax deadline calendar with switchable banners",
+        "min": 250,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max when the banner changes on its own for intake open, the cut-off, extensions and quarterly estimates.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Spanish-language tax prep path",
+        "min": 500,
+        "max": 1200,
+        "unit": "one-time",
+        "description": "Max when the checklist, fees, booking and privacy policy are all translated and reviewed by the owner.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Tax notice help page with secure send",
+        "min": 250,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max with an upload form just for notices and an urgent flag that texts the owner.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Office and headshot photo session",
+      "min": 400,
+      "max": 1000,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"One morning of headshots for each preparer and a few shots of the office gives the bookkeeping site real faces. People hand their tax return to a person, not a logo.\"",
+      "when": "Month 2, before the next tax season opens."
+    },
+    {
+      "name": "Google profile posts on tax deadlines",
+      "min": 150,
+      "max": 350,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Every deadline, extension date and intake cut-off goes on your Google profile the week it matters, so the listing looks like an active tax office, not a dormant one.\"",
+      "when": "Day 30, once the site is live."
+    },
+    {
+      "name": "Review requests after each return is filed",
+      "min": 99,
+      "max": 199,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"The day a tax return is filed, the client gets a short text asking how it went. Reviews written in April are the ones January searchers read.\"",
+      "when": "Day 30. The easiest second sale."
+    },
+    {
+      "name": "January return-client reminder campaign",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Every past tax client gets an email and a text in early January with the checklist and a booking link, before another preparer's flyer reaches them.\"",
+      "when": "Pitch in November, send in early January."
+    },
+    {
+      "name": "Monthly small business tax newsletter",
+      "min": 200,
+      "max": 500,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A short monthly email to bookkeeping clients and prospects: upcoming deadlines, one plain explainer and a reminder to send receipts. General information only, written for you to approve.\"",
+      "when": "Month 3, once the client list is in one place."
+    },
+    {
+      "name": "Referral pack for bankers and attorneys",
+      "min": 300,
+      "max": 700,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A one-page leave-behind and a matching landing page for the business bankers and estate attorneys who send you bookkeeping clients, so their referral lands somewhere clear.\"",
+      "when": "Month 2, when they name who refers to them."
+    },
+    {
+      "name": "LinkedIn profile refresh for the preparers",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Business owners check a bookkeeper's LinkedIn before a meeting. I rewrite the headline and summary so they match the practice site and the industries you serve.\"",
+      "when": "Month 2, alongside the photo session."
+    },
+    {
+      "name": "Chamber and networking one-pager",
+      "min": 150,
+      "max": 400,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A printed one-pager for chamber breakfasts and networking groups that says who your bookkeeping practice helps, the fee ranges and where to book.\"",
+      "when": "Any time they mention a networking group."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "The bookkeeper's own small business clients",
+        "whoPays": "Each client business, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"You see which of your bookkeeping clients have no website or a broken one. An introduction from their bookkeeper is the warmest door I'll ever get.\"",
+        "whyItWorks": "The bookkeeper sees every client's books and knows who is growing. Their word carries more weight than any cold message."
+      },
+      {
+        "route": "Independent financial advisors they refer to",
+        "whoPays": "The advisory practice",
+        "min": 2000,
+        "max": 4500,
+        "unit": "one-time",
+        "pitchLine": "\"The advisors you send tax clients to need a consultation site as much as you did. Your introduction gets me past their front desk.\"",
+        "whyItWorks": "Advisors and preparers trade clients every spring, and an advisor buys a site on the same logic: credentials first, then a booked meeting."
+      },
+      {
+        "route": "Estate planning attorneys who share clients",
+        "whoPays": "The law practice",
+        "min": 2500,
+        "max": 5000,
+        "unit": "one-time",
+        "pitchLine": "\"When a tax client asks about a will or a trust, you send them to someone. That attorney needs a careful site and you can make the introduction.\"",
+        "whyItWorks": "Estate attorneys rely on referrals from preparers and treat a referral partner's recommendation seriously."
+      },
+      {
+        "route": "Small landlords from the rental schedules",
+        "whoPays": "The landlord",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"Your clients with rental schedules need a simple listing and tenant request page. I build it, and the bookkeeping for those rentals stays with you.\"",
+        "whyItWorks": "Landlords with a handful of doors have a real problem and already trust the person who does their tax return."
+      },
+      {
+        "route": "Independent insurance agents in the same building",
+        "whoPays": "The insurance agency",
+        "min": 1800,
+        "max": 3000,
+        "unit": "one-time",
+        "pitchLine": "\"The insurance agent who shares your business clients has a dull carrier page. A bookkeeper's introduction makes that rebuild an easy talk.\"",
+        "whyItWorks": "Agents and preparers serve the same owners and often share referrals and office parks."
+      },
+      {
+        "route": "New business owners from the formation consults",
+        "whoPays": "The new business, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"Every owner you help set up new bookkeeping for needs a website in the same month they open a bank account. You can mention me in the same meeting.\"",
+        "whyItWorks": "New owners are buying everything at once and trust the bookkeeper who set up their books."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Receipt sorting assistant for client businesses",
+        "whoPays": "Each client business, monthly",
+        "min": 49,
+        "max": 149,
+        "unit": "monthly",
+        "pitchLine": "\"Your bookkeeping clients snap receipts into a text thread and an assistant sorts them by category and month before they reach you.\"",
+        "whyItWorks": "The bookkeeper gets cleaner inputs and the client pays for the convenience, so the bookkeeper happily recommends it."
+      },
+      {
+        "route": "Meeting summary drafts for financial advisors",
+        "whoPays": "The advisory practice, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Advisors you refer tax clients to write meeting notes at night. An assistant drafts the summary and the follow-up list for them to check.\"",
+        "whyItWorks": "Advisors bill for meetings, not notes. A tool that returns evenings sells on the first week."
+      },
+      {
+        "route": "Intake questionnaire assistant for estate attorneys",
+        "whoPays": "The law practice",
+        "min": 1500,
+        "max": 3500,
+        "unit": "one-time",
+        "pitchLine": "\"Estate attorneys spend the first meeting gathering facts. An assistant walks the client through the family, asset and tax questions beforehand and drafts a fact sheet for the attorney.\"",
+        "whyItWorks": "It saves billable time on intake, and the preparer's introduction lands the first demo."
+      },
+      {
+        "route": "Tenant question bot for small landlords",
+        "whoPays": "The landlord, monthly",
+        "min": 49,
+        "max": 129,
+        "unit": "monthly",
+        "pitchLine": "\"Your landlord clients answer the same tenant questions every week. A small assistant answers rent, parking and repair questions from their own house rules.\"",
+        "whyItWorks": "Landlords with a few doors can't afford a manager but will pay a small monthly fee to stop the texts."
+      },
+      {
+        "route": "Policy renewal reminder assistant for insurance agents",
+        "whoPays": "The insurance agency, monthly",
+        "min": 150,
+        "max": 350,
+        "unit": "monthly",
+        "pitchLine": "\"The insurance agent who shares your bookkeeping clients loses renewals to silence. An assistant drafts renewal check-ins for each policy and books a review call.\"",
+        "whyItWorks": "Renewals are the agent's income. Fewer quiet lapses pays for the tool in one saved account."
+      },
+      {
+        "route": "Startup paperwork guide for new business owners",
+        "whoPays": "The new business owner, one-time",
+        "min": 99,
+        "max": 299,
+        "unit": "one-time",
+        "pitchLine": "\"New owners from your formation consults get a guided checklist of registrations, accounts and records to keep, with general information only and a link back to your bookkeeping.\"",
+        "whyItWorks": "Owners pay for a clear path in a confusing month, and every finished checklist points back to the bookkeeper."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Missed-call text-back for tax season",
+      "kind": "automation",
+      "oneTimeMin": 0,
+      "oneTimeMax": 300,
+      "monthlyMin": 79,
+      "monthlyMax": 149,
+      "pitchLine": "\"Every call you miss while you're with a tax client gets a text with the booking link and the document checklist. Half the callback is done before you pick up.\"",
+      "whenAndWhatItTakes": "Day 30. Needs their business number forwarded and two lines of wording they approve."
+    },
+    {
+      "name": "Document checklist portal with missing-item list",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3500,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Each tax client gets their own checklist from last year's return, ticks off what they've uploaded, and sees exactly what's still missing.\"",
+      "whenAndWhatItTakes": "November, before intake opens. Needs their checklist by client type and the upload method they already trust."
+    },
+    {
+      "name": "Engagement letter and fee sign-off at booking",
+      "kind": "automation",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"When a new bookkeeping client books, the engagement letter and fee schedule go out for e-signature automatically, so nobody starts work without one.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their current engagement letter, fee schedule and the signing tool they use."
+    },
+    {
+      "name": "Review reply drafts in the preparer's voice",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Each new review of your tax practice gets a reply drafted in your voice that thanks them without mentioning anything confidential, ready to approve.\"",
+      "whenAndWhatItTakes": "Month 2, alongside review requests. Needs ten of their past replies. Comes with the AI maintenance retainer, and never names a client's tax details."
+    },
+    {
+      "name": "Tax appointment scheduler across preparers",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Each preparer's calendar shows real tax appointment slots by return type, so a simple return doesn't take a two-hour business slot in March.\"",
+      "whenAndWhatItTakes": "December. Needs each preparer's hours, return types and appointment lengths."
+    },
+    {
+      "name": "Client question assistant on fees, documents and dates",
+      "kind": "ai",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"It answers 'what do I bring' and 'when's your tax intake cut-off' at midnight from your own pages, gives general information only, and hands anything about a client's own situation to you.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their fee ranges, checklist and calendar, updated each season. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Upload sorter for statements and receipts",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Bank statements, wage forms and receipts dropped in one pile get sorted by client, tax year and document type before a bookkeeper opens them.\"",
+      "whenAndWhatItTakes": "Month 4, after the upload portal. Needs a season of sample uploads and their folder naming rules. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Monthly close tracker per bookkeeping client",
+      "kind": "software",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"Every bookkeeping client's month on one board: statements received, reconciled, reviewed, report sent. You see who's behind without opening each file.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their close steps and a client list with service level."
+    },
+    {
+      "name": "Missing-document reminder sequence",
+      "kind": "automation",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"A tax client who hasn't uploaded the last statement gets a polite reminder every few days until it arrives, and you stop writing the chase emails by hand.\"",
+      "whenAndWhatItTakes": "January. Needs the checklist portal and the wording they want for each reminder."
+    },
+    {
+      "name": "Online tax organiser questionnaire",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Clients answer the yearly tax questions about dependants, moves, new jobs and rentals online, and the answers land in their file before the appointment.\"",
+      "whenAndWhatItTakes": "November. Needs their paper organiser and the questions they always ask."
+    },
+    {
+      "name": "Plain-language monthly report notes",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Each bookkeeping client's monthly report comes with a short draft note in plain words on what changed since last month, for you to edit. It describes the numbers, it doesn't advise.\"",
+      "whenAndWhatItTakes": "Month 6. Needs three months of reports and the notes they'd normally write. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Cleanup bookkeeping scope drafter",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"A behind client uploads statements and the tool drafts a cleanup scope, counting months, accounts and transactions, so your quote takes minutes.\"",
+      "whenAndWhatItTakes": "Month 6. Needs several past cleanup jobs and how they priced them. Comes with the AI maintenance retainer; the owner sets every final price."
+    },
+    {
+      "name": "Client portal with prior-year returns and invoices",
+      "kind": "software",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Clients log in for last year's tax return copy, this year's status and their invoices, instead of calling the office the week their lender asks.\"",
+      "whenAndWhatItTakes": "Month 9. Needs the upload portal and the scheduler in place, plus their file retention rules."
+    },
+    {
+      "name": "Card-on-file billing for monthly bookkeeping",
+      "kind": "automation",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Monthly bookkeeping fees bill themselves on the first of the month, and tax prep fees bill when the return is ready to sign.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their fee schedule and the payment account they already use."
+    },
+    {
+      "name": "Tax notice reader with a response checklist",
+      "kind": "ai",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"A client uploads a tax notice and the tool pulls out the notice type, the dates and the amounts, and drafts a document checklist for the preparer to review.\"",
+      "whenAndWhatItTakes": "Month 8. Needs past notices with client details removed. Comes with the AI maintenance retainer; a credentialed preparer reviews every response."
+    },
+    {
+      "name": "Seasonal tax preparer applicant screener",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"Applicants for a seasonal tax preparer seat answer your questions about experience, availability through April and credentials, and you only interview the ones who fit.\"",
+      "whenAndWhatItTakes": "September or October, when they post for the season. Needs their must-haves. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Returns-in-progress board by stage",
+      "kind": "software",
+      "oneTimeMin": 2500,
+      "oneTimeMax": 6000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"Every tax return on one board: documents in, prepared, reviewed, waiting on signature, filed. You stop answering 'where is my return' by digging through folders.\"",
+      "whenAndWhatItTakes": "December, before season. Needs their review steps and who signs off."
+    },
+    {
+      "name": "Payroll and sales tax filing calendar per client",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Each bookkeeping client's payroll, sales tax and quarterly filing dates in one calendar, with a reminder to the right person the week before.\"",
+      "whenAndWhatItTakes": "Month 7. Needs the client list with filing frequencies by state."
+    },
+    {
+      "name": "Meeting voice notes to engagement memo",
+      "kind": "ai",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"After a new bookkeeping client meeting, talk for two minutes and the tool drafts the scope memo and the engagement letter changes for you to check.\"",
+      "whenAndWhatItTakes": "Month 8. Needs their memo template and engagement letter. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Bookkeeping waitlist and capacity planner",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"When the bookkeeping roster is full, new enquiries join a waitlist sorted by industry and size, and the site says so honestly instead of going quiet.\"",
+      "whenAndWhatItTakes": "Any time they say they're full. Needs a rough count of the hours each client takes."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the tax checklist portal for preparers",
+      "whoPays": "Tax practices, monthly per office",
+      "min": 49,
+      "max": 149,
+      "unit": "monthly",
+      "pitchLine": "\"I built a tax document checklist portal for one practice. Every small tax office in the state still chases statements by email.\"",
+      "whyItWorks": "The first practice taught you the workflow and paid for the build. The next office needs only its own checklist."
+    },
+    {
+      "route": "State society of tax professionals member kit",
+      "whoPays": "The state society or association",
+      "min": 1500,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer every member a tax practice site template with booking, a checklist and a privacy page as a membership benefit.\"",
+      "whyItWorks": "Associations need reasons to renew, and members ask them for exactly this help."
+    },
+    {
+      "route": "Bookkeeping site template for marketing agencies",
+      "whoPays": "The agency, per bookkeeping client",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency signs accountants and builds each from scratch. License my bookkeeping template with the checklist, cleanup and industry pages finished.\"",
+      "whyItWorks": "Agencies own the relationship; you sell them the part you already built and tested."
+    },
+    {
+      "route": "Small business development centre resource pages",
+      "whoPays": "The development centre or its host college",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Your workshops send new owners to find a bookkeeper. A resource section with plain guides and a vetted local list is the page they keep asking for.\"",
+      "whyItWorks": "Centres have grant budgets for owner education, and a bookkeeper client is your proof you can explain it plainly."
+    },
+    {
+      "route": "Community bank business-banking referral page",
+      "whoPays": "The community bank",
+      "min": 3000,
+      "max": 9000,
+      "unit": "one-time",
+      "pitchLine": "\"New business accounts ask the banker for a bookkeeper. A business resources page with vetted local practices keeps that owner banking with you.\"",
+      "whyItWorks": "Community banks compete on being local and helpful, and the bookkeeping client becomes the first listed partner."
+    },
+    {
+      "route": "Multi-office tax preparation group roll-out",
+      "whoPays": "The tax group, per office",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "pitchLine": "\"Each tax office needs its own hours, preparers and booking page under one brand. I build the template once and add offices as you open them.\"",
+      "whyItWorks": "One contract becomes many locations, and seasonal offices open and close on a fixed calendar you can plan for."
+    },
+    {
+      "route": "Seasonal tax storefront page kit",
+      "whoPays": "Independent seasonal preparers, monthly",
+      "min": 29,
+      "max": 99,
+      "unit": "monthly",
+      "pitchLine": "\"A switch-on tax season page with booking, a checklist and an intake cut-off, ready for any part-time preparer by the first week of January.\"",
+      "whyItWorks": "Every seasonal preparer needs the same pages at the same time. A kit means no custom build for each."
+    },
+    {
+      "route": "Bilingual tax prep site kit",
+      "whoPays": "Spanish-speaking tax preparers in other metros",
+      "min": 1500,
+      "max": 3500,
+      "unit": "one-time",
+      "pitchLine": "\"The bilingual tax pages I built for one office, with the checklist and privacy policy translated, fit every Spanish-speaking preparer in the region.\"",
+      "whyItWorks": "Translation and review is the expensive part, and it's already done and checked by a real practice."
+    },
+    {
+      "route": "Continuing-education provider course pages",
+      "whoPays": "The tax education provider",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Preparers need yearly education hours, and the providers need class pages and sign-ups. Your bookkeeping client knows which providers are good.\"",
+      "whyItWorks": "Providers sell to every preparer in the state, and a practitioner's referral is the introduction."
+    },
+    {
+      "route": "Fractional finance firm microsites per bookkeeper",
+      "whoPays": "The fractional finance firm",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Firms with a bench of contract bookkeepers need a profile and booking page for each one. The template already exists from a working practice.\"",
+      "whyItWorks": "Each bookkeeper on the bench is a page, so the job grows with their roster."
+    },
+    {
+      "route": "One tax practice per metro, next city over",
+      "whoPays": "A bookkeeping practice in a new metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I build for one bookkeeping and tax practice per city. {City} is taken; the next metro's best small practice isn't.\"",
+      "whyItWorks": "Exclusive territory appeals to practices that compete on trust, and the template and demo carry straight over."
+    },
+    {
+      "route": "Finish half-built bookkeeping sites",
+      "whoPays": "The stranded tax practice",
+      "min": 1200,
+      "max": 3500,
+      "unit": "one-time",
+      "pitchLine": "\"Someone started your tax practice site before last season and stopped answering. I can finish it on a template already live for another practice.\"",
+      "whyItWorks": "Those owners have already decided to buy and have their copy half written."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Tax practice site build plus care plan, one contract",
+      "min": 1800,
+      "max": 3000,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The bookkeeping site and the care plan go on one contract, so a new deadline banner or fee change is a text to me, not a weekend for you.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Review requests after each return is filed",
+      "min": 99,
+      "max": 199,
+      "unit": "monthly",
+      "trigger": "The first new client books through the site and finishes their engagement.",
+      "line": "\"That new tax client who booked online is exactly who should leave the next review. Let's ask every client the day their return is filed.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "Office and headshot photo session",
+      "min": 400,
+      "max": 1000,
+      "unit": "per-shoot",
+      "trigger": "The bookkeeping site still shows marked placeholders where the preparer photos go.",
+      "line": "\"Your bookkeeping pages are ready except for faces. One morning of headshots and people can see who they're handing their tax return to.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Document checklist portal with missing-item list",
+      "min": 1200,
+      "max": 3500,
+      "unit": "one-time",
+      "trigger": "Sixty days of uploads, and they mention chasing clients for the last statement.",
+      "line": "\"You're chasing statements by email again. Each tax client can see their own checklist and what's still missing.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "January return-client reminder campaign",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "trigger": "November arrives and they can export last season's client list.",
+      "line": "\"Let's get the checklist and booking link to every past tax client before another preparer's flyer reaches them.\""
+    },
+    {
+      "rung": 6,
+      "day": 120,
+      "offer": "Client question assistant on fees, documents and dates",
+      "min": 1200,
+      "max": 3000,
+      "unit": "one-time",
+      "trigger": "The contact form log shows the same fee and checklist questions every week of tax season.",
+      "line": "\"Half your tax enquiries ask the same three things. The assistant answers those from your own pages and passes the rest to you.\""
+    },
+    {
+      "rung": 7,
+      "day": 180,
+      "offer": "Monthly close tracker per bookkeeping client",
+      "min": 2000,
+      "max": 5000,
+      "unit": "one-time",
+      "trigger": "They mention hiring a second bookkeeper or a backlog of month-end closes.",
+      "line": "\"Two bookkeepers and a growing roster won't fit in one spreadsheet. Let's put every client's month on one board.\""
+    },
+    {
+      "rung": 8,
+      "day": 365,
+      "offer": "Client portal with prior-year returns and invoices",
+      "min": 3000,
+      "max": 8000,
+      "unit": "one-time",
+      "trigger": "Their second tax season on the site, with clients calling for last year's return copies.",
+      "line": "\"Every lender request means a client calling for last year's tax return. Let them download it themselves.\""
+    }
+  ]
+}

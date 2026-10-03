@@ -1,0 +1,874 @@
+{
+  "schemaVersion": 1,
+  "category": "Small law firms",
+  "slug": "small-law-firms",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Pro family batch. Attorney advertising rules apply: no outcome promises, no claims of special skill or certification, a disclaimer section on every build, and the responsible attorney approves all copy. Bar numbers are bracketed placeholders. No directory or practice-software names."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Attorney advertising disclaimer and form notice",
+      "contains": "Attorney Advertising label where the state bar requires it, a note that prior results do not predict a similar outcome, that a contact form creates no attorney-client relationship, and [responsible attorney, bar number, office address]",
+      "why": "Bar rules require it, and a careful notice reads as integrity to someone choosing a lawyer. It also stops people sending confidential details through a form."
+    },
+    {
+      "section": "Conflict check before the consultation",
+      "contains": "Why the law firm asks for the names of the other parties first, what happens if there is a conflict, and how long the check takes before a consultation is confirmed",
+      "why": "A firm can't meet a new client before clearing conflicts. Explaining it up front stops callers feeling interrogated and drop-offs at the intake step."
+    },
+    {
+      "section": "Probate, divorce and immigration timelines",
+      "contains": "Step-by-step outlines of probate, an uncontested divorce, a family immigration petition or a business formation in [State], as general information with typical stages, not predictions",
+      "why": "Fear of the unknown is what keeps people from calling a lawyer. A plain timeline lowers that fear and leads them to ask about their own case."
+    },
+    {
+      "section": "What to bring to your first consultation",
+      "contains": "Document checklists by matter: deeds, existing wills, court orders, visas and notices, business agreements, plus how to send them securely before the meeting",
+      "why": "A prepared client gets more from a paid consultation, and the attorney spends the hour advising instead of gathering paperwork."
+    },
+    {
+      "section": "Estate planning seminar sign-up",
+      "contains": "Upcoming estate planning and probate talks at libraries or community centres, dates, a sign-up form and a follow-up consultation booking",
+      "why": "Estate planning clients often decide in a room, not on a search. A seminar page fills the room and books the consultations after it."
+    },
+    {
+      "section": "Spanish-language practice pages",
+      "contains": "Translated versions of the key family law, immigration and estate pages, the disclaimer in Spanish, and which attorneys or staff speak Spanish",
+      "why": "Clients who speak Spanish at home choose a law firm where they can understand every word. Translated pages say that before the first call."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C6",
+      "siteType": "local-conversion",
+      "name": "Consult Line",
+      "heroLayout": "split-photo",
+      "mood": [
+        "clear",
+        "direct",
+        "composed"
+      ],
+      "bestFor": "Solo and two-attorney practices focused on one practice area, who need a consultation request and the phone to work",
+      "pairsWithTier": "starter",
+      "headlineSample": "Estate planning and probate for {City} families",
+      "whyItFits": "Cobalt and a neutral grotesque feel modern and plain without looking like a billboard. One practice area, one consultation request, the disclaimer in the footer."
+    },
+    {
+      "id": "b",
+      "themeId": "C2",
+      "siteType": "booking-first",
+      "name": "Counsel Room",
+      "heroLayout": "split-photo",
+      "mood": [
+        "private",
+        "measured",
+        "warm"
+      ],
+      "bestFor": "Small firms with two or three practice areas booking paid consultations after a conflict check",
+      "pairsWithTier": "standard",
+      "headlineSample": "A {City} law firm for families and small businesses",
+      "whyItFits": "The family's Private Vault combo. A quiet cream ground and an old-style serif feel like a private office, which is what someone with a sensitive legal problem wants first."
+    },
+    {
+      "id": "c",
+      "themeId": "C4",
+      "siteType": "editorial-trust",
+      "name": "Chambers",
+      "heroLayout": "type-led",
+      "mood": [
+        "formal",
+        "learned",
+        "settled"
+      ],
+      "bestFor": "Established small firms with long-form guides, several attorneys and seminar programmes, selling to clients who read before they call",
+      "pairsWithTier": "premium",
+      "headlineSample": "Attorneys serving {City} since [year founded]",
+      "whyItFits": "Navy, brass and an editorial serif read like a well-made legal brief. It suits a firm that earns trust through long explanations, not slogans."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your firm's Google listing has a phone number but no website, so someone who needs a will or a custody answer can't read who the attorney is before they call.",
+      "hook": "Open their Maps listing and confirm there's no Website button. Screenshot it for when they reply.",
+      "linkLine": "Here's what could sit behind that button for a small law firm: {demo-link}"
+    },
+    {
+      "angle": "Directory profile only",
+      "line": "The link on your listing goes to a legal directory profile with three other attorneys advertised beside you. A family looking for a probate lawyer should land on your firm, not a list.",
+      "hook": "Tap their Website link and check whether it lands on a directory or a bar listing. Note what else appears on that page.",
+      "linkLine": "A page that's only your law firm: {demo-link}"
+    },
+    {
+      "angle": "Facebook-only link",
+      "line": "The website link on your listing opens a Facebook page. Someone researching an estate planning attorney at night wants your background, fees and a consultation request, not a feed.",
+      "hook": "Tap their Website link and confirm it lands on Facebook. Note the latest post about a practice area.",
+      "linkLine": "A law firm site built for the person researching quietly: {demo-link}"
+    },
+    {
+      "angle": "Hard to use on a phone",
+      "line": "I opened your firm's site on my phone and the consultation form cut off halfway down. Most people look for a family lawyer on their phone, often in private.",
+      "hook": "Only if they have a site. Load it on your phone and note what breaks. Screenshot it for when they reply.",
+      "linkLine": "Your law firm site rebuilt for a phone: {demo-link}"
+    },
+    {
+      "angle": "No consultation request",
+      "line": "There's no way to request a consultation with your firm except calling during the day. People dealing with a divorce or a parent's estate often can't talk on the phone at work.",
+      "hook": "Check the listing, social pages and any site for a booking or request form. If there's none, the angle holds.",
+      "linkLine": "A consultation request with a conflict check built in: {demo-link}"
+    },
+    {
+      "angle": "Practice areas too broad",
+      "line": "Your listing names a long run of practice areas. Someone searching for an immigration attorney in {City} picks the firm with a page about their exact situation, not a long list.",
+      "hook": "Count the practice areas on their listing or site. Pick the one their posts mention most.",
+      "linkLine": "One clear page for each practice area you choose: {demo-link}"
+    },
+    {
+      "angle": "New-year estate planning",
+      "line": "A new year is when many families resolve to finally make the will and trust they keep putting off. An estate planning page with a clear consultation path catches that resolution while it lasts.",
+      "hook": "Use this from November to February, and only if they do estate planning.",
+      "linkLine": "An estate planning page ready for January: {demo-link}"
+    },
+    {
+      "angle": "Researching after dark",
+      "line": "People research a lawyer late at night, after the kids are asleep. When your firm's only option is calling an office that closed at five, that question waits another week.",
+      "hook": "Call their listed number after hours. If it goes to a generic voicemail, the angle holds.",
+      "linkLine": "A law firm consultation request that works at midnight: {demo-link}"
+    },
+    {
+      "angle": "Hiring a paralegal",
+      "line": "Saw your firm is hiring a paralegal. Good candidates read a law firm's site before they apply, the same way clients do.",
+      "hook": "Only if they posted a hiring note or job listing. Note the role and date.",
+      "linkLine": "A law firm page with a careers section: {demo-link}"
+    },
+    {
+      "angle": "Counties and courts served",
+      "line": "Your posts mention clients in counties outside {City}. A page that says which courts your attorneys appear in is what someone in the next county types.",
+      "hook": "Look for county or courthouse names in their posts. Never state where they're admitted unless they've published it.",
+      "linkLine": "Law firm pages for each county you cover: {demo-link}"
+    },
+    {
+      "angle": "Flat fees not shown",
+      "line": "Your posts mention flat fees for wills and simple estate plans, but nothing on your listing says so. A genuine fee range is the reason a careful client books with a lawyer instead of waiting.",
+      "hook": "Only if they've mentioned flat fees or fee ranges somewhere public. Quote where you saw it.",
+      "linkLine": "Flat-fee legal services shown plainly: {demo-link}"
+    },
+    {
+      "angle": "Bar admission not visible",
+      "line": "Your bar admission is on the state lookup, but a new client never sees it. Showing the attorney's admission, office address and years in practice is how a small law firm looks established.",
+      "hook": "Look them up on the state bar lookup. Note that a record exists; never quote a number you didn't see.",
+      "linkLine": "Admission, background and fees on one law firm page: {demo-link}"
+    },
+    {
+      "angle": "Referral-only practice",
+      "line": "Sounds like most of your law firm's clients come from other clients and from accountants. Even a referred client searches the attorney's name before calling.",
+      "hook": "Look for review text like 'recommended by' or 'handled my parents' estate'. Quote it back.",
+      "linkLine": "Where a referred legal client would land: {demo-link}"
+    },
+    {
+      "angle": "Spanish-speaking clients",
+      "line": "Your posts are in English and Spanish, but there's no Spanish page explaining your immigration or family law services. People choose a lawyer they can understand fully.",
+      "hook": "Only if they post in Spanish or mention speaking it. Note which practice area those posts cover.",
+      "linkLine": "Spanish-language law firm pages with the disclaimer translated: {demo-link}"
+    },
+    {
+      "angle": "A specific recent post",
+      "line": "That {specific recent job} you posted explained a legal step in plain words, which is rare. A post like that belongs on your firm's site where it keeps answering people.",
+      "hook": "Pick their newest explainer post or community talk and name it exactly. Never reference a client matter.",
+      "linkLine": "That legal explainer, kept on a page that ranks: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, that {specific recent job} you posted explained a legal step more clearly than most firm websites do.\n\nI looked for small law firms in {City} and found {Business Name}, but no site of your own with your background, fees and a consultation request. I put together a sample page to see how it might look, with marked placeholders where your photos would go and a disclaimer section ready for your review.\n\nWould you like me to send it?",
+    "dm2": "{Owner}, following up in case my note got buried. Here's the sample law firm site for {Business Name}: {demo-link}\n\nIt has a consultation request with a conflict check, a process timeline for your main practice area, a first-meeting checklist and an attorney advertising disclaimer for you to edit. Nothing goes live without your approval. If it's not for you, just say so.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for small law firms here in {City}. I sent you a message a few days ago, did it reach you?\"\n\nIF NO:\n\"No problem. Short version: I built a sample site for {Business Name} with a consultation request, a conflict check and a disclaimer section, and marked placeholders where your photos would go. Can I email the link for you to look at this evening?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"This isn't a lead service or a directory listing, it's a site your firm owns. You approve every word, and I keep it inside your state's advertising rules as you instruct. The build runs {Build Range} depending on how many practice areas and guides you want, then {Care Range} a month for hosting and edits. For a firm your size I'd quote about {Build Price}, which is in the range of one flat-fee matter.\"\n\"Could I walk you through it for ten minutes between hearings this week?\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. We start once it clears, and you sign off on every page before launch.\"",
+    "objections": [
+      {
+        "objection": "Bar advertising rules make websites risky.",
+        "handler": "\"They make careless websites risky. Every page carries the disclaimer you approve, there are no outcome claims or skill labels, and nothing publishes until you sign off.\""
+      },
+      {
+        "objection": "My clients come from referrals and other lawyers.",
+        "handler": "\"That's the best source there is. Referred clients still search the attorney's name before calling. The site is what confirms the referral was a good one.\""
+      },
+      {
+        "objection": "I already pay a legal directory for leads.",
+        "handler": "\"Directory leads see your competitors on the same page. Your own site sends that person to one law firm, yours, and you keep the domain if you ever stop paying anyone.\""
+      },
+      {
+        "objection": "We paid an agency a fortune and got nothing.",
+        "handler": "\"I hear that from a lot of firms. This is a fixed-scope site with a sample you can already see, not a monthly retainer with vague reports.\""
+      },
+      {
+        "objection": "I don't have time to write practice area pages.",
+        "handler": "\"You won't write them. I draft each page from a short call and your existing letters, and you edit for accuracy. That's an hour of your time, not a weekend.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For your firm about {Build Price}, for the consultation request, conflict check, timelines and the disclaimer pages. That's in the range of one flat-fee matter.\""
+      }
+    ],
+    "email": {
+      "subject": "Law firm site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for small law firms around {City}. {Business Name} has a good local name, but no site of its own where someone can read about the attorney, see the fees and request a consultation quietly.\n\nI built a sample first rather than ask for your time: a consultation request with a conflict check, a process timeline for your main practice area, a first-meeting document checklist and an attorney advertising disclaimer for you to edit, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you'd like it, I move it to a domain your firm owns and finish it for {Build Range}, plus {Care Range} a month for hosting and edits. You approve every page before it publishes. If not, no problem, it comes down at the end of the month.\n\nWorth ten minutes on the phone this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"{Owner}, it's {Your Name}. I build websites for small law firms in {City}, and I made a sample one for {Business Name} with a consultation request and a disclaimer you can edit. I'll email the link. Have a look between appointments. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm taking the {Business Name} law firm demo down on Friday to free up the space.\n\nShould I keep it up for you? One word is fine either way.",
+    "nurture": "Hi {Owner}, the new year is close and estate planning and family law calls usually pick up around then. You came to mind.\n\nThe law firm site is still here whenever you'd like it, same price as before. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to one flat-fee matter, never to an hourly rate. Attorneys already think in matters.",
+      "Quote practice area pages one by one, and only for areas the firm actively takes on.",
+      "Build an attorney review round into every quote; the responsible attorney approves every page before launch.",
+      "Never write outcomes, case results, or 'specialist' and 'expert' labels; keep testimonials off unless the attorney confirms the state allows them.",
+      "Price process timeline guides higher than plain pages; they take a drafting call and the attorney's edits.",
+      "Charge for translation only where an attorney or staff member can review the Spanish."
+    ],
+    "lineItems": [
+      {
+        "item": "Practice area page (each)",
+        "min": 350,
+        "max": 800,
+        "unit": "per-page",
+        "description": "Max when the page has its own FAQ, a document checklist and a consultation request routed to the right attorney.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Consultation request with conflict check",
+        "min": 600,
+        "max": 1500,
+        "unit": "one-time",
+        "description": "Max with opposing-party fields, a no-confidential-details notice, paid consultation deposit and routing by practice area.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Legal process timeline guide (each)",
+        "min": 400,
+        "max": 900,
+        "unit": "per-page",
+        "description": "Max when it covers several stages with plain explanations, a printable version and the attorney's edits from two rounds.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Disclaimer, privacy and advertising notice set",
+        "min": 300,
+        "max": 700,
+        "unit": "one-time",
+        "description": "Max when the firm is admitted in more than one state and each needs its own notice wording supplied by the attorney.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Seminar sign-up page with reminders",
+        "min": 400,
+        "max": 900,
+        "unit": "one-time",
+        "description": "Max with recurring seminar dates, reminder texts and a follow-up consultation booking after each talk.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Spanish-language practice pages",
+        "min": 700,
+        "max": 1800,
+        "unit": "one-time",
+        "description": "Max when every practice page, the disclaimer and the consultation request are translated and reviewed by a fluent attorney or staff member.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Attorney bio pages with admissions (each)",
+        "min": 200,
+        "max": 450,
+        "unit": "per-page",
+        "description": "Max with a written first-person paragraph, admissions and memberships the attorney supplies, and a booking link to that attorney.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Attorney portrait and office photo session",
+      "min": 500,
+      "max": 1200,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"The attorney bio is the most-read part of a law firm site. One morning of portraits and a few office shots gives it a real face instead of a stock gavel.\"",
+      "when": "Month 2, or when a new attorney joins."
+    },
+    {
+      "name": "Google profile posts with plain legal explainers",
+      "min": 200,
+      "max": 400,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A short weekly post on your firm's Google profile, like what probate is or how a consultation works, general information only, approved by the attorney before it goes up.\"",
+      "when": "Day 30, once the site is live."
+    },
+    {
+      "name": "Review requests after a matter closes, where permitted",
+      "min": 99,
+      "max": 199,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"When a matter closes, the client gets a short note asking about their experience with the firm, only where your state's bar rules allow it and in wording you approve.\"",
+      "when": "Day 45, after the attorney confirms the state's rules on reviews."
+    },
+    {
+      "name": "Monthly practice area guide article",
+      "min": 400,
+      "max": 900,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Each month one plain-language guide on an estate, family or immigration topic people actually search, drafted from a short call and edited by the attorney.\"",
+      "when": "Month 3, once the core practice pages are approved."
+    },
+    {
+      "name": "Estate planning seminar promotion",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Flyers for libraries and community centres, a sign-up page and reminder texts for each estate planning talk, so the room fills without the attorney chasing RSVPs.\"",
+      "when": "Six weeks before each seminar."
+    },
+    {
+      "name": "Referral pack for CPAs and financial advisors",
+      "min": 300,
+      "max": 700,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"When an accountant or advisor says 'call my estate attorney', give them a short page about your firm to text and a printed card for their desk drawer.\"",
+      "when": "Month 2, when they name who refers to them."
+    },
+    {
+      "name": "Attorney explainer video day",
+      "min": 800,
+      "max": 2000,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Half a day filming the attorney answering the questions every new client asks, cut into short clips for the practice pages. People pick a lawyer they've already heard speak.\"",
+      "when": "Month 4, once the practice pages have settled."
+    },
+    {
+      "name": "LinkedIn profiles for each attorney",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Referring professionals check an attorney's LinkedIn before sending a client. I rewrite each profile to match the law firm site, without any skill labels the bar would object to.\"",
+      "when": "Month 2, alongside the portraits."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Financial advisors who refer estate clients",
+        "whoPays": "The advisory practice",
+        "min": 2000,
+        "max": 4500,
+        "unit": "one-time",
+        "pitchLine": "\"The advisors who send you estate planning clients need careful consultation sites too. An introduction from the attorney they trust gets me a meeting.\"",
+        "whyItWorks": "Advisors and estate attorneys refer back and forth, and both buy websites on the same logic: credentials, then a booked meeting."
+      },
+      {
+        "route": "CPA and bookkeeping practices in the referral loop",
+        "whoPays": "The accounting practice",
+        "min": 1800,
+        "max": 3000,
+        "unit": "one-time",
+        "pitchLine": "\"The accountants who send you business formation and estate clients mostly run on old pages. A word from their favourite attorney opens the door.\"",
+        "whyItWorks": "Accountants have tax-season urgency and low web sophistication, and they listen to the lawyers they refer to."
+      },
+      {
+        "route": "Realtors who handle probate home sales",
+        "whoPays": "The realtor or team",
+        "min": 1500,
+        "max": 3500,
+        "unit": "one-time",
+        "pitchLine": "\"When a probate estate includes a house, you know which realtors handle those sales gently. They need a probate property page, and you can introduce me.\"",
+        "whyItWorks": "Probate listings come through attorneys, so realtors value anything that keeps the firm's goodwill."
+      },
+      {
+        "route": "Independent family mediators",
+        "whoPays": "The mediation practice",
+        "min": 1500,
+        "max": 3000,
+        "unit": "one-time",
+        "pitchLine": "\"The family law mediators you send clients to need a calm site that explains sessions and fees. They'll take a call from someone the attorney recommends.\"",
+        "whyItWorks": "Mediators are solo practices with the same trust problem as the firm, and they depend on attorney referrals."
+      },
+      {
+        "route": "Process servers and court couriers",
+        "whoPays": "The process serving company",
+        "min": 900,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"The process server your firm uses every week probably has a dated page. Every law office in the county is their customer, and the site tells them that.\"",
+        "whyItWorks": "Small, steady businesses that sell to attorneys trust an attorney's recommendation above anything else."
+      },
+      {
+        "route": "Small business clients of the firm",
+        "whoPays": "Each client business, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"Every business you form or advise needs a website the same month. The attorney who drafted their operating agreement can mention me in the closing letter.\"",
+        "whyItWorks": "New businesses buy everything at once and trust the lawyer who set them up."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Probate property intake assistant for realtors",
+        "whoPays": "The realtor, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"Realtors who sell probate homes collect the same facts every time. An assistant walks the estate's representative through the property questions and drafts a listing prep sheet.\"",
+        "whyItWorks": "It saves the realtor hours per estate listing, and the law firm's introduction makes the first demo easy."
+      },
+      {
+        "route": "Pre-session questionnaire assistant for mediators",
+        "whoPays": "The mediation practice, monthly",
+        "min": 99,
+        "max": 199,
+        "unit": "monthly",
+        "pitchLine": "\"Before the first family mediation session, each party answers scheduling and logistics questions with an assistant, and the mediator gets a neutral summary.\"",
+        "whyItWorks": "Mediators bill for sessions, not paperwork, and a neutral intake saves the first hour."
+      },
+      {
+        "route": "Service attempt log drafts for process servers",
+        "whoPays": "The process serving company, monthly",
+        "min": 79,
+        "max": 199,
+        "unit": "monthly",
+        "pitchLine": "\"Servers dictate each attempt from the car and an assistant drafts the attempt log and the affidavit details for the server to check, in the format attorneys expect.\"",
+        "whyItWorks": "Paperwork is the slowest part of the server's day, and accurate logs keep the law firms happy."
+      },
+      {
+        "route": "Beneficiary review reminders for advisors",
+        "whoPays": "The advisory practice, monthly",
+        "min": 150,
+        "max": 350,
+        "unit": "monthly",
+        "pitchLine": "\"Advisors who share estate planning clients with you can send a yearly beneficiary review reminder drafted for each household, with a link to book an attorney review.\"",
+        "whyItWorks": "Advisors want regular reasons to call clients, and the attorney gets estate updates booked without asking."
+      },
+      {
+        "route": "Document request assistant for CPA firms",
+        "whoPays": "The accounting practice, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"The CPA who refers your business clients chases documents all spring. An assistant tells each client what's missing in plain words, so referrals to the law firm keep flowing.\"",
+        "whyItWorks": "Accountants pay to stop chasing, and the attorney looks helpful for the introduction."
+      },
+      {
+        "route": "Deposition summary drafts for court reporters",
+        "whoPays": "The court reporting firm, monthly",
+        "min": 200,
+        "max": 500,
+        "unit": "monthly",
+        "pitchLine": "\"Court reporting firms that work with your attorneys can offer a draft deposition summary with each certified transcript, checked by their staff.\"",
+        "whyItWorks": "It's a new line item the reporting firm can sell to every law firm it already serves."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Missed-call text-back with the consultation link",
+      "kind": "automation",
+      "oneTimeMin": 0,
+      "oneTimeMax": 300,
+      "monthlyMin": 79,
+      "monthlyMax": 149,
+      "pitchLine": "\"A call the law firm misses while the attorney is in court gets a text with the consultation request and a note not to send confidential details by text.\"",
+      "whenAndWhatItTakes": "Day 30. Needs their business number forwarded and wording the attorney approves."
+    },
+    {
+      "name": "Conflict check intake queue",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Every consultation request lands with the other parties' names already listed, so staff run the conflict check before anyone talks about the matter.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their conflict process and who clears a request."
+    },
+    {
+      "name": "Paid consultation booking with deposit",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Once a conflict check clears, the client picks a consultation slot with the right attorney and pays the consultation fee, so no-shows stop costing the firm an hour.\"",
+      "whenAndWhatItTakes": "Month 2. Needs each attorney's consult hours, the fee and the payment account they already use for non-trust funds."
+    },
+    {
+      "name": "Review reply drafts that confirm nothing about a client",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Each new review of the firm gets a short reply drafted in the attorney's voice that never confirms someone was a client or mentions a matter, ready to approve.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their confidentiality rules and a few approved replies. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Consultation reminders with the document checklist",
+      "kind": "automation",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 50,
+      "monthlyMax": 120,
+      "pitchLine": "\"Two days before a consultation, the client gets the law firm's address, parking notes and the checklist of documents for their kind of matter.\"",
+      "whenAndWhatItTakes": "Month 2, with the booking. Needs the checklists by practice area."
+    },
+    {
+      "name": "Intake summary drafted for the attorney",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"Before each consultation, the attorney gets a one-page draft summary of the intake answers and uploaded documents, with open questions listed. The attorney reads it in five minutes instead of twenty.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their intake form and data-handling rules. Comes with the AI maintenance retainer; it never contacts the client."
+    },
+    {
+      "name": "Site question assistant on process and fees",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 3500,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"It answers 'how does a consultation work' and 'what does an estate plan cost here' from the firm's own pages, says plainly it can't give legal advice, and offers a consultation instead.\"",
+      "whenAndWhatItTakes": "Month 5. Needs approved fee ranges and process pages, plus the attorney's sign-off on every answer. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Engagement letter assembly and e-signature",
+      "kind": "automation",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 75,
+      "monthlyMax": 150,
+      "pitchLine": "\"When the attorney marks a consultation as engaged, the right engagement letter for that practice area goes out for e-signature with the fee terms filled in.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their engagement letter templates and the signing tool they use."
+    },
+    {
+      "name": "Secure client document portal",
+      "kind": "software",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Clients upload deeds, court orders and IDs to a private law firm portal instead of email, and the paralegal sees what arrived for each matter.\"",
+      "whenAndWhatItTakes": "Month 6. Needs their matter list structure and data retention policy."
+    },
+    {
+      "name": "Online estate planning questionnaire",
+      "kind": "software",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"Family, guardians, assets and wishes collected online before the estate planning meeting, saved as the client goes, so the attorney's first hour is advice, not forms.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their paper questionnaire and any state-specific questions."
+    },
+    {
+      "name": "First-draft assembler from the firm's own templates",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 200,
+      "monthlyMax": 500,
+      "pitchLine": "\"Questionnaire answers flow into the firm's own will and simple-agreement templates as a first draft for the attorney to review and revise. It never sends anything to a client.\"",
+      "whenAndWhatItTakes": "Month 8. Needs approved templates and clause rules from the attorney. Comes with the AI maintenance retainer; attorney review on every draft."
+    },
+    {
+      "name": "Matter status page for clients",
+      "kind": "software",
+      "oneTimeMin": 2500,
+      "oneTimeMax": 6000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"Clients see which stage their legal matter is at, what the firm is waiting on and the next date, instead of calling the front desk each week.\"",
+      "whenAndWhatItTakes": "Month 7. Needs the stages per practice area and who updates them."
+    },
+    {
+      "name": "Court date and deadline drafts from notices",
+      "kind": "ai",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Upload a hearing notice or court order and it drafts the dates and deadlines for the firm calendar, which a paralegal confirms before anything is saved.\"",
+      "whenAndWhatItTakes": "Month 7. Needs sample notices from their courts and their calendar rules. Comes with the AI maintenance retainer; staff confirm every entry."
+    },
+    {
+      "name": "Seminar registration and follow-up board",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Every estate planning seminar sign-up, who attended and who booked a consultation after, on one board the office can work from.\"",
+      "whenAndWhatItTakes": "Month 4, if they run seminars. Needs their seminar calendar and follow-up wording."
+    },
+    {
+      "name": "Meeting note drafts into the matter file",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 3500,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"After a client meeting, the attorney talks for two minutes and gets a draft file note and task list for the matter, ready to edit.\"",
+      "whenAndWhatItTakes": "Month 6. Needs their note format and consent wording for recorded dictation. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Unpaid invoice reminder sequence",
+      "kind": "automation",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Overdue legal invoices get polite reminders on a schedule the attorney sets, so nobody at the firm has to make the awkward call.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their billing export and reminder wording; never touches trust account funds."
+    },
+    {
+      "name": "Spanish intake translation drafts with staff review",
+      "kind": "ai",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"Consultation requests written in Spanish get a draft English summary for the attorney, checked by a bilingual staff member, so immigration and family law intakes don't wait.\"",
+      "whenAndWhatItTakes": "Month 6, only where bilingual staff review. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Paralegal and associate applicant screener",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"Applicants for a paralegal or associate role answer the firm's questions about practice area experience, bar status and schedule, and you only interview the ones who fit.\"",
+      "whenAndWhatItTakes": "Whenever they post a role. Needs their must-haves. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Referral source tracker",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Track which accountants, advisors and past clients send the firm consultations, so the attorney knows who to thank and who to take to lunch.\"",
+      "whenAndWhatItTakes": "Month 5. Needs a referral question on the intake and their current list of referrers."
+    },
+    {
+      "name": "Consultation-to-engagement dashboard by practice area",
+      "kind": "software",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"See how many consultations each practice area brings and how many become engaged matters, so the firm puts its effort where the work comes from.\"",
+      "whenAndWhatItTakes": "Month 9. Needs six months of consultation and engagement data."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the conflict-check intake for small firms",
+      "whoPays": "Small law firms, monthly per office",
+      "min": 79,
+      "max": 249,
+      "unit": "monthly",
+      "pitchLine": "\"Solo attorneys still run conflict checks from a spreadsheet and a phone call. The intake I built for one firm works for any small practice.\"",
+      "whyItWorks": "The first firm paid for the workflow and its rules. The next one needs only its own practice areas loaded."
+    },
+    {
+      "route": "Bar section member template for solo practitioners",
+      "whoPays": "The state or county bar's solo and small firm section",
+      "min": 2000,
+      "max": 8000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer every solo member a law firm site template with the disclaimer, conflict check and consultation request already compliant in your state.\"",
+      "whyItWorks": "Sections run on member benefits, and website compliance is a question members bring to them constantly."
+    },
+    {
+      "route": "Estate planning attorney site kit",
+      "whoPays": "Estate planning attorneys in other states",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"The estate planning pages, seminar sign-up and questionnaire I built for one firm fit any solo estate attorney, with their own state's notice added.\"",
+      "whyItWorks": "Estate planning workflows are similar everywhere, so the kit carries over with state-specific edits only."
+    },
+    {
+      "route": "White-label for law practice consultants",
+      "whoPays": "The practice management consultant, per law firm",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "pitchLine": "\"You coach small firms on intake and billing. Add a compliant law firm site build to your engagement and I deliver it under your name.\"",
+      "whyItWorks": "Consultants already have the firm's trust and budget, and they want a fast deliverable to show progress."
+    },
+    {
+      "route": "Lawyer referral service panel pages",
+      "whoPays": "The county bar's lawyer referral service",
+      "min": 3000,
+      "max": 9000,
+      "unit": "one-time",
+      "pitchLine": "\"Your referral service matches the public with panel attorneys. A clearer intake by practice area and a page for each panel attorney gets more matched consultations.\"",
+      "whyItWorks": "Referral services fund themselves through matched consultations, so better intake pays for itself."
+    },
+    {
+      "route": "Incubator programmes for new solo attorneys",
+      "whoPays": "The law school or bar incubator, per cohort",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Each incubator cohort of new solo attorneys needs a compliant law firm site on day one. I build the template once and set up each graduate's version.\"",
+      "whyItWorks": "Incubators budget for launching practices, and the cohort repeats every year."
+    },
+    {
+      "route": "Compliant site templates for a lawyers' liability insurer",
+      "whoPays": "The professional liability insurer's risk management team",
+      "min": 5000,
+      "max": 20000,
+      "unit": "one-time",
+      "pitchLine": "\"Your insured small firms keep publishing risky marketing. Offer them a law firm site template with the disclaimers and form notices already in place.\"",
+      "whyItWorks": "Insurers spend on risk management resources, and fewer advertising complaints is exactly what they want."
+    },
+    {
+      "route": "Seminar-in-a-box for estate attorneys",
+      "whoPays": "Estate planning attorneys, monthly",
+      "min": 49,
+      "max": 149,
+      "unit": "monthly",
+      "pitchLine": "\"A seminar sign-up page, reminder texts, flyer artwork and a follow-up consultation booking, ready for any estate planning attorney who teaches at the library.\"",
+      "whyItWorks": "Every estate attorney who runs seminars needs the same pieces, so one kit serves many."
+    },
+    {
+      "route": "Spanish-language immigration law site kit",
+      "whoPays": "Immigration attorneys in other metros",
+      "min": 2000,
+      "max": 4500,
+      "unit": "one-time",
+      "pitchLine": "\"The bilingual immigration attorney pages I built, with the disclaimer and a warning about non-lawyer fraud translated, fit any immigration firm serving Spanish speakers.\"",
+      "whyItWorks": "Translation and attorney review are the slow parts, and they're already done once."
+    },
+    {
+      "route": "Template licence for legal marketing agencies",
+      "whoPays": "The agency, per law firm client",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency signs small law firms and starts each from zero. License my template with the conflict check, disclaimers and timeline guides built.\"",
+      "whyItWorks": "Agencies own the firm relationship; you sell them the compliant structure they'd otherwise rebuild."
+    },
+    {
+      "route": "One firm per practice area per city",
+      "whoPays": "A small law firm in another practice area or city",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I build for one estate firm, one family law firm and one immigration firm per city. Your practice area in {City} is open today.\"",
+      "whyItWorks": "Firms value not sharing a builder with a direct competitor, and the template carries over to each practice area."
+    },
+    {
+      "route": "Finishing abandoned law firm site projects",
+      "whoPays": "The stranded law firm",
+      "min": 2000,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"A designer started your firm's site, then disappeared before the attorney approved the copy. I can finish it on a structure already live and compliant.\"",
+      "whyItWorks": "Those firms already decided to buy and often have approved copy waiting."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Law firm site build plus care plan, one contract",
+      "min": 2500,
+      "max": 5000,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo and the attorney approves the scope.",
+      "line": "\"The law firm site and the care plan sit on one contract, so a disclaimer update or a new attorney bio is a message to me, not an afternoon for you.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Google profile posts with plain legal explainers",
+      "min": 200,
+      "max": 400,
+      "unit": "monthly",
+      "trigger": "The first consultation request arrives through the site.",
+      "line": "\"Someone found the firm and asked for a consultation. Weekly explainers on the Google profile keep the next one finding you.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "Attorney portrait and office photo session",
+      "min": 500,
+      "max": 1200,
+      "unit": "per-shoot",
+      "trigger": "The attorney bio still shows marked placeholders where photos go.",
+      "line": "\"The attorney bio is the most-read page on the site, and it's still waiting for a portrait.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Conflict check intake queue",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "trigger": "Sixty days of consultation requests, and staff mention running conflicts by hand.",
+      "line": "\"Your staff run every conflict check from scratch. Let the consultation request hand them the names first.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Monthly practice area guide article",
+      "min": 400,
+      "max": 900,
+      "unit": "monthly",
+      "trigger": "The attorney says the same questions come up in every consultation.",
+      "line": "\"The questions you answer in every consultation should each be a plain legal guide that brings the next client in.\""
+    },
+    {
+      "rung": 6,
+      "day": 120,
+      "offer": "Intake summary drafted for the attorney",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "trigger": "Consultations rise and the attorney reads raw intake forms between hearings.",
+      "line": "\"You're reading intake forms in the court hallway. A one-page draft summary before each consultation gives that time back.\""
+    },
+    {
+      "rung": 7,
+      "day": 180,
+      "offer": "Secure client document portal",
+      "min": 3000,
+      "max": 8000,
+      "unit": "one-time",
+      "trigger": "Clients keep emailing deeds and court orders, or a second attorney joins the firm.",
+      "line": "\"Court orders and IDs shouldn't arrive by email. A private law firm portal keeps every document with its matter.\""
+    },
+    {
+      "rung": 8,
+      "day": 365,
+      "offer": "Consultation-to-engagement dashboard by practice area",
+      "min": 2000,
+      "max": 5000,
+      "unit": "one-time",
+      "trigger": "The first anniversary, when the attorney asks which practice area the site really feeds.",
+      "line": "\"A year in, let's see which practice area turns consultations into engaged matters and put the firm's effort there.\""
+    }
+  ]
+}

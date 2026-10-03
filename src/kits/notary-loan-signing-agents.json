@@ -1,0 +1,843 @@
+{
+  "schemaVersion": 1,
+  "category": "Notary & loan signing agents",
+  "slug": "notary-loan-signing-agents",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Pro family batch. Tiny-ticket volume play, so every add-on is priced small. Notaries give no legal advice; commission, bond and E&O details are bracketed placeholders, and fee caps follow [state fee schedule]. No signing-service or platform names."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Notary fees, travel zones and service radius",
+      "contains": "Per-signature notarial fees as set by [state fee schedule], a separate travel fee by zone, after-hours, hospital and jail visit fees, and a map of the mobile service radius",
+      "why": "Callers want the total cost of a mobile notary driving to them before they book. A clear fee table ends the haggling call."
+    },
+    {
+      "section": "Before the notary arrives checklist",
+      "contains": "Accepted ID types, unsigned documents only, every signer present, witnesses if the document needs them, no blank spaces, and what happens if an ID has expired",
+      "why": "A missing ID or a pre-signed page wastes the drive. A checklist sent at booking saves the appointment and the travel fee argument."
+    },
+    {
+      "section": "Hospital, care home and jail signings",
+      "contains": "What the notary must see from the signer, facility visiting rules, power of attorney and advance directive visits, and how to request an urgent same-day signing",
+      "why": "These calls come from worried families. They choose the notary who explains the visit calmly and can come today."
+    },
+    {
+      "section": "Loan signing agent profile for title and escrow",
+      "contains": "Background check status, E&O coverage [amount], scan-back and print capacity, closing types handled (refinance, purchase, reverse, HELOC), languages, and an availability calendar",
+      "why": "Title and escrow officers pick loan signing agents by readiness and reliability. A profile page answers their checklist before they call."
+    },
+    {
+      "section": "Apostille and document authentication help",
+      "contains": "What an apostille is, which documents need one (birth certificates, diplomas, powers of attorney), state versus federal documents, turnaround and mail-in steps",
+      "why": "Apostille searchers are confused and on a deadline for paperwork abroad. A plain page wins them over a crowded list of listings."
+    },
+    {
+      "section": "Not-an-attorney notice in English and Spanish",
+      "contains": "The notice wording required by [state notary rules] when advertising, what a notary public can and cannot do, and a plain warning that a notary cannot give legal or immigration advice",
+      "why": "Some states require it, and it reassures Spanish-speaking families who know 'notario' means a lawyer elsewhere."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C30",
+      "siteType": "local-conversion",
+      "name": "On My Way",
+      "heroLayout": "split-photo",
+      "mood": [
+        "friendly",
+        "quick",
+        "reliable"
+      ],
+      "bestFor": "Solo mobile notaries who need the fee table, the service radius and a tap-to-call button working on a phone",
+      "pairsWithTier": "starter",
+      "headlineSample": "Mobile notary in {City}, at your door today",
+      "whyItFits": "Butter and denim with a geometric display face feel approachable and quick. Fees, radius and the call button, nothing else."
+    },
+    {
+      "id": "b",
+      "themeId": "C2",
+      "siteType": "booking-first",
+      "name": "Signed and Sealed",
+      "heroLayout": "split-photo",
+      "mood": [
+        "trustworthy",
+        "calm",
+        "orderly"
+      ],
+      "bestFor": "Notaries who take booked appointments for families, hospitals and apostilles and want the slot and travel fee chosen online",
+      "pairsWithTier": "standard",
+      "headlineSample": "Book a {City} mobile notary for home, hospital or office",
+      "whyItFits": "The family's Private Vault combo. Warm cream and an old-style serif feel official without feeling cold, which suits a stranger arriving with a stamp."
+    },
+    {
+      "id": "c",
+      "themeId": "C6",
+      "siteType": "b2b-capability",
+      "name": "Title Desk Ready",
+      "heroLayout": "card-stack",
+      "mood": [
+        "exact",
+        "dependable",
+        "brisk"
+      ],
+      "bestFor": "Loan signing agents selling to title, escrow and signing services, with credentials, coverage and capacity laid out like a spec sheet",
+      "pairsWithTier": "premium",
+      "headlineSample": "Loan signings across {City}, scanned back the same night",
+      "whyItFits": "Cobalt and a neutral grotesque read like a vendor profile. Title officers scan cards for coverage, area and capacity, not adjectives."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your Google listing says mobile notary but has no website, so someone who needs a power of attorney signed tonight can't see your travel fee or where you'll drive.",
+      "hook": "Open their Maps listing and confirm there's no Website button. Screenshot it for when they reply.",
+      "linkLine": "Here's what could sit behind that button for a mobile notary: {demo-link}"
+    },
+    {
+      "angle": "Facebook-only link",
+      "line": "The website on your listing opens a Facebook page. A title officer looking for a loan signing agent wants your coverage, area and availability on one page, not a feed.",
+      "hook": "Tap their Website link and confirm it lands on Facebook. Note the latest signing they posted about.",
+      "linkLine": "A loan signing profile built for title officers: {demo-link}"
+    },
+    {
+      "angle": "Directory profile only",
+      "line": "Your only page is a notary directory profile with a dozen other signing agents listed under it. A family searching at night calls the first notary who shows a fee and a phone number of their own.",
+      "hook": "Tap their link and check whether it's a directory or a signing-service profile. Note how many others appear on that page.",
+      "linkLine": "A page that's only your notary service: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "I opened your notary site on my phone and the call button was hidden under a banner. People looking for a mobile notary are usually on their phone in a hospital hallway or a car.",
+      "hook": "Only if they have a site. Load it on your phone and note what breaks. Screenshot it for when they reply.",
+      "linkLine": "Your notary site rebuilt for a phone: {demo-link}"
+    },
+    {
+      "angle": "Travel fee not shown",
+      "line": "Nothing on your profile says what a mobile notary visit costs with travel. People don't mind a travel fee; they mind finding out when you arrive.",
+      "hook": "Check every profile for a fee or travel note. If there's none anywhere, the angle holds.",
+      "linkLine": "Notary fees and travel zones shown up front: {demo-link}"
+    },
+    {
+      "angle": "Hospital signing reviews",
+      "line": "Your reviews mention a notary who came to a hospital room on short notice and was kind about it. That's exactly what the next worried family is searching for, and they won't see it off your listing.",
+      "hook": "Read their reviews and copy one phrase about a hospital, care home or late visit. Quote it back if they reply.",
+      "linkLine": "A hospital and care home signing page with those reviews: {demo-link}"
+    },
+    {
+      "angle": "Month-end closing rush",
+      "line": "Loan closings bunch up at the end of each month, and title offices scramble for a signing agent who can take a late appointment. A profile page with your availability is what they check first.",
+      "hook": "Send this in the last ten days of a month. Check whether they post about loan signings.",
+      "linkLine": "A loan signing availability page for month-end: {demo-link}"
+    },
+    {
+      "angle": "Late-night notary calls",
+      "line": "A lot of mobile notary calls come after hours: a power of attorney before surgery, a car title before a sale. When the number goes to voicemail, they call the next notary on the list.",
+      "hook": "Call their listed number after hours. If it goes to a generic voicemail, the angle holds.",
+      "linkLine": "A notary request form that works at night: {demo-link}"
+    },
+    {
+      "angle": "Bilingual notary",
+      "line": "Your posts are in English and Spanish, but there's no Spanish notary page with the not-an-attorney notice your state may require. Families notice that care.",
+      "hook": "Only if they post in Spanish or mention it. Never state their state's rule; say 'may require'.",
+      "linkLine": "A bilingual notary page with the notice translated: {demo-link}"
+    },
+    {
+      "angle": "Service radius",
+      "line": "Your listing says you travel around {City}, but not how far. Someone in {Neighborhood} wants to know if the mobile notary will come before they ask.",
+      "hook": "Find the towns they mention in posts or reviews. Use the one furthest from their base.",
+      "linkLine": "A notary travel map with zones and fees: {demo-link}"
+    },
+    {
+      "angle": "Apostille requests",
+      "line": "Your posts mention apostilles, but there's no page explaining which documents need one or how long it takes. Apostille searchers are confused and on a deadline.",
+      "hook": "Only if they offer apostille help. Note any post about overseas documents.",
+      "linkLine": "An apostille help page for {Business Name}: {demo-link}"
+    },
+    {
+      "angle": "Commission and E&O not shown",
+      "line": "Your notary commission is on the state lookup, but a title officer or a family never sees it. Showing the commission, bond and E&O coverage is what separates you from someone with a stamp and no paperwork.",
+      "hook": "Look them up on the state notary lookup. Note that a record exists; never quote a number or expiry you didn't see.",
+      "linkLine": "Commission, bond and coverage on one notary page: {demo-link}"
+    },
+    {
+      "angle": "Signing-service dependence",
+      "line": "Sounds like most of your loan signings come through signing services that take a cut. Title offices that book signing agents directly look for a professional page first.",
+      "hook": "Look for posts thanking signing services or mentioning low fees. Never name the service back to them.",
+      "linkLine": "A direct-to-title loan signing profile: {demo-link}"
+    },
+    {
+      "angle": "Car title and DMV paperwork",
+      "line": "Private car sales need a notary for the title in some states, usually on a weekend. A notary page that says 'vehicle titles, Saturdays' catches people searching from the buyer's driveway.",
+      "hook": "Only if they mention vehicle titles or weekend appointments. Check whether their state requires notarised titles before using it.",
+      "linkLine": "A vehicle title notary page for weekends: {demo-link}"
+    },
+    {
+      "angle": "A specific recent signing",
+      "line": "That {specific recent job} you posted about sounds like the kind of notary call people panic over. A story like that should sit on your own page where the next family finds it.",
+      "hook": "Pick their newest post about a signing and name it exactly, without any client detail.",
+      "linkLine": "That signing story, on your own notary page: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, that {specific recent job} you posted about sounds like the notary call nobody else would take.\n\nI looked for a mobile notary in {City} and found {Business Name}, but no page with your travel fees, service radius or a way to book. I put together a sample notary page to see how it would look, with marked placeholders where your photos would go.\n\nWant me to send it?",
+    "dm2": "{Owner}, following up in case my message got lost between signings. Here's the sample notary site for {Business Name}: {demo-link}\n\nIt has a fee and travel-zone table, a before-the-notary-arrives checklist, a hospital and care home page, and a loan signing profile for title officers. If it's not for you, just say so.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build simple websites for mobile notaries and signing agents here in {City}. I messaged you a few days ago, did it come through?\"\n\nIF NO:\n\"No worries, you're probably driving half the day. Short version: I built a sample notary page for {Business Name} with your fees, travel zones and a booking request, and marked placeholders where your photos would go. Can I text you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"It's a small site you own, built for phones. The build runs {Build Range}, then {Care Range} a month for hosting and fee updates. For a solo notary I'd quote about {Build Price}, which is a handful of loan signings.\"\n\"Can I walk you through it for ten minutes, whenever you're between appointments?\"\n\nCLOSE:\n\"I'll send a short scope and a deposit link. It's live within a couple of weeks of the deposit.\"",
+    "objections": [
+      {
+        "objection": "I get my signings from signing services.",
+        "handler": "\"Those keep you busy, but they keep part of every fee. A loan signing profile page lets title offices book you directly, and families find you for the general notary work.\""
+      },
+      {
+        "objection": "I'm just one person with a stamp. I don't need a website.",
+        "handler": "\"That's exactly who it's for. One page with fees, travel zones and the checklist saves you a wasted drive every time someone forgets their ID.\""
+      },
+      {
+        "objection": "Notary fees are capped. I can't afford much.",
+        "handler": "\"That's why it's small and priced at a handful of signings. The travel and after-hours fees on the page are where the real money is, and showing them gets them paid without argument.\""
+      },
+      {
+        "objection": "My directory listing is enough.",
+        "handler": "\"It sits next to a dozen other notaries. Your own page shows only you, and you can put it on your card and your car.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}, for the fee table, the checklist, a hospital page and a signing profile. That's a few weeks of signings, once.\""
+      }
+    ],
+    "email": {
+      "subject": "Notary page for {Business Name}",
+      "body": "Hi {Owner},\n\nI build simple websites for mobile notaries and loan signing agents around {City}. {Business Name} has good reviews, but no page a family or a title officer finds with your fees and service area on it.\n\nI built a sample first rather than ask for your time: a fee and travel-zone table, a before-the-notary-arrives checklist, a hospital and care home signing page, an apostille help page and a loan signing profile for title and escrow, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and fee updates. If not, no problem, it comes down at the end of the month.\n\nWorth ten minutes on the phone this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"{Owner}, it's {Your Name}. I build websites for mobile notaries in {City}, and I made a sample page for {Business Name} with your fees and travel zones. I'll text the link. Have a look between signings. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm taking the {Business Name} notary demo down on Friday to free up the space.\n\nWant me to leave it up? One word is fine either way.",
+    "nurture": "Hi {Owner}, month-end closings are about to stack up again and title offices will be hunting for signing agents. Thought of you.\n\nThe notary page is still here whenever you want it, same price as before. {demo-link} if you'd like another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to a handful of loan signings. Notaries earn in small fees and count every one.",
+      "Keep it to a few pages: fees, checklist, specialty visits and a signing profile. More pages don't earn more signings.",
+      "Never write notarial fees above [state fee schedule]; travel, after-hours and printing are the lines that vary.",
+      "Price the loan signing profile separately; it sells to title officers, a different buyer from families.",
+      "Charge for a Spanish page only with the not-an-attorney notice included and reviewed against [state notary rules].",
+      "Offer monthly add-ons in tens of dollars, not hundreds. A solo notary cancels anything that feels like overhead."
+    ],
+    "lineItems": [
+      {
+        "item": "Fee and travel-zone table with map",
+        "min": 100,
+        "max": 300,
+        "unit": "one-time",
+        "description": "Max with several zones, after-hours and hospital rates, and a print-fee line for loan packages.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Notary appointment request with ID check questions",
+        "min": 150,
+        "max": 400,
+        "unit": "one-time",
+        "description": "Max with signer count, ID type, witness need, location type and an urgent same-day flag.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Loan signing agent profile page",
+        "min": 150,
+        "max": 400,
+        "unit": "one-time",
+        "description": "Max with closing types, coverage placeholders, a downloadable one-page profile and an availability calendar.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Hospital, care home and jail visit page",
+        "min": 100,
+        "max": 250,
+        "unit": "one-time",
+        "description": "Max with facility-specific notes for the local hospitals and a separate urgent request form.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Apostille help page with mail-in steps",
+        "min": 100,
+        "max": 300,
+        "unit": "one-time",
+        "description": "Max with a document picker for state versus federal documents and an order form for mail-in requests.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Spanish notary page with the required notice",
+        "min": 150,
+        "max": 400,
+        "unit": "one-time",
+        "description": "Max when the fee table, checklist and request form are translated, with the notice wording the notary supplies.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Headshot for the signing agent profile",
+      "min": 100,
+      "max": 250,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Title officers and families both want to see who's coming to the signing table. A short headshot session gives the notary page and profile a real face.\"",
+      "when": "Month 2, or before the loan signing profile goes out to title offices."
+    },
+    {
+      "name": "Google profile posts for notary services",
+      "min": 49,
+      "max": 129,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A weekly post on your Google profile, hospital visits one week, apostilles the next, so your notary listing looks active when someone searches at night.\"",
+      "when": "Day 30, once the site is live."
+    },
+    {
+      "name": "Review requests after each signing",
+      "min": 29,
+      "max": 79,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"After every general notary visit, the signer gets a short text asking how it went. Reviews about kindness in a hospital room win the next urgent call.\"",
+      "when": "Day 30. The easiest second sale."
+    },
+    {
+      "name": "Car magnet, card and stamp-bag artwork",
+      "min": 100,
+      "max": 300,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A car magnet and a card with your mobile notary page on them. Every parking lot you visit for a signing becomes a small advert.\"",
+      "when": "Right after launch."
+    },
+    {
+      "name": "Title office introduction pack",
+      "min": 150,
+      "max": 400,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A one-page loan signing profile and a short email I send to local title and escrow offices, introducing you as a direct signing agent with your coverage and area.\"",
+      "when": "Month 2, once the signing profile page is live."
+    },
+    {
+      "name": "Care facility front-desk card pack",
+      "min": 100,
+      "max": 250,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Cards for hospital social workers and care home front desks that say 'mobile notary, same-day visits', with the page that explains what the notary needs from the signer.\"",
+      "when": "Month 2, after the hospital and care home page is live."
+    },
+    {
+      "name": "Spanish-language notary posts",
+      "min": 49,
+      "max": 99,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A short Spanish notary post each week with the not-an-attorney notice included, so families who search in Spanish find a notary who explains things plainly.\"",
+      "when": "Month 3, only where the notary serves in Spanish."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Independent title and escrow agencies",
+        "whoPays": "The title or escrow agency",
+        "min": 1800,
+        "max": 3500,
+        "unit": "one-time",
+        "pitchLine": "\"The small title agencies you sign loans for often run dated sites. A loan signing agent who never misses a scan-back is a trusted introduction.\"",
+        "whyItWorks": "Independent title agencies compete on service with realtors and lenders, and they listen to the signing agents they rely on."
+      },
+      {
+        "route": "Estate planning attorneys who need witnesses",
+        "whoPays": "The law practice",
+        "min": 2500,
+        "max": 5000,
+        "unit": "one-time",
+        "pitchLine": "\"The estate planning attorneys who call you for will signings and witnesses need careful sites. Your notary work puts you in their office regularly.\"",
+        "whyItWorks": "Attorneys trust the notary who shows up prepared, and estate firms are a high-value site buyer."
+      },
+      {
+        "route": "Home care agencies with signing needs",
+        "whoPays": "The home care agency",
+        "min": 2000,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"Home care agencies call a mobile notary when a client needs a power of attorney signed at home. Those agencies need family-facing sites too.\"",
+        "whyItWorks": "Care agencies sell to anxious families and value vendors who are gentle with their clients."
+      },
+      {
+        "route": "Small used-car dealers with title paperwork",
+        "whoPays": "The dealer",
+        "min": 1500,
+        "max": 3000,
+        "unit": "one-time",
+        "pitchLine": "\"The small car lots that call you for title signings run inventory off a social page. Your notary visits make you the friendly introduction.\"",
+        "whyItWorks": "Independent dealers need inventory pages and trust the people who help close their sales."
+      },
+      {
+        "route": "Document translators who send apostille work",
+        "whoPays": "The translation service",
+        "min": 1500,
+        "max": 3000,
+        "unit": "one-time",
+        "pitchLine": "\"Translators who send you apostille and notary work need multilingual sites that explain certification clearly. You can make the introduction.\"",
+        "whyItWorks": "Translators and notaries pass the same overseas paperwork back and forth, so the referral is natural."
+      },
+      {
+        "route": "Realtors who need closings signed remotely",
+        "whoPays": "The realtor or team",
+        "min": 1500,
+        "max": 3500,
+        "unit": "one-time",
+        "pitchLine": "\"Realtors call a loan signing agent when a seller is out of town. Those realtors buy listing landing pages, and you've already saved one of their closings.\"",
+        "whyItWorks": "A saved closing is a strong favour, and realtors are steady buyers of niche pages."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Closing schedule confirmation assistant for title agencies",
+        "whoPays": "The title agency, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"Title agencies spend hours confirming signing appointments with borrowers and signing agents. An assistant confirms times, addresses and ID reminders by text.\"",
+        "whyItWorks": "Every missed signing costs the title agency a rescheduled closing, so fewer no-shows pays for it."
+      },
+      {
+        "route": "Signing-day instruction drafts for estate attorneys",
+        "whoPays": "The law practice, monthly",
+        "min": 99,
+        "max": 199,
+        "unit": "monthly",
+        "pitchLine": "\"Estate attorneys send every client the same will signing instructions. An assistant drafts them per client, with witness and notary details, for the attorney to approve.\"",
+        "whyItWorks": "It saves staff time on every signing, and the notary looks well connected for introducing it."
+      },
+      {
+        "route": "Visit note summaries for home care agencies",
+        "whoPays": "The home care agency, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Caregivers dictate visit notes in the car and the agency gets a clean draft summary, the same agencies that call you for power of attorney signings.\"",
+        "whyItWorks": "Care agencies drown in documentation, and a tool caregivers actually use sells on the first week."
+      },
+      {
+        "route": "Vehicle listing drafts for small dealers",
+        "whoPays": "The dealer, monthly",
+        "min": 79,
+        "max": 199,
+        "unit": "monthly",
+        "pitchLine": "\"The car lots that book you as their title notary write listings by hand. An assistant drafts each vehicle listing from a few notes and the VIN details, for the dealer to check.\"",
+        "whyItWorks": "Dealers list cars daily, so a small monthly tool that saves time is an easy yes."
+      },
+      {
+        "route": "First-draft translations for document translators",
+        "whoPays": "The translation service, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Translators who send you apostille work can get a first draft of birth certificates and diplomas in their glossary, which they then certify themselves.\"",
+        "whyItWorks": "It speeds up the routine documents while the translator keeps full control of the certified version."
+      },
+      {
+        "route": "Remote seller paperwork checklist for realtors",
+        "whoPays": "The realtor, monthly",
+        "min": 49,
+        "max": 129,
+        "unit": "monthly",
+        "pitchLine": "\"For out-of-town sellers, an assistant walks them through what's needed for a remote loan signing or deed signing, so the realtor isn't chasing papers.\"",
+        "whyItWorks": "Remote sellers are stressful for realtors, and a clear checklist protects the closing date."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Missed-call text-back with the notary fee table",
+      "kind": "automation",
+      "oneTimeMin": 0,
+      "oneTimeMax": 150,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"A call you miss while you're at a signing table gets a text with your fee table and a request link, so the caller doesn't move on to the next notary.\"",
+      "whenAndWhatItTakes": "Day 30. Needs their number forwarded and one line of wording."
+    },
+    {
+      "name": "Notary request form with travel fee calculator",
+      "kind": "software",
+      "oneTimeMin": 200,
+      "oneTimeMax": 600,
+      "monthlyMin": 15,
+      "monthlyMax": 39,
+      "pitchLine": "\"The caller enters an address and sees the mobile notary travel fee for that zone before they book, so the fee is agreed before you start the car.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their zones, travel fees and after-hours rates."
+    },
+    {
+      "name": "Appointment reminders with the ID checklist",
+      "kind": "automation",
+      "oneTimeMin": 100,
+      "oneTimeMax": 300,
+      "monthlyMin": 15,
+      "monthlyMax": 39,
+      "pitchLine": "\"The night before a notary visit, the signer gets a text: bring valid ID, don't sign anything yet, have witnesses ready if needed.\"",
+      "whenAndWhatItTakes": "Month 2, with the request form. Needs their checklist wording."
+    },
+    {
+      "name": "Review reply drafts for notary reviews",
+      "kind": "ai",
+      "oneTimeMin": 100,
+      "oneTimeMax": 300,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Each new notary review gets a short thank-you drafted in your voice that never mentions what was signed, ready to approve from the car.\"",
+      "whenAndWhatItTakes": "Month 2. Needs five past replies. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Payment link for notary and travel fees",
+      "kind": "automation",
+      "oneTimeMin": 100,
+      "oneTimeMax": 400,
+      "monthlyMin": 15,
+      "monthlyMax": 39,
+      "pitchLine": "\"When the signing is done, the client gets a payment link with the notarial fee and travel fee listed separately, so nobody fumbles for cash in a hospital hallway.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the payment account they already use and their fee lines."
+    },
+    {
+      "name": "Signing agent availability calendar for title offices",
+      "kind": "software",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Title and escrow officers see your open loan signing slots and request one directly, without three calls to find out you're free Thursday night.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their calendar and the areas they cover for loan signings."
+    },
+    {
+      "name": "Notary question assistant on IDs, witnesses and fees",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"It answers 'which ID works' and 'do I need witnesses' at midnight from your own notary pages, and says plainly it can't give legal advice about the document.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their fee table, checklist and rules they follow. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Signing log with fees and mileage",
+      "kind": "software",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 15,
+      "monthlyMax": 39,
+      "pitchLine": "\"Every signing logged with the type, the fee, the travel fee and the miles driven, ready for tax time. It sits beside the official notary journal, never replaces it.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their signing types and a mileage start point."
+    },
+    {
+      "name": "Closing instructions checklist drafter",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1200,
+      "monthlyMin": 39,
+      "monthlyMax": 99,
+      "pitchLine": "\"Paste in a title office's closing instructions and it drafts a loan signing checklist: pages to flag, scan-back rules, return shipping and deadlines.\"",
+      "whenAndWhatItTakes": "Month 4. Needs a few past instruction emails with borrower details removed. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Title office contact and follow-up board",
+      "kind": "software",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 15,
+      "monthlyMax": 39,
+      "pitchLine": "\"Every title and escrow office you've introduced yourself to, who booked a loan signing and when to follow up, on one simple board.\"",
+      "whenAndWhatItTakes": "Month 3, after the introduction pack goes out. Needs their list of local offices."
+    },
+    {
+      "name": "Apostille order tracker",
+      "kind": "software",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Each apostille request tracked from documents received to sent to the state to returned, with a status link the client can check.\"",
+      "whenAndWhatItTakes": "Month 5, if apostille work is steady. Needs their steps and mailing method."
+    },
+    {
+      "name": "Commission, bond and E&O renewal reminders",
+      "kind": "automation",
+      "oneTimeMin": 50,
+      "oneTimeMax": 200,
+      "monthlyMin": 9,
+      "monthlyMax": 19,
+      "pitchLine": "\"Reminders months ahead of your notary commission, bond and E&O renewal dates, so the profile page never shows something expired.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their renewal dates."
+    },
+    {
+      "name": "Spanish message drafts with the notice included",
+      "kind": "ai",
+      "oneTimeMin": 200,
+      "oneTimeMax": 600,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Replies to Spanish-speaking notary clients get drafted in Spanish with the not-an-attorney line included, for you to check before sending.\"",
+      "whenAndWhatItTakes": "Month 4, only where the notary reads Spanish. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "After-hours notary call answerer",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1200,
+      "monthlyMin": 49,
+      "monthlyMax": 99,
+      "pitchLine": "\"At 11pm it answers the notary line, asks what needs signing, where and how urgently, quotes the travel zone and texts you only for same-night requests.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their fee table, hours and what counts as urgent. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Earnings report by signing type",
+      "kind": "software",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 15,
+      "monthlyMax": 39,
+      "pitchLine": "\"See which pays better once miles are counted: loan signings through services, direct title work, or general mobile notary visits.\"",
+      "whenAndWhatItTakes": "Month 6. Needs three months of the signing log."
+    },
+    {
+      "name": "Route planner for back-to-back signings",
+      "kind": "software",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Stack an evening of loan signings in the right order with drive times, so you can say yes to the third title office without being late to the second.\"",
+      "whenAndWhatItTakes": "Month 6, when they're doing several signings a night. Needs their calendar."
+    },
+    {
+      "name": "ID pre-check from signer upload",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1200,
+      "monthlyMin": 39,
+      "monthlyMax": 99,
+      "pitchLine": "\"Before the drive, the signer uploads their ID and the tool flags an expired date or a name that doesn't match the document. The notary still checks in person.\"",
+      "whenAndWhatItTakes": "Month 7. Needs a privacy notice and deletion rules for uploaded IDs. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Title office introduction email drafter",
+      "kind": "ai",
+      "oneTimeMin": 200,
+      "oneTimeMax": 600,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"It drafts a short, personal introduction to each local title office from your loan signing profile, for you to edit and send yourself.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the profile page and a list of offices. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Hospital signing request triage",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Families requesting a hospital notary visit get asked the right questions: is the signer alert, which facility, what document, any witnesses. You arrive knowing it can go ahead.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their hospital visit rules. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Loan package upload for printing",
+      "kind": "software",
+      "oneTimeMin": 200,
+      "oneTimeMax": 600,
+      "monthlyMin": 15,
+      "monthlyMax": 39,
+      "pitchLine": "\"Title offices upload the loan signing package to one private link instead of email, and you get a text when it's ready to print.\"",
+      "whenAndWhatItTakes": "Month 4. Needs a deletion rule for packages after the signing."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Notary fee-and-booking page as a subscription",
+      "whoPays": "Mobile notaries nationwide, monthly",
+      "min": 9,
+      "max": 29,
+      "unit": "monthly",
+      "pitchLine": "\"The fee table, travel zones and request form I built for one mobile notary work for any notary in the country with their state's fee cap set.\"",
+      "whyItWorks": "Notaries are countless and price-sensitive, so a cheap template subscription scales where custom builds can't."
+    },
+    {
+      "route": "State notary association member pages",
+      "whoPays": "The state notary association",
+      "min": 1000,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Give every member notary a simple page template with the not-an-attorney notice and fee caps for your state already right.\"",
+      "whyItWorks": "Associations want member benefits that also reduce advertising mistakes."
+    },
+    {
+      "route": "Notary education provider class pages",
+      "whoPays": "The notary education or exam-prep provider",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"New notaries take a state course before their commission. The providers need class calendars and sign-ups, and your notary client can vouch for the good ones.\"",
+      "whyItWorks": "Providers sell to every new notary in the state, a steady stream of students."
+    },
+    {
+      "route": "Starter page for signing agent course graduates",
+      "whoPays": "The loan signing course provider, per graduate",
+      "min": 99,
+      "max": 299,
+      "unit": "one-time",
+      "pitchLine": "\"Every loan signing course graduate needs a profile page for title offices on day one. Offer it as part of the course and I set each one up.\"",
+      "whyItWorks": "Course providers want graduates who get work quickly, and a ready page is a selling point for the course."
+    },
+    {
+      "route": "Preferred signing agent directory for a title company",
+      "whoPays": "The regional title company",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Your closers keep their own lists of loan signing agents. One private directory with coverage, areas and availability saves them calls every month-end.\"",
+      "whyItWorks": "Title companies already manage signing agents informally, and the client is your proof you know the work."
+    },
+    {
+      "route": "Multi-notary dispatch firms",
+      "whoPays": "The mobile notary group",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Groups that dispatch several mobile notaries need zone pages, a request form that routes to the nearest notary and a profile for each.\"",
+      "whyItWorks": "The single-notary site is the template; each added notary is another page."
+    },
+    {
+      "route": "Bilingual notary page kit",
+      "whoPays": "Spanish-speaking notaries in other metros",
+      "min": 199,
+      "max": 499,
+      "unit": "one-time",
+      "pitchLine": "\"The Spanish notary page with the not-an-attorney notice and fee table translated works for any bilingual notary once their state's wording is added.\"",
+      "whyItWorks": "Careful translation is the hard part, and it's already done and checked once."
+    },
+    {
+      "route": "Pack-and-ship stores with a notary counter",
+      "whoPays": "The independent store owner",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "pitchLine": "\"Independent shipping stores offer notary service but bury it. A notary and apostille page with walk-in hours brings in searchers who'd otherwise drive past.\"",
+      "whyItWorks": "Store owners want foot traffic, and notary searches are steady all year."
+    },
+    {
+      "route": "Senior living resident services pages",
+      "whoPays": "The senior living community",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Residents' families constantly need a notary for powers of attorney. A resident services page listing vetted visiting notaries and how to book helps the front desk.\"",
+      "whyItWorks": "Communities want to look well organised to families, and the notary client is the first vetted name."
+    },
+    {
+      "route": "Community bank notary appointment booking",
+      "whoPays": "The community bank or credit union",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Branch staff notaries get walk-ins at the worst moments. An appointment booking page for notary service evens out the branch day.\"",
+      "whyItWorks": "Small banks offer notary as a member perk and want it to feel organised."
+    },
+    {
+      "route": "Exclusive notary page per county",
+      "whoPays": "A mobile notary in a new county",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I build for one mobile notary per county so I'm never building against my own client. The next county's notary slot is open.\"",
+      "whyItWorks": "Notaries care about not competing with the person who built their page, and the template moves as is."
+    },
+    {
+      "route": "Replace free-builder notary pages",
+      "whoPays": "Notaries on free builders",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "pitchLine": "\"Notaries who built a page on a free builder and gave up halfway get a finished notary page with fees and zones, moved to their own domain.\"",
+      "whyItWorks": "They already tried to buy a site; the price is low enough to decide in one call."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Notary site build plus care plan, one contract",
+      "min": 900,
+      "max": 1600,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The notary page and the care plan go on one contract, so a fee change or new travel zone is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Review requests after each signing",
+      "min": 29,
+      "max": 79,
+      "unit": "monthly",
+      "trigger": "The first request arrives through the new notary form.",
+      "line": "\"Your first booking from the notary page went well. Let's ask every signer for a review the same evening.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "Title office introduction pack",
+      "min": 150,
+      "max": 400,
+      "unit": "one-time",
+      "trigger": "The loan signing profile page is live and they mention wanting fewer signing-service jobs.",
+      "line": "\"Your loan signing profile is ready. Let's introduce you to the local title offices directly.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Notary request form with travel fee calculator",
+      "min": 200,
+      "max": 600,
+      "unit": "one-time",
+      "trigger": "They mention a caller who argued about the travel fee on arrival.",
+      "line": "\"That travel fee argument shouldn't happen at the door. Let callers see their notary zone fee before they book.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Signing agent availability calendar for title offices",
+      "min": 300,
+      "max": 900,
+      "unit": "one-time",
+      "trigger": "A title office books them directly for the first time.",
+      "line": "\"A title office booked you directly. Let them see your open loan signing slots next time.\""
+    },
+    {
+      "rung": 6,
+      "day": 150,
+      "offer": "After-hours notary call answerer",
+      "min": 400,
+      "max": 1200,
+      "unit": "one-time",
+      "trigger": "The missed-call log shows several late-night notary calls in a month.",
+      "line": "\"Those late notary calls went to voicemail. Let something answer, quote the zone and wake you only when it's urgent.\""
+    },
+    {
+      "rung": 7,
+      "day": 240,
+      "offer": "Route planner for back-to-back signings",
+      "min": 300,
+      "max": 900,
+      "unit": "one-time",
+      "trigger": "They're regularly doing several loan signings in an evening.",
+      "line": "\"Three loan signings in one evening need a smart route, or you start turning title offices down.\""
+    }
+  ]
+}

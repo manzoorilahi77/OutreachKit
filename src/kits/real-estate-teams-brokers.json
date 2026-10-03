@@ -1,0 +1,874 @@
+{
+  "schemaVersion": 1,
+  "category": "Real estate teams & brokers",
+  "slug": "real-estate-teams-brokers",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Pro family batch. Sold as niche landing pages beside the brokerage site, not a replacement. Fair housing and brokerage-disclosure rules apply: facts-only neighbourhood copy, no promised sale price or timeline, licence and brokerage details as bracketed placeholders. No portal or listing-site names."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Neighbourhood landing pages, facts only",
+      "contains": "One page per neighbourhood with commute times, parks, HOA dues, property tax placeholders, active listings from the IDX feed and recent sales, written without steering language about who lives there",
+      "why": "Buyers search by neighbourhood name, and brokerage sites give agents one generic page. A facts-only neighbourhood page is what wins that search."
+    },
+    {
+      "section": "Home value request with a plain disclaimer",
+      "contains": "An address form for sellers, what the agent's comparative market analysis covers, how long it takes, and a note that it is an opinion of value, not an appraisal",
+      "why": "Most sellers start with 'what's my house worth'. An honest value request is the first conversation a listing agent needs."
+    },
+    {
+      "section": "Listing plan preview for sellers",
+      "contains": "How a listing is prepared and marketed: photography, staging consult, launch week, open houses and showing feedback, a sample listing timeline, and a note that fees are discussed in person",
+      "why": "Sellers interview two or three agents. Seeing the listing plan before the meeting makes this team the one they compare the others to."
+    },
+    {
+      "section": "Buyer agreement explained",
+      "contains": "What the written buyer representation agreement covers, how buyer agent compensation is discussed before touring, how long it lasts, and how to end it, in plain words",
+      "why": "Buyers now sign an agreement before touring in most markets. Explaining it calmly up front removes the awkward moment at the first showing."
+    },
+    {
+      "section": "Brokerage disclosure and fair housing block",
+      "contains": "[Brokerage name and licence number], [agent licence numbers], the team name shown the way state rules require, the Equal Housing Opportunity notice and the brokerage office address",
+      "why": "State regulators check team advertising, and a clean disclosure block makes a niche page safe to run beside the brokerage's own site."
+    },
+    {
+      "section": "Relocation guide for incoming buyers",
+      "contains": "Links to official school district boundary maps, commute times to major employers, short-term rental options, utility set-up and a remote tour request",
+      "why": "Relocating buyers choose an agent from another state before they ever visit. A relocation page gives them a reason to call this team first."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C45",
+      "siteType": "local-conversion",
+      "name": "Neighbourhood Launch",
+      "heroLayout": "full-bleed-photo",
+      "mood": [
+        "bold",
+        "local",
+        "current"
+      ],
+      "bestFor": "Solo agents and small teams running niche landing pages for one neighbourhood, a home value request or an open house",
+      "pairsWithTier": "starter",
+      "headlineSample": "Homes for sale in {Neighborhood}, {City}, with a local agent",
+      "whyItFits": "Ultramarine and a geometric display face read like a campaign poster. Each niche page drives one action: a value request or a tour request."
+    },
+    {
+      "id": "b",
+      "themeId": "C2",
+      "siteType": "portfolio-showcase",
+      "name": "Sold Street by Street",
+      "heroLayout": "card-stack",
+      "mood": [
+        "established",
+        "calm",
+        "trusted"
+      ],
+      "bestFor": "Real estate teams with a track record of listings and sales to show by neighbourhood, plus buyer and seller consultation booking",
+      "pairsWithTier": "standard",
+      "headlineSample": "{City} homes listed and sold by a local real estate team",
+      "whyItFits": "The family's Private Vault combo. Warm cream and an old-style serif feel like a private advisory office, which suits the biggest purchase most clients will make."
+    },
+    {
+      "id": "c",
+      "themeId": "C9",
+      "siteType": "premium-brand",
+      "name": "Estate Collection",
+      "heroLayout": "full-bleed-photo",
+      "mood": [
+        "luxurious",
+        "quiet",
+        "editorial"
+      ],
+      "bestFor": "Brokers and teams selling high-end homes, where each listing gets its own property site and the brand has to feel like the homes",
+      "pairsWithTier": "premium",
+      "headlineSample": "Distinctive homes in {City}, presented with care",
+      "whyItFits": "A dark ground and a Didone display face feel like a property magazine. Large listing photography carries the page and the copy stays sparse."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "Brokerage template site",
+      "line": "Your website is the brokerage's agent template, which looks like every other agent at the office. A niche page for the neighbourhoods you actually sell in would be yours alone.",
+      "hook": "Open their site and check for the brokerage's template layout or a URL under the brokerage's domain. Note which one you found.",
+      "linkLine": "A niche real estate page that sits beside the brokerage site: {demo-link}"
+    },
+    {
+      "angle": "Link page in the bio",
+      "line": "Your profile link opens a list of buttons, with the home search buried third. A buyer tapping through from a listing post wants that neighbourhood's homes, not a menu.",
+      "hook": "Tap the link in their profile and count how many taps it takes to reach a listing. Note the number of taps.",
+      "linkLine": "One real estate page per neighbourhood instead of a button list: {demo-link}"
+    },
+    {
+      "angle": "No Website button",
+      "line": "Your Google listing as a real estate agent has reviews but no website, so a seller who just read them can't see your recent sales or ask what their home is worth.",
+      "hook": "Open their Maps listing and confirm there's no Website button. Screenshot it for when they reply.",
+      "linkLine": "What could sit behind that button for a listing agent: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "I opened your real estate site on my phone and the home search filters covered the whole screen. Buyers scroll listings on their phone at night.",
+      "hook": "Only if they have their own site. Load it on your phone and try the search. Screenshot it for when they reply.",
+      "linkLine": "Your listings page rebuilt for a phone: {demo-link}"
+    },
+    {
+      "angle": "No home value request",
+      "line": "There's no way for a seller to ask your team what their home is worth without calling. Most homeowners want a number before they want a listing appointment.",
+      "hook": "Check their site and profile for a home value or CMA request. If there's none, the angle holds.",
+      "linkLine": "A home value request for your listing team: {demo-link}"
+    },
+    {
+      "angle": "Reviews stuck on Google",
+      "line": "Your Google reviews mention a buyer's agent who found the house before it hit the market and calmed a first-time buyer at closing. Sellers interviewing agents never read those.",
+      "hook": "Read their reviews and copy one phrase about a listing or a closing. Quote it back if they reply.",
+      "linkLine": "Those real estate reviews beside the sales they describe: {demo-link}"
+    },
+    {
+      "angle": "Before spring listings",
+      "line": "Spring is when sellers in {City} start interviewing listing agents. A listing plan page that shows how you prepare and market a home gets you into those interviews first.",
+      "hook": "Use this from January to March. Name the month in the reply.",
+      "linkLine": "A listing plan page ready for spring sellers: {demo-link}"
+    },
+    {
+      "angle": "Open house weekend",
+      "line": "You're holding an open house this weekend. A one-page sign-in and property page for that listing keeps the visitors who aren't ready to buy yet.",
+      "hook": "Only if they posted an upcoming open house. Note the address and date.",
+      "linkLine": "A property page and open house sign-in for that listing: {demo-link}"
+    },
+    {
+      "angle": "Growing the team",
+      "line": "Saw your real estate team is hiring a buyer's agent. Good agents check whether a team has its own brand and lead flow before they join it.",
+      "hook": "Only if they posted a hiring or 'join our team' note. Note the role and date.",
+      "linkLine": "A team page with a join-us section: {demo-link}"
+    },
+    {
+      "angle": "Neighbourhood focus",
+      "line": "Most of your recent listings are in {Neighborhood}. A facts-only neighbourhood page with commute times, HOA dues and current listings is what buyers searching that name find first.",
+      "hook": "Check their recent listings and pick the neighbourhood that comes up most. Use its real name.",
+      "linkLine": "A {Neighborhood} real estate page with current listings: {demo-link}"
+    },
+    {
+      "angle": "Relocation buyers",
+      "line": "Your posts mention buyers moving in from out of state. A relocation page with commute times, district maps and a remote tour request gives them a reason to choose your team before they visit.",
+      "hook": "Look for posts about relocations, military moves or employers coming to town.",
+      "linkLine": "A relocation guide for {City} buyers: {demo-link}"
+    },
+    {
+      "angle": "Licence and brokerage shown",
+      "line": "Your real estate licence and brokerage are on the state lookup, but a seller scrolling your posts never sees them. A disclosure block on each niche page shows both and keeps the page within the brokerage's advertising rules.",
+      "hook": "Check the state licence lookup and note that a record exists. Never quote a number you didn't see, and never claim a rule they broke.",
+      "linkLine": "Niche pages with the brokerage disclosure built in: {demo-link}"
+    },
+    {
+      "angle": "Sphere-only business",
+      "line": "Sounds like most of your real estate business comes from your sphere and past clients. That's the best source there is, and those referrals still search your name before calling.",
+      "hook": "Look for review text like 'sold our second home with them' or 'referred by a friend'. Quote it back.",
+      "linkLine": "Where a referred buyer or seller would land: {demo-link}"
+    },
+    {
+      "angle": "New construction communities",
+      "line": "You've posted about new construction in {Neighborhood}. Buyers there often don't know they can bring their own agent to a builder's sales office, and a page explaining it would bring them to you.",
+      "hook": "Only if they post about new construction or builder communities. Name the community.",
+      "linkLine": "A new construction buyer page for {Neighborhood}: {demo-link}"
+    },
+    {
+      "angle": "A specific recent sale",
+      "line": "That {specific recent job} you posted is a great sale to show sellers. Right now it lives in a feed instead of on a real estate page where the next seller compares agents.",
+      "hook": "Pick their newest 'just sold' or 'just listed' post and name the street or neighbourhood exactly.",
+      "linkLine": "That sale, front and centre on a seller page: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, that {specific recent job} you posted is a sale worth showing every seller you meet.\n\nI looked at real estate teams in {City} and found {Business Name} on the brokerage template and social, but no page of your own for the neighbourhoods you sell in. I put together a sample niche page to see how it would look, with marked placeholders where your photos would go.\n\nWant me to send it?",
+    "dm2": "{Owner}, following up in case my note got lost between showings. Here's the sample real estate page for {Business Name}: {demo-link}\n\nIt has a facts-only neighbourhood page with listings, a home value request, a listing plan preview for sellers and a brokerage disclosure block. It sits beside your brokerage site rather than replacing it. If it's not for you, say so and I'll leave you be.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build niche websites for real estate teams here in {City}. I messaged you a few days ago, did it come through?\"\n\nIF NO:\n\"Easy to miss. Short version: I built a sample neighbourhood page for {Business Name} with current listings, a home value request and your brokerage disclosure, and marked placeholders where your photos would go. Can I text you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"This isn't a lead subscription. It's a set of real estate pages you own that sit beside the brokerage site, with your brokerage's disclosure on every one. The build runs {Build Range} depending on how many neighbourhood and seller pages you want, then {Care Range} a month for hosting and listing updates. For your team I'd quote about {Build Price}, which is a small slice of one side of one sale.\"\n\"Can I walk you through it for ten minutes between showings this week?\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. We start once it clears, and your broker can review the disclosure block before launch.\"",
+    "objections": [
+      {
+        "objection": "My brokerage already gives me a website.",
+        "handler": "\"It does, and it's the same one every agent at your office gets. These niche pages sit beside it, for the neighbourhoods and sellers you actually want, with the brokerage disclosure on each.\""
+      },
+      {
+        "objection": "I get all my business from my sphere.",
+        "handler": "\"That's the best business there is. Your sphere still searches your name before they recommend you, and a seller page with your sales is what they forward.\""
+      },
+      {
+        "objection": "I already pay for buyer leads.",
+        "handler": "\"Paid leads are shared and cold. A neighbourhood page brings people already searching that street, and you keep the page when you stop paying anyone.\""
+      },
+      {
+        "objection": "My broker has to approve anything I publish.",
+        "handler": "\"Good. The disclosure block is built the way brokerages expect, and I'll send the pages for your broker's review before anything goes live.\""
+      },
+      {
+        "objection": "The market's slow right now.",
+        "handler": "\"That's the best time to build. Sellers interview agents before the market turns, and the team with neighbourhood pages already ranking is the one they find.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}, for neighbourhood pages, a home value request and a seller page. That's well under one side of one closing.\""
+      }
+    ],
+    "email": {
+      "subject": "Neighbourhood pages for {Business Name}",
+      "body": "Hi {Owner},\n\nI build niche websites for real estate teams around {City}. {Business Name} has strong sales on social, but no page of its own where a buyer searching your neighbourhoods or a seller comparing agents can find you.\n\nI built a sample first rather than ask for your time: a facts-only neighbourhood page with current listings, a home value request with a plain disclaimer, a listing plan preview for sellers, a buyer agreement explainer and a brokerage disclosure block, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIt sits beside your brokerage site rather than replacing it. If you'd like it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and listing updates. If not, no problem, it comes down at the end of the month.\n\nWorth ten minutes on the phone this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"{Owner}, it's {Your Name}. I build niche pages for real estate teams in {City}, and I made a sample neighbourhood page for {Business Name}. I'll text you the link. Have a look between showings. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm taking the {Business Name} real estate demo down on Friday to free up the space.\n\nWant me to keep it up? One word either way is fine.",
+    "nurture": "Hi {Owner}, spring listing interviews are a few weeks out and sellers are already searching. Thought of you.\n\nThe neighbourhood page is still here whenever you want it, same price as before. {demo-link} if you'd like another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Sell niche pages beside the brokerage site, not a replacement. Agents keep the brokerage page and add what it can't do.",
+      "Price neighbourhood pages one by one, and only for areas where the team has recent listings or sales.",
+      "Peg the build to a small slice of one side of one sale, never to an hourly rate.",
+      "Listing feed hookups depend on the MLS and the brokerage; quote them after checking access, never before.",
+      "Never write a promised sale price, days on market or 'top dollar'. Value requests say 'opinion of value, not an appraisal'.",
+      "Single-property sites for luxury listings are their own line, quoted per listing."
+    ],
+    "lineItems": [
+      {
+        "item": "Neighbourhood page with listings (each)",
+        "min": 300,
+        "max": 700,
+        "unit": "per-page",
+        "description": "Max when the page has its own map, commute times, HOA notes, current listings from the feed and recent sales.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "IDX listing feed hookup",
+        "min": 500,
+        "max": 1500,
+        "unit": "one-time",
+        "description": "Max when the feed needs custom search filters by neighbourhood and saved-search sign-ups for buyers.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Single-property listing site",
+        "min": 300,
+        "max": 900,
+        "unit": "per-job",
+        "description": "Max with a full gallery, floor plan, video tour, open house sign-in and its own domain.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Home value request with CMA follow-up",
+        "min": 400,
+        "max": 1000,
+        "unit": "one-time",
+        "description": "Max with address autocomplete, condition questions and an automatic note that the agent will prepare an opinion of value.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Seller listing plan page",
+        "min": 400,
+        "max": 900,
+        "unit": "one-time",
+        "description": "Max with a sample timeline, staging and photography examples and a booked listing consultation.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Relocation guide page",
+        "min": 400,
+        "max": 900,
+        "unit": "one-time",
+        "description": "Max with employer commute maps, official district links, a remote tour request and a Spanish version.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Team agent profile page (each)",
+        "min": 150,
+        "max": 400,
+        "unit": "per-page",
+        "description": "Max with the agent's own sales, reviews and a booking link, plus the licence placeholder each state requires.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Listing photography and video day",
+      "min": 300,
+      "max": 900,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Every new listing gets a photo and short video session booked the week it signs, and the shots go straight onto its property page and the neighbourhood page.\"",
+      "when": "From the first listing after launch, per listing."
+    },
+    {
+      "name": "Google profile posts for every listing and sale",
+      "min": 150,
+      "max": 350,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Each just-listed and just-sold home goes on the agent's Google profile with the neighbourhood named, so the map listing shows a real estate team that's busy now.\"",
+      "when": "Day 30, once the site is live."
+    },
+    {
+      "name": "Review requests after closing",
+      "min": 79,
+      "max": 179,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"The week after closing, the buyer or seller gets a short text asking how the team did. Those reviews are what the next seller reads before a listing interview.\"",
+      "when": "Day 30. The easiest second sale."
+    },
+    {
+      "name": "Just-sold postcards to surrounding streets",
+      "min": 300,
+      "max": 900,
+      "unit": "per-job",
+      "scalesWithMarket": true,
+      "pitchLine": "\"When a home sells, the streets around it get a just-sold card pointing to the neighbourhood page and the home value request. Neighbours are the next listings.\"",
+      "when": "Month 2, after the first sale on the new pages."
+    },
+    {
+      "name": "Open house and directional sign artwork",
+      "min": 150,
+      "max": 500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Open house signs, riders and a sign-in card with a code to the property page, so every visitor ends up on the team's listing page, not a portal.\"",
+      "when": "Right after launch, before the next open house."
+    },
+    {
+      "name": "Home anniversary emails to past clients",
+      "min": 150,
+      "max": 400,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Past buyers get a note on the anniversary of their closing with the neighbourhood's recent sales and a home value link. It keeps the agent's name in the house.\"",
+      "when": "Month 3, once the past-client list is clean."
+    },
+    {
+      "name": "Listing launch ads on Facebook and Instagram",
+      "min": 300,
+      "max": 800,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Each new listing gets a short ad run pointing to its property page, set up within the fair housing ad rules, so the seller sees the team marketing their home.\"",
+      "when": "Month 2, when they have two or more active listings."
+    },
+    {
+      "name": "Agent intro video for each team member",
+      "min": 400,
+      "max": 1000,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A short intro video for each agent on the team page. Buyers and sellers pick a real estate agent they've already heard talk.\"",
+      "when": "Month 4, or when a new agent joins the team."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Loan officers who share the team's buyers",
+        "whoPays": "The loan officer or branch",
+        "min": 1500,
+        "max": 3500,
+        "unit": "one-time",
+        "pitchLine": "\"The lender your real estate team trusts with pre-approvals needs first-time buyer pages of their own. One text from you gets me a meeting.\"",
+        "whyItWorks": "Loan officers and agents trade every buyer, and loan officers pay for their own marketing."
+      },
+      {
+        "route": "Home inspectors the team recommends",
+        "whoPays": "The home inspector",
+        "min": 1500,
+        "max": 2500,
+        "unit": "one-time",
+        "pitchLine": "\"The inspectors you hand to buyers need a booking site with a page just for realtors. You're exactly the referral partner they're trying to impress.\"",
+        "whyItWorks": "Inspectors live on agent referrals, so an introduction from a team is the warmest door there is."
+      },
+      {
+        "route": "Home stagers on the listing team",
+        "whoPays": "The staging company",
+        "min": 1500,
+        "max": 3000,
+        "unit": "one-time",
+        "pitchLine": "\"The stager who prepares your listings has the best before-and-after rooms in town and probably no site to show them. You can introduce me.\"",
+        "whyItWorks": "Stagers sell to agents and sellers, and their work photographs well, so the portfolio sells itself."
+      },
+      {
+        "route": "Local movers the team refers",
+        "whoPays": "The moving company",
+        "min": 1800,
+        "max": 3500,
+        "unit": "one-time",
+        "pitchLine": "\"Every buyer and seller of your real estate team needs a mover. The mover you recommend needs a quote page, and your referral makes the first call easy.\"",
+        "whyItWorks": "Movers get steady work from agents and value anyone who helps keep that pipeline."
+      },
+      {
+        "route": "Independent title and escrow offices",
+        "whoPays": "The title or escrow office",
+        "min": 2000,
+        "max": 4500,
+        "unit": "one-time",
+        "pitchLine": "\"The small title office that closes your team's deals competes for agents' business. A clear site with an order form for agents helps, and you can vouch for me.\"",
+        "whyItWorks": "Independent title offices market directly to agents and have real budgets for it."
+      },
+      {
+        "route": "Pre-listing repair contractors",
+        "whoPays": "The handyman or repair contractor",
+        "min": 1200,
+        "max": 2500,
+        "unit": "one-time",
+        "pitchLine": "\"The handyman who fixes inspection items before your listings go live needs a page that says 'pre-listing repairs'. Realtor-referred work is his best work.\"",
+        "whyItWorks": "Repair contractors depend on agent referrals and rarely have a site that speaks to sellers."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Pre-approval reminder drafts for loan officers",
+        "whoPays": "The loan officer, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"Buyers your real estate team shares with the lender go quiet after pre-approval. An assistant drafts check-ins as their approval nears expiry, for the loan officer to send.\"",
+        "whyItWorks": "Expired pre-approvals slow closings for both sides, so the lender pays to keep buyers current."
+      },
+      {
+        "route": "Buyer-friendly summaries for home inspectors",
+        "whoPays": "The home inspector, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"Inspectors who work your listings can send buyers a short draft summary of safety items and repairs, checked by the inspector, that a realtor can read in two minutes.\"",
+        "whyItWorks": "Clear reports keep deals together, which is why agents keep referring the inspector who sends them."
+      },
+      {
+        "route": "Room-by-room staging plans for stagers",
+        "whoPays": "The staging company, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"Stagers who prepare your listings upload room photos and get a draft staging plan and furniture list to edit before the walkthrough.\"",
+        "whyItWorks": "It speeds up the quote for each listing, and stagers quote many homes they never win."
+      },
+      {
+        "route": "Move quote intake assistant for movers",
+        "whoPays": "The moving company, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"Buyers your team refers to the mover answer room and item questions with an assistant, and the mover gets a draft inventory for the quote.\"",
+        "whyItWorks": "Movers lose jobs to slow quotes; a faster intake wins more of the referrals agents send."
+      },
+      {
+        "route": "Closing question answerer for title offices",
+        "whoPays": "The title or escrow office, monthly",
+        "min": 150,
+        "max": 350,
+        "unit": "monthly",
+        "pitchLine": "\"Buyers ask the title office the same closing-day questions about ID, wire safety and timing. An assistant answers from the office's own notes and warns about wire fraud every time.\"",
+        "whyItWorks": "Title offices spend hours on these calls, and a wire-fraud warning on every answer protects everyone in the deal."
+      },
+      {
+        "route": "Inspection-to-estimate drafts for repair contractors",
+        "whoPays": "The repair contractor, monthly",
+        "min": 79,
+        "max": 199,
+        "unit": "monthly",
+        "pitchLine": "\"Repair contractors who fix items before your listings hit the market can upload an inspection list and get a draft repair estimate to adjust.\"",
+        "whyItWorks": "Fast estimates keep listing dates on track, so agents send more work to the contractor who answers quickly."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Missed-call text-back with a showing request",
+      "kind": "automation",
+      "oneTimeMin": 0,
+      "oneTimeMax": 300,
+      "monthlyMin": 79,
+      "monthlyMax": 149,
+      "pitchLine": "\"A call you miss during a showing gets a text with a tour request link for the listing they called about, so the buyer doesn't ring the next agent on the sign.\"",
+      "whenAndWhatItTakes": "Day 30. Needs their number forwarded and the active listing links."
+    },
+    {
+      "name": "Open house sign-in with follow-up",
+      "kind": "software",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 39,
+      "monthlyMax": 99,
+      "pitchLine": "\"Visitors sign in on a tablet at the open house, say whether they have an agent, and get the listing page and similar homes by text that evening.\"",
+      "whenAndWhatItTakes": "Month 2, before the next open house. Needs their follow-up wording and a tablet."
+    },
+    {
+      "name": "Saved-search alerts from neighbourhood pages",
+      "kind": "automation",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"A buyer on the {Neighborhood} page saves a search and gets new listings there by email, from the team, not from a portal.\"",
+      "whenAndWhatItTakes": "Month 2, after the IDX feed is connected. Needs feed access approved by the brokerage."
+    },
+    {
+      "name": "Review reply drafts for the real estate team",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Each new review gets a reply drafted in the agent's voice that mentions the neighbourhood and the move, never the price, ready to approve between showings.\"",
+      "whenAndWhatItTakes": "Month 2. Needs ten of their past replies. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Listing description drafts with fair housing check",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"Enter the listing's features and it drafts the description in the team's style, then flags any wording about who the home suits that fair housing rules would question.\"",
+      "whenAndWhatItTakes": "Month 3. Needs ten past listing descriptions they liked. Comes with the AI maintenance retainer; the agent approves every description."
+    },
+    {
+      "name": "Showing feedback collector and seller report",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 49,
+      "monthlyMax": 149,
+      "pitchLine": "\"Buyer agents get a two-question feedback text after each showing, and the seller gets a weekly listing report without the agent chasing anyone.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their showing schedule source and the report layout they want sellers to see."
+    },
+    {
+      "name": "Home value request prep notes",
+      "kind": "ai",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"When a seller asks what their home is worth, the agent gets draft prep notes: the property's public record facts and nearby listings and sales to review for the CMA.\"",
+      "whenAndWhatItTakes": "Month 4. Needs MLS data access through the brokerage. Comes with the AI maintenance retainer; the agent sets every opinion of value."
+    },
+    {
+      "name": "Client transaction timeline page",
+      "kind": "software",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"Buyers and sellers see their real estate deal's milestones, inspection, appraisal, financing and closing, with what's done and what's next.\"",
+      "whenAndWhatItTakes": "Month 6. Needs their transaction checklist and who updates it, often the transaction coordinator."
+    },
+    {
+      "name": "Buyer consultation booking with agreement e-sign",
+      "kind": "automation",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"A buyer books a consultation, reads the buyer agreement explainer, and gets the agreement for e-signature before the first tour, so nobody discusses it at a front door.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the brokerage's agreement form and the signing tool the brokerage allows."
+    },
+    {
+      "name": "Team lead routing board",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"Every buyer and seller enquiry from the niche pages lands on one board and routes to the right agent on the team by area and price band, with response times tracked.\"",
+      "whenAndWhatItTakes": "Month 4, when the team has two or more agents. Needs their routing rules."
+    },
+    {
+      "name": "Past-client list with home anniversaries",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Every past buyer and seller in one list with closing dates, addresses and the agent who served them, so anniversary notes and just-sold cards go out on time.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their closed-deal export and a clean contact list."
+    },
+    {
+      "name": "Facts-only neighbourhood page drafter",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"Give it a neighbourhood name and it drafts a facts-only page, parks, commute, HOA notes, and flags any line that describes the people who live there.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the agent's local notes and approved sources. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "After-hours buyer question assistant",
+      "kind": "ai",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"At 11pm it answers 'is this listing still available' and 'can I tour Saturday' from the feed and the team calendar, and books the tour request for the agent to confirm.\"",
+      "whenAndWhatItTakes": "Month 5. Needs the IDX feed and agent calendars. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Seller net sheet estimator",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"A seller enters a possible price and sees an estimated net after typical closing costs, clearly labelled as an estimate, then books a listing consultation to go through it.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their local closing cost lines from a title partner."
+    },
+    {
+      "name": "Single-property site generator",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Each new listing gets its own property site from the photos and details in under an hour, with the open house sign-in and brokerage disclosure built in.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their listing data source and a domain plan."
+    },
+    {
+      "name": "Agent applicant screener for the team",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"Agents applying to join the real estate team answer questions about licence status, production and availability, and the team lead only meets the ones who fit.\"",
+      "whenAndWhatItTakes": "Whenever they recruit. Needs their must-haves. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Contract deadline reminders",
+      "kind": "automation",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1200,
+      "monthlyMin": 50,
+      "monthlyMax": 120,
+      "pitchLine": "\"Once a home is under contract, the agent and client get reminders before the inspection, appraisal and financing deadlines, so no contingency date slips by.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their contract dates entered at acceptance."
+    },
+    {
+      "name": "Showing notes to client update drafts",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"After a day of showings, the buyer's agent talks for a minute and gets a draft update to the buyer listing each home, what stood out and next steps.\"",
+      "whenAndWhatItTakes": "Month 6. Needs their update style. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Offer comparison sheet drafter",
+      "kind": "ai",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"When a listing gets several offers, it lays out price, contingencies, financing and closing dates side by side for the listing agent to check and walk the seller through.\"",
+      "whenAndWhatItTakes": "Month 7. Needs sample offers with names removed. Comes with the AI maintenance retainer; the agent advises, never the tool."
+    },
+    {
+      "name": "Team production dashboard",
+      "kind": "software",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"See listings, pending deals and closings by agent and by neighbourhood page, so the team lead knows which pages bring real estate business and which agents need leads.\"",
+      "whenAndWhatItTakes": "Month 9. Needs their closed and pending deal data and the page enquiry log."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Neighbourhood page builder for individual agents",
+      "whoPays": "Real estate agents, monthly",
+      "min": 39,
+      "max": 129,
+      "unit": "monthly",
+      "pitchLine": "\"The facts-only neighbourhood pages I built for one team work for any agent who farms an area, with their own listings and disclosure block.\"",
+      "whyItWorks": "Every agent wants a farm area page, and the build is the same with different data."
+    },
+    {
+      "route": "Brokerage-wide niche page programme",
+      "whoPays": "The brokerage, per agent",
+      "min": 300,
+      "max": 900,
+      "unit": "one-time",
+      "pitchLine": "\"Offer every agent at your brokerage a niche page set beside the brokerage site, with your disclosure rules built in, as a recruiting perk.\"",
+      "whyItWorks": "Brokerages compete for agents with tools, and the brokerage controls compliance from one template."
+    },
+    {
+      "route": "Local realtor association member benefit",
+      "whoPays": "The local association of realtors",
+      "min": 2000,
+      "max": 8000,
+      "unit": "one-time",
+      "pitchLine": "\"Give members a compliant neighbourhood page template with fair housing guidance built into the drafting tools.\"",
+      "whyItWorks": "Associations need member benefits and spend on fair housing education already."
+    },
+    {
+      "route": "New-construction community pages for home builders",
+      "whoPays": "The home builder",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Builders want outside agents bringing buyers to their communities. A community page with a clear agent co-operation policy does that, and your realtor client already sells there.\"",
+      "whyItWorks": "Builders have marketing budgets per community, and the real estate team is the proof of agent interest."
+    },
+    {
+      "route": "Relocation guides licensed to employers",
+      "whoPays": "The employer's HR or relocation team",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Companies hiring into {City} need a relocation guide for new staff. License the real estate team's guide, with the team as the suggested local contact.\"",
+      "whyItWorks": "HR teams want relocations to go smoothly and will pay for a polished city guide."
+    },
+    {
+      "route": "Coaching programme white-label",
+      "whoPays": "The real estate coaching company, per agent",
+      "min": 500,
+      "max": 1500,
+      "unit": "one-time",
+      "pitchLine": "\"Your coaching members are told to build a farm area and a seller page. I deliver those pages under your programme's name.\"",
+      "whyItWorks": "Coaches sell the method; delivering the pages raises their completion and renewal rates."
+    },
+    {
+      "route": "Luxury property sites for other teams",
+      "whoPays": "Listing agents outside the client's team, per listing",
+      "min": 300,
+      "max": 900,
+      "unit": "per-job",
+      "pitchLine": "\"The single-property listing sites I make for one luxury team are available to any listing agent who wants a home presented like a magazine feature.\"",
+      "whyItWorks": "Luxury listings justify a per-property spend, and the template already runs on real listings."
+    },
+    {
+      "route": "Graduate launch pages for real estate schools",
+      "whoPays": "The real estate school, per graduate",
+      "min": 99,
+      "max": 299,
+      "unit": "one-time",
+      "pitchLine": "\"Every new real estate licensee needs a page the day they join a brokerage. Schools can include it with the course and stand out from other schools.\"",
+      "whyItWorks": "Schools compete for students on outcomes, and a launch page is a concrete one."
+    },
+    {
+      "route": "Spanish-language buyer page set for teams",
+      "whoPays": "Real estate teams serving Spanish-speaking buyers",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "pitchLine": "\"First-time buyer pages, the buyer agreement explainer and the disclosure block in Spanish, ready for any team with a bilingual agent.\"",
+      "whyItWorks": "The careful translation is the expensive part and it's done once."
+    },
+    {
+      "route": "Military relocation pages for base-town teams",
+      "whoPays": "Real estate teams near military bases",
+      "min": 1500,
+      "max": 3500,
+      "unit": "one-time",
+      "pitchLine": "\"Base towns see constant moves on orders. A relocation page set built for military families, with remote tours and timeline help, fits every team near a base.\"",
+      "whyItWorks": "Military moves follow predictable cycles, and teams near bases all need the same pages."
+    },
+    {
+      "route": "Agents switching brokerages",
+      "whoPays": "The agent moving to a new brokerage",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "pitchLine": "\"When an agent changes brokerages, their template site disappears. Their own neighbourhood and seller pages move with them, with only the disclosure block changed.\"",
+      "whyItWorks": "A brokerage switch is a moment of urgency, and the pitch is portability."
+    },
+    {
+      "route": "One team per farm area",
+      "whoPays": "A real estate team in an open area",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I build neighbourhood pages for one real estate team per farm area. {Neighborhood} is taken; the next area over is open.\"",
+      "whyItWorks": "Agents won't share a neighbourhood page builder with a rival, which makes territory itself the selling point."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Niche real estate pages plus care plan, one contract",
+      "min": 2000,
+      "max": 3500,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo and the broker approves the disclosure block.",
+      "line": "\"The neighbourhood pages and the care plan go on one contract, so a new listing or a sold banner is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Review requests after closing",
+      "min": 79,
+      "max": 179,
+      "unit": "monthly",
+      "trigger": "The first closing since the pages went live.",
+      "line": "\"That closing is your next seller's reason to call. Let's ask every buyer and seller for a review the week they get keys.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "Open house sign-in with follow-up",
+      "min": 500,
+      "max": 1500,
+      "unit": "one-time",
+      "trigger": "They post an upcoming open house.",
+      "line": "\"Saturday's open house visitors shouldn't vanish. A sign-in sends each one the listing and similar homes that evening.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Just-sold postcards to surrounding streets",
+      "min": 300,
+      "max": 900,
+      "unit": "per-job",
+      "trigger": "A sale closes in a neighbourhood that has its own page.",
+      "line": "\"You just sold on that street. The neighbours should hear it from your team, with a link to the home value request.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Listing description drafts with fair housing check",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "trigger": "They take two or more new listings in a month.",
+      "line": "\"Two new listings this month means two descriptions at midnight. Draft them in your style with the fair housing check built in.\""
+    },
+    {
+      "rung": 6,
+      "day": 150,
+      "offer": "Team lead routing board",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "trigger": "They add an agent to the team, or enquiries go unanswered for a day.",
+      "line": "\"With another agent on the real estate team, every enquiry needs an owner within the hour. Let's route them on one board.\""
+    },
+    {
+      "rung": 7,
+      "day": 240,
+      "offer": "Client transaction timeline page",
+      "min": 2000,
+      "max": 5000,
+      "unit": "one-time",
+      "trigger": "They have several deals under contract at once and mention status calls.",
+      "line": "\"Five deals pending means five clients asking 'where are we'. A timeline page answers them.\""
+    },
+    {
+      "rung": 8,
+      "day": 365,
+      "offer": "Team production dashboard",
+      "min": 2000,
+      "max": 5000,
+      "unit": "one-time",
+      "trigger": "Their first full year on the pages, at the team's annual planning.",
+      "line": "\"A year in, let's see which neighbourhood pages turned into listings and where the team should farm next.\""
+    }
+  ]
+}
