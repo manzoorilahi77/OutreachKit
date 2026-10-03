@@ -3,10 +3,20 @@ import assert from "node:assert/strict";
 import { existsSync, readFileSync } from "node:fs";
 import { chromium } from "@playwright/test";
 import { COLS } from "../src/data";
-import { patchSnapshot } from "../golden/corrections";
+import { CATS } from "../src/lib/kit/categories";
+import { buildContext, generateKit } from "../src/lib/kit/generate";
+import { kitText } from "../src/lib/kit/text";
+import { applyCategoryKit } from "../src/lib/kit-v2/apply";
+import { kitSlug } from "../src/lib/kit-v2/types";
+import type { CategoryKit } from "../src/lib/kit-v2/types";
 
 const base = `http://localhost:${process.env.PORT ?? 3100}`;
-const golden = patchSnapshot(JSON.parse(readFileSync("golden/original/fencing-austin-desktop.json", "utf8")));
+// Fencing & gates has a category kit, so the console shows the v2 overlay; its goldens are golden/v2.
+// The original's own payloads are still proven by the golden tests and by a category with no kit file below.
+const fencingInput = { cat: "Fencing & gates", device: "desktop" as const, st: "TX" as const, city: "Austin" };
+const fencingCk = JSON.parse(readFileSync("src/kits/fencing-gates.json", "utf8")) as CategoryKit;
+const golden = kitText(applyCategoryKit(generateKit(fencingInput), buildContext(fencingInput), fencingCk, "b"));
+const genericCat = CATS.find((c) => !existsSync(`src/kits/${kitSlug(c.n)}.json`));
 
 const browser = await chromium.launch();
 const ctx = await browser.newContext({ viewport: { width: 1280, height: 900 }, permissions: ["clipboard-read", "clipboard-write"] });
@@ -28,9 +38,10 @@ async function consoleFlow() {
 
   const kit = page.getByRole("article", { name: "Field kit" });
   await kit.waitFor();
-  assert.equal(await kit.locator("section").count(), 17, "17 kit sections");
+  assert.equal(await kit.locator("section").count(), 18, "17 kit sections plus design directions");
+  assert.match(await kit.locator("header").first().innerText(), /Category kit · Unreviewed/);
   assert.match(await kit.locator("h3").first().innerText(), /Fencing & gates — Austin, TX/);
-  assert.match(page.url(), /cat=Fencing\+%26\+gates&st=TX&city=Austin/);
+  assert.match(page.url(), /cat=Fencing\+%26\+gates&st=TX&city=Austin&dev=desktop&dir=b/);
 
   // Copy the build prompt and check the clipboard holds exactly what the original builds.
   await kit.getByRole("button", { name: "Copy", exact: true }).first().click();
@@ -46,7 +57,48 @@ async function consoleFlow() {
   assert.ok(withLink.startsWith(first) && withLink.includes("https://"));
   // Opener count and message count
   assert.equal(await kit.locator('section[aria-label="openers"] li').count(), 15);
-  console.log("console: build, URL sync, copy payloads match the original");
+  console.log("console: build, URL sync, copy payloads match the category kit (golden/v2)");
+
+  // Directions: A → B → C changes the preview selection and the build prompt
+  const prompt = () => kit.locator('section[aria-label="prompt"] pre').innerText();
+  for (const [d, theme] of [["A", "C30"], ["B", "C39"], ["C", "C4"]] as const) {
+    const radio = kit.getByRole("radio", { name: new RegExp(`direction ${d}|: ${d},`, "i") });
+    await radio.click();
+    assert.equal(await kit.getByRole("radio", { checked: true }).innerText(), `Using direction ${d}`);
+    assert.match(await prompt(), new RegExp(`Set themeId: '${theme}'`));
+    assert.match(page.url(), new RegExp(`dir=${d.toLowerCase()}`));
+  }
+  await kit.getByRole("radio", { checked: true }).press("ArrowLeft");
+  assert.match(await kit.getByRole("radio", { checked: true }).innerText(), /Using direction B/, "arrow keys move the selection");
+  assert.match(await kit.getByRole("status").first().innerText(), /Direction B selected/);
+  // Cross-sell tabs
+  await kit.getByRole("tab", { name: "With AI" }).click();
+  assert.equal(await kit.getByRole("tabpanel").filter({ visible: true }).count(), 1);
+  console.log("console: directions switch the preview and the build prompt; tabs work");
+
+  // Download kit (.md)
+  const [dl] = await Promise.all([page.waitForEvent("download"), kit.getByRole("button", { name: "Download kit (.md)" }).click()]);
+  assert.equal(dl.suggestedFilename(), "fieldkit_fencing-gates_austin.md");
+  const md = readFileSync((await dl.path())!, "utf8");
+  assert.match(md, /^---\ncategory: "Fencing & gates"\n/);
+  assert.match(md, /contentSource: "category"/);
+  assert.match(md, /\n## Openers\n/);
+  console.log("console: kit download");
+
+  // A category with no kit file: the ported kit, unchanged, marked Generic kit
+  if (genericCat) {
+    const gi = { cat: genericCat.n, device: "desktop" as const, st: "TX" as const, city: "Austin" };
+    const v1 = kitText(generateKit(gi));
+    await page.goto(base + "/?" + new URLSearchParams({ cat: gi.cat, st: "TX", city: "Austin", dev: "desktop", build: "1" }), { waitUntil: "networkidle" });
+    const gk = page.getByRole("article", { name: "Field kit" });
+    await gk.waitFor();
+    assert.equal(await gk.locator("section").count(), 17);
+    assert.match(await gk.locator("header").first().innerText(), /Generic kit/);
+    await gk.getByRole("button", { name: "Copy", exact: true }).first().click();
+    assert.equal(await page.evaluate(() => navigator.clipboard.readText()), v1.clips[0], "the generic build prompt is the original's");
+    assert.doesNotMatch(page.url(), /dir=/);
+    console.log(`console: ${genericCat.n} has no kit file and shows the original kit, marked Generic kit`);
+  } else console.log("console: every category has a kit file; the original layer is covered by the golden tests");
 
   // Reset and restore from the URL
   await page.getByRole("button", { name: "Reset" }).click();
@@ -165,7 +217,8 @@ async function accountFlow() {
   await page.getByRole("article", { name: "Field kit" }).waitFor();
   assert.ok(await page.getByRole("link", { name: "Saved kits" }).isVisible(), "signed in");
 
-  // Save the kit and find it in the list
+  // Choose direction C, save the kit and find it in the list
+  await page.getByRole("radio", { name: /: C,/ }).click();
   await page.getByRole("button", { name: "Save this kit" }).click();
   await page.getByText("Saved.").waitFor();
   await page.goto(base + "/kits", { waitUntil: "load" });
@@ -175,6 +228,18 @@ async function accountFlow() {
   await page.getByRole("article", { name: "Field kit" }).waitFor();
   assert.match(await page.locator("h3").first().innerText(), /Fencing & gates — Austin, TX/);
   assert.match(await page.getByRole("article").innerText(), /\{Your Name\}/, "placeholders until details are saved");
+  assert.equal(await page.getByRole("radio", { checked: true }).innerText(), "Using direction C", "the saved direction");
+
+  // Sign out and back in: the saved kit still opens with direction C
+  const kitUrl = page.url();
+  await page.goto(base + "/account", { waitUntil: "load" });
+  await settle();
+  await page.getByRole("button", { name: "Sign out" }).click();
+  await page.waitForURL(base + "/");
+  await signIn(email, new URL(kitUrl).pathname);
+  await page.getByRole("article", { name: "Field kit" }).waitFor();
+  assert.equal(await page.getByRole("radio", { checked: true }).innerText(), "Using direction C", "direction C survives a new session");
+  assert.match(await page.locator('section[aria-label="prompt"] pre').innerText(), /Set themeId: 'C4'/);
 
   // Step 4 is filled once and reused
   await page.goto(base + "/account", { waitUntil: "load" });
@@ -271,11 +336,35 @@ async function leadsFlow() {
   await page.goto(leadUrl, { waitUntil: "load" });
 }
 
+async function importFlow() {
+  // The Cowork CSV reaches the tracker through /leads/import: preview, then confirm. Score and Tier come from the checks.
+  await page.goto(base + "/leads/import", { waitUntil: "load" });
+  await settle();
+  await page.setInputFiles("#csv", "tests/fixtures/leads-import-two-rows.csv");
+  await page.getByText("2 to add · 0 duplicates skipped · 0 with errors").waitFor();
+  await page.getByRole("button", { name: "Import 2 leads" }).click();
+  await page.getByText("Imported 2 leads.").waitFor();
+  await page.goto(base + "/leads", { waitUntil: "load" });
+  const rows = page.locator('[aria-label="Leads"] tbody tr');
+  const cedar = await rows.filter({ hasText: "Cedar Line Fence Co" }).innerText();
+  assert.match(cedar, /Hot/);
+  assert.match(cedar, /9 \/ 10/);
+  const gate = await rows.filter({ hasText: "Pflugerville Gate & Iron" }).innerText();
+  assert.match(gate, /Warm/);
+  assert.match(gate, /6 \/ 10/);
+  // Importing the same file again adds nothing
+  await page.goto(base + "/leads/import", { waitUntil: "load" });
+  await settle();
+  await page.setInputFiles("#csv", "tests/fixtures/leads-import-two-rows.csv");
+  await page.getByText("0 to add · 2 duplicates skipped · 0 with errors").waitFor();
+  console.log("import: two-row CSV previewed, imported, scored by the database; a re-import is all duplicates");
+}
+
 await consoleFlow();
 await boardFlow();
 await themeFlow();
 await homeFlow();
-if (env.NEXT_PUBLIC_SUPABASE_URL) { await accountFlow(); await leadsFlow(); }
+if (env.NEXT_PUBLIC_SUPABASE_URL) { await accountFlow(); await leadsFlow(); await importFlow(); }
 else console.log("account: skipped (no Supabase configured)");
 assert.deepEqual(errors, [], "no console errors");
 await browser.close();

@@ -4,6 +4,7 @@ import { headers } from "next/headers";
 import { redirect } from "next/navigation";
 import { revalidatePath } from "next/cache";
 import { validateKit } from "@/lib/kit/validate";
+import { isDirectionId } from "@/lib/kit-v2/themes";
 import { safeNext } from "@/lib/safe-next";
 import { createClient, getSession } from "@/lib/supabase/server";
 import { supabaseConfigured } from "@/lib/supabase/env";
@@ -36,7 +37,7 @@ export async function signOut() {
   redirect("/");
 }
 
-export async function saveKit(raw: { category: string; device: string; state: string; city: string }): Promise<{ ok: true; id: string } | { ok: false; error: string }> {
+export async function saveKit(raw: { category: string; device: string; state: string; city: string; direction?: string }): Promise<{ ok: true; id: string } | { ok: false; error: string }> {
   const session = await getSession();
   if (!session) return { ok: false, error: "Sign in to save this kit." };
   const v = validateKit(raw);
@@ -44,7 +45,10 @@ export async function saveKit(raw: { category: string; device: string; state: st
   const supabase = await createClient();
   const { data, error } = await supabase
     .from("kits")
-    .insert({ category: v.value.category, device: v.value.device, state: v.value.state, city: v.value.city, city_is_free: v.value.cityIsFree })
+    .insert({
+      category: v.value.category, device: v.value.device, state: v.value.state, city: v.value.city, city_is_free: v.value.cityIsFree,
+      direction: isDirectionId(raw.direction) ? raw.direction : "b",
+    })
     .select("id")
     .single();
   if (error || !data) return { ok: false, error: "We couldn't save the kit. Try again." };

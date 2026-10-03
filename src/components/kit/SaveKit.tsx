@@ -10,7 +10,7 @@ import type { KitInput } from "@/lib/kit/types";
 export type SaveMode = "signed-in" | "signed-out" | "off";
 
 /** Save controls under a kit. Signed out, it sends the rep to sign in and brings them back to the same kit. */
-export function SaveKit({ input, mode }: { input: KitInput; mode: SaveMode }) {
+export function SaveKit({ input, direction = "b", mode }: { input: KitInput; direction?: "a" | "b" | "c"; mode: SaveMode }) {
   const [result, setResult] = useState<{ ok: true; id: string } | { ok: false; error: string } | null>(null);
   const [pending, start] = useTransition();
   if (mode === "off") return null;
@@ -30,7 +30,7 @@ export function SaveKit({ input, mode }: { input: KitInput; mode: SaveMode }) {
         variant="secondary"
         disabled={pending || result?.ok === true}
         onClick={() =>
-          start(async () => setResult(await saveKit({ category: input.cat, device: input.device, state: input.st, city: input.city })))
+          start(async () => setResult(await saveKit({ category: input.cat, device: input.device, state: input.st, city: input.city, direction })))
         }
       >
         {pending ? "Saving…" : "Save this kit"}

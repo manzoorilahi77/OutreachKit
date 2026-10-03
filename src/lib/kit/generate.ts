@@ -4,7 +4,7 @@ import { AICROSS, AIUP, CROSS, FAM, OPPS, STATES, STYLE, TPL, TONE } from "@/dat
 import type { Inline } from "@/content/types";
 import { sectionPlan, buildPromptText } from "./buildPrompt";
 import { findCategory } from "./categories";
-import { archFor, gapMid, makeMaps, makeTags, marketSize, money, priceModel, rotation, runBlocks, slug, styleLine } from "./helpers";
+import { archFor, gapMid, makeMaps, makeTags, marketSize, money, priceModel, priceMult, rotation, runBlocks, slug, styleLine } from "./helpers";
 import { messages } from "./messages";
 import { openers } from "./openers";
 import type { Cell, Kit, KitContext, KitInput, KitNode, KitSection } from "./types";
@@ -25,7 +25,7 @@ export function buildContext(input: KitInput): KitContext {
   const msShort = msLabel.split(" —")[0]!.toLowerCase();
   const fam = FAM[c.f];
   const pitch = fam.pitch.replace(/\[City\]/g, input.city);
-  const P = priceModel(c, msMult >= 90 ? 1.15 : msMult >= 40 ? 1 : msMult >= 16 ? 0.85 : 0.8);
+  const P = priceModel(c, priceMult(msMult));
   const dom = (input.domain?.trim() || "yourstudio.com").replace(/^https?:\/\//, "").replace(/\/+$/, "");
   const demo = "https://" + dom + "/" + slug(input.city) + "/{business-name}";
   return {

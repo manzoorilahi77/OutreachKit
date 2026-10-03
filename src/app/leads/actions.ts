@@ -4,6 +4,7 @@ import { redirect } from "next/navigation";
 import { revalidatePath } from "next/cache";
 import type { FormState } from "@/app/actions";
 import { parseLeadForm } from "@/lib/leads/form";
+import { previewImport, type ImportPreview } from "@/lib/leads/import";
 import { stageChangePatch, touchPatch, SEQUENCE } from "@/lib/leads/sequence";
 import type { Channel, Stage } from "@/lib/leads/stages";
 import { STAGES } from "@/lib/leads/stages";
@@ -88,4 +89,42 @@ export async function deleteLead(fd: FormData) {
   await (await createClient()).from("leads").delete().eq("id", id);
   revalidatePath("/leads");
   redirect("/leads");
+}
+
+// ---- CSV import (/leads/import). Reads only the text the rep uploads; RLS applies to every read and insert.
+const MAX_CSV_BYTES = 1_000_000;
+
+async function existingKeys() {
+  const supabase = await createClient();
+  const all: { email: string; phone: string; google_maps_url: string }[] = [];
+  for (let from = 0; ; from += 1000) {
+    const { data, error } = await supabase.from("leads").select("email, phone, google_maps_url").range(from, from + 999);
+    if (error) throw error;
+    all.push(...data);
+    if (data.length < 1000) break;
+  }
+  return all;
+}
+
+export async function previewLeadsImport(csv: string): Promise<ImportPreview> {
+  if (!(await getSession())) return { ok: false, error: "Sign in first.", add: [], duplicates: [], errors: [] };
+  if (csv.length > MAX_CSV_BYTES) return { ok: false, error: "That file is too large. Import at most 200 rows at a time.", add: [], duplicates: [], errors: [] };
+  return previewImport(csv, await existingKeys());
+}
+
+export async function importLeads(csv: string): Promise<{ ok: true; added: number } | { ok: false; error: string }> {
+  if (!(await getSession())) return { ok: false, error: "Sign in first." };
+  if (csv.length > MAX_CSV_BYTES) return { ok: false, error: "That file is too large." };
+  // Re-check on the server: the preview the browser showed is never trusted.
+  const p = previewImport(csv, await existingKeys());
+  if (!p.ok) return { ok: false, error: p.error ?? "The file couldn't be read." };
+  if (!p.add.length) return { ok: false, error: "There are no new leads to import." };
+  const rows: TablesInsert<"leads">[] = p.add.map(({ lead }) => {
+    const { checks, ...fields } = lead;
+    return { ...fields, ...checks };
+  });
+  const { error } = await (await createClient()).from("leads").insert(rows);
+  if (error) return { ok: false, error: "We couldn't import the leads. Nothing was added." };
+  revalidatePath("/leads");
+  return { ok: true, added: rows.length };
 }

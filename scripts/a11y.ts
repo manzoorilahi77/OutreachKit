@@ -55,7 +55,11 @@ const screens: { path: string; signedIn: boolean; prep?: (p: Page) => Promise<vo
   { path: "/playbook/reach", signedIn: false },
   { path: "/styleguide", signedIn: false },
   { path: "/login", signedIn: false },
+  // Field Kit v2: the three pilot categories in all three design directions
+  ...(["Fencing+%26+gates&st=TX&city=Austin", "Hair+salons+%26+suites&st=OR&city=Beaverton&dev=mobile", "Commercial+janitorial&st=AR&city=Siloam+Springs"] as const)
+    .flatMap((q) => (["a", "b", "c"] as const).map((d) => ({ path: `/?cat=${q}&dir=${d}&build=1`, signedIn: false }))),
   { path: "/", signedIn: true },
+  { path: "/leads/import", signedIn: true },
   { path: "/playbook/track", signedIn: true },
   { path: "/account", signedIn: true },
   { path: "/kits", signedIn: true },

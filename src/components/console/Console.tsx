@@ -15,9 +15,13 @@ import {
   EMPTY_CONSOLE, barLine, fromQuery, isReady, statusLine, stateOptions, toKitInput, toQuery, type ConsoleState,
 } from "@/lib/console";
 import { CATS } from "@/lib/kit/categories";
-import { generateKit } from "@/lib/kit/generate";
-import type { Device, Kit, KitInput } from "@/lib/kit/types";
+import { buildContext, generateKit } from "@/lib/kit/generate";
+import type { Device, Kit, KitContext, KitInput } from "@/lib/kit/types";
 import { SaveKit, type SaveMode } from "@/components/kit/SaveKit";
+import { DownloadKit } from "@/components/kit/DownloadKit";
+import { applyCategoryKit } from "@/lib/kit-v2/apply";
+import { loadCategoryKit } from "@/lib/kit-v2/load";
+import type { CategoryKit } from "@/lib/kit-v2/types";
 
 export interface ConsoleDetails { you: string; brand: string; domain: string }
 
@@ -36,7 +40,7 @@ export function Console({
   const [details, setDetails] = useState<ConsoleDetails>({ you: "", brand: "", domain: "", ...initialDetails });
   const [famF, setFamF] = useState<"all" | FamKey>("all");
   const [awaiting, setAwaiting] = useState(false);
-  const [built, setBuilt] = useState<{ kit: Kit; input: KitInput } | null>(null);
+  const [built, setBuilt] = useState<{ kit: Kit; input: KitInput; X: KitContext; ck: CategoryKit | null } | null>(null);
   const [runStatus, setRunStatus] = useState<string | null>(null);
   const kitRef = useRef<HTMLDivElement>(null);
   const states = useMemo(stateOptions, []);
@@ -60,16 +64,30 @@ export function Console({
   function update(next: Partial<ConsoleState>) {
     setAwaiting(false);
     setRunStatus(null);
-    setS((cur) => ({ ...cur, ...next }));
+    // Changing an input invalidates the built kit's direction until the next build.
+    setS((cur) => {
+      const { dir: _dir, ...rest } = cur;
+      void _dir;
+      return { ...rest, ...next };
+    });
   }
 
-  function build(state: ConsoleState = s) {
+  async function build(state: ConsoleState = s) {
     const input = toKitInput(state, { you: details.you, brand: details.brand, domain: details.domain });
     if (!input) return;
-    setBuilt({ kit: generateKit(input), input });
+    // The category layer loads as its own chunk; without a file the kit is the ported one, marked "Generic kit".
+    const ck = await loadCategoryKit(input.cat);
+    setBuilt({ kit: generateKit(input), input, X: buildContext(input), ck });
+    setS((cur) => {
+      const { dir, ...rest } = cur;
+      return ck ? { ...rest, dir: dir ?? state.dir ?? "b" } : rest;
+    });
     setRunStatus(S.built(input.cat, input.city, input.st));
     requestAnimationFrame(() => kitRef.current?.scrollIntoView({ behavior: "smooth", block: "start" }));
   }
+
+  const dir = s.dir ?? "b";
+  const shown = useMemo(() => (built ? applyCategoryKit(built.kit, built.X, built.ck, dir) : null), [built, dir]);
 
   function reset() {
     setS(start);
@@ -195,9 +213,19 @@ export function Console({
       </div>
 
       <div ref={kitRef} className="scroll-mt-20">
-        {built && (
+        {built && shown && (
           <div className="border-t border-head p-4 sm:p-6">
-            <KitView kit={built.kit} actions={<SaveKit input={built.input} mode={saveMode} />} />
+            <KitView
+              kit={shown}
+              extraChips={built.ck ? [] : ["Generic kit"]}
+              onDirection={(d) => setS((cur) => ({ ...cur, dir: d }))}
+              actions={
+                <div className="flex flex-wrap items-center gap-3">
+                  <SaveKit input={built.input} direction={built.ck ? dir : "b"} mode={saveMode} />
+                  <DownloadKit kit={shown} X={built.X} ck={built.ck} dir={dir} />
+                </div>
+              }
+            />
           </div>
         )}
       </div>

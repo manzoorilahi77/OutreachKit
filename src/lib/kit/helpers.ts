@@ -23,6 +23,11 @@ export function styleLine(f: Category["f"]): string {
   );
 }
 
+/** The market multiplier priceModel applies: major metro, mid-size, smaller market, unlisted town. */
+export function priceMult(msMult: number): number {
+  return msMult >= 90 ? 1.15 : msMult >= 40 ? 1 : msMult >= 16 ? 0.85 : 0.8;
+}
+
 export function priceModel(c: Category, mult: number): PriceModel {
   const raw = c.price.match(/\$([\d,]+)\D+([\d,]+)/);
   let lo = raw ? +raw[1]!.replace(/,/g, "") : 1200;

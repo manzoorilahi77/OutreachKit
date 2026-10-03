@@ -1,0 +1,833 @@
+{
+  "schemaVersion": 1,
+  "category": "Personal trainers",
+  "slug": "personal-trainers",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Edu family batch. Lowest-ticket category in the family: one-person businesses, so software and AI prices sit well under the build. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Who this trainer works with",
+      "contains": "The trainer's specialties named plainly: post-rehab strength, seniors' balance, postpartum return, weight loss, sport-specific conditioning, and who they refer elsewhere",
+      "why": "People hire a personal trainer who has helped someone like them. A named specialty beats a generic 'all fitness levels' every time."
+    },
+    {
+      "section": "Where the trainer coaches: in-home, park or studio",
+      "contains": "In-home sessions with the neighbourhoods covered and equipment brought, park sessions, the private studio or gym the trainer uses, and travel fees",
+      "why": "Location decides the hire before price does. Busy parents and seniors book the in-home trainer who clearly comes to their part of town."
+    },
+    {
+      "section": "Online coaching programme",
+      "contains": "How remote coaching works: the programme app, weekly check-ins, form video reviews, messaging hours, and who online coaching suits better than sessions",
+      "why": "Online coaching lets a trainer sell past their local hours. Buyers need to see exactly what they get each week before they pay monthly."
+    },
+    {
+      "section": "Health questionnaire before the first session",
+      "contains": "A PAR-Q style health and injury questionnaire, when the trainer asks for a doctor's clearance, and how past injuries shape the first programme",
+      "why": "Older and injured clients worry a trainer will hurt them. A careful intake shows the trainer takes their body seriously."
+    },
+    {
+      "section": "Partner and small-group training",
+      "contains": "Training with a spouse or friend, small groups of up to four, how the split price works, and how sessions adapt for different fitness levels",
+      "why": "Partner sessions make a personal trainer affordable for more people, and couples who train together stay longer."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C46",
+      "siteType": "local-conversion",
+      "name": "Book a Session",
+      "heroLayout": "split-photo",
+      "mood": [
+        "bold",
+        "personal",
+        "upbeat"
+      ],
+      "bestFor": "Solo trainers and online coaches who need one page with a consult button and a clear specialty",
+      "pairsWithTier": "starter",
+      "headlineSample": "Personal training in {City} that fits your schedule",
+      "whyItFits": "Magenta Signal suits a creator-style coach with a social following, and the grotesque sans keeps one strong headline and one booking button."
+    },
+    {
+      "id": "b",
+      "themeId": "C26",
+      "siteType": "booking-first",
+      "name": "Friendly Coach",
+      "heroLayout": "card-stack",
+      "mood": [
+        "approachable",
+        "patient",
+        "clear"
+      ],
+      "bestFor": "Trainers who work with beginners, seniors and postpartum clients and sell session packs",
+      "pairsWithTier": "standard",
+      "headlineSample": "Patient, one-to-one fitness coaching in {City}",
+      "whyItFits": "The family combo. Sky Kite's soft rounded type feels unintimidating to nervous beginners, and the card stack shows specialties and packs side by side."
+    },
+    {
+      "id": "c",
+      "themeId": "C2",
+      "siteType": "premium-brand",
+      "name": "Private Client",
+      "heroLayout": "type-led",
+      "mood": [
+        "discreet",
+        "assured",
+        "exclusive"
+      ],
+      "bestFor": "High-end in-home trainers serving executives and private clients at top rates",
+      "pairsWithTier": "premium",
+      "headlineSample": "Private in-home personal training in {City}",
+      "whyItFits": "Private Vault's quiet palette and refined serif read like a concierge service, and a type-led hero suits clients who value discretion over gym shots."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your Google listing as a personal trainer has a phone number and nothing else, so someone searching an in home personal trainer in {City} can't see who you help or how to book.",
+      "hook": "Open their Maps listing and confirm there is no Website button. Screenshot it for when they reply.",
+      "linkLine": "Here's the personal trainer page behind that button: {demo-link}"
+    },
+    {
+      "angle": "Instagram-only bio link",
+      "line": "Your bio link points back to the same Instagram profile, so a follower ready to hire a personal trainer has nowhere to book or see packages.",
+      "hook": "Tap their bio link and note where it lands: nothing, a link page, a form. Note it.",
+      "linkLine": "Your fitness coaching packages and booking, on one page: {demo-link}"
+    },
+    {
+      "angle": "Dead free host",
+      "line": "The trainer site on your listing still shows a gym you may no longer train at. A new client checking out a personal trainer notices old details first.",
+      "hook": "Open the site and find one stale detail: an old gym, old prices, a dead form. Note it.",
+      "linkLine": "Same coaching, current and bookable: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "I opened your personal trainer site on my phone and the packages ran off the screen. People look up fitness coaches on their phone after a bad week.",
+      "hook": "Only if they have a site. Load it on your phone and note what breaks. Screenshot it for when they reply.",
+      "linkLine": "The same trainer, rebuilt for a phone: {demo-link}"
+    },
+    {
+      "angle": "No consult booking",
+      "line": "To start with you as a personal trainer, someone has to DM and wait. A consult booking would grab the person who finally decided tonight, before they change their mind.",
+      "hook": "Look for any booking or consult form. If it's DM or call only, the angle holds.",
+      "linkLine": "A free consult booking for your personal training: {demo-link}"
+    },
+    {
+      "angle": "Client progress, nowhere to live",
+      "line": "Your client progress posts are the best thing on your trainer page, and they're buried under workout clips. A page of client stories would keep selling your coaching.",
+      "hook": "Find a recent client milestone post: a first push-up, a race, a strength gain. Note it.",
+      "linkLine": "Your fitness coaching results, where a new client decides: {demo-link}"
+    },
+    {
+      "angle": "Reviews about patience",
+      "line": "Your reviews say you were patient with someone who hadn't exercised in years. Those words should sit right beside the personal trainer booking button.",
+      "hook": "Read their reviews and copy one phrase about patience, injury or confidence. Quote it if they reply.",
+      "linkLine": "Personal trainer reviews beside the consult booking: {demo-link}"
+    },
+    {
+      "angle": "Before the wedding or summer",
+      "line": "Spring is when people start counting weeks to a wedding or a beach trip and look for a fitness coach. The trainers with a clear package and booking get the call.",
+      "hook": "Use this from January to April, or in September for holiday events. Name the moment.",
+      "linkLine": "A twelve-week personal training package page: {demo-link}"
+    },
+    {
+      "angle": "Late-night decision",
+      "line": "People decide to hire a personal trainer late at night after a rough day. Right now that decision has to wait for you to answer a DM in the morning.",
+      "hook": "Look for comments asking 'how do I start' or 'do you have openings'. Note one.",
+      "linkLine": "A trainer page that books the consult at 11pm: {demo-link}"
+    },
+    {
+      "angle": "Adding a second trainer",
+      "line": "Saw you're bringing on another personal trainer. Clients will want to see both coaches' specialties before choosing a slot.",
+      "hook": "Only if they posted about hiring, a new coach or a growing team. Note it.",
+      "linkLine": "A personal training page with both coaches: {demo-link}"
+    },
+    {
+      "angle": "In-home service area",
+      "line": "You train clients at home, but nowhere says whether you come out to {Neighborhood}. People hiring an in-home trainer check that before anything else.",
+      "hook": "Only if they mention in-home or mobile training. Check whether areas are listed.",
+      "linkLine": "An in-home personal training page with your areas: {demo-link}"
+    },
+    {
+      "angle": "Package prices hidden",
+      "line": "I couldn't find a session or package price for your personal training anywhere. People comparing trainers often pick the one with a number on the page.",
+      "hook": "Check every page and post for session or package pricing. If none, the angle holds.",
+      "linkLine": "Personal training packages, priced plainly: {demo-link}"
+    },
+    {
+      "angle": "Certifications not shown",
+      "line": "Your personal trainer certifications and specialties are why someone with a bad knee should trust you, and they don't appear anywhere a new client looks.",
+      "hook": "Look for certifications in their bio or posts. Never invent one.",
+      "linkLine": "Your trainer credentials next to your coaching: {demo-link}"
+    },
+    {
+      "angle": "Full from referrals",
+      "line": "Sounds like your personal training clients mostly come from other clients. When a few move away, their replacements will look you up first.",
+      "hook": "Look for reviews saying 'my friend recommended' or posts about a full schedule. Quote it.",
+      "linkLine": "Where a referred fitness client would land: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "That {specific recent job} you posted is a great result for your client. A coaching win like that should be the first thing a new personal training client sees.",
+      "hook": "Pick their newest client win post and name it exactly, with the client's permission in mind.",
+      "linkLine": "That client win, front and centre: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner} — that {specific recent job} you posted is a great client result.\n\nI looked for a site for {Business Name} and only found your social pages, with no packages or a way to book a consult. I put together a sample personal trainer page with your specialties, where you train and a consult booking, with marked placeholders where your photos would go.\n\nWould you like me to send it over?",
+    "dm2": "{Owner} — following up in case my message got buried under client texts. Here's the sample site for {Business Name}: {demo-link}\n\nIt shows who you train, where you train, your packages, a health questionnaire and a consult booking. If it's not for you, say so and I won't message again.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for personal trainers here in {City}. I sent you a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"Easy to miss between sessions. Short version: I built a sample site for {Business Name} with your specialties, where you train and a consult booking, with marked placeholders where your photos would go. Can I email you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range}, then {Care Range} a month for hosting and package changes. For a solo trainer I'd normally quote about {Build Price}.\"\n\"Can I walk you through it for ten minutes between your morning clients?\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. We start the day it clears.\"",
+    "objections": [
+      {
+        "objection": "I'm fully booked from referrals.",
+        "handler": "\"Then the page is for raising your rate and keeping a waitlist. When a client moves away, the next one is already waiting instead of you starting from zero.\""
+      },
+      {
+        "objection": "My clients all come from Instagram.",
+        "handler": "\"Instagram builds trust. The site is where a follower books the consult and fills in the health questions without a DM back and forth. It links straight to your profile.\""
+      },
+      {
+        "objection": "The gym I train at handles my clients.",
+        "handler": "\"That works until you leave or raise your price. A site in your own name keeps your clients with you, wherever you train.\""
+      },
+      {
+        "objection": "I can't afford a website right now.",
+        "handler": "\"Fair. It's sized for a solo trainer, and a deposit plus monthly instalments keeps it to roughly one package a month while it's being paid.\""
+      },
+      {
+        "objection": "I'm moving to online coaching anyway.",
+        "handler": "\"Even better. Online clients can't meet you in a gym, so the site is the whole first impression. The online coaching page is already in the demo.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}, because it's specialties, packages and a consult booking. One new client on a package covers most of it.\""
+      }
+    ],
+    "email": {
+      "subject": "Trainer site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for personal trainers around {City}. {Business Name} has strong client results on its social pages, but nowhere a new client can see your packages and book a consult.\n\nI built a sample first rather than ask for your time: who you train, where you train, your packages, a health questionnaire and a consult booking, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and package changes. If not, no problem, it comes down at the end of the month.\n\nWorth ten minutes on the phone between clients?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build websites for personal trainers in {City}, and I put together a sample one for {Business Name} with a consult booking. I'll email you the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner} — I'm taking the {Business Name} trainer demo down on Friday to free up the space.\n\nWant me to leave it up? One word is fine either way.",
+    "nurture": "Hi {Owner} — January is when people finally book a personal trainer, and they book the one they can find at night. Thought of you.\n\nThe site is still here whenever you want it, and nothing's changed on price. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to one client's package for a couple of months. Solo trainers think in sessions, so the build has to be small.",
+      "Offer a deposit and monthly instalments. Cash flow, not value, is what stops a trainer saying yes.",
+      "Only add the online coaching page for trainers who already coach someone remotely.",
+      "Price the in-home area page by the number of neighbourhoods, not by page.",
+      "Keep monthly add-ons under the price of one session. Anything more gets cancelled the first slow week.",
+      "Sell in October and November for January, and in March for wedding and summer goals."
+    ],
+    "lineItems": [
+      {
+        "item": "Consult booking with health questionnaire",
+        "min": 250,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max with injury questions, a clearance prompt for older clients and goal fields sent to the trainer before the consult.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Online coaching page",
+        "min": 200,
+        "max": 500,
+        "unit": "per-page",
+        "description": "Max with weekly check-in explained, a sample programme week and a monthly sign-up.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "In-home training area page",
+        "min": 150,
+        "max": 400,
+        "unit": "per-page",
+        "description": "Max when it lists every neighbourhood covered, travel fees and the equipment the trainer brings.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Specialty page (each)",
+        "min": 150,
+        "max": 350,
+        "unit": "per-page",
+        "description": "Max with a client story, a typical first month and the trainer's training for that specialty.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Package checkout with session packs",
+        "min": 250,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max with partner pricing, auto-renewing monthly packages and a cancellation policy acknowledgement.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Spanish-language client path",
+        "min": 250,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max when the questionnaire, packages and consult booking are all translated.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Trainer headshots and session action shots",
+      "min": 200,
+      "max": 600,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"An hour shooting you coaching a willing client, plus a proper headshot, so your personal trainer page looks like the person they'll meet.\"",
+      "when": "Month 2, booked with a client who agrees in writing to appear."
+    },
+    {
+      "name": "Google profile for a solo trainer",
+      "min": 99,
+      "max": 199,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A Google profile set up properly as a personal trainer with service areas, then a short post each week, so local searches find you instead of the big gym.\"",
+      "when": "Day 30, or at build if they have no profile at all."
+    },
+    {
+      "name": "Review asks after a client's first month",
+      "min": 29,
+      "max": 79,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Four weeks into training, when they feel the difference, clients get a text asking for a review of their personal trainer.\"",
+      "when": "Day 30. The easiest second sale."
+    },
+    {
+      "name": "New Year fitness coaching ads",
+      "min": 250,
+      "max": 600,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Small, tightly targeted local ads for your consult booking from late December to February, aimed at your specialty, paused when your calendar fills.\"",
+      "when": "Pitch in November. Ad spend is on top and kept small."
+    },
+    {
+      "name": "Referral card and client gift kit",
+      "min": 100,
+      "max": 300,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Cards your clients hand to friends with a free consult code, so the referrals you already get arrive straight at your booking page.\"",
+      "when": "Right after launch."
+    },
+    {
+      "name": "Short-form workout video editing",
+      "min": 150,
+      "max": 400,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"You film a few exercise clips each week on your phone, and they come back as captioned short videos for your fitness coaching page.\"",
+      "when": "Month 3, if they already post but hate editing."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Physical therapists who hand off finished rehab clients",
+        "whoPays": "The clinic, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The physical therapist who sends you clients after rehab needs a page aimed at people ready for training. Your referral link goes both ways.\"",
+        "whyItWorks": "The handoff from therapy to personal training is a real referral path, and both sides benefit from making it visible."
+      },
+      {
+        "route": "Registered dietitians and nutrition coaches",
+        "whoPays": "Each dietitian, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The dietitian you send personal training clients to for meal plans needs a booking page. Your recommendation is the introduction.\"",
+        "whyItWorks": "Trainers and dietitians swap clients constantly, and dietitians in private practice often have no site."
+      },
+      {
+        "route": "The private training studio the trainer rents",
+        "whoPays": "The studio owner",
+        "min": 1200,
+        "max": 3000,
+        "unit": "one-time",
+        "pitchLine": "\"The studio where you rent hourly space needs a page that lists every trainer and rents open hours. You can introduce me.\"",
+        "whyItWorks": "Studio owners need renters and clients for them. A tenant trainer is the natural introduction."
+      },
+      {
+        "route": "Massage therapists and sports recovery",
+        "whoPays": "Each therapist, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The massage therapist your training clients see after hard weeks needs online booking. I'll build it with your page linked.\"",
+        "whyItWorks": "Same clients, same goals, and a trainer's word carries weight."
+      },
+      {
+        "route": "Senior centres and active-living communities",
+        "whoPays": "The community or centre",
+        "min": 1200,
+        "max": 3500,
+        "unit": "one-time",
+        "pitchLine": "\"The senior centre where you run balance classes has no activity calendar online. I'll build one families can see.\"",
+        "whyItWorks": "Trainers who teach there are trusted by the staff, and centres market to adult children."
+      },
+      {
+        "route": "Wedding dress boutiques and bridal stylists",
+        "whoPays": "Each boutique, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The bridal boutique that sends brides to your pre-wedding training needs a booking page for fittings. Your introduction opens the door.\"",
+        "whyItWorks": "Pre-wedding training is a real referral loop, and boutiques book on fixed timelines."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Discharge-to-training handoff assistant for physical therapists",
+        "whoPays": "The clinic, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"When a patient finishes rehab, the clinic's assistant explains next-step training options and books a consult with a trusted trainer.\"",
+        "whyItWorks": "Clinics want discharged patients to keep progressing. It never gives medical advice, only next steps."
+      },
+      {
+        "route": "Meal plan question assistant for dietitians",
+        "whoPays": "The dietitian, monthly",
+        "min": 79,
+        "max": 199,
+        "unit": "monthly",
+        "pitchLine": "\"Fitness clients ask 'can I swap this meal' at night and get an answer from the dietitian's own plan rules, with anything medical sent back to the dietitian.\"",
+        "whyItWorks": "Dietitians answer the same swap questions all week. Saving those evenings is easy to value."
+      },
+      {
+        "route": "Hourly rental booking assistant for the studio owner",
+        "whoPays": "The studio owner, monthly",
+        "min": 79,
+        "max": 199,
+        "unit": "monthly",
+        "pitchLine": "\"Independent trainers ask about open hours and rates, and the assistant books studio time and collects payment.\"",
+        "whyItWorks": "Unbooked hours are lost rent. Each booking has a price."
+      },
+      {
+        "route": "Rebooking assistant for massage therapists",
+        "whoPays": "The therapist, monthly",
+        "min": 49,
+        "max": 129,
+        "unit": "monthly",
+        "pitchLine": "\"A client mentions a tight back after training and gets offered the therapist's next open slot, with a rebook nudge later.\"",
+        "whyItWorks": "Solo therapists can't answer mid-session. A small fee beats one missed booking."
+      },
+      {
+        "route": "Activity question line for senior centres",
+        "whoPays": "The centre, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"Residents and their adult children ask which balance and strength classes with the visiting trainer run this week and whether they're gentle enough, and get answers from the centre's calendar.\"",
+        "whyItWorks": "Front desks at senior centres answer the same questions all day, often to worried families."
+      },
+      {
+        "route": "Fitting scheduler for bridal boutiques",
+        "whoPays": "The boutique, monthly",
+        "min": 79,
+        "max": 199,
+        "unit": "monthly",
+        "pitchLine": "\"Brides on a pre-wedding fitness plan ask about appointment times and alterations deadlines, and the boutique's assistant books fittings backward from the wedding date.\"",
+        "whyItWorks": "Fittings run on deadlines, and missed enquiries go to the next boutique."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Session reminders and late-cancel rule",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 500,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Clients get a reminder the evening before each personal training session, and a late cancel is charged automatically under your stated rule.\"",
+      "whenAndWhatItTakes": "Day 30, or the first time a client no-shows. Needs their cancellation rule and calendar access."
+    },
+    {
+      "name": "Package and session-count tracker",
+      "kind": "software",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Each client's remaining sessions shown to them and to you, with a renewal prompt when two are left, so nobody trains free by accident.\"",
+      "whenAndWhatItTakes": "Month 2. Needs current client packages, even from a notebook."
+    },
+    {
+      "name": "Client workout log and programme sheet",
+      "kind": "software",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1200,
+      "monthlyMin": 19,
+      "monthlyMax": 59,
+      "pitchLine": "\"Every client's programme, weights and notes in one place you open on your phone mid-session, instead of a dozen notes apps.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their current programming format."
+    },
+    {
+      "name": "Consult enquiry responder for trainers",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"'Do you work with bad knees' and 'what do you charge' get answered from your own page while you're coaching, with the consult booking link.\"",
+      "whenAndWhatItTakes": "Month 2. Needs specialties, packages and areas. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Package renewal nudge",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 500,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"When a client's personal training package is nearly used, they get a friendly renewal message with their progress since starting.\"",
+      "whenAndWhatItTakes": "Month 2, once the package tracker is live."
+    },
+    {
+      "name": "Online coaching check-in form",
+      "kind": "software",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 19,
+      "monthlyMax": 59,
+      "pitchLine": "\"Online coaching clients submit weight, sleep, steps and a form video each week in one tidy check-in you review on Sunday.\"",
+      "whenAndWhatItTakes": "Month 3, for trainers with remote clients. Needs their check-in questions."
+    },
+    {
+      "name": "Check-in summary writer for online coaching",
+      "kind": "ai",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1200,
+      "monthlyMin": 49,
+      "monthlyMax": 149,
+      "pitchLine": "\"Each online client's weekly check-in becomes a short summary with what changed, so the fitness coach replies in minutes instead of an hour.\"",
+      "whenAndWhatItTakes": "Month 4, once check-ins are flowing. Coach approves every reply. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Partner session split billing",
+      "kind": "software",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Partner and small-group training sessions split the price between clients automatically, so the trainer never chases a friend's half.\"",
+      "whenAndWhatItTakes": "Month 3, if they train partners or small groups. Needs the split rules."
+    },
+    {
+      "name": "Trainer review thank-you drafts",
+      "kind": "ai",
+      "oneTimeMin": 200,
+      "oneTimeMax": 500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"When a client reviews their personal trainer, a short personal thank-you is drafted in your voice for you to send from the car.\"",
+      "whenAndWhatItTakes": "Month 2, with the review asks. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Exercise clip captioner",
+      "kind": "ai",
+      "oneTimeMin": 200,
+      "oneTimeMax": 600,
+      "monthlyMin": 39,
+      "monthlyMax": 99,
+      "pitchLine": "\"Upload a squat or deadlift clip, and a caption with the coaching cue and who it helps is ready in your fitness coach voice.\"",
+      "whenAndWhatItTakes": "Month 2. Needs a few past captions. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Travel-time aware booking for in-home training",
+      "kind": "software",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"In-home personal training slots only open when there's time to drive between clients, so a booking never strands you across town.\"",
+      "whenAndWhatItTakes": "Month 4, for mobile trainers. Needs areas and typical drive times."
+    },
+    {
+      "name": "Missed-week check-in",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 500,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"A client who skipped a week of personal training gets a no-guilt message from you and a link to rebook, before skipping becomes quitting.\"",
+      "whenAndWhatItTakes": "Month 3. Needs session history."
+    },
+    {
+      "name": "Programme draft helper",
+      "kind": "ai",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 49,
+      "monthlyMax": 149,
+      "pitchLine": "\"From a new client's questionnaire and goals, a first-month training programme is drafted in your exercise library for the personal trainer to edit.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their exercise library and programming rules. Trainer approves every programme. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Intake red-flag summary",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 39,
+      "monthlyMax": 99,
+      "pitchLine": "\"The health questionnaire comes back as a short note highlighting injuries and anything needing a doctor's clearance, before the first session.\"",
+      "whenAndWhatItTakes": "Month 3, with the consult booking live. Never gives medical advice. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Progress photo and measurement vault",
+      "kind": "software",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Clients' progress pictures and measurements stored privately with their consent, shown side by side at renewal time.\"",
+      "whenAndWhatItTakes": "Month 4. Needs a consent wording the client signs."
+    },
+    {
+      "name": "Small-group class booking",
+      "kind": "software",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1200,
+      "monthlyMin": 19,
+      "monthlyMax": 59,
+      "pitchLine": "\"Boot camp or small-group personal training sessions sell as spots with a cap, so one hour of coaching pays several times over.\"",
+      "whenAndWhatItTakes": "Month 5, if they want to add groups. Needs times, caps and price."
+    },
+    {
+      "name": "Lapsed client comeback",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 500,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Clients who stopped training get a note before January with a restart offer from their old personal trainer.\"",
+      "whenAndWhatItTakes": "Month 6. Needs past client list."
+    },
+    {
+      "name": "Habit coach texts between sessions",
+      "kind": "ai",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 49,
+      "monthlyMax": 149,
+      "pitchLine": "\"Between sessions, clients get short check-ins on steps, water and sleep in the trainer's voice, and anything worrying goes to the trainer.\"",
+      "whenAndWhatItTakes": "Month 5. Needs the trainer's habit rules and client opt-in. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Exercise video library for clients",
+      "kind": "software",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 19,
+      "monthlyMax": 59,
+      "pitchLine": "\"Clients look up how the trainer cues each exercise in their programme, so homework sessions look like coached ones.\"",
+      "whenAndWhatItTakes": "Month 6. Needs the trainer to film short exercise demos."
+    },
+    {
+      "name": "Client fit screener for online coaching",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1200,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Online coaching applicants answer a few questions and the coach sees a short fit summary first, so calls only go to people the coach can help.\"",
+      "whenAndWhatItTakes": "Month 6, once online coaching has a waitlist. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the trainer site as a low monthly subscription",
+      "whoPays": "Solo personal trainers, monthly",
+      "min": 29,
+      "max": 79,
+      "unit": "monthly",
+      "pitchLine": "\"One personal trainer template with consult booking, packages and the session tracker, set up in a day for a small monthly fee. Volume beats custom here.\"",
+      "whyItWorks": "There are many trainers and each one has a small budget. A subscription turns a skip category into a volume one."
+    },
+    {
+      "route": "Trainer certification body graduate kit",
+      "whoPays": "The certifying organisation, per graduating trainer or annually",
+      "min": 2000,
+      "max": 8000,
+      "unit": "per-year",
+      "pitchLine": "\"Every new certified personal trainer needs a site on day one. Bundle a starter page with your certification and they launch as businesses.\"",
+      "whyItWorks": "Certifiers sell careers. A launch kit is a reason to choose their course, and every graduate is a future upgrade."
+    },
+    {
+      "route": "Private training studio owners renting to many trainers",
+      "whoPays": "The studio group, annually",
+      "min": 2000,
+      "max": 6000,
+      "unit": "per-year",
+      "pitchLine": "\"Your studio rents to a dozen independent trainers. A trainer directory with each one's booking page fills your hours and keeps them renting.\"",
+      "whyItWorks": "One contract covers many trainers, and studio owners profit when their renters are busy."
+    },
+    {
+      "route": "Fitness equipment retailers' trainer referral network",
+      "whoPays": "The retailer",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Customers buying a home gym want someone to show them how to use it. A find-a-trainer page with local in-home trainers sells more equipment.\"",
+      "whyItWorks": "Retailers want buyers to use what they bought, and in-home trainers are the answer."
+    },
+    {
+      "route": "Agency resale of the trainer template",
+      "whoPays": "The agency, per site",
+      "min": 200,
+      "max": 600,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency gets personal trainer enquiries it can't price low enough. License my template and set them up in an afternoon.\"",
+      "whyItWorks": "Agencies turn these small jobs away. A cheap, finished template makes them worth taking."
+    },
+    {
+      "route": "Employer onsite fitness coaching",
+      "whoPays": "The employer's benefits team, annually",
+      "min": 1500,
+      "max": 6000,
+      "unit": "per-year",
+      "pitchLine": "\"Your staff could book personal training sessions with vetted local coaches on a page you subsidise. I'll build the sign-up and booking.\"",
+      "whyItWorks": "Employers want wellness they can count, and the trainer client is the first coach on the list."
+    },
+    {
+      "route": "Retirement communities' resident fitness programme",
+      "whoPays": "The retirement community, annually",
+      "min": 1500,
+      "max": 5000,
+      "unit": "per-year",
+      "pitchLine": "\"Your residents want balance and strength sessions with a trainer they trust. A booking page for visiting trainers makes it a marketed amenity.\"",
+      "whyItWorks": "Communities sell activities to families, and trainers who already work there make the introduction."
+    },
+    {
+      "route": "Apartment building amenity gyms",
+      "whoPays": "The property manager, annually",
+      "min": 1000,
+      "max": 3000,
+      "unit": "per-year",
+      "pitchLine": "\"Your building gym sits empty. A resident booking page for a weekly visiting personal trainer turns it into an amenity you can advertise.\"",
+      "whyItWorks": "Property managers compete on amenities, and the trainer client supplies the coaching."
+    },
+    {
+      "route": "Online coaching creators with a following",
+      "whoPays": "Each coach, at your normal rate",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"Online fitness coaches with an audience need an application page and check-in system, the same one I built for a local trainer.\"",
+      "whyItWorks": "Online coaches aren't bound to a city, so the market is wider and the build is already done."
+    },
+    {
+      "route": "Prenatal and postpartum fitness specialists",
+      "whoPays": "Each specialist, at your normal rate",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"Trainers who specialise in pregnancy and postpartum fitness need the health questionnaire and gentle tone this site already has.\"",
+      "whyItWorks": "Specialists search for tools that fit their niche, and the intake is the hard part."
+    },
+    {
+      "route": "Trainer sites across the region",
+      "whoPays": "New trainers in nearby towns",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"With a handful of personal trainers in {City} on the template, I approach coaches in neighbouring towns with real examples to show.\"",
+      "whyItWorks": "Trainers rarely compete across towns, and live examples make the low-price pitch credible."
+    },
+    {
+      "route": "Rescue an abandoned coaching app setup",
+      "whoPays": "The stuck trainer",
+      "min": 200,
+      "max": 800,
+      "unit": "one-time",
+      "pitchLine": "\"You paid for a coaching app and never finished setting up the programmes or payments. I can finish it in a week, having done it for another trainer.\"",
+      "whyItWorks": "Stuck trainers are already paying monthly for something unused, so finishing it is an easy yes."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Trainer site build plus care plan, one contract",
+      "min": 1200,
+      "max": 2000,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The personal trainer site and the care plan go on one contract, with instalments, so a package change is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 21,
+      "offer": "Session reminders and late-cancel rule",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "trigger": "They mention a client no-show or a late cancel they didn't charge.",
+      "line": "\"That late cancel cost you a session. Reminders and a stated rule stop most of them.\""
+    },
+    {
+      "rung": 3,
+      "day": 30,
+      "offer": "Review asks after a client's first month",
+      "min": 29,
+      "max": 79,
+      "unit": "monthly",
+      "trigger": "The first clients booked through the site reach four weeks of training.",
+      "line": "\"Your newest clients feel the difference now. That's the week to ask for a personal trainer review.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Package and session-count tracker",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "trigger": "They admit losing count of a client's remaining sessions.",
+      "line": "\"No more guessing who has sessions left. Clients see it, you see it, renewal prompts itself.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Consult enquiry responder for trainers",
+      "min": 300,
+      "max": 900,
+      "unit": "one-time",
+      "trigger": "They say they miss consult enquiries while coaching back-to-back sessions.",
+      "line": "\"While you're coaching, the responder answers 'do you work with bad knees' and books the consult.\""
+    },
+    {
+      "rung": 6,
+      "day": 150,
+      "offer": "Online coaching check-in form and summary writer",
+      "min": 400,
+      "max": 1200,
+      "unit": "one-time",
+      "trigger": "They mention a client moving away who wants to keep training remotely.",
+      "line": "\"That client moving away can stay on as online coaching, with weekly check-ins you review in minutes.\""
+    },
+    {
+      "rung": 7,
+      "day": 240,
+      "offer": "New Year fitness coaching ads",
+      "min": 250,
+      "max": 600,
+      "unit": "monthly",
+      "trigger": "It's November and their January calendar has open slots.",
+      "line": "\"Your January has room. Small local ads to your specialty fill it before the rush passes.\""
+    }
+  ]
+}

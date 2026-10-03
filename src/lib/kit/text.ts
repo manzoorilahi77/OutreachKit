@@ -50,6 +50,17 @@ export function nodeText(n: KitNode): string {
       return n.items.map((i) => i.join("")).join("");
     case "ups":
       return n.items.map((i) => i.name + i.price + i.why).join("");
+    // Category-kit nodes (src/lib/kit-v2), flattened in reading order.
+    case "directions":
+      return n.items
+        .map((d) =>
+          "Direction " + d.letter + d.name + d.siteType + " · " + d.tier + d.mood.join(" · ") + d.bestFor + d.whyItFits +
+          d.themeId + " " + d.themeName + d.colors.map((c) => c.role + c.hex).join("") + d.type.id + " " + d.type.name + d.type.fonts)
+        .join("");
+    case "tabs":
+      return n.tabs.map((t) => t.label + t.table.head.join("") + t.table.rows.map((r) => r.map((c) => inlineText(c.inline)).join("")).join("")).join("");
+    case "ladder":
+      return n.rungs.map((r) => "Day " + r.day + r.offer + r.price + "Pitch when: " + r.trigger + r.line).join("");
   }
 }
 

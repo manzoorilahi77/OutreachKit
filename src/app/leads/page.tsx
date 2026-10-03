@@ -56,6 +56,7 @@ export default async function LeadsPage({ searchParams }: { searchParams: Promis
         <div className="flex flex-wrap items-center gap-3">
           <Link href="/leads/new" className="inline-flex min-h-11 items-center rounded-md border border-fill bg-fill px-4 font-medium text-on-fill no-underline">Add a lead</Link>
           <a href="/leads/export.csv" className="inline-flex min-h-11 items-center">Export CSV for Google Sheets</a>
+          <Link href="/leads/import" className="inline-flex min-h-11 items-center">Import CSV</Link>
         </div>
         <div role="group" aria-label="Stage" className="flex flex-wrap gap-2">
           <Filter href={href({ stage: undefined })} active={!stage}>All stages</Filter>

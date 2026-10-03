@@ -14,6 +14,7 @@ export type Database = {
           city: string
           city_is_free: boolean
           created_at: string
+          direction: string
         }
         Insert: {
           id?: string
@@ -24,6 +25,7 @@ export type Database = {
           city: string
           city_is_free?: boolean
           created_at?: string
+          direction?: string
         }
         Update: {
           id?: string
@@ -34,6 +36,7 @@ export type Database = {
           city?: string
           city_is_free?: boolean
           created_at?: string
+          direction?: string
         }
         Relationships: []
       }

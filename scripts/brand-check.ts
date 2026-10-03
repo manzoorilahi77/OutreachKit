@@ -6,9 +6,8 @@ import { join, extname } from "node:path";
 const ALLOWED_HEX = new Set(["#0f2a4a", "#2c2e33", "#f7f5f2", "#1e6fff"]);
 const ROOTS = ["src", "public/brand", "supabase"];
 const EXTS = new Set([".ts", ".tsx", ".css", ".svg", ".html", ".mjs", ".sql", ".md"]);
-// src/data/style.ts holds the CLIENT demo-site palettes the build prompt describes; they are data, never app UI.
-// src/themes/library.ts is the base-website template's 50 client demo-site combos, vendored by pnpm themes:sync; data, never app UI.
-export const SKIP_FILES = new Set(["src/lib/contrast.ts", "src/data/style.ts", "src/themes/library.ts"]);
+// The skipped files and directories, each with its reason, live in scripts/lib/brand-config.ts.
+import { SKIP_DIRS, SKIP_FILES } from "./lib/brand-config";
 
 function walk(dir: string, out: string[] = []): string[] {
   let entries: string[] = [];
@@ -34,7 +33,7 @@ const rules: [RegExp, string][] = [
 
 for (const root of ROOTS) {
   for (const f of walk(root)) {
-    if (SKIP_FILES.has(f) || f.endsWith(".test.ts")) continue;
+    if (SKIP_FILES.has(f) || SKIP_DIRS.some((d) => f.startsWith(d)) || f.endsWith(".test.ts")) continue;
     const text = readFileSync(f, "utf8");
     for (const m of text.matchAll(/#(?:[0-9a-fA-F]{8}|[0-9a-fA-F]{6}|[0-9a-fA-F]{3})\b/g)) {
       const hex = m[0].toLowerCase();

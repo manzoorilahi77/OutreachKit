@@ -69,11 +69,41 @@ export type KitNode =
   | { k: "steps"; items: { n: string; inline: Inline[] }[] }
   | { k: "list"; items: Inline[][] }
   | { k: "pairs"; items: { dt: string; dd: Inline[]; small?: boolean }[] }
-  | { k: "copyBlock"; label: string; text: string }
+  | { k: "copyBlock"; label: string; text: string; pairs?: { term: string; def: string }[] }
   | { k: "openers"; items: Opener[] }
   | { k: "table"; head: string[]; minWidth: number; rows: Cell[][] }
   | { k: "timeline"; items: RunBlock[] }
-  | { k: "ups"; items: { name: string; price: string; why: string }[] };
+  | { k: "ups"; items: { name: string; price: string; why: string }[] }
+  // Category-kit nodes (src/lib/kit-v2). The ported kit never produces these.
+  | { k: "directions"; items: DirectionCard[]; selected: "a" | "b" | "c" }
+  | { k: "tabs"; tabs: { label: string; table: { head: string[]; minWidth: number; rows: Cell[][] } }[] }
+  | { k: "ladder"; rungs: LadderRung[] };
+
+/** One design direction as the picker draws it: the combo resolved from the vendored theme library. */
+export interface DirectionCard {
+  id: "a" | "b" | "c";
+  letter: "A" | "B" | "C";
+  name: string;
+  siteType: string;
+  tier: string;
+  heroLayout: string;
+  mood: string[];
+  bestFor: string;
+  whyItFits: string;
+  headline: string;
+  themeId: string;
+  themeName: string;
+  mode: "light" | "dark";
+  colors: { role: "bg" | "surface" | "text" | "muted" | "accent" | "positive" | "negative"; hex: string }[];
+  /** Label colour for text on the accent, chosen by the template's pickReadable. */
+  onAccent: string;
+  /** Muted text made AA-safe the way the template does it (ensureContrast). */
+  mutedText: string;
+  type: { id: string; name: string; fonts: string; display: string; body: string };
+  preview: { business: string; ctas: [string, string]; services: string[]; trust: string[] };
+}
+
+export interface LadderRung { rung: number; day: number; offer: string; price: string; trigger: string; line: string }
 
 export interface KitSection {
   id: string;

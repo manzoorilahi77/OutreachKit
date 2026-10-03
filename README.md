@@ -83,6 +83,9 @@ Playwright needs a browser once: `pnpm exec playwright install chromium`.
 - The golden tests compare the TS port with what the original builds in a real browser, plus the three logged corrections
   (`golden/corrections.ts`). Differences from the original are limited to those corrections and are listed in [CHANGES.md](CHANGES.md),
   which `pnpm changes` generates from the same patch lists and a test keeps in sync.
+- Field Kit v2 adds a category layer (`src/kits/*.json`, applied by `src/lib/kit-v2/`) on top of the port without touching it.
+  The goldens and `pnpm parity` cover the original layer; `pnpm kits:check` covers the category layer, and `golden/v2` holds
+  the overlay's own goldens. See [docs/category-kits.md](docs/category-kits.md) for provenance and how a file gets approved.
 
 ## Brand
 

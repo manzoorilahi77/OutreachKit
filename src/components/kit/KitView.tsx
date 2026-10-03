@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import type { Inline } from "@/content/types";
 import { Chip } from "@/components/ui/Chip";
 import { CopyButton } from "@/components/ui/CopyButton";
@@ -8,6 +9,9 @@ import { TableWrap, td, th } from "@/components/ui/TableWrap";
 import { InlineView } from "@/components/playbook/InlineView";
 import { CHROME } from "@/lib/kit/text";
 import type { Cell, Kit, KitNode } from "@/lib/kit/types";
+import { DirectionPicker } from "./directions/DirectionPicker";
+
+type DirectionId = "a" | "b" | "c";
 
 const cellClass: Record<NonNullable<Cell["kind"]>, string> = {
   name: "font-medium text-head",
@@ -18,7 +22,61 @@ const cellClass: Record<NonNullable<Cell["kind"]>, string> = {
 
 const para = { prose: "max-w-3xl", fine: "max-w-3xl text-sm text-muted", muted: "max-w-3xl text-sm text-muted" } as const;
 
-function Node({ n }: { n: KitNode }) {
+function Table({ head, minWidth, rows }: { head: string[]; minWidth: number; rows: Cell[][] }) {
+  return (
+    <TableWrap label={head.join(", ")} minWidth={minWidth}>
+      <thead><tr>{head.map((h) => <th key={h} scope="col" className={th}>{h}</th>)}</tr></thead>
+      <tbody>
+        {rows.map((r, i) => (
+          <tr key={i}>
+            {r.map((c, j) => <td key={j} className={`${td} ${c.kind ? cellClass[c.kind] : ""}`}><InlineView parts={c.inline} /></td>)}
+          </tr>
+        ))}
+      </tbody>
+    </TableWrap>
+  );
+}
+
+function Tabs({ tabs }: { tabs: Extract<KitNode, { k: "tabs" }>["tabs"] }) {
+  const [on, setOn] = useState(0);
+  const id = "tabs-" + tabs.map((t) => t.label).join("-").replace(/[^a-z0-9]+/gi, "-").toLowerCase();
+  function onKey(e: React.KeyboardEvent) {
+    const step = e.key === "ArrowRight" ? 1 : e.key === "ArrowLeft" ? -1 : 0;
+    if (!step) return;
+    e.preventDefault();
+    const next = (on + step + tabs.length) % tabs.length;
+    setOn(next);
+    document.getElementById(`${id}-tab-${next}`)?.focus();
+  }
+  return (
+    <div className="space-y-3">
+      <div role="tablist" aria-label="Cross-sell" className="inline-flex overflow-hidden rounded-md border border-head" onKeyDown={onKey}>
+        {tabs.map((t, i) => (
+          <button
+            key={t.label}
+            id={`${id}-tab-${i}`}
+            type="button"
+            role="tab"
+            aria-selected={i === on}
+            aria-controls={`${id}-panel-${i}`}
+            tabIndex={i === on ? 0 : -1}
+            onClick={() => setOn(i)}
+            className="min-h-11 px-4 text-base font-medium text-head aria-selected:bg-fill aria-selected:text-on-fill"
+          >
+            {t.label}
+          </button>
+        ))}
+      </div>
+      {tabs.map((t, i) => (
+        <div key={t.label} id={`${id}-panel-${i}`} role="tabpanel" aria-labelledby={`${id}-tab-${i}`} hidden={i !== on}>
+          <Table {...t.table} />
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function Node({ n, onDirection }: { n: KitNode; onDirection?: (id: DirectionId) => void }) {
   switch (n.k) {
     case "h4":
       return <h4 className="pt-2 text-xl"><InlineView parts={n.inline} /></h4>;
@@ -61,7 +119,18 @@ function Node({ n }: { n: KitNode }) {
             <span className="font-medium text-head">{n.label}</span>
             <CopyButton text={n.text} label={CHROME.copy} />
           </div>
-          <pre className="max-h-[32rem] overflow-auto whitespace-pre-wrap break-words p-4 font-sans text-base" tabIndex={0}>{n.text}</pre>
+          {n.pairs ? (
+            <dl className="space-y-3 p-4">
+              {n.pairs.map((p) => (
+                <div key={p.term}>
+                  <dt><strong>{p.term}</strong></dt>
+                  <dd className="pl-4">— {p.def}</dd>
+                </div>
+              ))}
+            </dl>
+          ) : (
+            <pre className="max-h-[32rem] overflow-auto whitespace-pre-wrap break-words p-4 font-sans text-base" tabIndex={0}>{n.text}</pre>
+          )}
         </div>
       );
     case "openers":
@@ -87,18 +156,7 @@ function Node({ n }: { n: KitNode }) {
         </ol>
       );
     case "table":
-      return (
-        <TableWrap label={n.head.join(", ")} minWidth={n.minWidth}>
-          <thead><tr>{n.head.map((h) => <th key={h} scope="col" className={th}>{h}</th>)}</tr></thead>
-          <tbody>
-            {n.rows.map((r, i) => (
-              <tr key={i}>
-                {r.map((c, j) => <td key={j} className={`${td} ${c.kind ? cellClass[c.kind] : ""}`}><InlineView parts={c.inline} /></td>)}
-              </tr>
-            ))}
-          </tbody>
-        </TableWrap>
-      );
+      return <Table head={n.head} minWidth={n.minWidth} rows={n.rows} />;
     case "timeline":
       return (
         <ol className="divide-y divide-line overflow-hidden rounded-lg border border-line">
@@ -122,10 +180,36 @@ function Node({ n }: { n: KitNode }) {
           ))}
         </ul>
       );
+    case "directions":
+      return <DirectionPicker items={n.items} selected={n.selected} onSelect={onDirection} />;
+    case "tabs":
+      return <Tabs tabs={n.tabs} />;
+    case "ladder":
+      return (
+        <ol className="space-y-3">
+          {n.rungs.map((r) => (
+            <li key={r.rung} className="grid gap-1 rounded-lg border border-line bg-surface p-4 sm:grid-cols-[8rem_1fr] sm:gap-4">
+              <span className="font-medium tabular-nums text-muted">{String(r.rung).padStart(2, "0")} · Day {r.day}</span>
+              <span className="space-y-1">
+                <strong className="block">{r.offer}</strong>
+                <span className="block font-medium tabular-nums text-head">{r.price}</span>
+                <span className="block text-sm"><span className="text-muted">Pitch when: </span>{r.trigger}</span>
+                <span className="block">{r.line}</span>
+              </span>
+            </li>
+          ))}
+        </ol>
+      );
   }
 }
 
-export function KitView({ kit, actions }: { kit: Kit; actions?: React.ReactNode }) {
+export function KitView({ kit, actions, extraChips = [], onDirection }: {
+  kit: Kit;
+  actions?: React.ReactNode;
+  /** Chips the page adds, such as "Generic kit" when the category has no kit file. */
+  extraChips?: string[];
+  onDirection?: (id: DirectionId) => void;
+}) {
   return (
     <article aria-label="Field kit" className="space-y-8">
       <header className="space-y-3 border-b border-line pb-5">
@@ -134,13 +218,14 @@ export function KitView({ kit, actions }: { kit: Kit; actions?: React.ReactNode 
           {kit.header.chips.map((c) => (
             <Chip key={c.text} variant={c.tone === "a" ? "tier-a" : c.tone === "b" ? "tier-b" : c.tone === "c" ? "tier-c" : c.tone === "hot" ? "hot" : "plain"}>{c.text}</Chip>
           ))}
+          {extraChips.map((t) => <Chip key={t}>{t}</Chip>)}
         </div>
         <p className="max-w-3xl text-lg text-muted">{kit.header.note}</p>
         {actions}
       </header>
       {kit.sections.map((s) => (
         <section key={s.id} aria-label={s.id} className="space-y-3">
-          {s.nodes.map((n, i) => <Node key={i} n={n} />)}
+          {s.nodes.map((n, i) => <Node key={i} n={n} onDirection={onDirection} />)}
         </section>
       ))}
     </article>

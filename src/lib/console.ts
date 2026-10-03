@@ -10,6 +10,8 @@ export interface ConsoleState {
   st: StateCode | "";
   listCity: string;
   freeCity: string;
+  /** The design direction of a built category kit. Absent until a kit is built with one. */
+  dir?: "a" | "b" | "c";
 }
 
 export const EMPTY_CONSOLE: ConsoleState = { cat: null, device: "desktop", st: "", listCity: "", freeCity: "" };
@@ -52,6 +54,7 @@ export function toQuery(s: ConsoleState): string {
   if (city) q.set("city", city);
   // The device is only written once there is something else to restore, so a bare URL stays bare.
   if (q.size > 0) q.set("dev", s.device);
+  if (q.size > 0 && s.dir) q.set("dir", s.dir);
   return q.toString();
 }
 
@@ -62,7 +65,9 @@ export function fromQuery(search: string, defaultDevice: Device = "desktop"): Co
   const city = q.get("city") ?? "";
   const validSt = st && st in STATES ? st : "";
   const listed = validSt ? STATES[validSt][1].split("|").includes(city) : false;
+  const dir = q.get("dir");
   return {
+    ...(dir === "a" || dir === "b" || dir === "c" ? { dir } : {}),
     cat: cat && CATS.some((c) => c.n === cat) ? cat : null,
     device: q.get("dev") === "mobile" ? "mobile" : q.get("dev") === "desktop" ? "desktop" : defaultDevice,
     st: validSt,
