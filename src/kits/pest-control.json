@@ -1,0 +1,850 @@
+{
+  "schemaVersion": 1,
+  "category": "Pest control",
+  "slug": "pest-control",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Clean family batch, book archetype override, licensed trade. Recurring plans against heavy big-brand advertising, so copy leans on local technicians and plain prep instructions. No product, chemical or brand names, no safety or health promises; licence numbers stay as bracketed placeholders. Fresh Fern fails CTA contrast. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Pests by season in this area",
+      "contains": "A month-by-month calendar of the ants, roaches, spiders, wasps, mosquitoes, rodents and termites the technicians see locally, with the treatment visit each one calls for",
+      "why": "People search the bug, not the company. A seasonal pest page matches what they found in the kitchen to a visit they can book."
+    },
+    {
+      "section": "Termite inspections and real estate reports",
+      "contains": "What a termite inspection looks at, the report format for home sales, bait versus liquid treatment explained in plain words, and how renewals and re-inspections work",
+      "why": "Termite work is the biggest ticket in pest control and the one buyers research hardest. Realtors and buyers need the report process spelled out."
+    },
+    {
+      "section": "Rodent exclusion and attic cleanup",
+      "contains": "Finding and sealing entry points, trapping, follow-up visits, attic insulation cleanup, and a written list of what was sealed",
+      "why": "Mouse and rat customers want them gone and kept out. Showing the sealing work separates real exclusion from a box of traps."
+    },
+    {
+      "section": "Preparing for a treatment with kids and pets",
+      "contains": "What to move, cover or put away before the visit, when people and pets can go back into treated rooms according to the label, and who to call with a question",
+      "why": "Parents and pet owners hesitate at this exact step. Plain prep instructions, without promises, remove the reason they put the booking off."
+    },
+    {
+      "section": "Re-service between plan visits",
+      "contains": "What happens if pests come back between scheduled visits, how to request a free re-service, response times the owner commits to, and what the plan covers",
+      "why": "Plan customers cancel when bugs come back and nobody returns. A written re-service policy answers that fear before they sign up."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C6",
+      "siteType": "local-conversion",
+      "name": "Local Tech, Today",
+      "heroLayout": "split-photo",
+      "mood": [
+        "direct",
+        "capable",
+        "clean"
+      ],
+      "bestFor": "Owner-technicians who need a first-visit price, a licence slot and a call button on the first screen",
+      "pairsWithTier": "starter",
+      "headlineSample": "Pest control in {City}, from a local licensed technician",
+      "whyItFits": "Cobalt Wire's crisp blue and neutral sans read clinical and careful without the cartoon-bug feel the big brands use."
+    },
+    {
+      "id": "b",
+      "themeId": "C8",
+      "siteType": "booking-first",
+      "name": "Book the Quarterly Plan",
+      "heroLayout": "card-stack",
+      "mood": [
+        "steady",
+        "reassuring",
+        "fresh"
+      ],
+      "bestFor": "Pest companies selling quarterly home protection plans with a first treatment booked online",
+      "pairsWithTier": "standard",
+      "headlineSample": "Quarterly pest control plans in {City}, booked in a minute",
+      "whyItFits": "The family combo, Fresh Fern, fails CTA contrast. Evergreen Trust keeps a green, outdoors feel with a deep green button that passes and a steady serif suited to a yearly plan."
+    },
+    {
+      "id": "c",
+      "themeId": "C5",
+      "siteType": "editorial-trust",
+      "name": "Termite Report Desk",
+      "heroLayout": "type-led",
+      "mood": [
+        "thorough",
+        "exact",
+        "calm"
+      ],
+      "bestFor": "Established firms selling termite inspections, real estate reports and multi-year termite renewals",
+      "pairsWithTier": "premium",
+      "headlineSample": "Termite inspections and treatment in {City}, reported in writing",
+      "whyItFits": "Counting House's bookish serif and deep red accent feel like a written report, which suits buyers, sellers and realtors reading termite findings."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your Google listing has strong pest control reviews and no Website button, so someone who just saw ants marching across the counter can't see a plan price or book a visit.",
+      "hook": "Open their Maps listing and confirm there is no Website button. Screenshot it for when they reply.",
+      "linkLine": "Where that ant search could land instead: {demo-link}"
+    },
+    {
+      "angle": "Facebook-only link",
+      "line": "The website link on your listing opens Facebook, where your quarterly pest plan is mentioned once in a post from spring. Plan buyers want the price and what's covered in one place.",
+      "hook": "Tap their Website link. Note where it lands and whether any plan details are visible.",
+      "linkLine": "Your pest plans and what they cover, on one page: {demo-link}"
+    },
+    {
+      "angle": "Dead free host",
+      "line": "The site on your listing is a free page with a pest list from years ago and a form that bounces. Families comparing exterminators read that as a company that may not call back.",
+      "hook": "Open the site and find one broken thing: a dead form, an old number, a builder banner. Note it.",
+      "linkLine": "The same exterminator, with a form that books: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "Your pest control site cut off the booking form on my phone. People look for an exterminator with a flashlight in one hand and a phone in the other.",
+      "hook": "Only if they have a site. Load it on your phone and note what breaks. Screenshot it for when they reply.",
+      "linkLine": "Pest control, rebuilt for a phone: {demo-link}"
+    },
+    {
+      "angle": "No first-visit price",
+      "line": "There's no price for a first pest treatment or a quarterly plan anywhere online, so the shopper picks the national brand ad with a number on it.",
+      "hook": "Check the listing, posts and any site for a published visit or plan price. If there is none, the angle holds.",
+      "linkLine": "A first-visit pest price and plan options: {demo-link}"
+    },
+    {
+      "angle": "Termite finds on Facebook",
+      "line": "Your posts of termite tubes and damaged sill plates are exactly what a nervous homeowner needs to see, and they sink under the feed in a week.",
+      "hook": "Find one termite, rodent or wasp nest post and name it if they reply.",
+      "linkLine": "A termite and pest gallery that stays put: {demo-link}"
+    },
+    {
+      "angle": "Reviews naming the technician",
+      "line": "Your reviews name the technician who explained everything and came back when the roaches did. That's what makes a pest plan feel safe, and it belongs beside the Book button.",
+      "hook": "Read their reviews and copy one phrase that names a tech or a re-service. Quote it back if they reply.",
+      "linkLine": "Your pest reviews next to the plan sign-up: {demo-link}"
+    },
+    {
+      "angle": "Spring swarm season",
+      "line": "Termite swarmers and ant trails show up with the first warm days, and the calls come all at once. A booking page with open inspection slots catches the ones who won't leave a voicemail.",
+      "hook": "Use from February to May. Check for a post about swarmers or ants.",
+      "linkLine": "Spring pest inspections booked online: {demo-link}"
+    },
+    {
+      "angle": "Autumn rodent season",
+      "line": "When the nights get cold, mice move into attics and garages, and people search 'rodent control' at midnight after hearing scratching. That's the moment a booking page wins.",
+      "hook": "Use from September to December. Look for rodent or exclusion work in their posts.",
+      "linkLine": "Rodent control booked the night they hear it: {demo-link}"
+    },
+    {
+      "angle": "Hiring a technician",
+      "line": "Saw you're hiring a pest control technician. Good applicants check whether the company looks steady before they train for the licence with you.",
+      "hook": "Only if they posted a hiring note or a sign on the truck. Note the date.",
+      "linkLine": "A pest company page with a technician hiring section: {demo-link}"
+    },
+    {
+      "angle": "Service area",
+      "line": "Your pest reviews come from {Neighborhood} and nearby towns, but nothing online says where your routes run, so people one town over call a national brand instead.",
+      "hook": "Find the furthest town named in their reviews or posts and use it.",
+      "linkLine": "A coverage page for your pest control routes: {demo-link}"
+    },
+    {
+      "angle": "Termite treatment payments",
+      "line": "A termite treatment is a big bill nobody planned for. If you offer payments or monthly plans for it, saying so on the termite page keeps people from waiting another season.",
+      "hook": "Only if they mention payment plans or monthly billing anywhere. Never name a lender.",
+      "linkLine": "Termite treatment with payment options explained: {demo-link}"
+    },
+    {
+      "angle": "Licensed and insured",
+      "line": "Treating inside someone's home is a trust decision. If you're state-licensed and insured, the licence belongs in writing beside the pest control price.",
+      "hook": "Look for a licence number or 'licensed and insured' on their listing, truck or posts. Use only what they publish, in [brackets] on the demo.",
+      "linkLine": "Licence and insurance on one pest page: {demo-link}"
+    },
+    {
+      "angle": "Neighbour referrals only",
+      "line": "When a neighbour posts 'who do you use for pest control', your name comes up over the national brands. The person who asked then looks you up and finds only a number.",
+      "hook": "Search their name in local Facebook groups or Nextdoor and find one recommendation. Quote it.",
+      "linkLine": "Where a recommended exterminator should land: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "Your {specific recent job} post is the kind of pest problem people panic about. It deserves a page that explains the treatment and lets the next homeowner book.",
+      "hook": "Pick their newest pest post and name it: the wasp nest, the termite damage, the attic.",
+      "linkLine": "That pest job on a page that books: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner} — that {specific recent job} you posted is real pest work.\n\nI looked for a site for {Business Name} and found the Facebook page, but no plan price and no way to book a first treatment. I put together a sample site with both, plus a termite page, with marked placeholders where your photos would go.\n\nWould it help if I sent it over?",
+    "dm2": "{Owner} — following up in case my last message got buried. Here's the sample pest control site for {Business Name}: {demo-link}\n\nIt has plan prices, online booking for a first treatment, a termite inspection page and plain prep instructions for families with kids and pets. If it's not useful, tell me and I'll leave you alone.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for independent pest control companies here in {City}. I sent you a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"Easy to miss on a route day. Short version: I built a sample site for {Business Name} with plan prices, online booking and a termite page, with marked placeholders where your photos would go. Can I text you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range}, then {Care Range} a month for hosting and changes. For a pest company your size I'd normally quote about {Build Price}. A few new quarterly plans cover it in a year.\"\n\"Can I walk you through it for ten minutes this week, after your route?\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. We start the day it clears.\"",
+    "objections": [
+      {
+        "objection": "The big brands outspend me everywhere.",
+        "handler": "\"You won't outspend them, and you don't need to. When a family compares, the local exterminator with a named technician, a clear plan price and real reviews looks like the safer call. The site is where they compare.\""
+      },
+      {
+        "objection": "I can't put prices online, every house is different.",
+        "handler": "\"Show a starting price for the first treatment and the quarterly plan, and say termites and rodents are quoted after an inspection. That's honest and it stops the calls that only wanted a number.\""
+      },
+      {
+        "objection": "My customers stay on the plan for years anyway.",
+        "handler": "\"That's the point. Every new plan customer is worth years of pest visits, so the site only needs to win a few to pay for itself.\""
+      },
+      {
+        "objection": "I'm worried about saying the wrong thing about chemicals.",
+        "handler": "\"So am I. The site says nothing beyond your label instructions and your own prep sheet, and you approve every word. No safety promises, ever.\""
+      },
+      {
+        "objection": "I already get leads from an app.",
+        "handler": "\"Those leads go to several pest companies at once. A plan customer who finds your own site signs up with you, and you don't pay per lead.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}, because it's plan pricing, booking, the termite page and the prep page. A few new quarterly pest plans cover it.\""
+      }
+    ],
+    "email": {
+      "subject": "Pest control site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for independent pest control companies around {City}. {Business Name} has good reviews, but someone who finds mice in the garage tonight can't see a plan price or book a treatment without calling.\n\nI built a sample first instead of asking for your time: quarterly plan prices, online booking for a first treatment, a termite inspection page and plain prep instructions for families, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and changes. If not, no problem, it comes down at the end of the month.\n\nWorth ten minutes on the phone this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build websites for pest control companies in {City}, and I made a sample site for {Business Name} with plan prices and online booking. I'll text you the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner} — I'm taking the {Business Name} pest control demo down on Friday to free up the space.\n\nWant me to leave it up? One word is fine either way.",
+    "nurture": "Hi {Owner} — rodent season is starting in {City}, and people search for help the night they hear scratching in the attic. Thought of you.\n\nThe site is still here whenever you want it, and nothing's changed on price. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to the yearly value of a few quarterly plans, never to one first treatment.",
+      "Plan sign-up and first-treatment booking are the core. Price termite, rodent and prep pages around them.",
+      "Price the termite page highest; it serves the biggest tickets and the real estate reports.",
+      "Every line about products or safety comes from the label and the owner's own sheet, and the owner signs it off; charge for that review time.",
+      "Never write a licence or certification the prospect hasn't published; leave a bracketed slot.",
+      "Keep monthly add-ons below one plan visit, so they never compete with a customer."
+    ],
+    "lineItems": [
+      {
+        "item": "Plan sign-up with first treatment booking",
+        "min": 400,
+        "max": 900,
+        "unit": "one-time",
+        "description": "Max with plan comparison, home size questions, card on file for recurring billing and a booked first visit.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Termite inspection and report page",
+        "min": 350,
+        "max": 750,
+        "unit": "per-page",
+        "description": "Max with a real estate request form, closing-date field, sample report layout and renewal terms explained.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Rodent exclusion page",
+        "min": 250,
+        "max": 550,
+        "unit": "per-page",
+        "description": "Max with an entry-point diagram, follow-up visit schedule and attic cleanup add-on request.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Treatment prep sheets by pest",
+        "min": 200,
+        "max": 500,
+        "unit": "one-time",
+        "description": "Max with printable sheets per treatment type, written from the owner's instructions and label directions and approved by them.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Seasonal pest calendar page",
+        "min": 200,
+        "max": 450,
+        "unit": "per-page",
+        "description": "Max with a pest-by-month calendar for the area and a booking link per pest.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Commercial pest service page",
+        "min": 300,
+        "max": 650,
+        "unit": "per-page",
+        "description": "Max with restaurant, warehouse and property manager sections, service logs on request and a walkthrough form.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Town pages for the routes (each)",
+        "min": 150,
+        "max": 350,
+        "unit": "per-page",
+        "description": "Max when each page names the neighbourhoods and the pests most asked about in that town.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Plan conversion campaign for one-time treatments",
+      "min": 200,
+      "max": 450,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Everyone who books a one-time ant or roach treatment gets a friendly note a few weeks later offering the quarterly pest plan with that visit credited.\"",
+      "when": "Month 2, once one-time treatments come through the site."
+    },
+    {
+      "name": "Google profile upkeep with pest finds",
+      "min": 120,
+      "max": 250,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A real wasp nest, termite tube or sealed entry point on your Google profile every week, so the listing looks like a working exterminator.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Review requests after each treatment",
+      "min": 79,
+      "max": 149,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A few days after each pest visit, a short note asks whether the problem is gone and invites a review, or a free re-service request first.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Spring termite and autumn rodent campaigns",
+      "min": 300,
+      "max": 600,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Two campaigns a year to past customers and their streets: termite inspections when swarmers appear and rodent exclusion when nights turn cold.\"",
+      "when": "February and September."
+    },
+    {
+      "name": "Realtor termite report sheet",
+      "min": 200,
+      "max": 450,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A one-page termite inspection sheet for agents, with turnaround times and how to request a report, so they send closings to you.\"",
+      "when": "Month 2."
+    },
+    {
+      "name": "Truck lettering and yard sign artwork",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A small yard sign after each pest treatment and lettering on the truck, with the plan sign-up address, so the street knows a local exterminator is nearby.\"",
+      "when": "Right after launch."
+    },
+    {
+      "name": "Spanish version of the plan and prep pages",
+      "min": 400,
+      "max": 800,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Plan prices, prep sheets and the booking page in Spanish too, approved by the owner, for customers who'd rather read pest instructions in their language.\"",
+      "when": "Month 3, if their customers or technicians speak Spanish."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Home inspectors who refer termite work",
+        "whoPays": "The inspector, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The buyers' inspector who hands you termite work on closings runs their own scheduling from a cell number. A small booking site for them is quick for me.\"",
+        "whyItWorks": "Inspectors run small shops, need sites and trust the pest company they send work to."
+      },
+      {
+        "route": "Wildlife removal operators",
+        "whoPays": "The wildlife company, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"When your rodent customers have raccoons or bats, who do you send them to? That wildlife company needs an urgent-request page.\"",
+        "whyItWorks": "Wildlife and pest companies hand each other jobs constantly, so the introduction is natural."
+      },
+      {
+        "route": "Restaurants on commercial pest routes",
+        "whoPays": "The restaurant",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The restaurant you treat every month has a menu stuck in a PDF. Your pest technician sees the owner more often than anyone.\"",
+        "whyItWorks": "Restaurant owners trust vendors who keep them inspection-ready, and they all need better sites."
+      },
+      {
+        "route": "Property managers with rental portfolios",
+        "whoPays": "The property manager",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The property manager who calls you for roach complaints between tenants still takes maintenance requests by email. A tenant request page is my next build.\"",
+        "whyItWorks": "Managers trust the exterminator who solves tenant complaints fast, and that trust gets a meeting."
+      },
+      {
+        "route": "Lawn care companies on the same streets",
+        "whoPays": "The lawn care company, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The lawn crew servicing your pest plan houses sells mowing by phone. Same recurring-plan layout, different service.\"",
+        "whyItWorks": "Both sell recurring plans to the same homeowners and swap referrals easily."
+      },
+      {
+        "route": "Insulation and attic contractors",
+        "whoPays": "The insulation contractor",
+        "min": 2000,
+        "max": 5000,
+        "unit": "one-time",
+        "pitchLine": "\"The attic contractor who replaces insulation after your rodent exclusions shows nothing online. Introduce me.\"",
+        "whyItWorks": "Attic jobs are bigger tickets, and the contractor relies on the pest company for referrals."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Findings drafter for home inspectors",
+        "whoPays": "The inspector, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"Inspectors talk through each room and get a draft report, with possible termite and pest items flagged for a licensed specialist.\"",
+        "whyItWorks": "Inspectors write reports nightly, and every termite flag becomes a referral for the client."
+      },
+      {
+        "route": "Urgent-call triage for wildlife operators",
+        "whoPays": "The wildlife company, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Callers describe the noise in the attic, and the assistant sorts likely rodent jobs for the pest company from raccoon and bat jobs for wildlife.\"",
+        "whyItWorks": "Both businesses get cleaner calls, and the pest client gets the rodent work back."
+      },
+      {
+        "route": "Inspection-ready log for restaurants",
+        "whoPays": "The restaurant, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"The kitchen manager asks what the last pest service found and when the next is, and the assistant answers from the service log ahead of an inspection.\"",
+        "whyItWorks": "Restaurants dread inspections, and the pest client is already writing the log."
+      },
+      {
+        "route": "Tenant complaint sorter for property managers",
+        "whoPays": "The property manager, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Tenant messages about bugs or mice get sorted by unit and urgency, and the exterminator gets the work order before the manager reads it.\"",
+        "whyItWorks": "Managers spend mornings forwarding complaints; cutting that is easy to justify."
+      },
+      {
+        "route": "Lawn plan quote helper for the lawn company",
+        "whoPays": "The lawn care company",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"Homeowners enter their address and yard size, and the lawn crew gets a draft plan quote, the same flow I built for the pest plan sign-up.\"",
+        "whyItWorks": "Already working for a business the lawn company trusts, so the pitch is short."
+      },
+      {
+        "route": "Attic job estimator for insulation contractors",
+        "whoPays": "The insulation contractor",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The pest technician's attic photos after a rodent exclusion become a draft insulation estimate the contractor can send the same day.\"",
+        "whyItWorks": "Both companies win the same attic, and the handoff is already happening by text."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Missed-call text-back with plan prices",
+      "kind": "automation",
+      "oneTimeMin": 0,
+      "oneTimeMax": 300,
+      "monthlyMin": 79,
+      "monthlyMax": 149,
+      "pitchLine": "\"You're under a crawlspace and miss the call. The caller gets a text with your pest plan prices and a booking link within a minute.\"",
+      "whenAndWhatItTakes": "Day 30. Needs the business number forwarded and wording they approve."
+    },
+    {
+      "name": "Visit-day text with prep reminder",
+      "kind": "automation",
+      "oneTimeMin": 150,
+      "oneTimeMax": 400,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"The day before each pest treatment, the customer gets the prep sheet for that service and a reminder to unlock the gate.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the calendar and the owner-approved prep sheets."
+    },
+    {
+      "name": "Plan customer portal",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Plan customers see their next pest visit, past service notes and a re-service button, and update their card without calling.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the plan customer list and billing setup."
+    },
+    {
+      "name": "Booking chat for 'what's this bug' questions",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"It answers 'do you treat carpenter ants' and 'what does the plan cover' from your own pest service list, then books the visit, and never gives safety advice.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the service list, plan terms and calendar. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Review reply drafts for pest visits",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 59,
+      "monthlyMax": 149,
+      "pitchLine": "\"A customer thanks the tech for clearing the wasp nest; a reply in your voice naming that pest job is waiting in the van.\"",
+      "whenAndWhatItTakes": "Month 2, alongside review requests. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Service log with photos and products used",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Technicians log each pest treatment with areas treated, products, amounts and photos, ready for the customer, the state record and the next visit.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their current paper log and state record-keeping rules."
+    },
+    {
+      "name": "Bug photo identifier for incoming requests",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"Customers send a picture of the bug, and the technician gets a likely pest and a suggested visit type to confirm before calling back.\"",
+      "whenAndWhatItTakes": "Month 4. Needs past requests with photos and the pest that turned out to be. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Termite renewal tracker",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 40,
+      "monthlyMax": 100,
+      "pitchLine": "\"Every termite customer's renewal date, inspection history and bait station checks, with renewals sent before the coverage lapses.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their termite customer list and renewal terms."
+    },
+    {
+      "name": "After-hours receptionist for pest emergencies",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 199,
+      "monthlyMax": 449,
+      "pitchLine": "\"Someone calls at night about wasps by the front door or mice in the kitchen, and the receptionist takes the details and books the first exterminator slot.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the calendar, services and the owner's approved urgent-call wording. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Route planner for quarterly plan visits",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Quarterly pest visits grouped by neighbourhood and week, so each technician's day is tight and nobody misses a plan customer.\"",
+      "whenAndWhatItTakes": "Month 4. Needs plan addresses, visit lengths and technician list."
+    },
+    {
+      "name": "Technician applicant screener",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"Applicants for pest technician jobs answer questions about licensing, driving and crawlspaces, and you only call the ones who fit.\"",
+      "whenAndWhatItTakes": "Any month they're hiring. Needs must-haves, pay and training plan. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Re-service request follow-up",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"When a plan customer asks for a re-service, they get a time slot back right away and a check-in a week later asking if the pests are gone.\"",
+      "whenAndWhatItTakes": "Month 4, after the portal. Needs the re-service policy and calendar."
+    },
+    {
+      "name": "Commercial account service records",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Restaurants and warehouses download their pest service records and trap maps before an inspection, without calling the office.\"",
+      "whenAndWhatItTakes": "Month 5, once they hold a few commercial accounts. Needs the service log."
+    },
+    {
+      "name": "Customer message sorter for pest jobs",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Re-service requests, reschedules and 'are the ants supposed to be back' messages get sorted and drafted for the owner to approve.\"",
+      "whenAndWhatItTakes": "Month 5. Needs the business text line or inbox. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Job costing per plan route",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"See which pest plans and neighbourhoods make money once drive time, product and re-services are counted.\"",
+      "whenAndWhatItTakes": "Month 6. Needs a few months of service logs and product costs."
+    },
+    {
+      "name": "Termite inspection report drafter",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"The inspector talks through the crawlspace and attic, and a draft termite report with findings and photos is ready for the licensed inspector to check and sign.\"",
+      "whenAndWhatItTakes": "Month 5. Needs past reports and the required report format. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Plan cancellation save note",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"When a plan customer cancels, they get a polite note offering a free re-service first, and the owner sees why they left.\"",
+      "whenAndWhatItTakes": "Month 5. Needs the cancellation flow and an offer the owner is happy to make."
+    },
+    {
+      "name": "Technician knowledge base from the owner's procedures",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"A new technician asks how the owner handles a German roach job or a crawlspace entry, and gets the owner's written pest procedure, not a guess.\"",
+      "whenAndWhatItTakes": "Month 6. Needs written procedures and the owner's approval of every answer. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Realtor termite request board",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 40,
+      "monthlyMax": 100,
+      "pitchLine": "\"Agents request a termite inspection for a listing, see when it's scheduled and download the report the moment it's signed.\"",
+      "whenAndWhatItTakes": "Month 5, once agents order reports through the site. Needs agent contacts and the report workflow."
+    },
+    {
+      "name": "Bait station check map",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 40,
+      "monthlyMax": 100,
+      "pitchLine": "\"Each property's termite and rodent stations on a simple map, with check dates and findings, so a new tech finds every station.\"",
+      "whenAndWhatItTakes": "Month 5. Needs station locations for current accounts."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the plan portal for independent pest companies",
+      "whoPays": "Pest control companies, monthly per account",
+      "min": 49,
+      "max": 199,
+      "unit": "monthly",
+      "pitchLine": "\"I built a plan portal for one independent exterminator. Every small pest company loses plan customers who can't reach anyone for a re-service.\"",
+      "whyItWorks": "The first client paid for the re-service and billing workflow, which every plan-based pest company shares."
+    },
+    {
+      "route": "License plan sign-up and service logs to a pest supply distributor",
+      "whoPays": "The distributor, annually",
+      "min": 5000,
+      "max": 20000,
+      "unit": "per-year",
+      "pitchLine": "\"Give every independent pest operator who buys from you a plan sign-up page and a service log, and they keep ordering through you.\"",
+      "whyItWorks": "Distributors compete for small operators, and a daily tool beats a rebate."
+    },
+    {
+      "route": "State pest management association toolkit",
+      "whoPays": "The association",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer members a site template with plan pricing, prep sheets and a licence slot, written to avoid the safety claims regulators dislike.\"",
+      "whyItWorks": "Associations care about compliant marketing and need member benefits; one agreement reaches many owners."
+    },
+    {
+      "route": "Regional pest company roll-up groups",
+      "whoPays": "The acquiring group, per acquired brand",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Each exterminator you acquire keeps its local name. One termite page, one plan sign-up and one portal template across all of them.\"",
+      "whyItWorks": "Roll-ups buy local brands and need them rebuilt fast and consistently."
+    },
+    {
+      "route": "White-label pest control template for agencies",
+      "whoPays": "The agency, per site",
+      "min": 500,
+      "max": 1200,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency builds pest sites from scratch and risks a bad safety claim. License my template with approved prep pages and plan pricing.\"",
+      "whyItWorks": "Agencies sell the client; you sell the compliant, already-built part."
+    },
+    {
+      "route": "Real estate brokerages' termite report desk",
+      "whoPays": "The brokerage, annually",
+      "min": 2000,
+      "max": 6000,
+      "unit": "per-year",
+      "pitchLine": "\"Every listing that needs a termite inspection gets ordered, tracked and filed from one desk, with vetted local inspectors.\"",
+      "whyItWorks": "Brokerages chase reports on every closing and pay to stop the phone tag."
+    },
+    {
+      "route": "Apartment operators' pest work order board",
+      "whoPays": "The apartment operator, annually",
+      "min": 3000,
+      "max": 10000,
+      "unit": "per-year",
+      "pitchLine": "\"Every unit's pest complaints, treatments and follow-ups on one board across all your properties, with service records for audits.\"",
+      "whyItWorks": "Operators juggle pest complaints constantly and need records; the exterminator client already makes them."
+    },
+    {
+      "route": "Restaurant groups' inspection-ready vendor records",
+      "whoPays": "The restaurant group, annually",
+      "min": 2000,
+      "max": 8000,
+      "unit": "per-year",
+      "pitchLine": "\"Pest service records, trap maps and corrective actions for every location in one place before the health inspector arrives.\"",
+      "whyItWorks": "Groups with several kitchens need consistent records, and the pest client already produces them."
+    },
+    {
+      "route": "The same pest control stack in the next metro",
+      "whoPays": "New pest clients in a new metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I build for one independent exterminator per area, and {City} has one. The neighbouring county is still open.\"",
+      "whyItWorks": "Non-competing geography lets you reuse the plan pages, the prep sheets and the proof."
+    },
+    {
+      "route": "Home warranty companies' pest add-on vendors",
+      "whoPays": "The warranty company, annually",
+      "min": 3000,
+      "max": 10000,
+      "unit": "per-year",
+      "pitchLine": "\"Members who add pest coverage get booked with vetted local exterminators from one page, with the service log attached to their account.\"",
+      "whyItWorks": "Warranty firms need reliable local vendors and records; independents need the volume."
+    },
+    {
+      "route": "Licensing exam prep for new technicians",
+      "whoPays": "Pest companies or the training provider, per seat",
+      "min": 99,
+      "max": 299,
+      "unit": "one-time",
+      "pitchLine": "\"New pest technicians study for the state exam with practice questions built from the public study material, not guesses.\"",
+      "whyItWorks": "Every company trains new techs for the licence and hiring is their hardest problem."
+    },
+    {
+      "route": "Rescue stalled pest company software builds",
+      "whoPays": "The stranded pest control company",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "pitchLine": "\"Paid for a pest plan portal or service log that never shipped? I've finished that exact build for an exterminator already.\"",
+      "whyItWorks": "Stranded owners already decided to buy; they want someone who has finished one."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Pest control site plus care plan, one contract",
+      "min": 1500,
+      "max": 2500,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The pest site and the care plan go on one contract, so a new plan price or a seasonal banner is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Review requests after each treatment",
+      "min": 79,
+      "max": 149,
+      "unit": "monthly",
+      "trigger": "A month live, and the first plan sign-up has come through the site.",
+      "line": "\"That plan customer read your reviews before choosing a local exterminator. Let's add one after every pest visit.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "Plan conversion campaign for one-time treatments",
+      "min": 200,
+      "max": 450,
+      "unit": "monthly",
+      "trigger": "Booking data shows one-time pest treatments that never became plans.",
+      "line": "\"Those one-time ant jobs already trust you. Offer the plan with the visit credited.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Service log with photos and products used",
+      "min": 1000,
+      "max": 2500,
+      "unit": "one-time",
+      "trigger": "They mention paper logs, a state record request or a customer asking what was sprayed.",
+      "line": "\"Your pest records live on paper in the truck. Put them on the phone and the customer sees them too.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Plan customer portal",
+      "min": 1200,
+      "max": 3000,
+      "unit": "one-time",
+      "trigger": "Re-service requests and card updates keep arriving by phone.",
+      "line": "\"Plan customers calling for re-services can do it themselves. The portal keeps them from cancelling.\""
+    },
+    {
+      "rung": 6,
+      "day": 150,
+      "offer": "Spring termite and autumn rodent campaigns",
+      "min": 300,
+      "max": 600,
+      "unit": "one-time",
+      "trigger": "Six weeks before swarmer season or the first cold nights.",
+      "line": "\"Termite swarmers are weeks away. Let's be the exterminator past customers think of first.\""
+    },
+    {
+      "rung": 7,
+      "day": 210,
+      "offer": "Termite inspection report drafter",
+      "min": 1000,
+      "max": 2500,
+      "unit": "one-time",
+      "trigger": "Real estate termite requests pass a few a month and reports pile up at night.",
+      "line": "\"You're writing termite reports after dinner. Talk them through in the crawlspace and just check them.\""
+    }
+  ]
+}

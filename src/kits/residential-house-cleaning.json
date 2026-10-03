@@ -1,0 +1,859 @@
+{
+  "schemaVersion": 1,
+  "category": "Residential house cleaning",
+  "slug": "residential-house-cleaning",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Clean family batch, book archetype. Small per-visit tickets that only pay off as recurring plans, so products stay cheap and schedule-shaped. Fresh Fern fails CTA contrast. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "What each clean includes",
+      "contains": "A room-by-room checklist for a standard clean, a deep clean and a move-out clean: baseboards, inside the oven, inside the fridge, ceiling fans, interior windows, and which ones are add-ons",
+      "why": "People compare house cleaners by what gets cleaned, not by adjectives. A checklist settles the 'does that include the oven' question before they book."
+    },
+    {
+      "section": "Move-in and move-out cleaning",
+      "contains": "Empty-home pricing by bedroom count, the landlord walkthrough checklist, appliance interiors, cabinet wipe-outs, and how keys or lockbox codes are handed over",
+      "why": "Tenants and sellers buy a move-out clean on a deadline. They want a fixed price and a date, and they book whoever shows both first."
+    },
+    {
+      "section": "Your first clean and home access",
+      "contains": "Why the first visit runs longer, how to prep, pets at home, entry codes and lockboxes, supplies the team brings, fragrance-free options, and whether the same cleaner comes back",
+      "why": "The first booking is the nervous one. Answering access, pets and supplies ahead of time removes the reasons people stall at the Book button."
+    },
+    {
+      "section": "Re-clean promise and missed-spot reporting",
+      "contains": "How to report a missed spot within a day, a short form that takes a note and a picture, and the free re-clean of that area at the next opening",
+      "why": "Clients drop a house cleaner over one missed bathroom that nobody fixed. A written re-clean promise answers that fear before the first visit."
+    },
+    {
+      "section": "Short-term rental turnovers",
+      "contains": "Turnover cleaning between guests, linen changes, restocking, a checklist the host can see, same-day turnaround windows and per-turnover pricing by bedroom",
+      "why": "Hosts book cleaning by checkout time and need the turnover done before the next check-in. A separate page wins a buyer the family page doesn't speak to."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C22",
+      "siteType": "local-conversion",
+      "name": "Price in Two Taps",
+      "heroLayout": "split-photo",
+      "mood": [
+        "friendly",
+        "bright",
+        "tidy"
+      ],
+      "bestFor": "Solo cleaners and small teams who need the bed-and-bath price on screen before anyone calls",
+      "pairsWithTier": "starter",
+      "headlineSample": "House cleaning in {City}, priced before you book",
+      "whyItFits": "Peach Sorbet's soft rounded type reads like a friendly neighbour, and the coral button sits easily next to a price table."
+    },
+    {
+      "id": "b",
+      "themeId": "C26",
+      "siteType": "booking-first",
+      "name": "Book the Recurring Clean",
+      "heroLayout": "card-stack",
+      "mood": [
+        "fresh",
+        "calm",
+        "organised"
+      ],
+      "bestFor": "Teams of a few cleaners selling weekly and biweekly plans with real open slots",
+      "pairsWithTier": "standard",
+      "headlineSample": "Weekly and biweekly house cleaning in {City}, booked online",
+      "whyItFits": "The family combo, Fresh Fern, fails CTA contrast. Sky Kite keeps the same soft rounded type and a fresh light page, with a blue Book button that passes."
+    },
+    {
+      "id": "c",
+      "themeId": "C40",
+      "siteType": "premium-brand",
+      "name": "Home Care Studio",
+      "heroLayout": "full-bleed-photo",
+      "mood": [
+        "quiet",
+        "careful",
+        "refined"
+      ],
+      "bestFor": "Established cleaning companies serving larger homes with detail cleans and standing weekly visits",
+      "pairsWithTier": "premium",
+      "headlineSample": "Careful, detailed house cleaning for {City} homes",
+      "whyItFits": "Driftwood's warm neutrals and old-style serif suit larger homes where the buyer wants discretion and care more than speed."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your Google listing has lovely house cleaning reviews and no Website button, so someone who wants a price for a three-bedroom clean has to call and hope you pick up.",
+      "hook": "Open their Maps listing and confirm there is no Website button. Screenshot it for when they reply.",
+      "linkLine": "Here's where that house cleaning search could land instead: {demo-link}"
+    },
+    {
+      "angle": "Facebook-only link",
+      "line": "The website link on your listing opens Facebook, and the newest cleaning special there is months old. A first-time client can't tell whether that price still stands.",
+      "hook": "Tap their Website link. Note where it lands and the date of the newest price or special post.",
+      "linkLine": "A cleaning page where the price is always current: {demo-link}"
+    },
+    {
+      "angle": "Dead free host",
+      "line": "The site on your listing is a free page with a builder banner and a contact form that goes nowhere. Someone ready to book a deep clean gives up right there.",
+      "hook": "Open the site and find one broken thing: a dead form, an expired banner, an old number. Write it down.",
+      "linkLine": "The same cleaning business, with a form that books: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "I opened your cleaning site on my phone and the price table ran off the side of the screen. People shopping for a house cleaner at night are usually on the couch with a phone.",
+      "hook": "Only if they have a site. Load it on your phone and note what breaks. Screenshot it for when they reply.",
+      "linkLine": "Your house cleaning prices, readable on a phone: {demo-link}"
+    },
+    {
+      "angle": "No instant price",
+      "line": "There's no price anywhere for a standard clean, so a family comparing three maid services picks the one that shows a number for their bedroom and bathroom count.",
+      "hook": "Check the listing, posts and any site for a single published price. If there is none, the angle holds.",
+      "linkLine": "A bed-and-bath price for every house cleaning visit: {demo-link}"
+    },
+    {
+      "angle": "Before-and-after posts",
+      "line": "Your before-and-after kitchen posts from deep cleans are the best proof a cleaner can show, and they sink down the Facebook feed within a week.",
+      "hook": "Find one before-and-after post and note the room. Name it if they reply.",
+      "linkLine": "A deep clean gallery that stays put: {demo-link}"
+    },
+    {
+      "angle": "Reviews naming the cleaner",
+      "line": "Your reviews mention your cleaners by name and say the house smelled great when they got home. Those belong right next to a Book button, not only on a map.",
+      "hook": "Read their reviews and copy one phrase that names a cleaner or a room. Quote it back if they reply.",
+      "linkLine": "Your cleaning reviews beside the booking page: {demo-link}"
+    },
+    {
+      "angle": "Spring cleaning rush",
+      "line": "Spring deep cleaning requests pile up fast, and the people who won't leave a voicemail book the house cleaner whose open slots they can see.",
+      "hook": "Use from late February to April. Check whether they posted about spring openings or a waitlist.",
+      "linkLine": "Spring deep cleans, bookable tonight: {demo-link}"
+    },
+    {
+      "angle": "Holiday guests",
+      "line": "The weeks before Thanksgiving are when people panic about guests and search for a one-time house cleaning. Plenty of them stay on a biweekly plan afterwards if booking was easy.",
+      "hook": "Use from mid-October through November. Look for a holiday post or a note about filling up.",
+      "linkLine": "A holiday clean that turns into a recurring one: {demo-link}"
+    },
+    {
+      "angle": "Hiring cleaners",
+      "line": "Saw you're hiring house cleaners. Good applicants look you up before they apply, and a page with pay, hours and a short form gets more of them through the door.",
+      "hook": "Only if they posted a hiring note or a sign. Note the date and the pay if they listed it.",
+      "linkLine": "A cleaning company page with a hiring section: {demo-link}"
+    },
+    {
+      "angle": "Neighbourhoods served",
+      "line": "Your reviews come from {Neighborhood} and the streets around it, but nothing online says which areas your cleaning teams cover, so people a few miles out assume you won't come.",
+      "hook": "Find the neighbourhoods named in their reviews and pick the one furthest from their base.",
+      "linkLine": "A coverage page for your house cleaning routes: {demo-link}"
+    },
+    {
+      "angle": "Move-out season",
+      "line": "Leases turn over in late spring and summer, and tenants want a fixed price for an empty-apartment move-out clean plus a date. They book whoever shows both.",
+      "hook": "Use from May to August, or any time they post a move-out clean. Note the bedroom count.",
+      "linkLine": "Move-out cleaning with a fixed price and a date: {demo-link}"
+    },
+    {
+      "angle": "Insured and background-checked",
+      "line": "Handing a house cleaner a key is a trust decision. If your team is insured and background-checked, that belongs in writing beside the Book button.",
+      "hook": "Look for 'insured' or 'background checked' on their listing or posts. Never claim what you didn't see.",
+      "linkLine": "Insurance and background checks on one cleaning page: {demo-link}"
+    },
+    {
+      "angle": "Neighbour recommendations",
+      "line": "Sounds like most of your cleaning clients come from neighbours tagging you in local groups. Each of them searches your name next and finds a phone number and nothing else.",
+      "hook": "Search their business name in local Facebook groups or Nextdoor and find one recommendation thread. Quote it.",
+      "linkLine": "Where a recommended house cleaner should land: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "That {specific recent job} you posted is exactly the kind of clean people search for. It deserves a page where the next person can book the same clean.",
+      "hook": "Pick their newest cleaning post and name it: the room, the clean type, the neighbourhood if shown.",
+      "linkLine": "That house cleaning job on a page that books: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner} — that {specific recent job} you posted is lovely cleaning work.\n\nI looked for a site for {Business Name} and found the Facebook page, but no way to see a price or book a clean. I put together a sample site with a bed-and-bath price list and weekly and biweekly plans, with marked placeholders where your photos would go.\n\nWant me to send it over?",
+    "dm2": "{Owner} — following up in case my last message got buried. Here's the sample house cleaning site for {Business Name}: {demo-link}\n\nIt shows a price for each bedroom and bathroom count, what a standard and a deep clean include, and a booking page with open slots. If it's not useful, say so and I'll leave you alone.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for house cleaning companies here in {City}. I sent you a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"No worries, you're probably mid-clean. Short version: I built a sample site for {Business Name} where people see a price for their bedroom and bathroom count and book a slot, with marked placeholders where your photos would go. Can I text you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range}, then {Care Range} a month for hosting and changes. For a cleaning business your size I'd normally quote about {Build Price}. One new biweekly client pays for it.\"\n\"Can I walk you through it for ten minutes between cleans this week?\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. We start the day it clears.\"",
+    "objections": [
+      {
+        "objection": "All my clients come from referrals.",
+        "handler": "\"That means your cleaning is good. The referred person still looks you up before they let a stranger in with a key. The site is what they find, with your price and your re-clean promise.\""
+      },
+      {
+        "objection": "Every house is different, I can't put prices online.",
+        "handler": "\"You don't have to price every house. A starting price by bedroom and bathroom count, with 'final price confirmed after the first clean', stops the shoppers who only wanted a number from calling you.\""
+      },
+      {
+        "objection": "I'm fully booked.",
+        "handler": "\"Then the site does two jobs: it fills cancellations from a waitlist, and it lets you raise prices for new clients without awkward phone calls. Full now is the best time to build it.\""
+      },
+      {
+        "objection": "My clients just text me to reschedule.",
+        "handler": "\"Keep that for the regulars. The site is for the new person who'd never text a number they found on a flyer. They want to see the price and press a button.\""
+      },
+      {
+        "objection": "I already pay for a lead app.",
+        "handler": "\"Those leads get sent to four cleaners at once. People who find your own house cleaning site only get you, and you don't pay per lead.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}, because it's the price list, the booking page and the recurring plans. One new biweekly house cleaning client covers that.\""
+      }
+    ],
+    "email": {
+      "subject": "Booking site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for house cleaning companies around {City}. {Business Name} has great reviews, but someone who finds you tonight can't see a price or book a clean without calling.\n\nI built a sample first instead of asking for your time: a price list by bedroom and bathroom count, what each clean includes, weekly and biweekly plans, and a booking page, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and changes. If not, no problem, it comes down at the end of the month.\n\nWorth ten minutes on the phone this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build websites for house cleaning companies in {City}, and I made a sample booking site for {Business Name} with your prices up front. I'll text you the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner} — I'm taking the {Business Name} cleaning demo down on Friday to free up the space.\n\nWant me to leave it up? One word is fine either way.",
+    "nurture": "Hi {Owner} — holiday guest cleans in {City} start booking around now, and the people who book a one-time clean are the easiest to move to biweekly. Thought of you.\n\nThe booking site is still here whenever you want it, and nothing's changed on price. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to a few months of one biweekly client, never to the price of a single deep clean.",
+      "The bed-and-bath price list is the core sale. Price booking, plans and add-on pages around it.",
+      "Charge more when the price list handles add-ons like inside the oven, inside the fridge and interior windows.",
+      "Price move-out and rental turnover pages one at a time; each brings a different buyer.",
+      "Keep every monthly item below the price of one recurring clean, so it never feels like losing a client.",
+      "A hiring page is often the fastest first sale in this trade. Keep it small and quick to deliver."
+    ],
+    "lineItems": [
+      {
+        "item": "Bed-and-bath price list with add-ons",
+        "min": 400,
+        "max": 900,
+        "unit": "one-time",
+        "description": "Max with frequency discounts, a square-footage surcharge, pet and add-on pricing, and a first-clean premium shown upfront.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Online booking with deposit and entry notes",
+        "min": 300,
+        "max": 800,
+        "unit": "one-time",
+        "description": "Max when it captures entry codes, pets and supply preferences, takes a card on file and syncs to the owner's calendar.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Move-out cleaning page",
+        "min": 250,
+        "max": 500,
+        "unit": "per-page",
+        "description": "Max with empty-home pricing by bedroom count, a landlord checklist download and a date picker for the lease end.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Rental turnover page",
+        "min": 250,
+        "max": 550,
+        "unit": "per-page",
+        "description": "Max with per-turnover pricing, linen and restocking options and a recurring turnover request for hosts.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Cleaner hiring page and applicant form",
+        "min": 400,
+        "max": 900,
+        "unit": "one-time",
+        "description": "Max with a two-language form, availability by day, transport questions and texts to the owner for each applicant.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Neighbourhood pages (each)",
+        "min": 150,
+        "max": 350,
+        "unit": "per-page",
+        "description": "Max when each page names the streets served, the cleaning days for that area and reviews from clients there.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Gift-a-clean page",
+        "min": 200,
+        "max": 500,
+        "unit": "one-time",
+        "description": "Max with gift card sales for new parents, recovery after surgery and holidays, plus a redeem-and-book flow.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "One-time to biweekly conversion campaign",
+      "min": 200,
+      "max": 400,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Everyone who books a one-time deep clean gets a friendly note a week later offering the same cleaner every other week.\"",
+      "when": "Month 2, once one-time bookings come through the site."
+    },
+    {
+      "name": "Google profile upkeep with weekly clean posts",
+      "min": 120,
+      "max": 250,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A fresh before-and-after from a real clean on your Google profile every week, so the listing looks as busy as your calendar.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Review requests after each clean",
+      "min": 79,
+      "max": 149,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"The evening after each house cleaning visit, the client gets a short thank-you with a review link and a way to flag a missed spot first.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Spring and holiday deep clean campaigns",
+      "min": 300,
+      "max": 600,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Two short campaigns a year, spring deep cleaning and holiday guest cleans, each pointing at open slots instead of a phone number.\"",
+      "when": "Late February and mid-October."
+    },
+    {
+      "name": "Car magnet and door hanger artwork",
+      "min": 150,
+      "max": 400,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Door hangers for the neighbours of every house you clean, with the price-list address on them, so the street sees who just cleaned next door.\"",
+      "when": "Right after launch."
+    },
+    {
+      "name": "Team photo morning",
+      "min": 300,
+      "max": 700,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"One morning photographing your cleaners in uniform at a real client's kitchen, so the people you send are the faces on the site.\"",
+      "when": "Month 2, at a client home that agrees in writing."
+    },
+    {
+      "name": "Move-out cleaning mailer for leasing offices",
+      "min": 250,
+      "max": 600,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A one-page move-out cleaning sheet for the leasing offices near you, so tenants on their way out get your price and date picker.\"",
+      "when": "April, before lease turnover season."
+    },
+    {
+      "name": "Spanish version of the booking pages",
+      "min": 400,
+      "max": 800,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"The price list, the cleaning checklist and the booking page in Spanish too, for clients and for the cleaners you're hiring.\"",
+      "when": "Month 3, if their team or clients speak Spanish."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "The carpet cleaner they refer clients to",
+        "whoPays": "The carpet cleaning company, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"When a house cleaning client asks about stained carpet, who do you send them to? That company needs a site as much as you did.\"",
+        "whyItWorks": "Carpet cleaners and house cleaners pass clients back and forth, and the introduction comes with a warm word."
+      },
+      {
+        "route": "Realtors who need move-out and listing cleans",
+        "whoPays": "The realtor or brokerage",
+        "min": 1000,
+        "max": 2500,
+        "unit": "one-time",
+        "pitchLine": "\"The agent whose listings you clean before photos needs a vendor page for sellers. Your cleaning company belongs on it, and I can build it.\"",
+        "whyItWorks": "Agents recommend vendors on every listing and pay for pages that make them look organised."
+      },
+      {
+        "route": "Small landlords and property managers",
+        "whoPays": "The property manager",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The property manager who books your move-out cleans still takes maintenance requests by voicemail. I fix that next.\"",
+        "whyItWorks": "Managers trust the cleaner who gets units rent-ready on time, and that trust gets you a meeting."
+      },
+      {
+        "route": "Short-term rental hosts and co-hosts",
+        "whoPays": "The host, per property",
+        "min": 600,
+        "max": 1500,
+        "unit": "one-time",
+        "pitchLine": "\"The hosts you turn over between guests need a direct-booking page for their rental. Your cleaning schedule already proves you know their calendar.\"",
+        "whyItWorks": "Hosts want guests booking direct, and the cleaner is the vendor they trust most."
+      },
+      {
+        "route": "Remodelers who need post-construction cleans",
+        "whoPays": "The remodeling contractor",
+        "min": 2000,
+        "max": 5000,
+        "unit": "one-time",
+        "pitchLine": "\"The remodeler who calls you for dust cleanup after a kitchen job has a gallery stuck on Facebook. Introduce me.\"",
+        "whyItWorks": "Remodelers have bigger budgets and already rely on the cleaner to make the reveal look finished."
+      },
+      {
+        "route": "Professional organizers in the same homes",
+        "whoPays": "The organizer, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The organizer who works in your house cleaning clients' closets books by phone too. Same booking layout, different service.\"",
+        "whyItWorks": "Organizers and cleaners share clients and refer each other, so the pitch is half done."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Turnover scheduler for rental hosts",
+        "whoPays": "The host or co-host, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"Each new guest booking becomes a turnover clean on the cleaner's calendar, with checkout time and linen count, before the host lifts a finger.\"",
+        "whyItWorks": "Hosts lose sleep over turnovers. The cleaning client already lives inside that problem."
+      },
+      {
+        "route": "Listing-prep assistant for realtors",
+        "whoPays": "The realtor, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"Sellers answer a few questions and get a room-by-room prep list, with the deep clean booked for the day before the photographer.\"",
+        "whyItWorks": "Agents want listings ready on time, and the house cleaner is the first vendor on the list."
+      },
+      {
+        "route": "Move-out instructions assistant for property managers",
+        "whoPays": "The property manager, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Departing tenants ask what counts as clean, and the assistant answers from the manager's move-out checklist and offers the cleaning slot.\"",
+        "whyItWorks": "Managers field the same deposit questions every month. Cutting those calls is easy to justify."
+      },
+      {
+        "route": "Photo quote helper for the carpet cleaner",
+        "whoPays": "The carpet cleaning company",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"Your house cleaning clients send a picture of the stain and the room size, and the carpet cleaner gets a draft quote to approve.\"",
+        "whyItWorks": "Built for a business the cleaning client already refers to, so the introduction carries weight."
+      },
+      {
+        "route": "Punch-list helper for remodelers",
+        "whoPays": "The remodeler",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"Walk the finished kitchen, talk through what's left, and get a punch list with the final clean scheduled last.\"",
+        "whyItWorks": "Remodelers hate the last week of a job. The cleaner sees that week every time."
+      },
+      {
+        "route": "Senior home-care agencies' visit notes",
+        "whoPays": "The home-care agency, monthly",
+        "min": 200,
+        "max": 500,
+        "unit": "monthly",
+        "pitchLine": "\"The agency whose clients you clean for turns caregiver voice notes into tidy visit notes, with a house cleaning request flagged when it's needed.\"",
+        "whyItWorks": "Agencies share homes with the cleaner and need tidy notes. The cleaner's introduction opens the door."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Missed-call text-back with the price list",
+      "kind": "automation",
+      "oneTimeMin": 0,
+      "oneTimeMax": 300,
+      "monthlyMin": 79,
+      "monthlyMax": 149,
+      "pitchLine": "\"You're mid-clean with gloves on, the phone rings, and the caller gets a text with your bed-and-bath prices and a booking link within a minute.\"",
+      "whenAndWhatItTakes": "Day 30. Needs the business number forwarded and wording they approve."
+    },
+    {
+      "name": "Day-before reminder with entry and pet notes",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 500,
+      "monthlyMin": 49,
+      "monthlyMax": 99,
+      "pitchLine": "\"The day before each clean, the client confirms the entry code and whether the dog is home, so your cleaner isn't stuck on the porch.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the booking calendar and a template per client type."
+    },
+    {
+      "name": "Skip-a-week portal for recurring clients",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Recurring clients skip a week, move a clean or add an oven clean themselves, inside your rules, instead of texting you at night.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their recurring client list, skip and cancellation rules and add-on prices."
+    },
+    {
+      "name": "Booking chat that quotes from the price list",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"It answers 'do you clean inside the fridge' and 'what's a three-bed, two-bath' from your own house cleaning prices, then offers the next open slot.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the price list, checklist and booking rules. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Review reply and referral request drafts",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 59,
+      "monthlyMax": 149,
+      "pitchLine": "\"Every cleaning review gets a warm reply in your voice, and happy regulars get a note asking if a neighbour needs a cleaner too.\"",
+      "whenAndWhatItTakes": "Month 2, alongside review requests. Needs a few past replies to learn the tone. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Room-by-room checklist app with photo proof",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Cleaners tick off each room on their phone and snap the finished bathroom, so a 'you missed the shower' text gets answered with proof.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their standard and deep clean checklists and one team willing to test it."
+    },
+    {
+      "name": "Cleaner applicant screener in two languages",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"Applicants for house cleaning jobs answer your questions in English or Spanish, and you only call the ones with a car and the right days free.\"",
+      "whenAndWhatItTakes": "Any month they post a hiring note. Needs their must-haves, pay and schedule. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Client home notes file",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 40,
+      "monthlyMax": 100,
+      "pitchLine": "\"Entry codes, pets, products to avoid and 'don't touch the piano' for every home you clean, on the cleaner's phone instead of the owner's memory.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the client list and the owner's notes, plus a rule for who sees entry codes."
+    },
+    {
+      "name": "After-hours booking receptionist",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 199,
+      "monthlyMax": 449,
+      "pitchLine": "\"Someone calls at 9pm about a move-out clean, and the receptionist takes the bedroom count and lease date and books the slot.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the calendar, prices and coverage area. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Cleaner route and day planner",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Which team cleans which house on which day, grouped by neighbourhood, so nobody drives across town between two cleans.\"",
+      "whenAndWhatItTakes": "Month 4, once they run two or more teams. Needs addresses, team list and visit lengths."
+    },
+    {
+      "name": "Photo estimate for deep and move-out cleans",
+      "kind": "ai",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"People send a few pictures of the oven, the bathrooms and the floors, and you get a draft deep clean price to approve before you reply.\"",
+      "whenAndWhatItTakes": "Month 4. Needs past deep clean prices with notes on condition. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Lapsed-client win-back",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 700,
+      "monthlyMin": 49,
+      "monthlyMax": 99,
+      "pitchLine": "\"A recurring cleaning client who hasn't booked in five weeks gets a friendly check-in with their usual day still open.\"",
+      "whenAndWhatItTakes": "Month 3. Needs booking history and an offer the owner is happy to make."
+    },
+    {
+      "name": "Tip and pay tracker per cleaner",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 40,
+      "monthlyMax": 100,
+      "pitchLine": "\"Each cleaner sees their hours, their cleans and the tips clients left, so payday questions stop landing on the owner.\"",
+      "whenAndWhatItTakes": "Month 5. Needs pay rules and how tips are collected today."
+    },
+    {
+      "name": "Client message sorter",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Reschedules, add-on requests and 'the cleaner missed the stairs' messages get sorted and drafted, so the owner answers ten texts in two minutes.\"",
+      "whenAndWhatItTakes": "Month 5. Needs the shared business inbox or text line. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Job costing per house",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"See which recurring houses take longer than the price allows, so the owner raises the right cleaning prices instead of all of them.\"",
+      "whenAndWhatItTakes": "Month 6. Needs a few months of visit times from the checklist app and current prices."
+    },
+    {
+      "name": "Cleaner training assistant from the owner's checklist",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"New cleaners ask the phone how the owner wants a glass shower or a marble counter done, and get the owner's answer in their language.\"",
+      "whenAndWhatItTakes": "Month 6. Needs the written cleaning standards and the owner's approval of every answer. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Gift card and referral credit ledger",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 30,
+      "monthlyMax": 90,
+      "pitchLine": "\"Gift cleans and refer-a-neighbour credits tracked in one place, applied automatically at the next booking.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their gift card rules and referral offer."
+    },
+    {
+      "name": "Open-slot filler for the waitlist",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 99,
+      "monthlyMax": 199,
+      "pitchLine": "\"When a recurring client cancels Thursday's clean, the waitlist nearest that street gets a text offering the slot, written in your voice.\"",
+      "whenAndWhatItTakes": "Month 6, once a waitlist exists. Needs the calendar and waitlist. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Supply and laundry tracker per team",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 30,
+      "monthlyMax": 90,
+      "pitchLine": "\"Each cleaning team marks low spray bottles, cloths and vacuum bags, and the owner sees one shopping list on Friday.\"",
+      "whenAndWhatItTakes": "Month 6. Needs the team kit list and who restocks."
+    },
+    {
+      "name": "Post-clean survey and re-clean request",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 700,
+      "monthlyMin": 49,
+      "monthlyMax": 99,
+      "pitchLine": "\"Two hours after each clean the client rates the visit, and a low score books a free re-clean instead of a bad review.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the re-clean promise wording and the booking calendar."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the skip-a-week portal for house cleaning companies",
+      "whoPays": "Cleaning companies, monthly per account",
+      "min": 39,
+      "max": 149,
+      "unit": "monthly",
+      "pitchLine": "\"I built a recurring-client portal for one house cleaning company. Every maid service has clients texting to skip a week.\"",
+      "whyItWorks": "The first client paid for the build and taught you the skip and cancellation rules every cleaning business has."
+    },
+    {
+      "route": "License the bed-and-bath price list to a cleaning supply distributor",
+      "whoPays": "The distributor, annually",
+      "min": 3000,
+      "max": 12000,
+      "unit": "per-year",
+      "pitchLine": "\"Give every house cleaner who buys from you a price list and booking page, with your supply reorder built in.\"",
+      "whyItWorks": "Distributors want small cleaning companies loyal, and a tool they use daily beats a coupon."
+    },
+    {
+      "route": "Cleaning business owners' association toolkit",
+      "whoPays": "The association",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer every member maid service a booking site template with a re-clean promise page as a membership benefit.\"",
+      "whyItWorks": "Associations need renewal reasons, and one agreement reaches many owners at once."
+    },
+    {
+      "route": "Maid service franchise groups",
+      "whoPays": "The franchise group, per territory",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "pitchLine": "\"Each of your house cleaning territories needs its own price list, neighbourhood pages and a booking calendar that routes to the right owner.\"",
+      "whyItWorks": "One contract, many territories, one template built from a real independent's site."
+    },
+    {
+      "route": "White-label cleaning site template for agencies",
+      "whoPays": "The agency, per site",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency keeps getting house cleaning clients and building from scratch. License my booking template with the bed-and-bath pricing done.\"",
+      "whyItWorks": "Agencies own the client relationship; you sell them the part you've already got right."
+    },
+    {
+      "route": "Move-out cleaning vendor board for property management firms",
+      "whoPays": "The management firm",
+      "min": 4000,
+      "max": 12000,
+      "unit": "one-time",
+      "pitchLine": "\"Every unit that turns over gets a move-out clean booked from one board, across all the cleaning vendors you use.\"",
+      "whyItWorks": "Large firms chase turnover cleans every month, and the cleaning client's workflow proves you understand it."
+    },
+    {
+      "route": "Turnover board for short-term rental co-host networks",
+      "whoPays": "The co-host company, monthly",
+      "min": 200,
+      "max": 600,
+      "unit": "monthly",
+      "pitchLine": "\"Every property you co-host, every cleaner, every checkout, on one turnover board that the house cleaners actually like using.\"",
+      "whyItWorks": "Co-hosts manage many cleaners across many rentals and pay to stop the group-text chaos."
+    },
+    {
+      "route": "The same house cleaning stack in the next metro",
+      "whoPays": "New cleaning clients in a new metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I build for one house cleaning company per area, and {City} is taken. Your side of the metro is still open.\"",
+      "whyItWorks": "Non-competing geography lets you reuse the price list, the booking flow and the proof."
+    },
+    {
+      "route": "Templates for cleaning business coaches",
+      "whoPays": "The coach or course, per student or flat fee",
+      "min": 1500,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Your students all need a house cleaning site with prices and booking. Bundle my template into the course.\"",
+      "whyItWorks": "Coaches sell to new cleaning owners who all need the same site, and the coach brings the buyers."
+    },
+    {
+      "route": "Move-in cleaning for corporate relocation firms",
+      "whoPays": "The relocation firm, annually",
+      "min": 1500,
+      "max": 5000,
+      "unit": "per-year",
+      "pitchLine": "\"Every employee you move into a rental needs a move-in clean. One booking page with vetted cleaners in each city.\"",
+      "whyItWorks": "Relocation firms buy convenience for employees and pay for vendor pages that save their coordinators calls."
+    },
+    {
+      "route": "Resident cleaning booking for senior living communities",
+      "whoPays": "The community operator",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Residents and their families book an apartment clean from one page, and your house cleaning partner gets the schedule.\"",
+      "whyItWorks": "Communities want to offer more services without hiring, and a trusted cleaner makes the offer real."
+    },
+    {
+      "route": "Rescue half-built cleaning booking tools",
+      "whoPays": "The stranded cleaning company",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "pitchLine": "\"Someone started a booking or skip-a-week tool for your cleaning business and vanished. I've shipped that exact flow before.\"",
+      "whyItWorks": "Stranded owners already decided to buy. They want someone who has finished one."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "House cleaning booking site plus care plan, one contract",
+      "min": 1200,
+      "max": 2200,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The cleaning site and the care plan go on one contract, so a new price or a holiday closure is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Review requests after each clean",
+      "min": 79,
+      "max": 149,
+      "unit": "monthly",
+      "trigger": "A month live, and at least one new client has booked through the site.",
+      "line": "\"That first online booking was a stranger. The next one comes faster when the reviews show up after every clean.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "One-time to biweekly conversion campaign",
+      "min": 200,
+      "max": 400,
+      "unit": "monthly",
+      "trigger": "Booking data shows several one-time deep cleans that never came back.",
+      "line": "\"Those deep clean clients already let you in. A note offering the same cleaner every other week brings a few of them back.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Skip-a-week portal for recurring clients",
+      "min": 1000,
+      "max": 2500,
+      "unit": "one-time",
+      "trigger": "They complain about evening texts from clients moving their cleans.",
+      "line": "\"Those texts about skipping a week can go to a page that follows your cleaning rules.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Cleaner applicant screener in two languages",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "trigger": "They post a hiring note or turn down new clients for lack of cleaners.",
+      "line": "\"You're turning away house cleaning work for lack of hands. Let's fill the applicant list first.\""
+    },
+    {
+      "rung": 6,
+      "day": 120,
+      "offer": "After-hours booking receptionist",
+      "min": 1000,
+      "max": 2500,
+      "unit": "one-time",
+      "trigger": "The missed-call log shows evening calls about move-out or deep cleans going unanswered.",
+      "line": "\"Those evening calls are move-out cleans on a deadline. The receptionist books them while you're off.\""
+    },
+    {
+      "rung": 7,
+      "day": 180,
+      "offer": "Cleaner route and day planner",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "trigger": "They add a second or third cleaning team.",
+      "line": "\"Two teams crossing town between cleans costs you an hour a day. Group the houses by neighbourhood.\""
+    }
+  ]
+}

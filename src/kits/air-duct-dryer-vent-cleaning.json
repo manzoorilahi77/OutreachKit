@@ -1,0 +1,842 @@
+{
+  "schemaVersion": 1,
+  "category": "Air duct & dryer vent cleaning",
+  "slug": "air-duct-dryer-vent-cleaning",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Clean family batch, book archetype. Safety-driven, coupon-scarred trade, so copy leans on upfront scope and camera proof, never on health or fire claims. No equipment brands. Fresh Fern fails CTA contrast. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Dryer vent warning signs",
+      "contains": "Clothes needing two cycles, a hot laundry room, lint at the outside flap, a burning smell, a bird nest in the vent hood, and what to do before the visit",
+      "why": "Most dryer vent bookings start with a symptom, not a search for a service. A page that names the symptom is the one they book from."
+    },
+    {
+      "section": "Whole-system duct cleaning scope",
+      "contains": "Supply and return runs, registers, trunk lines, the blower compartment, what counts as one system, and what is quoted separately like coil cleaning",
+      "why": "Buyers have seen cheap whole-house coupons that turn into a bigger bill. A written scope is how an honest duct cleaner wins that buyer."
+    },
+    {
+      "section": "Camera inspection and video report",
+      "contains": "Before-and-after camera footage of the ducts and the dryer vent run, sent to the homeowner the same day, with notes on anything that needs repair",
+      "why": "People can't see inside their ducts. Footage they can watch on their phone is the proof that the work was done."
+    },
+    {
+      "section": "Why the duct price doesn't change at the door",
+      "contains": "Per-vent and per-system pricing explained, what can raise a price and how it's approved first, and a plain note about bait coupons",
+      "why": "Coupon pricing has made people suspicious of this trade. Saying exactly how the price is set removes the main reason they hesitate."
+    },
+    {
+      "section": "Long runs, roof terminations and rerouting",
+      "contains": "Dryer vents that exit through the roof or run long in townhomes and condos, rigid duct replacement, bird guards, and how roof access is handled",
+      "why": "Upper-floor laundry and roof vents are the hard jobs other companies skip. Showing them wins condo owners and property managers."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C10",
+      "siteType": "local-conversion",
+      "name": "Straight Price",
+      "heroLayout": "split-photo",
+      "mood": [
+        "plain",
+        "honest",
+        "steady"
+      ],
+      "bestFor": "One-van dryer vent and duct cleaners who need an upfront price and a call button on the first screen",
+      "pairsWithTier": "starter",
+      "headlineSample": "Dryer vent and air duct cleaning in {City}, priced upfront",
+      "whyItFits": "Steel Invoice's cool grey-blue and plain grotesque type look like a quote, not a coupon, which is exactly the trust this trade needs."
+    },
+    {
+      "id": "b",
+      "themeId": "C26",
+      "siteType": "booking-first",
+      "name": "Book the Vent Visit",
+      "heroLayout": "card-stack",
+      "mood": [
+        "airy",
+        "clear",
+        "friendly"
+      ],
+      "bestFor": "Teams selling dryer vent and duct visits with a calendar to fill and yearly reminders to send",
+      "pairsWithTier": "standard",
+      "headlineSample": "Book dryer vent cleaning in {City} online, price shown first",
+      "whyItFits": "The family combo, Fresh Fern, fails CTA contrast. Sky Kite keeps the same soft rounded type and an airy light page, with a blue Book button that passes."
+    },
+    {
+      "id": "c",
+      "themeId": "C44",
+      "siteType": "editorial-trust",
+      "name": "Shown on Camera",
+      "heroLayout": "type-led",
+      "mood": [
+        "candid",
+        "informed",
+        "serious"
+      ],
+      "bestFor": "Established duct cleaning companies that lead with camera reports, written scopes and multi-unit work",
+      "pairsWithTier": "premium",
+      "headlineSample": "Air duct cleaning in {City}, filmed before and after",
+      "whyItFits": "Vermilion Press's editorial serif and red accent read like an honest report, which suits a company selling proof over promises."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your Google listing has good dryer vent reviews and no Website button, so someone whose towels need two cycles to dry has nowhere to see what you charge.",
+      "hook": "Open their Maps listing and confirm there is no Website button. Screenshot it for when they reply.",
+      "linkLine": "Where a dryer vent search could land instead: {demo-link}"
+    },
+    {
+      "angle": "Facebook-only link",
+      "line": "The website link on your listing opens Facebook, and the duct cleaning price there is in a post from last year. People who have been burned by coupons want the current price in writing.",
+      "hook": "Tap their Website link and note where it lands and the date of the newest price post.",
+      "linkLine": "Your duct cleaning price, current and in writing: {demo-link}"
+    },
+    {
+      "angle": "Dead free host",
+      "line": "The site on your listing is a free page with a broken contact form and no list of what a duct cleaning includes. A careful homeowner reads that as the coupon crowd.",
+      "hook": "Open the site and find one broken or missing thing: a dead form, no scope, an old number. Note it.",
+      "linkLine": "A duct cleaning page with the scope written out: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "Your vent cleaning site wouldn't load past the header on my phone. People look this up standing next to a hot dryer, phone in hand.",
+      "hook": "Only if they have a site. Load it on your phone and note what breaks. Screenshot it for when they reply.",
+      "linkLine": "Vent cleaning, rebuilt for a phone: {demo-link}"
+    },
+    {
+      "angle": "No upfront price",
+      "line": "There's no price anywhere for a dryer vent cleaning or a whole-system duct cleaning. Buyers who have seen bait coupons trust the company that prints its real number.",
+      "hook": "Check the listing, posts and any site for a published price. If there is none, the angle holds.",
+      "linkLine": "Upfront dryer vent and duct prices: {demo-link}"
+    },
+    {
+      "angle": "Camera footage with no home",
+      "line": "Your before-and-after camera clips from inside the ducts are the best proof this trade has, and they vanish from the feed in a few days.",
+      "hook": "Find one camera or before-and-after clip on their pages. Mention the house or the run if they reply.",
+      "linkLine": "Your duct camera footage on a page that stays: {demo-link}"
+    },
+    {
+      "angle": "Reviews about faster drying",
+      "line": "Your reviews say the dryer works like new after your visit. That's the sentence a person with damp towels is searching for, and it should sit next to your dryer vent price.",
+      "hook": "Read their reviews and copy one phrase about drying time or lint. Quote it back if they reply.",
+      "linkLine": "Your dryer vent reviews beside the Book button: {demo-link}"
+    },
+    {
+      "angle": "Heating season start",
+      "line": "The first cold week, people switch the furnace on, smell the dust and search for air duct cleaning. The company with a booking page that week gets the calendar.",
+      "hook": "Use in September and October, before heating season. Check for a seasonal post.",
+      "linkLine": "Air duct cleaning booked before the furnace kicks on: {demo-link}"
+    },
+    {
+      "angle": "Home sale inspections",
+      "line": "When a home inspector flags a dryer vent during a sale, the seller has a few days to fix it. A dryer vent page with a quick booking catches those deadlines.",
+      "hook": "Use if they mention realtors, inspections or closings in posts or reviews.",
+      "linkLine": "Dryer vent fixes for inspection deadlines: {demo-link}"
+    },
+    {
+      "angle": "Hiring a technician",
+      "line": "Saw you're hiring a duct cleaning technician. Applicants check whether the company looks solid before they climb into somebody's attic for you.",
+      "hook": "Only if they posted a hiring note or a sign on the van. Note the date.",
+      "linkLine": "A duct cleaning page with a hiring section: {demo-link}"
+    },
+    {
+      "angle": "Service area",
+      "line": "Your reviews come from {Neighborhood} and towns around it, but nothing online lists where your vent cleaning van goes, so people at the edge assume it's too far.",
+      "hook": "Find the furthest town named in their reviews or posts and use it.",
+      "linkLine": "A coverage page for your vent cleaning van: {demo-link}"
+    },
+    {
+      "angle": "Condo and roof vents",
+      "line": "Upper-floor condos with dryer vents through the roof are the jobs most vent cleaners skip. If you do them, a page saying so wins every condo board in town.",
+      "hook": "Look for a roof, condo or townhome job in their posts. Only use this if they do roof access.",
+      "linkLine": "Roof and condo dryer vents on one page: {demo-link}"
+    },
+    {
+      "angle": "Insured in the attic and on the roof",
+      "line": "Letting a crew into the attic and onto the roof for a vent cleaning is a trust call. If you're insured, that belongs on the page right next to the price.",
+      "hook": "Look for 'insured' on their listing, van or posts. Never claim what you didn't see.",
+      "linkLine": "Insurance and scope on one vent cleaning page: {demo-link}"
+    },
+    {
+      "angle": "HVAC referrals only",
+      "line": "Sounds like a lot of your duct cleaning comes from HVAC companies passing jobs on. That's great until one of them buys their own duct equipment.",
+      "hook": "Look for posts or reviews that mention an HVAC company or a furnace tech. Quote it.",
+      "linkLine": "Where referred duct cleaning customers should land: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "That {specific recent job} you posted is exactly what a worried homeowner wants to see from a vent cleaner. It belongs on a page they can book from.",
+      "hook": "Pick their newest duct or dryer vent post and name it: the lint pile, the bird nest, the long run.",
+      "linkLine": "That vent cleaning job on a page that books: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner} — that {specific recent job} you posted is the kind of vent work people never see.\n\nI looked for a site for {Business Name} and found the Facebook page, but no upfront price and no written scope, which is what people burned by duct coupons look for. I put together a sample site with both, with marked placeholders where your photos would go.\n\nWant me to send it over?",
+    "dm2": "{Owner} — following up in case my last message got buried. Here's the sample dryer vent and duct cleaning site for {Business Name}: {demo-link}\n\nIt has upfront prices, a whole-system scope, a dryer vent warning-signs page and online booking. If it's not useful, tell me and I'll leave you alone.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for duct and dryer vent cleaners here in {City}. I sent you a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"Easy to miss from an attic. Short version: I built a sample site for {Business Name} with upfront prices, a written duct cleaning scope and online booking, with marked placeholders where your photos would go. Can I text you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range}, then {Care Range} a month for hosting and changes. For a vent cleaning company your size I'd normally quote about {Build Price}, a handful of whole-system jobs.\"\n\"Can I walk you through it for ten minutes this week?\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. We start the day it clears.\"",
+    "objections": [
+      {
+        "objection": "I don't want to post prices, the coupon guys undercut me.",
+        "handler": "\"You're not competing with the coupon. You're the company that says what the full duct cleaning costs and what's included. The careful buyers are looking for exactly that.\""
+      },
+      {
+        "objection": "My work comes from HVAC companies.",
+        "handler": "\"Keep those. The site is for the homeowner the HVAC tech mentioned you to, who looks you up before calling, and for the day one of those companies starts doing duct cleaning themselves.\""
+      },
+      {
+        "objection": "Dryer vents are too cheap to bother marketing.",
+        "handler": "\"The dryer vent is the door. That same house needs the ducts done, a bird guard, maybe a reroute, and a reminder every year. The site sells all of it.\""
+      },
+      {
+        "objection": "I'm too busy in the fall.",
+        "handler": "\"That's why I built it first. I need about twenty minutes and your price list. Your busy season is when an online booking page saves you the most calls.\""
+      },
+      {
+        "objection": "I tried a website before and got nothing.",
+        "handler": "\"Was there a price on it, and a list of what the duct cleaning includes? That's what's different here. People in this trade buy from whoever looks honest first.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}, because it's upfront prices, the scope page, the warning-signs page and booking. A handful of whole-system duct jobs covers it.\""
+      }
+    ],
+    "email": {
+      "subject": "Vent cleaning site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for duct and dryer vent cleaners around {City}. {Business Name} has good reviews, but someone whose dryer is running hot tonight can't see a price or book a visit without calling.\n\nI built a sample first instead of asking for your time: upfront dryer vent and duct prices, a written whole-system scope, a warning-signs page and online booking, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and changes. If not, no problem, it comes down at the end of the month.\n\nWorth ten minutes on the phone this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build websites for dryer vent and duct cleaners in {City}, and I made a sample site for {Business Name} with upfront prices and booking. I'll text you the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner} — I'm taking the {Business Name} vent cleaning demo down on Friday to free up the space.\n\nWant me to leave it up? One word is fine either way.",
+    "nurture": "Hi {Owner} — heating season is starting in {City}, which is when people smell dust from the vents and go looking for a duct cleaner. Thought of you.\n\nThe site is still here whenever you want it, and nothing's changed on price. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to a handful of whole-system duct jobs, never to the dryer vent price.",
+      "The upfront price page and the written scope are the core. Everything else is added around them.",
+      "Price the camera report feature by how the footage gets to the homeowner: a link per job costs more to set up than a gallery.",
+      "Charge separately for condo and multi-unit pages; property managers are a different buyer with a different form.",
+      "Keep monthly items small next to one dryer vent visit, so the owner never weighs them against a job.",
+      "Never write health or fire-risk claims into the copy you sell; price the warning-signs page as plain symptoms and steps."
+    ],
+    "lineItems": [
+      {
+        "item": "Upfront price page with per-vent and per-system rates",
+        "min": 300,
+        "max": 700,
+        "unit": "one-time",
+        "description": "Max with per-vent, per-system and dryer vent prices, what raises a price and how changes get approved before work starts.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Camera footage link per job",
+        "min": 400,
+        "max": 900,
+        "unit": "one-time",
+        "description": "Max when each job gets a private page with before-and-after clips, notes and a share button the homeowner can send to a buyer.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Condo and multi-unit request page",
+        "min": 300,
+        "max": 700,
+        "unit": "per-page",
+        "description": "Max with unit counts, roof access questions, building contacts and a request form for property managers and boards.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Dryer vent reroute and roof termination page",
+        "min": 250,
+        "max": 500,
+        "unit": "per-page",
+        "description": "Max with diagrams of common runs, bird guard options and a photo upload for the current vent hood.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Realtor and inspection deadline page",
+        "min": 200,
+        "max": 450,
+        "unit": "per-page",
+        "description": "Max with an inspection-report upload, closing-date field and a receipt the seller can send to the buyer's agent.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Town pages for the van's range (each)",
+        "min": 150,
+        "max": 350,
+        "unit": "per-page",
+        "description": "Max when each page names the neighbourhoods covered and the housing types common there, like townhomes or older ductwork.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Google profile upkeep with lint and duct before-and-afters",
+      "min": 120,
+      "max": 250,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A real lint pile or duct camera still on your Google profile every week, so the listing looks like the honest vent cleaner, not the coupon ad.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Review requests that mention the dryer",
+      "min": 79,
+      "max": 149,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A day after each dryer vent visit, a short note asks how the laundry dried. Those answers are the reviews the next person searches for.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Heating season duct cleaning campaign",
+      "min": 300,
+      "max": 600,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"One campaign before the furnace comes on, to past customers and their streets, pointing at open duct cleaning days.\"",
+      "when": "Early September."
+    },
+    {
+      "name": "Home inspector and realtor leave-behind",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A one-page dryer vent sheet inspectors can hand to sellers when a vent gets flagged, with your booking address and a fast-turnaround promise.\"",
+      "when": "Month 2."
+    },
+    {
+      "name": "Van wrap and magnet artwork",
+      "min": 200,
+      "max": 600,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Your van sits in a driveway for hours during a duct cleaning. Artwork that shows the booking address turns that wait into a sign.\"",
+      "when": "Right after launch, coordinated with their wrap shop."
+    },
+    {
+      "name": "Camera footage reel for social media",
+      "min": 300,
+      "max": 700,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A month of duct camera clips cut into short before-and-after reels, captioned, ready to post. Nobody scrolls past a duct full of debris.\"",
+      "when": "Month 2, once they share a batch of clips."
+    },
+    {
+      "name": "Condo board and HOA mailer",
+      "min": 250,
+      "max": 600,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A short dryer vent letter to condo boards and HOA managers, offering a building-wide vent day at a set price per unit.\"",
+      "when": "Month 3, if they do roof or upper-floor vents."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "HVAC companies that refer duct work",
+        "whoPays": "The HVAC company",
+        "min": 2500,
+        "max": 7000,
+        "unit": "one-time",
+        "pitchLine": "\"The HVAC company that sends you duct cleaning jobs has a furnace tune-up page from years ago. Introduce me.\"",
+        "whyItWorks": "HVAC firms have larger budgets, and the duct cleaner's introduction comes from someone who makes them look good."
+      },
+      {
+        "route": "Home inspectors who flag dryer vents",
+        "whoPays": "The inspector, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The inspector who keeps flagging dryer vents for you books inspections by phone. A booking site with sample reports fixes that.\"",
+        "whyItWorks": "Inspectors are one-person shops who need a site and already trust the vent cleaner they recommend."
+      },
+      {
+        "route": "Appliance repair techs",
+        "whoPays": "The appliance repair shop, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The appliance tech who tells customers their dryer vent is clogged and sends them to you needs a booking page for repairs.\"",
+        "whyItWorks": "They meet the same dryers first and pass the vent work on. The introduction is natural."
+      },
+      {
+        "route": "Condo associations and their managers",
+        "whoPays": "The association or management company",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The condo manager who books your building-wide dryer vent day still sends notices on paper. A resident page fixes that.\"",
+        "whyItWorks": "Associations trust the vendor who handled their roof vents, and they pay for fewer resident calls."
+      },
+      {
+        "route": "Realtors who need fast inspection fixes",
+        "whoPays": "The realtor or brokerage",
+        "min": 1000,
+        "max": 2500,
+        "unit": "one-time",
+        "pitchLine": "\"The agent who calls you when a dryer vent gets flagged before closing needs a vendor page for sellers. You're on it, and I build it.\"",
+        "whyItWorks": "Agents recommend vendors on every sale and pay for pages that keep closings on time."
+      },
+      {
+        "route": "Chimney sweeps working the same houses",
+        "whoPays": "The chimney company, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The chimney sweep who sends you duct and dryer vent work books autumn inspections by phone. Same booking layout.\"",
+        "whyItWorks": "Sweeps and vent cleaners share seasonal customers and swap referrals already."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Maintenance plan assistant for the HVAC company",
+        "whoPays": "The HVAC company, monthly",
+        "min": 200,
+        "max": 500,
+        "unit": "monthly",
+        "pitchLine": "\"Plan members ask when their furnace tune-up is due or whether they need duct cleaning, and the assistant answers from the HVAC company's plan rules.\"",
+        "whyItWorks": "HVAC firms run plans with many members and pay to cut the reminder calls."
+      },
+      {
+        "route": "Report summary helper for home inspectors",
+        "whoPays": "The inspector, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"Inspectors talk through findings room by room, and get a draft summary with dryer vent and duct items flagged for the right trade.\"",
+        "whyItWorks": "Inspectors write reports every night. The vent cleaner gets the referrals the summary flags."
+      },
+      {
+        "route": "Resident notice assistant for condo managers",
+        "whoPays": "The management company, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Residents ask when the dryer vent crew comes to their floor, and the assistant answers from the building schedule and logs who needs access.\"",
+        "whyItWorks": "Managers dread access scheduling, and the vent cleaner already knows that pain."
+      },
+      {
+        "route": "Error-code helper for appliance techs",
+        "whoPays": "The appliance repair shop",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"Customers describe the dryer problem, and the helper sorts likely vent issues from repair calls before the tech drives out.\"",
+        "whyItWorks": "Built for a business that already sends the vent cleaner work, so the introduction carries weight."
+      },
+      {
+        "route": "Repair request sorter for listing agents",
+        "whoPays": "The realtor, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"Agents drop in an inspection report and get the repair items sorted by trade, with dryer vent and duct work sent to a trusted vendor.\"",
+        "whyItWorks": "Agents juggle repair lists on every sale, and the vent cleaner is the first vendor in the tool."
+      },
+      {
+        "route": "Autumn booking assistant for the chimney sweep",
+        "whoPays": "The chimney company, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"It books chimney inspections in the autumn rush, and offers a dryer vent visit to the same house when it fits.\"",
+        "whyItWorks": "Both trades peak in the same months, and the shared customer is worth more to both."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Missed-call text-back with vent prices",
+      "kind": "automation",
+      "oneTimeMin": 0,
+      "oneTimeMax": 300,
+      "monthlyMin": 79,
+      "monthlyMax": 149,
+      "pitchLine": "\"You're up in an attic and miss a call. The caller gets a text with your dryer vent and duct prices and a booking link within a minute.\"",
+      "whenAndWhatItTakes": "Day 30. Needs the business number forwarded and wording they approve."
+    },
+    {
+      "name": "Yearly dryer vent reminder",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 500,
+      "monthlyMin": 49,
+      "monthlyMax": 99,
+      "pitchLine": "\"A year after each dryer vent cleaning, the customer gets a text with their address filled in and next week's open slots.\"",
+      "whenAndWhatItTakes": "Month 2. Needs a list of past jobs with dates."
+    },
+    {
+      "name": "Camera report page per job",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 40,
+      "monthlyMax": 120,
+      "pitchLine": "\"The tech uploads the duct camera clips from the van, and the homeowner gets a private before-and-after page before the crew leaves the street.\"",
+      "whenAndWhatItTakes": "Month 2. Needs how they capture footage today and one tech to test it."
+    },
+    {
+      "name": "Booking chat that answers from your duct scope",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"It answers 'is the blower included' and 'do you do roof dryer vents' from your own scope and prices, then books the visit.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the scope, prices and calendar. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Review reply drafts for vent jobs",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 59,
+      "monthlyMax": 149,
+      "pitchLine": "\"Every dryer vent and duct review gets a reply in your voice that thanks them by name and mentions the job, ready to approve.\"",
+      "whenAndWhatItTakes": "Month 2, alongside review requests. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Per-vent quote builder",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 40,
+      "monthlyMax": 100,
+      "pitchLine": "\"Count the supply and return vents on the walkthrough, tick the add-ons, and the duct cleaning quote is on the customer's phone before you leave the porch.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their per-vent rates, add-ons and approval rules."
+    },
+    {
+      "name": "After-hours receptionist for hot-dryer calls",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 199,
+      "monthlyMax": 449,
+      "pitchLine": "\"Someone calls at night about a dryer running hot, hears the owner's approved first steps, and gets booked for the first dryer vent slot.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the calendar, prices and the owner's approved safety wording. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Multi-unit vent day scheduler",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Residents pick a time slot for their unit's dryer vent cleaning, and the crew gets a floor-by-floor run sheet for the building.\"",
+      "whenAndWhatItTakes": "Month 4, once a condo or apartment client signs. Needs unit lists and building access rules."
+    },
+    {
+      "name": "Inspection report reader",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"A seller uploads the home inspection, and the reader pulls out the dryer vent and duct items and drafts a quote for you to approve.\"",
+      "whenAndWhatItTakes": "Month 4. Needs past inspection-driven jobs and prices. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Job ticket with photos and sign-off",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 40,
+      "monthlyMax": 100,
+      "pitchLine": "\"The vent tech logs crushed ducts, missing bird guards and approved extras with pictures, and the customer signs before anything changes on the price.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their walkthrough checklist and change-approval wording."
+    },
+    {
+      "name": "Technician applicant screener",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"Applicants for duct cleaning tech jobs answer questions about attics, ladders and early starts, and you only call the ones who fit.\"",
+      "whenAndWhatItTakes": "Any month they're hiring. Needs must-haves, pay and schedule. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Van route planner by town",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Dryer vent and duct jobs grouped by town and day, so the van fits three vent calls around one whole-system job without backtracking.\"",
+      "whenAndWhatItTakes": "Month 5. Needs job addresses, job lengths and van count."
+    },
+    {
+      "name": "Inspection-deadline follow-up",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"When a seller books a dryer vent fix for a closing, the receipt and the camera link go to the agent automatically the same day.\"",
+      "whenAndWhatItTakes": "Month 3, after the realtor page. Needs the booking form's closing-date and agent fields."
+    },
+    {
+      "name": "Customer message sorter for vent jobs",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Reschedules, 'is this normal lint' questions and price checks get sorted and drafted, so the owner answers vent messages from the van in minutes.\"",
+      "whenAndWhatItTakes": "Month 5. Needs the business inbox or text line. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Job costing per whole-system duct job",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"See which duct cleaning jobs make money once hours, travel and filters are counted, so the per-vent price is set from real numbers.\"",
+      "whenAndWhatItTakes": "Month 6. Needs a few months of job tickets and costs."
+    },
+    {
+      "name": "Duct scope explainer for new techs",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"New techs ask how the owner wants a flex duct run or a roof vent handled, and get the owner's written answer on site.\"",
+      "whenAndWhatItTakes": "Month 6. Needs written procedures and the owner's approval of every answer. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Bird nest and vent hood season alert",
+      "kind": "automation",
+      "oneTimeMin": 150,
+      "oneTimeMax": 400,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Each spring, past dryer vent customers without a bird guard get a short note offering one before nesting season.\"",
+      "whenAndWhatItTakes": "Month 6, in late winter. Needs job tickets showing which homes have guards."
+    },
+    {
+      "name": "Property manager portal for vent work orders",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Managers request a dryer vent cleaning for a unit, see when it's done and download the camera report for their records.\"",
+      "whenAndWhatItTakes": "Month 6. Needs their multi-unit clients and how they order work today."
+    },
+    {
+      "name": "Service history lookup by address",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 30,
+      "monthlyMax": 90,
+      "pitchLine": "\"Every house you've done, with dates, vents counted and the camera link, so a returning customer's dryer vent quote takes a minute.\"",
+      "whenAndWhatItTakes": "Month 4. Needs past job records, even a spreadsheet."
+    },
+    {
+      "name": "Quote follow-up for unbooked duct estimates",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 59,
+      "monthlyMax": 149,
+      "pitchLine": "\"A duct cleaning quote that wasn't booked gets a polite follow-up in your voice three days later, answering the question they probably had.\"",
+      "whenAndWhatItTakes": "Month 5, after the quote builder. Needs past quotes and outcomes. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the camera report page for duct cleaners",
+      "whoPays": "Duct and vent cleaning companies, monthly per account",
+      "min": 39,
+      "max": 149,
+      "unit": "monthly",
+      "pitchLine": "\"I built a camera report page for one duct cleaner. Every honest vent company needs to prove the work to customers who can't see inside the ducts.\"",
+      "whyItWorks": "The first client paid for it, and the proof problem is the same for every duct cleaner fighting coupon distrust."
+    },
+    {
+      "route": "License the per-vent quote builder to an equipment distributor",
+      "whoPays": "The distributor, annually",
+      "min": 3000,
+      "max": 12000,
+      "unit": "per-year",
+      "pitchLine": "\"Give every duct cleaner who buys equipment from you a quote builder and a booking page, and they stay your customer.\"",
+      "whyItWorks": "Equipment sellers want owner-operators to succeed and keep buying, and a daily tool ties them in."
+    },
+    {
+      "route": "Duct cleaning trade association toolkit",
+      "whoPays": "The association",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer every member duct cleaner a site template with an upfront price page and a written scope, the opposite of the coupon ads.\"",
+      "whyItWorks": "Associations want members to look trustworthy, and one agreement reaches many owners."
+    },
+    {
+      "route": "Dryer vent and duct franchise groups",
+      "whoPays": "The franchise group, per territory",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "pitchLine": "\"Franchisees fighting coupon ads need what independents use: a written duct scope, camera proof and dryer vent prices that hold at the door.\"",
+      "whyItWorks": "One contract, many territories, one template from a real operator's site."
+    },
+    {
+      "route": "Vent compliance tracker for apartment operators",
+      "whoPays": "The apartment operator, annually",
+      "min": 3000,
+      "max": 10000,
+      "unit": "per-year",
+      "pitchLine": "\"Every unit's dryer vent cleaning date and camera report, across every building you run, in one tracker your insurer can see.\"",
+      "whyItWorks": "Operators manage many dryers and need records. The vent cleaner already produces them."
+    },
+    {
+      "route": "White-label vent cleaning template for agencies",
+      "whoPays": "The agency, per site",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency builds dryer vent and duct sites from scratch. License my template with the scope page and quote flow done.\"",
+      "whyItWorks": "Agencies sell the client; you sell them the part you've already got right."
+    },
+    {
+      "route": "Home warranty and maintenance membership companies",
+      "whoPays": "The membership company, annually",
+      "min": 2000,
+      "max": 8000,
+      "unit": "per-year",
+      "pitchLine": "\"Your members need yearly dryer vent cleaning. One booking page with vetted local vent cleaners and the camera report attached to their record.\"",
+      "whyItWorks": "Membership companies sell maintenance and need trusted vendors they can point at."
+    },
+    {
+      "route": "Home inspector association referral page",
+      "whoPays": "The inspector association",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"When members flag a dryer vent, they send the seller to one page of vetted local vent cleaners with fast slots.\"",
+      "whyItWorks": "Inspectors want to refer without liability, and a vetted page lets them."
+    },
+    {
+      "route": "The same vent cleaning stack in the next metro",
+      "whoPays": "New duct cleaning clients in a new metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I build for one duct and dryer vent company per area, and {City} has one. The next county over doesn't.\"",
+      "whyItWorks": "Non-competing geography lets you reuse the scope page, the prices layout and the camera proof."
+    },
+    {
+      "route": "HVAC distributor dealer program",
+      "whoPays": "The HVAC distributor, annually",
+      "min": 5000,
+      "max": 20000,
+      "unit": "per-year",
+      "pitchLine": "\"Your dealers keep asking who does duct cleaning. A dealer page with a vetted vent cleaner network keeps that work inside your circle.\"",
+      "whyItWorks": "Distributors want dealers loyal, and duct cleaning is a service their dealers are asked about."
+    },
+    {
+      "route": "Fire department and insurer safety-week pages",
+      "whoPays": "A sponsoring vent cleaner or local insurer",
+      "min": 500,
+      "max": 1500,
+      "unit": "one-time",
+      "pitchLine": "\"A plain dryer vent maintenance page for a local safety week, sponsored by a vent cleaner, with a booking link and no scare claims.\"",
+      "whyItWorks": "Sponsors want goodwill and leads, and the content is already written for the client's site."
+    },
+    {
+      "route": "Rescue stalled vent cleaning software builds",
+      "whoPays": "The stranded duct cleaning company",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "pitchLine": "\"Someone started your duct quote or camera report tool and stopped answering. I've shipped that flow for another vent cleaner.\"",
+      "whyItWorks": "Stranded owners already decided to buy; they want someone who has finished one."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Vent cleaning booking site plus care plan, one contract",
+      "min": 1200,
+      "max": 2000,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The duct cleaning site and the care plan go on one contract, so a new price or a heating-season banner is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Review requests that mention the dryer",
+      "min": 79,
+      "max": 149,
+      "unit": "monthly",
+      "trigger": "A month live, and the first booking has come through the site.",
+      "line": "\"That first online dryer vent booking found you because of reviews. Let's keep them coming after every job.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "Camera report page per job",
+      "min": 1000,
+      "max": 2500,
+      "unit": "one-time",
+      "trigger": "They mention a customer who asked to see proof, or they post camera clips.",
+      "line": "\"Your customers can't see inside the ducts. Send them the before-and-after before you leave the street.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Yearly dryer vent reminder",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "trigger": "Sixty days of jobs with dates in the system.",
+      "line": "\"Every dryer vent you clean this year is a booking next year if somebody reminds them. Let the reminder do it.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Heating season duct cleaning campaign",
+      "min": 300,
+      "max": 600,
+      "unit": "one-time",
+      "trigger": "Six weeks before the first cold snap in their area.",
+      "line": "\"The furnace comes on soon and people smell the ducts. Let's be in front of them first.\""
+    },
+    {
+      "rung": 6,
+      "day": 120,
+      "offer": "Multi-unit vent day scheduler",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "trigger": "A condo board or apartment manager asks about a building-wide dryer vent day.",
+      "line": "\"A building-wide vent day is a scheduling job before it's a cleaning job. Let residents pick their own slot.\""
+    },
+    {
+      "rung": 7,
+      "day": 180,
+      "offer": "After-hours receptionist for hot-dryer calls",
+      "min": 1000,
+      "max": 2500,
+      "unit": "one-time",
+      "trigger": "The missed-call log shows evening and weekend calls about dryers going unanswered.",
+      "line": "\"Those evening calls are people worried about a hot dryer. The receptionist books them before they call the coupon ad.\""
+    }
+  ]
+}

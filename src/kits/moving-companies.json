@@ -1,0 +1,859 @@
+{
+  "schemaVersion": 1,
+  "category": "Moving companies",
+  "slug": "moving-companies",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Clean family batch, quote archetype override, licensed trade. High-stress, scam-wary buyers, so copy leans on written estimates, named crews and real licence slots. Registration numbers and valuation terms stay as bracketed placeholders; no legal advice. Fresh Fern fails CTA contrast. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Inventory-based moving estimate",
+      "contains": "A room-by-room inventory list, a video walkthrough option, how the estimate is calculated, and how the company handles items added on moving day, in the owner's own words",
+      "why": "People have heard about movers who raise the price once the truck is loaded. A written inventory estimate is how an honest mover wins that fear."
+    },
+    {
+      "section": "Packing services and supplies",
+      "contains": "Full packing, fragile-only packing, kitchen packing, boxes and materials for sale, unpacking on arrival, and how packing is priced",
+      "why": "Packing is the job people dread most and the add-on that lifts the ticket. A page that prices it clearly turns a two-mover job into a full-service one."
+    },
+    {
+      "section": "Moving day: what to expect",
+      "contains": "Crew size and truck size by home size, elevator and parking reservations, long carries and stairs, how furniture is wrapped, and when payment is due",
+      "why": "The night before moving day, customers panic over logistics. Answering them in advance cuts the calls and the day-of surprises."
+    },
+    {
+      "section": "Valuation coverage and claims",
+      "contains": "The coverage options the company offers as written in its own paperwork, what each one means in plain words, and how to report damage after the move",
+      "why": "Damage worry is the reason people hesitate. Explaining the company's own coverage and claims steps honestly builds trust without giving advice."
+    },
+    {
+      "section": "Senior, piano and specialty moving",
+      "contains": "Downsizing moves into senior living, pianos, safes, gym equipment, antiques, storage between homes and the extra care each one gets",
+      "why": "Specialty and senior moves are chosen carefully by families and referral partners. A dedicated page is how a small mover wins them over the cheapest quote."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C49",
+      "siteType": "local-conversion",
+      "name": "Box Label",
+      "heroLayout": "split-photo",
+      "mood": [
+        "sturdy",
+        "friendly",
+        "plain"
+      ],
+      "bestFor": "One- and two-truck local movers who need a call button and an estimate form on the first screen",
+      "pairsWithTier": "starter",
+      "headlineSample": "Local movers in {City}, written estimate before moving day",
+      "whyItFits": "Cobalt & Butter's typewriter slab and butter-yellow page feel like a labelled moving box, honest and hands-on."
+    },
+    {
+      "id": "b",
+      "themeId": "C42",
+      "siteType": "booking-first",
+      "name": "Book the Video Estimate",
+      "heroLayout": "card-stack",
+      "mood": [
+        "organised",
+        "clear",
+        "calm"
+      ],
+      "bestFor": "Growing moving companies booking in-home and video estimates online to fill the calendar weeks ahead",
+      "pairsWithTier": "standard",
+      "headlineSample": "Book a free video moving estimate in {City} today",
+      "whyItFits": "The family combo, Fresh Fern, fails CTA contrast and reads too soft for a high-stress purchase. Riso Blue's strong blue button passes and its geometric type feels organised."
+    },
+    {
+      "id": "c",
+      "themeId": "C9",
+      "siteType": "premium-brand",
+      "name": "White-Glove Moving",
+      "heroLayout": "full-bleed-photo",
+      "mood": [
+        "careful",
+        "refined",
+        "discreet"
+      ],
+      "bestFor": "Established movers selling full packing, senior downsizing and fine-furniture moves to larger homes",
+      "pairsWithTier": "premium",
+      "headlineSample": "Full-service, white-glove moving for {City} homes",
+      "whyItFits": "Midnight Bond's dark page and Didone headings signal care and discretion for families moving antiques, art and a lifetime of belongings."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your Google listing has great moving reviews and no Website button, so someone planning a three-bedroom move can't request an estimate without a phone call they don't have time for.",
+      "hook": "Open their Maps listing and confirm there is no Website button. Screenshot it for when they reply.",
+      "linkLine": "Where that moving search could land instead: {demo-link}"
+    },
+    {
+      "angle": "Facebook-only link",
+      "line": "The website link on your listing opens Facebook, where moving day photos are mixed with truck-for-sale posts. Someone nervous about hiring movers wants a proper estimate page.",
+      "hook": "Tap their Website link. Note where it lands and what the newest post is about.",
+      "linkLine": "A moving page built for a nervous customer: {demo-link}"
+    },
+    {
+      "angle": "Dead free host",
+      "line": "The site on your listing is a free page with an estimate form that doesn't send. People who worry about moving scams read a broken site as a red flag.",
+      "hook": "Open the site and find one broken thing: a dead form, an old number, no address. Note it.",
+      "linkLine": "The same movers, with an estimate form that works: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "Your moving site's estimate form wouldn't fit on my phone screen. People plan a move on their phone during lunch breaks, a few minutes at a time.",
+      "hook": "Only if they have a site. Load it on your phone and note what breaks. Screenshot it for when they reply.",
+      "linkLine": "A moving estimate that works on a phone: {demo-link}"
+    },
+    {
+      "angle": "No inventory estimate",
+      "line": "There's no way to list rooms and furniture for a moving estimate online, so people pick the mover who quoted first, sometimes the one who changes the price on moving day.",
+      "hook": "Check the listing and any site for an estimate form that asks about rooms or items. If there isn't one, the angle holds.",
+      "linkLine": "A room-by-room moving estimate request: {demo-link}"
+    },
+    {
+      "angle": "Crew photos with nowhere to live",
+      "line": "Those posts of your crew wrapping a piano and padding a dresser show the care every moving customer hopes for, and they're buried under the Facebook feed.",
+      "hook": "Find one post showing wrapping, padding or a tricky carry. Name it if they reply.",
+      "linkLine": "Your moving crew's care on a page that stays: {demo-link}"
+    },
+    {
+      "angle": "Reviews about nothing broken",
+      "line": "Your reviews say the movers were on time and nothing got scratched. That's the exact worry of everyone requesting a moving estimate, so it should sit next to the form.",
+      "hook": "Read their reviews and copy one phrase about care, timing or price matching the estimate. Quote it back if they reply.",
+      "linkLine": "Your moving reviews beside the estimate form: {demo-link}"
+    },
+    {
+      "angle": "Summer peak season",
+      "line": "Summer moving dates can book up weeks out, and families who can't reach a mover by phone just book the next one. An estimate request online keeps those dates yours.",
+      "hook": "Use from March to June, before peak moving season. Look for a post about filling up.",
+      "linkLine": "Summer moving dates requested online: {demo-link}"
+    },
+    {
+      "angle": "End-of-month rush",
+      "line": "The last weekend of every month is when leases end and a lot of people need movers at once. A page that shows open dates saves you a day of callbacks.",
+      "hook": "Use in the third week of any month. Check whether they post about weekend availability.",
+      "linkLine": "End-of-month moving dates, bookable: {demo-link}"
+    },
+    {
+      "angle": "Hiring movers",
+      "line": "Saw you're hiring movers. Good applicants check whether the moving company looks steady before they commit to a summer of stairs.",
+      "hook": "Only if they posted a hiring note or a sign on the truck. Note the date and pay if listed.",
+      "linkLine": "A moving company page with a hiring section: {demo-link}"
+    },
+    {
+      "angle": "Local and long-distance areas",
+      "line": "Your moving reviews mention {Neighborhood} and a few longer runs, but nothing online says where you move people from and to, so out-of-town families never ask.",
+      "hook": "Find the furthest move mentioned in reviews or posts. Only mention long distance if they show it.",
+      "linkLine": "A coverage page for your local and longer moving routes: {demo-link}"
+    },
+    {
+      "angle": "Senior downsizing moves",
+      "line": "You've posted a couple of moves into senior living. Adult children planning a parent's downsizing read carefully before they call, and right now there's nothing for them to read.",
+      "hook": "Only if they've posted senior, downsizing or assisted-living moves. Note the community type, not the name.",
+      "linkLine": "A senior moving page families can trust: {demo-link}"
+    },
+    {
+      "angle": "Licence and insurance",
+      "line": "People check a mover's licence and insurance before they hand over everything they own. If your registration numbers are public, they belong on the moving estimate page.",
+      "hook": "Look for a registration number or 'licensed and insured' on their listing or truck. Use only what they publish, in [brackets] on the demo.",
+      "linkLine": "Licence and insurance on one moving page: {demo-link}"
+    },
+    {
+      "angle": "Realtor referrals only",
+      "line": "Sounds like a lot of your moving work comes from realtors who trust you. Their buyers still look you up, and right now they find a truck photo and a phone number.",
+      "hook": "Look for reviews or posts that mention a realtor or a closing. Quote it.",
+      "linkLine": "Where a realtor-referred moving customer should land: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "That {specific recent job} you posted shows exactly the moving work people worry about. It belongs on a page where the next family can request the same.",
+      "hook": "Pick their newest moving post and name it: the piano, the third-floor walk-up, the senior move.",
+      "linkLine": "That moving job on a page that takes estimate requests: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner} — that {specific recent job} you posted is careful moving work.\n\nI looked for a site for {Business Name} and found the Facebook page, but no way to request a written moving estimate or see what moving day involves. I put together a sample site with both, with marked placeholders where your photos would go.\n\nWould it help if I sent it over?",
+    "dm2": "{Owner} — following up in case my last message got buried. Here's the sample moving site for {Business Name}: {demo-link}\n\nIt has a room-by-room estimate request, a video estimate booking, a packing services page and a 'what to expect on moving day' page. If it's not useful, tell me and I'll leave you alone.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for moving companies here in {City}. I sent you a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"No surprise, you're probably on a job. Short version: I built a sample site for {Business Name} that takes room-by-room moving estimate requests and books video estimates, with marked placeholders where your photos would go. Can I text you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range}, then {Care Range} a month for hosting and changes. For a moving company your size I'd normally quote about {Build Price}, about one full-service local move.\"\n\"Can I walk you through it for ten minutes this week, maybe in the evening when the trucks are back?\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. We start the day it clears.\"",
+    "objections": [
+      {
+        "objection": "I'm booked solid all summer.",
+        "handler": "\"Then the site does two things: it fills your slower months ahead of time and lets you turn down small jobs politely. Summer is also when people check movers hardest.\""
+      },
+      {
+        "objection": "I get my work from realtors.",
+        "handler": "\"Good, keep them. Their buyers still look you up before booking. The site is what makes the realtor look smart for recommending you.\""
+      },
+      {
+        "objection": "I can't quote moves online.",
+        "handler": "\"You don't. The form collects the rooms, the big items, stairs and dates, and you send the written moving estimate. It just saves you the first twenty minutes of every call.\""
+      },
+      {
+        "objection": "The lead sites send me plenty of jobs.",
+        "handler": "\"Those leads go to several movers at once, and you're bidding against the cheapest truck. A family that finds your own site is only talking to you.\""
+      },
+      {
+        "objection": "I don't want to explain coverage online.",
+        "handler": "\"Fair. The page only repeats what your own paperwork says, in plain words, and you approve it. No advice, just your policy and how to report damage.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}, because it's the inventory estimate, the video estimate booking, the packing page and moving-day answers. One full-service local move covers it.\""
+      }
+    ],
+    "email": {
+      "subject": "Moving estimate site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for local moving companies around {City}. {Business Name} has strong reviews, but a family planning a move this month can't request a written estimate or see what moving day involves without a phone call.\n\nI built a sample first instead of asking for your time: a room-by-room estimate request, video estimate booking, a packing services page and a moving-day page, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and changes. If not, no problem, it comes down at the end of the month.\n\nWorth ten minutes on the phone this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build websites for moving companies in {City}, and I made a sample site for {Business Name} that takes room-by-room estimate requests. I'll text you the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner} — I'm taking the {Business Name} moving demo down on Friday to free up the space.\n\nWant me to leave it up? One word is fine either way.",
+    "nurture": "Hi {Owner} — families start planning spring and summer moves in {City} after the holidays, and they request estimates from whoever makes it easy. Thought of you.\n\nThe site is still here whenever you want it, and nothing's changed on price. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to about one full-service local move, never to a two-hour minimum job.",
+      "The inventory estimate request is the core. Price video estimates, packing and specialty pages around it.",
+      "Price the video estimate booking higher when it syncs to the estimator's calendar and sends reminders.",
+      "Charge per page for senior, piano and storage moves; each one has its own referral partners.",
+      "Licence, registration and coverage wording only come from the owner's own documents, in brackets until supplied; never write it yourself.",
+      "Keep monthly items small next to one moving job, so nobody weighs them against a booking."
+    ],
+    "lineItems": [
+      {
+        "item": "Room-by-room inventory estimate request",
+        "min": 500,
+        "max": 1100,
+        "unit": "one-time",
+        "description": "Max with rooms, large items, stairs and elevators, packing needs, both addresses, date flexibility and photo upload.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Video estimate booking",
+        "min": 300,
+        "max": 800,
+        "unit": "one-time",
+        "description": "Max when it syncs to the estimator's calendar, sends a how-to-prepare note and a reminder before the call.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Packing services and supplies page",
+        "min": 300,
+        "max": 650,
+        "unit": "per-page",
+        "description": "Max with full, partial and fragile-only packing options, a box and materials order form and delivery dates.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Senior and downsizing moves page",
+        "min": 300,
+        "max": 650,
+        "unit": "per-page",
+        "description": "Max with a family coordinator contact form, floor-plan help and partner referrals the owner already works with.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Piano and specialty items page",
+        "min": 250,
+        "max": 550,
+        "unit": "per-page",
+        "description": "Max with item-type questions, stair counts, photos of the item and a specialty estimate request.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Storage between homes page",
+        "min": 250,
+        "max": 550,
+        "unit": "per-page",
+        "description": "Max when it explains their storage option, access rules and pricing approach, with a combined move-and-store request.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Route pages for towns and longer runs (each)",
+        "min": 150,
+        "max": 400,
+        "unit": "per-page",
+        "description": "Max when each page names the towns served, common building types and recent moving jobs on that route.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Google profile upkeep with moving day posts",
+      "min": 120,
+      "max": 250,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A real moving day photo every week on your Google profile, padded furniture, a loaded truck, a crew on the stairs, so the listing looks alive.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Review requests after each move",
+      "min": 79,
+      "max": 149,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Two days after each move, once boxes are open, a short note asks how the movers did and whether the final bill matched the estimate.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Realtor partner kit",
+      "min": 300,
+      "max": 700,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A printed and digital moving guide agents can give buyers at closing, with your estimate link and a short checklist for moving week.\"",
+      "when": "Month 2."
+    },
+    {
+      "name": "Truck wrap artwork",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Your moving truck sits on a residential street for hours. Artwork with the estimate address turns that into the best sign you own.\"",
+      "when": "Right after launch, coordinated with their wrap shop."
+    },
+    {
+      "name": "Off-season moving campaign",
+      "min": 300,
+      "max": 600,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A campaign for winter moving dates with weekday availability, aimed at the people who can choose when to move.\"",
+      "when": "November and January."
+    },
+    {
+      "name": "Senior living community outreach",
+      "min": 300,
+      "max": 700,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A monthly note and printed sheet for move-in coordinators at senior communities, pointing at the downsizing moving page.\"",
+      "when": "Month 3, once the senior page is live."
+    },
+    {
+      "name": "Crew and truck photo day",
+      "min": 400,
+      "max": 900,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"One day photographing the crew wrapping, carrying and loading on a real moving job gives the site faces people can trust.\"",
+      "when": "Month 2, on a job where the customer agrees in writing."
+    },
+    {
+      "name": "Spanish version of the estimate pages",
+      "min": 400,
+      "max": 800,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"The moving estimate request and moving-day page in Spanish too, for families who'd rather plan a move in their own language.\"",
+      "when": "Month 3, if their crew or customers speak Spanish."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Self-storage facilities near their routes",
+        "whoPays": "The storage facility",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The storage facility you unload into between closings rents units by phone. A unit-size guide with online reservations is my next build.\"",
+        "whyItWorks": "Storage operators trust the movers who bring them tenants, and their sites are usually dated."
+      },
+      {
+        "route": "Junk haulers they send leftovers to",
+        "whoPays": "The junk removal company, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"Who hauls what your moving customers leave behind? That junk crew needs a booking site, and your word gets me in.\"",
+        "whyItWorks": "Movers and haulers pass customers back and forth on every move-out."
+      },
+      {
+        "route": "Move-out cleaners",
+        "whoPays": "The cleaning company, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The cleaner who does the empty house after your movers leave books by text. Same estimate-and-book layout, different service.\"",
+        "whyItWorks": "They work the same day at the same address and already refer each other."
+      },
+      {
+        "route": "Senior move managers",
+        "whoPays": "The senior move manager",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The senior move manager who hires your movers for downsizings has no site to send families to. Introduce me.\"",
+        "whyItWorks": "Move managers choose vendors carefully and pay for a site that reassures families."
+      },
+      {
+        "route": "Apartment leasing offices",
+        "whoPays": "The apartment operator",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The leasing office that sends new tenants your way has a resident page with no moving info. A move-in guide with elevator booking fixes that.\"",
+        "whyItWorks": "Leasing offices want move-ins smooth and trust the movers who respect their buildings."
+      },
+      {
+        "route": "Piano technicians and tuners",
+        "whoPays": "The piano technician, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The tuner who follows your piano moving jobs books appointments by phone. A simple booking site is quick for both of you.\"",
+        "whyItWorks": "Every piano move needs a tuning afterwards, so the referral already happens."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Unit-size recommender for storage facilities",
+        "whoPays": "The storage facility, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Renters list their furniture and the assistant suggests a unit size and reserves it, with a moving crew offered for the day.\"",
+        "whyItWorks": "Facilities lose renters who can't pick a size, and the movers get the job."
+      },
+      {
+        "route": "Photo quote for the junk hauler",
+        "whoPays": "The junk removal company",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"Moving customers send a picture of what they're leaving behind, and the hauler gets a draft load price to approve.\"",
+        "whyItWorks": "Built for a business the mover already refers to, so the introduction carries weight."
+      },
+      {
+        "route": "Move-out clean quote helper for cleaners",
+        "whoPays": "The cleaning company",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"Customers enter bedrooms and the moving date, and the cleaner gets a draft move-out clean price and slot for the same afternoon.\"",
+        "whyItWorks": "The cleaner and the movers share the date; the tool makes the handoff automatic."
+      },
+      {
+        "route": "Floor-plan fitting tool for senior move managers",
+        "whoPays": "The senior move manager, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Families list the furniture and the new apartment's rooms, and the tool suggests what fits before the movers load anything.\"",
+        "whyItWorks": "Move managers repeat this with every family, and the mover gets a cleaner load list."
+      },
+      {
+        "route": "Resident move-in assistant for leasing offices",
+        "whoPays": "The apartment operator, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"New tenants ask about elevator times, parking for the moving truck and keys, and the assistant answers from the building's own rules.\"",
+        "whyItWorks": "Leasing staff answer the same move-in questions daily, and the movers avoid day-of surprises."
+      },
+      {
+        "route": "Tuning scheduler for piano technicians",
+        "whoPays": "The piano technician, monthly",
+        "min": 79,
+        "max": 199,
+        "unit": "monthly",
+        "pitchLine": "\"After a piano moving job, the owner gets a message offering a tuning a few weeks later, booked straight into the technician's calendar.\"",
+        "whyItWorks": "Tuners rely on reminders and referrals, and the mover makes the first introduction."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Missed-call text-back with the estimate form",
+      "kind": "automation",
+      "oneTimeMin": 0,
+      "oneTimeMax": 300,
+      "monthlyMin": 79,
+      "monthlyMax": 149,
+      "pitchLine": "\"You're carrying a sofa down three flights and miss a call. The caller gets a text with the room-by-room moving estimate link within a minute.\"",
+      "whenAndWhatItTakes": "Day 30. Needs the business number forwarded and wording they approve."
+    },
+    {
+      "name": "Moving week reminder sequence",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"A week out, three days out and the night before, the customer gets a checklist: reserve the elevator, empty the dresser, confirm parking for the moving truck.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the booking calendar and the owner's checklist."
+    },
+    {
+      "name": "Estimate builder from inventory lists",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"The inventory from the estimate request turns into a written moving estimate with crew size, truck size and hours, ready to send.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their rates, crew rules and how they estimate today."
+    },
+    {
+      "name": "Video walkthrough inventory taker",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Customers film each room on their phone, and the estimator gets a draft furniture inventory for the moving estimate to check and correct.\"",
+      "whenAndWhatItTakes": "Month 3. Needs past inventories and estimates to compare against. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Review reply drafts for moving jobs",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 59,
+      "monthlyMax": 149,
+      "pitchLine": "\"When a family praises the crew who carried grandma's piano, a reply thanking them by name for that moving day is ready to post.\"",
+      "whenAndWhatItTakes": "Month 2, alongside review requests. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Crew and truck scheduler",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Which movers and which truck go to which job each day, with the end-of-month crunch visible weeks ahead.\"",
+      "whenAndWhatItTakes": "Month 3. Needs crews, trucks and the booking calendar."
+    },
+    {
+      "name": "Booking chat for moving questions",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"It answers 'do you move pianos' and 'do you pack the kitchen' from your own moving services, then books the estimate call, and never quotes on its own.\"",
+      "whenAndWhatItTakes": "Month 3. Needs services, policies and the estimator's calendar. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Bill of lading and inventory on a tablet",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"The crew lead checks items and condition on a tablet as they load, and the customer signs the moving paperwork on screen at both ends.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their current paperwork, which the owner and their own advisers approve."
+    },
+    {
+      "name": "After-hours receptionist for estimate requests",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 199,
+      "monthlyMax": 449,
+      "pitchLine": "\"Someone calls at 9pm after their closing date moved up, and the receptionist takes the addresses and rooms and books a video moving estimate.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the estimator's calendar and the questions they ask on every call. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Damage claim intake form",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 30,
+      "monthlyMax": 90,
+      "pitchLine": "\"If something gets scratched, the customer reports it with photos through the company's own claim steps, and the owner sees it before a bad review does.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their claim process as written in their paperwork."
+    },
+    {
+      "name": "Mover applicant screener",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"People applying to be movers answer questions about lifting, driving and weekend days, and you only call the ones who fit before summer.\"",
+      "whenAndWhatItTakes": "Any month before peak season. Needs must-haves, pay and schedule. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Estimate follow-up for unbooked moves",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"A moving estimate that wasn't booked gets a polite check-in four days later, with the date still held for another two days.\"",
+      "whenAndWhatItTakes": "Month 3, after the estimate builder. Needs estimate status and approved wording."
+    },
+    {
+      "name": "Packing materials order page",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 30,
+      "monthlyMax": 90,
+      "pitchLine": "\"Customers order boxes, tape and wardrobe cartons for delivery before moving day, and the packing supply count goes straight to the warehouse.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their materials list and prices."
+    },
+    {
+      "name": "Customer message sorter for moving jobs",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Date changes, 'can you add a storage stop' requests and estimate questions get sorted and drafted for the moving office to approve.\"",
+      "whenAndWhatItTakes": "Month 5. Needs the business inbox or text line. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Job costing per move",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"See what each moving job really earned once crew hours, fuel and materials are counted, and how close it came to the estimate.\"",
+      "whenAndWhatItTakes": "Month 6. Needs a few months of job times, fuel and estimates."
+    },
+    {
+      "name": "Realtor referral portal",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Agents send a buyer's details and closing date, see when the moving estimate is booked, and get a thank-you when the move is done.\"",
+      "whenAndWhatItTakes": "Month 5, once a few agents refer regularly. Needs agent contacts."
+    },
+    {
+      "name": "Moving checklist writer per customer",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 59,
+      "monthlyMax": 149,
+      "pitchLine": "\"Each booked customer gets a moving checklist written for their home, their date and their building rules, approved from the owner's template.\"",
+      "whenAndWhatItTakes": "Month 5. Needs the owner's master checklist. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Post-move check-in",
+      "kind": "automation",
+      "oneTimeMin": 150,
+      "oneTimeMax": 400,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"A week after moving day, the customer gets a short check-in asking if anything needs attention and offering an unpacking or junk pickup referral.\"",
+      "whenAndWhatItTakes": "Month 4. Needs job dates and approved wording."
+    },
+    {
+      "name": "Crew handbook assistant",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"A new mover asks the phone how the owner wants a glass tabletop wrapped or a gun safe handled, and gets the owner's written answer.\"",
+      "whenAndWhatItTakes": "Month 6. Needs written procedures and the owner's approval of every answer. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Estimate versus actual report",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 30,
+      "monthlyMax": 90,
+      "pitchLine": "\"A monthly table of which moving estimates ran over, by home size and crew, so the next written estimate is closer to the real day.\"",
+      "whenAndWhatItTakes": "Month 6, after job costing. Needs a few months of estimates and actual hours."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the inventory estimate builder for local movers",
+      "whoPays": "Moving companies, monthly per account",
+      "min": 49,
+      "max": 199,
+      "unit": "monthly",
+      "pitchLine": "\"I built an inventory-to-estimate tool for one moving company. Every small mover still writes estimates from memory after a walkthrough.\"",
+      "whyItWorks": "The first client paid for the estimating logic, and every local mover has the same twenty-minute call to shorten."
+    },
+    {
+      "route": "License the estimate tools to a moving supply distributor",
+      "whoPays": "The distributor, annually",
+      "min": 3000,
+      "max": 12000,
+      "unit": "per-year",
+      "pitchLine": "\"Give every mover who buys boxes and pads from you an estimate request and a materials order page that reorders from you.\"",
+      "whyItWorks": "Distributors want movers loyal, and a tool used on every job beats a discount."
+    },
+    {
+      "route": "State movers' association member toolkit",
+      "whoPays": "The association",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer members a moving site template with licence slots, a written estimate request and a consumer-friendly moving-day page.\"",
+      "whyItWorks": "Associations fight the rogue-mover image and need member benefits; one agreement reaches many owners."
+    },
+    {
+      "route": "Corporate relocation management firms",
+      "whoPays": "The relocation firm, annually",
+      "min": 3000,
+      "max": 10000,
+      "unit": "per-year",
+      "pitchLine": "\"Your coordinators book local movers for every transferee. One portal with vetted movers, video estimates and status updates.\"",
+      "whyItWorks": "Relocation firms buy convenience at scale, and the client's tools already do the moving workflow."
+    },
+    {
+      "route": "White-label moving template for agencies",
+      "whoPays": "The agency, per site",
+      "min": 500,
+      "max": 1200,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency builds mover sites from scratch. License my template with the inventory estimate and moving-day pages done.\"",
+      "whyItWorks": "Agencies sell the client; you sell them the part you've already perfected."
+    },
+    {
+      "route": "Senior living operators' move-in program",
+      "whoPays": "The senior living operator, annually",
+      "min": 3000,
+      "max": 10000,
+      "unit": "per-year",
+      "pitchLine": "\"Every new resident gets a downsizing plan and a vetted moving crew booked from one page, across all your communities.\"",
+      "whyItWorks": "Operators fill units faster when moving is easy, and the moving client is the proof."
+    },
+    {
+      "route": "Real estate brokerages' closing concierge",
+      "whoPays": "The brokerage, annually",
+      "min": 2000,
+      "max": 8000,
+      "unit": "per-year",
+      "pitchLine": "\"Every buyer gets a closing-week page with vetted movers, cleaners and utility setup, branded for your office.\"",
+      "whyItWorks": "Brokerages want buyers to remember them, and movers are the first vendor on the list."
+    },
+    {
+      "route": "Self-storage chains' move-and-store partner network",
+      "whoPays": "The storage chain, annually",
+      "min": 3000,
+      "max": 10000,
+      "unit": "per-year",
+      "pitchLine": "\"Renters booking a unit can add a vetted local moving crew in the same checkout, at every facility you run.\"",
+      "whyItWorks": "Storage chains want more rentals, and movers bring them tenants."
+    },
+    {
+      "route": "The same moving stack in the next metro",
+      "whoPays": "New moving clients in a new metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"One local mover per area, that's how I work. {City}'s spot is filled; the metro two hours north is wide open.\"",
+      "whyItWorks": "Non-competing geography lets you reuse the estimate flow, the moving-day page and the proof."
+    },
+    {
+      "route": "University housing offices",
+      "whoPays": "The university housing department",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Move-in and move-out weekends need vetted student movers and storage. One page per term with booking built in.\"",
+      "whyItWorks": "Housing offices face the same crunch every term and pay for anything that calms it."
+    },
+    {
+      "route": "Military base relocation offices",
+      "whoPays": "Sponsoring local movers, monthly",
+      "min": 99,
+      "max": 299,
+      "unit": "monthly",
+      "pitchLine": "\"Service families arriving at the base need local movers for the last mile and storage. A sponsored guide sends them to vetted moving crews.\"",
+      "whyItWorks": "Families move often and trust guides; sponsors pay for qualified estimate requests."
+    },
+    {
+      "route": "Rescue unfinished moving company software",
+      "whoPays": "The stranded moving company",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "pitchLine": "\"An estimating or crew scheduling tool for your moving company that someone abandoned halfway? I'll audit it and finish it, or tell you honestly to start over.\"",
+      "whyItWorks": "Stranded owners already decided to buy; they want someone who has finished one."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Moving estimate site plus care plan, one contract",
+      "min": 1800,
+      "max": 3000,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The moving site and the care plan go on one contract, so a new peak-season notice is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Review requests after each move",
+      "min": 79,
+      "max": 149,
+      "unit": "monthly",
+      "trigger": "A month live, and the first estimate request has come through the site.",
+      "line": "\"That estimate request came from someone who read your reviews. Let's add one after every moving day.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "Estimate builder from inventory lists",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "trigger": "They complain about writing estimates at night or losing jobs to faster quotes.",
+      "line": "\"The inventory is already in the request. Let the builder turn it into the moving estimate tonight.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Realtor partner kit",
+      "min": 300,
+      "max": 700,
+      "unit": "one-time",
+      "trigger": "Sixty days of requests show several realtor referrals.",
+      "line": "\"Realtors are already sending you buyers. Give them a moving guide with your name on it.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Video walkthrough inventory taker",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "trigger": "Video estimate bookings outnumber in-home visits.",
+      "line": "\"Customers already film their rooms for you. Let the inventory draft itself for the moving estimate.\""
+    },
+    {
+      "rung": 6,
+      "day": 120,
+      "offer": "Crew and truck scheduler",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "trigger": "They add a truck or a second crew before peak moving season.",
+      "line": "\"Two crews and the end-of-month rush need a schedule, not a whiteboard. Let's build it before summer.\""
+    },
+    {
+      "rung": 7,
+      "day": 180,
+      "offer": "Senior living community outreach",
+      "min": 300,
+      "max": 700,
+      "unit": "monthly",
+      "trigger": "They book two or more senior downsizing moves through the site.",
+      "line": "\"Those senior moving jobs came from families who found the page. Let's reach the move-in coordinators directly.\""
+    }
+  ]
+}

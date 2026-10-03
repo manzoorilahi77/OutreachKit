@@ -1,0 +1,850 @@
+{
+  "schemaVersion": 1,
+  "category": "Snow & ice management",
+  "slug": "snow-ice-management",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · Field Kit v2 Prompt A batch",
+    "generatedAt": "2026-10-03",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Clean family batch, rfq archetype override. Northern-state seasonal contracts signed late summer, so the buyer is a property or facilities manager and the products lean on service logs and storm-day dispatch. No equipment or material brands, no liability advice. Fresh Fern fails CTA contrast. Ranges are planning figures, not quotes."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Per push, per event or seasonal snow contracts",
+      "contains": "How each contract type is billed, trigger depths like a two-inch trigger, seasonal caps and overages, and which properties each type suits",
+      "why": "Property managers compare snow bids by contract type before price. Explaining the options up front makes the bid easy to line up against others."
+    },
+    {
+      "section": "Ice management and de-icing plan",
+      "contains": "Pre-treatment before storms, salt and liquid brine options, sidewalk and entrance crews, refreeze checks, and how de-icing material use is logged",
+      "why": "Ice, not snow, is what managers lose sleep over. A written ice plan answers the question every commercial buyer asks first."
+    },
+    {
+      "section": "Storm-day service logs and site photos",
+      "contains": "Time-stamped arrival and departure logs per site, before-and-after photos, plowing and salting notes, and how managers receive them after every storm",
+      "why": "Managers need records after a storm for owners and insurers. Showing the log format wins contracts from crews who can't prove a visit."
+    },
+    {
+      "section": "Residential driveway snow plans",
+      "contains": "Seasonal driveway plowing by subdivision, priority windows before work commutes, driveway marker stakes, walkway shovelling add-ons and the sign-up deadline",
+      "why": "Homeowners buy snow removal once a year in autumn. A clear plan page with a deadline fills the residential route before the first storm."
+    },
+    {
+      "section": "Snow relocation, hauling and roof snow",
+      "contains": "Where snow gets piled on each lot, loader stacking, hauling snow off-site after big storms, and roof snow removal for flat commercial roofs",
+      "why": "Big lots run out of room by midwinter. Buyers with tight sites pick the contractor who explains where the snow will go."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C14",
+      "siteType": "local-conversion",
+      "name": "Driveway Route Sign-Up",
+      "heroLayout": "split-photo",
+      "mood": [
+        "crisp",
+        "wintry",
+        "reliable"
+      ],
+      "bestFor": "One- and two-truck plow operators filling residential driveway routes before the first storm",
+      "pairsWithTier": "starter",
+      "headlineSample": "Seasonal snow plowing in {City}, sign up before the first storm",
+      "whyItFits": "Deep Space Cyan's dark page and icy cyan button look like a plow light at four in the morning, and the mono labels suit route and trigger details."
+    },
+    {
+      "id": "b",
+      "themeId": "C1",
+      "siteType": "b2b-capability",
+      "name": "Commercial Snow Bid",
+      "heroLayout": "card-stack",
+      "mood": [
+        "organised",
+        "accountable",
+        "steady"
+      ],
+      "bestFor": "Snow contractors bidding commercial lots, HOAs and medical offices on seasonal or per-event contracts",
+      "pairsWithTier": "standard",
+      "headlineSample": "Commercial snow and ice management for {City} properties",
+      "whyItFits": "The family combo, Fresh Fern, fails CTA contrast and reads as spring cleaning. Banker's Indigo's sober blue and neutral sans look procurement-ready for a facilities buyer."
+    },
+    {
+      "id": "c",
+      "themeId": "C19",
+      "siteType": "emergency-response",
+      "name": "Storm Desk",
+      "heroLayout": "type-led",
+      "mood": [
+        "urgent",
+        "logged",
+        "on-call"
+      ],
+      "bestFor": "Established snow operations selling storm-day dispatch, live site status and service logs to multi-site managers",
+      "pairsWithTier": "premium",
+      "headlineSample": "Snow and ice response for {City} sites, logged every storm",
+      "whyItFits": "Gunmetal Signal's dark mono layout and orange accent feel like a dispatch board, which suits a contractor selling storm-night accountability."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your Google listing has snow removal reviews and no Website button, so a property manager pulling three snow bids for next winter has nothing to send to the owner.",
+      "hook": "Open their Maps listing and confirm there is no Website button. Screenshot it for when they reply.",
+      "linkLine": "What a property manager would land on: {demo-link}"
+    },
+    {
+      "angle": "Facebook-only link",
+      "line": "The website link on your listing opens Facebook, where last winter's plowing videos sit next to summer landscaping posts. A facilities buyer can't tell you do commercial snow.",
+      "hook": "Tap their Website link. Note where it lands and whether snow work shows up without scrolling.",
+      "linkLine": "A snow page built for the commercial buyer: {demo-link}"
+    },
+    {
+      "angle": "Dead free host",
+      "line": "The site on your listing is a free page with a snow contract form that doesn't send. In September, that form is how next winter's lots get signed.",
+      "hook": "Open the site and find one broken thing: a dead form, an old number, last season's prices. Note it.",
+      "linkLine": "A snow contract request that actually sends: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "Your snow removal site wouldn't load the service list on my phone. Managers check vendors between site walks, phone in hand.",
+      "hook": "Only if they have a site. Load it on your phone and note what breaks. Screenshot it for when they reply.",
+      "linkLine": "Snow and ice management, rebuilt for a phone: {demo-link}"
+    },
+    {
+      "angle": "No contract request form",
+      "line": "There's no way to request a snow plowing bid online with the lot size, trigger depth and sidewalk needs, so a manager has to chase you by phone in August.",
+      "hook": "Check the listing and any site for a bid or contract form. If there is none, the angle holds.",
+      "linkLine": "A snow bid request that asks the right questions: {demo-link}"
+    },
+    {
+      "angle": "Plow videos with no home",
+      "line": "Your overnight plowing videos of clean lots at dawn are the best proof a snow contractor has, and they vanish from the feed by spring.",
+      "hook": "Find one plowing or salting video and note the property type. Name it if they reply.",
+      "linkLine": "Your snow work on a capability page that stays: {demo-link}"
+    },
+    {
+      "angle": "Reviews from managers",
+      "line": "Your reviews say the lot was clear before the first shift arrived. That's the sentence a facilities manager wants to read next to a snow bid.",
+      "hook": "Read their reviews and copy one phrase about timing or ice. Quote it back if they reply.",
+      "linkLine": "Your snow reviews next to the bid request: {demo-link}"
+    },
+    {
+      "angle": "Contract signing season",
+      "line": "Commercial snow contracts get signed in late summer and early autumn. The snow contractors a manager can find online that month make the shortlist.",
+      "hook": "Use from July to early October. Name the month.",
+      "linkLine": "Ready for snow contract season: {demo-link}"
+    },
+    {
+      "angle": "Residential route sign-ups",
+      "line": "Homeowners decide on a driveway snow plan the week of the first forecast. A sign-up page with your route areas and a deadline fills the plow route before you get the call.",
+      "hook": "Use from September to the first snowfall. Check whether they do residential driveways.",
+      "linkLine": "Residential snow plowing sign-ups online: {demo-link}"
+    },
+    {
+      "angle": "Hiring plow drivers",
+      "line": "Saw you're hiring plow drivers and shovelers for the season. Good applicants check whether the snow outfit looks steady before signing up for 3am call-outs.",
+      "hook": "Only if they posted a hiring note or a sign. Note the date.",
+      "linkLine": "A snow company page with a seasonal hiring section: {demo-link}"
+    },
+    {
+      "angle": "Route and coverage",
+      "line": "Your snow reviews come from {Neighborhood} and a few business parks, but nothing online shows where your plow routes run, so managers outside them never ask.",
+      "hook": "Find the areas named in their posts or reviews and use the one furthest from their yard.",
+      "linkLine": "A coverage map for your snow routes: {demo-link}"
+    },
+    {
+      "angle": "Seasonal payment plans",
+      "line": "A seasonal snow contract paid in monthly instalments is easier to approve than one big invoice. If you offer that, it belongs on the contract page.",
+      "hook": "Only if they mention monthly billing or instalments. Never name a lender.",
+      "linkLine": "Snow contract billing options explained: {demo-link}"
+    },
+    {
+      "angle": "Insurance certificates",
+      "line": "Every property manager asks a snow contractor for a certificate of insurance before signing. A page that says you carry the coverage answers it early.",
+      "hook": "Look for 'insured' on their listing, truck or posts. Never claim coverage you didn't see.",
+      "linkLine": "Insurance and snow contract terms on one page: {demo-link}"
+    },
+    {
+      "angle": "Handshake contracts",
+      "line": "Sounds like your snow lots renew on a handshake every autumn. That works until a building changes management and the new manager searches for snow bids instead.",
+      "hook": "Look for posts or reviews that mention long-time clients or a manager by role. Quote it.",
+      "linkLine": "Where a new manager looking for snow bids should land: {demo-link}"
+    },
+    {
+      "angle": "A specific storm",
+      "line": "That {specific recent job} you posted shows how your crew handled a real storm. It belongs on a capability page a manager can forward with your snow bid.",
+      "hook": "Pick their newest storm post and name it: the lot, the snowfall, the hauling.",
+      "linkLine": "That storm on a snow capability page: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner} — that {specific recent job} you posted is a clean storm response.\n\nI looked for a site for {Business Name} and found the Facebook page, but nothing a property manager could forward with a snow bid. I put together a sample capability page with a contract request and a storm-day log example, with marked placeholders where your photos would go.\n\nWould it help if I sent it over?",
+    "dm2": "{Owner} — following up in case my last message got buried. Here's the sample snow and ice site for {Business Name}: {demo-link}\n\nIt explains per-push, per-event and seasonal contracts, shows an ice management plan and a storm-day service log, and has a bid request for managers plus a driveway sign-up for homeowners. If it's not useful, tell me and I'll leave you alone.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for snow and ice contractors here in {City}. I sent you a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"Easy to miss. Short version: I built a sample capability site for {Business Name} with a snow contract request, an ice plan and a storm-log example, with marked placeholders where your photos would go. Can I email you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range}, then {Care Range} a month for hosting and changes. For a snow operation your size I'd normally quote about {Build Price}, less than one commercial lot for the season.\"\n\"Can I walk you through it for ten minutes this week, before the first storm?\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. We start the day it clears, and it's live before the first snow.\"",
+    "objections": [
+      {
+        "objection": "My contracts are already signed for this winter.",
+        "handler": "\"Then build it now while it's quiet. The storm logs it shows will be your best sales tool when the next snow contract season opens.\""
+      },
+      {
+        "objection": "All my lots come from word of mouth.",
+        "handler": "\"That means your plowing is good. Managers still forward something to the owner before signing, and a capability page with your ice plan is easier to forward than a phone number.\""
+      },
+      {
+        "objection": "I do landscaping in summer, I don't need a snow site.",
+        "handler": "\"You need a snow page that doesn't look like a mowing page. Commercial buyers want trigger depths, ice plans and logs. It can live on the same domain as your summer work.\""
+      },
+      {
+        "objection": "Snow is unpredictable, I can't publish prices.",
+        "handler": "\"You don't publish lot prices. You explain how per-push, per-event and seasonal contracts work, and the manager sends you lot details for a bid.\""
+      },
+      {
+        "objection": "I'm too busy once it snows.",
+        "handler": "\"That's why this goes live before it does. I need about twenty minutes and your contract terms; after that, the site takes bid requests while you're plowing.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}, because it's the capability page, the snow bid request, the ice plan and the driveway sign-up. That's less than one commercial lot for the season.\""
+      }
+    ],
+    "email": {
+      "subject": "Snow capability page for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for snow and ice contractors around {City}. {Business Name} has good storm work on social media, but nothing a property manager can forward when they collect snow bids.\n\nI built a sample first instead of asking for your time: contract types explained, an ice management plan, a storm-day service log example, a bid request for managers and a driveway sign-up for homeowners, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and changes. If not, no problem, it comes down at the end of the month.\n\nWorth ten minutes on the phone this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build websites for snow and ice contractors in {City}, and I made a sample capability page for {Business Name} with a bid request and an ice plan. I'll email you the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner} — I'm taking the {Business Name} snow demo down on Friday to free up the space.\n\nWant me to leave it up? One word is fine either way.",
+    "nurture": "Hi {Owner} — the first real snow is close in {City}, and homeowners who never signed up for a driveway plan start searching the night of the forecast. Thought of you.\n\nThe site is still here whenever you want it, and nothing's changed on price. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to less than one commercial lot for one season, never to a single driveway plan.",
+      "The capability page and bid request are the core. Price the driveway sign-up and storm-log pages around them.",
+      "Price the residential sign-up higher when it takes payment and assigns route areas; that's real workflow.",
+      "Sell before September for commercial and before the first storm for residential; nothing sells in March.",
+      "Never write liability or slip-and-fall advice into the copy; the ice plan describes service, not legal protection.",
+      "Keep monthly items low in summer, or pause them, so a seasonal business doesn't resent paying in July."
+    ],
+    "lineItems": [
+      {
+        "item": "Commercial snow bid request with lot details",
+        "min": 400,
+        "max": 900,
+        "unit": "one-time",
+        "description": "Max with lot size, sidewalk length, trigger depth, contract type, site map upload and certificate-of-insurance request.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Residential driveway plan sign-up",
+        "min": 400,
+        "max": 900,
+        "unit": "one-time",
+        "description": "Max with route-area check by address, plan options, walkway add-ons, payment at sign-up and a deadline banner.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Ice management plan page",
+        "min": 250,
+        "max": 550,
+        "unit": "per-page",
+        "description": "Max with pre-treatment, refreeze checks, material options and a sample material use log.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Sample storm-day service log page",
+        "min": 250,
+        "max": 550,
+        "unit": "per-page",
+        "description": "Max with a realistic log layout, photo examples and how managers receive logs after each storm.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Property type pages (each)",
+        "min": 200,
+        "max": 450,
+        "unit": "per-page",
+        "description": "Max when each page covers a property type like medical offices, HOAs or retail, with its own snow priorities.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Route coverage map",
+        "min": 250,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max with residential route areas and commercial coverage zones, plus an address check for driveway plans.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Seasonal hiring page for plow drivers",
+        "min": 300,
+        "max": 700,
+        "unit": "one-time",
+        "description": "Max with an applicant form, licence and equipment questions, on-call expectations and texts to the owner.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Snow contract season outreach to managers",
+      "min": 400,
+      "max": 900,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A short campaign in July and August to property and facilities managers near your snow routes, offering a site walk and a bid.\"",
+      "when": "July, ahead of contract season."
+    },
+    {
+      "name": "Residential snow plan sign-up campaign",
+      "min": 300,
+      "max": 600,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Door hangers and posts in your plow route neighbourhoods with the sign-up deadline, before the first forecast sends everyone searching.\"",
+      "when": "Late September to early November."
+    },
+    {
+      "name": "Google profile upkeep through the snow season",
+      "min": 120,
+      "max": 250,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Storm-morning photos of cleared lots on your Google profile all winter, and summer work posted the rest of the year, so the listing is never stale.\"",
+      "when": "Day 30, paused or reduced in summer."
+    },
+    {
+      "name": "Property manager reference collection",
+      "min": 79,
+      "max": 149,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"After each big storm, happy managers get a short request for a review or a reference line for your next snow bid.\"",
+      "when": "First storm after launch."
+    },
+    {
+      "name": "Snow bid packet design",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A manager forwarding your snow proposal to the owner should be holding a tidy PDF: trigger terms, de-icing approach, a storm log example and your coverage certificate.\"",
+      "when": "Month 2, or before the next bid deadline they mention."
+    },
+    {
+      "name": "Truck and plow lettering artwork",
+      "min": 200,
+      "max": 600,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Lettering on the plow trucks and a small sign at each commercial lot, so every manager driving past sees whose snow crew cleared it.\"",
+      "when": "Before the first storm."
+    },
+    {
+      "name": "Storm photo and drone video night",
+      "min": 400,
+      "max": 1000,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"One storm night filming the plows and loaders at a big lot gives the snow capability page footage no competitor has.\"",
+      "when": "First major storm, at a property that agrees in writing."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Landscapers who sub out snow work",
+        "whoPays": "The landscaping company, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The landscaper who passes you their winter snow accounts shows nothing online for summer work. Same capability layout.\"",
+        "whyItWorks": "Landscapers and snow contractors share clients across seasons and already trade referrals."
+      },
+      {
+        "route": "Property management firms on their routes",
+        "whoPays": "The management firm",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"Managers you plow for still email tenants a parking notice before every storm. A tenant portal for their buildings is work I can win through you.\"",
+        "whyItWorks": "Managers trust the vendor who shows up at four in the morning, and that trust gets a meeting."
+      },
+      {
+        "route": "Ice melt and salt suppliers",
+        "whoPays": "The supplier",
+        "min": 2500,
+        "max": 7000,
+        "unit": "one-time",
+        "pitchLine": "\"The bulk salt yard where you load before every storm takes orders by phone. An order and pickup page is my next build.\"",
+        "whyItWorks": "Suppliers sell to every snow contractor in the region and have the budget for a proper site."
+      },
+      {
+        "route": "Roofers who need roof snow removal",
+        "whoPays": "The roofing company",
+        "min": 2000,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"The roofer you call when a flat roof needs snow removed has an old gallery and no estimate form. Introduce me.\"",
+        "whyItWorks": "Roofers have big tickets and trust the snow contractor who protects their roofs."
+      },
+      {
+        "route": "HOAs on residential plow routes",
+        "whoPays": "The homeowners' association",
+        "min": 1000,
+        "max": 3000,
+        "unit": "one-time",
+        "pitchLine": "\"The HOA whose streets you plow sends notices on paper. A resident site with snow-day updates and rules is a quick build.\"",
+        "whyItWorks": "HOA boards trust the snow contractor residents already thank every winter."
+      },
+      {
+        "route": "Equipment repair and welding shops",
+        "whoPays": "The repair shop, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The shop that fixes your plow blade mid-storm books by phone. An urgent repair request page saves them calls at 2am.\"",
+        "whyItWorks": "Repair shops serve every snow fleet nearby and listen when a good customer recommends you."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Estimate helper for the landscaper",
+        "whoPays": "The landscaping company",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"The landscaper talks through a site walk and gets a draft maintenance estimate, the same tool built for your snow bids.\"",
+        "whyItWorks": "Already working for a contractor the landscaper trusts, so the pitch is short."
+      },
+      {
+        "route": "Storm notice writer for property managers",
+        "whoPays": "The management firm, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Before each storm, tenants get a notice about parking and plowing times, drafted from the snow contractor's schedule.\"",
+        "whyItWorks": "Managers write the same storm notices all winter, and the snow client already knows the timing."
+      },
+      {
+        "route": "Reorder forecaster for the salt supplier",
+        "whoPays": "The supplier, annually",
+        "min": 3000,
+        "max": 10000,
+        "unit": "per-year",
+        "pitchLine": "\"Contractors see their usual salt use per storm, and the supplier gets draft reorders before the forecast hits.\"",
+        "whyItWorks": "Suppliers run short during storms; forecasting customer orders is worth real money to them."
+      },
+      {
+        "route": "Roof load photo triage for roofers",
+        "whoPays": "The roofing company, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Building owners upload photos of deep roof snow, and the roofer gets a sorted list of which roofs to check first.\"",
+        "whyItWorks": "Roofers drown in calls after big storms, and the snow client sends them those calls."
+      },
+      {
+        "route": "Resident question assistant for HOAs",
+        "whoPays": "The homeowners' association, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"Residents ask when their street gets plowed or where to park during a storm, and the assistant answers from the HOA's snow rules.\"",
+        "whyItWorks": "Boards field these questions every storm, and the snow contractor's schedule makes the answers accurate."
+      },
+      {
+        "route": "Parts lookup for the repair shop",
+        "whoPays": "The repair shop",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"Plow owners describe the broken part and the truck, and the shop gets a draft parts list before the truck rolls in.\"",
+        "whyItWorks": "Storm-night repairs are rushed; anything that speeds them up sells itself."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Missed-call text-back with the snow plan link",
+      "kind": "automation",
+      "oneTimeMin": 0,
+      "oneTimeMax": 300,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"You're in the plow at 3am and miss a call. The caller gets a text with the driveway sign-up or the commercial snow bid form within a minute.\"",
+      "whenAndWhatItTakes": "Day 30. Needs the business number forwarded and wording they approve. Can pause in summer."
+    },
+    {
+      "name": "Storm-day service log app",
+      "kind": "software",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 6000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"Drivers tap in and out at each lot, add photos and salt amounts, and every manager gets a time-stamped snow log the morning after.\"",
+      "whenAndWhatItTakes": "Month 2, before the first storm. Needs the site list, crews and the log fields managers ask for."
+    },
+    {
+      "name": "Storm alert to residential route customers",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"When a snow event triggers, driveway customers get a text that the plows are rolling and a rough window for their street.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the route list and the trigger rules."
+    },
+    {
+      "name": "Snow bid calculator by lot size",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Enter the lot area, sidewalk length, trigger and contract type, and the calculator drafts the snow and ice price from your own rates.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their production rates, salt costs and margin rules."
+    },
+    {
+      "name": "Bid writer from site-walk notes",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Talk through the site walk in the truck, and a draft snow bid with ice plan, piling areas and price is ready when you get back.\"",
+      "whenAndWhatItTakes": "Month 3, during contract season. Needs past bids and the calculator's rates. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Residential route sign-up with payment",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Homeowners check their address against the plow routes, choose a plan, pay and get a driveway marker drop-off date.\"",
+      "whenAndWhatItTakes": "Month 2, before the sign-up deadline. Needs route areas, plans and payment setup."
+    },
+    {
+      "name": "Storm-night receptionist",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 199,
+      "monthlyMax": 499,
+      "pitchLine": "\"During a storm, 'when is my lot getting plowed' calls are answered from the live route status, so the owner stays in the truck.\"",
+      "whenAndWhatItTakes": "Month 3, after the service log app. Needs route status data and approved wording. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Dispatch board with live site status",
+      "kind": "software",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 9000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Every snow site on one board, plowed, salted or waiting, with crews assigned and managers able to see their own lots.\"",
+      "whenAndWhatItTakes": "Month 4, once they run several crews. Needs site list, crews and the service log app."
+    },
+    {
+      "name": "Weather trigger watcher",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"It reads the public forecast for each route area and drafts the pre-treatment and plowing plan for the owner to approve the evening before.\"",
+      "whenAndWhatItTakes": "Month 3. Needs route areas, trigger depths and the owner's usual storm plan. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Seasonal contract renewal reminders",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 700,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"In July, every commercial snow client gets a renewal note with last winter's log summary, and every driveway customer gets the early sign-up offer.\"",
+      "whenAndWhatItTakes": "Month 9, ahead of the next season. Needs contract end dates and the customer list."
+    },
+    {
+      "name": "Plow driver applicant screener",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"Applicants for plow and shovel crews answer questions about licences, night availability and equipment, and you only call the ones who fit.\"",
+      "whenAndWhatItTakes": "August to October. Needs must-haves, pay and on-call rules. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Salt and material use tracker",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 40,
+      "monthlyMax": 120,
+      "pitchLine": "\"Salt and brine used per site per storm, so the owner bills the overages correctly and orders before the yard runs out of ice melt.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the service log and their material costs."
+    },
+    {
+      "name": "Storm summary writer for managers",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"After each storm, every manager gets a short plain-language summary of when their lot was plowed and salted, drafted from the log.\"",
+      "whenAndWhatItTakes": "Month 3, after the service log app. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Job costing per snow site",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"See which lots made money this winter once truck hours, labour and salt are counted, before you rebid them.\"",
+      "whenAndWhatItTakes": "Month 6, at season's end. Needs a winter of logs and costs."
+    },
+    {
+      "name": "Driveway marker and route photo map",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 40,
+      "monthlyMax": 100,
+      "pitchLine": "\"Every driveway on the snow route with a photo, marker positions and hazards like low walls, so a new plow driver doesn't hit anything.\"",
+      "whenAndWhatItTakes": "Month 2, before the first storm. Needs addresses and a drive-by photo of each driveway."
+    },
+    {
+      "name": "Customer message sorter for storm days",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Storm-day messages about missed driveways, plow damage and ice get sorted by urgency and drafted for the snow office to approve.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the business inbox or text line. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Damage report intake",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 700,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"A customer reports lawn or curb damage from the plow with a photo, it goes on the spring repair list, and they get a confirmation right away.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the owner's repair policy wording."
+    },
+    {
+      "name": "Crew knowledge base for each snow site",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"A new driver asks the phone where to pile snow at this lot or which entrance gets salted first, and gets the owner's site notes.\"",
+      "whenAndWhatItTakes": "Month 4. Needs written site notes and the owner's approval of every answer. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Contract proposal reader",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Drop in a manager's snow RFP, and get a summary of triggers, response times and penalties to discuss with your own advisers before bidding.\"",
+      "whenAndWhatItTakes": "Month 9, during bid season. Needs a few past RFPs. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Manager portal for logs and invoices",
+      "kind": "software",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"Property managers download every storm log, photo and snow invoice for their sites without emailing the office.\"",
+      "whenAndWhatItTakes": "Month 5, after the service log app. Needs client list and billing data."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the storm-day service log for snow contractors",
+      "whoPays": "Snow contractors, monthly per account in season",
+      "min": 79,
+      "max": 299,
+      "unit": "monthly",
+      "pitchLine": "\"I built a storm log app for one snow contractor. Every plow operator has to prove when the lot was cleared and salted.\"",
+      "whyItWorks": "The first client paid for the logging workflow, and proof of service is the same problem across every northern market."
+    },
+    {
+      "route": "License the snow bid calculator to a salt and ice melt distributor",
+      "whoPays": "The distributor, annually",
+      "min": 5000,
+      "max": 20000,
+      "unit": "per-year",
+      "pitchLine": "\"Give every snow contractor who buys salt from you a bid calculator that also estimates their material order.\"",
+      "whyItWorks": "Distributors compete for contractor loyalty before each season, and a tool tied to their catalog wins it."
+    },
+    {
+      "route": "Snow and ice contractors' association toolkit",
+      "whoPays": "The association",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer members a capability page template with contract types, an ice plan and a sample snow log built in.\"",
+      "whyItWorks": "Associations want members to look professional to property managers; one agreement reaches many owners."
+    },
+    {
+      "route": "Plow equipment dealers' customer program",
+      "whoPays": "The dealer, annually",
+      "min": 3000,
+      "max": 10000,
+      "unit": "per-year",
+      "pitchLine": "\"Everyone who buys a plow or spreader from you gets a snow business site and route sign-up to fill the new equipment.\"",
+      "whyItWorks": "Dealers want buyers busy enough to buy a second truck, and the snow client proves the template works."
+    },
+    {
+      "route": "Multi-site property management firms",
+      "whoPays": "The management firm",
+      "min": 8000,
+      "max": 30000,
+      "unit": "one-time",
+      "pitchLine": "\"Every snow vendor across your buildings uploads storm logs, photos and certificates to one portal you control.\"",
+      "whyItWorks": "Large firms chase snow records after every storm. The client's log app proves you understand it."
+    },
+    {
+      "route": "White-label snow site template for agencies",
+      "whoPays": "The agency, per site",
+      "min": 500,
+      "max": 1200,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency builds landscaping sites that ignore winter. License my snow capability template with bid request and driveway sign-up.\"",
+      "whyItWorks": "Agencies already have landscaper clients who plow; the snow template is an easy add-on for them."
+    },
+    {
+      "route": "Retail and restaurant chains' winter vendor desk",
+      "whoPays": "The chain, annually",
+      "min": 3000,
+      "max": 12000,
+      "unit": "per-year",
+      "pitchLine": "\"Every location's snow contractor, storm logs and response times on one desk, so the facilities team stops calling plow operators one by one.\"",
+      "whyItWorks": "Chains manage many local snow vendors and pay for a single view of them."
+    },
+    {
+      "route": "Municipal sidewalk snow programs",
+      "whoPays": "The town or city public works office",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Residents who can't shovel get matched to vetted local snow crews, with a request page and a log the town can check.\"",
+      "whyItWorks": "Towns need sidewalk help for older residents, and the snow client's logs make the program accountable."
+    },
+    {
+      "route": "The same snow stack in the next northern metro",
+      "whoPays": "New snow clients in a new metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I work with one snow contractor per area, and {City} has its plow crew. The next snowbelt city is open.\"",
+      "whyItWorks": "Non-competing geography lets you reuse the capability page, the log app and the proof."
+    },
+    {
+      "route": "Insurance agencies serving snow contractors",
+      "whoPays": "The insurance agency, annually",
+      "min": 2000,
+      "max": 6000,
+      "unit": "per-year",
+      "pitchLine": "\"Your snow contractor clients get a service log template with the records you ask for at renewal, branded for your agency.\"",
+      "whyItWorks": "Agencies want well-documented clients, and the snow log is already built."
+    },
+    {
+      "route": "Summer landscaping groups adding snow",
+      "whoPays": "The landscaping group, per branch",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Each of your branches can sell winter snow contracts with the same capability page and driveway sign-up, built once.\"",
+      "whyItWorks": "Groups want year-round revenue from summer crews, and the template is ready."
+    },
+    {
+      "route": "Rescue stalled snow dispatch builds",
+      "whoPays": "The stranded snow contractor",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"A dispatch board or storm log app nobody finished before the season? I'll get the snow workflow running before the first storm.\"",
+      "whyItWorks": "Stranded owners already decided to buy, and winter is a hard deadline."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Snow capability site plus care plan, one contract",
+      "min": 1500,
+      "max": 2500,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The snow site and the care plan go on one contract, so a sign-up deadline banner or a storm notice is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 14,
+      "offer": "Residential route sign-up with payment",
+      "min": 1000,
+      "max": 2500,
+      "unit": "one-time",
+      "trigger": "They mention driveway customers calling to ask if there's room on the snow route.",
+      "line": "\"Those driveway calls can sign up and pay themselves. Let's fill the plow route before the first storm.\""
+    },
+    {
+      "rung": 3,
+      "day": 30,
+      "offer": "Storm-day service log app",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "trigger": "A manager asks for proof of service, or the first storm is in the forecast.",
+      "line": "\"The first manager who asks when the lot was salted gets a time-stamped snow log instead of a guess.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Property manager reference collection",
+      "min": 79,
+      "max": 149,
+      "unit": "monthly",
+      "trigger": "After the first big storm, at least one manager thanks them.",
+      "line": "\"That manager's thank-you after the storm is a reference for next season's snow bids.\""
+    },
+    {
+      "rung": 5,
+      "day": 120,
+      "offer": "Dispatch board with live site status",
+      "min": 3000,
+      "max": 9000,
+      "unit": "one-time",
+      "trigger": "Storm-night phone calls from managers pile up, or they add a crew.",
+      "line": "\"Those storm-night calls stop when managers can see their lot's plowing status themselves.\""
+    },
+    {
+      "rung": 6,
+      "day": 240,
+      "offer": "Job costing per snow site",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "trigger": "The season ends and they start thinking about rebidding.",
+      "line": "\"Before you rebid any lot, see which snow sites actually made money this winter.\""
+    },
+    {
+      "rung": 7,
+      "day": 270,
+      "offer": "Snow contract season outreach to managers",
+      "min": 400,
+      "max": 900,
+      "unit": "one-time",
+      "trigger": "July arrives, with a winter of logs and references to show.",
+      "line": "\"Contract season is here and you have a full winter of snow logs. Let's show them to the managers who don't know you yet.\""
+    }
+  ]
+}
