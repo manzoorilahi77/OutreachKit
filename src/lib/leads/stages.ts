@@ -1,6 +1,4 @@
-import type { Enums } from "@/lib/supabase/database.types";
-
-export type Stage = Enums<"lead_stage">;
+export type Stage = "sourced" | "qualified" | "demo_built" | "contacted" | "replied" | "call_booked" | "proposal_sent" | "won" | "lost" | "nurture";
 
 /** The 8 pipeline stages of section 09. Stage 08 is "Won / Lost / Nurture", so it has three values. */
 export const STAGES: { value: Stage; n: string; label: string }[] = [
@@ -23,12 +21,20 @@ export const FLOW_RANK: Partial<Record<Stage, number>> = {
   sourced: 1, qualified: 2, demo_built: 3, contacted: 4, replied: 5, call_booked: 6, proposal_sent: 7, won: 7,
 };
 
-export type Channel = "instagram_dm" | "facebook_dm" | "call" | "email" | "other";
+export type Channel = "instagram_dm" | "facebook_dm" | "whatsapp" | "call" | "email" | "other";
 export const CHANNELS: { value: Channel; label: string }[] = [
   { value: "instagram_dm", label: "Instagram DM" },
   { value: "facebook_dm", label: "Facebook DM" },
+  { value: "whatsapp", label: "WhatsApp" },
   { value: "call", label: "Call" },
   { value: "email", label: "Email" },
   { value: "other", label: "Other" },
 ];
 export const channelLabel = (c: Channel | null | undefined) => CHANNELS.find((x) => x.value === c)?.label ?? "";
+
+/** The leads page filters stages in three groups. Won, Lost and Nurture sit with Closing, where a lead ends up. */
+export const STAGE_GROUPS: { key: "prospecting" | "outreach" | "closing"; label: string; stages: Stage[] }[] = [
+  { key: "prospecting", label: "Prospecting", stages: ["sourced", "qualified", "demo_built"] },
+  { key: "outreach", label: "Outreach", stages: ["contacted", "replied"] },
+  { key: "closing", label: "Closing", stages: ["call_booked", "proposal_sent", "won", "lost", "nurture"] },
+];

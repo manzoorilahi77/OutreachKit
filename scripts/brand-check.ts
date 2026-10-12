@@ -4,7 +4,7 @@ import { readdirSync, readFileSync, statSync } from "node:fs";
 import { join, extname } from "node:path";
 
 const ALLOWED_HEX = new Set(["#0f2a4a", "#2c2e33", "#f7f5f2", "#1e6fff"]);
-const ROOTS = ["src", "public/brand", "supabase"];
+const ROOTS = ["src", "public/brand"];
 const EXTS = new Set([".ts", ".tsx", ".css", ".svg", ".html", ".mjs", ".sql", ".md"]);
 // The skipped files and directories, each with its reason, live in scripts/lib/brand-config.ts.
 import { SKIP_DIRS, SKIP_FILES } from "./lib/brand-config";

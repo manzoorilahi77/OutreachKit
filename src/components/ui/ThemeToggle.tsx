@@ -26,10 +26,11 @@ export function ThemeToggle() {
       type="button"
       onClick={toggle}
       aria-pressed={dark}
-      className="inline-flex min-h-11 items-center gap-2 rounded-md border border-warm/50 px-3 text-sm text-warm hover:bg-warm/10"
+      aria-label={dark ? "Light mode" : "Dark mode"}
+      className="inline-flex min-h-11 items-center gap-2 whitespace-nowrap rounded-md border border-warm/50 px-3 text-sm text-warm hover:bg-warm/10"
     >
       {dark ? <SunIcon /> : <MoonIcon />}
-      <span>{dark ? "Light mode" : "Dark mode"}</span>
+      <span className="hidden sm:inline">{dark ? "Light mode" : "Dark mode"}</span>
     </button>
   );
 }

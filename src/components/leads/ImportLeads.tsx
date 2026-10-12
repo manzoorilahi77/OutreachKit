@@ -82,7 +82,7 @@ export function ImportLeads() {
           )}
           {preview.duplicates.length > 0 && (
             <TableWrap label="Duplicates, skipped" minWidth={480}>
-              <thead><tr>{["Line", "Business", "Already in your leads by"].map((h) => <th key={h} scope="col" className={th}>{h}</th>)}</tr></thead>
+              <thead><tr>{["Line", "Business", "Already a lead, matched on"].map((h) => <th key={h} scope="col" className={th}>{h}</th>)}</tr></thead>
               <tbody>{preview.duplicates.map((d) => <tr key={d.line}><td className={`${td} tabular-nums`}>{d.line}</td><td className={td}>{d.business}</td><td className={td}>{d.matchedOn}</td></tr>)}</tbody>
             </TableWrap>
           )}

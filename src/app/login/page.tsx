@@ -1,25 +1,21 @@
 import type { Metadata } from "next";
 import { redirect } from "next/navigation";
-import { SignInForm } from "@/components/account/SignInForm";
+import { LoginForm } from "@/components/account/LoginForm";
 import { SectionHead } from "@/components/ui/SectionHead";
+import { getResolved } from "@/lib/auth/server";
 import { safeNext } from "@/lib/safe-next";
-import { supabaseConfigured } from "@/lib/supabase/env";
-import { getSession } from "@/lib/supabase/server";
 
 export const metadata: Metadata = { title: "Sign in" };
 
-export default async function LoginPage({ searchParams }: { searchParams: Promise<{ next?: string; error?: string }> }) {
+export default async function LoginPage({ searchParams }: { searchParams: Promise<{ next?: string }> }) {
   const sp = await searchParams;
-  const next = safeNext(sp.next);
-  if (await getSession()) redirect(next);
+  const r = await getResolved();
+  if (r.kind === "ok") redirect(r.session.mustChangePassword ? "/account/password" : r.session.home);
+  if (r.kind === "no_access") redirect("/no-access");
   return (
     <div className="mx-auto max-w-xl px-4 py-12 sm:px-6">
-      <SectionHead num="Account" title="Sign in" sub="Save kits and track your leads. The playbook and the kit console work without an account." />
-      {supabaseConfigured() ? (
-        <SignInForm next={next} expired={sp.error === "link"} />
-      ) : (
-        <p>Sign-in is not set up on this site yet. The playbook and the kit console still work.</p>
-      )}
+      <SectionHead num="Famysys Outreach Kit" title="Sign in" sub="Use the username and temporary password your admin sent you. There is no sign-up and no email." />
+      <LoginForm next={safeNext(sp.next)} />
     </div>
   );
 }

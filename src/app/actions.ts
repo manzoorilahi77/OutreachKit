@@ -1,83 +1,121 @@
 "use server";
 
-import { headers } from "next/headers";
+import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import { revalidatePath } from "next/cache";
+import { COOKIE_NAME, SESSION_MS, signSession } from "@/lib/auth/cookie";
+import { recordSignIn } from "@/lib/auth/lastSignIn";
+import { hashPassword, passwordProblem, verifyPassword } from "@/lib/auth/password";
+import { fileStorage, SignInLimiter } from "@/lib/auth/rateLimit";
+import { ROLE_HOMES } from "@/lib/auth/roles";
+import { sessionSecret } from "@/lib/auth/secret";
+import { authStore, checkPerm, getSession } from "@/lib/auth/server";
+import { authenticate } from "@/lib/auth/signin";
+import { now } from "@/lib/clock";
 import { validateKit } from "@/lib/kit/validate";
 import { isDirectionId } from "@/lib/kit-v2/themes";
 import { safeNext } from "@/lib/safe-next";
-import { createClient, getSession } from "@/lib/supabase/server";
-import { supabaseConfigured } from "@/lib/supabase/env";
+import { StoreError } from "@/lib/store/errors";
+import { rootDir } from "@/lib/store/paths";
+import type { KitStats, TerritoryEntry } from "@/lib/store/store";
+import type { KitStatus } from "@/lib/store/types";
+import { KIT_STATUSES } from "@/lib/store/types";
 
 export type FormState = { ok: boolean; message: string } | null;
 
-async function origin(): Promise<string> {
-  const h = await headers();
-  const proto = h.get("x-forwarded-proto") ?? "http";
-  const host = h.get("x-forwarded-host") ?? h.get("host") ?? "localhost:3000";
-  return h.get("origin") ?? `${proto}://${host}`;
-}
-
-export async function requestSignIn(_prev: FormState, formData: FormData): Promise<FormState> {
-  if (!supabaseConfigured()) return { ok: false, message: "Sign-in is not set up on this site yet." };
-  const email = String(formData.get("email") ?? "").trim();
-  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return { ok: false, message: "That email address doesn't look right." };
-  const next = safeNext(String(formData.get("next") ?? ""));
-  const supabase = await createClient();
-  const { error } = await supabase.auth.signInWithOtp({
-    email,
-    options: { emailRedirectTo: `${await origin()}/auth/callback?next=${encodeURIComponent(next)}` },
+export async function signIn(_prev: FormState, formData: FormData): Promise<FormState> {
+  const root = rootDir();
+  const username = String(formData.get("username") ?? "");
+  const res = await authenticate({
+    store: authStore(), limiter: new SignInLimiter(fileStorage(root)), username, password: String(formData.get("password") ?? ""), now: now(),
   });
-  if (error) return { ok: false, message: "We couldn't send the link. Try again in a minute." };
-  return { ok: true, message: `We sent a sign-in link to ${email}. It works once and expires in an hour.` };
+  if (!res.ok) return { ok: false, message: res.message };
+  const issuedAt = now().getTime();
+  (await cookies()).set(COOKIE_NAME, signSession({ username: res.user.username, issuedAt, rev: res.user.rev }, sessionSecret(root)), {
+    httpOnly: true, sameSite: "lax", path: "/", maxAge: Math.floor(SESSION_MS / 1000),
+  });
+  await recordSignIn(root, res.user.username, new Date(issuedAt).toISOString());
+  const home = ROLE_HOMES[res.user.role];
+  const next = safeNext(String(formData.get("next") ?? ""), home);
+  redirect(res.mustChangePassword ? "/account/password" : next === "/" ? home : next);
 }
 
 export async function signOut() {
-  if (supabaseConfigured()) await (await createClient()).auth.signOut();
-  redirect("/");
+  (await cookies()).delete(COOKIE_NAME);
+  redirect("/login");
 }
 
-export async function saveKit(raw: { category: string; device: string; state: string; city: string; direction?: string }): Promise<{ ok: true; id: string } | { ok: false; error: string }> {
-  const session = await getSession();
-  if (!session) return { ok: false, error: "Sign in to save this kit." };
+/** Sets the person's own password. The first sign-in with a temporary password lands here; so does "My password". */
+export async function changePassword(_prev: FormState, fd: FormData): Promise<FormState> {
+  const c = await checkPerm("account.change_password", { allowMustChange: true });
+  if (!c.ok) return { ok: false, message: c.message };
+  const { session, store } = c;
+  const next = String(fd.get("new") ?? "");
+  if (next !== String(fd.get("confirm") ?? "")) return { ok: false, message: "The two new passwords don't match." };
+  const problem = passwordProblem(next, session.user.username);
+  if (problem) return { ok: false, message: problem };
+  const user = await authStore().getUser(session.user.username);
+  if (!user) return { ok: false, message: "Your sign-in has ended. Sign in again." };
+  if (!session.mustChangePassword) {
+    const profile = await authStore().getProfile(user.username);
+    if (!(await verifyPassword(String(fd.get("current") ?? ""), profile?.passwordHash))) return { ok: false, message: "Your current password isn't right." };
+  }
+  await store.setOwnPassword(await hashPassword(next), user.pwRev);
+  redirect(session.home);
+}
+
+export type SaveKitResult =
+  | { ok: true; kit: { id: string; title: string; status: KitStatus }; team: string | null; stats: KitStats; others: TerritoryEntry[] }
+  | { ok: false; error: string };
+
+const sayIt = (e: unknown, fallback: string) => (e instanceof StoreError ? e.message : fallback);
+
+export async function saveKit(raw: { category: string; device: string; state: string; city: string; direction?: string }): Promise<SaveKitResult> {
+  const c = await checkPerm("kits.save");
+  if (!c.ok) return { ok: false, error: c.message };
   const v = validateKit(raw);
   if (!v.ok) return v;
-  const supabase = await createClient();
-  const { data, error } = await supabase
-    .from("kits")
-    .insert({
-      category: v.value.category, device: v.value.device, state: v.value.state, city: v.value.city, city_is_free: v.value.cityIsFree,
+  try {
+    const kit = await c.store.createKit({
+      category: v.value.category, device: v.value.device, state: v.value.state, city: v.value.city, cityIsFree: v.value.cityIsFree,
       direction: isDirectionId(raw.direction) ? raw.direction : "b",
-    })
-    .select("id")
-    .single();
-  if (error || !data) return { ok: false, error: "We couldn't save the kit. Try again." };
-  revalidatePath("/kits");
-  return { ok: true, id: data.id };
+    });
+    const [stats, others] = await Promise.all([c.store.kitStats([kit]), c.store.territory(kit.category, kit.state, kit.city)]);
+    revalidatePath("/kits");
+    return { ok: true, kit: { id: kit.id, title: kit.title, status: kit.status }, team: c.session.team?.name ?? null, stats: stats.get(kit.id)!, others };
+  } catch (e) {
+    return { ok: false, error: sayIt(e, "We couldn't save the kit. Try again.") };
+  }
 }
 
-export async function deleteKit(formData: FormData) {
-  const id = String(formData.get("id") ?? "");
-  if (!(await getSession()) || !id) return;
-  await (await createClient()).from("kits").delete().eq("id", id);
-  revalidatePath("/kits");
+export async function updateKit(_prev: FormState, fd: FormData): Promise<FormState> {
+  const c = await checkPerm("kits.save");
+  if (!c.ok) return { ok: false, message: c.message };
+  const status = String(fd.get("status") ?? "") as KitStatus;
+  if (!KIT_STATUSES.includes(status)) return { ok: false, message: "Choose a status." };
+  try {
+    await c.store.updateKit(String(fd.get("id") ?? ""), { title: String(fd.get("title") ?? ""), status });
+  } catch (e) {
+    return { ok: false, message: sayIt(e, "We couldn't save the kit. Try again.") };
+  }
+  revalidatePath("/kits", "layout");
+  return { ok: true, message: "Saved." };
 }
 
 export async function updateProfile(_prev: FormState, formData: FormData): Promise<FormState> {
-  const session = await getSession();
-  if (!session) return { ok: false, message: "Sign in first." };
-  const device = formData.get("default_device") === "mobile" ? "mobile" : "desktop";
-  const domain = String(formData.get("demo_domain") ?? "").trim().replace(/^https?:\/\//, "").replace(/\/+$/, "");
-  const { error } = await (await createClient())
-    .from("profiles")
-    .update({
-      name: String(formData.get("name") ?? "").trim().slice(0, 120),
-      studio: String(formData.get("studio") ?? "").trim().slice(0, 120),
-      demo_domain: domain.slice(0, 200),
-      default_device: device,
-    })
-    .eq("id", session.user.id);
-  if (error) return { ok: false, message: "We couldn't save your details. Try again." };
+  const c = await checkPerm("account.change_password");
+  if (!c.ok) return { ok: false, message: c.message };
+  await c.store.saveProfile({ defaultDevice: formData.get("default_device") === "mobile" ? "mobile" : "desktop" });
   revalidatePath("/", "layout");
   return { ok: true, message: "Saved." };
+}
+
+export async function markSectionRead(sectionId: string): Promise<void> {
+  const c = await checkPerm("playbook.read");
+  if (!c.ok || !/^[a-z]{2,12}$/.test(sectionId)) return;
+  await c.store.markRead(sectionId);
+}
+
+export async function currentHome(): Promise<string | null> {
+  return (await getSession())?.home ?? null;
 }

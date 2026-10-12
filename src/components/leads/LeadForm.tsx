@@ -10,20 +10,22 @@ import { CATS } from "@/lib/kit/categories";
 import { CHECK_LABELS, type CheckField } from "@/lib/leads/checks";
 import { scoreOf, verdictOf, VERDICT_LABEL } from "@/lib/leads/score";
 import { CHANNELS } from "@/lib/leads/stages";
-import type { Tables } from "@/lib/supabase/database.types";
+import type { LeadView } from "@/lib/store/types";
 
-type Lead = Tables<"leads">;
+type Lead = LeadView;
 type Props = {
   action: (prev: FormState, fd: FormData) => Promise<FormState>;
   lead?: Lead;
   kitId?: string;
   defaults?: { category?: string; city?: string; state?: string };
   submitLabel: string;
+  /** A researcher contacts no one: the demo and outreach fields are hidden. */
+  restricted?: boolean;
 };
 
 const Legend = ({ children }: { children: React.ReactNode }) => <legend className="mb-3 text-xl font-medium text-head">{children}</legend>;
 
-export function LeadForm({ action, lead, kitId, defaults, submitLabel }: Props) {
+export function LeadForm({ action, lead, kitId, defaults, submitLabel, restricted = false }: Props) {
   const [state, formAction, pending] = useActionState<FormState, FormData>(action, null);
   const [checks, setChecks] = useState<Record<CheckField, boolean>>(
     () => Object.fromEntries(CHECK_LABELS.map((c) => [c.field, lead ? lead[c.field] : false])) as Record<CheckField, boolean>,
@@ -106,18 +108,20 @@ export function LeadForm({ action, lead, kitId, defaults, submitLabel }: Props) 
       </fieldset>
 
       <fieldset className="space-y-4">
-        <Legend>Demo and outreach</Legend>
-        <div className="grid gap-4 md:grid-cols-2">
-          <Field id="demo_url" label="Demo URL"><Input id="demo_url" name="demo_url" defaultValue={v("demo_url")} autoComplete="off" /></Field>
-          <Field id="demo_built_date" label="Demo built date"><Input id="demo_built_date" name="demo_built_date" type="date" defaultValue={v("demo_built_date")} /></Field>
-          <Field id="first_contact_date" label="First contact date"><Input id="first_contact_date" name="first_contact_date" type="date" defaultValue={v("first_contact_date")} /></Field>
-          <Field id="channel" label="Channel">
-            <Select id="channel" name="channel" defaultValue={v("channel")}>
-              <option value="">Not contacted</option>
-              {CHANNELS.map((c) => <option key={c.value} value={c.value}>{c.label}</option>)}
-            </Select>
-          </Field>
-        </div>
+        <Legend>{restricted ? "Notes" : "Demo and outreach"}</Legend>
+        {!restricted && (
+          <div className="grid gap-4 md:grid-cols-2">
+            <Field id="demo_url" label="Demo URL"><Input id="demo_url" name="demo_url" defaultValue={v("demo_url")} autoComplete="off" /></Field>
+            <Field id="demo_built_date" label="Demo built date"><Input id="demo_built_date" name="demo_built_date" type="date" defaultValue={v("demo_built_date")} /></Field>
+            <Field id="first_contact_date" label="First contact date"><Input id="first_contact_date" name="first_contact_date" type="date" defaultValue={v("first_contact_date")} /></Field>
+            <Field id="channel" label="Channel">
+              <Select id="channel" name="channel" defaultValue={v("channel")}>
+                <option value="">Not contacted</option>
+                {CHANNELS.map((c) => <option key={c.value} value={c.value}>{c.label}</option>)}
+              </Select>
+            </Field>
+          </div>
+        )}
         <Field id="notes" label="Notes"><textarea id="notes" name="notes" rows={4} defaultValue={v("notes")} className="w-full rounded-md border border-fg/60 bg-bg px-3 py-2 text-base text-fg" /></Field>
       </fieldset>
 

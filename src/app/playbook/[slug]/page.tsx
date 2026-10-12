@@ -3,6 +3,8 @@ import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { BlocksView } from "@/components/playbook/BlockView";
 import { PlaybookFooter } from "@/components/playbook/PlaybookFooter";
+import { MarkRead } from "@/components/playbook/MarkRead";
+import { requirePerm } from "@/lib/auth/server";
 import { SectionTabs } from "@/components/playbook/SectionTabs";
 import { SectionHead } from "@/components/ui/SectionHead";
 import { CONSOLE_SECTION, findSection, neighbours, sectionHref } from "@/lib/playbook";
@@ -16,13 +18,15 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
 
 export default async function SectionPage({ params }: Params) {
   const { slug } = await params;
-  if (slug === CONSOLE_SECTION || slug === "kit") redirect("/");
+  await requirePerm("playbook.read");
+  if (slug === CONSOLE_SECTION || slug === "kit") redirect("/console");
   const section = findSection(slug);
   if (!section) notFound();
   const { prev, next } = neighbours(section.id);
   return (
     <>
       <SectionTabs />
+      <MarkRead id={slug} />
       <article id={section.id} className="mx-auto max-w-6xl space-y-6 px-4 py-10 sm:px-6">
         <p><Link href="/playbook">← Playbook</Link></p>
         <SectionHead num={section.num} title={section.title} sub={section.sub} />

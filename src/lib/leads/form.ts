@@ -48,7 +48,7 @@ export function parseLeadForm(fd: FormData): Ok<LeadInput> | Bad {
 
   const found = text(fd, "website_found", 3);
   const channelRaw = text(fd, "channel", 20);
-  const channel = (["instagram_dm", "facebook_dm", "call", "email", "other"] as const).find((c) => c === channelRaw) ?? null;
+  const channel = (["instagram_dm", "facebook_dm", "whatsapp", "call", "email", "other"] as const).find((c) => c === channelRaw) ?? null;
 
   const checks: Record<string, boolean> = {};
   for (const f of CHECK_FIELDS) checks[f] = fd.get(f) === "on";

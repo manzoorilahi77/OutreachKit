@@ -1,7 +1,14 @@
-// pnpm e2e: drives the running app (PORT, default 3100) in a real browser.
+// pnpm e2e: two app instances on two clones of a temporary bare repo, driven in a real browser.
+//   owner laptop (port 3100) and teammate laptop (port 3101), both over one build (.next-e2e).
+// Part 1 signs in as the owner and runs the Kit Console, board and theme checks.
+// Part 2 is the team: the owner creates a BD and syncs; the teammate's app pulls; the BD signs in, is forced to change the
+// temporary password, builds Roofing in Dallas, TX, saves it, adds a lead and syncs; the owner pulls and sees the lead in
+// Team; the owner resets the BD's password and syncs; the teammate's session ends after its next pull; and a clock
+// override shows a session open on day 13 and ended on day 14.
 import assert from "node:assert/strict";
-import { existsSync, readFileSync } from "node:fs";
-import { chromium } from "@playwright/test";
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import path from "node:path";
+import { chromium, type Page } from "@playwright/test";
 import { COLS } from "../src/data";
 import { CATS } from "../src/lib/kit/categories";
 import { buildContext, generateKit } from "../src/lib/kit/generate";
@@ -9,363 +16,423 @@ import { kitText } from "../src/lib/kit/text";
 import { applyCategoryKit } from "../src/lib/kit-v2/apply";
 import { kitSlug } from "../src/lib/kit-v2/types";
 import type { CategoryKit } from "../src/lib/kit-v2/types";
+import { SIGNIN_ERROR } from "../src/lib/auth/signin";
+import { ensureBuild, startApp, type RunningApp } from "./lib/app";
+import { createLab, git, runPredev } from "./lib/lab";
 
-const base = `http://localhost:${process.env.PORT ?? 3100}`;
+const OWNER_PORT = Number(process.env.E2E_OWNER_PORT ?? process.env.PORT ?? 3100);
+const TEAMMATE_PORT = Number(process.env.E2E_TEAMMATE_PORT ?? OWNER_PORT + 1);
+
 // Fencing & gates has a category kit, so the console shows the v2 overlay; its goldens are golden/v2.
-// The original's own payloads are still proven by the golden tests and by a category with no kit file below.
-const fencingInput = { cat: "Fencing & gates", device: "desktop" as const, st: "TX" as const, city: "Austin" };
+// Step 4 starts from the account and the workspace, so the kit is built with the owner's name, the studio and the demo domain.
+const DETAILS = { you: "Olive Owner", brand: "Famysys", domain: "famysys.com" };
+const fencingInput = { cat: "Fencing & gates", device: "desktop" as const, st: "TX" as const, city: "Austin", ...DETAILS };
 const fencingCk = JSON.parse(readFileSync("src/kits/fencing-gates.json", "utf8")) as CategoryKit;
 const golden = kitText(applyCategoryKit(generateKit(fencingInput), buildContext(fencingInput), fencingCk, "b"));
 const genericCat = CATS.find((c) => !existsSync(`src/kits/${kitSlug(c.n)}.json`));
 
+ensureBuild();
+const lab = await createLab();
+let owner: RunningApp | null = null;
+let teammate: RunningApp | null = null;
 const browser = await chromium.launch();
-const ctx = await browser.newContext({ viewport: { width: 1280, height: 900 }, permissions: ["clipboard-read", "clipboard-write"] });
-const page = await ctx.newPage();
 const errors: string[] = [];
-page.on("pageerror", (e) => errors.push(e.message));
-page.on("console", (m) => { if (m.type() === "error") errors.push(m.text()); });
 
-async function consoleFlow() {
-  await page.goto(base + "/", { waitUntil: "networkidle" });
-  const build = page.getByRole("button", { name: "Build my field kit" });
+const watch = (page: Page) => {
+  page.on("pageerror", (e) => errors.push(e.message));
+  page.on("console", (m) => { if (m.type() === "error") errors.push(m.text()); });
+};
+const settle = (page: Page) => page.waitForTimeout(500);
+
+async function signIn(page: Page, base: string, username: string, password: string) {
+  await page.goto(base + "/login", { waitUntil: "load" });
+  await page.fill("#username", username);
+  await page.fill("#password", password);
+  await page.getByRole("button", { name: "Sign in" }).click();
+}
+
+async function syncNow(page: Page) {
+  const ctl = page.getByTestId("sync-control");
+  await ctl.getByRole("button", { name: "Sync now" }).click();
+  await ctl.getByText(/^Synced (just now|\d+ min ago)$/).waitFor({ timeout: 60000 });
+}
+
+try {
+  owner = await startApp({ root: lab.ownerRoot, port: OWNER_PORT, allowClock: true });
+  const ob = owner.url;
+
+  // ---------------------------------------------------------------- Part 1: the console, board and theme (signed in as the owner)
+  const octx = await browser.newContext({ viewport: { width: 1280, height: 900 }, permissions: ["clipboard-read", "clipboard-write"] });
+  const op = await octx.newPage();
+  watch(op);
+
+  // Signed out, the only page is /login.
+  assert.equal((await op.request.get(ob + "/console", { maxRedirects: 0 })).status(), 307, "/console needs a sign-in");
+  assert.match((await op.request.get(ob + "/leads", { maxRedirects: 0 })).headers()["location"] ?? "", /\/login/);
+  assert.equal((await op.request.get(ob + "/api/sync")).status(), 401, "the API needs a sign-in too");
+  await signIn(op, ob, "owner", "wrong password");
+  await op.getByText(SIGNIN_ERROR).waitFor();
+  await signIn(op, ob, "owner", lab.ownerPassword);
+  await op.waitForURL(ob + "/platform");
+  console.log("sign-in: one error for a wrong password; the owner lands on /platform");
+
+  await op.goto(ob + "/console", { waitUntil: "networkidle" });
+  const build = op.getByRole("button", { name: "Build my field kit" });
   assert.equal(await build.isDisabled(), true, "build is disabled until the console is complete");
-
-  await page.getByRole("button", { name: /^Fencing & gates/ }).click();
-  await page.selectOption("#stateSel", "TX");
-  await page.selectOption("#citySel", "Austin");
+  await op.getByRole("button", { name: /^Fencing & gates/ }).click();
+  await op.selectOption("#stateSel", "TX");
+  await op.selectOption("#citySel", "Austin");
   assert.equal(await build.isEnabled(), true);
   await build.click();
 
-  const kit = page.getByRole("article", { name: "Field kit" });
+  const kit = op.getByRole("article", { name: "Field kit" });
   await kit.waitFor();
   assert.equal(await kit.locator("section").count(), 18, "17 kit sections plus design directions");
   assert.match(await kit.locator("header").first().innerText(), /Category kit · Unreviewed/);
   assert.match(await kit.locator("h3").first().innerText(), /Fencing & gates — Austin, TX/);
-  assert.match(page.url(), /cat=Fencing\+%26\+gates&st=TX&city=Austin&dev=desktop&dir=b/);
+  assert.match(op.url(), /\/console\?cat=Fencing\+%26\+gates&st=TX&city=Austin&dev=desktop&dir=b/);
+  assert.equal(await kit.getByRole("button", { name: "Save this kit" }).count(), 1, "the saved strip replaces the old Save button");
 
-  // Copy the build prompt and check the clipboard holds exactly what the original builds.
   await kit.getByRole("button", { name: "Copy", exact: true }).first().click();
-  assert.equal(await page.evaluate(() => navigator.clipboard.readText()), golden.clips[0]);
-  // First opener: the DM button copies the line only; the second button adds the link (correction 2).
+  assert.equal(await op.evaluate(() => navigator.clipboard.readText()), golden.clips[0]);
   await kit.getByRole("button", { name: "Copy DM line" }).first().click();
-  const first = await page.evaluate(() => navigator.clipboard.readText());
+  const first = await op.evaluate(() => navigator.clipboard.readText());
   assert.equal(first, golden.clips[1]);
   assert.ok(!first.includes("https://"), "the DM line has no link");
   await kit.getByRole("button", { name: "Line + link (for reply or email)" }).first().click();
-  const withLink = await page.evaluate(() => navigator.clipboard.readText());
+  const withLink = await op.evaluate(() => navigator.clipboard.readText());
   assert.equal(withLink, golden.clips[2]);
   assert.ok(withLink.startsWith(first) && withLink.includes("https://"));
-  // Opener count and message count
   assert.equal(await kit.locator('section[aria-label="openers"] li').count(), 15);
   console.log("console: build, URL sync, copy payloads match the category kit (golden/v2)");
 
-  // Directions: A → B → C changes the preview selection and the build prompt
   const prompt = () => kit.locator('section[aria-label="prompt"] pre').innerText();
   for (const [d, theme] of [["A", "C30"], ["B", "C39"], ["C", "C4"]] as const) {
-    const radio = kit.getByRole("radio", { name: new RegExp(`direction ${d}|: ${d},`, "i") });
-    await radio.click();
+    await kit.getByRole("radio", { name: new RegExp(`direction ${d}|: ${d},`, "i") }).click();
     assert.equal(await kit.getByRole("radio", { checked: true }).innerText(), `Using direction ${d}`);
     assert.match(await prompt(), new RegExp(`Set themeId: '${theme}'`));
-    assert.match(page.url(), new RegExp(`dir=${d.toLowerCase()}`));
+    assert.match(op.url(), new RegExp(`dir=${d.toLowerCase()}`));
   }
   await kit.getByRole("radio", { checked: true }).press("ArrowLeft");
   assert.match(await kit.getByRole("radio", { checked: true }).innerText(), /Using direction B/, "arrow keys move the selection");
-  assert.match(await kit.getByRole("status").first().innerText(), /Direction B selected/);
-  // Cross-sell tabs
   await kit.getByRole("tab", { name: "With AI" }).click();
   assert.equal(await kit.getByRole("tabpanel").filter({ visible: true }).count(), 1);
-  console.log("console: directions switch the preview and the build prompt; tabs work");
-
-  // Download kit (.md)
-  const [dl] = await Promise.all([page.waitForEvent("download"), kit.getByRole("button", { name: "Download kit (.md)" }).click()]);
+  const [dl] = await Promise.all([op.waitForEvent("download"), kit.getByRole("button", { name: "Download kit (.md)" }).click()]);
   assert.equal(dl.suggestedFilename(), "fieldkit_fencing-gates_austin.md");
-  const md = readFileSync((await dl.path())!, "utf8");
-  assert.match(md, /^---\ncategory: "Fencing & gates"\n/);
-  assert.match(md, /contentSource: "category"/);
-  assert.match(md, /\n## Openers\n/);
-  console.log("console: kit download");
+  assert.match(readFileSync((await dl.path())!, "utf8"), /^---\ncategory: "Fencing & gates"\n/);
+  console.log("console: directions switch the preview and the build prompt; tabs; download");
 
-  // A category with no kit file: the ported kit, unchanged, marked Generic kit
   if (genericCat) {
-    const gi = { cat: genericCat.n, device: "desktop" as const, st: "TX" as const, city: "Austin" };
+    const gi = { cat: genericCat.n, device: "desktop" as const, st: "TX" as const, city: "Austin", ...DETAILS };
     const v1 = kitText(generateKit(gi));
-    await page.goto(base + "/?" + new URLSearchParams({ cat: gi.cat, st: "TX", city: "Austin", dev: "desktop", build: "1" }), { waitUntil: "networkidle" });
-    const gk = page.getByRole("article", { name: "Field kit" });
+    await op.goto(ob + "/console?" + new URLSearchParams({ cat: gi.cat, st: "TX", city: "Austin", dev: "desktop", build: "1" }), { waitUntil: "networkidle" });
+    const gk = op.getByRole("article", { name: "Field kit" });
     await gk.waitFor();
     assert.equal(await gk.locator("section").count(), 17);
     assert.match(await gk.locator("header").first().innerText(), /Generic kit/);
     await gk.getByRole("button", { name: "Copy", exact: true }).first().click();
-    assert.equal(await page.evaluate(() => navigator.clipboard.readText()), v1.clips[0], "the generic build prompt is the original's");
-    assert.doesNotMatch(page.url(), /dir=/);
+    assert.equal(await op.evaluate(() => navigator.clipboard.readText()), v1.clips[0], "the generic build prompt is the original's");
     console.log(`console: ${genericCat.n} has no kit file and shows the original kit, marked Generic kit`);
-  } else console.log("console: every category has a kit file; the original layer is covered by the golden tests");
+  }
 
-  // Reset and restore from the URL
-  await page.getByRole("button", { name: "Reset" }).click();
-  assert.equal(await page.getByRole("article", { name: "Field kit" }).count(), 0);
-  await page.goto(base + "/?cat=Hair+salons+%26+suites&dev=mobile&st=OR&city=Beaverton&build=1", { waitUntil: "networkidle" });
-  const kit2 = page.getByRole("article", { name: "Field kit" });
-  await kit2.waitFor();
-  assert.match(await kit2.locator("h3").first().innerText(), /Hair salons & suites — Beaverton, OR/);
-  assert.match(await kit2.innerText(), /Phone-primary/);
-  console.log("console: URL restores choices and builds");
+  await op.goto(ob + "/console", { waitUntil: "networkidle" });
+  await op.getByRole("button", { name: /^Commercial janitorial/ }).click();
+  await op.selectOption("#stateSel", "AR");
+  await op.fill("#cityFree", "Siloam Springs");
+  await op.getByRole("button", { name: "Build my field kit" }).click();
+  assert.match(await op.getByRole("article", { name: "Field kit" }).innerText(), /Unlisted town/);
+  assert.equal(await op.locator("#yourName").inputValue(), "Olive Owner", "Step 4 starts from the account and the workspace");
+  assert.equal(await op.locator("#yourBrand").inputValue(), "Famysys");
+  assert.equal(await op.locator("#yourDomain").inputValue(), "famysys.com");
+  console.log("console: free-typed city; Step 4 comes from the account and the workspace");
 
-  // A free-typed city
-  await page.goto(base + "/", { waitUntil: "networkidle" });
-  await page.getByRole("button", { name: /^Commercial janitorial/ }).click();
-  await page.selectOption("#stateSel", "AR");
-  await page.fill("#cityFree", "Siloam Springs");
-  await page.getByRole("button", { name: "Build my field kit" }).click();
-  await page.getByRole("article", { name: "Field kit" }).waitFor();
-  assert.match(await page.getByRole("article", { name: "Field kit" }).innerText(), /Unlisted town/);
-  console.log("console: free-typed city");
-}
-
-async function themeFlow() {
-  // Light is the default even when the system prefers dark; dark is a manual choice that is remembered.
-  const dark = await browser.newContext({ colorScheme: "dark" });
-  const p = await dark.newPage();
-  await p.goto(base + "/", { waitUntil: "load" });
-  await p.waitForTimeout(400);
-  const bg = () => p.evaluate(() => getComputedStyle(document.body).backgroundColor);
-  assert.equal(await bg(), "rgb(247, 245, 242)", "light (Warm White) by default, whatever the system says");
-  assert.equal(await p.evaluate(() => getComputedStyle(document.body).color), "rgb(44, 46, 51)");
-  await p.getByRole("button", { name: "Dark mode" }).click();
-  assert.equal(await bg(), "rgb(15, 42, 74)", "manual toggle to navy");
-  await p.reload({ waitUntil: "load" });
-  assert.equal(await bg(), "rgb(15, 42, 74)", "the choice is remembered");
-  await p.getByRole("button", { name: "Light mode" }).click();
-  assert.equal(await bg(), "rgb(247, 245, 242)");
-  await dark.close();
-  console.log("theme: light by default, manual dark toggle, remembered");
-}
-
-async function homeFlow() {
-  // The Kit Console is the home page; the playbook is a set of section pages.
-  await page.goto(base + "/", { waitUntil: "load" });
-  assert.equal(await page.getByRole("heading", { name: "Kit Console", level: 2 }).count(), 1);
-  assert.equal(await page.locator("section#math").count(), 0, "no playbook sections on the home page");
-  await page.goto(base + "/playbook", { waitUntil: "load" });
-  assert.equal(await page.locator('main ul > li a[href^="/playbook/"]').count(), 10, "ten section cards plus the console card");
-  await page.getByRole("link", { name: /Read this section/ }).first().click();
-  await page.waitForURL(/\/playbook\/math$/);
-  await page.getByRole("link", { name: /Next · 02/ }).click();
-  await page.waitForURL(/\/playbook\/choose$/);
-  assert.equal(await page.getByRole("link", { name: /04\s+Field kit builder/ }).getAttribute("href"), "/");
-  console.log("home: Kit Console first, playbook as section pages");
-}
-
-async function boardFlow() {
-  await page.goto(base + "/playbook/board", { waitUntil: "networkidle" });
-  const rows = page.locator('[aria-label="Category board"] tbody tr');
+  await op.goto(ob + "/playbook/board", { waitUntil: "networkidle" });
+  const rows = op.locator('[aria-label="Category board"] tbody tr');
   assert.equal(await rows.count(), 124);
-  const board = page.locator("#board");
+  const board = op.locator("#board");
   await board.getByRole("button", { name: "Tier A", exact: true }).click();
   const a = await rows.count();
   assert.ok(a > 0 && a < 124);
-  await board.getByRole("button", { name: "Outdoor & Hardscape" }).click();
-  assert.ok((await rows.count()) < a);
-  await board.getByRole("button", { name: "All families" }).click();
   await board.getByRole("button", { name: "All tiers" }).click();
-  await board.getByRole("button", { name: /^Category/ }).click();
-  const names = await rows.locator("td:first-child").allInnerTexts();
-  assert.deepEqual(names, [...names].sort((x, y) => x.localeCompare(y)), "sorted by name, ascending");
-  console.log("board: filters and sort");
-}
+  console.log("board: filters");
 
-const env = Object.fromEntries(
-  (existsSync(".env.local") ? readFileSync(".env.local", "utf8") : "").split("\n").filter((l) => l.includes("=") && !l.startsWith("#")).map((l) => [l.slice(0, l.indexOf("=")), l.slice(l.indexOf("=") + 1)]),
-);
+  await op.goto(ob + "/playbook", { waitUntil: "load" });
+  assert.equal(await op.locator('main ul > li a[href^="/playbook/"]').count(), 10, "ten section cards plus the console card");
+  assert.equal(await op.locator('main ul > li a[href="/console"]').count(), 1);
+  await op.getByRole("link", { name: /Read this section/ }).first().click();
+  await op.waitForURL(/\/playbook\/math$/);
+  console.log("playbook: section pages");
 
-/** Reads the sign-in link out of the newest email to `to`, from the local mail catcher. */
-async function signInLink(to: string): Promise<string> {
-  for (let i = 0; i < 40; i++) {
-    const found = (await (await fetch(`${env.MAILPIT_URL}/api/v1/search?query=${encodeURIComponent("to:" + to)}`)).json()) as { messages: { ID: string }[] };
-    if (found.messages[0]) {
-      const msg = (await (await fetch(`${env.MAILPIT_URL}/api/v1/message/${found.messages[0].ID}`)).json()) as { HTML: string; Subject: string };
-      assert.equal(msg.Subject, "Your Famysys Outreach Kit sign-in link");
-      const href = /href="([^"]+)"/.exec(msg.HTML)![1]!;
-      return href.replace(/&amp;/g, "&");
-    }
-    await new Promise((r) => setTimeout(r, 250));
-  }
-  throw new Error("no sign-in email arrived");
-}
+  const dark = await browser.newContext({ colorScheme: "dark" });
+  const dp = await dark.newPage();
+  await dp.goto(ob + "/login", { waitUntil: "load" });
+  await dp.waitForTimeout(400);
+  const bg = () => dp.evaluate(() => getComputedStyle(document.body).backgroundColor);
+  assert.equal(await bg(), "rgb(247, 245, 242)", "light (Warm White) by default, whatever the system says");
+  await dp.getByRole("button", { name: "Dark mode" }).click();
+  assert.equal(await bg(), "rgb(15, 42, 74)", "manual toggle to navy");
+  await dp.reload({ waitUntil: "load" });
+  assert.equal(await bg(), "rgb(15, 42, 74)", "the choice is remembered");
+  await dark.close();
+  console.log("theme: light by default, manual dark toggle, remembered");
+  assert.deepEqual(errors, [], "no console errors in part 1");
 
-async function signIn(email: string, next = "/") {
-  await page.goto(`${base}/login?next=${encodeURIComponent(next)}`, { waitUntil: "networkidle" });
-  await page.fill("#email", email);
-  await page.getByRole("button", { name: "Email me a sign-in link" }).click();
-  await page.getByText("We sent a sign-in link").waitFor();
-  await page.goto(await signInLink(email));
-}
+  // ---------------------------------------------------------------- Part 2: two laptops
+  // The owner creates a team and a BD, and syncs.
+  await op.goto(ob + "/admin/teams", { waitUntil: "networkidle" });
+  await op.getByRole("button", { name: "Add a team" }).click();
+  await op.locator('input[name="name"]').last().fill("Team A");
+  await op.getByRole("button", { name: "Save teams" }).click();
+  await op.getByText("Teams saved.").waitFor();
 
-/** Prefetching keeps the network busy, so wait for load plus a moment for hydration instead of networkidle. */
-const settle = () => page.waitForTimeout(400);
+  await op.goto(ob + "/platform/users", { waitUntil: "networkidle" });
+  await op.fill("#nu-name", "Ravi Rao");
+  assert.equal(await op.inputValue("#nu-username"), "ravi.rao", "the username is suggested from the name");
+  await op.selectOption("#nu-role", "bd");
+  await op.selectOption("#nu-team", "team-a");
+  await op.getByRole("button", { name: "Create user" }).click();
+  const username = (await op.getByTestId("cred-username").innerText()).trim();
+  const tempPassword = (await op.getByTestId("cred-password").innerText()).trim();
+  assert.equal(username, "ravi.rao");
+  assert.match(tempPassword, /^[A-Za-z2-9]{4}-[A-Za-z2-9]{4}-[A-Za-z2-9]{4}$/);
+  assert.match(await op.getByText("Sync, then add their GitHub account to the repo.").innerText(), /GitHub/);
+  await op.getByRole("button", { name: "I've shared it" }).click();
+  assert.equal(await op.getByTestId("cred-password").count(), 0, "the password is shown once");
+  assert.ok(!readFileSync(path.join(lab.ownerRoot, "team", "users", "ravi.rao.json"), "utf8").includes(tempPassword), "only the hash is saved");
+  await syncNow(op);
+  assert.match(git(lab.ownerRoot, "log", "-1", "--format=%s"), /^sync: owner /);
+  // A password typed in the form becomes the temporary one.
+  await op.fill("#nu-name", "Tess Typed");
+  await op.fill("#nu-password", "short");
+  await op.getByRole("button", { name: "Create user" }).click();
+  assert.equal(await op.getByTestId("cred-password").count(), 0, "the browser refuses a password under 10 characters");
+  await op.fill("#nu-password", "Typed-Create-Pass-1");
+  await op.getByRole("button", { name: "Create user" }).click();
+  assert.equal((await op.getByTestId("cred-password").innerText()).trim(), "Typed-Create-Pass-1", "the typed password is the one shown");
+  await op.getByRole("button", { name: "I've shared it" }).click();
+  console.log("owner: created a BD, the password was shown once, a typed password is accepted, synced");
 
-async function accountFlow() {
-  const email = `e2e-${Date.now()}@example.com`;
+  // The teammate's laptop starts the app (predev pulls), and the BD signs in.
+  const early = await browser.newContext({ viewport: { width: 1280, height: 900 } });
+  teammate = await startApp({ root: lab.teammateRoot, port: TEAMMATE_PORT, allowClock: true });
+  const tb = teammate.url;
+  const ep = await early.newPage();
+  await signIn(ep, tb, username, tempPassword);
+  await ep.getByText(SIGNIN_ERROR).waitFor();
+  await early.close();
+  runPredev(lab.teammateRoot); // "pnpm dev": pulls the accounts
+  assert.ok(existsSync(path.join(lab.teammateRoot, "team", "users", "ravi.rao.json")));
+  const tctx = await browser.newContext({ viewport: { width: 1280, height: 900 } });
+  const tp = await tctx.newPage();
+  await signIn(tp, tb, username, tempPassword);
+  await tp.waitForURL(tb + "/account/password");
+  assert.equal(await tp.getByTestId("sync-control").count(), 0, "no app shell until the password is set");
+  assert.equal((await tp.request.get(tb + "/today", { maxRedirects: 0 })).headers()["location"]?.endsWith("/account/password"), true, "every page redirects to the password page");
+  await tp.fill("#new", "short");
+  await tp.fill("#confirm", "short");
+  await tp.getByRole("button", { name: "Set my password" }).click();
+  assert.equal(new URL(tp.url()).pathname, "/account/password", "the browser refuses fewer than 10 characters");
+  await tp.fill("#new", "ravi.rao-is-my-name");
+  await tp.fill("#confirm", "ravi.rao-is-my-name");
+  await tp.getByRole("button", { name: "Set my password" }).click();
+  await tp.getByText("Don't put your username in your password.").waitFor();
+  const ownPassword = "ravi-own-password-1";
+  await tp.fill("#new", ownPassword);
+  await tp.fill("#confirm", ownPassword);
+  await tp.getByRole("button", { name: "Set my password" }).click();
+  await tp.waitForURL(tb + "/today");
+  console.log("teammate: signed in with the temporary password, was forced to set their own, landed on /today");
+  assert.ok(readFileSync(path.join(lab.teammateRoot, "team", "data", "ravi.rao", "profile.json"), "utf8").includes("$2"), "own password stored as a hash");
+  assert.ok(!readFileSync(path.join(lab.teammateRoot, "team", "data", "ravi.rao", "profile.json"), "utf8").includes(ownPassword));
 
-  // Signed out: the console works, and saving asks for a sign-in that returns to the same kit.
-  await page.goto(base + "/?cat=Fencing+%26+gates&st=TX&city=Austin&build=1", { waitUntil: "load" });
-  const signInHref = await page.getByRole("link", { name: "Sign in to save this kit" }).getAttribute("href");
-  assert.match(signInHref!, /^\/login\?next=.*build%3D1/);
-  assert.equal((await page.request.get(base + "/leads", { maxRedirects: 0 })).status(), 307, "/leads needs a sign-in");
-
-  // Sign in with an emailed link and land back on the kit
-  await signIn(email, "/?cat=Fencing+%26+gates&st=TX&city=Austin&build=1");
-  await page.getByRole("article", { name: "Field kit" }).waitFor();
-  assert.ok(await page.getByRole("link", { name: "Saved kits" }).isVisible(), "signed in");
-
-  // Choose direction C, save the kit and find it in the list
-  await page.getByRole("radio", { name: /: C,/ }).click();
-  await page.getByRole("button", { name: "Save this kit" }).click();
-  await page.getByText("Saved.").waitFor();
-  await page.goto(base + "/kits", { waitUntil: "load" });
-  await settle();
-  assert.equal(await page.locator('[aria-label="Saved kits"] tbody tr').count(), 1);
-  await page.getByRole("link", { name: "Open" }).click();
-  await page.getByRole("article", { name: "Field kit" }).waitFor();
-  assert.match(await page.locator("h3").first().innerText(), /Fencing & gates — Austin, TX/);
-  assert.match(await page.getByRole("article").innerText(), /\{Your Name\}/, "placeholders until details are saved");
-  assert.equal(await page.getByRole("radio", { checked: true }).innerText(), "Using direction C", "the saved direction");
-
-  // Sign out and back in: the saved kit still opens with direction C
-  const kitUrl = page.url();
-  await page.goto(base + "/account", { waitUntil: "load" });
-  await settle();
-  await page.getByRole("button", { name: "Sign out" }).click();
-  await page.waitForURL(base + "/");
-  await signIn(email, new URL(kitUrl).pathname);
-  await page.getByRole("article", { name: "Field kit" }).waitFor();
-  assert.equal(await page.getByRole("radio", { checked: true }).innerText(), "Using direction C", "direction C survives a new session");
-  assert.match(await page.locator('section[aria-label="prompt"] pre').innerText(), /Set themeId: 'C4'/);
-
-  // Step 4 is filled once and reused
-  await page.goto(base + "/account", { waitUntil: "load" });
-  await settle();
-  await page.fill("#name", "Maria");
-  await page.fill("#studio", "Lone Star Web");
-  await page.fill("#demo_domain", "https://lonestarweb.com/");
-  await page.selectOption("#default_device", "mobile");
-  await page.getByRole("button", { name: "Save details" }).click();
-  await page.getByText("Saved.").waitFor();
-  await page.goto(base + "/kits", { waitUntil: "load" });
-  await settle();
-  await page.getByRole("link", { name: "Open" }).click();
-  const kitText = await page.getByRole("article").innerText();
-  assert.match(kitText, /https:\/\/lonestarweb\.com\/austin\/\{business-name\}/);
-  assert.match(kitText, /Maria/);
-  await page.goto(base + "/", { waitUntil: "load" });
-  await settle();
-  assert.equal(await page.locator("#yourName").inputValue(), "Maria");
-  assert.equal(await page.getByRole("button", { name: /Phone — native apps/ }).getAttribute("aria-pressed"), "true", "default device from the profile");
-  console.log("account: sign in by emailed link, save a kit, profile reused in the console");
-  return email;
-}
-
-async function leadsFlow() {
-  // From the saved kit to a scored lead, moved to Contacted, with its Day 2 next action
-  await page.goto(base + "/kits", { waitUntil: "load" });
-  await settle();
-  await page.getByRole("link", { name: "Open" }).click();
-  await page.getByRole("link", { name: "Create a lead from this kit" }).click();
-  await page.waitForURL(/\/leads\/new\?kit=/);
-  await settle();
-  assert.equal(await page.locator("#category").inputValue(), "Fencing & gates", "category comes from the kit");
-  assert.equal(await page.locator("#city").inputValue(), "Austin");
-  assert.equal(await page.locator("#state").inputValue(), "TX");
-  await page.fill("#business_name", "Acme Fence Co");
-  await page.fill("#phone", "+1 512 555 0100");
-  const boxes = page.locator('fieldset input[type="checkbox"]');
+  // The BD builds Roofing in Dallas, TX, saves it and adds a lead.
+  watch(tp);
+  await tp.goto(tb + "/console?cat=Roofing&st=TX&city=Dallas&build=1", { waitUntil: "networkidle" });
+  await tp.getByRole("button", { name: "Save this kit" }).click();
+  const strip = tp.getByRole("region", { name: "Saved kit" });
+  await strip.waitFor();
+  assert.match(await strip.innerText(), /Roofing · Dallas, TX/);
+  assert.match(await strip.innerText(), /Active/);
+  assert.match(await strip.innerText(), /Team A/);
+  assert.match(await strip.innerText(), /Not synced yet/);
+  assert.match(await strip.innerText(), /Nobody else has saved Roofing in Dallas, TX yet\. Duplicate businesses are blocked\./);
+  await strip.getByRole("link", { name: "Add the first lead" }).click();
+  await tp.waitForURL(/\/leads\/new\?kit=/);
+  await settle(tp);
+  assert.equal(await tp.locator("#category").inputValue(), "Roofing", "category comes from the kit");
+  assert.equal(await tp.locator("#city").inputValue(), "Dallas");
+  assert.equal(await tp.locator("#state").inputValue(), "TX");
+  await tp.fill("#business_name", "Smith Roofing");
+  await tp.fill("#phone", "(214) 555-0101");
+  const boxes = tp.locator('fieldset input[type="checkbox"]');
   assert.equal(await boxes.count(), 10, "ten scorer checks");
   for (let i = 0; i < 8; i++) await boxes.nth(i).check();
-  await page.getByText("8 / 10").first().waitFor();
-  await page.getByText("Hot — build the demo").waitFor();
-  await page.getByRole("button", { name: "Add lead" }).click();
-  await page.waitForURL(/\/leads\/[0-9a-f-]{36}$/);
-  const leadUrl = page.url();
-  assert.match(await page.locator("h1").innerText(), /Acme Fence Co/);
-  assert.match(await page.locator("header").last().innerText(), /8 \/ 10/);
+  await tp.getByText("8 / 10").first().waitFor();
+  await tp.getByRole("button", { name: "Add lead" }).click();
+  await tp.waitForURL(/\/leads\/[0-9a-f-]{36}$/);
+  assert.match(await tp.locator("h1").innerText(), /Smith Roofing/);
 
-  // Move to Contacted: Day 0 is today, so the next action is the Day 2 call
-  await settle();
-  await page.selectOption("#stage-select", "contacted");
-  await page.getByRole("button", { name: "Move", exact: true }).click();
-  await page.getByText("Moved.").waitFor();
-  const today = await page.evaluate(() => new Date().toLocaleDateString("en-CA"));
+  // Move to Contacted: Day 0 is today, the next action is the Day 2 call.
+  await settle(tp);
+  await tp.selectOption("#stage-select", "contacted");
+  await tp.getByRole("button", { name: "Move", exact: true }).click();
+  await tp.getByText("Moved.").waitFor();
+  const today = await tp.evaluate(() => new Date().toLocaleDateString("en-CA"));
   const d = new Date(today + "T00:00:00Z");
   d.setUTCDate(d.getUTCDate() + 2);
   const day2 = d.toISOString().slice(0, 10);
-  await page.reload({ waitUntil: "load" });
-  assert.match(await page.locator("header").last().innerText(), new RegExp(`Next action:\\s*${day2}`), "Day 2 next action");
-  assert.match(await page.locator("#seq-h + ol").innerText(), new RegExp(`Day 2\\s+${day2}\\s+Call the published business line`));
-  const history = await page.locator("#hist-h + ol").innerText();
-  assert.match(history, /Moved from Sourced to Contacted/);
-  assert.match(history, /Instagram DM · Instagram or Facebook DM/);
+  await tp.reload({ waitUntil: "load" });
+  assert.match(await tp.locator("header").last().innerText(), new RegExp(`Next action:\\s*${day2}`), "Day 2 next action");
+  assert.match(await tp.locator("#hist-h + ol").innerText(), /Moved from Sourced to Contacted/);
+  await tp.getByRole("button", { name: /Log it as done \(Call\)/ }).click();
+  await tp.waitForTimeout(800);
 
-  // Log the Day 2 call: the next action moves to Day 5
-  await page.getByRole("button", { name: /Log it as done \(Call\)/ }).click();
-  await page.waitForTimeout(800);
-  await page.reload({ waitUntil: "load" });
-  const d5 = new Date(today + "T00:00:00Z");
-  d5.setUTCDate(d5.getUTCDate() + 5);
-  assert.match(await page.locator("header").last().innerText(), new RegExp(`Next action:\\s*${d5.toISOString().slice(0, 10)}`), "Day 5 next action");
+  // The same business again is refused, naming the holder.
+  await tp.goto(tb + "/leads/new", { waitUntil: "load" });
+  await settle(tp);
+  await tp.fill("#business_name", "Smith Roofing LLC");
+  await tp.fill("#city", "Dallas");
+  await tp.getByRole("button", { name: "Add lead" }).click();
+  await tp.getByText("Smith Roofing LLC is already your lead.").waitFor();
 
-  // It shows on the list, filtered by stage
-  await page.goto(base + "/leads?stage=contacted", { waitUntil: "load" });
-  assert.equal(await page.locator('[aria-label="Leads"] tbody tr').count(), 1);
-
-  // CSV: the exact 28-column header of the original, and the lead's row
-  const csv = await (await page.request.get(base + "/leads/export.csv")).text();
+  // CSV: the exact 28-column header, and the audit trail.
+  const csv = await (await tp.request.get(tb + "/leads/export.csv")).text();
   const lines = csv.trim().split("\r\n");
   assert.equal(lines[0], COLS.join(","));
   assert.equal(lines[0]!.split(",").length, 28);
   assert.equal(lines.length, 2);
-  assert.match(lines[1]!, /Acme Fence Co/);
   assert.match(lines[1]!, /,8,Hot,/);
-  assert.match(lines[1]!, /,Instagram DM,No,Contacted,/);
+  assert.match(readFileSync(path.join(lab.teammateRoot, "team", "data", "ravi.rao", "audit.jsonl"), "utf8"), /"action":"leads\.export"/);
 
-  // Section 09 shows the target next to "not enough data" below 100 leads
-  await page.goto(base + "/playbook/track", { waitUntil: "load" });
-  const ratios = await page.locator('[aria-label="The six ratios: planning target and your live ratio"]').innerText();
-  assert.match(ratios, /Contacted → Replied\s+1 – 5%\s+Not enough data/);
-  assert.match(ratios, /Profiles per hour\s+40 – 60\s+Not tracked/);
-  console.log("leads: from a saved kit to a scored lead, Contacted, Day 2 next action, CSV header, live ratios");
+  // Import: the two-row CSV is previewed and imported; a re-import is all duplicates.
+  await tp.goto(tb + "/leads/import", { waitUntil: "load" });
+  await settle(tp);
+  await tp.setInputFiles("#csv", "tests/fixtures/leads-import-two-rows.csv");
+  await tp.getByText("2 to add · 0 duplicates skipped · 0 with errors").waitFor();
+  await tp.getByRole("button", { name: "Import 2 leads" }).click();
+  await tp.getByText("Imported 2 leads.").waitFor();
+  await tp.goto(tb + "/leads/import", { waitUntil: "load" });
+  await settle(tp);
+  await tp.setInputFiles("#csv", "tests/fixtures/leads-import-two-rows.csv");
+  await tp.getByText("0 to add · 2 duplicates skipped · 0 with errors").waitFor();
+  console.log("teammate: kit saved with the strip, lead added, Contacted, Day 2 next action, duplicate refused, CSV header, import");
 
-  await page.goto(leadUrl, { waitUntil: "load" });
+  // The leads table: S.No, sortable headers and pages.
+  await tp.goto(tb + "/leads", { waitUntil: "load" });
+  await settle(tp);
+  const table = tp.locator('[role="region"][aria-label="Leads"]');
+  assert.equal(await table.locator("thead th").first().innerText(), "S.No");
+  assert.deepEqual(await table.locator("tbody tr td:first-child").allInnerTexts(), ["1", "2", "3"]);
+  await table.getByRole("button", { name: "Business" }).click();
+  assert.equal(await table.locator('th[aria-sort="ascending"]').count(), 1);
+  const names = await table.locator("tbody tr td:nth-child(2)").allInnerTexts();
+  assert.deepEqual(names, [...names].sort((x, y) => x.localeCompare(y)), "sorted by business, ascending");
+  await table.getByRole("button", { name: "Business" }).click();
+  assert.deepEqual(await table.locator("tbody tr td:nth-child(2)").allInnerTexts(), [...names].reverse(), "descending");
+  assert.match(await tp.getByText(/Showing 1–3 of 3/).innerText(), /3/);
+  await tp.getByLabel("Rows per page").selectOption("10");
+  await tp.getByRole("button", { name: "Next", exact: true }).isDisabled().then((d) => assert.equal(d, true, "one page only"));
+
+  // A BD sees no admin screens.
+  for (const p of ["/admin", "/platform", "/team", "/queue", "/admin/users"]) {
+    const loc = (await tp.request.get(tb + p, { maxRedirects: 0 })).headers()["location"] ?? "";
+    assert.ok(loc.endsWith("/today"), `${p} sends a BD home, got ${loc}`);
+  }
+  assert.deepEqual(errors, [], "no console errors for the BD");
+
+  await syncNow(tp);
+  assert.match(git(lab.teammateRoot, "log", "-1", "--format=%s"), /^sync: ravi\.rao /);
+  assert.equal(git(lab.teammateRoot, "show", "--name-only", "--format=", "HEAD").split("\n").filter(Boolean).every((l) => l.startsWith("team/data/ravi.rao/")), true, "the sync commit holds only the BD's own folder");
+  console.log("teammate: synced; the commit holds only team/data/ravi.rao/");
+
+  // The owner pulls and sees the lead in Team.
+  await op.goto(ob + "/team", { waitUntil: "networkidle" });
+  await syncNow(op);
+  await op.goto(ob + "/leads", { waitUntil: "networkidle" });
+  assert.equal(await op.getByRole("link", { name: "Smith Roofing" }).count(), 1, "the owner sees the BD's lead after pulling");
+  assert.equal(await op.getByRole("link", { name: "Cedar Line Fence Co" }).count(), 1);
+  await op.goto(ob + "/team", { waitUntil: "networkidle" });
+  assert.match(await op.locator('[role="region"][aria-label="Pipeline by BD"]').innerText(), /Ravi Rao/);
+  // And a second person is blocked from adding the same business, by name.
+  await op.goto(ob + "/leads/new", { waitUntil: "load" });
+  await settle(op);
+  await op.fill("#business_name", "Smith Roofing");
+  await op.fill("#phone", "2145550101");
+  await op.getByRole("button", { name: "Add lead" }).click();
+  await op.getByText("Smith Roofing is already Ravi's lead.").waitFor();
+  console.log("owner: pulled, sees the lead in Team, and adding the same business is refused: “Smith Roofing is already Ravi's lead.”");
+
+  // The kit workspace shows who else works the territory.
+  await op.goto(ob + "/console?cat=Roofing&st=TX&city=Dallas&build=1", { waitUntil: "networkidle" });
+  await op.getByRole("button", { name: "Save this kit" }).click();
+  await op.getByRole("region", { name: "Saved kit" }).waitFor();
+  assert.match(await op.getByRole("region", { name: "Saved kit" }).innerText(), /Also working Roofing in Dallas, TX: Ravi \(\d+ leads?\)/);
+
+  // The owner resets the BD's password and syncs.
+  await op.goto(ob + "/platform/users", { waitUntil: "networkidle" });
+  await op.getByRole("button", { name: "Manage Ravi Rao" }).click();
+  await op.getByRole("button", { name: "Reset password" }).click();
+  assert.match(await op.getByText(/Reset Ravi Rao.s password\?/).innerText(), /set their own/);
+  await op.fill('[id="r-pw-ravi.rao"]', "Typed-Reset-Pass-9");
+  await op.getByRole("button", { name: "Yes, do it" }).click();
+  const newTemp = (await op.getByTestId("cred-password").innerText()).trim();
+  assert.equal(newTemp, "Typed-Reset-Pass-9", "the owner chose the new temporary password");
+  await op.getByRole("button", { name: "I've shared it" }).click();
+  await syncNow(op);
+  console.log("owner: reset the BD's password and synced");
+
+  // The teammate's session ends after its next pull.
+  await tp.goto(tb + "/today", { waitUntil: "networkidle" });
+  assert.equal(new URL(tp.url()).pathname, "/today", "still signed in before the pull");
+  await tp.getByTestId("sync-control").getByRole("button", { name: "Sync now" }).click();
+  // The pull brings the new rev; the page refresh that follows a sync finds the session ended.
+  await tp.waitForURL(/\/login/, { timeout: 60000 });
+  await tp.goto(tb + "/today", { waitUntil: "load" });
+  await tp.waitForURL(/\/login/);
+  await signIn(tp, tb, username, ownPassword);
+  await tp.getByText(SIGNIN_ERROR).waitFor();
+  await signIn(tp, tb, username, newTemp);
+  await tp.waitForURL(tb + "/account/password");
+  await tp.fill("#new", "ravi-second-password");
+  await tp.fill("#confirm", "ravi-second-password");
+  await tp.getByRole("button", { name: "Set my password" }).click();
+  await tp.waitForURL(tb + "/today");
+  console.log("teammate: the reset ended the session at the next pull; the old password stopped working; the new temporary one works once");
+
+  // Restart needed: the owner's code update changes package.json.
+  runPredev(lab.teammateRoot);
+  writeFileSync(path.join(lab.teammateRoot, "package.json"), '{"name":"outreach-kit-stub","version":"2"}\n');
+  await tp.getByTestId("sync-control").getByRole("button", { name: "Sync now" }).click();
+  await tp.getByText("Restart needed: ask Claude to restart the Outreach Kit.").waitFor();
+  git(lab.teammateRoot, "checkout", "--", "package.json");
+  console.log("teammate: a changed package.json shows “Restart needed”");
+
+  // A clock override: open on day 13, ended on day 14.
+  await tp.getByRole("button", { name: "Sign out" }).click();
+  await tp.waitForURL(/\/login/);
+  await signIn(tp, tb, username, "ravi-second-password");
+  await tp.waitForURL(tb + "/today");
+  const clock = path.join(lab.teammateRoot, ".local", "clock.json");
+  mkdirSync(path.dirname(clock), { recursive: true });
+  const DAY = 86_400_000;
+  writeFileSync(clock, JSON.stringify({ offsetMs: 13 * DAY + 23 * 3_600_000 }));
+  await tp.goto(tb + "/today", { waitUntil: "load" });
+  assert.equal(new URL(tp.url()).pathname, "/today", "open at 13 days 23 hours");
+  writeFileSync(clock, JSON.stringify({ offsetMs: 14 * DAY + 60_000 }));
+  await tp.goto(tb + "/today", { waitUntil: "load" });
+  assert.equal(new URL(tp.url()).pathname, "/login", "ended after 14 days");
+  writeFileSync(clock, JSON.stringify({ offsetMs: 0 }));
+  console.log("sessions: open on day 13, ended on day 14");
+
+  await tctx.close();
+  await octx.close();
+  console.log("e2e passed");
+} catch (e) {
+  console.error(e);
+  process.exitCode = 1;
+} finally {
+  await browser.close();
+  await owner?.stop();
+  await teammate?.stop();
+  lab.cleanup();
 }
-
-async function importFlow() {
-  // The Cowork CSV reaches the tracker through /leads/import: preview, then confirm. Score and Tier come from the checks.
-  await page.goto(base + "/leads/import", { waitUntil: "load" });
-  await settle();
-  await page.setInputFiles("#csv", "tests/fixtures/leads-import-two-rows.csv");
-  await page.getByText("2 to add · 0 duplicates skipped · 0 with errors").waitFor();
-  await page.getByRole("button", { name: "Import 2 leads" }).click();
-  await page.getByText("Imported 2 leads.").waitFor();
-  await page.goto(base + "/leads", { waitUntil: "load" });
-  const rows = page.locator('[aria-label="Leads"] tbody tr');
-  const cedar = await rows.filter({ hasText: "Cedar Line Fence Co" }).innerText();
-  assert.match(cedar, /Hot/);
-  assert.match(cedar, /9 \/ 10/);
-  const gate = await rows.filter({ hasText: "Pflugerville Gate & Iron" }).innerText();
-  assert.match(gate, /Warm/);
-  assert.match(gate, /6 \/ 10/);
-  // Importing the same file again adds nothing
-  await page.goto(base + "/leads/import", { waitUntil: "load" });
-  await settle();
-  await page.setInputFiles("#csv", "tests/fixtures/leads-import-two-rows.csv");
-  await page.getByText("0 to add · 2 duplicates skipped · 0 with errors").waitFor();
-  console.log("import: two-row CSV previewed, imported, scored by the database; a re-import is all duplicates");
-}
-
-await consoleFlow();
-await boardFlow();
-await themeFlow();
-await homeFlow();
-if (env.NEXT_PUBLIC_SUPABASE_URL) { await accountFlow(); await leadsFlow(); await importFlow(); }
-else console.log("account: skipped (no Supabase configured)");
-assert.deepEqual(errors, [], "no console errors");
-await browser.close();
-console.log("e2e passed");

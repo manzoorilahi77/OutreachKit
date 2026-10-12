@@ -75,6 +75,14 @@ These contain figures or wording related to the corrections but were left as wri
 - Hooks in five other openers that tell the rep to screenshot something to show the prospect (Maps 3-pack, empty website button, broken mobile view, unanswered comments, a hiring post). They read as material for a first DM; the brief did not name them.
 - Section 07 “Twelve to twenty of *their own* project photos”. That is the finished, paid-for site, not a spec demo.
 
+## Added feature (not a content change)
+
+The Kit Console gained an optional, local-only section, “Find businesses without a website”, that searches Google Maps from the user's
+own computer and saves businesses with no website to a local MySQL database, with a “Move to Leads” button on each. It is hidden unless
+\`MYSQL_URL\` is set. Nothing in the playbook text, \`src/data\`, \`src/content\`, the kit generators or the Supabase migrations changed. One
+sentence of the README changed: “The app never sends anything and never fetches a third-party site” now says that the optional local lead
+finder reads Google Maps, and only when \`MYSQL_URL\` is set.
+
 ## Not content corrections
 
 - The product name: “The Territory Desk” is shown as “Famysys Outreach Kit”, and the console bar “Territory Desk — Kit Console” as “Kit Console”.

@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { SiteHeader } from "@/components/ui/SiteHeader";
+import { AppChrome } from "@/components/shell/AppChrome";
 
 const jost = localFont({
   src: [
@@ -36,11 +36,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script dangerouslySetInnerHTML={{ __html: themeInit }} />
       </head>
       <body>
-        <a href="#main" className="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:bg-fill focus:text-on-fill focus:px-4 focus:py-2">
-          Skip to content
-        </a>
-        <SiteHeader />
-        <main id="main">{children}</main>
+        <AppChrome>{children}</AppChrome>
       </body>
     </html>
   );

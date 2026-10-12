@@ -1,101 +1,90 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { redirect } from "next/navigation";
-import { Chip } from "@/components/ui/Chip";
 import { SectionHead } from "@/components/ui/SectionHead";
-import { TableWrap, td, th } from "@/components/ui/TableWrap";
-import { DueText } from "@/components/leads/DueText";
-import { RatiosTable } from "@/components/leads/RatiosTable";
+import { LeadFilters } from "@/components/leads/LeadFilters";
+import { LeadsTable, type LeadRowData } from "@/components/leads/LeadsTable";
+import { RATIO_WHO } from "@/components/leads/RatiosTable";
+import { RatiosChart } from "@/components/leads/RatiosChart";
 import { SECTIONS } from "@/content/sections";
-import { STAGES, stageLabel, channelLabel, type Stage } from "@/lib/leads/stages";
-import { createClient, getSession } from "@/lib/supabase/server";
+import { can } from "@/lib/auth/permissions";
+import { requirePerm, storeFor } from "@/lib/auth/server";
+import { STAGES } from "@/lib/leads/stages";
 
 export const metadata: Metadata = { title: "Leads" };
 
 const TIERS = [{ v: "hot", l: "Hot" }, { v: "warm", l: "Warm" }, { v: "skip", l: "Skip" }] as const;
-const chipFor = { hot: "hot", warm: "warm", skip: "skip" } as const;
 
-function Filter({ href, active, children }: { href: string; active: boolean; children: React.ReactNode }) {
-  return (
-    <Link
-      href={href}
-      aria-current={active ? "true" : undefined}
-      className="inline-flex min-h-11 items-center rounded-full border border-head px-4 text-sm font-medium text-head no-underline hover:bg-head/10 aria-[current=true]:bg-fill aria-[current=true]:text-on-fill"
-    >
-      {children}
-    </Link>
-  );
-}
-
-export default async function LeadsPage({ searchParams }: { searchParams: Promise<{ stage?: string; tier?: string }> }) {
-  if (!(await getSession())) redirect("/login?next=/leads");
+export default async function LeadsPage({ searchParams }: { searchParams: Promise<{ stage?: string; tier?: string; by?: string }> }) {
+  const s = await requirePerm("leads.view");
+  const store = storeFor(s);
   const sp = await searchParams;
-  const stage = STAGES.find((s) => s.value === sp.stage)?.value;
+  const stage = STAGES.find((x) => x.value === sp.stage)?.value;
   const tier = TIERS.find((t) => t.v === sp.tier)?.v;
+  const scope = s.perms["leads.view"].scope;
+  const researcher = s.perms["leads.add"].scope === "queue";
 
-  const supabase = await createClient();
-  let q = supabase.from("leads").select("*").order("next_action_date", { ascending: true, nullsFirst: false }).order("created_at", { ascending: false }).limit(500);
-  if (stage) q = q.eq("stage", stage);
-  if (tier) q = q.eq("tier", tier);
-  const { data: leads } = await q;
-  const href = (o: { stage?: string; tier?: string }) => {
-    const p = new URLSearchParams();
-    const s = "stage" in o ? o.stage : stage;
-    const t = "tier" in o ? o.tier : tier;
-    if (s) p.set("stage", s);
-    if (t) p.set("tier", t);
-    return "/leads" + (p.size ? "?" + p : "");
-  };
-  const track = SECTIONS.find((s) => s.id === "track")!;
+  const [all, dir, ws] = await Promise.all([store.listLeads(), store.directory(), store.getWorkspace()]);
+  const canFind = can(s, "finder.run") && ws.features.leadFinder;
+  const names = new Map(dir.map((d) => [d.username, d.firstName]));
+  const showHolder = scope !== "own" || researcher;
+  const heldKeys = new Set(all.map((l) => l.heldBy ?? "unassigned"));
+  const by = showHolder && sp.by && heldKeys.has(sp.by) ? sp.by : undefined;
+  const heldKey = (l: (typeof all)[number]) => l.heldBy ?? "unassigned";
+  const byHolder = all.filter((l) => !by || heldKey(l) === by);
+  const leads = byHolder.filter((l) => (!stage || l.stage === stage) && (!tier || l.tier === tier));
+  const stageCounts: Record<string, number> = {};
+  const tierCounts: Record<string, number> = {};
+  for (const l of byHolder) { stageCounts[l.stage] = (stageCounts[l.stage] ?? 0) + 1; tierCounts[l.tier] = (tierCounts[l.tier] ?? 0) + 1; }
+  const holders = showHolder
+    ? [...heldKeys].map((k) => ({
+        value: k,
+        label: k === "unassigned" ? "Unassigned" : k === s.user.username ? "You" : (names.get(k) ?? k),
+        count: all.filter((l) => heldKey(l) === k && (!stage || l.stage === stage) && (!tier || l.tier === tier)).length,
+      })).sort((a, b) => (a.value === s.user.username ? -1 : b.value === s.user.username ? 1 : a.label.localeCompare(b.label)))
+    : null;
+  const holder = (heldBy: string | null, owner: string) => (heldBy === null ? "Unassigned" : heldBy === s.user.username ? "You" : `${researcher ? "With " : ""}${names.get(heldBy) ?? heldBy}`) + (heldBy !== owner && owner !== s.user.username && !researcher ? ` (from ${names.get(owner) ?? owner})` : "");
+
+  const track = SECTIONS.find((x) => x.id === "track")!;
   const ratioBlock = track.blocks.flatMap((b) => (b.type === "cards" ? b.cards.flat() : [b])).find((b) => b.type === "table");
+  const title = researcher ? "My sourced leads" : scope === "own" ? "My leads" : scope === "team" ? "Team leads" : "Leads";
+  const sub = scope === "own"
+    ? "One row per business, with the same 28 columns as the sheet. Next actions come from the Day 0, 2, 5, 9, 14 and 45 sequence."
+    : scope === "team" ? "Your team's pipeline, read-only. Open a lead to comment on it." : "Everyone's pipeline, read-only. Open a lead to comment on it.";
 
   return (
     <div className="mx-auto max-w-6xl space-y-10 px-4 py-12 sm:px-6">
       <section className="space-y-5">
-        <SectionHead num="Pipeline" title="Leads" sub="One row per business, with the same 28 columns as the sheet. Next actions come from the Day 0, 2, 5, 9, 14 and 45 sequence." />
+        <SectionHead num="Pipeline" title={title} sub={sub} />
         <div className="flex flex-wrap items-center gap-3">
-          <Link href="/leads/new" className="inline-flex min-h-11 items-center rounded-md border border-fill bg-fill px-4 font-medium text-on-fill no-underline">Add a lead</Link>
-          <a href="/leads/export.csv" className="inline-flex min-h-11 items-center">Export CSV for Google Sheets</a>
-          <Link href="/leads/import" className="inline-flex min-h-11 items-center">Import CSV</Link>
+          {canFind && <Link href="/sourcing/finder" className="inline-flex min-h-11 items-center rounded-md border border-head px-4 font-medium text-head no-underline hover:bg-head/10">Find leads</Link>}
+          {can(s, "leads.add") && <Link href="/leads/new" className="inline-flex min-h-11 items-center rounded-md border border-fill bg-fill px-4 font-medium text-on-fill no-underline">Add a lead</Link>}
+          {can(s, "leads.export") && <a href="/leads/export.csv" className="inline-flex min-h-11 items-center">Export CSV for Google Sheets</a>}
+          {can(s, "leads.add") && <Link href="/leads/import" className="inline-flex min-h-11 items-center">Import CSV</Link>}
         </div>
-        <div role="group" aria-label="Stage" className="flex flex-wrap gap-2">
-          <Filter href={href({ stage: undefined })} active={!stage}>All stages</Filter>
-          {STAGES.map((s) => <Filter key={s.value} href={href({ stage: s.value })} active={stage === s.value}>{s.label}</Filter>)}
-        </div>
-        <div role="group" aria-label="Tier" className="flex flex-wrap gap-2">
-          <Filter href={href({ tier: undefined })} active={!tier}>All tiers</Filter>
-          {TIERS.map((t) => <Filter key={t.v} href={href({ tier: t.v })} active={tier === t.v}>{t.l}</Filter>)}
-        </div>
+        <LeadFilters stage={stage} tier={tier} by={by} tiers={TIERS.map((x) => ({ v: x.v, l: x.l }))} stageCounts={stageCounts} tierCounts={tierCounts} holders={holders} holderLabel={researcher ? "With" : "Held by"} />
 
-        {!leads?.length ? (
-          <p>{stage || tier ? "No leads match those filters." : "No leads yet. Add the first one, or create one from a saved kit."}</p>
+        {!leads.length ? (
+          <p>{stage || tier || by ? "No leads match those filters." : "No leads yet. Add the first one, or create one from a saved kit."}</p>
         ) : (
-          <TableWrap label="Leads" minWidth={860}>
-            <thead>
-              <tr>{["Business", "Where", "Tier", "Score", "Stage", "Next action", "Channel"].map((h) => <th key={h} scope="col" className={th}>{h}</th>)}</tr>
-            </thead>
-            <tbody>
-              {leads.map((l) => (
-                <tr key={l.id}>
-                  <td className={`${td} font-medium`}><Link href={`/leads/${l.id}`}>{l.business_name}</Link></td>
-                  <td className={td}>{[l.category, [l.city, l.state].filter(Boolean).join(", ")].filter(Boolean).join(" · ")}</td>
-                  <td className={td}><Chip variant={chipFor[l.tier]}>{l.tier === "hot" ? "Hot" : l.tier === "warm" ? "Warm" : "Skip"}</Chip></td>
-                  <td className={`${td} tabular-nums`}>{l.score} / 10</td>
-                  <td className={td}>{stageLabel(l.stage as Stage)}</td>
-                  <td className={td}><DueText date={l.next_action_date} /></td>
-                  <td className={td}>{channelLabel(l.channel as never)}</td>
-                </tr>
-              ))}
-            </tbody>
-          </TableWrap>
+          <LeadsTable
+            showHolder={showHolder}
+            holderLabel={researcher ? "With" : "Held by"}
+            rows={leads.map((l): LeadRowData => ({
+              id: l.id, business: l.business_name, category: l.category ?? "", where: [l.city, l.state].filter(Boolean).join(", "),
+              tier: l.tier, score: l.score, stage: l.stage, next: l.next_action_date, channel: l.channel,
+              holder: holder(l.heldBy, l.owner) + (l.pendingTo ? " (not accepted yet)" : ""),
+            }))}
+          />
         )}
       </section>
 
-      <section className="space-y-4">
-        <h2 className="text-3xl">Your ratios</h2>
-        <p className="max-w-3xl text-muted">The playbook&apos;s planning targets next to what your own leads show.</p>
-        {ratioBlock && ratioBlock.type === "table" && <RatiosTable block={ratioBlock} />}
-      </section>
+      {can(s, "reports.view") && ratioBlock && ratioBlock.type === "table" && (
+        <section className="space-y-4">
+          <h2 className="text-3xl">Ratios</h2>
+          <p className="max-w-3xl text-muted">The playbook&apos;s planning targets next to what {RATIO_WHO[s.perms["reports.view"].scope] || "the"} leads show.</p>
+          <RatiosChart block={ratioBlock} />
+        </section>
+      )}
     </div>
   );
 }

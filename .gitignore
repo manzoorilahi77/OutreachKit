@@ -1,5 +1,6 @@
 node_modules
 .next
+.next-*
 out
 .env*
 !.env.example
@@ -9,6 +10,12 @@ test-results
 playwright-report
 .DS_Store
 .local-supabase
+
+# This laptop only: session secret, last-sync state, sign-in attempts. Never pushed.
+.local/
+# A write that was interrupted
+team/**/*.tmp
+team/**/.*.tmp
 
 # Local prompt docs
 docs/prompts/

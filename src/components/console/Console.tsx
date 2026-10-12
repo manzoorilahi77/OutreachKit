@@ -12,28 +12,32 @@ import { InlineView } from "@/components/playbook/InlineView";
 import { FamilyFilters } from "@/components/playbook/Board";
 import { KitView } from "@/components/kit/KitView";
 import {
-  EMPTY_CONSOLE, barLine, fromQuery, isReady, statusLine, stateOptions, toKitInput, toQuery, type ConsoleState,
+  EMPTY_CONSOLE, fromQuery, isReady, statusLine, stateOptions, toKitInput, toQuery, type ConsoleState,
 } from "@/lib/console";
 import { CATS } from "@/lib/kit/categories";
 import { buildContext, generateKit } from "@/lib/kit/generate";
 import type { Device, Kit, KitContext, KitInput } from "@/lib/kit/types";
-import { SaveKit, type SaveMode } from "@/components/kit/SaveKit";
 import { DownloadKit } from "@/components/kit/DownloadKit";
+import { LeadFinder } from "@/components/scrape/LeadFinder";
 import { applyCategoryKit } from "@/lib/kit-v2/apply";
 import { loadCategoryKit } from "@/lib/kit-v2/load";
-import type { CategoryKit } from "@/lib/kit-v2/types";
+import type { CategoryKit, DirectionId } from "@/lib/kit-v2/types";
 
 export interface ConsoleDetails { you: string; brand: string; domain: string }
 
 export function Console({
   initialDetails,
   initialDevice = "desktop",
-  saveMode = "off",
+  canMoveLeads = false,
+  renderSave,
 }: {
-  /** Step 4 values from the signed-in profile. Blank gives bracketed placeholders, as in the original. */
+  /** Step 4 values: the person's name and the workspace's studio and demo domain. Blank gives bracketed placeholders, as in the original. */
   initialDetails?: Partial<ConsoleDetails>;
   initialDevice?: Device;
-  saveMode?: SaveMode;
+  /** Whether "Move to Leads" in the lead finder section is on. */
+  canMoveLeads?: boolean;
+  /** What goes in the kit's actions slot in place of the old Save button (the saved-kit strip), when the role can save. */
+  renderSave?: (ctx: { input: KitInput; direction: DirectionId }) => React.ReactNode;
 }) {
   const start: ConsoleState = { ...EMPTY_CONSOLE, device: initialDevice };
   const [s, setS] = useState<ConsoleState>(start);
@@ -45,7 +49,7 @@ export function Console({
   const kitRef = useRef<HTMLDivElement>(null);
   const states = useMemo(stateOptions, []);
 
-  // Read the choices from the URL once, so a link (or a magic-link return) restores the console.
+  // Read the choices from the URL once, so a link restores the console.
   useEffect(() => {
     const q = window.location.search;
     if (!q) return;
@@ -105,7 +109,6 @@ export function Console({
     <div className="overflow-hidden rounded-lg border border-head">
       <div className="flex flex-wrap items-center justify-between gap-2 bg-navy px-4 py-3 text-warm">
         <strong className="text-lg text-warm">{CONSOLE_CONTENT.bar}</strong>
-        <span className="text-sm text-warm/90" aria-live="polite">{awaiting ? CONSOLE_CONTENT.barState : barLine(s)}</span>
       </div>
 
       <div className="divide-y divide-line">
@@ -205,6 +208,8 @@ export function Console({
           </div>
         ))}
 
+        <LeadFinder cat={s.cat} st={s.st} city={s.freeCity.trim() || s.listCity} canMove={canMoveLeads} />
+
         <div className="flex flex-wrap items-center gap-3 p-4 sm:p-6">
           <Button disabled={!ready} onClick={() => build()}>{CONSOLE_CONTENT.run.build}</Button>
           <Button variant="secondary" onClick={reset}>{CONSOLE_CONTENT.run.reset}</Button>
@@ -221,7 +226,7 @@ export function Console({
               onDirection={(d) => setS((cur) => ({ ...cur, dir: d }))}
               actions={
                 <div className="flex flex-wrap items-center gap-3">
-                  <SaveKit input={built.input} direction={built.ck ? dir : "b"} mode={saveMode} />
+                  {renderSave?.({ input: built.input, direction: built.ck ? dir : "b" })}
                   <DownloadKit kit={shown} X={built.X} ck={built.ck} dir={dir} />
                 </div>
               }
