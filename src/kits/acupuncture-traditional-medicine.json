@@ -1,0 +1,869 @@
+{
+  "schemaVersion": 1,
+  "category": "Acupuncture & traditional medicine",
+  "slug": "acupuncture-traditional-medicine",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · expansion batch (healthcare + mid-size)",
+    "generatedAt": "2026-10-13",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Leaned on the massage and chiropractic kits for care-family pricing and on the board note: solo practitioners living on a booking-platform page. No outcome or condition claims anywhere. Herbal inventory and chart-note drafting prices are the least certain."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Your first acupuncture visit",
+      "contains": "How long the first visit runs, the intake conversation, what to wear, lying clothed or draped, how the needles feel going in, how long they stay, and what happens at the end",
+      "why": "Fear of needles is the reason most people never book. The acupuncturist who describes the first visit calmly removes the one thing stopping them."
+    },
+    {
+      "section": "Cupping, moxibustion and gua sha",
+      "contains": "What each technique is, what the patient feels, the marks cupping and gua sha can leave and how long they usually take to fade, and when the practitioner uses each within a visit",
+      "why": "Cupping marks are the most-asked question in this trade's comments. People book once they know what to expect on their skin."
+    },
+    {
+      "section": "Herbal medicine and formula refills",
+      "contains": "How herbal formulas are chosen after a consultation, granules, pills or raw herbs as the clinic dispenses them, how sourcing is checked [as supplied], and how a patient requests a refill",
+      "why": "Patients on a formula want refills without a phone call, and new patients want to know the herbs come from a careful dispensary."
+    },
+    {
+      "section": "Fees, packages and insurance receipts",
+      "contains": "First-visit and follow-up fees, treatment packages, whether the clinic issues itemised receipts for insurance claims, and a plain note that coverage depends on the patient's own plan",
+      "why": "People compare the cost of a course of treatment, not one visit, and many ask whether their benefits cover acupuncture before they book."
+    },
+    {
+      "section": "Training, licence and practitioner background",
+      "contains": "Licence type and jurisdiction [licence number as supplied], where the acupuncturist trained, years in practice [as supplied], languages spoken, and clean-needle and hygiene practice in plain words",
+      "why": "Letting a stranger place needles starts with trust. Patients check training and licence before anything else, and only published facts appear."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C32",
+      "siteType": "local-conversion",
+      "name": "Herb Garden",
+      "heroLayout": "split-photo",
+      "mood": [
+        "earthy",
+        "calm",
+        "plain-spoken"
+      ],
+      "bestFor": "Solo acupuncturists who need one clear page, a fee list and a Book button in place of a booking-platform profile",
+      "pairsWithTier": "starter",
+      "headlineSample": "Acupuncture in {City}, explained before you book",
+      "whyItFits": "Olive Grove's green and bookish serif feel like a dried-herb drawer, and a split hero puts the treatment room beside the first-visit explanation."
+    },
+    {
+      "id": "b",
+      "themeId": "C8",
+      "siteType": "booking-first",
+      "name": "Clinic Calendar",
+      "heroLayout": "card-stack",
+      "mood": [
+        "restful",
+        "trustworthy",
+        "orderly"
+      ],
+      "bestFor": "Acupuncture clinics with a fee menu, cupping and herbal consults, packages and online booking",
+      "pairsWithTier": "standard",
+      "headlineSample": "Book acupuncture and cupping in {City}",
+      "whyItFits": "The family combo, Sage Spa, fails CTA contrast. Evergreen Trust keeps a calm green, reads as a licensed clinic, and stacked cards put visit type, length and fee in one tap."
+    },
+    {
+      "id": "c",
+      "themeId": "C39",
+      "siteType": "editorial-trust",
+      "name": "Lineage",
+      "heroLayout": "type-led",
+      "mood": [
+        "heritage",
+        "considered",
+        "quiet"
+      ],
+      "bestFor": "Established traditional Chinese medicine practices with herbal dispensaries and a teaching or lineage story",
+      "pairsWithTier": "premium",
+      "headlineSample": "Traditional Chinese medicine in {City}, practised with care",
+      "whyItFits": "Brick & Linen's typewriter slab suits a practice rooted in a long tradition, and a type-led page carries the training story without stock photos of needles."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your acupuncture clinic shows up on Maps with kind reviews and no website, so someone in {City} curious about a first visit can't see what it involves or what it costs.",
+      "hook": "Open their Maps listing and confirm there is no Website button. Screenshot it for when they reply.",
+      "linkLine": "Here's what could sit behind that button for your acupuncture clinic: {demo-link}"
+    },
+    {
+      "angle": "Booking calendar as the website",
+      "line": "The link on your listing goes straight to a booking calendar. Someone new to acupuncture wants to know what the first visit feels like before they pick a time slot.",
+      "hook": "Click the website link. If it lands on a booking-platform profile with only times and prices, the angle holds.",
+      "linkLine": "A first-visit page in front of your acupuncture calendar: {demo-link}"
+    },
+    {
+      "angle": "Dead free host",
+      "line": "Your acupuncture site still sits on an old free page with the host's banner above the clinic name. That banner is the first thing a nervous first-timer reads.",
+      "hook": "Open the site and note the host banner, broken links or fees from years ago. Screenshot it for when they reply.",
+      "linkLine": "The same acupuncture clinic without the banner: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "I tried to read your acupuncture fees on my phone and the table ran off the side of the screen. Most people look up a first acupuncture visit on their phone in the evening.",
+      "hook": "Only if they have a site. Open the fees or booking page on a phone and note where it breaks.",
+      "linkLine": "Your acupuncture fees and booking, rebuilt for a phone: {demo-link}"
+    },
+    {
+      "angle": "Needle nerves",
+      "line": "Nothing on your page says what a first acupuncture visit is like: how long it runs, whether you stay clothed, how the needles feel. That's the question that keeps nervous people from booking.",
+      "hook": "Read their bio and any booking notes. If there's no first-visit description, lead with this.",
+      "linkLine": "A calm first-visit acupuncture page: {demo-link}"
+    },
+    {
+      "angle": "Cupping marks questions",
+      "line": "Your cupping posts get the most comments, and most of them ask about the marks. A short cupping page would answer that once instead of in every reply.",
+      "hook": "Scroll their cupping or gua sha posts and count how many comments ask about marks or bruising.",
+      "linkLine": "A cupping and gua sha page that answers the marks question: {demo-link}"
+    },
+    {
+      "angle": "Reviews stuck on Google",
+      "line": "One of your reviews says you explained every needle before it went in. That sentence would settle a nervous acupuncture patient more than any clinic headline.",
+      "hook": "Read their Google reviews and copy one phrase about explaining, gentleness or feeling at ease. Quote it if they reply.",
+      "linkLine": "Your acupuncture reviews beside the Book button: {demo-link}"
+    },
+    {
+      "angle": "Year-end benefits",
+      "line": "In the last weeks of the year people try to use leftover health benefits, and acupuncture is one they look up. Your page doesn't say whether the clinic gives receipts for claims.",
+      "hook": "Use from October to December. Check whether they mention receipts or insurance anywhere. Never say they're covered.",
+      "linkLine": "A fees and insurance-receipts page for your acupuncture clinic: {demo-link}"
+    },
+    {
+      "angle": "Late-night decision",
+      "line": "People decide to try acupuncture late at night, after another long day with the same complaint. Right now they can't see your clinic's openings until someone answers the phone.",
+      "hook": "Check whether they take online bookings at all. If it's call-only, this angle fits.",
+      "linkLine": "Acupuncture booking that works while the clinic is closed: {demo-link}"
+    },
+    {
+      "angle": "Hiring a practitioner",
+      "line": "Saw the clinic is looking for another licensed acupuncturist. Practitioners check how a traditional medicine clinic presents itself before they send their details.",
+      "hook": "Only if they posted a hiring notice for an acupuncturist, herbalist or front desk. Note the date.",
+      "linkLine": "An acupuncture clinic page with a join-the-practice section: {demo-link}"
+    },
+    {
+      "angle": "Herbal refills by text",
+      "line": "Your bio mentions herbal formulas, but nothing explains how herbal medicine fits into a visit or how a patient gets a refill. That usually becomes a stream of texts.",
+      "hook": "Look for 'herbs', 'formula' or 'dispensary' in their bio or posts. Check whether refills are explained anywhere.",
+      "linkLine": "Herbal medicine and refill requests on one page: {demo-link}"
+    },
+    {
+      "angle": "Finding the clinic",
+      "line": "Your acupuncture clinic is in {Neighborhood}, but nothing online covers parking, the entrance or which floor. First visits often start with someone circling the block, late and tense.",
+      "hook": "Check their listing photos and reviews for mentions of hard-to-find entrances or parking.",
+      "linkLine": "Directions and arrival notes for your acupuncture clinic: {demo-link}"
+    },
+    {
+      "angle": "Licence and training",
+      "line": "Nothing online states your acupuncture licence or where you trained. For someone letting a practitioner place needles, that's the first thing they check.",
+      "hook": "Look for licence letters or school names in their bio. Never state a licence number or school they haven't published.",
+      "linkLine": "Your training and licence, stated calmly: {demo-link}"
+    },
+    {
+      "angle": "Word of mouth only",
+      "line": "Your acupuncture practice seems to grow through long-time patients telling friends. Those friends still look you up first, and find a booking calendar and little else.",
+      "hook": "Look for reviews like 'my sister sent me' or 'been coming for years'. Quote one.",
+      "linkLine": "Where a referred acupuncture patient would land: {demo-link}"
+    },
+    {
+      "angle": "A specific recent post",
+      "line": "Your post about {specific recent job} explained traditional Chinese medicine more plainly than most clinic pages do. It deserves a page new patients can find.",
+      "hook": "Pick their newest post explaining a technique, a season or a herbal formula and name it exactly.",
+      "linkLine": "That acupuncture explanation, on its own page: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, your post about {specific recent job} explained acupuncture more plainly than most clinic pages do.\n\nI looked for a site for {Business Name} and found only the booking calendar. I put together a sample acupuncture page with a first-visit explanation, cupping and herbal sections, fees and a Book button, with marked placeholders where your photos would go.\n\nWould you like me to send it?",
+    "dm2": "{Owner}, following up in case my note got lost between patients. Here's the sample acupuncture site for {Business Name}: {demo-link}\n\nIt explains the first visit for nervous patients, answers the cupping-marks question, and lays out fees and packages plainly. If it's not for you, say so and I won't message again.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for acupuncture and traditional medicine clinics here in {City}. I sent you a message a few days ago, did it come through?\"\n\nIF NO:\n\"No problem, you're with patients most of the day. Short version: I built a sample site for {Business Name} with a first-visit page, cupping and herbal sections and online booking, with marked placeholders where your photos would go. Can I text you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range}, then {Care Range} a month for hosting and fee changes. For a clinic like yours I'd normally quote about {Build Price}.\"\n\"Could I have ten minutes while the needles are in with your next patient? Tell me the gap and I'll call then.\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. We start the day it clears.\"",
+    "objections": [
+      {
+        "objection": "My booking platform already has a page.",
+        "handler": "\"Keep it for the calendar. That page lists times; it doesn't explain the first visit, cupping or herbs. The site does the explaining, then hands people to your calendar ready to book.\""
+      },
+      {
+        "objection": "I'm a solo practitioner, I don't need much.",
+        "handler": "\"That's who this is for. A single acupuncturist with a clear page looks like a careful clinic, and the build is sized for one practitioner and one treatment room.\""
+      },
+      {
+        "objection": "I can't make health claims, so what would the site even say?",
+        "handler": "\"Exactly the right worry. The site says what a visit involves, your training and licence, your fees and what patients commonly ask about, without promising results. Nothing goes live you haven't approved.\""
+      },
+      {
+        "objection": "Most of my patients come by referral.",
+        "handler": "\"Referred patients still look you up before the first visit. Right now they find a calendar. A first-visit page turns 'my friend said try it' into a booked appointment.\""
+      },
+      {
+        "objection": "My patients speak another language at home.",
+        "handler": "\"Then a second-language version of the first-visit and fees pages is part of the scope. Families often book for a parent, and they read in the language they're comfortable in.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For your clinic about {Build Price}, because it's a first-visit page, a fee list and booking. A handful of new patients on a course of treatment covers it.\""
+      }
+    ],
+    "email": {
+      "subject": "Acupuncture site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for acupuncture and traditional medicine clinics around {City}. {Business Name} has kind reviews, but nowhere a new patient can read what a first acupuncture visit is like, what cupping involves or what a course of treatment costs.\n\nI built a sample first rather than ask for your time: a first-visit page, cupping and herbal sections, fees and packages, and online booking, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIt makes no health claims; it explains the visit, your training and your fees. If you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and changes. If not, it comes down at the end of the month.\n\nWorth ten minutes between patients?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build websites for acupuncture clinics in {City} and made a sample one for {Business Name}. I'll text the link so you can look between patients. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm taking the {Business Name} acupuncture demo down on Friday to free up the space.\n\nShould I keep it up for you? A one-word reply is fine.",
+    "nurture": "Hi {Owner}, the end of the year is when people look for acupuncture to use their remaining benefits, and they book the clinic that explains fees and receipts plainly. Thought of you.\n\nThe sample site is still here, nothing's changed on price. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to a few patients on a course of treatment, not to a clinic group's budget. A solo acupuncturist earns per visit.",
+      "Price by technique and service count: needling, cupping, moxibustion, herbal consults. Explaining each plainly is the work.",
+      "The first-visit page is the heart of the site. Never cut it to hit a lower price.",
+      "Treat intake privacy as a priced line, not a favour. Health details on a form need privacy-safe hosting and setup time.",
+      "Quote a second-language version separately; many traditional medicine clinics serve families who read another language first.",
+      "Keep monthly add-ons below the fee for one follow-up visit, or they're the first cut in a slow month."
+    ],
+    "lineItems": [
+      {
+        "item": "Technique explainer page (each extra)",
+        "min": 80,
+        "max": 200,
+        "unit": "per-page",
+        "description": "Max when the page covers what the patient feels, aftercare and the marks cupping or gua sha can leave.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Treatment package and prepaid visit setup",
+        "min": 300,
+        "max": 800,
+        "unit": "one-time",
+        "description": "Max with several package sizes, expiry rules and online payment on their payment account.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Herbal formula refill request form",
+        "min": 200,
+        "max": 500,
+        "unit": "one-time",
+        "description": "Max when refills route to the practitioner for approval and the patient picks pickup or delivery.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Second-language version",
+        "min": 250,
+        "max": 800,
+        "unit": "one-time",
+        "description": "Max when the first-visit page, fees, intake form and booking emails are all translated.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Online gift certificates for acupuncture visits",
+        "min": 200,
+        "max": 500,
+        "unit": "one-time",
+        "description": "Max with emailed and printable certificates, package-based amounts and a holiday banner.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Insurance receipts and benefits FAQ page",
+        "min": 150,
+        "max": 400,
+        "unit": "per-page",
+        "description": "Max when it explains itemised receipts, direct billing where the clinic offers it and what patients ask their plan.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Practitioner profile for a shared clinic (each)",
+        "min": 100,
+        "max": 250,
+        "unit": "per-page",
+        "description": "Max with training, languages, techniques offered and a book-with-this-practitioner link.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Consent and patient-photo policy page set",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A privacy notice, a consent page and a written patient-photo and testimonial policy for the acupuncture clinic, so nothing goes online without a patient's written consent.\"",
+      "when": "At build. Needs the clinic's current consent forms and how they store them."
+    },
+    {
+      "name": "Accessibility review of the acupuncture site",
+      "min": 300,
+      "max": 900,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A check of the acupuncture site for older patients and screen readers: text size, contrast, form labels and booking by keyboard, with a fix list.\"",
+      "when": "Month 2, or at build if many patients are older."
+    },
+    {
+      "name": "Advertising-approval-ready content pack",
+      "min": 400,
+      "max": 1200,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Acupuncture page and ad wording written without outcome claims and laid out for sign-off, so it's ready to submit where the regulator requires approval.\"",
+      "when": "Before any paid ads, or in markets where health advertising needs approval."
+    },
+    {
+      "name": "Treatment room content afternoon",
+      "min": 250,
+      "max": 600,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"One quiet afternoon photographing the treatment room, the herb shelves, the needle trays and the cupping set, with a volunteer and written consent for anyone shown.\"",
+      "when": "Month 2, on an afternoon with gaps between patients."
+    },
+    {
+      "name": "Google profile upkeep for the acupuncture clinic",
+      "min": 100,
+      "max": 250,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Posts on the clinic's Google profile about this week's acupuncture openings, a technique explained or a change of season, so searchers see an active practice.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Review requests after a course of treatment",
+      "min": 39,
+      "max": 99,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"When a patient finishes a course of acupuncture, they get a short note asking for a review, with a reminder not to share health details publicly.\"",
+      "when": "Day 30. The easiest second sale."
+    },
+    {
+      "name": "Change-of-season patient newsletter",
+      "min": 99,
+      "max": 249,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A short letter at each change of season in the practitioner's voice, about traditional Chinese medicine habits for the season and openings for tune-up visits.\"",
+      "when": "Month 3, if they already talk about seasons in their posts."
+    },
+    {
+      "name": "Intro-to-acupuncture community talk kit",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Slides, a flyer and a sign-up page for a free talk at a library or yoga studio on what acupuncture involves, so curious locals meet the practitioner first.\"",
+      "when": "Month 4, if they say new patients are the slow part."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Massage therapists sharing the wellness suite",
+        "whoPays": "The massage therapist, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The massage therapist down the hall from your acupuncture room sends patients both ways. I'd build their booking page in the same calm style.\"",
+        "whyItWorks": "Practitioners in the same building share patients and trust each other's recommendations."
+      },
+      {
+        "route": "The herbal dispensary the clinic orders from",
+        "whoPays": "The dispensary owner",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The herbal shop that fills your formulas has a phone number and a paper price list. A practitioner ordering page would make reordering herbs easier for every clinic they supply.\"",
+        "whyItWorks": "The dispensary already trusts the acupuncturist as a customer, and the clinic's own reorder pain makes the pitch."
+      },
+      {
+        "route": "Traditional Chinese medicine colleges with a teaching clinic",
+        "whoPays": "The college",
+        "min": 1500,
+        "max": 5000,
+        "unit": "one-time",
+        "pitchLine": "\"The college where you trained runs a supervised student acupuncture clinic booked by phone. A booking site fills those tables and the next intake.\"",
+        "whyItWorks": "Colleges need public patients for students and applicants for the next class. Alumni are trusted introductions."
+      },
+      {
+        "route": "Tai chi and qigong instructors",
+        "whoPays": "The instructor, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The qigong teacher whose students also see you for acupuncture runs classes from a flyer. A class schedule site with your clinic listed suits you both.\"",
+        "whyItWorks": "Same audience, same tradition, and the practitioner can introduce you after class."
+      },
+      {
+        "route": "Naturopaths and nutritionists who share patients",
+        "whoPays": "The practitioner, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The naturopath who refers patients for acupuncture has an outdated site. I'd build theirs with a clear referral path back to your clinic.\"",
+        "whyItWorks": "Integrative practitioners refer in small circles. A recommendation from one gets you a meeting with the next."
+      },
+      {
+        "route": "Yoga studios hosting community acupuncture nights",
+        "whoPays": "The studio, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The yoga studio that hosts your community acupuncture evenings books classes from a social page. A schedule site with those evenings on it helps both of you.\"",
+        "whyItWorks": "The studio owner has seen the acupuncturist fill their room, so the introduction comes warm."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Stock and hours assistant for the herbal dispensary",
+        "whoPays": "The dispensary, monthly",
+        "min": 79,
+        "max": 199,
+        "unit": "monthly",
+        "pitchLine": "\"Practitioners asking the herbal shop whether a granule formula is in stock or when the counter opens get answers from its own list, and dosing questions always go to a person.\"",
+        "whyItWorks": "Dispensaries answer the same stock questions daily. Answers come only from their approved list."
+      },
+      {
+        "route": "Student clinic booking assistant for TCM colleges",
+        "whoPays": "The college",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The assistant explains supervised student acupuncture visits, fees and what to expect, and books the public onto shifts when instructors are on the clinic floor.\"",
+        "whyItWorks": "Colleges can count filled student clinic tables, so the value is easy to see."
+      },
+      {
+        "route": "Class sign-up assistant for tai chi instructors",
+        "whoPays": "The instructor, monthly",
+        "min": 49,
+        "max": 149,
+        "unit": "monthly",
+        "pitchLine": "\"People asking the tai chi teacher which class suits a beginner get an answer from the class list and a sign-up link, and the teacher's acupuncture partner is listed for anyone who asks.\"",
+        "whyItWorks": "Instructors teach in the evenings and miss messages. A small monthly fee beats lost students."
+      },
+      {
+        "route": "First-visit scheduling assistant for the naturopath",
+        "whoPays": "The naturopathic clinic, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"The naturopath's new patients ask about fees, visit length and paperwork late at night. The assistant answers from approved text and books the first visit, never giving advice.\"",
+        "whyItWorks": "Logistics questions with no clinical risk are the easiest AI sale in an integrative clinic."
+      },
+      {
+        "route": "Room-rental enquiry assistant for the integrative clinic owner",
+        "whoPays": "The clinic owner who rents rooms, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"An acupuncturist or herbalist eyeing the empty treatment room can ask about rent, shared reception and hours, and the owner wakes up to a viewing booked.\"",
+        "whyItWorks": "An empty room costs the owner every month, and the practitioner tenant makes the introduction."
+      },
+      {
+        "route": "Community acupuncture evening planner for the yoga studio",
+        "whoPays": "The studio",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"The studio lists community acupuncture evenings, attendees reserve a mat and fill the acupuncturist's intake ahead, and reminder wording is drafted for each event.\"",
+        "whyItWorks": "The studio earns from the evening and wants it full without a sign-up sheet at the door."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Privacy-safe online intake and hosting setup",
+      "kind": "software",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"The acupuncture intake form moves online on privacy-safe hosting, so health history arrives encrypted instead of on a clipboard or in an ordinary email.\"",
+      "whenAndWhatItTakes": "At build. Needs their current paper intake, the privacy rules where they practise and who on staff reads the forms."
+    },
+    {
+      "name": "Rebooking reminders through a course of acupuncture",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 700,
+      "monthlyMin": 39,
+      "monthlyMax": 99,
+      "pitchLine": "\"A patient partway through a course of acupuncture hears from the clinic when the next visit is due, with open times, before the gap stretches.\"",
+      "whenAndWhatItTakes": "Day 30. Needs visit history from the booking system and the practitioner's usual spacing between visits."
+    },
+    {
+      "name": "Treatment package and prepaid visit tracker",
+      "kind": "software",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Prepaid acupuncture packages show visits used and left, so neither the patient nor the front desk has to count on paper.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their package rules and any packages already sold."
+    },
+    {
+      "name": "Itemised receipt builder for insurance claims",
+      "kind": "software",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"After each acupuncture visit the patient gets an itemised receipt with the practitioner's details filled in, ready to send to their own benefits plan.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the receipt details their patients' plans ask for and the practitioner's published registration details."
+    },
+    {
+      "name": "DM answerer for acupuncture fees and openings",
+      "kind": "ai",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1200,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"'How much is a first visit' and 'anything Thursday' get answered from the clinic's real fees and calendar while the practitioner is with a patient.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the fee list and booking access, and a rule to hand every health question to the practitioner. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Herbal formula refills with pickup alerts",
+      "kind": "software",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 19,
+      "monthlyMax": 59,
+      "pitchLine": "\"A patient requests a herbal refill online, the practitioner approves it, and the patient gets a text when the formula is ready at the counter.\"",
+      "whenAndWhatItTakes": "Month 3, if they dispense herbs. Needs their refill rules and who approves each one."
+    },
+    {
+      "name": "First-visit what-to-expect texts",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 500,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"The day before a first acupuncture visit, the patient gets what to wear, where to park and how long it takes, written by the practitioner.\"",
+      "whenAndWhatItTakes": "Day 14. Needs the first-visit page text and arrival notes."
+    },
+    {
+      "name": "Review reply drafts for the acupuncture clinic",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 700,
+      "monthlyMin": 39,
+      "monthlyMax": 99,
+      "pitchLine": "\"Each acupuncture review gets a warm reply drafted in your voice that never confirms someone is a patient or repeats anything about their health.\"",
+      "whenAndWhatItTakes": "Month 2, alongside review requests. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Lapsed acupuncture patient note",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 700,
+      "monthlyMin": 39,
+      "monthlyMax": 99,
+      "pitchLine": "\"A patient who stopped partway through a course of acupuncture gets one gentle note with openings, no pressure and an easy opt-out.\"",
+      "whenAndWhatItTakes": "Month 3. Needs visit history and the practitioner's own wording."
+    },
+    {
+      "name": "Phone answering while needles are in",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 149,
+      "monthlyMax": 299,
+      "pitchLine": "\"The practitioner can't step out mid-treatment. The acupuncture clinic's line still gets answered, fees explained and the next visit booked.\"",
+      "whenAndWhatItTakes": "Month 3, once they trust you. Needs fees, policies and booking access. Clinical questions go to a callback. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Bilingual patient message drafts",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Reminders, first-visit notes and herbal pickup texts drafted in the patient's preferred language, checked by the practitioner before they go out.\"",
+      "whenAndWhatItTakes": "Month 4, for clinics serving families in another language. Needs approved template wording in both languages. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Community acupuncture evening booking",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Group acupuncture evenings get their own sign-up with a sliding fee, a recliner count and a waitlist when the room fills.\"",
+      "whenAndWhatItTakes": "Month 4, if they run or want to run community sessions. Needs the room layout and fee scale."
+    },
+    {
+      "name": "Practitioner chart-note drafts from voice memos",
+      "kind": "ai",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"The acupuncturist talks through the visit for a minute, and a draft chart note is waiting on privacy-safe hosting for them to correct and sign.\"",
+      "whenAndWhatItTakes": "Month 6, after privacy-safe hosting is live. Needs their note format and a firm rule that nothing is saved unsigned. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Herb stock and expiry tracker",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Every herb jar and granule bottle in the dispensary has a quantity, a reorder point and an expiry date, so a formula is never short on the day.\"",
+      "whenAndWhatItTakes": "Month 5, for clinics with a dispensary. Needs a shelf count and their supplier list."
+    },
+    {
+      "name": "Caption writer that flags claim wording",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 59,
+      "monthlyMax": 149,
+      "pitchLine": "\"Post a picture of the cupping set or the herb shelves and a caption in the practitioner's voice is ready, with any wording that sounds like a health claim flagged.\"",
+      "whenAndWhatItTakes": "Month 2. Needs a handful of past captions and the words they avoid. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Same-day acupuncture cancellation fill",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 700,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"A morning acupuncture slot cancels, and patients who asked for an earlier visit get a text with the opening before lunch.\"",
+      "whenAndWhatItTakes": "Month 3. Needs booking access and a waitlist patients joined on purpose."
+    },
+    {
+      "name": "Room and practitioner schedule for shared clinics",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 49,
+      "monthlyMax": 99,
+      "pitchLine": "\"For traditional medicine clinics with several practitioners: who has which treatment room, which shifts are open and where community evenings fit.\"",
+      "whenAndWhatItTakes": "Month 5, only for clinics with associates or renters. Needs schedules and the room list."
+    },
+    {
+      "name": "Aftercare note library for each technique",
+      "kind": "software",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"The practitioner's own aftercare notes for needling, cupping and moxibustion are sent the evening after a visit, exactly as written and approved.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the practitioner's aftercare text per technique. Sends only approved wording, never advice."
+    },
+    {
+      "name": "Front-desk policy search for the clinic",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 59,
+      "monthlyMax": 149,
+      "pitchLine": "\"Reception staff search the acupuncture clinic's own policies on packages, receipts, lateness and refills instead of interrupting a treatment room.\"",
+      "whenAndWhatItTakes": "Month 6, for clinics with a front desk. Needs written policies, each answer approved. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Package drop-off nudge for the practitioner",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 59,
+      "monthlyMax": 149,
+      "pitchLine": "\"Patients with acupuncture visits left on a package who haven't booked in a while are flagged with a suggested personal note for the practitioner to send.\"",
+      "whenAndWhatItTakes": "Month 6, once the package tracker has data. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise intake and packages for solo acupuncturists",
+      "whoPays": "Acupuncturists, monthly",
+      "min": 19,
+      "max": 69,
+      "unit": "monthly",
+      "pitchLine": "\"I built privacy-safe intake and prepaid packages for one acupuncture clinic. Every solo practitioner on a booking-platform page is juggling the same paper.\"",
+      "whyItWorks": "Solo acupuncturists are many and cluster in wellness suites. The first clinic's setup is the whole demo."
+    },
+    {
+      "route": "Graduate launch kit for traditional medicine colleges",
+      "whoPays": "The college, annually",
+      "min": 1500,
+      "max": 6000,
+      "unit": "per-year",
+      "pitchLine": "\"Every graduating acupuncturist leaves with a clinic page, a first-visit explanation and booking ready for the day their licence comes through.\"",
+      "whyItWorks": "Colleges sell careers. A launch kit per graduating class is a recurring contract and a pipeline of future clients."
+    },
+    {
+      "route": "Acupuncture professional association member template",
+      "whoPays": "The association",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer every member an acupuncture clinic template with the licence line, consent pages and claim-free wording built in.\"",
+      "whyItWorks": "Associations need renewal reasons, and members worry about saying the wrong thing in health advertising."
+    },
+    {
+      "route": "Find-a-practitioner directory for a herbal supplier",
+      "whoPays": "The supplier",
+      "min": 5000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Your granule and raw-herb customers want more patients. A find-a-practitioner directory on your site keeps those acupuncture clinics ordering from you.\"",
+      "whyItWorks": "Suppliers compete on loyalty, and a directory their practitioners rely on beats a discount."
+    },
+    {
+      "route": "Needle and clinic-supply distributors",
+      "whoPays": "The distributor, annually",
+      "min": 3000,
+      "max": 10000,
+      "unit": "per-year",
+      "pitchLine": "\"Offer your acupuncture customers a discounted clinic site as a loyalty perk. I build and host them under one agreement with you.\"",
+      "whyItWorks": "Distributors already market to every clinic, and a site programme gives reps a reason to call that isn't a price."
+    },
+    {
+      "route": "Integrative clinic groups with several practitioners",
+      "whoPays": "The clinic group",
+      "min": 3000,
+      "max": 8000,
+      "unit": "one-time",
+      "pitchLine": "\"Your integrative clinic has acupuncture, naturopathy and massage on one outdated site. One build with a page and booking per practitioner covers the whole team.\"",
+      "whyItWorks": "Groups buy once for everyone, and the acupuncturist inside the group is the warm introduction."
+    },
+    {
+      "route": "White-label acupuncture template for agencies",
+      "whoPays": "The agency, per site",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency picks up acupuncture clients and starts from scratch. License my template with the first-visit and cupping pages built in.\"",
+      "whyItWorks": "Agencies own the relationship; you sell the part you've already perfected for this trade."
+    },
+    {
+      "route": "Liability insurers for acupuncturists",
+      "whoPays": "The insurer's member services team",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Your policyholders ask what an acupuncture clinic site may say. A template with consent, photo policy and claim-free wording is a member benefit.\"",
+      "whyItWorks": "Insurers want fewer complaints and stickier members, and careful wording helps with both."
+    },
+    {
+      "route": "Community acupuncture clinic networks",
+      "whoPays": "The network, annually",
+      "min": 2000,
+      "max": 8000,
+      "unit": "per-year",
+      "pitchLine": "\"Every community acupuncture clinic in your network needs sliding-fee booking and a recliner waitlist. One shared template serves them all.\"",
+      "whyItWorks": "Networks share tools across member clinics, and the per-clinic cost stays low enough for sliding-fee practices."
+    },
+    {
+      "route": "Corporate wellness programme providers",
+      "whoPays": "The programme provider, annually",
+      "min": 3000,
+      "max": 10000,
+      "unit": "per-year",
+      "pitchLine": "\"You add acupuncture to employer wellness days and book practitioners by text. A practitioner booking network makes each event run itself.\"",
+      "whyItWorks": "Providers resell practitioner time at scale. Reliable staffing for events is their margin."
+    },
+    {
+      "route": "The same acupuncture build in the next metro",
+      "whoPays": "New acupuncture clients in a new metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"Clinics across town from each other rarely share patients, so I take one acupuncture practice per area in {City} and reuse the first-visit and cupping pages for the next.\"",
+      "whyItWorks": "Non-competing geography lets you reuse the template, the pitch and the finished proof."
+    },
+    {
+      "route": "Rescue half-built acupuncture booking setups",
+      "whoPays": "The stuck practitioner",
+      "min": 300,
+      "max": 1200,
+      "unit": "one-time",
+      "pitchLine": "\"Someone started your online acupuncture booking and left intake and packages half done. I can finish it on a setup I've run for other clinics.\"",
+      "whyItWorks": "Stuck practitioners have already decided to buy. They want someone who has done it for a clinic like theirs."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Acupuncture site build plus care plan, one contract",
+      "min": 1500,
+      "max": 2500,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The acupuncture site and the care plan go on one contract, so a new fee or technique page is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 0,
+      "offer": "Privacy-safe online intake and hosting setup",
+      "min": 500,
+      "max": 1500,
+      "unit": "one-time",
+      "trigger": "They mention paper intake forms or patients emailing health details.",
+      "line": "\"Your acupuncture intake asks for health history. It should arrive on privacy-safe hosting, not on a clipboard or in ordinary email.\""
+    },
+    {
+      "rung": 3,
+      "day": 30,
+      "offer": "Review requests and rebooking reminders",
+      "min": 39,
+      "max": 99,
+      "unit": "monthly",
+      "trigger": "The site has been live a month and patients are drifting partway through a course.",
+      "line": "\"Patients partway through a course of acupuncture need a nudge on time, and the ones who finish deserve to be asked for a review.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Treatment package and prepaid visit tracker",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "trigger": "They sell acupuncture packages and track visits on paper or in a spreadsheet.",
+      "line": "\"Your packages already work. Let's stop counting acupuncture visits on paper.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "DM answerer for acupuncture fees and openings",
+      "min": 500,
+      "max": 1200,
+      "unit": "one-time",
+      "trigger": "They say they answer fee and opening messages between patients every day.",
+      "line": "\"Those between-patient acupuncture messages get answered from your fee list while you're treating.\""
+    },
+    {
+      "rung": 6,
+      "day": 120,
+      "offer": "Herbal formula refills with pickup alerts",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "trigger": "Refill requests arrive by text and the practitioner keeps losing track of them.",
+      "line": "\"Herbal refill texts become one queue the practitioner approves, and the patient hears when the formula is ready.\""
+    },
+    {
+      "rung": 7,
+      "day": 180,
+      "offer": "Treatment room content afternoon",
+      "min": 250,
+      "max": 600,
+      "unit": "per-shoot",
+      "trigger": "The site still runs on placeholders or a single picture of the acupuncture room.",
+      "line": "\"One quiet afternoon at the clinic fills the acupuncture site for the year, with consent for anyone shown.\""
+    },
+    {
+      "rung": 8,
+      "day": 240,
+      "offer": "Introduction to the herbal dispensary",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "trigger": "They complain about reordering herbs by phone, or the dispensary asks who built the clinic site.",
+      "line": "\"Your herbal dispensary takes orders by phone from every acupuncture clinic it supplies. Would you introduce me?\""
+    }
+  ]
+}

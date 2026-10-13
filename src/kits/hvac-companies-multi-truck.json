@@ -1,0 +1,890 @@
+{
+  "schemaVersion": 1,
+  "category": "HVAC companies (multi-truck)",
+  "slug": "hvac-companies-multi-truck",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · expansion batch (healthcare + mid-size)",
+    "generatedAt": "2026-10-13",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Written for a GM or marketing manager at a fleet HVAC company that already has a site. Leans on booking by arrival window, membership sign-up, town and branch pages, recruiting and system integrations. Integration and portal prices are the least certain; they depend on how open the client's scheduling system is."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Book an HVAC visit by arrival window",
+      "contains": "Call type picker (no cooling, no heat, tune-up, replacement estimate), arrival windows read from the dispatch schedule, an address check against branch territories, and a confirmation text naming the tech",
+      "why": "At fleet scale the phone queue is the bottleneck in the first hot week. People who can pick a window themselves don't hang up and ring the next company."
+    },
+    {
+      "section": "Maintenance membership sign-up and member login",
+      "contains": "Membership levels side by side, what each seasonal visit covers, priority scheduling wording, recurring billing, and a member area showing past visits, equipment on file and the next tune-up",
+      "why": "Members are the steadiest revenue in a multi-truck HVAC company. Buyers compare levels on a phone and want to join without a call."
+    },
+    {
+      "section": "Service-area hub with a page per town",
+      "contains": "Every town covered, linked to its own page with recent installs there, the branch and dispatcher that cover it, typical housing stock and local permit notes in brackets for the office to confirm",
+      "why": "Homeowners search the trade plus their town. A town page with real installs nearby beats a long footer list of place names."
+    },
+    {
+      "section": "HVAC careers and technician path",
+      "contains": "Open roles by branch, the path from apprentice to lead tech and comfort adviser, truck and tool policy, training days, how the on-call rota works, and a short application that works on a phone",
+      "why": "Hiring techs is the limit on growth for most fleets. Experienced techs compare employers by how they describe the job, the truck and the on-call load."
+    },
+    {
+      "section": "Commercial HVAC and service agreements",
+      "contains": "Rooftop units, light commercial and multi-site accounts, what a preventive maintenance agreement covers, response tiers in plain words, and a site survey request for facility managers",
+      "why": "Facility managers don't read residential pages. A separate path for service agreements brings in steady off-season work."
+    },
+    {
+      "section": "System replacement estimate and financing pre-check",
+      "contains": "Home size, current equipment age, gas or heat pump preference, a ballpark range by system type, monthly payment examples and an optional pre-check passed to the comfort adviser",
+      "why": "Replacement buyers want a number and a monthly figure before they give up an evening to an in-home visit."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C1",
+      "siteType": "booking-first",
+      "name": "Pick a Window",
+      "heroLayout": "card-stack",
+      "mood": [
+        "orderly",
+        "quick",
+        "reassuring"
+      ],
+      "bestFor": "HVAC fleets whose main problem is the phone queue, so the first screen is call type, town and arrival window",
+      "pairsWithTier": "starter",
+      "headlineSample": "Book heating and cooling service in {City} by arrival window",
+      "whyItFits": "Indigo on white with a neutral grotesque reads like a well-run booking system. Cards for each call type do the sorting before a dispatcher ever sees the job."
+    },
+    {
+      "id": "b",
+      "themeId": "C50",
+      "siteType": "emergency-response",
+      "name": "Fleet Dispatch",
+      "heroLayout": "type-led",
+      "mood": [
+        "urgent",
+        "organised",
+        "factual"
+      ],
+      "bestFor": "Multi-branch HVAC companies that run nights and weekends and need each town routed to the right dispatcher",
+      "pairsWithTier": "standard",
+      "headlineSample": "No cooling in {City}? Trucks out from the branch nearest you",
+      "whyItFits": "The family's own combo. Red call-to-action and mono labels for branch hours and arrival windows say a fleet is on the road, which is the promise a multi-truck company sells."
+    },
+    {
+      "id": "c",
+      "themeId": "C9",
+      "siteType": "premium-brand",
+      "name": "Comfort Club",
+      "heroLayout": "full-bleed-photo",
+      "mood": [
+        "assured",
+        "members-first",
+        "calm"
+      ],
+      "bestFor": "Replacement-led HVAC companies growing a large membership base and selling whole-home systems to bigger homes",
+      "pairsWithTier": "premium",
+      "headlineSample": "Year-round comfort for {City} homes, with a club that remembers",
+      "whyItFits": "A dark, membership-style palette with a refined serif suits a company selling a relationship rather than a single repair, and makes the member login feel worth joining."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "Slow homepage on a phone",
+      "line": "Your HVAC homepage took a long while to load on my phone over mobile data, and the book-service button showed up last. In a heat wave that's when people back out and tap the next heating and cooling company.",
+      "hook": "Load their homepage on your phone with wifi off and note what appears last. Screenshot it for when they reply.",
+      "linkLine": "The same HVAC homepage, built to load fast on a phone: {demo-link}"
+    },
+    {
+      "angle": "Booking by phone only",
+      "line": "With a fleet your size, every furnace tune-up and AC repair still has to come through the phone queue. Letting people pick an arrival window online takes pressure off your call centre on the busiest days.",
+      "hook": "Look for a Book Online or Schedule button. If it only opens a general contact form or a phone number, the angle holds.",
+      "linkLine": "HVAC booking by call type and arrival window: {demo-link}"
+    },
+    {
+      "angle": "Membership you can't join online",
+      "line": "Your maintenance club gets its own section on the site, but joining means calling the office. Members are the steadiest money in an HVAC company, and they should be able to sign up and pay at midnight.",
+      "hook": "Find the plan or club page and check whether it takes payment or ends in 'call to enroll'. Quote the plan's name back.",
+      "linkLine": "Your HVAC membership with sign-up and billing built in: {demo-link}"
+    },
+    {
+      "angle": "One page for every town",
+      "line": "The footer lists a long run of towns you cover, but they all point to the same HVAC page. Someone searching AC repair plus their town wants to see your trucks have been on their streets.",
+      "hook": "Count the towns they list and check whether any has its own page. Pick the biggest town without one.",
+      "linkLine": "A heating and cooling page for each town you cover: {demo-link}"
+    },
+    {
+      "angle": "Hiring techs with no careers page",
+      "line": "You're advertising for HVAC technicians on the job boards, but the site has no careers page. Experienced techs check how a heating and cooling company treats its people before they leave the shop they're at.",
+      "hook": "Search the company name on the job boards and confirm the ads are live. Then check the site menu for Careers.",
+      "linkLine": "An HVAC careers section built for techs on their phones: {demo-link}"
+    },
+    {
+      "angle": "Reviews kept off the site",
+      "line": "You have a deep stack of reviews naming your HVAC techs by first name, and the site shows a few generic testimonials. The real ones are what tip a homeowner choosing between two air conditioning companies.",
+      "hook": "Copy one review that names a tech and a repair. Then note what testimonials the site uses instead.",
+      "linkLine": "Your HVAC reviews shown by town and by service: {demo-link}"
+    },
+    {
+      "angle": "Ads landing on the homepage",
+      "line": "Your sponsored result for AC repair lands on the general homepage rather than a page about AC repair. When you pay for every click, the page after the ad has to finish the job.",
+      "hook": "If their sponsored result shows for AC repair in their city, note where it lands without clicking repeatedly.",
+      "linkLine": "An AC repair landing page built to follow the ad: {demo-link}"
+    },
+    {
+      "angle": "Site older than the trucks",
+      "line": "Your trucks carry a sharp new wrap, but the HVAC website still looks a few logos old. People notice when the van in the driveway and the heating and cooling site on their phone don't match.",
+      "hook": "Compare a recent truck photo on their social pages with the site header and colours. Note what's out of date.",
+      "linkLine": "The site redone to match the HVAC fleet: {demo-link}"
+    },
+    {
+      "angle": "Branches sharing one form",
+      "line": "You run HVAC branches in more than one town, yet the site has one contact form for all of them. A furnace request from the far branch's area should reach that dispatcher, not wait in a shared inbox.",
+      "hook": "Check the site and listings for more than one office address. If they share a single form, the angle holds.",
+      "linkLine": "HVAC requests routed to the right branch: {demo-link}"
+    },
+    {
+      "angle": "Commercial work hidden",
+      "line": "Your posts show rooftop units and light commercial installs, but the site only talks to homeowners. Facility managers looking for an HVAC service agreement need their own page and request path.",
+      "hook": "Look for commercial jobs in posts or 'commercial' on the truck lettering. Then check the site for a commercial section.",
+      "linkLine": "A commercial HVAC section for facility managers: {demo-link}"
+    },
+    {
+      "angle": "First heat wave overflow",
+      "line": "When the first heat wave reaches {City}, every HVAC phone line backs up at once. The company whose site books the AC repair without a hold queue takes the overflow.",
+      "hook": "Use this in late spring before the first hot week, or the week a heat wave is forecast.",
+      "linkLine": "Heat-wave booking for a multi-truck HVAC company: {demo-link}"
+    },
+    {
+      "angle": "Form that waits till Monday",
+      "line": "Your contact form says the office replies the next business day. For a no-cooling call on a Friday night, that sends the homeowner to the next heating and cooling company with a live booking.",
+      "hook": "Read the wording under their contact form or on the thank-you note. Quote it back if they reply.",
+      "linkLine": "An HVAC request that books a window after hours: {demo-link}"
+    },
+    {
+      "angle": "Financing buried in a PDF",
+      "line": "Your financing offer for a new HVAC system sits in a PDF at the bottom of one page. A replacement buyer wants a monthly figure and a quick pre-check before the comfort adviser comes out.",
+      "hook": "Find any financing mention on the site. Note whether it's a PDF, an outside link or a real page.",
+      "linkLine": "System replacement estimate with monthly figures: {demo-link}"
+    },
+    {
+      "angle": "Two brands after a merger",
+      "line": "Since joining up with another HVAC company, your listings show two names and two numbers. A homeowner can't tell whether the heating and cooling brand they trusted is still the one coming out.",
+      "hook": "Only if they've announced an acquisition or the site footer shows a second brand. Note both names.",
+      "linkLine": "One HVAC site that carries both brands clearly: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "That {specific recent job} you posted, with the crew beside the new equipment, deserves a proper HVAC project page. On a feed it scrolls away from anyone searching for a replacement.",
+      "hook": "Pick the newest commercial or whole-home install they posted and name it exactly, with the town if tagged.",
+      "linkLine": "That HVAC install as a project page: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, I was looking at HVAC companies in {City} and {Business Name} stood out: plenty of trucks on the road, a strong review count, and a site where booking a tune-up or joining the maintenance plan still means calling the office.\n\nI put together a sample of what the site could do at your size: booking by arrival window, membership sign-up with billing, and a page per town, with marked placeholders where your photos would go.\n\nWho's the right person to send it to?",
+    "dm2": "{Owner}, following up in case my last note landed in a busy week. Here's the sample HVAC site for {Business Name}: {demo-link}\n\nWorth a look: booking that offers real arrival windows, a membership people can join and pay for online, town pages tied to each branch, and a careers section for techs. If someone else looks after the website, I'm glad to send it to them instead.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites and booking tools for HVAC companies around {City}. I sent you a sample site a few days ago, did it reach you?\"\n\nIF NO:\n\"Easy to lose in peak season. Short version: I rebuilt the {Business Name} site as a sample, with booking by arrival window, membership sign-up with billing and a page for each town you cover, and marked placeholders where your photos would go. Can I email the link to you and whoever runs marketing?\"\n\nIF YES:\n\"What stood out?\"\n → let them talk, don't fill the silence\n\"This isn't an ad contract and it doesn't replace your agency or your scheduling system. It's the site and booking layer that sits on top of them, and you own it. The build runs {Build Range} depending on towns, branches and how deeply booking and membership connect to your systems, then {Care Range} a month for hosting, changes and keeping the integrations working. For a company your size I'd quote about {Build Price}.\"\n\"Could we do twenty minutes with you and your ops or call-centre lead next week?\"\n\nCLOSE:\n\"I'll send a one-page scope you can share with the owner. We build in the shoulder season so it's live before the next peak.\"",
+    "objections": [
+      {
+        "objection": "We already have a marketing agency.",
+        "handler": "\"Keep them. They run the ads; I build the pages and the booking and membership tools those ads land on. Most agencies are glad when the landing page finally books HVAC calls, and I'll work to their campaign calendar.\""
+      },
+      {
+        "objection": "Our field service software already has a booking widget.",
+        "handler": "\"Good, then I connect to it rather than replace it. The widget is a box on a page. The work is everything around it: call types, towns, arrival windows and the membership sign-up, so the bookings that come through are ones your dispatchers can actually run.\""
+      },
+      {
+        "objection": "The owner and our ops manager both need to sign off.",
+        "handler": "\"Of course. I'll send a one-page scope they can read in five minutes, and I'm happy to do a short call with all three of you so nobody has to relay it.\""
+      },
+      {
+        "objection": "We're in peak season, nobody has time.",
+        "handler": "\"Then we scope now and build in the shoulder season so it's live before the next rush. I need about two hours from your team across the whole project, mostly reviewing pages.\""
+      },
+      {
+        "objection": "We redid the website not long ago.",
+        "handler": "\"It looks fine on a desktop. The gap is on a phone and in booking. I'm not proposing a redesign for its own sake, I'm proposing the pages that turn a search into a booked HVAC call, and I'll keep whatever is working.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}, depending on how many towns and branches and how far booking and membership tie into your systems. For a company your size I'd quote about {Build Price}, which is in the range of the margin on a couple of system changeouts.\""
+      }
+    ],
+    "email": {
+      "subject": "Booking and membership site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites and booking tools for HVAC companies around {City}. {Business Name} clearly runs a serious fleet, but the site still sends people to the phone to book a visit or join the maintenance plan, and every town you cover points to the same page.\n\nI built a sample rather than ask for a meeting: booking by call type and arrival window, membership sign-up with recurring billing, a page per town tied to the branch that covers it, and a careers section for techs, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIt sits on top of your current scheduling system rather than replacing it. The build runs {Build Range}, plus {Care Range} a month for hosting, changes and keeping the connections working.\n\nWould twenty minutes with you and your ops lead be worth it this month?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build booking and membership sites for HVAC companies around {City}, and I put together a sample for {Business Name}. I'll email the link so you can pass it to whoever runs marketing. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm clearing out sample sites this Friday, including the {Business Name} HVAC one.\n\nShould I keep it up for your team to review, or let it go? Either answer is fine.",
+    "nurture": "Hi {Owner}, shoulder season is a few weeks off, which is when HVAC companies usually find time for the website before the next rush.\n\nThe booking and membership sample is still here if it's useful: {demo-link}. Happy to update it for any branches you've added since."
+  },
+  "pricing": {
+    "bullets": [
+      "Price against the margin on a few system changeouts, never an hourly rate. A GM compares it with ad spend and the cost of one truck.",
+      "Quote the connection to their scheduling system as its own line. How open that system is moves the price more than design does.",
+      "Town pages are priced per town, and only for towns with real installs and a branch that covers them.",
+      "Membership sign-up with recurring billing is separate from the membership page; payments, renewals and failed cards are where the work is.",
+      "Scope with the GM, the call-centre lead and whoever owns marketing in one call, so no one re-opens it later.",
+      "Never fold ad management into the build. If they have an agency, the site serves the agency's campaigns."
+    ],
+    "lineItems": [
+      {
+        "item": "Online booking tied to the dispatch schedule",
+        "min": 3000,
+        "max": 9000,
+        "unit": "one-time",
+        "description": "Max when it reads live arrival windows, checks the address against branch territories and writes the job straight into their scheduling system.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Membership sign-up with recurring billing",
+        "min": 2500,
+        "max": 7000,
+        "unit": "one-time",
+        "description": "Max with several membership levels, monthly or yearly billing, failed-card retries and the first tune-up booked on sign-up.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Town service-area page (each)",
+        "min": 300,
+        "max": 700,
+        "unit": "per-page",
+        "description": "Max when each town page carries its own recent installs, a local review and bracketed permit notes the office confirms.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Branch location page (each)",
+        "min": 500,
+        "max": 1200,
+        "unit": "per-page",
+        "description": "Max with branch hours, the towns it covers, its own team section, a map and requests routed to that branch's dispatcher.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Paid-search landing page (each)",
+        "min": 600,
+        "max": 1500,
+        "unit": "per-page",
+        "description": "Max when each page matches one ad group, books directly and reports which campaign each booking came from.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Careers section with phone application",
+        "min": 1500,
+        "max": 4500,
+        "unit": "one-time",
+        "description": "Max with roles per branch, a career-path page, crew video placeholders and applications sent to the hiring manager by role.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Financing pre-check page",
+        "min": 800,
+        "max": 2500,
+        "unit": "one-time",
+        "description": "Max when it shows monthly examples by system type and passes the pre-check result to the comfort adviser before the visit.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Commercial service agreement request path",
+        "min": 1200,
+        "max": 3500,
+        "unit": "one-time",
+        "description": "Max with a multi-site survey request, equipment counts per site and routing to the commercial service manager.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Migration and redirects from the old site",
+        "min": 1500,
+        "max": 5000,
+        "unit": "one-time",
+        "description": "Max when there are many old pages and blog posts to map and redirect so search rankings carry over.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Review program across every truck and branch",
+      "min": 299,
+      "max": 799,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Every finished HVAC call gets a review request tagged to the tech and the branch, so you can see which towns and techs are earning praise and the site shows it by town.\"",
+      "when": "Day 30, once online bookings are flowing."
+    },
+    {
+      "name": "Monthly town page content refresh",
+      "min": 400,
+      "max": 1200,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Each month the town pages get new installs, a fresh review and a seasonal heating or cooling note, so they stay current instead of going stale after launch.\"",
+      "when": "Month 2, once the town pages are live and jobs are logged by town."
+    },
+    {
+      "name": "Technician recruiting campaign",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A short campaign aimed at experienced HVAC techs and apprentices nearby, landing on your careers page with the truck, the tools and the on-call rota spelled out.\"",
+      "when": "Whenever they post more than one tech opening at once."
+    },
+    {
+      "name": "Membership win-back and renewal campaign",
+      "min": 400,
+      "max": 1000,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Members who lapsed get a plain note and a one-tap rejoin before the next heating or cooling season, and current members get renewal reminders before their card is charged.\"",
+      "when": "Day 60, once membership sign-up is online and renewals are visible."
+    },
+    {
+      "name": "Fleet photo and video day",
+      "min": 1500,
+      "max": 4000,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A day with your crews across two branches gives you real installs, techs at work and the trucks lined up, so the HVAC site and careers page stop relying on stock photos.\"",
+      "when": "Month 2, or before a recruiting push."
+    },
+    {
+      "name": "Pre-season tune-up campaigns",
+      "min": 600,
+      "max": 1800,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Before cooling season and again before heating season, past customers get an email and text offering a tune-up window, booked straight from the message.\"",
+      "when": "Pitch a few weeks before each season changes."
+    },
+    {
+      "name": "Business profile management for each branch",
+      "min": 300,
+      "max": 900,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Each HVAC branch gets its own listing kept current: hours, towns served, holiday on-call times and new install posts, so the map points people to the nearest branch.\"",
+      "when": "Day 30, alongside the branch pages."
+    },
+    {
+      "name": "Rebrand roll-out for trucks and signage",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"When the HVAC brand changes after a merger, I coordinate the truck wrap files, yard signs, uniforms and site so every piece matches on the same week.\"",
+      "when": "Only after an acquisition, a rename or a new logo."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Home builders whose houses you rough in",
+        "whoPays": "The home builder",
+        "min": 4000,
+        "max": 12000,
+        "unit": "one-time",
+        "pitchLine": "\"The builders you rough in HVAC for need a site for their communities and a warranty request page. I build it, and the heating and cooling warranty items route to your team.\"",
+        "whyItWorks": "Production and custom builders have budgets and a warranty problem. The HVAC company is a trusted trade partner who can make the introduction."
+      },
+      {
+        "route": "Property management firms on your service contracts",
+        "whoPays": "The property management company",
+        "min": 3000,
+        "max": 8000,
+        "unit": "one-time",
+        "pitchLine": "\"The management companies whose units you service need an owner and tenant portal. I build it, and the HVAC work orders land with your commercial desk.\"",
+        "whyItWorks": "Firms with hundreds of doors have a real maintenance-request problem and already trust their HVAC vendor's judgement."
+      },
+      {
+        "route": "Sheet metal and duct fabrication shop",
+        "whoPays": "The fabrication shop",
+        "min": 3000,
+        "max": 8000,
+        "unit": "one-time",
+        "pitchLine": "\"The shop that bends your HVAC ductwork needs a capability site for other mechanical contractors. Your introduction gets me in, and their order page can take your fittings too.\"",
+        "whyItWorks": "Fab shops sell to every HVAC contractor in the region and rarely have a site that shows what they make."
+      },
+      {
+        "route": "The distributor branch's contractor events page",
+        "whoPays": "The distributor's regional branch",
+        "min": 5000,
+        "max": 15000,
+        "unit": "one-time",
+        "pitchLine": "\"The distributor you buy equipment from runs training nights and product launches for HVAC contractors. I'll build their event and registration pages.\"",
+        "whyItWorks": "Distributors spend on contractor loyalty and need events filled. A large customer's introduction carries weight at the branch."
+      },
+      {
+        "route": "Electrical contractor partner",
+        "whoPays": "The electrical contractor, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"Whoever upgrades panels for your heat pump installs is busy enough to need a proper site. I'll build it, and your heat pump page links to them.\"",
+        "whyItWorks": "Heat pump and electrification jobs need both trades, so the two companies already pass work back and forth."
+      },
+      {
+        "route": "Plumbing company you share customers with",
+        "whoPays": "The plumbing company, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The plumbing company you refer water heater and boiler work to has the same fleet problems you had. I'll show them your booking pages and build theirs.\"",
+        "whyItWorks": "Mid-size plumbing and HVAC companies watch each other closely. A working example from a trusted peer closes faster than any pitch."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Work-order summariser for property managers",
+        "whoPays": "The property management company, monthly",
+        "min": 300,
+        "max": 900,
+        "unit": "monthly",
+        "pitchLine": "\"Tenant messages about a hot unit or a noisy air handler get turned into a clean work order with the unit, the symptom and access notes, sent to your HVAC desk.\"",
+        "whyItWorks": "Managers spend hours rewriting tenant messages. The HVAC company gets cleaner tickets and faster first visits."
+      },
+      {
+        "route": "Builder warranty request assistant",
+        "whoPays": "The home builder, monthly",
+        "min": 200,
+        "max": 600,
+        "unit": "monthly",
+        "pitchLine": "\"New homeowners describe a cold bedroom or a thermostat fault in their own words, and an assistant sorts it to the right trade, sending HVAC items to your team.\"",
+        "whyItWorks": "Builders get buried in warranty emails in a home's first year. Sorting them by trade saves their warranty staff a day a week."
+      },
+      {
+        "route": "Counter assistant for the distributor branch",
+        "whoPays": "The distributor's regional branch, annually",
+        "min": 6000,
+        "max": 18000,
+        "unit": "per-year",
+        "pitchLine": "\"Contractors text the branch a model number and get compatible parts, stock and pickup times back, so HVAC techs stop waiting at the counter.\"",
+        "whyItWorks": "Branches compete on counter speed. A tool that answers contractors' texts keeps them buying from that branch."
+      },
+      {
+        "route": "Plan-reading helper for the fabrication shop",
+        "whoPays": "The fabrication shop",
+        "min": 2000,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"The duct shop reads mechanical drawings by hand to quote fittings. An assistant pulls the duct runs into a draft takeoff for the estimator to check.\"",
+        "whyItWorks": "Takeoffs are slow and the shop quotes every HVAC contractor in town, so faster quoting wins them more jobs."
+      },
+      {
+        "route": "Rooftop unit history assistant for restaurant groups",
+        "whoPays": "The restaurant group, monthly",
+        "min": 200,
+        "max": 600,
+        "unit": "monthly",
+        "pitchLine": "\"Restaurant groups whose rooftop units you service get an assistant that answers 'when was the north store's unit last serviced' from the HVAC visit log.\"",
+        "whyItWorks": "Multi-site operators lose track of equipment across stores. The HVAC company becomes the vendor with the clearest records."
+      },
+      {
+        "route": "Customer FAQ assistant for the electrical partner",
+        "whoPays": "The electrical contractor",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The electrician you work with on heat pump jobs fields the same panel and charger questions every day. An assistant answers them from their own notes.\"",
+        "whyItWorks": "You've built an HVAC assistant already, so this is configuration, and the referral comes from a partner they trust."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Missed-call and abandoned-booking text-back",
+      "kind": "automation",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Anyone who hangs up in the queue or leaves the booking page halfway gets a text offering the next open HVAC window, so the overflow comes back instead of going elsewhere.\"",
+      "whenAndWhatItTakes": "Day 30. Needs their main numbers, the booking page live, and wording the call-centre lead approves."
+    },
+    {
+      "name": "Review reply drafts by branch",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Every new review gets a reply drafted in the company voice, naming the tech and the heating or cooling fix, queued for the branch manager to approve.\"",
+      "whenAndWhatItTakes": "Month 2. Needs a set of past replies and who approves for each branch. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Booking report by town and call type",
+      "kind": "software",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"One screen shows which towns and call types book online, which drop off, and how no-cooling calls compare with tune-ups, branch by branch.\"",
+      "whenAndWhatItTakes": "Month 2, after the first month of online HVAC bookings. Needs read access to booking data and their town list."
+    },
+    {
+      "name": "Member portal with visit history and equipment",
+      "kind": "software",
+      "oneTimeMin": 8000,
+      "oneTimeMax": 20000,
+      "monthlyMin": 300,
+      "monthlyMax": 800,
+      "pitchLine": "\"Members log in to see each visit, the furnace and condenser on file, the next tune-up and their billing, and book or reschedule without calling.\"",
+      "whenAndWhatItTakes": "Month 3. Needs an export of member records and equipment from their scheduling system, and a decision on what members can change."
+    },
+    {
+      "name": "After-hours phone agent for overflow and nights",
+      "kind": "ai",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 15000,
+      "monthlyMin": 800,
+      "monthlyMax": 2000,
+      "pitchLine": "\"When the queue overflows or the office closes, an agent answers, asks what the system is doing, books an HVAC window and pages the on-call tech only for real outages.\"",
+      "whenAndWhatItTakes": "Month 3, before peak season. Needs on-call rotas per branch, after-hours fee wording and the questions dispatchers always ask. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Website assistant for HVAC symptoms and membership",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 300,
+      "monthlyMax": 800,
+      "pitchLine": "\"It answers 'why is the AC blowing warm' and 'what does the club cover' from your own notes, then offers an open window or a callback.\"",
+      "whenAndWhatItTakes": "Month 3. Needs symptom notes, membership terms and the town list, reviewed each quarter. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Seasonal tune-up booking from the member list",
+      "kind": "automation",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Ahead of each season, members due a furnace or AC check get a text with open windows near them; they tap one and it lands on the dispatch board.\"",
+      "whenAndWhatItTakes": "Month 3. Needs member records with last visit dates and access to the schedule."
+    },
+    {
+      "name": "Good-better-best proposal builder with e-signature",
+      "kind": "software",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 15000,
+      "monthlyMin": 200,
+      "monthlyMax": 600,
+      "pitchLine": "\"Every comfort adviser presents the same clean set of HVAC replacement options, priced from head-office rules, and the signed job drops into scheduling without retyping.\"",
+      "whenAndWhatItTakes": "Month 4. Needs equipment tiers, pricing rules and the proposal they use today."
+    },
+    {
+      "name": "Comfort adviser visit notes to draft proposal",
+      "kind": "ai",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 300,
+      "monthlyMax": 800,
+      "pitchLine": "\"The adviser talks through the ducts, the return and the attic after the walk-through, and a draft replacement proposal appears on the company template.\"",
+      "whenAndWhatItTakes": "Month 5, after the proposal builder. Needs proposal templates and pricing rules. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Marketing report from ad spend to booked HVAC jobs",
+      "kind": "software",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 14000,
+      "monthlyMin": 200,
+      "monthlyMax": 600,
+      "pitchLine": "\"See which campaign, town and landing page produced booked heating and cooling jobs and what each one earned, not just clicks and calls.\"",
+      "whenAndWhatItTakes": "Month 4. Needs ad account read access, call tracking and job revenue from their scheduling system."
+    },
+    {
+      "name": "Technician hiring pipeline",
+      "kind": "software",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Every HVAC applicant from the careers page in one board by branch and stage, with interview slots, ride-along days and offer letters tracked.\"",
+      "whenAndWhatItTakes": "Month 4, once the careers page is live. Needs their hiring stages and who interviews at each branch."
+    },
+    {
+      "name": "Applicant screener for techs and installers",
+      "kind": "ai",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 200,
+      "monthlyMax": 500,
+      "pitchLine": "\"Applicants answer questions on refrigerant handling, driving record and on-call weekends, and the hiring manager sees a short summary of who fits the HVAC role.\"",
+      "whenAndWhatItTakes": "With the hiring pipeline. Needs must-haves per role and pay ranges. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Replacement-opportunity finder from service history",
+      "kind": "ai",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 15000,
+      "monthlyMin": 400,
+      "monthlyMax": 1000,
+      "pitchLine": "\"It reads service notes across the fleet and flags homes with ageing furnaces and repeat AC repairs, so comfort advisers call the right households first.\"",
+      "whenAndWhatItTakes": "Month 6. Needs a season or more of service notes with equipment ages. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Branch scorecard for the leadership team",
+      "kind": "software",
+      "oneTimeMin": 8000,
+      "oneTimeMax": 20000,
+      "monthlyMin": 300,
+      "monthlyMax": 900,
+      "pitchLine": "\"Each HVAC branch on one page: bookings, membership growth, average ticket, callbacks and reviews, refreshed weekly for the leadership meeting.\"",
+      "whenAndWhatItTakes": "Month 6. Needs read access to scheduling, billing and review data, and the measures leadership already tracks."
+    },
+    {
+      "name": "Call review and coaching notes for CSRs",
+      "kind": "ai",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 12000,
+      "monthlyMin": 500,
+      "monthlyMax": 1500,
+      "pitchLine": "\"Recorded booking calls are summarised and scored against your script, so the call-centre lead sees which CSRs miss the membership offer on HVAC repair calls.\"",
+      "whenAndWhatItTakes": "Month 7. Needs call recordings with consent notices already in place and their booking script. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Equipment warranty registration and claims tracker",
+      "kind": "software",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Every new furnace, heat pump and condenser registered on install day, with parts claims tracked until paid, so the company stops eating warranty parts.\"",
+      "whenAndWhatItTakes": "Month 7. Needs their install records and how claims are filed today."
+    },
+    {
+      "name": "Membership failed-payment recovery",
+      "kind": "automation",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"When a member's card fails, they get a polite text and email with a secure update link before the HVAC membership lapses, and the office only sees the ones that don't respond.\"",
+      "whenAndWhatItTakes": "Month 5, once billing is online. Needs the payment processor's failure notices and approved wording."
+    },
+    {
+      "name": "Field assistant for techs on tough HVAC calls",
+      "kind": "ai",
+      "oneTimeMin": 8000,
+      "oneTimeMax": 20000,
+      "monthlyMin": 600,
+      "monthlyMax": 1500,
+      "pitchLine": "\"Techs ask a question on their phone at the condenser and get the answer from your own install notes, service bulletins and senior techs' recorded fixes.\"",
+      "whenAndWhatItTakes": "Month 8. Needs their training material and senior techs willing to record fixes. Comes with the AI maintenance retainer; the tech always confirms on site."
+    },
+    {
+      "name": "Commercial service agreement portal",
+      "kind": "software",
+      "oneTimeMin": 10000,
+      "oneTimeMax": 30000,
+      "monthlyMin": 400,
+      "monthlyMax": 1200,
+      "pitchLine": "\"Facility managers log in to see every rooftop unit across their sites, upcoming preventive visits, open HVAC tickets and invoices, and raise a request in seconds.\"",
+      "whenAndWhatItTakes": "Month 9, once they hold several commercial agreements. Needs site and equipment lists and their agreement terms."
+    },
+    {
+      "name": "Weather-triggered booking and campaign switch",
+      "kind": "automation",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 200,
+      "monthlyMax": 500,
+      "pitchLine": "\"When a heat wave or cold snap is forecast for {City}, the site banner, booking windows and HVAC ad copy switch to the season's call types automatically.\"",
+      "whenAndWhatItTakes": "Month 6. Needs a weather feed, their seasonal wording and access to the booking settings."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the member portal for HVAC companies",
+      "whoPays": "HVAC companies, monthly per company",
+      "min": 299,
+      "max": 999,
+      "unit": "monthly",
+      "pitchLine": "\"I built a member portal for one fleet HVAC company. Every heating and cooling company with a membership base wants members to see their visits without calling.\"",
+      "whyItWorks": "The first client paid to work out the membership workflow. Selling it again is configuration plus support."
+    },
+    {
+      "route": "Group buying up HVAC companies",
+      "whoPays": "The holding group consolidating HVAC companies",
+      "min": 40000,
+      "max": 90000,
+      "unit": "one-time",
+      "pitchLine": "\"Groups buying heating and cooling companies inherit a different site, booking flow and membership for each brand. One platform with a page set per brand fixes that after every acquisition.\"",
+      "whyItWorks": "Consolidators have capital and a repeatable integration problem. A working fleet HVAC build is the proof they ask for."
+    },
+    {
+      "route": "Distributor's dealer site programme",
+      "whoPays": "The equipment distributor, annually",
+      "min": 15000,
+      "max": 60000,
+      "unit": "per-year",
+      "pitchLine": "\"Offer every HVAC dealer that buys from your branches a booking and membership site template. Dealers with steady work buy steady equipment.\"",
+      "whyItWorks": "Distributors already fund dealer marketing, and a template with booking built in is more useful than co-op ad money."
+    },
+    {
+      "route": "Equipment maker's dealer network kit",
+      "whoPays": "The manufacturer's regional dealer programme",
+      "min": 20000,
+      "max": 80000,
+      "unit": "one-time",
+      "pitchLine": "\"Your top HVAC dealers run fleets and need booking, membership and town pages. I've built that for one already and can roll it across the territory.\"",
+      "whyItWorks": "Manufacturers rank dealers and fund the best ones. A kit already running at a fleet company fits their programme."
+    },
+    {
+      "route": "HVAC contractors' association member toolkit",
+      "whoPays": "The national or regional association",
+      "min": 5000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer members a careers page template and a membership sign-up kit for heating and cooling companies. Hiring and recurring revenue are the two things every member asks about.\"",
+      "whyItWorks": "Associations need member benefits that get used. Recruiting tools tie to their workforce agenda."
+    },
+    {
+      "route": "White-label HVAC booking pages for agencies",
+      "whoPays": "The marketing agency, per HVAC client",
+      "min": 2500,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency runs ads for HVAC companies but lands them on weak pages. License my booking, membership and town page set and launch each client in weeks.\"",
+      "whyItWorks": "Agencies own many HVAC relationships and want better landing pages without building them."
+    },
+    {
+      "route": "HVAC franchise territory roll-out",
+      "whoPays": "The franchise brand, per territory",
+      "min": 3000,
+      "max": 8000,
+      "unit": "one-time",
+      "pitchLine": "\"New franchisees open with a ready heating and cooling site: their towns pre-filled, booking pointed at their dispatch, and membership billing going to their account from launch week.\"",
+      "whyItWorks": "Franchise systems buy per territory, so one template becomes a recurring stream of builds."
+    },
+    {
+      "route": "Utility efficiency programme contractor portal",
+      "whoPays": "The utility's efficiency programme administrator",
+      "min": 20000,
+      "max": 80000,
+      "unit": "one-time",
+      "pitchLine": "\"Your participating HVAC contractors need a shared portal to explain the programme, book assessments and submit paperwork. I've built the contractor side already.\"",
+      "whyItWorks": "Efficiency programmes have outreach budgets and struggle to get contractors to present them clearly."
+    },
+    {
+      "route": "Home warranty company's HVAC vendor booking",
+      "whoPays": "The home warranty company",
+      "min": 10000,
+      "max": 40000,
+      "unit": "one-time",
+      "pitchLine": "\"Your HVAC vendors take dispatches with no way for the homeowner to see arrival windows. A shared booking layer for the vendor network fixes that.\"",
+      "whyItWorks": "Warranty firms live on vendor reliability and customer complaints about arrival times."
+    },
+    {
+      "route": "Apprenticeship placement portal for trade schools",
+      "whoPays": "The trade school or college HVAC programme",
+      "min": 5000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Your HVAC students and the companies that hire them meet on one portal: ride-along days, apprenticeship openings and placements tracked for your reporting.\"",
+      "whyItWorks": "Schools are measured on placements. The client fleet already hires their graduates and makes the introduction."
+    },
+    {
+      "route": "Fleet HVAC company in a non-competing metro",
+      "whoPays": "An HVAC company in another metro, at your normal rate",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I build for one multi-truck heating and cooling company per metro. {City} is taken; the next metro's leading fleet isn't.\"",
+      "whyItWorks": "Mid-size owners talk at peer groups and trade shows. Exclusivity per metro is a reason to say yes early."
+    },
+    {
+      "route": "HVAC owners' peer and coaching groups",
+      "whoPays": "The coaching group, per member company monthly",
+      "min": 99,
+      "max": 299,
+      "unit": "monthly",
+      "pitchLine": "\"Your member HVAC companies all want the same booking report and branch scorecard. Offer it as part of membership and I'll run it for each company.\"",
+      "whyItWorks": "Peer groups compare numbers every meeting and have no shared tool to produce them."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "HVAC booking and membership site plus care, one contract",
+      "min": 12000,
+      "max": 30000,
+      "unit": "one-time",
+      "trigger": "The GM and owner approve the one-page scope.",
+      "line": "\"The HVAC site, booking, membership sign-up and care go on one contract, so a new branch or plan price is an email to me, not a project for your office.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Review program across every truck and branch",
+      "min": 299,
+      "max": 799,
+      "unit": "monthly",
+      "trigger": "The first month of online bookings shows which towns and techs customers mention.",
+      "line": "\"Online bookings are coming in by town now. Let's ask every heating and cooling customer for a review tagged to the tech and branch.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "Missed-call and abandoned-booking text-back",
+      "min": 500,
+      "max": 1500,
+      "unit": "one-time",
+      "trigger": "Booking reports show people leaving the page or hanging up in the queue.",
+      "line": "\"You can see people dropping out of HVAC booking. A text offering the next window brings most of them back.\""
+    },
+    {
+      "rung": 4,
+      "day": 90,
+      "offer": "Member portal with visit history and equipment",
+      "min": 8000,
+      "max": 20000,
+      "unit": "one-time",
+      "trigger": "Online membership sign-ups pass the ones taken by phone.",
+      "line": "\"Members are joining online now. Give them a login to see their furnace, their visits and their next tune-up, and the office phones get quieter.\""
+    },
+    {
+      "rung": 5,
+      "day": 120,
+      "offer": "After-hours phone agent for overflow and nights",
+      "min": 6000,
+      "max": 15000,
+      "unit": "one-time",
+      "trigger": "Call reports show abandoned calls during a heat wave or after the office closes.",
+      "line": "\"Those no-cooling calls during the heat wave hung up in the queue. An agent answers them, books the HVAC window and pages on-call only when it's real.\""
+    },
+    {
+      "rung": 6,
+      "day": 180,
+      "offer": "Marketing report from ad spend to booked HVAC jobs",
+      "min": 5000,
+      "max": 14000,
+      "unit": "one-time",
+      "trigger": "Leadership asks which campaign or town actually paid back.",
+      "line": "\"You're asking which heating and cooling campaigns pay. This joins ad spend to booked jobs and revenue, town by town.\""
+    },
+    {
+      "rung": 7,
+      "day": 270,
+      "offer": "Commercial service agreement portal",
+      "min": 10000,
+      "max": 30000,
+      "unit": "one-time",
+      "trigger": "They sign several multi-site commercial accounts from the new commercial path.",
+      "line": "\"Your commercial HVAC accounts are growing. A portal where facility managers see every rooftop unit and open ticket keeps those contracts renewing.\""
+    },
+    {
+      "rung": 8,
+      "day": 365,
+      "offer": "Branch scorecard for the leadership team",
+      "min": 8000,
+      "max": 20000,
+      "unit": "one-time",
+      "trigger": "They open or acquire another branch.",
+      "line": "\"With another HVAC branch coming on, leadership needs every branch on one page each week: bookings, members, ticket and callbacks.\""
+    }
+  ]
+}

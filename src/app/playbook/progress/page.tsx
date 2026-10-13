@@ -3,7 +3,7 @@ import { RequiredForm } from "@/components/playbook/RequiredForm";
 import { Chip } from "@/components/ui/Chip";
 import { SectionHead } from "@/components/ui/SectionHead";
 import { TableWrap, td, th } from "@/components/ui/TableWrap";
-import { SECTIONS } from "@/content/sections";
+import { PLAYBOOK as SECTIONS } from "@/lib/playbook";
 import { ROLE_LABELS } from "@/lib/auth/roles";
 import { requirePerm, storeFor } from "@/lib/auth/server";
 

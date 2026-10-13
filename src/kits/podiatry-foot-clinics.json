@@ -1,0 +1,874 @@
+{
+  "schemaVersion": 1,
+  "category": "Podiatry & foot clinics",
+  "slug": "podiatry-foot-clinics",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · expansion batch (healthcare + mid-size)",
+    "generatedAt": "2026-10-13",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Leaned on condition-driven searches (heel pain, ingrown nails, orthotics, diabetic foot checks) and the missing condition pages. Pages describe appointments, never outcomes. Unsure on the orthotic lab and diabetes network route prices; kept them wide."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Foot condition pages",
+      "contains": "One page each for heel pain, ingrown toenails, bunions, fungal nails and verrucas: a general description the podiatrist approves, what the appointment involves, when to book and the [fee]",
+      "why": "People search the problem, not the profession. A page named after their heel or toenail is what turns that search into a booking."
+    },
+    {
+      "section": "Custom orthotics, from assessment to fit check",
+      "contains": "The biomechanical assessment, scanning or casting, the [wait time] for the lab, the collection fit check, adjustments, what the [price] covers and when orthotics are reviewed",
+      "why": "Orthotics are the biggest spend in the clinic and buyers compare what's included. A clear process stops them choosing an off-the-shelf insole instead."
+    },
+    {
+      "section": "Diabetic foot checks",
+      "contains": "What a diabetic foot check involves, who usually books one, what to bring, how findings are shared with the person's own doctor with consent, and the clinic's wording on when to seek urgent care",
+      "why": "People with diabetes are told to get their feet checked and look for a clinic that explains it plainly. Families often book for them."
+    },
+    {
+      "section": "Nail surgery and minor procedures",
+      "contains": "Partial nail removal and other minor foot procedures the clinic offers, local anaesthetic, what shoes to wear, getting home, dressing changes, the aftercare visit and the [fee]",
+      "why": "Ingrown toenail sufferers want to know what the day looks like before they agree. Practical details win the booking over a clinic that only lists the name."
+    },
+    {
+      "section": "Running and walking gait assessment",
+      "contains": "Treadmill or walkway gait analysis, footwear advice, who it suits from new runners to hikers and school athletes, and how it links to orthotics if needed",
+      "why": "Runners choose the foot clinic other runners use. A gait page gives running clubs and shoe stores something to send people to."
+    },
+    {
+      "section": "Children's feet",
+      "contains": "Common parent worries such as flat feet, toe walking and school shoe fit, what happens at a child's first podiatry visit, and how a parent stays in the room",
+      "why": "Parents search late with a vague worry. A gentle page that explains the first visit gets the appointment without promising anything."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C6",
+      "siteType": "local-conversion",
+      "name": "Heel Pain Help",
+      "heroLayout": "split-photo",
+      "mood": [
+        "direct",
+        "clean",
+        "practical"
+      ],
+      "bestFor": "Single-podiatrist clinics that need condition links, fees and a same-week booking button on one page",
+      "pairsWithTier": "starter",
+      "headlineSample": "Foot pain? Book a podiatrist in {City} this week",
+      "whyItFits": "Cobalt Wire's crisp blue and neutral grotesque type read clinical and efficient, and the split hero keeps the condition links beside the Book button."
+    },
+    {
+      "id": "b",
+      "themeId": "C2",
+      "siteType": "booking-first",
+      "name": "Foot Clinic Appointments",
+      "heroLayout": "card-stack",
+      "mood": [
+        "trusted",
+        "calm",
+        "orderly"
+      ],
+      "bestFor": "Foot clinics with several podiatrists offering general care, nail surgery, orthotics and diabetic checks as separate bookings",
+      "pairsWithTier": "standard",
+      "headlineSample": "Podiatry and foot care in {City}, booked online",
+      "whyItFits": "The family's Private Vault combo gives an established, trustworthy feel, and the card stack lets each appointment type carry its own length and fee."
+    },
+    {
+      "id": "c",
+      "themeId": "C17",
+      "siteType": "premium-brand",
+      "name": "Gait and Performance Lab",
+      "heroLayout": "full-bleed-photo",
+      "mood": [
+        "athletic",
+        "precise",
+        "modern"
+      ],
+      "bestFor": "Sports podiatry practices with gait analysis and custom orthotics for runners, hikers and teams",
+      "pairsWithTier": "premium",
+      "headlineSample": "Gait analysis and custom orthotics in {City}",
+      "whyItFits": "Basalt Lime's dark ground and lime accent feel like a performance lab, which suits athletes paying for orthotics more than a soft clinic look."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your foot clinic's Maps listing has good reviews but no website, so someone in {City} searching for heel pain help can't see what a podiatry appointment involves or costs.",
+      "hook": "Open their Maps listing and confirm there is no Website button. Screenshot it for when they reply.",
+      "linkLine": "Here's what could sit behind that button for the foot clinic: {demo-link}"
+    },
+    {
+      "angle": "Booking platform profile only",
+      "line": "The link on your listing goes to a booking platform profile that lists appointment names and nothing else. A person with a sore heel wants to know what you'll actually do.",
+      "hook": "Tap their Website link. If it lands on a third-party booking profile, note how little the podiatry services say.",
+      "linkLine": "A podiatry site that explains each appointment: {demo-link}"
+    },
+    {
+      "angle": "No condition pages",
+      "line": "People search for ingrown toenails, bunions and heel pain by name, and your site has one services list. A page per foot condition is how a podiatrist gets found for each.",
+      "hook": "Search their site for a condition like heel pain or ingrown toenail. If there's no page of its own, the angle holds.",
+      "linkLine": "Foot condition pages for the clinic: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "I tried your podiatry site on my phone and the booking button sat under a block of text I had to pinch to read. Most people look for a foot clinic on their phone, mid-limp.",
+      "hook": "Only if they have a site. Try the booking path on your phone and note what breaks. Screenshot it for when they reply.",
+      "linkLine": "The foot clinic, rebuilt for a phone: {demo-link}"
+    },
+    {
+      "angle": "Ingrown toenail urgency",
+      "line": "Someone with a painful ingrown toenail wants to know today whether you can see them this week. Your site doesn't show it or let them request the next nail appointment.",
+      "hook": "Look for any mention of same-week or urgent nail appointments. If there's none, the angle holds.",
+      "linkLine": "A same-week nail appointment request for the podiatry clinic: {demo-link}"
+    },
+    {
+      "angle": "Orthotics not explained",
+      "line": "You make custom orthotics, and nothing online says what the assessment involves, how long the lab takes or what the price covers. That's what buyers compare.",
+      "hook": "Check their site and posts for any orthotics process or price. Never state a price they haven't published.",
+      "linkLine": "Custom orthotics explained, start to fit check: {demo-link}"
+    },
+    {
+      "angle": "Reviews stuck on Google",
+      "line": "Your Google reviews mention a podiatrist who explains things gently and doesn't rush. That's what a nervous nail surgery patient wants to read, and no page shows it.",
+      "hook": "Read their reviews and copy one phrase about care, gentleness or explanation. Quote it back. Never imply a treatment result.",
+      "linkLine": "Your reviews beside the foot clinic booking: {demo-link}"
+    },
+    {
+      "angle": "Sandal and running season",
+      "line": "Spring brings sandals, new running plans and a wave of people noticing their feet. They search for a podiatrist nearby and book the clinic that explains heel pain and nails clearly.",
+      "hook": "Use this before spring, a local marathon or the warm season. Name the season or race.",
+      "linkLine": "A foot clinic page ready for the season: {demo-link}"
+    },
+    {
+      "angle": "Evening foot pain searches",
+      "line": "Heel pain is worst first thing in the morning, and people search about it the night before. Right now they can't request a podiatry appointment until your front desk opens.",
+      "hook": "Look for 'call us' as the only contact, or a booking route that closes overnight. If there's no online request, the angle holds.",
+      "linkLine": "A foot clinic page that takes requests overnight: {demo-link}"
+    },
+    {
+      "angle": "Hiring a podiatrist",
+      "line": "Saw the clinic is hiring a podiatrist. Newly qualified podiatrists compare clinics partly on how the practice shows its caseload, equipment and mentoring online.",
+      "hook": "Only if they posted a hiring notice for a podiatrist, foot care assistant or receptionist. Note the date.",
+      "linkLine": "A podiatry clinic page with a careers section: {demo-link}"
+    },
+    {
+      "angle": "Home visit podiatry",
+      "line": "Your posts mention home visits for patients who can't get to the foot clinic. A page saying which areas you cover and how families arrange a visit would bring more of them.",
+      "hook": "Look for posts about home visits, care home rounds or a mobile service. Use the areas they mention.",
+      "linkLine": "A home visit podiatry page for the clinic: {demo-link}"
+    },
+    {
+      "angle": "Fees and cover unclear",
+      "line": "Under your posts people ask what orthotics cost and whether their plan covers podiatry. A plain fees page answers it before they talk themselves out of booking.",
+      "hook": "Look for cost or coverage questions in comments and reviews. Never state a fee or plan they haven't published.",
+      "linkLine": "Podiatry fees and cover explained on one page: {demo-link}"
+    },
+    {
+      "angle": "Registration not shown",
+      "line": "Your podiatrists are clearly qualified, and nothing online shows their registration or training. People booking nail surgery look for exactly that first.",
+      "hook": "Check bios and posts for registration or qualifications. Never state a licence, registration or membership they haven't published.",
+      "linkLine": "Your podiatrists' qualifications, stated plainly: {demo-link}"
+    },
+    {
+      "angle": "Doctor and diabetes referrals",
+      "line": "It looks like many of your patients come from doctors and diabetes clinics. Each one still looks the foot clinic up first, and finds no page on diabetic foot checks.",
+      "hook": "Look for reviews mentioning a doctor or diabetes nurse who sent them, or posts thanking referrers. Quote it.",
+      "linkLine": "Where a referred podiatry patient would land: {demo-link}"
+    },
+    {
+      "angle": "A specific recent post",
+      "line": "Your {specific recent job} post on choosing shoes was more useful than most podiatry sites. Right now it disappears from the feed instead of living on a page people can find.",
+      "hook": "Pick their newest educational post, running club talk or clinic event and name it exactly. Never a patient's foot.",
+      "linkLine": "That foot care advice, on its own page: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, your post about {specific recent job} was practical foot advice without any hype.\n\nI looked for a site for {Business Name} and found the listing and social pages but nothing that explains your appointments. I put together a sample podiatry site with heel pain, ingrown toenail and orthotics pages and online booking, with marked placeholders where your photos would go.\n\nWould you like me to send it over?",
+    "dm2": "{Owner}, following up in case my note got buried between patients. Here's the sample foot clinic site for {Business Name}: {demo-link}\n\nEach common foot condition gets its own page, orthotics are explained from assessment to fit check, and people can request a same-week nail appointment. If it's not for you, say so and I won't message again.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for podiatry clinics here in {City}. I sent a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"No problem, you're with patients all day. Short version: I built a sample site for {Business Name} with a page for each foot condition, orthotics explained and online booking, with marked placeholders where your photos would go. Can I email you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range}, then {Care Range} a month for hosting and updates. For a clinic like yours I'd normally quote about {Build Price}, roughly a pair of custom orthotics and a few follow-ups.\"\n\"People search 'heel pain' and 'ingrown toenail', not 'podiatrist'. The condition pages are what make you the clinic they find.\"\n\"Could I take fifteen minutes after your last patient this week?\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. We start the day it clears, and you approve every condition page before it goes live.\"",
+    "objections": [
+      {
+        "objection": "Most of our patients come from doctor referrals.",
+        "handler": "\"And every referred patient looks you up before they book. A diabetic foot check page and clear fees confirm they've been sent somewhere good, and doctors' offices find it easier to send more.\""
+      },
+      {
+        "objection": "We already take bookings through a booking platform.",
+        "handler": "\"Keep it. That profile lists appointment names; it doesn't explain heel pain, nail surgery or orthotics. The site does that and hands people straight to your existing booking.\""
+      },
+      {
+        "objection": "We can't advertise treatments or show results.",
+        "handler": "\"Right, and the site doesn't. Each condition page describes the appointment, not an outcome. No before-and-after foot photos, and testimonials only with written consent.\""
+      },
+      {
+        "objection": "Orthotic prices depend on the patient, we can't list them.",
+        "handler": "\"Then we show what the assessment costs and a range for orthotics with what's included, in your words, or a placeholder until you decide.\""
+      },
+      {
+        "objection": "We're booked out already.",
+        "handler": "\"Then the site can steer people to the appointments you want more of, like orthotics and gait assessments, and stop the phone ringing with questions the fees page answers.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For your clinic about {Build Price}, because of the condition and orthotics pages. A couple of orthotic patients covers it.\""
+      }
+    ],
+    "email": {
+      "subject": "A foot clinic site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for podiatry and foot clinics around {City}. {Business Name} has strong reviews, but no site where someone searching for heel pain, an ingrown toenail or custom orthotics can see what the appointment involves and book it.\n\nI built a sample first rather than ask for your time: a page for each common foot condition, orthotics from assessment to fit check, diabetic foot checks, nail surgery aftercare, gait assessment and a booking request that keeps health details off the form. It uses marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and updates. If not, no problem, it comes down at the end of the month.\n\nWorth fifteen minutes after clinic hours?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build websites for foot clinics in {City}, and I've put together a sample for {Business Name} with heel pain, nail and orthotics pages. I'll email the link for after clinic hours. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, a short note: the {Business Name} podiatry demo comes down this Friday.\n\nReply if you'd like me to hold it a little longer.",
+    "nurture": "Hi {Owner}, spring running plans and sandal weather are around the corner, and that's when heel pain and toenail searches pick up. Foot clinics with a page for each condition catch more of them.\n\nThe sample's still here and the price is the same. {demo-link} if you'd like another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to a couple of custom orthotic patients, not to a single nail appointment.",
+      "Price condition pages one by one, and only for conditions the clinic actually treats and wants more of.",
+      "Build a podiatrist review round into every condition page; they approve the wording before launch.",
+      "Never show before-and-after foot photos; leave the gallery out unless the clinic's rules and written consent allow it.",
+      "Price the orthotics and gait pages higher than a condition page; they need an interview and the lab's process.",
+      "Keep monthly add-ons below the fee for one general foot care visit."
+    ],
+    "lineItems": [
+      {
+        "item": "Foot condition page (each)",
+        "min": 200,
+        "max": 500,
+        "unit": "per-page",
+        "description": "Max when written from a podiatrist interview, with what the appointment involves, when to book, the fee and a booking link.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Custom orthotics process page",
+        "min": 300,
+        "max": 700,
+        "unit": "per-page",
+        "description": "Max with assessment, casting or scanning, lab wait, fit check and review steps, plus a price range and what's included.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Nail surgery preparation and aftercare page",
+        "min": 250,
+        "max": 600,
+        "unit": "per-page",
+        "description": "Max with printable aftercare in the clinic's wording, a what-to-wear list and a dressing visit booking link.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Same-week nail appointment request",
+        "min": 300,
+        "max": 800,
+        "unit": "one-time",
+        "description": "Max when open urgent slots are pulled live from their existing scheduling system instead of a request form.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Gait assessment page with running club link",
+        "min": 250,
+        "max": 600,
+        "unit": "per-page",
+        "description": "Max with a description of the gait lab, footwear advice notes and a partner page for local running clubs.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Home visit area map and request",
+        "min": 250,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max with the areas covered by day, a separate request route for families and care home staff, and visit fees.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Second-language foot clinic pages",
+        "min": 400,
+        "max": 1000,
+        "unit": "one-time",
+        "description": "Max when condition, orthotics, fees and booking pages are translated and checked by bilingual staff.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Treatment room and gait lab photo session",
+      "min": 300,
+      "max": 800,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"One morning photographing the podiatrists, treatment chairs, the gait treadmill and the orthotics workshop, with staff as models. No patient's feet without their written consent.\"",
+      "when": "Month 2, before condition pages fill with placeholders."
+    },
+    {
+      "name": "Foot clinic Google profile upkeep",
+      "min": 150,
+      "max": 300,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Weekly posts on the foot clinic's Google profile about nail appointment openings, orthotics and diabetic foot checks, so a search for a podiatrist nearby finds a current clinic.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Review requests after the orthotics fit check",
+      "min": 79,
+      "max": 179,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Once the orthotics fit check is done, the patient gets a polite note asking about their experience at the podiatry clinic, never about their foot condition.\"",
+      "when": "Day 30. Wording approved by the clinic first."
+    },
+    {
+      "name": "Consent and foot photo policy page set",
+      "min": 300,
+      "max": 700,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A privacy notice, a written consent form for any foot photo or testimonial the podiatry clinic uses, and a page on how clinical photos stay out of marketing.\"",
+      "when": "At build, before any patient story or image is used."
+    },
+    {
+      "name": "Accessibility review for patients with limited mobility",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A pass on the foot clinic site for large text, screen readers and contrast, plus clear step-free access, parking and drop-off details for patients who walk with difficulty.\"",
+      "when": "At launch, then once a year."
+    },
+    {
+      "name": "Advertising-approval-ready podiatry content pack",
+      "min": 500,
+      "max": 1200,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Each foot condition and orthotics page bundled with a claims checklist and the podiatrist's sources, ready to submit where the regulator requires approval before advertising.\"",
+      "when": "Before launch, and before any paid campaign."
+    },
+    {
+      "name": "Running club foot care talk promotion",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A flyer, an event page and posts for the podiatrist's talks at running clubs and walking groups on footwear and common running foot problems.\"",
+      "when": "Six weeks before each talk."
+    },
+    {
+      "name": "Footwear advice cards for shoe stores",
+      "min": 250,
+      "max": 600,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Printed cards with the podiatry clinic's general footwear tips and booking details, for running and comfort shoe stores that agree to keep them at the till.\"",
+      "when": "Month 3, once the gait assessment page is live."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Running shoe stores that send people for gait checks",
+        "whoPays": "The store",
+        "min": 2000,
+        "max": 5000,
+        "unit": "one-time",
+        "pitchLine": "\"The running store that sends customers to your gait lab has a site with no fitting appointments. A booking site naming your podiatry clinic as its partner helps both.\"",
+        "whyItWorks": "Shoe stores and sports podiatrists send customers back and forth. The clinic owner's introduction opens the door."
+      },
+      {
+        "route": "Diabetes education programmes",
+        "whoPays": "The programme, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The diabetes education programme that refers people for foot checks runs class sign-ups by phone. A class calendar with the foot clinic listed as a partner helps everyone.\"",
+        "whyItWorks": "Educators and podiatrists share patients and trust each other's advice."
+      },
+      {
+        "route": "Orthotic manufacturing labs",
+        "whoPays": "The lab",
+        "min": 3000,
+        "max": 8000,
+        "unit": "one-time",
+        "pitchLine": "\"The lab that makes your custom orthotics takes orders by email and courier slip. A clinic order and tracking site would help every podiatrist they serve.\"",
+        "whyItWorks": "Labs depend on clinic accounts. A podiatrist's recommendation carries weight with the lab owner."
+      },
+      {
+        "route": "Nail salons that spot ingrown and fungal nails",
+        "whoPays": "The salon, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The nail salon that sends clients to your podiatrist when a toenail looks wrong books by direct message. A booking site with your foot clinic as the medical referral helps both.\"",
+        "whyItWorks": "Salons want somewhere trusted to send clients they can't treat, and the podiatrist wants those clients."
+      },
+      {
+        "route": "Care homes on the home visit round",
+        "whoPays": "The care home",
+        "min": 3000,
+        "max": 7000,
+        "unit": "one-time",
+        "pitchLine": "\"The care home where your podiatrist does regular foot care rounds has an old site with no tour booking. Families would use a clearer one.\"",
+        "whyItWorks": "Care home managers already rely on the visiting podiatrist."
+      },
+      {
+        "route": "Youth sports clubs with injured players",
+        "whoPays": "The club, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The football club whose players you see for heel and ankle niggles registers families from a spreadsheet. A registration site with your foot clinic as care partner suits both.\"",
+        "whyItWorks": "Club committees trust the clinic that looks after their players."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Fitting appointment booker for the running store",
+        "whoPays": "The running store, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"Runners ask the store about stock, fitting slots and the podiatry clinic's gait assessments, and book a fitting, answered from the store's own catalogue.\"",
+        "whyItWorks": "Running stores lose evening enquiries when nobody's on the floor to answer."
+      },
+      {
+        "route": "Class question assistant for the diabetes programme",
+        "whoPays": "The programme, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"People ask the diabetes programme about class dates, venues and where to book a foot check, and get the programme's approved answers; health questions go to staff.\"",
+        "whyItWorks": "Logistics-only answers are safe and free up educators."
+      },
+      {
+        "route": "Order status assistant for the orthotic lab",
+        "whoPays": "The lab, monthly",
+        "min": 200,
+        "max": 500,
+        "unit": "monthly",
+        "pitchLine": "\"Podiatry clinics ask the lab where an orthotics order is and get the answer from the lab's own tracking, instead of a phone call to the workshop.\"",
+        "whyItWorks": "Lab staff spend hours on status calls from clinics."
+      },
+      {
+        "route": "Booking reply drafts for the nail salon",
+        "whoPays": "The salon, monthly",
+        "min": 49,
+        "max": 129,
+        "unit": "monthly",
+        "pitchLine": "\"The salon's booking messages get reply drafts in its own voice, including a polite suggestion to see the podiatrist when a client mentions a painful toenail.\"",
+        "whyItWorks": "Salon owners answer messages between clients and fall behind."
+      },
+      {
+        "route": "Visit scheduling helper for the care home",
+        "whoPays": "The care home, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"Care home staff list residents due for foot care, hair or eye visits, and the helper drafts the visiting podiatrist's round and the family notices.\"",
+        "whyItWorks": "Coordinating visiting professionals is a weekly chore for the care home office."
+      },
+      {
+        "route": "Injury reporting helper for the sports club",
+        "whoPays": "The club",
+        "min": 600,
+        "max": 1500,
+        "unit": "one-time",
+        "pitchLine": "\"Coaches and parents look up the club's injury reporting steps and get pointed to the foot clinic and other partners, with no medical advice given.\"",
+        "whyItWorks": "Clubs want a clear, consistent process for parents every season."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Privacy-safe foot clinic booking form and hosting setup",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Podiatry appointment requests ask only for name, contact and appointment type, never symptoms, and run on hosting set up for the privacy rules where the clinic practises.\"",
+      "whenAndWhatItTakes": "At build. Needs the appointment types, who receives requests and the clinic's privacy wording."
+    },
+    {
+      "name": "Orthotics review reminders",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Patients get a reminder when their custom orthotics are due a review, with a booking link for a check and refurbishment.\"",
+      "whenAndWhatItTakes": "Day 30. Needs orthotics issue dates from their system and the clinic's review interval."
+    },
+    {
+      "name": "Nail surgery dressing visit reminders",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 39,
+      "monthlyMax": 99,
+      "pitchLine": "\"After a toenail procedure, the patient gets reminders for each dressing visit and the clinic's approved aftercare sheet, with no clinical details in the text.\"",
+      "whenAndWhatItTakes": "Month 2. Needs procedure dates, the aftercare sheet and contact consent."
+    },
+    {
+      "name": "Same-week urgent podiatry slot board",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Open urgent slots for painful ingrown toenails show on the foot clinic's site, so people book the next one instead of phoning around.\"",
+      "whenAndWhatItTakes": "Month 2. Needs access to their schedule and which slots count as urgent."
+    },
+    {
+      "name": "Front desk answering during procedures",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 199,
+      "monthlyMax": 449,
+      "pitchLine": "\"While the podiatrist and assistant are in a nail procedure, calls about fees, orthotics and opening hours get answered and booked; anything about a foot problem goes to a podiatrist.\"",
+      "whenAndWhatItTakes": "Month 3, once they trust you. Needs approved answers and schedule access. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Podiatry review reply drafts",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Every foot clinic review gets a drafted thank-you for approval that never confirms the reviewer was treated or names their condition.\"",
+      "whenAndWhatItTakes": "Month 2, alongside fit-check review requests. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Orthotics order tracker",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Every orthotics order is tracked as cast, sent to the lab, back and fitted, so no patient waits weeks without a fit check booked.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their lab steps. Tracks status only; clinical notes stay in their own system."
+    },
+    {
+      "name": "Diabetic foot check recall",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"When a diabetic patient's regular foot check comes round, the podiatry clinic sends one short note naming the check and offering three open slots to pick from.\"",
+      "whenAndWhatItTakes": "Month 3. Needs last check dates, the clinic's recall interval and contact consent."
+    },
+    {
+      "name": "Footwear advice sheet drafts",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"The podiatrist's quick notes after a gait assessment become a printed footwear advice sheet for the patient, reviewed and signed off by the podiatrist.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the clinic's footwear guidance and sheet layout. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Condition page drafts from podiatrist notes",
+      "kind": "ai",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"The podiatrist jots a few lines about a foot condition the clinic sees often, and a page draft comes back in the clinic's voice with any outcome wording flagged.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the clinic's do-not-say list. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Foot care retail shelf online",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"The insoles, socks, toe protectors and creams on the foot clinic's shelf can be ordered online for pickup at the next appointment.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the product list, prices and a payment account."
+    },
+    {
+      "name": "Gait assessment video report",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"After a gait assessment, the patient gets their slow-motion running clips and the podiatrist's notes through a private link, inside the clinic's secure system.\"",
+      "whenAndWhatItTakes": "Month 5, for clinics with a gait lab. Needs the video setup and a secure sharing route."
+    },
+    {
+      "name": "Home visit round planner",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 49,
+      "monthlyMax": 149,
+      "pitchLine": "\"Home visit podiatry requests are grouped by area and day, so the podiatrist's round is planned in minutes and families get a confirmed visit window.\"",
+      "whenAndWhatItTakes": "Month 5, for clinics with home visits. Needs the areas covered and visit lengths."
+    },
+    {
+      "name": "Foot problem to appointment router",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"A visitor describes their foot problem in their own words and is pointed to the right podiatry appointment type, never given a diagnosis.\"",
+      "whenAndWhatItTakes": "Month 5. Needs routing rules reviewed by a podiatrist. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Doctor update letters for referred podiatry patients",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"The podiatrist dictates what the diabetic foot check found, and a letter for the patient's doctor is drafted from it, edited and sent only from the clinic's secure records.\"",
+      "whenAndWhatItTakes": "Month 6, only inside their secure system. Needs their letter template. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Foot care talk sign-up",
+      "kind": "software",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Runners and walking groups sign up for the podiatrist's footwear talks online and get a reminder the day before.\"",
+      "whenAndWhatItTakes": "Month 4, when they run talks. Needs dates, venues and capacity."
+    },
+    {
+      "name": "Missed podiatry appointment rebooking",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"When someone misses a foot clinic appointment, they get a polite text the same day with a link to rebook, instead of the front desk chasing them.\"",
+      "whenAndWhatItTakes": "Month 3. Needs schedule access and approved wording."
+    },
+    {
+      "name": "Second-language reply drafts for the foot clinic",
+      "kind": "ai",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1200,
+      "monthlyMin": 59,
+      "monthlyMax": 149,
+      "pitchLine": "\"Messages about orthotics or nail surgery that arrive in another language get a podiatry answer drafted in that language, which a bilingual receptionist approves before it goes.\"",
+      "whenAndWhatItTakes": "Month 5, for clinics with patients who prefer another language. Needs translated wording checked by staff. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Foot clinic policy search for new staff",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"New receptionists search the foot clinic's own policies on orthotics deposits, cancellations and home visit fees instead of pulling a podiatrist out of a room.\"",
+      "whenAndWhatItTakes": "Month 6. Needs written policies with every answer approved. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Appointment mix and referral dashboard",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"See which foot conditions, referrers and condition pages bring podiatry bookings each month, and how many assessments lead to orthotics.\"",
+      "whenAndWhatItTakes": "Month 7, once booking and orthotics data has built up for a few months."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the condition-page site for independent podiatrists",
+      "whoPays": "Each clinic, monthly",
+      "min": 79,
+      "max": 249,
+      "unit": "monthly",
+      "pitchLine": "\"I built heel pain, toenail, orthotics and diabetic foot check pages for one podiatry clinic. Every independent foot clinic with a one-page services list needs the same.\"",
+      "whyItWorks": "Condition pages are slow to write well and every clinic needs roughly the same set."
+    },
+    {
+      "route": "Podiatry professional associations",
+      "whoPays": "The association",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer member podiatrists a site template with condition pages written to advertising rules, with placeholders for each member's registration and fees.\"",
+      "whyItWorks": "Associations want members to be found and to stay within advertising rules."
+    },
+    {
+      "route": "Orthotic labs' clinic account programmes",
+      "whoPays": "The lab, per clinic",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "pitchLine": "\"Your clinic accounts all need an orthotics page that explains the process. Give each podiatry clinic my template as an account benefit.\"",
+      "whyItWorks": "Labs win and keep clinic accounts on service, and a ready orthotics page is a useful perk."
+    },
+    {
+      "route": "Diabetes care networks",
+      "whoPays": "The network",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Your patients need foot checks and can't find a podiatrist nearby. A directory of partner foot clinics by area, with booking links, closes that gap.\"",
+      "whyItWorks": "Networks are measured on patients getting their checks, and a directory is a visible fix."
+    },
+    {
+      "route": "Franchised foot clinic chains",
+      "whoPays": "The franchisor, per location",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Each foot clinic in your chain needs local condition, fees and podiatrist pages under one brand. I build one approved template and roll it out.\"",
+      "whyItWorks": "Chains need each location to look local and consistent."
+    },
+    {
+      "route": "White-label podiatry template for healthcare agencies",
+      "whoPays": "The agency, per site",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency builds podiatry sites from a general medical template. License mine with condition pages, orthotics and nail surgery aftercare built in.\"",
+      "whyItWorks": "Agencies avoid regulated health writing. You sell the hard part."
+    },
+    {
+      "route": "Sports medicine groups adding podiatry",
+      "whoPays": "The medical group",
+      "min": 4000,
+      "max": 12000,
+      "unit": "one-time",
+      "pitchLine": "\"Your group is adding a podiatrist and a gait lab. They need their own condition and orthotics pages, which I've already built for an independent foot clinic.\"",
+      "whyItWorks": "Groups adding foot services need a separate front door quickly."
+    },
+    {
+      "route": "Running store chains",
+      "whoPays": "The chain, per store",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "pitchLine": "\"Each of your stores could list a partner podiatry clinic for gait checks and orthotics. I build the partner pages and the referral route for every store.\"",
+      "whyItWorks": "Chains want a medical partner story in each town without hiring anyone."
+    },
+    {
+      "route": "Groups acquiring podiatry clinics",
+      "whoPays": "The acquisition group",
+      "min": 5000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Your group keeps buying podiatry practices that each run a different site. One foot clinic template, with every location's condition pages and home visit areas carried over, fixes that.\"",
+      "whyItWorks": "Roll-ups need consistency fast and buy in batches."
+    },
+    {
+      "route": "Practice coaches for podiatry owners",
+      "whoPays": "The coaching firm, annually",
+      "min": 3000,
+      "max": 10000,
+      "unit": "per-year",
+      "pitchLine": "\"Your podiatry owner clients all need condition pages and an orthotics process online. License my foot clinic template as part of your programme.\"",
+      "whyItWorks": "Coaches want deliverables for many clinics without building them."
+    },
+    {
+      "route": "Foot clinics in another region",
+      "whoPays": "New podiatry clients in a new metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"Foot clinics far from {City} don't compete with my client, so they get the same condition pages, orthotics process and nail surgery aftercare.\"",
+      "whyItWorks": "Careful condition wording is slow to write. Reusing it in a new region is margin."
+    },
+    {
+      "route": "Clinics stuck on a booking-platform profile",
+      "whoPays": "The clinic moving to its own site",
+      "min": 1500,
+      "max": 3500,
+      "unit": "one-time",
+      "pitchLine": "\"Your podiatry clinic lives on a booking platform profile you don't control. I build a site you own with condition pages that hands people to the same booking.\"",
+      "whyItWorks": "Clinics on platform profiles feel the limits quickly and already pay for the booking tool."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Foot clinic site build plus care plan, one contract",
+      "min": 2000,
+      "max": 3500,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The podiatry site and the care plan go on one contract, so a new condition page or podiatrist is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 14,
+      "offer": "Same-week urgent podiatry slot board",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "trigger": "They mention ingrown toenail callers who went elsewhere because nobody could see them that week.",
+      "line": "\"Those toenail callers can see your next urgent slot and book it themselves.\""
+    },
+    {
+      "rung": 3,
+      "day": 30,
+      "offer": "Orthotics review reminders and fit-check review requests",
+      "min": 79,
+      "max": 179,
+      "unit": "monthly",
+      "trigger": "Booking data shows few orthotics patients coming back for their review.",
+      "line": "\"Orthotics patients drift away after the fit check. A review reminder and a careful review request bring them back.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Treatment room and gait lab photo session",
+      "min": 300,
+      "max": 800,
+      "unit": "per-shoot",
+      "trigger": "Podiatrist bios and the gait page still show placeholders.",
+      "line": "\"One morning at the foot clinic gives every podiatrist and the gait lab a real photo.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Orthotics order tracker",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "trigger": "They mention an orthotics order that came back from the lab and sat unfitted.",
+      "line": "\"That orthotics order is exactly what a tracker catches before the patient has to chase it.\""
+    },
+    {
+      "rung": 6,
+      "day": 120,
+      "offer": "Running club foot care talk promotion",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "trigger": "A running club or shoe store asks the podiatrist to speak.",
+      "line": "\"That running club invite is worth an event page and a footwear talk sign-up.\""
+    },
+    {
+      "rung": 7,
+      "day": 180,
+      "offer": "Front desk answering during procedures",
+      "min": 1000,
+      "max": 2500,
+      "unit": "one-time",
+      "trigger": "They mention calls ringing out on nail surgery days.",
+      "line": "\"New foot clinic callers get answered and booked even when everyone is in a procedure.\""
+    },
+    {
+      "rung": 8,
+      "day": 270,
+      "offer": "Introduction to the running store",
+      "min": 2000,
+      "max": 5000,
+      "unit": "one-time",
+      "trigger": "The running store that sends gait referrals asks who built the podiatry site.",
+      "line": "\"The running store that sends you gait patients asked about the site. Would you introduce me?\""
+    }
+  ]
+}

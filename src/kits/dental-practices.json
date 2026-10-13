@@ -1,0 +1,883 @@
+{
+  "schemaVersion": 1,
+  "category": "Dental practices",
+  "slug": "dental-practices",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · expansion batch (healthcare + mid-size)",
+    "generatedAt": "2026-10-13",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Leaned on the board note: most practices already have a vendor template site, so the pitch is new-patient booking, treatment pages and benefits clarity. No clinical claims; patient smiles only with written consent. Unsure on the treatment-plan follow-up and recall pricing, so those ranges are wide."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "New patient visit: what happens in the chair",
+      "contains": "The first exam and cleaning step by step, how long it takes, which forms arrive before the visit, what to bring (benefits card, medication list, past dental records) and how to book that slot online",
+      "why": "New patients pick a dentist they can picture visiting. Walking them through the first appointment removes the reason they put off calling."
+    },
+    {
+      "section": "Dental benefits, direct billing and fees",
+      "contains": "Which dental benefit plans the practice bills directly, what a patient pays up front, a fee range for an exam and cleaning, and the in-house membership plan for patients with no dental coverage",
+      "why": "The first question on the phone is whether the dentist takes their plan. Answering it on the page turns a phone question into a booking."
+    },
+    {
+      "section": "Emergency dentist: toothache and broken tooth",
+      "contains": "What counts as a dental emergency, how same-day emergency slots work, after-hours instructions the dentist writes, and a call button that stays visible on a phone",
+      "why": "Someone with a cracked tooth at night books the first dentist that explains what to do next. This page is where most new emergency patients start."
+    },
+    {
+      "section": "Nervous patients and sedation options",
+      "contains": "Plain words on how the team handles dental anxiety, comfort options the practice offers, the sedation types it provides under [dentist name, licence and permit details], and how to ask a private question first",
+      "why": "Fear keeps people away from the dentist for years. A calm page written for nervous patients is often the reason they finally book."
+    },
+    {
+      "section": "Treatment pages: implants, crowns, aligners",
+      "contains": "One page each for implants, crowns, root canal treatment, whitening and clear aligners: what the treatment involves, how many visits, a fee range and payment-plan options, with no outcome promises",
+      "why": "Patients search by treatment, not by practice name. A clear page per treatment is how a family dentist gets found for the higher-value work."
+    },
+    {
+      "section": "Kids' first dental visit",
+      "contains": "What age the practice sees children from, what the first visit looks like for a toddler, how parents can stay in the room, and booking siblings back to back",
+      "why": "Parents choose the family dentist for the whole household based on how kids are treated. One gentle page wins several patient files."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C47",
+      "siteType": "local-conversion",
+      "name": "Front Desk",
+      "heroLayout": "split-photo",
+      "mood": [
+        "friendly",
+        "bright",
+        "reassuring"
+      ],
+      "bestFor": "Single-dentist family practices that need new-patient bookings and the emergency line to work on a phone",
+      "pairsWithTier": "starter",
+      "headlineSample": "Your family dentist in {City}, taking new patients",
+      "whyItFits": "Teal and a warm humanist type read as clean and friendly without the cold clinical look of every vendor template. One booking path, one emergency button."
+    },
+    {
+      "id": "b",
+      "themeId": "C6",
+      "siteType": "booking-first",
+      "name": "Open Chair",
+      "heroLayout": "card-stack",
+      "mood": [
+        "clear",
+        "efficient",
+        "modern"
+      ],
+      "bestFor": "Practices with two or three dentists and hygienists, booking exams, cleanings and emergency slots online by provider",
+      "pairsWithTier": "standard",
+      "headlineSample": "Book a dental exam in {City} tonight",
+      "whyItFits": "A dental practice sells appointments, so the standard build leads with availability cards per service. Cobalt and a neutral grotesque keep it crisp; the family's cream serif would slow the booking path."
+    },
+    {
+      "id": "c",
+      "themeId": "C2",
+      "siteType": "premium-brand",
+      "name": "Smile Studio",
+      "heroLayout": "full-bleed-photo",
+      "mood": [
+        "calm",
+        "refined",
+        "unhurried"
+      ],
+      "bestFor": "Cosmetic and restorative practices selling implants, veneers and aligners to adults who research for weeks",
+      "pairsWithTier": "premium",
+      "headlineSample": "Considered cosmetic dentistry in {City}",
+      "whyItFits": "The family's Private Vault combo. A cream ground and an old-style serif feel like a quiet private practice, which suits patients weighing a large treatment plan."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "Template site like every other",
+      "line": "Your dental practice site uses the same layout I've seen on several other dentists in {City}. A new patient comparing practices can't tell yours apart from the next one.",
+      "hook": "Open their site and two other local dentists' sites. If the layout and stock smiles match, the angle holds.",
+      "linkLine": "A dental site that looks like your practice and no one else's: {demo-link}"
+    },
+    {
+      "angle": "No online new-patient booking",
+      "line": "There's no way to book a new-patient exam at your dental practice except calling during office hours. Most people look for a dentist in the evening, after work.",
+      "hook": "Look for a Book button on their site and listing. If it only opens a phone number or a contact form, the angle holds.",
+      "linkLine": "New-patient dental booking that works at night: {demo-link}"
+    },
+    {
+      "angle": "Slow to load on a phone",
+      "line": "I opened your dental site on my phone and waited a while before the new-patient section appeared. Someone with a toothache won't wait that long.",
+      "hook": "Load their site on your phone over mobile data. Note how long the first screen takes. Screenshot it for when they reply.",
+      "linkLine": "Your dental site rebuilt to open fast on a phone: {demo-link}"
+    },
+    {
+      "angle": "Emergency dentist after hours",
+      "line": "Your listing says you see dental emergencies, but after closing time there's no page telling someone with a broken tooth what to do. That patient books whoever explains it first.",
+      "hook": "Call their number after hours and note the voicemail. Check the site for an emergency page.",
+      "linkLine": "An emergency dentist page with after-hours steps: {demo-link}"
+    },
+    {
+      "angle": "Benefit plans not listed",
+      "line": "I couldn't find which dental plans your practice bills directly. That's the first question most new patients ask, and many won't call to find out.",
+      "hook": "Search their site for insurance, benefits or direct billing. If it's vague or missing, the angle holds.",
+      "linkLine": "Dental benefits and fees answered on one page: {demo-link}"
+    },
+    {
+      "angle": "Reviews never reach the site",
+      "line": "Your dental practice has warm reviews on its listing, many about how gentle the hygienists are. None of them appear where a nervous patient reads about you.",
+      "hook": "Read their newest reviews and pick one about comfort or the team. Quote a phrase back.",
+      "linkLine": "Your dental reviews on the page where patients decide: {demo-link}"
+    },
+    {
+      "angle": "No treatment pages",
+      "line": "Your site lists implants, crowns and whitening in one line. Someone searching for a dental implant in {City} picks the dentist with a page that explains the visits and the cost.",
+      "hook": "Check whether each treatment they list has its own page. Pick the one their posts mention most.",
+      "linkLine": "A page per dental treatment, starting with implants: {demo-link}"
+    },
+    {
+      "angle": "Hiring a hygienist",
+      "line": "Saw your practice is hiring a dental hygienist. Good hygienists read a practice's site before applying, the same way patients do, and there's no careers page yet.",
+      "hook": "Only if they posted a hiring note or job listing. Note the role and the date.",
+      "linkLine": "A dental site with a careers page that recruits: {demo-link}"
+    },
+    {
+      "angle": "New associate dentist",
+      "line": "Your posts welcome a new associate dentist, but the site still shows one dentist. Patients who want an earlier slot would happily book with the new dentist if they knew about them.",
+      "hook": "Only if they announced a new dentist publicly. Note the name exactly as posted; never add credentials you didn't see.",
+      "linkLine": "Dentist bio pages with book-with-this-dentist links: {demo-link}"
+    },
+    {
+      "angle": "Nervous patients",
+      "line": "Several of your reviews mention patients who were scared of the dentist. A page written for nervous patients would let the next one book without explaining their fear on the phone.",
+      "hook": "Search their reviews for words like nervous, anxious or scared. Quote one back.",
+      "linkLine": "A calm page for nervous dental patients: {demo-link}"
+    },
+    {
+      "angle": "Patients with no dental coverage",
+      "line": "A few of your posts talk about a yearly savings plan for families with no dental benefits. A neighbour without coverage would book a cleaning tomorrow if your site told them it exists.",
+      "hook": "Only if they've mentioned a membership or savings plan publicly. Quote where you saw it.",
+      "linkLine": "Your dental membership plan, explained and bookable: {demo-link}"
+    },
+    {
+      "angle": "Kids and family dentistry",
+      "line": "Your posts show a lot of children in the chair, but the site says nothing about a child's first dental visit. Parents choose the family dentist based on exactly that.",
+      "hook": "Look for posts about kids, school visits or first appointments. Note one.",
+      "linkLine": "A kids' first dental visit page parents can share: {demo-link}"
+    },
+    {
+      "angle": "Languages spoken in the practice",
+      "line": "Your team speaks more than one language, judging by your posts, but the dental site is only in English. Families choose a dentist they can talk to easily.",
+      "hook": "Only if their posts or reviews mention another language spoken. Note which.",
+      "linkLine": "Dental pages in the languages your team speaks: {demo-link}"
+    },
+    {
+      "angle": "Licence and credentials hidden",
+      "line": "Your dentist's licence and training are on the regulator's lookup, but nowhere on your own site. Showing them plainly is how a dental practice looks established to a new patient.",
+      "hook": "Check the public licence lookup where they practise. Note a record exists; never quote a number or credential you didn't see.",
+      "linkLine": "Dentist credentials and bios shown plainly: {demo-link}"
+    },
+    {
+      "angle": "A specific recent post",
+      "line": "Your {specific recent job} post answered something patients usually only ask in the chair. On the dental practice site, under its own heading, it would go on helping people who haven't booked yet.",
+      "hook": "Pick their newest explainer post or community event and name it exactly. Never reference a patient.",
+      "linkLine": "That dental explainer, kept on a page that ranks: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, that {specific recent job} you posted explained a dental question more clearly than most practice websites do.\n\nI looked for a family dentist in {City} and found {Business Name}, but no way to book a new-patient exam online or see which dental plans you bill directly. I put together a sample site to see how it might look, with marked placeholders where your photos would go.\n\nWould you like me to send it?",
+    "dm2": "{Owner}, following up in case my note got buried. Here's the sample dental site for {Business Name}: {demo-link}\n\nIt has new-patient booking, a benefits and fees page, an emergency dentist page with after-hours steps and a page for nervous patients. Every treatment page is information only, with nothing that promises a result. If it's not for you, just say so.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for dental practices here in {City}. I sent you a message a few days ago, did it reach you?\"\n\nIF NO:\n\"No problem. Short version: I built a sample site for {Business Name} with new-patient booking, a benefits page and an emergency dentist page, with marked placeholders where your photos would go. Can I email the link for you to look at after your last patient?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"Your current site came from a vendor and looks like a lot of others. This one is yours: your treatments, your fees, your team. You approve every word, and nothing about results goes on it. The build runs {Build Range} depending on how many treatment pages you want, then {Care Range} a month for hosting and edits. For a practice your size I'd quote about {Build Price}, which is in the range of a single crown.\"\n\"Could I walk you through it for ten minutes over lunch this week?\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. We start once it clears, and you sign off on every page before launch.\"",
+    "objections": [
+      {
+        "objection": "We already pay a dental marketing company for our site.",
+        "handler": "\"Then you know the monthly cost. I'd compare what it books: can a new patient choose an exam slot at night and see your benefit plans? If not, I'll move you to a site you own, with no long contract.\""
+      },
+      {
+        "objection": "Our schedule is full; we don't need new patients.",
+        "handler": "\"Then the site's job changes: book the treatments you want more of, like implants or aligners, and let existing patients rebook cleanings without calling. A full hygiene schedule still has gaps from cancellations.\""
+      },
+      {
+        "objection": "Online booking will mess up our schedule.",
+        "handler": "\"It only offers the slots your front desk opens, by provider and appointment type. New-patient exams go where you want them, and emergencies still come through the phone.\""
+      },
+      {
+        "objection": "Patient privacy makes this complicated.",
+        "handler": "\"That's why the forms are built for it: privacy-safe intake, secure hosting set up for health information, a consent page you approve, and no patient details sent by plain email.\""
+      },
+      {
+        "objection": "Most of our patients come by word of mouth.",
+        "handler": "\"That's the best source there is. A referred patient still looks you up before booking, and checks if you take their plan. The site is what confirms the recommendation.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For your practice about {Build Price}, for new-patient booking, the benefits page, emergency and treatment pages. That's in the range of a single crown.\""
+      }
+    ],
+    "email": {
+      "subject": "Dental site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for dental practices around {City}. {Business Name} has good reviews, but no way for a new patient to book an exam at night or see which dental plans you bill directly before they call.\n\nI built a sample first rather than ask for your time: new-patient booking by provider, a benefits and fees page, an emergency dentist page with after-hours steps, a page for nervous patients and a kids' first visit page, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you'd like it, I move it to a domain your practice owns and finish it for {Build Range}, plus {Care Range} a month for hosting and edits. You approve every page, and nothing on it promises a treatment result. If not, no problem, it comes down at the end of the month.\n\nWorth ten minutes on the phone this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"{Owner}, it's {Your Name}. I build websites for dental practices in {City}, and I made a sample one for {Business Name} with new-patient booking and an emergency dentist page. I'll email the link. Have a look between patients. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm taking the {Business Name} dental demo down on Friday to free up the space.\n\nShould I keep it up for you? One word is fine either way.",
+    "nurture": "Hi {Owner}, many patients try to use their dental benefits before their plan year resets, and cleaning requests usually pick up around then. You came to mind.\n\nThe dental site is still here whenever you'd like it, same price as before. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to one crown or one implant consult, never to an hourly rate. Dentists think in procedures.",
+      "Price treatment pages one by one, and only for treatments the practice wants more of.",
+      "Build a dentist review round into every quote; the dentist approves every clinical sentence before launch.",
+      "Never write outcomes, comfort promises or 'best dentist' labels; smile photos only with signed patient consent.",
+      "Quote secure intake forms and hosting as their own line, because health information changes the setup.",
+      "Charge for a second language only when someone in the practice can check the dental terms."
+    ],
+    "lineItems": [
+      {
+        "item": "Dental treatment page (each)",
+        "min": 300,
+        "max": 750,
+        "unit": "per-page",
+        "description": "Max when the page has its own FAQ, a visit-by-visit outline, a fee range with payment-plan options and the dentist's edits from two rounds.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "New-patient online booking by provider",
+        "min": 600,
+        "max": 1600,
+        "unit": "one-time",
+        "description": "Max with separate dentist and hygienist calendars, emergency slot rules, new versus returning patient paths and deposit capture for long visits.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Benefits, direct billing and membership plan page",
+        "min": 300,
+        "max": 800,
+        "unit": "one-time",
+        "description": "Max when it lists many benefit plans, explains direct billing and sets out an in-house membership plan with tiers and a sign-up form.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Emergency dentist page with after-hours steps",
+        "min": 250,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max with same-day slot booking, after-hours instructions the dentist writes and a separate version for children's dental emergencies.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Dentist and hygienist bio pages (each)",
+        "min": 150,
+        "max": 400,
+        "unit": "per-page",
+        "description": "Max with a first-person paragraph, training and licence details the dentist supplies, languages spoken and a book-with-this-person link.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Consented smile gallery",
+        "min": 400,
+        "max": 1100,
+        "unit": "one-time",
+        "description": "Max with filtering by treatment, a signed consent record per patient and a note that every case is individual.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Second-language dental pages",
+        "min": 600,
+        "max": 1600,
+        "unit": "one-time",
+        "description": "Max when every treatment page, the booking flow and the forms are translated and checked by a fluent team member.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Dental team portraits and treatment room photo session",
+      "min": 500,
+      "max": 1300,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Nervous patients want to see the dentist and the room before they book. One morning of team portraits and operatory shots replaces the stock smiles on every page.\"",
+      "when": "Month 2, or when a new dentist or hygienist joins."
+    },
+    {
+      "name": "Google profile upkeep for the dental practice",
+      "min": 150,
+      "max": 350,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Weekly posts on your dental practice's Google profile, like what a new-patient exam includes or holiday hours for emergencies, approved by the dentist before they go up.\"",
+      "when": "Day 30, once the site is live."
+    },
+    {
+      "name": "Review requests after a cleaning or treatment",
+      "min": 99,
+      "max": 199,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A day after a dental visit, the patient gets a short note asking how it went, worded so it never mentions their treatment, and only to patients who agreed to be contacted.\"",
+      "when": "Day 45, once the dentist approves the wording and consent rules."
+    },
+    {
+      "name": "Patient consent and smile-photo policy pages",
+      "min": 300,
+      "max": 700,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Before any patient smile or testimonial appears, the practice needs a written consent form and a public policy on how dental photos are used. I set up both for the dentist to approve.\"",
+      "when": "Before launch, if the build includes a smile gallery or patient words."
+    },
+    {
+      "name": "Accessibility review of the dental site",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Older patients and people using screen readers book dental care too. I check the booking flow, forms and treatment pages against accessibility guidelines and fix what fails.\"",
+      "when": "Month 2, after the core dental pages are approved."
+    },
+    {
+      "name": "Advertising-approval-ready dental content pack",
+      "min": 500,
+      "max": 1200,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Where the regulator requires dental advertising to be approved, I prepare every treatment page and promotion as a clean submission pack: plain claims, no outcomes, credentials in brackets for the dentist to fill.\"",
+      "when": "Before launch, where the practice's regulator asks for approval of advertising."
+    },
+    {
+      "name": "Monthly dental explainer article",
+      "min": 300,
+      "max": 700,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Each month one plain explainer on a question patients ask in the chair, like what a root canal visit involves, drafted from a short call and edited by the dentist.\"",
+      "when": "Month 3, once the treatment pages are live."
+    },
+    {
+      "name": "School and community dental day promotion",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"When the practice visits a school or runs a community dental day, I make the sign-up page, the flyer and a kids' first visit booking link for parents afterward.\"",
+      "when": "Six weeks before each school visit or community event."
+    },
+    {
+      "name": "Dental clinic signage and recall card refresh",
+      "min": 300,
+      "max": 900,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Window decals, an appointment card and a recall postcard that match the new dental site, so the practice looks the same in the chair, on the street and online.\"",
+      "when": "Month 3, when they mention reprinting appointment cards."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Dental labs that make the practice's crowns",
+        "whoPays": "The dental laboratory",
+        "min": 2000,
+        "max": 4500,
+        "unit": "one-time",
+        "pitchLine": "\"The dental lab that makes your crowns sells to every dentist in the region on an old page. A site with case submission and turnaround times is easy to pitch with your name behind it.\"",
+        "whyItWorks": "Labs live on dentist relationships, and a dentist's introduction is the strongest sales channel they have."
+      },
+      {
+        "route": "Specialists the dentist refers to",
+        "whoPays": "The oral surgery, endodontic or periodontal practice",
+        "min": 3000,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"The oral surgeon and endodontist you refer patients to need a referral form general dentists can use in a minute. Your introduction gets me the meeting.\"",
+        "whyItWorks": "Specialists depend on general dentist referrals, so anything that makes referring easier gets their attention."
+      },
+      {
+        "route": "Independent hygienists and dental temp staff",
+        "whoPays": "The hygienist or temp staffing business",
+        "min": 900,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"The temp hygienists who cover your vacations sell to every dental office nearby. A simple booking site makes them easier to hire, and you can introduce me.\"",
+        "whyItWorks": "Solo and small staffing businesses trust the practices that hire them, and their customers are all dentists."
+      },
+      {
+        "route": "Dental equipment repair technicians",
+        "whoPays": "The equipment service company",
+        "min": 1200,
+        "max": 2800,
+        "unit": "one-time",
+        "pitchLine": "\"The technician who fixes your chairs and compressors serves every dental office in the area. A site with a service request form tells new practices they exist.\"",
+        "whyItWorks": "They sell only to dentists and win work by recommendation, so a dentist's introduction carries weight."
+      },
+      {
+        "route": "Paediatric dentists and orthodontists nearby",
+        "whoPays": "The paediatric or orthodontic practice",
+        "min": 3000,
+        "max": 5000,
+        "unit": "one-time",
+        "pitchLine": "\"The orthodontist you send teenagers to probably has the same vendor template you had. One dentist recommending another's builder is how small health practices pick vendors.\"",
+        "whyItWorks": "Dentists and orthodontists refer both ways and compare notes on vendors."
+      },
+      {
+        "route": "Patients who run their own businesses",
+        "whoPays": "Each patient's business, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"A practice sees hundreds of local business owners in the chair each year. A small card at the front desk saying who built the dental site starts conversations.\"",
+        "whyItWorks": "Patients trust their dentist, and a visible credit on a site they just used is a soft referral."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Case submission assistant for dental labs",
+        "whoPays": "The dental laboratory, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Dentists send lab cases with missing shade or margin notes. An assistant checks each submission for the lab's required details and asks the dental office before the case is started.\"",
+        "whyItWorks": "Incomplete prescriptions are the lab's most expensive delay, and the introduction comes from a dentist they already serve."
+      },
+      {
+        "route": "Referral letter summaries for specialists",
+        "whoPays": "The specialist practice, monthly",
+        "min": 150,
+        "max": 350,
+        "unit": "monthly",
+        "pitchLine": "\"Referral letters from general dentists arrive in every format. An assistant drafts a one-page summary for the specialist's front desk to check, so the consult is booked faster.\"",
+        "whyItWorks": "Specialists receive referrals all day, and any time saved at intake goes straight to more consults."
+      },
+      {
+        "route": "Shift matching assistant for temp dental staff",
+        "whoPays": "The temp staffing business, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"When a dental office posts an open hygiene shift, an assistant drafts offers to available temps who match the software and location, for the agency owner to approve.\"",
+        "whyItWorks": "Filling shifts quickly is the whole business, and their dental clients notice the speed."
+      },
+      {
+        "route": "Service call triage for equipment technicians",
+        "whoPays": "The equipment service company, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"A dental office describes the chair or suction fault and an assistant drafts the likely parts list and urgency for the technician to confirm before driving out.\"",
+        "whyItWorks": "Technicians lose hours to second trips for parts, and every dental office they serve wants faster repairs."
+      },
+      {
+        "route": "Treatment-plan explainer drafts for orthodontists",
+        "whoPays": "The orthodontic practice, monthly",
+        "min": 150,
+        "max": 350,
+        "unit": "monthly",
+        "pitchLine": "\"Orthodontists the dentist refers to can send parents a plain draft explainer of each braces plan, checked by the orthodontist before it goes out.\"",
+        "whyItWorks": "Orthodontists close more consults when parents understand the plan at home, and the dentist's word opens the door."
+      },
+      {
+        "route": "Supply reorder assistant for dental distributors' reps",
+        "whoPays": "The local supply rep or dealer, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"The supply rep who visits your practice can offer every dental office a reorder assistant that drafts the monthly order from what was used, for the office manager to approve.\"",
+        "whyItWorks": "Reps want to be useful between visits, and a tool that keeps offices ordering from them is worth paying for."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Missed-call text-back with the dental booking link",
+      "kind": "automation",
+      "oneTimeMin": 0,
+      "oneTimeMax": 300,
+      "monthlyMin": 79,
+      "monthlyMax": 149,
+      "pitchLine": "\"When the front desk is with a patient and misses a call, the caller gets a text with the dental booking link and the emergency instructions, without any health details in the text.\"",
+      "whenAndWhatItTakes": "Day 30. Needs their main number forwarded and wording the dentist approves."
+    },
+    {
+      "name": "Privacy-safe new-patient forms and secure hosting setup",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2200,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"New dental patients fill in their medical history and benefits details online before the visit, on forms and hosting set up for health information, so nothing travels by plain email.\"",
+      "whenAndWhatItTakes": "Month 1, alongside launch. Needs their paper forms, the privacy notice and who in the practice reviews submissions."
+    },
+    {
+      "name": "Recall reminders for cleanings",
+      "kind": "automation",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Patients who are due for a dental cleaning get a reminder with a link to pick a hygiene slot, so the front desk stops working the recall list by phone.\"",
+      "whenAndWhatItTakes": "Month 2. Needs a recall export from their practice system and opt-in records for texts."
+    },
+    {
+      "name": "Appointment reminders with pre-visit instructions",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 40,
+      "monthlyMax": 120,
+      "pitchLine": "\"Two days before a dental visit, patients get the time, parking notes and any instructions the dentist wrote for that appointment type, with a link to reschedule.\"",
+      "whenAndWhatItTakes": "Month 2, with booking. Needs instructions per appointment type."
+    },
+    {
+      "name": "Review reply drafts that never confirm a patient",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"A new dental review comes in and the dentist gets a short draft response to edit. It thanks the writer warmly but stays silent on whether they were treated here or for what.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their privacy rules and a few approved replies. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Treatment plan follow-up sequence",
+      "kind": "automation",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1800,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Patients who were given a dental treatment plan and haven't booked get a gentle reminder with the payment-plan options and a booking link, worded by the dentist.\"",
+      "whenAndWhatItTakes": "Month 3. Needs a list of unscheduled treatment from their practice system and approved wording."
+    },
+    {
+      "name": "Membership plan sign-up and billing",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3500,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Families with no dental benefits sign up for the practice's savings plan from the website, and renewals and card payments run on their own, so reception just checks a member flag at check-in.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the plan tiers, what each covers and the payment account they already use."
+    },
+    {
+      "name": "Website question assistant on visits and benefits",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 3500,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"It answers 'do you take my plan', 'what happens at a first visit' and 'what do I do about a broken tooth tonight' from the practice's own dental pages, gives no clinical advice and offers a booking instead.\"",
+      "whenAndWhatItTakes": "Month 4. Needs approved pages and the dentist's sign-off on every answer. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Emergency slot request and triage form",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Someone with a dental emergency answers a few set questions and requests the next emergency slot; the front desk sees the urgent ones first and calls back.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the dentist's emergency questions and how many emergency slots they hold each day."
+    },
+    {
+      "name": "Benefits pre-check request",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"New dental patients enter their plan details when they book, and the front desk gets a checklist to confirm coverage before the visit instead of on the day.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the plans they bill directly and the details staff check."
+    },
+    {
+      "name": "Treatment cost estimate drafts from the fee schedule",
+      "kind": "ai",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"From the dentist's treatment notes and the practice fee schedule, it drafts a plain cost estimate with payment-plan options for the treatment coordinator to check and send.\"",
+      "whenAndWhatItTakes": "Month 6. Needs their fee schedule and sample plans. Comes with the AI maintenance retainer; staff check every estimate."
+    },
+    {
+      "name": "Hygienist and assistant applicant screener",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"Hygiene and chairside assistant candidates complete a short online screen covering licence status, which days they can work and the dental software they know. The dentist meets only the shortlist.\"",
+      "whenAndWhatItTakes": "Whenever they post a role. Needs their must-haves. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Clinical note drafts from dictation",
+      "kind": "ai",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 200,
+      "monthlyMax": 450,
+      "pitchLine": "\"After an exam the dentist talks for a minute and gets a draft dental note in the practice's format to review and edit before it is saved.\"",
+      "whenAndWhatItTakes": "Month 7. Needs their note template, patient consent wording for dictation and secure storage. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Same-day cancellation fill list",
+      "kind": "automation",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"When a dental patient cancels today, patients on the short-notice list get a text offering the slot, and the first to accept is booked.\"",
+      "whenAndWhatItTakes": "Month 5. Needs a short-notice list with opt-in and the booking rules."
+    },
+    {
+      "name": "Referral tracker for specialists and patients",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Track which patients and local businesses send new dental patients, and which specialists you refer to, so the dentist knows who to thank.\"",
+      "whenAndWhatItTakes": "Month 5. Needs a referral question on the new-patient form."
+    },
+    {
+      "name": "Patient education handout drafts",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"The dentist picks a topic, like caring for a new crown, and gets a plain one-page handout drafted from the practice's approved pages, ready to edit and print.\"",
+      "whenAndWhatItTakes": "Month 6. Needs approved source pages; the dentist edits every handout. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "New patient and treatment dashboard",
+      "kind": "software",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"See how many new dental patients the site books each month, which treatment pages they came from and how many plans were accepted.\"",
+      "whenAndWhatItTakes": "Month 9. Needs six months of booking data and a treatment-accepted export."
+    },
+    {
+      "name": "Patient message summaries for the front desk",
+      "kind": "ai",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"Overnight messages and form requests are sorted into reschedules, billing questions and possible dental emergencies, with a short draft reply for staff to send.\"",
+      "whenAndWhatItTakes": "Month 6. Needs their message channels and reply rules. Comes with the AI maintenance retainer; staff send every reply."
+    },
+    {
+      "name": "Online payment for balances",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 40,
+      "monthlyMax": 120,
+      "pitchLine": "\"Patients pay their dental balance from a link in the statement, and the front desk stops taking card numbers over the phone.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the payment account they already use and their statement wording."
+    },
+    {
+      "name": "Second-location page and booking split",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"When the dentist opens a second office, each location gets its own page, hours and dental booking calendar, and patients choose the nearer one.\"",
+      "whenAndWhatItTakes": "When they announce a second location. Needs the new address, team and hours."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise new-patient booking for independent dentists",
+      "whoPays": "Independent dental practices, monthly per office",
+      "min": 99,
+      "max": 299,
+      "unit": "monthly",
+      "pitchLine": "\"Independent dentists all lose evening bookings the same way. The new-patient booking and benefits page I built for one practice works for any of them.\"",
+      "whyItWorks": "The first practice paid for the flow and its rules; the next one needs only its own providers and plans loaded."
+    },
+    {
+      "route": "Dental association member site template",
+      "whoPays": "The local or regional dental association",
+      "min": 3000,
+      "max": 9000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer every member dentist a practice site template with consent pages, privacy-safe forms and advertising-ready treatment pages already in place.\"",
+      "whyItWorks": "Associations look for member benefits, and website compliance is a question members bring them often."
+    },
+    {
+      "route": "Dental lab partner programme",
+      "whoPays": "A regional dental laboratory, per referred practice",
+      "min": 500,
+      "max": 1500,
+      "unit": "one-time",
+      "pitchLine": "\"Your lab serves dozens of dental offices. Offer them a discounted site build as a client perk, and I deliver it with your lab named as the partner.\"",
+      "whyItWorks": "Labs compete on service, and a perk that helps their dentists grow keeps them loyal."
+    },
+    {
+      "route": "White-label for dental practice consultants",
+      "whoPays": "The practice management consultant, per practice",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "pitchLine": "\"Dental offices hire you to fix case acceptance and the schedule. A booking-first practice site is the quickest visible win in that engagement, and it can ship with your branding, not mine.\"",
+      "whyItWorks": "Consultants already hold the practice's trust and budget, and they want visible wins early."
+    },
+    {
+      "route": "Start-up practice launch package",
+      "whoPays": "Dentists opening their first practice",
+      "min": 3500,
+      "max": 7000,
+      "unit": "one-time",
+      "pitchLine": "\"A dentist opening a new practice needs the site, booking, forms and Google profile before the first patient. I've built the full set once and can launch yours in weeks.\"",
+      "whyItWorks": "Start-up practices buy everything at once and have no vendor locked in yet."
+    },
+    {
+      "route": "Practice brokers and transition advisors",
+      "whoPays": "The practice transition firm, per sale",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"When a dental practice changes hands, the new owner needs the site updated on day one. Offer a fixed-price transition site with every sale you broker.\"",
+      "whyItWorks": "Brokers want smooth handovers, and a ready site is one less loose end at closing."
+    },
+    {
+      "route": "Group of independent dentists sharing a template",
+      "whoPays": "A peer group or buying group of independent dentists",
+      "min": 5000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Your peer group has a dozen independent dentists, each paying a vendor separately. One shared template, set up per practice, costs each of them less.\"",
+      "whyItWorks": "Peer groups of dentists already share vendors and advice, so one decision reaches many practices."
+    },
+    {
+      "route": "Template licence for dental marketing agencies",
+      "whoPays": "The agency, per dental client",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency signs dentists and builds each site from zero. License my template with booking, benefits, emergency and consent pages already built.\"",
+      "whyItWorks": "Agencies own the relationship; you sell them the structure they would otherwise rebuild for every dentist."
+    },
+    {
+      "route": "Membership plan kit for uninsured patients",
+      "whoPays": "Independent dentists, monthly",
+      "min": 49,
+      "max": 149,
+      "unit": "monthly",
+      "pitchLine": "\"The in-house membership sign-up and billing I built works for any dentist who wants to serve patients with no dental coverage.\"",
+      "whyItWorks": "Many independents want a plan but not the admin, so a ready kit sells on its own."
+    },
+    {
+      "route": "Dental school graduates opening practices",
+      "whoPays": "New graduates, through the school's alumni office",
+      "min": 2000,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Each graduating class has dentists who will open or buy a practice within a few years. An alumni rate on a ready dental site gives the school a perk and me a pipeline.\"",
+      "whyItWorks": "Alumni offices want practical benefits, and the class repeats every year."
+    },
+    {
+      "route": "One dentist per neighbourhood",
+      "whoPays": "A dental practice in another part of the city",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I build for one family dentist per neighbourhood so I never work for two practices competing for the same patients. Yours in {Neighborhood} is open today.\"",
+      "whyItWorks": "Dentists value not sharing a builder with the practice down the road, and the template carries over."
+    },
+    {
+      "route": "Finishing stalled dental site projects",
+      "whoPays": "The stranded dental practice",
+      "min": 2000,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"Half-built dental sites sit unfinished when a freelancer drops off. I take over on a ready structure with booking, benefits and consent pages, and the dentist just approves the text.\"",
+      "whyItWorks": "Those practices already decided to buy and often have approved copy waiting."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Dental site build plus care plan, one contract",
+      "min": 3000,
+      "max": 5000,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo and the dentist approves the scope.",
+      "line": "\"The dental site and the care plan sit on one contract, so a new hygienist bio or holiday hours is a message to me, not an afternoon for your front desk.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Google profile upkeep for the dental practice",
+      "min": 150,
+      "max": 350,
+      "unit": "monthly",
+      "trigger": "The first new-patient booking arrives through the site.",
+      "line": "\"A new patient found the practice and booked at night. Weekly posts on the Google profile keep the next one finding you.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "Dental team portraits and treatment room photo session",
+      "min": 500,
+      "max": 1300,
+      "unit": "per-shoot",
+      "trigger": "The team page still shows marked placeholders where photos go.",
+      "line": "\"Nervous patients want to see who's treating them, and the team page is still waiting for portraits.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Recall reminders for cleanings",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "trigger": "The front desk mentions calling through the overdue recall list by hand.",
+      "line": "\"Your team is phoning patients who are overdue for a cleaning. Let a reminder with a booking link do the first round.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Treatment plan follow-up sequence",
+      "min": 600,
+      "max": 1800,
+      "unit": "one-time",
+      "trigger": "Ninety days of bookings, and the dentist mentions plans that were presented but never scheduled.",
+      "line": "\"Patients leave with a treatment plan and forget it. A gentle follow-up with payment options brings them back to book.\""
+    },
+    {
+      "rung": 6,
+      "day": 120,
+      "offer": "Website question assistant on visits and benefits",
+      "min": 1500,
+      "max": 3500,
+      "unit": "one-time",
+      "trigger": "The front desk says most calls are about plans, first visits and emergencies.",
+      "line": "\"Half your phone time is the same three questions. Let the site answer them from your own dental pages, any hour.\""
+    },
+    {
+      "rung": 7,
+      "day": 180,
+      "offer": "Membership plan sign-up and billing",
+      "min": 1200,
+      "max": 3500,
+      "unit": "one-time",
+      "trigger": "Uninsured patients keep asking about the in-house plan, or the paper sign-up gets messy.",
+      "line": "\"The membership plan works on paper, but it's hard to run. Online sign-up and billing makes it something you can grow.\""
+    },
+    {
+      "rung": 8,
+      "day": 365,
+      "offer": "New patient and treatment dashboard",
+      "min": 2000,
+      "max": 5000,
+      "unit": "one-time",
+      "trigger": "The first anniversary, when the dentist asks which treatment pages really bring patients.",
+      "line": "\"A year in, let's see which dental treatment pages bring new patients and accepted plans, and put next year's effort there.\""
+    }
+  ]
+}

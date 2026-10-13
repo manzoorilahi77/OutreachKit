@@ -3,7 +3,7 @@ import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { afterAll, describe, expect, it } from "vitest";
 import { checkKits } from "../scripts/lib/kits";
-import { CATS } from "@/lib/kit/categories";
+import { ALL_CATS as CATS } from "@/lib/kit/categories";
 import { kitSlug } from "@/lib/kit-v2/types";
 import type { CategoryKit } from "@/lib/kit-v2/types";
 

@@ -1,0 +1,883 @@
+{
+  "schemaVersion": 1,
+  "category": "Moving & storage companies",
+  "slug": "moving-storage-companies",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · expansion batch (healthcare + mid-size)",
+    "generatedAt": "2026-10-13",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Mid-size mover with several branches, a fleet, long-distance and office work and its own storage, so the build centres on the quote calculator, storage rental checkout and a move portal. Integration ranges depend on their move management system and are set wide; international move pages stay generic on customs."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Storage unit sizes, access and online rental",
+      "contains": "Unit and vault sizes with what fits in each, climate-controlled options, access hours, monthly rates, short and long term terms, and a reserve-and-pay form",
+      "why": "Storage renters choose by size and monthly price and want to reserve tonight. A page that sells units directly fills them between moves."
+    },
+    {
+      "section": "Long-distance and international moving process",
+      "contains": "Survey, written estimate, packing, loading, delivery window, tracking and unloading, plus a plain checklist of the customs paperwork the customer prepares for an international move",
+      "why": "Long-distance movers fear hidden charges and lost shipments. A step-by-step page with delivery windows explained lowers that fear before the survey."
+    },
+    {
+      "section": "Office and commercial relocation",
+      "contains": "Move coordinator, floor-plan labelling, after-hours and weekend moves, IT equipment handling, furniture disposal, and a request form for a site walkthrough",
+      "why": "Office managers buy on downtime. They need to see a plan that keeps the business running, not a truck photo."
+    },
+    {
+      "section": "Moving branch pages and lanes served",
+      "contains": "Each branch's address, storage facility, the towns it serves and the regular long-distance lanes it runs, with branch reviews and a [registration number] slot",
+      "why": "People pick a mover close to them for the survey and the storage. A branch page with lanes answers both questions at once."
+    },
+    {
+      "section": "Video survey booking",
+      "contains": "How a live video survey works, how long it takes, what rooms to show, and a calendar to book one with an estimator instead of a home visit",
+      "why": "Customers moving across the country or abroad can't wait for an in-person survey. A bookable video survey keeps them from choosing the first quote."
+    },
+    {
+      "section": "Mover and driver careers",
+      "contains": "Mover, packer, driver and crew lead roles by branch, licence class needed for drivers, pay ranges they choose to publish, training, and a short application",
+      "why": "Crews cap how many moves a branch can take in peak months. Applicants compare movers on pay, training and steady hours."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C25",
+      "siteType": "local-conversion",
+      "name": "Quote in Minutes",
+      "heroLayout": "split-photo",
+      "mood": ["bright", "organised", "quick"],
+      "bestFor": "Moving companies whose first job is a fast quote form and a call button on a phone",
+      "pairsWithTier": "starter",
+      "headlineSample": "Movers and storage in {City}, quoted in minutes",
+      "whyItFits": "Citrus Morning's warm light palette and round geometric headings feel friendly and calm for people stressed about moving day."
+    },
+    {
+      "id": "b",
+      "themeId": "C6",
+      "siteType": "booking-first",
+      "name": "Survey and Storage Planner",
+      "heroLayout": "card-stack",
+      "mood": ["clear", "dependable", "precise"],
+      "bestFor": "Movers selling a booked video survey, an instant moving estimate and storage units from the same page",
+      "pairsWithTier": "standard",
+      "headlineSample": "Book your {City} moving survey and storage unit online",
+      "whyItFits": "The family combo fails CTA contrast. Cobalt Wire's crisp blue and neutral sans make a calculator, unit sizes and a survey calendar easy to scan."
+    },
+    {
+      "id": "c",
+      "themeId": "C19",
+      "siteType": "b2b-capability",
+      "name": "Relocation Operations",
+      "heroLayout": "type-led",
+      "mood": ["capable", "exact", "serious"],
+      "bestFor": "Movers growing office relocations, corporate employee moves and long-distance lanes with a fleet behind them",
+      "pairsWithTier": "premium",
+      "headlineSample": "Office and long-distance relocation from {City}",
+      "whyItFits": "Gunmetal Signal's dark logistics look and mono labels suit lanes, fleet and delivery windows, which is what office managers and HR teams buy on."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "Heavy site on a phone",
+      "line": "Your moving site took long enough to load on my phone that I nearly gave up before the quote form. People plan a move in short breaks and leave a mover's page that stalls.",
+      "hook": "Open their site on a phone over mobile data and note roughly how long the quote form takes to appear.",
+      "linkLine": "The same moving quote, loading quickly on a phone: {demo-link}"
+    },
+    {
+      "angle": "Quote form asks too little",
+      "line": "Your moving quote form asks for a name and a phone number and nothing about rooms, floors or dates. Your estimators must spend the first call collecting what the form could have.",
+      "hook": "Fill in their quote form up to the submit button and list the fields. If there's no room count, date or access question, the angle holds.",
+      "linkLine": "A moving quote form that gathers rooms, floors and dates: {demo-link}"
+    },
+    {
+      "angle": "No instant moving estimate",
+      "line": "Shoppers comparing movers want a ballpark before they give a phone number. A short calculator by home size and distance on your site would keep them from picking whichever mover answered first.",
+      "hook": "Check whether their site gives any price guide or estimate tool. Note whether competitors' sites in the area do.",
+      "linkLine": "An instant moving estimate by home size and distance: {demo-link}"
+    },
+    {
+      "angle": "Storage units with no prices",
+      "line": "Your storage facility is on the listing, but the site has no unit sizes, monthly rates or way to reserve. Storage renters book at night and go where they can pay.",
+      "hook": "Look for unit sizes, prices or a reserve button on their storage page. Note what's missing.",
+      "linkLine": "Storage units sized, priced and reserved online: {demo-link}"
+    },
+    {
+      "angle": "Branches with one contact page",
+      "line": "Your trucks run out of several branches, but the site has one contact page and one number. Someone booking a survey wants the movers based near them, and the storage they can visit.",
+      "hook": "Count branch addresses on their listings or trucks, then check the site for a page per branch.",
+      "linkLine": "A page for each moving branch and the lanes it runs: {demo-link}"
+    },
+    {
+      "angle": "Long-distance lanes hidden",
+      "line": "Your reviews mention moves to other cities, but the site only talks about local moving. Families relocating far away search for long-distance movers and never find your lanes.",
+      "hook": "Read their reviews for long-distance or interstate moves and note one destination. Then check the site for a long-distance page.",
+      "linkLine": "A long-distance moving page with delivery windows explained: {demo-link}"
+    },
+    {
+      "angle": "Office moves get one line",
+      "line": "Office relocation is one bullet on your services list. Office managers look for weekend moves, IT handling and a coordinator before they ask a mover for a walkthrough.",
+      "hook": "Find their commercial or office moving mention and check for a dedicated page, case studies or a walkthrough form.",
+      "linkLine": "An office relocation page that books a walkthrough: {demo-link}"
+    },
+    {
+      "angle": "Hiring movers and drivers",
+      "line": "I've seen your posts hiring movers and drivers across more than one branch, and the site has no careers page. Crews decide where to work on pay, hours and training, and want to read about it.",
+      "hook": "Find a current mover or driver job post and note the branches. Check the site and footer for a careers link.",
+      "linkLine": "A mover and driver careers section by branch: {demo-link}"
+    },
+    {
+      "angle": "Reviews about careful crews",
+      "line": "Your reviews keep praising crews by name for wrapping furniture and protecting floors. None of it shows on the moving quote page, where a nervous family decides.",
+      "hook": "Copy one review line that names a crew lead or a careful detail. Quote it back if they reply.",
+      "linkLine": "Your crew reviews beside the moving quote form: {demo-link}"
+    },
+    {
+      "angle": "End of school year peak",
+      "line": "The weeks around the end of the school year are when families move and your best dates fill first. A survey calendar online keeps those bookings from going to whoever answers the phone.",
+      "hook": "Use in the two months before the local school year ends. Check for posts about peak dates filling up.",
+      "linkLine": "Peak moving dates booked with an online survey: {demo-link}"
+    },
+    {
+      "angle": "International moves",
+      "line": "You handle international moves, but the site doesn't explain the shipping options, transit times or paperwork. People moving abroad research longer than anyone and choose the mover who explains it.",
+      "hook": "Look for international or overseas moving in their services or posts. Check whether any page explains how it works.",
+      "linkLine": "An international moving page with the process laid out: {demo-link}"
+    },
+    {
+      "angle": "Registration not shown",
+      "line": "People worried about rogue movers check registration and insurance before they book. Your branches carry the paperwork, and the moving site doesn't show it anywhere.",
+      "hook": "Look for registration or licence numbers on their trucks, listings or invoices. Use only what they publish, in [brackets] on the demo.",
+      "linkLine": "Registration and insurance shown on every moving page: {demo-link}"
+    },
+    {
+      "angle": "No shipment tracking",
+      "line": "Once a long-distance load leaves, your customers have to call to ask where their things are. A simple tracking page for each move would quiet a lot of office phone time.",
+      "hook": "Check the site and reviews for any mention of tracking, delivery updates or calls asking where a shipment is.",
+      "linkLine": "A moving tracking page customers check themselves: {demo-link}"
+    },
+    {
+      "angle": "Dated beside the van lines",
+      "line": "Your crews and storage are as good as the big van lines, but your moving site looks a few years older. Families comparing three movers judge the company by its page.",
+      "hook": "Compare their home page to a national mover's on a phone and note one concrete gap: no estimate tool, tiny text, no storage prices.",
+      "linkLine": "Your moving brand, rebuilt to sit beside the van lines: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "That {specific recent job} you posted shows exactly the planning office managers want from movers. It deserves a case page that leads to a relocation walkthrough.",
+      "hook": "Pick their newest large move post: an office, a long-distance family move, a storage-in-transit job. Name it.",
+      "linkLine": "That move as a case page with a walkthrough request: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner} — I've been looking at how {Business Name} shows up across your branches and storage sites.\n\nThe crew reviews are excellent, but the site has no moving estimate, no storage prices to reserve and one contact page for every branch. I've put together a sample with all three, plus a video survey calendar, with marked placeholders where your photos would go.\n\nWould it help if I sent it to you or whoever runs sales?",
+    "dm2": "{Owner} — following up in case this got buried. Here's the sample site for {Business Name}: {demo-link}\n\nIt has an instant moving estimate, a video survey calendar, storage units you can reserve and pay for, a page per branch and an office relocation page. Happy to walk your sales or operations lead through it in fifteen minutes.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}. I build websites and quoting tools for moving and storage companies with several branches. I sent a sample site for {Business Name} last week, did it come through?\"\n\nIF NO:\n\"Short version: an instant moving estimate, a bookable video survey, storage units reserved online and a page per branch, with marked placeholders where your photos would go. Who handles sales and the website on your side?\"\n\nIF YES:\n\"What did you and the team think?\"\n → let them talk, then ask: \"How do quote requests reach your estimators today, and how many go cold?\"\n\"The site runs {Build Range}, then {Care Range} a month for hosting, changes and reporting. For your branches I'd expect about {Build Price}. The storage checkout and any connection to your move management system are quoted once I see it.\"\n\"Could we get thirty minutes with you and your operations lead next week?\"\n\nCLOSE:\n\"I'll send a scope with the site first and the storage and portal pieces as a second phase.\"",
+    "objections": [
+      {
+        "objection": "Every move is different, a calculator will give wrong prices.",
+        "handler": "\"It gives a range by home size and distance and books the survey for the real number. People who see a range give you their details; people who see nothing go to the mover who showed one.\""
+      },
+      {
+        "objection": "We already get leads from a moving lead site.",
+        "handler": "\"Those leads go to several movers at once. A family who finds your own site and books a survey talks only to you, and you don't pay per lead.\""
+      },
+      {
+        "objection": "Our move management software has a quote form.",
+        "handler": "\"Good, then I send the site's quotes and surveys straight into it. Most of those forms look bolted on; the site makes the experience match your crews.\""
+      },
+      {
+        "objection": "Storage is handled by a separate system.",
+        "handler": "\"Then the unit pages and the reserve-and-pay form talk to that system. Renters see live units and prices, and your office stops taking reservations by phone.\""
+      },
+      {
+        "objection": "I need sign-off from the owner and the branch managers.",
+        "handler": "\"Of course. I'll send a short recording of the sample and a one-page scope, and I'm happy to join a call with them.\""
+      },
+      {
+        "objection": "We're busy until peak season ends.",
+        "handler": "\"That's the right time to build. We scope it now, build in the quieter months and launch before next year's peak dates start booking.\""
+      },
+      {
+        "objection": "What's the total?",
+        "handler": "\"The site is {Build Range}, about {Build Price} for your branches, plus {Care Range} a month. The storage checkout and portal are quoted separately once I see your systems.\""
+      }
+    ],
+    "email": {
+      "subject": "Moving estimate and storage pages for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites and quoting tools for moving and storage companies running several branches. {Business Name} has great crew reviews, but the site has no moving estimate, no storage unit prices to reserve and one contact page for every branch.\n\nI built a sample instead of asking for a meeting: an instant estimate by home size and distance, a video survey calendar, storage units reserved and paid online, a page per branch and an office relocation page, with marked placeholders where your photos would go:\n\n{demo-link}\n\nThe site runs {Build Range}, plus {Care Range} a month for hosting, changes and monthly reporting. Storage checkout and any connection to your move management system are scoped separately.\n\nWorth thirty minutes with you and your operations lead?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build moving estimates, storage booking and branch pages for movers with several locations, and I made a sample for {Business Name}. I'll email the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner} — I'm clearing out sample sites this week, including the {Business Name} one with the moving estimate and storage booking.\n\nShould I keep it up for your sales or operations lead? One word either way is fine.",
+    "nurture": "Hi {Owner} — peak moving dates for next year start booking soon in {City}, and the quieter months are when a new site gets built properly. Thought of you.\n\nThe sample with the moving estimate and storage booking is still here: {demo-link}. Same scope and price whenever the timing works."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to a handful of long-distance or office moves a year, never to a local apartment move.",
+      "Quote the site, the storage checkout and the move portal as separate phases; the last two depend on their systems.",
+      "Price branch pages per branch, each with its own lanes, storage facility and reviews.",
+      "The moving estimate calculator is the upsell: price it on the variables it handles, not on a page count.",
+      "International and office relocation pages earn more because they sell the biggest jobs; price them above service pages.",
+      "Never publish a registration or licence number they haven't; leave a bracketed slot per branch."
+    ],
+    "lineItems": [
+      {
+        "item": "Instant moving estimate calculator",
+        "min": 3000,
+        "max": 8000,
+        "unit": "one-time",
+        "description": "Max with home size, distance, floors, access, packing and storage options, plus a booked survey at the end.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Storage unit pages with reserve and pay",
+        "min": 2500,
+        "max": 7000,
+        "unit": "one-time",
+        "description": "Max when live unit availability and payment come from their storage system and each facility has its own page.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Branch and lanes page (each)",
+        "min": 400,
+        "max": 900,
+        "unit": "per-page",
+        "description": "Max with towns served, regular long-distance lanes, the storage facility, branch reviews and a registration slot.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Office relocation section with case pages",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "description": "Max with case pages per office move, an IT and furniture checklist and a walkthrough request to the commercial team.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "International moving pages",
+        "min": 1200,
+        "max": 3500,
+        "unit": "one-time",
+        "description": "Max with shipping options compared, a customer paperwork checklist per destination region and a survey request.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Video survey booking calendar",
+        "min": 800,
+        "max": 2500,
+        "unit": "one-time",
+        "description": "Max when it books into each estimator's calendar by branch and sends a room-by-room prep guide.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Mover and driver careers section",
+        "min": 1200,
+        "max": 3000,
+        "unit": "one-time",
+        "description": "Max with roles per branch, driver licence class questions and applicant routing to each branch manager.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Speed and accessibility pass on the old site",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "description": "Max when many old pages need image compression, form labels, heading order and contrast fixes.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Branch Google profiles for movers and storage",
+      "min": 400,
+      "max": 1500,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Each branch and storage facility listing gets weekly posts of real moves, current hours and answered questions, so the right mover shows up in every town.\"",
+      "when": "Month 1, priced by branch and facility count."
+    },
+    {
+      "name": "Post-move review requests by crew",
+      "min": 300,
+      "max": 900,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"The morning after unloading, a short text thanks the family for choosing your movers and links to the right branch listing, so careful crews finally get credit in public.\"",
+      "when": "Month 1, once delivery dates can be shared from their system."
+    },
+    {
+      "name": "Peak season survey campaign",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A campaign to past movers, realtor partners and storage renters before peak season, pushing early video surveys so the best moving dates fill with your customers.\"",
+      "when": "Ten weeks before the local school year ends."
+    },
+    {
+      "name": "Storage occupancy campaign",
+      "min": 500,
+      "max": 1500,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Ads and listing posts aimed at the unit sizes sitting empty at each storage facility, pointing to reserve-and-pay pages.\"",
+      "when": "Month 2, when the storage pages are live and vacancy is visible."
+    },
+    {
+      "name": "Corporate relocation capability pack",
+      "min": 1500,
+      "max": 3500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A short document for HR teams and office managers: office move process, employee relocation options, insurance and case examples from your moving work.\"",
+      "when": "Month 2, before their commercial team pitches the next corporate account."
+    },
+    {
+      "name": "Crew, fleet and warehouse photo days",
+      "min": 1500,
+      "max": 4000,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A day at each branch filming crews wrapping furniture, loaded trucks and the storage warehouse, so the site shows your movers and not stock boxes.\"",
+      "when": "Month 2, booked on a weekday with moves scheduled."
+    },
+    {
+      "name": "Mover and driver recruiting campaign",
+      "min": 800,
+      "max": 2500,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Recruiting posts and ads per branch for movers, packers and drivers, all pointing to the careers page before the moving peak.\"",
+      "when": "Eight to twelve weeks before peak season."
+    },
+    {
+      "name": "Truck wrap refresh coordination",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Truck and trailer artwork that matches the new moving site and carries the estimate address, coordinated with their wrap shop as trucks come in.\"",
+      "when": "After launch, as each truck is due for service."
+    },
+    {
+      "name": "Monthly moving lead report by branch",
+      "min": 250,
+      "max": 700,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"One page a month: moving estimates, surveys booked, storage reservations and reviews by branch, so the general manager sees where demand is growing.\"",
+      "when": "Month 2, after a full month of form data."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Residential tower and condo building managers",
+        "whoPays": "The building management company",
+        "min": 6000,
+        "max": 18000,
+        "unit": "one-time",
+        "pitchLine": "\"The building managers who approve your move-in bookings still handle lift reservations by email. A resident booking page for elevators and loading bays is my next build.\"",
+        "whyItWorks": "Building managers coordinate with movers every week and trust the crew that never damaged a lobby."
+      },
+      {
+        "route": "Furniture retailers needing delivery booking",
+        "whoPays": "The furniture retailer",
+        "min": 6000,
+        "max": 18000,
+        "unit": "one-time",
+        "pitchLine": "\"The furniture store whose deliveries your crews take on runs delivery dates by phone. A delivery slot picker at checkout would save their showroom staff hours.\"",
+        "whyItWorks": "Retailers already hand their customers to the mover's crews, so the introduction comes with trust built in."
+      },
+      {
+        "route": "Real estate brokerages with relocation desks",
+        "whoPays": "The brokerage",
+        "min": 8000,
+        "max": 20000,
+        "unit": "one-time",
+        "pitchLine": "\"The brokerage that sends you relocating buyers explains the area in emailed PDFs. A relocation guide site with neighbourhood pages is the next build.\"",
+        "whyItWorks": "Brokers who refer moves trust the mover's judgement and want relocating buyers to choose them, not another agent."
+      },
+      {
+        "route": "Fine art and antique dealers",
+        "whoPays": "The gallery or dealer",
+        "min": 5000,
+        "max": 15000,
+        "unit": "one-time",
+        "pitchLine": "\"The gallery whose pieces your crews crate and store shows its collection in a dated site. Introduce me when you next deliver.\"",
+        "whyItWorks": "Dealers trust whoever handles their pieces safely, and they all need a better catalogue online."
+      },
+      {
+        "route": "Office furniture installers",
+        "whoPays": "The installer, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The installers who assemble workstations after your office moves sell by word of mouth. A capability site with project pages is quick for me.\"",
+        "whyItWorks": "Movers and installers share every office relocation, so referrals already pass between them."
+      },
+      {
+        "route": "Schools and universities with term-time moves",
+        "whoPays": "The school or university facilities office",
+        "min": 5000,
+        "max": 15000,
+        "unit": "one-time",
+        "pitchLine": "\"The university whose dorm and lab moves you handle books furniture moves and storage by email. A request page for departments would tidy that up.\"",
+        "whyItWorks": "Facilities offices trust a mover who handles their term-time crunch, and they buy from vendors they already use."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Move-in scheduling assistant for building managers",
+        "whoPays": "The building management company, monthly",
+        "min": 400,
+        "max": 1200,
+        "unit": "monthly",
+        "pitchLine": "\"Residents ask for a lift booking or move-in slot by message, and the assistant checks the building calendar, rules and paperwork before confirming.\"",
+        "whyItWorks": "Managers juggle move-ins across towers, and the mover client benefits from smoother access on moving day."
+      },
+      {
+        "route": "Delivery question assistant for furniture retailers",
+        "whoPays": "The furniture retailer, monthly",
+        "min": 300,
+        "max": 900,
+        "unit": "monthly",
+        "pitchLine": "\"Shoppers ask when their sofa arrives or whether it fits the stairwell, and get answers from the order and delivery schedule before calling the showroom.\"",
+        "whyItWorks": "Retailers lose staff time to delivery questions, and the mover gets fewer failed deliveries."
+      },
+      {
+        "route": "Relocation guide assistant for brokerages",
+        "whoPays": "The brokerage, monthly",
+        "min": 300,
+        "max": 900,
+        "unit": "monthly",
+        "pitchLine": "\"Relocating buyers ask about neighbourhoods, schools and commute times, and the brokerage's agents get warm leads with the questions already answered.\"",
+        "whyItWorks": "Brokerages compete for relocating buyers; the mover client is the first call when a sale closes."
+      },
+      {
+        "route": "Collection inventory assistant for galleries",
+        "whoPays": "The gallery or dealer, monthly",
+        "min": 200,
+        "max": 600,
+        "unit": "monthly",
+        "pitchLine": "\"Each crated piece is logged with photos, condition notes and storage location, and the gallery can ask where any piece is and when it moved.\"",
+        "whyItWorks": "Dealers need provenance and location records, and the mover's crating data starts it."
+      },
+      {
+        "route": "Workstation layout helper for office furniture installers",
+        "whoPays": "The installer",
+        "min": 2000,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"The installer uploads a floor plan and the move labels from the relocation, and gets a draft install sequence for each floor.\"",
+        "whyItWorks": "Movers and installers already pass floor plans back and forth; the tool shortens a handoff they both feel."
+      },
+      {
+        "route": "Departmental move request triage for universities",
+        "whoPays": "The university facilities office, monthly",
+        "min": 300,
+        "max": 900,
+        "unit": "monthly",
+        "pitchLine": "\"Department requests for furniture moves, storage and lab relocations get sorted by date and building, with a draft work order for the mover.\"",
+        "whyItWorks": "Facilities offices drown in move requests at term change, and the mover client gets cleaner orders."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Missed-call text-back with the moving estimate link",
+      "kind": "automation",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Anyone who calls a busy branch and hangs up gets a text within a minute with the moving estimate link and a survey calendar for that branch.\"",
+      "whenAndWhatItTakes": "Month 1. Needs branch numbers forwarded and the wording they approve."
+    },
+    {
+      "name": "Unbooked estimate follow-up sequence",
+      "kind": "automation",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"People who got a moving estimate but didn't book hear back on a set schedule with their date's availability, until they book or say no.\"",
+      "whenAndWhatItTakes": "Month 2. Needs estimate data from the site or their move management system and approved messages."
+    },
+    {
+      "name": "Moving estimate connected to the move management system",
+      "kind": "software",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 15000,
+      "monthlyMin": 150,
+      "monthlyMax": 500,
+      "pitchLine": "\"Every estimate and survey booked on the site lands in your move management system as a lead with rooms, dates and access notes, so estimators never retype.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the system's connection details, the pricing rules by branch and a test account."
+    },
+    {
+      "name": "Website assistant for moving and storage questions",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 400,
+      "monthlyMax": 1200,
+      "pitchLine": "\"It answers 'do you move pianos', 'what fits in a small unit' and 'how long to another city' from your own policies, then books a survey or reserves storage.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the services list, storage sizes, lane transit times and approved wording. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Storage rental checkout with live availability",
+      "kind": "software",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 18000,
+      "monthlyMin": 200,
+      "monthlyMax": 700,
+      "pitchLine": "\"Renters pick a storage unit size, see the monthly rate, sign the agreement and pay online, with availability pulled from the facility's own system.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the storage system's data access, the rental agreement and facility rules."
+    },
+    {
+      "name": "Review reply drafts by branch",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 200,
+      "monthlyMax": 600,
+      "pitchLine": "\"When a family praises the movers who carried a piano up three flights, a thank-you mentioning that move is drafted in your voice for whoever manages that location.\"",
+      "whenAndWhatItTakes": "Month 2, alongside review requests. Needs listing access and a tone guide. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Customer move portal",
+      "kind": "software",
+      "oneTimeMin": 12000,
+      "oneTimeMax": 35000,
+      "monthlyMin": 400,
+      "monthlyMax": 1200,
+      "pitchLine": "\"Moving customers log in to see their estimate, inventory, documents, payments and delivery window, and message the coordinator without calling.\"",
+      "whenAndWhatItTakes": "Month 4 to month 6. Needs move management system access, document templates and the payment setup."
+    },
+    {
+      "name": "Video survey inventory builder",
+      "kind": "ai",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 15000,
+      "monthlyMin": 500,
+      "monthlyMax": 1500,
+      "pitchLine": "\"The customer films each room on their phone, and the estimator gets a draft furniture and box inventory with volume to check before pricing the move.\"",
+      "whenAndWhatItTakes": "Month 4. Needs past surveys with their final inventories and the estimator's review step. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Crew and truck dispatch board",
+      "kind": "software",
+      "oneTimeMin": 8000,
+      "oneTimeMax": 22000,
+      "monthlyMin": 200,
+      "monthlyMax": 800,
+      "pitchLine": "\"Every booked move across branches on one board, with crews, trucks and storage pickups assigned, so dispatch sees conflicts before moving day.\"",
+      "whenAndWhatItTakes": "Month 5. Needs crew rosters, fleet list and booked moves from their system."
+    },
+    {
+      "name": "After-hours phone assistant for movers",
+      "kind": "ai",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 14000,
+      "monthlyMin": 600,
+      "monthlyMax": 2000,
+      "pitchLine": "\"Evening callers planning a move reach an assistant that collects rooms, dates and addresses, finds their branch and books the video survey.\"",
+      "whenAndWhatItTakes": "Month 5. Needs estimator calendars, branch coverage and approved wording. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Storage payment reminders and autopay",
+      "kind": "automation",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"Storage renters get due-date reminders and an easy autopay switch, and late accounts get polite notices before the facility has to call.\"",
+      "whenAndWhatItTakes": "Month 4, after the storage checkout. Needs billing data and the facility's late policy."
+    },
+    {
+      "name": "Corporate relocation client portal",
+      "kind": "software",
+      "oneTimeMin": 12000,
+      "oneTimeMax": 30000,
+      "monthlyMin": 400,
+      "monthlyMax": 1200,
+      "pitchLine": "\"HR teams book employee moves, approve estimates against their allowance and see every relocation's status on one screen.\"",
+      "whenAndWhatItTakes": "Month 6, once they hold a few corporate accounts. Needs allowance rules, approval steps and the invoice format each client wants."
+    },
+    {
+      "name": "Mover and driver applicant screener",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 300,
+      "monthlyMax": 900,
+      "pitchLine": "\"Applicants answer questions about lifting, stairs, weekends and driver licence class, and each branch manager gets a ranked list of movers to call.\"",
+      "whenAndWhatItTakes": "Before peak hiring. Needs must-haves, pay bands and branch needs. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Damage claim intake and tracking",
+      "kind": "software",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 14000,
+      "monthlyMin": 200,
+      "monthlyMax": 600,
+      "pitchLine": "\"Customers file a moving damage claim online with photos and the inventory line, and the claims team tracks each one to settlement.\"",
+      "whenAndWhatItTakes": "Month 6. Needs the valuation terms, claim steps and who signs off settlements."
+    },
+    {
+      "name": "Move-week reminder and prep sequence",
+      "kind": "automation",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"In the week before a move, customers get packing deadlines, parking and lift booking reminders and the crew arrival window, by text and email.\"",
+      "whenAndWhatItTakes": "Month 3. Needs booked move dates and the prep checklist the operations team approves."
+    },
+    {
+      "name": "Inbound message triage across branches",
+      "kind": "ai",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 400,
+      "monthlyMax": 1000,
+      "pitchLine": "\"Emails and texts get sorted into new moves, storage, claims and delivery questions, sent to the right branch with a draft reply for the coordinator.\"",
+      "whenAndWhatItTakes": "Month 6. Needs the shared inboxes and routing rules. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Branch moving performance dashboard",
+      "kind": "software",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 18000,
+      "monthlyMin": 200,
+      "monthlyMax": 800,
+      "pitchLine": "\"Estimates, booked moves, storage occupancy, claims and reviews per branch on one screen, so leadership sees which branches and lanes earn.\"",
+      "whenAndWhatItTakes": "Month 7. Needs a few months of site data and exports from the move management and storage systems."
+    },
+    {
+      "name": "International move paperwork checklist assistant",
+      "kind": "ai",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 300,
+      "monthlyMax": 900,
+      "pitchLine": "\"Customers moving abroad answer a few questions and get the document checklist your team uses for that destination, flagged for a coordinator to confirm.\"",
+      "whenAndWhatItTakes": "Month 7. Needs the team's own destination checklists and a coordinator sign-off step. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Estimator survey tablet app",
+      "kind": "software",
+      "oneTimeMin": 10000,
+      "oneTimeMax": 25000,
+      "monthlyMin": 300,
+      "monthlyMax": 900,
+      "pitchLine": "\"Estimators walk a home or office with a tablet, tap rooms and items, and leave with a priced moving proposal the customer can sign on the spot.\"",
+      "whenAndWhatItTakes": "Month 8. Needs pricing rules, item volume tables and the proposal template."
+    },
+    {
+      "name": "Unit size advisor in the storage checkout",
+      "kind": "ai",
+      "oneTimeMin": 2500,
+      "oneTimeMax": 6000,
+      "monthlyMin": 200,
+      "monthlyMax": 600,
+      "pitchLine": "\"Renters list what they're storing, and the checkout suggests a storage unit size with a short reason, so fewer people book too small and move units later.\"",
+      "whenAndWhatItTakes": "Month 8, after the storage checkout. Needs unit sizes and past rental notes. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the estimate and storage checkout for regional movers",
+      "whoPays": "Moving companies, monthly per branch",
+      "min": 300,
+      "max": 1200,
+      "unit": "monthly",
+      "pitchLine": "\"I built an estimate and storage checkout for one multi-branch mover. Every regional moving company loses shoppers who won't wait for a callback.\"",
+      "whyItWorks": "The first client paid for the integration, which every mover on the same management system shares."
+    },
+    {
+      "route": "Van line agent networks",
+      "whoPays": "The van line or its agents, per agent site",
+      "min": 3000,
+      "max": 8000,
+      "unit": "one-time",
+      "pitchLine": "\"Every agent in your network needs branch pages, an estimate and storage booking under the network brand. Build it once, copy it per agent.\"",
+      "whyItWorks": "Agent networks want consistent local sites without building each one; the multi-branch system is the same shape."
+    },
+    {
+      "route": "Movers' association member toolkit",
+      "whoPays": "The association",
+      "min": 5000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Members get a moving site template with estimate rules, registration slots and plain consumer rights wording reviewed by the association.\"",
+      "whyItWorks": "Associations fight rogue movers and want members to look trustworthy; one agreement reaches many moving companies."
+    },
+    {
+      "route": "Self-storage operators' online rental system",
+      "whoPays": "The self-storage operator, per facility",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"The storage checkout built for a mover works for any facility: sizes, live availability, agreement and payment, copied per site.\"",
+      "whyItWorks": "Independent storage owners need online rentals and rarely have a mover's budget; per-facility pricing fits them."
+    },
+    {
+      "route": "Corporate relocation management companies",
+      "whoPays": "The relocation management company, annually",
+      "min": 15000,
+      "max": 50000,
+      "unit": "per-year",
+      "pitchLine": "\"Your moving suppliers each report differently. One portal where every mover posts surveys, estimates and delivery status for your transferees.\"",
+      "whyItWorks": "Relocation firms juggle many movers; the portal built for one client's corporate accounts already does this."
+    },
+    {
+      "route": "Property developers' handover move-in program",
+      "whoPays": "The developer, per project",
+      "min": 8000,
+      "max": 25000,
+      "unit": "one-time",
+      "pitchLine": "\"Buyers in a new tower book their handover move-in slot, lift and loading bay from one page, with a preferred mover offering packages.\"",
+      "whyItWorks": "Developers handing over many units at once need move-ins organised; the mover client becomes the default partner."
+    },
+    {
+      "route": "Furniture retail chains' delivery networks",
+      "whoPays": "The furniture chain, annually",
+      "min": 15000,
+      "max": 50000,
+      "unit": "per-year",
+      "pitchLine": "\"Delivery slots, crew assignment and customer updates across every store, built on the dispatch board I made for a moving company.\"",
+      "whyItWorks": "Chains run delivery with crews and trucks like movers do, so the software transfers directly."
+    },
+    {
+      "route": "White-label for agencies serving movers",
+      "whoPays": "The agency, per site",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency runs ads for moving companies and sends traffic to a phone number. License my estimate calculator and storage checkout.\"",
+      "whyItWorks": "Agencies keep the client; you sell the piece they can't build."
+    },
+    {
+      "route": "International freight forwarders",
+      "whoPays": "The forwarder",
+      "min": 10000,
+      "max": 30000,
+      "unit": "one-time",
+      "pitchLine": "\"The forwarder that ships your international moving containers quotes by email. A shipment request and tracking page would bring them more household moves.\"",
+      "whyItWorks": "Forwarders already work with movers on every overseas load, and household shipments are a market they want."
+    },
+    {
+      "route": "Employer HR teams with frequent transfers",
+      "whoPays": "The employer, annually",
+      "min": 8000,
+      "max": 25000,
+      "unit": "per-year",
+      "pitchLine": "\"Transferring employees book surveys and moves within their allowance from your own portal, and HR sees every relocation's cost and status.\"",
+      "whyItWorks": "Employers who move staff often want control and visibility; the corporate portal is already built."
+    },
+    {
+      "route": "The same moving system for the next region's mover",
+      "whoPays": "A non-competing moving company in another region",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I work with one multi-branch mover per region, and {City} is taken. The next region is open, and the estimate and storage tools are ready.\"",
+      "whyItWorks": "Non-competing geography lets you reuse the calculator, the checkout and the case study."
+    },
+    {
+      "route": "Rescue unfinished moving portal builds",
+      "whoPays": "The mover with a stalled project",
+      "min": 5000,
+      "max": 20000,
+      "unit": "one-time",
+      "pitchLine": "\"Paid for a moving customer portal or storage checkout that never went live? I've shipped that exact build for a mover with several branches.\"",
+      "whyItWorks": "Stranded buyers already decided to spend; they want someone who has finished it."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Multi-branch moving site plus care plan, one contract",
+      "min": 10000,
+      "max": 22000,
+      "unit": "one-time",
+      "trigger": "They approve the site scope after the walkthrough with operations.",
+      "line": "\"The moving site and the care plan are one contract, so a new branch, lane or storage price is one message to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Post-move review requests by crew",
+      "min": 300,
+      "max": 900,
+      "unit": "monthly",
+      "trigger": "A month live, and branch managers notice which crews get named in reviews.",
+      "line": "\"Your best moving crews already get named. Asking after every delivery puts that on the estimate page for every branch.\""
+    },
+    {
+      "rung": 3,
+      "day": 60,
+      "offer": "Moving estimate connected to the move management system",
+      "min": 5000,
+      "max": 15000,
+      "unit": "one-time",
+      "trigger": "Estimators mention retyping site estimates into their system.",
+      "line": "\"Your estimators retype every site estimate. Let the moving estimate land in the system with rooms and dates already filled.\""
+    },
+    {
+      "rung": 4,
+      "day": 90,
+      "offer": "Storage rental checkout with live availability",
+      "min": 6000,
+      "max": 18000,
+      "unit": "one-time",
+      "trigger": "Storage enquiries from the site arrive at night and wait until morning.",
+      "line": "\"Storage renters are asking at night. Let them pick a unit, sign and pay before they find another facility.\""
+    },
+    {
+      "rung": 5,
+      "day": 150,
+      "offer": "Video survey inventory builder",
+      "min": 6000,
+      "max": 15000,
+      "unit": "one-time",
+      "trigger": "Video survey bookings pass a few a week and estimators spend evenings writing inventories.",
+      "line": "\"Your estimators type inventories from video every evening. Let them check a drafted moving inventory instead.\""
+    },
+    {
+      "rung": 6,
+      "day": 210,
+      "offer": "Customer move portal",
+      "min": 12000,
+      "max": 35000,
+      "unit": "one-time",
+      "trigger": "Long-distance customers keep calling to ask about documents, payments and delivery windows.",
+      "line": "\"Long-distance customers call every day asking where their things are. A move portal answers that before they pick up the phone.\""
+    },
+    {
+      "rung": 7,
+      "day": 300,
+      "offer": "Corporate relocation client portal",
+      "min": 12000,
+      "max": 30000,
+      "unit": "one-time",
+      "trigger": "They win a second corporate account that books employee moves regularly.",
+      "line": "\"Two employers now send you their transfers. A relocation portal makes you the mover their HR team won't switch from.\""
+    },
+    {
+      "rung": 8,
+      "day": 365,
+      "offer": "Branch moving performance dashboard",
+      "min": 6000,
+      "max": 18000,
+      "unit": "one-time",
+      "trigger": "A year of estimate, storage and move data, and leadership is weighing a new branch.",
+      "line": "\"A year of moving and storage data by branch shows where the next branch or storage facility should open.\""
+    }
+  ]
+}

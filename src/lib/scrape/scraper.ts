@@ -10,9 +10,14 @@ import { DailyBudget, localDay } from "./limits";
 import { parseCards, parseListing, type Card } from "./parseListing";
 import { cleanMapsUrl, placeKey } from "./placeKey";
 import { BLOCK, SEL } from "./selectors";
+import { COUNTRIES, countryOf, isRegion, placeLabel } from "../market/regions";
 import { emptyCounters, progressLine, type Counters, type RunEvent, type StopCode } from "./types";
 
-export const searchQuery = (category: string, city: string, st: string) => `${category} in ${city}, ${st}`;
+/** "Fencing & gates in Austin, TX"; outside the US the country is named too: "Dental practices in Business Bay, Dubai, UAE". */
+export function searchQuery(category: string, city: string, st: string): string {
+  if (!isRegion(st) || countryOf(st) === "US") return `${category} in ${city}, ${st}`;
+  return `${category} in ${placeLabel(st, city)}, ${COUNTRIES[countryOf(st)].short}`;
+}
 
 /** A pause between listings, 2–5 s by default. `rnd` is injectable for tests. */
 export const randomDelayMs = (min = 2000, max = 5000, rnd: () => number = Math.random) => Math.round(min + rnd() * (max - min));

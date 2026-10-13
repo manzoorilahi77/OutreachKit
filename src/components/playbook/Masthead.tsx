@@ -1,11 +1,11 @@
-import { STATES } from "@/data";
+import { REGIONS } from "@/lib/market/regions";
 import { MASTHEAD } from "@/content/masthead";
-import { CATS } from "@/lib/kit/categories";
+import { ALL_CATS } from "@/lib/kit/categories";
 import { InlineView } from "./InlineView";
 
 const counts = {
-  categories: String(CATS.length),
-  cities: String(Object.values(STATES).reduce((a, s) => a + s[1].split("|").length, 0)),
+  categories: String(ALL_CATS.length),
+  cities: String(Object.values(REGIONS).reduce((a, s) => a + s[1].split("|").length, 0)),
 };
 
 // Navy field. The short Electric Blue rule is this screen's one focal moment.

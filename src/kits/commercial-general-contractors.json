@@ -1,0 +1,856 @@
+{
+  "schemaVersion": 1,
+  "category": "Commercial general contractors",
+  "slug": "commercial-general-contractors",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · expansion batch (healthcare + mid-size)",
+    "generatedAt": "2026-10-13",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Mid-size rfq kit for general contractors chasing owners, developers and architects, and managing subcontractor bid lists. Leaned on sector portfolios, preconstruction and prequalification. Least sure about the owner project portal and preconstruction estimator ranges, which depend on their cost history and project systems."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Sector portfolio with project facts",
+      "contains": "Project pages for healthcare, education, industrial, office fit-out, retail, hospitality and multifamily, each with size, delivery method, schedule, value band as supplied and the architect named with permission",
+      "why": "Owners and architects shortlist a construction company that has built their kind of building, and they want facts, not a photo gallery."
+    },
+    {
+      "section": "Preconstruction and delivery methods",
+      "contains": "Budgeting, constructability review, value engineering, scheduling, and how design-build, construction management and lump-sum delivery differ, with when to bring the contractor in",
+      "why": "Developers pick a general contractor early when preconstruction is explained. That's where the negotiated work comes from."
+    },
+    {
+      "section": "Trade subcontractor registration and plan room",
+      "contains": "Trade subs register their trades, regions and size, see open bid packages, and download plans and specs after sign-in, with the GC's bid instructions",
+      "why": "Good subcontractors are scarce. A GC that makes bidding easy gets more and better trade numbers, which wins the job."
+    },
+    {
+      "section": "Owner prequalification pack",
+      "contains": "Safety programme, [bonding capacity] and insurance as placeholders, licences held, financial reference request, project references and a one-step pack request",
+      "why": "Institutional owners and developers prequalify before inviting. A ready pack keeps the contractor on their invitation lists."
+    },
+    {
+      "section": "Project leadership profiles",
+      "contains": "Principals, project managers and superintendents, each with the projects they've run, sectors and how to reach the right one",
+      "why": "Owners hire the team, not the logo. Showing the superintendent who ran the last hospital job wins the next one."
+    },
+    {
+      "section": "Building in occupied spaces",
+      "contains": "How the firm phases work in operating hospitals, schools in session and open retail: site logistics, after-hours work, dust and noise control, infection-control procedures as the firm supplies them",
+      "why": "Renovation owners fear disruption most. A construction firm that explains how it protects occupants gets the renovation shortlist."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C30",
+      "siteType": "local-conversion",
+      "name": "Fit-Out Desk",
+      "heroLayout": "split-photo",
+      "mood": ["approachable", "quick", "clear"],
+      "bestFor": "Contractors focused on tenant fit-out and renovation who need enquiries from tenants, brokers and landlords",
+      "pairsWithTier": "starter",
+      "headlineSample": "Office and retail fit-out in {City}, on schedule",
+      "whyItFits": "Butter & Denim's geometric display type and friendly blue suit a fit-out contractor selling speed and clarity to tenants, not committees."
+    },
+    {
+      "id": "b",
+      "themeId": "C19",
+      "siteType": "portfolio-showcase",
+      "name": "Sector Book",
+      "heroLayout": "card-stack",
+      "mood": ["factual", "capable", "organised"],
+      "bestFor": "Mid-size commercial builders showing project facts by sector to owners, developers and architects",
+      "pairsWithTier": "standard",
+      "headlineSample": "Commercial construction across {City}, sector by sector",
+      "whyItFits": "The family combo. Its tabular, mono-labelled cards make each project's size, delivery method and schedule readable at a glance."
+    },
+    {
+      "id": "c",
+      "themeId": "C41",
+      "siteType": "premium-brand",
+      "name": "Landmark",
+      "heroLayout": "full-bleed-photo",
+      "mood": ["confident", "refined", "architectural"],
+      "bestFor": "Established general contractors selling signature buildings to developers, institutions and design-led owners",
+      "pairsWithTier": "premium",
+      "headlineSample": "Building {City}'s landmarks since our first project",
+      "whyItFits": "Gallery White was made for portfolios. Didone heads and white space let finished buildings carry the page the way architects present work."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "Gallery with no project facts",
+      "line": "Your portfolio is a gallery of finished buildings with no size, delivery method or schedule. An owner's rep shortlisting general contractors wants those facts beside each project.",
+      "hook": "Open their projects page and check whether any project lists size, sector, delivery method or schedule.",
+      "linkLine": "Projects with the facts owners compare: {demo-link}"
+    },
+    {
+      "angle": "Every sector in one gallery",
+      "line": "Hospitals, warehouses and office fit-outs all sit in one construction gallery on your site. A school board's facilities director wants to see the schools you built, and only those.",
+      "hook": "Count how many sectors share their portfolio page and whether there's a filter.",
+      "linkLine": "A portfolio by sector, one page each: {demo-link}"
+    },
+    {
+      "angle": "Subs can't find open bids",
+      "line": "I couldn't find anywhere for a subcontractor to register with {Business Name} or see open bid packages. More trade numbers on bid day usually means a sharper construction price.",
+      "hook": "Look for a subcontractor, vendor or bid opportunities page. If there's none, or only an email, the angle holds.",
+      "linkLine": "A subcontractor registration and plan room page: {demo-link}"
+    },
+    {
+      "angle": "Hiring supers with no careers page",
+      "line": "Saw you're hiring a superintendent and an assistant project manager, but the site has no careers page. Experienced supers check a contractor's project list before they take a call.",
+      "hook": "Find their job posts on job boards or social profiles, then confirm what the site says about careers.",
+      "linkLine": "A construction careers page with the project list behind it: {demo-link}"
+    },
+    {
+      "angle": "Safety absent from the site",
+      "line": "Your site doesn't say a word about the safety programme. Institutional owners score a general contractor's safety before they read the proposal.",
+      "hook": "Search the site for safety. Never state their record; only note that the programme isn't shown.",
+      "linkLine": "A safety programme page owners can read: {demo-link}"
+    },
+    {
+      "angle": "Prequalification by email only",
+      "line": "An owner who wants your prequalification documents has to email and wait. Developers building an invitation list usually move on to the construction firm whose pack is a click away.",
+      "hook": "Check whether a prequal or capability pack is downloadable, request-only or missing.",
+      "linkLine": "A one-step prequalification pack request: {demo-link}"
+    },
+    {
+      "angle": "Heavy gallery, slow phone",
+      "line": "Your project photos are beautiful but large, and the site crawled on my phone. Developers often check a builder between meetings on a phone.",
+      "hook": "Load their portfolio over mobile data and note how long the first project takes.",
+      "linkLine": "The same portfolio, fast on a phone: {demo-link}"
+    },
+    {
+      "angle": "Preconstruction never explained",
+      "line": "Your site lists preconstruction as a service with no explanation. Developers who want a design-build partner early want to know how you budget and when to bring you in.",
+      "hook": "Find their services page and check what it says about preconstruction or delivery methods.",
+      "linkLine": "Preconstruction and delivery methods, explained: {demo-link}"
+    },
+    {
+      "angle": "Fit-outs posted, ground-up site",
+      "line": "Most of your recent posts are office and retail fit-outs, but the site talks about ground-up construction. Tenants and their brokers looking for a fit-out contractor wouldn't guess.",
+      "hook": "Scroll their recent posts and count fit-out projects. Name building types, not tenants.",
+      "linkLine": "Fit-out work on its own page: {demo-link}"
+    },
+    {
+      "angle": "Architect praise never shared",
+      "line": "An architect commented that your team kept the design intact through value engineering. That's what the next design team wants to read before recommending a general contractor.",
+      "hook": "Read comments on their posts and any public recommendations. Copy one phrase from an architect or owner.",
+      "linkLine": "Architect and owner comments beside the projects: {demo-link}"
+    },
+    {
+      "angle": "Award or topping-out not on site",
+      "line": "Congratulations on the topping-out you posted. The site still shows the same projects as before, so owners who check you this month won't see it.",
+      "hook": "Find a recent award, topping-out or completion post and check whether the site has the project.",
+      "linkLine": "That project on a construction project page: {demo-link}"
+    },
+    {
+      "angle": "Several offices, one contact page",
+      "line": "You build out of several offices, but the site has one contact page. An owner in your second region can't tell which construction team would run their project.",
+      "hook": "Compare offices on their listings and posts with the site's contact page.",
+      "linkLine": "A page per office with its project team: {demo-link}"
+    },
+    {
+      "angle": "School break renovation window",
+      "line": "School and campus owners plan renovations around the long break, and they shortlist general contractors months before. The firms with school projects on show get the invitations.",
+      "hook": "Use this a few months before the long school break in their region.",
+      "linkLine": "Education construction projects on their own page: {demo-link}"
+    },
+    {
+      "angle": "No faces behind the projects",
+      "line": "Your site shows the buildings but not the project managers and superintendents who built them. Owners hire the commercial construction team that will be on site.",
+      "hook": "Look for a team or leadership page. Note whether PMs and supers appear, or only principals.",
+      "linkLine": "Project leadership with the jobs they ran: {demo-link}"
+    },
+    {
+      "angle": "A specific recent project",
+      "line": "That {specific recent job} you posted is fine commercial construction. It deserves a project page with the facts an owner's rep can forward to their board.",
+      "hook": "Pick their newest project post and name it: building type, sector and what stands out.",
+      "linkLine": "That project with its facts on one page: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner} — that {specific recent job} you posted is a strong commercial project.\n\nI went through the {Business Name} site and couldn't find project facts by sector, a prequalification pack, or a place for subcontractors to register. I put together a sample with all three, with marked placeholders where your photos would go.\n\nWould it help if I sent it to you and whoever leads business development?",
+    "dm2": "{Owner} — following up in case my note got lost under bid day. Here's the sample for {Business Name}: {demo-link}\n\nIt has project pages by sector with size and delivery method, a preconstruction section, an owner prequalification pack and a subcontractor plan room. If it isn't useful, tell me and I'll stop.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites and bid tools for general contractors around {City}. I sent you a note a couple of days ago, did it reach you?\"\n\nIF NO:\n\"No problem. Short version: I built a sample site for {Business Name} with project pages by sector, a prequalification pack for owners and a subcontractor plan room, with marked placeholders where your photos would go. Should it go to you or to business development?\"\n\nIF YES:\n\"What did you and the team think?\"\n → let them talk, note who else decides: principals, BD, preconstruction\n\"The build runs {Build Range}, then {Care Range} a month for hosting, changes and adding projects. For a contractor your size I'd quote about {Build Price}.\"\n\"Could we take thirty minutes with you and your BD lead this week?\"\n\nCLOSE:\n\"I'll send a scope and a deposit invoice. We start with the sector pages, since that's what owners read.\"",
+    "objections": [
+      {
+        "objection": "Our work is relationships and negotiated deals.",
+        "handler": "\"Then the site is what your relationships forward. When a developer you know sends your name to their board, they open the sector page first.\""
+      },
+      {
+        "objection": "We can't name clients or show values.",
+        "handler": "\"Most construction project pages describe the building, size, delivery method and schedule without naming the owner or the price. Anything named needs written clearance.\""
+      },
+      {
+        "objection": "We use a plan room service already.",
+        "handler": "\"Keep it. The site gives subs a front door with your instructions and registration, then links to the plan room you already use.\""
+      },
+      {
+        "objection": "Marketing reports to the principals.",
+        "handler": "\"Understood. I'll send a one-page summary for the principals, and walk them through the demo together whenever suits.\""
+      },
+      {
+        "objection": "We just redid the site a few years ago.",
+        "handler": "\"Then keep the brand. I rebuild the parts owners and subs use, sector projects, prequal and the plan room, and leave the rest alone.\""
+      },
+      {
+        "objection": "We have more work than we can staff.",
+        "handler": "\"Then the site helps you choose. Sector pages bring the work you want, and a careers page backed by the project list helps you hire the supers to build it.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}, because it's sector project pages, preconstruction, a prequal pack and a subcontractor plan room. That's a fraction of one general conditions line.\""
+      }
+    ],
+    "email": {
+      "subject": "Sector projects and prequal for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites and bid tools for commercial general contractors around {City}. On the {Business Name} site I couldn't find project facts by sector, a prequalification pack an owner can request, or a place for subcontractors to register and see open bid packages.\n\nI built a sample before asking for your time: project pages by sector with size, delivery method and schedule, a preconstruction section, an owner prequalification pack, a subcontractor plan room and project leadership profiles, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf it's useful, I move it to your domain and finish it for {Build Range}, plus {Care Range} a month for hosting, changes and new projects. If not, it comes down at the end of the month.\n\nWould thirty minutes with you and your BD lead work this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build websites for general contractors in {City}, and I made a sample for {Business Name} with project pages by sector and a prequalification pack for owners. I'll email the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner} — I'm taking the {Business Name} construction demo down on Friday.\n\nIf you or your BD lead want it up longer, one word is enough.",
+    "nurture": "Hi {Owner} — owners around {City} are setting next year's capital projects and invitation lists about now. Thought of you.\n\nThe construction site with sector projects and the prequal pack is still here, same price. {demo-link} if you'd like another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to a small fraction of one project's general conditions, not to a marketing budget.",
+      "Price sector pages by project count, because each project needs facts and owner clearance.",
+      "Quote the prequalification pack and subcontractor registration early; owners and subs use them first.",
+      "Anything reading from their project or accounting systems is a separate software project.",
+      "Expect principals, business development and preconstruction to sign off; allow two review rounds.",
+      "Never publish a bonding limit, safety rate, licence or project value the contractor hasn't supplied in writing."
+    ],
+    "lineItems": [
+      {
+        "item": "Sector portfolio page (each)",
+        "min": 600,
+        "max": 1500,
+        "unit": "per-page",
+        "description": "Max with several projects, each carrying size, delivery method, schedule, team and cleared photos.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Owner prequalification pack request",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "description": "Max with gated documents, version dates, a financial reference request step and notification to business development.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Subcontractor registration and bid package page",
+        "min": 2500,
+        "max": 7000,
+        "unit": "one-time",
+        "description": "Max with trade and region registration, sign-in to open packages, bid instructions and links to the plan room.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Preconstruction and delivery method section",
+        "min": 1000,
+        "max": 2500,
+        "unit": "one-time",
+        "description": "Max with a page per delivery method, a budget enquiry form and a cleared preconstruction case example.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Project leadership profiles",
+        "min": 800,
+        "max": 2500,
+        "unit": "one-time",
+        "description": "Max with many PMs and superintendents, each linked to the projects they ran and filtered by sector.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Office or region page (each)",
+        "min": 500,
+        "max": 1200,
+        "unit": "per-page",
+        "description": "Max with the region's team, projects, licences held there and its own enquiry routing.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Construction careers section",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "description": "Max with roles by office, a field and office track, a short application and a feed of open jobs.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Construction progress photo and drone days",
+      "min": 1500,
+      "max": 4500,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Monthly site visits for progress photos and aerials give the owner updates and build the construction project page as it goes, with the owner's permission.\"",
+      "when": "From the start of each notable project, cleared with the owner."
+    },
+    {
+      "name": "Owner and architect outreach by sector",
+      "min": 1500,
+      "max": 3500,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Each month, a short note to developers, facility directors and architects in one sector, with a project like theirs and the prequal pack link.\"",
+      "when": "Month 3, once sector pages are live."
+    },
+    {
+      "name": "Proposal and interview presentation design",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A proposal template and shortlist interview deck that match the site, so the general contractor looks the same from website to final interview.\"",
+      "when": "Before their next big shortlist interview."
+    },
+    {
+      "name": "Award submission writing",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Construction award entries written from the project page facts and photos, cleared by the owner and architect before they go in.\"",
+      "when": "Two months before the regional builders' awards deadline."
+    },
+    {
+      "name": "Jobsite signage and hoarding graphics",
+      "min": 1500,
+      "max": 6000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Site signs and hoardings that carry the project, the team and the careers address, seen by everyone passing a busy construction site.\"",
+      "when": "At mobilisation on each visible project."
+    },
+    {
+      "name": "Google profiles for each office",
+      "min": 300,
+      "max": 700,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Each office's profile kept current with completed projects and hiring posts, so 'commercial construction company near me' finds the right team.\"",
+      "when": "Day 30, after office pages go live."
+    },
+    {
+      "name": "Project completion case studies",
+      "min": 800,
+      "max": 2000,
+      "unit": "per-page",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Plain write-ups of how the team phased an occupied hospital wing or recovered a fit-out schedule, cleared by the owner.\"",
+      "when": "Month 4, after a project with a story the owner will clear."
+    },
+    {
+      "name": "Owner and architect reference collection",
+      "min": 150,
+      "max": 400,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"After each building handover, the owner and architect get a short request for a quote about the general contractor, approved before it goes up.\"",
+      "when": "Day 60, timed to handovers."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Subcontractors on their bid list",
+        "whoPays": "The trade subcontractor, per site",
+        "min": 4000,
+        "max": 12000,
+        "unit": "one-time",
+        "pitchLine": "\"The trade subs who bid your construction packages have sites that don't help them get invited elsewhere. A GC recommending its web person is a favour they remember.\"",
+        "whyItWorks": "Subs want to stay on the GC's list and trust its recommendations."
+      },
+      {
+        "route": "Architecture and interior design firms",
+        "whoPays": "The design firm",
+        "min": 8000,
+        "max": 25000,
+        "unit": "one-time",
+        "pitchLine": "\"The architects you build for need sector portfolios too. A general contractor's introduction after a good project carries weight.\"",
+        "whyItWorks": "Architects and GCs share owners and recommend vendors to each other."
+      },
+      {
+        "route": "Commercial real estate brokers",
+        "whoPays": "The brokerage",
+        "min": 6000,
+        "max": 18000,
+        "unit": "one-time",
+        "pitchLine": "\"The tenant reps who send you fit-out work need listing and tenant guide pages. Your introduction gets me to their marketing lead.\"",
+        "whyItWorks": "Brokers value the fit-out contractor that makes their tenants happy."
+      },
+      {
+        "route": "Owner's representative firms",
+        "whoPays": "The project management firm",
+        "min": 6000,
+        "max": 16000,
+        "unit": "one-time",
+        "pitchLine": "\"The owner's reps who run your bigger construction jobs sell to the same institutions and have thin sites. A GC's referral opens the door.\"",
+        "whyItWorks": "Owner's reps and GCs work side by side and trade introductions."
+      },
+      {
+        "route": "Concrete, steel and material suppliers",
+        "whoPays": "The supplier",
+        "min": 5000,
+        "max": 15000,
+        "unit": "one-time",
+        "pitchLine": "\"The ready-mix and steel suppliers on your jobs sell to every builder in the region with a brochure site. Your purchasing manager's introduction helps.\"",
+        "whyItWorks": "Suppliers want to keep a big construction account and trust its vendors."
+      },
+      {
+        "route": "Facility management firms taking over at handover",
+        "whoPays": "The facility management firm",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The facility firm that takes over your finished buildings needs a service request page for occupants. Your handover introduction starts it.\"",
+        "whyItWorks": "Facility firms meet the GC at every handover and value a good word."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Estimating assistant for subcontractors",
+        "whoPays": "The trade subcontractor, monthly",
+        "min": 200,
+        "max": 600,
+        "unit": "monthly",
+        "pitchLine": "\"Subs drop in the GC's bid package, and the assistant lists their trade scope and exclusions to price, so more construction numbers arrive on bid day.\"",
+        "whyItWorks": "Subs bid more of the GC's packages, which sharpens the client's prices."
+      },
+      {
+        "route": "Specification drafting assistant for architects",
+        "whoPays": "The architecture firm, monthly",
+        "min": 400,
+        "max": 1200,
+        "unit": "monthly",
+        "pitchLine": "\"It drafts spec sections from the architect's past projects and notes for their specifier to review, so construction documents come out cleaner.\"",
+        "whyItWorks": "Architects save drafting time, and the GC gets clearer documents to build from."
+      },
+      {
+        "route": "Fit-out budget estimator for brokers",
+        "whoPays": "The brokerage, annually",
+        "min": 5000,
+        "max": 15000,
+        "unit": "per-year",
+        "pitchLine": "\"Tenant reps enter space size and finish level and get a rough fit-out budget range from the contractor's own past projects, with a GC enquiry button.\"",
+        "whyItWorks": "Brokers answer tenants' first question fast, and the enquiries go to the client."
+      },
+      {
+        "route": "Report summariser for owner's reps",
+        "whoPays": "The project management firm, monthly",
+        "min": 300,
+        "max": 900,
+        "unit": "monthly",
+        "pitchLine": "\"It turns the GC's monthly construction reports into a one-page summary for the owner's board, for the rep to edit.\"",
+        "whyItWorks": "Owner's reps rewrite reports every month; this saves them the hours."
+      },
+      {
+        "route": "Quote desk assistant for material suppliers",
+        "whoPays": "The supplier, monthly",
+        "min": 400,
+        "max": 1200,
+        "unit": "monthly",
+        "pitchLine": "\"Builders email material schedules, and the assistant drafts the supplier's quote with lead times for the sales desk to check.\"",
+        "whyItWorks": "Faster supplier quotes keep the GC's construction schedule on track."
+      },
+      {
+        "route": "Handover manual reader for facility firms",
+        "whoPays": "The facility management firm, monthly",
+        "min": 300,
+        "max": 900,
+        "unit": "monthly",
+        "pitchLine": "\"Technicians ask about a system in the new building and get the answer from the contractor's handover manuals.\"",
+        "whyItWorks": "Facility firms inherit thick manuals nobody reads; this makes them useful."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Owner enquiry routing to preconstruction",
+      "kind": "automation",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Every owner or developer enquiry gets an instant reply and lands with the right preconstruction lead by sector and region.\"",
+      "whenAndWhatItTakes": "Day 30, once the enquiry forms are live. Needs preconstruction leads and their sectors."
+    },
+    {
+      "name": "Subcontractor bid invitation sender",
+      "kind": "automation",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"Registered subs get invitations to construction bid packages that match their trade and region, with reminders before bid day.\"",
+      "whenAndWhatItTakes": "Month 2, once subcontractor registration is live. Needs bid packages and dates."
+    },
+    {
+      "name": "Subcontractor prequalification portal",
+      "kind": "software",
+      "oneTimeMin": 8000,
+      "oneTimeMax": 22000,
+      "monthlyMin": 300,
+      "monthlyMax": 900,
+      "pitchLine": "\"Trade partners upload safety, insurance, licences and references once, and estimators see which subs are approved before they invite.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their current prequal form, approval rules and who signs off."
+    },
+    {
+      "name": "Bid package scope splitter",
+      "kind": "ai",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 18000,
+      "monthlyMin": 500,
+      "monthlyMax": 1500,
+      "pitchLine": "\"It reads the drawings and specs and drafts trade bid packages with scope, inclusions and exclusions for the construction estimator to finish.\"",
+      "whenAndWhatItTakes": "Month 4. Needs past bid packages and the documents they came from. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Sub proposal comparison assistant",
+      "kind": "ai",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 14000,
+      "monthlyMin": 400,
+      "monthlyMax": 1200,
+      "pitchLine": "\"Trade proposals arrive in every format; it lines them up against the scope and flags missing items so the estimator levels bids faster.\"",
+      "whenAndWhatItTakes": "Month 4. Needs a few past bid days with the proposals and the leveling sheets. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Bid leveling sheet",
+      "kind": "software",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 12000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Sub numbers, scope gaps and plugs side by side for every trade on bid day, saved with the construction bid for later.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their current leveling spreadsheet and an estimator to test."
+    },
+    {
+      "name": "Qualifications and RFP response writer",
+      "kind": "ai",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 300,
+      "monthlyMax": 800,
+      "pitchLine": "\"It drafts responses to owner RFPs from the firm's own project pages, team profiles and past proposals, for business development to edit.\"",
+      "whenAndWhatItTakes": "Month 4, once sector pages and profiles exist. Needs past winning proposals. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Owner project portal",
+      "kind": "software",
+      "oneTimeMin": 15000,
+      "oneTimeMax": 45000,
+      "monthlyMin": 600,
+      "monthlyMax": 2000,
+      "pitchLine": "\"Owners log in to see the construction schedule, progress photos, budget status and decisions they owe, for every project with the GC.\"",
+      "whenAndWhatItTakes": "Month 6. Needs where schedules, photos and budgets live today and a project to pilot."
+    },
+    {
+      "name": "Superintendent daily report from voice",
+      "kind": "ai",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 300,
+      "monthlyMax": 800,
+      "pitchLine": "\"The super records a few minutes at the end of the day, and a daily report with trades on site, work done, weather and delays lands in the project file.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their daily report format and a superintendent to try it. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "RFI and submittal log",
+      "kind": "software",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 16000,
+      "monthlyMin": 250,
+      "monthlyMax": 700,
+      "pitchLine": "\"Every RFI and submittal on the construction project with who owes the answer, how long it's been out and what it holds up.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their current logs and the architects' turnaround expectations."
+    },
+    {
+      "name": "Weekly owner progress report sender",
+      "kind": "automation",
+      "oneTimeMin": 2500,
+      "oneTimeMax": 6000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"Each Friday, owners get a short progress note with photos and the coming week's construction work, assembled from the daily reports.\"",
+      "whenAndWhatItTakes": "Month 5, after the daily reports. Needs owner contacts and the PM's approval step."
+    },
+    {
+      "name": "Punch list app with photos",
+      "kind": "software",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 14000,
+      "monthlyMin": 200,
+      "monthlyMax": 600,
+      "pitchLine": "\"Walk the building, tap the item, take the photo, assign the trade, and the owner sees the punch list close out before handover.\"",
+      "whenAndWhatItTakes": "Month 6. Needs a project nearing completion and the trades' contacts."
+    },
+    {
+      "name": "Meeting minutes drafter",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 250,
+      "monthlyMax": 600,
+      "pitchLine": "\"Owner-architect-contractor meetings become draft minutes with decisions and action owners for the construction PM to approve and send.\"",
+      "whenAndWhatItTakes": "Month 5. Needs a few past minutes and permission to record meetings. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Subcontractor insurance certificate chaser",
+      "kind": "automation",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Sub insurance certificates are tracked against expiry, and the trade gets reminders before the GC has to stop them coming on site.\"",
+      "whenAndWhatItTakes": "Month 4, with the prequal portal. Needs current certificates and expiry dates."
+    },
+    {
+      "name": "Preconstruction budget estimator",
+      "kind": "software",
+      "oneTimeMin": 10000,
+      "oneTimeMax": 30000,
+      "monthlyMin": 400,
+      "monthlyMax": 1200,
+      "pitchLine": "\"Early budgets by building type, size and finish level from the contractor's own past project costs, for preconstruction to adjust.\"",
+      "whenAndWhatItTakes": "Month 8. Needs cost history from a set of finished projects, organised by building type."
+    },
+    {
+      "name": "Lessons-learned search across projects",
+      "kind": "ai",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 15000,
+      "monthlyMin": 500,
+      "monthlyMax": 1200,
+      "pitchLine": "\"A PM asks what went wrong on the last lab building and gets the firm's own close-out notes, RFIs and change orders on that construction type.\"",
+      "whenAndWhatItTakes": "Month 9. Needs close-out reports and project files in one place. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Project pipeline and backlog dashboard",
+      "kind": "software",
+      "oneTimeMin": 8000,
+      "oneTimeMax": 24000,
+      "monthlyMin": 300,
+      "monthlyMax": 900,
+      "pitchLine": "\"Pursuits, bids out, awards and backlog by sector and office on one screen, so the principals see next year's construction work taking shape.\"",
+      "whenAndWhatItTakes": "Month 7. Needs their pursuit list, bid log and current backlog."
+    },
+    {
+      "name": "Change event narrative drafter",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 250,
+      "monthlyMax": 600,
+      "pitchLine": "\"Site notes, RFIs and photos about a change become a draft change order narrative for the construction PM to price and send.\"",
+      "whenAndWhatItTakes": "Month 6. Needs past change orders and the documents behind them. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Field staff certification matrix",
+      "kind": "software",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"See which superintendents and foremen hold the safety and site certifications each construction project requires, and who's due to renew.\"",
+      "whenAndWhatItTakes": "Month 6. Needs the field staff list and their certifications."
+    },
+    {
+      "name": "Public tender and invitation watcher",
+      "kind": "ai",
+      "oneTimeMin": 2500,
+      "oneTimeMax": 6000,
+      "monthlyMin": 300,
+      "monthlyMax": 700,
+      "pitchLine": "\"It reads public tenders and owner invitations every week and shortlists the construction projects that fit the contractor's sectors, size and region.\"",
+      "whenAndWhatItTakes": "Month 5. Needs the portals they watch and the work they want. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the subcontractor prequal portal for GCs",
+      "whoPays": "General contractors, monthly",
+      "min": 299,
+      "max": 999,
+      "unit": "monthly",
+      "pitchLine": "\"I built a subcontractor prequal portal for one general contractor. Every mid-size GC chases the same insurance certificates by email.\"",
+      "whyItWorks": "The first GC paid for it; every GC has the same sub paperwork."
+    },
+    {
+      "route": "Builders' exchange plan room and member pages",
+      "whoPays": "The builders' exchange",
+      "min": 10000,
+      "max": 35000,
+      "unit": "one-time",
+      "pitchLine": "\"Give members a plan room front door and a company page each, so GCs post bid packages and subs find them in one construction directory.\"",
+      "whyItWorks": "Exchanges sell membership on access to bids and need modern member tools."
+    },
+    {
+      "route": "Contractor association member kit",
+      "whoPays": "The association",
+      "min": 5000,
+      "max": 20000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer member general contractors a sector portfolio and prequal pack template as a membership benefit.\"",
+      "whyItWorks": "Associations need renewal reasons, and one agreement reaches many builders."
+    },
+    {
+      "route": "Developer vendor and bidder portal",
+      "whoPays": "The developer",
+      "min": 15000,
+      "max": 45000,
+      "unit": "one-time",
+      "pitchLine": "\"Every builder you invite submits prequal documents and bids through one portal tied to your development pipeline.\"",
+      "whyItWorks": "You built the contractor side already; the developer sees the same paperwork from the owner's side."
+    },
+    {
+      "route": "Institutional owners' capital project dashboards",
+      "whoPays": "The hospital system, university or school authority",
+      "min": 20000,
+      "max": 60000,
+      "unit": "one-time",
+      "pitchLine": "\"Facilities leadership sees every capital construction project's schedule, budget and contractor in one place, fed by the GCs' own reports.\"",
+      "whyItWorks": "Institutions run many projects at once and the owner portal you built is the prototype."
+    },
+    {
+      "route": "Groups owning several regional GCs",
+      "whoPays": "The holding group, per firm",
+      "min": 15000,
+      "max": 40000,
+      "unit": "one-time",
+      "pitchLine": "\"Each regional contractor in your group gets sector pages, prequal and a plan room on one frame, under its own name owners know.\"",
+      "whyItWorks": "Groups keep local brands and want one system, and each firm is a repeat build."
+    },
+    {
+      "route": "White-label construction template for agencies",
+      "whoPays": "The agency, per site",
+      "min": 4000,
+      "max": 12000,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency signs builders and starts from a blank page. License the sector portfolio, prequal and sub registration frame.\"",
+      "whyItWorks": "Agencies own the client; the project data structure is what took longest to get right."
+    },
+    {
+      "route": "Same GC kit in the next metro",
+      "whoPays": "New general contractor clients in a new region",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I work with one general contractor per sector in each metro. {City}'s is signed; the next metro is open.\"",
+      "whyItWorks": "Non-competing geography lets you reuse the build, the pitch and the proof."
+    },
+    {
+      "route": "Surety and bond brokers' contractor clients",
+      "whoPays": "The surety broker",
+      "min": 5000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer your contractor clients a prequalification pack page and backlog dashboard that make their bonding reviews easier.\"",
+      "whyItWorks": "Brokers keep clients by helping them grow bonding capacity, and clean reporting helps."
+    },
+    {
+      "route": "Design-build partner architecture networks",
+      "whoPays": "The architecture firm network",
+      "min": 8000,
+      "max": 25000,
+      "unit": "one-time",
+      "pitchLine": "\"Joint design-build pages for each architect and builder pairing, with shared projects and one enquiry form.\"",
+      "whyItWorks": "Design-build teams pitch together and need one place that shows the partnership."
+    },
+    {
+      "route": "Construction software consultants",
+      "whoPays": "The consultant, per referred contractor",
+      "min": 5000,
+      "max": 20000,
+      "unit": "one-time",
+      "pitchLine": "\"Your GC clients want owner portals and sub prequal that read from the project system you set up. I build the outward-facing side.\"",
+      "whyItWorks": "Consultants get asked for portals they don't build, and the contractor client is proof you can."
+    },
+    {
+      "route": "Rescue stalled contractor portals",
+      "whoPays": "The GC with a half-built tool",
+      "min": 8000,
+      "max": 30000,
+      "unit": "one-time",
+      "pitchLine": "\"Half-built owner portals and sub databases are common among general contractors. I finish them, because I've shipped the same construction workflow for another builder.\"",
+      "whyItWorks": "Stranded clients already decided to buy and need someone who knows the workflow."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "General contractor site build plus care, one contract",
+      "min": 15000,
+      "max": 40000,
+      "unit": "one-time",
+      "trigger": "The principals approve the demo and scope.",
+      "line": "\"The site and the care plan sit on one contract, so a finished project or new office is an email to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Owner enquiry routing to preconstruction",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "trigger": "The first owner and developer enquiries arrive through the sector pages.",
+      "line": "\"Owners are enquiring from the sector pages. Routing each one to the right preconstruction lead keeps the construction conversation warm.\""
+    },
+    {
+      "rung": 3,
+      "day": 60,
+      "offer": "Subcontractor bid invitation sender",
+      "min": 2000,
+      "max": 5000,
+      "unit": "one-time",
+      "trigger": "Subs are registering, and estimators still invite them by hand.",
+      "line": "\"Subs are signing up. Sending construction bid invitations by trade and region gets you more numbers on bid day.\""
+    },
+    {
+      "rung": 4,
+      "day": 90,
+      "offer": "Subcontractor prequalification portal",
+      "min": 8000,
+      "max": 22000,
+      "unit": "one-time",
+      "trigger": "A sub shows up on site with expired insurance, or prequal paperwork backs up.",
+      "line": "\"That expired certificate is what a prequal portal catches before the sub reaches the construction site.\""
+    },
+    {
+      "rung": 5,
+      "day": 150,
+      "offer": "Qualifications and RFP response writer",
+      "min": 4000,
+      "max": 10000,
+      "unit": "one-time",
+      "trigger": "BD mentions several owner RFPs due in the same month.",
+      "line": "\"Your RFPs keep landing together. A writer drafts from your own project pages so BD edits instead of starting blank.\""
+    },
+    {
+      "rung": 6,
+      "day": 240,
+      "offer": "Owner project portal",
+      "min": 15000,
+      "max": 45000,
+      "unit": "one-time",
+      "trigger": "An owner asks for more frequent updates, or a repeat client wants a login.",
+      "line": "\"That owner wants to see progress without asking. A portal shows the construction schedule, photos and decisions they owe.\""
+    },
+    {
+      "rung": 7,
+      "day": 365,
+      "offer": "Project pipeline and backlog dashboard",
+      "min": 8000,
+      "max": 24000,
+      "unit": "one-time",
+      "trigger": "Year-end planning shows the principals can't see next year's backlog by sector.",
+      "line": "\"Planning next year is guesswork without the pipeline in one view. Let's put pursuits, bids and construction backlog on one screen.\""
+    }
+  ]
+}

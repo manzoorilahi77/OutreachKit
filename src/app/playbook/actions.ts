@@ -3,7 +3,7 @@
 import { revalidatePath } from "next/cache";
 import type { FormState } from "@/app/actions";
 import { checkPerm } from "@/lib/auth/server";
-import { SECTIONS } from "@/content/sections";
+import { PLAYBOOK as SECTIONS } from "@/lib/playbook";
 
 export async function setRequiredAction(_prev: FormState, fd: FormData): Promise<FormState> {
   const c = await checkPerm("playbook.required");

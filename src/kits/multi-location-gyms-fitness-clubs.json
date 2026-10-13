@@ -1,0 +1,882 @@
+{
+  "schemaVersion": 1,
+  "category": "Multi-location gyms & fitness clubs",
+  "slug": "multi-location-gyms-fitness-clubs",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · expansion batch (healthcare + mid-size)",
+    "generatedAt": "2026-10-13",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Mid-size edu batch. Written for a GM or marketing lead running several clubs who already has a site; leaned on club pages, online joining and the member system integration. Member portal and app integration ranges are the least certain."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Club finder with a page per club",
+      "contains": "A map and list of every club, then one page each with address, staffed and access hours, parking, amenities, studio and pool list, the club's own timetable, its manager and a join button for that club",
+      "why": "People join the club nearest home or work. If every club shares one page, the search for a gym near a neighbourhood lands on a competitor's location page instead."
+    },
+    {
+      "section": "Membership tiers and home-club rules",
+      "contains": "Single-club, all-club and off-peak memberships side by side, joining fee, minimum term, freeze and cancellation terms, guest passes and what each tier unlocks at each club",
+      "why": "Prospects compare tiers across clubs before visiting. Clear terms stop the front desk repeating the same answers and stop cancellations that start with 'nobody told me'."
+    },
+    {
+      "section": "Group fitness timetable across clubs",
+      "contains": "One timetable filterable by club, class type, instructor and time of day, synced from the booking system, with studio capacity and a book-a-spot button",
+      "why": "Class members choose a fitness club by which classes run before and after work. A timetable per club, kept current automatically, is the page they open most."
+    },
+    {
+      "section": "Corporate and group memberships",
+      "contains": "Rates for employers, how staff enrol, which clubs are included, invoicing options and an enquiry form that routes to the corporate sales lead",
+      "why": "One employer deal brings dozens of members at once. HR teams want a page to forward internally, not a phone number for the nearest club."
+    },
+    {
+      "section": "Careers across the clubs",
+      "contains": "Open roles by club: front desk, personal trainers, group instructors, cleaners and club managers, with pay ranges where they publish them, the training path and an application form",
+      "why": "Multi-site gyms hire all year. Trainers and instructors judge the employer by the careers page before they apply."
+    },
+    {
+      "section": "New club presale",
+      "contains": "Opening date, founding-member rates and their deadline, the planned equipment and studios, construction updates and a presale join or deposit form",
+      "why": "A new club needs members before the doors open. A presale page captures them while the hoarding is still up."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C45",
+      "siteType": "local-conversion",
+      "name": "Join Today",
+      "heroLayout": "type-led",
+      "mood": ["bold", "direct", "high-energy"],
+      "bestFor": "Value and mid-price fitness club groups where the job is a join-online button and a club picker",
+      "pairsWithTier": "starter",
+      "headlineSample": "Gyms across {City}. Pick your club and join today.",
+      "whyItFits": "Ultramarine poster colours read like a launch campaign, and the type-led hero puts the club picker and the join button above everything else."
+    },
+    {
+      "id": "b",
+      "themeId": "C17",
+      "siteType": "booking-first",
+      "name": "Club Network",
+      "heroLayout": "card-stack",
+      "mood": ["energetic", "organised", "strong"],
+      "bestFor": "Clubs with busy group fitness timetables, several studios and members who book classes from their phone",
+      "pairsWithTier": "standard",
+      "headlineSample": "Every club, every class, one timetable across {City}",
+      "whyItFits": "Not the family combo: Sky Kite reads as a kids' school. Basalt Lime is built for fitness, dark like a gym floor, and the card stack holds one card per club."
+    },
+    {
+      "id": "c",
+      "themeId": "C9",
+      "siteType": "premium-brand",
+      "name": "Members' Club",
+      "heroLayout": "full-bleed-photo",
+      "mood": ["premium", "calm", "exclusive"],
+      "bestFor": "Health clubs with pools, spa areas and coached floors selling higher monthly memberships",
+      "pairsWithTier": "premium",
+      "headlineSample": "Health clubs in {City} built around your week",
+      "whyItFits": "Midnight Bond is made for membership finance. Dark with a refined display face, it signals a club worth the higher monthly rate."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "One page for every club",
+      "line": "Your site lists all your clubs on a single locations page, so someone searching a gym near {Neighborhood} lands on a competitor's club page instead of yours.",
+      "hook": "Search 'gym near' plus two of their club neighbourhoods. Note whether a page of theirs for that club shows up.",
+      "linkLine": "A page per club, each with its own timetable and join button: {demo-link}"
+    },
+    {
+      "angle": "Slow on a phone",
+      "line": "Your gym site took a long while to load on my phone, and the club timetable arrived last. Members check class times in the car park, not at a desk.",
+      "hook": "Load the homepage and a timetable page on mobile data. Count the seconds and note what loaded last.",
+      "linkLine": "The same clubs, built to load fast on a phone: {demo-link}"
+    },
+    {
+      "angle": "Timetable as a PDF",
+      "line": "The group fitness timetable for each club is a PDF download. On a phone that means pinching and zooming to find tomorrow's spin class at the right club.",
+      "hook": "Open the timetable link. If it's a PDF or a picture of a printed sheet, the angle holds.",
+      "linkLine": "Your class timetable, filterable by club and time: {demo-link}"
+    },
+    {
+      "angle": "No online joining",
+      "line": "To join one of your clubs I'd have to visit the front desk or wait for a callback. Most people deciding on a gym membership want to finish it the same evening.",
+      "hook": "Try to join online. Note where the flow ends: an enquiry form, a phone number, a 'visit us' line.",
+      "linkLine": "Join online, choose a club, start tomorrow: {demo-link}"
+    },
+    {
+      "angle": "Trial pass hard to find",
+      "line": "Your trial pass offer is on Instagram but not on the club pages, so people who search for a free gym pass never see it.",
+      "hook": "Check their socials for a trial, guest or first-week offer, then look for it on the site. Note the gap.",
+      "linkLine": "A trial pass booking for every club: {demo-link}"
+    },
+    {
+      "angle": "Membership prices hidden",
+      "line": "I couldn't find membership prices for any of the clubs, only 'enquire at reception'. People comparing a fitness club with the one across the road want a number first.",
+      "hook": "Look for tier prices or 'from' prices on every club page. If none, the angle holds.",
+      "linkLine": "Club membership tiers laid out side by side: {demo-link}"
+    },
+    {
+      "angle": "Hiring with no careers page",
+      "line": "I saw you're hiring trainers and front desk staff at several clubs, but the site has no careers page. Good instructors check how a gym group presents itself before applying.",
+      "hook": "Find their job posts on social or job boards. Check the site footer for careers. Note the roles.",
+      "linkLine": "A careers hub with roles by club: {demo-link}"
+    },
+    {
+      "angle": "Reviews stuck on the map",
+      "line": "Each of your clubs has strong reviews about the instructors and how clean the floor is, but none of them appear on the club pages people read before joining.",
+      "hook": "Read reviews for two clubs and copy one phrase from each. Quote them if they reply.",
+      "linkLine": "Club reviews beside each join button: {demo-link}"
+    },
+    {
+      "angle": "New club opening",
+      "line": "Congratulations on the new club you announced. The opening post has a lot of excitement, but there's no presale page to take founding-member sign-ups yet.",
+      "hook": "Look for 'coming soon' posts or hoarding photos. Name the location and roughly when it opens.",
+      "linkLine": "A presale page for the new club: {demo-link}"
+    },
+    {
+      "angle": "Dated look",
+      "line": "Your clubs look modern in every post, but the website feels a few refits behind them. The site is the first walk-through most gym prospects take.",
+      "hook": "Compare a recent club post to the homepage. Note one thing that looks older: layout, fonts, photos of old equipment.",
+      "linkLine": "A site that matches the clubs as they look now: {demo-link}"
+    },
+    {
+      "angle": "Corporate memberships",
+      "line": "Your gym mentions corporate memberships in one line on the pricing page. An HR manager needs a page to forward round the office with rates and which clubs are included.",
+      "hook": "Search the site for 'corporate' or 'company'. Note whether there's a page, a line or nothing.",
+      "linkLine": "A corporate membership page HR can forward: {demo-link}"
+    },
+    {
+      "angle": "New Year join rush",
+      "line": "The New Year rush is when your clubs sign the most members, and the ones with online joining ready in December take people who'd never wait for a callback.",
+      "hook": "Use from October to early January, or late summer for back-to-routine. Name the moment.",
+      "linkLine": "A join-online flow ready before the January rush: {demo-link}"
+    },
+    {
+      "angle": "Access hours unclear",
+      "line": "Some of your clubs look open around the clock and others close at night, but the site doesn't say which. Shift workers choose a gym on exactly that.",
+      "hook": "Compare the hours on each club's map listing. Note any club whose access hours differ from the site.",
+      "linkLine": "Each club's staffed and access hours on its own page: {demo-link}"
+    },
+    {
+      "angle": "Members' app not linked",
+      "line": "Your members book classes in an app, but the site has no link to it and no page explaining what it does. New members find out at the front desk.",
+      "hook": "Check app store listings under their name and look for a link on the site. Note what's missing.",
+      "linkLine": "A members' app page that links each club: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "That {specific recent job} you posted looked like a big day for the clubs. An event like that should sit on the gym site, not just in the feed.",
+      "hook": "Pick their newest event: a club refit, a charity class, a challenge across clubs. Name it exactly.",
+      "linkLine": "That club moment, kept on the site: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, that {specific recent job} you posted looked like a big day for the clubs.\n\nI looked at the {Business Name} site and noticed every club shares one locations page, and joining means a visit or a callback. I put together a sample with a page per club, a filterable class timetable and online joining, with marked placeholders where your photos would go.\n\nWould it be useful if I sent it over?",
+    "dm2": "{Owner}, following up in case this got buried. Here's the sample site for {Business Name}: {demo-link}\n\nIt has a club finder with a page and timetable for each club, membership tiers side by side, online joining and a careers hub. It hands joins and class bookings to the member system you already run. If it's not the right time, say so and I won't message again.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites and software for gym and fitness club groups in {City}. I sent a sample site for {Business Name} a few days ago, did it reach you?\"\n\nIF NO:\n\"No problem. Short version: a page per club, one class timetable across all of them, and online joining that feeds your member system. Who else would want to see it, marketing or operations?\"\n\nIF YES:\n\"What did you and the team make of it?\"\n → let them talk, don't fill the silence\n\"It sits in front of your member system, it doesn't replace it. The build runs {Build Range} depending on the number of clubs and integrations, then {Care Range} a month for hosting, timetable sync and changes. For your group I'd expect about {Build Price}.\"\n\"Could we do thirty minutes with you and whoever owns the member system next week?\"\n\nCLOSE:\n\"I'll send a scope with a club-by-club plan and a deposit invoice, timed so it's live before the New Year rush.\"",
+    "objections": [
+      {
+        "objection": "We already have a website.",
+        "handler": "\"You do, and it works. The gap is that every club shares one page and joining stops at a form. This rebuild gives each club its own page and lets people join online, through the system you already pay for.\""
+      },
+      {
+        "objection": "Our member software gives us a join page.",
+        "handler": "\"It processes the join well. It doesn't rank a club page for 'gym near' a neighbourhood or show the timetable and tiers in one place. The site sends people into that join page ready to pay.\""
+      },
+      {
+        "objection": "Head office handles the website, not the clubs.",
+        "handler": "\"That's who I'd like to talk to. The club pages are built from one template head office controls, and club managers only edit their own timetable notes and staff.\""
+      },
+      {
+        "objection": "We don't want prices online; the sales team closes in person.",
+        "handler": "\"Keep the tour. Show 'from' prices and book the tour online. People who arrive already know the club is in budget, so the sales team spends time on the ones ready to join.\""
+      },
+      {
+        "objection": "We tried an agency and it took a year.",
+        "handler": "\"That's why the scope is club by club. The first club goes live as a pilot, you check the join numbers, then we roll out the rest from the same template.\""
+      },
+      {
+        "objection": "Not before the new club opens.",
+        "handler": "\"Then let's start with the presale page for that club. It earns founding members now, and it becomes the template for every other club page.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For your group about {Build Price}, because it's a page per club, the timetable sync and online joining. A handful of members joining online each month at each club covers it.\""
+      }
+    ],
+    "email": {
+      "subject": "Club pages and online joining for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites and software for gym and fitness club groups around {City}. {Business Name} looks great in its posts, but the site puts every club on one page and joining stops at an enquiry form.\n\nI built a sample rather than ask for a meeting first: a club finder with a page and timetable for each club, membership tiers side by side, online joining, a corporate membership page and a careers hub, with marked placeholders where your photos would go. It hands joins and bookings to the member system you already run:\n\n{demo-link}\n\nIf it's useful, the build runs {Build Range}, plus {Care Range} a month for hosting, timetable sync and changes. If not, no problem, the sample comes down at the end of the month.\n\nWorth thirty minutes with you and whoever owns the member system?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build websites for gym groups in {City}, and I made a sample for {Business Name} with a page and timetable per club and online joining. I'll email you the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm taking the {Business Name} club demo down on Friday to free up the space.\n\nShould I keep it up for the team to look at? One word is fine either way.",
+    "nurture": "Hi {Owner}, the New Year gym rush starts searching in December, and online joining needs to be live and ranking before then. Thought of you.\n\nThe club sample is still here if the team wants another look: {demo-link}"
+  },
+  "pricing": {
+    "bullets": [
+      "Price by the number of clubs and integrations, never by page count. A club page is cheap; the timetable sync behind it is not.",
+      "Peg the build to a few members joining online at each club every month, not to the cost of a refit.",
+      "Quote the site as a layer in front of their member system. Don't quote to replace billing they already run.",
+      "Pilot one club first when the buyer is cautious, then price the rollout per club from the same template.",
+      "Put integrations and portals on their own lines with their own monthly, so the build price stays readable for the finance lead.",
+      "Sell presale and January work in the autumn, never during the rush itself."
+    ],
+    "lineItems": [
+      {
+        "item": "Club page with its own timetable and map",
+        "min": 300,
+        "max": 900,
+        "unit": "per-page",
+        "description": "Max with the club's synced timetable, amenities list, staff profiles, local landmarks and a club-specific join button.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Online joining with tier and club selection",
+        "min": 2500,
+        "max": 6000,
+        "unit": "one-time",
+        "description": "Max with home-club rules, joining fee promos, digital agreement and handoff into the member system.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Timetable sync from the booking system",
+        "min": 1500,
+        "max": 4500,
+        "unit": "one-time",
+        "description": "Max when every club, studio and instructor syncs automatically with capacity and a book-a-spot button.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Trial pass booking for every club",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "description": "Max with waiver signing ahead, goal questions for the sales team and routing to the right club.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Careers hub with roles by club",
+        "min": 1200,
+        "max": 3500,
+        "unit": "one-time",
+        "description": "Max with a role feed by club, trainer and instructor pathways and applications routed to each club manager.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "New club presale page",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "description": "Max with founding-member pricing that steps up by date, deposits taken online and construction updates.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Corporate membership page and enquiry routing",
+        "min": 900,
+        "max": 2500,
+        "unit": "one-time",
+        "description": "Max with employer rate cards, staff enrolment links and routing to the corporate sales lead.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Second-language club pages",
+        "min": 1500,
+        "max": 4500,
+        "unit": "one-time",
+        "description": "Max when the club pages, tiers, joining flow and agreement are all translated.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Accessibility review of joining and timetables",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "description": "Max when the join flow, timetable filters and forms are all reviewed and fixed for keyboard and screen readers.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Google profile management for every club",
+      "min": 300,
+      "max": 900,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Each club's Google profile kept current with hours, classes, offers and new photos, so a search for a gym nearby shows a busy club, not a stale listing.\"",
+      "when": "Day 30. Priced by the number of clubs."
+    },
+    {
+      "name": "Member review engine across clubs",
+      "min": 199,
+      "max": 499,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"New members get a review ask after their first month, sent for their home club, so every club page builds its own reviews.\"",
+      "when": "Day 45, once online joins start."
+    },
+    {
+      "name": "Club-by-club join campaigns",
+      "min": 800,
+      "max": 2500,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Local ads that point each neighbourhood at its nearest club page and trial pass, with spend shifted to the clubs that have room.\"",
+      "when": "Pitch in October for January and in July for back-to-routine. Ad spend is on top."
+    },
+    {
+      "name": "Club photo and video day per location",
+      "min": 600,
+      "max": 1500,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"One shoot per club at a busy class hour, only members who sign a release, so each club page shows its own floor and studios.\"",
+      "when": "Month 2, scheduled club by club with a consent sheet at the desk."
+    },
+    {
+      "name": "Founding-member presale campaign",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Ads, emails to members at nearby clubs and hoarding signs with a scan code, all pointing at the new club's presale page.\"",
+      "when": "Twelve to sixteen weeks before a new club opens."
+    },
+    {
+      "name": "Member referral programme design",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A bring-a-friend offer with a page, a guest pass link each member can share and posters for every club floor.\"",
+      "when": "Month 3, if referrals come up in their numbers."
+    },
+    {
+      "name": "Corporate wellness sales kit",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A short deck and one-pager for the gym's corporate sales lead, showing which clubs sit near each business district.\"",
+      "when": "Month 4, once the corporate page is live."
+    },
+    {
+      "name": "Monthly content plan for the clubs",
+      "min": 600,
+      "max": 1800,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"One plan for all the clubs' posts around new classes, challenges and member wins, with room for each club manager's local news.\"",
+      "when": "Month 3, if posting is uneven between clubs."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Physiotherapy clinics operating inside the clubs",
+        "whoPays": "The clinic, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The physio clinic renting a room in your clubs needs its own booking site. The gym's introduction is the best referral it could get.\"",
+        "whyItWorks": "In-club clinics depend on gym members and see the new site every day. The club manager's word opens the door."
+      },
+      {
+        "route": "Swim schools renting pool lanes at the clubs",
+        "whoPays": "The swim school",
+        "min": 3000,
+        "max": 8000,
+        "unit": "one-time",
+        "pitchLine": "\"The swim school using your club pools runs its waitlist by email. I'll build term booking by club and level.\"",
+        "whyItWorks": "Swim schools that rent club lanes share families with the gym, and the club decides who gets lane time."
+      },
+      {
+        "route": "Fitness equipment service companies",
+        "whoPays": "The service company",
+        "min": 3000,
+        "max": 9000,
+        "unit": "one-time",
+        "pitchLine": "\"The firm that services your treadmills and racks across the clubs takes jobs by phone. A service request and contract page would win them more gym groups.\"",
+        "whyItWorks": "Service firms want more multi-site gym contracts, and a reference from a group they already serve carries weight."
+      },
+      {
+        "route": "Café and smoothie bar concessions in the clubs",
+        "whoPays": "The concession operator",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The smoothie bar in your club lobbies could take orders ahead from members' phones before class ends. I'll build the order page.\"",
+        "whyItWorks": "Concessions live on member footfall, and the gym controls the lease and the introduction."
+      },
+      {
+        "route": "Landlords and retail park managers of the club sites",
+        "whoPays": "The landlord or property manager",
+        "min": 4000,
+        "max": 12000,
+        "unit": "one-time",
+        "pitchLine": "\"The retail park your fitness club anchors has empty units with only a sign in the window. A leasing page with unit sizes and footfall would fix that.\"",
+        "whyItWorks": "A gym tenant that draws traffic every evening is a credible introduction to the landlord's leasing team."
+      },
+      {
+        "route": "Martial arts and dance instructors renting club studios",
+        "whoPays": "Each instructor's school, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The martial arts and dance schools renting studio time at your clubs need trial class booking of their own. They already trust your gym.\"",
+        "whyItWorks": "Studio renters share the building and see the club's site daily. Each is a small, quick sale."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Appointment request assistant for the in-club physio clinic",
+        "whoPays": "The clinic, monthly",
+        "min": 199,
+        "max": 499,
+        "unit": "monthly",
+        "pitchLine": "\"A gym member describes what hurts and when they're free, and the clinic gets a clean appointment request, never a diagnosis.\"",
+        "whyItWorks": "Clinics lose patients to slow callbacks, and the assistant only collects and books."
+      },
+      {
+        "route": "Level placement helper for the swim school",
+        "whoPays": "The swim school, monthly",
+        "min": 99,
+        "max": 299,
+        "unit": "monthly",
+        "pitchLine": "\"Parents answer a few questions about their child's swimming, and the assistant suggests a level and the next open class at the right club pool.\"",
+        "whyItWorks": "Level questions fill the swim school's inbox every term. Answering them sells places."
+      },
+      {
+        "route": "Fault triage assistant for the equipment service firm",
+        "whoPays": "The service company, monthly",
+        "min": 199,
+        "max": 599,
+        "unit": "monthly",
+        "pitchLine": "\"Club staff describe the fault on a treadmill or cable machine, and the service firm gets a ticket with the model, symptoms and urgency.\"",
+        "whyItWorks": "Better tickets mean fewer wasted visits, which the service firm can count."
+      },
+      {
+        "route": "Order-ahead suggestions for the club café",
+        "whoPays": "The concession operator, monthly",
+        "min": 79,
+        "max": 199,
+        "unit": "monthly",
+        "pitchLine": "\"Members say what they trained and the café suggests a shake or meal from its own menu, ready when they leave the gym floor.\"",
+        "whyItWorks": "Post-workout orders are impulsive. Catching them before members leave is the sale."
+      },
+      {
+        "route": "Leasing enquiry assistant for the landlord",
+        "whoPays": "The landlord, monthly",
+        "min": 199,
+        "max": 499,
+        "unit": "monthly",
+        "pitchLine": "\"Prospective tenants ask about unit size, parking and the gym anchor's footfall, and the leasing team gets a viewing request at any hour.\"",
+        "whyItWorks": "Empty units cost money every month and viewings are easy to count."
+      },
+      {
+        "route": "Trial class booking assistant for studio renters",
+        "whoPays": "Each school, monthly",
+        "min": 49,
+        "max": 149,
+        "unit": "monthly",
+        "pitchLine": "\"A parent asks which martial arts or dance class suits a seven-year-old at the club studio, and the assistant answers and books a trial.\"",
+        "whyItWorks": "Instructors miss messages mid-class. A small monthly fee is less than one new student."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Trial pass reminders and conversion sequence",
+      "kind": "automation",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 99,
+      "monthlyMax": 299,
+      "pitchLine": "\"Everyone who books a trial pass at any club gets a reminder, a check-in after their visit and a join offer for that club.\"",
+      "whenAndWhatItTakes": "Day 30. Needs the trial offer, tier rules per club and access to the booking system."
+    },
+    {
+      "name": "Class waitlist and capacity alerts",
+      "kind": "automation",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"When a full spin or yoga class gets a cancellation, the next member on the waitlist is offered the spot, and club managers see which classes keep filling.\"",
+      "whenAndWhatItTakes": "Month 2, once the timetable sync is live. Needs class capacities by studio."
+    },
+    {
+      "name": "Cancellation save flow with freeze and downgrade",
+      "kind": "automation",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"A member starting to cancel is offered a freeze, an off-peak tier or a move to a nearer club first, within the cancellation terms they signed.\"",
+      "whenAndWhatItTakes": "Month 2. Needs freeze rules, tier prices and the cancellation terms."
+    },
+    {
+      "name": "Club review reply drafts",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 3500,
+      "monthlyMin": 149,
+      "monthlyMax": 399,
+      "pitchLine": "\"Every club's new reviews get a reply drafted in the gym group's voice, sent to that club manager to approve or edit.\"",
+      "whenAndWhatItTakes": "Month 2, with the review engine. Needs the brand voice notes. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Personal training lead routing",
+      "kind": "automation",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"A member who asks about personal training is matched to a trainer at their home club by goal and free times, and the trainer gets the lead the same hour.\"",
+      "whenAndWhatItTakes": "Month 3. Needs trainer profiles, availability and goals they specialise in."
+    },
+    {
+      "name": "Membership question assistant on the site",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 299,
+      "monthlyMax": 799,
+      "pitchLine": "\"'Which club has a pool' and 'can I use every gym on off-peak' get answered from the group's own terms, with a trial pass or join link for the right club.\"",
+      "whenAndWhatItTakes": "Month 3. Needs tier terms, club amenities and hours. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Multi-club performance dashboard",
+      "kind": "software",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 18000,
+      "monthlyMin": 199,
+      "monthlyMax": 599,
+      "pitchLine": "\"Trials, joins, cancellations and class fill by club on one screen every Monday, so the GM sees which club needs attention before the month closes.\"",
+      "whenAndWhatItTakes": "Month 3, after a few months of site and member system data. Needs exports or access to the member system."
+    },
+    {
+      "name": "Presale tracker for new club openings",
+      "kind": "software",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 149,
+      "monthlyMax": 399,
+      "pitchLine": "\"Founding-member sign-ups, deposits and pricing steps for the new club tracked daily against target, with reminders as each rate ends.\"",
+      "whenAndWhatItTakes": "Four months before the next opening. Needs the presale prices, deadlines and target."
+    },
+    {
+      "name": "Front desk phone assistant across clubs",
+      "kind": "ai",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 399,
+      "monthlyMax": 1200,
+      "pitchLine": "\"When a club's front desk is busy or closed, the phone still gets answered, the membership question handled and a trial pass booked at the right club.\"",
+      "whenAndWhatItTakes": "Month 4. Needs tiers, timetables, hours and booking access for every club. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Instructor cover and class rota board",
+      "kind": "software",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 15000,
+      "monthlyMin": 149,
+      "monthlyMax": 499,
+      "pitchLine": "\"When a group instructor drops a class, cover is offered to qualified instructors across the clubs and the timetable updates when someone takes it.\"",
+      "whenAndWhatItTakes": "Month 4. Needs instructor qualifications, pay rates and the class schedule."
+    },
+    {
+      "name": "At-risk member alerts",
+      "kind": "ai",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 12000,
+      "monthlyMin": 299,
+      "monthlyMax": 799,
+      "pitchLine": "\"Each week every club manager sees which gym members are drifting, ranked from check-ins and class bookings, with a suggested note to send.\"",
+      "whenAndWhatItTakes": "Month 5, after months of check-in data. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Corporate membership portal",
+      "kind": "software",
+      "oneTimeMin": 8000,
+      "oneTimeMax": 25000,
+      "monthlyMin": 199,
+      "monthlyMax": 699,
+      "pitchLine": "\"Employers enrol staff, see which clubs they use and download invoices themselves, so corporate gym deals don't run on spreadsheets.\"",
+      "whenAndWhatItTakes": "Month 5, once corporate enquiries arrive through the site. Needs employer rates and billing rules."
+    },
+    {
+      "name": "Equipment fault log by club",
+      "kind": "software",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 99,
+      "monthlyMax": 299,
+      "pitchLine": "\"Staff log a broken treadmill or cable machine from a phone with the club and station, and operations sees every open fault and repair time.\"",
+      "whenAndWhatItTakes": "Month 5. Needs the equipment list for each club and who handles repairs."
+    },
+    {
+      "name": "Trainer and instructor applicant screening",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 199,
+      "monthlyMax": 499,
+      "pitchLine": "\"Applicants for gym roles answer the club's own questions, and each club manager gets a short summary of certifications and availability, with every decision left to them.\"",
+      "whenAndWhatItTakes": "Month 6, once the careers hub has applications. Needs role requirements. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Club manager weekly briefing",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 199,
+      "monthlyMax": 499,
+      "pitchLine": "\"Each Monday every club manager gets a plain summary of last week's joins, cancellations, reviews and full classes, with one thing to act on.\"",
+      "whenAndWhatItTakes": "Month 6, after the dashboard is live. Needs the dashboard data. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Promo code and campaign tracking by club",
+      "kind": "automation",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"Every gym offer gets a code per club, so marketing sees which campaign filled which club instead of guessing from the total.\"",
+      "whenAndWhatItTakes": "Month 6, before the next join campaign. Needs the campaign list and member system access."
+    },
+    {
+      "name": "New member first-month plan writer",
+      "kind": "ai",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 299,
+      "monthlyMax": 699,
+      "pitchLine": "\"A new member's goals and free times become a suggested first month of classes at their club, built from the timetable, never medical advice.\"",
+      "whenAndWhatItTakes": "Month 7. Needs the timetable sync and the fitness team's approval of the rules. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Member self-service portal",
+      "kind": "software",
+      "oneTimeMin": 12000,
+      "oneTimeMax": 40000,
+      "monthlyMin": 299,
+      "monthlyMax": 999,
+      "pitchLine": "\"Members freeze, upgrade, change home club, buy guest passes and update payment details themselves, so club desks stop doing account admin.\"",
+      "whenAndWhatItTakes": "Month 8, when front desk admin comes up as a cost. Needs member system access and the group's account rules."
+    },
+    {
+      "name": "Members' app and site single sign-in",
+      "kind": "software",
+      "oneTimeMin": 10000,
+      "oneTimeMax": 35000,
+      "monthlyMin": 299,
+      "monthlyMax": 999,
+      "pitchLine": "\"Members sign in once and move between the club site, class booking and the members' app without a second password.\"",
+      "whenAndWhatItTakes": "Month 9, once the portal is live. Needs the app vendor's integration options and the IT lead."
+    },
+    {
+      "name": "Club capacity forecast for opening hours",
+      "kind": "ai",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 15000,
+      "monthlyMin": 299,
+      "monthlyMax": 799,
+      "pitchLine": "\"Forecasts how busy each club floor and studio will be by hour, so operations can set staffing, cleaning and class times on evidence from their own check-ins.\"",
+      "whenAndWhatItTakes": "Month 10, after a year of check-in data. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the club finder and online joining for gym groups",
+      "whoPays": "Other gym groups, monthly per club",
+      "min": 99,
+      "max": 299,
+      "unit": "monthly",
+      "pitchLine": "\"I built club pages and online joining that sit in front of one gym group's member system. Every regional group runs the same systems and the same weak locations page.\"",
+      "whyItWorks": "Gym groups run on a few member systems, so one integration serves many clubs."
+    },
+    {
+      "route": "Fitness franchise brands",
+      "whoPays": "The franchisor, per location",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Each of your franchise gyms needs its own page, timetable and presale on one brand template. I build it once and roll it out to every new opening.\"",
+      "whyItWorks": "Franchisors budget for location pages and open new sites every year. One contract becomes dozens."
+    },
+    {
+      "route": "Gym groups in other cities",
+      "whoPays": "Each new gym group",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I work with one fitness club group in {City}. Groups in other cities get the same club pages and online joining with no local conflict.\"",
+      "whyItWorks": "Non-competing geography lets you reuse the template and the finished proof."
+    },
+    {
+      "route": "Agency white-label of the multi-club template",
+      "whoPays": "The agency, per club",
+      "min": 400,
+      "max": 1200,
+      "unit": "one-time",
+      "pitchLine": "\"When a fitness club group asks your agency for location pages and online joining, resell my multi-club template instead of building the integration from scratch.\"",
+      "whyItWorks": "The integration is the hard part, and you've solved it once."
+    },
+    {
+      "route": "Commercial fitness equipment suppliers",
+      "whoPays": "The equipment supplier",
+      "min": 8000,
+      "max": 25000,
+      "unit": "one-time",
+      "pitchLine": "\"Your machines are in hundreds of clubs. A find-a-gym map of customer clubs makes your brand the one gym owners point members to.\"",
+      "whyItWorks": "Suppliers compete on loyalty, and clubs happily appear on a map that sends them members."
+    },
+    {
+      "route": "Residential developers with resident gyms",
+      "whoPays": "The developer or building manager, per building",
+      "min": 3000,
+      "max": 8000,
+      "unit": "one-time",
+      "pitchLine": "\"Your towers have gyms and studios residents never book. Class booking and a resident fitness page, from someone who builds for gym groups.\"",
+      "whyItWorks": "Amenities sell apartments. Developers pay to show residents the gym is used."
+    },
+    {
+      "route": "Hotel groups with fitness clubs open to locals",
+      "whoPays": "The hotel group, per property",
+      "min": 3000,
+      "max": 9000,
+      "unit": "one-time",
+      "pitchLine": "\"Your hotel health clubs sell local memberships through the concierge. A joining page and timetable per property would sell them properly.\"",
+      "whyItWorks": "Hotel clubs want local members to fill off-peak hours, and the multi-club build fits them directly."
+    },
+    {
+      "route": "University and college recreation centres",
+      "whoPays": "The recreation department, annually",
+      "min": 6000,
+      "max": 20000,
+      "unit": "per-year",
+      "pitchLine": "\"Your campus gyms run class booking and memberships for students, staff and the public. The multi-club setup handles all three.\"",
+      "whyItWorks": "Campus rec centres run several sites with the same problems as a gym group, on annual budgets."
+    },
+    {
+      "route": "Municipal leisure centre operators",
+      "whoPays": "The operator, per tender",
+      "min": 15000,
+      "max": 60000,
+      "unit": "one-time",
+      "pitchLine": "\"Your leisure centres need a page per site, pool and gym timetables and online joining. I've built exactly that for a private gym group.\"",
+      "whyItWorks": "Leisure operators run many sites and buy through tenders where a working reference matters most."
+    },
+    {
+      "route": "Boutique studio groups",
+      "whoPays": "The studio group",
+      "min": 8000,
+      "max": 20000,
+      "unit": "one-time",
+      "pitchLine": "\"Your cycling and reformer studios across the city need a page and class booking per studio. The gym group build fits a studio group directly.\"",
+      "whyItWorks": "Studio groups grow site by site and sell class packs that need the same timetable sync."
+    },
+    {
+      "route": "Corporate wellness platforms and employee benefit providers",
+      "whoPays": "The benefits provider",
+      "min": 5000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Your members want gyms near the office. A participating club finder built from gym groups' own club data makes your benefit easier to sell.\"",
+      "whyItWorks": "Benefit providers sell on choice of clubs, and each gym group client is a ready data source."
+    },
+    {
+      "route": "Rescue a stalled member system migration",
+      "whoPays": "The stuck gym group",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Half your clubs moved to the new member system and the other half still point to the old one. I can relink every club page, timetable and join button in one pass.\"",
+      "whyItWorks": "Groups mid-migration lose joins daily and will pay to stop it."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Club site build plus care plan, one contract",
+      "min": 10000,
+      "max": 25000,
+      "unit": "one-time",
+      "trigger": "The GM and marketing lead approve the scope.",
+      "line": "\"The club site and the care plan go on one contract, so a timetable change or a new club page is one message to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Trial pass reminders and conversion sequence",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "trigger": "A month of trial pass bookings shows visitors who came once and never joined.",
+      "line": "\"Those trial pass visitors liked the club. A reminder and a next-day join offer brings more of them back.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "Member review engine across clubs",
+      "min": 199,
+      "max": 499,
+      "unit": "monthly",
+      "trigger": "The first members who joined online reach thirty days at their home club.",
+      "line": "\"New members at day thirty are proud of the habit. That's when they'll review their club.\""
+    },
+    {
+      "rung": 4,
+      "day": 90,
+      "offer": "Multi-club performance dashboard",
+      "min": 6000,
+      "max": 18000,
+      "unit": "one-time",
+      "trigger": "The GM asks which club's joins dropped, and nobody can answer without three exports.",
+      "line": "\"One screen with trials, joins and cancellations by club answers that every Monday.\""
+    },
+    {
+      "rung": 5,
+      "day": 120,
+      "offer": "Membership question assistant on the site",
+      "min": 3000,
+      "max": 8000,
+      "unit": "one-time",
+      "trigger": "Club desks report the same questions about tiers, pools and off-peak access every day.",
+      "line": "\"Let the gym site answer the tier and amenity questions at night, with a trial pass link for the right club.\""
+    },
+    {
+      "rung": 6,
+      "day": 150,
+      "offer": "Club-by-club join campaigns",
+      "min": 800,
+      "max": 2500,
+      "unit": "monthly",
+      "trigger": "It's October and the January join targets are set per club.",
+      "line": "\"The New Year rush is coming. Let's point local ads at the club pages that have room.\""
+    },
+    {
+      "rung": 7,
+      "day": 210,
+      "offer": "Member self-service portal",
+      "min": 12000,
+      "max": 40000,
+      "unit": "one-time",
+      "trigger": "Operations names front desk account admin as a cost, or a desk manager asks for help with freezes.",
+      "line": "\"Freezes, upgrades and home-club changes can move off the club desks and into a members' portal.\""
+    },
+    {
+      "rung": 8,
+      "day": 270,
+      "offer": "New club presale page and campaign",
+      "min": 3500,
+      "max": 10000,
+      "unit": "one-time",
+      "trigger": "They sign a lease or announce the next club.",
+      "line": "\"The next club can open with members already signed. Let's put the presale page up the week the lease is signed.\""
+    }
+  ]
+}

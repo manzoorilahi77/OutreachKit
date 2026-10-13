@@ -1,0 +1,856 @@
+{
+  "schemaVersion": 1,
+  "category": "Manufacturers (20–250 staff)",
+  "slug": "manufacturers-20-250-staff",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · expansion batch (healthcare + mid-size)",
+    "generatedAt": "2026-10-13",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Mid-size rfq kit for plants that sell both their own product lines and contract manufacturing. Leaned on spec sheets, rep networks and production hiring. Least sure about the order portal, distributor portal and line output dashboard ranges, which swing with how clean their ERP data is."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Product line and spec sheet library",
+      "contains": "Every product family with spec sheets, CAD models, install guides and compliance documents to download, filterable by size, material and application",
+      "why": "Engineers specify a manufacturer's product when its spec sheet is the easiest one to find and drop into their design."
+    },
+    {
+      "section": "Contract manufacturing scope",
+      "contains": "Processes done in-house, volumes the plant suits, how a new product is introduced from sample to first production run, tooling ownership and what the customer supplies",
+      "why": "Contract buyers want to know if the plant fits their volume before they share a design. Saying it plainly filters the wrong RFQs."
+    },
+    {
+      "section": "Plant and equipment walkthrough",
+      "contains": "Floor area and lines as the plant supplies them, production cells, shifts run, warehouse and shipping docks, with a request for an in-person plant visit",
+      "why": "Sourcing teams visit before they award. A walkthrough online gets the manufacturer onto the shortlist that earns the visit."
+    },
+    {
+      "section": "Rep and distributor locator",
+      "contains": "Territory map of sales reps and stocking distributors, who to call in each region, and a form that routes enquiries to the right rep",
+      "why": "Buyers want a local contact. A manufacturer whose reps are invisible loses orders to one whose reps are a click away."
+    },
+    {
+      "section": "Production careers by shift",
+      "contains": "Operator, maintenance technician, welder, quality inspector and supervisor roles, shift times and premiums as the plant supplies them, training offered and a plant tour day",
+      "why": "Staffing the second shift decides how much the plant can ship. Applicants compare plants by shift, pay and training."
+    },
+    {
+      "section": "Quality system and customer audits",
+      "contains": "Quality policy, [quality registration, if held] as a placeholder, inspection and testing steps, how corrective actions are handled and how customers book a supplier audit",
+      "why": "Supplier approval teams check quality before price. A clear page shortens the approval and shows the plant welcomes audits."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C10",
+      "siteType": "local-conversion",
+      "name": "RFQ Front Door",
+      "heroLayout": "split-photo",
+      "mood": ["plain", "responsive", "useful"],
+      "bestFor": "Contract manufacturers whose site exists to bring in RFQs from regional buyers",
+      "pairsWithTier": "starter",
+      "headlineSample": "Contract manufacturing in {City}, sample to production",
+      "whyItFits": "Steel Invoice's neutral sans and quote-form feel suit a plant that wins on response time and wants the RFQ above everything else."
+    },
+    {
+      "id": "b",
+      "themeId": "C19",
+      "siteType": "b2b-capability",
+      "name": "Plant Capability",
+      "heroLayout": "card-stack",
+      "mood": ["exact", "industrial", "organised"],
+      "bestFor": "Mid-size manufacturers selling product lines and capacity to engineers and sourcing teams",
+      "pairsWithTier": "standard",
+      "headlineSample": "Industrial manufacturing from our {City} plant",
+      "whyItFits": "The family combo. Mono labels and tabular spec blocks make product families, processes and volumes easy to compare."
+    },
+    {
+      "id": "c",
+      "themeId": "C39",
+      "siteType": "premium-brand",
+      "name": "Made Here",
+      "heroLayout": "full-bleed-photo",
+      "mood": ["heritage", "proud", "solid"],
+      "bestFor": "Family-owned manufacturers with a long history and a branded product line sold through distributors",
+      "pairsWithTier": "premium",
+      "headlineSample": "Built in {City} by the same family for generations",
+      "whyItFits": "Brick & Linen was made for heritage and craft brands. Slab type and warm brick suit a plant whose story sells the product."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "Site from another decade",
+      "line": "Your manufacturing site still looks like it was built a decade ago, and on a phone it shrinks to a desktop page. Sourcing teams judge a plant's care by its site before they ask for a sample.",
+      "hook": "Open the site on your phone and a wide screen. Note the footer year, the layout and whether recent products appear. Screenshot it for when they reply.",
+      "linkLine": "The same manufacturer, rebuilt for today: {demo-link}"
+    },
+    {
+      "angle": "Catalogue only as a PDF",
+      "line": "Your product catalogue is a single large PDF. An engineer who needs one spec sheet for one part has to download the whole thing, and often picks the manufacturer whose sheet comes up first.",
+      "hook": "Find the catalogue or literature link and check whether spec sheets exist one by one.",
+      "linkLine": "Spec sheets by product family, one click each: {demo-link}"
+    },
+    {
+      "angle": "RFQ form without drawings",
+      "line": "Your quote form has name, email and a comment box, but nowhere for a buyer to send drawings, annual volumes or a target date. Contract manufacturing RFQs need all three.",
+      "hook": "Open their contact or RFQ form and list the fields. If there is no file upload or volume field, the angle holds.",
+      "linkLine": "A contract manufacturing RFQ that asks the right questions: {demo-link}"
+    },
+    {
+      "angle": "Hiring operators, no shift info",
+      "line": "I saw the plant is hiring machine operators and a maintenance tech, but the careers page is one email address. Applicants compare shifts and training before they pick a manufacturer.",
+      "hook": "Find their job posts on a job board or social profile, then check what the site's careers page says about shifts and pay.",
+      "linkLine": "Production careers laid out by shift: {demo-link}"
+    },
+    {
+      "angle": "Plant videos posted, not kept",
+      "line": "Your short videos from the production floor show a clean, busy plant, and they scroll away within a week. A sourcing manager would watch them before booking a visit.",
+      "hook": "Find a recent floor or line video on their social profiles and note the process it shows.",
+      "linkLine": "A plant walkthrough that stays on the manufacturing site: {demo-link}"
+    },
+    {
+      "angle": "Quality mentioned, never explained",
+      "line": "Your footer mentions a quality registration, but there's no page explaining inspection, testing or how corrective actions work. Supplier approval teams look for that before price.",
+      "hook": "Check the site for a quality page. Only mention a registration you actually saw; never claim one.",
+      "linkLine": "A quality and supplier audit page for the plant: {demo-link}"
+    },
+    {
+      "angle": "No way to find a rep",
+      "line": "Your site says products are sold through reps and distributors, but there's no way to find one by region. A contractor ready to buy your product calls whichever manufacturer's rep they can reach.",
+      "hook": "Look for a where-to-buy, find-a-rep or distributor page. If it's a list with no map or routing, the angle still holds.",
+      "linkLine": "A rep and distributor locator for the manufacturer: {demo-link}"
+    },
+    {
+      "angle": "Every industry on one page",
+      "line": "Your industries page lists food equipment, agriculture and energy in one paragraph. Engineers in each want to see the parts and materials you make for their industry.",
+      "hook": "Open their industries or markets page and count how many industries share one page.",
+      "linkLine": "Industry pages for each market the plant serves: {demo-link}"
+    },
+    {
+      "angle": "Trade show booth, older site",
+      "line": "Your booth at the recent industry show looked sharp in the photos. The visitors who looked you up afterwards found a manufacturing site that doesn't match it.",
+      "hook": "Find a trade show post from the last few months. Compare the booth's branding with the site.",
+      "linkLine": "A manufacturing site that matches the booth: {demo-link}"
+    },
+    {
+      "angle": "Customer praise in posts",
+      "line": "A customer posted that your plant held their launch date when another supplier couldn't. That's the line a new buyer needs to see next to the contract manufacturing RFQ.",
+      "hook": "Search social posts and comments for a customer mention of delivery, quality or a launch. Copy one phrase.",
+      "linkLine": "Customer comments beside the manufacturing RFQ: {demo-link}"
+    },
+    {
+      "angle": "New line or building announced",
+      "line": "Congratulations on the new production line you announced. The site still describes the plant as it was, so buyers looking for that new capacity won't find it.",
+      "hook": "Find an expansion, new equipment or new building post, then check whether the site mentions it.",
+      "linkLine": "The new line on a capacity page: {demo-link}"
+    },
+    {
+      "angle": "Buyers moving production closer",
+      "line": "More buyers are looking for manufacturers they can drive to instead of ship from overseas. Your site never says where the plant is or how close it is to their customers.",
+      "hook": "Check whether the site states location, shipping reach and lead times. Use this when they make products often sourced from far away.",
+      "linkLine": "A manufacturing site that says where you are and how fast you ship: {demo-link}"
+    },
+    {
+      "angle": "Reorders by phone only",
+      "line": "Your site tells repeat customers to call customer service to reorder or check an order. Purchasing teams at your bigger accounts would rather check it themselves on the manufacturer's site.",
+      "hook": "Look for a customer login, order status or reorder link. If it's only a phone number, the angle holds.",
+      "linkLine": "An order status and reorder page for repeat buyers: {demo-link}"
+    },
+    {
+      "angle": "Slow pages on site visits",
+      "line": "Your manufacturing pages load slowly with large photos. Engineers often open a supplier's site from the plant floor on a phone, between meetings.",
+      "hook": "Load their product pages over mobile data and note how long the first one takes.",
+      "linkLine": "Product pages that load fast on a phone: {demo-link}"
+    },
+    {
+      "angle": "A specific recent product",
+      "line": "That {specific recent job} you posted is impressive manufacturing work. It deserves its own page an engineer can forward to the sourcing team.",
+      "hook": "Pick their newest product or production run post and name it: product, material and process.",
+      "linkLine": "That product on a page of its own: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner} — that {specific recent job} you posted is strong manufacturing work.\n\nI went through the {Business Name} site and couldn't find spec sheets by product, or an RFQ that takes drawings and volumes. I built a sample with a spec sheet library, a contract manufacturing RFQ and a careers page by shift, with marked placeholders where your photos would go.\n\nWould it help if I sent it to you and whoever runs sales?",
+    "dm2": "{Owner} — following up in case my note got lost between production meetings. Here's the sample for {Business Name}: {demo-link}\n\nIt has spec sheets by product family, an RFQ with drawing upload and volume fields, a rep locator and production careers by shift. If it isn't useful, say so and I'll leave it there.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites and sales tools for manufacturers around {City}. I sent you a note a couple of days ago, did it reach you?\"\n\nIF NO:\n\"No problem. Short version: I built a sample site for {Business Name} with a spec sheet library, an RFQ that takes drawings and annual volumes, and production careers by shift, with marked placeholders where your photos would go. Should I send it to you or to your sales or marketing lead?\"\n\nIF YES:\n\"What did you and the team think?\"\n → let them talk, note who else signs off\n\"The build runs {Build Range}, then {Care Range} a month for hosting, changes and new products. For a plant your size I'd quote about {Build Price}.\"\n\"Could we take thirty minutes with you and whoever owns sales this week?\"\n\nCLOSE:\n\"I'll send a scope and a deposit invoice to whoever approves purchases. We start when it clears.\"",
+    "objections": [
+      {
+        "objection": "Our customers know us. Sales come through reps.",
+        "handler": "\"Then the site is for your reps. A rep locator and spec sheets they can send in one link make every rep look better, and new buyers find the right one.\""
+      },
+      {
+        "objection": "We can't publish what we make for customers.",
+        "handler": "\"Plenty of contract manufacturers show processes, materials and part types without naming the customer. Anything specific goes up only with written clearance.\""
+      },
+      {
+        "objection": "IT has to approve anything touching our systems.",
+        "handler": "\"The site doesn't touch your ERP. The order portal comes later, and I'd scope it with your IT lead before a line of code.\""
+      },
+      {
+        "objection": "We tried a website refresh and it went nowhere.",
+        "handler": "\"Most refreshes change colours. This one adds the pages buyers use: spec sheets, the RFQ with volumes and the quality page. That's the difference you'll see in RFQs.\""
+      },
+      {
+        "objection": "We can't hire anyway; nobody wants factory work.",
+        "handler": "\"People compare plants on shift, pay and training. A careers page that answers those, with a plant tour day, gives you a better shot than a job board post alone.\""
+      },
+      {
+        "objection": "This needs to go to the owners.",
+        "handler": "\"Of course. I'll send a one-page summary of the manufacturing site and its cost, and walk the owners through the demo whenever suits them.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}, because it has a spec sheet library, an RFQ with drawing upload, a rep locator and a careers section. That's less than one mid-size order.\""
+      }
+    ],
+    "email": {
+      "subject": "Spec sheets and RFQ for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites and sales tools for manufacturers around {City}. On the {Business Name} site I couldn't find spec sheets by product, a way for a buyer to send drawings with annual volumes, or shift details for the roles you're hiring.\n\nI built a sample before asking for your time: a spec sheet library by product family, a contract manufacturing RFQ with drawing upload, a rep and distributor locator, a quality page and production careers by shift, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf it's useful, I move it to your domain and finish it for {Build Range}, plus {Care Range} a month for hosting, changes and new products. If not, it comes down at the end of the month.\n\nWould thirty minutes with you and your sales lead work this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build websites for manufacturers in {City}, and I made a sample for {Business Name} with spec sheets by product and an RFQ that takes drawings. I'll email the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner} — I'm taking the {Business Name} manufacturing demo down on Friday.\n\nIf you or your sales lead want it up longer, one word is enough.",
+    "nurture": "Hi {Owner} — a lot of plants around {City} are planning next year's trade shows and budgets now. Thought of you.\n\nThe manufacturing site with the spec sheet library and the RFQ is still here, same price. {demo-link} if you'd like another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to one mid-size order, not to a single sample run.",
+      "Price the spec sheet library by product family, because each family needs its own filters and documents.",
+      "Quote the contract manufacturing RFQ and the careers section together; they are what moves first.",
+      "Anything that reads from the ERP is a separate software project with its own scope.",
+      "Allow a review round for sales, operations and the owners; three sign-offs is normal here.",
+      "Never write a capacity, tolerance or quality registration the plant hasn't supplied in writing."
+    ],
+    "lineItems": [
+      {
+        "item": "Spec sheet library (per product family)",
+        "min": 600,
+        "max": 1500,
+        "unit": "per-page",
+        "description": "Max with filters by size and material, CAD downloads, install guides and compliance documents for every product in the family.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Contract manufacturing RFQ with drawing upload",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "description": "Max with multi-file upload, annual volume and target date fields, NDA checkbox and routing to the right engineer.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Rep and distributor locator",
+        "min": 2000,
+        "max": 6000,
+        "unit": "one-time",
+        "description": "Max with a territory map, postal-code lookup, rep photos placeholders and enquiry routing to each rep by email.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Production careers section",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "description": "Max with roles by shift, a plant tour day sign-up, a short application and a second-language version.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Industry page (each)",
+        "min": 500,
+        "max": 1200,
+        "unit": "per-page",
+        "description": "Max when each page carries sample products, materials, applicable documents and an industry-specific RFQ.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Plant walkthrough video and page",
+        "min": 2500,
+        "max": 7000,
+        "unit": "one-time",
+        "description": "Max with filming across shifts, line-by-line captions and a plant visit request form.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Quality and supplier audit page",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "description": "Max with downloadable quality policy, inspection steps, corrective action process and an audit booking form.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Product and plant photography days",
+      "min": 1500,
+      "max": 4000,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A day shooting products on clean backgrounds and the lines running gives the manufacturing site, spec sheets and catalogues the same pictures.\"",
+      "when": "Month 2, or before a new product launch, with customer-owned parts cleared in writing."
+    },
+    {
+      "name": "Engineer and sourcing outreach by industry",
+      "min": 1500,
+      "max": 3500,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Each month, a short note to engineers and sourcing managers in one industry, with a product or process the plant makes for them and a link to the spec sheets.\"",
+      "when": "Month 3, once industry pages are live."
+    },
+    {
+      "name": "Trade show campaign kit",
+      "min": 2500,
+      "max": 7000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Booth graphics, a product handout and a landing page that captures badge scans for the manufacturer's sales team to follow up.\"",
+      "when": "Three months before their main industry show."
+    },
+    {
+      "name": "Product launch pages and announcement",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A new product gets a launch page, spec sheet, rep briefing and an email to distributors on the same day, so the industrial buyers hear it together.\"",
+      "when": "Whenever a new product or product family is ready to sell."
+    },
+    {
+      "name": "Plant hiring campaign by shift",
+      "min": 1000,
+      "max": 3000,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Short floor videos and local job posts that point applicants to the production careers page, run while the second shift is short.\"",
+      "when": "Whenever they post several production roles or add a shift."
+    },
+    {
+      "name": "Application case studies",
+      "min": 800,
+      "max": 2000,
+      "unit": "per-page",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Plain write-ups of how a customer used the product or how the plant solved a manufacturing problem, with the customer named only if they agree.\"",
+      "when": "Month 4, after sales names two or three good stories."
+    },
+    {
+      "name": "Google profile and plant listing upkeep",
+      "min": 200,
+      "max": 500,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Product and hiring posts on the plant's Google profile, so people searching for an industrial manufacturer or a factory job nearby find an active plant.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Distributor sales sheet refresh",
+      "min": 1200,
+      "max": 3500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Matching sell sheets for every product family, so distributors and reps hand out the same manufacturing story the site tells.\"",
+      "when": "Month 3, once the spec sheet library is live."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Component and raw material suppliers",
+        "whoPays": "The casting, plastics or metal supplier",
+        "min": 8000,
+        "max": 22000,
+        "unit": "one-time",
+        "pitchLine": "\"The foundry or molder that supplies your plant has an older site than yours did. A manufacturer's introduction carries real weight with them.\"",
+        "whyItWorks": "Suppliers want to keep the account happy and trust vendors their customer recommends."
+      },
+      {
+        "route": "Stocking distributors of their products",
+        "whoPays": "The distributor",
+        "min": 10000,
+        "max": 30000,
+        "unit": "one-time",
+        "pitchLine": "\"Your stocking distributors sell your product from a catalogue nobody can search. I already know your product data, so I can start with your lines.\"",
+        "whyItWorks": "The manufacturer's product data is half the distributor's catalogue work."
+      },
+      {
+        "route": "Independent rep agencies",
+        "whoPays": "The rep agency",
+        "min": 4000,
+        "max": 12000,
+        "unit": "one-time",
+        "pitchLine": "\"The rep agency that carries your industrial line needs a line card site showing every manufacturer it represents. Your recommendation opens it.\"",
+        "whyItWorks": "Rep agencies follow their principals' lead and rarely have a decent site."
+      },
+      {
+        "route": "Packaging and corrugated suppliers",
+        "whoPays": "The packaging supplier",
+        "min": 6000,
+        "max": 16000,
+        "unit": "one-time",
+        "pitchLine": "\"The box and packaging plant that ships your products needs a spec and sample request page. One manufacturing customer's word gets me in.\"",
+        "whyItWorks": "Packaging suppliers sell to the same plant buyers and value their big accounts."
+      },
+      {
+        "route": "Automation integrators who service their lines",
+        "whoPays": "The automation integrator",
+        "min": 8000,
+        "max": 20000,
+        "unit": "one-time",
+        "pitchLine": "\"The integrator who built your robot cell sells to every plant in the region with a site full of jargon. Your plant could be their best case study.\"",
+        "whyItWorks": "Integrators need cleared manufacturing case studies, and this client can give them one."
+      },
+      {
+        "route": "Contract warehouse and freight partners",
+        "whoPays": "The warehouse or logistics partner",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The warehouse that holds your finished goods needs a page manufacturers can use to request space. Your plant manager's referral starts it.\"",
+        "whyItWorks": "Logistics partners chase manufacturers as customers and value a referral from one."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Quote assistant for the rep agency",
+        "whoPays": "The rep agency, monthly",
+        "min": 300,
+        "max": 900,
+        "unit": "monthly",
+        "pitchLine": "\"Reps paste a buyer's request, and the assistant matches it to the manufacturer's spec sheets and drafts a quote request for the plant.\"",
+        "whyItWorks": "Reps send cleaner requests; the plant gets fewer back-and-forth emails."
+      },
+      {
+        "route": "Product question assistant for distributors",
+        "whoPays": "The distributor, annually",
+        "min": 6000,
+        "max": 18000,
+        "unit": "per-year",
+        "pitchLine": "\"Counter staff ask which part fits an application and get an answer from the manufacturer's own spec sheets, with the sheet linked.\"",
+        "whyItWorks": "Distributors sell more of the line they can answer questions about."
+      },
+      {
+        "route": "Packaging spec drafter for the box supplier",
+        "whoPays": "The packaging supplier",
+        "min": 4000,
+        "max": 10000,
+        "unit": "one-time",
+        "pitchLine": "\"Manufacturers enter product size, weight and shipping method, and the assistant drafts a packaging spec request for the supplier to review.\"",
+        "whyItWorks": "Packaging quotes stall on missing details; this collects them up front."
+      },
+      {
+        "route": "Service ticket triage for the integrator",
+        "whoPays": "The automation integrator, monthly",
+        "min": 400,
+        "max": 1200,
+        "unit": "monthly",
+        "pitchLine": "\"Plant maintenance describes the cell fault, and the assistant sorts urgent from routine and pulls the right manual section for the technician.\"",
+        "whyItWorks": "Downtime calls are the integrator's most expensive hours, and the manufacturing client feels the faster fix."
+      },
+      {
+        "route": "Mill cert and material reader for the supplier",
+        "whoPays": "The material supplier, monthly",
+        "min": 300,
+        "max": 800,
+        "unit": "monthly",
+        "pitchLine": "\"It reads incoming material certs and matches them to each manufacturer's purchase order, flagging anything that doesn't fit the spec.\"",
+        "whyItWorks": "Suppliers answer fewer quality calls from their manufacturing customers."
+      },
+      {
+        "route": "Shipment status assistant for the logistics partner",
+        "whoPays": "The warehouse or logistics partner, monthly",
+        "min": 300,
+        "max": 900,
+        "unit": "monthly",
+        "pitchLine": "\"Plant customer service asks where an outbound order is and gets the warehouse's answer without a phone call.\"",
+        "whyItWorks": "It cuts the logistics partner's inbound calls, and the manufacturer notices the speed."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "RFQ acknowledgement and engineer routing",
+      "kind": "automation",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Every manufacturing RFQ gets an instant reply with a quote-by date and lands with the right engineer by process and industry.\"",
+      "whenAndWhatItTakes": "Day 30, once the RFQ is live. Needs engineers' names, their processes and the usual quote turnaround."
+    },
+    {
+      "name": "Spec sheet and CAD download portal",
+      "kind": "software",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 9000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"Engineers download CAD and spec sheets after a short sign-in, so sales sees which companies are designing in the manufacturer's products.\"",
+      "whenAndWhatItTakes": "Month 2. Needs CAD files and spec sheets per product, and the sales team's territories."
+    },
+    {
+      "name": "Rep territory lead routing",
+      "kind": "software",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 12000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Every enquiry from the site goes to the rep who covers that buyer's region, and the manufacturer sees who followed up.\"",
+      "whenAndWhatItTakes": "Month 3. Needs rep territories by region and a sales lead to own it."
+    },
+    {
+      "name": "Product question assistant from spec sheets",
+      "kind": "ai",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 300,
+      "monthlyMax": 800,
+      "pitchLine": "\"Buyers ask which product suits their load, size or material and get an answer from the plant's own spec sheets, with the sheet linked and the RFQ next.\"",
+      "whenAndWhatItTakes": "Month 3, after the spec library. Needs every current spec sheet. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Quote follow-up and lost-reason capture",
+      "kind": "automation",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Sales hears back on every open manufacturing quote: the buyer gets a nudge after a week, and each loss is logged as price, delivery or specification.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the quote log and a sales inbox someone watches."
+    },
+    {
+      "name": "Drawing and spec reader for RFQs",
+      "kind": "ai",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 18000,
+      "monthlyMin": 500,
+      "monthlyMax": 1500,
+      "pitchLine": "\"It reads incoming drawings and specs and fills material, finish, volumes and special requirements into the estimating sheet for the plant's estimator to confirm.\"",
+      "whenAndWhatItTakes": "Month 4. Needs a set of past RFQs with the estimates they produced. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Quote narrative and terms writer",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 250,
+      "monthlyMax": 700,
+      "pitchLine": "\"The estimator's numbers become a clean manufacturing quote with assumptions, tooling, lead times and terms in the company's wording.\"",
+      "whenAndWhatItTakes": "Month 3. Needs past quotes and standard terms. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Customer order status portal",
+      "kind": "software",
+      "oneTimeMin": 12000,
+      "oneTimeMax": 40000,
+      "monthlyMin": 500,
+      "monthlyMax": 1500,
+      "pitchLine": "\"Purchasing teams log in to see open orders, ship dates, tracking and documents, read from the manufacturer's ERP instead of a phone call.\"",
+      "whenAndWhatItTakes": "Month 6. Needs read access to order data in their ERP and an IT contact to approve it."
+    },
+    {
+      "name": "Product selector and configurator",
+      "kind": "software",
+      "oneTimeMin": 8000,
+      "oneTimeMax": 25000,
+      "monthlyMin": 300,
+      "monthlyMax": 900,
+      "pitchLine": "\"Buyers choose size, material and options and get the right part number and spec sheet, with impossible industrial combinations blocked.\"",
+      "whenAndWhatItTakes": "Month 5. Needs the option rules engineering uses and the part numbering logic."
+    },
+    {
+      "name": "Production applicant screener",
+      "kind": "ai",
+      "oneTimeMin": 2500,
+      "oneTimeMax": 6000,
+      "monthlyMin": 250,
+      "monthlyMax": 600,
+      "pitchLine": "\"Operator and technician applicants answer questions on shifts, experience and certifications, and HR calls the ones who fit the plant.\"",
+      "whenAndWhatItTakes": "Whenever they're hiring. Needs must-haves by role, shifts and pay ranges. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Repeat order reminders",
+      "kind": "automation",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"When a customer usually reorders a manufactured part every few months, they get a reminder with the last order details before they run short.\"",
+      "whenAndWhatItTakes": "Month 4. Needs order history by customer and part."
+    },
+    {
+      "name": "Distributor portal with price lists and stock",
+      "kind": "software",
+      "oneTimeMin": 15000,
+      "oneTimeMax": 45000,
+      "monthlyMin": 600,
+      "monthlyMax": 2000,
+      "pitchLine": "\"Distributors log in for their price list, available stock, marketing files and order status, so the manufacturer's inside sales stops answering the same emails.\"",
+      "whenAndWhatItTakes": "Month 9. Needs distributor price tiers, stock data from the ERP and a channel manager to own it."
+    },
+    {
+      "name": "Work instruction assistant for operators",
+      "kind": "ai",
+      "oneTimeMin": 8000,
+      "oneTimeMax": 20000,
+      "monthlyMin": 600,
+      "monthlyMax": 1500,
+      "pitchLine": "\"Operators ask how to set up a line changeover and get the plant's own work instruction step by step, in their language.\"",
+      "whenAndWhatItTakes": "Month 7. Needs current work instructions in one place and a supervisor to test. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Complaint and corrective action tracker",
+      "kind": "software",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 16000,
+      "monthlyMin": 250,
+      "monthlyMax": 700,
+      "pitchLine": "\"Every customer complaint becomes a tracked corrective action with owner, root cause and due date, ready when a customer audits the plant.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their current corrective action form and a quality lead."
+    },
+    {
+      "name": "Returns and complaint triage",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 300,
+      "monthlyMax": 700,
+      "pitchLine": "\"Customer complaint emails get sorted by product, defect type and urgency, with a draft reply for quality to approve.\"",
+      "whenAndWhatItTakes": "Month 6, with the corrective action tracker. Needs past complaints and replies. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Certificate of conformance sender",
+      "kind": "automation",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"Each shipment's certificate of conformance and test records go to the customer automatically when the order ships from the plant.\"",
+      "whenAndWhatItTakes": "Month 5. Needs where certificates are stored and shipping data from the ERP."
+    },
+    {
+      "name": "Line output dashboard",
+      "kind": "software",
+      "oneTimeMin": 15000,
+      "oneTimeMax": 50000,
+      "monthlyMin": 600,
+      "monthlyMax": 2000,
+      "pitchLine": "\"Each production line's output, downtime and scrap by shift on one screen, so the plant manager sees problems the same day.\"",
+      "whenAndWhatItTakes": "Month 10. Needs counts from the machines or operator entries, and a plant manager who will use it."
+    },
+    {
+      "name": "Procurement tender watcher",
+      "kind": "ai",
+      "oneTimeMin": 2500,
+      "oneTimeMax": 6000,
+      "monthlyMin": 300,
+      "monthlyMax": 700,
+      "pitchLine": "\"Each week it reads public procurement notices and flags tenders that match the manufacturer's products and processes.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the portals they're registered on and the products they want to sell. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Operator training matrix",
+      "kind": "software",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 14000,
+      "monthlyMin": 200,
+      "monthlyMax": 600,
+      "pitchLine": "\"See which operators are trained on which machines and which sign-offs are due, so supervisors staff each shift with qualified people.\"",
+      "whenAndWhatItTakes": "Month 6. Needs the operator list, machines and current training records."
+    },
+    {
+      "name": "Second-language spec sheet drafts",
+      "kind": "ai",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 6000,
+      "monthlyMin": 200,
+      "monthlyMax": 500,
+      "pitchLine": "\"Spec sheets and install guides get draft translations for export buyers, reviewed by a fluent person at the manufacturer before they go live.\"",
+      "whenAndWhatItTakes": "Month 6, when they sell into another language market. Needs the source sheets and a reviewer. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the RFQ reader for plants in the same niche",
+      "whoPays": "Other manufacturers, monthly",
+      "min": 299,
+      "max": 899,
+      "unit": "monthly",
+      "pitchLine": "\"I built a drawing reader for one contract manufacturer's RFQs. Every plant in that process quotes from the same kinds of drawings.\"",
+      "whyItWorks": "The first plant paid for the logic. Plants in the same process share the same quote inputs."
+    },
+    {
+      "route": "Manufacturers' association member kit",
+      "whoPays": "The association",
+      "min": 5000,
+      "max": 20000,
+      "unit": "one-time",
+      "pitchLine": "\"Give member manufacturers a spec sheet library and production careers template as a benefit of joining.\"",
+      "whyItWorks": "Associations need renewal reasons, and one agreement reaches many plants."
+    },
+    {
+      "route": "Manufacturing advisory centre referrals",
+      "whoPays": "The advisory centre, per plant",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Your advisers help mid-size plants grow sales. A ready RFQ and spec sheet site for each manufacturer you advise is a concrete result.\"",
+      "whyItWorks": "Publicly funded advisory centres buy defined projects for the manufacturers they support."
+    },
+    {
+      "route": "Economic development supplier directory",
+      "whoPays": "The economic development agency",
+      "min": 10000,
+      "max": 35000,
+      "unit": "one-time",
+      "pitchLine": "\"A searchable directory of every manufacturer in the region by process and product, so companies looking to locate here see the supply base.\"",
+      "whyItWorks": "Agencies sell the region on its supply chain and need a credible way to show it."
+    },
+    {
+      "route": "Private equity platform roll-ups",
+      "whoPays": "The holding group, per acquired plant",
+      "min": 12000,
+      "max": 30000,
+      "unit": "one-time",
+      "pitchLine": "\"As you buy manufacturers, each plant gets a site on one frame: spec library, RFQ and careers, under its own brand.\"",
+      "whyItWorks": "Roll-ups need consistent sites quickly and buy them plant by plant."
+    },
+    {
+      "route": "White-label industrial template for agencies",
+      "whoPays": "The agency, per site",
+      "min": 4000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency signs manufacturers and starts from blank. License the spec sheet library and contract manufacturing RFQ frame.\"",
+      "whyItWorks": "Agencies own the client; you supply the part that took longest to build."
+    },
+    {
+      "route": "Same manufacturing kit in the next industrial region",
+      "whoPays": "New manufacturer clients in a new region",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"Each process gets one plant partner in each metro. In {City} that seat is filled; in the next industrial corridor, your plant could take it.\"",
+      "whyItWorks": "Non-competing geography lets you reuse the build, pitch and proof."
+    },
+    {
+      "route": "Workforce board training pipeline",
+      "whoPays": "The workforce board or community college",
+      "min": 6000,
+      "max": 20000,
+      "unit": "one-time",
+      "pitchLine": "\"One page where trainees see which local plants are hiring operators and technicians, built from the careers pages manufacturers already keep.\"",
+      "whyItWorks": "Workforce programmes are judged on placements, and the manufacturing client is an employer they want."
+    },
+    {
+      "route": "Trade show organiser exhibitor pages",
+      "whoPays": "The show organiser",
+      "min": 10000,
+      "max": 30000,
+      "unit": "one-time",
+      "pitchLine": "\"Every exhibitor at your industrial show gets a product page and lead capture that lasts beyond the show floor.\"",
+      "whyItWorks": "Organisers sell more booths when exhibitors get leads they can measure."
+    },
+    {
+      "route": "ERP implementation partners",
+      "whoPays": "The implementation partner, per referral",
+      "min": 5000,
+      "max": 20000,
+      "unit": "one-time",
+      "pitchLine": "\"Your plant clients want order portals that read from the ERP you install. I build the customer-facing side; you keep the system work.\"",
+      "whyItWorks": "Implementers get asked for portals they don't build, and the manufacturing client is proof you can."
+    },
+    {
+      "route": "Nearshoring sourcing networks",
+      "whoPays": "The sourcing network, per member plant",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Your network matches buyers moving production home with local manufacturers. Each member plant needs a capability page in one format.\"",
+      "whyItWorks": "Networks need consistent member pages, and one template serves every plant."
+    },
+    {
+      "route": "Rescue stalled portal and configurator builds",
+      "whoPays": "The manufacturer with a half-built tool",
+      "min": 6000,
+      "max": 25000,
+      "unit": "one-time",
+      "pitchLine": "\"Half-built configurators and customer portals are common in mid-size plants. I finish them, because I've wired the same ERP data for another manufacturer.\"",
+      "whyItWorks": "Stranded clients already decided to buy; they need someone who has done the integration."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Manufacturer site build plus care, one contract",
+      "min": 15000,
+      "max": 40000,
+      "unit": "one-time",
+      "trigger": "Owners and sales approve the demo and scope.",
+      "line": "\"The site and the care plan sit on one contract, so a new product or spec sheet is an email to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "RFQ acknowledgement and engineer routing",
+      "min": 500,
+      "max": 1500,
+      "unit": "one-time",
+      "trigger": "The first RFQs with drawings arrive through the new form.",
+      "line": "\"RFQs are coming in with drawings. An instant reply and routing to the right engineer keeps the buyer from sending it elsewhere.\""
+    },
+    {
+      "rung": 3,
+      "day": 60,
+      "offer": "Spec sheet and CAD download portal",
+      "min": 3000,
+      "max": 9000,
+      "unit": "one-time",
+      "trigger": "Sixty days of traffic show spec sheet pages as the most visited.",
+      "line": "\"Engineers are living on your spec sheets. A short sign-in on CAD downloads tells sales which companies are designing you in.\""
+    },
+    {
+      "rung": 4,
+      "day": 90,
+      "offer": "Production applicant screener",
+      "min": 2500,
+      "max": 6000,
+      "unit": "one-time",
+      "trigger": "Production careers applications pile up, or they add a shift.",
+      "line": "\"The careers page is pulling applicants. A screener on shifts and experience lets HR call only the operators who fit.\""
+    },
+    {
+      "rung": 5,
+      "day": 150,
+      "offer": "Rep territory lead routing",
+      "min": 4000,
+      "max": 12000,
+      "unit": "one-time",
+      "trigger": "A rep complains about a lead that went to the wrong territory, or one nobody followed up.",
+      "line": "\"That lost lead is a routing problem. Every manufacturing enquiry goes to the rep who covers it, and you see who followed up.\""
+    },
+    {
+      "rung": 6,
+      "day": 240,
+      "offer": "Customer order status portal",
+      "min": 12000,
+      "max": 40000,
+      "unit": "one-time",
+      "trigger": "Customer service says where-is-my-order calls take most of their day.",
+      "line": "\"Those order calls are a portal waiting to happen. Your big accounts check status and documents from the plant's ERP themselves.\""
+    },
+    {
+      "rung": 7,
+      "day": 365,
+      "offer": "Distributor portal with price lists and stock",
+      "min": 15000,
+      "max": 45000,
+      "unit": "one-time",
+      "trigger": "Distributors keep emailing for price lists and stock, or a new distributor signs on.",
+      "line": "\"Your distributors ask the same three questions every week. A portal answers them and frees inside sales to sell the manufacturing lines.\""
+    }
+  ]
+}

@@ -1,0 +1,884 @@
+{
+  "schemaVersion": 1,
+  "category": "Multi-location dental groups",
+  "slug": "multi-location-dental-groups",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · expansion batch (healthcare + mid-size)",
+    "generatedAt": "2026-10-13",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Leaned on the group's real problem: offices acquired with their own sites, one brand needed, booking by office and a careers pull for hygienists. Unsure on the scheduling-integration and patient portal ranges; they depend heavily on the group's practice system."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Location finder with a page per dental office",
+      "contains": "A map and list of every office, then one page each with address, hours, parking, step-free access, the dentists and hygienists who work there, insurance taken at that office and a book-at-this-location button",
+      "why": "Patients choose the nearest dental office first and the group second. A page per location is also what shows up when someone in that neighbourhood searches."
+    },
+    {
+      "section": "Insurance and in-house membership plan",
+      "contains": "Insurance plans accepted at each office as a list the group confirms, an in-house dental membership plan for patients without insurance with [plan price] placeholders, and what a first visit includes",
+      "why": "Cost is the question behind most calls to a dental front desk. Answering it on the page frees the phones for bookings."
+    },
+    {
+      "section": "Same-day emergency dental slots",
+      "contains": "Which offices hold emergency slots today, a call button for each, after-hours instructions the clinical lead approves, and a plain note that the page is information, not advice",
+      "why": "Someone with a broken tooth books whichever dental group shows a slot first. Showing the nearest open office wins that visit."
+    },
+    {
+      "section": "Careers hub for hygienists and dental assistants",
+      "contains": "Open roles by office, what a day looks like at the group, benefits and continuing education support as [placeholders], and a short application that routes to the right office manager",
+      "why": "Groups compete for hygienists as hard as for patients, and candidates compare practices on their careers pages before they apply."
+    },
+    {
+      "section": "Privacy, consent and smile photo policy",
+      "contains": "How booking and intake forms handle health details, the written consent required before any testimonial or smile photo appears, an accessibility statement and [privacy contact]",
+      "why": "A group gets asked about this by partners, auditors and careful patients. A clear policy set answers all three."
+    },
+    {
+      "section": "For dentists: joining the group",
+      "contains": "What happens when a practice joins, how existing patients keep their dentist and records, how the office name moves under the group brand, and a confidential enquiry form",
+      "why": "Groups grow by bringing practices in. A selling dentist reads this page quietly long before they make a call."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C26",
+      "siteType": "local-conversion",
+      "name": "Nearest Office",
+      "heroLayout": "card-stack",
+      "mood": ["friendly", "bright", "quick"],
+      "bestFor": "Groups with a handful of family dental offices that need a location finder and a book button on every page",
+      "pairsWithTier": "starter",
+      "headlineSample": "Family dentists across {City}, one close to you",
+      "whyItFits": "Sky blue and rounded type feel gentle to children and nervous adults alike. The hero is a stack of office cards, so the nearest location is the first tap."
+    },
+    {
+      "id": "b",
+      "themeId": "C2",
+      "siteType": "booking-first",
+      "name": "Front Desk Calm",
+      "heroLayout": "split-photo",
+      "mood": ["calm", "warm", "assured"],
+      "bestFor": "Established groups booking new patients, cleanings and emergencies by office, dentist and visit type",
+      "pairsWithTier": "standard",
+      "headlineSample": "Book a dental visit at your nearest {City} office",
+      "whyItFits": "The family's Private Vault combo. A warm cream ground and a refined serif feel like a well-run practice, and the booking panel sits beside a real team photo slot."
+    },
+    {
+      "id": "c",
+      "themeId": "C47",
+      "siteType": "premium-brand",
+      "name": "One Group Brand",
+      "heroLayout": "full-bleed-photo",
+      "mood": ["modern", "confident", "clean"],
+      "bestFor": "Larger groups that have absorbed several practices and want one recognisable brand, careers hub and membership plan",
+      "pairsWithTier": "premium",
+      "headlineSample": "One dental group for every {City} neighbourhood",
+      "whyItFits": "Teal reads as fresh and clinical without feeling cold, and a humanist sans keeps it approachable. It carries a brand that has to unify offices that used to look nothing alike."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "One contact page for all offices",
+      "line": "Your group runs several dental offices, but the site has one contact page with one phone number. Someone in {Neighborhood} can't tell which office is closest or which dentist works there.",
+      "hook": "Count the locations on their Maps results, then check the site for a page per office. Note the office with the most reviews.",
+      "linkLine": "A page for every dental office, with its own book button: {demo-link}"
+    },
+    {
+      "angle": "Acquired offices on old sites",
+      "line": "A few of your locations still link to the websites they had before joining the group. A patient searching their old dentist's name lands on a different brand with different hours.",
+      "hook": "Click the Website link on each office's listing. Note any that land on an old practice name or a dead page.",
+      "linkLine": "Every dental office under one group brand, old addresses redirected: {demo-link}"
+    },
+    {
+      "angle": "Slow on a phone",
+      "line": "Your dental group's site took a long while to load on my phone, and the book button sat under a large banner. Most new patients pick a dentist from their phone in a spare minute.",
+      "hook": "Load the home page on mobile data and count the seconds. Screenshot it for when they reply.",
+      "linkLine": "The group site rebuilt to load fast on a phone: {demo-link}"
+    },
+    {
+      "angle": "No online booking by office",
+      "line": "I couldn't book a cleaning at any of your dental locations online, only call. People who look for a dentist after the kids are in bed would rather pick a time than wait for the office to open.",
+      "hook": "Check the site and each listing for a booking link. If every path ends at a phone number, the angle holds.",
+      "linkLine": "Booking by dental office, dentist and visit type: {demo-link}"
+    },
+    {
+      "angle": "Hiring hygienists",
+      "line": "Saw your group is hiring hygienists and dental assistants at more than one office. There's no careers page on the site, so a good candidate reads the job post and finds nothing behind it.",
+      "hook": "Only if they've posted roles in the last month. Note which offices are hiring.",
+      "linkLine": "A dental careers hub with roles by location: {demo-link}"
+    },
+    {
+      "angle": "Office reviews stay on Maps",
+      "line": "Each of your dental offices has its own reviews, and some name a hygienist patients ask for again. None of that reaches the website, where a nervous new patient makes up their mind.",
+      "hook": "Read the recent reviews for two offices. Note any staff names or phrases that repeat.",
+      "linkLine": "Reviews shown on each dental office's own page: {demo-link}"
+    },
+    {
+      "angle": "Insurance questions in comments",
+      "line": "People keep asking in your comments which insurance each dental office accepts. A short list on every location page would answer that before it ties up the front desk.",
+      "hook": "Scroll their recent posts for insurance questions. Quote one when they reply.",
+      "linkLine": "Insurance shown office by office: {demo-link}"
+    },
+    {
+      "angle": "Membership plan not on the site",
+      "line": "Your posts mention a dental membership plan for patients without insurance, but the site doesn't explain it or let anyone join. That plan is the easiest yes for an uninsured family.",
+      "hook": "Only if they've posted about an in-house plan. Note what it includes, never the price unless they published it.",
+      "linkLine": "A dental membership plan page people can join from: {demo-link}"
+    },
+    {
+      "angle": "Emergency slots hidden",
+      "line": "Your listings say the dental offices see emergencies, but the site doesn't show which location can take someone today. A person with a cracked tooth calls whichever group answers first.",
+      "hook": "Look for 'emergency' or 'same-day' on their listings. Check whether the site says which office has a slot.",
+      "linkLine": "Same-day emergency slots by dental office: {demo-link}"
+    },
+    {
+      "angle": "New office opening",
+      "line": "Saw the group is opening a new dental office in {Neighborhood}. A page for it with the dentists, hours and booking should be live before the doors open, not after.",
+      "hook": "Only if they've announced an opening or a practice joining. Note the date and area.",
+      "linkLine": "A launch page for the new dental office: {demo-link}"
+    },
+    {
+      "angle": "Stock smiles, dated design",
+      "line": "Your group's site still uses stock smiles and a layout from before the group grew. Patients choosing a family dentist want to see the actual offices and the actual team.",
+      "hook": "Note whether the team and office photos are real or stock. Never claim to have their photos.",
+      "linkLine": "A dental group site with marked placeholders where your photos would go: {demo-link}"
+    },
+    {
+      "angle": "Specialist days not shown",
+      "line": "Your posts mention an orthodontist and an oral surgeon who visit certain dental offices on set days. The site doesn't say where or when, so patients phone to ask.",
+      "hook": "Only if they post about visiting specialists. Note which offices and which days.",
+      "linkLine": "Specialist days shown by dental office: {demo-link}"
+    },
+    {
+      "angle": "Languages spoken by office",
+      "line": "Several reviews thank your dental staff for explaining things in the patient's own language. A site that says which languages each office speaks brings those families straight to you.",
+      "hook": "Search reviews for mentions of a language. Note which office they belong to.",
+      "linkLine": "Languages listed on each dental office page: {demo-link}"
+    },
+    {
+      "angle": "Ads land on the home page",
+      "line": "Your ad for new dental patients took me to the general home page, not the office near me or a booking form. That click has to find the nearest location by itself.",
+      "hook": "Only if you saw their ad. Note where it landed and whether there was a booking path.",
+      "linkLine": "Ad landing pages for each dental office: {demo-link}"
+    },
+    {
+      "angle": "A specific recent post",
+      "line": "That {specific recent job} post from one of your dental offices showed the team at its best. It deserves a home on that location's page, where new patients will see it.",
+      "hook": "Pick their newest community or team post and name it exactly. Never reference a patient.",
+      "linkLine": "That dental office's page, with your story on it: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, I was looking at dental groups in {City} and noticed {Business Name} has several offices but one contact page, and no way to book at a specific location online.\n\nI build sites for multi-location dental groups: a page per office, booking by location and dentist, and a careers section for hygienists. I've sketched a sample for your group, with marked placeholders where your photos would go.\n\nWould it help if I sent it? And are you the right person, or should it go to your operations or marketing lead?",
+    "dm2": "{Owner}, following up on my note about the {Business Name} site. Here's the sample: {demo-link}\n\nIt has a location finder, a page per dental office with its team and hours, booking by location, an insurance and membership plan page and a careers hub. Forms are privacy-safe from the start. Nothing goes live without your sign-off. Happy to walk your team through it in fifteen minutes.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for dental groups with several offices here in {City}. I sent a note a few days ago about {Business Name}, did it reach you?\"\n\nIF THE FRONT DESK ANSWERS:\n\"No problem. Who looks after the website and marketing for all the offices? I'd like to send them a sample I built.\"\n\nIF NO:\n\"Short version: I built a sample group site with a page for each office, booking by location and a careers hub for hygienists, with marked placeholders where your photos would go. Can I email it to you and whoever else signs off?\"\n\nIF YES:\n\"What did you and the team think?\"\n → let them talk, don't fill the silence\n\"This isn't a lead service. It's one site the group owns, connected to the scheduling system you already use, not replacing it. The build runs {Build Range} depending on office count and integrations, then {Care Range} a month for hosting, updates and new office pages. For a group your size I'd quote about {Build Price}, as one phased project.\"\n\"Could we take twenty minutes with you and the operations lead this week?\"\n\nCLOSE:\n\"I'll send a one-page scope by phase that you can share with the partners. We start once phase one is approved.\"",
+    "objections": [
+      {
+        "objection": "Our practice software already does online booking.",
+        "handler": "\"Good, then we connect to it rather than replace it. The site gives each office its own page and puts that booking in front of the patient; the schedule stays where your front desks already work.\""
+      },
+      {
+        "objection": "We already pay a dental marketing company.",
+        "handler": "\"Keep them for ads if they're working. Ask who owns the site and whether each office has its own page and booking. If the answer is no, that's the gap I fill, and the group owns the domain and the code.\""
+      },
+      {
+        "objection": "Each office has its own site and patients know them.",
+        "handler": "\"Patients keep the office name they know on its location page, under the group brand. Old addresses redirect, so nobody loses a bookmark or a review link.\""
+      },
+      {
+        "objection": "The partners will all need to agree.",
+        "handler": "\"Of course. I'll send a one-page scope by phase you can circulate, and I'm happy to present to the partners together for twenty minutes.\""
+      },
+      {
+        "objection": "We're worried about patient privacy on web forms.",
+        "handler": "\"Fair. Forms collect only what booking needs, health history stays in your own system, and hosting is set up for health data and signed off by whoever owns privacy at the group.\""
+      },
+      {
+        "objection": "It's too big a project with everything else going on.",
+        "handler": "\"Then we phase it. Location pages and booking first, careers and the membership plan next quarter. Phase one stands on its own if you stop there.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range} depending on office count and integrations. For your group about {Build Price}, plus {Care Range} a month for hosting, updates and a page for each new office.\""
+      }
+    ],
+    "email": {
+      "subject": "One site for every {Business Name} office",
+      "body": "Hi {Owner},\n\nI build websites for dental groups with several offices around {City}. {Business Name} has strong reviews at its locations, but the site has one contact page, no booking by office and no careers section, while you're hiring.\n\nI built a sample first rather than ask for a meeting: a location finder, a page per office with its team and hours, booking by location and dentist, an insurance and membership plan page and a careers hub, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf it's useful, I finish it in phases for {Build Range}, connected to your existing scheduling system, plus {Care Range} a month for hosting and updates. Your team approves every page before it publishes.\n\nWorth twenty minutes with you and your operations lead?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"{Owner}, it's {Your Name}. I build websites for dental groups in {City}, and I made a sample for {Business Name} with a page for each office and booking by location. I'll email the link so you can share it with the team. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm taking down the sample site I built for {Business Name}'s dental offices on Friday.\n\nShould I keep it up for your partners to see? One word is fine either way.",
+    "nurture": "Hi {Owner}, groups often bring a new office in at the start of a new quarter, and you came to mind.\n\nIf {Business Name} adds a location, the sample site already has room for its page and booking. Same scope and price as before. {demo-link} if you'd like another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Price by office count and integrations, not page count. Every location page carries its own team, hours, insurance and booking.",
+      "Quote the scheduling integration as its own line; connecting to their practice system is where the hours and the risk sit.",
+      "Phase the work: brand and office pages, then booking, then careers and membership. Each phase invoices on its own.",
+      "Build a review round with the clinical lead and whoever owns privacy; nothing about treatment goes live unreviewed.",
+      "Never write outcomes or before-and-after promises; testimonials and smile photos only with written consent on file.",
+      "Add a set fee for each office that joins after launch, so growth by acquisition pays for its own pages."
+    ],
+    "lineItems": [
+      {
+        "item": "Dental office location page (each)",
+        "min": 300,
+        "max": 800,
+        "unit": "per-page",
+        "description": "Max with its own team bios, insurance list, parking and access notes, reviews and booking routed to that office.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Scheduling system booking integration",
+        "min": 3000,
+        "max": 9000,
+        "unit": "one-time",
+        "description": "Max when real-time slots come from many office calendars with dentist, hygienist and visit-type rules.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Privacy-safe new patient intake form",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "description": "Max with insurance card upload, consent capture, routing by office and storage set up for health data.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Joining-practice brand migration (each office)",
+        "min": 800,
+        "max": 2500,
+        "unit": "one-time",
+        "description": "Max when the old practice site has many pages to redirect and listings to repoint to the new office page.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Careers hub with roles by office",
+        "min": 1500,
+        "max": 3500,
+        "unit": "one-time",
+        "description": "Max with a page per role type, an application form and alerts to each office manager.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Membership plan sign-up page",
+        "min": 1200,
+        "max": 3000,
+        "unit": "one-time",
+        "description": "Max when plans differ by office or by adult and child, with online sign-up passed to billing.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Translated office pages (per language)",
+        "min": 800,
+        "max": 2500,
+        "unit": "one-time",
+        "description": "Max when every office page, the forms and the policies are translated and checked by a fluent staff member.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Google profile management for every dental office",
+      "min": 400,
+      "max": 1500,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Each office's Google profile kept right: hours, holiday closures, dentists, booking link and a weekly post, so a patient in any neighbourhood sees the same group.\"",
+      "when": "Day 30, once the location pages are live."
+    },
+    {
+      "name": "Review requests by office with consent wording",
+      "min": 300,
+      "max": 900,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"After a dental visit, the patient gets a short request to review that office, in wording your privacy lead approves. Replies never confirm someone was a patient.\"",
+      "when": "Day 45, after privacy sign-off."
+    },
+    {
+      "name": "Team portrait and office photo days",
+      "min": 900,
+      "max": 2500,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"One day per office for portraits of the dentists and hygienists and the treatment rooms, so every location page shows the real dental team. No patients in frame without written consent.\"",
+      "when": "Month 2, office by office."
+    },
+    {
+      "name": "Advertising-approval-ready dental content pack",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Treatment pages and ad copy written without outcome claims, with a submission folder ready where the regulator requires approval before dental advertising runs.\"",
+      "when": "Month 2, before any paid campaign starts."
+    },
+    {
+      "name": "Consent and smile photo policy page set",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Consent forms and policy pages for testimonials and smile photos, so each dental office knows exactly what it can post and what needs a signature first.\"",
+      "when": "Month 1, alongside the privacy pages."
+    },
+    {
+      "name": "Accessibility review of the group site and booking",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A review of every dental office page and the booking flow for screen readers, keyboard use and contrast, with fixes made and a statement page published.\"",
+      "when": "Month 3, or before a partner or insurer asks."
+    },
+    {
+      "name": "Health-data hosting setup for patient forms",
+      "min": 1200,
+      "max": 3500,
+      "unit": "one-time",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Hosting, encryption and access settings for the dental intake and booking forms, configured to the rules where each office practises and documented for your privacy lead.\"",
+      "when": "Before any patient form goes live."
+    },
+    {
+      "name": "Ad landing pages per office and treatment",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Each dental ad lands on a page for the nearest office and that visit type, with booking right there, instead of the group home page.\"",
+      "when": "Month 3, when they mention ad spend."
+    },
+    {
+      "name": "Patient-education article reviewed by the clinical lead",
+      "min": 400,
+      "max": 1000,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"One plain article a month answering a question dental patients really ask, like what happens at a first visit, general information only and approved by your clinical lead.\"",
+      "when": "Month 4, once the core pages are settled."
+    },
+    {
+      "name": "School and community event promotion",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"When an office visits a school or runs a community day, a sign-up page and flyers that point families to that dental location afterwards.\"",
+      "when": "Six weeks before each event."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Specialist practices that take the group's referrals",
+        "whoPays": "The endodontist, periodontist or oral surgery practice",
+        "min": 4000,
+        "max": 9000,
+        "unit": "one-time",
+        "pitchLine": "\"The specialists your dental offices refer to need a referral page and booking of their own. An introduction from a group that sends them patients opens the door.\"",
+        "whyItWorks": "Specialists depend on referring dentists, so a word from a whole group carries real weight."
+      },
+      {
+        "route": "Independent orthodontists who share patients",
+        "whoPays": "The orthodontic practice",
+        "min": 4000,
+        "max": 9000,
+        "unit": "one-time",
+        "pitchLine": "\"The orthodontist who sees your dental patients' children needs a parent-friendly consult page. The group can introduce me at the next referral lunch.\"",
+        "whyItWorks": "Orthodontists court general dentists for referrals and listen to anyone the group recommends."
+      },
+      {
+        "route": "The dental laboratory that makes the group's crowns",
+        "whoPays": "The dental lab",
+        "min": 3000,
+        "max": 8000,
+        "unit": "one-time",
+        "pitchLine": "\"The lab that makes crowns and aligners for your offices sells to dentists across the region. A site with case submission and turnaround pages helps them win more.\"",
+        "whyItWorks": "Labs live on dentist accounts, and a large group is one of their best, so the group's introduction lands."
+      },
+      {
+        "route": "Dental equipment repair and service companies",
+        "whoPays": "The equipment service company",
+        "min": 2000,
+        "max": 5000,
+        "unit": "one-time",
+        "pitchLine": "\"The technicians who fix your chairs and sterilisers sell to every dental office nearby. A service request page with their coverage area is overdue.\"",
+        "whyItWorks": "Small technical firms trust their biggest client's recommendation over any cold pitch."
+      },
+      {
+        "route": "Temporary hygienist and assistant staffing agencies",
+        "whoPays": "The dental staffing agency",
+        "min": 3000,
+        "max": 7000,
+        "unit": "one-time",
+        "pitchLine": "\"The agency that covers your hygienist gaps needs two sites in one: offices booking cover and clinicians signing up for shifts.\"",
+        "whyItWorks": "Agencies win on both sides of the market, and a group client vouching for you matters."
+      },
+      {
+        "route": "Dental practice brokers and dental accountants",
+        "whoPays": "The brokerage or accounting firm",
+        "min": 3000,
+        "max": 8000,
+        "unit": "one-time",
+        "pitchLine": "\"The broker who found your last acquisition and the accountant who checked it both sell to dentists. A confidential seller enquiry page suits them well.\"",
+        "whyItWorks": "Brokers and accountants already work closely with the group's owners and value its referrals."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Referral intake assistant for specialist practices",
+        "whoPays": "The specialist practice, monthly",
+        "min": 199,
+        "max": 499,
+        "unit": "monthly",
+        "pitchLine": "\"Referrals from dental offices arrive as messy letters and calls. An assistant turns each into a tidy referral summary and a booking task for the specialist's front desk.\"",
+        "whyItWorks": "Specialists lose referrals in the gaps, and the group sees its patients booked faster."
+      },
+      {
+        "route": "Case-status answers for the dental lab",
+        "whoPays": "The dental lab, monthly",
+        "min": 149,
+        "max": 399,
+        "unit": "monthly",
+        "pitchLine": "\"Dental offices ask the lab 'where's my case' all day. An assistant answers from the lab's own tracking and flags anything late to a person.\"",
+        "whyItWorks": "Every answered question is a phone call the lab's technicians don't have to take."
+      },
+      {
+        "route": "Clinician shift-matching assistant for staffing agencies",
+        "whoPays": "The dental staffing agency, monthly",
+        "min": 199,
+        "max": 499,
+        "unit": "monthly",
+        "pitchLine": "\"When a dental office needs a hygienist tomorrow, an assistant checks who is available and licensed for that area and drafts the offer for a coordinator to send.\"",
+        "whyItWorks": "Speed fills shifts, and the agency keeps the group happy by filling them first."
+      },
+      {
+        "route": "Service-call triage for equipment technicians",
+        "whoPays": "The equipment service company, monthly",
+        "min": 149,
+        "max": 349,
+        "unit": "monthly",
+        "pitchLine": "\"A dental office reports a fault in plain words; an assistant asks the follow-up questions a technician would and drafts the job ticket with the likely parts.\"",
+        "whyItWorks": "Technicians arrive with the right part, and the clinic's chair is back in use sooner."
+      },
+      {
+        "route": "Practice summary drafts for brokers",
+        "whoPays": "The practice brokerage, monthly",
+        "min": 199,
+        "max": 499,
+        "unit": "monthly",
+        "pitchLine": "\"Brokers write a confidential summary for every dental practice they list. An assistant drafts it from the seller's documents for the broker to check and edit.\"",
+        "whyItWorks": "Drafting is slow, careful work, and faster summaries mean more listings each quarter."
+      },
+      {
+        "route": "Consult follow-up drafts for partner orthodontists",
+        "whoPays": "The orthodontic practice, monthly",
+        "min": 149,
+        "max": 399,
+        "unit": "monthly",
+        "pitchLine": "\"After an orthodontic consult, parents get a clear follow-up drafted from the visit notes, with costs and next steps, reviewed by the orthodontist's team before it sends.\"",
+        "whyItWorks": "Parents decide at home over days, and a clear follow-up keeps the consult from going cold."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Missed-call text-back for every dental office",
+      "kind": "automation",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 149,
+      "monthlyMax": 399,
+      "pitchLine": "\"When an office can't pick up, the caller gets a text with that location's booking link and a note not to send health details by text.\"",
+      "whenAndWhatItTakes": "Day 30. Needs each office's number forwarded and wording the privacy lead approves."
+    },
+    {
+      "name": "Recall and reminder texts by office",
+      "kind": "automation",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 199,
+      "monthlyMax": 499,
+      "pitchLine": "\"Patients due for a cleaning get a reminder from their own dental office with a link to book there, and appointment reminders come from the same place.\"",
+      "whenAndWhatItTakes": "Month 2. Needs access to recall dates in their practice system and approved wording per office."
+    },
+    {
+      "name": "Review reply drafts that never confirm a patient",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 199,
+      "monthlyMax": 499,
+      "pitchLine": "\"Every new review at every dental office gets a short reply drafted in the group's voice that never confirms someone was a patient, ready for the office manager to approve.\"",
+      "whenAndWhatItTakes": "Month 2. Needs a few approved replies and their privacy rules. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Unscheduled treatment follow-up",
+      "kind": "automation",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 149,
+      "monthlyMax": 399,
+      "pitchLine": "\"Patients who accepted a dental treatment plan but never booked it get a polite nudge from their office with a booking link. No clinical claims, just the next step.\"",
+      "whenAndWhatItTakes": "Month 3. Needs an export of accepted, unscheduled plans and wording the clinical lead approves."
+    },
+    {
+      "name": "Membership plan enrolment and billing",
+      "kind": "software",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 12000,
+      "monthlyMin": 200,
+      "monthlyMax": 600,
+      "pitchLine": "\"Uninsured patients join the group's dental membership plan online, pay monthly or yearly, and the front desk at any office sees who is a member.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the plan rules, prices by office and the payment account they already use."
+    },
+    {
+      "name": "Website assistant for hours, insurance and locations",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 400,
+      "monthlyMax": 1200,
+      "pitchLine": "\"It answers 'which office is open Saturday' and 'do you take my insurance' from the group's own dental pages, never gives clinical advice, and offers a booking at the nearest office.\"",
+      "whenAndWhatItTakes": "Month 4. Needs approved insurance lists and office details, plus sign-off on answers. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Hiring pipeline for hygienists and assistants",
+      "kind": "software",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 150,
+      "monthlyMax": 500,
+      "pitchLine": "\"Every dental applicant from the careers hub lands on one board by office and role, so managers see who applied, who was interviewed and who is waiting.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their roles, interview steps and which managers hire for which office."
+    },
+    {
+      "name": "Applicant screener for clinical and front desk roles",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 200,
+      "monthlyMax": 500,
+      "pitchLine": "\"Applicants answer the group's questions on licence status, schedule and preferred dental office, and managers get a short summary of who fits each role.\"",
+      "whenAndWhatItTakes": "Month 4, with the hiring pipeline. Needs must-haves per role. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Intake-to-chart sync with the practice system",
+      "kind": "software",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 15000,
+      "monthlyMin": 200,
+      "monthlyMax": 600,
+      "pitchLine": "\"New patient details from the website land in the dental practice system for the right office, so the front desk stops retyping forms on the morning of the visit.\"",
+      "whenAndWhatItTakes": "Month 4. Needs integration access to their practice system and the privacy lead's sign-off."
+    },
+    {
+      "name": "Insurance question drafts for the front desk",
+      "kind": "ai",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 400,
+      "monthlyMax": 1200,
+      "pitchLine": "\"Front desk staff type a patient's coverage question and get a draft answer from the group's own benefit notes, which they check before replying.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their benefit notes and common questions. Comes with the AI maintenance retainer; staff confirm every answer."
+    },
+    {
+      "name": "Central booking desk view across offices",
+      "kind": "software",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 18000,
+      "monthlyMin": 300,
+      "monthlyMax": 900,
+      "pitchLine": "\"A central phone team sees open slots at every dental office on one screen and books the caller into the nearest one with room today.\"",
+      "whenAndWhatItTakes": "Month 6, when they run a shared phone team. Needs scheduling integration and office rules."
+    },
+    {
+      "name": "Booking-line call summaries and follow-up tasks",
+      "kind": "ai",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 12000,
+      "monthlyMin": 500,
+      "monthlyMax": 1500,
+      "pitchLine": "\"Calls to the booking line, recorded with consent, get a short summary and a follow-up task for the right dental office, so no callback slips.\"",
+      "whenAndWhatItTakes": "Month 6. Needs call recording with consent notices and their phone system access. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Multilingual message drafts for front desks",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 199,
+      "monthlyMax": 499,
+      "pitchLine": "\"Front desk staff write a reminder or reply in English and get a draft in the patient's language, checked by a fluent colleague before a dental office sends it.\"",
+      "whenAndWhatItTakes": "Month 5, where staff can review. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Joining-practice onboarding checklist",
+      "kind": "automation",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"When a practice joins the group, one checklist runs its new location page, redirects, listings, forms and phone forwarding, so no office launches half-done.\"",
+      "whenAndWhatItTakes": "Month 6, before the next acquisition. Needs their onboarding steps and who owns each."
+    },
+    {
+      "name": "Office performance dashboard",
+      "kind": "software",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 18000,
+      "monthlyMin": 300,
+      "monthlyMax": 900,
+      "pitchLine": "\"Bookings, no-shows, new patients and review counts for each dental office on one screen, so the operations lead sees which location needs help this month.\"",
+      "whenAndWhatItTakes": "Month 7. Needs three months of booking and phone data from each office."
+    },
+    {
+      "name": "Referral portal for specialists and referring dentists",
+      "kind": "software",
+      "oneTimeMin": 8000,
+      "oneTimeMax": 20000,
+      "monthlyMin": 300,
+      "monthlyMax": 800,
+      "pitchLine": "\"Specialists and outside dentists send referrals into the group through a secure portal and see when the patient is booked, instead of faxing letters to one office.\"",
+      "whenAndWhatItTakes": "Month 8. Needs their referral process, privacy sign-off and the list of referring practices."
+    },
+    {
+      "name": "Treatment page drafts checked against advertising rules",
+      "kind": "ai",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 300,
+      "monthlyMax": 800,
+      "pitchLine": "\"New dental treatment pages and posts are drafted with outcome claims and banned phrases flagged against the group's own advertising rules, before the clinical lead reviews them.\"",
+      "whenAndWhatItTakes": "Month 7. Needs the group's advertising rules and a list of approved phrasing. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Visit note drafts from dentist dictation",
+      "kind": "ai",
+      "oneTimeMin": 8000,
+      "oneTimeMax": 20000,
+      "monthlyMin": 800,
+      "monthlyMax": 2500,
+      "pitchLine": "\"After each appointment the dentist dictates for a minute and gets a draft clinical note in the group's format to review and sign. Nothing saves without the dentist's approval.\"",
+      "whenAndWhatItTakes": "Month 9. Needs their note templates, consent wording and a privacy review. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Patient portal for forms, visits and balances",
+      "kind": "software",
+      "oneTimeMin": 15000,
+      "oneTimeMax": 45000,
+      "monthlyMin": 600,
+      "monthlyMax": 2000,
+      "pitchLine": "\"Patients at any office log in to see upcoming dental visits, complete forms, pay a balance and book family members, in the group's own brand.\"",
+      "whenAndWhatItTakes": "Month 10. Needs deep practice-system integration, payment setup and a full privacy review."
+    },
+    {
+      "name": "Ad spend to booked-visit reporting by office",
+      "kind": "software",
+      "oneTimeMin": 12000,
+      "oneTimeMax": 35000,
+      "monthlyMin": 600,
+      "monthlyMax": 2000,
+      "pitchLine": "\"Joins ad clicks, calls and bookings so the group sees what each dental office's new patients actually cost, and moves budget to where it works.\"",
+      "whenAndWhatItTakes": "Month 12. Needs six months of ad, phone and booking data and access to each system."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the multi-office dental site for other groups",
+      "whoPays": "Other dental groups, monthly per group",
+      "min": 499,
+      "max": 1500,
+      "unit": "monthly",
+      "pitchLine": "\"The location finder, booking by office and careers hub I built for one dental group fit any group with several offices, loaded with their own locations.\"",
+      "whyItWorks": "The first group paid for the structure and integrations; the next one needs only its offices and brand."
+    },
+    {
+      "route": "Dental support organisations' marketing teams",
+      "whoPays": "The support organisation's central marketing budget",
+      "min": 30000,
+      "max": 90000,
+      "unit": "one-time",
+      "pitchLine": "\"You support dozens of dental offices under different brands. One platform for every office page, booking and careers, rolled out brand by brand.\"",
+      "whyItWorks": "Support organisations buy centrally and roll out widely, so one sale covers many offices."
+    },
+    {
+      "route": "Regional dental association member template",
+      "whoPays": "The dental association, as a member benefit",
+      "min": 5000,
+      "max": 20000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer member dentists a compliant site template with privacy-safe forms and a consent policy already written, so they stop asking you about websites.\"",
+      "whyItWorks": "Associations run on member benefits, and website compliance is a question members keep bringing them."
+    },
+    {
+      "route": "White-label for dental marketing agencies",
+      "whoPays": "The agency, per dental group client",
+      "min": 3000,
+      "max": 9000,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency runs ads for dental groups but rebuilds location pages from scratch each time. I deliver the multi-office build under your name.\"",
+      "whyItWorks": "Agencies own the relationship and want a fast, reliable build they don't have to staff."
+    },
+    {
+      "route": "Equipment dealers' new-office programmes",
+      "whoPays": "The dental equipment dealer, per new office",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"When you fit out a new dental office, bundle its location page and booking so it opens with patients already booked.\"",
+      "whyItWorks": "Dealers want their new offices to succeed, and a site is a cheap, visible add to a large fit-out."
+    },
+    {
+      "route": "Practice transition consultants",
+      "whoPays": "The transition consultant, per practice",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Every practice you move into a group needs its site migrated, redirects set and patients told. I handle that piece so your transitions close cleaner.\"",
+      "whyItWorks": "Consultants are judged on smooth handovers, and the website is a visible loose end."
+    },
+    {
+      "route": "Dental school new-graduate practice launch kit",
+      "whoPays": "The dental school's career or alumni office",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Graduates opening or buying a practice need a compliant dental site on day one. A launch kit from the school carries your name with every new office.\"",
+      "whyItWorks": "Schools want alumni to succeed, and each graduating class repeats the need."
+    },
+    {
+      "route": "Other multi-location healthcare groups",
+      "whoPays": "Optometry, physiotherapy or hearing groups with several clinics",
+      "min": 15000,
+      "max": 40000,
+      "unit": "one-time",
+      "pitchLine": "\"The location finder, booking by clinic and careers hub I built for a dental group work for any healthcare group with several clinics.\"",
+      "whyItWorks": "The multi-location problem is the same across healthcare; only the services and wording change."
+    },
+    {
+      "route": "Membership plan engine for independent dentists",
+      "whoPays": "Independent dental practices, monthly",
+      "min": 49,
+      "max": 149,
+      "unit": "monthly",
+      "pitchLine": "\"The membership plan sign-up and billing I built for a group, offered to single dental practices that want an in-house plan without the setup.\"",
+      "whyItWorks": "Every independent dentist wants a plan for uninsured patients, and the engine is already built."
+    },
+    {
+      "route": "Investor groups buying dental practices",
+      "whoPays": "The investment group's operations team",
+      "min": 20000,
+      "max": 80000,
+      "unit": "one-time",
+      "pitchLine": "\"Each dental practice you buy arrives with its own site. I bring them under one structure on a set timeline after every close.\"",
+      "whyItWorks": "Investors want acquisitions integrated quickly, and a repeatable website step fits their playbook."
+    },
+    {
+      "route": "One dental group per metro",
+      "whoPays": "A dental group in another metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I build for one multi-office dental group per metro. Groups in {City} that compete with you won't get the same structure from me.\"",
+      "whyItWorks": "Groups value not sharing a builder with a direct rival, and the structure carries over to the next metro."
+    },
+    {
+      "route": "Finishing stalled rebrands after an acquisition",
+      "whoPays": "The dental group with a half-finished rebrand",
+      "min": 8000,
+      "max": 25000,
+      "unit": "one-time",
+      "pitchLine": "\"Your group changed its name but half the dental offices still run the old sites. I finish the rebrand on a structure that's already working elsewhere.\"",
+      "whyItWorks": "These groups have already decided and budgeted; they need someone to finish."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Group site build plus care plan, one contract",
+      "min": 12000,
+      "max": 30000,
+      "unit": "one-time",
+      "trigger": "The operations lead and partners approve phase one of the scope.",
+      "line": "\"The dental group site and the care plan sit on one contract, so a new office page or an hours change is a message to me, not a project.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Google profile management for every dental office",
+      "min": 400,
+      "max": 1500,
+      "unit": "monthly",
+      "trigger": "The first bookings arrive through location pages, and some office listings still show old hours.",
+      "line": "\"Patients are booking from the location pages. Keeping every office's profile right sends more of them there.\""
+    },
+    {
+      "rung": 3,
+      "day": 60,
+      "offer": "Missed-call text-back for every dental office",
+      "min": 500,
+      "max": 1500,
+      "unit": "one-time",
+      "trigger": "Office managers mention missed calls at the busiest locations.",
+      "line": "\"Your busiest dental office misses calls at lunch. A text with its booking link catches those patients.\""
+    },
+    {
+      "rung": 4,
+      "day": 90,
+      "offer": "Hiring pipeline for hygienists and assistants",
+      "min": 4000,
+      "max": 10000,
+      "unit": "one-time",
+      "trigger": "Applications from the careers hub pile up in several managers' inboxes.",
+      "line": "\"Hygienist applications are scattered across inboxes. One board by office stops good candidates slipping away.\""
+    },
+    {
+      "rung": 5,
+      "day": 120,
+      "offer": "Membership plan enrolment and billing",
+      "min": 4000,
+      "max": 12000,
+      "unit": "one-time",
+      "trigger": "Front desks report uninsured patients asking about the plan from the website.",
+      "line": "\"Patients are reading about the dental membership plan. Let them join online instead of at the counter.\""
+    },
+    {
+      "rung": 6,
+      "day": 180,
+      "offer": "Central booking desk view across offices",
+      "min": 6000,
+      "max": 18000,
+      "unit": "one-time",
+      "trigger": "Another practice joins the group, or they set up a shared phone team.",
+      "line": "\"With another office joining, a shared phone team needs one view of open dental slots everywhere.\""
+    },
+    {
+      "rung": 7,
+      "day": 270,
+      "offer": "Patient portal for forms, visits and balances",
+      "min": 15000,
+      "max": 45000,
+      "unit": "one-time",
+      "trigger": "Front desks say most calls are about balances, forms and family bookings.",
+      "line": "\"Your front desks spend their day on balances and forms. A patient portal takes those calls off the phones at every dental office.\""
+    },
+    {
+      "rung": 8,
+      "day": 365,
+      "offer": "Ad spend to booked-visit reporting by office",
+      "min": 12000,
+      "max": 35000,
+      "unit": "one-time",
+      "trigger": "The annual budget review, when partners ask which offices' ads pay back.",
+      "line": "\"A year in, let's see what a new patient costs at each dental office and move the budget where it works.\""
+    }
+  ]
+}

@@ -6,7 +6,8 @@ file gets approved.
 
 ## What a category kit is
 
-One JSON file per board category, at `src/kits/<kitSlug>.json`, where
+One JSON file per category, the original board's 124 and the catalogue's 43 healthcare and mid-size categories
+(`src/lib/kit/extBoard.ts`, analysis in `docs/expansion/category-analysis.md`), at `src/kits/<kitSlug>.json`, where
 `kitSlug("Fencing & gates") === "fencing-gates"`. The contract is
 [`docs/prompts/field-kit-v2/category-kit.schema.json`](prompts/field-kit-v2/category-kit.schema.json); every
 description in it is an instruction to whoever writes a file.
@@ -22,6 +23,10 @@ The port is not touched. `generateKit` still builds the original kit, the golden
 and `pnpm parity` still prove it, and `CHANGES.md` stays about the three corrections. The overlay is a
 separate pure function, `applyCategoryKit` in `src/lib/kit-v2/apply.ts`, with its own goldens in
 `golden/v2`. A category without a file shows the original kit unchanged, marked **Generic kit**.
+
+Mid-size kits sell systems (booking, location pages, portals, integrations) to a manager, so `pnpm kits:check` allows
+them higher money caps: one-time up to 150,000 and monthly up to 8,000. Kits are written country-neutral and in US
+dollars; the market layer (`src/lib/market/`) converts prices and adds the Canada, UAE and healthcare notes.
 
 ## Provenance
 

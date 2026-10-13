@@ -1,0 +1,870 @@
+{
+  "schemaVersion": 1,
+  "category": "Car dealers & dealer groups",
+  "slug": "car-dealers-dealer-groups",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · expansion batch (healthcare + mid-size)",
+    "generatedAt": "2026-10-13",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Independent and used-car dealers and small groups stuck on a listings-vendor template. Leaned on the inventory feed, finance application, trade-in tool and rooftop pages. Feed and dealer-system integration ranges vary a lot by system and are set wide; finance copy stays general and never states rates or approval."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Vehicle detail pages with history and inspection",
+      "contains": "Every car with its own gallery, specs, mileage, price, a vehicle history report slot, the dealer's reconditioning checklist, an example monthly payment and test drive and reserve buttons",
+      "why": "Used-car buyers decide on the detail page. History, inspection and a clear price answer the fear of buying someone else's problem."
+    },
+    {
+      "section": "Secure car finance application",
+      "contains": "A private pre-qualification form, document upload, finance options described as examples subject to approval, and what happens after they apply",
+      "why": "Most car buyers finance. A finance application they can finish at home brings them to the showroom ready to sign, not to start paperwork."
+    },
+    {
+      "section": "Trade-in valuation and sell-us-your-car",
+      "contains": "A trade-in form with plate or vehicle details, mileage, condition questions and photo upload, a same-day appraisal promise the dealer sets, and a buy-outright option",
+      "why": "The trade is half of most deals. Buyers who know their trade's range early commit to the dealer who gave it."
+    },
+    {
+      "section": "Rooftop pages for each dealership",
+      "contains": "Each lot or showroom with its address, hours, inventory filtered to that rooftop, the sales and service team, directions and reviews for that location",
+      "why": "Dealer group shoppers want the lot nearest them with the car they want. A page per rooftop ranks for each town and stops cross-lot confusion."
+    },
+    {
+      "section": "Dealer service department booking",
+      "contains": "Service menu with starting prices, online booking by service type, courtesy transport options, and reminders for customers who bought from the dealer",
+      "why": "Service brings buyers back to the dealership between purchases. Online booking keeps them from drifting to an independent shop."
+    },
+    {
+      "section": "Reserve online and home delivery",
+      "contains": "Reserve a car with a refundable deposit, the hold period, home test drive or delivery areas and fees, and what paperwork is done remotely",
+      "why": "Buyers shopping across towns want to lock the car before the drive. A clear reserve option turns an online browser into a committed buyer."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C50",
+      "siteType": "local-conversion",
+      "name": "Lot on a Phone",
+      "heroLayout": "split-photo",
+      "mood": ["sharp", "fast", "direct"],
+      "bestFor": "Independent used-car dealers who need search, price and a call or text button on the first screen",
+      "pairsWithTier": "starter",
+      "headlineSample": "Quality used cars in {City}, priced and ready",
+      "whyItFits": "Redline Mono's bold red accent and mono labels suit prices, mileage and specs, and read like a performance gauge without clutter."
+    },
+    {
+      "id": "b",
+      "themeId": "C48",
+      "siteType": "catalog",
+      "name": "Showroom Inventory",
+      "heroLayout": "card-stack",
+      "mood": ["glossy", "confident", "focused"],
+      "bestFor": "Dealers whose inventory is the site: filters, detail pages, finance and trade-in on every car",
+      "pairsWithTier": "standard",
+      "headlineSample": "Browse every car on our {City} lots",
+      "whyItFits": "The family's own combo. Noir Editorial's dark ground makes car photography glow like a showroom, and the Didone headings add polish."
+    },
+    {
+      "id": "c",
+      "themeId": "C2",
+      "siteType": "premium-brand",
+      "name": "Dealer Group Flagship",
+      "heroLayout": "full-bleed-photo",
+      "mood": ["established", "trusted", "refined"],
+      "bestFor": "Dealer groups and premium pre-owned dealers selling on reputation across several rooftops",
+      "pairsWithTier": "premium",
+      "headlineSample": "{City}'s family of dealerships, one place to shop",
+      "whyItFits": "Private Vault's classical serif and restrained palette suit a group selling trust and premium cars, with room for several rooftop brands."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "Inventory slow on a phone",
+      "line": "Your inventory page took a long time to load on my phone, and the filters jumped around as it did. Car shoppers scroll lots on their lunch break and leave a dealer page that stalls.",
+      "hook": "Open their inventory on a phone over mobile data. Note roughly how long until the first car and price appear.",
+      "linkLine": "The same car inventory, fast on a phone: {demo-link}"
+    },
+    {
+      "angle": "Template like every dealer",
+      "line": "Your dealer site runs on the same template as half the lots in town, so a shopper flicking between dealers can't tell yours apart. Your reviews say you're different; the site doesn't.",
+      "hook": "Compare their site to two other local dealers. Note the matching layout, footer or vendor credit.",
+      "linkLine": "A dealer site that looks like your lot, not a template: {demo-link}"
+    },
+    {
+      "angle": "Call for price",
+      "line": "Several cars on your site say call for price. Used-car shoppers filter by budget first, and a car with no number drops out of the search before anyone calls.",
+      "hook": "Count how many listings show no price or 'call for price'. Note one model.",
+      "linkLine": "Every car priced with an example monthly payment: {demo-link}"
+    },
+    {
+      "angle": "Finance form is a contact form",
+      "line": "Your finance page is a basic contact form. Car buyers want to apply privately at home, upload documents and walk in ready, not start paperwork at the dealer desk.",
+      "hook": "Open their finance or credit page and list the fields. Check whether it's secure and whether documents can be uploaded.",
+      "linkLine": "A secure car finance application with document upload: {demo-link}"
+    },
+    {
+      "angle": "No trade-in value",
+      "line": "There's no way to value a trade-in on your site. Most car buyers have a car to sell, and they talk to the dealer who gives them a range first.",
+      "hook": "Look for a trade-in, sell-your-car or valuation link on their site. Note whether it exists and what it asks.",
+      "linkLine": "A trade-in valuation form on every car: {demo-link}"
+    },
+    {
+      "angle": "Rooftops share one site",
+      "line": "Your group runs several lots, but the site lists them on one locations page with mixed inventory. A shopper can't see which cars sit at the dealership near them.",
+      "hook": "Count the rooftops on their listings, then check whether the site filters inventory by lot and has a page for each.",
+      "linkLine": "A page for each dealership with its own inventory: {demo-link}"
+    },
+    {
+      "angle": "Hiring sales and technicians",
+      "line": "I've seen your posts hiring car salespeople and service technicians, and the site has no careers page. Good people check whether a dealer looks organised before they apply.",
+      "hook": "Find a current sales, finance or technician job post and note the rooftop. Check the site footer for careers.",
+      "linkLine": "A dealer careers section by rooftop and role: {demo-link}"
+    },
+    {
+      "angle": "Reviews naming salespeople",
+      "line": "Your reviews keep naming the salesperson who made buying a car easy. That's the worry every used-car shopper has, and none of it shows next to the inventory.",
+      "hook": "Copy one review line that names a salesperson or the finance manager. Quote it back if they reply.",
+      "linkLine": "Dealer reviews next to every car: {demo-link}"
+    },
+    {
+      "angle": "Service department hidden",
+      "line": "Your service department is a phone number at the bottom of the dealer site. Customers who bought a car from you would book their service online if the button were there.",
+      "hook": "Look for service booking on their site. Note whether it's a form, a number or missing.",
+      "linkLine": "Service booking for every car you've sold: {demo-link}"
+    },
+    {
+      "angle": "Listings fresher on marketplaces",
+      "line": "Your cars show up on the big listing sites with more detail than on your own dealer site. Shoppers who click through to you find less, and some go back to compare elsewhere.",
+      "hook": "Find one of their cars on a marketplace and on their own site. Note what's missing from their site's version.",
+      "linkLine": "Your own car listings, richer than the marketplaces: {demo-link}"
+    },
+    {
+      "angle": "Month-end sales push",
+      "line": "Your month-end car offers live in social posts that disappear in a day. A specials page tied to the inventory keeps them in front of shoppers until the deal ends.",
+      "hook": "Look for recent offer or sale posts. Check whether the site has a specials page that matches.",
+      "linkLine": "A car specials page tied to live inventory: {demo-link}"
+    },
+    {
+      "angle": "Dealer licence and warranty",
+      "line": "Used-car buyers look for the dealer licence, warranty options and return policy before they visit. Your site mentions none of them near the cars.",
+      "hook": "Look for a dealer licence number, warranty or return wording on their site or listing. Use only what they publish, in [brackets] on the demo.",
+      "linkLine": "Dealer licence, warranty and return policy on every car: {demo-link}"
+    },
+    {
+      "angle": "Late-night shoppers",
+      "line": "Most car shoppers browse after work, when your showroom is closed. Right now the only option at night is a contact form. A reserve button would hold the car until morning.",
+      "hook": "Check what a shopper can do on their site after hours: reserve, apply, book a test drive, or only send a message.",
+      "linkLine": "Reserve a car online after hours: {demo-link}"
+    },
+    {
+      "angle": "No history or inspection",
+      "line": "Your listings don't show a vehicle history report or what your team checked during reconditioning. Used-car buyers go to the dealer who shows that up front.",
+      "hook": "Open three listings and check for history reports, inspection checklists or reconditioning notes.",
+      "linkLine": "Car history and inspection on every detail page: {demo-link}"
+    },
+    {
+      "angle": "A specific recent arrival",
+      "line": "That {specific recent job} you posted is exactly the kind of car people search for by name. It deserves a full detail page with finance and trade-in, not just a post.",
+      "hook": "Pick their newest arrival post, a standout car or a fresh trade-in, and name the model.",
+      "linkLine": "That car on a detail page that sells it: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner} — I've been looking at how {Business Name} shows its cars online.\n\nThe inventory is strong and the reviews are good, but the site has no trade-in value, the finance form is a basic contact form, and several cars have no price. I've put together a sample dealer site with all three fixed, with marked placeholders where your photos would go.\n\nWould it help if I sent it to you or your internet sales manager?",
+    "dm2": "{Owner} — following up in case this got buried. Here's the sample site for {Business Name}: {demo-link}\n\nIt has inventory filtered by rooftop, detail pages with history and inspection slots, a secure finance application, a trade-in form and online service booking. Happy to walk you and your sales manager through it in fifteen minutes.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}. I build websites and inventory tools for independent car dealers and dealer groups. I sent a sample site for {Business Name} last week, did it reach you?\"\n\nIF NO:\n\"Short version: inventory by lot, detail pages with history and inspection, a secure finance application, trade-in valuation and service booking, with marked placeholders where your photos would go. Who runs internet sales on your side?\"\n\nIF YES:\n\"What did you and the sales team think?\"\n → let them talk, then ask: \"Where do your best leads come from today, your site or the marketplaces?\"\n\"The site runs {Build Range}, then {Care Range} a month for hosting, inventory feed upkeep and reporting. For your group I'd expect about {Build Price}. Connections to your dealer management system are quoted once I see it.\"\n\"Could we get thirty minutes with you and your sales and finance managers next week?\"\n\nCLOSE:\n\"I'll send a scope with the site and inventory feed first, and finance and service integrations as phase two.\"",
+    "objections": [
+      {
+        "objection": "Our website comes bundled with our inventory provider.",
+        "handler": "\"Keep the inventory provider for the feed. I build the site on top of it so your cars, finance and trade-in look like your dealership, not every other lot on the same template.\""
+      },
+      {
+        "objection": "We get our leads from the big listing sites.",
+        "handler": "\"Keep them. Many of those shoppers click through to check you out before they call. If your own site has more detail, history and a trade-in value, they buy from you instead of comparing.\""
+      },
+      {
+        "objection": "We can't put finance terms online.",
+        "handler": "\"We don't state rates. Example payments are labelled as examples, subject to approval, and the application is just secure intake. Your finance manager signs off every line.\""
+      },
+      {
+        "objection": "Prices change too often to publish.",
+        "handler": "\"That's why prices come from the inventory feed. Change it in your system and the car's page updates the same day.\""
+      },
+      {
+        "objection": "The general manager and the owner both need to agree.",
+        "handler": "\"Of course. I'll send a short recording of the sample and a one-page scope, and I'll join a call with both of them.\""
+      },
+      {
+        "objection": "What's the cost?",
+        "handler": "\"The site is {Build Range}, about {Build Price} for your group, plus {Care Range} a month. A few extra car sales from your own site cover it. Integrations are quoted after I see your systems.\""
+      }
+    ],
+    "email": {
+      "subject": "Inventory, finance and trade-in for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites and inventory tools for independent car dealers and dealer groups. {Business Name} has good inventory and reviews, but the site has no trade-in value, the finance form is a basic contact form, and several cars have no price.\n\nI built a sample instead of asking for a meeting: inventory filtered by rooftop, detail pages with history and inspection slots, a secure finance application, a trade-in form, reserve online and service booking, with marked placeholders where your photos would go:\n\n{demo-link}\n\nThe site runs {Build Range}, plus {Care Range} a month for hosting, inventory feed upkeep and reporting. Connections to your dealer management system are scoped separately.\n\nWorth thirty minutes with you and your sales manager?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build inventory sites with finance and trade-in tools for car dealers, and I made a sample for {Business Name}. I'll email the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner} — I'm clearing out sample sites this week, including the {Business Name} dealer site with the finance application and trade-in form.\n\nShould I keep it up for your sales manager? One word either way is fine.",
+    "nurture": "Hi {Owner} — new-year car shoppers start browsing lots in {City} soon, and most of them have a trade-in. Thought of you.\n\nThe sample with the trade-in form and finance application is still here: {demo-link}. Same scope and price whenever the timing works."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to the gross on a handful of car sales a year, never to a monthly template fee.",
+      "The inventory feed is the core: price on the number of rooftops and the systems it syncs with, not page count.",
+      "Quote the site and the dealer system integrations as separate phases; the second depends on their vendor's access rules.",
+      "Finance and trade-in forms carry personal data; charge for secure handling and the finance manager's sign-off on wording.",
+      "Never publish rates, approval promises or a dealer licence they haven't shown; leave bracketed slots.",
+      "Price rooftop pages per dealership, each with its own inventory filter, team and reviews."
+    ],
+    "lineItems": [
+      {
+        "item": "Inventory feed sync from the dealer system",
+        "min": 3000,
+        "max": 10000,
+        "unit": "one-time",
+        "description": "Max when several rooftops, sold-car removal, price changes and photo order sync automatically several times a day.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Secure finance application",
+        "min": 2500,
+        "max": 7000,
+        "unit": "one-time",
+        "description": "Max with document upload, co-applicant, encryption at rest and routing to each rooftop's finance manager.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Trade-in valuation form",
+        "min": 1500,
+        "max": 5000,
+        "unit": "one-time",
+        "description": "Max with plate or vehicle lookup, condition questions, photo upload and routing to the appraiser with a same-day reply.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Rooftop page with filtered inventory (each)",
+        "min": 600,
+        "max": 1500,
+        "unit": "per-page",
+        "description": "Max with its own inventory filter, staff profiles, service hours, directions and location reviews.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Reserve online with refundable deposit",
+        "min": 2000,
+        "max": 6000,
+        "unit": "one-time",
+        "description": "Max with deposit payment, hold timer, automatic removal from search and alerts to the sales desk.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Service booking section",
+        "min": 1500,
+        "max": 4500,
+        "unit": "one-time",
+        "description": "Max with a service menu, booking into the service lane's schedule and courtesy transport options.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Specials page tied to inventory",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "description": "Max when specials pull from tagged cars, expire automatically and show example payments with disclaimers.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Speed and accessibility pass on inventory pages",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "description": "Max when hundreds of car pages need image compression, alt text, contrast and form label fixes.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Walk-around video for every car",
+      "min": 800,
+      "max": 3000,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A short walk-around clip of each car as it hits the lot, added to its detail page, so shoppers see the paint and interior before driving over.\"",
+      "when": "Month 1, priced by cars added a month."
+    },
+    {
+      "name": "Google profile management for each rooftop",
+      "min": 400,
+      "max": 1500,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Each dealership's listing gets weekly posts of fresh arrivals and specials, correct sales and service hours, and answered questions.\"",
+      "when": "Month 1, priced by rooftop count."
+    },
+    {
+      "name": "Delivery-day review requests by salesperson",
+      "min": 300,
+      "max": 900,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"When a buyer drives off, they get a thank-you text from the dealer asking for a review that names their salesperson, routed to the right rooftop.\"",
+      "when": "Month 1, once sold dates can be shared from the dealer system."
+    },
+    {
+      "name": "Fresh arrivals and specials email",
+      "min": 400,
+      "max": 1200,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A weekly email of new cars on the lot and current specials to past buyers and saved searchers, with each car linked to its detail page.\"",
+      "when": "Month 2."
+    },
+    {
+      "name": "Short-form car video content",
+      "min": 1000,
+      "max": 3000,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Short clips of standout cars, delivery moments and the service bay for social channels, each pointing to the car or the trade-in form.\"",
+      "when": "Month 2."
+    },
+    {
+      "name": "Showroom and lot signage refresh",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Window stickers with a scan-to-view code, lot signs and showroom displays that match the new dealer site and its trade-in offer.\"",
+      "when": "After launch."
+    },
+    {
+      "name": "Monthly dealer lead source report",
+      "min": 300,
+      "max": 800,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"One page a month: car leads, finance applications, trade-ins and test drives by rooftop and source, so the GM sees where buyers come from.\"",
+      "when": "Month 2, after a full month of data."
+    },
+    {
+      "name": "Second-language car pages",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Detail pages, the finance application and the trade-in form in a second language your buyers prefer, with wording approved by the finance manager.\"",
+      "when": "Month 3, where many buyers prefer another language."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Body shops and detailers doing their reconditioning",
+        "whoPays": "The body shop or detailer",
+        "min": 4000,
+        "max": 12000,
+        "unit": "one-time",
+        "pitchLine": "\"The body shop that reconditions your trade-ins quotes retail customers by phone. A photo estimate site with booking would bring them more cars.\"",
+        "whyItWorks": "Recon vendors depend on the dealer's volume and take an introduction from them seriously."
+      },
+      {
+        "route": "Tint, film and accessory installers",
+        "whoPays": "The installer, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The shop that fits tint and accessories on your sold cars sells by word of mouth. A package and booking site is quick for me.\"",
+        "whyItWorks": "Installers rely on the dealer for steady work, and referrals already pass at every delivery."
+      },
+      {
+        "route": "Insurance agents writing their buyers' policies",
+        "whoPays": "The insurance agency",
+        "min": 4000,
+        "max": 12000,
+        "unit": "one-time",
+        "pitchLine": "\"The agent your buyers call before they drive off quotes by phone only. A quote request page with document upload is my next build.\"",
+        "whyItWorks": "Agents want the dealer's buyers at the moment of purchase and value the referral."
+      },
+      {
+        "route": "Business fleet customers",
+        "whoPays": "The fleet operator",
+        "min": 6000,
+        "max": 18000,
+        "unit": "one-time",
+        "pitchLine": "\"The contractor who buys work vans from your lot books its fleet servicing by phone. A fleet portal for their drivers would save them hours.\"",
+        "whyItWorks": "Fleet buyers trust the dealer they buy from and need better systems for their own operations."
+      },
+      {
+        "route": "Towing and recovery partners",
+        "whoPays": "The towing company",
+        "min": 3000,
+        "max": 10000,
+        "unit": "one-time",
+        "pitchLine": "\"The tow company that moves your auction cars and breakdowns has no booking page. A dispatch request site with tracking would suit them.\"",
+        "whyItWorks": "Tow operators move dealer cars weekly and value the relationship."
+      },
+      {
+        "route": "Driving schools sending new drivers",
+        "whoPays": "The driving school",
+        "min": 3000,
+        "max": 9000,
+        "unit": "one-time",
+        "pitchLine": "\"The driving school whose students buy their first car from you books lessons by text. A lesson booking site is a natural build.\"",
+        "whyItWorks": "Schools and dealers share first-time buyers, and families trust both."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Photo estimate drafter for body shops",
+        "whoPays": "The body shop, monthly",
+        "min": 300,
+        "max": 900,
+        "unit": "monthly",
+        "pitchLine": "\"Customers upload photos of a dent or scrape, and the body shop gets draft repair notes and a range to confirm before quoting.\"",
+        "whyItWorks": "Body shops spend hours on photo quotes; the dealer client gets faster recon turnarounds too."
+      },
+      {
+        "route": "Package recommender for tint and accessory installers",
+        "whoPays": "The installer, monthly",
+        "min": 200,
+        "max": 600,
+        "unit": "monthly",
+        "pitchLine": "\"Buyers enter their new car's model and how they drive, and the installer gets a suggested tint and protection package to quote.\"",
+        "whyItWorks": "Installers sell more when the buyer arrives knowing what they want, and the dealer's delivery is the moment."
+      },
+      {
+        "route": "Policy question assistant for insurance agents",
+        "whoPays": "The insurance agency, monthly",
+        "min": 300,
+        "max": 900,
+        "unit": "monthly",
+        "pitchLine": "\"New car buyers ask what cover they need to drive off, and the agent gets a structured quote request with the car's details filled in.\"",
+        "whyItWorks": "Agents answer the same questions for every dealer referral, and fast cover keeps deliveries on time."
+      },
+      {
+        "route": "Driver issue triage for fleet customers",
+        "whoPays": "The fleet operator, monthly",
+        "min": 300,
+        "max": 900,
+        "unit": "monthly",
+        "pitchLine": "\"Drivers report a warning light or a scrape by message, and the fleet manager gets the issue sorted by urgency with a service booking drafted at the dealer.\"",
+        "whyItWorks": "Fleet managers chase drivers for details; the dealer client gets the service work."
+      },
+      {
+        "route": "Dispatch call sorter for towing partners",
+        "whoPays": "The towing company, monthly",
+        "min": 300,
+        "max": 900,
+        "unit": "monthly",
+        "pitchLine": "\"Callers describe where they are and what happened, and the tow dispatcher gets location, vehicle and job type before calling back.\"",
+        "whyItWorks": "Tow companies take calls while driving; the dealer client gets its cars moved faster."
+      },
+      {
+        "route": "Lesson scheduler for driving schools",
+        "whoPays": "The driving school, monthly",
+        "min": 200,
+        "max": 500,
+        "unit": "monthly",
+        "pitchLine": "\"Students message to book or move lessons, and the assistant matches instructor availability and confirms, with test-day reminders.\"",
+        "whyItWorks": "Instructors juggle bookings between lessons, and the dealer gains goodwill with first-time buyers' families."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Lead text-back with the car's detail page",
+      "kind": "automation",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Any car enquiry or missed call gets a text within a minute with that car's page, a test drive link and the salesperson's name.\"",
+      "whenAndWhatItTakes": "Month 1. Needs rooftop numbers forwarded, lead routing rules and approved wording."
+    },
+    {
+      "name": "Price-drop alerts for saved searches",
+      "kind": "automation",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"Shoppers who save a car or a search get an alert when the price drops or a matching car arrives, and come back to the dealer site, not a marketplace.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the inventory feed live and opt-in at signup."
+    },
+    {
+      "name": "Inventory feed connected to the dealer management system",
+      "kind": "software",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 15000,
+      "monthlyMin": 200,
+      "monthlyMax": 600,
+      "pitchLine": "\"Cars, prices, photos and sold status flow from your dealer system to the site and back, so nobody updates a car twice.\"",
+      "whenAndWhatItTakes": "Month 1 to month 2. Needs the dealer system's feed access and the inventory provider's export rules."
+    },
+    {
+      "name": "Website assistant for car questions",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 400,
+      "monthlyMax": 1200,
+      "pitchLine": "\"It answers 'does this car have a tow bar' and 'is it still available' from the live inventory and your policies, then books a test drive. It never quotes rates.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the inventory feed, dealer policies and approved finance wording. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Vehicle description writer",
+      "kind": "ai",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 200,
+      "monthlyMax": 600,
+      "pitchLine": "\"Each new car on the lot gets a draft description from its specs, options and recon notes, for the sales manager to check before it goes live.\"",
+      "whenAndWhatItTakes": "Month 2, after the feed. Needs spec data and a tone guide. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Review reply drafts by rooftop",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 200,
+      "monthlyMax": 600,
+      "pitchLine": "\"When a buyer praises the car they bought and the person who sold it, a reply naming both is drafted for the dealership manager.\"",
+      "whenAndWhatItTakes": "Month 2. Needs listing access per rooftop and a tone guide. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Online finance application with lender routing",
+      "kind": "software",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 18000,
+      "monthlyMin": 200,
+      "monthlyMax": 700,
+      "pitchLine": "\"Car buyers complete a secure finance application with documents, and it lands in your finance desk's system ready to send to lenders.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the finance desk's system access, data security rules where they operate and the finance manager's sign-off."
+    },
+    {
+      "name": "Trade-in appraisal tool",
+      "kind": "software",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 15000,
+      "monthlyMin": 200,
+      "monthlyMax": 600,
+      "pitchLine": "\"Buyers enter their car, condition and photos, and the appraiser gets a structured request with market comparisons to reply with a range the same day.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the appraiser's rules, a market data source they already pay for, and reply wording."
+    },
+    {
+      "name": "Abandoned finance application follow-up",
+      "kind": "automation",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"Buyers who start a car finance application and stop get a polite reminder with a link back to where they left off, and the finance desk sees who stalled.\"",
+      "whenAndWhatItTakes": "Month 4, after the finance application. Needs consent wording and approved messages."
+    },
+    {
+      "name": "After-hours car sales assistant",
+      "kind": "ai",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 14000,
+      "monthlyMin": 600,
+      "monthlyMax": 2000,
+      "pitchLine": "\"Evening shoppers chat or call about a car, and the assistant confirms availability, takes trade-in details and books a test drive for the morning.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the inventory feed, salesperson calendars and approved wording. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Service booking connected to the service lane",
+      "kind": "software",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 14000,
+      "monthlyMin": 200,
+      "monthlyMax": 600,
+      "pitchLine": "\"Customers book a service by car and job type into real open slots, and the advisor sees the car's history from the dealer system before it arrives.\"",
+      "whenAndWhatItTakes": "Month 4. Needs service scheduling access, the service menu and bay capacity."
+    },
+    {
+      "name": "Finance document completeness checker",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 300,
+      "monthlyMax": 900,
+      "pitchLine": "\"Uploaded documents are checked for missing pages, expired IDs and mismatched names before the finance manager opens the file. It never decides approval.\"",
+      "whenAndWhatItTakes": "Month 5. Needs the document checklist per finance type and strict data handling. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Service reminder sequence for past buyers",
+      "kind": "automation",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"Everyone who bought a car gets reminders for their first services and seasonal checks, with a booking link to your service lane.\"",
+      "whenAndWhatItTakes": "Month 5. Needs sold-car records and service intervals by model."
+    },
+    {
+      "name": "Reconditioning tracker",
+      "kind": "software",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 16000,
+      "monthlyMin": 200,
+      "monthlyMax": 700,
+      "pitchLine": "\"Every trade-in from appraisal to frontline: mechanical, body, detail and photos, with days in each step, so cars hit the lot faster.\"",
+      "whenAndWhatItTakes": "Month 5. Needs recon steps, vendor list and the trade-in intake from the dealer system."
+    },
+    {
+      "name": "Trade-in condition notes from photos",
+      "kind": "ai",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 300,
+      "monthlyMax": 900,
+      "pitchLine": "\"The customer's trade-in photos become draft condition notes for the appraiser: visible damage, tyres, interior wear, for them to confirm on the lot.\"",
+      "whenAndWhatItTakes": "Month 6, after the appraisal tool. Needs past trade-in photos with appraiser notes. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Lead response dashboard across rooftops",
+      "kind": "software",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 18000,
+      "monthlyMin": 200,
+      "monthlyMax": 800,
+      "pitchLine": "\"Every car lead, finance application and trade-in by rooftop and salesperson, with response times and outcomes, so the GM sees which leads go cold.\"",
+      "whenAndWhatItTakes": "Month 6. Needs lead data from the site and a CRM or dealer system export."
+    },
+    {
+      "name": "Lead email reply drafter for the sales desk",
+      "kind": "ai",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 400,
+      "monthlyMax": 1200,
+      "pitchLine": "\"Incoming car enquiries from every source get a drafted reply with the car's details, alternatives on the lot and a test drive offer, for a salesperson to send.\"",
+      "whenAndWhatItTakes": "Month 6. Needs the lead inbox, inventory feed and tone guide. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Sales and technician applicant screener",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 300,
+      "monthlyMax": 900,
+      "pitchLine": "\"Applicants for dealer sales, finance and technician roles answer role questions, and each rooftop manager gets a ranked list to call.\"",
+      "whenAndWhatItTakes": "Any month they're hiring. Needs must-haves and pay plans per role. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Aged inventory dashboard",
+      "kind": "software",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 16000,
+      "monthlyMin": 200,
+      "monthlyMax": 700,
+      "pitchLine": "\"Each car's days on the lot, page views, leads and price changes by rooftop, so managers move aged cars before they cost more to hold.\"",
+      "whenAndWhatItTakes": "Month 7. Needs a few months of inventory and site data."
+    },
+    {
+      "name": "Buyer portal for documents and delivery",
+      "kind": "software",
+      "oneTimeMin": 10000,
+      "oneTimeMax": 25000,
+      "monthlyMin": 300,
+      "monthlyMax": 900,
+      "pitchLine": "\"Car buyers log in to sign documents, upload insurance, pick a delivery time and see their service history afterwards.\"",
+      "whenAndWhatItTakes": "Month 8. Needs document templates, signing rules where they operate and delivery scheduling."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the dealer site for independent car lots",
+      "whoPays": "Independent dealers, monthly per rooftop",
+      "min": 400,
+      "max": 1500,
+      "unit": "monthly",
+      "pitchLine": "\"I built an inventory site with finance and trade-in for one dealer group. Every independent car lot is stuck on the same template.\"",
+      "whyItWorks": "The first client paid for the feed and finance work, which every dealer on the same systems shares."
+    },
+    {
+      "route": "Independent dealer associations",
+      "whoPays": "The association",
+      "min": 5000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Members get a dealer site template with inventory feed, finance intake and plain disclosure wording, at a member rate.\"",
+      "whyItWorks": "Associations want members to look trustworthy and compliant; one agreement reaches many dealers."
+    },
+    {
+      "route": "Wholesale car auctions' dealer network",
+      "whoPays": "The auction house, annually",
+      "min": 15000,
+      "max": 50000,
+      "unit": "per-year",
+      "pitchLine": "\"Offer dealers who buy at your auction a site that lists their purchases the day they land, and they keep buying from your lanes.\"",
+      "whyItWorks": "Auctions compete for dealer buyers, and a tool that speeds retail sales drives more purchases."
+    },
+    {
+      "route": "Dealer group acquirers",
+      "whoPays": "The acquiring group, per rooftop",
+      "min": 8000,
+      "max": 25000,
+      "unit": "one-time",
+      "pitchLine": "\"Every dealership you buy gets moved onto one site system with its own rooftop page and inventory, in weeks.\"",
+      "whyItWorks": "Groups acquire regularly and need consistent sites without starting from scratch each time."
+    },
+    {
+      "route": "White-label for agencies serving dealers",
+      "whoPays": "The agency, per site",
+      "min": 3000,
+      "max": 8000,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency runs car ads that land on template sites. License my inventory, finance and trade-in system for your dealer clients.\"",
+      "whyItWorks": "Agencies keep the client; you sell the part that converts their traffic."
+    },
+    {
+      "route": "Auto lenders' dealer partner portal",
+      "whoPays": "The lender, annually",
+      "min": 15000,
+      "max": 50000,
+      "unit": "per-year",
+      "pitchLine": "\"Dealers send complete, checked finance applications to you through one portal, so your underwriters stop chasing missing documents.\"",
+      "whyItWorks": "Lenders want clean applications from dealers; the finance intake already produces them."
+    },
+    {
+      "route": "Fleet and leasing companies' remarketing sites",
+      "whoPays": "The fleet or leasing company",
+      "min": 15000,
+      "max": 45000,
+      "unit": "one-time",
+      "pitchLine": "\"Sell your off-lease and ex-fleet cars direct to buyers and dealers with the same inventory site, history and reserve tools.\"",
+      "whyItWorks": "Remarketing teams need retail-quality listings; the dealer build is the same shape."
+    },
+    {
+      "route": "Car rental companies selling ex-rental cars",
+      "whoPays": "The rental company",
+      "min": 10000,
+      "max": 30000,
+      "unit": "one-time",
+      "pitchLine": "\"Your ex-rental cars could sell retail from your own site, with history, inspection and finance intake, instead of going to auction.\"",
+      "whyItWorks": "Rental firms want better returns on disposal, and the inventory system already exists."
+    },
+    {
+      "route": "Motorcycle, boat and caravan dealers",
+      "whoPays": "The dealer",
+      "min": 10000,
+      "max": 30000,
+      "unit": "one-time",
+      "pitchLine": "\"The inventory, finance and trade-in system I built for car dealers fits bikes, boats and caravans with a change of specs.\"",
+      "whyItWorks": "Adjacent dealers have the same sales process and the same template problem."
+    },
+    {
+      "route": "Extended warranty providers' dealer pages",
+      "whoPays": "The warranty provider, per dealer",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Every dealer selling your warranty gets a plain explainer page and a quote option on each car detail page.\"",
+      "whyItWorks": "Warranty providers want dealers to present cover clearly; the detail pages already exist."
+    },
+    {
+      "route": "The same dealer system for the next region's group",
+      "whoPays": "A non-competing dealer group in another region",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I work with one dealer group per region, and {City} is taken. The next region is open, and the inventory system is ready.\"",
+      "whyItWorks": "Non-competing geography lets you reuse the feed, finance intake and the case study."
+    },
+    {
+      "route": "Rescue stalled dealer software projects",
+      "whoPays": "The dealer with an unfinished build",
+      "min": 5000,
+      "max": 20000,
+      "unit": "one-time",
+      "pitchLine": "\"Paid for a dealer site, finance tool or inventory feed that never worked? I've shipped that exact build for a car dealer group.\"",
+      "whyItWorks": "Stranded buyers already decided to spend and want someone who has finished one."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Dealer site and inventory feed plus care plan, one contract",
+      "min": 15000,
+      "max": 40000,
+      "unit": "one-time",
+      "trigger": "They approve the scope after the walkthrough with the sales manager.",
+      "line": "\"The dealer site and the care plan are one contract, so a new rooftop, special or policy change is one message to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Delivery-day review requests by salesperson",
+      "min": 300,
+      "max": 900,
+      "unit": "monthly",
+      "trigger": "A month live, and managers see which salespeople get named in reviews.",
+      "line": "\"Your best salespeople already get named. Asking at every car delivery puts that next to every listing.\""
+    },
+    {
+      "rung": 3,
+      "day": 60,
+      "offer": "Online finance application with lender routing",
+      "min": 6000,
+      "max": 18000,
+      "unit": "one-time",
+      "trigger": "The finance desk mentions retyping applications from the site.",
+      "line": "\"Your finance managers retype every car application. Let them arrive complete and ready to send.\""
+    },
+    {
+      "rung": 4,
+      "day": 90,
+      "offer": "Trade-in appraisal tool",
+      "min": 5000,
+      "max": 15000,
+      "unit": "one-time",
+      "trigger": "Trade-in requests pile up and appraisers reply a day or more later.",
+      "line": "\"Trade-in requests wait a day for a reply. Let the appraiser answer the same afternoon and keep the car buyer.\""
+    },
+    {
+      "rung": 5,
+      "day": 150,
+      "offer": "After-hours car sales assistant",
+      "min": 5000,
+      "max": 14000,
+      "unit": "one-time",
+      "trigger": "Site data shows most car enquiries arrive after the showroom closes.",
+      "line": "\"Most of your car enquiries arrive after closing. Let them book a test drive before they find another lot.\""
+    },
+    {
+      "rung": 6,
+      "day": 210,
+      "offer": "Reconditioning tracker",
+      "min": 6000,
+      "max": 16000,
+      "unit": "one-time",
+      "trigger": "Managers complain about trade-ins sitting in recon before they hit the lot.",
+      "line": "\"Your trade-ins sit in recon too long. The tracker shows which step holds each car up.\""
+    },
+    {
+      "rung": 7,
+      "day": 300,
+      "offer": "Aged inventory dashboard",
+      "min": 6000,
+      "max": 16000,
+      "unit": "one-time",
+      "trigger": "Leadership reviews holding costs and asks which cars and rooftops are slow.",
+      "line": "\"You have months of car data now. The dashboard shows which cars to reprice before they age further.\""
+    },
+    {
+      "rung": 8,
+      "day": 365,
+      "offer": "Buyer portal for documents and delivery",
+      "min": 10000,
+      "max": 25000,
+      "unit": "one-time",
+      "trigger": "They plan remote sales or home delivery across rooftops.",
+      "line": "\"Buyers want to sign and schedule delivery from home. The portal lets your dealer group sell a car without a showroom visit.\""
+    }
+  ]
+}

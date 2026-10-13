@@ -1,0 +1,862 @@
+{
+  "schemaVersion": 1,
+  "category": "Hearing & audiology clinics",
+  "slug": "hearing-audiology-clinics",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · expansion batch (healthcare + mid-size)",
+    "generatedAt": "2026-10-13",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Leaned on the two-buyer pattern: older patients researching slowly and adult children booking for them. No hearing outcomes or device claims; prices, trial terms and credentials stay as clinic-supplied placeholders. Unsure on the manufacturer-programme and buying-group route prices."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "What happens at a hearing test",
+      "contains": "Each step of the appointment in order: a chat about everyday listening, an ear check, the sound booth, speech-in-noise listening, and the results explained in plain words, with [duration] for each and a note to bring a family member",
+      "why": "Many people put off a hearing test because they expect a sales pitch. Seeing the steps, and that results are explained calmly first, is what gets the booking."
+    },
+    {
+      "section": "Hearing aid styles and what's bundled",
+      "contains": "The hearing aid styles the clinic fits (behind-the-ear, receiver-in-canal, in-the-ear, rechargeable), the clinic's [price bands], and what each includes: fitting, follow-up visits, cleanings and [trial period terms]",
+      "why": "Buyers compare the total price and what comes with it. Adult children want a number before they let a parent walk into a fitting."
+    },
+    {
+      "section": "Booking a hearing test for a parent or partner",
+      "contains": "How to book a hearing test for someone else, why the clinic encourages a family member to come along, how consent and sharing of results work, and the parking and step-free access at the door",
+      "why": "The person searching is often a son, daughter or spouse. A page written to them turns the researcher into the person who books."
+    },
+    {
+      "section": "Tinnitus consultations",
+      "contains": "What a tinnitus consultation involves, the options the audiologist may discuss in the clinic's approved wording, and what the first visit costs, with no promise of relief",
+      "why": "Tinnitus searchers are anxious and read late at night. A calm, honest explanation earns the consultation; a promise would lose their trust and break the rules."
+    },
+    {
+      "section": "Repairs, batteries and aid aftercare",
+      "contains": "Walk-in cleaning hours, repair drop-off and loaner aids, domes, wax guards and batteries by pickup or post, loss and damage cover on the clinic's [terms], and remote adjustment if offered",
+      "why": "Existing wearers choose a clinic they can rely on for service. Clear aftercare also wins people unhappy with where they bought their aids."
+    },
+    {
+      "section": "Earwax removal and custom ear protection",
+      "contains": "Earwax removal appointments by the method the clinic uses, custom musician earplugs, swim plugs and noise protection moulds, each with a [price] and booking link",
+      "why": "Wax removal and custom moulds bring in new faces who often book a hearing test later, so these pages feed the main appointment."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C27",
+      "siteType": "local-conversion",
+      "name": "Friendly Hearing Check",
+      "heroLayout": "split-photo",
+      "mood": ["warm", "unhurried", "plain-spoken"],
+      "bestFor": "Single-audiologist clinics that need the hearing test booking, prices and parking on one easy page",
+      "pairsWithTier": "starter",
+      "headlineSample": "Book a hearing test in {City}, explained before you arrive",
+      "whyItFits": "Grape Soda's humanist sans reads large and friendly for older eyes, and the split hero puts the audiologist beside the Book button."
+    },
+    {
+      "id": "b",
+      "themeId": "C2",
+      "siteType": "booking-first",
+      "name": "Audiology Appointment Desk",
+      "heroLayout": "card-stack",
+      "mood": ["trusted", "quiet", "established"],
+      "bestFor": "Clinics with several audiologists offering hearing tests, fittings, tinnitus visits and wax removal as separate bookings",
+      "pairsWithTier": "standard",
+      "headlineSample": "Hearing tests, fittings and aftercare in {City}",
+      "whyItFits": "The family's Private Vault combo: a warm light ground and classical serif feel like a long-standing practice, and the card stack lets each appointment type book separately."
+    },
+    {
+      "id": "c",
+      "themeId": "C5",
+      "siteType": "editorial-trust",
+      "name": "The Hearing Guide",
+      "heroLayout": "type-led",
+      "mood": ["reassuring", "readable", "thorough"],
+      "bestFor": "Established audiology practices that want to be the place families read before choosing hearing aids",
+      "pairsWithTier": "premium",
+      "headlineSample": "Choosing hearing aids in {City}: start with the facts",
+      "whyItFits": "Counting House's bookish serif is made for long reading, which suits careful buyers who study styles, bundles and aftercare before a big purchase."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your hearing clinic's Maps listing has kind reviews but no website, so a daughter looking up audiologists for her dad in {City} can't see what a hearing test involves before she calls.",
+      "hook": "Open their Maps listing and confirm there is no Website button. Screenshot it for when they reply.",
+      "linkLine": "Here's what could sit behind that button for the hearing clinic: {demo-link}"
+    },
+    {
+      "angle": "Facebook page as the website",
+      "line": "The website link on your listing opens the audiology clinic's Facebook page. Someone pricing hearing aids wants styles, what's bundled and a test booking, not a feed.",
+      "hook": "Tap the link on their listing and confirm it lands on Facebook. Note the latest post.",
+      "linkLine": "The hearing clinic's essentials on one page: {demo-link}"
+    },
+    {
+      "angle": "Old hearing aid models online",
+      "line": "Your site still shows hearing aid styles that look several generations old, with no mention of rechargeable aids. Buyers who've read up notice that before they ever call.",
+      "hook": "Open their site and find one stale detail: an old device range, a departed audiologist, old hours. Note it.",
+      "linkLine": "The same audiology clinic, current: {demo-link}"
+    },
+    {
+      "angle": "Small text on a phone",
+      "line": "I opened your hearing clinic's site on my phone and the text was tiny with no way to tap to call. Your patients' families read on phones, often on behalf of someone older.",
+      "hook": "Only if they have a site. Load it on your phone and note the text size and the call path. Screenshot it for when they reply.",
+      "linkLine": "The hearing clinic, rebuilt for a phone and easy to read: {demo-link}"
+    },
+    {
+      "angle": "No online hearing test booking",
+      "line": "There's no way to book a hearing test online, only a phone line during clinic hours. Plenty of people with hearing loss find phone calls the hardest part.",
+      "hook": "Look for any booking form or calendar on their site or listing. If calling is the only route, the angle holds.",
+      "linkLine": "Hearing test booking without a phone call: {demo-link}"
+    },
+    {
+      "angle": "Adult children doing the search",
+      "line": "A lot of hearing test bookings are made by a son or daughter. Nothing on your page speaks to them: how to book for a parent, whether they can come along, what it costs.",
+      "hook": "Read their reviews for mentions of a family member who booked or came along. Quote one if you find it.",
+      "linkLine": "A page for families booking a hearing test for a parent: {demo-link}"
+    },
+    {
+      "angle": "Reviews stuck on Google",
+      "line": "Your Google reviews keep mentioning how patiently the audiologist explains everything. That's what a nervous first-time hearing aid buyer wants to read, and it's not on any page they'd find.",
+      "hook": "Read their reviews and copy one phrase about patience, explanation or follow-up care. Quote it back. Never imply a hearing result.",
+      "linkLine": "Your reviews beside the hearing test booking: {demo-link}"
+    },
+    {
+      "angle": "Family gatherings season",
+      "line": "End-of-year family gatherings are when relatives notice someone missing the conversation. The weeks after are when they search for a hearing test nearby and pick the clinic that explains it best.",
+      "hook": "Use this in the weeks before the end-of-year holidays or a big local family occasion. Name the occasion.",
+      "linkLine": "A hearing clinic page ready for after the holidays: {demo-link}"
+    },
+    {
+      "angle": "Tinnitus searches at night",
+      "line": "People search about ringing in their ears at night, when it's loudest and the clinic is closed. Your page doesn't mention tinnitus consultations or let them request one.",
+      "hook": "Check whether their site or listing mentions tinnitus at all. If it doesn't, or there's no request route, the angle holds.",
+      "linkLine": "A calm tinnitus consultation page for the clinic: {demo-link}"
+    },
+    {
+      "angle": "Hiring an audiologist",
+      "line": "Saw the clinic is hiring an audiologist. Candidates compare independent hearing practices partly on how the clinic presents its patients, equipment and team online.",
+      "hook": "Only if they posted a hiring notice for an audiologist, hearing aid practitioner or front desk. Note the date.",
+      "linkLine": "A hearing clinic page with a careers section: {demo-link}"
+    },
+    {
+      "angle": "Home and care home visits",
+      "line": "Your posts mention visiting care homes for hearing checks and aid cleaning. A page listing the residences you visit and how families arrange it would bring you more of that work.",
+      "hook": "Look for posts about care home visits, home visits or a mobile van. Use the real names they mention.",
+      "linkLine": "A home and care home visits page for the audiology clinic: {demo-link}"
+    },
+    {
+      "angle": "Payment plans not explained",
+      "line": "Under your posts, people ask what hearing aids cost and whether they can pay monthly. A clear page on price bands and payment options answers it before they talk themselves out of it.",
+      "hook": "Look for cost or payment questions in comments and reviews. Never state a price or plan they haven't published.",
+      "linkLine": "Hearing aid prices and payment options on one page: {demo-link}"
+    },
+    {
+      "angle": "Credentials not shown",
+      "line": "Your audiologist clearly has years of training, and nothing online says which licence or qualifications they hold. That's the first thing a careful hearing aid buyer checks.",
+      "hook": "Look at their bios and posts for qualifications. Never state a licence, degree or membership they haven't published.",
+      "linkLine": "Your audiologists' qualifications, stated plainly: {demo-link}"
+    },
+    {
+      "angle": "Doctor referrals only",
+      "line": "It looks like many of your hearing patients come from local family doctors. Each one still looks the clinic up before booking, and finds very little to confirm the referral.",
+      "hook": "Look for reviews saying 'my doctor sent me' or posts thanking referring practices. Quote it.",
+      "linkLine": "Where a referred hearing patient would land: {demo-link}"
+    },
+    {
+      "angle": "A specific recent post",
+      "line": "Your {specific recent job} post explained hearing aid care better than most clinic sites do. Right now it scrolls away within a week instead of living on a page families can find.",
+      "hook": "Pick their newest educational post, community talk or clinic event and name it exactly. Never a patient story.",
+      "linkLine": "That hearing care explanation, on its own page: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, your post about {specific recent job} explained hearing aid care clearly and without any sales talk.\n\nI looked for a site for {Business Name} and only found the listing and social pages. I put together a sample hearing clinic page with the hearing test explained step by step, a page for families booking for a parent, aftercare details and online booking, with marked placeholders where your photos would go.\n\nWould you like me to send it over?",
+    "dm2": "{Owner}, following up in case my note got lost between appointments. Here's the sample audiology site for {Business Name}: {demo-link}\n\nIt walks a first-timer through the hearing test, gives families their own page, and lets people book without phoning, which matters to people who struggle on the phone. If it's not for you, say so and I won't message again.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for hearing clinics here in {City}. I sent a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"No problem, you're in the booth most of the day. Short version: I built a sample site for {Business Name} with the hearing test explained, a page for families and online booking, with marked placeholders where your photos would go. Can I email you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range}, then {Care Range} a month for hosting and updates. For a clinic like yours I'd normally quote about {Build Price}, which is less than a single pair of hearing aids.\"\n\"Its job is to make the hearing test feel safe to book, for the patient and for the son or daughter doing the research.\"\n\"Could I take fifteen minutes after your last appointment this week?\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. We start the day it clears, and you approve every word before it goes live.\"",
+    "objections": [
+      {
+        "objection": "The hearing aid manufacturer already gave us a website.",
+        "handler": "\"Keep their product pages if you like. Their site is a template shared with many clinics and it sells their devices. Yours should sell your audiologist, your aftercare and your test, and it's a domain you own.\""
+      },
+      {
+        "objection": "Our patients are older, they just phone us.",
+        "handler": "\"Many do. But their children research on phones, and people with hearing loss often find calls hard. Online booking adds a route without taking the phone away.\""
+      },
+      {
+        "objection": "We don't put hearing aid prices online.",
+        "handler": "\"Then we show price bands and what's bundled, in your words, or a placeholder until you decide. Buyers who see a range book a test; buyers who see nothing assume the worst.\""
+      },
+      {
+        "objection": "We can't make claims about hearing results.",
+        "handler": "\"Right, and the site doesn't. It explains the appointment, the styles you fit and the aftercare, with no promises. Testimonials only with written consent, and every credential comes from you.\""
+      },
+      {
+        "objection": "Most of our patients come through a benefits network.",
+        "handler": "\"Keep the network. Those patients still look you up before they choose which listed clinic to visit. The site is what makes them pick yours, and it brings in private-pay buyers too.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For your clinic about {Build Price}, because of the test walkthrough, family and aftercare pages. One fitting covers it.\""
+      }
+    ],
+    "email": {
+      "subject": "A hearing clinic site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for hearing and audiology clinics around {City}. {Business Name} has warm reviews, but no site where a first-time patient, or the son or daughter booking for them, can see what a hearing test involves and book one without phoning.\n\nI built a sample first rather than ask for your time: the hearing test explained step by step, hearing aid styles with placeholders for your price bands, a page for families, tinnitus consultations, aftercare and repairs, and online booking that keeps health details off the form. It uses marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and updates. If not, no problem, it comes down at the end of the month.\n\nWorth fifteen minutes after clinic hours?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build websites for hearing clinics in {City}, and I've put together a sample for {Business Name} with online hearing test booking. I'll email the link so you can look after clinic hours. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, a quick note: the {Business Name} hearing clinic demo comes down this Friday.\n\nReply if you'd like me to keep it up a little longer.",
+    "nurture": "Hi {Owner}, the weeks after end-of-year family gatherings are when relatives start booking hearing tests for someone they noticed struggling. Clinics with online booking and a page for families catch more of those.\n\nThe sample's still here and the price hasn't changed. {demo-link} if you'd like another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to a single pair of hearing aids sold, not to a hearing test fee.",
+      "Price the hearing test walkthrough and the family page as core work; they are what turn research into a booking.",
+      "Never undercut the manufacturer's free template on price. Sell ownership, the clinic's own voice and aftercare pages.",
+      "Leave hearing aid prices, trial terms and credentials as placeholders until the clinic supplies them in writing.",
+      "Quote an accessibility pass on every build; this audience reads with larger text and screen readers.",
+      "Keep monthly add-ons below the cost of a single repair visit."
+    ],
+    "lineItems": [
+      {
+        "item": "Hearing aid style page (each)",
+        "min": 200,
+        "max": 500,
+        "unit": "per-page",
+        "description": "Max with the clinic's price band, what's bundled, rechargeable and connectivity notes, and a book-a-fitting link.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Hearing test walkthrough page",
+        "min": 300,
+        "max": 700,
+        "unit": "per-page",
+        "description": "Max when written from an audiologist interview, with each step, its duration, a family member note and placeholders for booth photos.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Tinnitus consultation page",
+        "min": 250,
+        "max": 600,
+        "unit": "per-page",
+        "description": "Max with the clinic's approved wording on options, a separate request route and a review round with the audiologist.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Separate booking types for test, fitting and wax removal",
+        "min": 400,
+        "max": 1000,
+        "unit": "one-time",
+        "description": "Max when each appointment type has its own length, room and audiologist rules pulled from their existing scheduling system.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Battery and accessory order page",
+        "min": 300,
+        "max": 800,
+        "unit": "one-time",
+        "description": "Max with every dome, wax guard and battery size listed, pickup or post options and a card payment.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Care home visit page with request form",
+        "min": 250,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max when it lists the residences visited, visit days and a separate request route for care home staff.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Second-language hearing clinic pages",
+        "min": 400,
+        "max": 1000,
+        "unit": "one-time",
+        "description": "Max when the test walkthrough, family page, aftercare and booking are translated and checked by bilingual staff.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Audiologist and sound booth photo session",
+      "min": 300,
+      "max": 800,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"One morning photographing the audiologists, the sound booth, the fitting room and the entrance, with staff as models. Patients appear only with their written consent.\"",
+      "when": "Month 2, before the style pages fill up with placeholders nobody replaces."
+    },
+    {
+      "name": "Hearing clinic Google profile upkeep",
+      "min": 150,
+      "max": 300,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Weekly posts on the hearing clinic's Google profile about walk-in cleaning hours, wax removal slots and care home visit days, so searches for an audiologist nearby find a current clinic.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Review requests after the fitting follow-up",
+      "min": 79,
+      "max": 179,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"After the final fitting follow-up, the patient gets a polite note asking about their experience with the audiologist, never about their hearing or the device.\"",
+      "when": "Day 30. Wording approved by the clinic first."
+    },
+    {
+      "name": "Consent and patient photo policy pages",
+      "min": 300,
+      "max": 700,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A privacy notice, a written consent form for testimonials and fitting-day photos, and a page explaining how the hearing clinic stores test results, all in the clinic's approved wording.\"",
+      "when": "At build, before any patient story or photo is used."
+    },
+    {
+      "name": "Accessibility review for older and hard-of-hearing visitors",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A full pass on the hearing clinic site for large text, contrast, screen readers, captions on every video and booking that never requires a phone call.\"",
+      "when": "At launch, then once a year or after a redesign."
+    },
+    {
+      "name": "Advertising-approval-ready audiology content pack",
+      "min": 500,
+      "max": 1200,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Every hearing aid and tinnitus page assembled with its claims checklist, sources the audiologist supplied and placeholders, ready to submit where the regulator requires approval.\"",
+      "when": "Before launch, and before any paid ad campaign."
+    },
+    {
+      "name": "Community hearing check day promotion",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A flyer, an event page and posts for the clinic's hearing check mornings at libraries, seniors' clubs and community centres.\"",
+      "when": "Six weeks before each event."
+    },
+    {
+      "name": "Printed hearing guide for family doctors' waiting rooms",
+      "min": 300,
+      "max": 700,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A short printed guide on what happens at a hearing test, with the clinic's booking details, for family doctors' waiting rooms and pharmacy counters that agree to stock it.\"",
+      "when": "Month 3, once the walkthrough page is live."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Family doctor practices that refer hearing patients",
+        "whoPays": "The medical practice",
+        "min": 3000,
+        "max": 7000,
+        "unit": "one-time",
+        "pitchLine": "\"The family practice that sends you hearing patients has a site with no online booking. I build careful clinic sites already, and you can introduce me.\"",
+        "whyItWorks": "Doctors and the audiologist they refer to talk often. The clinic owner's introduction is the warm route in."
+      },
+      {
+        "route": "Retirement residences the audiologist visits",
+        "whoPays": "The residence",
+        "min": 3000,
+        "max": 8000,
+        "unit": "one-time",
+        "pitchLine": "\"The retirement residence where your audiologist runs hearing check mornings has a dated site. A tour booking and activities page would help their families too.\"",
+        "whyItWorks": "Residence managers already trust the clinic that cares for their residents."
+      },
+      {
+        "route": "Home care agencies with hard-of-hearing clients",
+        "whoPays": "The agency, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The home care agency whose caregivers bring clients to your hearing clinic is hiring constantly from a bare page. A careers and services site helps them both ways.\"",
+        "whyItWorks": "Agencies and clinics share elderly clients and swap referrals."
+      },
+      {
+        "route": "Music schools and rehearsal studios",
+        "whoPays": "The school or studio, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The music school that sends students to you for custom musician earplugs takes enrolments by email. A lesson booking site naming the audiology clinic as its partner suits both.\"",
+        "whyItWorks": "Musicians' ear protection is a natural tie between the two, and teachers trust the clinic that fitted them."
+      },
+      {
+        "route": "Optometry practices sharing older patients",
+        "whoPays": "The optometry practice, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The eye care practice next door sees the same older patients as your hearing clinic. An exam booking site for them is a short introduction away.\"",
+        "whyItWorks": "Eye and hearing practices often cross-refer and sometimes share a building."
+      },
+      {
+        "route": "Hearing loss support groups",
+        "whoPays": "The support group, from its own funds",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"The hearing loss support group that meets at your clinic lists its meetings on a flyer. A small site with captioned meeting notes and a sign-up would help members.\"",
+        "whyItWorks": "Support groups are run by volunteers who trust the audiologist hosting them."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Appointment logistics assistant for the family practice",
+        "whoPays": "The medical practice, monthly",
+        "min": 200,
+        "max": 500,
+        "unit": "monthly",
+        "pitchLine": "\"Patients asking the doctor's office about hours, repeat prescriptions and where to get a hearing test get the practice's approved answers, and medical questions go to staff.\"",
+        "whyItWorks": "Front desks answer the same logistics questions all day. Admin-only answers carry no clinical risk."
+      },
+      {
+        "route": "Family question assistant for the retirement residence",
+        "whoPays": "The residence, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Families asking the residence about visiting times, activities and the next hearing clinic visit day get answers from the residence's own approved pages.\"",
+        "whyItWorks": "Residence offices field family calls around the clock and want fewer interruptions."
+      },
+      {
+        "route": "Shift fill helper for the home care agency",
+        "whoPays": "The agency, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"When a caregiver drops a shift, the agency's helper drafts the message to available staff and notes which clients have hearing clinic appointments that week.\"",
+        "whyItWorks": "Last-minute shift gaps are the agency's daily headache."
+      },
+      {
+        "route": "Lesson enquiry assistant for the music school",
+        "whoPays": "The music school",
+        "min": 600,
+        "max": 1500,
+        "unit": "one-time",
+        "pitchLine": "\"Parents asking the music school about lesson times, fees and ear protection for drum students get answers from the school's pages, with the hearing clinic named for earplug fittings.\"",
+        "whyItWorks": "Small music schools lose enquiries in the evening when nobody answers."
+      },
+      {
+        "route": "Recall reminder drafts for the optometry practice",
+        "whoPays": "The optometry practice, monthly",
+        "min": 79,
+        "max": 199,
+        "unit": "monthly",
+        "pitchLine": "\"The eye care practice's annual exam reminders get drafted in its own voice for staff to send, the same way the hearing clinic's recall notes work.\"",
+        "whyItWorks": "Recall letters are tedious and practices put them off."
+      },
+      {
+        "route": "Captioned meeting summaries for the support group",
+        "whoPays": "The support group",
+        "min": 400,
+        "max": 1000,
+        "unit": "one-time",
+        "pitchLine": "\"Each hearing loss support meeting gets a captioned recording and a plain summary for members who missed it, checked by a volunteer before it's shared.\"",
+        "whyItWorks": "Members with hearing loss value written records, and volunteers lack the time to write them."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Privacy-safe hearing test booking and hosting setup",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Hearing test and fitting requests come in through a form that asks only for name, contact and appointment type, on hosting set up for the privacy rules where the clinic practises.\"",
+      "whenAndWhatItTakes": "At build. Needs the appointment types, who receives requests and the clinic's privacy wording."
+    },
+    {
+      "name": "Annual hearing check recall",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Patients due for their yearly hearing check get a friendly reminder with a booking link, by email, text or post for those who prefer paper.\"",
+      "whenAndWhatItTakes": "Day 30. Needs last test dates from their system, contact consent and the clinic's wording."
+    },
+    {
+      "name": "Battery and wax guard reorder",
+      "kind": "software",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Hearing aid wearers reorder batteries, domes and wax guards from the clinic in a few taps, for pickup or post, instead of phoning the front desk.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the accessory list, prices and a payment account."
+    },
+    {
+      "name": "Fitting follow-up visit reminders",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 39,
+      "monthlyMax": 99,
+      "pitchLine": "\"New hearing aid wearers get a reminder before each follow-up adjustment visit, and a nudge if the next one isn't booked yet.\"",
+      "whenAndWhatItTakes": "Month 2. Needs fitting dates from their schedule and the clinic's follow-up pattern. No device or hearing details in messages."
+    },
+    {
+      "name": "Front desk answering while the audiologist is in the booth",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 199,
+      "monthlyMax": 449,
+      "pitchLine": "\"When the only receptionist is helping a patient, calls about hours, wax removal and booking a hearing test get answered; anything about hearing or devices goes to an audiologist.\"",
+      "whenAndWhatItTakes": "Month 3, once they trust you. Needs approved answers and schedule access. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Hearing clinic review thank-you drafts",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Each hearing clinic review gets a reply drafted for approval that thanks the reviewer without confirming they're a patient or mentioning their hearing aids.\"",
+      "whenAndWhatItTakes": "Month 2, alongside the fitting review requests. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Repair and loaner aid tracker",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Every hearing aid sent away for repair is tracked as received, shipped, back and collected, with the loaner aid logged against the patient.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their repair steps and loaner stock. Tracks status only; records stay in their own system."
+    },
+    {
+      "name": "Warranty and loss cover expiry alerts",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Wearers get a note before their hearing aid warranty or loss cover ends, with a booking link for a clean and check while it's still covered.\"",
+      "whenAndWhatItTakes": "Month 4. Needs purchase dates and the clinic's cover terms."
+    },
+    {
+      "name": "Pre-visit listening situations questionnaire",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Before the hearing test, patients note where they struggle, like restaurants, television or phone calls, inside the clinic's secure system, so the audiologist starts prepared.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the clinic's own questions and a secure form inside their patient system, not the public site."
+    },
+    {
+      "name": "Captions and transcripts for clinic videos",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Every hearing aid care video the clinic posts gets accurate captions and a written transcript drafted for staff to check, so the people who need captions most aren't left out.\"",
+      "whenAndWhatItTakes": "Month 3, once they film aftercare videos. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Family member question assistant",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"A son or daughter asking how to book a hearing test for a parent, whether they can come along and what it costs gets the clinic's approved answers and the booking link.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the family page wording and price bands approved. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Fitting-day care summary drafts",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"After a fitting, the audiologist's notes become a plain care sheet on charging, cleaning and the next visit, reviewed by the audiologist inside the clinic's secure system.\"",
+      "whenAndWhatItTakes": "Month 6, only inside their secure system. Needs their current care sheet. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Trial period check-in sequence",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 39,
+      "monthlyMax": 99,
+      "pitchLine": "\"During the hearing aid trial, the wearer gets a short check-in asking how they're finding it and whether they'd like an adjustment visit before the trial ends.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the clinic's trial terms and approved wording."
+    },
+    {
+      "name": "Device and accessory stock board",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 99,
+      "monthlyMax": 199,
+      "pitchLine": "\"See demo hearing aids, loaners, chargers and accessory stock at a glance, with low-stock alerts before a fitting day runs short.\"",
+      "whenAndWhatItTakes": "Month 6. Needs their stock list and who reorders."
+    },
+    {
+      "name": "Doctor update letter drafts",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"After a hearing test for a referred patient, the audiologist's results become a draft letter to the referring doctor, checked and signed inside the clinic's secure system.\"",
+      "whenAndWhatItTakes": "Month 6, only inside their secure system. Needs their letter template. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Hearing check day sign-up",
+      "kind": "software",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"People book a slot at the clinic's community hearing check mornings online and get a reminder the day before, with a large-print option.\"",
+      "whenAndWhatItTakes": "Month 4, when they run community events. Needs dates, venues and slot lengths."
+    },
+    {
+      "name": "Remote adjustment request queue",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Wearers ask for a hearing aid adjustment from home, and the audiologist sees a queue with the best time to call, instead of messages scattered across phones.\"",
+      "whenAndWhatItTakes": "Month 5, for clinics that offer remote adjustments. Needs their process and contact consent."
+    },
+    {
+      "name": "Hearing care posts drafted from audiologist notes",
+      "kind": "ai",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"The audiologist jots a few lines on cleaning aids or protecting hearing at concerts, and a post in the clinic's voice comes back with any outcome wording flagged.\"",
+      "whenAndWhatItTakes": "Month 3. Needs past posts and the clinic's do-not-say list. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Second-language reply drafts for the hearing clinic",
+      "kind": "ai",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1200,
+      "monthlyMin": 59,
+      "monthlyMax": 149,
+      "pitchLine": "\"A patient writing in another language about hearing test times or battery orders gets a reply in that language, drafted for the front desk to check and send.\"",
+      "whenAndWhatItTakes": "Month 5, for clinics with patients who prefer another language. Needs translated wording checked by staff. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Referral source and fitting dashboard",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"See which doctors, care homes and searches bring hearing test bookings each month, and how many of those tests lead to a fitting.\"",
+      "whenAndWhatItTakes": "Month 7, once booking and repair data has built up for a few months."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the hearing clinic site for independent audiologists",
+      "whoPays": "Each clinic, monthly",
+      "min": 79,
+      "max": 249,
+      "unit": "monthly",
+      "pitchLine": "\"I built a hearing test walkthrough, family page and aftercare section for one audiology clinic. Every independent on a manufacturer template needs the same.\"",
+      "whyItWorks": "Independents compete with retail chains on trust and aftercare, and a site they own is the cheapest way to show it."
+    },
+    {
+      "route": "Audiology professional associations",
+      "whoPays": "The association",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer member clinics a hearing clinic site template with the test walkthrough and accessibility built in, with placeholders for each member's credentials.\"",
+      "whyItWorks": "Associations want members to look professional and to reach more of the public."
+    },
+    {
+      "route": "Hearing aid manufacturers' independent-clinic programmes",
+      "whoPays": "The manufacturer's programme, per clinic",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "pitchLine": "\"Your independent hearing clinics run identical template sites. A clinic-owned template with your device pages slotted in keeps them loyal and gives each its own voice.\"",
+      "whyItWorks": "Manufacturers fund marketing for clinics that fit their devices, and want those clinics to win locally."
+    },
+    {
+      "route": "Buying groups for independent hearing practices",
+      "whoPays": "The buying group, annually",
+      "min": 3000,
+      "max": 10000,
+      "unit": "per-year",
+      "pitchLine": "\"Your member audiologists need sites that don't look like the chains. License my hearing clinic template as a member benefit.\"",
+      "whyItWorks": "Buying groups compete for members on the benefits they bundle."
+    },
+    {
+      "route": "Franchised hearing centre networks",
+      "whoPays": "The franchisor, per location",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Each hearing centre in your network needs local pages for its audiologists, care home visits and parking under one brand. I build one approved template and roll it out.\"",
+      "whyItWorks": "Networks need every location to look consistent and local at the same time."
+    },
+    {
+      "route": "White-label hearing clinic template for healthcare agencies",
+      "whoPays": "The agency, per site",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency builds audiology sites from a general medical template. License mine with the hearing test walkthrough, family page and accessibility pass built in.\"",
+      "whyItWorks": "Agencies avoid regulated health writing and accessibility work. You sell the hard part."
+    },
+    {
+      "route": "Ear, nose and throat groups adding audiology",
+      "whoPays": "The medical group",
+      "min": 4000,
+      "max": 12000,
+      "unit": "one-time",
+      "pitchLine": "\"Your group is adding a hearing clinic. It needs its own test, fitting and aftercare pages, which I've already built for an independent audiologist.\"",
+      "whyItWorks": "Groups adding audiology need a separate front door quickly, and you bring the proof."
+    },
+    {
+      "route": "Optical retail groups adding hearing services",
+      "whoPays": "The optical group, per store",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "pitchLine": "\"Your stores are adding hearing tests beside eye exams. Each needs a hearing page with booking and an audiologist bio, and I have the template ready.\"",
+      "whyItWorks": "Optical groups serve the same older customers and roll services out store by store."
+    },
+    {
+      "route": "Groups acquiring hearing clinics",
+      "whoPays": "The acquisition group",
+      "min": 5000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Each hearing clinic you acquire arrives with its own dated site. I move them onto one template and keep each clinic's local audiologist and care home pages.\"",
+      "whyItWorks": "Roll-ups need consistency fast and buy in batches."
+    },
+    {
+      "route": "Practice coaches for audiology owners",
+      "whoPays": "The coaching firm, annually",
+      "min": 3000,
+      "max": 10000,
+      "unit": "per-year",
+      "pitchLine": "\"Your audiology owner clients all need a site that books hearing tests online. License my hearing clinic template as part of your programme.\"",
+      "whyItWorks": "Coaches want deliverables for many clinics without building them."
+    },
+    {
+      "route": "Hearing clinics in another region",
+      "whoPays": "New audiology clients in a new metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"Hearing clinics far from {City} don't compete with my client, so they get the same hearing test walkthrough, family page and aftercare structure.\"",
+      "whyItWorks": "Careful, accessible health wording is slow to write. Reusing it elsewhere is margin."
+    },
+    {
+      "route": "Move clinics off manufacturer-sponsored sites",
+      "whoPays": "The clinic leaving its sponsored site",
+      "min": 1500,
+      "max": 3500,
+      "unit": "one-time",
+      "pitchLine": "\"Your hearing clinic site belongs to a device maker's programme and ends if you change suppliers. I move it to a domain you own without losing your pages.\"",
+      "whyItWorks": "Clinics that switch supplier or go fully independent need a new site quickly and already have the budget."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Hearing clinic site build plus care plan, one contract",
+      "min": 2000,
+      "max": 3500,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The hearing clinic site and the care plan go on one contract, so a new audiologist or price band is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 14,
+      "offer": "Accessibility review for older and hard-of-hearing visitors",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "trigger": "They mention a patient who struggled to read the site or book online.",
+      "line": "\"That patient is exactly who the hearing clinic site is for. Let's do the full accessibility pass now.\""
+    },
+    {
+      "rung": 3,
+      "day": 30,
+      "offer": "Annual hearing check recall and fitting review requests",
+      "min": 79,
+      "max": 179,
+      "unit": "monthly",
+      "trigger": "Booking data shows few returning patients booking their yearly hearing check.",
+      "line": "\"Most wearers miss their yearly hearing check simply because nobody reminds them. Let's add that, and a careful review request after fittings.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Battery and wax guard reorder",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "trigger": "They complain the phone rings all day with accessory orders.",
+      "line": "\"Those battery and dome calls can become a reorder page that hearing aid wearers use themselves.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Audiologist and sound booth photo session",
+      "min": 300,
+      "max": 800,
+      "unit": "per-shoot",
+      "trigger": "Audiologist bios and the sound booth section still show placeholders.",
+      "line": "\"One morning at the clinic gives every audiologist and the sound booth a real photo.\""
+    },
+    {
+      "rung": 6,
+      "day": 120,
+      "offer": "Repair and loaner aid tracker",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "trigger": "They mention a patient chasing a hearing aid that went away for repair.",
+      "line": "\"That lost hearing aid repair is what a tracker catches before the patient has to call.\""
+    },
+    {
+      "rung": 7,
+      "day": 180,
+      "offer": "Front desk answering while the audiologist is in the booth",
+      "min": 1000,
+      "max": 2500,
+      "unit": "one-time",
+      "trigger": "They mention calls going unanswered during busy fitting days.",
+      "line": "\"New hearing test callers get answered and booked even when the front desk is with a patient.\""
+    },
+    {
+      "rung": 8,
+      "day": 270,
+      "offer": "Introduction to the referring family practice",
+      "min": 3000,
+      "max": 7000,
+      "unit": "one-time",
+      "trigger": "A referring doctor's office asks who built the hearing clinic site.",
+      "line": "\"The family practice that sends you hearing patients asked about the site. Would you introduce me?\""
+    }
+  ]
+}

@@ -1,0 +1,895 @@
+{
+  "schemaVersion": 1,
+  "category": "Fertility & IVF clinics",
+  "slug": "fertility-ivf-clinics",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · expansion batch (healthcare + mid-size)",
+    "generatedAt": "2026-10-13",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Leaned on the long, research-heavy fertility decision: pathway pages, cost clarity and consult booking, with no outcome or success-rate claims anywhere. Unsure on the patient cycle portal and donor catalogue ranges; they depend heavily on the clinic's existing systems."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Treatment pathways, stage by stage",
+      "contains": "Separate plain-language pages for IVF, IUI, egg freezing, donor eggs or sperm and gestational carrier pathways: the stages, what each clinic visit involves, who the patient meets, general information only and reviewed by [medical director]",
+      "why": "Fertility patients read for weeks before booking. A clinic that explains every stage calmly earns the consult; one that hides the process behind a phone number loses it."
+    },
+    {
+      "section": "IVF cycle costs and what each package includes",
+      "contains": "Fees by pathway, what is included and what is billed separately (medication, storage, testing), payment plans, and the questions to ask an insurer or employer benefit before starting",
+      "why": "Cost is the question patients are most afraid to ask out loud. A clear page lets them budget privately and arrive at the consult ready to decide."
+    },
+    {
+      "section": "How the clinic talks about outcomes",
+      "contains": "A short policy page: the clinic does not publish success claims on marketing pages, explains why every case differs, and points to [the official published outcome data, where one exists] for comparison",
+      "why": "Careful patients compare clinics on outcomes and distrust anyone who advertises them. An honest policy page builds more trust than a headline number would."
+    },
+    {
+      "section": "Monitoring locations and early-morning visits",
+      "contains": "A page per monitoring site: which visits happen there (scans, bloodwork), early-morning hours, parking, how to reschedule, and which steps only happen at the main lab",
+      "why": "During a cycle, patients make many short monitoring visits before work. Knowing the nearest site and its hours is part of choosing the clinic."
+    },
+    {
+      "section": "Egg freezing information evenings",
+      "contains": "Upcoming in-person and online information sessions on egg freezing and fertility preservation, a sign-up form, a recorded replay for people who missed it and a consult booking afterwards",
+      "why": "Egg freezing patients often aren't ready to book a consult. An information evening is the lower-stakes first step, and the replay keeps working for months."
+    },
+    {
+      "section": "Travelling and international patients",
+      "contains": "Which steps can happen near home and which need to be at the clinic, typical time on site, a patient coordinator contact, accommodation notes and second-language support",
+      "why": "Many fertility patients travel from other cities or countries. They choose the clinic that has already planned the trip with them."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C22",
+      "siteType": "local-conversion",
+      "name": "First Consult",
+      "heroLayout": "split-photo",
+      "mood": [
+        "gentle",
+        "reassuring",
+        "plain"
+      ],
+      "bestFor": "Single-site fertility clinics replacing a dated page with clear pathways and a consult request that works on a phone",
+      "pairsWithTier": "starter",
+      "headlineSample": "Fertility care in {City}, explained before you book",
+      "whyItFits": "Soft peach and rounded type feel warm without looking like a baby-product brand. One clear consult request per page keeps a nervous first visit simple."
+    },
+    {
+      "id": "b",
+      "themeId": "C2",
+      "siteType": "booking-first",
+      "name": "Quiet Consult Path",
+      "heroLayout": "split-photo",
+      "mood": [
+        "private",
+        "composed",
+        "steady"
+      ],
+      "bestFor": "Fertility and IVF clinics with several physicians and monitoring sites, booking new-patient consults by doctor and location",
+      "pairsWithTier": "standard",
+      "headlineSample": "Your fertility consultation in {City}, booked in minutes",
+      "whyItFits": "The family's Private Vault combo. A cream ground and an old-style serif feel like a private consulting room, which suits a decision people rarely discuss openly."
+    },
+    {
+      "id": "c",
+      "themeId": "C32",
+      "siteType": "editorial-trust",
+      "name": "The Long Read",
+      "heroLayout": "type-led",
+      "mood": [
+        "thorough",
+        "calm",
+        "learned"
+      ],
+      "bestFor": "Established IVF centres with a lab, donor programme and patient education library, competing on depth of explanation",
+      "pairsWithTier": "premium",
+      "headlineSample": "Understanding IVF and egg freezing in {City}",
+      "whyItFits": "A bookish serif throughout and a muted olive palette are built for reading. Fertility patients read every page before booking, so the site should read like a good guide."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "Slow on a phone",
+      "line": "I opened your fertility clinic's site on my phone and the IVF pages took a long time to load, then jumped around as they did. Most patients research this late at night on a phone.",
+      "hook": "Load their IVF or treatment page on your phone over mobile data. Note how long it takes and what moves. Screenshot it for when they reply.",
+      "linkLine": "The same IVF pages, rebuilt to load fast on a phone: {demo-link}"
+    },
+    {
+      "angle": "Consult booking by phone only",
+      "line": "The only way to book a new-patient consult at your fertility clinic is to call during office hours. Many patients aren't ready to say it out loud at work.",
+      "hook": "Look for an online consult booking or request form on their site. If it's a phone number only, the angle holds.",
+      "linkLine": "A private fertility consult booking, by physician and location: {demo-link}"
+    },
+    {
+      "angle": "Price list as a PDF",
+      "line": "Your IVF and egg freezing fees are in a PDF that's hard to read on a phone and doesn't say what's included. Cost is the question fertility patients are most hesitant to ask.",
+      "hook": "Find their fees page. Note whether it's a PDF and whether medication and storage are explained. Screenshot it for when they reply.",
+      "linkLine": "Fertility costs shown plainly by pathway: {demo-link}"
+    },
+    {
+      "angle": "Several sites on one contact page",
+      "line": "Your clinic has several monitoring locations, but they share one contact page with a list of addresses. A patient picking where to go for early-morning scans needs hours and parking for each.",
+      "hook": "Count the locations on their contact page or listing. Check whether any has its own page with hours.",
+      "linkLine": "A page for each fertility monitoring site: {demo-link}"
+    },
+    {
+      "angle": "Hiring without a careers page",
+      "line": "Saw your fertility clinic is hiring an embryologist and IVF nurses, but the site has no careers page. Specialist candidates compare clinics on the lab and the team before they apply.",
+      "hook": "Only if they've posted job listings recently. Note the roles and check their site for a careers section.",
+      "linkLine": "A careers page for a fertility clinic's lab and nursing team: {demo-link}"
+    },
+    {
+      "angle": "Reviews that never reach the site",
+      "line": "Your Google reviews talk about IVF nurses who answered the phone at every step and physicians who took time to explain. None of that appears on the clinic's site, where patients make the decision.",
+      "hook": "Read their newest reviews. Pick two that describe how patients felt, never a result. Quote them back.",
+      "linkLine": "Fertility patient reviews placed where they help, with consent: {demo-link}"
+    },
+    {
+      "angle": "Physician page out of date",
+      "line": "Your fertility specialists page doesn't show a physician your posts welcomed recently, and some bios have no photo. Patients choose a doctor before they choose a clinic.",
+      "hook": "Compare their physician page with recent posts announcing new staff. Never state credentials you didn't see published.",
+      "linkLine": "Fertility specialist profiles with consult booking for each: {demo-link}"
+    },
+    {
+      "angle": "Egg freezing questions in comments",
+      "line": "Your egg freezing posts get the same questions in the comments every time: how many visits, how long storage lasts, what it costs. The clinic's site could answer those before anyone has to ask publicly.",
+      "hook": "Scroll the comments on their egg freezing posts. List the repeated questions, without naming anyone who asked.",
+      "linkLine": "An egg freezing page that answers the comment questions: {demo-link}"
+    },
+    {
+      "angle": "Information evening sign-up by email",
+      "line": "You run fertility information evenings, but signing up means emailing the clinic. A sign-up page with reminders and a replay would fill more seats and keep working afterwards.",
+      "hook": "Look for event posts about information sessions or webinars. Note how people are told to register.",
+      "linkLine": "Fertility information evening sign-up with a replay page: {demo-link}"
+    },
+    {
+      "angle": "Patients travelling in",
+      "line": "Your reviews mention patients travelling from other cities, even other countries, for IVF. There's nothing on the site about which steps can happen near home and how long they'd need to stay.",
+      "hook": "Look for reviews or posts mentioning travel, flights or other countries. Note where patients come from.",
+      "linkLine": "A travelling-patient page for the IVF clinic: {demo-link}"
+    },
+    {
+      "angle": "Printable intake forms",
+      "line": "New patients at your fertility clinic print a PDF history form and bring it in. A private online intake saves the first consult from paperwork and keeps sensitive answers off email.",
+      "hook": "Find their new-patient forms. Note whether they're printable PDFs or ask patients to email them back.",
+      "linkLine": "A privacy-safe fertility intake, filled in before the consult: {demo-link}"
+    },
+    {
+      "angle": "Financing mentioned, not explained",
+      "line": "Your posts mention payment plans for IVF, but the site doesn't say who qualifies or how to ask. Patients who assume they can't afford a cycle often never book the consult.",
+      "hook": "Only if they've posted about financing or payment plans. Quote where you saw it.",
+      "linkLine": "IVF payment options explained on one page: {demo-link}"
+    },
+    {
+      "angle": "Donor programme buried",
+      "line": "Your fertility clinic mentions a donor egg and sperm programme in one line on the services page. Recipients and potential donors both need their own pages to take the next step.",
+      "hook": "Search their site for donor or surrogacy. Note whether it has its own page or a single mention.",
+      "linkLine": "Donor programme pages for recipients and donors: {demo-link}"
+    },
+    {
+      "angle": "Every kind of family",
+      "line": "Your posts welcome same-sex couples and single parents by choice, but the IVF pages only describe one kind of couple. Those patients read for that detail before they book a fertility consult.",
+      "hook": "Only if their own posts say this. Note the wording they use, and use theirs.",
+      "linkLine": "Fertility pathway pages written for every family: {demo-link}"
+    },
+    {
+      "angle": "A specific recent post",
+      "line": "That {specific recent job} post explained a fertility step more clearly than most clinic sites do. It deserves a permanent page where patients researching IVF can find it.",
+      "hook": "Pick their newest explainer post or video, never a patient story without consent, and name it exactly.",
+      "linkLine": "That fertility explainer, kept on a page that ranks: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, that {specific recent job} post explained a fertility step more clearly than most clinic sites do.\n\nI looked at {Business Name}'s site on my phone and found the IVF fees in a PDF and consult booking by phone only. I put together a sample of how the treatment and booking pages could work, with marked placeholders where your photos would go.\n\nWould it be useful if I sent it to you, or is someone else on your team the right person?",
+    "dm2": "{Owner}, following up in case my note got buried. Here's the sample for {Business Name}: {demo-link}\n\nIt has pathway pages for IVF and egg freezing, a cost page by package, a page per monitoring site and a private consult booking by physician. Nothing makes a medical claim, and your medical director approves every word before anything goes live. If it's not for you, just say so.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites and patient software for fertility clinics. I sent a note a few days ago, did it reach you?\"\n\nIF NO:\n\"No problem. Short version: I built a sample for {Business Name} with pathway pages, a cost page and a private consult booking, with marked placeholders where your photos would go. Can I email it so you can share it with your medical director?\"\n\nIF YES:\n\"What did you and the team think?\"\n → let them talk, then ask who else signs off on the site\n\"This is a clinic site you own, not a lead service. Every page goes through your medical director, nothing claims an outcome, and the forms are set up for patient privacy. The build runs {Build Range} depending on pathways, locations and integrations, then {Care Range} a month for hosting, edits and security updates. For a clinic your size I'd quote about {Build Price}.\"\n\"Could we take thirty minutes with you and whoever owns marketing, maybe next week?\"\n\nCLOSE:\n\"I'll send a scope with the pages, the integrations and the review rounds, plus a deposit invoice. We start once it's signed, and your medical director approves every page before launch.\"",
+    "objections": [
+      {
+        "objection": "Our medical director has to approve everything.",
+        "handler": "\"Good, that's how it should work. Review rounds are in the scope, nothing goes live without sign-off, and I write general information only, never advice or outcomes.\""
+      },
+      {
+        "objection": "We already have a marketing agency.",
+        "handler": "\"Keep them for campaigns. I build the pages and booking their ads send people to. Clinics often find the ads are fine and the site is where patients drop off.\""
+      },
+      {
+        "objection": "Our patient system already has a portal.",
+        "handler": "\"Then I'll link to it, not replace it. The site's job is before the portal: explaining pathways and booking the first consult. Where your system allows it, the booking feeds straight in.\""
+      },
+      {
+        "objection": "Patient privacy makes online forms risky.",
+        "handler": "\"Careless forms are risky. I set up intake on privacy-safe hosting, collect only what the consult needs, and keep sensitive answers out of email. Your privacy lead approves the setup.\""
+      },
+      {
+        "objection": "Our budget is set for the year.",
+        "handler": "\"Understood. We can scope it now and phase it: pathway and cost pages first, booking and intake next budget. The sample stays up while you plan.\""
+      },
+      {
+        "objection": "Patients come from referring doctors, not the website.",
+        "handler": "\"Referred patients still read the clinic's pages before the first consult, often for weeks. The site is what turns a referral slip into a booked appointment.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For a clinic your size about {Build Price}, covering pathway pages, costs, monitoring locations and consult booking. Integrations with your scheduling system are scoped separately once we've seen it.\""
+      }
+    ],
+    "email": {
+      "subject": "Fertility site sample for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites and patient software for fertility and IVF clinics. {Business Name} has a strong reputation, but on a phone the site is slow, the fees sit in a PDF and booking a consult means calling during office hours.\n\nI built a sample rather than ask for your time: pathway pages for IVF and egg freezing, a cost page by package, a page per monitoring site and a private consult booking by physician, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf it's useful, I finish it on your domain for {Build Range}, plus {Care Range} a month for hosting, security updates and edits. Your medical director approves every page, and nothing makes an outcome claim. If not, no problem, it comes down at the end of the month.\n\nWould thirty minutes with you and your marketing lead be worth it?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"{Owner}, it's {Your Name}. I build websites for fertility clinics, and I made a sample for {Business Name} with pathway pages, costs and a private consult booking. I'll email the link so you can share it with your medical director. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm taking the {Business Name} fertility clinic sample down on Friday.\n\nShould I keep it up while your team decides? One word is fine either way.",
+    "nurture": "Hi {Owner}, budgets for next year are usually being set around now, and the fertility clinic sample came to mind.\n\nIt's still here if you'd like another look with your team, same scope and price as before: {demo-link}"
+  },
+  "pricing": {
+    "bullets": [
+      "Price by treatment pathway and location count, not page count. Each pathway needs a drafting call and a medical review.",
+      "Build at least two review rounds with the medical director into every quote; fertility copy is never published unreviewed.",
+      "Never write success rates, outcomes or anything that reads as advice. Patient stories only with written consent on file.",
+      "Scope integrations with the clinic's scheduling and patient systems separately, after seeing them; never guess their effort upfront.",
+      "Quote the cost page carefully: it touches finance, so allow for a second reviewer from billing.",
+      "Second-language pages are priced per language and only where clinic staff can review the translation."
+    ],
+    "lineItems": [
+      {
+        "item": "Treatment pathway page (each)",
+        "min": 700,
+        "max": 1800,
+        "unit": "per-page",
+        "description": "Max when the pathway has several stages, a visit-by-visit outline, an FAQ and two medical review rounds.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Physician profile with consult booking (each)",
+        "min": 350,
+        "max": 900,
+        "unit": "per-page",
+        "description": "Max with a short intro video, languages spoken, the physician's own words and booking straight into their consult slots.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Cost and package explainer",
+        "min": 2500,
+        "max": 7000,
+        "unit": "one-time",
+        "description": "Max with every pathway priced, separately billed items explained, payment plan questions and a billing team review round.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Monitoring location page (each)",
+        "min": 400,
+        "max": 1000,
+        "unit": "per-page",
+        "description": "Max with early-morning hours, parking and transit notes, the visits done there and a reschedule request.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Information evening registration and replay",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "description": "Max with recurring sessions, in-person and online options, reminder messages and a gated replay with consult booking.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Donor programme page set",
+        "min": 2500,
+        "max": 7000,
+        "unit": "one-time",
+        "description": "Max with separate recipient and donor journeys, screening steps explained and a donor enquiry form reviewed for privacy.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Second-language pathway pages",
+        "min": 3000,
+        "max": 9000,
+        "unit": "one-time",
+        "description": "Max when every pathway, the cost page and the booking flow are translated and reviewed by clinic staff.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Scheduling system integration for consult booking",
+        "min": 5000,
+        "max": 18000,
+        "unit": "one-time",
+        "description": "Max when bookings write into the clinic's scheduling system by physician and site, with a fallback request when no slots show.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Consent and patient-photo policy page set",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A fertility clinic shares sensitive stories. A clear page set on consent, how patient photos and stories are used, and how to withdraw them protects patients and the clinic alike.\"",
+      "when": "At launch. Needs the clinic's consent forms and the privacy lead's sign-off."
+    },
+    {
+      "name": "Accessibility review and fixes for the clinic site",
+      "min": 2500,
+      "max": 7000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Fertility patients include people with low vision and people reading in a second language. An accessibility review of the forms, booking and pathway pages, with the fixes made, is part of doing this properly.\"",
+      "when": "Month 2, after launch, and again after any major change."
+    },
+    {
+      "name": "Advertising-approval-ready content pack",
+      "min": 3000,
+      "max": 8000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Medical advertising for fertility care often needs approval where the regulator requires it. I prepare the ad and landing page copy in a review-ready pack, with every claim flagged and sourced to the clinic.\"",
+      "when": "Before the first paid campaign, or when a regulator asks for submissions."
+    },
+    {
+      "name": "Physician, lab and clinic photo and video day",
+      "min": 2500,
+      "max": 6000,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Patients want to see the people and the IVF lab before they trust them. One day of portraits, lab and clinic footage, with no patients in frame, replaces every stock photo.\"",
+      "when": "Month 2, or when a new physician joins."
+    },
+    {
+      "name": "Google profile management for each fertility location",
+      "min": 400,
+      "max": 1200,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Each monitoring site and the main clinic get accurate hours, photos and a weekly general-information post, so patients find the nearest location without calling.\"",
+      "when": "Day 30, once location pages are live."
+    },
+    {
+      "name": "Monthly patient education articles, medically reviewed",
+      "min": 1500,
+      "max": 4000,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Each month, plain-language fertility articles on the questions patients actually search, drafted from a short call with a physician and approved before publishing.\"",
+      "when": "Month 3, once the pathway pages are approved."
+    },
+    {
+      "name": "Consented patient story programme",
+      "min": 1500,
+      "max": 4500,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Some patients want to share their fertility journey. I interview them gently and write it up, only with written consent on file, no outcome promises, and an easy way to withdraw it later.\"",
+      "when": "Month 4, once the consent page set is in place."
+    },
+    {
+      "name": "Information evening promotion",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Social posts, an email to past enquirers and printed cards for referring practices for each egg freezing or IVF information evening, so the room and the webinar fill.\"",
+      "when": "Four weeks before each session."
+    },
+    {
+      "name": "Referring physician outreach kit",
+      "min": 1500,
+      "max": 3500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Gynaecologists and family doctors refer when it's easy. A short referral page, a printable fertility clinic overview and a one-step referral form make you the clinic they remember.\"",
+      "when": "Month 2, when the clinic names its main referring practices."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Referring gynaecology and women's health practices",
+        "whoPays": "The gynaecology practice",
+        "min": 4000,
+        "max": 10000,
+        "unit": "one-time",
+        "pitchLine": "\"The gynaecology practices that refer to your fertility clinic often have dated sites too. An introduction from the clinic they send patients to gets me a meeting.\"",
+        "whyItWorks": "Referral relationships run both ways, and those practices buy on the same logic: clear services, then a booked appointment."
+      },
+      {
+        "route": "Surrogacy and egg donor agencies",
+        "whoPays": "The agency",
+        "min": 6000,
+        "max": 15000,
+        "unit": "one-time",
+        "pitchLine": "\"The agencies you work with need sites that speak to intended parents and to donors or carriers. Your clinic's recommendation carries weight with them.\"",
+        "whyItWorks": "Agencies depend on clinic relationships and need two-audience sites, which is the same structure as a donor programme."
+      },
+      {
+        "route": "Family-building lawyers",
+        "whoPays": "The law practice",
+        "min": 3000,
+        "max": 7000,
+        "unit": "one-time",
+        "pitchLine": "\"Lawyers who draft donor and surrogacy agreements for your IVF patients need a calm site explaining the process. They take a call from someone the clinic recommends.\"",
+        "whyItWorks": "Small specialist practices with a trust problem, and their clients come largely through fertility clinics."
+      },
+      {
+        "route": "Fertility counsellors and therapists",
+        "whoPays": "The counselling practice",
+        "min": 2000,
+        "max": 5000,
+        "unit": "one-time",
+        "pitchLine": "\"The counsellors your patients see for donor and implications counselling need a private booking site. An introduction from the clinic fills their calendar and helps your patients.\"",
+        "whyItWorks": "Counselling is often a required step in donor pathways, so counsellors rely on the clinic and listen to it."
+      },
+      {
+        "route": "Acupuncture and wellness clinics near the fertility centre",
+        "whoPays": "The wellness clinic",
+        "min": 2000,
+        "max": 5000,
+        "unit": "one-time",
+        "pitchLine": "\"Many of your patients also see an acupuncturist or a nutrition practice nearby. Those small clinics need booking sites, and your name opens the door.\"",
+        "whyItWorks": "They value the fertility clinic's goodwill and serve the same patients, so the introduction is easy."
+      },
+      {
+        "route": "Pharmacies dispensing fertility medication",
+        "whoPays": "The pharmacy",
+        "min": 3000,
+        "max": 8000,
+        "unit": "one-time",
+        "pitchLine": "\"The pharmacies that dispense your patients' fertility medication need clear pages on delivery, refills and opening hours. The clinic's introduction gets the first conversation.\"",
+        "whyItWorks": "Pharmacies compete for the clinic's prescriptions and want to look good to its patients."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Intended-parent intake assistant for surrogacy agencies",
+        "whoPays": "The surrogacy agency, monthly",
+        "min": 400,
+        "max": 1200,
+        "unit": "monthly",
+        "pitchLine": "\"Agencies ask intended parents the same long list of questions. An assistant walks them through it privately and drafts a summary for the coordinator to review.\"",
+        "whyItWorks": "Coordinators spend hours on first calls, and the clinic's introduction makes the demo easy to book."
+      },
+      {
+        "route": "Session booking and pre-session questions for counsellors",
+        "whoPays": "The counselling practice, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Before a donor or implications counselling session, patients answer logistics questions with an assistant, and the counsellor gets a short neutral summary.\"",
+        "whyItWorks": "Counsellors bill for sessions, not admin, and the fertility clinic benefits when the step isn't a bottleneck."
+      },
+      {
+        "route": "Refill and delivery question assistant for pharmacies",
+        "whoPays": "The pharmacy, monthly",
+        "min": 300,
+        "max": 900,
+        "unit": "monthly",
+        "pitchLine": "\"Fertility medication patients ask about delivery times and refills at all hours. An assistant answers those logistics questions and hands anything clinical to a pharmacist.\"",
+        "whyItWorks": "It frees pharmacist time on a high-value prescription line the clinic sends them."
+      },
+      {
+        "route": "Agreement intake drafts for family-building lawyers",
+        "whoPays": "The law practice, monthly",
+        "min": 250,
+        "max": 700,
+        "unit": "monthly",
+        "pitchLine": "\"Clients of a family-building lawyer fill in a guided questionnaire, and the lawyer gets a draft intake summary to review before the first meeting.\"",
+        "whyItWorks": "Lawyers bill for advice, not data gathering, and the IVF clinic's patients reach agreements sooner."
+      },
+      {
+        "route": "Appointment question assistant for wellness clinics",
+        "whoPays": "The acupuncture or wellness clinic, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"Small wellness clinics that see fertility patients miss calls during sessions. An assistant answers booking and pricing questions and offers the next slot.\"",
+        "whyItWorks": "Cheap to run, easy to show, and the referral from the fertility clinic gets the first yes."
+      },
+      {
+        "route": "Benefit explainer assistant for employer benefits advisers",
+        "whoPays": "The benefits consultancy, monthly",
+        "min": 500,
+        "max": 1500,
+        "unit": "monthly",
+        "pitchLine": "\"Benefits advisers who add fertility coverage for employers get employee questions they can't answer. An assistant explains the plan's wording and points to approved clinics.\"",
+        "whyItWorks": "Advisers sell fertility benefits as a perk, and the clinic's introduction shows them where questions pile up."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "After-hours text-back with the consult request",
+      "kind": "automation",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"A call to the fertility clinic that goes unanswered gets a text with the private consult request link and a note not to send medical details by text.\"",
+      "whenAndWhatItTakes": "Month 1. Needs the clinic's main numbers forwarded and wording approved by the practice manager."
+    },
+    {
+      "name": "Privacy-safe intake forms and hosting setup",
+      "kind": "software",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 12000,
+      "monthlyMin": 300,
+      "monthlyMax": 900,
+      "pitchLine": "\"New-patient history, partner details and referral letters collected online on privacy-safe hosting, encrypted and routed to the right coordinator, instead of printed PDFs and email.\"",
+      "whenAndWhatItTakes": "Month 1 to 2. Needs their paper forms, data retention rules and sign-off from whoever owns patient privacy."
+    },
+    {
+      "name": "New-patient consult booking by physician and site",
+      "kind": "software",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 18000,
+      "monthlyMin": 300,
+      "monthlyMax": 800,
+      "pitchLine": "\"Patients pick a fertility specialist, a location and an in-person or video consult, and the slot comes from the clinic's own schedule.\"",
+      "whenAndWhatItTakes": "Month 2. Needs consult templates per physician and access to their scheduling system, or a request fallback."
+    },
+    {
+      "name": "Review reply drafts that never confirm a patient",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 200,
+      "monthlyMax": 500,
+      "pitchLine": "\"Each new review of the clinic gets a warm reply drafted for approval that never confirms someone was a patient or mentions treatment.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the clinic's privacy rules and a few approved replies. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Information evening registration with reminders",
+      "kind": "automation",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"Sign-ups for egg freezing and IVF information evenings get reminders, the replay link and a consult booking offer afterwards, without staff sending a single email by hand.\"",
+      "whenAndWhatItTakes": "Month 2, if they run sessions. Needs their session calendar and follow-up wording."
+    },
+    {
+      "name": "Cost estimate builder by treatment pathway",
+      "kind": "software",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 15000,
+      "monthlyMin": 200,
+      "monthlyMax": 600,
+      "pitchLine": "\"Patients choose a pathway and options and see an estimate range from the clinic's own fee schedule, clearly marked as an estimate, with a button to book the consult.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the fee schedule, package rules and a billing team review of every line."
+    },
+    {
+      "name": "Appointment reminders in the clinic's approved wording",
+      "kind": "automation",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 200,
+      "monthlyMax": 600,
+      "pitchLine": "\"Monitoring visits, scans and consults get reminders with the site address and parking notes, using only wording the nursing team has approved.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their appointment types, approved message templates and the scheduling system export."
+    },
+    {
+      "name": "Site question assistant on costs and process",
+      "kind": "ai",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 15000,
+      "monthlyMin": 600,
+      "monthlyMax": 1800,
+      "pitchLine": "\"It answers 'what does IVF involve here' and 'what's included in the egg freezing fee' from the clinic's approved pages, says plainly it can't give medical advice, and offers a consult instead.\"",
+      "whenAndWhatItTakes": "Month 4. Needs approved pathway and cost pages and medical director sign-off on the answer set. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Referral portal for referring physicians",
+      "kind": "software",
+      "oneTimeMin": 8000,
+      "oneTimeMax": 20000,
+      "monthlyMin": 300,
+      "monthlyMax": 900,
+      "pitchLine": "\"Referring doctors send a fertility referral and test results through a secure form and see when the patient has been booked, instead of faxing and phoning.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their referral criteria, the coordinator who receives them and privacy sign-off."
+    },
+    {
+      "name": "Consult summary drafts for the physician",
+      "kind": "ai",
+      "oneTimeMin": 8000,
+      "oneTimeMax": 20000,
+      "monthlyMin": 600,
+      "monthlyMax": 1500,
+      "pitchLine": "\"Before each new-patient consult, the fertility specialist gets a one-page draft summary of the intake answers and uploaded results, with gaps flagged. The physician checks it; it never contacts the patient.\"",
+      "whenAndWhatItTakes": "Month 5. Needs the intake form, data-handling rules and physician review on every draft. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Financing and benefits check request flow",
+      "kind": "automation",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Patients ask the clinic to check their benefit or payment plan eligibility online, and the request lands with billing with the right documents attached.\"",
+      "whenAndWhatItTakes": "Month 5. Needs the billing team's checklist and the payment plan options they already offer."
+    },
+    {
+      "name": "Consult-to-treatment pipeline dashboard",
+      "kind": "software",
+      "oneTimeMin": 8000,
+      "oneTimeMax": 20000,
+      "monthlyMin": 400,
+      "monthlyMax": 1200,
+      "pitchLine": "\"See enquiries, booked consults and started treatment plans by source, physician and location, so the management team knows which channels and sites feed the clinic.\"",
+      "whenAndWhatItTakes": "Month 6. Needs six months of booking data and a weekly export from their systems."
+    },
+    {
+      "name": "Second-language message drafts with staff review",
+      "kind": "ai",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 12000,
+      "monthlyMin": 400,
+      "monthlyMax": 1000,
+      "pitchLine": "\"Enquiries written in another language get a draft English summary and a draft reply in the patient's language, checked by a bilingual coordinator before sending.\"",
+      "whenAndWhatItTakes": "Month 6, only where bilingual staff review. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Patient education drafts with a claims check",
+      "kind": "ai",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 400,
+      "monthlyMax": 1000,
+      "pitchLine": "\"Physicians talk for ten minutes and get a draft fertility article, with any sentence that reads like an outcome promise or advice flagged for the medical team.\"",
+      "whenAndWhatItTakes": "Month 6. Needs the clinic's content rules and medical review. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Embryology and nursing applicant screener",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 300,
+      "monthlyMax": 700,
+      "pitchLine": "\"Applicants for embryology, IVF nursing and coordinator roles answer the clinic's must-have questions, and the hiring manager gets a short draft summary of each.\"",
+      "whenAndWhatItTakes": "Whenever they hire. Needs role requirements and the careers page. Comes with the AI maintenance retainer; people decide every hire."
+    },
+    {
+      "name": "Frozen storage renewal and consent tracker",
+      "kind": "software",
+      "oneTimeMin": 10000,
+      "oneTimeMax": 25000,
+      "monthlyMin": 400,
+      "monthlyMax": 1000,
+      "pitchLine": "\"Every stored egg, sperm or embryo record gets renewal dates, storage fee reminders and consent renewals tracked, so the lab team isn't chasing them in a spreadsheet.\"",
+      "whenAndWhatItTakes": "Month 8. Needs the storage register structure, renewal rules and the lab director's sign-off."
+    },
+    {
+      "name": "Weekly enquiry summary for the management meeting",
+      "kind": "ai",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 400,
+      "monthlyMax": 900,
+      "pitchLine": "\"Every Monday the clinic's management gets a plain draft summary of last week's enquiries, consult bookings and recurring questions by location, ready for the meeting.\"",
+      "whenAndWhatItTakes": "Month 8, after the dashboard. Needs the data feeds already built. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Patient cycle calendar portal",
+      "kind": "software",
+      "oneTimeMin": 15000,
+      "oneTimeMax": 40000,
+      "monthlyMin": 800,
+      "monthlyMax": 2500,
+      "pitchLine": "\"Patients in an IVF cycle see their upcoming monitoring visits, locations and the instructions the nursing team has already given them, in one private place.\"",
+      "whenAndWhatItTakes": "Month 10. Needs integration with their scheduling and patient systems, nursing team templates and a privacy review."
+    },
+    {
+      "name": "Nurse line message routing drafts",
+      "kind": "ai",
+      "oneTimeMin": 10000,
+      "oneTimeMax": 25000,
+      "monthlyMin": 800,
+      "monthlyMax": 2000,
+      "pitchLine": "\"Portal and web messages to the fertility nursing team arrive sorted into scheduling, billing and clinical, with clinical ones flagged first. A nurse reads and answers every one.\"",
+      "whenAndWhatItTakes": "Month 12. Needs message history categories and nursing sign-off on the rules. Comes with the AI maintenance retainer; it never replies to a patient."
+    },
+    {
+      "name": "Donor profile catalogue for approved recipients",
+      "kind": "software",
+      "oneTimeMin": 15000,
+      "oneTimeMax": 40000,
+      "monthlyMin": 600,
+      "monthlyMax": 1500,
+      "pitchLine": "\"Recipients approved by the clinic browse non-identifying donor profiles behind a sign-in and request a match, instead of paper binders in the coordinator's office.\"",
+      "whenAndWhatItTakes": "Month 12, if they run a donor programme. Needs the profile fields allowed where they practise and the donor coordinator's process."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the cost estimate builder for independent clinics",
+      "whoPays": "Independent fertility clinics, monthly",
+      "min": 400,
+      "max": 1200,
+      "unit": "monthly",
+      "pitchLine": "\"Every independent fertility clinic struggles to show IVF costs clearly. The estimate builder I made for one clinic loads any fee schedule.\"",
+      "whyItWorks": "The first clinic paid for the logic and the review process. The next only needs its own fees and packages."
+    },
+    {
+      "route": "Fertility clinic groups rolling out to each new clinic",
+      "whoPays": "The clinic group's central marketing team",
+      "min": 20000,
+      "max": 80000,
+      "unit": "one-time",
+      "pitchLine": "\"Your group adds fertility clinics and each arrives with its own old site. One template with pathway, location and booking pages rolls out to every clinic you join.\"",
+      "whyItWorks": "Groups buy consistency across acquisitions, and the first clinic's build becomes the template."
+    },
+    {
+      "route": "Professional society practice toolkit",
+      "whoPays": "The national fertility society's practice section",
+      "min": 5000,
+      "max": 20000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer member clinics a site template with outcome-policy and consent pages already written the careful way, ready for each clinic's medical review.\"",
+      "whyItWorks": "Societies spend on member resources, and careful advertising is a constant member question."
+    },
+    {
+      "route": "Patient advocacy organisations",
+      "whoPays": "The fertility patient charity or advocacy group",
+      "min": 5000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Your organisation answers the same fertility questions every week. A plain-language guide library and an event sign-up system, built on the same structure clinics use.\"",
+      "whyItWorks": "Advocacy groups get grant funding for patient information and trust a builder clinics already use."
+    },
+    {
+      "route": "Egg freezing information-evening kit for clinics",
+      "whoPays": "Fertility clinics, monthly",
+      "min": 200,
+      "max": 600,
+      "unit": "monthly",
+      "pitchLine": "\"A sign-up page, reminders, replay hosting and a consult booking afterwards, ready for any fertility clinic running egg freezing sessions.\"",
+      "whyItWorks": "Every clinic that runs information sessions needs the same pieces, so one kit serves many."
+    },
+    {
+      "route": "White-label for healthcare marketing agencies",
+      "whoPays": "The agency, per clinic client",
+      "min": 5000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency runs fertility clinic campaigns but rebuilds landing pages each time. License the pathway, cost and consult pages and I deliver them under your name.\"",
+      "whyItWorks": "Agencies own the clinic relationship; you sell them a careful, review-ready structure they'd otherwise build badly."
+    },
+    {
+      "route": "Cross-border patient coordinators",
+      "whoPays": "The medical travel coordination firm",
+      "min": 6000,
+      "max": 18000,
+      "unit": "one-time",
+      "pitchLine": "\"Coordinators who bring international patients to fertility clinics need trip-planning pages and a private intake. The travelling-patient pages I built adapt directly.\"",
+      "whyItWorks": "They already work with several clinics and want to look as organised as the clinics they send people to."
+    },
+    {
+      "route": "Cryostorage providers offering a patient portal",
+      "whoPays": "The long-term storage provider",
+      "min": 15000,
+      "max": 45000,
+      "unit": "one-time",
+      "pitchLine": "\"Long-term storage providers handle renewals and consent for patients of many clinics. The storage tracker I built for one clinic becomes their patient-facing portal.\"",
+      "whyItWorks": "They serve many clinics' patients and need exactly the renewal and consent workflow already built."
+    },
+    {
+      "route": "Employer fertility benefit administrators",
+      "whoPays": "The benefits administrator",
+      "min": 10000,
+      "max": 30000,
+      "unit": "one-time",
+      "pitchLine": "\"Administrators of employer fertility benefits need a clinic directory and a plain explanation of pathways. The pathway pages I wrote become their member guide.\"",
+      "whyItWorks": "Pathway content is the slow part, already medically reviewed once, and administrators sell on member experience."
+    },
+    {
+      "route": "Second-language fertility page sets for other clinics",
+      "whoPays": "Fertility clinics in other cities",
+      "min": 4000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"The translated IVF and egg freezing pathway pages I built fit any clinic serving that language community, with their own medical review added.\"",
+      "whyItWorks": "Translation and review are the costly parts and are already done once."
+    },
+    {
+      "route": "One fertility clinic per metro",
+      "whoPays": "A fertility clinic in another metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I build for one fertility clinic per metro. Yours in {City} has the template; the next metro's clinic gets the same depth without competing with you.\"",
+      "whyItWorks": "Clinics value not sharing a builder with a direct competitor, and the structure carries over unchanged."
+    },
+    {
+      "route": "Rescue stalled fertility clinic rebuilds",
+      "whoPays": "The clinic with a half-finished site",
+      "min": 8000,
+      "max": 25000,
+      "unit": "one-time",
+      "pitchLine": "\"An agency started your fertility clinic's new site and stalled at medical review. I can finish it on a structure built for that review process.\"",
+      "whyItWorks": "Those clinics already decided to buy and often have approved copy waiting for a home."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Fertility clinic site build plus care plan, one contract",
+      "min": 15000,
+      "max": 40000,
+      "unit": "one-time",
+      "trigger": "The practice manager and medical director approve the scope.",
+      "line": "\"The fertility clinic site and the care plan are on one contract, so a fee update or a new physician page is a message to me, not a project.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Google profile management for each fertility location",
+      "min": 400,
+      "max": 1200,
+      "unit": "monthly",
+      "trigger": "Location pages are live and patients start booking consults by site.",
+      "line": "\"Patients now book by location. Keeping each monitoring site's profile accurate sends them to the right door.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "Physician, lab and clinic photo and video day",
+      "min": 2500,
+      "max": 6000,
+      "unit": "per-shoot",
+      "trigger": "Physician profiles still show marked placeholders where photos go.",
+      "line": "\"Patients choose a fertility specialist before a clinic, and the profiles are still waiting for portraits.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Privacy-safe intake forms and hosting setup",
+      "min": 4000,
+      "max": 12000,
+      "unit": "one-time",
+      "trigger": "Sixty days of consult bookings, and coordinators still re-type printed history forms.",
+      "line": "\"Your coordinators are re-typing printed IVF history forms. A private online intake has it ready before the consult.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Cost estimate builder by treatment pathway",
+      "min": 5000,
+      "max": 15000,
+      "unit": "one-time",
+      "trigger": "Billing says the same cost questions take up their phone time every week.",
+      "line": "\"Billing answers the same cost questions all week. An IVF estimate from your own fee schedule answers them first.\""
+    },
+    {
+      "rung": 6,
+      "day": 150,
+      "offer": "Site question assistant on costs and process",
+      "min": 6000,
+      "max": 15000,
+      "unit": "one-time",
+      "trigger": "The pathway and cost pages are approved, and enquiries arrive late at night.",
+      "line": "\"Patients research IVF at midnight. An assistant that answers from your approved pages, and offers a consult, keeps them with you.\""
+    },
+    {
+      "rung": 7,
+      "day": 240,
+      "offer": "Consult-to-treatment pipeline dashboard",
+      "min": 8000,
+      "max": 20000,
+      "unit": "one-time",
+      "trigger": "Management asks which locations and channels actually start treatment plans.",
+      "line": "\"Let's see which sources and fertility sites turn into started treatment, so next year's budget goes where it works.\""
+    },
+    {
+      "rung": 8,
+      "day": 365,
+      "offer": "Patient cycle calendar portal",
+      "min": 15000,
+      "max": 40000,
+      "unit": "one-time",
+      "trigger": "The nursing team says cycle schedule calls take up their mornings.",
+      "line": "\"Cycle schedule calls fill the nurses' mornings. A private calendar for each IVF patient answers most of them before they're made.\""
+    }
+  ]
+}

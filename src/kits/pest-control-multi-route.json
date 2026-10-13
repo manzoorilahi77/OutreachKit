@@ -1,0 +1,879 @@
+{
+  "schemaVersion": 1,
+  "category": "Pest control (multi-route)",
+  "slug": "pest-control-multi-route",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · expansion batch (healthcare + mid-size)",
+    "generatedAt": "2026-10-13",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Mid-size pest operator with several branches, many technicians and a large recurring plan book, so the copy leans on plan checkout, the account portal, branch pages and commercial service records. Portal and integration ranges depend heavily on their routing and billing system; I set them wide."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Branch pages with route coverage",
+      "contains": "One page per branch with its address, the towns its routes cover, the branch manager, local technicians, branch reviews and a [licence number] slot per branch",
+      "why": "Homeowners want the exterminator whose truck is already on their street. A branch page answers 'do you come here' and ranks for the town name."
+    },
+    {
+      "section": "Pest plan comparison and online checkout",
+      "contains": "General, mosquito, termite and rodent plans side by side, what each visit includes, home size questions, card on file and a first visit picked from real route openings",
+      "why": "Plan buyers compare on what's covered and the monthly price. Letting them pay and pick a first visit online closes the sale without a call-centre queue."
+    },
+    {
+      "section": "Commercial pest programs by industry",
+      "contains": "Separate sections for food service, warehouses, hotels, offices and property portfolios, with inspection-ready service records, trap maps and a walkthrough request",
+      "why": "Facility and kitchen managers buy on audit readiness, not price. They need to see that records and corrective actions are part of the service."
+    },
+    {
+      "section": "Account login and service history",
+      "contains": "Where plan customers see past visits, technician notes, invoices and the next scheduled treatment, request a re-service and update a card",
+      "why": "Plan customers cancel when they can't reach anyone. A visible login on the site tells a shopper the company is organised enough to keep them."
+    },
+    {
+      "section": "Technician careers and licensing path",
+      "contains": "Open technician and inspector roles by branch, pay ranges the company chooses to publish, the paid training and licensing path, vehicle and tools provided, and a short application",
+      "why": "Technician hiring caps how many routes they can run. Applicants compare employers on training and the licence path before they apply."
+    },
+    {
+      "section": "New-construction termite pretreatment",
+      "contains": "How pre-construction termite treatment works for builders, scheduling against the pour, the paperwork handed over at closing, and a builder account request form",
+      "why": "Builders choose one termite vendor for a whole development. A dedicated page with a builder form turns that into a recurring account."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C10",
+      "siteType": "local-conversion",
+      "name": "Branch Near You",
+      "heroLayout": "split-photo",
+      "mood": ["local", "organised", "direct"],
+      "bestFor": "Regional pest companies whose first job is routing a searcher to the right branch and a booked first visit",
+      "pairsWithTier": "starter",
+      "headlineSample": "Pest control from the {City} branch, booked online today",
+      "whyItFits": "Steel Invoice's plain sans and crisp accent keep a branch finder, plan prices and a book button readable on a phone without decoration."
+    },
+    {
+      "id": "b",
+      "themeId": "C8",
+      "siteType": "booking-first",
+      "name": "Plan Checkout",
+      "heroLayout": "card-stack",
+      "mood": ["steady", "reassuring", "clear"],
+      "bestFor": "Operators selling recurring home pest plans who want sign-up, payment and first visit done in one sitting",
+      "pairsWithTier": "standard",
+      "headlineSample": "Year-round pest plans in {City}, set up in minutes",
+      "whyItFits": "The family combo fails CTA contrast. Evergreen Trust keeps a green feel with a button that passes, and its refined serif suits a plan people keep for years."
+    },
+    {
+      "id": "c",
+      "themeId": "C19",
+      "siteType": "b2b-capability",
+      "name": "Commercial Program Desk",
+      "heroLayout": "type-led",
+      "mood": ["exact", "audit-ready", "serious"],
+      "bestFor": "Firms growing commercial accounts: kitchens, warehouses, hotels and property portfolios that buy on records",
+      "pairsWithTier": "premium",
+      "headlineSample": "Commercial pest programs for {City} kitchens and warehouses",
+      "whyItFits": "Gunmetal Signal's dark operations look and mono labels read like a service log, which suits facility managers who buy on records and audits."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "Slow on a phone",
+      "line": "Your pest control site took a long while to load on my phone, and the plan prices sat below a large banner. Someone who just found droppings in the pantry won't wait for it.",
+      "hook": "Load their home page on a phone over mobile data and count roughly how long until the plan price or book button appears. Note it for the reply.",
+      "linkLine": "The same plans, loading fast on a phone: {demo-link}"
+    },
+    {
+      "angle": "Plan sign-up ends in a call",
+      "line": "Your site lists the home pest plans clearly, then every button says call us. Plenty of people would pay for the plan and pick a first visit right there if the page let them.",
+      "hook": "Click through their plan or pricing page and see whether a visitor can pay or book without a phone call. Note where the path ends.",
+      "linkLine": "Pest plan sign-up with payment and a first visit picked online: {demo-link}"
+    },
+    {
+      "angle": "One page for every branch",
+      "line": "You run pest routes out of several branches, but the site has one contact page with a head-office number. A homeowner two towns over can't tell whether your technicians come to them.",
+      "hook": "Count the branches named on their listings or trucks, then check whether each has its own page with an address and towns covered.",
+      "linkLine": "A page for each pest control branch and the towns it covers: {demo-link}"
+    },
+    {
+      "angle": "Hiring technicians, no careers page",
+      "line": "I've seen your posts hiring pest technicians at more than one branch, and the site has no careers page. Good applicants want to see the training and licence path before they apply.",
+      "hook": "Find a current technician or inspector job post on their social pages or a job board, note the branches, then check their site for a careers section.",
+      "linkLine": "A technician careers section with the licence path explained: {demo-link}"
+    },
+    {
+      "angle": "Branch reviews stay on maps",
+      "line": "Each of your pest control branches has its own run of reviews naming technicians, and none of them appear on the site. A shopper comparing exterminators never sees them.",
+      "hook": "Open two branch listings and copy one review line from each that names a technician. Quote one back if they reply.",
+      "linkLine": "Branch reviews next to each pest plan: {demo-link}"
+    },
+    {
+      "angle": "Bill pay by phone only",
+      "line": "The pay-your-bill link on your site leads to a phone number. With a book of recurring pest plans, card updates and invoices are a big share of what your office answers.",
+      "hook": "Look for an account login, pay-a-bill or update-card link on the site. Note what it actually does when clicked.",
+      "linkLine": "A plan customer login for invoices, cards and re-service requests: {demo-link}"
+    },
+    {
+      "angle": "Commercial program buried",
+      "line": "Your commercial pest work is one paragraph on the services page. Kitchen and warehouse managers look for audit-ready records and trap maps before they ask for a walkthrough.",
+      "hook": "Find their commercial page or paragraph and check whether it mentions service records, industries served or a walkthrough form.",
+      "linkLine": "A commercial pest program page with records explained: {demo-link}"
+    },
+    {
+      "angle": "Termite swarm rush",
+      "line": "When the weather warms and termite swarmers show up, every branch phone rings at once. An online inspection request that picks from real route openings takes the pressure off the office.",
+      "hook": "Use in the weeks before the local swarm season. Check their recent posts for swarmer or termite content.",
+      "linkLine": "Termite inspections booked online across branches: {demo-link}"
+    },
+    {
+      "angle": "Mosquito season program",
+      "line": "Your mosquito control program shows up in posts each season but has no page of its own. Families planning summer in the yard search for it by name and sign up early.",
+      "hook": "Search their posts for mosquito or yard treatments and check whether the site has a dedicated mosquito plan page with a price.",
+      "linkLine": "A mosquito control plan page with seasonal sign-up: {demo-link}"
+    },
+    {
+      "angle": "New or acquired branch",
+      "line": "Congratulations on the new branch. Right now the old company's pest control site and yours both show up for the same town, and customers aren't sure which one to call.",
+      "hook": "Only if they announced a new branch or an acquisition. Search the town name with pest control and note which sites appear.",
+      "linkLine": "One exterminator brand with the new branch folded in: {demo-link}"
+    },
+    {
+      "angle": "Termite renewals offline",
+      "line": "Your termite customers renew every year, and the site has no way to renew, see the last inspection or pay online. That renewal letter is doing a lot of work on its own.",
+      "hook": "Check the termite page for any renewal, warranty-period or account wording. Note whether renewal is phone or mail only.",
+      "linkLine": "Termite renewal and inspection history online: {demo-link}"
+    },
+    {
+      "angle": "Licences per branch",
+      "line": "People let an exterminator into the kitchen and the crawlspace, and they look for the licence. Your branches each carry one, and the site shows none of them.",
+      "hook": "Look for licence numbers on trucks, listings or the footer. Use only what they publish, in [brackets] on the demo.",
+      "linkLine": "Branch licence and insurance details beside each pest plan: {demo-link}"
+    },
+    {
+      "angle": "Calls after the office closes",
+      "line": "Your branches close in the early evening, and the site only offers a phone number. Wasps by the front door and mice in the kitchen get found at night, and those people book whoever answers.",
+      "hook": "Call or check the hours on two branch listings. Note what a visitor can do on the site after closing.",
+      "linkLine": "After-hours pest requests booked into the next route day: {demo-link}"
+    },
+    {
+      "angle": "Dated next to the national brands",
+      "line": "Your crews and reviews are stronger than the national pest brands in your area, but the site looks a few years older than theirs. Plan shoppers judge the company by it.",
+      "hook": "Put their home page beside a national brand's on a phone. Note one concrete difference: no prices, small text, a stock bug photo.",
+      "linkLine": "Your exterminator brand, rebuilt to sit beside the national ones: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "That {specific recent job} you posted is the kind of pest control work facility and property managers want to see. It deserves a case page that leads to a commercial walkthrough.",
+      "hook": "Pick their newest commercial or large residential post: a restaurant, a warehouse, a termite job on a big property. Name it.",
+      "linkLine": "That pest job as a case page with a walkthrough request: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner} — I've been looking at how {Business Name} shows up across your branches.\n\nThe reviews are strong, but the site sends every plan shopper to a phone number, and there's no page per branch or way to pay for a plan online. I've put together a sample with plan checkout, branch pages and a customer login, with marked placeholders where your photos would go.\n\nWould it be useful if I sent it to you or whoever runs marketing?",
+    "dm2": "{Owner} — following up in case this got lost. Here's the sample site for {Business Name}: {demo-link}\n\nIt has plan checkout with a first visit picked online, a page per branch with the towns it covers, a commercial program page and a customer login. Happy to walk your ops or marketing lead through it in fifteen minutes, or leave it there if the timing's wrong.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}. I build websites and customer portals for multi-branch pest control companies. I sent a sample site for {Business Name} a few days ago, did it reach you?\"\n\nIF NO:\n\"Short version: plan checkout with payment, a page per branch, a commercial program page and a login for plan customers, with marked placeholders where your photos would go. Who should see it besides you?\"\n\nIF YES:\n\"What stood out?\"\n → let them talk, then ask: \"How do plan sign-ups and card updates reach your office today?\"\n\"The site rebuild runs {Build Range}, then {Care Range} a month for hosting, changes and reporting. For your branches I'd expect about {Build Price}. The portal and the routing-system connection are quoted separately once I see that system.\"\n\"Could we get thirty minutes with you and whoever owns operations next week?\"\n\nCLOSE:\n\"I'll send a short scope with the site first and the portal as phase two, so you can approve them separately.\"",
+    "objections": [
+      {
+        "objection": "Our routing software already has a customer portal.",
+        "handler": "\"Then we connect to it rather than replace it. Most of those portals are hidden behind a plain login page nobody can find. I put the plan checkout and login on your site and pass the data to the system your office already runs.\""
+      },
+      {
+        "objection": "We already pay a marketing agency.",
+        "handler": "\"Keep them on ads and search. I build the parts agencies usually don't: plan checkout, branch pages tied to your routes and the customer login. They'll have a site that turns their traffic into plans.\""
+      },
+      {
+        "objection": "I need to run this past the owner and operations.",
+        "handler": "\"Makes sense. I'll send a one-page scope and a ten-minute walkthrough recording they can watch on their own time, and I'm happy to join a call with all three of you.\""
+      },
+      {
+        "objection": "Branch managers won't keep their pages updated.",
+        "handler": "\"They don't have to. Branch pages pull hours, reviews and towns from one place, and the care plan covers updates. A manager texts a change and it's done.\""
+      },
+      {
+        "objection": "We might be acquired, so we're holding off.",
+        "handler": "\"A clean plan book with online sign-ups and a customer login reads well in any sale conversation. I'd phase it so the site lands first and nothing locks you in.\""
+      },
+      {
+        "objection": "How much for the whole thing?",
+        "handler": "\"The site is {Build Range}, about {Build Price} for your branches, plus {Care Range} a month. The portal and integrations are a separate quote once I see your routing and billing setup.\""
+      }
+    ],
+    "email": {
+      "subject": "Plan checkout and branch pages for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites and customer portals for pest control companies running several branches. {Business Name} has strong reviews across its routes, but plan shoppers on the site still end at a phone number, and there's no page telling a homeowner which branch covers their town.\n\nI built a sample instead of asking for a meeting: plan checkout with payment and a first visit picked online, a page per branch, a commercial program page with service records explained, and a customer login, with marked placeholders where your photos would go:\n\n{demo-link}\n\nThe site rebuild runs {Build Range}, plus {Care Range} a month for hosting, changes and monthly reporting. The portal and any connection to your routing system are scoped separately.\n\nWorth thirty minutes with you and your operations lead?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build plan checkout, branch pages and customer logins for multi-branch pest control companies, and I made a sample for {Business Name}. I'll email the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner} — I'm clearing out sample sites this week, including the {Business Name} pest control one with plan checkout and branch pages.\n\nShould I keep it up for your operations or marketing lead to see? One word either way is fine.",
+    "nurture": "Hi {Owner} — termite and mosquito season is getting close in {City}, and that's when every branch phone rings at once. Thought of you.\n\nThe sample with plan checkout and branch pages is still here: {demo-link}. Same scope and price as before, whenever the timing suits."
+  },
+  "pricing": {
+    "bullets": [
+      "Price against the plan book: the site only needs to add or keep a modest number of recurring plans across all branches to pay back.",
+      "Quote the site and the portal as separate phases; the portal depends on their routing and billing system and gets its own scope.",
+      "Branch pages are priced per branch, because each needs its own towns, reviews, hours and licence slot.",
+      "Commercial program pages earn more than home pages: price them on industries covered and the records explained.",
+      "Every line about products, safety or re-entry comes from labels and their own procedures, signed off by operations; bill the review time.",
+      "Never publish a licence or certification they haven't; leave a bracketed slot per branch."
+    ],
+    "lineItems": [
+      {
+        "item": "Branch page with route coverage (each)",
+        "min": 400,
+        "max": 900,
+        "unit": "per-page",
+        "description": "Max when each branch page has its own towns list, manager profile, branch reviews feed and a licence slot.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Online plan checkout with first-visit pick",
+        "min": 2500,
+        "max": 6000,
+        "unit": "one-time",
+        "description": "Max with several plan types, home size pricing, card on file and first-visit times pulled from the routing system.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Commercial program section",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "description": "Max with a page per industry, sample service record layout, case pages and a walkthrough request routed to the commercial team.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Technician careers section with application",
+        "min": 1500,
+        "max": 3500,
+        "unit": "one-time",
+        "description": "Max with roles per branch, training and licence path, a short application and applicant routing to each branch manager.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Termite renewal and inspection request flow",
+        "min": 1200,
+        "max": 3000,
+        "unit": "one-time",
+        "description": "Max with online renewal payment, last-inspection lookup and a real estate inspection request with closing date.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Acquired brand folded into the main site (each)",
+        "min": 2000,
+        "max": 5000,
+        "unit": "one-time",
+        "description": "Max when the old domain's pages, reviews and search traffic are redirected and the branch gets a full page set.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Speed and accessibility pass on existing pages",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "description": "Max when many legacy pages need image compression, heading fixes, form labels and contrast corrections.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Builder pretreatment account page",
+        "min": 600,
+        "max": 1500,
+        "unit": "per-page",
+        "description": "Max with a builder account form, pour-date scheduling request and the closing paperwork explained.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Google profile management for every branch",
+      "min": 400,
+      "max": 1500,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Each branch listing gets weekly posts of real pest work from its own routes, correct hours and answered questions, managed in one place.\"",
+      "when": "Month 1, priced by branch count."
+    },
+    {
+      "name": "Review requests routed by branch and technician",
+      "min": 300,
+      "max": 900,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"After each pest visit the customer is asked to review the branch that served them, and managers see which technicians get named.\"",
+      "when": "Month 1, once visit-complete data can be shared."
+    },
+    {
+      "name": "Seasonal campaign set: termite, mosquito, rodent",
+      "min": 2000,
+      "max": 5000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Three campaigns a year to past one-time customers and plan prospects by branch: termite inspections, mosquito sign-ups and rodent exclusion.\"",
+      "when": "Six weeks before each local pest season."
+    },
+    {
+      "name": "Technician recruiting campaign",
+      "min": 800,
+      "max": 2500,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Recruiting posts and ads per branch that point to the careers page and the licence path, so route growth isn't stuck on hiring.\"",
+      "when": "Whenever they have open technician roles at more than one branch."
+    },
+    {
+      "name": "Commercial capability pack",
+      "min": 1500,
+      "max": 3500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A short pest program document for kitchen and facility managers: industries served, service record samples and how audits are supported.\"",
+      "when": "Month 2, before their commercial team's next bid season."
+    },
+    {
+      "name": "Branch photo and video days",
+      "min": 1500,
+      "max": 4000,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A day at each branch filming technicians, trucks and exclusion work, so every branch page shows its own exterminators.\"",
+      "when": "Month 2, scheduled around route days."
+    },
+    {
+      "name": "Fleet lettering and branch signage artwork",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Truck lettering and branch signs that match the new site and carry the plan sign-up address, coordinated with their sign shop.\"",
+      "when": "After launch, or when an acquired branch is rebranded."
+    },
+    {
+      "name": "Monthly marketing report by branch",
+      "min": 250,
+      "max": 700,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"One page each month: plan sign-ups, inspection requests and reviews by branch, so the general manager sees which pest routes are growing.\"",
+      "when": "Month 2, once the site has a full month of form data."
+    },
+    {
+      "name": "Second-language plan and prep pages",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Plan pages, treatment prep sheets and checkout in a second language your customers and technicians use, approved by operations.\"",
+      "when": "Month 3, where branches serve communities that prefer another language."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Property management firms on their commercial routes",
+        "whoPays": "The property management firm",
+        "min": 8000,
+        "max": 20000,
+        "unit": "one-time",
+        "pitchLine": "\"The property managers whose buildings your technicians treat every month still take maintenance requests by email. Introduce me and I'll show them a resident request page.\"",
+        "whyItWorks": "Managers trust the pest vendor who keeps tenants quiet, and that trust gets a meeting with the person who buys software."
+      },
+      {
+        "route": "Restaurant groups they service",
+        "whoPays": "The restaurant group",
+        "min": 8000,
+        "max": 20000,
+        "unit": "one-time",
+        "pitchLine": "\"The restaurant group on your commercial pest route still posts PDF menus for each site. Your service manager sees their ops director more than anyone.\"",
+        "whyItWorks": "Restaurant operators trust the vendor who keeps them inspection-ready, and multi-site groups all need ordering and location pages."
+      },
+      {
+        "route": "Home builders using their termite pretreatment",
+        "whoPays": "The home builder",
+        "min": 8000,
+        "max": 25000,
+        "unit": "one-time",
+        "pitchLine": "\"The builder who books your termite pretreatment on every slab shows each community as a PDF. Community pages with lot maps are the next build.\"",
+        "whyItWorks": "Builders rely on the pest company at every pour; the introduction comes from a vendor they already schedule weekly."
+      },
+      {
+        "route": "Hotels and serviced apartments on contract",
+        "whoPays": "The hotel or apartment operator",
+        "min": 6000,
+        "max": 18000,
+        "unit": "one-time",
+        "pitchLine": "\"The hotel you treat for bed bugs and roaches runs its direct bookings through a dated page. Your account manager can open that door.\"",
+        "whyItWorks": "Hospitality managers share their worst problems with their pest vendor, so a referral from them carries weight."
+      },
+      {
+        "route": "Wildlife and bird control partners",
+        "whoPays": "The wildlife company, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"When your branches get raccoon, bat or pigeon calls, who gets the referral? That wildlife operator needs an urgent request page.\"",
+        "whyItWorks": "Pest and wildlife companies pass jobs both ways every week, so the handoff is natural."
+      },
+      {
+        "route": "Food warehouses and distribution centres",
+        "whoPays": "The warehouse operator",
+        "min": 6000,
+        "max": 15000,
+        "unit": "one-time",
+        "pitchLine": "\"The food warehouse on your commercial pest route schedules dock appointments by phone. A carrier booking page would save their yard team hours.\"",
+        "whyItWorks": "Warehouse managers already trust the vendor who keeps their audits clean; that trust reaches the operations director."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Resident request sorter for property managers",
+        "whoPays": "The property management firm, monthly",
+        "min": 400,
+        "max": 1200,
+        "unit": "monthly",
+        "pitchLine": "\"Resident messages about roaches, mice or leaks get sorted by building and urgency, and pest work orders go straight to the exterminator's branch.\"",
+        "whyItWorks": "Managers spend mornings forwarding complaints, and the pest client gets cleaner work orders back."
+      },
+      {
+        "route": "Audit-prep assistant for restaurant groups",
+        "whoPays": "The restaurant group, monthly",
+        "min": 300,
+        "max": 900,
+        "unit": "monthly",
+        "pitchLine": "\"Each kitchen manager asks what the last pest visit found and what's open before an inspection, and gets answers from the service records across every site.\"",
+        "whyItWorks": "Groups dread inspections across many kitchens, and the pest client already produces the records."
+      },
+      {
+        "route": "Buyer question assistant for home builders",
+        "whoPays": "The home builder, monthly",
+        "min": 400,
+        "max": 1200,
+        "unit": "monthly",
+        "pitchLine": "\"Home buyers ask about lots, finishes and the termite pretreatment paperwork, and the builder's sales team gets the warm leads with answers attached.\"",
+        "whyItWorks": "Builders field the same buyer questions all day; the pest client's paperwork is one of them."
+      },
+      {
+        "route": "Guest complaint triage for hotels",
+        "whoPays": "The hotel operator, monthly",
+        "min": 300,
+        "max": 900,
+        "unit": "monthly",
+        "pitchLine": "\"Guest complaints that mention bugs are flagged by room and sent to housekeeping and the pest vendor before the review gets written.\"",
+        "whyItWorks": "Hotels fear the bed bug review more than the bill, and the pest client gains faster calls."
+      },
+      {
+        "route": "Call sorter for wildlife operators",
+        "whoPays": "The wildlife company, monthly",
+        "min": 200,
+        "max": 500,
+        "unit": "monthly",
+        "pitchLine": "\"Callers describe the noise in the roof, and likely rodent jobs go to the pest branch while raccoons, bats and birds go to the wildlife crew.\"",
+        "whyItWorks": "Both companies get cleaner calls, and the pest client gets the rodent exclusion work back."
+      },
+      {
+        "route": "Sanitation log drafter for food warehouses",
+        "whoPays": "The warehouse operator, monthly",
+        "min": 300,
+        "max": 900,
+        "unit": "monthly",
+        "pitchLine": "\"Supervisors talk through the sanitation walk and get a drafted log, with pest findings pulled from the exterminator's latest service record.\"",
+        "whyItWorks": "Warehouses write these logs daily, and the pest vendor's data is already half of what they need."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Missed-call and form text-back to the nearest branch",
+      "kind": "automation",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"A missed call or web form gets a text within a minute with the right branch's plan prices and a link to book, so the lead isn't lost while the office is busy.\"",
+      "whenAndWhatItTakes": "Month 1. Needs the branch phone numbers forwarded, town-to-branch mapping and approved wording."
+    },
+    {
+      "name": "Failed card recovery for plan payments",
+      "kind": "automation",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"When a recurring pest plan payment fails, the customer gets a polite text and email with a secure card update page before the office has to chase it.\"",
+      "whenAndWhatItTakes": "Month 2. Needs access to the billing system's failed-payment report and the wording they approve."
+    },
+    {
+      "name": "Online plan checkout connected to the routing system",
+      "kind": "software",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 14000,
+      "monthlyMin": 150,
+      "monthlyMax": 500,
+      "pitchLine": "\"A homeowner picks a pest plan, pays, and chooses a first visit from real route openings, and the account appears in your routing system without retyping.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the routing and billing system's connection details, plan rules by branch and a test account."
+    },
+    {
+      "name": "Website assistant for plan and pest questions",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 400,
+      "monthlyMax": 1200,
+      "pitchLine": "\"It answers 'do you cover my town' and 'what does the termite plan include' from your own plan terms, then books the first visit. It never gives safety advice.\"",
+      "whenAndWhatItTakes": "Month 3. Needs plan terms, the town-to-branch list and approved wording. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Plan customer portal",
+      "kind": "software",
+      "oneTimeMin": 12000,
+      "oneTimeMax": 35000,
+      "monthlyMin": 400,
+      "monthlyMax": 1200,
+      "pitchLine": "\"Plan customers log in to see visit history, technician notes and invoices, request a re-service and update a card, with everything synced to the routing system.\"",
+      "whenAndWhatItTakes": "Month 3 to month 5. Needs the routing and billing system's data access, a customer export and the re-service policy."
+    },
+    {
+      "name": "Review reply drafts for every branch",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 200,
+      "monthlyMax": 600,
+      "pitchLine": "\"Each new branch review gets a drafted reply naming the pest job and technician, waiting for the branch manager to approve.\"",
+      "whenAndWhatItTakes": "Month 2, alongside the review requests. Needs branch listing access and a tone guide. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Branch growth dashboard",
+      "kind": "software",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 18000,
+      "monthlyMin": 200,
+      "monthlyMax": 800,
+      "pitchLine": "\"Plan sign-ups, cancellations, re-services and reviews per branch on one screen, so the general manager sees which pest routes grow and which leak.\"",
+      "whenAndWhatItTakes": "Month 4. Needs a few months of site data and an export from the routing and billing system."
+    },
+    {
+      "name": "Termite renewal reminders with online payment",
+      "kind": "automation",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"Termite customers get renewal notices ahead of the date with a pay-online link and their last inspection summary, so fewer renewals lapse.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the termite account list, renewal terms and the billing connection."
+    },
+    {
+      "name": "After-hours phone assistant across branches",
+      "kind": "ai",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 14000,
+      "monthlyMin": 600,
+      "monthlyMax": 2000,
+      "pitchLine": "\"Evening callers about wasps, mice or termite swarmers reach an assistant that takes details, finds their branch and books the next route opening.\"",
+      "whenAndWhatItTakes": "Month 4. Needs branch calendars, services by branch and approved urgent-call wording. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Commercial client portal with service records",
+      "kind": "software",
+      "oneTimeMin": 10000,
+      "oneTimeMax": 30000,
+      "monthlyMin": 300,
+      "monthlyMax": 1000,
+      "pitchLine": "\"Kitchen and facility managers log in to download pest service records, trap maps and corrective actions for each site before an audit.\"",
+      "whenAndWhatItTakes": "Month 5. Needs the service log data, commercial account list and the record formats their clients' auditors expect."
+    },
+    {
+      "name": "Technician applicant screener",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 300,
+      "monthlyMax": 900,
+      "pitchLine": "\"Applicants for pest technician roles answer questions about driving, crawlspaces and the licence exam, and each branch manager gets a ranked shortlist.\"",
+      "whenAndWhatItTakes": "Any month they're hiring at more than one branch. Needs must-haves, pay bands and the training plan. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "New technician licensing tracker",
+      "kind": "software",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 14000,
+      "monthlyMin": 200,
+      "monthlyMax": 600,
+      "pitchLine": "\"Every new exterminator's training hours, ride-alongs, exam date and licence renewal in one place, so no technician runs a route out of compliance.\"",
+      "whenAndWhatItTakes": "Month 5. Needs the training checklist, licence renewal rules where they operate and the technician roster."
+    },
+    {
+      "name": "Visit summary writer for plan customers",
+      "kind": "ai",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 300,
+      "monthlyMax": 900,
+      "pitchLine": "\"Technician notes turn into a plain visit summary for the customer: areas treated, what was found, prep for next time, approved wording only.\"",
+      "whenAndWhatItTakes": "Month 5. Needs sample technician notes and the approved label and prep wording. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Cancellation save flow",
+      "kind": "automation",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 100,
+      "monthlyMax": 400,
+      "pitchLine": "\"When a plan customer cancels online, they're offered a free re-service or a plan change first, and the branch sees the reason the same day.\"",
+      "whenAndWhatItTakes": "Month 5, after the portal. Needs the retention offers operations will honour and cancellation reasons."
+    },
+    {
+      "name": "Route density map for door-to-door sales",
+      "kind": "software",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 16000,
+      "monthlyMin": 200,
+      "monthlyMax": 700,
+      "pitchLine": "\"Streets where you already treat several homes light up on a map, so sales reps knock where an extra pest plan adds no drive time.\"",
+      "whenAndWhatItTakes": "Month 6. Needs plan addresses and route days by branch."
+    },
+    {
+      "name": "Inbound message triage across branches",
+      "kind": "ai",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 400,
+      "monthlyMax": 1000,
+      "pitchLine": "\"Emails, texts and web messages get sorted into re-service, billing, new plan and commercial requests, routed to the right branch with a draft reply.\"",
+      "whenAndWhatItTakes": "Month 6. Needs the shared inboxes, the text line and routing rules. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Acquired customer list onboarding tool",
+      "kind": "software",
+      "oneTimeMin": 8000,
+      "oneTimeMax": 25000,
+      "monthlyMin": 200,
+      "monthlyMax": 600,
+      "pitchLine": "\"When you buy a smaller exterminator, its customer list is cleaned, matched to routes and invited to the portal with a welcome note from the new branch.\"",
+      "whenAndWhatItTakes": "When they next acquire. Needs the acquired company's customer export and the plan mapping operations decides on."
+    },
+    {
+      "name": "Pest photo triage for incoming requests",
+      "kind": "ai",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 300,
+      "monthlyMax": 900,
+      "pitchLine": "\"A homeowner uploads a picture of the insect or droppings, and the branch sees a likely pest and suggested visit type to confirm before calling back.\"",
+      "whenAndWhatItTakes": "Month 7. Needs past requests with photos and what each turned out to be. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Procedure assistant for technicians",
+      "kind": "ai",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 15000,
+      "monthlyMin": 500,
+      "monthlyMax": 1500,
+      "pitchLine": "\"A technician on a route asks how the company handles a bed bug job or a crawlspace entry and gets the written procedure, with label references, not a guess.\"",
+      "whenAndWhatItTakes": "Month 8. Needs written procedures and operations' sign-off on every answer. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Commercial walkthrough quoting app",
+      "kind": "software",
+      "oneTimeMin": 10000,
+      "oneTimeMax": 25000,
+      "monthlyMin": 300,
+      "monthlyMax": 900,
+      "pitchLine": "\"Commercial reps walk a kitchen or warehouse with a tablet, log devices and risk areas, and leave with a priced pest program proposal ready to send.\"",
+      "whenAndWhatItTakes": "Month 8. Needs their commercial pricing rules, device types and proposal template."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the plan checkout for regional pest operators",
+      "whoPays": "Pest control companies, monthly per branch",
+      "min": 300,
+      "max": 1200,
+      "unit": "monthly",
+      "pitchLine": "\"I built plan checkout tied to the routing system for one multi-branch exterminator. Every regional operator loses plan sales to a phone queue.\"",
+      "whyItWorks": "The first client paid for the integration work, which every company on the same routing system shares."
+    },
+    {
+      "route": "Pest supply distributor's operator program",
+      "whoPays": "The distributor, annually",
+      "min": 15000,
+      "max": 60000,
+      "unit": "per-year",
+      "pitchLine": "\"Offer every pest operator who buys from you branch pages, plan checkout and service records as a member tool, and they keep ordering through you.\"",
+      "whyItWorks": "Distributors compete for mid-size operators, and a daily tool holds an account better than a rebate."
+    },
+    {
+      "route": "Pest management association member template",
+      "whoPays": "The association",
+      "min": 5000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"For operators growing past one branch, the association hands out a ready branch-page and checkout system, with wording reviewed so no member strays into treatment claims.\"",
+      "whyItWorks": "Associations want compliant marketing for members, and one agreement reaches many owners."
+    },
+    {
+      "route": "Investor-backed pest roll-up platforms",
+      "whoPays": "The platform company, per acquired brand",
+      "min": 8000,
+      "max": 25000,
+      "unit": "one-time",
+      "pitchLine": "\"Each exterminator you acquire keeps its local name. One site system, one checkout and one portal template, rolled out to every new brand in weeks.\"",
+      "whyItWorks": "Roll-ups buy local brands constantly and need them rebuilt quickly and consistently."
+    },
+    {
+      "route": "White-label for agencies serving pest companies",
+      "whoPays": "The agency, per site",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency runs ads for pest operators but sends traffic to sites that can't take a plan payment. License my checkout and branch-page system.\"",
+      "whyItWorks": "Agencies keep the client relationship; you sell the part that's hard to build."
+    },
+    {
+      "route": "Facility management companies' vendor records hub",
+      "whoPays": "The facility management company, annually",
+      "min": 15000,
+      "max": 50000,
+      "unit": "per-year",
+      "pitchLine": "\"Pest records, trap maps and corrective actions from every vendor across every site you manage, collected in one place before audits.\"",
+      "whyItWorks": "Facility managers chase vendor paperwork across many buildings, and the pest client already produces the records in the right shape."
+    },
+    {
+      "route": "Hotel groups' pest incident board",
+      "whoPays": "The hotel group, annually",
+      "min": 10000,
+      "max": 40000,
+      "unit": "per-year",
+      "pitchLine": "\"Every property's pest incidents, room holds and treatments on one board, so the group sees problems before guests write about them.\"",
+      "whyItWorks": "Hotel groups need consistent records across properties, and the pest client's data starts it."
+    },
+    {
+      "route": "Food manufacturers' audit document system",
+      "whoPays": "The food manufacturer, annually",
+      "min": 12000,
+      "max": 40000,
+      "unit": "per-year",
+      "pitchLine": "\"The pest program section of your food safety audit, kept current from your exterminator's records instead of rebuilt in a binder each time.\"",
+      "whyItWorks": "Food plants buy on audit readiness, and the pest client already visits them on a fixed schedule."
+    },
+    {
+      "route": "Home builders' termite paperwork portal",
+      "whoPays": "The home builder, annually",
+      "min": 6000,
+      "max": 20000,
+      "unit": "per-year",
+      "pitchLine": "\"Every lot's termite pretreatment certificate filed and handed to the buyer at closing from one portal, across all your communities.\"",
+      "whyItWorks": "Builders need the paperwork on every closing, and the pest client already produces it."
+    },
+    {
+      "route": "Franchise pest brands' franchisee sites",
+      "whoPays": "The franchisor, per territory",
+      "min": 3000,
+      "max": 8000,
+      "unit": "one-time",
+      "pitchLine": "\"Each franchisee gets territory pages, plan checkout and a portal on one brand system, built once and copied per territory.\"",
+      "whyItWorks": "Franchisors need consistent local pages for every territory; the multi-branch build is the same shape."
+    },
+    {
+      "route": "The same branch system for the next regional operator",
+      "whoPays": "A non-competing pest company in another region",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I work with one multi-branch exterminator per region, and {City} is taken. The next region over is open, and the plan checkout is already built.\"",
+      "whyItWorks": "Non-competing geography lets you reuse the checkout, the portal and the case study."
+    },
+    {
+      "route": "Rescue stalled pest portal projects",
+      "whoPays": "The pest company with an unfinished build",
+      "min": 5000,
+      "max": 20000,
+      "unit": "one-time",
+      "pitchLine": "\"Paid for a pest customer portal or routing integration that never went live? I've finished that exact build for a multi-branch operator.\"",
+      "whyItWorks": "Stranded buyers already decided to spend; they want someone who has shipped it."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Multi-branch pest site plus care plan, one contract",
+      "min": 10000,
+      "max": 22000,
+      "unit": "one-time",
+      "trigger": "They approve the site scope after the walkthrough with operations.",
+      "line": "\"The pest site and the care plan sit on one contract, so a new branch page or a seasonal plan change is one message to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Review requests routed by branch and technician",
+      "min": 300,
+      "max": 900,
+      "unit": "monthly",
+      "trigger": "A month live, and branch managers ask why some branches have far fewer reviews.",
+      "line": "\"Your strongest pest branches already get named in reviews. Let's ask after every visit so the quieter branches catch up.\""
+    },
+    {
+      "rung": 3,
+      "day": 60,
+      "offer": "Online plan checkout connected to the routing system",
+      "min": 5000,
+      "max": 14000,
+      "unit": "one-time",
+      "trigger": "Form data shows plan shoppers who requested a call back and never signed.",
+      "line": "\"These people wanted a pest plan and waited for a call. Let them pay and pick a visit on the spot.\""
+    },
+    {
+      "rung": 4,
+      "day": 90,
+      "offer": "Failed card recovery for plan payments",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "trigger": "The office mentions time spent chasing declined plan payments.",
+      "line": "\"Every declined plan payment is a pest customer at risk. A secure card update link fixes most before anyone calls.\""
+    },
+    {
+      "rung": 5,
+      "day": 120,
+      "offer": "Plan customer portal",
+      "min": 12000,
+      "max": 35000,
+      "unit": "one-time",
+      "trigger": "Re-service, invoice and card-update calls are still the office's biggest load.",
+      "line": "\"Your plan customers can handle re-services and invoices themselves. The portal frees the office for new pest accounts.\""
+    },
+    {
+      "rung": 6,
+      "day": 180,
+      "offer": "After-hours phone assistant across branches",
+      "min": 5000,
+      "max": 14000,
+      "unit": "one-time",
+      "trigger": "Termite swarm or mosquito season is a few weeks off and evening calls go to voicemail.",
+      "line": "\"Swarm season is close. Let evening callers book the next route opening instead of calling the national brand.\""
+    },
+    {
+      "rung": 7,
+      "day": 240,
+      "offer": "Commercial client portal with service records",
+      "min": 10000,
+      "max": 30000,
+      "unit": "one-time",
+      "trigger": "The commercial team mentions emailing service records before a client's audit.",
+      "line": "\"Your commercial pest clients email you before every audit. Let them download records for each site themselves.\""
+    },
+    {
+      "rung": 8,
+      "day": 365,
+      "offer": "Branch growth dashboard",
+      "min": 6000,
+      "max": 18000,
+      "unit": "one-time",
+      "trigger": "A year of site and plan data, and leadership is planning the next branch or acquisition.",
+      "line": "\"You have a year of pest plan data by branch. The dashboard shows where the next route or acquisition should go.\""
+    }
+  ]
+}

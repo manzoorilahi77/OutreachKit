@@ -8,8 +8,9 @@ import { Note } from "@/components/ui/Note";
 import { StatTile } from "@/components/ui/StatTile";
 import { TableWrap, td, th } from "@/components/ui/TableWrap";
 import { DueText } from "@/components/leads/DueText";
-import { STATES } from "@/data";
-import type { StateCode } from "@/data";
+import { cleanRates } from "@/lib/market/currency";
+import { isSiteLang } from "@/lib/market/notes";
+import { isRegion } from "@/lib/market/regions";
 import { can } from "@/lib/auth/permissions";
 import { requirePerm, storeFor } from "@/lib/auth/server";
 import { findCategory } from "@/lib/kit/categories";
@@ -30,7 +31,7 @@ export default async function KitPage({ params, searchParams }: { params: Promis
   if (!isId(id)) notFound();
   const store = storeFor(s);
   const kit = (await store.listKits()).find((k) => k.id === id);
-  if (!kit || !(kit.state in STATES) || !findCategory(kit.category)) notFound();
+  if (!kit || !isRegion(kit.state) || !findCategory(kit.category)) notFound();
 
   const mine = kit.owner === s.user.username;
   const seesLeads = can(s, "leads.view");
@@ -50,7 +51,10 @@ export default async function KitPage({ params, searchParams }: { params: Promis
   const dueToday = leads.filter((l) => l.next_action_date !== null && l.next_action_date <= today).length;
   const byStage = (st: Stage) => leads.filter((l) => l.stage === st).length;
 
-  const input = { cat: kit.category, device: kit.device, st: kit.state as StateCode, city: kit.city, you: owner?.fullName, brand: ws.studio, domain: ws.demoDomain };
+  const input = {
+    cat: kit.category, device: kit.device, st: kit.state, city: kit.city, you: owner?.fullName, brand: ws.studio, domain: ws.demoDomain,
+    ...(isSiteLang(kit.site_lang) ? { lang: kit.site_lang } : {}),
+  };
   const ck = tab === "kit" ? await loadCategoryKit(kit.category) : null;
   const href = (t: string) => `/kits/${kit.id}${t === "kit" ? "" : `?tab=${t}`}`;
 
@@ -100,6 +104,7 @@ export default async function KitPage({ params, searchParams }: { params: Promis
         <SavedKitView
           input={input}
           ck={ck}
+          rates={cleanRates(ws.markets?.rates)}
           direction={isDirectionId(kit.direction) ? kit.direction : "b"}
           actions={mine && can(s, "leads.add") ? <Link href={`/leads/new?kit=${kit.id}`} className="inline-flex min-h-11 items-center">Create a lead from this kit</Link> : undefined}
         />

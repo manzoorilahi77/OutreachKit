@@ -22,7 +22,8 @@ const screens: { user: string | null; path: string }[] = [
   ...PUBLIC.map((p) => ({ user: null, path: p })),
   ...plan.flatMap(([user, , paths]) => paths.map((p) => ({ user, path: p }))),
   { user: "ravi", path: consoleBuilt },
-  ...["math", "board", "filter", "track", "reach"].map((s) => ({ user: "mia", path: `/playbook/${s}` })),
+  { user: "ravi", path: "/console?cat=Polyclinics+%26+multi-specialty+centres&st=DXB&city=Business+Bay&lang=bi&build=1" },
+  ...["math", "board", "filter", "track", "reach", "midsize", "healthcare", "markets"].map((s) => ({ user: "mia", path: `/playbook/${s}` })),
   { user: null, path: "/styleguide" }, // signed out: redirects to the login page, which is checked above
 ];
 

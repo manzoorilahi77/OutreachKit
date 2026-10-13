@@ -7,6 +7,9 @@ import { DueText } from "@/components/leads/DueText";
 import { agoText } from "@/lib/ago";
 import { requirePerm, storeFor } from "@/lib/auth/server";
 import { KIT_STATUS_LABEL } from "@/lib/store/kitText";
+import { sizeOfCategory } from "@/lib/kit/categories";
+import { SIZE_LABEL } from "@/lib/kit/extBoard";
+import { COUNTRIES, countryOf } from "@/lib/market/regions";
 import type { KitStats } from "@/lib/store/store";
 import type { KitRecord } from "@/lib/store/types";
 
@@ -23,7 +26,15 @@ function KitTable({ kits, stats, label }: { kits: KitRecord[]; stats: Map<string
           const st = stats.get(k.id)!;
           return (
             <tr key={k.id}>
-              <td className={`${td} font-medium`}><Link href={`/kits/${k.id}`}>{k.title}</Link></td>
+              <td className={`${td} font-medium`}>
+                <Link href={`/kits/${k.id}`}>{k.title}</Link>
+                {(sizeOfCategory(k.category) === "mid" || countryOf(k.state) !== "US") && (
+                  <span className="mt-1 flex flex-wrap gap-1">
+                    {sizeOfCategory(k.category) === "mid" && <Chip variant="warm">{SIZE_LABEL.mid}</Chip>}
+                    {countryOf(k.state) !== "US" && <Chip>{COUNTRIES[countryOf(k.state)].short}</Chip>}
+                  </span>
+                )}
+              </td>
               <td className={td}><Chip variant={k.status === "active" ? "tier-a" : "plain"}>{KIT_STATUS_LABEL[k.status]}</Chip></td>
               <td className={`${td} tabular-nums`}>{st.leads}</td>
               <td className={`${td} tabular-nums`}>{st.contacted}</td>

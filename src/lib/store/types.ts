@@ -51,6 +51,8 @@ export interface Workspace {
   demoDomain: string;
   basedLine: string;
   features: { leadFinder: boolean; softwareTrack: boolean };
+  /** Exchange rates for kits built in Canada and the UAE (1 USD = n). Absent means the planning defaults. */
+  markets?: { rates: { CAD: number; AED: number } };
   /** Workspace-level Outreach Health (Prompt D). */
   outreachHealth?: Record<string, unknown>;
 }
@@ -70,6 +72,8 @@ export interface KitRecord {
   city: string;
   city_is_free: boolean;
   direction: string;
+  /** UAE kits: the prospect site's language (en, ar, bi). Absent on older kits and outside the UAE. */
+  site_lang?: string;
   created_at: string;
   updated_at: string;
 }

@@ -5,6 +5,7 @@ import { SectionHead } from "@/components/ui/SectionHead";
 import { can } from "@/lib/auth/permissions";
 import { requirePerm, storeFor } from "@/lib/auth/server";
 import { findSection } from "@/lib/playbook";
+import { cleanRates } from "@/lib/market/currency";
 
 export const metadata: Metadata = { title: "Kit Console" };
 
@@ -22,6 +23,7 @@ export default async function ConsolePage() {
         canSave={can(s, "kits.save")}
         canMoveLeads={can(s, "leads.add")}
         finderEnabled={can(s, "finder.run") && ws.features.leadFinder}
+        rates={cleanRates(ws.markets?.rates)}
       />
     </div>
   );

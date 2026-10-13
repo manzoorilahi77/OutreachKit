@@ -7,9 +7,13 @@ const SUFFIX = /\b(llc|l l c|inc|incorporated|co|corp|corporation|ltd|limited|th
 /** Lower-case letters and digits only, legal suffixes dropped: "Smith Roofing, LLC" and "smith roofing" are the same name. */
 export const normText = (s: string): string => s.toLowerCase().replace(/&/g, " and ").replace(/[^a-z0-9 ]+/g, " ").replace(SUFFIX, " ").replace(/[^a-z0-9]+/g, "");
 
-/** Phone digits without a US country code. Fewer than 7 digits is not a usable key. */
+/**
+ * Phone digits without the country code, so "+1 512…" and "512…" match, and "+971 4 123 4567" and "04 123 4567" match.
+ * North America drops a leading 1 before ten digits; the UAE drops 971 (or 00971) before eight or nine digits, or the
+ * trunk 0. A US number never starts with 0, and a ten-digit one that starts with 971 is left alone. Fewer than 7 digits is not a usable key.
+ */
 export function phoneDigits(phone: string): string | null {
-  const d = phone.replace(/\D/g, "").replace(/^1(?=\d{10}$)/, "");
+  const d = phone.replace(/\D/g, "").replace(/^1(?=\d{10}$)/, "").replace(/^00971(?=\d{8,9}$)/, "").replace(/^971(?=\d{8,9}$)/, "").replace(/^0(?=\d{8,9}$)/, "");
   return d.length >= 7 ? d : null;
 }
 

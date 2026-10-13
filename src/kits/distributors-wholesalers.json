@@ -1,0 +1,852 @@
+{
+  "schemaVersion": 1,
+  "category": "Distributors & wholesalers",
+  "slug": "distributors-wholesalers",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · expansion batch (healthcare + mid-size)",
+    "generatedAt": "2026-10-13",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Mid-size catalog kit for branch-based distributors selling to trade accounts. Leaned on the PDF catalogue, phone ordering and branch counters. Least sure about the trade ordering portal and stock lookup ranges, which depend on how clean their item master and inventory system are."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Searchable product catalogue with trade login",
+      "contains": "Every stocked item by category with specs, pack sizes and units of sale, list price or 'sign in for your price', and a quote button on each line",
+      "why": "Trade buyers check whether a distributor carries the item before they call. If the catalogue can't be searched, they call the one whose can."
+    },
+    {
+      "section": "Trade account application and terms",
+      "contains": "Online account application, credit application, tax exemption documents upload, payment terms placeholder and what happens after you apply",
+      "why": "A contractor or reseller opens an account with the wholesaler that makes it easy. Paper credit forms lose accounts to faster competitors."
+    },
+    {
+      "section": "Branches, counters and will-call pickup",
+      "contains": "A page per branch with counter hours, stock pickup, loading access, branch manager contact and the delivery days from that branch",
+      "why": "Trade customers buy from the branch on their way to the job. Each branch needs to be findable on its own."
+    },
+    {
+      "section": "Delivery routes and order cut-offs",
+      "contains": "Delivery zones and days, order cut-off time for next-day delivery, minimum order for free delivery and how to request a site drop",
+      "why": "Buyers plan around the truck. Clear cut-offs and zones answer the question inside sales gets asked all day."
+    },
+    {
+      "section": "Lines carried and manufacturer pages",
+      "contains": "The manufacturer lines the distributor is authorised to sell, grouped by category, each linking to the products in stock, shown only with the manufacturer's permission",
+      "why": "Buyers search by the manufacturer name they already use. A lines-carried page shows they can get it here."
+    },
+    {
+      "section": "Project and bulk quote desk",
+      "contains": "Upload a material list or takeoff, project name and delivery phases, and get project pricing from the inside sales team",
+      "why": "Project orders are the biggest tickets a wholesale supplier sees. A quote desk that takes the whole list wins them."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C1",
+      "siteType": "local-conversion",
+      "name": "Counter Open",
+      "heroLayout": "split-photo",
+      "mood": ["practical", "local", "quick"],
+      "bestFor": "Single-region distributors whose site mainly sends trade buyers to a branch counter or a phone order",
+      "pairsWithTier": "starter",
+      "headlineSample": "Wholesale supply for {City} trades, open from early morning",
+      "whyItFits": "Banker's Indigo is a calm, trustworthy blue with a neo-grotesque face that keeps branch hours, cut-offs and account forms easy to scan."
+    },
+    {
+      "id": "b",
+      "themeId": "C19",
+      "siteType": "catalog",
+      "name": "Line Card Live",
+      "heroLayout": "card-stack",
+      "mood": ["stocked", "orderly", "exact"],
+      "bestFor": "Mid-size distributors whose main sale is a searchable catalogue and quote requests by line",
+      "pairsWithTier": "standard",
+      "headlineSample": "In stock across {City} branches, delivered next day",
+      "whyItFits": "The family combo. Its mono labels make part numbers, pack sizes and stock status read cleanly, and the dark page suits warehouse operations."
+    },
+    {
+      "id": "c",
+      "themeId": "C12",
+      "siteType": "b2b-capability",
+      "name": "Trade Portal",
+      "heroLayout": "type-led",
+      "mood": ["modern", "connected", "efficient"],
+      "bestFor": "Larger distributors and trading companies selling a portal with account pricing, ordering and history",
+      "pairsWithTier": "premium",
+      "headlineSample": "Order, track and reorder from {City}'s trade supplier",
+      "whyItFits": "Carbon Indigo was made for software tools. A dark, app-like page signals the portal is the product, not the brochure around it."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "Catalogue nobody can search",
+      "line": "Your wholesale catalogue is a download running to hundreds of pages, and the site search finds nothing inside it. A contractor checking if you stock one fitting gives up and calls the next supplier.",
+      "hook": "Search the site for a common item in their category. Note whether anything comes back. Screenshot it for when they reply.",
+      "linkLine": "The same stock, searchable by item and spec: {demo-link}"
+    },
+    {
+      "angle": "Ordering means calling a rep",
+      "line": "The ordering page on your site says to call your rep or email the branch. Trade buyers who plan tomorrow's material at night want to send that order to their distributor before bed.",
+      "hook": "Find how the site says to order. If it's only phone or email, the angle holds.",
+      "linkLine": "An order and quote request any trade buyer can send at night: {demo-link}"
+    },
+    {
+      "angle": "Credit application to print",
+      "line": "To open a trade account with you, I'd have to print a credit application and send it back. The wholesaler with a form that takes ten minutes online usually gets the new account first.",
+      "hook": "Look for 'open an account' or 'credit application'. Note whether it's a PDF, a form or missing.",
+      "linkLine": "A trade account application that works on a phone: {demo-link}"
+    },
+    {
+      "angle": "Branches without their own pages",
+      "line": "You run several branches, but the site lists them as addresses on one page. A plumber near your east branch can't see its counter hours or whether it has will-call pickup.",
+      "hook": "Count their branches on the maps listing and compare with what the site shows for each.",
+      "linkLine": "A page per branch with counter hours and pickup: {demo-link}"
+    },
+    {
+      "angle": "Slow on a phone at the counter",
+      "line": "Your product pages took ages to load on my phone. Most trade buyers check a supplier's stock from the truck or the jobsite, not from a desk.",
+      "hook": "Load a product or category page on mobile data and roughly time it.",
+      "linkLine": "The same catalogue, fast on a phone: {demo-link}"
+    },
+    {
+      "angle": "Call for availability on every item",
+      "line": "Every product page on your site says 'call for availability'. Inside sales ends up answering stock questions all day that a simple in-stock flag could answer.",
+      "hook": "Open several product pages and check whether any show stock, lead time or branch availability.",
+      "linkLine": "Stock status by branch on each product line: {demo-link}"
+    },
+    {
+      "angle": "Hiring drivers and warehouse staff",
+      "line": "I saw you're hiring delivery drivers and warehouse pickers, and the careers link goes to a general email. People choosing between distribution jobs compare shifts and routes first.",
+      "hook": "Find their job posts on a job board or social profile, then check the site's careers page.",
+      "linkLine": "A warehouse and driver careers page: {demo-link}"
+    },
+    {
+      "angle": "Delivery cut-off nowhere online",
+      "line": "Nowhere on your site does it say what time to order for next-day delivery, or which days the truck runs to each area. That's the question every new wholesale customer asks first.",
+      "hook": "Search the site for delivery, cut-off or routes. Note what's missing.",
+      "linkLine": "Delivery zones and cut-offs on one page: {demo-link}"
+    },
+    {
+      "angle": "Lines carried as a logo wall",
+      "line": "Your lines carried page is a wall of manufacturer logos that don't link anywhere. A buyer who clicks the line they need wants to see the items you stock from it.",
+      "hook": "Open their brands or lines page and click a logo. Note whether it leads to products.",
+      "linkLine": "Lines carried, each linked to stocked items: {demo-link}"
+    },
+    {
+      "angle": "Counter staff praised in reviews",
+      "line": "A reviewer wrote that your counter staff found a discontinued part's replacement in five minutes. That's what a new trade customer wants to know about a supply house, and it isn't on the site.",
+      "hook": "Read their reviews and copy one phrase about counter staff, stock or delivery.",
+      "linkLine": "Customer comments beside the trade account form: {demo-link}"
+    },
+    {
+      "angle": "New branch announced",
+      "line": "Congratulations on the new branch. The site doesn't mention it yet, so buyers in that area searching for a local wholesale supplier won't know you're there.",
+      "hook": "Find a new branch or expansion post and check whether the site has a page for it.",
+      "linkLine": "A launch page for the new branch: {demo-link}"
+    },
+    {
+      "angle": "Pre-season buying",
+      "line": "Your customers place pre-season stock orders in the coming months. A distributor that publishes its pre-season programme and order deadlines online gets those orders without chasing.",
+      "hook": "Use this a couple of months before their trade's busy season. Check whether they post any seasonal programme.",
+      "linkLine": "A pre-season order page for trade customers: {demo-link}"
+    },
+    {
+      "angle": "Overseas buyers, no proforma request",
+      "line": "Your trading company lists product categories, but there's no way for a buyer in another country to request a proforma with quantities and shipping terms.",
+      "hook": "Use for trading and import-export firms. Look for an export enquiry or proforma request form.",
+      "linkLine": "An export enquiry that asks the right questions: {demo-link}"
+    },
+    {
+      "angle": "Repeat orders retyped every time",
+      "line": "Your regular trade customers reorder much the same items every week, and they still have to phone or email the list. A reorder page with their last orders would save both sides time.",
+      "hook": "Check for a customer login or order history. If there's none, the angle holds.",
+      "linkLine": "A reorder page for trade accounts: {demo-link}"
+    },
+    {
+      "angle": "A specific recent arrival",
+      "line": "That {specific recent job} you posted is the kind of stock buyers hunt for. It should sit on a product page in the catalogue, not only in a post that scrolls away.",
+      "hook": "Pick their newest stock arrival or new line post and name it.",
+      "linkLine": "That product on a catalogue page: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner} — saw the {specific recent job} post, good stock to have.\n\nI went through the {Business Name} site and couldn't search the catalogue or open a trade account without a printed form. I put together a sample with a searchable catalogue, an online account application and branch pages with cut-off times, with marked placeholders where your photos would go.\n\nWould it help if I sent it to you and whoever runs inside sales?",
+    "dm2": "{Owner} — following up in case my last note got buried under orders. Here's the sample for {Business Name}: {demo-link}\n\nIt has a searchable catalogue with a sign-in for trade pricing, an online account application, a page per branch, and a project quote desk that takes a material list. If it isn't useful, tell me and I'll stop.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build catalogue sites and ordering tools for distributors around {City}. I sent you a note a couple of days ago, did it reach you?\"\n\nIF NO:\n\"No problem. Short version: I built a sample site for {Business Name} with a searchable catalogue, an online trade account application and branch pages, with marked placeholders where your photos would go. Should it go to you or to whoever runs inside sales or marketing?\"\n\nIF YES:\n\"What did you and the team think?\"\n → let them talk, note who owns the item data\n\"The build runs {Build Range}, then {Care Range} a month for hosting, changes and catalogue updates. For a distributor your size I'd quote about {Build Price}.\"\n\"Could we take thirty minutes with you and your inside sales manager this week?\"\n\nCLOSE:\n\"I'll send a scope and a deposit invoice. We start with an export of your item list.\"",
+    "objections": [
+      {
+        "objection": "Our customers like calling their rep.",
+        "handler": "\"Keep that. The catalogue answers the 'do you stock it' calls so your reps spend their time on the orders and the accounts that need them.\""
+      },
+      {
+        "objection": "Our item data is a mess.",
+        "handler": "\"Most distributors' is. We start with the categories that sell most, clean those, and add the rest a section at a time. The site improves as the data does.\""
+      },
+      {
+        "objection": "We can't show prices online.",
+        "handler": "\"You don't have to. The public sees products and stock status; trade accounts sign in for their own pricing, or press 'request a quote'.\""
+      },
+      {
+        "objection": "We tried online ordering and nobody used it.",
+        "handler": "\"Usually because it didn't show their prices or their last orders. A reorder page with account pricing is a different thing from a public shop.\""
+      },
+      {
+        "objection": "Anything near the inventory system goes through IT.",
+        "handler": "\"Fair. The site starts from an export and never writes back. Live stock and ordering come later, scoped with your IT lead.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}, because it's a searchable catalogue, an account application, branch pages and a quote desk. That's smaller than one good project order.\""
+      }
+    ],
+    "email": {
+      "subject": "Searchable catalogue for {Business Name}",
+      "body": "Hi {Owner},\n\nI build catalogue sites and ordering tools for distributors and wholesalers around {City}. On the {Business Name} site I couldn't search the catalogue, see delivery cut-offs, or open a trade account without a printed credit form.\n\nI built a sample before asking for your time: a searchable catalogue with a sign-in for trade pricing, an online account application, a page per branch with counter hours, delivery zones and cut-offs, and a project quote desk that takes a material list, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf it's useful, I move it to your domain and finish it for {Build Range}, plus {Care Range} a month for hosting, changes and catalogue updates. If not, it comes down at the end of the month.\n\nWould thirty minutes with you and your inside sales manager work this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build catalogue sites for distributors in {City}, and I made a sample for {Business Name} with a searchable catalogue and an online trade account form. I'll email the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner} — I'm taking the {Business Name} catalogue demo down on Friday.\n\nIf you or inside sales want it up a while longer, one word is enough.",
+    "nurture": "Hi {Owner} — distributors around {City} are setting pre-season programmes about now. Thought of you.\n\nThe catalogue site with trade sign-in and the account application is still here, same price. {demo-link} if you'd like another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Price the catalogue by item count and data cleanliness, not by page count.",
+      "Quote the trade account application early; it is the cheapest piece that brings in new accounts.",
+      "Anything reading live stock or account pricing from the inventory system is a separate software project.",
+      "Price each branch page separately when branches carry different stock or run their own trucks.",
+      "Expect sign-off from the owner, inside sales and whoever owns the item data.",
+      "Never publish prices, stock levels or credit terms the distributor hasn't confirmed in writing."
+    ],
+    "lineItems": [
+      {
+        "item": "Catalogue import and category setup",
+        "min": 3000,
+        "max": 12000,
+        "unit": "one-time",
+        "description": "Max with many thousands of items, messy units of sale, spec attributes to clean and filters for every category.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Trade account and credit application",
+        "min": 1200,
+        "max": 3500,
+        "unit": "one-time",
+        "description": "Max with credit references, tax exemption uploads, e-signature and routing to the credit manager.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Branch page (each)",
+        "min": 400,
+        "max": 1000,
+        "unit": "per-page",
+        "description": "Max with branch stock highlights, counter hours, delivery days, loading access notes and the manager's contact.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Project quote desk with material list upload",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "description": "Max with spreadsheet and photo uploads, delivery phases, routing to the right inside sales rep and a quote-by date.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Lines carried pages",
+        "min": 1000,
+        "max": 3000,
+        "unit": "one-time",
+        "description": "Max when every manufacturer line links to its stocked items and carries approved spec downloads.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Delivery zone map and cut-off page",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "description": "Max with a postal-code checker, delivery days by zone, minimums and a site drop request form.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Export enquiry and proforma request",
+        "min": 800,
+        "max": 2500,
+        "unit": "one-time",
+        "description": "Max with quantity and shipping term fields, destination country, document needs and routing to the export desk.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Product photography for the catalogue",
+      "min": 1500,
+      "max": 5000,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A day in the warehouse shooting the top-selling items on a clean background replaces the blurry manufacturer pictures across the wholesale catalogue.\"",
+      "when": "Month 2, starting with the categories that sell most."
+    },
+    {
+      "name": "Trade customer email programme",
+      "min": 800,
+      "max": 2000,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A monthly note to trade accounts with new lines, pre-season deals and branch news, each linking to items in the distributor's catalogue.\"",
+      "when": "Month 2, once the catalogue is searchable."
+    },
+    {
+      "name": "Google profiles for every branch",
+      "min": 300,
+      "max": 700,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Each branch's profile kept current with counter hours, holiday closures and stock posts, so 'building supply near me' finds the right one.\"",
+      "when": "Day 30, after branch pages go live."
+    },
+    {
+      "name": "Pre-season programme campaign",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A pre-season wholesale programme page, order form and email push to trade customers, with deadlines and delivery windows spelled out.\"",
+      "when": "Two months before their trade's busy season."
+    },
+    {
+      "name": "Counter and branch signage refresh",
+      "min": 1000,
+      "max": 3500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Counter signs and branch posters pointing trade customers to the online account form and catalogue, matching the site.\"",
+      "when": "Month 3, once online accounts are open."
+    },
+    {
+      "name": "Supplier day and product launch events",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Event pages, sign-ups and reminders for a distributor's supplier day at the branch, where manufacturers demo new lines to trade customers.\"",
+      "when": "When they plan a counter day or open house with a manufacturer."
+    },
+    {
+      "name": "Delivery truck graphics coordination",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Box trucks running delivery routes all day carry the catalogue address and the account sign-up, matched to the site.\"",
+      "when": "When they add trucks or rebrand the fleet."
+    },
+    {
+      "name": "Trade customer reviews and references",
+      "min": 150,
+      "max": 400,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"After a big project order is delivered, the contractor gets a short request for a review or a quote about the supply house, approved before it goes up.\"",
+      "when": "Day 60."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Contractors on their trade accounts",
+        "whoPays": "The contractor, per site",
+        "min": 3000,
+        "max": 9000,
+        "unit": "one-time",
+        "pitchLine": "\"Your trade customers' websites are worse than yours was. A distributor recommending its web person is a favour they remember.\"",
+        "whyItWorks": "Contractors trust their supplier, and the distributor gains by having busier customers."
+      },
+      {
+        "route": "Manufacturers whose lines they stock",
+        "whoPays": "The manufacturer",
+        "min": 10000,
+        "max": 30000,
+        "unit": "one-time",
+        "pitchLine": "\"The manufacturers in your lines-carried pages need spec sheet libraries and where-to-buy maps. A good distributor's introduction opens their marketing team.\"",
+        "whyItWorks": "Manufacturers listen to their distributors and already need clean product data."
+      },
+      {
+        "route": "Independent retailers they supply",
+        "whoPays": "The independent retailer",
+        "min": 4000,
+        "max": 12000,
+        "unit": "one-time",
+        "pitchLine": "\"The hardware and supply stores you wholesale to need a simple product site. I already have the item data for what they buy from you.\"",
+        "whyItWorks": "The wholesaler's catalogue data makes the retailer's site quick to build."
+      },
+      {
+        "route": "Regional carriers running their deliveries",
+        "whoPays": "The freight carrier",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The carrier that runs your outbound freight on the longer routes needs a shipper quote page. Your logistics manager's referral starts it.\"",
+        "whyItWorks": "Carriers want more shippers like the distributor, and a referral from one counts."
+      },
+      {
+        "route": "Racking and forklift service vendors",
+        "whoPays": "The warehouse equipment vendor",
+        "min": 3000,
+        "max": 8000,
+        "unit": "one-time",
+        "pitchLine": "\"The company that services your forklifts and racking sells to every warehouse nearby with a brochure site. Your introduction carries weight.\"",
+        "whyItWorks": "Equipment vendors sell to warehouses and value a reference from a busy one."
+      },
+      {
+        "route": "Rep agencies that sell into them",
+        "whoPays": "The rep agency",
+        "min": 4000,
+        "max": 10000,
+        "unit": "one-time",
+        "pitchLine": "\"The reps who call on your purchasing team carry lines for every distributor in the region and have no decent line card site.\"",
+        "whyItWorks": "Reps need distributor goodwill, and the distributor's recommendation is enough."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Material list builder for contractor customers",
+        "whoPays": "The contractor, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"Contractors describe the job and the assistant drafts a material list matched to the distributor's catalogue, ready to send for a quote.\"",
+        "whyItWorks": "Contractors save estimating time, and every list lands with the distributor."
+      },
+      {
+        "route": "Product content writer for manufacturers",
+        "whoPays": "The manufacturer, annually",
+        "min": 6000,
+        "max": 18000,
+        "unit": "per-year",
+        "pitchLine": "\"The manufacturer's spec data becomes clean product descriptions every distributor can use, reviewed by their product team.\"",
+        "whyItWorks": "Manufacturers struggle to give distributors usable content; better content sells more through the channel."
+      },
+      {
+        "route": "Reorder assistant for independent retailers",
+        "whoPays": "The retailer, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"It reads the retailer's sales and suggests a weekly reorder from the wholesaler's catalogue for the owner to approve.\"",
+        "whyItWorks": "Retailers order on time, and the wholesale client gets steadier orders."
+      },
+      {
+        "route": "Shipment question answering for the carrier",
+        "whoPays": "The freight carrier, monthly",
+        "min": 300,
+        "max": 900,
+        "unit": "monthly",
+        "pitchLine": "\"Distributor staff ask where an outbound wholesale shipment is and get the carrier's tracking answer without a dispatcher picking up the phone.\"",
+        "whyItWorks": "Fewer status calls for the carrier, faster answers for the distributor."
+      },
+      {
+        "route": "Inspection report drafter for the racking vendor",
+        "whoPays": "The warehouse equipment vendor",
+        "min": 3000,
+        "max": 8000,
+        "unit": "one-time",
+        "pitchLine": "\"The technician's notes from a distributor's warehouse racking inspection become a draft report for the vendor to check and send.\"",
+        "whyItWorks": "Report writing is the slowest part of the vendor's inspections."
+      },
+      {
+        "route": "Line card assistant for the rep agency",
+        "whoPays": "The rep agency, monthly",
+        "min": 200,
+        "max": 600,
+        "unit": "monthly",
+        "pitchLine": "\"Distributor buyers ask which line covers an application, and the assistant answers from the agency's line card with the right rep's contact.\"",
+        "whyItWorks": "Reps get qualified questions instead of cold calls."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Quote request acknowledgement and rep routing",
+      "kind": "automation",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Every quote request from the catalogue gets an instant reply and lands with the inside sales rep who owns that trade account or branch.\"",
+      "whenAndWhatItTakes": "Day 30, once the quote desk is live. Needs reps, their accounts and branches."
+    },
+    {
+      "name": "Online trade account approval workflow",
+      "kind": "software",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"New wholesale account applications move from submitted to credit check to approved in one place, and the customer is told at each step.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their credit policy steps and who approves at each level."
+    },
+    {
+      "name": "Back-in-stock alerts to trade customers",
+      "kind": "automation",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Buyers who asked about an out-of-stock item get a note when it lands at their branch, before they buy it from another supplier.\"",
+      "whenAndWhatItTakes": "Month 3. Needs a daily stock export by branch."
+    },
+    {
+      "name": "Material list reader for project quotes",
+      "kind": "ai",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 15000,
+      "monthlyMin": 400,
+      "monthlyMax": 1200,
+      "pitchLine": "\"Contractors upload a takeoff, a spreadsheet or a handwritten list, and the assistant matches each line to the distributor's item numbers for inside sales to confirm.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the item master and a set of past lists with the quotes they became. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Part number cross-reference assistant",
+      "kind": "ai",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 12000,
+      "monthlyMin": 300,
+      "monthlyMax": 900,
+      "pitchLine": "\"A buyer enters another supplier's part number and gets the wholesale equivalent the distributor stocks, flagged for counter staff to check.\"",
+      "whenAndWhatItTakes": "Month 4. Needs cross-reference tables the distributor already keeps. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Branch stock lookup",
+      "kind": "software",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 18000,
+      "monthlyMin": 300,
+      "monthlyMax": 800,
+      "pitchLine": "\"Every catalogue item shows in stock, low or on order at each branch, read from the inventory system on a schedule.\"",
+      "whenAndWhatItTakes": "Month 4. Needs read access or scheduled exports from the inventory system and an IT contact."
+    },
+    {
+      "name": "Catalogue description writer",
+      "kind": "ai",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 6000,
+      "monthlyMin": 200,
+      "monthlyMax": 500,
+      "pitchLine": "\"Thin item records become clear catalogue descriptions with specs and uses, reviewed by product staff before they go live on the distributor's site.\"",
+      "whenAndWhatItTakes": "Month 2, alongside the catalogue clean-up. Needs item data and manufacturer spec sheets. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Abandoned quote follow-up",
+      "kind": "automation",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"When a trade buyer builds a quote list in the catalogue and leaves, inside sales gets a nudge and the buyer gets a reminder the next morning.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the quote list feature live and a sales inbox someone watches."
+    },
+    {
+      "name": "Trade ordering portal with account pricing",
+      "kind": "software",
+      "oneTimeMin": 20000,
+      "oneTimeMax": 60000,
+      "monthlyMin": 800,
+      "monthlyMax": 2500,
+      "pitchLine": "\"Trade accounts sign in, see their own pricing, reorder from past orders and choose delivery or will-call pickup at their branch.\"",
+      "whenAndWhatItTakes": "Month 8. Needs account price levels, order history and an agreed way to post orders into the inventory system."
+    },
+    {
+      "name": "Emailed purchase order reader",
+      "kind": "ai",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 16000,
+      "monthlyMin": 500,
+      "monthlyMax": 1200,
+      "pitchLine": "\"Purchase orders that arrive as emails or PDFs are read, matched to wholesale items and staged for order entry to approve.\"",
+      "whenAndWhatItTakes": "Month 5. Needs a few hundred past emailed orders and the order entry steps. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Delivery route and cut-off board",
+      "kind": "software",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 14000,
+      "monthlyMin": 200,
+      "monthlyMax": 600,
+      "pitchLine": "\"Dispatch sees tomorrow's orders by zone and truck, and customers see whether their order made the cut-off for their distributor's next run.\"",
+      "whenAndWhatItTakes": "Month 5. Needs delivery zones, trucks and current dispatch sheets."
+    },
+    {
+      "name": "Counter question assistant",
+      "kind": "ai",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 300,
+      "monthlyMax": 800,
+      "pitchLine": "\"New counter staff ask which fitting or fastener suits a job and get an answer from the supply house's own catalogue and notes.\"",
+      "whenAndWhatItTakes": "Month 6. Needs the catalogue and the questions senior counter staff answer most. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Customer price list builder",
+      "kind": "software",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 12000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Reps build a branded price list for a trade account's usual items in minutes, from the distributor's live pricing rules.\"",
+      "whenAndWhatItTakes": "Month 6. Needs pricing rules and a rep to test."
+    },
+    {
+      "name": "Rep account dashboard",
+      "kind": "software",
+      "oneTimeMin": 8000,
+      "oneTimeMax": 22000,
+      "monthlyMin": 300,
+      "monthlyMax": 900,
+      "pitchLine": "\"Each outside rep sees their trade accounts' buying this month against last year, and which accounts have gone quiet.\"",
+      "whenAndWhatItTakes": "Month 7. Needs sales history by account and rep from the inventory or accounting system."
+    },
+    {
+      "name": "Quiet account early warning",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 300,
+      "monthlyMax": 700,
+      "pitchLine": "\"It watches each wholesale account's buying pattern and flags the ones ordering less than usual, with a suggested reason for the rep to check.\"",
+      "whenAndWhatItTakes": "Month 8, with the rep dashboard. Needs a couple of years of sales history. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Returns authorisation portal",
+      "kind": "software",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 12000,
+      "monthlyMin": 200,
+      "monthlyMax": 500,
+      "pitchLine": "\"Trade customers request a return online with reason and photos, and the branch approves, schedules pickup and issues credit in one flow.\"",
+      "whenAndWhatItTakes": "Month 6. Needs their returns policy and who approves credits."
+    },
+    {
+      "name": "Statement and overdue invoice reminders",
+      "kind": "automation",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Trade accounts get their monthly statement and polite overdue reminders automatically, so the credit desk only calls the stubborn ones.\"",
+      "whenAndWhatItTakes": "Month 4. Needs aged receivables exports and the credit manager's wording."
+    },
+    {
+      "name": "Inside sales reply drafter",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 250,
+      "monthlyMax": 700,
+      "pitchLine": "\"Common supply questions in the sales inbox, stock, lead time, substitutes, get a drafted reply from catalogue data for the rep to send.\"",
+      "whenAndWhatItTakes": "Month 5. Needs past inbox replies and the catalogue. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Will-call pickup ordering",
+      "kind": "software",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Trade buyers order online for pickup, get a text when it's pulled, and collect at the branch counter without waiting in line.\"",
+      "whenAndWhatItTakes": "Month 7. Needs branch pick processes and a way to mark orders ready."
+    },
+    {
+      "name": "Tender and bulk enquiry watcher",
+      "kind": "ai",
+      "oneTimeMin": 2500,
+      "oneTimeMax": 6000,
+      "monthlyMin": 300,
+      "monthlyMax": 700,
+      "pitchLine": "\"Each week it reads public supply tenders and flags those matching the wholesaler's lines and delivery area.\"",
+      "whenAndWhatItTakes": "Month 6. Needs the portals they use and the categories they want to bid. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the material list reader for distributors",
+      "whoPays": "Distributors in the same trade, monthly",
+      "min": 299,
+      "max": 999,
+      "unit": "monthly",
+      "pitchLine": "\"I built a material list reader for one distributor. Every supply house in that trade retypes contractor lists by hand.\"",
+      "whyItWorks": "The first client paid for the matching logic; others in the trade have the same lists and the same pain."
+    },
+    {
+      "route": "Distributor trade association member kit",
+      "whoPays": "The association",
+      "min": 5000,
+      "max": 20000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer member wholesalers a catalogue template and trade account application as a benefit of joining.\"",
+      "whyItWorks": "Associations need renewal reasons, and one agreement reaches many distributors."
+    },
+    {
+      "route": "Buying group portal for member distributors",
+      "whoPays": "The buying group or co-op",
+      "min": 15000,
+      "max": 45000,
+      "unit": "one-time",
+      "pitchLine": "\"Your member distributors each get a catalogue site fed from the group's shared item data, under their own name.\"",
+      "whyItWorks": "Buying groups already hold shared item data and want members to look modern."
+    },
+    {
+      "route": "Authorised distributor locator for a manufacturer",
+      "whoPays": "The manufacturer, annually",
+      "min": 8000,
+      "max": 25000,
+      "unit": "per-year",
+      "pitchLine": "\"Show buyers which authorised distributor branch near them stocks your line, linked to that branch's own catalogue.\"",
+      "whyItWorks": "Manufacturers want their channel visible, and the distributor client's branch data shows how."
+    },
+    {
+      "route": "Distribution roll-up groups",
+      "whoPays": "The holding group, per acquired distributor",
+      "min": 15000,
+      "max": 40000,
+      "unit": "one-time",
+      "pitchLine": "\"As you acquire regional distributors, each gets a catalogue site and trade account flow on one frame, under its local name.\"",
+      "whyItWorks": "Roll-ups keep local brands but want one system, and each acquisition is a repeat build."
+    },
+    {
+      "route": "White-label catalogue frame for agencies",
+      "whoPays": "The agency, per site",
+      "min": 4000,
+      "max": 12000,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency signs distributors and struggles with item data. License my catalogue import and trade sign-in frame.\"",
+      "whyItWorks": "Agencies own the client; the data import is the part they can't do."
+    },
+    {
+      "route": "Same distributor kit in the next region",
+      "whoPays": "New wholesale clients in a new region",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I work with one wholesaler per trade in each region. {City} is taken; the next region's best distributor is still open.\"",
+      "whyItWorks": "Non-competing geography lets you reuse the build, the pitch and the proof."
+    },
+    {
+      "route": "Inventory system resellers",
+      "whoPays": "The reseller, per referred distributor",
+      "min": 5000,
+      "max": 20000,
+      "unit": "one-time",
+      "pitchLine": "\"Your distributor clients ask for a catalogue and ordering site that reads from the system you install. I build that side.\"",
+      "whyItWorks": "Resellers get asked for web ordering they don't build, and the distributor client is proof you can."
+    },
+    {
+      "route": "Contractor association supplier directory",
+      "whoPays": "The contractor association",
+      "min": 5000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"A directory of supply houses that serve member contractors, with branch hours and trade account links.\"",
+      "whyItWorks": "Contractor associations want member perks, and suppliers will pay to be listed."
+    },
+    {
+      "route": "Free zone and trade authority supplier catalogue",
+      "whoPays": "The free zone or trade promotion body",
+      "min": 15000,
+      "max": 45000,
+      "unit": "one-time",
+      "pitchLine": "\"Every trading company in the zone gets a catalogue page and export enquiry form in one shared format buyers can search.\"",
+      "whyItWorks": "Trade bodies promote their members to overseas buyers and need a credible catalogue."
+    },
+    {
+      "route": "Manufacturer content syndication service",
+      "whoPays": "Manufacturers, annually",
+      "min": 5000,
+      "max": 15000,
+      "unit": "per-year",
+      "pitchLine": "\"One place for manufacturers to publish item data and images that every distributor catalogue on the frame picks up automatically.\"",
+      "whyItWorks": "Once several distributors run on the same frame, manufacturers will pay to reach them all at once."
+    },
+    {
+      "route": "Rescue stalled ordering portal projects",
+      "whoPays": "The distributor with a half-built portal",
+      "min": 8000,
+      "max": 30000,
+      "unit": "one-time",
+      "pitchLine": "\"Half-built ordering portals are common among wholesalers. I finish them, because I've already mapped account pricing and stock for another supply house.\"",
+      "whyItWorks": "Stranded clients already decided to buy and need someone who has done the integration."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Distributor catalogue site build plus care, one contract",
+      "min": 15000,
+      "max": 40000,
+      "unit": "one-time",
+      "trigger": "The owner and inside sales approve the demo and scope.",
+      "line": "\"The catalogue site and the care plan sit on one contract, so a new line or branch is an email to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Quote request acknowledgement and rep routing",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "trigger": "Quote requests start arriving from the catalogue.",
+      "line": "\"Buyers are sending quote lists from the catalogue. An instant reply and routing to the right rep keeps them from phoning another supplier.\""
+    },
+    {
+      "rung": 3,
+      "day": 60,
+      "offer": "Online trade account approval workflow",
+      "min": 4000,
+      "max": 10000,
+      "unit": "one-time",
+      "trigger": "Online account applications outpace the credit desk's paper process.",
+      "line": "\"New wholesale accounts are applying online. A workflow moves each one through credit without emails going missing.\""
+    },
+    {
+      "rung": 4,
+      "day": 90,
+      "offer": "Material list reader for project quotes",
+      "min": 5000,
+      "max": 15000,
+      "unit": "one-time",
+      "trigger": "Inside sales says project lists take hours to key in.",
+      "line": "\"Those project lists your team retypes are what the reader handles. Inside sales just checks the matched items.\""
+    },
+    {
+      "rung": 5,
+      "day": 150,
+      "offer": "Branch stock lookup",
+      "min": 6000,
+      "max": 18000,
+      "unit": "one-time",
+      "trigger": "Most calls to the branches are still 'do you have it in stock'.",
+      "line": "\"Your branches still field stock calls all day. Showing stock by branch on each item ends most of them.\""
+    },
+    {
+      "rung": 6,
+      "day": 270,
+      "offer": "Trade ordering portal with account pricing",
+      "min": 20000,
+      "max": 60000,
+      "unit": "one-time",
+      "trigger": "Big trade accounts ask to see their pricing and reorder online.",
+      "line": "\"Your biggest accounts are asking to order online. A portal with their own pricing and past orders gives them that at the distributor they already use.\""
+    },
+    {
+      "rung": 7,
+      "day": 365,
+      "offer": "Emailed purchase order reader",
+      "min": 6000,
+      "max": 16000,
+      "unit": "one-time",
+      "trigger": "Order entry is still keying in emailed purchase orders a year in.",
+      "line": "\"The accounts that won't use the portal still email orders. The reader stages them for order entry so nobody retypes a wholesale order again.\""
+    }
+  ]
+}

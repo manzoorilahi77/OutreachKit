@@ -1,0 +1,856 @@
+{
+  "schemaVersion": 1,
+  "category": "Commercial electrical contractors",
+  "slug": "commercial-electrical-contractors",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · expansion batch (healthcare + mid-size)",
+    "generatedAt": "2026-10-13",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Mid-size rfq kit for electrical firms bidding through general contractors and serving facilities teams. Leaned on bid lists, prequalification and recruiting. Least sure about the manpower board and job cost dashboard ranges, which depend on how messy their existing systems are."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Bid invitations and plan intake",
+      "contains": "A page where estimators at general contractors send an invitation to bid with plans, specs, addenda and bid date, plus the electrical estimating contact and the scopes the firm will and won't price",
+      "why": "Commercial electrical work starts on a GC's bid list. Making it easy to invite the firm, with plans attached, is how they get asked more often."
+    },
+    {
+      "section": "Electrical work by building sector",
+      "contains": "Separate project pages for healthcare, education, industrial plants, retail tenant improvement, multifamily and data or telecom rooms, each with scope, size and delivery method",
+      "why": "Owners and GCs shortlist an electrical contractor who has done their kind of building, not electrical work in general."
+    },
+    {
+      "section": "Prequalification and safety pack",
+      "contains": "Safety programme summary, incident record as the firm supplies it, insurance and bonding capacity placeholders, licence classes and a request button for the full prequalification file",
+      "why": "Prequalification forms ask the same questions every time. A ready pack keeps the firm on bid lists without a week of paperwork."
+    },
+    {
+      "section": "Electrical service division for facilities",
+      "contains": "Maintenance agreements, thermal scanning, switchgear servicing, lighting retrofits, emergency call-outs and a service request form for facility managers",
+      "why": "Service contracts smooth out the gaps between projects. Facility managers need to see the firm takes small calls, not only big builds."
+    },
+    {
+      "section": "Apprenticeship and careers",
+      "contains": "Open roles by branch, the apprenticeship path from first year to journeyman, foreman and project manager tracks, tools and vans provided, and a short application",
+      "why": "Electricians compare contractors before leaving a steady crew. Crew size decides how many projects the firm can bid."
+    },
+    {
+      "section": "EV charging and energy upgrades",
+      "contains": "Commercial EV charger installation, panel and service upgrades for charging, lighting controls and backup power, with how a site survey works",
+      "why": "Property owners shopping for chargers search by the job. A dedicated page catches buyers who never heard of the firm's project work."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C13",
+      "siteType": "local-conversion",
+      "name": "Service Call",
+      "heroLayout": "split-photo",
+      "mood": ["alert", "ready", "practical"],
+      "bestFor": "Electrical firms leading with their service division and facility maintenance calls",
+      "pairsWithTier": "starter",
+      "headlineSample": "Commercial electrical service in {City}, day and night",
+      "whyItFits": "Obsidian Amber was built for on-call work. The amber accent on a dark page suits a firm whose phone rings when a building loses power."
+    },
+    {
+      "id": "b",
+      "themeId": "C19",
+      "siteType": "b2b-capability",
+      "name": "Bid List",
+      "heroLayout": "card-stack",
+      "mood": ["exact", "organised", "steady"],
+      "bestFor": "Mid-size electrical contractors bidding through general contractors across several sectors",
+      "pairsWithTier": "standard",
+      "headlineSample": "Electrical construction for {City} builders and owners",
+      "whyItFits": "The family combo. Mono labels and tabular capability blocks read like a bid form, which is what estimators at GCs are filling in."
+    },
+    {
+      "id": "c",
+      "themeId": "C4",
+      "siteType": "editorial-trust",
+      "name": "Project Record",
+      "heroLayout": "type-led",
+      "mood": ["established", "measured", "serious"],
+      "bestFor": "Established firms selling to hospital, campus and industrial owners who read before they shortlist",
+      "pairsWithTier": "premium",
+      "headlineSample": "Electrical contractors to {City}'s hospitals and campuses",
+      "whyItFits": "Navy & Brass carries editorial serif heads for long project write-ups and a sober dark page that suits owners' facilities committees."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "Slow on a phone",
+      "line": "Your electrical site took a long time to load on my phone, and the project list came last. GC project managers usually check a sub from the jobsite trailer, not a desk.",
+      "hook": "Load their site on your phone over mobile data and time it roughly. Note what shows first. Screenshot it for when they reply.",
+      "linkLine": "The same electrical firm, loading fast on a phone: {demo-link}"
+    },
+    {
+      "angle": "Logo wall without scope",
+      "line": "Your projects page is a row of client logos with no scope, size or building type. An owner's rep picking an electrical contractor for a clinic wants to see the clinic you wired.",
+      "hook": "Open their projects or clients page and check whether any project has a scope, a sector or a size.",
+      "linkLine": "Electrical projects written up by sector: {demo-link}"
+    },
+    {
+      "angle": "No way to send an invitation to bid",
+      "line": "I couldn't find where a GC's estimator sends {Business Name} plans and a bid date. A plan intake page puts your electrical estimating desk on more bid lists.",
+      "hook": "Look for an estimating email, a bid form or a plan upload on their site. If it's only a general contact form, the angle holds.",
+      "linkLine": "A bid invitation page with plan upload for an electrical firm: {demo-link}"
+    },
+    {
+      "angle": "Hiring with no careers page",
+      "line": "Saw {Business Name} is hiring journeyman electricians and apprentices, but the site has no careers page. Electricians weighing a move check the contractor's site before they call.",
+      "hook": "Find their job post on a job board or social profile, then confirm the site has no careers page. Note the roles.",
+      "linkLine": "An electrical careers page with the apprenticeship path laid out: {demo-link}"
+    },
+    {
+      "angle": "Safety record kept off the site",
+      "line": "Nothing on your site mentions your safety programme, yet every prequalification form a GC sends asks for it. Commercial electrical firms that show it up front get waved through faster.",
+      "hook": "Search their site for safety, training or prequalification. Never state their record; only note that it isn't shown.",
+      "linkLine": "Safety and prequalification on one electrical contractor page: {demo-link}"
+    },
+    {
+      "angle": "Prequal pack by request only",
+      "line": "Your capability statement is a PDF someone has to email for. A prequalification page with the pack ready to request keeps your electrical firm moving through vendor setup.",
+      "hook": "Check whether their capability statement or prequal file is downloadable, gated or missing.",
+      "linkLine": "A prequalification pack an estimator can request in one step: {demo-link}"
+    },
+    {
+      "angle": "Several branches, one contact page",
+      "line": "You run electrical crews out of several branches, but the site has one contact page and one phone number. A facility manager two towns over can't tell if you cover their building.",
+      "hook": "Count the offices or yards on their listings and compare with the site's contact page.",
+      "linkLine": "A page per branch for the electrical firm: {demo-link}"
+    },
+    {
+      "angle": "Service division hidden",
+      "line": "Your listing mentions electrical service and maintenance, but the site is all new construction. Facility managers looking for a switchgear or lighting service contract won't find that side of you.",
+      "hook": "Compare their listing categories and reviews with the site's menu. Look for service calls mentioned in reviews.",
+      "linkLine": "The service division with its own request form: {demo-link}"
+    },
+    {
+      "angle": "Chargers posted, no charger page",
+      "line": "You've posted commercial EV charger installs at a few parking structures, but there's no charger page. Property owners searching for that install never reach your electrical project work.",
+      "hook": "Find a charger install post on their social profiles. Note the site type, not the client name.",
+      "linkLine": "A commercial EV charging page for the electrical firm: {demo-link}"
+    },
+    {
+      "angle": "GC praise that never reaches the site",
+      "line": "A project manager wrote that your electrical crew finished rough-in ahead of the drywall schedule. That's what the next general contractor wants to read before inviting you.",
+      "hook": "Read their reviews and social comments and copy one phrase from a GC or owner about schedule or coordination.",
+      "linkLine": "GC and owner comments beside the electrical bid page: {demo-link}"
+    },
+    {
+      "angle": "Dated design",
+      "line": "Your site's footer still carries a copyright year from a long while back, and the layout shows it. Owners of new buildings notice when an electrical contractor looks older than their wiring.",
+      "hook": "Check the footer year, the layout on a wide screen and whether recent projects appear anywhere.",
+      "linkLine": "A current electrical contractor site, same company: {demo-link}"
+    },
+    {
+      "angle": "Year-end capital projects",
+      "line": "Facility teams try to start lighting retrofits and panel upgrades before their capital budgets reset. The commercial electrical firms they can find in that window get the work.",
+      "hook": "Use this in the last quarter of the year, or before a big local owner's fiscal year closes.",
+      "linkLine": "An electrical upgrades page ready for capital budget season: {demo-link}"
+    },
+    {
+      "angle": "After-hours outage calls",
+      "line": "When a building loses power at night, the facility manager calls the electrical contractor whose emergency line they can find. Your site lists office hours only.",
+      "hook": "Check the site and listing for an emergency number or after-hours note. Call after hours if you can and note what happens.",
+      "linkLine": "An electrical emergency line people can find at night: {demo-link}"
+    },
+    {
+      "angle": "Tenant improvement work",
+      "line": "Most of your recent posts are tenant improvement electrical in offices and shops, but the site talks about big new builds. Brokers and landlords hunting TI electricians would never guess.",
+      "hook": "Look through their recent posts and count tenant fit-outs. Name the building type, not the tenant.",
+      "linkLine": "Tenant improvement electrical on its own page: {demo-link}"
+    },
+    {
+      "angle": "A specific recent project",
+      "line": "That {specific recent job} you posted is clean commercial electrical work. It deserves a project page a GC can forward to the owner when your name comes up.",
+      "hook": "Pick their newest project post and name it: building type, scope and what stands out about the install.",
+      "linkLine": "That project on an electrical project page: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner} — that {specific recent job} you posted is tidy commercial electrical work.\n\nI looked through the {Business Name} site and couldn't see where a GC's estimator sends plans, or a project list by building type. I put together a sample with a bid invitation page, sector project pages and a prequalification pack, with marked placeholders where your photos would go.\n\nWould it be useful if I sent it over?",
+    "dm2": "{Owner} — following up in case my last note got lost under bid dates. Here's the sample for {Business Name}: {demo-link}\n\nIt has plan intake for invitations to bid, project pages by sector, a safety and prequalification section and a careers page with the apprenticeship path. If it isn't useful, tell me and I'll stop.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites and estimating tools for electrical contractors around {City}. I sent you a note a couple of days ago, did it reach you?\"\n\nIF NO:\n\"No problem, bid week is bid week. Short version: I built a sample site for {Business Name} with a bid invitation page that takes plans, project pages by sector and a prequalification pack, with marked placeholders where your photos would go. Who else should see it, your estimating lead or whoever handles marketing?\"\n\nIF YES:\n\"What did you and the team think?\"\n → let them talk, note who else decides\n\"The build runs {Build Range}, then {Care Range} a month for hosting, changes and keeping projects current. For a firm your size I'd quote about {Build Price}.\"\n\"Could we do twenty minutes with you and your chief estimator this week?\"\n\nCLOSE:\n\"I'll send a scope and a deposit invoice addressed to whoever approves it. We start when it clears.\"",
+    "objections": [
+      {
+        "objection": "We get our work from the same GCs every year.",
+        "handler": "\"That's the point of the bid page. The GCs you know keep inviting you, and the ones you don't know yet can find your electrical estimating desk and send plans.\""
+      },
+      {
+        "objection": "We already have a website.",
+        "handler": "\"You do, and it's fine for people who already know you. This one is built for an estimator or owner's rep checking you out: sectors, safety, prequalification and a place to send plans.\""
+      },
+      {
+        "objection": "Our projects are under NDA. We can't post them.",
+        "handler": "\"Most electrical project pages describe the building type, scope and size without naming the owner. Anything named goes up only with written clearance.\""
+      },
+      {
+        "objection": "Marketing has to go through the partners.",
+        "handler": "\"Makes sense. I'll send a one-page summary the partners can read in five minutes, and I'm happy to walk them through the demo together.\""
+      },
+      {
+        "objection": "We're too busy to take on more work.",
+        "handler": "\"Then use the site to choose. The bid intake asks sector, size and bid date, so your estimators chase the commercial electrical work you want and pass on the rest. And the careers page helps you staff up.\""
+      },
+      {
+        "objection": "We just paid an agency for this a few years ago.",
+        "handler": "\"Then keep what works. I can rebuild the pages GCs actually use, bid intake, sector projects and prequal, and leave the rest of the brand alone.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}, because it has bid intake with plan upload, sector project pages, a prequal pack and a careers section. That's smaller than one change order.\""
+      }
+    ],
+    "email": {
+      "subject": "Bid intake and project pages for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites and estimating tools for commercial electrical contractors around {City}. Looking at the {Business Name} site, I couldn't find where a general contractor's estimator sends plans and a bid date, or projects grouped by building type.\n\nI built a sample rather than ask for a meeting first: a bid invitation page with plan upload, project pages for healthcare, education, industrial and tenant improvement work, a safety and prequalification pack, and a careers page with the apprenticeship path, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf it's useful, I move it to your domain and finish it for {Build Range}, plus {Care Range} a month for hosting, changes and adding new projects. If not, it comes down at the end of the month.\n\nWould twenty minutes with you and your estimating lead work this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build websites for commercial electrical contractors in {City}, and I made a sample for {Business Name} with a page where GCs send plans and bid dates. I'll email the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner} — I'm taking the {Business Name} electrical demo down on Friday.\n\nIf you or your estimating lead want it up a bit longer, one word is enough.",
+    "nurture": "Hi {Owner} — facility teams around {City} are starting to plan lighting and panel upgrades before budgets reset. Thought of you.\n\nThe electrical site with the bid intake and sector project pages is still here, same price. {demo-link} if you'd like another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to a small tenant improvement job, not to a service call.",
+      "Quote bid intake and the prequalification pack first; they are what estimators and GCs use.",
+      "Price sector project pages one at a time, because each needs scope, size and clearance from the owner.",
+      "Price each branch page separately when branches have their own crews, licences or service areas.",
+      "Expect two or three people to sign off; build a week of review into the timeline.",
+      "Never publish a safety rate, bonding limit or licence class the firm hasn't supplied in writing."
+    ],
+    "lineItems": [
+      {
+        "item": "Bid invitation page with plan upload",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "description": "Max with large plan set uploads, addenda handling, bid date reminders and routing to the right estimator by sector.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Sector project page (each)",
+        "min": 400,
+        "max": 900,
+        "unit": "per-page",
+        "description": "Max when each page carries several projects with scope, size, delivery method and owner-cleared photos.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Prequalification pack request flow",
+        "min": 1200,
+        "max": 3500,
+        "unit": "one-time",
+        "description": "Max with a gated request form, versioned documents, expiry dates on insurance placeholders and a notification to the office.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Branch page (each)",
+        "min": 500,
+        "max": 1200,
+        "unit": "per-page",
+        "description": "Max with branch-specific crews, service area, licences held there and its own service request routing.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Careers section with apprenticeship path",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "description": "Max with roles by branch, an application that asks licence level and hours logged, and a feed of open jobs.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Facility service request form and routing",
+        "min": 1200,
+        "max": 3000,
+        "unit": "one-time",
+        "description": "Max with urgency levels, building and panel details, file upload and routing to the on-call service manager.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Safety programme page",
+        "min": 600,
+        "max": 1500,
+        "unit": "one-time",
+        "description": "Max with training matrix summary, safety recognition the firm supplies and a downloadable safety programme overview.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Electrical project photo and video days",
+      "min": 1200,
+      "max": 3000,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"One day at a finished project shooting switchgear rooms, lighting and the crew at work turns an electrical job into a project page and a recruiting reel.\"",
+      "when": "As each notable project closes out, with written clearance from the owner and GC."
+    },
+    {
+      "name": "GC and owner outreach by sector",
+      "min": 1200,
+      "max": 3000,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Each month, a short note to estimators and owners' reps in one sector, with a commercial electrical project like theirs and the bid intake link.\"",
+      "when": "Month 3, once two or three sector project pages are live."
+    },
+    {
+      "name": "Google profiles for every branch",
+      "min": 300,
+      "max": 700,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Each electrical branch gets its own profile kept current with service posts, hours and the emergency line, so 'commercial electrician near me' finds the right office.\"",
+      "when": "Day 30, after branch pages go live."
+    },
+    {
+      "name": "Electrician and apprentice recruiting campaign",
+      "min": 800,
+      "max": 2000,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Short crew videos and job posts that point electricians to the careers page, run while you're staffing up for a big project.\"",
+      "when": "Whenever they win a large project or post several electrician roles at once."
+    },
+    {
+      "name": "Project case study write-ups",
+      "min": 600,
+      "max": 1500,
+      "unit": "per-page",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A plain write-up of how the electrical team phased a hospital shutdown or kept a plant running during a service change, cleared by the owner.\"",
+      "when": "Month 4, after a project with a story the owner will clear."
+    },
+    {
+      "name": "Contractor expo booth and capability handout",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Builder exchange nights and facility expos are where estimators meet subs. A booth panel and electrical capability handout that match the site make it count.\"",
+      "when": "Two months before the next builders' exchange or facilities expo they attend."
+    },
+    {
+      "name": "Fleet van and trailer graphics coordination",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Electrical vans parked at jobsites all day are recruiting ads. Matching lettering with the careers address puts that to work.\"",
+      "when": "When they add vans or rebrand the fleet."
+    },
+    {
+      "name": "GC reference and testimonial collection",
+      "min": 150,
+      "max": 400,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"After each electrical closeout, the GC's project manager gets a short request for a quote the firm can use, with approval before anything goes up.\"",
+      "when": "Day 60, timed to project closeouts."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Mechanical and plumbing subs on the same jobs",
+        "whoPays": "The mechanical or plumbing contractor",
+        "min": 8000,
+        "max": 20000,
+        "unit": "one-time",
+        "pitchLine": "\"The mechanical sub you coordinate ceiling space with every week has the same bid list problem. An electrical contractor's introduction gets me a meeting.\"",
+        "whyItWorks": "Trades on the same commercial jobs trust each other's vendors, and the bid intake layout carries over."
+      },
+      {
+        "route": "Low-voltage, data and fire alarm subs",
+        "whoPays": "The low-voltage contractor",
+        "min": 5000,
+        "max": 14000,
+        "unit": "one-time",
+        "pitchLine": "\"The data cabling and fire alarm firm working beside your electricians needs sector project pages too. I'll build it on the same frame.\"",
+        "whyItWorks": "Low-voltage firms often get work through the electrical contractor and follow its lead."
+      },
+      {
+        "route": "Electrical supply house branches",
+        "whoPays": "The electrical distributor branch",
+        "min": 6000,
+        "max": 18000,
+        "unit": "one-time",
+        "pitchLine": "\"The supply house where your purchasing team buys wire and gear has a counter catalogue nobody can search. Your introduction opens that door.\"",
+        "whyItWorks": "Supply houses value big electrical accounts and listen to their recommendations."
+      },
+      {
+        "route": "Lighting and controls rep agencies",
+        "whoPays": "The manufacturer's rep agency",
+        "min": 5000,
+        "max": 15000,
+        "unit": "one-time",
+        "pitchLine": "\"The lighting rep who quotes your fixture packages has a line card site from years ago. Contractors they sell through vouch for vendors.\"",
+        "whyItWorks": "Rep agencies live on contractor relationships and need a clean way to show their lines."
+      },
+      {
+        "route": "Property managers of buildings they service",
+        "whoPays": "The property management firm",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The property manager who calls your service division for every tenant electrical issue needs a vendor and work order page. Your name gets me in.\"",
+        "whyItWorks": "Property managers trust the electrician who answers at night and buy from vendors they recommend."
+      },
+      {
+        "route": "MEP engineering firms",
+        "whoPays": "The engineering firm",
+        "min": 8000,
+        "max": 22000,
+        "unit": "one-time",
+        "pitchLine": "\"The MEP engineers whose electrical drawings you build from need a sector portfolio as much as you did. One contractor's referral carries weight.\"",
+        "whyItWorks": "Engineers and contractors meet on every project and recommend vendors to each other."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Submittal drafting assistant for the lighting rep",
+        "whoPays": "The rep agency, monthly",
+        "min": 400,
+        "max": 1200,
+        "unit": "monthly",
+        "pitchLine": "\"The rep drops in a fixture schedule and the assistant drafts the submittal package for review, so electrical contractors get it sooner.\"",
+        "whyItWorks": "Submittals are slow, repetitive work, and the electrical client feels the speed-up."
+      },
+      {
+        "route": "Quote desk assistant for the supply house",
+        "whoPays": "The electrical distributor, annually",
+        "min": 8000,
+        "max": 25000,
+        "unit": "per-year",
+        "pitchLine": "\"Contractors send a material list by email, and the assistant matches it to the distributor's catalogue and drafts a quote for the counter to check.\"",
+        "whyItWorks": "Distributors win the contractor who gets a quote first; the electrical client gets faster pricing."
+      },
+      {
+        "route": "Tenant work order triage for property managers",
+        "whoPays": "The property management firm, monthly",
+        "min": 300,
+        "max": 900,
+        "unit": "monthly",
+        "pitchLine": "\"Tenants describe the electrical problem and the assistant sorts urgent from routine and sends the right details to the service contractor.\"",
+        "whyItWorks": "Fewer midnight calls for routine issues, cleaner tickets for the electrical service team."
+      },
+      {
+        "route": "Spec section summariser for the mechanical sub",
+        "whoPays": "The mechanical contractor, monthly",
+        "min": 400,
+        "max": 1000,
+        "unit": "monthly",
+        "pitchLine": "\"Built first for the electrical estimators, the same spec reader pulls the mechanical scope, exclusions and coordination notes for the sub next door.\"",
+        "whyItWorks": "The tool exists already, and the electrical client's recommendation sells it."
+      },
+      {
+        "route": "Drawing set change finder for the engineering firm",
+        "whoPays": "The MEP engineering firm",
+        "min": 6000,
+        "max": 15000,
+        "unit": "one-time",
+        "pitchLine": "\"It compares drawing revisions and lists what changed on the electrical and mechanical sheets, for the engineer to confirm before issuing.\"",
+        "whyItWorks": "Engineers issue many revisions; contractors on the job thank them for clear change lists."
+      },
+      {
+        "route": "Cable and conduit scope writer for the low-voltage sub",
+        "whoPays": "The low-voltage contractor",
+        "min": 3000,
+        "max": 8000,
+        "unit": "one-time",
+        "pitchLine": "\"The low-voltage firm describes the rooms and drops, and the assistant drafts a scope and exclusions that line up with the electrical contractor's.\"",
+        "whyItWorks": "Clear scope splits stop arguments between the two trades on the same commercial job."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Bid invitation acknowledgement and due-date reminders",
+      "kind": "automation",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Every invitation to bid gets an instant reply naming the electrical estimator, and the team gets reminders as the bid date nears.\"",
+      "whenAndWhatItTakes": "Day 30, once bid intake is live. Needs the estimators' names and their sectors."
+    },
+    {
+      "name": "Bid log and hit-rate dashboard",
+      "kind": "software",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 12000,
+      "monthlyMin": 200,
+      "monthlyMax": 500,
+      "pitchLine": "\"See every commercial electrical bid by GC, sector and size, which ones you won, and which GCs never award to you.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their current bid spreadsheet and the outcome of recent bids."
+    },
+    {
+      "name": "Spec and drawing scope reader",
+      "kind": "ai",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 15000,
+      "monthlyMin": 400,
+      "monthlyMax": 1200,
+      "pitchLine": "\"It reads the electrical spec sections and drawing notes and lists scope, alternates and exclusions for the estimator to check before pricing.\"",
+      "whenAndWhatItTakes": "Month 3. Needs a few past bid sets with the estimator's notes. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Facility service request portal",
+      "kind": "software",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 18000,
+      "monthlyMin": 300,
+      "monthlyMax": 900,
+      "pitchLine": "\"Facility managers log in to raise electrical service calls, see technician arrival times and download reports for every building they manage.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the service client list, buildings and how calls are dispatched today."
+    },
+    {
+      "name": "Proposal and qualifications writer",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 300,
+      "monthlyMax": 800,
+      "pitchLine": "\"Estimators' notes become a clean electrical proposal with inclusions, exclusions and qualifications in the firm's own wording.\"",
+      "whenAndWhatItTakes": "Month 3. Needs past proposals and standard qualifications. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Estimate summary and proposal builder",
+      "kind": "software",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 14000,
+      "monthlyMin": 200,
+      "monthlyMax": 600,
+      "pitchLine": "\"Takeoff totals from the estimating system flow into one electrical bid summary, with labour, gear, lighting and alternates laid out for review.\"",
+      "whenAndWhatItTakes": "Month 4. Needs exports from their estimating system and a sample bid summary."
+    },
+    {
+      "name": "Change order tracker with field photo log",
+      "kind": "software",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 16000,
+      "monthlyMin": 300,
+      "monthlyMax": 800,
+      "pitchLine": "\"Foremen log extra electrical work with photos and hours on site, and the PM turns it into a priced change order before the details fade.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their change order form, labour rates and a willing foreman to test."
+    },
+    {
+      "name": "Electrician manpower board",
+      "kind": "software",
+      "oneTimeMin": 10000,
+      "oneTimeMax": 30000,
+      "monthlyMin": 500,
+      "monthlyMax": 1500,
+      "pitchLine": "\"See every electrician, apprentice and foreman by project and week, so the next commercial award doesn't leave a job short.\"",
+      "whenAndWhatItTakes": "Month 6. Needs the crew list, licence levels and the current project schedule."
+    },
+    {
+      "name": "Toolbox talk and incident log app",
+      "kind": "software",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 14000,
+      "monthlyMin": 200,
+      "monthlyMax": 600,
+      "pitchLine": "\"Foremen record weekly toolbox talks and near misses from a phone, so the electrical safety file is ready when a GC asks.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their safety programme topics and the forms they use now."
+    },
+    {
+      "name": "Electrician applicant screener",
+      "kind": "ai",
+      "oneTimeMin": 2500,
+      "oneTimeMax": 6000,
+      "monthlyMin": 250,
+      "monthlyMax": 600,
+      "pitchLine": "\"Applicants answer questions on licence level, hours logged and commercial experience, and the recruiter calls the electricians who fit.\"",
+      "whenAndWhatItTakes": "Whenever they're hiring. Needs must-haves by role, pay ranges and branches. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Preventive maintenance visit scheduler",
+      "kind": "automation",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Thermal scans and switchgear service on maintenance agreements get booked and confirmed with the facility manager without anyone chasing.\"",
+      "whenAndWhatItTakes": "Month 5, with the service portal. Needs agreement terms and visit frequencies per building."
+    },
+    {
+      "name": "Job cost and progress billing dashboard",
+      "kind": "software",
+      "oneTimeMin": 12000,
+      "oneTimeMax": 35000,
+      "monthlyMin": 500,
+      "monthlyMax": 1500,
+      "pitchLine": "\"Budget against actual labour and material on each electrical project, with what's ready to bill this month, in one view for the PMs and the owner.\"",
+      "whenAndWhatItTakes": "Month 8. Needs read access to their accounting and payroll exports and a PM willing to pilot."
+    },
+    {
+      "name": "Install standards question assistant",
+      "kind": "ai",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 15000,
+      "monthlyMin": 500,
+      "monthlyMax": 1200,
+      "pitchLine": "\"Electricians ask how the company does a panel schedule or labels a riser and get the firm's own standard, not a guess.\"",
+      "whenAndWhatItTakes": "Month 7. Needs their install standards, checklists and closeout requirements written down. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Foreman daily report from voice notes",
+      "kind": "ai",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 300,
+      "monthlyMax": 800,
+      "pitchLine": "\"The foreman talks for two minutes at the end of the shift, and a tidy electrical daily report with crew, work done and delays lands with the PM.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their daily report template and a foreman to try it. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Licence and certification expiry tracker",
+      "kind": "automation",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Every electrician's licence, safety card and lift certification has a reminder before it lapses, sent to them and the office.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the crew list with each licence and expiry date."
+    },
+    {
+      "name": "Project portal for GCs and owners",
+      "kind": "software",
+      "oneTimeMin": 10000,
+      "oneTimeMax": 28000,
+      "monthlyMin": 400,
+      "monthlyMax": 1200,
+      "pitchLine": "\"GCs and owners see electrical submittals, RFIs, change orders and progress photos for their project in one login.\"",
+      "whenAndWhatItTakes": "Month 9, after the change order tracker. Needs where submittals and RFIs live today."
+    },
+    {
+      "name": "Closeout package assembler",
+      "kind": "ai",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 300,
+      "monthlyMax": 700,
+      "pitchLine": "\"It gathers as-builts, panel schedules, test reports and warranties into the electrical closeout binder and lists what's still missing.\"",
+      "whenAndWhatItTakes": "Month 6. Needs a past closeout package and the GC's closeout checklist. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Public bid notice watcher",
+      "kind": "ai",
+      "oneTimeMin": 2500,
+      "oneTimeMax": 6000,
+      "monthlyMin": 300,
+      "monthlyMax": 700,
+      "pitchLine": "\"Each week it reads public bid notices and plan room postings and flags electrical packages that match the firm's sectors and size.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the portals they watch and the work they want. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Long-lead gear delivery tracker",
+      "kind": "automation",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Switchgear, transformers and panelboards on order get delivery dates tracked against the schedule, and the PM is warned when one slips.\"",
+      "whenAndWhatItTakes": "Month 6. Needs purchase orders for long-lead electrical gear and the project schedules."
+    },
+    {
+      "name": "EV charging site survey drafter",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 200,
+      "monthlyMax": 500,
+      "pitchLine": "\"The surveyor's notes and panel readings become a draft charger proposal with service capacity questions flagged for the electrical estimator.\"",
+      "whenAndWhatItTakes": "Month 5, once the charging page brings enquiries. Needs their survey checklist and past charger proposals. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the bid log for electrical contractors",
+      "whoPays": "Electrical contractors, monthly",
+      "min": 199,
+      "max": 599,
+      "unit": "monthly",
+      "pitchLine": "\"I built a bid log and hit-rate dashboard for one commercial electrical firm. Every firm its size tracks bids in a spreadsheet.\"",
+      "whyItWorks": "The first client paid for the logic. Electrical estimating departments everywhere track the same fields."
+    },
+    {
+      "route": "Electrical contractors' association member kit",
+      "whoPays": "The association",
+      "min": 5000,
+      "max": 20000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer member electrical contractors a bid intake page and prequalification pack template as a membership benefit.\"",
+      "whyItWorks": "Associations need renewal reasons, and one agreement reaches many firms."
+    },
+    {
+      "route": "Contractor finder for an electrical distributor",
+      "whoPays": "The electrical distributor, annually",
+      "min": 8000,
+      "max": 30000,
+      "unit": "per-year",
+      "pitchLine": "\"Put a find-an-electrical-contractor map on your site for the firms that buy from you. Owners find installers; your customers get work.\"",
+      "whyItWorks": "Distributors want their contractors busy, because busy contractors buy more gear."
+    },
+    {
+      "route": "Certified charger installer network pages",
+      "whoPays": "The charger manufacturer or its distributor",
+      "min": 10000,
+      "max": 40000,
+      "unit": "one-time",
+      "pitchLine": "\"Every certified installer in your network gets a commercial EV charging page and survey request form built from one template.\"",
+      "whyItWorks": "Manufacturers need installers that look credible to property owners, at scale."
+    },
+    {
+      "route": "Apprenticeship training centre recruiting portal",
+      "whoPays": "The training centre or its contractor board",
+      "min": 8000,
+      "max": 25000,
+      "unit": "one-time",
+      "pitchLine": "\"One portal where would-be electricians apply and see which member contractors are taking apprentices this term.\"",
+      "whyItWorks": "Training centres compete for applicants, and the electrical client's careers page shows you understand the path."
+    },
+    {
+      "route": "GC subcontractor prequalification portal",
+      "whoPays": "The general contractor",
+      "min": 15000,
+      "max": 45000,
+      "unit": "one-time",
+      "pitchLine": "\"Your subs upload safety, insurance and licence documents once, and your estimators see who is current before sending plans.\"",
+      "whyItWorks": "You built the electrical side of prequal already; the GC sees the other side of the same paperwork."
+    },
+    {
+      "route": "Utility efficiency programme contractor network",
+      "whoPays": "The programme administrator",
+      "min": 10000,
+      "max": 35000,
+      "unit": "one-time",
+      "pitchLine": "\"Participating electrical contractors each get a lighting and controls upgrade page that explains the programme the way the administrator approves.\"",
+      "whyItWorks": "Programmes need contractors to sell upgrades consistently and in approved wording."
+    },
+    {
+      "route": "Facility management firms' vendor portal",
+      "whoPays": "The facility management firm",
+      "min": 15000,
+      "max": 40000,
+      "unit": "one-time",
+      "pitchLine": "\"The service request portal you saw for electrical calls, extended to every trade the facility firm dispatches.\"",
+      "whyItWorks": "Facility firms juggle many trades; one portal that already works for the electrical vendor is easy to extend."
+    },
+    {
+      "route": "Groups buying regional electrical firms",
+      "whoPays": "The holding group, per acquired firm",
+      "min": 10000,
+      "max": 25000,
+      "unit": "one-time",
+      "pitchLine": "\"As you acquire electrical contractors, each gets a site on the same frame: bid intake, sector projects and careers, under its own name.\"",
+      "whyItWorks": "Roll-ups need consistent sites fast, and each acquisition is a repeat build."
+    },
+    {
+      "route": "White-label electrical template for construction agencies",
+      "whoPays": "The agency, per site",
+      "min": 3000,
+      "max": 8000,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency lands electrical contractors and starts from blank. License the bid intake, prequal pack and sector page frame.\"",
+      "whyItWorks": "Agencies own the relationship; you supply the part that took longest to get right."
+    },
+    {
+      "route": "Same electrical kit in the next metro",
+      "whoPays": "New commercial electrical clients in a new region",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I work with one commercial electrical contractor per metro. {City} is taken, and the next region is open.\"",
+      "whyItWorks": "Non-competing geography lets you reuse the build, the pitch and the proof."
+    },
+    {
+      "route": "Rescue stalled field software projects",
+      "whoPays": "The electrical firm with a half-built tool",
+      "min": 5000,
+      "max": 20000,
+      "unit": "one-time",
+      "pitchLine": "\"Half-finished change order or manpower tools are common in electrical firms. I finish them, because I've built the same workflow for another contractor.\"",
+      "whyItWorks": "Stranded clients have already decided to buy and need someone who knows the trade's workflow."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Electrical contractor site build plus care, one contract",
+      "min": 12000,
+      "max": 30000,
+      "unit": "one-time",
+      "trigger": "The partners approve the demo and the scope.",
+      "line": "\"The site and the care plan sit on one contract, so a new project or branch is an email to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Bid invitation acknowledgement and due-date reminders",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "trigger": "The first invitations to bid arrive through the plan intake page.",
+      "line": "\"GCs are sending plans through the site. An instant reply naming the electrical estimator keeps you on their list.\""
+    },
+    {
+      "rung": 3,
+      "day": 60,
+      "offer": "Bid log and hit-rate dashboard",
+      "min": 4000,
+      "max": 12000,
+      "unit": "one-time",
+      "trigger": "Sixty days of bid intake show more invitations than the estimators can track.",
+      "line": "\"You're getting more invitations than the spreadsheet can hold. Let's see which GCs and sectors actually award you work.\""
+    },
+    {
+      "rung": 4,
+      "day": 90,
+      "offer": "Electrician applicant screener",
+      "min": 2500,
+      "max": 6000,
+      "unit": "one-time",
+      "trigger": "Careers page applications pile up, or they mention a big award they need crew for.",
+      "line": "\"The careers page is working. A screener asks licence level and hours so your recruiter only calls the electricians who fit.\""
+    },
+    {
+      "rung": 5,
+      "day": 150,
+      "offer": "Facility service request portal",
+      "min": 6000,
+      "max": 18000,
+      "unit": "one-time",
+      "trigger": "Service requests through the site grow, or a facility client asks for a call history.",
+      "line": "\"Your service clients want to see their calls. A portal gives facility managers that without a phone call to dispatch.\""
+    },
+    {
+      "rung": 6,
+      "day": 240,
+      "offer": "Electrician manpower board",
+      "min": 10000,
+      "max": 30000,
+      "unit": "one-time",
+      "trigger": "They mention a job running short of electricians, or two projects starting the same week.",
+      "line": "\"That short crew on the hospital job is what an electrician manpower board shows a month early.\""
+    },
+    {
+      "rung": 7,
+      "day": 365,
+      "offer": "Job cost and progress billing dashboard",
+      "min": 12000,
+      "max": 35000,
+      "unit": "one-time",
+      "trigger": "Year-end review shows a project that lost money nobody saw coming.",
+      "line": "\"That project would have shown red on a job cost view months before closeout. Let's build it for every electrical job.\""
+    }
+  ]
+}

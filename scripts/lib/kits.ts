@@ -7,7 +7,7 @@ import { join } from "node:path";
 import Ajv2020Import from "ajv/dist/2020.js";
 import addFormatsImport from "ajv-formats";
 import { STYLE } from "../../src/data";
-import { CATS } from "../../src/lib/kit/categories";
+import { ALL_CATS as CATS } from "../../src/lib/kit/categories";
 import { ratio } from "../../src/lib/contrast";
 import { kitSlug } from "../../src/lib/kit-v2/types";
 import type { CategoryKit } from "../../src/lib/kit-v2/types";
@@ -28,6 +28,9 @@ const MAX_GENERIC = 3;
 const REPEAT_AT = 0.6;
 const MONTHLY_CAP = 2500;
 const ONE_TIME_CAP = 40000;
+// Mid-size categories sell portals, integrations and multi-site builds, so their ceilings are higher.
+const MID_MONTHLY_CAP = 8000;
+const MID_ONE_TIME_CAP = 150000;
 
 export interface Problem { file: string; rule: string; text: string }
 export interface FileReport {
@@ -271,7 +274,8 @@ export function checkKits(dir = KITS_DIR): CheckResult {
     // Money
     const money = (path: string, min: number, max: number, monthly: boolean) => {
       if (min > max) add("money", `${path}: min ${min} > max ${max}`);
-      const cap = monthly ? MONTHLY_CAP : ONE_TIME_CAP;
+      const mid = cat?.size === "mid";
+      const cap = monthly ? (mid ? MID_MONTHLY_CAP : MONTHLY_CAP) : mid ? MID_ONE_TIME_CAP : ONE_TIME_CAP;
       if (max > cap) add("money", `${path}: ${max} is over the ${monthly ? "monthly" : "one-time"} cap of ${cap}`);
     };
     k.pricing.lineItems.forEach((x, i) => {

@@ -1,0 +1,882 @@
+{
+  "schemaVersion": 1,
+  "category": "Real estate brokerages (20+ agents)",
+  "slug": "real-estate-brokerages-20-agents",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · expansion batch (healthcare + mid-size)",
+    "generatedAt": "2026-10-13",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Written for brokerages, not single agents: listings from the brokerage feed, agent profiles at scale, lead routing, agent recruiting and off-plan launches. Unsure on the agent portal and data hub ranges; feed access and back-office systems vary a lot by market."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Listings search from the brokerage feed",
+      "contains": "Sale and rental listings synced from the listing service or the brokerage's own system, searchable by community, property type, price and status, with [licence number] and [advertising permit number] fields where the regulator requires them",
+      "why": "Buyers and tenants compare a brokerage by how fast they can find a property on a phone. A slow or framed search sends them to a portal where every brokerage looks the same."
+    },
+    {
+      "section": "Agent directory with live listings per agent",
+      "contains": "Every agent with their communities, languages, current and recent listings pulled from the feed, reviews, [licence number] and a direct enquiry that routes to them",
+      "why": "Sellers interview agents, not logos. A profile showing an agent's live listings and areas is what wins the listing appointment."
+    },
+    {
+      "section": "Join the brokerage: agent recruiting",
+      "contains": "Commission plans in outline, training and mentoring, marketing and lead support, office locations, agent stories and a confidential enquiry for experienced agents",
+      "why": "Recruiting agents is what grows a brokerage. Experienced agents research quietly, and the brokerage with a clear, confidential path gets the conversation."
+    },
+    {
+      "section": "Off-plan and new development launches",
+      "contains": "A page per development: developer, location, unit types and floor plans, payment plan outline, completion stage, a register-interest form and the brokerage's agents on that launch",
+      "why": "Off-plan buyers compare launches quickly and register with whoever answers first. A launch page live before the release day captures that interest."
+    },
+    {
+      "section": "Community guides with live property listings",
+      "contains": "Guides to each community the brokerage covers: housing types, schools, transport, service charges or dues, current listings and the agents who specialise there, facts only",
+      "why": "Relocating buyers and investors pick a community before a property. The brokerage that explains the area credibly becomes the one they call."
+    },
+    {
+      "section": "Commercial, leasing and management divisions",
+      "contains": "Separate entry points for commercial property, residential leasing and property management, each with its own listings, team and enquiry routing",
+      "why": "Landlords and commercial clients don't want to dig through home listings. Clear division pages win the higher-repeat business a brokerage depends on."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C10",
+      "siteType": "local-conversion",
+      "name": "Brokerage Front Door",
+      "heroLayout": "card-stack",
+      "mood": [
+        "crisp",
+        "efficient",
+        "trustworthy"
+      ],
+      "bestFor": "Brokerages replacing an old site with a fast listings search, agent pages and enquiry routing as the first phase",
+      "pairsWithTier": "starter",
+      "headlineSample": "Property for sale and rent in {City}",
+      "whyItFits": "Steel neutrals and a plain grotesque keep the listings centre stage. Cards for search, agents and valuations make the main paths obvious on a phone."
+    },
+    {
+      "id": "b",
+      "themeId": "C8",
+      "siteType": "catalog",
+      "name": "Listings and Agents",
+      "heroLayout": "split-photo",
+      "mood": [
+        "established",
+        "calm",
+        "capable"
+      ],
+      "bestFor": "Brokerages with many agents and several offices, combining a listings catalogue, agent directory and recruiting",
+      "pairsWithTier": "standard",
+      "headlineSample": "{City}'s brokerage for buying, selling and leasing",
+      "whyItFits": "Chosen over the family's Private Vault because the catalogue needs a stronger accent for search and filters. Evergreen and an old-style serif still read as established and trustworthy."
+    },
+    {
+      "id": "c",
+      "themeId": "C41",
+      "siteType": "premium-brand",
+      "name": "Signature Homes",
+      "heroLayout": "full-bleed-photo",
+      "mood": [
+        "luxurious",
+        "spacious",
+        "discreet"
+      ],
+      "bestFor": "Brokerages with a luxury division or off-plan focus, selling to investors and relocating buyers who expect a polished presentation",
+      "pairsWithTier": "premium",
+      "headlineSample": "Luxury real estate in {City}",
+      "whyItFits": "Gallery white and a fashion serif let large property photography carry the page. It suits a brokerage selling high-value homes where presentation is part of the service."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "Search boxed in a frame",
+      "line": "Your brokerage's property search loads inside a framed box that doesn't fit a phone, so the filters and results scroll separately. Buyers browsing listings on a phone give up and go to a portal.",
+      "hook": "Open their listings search on your phone. Note whether it's framed, how filters behave and how long results take. Screenshot it for when they reply.",
+      "linkLine": "A fast brokerage listings search built for a phone: {demo-link}"
+    },
+    {
+      "angle": "Agent roster without listings",
+      "line": "Your agent page is a grid of headshots and phone numbers, with no listings or areas for each agent. A seller choosing between your agents can't see who sells in their community.",
+      "hook": "Click into two agent profiles. Note whether they show listings, areas or reviews.",
+      "linkLine": "Agent profiles with each agent's live listings: {demo-link}"
+    },
+    {
+      "angle": "Recruiting posts, no recruiting page",
+      "line": "Your brokerage posts about welcoming new agents most months, but the site has no page on why an experienced agent should join. They research that quietly before making a call.",
+      "hook": "Scroll their posts for new-agent welcomes or 'join our team' posts. Check the site for a careers or join page.",
+      "linkLine": "A confidential agent recruiting page for the brokerage: {demo-link}"
+    },
+    {
+      "angle": "Off-plan launches as brochures",
+      "line": "Your off-plan launches go out as downloadable brochures, with no launch page to register interest. Investors comparing new developments register with whichever brokerage answers first.",
+      "hook": "Find their most recent new development or off-plan post. Note how people are asked to register.",
+      "linkLine": "An off-plan launch page with register-interest: {demo-link}"
+    },
+    {
+      "angle": "Several offices, one contact page",
+      "line": "Your brokerage has several offices, but they share one contact page and one phone number. Sellers want the office and agents who actually work their area of {City}.",
+      "hook": "Count the offices on their listings and contact page. Check whether any office has its own page.",
+      "linkLine": "A page per brokerage office with its agents and listings: {demo-link}"
+    },
+    {
+      "angle": "Enquiries with no named agent",
+      "line": "The enquiry form on your property listings doesn't say which agent will reply or when. Buyers send the same enquiry to three brokerages and talk to whoever answers first.",
+      "hook": "Open a listing and check the enquiry form. Note whether it names the listing agent or promises a response time.",
+      "linkLine": "Listing enquiries routed to the right agent at once: {demo-link}"
+    },
+    {
+      "angle": "Agents on their own sites",
+      "line": "Several of your agents run their own sites with different logos and listings that don't match the brokerage's. Clients searching an agent's name see a patchwork instead of one real estate brand.",
+      "hook": "Search three of their agents' names. Note which lead to separate sites and how branding differs.",
+      "linkLine": "Agent pages under one brokerage brand: {demo-link}"
+    },
+    {
+      "angle": "Reviews scattered by agent",
+      "line": "Your agents' reviews are spread across their personal profiles and the brokerage listing, none of them on the site. A seller comparing your agents never sees what past clients said.",
+      "hook": "Read reviews on the brokerage listing and two agents' profiles. Pick lines about service, never about prices achieved.",
+      "linkLine": "Reviews shown on each agent's profile, with consent: {demo-link}"
+    },
+    {
+      "angle": "Market report as a PDF",
+      "line": "Your brokerage's market report is a PDF linked from a post. As a page per community, with current property listings beside it, it would keep bringing sellers to you between reports.",
+      "hook": "Find their latest market update. Note the format and where it lives.",
+      "linkLine": "Community market pages beside live listings: {demo-link}"
+    },
+    {
+      "angle": "Commercial division hidden",
+      "line": "Your posts show commercial leases and investment sales, but the site only shows homes. Landlords and business owners need their own entry point and a commercial agent to call.",
+      "hook": "Look for commercial, leasing or management posts. Check whether the site has a division page.",
+      "linkLine": "Commercial and leasing division pages for the brokerage: {demo-link}"
+    },
+    {
+      "angle": "International buyers",
+      "line": "Your property posts are reaching overseas investors, judging by the comments, but the brokerage's site is in one language with no guidance for buying from abroad.",
+      "hook": "Read comments on listing posts for questions from overseas or in other languages. Note the languages.",
+      "linkLine": "Buying-from-abroad pages in your clients' languages: {demo-link}"
+    },
+    {
+      "angle": "Listings reach social first",
+      "line": "New listings show up on your brokerage's social pages days before they appear on the site. Buyers who see the post and click through find nothing to enquire on.",
+      "hook": "Compare their newest listing post with the site's search. Note any listing missing from the site.",
+      "linkLine": "Listings synced to the site the moment they're live: {demo-link}"
+    },
+    {
+      "angle": "Rentals buried",
+      "line": "Your agency handles rentals, but they're mixed into the sale search with no tenant guidance. Tenants and landlords both need their own path to the right leasing agent.",
+      "hook": "Search their site for rentals or leasing. Note whether rentals have their own search and landlord page.",
+      "linkLine": "A leasing section for tenants and landlords: {demo-link}"
+    },
+    {
+      "angle": "Dated brokerage design",
+      "line": "Your brokerage site still has the sliders and small photos of an older build. Sellers choosing an agency to market a property judge the marketing by the brokerage's own site.",
+      "hook": "Look for old copyright years, sliders or low-resolution photos. Note two specifics, politely.",
+      "linkLine": "A current design for the brokerage, built around listings: {demo-link}"
+    },
+    {
+      "angle": "A specific recent post",
+      "line": "That {specific recent job} post was a strong piece of property marketing. On the brokerage site, beside the agent's profile and listings, it would keep working for months.",
+      "hook": "Pick their newest launch, sale announcement or market post and name it exactly. Never quote a sale price they didn't publish.",
+      "linkLine": "That listing story, kept on the agent's brokerage page: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, that {specific recent job} post was a good piece of property marketing.\n\nI looked at {Business Name}'s site on my phone. The listings search sits in a framed box and the agent pages show no listings. I sketched how a brokerage site with a fast search, agent profiles and enquiry routing could work, with marked placeholders where your photos would go.\n\nAre you the right person for the website, or is it your marketing lead?",
+    "dm2": "{Owner}, following up in case this got buried. Here's the sample for {Business Name}: {demo-link}\n\nIt has a listings search from your feed, agent profiles with their own listings, office pages, an agent recruiting page and an off-plan launch layout. Enquiries go straight to the right agent. If it's not for you, just say so.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites and lead systems for real estate brokerages. I sent a sample a few days ago, did it reach you?\"\n\nIF NO:\n\"No problem. Short version: I built a sample for {Business Name} with a listings search, agent profiles with their own listings and a recruiting page, with marked placeholders where your photos would go. Can I email it so you can share it with your managing broker?\"\n\nIF YES:\n\"What did you and your managers think?\"\n → let them talk, then ask who else signs off: broker-owner, marketing, operations\n\"It's a brokerage site you own, fed from your listings, with every enquiry routed to the right agent. The build runs {Build Range} depending on feeds, offices and divisions, then {Care Range} a month for hosting, feed monitoring and edits. For a brokerage your size I'd quote about {Build Price}.\"\n\"Could we take thirty minutes with you and your marketing lead next week?\"\n\nCLOSE:\n\"I'll send a scope covering the feed, agent pages, routing rules and recruiting section, plus a deposit invoice. You approve every page before launch.\"",
+    "objections": [
+      {
+        "objection": "We already have a site from our franchise or listing provider.",
+        "handler": "\"Keep what the agreement requires. Most of those sites look like every other office. I build the parts that make yours different: agent pages with listings, recruiting, launches and routing, connected to the same feed.\""
+      },
+      {
+        "objection": "Our leads come from the property portals.",
+        "handler": "\"Portals show your listing beside every competitor's. Your own site sends that buyer to one brokerage and one agent, and the lead is yours, not rented.\""
+      },
+      {
+        "objection": "Agents want their own sites.",
+        "handler": "\"Let them have a page that feels like theirs, with their listings, reviews and story, under the brokerage's brand. They get a better site; you keep one brand and one lead flow.\""
+      },
+      {
+        "objection": "We can't get a clean listings feed.",
+        "handler": "\"That's the first thing I check, before quoting. If the feed is messy I build from your own system or a managed upload, and the scope says which.\""
+      },
+      {
+        "objection": "The broker-owner and partners all need to agree.",
+        "handler": "\"Of course. I'll send a short scope with the phases and costs, and I'm glad to present it to all of you at once.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For a brokerage your size about {Build Price}, covering listings search, agent profiles, office pages, routing and recruiting. Back-office integrations are scoped once I've seen them.\""
+      }
+    ],
+    "email": {
+      "subject": "Brokerage site sample for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites and lead systems for real estate brokerages. {Business Name} has a strong team, but on a phone the listings search sits in a framed box, agent pages show no listings, and there's no page for agents thinking of joining.\n\nI built a sample rather than ask for a meeting first: a listings search from your feed, agent profiles with their own listings, office pages, a recruiting page and an off-plan launch layout, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf it fits, I finish it on your domain for {Build Range}, plus {Care Range} a month for hosting, feed monitoring and edits. Enquiries route straight to the right agent. If not, no problem, it comes down at the end of the month.\n\nWould thirty minutes with you and your marketing lead be worth it?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"{Owner}, it's {Your Name}. I build websites for real estate brokerages, and I made a sample for {Business Name} with a listings search, agent profiles and a recruiting page. I'll email the link for you and your managers. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm taking the {Business Name} brokerage sample down on Friday.\n\nShould I keep it up while your partners look? One word is fine either way.",
+    "nurture": "Hi {Owner}, brokerages often plan recruiting and next year's marketing around now, and your sample came to mind.\n\nIt's still here if you'd like another look with your partners, same scope and price: {demo-link}"
+  },
+  "pricing": {
+    "bullets": [
+      "Price the listings feed first and separately; feed quality decides the build, so check access before quoting anything else.",
+      "Quote agent profiles as a system, not per page, because agents join and leave every month.",
+      "Price lead routing on the number of rules (area, language, listing agent, division), not on forms.",
+      "Treat recruiting as its own phase with its own goal; it's what the broker-owner values most.",
+      "Off-plan launch pages are recurring work. Quote a template once and a fee per launch.",
+      "Include licence and advertising permit fields where the regulator requires them, and never write claims about prices achieved."
+    ],
+    "lineItems": [
+      {
+        "item": "Listings feed integration and search",
+        "min": 4000,
+        "max": 14000,
+        "unit": "one-time",
+        "description": "Max with sales and rentals, several feeds or the brokerage's own system, map search and permit fields per listing.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Agent profile system",
+        "min": 3000,
+        "max": 9000,
+        "unit": "one-time",
+        "description": "Max with each agent's live listings, reviews, languages, areas, manager editing and automatic removal when an agent leaves.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Office page (each)",
+        "min": 400,
+        "max": 1000,
+        "unit": "per-page",
+        "description": "Max with that office's agents, listings, communities covered and a valuation request routed to the office manager.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Agent recruiting section",
+        "min": 2500,
+        "max": 7000,
+        "unit": "one-time",
+        "description": "Max with commission plan outlines, agent videos, training calendar and a confidential enquiry routed to the broker-owner.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Off-plan launch page (each)",
+        "min": 800,
+        "max": 2500,
+        "unit": "per-page",
+        "description": "Max with floor plans, payment plan outline, register-interest with agent assignment and launch-day availability updates.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Community guide page (each)",
+        "min": 400,
+        "max": 1000,
+        "unit": "per-page",
+        "description": "Max with schools and transport, service charges or dues, live listings in the area and the agents who cover it.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Commercial and leasing division section",
+        "min": 2500,
+        "max": 7000,
+        "unit": "one-time",
+        "description": "Max with separate searches, landlord and tenant guides, and routing to each division's team.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Second-language page set",
+        "min": 3000,
+        "max": 9000,
+        "unit": "one-time",
+        "description": "Max with translated search, buying-from-abroad guides and agent profiles, reviewed by bilingual agents.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Listing photography and video programme for the brokerage",
+      "min": 1500,
+      "max": 6000,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A monthly allowance of property shoots, short walkthrough videos and floor plans booked by any agent, so every brokerage listing looks the same high standard.\"",
+      "when": "Month 2, once the listings search is live."
+    },
+    {
+      "name": "Google profile upkeep for each office",
+      "min": 400,
+      "max": 1200,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Every office's profile kept accurate with hours, agents and photos, and weekly posts of new property listings, so local searches land on the right office.\"",
+      "when": "Day 30, once office pages are live."
+    },
+    {
+      "name": "Agent review collection after each deal",
+      "min": 300,
+      "max": 900,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"After every closing or lease signing, the client gets a short request to review their agent, and approved reviews appear on that agent's brokerage profile.\"",
+      "when": "Day 45, once agent profiles are live."
+    },
+    {
+      "name": "Quarterly community market reports",
+      "min": 1500,
+      "max": 4000,
+      "unit": "per-year",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Each quarter, a market page per community drafted from the brokerage's own sales and listings, reviewed by the managing broker, with the area's agents beside it.\"",
+      "when": "Month 3, when a quarter of data is in."
+    },
+    {
+      "name": "Agent recruiting campaign",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A quiet campaign to experienced agents in {City}: agent stories, a recruiting page and a confidential enquiry the broker-owner answers personally.\"",
+      "when": "Month 2, or when the brokerage sets a recruiting target."
+    },
+    {
+      "name": "Off-plan launch campaign",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"For each development launch: the launch page, a register-interest campaign, an email to past investors and a launch-day update, all pointing to the brokerage's agents.\"",
+      "when": "Three to four weeks before each release."
+    },
+    {
+      "name": "Agent headshot and intro video day",
+      "min": 1500,
+      "max": 4500,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"One day at the office: matching headshots and a short intro video for every agent, so the directory looks like one real estate brand.\"",
+      "when": "Month 2, and again as new agents join."
+    },
+    {
+      "name": "Brokerage advertising compliance review",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A check of listings, ads and agent pages for licence numbers, advertising permits and required notices where the regulator asks for them, with fixes made across the site.\"",
+      "when": "Month 3, and whenever advertising rules change."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Mortgage brokers the agents refer to",
+        "whoPays": "The mortgage brokerage",
+        "min": 3000,
+        "max": 9000,
+        "unit": "one-time",
+        "pitchLine": "\"The mortgage brokers your agents send buyers to need sites with pre-approval requests and calculators. The brokerage's recommendation gets me the meeting.\"",
+        "whyItWorks": "Mortgage brokers live on agent referrals and want to look as organised as the brokerage that sends them."
+      },
+      {
+        "route": "Conveyancing and property lawyers",
+        "whoPays": "The law practice",
+        "min": 3000,
+        "max": 8000,
+        "unit": "one-time",
+        "pitchLine": "\"The property lawyers who handle your agents' closings need a clear site with fees and timelines. A word from a busy brokerage opens the door.\"",
+        "whyItWorks": "Lawyers depend on brokerage volume and rarely have a modern site."
+      },
+      {
+        "route": "Property developers launching through the brokerage",
+        "whoPays": "The developer",
+        "min": 8000,
+        "max": 25000,
+        "unit": "one-time",
+        "pitchLine": "\"Developers who launch through your brokerage need project sites before release. The launch template I built for you becomes their own microsite.\"",
+        "whyItWorks": "Developers spend heavily on launches, and the brokerage's introduction makes me part of the launch team."
+      },
+      {
+        "route": "Home stagers and interior designers",
+        "whoPays": "The staging or design studio",
+        "min": 2000,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"Stagers who prepare your agents' listings need portfolio sites to win more of them. An introduction from the brokerage makes the first call easy.\"",
+        "whyItWorks": "Stagers sell almost entirely to agents and need a portfolio that agents trust."
+      },
+      {
+        "route": "Movers and relocation services",
+        "whoPays": "The moving or relocation company",
+        "min": 2500,
+        "max": 7000,
+        "unit": "one-time",
+        "pitchLine": "\"The movers and relocation firms your clients use need quote forms and service-area pages. The brokerage can introduce me as part of its client care.\"",
+        "whyItWorks": "They want brokerage referrals and see the value of looking like a firm agents recommend."
+      },
+      {
+        "route": "Inspection and snagging companies",
+        "whoPays": "The inspection company",
+        "min": 2000,
+        "max": 5000,
+        "unit": "one-time",
+        "pitchLine": "\"Inspection and snagging companies your buyers hire need booking sites with sample reports. Your agents' recommendation fills their calendar.\"",
+        "whyItWorks": "They're booked through agents, so a brokerage introduction is worth more than any ad."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Pre-approval question assistant for mortgage brokers",
+        "whoPays": "The mortgage brokerage, monthly",
+        "min": 300,
+        "max": 900,
+        "unit": "monthly",
+        "pitchLine": "\"Buyers ask mortgage brokers the same document and eligibility questions late at night. An assistant answers from the broker's own guide and books a call for anything specific.\"",
+        "whyItWorks": "It saves the broker evenings, and referred buyers from the real estate brokerage arrive better prepared."
+      },
+      {
+        "route": "Closing checklist assistant for property lawyers",
+        "whoPays": "The law practice, monthly",
+        "min": 250,
+        "max": 700,
+        "unit": "monthly",
+        "pitchLine": "\"Clients of a property lawyer get a guided checklist of documents for their closing, and the lawyer sees a draft status summary to review.\"",
+        "whyItWorks": "It cuts chasing, and agents notice when their closings stop stalling."
+      },
+      {
+        "route": "Launch enquiry assistant for developers",
+        "whoPays": "The developer, monthly",
+        "min": 800,
+        "max": 2500,
+        "unit": "monthly",
+        "pitchLine": "\"During a development launch, an assistant answers unit type, payment plan and handover questions from the developer's approved sheet and books an agent call.\"",
+        "whyItWorks": "Launch weeks overwhelm sales teams, and the brokerage introduction places the tool in the launch plan."
+      },
+      {
+        "route": "Staging proposal drafts for stagers",
+        "whoPays": "The staging studio, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"A stager walks a property, dictates notes and gets a draft staging proposal with rooms and items for the agent, ready to price and send.\"",
+        "whyItWorks": "Faster proposals win more listings from the brokerage's agents."
+      },
+      {
+        "route": "Moving quote assistant for movers",
+        "whoPays": "The moving company, monthly",
+        "min": 200,
+        "max": 600,
+        "unit": "monthly",
+        "pitchLine": "\"Clients describe their move in a chat and the mover gets a draft inventory and quote range to confirm, instead of a site visit for every enquiry.\"",
+        "whyItWorks": "Quote speed wins moves, and agents keep recommending the firm that answers first."
+      },
+      {
+        "route": "Report summary drafts for inspection companies",
+        "whoPays": "The inspection company, monthly",
+        "min": 200,
+        "max": 600,
+        "unit": "monthly",
+        "pitchLine": "\"From the inspector's notes, a plain-language draft summary for the buyer and agent, checked by the inspector before sending.\"",
+        "whyItWorks": "Agents value clear summaries, so the inspection company gets recommended more."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Instant enquiry acknowledgement and agent alert",
+      "kind": "automation",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 150,
+      "monthlyMax": 500,
+      "pitchLine": "\"Every property enquiry gets an instant reply naming the agent who'll call, and that agent gets a text with the listing and the buyer's details.\"",
+      "whenAndWhatItTakes": "Month 1. Needs the agent list, phone numbers and approved reply wording."
+    },
+    {
+      "name": "Lead routing rules by area, language and listing",
+      "kind": "software",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 18000,
+      "monthlyMin": 300,
+      "monthlyMax": 900,
+      "pitchLine": "\"Enquiries route to the listing agent, the area specialist or the right language speaker, with a backup agent if nobody responds within the time the brokerage sets.\"",
+      "whenAndWhatItTakes": "Month 2. Needs routing rules from the managing broker and the agent roster with areas and languages."
+    },
+    {
+      "name": "Saved-search alerts for buyers and tenants",
+      "kind": "automation",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 6000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Buyers and tenants save a search on the brokerage site and get new matching listings by email, each with the listing agent's name and an enquiry button.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the listings feed live and email sending set up."
+    },
+    {
+      "name": "Review reply drafts for each agent",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 200,
+      "monthlyMax": 500,
+      "pitchLine": "\"New reviews of the brokerage or an agent get a reply drafted in the agent's voice, without disclosing any deal details, ready for the agent to approve.\"",
+      "whenAndWhatItTakes": "Month 2. Needs a few approved replies and the brokerage's privacy rules. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Listing description drafts with an advertising check",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 300,
+      "monthlyMax": 800,
+      "pitchLine": "\"Agents enter the property facts and get a draft listing description, with missing permit or licence fields and any wording that could breach advertising rules flagged.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the brokerage's style guide and the advertising rules where they operate. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Off-plan launch microsite builder",
+      "kind": "software",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 16000,
+      "monthlyMin": 200,
+      "monthlyMax": 600,
+      "pitchLine": "\"Marketing creates a new development launch page from a template in an afternoon: floor plans, payment plan outline, register-interest and the assigned agents.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the launch page design approved and a sample developer brief."
+    },
+    {
+      "name": "After-hours buyer and tenant enquiry assistant",
+      "kind": "ai",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 15000,
+      "monthlyMin": 600,
+      "monthlyMax": 1800,
+      "pitchLine": "\"Late-night enquiries about a property get answers from the listing data, a few questions on budget and timing, and a viewing request passed to the agent in the morning.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the listings feed, viewing rules and approved answers. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Agent recruiting pipeline",
+      "kind": "software",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 14000,
+      "monthlyMin": 300,
+      "monthlyMax": 800,
+      "pitchLine": "\"Every agent the brokerage is courting on one board: first contact, meetings, offer and start date, with reminders so no recruiting conversation goes cold.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the broker-owner's recruiting steps and current prospect list."
+    },
+    {
+      "name": "Agent applicant screener",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 300,
+      "monthlyMax": 700,
+      "pitchLine": "\"Agents enquiring about joining answer questions on licence status, areas, production and goals, and the managing broker gets a draft summary before the first meeting.\"",
+      "whenAndWhatItTakes": "Month 5, with the recruiting pipeline. Comes with the AI maintenance retainer; the broker decides every hire."
+    },
+    {
+      "name": "New agent onboarding checklist",
+      "kind": "automation",
+      "oneTimeMin": 2500,
+      "oneTimeMax": 7000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"When an agent joins, their profile, email, listings access, training sessions and paperwork are set up from one checklist, and the office manager sees what's left.\"",
+      "whenAndWhatItTakes": "Month 5. Needs the brokerage's onboarding steps and who owns each."
+    },
+    {
+      "name": "Stale lead follow-up drafts for agents",
+      "kind": "ai",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 400,
+      "monthlyMax": 1000,
+      "pitchLine": "\"Each morning agents see buyers and sellers who've gone quiet, with a short draft follow-up based on what they enquired about, ready to edit and send.\"",
+      "whenAndWhatItTakes": "Month 6. Needs the lead history and agent contact rules. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Brokerage lead and response dashboard",
+      "kind": "software",
+      "oneTimeMin": 8000,
+      "oneTimeMax": 22000,
+      "monthlyMin": 400,
+      "monthlyMax": 1200,
+      "pitchLine": "\"See enquiries by source, office and agent, how fast each agent responds and which leads become viewings and deals, so the managing broker coaches with facts.\"",
+      "whenAndWhatItTakes": "Month 6. Needs routing live and deal outcomes from the back office or a weekly export."
+    },
+    {
+      "name": "Agent intranet for policies, forms and marketing requests",
+      "kind": "software",
+      "oneTimeMin": 8000,
+      "oneTimeMax": 20000,
+      "monthlyMin": 300,
+      "monthlyMax": 900,
+      "pitchLine": "\"Agents find brokerage forms, commission policies and training in one place, and request listing marketing through a form instead of chasing the office.\"",
+      "whenAndWhatItTakes": "Month 7. Needs the policy documents, forms and the marketing team's request process."
+    },
+    {
+      "name": "Policy answer search for agents",
+      "kind": "ai",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 400,
+      "monthlyMax": 900,
+      "pitchLine": "\"Agents ask 'which form for a rental renewal' or 'what's the referral fee policy' and get the answer from the brokerage's own documents, with a link to the source.\"",
+      "whenAndWhatItTakes": "Month 8, after the intranet. Needs approved policy documents. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Client transaction milestone updates",
+      "kind": "automation",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 200,
+      "monthlyMax": 500,
+      "pitchLine": "\"Buyers and sellers get updates as their deal reaches each milestone the brokerage tracks, so agents field fewer 'where are we' calls.\"",
+      "whenAndWhatItTakes": "Month 8. Needs the brokerage's deal stages and where they're recorded."
+    },
+    {
+      "name": "Community market report drafts",
+      "kind": "ai",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 300,
+      "monthlyMax": 800,
+      "pitchLine": "\"From the brokerage's own listings and closed deals, a draft market summary per community each quarter, facts only, for the managing broker to edit.\"",
+      "whenAndWhatItTakes": "Month 9. Needs a quarter of listing and deal data. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Second-language enquiry drafts with agent review",
+      "kind": "ai",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 300,
+      "monthlyMax": 900,
+      "pitchLine": "\"Investor enquiries in other languages get a draft summary for the brokerage and a draft reply in the buyer's language, which a bilingual agent checks and sends.\"",
+      "whenAndWhatItTakes": "Month 9, only where bilingual agents review. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Deal and commission statement portal",
+      "kind": "software",
+      "oneTimeMin": 12000,
+      "oneTimeMax": 35000,
+      "monthlyMin": 600,
+      "monthlyMax": 1800,
+      "pitchLine": "\"Agents see their pending deals, commission splits and statements in a private portal, and the accounts team stops answering the same questions each payday.\"",
+      "whenAndWhatItTakes": "Month 10. Needs the commission plans, back-office export and the accounts team's sign-off."
+    },
+    {
+      "name": "Landlord portal for the leasing division",
+      "kind": "software",
+      "oneTimeMin": 10000,
+      "oneTimeMax": 28000,
+      "monthlyMin": 500,
+      "monthlyMax": 1500,
+      "pitchLine": "\"Landlords see their rental listing's enquiries, viewings, tenant applications and renewal dates in one place, without calling the leasing agent for updates.\"",
+      "whenAndWhatItTakes": "Month 11, if they run leasing. Needs the leasing workflow and renewal records."
+    },
+    {
+      "name": "Brokerage data hub across offices and divisions",
+      "kind": "software",
+      "oneTimeMin": 18000,
+      "oneTimeMax": 50000,
+      "monthlyMin": 900,
+      "monthlyMax": 3000,
+      "pitchLine": "\"Listings, enquiries, agents, recruiting and deals from every office and division in one place, so the broker-owner sees the whole real estate business on one screen.\"",
+      "whenAndWhatItTakes": "Month 12. Needs the earlier systems live and agreement on which data each office shares."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise lead routing for mid-size brokerages",
+      "whoPays": "Real estate brokerages, monthly",
+      "min": 300,
+      "max": 1000,
+      "unit": "monthly",
+      "pitchLine": "\"Every brokerage with many agents fights over who gets which enquiry. The routing rules I built for one load any brokerage's roster and areas.\"",
+      "whyItWorks": "The routing logic is paid for once; each new brokerage adds only its agents and rules."
+    },
+    {
+      "route": "Real estate board or association member benefit",
+      "whoPays": "The local real estate board or association",
+      "min": 6000,
+      "max": 20000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer member brokerages an agent profile and recruiting template with licence and permit fields already in place for your market.\"",
+      "whyItWorks": "Associations fund member tools, and compliant advertising is a constant member question."
+    },
+    {
+      "route": "Brokerage franchise networks",
+      "whoPays": "The franchisor, per franchise office",
+      "min": 3000,
+      "max": 9000,
+      "unit": "one-time",
+      "pitchLine": "\"Every franchise office needs the same agent pages, routing and recruiting, within the brand rules. The template rolls out office by office.\"",
+      "whyItWorks": "Each new franchisee pays a setup fee, and the franchisor wants consistency it can't build itself."
+    },
+    {
+      "route": "Developers' agent and investor portals",
+      "whoPays": "The property developer",
+      "min": 15000,
+      "max": 45000,
+      "unit": "one-time",
+      "pitchLine": "\"Developers selling through many brokerages need a portal where agents register buyers, see availability and download launch materials. The launch template grows into it.\"",
+      "whyItWorks": "Developers spend heavily on launches and want control over the agents selling their units."
+    },
+    {
+      "route": "Corporate relocation companies",
+      "whoPays": "The relocation company",
+      "min": 8000,
+      "max": 25000,
+      "unit": "one-time",
+      "pitchLine": "\"Relocation firms need community guides and partner brokerages in each city for transferring employees. The community pages and agent directory adapt directly.\"",
+      "whyItWorks": "They pay for content per city and value a structure a brokerage already runs on."
+    },
+    {
+      "route": "White-label for real estate marketing agencies",
+      "whoPays": "The agency, per brokerage client",
+      "min": 5000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency handles brokerage marketing but can't build feeds and routing. License the brokerage template and I deliver it under your name.\"",
+      "whyItWorks": "Agencies own the relationship and lose clients when the site can't keep up with the ads."
+    },
+    {
+      "route": "Real estate licensing schools",
+      "whoPays": "The licensing school or training provider",
+      "min": 4000,
+      "max": 12000,
+      "unit": "one-time",
+      "pitchLine": "\"Graduates of your licensing course need to choose a brokerage. A careers fair page where member brokerages present their recruiting profile, built on the same template.\"",
+      "whyItWorks": "Schools want placement results, and brokerages will pay to appear in front of new agents."
+    },
+    {
+      "route": "Commercial real estate firms",
+      "whoPays": "The commercial brokerage",
+      "min": 15000,
+      "max": 40000,
+      "unit": "one-time",
+      "pitchLine": "\"Commercial brokerages need listings, agent profiles and investor enquiries just like residential ones, with lease and investment search on top.\"",
+      "whyItWorks": "The structure carries over, and commercial firms have bigger budgets and fewer good options."
+    },
+    {
+      "route": "Property management firms needing a leasing front end",
+      "whoPays": "The property management company",
+      "min": 6000,
+      "max": 18000,
+      "unit": "one-time",
+      "pitchLine": "\"Management firms with vacancies to fill need a rental search, tenant applications and a landlord portal. The leasing division build is exactly that.\"",
+      "whyItWorks": "The leasing workflow is already built and tested with a brokerage's own division."
+    },
+    {
+      "route": "Brokerage merger integrations",
+      "whoPays": "The merged brokerage",
+      "min": 10000,
+      "max": 35000,
+      "unit": "one-time",
+      "pitchLine": "\"When two brokerages merge, agents, listings and sites need to become one without losing search history. The agent and listing system handles both rosters.\"",
+      "whyItWorks": "Mergers have deadlines and budgets, and the integration path already exists."
+    },
+    {
+      "route": "One brokerage per city",
+      "whoPays": "A brokerage in another city",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I build this for one real estate brokerage per city. {City} is yours; a brokerage in another city gets the same system without competing for your agents.\"",
+      "whyItWorks": "Brokerages don't want to share a builder with the office recruiting their agents, and the template moves unchanged."
+    },
+    {
+      "route": "Finishing stalled brokerage site rebuilds",
+      "whoPays": "The brokerage with a stalled project",
+      "min": 8000,
+      "max": 25000,
+      "unit": "one-time",
+      "pitchLine": "\"A developer started your brokerage's new site and stalled at the listings feed. I finish it on a structure where the feed already works.\"",
+      "whyItWorks": "They've committed budget and usually stall on exactly the part already solved."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Brokerage site build plus care plan, one contract",
+      "min": 15000,
+      "max": 40000,
+      "unit": "one-time",
+      "trigger": "The broker-owner and marketing lead approve the scope after the feed check.",
+      "line": "\"The brokerage site and the care plan share one contract, so a new agent page or office change is a message, not a project.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Google profile upkeep for each office",
+      "min": 400,
+      "max": 1200,
+      "unit": "monthly",
+      "trigger": "Office pages are live and enquiries start arriving by office.",
+      "line": "\"Enquiries now come in by office. Keeping each office's profile accurate sends local sellers to the right agents.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "Agent headshot and intro video day",
+      "min": 1500,
+      "max": 4500,
+      "unit": "per-shoot",
+      "trigger": "Agent profiles still show marked placeholders where photos go.",
+      "line": "\"Sellers choose an agent from the directory, and half the brokerage's profiles still need a headshot.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Lead routing rules by area, language and listing",
+      "min": 6000,
+      "max": 18000,
+      "unit": "one-time",
+      "trigger": "Sixty days of enquiries show leads waiting hours for an agent, or agents arguing over who owns them.",
+      "line": "\"Leads are waiting and agents are arguing over them. Routing rules settle both before the next property enquiry arrives.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Agent recruiting campaign",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "trigger": "The broker-owner sets a recruiting target for the year.",
+      "line": "\"The recruiting page is live. A quiet campaign to experienced agents in {City} puts it in front of the people you want.\""
+    },
+    {
+      "rung": 6,
+      "day": 150,
+      "offer": "Brokerage lead and response dashboard",
+      "min": 8000,
+      "max": 22000,
+      "unit": "one-time",
+      "trigger": "The managing broker asks which agents respond fastest and which sources turn into deals.",
+      "line": "\"Let's see which sources and agents turn enquiries into deals, so coaching and spend follow the facts.\""
+    },
+    {
+      "rung": 7,
+      "day": 240,
+      "offer": "Agent intranet for policies, forms and marketing requests",
+      "min": 8000,
+      "max": 20000,
+      "unit": "one-time",
+      "trigger": "The office manager says agents ask the same policy and form questions every day.",
+      "line": "\"Your office manager answers the same questions all day. An agent intranet answers them once.\""
+    },
+    {
+      "rung": 8,
+      "day": 365,
+      "offer": "Brokerage data hub across offices and divisions",
+      "min": 18000,
+      "max": 50000,
+      "unit": "one-time",
+      "trigger": "A new office, division or merger is planned and the broker-owner wants one view of the business.",
+      "line": "\"A year in, with growth planned, let's put every office and division of the real estate business on one screen.\""
+    }
+  ]
+}

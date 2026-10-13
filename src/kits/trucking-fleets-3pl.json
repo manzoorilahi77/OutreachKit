@@ -1,0 +1,862 @@
+{
+  "schemaVersion": 1,
+  "category": "Trucking fleets & 3PL",
+  "slug": "trucking-fleets-3pl",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · expansion batch (healthcare + mid-size)",
+    "generatedAt": "2026-10-13",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Mid-size rfq kit for asset fleets and warehouse operators with several terminals. Leaned on driver recruiting, lane rate requests and shipper visibility, kept clear of the hotshot kit's single-truck angles. Least sure about the shipper portal and warehouse inventory portal ranges, which depend on their dispatch and warehouse systems."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Driver recruiting hub",
+      "contains": "Company driver and owner-operator lease-on openings by division, home time, pay structure placeholders, equipment assigned, orientation steps and a short mobile application",
+      "why": "Seated trucks are the whole business. Drivers compare carriers on home time, pay and equipment, from a phone, before they ever call a recruiter."
+    },
+    {
+      "section": "Terminals, lanes and coverage",
+      "contains": "A page per terminal or yard, regular lanes and regions served, dedicated and one-way service areas, and a coverage map",
+      "why": "Shippers look for a carrier already running their lanes. Visible lanes and terminals turn a cold search into a rate request."
+    },
+    {
+      "section": "Equipment and freight modes",
+      "contains": "Dry van, refrigerated, flatbed, dedicated fleets, drayage, consolidation and cross-dock, each with what it suits and how to request capacity",
+      "why": "Logistics managers buy by mode and equipment first. Each mode needs its own page to be found."
+    },
+    {
+      "section": "Warehouse and fulfilment capability",
+      "contains": "Warehouse locations, space and temperature zones as supplied, pick-pack and kitting, inventory visibility for clients and how the warehouse connects to clients' order systems",
+      "why": "Shippers moving to outside warehousing compare services and visibility, not square footage alone."
+    },
+    {
+      "section": "Shipper onboarding and lane rate requests",
+      "contains": "Lane rate request with origin, destination, frequency, equipment and commodity, credit application, insurance certificate request and the onboarding steps",
+      "why": "A shipper adding a carrier needs rates and paperwork fast. A clear request and onboarding path wins the first load."
+    },
+    {
+      "section": "Safety and fleet maintenance programme",
+      "contains": "Safety programme summary, driver training, maintenance schedule and shop, [safety rating, as supplied] and insurance limits as placeholders",
+      "why": "Shippers and their insurers check a fleet's safety before awarding freight. Showing the programme plainly answers the question early."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C45",
+      "siteType": "local-conversion",
+      "name": "Drivers Wanted",
+      "heroLayout": "full-bleed-photo",
+      "mood": ["bold", "direct", "welcoming"],
+      "bestFor": "Fleets whose most urgent need is seated trucks and a driver application that works from a phone",
+      "pairsWithTier": "starter",
+      "headlineSample": "Driving jobs out of {City}, home time you can plan",
+      "whyItFits": "Ultramarine Poster was built for campaigns. Big geometric type and one strong colour make a driver recruiting page read like a billboard."
+    },
+    {
+      "id": "b",
+      "themeId": "C19",
+      "siteType": "b2b-capability",
+      "name": "Lane Board",
+      "heroLayout": "card-stack",
+      "mood": ["operational", "precise", "steady"],
+      "bestFor": "Mid-size asset carriers selling lanes, modes and capacity to shippers and logistics managers",
+      "pairsWithTier": "standard",
+      "headlineSample": "Truckload and dedicated freight from {City} terminals",
+      "whyItFits": "The family combo, and its library entry was made for logistics and fleet operations. Mono labels suit lanes, equipment and terminal data."
+    },
+    {
+      "id": "c",
+      "themeId": "C14",
+      "siteType": "premium-brand",
+      "name": "Network Control",
+      "heroLayout": "type-led",
+      "mood": ["connected", "modern", "controlled"],
+      "bestFor": "Warehouse and logistics providers selling visibility, integrations and dedicated programmes to larger shippers",
+      "pairsWithTier": "premium",
+      "headlineSample": "Warehousing and freight from {City}, visible end to end",
+      "whyItFits": "Deep Space Cyan was made for network dashboards. The dark page and cyan signals present the logistics firm as a control room, not a truck lot."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "Driver ads everywhere, thin careers page",
+      "line": "Your driver openings are posted on every job board, but your own careers page is a paragraph and a phone number. Drivers weighing two carriers look for home time and equipment before they apply.",
+      "hook": "Find their driver ads on job boards or social profiles, then open the site's careers page and note what's missing.",
+      "linkLine": "A driver recruiting hub for the fleet: {demo-link}"
+    },
+    {
+      "angle": "Lease-on programme unexplained",
+      "line": "Your site mentions owner-operators are welcome but says nothing about settlement, fuel programmes or how lease-on works. Owner-operators pick a trucking company by those details.",
+      "hook": "Search the site for owner-operator or lease. Note whether pay structure, fuel or settlement are explained.",
+      "linkLine": "An owner-operator page that answers the lease-on questions: {demo-link}"
+    },
+    {
+      "angle": "No lane rate request",
+      "line": "A logistics manager with a weekly lane can only send your fleet a general contact message. A rate request asking origin, destination, frequency and equipment gets you a real freight quote to price.",
+      "hook": "Look for a quote or rate request form. If it's a generic contact form, the angle holds.",
+      "linkLine": "A lane rate request built for shippers: {demo-link}"
+    },
+    {
+      "angle": "Several terminals, one address",
+      "line": "You run trucks out of several terminals, but the site shows one address. A shipper near your other yard has no idea you already run freight from their side of the region.",
+      "hook": "Count yards and terminals on their maps listings and compare with the site.",
+      "linkLine": "A page for each terminal with its lanes: {demo-link}"
+    },
+    {
+      "angle": "Warehousing hidden behind trucking",
+      "line": "Your listing says warehousing and distribution, but the site is all trucks. A shipper looking for outside warehouse space and pick-pack would never guess you offer it.",
+      "hook": "Compare their listing categories and posts about the warehouse with what the site's menu shows.",
+      "linkLine": "Warehouse and fulfilment on its own page: {demo-link}"
+    },
+    {
+      "angle": "Reefer fleet not shown",
+      "line": "Your posts show refrigerated trailers, but the site never mentions temperature-controlled freight. Food and pharma shippers search for reefer carriers specifically.",
+      "hook": "Check social posts or yard photos for reefer units or flatbeds, then check whether the site has a page per equipment type.",
+      "linkLine": "A page for each equipment type the fleet runs: {demo-link}"
+    },
+    {
+      "angle": "Applying from a phone fails",
+      "line": "I tried your driver application on my phone and it opened a long form meant for a desktop. Most drivers apply from the cab during a break.",
+      "hook": "Open the driver application on your phone and note where it breaks or how long it runs. Screenshot it for when they reply.",
+      "linkLine": "A driver application that takes five minutes on a phone: {demo-link}"
+    },
+    {
+      "angle": "No tracking or customer login",
+      "line": "There's no customer login or tracking page on your site. Shippers running freight with several carriers expect to check status without calling dispatch.",
+      "hook": "Look for a customer login, tracking lookup or document download. If there's none, the angle holds.",
+      "linkLine": "A shipper tracking and documents page: {demo-link}"
+    },
+    {
+      "angle": "Safety programme kept quiet",
+      "line": "Nothing on your site describes the fleet's safety programme or driver training. Shippers awarding a dedicated freight account ask for it before rates.",
+      "hook": "Search the site for safety or training. Never state their rating; only note that the programme isn't shown.",
+      "linkLine": "A safety and fleet maintenance page: {demo-link}"
+    },
+    {
+      "angle": "Drivers praise home time",
+      "line": "A driver wrote publicly that your company actually gets them home on weekends. That sentence recruits better than any ad, and it's nowhere on your trucking careers page.",
+      "hook": "Read their employer reviews and social comments from drivers. Copy one phrase about home time, equipment or dispatch.",
+      "linkLine": "Driver comments on the careers page: {demo-link}"
+    },
+    {
+      "angle": "Retail peak warehouse space",
+      "line": "Shippers hunt for overflow warehouse space and extra trucks before the retail peak. The logistics firms with an easy space request get those short-term contracts.",
+      "hook": "Use this a couple of months before the year-end retail peak or the harvest season in their region.",
+      "linkLine": "A peak-season warehouse and freight request page: {demo-link}"
+    },
+    {
+      "angle": "New trucks or terminal announced",
+      "line": "Congratulations on the new tractors you posted about. New equipment is a selling point for drivers and shippers, and your fleet site doesn't mention it.",
+      "hook": "Find a new trucks, new terminal or expansion post and check whether the site reflects it.",
+      "linkLine": "The new equipment on the recruiting and capacity pages: {demo-link}"
+    },
+    {
+      "angle": "Forwarding with no shipment enquiry",
+      "line": "Your freight forwarding page lists sea, air and road, but an importer can't send cargo details, incoterms or a target date. The forwarder that asks the right questions gets the booking.",
+      "hook": "Use for forwarders. Look for a shipment enquiry form with cargo, route and terms fields.",
+      "linkLine": "A forwarding enquiry that asks for cargo and route details: {demo-link}"
+    },
+    {
+      "angle": "Dated site for a modern fleet",
+      "line": "Your trucks look newer than your website. The layout and footer suggest it hasn't been touched in years, and shippers notice when a carrier's site looks abandoned.",
+      "hook": "Check the footer year, the layout on a phone and whether recent equipment or lanes appear anywhere.",
+      "linkLine": "A current logistics site for the same fleet: {demo-link}"
+    },
+    {
+      "angle": "A specific recent haul",
+      "line": "That {specific recent job} you posted is the kind of freight a logistics manager wants proof you can handle. It belongs on a case page for that mode.",
+      "hook": "Pick their newest haul, project or warehouse post and name it: freight type, equipment and lane.",
+      "linkLine": "That haul on a freight case page: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner} — saw the {specific recent job} post, a solid haul.\n\nI went through the {Business Name} site and couldn't find a lane rate request for shippers, or a driver application that works on a phone. I put together a sample with both, plus terminal pages and a warehouse section, with marked placeholders where your photos would go.\n\nWould it help if I sent it to you and whoever runs recruiting?",
+    "dm2": "{Owner} — following up in case my note got lost between loads. Here's the sample for {Business Name}: {demo-link}\n\nIt has a driver recruiting hub with a short phone application, a lane rate request, a page per terminal and equipment type, and a warehouse section. If it isn't useful, tell me and I'll stop.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build recruiting sites and shipper tools for trucking and logistics companies around {City}. I sent you a note a couple of days ago, did it reach you?\"\n\nIF NO:\n\"No problem. Short version: I built a sample site for {Business Name} with a driver application that works from a phone, a lane rate request and terminal pages, with marked placeholders where your photos would go. Should it go to you, your recruiting manager or sales?\"\n\nIF YES:\n\"What did you and the team think?\"\n → let them talk, note whether recruiting or sales is the bigger worry\n\"The build runs {Build Range}, then {Care Range} a month for hosting, changes and new openings. For a fleet your size I'd quote about {Build Price}, less than a few weeks of one empty truck.\"\n\"Could we take thirty minutes with you and your recruiting lead this week?\"\n\nCLOSE:\n\"I'll send a scope and a deposit invoice. We start with the driver hub so trucks get seated first.\"",
+    "objections": [
+      {
+        "objection": "We get drivers from job boards already.",
+        "handler": "\"Keep them. Every driver who sees an ad checks your own site before applying. A careers hub with home time, pay structure and a short phone application turns more of those clicks into applications.\""
+      },
+      {
+        "objection": "Shippers come through brokers and our sales team.",
+        "handler": "\"Then the site backs up your sales team. Lanes, equipment and a safety page give a logistics manager what they ask your rep for, before the first call.\""
+      },
+      {
+        "objection": "We have a TMS vendor that does tracking.",
+        "handler": "\"Good. The site links to it or shows its data on your own page under your name. I don't replace the dispatch system; I give shippers a front door.\""
+      },
+      {
+        "objection": "We can't publish driver pay.",
+        "handler": "\"You choose. Many fleets show the pay structure, how miles or loads are paid and home time, and give numbers on the call.\""
+      },
+      {
+        "objection": "Freight is soft right now.",
+        "handler": "\"That's when shippers switch carriers on service, and the fleets with lanes and safety visible get the call. It's also the cheapest time to hire good drivers.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}, because it's a driver hub with a phone application, a lane rate request, terminal and equipment pages and a warehouse section. One seated truck pays it back.\""
+      }
+    ],
+    "email": {
+      "subject": "Driver hub and lane requests for {Business Name}",
+      "body": "Hi {Owner},\n\nI build recruiting sites and shipper tools for trucking and logistics companies around {City}. On the {Business Name} site I couldn't find a driver application that works on a phone, a lane rate request for shippers, or pages for each terminal and equipment type.\n\nI built a sample before asking for your time: a driver recruiting hub with home time and lease-on details, a short mobile application, a lane rate request, terminal and equipment pages, a warehouse section and a safety page, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf it's useful, I move it to your domain and finish it for {Build Range}, plus {Care Range} a month for hosting, changes and new openings. If not, it comes down at the end of the month.\n\nWould thirty minutes with you and your recruiting lead work this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build recruiting and shipper sites for trucking companies in {City}, and I made a sample for {Business Name} with a driver application that works on a phone. I'll email the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner} — I'm taking the {Business Name} fleet demo down on Friday.\n\nIf you or your recruiting lead want it up longer, one word is enough.",
+    "nurture": "Hi {Owner} — shippers around {City} start lining up peak-season capacity and warehouse space about now. Thought of you.\n\nThe trucking site with the driver hub and lane rate request is still here, same price. {demo-link} if you'd like another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to a few weeks of an empty truck, which every fleet owner can picture.",
+      "Quote the driver hub and phone application first; recruiting pain closes faster than sales pain.",
+      "Price each terminal page separately when terminals run their own lanes, recruiters or warehouse.",
+      "Anything reading from dispatch or warehouse systems is a separate software project with its own scope.",
+      "Expect the owner, the recruiting manager and sales or operations to sign off.",
+      "Never publish pay, safety ratings, insurance limits or capacity the company hasn't supplied in writing."
+    ],
+    "lineItems": [
+      {
+        "item": "Driver recruiting hub with mobile application",
+        "min": 2500,
+        "max": 7000,
+        "unit": "one-time",
+        "description": "Max with company and owner-operator tracks, divisions, home time by route type, a short pre-qualification and recruiter alerts.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Lane rate request and shipper onboarding",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "description": "Max with lane, frequency and equipment fields, spreadsheet upload for lane lists, credit application and routing to sales.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Terminal page (each)",
+        "min": 500,
+        "max": 1200,
+        "unit": "per-page",
+        "description": "Max with lanes from that terminal, local recruiter, yard photos placeholders and its own openings feed.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Equipment and mode page (each)",
+        "min": 400,
+        "max": 900,
+        "unit": "per-page",
+        "description": "Max with equipment specs as supplied, commodities handled, a mode-specific rate request and a cleared case example.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Warehouse and fulfilment section",
+        "min": 2000,
+        "max": 6000,
+        "unit": "one-time",
+        "description": "Max with several sites, temperature zones, services by client type and a space request form.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Forwarding shipment enquiry",
+        "min": 1000,
+        "max": 3000,
+        "unit": "one-time",
+        "description": "Max with cargo, route, terms, document needs and routing to the right desk by mode.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Recruiting video set for the careers hub",
+        "min": 2500,
+        "max": 7000,
+        "unit": "one-time",
+        "description": "Max with several drivers interviewed, a ride-along, terminal walkthroughs and versions cut for social.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Driver recruiting ad management",
+      "min": 1500,
+      "max": 4000,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Driver ads on social and search that send applicants to the trucking careers hub instead of a job board, with cost per application reported each month.\"",
+      "when": "Month 1, as soon as the recruiting hub is live."
+    },
+    {
+      "name": "Fleet and terminal photo and video days",
+      "min": 1500,
+      "max": 4000,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A day at the terminal shooting clean tractors, the shop and drivers who agree to be filmed gives the recruiting and freight pages real faces.\"",
+      "when": "Month 2, or when new equipment arrives."
+    },
+    {
+      "name": "Shipper outreach by lane and industry",
+      "min": 1500,
+      "max": 3500,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Each month, a short note to logistics managers at shippers along the fleet's busiest lanes, with a case page and the rate request link.\"",
+      "when": "Month 3, once lanes and equipment pages are live."
+    },
+    {
+      "name": "Google profiles for each terminal",
+      "min": 300,
+      "max": 700,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Each terminal's profile kept current with hiring posts and freight services, so 'trucking jobs near me' finds the right yard.\"",
+      "when": "Day 30, after terminal pages go live."
+    },
+    {
+      "name": "Driver referral programme campaign",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A referral page, cab cards and a text drivers can forward, so the fleet's own drivers bring in the next hires and the bonus is tracked.\"",
+      "when": "Month 2, once the application is working."
+    },
+    {
+      "name": "Trailer and tractor graphics coordination",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Trailers are rolling billboards on every lane. Matching graphics with the careers address recruit drivers at every truck stop.\"",
+      "when": "When they add trailers or rebrand the fleet."
+    },
+    {
+      "name": "Freight case studies by mode",
+      "min": 800,
+      "max": 2000,
+      "unit": "per-page",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Plain write-ups of a dedicated freight programme or a warehouse launch, with the shipper named only if they agree.\"",
+      "when": "Month 4, after sales names two or three good stories."
+    },
+    {
+      "name": "Logistics expo booth and capability sheet",
+      "min": 2000,
+      "max": 5000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A booth panel and capability sheet for the regional logistics expo that match the trucking site and send visitors to the rate request.\"",
+      "when": "Two months before the logistics show they attend."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Truck driving schools they hire from",
+        "whoPays": "The driving school",
+        "min": 4000,
+        "max": 12000,
+        "unit": "one-time",
+        "pitchLine": "\"The driving school that sends your fleet new drivers needs an enrolment site that shows where graduates get hired. Your recruiter's introduction opens it.\"",
+        "whyItWorks": "Schools sell on placement, and a carrier that hires their graduates is their best reference."
+      },
+      {
+        "route": "Truck repair and tyre shops they use",
+        "whoPays": "The repair shop",
+        "min": 3000,
+        "max": 9000,
+        "unit": "one-time",
+        "pitchLine": "\"The heavy truck shop that handles your overflow repairs sells to every fleet nearby with no booking page. Your maintenance manager's word gets me in.\"",
+        "whyItWorks": "Repair shops depend on fleet accounts and listen to them."
+      },
+      {
+        "route": "Customs brokers they hand freight to",
+        "whoPays": "The customs broker",
+        "min": 4000,
+        "max": 12000,
+        "unit": "one-time",
+        "pitchLine": "\"The customs broker clearing your cross-border freight needs a document upload and quote page for importers. A carrier partner's referral counts.\"",
+        "whyItWorks": "Brokers and carriers share shippers and trade referrals."
+      },
+      {
+        "route": "Owner-operators leased to them",
+        "whoPays": "The owner-operator, per site",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"Your leased owner-operators run small trucking businesses with no site. A simple page and invoicing set-up for each, offered through you, keeps them loyal.\"",
+        "whyItWorks": "Owner-operators trust the carrier they're leased to, and a perk helps retention."
+      },
+      {
+        "route": "Truck and trailer dealers",
+        "whoPays": "The equipment dealer",
+        "min": 8000,
+        "max": 25000,
+        "unit": "one-time",
+        "pitchLine": "\"The dealer you bought the new tractors from lists inventory nobody can filter. A fleet customer's introduction gets me to their marketing manager.\"",
+        "whyItWorks": "Dealers value fleet accounts and need inventory sites with real filters."
+      },
+      {
+        "route": "Freight brokers they haul for",
+        "whoPays": "The freight broker",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The brokerage that tenders you loads needs a carrier sign-up and shipper quote site. Your dispatch manager's referral starts the conversation.\"",
+        "whyItWorks": "Brokers live on carrier capacity and keep good carriers happy."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Enrolment question assistant for the driving school",
+        "whoPays": "The driving school, monthly",
+        "min": 200,
+        "max": 600,
+        "unit": "monthly",
+        "pitchLine": "\"Would-be truck drivers ask about course length, funding and hiring carriers, and the assistant answers from the school's own information.\"",
+        "whyItWorks": "Schools miss enquiries after hours, and better students reach the carrier."
+      },
+      {
+        "route": "Repair write-up assistant for the truck shop",
+        "whoPays": "The repair shop, monthly",
+        "min": 200,
+        "max": 600,
+        "unit": "monthly",
+        "pitchLine": "\"The technician's notes on a tractor repair become a clear write-up and estimate for the fleet manager to approve.\"",
+        "whyItWorks": "Fleets approve faster, and trucks get back on the road sooner."
+      },
+      {
+        "route": "Customs document checker for the broker",
+        "whoPays": "The customs broker, monthly",
+        "min": 400,
+        "max": 1200,
+        "unit": "monthly",
+        "pitchLine": "\"It reads the commercial invoice and packing list and flags missing details before the freight reaches the border, for the broker to confirm.\"",
+        "whyItWorks": "Fewer held loads for the carrier, fewer corrections for the broker."
+      },
+      {
+        "route": "Settlement explainer for owner-operators",
+        "whoPays": "The carrier, as a perk for leased owner-operators",
+        "min": 3000,
+        "max": 8000,
+        "unit": "one-time",
+        "pitchLine": "\"Owner-operators ask why a trucking settlement came out the way it did and get a plain answer from their own statement.\"",
+        "whyItWorks": "Settlement confusion is a top reason owner-operators leave a carrier."
+      },
+      {
+        "route": "Inventory listing writer for the trailer dealer",
+        "whoPays": "The equipment dealer, monthly",
+        "min": 300,
+        "max": 800,
+        "unit": "monthly",
+        "pitchLine": "\"The dealer uploads a used trucking trailer's spec sheet and the assistant drafts the listing with axle, door and deck details for review.\"",
+        "whyItWorks": "Dealers list a lot of units and hate writing listings."
+      },
+      {
+        "route": "Load posting writer for the broker",
+        "whoPays": "The freight broker, monthly",
+        "min": 300,
+        "max": 900,
+        "unit": "monthly",
+        "pitchLine": "\"Shipper emails become clean load postings with lane, equipment, weight and appointment times for the broker's carriers.\"",
+        "whyItWorks": "Brokers post many loads a day, and cleaner postings get trucks faster."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Driver application alerts to recruiters",
+      "kind": "automation",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Every driver application gets an instant text back, and the right terminal's recruiter is alerted within the minute, before the driver applies to another fleet.\"",
+      "whenAndWhatItTakes": "Day 30, once the recruiting hub is live. Needs recruiters by terminal and their phones."
+    },
+    {
+      "name": "Driver pre-qualification application",
+      "kind": "software",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 12000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"A short phone application that asks experience, licence class, endorsements and preferred routes first, then collects the full trucking application from qualified drivers.\"",
+      "whenAndWhatItTakes": "Month 2. Needs hiring criteria by division and the full application they use now."
+    },
+    {
+      "name": "Driver applicant screener",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 300,
+      "monthlyMax": 800,
+      "pitchLine": "\"It chats with truck driver applicants at night, answers home time and pay structure questions from the fleet's own policy, and books the recruiter call.\"",
+      "whenAndWhatItTakes": "Month 2, with the pre-qualification. Needs recruiting policies and approved answers. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Shipment status emails at pickup and delivery",
+      "kind": "automation",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"Shippers get a note when freight is picked up, delayed or delivered, drawn from dispatch, so customer service stops fielding status calls.\"",
+      "whenAndWhatItTakes": "Month 3. Needs status events from the dispatch system and shipper contacts."
+    },
+    {
+      "name": "Lane quote log and win-rate dashboard",
+      "kind": "software",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 14000,
+      "monthlyMin": 200,
+      "monthlyMax": 600,
+      "pitchLine": "\"Every lane rate request and quote in one place, with which lanes the trucking sales team wins and where rates lose.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the rate request form live and recent quotes from sales."
+    },
+    {
+      "name": "Load tender email reader",
+      "kind": "ai",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 14000,
+      "monthlyMin": 400,
+      "monthlyMax": 1200,
+      "pitchLine": "\"Tenders that arrive by email are read for pickup, drop, appointment, weight and freight rate, and staged in dispatch for a planner to accept.\"",
+      "whenAndWhatItTakes": "Month 4. Needs a few hundred past tenders and the dispatch entry steps. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Shipper portal for tracking and documents",
+      "kind": "software",
+      "oneTimeMin": 12000,
+      "oneTimeMax": 35000,
+      "monthlyMin": 500,
+      "monthlyMax": 1500,
+      "pitchLine": "\"Shippers log in to see their freight's status, proof of delivery and invoices, under the logistics company's own name.\"",
+      "whenAndWhatItTakes": "Month 6. Needs read access to dispatch and billing data and an IT or operations contact."
+    },
+    {
+      "name": "Proof of delivery and invoice sender",
+      "kind": "automation",
+      "oneTimeMin": 2500,
+      "oneTimeMax": 6000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"When a driver's delivery paperwork is scanned, the invoice and proof of delivery go to the shipper the same day, so freight bills get paid sooner.\"",
+      "whenAndWhatItTakes": "Month 4. Needs where delivery documents land and the billing export."
+    },
+    {
+      "name": "Dock appointment scheduler",
+      "kind": "software",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 16000,
+      "monthlyMin": 250,
+      "monthlyMax": 700,
+      "pitchLine": "\"Carriers and clients book warehouse dock slots online, and the warehouse sees inbound trucks by door and hour.\"",
+      "whenAndWhatItTakes": "Month 5. Needs dock doors, hours and receiving rules for each warehouse."
+    },
+    {
+      "name": "Driver policy question assistant",
+      "kind": "ai",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 300,
+      "monthlyMax": 800,
+      "pitchLine": "\"Drivers on the road ask about detention pay, breakdown steps or home time requests and get the fleet's own policy, any hour.\"",
+      "whenAndWhatItTakes": "Month 5. Needs the driver handbook and dispatch rules. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Warehouse inventory visibility portal",
+      "kind": "software",
+      "oneTimeMin": 15000,
+      "oneTimeMax": 45000,
+      "monthlyMin": 600,
+      "monthlyMax": 2000,
+      "pitchLine": "\"Warehouse clients see stock on hand, inbound receipts and outbound orders at the logistics provider without emailing customer service.\"",
+      "whenAndWhatItTakes": "Month 8. Needs read access to the warehouse system and a client willing to pilot."
+    },
+    {
+      "name": "Driver onboarding portal",
+      "kind": "software",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 14000,
+      "monthlyMin": 200,
+      "monthlyMax": 600,
+      "pitchLine": "\"New truck drivers sign forms, upload documents and watch orientation videos before day one, so orientation at the terminal is shorter.\"",
+      "whenAndWhatItTakes": "Month 4. Needs orientation materials, forms and who checks them."
+    },
+    {
+      "name": "Where-is-my-freight assistant",
+      "kind": "ai",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 300,
+      "monthlyMax": 900,
+      "pitchLine": "\"Shippers ask by email or chat where a load is and get the dispatch answer with the latest check call, and only exceptions reach customer service.\"",
+      "whenAndWhatItTakes": "Month 6, after status emails. Needs dispatch status data. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Delay explanation drafter",
+      "kind": "ai",
+      "oneTimeMin": 2500,
+      "oneTimeMax": 6000,
+      "monthlyMin": 200,
+      "monthlyMax": 500,
+      "pitchLine": "\"When a freight delivery runs late, it drafts the shipper notice with cause, new time and next steps from the driver's notes, for dispatch to approve.\"",
+      "whenAndWhatItTakes": "Month 6. Needs past delay messages and dispatch notes. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Driver document expiry reminders",
+      "kind": "automation",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Licences, medical cards and permits get reminders before they lapse, sent to the driver and the safety office, so no truck sits for paperwork.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the driver list with each document and its expiry date."
+    },
+    {
+      "name": "Detention and accessorial tracker",
+      "kind": "software",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 14000,
+      "monthlyMin": 200,
+      "monthlyMax": 600,
+      "pitchLine": "\"Detention, lumper and layover charges logged with times and proof per load, so the fleet bills every one and shippers can see why.\"",
+      "whenAndWhatItTakes": "Month 5. Needs arrival and departure times from dispatch and the accessorial rate sheet."
+    },
+    {
+      "name": "Shipper lane bid analyser",
+      "kind": "ai",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 15000,
+      "monthlyMin": 400,
+      "monthlyMax": 1200,
+      "pitchLine": "\"During bid season it reads a shipper's lane spreadsheet and marks which lanes fit the fleet's network and backhauls, for pricing to review.\"",
+      "whenAndWhatItTakes": "Month 7, ahead of the shippers' bid season. Needs lane history and current network. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Service scorecards for shippers",
+      "kind": "software",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 18000,
+      "monthlyMin": 250,
+      "monthlyMax": 700,
+      "pitchLine": "\"Each shipper gets a monthly on-time and claims scorecard from the carrier's own data, ready for their quarterly review.\"",
+      "whenAndWhatItTakes": "Month 9. Needs delivery times and claims data per shipper."
+    },
+    {
+      "name": "Freight claim file drafter",
+      "kind": "ai",
+      "oneTimeMin": 2500,
+      "oneTimeMax": 6000,
+      "monthlyMin": 200,
+      "monthlyMax": 500,
+      "pitchLine": "\"Damage photos, delivery notes and the bill of lading become a draft claim response for the trucking claims desk to check.\"",
+      "whenAndWhatItTakes": "Month 8. Needs past claims and responses. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Safety meeting and incident report drafter",
+      "kind": "ai",
+      "oneTimeMin": 2500,
+      "oneTimeMax": 6000,
+      "monthlyMin": 200,
+      "monthlyMax": 500,
+      "pitchLine": "\"A driver's account and the safety manager's notes become a draft incident report and a fleet safety meeting topic for review.\"",
+      "whenAndWhatItTakes": "Month 7. Needs incident forms and past safety meeting topics. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the driver application and screener for carriers",
+      "whoPays": "Trucking companies, monthly",
+      "min": 299,
+      "max": 999,
+      "unit": "monthly",
+      "pitchLine": "\"I built a phone driver application and screener for one fleet. Every mid-size carrier is fighting for the same drivers with a desktop form.\"",
+      "whyItWorks": "The first fleet paid for the build; recruiting pain is the same across carriers."
+    },
+    {
+      "route": "Trucking association member kit",
+      "whoPays": "The association",
+      "min": 5000,
+      "max": 20000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer member carriers a driver recruiting hub template and shipper rate request as a benefit of membership.\"",
+      "whyItWorks": "Associations need renewal reasons, and one agreement reaches many fleets."
+    },
+    {
+      "route": "Driving school placement network",
+      "whoPays": "A group of driving schools",
+      "min": 8000,
+      "max": 25000,
+      "unit": "one-time",
+      "pitchLine": "\"One page where graduates see which local carriers are hiring new truck drivers, fed from the carriers' own careers hubs.\"",
+      "whyItWorks": "Schools are judged on placement, and carriers want new drivers early."
+    },
+    {
+      "route": "Truck dealer fleet customer programme",
+      "whoPays": "The truck dealer or leasing company",
+      "min": 10000,
+      "max": 30000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer your fleet customers a recruiting site as part of a lease or purchase, built from the template that already seats trucks.\"",
+      "whyItWorks": "Dealers sell more tractors to fleets that can seat them."
+    },
+    {
+      "route": "Carrier acquisition groups",
+      "whoPays": "The holding group, per acquired carrier",
+      "min": 12000,
+      "max": 30000,
+      "unit": "one-time",
+      "pitchLine": "\"As you buy regional carriers, each gets a recruiting hub and lane pages on one frame, keeping its local name drivers know.\"",
+      "whyItWorks": "Roll-ups keep local brands to keep drivers, and each acquisition is a repeat build."
+    },
+    {
+      "route": "White-label logistics template for agencies",
+      "whoPays": "The agency, per site",
+      "min": 4000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency signs trucking clients and builds recruiting pages from scratch. License the driver hub and phone application frame.\"",
+      "whyItWorks": "Agencies own the relationship; the application flow is what they can't build well."
+    },
+    {
+      "route": "Same fleet kit in the next freight market",
+      "whoPays": "New carrier clients in a new region",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I work with one mid-size fleet per freight market. {City}'s seat is filled; the next market's best carrier is still open.\"",
+      "whyItWorks": "Non-competing geography lets you reuse the build, the pitch and the proof."
+    },
+    {
+      "route": "Large shipper carrier onboarding portal",
+      "whoPays": "The shipper's logistics department",
+      "min": 15000,
+      "max": 45000,
+      "unit": "one-time",
+      "pitchLine": "\"Every carrier you use uploads insurance and safety documents once, gets tenders and sends delivery proof through one portal.\"",
+      "whyItWorks": "You built the carrier side already; the shipper sees the other side of the same paperwork."
+    },
+    {
+      "route": "Logistics park and free zone tenant directory",
+      "whoPays": "The park owner or free zone authority",
+      "min": 10000,
+      "max": 30000,
+      "unit": "one-time",
+      "pitchLine": "\"A directory of every warehouse, carrier and forwarder in the park, so shippers see the logistics supply chain in one place.\"",
+      "whyItWorks": "Parks lease space on the strength of their logistics tenants."
+    },
+    {
+      "route": "Dispatch system resellers",
+      "whoPays": "The reseller, per referred carrier",
+      "min": 5000,
+      "max": 20000,
+      "unit": "one-time",
+      "pitchLine": "\"Your carrier clients ask for shipper portals that read from the dispatch system you install. I build the customer-facing side.\"",
+      "whyItWorks": "Resellers get asked for portals they don't build, and the trucking client is proof you can."
+    },
+    {
+      "route": "Fleet insurance agencies' client safety pages",
+      "whoPays": "The insurance agency",
+      "min": 5000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer your trucking clients a safety programme page and driver document tracking that make them easier to insure.\"",
+      "whyItWorks": "Agencies keep fleet clients by helping them look safer to underwriters."
+    },
+    {
+      "route": "Rescue stalled portal integrations",
+      "whoPays": "The fleet with a half-built portal",
+      "min": 8000,
+      "max": 30000,
+      "unit": "one-time",
+      "pitchLine": "\"Half-built shipper portals and dispatch integrations are common in logistics. I finish them, because I've already connected one fleet's dispatch data.\"",
+      "whyItWorks": "Stranded clients already decided to buy and need someone who has done the integration."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Fleet site build plus care, one contract",
+      "min": 12000,
+      "max": 30000,
+      "unit": "one-time",
+      "trigger": "The owner and recruiting manager approve the demo and scope.",
+      "line": "\"The site and the care plan sit on one contract, so a new terminal, lane or opening is an email to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Driver application alerts to recruiters",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "trigger": "The first applications arrive through the new careers hub.",
+      "line": "\"Drivers are applying from their phones. An instant text and a recruiter alert keeps them from applying to the next fleet.\""
+    },
+    {
+      "rung": 3,
+      "day": 60,
+      "offer": "Driver applicant screener",
+      "min": 3000,
+      "max": 8000,
+      "unit": "one-time",
+      "trigger": "Recruiters say they spend evenings answering the same driver questions.",
+      "line": "\"Your recruiters answer the same home time questions every night. The screener answers truck drivers from your policy and books the call.\""
+    },
+    {
+      "rung": 4,
+      "day": 90,
+      "offer": "Shipment status emails at pickup and delivery",
+      "min": 2000,
+      "max": 5000,
+      "unit": "one-time",
+      "trigger": "Rate requests turn into new shippers who call dispatch for status.",
+      "line": "\"Your new shippers are calling for status. Pickup and delivery notes from dispatch end most of those calls.\""
+    },
+    {
+      "rung": 5,
+      "day": 150,
+      "offer": "Shipper portal for tracking and documents",
+      "min": 12000,
+      "max": 35000,
+      "unit": "one-time",
+      "trigger": "A large shipper asks for a login to see loads and paperwork.",
+      "line": "\"That shipper wants a login. A portal under your name shows freight, proof of delivery and invoices in one place.\""
+    },
+    {
+      "rung": 6,
+      "day": 240,
+      "offer": "Dock appointment scheduler",
+      "min": 6000,
+      "max": 16000,
+      "unit": "one-time",
+      "trigger": "The warehouse mentions trucks stacking up at the gate.",
+      "line": "\"Trucks waiting at the warehouse gate is a scheduling problem. Online dock slots spread them across the day.\""
+    },
+    {
+      "rung": 7,
+      "day": 300,
+      "offer": "Shipper lane bid analyser",
+      "min": 5000,
+      "max": 15000,
+      "unit": "one-time",
+      "trigger": "Shippers' bid season is two months away and sales dreads the lane spreadsheets.",
+      "line": "\"Bid season is coming. The analyser marks which freight lanes fit your network before pricing starts.\""
+    },
+    {
+      "rung": 8,
+      "day": 365,
+      "offer": "Warehouse inventory visibility portal",
+      "min": 15000,
+      "max": 45000,
+      "unit": "one-time",
+      "trigger": "A warehouse client asks for live stock visibility, or a prospect asks if you have it.",
+      "line": "\"Warehouse clients want to see their stock without emailing. A visibility portal is what larger shippers expect from a logistics provider.\""
+    }
+  ]
+}

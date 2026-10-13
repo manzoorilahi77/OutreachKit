@@ -1,0 +1,869 @@
+{
+  "schemaVersion": 1,
+  "category": "IV therapy & wellness clinics",
+  "slug": "iv-therapy-wellness-clinics",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · expansion batch (healthcare + mid-size)",
+    "generatedAt": "2026-10-13",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Leaned on the board note (Instagram-first, a drip menu and no way to book) and the med spa kit for pricing. Drip names, ingredients and benefits are never stated; the clinic's medical director supplies them. Mobile dispatch and supply-lot tracker prices are the least certain."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Drip menu: what's in each bag",
+      "contains": "Each IV drip by the clinic's own name, the ingredients and amounts as the medical director supplies them, infusion time, price, add-on shots, and a plain note that suitability is decided at screening",
+      "why": "People compare drips by what's in the bag and how long they sit in the chair. A menu that shows both turns a scroll into a booking."
+    },
+    {
+      "section": "Health screening and who places your IV",
+      "contains": "The health questionnaire every client completes, who reviews it, that a licensed nurse places every IV [credentials as supplied], the medical director [name and licence as supplied], and what happens if a drip isn't suitable",
+      "why": "First-timers want to know a qualified person is in charge before a needle goes in. Showing the screening step is the trust signal."
+    },
+    {
+      "section": "Mobile IV and group visits",
+      "contains": "Service zones the nurse travels to, travel fees, group minimums, what the nurse brings, setup time, and how hotels, homes and event venues book a visit",
+      "why": "Mobile IV buyers decide on logistics: will the nurse come to them, how long, and what it costs for the group."
+    },
+    {
+      "section": "IV memberships",
+      "contains": "Monthly membership levels, drips or add-ons included, member pricing on extras, how to pause or cancel, and how unused visits are handled",
+      "why": "Regular IV clients compare the monthly cost. A clear membership page turns repeat visitors into a predictable number."
+    },
+    {
+      "section": "Your first drip at the lounge",
+      "contains": "How long the visit takes, eating and drinking beforehand as the clinic advises, the lounge chairs, phone charging and wifi, bringing a friend, and what the nurse checks during the infusion",
+      "why": "Nervous first-timers book once they can picture the hour in the chair and know someone is watching the line."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C45",
+      "siteType": "menu-and-order",
+      "name": "Drip Board",
+      "heroLayout": "menu-board",
+      "mood": [
+        "bright",
+        "direct",
+        "upbeat"
+      ],
+      "bestFor": "New IV clinics whose drip menu lives in a pinned post and who need a priced menu with a Book button on each drip",
+      "pairsWithTier": "starter",
+      "headlineSample": "IV drips in {City}, priced and bookable",
+      "whyItFits": "Ultramarine Poster's bold blue and geometric display type read like a lit menu board, and the menu layout puts every drip, its time in the chair and its price on one screen."
+    },
+    {
+      "id": "b",
+      "themeId": "C6",
+      "siteType": "booking-first",
+      "name": "Clinical Lounge",
+      "heroLayout": "split-photo",
+      "mood": [
+        "clean",
+        "clinical",
+        "reassuring"
+      ],
+      "bestFor": "IV therapy clinics with a lounge, nurse-led screening, memberships and online booking",
+      "pairsWithTier": "standard",
+      "headlineSample": "Nurse-led IV therapy in {City}, booked online",
+      "whyItFits": "The family combo, Sage Spa, fails CTA contrast and reads as a spa, not a clinic. Cobalt Wire's crisp blue says medical oversight, and its Book button passes AA."
+    },
+    {
+      "id": "c",
+      "themeId": "C35",
+      "siteType": "premium-brand",
+      "name": "Members' Lounge",
+      "heroLayout": "full-bleed-photo",
+      "mood": [
+        "polished",
+        "boutique",
+        "calm"
+      ],
+      "bestFor": "Established wellness clinics selling memberships, mobile visits to hotels and private events",
+      "pairsWithTier": "premium",
+      "headlineSample": "IV therapy in {City}, in the lounge or at your door",
+      "whyItFits": "Rosewood's deep rose and Didone display give the boutique feel members pay for, and a full-bleed lounge hero sells the hour in the chair."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "Link in bio only",
+      "line": "Your IV clinic's profile has a great feed and no website, so someone in {City} searching for IV therapy tonight finds your posts but no drip menu, prices or booking.",
+      "hook": "Check the link in their bio and their Maps listing. If neither goes to a real site, the angle holds. Screenshot it for when they reply.",
+      "linkLine": "Here's your IV clinic with a real home: {demo-link}"
+    },
+    {
+      "angle": "Menu in a pinned post",
+      "line": "Your drip menu lives in a pinned post, so nobody can tap a drip, read what's in the bag or book a chair from it. That's the exact moment people decide.",
+      "hook": "Find the pinned menu post. Note how many drips it lists and whether prices are shown.",
+      "linkLine": "Your IV drip menu as a page people can book from: {demo-link}"
+    },
+    {
+      "angle": "DM to book",
+      "line": "Every IV post ends with 'DM to book'. Someone who decides on a drip at eleven at night wants to pick a time, not wait for a reply in the morning.",
+      "hook": "Count recent posts that end with 'DM to book' or 'message us'. Check whether any online booking exists.",
+      "linkLine": "IV drips booked without a DM thread: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "I opened your IV clinic's site on my phone and the drip prices sat under a menu that wouldn't close. Almost everyone booking IV therapy is on a phone.",
+      "hook": "Only if they have a site. Open it on a phone and note where the menu, prices or booking break.",
+      "linkLine": "Your IV menu and booking, built for a phone: {demo-link}"
+    },
+    {
+      "angle": "What's in the bag",
+      "line": "Your drips have names, but nothing lists what's in each bag or how long the infusion takes. People choosing between two IV drips stall right there.",
+      "hook": "Read their menu. If drips have names and prices but no ingredients or times, lead with this.",
+      "linkLine": "An IV drip menu that shows what's in each bag: {demo-link}"
+    },
+    {
+      "angle": "Who places the IV",
+      "line": "Nothing online says a nurse places every IV or that there's a health screening first. For someone new to IV therapy, that's the reassurance they look for before a needle.",
+      "hook": "Look for nurse credentials, a medical director or screening in their bio or highlights. Never state credentials they haven't published.",
+      "linkLine": "Screening and your nursing team, stated plainly: {demo-link}"
+    },
+    {
+      "angle": "Mobile IV zones",
+      "line": "You offer mobile IV, but nowhere says which parts of {City} the nurse travels to, the group minimum or the travel fee. People ask, wait, and book someone else.",
+      "hook": "Look for 'mobile', 'we come to you' or hotel visits in their posts. Check whether zones or fees are stated.",
+      "linkLine": "A mobile IV page with zones, group sizes and fees: {demo-link}"
+    },
+    {
+      "angle": "Regulars with no membership",
+      "line": "The same faces show up in your IV lounge posts every month, but there's no membership anyone can join online. Those regulars are already members in all but name.",
+      "hook": "Look for repeat clients tagged in posts or reviews saying 'my monthly drip'. Check for a membership offer.",
+      "linkLine": "An IV membership page people can join tonight: {demo-link}"
+    },
+    {
+      "angle": "Group and event weekends",
+      "line": "Bridal parties and event groups ask about booking IV hydration together, and right now that's a long comment thread. A group page would hold the chairs or send the nurse.",
+      "hook": "Look for comments or posts about bridal parties, birthdays or event weekends. Note one.",
+      "linkLine": "Group IV bookings for event weekends: {demo-link}"
+    },
+    {
+      "angle": "Reviews stuck on Google",
+      "line": "One of your reviews says the nurse found the vein first time and talked them through the whole drip. That's what a nervous first-timer at an IV clinic wants to read.",
+      "hook": "Read their Google reviews and copy one phrase about the nurse, comfort or the lounge. Quote it if they reply.",
+      "linkLine": "Your IV reviews beside the Book button: {demo-link}"
+    },
+    {
+      "angle": "A lounge worth seeing",
+      "line": "Your lounge chairs and drip station look calm and spotless in your posts. A first-time IV client wants to see that room on a booking page before they walk in.",
+      "hook": "Find a post that shows the lounge, the chairs or the drip station. Describe it exactly if they reply.",
+      "linkLine": "Your IV lounge shown where people decide: {demo-link}"
+    },
+    {
+      "angle": "Hiring an IV nurse",
+      "line": "Saw you're hiring an IV nurse. Nurses check how an IV therapy clinic presents itself, and whether its medical oversight is clear, before they apply.",
+      "hook": "Only if they posted a hiring notice for a nurse or paramedic. Note the date.",
+      "linkLine": "An IV clinic page with a nursing careers section: {demo-link}"
+    },
+    {
+      "angle": "Prices in DM",
+      "line": "Your IV posts say 'prices in DM'. People comparing IV therapy clinics on a phone tend to book where the drip price is right there on the menu.",
+      "hook": "Look for 'DM for pricing' in posts or highlights. Check whether any price is public.",
+      "linkLine": "Your drip prices, shown plainly: {demo-link}"
+    },
+    {
+      "angle": "One gym partnership",
+      "line": "A lot of your IV posts tag one gym partner. That's a great source of clients, and a fragile one if the gym changes its member perks.",
+      "hook": "Check tagged partners in their posts. Only use this if one partner shows up again and again.",
+      "linkLine": "Where a new IV client would find you without the gym: {demo-link}"
+    },
+    {
+      "angle": "A specific recent post",
+      "line": "That {specific recent job} post did a better job of showing an hour in your IV lounge than the drip menu does. New clients should land on it before they book a chair.",
+      "hook": "Pick their newest post about a drip, the lounge, the screening or a mobile visit and name it exactly.",
+      "linkLine": "That IV explanation, on its own page: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, your post about {specific recent job} made an IV visit look calm and simple.\n\nI looked for a site for {Business Name} and found the feed and a 'DM to book'. I put together a sample IV page with a drip menu showing what's in each bag, the screening step, memberships and a Book button, with marked placeholders where your photos would go.\n\nWould you like me to send it?",
+    "dm2": "{Owner}, following up in case this got buried under booking DMs. Here's the sample IV therapy site for {Business Name}: {demo-link}\n\nEvery drip is priced and bookable, the nurse-led screening is explained for first-timers, and memberships have their own page. If it's not for you, say so and I won't message again.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for IV therapy and wellness clinics here in {City}. I sent you a message a few days ago, did it come through?\"\n\nIF NO:\n\"No problem, your inbox must be full of booking requests. Short version: I built a sample site for {Business Name} with a priced drip menu, a screening page and online booking, with marked placeholders where your photos would go. Can I text you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range}, then {Care Range} a month for hosting and menu changes. For a clinic like yours I'd normally quote about {Build Price}.\"\n\"Could I have ten minutes this week while the lounge is quiet? Tell me when and I'll call then.\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. We start the day it clears.\"",
+    "objections": [
+      {
+        "objection": "Instagram is where all my clients come from.",
+        "handler": "\"Keep posting. The site is where those followers go to read what's in a drip and book it without a DM. Your bio link points there, and you stop answering 'how much' all night.\""
+      },
+      {
+        "objection": "We can't say much because of medical rules.",
+        "handler": "\"Right, and the site is written for that. It shows what's in each bag, the screening and who places the IV, with no promises about results. Your medical director approves the wording before it goes live.\""
+      },
+      {
+        "objection": "We already use a booking app.",
+        "handler": "\"Keep it. The site sits in front of it with the menu, the screening explanation and memberships, then sends people into your booking app ready to choose a time.\""
+      },
+      {
+        "objection": "We're mostly mobile, we don't have a lounge.",
+        "handler": "\"Then the site is built around zones, group sizes and travel fees, with a request form that collects the address and headcount. Mobile IV needs that more than a lounge does.\""
+      },
+      {
+        "objection": "It's a slow month.",
+        "handler": "\"That's the time to build. Event season and the holidays are when group IV bookings pile up, and the deposit to start is small.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}, because it's a drip menu, screening, memberships and booking. A few new members cover it.\""
+      }
+    ],
+    "email": {
+      "subject": "IV therapy site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for IV therapy and wellness clinics around {City}. {Business Name} has a strong feed, but nowhere a new client can see what's in each drip, how screening works or book a chair without sending a message.\n\nI built a sample first rather than ask for your time: a priced drip menu, a screening and nursing page, mobile IV zones, memberships and online booking, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIt makes no health claims, and your medical director signs off the wording. If you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and menu changes. If not, it comes down at the end of the month.\n\nWorth ten minutes this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build websites for IV therapy clinics in {City} and made a sample one for {Business Name} with your drip menu bookable. I'll text the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm taking the {Business Name} IV demo down on Friday to free up the space.\n\nShould I keep it up for you? A one-word reply is fine.",
+    "nurture": "Hi {Owner}, event season is coming, and group IV bookings for bridal parties and big weekends start early. Thought of you.\n\nThe sample site is still here with the drip menu and group page ready, nothing's changed on price. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to a handful of new members, not to the price of a single drip. Memberships are where an IV clinic's month is made.",
+      "Price the drip menu by drip count. Each drip needs its ingredients, time and price checked against the medical director's list.",
+      "Mobile IV pages are priced by zones and group rules, not by towns named.",
+      "Screening and intake privacy is a priced line. Health questionnaires need privacy-safe hosting and setup time.",
+      "Every word about a drip is approved by the medical director. Build that review round into the timeline and the price.",
+      "Keep monthly add-ons below the price of one drip, or they're the first cut in a slow month."
+    ],
+    "lineItems": [
+      {
+        "item": "Drip menu entry (each drip beyond the first set)",
+        "min": 60,
+        "max": 150,
+        "unit": "per-page",
+        "description": "Max when the entry has ingredients, add-on shots, infusion time and a medical-director review round.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "IV membership page and billing setup",
+        "min": 400,
+        "max": 1000,
+        "unit": "one-time",
+        "description": "Max with several membership levels, member-only pricing on add-ons, pause rules and recurring billing.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Mobile IV zones and travel fee setup",
+        "min": 250,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max when fees vary by zone and group size and the request form checks the address.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Group and event IV request page",
+        "min": 300,
+        "max": 700,
+        "unit": "per-page",
+        "description": "Max with headcount, venue type, date holds and a deposit request.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Online gift cards for IV visits",
+        "min": 200,
+        "max": 500,
+        "unit": "one-time",
+        "description": "Max with emailed and printable cards, drip-based amounts and a holiday banner.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Second-language version",
+        "min": 300,
+        "max": 900,
+        "unit": "one-time",
+        "description": "Max when the menu, screening page, memberships and booking emails are all translated, including right-to-left layouts.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Nurse and medical director profile pages",
+        "min": 100,
+        "max": 250,
+        "unit": "per-page",
+        "description": "Max with credentials as supplied, a short first-person note and a book-with-this-nurse link.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Consent and client-photo policy pages for the IV clinic",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A privacy notice, a treatment consent page and a written policy for lounge photos and testimonials, so no IV client appears online without written consent.\"",
+      "when": "At build. Needs their current consent forms and the medical director's sign-off."
+    },
+    {
+      "name": "Accessibility review of the IV clinic site",
+      "min": 300,
+      "max": 900,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A check of the IV menu and booking for screen readers, contrast, text size and keyboard use, with a fix list, so every client can book a drip.\"",
+      "when": "Month 2, or at build for clinics in large medical buildings."
+    },
+    {
+      "name": "Advertising-approval-ready drip content pack",
+      "min": 400,
+      "max": 1200,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Every drip description and ad line rewritten so it names ingredients and infusion time but promises nothing, formatted for the medical director to sign and for submission where the regulator requires approval.\"",
+      "when": "Before any paid ads, or in markets where health advertising needs approval."
+    },
+    {
+      "name": "Lounge and drip station content session",
+      "min": 300,
+      "max": 700,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"One morning photographing the IV lounge, the chairs, the drip station and the nurse at work with a consenting volunteer, enough for the site and a season of posts.\"",
+      "when": "Month 2, before the lounge opens for the day."
+    },
+    {
+      "name": "Google profile upkeep for the IV clinic",
+      "min": 100,
+      "max": 250,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Weekly posts on the clinic's Google profile with this week's IV openings, a drip explained and mobile visit days, so searchers see an active clinic.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Review requests the evening after a drip",
+      "min": 39,
+      "max": 99,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"The evening after an IV visit, the client gets a short note asking for a review of the nurse and the lounge, with a reminder not to share health details.\"",
+      "when": "Day 30. The easiest second sale."
+    },
+    {
+      "name": "Event-season group IV campaign",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A spring campaign aimed at bridal parties and event planners, pointing to the group IV page and the mobile zones.\"",
+      "when": "Pitch in late winter, run through the wedding and event months."
+    },
+    {
+      "name": "Hotel concierge and venue partner kit",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A one-page leave-behind and an email for hotel concierges and venue managers, explaining how guests book a mobile IV nurse to their room.\"",
+      "when": "Month 3, if they already do mobile visits."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Gyms and studios that send clients for IV visits",
+        "whoPays": "The gym, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The gym that sends members to your IV lounge after race weekends has a dated class schedule site. I'd rebuild it with your clinic listed as a partner.\"",
+        "whyItWorks": "Gym owners trust the clinic their members already like. The partner listing gives them a reason to say yes."
+      },
+      {
+        "route": "Wedding and event planners who book group IV",
+        "whoPays": "The planner, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The planner who books your mobile IV nurse for bridal suites shows their weddings only on social. A portfolio site with an enquiry form would win them more bookings.\"",
+        "whyItWorks": "Planners run on vendor referrals, and the IV clinic is a vendor they already recommend."
+      },
+      {
+        "route": "The medical director's own practice",
+        "whoPays": "The physician's practice",
+        "min": 2500,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"The physician who oversees your IV clinic has a practice site from years ago. They've seen your new one, which makes the introduction easy.\"",
+        "whyItWorks": "Medical directors see the clinic's site because they approve its wording. Seeing the work is the pitch."
+      },
+      {
+        "route": "Boutique hotels without wellness amenities",
+        "whoPays": "The hotel",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"Guests ask the front desk about in-room IV visits and staff call around. A guest wellness page listing your mobile IV nurse turns that into a service the hotel offers.\"",
+        "whyItWorks": "Hotels want the amenity without running it. The IV clinic becomes the first partner on the page."
+      },
+      {
+        "route": "Med spas sharing the building",
+        "whoPays": "The med spa, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The med spa next door to your IV lounge shares half your clients. I'd build their treatment pages in the same clean style, with your drips linked.\"",
+        "whyItWorks": "Same clients, same building, and the clinic owner can introduce you in the hallway."
+      },
+      {
+        "route": "The pharmacy that supplies the vitamins and bags",
+        "whoPays": "The pharmacy",
+        "min": 2000,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"The pharmacy that fills your IV clinic's orders takes them by phone and email. A clinic ordering portal would serve every clinic they supply.\"",
+        "whyItWorks": "The pharmacy values the clinic as a customer, and the clinic's own ordering pain makes the case."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Recovery visit prompts for gym members",
+        "whoPays": "The gym, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"After a member logs a race or a big training block, the gym's app suggests a visit to its partner IV lounge and books it, with no health claims attached.\"",
+        "whyItWorks": "Gyms want to look like they care about recovery, and the IV partner is already in place."
+      },
+      {
+        "route": "Group quote builder for event planners",
+        "whoPays": "The event planner",
+        "min": 1000,
+        "max": 2500,
+        "unit": "one-time",
+        "pitchLine": "\"A planner enters headcount, venue and date, and gets a draft quote for a mobile IV visit with nurses needed and travel fee, ready to send to the couple.\"",
+        "whyItWorks": "Planners resell vendor services and hate building quotes by hand. The IV clinic supplies the rates."
+      },
+      {
+        "route": "Guest request assistant for hotel concierges",
+        "whoPays": "The hotel, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Guests messaging the concierge about an in-room IV nurse get availability and the booking form from approved text, and the hotel never answers anything medical.\"",
+        "whyItWorks": "Concierges want fewer phone calls and zero clinical risk."
+      },
+      {
+        "route": "Shift-matching assistant for the nurse staffing agency",
+        "whoPays": "The staffing agency, monthly",
+        "min": 200,
+        "max": 500,
+        "unit": "monthly",
+        "pitchLine": "\"The agency that sends relief nurses to IV clinics matches open shifts to available IV-certified nurses and drafts the offer text in seconds.\"",
+        "whyItWorks": "Staffing agencies live on speed to fill. The clinic that uses them makes the introduction."
+      },
+      {
+        "route": "Reorder assistant for the supplying pharmacy",
+        "whoPays": "The pharmacy, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Clinics ask the pharmacy whether an IV bag size or vitamin is in stock and when it ships, and get answers from the pharmacy's own list day or night.\"",
+        "whyItWorks": "Pharmacies field the same stock questions daily, and answers come only from approved data."
+      },
+      {
+        "route": "Menu and booking assistant for the neighbouring med spa",
+        "whoPays": "The med spa, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"Med spa clients asking about prices and openings get answers from the treatment menu, and anyone asking about IV therapy is pointed to your clinic next door.\"",
+        "whyItWorks": "The med spa gets fewer late messages, and the IV clinic gets referrals from the same building."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Privacy-safe screening form and hosting setup",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"The IV health questionnaire moves online on privacy-safe hosting and reaches the nurse before the client sits down, not in an ordinary inbox.\"",
+      "whenAndWhatItTakes": "At build. Needs their current screening questions, the medical director's approval and the privacy rules where they practise."
+    },
+    {
+      "name": "IV membership billing with visit tracking",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 39,
+      "monthlyMax": 99,
+      "pitchLine": "\"Members pay monthly, their included drips and member pricing apply at booking, and the clinic sees who's due without a spreadsheet.\"",
+      "whenAndWhatItTakes": "Month 2. Needs membership rules and a payment account."
+    },
+    {
+      "name": "Rebooking reminders for regular drip clients",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 700,
+      "monthlyMin": 39,
+      "monthlyMax": 99,
+      "pitchLine": "\"A client who comes in for an IV drip every month hears from the clinic at the right time, with lounge openings and mobile visit days.\"",
+      "whenAndWhatItTakes": "Day 30. Needs visit history from the booking system and approved reminder wording."
+    },
+    {
+      "name": "DM answerer for the drip menu and openings",
+      "kind": "ai",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1200,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"'What's in that drip' and 'any chairs Saturday' get answered from the approved IV menu and calendar, and every health question goes to the nurse.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the menu as approved by the medical director, booking access and a hand-off rule for anything medical. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Group and event booking with deposits",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"A bridal party books a mobile IV visit for the whole group, pays a deposit, and each guest completes their own screening before the nurse arrives.\"",
+      "whenAndWhatItTakes": "Month 3, if they do mobile or event visits. Needs group rules, deposit amounts and the screening form."
+    },
+    {
+      "name": "Mobile IV nurse dispatch board",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Every mobile IV visit on one board: which nurse, which address, the drive between visits and what each bag kit needs.\"",
+      "whenAndWhatItTakes": "Month 4, once they run more than one mobile nurse. Needs zones, nurse schedules and visit lengths."
+    },
+    {
+      "name": "Next-day check-in text after a drip",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 500,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"The day after an IV visit, the client gets a short note in the nurse's approved wording with the clinic number if they have any questions.\"",
+      "whenAndWhatItTakes": "Day 14. Needs the nurse's approved text. Sends only approved wording, never advice."
+    },
+    {
+      "name": "Review reply drafts for the IV clinic",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 700,
+      "monthlyMin": 39,
+      "monthlyMax": 99,
+      "pitchLine": "\"Each IV clinic review gets a warm reply drafted in your voice that never confirms anyone's treatment or repeats health details.\"",
+      "whenAndWhatItTakes": "Month 2, alongside review requests. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Online consent signing before each drip",
+      "kind": "software",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 19,
+      "monthlyMax": 59,
+      "pitchLine": "\"Clients sign the IV treatment consent on their phone before arriving, and the nurse sees it on file at the chair.\"",
+      "whenAndWhatItTakes": "Month 2, after the screening form is live. Needs the consent wording approved by the medical director."
+    },
+    {
+      "name": "Phone answering while the nurse is at the chair",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 149,
+      "monthlyMax": 299,
+      "pitchLine": "\"The nurse can't leave a client mid-infusion. The IV clinic's phone still gets answered, the menu explained and the next chair booked.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the menu, policies and booking access. Medical questions become a nurse callback. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Same-day chair fill texts",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 700,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"An afternoon IV chair opens up, and clients on the waitlist get a text with the time before lunch.\"",
+      "whenAndWhatItTakes": "Month 3. Needs booking access and a waitlist clients joined on purpose."
+    },
+    {
+      "name": "Caption drafts with claim-wording flags",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 59,
+      "monthlyMax": 149,
+      "pitchLine": "\"Post the lounge or a new drip and a caption is ready in the clinic's voice, with any wording that promises a benefit flagged for the medical director.\"",
+      "whenAndWhatItTakes": "Month 2. Needs past captions and the words the medical director won't allow. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "IV supply lot and expiry tracker",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Every bag, vial and catheter box has a count, a lot number and an expiry date, so the clinic reorders before a popular drip runs short.\"",
+      "whenAndWhatItTakes": "Month 5. Needs a stock count, supplier list and how they record lots today."
+    },
+    {
+      "name": "Online gift cards for IV drips",
+      "kind": "software",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Gift cards for a drip or a membership month sell online with a code and a balance, redeemed at the IV lounge in seconds.\"",
+      "whenAndWhatItTakes": "Month 2, before the holidays. Needs their gift card rules."
+    },
+    {
+      "name": "Membership drop-off flags",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 59,
+      "monthlyMax": 149,
+      "pitchLine": "\"IV members who've skipped their included drip for a while are flagged with a suggested personal note from the clinic, before they cancel.\"",
+      "whenAndWhatItTakes": "Month 6, once membership billing has data. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Bilingual client message drafts",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Booking confirmations, screening reminders and mobile IV arrival texts drafted in the client's language, checked before they go out.\"",
+      "whenAndWhatItTakes": "Month 4, for clinics with clients who prefer another language. Needs approved template wording in both. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Nurse and chair schedule",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 49,
+      "monthlyMax": 99,
+      "pitchLine": "\"Which nurse covers which IV chairs, which shifts go mobile, and where the gaps are this week, on one screen.\"",
+      "whenAndWhatItTakes": "Month 5, for clinics with several nurses. Needs shift patterns and chair count."
+    },
+    {
+      "name": "Screening summary for the nurse",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"Before the client arrives, the nurse sees the IV screening answers laid out with anything the medical director flagged highlighted, on privacy-safe hosting.\"",
+      "whenAndWhatItTakes": "Month 6, after the screening form is live. The nurse and medical director decide; the summary only arranges the answers. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Event reminder sequence for group bookings",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 700,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Each guest in a group IV booking gets reminders to finish screening, the arrival time and the address before the nurse comes.\"",
+      "whenAndWhatItTakes": "Month 4, after group booking is live. Needs the event wording."
+    },
+    {
+      "name": "Front-desk policy search for the lounge",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 59,
+      "monthlyMax": 149,
+      "pitchLine": "\"New front-desk staff search the IV clinic's own policies on memberships, gift cards, lateness and mobile fees instead of pulling a nurse off a chair.\"",
+      "whenAndWhatItTakes": "Month 6, for clinics with front-desk staff. Needs written policies, each answer approved. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the drip menu and membership setup for IV clinics",
+      "whoPays": "IV clinics, monthly",
+      "min": 29,
+      "max": 99,
+      "unit": "monthly",
+      "pitchLine": "\"I built a bookable drip menu and IV memberships for one clinic. Every new IV lounge runs on a pinned post and DMs the same way.\"",
+      "whyItWorks": "IV clinics open fast and look alike in their first year. The first clinic's setup is the demo."
+    },
+    {
+      "route": "IV nurse training courses",
+      "whoPays": "The training provider, annually",
+      "min": 1500,
+      "max": 6000,
+      "unit": "per-year",
+      "pitchLine": "\"Nurses who finish your IV course often start a mobile IV business. A launch kit with a drip menu page and booking gives each graduate a head start.\"",
+      "whyItWorks": "Course providers sell outcomes for their students, and a launch kit is a reason to choose their course."
+    },
+    {
+      "route": "Medical directors overseeing several IV clinics",
+      "whoPays": "The medical director's group",
+      "min": 5000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"You oversee several IV clinics, each with its own wording to approve. One template with approved menu language and screening pages saves you a review every week.\"",
+      "whyItWorks": "Medical directors carry the wording risk for every clinic they oversee. Consistency is worth paying for."
+    },
+    {
+      "route": "IV supply distributors' clinic programme",
+      "whoPays": "The distributor, annually",
+      "min": 3000,
+      "max": 10000,
+      "unit": "per-year",
+      "pitchLine": "\"Your reps sell bags, tubing and vitamins to every IV lounge in the region. A bookable drip menu site, bundled with their account, keeps those lounges ordering from you.\"",
+      "whyItWorks": "Distributors already sell to every clinic, and a site programme gives reps something to offer besides price."
+    },
+    {
+      "route": "IV and hydration franchise locations",
+      "whoPays": "Each franchisee, per location",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "pitchLine": "\"Head office's site gives each IV franchise location one thin page. I build local pages inside brand rules with that location's nurses, mobile zones and event bookings.\"",
+      "whyItWorks": "Franchisees want local visibility within brand rules, and one approved template sells to every location."
+    },
+    {
+      "route": "White-label IV clinic template for agencies",
+      "whoPays": "The agency, per site",
+      "min": 500,
+      "max": 1200,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency picks up IV clinic clients and writes drip pages from scratch. License my template with claim-free menu wording and screening pages built in.\"",
+      "whyItWorks": "Agencies own the client relationship and want the risky wording already solved."
+    },
+    {
+      "route": "Liability insurers for IV clinics",
+      "whoPays": "The insurer's member services team",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"IV clinics you insure keep asking whether a drip description is safe to publish. A pre-written menu, screening and consent template answers that for every policyholder.\"",
+      "whyItWorks": "Insurers want fewer complaints, and careful public wording helps."
+    },
+    {
+      "route": "Hotel groups adding in-room wellness",
+      "whoPays": "The hotel group, annually",
+      "min": 3000,
+      "max": 10000,
+      "unit": "per-year",
+      "pitchLine": "\"Every hotel in your group gets asked about in-room IV visits. One guest wellness booking page with vetted local IV partners works across all your properties.\"",
+      "whyItWorks": "Hotel groups buy once and roll out, and a working partner page at one property is the proof."
+    },
+    {
+      "route": "Corporate wellness and event providers",
+      "whoPays": "The provider, annually",
+      "min": 3000,
+      "max": 10000,
+      "unit": "per-year",
+      "pitchLine": "\"You add IV hydration stations to employer events and book nurses by text. A booking network for IV partners makes every event run itself.\"",
+      "whyItWorks": "Providers resell nurse time at scale, and reliable staffing is their margin."
+    },
+    {
+      "route": "Sports clubs and race organisers",
+      "whoPays": "The club or organiser",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Your race weekend has a partner IV tent and a sign-up sheet. A booking page with time slots and screening fills it before race day.\"",
+      "whyItWorks": "Organisers want partner perks that run themselves, and the IV clinic already wants to be there."
+    },
+    {
+      "route": "The same IV build in the next metro",
+      "whoPays": "New IV clinics in a new metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"IV lounges in different metros never compete for the same chairs, so the bookable drip menu and screening pages move straight to the next city.\"",
+      "whyItWorks": "Non-competing geography lets you reuse the template, the pitch and the finished proof."
+    },
+    {
+      "route": "Rescue half-built IV booking setups",
+      "whoPays": "The stuck clinic owner",
+      "min": 300,
+      "max": 1200,
+      "unit": "one-time",
+      "pitchLine": "\"Plenty of IV lounges have a booking app switched on with no memberships, no screening step and no group bookings. Finishing that is a quick, well-defined job.\"",
+      "whyItWorks": "Stuck owners have already decided to buy. They want someone who has done it for a clinic like theirs."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "IV clinic site build plus care plan, one contract",
+      "min": 2000,
+      "max": 3500,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The IV clinic site and the care plan go on one contract, so a new drip on the menu is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 0,
+      "offer": "Privacy-safe screening form and hosting setup",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "trigger": "They screen clients on paper or by message before a drip.",
+      "line": "\"Your IV screening asks about health history. It should arrive on privacy-safe hosting before the client sits down.\""
+    },
+    {
+      "rung": 3,
+      "day": 30,
+      "offer": "Review requests and rebooking reminders",
+      "min": 39,
+      "max": 99,
+      "unit": "monthly",
+      "trigger": "The site has been live a month and regular drip clients are drifting past their usual gap.",
+      "line": "\"Your regular IV clients come back on a rhythm. Let's remind them on time and ask for a review while the visit is fresh.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "IV membership billing with visit tracking",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "trigger": "Several clients book a drip every month and pay one at a time.",
+      "line": "\"Your monthly IV regulars already behave like members. Let's make it official and automatic.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "DM answerer for the drip menu and openings",
+      "min": 500,
+      "max": 1200,
+      "unit": "one-time",
+      "trigger": "They say they answer 'what's in it' and 'any openings' messages all evening.",
+      "line": "\"Those evening IV questions get answered from your approved menu while the nurse is with a client.\""
+    },
+    {
+      "rung": 6,
+      "day": 120,
+      "offer": "Group and event booking with deposits",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "trigger": "A bridal party or event group asks for a mobile IV visit.",
+      "line": "\"That group enquiry could be a page where the whole party books, pays a deposit and screens before the nurse arrives.\""
+    },
+    {
+      "rung": 7,
+      "day": 180,
+      "offer": "Mobile IV nurse dispatch board",
+      "min": 1200,
+      "max": 3000,
+      "unit": "one-time",
+      "trigger": "They hire a second mobile nurse or mention a double-booked address.",
+      "line": "\"Two mobile IV nurses need one board, or someone drives across town twice.\""
+    },
+    {
+      "rung": 8,
+      "day": 240,
+      "offer": "Introduction to the medical director's practice",
+      "min": 2500,
+      "max": 6000,
+      "unit": "one-time",
+      "trigger": "The medical director comments on the clinic site while approving wording.",
+      "line": "\"Your medical director has seen the IV clinic site up close. Would you introduce me to their own practice?\""
+    }
+  ]
+}

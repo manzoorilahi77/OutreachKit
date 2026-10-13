@@ -1,4 +1,4 @@
-import { STATES } from "@/data";
+import { isRegion } from "@/lib/market/regions";
 import type { Channel } from "./stages";
 import { CHECK_FIELDS } from "./checks";
 
@@ -33,8 +33,8 @@ export function parseLeadForm(fd: FormData): Ok<LeadInput> | Bad {
   const business_name = text(fd, "business_name", 200);
   if (!business_name) return { ok: false, error: "Add the business name." };
 
-  const state = text(fd, "state", 2).toUpperCase();
-  if (state && !(state in STATES)) return { ok: false, error: "That state code isn't recognised. Use the two-letter code, like TX." };
+  const state = text(fd, "state", 3).toUpperCase();
+  if (state && !isRegion(state)) return { ok: false, error: "That region code isn't recognised. Use a US state or Canadian province code (TX, ON) or an emirate code (DXB, AUH)." };
 
   const dates = { date_sourced: date(fd, "date_sourced"), last_post_date: date(fd, "last_post_date"), demo_built_date: date(fd, "demo_built_date"), first_contact_date: date(fd, "first_contact_date") };
   for (const [k, v] of Object.entries(dates)) if (v === undefined) return { ok: false, error: `Check the date in ${k.replace(/_/g, " ")}.` };

@@ -1,0 +1,874 @@
+{
+  "schemaVersion": 1,
+  "category": "Accounting & CPA firms",
+  "slug": "accounting-cpa-firms",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · expansion batch (healthcare + mid-size)",
+    "generatedAt": "2026-10-13",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Written for the managing partner, practice manager or marketing lead of a multi-partner firm. Leaned on services by client type, a secure portal, deadline calendars and recruiting; credentials as bracketed placeholders, no tax authority named. Unsure on the client portal and advisory dashboard ranges."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Services by client type",
+      "contains": "Separate pages for owner-managed businesses, nonprofits, property investors, professional practices, families and estates, and growing companies, each with the tax, audit, accounting and advisory work that client needs",
+      "why": "A nonprofit treasurer and a company founder hire an accounting firm for different reasons. A page for their type of organisation is what gets the proposal request."
+    },
+    {
+      "section": "Filing deadline calendar by entity type",
+      "contains": "Upcoming tax, payroll and sales tax or VAT filing dates for each entity type in the firm's jurisdictions, what the firm needs by when, and a sign-up for reminders",
+      "why": "Clients forget deadlines, then panic. A calendar on the firm's site cuts the calls and brings documents in early, which flattens the busy season."
+    },
+    {
+      "section": "Secure client portal guide",
+      "contains": "How to upload documents, sign returns and engagement letters electronically, what the portal protects, how to reset access, and a portal help contact",
+      "why": "Clients who can't use the portal email their tax documents instead. A plain guide moves them onto the secure route and off the staff's inboxes."
+    },
+    {
+      "section": "Advisory and outsourced finance",
+      "contains": "Fractional finance director, outsourced accounting, cash flow forecasting, budgeting, succession and exit planning, with how each engagement is scoped and priced",
+      "why": "Advisory work is the firm's best margin, but clients only know it for compliance. A dedicated section starts the conversation the partners want."
+    },
+    {
+      "section": "Careers for graduates and experienced accountants",
+      "contains": "Graduate programme, exam and qualification support, flexible work, what busy season really looks like, open roles by office and service line, and a confidential enquiry for experienced hires",
+      "why": "Hiring accountants is the hardest problem mid-size firms have. Candidates choose the firm that shows training and an honest picture of the year."
+    },
+    {
+      "section": "Partners and team by office and service line",
+      "contains": "Partners and managers filterable by office, service line and industry, with [professional designation and licence details as supplied by each person], languages and a contact card",
+      "why": "Clients work with managers day to day, not just the partner on the letterhead. Showing the team builds trust and helps referrers find the right person."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C5",
+      "siteType": "local-conversion",
+      "name": "Ledger Line",
+      "heroLayout": "split-photo",
+      "mood": [
+        "orderly",
+        "reassuring",
+        "plain"
+      ],
+      "bestFor": "Single-office firms with tax, accounting and audit lines, who need services by client type, a portal link and a consultation request",
+      "pairsWithTier": "starter",
+      "headlineSample": "Accountants for {City} businesses and families",
+      "whyItFits": "Counting House pairs a bookish serif with ledger tones, which reads as careful with numbers. The split hero puts the client portal beside a consultation request."
+    },
+    {
+      "id": "b",
+      "themeId": "C2",
+      "siteType": "b2b-capability",
+      "name": "Client Types",
+      "heroLayout": "card-stack",
+      "mood": [
+        "trusted",
+        "measured",
+        "warm"
+      ],
+      "bestFor": "Multi-office accounting firms serving businesses, nonprofits and families, with service lines, recruiting and a secure portal",
+      "pairsWithTier": "standard",
+      "headlineSample": "Tax, audit and advisory for {City} organisations",
+      "whyItFits": "The family's Private Vault combo. Its cream ground and refined serif feel like a firm trusted with private finances, and the card stack routes each client type."
+    },
+    {
+      "id": "c",
+      "themeId": "C4",
+      "siteType": "premium-brand",
+      "name": "Advisory House",
+      "heroLayout": "type-led",
+      "mood": [
+        "senior",
+        "strategic",
+        "composed"
+      ],
+      "bestFor": "Firms leading with advisory, outsourced finance and exit planning for owner-managed companies, competing on partner insight",
+      "pairsWithTier": "premium",
+      "headlineSample": "Financial advice for {City} business owners, by partners",
+      "whyItFits": "Navy and brass with an editorial serif read like a board report. It suits a firm selling the partners' judgement rather than returns by volume."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "One page for every client type",
+      "line": "Your accounting firm's site lists tax, audit and advisory on one page. A nonprofit treasurer can't tell whether you audit organisations like theirs without calling.",
+      "hook": "Look for any page by client type or industry. Note the types their posts and team profiles mention.",
+      "linkLine": "Pages for each kind of client your accounting firm serves: {demo-link}"
+    },
+    {
+      "angle": "Documents by email",
+      "line": "Your site asks clients to email their tax documents to the office, and the portal link is hidden in the footer. Every bank statement in an inbox is a risk your staff shouldn't carry.",
+      "hook": "Find how the site tells clients to send documents. Note where the portal link sits, if there is one.",
+      "linkLine": "A secure portal guide front and centre on your CPA firm site: {demo-link}"
+    },
+    {
+      "angle": "Deadline posts, no calendar",
+      "line": "Your posts remind clients about filing deadlines every few weeks, but the firm's site has no deadline calendar. Clients look for the date on the site the night before.",
+      "hook": "Check their recent deadline posts and the site for any calendar. Note the next deadline they posted.",
+      "linkLine": "A filing deadline calendar on your accounting firm's site: {demo-link}"
+    },
+    {
+      "angle": "Hiring for busy season",
+      "line": "Saw your firm is hiring seasonal staff and a senior accountant. The careers page is one line, and good accountants compare training and busy-season hours before they apply.",
+      "hook": "Look for recent job posts or graduate recruitment notices. Note the roles and offices.",
+      "linkLine": "A careers section for the CPA firm: {demo-link}"
+    },
+    {
+      "angle": "Not taking new returns",
+      "line": "Your post says the firm isn't taking new individual tax returns this season, but the site still invites everyone to book. A capacity notice and a waitlist would save your front desk those calls.",
+      "hook": "Only if they've posted a capacity or closed-to-new-clients notice. Check what the site says.",
+      "linkLine": "A tax season capacity notice and waitlist: {demo-link}"
+    },
+    {
+      "angle": "Several offices, one page",
+      "line": "Your accounting firm has more than one office, but the site has one contact page and one map. A business owner near your second office can't see who works there.",
+      "hook": "Check listings for each office. Note which have no page of their own.",
+      "linkLine": "A page for each office of the accounting firm: {demo-link}"
+    },
+    {
+      "angle": "Team page shows only partners",
+      "line": "Your team page shows the partners but none of the managers clients deal with every week. Clients and referrers want to see the people who actually do their accounting.",
+      "hook": "Compare the team page with staff on professional networks. Note how many managers are missing.",
+      "linkLine": "A team directory by office and service line: {demo-link}"
+    },
+    {
+      "angle": "Advisory buried",
+      "line": "One of your partners posted about outsourced finance director work, but the firm's site only describes tax and compliance. Owners who need cash flow help never learn you do it.",
+      "hook": "Look for posts about advisory, CFO or forecasting work. Check whether the site mentions it.",
+      "linkLine": "An advisory and outsourced finance section for the firm: {demo-link}"
+    },
+    {
+      "angle": "Slow and dated on a phone",
+      "line": "Your CPA firm's site took a long time to load on my phone and the services ran off the screen. Business owners check their accountant's site between jobs, not at a desk.",
+      "hook": "Load the site on mobile data. Note load time and one thing that breaks.",
+      "linkLine": "Your accounting firm's site, built for a phone: {demo-link}"
+    },
+    {
+      "angle": "After a merger",
+      "line": "Saw your firm combined with another practice. The other firm's old site still comes up in searches, and its clients don't know where to find you now.",
+      "hook": "Only if they've announced a merger or acquisition. Search the other firm's name and note what appears.",
+      "linkLine": "One CPA firm site that welcomes both client lists: {demo-link}"
+    },
+    {
+      "angle": "Industry clients without a page",
+      "line": "Your partners' profiles mention construction and dental practice clients, but the firm has no page for either. Owners in those trades search for an accountant who knows their industry.",
+      "hook": "Read partner profiles or posts for repeated industries. Name the ones you actually see.",
+      "linkLine": "Industry pages for your accounting firm: {demo-link}"
+    },
+    {
+      "angle": "Monthly packages not shown",
+      "line": "Your firm offers monthly outsourced accounting, but there's no sign of what's included or how it's priced. Growing companies shortlist the firms that explain their packages.",
+      "hook": "Only if they mention outsourced or monthly accounting. Check for any package or pricing description.",
+      "linkLine": "Outsourced accounting packages explained plainly: {demo-link}"
+    },
+    {
+      "angle": "Nonprofit audit season",
+      "line": "Nonprofit boards pick their auditor in the months before their year-end. Your firm audits nonprofits, judging by your posts, but nothing on the site speaks to a board treasurer.",
+      "hook": "Only if they mention nonprofit audits. Note any sector they name.",
+      "linkLine": "A nonprofit audit page for the CPA firm: {demo-link}"
+    },
+    {
+      "angle": "Budget announcements",
+      "line": "When the government announces tax changes, your clients' first question is what it means for them. A short explainer on the firm's site the same week keeps them asking you, not a search.",
+      "hook": "Use this around a budget or tax change announcement. Name the topic only.",
+      "linkLine": "A tax update page ready for the next announcement: {demo-link}"
+    },
+    {
+      "angle": "A specific recent post",
+      "line": "That {specific recent job} your firm posted explained a tax point better than most accounting sites do. It belongs on your site where clients and referrers can find it again.",
+      "hook": "Pick their newest explainer, event or community post and name it exactly. Never reference a client.",
+      "linkLine": "That explainer, kept on your CPA firm's site: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, that {specific recent job} your firm posted explained a tax point more clearly than most accounting sites.\n\nI was looking at CPA firms in {City} and noticed {Business Name}'s site lists every service on one page and asks clients to email documents. I sketched a sample site with pages by client type, a deadline calendar and the secure portal up front, with marked placeholders where your photos would go.\n\nWould it help to see it before busy season?",
+    "dm2": "{Owner}, following up in case my note got buried. Here's the sample site for {Business Name}: {demo-link}\n\nIt has pages for each client type, a filing deadline calendar, a secure portal guide, an advisory section and careers for graduates and experienced hires. Nothing goes live without the partners' approval. If it's not for you, just say so.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for accounting firms here in {City}. I sent a sample for {Business Name} a few days ago, did it reach you?\"\n\nIF NO:\n\"No problem. Short version: pages by client type, a deadline calendar, the secure portal front and centre, an advisory section and a careers page, with marked placeholders where your photos would go. Can I email it to you and your practice manager?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"Most firms your size have a site that sells returns when the partners want advisory work and new hires. This one leads with both and moves documents onto the portal you already pay for. The build runs {Build Range} depending on offices and client types, then {Care Range} a month for hosting, deadlines and updates. For your firm I'd quote about {Build Price}.\"\n\"Could I walk you and your practice manager through it for twenty minutes before busy season starts?\"\n\nCLOSE:\n\"I'll send a scope with the client types, offices and portal connection, and a deposit invoice. The partners approve every page before launch.\"",
+    "objections": [
+      {
+        "objection": "Busy season is coming, we can't take this on now.",
+        "handler": "\"That's why it's already drafted. Your team spends an hour on content, and the deadline calendar and portal guide go live before the busy weeks, when they save the most calls.\""
+      },
+      {
+        "objection": "Our clients come from referrals.",
+        "handler": "\"They should. Referred clients and recruits still look at the firm's site before the first meeting. Pages for their type of business confirm the referral was right.\""
+      },
+      {
+        "objection": "Our portal vendor already gives us a website.",
+        "handler": "\"Keep the portal. Their template looks like every other firm's. We link straight to it, add the guide clients need, and give the firm pages written for its own clients.\""
+      },
+      {
+        "objection": "We're not trying to grow, we're at capacity.",
+        "handler": "\"Then the site should help you choose. A capacity notice, a waitlist and clear client types bring in the work you want and send the rest elsewhere politely.\""
+      },
+      {
+        "objection": "The partners need to agree on this.",
+        "handler": "\"Of course. I'll send a one-page summary with scope, price and timing, so they can decide at the next partners' meeting.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}, and for your firm about {Build Price}, covering client type pages, the deadline calendar, portal guide, advisory and careers. Monthly care is {Care Range}.\""
+      }
+    ],
+    "email": {
+      "subject": "Client type pages for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for accounting firms around {City}. {Business Name} has a strong reputation, but the site lists every service on one page and asks clients to email their documents, so the advisory work and the secure portal are easy to miss.\n\nI built a sample first rather than ask for your time: pages for each client type, a filing deadline calendar, a secure portal guide, an advisory and outsourced finance section and careers for graduates and experienced hires, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you'd like it, I move it to your domain and finish it for {Build Range}, plus {Care Range} a month for hosting, deadline updates and changes. The partners approve every page before launch. If not, no problem, it comes down at the end of the month.\n\nWorth twenty minutes before busy season?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"{Owner}, it's {Your Name}. I build websites for accounting firms in {City}, and I made a sample for {Business Name} with pages by client type, a deadline calendar and the portal up front. I'll email the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm taking the {Business Name} accounting firm sample down on Friday to free up the space.\n\nShould I keep it up for the partners? One word is fine either way.",
+    "nurture": "Hi {Owner}, busy season is behind you, which is when firms plan recruiting and advisory growth for the year. {Business Name} came to mind.\n\nThe sample with client type pages and a careers section is still here, same price as before. {demo-link} if you'd like another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Price by client type, office and service line; each is a fixed add-on the partners can budget for.",
+      "Link to the portal they already pay for; replacing it is a separate decision with its own price.",
+      "Build the deadline calendar so staff can edit dates per jurisdiction, and price ongoing updates into care.",
+      "Schedule the build around busy season: content calls before it, launch before the busiest weeks.",
+      "Build a partner sign-off round into every quote, and keep credentials as the firm supplies them.",
+      "Peg the build to one mid-size client's annual fees, never to hourly rates."
+    ],
+    "lineItems": [
+      {
+        "item": "Client type or industry page (each)",
+        "min": 500,
+        "max": 1200,
+        "unit": "per-page",
+        "description": "Max with the services that client needs, a sample engagement scope, the team who serves them and a proposal request.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Office page (each)",
+        "min": 500,
+        "max": 1200,
+        "unit": "per-page",
+        "description": "Max with the local team, service lines at that office, directions and meeting room notes.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Filing deadline calendar",
+        "min": 1200,
+        "max": 3500,
+        "unit": "one-time",
+        "description": "Max with several jurisdictions and entity types, staff-editable dates and a reminder sign-up.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Secure portal guide and connection",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "description": "Max with step-by-step upload and e-signature guides, single sign-on from the site and a help request form.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Advisory and outsourced finance section",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "description": "Max with a page per advisory service, package descriptions and a scoping questionnaire.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Careers section with graduate programme",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "description": "Max with graduate and experienced hire tracks, exam support details, staff stories and roles by office.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Team directory by office and service line",
+        "min": 1200,
+        "max": 3500,
+        "unit": "one-time",
+        "description": "Max with filters, drafted bios from short calls, designations as supplied and contact cards.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Team portrait days by office",
+      "min": 1000,
+      "max": 3000,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A day in each office photographing partners and managers in one style, so the accounting firm's team directory looks like one firm, not a pile of old headshots.\"",
+      "when": "Month 1, before the team directory launches, then once a year after busy season."
+    },
+    {
+      "name": "Tax and business update articles",
+      "min": 600,
+      "max": 1800,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Each month, plain-language articles on the tax and accounting questions your clients ask, drafted from a partner call and approved before publishing.\"",
+      "when": "Month 2, once the client type pages are live."
+    },
+    {
+      "name": "Client newsletter by client type",
+      "min": 500,
+      "max": 1500,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A monthly email that sends business owners, nonprofits and families only the deadlines and updates that apply to them, with links back to the firm's site.\"",
+      "when": "Month 3, once clients are tagged by type."
+    },
+    {
+      "name": "Office Google profiles and review requests",
+      "min": 250,
+      "max": 700,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Each office's Google profile kept current, and after a return or engagement is finished, a short note asks happy clients for a review of that office.\"",
+      "when": "Day 30, and review requests after busy season."
+    },
+    {
+      "name": "Graduate recruitment campaign",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Ahead of the graduate intake, junior accountants filmed on a normal day, campus talk sign-ups and exam-support posts, so students picture their first audit and tax season with you.\"",
+      "when": "Two months before the firm's graduate application window."
+    },
+    {
+      "name": "Business owner seminar series",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A seminar on year-end planning or selling a business, with a registration page, reminders and a follow-up consultation offer to attendees from the advisory team.\"",
+      "when": "Two months before year-end, or when advisory wants a push."
+    },
+    {
+      "name": "Partner profiles on professional networks",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Each partner's professional network profile rewritten to match their page on the accounting firm's site, so referrers and recruits see one consistent story.\"",
+      "when": "Month 2, alongside the portrait days."
+    },
+    {
+      "name": "Advisory capability brochures",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Printed and digital brochures for outsourced finance, forecasting and exit planning, drawn from the site, for partners to leave after a client meeting.\"",
+      "when": "Month 3, once the advisory section is approved."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Law firms that share business and estate clients",
+        "whoPays": "The law firm",
+        "min": 5000,
+        "max": 15000,
+        "unit": "one-time",
+        "pitchLine": "\"The lawyers who handle your clients' company formations, sales and estates need better sites too. A partner who refers them work every month is a strong introduction.\"",
+        "whyItWorks": "Accountants and lawyers refer constantly and trust each other's suppliers."
+      },
+      {
+        "route": "Financial planners who share clients",
+        "whoPays": "The financial planning practice",
+        "min": 3000,
+        "max": 8000,
+        "unit": "one-time",
+        "pitchLine": "\"The planners who manage your clients' investments need sites that explain how they're paid and who they serve. Your firm's recommendation gets me a meeting.\"",
+        "whyItWorks": "Planners rely on accountant referrals and care about looking credible beside them."
+      },
+      {
+        "route": "Business brokers selling client companies",
+        "whoPays": "The business brokerage",
+        "min": 3000,
+        "max": 8000,
+        "unit": "one-time",
+        "pitchLine": "\"Brokers who sell your clients' businesses need confidential listing pages and buyer enquiry forms. The accountant who prepared the numbers is the right person to introduce me.\"",
+        "whyItWorks": "Brokers need accountants on side for every sale and value their goodwill."
+      },
+      {
+        "route": "Payroll bureaus and HR providers",
+        "whoPays": "The payroll or HR firm",
+        "min": 3000,
+        "max": 8000,
+        "unit": "one-time",
+        "pitchLine": "\"The payroll bureau many of your clients use sells to every small employer in town. A reference from the accounting firm they work with opens that door.\"",
+        "whyItWorks": "Payroll firms depend on accountant referrals and need a site that looks as careful as their clients' books."
+      },
+      {
+        "route": "Commercial insurance brokers",
+        "whoPays": "The insurance brokerage",
+        "min": 3000,
+        "max": 8000,
+        "unit": "one-time",
+        "pitchLine": "\"The brokers who insure your business clients want pages by industry that match how you advise them. An introduction from the CPA firm makes the first call easy.\"",
+        "whyItWorks": "Brokers and accountants share clients and refer when the timing is right."
+      },
+      {
+        "route": "Client businesses that need a website",
+        "whoPays": "Each client business, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The businesses you prepare accounts for often have weak websites. A line in the firm's newsletter or a partner's mention is all it takes for them to call.\"",
+        "whyItWorks": "Owners trust their accountant's suggestions more than any advert."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Estate inventory drafts for law firms",
+        "whoPays": "The law firm, monthly",
+        "min": 200,
+        "max": 500,
+        "unit": "monthly",
+        "pitchLine": "\"Estate lawyers list a deceased client's assets from piles of statements. An assistant drafts the inventory from uploaded documents for the paralegal to check.\"",
+        "whyItWorks": "It saves the law firm hours on every estate, and the accounting firm made the introduction."
+      },
+      {
+        "route": "Client review pack drafts for financial planners",
+        "whoPays": "The financial planning practice, monthly",
+        "min": 200,
+        "max": 500,
+        "unit": "monthly",
+        "pitchLine": "\"Before each review meeting, planners get a draft of what changed in a shared client's tax position and accounts since last time, from documents the client allows them to see.\"",
+        "whyItWorks": "Review prep is unbilled time, and planners pay to cut it."
+      },
+      {
+        "route": "Business summary drafts for brokers",
+        "whoPays": "The business brokerage, monthly",
+        "min": 250,
+        "max": 600,
+        "unit": "monthly",
+        "pitchLine": "\"Brokers write a confidential summary for every business they sell. An assistant drafts one from the financials and the owner interview for the broker to finish.\"",
+        "whyItWorks": "Faster listings mean faster sales, and the accountant's figures feed it."
+      },
+      {
+        "route": "Payroll exception checks for bureaus",
+        "whoPays": "The payroll bureau, monthly",
+        "min": 300,
+        "max": 800,
+        "unit": "monthly",
+        "pitchLine": "\"Before each pay run, an assistant flags unusual hours, rates or new starters for the bureau to check, so the payroll figures the accounting firm receives are clean.\"",
+        "whyItWorks": "Payroll errors lose bureaus clients, and the accounting firm sees cleaner numbers."
+      },
+      {
+        "route": "Renewal comparison drafts for insurance brokers",
+        "whoPays": "The insurance brokerage, monthly",
+        "min": 200,
+        "max": 500,
+        "unit": "monthly",
+        "pitchLine": "\"At renewal, brokers explain what changed in a business policy. An assistant drafts a plain comparison, matched to the client's accounts and tax year, for the broker to check.\"",
+        "whyItWorks": "Clear renewals keep clients, and brokers trust tools a partner firm recommends."
+      },
+      {
+        "route": "Quote and invoice assistant for client tradespeople",
+        "whoPays": "The client business, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"Trades clients of the firm dictate a job from the van and get a draft quote or invoice in their own format, which also keeps their books cleaner for year-end.\"",
+        "whyItWorks": "Cleaner client records make the accountant's work easier, so the firm is glad to recommend it."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Deadline reminder emails by entity type",
+      "kind": "automation",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"Clients get reminders for the filing deadlines that apply to their entity type and jurisdiction, with what the accounting firm needs from them and the portal link.\"",
+      "whenAndWhatItTakes": "Day 30, with the deadline calendar. Needs clients tagged by entity type."
+    },
+    {
+      "name": "Document chase sequence by return type",
+      "kind": "automation",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"Each client gets polite reminders listing exactly which documents are still missing for their return, so staff stop chasing by phone in the busiest weeks.\"",
+      "whenAndWhatItTakes": "Month 1, before busy season. Needs document checklists by return type and the portal's upload status."
+    },
+    {
+      "name": "Client question assistant on deadlines, documents and fees",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 300,
+      "monthlyMax": 800,
+      "pitchLine": "\"It answers when a filing is due, what to upload and how the firm prices a return from the firm's own pages, says it can't give tax advice, and books a call when needed.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the deadline calendar, checklists and approved fee ranges, with partner sign-off. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Upload classifier that files documents by client and year",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 300,
+      "monthlyMax": 800,
+      "pitchLine": "\"Statements, slips and receipts clients upload are named and filed under the right client, year and document type, with anything unclear left for staff to sort.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the portal's folder structure and sample documents. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Annual engagement letter renewal with e-signature",
+      "kind": "automation",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"Before each season, every client's engagement letter goes out for e-signature with this year's fees and scope, and partners see who hasn't signed.\"",
+      "whenAndWhatItTakes": "Month 2. Needs engagement templates by service line and the client list with fees."
+    },
+    {
+      "name": "Online client onboarding with identity checks",
+      "kind": "software",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 200,
+      "monthlyMax": 500,
+      "pitchLine": "\"New clients fill in their details, upload ID where the rules require it, sign the engagement letter and get portal access in one flow, instead of a week of emails.\"",
+      "whenAndWhatItTakes": "Month 3. Needs onboarding requirements, identity check rules and the portal setup."
+    },
+    {
+      "name": "Return and engagement status board for clients",
+      "kind": "software",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 12000,
+      "monthlyMin": 200,
+      "monthlyMax": 600,
+      "pitchLine": "\"Clients see whether their return or year-end accounts are waiting on them, in progress, in review or ready to sign, so the accounting firm's phones stay quieter in busy season.\"",
+      "whenAndWhatItTakes": "Month 3. Needs workflow stages and an export from their practice management system."
+    },
+    {
+      "name": "Tax authority letter summaries with a response plan draft",
+      "kind": "ai",
+      "oneTimeMin": 2500,
+      "oneTimeMax": 6000,
+      "monthlyMin": 250,
+      "monthlyMax": 600,
+      "pitchLine": "\"When a client uploads a letter from the tax authority, the manager gets a plain summary, the deadline and a draft response checklist to confirm before anyone replies.\"",
+      "whenAndWhatItTakes": "Month 4. Needs sample letters and the firm's response process. Comes with the AI maintenance retainer; staff confirm every deadline."
+    },
+    {
+      "name": "Busy-season capacity planner",
+      "kind": "software",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 200,
+      "monthlyMax": 500,
+      "pitchLine": "\"See returns and engagements due each week against each team's hours, so partners know when to close the waitlist or bring in seasonal help.\"",
+      "whenAndWhatItTakes": "Month 4. Needs last season's workload by week and staff hours."
+    },
+    {
+      "name": "Engagement proposal and pricing builder",
+      "kind": "software",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 9000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Partners pick a client type and services and get a priced proposal with package options and scope notes, consistent across the accounting firm's offices.\"",
+      "whenAndWhatItTakes": "Month 5. Needs fee schedules, package definitions and past proposals."
+    },
+    {
+      "name": "Management report commentary drafts",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 300,
+      "monthlyMax": 800,
+      "pitchLine": "\"For outsourced accounting clients, each monthly report comes with a draft plain-language note on what changed and why, for the manager to edit before it's sent.\"",
+      "whenAndWhatItTakes": "Month 5. Needs report templates and a few notes managers wrote well. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Recruiting portal for graduates and experienced hires",
+      "kind": "software",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 200,
+      "monthlyMax": 500,
+      "pitchLine": "\"Graduate applications, seasonal roles and experienced hire enquiries arrive in one place, routed to the right office and service line partner.\"",
+      "whenAndWhatItTakes": "Month 5, before the next recruiting round. Needs roles, questions and reviewers per office."
+    },
+    {
+      "name": "Graduate applicant screener",
+      "kind": "ai",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 200,
+      "monthlyMax": 500,
+      "pitchLine": "\"Graduate and seasonal applications get a short draft note on exam progress, tax or audit exposure and availability, so the office partner picks interviews in minutes.\"",
+      "whenAndWhatItTakes": "Month 6, with the recruiting portal. Needs criteria per role. Comes with the AI maintenance retainer; people make every decision."
+    },
+    {
+      "name": "Client meeting notes to engagement memo drafts",
+      "kind": "ai",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 200,
+      "monthlyMax": 500,
+      "pitchLine": "\"After a planning meeting, the partner dictates a few minutes and gets a draft memo with decisions, open items and deadlines for the client file.\"",
+      "whenAndWhatItTakes": "Month 6. Needs their memo format and consent wording for dictation. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Overdue fee reminders on the firm's schedule",
+      "kind": "automation",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"Overdue invoices get polite reminders on a schedule the partners set, with a pay link, so no manager has to make the awkward call after busy season.\"",
+      "whenAndWhatItTakes": "Month 6. Needs a billing export and the reminder wording."
+    },
+    {
+      "name": "Reconciliation exception flags for outsourced clients",
+      "kind": "ai",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 400,
+      "monthlyMax": 1000,
+      "pitchLine": "\"Each month, bank and ledger entries for outsourced accounting clients are compared and unusual items flagged in a draft list for the bookkeeper to clear.\"",
+      "whenAndWhatItTakes": "Month 7. Needs ledger and bank feed access per client. Comes with the AI maintenance retainer; staff clear every flag."
+    },
+    {
+      "name": "Advisory dashboards for business clients",
+      "kind": "software",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 18000,
+      "monthlyMin": 300,
+      "monthlyMax": 900,
+      "pitchLine": "\"Outsourced finance clients log in to see cash, margins and forecasts the firm maintains, which turns a compliance client into an advisory one.\"",
+      "whenAndWhatItTakes": "Month 8. Needs the KPIs per client type and ledger connections for the first clients."
+    },
+    {
+      "name": "Tax update article drafts from partner notes",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"A partner records a few points about a tax change and gets a draft article and client email in the accounting firm's style, ready to correct and approve.\"",
+      "whenAndWhatItTakes": "Month 8. Needs a few published articles as examples. Comes with the AI maintenance retainer; a partner approves every word."
+    },
+    {
+      "name": "Client portal with document requests and e-signature",
+      "kind": "software",
+      "oneTimeMin": 8000,
+      "oneTimeMax": 25000,
+      "monthlyMin": 300,
+      "monthlyMax": 900,
+      "pitchLine": "\"If the firm outgrows its current portal: one login for document requests, uploads, e-signatures, invoices and prior-year returns, branded as the firm.\"",
+      "whenAndWhatItTakes": "Month 9, only if the partners decide to replace their portal. Needs security requirements and a migration plan."
+    },
+    {
+      "name": "Practice dashboard by office and service line",
+      "kind": "software",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 18000,
+      "monthlyMin": 300,
+      "monthlyMax": 900,
+      "pitchLine": "\"New clients, proposals won, work in progress and recruiting for each office and service line on one screen, for the partners' monthly meeting.\"",
+      "whenAndWhatItTakes": "Month 10. Needs six months of practice management and site data and agreement on each measure."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the client-type CPA firm site",
+      "whoPays": "Other mid-size accounting firms, one-time plus monthly",
+      "min": 10000,
+      "max": 25000,
+      "unit": "one-time",
+      "pitchLine": "\"Client type pages, a deadline calendar, the portal guide and careers are the same build for every accounting firm with several partners. I set it up with their offices.\"",
+      "whyItWorks": "The calendar, portal connection and structure are built once and reused."
+    },
+    {
+      "route": "Associations of independent accounting firms",
+      "whoPays": "The association, per member firm",
+      "min": 5000,
+      "max": 12000,
+      "unit": "one-time",
+      "pitchLine": "\"Associations of independent accounting firms want members on consistent, modern sites with shared resources. One template, every member firm.\"",
+      "whyItWorks": "Associations sell shared resources, and a site standard is easy for members to adopt."
+    },
+    {
+      "route": "Professional accounting body practice section",
+      "whoPays": "The professional body, as a member resource",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer member practices a site structure with deadline calendars and portal guides. Practice sections need resources members actually use.\"",
+      "whyItWorks": "Professional bodies look for member benefits, and website questions come up constantly."
+    },
+    {
+      "route": "Accounting firm consolidators",
+      "whoPays": "The group buying accounting firms",
+      "min": 15000,
+      "max": 50000,
+      "unit": "one-time",
+      "pitchLine": "\"Groups acquiring accounting firms need every acquired practice on one brand, one portal guide and one recruiting site by a fixed date.\"",
+      "whyItWorks": "Consolidators have integration budgets and many firms to move."
+    },
+    {
+      "route": "White-label for accounting marketing agencies",
+      "whoPays": "The agency, per firm client",
+      "min": 5000,
+      "max": 12000,
+      "unit": "one-time",
+      "pitchLine": "\"Agencies that market accounting firms need a build partner for portals, calendars and recruiting sections. I deliver under their name.\"",
+      "whyItWorks": "Agencies own the relationship but not the integration work."
+    },
+    {
+      "route": "Practice management consultants for accountants",
+      "whoPays": "The consultant, per firm engagement",
+      "min": 3000,
+      "max": 8000,
+      "unit": "one-time",
+      "pitchLine": "\"Consultants who move firms to package pricing and advisory need a site that sells it. I deliver the site as part of their engagement.\"",
+      "whyItWorks": "Consultants want visible results, and a new site makes the change public."
+    },
+    {
+      "route": "Accounting software implementation partners",
+      "whoPays": "The implementation partner, per firm",
+      "min": 2500,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Partners who set up new practice systems for firms can include a site connected to the portal from day one. I build it for their clients.\"",
+      "whyItWorks": "System changes are when firms rethink everything client-facing."
+    },
+    {
+      "route": "Merging accounting firms",
+      "whoPays": "The combined firm",
+      "min": 12000,
+      "max": 30000,
+      "unit": "one-time",
+      "pitchLine": "\"When two firms combine, both client lists need one site, one portal guide and a clear welcome. The structure I built handles both firms' offices.\"",
+      "whyItWorks": "Mergers have deadlines and budgets, and the site is the first sign of the new firm."
+    },
+    {
+      "route": "Smaller bookkeeping practices as referral partners",
+      "whoPays": "Bookkeeping practices, monthly",
+      "min": 99,
+      "max": 299,
+      "unit": "monthly",
+      "pitchLine": "\"Bookkeepers who send complex work up to the CPA firm need simple sites with a deadline calendar. A lighter version of this build, on a monthly plan.\"",
+      "whyItWorks": "Bookkeepers are many, price-sensitive and already trust the firm."
+    },
+    {
+      "route": "University accounting departments",
+      "whoPays": "The university's careers or accounting department",
+      "min": 3000,
+      "max": 9000,
+      "unit": "one-time",
+      "pitchLine": "\"University accounting programmes need firms at their careers fairs and internship boards. I build that employer listing and fair sign-up, having built the CPA firm side.\"",
+      "whyItWorks": "Departments need firms engaged every recruiting season."
+    },
+    {
+      "route": "One firm per metro",
+      "whoPays": "An accounting firm in another metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"Only one accounting practice per metro gets this build from me. If a rival tax and audit firm in {City} asks first, they get the slot.\"",
+      "whyItWorks": "Firms competing for the same clients and recruits value exclusivity."
+    },
+    {
+      "route": "Outsourced finance providers",
+      "whoPays": "The outsourced finance or fractional CFO firm",
+      "min": 6000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Fractional finance firms sell the same advisory work without a tax practice. The advisory section and client dashboards carry straight over.\"",
+      "whyItWorks": "They compete on credibility and reporting, which this build shows off."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Client-type accounting firm site plus care plan, one contract",
+      "min": 12000,
+      "max": 30000,
+      "unit": "one-time",
+      "trigger": "The managing partner and practice manager approve the scope and timing around busy season.",
+      "line": "\"The site and the care plan sit on one contract, so a deadline change or a new partner's profile is a message to me, not a project.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Deadline reminder emails by entity type",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "trigger": "The deadline calendar is live and clients still call to ask when filings are due.",
+      "line": "\"The calendar is up. Let each client get only the accounting deadlines that apply to them, with the portal link.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "Team portrait days by office",
+      "min": 1000,
+      "max": 3000,
+      "unit": "per-shoot",
+      "trigger": "The team directory still shows marked placeholders where photos go.",
+      "line": "\"Clients want to see the managers they work with. One day per office finishes the team directory.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Document chase sequence by return type",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "trigger": "Busy season approaches and staff list chasing documents as their biggest time sink.",
+      "line": "\"Your team is about to spend weeks chasing documents. Let the reminders list exactly what's missing for each client.\""
+    },
+    {
+      "rung": 5,
+      "day": 120,
+      "offer": "Return and engagement status board for clients",
+      "min": 4000,
+      "max": 12000,
+      "unit": "one-time",
+      "trigger": "Front desk logs show most busy-season calls are 'where is my return'.",
+      "line": "\"Most of your busy-season calls ask where a return is. Let clients see it themselves.\""
+    },
+    {
+      "rung": 6,
+      "day": 180,
+      "offer": "Recruiting portal for graduates and experienced hires",
+      "min": 4000,
+      "max": 10000,
+      "unit": "one-time",
+      "trigger": "Busy season ends and the partners plan next year's hiring.",
+      "line": "\"Hiring is the firm's hardest problem. Let every application reach the right office partner in one place.\""
+    },
+    {
+      "rung": 7,
+      "day": 270,
+      "offer": "Advisory dashboards for business clients",
+      "min": 6000,
+      "max": 18000,
+      "unit": "one-time",
+      "trigger": "The advisory section brings enquiries and partners want a monthly product to sell.",
+      "line": "\"Advisory clients want to see their numbers between meetings. A dashboard the firm maintains turns that into a monthly fee.\""
+    },
+    {
+      "rung": 8,
+      "day": 365,
+      "offer": "Practice dashboard by office and service line",
+      "min": 6000,
+      "max": 18000,
+      "unit": "one-time",
+      "trigger": "The first anniversary, before the partners' annual planning.",
+      "line": "\"A year in, let's put each office's new clients, proposals and recruiting on one screen before the partners plan next year.\""
+    }
+  ]
+}

@@ -70,7 +70,7 @@ export type SaveKitResult =
 
 const sayIt = (e: unknown, fallback: string) => (e instanceof StoreError ? e.message : fallback);
 
-export async function saveKit(raw: { category: string; device: string; state: string; city: string; direction?: string }): Promise<SaveKitResult> {
+export async function saveKit(raw: { category: string; device: string; state: string; city: string; direction?: string; siteLang?: string }): Promise<SaveKitResult> {
   const c = await checkPerm("kits.save");
   if (!c.ok) return { ok: false, error: c.message };
   const v = validateKit(raw);
@@ -79,6 +79,7 @@ export async function saveKit(raw: { category: string; device: string; state: st
     const kit = await c.store.createKit({
       category: v.value.category, device: v.value.device, state: v.value.state, city: v.value.city, cityIsFree: v.value.cityIsFree,
       direction: isDirectionId(raw.direction) ? raw.direction : "b",
+      ...(v.value.siteLang ? { siteLang: v.value.siteLang } : {}),
     });
     const [stats, others] = await Promise.all([c.store.kitStats([kit]), c.store.territory(kit.category, kit.state, kit.city)]);
     revalidatePath("/kits");

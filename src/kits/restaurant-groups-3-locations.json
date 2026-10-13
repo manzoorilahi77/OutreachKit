@@ -1,0 +1,895 @@
+{
+  "schemaVersion": 1,
+  "category": "Restaurant groups (3+ locations)",
+  "slug": "restaurant-groups-3-locations",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · expansion batch (healthcare + mid-size)",
+    "generatedAt": "2026-10-13",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Written for the GM, marketing lead or founder of a group with several sites or concepts. Leaned on per-location pages, direct ordering and private dining. Unsure on the location dashboard and loyalty ranges; they depend heavily on how many systems the group already runs."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Location finder with a page per restaurant",
+      "contains": "Every restaurant location on a map, then its own page: address, parking, today's hours, that site's menu differences, patio or bar seating, the general manager's name and its own reservation and order buttons",
+      "why": "Diners search for the restaurant nearest them, not the group. A page per location is what ranks in each neighbourhood and stops calls to the wrong site."
+    },
+    {
+      "section": "Private dining rooms by location",
+      "contains": "Each private dining room with seated and standing capacity, set menus and minimum spends, floor plans, and an enquiry form routed to the events lead at that restaurant",
+      "why": "Office parties and family celebrations are booked by one organiser comparing rooms. Capacities and set menus on the page get the enquiry before they call a rival."
+    },
+    {
+      "section": "Our concepts",
+      "contains": "One panel per restaurant concept in the group with its cuisine, mood, locations and its own menu, plus a short founder story tying the restaurants together",
+      "why": "Guests who love one concept try the group's others when they see them side by side. It also tells landlords and investors the group is a real operator."
+    },
+    {
+      "section": "Careers across the restaurant group",
+      "contains": "Open roles by location and position, from line cook and server to kitchen manager, how people move between sites, staff meal and benefits, and a short apply form",
+      "why": "Groups hire all year at every site. Cooks and servers compare employers on a phone, and a careers page that shows a path up beats a job board post."
+    },
+    {
+      "section": "Gift cards good at every location",
+      "contains": "Digital and printed gift cards that work at any restaurant in the group, corporate bulk orders with a company name on the card, and a balance check",
+      "why": "One card that works at several restaurants is an easier gift to give. Corporate buyers order in bulk before the holidays if the page makes it simple."
+    },
+    {
+      "section": "Allergen and dietary guide per menu",
+      "contains": "A dietary key for each concept's menu, gluten, nut, dairy, vegan and halal marks set by the kitchen, and a note on how each location handles cross-contact",
+      "why": "Groups with one guest who can't eat something pick the restaurant that answers the question before they arrive. Consistent marks across locations protect the kitchen too."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C47",
+      "siteType": "local-conversion",
+      "name": "Nearest Table",
+      "heroLayout": "card-stack",
+      "mood": [
+        "friendly",
+        "practical",
+        "local"
+      ],
+      "bestFor": "Groups of one concept across several neighbourhoods, where the job is getting each diner to the nearest location fast",
+      "pairsWithTier": "starter",
+      "headlineSample": "Find your nearest table in {City}",
+      "whyItFits": "Teal, tangerine and a warm humanist sans feel like a neighbourhood favourite. Location cards stack in the hero, each with today's hours and an order button."
+    },
+    {
+      "id": "b",
+      "themeId": "C32",
+      "siteType": "menu-and-order",
+      "name": "One Kitchen, Many Doors",
+      "heroLayout": "menu-board",
+      "mood": [
+        "appetising",
+        "grounded",
+        "generous"
+      ],
+      "bestFor": "Groups selling pickup, delivery and catering from every site, with a menu that differs a little by location",
+      "pairsWithTier": "standard",
+      "headlineSample": "Order from the {City} kitchen closest to you",
+      "whyItFits": "The family's Olive Grove combo. A bookish serif and olive tones carry long menus well, and the menu-board hero puts ordering first at every location."
+    },
+    {
+      "id": "c",
+      "themeId": "C9",
+      "siteType": "premium-brand",
+      "name": "House of Concepts",
+      "heroLayout": "full-bleed-photo",
+      "mood": [
+        "polished",
+        "evening",
+        "assured"
+      ],
+      "bestFor": "Groups with several distinct concepts, private dining rooms and a founder story, speaking to guests, event planners and landlords at once",
+      "pairsWithTier": "premium",
+      "headlineSample": "Restaurants worth crossing {City} for",
+      "whyItFits": "Midnight Bond's dark ground and a Didone display face read as an evening out. It lets each concept's dining room photography carry the page."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "One page for every location",
+      "line": "Your site lists all your restaurant locations on one page with a single phone number. Someone near your newest site can't tell its hours or whether it has a patio without calling.",
+      "hook": "Open the site and count how many locations share one page. Check whether each Google listing links to the same homepage.",
+      "linkLine": "A page for each of your restaurant locations: {demo-link}"
+    },
+    {
+      "angle": "PDF menus per location",
+      "line": "Each location's menu on your site opens as a PDF that I had to pinch and zoom on my phone. Diners deciding in the car pick the restaurant whose menu they can scroll.",
+      "hook": "Tap the menu link for two different locations on your phone. Note if both are PDFs and whether they differ.",
+      "linkLine": "Every location's menu as real text you edit once: {demo-link}"
+    },
+    {
+      "angle": "Slow on a phone",
+      "line": "Your group's homepage took a long time to load on my phone, with a large video before the menu or the locations appear. Hungry people leave before the first dish shows up.",
+      "hook": "Load the homepage on mobile data, not wifi. Time it roughly and note what loads first.",
+      "linkLine": "The same restaurant group site, built to load fast on a phone: {demo-link}"
+    },
+    {
+      "angle": "Delivery apps only",
+      "line": "The order button on your site sends people to delivery apps for every location. Regulars at your busiest restaurant would order pickup direct if the button were yours.",
+      "hook": "Click Order on the site for two locations. Note where it lands and whether there's any direct pickup option.",
+      "linkLine": "Direct pickup ordering for each restaurant location: {demo-link}"
+    },
+    {
+      "angle": "Hours that don't match",
+      "line": "The Google listing for one of your locations says it closes at ten, and your site says eleven. Across several restaurants, that kind of mismatch sends someone to a locked door.",
+      "hook": "Compare the hours on each location's Google listing with the site. Note the exact location and both times.",
+      "linkLine": "One set of hours feeding every location page: {demo-link}"
+    },
+    {
+      "angle": "Private dining by email only",
+      "line": "Your site mentions private dining, but the only way to ask is an email address with no room sizes or set menus. Office party organisers compare rooms before they write to anyone.",
+      "hook": "Find the private dining or events mention. Note whether capacities, menus or a form exist for any location.",
+      "linkLine": "Private dining rooms by location, with an enquiry form: {demo-link}"
+    },
+    {
+      "angle": "Hiring without a careers page",
+      "line": "Your restaurant group is posting for servers and line cooks at several locations, but the site has no careers page. Good cooks check how a kitchen looks online before they apply.",
+      "hook": "Look for recent hiring posts or job listings by location. Note how many roles and which sites.",
+      "linkLine": "A careers page for the whole restaurant group: {demo-link}"
+    },
+    {
+      "angle": "Reviews stuck on the listings",
+      "line": "Each of your locations has warm reviews naming dishes and servers, but none of that reaches your site. The diner choosing between two of your restaurants never sees it.",
+      "hook": "Read the newest reviews for two locations. Note a dish or a host named more than once.",
+      "linkLine": "Guest reviews shown on each restaurant location page: {demo-link}"
+    },
+    {
+      "angle": "A new location opening",
+      "line": "Saw the post about your new restaurant opening in {Neighborhood}. Right now there's nowhere on the site for that location's hours, menu or opening night.",
+      "hook": "Only if they've announced a new site. Note the neighbourhood and the opening date if it's public.",
+      "linkLine": "An opening page for your newest location: {demo-link}"
+    },
+    {
+      "angle": "No gift cards online",
+      "line": "I couldn't find a way to buy a gift card for your restaurants online. A card that works at every location is an easy gift, and companies buy them in bulk before the holidays.",
+      "hook": "Search the site and social bios for gift cards. Note whether they're sold only in person.",
+      "linkLine": "Gift cards good at every location in the group: {demo-link}"
+    },
+    {
+      "angle": "Catering hidden away",
+      "line": "Your posts mention catering for offices, but there's no catering menu or headcount form on the restaurant group's site. Office managers order from whoever lets them build the order online.",
+      "hook": "Find any catering mention in posts or the site. Note which location or kitchen it comes from.",
+      "linkLine": "A catering page with trays by headcount, from your kitchens: {demo-link}"
+    },
+    {
+      "angle": "Concepts blurred together",
+      "line": "Your group runs restaurant concepts with very different moods, but the site gives them all the same page layout. Someone looking for date night can't tell which one to book.",
+      "hook": "Only for groups with two or more concepts. Note each concept's name and its feel from its own social page.",
+      "linkLine": "A page for each restaurant concept in the group: {demo-link}"
+    },
+    {
+      "angle": "Seasonal menu not on the site",
+      "line": "The new seasonal menu is all over your social pages, but the site still shows last season's dishes at every location. The guest who saw the post comes looking and finds the old menu.",
+      "hook": "Compare the newest menu post with the site menu. Note a dish that's in the post and missing online.",
+      "linkLine": "A menu you update once for every restaurant location: {demo-link}"
+    },
+    {
+      "angle": "Reservations differ by location",
+      "line": "One of your restaurants takes reservations online and the others only by phone. A group planning dinner tries the location with the button first.",
+      "hook": "Check the reserve option on each location page or listing. Note which locations have none.",
+      "linkLine": "Reservations on every restaurant location page: {demo-link}"
+    },
+    {
+      "angle": "A specific recent dish",
+      "line": "That {specific recent job} you posted looked like a reason to try your newest restaurant. It deserves a place on that location's menu page, not just a few days in the feed.",
+      "hook": "Pick their newest dish, chef's special or event post and name it exactly.",
+      "linkLine": "That dish, kept on the right location's menu page: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, that {specific recent job} you posted is the kind of dish people cross town for.\n\nI was looking at {Business Name}'s locations in {City} and noticed every restaurant shares one page and the menus are PDFs, so a diner can't see the nearest site's hours or menu in a few taps. I sketched a sample site with a page per location and real text menus, with marked placeholders where your photos would go.\n\nWould it help to see it before your next marketing meeting?",
+    "dm2": "{Owner}, following up in case my note got lost in a busy week. Here's the sample site for {Business Name}: {demo-link}\n\nIt has a page per location with its own hours, menu and order button, private dining rooms with an enquiry form, a careers page and gift cards for every restaurant. Nothing goes live without your sign-off. If it's not for you, just say so.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for restaurant groups here in {City}. I sent a sample site for {Business Name} a few days ago, did it reach you?\"\n\nIF NO:\n\"No problem. Short version: a page for each of your locations with its own hours, menu and order button, private dining by room, and a careers page, with marked placeholders where your photos would go. Can I email the link to you and whoever handles marketing?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"Most groups your size have a site that was built when you had one restaurant. This one is built around locations. The build runs {Build Range} depending on how many sites and concepts, then {Care Range} a month for hosting, menu changes and new locations. For your group I'd quote about {Build Price}.\"\n\"Who else should see it, your GM or your marketing lead? I can walk you both through it in fifteen minutes.\"\n\nCLOSE:\n\"I'll send a one-page scope with the location list and a deposit invoice. You approve every page before launch, and each new location after that is a page, not a project.\"",
+    "objections": [
+      {
+        "objection": "Our site was redone a couple of years ago.",
+        "handler": "\"That's fair. The question is whether it was built for the number of locations you have now. If a new restaurant means calling a developer, it wasn't.\""
+      },
+      {
+        "objection": "The delivery apps bring in most of our orders.",
+        "handler": "\"Keep them. Direct pickup is for the regulars who'd rather not pay app prices, and every order through your own button is one you don't share a cut of.\""
+      },
+      {
+        "objection": "Each location manager handles their own social.",
+        "handler": "\"Good, they know their guests. The site gives each manager a location page that pulls their hours and specials, so what they post and what the site says stop disagreeing.\""
+      },
+      {
+        "objection": "We're about to open another location, let's wait.",
+        "handler": "\"That's the best time to start. The new location launches with its own page on day one instead of a post that says 'coming soon'.\""
+      },
+      {
+        "objection": "Our marketing agency handles the website.",
+        "handler": "\"Then I'm happy to work alongside them. They keep the campaigns; I build the location pages, ordering and private dining forms they'd send traffic to.\""
+      },
+      {
+        "objection": "I need the partners to sign off on this.",
+        "handler": "\"Of course. I'll send a one-page summary with the scope, the location list and the price, so they can decide without a meeting.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}, and for your group about {Build Price}, covering every location page, real text menus, private dining and careers. Monthly care is {Care Range}, which covers menu changes and each new opening.\""
+      }
+    ],
+    "email": {
+      "subject": "Location pages for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for restaurant groups around {City}. {Business Name}'s restaurants have loyal guests, but the site puts every location on one page and the menus are PDFs, so a diner near one of your sites can't see its hours, menu or order button quickly.\n\nI built a sample first rather than ask for your time: a page per location with its own hours, real text menus and ordering, private dining rooms with an enquiry form, a careers page and gift cards that work at every restaurant, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you'd like it, I move it to your domain and finish it for {Build Range}, plus {Care Range} a month for hosting, menu changes and new locations. You approve every page before it goes live. If not, no problem, it comes down at the end of the month.\n\nWorth fifteen minutes with you and your marketing lead this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"{Owner}, it's {Your Name}. I build websites for restaurant groups in {City}, and I made a sample for {Business Name} with a page for each location, real menus and private dining. I'll email the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm taking the {Business Name} location-page sample down on Friday to free up the space.\n\nShould I keep it up for you and the team? One word is fine either way.",
+    "nurture": "Hi {Owner}, the holiday party season is close and private dining enquiries usually start now. The restaurant group came to mind.\n\nThe location-page site is still here if you want it, same price as before. {demo-link} if you'd like another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Price by location and concept, not by page. Each new location is a fixed add-on the group can plan for.",
+      "Quote one menu source for all locations; site-specific menu differences are part of each location's setup.",
+      "Keep direct ordering separate from the site so the group can see what ordering alone costs and earns.",
+      "Private dining is priced per room, because each room has its own capacity, menus and enquiry routing.",
+      "Build a sign-off round for the GM and the marketing lead into every quote; two or three people approve.",
+      "Anything that connects to their point-of-sale, reservation or scheduling system is quoted after a look at that system, never before."
+    ],
+    "lineItems": [
+      {
+        "item": "Additional location page (each)",
+        "min": 600,
+        "max": 1500,
+        "unit": "per-page",
+        "description": "Max with its own menu differences, private dining room, map and parking notes, reviews and ordering links for that restaurant.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Additional restaurant concept section",
+        "min": 2000,
+        "max": 5000,
+        "unit": "one-time",
+        "description": "Max when the concept needs its own look inside the group site, its own menus and a separate domain pointed at it.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Private dining room page with enquiry routing (each)",
+        "min": 400,
+        "max": 1000,
+        "unit": "per-page",
+        "description": "Max with floor plans, set menus with minimum spends, and the enquiry sent to that location's events lead.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Menu migration from PDFs to editable text",
+        "min": 800,
+        "max": 2500,
+        "unit": "one-time",
+        "description": "Max with several concepts, location-only dishes, dietary marks and prices that differ by site.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Careers section with roles by location",
+        "min": 1200,
+        "max": 3000,
+        "unit": "one-time",
+        "description": "Max with a role page per position, an apply form routed to each location's manager and a staff story section.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Gift card store setup",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "description": "Max with corporate bulk orders, custom amounts, printed card fulfilment and a balance check.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Catering menu and headcount order form",
+        "min": 1200,
+        "max": 3500,
+        "unit": "one-time",
+        "description": "Max when orders route to the nearest kitchen by delivery address and include deposits and lead-time rules.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Opening launch page for a new location",
+        "min": 500,
+        "max": 1200,
+        "unit": "one-time",
+        "description": "Max with a soft-opening sign-up list, opening night reservations and a countdown that turns into the location page.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Food and dining room photo day per location",
+      "min": 900,
+      "max": 2500,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"One day per restaurant for the signature dishes, the dining room and the team, so every location page has its own photos instead of borrowing from the flagship.\"",
+      "when": "Month 1, location by location, before the menus go live."
+    },
+    {
+      "name": "Google profile management for every location",
+      "min": 300,
+      "max": 900,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Each restaurant location's Google profile kept in step with the site: hours, holiday closures, menu link and a weekly post, so no listing goes stale.\"",
+      "when": "Day 30, once the location pages are live."
+    },
+    {
+      "name": "Review request flow per location",
+      "min": 200,
+      "max": 600,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"After a direct order or a reservation, the guest gets a short note asking for a review of that exact restaurant, so newer locations catch up with the flagship.\"",
+      "when": "Month 2, once direct orders or reservations flow through the site."
+    },
+    {
+      "name": "Neighbourhood pages around each location",
+      "min": 400,
+      "max": 900,
+      "unit": "per-page",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A page for the neighbourhoods each restaurant serves, with the nearest location, parking and the dishes people there order most, so the group shows up in each area's searches.\"",
+      "when": "Month 3, starting with the newest location."
+    },
+    {
+      "name": "Holiday party and private dining campaign",
+      "min": 1200,
+      "max": 3000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Before party season, a private dining landing page, set menus by room, an email to past organisers and posts for every location, so the rooms fill early.\"",
+      "when": "Eight weeks before the holiday party season."
+    },
+    {
+      "name": "Guest email newsletter across the group",
+      "min": 400,
+      "max": 1200,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A monthly email to guests with each location's new dishes, events and openings, segmented by the restaurant they actually visit.\"",
+      "when": "Month 3, once the site is collecting emails from orders and gift cards."
+    },
+    {
+      "name": "Menu boards and in-store signage refresh",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Table cards, window signs and menu boards for each restaurant matching the new site, with a scan code that opens that location's menu and ordering.\"",
+      "when": "Month 2, after the new menus are approved."
+    },
+    {
+      "name": "Opening campaign for a new location",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"For each new restaurant: a launch page, a sign-up list for opening week, local posts and an email to guests of the nearest existing location.\"",
+      "when": "Six to eight weeks before any opening the group announces."
+    },
+    {
+      "name": "Short video clips from the kitchens",
+      "min": 1000,
+      "max": 3000,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Half a day in each kitchen filming the chefs plating the signature dishes, cut into short clips for every location page and social account.\"",
+      "when": "Month 4, or with each seasonal menu change."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Specialty food suppliers to the group",
+        "whoPays": "The supplier, a produce, meat or bakery wholesaler",
+        "min": 4000,
+        "max": 12000,
+        "unit": "one-time",
+        "pitchLine": "\"The bakery and produce suppliers that deliver to your restaurants every morning sell to other kitchens too. An introduction from a group account opens their door.\"",
+        "whyItWorks": "Suppliers prize multi-site restaurant accounts and listen to them; most still take orders by phone and need a wholesale site."
+      },
+      {
+        "route": "Event planners who book the private dining rooms",
+        "whoPays": "The event planning business",
+        "min": 2500,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"The planners who book your private dining rooms for corporate dinners need portfolio sites themselves, and they'll take a call from a venue that sends them clients.\"",
+        "whyItWorks": "Planners and venues refer both ways, and a planner wants to stay on the venue's preferred list."
+      },
+      {
+        "route": "Landlords and shopping centre owners",
+        "whoPays": "The commercial landlord or centre manager",
+        "min": 5000,
+        "max": 15000,
+        "unit": "one-time",
+        "pitchLine": "\"The centres that lease to your restaurants need tenant directories and leasing pages. A tenant they want to keep is a strong introduction.\"",
+        "whyItWorks": "Landlords court established restaurant operators and listen to them; their own sites are often an old directory."
+      },
+      {
+        "route": "Wine and spirits distributors' small producers",
+        "whoPays": "The winery or small spirits producer",
+        "min": 3000,
+        "max": 8000,
+        "unit": "one-time",
+        "pitchLine": "\"The small wineries and producers on your drinks lists want to show where they're poured. An introduction from the beverage manager gets me in.\"",
+        "whyItWorks": "Small producers depend on restaurant placements and value a buyer's recommendation above any cold pitch."
+      },
+      {
+        "route": "Kitchen equipment and refrigeration service firms",
+        "whoPays": "The equipment service company",
+        "min": 3000,
+        "max": 9000,
+        "unit": "one-time",
+        "pitchLine": "\"The refrigeration and kitchen equipment techs who keep your walk-ins cold serve every restaurant in the area. Their site needs an emergency call-out page.\"",
+        "whyItWorks": "Service firms win on response time and trust; a multi-site restaurant group is their best reference."
+      },
+      {
+        "route": "Staff alumni opening their own places",
+        "whoPays": "Each new owner, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"Chefs and managers who leave the group to open their own restaurant need a site the same month. A word from their old boss is the best introduction there is.\"",
+        "whyItWorks": "Restaurant people stay close to the operators who trained them and ask them who built their site."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Order intake assistant for the group's suppliers",
+        "whoPays": "The wholesale supplier, monthly",
+        "min": 300,
+        "max": 900,
+        "unit": "monthly",
+        "pitchLine": "\"Suppliers that serve your restaurants take orders by text and voicemail at night. An assistant turns those into a draft order sheet for the morning picker to check.\"",
+        "whyItWorks": "Order mistakes cost suppliers accounts, and your group's introduction makes the first trial easy."
+      },
+      {
+        "route": "Proposal drafts for event planners",
+        "whoPays": "The event planning business, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Planners who book your rooms write the same dinner proposals each week. An assistant drafts them from the venue's set menus and room details for the planner to edit.\"",
+        "whyItWorks": "Faster proposals win more events, and the venue's room data is already structured."
+      },
+      {
+        "route": "Tenant enquiry assistant for centre landlords",
+        "whoPays": "The commercial landlord, monthly",
+        "min": 300,
+        "max": 800,
+        "unit": "monthly",
+        "pitchLine": "\"Centre managers field the same leasing questions every week. An assistant answers from the unit list and books viewings, so the manager only meets serious restaurant and retail tenants.\"",
+        "whyItWorks": "Empty units cost landlords every month, and a tenant's introduction lowers the bar to try it."
+      },
+      {
+        "route": "Tasting note and pairing drafts for small producers",
+        "whoPays": "The winery or spirits producer, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Producers send restaurants sell sheets with each new release. An assistant drafts tasting notes and food pairings from the winemaker's notes, ready for their edit.\"",
+        "whyItWorks": "Small producers have no marketing team, and restaurant buyers ask for pairing notes."
+      },
+      {
+        "route": "Service call triage for equipment firms",
+        "whoPays": "The equipment service company, monthly",
+        "min": 250,
+        "max": 700,
+        "unit": "monthly",
+        "pitchLine": "\"When a kitchen's freezer alarm goes off at night, an assistant collects the unit, the symptoms and the location, and drafts the dispatch note for the on-call tech.\"",
+        "whyItWorks": "Faster triage keeps restaurant accounts, and the group is the reference that sells it."
+      },
+      {
+        "route": "Menu and costing assistant for alumni restaurants",
+        "whoPays": "The new restaurant owner, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Former chefs opening their own place need menus costed and described. An assistant drafts dish descriptions and plate costs from their recipes for them to check.\"",
+        "whyItWorks": "New owners are short on time and trust a tool their old group already uses."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Hours and holiday closure sync across every listing",
+      "kind": "automation",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"Change a location's hours once and the site, every Google listing and the order pages update together, so no restaurant shows the wrong closing time.\"",
+      "whenAndWhatItTakes": "Day 30. Needs access to each location's listings and who approves hours changes."
+    },
+    {
+      "name": "Review reply drafts per location in the house voice",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Every new review for any restaurant gets a reply drafted in the group's voice that names the dish or the server, sent to that location's manager to approve.\"",
+      "whenAndWhatItTakes": "Month 1. Needs a few approved replies and each manager's contact. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Private dining enquiry router and proposal builder",
+      "kind": "software",
+      "oneTimeMin": 2500,
+      "oneTimeMax": 7000,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"Each private dining enquiry goes to the right location's events lead with the date, headcount and room, and a proposal with set menus is one click away.\"",
+      "whenAndWhatItTakes": "Month 2. Needs every room's capacity, set menus, minimum spends and who handles events at each restaurant."
+    },
+    {
+      "name": "Event enquiry follow-up sequence",
+      "kind": "automation",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 99,
+      "monthlyMax": 199,
+      "pitchLine": "\"A private dining enquiry that hasn't booked gets a polite follow-up with the room's menus, then a last note before the date is released.\"",
+      "whenAndWhatItTakes": "Month 2, with the enquiry router. Needs the follow-up wording and the release rules."
+    },
+    {
+      "name": "Direct pickup ordering for every location",
+      "kind": "software",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 9000,
+      "monthlyMin": 199,
+      "monthlyMax": 499,
+      "pitchLine": "\"Guests order pickup straight from the restaurant they choose, with that location's menu and prep times, and the order lands on that kitchen's screen.\"",
+      "whenAndWhatItTakes": "Month 2. Needs each location's menu, prep times and how their kitchen receives orders today."
+    },
+    {
+      "name": "One menu manager for every location",
+      "kind": "software",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 12000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Change a dish, a price or a dietary mark once and choose which restaurants it applies to. The site, ordering and the scan-code menus all follow.\"",
+      "whenAndWhatItTakes": "Month 3. Needs every concept's menu and which dishes or prices differ by location."
+    },
+    {
+      "name": "Guest question assistant for hours, parking and allergens",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 300,
+      "monthlyMax": 800,
+      "pitchLine": "\"On the site and in direct messages, it answers which location is open late, where to park and what's nut-free from the kitchen's own notes, and books the table.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the location pages, the dietary key signed off by each kitchen and the booking links. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Careers portal with applicants routed by location",
+      "kind": "software",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Applicants pick a role and a restaurant, and the right manager sees them the same day with their availability, instead of a shared inbox nobody owns.\"",
+      "whenAndWhatItTakes": "Month 3, or the next hiring push. Needs roles per location and each manager's contact."
+    },
+    {
+      "name": "Server and line cook applicant screener",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 200,
+      "monthlyMax": 500,
+      "pitchLine": "\"Applicants answer a few questions about shifts, experience and the nearest location, and managers get a short draft summary to decide who to call.\"",
+      "whenAndWhatItTakes": "Month 4, with the careers portal. Needs each role's must-haves. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Gift card and corporate bulk order store",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"Gift cards that work at every restaurant in the group, with bulk orders for companies and a balance check, sold from the site all year.\"",
+      "whenAndWhatItTakes": "Month 2, ideally before the holidays. Needs how cards are redeemed at each location today."
+    },
+    {
+      "name": "Catering order builder routed to the nearest kitchen",
+      "kind": "software",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Office managers build a catering order by headcount and the order goes to the restaurant kitchen closest to the delivery address, with the deposit taken.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the catering menu, lead times and which kitchens cater."
+    },
+    {
+      "name": "Lapsed-guest win-back by restaurant",
+      "kind": "automation",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Guests who ordered direct and haven't been back in a couple of months get a note about what's new at the location they used, with an offer the manager sets.\"",
+      "whenAndWhatItTakes": "Month 5. Needs three months of direct order history and the offer rules."
+    },
+    {
+      "name": "Menu description and dietary card drafts",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"When the chef adds a dish, it drafts the menu description and the dietary marks from the recipe for the kitchen to confirm, ready for every location that serves it.\"",
+      "whenAndWhatItTakes": "Month 4, with the menu manager. Needs a few approved descriptions. Comes with the AI maintenance retainer; the kitchen confirms every dietary mark."
+    },
+    {
+      "name": "Location performance dashboard",
+      "kind": "software",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 18000,
+      "monthlyMin": 300,
+      "monthlyMax": 900,
+      "pitchLine": "\"Direct orders, private dining enquiries, reviews and site visits for each restaurant on one screen, so the Monday meeting compares locations on the same numbers.\"",
+      "whenAndWhatItTakes": "Month 6. Needs three months of site data and exports from their ordering and reservation systems."
+    },
+    {
+      "name": "Phone answering for pickup orders by location",
+      "kind": "ai",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 400,
+      "monthlyMax": 1200,
+      "pitchLine": "\"During the dinner rush, calls to any location get answered, the pickup order is taken from that restaurant's menu and sent to its kitchen, and staff stay on the floor.\"",
+      "whenAndWhatItTakes": "Month 6, after direct ordering. Needs each location's menu, number and call rules. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Shift cover board across locations",
+      "kind": "software",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 9000,
+      "monthlyMin": 200,
+      "monthlyMax": 500,
+      "pitchLine": "\"When a server calls in sick at one restaurant, the open shift goes to trained staff at the other locations first, and the manager approves the swap.\"",
+      "whenAndWhatItTakes": "Month 6. Needs staff roles, which locations they're trained for and the scheduling system they use."
+    },
+    {
+      "name": "Supplier invoice reader that flags price jumps",
+      "kind": "ai",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 300,
+      "monthlyMax": 800,
+      "pitchLine": "\"Supplier invoices from every kitchen are read and compared, and the ops lead gets a weekly draft list of items that went up and which restaurants paid more.\"",
+      "whenAndWhatItTakes": "Month 7. Needs a few months of invoices from each location. Comes with the AI maintenance retainer; staff check every flag."
+    },
+    {
+      "name": "Prep forecast per location from order history",
+      "kind": "ai",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 15000,
+      "monthlyMin": 400,
+      "monthlyMax": 1200,
+      "pitchLine": "\"Each kitchen gets a draft prep list for tomorrow from its own order history, the day of the week and booked private dining, for the chef to adjust.\"",
+      "whenAndWhatItTakes": "Month 9. Needs six months of sales by item per location. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Group loyalty programme across restaurants",
+      "kind": "software",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 15000,
+      "monthlyMin": 300,
+      "monthlyMax": 900,
+      "pitchLine": "\"Guests earn at any restaurant and spend at another, which sends regulars of the flagship to try the newer locations.\"",
+      "whenAndWhatItTakes": "Month 8. Needs the reward rules the partners agree and how each point-of-sale records a guest."
+    },
+    {
+      "name": "New-hire training quizzes per role",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 200,
+      "monthlyMax": 600,
+      "pitchLine": "\"New servers and cooks get short quizzes on the menu, allergens and service steps for their restaurant, drafted from the group's own manuals, and managers see who's ready.\"",
+      "whenAndWhatItTakes": "Month 10. Needs training manuals and menu specs per concept. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the multi-location restaurant template",
+      "whoPays": "Other restaurant groups, one-time plus monthly",
+      "min": 8000,
+      "max": 20000,
+      "unit": "one-time",
+      "pitchLine": "\"Location pages, one menu source, private dining and careers are the same problem for every restaurant group. The structure I built for one fits the next with their brand.\"",
+      "whyItWorks": "The hard part, menus by location and enquiry routing, is built once and reused."
+    },
+    {
+      "route": "Restaurant association member offer",
+      "whoPays": "The regional restaurant association",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer members a location-page and direct ordering package at a member rate. Associations look for benefits that keep restaurant owners renewing.\"",
+      "whyItWorks": "Associations need visible member benefits, and multi-site members are the ones who pay most dues."
+    },
+    {
+      "route": "Franchise brands and their franchisees",
+      "whoPays": "The franchisor, then each franchisee monthly",
+      "min": 15000,
+      "max": 60000,
+      "unit": "one-time",
+      "pitchLine": "\"A franchisor needs a page per franchise location with brand-controlled menus and local hours. It's the same build at a larger scale.\"",
+      "whyItWorks": "Franchisors pay once for the system and franchisees pay monthly for their location page."
+    },
+    {
+      "route": "Food hall and market operators",
+      "whoPays": "The food hall operator",
+      "min": 8000,
+      "max": 25000,
+      "unit": "one-time",
+      "pitchLine": "\"A food hall is a restaurant group with many owners. A page per stall, one ordering cart and an events calendar is the build they keep asking for.\"",
+      "whyItWorks": "Operators sell foot traffic to vendors, and a shared ordering site is easy to justify to them."
+    },
+    {
+      "route": "Hospitality management companies",
+      "whoPays": "The management company, per managed restaurant",
+      "min": 3000,
+      "max": 8000,
+      "unit": "one-time",
+      "pitchLine": "\"Companies that run restaurants for owners and investors need the same location pages across every site they manage, under each owner's brand.\"",
+      "whyItWorks": "One contract covers many restaurants, and the reporting dashboard matters to their investors."
+    },
+    {
+      "route": "White-label for hospitality marketing agencies",
+      "whoPays": "The agency, per restaurant group client",
+      "min": 4000,
+      "max": 12000,
+      "unit": "one-time",
+      "pitchLine": "\"Agencies that run social and ads for restaurant groups need a site that converts that traffic. I build it under their name.\"",
+      "whyItWorks": "Agencies own the relationship and want a delivery partner for the build they don't do."
+    },
+    {
+      "route": "Restaurant point-of-sale resellers",
+      "whoPays": "The local reseller, per restaurant site set up",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Local resellers install tills in new restaurants every month. Offer each one a matching ordering site and location page as part of the install.\"",
+      "whyItWorks": "Resellers want a bigger ticket per install and a reason the restaurant keeps the system."
+    },
+    {
+      "route": "Commercial real estate brokers leasing restaurant space",
+      "whoPays": "The brokerage, per listing campaign",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Brokers leasing former restaurant spaces need a page showing the kitchen, hood and seating to the right operators. I build those listing pages for them.\"",
+      "whyItWorks": "Second-generation restaurant space leases faster when operators can see the fit-out."
+    },
+    {
+      "route": "Hotel and venue restaurants",
+      "whoPays": "The hotel or venue's food and beverage director",
+      "min": 6000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Hotels with several outlets have the same problem as a restaurant group: each bar and restaurant needs its own menu, hours and booking. The structure carries straight over.\"",
+      "whyItWorks": "Food and beverage directors have budget and want outlets to sell to locals, not only to guests."
+    },
+    {
+      "route": "Culinary schools and incubator kitchens",
+      "whoPays": "The school or incubator, per cohort",
+      "min": 3000,
+      "max": 9000,
+      "unit": "one-time",
+      "pitchLine": "\"Each cohort of graduates opening restaurants needs a site and ordering on day one. I build a template the school offers every graduate.\"",
+      "whyItWorks": "Schools sell outcomes, and a launch kit for graduates is a selling point that repeats every year."
+    },
+    {
+      "route": "One restaurant group per cuisine per city",
+      "whoPays": "A restaurant group with a different cuisine or city",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I build for one restaurant group per cuisine in each city, so you never share a builder with your direct rival. Your cuisine in {City} is open today.\"",
+      "whyItWorks": "Exclusivity is a real selling point to groups that compete for the same diners and landlords."
+    },
+    {
+      "route": "Investor reporting pack for restaurant funds",
+      "whoPays": "The fund or family office backing several restaurant groups",
+      "min": 10000,
+      "max": 30000,
+      "unit": "one-time",
+      "pitchLine": "\"Investors who back several restaurant groups want the same location dashboard across all of them. One build, rolled out to each group they fund.\"",
+      "whyItWorks": "Investors want comparable numbers across their portfolio and will pay for the reporting layer."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Location-page site build plus care plan, one contract",
+      "min": 10000,
+      "max": 25000,
+      "unit": "one-time",
+      "trigger": "The GM and the partners approve the scope and the location list.",
+      "line": "\"The site and the care plan sit on one contract, so a menu change or a new restaurant location is a message to me, not a new project.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Google profile management for every location",
+      "min": 300,
+      "max": 900,
+      "unit": "monthly",
+      "trigger": "The location pages go live and one listing still shows old hours.",
+      "line": "\"The pages are right; now let's keep every location's Google listing saying the same thing.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "Food and dining room photo day per location",
+      "min": 900,
+      "max": 2500,
+      "unit": "per-shoot",
+      "trigger": "Location pages still show marked placeholders where photos go.",
+      "line": "\"Each restaurant deserves its own dining room and dishes on its page, not the flagship's.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Direct pickup ordering for every location",
+      "min": 3000,
+      "max": 9000,
+      "unit": "one-time",
+      "trigger": "Sixty days of menu page visits, and the order button still sends guests to delivery apps.",
+      "line": "\"Plenty of people read the menus and then leave for an app. Let's give them a pickup button that's yours.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Private dining enquiry router and proposal builder",
+      "min": 2500,
+      "max": 7000,
+      "unit": "one-time",
+      "trigger": "Private dining enquiries arrive and the events leads say they reply by hand.",
+      "line": "\"Your events leads are writing the same proposal over and over. Let the enquiry build the first draft for the right restaurant.\""
+    },
+    {
+      "rung": 6,
+      "day": 120,
+      "offer": "Careers portal with applicants routed by location",
+      "min": 3000,
+      "max": 8000,
+      "unit": "one-time",
+      "trigger": "The group posts for staff at several locations at once.",
+      "line": "\"You're hiring at several restaurants. Let each manager see their own applicants the same day.\""
+    },
+    {
+      "rung": 7,
+      "day": 180,
+      "offer": "Guest question assistant for hours, parking and allergens",
+      "min": 3000,
+      "max": 8000,
+      "unit": "one-time",
+      "trigger": "Managers say the same questions about hours and allergens fill the inbox at every location.",
+      "line": "\"The same questions arrive at every restaurant. Let an assistant answer from the kitchen's own notes and book the table.\""
+    },
+    {
+      "rung": 8,
+      "day": 365,
+      "offer": "Location performance dashboard",
+      "min": 6000,
+      "max": 18000,
+      "unit": "one-time",
+      "trigger": "The first anniversary, or the partners ask which location the site helps most.",
+      "line": "\"A year in, let's put every restaurant's orders, enquiries and reviews on one screen before you plan the next location.\""
+    }
+  ]
+}

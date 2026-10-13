@@ -8,7 +8,7 @@ Format version: **1** (`team/schema.json`). Files from an older version are migr
 | Path | Holds | Written by |
 |---|---|---|
 | `team/schema.json` | `{ "version": 1 }` | Super admin |
-| `team/workspace.json` | name, studio, demo domain, based line, feature switches | Admin, super admin |
+| `team/workspace.json` | name, studio, demo domain, based line, feature switches, exchange rates (`markets.rates`: CAD and AED per USD, optional) | Admin, super admin |
 | `team/teams.json` | teams and their managers | Admin, super admin |
 | `team/users/<username>.json` | role, team, status, temporary password hash, `rev`, `pwRev` | Admin, super admin |
 | `team/data/<username>/` | everything below | **Only that person's app** |
@@ -68,7 +68,7 @@ All JSON is written with sorted keys, two-space indent, LF line endings and a tr
 
 **`team/data/<u>/profile.json`**: `{ "defaultDevice": "desktop", "passwordHash": "$2b$12$…", "basedOnRev": 1 }`
 
-**`team/data/<u>/kits/<id>.json`**: inputs only, rebuilt on view: `id, owner, title, status (draft|active|paused|archived), category, device, state, city, city_is_free, direction, created_at, updated_at`.
+**`team/data/<u>/kits/<id>.json`**: inputs only, rebuilt on view: `id, owner, title, status (draft|active|paused|archived), category, device, state, city, city_is_free, direction, created_at, updated_at`, and for UAE kits an optional `site_lang` (`en`, `ar` or `bi`). `state` is a US state, a Canadian province (`ON`) or an emirate (`DXB`); the country follows from the code.
 
 **`team/data/<u>/leads/<id>.json`**: the old `leads` columns (`business_name … notes`, `stage`, `replied`, `next_action_date`, `sequence_step`, the ten `check_*` booleans) plus `owner`, `assignedTo` (null in the unassigned queue), `sourceRef` (`{ owner, id }` on an accepted copy) and `kit_id`. **Score and tier are not stored**; they are computed from the checks.
 

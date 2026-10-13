@@ -1,0 +1,883 @@
+{
+  "schemaVersion": 1,
+  "category": "Assisted living & senior communities",
+  "slug": "assisted-living-senior-communities",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · expansion batch (healthcare + mid-size)",
+    "generatedAt": "2026-10-13",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Leaned on the board note: a family decision made over weeks, won by floor plans, care levels, tour booking and honest price ranges. Written for an executive or sales director at one community or a small group. Family portal and pre-opening leasing ranges are the least certain."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Floor plans and apartment availability",
+      "contains": "Each apartment type with a drawn layout, size as supplied, which care levels it suits, a video walkthrough, what's available now and a waitlist for the rest",
+      "why": "Families picture a parent's daily life room by room. A floor plan on a phone screen, not a sideways PDF, is what gets the tour booked."
+    },
+    {
+      "section": "Independent, assisted and memory care living",
+      "contains": "What each level includes day to day, how care needs are assessed, how a resident moves between levels, and short respite stays where the community offers them",
+      "why": "Most families arrive unsure which level a parent needs. The community that explains the levels and the assessment calmly gets the first visit."
+    },
+    {
+      "section": "Monthly pricing ranges and what's included",
+      "contains": "Monthly ranges by apartment type and care level [as supplied], any community or entrance fee, what's included such as meals, housekeeping and transport, and what costs extra",
+      "why": "Adult children shortlist on cost before they tour. An honest range builds more trust than 'call for pricing' and filters out the wrong fit."
+    },
+    {
+      "section": "Memory care neighbourhood",
+      "contains": "The secure neighbourhood layout, the daily rhythm, staff training as the community supplies it, family visiting and involvement, and how residents are kept safe without feeling confined",
+      "why": "A family facing a dementia diagnosis visits only after they've seen how the memory care day works and who is trained to run it."
+    },
+    {
+      "section": "Daily life: dining, activities and outings",
+      "contains": "This month's activities calendar, dining menus and the dining room, outings and transport, clubs residents run, and a short note on visiting hours for families",
+      "why": "Parents ask about food and company first. A current calendar and menu show a lively senior community; an old one reads as a quiet building."
+    },
+    {
+      "section": "From first tour to move-in day",
+      "contains": "Book a tour or a lunch visit, the care assessment, choosing an apartment, the deposit, move-in coordination with movers and the first-week welcome",
+      "why": "The decision takes weeks and involves several family members. Showing every step makes the next one feel manageable."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C34",
+      "siteType": "local-conversion",
+      "name": "Front Room",
+      "heroLayout": "split-photo",
+      "mood": [
+        "warm",
+        "homely",
+        "unhurried"
+      ],
+      "bestFor": "A single community replacing a dated site with clear care levels, a price range and a Book a tour button on every page",
+      "pairsWithTier": "starter",
+      "headlineSample": "Assisted living in {City} that feels like home",
+      "whyItFits": "Cacao's warm browns and bookish serif feel like a lived-in front room, and a split hero puts the building beside the tour button."
+    },
+    {
+      "id": "b",
+      "themeId": "C8",
+      "siteType": "booking-first",
+      "name": "Tour Day",
+      "heroLayout": "card-stack",
+      "mood": [
+        "reassuring",
+        "orderly",
+        "friendly"
+      ],
+      "bestFor": "Senior living communities whose sales team runs on tours, with floor plans, pricing ranges and a live tour calendar",
+      "pairsWithTier": "standard",
+      "headlineSample": "Book a tour of our {City} senior community this week",
+      "whyItFits": "The family combo, Private Vault, suits advisory firms; Evergreen Trust keeps that trust but reads as retirement, and its stacked cards route each family to tour, floor plans or pricing."
+    },
+    {
+      "id": "c",
+      "themeId": "C41",
+      "siteType": "premium-brand",
+      "name": "The Residence",
+      "heroLayout": "full-bleed-photo",
+      "mood": [
+        "gracious",
+        "spacious",
+        "refined"
+      ],
+      "bestFor": "Upscale communities and small groups selling independent living lifestyle, fine dining and memory care under one name",
+      "pairsWithTier": "premium",
+      "headlineSample": "Retirement living in {City}, with care when it's needed",
+      "whyItFits": "Gallery White's open white space and Didone headings give the gracious feel these families pay for, and a full-bleed hero sells the dining room and gardens."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "Call for pricing",
+      "line": "Every floor plan on your community's site says 'call for pricing'. Adult children comparing assisted living after dinner shortlist the places that give at least a monthly range.",
+      "hook": "Check the floor plan and pricing pages. If no range appears anywhere, lead with this. Screenshot it for when they reply.",
+      "linkLine": "Honest pricing ranges on a senior living site: {demo-link}"
+    },
+    {
+      "angle": "Floor plans as PDFs",
+      "line": "Your floor plans are PDFs that open sideways on a phone. Families comparing senior living apartments on a phone give up partway through the download.",
+      "hook": "Open their floor plans on a phone. Note whether they're PDFs, how slow they load and whether availability is shown.",
+      "linkLine": "Floor plans that work on a phone, with availability: {demo-link}"
+    },
+    {
+      "angle": "Tours by phone only",
+      "line": "Booking a tour of your community means phoning the sales office on a weekday. Adult children who work all day do their assisted living research in the evening.",
+      "hook": "Look for an online tour booking. If it's a phone number or a generic contact form, use this.",
+      "linkLine": "Assisted living tours booked online, any evening: {demo-link}"
+    },
+    {
+      "angle": "Slow on a phone",
+      "line": "Your senior living site took a long while to load on my phone, and the tour button sat below a large slideshow. Most families start that search on a phone.",
+      "hook": "Load the site on a phone over mobile data. Note the load time and how far down the tour button sits.",
+      "linkLine": "Your community's site, fast on a phone: {demo-link}"
+    },
+    {
+      "angle": "Stale activities calendar",
+      "line": "The activities calendar on your senior community site is several months old. Families read an old calendar as a quiet building, even when the lounge is full every afternoon.",
+      "hook": "Find the activities or events page and note the latest month shown.",
+      "linkLine": "A living calendar for a lively community: {demo-link}"
+    },
+    {
+      "angle": "Memory care in one line",
+      "line": "Your site mentions memory care in a single line. A family facing a dementia diagnosis needs to see the secure neighbourhood and the daily rhythm before they'll visit.",
+      "hook": "Check how much the site says about memory care. Only use this if they advertise memory care.",
+      "linkLine": "A memory care page that families can read before visiting: {demo-link}"
+    },
+    {
+      "angle": "Reviews off the site",
+      "line": "A daughter's Google review describes her father finally looking forward to Friday dinners. Nothing like that appears on the assisted living site, where families actually compare communities.",
+      "hook": "Read their reviews and copy one line about a staff member, the food or a parent settling in. Quote it if they reply.",
+      "linkLine": "Family reviews where senior living decisions happen: {demo-link}"
+    },
+    {
+      "angle": "Hiring with no careers page",
+      "line": "Your community posts openings for care aides, nurses and cooks, but the site has no careers page. Families quietly ask about staffing on tours too.",
+      "hook": "Compare their job posts with the site. If there's no careers page or it's just an email address, use this.",
+      "linkLine": "A careers section for your assisted living team: {demo-link}"
+    },
+    {
+      "angle": "Several communities, one page",
+      "line": "Your group runs several senior communities, but they share one generic page. A family searching for assisted living near their mother's town can't tell which one is closest.",
+      "hook": "Count the communities on their listings and check whether each has its own page with its own floor plans and photos.",
+      "linkLine": "A page for every community, each with its own tour booking: {demo-link}"
+    },
+    {
+      "angle": "Respite stays hidden",
+      "line": "Nothing online mentions short respite stays. Families often try a senior community that way after a hospital stay or when a family carer needs a break.",
+      "hook": "Search the site for 'respite' or 'short stay'. Only use this if they offer it elsewhere, such as on their listing or posts.",
+      "linkLine": "A respite stay page that books a trial visit: {demo-link}"
+    },
+    {
+      "angle": "Licence and oversight",
+      "line": "The site doesn't mention the community's licence or how residents' care is overseen. Families check both before a second tour of an assisted living community.",
+      "hook": "Look for licence or oversight mentions in their listings. Never state a licence, inspection or award they haven't published.",
+      "linkLine": "Your community's licence and care oversight, stated calmly: {demo-link}"
+    },
+    {
+      "angle": "Menus nowhere online",
+      "line": "Your dining room looks inviting in your posts, but the menus aren't on the site. Food is one of the first things a parent asks about when touring senior living.",
+      "hook": "Find dining posts and check the site for menus. Mention the dish or event in the post if they reply.",
+      "linkLine": "Dining menus and the dining room, on the site: {demo-link}"
+    },
+    {
+      "angle": "January touring season",
+      "line": "January brings a rush of families who saw a parent struggle over the holidays. Your community's site has no way to book a tour for that first week back.",
+      "hook": "Use from November through January. Check whether tours can be booked online at all.",
+      "linkLine": "Assisted living tour booking ready for January: {demo-link}"
+    },
+    {
+      "angle": "Children far away",
+      "line": "Many families choosing senior living live hours away from the parent. There's no video walkthrough of an apartment for a son or daughter who can't visit before the decision.",
+      "hook": "Check for video or virtual tours. Look for reviews from family members who live out of town.",
+      "linkLine": "Apartment walkthroughs for families who can't visit yet: {demo-link}"
+    },
+    {
+      "angle": "A specific recent event",
+      "line": "Your post about {specific recent job} showed more of life at the community than the whole home page. Families deciding on assisted living want to see days like that.",
+      "hook": "Pick their newest post about an event, outing, birthday or new menu and name it exactly.",
+      "linkLine": "That senior community story, where families will see it: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, your post about {specific recent job} showed real life at the community, which is what families look for.\n\nI looked at the {Business Name} site the way an adult child would on a weeknight: floor plans as PDFs, 'call for pricing' and no way to book a tour online. I've sketched a sample with floor plans, honest ranges, care levels and tour booking, with marked placeholders where your photos would go.\n\nWould it be useful to see it?",
+    "dm2": "{Owner}, following up in case this got buried. Here's the sample senior living site for {Business Name}: {demo-link}\n\nFloor plans work on a phone, care levels are explained, monthly ranges are shown, and families can book a tour or a lunch visit in the evening. If it's not a priority this quarter, say so and I won't message again.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites and tour booking systems for senior living communities around {City}. I sent you a note last week, did it reach you?\"\n\nIF NO:\n\"No problem. Short version: I built a sample site for {Business Name} with floor plans, pricing ranges, care levels and online tour booking, with marked placeholders where your photos would go. Can I email it to you and your sales director?\"\n\nIF YES:\n\"What did you and your team think?\"\n → let them talk, note who else signs off\n\"A build like this runs {Build Range}, then {Care Range} a month for hosting, calendar and menu updates and privacy-safe forms. For a community your size I'd expect about {Build Price}.\"\n\"Could we book thirty minutes with you and whoever runs tours, so the scope matches how families actually move from enquiry to move-in?\"\n\nCLOSE:\n\"I'll send a written scope with phases and a deposit invoice. We start discovery the week it clears.\"",
+    "objections": [
+      {
+        "objection": "We don't publish prices; every resident's care is different.",
+        "handler": "\"That's why it's a range, not a quote: from this to this for each apartment type, with care levels priced after the assessment. Families shortlist on ranges, and those who can't afford it stop calling your sales team.\""
+      },
+      {
+        "objection": "Our corporate office controls the website.",
+        "handler": "\"Then the scope can be community pages that fit inside the corporate site's rules, or a proposal your office can take to them. Either way the local floor plans, calendar and tours are what families need.\""
+      },
+      {
+        "objection": "We already pay a referral service for leads.",
+        "handler": "\"Keep it if it works. Those families still look you up before touring, and many come straight to you. A site that books the tour directly costs you nothing per move-in.\""
+      },
+      {
+        "objection": "Tours are where we sell, not the website.",
+        "handler": "\"Agreed, and the site's job is to book more tours with families who already understand the care levels and the range. Your sales team spends tours on fit, not basics.\""
+      },
+      {
+        "objection": "We're full right now.",
+        "handler": "\"Good, then the site keeps the waitlist warm and fills the next openings without a scramble, and it helps recruit staff, which every full community needs.\""
+      },
+      {
+        "objection": "What does it cost?",
+        "handler": "\"{Build Range} depending on communities, floor plans and integrations. For you about {Build Price}. A single move-in covers a large share of it.\""
+      }
+    ],
+    "email": {
+      "subject": "Tours, floor plans and {Business Name}'s site",
+      "body": "Hi {Owner},\n\nI build websites and tour booking systems for senior living communities around {City}. Looking at {Business Name} the way an adult child would on a weeknight, I found floor plans as PDFs, 'call for pricing' and no way to book a tour online.\n\nI built a sample rather than ask for a meeting first: floor plans with availability, independent, assisted and memory care explained, honest monthly ranges, a current activities calendar and online tour booking, with marked placeholders where your photos would go:\n\n{demo-link}\n\nResident photos and stories only appear with written consent. A build like this runs {Build Range}, plus {Care Range} a month for hosting, calendar and menu updates and privacy-safe forms.\n\nWould thirty minutes with you and your sales director be worthwhile?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build tour booking sites for senior living communities in {City}, and I made a sample for {Business Name} with floor plans and pricing ranges. I'll email the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm taking the {Business Name} senior living demo down at the end of the week.\n\nShould I keep it up for your team to review? A one-word reply is fine.",
+    "nurture": "Hi {Owner}, January is close, and it's when families who noticed changes over the holidays start booking assisted living tours. Thought of you.\n\nThe sample with floor plans, pricing ranges and tour booking is still here. {demo-link} if your team wants another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Price by communities, floor plans and care levels. Each floor plan and each level is its own content with its own facts to check.",
+      "Peg the build to one or two move-ins. A resident's monthly fee makes the payback easy for the executive director to explain.",
+      "Start with paid discovery: the enquiry-to-move-in steps, the sales system and who approves pricing language.",
+      "Enquiry and pre-admission forms carry health details. Privacy-safe hosting is a priced line in every proposal.",
+      "Calendars and menus change monthly. Price their upkeep into the monthly plan or they go stale again.",
+      "Integrations with the sales or resident system are scoped after discovery, never guessed in the first quote."
+    ],
+    "lineItems": [
+      {
+        "item": "Floor plan page with drawn layout (each)",
+        "min": 200,
+        "max": 600,
+        "unit": "per-page",
+        "description": "Max with a redrawn layout, furniture scale, care levels it suits and a live availability flag.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Video walkthrough per apartment type",
+        "min": 400,
+        "max": 1200,
+        "unit": "per-shoot",
+        "description": "Max with a narrated walkthrough, captions and a version cut short for social posts.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Community page for a group (each community)",
+        "min": 1500,
+        "max": 4000,
+        "unit": "per-page",
+        "description": "Max with its own floor plans, calendar, menus, reviews and tour calendar.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Sales system integration",
+        "min": 3000,
+        "max": 12000,
+        "unit": "one-time",
+        "description": "Max when tours, enquiries and availability sync both ways with the community's sales system.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Pricing range page with included-services table",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "description": "Max with ranges per apartment type and care level, fees and a clear included and extra table.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Second-language version",
+        "min": 1500,
+        "max": 5000,
+        "unit": "one-time",
+        "description": "Max when care levels, floor plans, pricing, tour booking and forms are all translated and reviewed.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Content migration from the old site",
+        "min": 1000,
+        "max": 3000,
+        "unit": "one-time",
+        "description": "Max with many old pages and events, redirects and floor plan PDFs to retire.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Consent and resident-photo policy page set",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A privacy notice, resident and family consent pages and a written policy for photos and stories from community life, so no resident appears online without written consent.\"",
+      "when": "At build. Needs the community's current consent forms and the executive director's sign-off."
+    },
+    {
+      "name": "Accessibility review for older readers",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A full accessibility review of the senior living site, floor plans and tour booking, checked for larger text, contrast, screen readers and keyboard use, with a fix plan.\"",
+      "when": "At build. Parents read the site too, and many use larger text or assistive tools."
+    },
+    {
+      "name": "Advertising-approval-ready community content pack",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Memory care, care level and tour ad copy checked line by line so nothing reads as a promise about a resident's health, then packaged for submission where the regulator requires approval.\"",
+      "when": "Before any paid campaign, or where care-home advertising has its own rules."
+    },
+    {
+      "name": "Resident life photo and video day",
+      "min": 2000,
+      "max": 5000,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A day capturing the dining room, an activity, the gardens and staff at work, with written consent from every resident and family shown, enough for the site and a season of posts.\"",
+      "when": "Month 2, on a day with a well-attended activity."
+    },
+    {
+      "name": "Google profile upkeep for each community",
+      "min": 300,
+      "max": 800,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Each community's Google profile kept current with events, menus, careers posts and answered reviews, so families searching for senior living nearby see an active place.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Family review programme after move-in",
+      "min": 299,
+      "max": 699,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A few months after a parent settles in, the family gets a gentle review request for that community, with a note not to share health details.\"",
+      "when": "Month 3, once move-in dates flow from the sales system."
+    },
+    {
+      "name": "Open house and lunch-visit campaigns",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A seasonal campaign inviting families to an open house or a lunch at the community, with registration on the site and reminders to everyone who signs up.\"",
+      "when": "Pitch in autumn for January, and in spring for summer moves."
+    },
+    {
+      "name": "Paid search management for tour bookings",
+      "min": 1500,
+      "max": 5000,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Search ads for assisted living and memory care in the towns families search from, pointed at the tour booking page, with a monthly report of tours booked per community.\"",
+      "when": "Month 2, after tour booking is live and measurable."
+    },
+    {
+      "name": "Prospective family newsletter",
+      "min": 400,
+      "max": 1200,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A monthly letter for families who've toured but not decided, with community news, the calendar and new availability, so the senior community stays on their shortlist.\"",
+      "when": "Month 3, once enquiries are captured on the site."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Senior move managers",
+        "whoPays": "The move manager",
+        "min": 3000,
+        "max": 8000,
+        "unit": "one-time",
+        "pitchLine": "\"The move manager who packs and sets up apartments for your new residents works from referrals and a phone. A quote-request site would serve every community they work with.\"",
+        "whyItWorks": "Move managers depend on community referrals, and the sales director's introduction carries the sale."
+      },
+      {
+        "route": "Estate sale and downsizing companies",
+        "whoPays": "The estate sale company, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The estate sale company families use before a move to your senior community lists sales on social media. A site with sale listings and a consultation form suits them.\"",
+        "whyItWorks": "They serve the same families at the same moment, and the community can introduce you."
+      },
+      {
+        "route": "The on-site therapy contractor",
+        "whoPays": "The therapy provider",
+        "min": 5000,
+        "max": 15000,
+        "unit": "one-time",
+        "pitchLine": "\"The therapy company running physio and occupational therapy in your community has an old site and recruits constantly. Careers pages and a community partner page would help them.\"",
+        "whyItWorks": "Contracted providers want to look good to the communities they serve, and the executive director knows them well."
+      },
+      {
+        "route": "The pharmacy that delivers to residents",
+        "whoPays": "The pharmacy",
+        "min": 3000,
+        "max": 8000,
+        "unit": "one-time",
+        "pitchLine": "\"The pharmacy delivering residents' medicines takes community orders by fax and phone. A partner ordering page would serve every senior community on its route.\"",
+        "whyItWorks": "The pharmacy values the community as a customer, and its staff feel the ordering pain daily."
+      },
+      {
+        "route": "Real estate agents who sell parents' homes",
+        "whoPays": "The agent, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The agent who sells the family home before a move to assisted living has a generic listing site. A downsizing-focused site would bring them more of these families.\"",
+        "whyItWorks": "Agents value community referrals, and the sales director already sends families their way."
+      },
+      {
+        "route": "Financial planners who plan for care costs",
+        "whoPays": "The planner, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The planner who helps families budget for senior living has a dated site. A consultation booking site with plain care-cost planning pages would suit them.\"",
+        "whyItWorks": "Planners and communities meet the same families, and a warm referral matters in both directions."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Move quote builder for the move manager",
+        "whoPays": "The move manager",
+        "min": 2000,
+        "max": 5000,
+        "unit": "one-time",
+        "pitchLine": "\"A family enters the current home's size and the new senior community floor plan, and the move manager gets a draft quote and packing timeline to check.\"",
+        "whyItWorks": "Move managers lose time quoting by phone, and community referrals make demand steady."
+      },
+      {
+        "route": "Sale listing drafts for the estate sale company",
+        "whoPays": "The estate sale company, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"When a parent downsizes into senior living, photos of the furniture and collections left behind become draft sale listings in the estate sale company's style, ready to check and post.\"",
+        "whyItWorks": "Writing listings is the slow part of every estate sale, and the families come through the senior community."
+      },
+      {
+        "route": "Therapist recruiting assistant for the therapy contractor",
+        "whoPays": "The therapy provider, monthly",
+        "min": 300,
+        "max": 800,
+        "unit": "monthly",
+        "pitchLine": "\"Therapists asking about caseloads, community locations and schedules get answers from the contractor's approved facts, and interviews get booked.\"",
+        "whyItWorks": "Therapy contractors always need staff for the communities they serve, and the introduction comes from a client."
+      },
+      {
+        "route": "Order status assistant for the pharmacy",
+        "whoPays": "The pharmacy, monthly",
+        "min": 200,
+        "max": 600,
+        "unit": "monthly",
+        "pitchLine": "\"Community nurses asking when a resident's order will arrive get the status from the pharmacy's own delivery data, and medicine questions go to a pharmacist.\"",
+        "whyItWorks": "Status calls tie up pharmacy staff all day, and the community makes the introduction."
+      },
+      {
+        "route": "Seller question assistant for the real estate agent",
+        "whoPays": "The agent, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"Families selling a parent's home ask the agent about timing, clearing the house and selling while a parent moves to senior living, and get approved answers and a callback.\"",
+        "whyItWorks": "These sellers have specific questions, and the agent wants to answer them fast without being on call."
+      },
+      {
+        "route": "Care cost intake for the financial planner",
+        "whoPays": "The planner, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Families answer the planner's approved questions about a parent's income, assets and timing, and the planner gets a tidy summary before the first meeting, with no advice given.\"",
+        "whyItWorks": "Planners spend first meetings gathering facts. A summary in advance lets them start on the plan."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Online tour booking with sales pipeline",
+      "kind": "software",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 15000,
+      "monthlyMin": 200,
+      "monthlyMax": 600,
+      "pitchLine": "\"Families book a tour or lunch visit from the senior living site into the sales team's real calendar, and every enquiry lands on one pipeline from first contact to move-in.\"",
+      "whenAndWhatItTakes": "At build. Needs the sales team's calendars, tour types and their enquiry steps. Connects to their sales system if they have one."
+    },
+    {
+      "name": "Privacy-safe enquiry and pre-admission forms",
+      "kind": "software",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 14000,
+      "monthlyMin": 250,
+      "monthlyMax": 700,
+      "pitchLine": "\"Enquiry and pre-admission forms that ask about a parent's care needs arrive on privacy-safe hosting, routed to the right community's sales and wellness staff.\"",
+      "whenAndWhatItTakes": "At build. Needs their current forms, the privacy rules where they operate and who reviews each form."
+    },
+    {
+      "name": "Tour reminders and post-tour follow-up",
+      "kind": "automation",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Families get a reminder with directions before an assisted living tour, and a thank-you with the floor plans they looked at the evening after.\"",
+      "whenAndWhatItTakes": "Month 1, with tour booking. Needs approved wording and floor plan pages."
+    },
+    {
+      "name": "Activities calendar and menu publisher",
+      "kind": "software",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 9000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"The activities director enters the month once, and the calendar and dining menus update on the site, the lobby screen and the family email together.\"",
+      "whenAndWhatItTakes": "Month 1. Needs how the activities and dining teams plan the month today."
+    },
+    {
+      "name": "After-hours enquiry answering for families",
+      "kind": "ai",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 14000,
+      "monthlyMin": 600,
+      "monthlyMax": 1800,
+      "pitchLine": "\"Families asking about care levels, pricing ranges or visiting at night get answers from the community's approved text, and a tour gets booked before morning.\"",
+      "whenAndWhatItTakes": "Month 2. Needs approved answers, tour booking access and a rule that health questions go to the wellness director. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Floor plan availability board",
+      "kind": "software",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 18000,
+      "monthlyMin": 300,
+      "monthlyMax": 900,
+      "pitchLine": "\"Which apartments are open, reserved or coming available shows on each floor plan, updated from the community's own system, so families see what's real.\"",
+      "whenAndWhatItTakes": "Month 3. Needs access to their resident or sales system and rules for what may be shown publicly."
+    },
+    {
+      "name": "Tour follow-up drafts for sales counsellors",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 300,
+      "monthlyMax": 800,
+      "pitchLine": "\"After each tour, the counsellor gets a personal follow-up drafted from their notes, mentioning the apartment and the activity the family liked, ready to edit.\"",
+      "whenAndWhatItTakes": "Month 2, after tour booking. Needs past follow-ups they're proud of. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Waitlist and deposit manager",
+      "kind": "software",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 9000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Families join the waitlist for a floor plan or memory care, pay a deposit online if they choose, and the sales team sees the queue for each apartment type.\"",
+      "whenAndWhatItTakes": "Month 3. Needs waitlist and deposit rules and a payment account."
+    },
+    {
+      "name": "Opening alerts to waitlisted families",
+      "kind": "automation",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 6000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"When an apartment type comes available, families waiting for it hear first, in order, with a link to book a second visit.\"",
+      "whenAndWhatItTakes": "Month 4, after the waitlist manager. Needs availability updates and approved wording."
+    },
+    {
+      "name": "Review reply drafts for each community",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"When a family posts about move-in day or the dining room, the executive director gets a short reply to approve that thanks them without confirming who lives at the community.\"",
+      "whenAndWhatItTakes": "Month 2, with profile upkeep. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Occupancy and enquiry-source dashboard",
+      "kind": "software",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 18000,
+      "monthlyMin": 300,
+      "monthlyMax": 900,
+      "pitchLine": "\"Leadership sees enquiries by source, tours, deposits and move-ins against occupancy for each senior community, without waiting for the monthly spreadsheet.\"",
+      "whenAndWhatItTakes": "Month 4, once tour and enquiry data flow. Needs the measures leadership already reviews."
+    },
+    {
+      "name": "Care level question guide for families",
+      "kind": "ai",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 300,
+      "monthlyMax": 800,
+      "pitchLine": "\"A family answers the community's approved questions about a parent's day and gets which living options to ask about on the tour, with the nurse's assessment always deciding.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the wellness director's approved questions and wording. Never assesses or advises. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Family portal for residents' families",
+      "kind": "software",
+      "oneTimeMin": 12000,
+      "oneTimeMax": 35000,
+      "monthlyMin": 500,
+      "monthlyMax": 1500,
+      "pitchLine": "\"Families of residents log in to see the calendar, menus, community notices and consented photos from events, and message the right staff member.\"",
+      "whenAndWhatItTakes": "Month 6. Needs the community's consent records, staff contacts and a privacy review."
+    },
+    {
+      "name": "Event invitations to touring families",
+      "kind": "automation",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Families who toured but haven't decided get invited to a concert, a lunch or a holiday event at the senior community, so they come back for a second look.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the events calendar and the sales pipeline."
+    },
+    {
+      "name": "Family update drafts from activity notes",
+      "kind": "ai",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 12000,
+      "monthlyMin": 400,
+      "monthlyMax": 1000,
+      "pitchLine": "\"Activity staff jot a line about a resident's week, and a warm family update is drafted for review, with nothing health-related and only consented photos.\"",
+      "whenAndWhatItTakes": "Month 6, with the family portal. Needs consent rules and a reviewer per neighbourhood. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Bilingual family letters",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 300,
+      "monthlyMax": 800,
+      "pitchLine": "\"Welcome packs, holiday event invitations and memory care neighbourhood notices go to each resident's family in the language they read at home, reviewed by a staff member who speaks it.\"",
+      "whenAndWhatItTakes": "Month 5. Needs approved templates and a bilingual reviewer. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Move-in coordination checklist",
+      "kind": "software",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"From deposit to move-in day, the family and every department see the same steps: assessment, paperwork, apartment ready, movers booked, welcome planned.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their current move-in checklist and department owners."
+    },
+    {
+      "name": "Staff handbook search for care teams",
+      "kind": "ai",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 12000,
+      "monthlyMin": 400,
+      "monthlyMax": 1000,
+      "pitchLine": "\"Care aides and dining staff search the community's own handbook on procedures, shift swaps and who to call, instead of hunting for a supervisor.\"",
+      "whenAndWhatItTakes": "Month 7. Needs the handbook and policies, each answer approved. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Stalled enquiry flags for the sales director",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 300,
+      "monthlyMax": 800,
+      "pitchLine": "\"Families who toured weeks ago and went quiet are flagged each Monday with the likely reason from the notes and a suggested next step for the counsellor.\"",
+      "whenAndWhatItTakes": "Month 6, once the pipeline holds a few months of tours. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Professional referral thank-you notes",
+      "kind": "automation",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"When a hospital case manager, doctor or care advisor's referral tours or moves in, they get a privacy-safe thank-you from the community's sales director.\"",
+      "whenAndWhatItTakes": "Month 4. Needs referral sources recorded in the pipeline and approved wording."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise tour booking and floor plans for independent communities",
+      "whoPays": "Communities, monthly",
+      "min": 300,
+      "max": 900,
+      "unit": "monthly",
+      "pitchLine": "\"I built tour booking, phone-friendly floor plans and pricing ranges for one senior community. Every independent community still runs on PDFs and 'call for pricing'.\"",
+      "whyItWorks": "Independent communities compete with groups that have marketing teams. A working local example is the pitch."
+    },
+    {
+      "route": "Senior living association member programme",
+      "whoPays": "The association",
+      "min": 5000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer member communities a senior living template with care levels, pricing range pages, consent pages and claim-free memory care wording built in.\"",
+      "whyItWorks": "Associations need member benefits, and occupancy and staffing are every member's worry."
+    },
+    {
+      "route": "Management companies running several communities",
+      "whoPays": "The management company, per community",
+      "min": 6000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Each community you manage has its own name and a weak site. One platform with local floor plans, calendars and tour booking rolls out community by community.\"",
+      "whyItWorks": "Management companies add communities each year, and each needs its site the day the contract starts."
+    },
+    {
+      "route": "Developers opening new senior communities",
+      "whoPays": "The developer",
+      "min": 15000,
+      "max": 40000,
+      "unit": "one-time",
+      "pitchLine": "\"Your new community needs deposits before it opens. A pre-opening site with floor plans, a priority list and a sales pipeline starts the leasing a year early.\"",
+      "whyItWorks": "Pre-opening deposits finance the launch, so developers budget for this from the start."
+    },
+    {
+      "route": "Senior placement referral networks",
+      "whoPays": "The network, annually",
+      "min": 8000,
+      "max": 25000,
+      "unit": "per-year",
+      "pitchLine": "\"Your advisors place families in assisted living using emails and spreadsheets. A partner portal with live availability and tour booking across communities speeds every placement.\"",
+      "whyItWorks": "Placement networks earn on move-ins, and live availability is the data they lack."
+    },
+    {
+      "route": "White-label templates for senior living marketing agencies",
+      "whoPays": "The agency, per community",
+      "min": 2500,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Agencies marketing senior living keep redrawing floor plans and wiring tour calendars by hand. A licensed template with both ready lets them launch a community in weeks.\"",
+      "whyItWorks": "Agencies own the relationship and want the specialised parts already working."
+    },
+    {
+      "route": "Liability insurers for senior living",
+      "whoPays": "The insurer's risk team",
+      "min": 5000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Memory care pages and resident photos are where senior communities slip up in public. Offer your insured communities a pre-approved template with consent and claim-free wording.\"",
+      "whyItWorks": "Insurers want fewer privacy and advertising complaints, and a ready template helps every policyholder."
+    },
+    {
+      "route": "Hospital case management departments",
+      "whoPays": "The hospital's care transitions team",
+      "min": 10000,
+      "max": 30000,
+      "unit": "one-time",
+      "pitchLine": "\"Case managers phone around for assisted living and memory care openings at discharge. A directory with live availability from partner communities saves days.\"",
+      "whyItWorks": "Hospitals are measured on timely discharges, and the senior community client proves the availability feed works."
+    },
+    {
+      "route": "Furniture and fit-out suppliers to communities",
+      "whoPays": "The supplier, annually",
+      "min": 3000,
+      "max": 10000,
+      "unit": "per-year",
+      "pitchLine": "\"You furnish model apartments and common rooms for communities. A virtual model apartment for each client's floor plans, bundled with your fit-out, wins you contracts.\"",
+      "whyItWorks": "Suppliers compete on more than price, and the floor plan work is already done for the community client."
+    },
+    {
+      "route": "Life plan communities with entrance fees",
+      "whoPays": "The community",
+      "min": 15000,
+      "max": 40000,
+      "unit": "one-time",
+      "pitchLine": "\"Your entrance-fee contracts need explaining before anyone tours. A fee comparison page, floor plans and a long-lead sales pipeline fit a decision made over months.\"",
+      "whyItWorks": "Larger communities with longer sales cycles pay more for the same parts, and the first build is the proof."
+    },
+    {
+      "route": "The same build for a community in another region",
+      "whoPays": "Communities in non-competing regions",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"Senior communities in other regions never share a family's shortlist, so the floor plans, pricing ranges and tour booking move to the next one cleanly.\"",
+      "whyItWorks": "Non-competing regions let you reuse the system, the pitch and the finished proof."
+    },
+    {
+      "route": "Rescue stalled sales system and website projects",
+      "whoPays": "The stuck community",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Plenty of senior communities bought a sales system that was never connected to the site's tour form. Connecting them is a clear, finite job.\"",
+      "whyItWorks": "Communities with a stalled project already have the budget and the frustration."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Community site rebuild plus care plan, one contract",
+      "min": 12000,
+      "max": 30000,
+      "unit": "one-time",
+      "trigger": "The executive director signs the scope after discovery.",
+      "line": "\"The senior living site rebuild and the care plan go on one contract, so the monthly calendar and menus never go stale again.\""
+    },
+    {
+      "rung": 2,
+      "day": 0,
+      "offer": "Online tour booking with sales pipeline",
+      "min": 5000,
+      "max": 15000,
+      "unit": "one-time",
+      "trigger": "Discovery shows tours booked only by phone during office hours.",
+      "line": "\"Families research in the evening. Let them book the assisted living tour then, straight into your sales team's calendar.\""
+    },
+    {
+      "rung": 3,
+      "day": 30,
+      "offer": "Activities calendar and menu publisher",
+      "min": 3000,
+      "max": 9000,
+      "unit": "one-time",
+      "trigger": "The activities director emails the calendar to three places every month.",
+      "line": "\"Enter the month once and the community calendar and menus update everywhere families look.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "After-hours enquiry answering for families",
+      "min": 5000,
+      "max": 14000,
+      "unit": "one-time",
+      "trigger": "The pipeline shows evening enquiries waiting until morning for a reply.",
+      "line": "\"Those evening questions about care levels and pricing get answered from your approved text, and a tour gets booked.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Floor plan availability board",
+      "min": 6000,
+      "max": 18000,
+      "unit": "one-time",
+      "trigger": "Families on tours ask about apartments that were taken weeks ago.",
+      "line": "\"Show which senior living apartments are really open, so families arrive wanting one you have.\""
+    },
+    {
+      "rung": 6,
+      "day": 120,
+      "offer": "Occupancy and enquiry-source dashboard",
+      "min": 6000,
+      "max": 18000,
+      "unit": "one-time",
+      "trigger": "Three months of enquiry and tour data exist and leadership asks where move-ins come from.",
+      "line": "\"You have the data now. Let's show which enquiry sources become move-ins, community by community.\""
+    },
+    {
+      "rung": 7,
+      "day": 180,
+      "offer": "Family portal for residents' families",
+      "min": 12000,
+      "max": 35000,
+      "unit": "one-time",
+      "trigger": "Staff say families call or email for event dates, menus and notices every week.",
+      "line": "\"Those calls become a portal where residents' families see the calendar, menus and consented event photos.\""
+    },
+    {
+      "rung": 8,
+      "day": 270,
+      "offer": "Introduction to the management company or sister communities",
+      "min": 6000,
+      "max": 15000,
+      "unit": "one-time",
+      "trigger": "A sister community or the management company asks who built the site.",
+      "line": "\"Your sister communities have seen the tour bookings. Would you introduce me to whoever runs their sites?\""
+    }
+  ]
+}

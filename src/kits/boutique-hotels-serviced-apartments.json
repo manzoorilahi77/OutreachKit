@@ -1,0 +1,874 @@
+{
+  "schemaVersion": 1,
+  "category": "Boutique hotels & serviced apartments",
+  "slug": "boutique-hotels-serviced-apartments",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · expansion batch (healthcare + mid-size)",
+    "generatedAt": "2026-10-13",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Written for the GM, revenue or marketing lead of an independent hotel or serviced apartment operator. Leaned on direct booking, room pages, long stays and corporate accounts. Unsure on the rate suggestion and owner portal ranges; they depend on the booking and property systems already in place."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "A page for every room and apartment type",
+      "contains": "Each room or apartment type with its bed setup, view, floor plan, kitchen equipment, bathroom, accessibility features, who it suits and live rates from the booking engine",
+      "why": "Guests choose the room before they choose the hotel. A page per room type answers 'will we fit' and 'is there a desk' without an email."
+    },
+    {
+      "section": "Why book direct with the hotel",
+      "contains": "What guests get on the hotel's own site: flexible cancellation, early check-in on request, breakfast or a welcome drink, member rates and a direct line to the front desk",
+      "why": "Most guests find the hotel on a travel site, then check its own site. A clear reason to book direct is what keeps that booking off a commission."
+    },
+    {
+      "section": "Long stays and serviced apartment rates",
+      "contains": "Weekly and monthly serviced apartment rates, what's included (cleaning, linen, utilities, parking), relocation and project stays, and a long-stay enquiry form with dates and headcount",
+      "why": "Long-stay guests and the companies paying for them compare total cost and inclusions. They enquire where the monthly answer is already on the page."
+    },
+    {
+      "section": "The hotel's neighbourhood guide",
+      "contains": "Walking routes from the hotel, the staff's favourite restaurants, cafés and bars, transport links, markets and day trips, written by the front desk team",
+      "why": "Guests pick a boutique hotel for the neighbourhood as much as the room. A guide written by people who live there is something no travel site can copy."
+    },
+    {
+      "section": "Corporate accounts and group room blocks",
+      "contains": "Corporate rate programme, invoicing on account, meeting room details, wedding and event room blocks, and a group enquiry form with dates and room count",
+      "why": "Travel managers and wedding organisers book many nights at once and want a named contact. A page for them turns one enquiry into a block of rooms."
+    },
+    {
+      "section": "Guest information before arrival",
+      "contains": "Check-in and check-out times, luggage storage, parking, key or code collection for the apartments, house rules, accessibility notes and how to reach the front desk",
+      "why": "Most pre-arrival messages ask the same handful of questions. A page that answers them frees the front desk and calms a guest arriving late."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C30",
+      "siteType": "local-conversion",
+      "name": "Book the Room",
+      "heroLayout": "split-photo",
+      "mood": [
+        "bright",
+        "easy",
+        "welcoming"
+      ],
+      "bestFor": "Single-building hotels and apartment operators who need room pages, a clear direct-booking button and guest information on a phone",
+      "pairsWithTier": "starter",
+      "headlineSample": "Stay in the heart of {City}, book direct",
+      "whyItFits": "Butter and denim with a geometric display face feel fresh and unfussy. The split hero keeps the room photo and the date picker side by side."
+    },
+    {
+      "id": "b",
+      "themeId": "C40",
+      "siteType": "booking-first",
+      "name": "Quiet Stay",
+      "heroLayout": "full-bleed-photo",
+      "mood": [
+        "calm",
+        "restful",
+        "considered"
+      ],
+      "bestFor": "Boutique hotels and serviced apartments selling direct booking, long stays and corporate accounts from one site",
+      "pairsWithTier": "standard",
+      "headlineSample": "Rooms and apartments for a slower {City} stay",
+      "whyItFits": "Driftwood instead of the family's Olive Grove: a hotel sells rest, not appetite. Its quiet neutrals and refined serif let the room photography lead, with the booking bar fixed on top."
+    },
+    {
+      "id": "c",
+      "themeId": "C35",
+      "siteType": "premium-brand",
+      "name": "The House Edit",
+      "heroLayout": "type-led",
+      "mood": [
+        "intimate",
+        "curated",
+        "stylish"
+      ],
+      "bestFor": "Design-led boutique hotels with a restaurant, events and a strong neighbourhood story, competing on character rather than price",
+      "pairsWithTier": "premium",
+      "headlineSample": "A small hotel with a {City} point of view",
+      "whyItFits": "Rosewood and a Didone display face read like a boutique's own magazine. Type leads the hero so the hotel's voice comes before the room grid."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "Book button goes to a travel site",
+      "line": "The Book button on your hotel's site sends guests to a travel agency listing. Someone who already found you directly ends up booking where you pay a commission.",
+      "hook": "Click Book on their site and note where it lands. Check whether their own booking engine exists at all.",
+      "linkLine": "A direct booking flow on your own hotel site: {demo-link}"
+    },
+    {
+      "angle": "No reason to book direct",
+      "line": "Your hotel's site and the travel sites show the same rooms and the same price, with nothing saying why to book with you. Guests who compare will take the one with points.",
+      "hook": "Compare a date's rate on their site and one travel site. Note whether any direct-booking perk is mentioned.",
+      "linkLine": "A book-direct page with your own perks: {demo-link}"
+    },
+    {
+      "angle": "Rooms all on one page",
+      "line": "All your room types sit on one long page with a single gallery, so a couple deciding between the suite and the studio apartment can't compare them side by side.",
+      "hook": "Count the room or apartment types and check whether each has its own page or rates.",
+      "linkLine": "A page for each room and apartment type: {demo-link}"
+    },
+    {
+      "angle": "Slow gallery on a phone",
+      "line": "Your hotel's homepage loads a heavy gallery before the dates box appears on my phone. Travellers checking rooms between meetings close it before they see a rate.",
+      "hook": "Load the homepage on mobile data and note how long until a date picker or Book button is usable.",
+      "linkLine": "Your hotel site, built to load fast on a phone: {demo-link}"
+    },
+    {
+      "angle": "No monthly rate for apartments",
+      "line": "Your serviced apartments mention long stays, but there's no weekly or monthly rate and no enquiry form. Relocation managers move on to an operator who answers on the page.",
+      "hook": "Only for operators with apartments or long-stay rooms. Look for any monthly price or long-stay form.",
+      "linkLine": "Long-stay serviced apartment rates with an enquiry form: {demo-link}"
+    },
+    {
+      "angle": "Reviews praising the staff",
+      "line": "Guest reviews keep naming your front desk team and the breakfast, but none of that appears on the hotel's own site, where the booking decision actually happens.",
+      "hook": "Read their newest reviews. Note a staff member or a detail guests mention more than once.",
+      "linkLine": "Guest reviews placed beside your hotel's rooms: {demo-link}"
+    },
+    {
+      "angle": "Corporate travellers",
+      "line": "Your hotel is close to a business district, but nothing on the site speaks to travel managers: no corporate rates, invoicing or a contact for regular bookings.",
+      "hook": "Check what offices or business parks are near them. Note the absence of any corporate page.",
+      "linkLine": "A corporate accounts page for the hotel: {demo-link}"
+    },
+    {
+      "angle": "Neighbourhood posts, no guide",
+      "line": "Your posts about the bakery around the corner and the walk to the old town are lovely. They'd make a hotel neighbourhood guide that travel sites can't copy.",
+      "hook": "Find their posts about local places. Note two or three spots they recommend.",
+      "linkLine": "A neighbourhood guide written by your hotel team: {demo-link}"
+    },
+    {
+      "angle": "Wedding and event room blocks",
+      "line": "Your hotel hosts wedding guests and conference groups, judging by your posts, but there's no group enquiry form for room blocks. Organisers book where the form asks for dates and rooms.",
+      "hook": "Look for posts about weddings, groups or events. Note any mention of room blocks or meeting space.",
+      "linkLine": "A group room-block enquiry for your hotel: {demo-link}"
+    },
+    {
+      "angle": "Hiring front desk and housekeeping",
+      "line": "Saw the hotel is hiring for the front desk and housekeeping. There's no careers page, and good hospitality staff look at how a hotel presents itself before they apply.",
+      "hook": "Only if they have recent hiring posts or job listings. Note the roles.",
+      "linkLine": "A careers page for the hotel team: {demo-link}"
+    },
+    {
+      "angle": "Several buildings on one site",
+      "line": "You run apartments in more than one building, but the site treats them as one place. A guest who needs parking or a lift can't tell which building has it.",
+      "hook": "Check their listings for more than one address. Note what differs between buildings.",
+      "linkLine": "A page for each building, with its own apartments: {demo-link}"
+    },
+    {
+      "angle": "Big event weeks in the city",
+      "line": "When the big conference and festival weeks come to {City}, travellers search for rooms near the venue. Your hotel's site says nothing about those weeks or the walk there.",
+      "hook": "Check the city's event calendar for the next big week near them. Note the venue and the distance in words.",
+      "linkLine": "An event-week page for your hotel: {demo-link}"
+    },
+    {
+      "angle": "Guest questions in comments",
+      "line": "People keep asking under your posts about parking, early check-in and whether the apartments have a washing machine. A guest information page would answer them before they book elsewhere.",
+      "hook": "Read comments and listing questions. Note the questions that repeat.",
+      "linkLine": "A guest information page for the hotel: {demo-link}"
+    },
+    {
+      "angle": "Renovated rooms, old site",
+      "line": "Your posts show the newly renovated rooms, but the hotel's site still shows the old ones. Guests judge the stay by the room they see, and the new rooms are better.",
+      "hook": "Compare recent renovation posts with the room photos on the site. Note one obvious difference.",
+      "linkLine": "Your renovated rooms, each on its own page: {demo-link}"
+    },
+    {
+      "angle": "A specific recent post",
+      "line": "That {specific recent job} you posted made the hotel feel like a place with real character. It belongs on your own site, where guests decide whether to book direct.",
+      "hook": "Pick their newest post about a room, a guest moment or the neighbourhood and name it exactly.",
+      "linkLine": "That moment, kept on your hotel's site: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, that {specific recent job} you posted made {Business Name} look like a hotel with real character.\n\nI was checking hotels in {City} and noticed the Book button on your site goes to a travel site listing, so guests who find you directly still book where you pay commission. I sketched a sample site with direct booking, a page per room type and a neighbourhood guide, with marked placeholders where your photos would go.\n\nWould it be useful to see it?",
+    "dm2": "{Owner}, following up in case my note got buried. Here's the sample site for {Business Name}: {demo-link}\n\nIt has direct booking with your own perks, a page for every room and apartment type, long-stay and corporate rates, a group room-block enquiry and a guest information page. Nothing goes live without your approval. If it's not for you, just say so.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for boutique hotels and serviced apartments here in {City}. I sent a sample site for {Business Name} a few days ago, did it reach you?\"\n\nIF NO:\n\"No problem. Short version: direct booking with a reason to book direct, a page per room type, long-stay rates and a guest information page, with marked placeholders where your photos would go. Can I email it to you and your revenue or marketing lead?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The idea is simple: every guest who books on your own site is one you don't pay commission on. The build runs {Build Range} depending on room types, buildings and languages, then {Care Range} a month for hosting, rate pages and seasonal updates. For your hotel I'd quote about {Build Price}.\"\n\"Could I walk you and your front office manager through it for fifteen minutes this week?\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. You approve every page before launch, and we connect your existing booking engine rather than replacing it.\"",
+    "objections": [
+      {
+        "objection": "Most of our bookings come from travel sites anyway.",
+        "handler": "\"Keep them, they fill the rooms. This is for guests who already know your name and check your site before booking. Give them a reason to book direct and those nights cost you less.\""
+      },
+      {
+        "objection": "Our booking engine provider gave us a website.",
+        "handler": "\"That's fine, we keep the engine. The template site they give every hotel looks like every hotel. Your rooms, your neighbourhood and your perks need their own pages.\""
+      },
+      {
+        "objection": "We're in the middle of our busy season.",
+        "handler": "\"That's why the sample is already built. Your team spends an hour on content, and it launches before the next quiet stretch when direct bookings matter most.\""
+      },
+      {
+        "objection": "The owners decide on spending like this.",
+        "handler": "\"Of course. I'll send a one-page summary with the scope, price and how direct bookings pay it back, so you can share it before the next owners' meeting.\""
+      },
+      {
+        "objection": "We already have a marketing agency.",
+        "handler": "\"Happy to work with them. They run the campaigns; I build the room pages, direct booking and long-stay forms those campaigns send people to.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}, and for your hotel about {Build Price}, covering room pages, direct booking, long-stay rates and guest information. Monthly care is {Care Range}.\""
+      }
+    ],
+    "email": {
+      "subject": "Direct booking for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for boutique hotels and serviced apartments around {City}. {Business Name} has great reviews, but the Book button on your site leads to a travel site listing and the rooms share one page, so guests who find you directly have little reason to book with you.\n\nI built a sample first rather than ask for your time: direct booking with your own perks, a page for each room and apartment type, long-stay and corporate rates, a group room-block enquiry and a neighbourhood guide, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you'd like it, I move it to your domain, connect your current booking engine and finish it for {Build Range}, plus {Care Range} a month for hosting and updates. You approve every page before launch. If not, no problem, it comes down at the end of the month.\n\nWorth fifteen minutes this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"{Owner}, it's {Your Name}. I build websites for boutique hotels in {City}, and I made a sample for {Business Name} with direct booking and a page for each room. I'll email the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm taking the {Business Name} direct-booking sample down on Friday to free up the space.\n\nShould I keep it up for you? One word is fine either way.",
+    "nurture": "Hi {Owner}, the quieter season is coming, which is when direct bookings and long stays matter most for a hotel. You came to mind.\n\nThe sample site is still here if you want it, same price as before. {demo-link} if you'd like another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Price by room type and building, not by page; each extra room type or building is a fixed add-on.",
+      "Connect the booking engine they already use; replacing it is a separate decision the owners must make.",
+      "Quote each extra language separately, and only where a staff member can check the translation.",
+      "Long-stay and corporate pages are priced together, because they share rates, inclusions and invoicing rules.",
+      "Build an owner or GM sign-off round into every quote; hotel spending usually needs two people.",
+      "Show the build against commission saved on direct nights, never as a promised number of bookings."
+    ],
+    "lineItems": [
+      {
+        "item": "Room or apartment type page (each)",
+        "min": 300,
+        "max": 800,
+        "unit": "per-page",
+        "description": "Max with a floor plan, accessibility details, a kitchen inventory for apartments and live rates for that room type.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Additional building or property section",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "description": "Max when the building has its own apartments, parking and access instructions, and its own booking engine property.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Booking engine connection and book-direct page",
+        "min": 800,
+        "max": 2500,
+        "unit": "one-time",
+        "description": "Max with member rates, promo codes, add-ons at checkout and tracking of direct bookings by source.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Long-stay and corporate rates section",
+        "min": 1200,
+        "max": 3000,
+        "unit": "one-time",
+        "description": "Max with weekly and monthly rate tables, inclusions by apartment type and a corporate enquiry routed to sales.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Neighbourhood guide",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "description": "Max with several themed walks, a map and entries written from the front desk team's own recommendations.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Additional language version",
+        "min": 1000,
+        "max": 3000,
+        "unit": "one-time",
+        "description": "Max when every room page, the guest information and the booking flow are translated and checked by staff.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Group and room-block enquiry page",
+        "min": 600,
+        "max": 1500,
+        "unit": "one-time",
+        "description": "Max with meeting room details, wedding block terms and routing to the sales manager.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Room and suite photo day",
+      "min": 1200,
+      "max": 3500,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"One day photographing every room and apartment type in morning light, plus the lobby and breakfast, so each room page shows exactly what the guest will get.\"",
+      "when": "Month 1, before the room pages go live, or after any renovation."
+    },
+    {
+      "name": "Hotel Google profile and maps management",
+      "min": 250,
+      "max": 600,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"The hotel's Google profile kept current with room photos, amenities, a direct booking link and weekly posts about the neighbourhood, so searchers land on your rate, not a travel site's.\"",
+      "when": "Day 30, once direct booking is live."
+    },
+    {
+      "name": "Post-stay review requests to direct guests",
+      "min": 150,
+      "max": 400,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Guests who booked direct get a thank-you after checkout asking for a review and offering a return-stay perk, so the hotel's own reviews keep growing.\"",
+      "when": "Month 2, once direct bookings are coming in."
+    },
+    {
+      "name": "Seasonal packages and offers pages",
+      "min": 500,
+      "max": 1500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A page and an email for each season's package, like a weekend with dinner or a long-stay winter rate, bookable only on the hotel's own site.\"",
+      "when": "Six weeks before each season the hotel wants to fill."
+    },
+    {
+      "name": "Past-guest email newsletter",
+      "min": 400,
+      "max": 1000,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A short monthly email to past guests about new rooms, neighbourhood events and direct-only offers, so the next stay is booked with the hotel, not a travel site.\"",
+      "when": "Month 3, once guest emails are collected through direct booking."
+    },
+    {
+      "name": "Short video walk-throughs of each apartment",
+      "min": 1000,
+      "max": 3000,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A short walk-through of each serviced apartment type, door to balcony, so long-stay guests and relocation managers can decide without a viewing.\"",
+      "when": "Month 3, if they sell long stays."
+    },
+    {
+      "name": "Corporate sales pack and rate sheet",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A printed and digital pack for travel managers with the hotel's room types, corporate rates, invoicing terms and a named contact, matching the site.\"",
+      "when": "Month 2, when the sales manager starts calling companies nearby."
+    },
+    {
+      "name": "In-room and lobby signage with direct-booking codes",
+      "min": 500,
+      "max": 1500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Room cards and lobby signs with a scan code for the guest information page and a return-stay offer, so the next booking happens on the hotel's own site.\"",
+      "when": "Month 2, after the guest information page is live."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Restaurants and bars in the neighbourhood guide",
+        "whoPays": "The restaurant or bar owner",
+        "min": 2500,
+        "max": 7000,
+        "unit": "one-time",
+        "pitchLine": "\"The restaurants your front desk recommends every night need better menus and booking. An introduction from the hotel that sends them guests opens the door.\"",
+        "whyItWorks": "Restaurants value hotel referrals and trust a concierge's recommendation more than any cold call."
+      },
+      {
+        "route": "Tour and experience operators guests book",
+        "whoPays": "The tour or experience company",
+        "min": 2500,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"The walking tours and day trips your guests book need online booking that works on a phone. The hotel that fills their tours can introduce me.\"",
+        "whyItWorks": "Tour operators depend on hotel desks for bookings and listen to them."
+      },
+      {
+        "route": "Airport transfer and chauffeur firms",
+        "whoPays": "The transfer or chauffeur company",
+        "min": 2500,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"The car service that meets your guests at the airport needs a booking page with flight details and fixed fares. Your recommendation is their best sales line.\"",
+        "whyItWorks": "Transfer firms win on hotel partnerships and want a site that looks as reliable as the hotel."
+      },
+      {
+        "route": "Linen and laundry services",
+        "whoPays": "The commercial laundry business",
+        "min": 3000,
+        "max": 8000,
+        "unit": "one-time",
+        "pitchLine": "\"The laundry that handles your sheets and towels sells to every hotel and apartment operator in the area. A reference from a boutique hotel helps them win the next one.\"",
+        "whyItWorks": "Commercial laundries sell to hospitality accounts and need a capability page they rarely have."
+      },
+      {
+        "route": "Wedding planners who book room blocks",
+        "whoPays": "The wedding planning business",
+        "min": 2500,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"Planners who book your rooms for wedding guests need portfolio sites themselves. The hotel's sales manager is a trusted introduction.\"",
+        "whyItWorks": "Planners want to stay on a hotel's preferred list and value its goodwill."
+      },
+      {
+        "route": "Corporate relocation and housing agents",
+        "whoPays": "The relocation agency",
+        "min": 4000,
+        "max": 10000,
+        "unit": "one-time",
+        "pitchLine": "\"Relocation agents who place people in your serviced apartments need a site that shows companies how they handle a move. An operator they book with is a strong reference.\"",
+        "whyItWorks": "Relocation agents sell to HR teams and need a professional site; they trust their housing partners."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Booking question assistant for tour operators",
+        "whoPays": "The tour or experience company, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Tour operators answer the same pickup, weather and group-size questions all day. An assistant answers from their tour details and books the slot.\"",
+        "whyItWorks": "Operators guide all day and can't answer messages; hotel guests notice the faster reply."
+      },
+      {
+        "route": "Flight-tracked dispatch notes for transfer firms",
+        "whoPays": "The transfer company, monthly",
+        "min": 200,
+        "max": 500,
+        "unit": "monthly",
+        "pitchLine": "\"Transfer firms juggle late flights. An assistant reads the booking and the flight change, drafts the updated pickup and texts the guest, with the dispatcher approving.\"",
+        "whyItWorks": "A missed pickup costs the hotel's goodwill too, so both sides want it."
+      },
+      {
+        "route": "Menu translation drafts for guide restaurants",
+        "whoPays": "The restaurant, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"Restaurants the hotel recommends serve travellers in several languages. An assistant drafts translated menus and dietary notes for the restaurant to check.\"",
+        "whyItWorks": "Translated menus help the hotel's guests and keep the restaurant on the guide."
+      },
+      {
+        "route": "Route and pickup planning for laundries",
+        "whoPays": "The commercial laundry, monthly",
+        "min": 250,
+        "max": 700,
+        "unit": "monthly",
+        "pitchLine": "\"Laundries collect from many hotels on tight checkout windows. An assistant drafts each day's pickup route from the bookings and occupancy notes they receive.\"",
+        "whyItWorks": "Late linen means rooms not ready, so laundries pay to get routes right."
+      },
+      {
+        "route": "Guest communication drafts for wedding planners",
+        "whoPays": "The wedding planner, monthly",
+        "min": 150,
+        "max": 350,
+        "unit": "monthly",
+        "pitchLine": "\"Planners send wedding guests travel details again and again. An assistant drafts the hotel booking, transfer and timing notes for each wedding from the planner's plan.\"",
+        "whyItWorks": "Room blocks fill faster when guests get clear details, which suits planner and hotel."
+      },
+      {
+        "route": "Housing match assistant for relocation agents",
+        "whoPays": "The relocation agency, monthly",
+        "min": 300,
+        "max": 800,
+        "unit": "monthly",
+        "pitchLine": "\"Relocation agents match each assignee to an apartment by budget, school area and commute. An assistant drafts a shortlist from partner inventory for the agent to send.\"",
+        "whyItWorks": "Faster shortlists win corporate accounts, and the serviced apartment operator is first on the list."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Pre-arrival messages with check-in details",
+      "kind": "automation",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"Before arrival, each guest gets the hotel's check-in time, parking, door or key instructions for their apartment and a way to request early check-in.\"",
+      "whenAndWhatItTakes": "Day 30. Needs the guest information page and a feed of new bookings from the booking engine."
+    },
+    {
+      "name": "Review reply drafts in the hotel's voice",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"Every new review of the hotel gets a reply drafted in your voice, thanking the staff member named and answering any complaint calmly, ready for the GM to approve.\"",
+      "whenAndWhatItTakes": "Month 1. Needs a few replies the GM likes. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Post-stay thank-you and return-stay offer",
+      "kind": "automation",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"After checkout, direct guests get a thank-you and a return-stay perk that only works on the hotel's site, so the next booking skips the commission.\"",
+      "whenAndWhatItTakes": "Month 2. Needs checkout data and the perk the owners approve."
+    },
+    {
+      "name": "Guest messaging assistant for stay questions",
+      "kind": "ai",
+      "oneTimeMin": 2500,
+      "oneTimeMax": 7000,
+      "monthlyMin": 300,
+      "monthlyMax": 800,
+      "pitchLine": "\"On the site and in messages, it answers parking, wifi, luggage and apartment questions from the hotel's own guest information, and hands anything else to the front desk.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the guest information page and front desk handover hours. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Add-ons store for late checkout, transfers and breakfast",
+      "kind": "software",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 6000,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"Guests add a late checkout, an airport transfer, breakfast or flowers in the room before they arrive, paid online and passed to the front desk.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the add-ons list, prices and who fulfils each one."
+    },
+    {
+      "name": "Long-stay quote builder for serviced apartments",
+      "kind": "software",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"A guest or relocation manager picks the apartment type and dates and gets a long-stay quote with cleaning, utilities and parking included, then books or asks a question.\"",
+      "whenAndWhatItTakes": "Month 3. Needs weekly and monthly rate rules and what's included per apartment type."
+    },
+    {
+      "name": "Group and room-block booking pages",
+      "kind": "software",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"Each wedding or conference gets its own hotel page with the block rate and a cut-off date, and the sales manager sees the pickup every day.\"",
+      "whenAndWhatItTakes": "Month 4. Needs block terms and access to create rate codes in their booking engine."
+    },
+    {
+      "name": "Group enquiry proposal drafts",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"A group enquiry for a wedding or a team offsite becomes a draft proposal with room types, the block rate and meeting space, for the sales manager to check and send.\"",
+      "whenAndWhatItTakes": "Month 4, with the group pages. Needs past proposals and rate rules. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Rate parity alert against travel sites",
+      "kind": "automation",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"When a travel site shows a lower rate for your hotel than your own site does, the revenue lead gets an alert with the date and the room, before guests notice.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the room mapping and which travel sites they sell through."
+    },
+    {
+      "name": "Room and apartment descriptions in several languages",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"Room pages, guest information and seasonal offers drafted in the languages your guests speak, checked by a staff member before the hotel publishes them.\"",
+      "whenAndWhatItTakes": "Month 5. Needs the languages their guests use and a staff reviewer for each. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Corporate account portal with invoicing",
+      "kind": "software",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 14000,
+      "monthlyMin": 250,
+      "monthlyMax": 700,
+      "pitchLine": "\"Travel managers book at their negotiated rate, see their team's upcoming stays and download invoices, without emailing the hotel each time.\"",
+      "whenAndWhatItTakes": "Month 5. Needs corporate rate codes, invoicing rules and a list of current accounts."
+    },
+    {
+      "name": "Digital check-in with ID and payment details",
+      "kind": "software",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 200,
+      "monthlyMax": 600,
+      "pitchLine": "\"Guests complete check-in on their phone before arrival, upload ID where the rules require it and get their room or apartment code, so late arrivals skip the desk.\"",
+      "whenAndWhatItTakes": "Month 6. Needs their check-in rules, data retention policy and how keys or codes are issued."
+    },
+    {
+      "name": "In-stay local recommendations concierge",
+      "kind": "ai",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 200,
+      "monthlyMax": 500,
+      "pitchLine": "\"Guests ask where to eat tonight or how to get to the market and get answers from the hotel's own neighbourhood guide, with the front desk's picks first.\"",
+      "whenAndWhatItTakes": "Month 6, after the neighbourhood guide is written. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Housekeeping turnover alerts from checkouts",
+      "kind": "automation",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"As each guest checks out, housekeeping gets the room or apartment on their list with the next arrival time, so early check-ins get the clean rooms first.\"",
+      "whenAndWhatItTakes": "Month 6. Needs checkout and arrival data from the booking system and the housekeeping team's phones."
+    },
+    {
+      "name": "Maintenance issue triage from guest messages",
+      "kind": "ai",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 200,
+      "monthlyMax": 500,
+      "pitchLine": "\"When a guest reports a leaking tap or a broken air conditioner, it drafts a maintenance ticket with the room and urgency, and tells the guest what happens next.\"",
+      "whenAndWhatItTakes": "Month 7. Needs the maintenance team's contacts and urgency rules. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Unit owner reporting portal",
+      "kind": "software",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 16000,
+      "monthlyMin": 300,
+      "monthlyMax": 900,
+      "pitchLine": "\"For serviced apartments you manage for owners, each owner sees their unit's nights booked, revenue and maintenance spend each month without asking.\"",
+      "whenAndWhatItTakes": "Month 8, only if they manage units for owners. Needs owner agreements and a booking and accounts export."
+    },
+    {
+      "name": "Direct booking dashboard",
+      "kind": "software",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 14000,
+      "monthlyMin": 250,
+      "monthlyMax": 700,
+      "pitchLine": "\"Direct nights, travel-site nights, commission paid and long-stay enquiries on one screen each week, so the owners see what the hotel's own site is earning.\"",
+      "whenAndWhatItTakes": "Month 8. Needs three months of booking engine and channel data."
+    },
+    {
+      "name": "Rate suggestion drafts from occupancy and city events",
+      "kind": "ai",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 14000,
+      "monthlyMin": 400,
+      "monthlyMax": 1200,
+      "pitchLine": "\"Each morning the revenue lead gets draft rate suggestions by room type from the hotel's occupancy, pick-up and the city's event calendar, to accept or ignore.\"",
+      "whenAndWhatItTakes": "Month 9. Needs a year of occupancy data and their rate rules. Comes with the AI maintenance retainer; nothing changes without a person approving."
+    },
+    {
+      "name": "After-hours reservations phone answering",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 300,
+      "monthlyMax": 900,
+      "pitchLine": "\"When the night desk is busy, calls about availability and rates are answered, a direct booking link is texted, and anything urgent goes straight to the night manager.\"",
+      "whenAndWhatItTakes": "Month 10. Needs room types, rate rules and the night escalation contact. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Front desk shift handover notes",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"At the end of each shift, the front desk dictates what happened and the next shift gets a tidy draft of arrivals, guest requests and open hotel issues.\"",
+      "whenAndWhatItTakes": "Month 10. Needs their handover format and consent for dictation. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the boutique hotel direct-booking site",
+      "whoPays": "Other independent hotels, one-time plus monthly",
+      "min": 8000,
+      "max": 20000,
+      "unit": "one-time",
+      "pitchLine": "\"Room pages, a book-direct page, long stays and guest information are the same build for every independent hotel. The structure I built once fits the next with their rooms.\"",
+      "whyItWorks": "Booking engine connection and room-type structure are built once and reused."
+    },
+    {
+      "route": "Independent hotel association member offer",
+      "whoPays": "The regional hotel or tourism association",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer member hotels a direct-booking site package at a member rate. Commission is the cost every independent hotel complains about.\"",
+      "whyItWorks": "Associations need member benefits that save money, and lower commission is easy to explain."
+    },
+    {
+      "route": "Serviced apartment operators in other cities",
+      "whoPays": "Serviced apartment operators",
+      "min": 8000,
+      "max": 20000,
+      "unit": "one-time",
+      "pitchLine": "\"The long-stay quote builder and building pages fit any serviced apartment operator. I set it up with their buildings and rates.\"",
+      "whyItWorks": "Long-stay rules and corporate invoicing are the hard part, and they carry over."
+    },
+    {
+      "route": "Hotel management companies",
+      "whoPays": "The management company, per managed property",
+      "min": 6000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Companies that run hotels for owners need the same direct-booking site and dashboard across every property they manage.\"",
+      "whyItWorks": "One relationship covers many hotels, and the owners' dashboard sells itself to them."
+    },
+    {
+      "route": "Boutique hotel collections and consortia",
+      "whoPays": "The collection or consortium, per member hotel",
+      "min": 5000,
+      "max": 12000,
+      "unit": "one-time",
+      "pitchLine": "\"Collections of independent hotels want each member on a consistent, fast site that still feels individual. One template, many hotels.\"",
+      "whyItWorks": "Consortia sell their members' quality and benefit from a common site standard."
+    },
+    {
+      "route": "Destination marketing organisations",
+      "whoPays": "The city or regional tourism board",
+      "min": 10000,
+      "max": 40000,
+      "unit": "one-time",
+      "pitchLine": "\"Tourism boards want small hotels to sell direct and look good online. A funded site programme for local independents is a project they can announce.\"",
+      "whyItWorks": "Tourism boards fund programmes that support small hospitality businesses."
+    },
+    {
+      "route": "White-label for hospitality marketing agencies",
+      "whoPays": "The agency, per hotel client",
+      "min": 4000,
+      "max": 12000,
+      "unit": "one-time",
+      "pitchLine": "\"Agencies that run hotel ad campaigns need a direct-booking site that converts. I build it under their name.\"",
+      "whyItWorks": "Agencies own the hotel relationship and want a build partner they can rely on."
+    },
+    {
+      "route": "Booking engine and channel resellers",
+      "whoPays": "The local reseller, per hotel onboarded",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Resellers who install booking engines in hotels can offer a site that actually shows the engine off, as part of every install.\"",
+      "whyItWorks": "Resellers want a bigger ticket and hotels that stay with the engine."
+    },
+    {
+      "route": "Holiday rental and short-let property managers",
+      "whoPays": "The short-let management company",
+      "min": 6000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Short-let managers run apartments for many owners. The building pages, digital check-in and owner portal transfer straight across.\"",
+      "whyItWorks": "Their problems match serviced apartments, with even more owners wanting reports."
+    },
+    {
+      "route": "Hospitality schools and hotel programmes",
+      "whoPays": "The school, per cohort or as a licence",
+      "min": 3000,
+      "max": 9000,
+      "unit": "one-time",
+      "pitchLine": "\"Hotel management students learn revenue and direct booking on a live template I maintain, and graduates opening small hotels take it with them.\"",
+      "whyItWorks": "Schools want practical tools, and graduates become future clients."
+    },
+    {
+      "route": "One hotel per neighbourhood",
+      "whoPays": "A boutique hotel in another neighbourhood or city",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I build for one boutique hotel per neighbourhood, so you never share a builder with the hotel across the street. Your part of {City} is open today.\"",
+      "whyItWorks": "Neighbouring hotels compete for the same guests, so exclusivity matters to them."
+    },
+    {
+      "route": "Owner reporting for hotel investors",
+      "whoPays": "The investor or family office owning several hotels",
+      "min": 10000,
+      "max": 30000,
+      "unit": "one-time",
+      "pitchLine": "\"Investors who own several boutique hotels want direct-booking and occupancy numbers in one place. One dashboard rolled out across their properties.\"",
+      "whyItWorks": "Investors pay for comparable reporting and hold the budget across all their hotels."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Direct-booking hotel site plus care plan, one contract",
+      "min": 12000,
+      "max": 30000,
+      "unit": "one-time",
+      "trigger": "The GM and the owners approve the scope and the room-type list.",
+      "line": "\"The site and the care plan sit on one contract, so a new rate page or a seasonal package is a message to me, not a new project for the hotel.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Pre-arrival messages with check-in details",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "trigger": "The front desk says guests still email asking about parking and check-in.",
+      "line": "\"The guest information page is live. Let each guest get the parts that matter to their room before they arrive.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "Room and suite photo day",
+      "min": 1200,
+      "max": 3500,
+      "unit": "per-shoot",
+      "trigger": "Room pages still show marked placeholders where photos go, or a renovation finishes.",
+      "line": "\"Each room page is ready for its own photos. One day of morning light shows guests exactly what they're booking.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Post-stay thank-you and return-stay offer",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "trigger": "Sixty days of direct bookings, with guests who could come back.",
+      "line": "\"Guests who booked direct once will book direct again if the hotel asks. Let's ask with a perk only your site offers.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Long-stay quote builder for serviced apartments",
+      "min": 3000,
+      "max": 8000,
+      "unit": "one-time",
+      "trigger": "Long-stay enquiries arrive and the team quotes each one by hand.",
+      "line": "\"You're quoting long stays one email at a time. Let the apartment page do the first quote.\""
+    },
+    {
+      "rung": 6,
+      "day": 150,
+      "offer": "Corporate account portal with invoicing",
+      "min": 5000,
+      "max": 14000,
+      "unit": "one-time",
+      "trigger": "A company books rooms at the hotel several times a month.",
+      "line": "\"That company books with you every few weeks. Give their travel manager a portal and the hotel keeps the account.\""
+    },
+    {
+      "rung": 7,
+      "day": 240,
+      "offer": "Direct booking dashboard",
+      "min": 5000,
+      "max": 14000,
+      "unit": "one-time",
+      "trigger": "The owners ask how much commission the site has saved.",
+      "line": "\"Let's show the owners direct nights and commission saved every week, on one screen.\""
+    },
+    {
+      "rung": 8,
+      "day": 365,
+      "offer": "Rate suggestion drafts from occupancy and city events",
+      "min": 5000,
+      "max": 14000,
+      "unit": "one-time",
+      "trigger": "A full year of occupancy data, and the revenue lead sets rates by hand each morning.",
+      "line": "\"You now have a year of the hotel's own data. Let it draft tomorrow's rates for your revenue lead to approve.\""
+    }
+  ]
+}

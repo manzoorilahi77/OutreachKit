@@ -1,0 +1,886 @@
+{
+  "schemaVersion": 1,
+  "category": "Veterinary clinics",
+  "slug": "veterinary-clinics",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · expansion batch (healthcare + mid-size)",
+    "generatedAt": "2026-10-13",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Leaned on the board note (booking, wellness plans and an emergency page beat the template most clinics run) and the pet family kits. No treatment outcomes; pet photos only with the owner's written consent. Wellness plan billing and records-integration prices are the least certain."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Emergencies and after-hours care",
+      "contains": "What counts as an emergency in plain words, the clinic's own emergency hours, the after-hours animal hospital the clinic refers to [as supplied], what to do on the way, and a call-ahead number",
+      "why": "A panicked owner at midnight looks for one thing. The vet clinic that answers it clearly is the one they trust for routine care afterwards."
+    },
+    {
+      "section": "Wellness plans for every life stage",
+      "contains": "Puppy and kitten, adult and senior pet wellness plans, the exams, vaccinations and tests each includes as the clinic sets them, the monthly price and how to enrol",
+      "why": "Owners compare the monthly cost of a plan with paying visit by visit. A clear plan page turns one vaccination visit into a year of care."
+    },
+    {
+      "section": "Pet surgery and dental day",
+      "contains": "Drop-off and pickup times, fasting instructions as the veterinarian gives them, how anaesthesia is monitored, estimates before any procedure, and how owners get updates during the day",
+      "why": "Owners decide on a spay, neuter or dental cleaning once they know how the day runs and that they'll hear how their pet is doing."
+    },
+    {
+      "section": "Species we see",
+      "contains": "Dogs, cats, rabbits, birds, reptiles or pocket pets as the clinic actually treats them, which veterinarian sees which, and where to go for species the clinic doesn't see",
+      "why": "Exotic pet owners call around clinic by clinic for this one answer. Stating it saves them the calls and saves the front desk the time."
+    },
+    {
+      "section": "Refills, food orders and records",
+      "contains": "Prescription refill requests, prescription diet orders and pickup, vaccination certificates for boarding and groomers, and transferring records from a previous vet",
+      "why": "Existing clients want to do these without a phone call, and new clients want to know their old records will follow them."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C25",
+      "siteType": "local-conversion",
+      "name": "Corner Vet",
+      "heroLayout": "split-photo",
+      "mood": [
+        "friendly",
+        "bright",
+        "neighbourly"
+      ],
+      "bestFor": "Single-vet clinics replacing an old template site with a clear call, book and emergency path",
+      "pairsWithTier": "starter",
+      "headlineSample": "Your neighbourhood vet in {City}, open for new patients",
+      "whyItFits": "Citrus Morning's warm yellow and geometric type feel like a friendly front desk, and a split hero shows the clinic beside the book and emergency buttons."
+    },
+    {
+      "id": "b",
+      "themeId": "C22",
+      "siteType": "booking-first",
+      "name": "Wellness Visits",
+      "heroLayout": "card-stack",
+      "mood": [
+        "gentle",
+        "warm",
+        "reassuring"
+      ],
+      "bestFor": "Veterinary clinics with online booking, wellness plans, refills and a team of vets and technicians",
+      "pairsWithTier": "standard",
+      "headlineSample": "Book a vet visit in {City} tonight, no phone call",
+      "whyItFits": "The family combo, Peach Sorbet, suits pet owners, and stacked cards put wellness exam, vaccines, sick visit and surgery consult each one tap from booking."
+    },
+    {
+      "id": "c",
+      "themeId": "C1",
+      "siteType": "editorial-trust",
+      "name": "Animal Hospital",
+      "heroLayout": "type-led",
+      "mood": [
+        "clinical",
+        "steady",
+        "capable"
+      ],
+      "bestFor": "Larger animal hospitals with surgery, dentistry, in-house diagnostics and several veterinarians",
+      "pairsWithTier": "premium",
+      "headlineSample": "Full-service animal hospital care in {City}",
+      "whyItFits": "Banker's Indigo's steady blue and neo-grotesque type read as a capable hospital, and a type-led page lets surgery and diagnostics carry weight without stock vet photos."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "Old template site",
+      "line": "Your clinic's site looks like the template many vet practices were handed years ago, and the Book button only shows a phone number. Pet owners in {City} usually look for a vet in the evening.",
+      "hook": "Open their site and check whether booking is online or just a number. Screenshot it for when they reply.",
+      "linkLine": "Here's what a bookable vet clinic site could look like: {demo-link}"
+    },
+    {
+      "angle": "Phone-only booking",
+      "line": "Booking with your vet clinic means calling during front desk hours. Most owners notice the limp or the scratching ear after dinner, when the clinic is closed.",
+      "hook": "Check the site and listing for online booking. If it's call-only, lead with this.",
+      "linkLine": "Vet appointments booked after hours, without a call: {demo-link}"
+    },
+    {
+      "angle": "No emergency page",
+      "line": "Your site doesn't say what to do if a pet is hurt after hours or which emergency animal hospital you send people to. That's the page a frightened owner hunts for at midnight.",
+      "hook": "Search their site for 'emergency' or 'after hours'. If there's nothing clear, this is the strongest angle.",
+      "linkLine": "A clear emergency and after-hours page for your clinic: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "I tried your vet clinic's new-patient form on my phone and the submit button sat off the screen. Owners with a sick pet on their lap are on a phone.",
+      "hook": "Only if they have a site. Try the appointment or new-patient form on a phone and note where it breaks.",
+      "linkLine": "Your vet clinic forms, rebuilt for a phone: {demo-link}"
+    },
+    {
+      "angle": "Wellness plans nobody can see",
+      "line": "Your reviews mention wellness plans, but nothing online explains what's included or the monthly price. Owners of a new puppy would sign up from home if they could read it.",
+      "hook": "Look for 'wellness plan' or 'care plan' in reviews or posts. Check whether the site explains one.",
+      "linkLine": "Wellness plans for every life stage, ready to enrol: {demo-link}"
+    },
+    {
+      "angle": "New puppy and kitten season",
+      "line": "Spring and the holidays bring a wave of new puppies and kittens, and their owners search for a first vet visit. Your site doesn't show a new-pet visit or how to book one.",
+      "hook": "Use from late winter through spring, and again in December. Check whether they offer a new-pet package.",
+      "linkLine": "A first-visit page for new puppies and kittens: {demo-link}"
+    },
+    {
+      "angle": "Reviews stuck on Google",
+      "line": "One review says your team sat on the floor with a frightened old dog until he settled. That's what an anxious owner wants to read before choosing a vet clinic.",
+      "hook": "Read their Google reviews and copy one phrase about gentle handling or a nervous pet. Quote it if they reply.",
+      "linkLine": "Your vet clinic reviews beside the Book button: {demo-link}"
+    },
+    {
+      "angle": "Hiring a vet tech",
+      "line": "Saw the clinic is hiring a veterinary technician. Good techs look at how a vet practice presents itself and its team before they apply.",
+      "hook": "Only if they posted a hiring notice for a tech, veterinary nurse, associate vet or front desk. Note the date.",
+      "linkLine": "A vet clinic page with a careers section that recruits: {demo-link}"
+    },
+    {
+      "angle": "Which species do you see",
+      "line": "Your listing says animal hospital but not whether you see rabbits, birds or reptiles. Exotic pet owners phone clinic after clinic for exactly that answer.",
+      "hook": "Check their listing, site and posts for any species besides dogs and cats. Never claim they see exotics unless they say so.",
+      "linkLine": "A species-we-see page for your vet clinic: {demo-link}"
+    },
+    {
+      "angle": "Refills by phone",
+      "line": "Your posts remind clients to call ahead for prescription refills and food orders. A refill request on the vet clinic's site would take that off the front desk phone.",
+      "hook": "Look for posts or a site banner about calling ahead for refills or diet food. Note the wording.",
+      "linkLine": "Online refill and food order requests for your clinic: {demo-link}"
+    },
+    {
+      "angle": "Meet the veterinarians",
+      "line": "Nothing online introduces your veterinarians: where they trained, what they enjoy treating, who's good with cats. Owners choosing a vet for a long-lived pet look for that.",
+      "hook": "Check the team page. Never state a degree, licence or specialty they haven't published.",
+      "linkLine": "Your vet team introduced properly: {demo-link}"
+    },
+    {
+      "angle": "Patient of the week posts",
+      "line": "Your patient-of-the-week posts, dogs in cones and cats in carriers, are lovely. With owners' permission they belong on a page new clients of the vet clinic actually see.",
+      "hook": "Find their patient-of-the-week or happy-patient posts. Mention one pet by species, never by an owner's name.",
+      "linkLine": "A happy-patients page, shared with owners' permission: {demo-link}"
+    },
+    {
+      "angle": "No idea what things cost",
+      "line": "Nothing online gives a range for a wellness exam, vaccines or a dental cleaning. Owners comparing vet clinics tend to call the one that gives them a starting point.",
+      "hook": "Check whether any prices or ranges appear on their site. Never quote their prices for them.",
+      "linkLine": "Vet fees and estimate ranges, shown plainly: {demo-link}"
+    },
+    {
+      "angle": "New neighbours",
+      "line": "People moving into {Neighborhood} look for a vet before they've unpacked the dog bed. Your clinic is around the corner and hard to find online.",
+      "hook": "Check for new apartment buildings or housing near them. Use the neighbourhood name they use in posts.",
+      "linkLine": "Where a new neighbour would find your vet clinic: {demo-link}"
+    },
+    {
+      "angle": "A specific recent post",
+      "line": "Your post about {specific recent job} showed the calm way your team handles nervous pets. New owners choosing a vet clinic would read that before anything else.",
+      "hook": "Pick their newest post about a patient, a procedure explained or a team member and name it exactly.",
+      "linkLine": "That vet clinic story, on its own page: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, your post about {specific recent job} showed how calmly your team handles nervous pets.\n\nI looked at the site for {Business Name} and couldn't find online booking or a clear emergency page. I put together a sample vet clinic site with booking, wellness plans, an after-hours page and refill requests, with marked placeholders where your photos would go.\n\nWould you like me to send it?",
+    "dm2": "{Owner}, following up in case this got lost in a busy clinic day. Here's the sample site for {Business Name}: {demo-link}\n\nOwners can book a visit at night, find the emergency page fast, read your wellness plans and request refills without calling. If it's not for you, say so and I won't message again.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for veterinary clinics here in {City}. I sent you a message a few days ago, did it come through?\"\n\nIF NO:\n\"No problem, I know clinic days don't stop. Short version: I built a sample site for {Business Name} with online booking, an emergency page, wellness plans and refill requests, with marked placeholders where your photos would go. Can I email you the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range}, then {Care Range} a month for hosting, updates and form privacy. For a clinic your size I'd normally quote about {Build Price}.\"\n\"Could I have fifteen minutes after appointments one evening this week?\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. We start the day it clears.\"",
+    "objections": [
+      {
+        "objection": "Our practice software already has an online booking option.",
+        "handler": "\"Keep it. The site puts that booking in front of owners with the visit types explained, the emergency page and wellness plans around it, so they arrive at your booking ready to choose.\""
+      },
+      {
+        "objection": "We're too busy already, we can't take more new clients.",
+        "handler": "\"Then the site is about fewer phone calls: refills, food orders, records requests and vaccine certificates handled online. Your front desk gets time back even if the schedule stays full.\""
+      },
+      {
+        "objection": "Our site came with our vendor contract.",
+        "handler": "\"Worth checking what that contract allows. Often the domain is yours and the site can move. If not, we can build pages that link into it rather than replace it.\""
+      },
+      {
+        "objection": "We can't promise outcomes, so what's the site for?",
+        "handler": "\"Exactly right, and it won't. It explains visits, plans, surgery day and emergencies, introduces the vets, and books appointments. Patient photos only appear with owners' written consent.\""
+      },
+      {
+        "objection": "The practice owner decides, not me.",
+        "handler": "\"Understood. I'll send a one-page summary and the demo link you can forward, and I'm happy to meet the owner after appointments.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For your clinic about {Build Price}, because it's booking, an emergency page, wellness plans and refills. A few wellness plan enrolments cover it.\""
+      }
+    ],
+    "email": {
+      "subject": "A site for {Business Name}'s pet owners",
+      "body": "Hi {Owner},\n\nI build websites for veterinary clinics around {City}. {Business Name} has warm reviews, but owners can't book a visit after hours, find a clear emergency page or read what your wellness plans include.\n\nI built a sample first rather than ask for your time: online booking, an emergency and after-hours page, wellness plans, surgery day, refills and records, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIt makes no promises about outcomes, and pet photos only go up with owners' written consent. If you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and updates. If not, it comes down at the end of the month.\n\nWorth fifteen minutes after appointments?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build websites for vet clinics in {City} and made a sample one for {Business Name} with online booking and an emergency page. I'll email the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm taking the {Business Name} vet clinic demo down on Friday to free up the space.\n\nShould I keep it up for you? A one-word reply is fine.",
+    "nurture": "Hi {Owner}, new puppy and kitten season is close, and those owners search for a first vet visit online before they call anyone. Thought of you.\n\nThe sample site is still here with the new-pet and wellness plan pages ready, nothing's changed on price. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to a few wellness plan enrolments, not to one surgery fee. Plans are the recurring revenue clinics feel.",
+      "The emergency page is never optional and never upsold. Build it into every tier.",
+      "Price by visit types, species and plan count, not page count. Explaining surgery day well takes real time.",
+      "Forms that carry medical history or records need privacy-safe hosting. Price that as a line, not a favour.",
+      "Clinics often have a site tied to a vendor contract. Price a domain and content move separately when it's needed.",
+      "Pet photos only with the owner's written consent. Price the consent page set, don't skip it."
+    ],
+    "lineItems": [
+      {
+        "item": "Wellness plan pages and enrolment setup",
+        "min": 400,
+        "max": 1000,
+        "unit": "one-time",
+        "description": "Max with several life-stage plans, species variations, monthly billing on their payment account and an enrolment form.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Species page (each beyond dogs and cats)",
+        "min": 100,
+        "max": 250,
+        "unit": "per-page",
+        "description": "Max when the page covers housing questions owners ask, visit preparation and which veterinarian sees the species.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Refill and prescription diet request form",
+        "min": 250,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max when requests route to the right vet for approval and owners choose pickup or delivery.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Surgery and dental day page with estimate request",
+        "min": 200,
+        "max": 500,
+        "unit": "per-page",
+        "description": "Max with pre-visit instructions for each procedure, an estimate request form and drop-off scheduling.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Records transfer and new-patient form",
+        "min": 200,
+        "max": 500,
+        "unit": "one-time",
+        "description": "Max when the form collects the previous clinic's details, consent to request records and uploads of vaccine certificates.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Domain and content move from a vendor site",
+        "min": 300,
+        "max": 900,
+        "unit": "one-time",
+        "description": "Max when old pages, redirects, the domain and email settings all have to move without a gap.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Veterinarian and technician profiles (each)",
+        "min": 80,
+        "max": 200,
+        "unit": "per-page",
+        "description": "Max with training as supplied, species and interests, a pet of their own and a book-with-this-vet link.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Second-language version",
+        "min": 300,
+        "max": 900,
+        "unit": "one-time",
+        "description": "Max when booking, the emergency page, plans and forms are all translated.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Consent and pet-photo policy page set",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A privacy notice, a pet-photo and testimonial consent page and a written policy, so no patient or owner appears on the vet clinic's site or feed without written consent.\"",
+      "when": "At build. Needs their current consent forms and how they record owner permission."
+    },
+    {
+      "name": "Accessibility review of the vet clinic site",
+      "min": 300,
+      "max": 900,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A check of booking, the emergency page and forms for screen readers, contrast, text size and keyboard use, with a fix list, so every pet owner can use the vet clinic's site.\"",
+      "when": "Month 2, or at build if many clients are older owners."
+    },
+    {
+      "name": "Advertising-approval-ready content pack for the clinic",
+      "min": 400,
+      "max": 1200,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Service, plan and ad wording for the animal hospital written without outcome promises and laid out for the veterinarian's sign-off, ready where the regulator requires approval.\"",
+      "when": "Before any paid ads, or where veterinary advertising has its own rules."
+    },
+    {
+      "name": "Clinic and team photo morning",
+      "min": 300,
+      "max": 800,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"One morning photographing exam rooms, the surgery suite, the vets and technicians with their own pets, and consenting clients' animals, enough for the site and a season of posts.\"",
+      "when": "Month 2, on a light morning before appointments."
+    },
+    {
+      "name": "Google profile upkeep for the vet clinic",
+      "min": 100,
+      "max": 250,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Posts on the clinic's Google profile about new-patient openings, seasonal pet care reminders and holiday hours, so owners searching for a vet see an active clinic.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Review requests after each vet visit",
+      "min": 49,
+      "max": 129,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"The day after a routine vet visit, the owner gets a short note asking for a review, with sensitive visits like euthanasia always excluded.\"",
+      "when": "Day 30. The easiest second sale."
+    },
+    {
+      "name": "New puppy and kitten season campaign",
+      "min": 200,
+      "max": 600,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A spring campaign aimed at new pet owners, pointing to the first-visit page and the puppy and kitten wellness plan.\"",
+      "when": "Pitch in late winter, run through spring, repeat before the holidays."
+    },
+    {
+      "name": "Monthly pet owner newsletter",
+      "min": 129,
+      "max": 299,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A short monthly letter from the vet clinic with seasonal reminders like ticks and holiday food hazards, a team introduction and openings.\"",
+      "when": "Month 3, once they have an email list from booking."
+    },
+    {
+      "name": "Referral pack for groomers, trainers and boarding",
+      "min": 150,
+      "max": 400,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Cards and a one-page sheet for local groomers, trainers and kennels to hand to clients who need a vet, with the clinic's booking link.\"",
+      "when": "Month 3, if they say new clients come from pet businesses nearby."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Groomers who ask clients for vaccine records",
+        "whoPays": "The groomer, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The groomer down the road checks vaccine certificates from your clinic every week. I'd build their booking site, with your vet clinic listed for owners who need shots.\"",
+        "whyItWorks": "Groomers and vets pass clients back and forth. The vet's word gets you in the door."
+      },
+      {
+        "route": "Boarding kennels and doggy daycares",
+        "whoPays": "The kennel, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The boarding kennel that sends you dogs needing vaccines before a stay books by phone. A booking site with vaccine upload would save them hours.\"",
+        "whyItWorks": "Kennels need vets for requirements and emergencies, so the clinic's introduction carries weight."
+      },
+      {
+        "route": "Dog trainers the clinic recommends",
+        "whoPays": "The trainer, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The trainer your vets suggest for jumpy puppies takes bookings by text. A class and private-session site would fill their puppy classes.\"",
+        "whyItWorks": "Trainers value a vet's referral more than any ad, and the vet clinic already sends them clients."
+      },
+      {
+        "route": "The animal rescue the clinic supports",
+        "whoPays": "The rescue, at a reduced rate",
+        "min": 500,
+        "max": 1500,
+        "unit": "one-time",
+        "pitchLine": "\"The rescue your clinic treats animals for posts adoptables only on social media. An adoption site with applications online would move animals faster.\"",
+        "whyItWorks": "Rescues trust their vet, and a reduced rate here earns goodwill the clinic sees too."
+      },
+      {
+        "route": "Pet aftercare and memorial services",
+        "whoPays": "The aftercare provider",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The pet aftercare service your clinic works with has a dated site that families find at a hard moment. A gentle, clear site would serve those families better.\"",
+        "whyItWorks": "Aftercare providers depend on vet clinic referrals, so the clinic's introduction is the whole sale."
+      },
+      {
+        "route": "Independent pet supply stores",
+        "whoPays": "The store, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The pet store that stocks the diets your vets recommend has a phone and a feed. A store site with local delivery and your clinic's new-patient link helps both.\"",
+        "whyItWorks": "Store and clinic share the same owners, and the vet clinic can introduce you at the counter."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Vaccine record checker for boarding kennels",
+        "whoPays": "The kennel, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"Owners upload their dog's vaccine certificate when booking a stay, and the kennel's assistant reads the dates and flags anything expired before check-in.\"",
+        "whyItWorks": "Checking certificates by hand is a daily chore. The vet clinic that issues them makes the introduction."
+      },
+      {
+        "route": "Adoption question assistant for the rescue",
+        "whoPays": "The rescue, monthly at a reduced rate",
+        "min": 49,
+        "max": 149,
+        "unit": "monthly",
+        "pitchLine": "\"Would-be adopters asking about fees, home checks and a pet's temperament get answers from the rescue's own profiles, and applications start right away.\"",
+        "whyItWorks": "Volunteers answer the same adoption questions every night. Answers come only from the rescue's approved text."
+      },
+      {
+        "route": "Booking assistant for the groomer",
+        "whoPays": "The groomer, monthly",
+        "min": 79,
+        "max": 199,
+        "unit": "monthly",
+        "pitchLine": "\"Owners asking the groomer about prices for their breed and openings get answers from the groomer's menu, plus a reminder that shots are due at the vet clinic.\"",
+        "whyItWorks": "Groomers can't answer while their hands are on a dog. The vet clinic connection makes the intro warm."
+      },
+      {
+        "route": "Gentle enquiry assistant for the aftercare provider",
+        "whoPays": "The aftercare provider, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"Families asking the aftercare service about pet cremation options, timing and costs at night get calm, approved answers and a callback from a person in the morning.\"",
+        "whyItWorks": "These questions come at hard hours. Approved wording and a fast human callback are what the provider needs."
+      },
+      {
+        "route": "Product question assistant for the pet store",
+        "whoPays": "The store, monthly",
+        "min": 79,
+        "max": 199,
+        "unit": "monthly",
+        "pitchLine": "\"Shoppers asking whether a diet or a flea product is in stock get an answer from the store's list, and anything medical is pointed to their vet clinic.\"",
+        "whyItWorks": "Stores field stock questions all day and never want to give medical advice."
+      },
+      {
+        "route": "Class placement assistant for the dog trainer",
+        "whoPays": "The trainer, monthly",
+        "min": 49,
+        "max": 149,
+        "unit": "monthly",
+        "pitchLine": "\"Owners describe their puppy's age and habits and get pointed to the right class from the trainer's schedule, with a note to clear any health concern with their vet.\"",
+        "whyItWorks": "Trainers lose students while they're teaching. The vet referral relationship opens the conversation."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Privacy-safe new-patient forms and hosting setup",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"New-patient history, records requests and owner details arrive on privacy-safe hosting instead of the vet clinic's general inbox.\"",
+      "whenAndWhatItTakes": "At build. Needs their current paper forms and the privacy rules where they practise."
+    },
+    {
+      "name": "Vaccine and wellness reminders",
+      "kind": "automation",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Owners get a text when a pet's vaccines or annual exam come due, with a link to book that visit straight into the vet's calendar.\"",
+      "whenAndWhatItTakes": "Day 30. Needs due dates from their practice software or an export, and approved wording."
+    },
+    {
+      "name": "Wellness plan billing and visit tracking",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Plan members pay monthly, included exams and vaccinations are ticked off as they're used, and the front desk sees what each pet has left.\"",
+      "whenAndWhatItTakes": "Month 2. Needs plan rules, a payment account and current plan members."
+    },
+    {
+      "name": "Online refill and diet order queue",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Refill and prescription diet requests land in one queue each vet approves, and the owner gets a text when the order is ready at the front desk.\"",
+      "whenAndWhatItTakes": "Month 2. Needs refill rules and who approves which requests."
+    },
+    {
+      "name": "After-hours message answerer with emergency routing",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"Night-time messages about hours, booking and refills get answered from the clinic's approved text, and anything that sounds urgent gets the emergency hospital's number at once.\"",
+      "whenAndWhatItTakes": "Month 2. Needs approved answers and the emergency referral details. Never triages or advises. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Surgery-day updates for owners",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"On surgery or dental day, owners get short status texts the tech sends with one tap: checked in, in recovery, ready for pickup.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the clinic's surgery-day steps and approved status wording."
+    },
+    {
+      "name": "Review reply drafts for the vet clinic",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 700,
+      "monthlyMin": 39,
+      "monthlyMax": 99,
+      "pitchLine": "\"Each vet clinic review gets a reply drafted in the practice's voice that never confirms a pet's diagnosis or repeats medical details.\"",
+      "whenAndWhatItTakes": "Month 2, alongside review requests. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Post-procedure check-in texts",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 700,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"The day after a spay, neuter or dental, the owner gets the vet's own discharge reminders and the clinic number, exactly as the vet wrote them.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the discharge text for each procedure. Sends only approved wording, never advice."
+    },
+    {
+      "name": "Vaccine certificate downloads for owners",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Owners download a current vaccine certificate for the kennel or groomer themselves, instead of calling the vet clinic to have one emailed.\"",
+      "whenAndWhatItTakes": "Month 4. Needs vaccine records from their practice software or an export, and a privacy-safe owner login."
+    },
+    {
+      "name": "Phone answering when the front desk is full",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 199,
+      "monthlyMax": 449,
+      "pitchLine": "\"When every vet clinic line is busy, calls about hours, booking and refills still get handled, and any sick-pet call goes straight to a person or the emergency number.\"",
+      "whenAndWhatItTakes": "Month 3, once they trust you. Needs approved answers, booking access and a hand-off rule. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Same-day cancellation fill for vet appointments",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 700,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"A morning exam slot cancels, and owners who asked for an earlier vet appointment get a text with the opening.\"",
+      "whenAndWhatItTakes": "Month 3. Needs booking access and a waitlist owners joined on purpose."
+    },
+    {
+      "name": "Visit summary drafts for owners",
+      "kind": "ai",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"From the vet's notes, a plain-language visit summary for the owner is drafted, and the vet reads and approves it before it's sent.\"",
+      "whenAndWhatItTakes": "Month 5, after privacy-safe hosting is live. Needs their note format and a rule that nothing goes out unapproved. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Estimate explainer drafts",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"A surgery or dental estimate gets a plain-language cover note explaining each line, drafted for the vet to check before the owner sees it.\"",
+      "whenAndWhatItTakes": "Month 5. Needs sample estimates and the clinic's own explanations. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "New-pet welcome sequence",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 700,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"After a puppy or kitten's first visit, owners get the clinic's own notes on the next vaccines, the wellness plan and what the following visit covers.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the clinic's new-pet handout. Sends only approved wording."
+    },
+    {
+      "name": "Caption drafts for patient posts",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 59,
+      "monthlyMax": 149,
+      "pitchLine": "\"Post a consented patient-of-the-week and a caption is ready in the vet clinic's voice, with any outcome promise or missing consent flagged.\"",
+      "whenAndWhatItTakes": "Month 2. Needs past captions and their consent records. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Exam room and vet schedule board",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Which vet and tech are in which exam room, which surgery slots are free, and where the day has gaps, on one screen at the front desk.\"",
+      "whenAndWhatItTakes": "Month 5, for clinics with several vets. Needs schedules, rooms and appointment lengths."
+    },
+    {
+      "name": "Bilingual owner message drafts",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Reminders, refill notices and surgery-day instructions drafted in the owner's preferred language and checked before they leave the vet clinic.\"",
+      "whenAndWhatItTakes": "Month 4, for clinics with many owners who prefer another language. Needs approved templates in both. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Lapsed patient recall",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 700,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Pets not seen in over a year get a friendly recall note to their owners, with sensitive cases like a recent loss always excluded.\"",
+      "whenAndWhatItTakes": "Month 4. Needs visit history and a way to mark deceased pets so they're never contacted."
+    },
+    {
+      "name": "Front-desk policy search for the clinic",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 59,
+      "monthlyMax": 149,
+      "pitchLine": "\"New receptionists search the vet clinic's own policies on plans, deposits, refills and records instead of pulling a tech out of an exam.\"",
+      "whenAndWhatItTakes": "Month 6. Needs written policies, each answer approved. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Wellness plan renewal and drop-off flags",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 59,
+      "monthlyMax": 149,
+      "pitchLine": "\"Plans nearing renewal with unused exams are flagged, and the vet clinic gets a suggested personal note to book the visit before the year ends.\"",
+      "whenAndWhatItTakes": "Month 8, once plan billing has a few months of data. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise booking, plans and refills for independent vet clinics",
+      "whoPays": "Vet clinics, monthly",
+      "min": 99,
+      "max": 299,
+      "unit": "monthly",
+      "pitchLine": "\"I built online booking, wellness plans and a refill queue for one independent vet clinic. Every independent animal hospital competing with the chains wants the same.\"",
+      "whyItWorks": "Independent clinics feel squeezed by group-owned hospitals, and a working local example is the pitch."
+    },
+    {
+      "route": "Veterinary association member template",
+      "whoPays": "The association",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer every member clinic a vet site template with the emergency page, consent pages and outcome-free wording already built in.\"",
+      "whyItWorks": "Associations need member benefits, and advertising wording is a constant member worry."
+    },
+    {
+      "route": "Veterinary supply distributors",
+      "whoPays": "The distributor, annually",
+      "min": 3000,
+      "max": 10000,
+      "unit": "per-year",
+      "pitchLine": "\"Your reps visit every vet clinic in the region. A bookable clinic site bundled with their account gives reps something to offer besides a price list.\"",
+      "whyItWorks": "Distributors fight for loyalty, and a service clinics depend on keeps the account."
+    },
+    {
+      "route": "Clinic groups buying independent practices",
+      "whoPays": "The group, per clinic",
+      "min": 2000,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"Each animal hospital you acquire keeps its local name. A template that keeps its character and adds group booking and plans rolls out clinic by clinic.\"",
+      "whyItWorks": "Groups buy several clinics a year, and each one needs a site the day the sign changes."
+    },
+    {
+      "route": "Pet insurers' find-a-vet listings",
+      "whoPays": "The insurer's partner team",
+      "min": 5000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Your policyholders search for a vet clinic near them. A partner directory with booking links to independent clinics makes your plan easier to use.\"",
+      "whyItWorks": "Insurers want policyholders to use vets who handle claims smoothly. A directory serves both sides."
+    },
+    {
+      "route": "White-label vet clinic template for agencies",
+      "whoPays": "The agency, per site",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency picks up vet clinic clients and rebuilds the emergency page and plans from scratch each time. License my template with them done.\"",
+      "whyItWorks": "Agencies own the relationship, and vet clinics are a niche they don't want to learn page by page."
+    },
+    {
+      "route": "Veterinary liability insurers",
+      "whoPays": "The insurer's member services team",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Clinics you insure ask what's safe to post about patients and procedures. A site template with consent and outcome-free wording is a member benefit.\"",
+      "whyItWorks": "Insurers want fewer complaints, and careful public wording and consent records help."
+    },
+    {
+      "route": "Shelter and rescue networks",
+      "whoPays": "The network, annually",
+      "min": 2000,
+      "max": 6000,
+      "unit": "per-year",
+      "pitchLine": "\"Every rescue in your network posts adoptables on social media. One adoption site template with applications and partner vet clinics listed serves them all.\"",
+      "whyItWorks": "Networks share tools across member rescues, and the partner vet clinic is the introduction."
+    },
+    {
+      "route": "Veterinary schools' practice ownership programmes",
+      "whoPays": "The school, annually",
+      "min": 1500,
+      "max": 5000,
+      "unit": "per-year",
+      "pitchLine": "\"Graduates who plan to open or buy a clinic get a launch kit with a bookable vet site, an emergency page and wellness plan pages ready.\"",
+      "whyItWorks": "Schools market practice ownership support, and a launch kit is something concrete to show."
+    },
+    {
+      "route": "Emergency and specialty animal hospitals",
+      "whoPays": "The hospital",
+      "min": 5000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"The emergency hospital your clinic refers to after hours needs a referral portal for vets and a clear what-to-expect page for owners in a crisis.\"",
+      "whyItWorks": "Specialty hospitals live on referrals from general clinics. The referring vet's introduction is the sale."
+    },
+    {
+      "route": "The same vet clinic build across town",
+      "whoPays": "New vet clinic clients elsewhere",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"Animal hospitals on opposite sides of {City} serve different owners, so the emergency page, wellness plans and refill queue move to the next independent clinic as they are.\"",
+      "whyItWorks": "Non-competing areas let you reuse the template, the pitch and the finished proof."
+    },
+    {
+      "route": "Rescue stalled vet booking projects",
+      "whoPays": "The stuck clinic",
+      "min": 500,
+      "max": 1500,
+      "unit": "one-time",
+      "pitchLine": "\"Plenty of vet clinics switched on online booking in their practice software and never connected it to the site or the reminders. Finishing that is a clear job.\"",
+      "whyItWorks": "Clinics that started have already decided to buy. They want someone who has done it before."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Vet clinic site build plus care plan, one contract",
+      "min": 2500,
+      "max": 4000,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The vet clinic site and the care plan go on one contract, so a holiday hours change or a new vet's profile is an email to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 0,
+      "offer": "Privacy-safe new-patient forms and hosting setup",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "trigger": "They take new-patient history on paper or by ordinary email.",
+      "line": "\"New-patient forms carry medical history. They should arrive on privacy-safe hosting, not in the clinic's general inbox.\""
+    },
+    {
+      "rung": 3,
+      "day": 30,
+      "offer": "Vaccine and wellness reminders",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "trigger": "The site has been live a month and they still send reminder postcards or call owners.",
+      "line": "\"Vaccine reminders that link straight to booking fill the vet's calendar without anyone picking up the phone.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Wellness plan billing and visit tracking",
+      "min": 1000,
+      "max": 2500,
+      "unit": "one-time",
+      "trigger": "Plan enquiries arrive through the new site and enrolment is still on paper.",
+      "line": "\"Owners are asking about wellness plans online. Let's let them enrol and pay monthly there too.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Online refill and diet order queue",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "trigger": "The front desk says refill calls are the biggest drain on their day.",
+      "line": "\"Refill calls become one queue each vet approves, and owners hear when it's ready.\""
+    },
+    {
+      "rung": 6,
+      "day": 120,
+      "offer": "After-hours message answerer with emergency routing",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "trigger": "They find a stack of overnight messages every morning.",
+      "line": "\"Night messages about booking and refills get answered, and anything urgent gets the emergency hospital's number straight away.\""
+    },
+    {
+      "rung": 7,
+      "day": 180,
+      "offer": "Clinic and team photo morning",
+      "min": 300,
+      "max": 800,
+      "unit": "per-shoot",
+      "trigger": "The site still uses placeholders for the team and exam rooms.",
+      "line": "\"One morning photographing the vets, techs and consenting patients fills the clinic site for the year.\""
+    },
+    {
+      "rung": 8,
+      "day": 240,
+      "offer": "Introduction to the emergency referral hospital",
+      "min": 5000,
+      "max": 15000,
+      "unit": "one-time",
+      "trigger": "They mention the after-hours hospital they refer to, or it asks who built the clinic site.",
+      "line": "\"The emergency hospital you send owners to after hours would benefit from a referral portal. Would you introduce me?\""
+    }
+  ]
+}

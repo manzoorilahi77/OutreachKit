@@ -1,5 +1,6 @@
-import { ARCH, ARCHFAM, ARCHOVER, NOUN, STATES, STYLE } from "@/data";
-import type { Archetype, ArchKey, StateCode } from "@/data";
+import { ARCH, ARCHFAM, ARCHOVER, NOUN, STYLE } from "@/data";
+import type { Archetype, ArchKey } from "@/data";
+import { REGIONS, type RegionCode } from "@/lib/market/regions";
 import type { Category, PriceModel, RunBlock } from "./types";
 
 export const slug = (s: string) => s.toLowerCase().replace(/[^a-z0-9]/g, "");
@@ -9,7 +10,7 @@ export function money(n: number): string {
 }
 
 export function archKey(c: Category): ArchKey {
-  return ARCHOVER[c.n] || ARCHFAM[c.f] || "quote";
+  return ARCHOVER[c.n] || c.arch || ARCHFAM[c.f] || "quote";
 }
 export function archFor(c: Category): Archetype {
   return ARCH[archKey(c)];
@@ -40,17 +41,18 @@ export function priceModel(c: Category, mult: number): PriceModel {
     proofLo: Math.round((lo * 0.55) / 50) * 50, proofHi: Math.round((lo * 0.8) / 50) * 50,
     starterLo: Math.round((lo * 0.55) / 50) * 50, starterHi: Math.round((lo * 0.85) / 50) * 50,
     premLo: Math.round((hi * 1.4) / 50) * 50, premHi: Math.round((hi * 2.2) / 50) * 50,
-    careMin: c.tier === "A" ? 79 : c.tier === "B" ? 59 : 49,
-    careMax: c.tier === "A" ? 149 : c.tier === "B" ? 119 : 89,
-    careRec: c.tier === "A" ? 99 : c.tier === "B" ? 79 : 59,
+    // A catalogue category may carry its own care plan (mid-size and healthcare); the port's rows never do.
+    careMin: c.care ? c.care[0] : c.tier === "A" ? 79 : c.tier === "B" ? 59 : 49,
+    careMax: c.care ? c.care[1] : c.tier === "A" ? 149 : c.tier === "B" ? 119 : 89,
+    careRec: c.care ? c.care[2] : c.tier === "A" ? 99 : c.tier === "B" ? 79 : 59,
   };
 }
 
-export function citiesOf(st: StateCode): string[] {
-  return STATES[st][1].split("|");
+export function citiesOf(st: RegionCode): string[] {
+  return REGIONS[st][1].split("|");
 }
 
-export function marketSize(st: StateCode | "", city: string): [label: string, mult: number] {
+export function marketSize(st: RegionCode | "", city: string): [label: string, mult: number] {
   if (!st) return ["Unknown", 25];
   const i = citiesOf(st).indexOf(city);
   if (i < 0) return ["Unlisted town — assume a smaller market", 12];
@@ -64,8 +66,8 @@ export function gapMid(g: string): number {
   return m ? (+m[1]! + +m[2]!) / 2 / 100 : 0.45;
 }
 
-export function makeTags(c: Category, st: StateCode, city: string): string[] {
-  const cs = slug(city), ss = slug(STATES[st][0]), ab = st.toLowerCase();
+export function makeTags(c: Category, st: RegionCode, city: string): string[] {
+  const cs = slug(city), ss = slug(REGIONS[st][0]), ab = st.toLowerCase();
   const out: string[] = [];
   c.t.forEach((t) => { out.push("#" + cs + t, "#" + t + cs); });
   out.push("#" + ab + c.t[0], "#" + ss + c.t[0], "#" + ss + c.t[1], "#" + cs + ab);
@@ -73,12 +75,12 @@ export function makeTags(c: Category, st: StateCode, city: string): string[] {
   return [...new Set(out)].slice(0, 14);
 }
 
-export function makeMaps(c: Category, st: StateCode, city: string): string[] {
+export function makeMaps(c: Category, st: RegionCode, city: string): string[] {
   const loc = city + ", " + st;
   return c.q.map((q) => q + " near " + loc);
 }
 
-export function rotation(st: StateCode, city: string): string[] {
+export function rotation(st: RegionCode, city: string): string[] {
   return citiesOf(st).filter((c) => c !== city).slice(0, 10);
 }
 

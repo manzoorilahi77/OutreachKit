@@ -1,0 +1,874 @@
+{
+  "schemaVersion": 1,
+  "category": "Speech & occupational therapy",
+  "slug": "speech-occupational-therapy",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · expansion batch (healthcare + mid-size)",
+    "generatedAt": "2026-10-13",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Leaned on worried parents searching at night, the waitlist most clinics run, and school collaboration. No progress promises, no diagnostic checklists, children's photos only with written parental consent. Unsure on the school group and funding directory route prices."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Why families contact the speech and OT team",
+      "contains": "The everyday worries parents bring, such as late talking, stuttering, picky eating, pencil grip or getting overwhelmed by noise, written by the therapists as reasons to ask, never as a checklist or diagnosis",
+      "why": "Parents aren't sure whether their worry is 'enough' to call. Seeing their own words on the page gives them permission to book an assessment."
+    },
+    {
+      "section": "Your child's first assessment",
+      "contains": "How long the assessment takes, the play-based activities, whether the parent stays in the room, how to prepare the child, the written report that follows and the [fee]",
+      "why": "The first visit is the scary part for parent and child. Describing it in detail is what turns a late-night search into a booked assessment."
+    },
+    {
+      "section": "Feeding therapy",
+      "contains": "What a feeding therapy session looks like, the mealtime difficulties the clinic sees as the therapists describe them, what to bring, and how the team works with the family's doctor",
+      "why": "Feeding worries are stressful and specific, and few clinics explain them. A dedicated page draws families who have nowhere else to turn."
+    },
+    {
+      "section": "Working with schools and nurseries",
+      "contains": "How the speech therapists and OTs liaise with teachers, school and nursery visits, written reports for school support plans as the clinic offers them, and consent for sharing",
+      "why": "Parents choose the therapy clinic that will talk to the teacher. Showing that collaboration plainly is a deciding point."
+    },
+    {
+      "section": "Waitlist, fees and funding",
+      "contains": "How the waitlist works and the current wait as a [placeholder], session fees, the funding or insurance routes the clinic accepts as [placeholders], and receipts for claims",
+      "why": "Parents ring three clinics to ask about the wait. A clear, honest page saves them the calls and saves the front desk the time."
+    },
+    {
+      "section": "Adult speech and occupational therapy",
+      "contains": "If the clinic sees adults: speech and swallowing after illness, voice therapy, hand therapy and help with daily tasks at home, each with what the first session involves",
+      "why": "Adult clients and their families search separately from parents. A page of their own stops them assuming the clinic is only for children."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C26",
+      "siteType": "local-conversion",
+      "name": "Kids' Therapy Front Door",
+      "heroLayout": "split-photo",
+      "mood": [
+        "gentle",
+        "bright",
+        "welcoming"
+      ],
+      "bestFor": "Solo speech therapists or OTs who need the assessment request, waitlist note and fees on one page",
+      "pairsWithTier": "starter",
+      "headlineSample": "Speech and occupational therapy for kids in {City}",
+      "whyItFits": "Sky Kite is built for children's services: soft rounded type and a light blue that feels safe to a worried parent, with the assessment request beside the therapist."
+    },
+    {
+      "id": "b",
+      "themeId": "C47",
+      "siteType": "booking-first",
+      "name": "Assessment and Session Booking",
+      "heroLayout": "card-stack",
+      "mood": [
+        "warm",
+        "organised",
+        "playful"
+      ],
+      "bestFor": "Multi-therapist clinics with speech, OT and feeding therapy, each with its own assessment and session bookings",
+      "pairsWithTier": "standard",
+      "headlineSample": "Book a speech or OT assessment in {City}",
+      "whyItFits": "The family's Private Vault reads like a wealth adviser to parents of toddlers. Teal & Tangerine stays calm but friendly, and the card stack separates speech, OT and feeding bookings."
+    },
+    {
+      "id": "c",
+      "themeId": "C30",
+      "siteType": "editorial-trust",
+      "name": "The Parent Guide",
+      "heroLayout": "type-led",
+      "mood": [
+        "thoughtful",
+        "clear",
+        "reassuring"
+      ],
+      "bestFor": "Established paediatric therapy practices that want to be the place parents read before choosing a therapist",
+      "pairsWithTier": "premium",
+      "headlineSample": "Worried about how your child talks, eats or plays? Start in {City}",
+      "whyItFits": "Butter & Denim is made for long reading, and its geometric headings stay friendly, which suits a library of parent guides written by the therapists."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your therapy clinic's Maps listing has lovely parent reviews but no website, so a mum in {City} worried about her toddler's speech can't see who you help or how to book an assessment.",
+      "hook": "Open their Maps listing and confirm there is no Website button. Screenshot it for when they reply.",
+      "linkLine": "Here's what could sit behind that button for the speech and OT clinic: {demo-link}"
+    },
+    {
+      "angle": "Instagram-only clinic",
+      "line": "Parents find your speech therapy tips on Instagram, then hit a bio with no assessment request, fees or waitlist details. That's where the worried ones stop.",
+      "hook": "Check their Instagram bio link. If it goes nowhere useful or to a link list, note what's missing.",
+      "linkLine": "A home for the speech therapy clinic beyond the feed: {demo-link}"
+    },
+    {
+      "angle": "Waitlist not explained",
+      "line": "Your posts mention a waitlist but nothing says how long it is or how to join. Parents ring three therapy clinics to find out, and join whichever one answers first.",
+      "hook": "Look for 'waitlist' in their posts or listing. If there's no way to join it online, the angle holds.",
+      "linkLine": "An online waitlist for the therapy clinic: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "I opened your speech and OT site on my phone and the intake form was a PDF to print and email back. Parents fill these in on the sofa after bedtime.",
+      "hook": "Only if they have a site. Try the intake path on your phone and note what breaks. Screenshot it for when they reply.",
+      "linkLine": "The therapy clinic, rebuilt for a phone: {demo-link}"
+    },
+    {
+      "angle": "First assessment a mystery",
+      "line": "Nothing on your page says what happens at a child's first speech or OT assessment. Parents worry their child will be upset or tested, and that worry stops the booking.",
+      "hook": "Look for any description of the first assessment. If it's a single line or missing, the angle holds.",
+      "linkLine": "A first assessment page for the therapy clinic: {demo-link}"
+    },
+    {
+      "angle": "Bedtime searching parents",
+      "line": "Parents search about late talking or pencil grip after the kids are asleep, when your phones are off. Right now there's nowhere to leave an assessment request until morning.",
+      "hook": "Check whether calling in office hours is the only route. If there's no online request, the angle holds.",
+      "linkLine": "A therapy clinic page that takes requests after bedtime: {demo-link}"
+    },
+    {
+      "angle": "Parent reviews hidden",
+      "line": "Your Google reviews are full of parents thanking the therapists for their patience with shy kids. That's exactly what a nervous parent wants to read, and no page shows it.",
+      "hook": "Read their reviews and copy one phrase about patience or how the child felt. Quote it. Never repeat anything about a child's diagnosis or progress.",
+      "linkLine": "Parent reviews beside the assessment request: {demo-link}"
+    },
+    {
+      "angle": "Start of the school year",
+      "line": "The first weeks of the school year are when teachers mention speech or handwriting concerns to parents. They search that evening and pick the therapy clinic that explains things best.",
+      "hook": "Use this in the weeks before and after the school year starts. Name the term.",
+      "linkLine": "A therapy clinic page ready for the new school year: {demo-link}"
+    },
+    {
+      "angle": "Feeding therapy not mentioned",
+      "line": "You offer feeding therapy, and it's one word in a list. Parents of picky or anxious eaters search for it by name and find almost nobody who explains it.",
+      "hook": "Check their site and posts for feeding therapy. If it's offered but barely described, the angle holds.",
+      "linkLine": "A feeding therapy page for the clinic: {demo-link}"
+    },
+    {
+      "angle": "Hiring a speech therapist",
+      "line": "Saw the clinic is hiring a speech therapist. Therapists compare paediatric practices partly on caseload, supervision and the team they'd join, as shown online.",
+      "hook": "Only if they posted a hiring notice for a speech therapist, OT or therapy assistant. Note the date.",
+      "linkLine": "A therapy clinic page with a careers section: {demo-link}"
+    },
+    {
+      "angle": "School and home visits",
+      "line": "Your posts mention therapists visiting schools and homes. A page listing the areas you cover and how school visits work would answer what every new parent asks.",
+      "hook": "Look for posts about school visits, home sessions or online therapy. Use the areas they mention.",
+      "linkLine": "A school and home visits page for the speech and OT clinic: {demo-link}"
+    },
+    {
+      "angle": "Fees and funding unclear",
+      "line": "Under your posts parents ask about session fees and whether their funding or insurance covers speech therapy. A plain page answers that before they give up.",
+      "hook": "Look for fee or funding questions in comments and reviews. Never state a funding route they haven't published.",
+      "linkLine": "Therapy fees and funding explained on one page: {demo-link}"
+    },
+    {
+      "angle": "Therapist registrations not shown",
+      "line": "Your speech therapists and OTs are clearly experienced, and nothing online shows their registration or training. Parents check that before they trust someone with their child.",
+      "hook": "Check bios for registration or qualifications. Never state a licence, registration or membership they haven't published.",
+      "linkLine": "Your therapists' qualifications, stated plainly: {demo-link}"
+    },
+    {
+      "angle": "Doctor and teacher referrals",
+      "line": "It looks like many families reach you through their child's doctor or teacher. They still look the therapy clinic up first, and find little about the first assessment.",
+      "hook": "Look for reviews saying a teacher or doctor suggested them, or posts thanking schools. Quote it.",
+      "linkLine": "Where a referred family would land: {demo-link}"
+    },
+    {
+      "angle": "A specific recent post",
+      "line": "Your {specific recent job} post gave parents a speech activity they could actually try at home. It deserves a page on the therapy clinic site, not a few days in the feed.",
+      "hook": "Pick their newest parent tip, workshop or clinic event and name it exactly. Never a child's case.",
+      "linkLine": "That parent tip, on its own therapy clinic page: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, your post about {specific recent job} was the kind of practical speech advice parents actually use.\n\nI looked for a site for {Business Name} and only found the listing and social pages. I put together a sample therapy clinic site with the first assessment explained, a feeding therapy page, school collaboration and an online waitlist, with marked placeholders where your photos would go.\n\nWould you like me to send it over?",
+    "dm2": "{Owner}, following up in case my note got lost between sessions. Here's the sample speech and OT site for {Business Name}: {demo-link}\n\nIt walks a worried parent through the first assessment, explains feeding therapy and school visits, and lets families join the waitlist without phoning. If it's not for you, say so and I won't message again.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for speech and occupational therapy clinics here in {City}. I sent a message a couple of days ago, did it come through?\"\n\nIF NO:\n\"No problem, you're in sessions all day. Short version: I built a sample site for {Business Name} with the first assessment explained, feeding therapy, school visits and an online waitlist, with marked placeholders where your photos would go. Can I email the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range}, then {Care Range} a month for hosting and updates. For a clinic your size I'd normally quote about {Build Price}, about the fees for one child's term of sessions.\"\n\"The real win is the waitlist page. Parents stop ringing to ask, and you see who's waiting in one place.\"\n\"Could I take fifteen minutes after your last session this week?\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. We start the day it clears, and your therapists approve every page before it goes live.\"",
+    "objections": [
+      {
+        "objection": "We already have a long waitlist, we don't need more families.",
+        "handler": "\"Then the site manages the waitlist instead of growing it: an honest wait time, an online form, and fewer calls to the front desk. It can also steer families to services with shorter waits, like groups or feeding therapy.\""
+      },
+      {
+        "objection": "Our referrals come from doctors and schools.",
+        "handler": "\"And every one of those parents looks you up before calling. A first assessment page and a school collaboration page confirm they've been sent somewhere good.\""
+      },
+      {
+        "objection": "We can't share children's stories or photos.",
+        "handler": "\"Agreed, and the site doesn't. No child's face or story without written parental consent. The pages describe your sessions and your team, with placeholders until you supply anything.\""
+      },
+      {
+        "objection": "Funding rules keep changing, we can't put them online.",
+        "handler": "\"Then the page says how to check with your front desk, with the routes you accept as placeholders, and you text me when something changes. It's covered by the monthly fee.\""
+      },
+      {
+        "objection": "Parents find us through local parent groups.",
+        "handler": "\"They do, and someone in the group posts your name. The next parent clicks it and needs something better than a phone number. The site is what that recommendation lands on.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For your clinic about {Build Price}, because of the assessment, feeding and waitlist pages. One family staying for a term covers it.\""
+      }
+    ],
+    "email": {
+      "subject": "A therapy clinic site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for speech and occupational therapy clinics around {City}. {Business Name} has warm parent reviews, but no site where a worried parent can see what the first assessment involves, how the waitlist works and how to join it.\n\nI built a sample first rather than ask for your time: reasons families get in touch, the first assessment explained, feeding therapy, school and nursery collaboration, fees and funding with placeholders for your wording, and an assessment request that keeps health details off the form. It uses marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and updates. If not, no problem, it comes down at the end of the month.\n\nWorth fifteen minutes after your last session?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build websites for speech and OT clinics in {City}, and I've made a sample for {Business Name} with an online waitlist and the first assessment explained. I'll email the link for after sessions. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, just letting you know the {Business Name} therapy clinic demo comes down this Friday.\n\nReply if you'd like it kept up a little longer.",
+    "nurture": "Hi {Owner}, the new school term is close, and that's when teachers raise speech and handwriting concerns with parents. Therapy clinics with a clear first assessment page and an online waitlist hear from more of those families.\n\nThe sample's still up and the price hasn't moved. {demo-link} if you'd like another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to one child's term of therapy sessions, not to a single assessment fee.",
+      "Price the first assessment page and the waitlist as the core of the build; they do the clinic's front desk work.",
+      "Quote each service page separately (speech, OT, feeding, adults) and only for services the clinic actively offers.",
+      "Add a therapist review round to every page; nothing about children goes live unapproved.",
+      "Leave wait times, funding routes and registrations as placeholders until the clinic supplies them in writing.",
+      "Keep monthly add-ons below the fee for one therapy session."
+    ],
+    "lineItems": [
+      {
+        "item": "Therapy service page (each)",
+        "min": 200,
+        "max": 500,
+        "unit": "per-page",
+        "description": "Max when written from a therapist interview, with who it's for, what a session looks like, fees and an assessment request link.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "First assessment walkthrough page",
+        "min": 300,
+        "max": 700,
+        "unit": "per-page",
+        "description": "Max with how to prepare the child, a parent-in-the-room note, the report that follows and a printable version.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Online waitlist with intake questions",
+        "min": 500,
+        "max": 1200,
+        "unit": "one-time",
+        "description": "Max when families choose speech, OT or feeding, preferred days and visit type, and staff see one sorted list.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "School and nursery partner page",
+        "min": 250,
+        "max": 600,
+        "unit": "per-page",
+        "description": "Max with how school visits work, consent for sharing reports and a separate request route for teachers.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Parent resource library setup",
+        "min": 400,
+        "max": 1000,
+        "unit": "one-time",
+        "description": "Max with categories by age and skill, printable home activities the therapists wrote and a sign-up for new ones.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Teletherapy information and booking page",
+        "min": 250,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max with a tech check guide for parents, how online sessions run and booking for online slots only.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Second-language therapy clinic pages",
+        "min": 400,
+        "max": 1000,
+        "unit": "one-time",
+        "description": "Max when assessment, waitlist, fees and service pages are translated and checked by a bilingual therapist.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Therapy room and team photo session",
+      "min": 300,
+      "max": 800,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"One morning photographing the speech and OT rooms, the sensory gym and the therapists at work with toys and materials. Children appear only with written parental consent.\"",
+      "when": "Month 2, before therapist bios fill with placeholders."
+    },
+    {
+      "name": "Therapy clinic Google profile upkeep",
+      "min": 150,
+      "max": 300,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Weekly posts on the therapy clinic's Google profile about waitlist updates, parent workshops and holiday programmes, so parents searching for speech therapy nearby see a current clinic.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Parent feedback requests at the end of a block",
+      "min": 79,
+      "max": 179,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"At the end of a therapy block, parents get a polite note asking about their experience with the clinic, never about their child's diagnosis or progress.\"",
+      "when": "Day 30. Wording approved by the clinic first."
+    },
+    {
+      "name": "Consent and child photo policy page set",
+      "min": 300,
+      "max": 700,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A privacy notice, a written parental consent form for any photo, video or quote, and a page on how the therapy clinic stores reports and shares them with schools.\"",
+      "when": "At build, before any family story or photo is used."
+    },
+    {
+      "name": "Accessibility and neurodivergent-friendly review",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A pass on the therapy clinic site for screen readers, contrast, reduced motion, plain language and calm layouts that suit autistic and ADHD parents and adult clients.\"",
+      "when": "At launch, then once a year."
+    },
+    {
+      "name": "Advertising-approval-ready therapy content pack",
+      "min": 500,
+      "max": 1200,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Every speech, OT and feeding therapy page bundled with a claims checklist and the therapists' sign-off, ready to submit where the regulator requires approval of health advertising.\"",
+      "when": "Before launch, and before any paid campaign."
+    },
+    {
+      "name": "Parent workshop promotion",
+      "min": 200,
+      "max": 500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A flyer, an event page and posts for the clinic's parent evenings on early talking, fussy eating or handwriting readiness, led by the therapists.\"",
+      "when": "Six weeks before each workshop."
+    },
+    {
+      "name": "Nursery and school information packs",
+      "min": 250,
+      "max": 600,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A printed and emailed pack for nursery and school staff explaining what the speech and OT clinic offers, how to suggest it to parents, and how school visits work.\"",
+      "when": "Month 3, before the start of a school term."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Paediatric practices that suggest therapy",
+        "whoPays": "The paediatric practice",
+        "min": 3000,
+        "max": 7000,
+        "unit": "one-time",
+        "pitchLine": "\"The children's doctor who suggests your speech therapy to parents has a site with no online booking. I already build careful clinic sites, and you could introduce me.\"",
+        "whyItWorks": "Children's doctors and therapy clinics share families and trust each other's judgement."
+      },
+      {
+        "route": "Nurseries and preschools the therapists visit",
+        "whoPays": "The nursery, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The nursery your OT visits for sessions takes enquiries by phone only. A tour booking site that mentions its therapy clinic partnership would set it apart.\"",
+        "whyItWorks": "Nursery owners value the therapist who helps their staff, and a partnership is a selling point for them."
+      },
+      {
+        "route": "Tutoring and learning support centres",
+        "whoPays": "The centre, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The learning support centre that sends children to you for handwriting and speech assessments has a dated site. A programme and booking site would help both.\"",
+        "whyItWorks": "Tutors and therapists refer the same children back and forth."
+      },
+      {
+        "route": "Adaptive swim and sports programmes",
+        "whoPays": "The programme, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The adaptive swim programme your OT recommends to families signs children up by email. A class booking site listing the therapy clinic as a partner helps them.\"",
+        "whyItWorks": "Adaptive programmes rely on therapist recommendations to fill classes."
+      },
+      {
+        "route": "Sensory and therapy toy shops",
+        "whoPays": "The shop",
+        "min": 2000,
+        "max": 5000,
+        "unit": "one-time",
+        "pitchLine": "\"The shop where your OTs send parents for fidget tools and pencil grips has no online catalogue. A shop site sorted by skill and age would sell more.\"",
+        "whyItWorks": "Shops depend on therapist recommendations, and the clinic owner's introduction carries weight."
+      },
+      {
+        "route": "Parent support groups",
+        "whoPays": "The parent group, from its own funds",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "pitchLine": "\"The parent support group that meets at your therapy clinic runs on a chat group. A small site with meeting dates and a sign-up would help new parents find it.\"",
+        "whyItWorks": "Volunteer-run groups trust the clinic hosting them and have small, real budgets."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Front desk helper for the paediatric practice",
+        "whoPays": "The paediatric practice, monthly",
+        "min": 200,
+        "max": 500,
+        "unit": "monthly",
+        "pitchLine": "\"Parents asking the children's doctor's office about vaccination days, opening hours and local speech therapy options get approved answers, and health questions go to staff.\"",
+        "whyItWorks": "Children's practices take endless logistics calls. Admin-only answers carry no clinical risk."
+      },
+      {
+        "route": "Daily update drafts for the nursery",
+        "whoPays": "The nursery, monthly",
+        "min": 79,
+        "max": 199,
+        "unit": "monthly",
+        "pitchLine": "\"Nursery staff jot a few words about the day and get a warm parent update drafted to check and send, including dates of the therapy clinic's parent talks.\"",
+        "whyItWorks": "Nursery staff write updates at the end of a tiring day and welcome the help."
+      },
+      {
+        "route": "Session note drafts for the tutoring centre",
+        "whoPays": "The tutoring centre, monthly",
+        "min": 79,
+        "max": 199,
+        "unit": "monthly",
+        "pitchLine": "\"Tutors' quick notes become a parent-friendly session summary for the tutor to approve, with a gentle suggestion to see the speech therapist when a tutor flags it.\"",
+        "whyItWorks": "Tutors lose evenings to parent updates."
+      },
+      {
+        "route": "Class enquiry assistant for the adaptive programme",
+        "whoPays": "The programme",
+        "min": 600,
+        "max": 1500,
+        "unit": "one-time",
+        "pitchLine": "\"Parents ask the adaptive swim programme about class sizes, support staff and the next start date, answered from the programme's own pages, with the OT clinic named for questions about readiness.\"",
+        "whyItWorks": "Volunteer-heavy programmes miss enquiries outside class times."
+      },
+      {
+        "route": "Gift and tool finder for the toy shop",
+        "whoPays": "The shop, monthly",
+        "min": 79,
+        "max": 199,
+        "unit": "monthly",
+        "pitchLine": "\"Parents and grandparents describe the child's age and what the occupational therapist suggested working on, and get shop products to look at, never therapy advice.\"",
+        "whyItWorks": "Shoppers don't know what to buy and leave without asking."
+      },
+      {
+        "route": "Meeting notes and reminders for the parent group",
+        "whoPays": "The parent group",
+        "min": 400,
+        "max": 1000,
+        "unit": "one-time",
+        "pitchLine": "\"The parent support group's volunteer records the meeting topics and gets a tidy summary and reminder for members, checked before it goes out, with the therapy clinic's resource links.\"",
+        "whyItWorks": "Volunteers run out of time for the admin that keeps a group alive."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Privacy-safe parent enquiry form and hosting setup",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Parents request a speech or OT assessment with the child's first name, age and a contact, nothing clinical, on hosting set up for the children's privacy rules where the clinic practises.\"",
+      "whenAndWhatItTakes": "At build. Needs the services, who receives enquiries and the clinic's privacy wording."
+    },
+    {
+      "name": "Online therapy waitlist with position updates",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Families join the therapy waitlist online and get a short update every few weeks on where things stand, so the front desk stops fielding 'how long now' calls.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the current waitlist, service types and the clinic's wording for updates."
+    },
+    {
+      "name": "Therapy session reminders with confirm or cancel",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 39,
+      "monthlyMax": 99,
+      "pitchLine": "\"Parents get a reminder the evening before each speech or OT session and can confirm or cancel with one reply, so a freed slot goes to the waitlist.\"",
+      "whenAndWhatItTakes": "Day 30. Needs schedule access, text consent and approved wording. No clinical details in messages."
+    },
+    {
+      "name": "Home practice activity sheet drafts",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"After a session, the speech therapist's shorthand becomes a friendly home activity sheet for the parent, which the therapist edits and approves before it's sent.\"",
+      "whenAndWhatItTakes": "Month 3. Needs examples of the therapists' current sheets. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Secure parent portal for reports and home practice",
+      "kind": "software",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"Parents log in to see their child's therapy reports, home activities and upcoming sessions in one place, instead of searching their inbox.\"",
+      "whenAndWhatItTakes": "Month 6. Needs a secure hosting setup, the clinic's report formats and parent consent."
+    },
+    {
+      "name": "Call cover while therapists are in sessions",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 199,
+      "monthlyMax": 449,
+      "pitchLine": "\"During back-to-back sessions, parents calling about fees, the waitlist or school visits get the therapy clinic's approved answers; anything about a child goes to a therapist.\"",
+      "whenAndWhatItTakes": "Month 3, once they trust you. Needs approved answers and waitlist access. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Parent review responses that protect children's privacy",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"When a parent posts about the speech and OT team online, a thank-you comes back for the owner to approve, written so nobody can tell which child attends or why.\"",
+      "whenAndWhatItTakes": "Month 2, alongside parent feedback requests. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Assessment report first drafts",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 149,
+      "monthlyMax": 349,
+      "pitchLine": "\"The therapist's assessment notes and scores become a first draft of the speech or OT report in the clinic's format, which the therapist rewrites and signs inside the secure system.\"",
+      "whenAndWhatItTakes": "Month 6, only inside their secure system. Needs report templates and therapist sign-off rules. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "School holiday schedule change notices",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 500,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Before each school holiday, families get the therapy clinic's changed session times and holiday programme dates, with a link to rebook.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the clinic's term calendar and contact consent."
+    },
+    {
+      "name": "Session receipts for funding and insurance claims",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Parents download itemised therapy session receipts in the format their funding or insurer asks for, instead of emailing the front desk each month.\"",
+      "whenAndWhatItTakes": "Month 4. Needs billing exports and the receipt fields families need where the clinic practises."
+    },
+    {
+      "name": "Therapist caseload and room board",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 99,
+      "monthlyMax": 199,
+      "pitchLine": "\"See each speech therapist's and OT's caseload, the sensory gym and therapy rooms across the week, so new families are matched to whoever has space.\"",
+      "whenAndWhatItTakes": "Month 6, for clinics with several therapists. Needs schedules and room lists."
+    },
+    {
+      "name": "Parent question helper that points to an assessment",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"A parent describes their worry in their own words and is pointed to the right speech, OT or feeding assessment, never told whether their child has a problem.\"",
+      "whenAndWhatItTakes": "Month 5. Needs routing rules reviewed by the therapists. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "School visit scheduler",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Teachers and nursery staff pick a time for the therapist's school visit from open slots, with parent consent confirmed before it's booked.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the therapists' visit days, the schools they cover and the consent step."
+    },
+    {
+      "name": "Parent evening sign-up",
+      "kind": "software",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Parents book a seat at the clinic's talks on early speech or fussy eating online and get a reminder, with an online option for those who can't get a sitter.\"",
+      "whenAndWhatItTakes": "Month 4, when they run talks. Needs dates, room capacity and a video link."
+    },
+    {
+      "name": "Visual schedule and social story drafts",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"The occupational therapist describes a routine, like a haircut or the first school day, and gets a simple visual schedule or social story draft to edit for the family.\"",
+      "whenAndWhatItTakes": "Month 5. Needs the therapists' preferred styles and a do-not-say list. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Check-in invitations after discharge",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Some months after a child finishes therapy, the family gets a friendly note with parent workshop dates and how to book a check-in if new worries come up.\"",
+      "whenAndWhatItTakes": "Month 5. Needs discharge dates and an opt-out line."
+    },
+    {
+      "name": "Parent messages drafted in the family's language",
+      "kind": "ai",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1200,
+      "monthlyMin": 59,
+      "monthlyMax": 149,
+      "pitchLine": "\"Families who'd rather read in their home language get waitlist and session updates from the therapy clinic drafted in it, checked by a bilingual staff member first.\"",
+      "whenAndWhatItTakes": "Month 5, for clinics with multilingual families. Needs translated templates checked by staff. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Online therapy session links and tech checks",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Families booked for online speech therapy get their session link and a quick tech check the day before, so sessions don't start with a frozen screen.\"",
+      "whenAndWhatItTakes": "Month 4, for clinics offering online sessions. Needs their video tool and schedule access."
+    },
+    {
+      "name": "Termly progress summary drafts for parents",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"At the end of term, each therapist's session notes become a plain-language summary for parents to read, rewritten and approved by the therapist inside the secure system.\"",
+      "whenAndWhatItTakes": "Month 7, only inside their secure system. Needs a summary template the clinic likes. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Waitlist and referral source dashboard",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"See how long families wait for speech, OT and feeding therapy, where they heard about the clinic, and which schools and doctors refer most.\"",
+      "whenAndWhatItTakes": "Month 7, once the waitlist has a few months of data."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "A ready-made site for independent paediatric therapy clinics",
+      "whoPays": "Each clinic, monthly",
+      "min": 79,
+      "max": 249,
+      "unit": "monthly",
+      "pitchLine": "\"Every small speech or OT clinic runs a waitlist and answers the same parent questions. I sell them the first assessment, waitlist and school pages as a monthly site.\"",
+      "whyItWorks": "Therapy clinic owners are clinicians first and would rather pay monthly than write their own pages."
+    },
+    {
+      "route": "Speech therapy and OT professional bodies",
+      "whoPays": "The professional body",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Your members in private practice keep asking how to describe their services within the rules. A therapy clinic template with placeholders for each member's registration answers that.\"",
+      "whyItWorks": "Professional bodies want members compliant and visible to the public."
+    },
+    {
+      "route": "Therapy equipment suppliers' clinic customers",
+      "whoPays": "The supplier, per clinic",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "pitchLine": "\"Clinics buying your sensory gym and therapy resources also need a website. Bundle my speech and OT template with a large order and they stay your customers.\"",
+      "whyItWorks": "Suppliers compete on service, and a site bundle is a perk competitors don't offer."
+    },
+    {
+      "route": "Private school groups that contract therapists",
+      "whoPays": "The school group",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Your schools use visiting speech therapists and OTs. A learning support section explaining how families request therapy at each campus is something parents ask about at enrolment.\"",
+      "whyItWorks": "School groups market their learning support, and therapy access is a selling point."
+    },
+    {
+      "route": "Multi-disciplinary child development centres",
+      "whoPays": "The centre group, per location",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Your child development centres offer speech, OT and psychology under one roof but share one generic page. Each location needs its own team, waitlist and school visit pages.\"",
+      "whyItWorks": "Groups growing across locations need each centre to look local and consistent."
+    },
+    {
+      "route": "Agencies licensing a paediatric therapy template",
+      "whoPays": "The agency, per site",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency avoids children's health clients because the consent and wording rules are tricky. License my speech and OT template with those built in.\"",
+      "whyItWorks": "Agencies pay to skip the hardest part of a niche they otherwise turn away."
+    },
+    {
+      "route": "Funding scheme provider directories",
+      "whoPays": "The directory operator",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Families on your funding scheme struggle to find a speech therapist or OT with space. A provider directory with waitlist status by area would cut the calls you get.\"",
+      "whyItWorks": "Scheme operators are judged on families finding providers, and a directory is a visible improvement."
+    },
+    {
+      "route": "University speech and OT student clinics",
+      "whoPays": "The university clinic",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Your student-led therapy clinic has a page buried in the university site. A proper clinic site with a waitlist and first assessment page would fill supervised placements.\"",
+      "whyItWorks": "Student clinics need steady families for training, and they struggle to reach the public."
+    },
+    {
+      "route": "Owners buying up therapy practices",
+      "whoPays": "The acquiring group",
+      "min": 5000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Every speech and OT practice you take over brings a different site and waitlist. I move them onto one parent-friendly template and merge the waitlists by location.\"",
+      "whyItWorks": "Acquirers need one system quickly and pay for it in batches."
+    },
+    {
+      "route": "Business mentors for clinician-owners",
+      "whoPays": "The mentoring firm, annually",
+      "min": 3000,
+      "max": 10000,
+      "unit": "per-year",
+      "pitchLine": "\"The therapists you mentor in private practice all ask for a website that handles the waitlist. Offer my paediatric therapy template inside your programme.\"",
+      "whyItWorks": "Mentors want concrete deliverables for every member without building them."
+    },
+    {
+      "route": "Therapy clinics in another region",
+      "whoPays": "New speech and OT clients in a new metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"A speech therapy clinic two hours from {City} isn't my client's competitor, so it gets the same waitlist, first assessment and feeding therapy pages.\"",
+      "whyItWorks": "Children's health wording takes time to get right. Selling it again elsewhere is margin."
+    },
+    {
+      "route": "Charities running children's therapy services",
+      "whoPays": "The charity",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Your charity's therapy service has a long waitlist and a single donation-focused page. Families need their own speech and OT section with the wait and how to apply.\"",
+      "whyItWorks": "Charities need a family-facing site separate from fundraising, and grants often cover it."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Therapy clinic site build plus care plan, one contract",
+      "min": 2000,
+      "max": 3500,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The speech and OT site and the care plan go on one contract, so a new therapist or service is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 14,
+      "offer": "Online therapy waitlist with position updates",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "trigger": "They mention the front desk spending mornings answering waitlist calls.",
+      "line": "\"Those waitlist calls stop once families can see where they stand online.\""
+    },
+    {
+      "rung": 3,
+      "day": 30,
+      "offer": "Session reminders and parent feedback requests",
+      "min": 79,
+      "max": 179,
+      "unit": "monthly",
+      "trigger": "Schedule shows late cancellations leaving therapy slots empty.",
+      "line": "\"A reminder the night before, with a cancel reply, means empty therapy slots go to the next family on the waitlist.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Therapy room and team photo session",
+      "min": 300,
+      "max": 800,
+      "unit": "per-shoot",
+      "trigger": "Therapist bios and the sensory gym section still show placeholders.",
+      "line": "\"One morning at the clinic gives every therapist and the sensory gym a real photo, no children needed.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Nursery and school information packs",
+      "min": 250,
+      "max": 600,
+      "unit": "one-time",
+      "trigger": "A new school term is about to start, or a school asks how to refer.",
+      "line": "\"Let's give the schools a speech and OT pack before term, so teachers know exactly how to suggest you.\""
+    },
+    {
+      "rung": 6,
+      "day": 150,
+      "offer": "Home practice activity sheet drafts",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "trigger": "Therapists mention writing home activity sheets in the evening.",
+      "line": "\"Those evening home activity sheets can start as drafts from the speech therapist's own notes.\""
+    },
+    {
+      "rung": 7,
+      "day": 240,
+      "offer": "Secure parent portal for reports and home practice",
+      "min": 2000,
+      "max": 5000,
+      "unit": "one-time",
+      "trigger": "Parents keep asking the front desk to resend reports or activity sheets.",
+      "line": "\"Parents asking for reports again is the sign the therapy clinic needs a portal.\""
+    },
+    {
+      "rung": 8,
+      "day": 300,
+      "offer": "Introduction to the paediatric practice",
+      "min": 3000,
+      "max": 7000,
+      "unit": "one-time",
+      "trigger": "The children's doctor who refers families asks who built the therapy clinic site.",
+      "line": "\"The paediatric practice that sends you families asked about the site. Would you introduce me?\""
+    }
+  ]
+}

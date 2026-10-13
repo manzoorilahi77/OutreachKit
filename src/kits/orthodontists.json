@@ -1,0 +1,883 @@
+{
+  "schemaVersion": 1,
+  "category": "Orthodontists",
+  "slug": "orthodontists",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · expansion batch (healthcare + mid-size)",
+    "generatedAt": "2026-10-13",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Leaned on the board note: parents compare practices on a phone, so the build is a consult funnel with a plain braces-versus-aligners page and payment plans. No results or timelines promised; smile progress shown only with signed consent. Unsure on the virtual consult and progress portal prices, so those ranges are wide."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Braces or clear aligners: a plain comparison",
+      "contains": "Metal braces, ceramic braces and clear aligners side by side: how each works, visits, what daily life looks like, who usually suits which, and a fee range for each, written as general information the orthodontist approves",
+      "why": "Parents and adults arrive having already half-decided between braces and aligners. A fair comparison makes the orthodontist the trusted voice before the consult."
+    },
+    {
+      "section": "Monthly payment plans and orthodontic benefits",
+      "contains": "Down payment and monthly plan examples in ranges, how orthodontic benefit maximums are applied, family discounts for siblings, and a simple estimate request",
+      "why": "A case is the largest health bill many families face that year. Seeing a monthly figure is what moves a parent from comparing to booking."
+    },
+    {
+      "section": "Early orthodontic check for children",
+      "contains": "Why an orthodontist may want to see a child early, what the check involves, what 'watch and wait' visits mean when no treatment is needed yet, and a booking link for the check",
+      "why": "Parents often hear about an early check from the family dentist. A clear page captures that referral before they search elsewhere."
+    },
+    {
+      "section": "Free consult: what happens at the first visit",
+      "contains": "Records taken at the first orthodontic visit, how long it lasts, who explains the plan, whether a parent should attend, and what they leave with",
+      "why": "A free consult only works if the family books it. Taking the mystery out of the first visit is what gets the appointment."
+    },
+    {
+      "section": "Life in braces: food, sports and loose brackets",
+      "contains": "Brace-friendly food lists, mouthguards for sports, what to do about a poking wire or broken bracket, and how to request a repair visit",
+      "why": "Current patients use these pages weekly, and parents judge the orthodontist by how well loose-bracket evenings are handled."
+    },
+    {
+      "section": "Retainers after treatment",
+      "contains": "Types of retainers the practice offers, how to care for them, replacement retainer ordering, and retention check visits",
+      "why": "Retainer replacement is a steady repeat order, and a page that makes ordering easy keeps past patients with the practice."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C26",
+      "siteType": "local-conversion",
+      "name": "After-School Smile",
+      "heroLayout": "split-photo",
+      "mood": [
+        "cheerful",
+        "light",
+        "parent-friendly"
+      ],
+      "bestFor": "Single-orthodontist practices treating mostly children and teens, where a parent books the free consult",
+      "pairsWithTier": "starter",
+      "headlineSample": "Braces and aligners for {City} kids and teens",
+      "whyItFits": "Sky blue and soft rounded type feel friendly to a twelve-year-old and calm to the parent. One consult button, one payment-plan link, nothing clinical in the hero."
+    },
+    {
+      "id": "b",
+      "themeId": "C2",
+      "siteType": "booking-first",
+      "name": "Consult Room",
+      "heroLayout": "card-stack",
+      "mood": [
+        "warm",
+        "trustworthy",
+        "measured"
+      ],
+      "bestFor": "Established orthodontic practices booking free consults online and explaining fees, plans and benefits before the visit",
+      "pairsWithTier": "standard",
+      "headlineSample": "Book a free orthodontic consult in {City}",
+      "whyItFits": "The family's Private Vault combo. A cream ground and old-style serif signal a careful specialist, which matters when the parent is committing to a long, costly case."
+    },
+    {
+      "id": "c",
+      "themeId": "C9",
+      "siteType": "premium-brand",
+      "name": "Adult Aligner Studio",
+      "heroLayout": "full-bleed-photo",
+      "mood": [
+        "discreet",
+        "polished",
+        "adult"
+      ],
+      "bestFor": "Orthodontists growing adult clear aligner cases, selling to professionals who want treatment that fits a working life",
+      "pairsWithTier": "premium",
+      "headlineSample": "Clear aligners for adults in {City}",
+      "whyItFits": "A dark ground, champagne accent and Didone display type read like a premium service for grown-ups, clearly separate from the kids' braces offer."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No payment plan figures",
+      "line": "Your orthodontic site says payment plans are available but gives no monthly range. Parents comparing orthodontists on a phone tend to book with whoever shows a number first.",
+      "hook": "Search their site for monthly, down payment or financing. If there's only a vague line, the angle holds.",
+      "linkLine": "Orthodontic payment plans shown in plain ranges: {demo-link}"
+    },
+    {
+      "angle": "Free consult hard to book",
+      "line": "You offer a free orthodontic consult, but the only way to book it is a call during school hours. Most parents sort this out at night once the kids are in bed.",
+      "hook": "Look for an online consult request on the site and listing. If it's call-only, the angle holds.",
+      "linkLine": "A free consult booking parents can use at night: {demo-link}"
+    },
+    {
+      "angle": "Braces versus aligners unclear",
+      "line": "Your site mentions braces and clear aligners in one paragraph. Teens and adults want to know which suits them before they meet an orthodontist.",
+      "hook": "Check whether braces and aligners each have their own page. If not, the angle holds.",
+      "linkLine": "A plain braces-or-aligners comparison page: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "On my phone, the consult form on your orthodontist site ran off the side of the screen. That's the exact place a parent decides whether to book.",
+      "hook": "Only if they have a site. Load it on your phone and note what breaks. Screenshot it for when they reply.",
+      "linkLine": "Your orthodontic site rebuilt for a parent's phone: {demo-link}"
+    },
+    {
+      "angle": "Dentist referral path missing",
+      "line": "Family dentists in {City} send you kids for early checks, but there's no page for a referred parent to land on. They end up searching and comparing anyway.",
+      "hook": "Look for a referral form or 'referred by your dentist' page. If there's none, the angle holds.",
+      "linkLine": "A page for parents referred by their dentist: {demo-link}"
+    },
+    {
+      "angle": "Early check for young kids",
+      "line": "Parents often hear their child should see an orthodontist early, but your site doesn't say what that first check involves or that it may mean no treatment yet.",
+      "hook": "Check for an early orthodontic check or children's page. Note whether it says what the visit includes.",
+      "linkLine": "An early orthodontic check page for parents: {demo-link}"
+    },
+    {
+      "angle": "Summer and school-start rush",
+      "line": "Lots of families start braces over the summer break or before the school year. A consult page ready for that rush catches parents while they're planning.",
+      "hook": "Use this in the late spring or a few weeks before the school year starts.",
+      "linkLine": "An orthodontic consult page ready for the school break: {demo-link}"
+    },
+    {
+      "angle": "Adult patients overlooked",
+      "line": "Your posts are mostly teens in braces, but adults ask about straightening their teeth too. Without an adult page, they assume the practice is only for kids.",
+      "hook": "Scan their posts and reviews for adult patients. Note whether the site has an adults section.",
+      "linkLine": "A clear aligner page written for adults: {demo-link}"
+    },
+    {
+      "angle": "Reviews from parents unused",
+      "line": "Parents leave lovely reviews about how your team treats nervous teens, and none of them appear on the orthodontic site where other parents are deciding.",
+      "hook": "Read their latest reviews and pick a phrase from a parent. Quote it back.",
+      "linkLine": "Parent reviews where the consult decision happens: {demo-link}"
+    },
+    {
+      "angle": "Loose bracket evenings",
+      "line": "When a bracket breaks at night, your patients' parents have nothing to read except a voicemail. A short page on poking wires and loose brackets would calm a lot of evenings.",
+      "hook": "Call after hours and note the message. Check the site for a braces emergency page.",
+      "linkLine": "A braces repair and loose-bracket page: {demo-link}"
+    },
+    {
+      "angle": "Hiring a treatment coordinator",
+      "line": "Saw your orthodontic office is hiring a treatment coordinator. The best candidates check the practice site before applying, and there's nowhere for them to land.",
+      "hook": "Only if they posted a job. Note the role and the date.",
+      "linkLine": "An orthodontist site with a careers page: {demo-link}"
+    },
+    {
+      "angle": "Orthodontic benefits question",
+      "line": "Parents always ask how their orthodontic benefit maximum applies, and your site doesn't touch it. A short page answering that removes the call they keep putting off.",
+      "hook": "Search the site for benefits or insurance. If orthodontic coverage isn't explained, the angle holds.",
+      "linkLine": "Orthodontic benefits explained before the consult: {demo-link}"
+    },
+    {
+      "angle": "Specialist credentials hidden",
+      "line": "Your specialist training in orthodontics is on the public register, but the site reads like a general practice. Parents want to see that the person straightening teeth is an orthodontist.",
+      "hook": "Check the public register where they practise. Note that a record exists; never quote a number or training you didn't see.",
+      "linkLine": "Orthodontist credentials shown plainly: {demo-link}"
+    },
+    {
+      "angle": "Retainer replacement orders",
+      "line": "Past patients lose retainers all the time, and your site has no way to order a replacement. That's a quick repeat visit the orthodontic practice could book itself.",
+      "hook": "Look for a retainer page or replacement request. If missing, the angle holds.",
+      "linkLine": "Replacement retainer ordering on your site: {demo-link}"
+    },
+    {
+      "angle": "A specific recent post",
+      "line": "Your {specific recent job} post was a nice moment. Stories like that, shared with the family's written permission, help other parents picture braces going well.",
+      "hook": "Pick their newest debond day or team post and name it exactly. Only suggest featuring patients with signed consent.",
+      "linkLine": "A consented orthodontic stories page: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, your {specific recent job} post was a lovely moment for that family.\n\nI was looking at orthodontists in {City} and noticed {Business Name} offers a free consult, but there's no way to book it online and no payment plan figures for parents comparing practices. I put together a sample site to see how it might look, with marked placeholders where your photos would go.\n\nWould you like me to send it?",
+    "dm2": "{Owner}, following up in case my note got buried. Here's the sample orthodontic site for {Business Name}: {demo-link}\n\nIt has a free consult booking, a braces-or-aligners comparison, payment plan ranges, an early check page for young kids and a loose-bracket page. Nothing on it promises a result or a treatment time. If it's not for you, just say so.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for orthodontists here in {City}. I sent you a message a few days ago, did it reach you?\"\n\nIF NO:\n\"No problem. Short version: I built a sample site for {Business Name} with free consult booking, payment plan ranges and a braces-or-aligners page, with marked placeholders where your photos would go. Can I email it so you can look after clinic?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"Parents compare a few orthodontists on a phone before they book. This site gives them the monthly range and the consult button before they move on. You approve every word, and nothing promises a result. The build runs {Build Range} depending on pages and booking, then {Care Range} a month for hosting and edits. For your practice I'd quote about {Build Price}, well under a single case.\"\n\"Could I show you in ten minutes between patients this week?\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. We start once it clears, and you sign off on every page before launch.\"",
+    "objections": [
+      {
+        "objection": "Most of our patients are referred by dentists.",
+        "handler": "\"Which is why the site needs a page for referred parents. A dentist's referral starts the search; the parent still compares you with two others before booking the consult.\""
+      },
+      {
+        "objection": "We don't want to publish our fees.",
+        "handler": "\"You don't have to publish a fee. A range for a typical down payment and monthly plan, with 'your exact plan is set at the consult', is enough to stop parents choosing someone who shows a number.\""
+      },
+      {
+        "objection": "Aligner companies sell direct, why would a site help?",
+        "handler": "\"Because adults weighing a mail-order aligner want to know what an orthodontist adds. A plain adult aligner page explaining supervision and consult steps answers that, without any claims.\""
+      },
+      {
+        "objection": "We already have a site from a dental marketing vendor.",
+        "handler": "\"Then compare one thing: can a parent book a free consult tonight and see a payment range? If not, I'll move you to a site you own with no long contract.\""
+      },
+      {
+        "objection": "Patient smile photos are a consent headache.",
+        "handler": "\"They should be. I set up a written consent form and a photo policy page, and nothing appears without a signed form. The site works fine with no patient photos at all.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For your practice about {Build Price}, for consult booking, payment plans, the comparison and children's pages. That's well under a single orthodontic case.\""
+      }
+    ],
+    "email": {
+      "subject": "Orthodontic site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for orthodontists around {City}. {Business Name} has warm reviews from parents, but no way to book your free consult online and no payment plan ranges for families comparing practices on a phone.\n\nI built a sample first rather than ask for your time: free consult booking, a braces-or-aligners comparison, payment plan and benefits ranges, an early check page for young children and a loose-bracket page for current patients, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you'd like it, I move it to a domain your practice owns and finish it for {Build Range}, plus {Care Range} a month for hosting and edits. You approve every page, and nothing promises a result. If not, no problem, it comes down at the end of the month.\n\nWorth ten minutes on the phone this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"{Owner}, it's {Your Name}. I build websites for orthodontists in {City}, and I made a sample one for {Business Name} with free consult booking and payment plan ranges. I'll email the link. Have a look after clinic. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm taking the {Business Name} orthodontic demo down on Friday to free up the space.\n\nShould I keep it up for you? One word is fine either way.",
+    "nurture": "Hi {Owner}, the school break is coming up and families usually start booking braces consults around now. You came to mind.\n\nThe orthodontic site is still here whenever you'd like it, same price as before. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to a fraction of one orthodontic case. The orthodontist already knows what one new start is worth.",
+      "Show payment plans as ranges with 'set at your consult'; never publish a fixed case fee the practice hasn't approved.",
+      "Price the consult funnel, the comparison page and the children's page as the core; everything else is an add-on.",
+      "Never write treatment times, results or 'perfect smile' language; the orthodontist approves every clinical line.",
+      "Quote smile progress galleries only with a signed consent process, and charge for setting that process up.",
+      "Price a second location or satellite clinic as its own page and calendar, not a free extra."
+    ],
+    "lineItems": [
+      {
+        "item": "Free consult booking with records checklist",
+        "min": 600,
+        "max": 1500,
+        "unit": "one-time",
+        "description": "Max with separate child and adult paths, parent contact fields, a pre-visit questionnaire and reminders that list what the records visit includes.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Payment plan and orthodontic benefits page",
+        "min": 300,
+        "max": 800,
+        "unit": "one-time",
+        "description": "Max with several plan examples, sibling discounts, benefit maximum explanations and an estimate request form.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Braces and aligner comparison page",
+        "min": 300,
+        "max": 700,
+        "unit": "per-page",
+        "description": "Max when it covers metal, ceramic and clear aligner options with daily-life notes and the orthodontist's edits from two rounds.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Consented smile progress gallery",
+        "min": 500,
+        "max": 1200,
+        "unit": "one-time",
+        "description": "Max with filtering by treatment type, a signed consent record per patient and a note that every case is different.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Referring dentist page and form",
+        "min": 300,
+        "max": 800,
+        "unit": "one-time",
+        "description": "Max with a secure referral upload, a list of referring offices and a thank-you note sent back to the dentist.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Replacement retainer order page",
+        "min": 250,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max with retainer types, online payment and a booking link for the scan or impression visit.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Satellite clinic page and calendar",
+        "min": 500,
+        "max": 1200,
+        "unit": "one-time",
+        "description": "Max when the second office has its own clinic days, team and consult calendar.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Orthodontic team and clinic photo morning",
+      "min": 500,
+      "max": 1300,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Parents want to see the open bay, the orthodontist and the treatment coordinator before trusting them with a two-year case. One morning of photos covers every page.\"",
+      "when": "Month 2, or before a new orthodontist joins."
+    },
+    {
+      "name": "Smile progress photo consent and policy set",
+      "min": 300,
+      "max": 750,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Orthodontic progress photos of minors need a parent's signed consent and a published policy on how they're used. I write both for the orthodontist to approve before any smile goes online.\"",
+      "when": "Before launch, if the build includes a smile gallery or patient stories."
+    },
+    {
+      "name": "Accessibility check of the consult funnel",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"The braces consult form, payment estimator and comparison pages get tested with a keyboard and a screen reader, and I fix what blocks a parent from booking.\"",
+      "when": "Month 2, after the consult pages are approved."
+    },
+    {
+      "name": "Advertising-approval-ready orthodontic content pack",
+      "min": 500,
+      "max": 1200,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Braces and aligner pages, promotions and the specialist wording, prepared as a tidy approval pack where the regulator requires it, with credentials left in brackets for the orthodontist.\"",
+      "when": "Before launch or before any seasonal orthodontic promotion, where approval is required."
+    },
+    {
+      "name": "Google profile posts for the orthodontic practice",
+      "min": 150,
+      "max": 350,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Weekly posts on the orthodontist's Google profile, like brace-friendly lunch ideas or how an early check works, approved before they publish.\"",
+      "when": "Day 30, once the site is live."
+    },
+    {
+      "name": "Parent review requests at debond",
+      "min": 99,
+      "max": 199,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"When braces come off, the parent gets a short note asking about their family's experience, only if they agreed to be contacted and in wording the orthodontist approves.\"",
+      "when": "Day 45, once consent rules and wording are approved."
+    },
+    {
+      "name": "Back-to-school braces campaign",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A consult landing page, social posts and a parent email for the weeks before the school year, so braces consults fill before the autumn schedule does.\"",
+      "when": "Six weeks before the school year starts."
+    },
+    {
+      "name": "Referring dentist outreach kit",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A printed referral pad and a short page for family dentists that explains when to send a child for an orthodontic check and how to refer in a minute.\"",
+      "when": "Month 3, when they name their main referring dentists."
+    },
+    {
+      "name": "Short orthodontist explainer videos",
+      "min": 800,
+      "max": 2000,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Half a day filming the orthodontist answering what parents ask at every consult, cut into short clips for the braces and aligner pages.\"",
+      "when": "Month 4, once the core pages have settled."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Family dentists who refer to the orthodontist",
+        "whoPays": "The general dental practice",
+        "min": 3000,
+        "max": 5000,
+        "unit": "one-time",
+        "pitchLine": "\"The family dentists who send you kids for early checks mostly run on vendor templates. The orthodontist they refer to is the best introduction I could ask for.\"",
+        "whyItWorks": "Referral relationships run both ways, and dentists take vendor advice from specialists they trust."
+      },
+      {
+        "route": "Orthodontic labs making retainers and appliances",
+        "whoPays": "The orthodontic laboratory",
+        "min": 1800,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"Retainers, expanders and space maintainers come from a small appliance lab that most orthodontists find by word of mouth. An online prescription form and a turnaround chart would win them new offices, and you already trust them.\"",
+        "whyItWorks": "Labs win work through orthodontist relationships, and an introduction from a customer carries real weight."
+      },
+      {
+        "route": "Mouthguard and sports dentistry suppliers for school teams",
+        "whoPays": "The custom mouthguard maker",
+        "min": 1200,
+        "max": 2500,
+        "unit": "one-time",
+        "pitchLine": "\"The maker who fits custom mouthguards for your braces patients also sells to school teams and clubs. A simple order site would serve both, and you can introduce me.\"",
+        "whyItWorks": "Small makers depend on orthodontic and dental referrals and rarely have an order page."
+      },
+      {
+        "route": "Paediatric dentists sharing the same families",
+        "whoPays": "The paediatric dental practice",
+        "min": 3000,
+        "max": 5000,
+        "unit": "one-time",
+        "pitchLine": "\"The paediatric dentist down the road sees the same families before braces. A calm kids' site with first-visit pages is a natural next build, and you know them well.\"",
+        "whyItWorks": "Paediatric dentists and orthodontists share patients and compare vendors."
+      },
+      {
+        "route": "Speech and myofunctional therapists",
+        "whoPays": "The therapy practice",
+        "min": 1500,
+        "max": 3000,
+        "unit": "one-time",
+        "pitchLine": "\"The speech and myofunctional therapists you send some patients to need a clear booking site too. A word from the orthodontist opens the door.\"",
+        "whyItWorks": "Small therapy practices depend on specialist referrals and trust the orthodontist's recommendation."
+      },
+      {
+        "route": "Parents who run local businesses",
+        "whoPays": "Each parent's business, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"An orthodontic practice sees the same parents every few weeks for two years. A small credit on the site and a card at the front desk starts those conversations.\"",
+        "whyItWorks": "Parents spend a lot of waiting-room time with the practice and trust its recommendations."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Referral intake summaries for family dentists",
+        "whoPays": "The general dental practice, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"Family dentists can send referral notes to an assistant that drafts a clean summary for the orthodontist's front desk, and tracks which referred children booked.\"",
+        "whyItWorks": "Dentists want to know their referrals were looked after, and the summary saves both offices phone time."
+      },
+      {
+        "route": "Appliance order checker for orthodontic labs",
+        "whoPays": "The orthodontic laboratory, monthly",
+        "min": 150,
+        "max": 350,
+        "unit": "monthly",
+        "pitchLine": "\"Retainer and expander orders arrive with missing details. An assistant checks each prescription against the lab's required fields and asks the orthodontic office before work starts.\"",
+        "whyItWorks": "Remakes from incomplete orders are a lab's biggest loss, and the first customers come through the orthodontist."
+      },
+      {
+        "route": "Team order assistant for mouthguard makers",
+        "whoPays": "The mouthguard maker, monthly",
+        "min": 79,
+        "max": 199,
+        "unit": "monthly",
+        "pitchLine": "\"Coaches send a team list and colours, and an assistant drafts the fitting schedule and order sheet for the mouthguard maker to confirm.\"",
+        "whyItWorks": "Team orders are messy, and a smoother process wins more clubs."
+      },
+      {
+        "route": "Session note drafts for myofunctional therapists",
+        "whoPays": "The therapy practice, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"After each session the therapist dictates a minute and gets a draft note and home exercise sheet to edit, ready to share with the referring orthodontist.\"",
+        "whyItWorks": "Therapists lose evenings to notes, and clean updates keep orthodontists referring."
+      },
+      {
+        "route": "First-visit explainer drafts for paediatric dentists",
+        "whoPays": "The paediatric dental practice, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"A paediatric dentist picks a visit type and gets a plain parent explainer drafted from their own pages, checked by the dentist before it goes out.\"",
+        "whyItWorks": "Parents ask the same questions before every first visit, and the orthodontist's introduction makes the first demo easy."
+      },
+      {
+        "route": "School nurse dental check reminders",
+        "whoPays": "A private school or school group, per year",
+        "min": 500,
+        "max": 1500,
+        "unit": "per-year",
+        "pitchLine": "\"Schools that host an orthodontic talk can send parents a drafted reminder about dental and orthodontic checks each term, with links the school chooses.\"",
+        "whyItWorks": "Schools want simple health communications, and the orthodontist's talk is the introduction."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Consult request text-back after a missed call",
+      "kind": "automation",
+      "oneTimeMin": 0,
+      "oneTimeMax": 300,
+      "monthlyMin": 79,
+      "monthlyMax": 149,
+      "pitchLine": "\"A parent who calls the orthodontist while the team is chairside gets a text with the free consult booking page and a note that the office will call back.\"",
+      "whenAndWhatItTakes": "Day 30. Needs their main number forwarded and approved wording."
+    },
+    {
+      "name": "Privacy-safe consult intake and secure hosting",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2200,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Parents complete the child's health and dental history online before the orthodontic consult, on forms and hosting configured for health information, with consent captured for minors.\"",
+      "whenAndWhatItTakes": "Month 1, with launch. Needs their paper intake, privacy notice and who reviews new consult forms."
+    },
+    {
+      "name": "Payment plan estimator",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2800,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Parents choose braces or aligners, enter their orthodontic benefit amount and see a monthly range with 'final plan set at your consult', then book.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the practice's fee ranges, down payment rules and how benefits are applied."
+    },
+    {
+      "name": "Consult reminders with what to expect",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 40,
+      "monthlyMax": 120,
+      "pitchLine": "\"Before the free consult, the family gets the time, how long records take, whether both parents should come and a reschedule link.\"",
+      "whenAndWhatItTakes": "Month 2, with consult booking. Needs their consult steps and timing."
+    },
+    {
+      "name": "Review responses that stay private about patients",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"For each orthodontic review, the orthodontist sees a draft thank-you to approve that never names a child, a treatment or whether the family is a patient.\"",
+      "whenAndWhatItTakes": "Month 2. Needs privacy rules and sample replies. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Consult-to-start follow-up for undecided families",
+      "kind": "automation",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1800,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Families who had the consult but haven't started braces get a gentle note with their payment options and a link to ask a question, in the orthodontist's words.\"",
+      "whenAndWhatItTakes": "Month 3. Needs a list of pending starts and approved wording."
+    },
+    {
+      "name": "Watch-and-wait recall for young children",
+      "kind": "automation",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 50,
+      "monthlyMax": 120,
+      "pitchLine": "\"Children seen early but not ready for treatment get a recall reminder when their next orthodontic check is due, so they don't drift to another practice.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the watch list export and parent opt-in."
+    },
+    {
+      "name": "Online braces and aligner question assistant",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 3500,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"It answers 'braces or aligners', 'what does a consult cost' and 'what if a bracket breaks' from the orthodontist's own pages, gives no clinical advice and offers the consult.\"",
+      "whenAndWhatItTakes": "Month 4. Needs approved pages and sign-off on every answer. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Virtual smile check request",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3500,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Adults and parents send a few smile pictures through a secure form, and the orthodontist reviews them and invites the family to book a consult.\"",
+      "whenAndWhatItTakes": "Month 4. Needs secure upload, consent wording and who reviews submissions."
+    },
+    {
+      "name": "Loose bracket and repair visit request",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 40,
+      "monthlyMax": 120,
+      "pitchLine": "\"Patients report a poking wire or broken bracket with a short form, see the orthodontist's at-home steps and request a repair visit.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the orthodontist's repair instructions and open repair slots."
+    },
+    {
+      "name": "Replacement retainer ordering with payment",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 40,
+      "monthlyMax": 120,
+      "pitchLine": "\"Past orthodontic patients order a replacement retainer, pay online and pick a scan time, without a phone call.\"",
+      "whenAndWhatItTakes": "Month 5. Needs retainer types, prices and the payment account they already use."
+    },
+    {
+      "name": "Treatment plan explainer drafts for parents",
+      "kind": "ai",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"After the consult, the orthodontist's notes become a plain-language draft explaining the proposed braces plan and costs, which the orthodontist edits before the family sees it.\"",
+      "whenAndWhatItTakes": "Month 6. Needs sample plans and the note format. Comes with the AI maintenance retainer; the orthodontist edits every draft."
+    },
+    {
+      "name": "Patient progress portal for families",
+      "kind": "software",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Parents log in to see the next adjustment date, payment schedule and care instructions for their child's braces, instead of calling the front desk.\"",
+      "whenAndWhatItTakes": "Month 7. Needs their appointment and billing exports and who updates each patient."
+    },
+    {
+      "name": "Aligner wear reminders",
+      "kind": "automation",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 40,
+      "monthlyMax": 120,
+      "pitchLine": "\"Aligner patients who opt in get a reminder when it's time to switch trays and when their next check is due.\"",
+      "whenAndWhatItTakes": "Month 5. Needs opt-in and each patient's tray schedule."
+    },
+    {
+      "name": "Treatment coordinator applicant screener",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"People applying for treatment coordinator or orthodontic assistant roles answer the practice's set questions, and a ranked shortlist with reasons lands with the office manager.\"",
+      "whenAndWhatItTakes": "Whenever they post a role. Needs their must-haves. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Referring dentist tracker and thank-you notes",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"See which family dentists send consults and starts, and send each a thank-you note and progress update the orthodontist approves.\"",
+      "whenAndWhatItTakes": "Month 5. Needs a referral field on the consult form and their dentist list."
+    },
+    {
+      "name": "Inbox sorting for orthodontic messages",
+      "kind": "ai",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"Braces questions that arrive after clinic, from loose wires to plan balances, are tagged by type each morning and paired with a suggested answer the orthodontic team edits before replying.\"",
+      "whenAndWhatItTakes": "Month 6. Needs their message channels and reply rules. Comes with the AI maintenance retainer; staff send every reply."
+    },
+    {
+      "name": "Monthly plan payments and reminders",
+      "kind": "automation",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Families on an orthodontic payment plan pay from a link, get a reminder before each due date, and the office stops chasing late instalments by phone.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the plan schedule export and the payment account they use."
+    },
+    {
+      "name": "Debond day story drafts with consent",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"When a family has signed consent, the team enters a few details and gets a short draft post celebrating braces coming off, with no claims about results, for the orthodontist to approve.\"",
+      "whenAndWhatItTakes": "Month 6. Needs the consent form in place and post guidelines. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Consults, starts and referrals dashboard",
+      "kind": "software",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"See consults booked, case starts and which referring dentists and pages they came from, month by month, so the orthodontist knows what fills the chairs.\"",
+      "whenAndWhatItTakes": "Month 9. Needs six months of consult and start data."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the consult funnel for orthodontists",
+      "whoPays": "Independent orthodontic practices, monthly",
+      "min": 99,
+      "max": 299,
+      "unit": "monthly",
+      "pitchLine": "\"Every independent orthodontist loses parents between the comparison and the consult. The booking, estimator and comparison set I built carries over to any of them.\"",
+      "whyItWorks": "The workflow is the same in every practice; only fees, team and benefit rules change."
+    },
+    {
+      "route": "Orthodontic society member template",
+      "whoPays": "The regional orthodontic society",
+      "min": 3000,
+      "max": 9000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer member orthodontists a site template with specialist wording, consent pages and an advertising-ready braces section already prepared.\"",
+      "whyItWorks": "Societies want member benefits that protect the specialty's standards, and members ask about advertising often."
+    },
+    {
+      "route": "Appliance lab customer perk",
+      "whoPays": "An orthodontic laboratory, per referred practice",
+      "min": 500,
+      "max": 1500,
+      "unit": "one-time",
+      "pitchLine": "\"Appliance labs keep orthodontic customers by helping them grow. A consult-funnel site offered at a partner rate, co-branded with the lab, is a perk no competing lab offers.\"",
+      "whyItWorks": "Labs compete on loyalty, and helping their customers grow keeps orders coming."
+    },
+    {
+      "route": "White-label for orthodontic practice coaches",
+      "whoPays": "The orthodontic practice consultant, per practice",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "pitchLine": "\"You coach orthodontists on consult conversion. A ready site with the estimator and follow-up built in gives your clients a fast result under your brand.\"",
+      "whyItWorks": "Coaches sell conversion, and a working funnel proves it quickly."
+    },
+    {
+      "route": "New orthodontic practice launch kit",
+      "whoPays": "Orthodontists opening their own practice",
+      "min": 3500,
+      "max": 7000,
+      "unit": "one-time",
+      "pitchLine": "\"An orthodontist leaving an associate role needs the site, consult booking and referring-dentist pages before the doors open. I've built the set and can launch yours quickly.\"",
+      "whyItWorks": "New practices buy everything at once and need consults from the first week."
+    },
+    {
+      "route": "Residency programme graduates",
+      "whoPays": "New orthodontists, through the programme's alumni network",
+      "min": 2000,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Orthodontic residents finishing their programme will own or join practices soon. A graduate rate on the consult-funnel site, promoted through the alumni network, reaches each new class.\"",
+      "whyItWorks": "Programmes want practical help for graduates, and the class repeats every year."
+    },
+    {
+      "route": "Adult aligner site kit",
+      "whoPays": "Orthodontists in other cities growing adult cases",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"The adult clear aligner pages and virtual smile check I built fit any orthodontist who wants more adult starts, with their own fees and team.\"",
+      "whyItWorks": "Adult aligner marketing is the same everywhere, and the hard part is already written and approved once."
+    },
+    {
+      "route": "Practice transition package for orthodontic sales",
+      "whoPays": "The practice transition advisor, per sale",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"When an orthodontic practice is sold, the incoming orthodontist needs the site and referring-dentist pages updated on day one. Offer it with every sale.\"",
+      "whyItWorks": "Advisors want smooth handovers that keep referring dentists loyal through the change."
+    },
+    {
+      "route": "Template licence for orthodontic marketing agencies",
+      "whoPays": "The agency, per orthodontic client",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "pitchLine": "\"License the consult funnel, estimator and comparison pages so your agency stops rebuilding them for every orthodontist you sign.\"",
+      "whyItWorks": "Agencies own the client; you sell them the structure that's already approved and working."
+    },
+    {
+      "route": "Retainer ordering service for practices",
+      "whoPays": "Orthodontists, monthly",
+      "min": 49,
+      "max": 149,
+      "unit": "monthly",
+      "pitchLine": "\"The replacement retainer ordering and payment page works for any orthodontic office that wants past patients to reorder without a call.\"",
+      "whyItWorks": "Every practice has lost-retainer calls, and a small monthly tool is an easy yes."
+    },
+    {
+      "route": "One orthodontist per area",
+      "whoPays": "An orthodontic practice in another part of the city",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"Parents compare the orthodontists nearest their school, so I take on only one orthodontic practice in each part of town. {Neighborhood} has no orthodontist on my list yet.\"",
+      "whyItWorks": "Specialists value exclusivity, and the consult template carries over."
+    },
+    {
+      "route": "Rescuing half-finished orthodontic sites",
+      "whoPays": "The orthodontic practice left with an unfinished build",
+      "min": 2000,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"Your orthodontic site was started and never launched. I can move the approved copy onto a finished consult funnel and launch it within weeks.\"",
+      "whyItWorks": "These practices already chose to buy and usually have content waiting."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Orthodontic site build plus care plan, one contract",
+      "min": 3000,
+      "max": 5000,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo and the orthodontist approves the scope.",
+      "line": "\"The orthodontic site and the care plan sit on one contract, so a new team member or a holiday schedule is a message to me, not a job for your coordinator.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Google profile posts for the orthodontic practice",
+      "min": 150,
+      "max": 350,
+      "unit": "monthly",
+      "trigger": "The first free consult is booked online.",
+      "line": "\"A parent booked a consult at night through the site. Weekly posts keep the next family finding the practice.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "Orthodontic team and clinic photo morning",
+      "min": 500,
+      "max": 1300,
+      "unit": "per-shoot",
+      "trigger": "The team page still shows marked placeholders where photos go.",
+      "line": "\"Parents want to see who will treat their child for the next two years. The team page is still waiting for portraits.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Payment plan estimator",
+      "min": 1000,
+      "max": 2800,
+      "unit": "one-time",
+      "trigger": "The coordinator says most calls are 'how much a month'.",
+      "line": "\"Let parents see their monthly range before they call. The consults that come in are already comfortable with the cost.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Consult-to-start follow-up for undecided families",
+      "min": 600,
+      "max": 1800,
+      "unit": "one-time",
+      "trigger": "Ninety days of consults, and the orthodontist mentions families who never started braces.",
+      "line": "\"Some families leave the consult and go quiet. A gentle follow-up with their options brings many back.\""
+    },
+    {
+      "rung": 6,
+      "day": 150,
+      "offer": "Online braces and aligner question assistant",
+      "min": 1500,
+      "max": 3500,
+      "unit": "one-time",
+      "trigger": "The front desk is answering the same aligner and cost questions every day.",
+      "line": "\"The same braces questions come in every day. Let the site answer them from your own approved pages and offer a consult.\""
+    },
+    {
+      "rung": 7,
+      "day": 240,
+      "offer": "Patient progress portal for families",
+      "min": 3000,
+      "max": 8000,
+      "unit": "one-time",
+      "trigger": "Parents keep calling to ask about adjustment dates and payment balances.",
+      "line": "\"Parents call to ask what's next. A family portal shows the next adjustment, the balance and care tips without a call.\""
+    },
+    {
+      "rung": 8,
+      "day": 365,
+      "offer": "Consults, starts and referrals dashboard",
+      "min": 2000,
+      "max": 5000,
+      "unit": "one-time",
+      "trigger": "The first anniversary, when the orthodontist asks where new starts really come from.",
+      "line": "\"A year in, let's see which dentists and which pages bring the starts, and plan next year's orthodontic marketing around that.\""
+    }
+  ]
+}

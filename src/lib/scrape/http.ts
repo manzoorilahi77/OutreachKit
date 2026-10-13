@@ -1,5 +1,5 @@
 // The wire format between the browser and the run route: a Server-Sent-Events body, read from a fetch() response.
-import { STATES } from "../../data";
+import { isRegion } from "../market/regions";
 import { findCategory } from "../kit/categories";
 import { isLimitOption } from "./limits";
 import type { RunEvent } from "./types";
@@ -13,7 +13,7 @@ export function parseRunRequest(body: unknown): { ok: true; value: RunRequest } 
   const state = typeof b.state === "string" ? b.state.toUpperCase() : "";
   const city = typeof b.city === "string" ? b.city.trim().replace(/\s+/g, " ") : "";
   if (!findCategory(category)) return { ok: false, error: "Pick a category first." };
-  if (!(state in STATES)) return { ok: false, error: "Pick a state first." };
+  if (!isRegion(state)) return { ok: false, error: "Pick a state, province or emirate first." };
   if (!city || city.length > 120 || /[\u0000-\u001f<>]/.test(city)) return { ok: false, error: "Pick or type a city first." };
   if (!isLimitOption(b.limit)) return { ok: false, error: "Choose a limit of 20, 50, 70 or 100." };
   return { ok: true, value: { category, state, city, limit: b.limit } };

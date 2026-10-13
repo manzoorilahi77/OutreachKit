@@ -1,0 +1,874 @@
+{
+  "schemaVersion": 1,
+  "category": "Home health agencies",
+  "slug": "home-health-agencies",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · expansion batch (healthcare + mid-size)",
+    "generatedAt": "2026-10-13",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Leaned on the board note (two buyers: families and clinicians looking for work) and kept it about scale: offices, referral partners, recruiting and systems. Written to differ from the small home care kit. Family portal and visit-note drafting ranges are wide because integration depth varies most."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Levels of home health care",
+      "contains": "Skilled nursing at home, physical, occupational and speech therapy visits, personal care and companion care as the agency provides them, who usually orders each, and what the agency does not provide",
+      "why": "Families and referral partners need to know in one read whether the agency does skilled nursing or only daily-living help. The clearest explanation gets the referral."
+    },
+    {
+      "section": "Referral partner portal",
+      "contains": "A privacy-safe referral form for discharge planners and physician offices, documents the intake team needs, intake contacts by office, and response times as the agency commits to them [as supplied]",
+      "why": "Hospital and clinic staff send referrals to the agency that is easiest to refer to. A portal beats a fax number and a voicemail."
+    },
+    {
+      "section": "Clinical and caregiver careers by role",
+      "contains": "Separate pages for nurses, therapists and home health aides with pay ranges [as supplied], territories, visit-based or hourly pay, mileage policy, training, and an application finished on a phone",
+      "why": "Clinicians compare agencies on territory, caseload and mileage before they apply. Recruiting pages that answer those questions fill visits."
+    },
+    {
+      "section": "Offices and towns served",
+      "contains": "A page per branch office with the towns its nurses and aides cover, intake phone and hours, the office manager's name [as supplied], and a map of the service area",
+      "why": "Families search for home health care in a parent's town, and referral partners need the right branch. One contact page for every office loses both."
+    },
+    {
+      "section": "Starting care: first call to first visit",
+      "contains": "The intake call, what the agency needs from the doctor, the assessment visit, how the plan of care is set, scheduling, and how families get updates",
+      "why": "A family facing a discharge wants to know exactly what happens next and how fast. Laying it out step by step is what earns the first call."
+    },
+    {
+      "section": "Coverage and payment",
+      "contains": "Insurance, government programmes and private pay as the agency accepts them [as supplied], what a family should have ready, and how private-pay hourly care is billed",
+      "why": "Coverage is the first question every family asks. Answering it plainly keeps them on the page instead of calling three agencies."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C10",
+      "siteType": "local-conversion",
+      "name": "Branch Finder",
+      "heroLayout": "split-photo",
+      "mood": [
+        "direct",
+        "organised",
+        "steady"
+      ],
+      "bestFor": "Agencies with a few branches that need a fast phone site with an office finder, intake call button and careers link",
+      "pairsWithTier": "starter",
+      "headlineSample": "Home health care in {City} and the towns around it",
+      "whyItFits": "Steel Invoice's neutral blue and neo-grotesque type load fast and read as organised, and a split hero puts the office finder beside the intake number."
+    },
+    {
+      "id": "b",
+      "themeId": "C2",
+      "siteType": "editorial-trust",
+      "name": "Care Explained",
+      "heroLayout": "type-led",
+      "mood": [
+        "credible",
+        "calm",
+        "thorough"
+      ],
+      "bestFor": "Agencies whose families and referral partners need care levels, coverage and start of care explained before calling",
+      "pairsWithTier": "standard",
+      "headlineSample": "Skilled nursing and therapy at home in {City}",
+      "whyItFits": "The family combo, Private Vault, carries the high-trust tone a clinical agency needs, and a type-led page lets care levels and coverage lead instead of stock photos."
+    },
+    {
+      "id": "c",
+      "themeId": "C5",
+      "siteType": "b2b-capability",
+      "name": "Partner Hub",
+      "heroLayout": "card-stack",
+      "mood": [
+        "capable",
+        "precise",
+        "connected"
+      ],
+      "bestFor": "Multi-office agencies with a referral portal, recruiting by role, a family portal and integrations with their scheduling system",
+      "pairsWithTier": "premium",
+      "headlineSample": "Refer, apply or start care with {City}'s home health team",
+      "whyItFits": "Counting House's bookish serif and sober palette suit an agency selling reliability to hospitals, and stacked cards route referrers, clinicians and families to their own path."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "One contact page, many offices",
+      "line": "Your agency runs several branch offices, but the site has one contact page and one intake number. A family in {Neighborhood} can't tell which office sends nurses to their mother's street.",
+      "hook": "Count the offices on their listings and compare with the site's contact page. Screenshot it for when they reply.",
+      "linkLine": "A home health site with a page for every branch: {demo-link}"
+    },
+    {
+      "angle": "Slow on a phone",
+      "line": "Your home health site took a long while to load on my phone, and the referral form sat under several banners. Discharge planners and worried families both open it on a phone.",
+      "hook": "Load their site on a phone over mobile data. Note how long it takes and where the referral or contact form sits.",
+      "linkLine": "The same agency site, fast on a phone: {demo-link}"
+    },
+    {
+      "angle": "Hiring but no careers page",
+      "line": "Your agency posts nurse and home health aide openings every week, but the careers link goes to a general email address. Clinicians apply from a phone between visits, or not at all.",
+      "hook": "Check their job posts and then the careers page. If applying means emailing a resume, the angle holds.",
+      "linkLine": "Careers by role with a phone application: {demo-link}"
+    },
+    {
+      "angle": "No way to refer online",
+      "line": "There's no way for a discharge planner or a physician's office to send a referral through your site. They fax or phone, and the home health agency that makes it easiest tends to get the patient.",
+      "hook": "Search the site for 'referral' or 'refer a patient'. If it's just a fax number, lead with this.",
+      "linkLine": "A privacy-safe referral portal for your agency: {demo-link}"
+    },
+    {
+      "angle": "Skilled or non-medical",
+      "line": "Your site lists nursing, therapy and personal care in one paragraph. Families can't tell whether the agency sends skilled nurses to the home or only helps with daily living.",
+      "hook": "Read their services page. If levels of care aren't separated and explained, use this.",
+      "linkLine": "Levels of home health care, explained in one read: {demo-link}"
+    },
+    {
+      "angle": "Reviews never reach the site",
+      "line": "Families write detailed reviews about your nurses and aides on Google, and none of them appear on the agency site where the next family is deciding.",
+      "hook": "Read their reviews across branch listings and copy one line about a nurse or aide. Quote it if they reply.",
+      "linkLine": "Family reviews where home health decisions happen: {demo-link}"
+    },
+    {
+      "angle": "Dated design",
+      "line": "Your home health site still has stock photos and a news section that stopped a while ago. A family choosing care for a parent reads that as an office that may be slow to call back.",
+      "hook": "Check the newest date on their news or blog page and the photos on the home page.",
+      "linkLine": "A current site for a current agency: {demo-link}"
+    },
+    {
+      "angle": "Friday evening discharges",
+      "line": "Hospital discharges often land on a Friday evening. Your site says to call the agency during office hours, and families at the bedside look for someone who answers that night.",
+      "hook": "Check the site for after-hours intake or on-call details. If it only lists office hours, use this.",
+      "linkLine": "After-hours intake that families can reach: {demo-link}"
+    },
+    {
+      "angle": "Recruiting therapists",
+      "line": "Saw you're hiring physical therapists for home visits. Therapists compare agencies on territory, caseload and mileage before applying, and your site doesn't say.",
+      "hook": "Only if they posted a therapist or nurse opening. Note the role, the branch and the date.",
+      "linkLine": "A therapist careers page that answers their questions: {demo-link}"
+    },
+    {
+      "angle": "Towns nobody can find",
+      "line": "Your listing says the agency covers the whole region, but the site doesn't name a single town. Families search for home health care in the town where their parent lives.",
+      "hook": "Compare the area named on their listing with the site. If no towns are listed, lead with this.",
+      "linkLine": "Home health service areas, town by town: {demo-link}"
+    },
+    {
+      "angle": "Coverage questions",
+      "line": "Nothing on your site says which insurance or programmes the agency works with. It's the first question a family asks and the one they'd rather not ask a stranger on the phone.",
+      "hook": "Search their site for insurance, payment or coverage. Never claim they accept a payer they haven't listed.",
+      "linkLine": "Coverage and payment for home health, stated plainly: {demo-link}"
+    },
+    {
+      "angle": "Licence and accreditation",
+      "line": "The agency's licence and accreditation aren't mentioned anywhere on the site. Families and hospital case managers check for both before they pick up the phone.",
+      "hook": "Look for licence or accreditation mentions in their listings and posts. Never state any they haven't published.",
+      "linkLine": "Your agency's credentials, up front: {demo-link}"
+    },
+    {
+      "angle": "Families in another city",
+      "line": "Adult children managing a parent's home health care from another city ring your office for updates. Nothing on the site shows how families stay informed.",
+      "hook": "Look for reviews from out-of-town family members or mentions of updates and communication.",
+      "linkLine": "How families follow home health care from afar: {demo-link}"
+    },
+    {
+      "angle": "Multilingual team, English-only site",
+      "line": "Your job posts ask for nurses and aides who speak other languages, but the agency site is English only. Families who prefer another language look for an agency that says so.",
+      "hook": "Check job posts for language requirements. Only use this if the site has no other language.",
+      "linkLine": "Your home health site in the languages your team speaks: {demo-link}"
+    },
+    {
+      "angle": "A specific recent post",
+      "line": "Your post about {specific recent job} says more about the agency's nurses than the whole About page does. Families and referral partners should land on that kind of story.",
+      "hook": "Pick their newest post about a staff award, a new branch or a training day and name it exactly.",
+      "linkLine": "That home health story where it belongs: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, your post about {specific recent job} said a lot about how the agency treats its nurses.\n\nI looked at the {Business Name} site with two hats on, a family arranging care and a nurse looking for work, and both got stuck: one contact page for every office and a careers link that goes to email. I've sketched a sample with branch pages, a referral portal and careers by role, with marked placeholders where your photos would go.\n\nWould it be useful to see it?",
+    "dm2": "{Owner}, following up in case this got buried. Here's the sample home health site for {Business Name}: {demo-link}\n\nIt has a page per branch, levels of care explained, a privacy-safe referral form for discharge planners, and careers pages for nurses, therapists and aides. If it's not a priority this quarter, say so and I won't message again.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites and referral and recruiting systems for home health agencies around {City}. I sent you a note last week, did it reach you?\"\n\nIF NO:\n\"No problem. Short version: I built a sample site for {Business Name} with branch pages, a referral portal for discharge planners and careers by role, with marked placeholders where your photos would go. Can I email it to you and whoever handles intake and recruiting?\"\n\nIF YES:\n\"What did you and your team think?\"\n → let them talk, note who else has a say\n\"A build like this runs {Build Range}, then {Care Range} a month for hosting, privacy-safe forms and changes. For an agency your size I'd expect about {Build Price}.\"\n\"Could we book thirty minutes with you and your intake or recruiting lead, so the scope fits how referrals actually come in?\"\n\nCLOSE:\n\"I'll send a written scope with phases and a deposit invoice. We start discovery the week it clears.\"",
+    "objections": [
+      {
+        "objection": "We already have a website.",
+        "handler": "\"You do, and it works for someone who already knows you. This is about the people who don't: a discharge planner who needs to refer tonight, a nurse comparing agencies, a family in a branch town the site never names.\""
+      },
+      {
+        "objection": "Our scheduling and records system has a portal.",
+        "handler": "\"Keep it. The site links into it for logged-in families and staff, and does the public part it doesn't: levels of care, branch pages, referrals and recruiting.\""
+      },
+      {
+        "objection": "Referrals come from relationships, not the website.",
+        "handler": "\"They do, and relationships send referrals to whoever is easiest to refer to. A privacy-safe referral form your liaisons can point to makes every relationship easier to use.\""
+      },
+      {
+        "objection": "Compliance has to review everything.",
+        "handler": "\"Good, and the scope includes it. Copy goes to your compliance lead in rounds, there are no outcome claims, and patient stories only appear with written consent.\""
+      },
+      {
+        "objection": "We spend our budget on recruiting ads.",
+        "handler": "\"Then the careers pages are the place to start. Ads send clinicians to a page; if that page can't take an application on a phone, part of the ad budget is wasted.\""
+      },
+      {
+        "objection": "What does it cost?",
+        "handler": "\"{Build Range} depending on branches, roles and integrations. For your agency I'd expect about {Build Price}. A few filled nurse positions or extra referrals a month cover it.\""
+      }
+    ],
+    "email": {
+      "subject": "Referrals, recruiting and {Business Name}'s site",
+      "body": "Hi {Owner},\n\nI build websites and referral and recruiting systems for home health agencies around {City}. Looking at {Business Name} as a family, a discharge planner and a nurse, each hit a wall: one contact page for several branches, no online referral, and a careers link that goes to email.\n\nI built a sample rather than ask for a meeting first: branch pages with the towns each office covers, levels of care explained, a privacy-safe referral portal and careers pages by role, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIt makes no outcome claims and goes through your compliance review before launch. A build like this runs {Build Range}, plus {Care Range} a month for hosting, privacy-safe forms and changes.\n\nWould thirty minutes with you and your intake lead be worthwhile?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build referral portals and recruiting sites for home health agencies in {City}, and I made a sample for {Business Name}. I'll email the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm taking the {Business Name} home health demo down at the end of the week.\n\nShould I keep it up for your team to review? A one-word reply is fine.",
+    "nurture": "Hi {Owner}, budgets for next year are being set about now, and recruiting and referral intake tend to top the list for home health agencies. Thought of you.\n\nThe sample with branch pages, the referral portal and careers by role is still here. {demo-link} if your team wants another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Price by branches, roles and integrations, not pages. Each branch and each clinical role is its own page with its own facts.",
+      "Start with a paid discovery: who refers, how intake works, which systems hold schedules and records. It sets the scope for everyone.",
+      "Referral and intake forms carry patient details. Privacy-safe hosting and setup are a priced line in every proposal.",
+      "Build compliance review rounds into the timeline. Two or three people approve copy, and that takes weeks, not days.",
+      "Peg the build to recruiting: a few filled nurse or therapist roles a year usually justifies it more easily than marketing.",
+      "Integrations are scoped separately after discovery. Never quote a connection to a system you haven't seen."
+    ],
+    "lineItems": [
+      {
+        "item": "Branch office page (each)",
+        "min": 300,
+        "max": 900,
+        "unit": "per-page",
+        "description": "Max with towns covered, intake hours, the branch manager's profile, a map and branch-specific reviews.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Careers page per clinical role",
+        "min": 600,
+        "max": 1500,
+        "unit": "per-page",
+        "description": "Max with pay ranges as supplied, territory maps, mileage policy, a short video slot and a phone application.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Paid discovery and intake workflow mapping",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "description": "Max when several branches handle intake differently and the referral sources must be mapped one by one.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Scheduling or records system integration",
+        "min": 3000,
+        "max": 12000,
+        "unit": "one-time",
+        "description": "Max when the system has no ready connection and data must sync both ways with audit logging.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Second-language version",
+        "min": 1500,
+        "max": 5000,
+        "unit": "one-time",
+        "description": "Max when care levels, branch pages, careers, referral and family forms are all translated and reviewed.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Content migration from the old site",
+        "min": 1000,
+        "max": 3000,
+        "unit": "one-time",
+        "description": "Max with many old pages, redirects for each branch and job posts that must keep their links.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Compliance review rounds beyond the first two",
+        "min": 150,
+        "max": 250,
+        "unit": "per-hour",
+        "description": "Max when legal and clinical reviewers both mark up copy across branches.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Consent and patient-story policy page set",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A privacy notice, consent pages and a written policy for patient stories and photos across every branch, so nothing about a home health patient appears without written consent.\"",
+      "when": "At build. Needs the agency's current consent forms and the compliance lead's input."
+    },
+    {
+      "name": "Accessibility review and fix plan",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A full accessibility review of the agency site, referral portal and careers forms, with a prioritised fix plan, because many home health families and some clinicians use assistive tools.\"",
+      "when": "At build, and again yearly or after a major content change."
+    },
+    {
+      "name": "Advertising-approval-ready content pack for the agency",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Service, recruiting and ad wording for the agency written without outcome claims and formatted for compliance sign-off, ready to submit where the regulator requires approval.\"",
+      "when": "Before any paid campaign, or in markets where health advertising needs approval."
+    },
+    {
+      "name": "Clinician recruiting campaign management",
+      "min": 1500,
+      "max": 4000,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Recruiting ads for nurses, therapists and home health aides by branch, pointed at the role pages, with a monthly report of applications per role and office.\"",
+      "when": "Month 2, after careers pages are live."
+    },
+    {
+      "name": "Google profile management for every branch",
+      "min": 300,
+      "max": 900,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Each branch office's Google profile kept accurate with hours, towns served, careers posts and family reviews answered, so every location of the agency looks active.\"",
+      "when": "Day 30."
+    },
+    {
+      "name": "Branch-by-branch family review programme",
+      "min": 299,
+      "max": 699,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"After care ends or at set points in a long episode, families get a review request for the right branch, with a reminder not to post health details.\"",
+      "when": "Month 2. Needs discharge or milestone dates from their system."
+    },
+    {
+      "name": "Referral partner newsletter",
+      "min": 400,
+      "max": 1200,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A short monthly note to discharge planners and physician offices with branch news, new service areas and intake contacts, so the agency stays top of mind.\"",
+      "when": "Month 3, once the referral portal is live."
+    },
+    {
+      "name": "Clinician video and photo day",
+      "min": 1500,
+      "max": 4000,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A day filming nurses, therapists and aides talking about the work, for careers pages and recruiting ads, with releases from every staff member shown.\"",
+      "when": "Month 3, before a recruiting push."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Medical equipment suppliers the agency orders from",
+        "whoPays": "The equipment supplier",
+        "min": 4000,
+        "max": 12000,
+        "unit": "one-time",
+        "pitchLine": "\"The supplier delivering hospital beds and walkers to your home health patients takes orders by fax. A site with online ordering would serve every agency they supply.\"",
+        "whyItWorks": "The supplier values the agency as a customer, and the agency's own ordering pain makes the case."
+      },
+      {
+        "route": "Home modification contractors",
+        "whoPays": "The contractor, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The contractor your nurses recommend for grab bars and ramps has no site. A quote-request site would bring them the home health families who need it.\"",
+        "whyItWorks": "The agency's recommendation is the contractor's best source of jobs, so the introduction lands."
+      },
+      {
+        "route": "Elder law and estate planning firms",
+        "whoPays": "The law firm, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The elder law attorney your families ask about has a dated site. A consultation booking site with plain-language care-planning pages would suit their clients and yours.\"",
+        "whyItWorks": "Elder law firms and agencies serve the same families at the same moment and refer both ways."
+      },
+      {
+        "route": "Hospice partners",
+        "whoPays": "The hospice",
+        "min": 8000,
+        "max": 20000,
+        "unit": "one-time",
+        "pitchLine": "\"The hospice your agency hands patients to has an old site with no referral form. The referral portal you're getting would serve them as well.\"",
+        "whyItWorks": "Hospices and home health agencies share referral sources and patients. Seeing your portal is the pitch."
+      },
+      {
+        "route": "Adult day programmes",
+        "whoPays": "The programme",
+        "min": 3000,
+        "max": 8000,
+        "unit": "one-time",
+        "pitchLine": "\"The adult day centre your aides drop clients at has a flyer and a phone number. A site with a tour booking and enrolment steps would fill their weekday places.\"",
+        "whyItWorks": "Adult day programmes depend on home care referrals, and the agency can introduce you directly."
+      },
+      {
+        "route": "Senior placement and care advisors",
+        "whoPays": "The advisor, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The care advisor who points families to your agency works from a social profile. A consultation site with a family intake form would grow their practice.\"",
+        "whyItWorks": "Advisors live on trust and referrals, and the agency is already a partner they rely on."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Order and delivery assistant for the equipment supplier",
+        "whoPays": "The equipment supplier, monthly",
+        "min": 300,
+        "max": 800,
+        "unit": "monthly",
+        "pitchLine": "\"Agencies and families asking whether a hospital bed or oxygen concentrator is in stock and when it can be delivered get answers from the supplier's own data.\"",
+        "whyItWorks": "Suppliers field the same delivery questions all day. The agency that orders from them makes the introduction."
+      },
+      {
+        "route": "Quote builder for the home modification contractor",
+        "whoPays": "The contractor",
+        "min": 2000,
+        "max": 5000,
+        "unit": "one-time",
+        "pitchLine": "\"A family enters the rooms and photos of a parent's bathroom and stairs, and the contractor gets a draft quote for grab bars, a ramp or a walk-in shower to check.\"",
+        "whyItWorks": "Contractors lose these jobs to slow quoting, and the home health agency sends a steady flow."
+      },
+      {
+        "route": "Intake assistant for the elder law firm",
+        "whoPays": "The law firm, monthly",
+        "min": 200,
+        "max": 600,
+        "unit": "monthly",
+        "pitchLine": "\"Families contacting the elder law firm at night answer a few approved questions about a parent's situation and book a consultation, with no legal advice given.\"",
+        "whyItWorks": "Law firms want qualified consultations without after-hours staff, and the agency refers families to them."
+      },
+      {
+        "route": "After-hours enquiry line for the hospice",
+        "whoPays": "The hospice, monthly",
+        "min": 600,
+        "max": 1500,
+        "unit": "monthly",
+        "pitchLine": "\"Families calling the hospice late about admission steps get calm, approved answers and an on-call nurse callback, and anything clinical goes to a person at once.\"",
+        "whyItWorks": "Hospices staff on-call nurses for care, not for logistics questions. Approved answers free them up."
+      },
+      {
+        "route": "Enrolment question assistant for the adult day centre",
+        "whoPays": "The programme, monthly",
+        "min": 200,
+        "max": 500,
+        "unit": "monthly",
+        "pitchLine": "\"Families asking the adult day centre about hours, transport and fees get answers from approved text, and a tour gets booked before the family calls another programme.\"",
+        "whyItWorks": "Small programmes have no one free to answer questions during the day, which is when families ask."
+      },
+      {
+        "route": "Family matching assistant for the care advisor",
+        "whoPays": "The advisor, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"A family describes a parent's needs and location, and the care advisor gets a draft shortlist of agencies and communities from their own approved partner list.\"",
+        "whyItWorks": "Advisors spend hours building shortlists by hand, and the home health agency is already on theirs."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Privacy-safe referral intake portal and hosting",
+      "kind": "software",
+      "oneTimeMin": 8000,
+      "oneTimeMax": 20000,
+      "monthlyMin": 300,
+      "monthlyMax": 900,
+      "pitchLine": "\"Discharge planners and physician offices send home health referrals with documents through a privacy-safe portal, routed to the right branch's intake team.\"",
+      "whenAndWhatItTakes": "At build. Needs the intake checklist, branch routing rules, the privacy rules where they operate and who on staff receives referrals."
+    },
+    {
+      "name": "Clinician applicant pipeline with phone application",
+      "kind": "software",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 12000,
+      "monthlyMin": 150,
+      "monthlyMax": 500,
+      "pitchLine": "\"Nurses, therapists and aides apply on a phone in a few minutes, and recruiters see every applicant by role and branch on one board.\"",
+      "whenAndWhatItTakes": "Month 1. Needs roles, screening questions and the recruiters' current process. Connects to their hiring system if they have one."
+    },
+    {
+      "name": "Applicant first reply and interview booking",
+      "kind": "automation",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Every nurse or therapist application triggers a same-evening reply from the branch recruiter's name, with interview slots from that recruiter's real calendar.\"",
+      "whenAndWhatItTakes": "Month 1, with the applicant pipeline. Needs recruiters' calendars and approved message wording."
+    },
+    {
+      "name": "Referral status updates to referring partners",
+      "kind": "automation",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 200,
+      "monthlyMax": 500,
+      "pitchLine": "\"The discharge planner who sent a referral gets a privacy-safe note when the agency accepts it and when the start-of-care visit is booked.\"",
+      "whenAndWhatItTakes": "Month 2, after the referral portal. Needs intake status steps and partner contact preferences."
+    },
+    {
+      "name": "Office-by-office referral and recruiting dashboard",
+      "kind": "software",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 18000,
+      "monthlyMin": 300,
+      "monthlyMax": 900,
+      "pitchLine": "\"Leadership sees referrals by source, acceptances, start-of-care times and applications by role for each branch, without asking each office for a spreadsheet.\"",
+      "whenAndWhatItTakes": "Month 3, once the portal and pipeline hold data. Needs the measures leadership already reviews and access to their systems."
+    },
+    {
+      "name": "After-hours intake answering for families",
+      "kind": "ai",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 15000,
+      "monthlyMin": 800,
+      "monthlyMax": 2500,
+      "pitchLine": "\"A family calling the agency on a Friday night after a discharge gets the start-of-care steps from approved answers, and an on-call intake callback is booked.\"",
+      "whenAndWhatItTakes": "Month 3. Needs approved answers, on-call rotas and a rule that any clinical question goes to a person. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Referral document summary for intake nurses",
+      "kind": "ai",
+      "oneTimeMin": 8000,
+      "oneTimeMax": 20000,
+      "monthlyMin": 600,
+      "monthlyMax": 1500,
+      "pitchLine": "\"Long referral packets are laid out for the intake nurse with orders, contacts and missing documents highlighted, on privacy-safe hosting, and the nurse decides.\"",
+      "whenAndWhatItTakes": "Month 4, after the portal. Needs sample packets with identifiers removed, the intake checklist and privacy approval. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Clinician credential and expiry tracker",
+      "kind": "software",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Every nurse, therapist and aide's licence, certifications and checks have an expiry date, with reminders to staff and branch managers well before anything lapses.\"",
+      "whenAndWhatItTakes": "Month 3. Needs current credential records and who is responsible for renewals at each branch."
+    },
+    {
+      "name": "Applicant question responder for clinicians",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 300,
+      "monthlyMax": 800,
+      "pitchLine": "\"Nurses and therapists asking about territory, mileage pay, caseload or orientation get answers from the agency's approved recruiting facts, day or night.\"",
+      "whenAndWhatItTakes": "Month 2. Needs approved answers per role and branch. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Family portal linked to their scheduling system",
+      "kind": "software",
+      "oneTimeMin": 12000,
+      "oneTimeMax": 35000,
+      "monthlyMin": 500,
+      "monthlyMax": 1500,
+      "pitchLine": "\"Family members a patient has authorised see upcoming home health visits, who is coming and how to reach the branch, from the agency's own schedule.\"",
+      "whenAndWhatItTakes": "Month 6. Needs read access to the scheduling system, the agency's authorisation rules and a privacy review."
+    },
+    {
+      "name": "Field staff policy search",
+      "kind": "ai",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 12000,
+      "monthlyMin": 400,
+      "monthlyMax": 1000,
+      "pitchLine": "\"Nurses and aides in a patient's driveway search the agency's own policies on mileage, documentation deadlines and who to call, instead of phoning the branch.\"",
+      "whenAndWhatItTakes": "Month 5. Needs the employee handbook and policy documents, each answer approved. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Missed-visit alerts to the branch",
+      "kind": "automation",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 200,
+      "monthlyMax": 600,
+      "pitchLine": "\"When a scheduled home health visit isn't checked in on time, the branch scheduler gets an alert while there's still time to send someone.\"",
+      "whenAndWhatItTakes": "Month 5. Needs visit check-in data from their scheduling system and escalation contacts per branch."
+    },
+    {
+      "name": "Review reply drafts across branches",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Each family review on any branch profile gets a reply drafted in the agency's voice that never confirms someone is a patient or mentions their care.\"",
+      "whenAndWhatItTakes": "Month 2, with branch profile management. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Referral partner follow-up drafts for liaisons",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 7000,
+      "monthlyMin": 200,
+      "monthlyMax": 600,
+      "pitchLine": "\"Community liaisons get a weekly list of discharge planners and physician offices who've gone quiet, with a suggested note for each.\"",
+      "whenAndWhatItTakes": "Month 4, once the portal shows referral history by source. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Intake pipeline for family enquiries",
+      "kind": "software",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 15000,
+      "monthlyMin": 200,
+      "monthlyMax": 600,
+      "pitchLine": "\"Every family enquiry from the site or phone lands on one board by branch, from first call to start of care, so none sits in a voicemail box.\"",
+      "whenAndWhatItTakes": "Month 2. Needs intake steps and who owns each branch's enquiries."
+    },
+    {
+      "name": "Bilingual family message drafts",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 300,
+      "monthlyMax": 800,
+      "pitchLine": "\"Start-of-care letters, visit reminders and branch notices drafted in the family's preferred language and checked by bilingual staff before they go out.\"",
+      "whenAndWhatItTakes": "Month 4. Needs approved templates and a bilingual reviewer at each branch. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Open visit text-out to available clinicians",
+      "kind": "automation",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 200,
+      "monthlyMax": 600,
+      "pitchLine": "\"An uncovered nursing or therapy visit goes out by text to qualified clinicians near that patient's town, and the first to accept gets it.\"",
+      "whenAndWhatItTakes": "Month 5. Needs scheduling system access, clinician territories and qualification rules."
+    },
+    {
+      "name": "Clinician visit-note drafts from voice",
+      "kind": "ai",
+      "oneTimeMin": 15000,
+      "oneTimeMax": 40000,
+      "monthlyMin": 1000,
+      "monthlyMax": 3000,
+      "pitchLine": "\"A nurse talks through the home visit in the car, and a draft note is waiting in the agency's privacy-safe system for them to correct and sign.\"",
+      "whenAndWhatItTakes": "Month 8, after a pilot branch. Needs their note templates, records system access and a firm rule that nothing is saved unsigned. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Orientation tracker for new clinicians",
+      "kind": "software",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Each new nurse or aide sees their orientation steps, shadow visits and sign-offs, and the branch manager sees who is ready for a full caseload.\"",
+      "whenAndWhatItTakes": "Month 6. Needs the current orientation checklist per role."
+    },
+    {
+      "name": "Exit and stay survey summaries for clinicians",
+      "kind": "ai",
+      "oneTimeMin": 2500,
+      "oneTimeMax": 6000,
+      "monthlyMin": 200,
+      "monthlyMax": 500,
+      "pitchLine": "\"Short stay and exit surveys from nurses and aides are grouped into themes per branch each month, so leadership sees why clinicians leave before more do.\"",
+      "whenAndWhatItTakes": "Month 9. Needs survey questions they approve and an anonymity rule. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the referral portal for home health agencies",
+      "whoPays": "Agencies, monthly",
+      "min": 300,
+      "max": 900,
+      "unit": "monthly",
+      "pitchLine": "\"I built a privacy-safe referral portal for one home health agency. Every agency in the region still takes referrals by fax and wants the same thing.\"",
+      "whyItWorks": "Agencies compete for the same discharge planners, and a portal that works locally is the demo."
+    },
+    {
+      "route": "Home care and home health association member programme",
+      "whoPays": "The association",
+      "min": 5000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer members a home health site template with care-level pages, a referral form and claim-free wording, priced for agencies of every size.\"",
+      "whyItWorks": "Associations need member benefits, and recruiting and referrals are every member's top worry."
+    },
+    {
+      "route": "Home care franchise systems",
+      "whoPays": "Each franchisee, per territory",
+      "min": 3000,
+      "max": 8000,
+      "unit": "one-time",
+      "pitchLine": "\"Head office gives each home care franchisee one thin page. I build local territory pages inside brand rules with careers, towns served and a referral form.\"",
+      "whyItWorks": "Franchisees want local visibility and recruiting within brand rules, and one approved template sells to every territory."
+    },
+    {
+      "route": "Hospital systems' preferred-provider listings",
+      "whoPays": "The hospital system's care transitions team",
+      "min": 10000,
+      "max": 30000,
+      "unit": "one-time",
+      "pitchLine": "\"Case managers across your hospitals each keep their own agency list. One directory of home health agencies by service line and town, with referral links, ends that.\"",
+      "whyItWorks": "Hospitals are measured on smooth discharges, and the agency client is the proof that referral links work."
+    },
+    {
+      "route": "Agency groups acquiring smaller agencies",
+      "whoPays": "The group, per acquired agency",
+      "min": 6000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Each agency your group acquires keeps its local name. A template that keeps that and adds the group's referral portal and careers rolls out branch by branch.\"",
+      "whyItWorks": "Groups buy several agencies a year, and each one needs its site and portal folded in fast."
+    },
+    {
+      "route": "Medical equipment supplier dealer networks",
+      "whoPays": "The supplier network, annually",
+      "min": 8000,
+      "max": 25000,
+      "unit": "per-year",
+      "pitchLine": "\"Every agency your network supplies orders by fax and phone. A shared ordering portal with delivery tracking keeps those agencies loyal.\"",
+      "whyItWorks": "Supplier networks compete on service, and the agency client already wants this."
+    },
+    {
+      "route": "White-label agency templates for healthcare marketing firms",
+      "whoPays": "The marketing firm, per agency",
+      "min": 2500,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Your firm takes on home health clients and rebuilds referral and careers pages each time. License my template with the portal and role pages built in.\"",
+      "whyItWorks": "Marketing firms own the client relationship and want the hard parts already solved."
+    },
+    {
+      "route": "Liability insurers for home health agencies",
+      "whoPays": "The insurer's risk team",
+      "min": 5000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Agencies you insure ask what they may publish about patients and outcomes. A template with consent, privacy and claim-free care pages is a risk benefit for policyholders.\"",
+      "whyItWorks": "Insurers want fewer privacy and advertising complaints, and a ready template helps every policyholder."
+    },
+    {
+      "route": "Nursing and therapy schools' clinical placement offices",
+      "whoPays": "The school, annually",
+      "min": 3000,
+      "max": 10000,
+      "unit": "per-year",
+      "pitchLine": "\"Your students need home health placements and graduates need jobs. A placement and careers board with partner agencies listed serves both.\"",
+      "whyItWorks": "Schools need placements every term, and agencies need new graduates. The agency client is the first partner."
+    },
+    {
+      "route": "Insurers' care management teams",
+      "whoPays": "The insurer's network team",
+      "min": 10000,
+      "max": 30000,
+      "unit": "one-time",
+      "pitchLine": "\"Your care managers phone around for in-network home health capacity. A directory showing which agencies cover which towns and take new patients saves those calls.\"",
+      "whyItWorks": "Insurers want members placed quickly with network agencies, and capacity is the missing data."
+    },
+    {
+      "route": "The same build for an agency in the next region",
+      "whoPays": "Agencies in a non-competing region",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"Home health agencies in different regions never compete for the same discharge planners, so the branch pages, portal and careers system move to the next one cleanly.\"",
+      "whyItWorks": "Non-competing regions let you reuse the system, the pitch and the finished proof."
+    },
+    {
+      "route": "Rescue stalled portal and integration projects",
+      "whoPays": "The stuck agency",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Many home health agencies started a referral portal or system integration that stalled after the first vendor. Finishing it on a setup I've run is a clear job.\"",
+      "whyItWorks": "Agencies with stalled projects have budget and urgency, and want someone who has done it before."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Agency site rebuild plus care plan, one contract",
+      "min": 10000,
+      "max": 22000,
+      "unit": "one-time",
+      "trigger": "Leadership signs the scope after discovery.",
+      "line": "\"The home health site rebuild and the care plan go on one contract, so a new branch or role page is a request, not a project.\""
+    },
+    {
+      "rung": 2,
+      "day": 0,
+      "offer": "Privacy-safe referral intake portal and hosting",
+      "min": 8000,
+      "max": 20000,
+      "unit": "one-time",
+      "trigger": "Discovery shows referrals arriving by fax, phone and ordinary email.",
+      "line": "\"Your referrals carry patient details. A privacy-safe portal replaces the fax and routes each one to the right branch.\""
+    },
+    {
+      "rung": 3,
+      "day": 30,
+      "offer": "Clinician applicant pipeline with phone application",
+      "min": 4000,
+      "max": 12000,
+      "unit": "one-time",
+      "trigger": "The new careers pages are live and applications still arrive by email.",
+      "line": "\"Clinicians are finding the role pages. Let's let them apply on a phone and give recruiters one board.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Google profile management for every branch",
+      "min": 300,
+      "max": 900,
+      "unit": "monthly",
+      "trigger": "Branch listings show wrong hours or unanswered family reviews.",
+      "line": "\"Each branch's profile is the first thing families and nurses see. Let's keep every one accurate and answered.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "After-hours intake answering for families",
+      "min": 6000,
+      "max": 15000,
+      "unit": "one-time",
+      "trigger": "Intake reports weekend enquiries lost to agencies that answered first.",
+      "line": "\"Friday-night discharge calls get the start-of-care steps and an on-call callback, instead of a voicemail.\""
+    },
+    {
+      "rung": 6,
+      "day": 120,
+      "offer": "Office-by-office referral and recruiting dashboard",
+      "min": 6000,
+      "max": 18000,
+      "unit": "one-time",
+      "trigger": "Three months of portal and pipeline data exist and leadership asks for branch comparisons.",
+      "line": "\"You have the referral and applicant data now. Let's put each branch side by side for leadership.\""
+    },
+    {
+      "rung": 7,
+      "day": 180,
+      "offer": "Family portal linked to their scheduling system",
+      "min": 12000,
+      "max": 35000,
+      "unit": "one-time",
+      "trigger": "Branch staff say update calls from families take hours every week.",
+      "line": "\"Those update calls become a portal where authorised family members see upcoming home health visits.\""
+    },
+    {
+      "rung": 8,
+      "day": 270,
+      "offer": "Introduction to the hospice partner",
+      "min": 8000,
+      "max": 20000,
+      "unit": "one-time",
+      "trigger": "The hospice they refer to asks about the referral portal.",
+      "line": "\"Your hospice partner has seen the referral portal work. Would you introduce me to their leadership?\""
+    }
+  ]
+}

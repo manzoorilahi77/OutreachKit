@@ -1,0 +1,870 @@
+{
+  "schemaVersion": 1,
+  "category": "Dermatology & skin clinics",
+  "slug": "dermatology-skin-clinics",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · expansion batch (healthcare + mid-size)",
+    "generatedAt": "2026-10-13",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Leaned on the board note: patients search by condition, so the build is condition pages written as general information plus separate medical and cosmetic consult paths. No outcomes, no product or injectable brand names, results photos only with signed consent. Unsure on the photo-triage and skincare shop prices, so those ranges are wide."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Skin conditions we see: acne, eczema, rosacea",
+      "contains": "One page per condition the clinic treats, written as general information: what it is, when to see a dermatologist, what a first visit involves, and a consult booking, with a note that the page is not a diagnosis",
+      "why": "People type their symptom, not a clinic name. A plain condition page is how a skin clinic gets found by the patient who needs it."
+    },
+    {
+      "section": "Mole and skin check booking",
+      "contains": "What a full skin check involves, how long it takes, how to prepare, when a changing mole should be seen sooner, and a separate booking path for skin checks",
+      "why": "Skin checks are the most searched dermatology visit and often a patient's first. A dedicated path stops them waiting on hold."
+    },
+    {
+      "section": "Medical or cosmetic: which visit to book",
+      "contains": "A clear split between medical dermatology and cosmetic treatments, who sees patients for each, how fees differ, and whether a referral is needed where the clinic practises",
+      "why": "Patients are unsure whether their concern is medical or cosmetic, and booking the wrong visit wastes a slot. This page routes them first time."
+    },
+    {
+      "section": "Cosmetic treatment menu with fee ranges",
+      "contains": "Injectables, chemical peels, laser and light treatments, each with what the appointment involves, downtime in plain words, a fee range and who performs it, with no promised results",
+      "why": "Cosmetic patients compare clinics on who does the treatment and the price range. Showing both builds trust a glossy spa page can't."
+    },
+    {
+      "section": "Referral and waitlist information",
+      "contains": "How referrals from a family doctor reach the clinic, current wait guidance in general terms, a cancellation list sign-up and what to do if a concern changes while waiting",
+      "why": "Dermatology waits can be long. Patients who understand the process and can join a cancellation list stay with the clinic instead of searching again."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C10",
+      "siteType": "local-conversion",
+      "name": "Skin Check Desk",
+      "heroLayout": "split-photo",
+      "mood": [
+        "clinical",
+        "plain",
+        "steady"
+      ],
+      "bestFor": "Solo dermatologists and small medical skin clinics that need skin check and consult bookings to work on a phone",
+      "pairsWithTier": "starter",
+      "headlineSample": "Skin checks and dermatology care in {City}",
+      "whyItFits": "Steel blue and a neutral grotesque look medical and calm without feeling cold. Two clear paths, skin check and consult, sit above the fold."
+    },
+    {
+      "id": "b",
+      "themeId": "C8",
+      "siteType": "editorial-trust",
+      "name": "Condition Library",
+      "heroLayout": "type-led",
+      "mood": [
+        "knowledgeable",
+        "quiet",
+        "reassuring"
+      ],
+      "bestFor": "Clinics with medical and cosmetic dermatology, building a library of condition pages patients find by searching their symptom",
+      "pairsWithTier": "standard",
+      "headlineSample": "Dermatology in {City}, explained in plain words",
+      "whyItFits": "The same old-style serif as the family's Private Vault, on a soft green ground that reads as health rather than finance. Long condition pages need a calm, readable editorial look."
+    },
+    {
+      "id": "c",
+      "themeId": "C35",
+      "siteType": "premium-brand",
+      "name": "Skin Atelier",
+      "heroLayout": "full-bleed-photo",
+      "mood": [
+        "elegant",
+        "soft",
+        "assured"
+      ],
+      "bestFor": "Cosmetic dermatology clinics selling injectables, peels and laser treatments led by a physician",
+      "pairsWithTier": "premium",
+      "headlineSample": "Physician-led cosmetic skin care in {City}",
+      "whyItFits": "Rosewood and Didone display type feel like a boutique, while the physician-led message keeps it a medical clinic, not a spa."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No condition pages",
+      "line": "Your skin clinic lists acne, eczema and rosacea in one line. Someone searching their symptom at night lands on the dermatologist who has a page about that condition.",
+      "hook": "Check whether each condition they treat has its own page. Pick the one their posts mention most.",
+      "linkLine": "A dermatology condition page, written as general information: {demo-link}"
+    },
+    {
+      "angle": "Skin check booking by phone only",
+      "line": "Booking a mole or skin check at your clinic means calling and waiting on hold. A lot of people only get round to it late in the evening, when no one answers.",
+      "hook": "Look for an online booking for skin checks on their site and listing. If it's call-only, the angle holds.",
+      "linkLine": "Skin check booking that works after hours: {demo-link}"
+    },
+    {
+      "angle": "Medical and cosmetic mixed together",
+      "line": "Your dermatology site puts injectables next to psoriasis on one page. Patients can't tell which visit to book, and the clinic ends up re-routing calls.",
+      "hook": "Check whether medical and cosmetic services have separate pages and booking paths.",
+      "linkLine": "Separate medical and cosmetic dermatology paths: {demo-link}"
+    },
+    {
+      "angle": "Cosmetic fees hidden",
+      "line": "Your cosmetic skin treatments have no fee ranges online. People comparing a physician-led dermatology clinic with a spa want to see what a peel or laser session costs first.",
+      "hook": "Search their site for prices or 'from'. If cosmetic fees are missing, the angle holds.",
+      "linkLine": "A cosmetic skin menu with fee ranges: {demo-link}"
+    },
+    {
+      "angle": "Slow site on a phone",
+      "line": "Your dermatology site took a long time to load on my phone, and the booking link was buried in the menu. That's where most people looking at a rash or a mole start.",
+      "hook": "Load their site on your phone over mobile data. Note the wait and where booking sits. Screenshot it for when they reply.",
+      "linkLine": "Your skin clinic site rebuilt for a phone: {demo-link}"
+    },
+    {
+      "angle": "Referral process unclear",
+      "line": "I couldn't tell from your site whether a patient needs a referral to see your dermatologist. Spelling it out saves your front desk a lot of the same phone call.",
+      "hook": "Search their site for referral. If the process isn't explained, the angle holds.",
+      "linkLine": "Referral and waitlist steps, clearly explained: {demo-link}"
+    },
+    {
+      "angle": "Long waits, no cancellation list",
+      "line": "Your posts mention dermatology appointments are booked well ahead. A cancellation list on the site would fill the gaps when someone drops out.",
+      "hook": "Only if they've mentioned waits or full books publicly. Quote where you saw it.",
+      "linkLine": "A skin clinic cancellation list patients join online: {demo-link}"
+    },
+    {
+      "angle": "Summer sun and skin checks",
+      "line": "Summer is when people notice a changed mole and think about a skin check. A skin check page ready before the season catches them while they're worried enough to book.",
+      "hook": "Use this in late spring and early summer.",
+      "linkLine": "A skin check page ready for summer: {demo-link}"
+    },
+    {
+      "angle": "Reviews mention a gentle manner",
+      "line": "Your reviews keep saying the dermatologist explains things kindly and doesn't rush. None of that appears on the skin clinic's site, which is where an anxious patient reads.",
+      "hook": "Read their newest reviews and pick a phrase about manner or explanations. Quote it back.",
+      "linkLine": "Your dermatology reviews where patients decide: {demo-link}"
+    },
+    {
+      "angle": "Results photos without a policy",
+      "line": "Your cosmetic posts show treatment results, but the dermatology site has no consent or photo policy page. Patients considering a treatment want to know their pictures stay private.",
+      "hook": "Only if they post treatment results. Check for a photo or privacy policy page.",
+      "linkLine": "A patient photo consent and policy page for skin clinics: {demo-link}"
+    },
+    {
+      "angle": "Skincare products sold in clinic",
+      "line": "Your clinic sells skincare at the front desk, but patients can't reorder it from the dermatology site. A simple reorder page keeps them buying from you, not a pharmacy shelf.",
+      "hook": "Look for posts or photos of skincare products in the clinic. Note whether the site sells them.",
+      "linkLine": "A skin clinic product reorder page: {demo-link}"
+    },
+    {
+      "angle": "Hiring a nurse or aesthetician",
+      "line": "Saw your skin clinic is hiring a nurse or aesthetician. Candidates read the clinic site before applying, and right now there's no careers page to send them to.",
+      "hook": "Only if they posted a job. Note the role and the date.",
+      "linkLine": "A dermatology site with a careers page: {demo-link}"
+    },
+    {
+      "angle": "Dermatologist credentials not shown",
+      "line": "Your dermatologist's specialist registration is public, but the site doesn't say who performs cosmetic treatments. Patients want to know a physician is involved before they book.",
+      "hook": "Check the public register where they practise. Note that a record exists; never quote a number or credential you didn't see.",
+      "linkLine": "Dermatologist and team credentials shown plainly: {demo-link}"
+    },
+    {
+      "angle": "Patients from nearby towns",
+      "line": "Your reviews mention patients driving in from towns outside {City} for dermatology care. A page for travelling patients, with parking and visit length, makes that trip easier to commit to.",
+      "hook": "Look for town names in reviews. Note two or three.",
+      "linkLine": "Skin clinic pages for patients travelling in: {demo-link}"
+    },
+    {
+      "angle": "A specific recent post",
+      "line": "Your {specific recent job} post about skin care was clear and calm, without any hype. That kind of explainer deserves a permanent page on the dermatology site.",
+      "hook": "Pick their newest educational post and name it exactly. Never reference a patient.",
+      "linkLine": "That skin explainer, kept on a page that ranks: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, your {specific recent job} post explained a skin question clearly, without hype.\n\nI was looking at dermatology clinics in {City} and found {Business Name}, but no way to book a skin check online and no pages for the conditions you treat. I put together a sample site to see how it might look, with marked placeholders where your photos would go.\n\nWould you like me to send it?",
+    "dm2": "{Owner}, following up in case my note got buried. Here's the sample dermatology site for {Business Name}: {demo-link}\n\nIt has skin check booking, separate medical and cosmetic paths, condition pages written as general information, a cosmetic menu with fee ranges and a consent and photo policy page. Nothing on it promises a result. If it's not for you, just say so.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for skin clinics here in {City}. I sent you a message a few days ago, did it reach you?\"\n\nIF NO:\n\"No problem. Short version: I built a sample site for {Business Name} with skin check booking, condition pages and a cosmetic menu, with marked placeholders where your photos would go. Can I email the link for you to look at after clinic?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"Patients search by their symptom, not your name. This gives each condition its own page and routes medical and cosmetic visits separately, so your front desk stops re-booking. You approve every word, and nothing makes a claim. The build runs {Build Range} depending on how many condition pages you want, then {Care Range} a month for hosting and edits. For your clinic I'd quote about {Build Price}.\"\n\"Could I walk you through it in ten minutes this week?\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. We start once it clears, and you sign off on every page before launch.\"",
+    "objections": [
+      {
+        "objection": "We're booked months out; we don't need more patients.",
+        "handler": "\"Then the site's job is routing, not volume: the right visit type first time, referrals explained, a cancellation list that fills gaps, and more of the cosmetic work you'd like to grow.\""
+      },
+      {
+        "objection": "Medical advertising rules make me nervous.",
+        "handler": "\"They should. Condition pages are written as general information, there are no outcome claims, results photos appear only with signed consent, and I prepare an approval pack where the regulator requires one.\""
+      },
+      {
+        "objection": "We don't want to put cosmetic prices online.",
+        "handler": "\"A range with 'confirmed at your consultation' is enough. Patients comparing a physician-led clinic with a spa use it to decide whether to book at all.\""
+      },
+      {
+        "objection": "Patients will try to diagnose themselves from the pages.",
+        "handler": "\"Each page says plainly it isn't a diagnosis and tells people when to book sooner. The goal is to get them to the dermatologist, not replace the visit.\""
+      },
+      {
+        "objection": "Our hospital or group handles our website.",
+        "handler": "\"If the clinic can have its own pages, I build to their rules. If not, a separate site for the cosmetic side, which they usually don't cover, is often allowed.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For your clinic about {Build Price}, for skin check booking, condition pages, the cosmetic menu and the consent pages.\""
+      }
+    ],
+    "email": {
+      "subject": "Dermatology site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for dermatology and skin clinics around {City}. {Business Name} has kind reviews, but patients can't book a skin check online, and the conditions you treat don't have their own pages for people searching a symptom.\n\nI built a sample first rather than ask for your time: skin check booking, separate medical and cosmetic paths, condition pages written as general information, a cosmetic menu with fee ranges and a consent and photo policy page, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you'd like it, I move it to a domain your clinic owns and finish it for {Build Range}, plus {Care Range} a month for hosting and edits. You approve every page, and nothing promises a result. If not, no problem, it comes down at the end of the month.\n\nWorth ten minutes on the phone this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"{Owner}, it's {Your Name}. I build websites for skin clinics in {City}, and I made a sample one for {Business Name} with skin check booking and condition pages. I'll email the link. Have a look after clinic. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm taking the {Business Name} dermatology demo down on Friday to free up the space.\n\nShould I keep it up for you? One word is fine either way.",
+    "nurture": "Hi {Owner}, summer is close and skin check requests usually rise around now. You came to mind.\n\nThe dermatology site is still here whenever you'd like it, same price as before. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Price condition pages one by one; each needs the dermatologist's review and a 'not a diagnosis' note.",
+      "Keep medical and cosmetic as two priced paths; the cosmetic side usually earns its own budget.",
+      "Never write outcomes, 'flawless' or 'ageless' language; the physician approves every clinical sentence.",
+      "Quote results galleries only with a signed consent process, and charge for setting that process up.",
+      "Charge for the approval pack separately where advertising needs a regulator's sign-off; it takes real rework.",
+      "Price a product reorder page by product count, not by page count."
+    ],
+    "lineItems": [
+      {
+        "item": "Skin condition page (each)",
+        "min": 300,
+        "max": 750,
+        "unit": "per-page",
+        "description": "Max when the page has a when-to-book-sooner section, an FAQ, consult booking and the dermatologist's edits from two rounds.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Skin check and consult booking paths",
+        "min": 700,
+        "max": 1800,
+        "unit": "one-time",
+        "description": "Max with separate medical, skin check and cosmetic calendars, referral upload and a cancellation list.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Cosmetic treatment menu with fee ranges",
+        "min": 400,
+        "max": 1000,
+        "unit": "one-time",
+        "description": "Max with a page per treatment, who performs it, downtime notes and package pricing.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Consented treatment results gallery",
+        "min": 500,
+        "max": 1200,
+        "unit": "one-time",
+        "description": "Max with filtering by treatment, a signed consent record per patient and a note that results vary between people.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Referral and waitlist page",
+        "min": 250,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max with a secure referral form for doctors and a cancellation list sign-up.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Skincare product reorder page",
+        "min": 600,
+        "max": 2000,
+        "unit": "one-time",
+        "description": "Max with many products, pickup or shipping options and reorder reminders.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Clinic and dermatologist portrait session",
+      "min": 500,
+      "max": 1300,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Patients choosing a dermatologist want to see the person and the treatment room, not a stock photo of perfect skin. One morning covers the team and the clinic.\"",
+      "when": "Month 2, or when a new physician or nurse joins."
+    },
+    {
+      "name": "Treatment photo consent forms and privacy page",
+      "min": 350,
+      "max": 800,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Cosmetic and medical skin photos need written consent and a public statement on storage and use. I draft both, the physician approves, and nothing goes online without a signed form.\"",
+      "when": "Before launch, or before any results appear on the site or social pages."
+    },
+    {
+      "name": "Accessibility audit for skin check booking",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Older patients book a lot of skin checks. I test the dermatology booking and condition pages for low vision, keyboard use and screen readers, then fix the failures.\"",
+      "when": "Month 2, once the condition pages are approved."
+    },
+    {
+      "name": "Advertising-approval-ready dermatology content pack",
+      "min": 600,
+      "max": 1400,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Cosmetic dermatology promotions often need a regulator's approval before they run. I prepare the treatment pages and offers as a clean pack, claim-free, with [physician name and registration] left for the clinic.\"",
+      "when": "Before launch, and before each cosmetic promotion where approval is required."
+    },
+    {
+      "name": "Google profile posts for the skin clinic",
+      "min": 150,
+      "max": 350,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A weekly post on the clinic's Google profile, like how to prepare for a skin check or what a peel appointment involves, approved by the dermatologist first.\"",
+      "when": "Day 30, once the site is live."
+    },
+    {
+      "name": "Monthly skin condition explainer",
+      "min": 300,
+      "max": 750,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Each month a new condition page or explainer, like eczema in winter or sun protection for kids, drafted from a short call and edited by the dermatologist.\"",
+      "when": "Month 3, once the first condition pages are live."
+    },
+    {
+      "name": "Post-visit feedback requests for dermatology patients",
+      "min": 99,
+      "max": 199,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Patients who agreed to be contacted get a short note after their visit asking about the experience, never mentioning a condition or treatment.\"",
+      "when": "Day 45, once wording and consent rules are approved."
+    },
+    {
+      "name": "Sun safety and skin check season campaign",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A skin check landing page, posts and a patient email before summer, so skin check appointments fill when people start thinking about sun exposure.\"",
+      "when": "Six weeks before summer."
+    },
+    {
+      "name": "Talks for schools and sports clubs on sun protection",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"When the dermatologist gives a sun protection talk to a school or outdoor club, I make the sign-up page, slides and a skin check booking link for afterward.\"",
+      "when": "Spring, or whenever the clinic is invited to speak."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Family doctors who refer skin patients",
+        "whoPays": "The family medicine practice",
+        "min": 2500,
+        "max": 4500,
+        "unit": "one-time",
+        "pitchLine": "\"The family doctors who refer patients to your dermatology clinic often have dated pages. A recommendation from a specialist they trust opens the conversation.\"",
+        "whyItWorks": "Family practices rely on specialist relationships and take vendor advice from them."
+      },
+      {
+        "route": "Aestheticians and independent skin studios",
+        "whoPays": "The skin studio owner",
+        "min": 1500,
+        "max": 3000,
+        "unit": "one-time",
+        "pitchLine": "\"Aestheticians who send clients to you for medical concerns need a booking site for facials and treatments. Your clinic's referral is the best introduction.\"",
+        "whyItWorks": "Studios depend on referral relationships with dermatologists and want to look as professional as the clinic."
+      },
+      {
+        "route": "Compounding and independent pharmacies",
+        "whoPays": "The pharmacy",
+        "min": 1800,
+        "max": 3000,
+        "unit": "one-time",
+        "pitchLine": "\"The pharmacy that fills your compounded creams needs a refill request and services page. A word from the prescribing dermatologist gets me through the door.\"",
+        "whyItWorks": "Independent pharmacies compete on service and trust the specialists who send them prescriptions."
+      },
+      {
+        "route": "Medical laser and device technicians",
+        "whoPays": "The device service company",
+        "min": 1200,
+        "max": 2800,
+        "unit": "one-time",
+        "pitchLine": "\"The technician who services your lasers works for every skin and aesthetic clinic in the region. A service request site would show that, and you can introduce me.\"",
+        "whyItWorks": "Small service businesses sell only to clinics and win work through clinic recommendations."
+      },
+      {
+        "route": "Plastic surgeons and Mohs surgery partners",
+        "whoPays": "The surgical practice",
+        "min": 3000,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"The surgeons you refer skin surgery cases to need clear consult and referral pages. A specialist-to-specialist introduction is how they pick vendors.\"",
+        "whyItWorks": "Surgical practices depend on dermatology referrals and listen to the dermatologists who send them."
+      },
+      {
+        "route": "Patients who run local businesses",
+        "whoPays": "Each patient's business, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"A skin clinic sees many local business owners every week. A small credit on the dermatology site and a card in the waiting area does the introducing.\"",
+        "whyItWorks": "Patients trust the clinic, and a visible credit on a site they just used is a quiet referral."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Referral letter drafting for family doctors",
+        "whoPays": "The family medicine practice, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"Family doctors dictate a short note and get a draft dermatology referral in the clinic's preferred format, which the doctor checks and signs.\"",
+        "whyItWorks": "Complete referrals get patients seen sooner, and both offices save follow-up calls."
+      },
+      {
+        "route": "Treatment plan follow-ups for aestheticians",
+        "whoPays": "The skin studio, monthly",
+        "min": 79,
+        "max": 199,
+        "unit": "monthly",
+        "pitchLine": "\"Once a skin treatment series at the studio ends, the aesthetician gets a drafted aftercare note and rebooking message to approve, in the studio's own voice.\"",
+        "whyItWorks": "Studios live on rebooking, and the dermatologist's introduction makes the first demo easy."
+      },
+      {
+        "route": "Refill request sorting for pharmacies",
+        "whoPays": "The pharmacy, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"Refill messages from skin patients are sorted and drafted into a queue for the pharmacist to check, with questions sent back to the prescriber when details are missing.\"",
+        "whyItWorks": "Pharmacies lose hours to messy refill requests, and specialists appreciate fewer calls."
+      },
+      {
+        "route": "Fault report triage for device technicians",
+        "whoPays": "The device service company, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"Skin and aesthetic clinics report a laser error through a short form, and the service company gets a drafted fault summary with probable causes, so the right part travels on the first visit.\"",
+        "whyItWorks": "Second trips for parts are expensive, and every clinic they serve wants devices back faster."
+      },
+      {
+        "route": "Consult note summaries for surgical partners",
+        "whoPays": "The surgical practice, monthly",
+        "min": 150,
+        "max": 350,
+        "unit": "monthly",
+        "pitchLine": "\"Referrals from dermatologists are turned into a short draft summary for the surgeon's coordinator to check, so the consult is booked with everything in hand.\"",
+        "whyItWorks": "Surgical coordinators handle many referrals, and faster booking keeps referring dermatologists happy."
+      },
+      {
+        "route": "Sun safety reminders for outdoor employers",
+        "whoPays": "A landscaping, construction or sports employer, per year",
+        "min": 500,
+        "max": 1500,
+        "unit": "per-year",
+        "pitchLine": "\"Outdoor employers who host the dermatologist's talk can send staff drafted seasonal sun safety reminders with a skin check booking link the clinic approves.\"",
+        "whyItWorks": "Employers want simple safety messages, and the clinic's talk is the introduction."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Missed-call text with skin check and consult links",
+      "kind": "automation",
+      "oneTimeMin": 0,
+      "oneTimeMax": 300,
+      "monthlyMin": 79,
+      "monthlyMax": 149,
+      "pitchLine": "\"A caller the dermatology front desk can't answer gets a text with links to book a skin check or a consult, and no health details in the message.\"",
+      "whenAndWhatItTakes": "Day 30. Needs their main number forwarded and approved wording."
+    },
+    {
+      "name": "Privacy-safe dermatology intake and secure hosting",
+      "kind": "software",
+      "oneTimeMin": 900,
+      "oneTimeMax": 2400,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"A skin clinic intake that patients complete at home: past skin conditions, current medications, allergies and the referral letter, stored on hosting configured for health records rather than sitting in an inbox.\"",
+      "whenAndWhatItTakes": "Month 1, with launch. Needs their paper forms, privacy notice and who reviews submissions."
+    },
+    {
+      "name": "Cancellation list that fills open slots",
+      "kind": "automation",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Dermatology waitlists are long, so a freed slot should never sit empty. Patients who joined the cancellation list are texted in order until one claims it.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the cancellation list with opt-in and the booking rules."
+    },
+    {
+      "name": "Pre-visit instructions by appointment type",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 40,
+      "monthlyMax": 120,
+      "pitchLine": "\"Before a skin check, a procedure or a cosmetic treatment, patients get the clinic's own preparation instructions for that visit type and a reschedule link.\"",
+      "whenAndWhatItTakes": "Month 2, with booking. Needs instructions per visit type."
+    },
+    {
+      "name": "Review replies that never mention skin or treatment",
+      "kind": "ai",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"A short, warm draft reply is ready for each skin clinic review; it never refers to a condition, a procedure or whether the writer is a patient.\"",
+      "whenAndWhatItTakes": "Month 2. Needs privacy rules and approved examples. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Medical or cosmetic visit router",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"A few plain questions steer each patient to a medical dermatology visit, a skin check or a cosmetic consult before they pick a time.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the clinic's visit types and routing rules."
+    },
+    {
+      "name": "Skincare reorder shop with reminders",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3500,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Patients reorder the clinic's skincare online for pickup or delivery, and get a reminder when a product they bought is likely running low.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the product list, prices and the payment account they already use."
+    },
+    {
+      "name": "Condition question assistant on the clinic site",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 3500,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"It answers 'do I need a referral', 'what happens at a skin check' and 'what does a peel cost' from the clinic's own dermatology pages, refuses to diagnose and offers a booking.\"",
+      "whenAndWhatItTakes": "Month 4. Needs approved pages and the dermatologist's sign-off on every answer. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Secure photo submission for existing patients",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"Existing patients send follow-up pictures of a treated area through a secure form, and the dermatologist reviews them and decides whether a visit is needed.\"",
+      "whenAndWhatItTakes": "Month 5. Needs secure storage, consent wording and the clinic's review rules."
+    },
+    {
+      "name": "Referral intake for doctors",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Referring doctors upload a skin referral and any pictures securely, and the clinic sees each one in a queue with its urgency marked by the doctor.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their referral criteria and who triages."
+    },
+    {
+      "name": "Referral letter summaries for the dermatologist",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"Long referral letters are condensed into a one-page draft summary with the concern, history and medications listed, for the dermatologist to check before the visit.\"",
+      "whenAndWhatItTakes": "Month 5. Needs sample referrals and secure storage. Comes with the AI maintenance retainer; it never contacts patients."
+    },
+    {
+      "name": "Cosmetic treatment rebooking reminders",
+      "kind": "automation",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 50,
+      "monthlyMax": 120,
+      "pitchLine": "\"Cosmetic patients who opt in get a reminder when their next skin treatment is usually due, with a booking link.\"",
+      "whenAndWhatItTakes": "Month 3. Needs opt-in and the clinic's usual intervals per treatment."
+    },
+    {
+      "name": "Clinic note drafts from dictation",
+      "kind": "ai",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 200,
+      "monthlyMax": 450,
+      "pitchLine": "\"After a dermatology visit the physician dictates briefly and gets a draft note and patient instruction sheet to edit before anything is saved or shared.\"",
+      "whenAndWhatItTakes": "Month 7. Needs their note format, dictation consent wording and secure storage. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Cosmetic packages and memberships",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Patients buy a series of peels or a skin care membership online, pay monthly, and the front desk sees remaining sessions at check-in.\"",
+      "whenAndWhatItTakes": "Month 4. Needs package rules, prices and the payment account."
+    },
+    {
+      "name": "Aftercare instruction drafts per procedure",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"The dermatologist picks a procedure and gets a plain aftercare sheet drafted from the clinic's own instructions, ready to edit, print or send.\"",
+      "whenAndWhatItTakes": "Month 6. Needs the clinic's existing aftercare notes; the physician edits every sheet. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Nurse and aesthetician applicant screener",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"Applicants for skin clinic nursing or aesthetician roles go through a short set of questions on licence, device experience and availability, and the clinic manager sees who fits.\"",
+      "whenAndWhatItTakes": "Whenever they post a role. Needs their must-haves. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Annual skin check recall",
+      "kind": "automation",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 50,
+      "monthlyMax": 120,
+      "pitchLine": "\"Patients the dermatologist wants back for a yearly skin check get a reminder with a booking link when it's due.\"",
+      "whenAndWhatItTakes": "Month 4. Needs a recall export and opt-in records."
+    },
+    {
+      "name": "Online deposit for cosmetic consults",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 40,
+      "monthlyMax": 120,
+      "pitchLine": "\"Cosmetic dermatology consults are held with a small deposit that comes off the treatment, so no-shows stop costing the clinic a slot.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the deposit amount, policy wording and payment account."
+    },
+    {
+      "name": "Second-language condition pages with staff review",
+      "kind": "ai",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"Skin condition and booking pages are drafted in the languages the clinic's patients speak, then checked by a fluent team member before they publish.\"",
+      "whenAndWhatItTakes": "Month 6, only where a fluent staff member reviews. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Bookings by condition and treatment dashboard",
+      "kind": "software",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 100,
+      "monthlyMax": 300,
+      "pitchLine": "\"See which condition and cosmetic pages bring bookings, how many skin checks the site fills and how the cancellation list performs.\"",
+      "whenAndWhatItTakes": "Month 9. Needs six months of booking data."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the skin check and condition page set",
+      "whoPays": "Independent dermatology clinics, monthly",
+      "min": 99,
+      "max": 299,
+      "unit": "monthly",
+      "pitchLine": "\"Independent dermatologists all need the same skin check booking and condition library. The set I built for one clinic loads another clinic's team and fees in days.\"",
+      "whyItWorks": "The structure and reviewed wording carry over; only the clinic's details change."
+    },
+    {
+      "route": "Dermatology society member template",
+      "whoPays": "The regional dermatology society or association",
+      "min": 3000,
+      "max": 9000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer member dermatologists a clinic template with consent pages, condition pages written as general information and an advertising-ready cosmetic section.\"",
+      "whyItWorks": "Associations want benefits that help members stay inside advertising rules."
+    },
+    {
+      "route": "Medical skincare distributor partner perk",
+      "whoPays": "A professional skincare distributor, per referred clinic",
+      "min": 500,
+      "max": 1500,
+      "unit": "one-time",
+      "pitchLine": "\"Your sales reps visit every skin clinic in the region. Offer them a reorder shop and clinic site at a partner rate, with your distributor named as the sponsor.\"",
+      "whyItWorks": "Distributors win when clinics sell more product, and a reorder shop does exactly that."
+    },
+    {
+      "route": "White-label for aesthetic practice consultants",
+      "whoPays": "The aesthetic practice consultant, per clinic",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "pitchLine": "\"You advise skin clinics on growing cosmetic revenue. A ready menu, packages and deposit flow under your brand gives them a quick visible change.\"",
+      "whyItWorks": "Consultants need deliverables, and the cosmetic funnel is one they can show in weeks."
+    },
+    {
+      "route": "New dermatology clinic launch kit",
+      "whoPays": "Dermatologists opening their own clinic",
+      "min": 3500,
+      "max": 7000,
+      "unit": "one-time",
+      "pitchLine": "\"A dermatologist leaving a hospital or group needs the clinic site, referral intake and booking ready before the first patient. The full set is built and can launch quickly.\"",
+      "whyItWorks": "New clinics buy everything at once and need referrals flowing from the start."
+    },
+    {
+      "route": "Laser and device makers' clinic locator pages",
+      "whoPays": "A device distributor, per clinic page",
+      "min": 300,
+      "max": 800,
+      "unit": "per-page",
+      "pitchLine": "\"Device distributors list clinics that offer their treatments. A consistent, claim-free clinic page for each one makes the locator useful and keeps the distributor inside advertising rules.\"",
+      "whyItWorks": "Distributors want compliant clinic pages and pay to standardise them across many customers."
+    },
+    {
+      "route": "Physician-led aesthetic clinic kit",
+      "whoPays": "Cosmetic dermatology clinics in other cities",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"The physician-led cosmetic menu, consent pages and deposit booking I built fit any cosmetic dermatology clinic, with their own fees and team.\"",
+      "whyItWorks": "Cosmetic clinics face the same rules and objections everywhere, and the approval-ready wording is already done once."
+    },
+    {
+      "route": "Template licence for healthcare marketing agencies",
+      "whoPays": "The agency, per skin clinic client",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "pitchLine": "\"License the condition library structure, consent pages and medical-or-cosmetic router so your agency stops rebuilding them for each dermatology client.\"",
+      "whyItWorks": "Agencies keep the relationship; you sell the compliant structure underneath."
+    },
+    {
+      "route": "Cancellation list service for specialist clinics",
+      "whoPays": "Specialist clinics with long waits, monthly",
+      "min": 49,
+      "max": 149,
+      "unit": "monthly",
+      "pitchLine": "\"The cancellation list that fills open dermatology slots works for any specialist clinic with a waitlist, from allergy to podiatry.\"",
+      "whyItWorks": "Long waits are common across specialties, and a small monthly tool is an easy yes."
+    },
+    {
+      "route": "Residency programme graduates opening clinics",
+      "whoPays": "New dermatologists, through the training programme",
+      "min": 2000,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"New dermatologists finishing training will open or join clinics soon. A graduate rate on a ready clinic site gives the programme something practical to offer each year.\"",
+      "whyItWorks": "Programmes want useful graduate support, and the cohort repeats every year."
+    },
+    {
+      "route": "One skin clinic per district",
+      "whoPays": "A dermatology clinic in another part of the city",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I take one dermatology clinic per district, so I'm never building for two skin clinics chasing the same patients. {Neighborhood} is open right now.\"",
+      "whyItWorks": "Clinics value exclusivity, and the template carries over."
+    },
+    {
+      "route": "Rebuilding clinic sites left by a group exit",
+      "whoPays": "A dermatologist leaving a group or hospital website",
+      "min": 2500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"When a dermatologist leaves a group, their profile page disappears with them. A clinic site that's theirs keeps patients and referrers able to find them.\"",
+      "whyItWorks": "These physicians need a site urgently and already have a patient base searching for them."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Dermatology site build plus care plan, one contract",
+      "min": 2500,
+      "max": 4500,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo and the dermatologist approves the scope.",
+      "line": "\"The skin clinic site and the care plan sit on one contract, so a new condition page or a change to referral rules is a message to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Google profile posts for the skin clinic",
+      "min": 150,
+      "max": 350,
+      "unit": "monthly",
+      "trigger": "The first skin check is booked online.",
+      "line": "\"Someone booked a skin check at night through the site. Weekly posts keep the next patient finding the clinic.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "Clinic and dermatologist portrait session",
+      "min": 500,
+      "max": 1300,
+      "unit": "per-shoot",
+      "trigger": "The team page still shows marked placeholders where photos go.",
+      "line": "\"Patients want to see the dermatologist before booking, and the team page is still waiting for real portraits.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Cancellation list that fills open slots",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "trigger": "The front desk mentions empty slots after late cancellations.",
+      "line": "\"Every late cancellation is a skin check someone on your waitlist would take. Let the cancellation list offer it automatically.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Monthly skin condition explainer",
+      "min": 300,
+      "max": 750,
+      "unit": "monthly",
+      "trigger": "The dermatologist says the same condition questions come up in every visit.",
+      "line": "\"The questions you answer in every visit should each be a dermatology page that brings the right patient in.\""
+    },
+    {
+      "rung": 6,
+      "day": 120,
+      "offer": "Skincare reorder shop with reminders",
+      "min": 1200,
+      "max": 3500,
+      "unit": "one-time",
+      "trigger": "Patients keep calling to reorder products, or retail sales dip between visits.",
+      "line": "\"Patients run out of the skincare you recommended and buy something else. A reorder page keeps them with the clinic.\""
+    },
+    {
+      "rung": 7,
+      "day": 180,
+      "offer": "Condition question assistant on the clinic site",
+      "min": 1500,
+      "max": 3500,
+      "unit": "one-time",
+      "trigger": "Phone time is mostly referral and preparation questions.",
+      "line": "\"Your front desk answers the same referral and skin check questions all day. Let the site answer them from your own pages.\""
+    },
+    {
+      "rung": 8,
+      "day": 365,
+      "offer": "Bookings by condition and treatment dashboard",
+      "min": 2000,
+      "max": 5000,
+      "unit": "one-time",
+      "trigger": "The first anniversary, when the dermatologist asks which pages really fill the clinic.",
+      "line": "\"A year in, let's see which condition and cosmetic pages bring bookings, and plan next year's dermatology pages around that.\""
+    }
+  ]
+}

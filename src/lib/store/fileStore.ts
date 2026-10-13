@@ -398,7 +398,7 @@ class FileStore implements Store {
   }
 
   // ---------- kits ----------
-  async createKit(input: { category: string; device: "desktop" | "mobile"; state: string; city: string; cityIsFree: boolean; direction: string; title?: string }): Promise<KitRecord> {
+  async createKit(input: { category: string; device: "desktop" | "mobile"; state: string; city: string; cityIsFree: boolean; direction: string; siteLang?: string; title?: string }): Promise<KitRecord> {
     return this.locked(async () => {
       const a = this.me();
       this.need("kits.save");
@@ -406,6 +406,7 @@ class FileStore implements Store {
       const kit: KitRecord = {
         id: randomUUID(), owner: a.username, title: (input.title?.trim() || `${input.category} · ${input.city}, ${input.state}`).slice(0, 160), status: "active",
         category: input.category, device: input.device, state: input.state, city: input.city, city_is_free: input.cityIsFree, direction: input.direction,
+        ...(input.siteLang ? { site_lang: input.siteLang } : {}),
         created_at: at, updated_at: at,
       };
       await this.put("kit", this.L.kit(a.username, kit.id), kit);

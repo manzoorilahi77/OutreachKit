@@ -1,0 +1,874 @@
+{
+  "schemaVersion": 1,
+  "category": "Independent pharmacies",
+  "slug": "independent-pharmacies",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · expansion batch (healthcare + mid-size)",
+    "generatedAt": "2026-10-13",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Leaned on service over price against chains: refills, vaccinations, compounding, packaging and delivery. No medicine advice or product names; vaccine lists and rules stay as pharmacist-supplied placeholders. Unsure on the buying-group and wholesaler route prices; kept them wide."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Prescription refill and transfer requests",
+      "contains": "How to request a refill through the pharmacy's secure route, how to move a prescription from another pharmacy, what details are needed, and how customers hear their order is ready",
+      "why": "Refills are why people come back every month. A clear, private request route is the main reason a customer switches from a chain to an independent."
+    },
+    {
+      "section": "Vaccination clinic",
+      "contains": "The vaccines the pharmacy offers as a [list], who can receive them in the pharmacist's wording, walk-in and booked times, what to bring and the short wait afterwards",
+      "why": "People search for a vaccination nearby and book whichever pharmacy shows a time. A page with real slots wins that search."
+    },
+    {
+      "section": "Compounding service",
+      "contains": "What compounding is in plain words, the preparation types the pharmacy makes as a [list], how prescribers send orders, the usual [turnaround], and pet medication compounding if offered",
+      "why": "Compounding is a reason to choose an independent pharmacy that a chain can't match. Prescribers and patients look for a page that explains it."
+    },
+    {
+      "section": "Medication packaging and pharmacist reviews",
+      "contains": "Weekly blister or pouch packs for people on several medicines, how carers set them up, medication review appointments with the pharmacist, and home delivery for packed medicines",
+      "why": "Adult children managing a parent's medicines choose the pharmacy that makes it simple. This page speaks to them directly."
+    },
+    {
+      "section": "Travel health appointments",
+      "contains": "What a travel health appointment covers, how far ahead to book, the pharmacist's checklist of what to bring, and the [fee], with vaccines and medicines listed only as the pharmacist supplies",
+      "why": "Travellers search weeks before a trip and book the pharmacy that explains the appointment. It's a paid service with a clear trigger."
+    },
+    {
+      "section": "Front-shop health products",
+      "contains": "Mobility aids, compression stocking fittings, mother and baby supplies, first aid and home health devices, by category with [price] and a reserve-for-pickup button",
+      "why": "Customers check a pharmacy has an item before driving over. Showing the front shop online turns a call into a reserved pickup."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C10",
+      "siteType": "local-conversion",
+      "name": "Refill Counter",
+      "heroLayout": "split-photo",
+      "mood": [
+        "efficient",
+        "clear",
+        "neighbourly"
+      ],
+      "bestFor": "Single-counter pharmacies that need refill requests, hours and a call button front and centre",
+      "pairsWithTier": "starter",
+      "headlineSample": "Your local pharmacy in {City}. Request a refill online.",
+      "whyItFits": "Steel Invoice's neutral blue and grotesque type read clean and clinical, and the split hero puts the pharmacist beside the refill request."
+    },
+    {
+      "id": "b",
+      "themeId": "C8",
+      "siteType": "catalog",
+      "name": "Neighbourhood Pharmacy Services",
+      "heroLayout": "card-stack",
+      "mood": [
+        "trusted",
+        "green",
+        "orderly"
+      ],
+      "bestFor": "Pharmacies with vaccinations, packaging, compounding and a front shop, each needing its own page and booking",
+      "pairsWithTier": "standard",
+      "headlineSample": "Refills, vaccinations and compounding in {City}",
+      "whyItFits": "The family's Private Vault reads like a bank to pharmacy customers. Evergreen Trust keeps the same classical type with a calm green that feels like a pharmacy, and its buttons pass contrast."
+    },
+    {
+      "id": "c",
+      "themeId": "C40",
+      "siteType": "premium-brand",
+      "name": "Compounding and Wellness Studio",
+      "heroLayout": "full-bleed-photo",
+      "mood": [
+        "crafted",
+        "quiet",
+        "expert"
+      ],
+      "bestFor": "Compounding-led pharmacies serving prescribers, vets and private clients who want a premium, considered presence",
+      "pairsWithTier": "premium",
+      "headlineSample": "Compounding pharmacy in {City}, prepared to prescription",
+      "whyItFits": "Driftwood's soft neutrals and refined serif feel like a craft lab, which suits a pharmacy selling made-to-order preparations to prescribers and private clients."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No Website button",
+      "line": "Your pharmacy's Maps listing has loyal reviews but no website, so someone in {City} looking to move their prescriptions to an independent can't see your services or how to transfer.",
+      "hook": "Open their Maps listing and confirm there is no Website button. Screenshot it for when they reply.",
+      "linkLine": "Here's what could sit behind that button for the pharmacy: {demo-link}"
+    },
+    {
+      "angle": "Facebook page as the website",
+      "line": "The website link on your listing goes to the pharmacy's Facebook page. Someone wanting a refill or a vaccination time needs a request button, not last month's posts.",
+      "hook": "Tap the link on their listing and confirm it lands on Facebook. Note the latest post.",
+      "linkLine": "The pharmacy's essentials on one page: {demo-link}"
+    },
+    {
+      "angle": "Refills by phone only",
+      "line": "The only way to request a refill at your pharmacy seems to be calling during opening hours. Regular customers would happily send it from their phone at night and pick it up next day.",
+      "hook": "Look for any online refill request on their site, listing or app link. If calling is the only route, the angle holds.",
+      "linkLine": "A private refill request route for the pharmacy: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "I opened your pharmacy site on my phone and the opening hours were in a footer I had to zoom into. People check pharmacy hours on their phone more than anything else.",
+      "hook": "Only if they have a site. Check the hours and the call button on your phone. Screenshot it for when they reply.",
+      "linkLine": "The pharmacy, rebuilt for a phone: {demo-link}"
+    },
+    {
+      "angle": "Vaccination season",
+      "line": "Cold and flu season is close, and people book a vaccination wherever they can see a time online. Your pharmacy offers them, and nothing lets someone book a slot.",
+      "hook": "Use this a few weeks before the local vaccination season. Check their posts for vaccination mentions first.",
+      "linkLine": "A vaccination booking page for the pharmacy: {demo-link}"
+    },
+    {
+      "angle": "Compounding not explained",
+      "line": "Your posts mention compounding, and there's no page saying what you prepare or how a prescriber sends an order. Doctors and vets look for exactly that before they refer.",
+      "hook": "Check their site and posts for compounding. If it's offered but not explained, the angle holds.",
+      "linkLine": "A compounding page for the pharmacy: {demo-link}"
+    },
+    {
+      "angle": "Reviews praise the pharmacist",
+      "line": "Your Google reviews keep saying the pharmacist knows people by name and takes time to explain. That's the whole reason to leave a chain, and it isn't on any page.",
+      "hook": "Read their reviews and copy one phrase about personal service. Quote it. Never repeat anything about someone's medicines.",
+      "linkLine": "Your reviews beside the refill request: {demo-link}"
+    },
+    {
+      "angle": "Up against the chain nearby",
+      "line": "There's a chain pharmacy a few streets from you with online refills and booking. Your service is better by the reviews, and online it looks like they're the only option.",
+      "hook": "Check for a chain pharmacy close by on Maps. Name the street, never the chain.",
+      "linkLine": "An independent pharmacy site that holds its own: {demo-link}"
+    },
+    {
+      "angle": "Late refill requests",
+      "line": "People realise they're on their last few tablets at night, after the pharmacy closes. Right now they can't send a refill request until they reach the counter.",
+      "hook": "Check whether their only refill route is by phone in opening hours. If so, the angle holds.",
+      "linkLine": "A refill request the pharmacy can pick up first thing: {demo-link}"
+    },
+    {
+      "angle": "Hiring a pharmacist",
+      "line": "Saw the pharmacy is hiring a pharmacist. Candidates compare independents partly on the services they'd run, like vaccinations or compounding, as shown online.",
+      "hook": "Only if they posted a hiring notice for a pharmacist, technician or counter assistant. Note the date.",
+      "linkLine": "A pharmacy page with a careers section: {demo-link}"
+    },
+    {
+      "angle": "Delivery area not shown",
+      "line": "Your posts mention home delivery for prescriptions, but nothing shows which areas or days. A son arranging medicines for his mum wants to know that before he moves them to you.",
+      "hook": "Look for delivery mentions in posts or reviews. Use the areas they name.",
+      "linkLine": "A prescription delivery page for the pharmacy: {demo-link}"
+    },
+    {
+      "angle": "Transferring a prescription",
+      "line": "Nothing on your page says how to move a prescription to you from another pharmacy. That's the one step that stops people switching to an independent.",
+      "hook": "Search their site for 'transfer'. If there's no explanation, the angle holds.",
+      "linkLine": "A prescription transfer page for the pharmacy: {demo-link}"
+    },
+    {
+      "angle": "Pharmacist registration not shown",
+      "line": "Your pharmacists clearly know their stuff, and nothing online names them or shows their registration. Customers trusting someone with their medicines like to see that.",
+      "hook": "Check for pharmacist names or registration on their site or listing. Never state a registration they haven't published.",
+      "linkLine": "Your pharmacists, introduced properly: {demo-link}"
+    },
+    {
+      "angle": "Medication packaging for families",
+      "line": "Your pharmacy does weekly medication packs, which is exactly what families caring for a parent search for. There's no page explaining it or how to set it up.",
+      "hook": "Look for posts or reviews about blister packs, pouches or carers. If it's not explained, the angle holds.",
+      "linkLine": "A medication packaging page for the pharmacy: {demo-link}"
+    },
+    {
+      "angle": "A specific recent post",
+      "line": "Your {specific recent job} post was the kind of practical pharmacy advice people keep. It deserves a page on your site, not a few days in the feed.",
+      "hook": "Pick their newest health tip, community event or new service post and name it exactly. Never a customer's medicines.",
+      "linkLine": "That pharmacy advice, on its own page: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, your post about {specific recent job} was practical pharmacy advice without the sales talk.\n\nI looked for a site for {Business Name} and only found the listing and social pages. I put together a sample pharmacy site with private refill and transfer requests, vaccination booking, compounding and medication packaging pages, with marked placeholders where your photos would go.\n\nWould you like me to send it over?",
+    "dm2": "{Owner}, following up in case my note got lost behind the counter. Here's the sample pharmacy site for {Business Name}: {demo-link}\n\nCustomers can request a refill or a transfer privately, book a vaccination, and see your compounding and packaging services. If it's not for you, say so and I won't message again.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for independent pharmacies here in {City}. I sent a message a couple of days ago, did it reach you?\"\n\nIF NO:\n\"No problem, you're at the counter all day. Short version: I built a sample site for {Business Name} with refill and transfer requests, vaccination booking and your compounding and packaging services, with marked placeholders where your photos would go. Can I email the link?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"The build runs {Build Range}, then {Care Range} a month for hosting and updates. For a pharmacy like yours I'd normally quote about {Build Price}, roughly what a handful of regular refill customers bring in over a year.\"\n\"The point is to win on service where the chains win on convenience: same easy refill, plus a pharmacist who knows them.\"\n\"Could I take fifteen minutes after closing this week?\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. We start the day it clears, and your pharmacist approves every page before it goes live.\"",
+    "objections": [
+      {
+        "objection": "Our pharmacy system already gives customers an app.",
+        "handler": "\"Keep it for existing customers. The app doesn't help someone who hasn't found you yet. The site explains your services and points refills to the same system.\""
+      },
+      {
+        "objection": "Our customers just walk in or phone.",
+        "handler": "\"Your regulars do. New customers moving from a chain, and families managing a parent's medicines, look you up first. The site is what makes them switch.\""
+      },
+      {
+        "objection": "We can't compete with the chains online.",
+        "handler": "\"You don't need to match their app. You need to show the service they can't: compounding, packaging, a pharmacist who knows your name, and an easy transfer.\""
+      },
+      {
+        "objection": "There are strict rules on what a pharmacy can advertise.",
+        "handler": "\"Right, and the site stays inside them. No medicine names or promises, vaccine details only in your wording, and pages ready for approval where the regulator asks for it.\""
+      },
+      {
+        "objection": "We're too busy at the counter to deal with a website.",
+        "handler": "\"That's why online refills help: requests arrive in one queue instead of the phone ringing during a rush. I write the pages; you just approve them.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For your pharmacy about {Build Price}, because of the refill, vaccination and compounding pages. A few customers moving their prescriptions to you covers it.\""
+      }
+    ],
+    "email": {
+      "subject": "A pharmacy site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for independent pharmacies around {City}. {Business Name} has loyal reviews, but no site where a new customer can request a refill, move a prescription to you or book a vaccination.\n\nI built a sample first rather than ask for your time: private refill and transfer requests, a vaccination clinic page with placeholders for your list, compounding, medication packaging, travel health and a front-shop catalogue with reserve-for-pickup. It uses marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you want it, I move it to a domain you own and finish it for {Build Range}, plus {Care Range} a month for hosting and updates. If not, no problem, it comes down at the end of the month.\n\nWorth fifteen minutes after closing?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build websites for independent pharmacies in {City}, and I've made a sample for {Business Name} with online refill requests and vaccination booking. I'll email the link for after closing. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, a quick heads-up: the {Business Name} pharmacy demo comes down this Friday.\n\nReply if you'd like it kept up a bit longer.",
+    "nurture": "Hi {Owner}, vaccination season is a few weeks off, and people book wherever they can see a time online. Independent pharmacies with a booking page and online refills keep more of those customers coming back.\n\nThe sample's still up and the price is unchanged. {demo-link} if you'd like another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to a handful of regular refill customers over a year, not to a single basket at the till.",
+      "Price the refill and transfer route as core work; it's the reason a customer switches pharmacies.",
+      "Quote service pages (vaccinations, compounding, packaging, travel health) one by one, only for services they run.",
+      "Never list medicine names or vaccine details without the pharmacist's written wording; leave placeholders.",
+      "Price the front-shop catalogue by product count, not page count.",
+      "Keep monthly add-ons below the margin on one regular customer's monthly prescriptions."
+    ],
+    "lineItems": [
+      {
+        "item": "Pharmacy service page (each)",
+        "min": 200,
+        "max": 500,
+        "unit": "per-page",
+        "description": "Max when written from a pharmacist interview, with who it's for, what happens, the fee and a booking or request link.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Vaccination booking with time slots",
+        "min": 400,
+        "max": 1000,
+        "unit": "one-time",
+        "description": "Max with several vaccine types, walk-in and booked times, eligibility wording from the pharmacist and reminders.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Compounding page with prescriber order route",
+        "min": 300,
+        "max": 800,
+        "unit": "one-time",
+        "description": "Max with a secure order route for prescribers, a vet section and turnaround times supplied by the pharmacy.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Front-shop catalogue with reserve for pickup",
+        "min": 500,
+        "max": 1500,
+        "unit": "one-time",
+        "description": "Max with many products across categories, prices, stock notes and a reserve button that reaches the counter.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Delivery area map and schedule",
+        "min": 250,
+        "max": 600,
+        "unit": "one-time",
+        "description": "Max with areas by day, cold-chain and signature notes, and a delivery request linked to refills.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Care home and carer packaging page",
+        "min": 250,
+        "max": 600,
+        "unit": "per-page",
+        "description": "Max with a separate enquiry route for care homes, a carer set-up checklist and delivery details.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Second-language pharmacy pages",
+        "min": 400,
+        "max": 1000,
+        "unit": "one-time",
+        "description": "Max when refill, transfer, vaccination and service pages are translated and checked by a bilingual pharmacist.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Pharmacy counter and team photo session",
+      "min": 300,
+      "max": 800,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"One morning photographing the pharmacists, the dispensary, the consultation room and the shopfront, with staff as models. Customers appear only with written consent.\"",
+      "when": "Month 2, before the service pages fill with placeholders."
+    },
+    {
+      "name": "Pharmacy Google profile and holiday hours upkeep",
+      "min": 150,
+      "max": 300,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Holiday opening hours, vaccination days and new services kept current on the pharmacy's Google profile, so nobody drives to a closed pharmacy.\"",
+      "when": "Day 30, and before every public holiday."
+    },
+    {
+      "name": "Review requests after a pharmacy service",
+      "min": 79,
+      "max": 179,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"After a vaccination, a medication review or a first delivery, the customer gets a polite note asking about the pharmacy's service, never about their medicines or health.\"",
+      "when": "Day 30. Wording approved by the pharmacist first."
+    },
+    {
+      "name": "Consent and customer photo policy page set",
+      "min": 300,
+      "max": 700,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A privacy notice for refill and transfer requests, a written consent form for any customer photo or quote, and a page on how the pharmacy handles prescription details online.\"",
+      "when": "At build, before refill requests go live."
+    },
+    {
+      "name": "Accessibility review for older and low-vision customers",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A pass on the pharmacy site for large text, contrast, screen readers and a refill request that works with a keyboard or voice, for customers who struggle with small print.\"",
+      "when": "At launch, then once a year."
+    },
+    {
+      "name": "Advertising-approval-ready pharmacy content pack",
+      "min": 500,
+      "max": 1200,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Before the vaccination or travel health season promotion runs, I gather the pharmacy's wording, the pharmacist's approval and a claims list into one file for the regulator, where approval is needed.\"",
+      "when": "Before launch, and before any paid campaign or seasonal promotion."
+    },
+    {
+      "name": "Seasonal vaccination campaign",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Window posters, social posts and a booking page push for the pharmacy's vaccination season, all pointing to the online time slots.\"",
+      "when": "Six weeks before the local vaccination season."
+    },
+    {
+      "name": "Prescriber information sheet for local clinics",
+      "min": 250,
+      "max": 600,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A one-page sheet for doctors', dentists' and vets' offices listing the pharmacy's compounding, packaging and delivery services and how to send orders.\"",
+      "when": "Month 3, once the compounding page is live."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Family doctor clinics that send prescriptions",
+        "whoPays": "The medical clinic",
+        "min": 3000,
+        "max": 7000,
+        "unit": "one-time",
+        "pitchLine": "\"The doctors' clinic whose prescriptions you fill every day has a site with no online appointment requests. You could introduce me as the pharmacy's web builder.\"",
+        "whyItWorks": "Pharmacists and local prescribers talk daily. A warm word from the pharmacy owner opens the door."
+      },
+      {
+        "route": "Care homes on medication packaging",
+        "whoPays": "The care home",
+        "min": 3000,
+        "max": 8000,
+        "unit": "one-time",
+        "pitchLine": "\"The care home that gets its residents' medication packs from your pharmacy has a site families find hard to use. A clearer one with tour booking would help them.\"",
+        "whyItWorks": "Care home managers rely on the pharmacy every week and trust its recommendations."
+      },
+      {
+        "route": "Veterinary clinics ordering compounded medicines",
+        "whoPays": "The vet clinic, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The vet clinic that sends you compounding orders for pets books appointments by phone only. An online booking site for them is one introduction away.\"",
+        "whyItWorks": "Vets who use a compounding pharmacy value its judgement on suppliers."
+      },
+      {
+        "route": "Mobility and home health equipment shops",
+        "whoPays": "The equipment shop",
+        "min": 2000,
+        "max": 5000,
+        "unit": "one-time",
+        "pitchLine": "\"The mobility shop your pharmacy sends people to for walkers and bath seats has no online catalogue. A product site with fitting appointments would sell more.\"",
+        "whyItWorks": "Equipment shops depend on pharmacy referrals, and the owner's introduction carries weight."
+      },
+      {
+        "route": "Travel agents booking long-haul trips",
+        "whoPays": "The travel agency, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The travel agent whose customers come to your pharmacy for travel health appointments has a dated site. A trip enquiry site naming you for pre-travel advice helps both.\"",
+        "whyItWorks": "Agents like a trusted name to send travellers to, and the pharmacist is one."
+      },
+      {
+        "route": "Home care agencies whose clients use the pharmacy",
+        "whoPays": "The home care agency, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The home care agency whose clients get prescriptions delivered from your pharmacy recruits from a bare page. A services and careers site would help them hire.\"",
+        "whyItWorks": "Home care agencies and pharmacies coordinate on shared clients every week."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Appointment request assistant for the doctors' clinic",
+        "whoPays": "The medical clinic, monthly",
+        "min": 200,
+        "max": 500,
+        "unit": "monthly",
+        "pitchLine": "\"Patients asking the doctors' clinic about opening times, booking and which pharmacy offers packaging or delivery get approved answers; clinical questions go to reception.\"",
+        "whyItWorks": "Clinic receptionists lose hours to the same questions. Logistics-only answers carry no clinical risk."
+      },
+      {
+        "route": "Family update drafts for the care home",
+        "whoPays": "The care home, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"Care home staff note the week's activities and visits and get a family newsletter draft to check, including when the pharmacy's medication review visits happen.\"",
+        "whyItWorks": "Care home staff want families informed but have no time to write."
+      },
+      {
+        "route": "Vaccination reminder drafts for the vet clinic",
+        "whoPays": "The vet clinic, monthly",
+        "min": 79,
+        "max": 199,
+        "unit": "monthly",
+        "pitchLine": "\"Pet owners due a booster at the vet clinic get a reminder drafted in the clinic's voice for staff to send, with the compounding pharmacy named for special medicines.\"",
+        "whyItWorks": "Vet reminder lists are long and staff fall behind on them."
+      },
+      {
+        "route": "Product finder for the mobility shop",
+        "whoPays": "The equipment shop, monthly",
+        "min": 79,
+        "max": 199,
+        "unit": "monthly",
+        "pitchLine": "\"Customers describe what they need help with at home, like getting out of a chair, and see suitable products from the shop's own catalogue, with the pharmacy suggested for medicine questions.\"",
+        "whyItWorks": "Shoppers don't know product names and leave without asking."
+      },
+      {
+        "route": "Trip prep checklist for the travel agency",
+        "whoPays": "The travel agency",
+        "min": 600,
+        "max": 1500,
+        "unit": "one-time",
+        "pitchLine": "\"Travellers get a personalised pre-trip checklist from the agency, with documents, insurance and a reminder to book a travel health appointment at the pharmacy.\"",
+        "whyItWorks": "Agents want to look thorough, and a checklist saves them repeat calls."
+      },
+      {
+        "route": "Shift notes summary for the home care agency",
+        "whoPays": "The home care agency, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Caregivers' end-of-visit notes are tidied into a daily summary for the agency coordinator, flagging when a client mentions a pharmacy delivery or packaging change to confirm.\"",
+        "whyItWorks": "Coordinators read dozens of notes a day and miss the ones that matter."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Privacy-safe refill request and hosting setup",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Refill and transfer requests reach the pharmacy through an encrypted form that collects only what the pharmacist needs, on hosting set up for the privacy rules where it operates.\"",
+      "whenAndWhatItTakes": "At build. Needs the pharmacist's list of required fields, who receives requests and the pharmacy's privacy wording."
+    },
+    {
+      "name": "Prescription ready for pickup texts",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Customers get a text when their pharmacy order is ready to collect, with no medicine names in the message, so the counter stops fielding 'is it ready' calls.\"",
+      "whenAndWhatItTakes": "Day 30. Needs a status export from their pharmacy system and text consent."
+    },
+    {
+      "name": "Vaccination slot calendar",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Customers pick a vaccination time at the pharmacy online, see what to bring, and the pharmacist sees the day's list before opening.\"",
+      "whenAndWhatItTakes": "Month 2, before vaccination season. Needs vaccine types, slot lengths and the pharmacist's eligibility wording."
+    },
+    {
+      "name": "Prescription transfer request form",
+      "kind": "software",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Someone moving to the pharmacy fills in their old pharmacy's details once, securely, and staff handle the transfer without a long phone call.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the transfer steps where the pharmacy operates and the secure form route."
+    },
+    {
+      "name": "Front-shop reserve and collect",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Customers reserve mobility aids, baby supplies or first aid kits from the pharmacy's front shop online and pay when they collect.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the product list, prices and who confirms reservations."
+    },
+    {
+      "name": "Pharmacy counter phone cover",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 199,
+      "monthlyMax": 449,
+      "pitchLine": "\"When the counter is busy, callers asking about opening hours, delivery days or vaccination times get the pharmacy's approved answers; any medicine question goes straight to the pharmacist.\"",
+      "whenAndWhatItTakes": "Month 3, once they trust you. Needs approved answers and the vaccination calendar. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Pharmacy review responses kept clear of health details",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"A customer praises the pharmacist online and a short reply is drafted for the owner to approve, mentioning the team and never the customer's prescriptions.\"",
+      "whenAndWhatItTakes": "Month 2, alongside service review requests. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Refill due reminders",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 39,
+      "monthlyMax": 99,
+      "pitchLine": "\"Customers on regular prescriptions who opt in get a nudge from the pharmacy when a refill is coming due, with a link to request it.\"",
+      "whenAndWhatItTakes": "Month 3. Needs refill dates from their pharmacy system and explicit opt-in. No medicine names in messages."
+    },
+    {
+      "name": "Delivery round planner",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Prescription deliveries are grouped by area and day, the driver gets the round in order, and signed-for and fridge items are flagged.\"",
+      "whenAndWhatItTakes": "Month 4, for pharmacies that deliver. Needs the areas, delivery days and the driver's phone."
+    },
+    {
+      "name": "Compounding order intake for prescribers",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 49,
+      "monthlyMax": 129,
+      "pitchLine": "\"Doctors and vets send compounding orders through a secure form, and the pharmacy tracks each one from received to prepared to collected.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the order fields the pharmacist requires and a secure route. Tracks status only."
+    },
+    {
+      "name": "Front-shop stock question assistant",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Customers ask whether the pharmacy has compression stockings or a blood pressure monitor in stock and get answers from the shop catalogue; anything about medicines goes to the pharmacist.\"",
+      "whenAndWhatItTakes": "Month 5, once the front-shop catalogue is live. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Medication pack change log",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 49,
+      "monthlyMax": 149,
+      "pitchLine": "\"Every change to a customer's weekly medication pack is logged with who asked and when, inside the pharmacy's secure system, so no pack goes out with last month's contents.\"",
+      "whenAndWhatItTakes": "Month 5, for pharmacies doing packaging. Needs their current change process and secure hosting."
+    },
+    {
+      "name": "Seasonal vaccination recall",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 29,
+      "monthlyMax": 79,
+      "pitchLine": "\"Customers vaccinated at the pharmacy last season who opted in get a note when the new season's slots open, with a link straight to the calendar.\"",
+      "whenAndWhatItTakes": "Month 2, before the season. Needs last season's list with consent and the vaccination calendar."
+    },
+    {
+      "name": "Pharmacist tip posts from voice notes",
+      "kind": "ai",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"The pharmacist records a short voice note about sun safety or storing medicines, and a post in the pharmacy's voice comes back with any claim or product name flagged.\"",
+      "whenAndWhatItTakes": "Month 3. Needs past posts and the pharmacy's do-not-say list. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Counter messages in customers' languages",
+      "kind": "ai",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1200,
+      "monthlyMin": 59,
+      "monthlyMax": 149,
+      "pitchLine": "\"Pickup, delivery and vaccination messages are drafted in the customer's preferred language for a bilingual pharmacy team member to check before sending.\"",
+      "whenAndWhatItTakes": "Month 5, for pharmacies with multilingual customers. Needs translated templates checked by staff. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Prescriber query drafts",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"When a prescription needs clarifying, the pharmacist's shorthand becomes a polite query to the prescriber, edited and sent only from the pharmacy's secure system.\"",
+      "whenAndWhatItTakes": "Month 6, only inside their secure system. Needs examples of their usual queries. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Medication review booking",
+      "kind": "software",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"Customers or their carers book a sit-down medication review with the pharmacist online, with a note on what to bring.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the pharmacist's review slots and consultation room schedule."
+    },
+    {
+      "name": "Owed item arrival texts",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 500,
+      "monthlyMin": 19,
+      "monthlyMax": 49,
+      "pitchLine": "\"When an item the pharmacy owed a customer arrives from the wholesaler, they get a text to collect it, instead of staff ringing round.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the owed-items list and text consent."
+    },
+    {
+      "name": "Counter staff policy assistant",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"New counter assistants look up the pharmacy's own procedures for returns, delivery problems and owed items, instead of interrupting the pharmacist mid-dispensing.\"",
+      "whenAndWhatItTakes": "Month 6. Needs written procedures with every answer approved. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Front-shop reorder and expiry forecast",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"The pharmacy's front-shop sales are turned into a weekly reorder suggestion and a list of items nearing expiry, for the owner to approve.\"",
+      "whenAndWhatItTakes": "Month 7, once a few months of sales data is in. Needs till exports. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Monthly site package for independent pharmacies",
+      "whoPays": "Each pharmacy, monthly",
+      "min": 79,
+      "max": 249,
+      "unit": "monthly",
+      "pitchLine": "\"Refill requests, transfers, vaccination booking and compounding pages work the same way for every independent pharmacy. I sell the set as a monthly site.\"",
+      "whyItWorks": "Independent pharmacy owners want to match the chains online without a project to manage."
+    },
+    {
+      "route": "Pharmacy owners' associations",
+      "whoPays": "The association",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Your independent pharmacy members need sites that meet advertising and privacy rules. A member template with placeholders for each pharmacy's services does that.\"",
+      "whyItWorks": "Associations fight for independents against chains and want visible member benefits."
+    },
+    {
+      "route": "Independent pharmacy buying groups",
+      "whoPays": "The buying group, annually",
+      "min": 3000,
+      "max": 10000,
+      "unit": "per-year",
+      "pitchLine": "\"Your members buy together to compete with chains on price. A shared pharmacy site template lets them compete online too, licensed as a member benefit.\"",
+      "whyItWorks": "Buying groups keep members by adding services, and a site template is an easy one."
+    },
+    {
+      "route": "Wholesalers' independent pharmacy programmes",
+      "whoPays": "The wholesaler, per pharmacy",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "pitchLine": "\"Your independent pharmacy accounts are losing customers to chain apps. Fund my refill-and-vaccination site for each account and they stay loyal to you.\"",
+      "whyItWorks": "Wholesalers want independents to survive, because independents are their customers."
+    },
+    {
+      "route": "Compounding pharmacy networks",
+      "whoPays": "The network, per member",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "pitchLine": "\"Each pharmacy in your compounding network needs a page prescribers can trust and send orders to. I build one compounding template and set it up for every member.\"",
+      "whyItWorks": "Networks want consistent quality signals across members for prescribers."
+    },
+    {
+      "route": "Pharmacy banner and franchise groups",
+      "whoPays": "The banner group, per store",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Each pharmacy under your banner needs its own hours, services and vaccination booking under one brand. I build one approved template and roll it out store by store.\"",
+      "whyItWorks": "Banner groups need local pages that stay on brand."
+    },
+    {
+      "route": "Healthcare agencies licensing a pharmacy template",
+      "whoPays": "The agency, per site",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency turns down pharmacy clients because of privacy and advertising rules. License my independent pharmacy template with those built in.\"",
+      "whyItWorks": "Agencies pay to skip the hard part of a regulated niche."
+    },
+    {
+      "route": "Pharmacy system resellers",
+      "whoPays": "The reseller, per install",
+      "min": 500,
+      "max": 1500,
+      "unit": "one-time",
+      "pitchLine": "\"Your pharmacy customers ask for a website when they install your system. Bundle my pharmacy template, already set up to send refills into it.\"",
+      "whyItWorks": "Resellers want to say yes to every request without building sites themselves."
+    },
+    {
+      "route": "Owners consolidating pharmacies",
+      "whoPays": "The consolidating group",
+      "min": 5000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"The pharmacies you've bought each kept a different site and refill route. One template keeps every store's local name and hours while refills reach one system.\"",
+      "whyItWorks": "Consolidators need one refill route quickly and pay for it in batches."
+    },
+    {
+      "route": "Pharmacy business advisers",
+      "whoPays": "The advisory firm, annually",
+      "min": 3000,
+      "max": 10000,
+      "unit": "per-year",
+      "pitchLine": "\"Every pharmacy owner you advise is told to add services like vaccinations and packaging. My template gives them the pages to sell those services, as part of your programme.\"",
+      "whyItWorks": "Advisers want something concrete to hand every client."
+    },
+    {
+      "route": "Pharmacies in another region",
+      "whoPays": "New pharmacy clients in a new metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"An independent pharmacy in another city doesn't share my client's customers, so it gets the same refill, transfer, vaccination and compounding pages.\"",
+      "whyItWorks": "Privacy-safe refill routes and approved wording take time to build. Reusing them is margin."
+    },
+    {
+      "route": "Long-term care pharmacy services",
+      "whoPays": "The long-term care pharmacy",
+      "min": 3000,
+      "max": 8000,
+      "unit": "one-time",
+      "pitchLine": "\"Your pharmacy serves care homes, not walk-ins. A site for care home managers with packaging, delivery rounds and onboarding steps wins new homes.\"",
+      "whyItWorks": "Care home contracts are large, and managers compare long-term care pharmacies online before calling."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Pharmacy site build plus care plan, one contract",
+      "min": 1800,
+      "max": 3000,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo.",
+      "line": "\"The pharmacy site and the care plan go on one contract, so new hours or a new service is a text to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 14,
+      "offer": "Vaccination slot calendar",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "trigger": "Vaccination season is within six weeks, or they mention a queue of walk-ins.",
+      "line": "\"Let's put the pharmacy's vaccination times online before the season starts.\""
+    },
+    {
+      "rung": 3,
+      "day": 30,
+      "offer": "Ready-for-pickup texts and service review requests",
+      "min": 79,
+      "max": 179,
+      "unit": "monthly",
+      "trigger": "They mention the phone ringing with 'is my prescription ready' calls.",
+      "line": "\"Those 'is it ready' calls stop once the pharmacy texts customers when their order is ready.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Pharmacy counter and team photo session",
+      "min": 300,
+      "max": 800,
+      "unit": "per-shoot",
+      "trigger": "Pharmacist bios and the shopfront still show placeholders.",
+      "line": "\"One morning at the pharmacy gives every pharmacist and the shopfront a real photo.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Front-shop reserve and collect",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "trigger": "Customers keep calling to ask whether a front-shop product is in stock.",
+      "line": "\"Those stock calls can become pharmacy reservations customers make themselves.\""
+    },
+    {
+      "rung": 6,
+      "day": 120,
+      "offer": "Delivery round planner",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "trigger": "They mention the driver's round being planned on paper each morning.",
+      "line": "\"The prescription delivery round can be planned in minutes, with fridge items flagged.\""
+    },
+    {
+      "rung": 7,
+      "day": 180,
+      "offer": "Pharmacy counter phone cover",
+      "min": 1000,
+      "max": 2500,
+      "unit": "one-time",
+      "trigger": "They mention calls going unanswered during the lunchtime rush.",
+      "line": "\"Callers asking pharmacy hours and delivery days get answered while you're dispensing.\""
+    },
+    {
+      "rung": 8,
+      "day": 270,
+      "offer": "Introduction to the doctors' clinic",
+      "min": 3000,
+      "max": 7000,
+      "unit": "one-time",
+      "trigger": "A local prescriber's office mentions the pharmacy site or asks who built it.",
+      "line": "\"The doctors' clinic whose prescriptions you fill asked about the pharmacy site. Would you introduce me?\""
+    }
+  ]
+}

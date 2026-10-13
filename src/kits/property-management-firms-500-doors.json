@@ -1,0 +1,864 @@
+{
+  "schemaVersion": 1,
+  "category": "Property management firms (500+ doors)",
+  "slug": "property-management-firms-500-doors",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · expansion batch (healthcare + mid-size)",
+    "generatedAt": "2026-10-13",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Written for the principal, COO or business development lead of a multi-office manager. Leaned on the three audiences (owners, residents, vendors), portals and portfolio reporting. Unsure on the portfolio dashboard and board portal ranges; both depend on what the firm's management system exports."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Management by property type",
+      "contains": "Separate pages for single-family portfolios, apartment buildings, condo and HOA associations, mixed-use and build-to-rent, each with what management includes, reporting cadence and a proposal request",
+      "why": "An apartment building owner and a condo board hire for different reasons. A page that speaks to their property type gets the proposal request instead of a generic contact form."
+    },
+    {
+      "section": "Owner reporting and portal tour",
+      "contains": "A redacted sample monthly owner statement, year-end package, budget versus actual report, a short portal walkthrough and how reserves and owner draws are handled",
+      "why": "Investors with larger portfolios judge a manager by its reports. Showing a real sample answers the question they would otherwise ask in the second meeting."
+    },
+    {
+      "section": "Resident hub by building",
+      "contains": "Pay rent, submit a maintenance request, renters' insurance requirements, move-in and move-out steps, amenity booking, and notices for each building such as water shut-offs or elevator work",
+      "why": "Residents search for the building name, not the firm. A hub by building cuts calls to the office and shows owners the residents are looked after."
+    },
+    {
+      "section": "Vendor onboarding and compliance",
+      "contains": "Vendor application by trade and service area, insurance certificate and licence upload, payment terms, work order expectations and after-hours rules",
+      "why": "A firm with hundreds of units needs a deep bench of vetted vendors. A clear onboarding page brings in good trades and keeps expired insurance off the list."
+    },
+    {
+      "section": "Office and market pages",
+      "contains": "Each office or market the firm covers with its local team, the neighbourhoods and buildings managed with owner permission, leasing notes and a direct line",
+      "why": "Owners want a manager with people nearby. A page per market shows depth in each area and ranks for that city's property management searches."
+    },
+    {
+      "section": "Selling your management portfolio",
+      "contains": "For smaller managers thinking of retiring or selling their doors: how a portfolio transition works, how owners and residents are told, staff retention and a confidential enquiry",
+      "why": "Buying smaller portfolios is how mid-size firms grow. A discreet page lets a retiring manager start that conversation without a broker."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C1",
+      "siteType": "local-conversion",
+      "name": "Proposal Request",
+      "heroLayout": "split-photo",
+      "mood": [
+        "capable",
+        "organised",
+        "direct"
+      ],
+      "bestFor": "Firms in one metro that need owner proposal requests, a rentals feed and resident links working cleanly on a phone",
+      "pairsWithTier": "starter",
+      "headlineSample": "Property management for {City} owners and boards",
+      "whyItFits": "Banker's Indigo and a neutral grotesque look like a firm that keeps clean books. The split hero puts the owner proposal request beside resident and vendor links."
+    },
+    {
+      "id": "b",
+      "themeId": "C2",
+      "siteType": "b2b-capability",
+      "name": "Portfolio Partner",
+      "heroLayout": "card-stack",
+      "mood": [
+        "steady",
+        "assured",
+        "accountable"
+      ],
+      "bestFor": "Multi-office firms selling to investors and associations, with property-type pages, sample reports and portals for each audience",
+      "pairsWithTier": "standard",
+      "headlineSample": "Managing apartments, condos and rentals across {City}",
+      "whyItFits": "The family's Private Vault combo. A warm cream ground and a refined serif feel like a firm trusted with other people's assets, and the card stack routes owners, boards, residents and vendors."
+    },
+    {
+      "id": "c",
+      "themeId": "C8",
+      "siteType": "editorial-trust",
+      "name": "Stewardship Report",
+      "heroLayout": "type-led",
+      "mood": [
+        "established",
+        "transparent",
+        "considered"
+      ],
+      "bestFor": "Larger firms courting institutional owners and acquisitions, publishing market reports and owner guides",
+      "pairsWithTier": "premium",
+      "headlineSample": "The {City} rental market, managed with care",
+      "whyItFits": "Evergreen Trust's deep green and old-style serif read like a pension fund's annual report. It suits a firm that wins owners with written market insight."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "One page for several markets",
+      "line": "You manage doors in several cities, but the property management site has one contact page and one phone line. An owner in your newest market can't tell if you have people nearby.",
+      "hook": "Check their listings or posts for addresses in more than one city. Note which markets have no page.",
+      "linkLine": "A page for each market your property management firm covers: {demo-link}"
+    },
+    {
+      "angle": "Vacancies out of date",
+      "line": "The available rentals page on your site still shows apartments your listings elsewhere mark as leased. Applicants who call about a unit that's gone don't call twice.",
+      "hook": "Compare two or three units on their site with their public listings. Note any that disagree.",
+      "linkLine": "A rentals page fed live from your management system: {demo-link}"
+    },
+    {
+      "angle": "Pay rent is hard to find",
+      "line": "On my phone I couldn't find where a resident pays rent on your site without scrolling past the owner pitch. Your residents look for that button every month.",
+      "hook": "Load the homepage on a phone and time how long it takes to find Pay Rent or the resident login.",
+      "linkLine": "A resident hub where rent and repairs come first: {demo-link}"
+    },
+    {
+      "angle": "No page per property type",
+      "line": "Your property management site talks about rentals in general. A condo board and the owner of an apartment building each want to see how you manage a property like theirs.",
+      "hook": "Look for any mention of HOA, condo, apartment buildings or commercial work. Note what's missing a page.",
+      "linkLine": "Pages for each property type you manage: {demo-link}"
+    },
+    {
+      "angle": "No sample owner report",
+      "line": "Nothing on your site shows what an owner receives each month. Investors with larger rental portfolios ask to see a statement before they ask about fees.",
+      "hook": "Search the site for a sample statement, report or portal preview. If there is none, the angle holds.",
+      "linkLine": "A redacted owner report and portal tour on your site: {demo-link}"
+    },
+    {
+      "angle": "Hiring across the firm",
+      "line": "Saw your firm is hiring maintenance techs and a property manager at the same time. There's no careers page, and good techs compare employers on a phone at lunch.",
+      "hook": "Look for recent job posts. Note the roles and offices.",
+      "linkLine": "A careers page for the property management firm: {demo-link}"
+    },
+    {
+      "angle": "Vendors apply by email",
+      "line": "Your site asks contractors to email their insurance certificates to an office address. With the number of doors you manage, that inbox becomes a vendor list nobody can keep current.",
+      "hook": "Find any vendor or contractor section. Note how they're asked to apply.",
+      "linkLine": "A vendor onboarding page with document upload: {demo-link}"
+    },
+    {
+      "angle": "Taking over portfolios",
+      "line": "Your posts mention taking on another management company's rentals. Owners of small management firms thinking about retiring would look for a page that explains how you handle a transition.",
+      "hook": "Only if they've announced an acquisition or a portfolio takeover. Note the date and area.",
+      "linkLine": "A confidential page for managers selling their doors: {demo-link}"
+    },
+    {
+      "angle": "A new building leasing up",
+      "line": "Saw you're leasing up the new apartment building in {Neighborhood}. Right now that building has no page of its own with floor plans, amenities and a tour booking.",
+      "hook": "Only if they've posted about a new building or lease-up. Note the building name.",
+      "linkLine": "A lease-up page for the new apartment building: {demo-link}"
+    },
+    {
+      "angle": "Outgrown design",
+      "line": "Your property management site looks like it was built when the firm managed a fraction of what it does now. The team page and logos don't match the size of the portfolio.",
+      "hook": "Check the footer date, the team page and any client logos. Note one thing that's clearly old.",
+      "linkLine": "Your firm's site, rebuilt for the portfolio you manage today: {demo-link}"
+    },
+    {
+      "angle": "Building notices on social only",
+      "line": "When one of your buildings had its water shut off for repairs, the notice went out on social media. Residents and their owners look for that on a building page, not in a feed.",
+      "hook": "Only if they've posted a building notice publicly. Note the building and the notice.",
+      "linkLine": "Building notice pages for your residents: {demo-link}"
+    },
+    {
+      "angle": "Building reviews not on the site",
+      "line": "Several of your apartment buildings have their own review listings, and residents praise the on-site team by name. None of that reaches an owner reading your property management site.",
+      "hook": "Search for their buildings by name. Note a staff member residents mention.",
+      "linkLine": "Resident praise placed beside each building: {demo-link}"
+    },
+    {
+      "angle": "HOA boards with no portal",
+      "line": "You manage HOA and condo associations, but the site has no board login or meeting documents. Volunteer board members compare managers on exactly that.",
+      "hook": "Only if they mention association management. Look for any board portal or documents area.",
+      "linkLine": "A board portal for your HOA and condo clients: {demo-link}"
+    },
+    {
+      "angle": "Peak moving season",
+      "line": "Peak moving season is when your leasing team juggles the most showings across buildings. Self-scheduled tours on each rental listing take that weight off the phones.",
+      "hook": "Use this in the weeks before their area's busiest move-in season. Check whether listings offer tour booking.",
+      "linkLine": "Self-scheduled rental tours for every listing: {demo-link}"
+    },
+    {
+      "angle": "A specific recent post",
+      "line": "That {specific recent job} you posted showed real care for a building. It belongs on that property's page, where owners and future residents actually decide.",
+      "hook": "Pick their newest post about a renovation, a community event or a building and name it exactly.",
+      "linkLine": "That project, kept on the building's own page: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, that {specific recent job} you posted showed real care for a building.\n\nI was looking at property management firms in {City} and noticed {Business Name}'s site speaks to owners, residents and vendors from one page, with no sample owner report and vacancies that don't match your listings. I sketched a sample site with pages by property type, a resident hub and vendor onboarding, with marked placeholders where your photos would go.\n\nWould it help to see it before your next leadership meeting?",
+    "dm2": "{Owner}, following up in case my note got buried. Here's the sample site for {Business Name}: {demo-link}\n\nIt has pages for each property type and market, a redacted owner report, a resident hub by building, vendor onboarding with document upload and a live rentals feed. Nothing goes live without your sign-off. If it's not for you, just say so.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites and portals for property management firms in {City}. I sent a sample for {Business Name} a few days ago, did it reach you?\"\n\nIF NO:\n\"No problem. Short version: pages for owners by property type, a resident hub by building, vendor onboarding and a live rentals feed, with marked placeholders where your photos would go. Can I email it to you and your operations lead?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"Firms your size usually have three audiences fighting over one homepage. This gives each its own front door, and connects to the management system you already run rather than replacing it. The build runs {Build Range} depending on markets and portals, then {Care Range} a month for hosting, feeds and changes. For your firm I'd quote about {Build Price}.\"\n\"Could I walk you and your operations lead through it for twenty minutes this week?\"\n\nCLOSE:\n\"I'll send a scope with the property types, markets and integrations listed, and a deposit invoice. You approve every page and every data connection before launch.\"",
+    "objections": [
+      {
+        "objection": "Our management software gives us a website.",
+        "handler": "\"Keep the software. Its template site looks like every other manager's. We connect to it for listings and logins and give owners, boards and vendors pages written for them.\""
+      },
+      {
+        "objection": "Our owners come from referrals and acquisitions.",
+        "handler": "\"That's how firms your size grow. Referred owners and sellers still check your site before the meeting. A sample report and pages by property type do the first meeting's work.\""
+      },
+      {
+        "objection": "We have too many systems already.",
+        "handler": "\"Then this shouldn't add one. The site reads from the system you already run and points each person to the right login. Nobody on your team learns a new tool for the site.\""
+      },
+      {
+        "objection": "Residents will flood us with requests through a new form.",
+        "handler": "\"The resident hub sends requests into the same work order queue you use now, with emergency rules up front. It usually means fewer phone calls, not more tickets.\""
+      },
+      {
+        "objection": "The partners need to approve this.",
+        "handler": "\"Of course. I'll send a one-page summary with scope, price and the integrations, so they can decide without a meeting.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}, and for your firm about {Build Price}, covering property-type and market pages, the resident hub, vendor onboarding and the rentals feed. Monthly care is {Care Range}.\""
+      }
+    ],
+    "email": {
+      "subject": "Owner, resident and vendor pages for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites and portals for property management firms around {City}. {Business Name} manages a serious portfolio, but the site serves owners, residents and vendors from one page, with no sample owner report and a rentals page that doesn't match your listings.\n\nI built a sample first rather than ask for your time: pages for each property type and market, a redacted owner report and portal tour, a resident hub by building, vendor onboarding with document upload and a rentals feed from your management system, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you'd like it, I move it to your domain and finish it for {Build Range}, plus {Care Range} a month for hosting, feeds and changes. You approve every page before launch. If not, no problem, it comes down at the end of the month.\n\nWorth twenty minutes with you and your operations lead this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"{Owner}, it's {Your Name}. I build websites for property management firms in {City}, and I made a sample for {Business Name} with owner pages by property type, a resident hub and vendor onboarding. I'll email the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm taking the {Business Name} property management sample down on Friday to free up the space.\n\nShould I keep it up for you and the partners? One word is fine either way.",
+    "nurture": "Hi {Owner}, budget season for owners and associations is coming, which is when they review their manager. {Business Name} came to mind.\n\nThe sample with owner reports and a resident hub is still here, same price as before. {demo-link} if you'd like another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Price by audience and market: owners, residents, vendors and boards each get a front door, and each market is a fixed add-on.",
+      "Connect to the management system they already run; never quote a feed or login before seeing what it exports.",
+      "Portals are priced separately from the site, with their own monthly fee, because they carry data and support.",
+      "Quote a sample owner report page once and reuse it per property type, with redaction done by their staff.",
+      "Build a sign-off round for the principal and operations lead; at this size two or three people approve.",
+      "Never price against a promised number of new doors; price against the work the site takes off the office."
+    ],
+    "lineItems": [
+      {
+        "item": "Property type page (each)",
+        "min": 500,
+        "max": 1200,
+        "unit": "per-page",
+        "description": "Max with a sample report for that type, what management includes, case notes from the firm and a proposal request.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Office or market page (each)",
+        "min": 600,
+        "max": 1500,
+        "unit": "per-page",
+        "description": "Max with the local team, buildings managed with owner permission, leasing notes and neighbourhood sections.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Live rentals feed from the management system",
+        "min": 1500,
+        "max": 4500,
+        "unit": "one-time",
+        "description": "Max with filters by building and market, tour booking on each listing and published screening criteria.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Resident hub by building",
+        "min": 2000,
+        "max": 6000,
+        "unit": "one-time",
+        "description": "Max with a page per building, notices the office can post, amenity booking links and move-out steps.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Vendor application with document upload",
+        "min": 1200,
+        "max": 3500,
+        "unit": "one-time",
+        "description": "Max with trade and area filters, insurance and licence upload with expiry dates, and routing to the vendor manager.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Lease-up page for a new building",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "description": "Max with floor plans, amenity pages, a waitlist, tour booking and a handover to the live rentals feed once leased.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Owner report sample and portal tour",
+        "min": 600,
+        "max": 1500,
+        "unit": "one-time",
+        "description": "Max with a redacted statement per property type, a year-end package sample and a short screen-recorded portal walkthrough.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Building and amenity photo days",
+      "min": 900,
+      "max": 2500,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A day per building for exteriors, lobbies, amenities and a model unit, so every rental listing and building page shows the property at its best.\"",
+      "when": "Month 1 for flagship buildings, then with each new management contract."
+    },
+    {
+      "name": "Google profiles for every office and building",
+      "min": 300,
+      "max": 900,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Each office and each apartment building's Google profile kept accurate with hours, leasing links and photos, so residents and applicants find the right door.\"",
+      "when": "Day 30, once the building pages are live."
+    },
+    {
+      "name": "Owner newsletter and market update",
+      "min": 600,
+      "max": 1500,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A monthly note to rental owners and boards on rents, vacancy and maintenance costs in your markets, which keeps them from shopping for another manager.\"",
+      "when": "Month 2, once the owner list is clean."
+    },
+    {
+      "name": "Resident review requests after work orders",
+      "min": 200,
+      "max": 600,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"When a maintenance request closes, the resident gets a short note asking how it went and, if happy, a link to review that building.\"",
+      "when": "Month 3, once work orders flow through the resident hub."
+    },
+    {
+      "name": "Owner prospect campaign by property type",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A landing page, a sample report and a short email series aimed at one property type at a time, such as small apartment buildings or self-managed condo boards.\"",
+      "when": "Month 4, once the property type pages are live."
+    },
+    {
+      "name": "Recruiting campaign for maintenance and leasing roles",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Job pages, short videos with the maintenance team and posts in each market, so the firm stops relying on job boards for techs and leasing staff.\"",
+      "when": "Whenever several roles open across offices."
+    },
+    {
+      "name": "Market rent report as a downloadable guide",
+      "min": 1200,
+      "max": 3000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A twice-yearly rent and vacancy guide for your markets that owners download in exchange for their details, written from the firm's own leasing data.\"",
+      "when": "Month 5, once the firm agrees what data it's comfortable publishing."
+    },
+    {
+      "name": "Building signage and resident welcome packs",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Lobby signs and welcome packs for each building with a scan code to that building's resident hub, so new tenants find rent, repairs and notices on day one.\"",
+      "when": "Month 2, after the resident hub launches."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Maintenance vendors on the approved list",
+        "whoPays": "The plumbing, HVAC or electrical vendor",
+        "min": 3000,
+        "max": 8000,
+        "unit": "one-time",
+        "pitchLine": "\"The trades on your approved vendor list sell to other managers and owners too. An introduction from a firm with hundreds of doors is their best reference.\"",
+        "whyItWorks": "Vendors prize large management accounts and listen to them; most have a dated site."
+      },
+      {
+        "route": "Turnover cleaning and painting crews",
+        "whoPays": "The make-ready or turnover company",
+        "min": 2500,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"The crews that turn your units between residents need a site that shows other landlords their speed and photos. The property manager who books them weekly opens the door.\"",
+        "whyItWorks": "Turnover crews grow through manager referrals and rarely market themselves."
+      },
+      {
+        "route": "Agents who sell rental properties to investors",
+        "whoPays": "The real estate agent or team",
+        "min": 3000,
+        "max": 8000,
+        "unit": "one-time",
+        "pitchLine": "\"The agents who send investors to you after closing need investor-focused sites with rental analysis requests. Your referral relationship makes the introduction natural.\"",
+        "whyItWorks": "Investor agents and property managers refer both ways and trust each other's partners."
+      },
+      {
+        "route": "Landlord insurance brokers",
+        "whoPays": "The insurance brokerage",
+        "min": 3000,
+        "max": 7000,
+        "unit": "one-time",
+        "pitchLine": "\"The brokers who insure your owners' rental buildings need pages for landlord and association policies. A manager they work with daily is a trusted introduction.\"",
+        "whyItWorks": "Brokers depend on manager referrals for building policies and want to stay on the list."
+      },
+      {
+        "route": "Moving companies residents use",
+        "whoPays": "The moving company",
+        "min": 2500,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"Movers that handle your residents' move-ins need a quote page and building notes. A spot on your resident hub plus an introduction is worth a lot to them.\"",
+        "whyItWorks": "Movers value steady building referrals and buy sites to look reliable to managers."
+      },
+      {
+        "route": "Landscaping and snow or grounds contractors",
+        "whoPays": "The grounds maintenance company",
+        "min": 3000,
+        "max": 8000,
+        "unit": "one-time",
+        "pitchLine": "\"Your grounds contractors bid on every association and apartment complex nearby. A capability page with the properties they maintain, with your permission, wins them the next bid.\"",
+        "whyItWorks": "Grounds firms win commercial bids on references, and a large manager is the best one."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Quote drafting assistant for maintenance vendors",
+        "whoPays": "The trade vendor, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Vendors write the same repair quotes for property managers all week. An assistant drafts each quote from the tech's notes and photos for the owner of the business to send.\"",
+        "whyItWorks": "Faster quotes mean faster approvals from the manager, which both sides want."
+      },
+      {
+        "route": "Scheduling assistant for turnover crews",
+        "whoPays": "The make-ready company, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Turnover crews juggle move-out dates from several managers. An assistant reads the notices and drafts the week's schedule by building for the crew lead to confirm.\"",
+        "whyItWorks": "Units sit empty while crews are late, so managers notice the improvement."
+      },
+      {
+        "route": "Rental analysis drafts for investor agents",
+        "whoPays": "The real estate agent, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Investor agents need a rent estimate and operating cost sketch for every listing they show. An assistant drafts it from listing details for the agent to check.\"",
+        "whyItWorks": "Agents close investor deals faster with numbers ready, and the manager gets the referral."
+      },
+      {
+        "route": "Policy summary drafts for landlord insurance brokers",
+        "whoPays": "The insurance brokerage, monthly",
+        "min": 200,
+        "max": 500,
+        "unit": "monthly",
+        "pitchLine": "\"Brokers explain building policies to owners again and again. An assistant drafts a plain-language summary of each quote for the broker to review before it goes out.\"",
+        "whyItWorks": "Brokers save time and look clearer to the owners the manager refers."
+      },
+      {
+        "route": "Move estimate assistant for movers",
+        "whoPays": "The moving company, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Residents describe their apartment and belongings, and the mover gets a draft estimate with building access notes for their estimator to confirm.\"",
+        "whyItWorks": "Quick estimates win moves, and building access notes come from the manager's hub."
+      },
+      {
+        "route": "Bid write-ups for grounds contractors",
+        "whoPays": "The grounds maintenance company, monthly",
+        "min": 200,
+        "max": 500,
+        "unit": "monthly",
+        "pitchLine": "\"Grounds firms answer bid requests from associations and apartment complexes. An assistant drafts the scope and schedule from a site walk for the estimator to price.\"",
+        "whyItWorks": "Bid season is short and busy, and the manager's referral makes the first trial easy."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Vacancy sync from the management system to the site",
+      "kind": "automation",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"When a unit is marked leased in your management system, it leaves the site and the building page within the hour, so nobody tours an apartment that's gone.\"",
+      "whenAndWhatItTakes": "Day 30. Needs access to their management system's listing export."
+    },
+    {
+      "name": "Review reply drafts for every building",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 200,
+      "monthlyMax": 500,
+      "pitchLine": "\"Every new review of a building or office gets a reply drafted in the firm's voice that never discusses a resident's account, sent to the property manager to approve.\"",
+      "whenAndWhatItTakes": "Month 1. Needs their privacy rules and a few approved replies. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Vendor insurance expiry alerts",
+      "kind": "automation",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"Thirty days before a vendor's insurance certificate expires, the vendor gets a request for the new one and the vendor manager sees who hasn't sent it.\"",
+      "whenAndWhatItTakes": "Month 2, with vendor onboarding. Needs the current vendor list and certificate dates."
+    },
+    {
+      "name": "Resident question assistant by building",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 300,
+      "monthlyMax": 900,
+      "pitchLine": "\"Residents ask about parking, trash days, amenity hours or how to pay rent and get answers from that building's own page, with anything else handed to the office.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the resident hub content per building and office handover hours. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Vendor onboarding portal with compliance documents",
+      "kind": "software",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Vendors apply by trade and area, upload licences and insurance, and the vendor manager approves them into the work order system in one place.\"",
+      "whenAndWhatItTakes": "Month 2. Needs vendor requirements and how vendors are added to their management system."
+    },
+    {
+      "name": "Self-guided tour booking across buildings",
+      "kind": "software",
+      "oneTimeMin": 2500,
+      "oneTimeMax": 7000,
+      "monthlyMin": 200,
+      "monthlyMax": 500,
+      "pitchLine": "\"Applicants book a tour of any vacant apartment from the listing, choose an agent-led or self-guided slot, and the leasing team sees every building's tours on one calendar.\"",
+      "whenAndWhatItTakes": "Month 3. Needs leasing agents' availability, entry rules for self-guided tours and the listings feed."
+    },
+    {
+      "name": "Rental listing write-ups checked for discriminatory wording",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"From a unit's details, it drafts the listing description and flags any wording that could break housing discrimination rules, before a leasing agent publishes.\"",
+      "whenAndWhatItTakes": "Month 3. Needs approved past listings and the firm's wording rules. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Lease renewal offers sent by building and lease end",
+      "kind": "automation",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Residents get renewal offers on the schedule each building's owner approves, with reminders, and the property manager sees who has signed and who is leaving.\"",
+      "whenAndWhatItTakes": "Month 4. Needs lease end dates and renewal rules per owner."
+    },
+    {
+      "name": "Owner portal with statements and approvals",
+      "kind": "software",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 18000,
+      "monthlyMin": 300,
+      "monthlyMax": 900,
+      "pitchLine": "\"Owners see statements, occupancy and open work orders for each property, and approve repairs over their limit with one tap instead of a phone tag.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the management system's owner data export and approval limits per owner."
+    },
+    {
+      "name": "Work order triage and vendor matching",
+      "kind": "ai",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 400,
+      "monthlyMax": 1200,
+      "pitchLine": "\"Each resident maintenance request is sorted by urgency and trade, and a draft dispatch to the right approved vendor for that building waits for the coordinator to send.\"",
+      "whenAndWhatItTakes": "Month 5. Needs emergency rules, vendor list by trade and area, and the work order system. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Application document checker",
+      "kind": "ai",
+      "oneTimeMin": 2500,
+      "oneTimeMax": 6000,
+      "monthlyMin": 250,
+      "monthlyMax": 700,
+      "pitchLine": "\"Rental applications are checked for missing pay slips, IDs or references, and the applicant gets a plain note on what's missing. It never decides who is approved.\"",
+      "whenAndWhatItTakes": "Month 5. Needs the published screening criteria and document list. Comes with the AI maintenance retainer; people make every decision."
+    },
+    {
+      "name": "Owner monthly commentary drafts per property",
+      "kind": "ai",
+      "oneTimeMin": 2500,
+      "oneTimeMax": 6000,
+      "monthlyMin": 250,
+      "monthlyMax": 700,
+      "pitchLine": "\"Each owner statement goes out with a short draft note on what happened at the property that month, written from work orders and leasing activity for the manager to edit.\"",
+      "whenAndWhatItTakes": "Month 6, with the owner portal. Needs a few notes managers wrote well. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Board portal for HOA and condo associations",
+      "kind": "software",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 14000,
+      "monthlyMin": 250,
+      "monthlyMax": 700,
+      "pitchLine": "\"Each association's board sees financials, meeting documents, violations and projects in one place, and residents get a public page for rules and notices.\"",
+      "whenAndWhatItTakes": "Month 6, if they manage associations. Needs document structure per association and board member lists."
+    },
+    {
+      "name": "Owner proposal builder for portfolio prospects",
+      "kind": "software",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Business development fills in a prospect's property type, door count and needs, and gets a branded management proposal with the right fees and sample report.\"",
+      "whenAndWhatItTakes": "Month 6. Needs their fee schedules by property type and past winning proposals."
+    },
+    {
+      "name": "New owner onboarding for portfolio takeovers",
+      "kind": "automation",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"When the firm takes over a portfolio, every owner and resident gets the right welcome steps, documents to sign and portal invitations on a set schedule.\"",
+      "whenAndWhatItTakes": "Month 7, or the next acquisition. Needs the takeover checklist and contact lists."
+    },
+    {
+      "name": "Arrears follow-up drafts for property managers",
+      "kind": "ai",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 200,
+      "monthlyMax": 600,
+      "pitchLine": "\"Residents behind on rent get a polite, building-specific reminder drafted from the ledger, with payment plan options the owner allows, for the manager to approve.\"",
+      "whenAndWhatItTakes": "Month 7. Needs the ledger export and the firm's approved wording. Comes with the AI maintenance retainer; no formal notices are sent without staff."
+    },
+    {
+      "name": "Capital project tracker for owners and boards",
+      "kind": "software",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 200,
+      "monthlyMax": 600,
+      "pitchLine": "\"Roof replacements, lobby renovations and elevator work tracked with budgets, bids and progress photos, so owners and boards see where their money is going.\"",
+      "whenAndWhatItTakes": "Month 8. Needs current projects, budgets and who updates them."
+    },
+    {
+      "name": "Commercial lease summary drafts",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 250,
+      "monthlyMax": 700,
+      "pitchLine": "\"For mixed-use and commercial units, it drafts a one-page summary of each lease's rent steps, renewal options and responsibilities for the property manager to confirm.\"",
+      "whenAndWhatItTakes": "Month 9, if they manage commercial space. Needs signed leases. Comes with the AI maintenance retainer; staff check every date."
+    },
+    {
+      "name": "Portfolio dashboard by building and market",
+      "kind": "software",
+      "oneTimeMin": 10000,
+      "oneTimeMax": 30000,
+      "monthlyMin": 500,
+      "monthlyMax": 1500,
+      "pitchLine": "\"Occupancy, arrears, days to turn a unit and open work orders for every building and market on one screen, for the leadership meeting and the owners who ask.\"",
+      "whenAndWhatItTakes": "Month 10. Needs six months of data from the management system and agreement on how each figure is calculated."
+    },
+    {
+      "name": "After-hours leasing and maintenance phone answering",
+      "kind": "ai",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 500,
+      "monthlyMax": 1500,
+      "pitchLine": "\"After hours, calls are answered: applicants get a tour link, residents with an emergency reach the on-call tech, and everything else becomes a ticket for the morning.\"",
+      "whenAndWhatItTakes": "Month 10. Needs emergency rules, the on-call roster and leasing details. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the three-audience property management site",
+      "whoPays": "Other mid-size management firms, one-time plus monthly",
+      "min": 10000,
+      "max": 25000,
+      "unit": "one-time",
+      "pitchLine": "\"Owner pages by property type, a resident hub and vendor onboarding are the same build for every firm with hundreds of doors. I set it up with their markets and system.\"",
+      "whyItWorks": "Feeds from the common management systems are built once and reused."
+    },
+    {
+      "route": "Property management association partner offer",
+      "whoPays": "The regional property management or landlord association",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer member firms a site and vendor onboarding package at a member rate. Associations want benefits that help members grow their doors.\"",
+      "whyItWorks": "Associations need visible member benefits, and larger members pay the most dues."
+    },
+    {
+      "route": "Build-to-rent and multifamily developers",
+      "whoPays": "The developer, per community",
+      "min": 6000,
+      "max": 18000,
+      "unit": "one-time",
+      "pitchLine": "\"Each new rental community needs a lease-up site with floor plans, waitlist and tour booking before the first resident moves in. One template per developer.\"",
+      "whyItWorks": "Developers build communities repeatedly and need lease-up sites on each one's timeline."
+    },
+    {
+      "route": "HOA and condo management firms",
+      "whoPays": "Association management companies",
+      "min": 6000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"The board portal and association pages I built fit any firm that manages HOAs and condos. I set it up with their associations.\"",
+      "whyItWorks": "Association managers share the same board, document and violation problems."
+    },
+    {
+      "route": "Property management franchise brands",
+      "whoPays": "The franchisor, then each franchisee monthly",
+      "min": 15000,
+      "max": 50000,
+      "unit": "one-time",
+      "pitchLine": "\"A franchise brand needs owner and resident pages for every franchise office, with brand-controlled content and local listings. Same build at a bigger scale.\"",
+      "whyItWorks": "Franchisors pay for the system once and franchisees pay monthly for their office."
+    },
+    {
+      "route": "White-label for real estate marketing agencies",
+      "whoPays": "The agency, per management firm client",
+      "min": 5000,
+      "max": 12000,
+      "unit": "one-time",
+      "pitchLine": "\"Agencies that market property management firms need someone to build the portals and feeds. I build under their name.\"",
+      "whyItWorks": "Agencies own the relationship but not the integration skills."
+    },
+    {
+      "route": "Management software implementation consultants",
+      "whoPays": "The consultant, per firm they onboard",
+      "min": 3000,
+      "max": 8000,
+      "unit": "one-time",
+      "pitchLine": "\"Consultants who move firms onto a new management system can offer a site that's connected to it on day one. I deliver it as part of their project.\"",
+      "whyItWorks": "System changes are when firms rethink their site, and the consultant is already trusted."
+    },
+    {
+      "route": "Real estate investment funds and family offices",
+      "whoPays": "The fund, across its managed properties",
+      "min": 10000,
+      "max": 35000,
+      "unit": "one-time",
+      "pitchLine": "\"Funds that use several managers want the same owner reporting across all of them. The portfolio dashboard becomes their reporting layer.\"",
+      "whyItWorks": "Funds pay for comparable numbers across managers and markets."
+    },
+    {
+      "route": "Student housing operators",
+      "whoPays": "The student housing operator",
+      "min": 8000,
+      "max": 20000,
+      "unit": "one-time",
+      "pitchLine": "\"Student housing has the same buildings, residents and maintenance, plus parents and intake dates. The resident hub and lease-up pages carry straight over.\"",
+      "whyItWorks": "Student operators lease up every year on a fixed calendar and need it to run smoothly."
+    },
+    {
+      "route": "Business brokers selling management portfolios",
+      "whoPays": "The business broker, per listing",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Brokers selling property management businesses need confidential listing pages and buyer enquiry forms. I build those using what I learned from the acquiring side.\"",
+      "whyItWorks": "Portfolio sales are steady as owners retire, and brokers need discreet pages."
+    },
+    {
+      "route": "One firm per metro",
+      "whoPays": "A management firm in another metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I build for one property management firm of your size per metro, so you never share a builder with your direct competitor. Your part of {City} is open today.\"",
+      "whyItWorks": "Firms competing for the same owners value not sharing a supplier."
+    },
+    {
+      "route": "Housing authority landlord recruitment portals",
+      "whoPays": "The local housing authority",
+      "min": 8000,
+      "max": 25000,
+      "unit": "one-time",
+      "pitchLine": "\"Housing authorities need private landlords and managers to list units for their programmes. A recruitment portal built by someone who knows managers gets them signing up.\"",
+      "whyItWorks": "Authorities fund landlord outreach, and a manager-built portal speaks the right language."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Three-audience site build plus care plan, one contract",
+      "min": 15000,
+      "max": 35000,
+      "unit": "one-time",
+      "trigger": "The principal and operations lead approve the scope, markets and integrations.",
+      "line": "\"The site and the care plan sit on one contract, so a new building, market or notice is a message to me, not a project for your office.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Vacancy sync from the management system to the site",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "trigger": "The leasing team mentions applicants calling about units already leased.",
+      "line": "\"Let's make sure a leased apartment leaves the site the same hour it leaves your system.\""
+    },
+    {
+      "rung": 3,
+      "day": 60,
+      "offer": "Vendor onboarding portal with compliance documents",
+      "min": 3000,
+      "max": 8000,
+      "unit": "one-time",
+      "trigger": "Vendor applications start arriving through the site and the vendor manager tracks certificates by hand.",
+      "line": "\"Vendors are applying. Let's take the certificates out of the inbox and into one list that warns you before they expire.\""
+    },
+    {
+      "rung": 4,
+      "day": 90,
+      "offer": "Resident question assistant by building",
+      "min": 3000,
+      "max": 8000,
+      "unit": "one-time",
+      "trigger": "Ninety days of resident hub use, and the office still answers the same building questions by phone.",
+      "line": "\"Residents ask the same things at every building. Let each building's page answer them so your team handles the real problems.\""
+    },
+    {
+      "rung": 5,
+      "day": 150,
+      "offer": "Owner portal with statements and approvals",
+      "min": 6000,
+      "max": 18000,
+      "unit": "one-time",
+      "trigger": "Owners keep calling for repair approvals or asking for statements by email.",
+      "line": "\"Your owners want to see their property without calling. A portal with approvals keeps them happy and your managers free.\""
+    },
+    {
+      "rung": 6,
+      "day": 240,
+      "offer": "Work order triage and vendor matching",
+      "min": 4000,
+      "max": 10000,
+      "unit": "one-time",
+      "trigger": "Work order volume rises with new doors and coordinators fall behind.",
+      "line": "\"Your coordinators sort every maintenance request by hand. Let each one arrive sorted with a vendor already suggested.\""
+    },
+    {
+      "rung": 7,
+      "day": 365,
+      "offer": "Portfolio dashboard by building and market",
+      "min": 10000,
+      "max": 30000,
+      "unit": "one-time",
+      "trigger": "The first anniversary, or the partners plan the next acquisition.",
+      "line": "\"A year in, let's put every building's occupancy, arrears and turn times on one screen before you take on the next portfolio.\""
+    }
+  ]
+}

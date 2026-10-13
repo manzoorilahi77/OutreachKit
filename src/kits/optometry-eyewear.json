@@ -1,0 +1,875 @@
+{
+  "schemaVersion": 1,
+  "category": "Optometry & eyewear",
+  "slug": "optometry-eyewear",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · expansion batch (healthcare + mid-size)",
+    "generatedAt": "2026-10-13",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Leaned on the board note: independents lose eye exams to chains with online booking, so the build is exam booking plus a frames gallery. Prices kept lower than dental to match a smaller ticket. No vision claims, no frame or lens brand names. Unsure on the frame catalogue and contact lens reorder prices, so those ranges are wide."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Book an eye exam by type",
+      "contains": "Separate booking for a routine eye exam, a contact lens exam, a children's eye exam and an urgent eye problem visit, each with how long it takes and what to bring (current glasses, lens boxes, medication list)",
+      "why": "Chains win eye exams because booking takes a minute. An independent optometrist with the same ease keeps the patients who prefer a local practice."
+    },
+    {
+      "section": "Frames gallery by shape and style",
+      "contains": "Frames in the shop grouped by shape, size and style, with price bands, a note on independent designers carried, and a 'hold this frame for my visit' request",
+      "why": "Eyewear buyers browse before they visit. Seeing that the shop carries frames you won't find at a mall is the reason they book here."
+    },
+    {
+      "section": "Contact lens exams and reorders",
+      "contains": "What a contact lens fitting involves, when a fresh prescription is needed, how to reorder lenses from the practice, and supply-length options",
+      "why": "Lens wearers reorder several times a year. Making reorders easy keeps that repeat purchase with the optometry practice instead of an online seller."
+    },
+    {
+      "section": "Children's eye exams and school season",
+      "contains": "Why children's eye exams differ, what happens at the visit, how parents can stay with them, kid-proof frame options and booking siblings together",
+      "why": "Parents book eye exams before the school year. A gentle children's page brings the whole family to one practice."
+    },
+    {
+      "section": "Vision benefits, direct billing and prices",
+      "contains": "Which vision benefit plans the practice bills directly, exam fee ranges, frame and lens package price bands, and what to bring to use benefits",
+      "why": "The first question is whether the optometrist takes their plan. Answering it on the page turns a phone question into an exam booking."
+    },
+    {
+      "section": "Glasses repairs and adjustments",
+      "contains": "Walk-in times for adjustments, nose pad and screw repairs, what can be fixed while you wait and when a frame needs to be sent away",
+      "why": "Repairs bring people through the door who later book an eye exam. A clear repairs page turns a quick fix into a returning patient."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C1",
+      "siteType": "local-conversion",
+      "name": "Exam Today",
+      "heroLayout": "split-photo",
+      "mood": [
+        "clear",
+        "dependable",
+        "quick"
+      ],
+      "bestFor": "Single-optometrist practices that need eye exam booking and the benefits question answered on a phone",
+      "pairsWithTier": "starter",
+      "headlineSample": "Eye exams in {City}, booked in a minute",
+      "whyItFits": "Indigo and a neutral grotesque look precise and medical, like a good exam room. One booking button, one benefits link, the frames tease below."
+    },
+    {
+      "id": "b",
+      "themeId": "C2",
+      "siteType": "booking-first",
+      "name": "Neighbourhood Optician",
+      "heroLayout": "card-stack",
+      "mood": [
+        "warm",
+        "personal",
+        "trusted"
+      ],
+      "bestFor": "Independent optometry practices with an optical shop, booking exams by type and selling frames after the visit",
+      "pairsWithTier": "standard",
+      "headlineSample": "Your independent eye doctor in {City}",
+      "whyItFits": "The family's Private Vault combo. Cream and an old-style serif say 'local practice that knows you', which is exactly the contrast with a chain."
+    },
+    {
+      "id": "c",
+      "themeId": "C41",
+      "siteType": "catalog",
+      "name": "Frame Gallery",
+      "heroLayout": "full-bleed-photo",
+      "mood": [
+        "curated",
+        "stylish",
+        "crisp"
+      ],
+      "bestFor": "Eyewear boutiques with independent frame designers, where browsing frames online drives the shop visit",
+      "pairsWithTier": "premium",
+      "headlineSample": "Independent eyewear, fitted in {City}",
+      "whyItFits": "Gallery white and Didone display type let the frames carry the page, like a boutique window. The exam booking stays one tap away."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No online eye exam booking",
+      "line": "Booking an eye exam at your practice means calling during opening hours. The chain down the road lets people book at night, and that's where many of your future patients go.",
+      "hook": "Check their site and listing for a Book button. If it's a phone number or a contact form, the angle holds.",
+      "linkLine": "Eye exam booking that works at night: {demo-link}"
+    },
+    {
+      "angle": "Frames nowhere online",
+      "line": "Your posts show great frames from independent designers, but the optometry site has no frames gallery. People browse eyewear before they decide where to get their exam.",
+      "hook": "Scroll their posts for frame displays or new arrivals. Note one collection or style.",
+      "linkLine": "A frames gallery that brings people in for the fitting: {demo-link}"
+    },
+    {
+      "angle": "Contact lens reorders by phone",
+      "line": "Contact lens wearers at your practice have to call to reorder. Many end up ordering from an online seller instead, and the optometrist loses the repeat sale.",
+      "hook": "Look for a lens reorder form on their site. If there's none, the angle holds.",
+      "linkLine": "Contact lens reordering on your own site: {demo-link}"
+    },
+    {
+      "angle": "Vision benefits not listed",
+      "line": "I couldn't find which vision plans your optometry practice bills directly. That's the first thing people check before booking an eye exam.",
+      "hook": "Search their site for insurance, benefits or direct billing. If missing or vague, the angle holds.",
+      "linkLine": "Vision benefits and exam fees on one page: {demo-link}"
+    },
+    {
+      "angle": "Broken on a phone",
+      "line": "On my phone, your eye care site's menu covered half the page and I couldn't reach the booking link. That's the moment someone with sore eyes gives up and calls a chain.",
+      "hook": "Load their site on your phone and note what breaks. Screenshot it for when they reply.",
+      "linkLine": "Your optometry site rebuilt for a phone: {demo-link}"
+    },
+    {
+      "angle": "Back-to-school eye exams",
+      "line": "Late summer is when parents book kids' eye exams before school starts. A children's eye exam page with sibling booking would catch that rush for your practice.",
+      "hook": "Use this a few weeks before the school year starts.",
+      "linkLine": "A children's eye exam page ready for school season: {demo-link}"
+    },
+    {
+      "angle": "Urgent eye problems",
+      "line": "Your listing mentions urgent eye care, but there's no page saying what to do about a red eye or something stuck in the eye. People search that in a panic and call whoever explains it.",
+      "hook": "Check their site for urgent or emergency eye care. Call after hours and note the message.",
+      "linkLine": "An urgent eye care page with clear next steps: {demo-link}"
+    },
+    {
+      "angle": "Reviews about the fitting",
+      "line": "Your reviews keep praising how patiently your optician helps people choose frames. That belongs on the eyewear site, where people decide between you and a chain.",
+      "hook": "Read their newest reviews and pick a phrase about frame fitting or service. Quote it back.",
+      "linkLine": "Eyewear reviews where people choose a shop: {demo-link}"
+    },
+    {
+      "angle": "Repairs walk-ins",
+      "line": "People drop into your optical shop for a loose screw or a bent frame, but the site doesn't mention repairs. Those walk-ins are often next year's eye exams.",
+      "hook": "Look for repair or adjustment posts and reviews. Note one.",
+      "linkLine": "A glasses repairs and adjustments page: {demo-link}"
+    },
+    {
+      "angle": "Safety glasses for local employers",
+      "line": "Plenty of local trades and workshops need prescription safety glasses for their staff. Your optometry practice could have a page for employers that books the exams and orders the frames.",
+      "hook": "Only if they mention safety eyewear in posts or reviews. Note which employers or trades.",
+      "linkLine": "A prescription safety eyewear page for employers: {demo-link}"
+    },
+    {
+      "angle": "Hiring an optician",
+      "line": "Saw your practice is hiring an optician. Good candidates look at the eyewear shop's site before applying, and there's no careers page for them yet.",
+      "hook": "Only if they posted a job. Note the role and date.",
+      "linkLine": "An optometry site with a careers page: {demo-link}"
+    },
+    {
+      "angle": "Annual exam reminders missing",
+      "line": "Most people forget when their last eye exam was. Your site has no way to sign up for a reminder, so patients drift to whichever optometrist is convenient next time.",
+      "hook": "Check for a reminder or recall sign-up on the site. If missing, the angle holds.",
+      "linkLine": "Eye exam reminders patients sign up for online: {demo-link}"
+    },
+    {
+      "angle": "Optometrist licence not shown",
+      "line": "Your optometrist's licence is on the public register, but the site doesn't introduce who does the eye exams. Patients choosing an independent practice want to meet the doctor first.",
+      "hook": "Check the public register where they practise. Note a record exists; never quote a number or credential you didn't see.",
+      "linkLine": "Optometrist bios and credentials shown plainly: {demo-link}"
+    },
+    {
+      "angle": "Sunglasses season",
+      "line": "Prescription sunglasses sell when the days get bright. An eyewear page showing sun frames and lens options before the season gives people a reason to book an eye exam now.",
+      "hook": "Use this in early spring, or before the hottest months where they are.",
+      "linkLine": "A prescription sunglasses page ready for the season: {demo-link}"
+    },
+    {
+      "angle": "A specific recent post",
+      "line": "Your {specific recent job} post about new frames looked great. A new-arrivals section on the eyewear site would keep posts like that working long after they scroll away.",
+      "hook": "Pick their newest frame or collection post and name it exactly.",
+      "linkLine": "New eyewear arrivals, kept on your own site: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, your {specific recent job} post caught my eye, nice frames.\n\nI was looking at independent optometrists in {City} and found {Business Name}, but no way to book an eye exam online and no frames gallery for people who browse before they visit. I put together a sample site to see how it might look, with marked placeholders where your photos would go.\n\nWould you like me to send it?",
+    "dm2": "{Owner}, following up in case my note got buried. Here's the sample optometry site for {Business Name}: {demo-link}\n\nIt has eye exam booking by type, a frames gallery, contact lens reordering, a vision benefits page and a children's eye exam page. Nothing on it makes a claim about vision outcomes. If it's not for you, just say so.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for independent optometrists here in {City}. I sent you a message a few days ago, did it reach you?\"\n\nIF NO:\n\"No problem. Short version: I built a sample site for {Business Name} with eye exam booking, a frames gallery and contact lens reorders, with marked placeholders where your photos would go. Can I email the link so you can look between exams?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"Chains take eye exams because booking is easy. This gives you the same booking, plus the frames people can't get at a chain. You approve every word. The build runs {Build Range} depending on the gallery and booking, then {Care Range} a month for hosting and edits. For your practice I'd quote about {Build Price}, roughly a handful of complete pairs.\"\n\"Could I show you in ten minutes this week?\"\n\nCLOSE:\n\"I'll send a one-page scope and a deposit invoice. We start once it clears, and you sign off on every page before launch.\"",
+    "objections": [
+      {
+        "objection": "Our patients have been coming for years; they just call.",
+        "handler": "\"Your loyal patients will keep calling. The site is for their kids, new neighbours and the people who'd otherwise book at the chain because it was easier at night.\""
+      },
+      {
+        "objection": "Online lens sellers undercut us anyway.",
+        "handler": "\"Some will. A reorder page with a fair price and pickup at the shop keeps the wearers who'd rather stay with their optometrist, and most don't want to shop around.\""
+      },
+      {
+        "objection": "Our frames change too often to show online.",
+        "handler": "\"The gallery shows collections and styles, not every frame. Your team adds new arrivals from a phone in a minute, and it's included in the care plan.\""
+      },
+      {
+        "objection": "We're part of a buying group that offers a website.",
+        "handler": "\"Compare one thing: can someone book an exam by type tonight and browse your actual frames? If not, I build a site you own that sits alongside the group's listing.\""
+      },
+      {
+        "objection": "Online booking will clash with our exam schedule.",
+        "handler": "\"It only offers the exam slots you open, by type and by optometrist. Contact lens fittings get longer slots and urgent visits still come by phone.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For your practice about {Build Price}, for exam booking, the frames gallery, lens reorders and the benefits page. Roughly a handful of complete pairs.\""
+      }
+    ],
+    "email": {
+      "subject": "Eye care site for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for independent optometrists around {City}. {Business Name} has loyal reviews and great frames, but no way to book an eye exam online and nowhere to browse eyewear before a visit, which is exactly where chains win.\n\nI built a sample first rather than ask for your time: eye exam booking by type, a frames gallery by style, contact lens reordering, a vision benefits page and a children's eye exam page, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you'd like it, I move it to a domain your practice owns and finish it for {Build Range}, plus {Care Range} a month for hosting and edits. You approve every page. If not, no problem, it comes down at the end of the month.\n\nWorth ten minutes on the phone this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"{Owner}, it's {Your Name}. I build websites for independent optometrists in {City}, and I made a sample one for {Business Name} with eye exam booking and a frames gallery. I'll email the link. Have a look between exams. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm taking the {Business Name} eye care demo down on Friday to free up the space.\n\nShould I keep it up for you? One word is fine either way.",
+    "nurture": "Hi {Owner}, the school year is coming and children's eye exam bookings usually pick up around now. You came to mind.\n\nThe optometry site is still here whenever you'd like it, same price as before. {demo-link} if you want another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to a handful of complete pairs of glasses; optical owners think in frames and lens packages.",
+      "Price the frames gallery by collection count, not page count; one gallery with filters beats many thin pages.",
+      "Keep add-ons small; an eye exam ticket is modest, so lead with booking and reorders that repay quickly.",
+      "Never write vision outcomes or lens claims; the optometrist approves every clinical line.",
+      "Quote contact lens reordering separately; it is a running shop with prices to keep current.",
+      "Price an employer safety eyewear page only if they already serve local employers."
+    ],
+    "lineItems": [
+      {
+        "item": "Eye exam booking by exam type",
+        "min": 500,
+        "max": 1300,
+        "unit": "one-time",
+        "description": "Max with separate routine, contact lens, children's and urgent visit types, per-optometrist calendars and pre-visit forms.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Frames gallery by collection",
+        "min": 400,
+        "max": 1200,
+        "unit": "one-time",
+        "description": "Max with filters by shape, size and price band, many collections and a hold-this-frame request.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Contact lens reorder page",
+        "min": 400,
+        "max": 1100,
+        "unit": "one-time",
+        "description": "Max with many lens types, supply-length options, prescription expiry checks and pickup or delivery.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Vision benefits and price bands page",
+        "min": 200,
+        "max": 500,
+        "unit": "one-time",
+        "description": "Max when it lists many vision plans, explains direct billing and shows frame-and-lens package bands.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Optometrist and optician bio pages (each)",
+        "min": 120,
+        "max": 300,
+        "unit": "per-page",
+        "description": "Max with a first-person paragraph, training and licence details the person supplies, languages spoken and a booking link.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Employer safety eyewear page",
+        "min": 300,
+        "max": 800,
+        "unit": "one-time",
+        "description": "Max with a group booking request, an employer account form and safety frame options.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Frame wall and optical shop photo session",
+      "min": 400,
+      "max": 1100,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A morning photographing the frame wall, the exam room and the optician fitting a pair gives the eyewear gallery and the team page real pictures instead of stock.\"",
+      "when": "Month 2, or when a new frame collection arrives."
+    },
+    {
+      "name": "Eye care consent and patient photo policy",
+      "min": 250,
+      "max": 600,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"If the optical shop ever posts customers in their new glasses, it needs signed consent and a published photo policy. I write both for the optometrist to approve.\"",
+      "when": "Before launch, if the build includes customer photos or testimonials."
+    },
+    {
+      "name": "Accessibility pass on the optometry site",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"An eye care site should be the easiest to read in town. I test text size, contrast, zoom and screen reader use on the booking and frames pages, then fix what fails.\"",
+      "when": "Month 2, after the core pages are approved."
+    },
+    {
+      "name": "Advertising-approval-ready optometry content pack",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Where the regulator reviews eye care advertising, I prepare the exam, lens and promotion pages as a tidy pack with plain wording and [optometrist name and licence] in brackets.\"",
+      "when": "Before launch and before seasonal frame promotions, where approval is required."
+    },
+    {
+      "name": "Google profile posts for the optical shop",
+      "min": 150,
+      "max": 300,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Weekly posts on the optometry practice's Google profile, like new frame arrivals or how a contact lens fitting works, approved before they go up.\"",
+      "when": "Day 30, once the site is live."
+    },
+    {
+      "name": "New frame arrival posts and email",
+      "min": 200,
+      "max": 450,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"When a frame collection lands, a gallery update, a post and a short email to past eyewear customers invite them to come and try it.\"",
+      "when": "Month 3, once the frames gallery is live."
+    },
+    {
+      "name": "Review requests after a glasses pickup",
+      "min": 79,
+      "max": 179,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A day after someone collects new glasses, they get a short note asking how the fitting went, only if they agreed to be contacted.\"",
+      "when": "Day 45, once wording and consent are approved."
+    },
+    {
+      "name": "Back-to-school kids' eye exam campaign",
+      "min": 300,
+      "max": 800,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A children's eye exam landing page, sibling booking and kid-proof frame posts in the weeks before school, sent to families already on the optometry practice list.\"",
+      "when": "Six weeks before the school year starts."
+    },
+    {
+      "name": "Optical shop window and counter signage",
+      "min": 300,
+      "max": 900,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Window decals and a counter card that say 'book your eye exam online' with a scan code, matching the new site, so walk-ins book their next visit themselves.\"",
+      "when": "Month 2, once booking is live."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Ophthalmologists the optometrist refers to",
+        "whoPays": "The ophthalmology practice",
+        "min": 3000,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"Cataract and retina surgeons get many patients from optometrists. A clean co-management and referral page for their eye surgery practice is an easy sell when the referring optometrist makes the call.\"",
+        "whyItWorks": "Ophthalmologists rely on optometrist referrals and listen to the optometrists who send them patients."
+      },
+      {
+        "route": "Optical labs that grind the practice's lenses",
+        "whoPays": "The optical laboratory",
+        "min": 1800,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The lens lab that fills your orders serves every independent optician in the region. An online order and job status page would win them more shops, and you already trust them.\"",
+        "whyItWorks": "Labs live on optician relationships, and a customer's introduction is their best sales route."
+      },
+      {
+        "route": "Local employers needing safety eyewear",
+        "whoPays": "The employer, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The workshops and trades that send staff for prescription safety glasses often need a better website themselves. The optician who fits their crew can mention me.\"",
+        "whyItWorks": "Employers already trust the optometrist with their staff and buy from people they meet through work."
+      },
+      {
+        "route": "Paediatricians and family doctors",
+        "whoPays": "The family medicine or paediatric practice",
+        "min": 2500,
+        "max": 4500,
+        "unit": "one-time",
+        "pitchLine": "\"The family doctors who send children for eye exams often run on dated pages. A recommendation from the optometrist they refer to opens the door.\"",
+        "whyItWorks": "Primary care practices trust specialists they refer to and take vendor tips from them."
+      },
+      {
+        "route": "Independent hearing clinics nearby",
+        "whoPays": "The hearing clinic",
+        "min": 2000,
+        "max": 3500,
+        "unit": "one-time",
+        "pitchLine": "\"Many older eye patients also need a hearing test. The independent hearing clinic you share patients with has the same chain problem, and you can introduce me.\"",
+        "whyItWorks": "Hearing and eye care independents face the same chain competition and often refer to each other."
+      },
+      {
+        "route": "Frame designers' sales reps",
+        "whoPays": "The independent frame brand's regional rep",
+        "min": 1200,
+        "max": 2500,
+        "unit": "one-time",
+        "pitchLine": "\"The rep who sells you independent frames needs a stockist page and a simple catalogue site for the region. You see them every season and can make the introduction.\"",
+        "whyItWorks": "Reps sell to many independents and want a way to send shoppers to their stockists."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Referral note summaries for ophthalmologists",
+        "whoPays": "The ophthalmology practice, monthly",
+        "min": 150,
+        "max": 350,
+        "unit": "monthly",
+        "pitchLine": "\"Eye surgery coordinators receive optometrist referrals as scans, faxes and emails. An assistant pulls each into a short draft with the findings and urgency, which the coordinator checks before booking.\"",
+        "whyItWorks": "Coordinators handle many referrals, and faster booking keeps referring optometrists sending patients."
+      },
+      {
+        "route": "Lens order checker for optical labs",
+        "whoPays": "The optical laboratory, monthly",
+        "min": 150,
+        "max": 350,
+        "unit": "monthly",
+        "pitchLine": "\"Lens orders arrive missing pupil distance or frame measurements. An assistant checks each against the lab's required fields and asks the optical shop before grinding starts.\"",
+        "whyItWorks": "Remakes from incomplete orders are a lab's biggest cost, and the first customers come through the optometrist."
+      },
+      {
+        "route": "Staff eyewear programme assistant for employers",
+        "whoPays": "The employer, monthly",
+        "min": 79,
+        "max": 199,
+        "unit": "monthly",
+        "pitchLine": "\"An employer's safety officer sends a staff list, and an assistant drafts the eye exam schedule and safety glasses order for the optician to confirm.\"",
+        "whyItWorks": "Safety eyewear admin is tedious, and the optometrist's introduction makes the first demo easy."
+      },
+      {
+        "route": "Visit summary drafts for paediatric practices",
+        "whoPays": "The paediatric practice, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"Paediatricians dictate a minute after each visit and get a draft note and a parent instruction sheet to edit, with eye exam referrals listed.\"",
+        "whyItWorks": "Busy paediatric practices pay to save note time, and the optometrist is a trusted introduction."
+      },
+      {
+        "route": "Hearing test reminders for hearing clinics",
+        "whoPays": "The hearing clinic, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"Older eye exam patients often share a hearing clinic. That clinic can send drafted yearly hearing check reminders, approved by the audiologist, the same way the optometry practice runs its recalls.\"",
+        "whyItWorks": "Recalls are a hearing clinic's main repeat business, and the shared patient base makes the introduction natural."
+      },
+      {
+        "route": "Stockist update drafts for frame reps",
+        "whoPays": "The frame rep or small frame brand, monthly",
+        "min": 79,
+        "max": 199,
+        "unit": "monthly",
+        "pitchLine": "\"Each season, the frame rep enters the new collection and gets drafted stockist emails and product blurbs for every optical shop they supply to approve.\"",
+        "whyItWorks": "Reps sell to many shops and want their collection launched quickly at each one."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Missed-call text with eye exam booking",
+      "kind": "automation",
+      "oneTimeMin": 0,
+      "oneTimeMax": 250,
+      "monthlyMin": 59,
+      "monthlyMax": 129,
+      "pitchLine": "\"When the optical counter is busy and a call goes unanswered, the caller gets a text with the eye exam booking page and the shop's hours.\"",
+      "whenAndWhatItTakes": "Day 30. Needs their main number forwarded and approved wording."
+    },
+    {
+      "name": "Privacy-safe eye exam forms and secure hosting",
+      "kind": "software",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1800,
+      "monthlyMin": 40,
+      "monthlyMax": 120,
+      "pitchLine": "\"Before an eye exam, patients enter eye history, medications and their vision plan details on forms built for health data, hosted securely, so the optometrist starts the visit prepared.\"",
+      "whenAndWhatItTakes": "Month 1, with launch. Needs their paper forms, privacy notice and who reviews submissions."
+    },
+    {
+      "name": "Annual eye exam recall",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 900,
+      "monthlyMin": 40,
+      "monthlyMax": 120,
+      "pitchLine": "\"Patients due for an eye exam get a friendly reminder with a booking link, so they come back to the practice instead of a chain.\"",
+      "whenAndWhatItTakes": "Month 2. Needs a recall export and opt-in records."
+    },
+    {
+      "name": "Glasses ready-for-pickup texts",
+      "kind": "automation",
+      "oneTimeMin": 200,
+      "oneTimeMax": 600,
+      "monthlyMin": 30,
+      "monthlyMax": 90,
+      "pitchLine": "\"When new glasses arrive from the lab, the customer gets a text that they're ready, with pickup hours and a link to book a fitting time.\"",
+      "whenAndWhatItTakes": "Month 2. Needs a simple order status list the optical team updates."
+    },
+    {
+      "name": "Review replies that stay general",
+      "kind": "ai",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 59,
+      "monthlyMax": 149,
+      "pitchLine": "\"Each eye care review gets a short drafted reply about the visit or the frames, never mentioning an eye condition, ready for the optometrist to approve.\"",
+      "whenAndWhatItTakes": "Month 2. Needs privacy rules and sample replies. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Contact lens reorder shop",
+      "kind": "software",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Lens wearers reorder from the practice online, choose supply length and pickup or delivery, and the system checks the prescription date first.\"",
+      "whenAndWhatItTakes": "Month 3. Needs lens types, prices and the payment account they already use."
+    },
+    {
+      "name": "Contact lens resupply reminders",
+      "kind": "automation",
+      "oneTimeMin": 300,
+      "oneTimeMax": 800,
+      "monthlyMin": 30,
+      "monthlyMax": 90,
+      "pitchLine": "\"Lens wearers get a reminder when their supply is likely running low, with a one-tap reorder link from the optometry practice.\"",
+      "whenAndWhatItTakes": "Month 4, after the reorder shop. Needs supply lengths and opt-in."
+    },
+    {
+      "name": "Frame hold requests",
+      "kind": "software",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 30,
+      "monthlyMax": 90,
+      "pitchLine": "\"Someone browsing the frames gallery taps 'hold this frame', picks an eye exam slot, and the optician puts the frame aside for the visit.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the frames gallery live and a hold rule the shop agrees."
+    },
+    {
+      "name": "Eye care question assistant",
+      "kind": "ai",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 120,
+      "monthlyMax": 300,
+      "pitchLine": "\"It answers 'do you take my plan', 'how long is a contact lens exam' and 'can you fix my frame today' from the practice's own pages, gives no clinical advice and offers a booking.\"",
+      "whenAndWhatItTakes": "Month 4. Needs approved pages and the optometrist's sign-off. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Vision plan check before the exam",
+      "kind": "software",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2200,
+      "monthlyMin": 50,
+      "monthlyMax": 150,
+      "pitchLine": "\"Patients add their vision plan when booking, and the front desk gets a checklist to confirm frames and lens allowances before the eye exam.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the plans they bill and the details staff check."
+    },
+    {
+      "name": "Frame suggestions from a face-shape quiz",
+      "kind": "ai",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3000,
+      "monthlyMin": 100,
+      "monthlyMax": 250,
+      "pitchLine": "\"Shoppers answer a few style questions and get frame suggestions from the shop's own gallery, with a button to hold them for a fitting. It never comments on vision.\"",
+      "whenAndWhatItTakes": "Month 5. Needs the tagged frames gallery and style rules from the optician. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Optician and front desk applicant screener",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Applicants for optician or optical assistant roles answer the practice's questions on licence status, dispensing experience and hours, and the owner sees a shortlist.\"",
+      "whenAndWhatItTakes": "Whenever they post a role. Needs their must-haves. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Employer safety eyewear accounts",
+      "kind": "software",
+      "oneTimeMin": 1200,
+      "oneTimeMax": 3500,
+      "monthlyMin": 75,
+      "monthlyMax": 200,
+      "pitchLine": "\"Local employers get an account to book staff eye exams, approve safety frame orders and see invoices, so the optical shop handles group orders without spreadsheets.\"",
+      "whenAndWhatItTakes": "Month 6, if they serve employers. Needs employer terms and safety frame options."
+    },
+    {
+      "name": "Exam note drafts from dictation",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"The optometrist speaks the refraction findings and advice aloud at the end of the eye exam; a structured record draft appears for checking, and nothing is filed until it's signed off.\"",
+      "whenAndWhatItTakes": "Month 7. Needs their note format, dictation consent wording and secure storage. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Online deposit on special-order frames",
+      "kind": "software",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 30,
+      "monthlyMax": 90,
+      "pitchLine": "\"Customers pay a deposit online for special-order frames and lenses, so orders aren't placed for people who never come back.\"",
+      "whenAndWhatItTakes": "Month 4. Needs deposit rules and the payment account."
+    },
+    {
+      "name": "Children's exam sibling booking",
+      "kind": "software",
+      "oneTimeMin": 400,
+      "oneTimeMax": 1000,
+      "monthlyMin": 30,
+      "monthlyMax": 90,
+      "pitchLine": "\"Parents book back-to-back eye exams for several children in one go, with kid-friendly instructions sent before the visit.\"",
+      "whenAndWhatItTakes": "Month 3, before the school season. Needs children's exam length and slot rules."
+    },
+    {
+      "name": "Second-language eye care pages with staff review",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Families who'd rather read about an eye exam in their home language get translated optometry pages, first drafted by machine and then corrected by a bilingual optician or receptionist.\"",
+      "whenAndWhatItTakes": "Month 6, only where a fluent staff member reviews. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Repair and adjustment walk-in queue",
+      "kind": "software",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1300,
+      "monthlyMin": 30,
+      "monthlyMax": 90,
+      "pitchLine": "\"People join the glasses repair queue from their phone and get a text when the optician is ready, instead of crowding the counter.\"",
+      "whenAndWhatItTakes": "Month 5. Needs walk-in hours and a tablet at the counter."
+    },
+    {
+      "name": "Frame collection launch drafts",
+      "kind": "ai",
+      "oneTimeMin": 600,
+      "oneTimeMax": 1500,
+      "monthlyMin": 59,
+      "monthlyMax": 149,
+      "pitchLine": "\"When a frame collection arrives, the team adds a few notes and gets drafted gallery descriptions, a post and an email to approve.\"",
+      "whenAndWhatItTakes": "Month 5. Needs the frames gallery and their brand voice notes. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Exams, frames and reorders dashboard",
+      "kind": "software",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 75,
+      "monthlyMax": 250,
+      "pitchLine": "\"See eye exams booked online, frame holds that became sales and contact lens reorders each month, so the owner knows what the site earns.\"",
+      "whenAndWhatItTakes": "Month 9. Needs six months of booking and sales data."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise exam booking and frames gallery for independents",
+      "whoPays": "Independent optometry practices, monthly",
+      "min": 79,
+      "max": 249,
+      "unit": "monthly",
+      "pitchLine": "\"Every independent optometrist loses exams to chains with online booking. The booking and frames gallery I built for one optical shop sets up for the next in days.\"",
+      "whyItWorks": "The workflow is the same in every practice; only exam types, frames and plans change."
+    },
+    {
+      "route": "Optometric association member template",
+      "whoPays": "The regional optometric association",
+      "min": 3000,
+      "max": 8000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer member optometrists a practice site template with exam booking, a benefits page and approval-ready wording already in place.\"",
+      "whyItWorks": "Associations want benefits that help independents compete, and members ask about websites often."
+    },
+    {
+      "route": "Optical buying group site programme",
+      "whoPays": "The buying group, per member practice",
+      "min": 500,
+      "max": 1500,
+      "unit": "one-time",
+      "pitchLine": "\"Your buying group's members all need booking and a frames gallery. Offer a group rate, and I set up each member's version.\"",
+      "whyItWorks": "Buying groups exist to pool spend, and a website is a spend every member has."
+    },
+    {
+      "route": "Frame brand stockist programme",
+      "whoPays": "An independent frame brand or distributor",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Give every optical shop that stocks your frames a gallery page and a 'try them here' booking link, so your collection sells through the independents.\"",
+      "whyItWorks": "Frame brands want their collection seen at stockists, and a consistent gallery helps every shop sell it."
+    },
+    {
+      "route": "White-label for optometry practice consultants",
+      "whoPays": "The practice consultant, per practice",
+      "min": 700,
+      "max": 1800,
+      "unit": "one-time",
+      "pitchLine": "\"You help independents compete with chains. A ready booking and reorder site under your brand gives your clients a result they can see in weeks.\"",
+      "whyItWorks": "Consultants need quick visible wins, and booking is the most visible one."
+    },
+    {
+      "route": "New optometry practice launch kit",
+      "whoPays": "Optometrists opening their own practice",
+      "min": 2500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"An optometrist leaving a chain to open their own practice needs booking, a frames gallery and recall set up before opening day. I've built the full set.\"",
+      "whyItWorks": "New practices buy everything at once and need exams booked from the first week."
+    },
+    {
+      "route": "Contact lens reorder service for practices",
+      "whoPays": "Optometry practices, monthly",
+      "min": 39,
+      "max": 129,
+      "unit": "monthly",
+      "pitchLine": "\"The lens reorder shop and resupply reminders work for any optometrist who wants lens wearers to keep buying from them.\"",
+      "whyItWorks": "Every practice loses lens sales online, and a small monthly tool is an easy yes."
+    },
+    {
+      "route": "Optometry school graduates",
+      "whoPays": "New optometrists, through the school's alumni office",
+      "min": 1500,
+      "max": 3000,
+      "unit": "one-time",
+      "pitchLine": "\"Optometry students finishing their degree often join or open an independent practice within a few years. A discounted starter eye care site, offered through the alumni office, meets them early.\"",
+      "whyItWorks": "Alumni offices want useful perks, and the class repeats every year."
+    },
+    {
+      "route": "Template licence for optical marketing agencies",
+      "whoPays": "The agency, per optometry client",
+      "min": 700,
+      "max": 1800,
+      "unit": "one-time",
+      "pitchLine": "\"License the exam booking, frames gallery and reorder shop structure so your agency stops rebuilding them for each optical client.\"",
+      "whyItWorks": "Agencies keep the client; you sell the structure underneath."
+    },
+    {
+      "route": "Employer safety eyewear programme kit",
+      "whoPays": "Optometrists in other cities serving employers",
+      "min": 1200,
+      "max": 3000,
+      "unit": "one-time",
+      "pitchLine": "\"The employer accounts and safety eyewear booking I built fit any optical shop that serves local trades and factories.\"",
+      "whyItWorks": "Safety eyewear programmes work the same everywhere, and the account setup is already built."
+    },
+    {
+      "route": "One optometrist per neighbourhood",
+      "whoPays": "An optometry practice in another part of the city",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"Eye exam patients stay close to home, so I build for a single optical shop in each neighbourhood. {Neighborhood} doesn't have one with me yet.\"",
+      "whyItWorks": "Independents value not sharing a builder with the shop down the street."
+    },
+    {
+      "route": "Taking over orphaned optical shop sites",
+      "whoPays": "The optometry practice whose builder left",
+      "min": 1500,
+      "max": 3500,
+      "unit": "one-time",
+      "pitchLine": "\"Optical shops often have a site nobody can edit after the builder moved on. I rebuild it on a structure with exam booking and a frames gallery already working.\"",
+      "whyItWorks": "These owners already want a fix and usually have content and photos ready."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Optometry site build plus care plan, one contract",
+      "min": 2200,
+      "max": 3800,
+      "unit": "one-time",
+      "trigger": "They say yes to the demo and the optometrist approves the scope.",
+      "line": "\"The optometry site and the care plan sit on one contract, so new frames or holiday hours are a message to me, not a job for the optical counter.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Google profile posts for the optical shop",
+      "min": 150,
+      "max": 300,
+      "unit": "monthly",
+      "trigger": "The first eye exam is booked online.",
+      "line": "\"Someone booked an eye exam at night through the site. Weekly posts keep the next person finding you instead of a chain.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "Frame wall and optical shop photo session",
+      "min": 400,
+      "max": 1100,
+      "unit": "per-shoot",
+      "trigger": "The frames gallery still shows marked placeholders where photos go.",
+      "line": "\"The frames gallery is ready, but it needs your real frame wall. One morning fills it.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Contact lens reorder shop",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "trigger": "The front desk mentions lens reorder calls or customers buying lenses online.",
+      "line": "\"Lens wearers are buying elsewhere because it's easier. A reorder shop on your own site keeps that sale with the practice.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Annual eye exam recall",
+      "min": 300,
+      "max": 900,
+      "unit": "one-time",
+      "trigger": "Ninety days of bookings, and the owner asks how to bring past patients back.",
+      "line": "\"Patients forget when their last eye exam was. A reminder with a booking link brings them back to you first.\""
+    },
+    {
+      "rung": 6,
+      "day": 150,
+      "offer": "Frame hold requests",
+      "min": 400,
+      "max": 1000,
+      "unit": "one-time",
+      "trigger": "Customers mention they saw a frame on the site and came in for it.",
+      "line": "\"People are coming in for frames they saw online. Let them hold the frame and book the exam in one step.\""
+    },
+    {
+      "rung": 7,
+      "day": 240,
+      "offer": "Eye care question assistant",
+      "min": 1200,
+      "max": 3000,
+      "unit": "one-time",
+      "trigger": "Phone time is mostly plan, hours and repair questions.",
+      "line": "\"Your counter answers the same benefits and repair questions all day. Let the site answer them from your own pages.\""
+    },
+    {
+      "rung": 8,
+      "day": 365,
+      "offer": "Exams, frames and reorders dashboard",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "trigger": "The first anniversary, when the owner asks what the site really earns.",
+      "line": "\"A year in, let's see how many eye exams, frame sales and lens reorders the site brought, and plan the next year around that.\""
+    }
+  ]
+}

@@ -1,0 +1,890 @@
+{
+  "schemaVersion": 1,
+  "category": "Plumbing companies (multi-truck)",
+  "slug": "plumbing-companies-multi-truck",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · expansion batch (healthcare + mid-size)",
+    "generatedAt": "2026-10-13",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Written for the GM or marketing lead at a fleet plumbing company that already buys ads. Leans on suburb pages, ad landing pages, price ranges, sewer camera and water heater paths, commercial backflow work and hiring. Backflow portal and roll-up platform prices are the least certain."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Suburb pages with local pipe notes",
+      "contains": "A page per suburb with recent plumbing jobs there, the nearest truck base, common pipe materials in its older housing, hard water or tree-root notes in brackets for the office to confirm, and a booking slot",
+      "why": "People type plumber plus their suburb. A page that knows their side of town and shows jobs on their street beats a list of place names."
+    },
+    {
+      "section": "Price ranges for common plumbing jobs",
+      "contains": "Ranges for a drain clear, toilet rebuild, tap replacement, water heater swap and sewer camera inspection, what pushes a job to the top of the range, and the call-out fee wording",
+      "why": "Callers shortlist the plumber who told them roughly what to expect. Ranges filter out tyre-kickers before the truck rolls."
+    },
+    {
+      "section": "Sewer camera inspection and trenchless options",
+      "contains": "Book a camera inspection, a sample video report with marked placeholders, roots versus collapsed pipe, spot repair versus full replacement, lining versus digging, and how the yard is left",
+      "why": "Sewer work is the biggest ticket a plumbing company runs. Homeowners decide after seeing the camera footage and the options laid out plainly."
+    },
+    {
+      "section": "Same-day water heater replacement",
+      "contains": "Tank or tankless, sizing by household and bathrooms, gas or electric, what the install includes, haul-away of the old heater, and the same-day booking cut-off time",
+      "why": "A cold shower is an urgent, ready-to-buy moment. The plumber whose page lets them pick a heater and a slot gets the job."
+    },
+    {
+      "section": "Commercial plumbing and backflow testing",
+      "contains": "Restaurants, retail and multi-site property, grease trap service, backflow testing schedules where the water authority requires them, test certificates sent to the manager, and a site survey request",
+      "why": "Property and facility managers buy on schedules and paperwork. A separate path wins recurring commercial work through the slow months."
+    },
+    {
+      "section": "Apprentice to licensed plumber career path",
+      "contains": "Openings by truck base, the apprenticeship ladder to licensed and master plumber, ride-along days, take-home truck policy, on-call rota, tool allowance and a short phone application",
+      "why": "Licensed plumbers are the limit on how many trucks run. Candidates compare companies on training, trucks and how much night work they'll carry."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C10",
+      "siteType": "local-conversion",
+      "name": "Suburb by Suburb",
+      "heroLayout": "split-photo",
+      "mood": [
+        "local",
+        "plain",
+        "direct"
+      ],
+      "bestFor": "Plumbing fleets buying search ads across many suburbs that need every landing page to book, not just inform",
+      "pairsWithTier": "starter",
+      "headlineSample": "Plumbers in {City} and every suburb around it, booked online",
+      "whyItFits": "Steel blue and a neutral grotesque keep each suburb page clean and fast, so the booking slot and the local jobs are the only things competing for attention."
+    },
+    {
+      "id": "b",
+      "themeId": "C50",
+      "siteType": "emergency-response",
+      "name": "Trucks Rolling Now",
+      "heroLayout": "card-stack",
+      "mood": [
+        "urgent",
+        "practical",
+        "steady"
+      ],
+      "bestFor": "Multi-truck plumbing companies running nights and weekends, where burst pipes and sewer backups drive the phone",
+      "pairsWithTier": "standard",
+      "headlineSample": "Burst pipe or sewer backup in {City}? A plumber is on the way",
+      "whyItFits": "The family's own combo. Cards for burst pipe, blocked drain, no hot water and sewer backup put the emergency first, and mono labels for call-out fees keep it factual."
+    },
+    {
+      "id": "c",
+      "themeId": "C4",
+      "siteType": "editorial-trust",
+      "name": "Sewer and Repipe Desk",
+      "heroLayout": "type-led",
+      "mood": [
+        "considered",
+        "expert",
+        "unhurried"
+      ],
+      "bestFor": "Plumbing companies leaning into sewer replacement, repipes and commercial accounts where the buyer reads before signing",
+      "pairsWithTier": "premium",
+      "headlineSample": "Sewer lines and repipes in {City}, explained before we dig",
+      "whyItFits": "Navy, brass and an editorial serif suit long explainers and camera reports for the large, planned jobs that carry the company's margin."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "Ad clicks to a thin page",
+      "line": "Your ad for emergency plumber in {City} lands on a contact page with a form and little else. You're paying for that click, and the next plumbing company's page shows ranges, reviews and a booking slot.",
+      "hook": "If their sponsored result shows for emergency plumber, note the page it lands on. Don't click it more than once.",
+      "linkLine": "An emergency plumbing landing page that books: {demo-link}"
+    },
+    {
+      "angle": "Suburbs with no pages",
+      "line": "You list plenty of suburbs on the plumbing site, but none has its own page. Someone with a blocked drain types plumber plus their suburb, and a page with jobs on their side of town wins.",
+      "hook": "Count the suburbs they name and check whether any has a page. Pick the biggest suburb that doesn't.",
+      "linkLine": "A plumbing page for each suburb your trucks cover: {demo-link}"
+    },
+    {
+      "angle": "No price ranges anywhere",
+      "line": "Nothing on your plumbing site gives a range for a water heater swap or a drain clear. People still call, but they call first the plumber who told them roughly what to expect.",
+      "hook": "Search the site for any price, fee or 'starting at'. If there's none, the angle holds.",
+      "linkLine": "Plumbing price ranges with the call-out fee explained: {demo-link}"
+    },
+    {
+      "angle": "Hiring plumbers, no careers page",
+      "line": "Your ads for plumbers and apprentices have been up a while, yet the site has no careers page. A licensed plumber choosing between two shops reads how each talks about trucks, nights and training.",
+      "hook": "Check the job boards for their openings and note how long they've run. Then look for Careers on the site.",
+      "linkLine": "A plumber careers page with the apprenticeship ladder: {demo-link}"
+    },
+    {
+      "angle": "Heavy on a phone",
+      "line": "Your plumbing site was slow to open on my phone, and the number only became tappable once the page settled. Someone with a burst pipe has water running the whole time it loads.",
+      "hook": "Load the homepage on your phone with wifi off and note how long until the number works. Screenshot it for when they reply.",
+      "linkLine": "Your plumbing site, light enough for a phone in a flooded hallway: {demo-link}"
+    },
+    {
+      "angle": "Sewer work hidden in drains",
+      "line": "Your posts show sewer camera inspections and lateral repairs, but the site files it under drain cleaning. A homeowner with roots in the sewer line wants the camera report and the options before calling.",
+      "hook": "Find a sewer or camera job in their posts. Then check whether the site has a sewer page at all.",
+      "linkLine": "A sewer camera and repair page with trenchless options: {demo-link}"
+    },
+    {
+      "angle": "Water heaters with no booking",
+      "line": "Your trucks clearly swap a lot of water heaters, but there's no page where a family with a cold shower can pick tank or tankless and book a same-day plumber.",
+      "hook": "Count water heater jobs in their recent posts or reviews. Then look for a water heater page with a booking option.",
+      "linkLine": "Same-day water heater replacement, picked and booked online: {demo-link}"
+    },
+    {
+      "angle": "Plumbers named in reviews",
+      "line": "Your plumbers get named in reviews for clean boots and straight answers. Those reviews belong on the suburb pages where the work happened, which is where a stranger decides on a plumbing company.",
+      "hook": "Copy one review naming a plumber and, if possible, the suburb. Quote it back when they reply.",
+      "linkLine": "Plumbing reviews placed on the suburb they came from: {demo-link}"
+    },
+    {
+      "angle": "Commercial and backflow",
+      "line": "Your vans are at restaurants and strip malls, but the plumbing site has nothing for a property manager who needs backflow testing or grease trap service on a schedule.",
+      "hook": "Look for commercial jobs in posts or 'commercial' on the truck lettering. Then check the site for a commercial page.",
+      "linkLine": "A commercial plumbing and backflow testing section: {demo-link}"
+    },
+    {
+      "angle": "Weekday-only booking",
+      "line": "Your listing says emergency plumber, but the online booking only offers weekday slots. A sewer backup on a Sunday night needs a request path that says a plumber is coming.",
+      "hook": "Open their booking tool and check whether weekends and evenings appear. Note what it offers.",
+      "linkLine": "Plumbing booking that covers nights and weekends: {demo-link}"
+    },
+    {
+      "angle": "Divisions on one services page",
+      "line": "You run drains, water heaters, sewer lines and excavation, and the plumbing site lumps them on one services page. Each of those is a different search and a different buyer.",
+      "hook": "Check the services menu. If several divisions share a single page, list the ones that need their own.",
+      "linkLine": "Each plumbing division with its own page and booking: {demo-link}"
+    },
+    {
+      "angle": "Heavy rain and backups",
+      "line": "Heavy rain in {City} means sump pumps failing and floor drains backing up across the region. The plumbing company whose site books a visit fast during the storm keeps those callers.",
+      "hook": "Use this the week a big storm is forecast, or right after one. Mention the storm by its day.",
+      "linkLine": "Storm-week sump and drain backup booking: {demo-link}"
+    },
+    {
+      "angle": "Payments on sewer and repipe",
+      "line": "A sewer line replacement or whole-house repipe is a big unplanned bill, and your plumbing site doesn't mention payment options. Families want the monthly number before you dig up the yard.",
+      "hook": "Only if they mention financing in a post, a review or the truck lettering. Otherwise skip this angle.",
+      "linkLine": "Sewer and repipe payment options shown up front: {demo-link}"
+    },
+    {
+      "angle": "Licence in the footer only",
+      "line": "Your plumbing licence sits in small print in the footer. For a company sending many plumbers into homes, a page on licensing, insurance and who will knock on the door reassures the person letting them in.",
+      "hook": "Check the footer and about page for licence details. Note that a record exists; never quote a number you didn't see.",
+      "linkLine": "Licensing, insurance and your plumbers, on one page: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "That {specific recent job} you posted is the kind of plumbing work a project page should carry, with the problem, the fix and the suburb. On the feed it's gone by Friday.",
+      "hook": "Pick the newest sewer, repipe or commercial job they posted and name it exactly, with the suburb if tagged.",
+      "linkLine": "That plumbing job written up as a project page: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, I came across {Business Name} while looking at plumbing companies around {City}. You clearly run a lot of trucks and buy ads across the suburbs, but most of those suburbs share one page and the site gives no price ranges.\n\nI put together a sample of a site built for a fleet your size: suburb pages with local jobs, price ranges for common plumbing work, and sewer and water heater booking paths, with marked placeholders where your photos would go.\n\nWho handles the website on your side?",
+    "dm2": "{Owner}, following up in case my note got lost under service calls. Here's the sample plumbing site for {Business Name}: {demo-link}\n\nThe parts worth a look: a page per suburb, price ranges with the call-out fee explained, a sewer camera page, same-day water heater booking and a careers page for plumbers. Happy to send it to whoever runs your ads too.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for plumbing companies around {City}. I sent a sample site over earlier this week, did it reach you?\"\n\nIF NO:\n\"No problem. Short version: I rebuilt the {Business Name} site as a sample with a page for each suburb, price ranges for common plumbing jobs, and sewer and water heater booking, with marked placeholders where your photos would go. Who should I email it to?\"\n\nIF YES:\n\"What did you make of it?\"\n → let them talk, don't fill the silence\n\"You already pay for clicks, so the question is what happens after the click. This is the page set those ads land on, connected to your scheduling system, and you own it. The build runs {Build Range} depending on how many suburbs and divisions get their own pages, then {Care Range} a month for hosting, changes and new suburb pages. For a company your size I'd quote about {Build Price}.\"\n\"Could we take twenty minutes with you and whoever runs your ads?\"\n\nCLOSE:\n\"I'll send a one-page scope you can share. We start with the suburbs your ads already target, so the spend works harder from the first month.\"",
+    "objections": [
+      {
+        "objection": "Our ad agency builds our landing pages.",
+        "handler": "\"Then I'll work with them. Most agencies build one page per campaign; I'm building a page per suburb and per division, tied to booking. Their ads get better pages to land on, and they keep running the spend.\""
+      },
+      {
+        "objection": "We don't publish prices, every plumbing job is different.",
+        "handler": "\"Agreed, so we publish ranges and what moves a job to the top of the range, never fixed prices. You approve every number, and the call-out fee wording is yours.\""
+      },
+      {
+        "objection": "We need to talk to the owner and the ops manager first.",
+        "handler": "\"Makes sense. I'll send a one-page scope with the suburbs, divisions and price, and I'm glad to do a short call with everyone together.\""
+      },
+      {
+        "objection": "We're too busy with emergency calls right now.",
+        "handler": "\"That's why we build around you. I need about two hours from your team across the project, mostly approving suburb pages and price ranges.\""
+      },
+      {
+        "objection": "Our scheduling software has its own booking page.",
+        "handler": "\"Good, I connect to it. Its booking page is a form. Mine puts that booking inside the sewer page, the water heater page and each suburb page, so plumbing customers book from the page that answered their question.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}, depending on how many suburbs and divisions need pages. For your fleet I'd quote about {Build Price}. Compare it with a couple of months of ad spend going to a thin contact page.\""
+      }
+    ],
+    "email": {
+      "subject": "Suburb pages and booking for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for plumbing companies around {City}. {Business Name} clearly runs a busy fleet and advertises across the suburbs, but the site gives most of those suburbs one shared page, shows no price ranges and keeps sewer and water heater work on a general services list.\n\nI built a sample rather than ask for a meeting: a page per suburb with local jobs, price ranges for common plumbing work, a sewer camera page, same-day water heater booking and a careers page for plumbers, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIt connects to your current scheduling system. The build runs {Build Range}, plus {Care Range} a month for hosting, changes and new suburb pages as you grow.\n\nWorth twenty minutes with you and whoever runs your ads?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build suburb pages and booking for plumbing companies around {City}, and I've put together a sample for {Business Name}. I'll email the link so you can share it with your ads person. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm tidying up sample sites on Friday, the {Business Name} plumbing one included.\n\nWant me to keep it up for your team, or take it down? A one-word reply is plenty.",
+    "nurture": "Hi {Owner}, storm season is coming, and with it the sump failures and drain backups that fill a plumbing company's board.\n\nThe suburb and booking sample is still here if the timing is better now: {demo-link}. I can add any suburbs your trucks have started covering since."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to their monthly ad spend, not to page count. A GM who pays for clicks understands a better page after the click.",
+      "Price suburb pages per suburb, starting with the suburbs their ads already target.",
+      "Sewer and water heater paths are priced separately; each has its own booking logic and its own buyer.",
+      "Price ranges need owner sign-off on every number, so allow review time in the scope.",
+      "Quote the connection to their scheduling system as its own line, after you've seen how open it is.",
+      "Commercial and backflow work is a separate path with its own request form, priced as its own line."
+    ],
+    "lineItems": [
+      {
+        "item": "Suburb page with local pipe notes (each)",
+        "min": 300,
+        "max": 700,
+        "unit": "per-page",
+        "description": "Max when each suburb page carries its own recent jobs, a local review, bracketed pipe and soil notes and a booking slot.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Ad landing page per service (each)",
+        "min": 700,
+        "max": 1800,
+        "unit": "per-page",
+        "description": "Max when the page matches an ad group, books directly, and reports bookings back to the campaign.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Price range pages for common plumbing jobs",
+        "min": 1200,
+        "max": 3500,
+        "unit": "one-time",
+        "description": "Max with many job types, what moves each to the top of its range, and call-out fee wording per branch.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Sewer camera inspection page and booking",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "description": "Max with a sample video report, repair and replacement options, trenchless explainer and booking tied to the camera truck.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Water heater selector with same-day booking",
+        "min": 2000,
+        "max": 6000,
+        "unit": "one-time",
+        "description": "Max when it sizes by household, compares tank and tankless, shows ranges and offers same-day slots from the schedule.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Booking connected to the scheduling system",
+        "min": 3000,
+        "max": 9000,
+        "unit": "one-time",
+        "description": "Max when it reads live availability by truck base and writes jobs with job type and suburb into their system.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Careers and apprenticeship section",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "description": "Max with openings per truck base, the apprenticeship ladder, crew video placeholders and applications routed by role.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Commercial and backflow testing request path",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "description": "Max with multi-site requests, device counts per site and certificate delivery to the property manager.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Call tracking by page and suburb",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "description": "Max when every suburb and service page has its own tracked number feeding a monthly report.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "New suburb pages each month",
+      "min": 500,
+      "max": 1500,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Each month we add suburb pages where your plumbers are already working, with real jobs and reviews from there, so the map of your coverage keeps growing.\"",
+      "when": "Month 2, once the first suburb pages are booking."
+    },
+    {
+      "name": "Review requests tagged by suburb and plumber",
+      "min": 299,
+      "max": 699,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"After each plumbing job the customer gets a review request tagged with the plumber and the suburb, and the good ones land on that suburb's page.\"",
+      "when": "Day 30, once suburb pages are live."
+    },
+    {
+      "name": "Landing page testing for paid search",
+      "min": 600,
+      "max": 1500,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Every month we test one change on your emergency plumber and drain cleaning landing pages, headline, ranges or booking layout, and keep whatever books more.\"",
+      "when": "Month 2, once call tracking shows bookings by page."
+    },
+    {
+      "name": "Plumber recruiting video and campaign",
+      "min": 2000,
+      "max": 5000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A short video of your plumbers, trucks and training day, run as a recruiting campaign to licensed plumbers nearby and landing on the careers page.\"",
+      "when": "When they have several plumber or apprentice openings at once."
+    },
+    {
+      "name": "Truck-base listings management",
+      "min": 300,
+      "max": 800,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Each truck base gets its own business listing kept current with hours, suburbs covered, plumbing job posts and holiday emergency cover.\"",
+      "when": "Day 30, alongside the suburb pages."
+    },
+    {
+      "name": "Sewer and drain video from real jobs",
+      "min": 800,
+      "max": 2000,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Short clips from real sewer camera inspections and drain jobs, cut for the sewer page and social, with the customer's permission and no addresses shown.\"",
+      "when": "Month 3, once the sewer page is live."
+    },
+    {
+      "name": "Storm-season sump and backup campaign",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Before the rainy season, past customers with basements get a reminder to have the sump pump and backwater valve checked by your plumbers, booked from the message.\"",
+      "when": "A few weeks before their region's rainy season."
+    },
+    {
+      "name": "Property manager outreach pack",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A short capability sheet, email sequence and meeting deck for the commercial plumbing team to send property managers about backflow testing and grease traps.\"",
+      "when": "Once the commercial path is live and they want more accounts."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Excavation subcontractor on sewer digs",
+        "whoPays": "The excavation company, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"Whoever digs your sewer line replacements needs a site for other trades and municipal work. Your introduction gets me in, and your sewer page links to them.\"",
+        "whyItWorks": "Excavators work with every plumbing company in town and rarely have a site that shows what their machines can do."
+      },
+      {
+        "route": "Kitchen and bath fixtures showroom",
+        "whoPays": "The fixtures showroom",
+        "min": 4000,
+        "max": 12000,
+        "unit": "one-time",
+        "pitchLine": "\"The showroom where your customers pick taps and toilets needs a catalogue site with appointment booking. Their install referrals can point to your plumbers.\"",
+        "whyItWorks": "Showrooms rely on plumbers to install what they sell, so the plumbing company is a trusted introduction."
+      },
+      {
+        "route": "Commercial property managers with backflow schedules",
+        "whoPays": "The commercial property management company",
+        "min": 4000,
+        "max": 10000,
+        "unit": "one-time",
+        "pitchLine": "\"The managers whose backflow devices you test need a tenant and vendor portal. I build it, and plumbing work orders route to your commercial desk.\"",
+        "whyItWorks": "Commercial managers juggle many vendors and certificates, and already trust the plumbing company that keeps them compliant."
+      },
+      {
+        "route": "Water treatment and softener dealer",
+        "whoPays": "The water treatment dealer",
+        "min": 3000,
+        "max": 8000,
+        "unit": "one-time",
+        "pitchLine": "\"The softener and filtration dealer you install for needs a site with a water test request. Your plumbing customers with hard water get sent their way, and back.\"",
+        "whyItWorks": "Water treatment dealers and plumbers share every hard-water customer and need each other's installs."
+      },
+      {
+        "route": "Restoration company you hand flooded basements to",
+        "whoPays": "The restoration company, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"When your plumbers stop the leak, someone dries the basement. That restoration crew needs a claim-process page, and they send repair work back to your plumbing team.\"",
+        "whyItWorks": "Plumbers and restoration firms refer to each other on every water loss, so the introduction is warm."
+      },
+      {
+        "route": "Septic pumping company on the rural edge",
+        "whoPays": "The septic company",
+        "min": 2500,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"Out past the sewer mains, a septic pumper handles what your plumbers don't. They need a pumping schedule page, and your drain work in those areas can come from them.\"",
+        "whyItWorks": "Septic firms and plumbing fleets split the same rural homes, and septic owners rarely have a decent site."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Maintenance request sorter for commercial landlords",
+        "whoPays": "The commercial landlord, monthly",
+        "min": 300,
+        "max": 800,
+        "unit": "monthly",
+        "pitchLine": "\"Tenant emails about a leaking tap or a slow floor drain are sorted into proper work orders with unit, urgency and access notes, and the plumbing ones go to your team.\"",
+        "whyItWorks": "Landlords lose hours rewriting tenant complaints, and the plumber gets clearer tickets."
+      },
+      {
+        "route": "Fixture-match helper for the showroom",
+        "whoPays": "The fixtures showroom, monthly",
+        "min": 200,
+        "max": 500,
+        "unit": "monthly",
+        "pitchLine": "\"Customers upload the old tap or toilet and the showroom's assistant suggests matching fixtures in stock, then books the install with your plumbers.\"",
+        "whyItWorks": "Showrooms lose sales when customers can't match what they have. The plumbing partner gets the install."
+      },
+      {
+        "route": "Water test explainer for the treatment dealer",
+        "whoPays": "The water treatment dealer, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Hardness and iron results become a plain one-page summary with the treatment options, written from the dealer's own notes and checked by their tech.\"",
+        "whyItWorks": "Dealers sell on understanding. Clear results convert more tests into installs, which the plumber often fits."
+      },
+      {
+        "route": "Bid reader for the excavation sub",
+        "whoPays": "The excavation company",
+        "min": 2000,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"Municipal and builder bid packets are long. An assistant pulls trench lengths, depths and dates into a draft for the excavator to price, sewer laterals first.\"",
+        "whyItWorks": "Excavators lose bids to slow paperwork, and the plumbing company's introduction makes the first demo easy."
+      },
+      {
+        "route": "Sewer scope summary writer for inspection firms",
+        "whoPays": "The home inspection company, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Inspectors who run sewer scopes before a sale get a plain summary drafted from their notes, roots, sags and breaks first, for the buyer to read.\"",
+        "whyItWorks": "Inspection firms compete on clear reports and refer sewer repair work to the plumbing companies they trust."
+      },
+      {
+        "route": "Grease trap service log for restaurant groups",
+        "whoPays": "The restaurant group, monthly",
+        "min": 200,
+        "max": 600,
+        "unit": "monthly",
+        "pitchLine": "\"Restaurant groups ask 'when was the grease trap at the east store last pumped' and get the answer from your plumbing service records, with the next date.\"",
+        "whyItWorks": "Multi-site operators need records for inspections. The plumbing company becomes the vendor with the cleanest paperwork."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Unanswered-call and form follow-up texts",
+      "kind": "automation",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Anyone who rings off before a dispatcher answers, or starts a plumbing request and stops, gets a text asking what's leaking and offering the next slot.\"",
+      "whenAndWhatItTakes": "Day 30. Needs their tracked numbers, the booking page and approved wording."
+    },
+    {
+      "name": "Suburb lead and job map",
+      "kind": "software",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"A map of every plumbing request and booked job by suburb, so the GM sees where the ads work, where trucks drive furthest and which suburb needs a page next.\"",
+      "whenAndWhatItTakes": "Month 2. Needs booking data with addresses and their list of truck bases."
+    },
+    {
+      "name": "Review responses naming the suburb and job",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Each review gets a reply drafted in the company's voice that mentions the drain, heater or sewer fix and the suburb, waiting for a manager to approve.\"",
+      "whenAndWhatItTakes": "Month 2. Needs a set of past replies and an approver per truck base. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Sewer camera video report portal",
+      "kind": "software",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 15000,
+      "monthlyMin": 200,
+      "monthlyMax": 600,
+      "pitchLine": "\"The plumber uploads the camera footage, marks roots, sags and breaks, and the homeowner gets a branded sewer report with the repair options and a sign button.\"",
+      "whenAndWhatItTakes": "Month 3. Needs sample camera files, their repair options and pricing rules."
+    },
+    {
+      "name": "Night and weekend plumbing call agent",
+      "kind": "ai",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 15000,
+      "monthlyMin": 800,
+      "monthlyMax": 2000,
+      "pitchLine": "\"Outside office hours it answers, tells the caller where to shut the water off, books the emergency plumber and pages on-call only for active leaks and backups.\"",
+      "whenAndWhatItTakes": "Month 3. Needs on-call rotas, emergency fee wording and shut-off guidance they approve. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Water heater configurator with same-day slots",
+      "kind": "software",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Customers answer a few questions about the household and gas or electric, see two or three heater options with installed prices, and book a same-day plumber.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their heater line-up, installed price rules and the daily same-day cut-off."
+    },
+    {
+      "name": "Ageing water heater reminder series",
+      "kind": "automation",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Customers whose water heater your plumbers noted as old get a short series about flushing, warning signs and replacement, with a booking link each time.\"",
+      "whenAndWhatItTakes": "Month 4. Needs service records with heater ages and approved wording."
+    },
+    {
+      "name": "Booking-form photo sorter for dispatch",
+      "kind": "ai",
+      "oneTimeMin": 2500,
+      "oneTimeMax": 6000,
+      "monthlyMin": 200,
+      "monthlyMax": 500,
+      "pitchLine": "\"When a customer adds a picture of the leak or the fitting, the dispatcher sees a short note on what it likely is and which plumber or parts to send.\"",
+      "whenAndWhatItTakes": "Month 4. Needs a set of past job pictures with what the job turned out to be. Comes with the AI maintenance retainer; the plumber always confirms on site."
+    },
+    {
+      "name": "Flat-rate price book manager",
+      "kind": "software",
+      "oneTimeMin": 8000,
+      "oneTimeMax": 20000,
+      "monthlyMin": 300,
+      "monthlyMax": 800,
+      "pitchLine": "\"One plumbing price book for every truck, updated from the office, with options the plumber shows on a tablet and the customer approves before work starts.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their current price book, parts costs and approval rules."
+    },
+    {
+      "name": "Job-notes summariser for office and customer",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 300,
+      "monthlyMax": 700,
+      "pitchLine": "\"The plumber's rough notes become a clean summary for the customer and a tidy invoice description for the office, before the truck leaves the driveway.\"",
+      "whenAndWhatItTakes": "Month 5. Needs sample job notes and invoice wording. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Backflow test scheduling and certificate portal",
+      "kind": "software",
+      "oneTimeMin": 10000,
+      "oneTimeMax": 25000,
+      "monthlyMin": 300,
+      "monthlyMax": 900,
+      "pitchLine": "\"Every backflow device across their commercial accounts with its test due date, auto-booked visits and certificates the property manager can download.\"",
+      "whenAndWhatItTakes": "Month 6, once commercial accounts grow. Needs device lists, test records and the certificate format they use."
+    },
+    {
+      "name": "Cost per booked job by suburb and campaign",
+      "kind": "software",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 14000,
+      "monthlyMin": 200,
+      "monthlyMax": 600,
+      "pitchLine": "\"Ad spend, calls and booked plumbing jobs joined by suburb and campaign, so the marketing lead can cut the suburbs that cost too much per booking.\"",
+      "whenAndWhatItTakes": "Month 4. Needs ad account read access, call tracking and job revenue from their system."
+    },
+    {
+      "name": "Hiring assistant for licensed plumbers",
+      "kind": "ai",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 200,
+      "monthlyMax": 500,
+      "pitchLine": "\"Applicants from the careers page answer questions on licence level, sewer and water heater experience and night cover, and the hiring manager gets a ranked short list.\"",
+      "whenAndWhatItTakes": "With the careers section. Needs must-haves by role and pay bands. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Apprentice hours and training tracker",
+      "kind": "software",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Each apprentice plumber's logged hours, signed-off skills and ride-alongs in one place, ready for licence applications and the next pay review.\"",
+      "whenAndWhatItTakes": "Month 6. Needs their training steps and how hours are logged now."
+    },
+    {
+      "name": "Sewer replacement candidates from camera notes",
+      "kind": "ai",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 12000,
+      "monthlyMin": 300,
+      "monthlyMax": 800,
+      "pitchLine": "\"It reads past drain calls and camera notes and lists homes with repeat root clogs or bellied sewer lines, so the sales team follows up before the next backup.\"",
+      "whenAndWhatItTakes": "Month 7. Needs a season of drain and camera notes. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Booking-call coach for the dispatch team",
+      "kind": "ai",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 12000,
+      "monthlyMin": 500,
+      "monthlyMax": 1500,
+      "pitchLine": "\"Recorded booking calls are summarised and checked against the script, so the dispatch lead sees who forgets the call-out fee or the drain maintenance offer.\"",
+      "whenAndWhatItTakes": "Month 7. Needs call recordings with consent notices in place and their booking script. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Commercial preventive maintenance reminders",
+      "kind": "automation",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Commercial accounts get reminders and booking links for grease trap pumping, jetting and water heater flushes on their schedule, without the office chasing them.\"",
+      "whenAndWhatItTakes": "Month 5. Needs the commercial account list and service intervals."
+    },
+    {
+      "name": "Truck-base performance dashboard",
+      "kind": "software",
+      "oneTimeMin": 8000,
+      "oneTimeMax": 20000,
+      "monthlyMin": 300,
+      "monthlyMax": 900,
+      "pitchLine": "\"Each truck base on one screen: plumbing jobs booked, average ticket, sewer and heater sales, callbacks and reviews, refreshed every week.\"",
+      "whenAndWhatItTakes": "Month 8. Needs read access to scheduling and billing data, and the measures leadership watches."
+    },
+    {
+      "name": "Field answers from the company's plumbing standards",
+      "kind": "ai",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 15000,
+      "monthlyMin": 500,
+      "monthlyMax": 1200,
+      "pitchLine": "\"Plumbers ask on their phone how the company wants a water heater vented or a cleanout placed, and get the answer from your own standards and senior plumbers' notes.\"",
+      "whenAndWhatItTakes": "Month 9. Needs their written install standards and training notes. Comes with the AI maintenance retainer; the licensed plumber always decides on site."
+    },
+    {
+      "name": "Storm-mode site and booking switch",
+      "kind": "automation",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 200,
+      "monthlyMax": 500,
+      "pitchLine": "\"When heavy rain is forecast for {City}, the plumbing site leads with sump and drain backup booking, extra slots open, and the ad copy switches to match.\"",
+      "whenAndWhatItTakes": "Month 6. Needs a weather feed, storm wording and access to booking settings."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the sewer video report portal",
+      "whoPays": "Plumbing and drain companies, monthly per company",
+      "min": 199,
+      "max": 699,
+      "unit": "monthly",
+      "pitchLine": "\"I built a sewer camera report portal for one plumbing fleet. Every drain company with a camera truck sends footage the homeowner can't follow.\"",
+      "whyItWorks": "The first client paid to work out the workflow. Every sewer-and-drain company has the same reporting gap."
+    },
+    {
+      "route": "Group consolidating plumbing companies",
+      "whoPays": "The holding group buying plumbing companies",
+      "min": 30000,
+      "max": 90000,
+      "unit": "one-time",
+      "pitchLine": "\"Each plumbing company you buy arrives with its own site, suburbs and booking. One platform with a page set per brand lets you fold them in fast.\"",
+      "whyItWorks": "Consolidators repeat the same integration after every deal and pay for a template that's already working."
+    },
+    {
+      "route": "Plumbing supply house's contractor programme",
+      "whoPays": "The plumbing supply house, annually",
+      "min": 10000,
+      "max": 40000,
+      "unit": "per-year",
+      "pitchLine": "\"Offer the plumbing contractors on your books a suburb page and booking template. Busier plumbers buy more from the counter.\"",
+      "whyItWorks": "Supply houses fund contractor loyalty and want their best customers growing."
+    },
+    {
+      "route": "Fixture maker's certified installer network",
+      "whoPays": "The fixture or water heater manufacturer's regional programme",
+      "min": 15000,
+      "max": 60000,
+      "unit": "one-time",
+      "pitchLine": "\"Your certified plumbing installers need booking pages that sell your heaters and fixtures properly. I've built that for one fleet and can roll it out.\"",
+      "whyItWorks": "Manufacturers rank installers and fund marketing for the best ones."
+    },
+    {
+      "route": "Water authority's backflow tester portal",
+      "whoPays": "The water authority or utility",
+      "min": 20000,
+      "max": 80000,
+      "unit": "one-time",
+      "pitchLine": "\"Testers submit backflow results by paper and email today. A portal where plumbing testers file results and owners see due dates saves your staff the chasing.\"",
+      "whyItWorks": "Utilities that require testing struggle with the paperwork, and a plumbing client that tests devices is the proof of the workflow."
+    },
+    {
+      "route": "Plumbing contractors' association toolkit",
+      "whoPays": "The national or regional plumbing association",
+      "min": 5000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer members a careers page and apprenticeship tracker built for plumbing companies. Recruiting is the topic at every association meeting.\"",
+      "whyItWorks": "Associations need benefits that members use, and workforce tools fit their agenda."
+    },
+    {
+      "route": "White-label suburb page system for agencies",
+      "whoPays": "The marketing agency, per plumbing client",
+      "min": 2000,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency runs plumbing ads into weak pages. License my suburb page system with booking and price ranges and launch each plumber in weeks.\"",
+      "whyItWorks": "Agencies hold many plumbing accounts and want better landing pages without a dev team."
+    },
+    {
+      "route": "Plumbing franchise brand local pages",
+      "whoPays": "The franchise brand, per territory",
+      "min": 2500,
+      "max": 7000,
+      "unit": "one-time",
+      "pitchLine": "\"Every plumbing franchisee needs suburb pages, local price ranges and booking pointed at their own trucks. One template, rolled out by territory.\"",
+      "whyItWorks": "Franchise systems buy per territory, so one build becomes a stream of roll-outs."
+    },
+    {
+      "route": "Home warranty company's plumbing dispatch booking",
+      "whoPays": "The home warranty company",
+      "min": 10000,
+      "max": 35000,
+      "unit": "one-time",
+      "pitchLine": "\"Your plumbing vendors take claims with no shared way to offer arrival times. A booking layer across the vendor network cuts the complaint calls.\"",
+      "whyItWorks": "Warranty firms are judged on how fast a plumber shows up, and they control the vendor network."
+    },
+    {
+      "route": "Insurer's water-loss prevention programme",
+      "whoPays": "The home insurer's loss-prevention team",
+      "min": 15000,
+      "max": 50000,
+      "unit": "one-time",
+      "pitchLine": "\"Policyholders could book a plumbing check for old supply lines and water heaters through one portal run by vetted plumbers. I've built the booking side already.\"",
+      "whyItWorks": "Insurers pay for water losses and look for ways to prevent them; a fleet plumber shows the service is real."
+    },
+    {
+      "route": "Plumbing fleet in another metro",
+      "whoPays": "A plumbing company in another metro, at your normal rate",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I work with one multi-truck plumbing company per metro. {City} is taken; the next metro's leading fleet is open.\"",
+      "whyItWorks": "Fleet owners meet at trade events and peer groups, and exclusivity makes the decision quicker."
+    },
+    {
+      "route": "Trade college plumbing programme portal",
+      "whoPays": "The trade college plumbing programme",
+      "min": 5000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Second-year plumbing students need paid apprenticeships, and fleets need apprentices who show up. A placement board that matches the two gives the college numbers it can report.\"",
+      "whyItWorks": "Colleges are measured on placements, and the client fleet already hires their students."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Plumbing suburb and booking site plus care, one contract",
+      "min": 10000,
+      "max": 25000,
+      "unit": "one-time",
+      "trigger": "The GM and owner sign the one-page scope.",
+      "line": "\"The plumbing site, suburb pages, booking and care sit on one contract, so a new suburb or a changed call-out fee is an email to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Review requests tagged by suburb and plumber",
+      "min": 299,
+      "max": 699,
+      "unit": "monthly",
+      "trigger": "Suburb pages start booking jobs and customers name plumbers in messages.",
+      "line": "\"The suburb pages are booking. Let's get a review from each plumbing job onto the page for the suburb it came from.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "Unanswered-call and form follow-up texts",
+      "min": 500,
+      "max": 1500,
+      "unit": "one-time",
+      "trigger": "Call tracking shows callers ringing off before dispatch answers.",
+      "line": "\"Call tracking shows people hanging up before a dispatcher answers. A text asking what's leaking brings most of them back to your plumbers.\""
+    },
+    {
+      "rung": 4,
+      "day": 75,
+      "offer": "New suburb pages each month",
+      "min": 500,
+      "max": 1500,
+      "unit": "monthly",
+      "trigger": "Bookings arrive from suburbs that don't have a page yet.",
+      "line": "\"Jobs are coming from suburbs without a page. Let's add those each month with the plumbing work you've done there.\""
+    },
+    {
+      "rung": 5,
+      "day": 120,
+      "offer": "Sewer camera video report portal",
+      "min": 6000,
+      "max": 15000,
+      "unit": "one-time",
+      "trigger": "The sewer page books camera inspections and quotes stall after the visit.",
+      "line": "\"Sewer quotes stall once the plumber leaves. A camera report the homeowner can replay and sign from closes more of them.\""
+    },
+    {
+      "rung": 6,
+      "day": 180,
+      "offer": "Cost per booked job by suburb and campaign",
+      "min": 5000,
+      "max": 14000,
+      "unit": "one-time",
+      "trigger": "The marketing lead asks which suburbs the ads should stop targeting.",
+      "line": "\"You're asking where the ad money is wasted. This shows cost per booked plumbing job for every suburb and campaign.\""
+    },
+    {
+      "rung": 7,
+      "day": 270,
+      "offer": "Backflow test scheduling and certificate portal",
+      "min": 10000,
+      "max": 25000,
+      "unit": "one-time",
+      "trigger": "Commercial backflow accounts grow past what the office tracks in a spreadsheet.",
+      "line": "\"Your backflow accounts have outgrown the spreadsheet. Due dates, booked tests and certificates in one portal keep those plumbing contracts renewing.\""
+    },
+    {
+      "rung": 8,
+      "day": 365,
+      "offer": "Truck-base performance dashboard",
+      "min": 8000,
+      "max": 20000,
+      "unit": "one-time",
+      "trigger": "They open a new truck base or buy another plumbing company.",
+      "line": "\"With a new base coming on, leadership needs every plumbing base on one screen each week.\""
+    }
+  ]
+}

@@ -38,7 +38,7 @@ export function SavedStrip({ input, direction = "b", finderEnabled }: { input: K
         <Button
           variant="secondary"
           disabled={pending}
-          onClick={() => start(async () => setResult(await saveKit({ category: input.cat, device: input.device, state: input.st, city: input.city, direction })))}
+          onClick={() => start(async () => setResult(await saveKit({ category: input.cat, device: input.device, state: input.st, city: input.city, direction, ...(input.lang ? { siteLang: input.lang } : {}) })))}
         >
           {pending ? "Saving…" : "Save this kit"}
         </Button>

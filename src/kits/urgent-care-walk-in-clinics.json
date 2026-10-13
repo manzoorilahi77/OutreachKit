@@ -1,0 +1,875 @@
+{
+  "schemaVersion": 1,
+  "category": "Urgent care & walk-in clinics",
+  "slug": "urgent-care-walk-in-clinics",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · expansion batch (healthcare + mid-size)",
+    "generatedAt": "2026-10-13",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Leaned on how walk-in patients choose: wait time, distance and open now, plus employers as a second buyer. Nothing on the site assesses symptoms. Unsure on the live wait-time feed and employer portal ranges; both depend on the clinic's queue and records systems."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Live wait times and save-my-spot check-in",
+      "contains": "The current wait at each urgent care clinic, online check-in that holds a place in line, a text when it's nearly their turn, and a note that sicker patients may be seen first",
+      "why": "Walk-in patients choose on wait and distance, often from a phone in the car park. Showing both is what wins the visit."
+    },
+    {
+      "section": "Urgent care or emergency department?",
+      "contains": "A plain list of what the clinics see and what they don't, with a prominent instruction to call the local emergency number for severe symptoms, all approved by the medical director",
+      "why": "Unsure patients look for this before driving anywhere. A clear, careful answer earns trust and sends real emergencies to the right place."
+    },
+    {
+      "section": "Self-pay visit prices by service",
+      "contains": "Self-pay ranges for a basic visit, x-ray, stitches and common tests as [price] placeholders the clinic confirms, plus insurance accepted at each clinic",
+      "why": "Patients without cover, or with high out-of-pocket costs, compare clinics on price before they walk in. A clear range stops them driving elsewhere."
+    },
+    {
+      "section": "Services by clinic: x-ray, lab and stitches",
+      "contains": "Which clinics have on-site x-ray, lab testing, stitches and splinting, children's hours and step-free access, shown as filters on the location finder",
+      "why": "A parent whose child fell needs the nearest clinic with x-ray, not just the nearest clinic. One wasted trip loses that family."
+    },
+    {
+      "section": "Employer and occupational health services",
+      "contains": "Work injury care, pre-employment physicals and drug screening, how employers open an account, and how work-status forms reach the employer with the worker's consent",
+      "why": "Employers are repeat buyers who pick one clinic network for every worker. They decide on convenience, paperwork and clinic coverage."
+    },
+    {
+      "section": "Virtual visit start page",
+      "contains": "What a video visit can handle, its hours and [price], how to start one from a phone, and when the clinic will ask the patient to come in instead",
+      "why": "Some patients would rather not leave home at all. A clear start page keeps them with the clinic instead of a national app."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C50",
+      "siteType": "emergency-response",
+      "name": "Wait Board",
+      "heroLayout": "card-stack",
+      "mood": ["urgent", "clear", "exact"],
+      "bestFor": "Networks of walk-in clinics where the live wait time and the nearest open location are the whole decision",
+      "pairsWithTier": "starter",
+      "headlineSample": "See the wait at every {City} urgent care clinic",
+      "whyItFits": "Black on white with a single red and a mono face for numbers makes wait times read like a departures board. Each clinic is a card with its wait and a check-in button."
+    },
+    {
+      "id": "b",
+      "themeId": "C6",
+      "siteType": "booking-first",
+      "name": "Save My Spot",
+      "heroLayout": "split-photo",
+      "mood": ["clinical", "calm", "fast"],
+      "bestFor": "Groups selling online check-in, self-pay prices and virtual visits from one booking-first home page",
+      "pairsWithTier": "standard",
+      "headlineSample": "Check in online at a {City} walk-in clinic",
+      "whyItFits": "Chosen over the family's warm cream combo: someone deciding in a car park needs bright, clinical clarity. Cobalt and a neutral grotesque read as quick and trustworthy."
+    },
+    {
+      "id": "c",
+      "themeId": "C8",
+      "siteType": "b2b-capability",
+      "name": "Employer Health Desk",
+      "heroLayout": "type-led",
+      "mood": ["steady", "capable", "trusted"],
+      "bestFor": "Larger urgent care groups with occupational health contracts, employer accounts and clinics across a region",
+      "pairsWithTier": "premium",
+      "headlineSample": "Work injury and urgent care across {City}",
+      "whyItFits": "Deep green and a classical serif say established and dependable to an HR manager comparing clinic networks, while the patient path stays one click away."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "No wait time shown",
+      "line": "Your urgent care listings show opening hours but nothing about the wait. A parent with a feverish child picks the clinic that shows a wait time on their phone.",
+      "hook": "Check each clinic's listing and the site for any wait time. If there's none anywhere, the angle holds.",
+      "linkLine": "Live wait times for every urgent care clinic: {demo-link}"
+    },
+    {
+      "angle": "No online check-in",
+      "line": "There's no way to save a spot at your walk-in clinics online. Most people would rather wait on their own sofa than in a waiting room full of coughing strangers.",
+      "hook": "Look for a check-in or 'save my spot' link on the site and listings. Note if it's missing at every clinic.",
+      "linkLine": "Online check-in with a text when it's nearly your turn: {demo-link}"
+    },
+    {
+      "angle": "Which clinic is open now",
+      "line": "Your clinics close at different times, but the site lists hours in one block. At eight in the evening, someone has to work out which urgent care is still open.",
+      "hook": "Compare the hours on two clinic listings with the site. Note any that differ.",
+      "linkLine": "An open-now finder across your walk-in clinics: {demo-link}"
+    },
+    {
+      "angle": "Self-pay prices hidden",
+      "line": "Reviews keep asking what an urgent care visit costs without insurance. A self-pay price range on the site answers that before someone drives to a competitor who shows one.",
+      "hook": "Search their reviews and comments for 'price', 'cost' or 'self-pay'. Quote one.",
+      "linkLine": "Self-pay prices for each urgent care service: {demo-link}"
+    },
+    {
+      "angle": "Urgent care or emergency room",
+      "line": "A few reviews mention people unsure whether to come to your clinic or go to the emergency department. A careful page on what your urgent care sees would help them decide before they drive.",
+      "hook": "Look for reviews from people sent on to an emergency department or unsure where to go. Never comment on a patient's case.",
+      "linkLine": "A clear 'urgent care or emergency' page for your clinics: {demo-link}"
+    },
+    {
+      "angle": "Employer services buried",
+      "line": "Your listing mentions work injury care and pre-employment physicals, but there's nothing for an employer to open an account. HR managers pick the clinic network that makes that easy.",
+      "hook": "Check the listing and site for occupational health or employer wording. Note whether there's a form.",
+      "linkLine": "An employer page for your occupational health clinic services: {demo-link}"
+    },
+    {
+      "angle": "Hiring nurses and providers",
+      "line": "Saw your group is hiring nurses and providers for more than one clinic. There's no careers page, so a good candidate finds a job post and nothing about what working your shifts is like.",
+      "hook": "Only if they've posted roles recently. Note the roles and which clinics.",
+      "linkLine": "A careers page for your urgent care clinics: {demo-link}"
+    },
+    {
+      "angle": "X-ray only at some clinics",
+      "line": "Your posts mention x-ray at some clinics, but the site doesn't say which. A parent whose child hurt a wrist needs the nearest walk-in clinic with x-ray, not the nearest one.",
+      "hook": "Only if they post about x-ray or lab services at specific clinics. Note which.",
+      "linkLine": "Services filtered by urgent care clinic: {demo-link}"
+    },
+    {
+      "angle": "School and sports physicals",
+      "line": "School and sports physical season is close, and your clinics don't have a page to book one. Parents book whichever walk-in clinic lets them pick a time.",
+      "hook": "Use this in the weeks before school terms and sports seasons start. Check if they offer physicals.",
+      "linkLine": "A sports physical booking page across your clinics: {demo-link}"
+    },
+    {
+      "angle": "Virtual visits not on the site",
+      "line": "Your posts mention video visits, but the site has no way to start one. A patient who'd rather stay home ends up on a national app instead of with your urgent care.",
+      "hook": "Only if they've posted about virtual or video visits. Check the site for a start button.",
+      "linkLine": "A virtual visit start page for your clinics: {demo-link}"
+    },
+    {
+      "angle": "Hours that don't match",
+      "line": "The hours on two of your clinic listings don't match the website. Someone who drives to a closed urgent care clinic remembers it.",
+      "hook": "Compare listing hours to the site for every clinic. Note the exact mismatch to quote back.",
+      "linkLine": "Clinic hours kept right everywhere from one place: {demo-link}"
+    },
+    {
+      "angle": "Reviews about waiting",
+      "line": "Several reviews say the care was good but the wait felt endless, mostly because no one knew how long it would be. A text when it's nearly their turn changes how that visit feels.",
+      "hook": "Find reviews that praise staff but mention waiting. Quote the kindest one back.",
+      "linkLine": "Wait updates by text for walk-in patients: {demo-link}"
+    },
+    {
+      "angle": "New clinic opening",
+      "line": "Saw you're opening a new urgent care clinic in {Neighborhood}. Its page, hours and check-in should be live before the doors open so people find it the first night.",
+      "hook": "Only if they've announced a new clinic. Note the area and opening date.",
+      "linkLine": "A launch page for the new walk-in clinic: {demo-link}"
+    },
+    {
+      "angle": "Slow site on mobile data",
+      "line": "Your clinic site took a long time to load on my phone's mobile data. Someone feeling unwell in a car park won't wait for it, they'll tap the next urgent care.",
+      "hook": "Load the site on mobile data, not wifi, and count the seconds. Screenshot it for when they reply.",
+      "linkLine": "The urgent care site rebuilt to load fast on a phone: {demo-link}"
+    },
+    {
+      "angle": "A specific recent post",
+      "line": "That {specific recent job} post from your clinic team was a good reminder that urgent care is local people looking after neighbours. It belongs on the site, not just in a feed.",
+      "hook": "Pick their newest community or team post and name it exactly. Never reference a patient.",
+      "linkLine": "Your walk-in clinic story on a page people find: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, I was comparing urgent care clinics in {City} on my phone and noticed {Business Name} doesn't show a wait time or let people check in online at any location.\n\nI build sites for walk-in clinic groups: live waits, online check-in, an open-now finder and self-pay prices by clinic. I've sketched a sample for your clinics, with marked placeholders where your photos would go.\n\nWould it be useful if I sent it? And should it go to you or to whoever runs operations or marketing?",
+    "dm2": "{Owner}, following up on my note about {Business Name}. Here's the sample: {demo-link}\n\nIt shows the wait at each clinic, online check-in with a text when it's nearly their turn, an open-now finder, services by clinic, self-pay prices and an employer page. Nothing assesses symptoms, and nothing goes live without your medical director's sign-off. Happy to walk your team through it.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for urgent care groups here in {City}. I sent a note a few days ago about wait times and check-in for {Business Name}, did it reach you?\"\n\nIF THE CLINIC FRONT DESK ANSWERS:\n\"No problem, I know you're busy. Who handles the website for all the clinics? I'd like to send them a sample.\"\n\nIF NO:\n\"Short version: I built a sample site that shows the wait at each clinic, lets people check in online and lists self-pay prices, with marked placeholders where your photos would go. Can I email it to you and your operations lead?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"It's a site the group owns, connected to the check-in and queue system you already run, not a replacement. The build runs {Build Range} depending on clinic count and integrations, then {Care Range} a month for hosting, hours updates and new clinic pages. For your group I'd quote about {Build Price}, phased so check-in goes live first.\"\n\"Could we take twenty minutes with you and the medical director this week?\"\n\nCLOSE:\n\"I'll send a phased scope you can share. Phase one is wait times and check-in, and nothing publishes without your sign-off.\"",
+    "objections": [
+      {
+        "objection": "Our records system already has online check-in.",
+        "handler": "\"Good, then we put it on the site where patients look. Right now it's hidden behind a menu. The queue stays in your system; the site shows the wait and sends people into it.\""
+      },
+      {
+        "objection": "Showing wait times will put people off when we're busy.",
+        "handler": "\"They'll see it on someone else's site anyway. A long wait with a text when it's their turn keeps them with you; no number at all sends them to the clinic that shows one.\""
+      },
+      {
+        "objection": "We can't publish prices; insurance makes it complicated.",
+        "handler": "\"We only publish self-pay ranges you approve, labelled as estimates. Insured patients see which plans each clinic takes. Nothing pretends to be a quote.\""
+      },
+      {
+        "objection": "Our medical director won't sign off on web content.",
+        "handler": "\"That's the right instinct. Nothing on the site assesses symptoms or gives advice, the emergency guidance is the director's own wording, and they approve every page before launch.\""
+      },
+      {
+        "objection": "We're part of a bigger brand and marketing is handled centrally.",
+        "handler": "\"Then I'd like to show the central team the sample. Location pages, wait times and employer services are usually where a central site is thinnest.\""
+      },
+      {
+        "objection": "We're too busy this flu season.",
+        "handler": "\"That's when wait times matter most. Phase one is check-in and live waits, and it needs an hour of your team's time, not a project.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range} depending on clinic count and integrations. For your group about {Build Price}, plus {Care Range} a month for hosting, hours updates and new clinic pages.\""
+      }
+    ],
+    "email": {
+      "subject": "Wait times and check-in for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for urgent care and walk-in clinic groups around {City}. {Business Name} has good reviews, but the site doesn't show a wait time, has no online check-in and lists every clinic's hours in one block.\n\nI built a sample first rather than ask for a meeting: live waits by clinic, online check-in with a text when it's nearly their turn, an open-now finder, services by clinic, self-pay prices and an employer page, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf it's useful, I finish it in phases for {Build Range}, connected to the queue system you already use, plus {Care Range} a month for hosting and updates. Your medical director approves every page before it publishes.\n\nWorth twenty minutes this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"{Owner}, it's {Your Name}. I build websites for urgent care groups in {City}, and I made a sample for {Business Name} that shows the wait at each clinic and lets people check in online. I'll email the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm taking down the wait-time and check-in sample I built for {Business Name}'s clinics on Friday.\n\nShould I keep it up for your operations team to see? One word is fine either way.",
+    "nurture": "Hi {Owner}, the busy season for walk-in clinics is close and you came to mind.\n\nThe sample with live waits and online check-in for {Business Name} is still here, same scope and price. {demo-link} if you'd like another look before the queues start."
+  },
+  "pricing": {
+    "bullets": [
+      "Price the live wait and check-in work as its own line; it's the reason an urgent care group buys.",
+      "Count clinics, not pages. Each clinic needs its own hours, services, wait feed and listing kept in step.",
+      "Quote the queue-system connection after you've seen it; staff-entered waits cost far less than a live feed.",
+      "Build in the medical director's review round; emergency guidance and service lists are theirs to approve.",
+      "Sell employer services as a separate phase with its own budget holder, usually operations, not marketing.",
+      "Keep self-pay prices as ranges the clinic approves, never a quote, and never any claim about outcomes."
+    ],
+    "lineItems": [
+      {
+        "item": "Urgent care clinic location page (each)",
+        "min": 300,
+        "max": 700,
+        "unit": "per-page",
+        "description": "Max with its own services filter, hours by day, parking and access notes, insurance list and check-in button.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Live wait-time feed per clinic",
+        "min": 2500,
+        "max": 8000,
+        "unit": "one-time",
+        "description": "Max when waits come straight from the clinic's queue system for every location rather than staff updates.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Online check-in with turn-alert texts",
+        "min": 3000,
+        "max": 9000,
+        "unit": "one-time",
+        "description": "Max with a held place in the real queue, texts as their turn nears and privacy-safe storage of the check-in details.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Self-pay price list page",
+        "min": 400,
+        "max": 1200,
+        "unit": "one-time",
+        "description": "Max when prices differ by clinic or service bundle and include tests, x-ray and procedures.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Employer account request form",
+        "min": 1200,
+        "max": 3500,
+        "unit": "one-time",
+        "description": "Max with service selection, billing details, authorised contacts and routing to the occupational health lead.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Virtual visit start page",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "description": "Max when it hands patients into their video visit system with hours, pricing and a clear in-person fallback.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Translated clinic pages (per language)",
+        "min": 800,
+        "max": 2500,
+        "unit": "one-time",
+        "description": "Max when every clinic page, the check-in and the emergency guidance are translated and checked by fluent staff.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Google profile hours and wait posts for every clinic",
+      "min": 400,
+      "max": 1500,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Every urgent care clinic's profile kept exact: holiday hours, services, the check-in link and a short weekly post, so nobody drives to a clinic that's closed.\"",
+      "when": "Day 30, once the clinic pages are live."
+    },
+    {
+      "name": "Post-visit review requests, privacy-checked",
+      "min": 300,
+      "max": 900,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Walk-in patients who leave happy are the ones least likely to post. A text the next morning asks how that urgent care clinic did, worded so it never names why they came in.\"",
+      "when": "Day 45, after privacy sign-off."
+    },
+    {
+      "name": "Flu-shot and school physical campaigns",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Landing pages, profile posts and clinic signage for flu-shot season and school physicals, each pointing to check-in at the nearest urgent care clinic.\"",
+      "when": "Six weeks before each season."
+    },
+    {
+      "name": "Advertising-approval-ready urgent care content pack",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Before a flu-shot or work-injury campaign runs, its urgent care copy is stripped of speed and outcome promises and filed as a ready-to-submit pack, for places where the regulator approves health ads first.\"",
+      "when": "Month 2, before any paid campaign."
+    },
+    {
+      "name": "Health-data hosting and form setup for check-in",
+      "min": 1200,
+      "max": 3500,
+      "unit": "one-time",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Online check-in collects names, birth dates and insurance details. I set up the urgent care hosting, encryption and staff access for that data and hand your privacy lead a written record of how it's done.\"",
+      "when": "Before check-in goes live."
+    },
+    {
+      "name": "Consent and patient-photo policy pages",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Policy pages and consent forms for any testimonial or photo, so every clinic manager knows what can be posted and what needs a signature first.\"",
+      "when": "Month 1, with the privacy pages."
+    },
+    {
+      "name": "Accessibility review of clinic pages and check-in",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Someone with low vision or a shaking hand still needs to check in at a walk-in clinic. I test the wait board and check-in with assistive tools, fix what fails and publish an accessibility statement.\"",
+      "when": "Month 3, or before an employer contract asks for it."
+    },
+    {
+      "name": "Employer outreach kit for occupational health",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A one-page service sheet, an employer landing page and a short email sequence for HR managers near each clinic, so occupational health stops relying on word of mouth.\"",
+      "when": "Month 3, with the employer page."
+    },
+    {
+      "name": "Clinic team portrait days",
+      "min": 900,
+      "max": 2500,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A short shoot at each clinic of the providers, nurses and front desk, so the location pages show the people a worried patient will actually meet. No patients in frame.\"",
+      "when": "Month 2, clinic by clinic."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Physical therapy clinics that take sprain referrals",
+        "whoPays": "The physical therapy practice",
+        "min": 4000,
+        "max": 9000,
+        "unit": "one-time",
+        "pitchLine": "\"The physio clinics your urgent care sends sprains and strains to need booking pages of their own. An introduction from a clinic that refers them patients carries weight.\"",
+        "whyItWorks": "Therapy clinics live on referrals, and a busy walk-in network is one of their best sources."
+      },
+      {
+        "route": "Independent pharmacies near each clinic",
+        "whoPays": "The pharmacy owner",
+        "min": 2500,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"The pharmacies across the road from your clinics fill your patients' prescriptions every night. A site with refill requests and late hours is overdue for most of them.\"",
+        "whyItWorks": "Pharmacists know the clinic staff by name and trust their recommendation."
+      },
+      {
+        "route": "Imaging centres that take the group's scan referrals",
+        "whoPays": "The imaging centre",
+        "min": 6000,
+        "max": 15000,
+        "unit": "one-time",
+        "pitchLine": "\"When your providers send someone for an MRI or ultrasound, the imaging centre's booking page is the next step. A word from the urgent care makes the introduction easy.\"",
+        "whyItWorks": "Imaging centres compete for referring clinics, so they listen to one that sends them patients."
+      },
+      {
+        "route": "Primary care practices that take follow-ups",
+        "whoPays": "The family medicine practice",
+        "min": 4000,
+        "max": 10000,
+        "unit": "one-time",
+        "pitchLine": "\"Patients without a family doctor ask your clinic staff where to go next. The practices you suggest need a new-patient page that's open and clear.\"",
+        "whyItWorks": "Family practices value the steady flow of new patients a walk-in network sends them."
+      },
+      {
+        "route": "Youth sports leagues that send players for physicals",
+        "whoPays": "The league or club committee",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"The leagues whose players come to your clinics for sports physicals run registration on paper and group chats. A league site with sign-up and forms suits them.\"",
+        "whyItWorks": "Leagues are grateful to the clinic that handles their physicals and take its recommendation."
+      },
+      {
+        "route": "Small employers on the occupational health account",
+        "whoPays": "Each employer, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The contractors and warehouses that send workers to your clinic often have a weak site themselves. Your occupational health manager can mention me at the next account review.\"",
+        "whyItWorks": "Employers trust the clinic network that looks after their staff and take its suggestions seriously."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Injury intake assistant for physical therapy clinics",
+        "whoPays": "The physical therapy practice, monthly",
+        "min": 149,
+        "max": 399,
+        "unit": "monthly",
+        "pitchLine": "\"Patients referred from urgent care answer an assistant's intake questions before their first physio visit, and the therapist gets a tidy summary. It never assesses the injury.\"",
+        "whyItWorks": "Therapists start the first session with the history ready, and referred patients book faster."
+      },
+      {
+        "route": "Refill and hours assistant for pharmacies",
+        "whoPays": "The pharmacy, monthly",
+        "min": 149,
+        "max": 349,
+        "unit": "monthly",
+        "pitchLine": "\"An assistant answers refill status, late hours and stock questions from the pharmacy's own system, and passes anything about medicines to the pharmacist.\"",
+        "whyItWorks": "Pharmacists spend hours on the phone with questions the system already knows the answer to."
+      },
+      {
+        "route": "Referral scheduling assistant for imaging centres",
+        "whoPays": "The imaging centre, monthly",
+        "min": 199,
+        "max": 499,
+        "unit": "monthly",
+        "pitchLine": "\"When a clinic referral arrives, an assistant offers the patient times by text and sends the scan's prep sheet, so the imaging slot is booked before they forget.\"",
+        "whyItWorks": "Every referral booked quickly is one the centre doesn't lose to a competitor."
+      },
+      {
+        "route": "Work-injury paperwork helper for employers' HR",
+        "whoPays": "The employer, monthly",
+        "min": 149,
+        "max": 399,
+        "unit": "monthly",
+        "pitchLine": "\"HR teams fill in the same injury and return-to-work forms every time. An assistant drafts them from details the employer already holds, for HR to check and file.\"",
+        "whyItWorks": "Paperwork is the slow part of every work injury, and the clinic looks helpful for the introduction."
+      },
+      {
+        "route": "Registration and forms reminders for sports leagues",
+        "whoPays": "The league, per season",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"Parents get reminders for missing registration and physical forms, and coaches see who's cleared to play, with a link to book a sports physical at the clinic.\"",
+        "whyItWorks": "Leagues hate chasing forms, and the clinic gets the physicals booked."
+      },
+      {
+        "route": "New-patient booking assistant for family practices",
+        "whoPays": "The family medicine practice, monthly",
+        "min": 199,
+        "max": 499,
+        "unit": "monthly",
+        "pitchLine": "\"Patients sent on from urgent care can ask whether the family practice is taking new patients and book a first appointment, without waiting on hold.\"",
+        "whyItWorks": "Practices fill their open new-patient slots, and the clinic's follow-up advice actually happens."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Missed-call text-back with the nearest open clinic",
+      "kind": "automation",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 149,
+      "monthlyMax": 399,
+      "pitchLine": "\"A missed call to any urgent care clinic gets a text with the current wait at the nearest open clinic and a check-in link, plus a note to call the emergency number if it's serious.\"",
+      "whenAndWhatItTakes": "Day 30. Needs each clinic's number forwarded and wording the medical director approves."
+    },
+    {
+      "name": "Review reply drafts that never confirm a visit",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 199,
+      "monthlyMax": 499,
+      "pitchLine": "\"Clinic managers get a suggested response to every new urgent care review, polite about the wait if it was long and careful never to reveal that the writer was a patient.\"",
+      "whenAndWhatItTakes": "Month 2. Needs a few approved replies and their privacy rules. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Follow-up booking texts after a visit",
+      "kind": "automation",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 149,
+      "monthlyMax": 399,
+      "pitchLine": "\"Patients the provider asks to come back get a text with a link to book that recheck at the same urgent care clinic, instead of being told to call.\"",
+      "whenAndWhatItTakes": "Month 2. Needs a follow-up flag from their records system and approved wording."
+    },
+    {
+      "name": "Self-pay estimates and online payment",
+      "kind": "software",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 9000,
+      "monthlyMin": 150,
+      "monthlyMax": 500,
+      "pitchLine": "\"Self-pay patients see an estimate for their kind of clinic visit before they come and pay the balance online after, with a receipt they can submit to their insurer.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their self-pay price list and the payment account they already use."
+    },
+    {
+      "name": "Hiring pipeline for nurses and providers",
+      "kind": "software",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 150,
+      "monthlyMax": 500,
+      "pitchLine": "\"Every applicant for every urgent care clinic lands on one board by role and location, so managers see who applied and who is waiting on an interview.\"",
+      "whenAndWhatItTakes": "Month 3. Needs their roles, interview steps and which managers hire for which clinic."
+    },
+    {
+      "name": "Applicant screener for nurse, provider and x-ray roles",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 200,
+      "monthlyMax": 500,
+      "pitchLine": "\"Applicants answer the group's questions on licence, shift preferences and which clinic suits them, and managers get a short summary of who fits.\"",
+      "whenAndWhatItTakes": "Month 4, with the hiring pipeline. Needs must-haves per role. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Website assistant for hours, prices and clinic services",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 400,
+      "monthlyMax": 1200,
+      "pitchLine": "\"It answers 'which clinic has x-ray open now' and 'what does a self-pay visit cost' from your own pages. It never assesses symptoms and points anything serious to the emergency number.\"",
+      "whenAndWhatItTakes": "Month 4. Needs approved prices and services by clinic, plus the medical director's sign-off. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Insurance card capture at check-in",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 300,
+      "monthlyMax": 900,
+      "pitchLine": "\"Patients snap their insurance card during online check-in, the details are read into the form, and the front desk confirms them before the walk-in visit.\"",
+      "whenAndWhatItTakes": "Month 4, after check-in is live. Needs privacy review and their records system fields. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Employer portal for occupational health accounts",
+      "kind": "software",
+      "oneTimeMin": 8000,
+      "oneTimeMax": 20000,
+      "monthlyMin": 300,
+      "monthlyMax": 900,
+      "pitchLine": "\"Employers authorise a worker's visit, see the work-status form once it's signed and download invoices, without calling the clinic.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their occupational health workflow, consent rules and billing setup."
+    },
+    {
+      "name": "Signed work-status form delivery",
+      "kind": "automation",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Once the provider signs a work-status form, it goes to the employer's authorised contact automatically, with the worker's consent recorded at the clinic.\"",
+      "whenAndWhatItTakes": "Month 5, with the employer portal. Needs consent wording and each employer's contacts."
+    },
+    {
+      "name": "Work-status form drafts for provider sign-off",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 300,
+      "monthlyMax": 800,
+      "pitchLine": "\"After a work injury visit, the provider gets a draft work-status form from their own visit note to check and sign, instead of filling it from scratch.\"",
+      "whenAndWhatItTakes": "Month 6. Needs their form templates and a privacy review. Comes with the AI maintenance retainer; providers sign every form."
+    },
+    {
+      "name": "Provider shift board across clinics",
+      "kind": "software",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 15000,
+      "monthlyMin": 300,
+      "monthlyMax": 800,
+      "pitchLine": "\"Every provider, nurse and x-ray shift at every urgent care clinic on one board, with open shifts offered to staff by text.\"",
+      "whenAndWhatItTakes": "Month 6. Needs their rota rules, roles and which staff work which clinics."
+    },
+    {
+      "name": "Staffing forecast from visit history",
+      "kind": "ai",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 15000,
+      "monthlyMin": 400,
+      "monthlyMax": 1200,
+      "pitchLine": "\"Past visit counts by hour, season and clinic turn into a suggested rota for the weeks ahead, so the walk-in rush isn't met by a skeleton crew.\"",
+      "whenAndWhatItTakes": "Month 7. Needs a year of visit counts by clinic and the shift board. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Call summaries for the central phone line",
+      "kind": "ai",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 12000,
+      "monthlyMin": 500,
+      "monthlyMax": 1500,
+      "pitchLine": "\"Calls to the group's line, recorded with consent, get a short summary and a task for the right clinic, so a callback about a result or a bill doesn't slip.\"",
+      "whenAndWhatItTakes": "Month 7. Needs call recording with consent notices and phone system access. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Virtual visit queue and booking",
+      "kind": "software",
+      "oneTimeMin": 8000,
+      "oneTimeMax": 20000,
+      "monthlyMin": 400,
+      "monthlyMax": 1200,
+      "pitchLine": "\"Patients join a video visit queue from the site, see their place in line, and the clinic's providers take them between walk-ins.\"",
+      "whenAndWhatItTakes": "Month 8. Needs their video visit system, provider hours and the rules where each clinic practises."
+    },
+    {
+      "name": "Multilingual check-in and reminder drafts",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 199,
+      "monthlyMax": 499,
+      "pitchLine": "\"Check-in prompts and wait texts are drafted in the patient's language and checked by fluent staff, so families who speak another language at home use the walk-in clinic confidently.\"",
+      "whenAndWhatItTakes": "Month 6, where staff can review. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Results-ready notices that link to the portal",
+      "kind": "automation",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"When a lab or x-ray result is ready, the patient gets a text saying so, with no details, and a link to sign in and see it once a provider has reviewed it.\"",
+      "whenAndWhatItTakes": "Month 9, with the patient portal. Needs result status from their records system and privacy sign-off."
+    },
+    {
+      "name": "Clinic performance dashboard",
+      "kind": "software",
+      "oneTimeMin": 8000,
+      "oneTimeMax": 20000,
+      "monthlyMin": 400,
+      "monthlyMax": 1200,
+      "pitchLine": "\"Check-ins, walk-outs, time from arrival to discharge and review counts for each urgent care clinic on one screen, so operations sees where the queue is breaking.\"",
+      "whenAndWhatItTakes": "Month 9. Needs three months of queue and visit data from each clinic."
+    },
+    {
+      "name": "Visit note drafts from provider dictation",
+      "kind": "ai",
+      "oneTimeMin": 10000,
+      "oneTimeMax": 25000,
+      "monthlyMin": 800,
+      "monthlyMax": 2500,
+      "pitchLine": "\"Between walk-ins, a provider speaks the encounter aloud and an urgent care chart note is drafted in the clinic's template, waiting for them to correct and sign before it enters the record.\"",
+      "whenAndWhatItTakes": "Month 10. Needs note templates, patient consent wording and a privacy review. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Patient portal for visit summaries and receipts",
+      "kind": "software",
+      "oneTimeMin": 15000,
+      "oneTimeMax": 45000,
+      "monthlyMin": 600,
+      "monthlyMax": 2000,
+      "pitchLine": "\"Patients sign in to see their clinic visit summary, reviewed results, receipts and school or work notes, in the group's own brand.\"",
+      "whenAndWhatItTakes": "Month 9. Needs deep records-system integration, payment setup and a full privacy review."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise live waits and check-in for other urgent care groups",
+      "whoPays": "Urgent care groups, monthly per clinic",
+      "min": 399,
+      "max": 1200,
+      "unit": "monthly",
+      "pitchLine": "\"The wait board, check-in and open-now finder I built for one urgent care group work for any walk-in network, loaded with their own clinics.\"",
+      "whyItWorks": "The first group paid for the queue connection; the next ones need only their clinics and brand."
+    },
+    {
+      "route": "Urgent care association member template",
+      "whoPays": "The urgent care association, as a member benefit",
+      "min": 5000,
+      "max": 20000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer members a clinic site template with wait times, careful emergency guidance and privacy-safe check-in already built.\"",
+      "whyItWorks": "Associations run on member benefits, and small clinic owners keep asking them about websites."
+    },
+    {
+      "route": "Hospital systems' walk-in clinic networks",
+      "whoPays": "The hospital system's ambulatory or marketing team",
+      "min": 30000,
+      "max": 90000,
+      "unit": "one-time",
+      "pitchLine": "\"Your walk-in clinics sit behind the hospital's main site with no live waits. A dedicated urgent care front door takes pressure off the emergency department.\"",
+      "whyItWorks": "Hospitals want minor cases steered away from the emergency department, and they budget centrally."
+    },
+    {
+      "route": "White-label for healthcare marketing agencies",
+      "whoPays": "The agency, per clinic group",
+      "min": 3000,
+      "max": 9000,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency runs ads for urgent care groups but can't build live waits or check-in. I deliver it under your name.\"",
+      "whyItWorks": "Agencies own the relationship and lack the integration skills, so a white-label build lets them keep the account."
+    },
+    {
+      "route": "Employer associations buying occupational health access",
+      "whoPays": "The employer or trade association",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Your members need one place to send injured workers. A member portal linked to partner clinics makes that a benefit you can advertise.\"",
+      "whyItWorks": "Associations sell access, and a clinic network with a portal gives them a concrete member perk."
+    },
+    {
+      "route": "Pharmacy-based walk-in clinics",
+      "whoPays": "The pharmacy group running in-store clinics",
+      "min": 8000,
+      "max": 25000,
+      "unit": "one-time",
+      "pitchLine": "\"Your in-store walk-in clinics need the same live waits and check-in as a standalone urgent care, inside the pharmacy's brand.\"",
+      "whyItWorks": "The product is already built for walk-in queues; only the brand and services change."
+    },
+    {
+      "route": "Veterinary urgent care clinics",
+      "whoPays": "Veterinary urgent care groups",
+      "min": 8000,
+      "max": 20000,
+      "unit": "one-time",
+      "pitchLine": "\"Pet owners choose a vet urgent care exactly as people choose a walk-in clinic: wait and distance. The same wait board and check-in fit.\"",
+      "whyItWorks": "A different industry with the identical queue problem, and few builders serve it."
+    },
+    {
+      "route": "Clinic management companies, per clinic",
+      "whoPays": "The management company running clinics for physician owners",
+      "min": 299,
+      "max": 799,
+      "unit": "monthly",
+      "pitchLine": "\"You run several walk-in clinics for different owners. One platform for waits, check-in and location pages, billed per clinic you manage.\"",
+      "whyItWorks": "Management companies want one system across owners, and they add clinics steadily."
+    },
+    {
+      "route": "Franchise urgent care brands",
+      "whoPays": "The franchisor, per franchise clinic",
+      "min": 1500,
+      "max": 5000,
+      "unit": "one-time",
+      "pitchLine": "\"Every new franchise clinic needs its page, waits and check-in on opening day. I set them up from one template as each one opens.\"",
+      "whyItWorks": "Franchisors want consistent launches, and each opening repeats the same work."
+    },
+    {
+      "route": "Event and venue first-aid providers",
+      "whoPays": "The event medical services company",
+      "min": 3000,
+      "max": 8000,
+      "unit": "one-time",
+      "pitchLine": "\"The medical teams at stadiums and festivals need a booking site for organisers and a staff shift page. Your clinicians who work events can introduce me.\"",
+      "whyItWorks": "Event medics often staff from urgent care rotas, so the introduction comes naturally."
+    },
+    {
+      "route": "One urgent care group per metro",
+      "whoPays": "An urgent care group in another metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I build wait boards and check-in for one walk-in clinic group per metro. Your competitors in {City} won't get the same setup from me.\"",
+      "whyItWorks": "Groups value not sharing a builder with a direct rival, and the build carries over to the next metro."
+    },
+    {
+      "route": "Finishing stalled check-in projects",
+      "whoPays": "The clinic group with a half-built check-in",
+      "min": 8000,
+      "max": 25000,
+      "unit": "one-time",
+      "pitchLine": "\"Your check-in project stalled when the vendor or developer moved on. I can finish it on a structure already running at other urgent care clinics.\"",
+      "whyItWorks": "These groups have already decided and budgeted; they need someone who can finish."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Urgent care site build plus care plan, one contract",
+      "min": 10000,
+      "max": 25000,
+      "unit": "one-time",
+      "trigger": "Operations and the medical director approve phase one: waits, check-in and clinic pages.",
+      "line": "\"The urgent care site and care plan sit on one contract, so a holiday hours change or a new clinic page is a message to me, not a project.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Google profile hours and wait posts for every clinic",
+      "min": 400,
+      "max": 1500,
+      "unit": "monthly",
+      "trigger": "Check-ins start arriving from the site, and a clinic listing still shows the wrong hours.",
+      "line": "\"Patients are checking in from the site. Keeping every clinic's profile exact sends more of them there.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "Missed-call text-back with the nearest open clinic",
+      "min": 500,
+      "max": 1500,
+      "unit": "one-time",
+      "trigger": "Phone logs show unanswered calls during the evening rush.",
+      "line": "\"Your clinics miss calls in the evening rush. A text with the nearest wait and a check-in link keeps those patients.\""
+    },
+    {
+      "rung": 4,
+      "day": 90,
+      "offer": "Flu-shot and school physical campaigns",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "trigger": "Flu-shot season or school physical season is a few weeks away.",
+      "line": "\"Flu-shot season is close. A page and posts that send people to check in at the nearest clinic will fill the quiet hours.\""
+    },
+    {
+      "rung": 5,
+      "day": 120,
+      "offer": "Employer portal for occupational health accounts",
+      "min": 8000,
+      "max": 20000,
+      "unit": "one-time",
+      "trigger": "Employer account requests start arriving through the form, and staff are emailing work-status forms by hand.",
+      "line": "\"Employers are signing up through the site. A portal lets them see signed forms and invoices without calling your clinics.\""
+    },
+    {
+      "rung": 6,
+      "day": 180,
+      "offer": "Provider shift board across clinics",
+      "min": 6000,
+      "max": 15000,
+      "unit": "one-time",
+      "trigger": "Another clinic opens, or managers mention filling shifts by group text.",
+      "line": "\"With another clinic open, shifts by group text won't hold. One board for every urgent care rota will.\""
+    },
+    {
+      "rung": 7,
+      "day": 270,
+      "offer": "Virtual visit queue and booking",
+      "min": 8000,
+      "max": 20000,
+      "unit": "one-time",
+      "trigger": "Providers have quiet stretches between walk-ins, or patients ask about video visits in reviews.",
+      "line": "\"Your providers have gaps between walk-ins. A virtual visit queue fills them without anyone leaving home.\""
+    },
+    {
+      "rung": 8,
+      "day": 365,
+      "offer": "Clinic performance dashboard",
+      "min": 8000,
+      "max": 20000,
+      "unit": "one-time",
+      "trigger": "The annual review, when operations asks which clinics lose patients to the wait.",
+      "line": "\"A year in, let's see where walk-in patients leave before being seen and fix the clinics where the queue breaks.\""
+    }
+  ]
+}

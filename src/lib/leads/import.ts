@@ -1,6 +1,7 @@
 // Leads CSV import: the reverse of leadCells (csv.ts). Pure, so the same code previews in the browser
 // flow and re-checks on the server before anything is inserted.
-import { COLS, STATES } from "@/data";
+import { COLS } from "@/data";
+import { isRegion } from "@/lib/market/regions";
 import { CHECK_LABELS, type CheckField } from "./checks";
 import { CHANNELS, STAGES, type Channel, type Stage } from "./stages";
 
@@ -100,7 +101,7 @@ export function parseRow(cells: string[], checks: (CheckField | null)[]): { ok: 
   const business_name = v(1);
   if (!business_name) errs.push("Business name is empty");
   const state = v(5).toUpperCase();
-  if (state && !(state in STATES)) errs.push(`State "${v(5)}" is not a two-letter US state code`);
+  if (state && !isRegion(state)) errs.push(`State "${v(5)}" is not a US state, Canadian province or UAE emirate code`);
   const ratingRaw = v(15);
   const rating = ratingRaw === "" ? null : Number(ratingRaw);
   if (rating !== null && !(rating >= 0 && rating <= 5)) errs.push(`Google rating "${ratingRaw}" is not between 0 and 5`);

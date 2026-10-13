@@ -9,6 +9,8 @@ import { inlineText } from "@/lib/kit/text";
 import type { Kit, KitContext, KitNode } from "@/lib/kit/types";
 import type { CategoryKit, DirectionId } from "./types";
 import { kitSlug } from "./types";
+import { CURRENCY_OF } from "@/lib/market/currency";
+import { countryOf } from "@/lib/market/regions";
 
 export interface DownloadMeta {
   X: KitContext;
@@ -60,6 +62,9 @@ export function kitMarkdown(kit: Kit, m: DownloadMeta): string {
     "slug: " + yaml(kitSlug(X.cat)),
     "city: " + yaml(X.city),
     "state: " + yaml(X.st),
+    // Outside the US only, so a US file is byte-for-byte what Prompt C already parses.
+    ...(countryOf(X.st) !== "US" ? ["country: " + yaml(countryOf(X.st)), "currency: " + yaml(CURRENCY_OF[countryOf(X.st)])] : []),
+    ...(kit.input.lang ? ["siteLanguage: " + yaml(kit.input.lang)] : []),
     "marketLabel: " + yaml(m.marketLabel),
     "device: " + yaml(kit.input.device),
     "demoPattern: " + yaml(X.demoPattern),

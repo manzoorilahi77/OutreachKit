@@ -109,12 +109,14 @@ How it fits together:
 
 - `team/` is the data (see `docs/team-format.md`). `src/lib/store/` is the **only** code that touches it; pages and actions call the `Store`, never `fs`. A server database can later replace the file Store without touching a screen.
 - Roles and permissions live in `src/lib/auth/permissions.ts` (generated reference: `docs/roles.md`; source of truth: `docs/source/roles-system.html`). Code asks `can(session, "users.reset_password")`, never `role === "admin"`. Every page calls `requirePerm()` and every server action `checkPerm()`.
+- Categories: the port's 124 (`src/data/board.ts`) plus the catalogue in `src/lib/kit/extBoard.ts` (healthcare and mid-size rows, display families, business size, country fit). Code asks `ALL_CATS` / `findCategory`, and uses `CATS` only where it means the port (parity, golden sweep). Analysis: `docs/expansion/category-analysis.md`.
+- Countries: `src/lib/market/` holds the regions (US states, Canadian provinces, UAE emirates), currency conversion, and `applyMarket`, the last layer over a kit (after `applyCategoryKit`). Design: `docs/superpowers/specs/2026-10-13-size-country-healthcare-design.md`.
 - `src/lib/sync/` is the sync engine (git through `execFile`, no shell). It stages only the paths a person may write.
 - Sessions: 14 days from sign-in, signed cookie, re-checked against the user file on every request.
 
 Guardrails:
 
-- The port is untouched: don't edit `generateKit`, `openers`, `messages`, `buildPromptText`, `src/data`, `src/content`, `SEQUENCE` in `src/lib/leads/sequence.ts`, `applyCategoryKit` or `src/kits/*.json`. `pnpm parity`, `pnpm golden:sweep` and `CHANGES.md` must show no changes.
+- The port is untouched: don't edit `generateKit`, `openers`, `messages`, `buildPromptText`, `src/data`, `src/content`, `SEQUENCE` in `src/lib/leads/sequence.ts`, `applyCategoryKit` or `src/kits/*.json`. `pnpm parity`, `pnpm golden:sweep` and `CHANGES.md` must show no changes. (One exception, made for the countries work: `buildContext` and the helpers look regions up in `REGIONS` and honour a catalogue row's `arch`/`care`; for every port input the output is identical, which the golden sweep proves.)
 - The Kit Console keeps its four steps and its output; only its props change. Saved kits store inputs only.
 - Only bcrypt hashes are written. Never log a password. `.local/` is never committed.
 - Brand: four colours, Jost 400/500, no `<b>`, Electric Blue never for small text. `pnpm brand` must pass.

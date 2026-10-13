@@ -9,6 +9,9 @@ import { SequencePanel } from "@/components/leads/SequencePanel";
 import { StageControls } from "@/components/leads/StageControls";
 import { Button } from "@/components/ui/Button";
 import { Chip } from "@/components/ui/Chip";
+import { sizeOfCategory } from "@/lib/kit/categories";
+import { SIZE_LABEL } from "@/lib/kit/extBoard";
+import { COUNTRIES, countryOf } from "@/lib/market/regions";
 import { can, limitOf } from "@/lib/auth/permissions";
 import { requirePerm, storeFor } from "@/lib/auth/server";
 import { CHECK_LABELS } from "@/lib/leads/checks";
@@ -49,6 +52,8 @@ export default async function LeadPage({ params }: { params: Promise<{ id: strin
           <Chip variant={lead.tier}>{lead.tier === "hot" ? "Hot" : lead.tier === "warm" ? "Warm" : "Skip"}</Chip>
           <span className="tabular-nums">{lead.score} / 10</span>
           <Chip variant="plain">{stageLabel(lead.stage as Stage)}</Chip>
+          {sizeOfCategory(lead.category ?? "") && <Chip variant={sizeOfCategory(lead.category ?? "") === "mid" ? "warm" : "plain"}>{SIZE_LABEL[sizeOfCategory(lead.category ?? "")!]}</Chip>}
+          {lead.state && countryOf(lead.state.toUpperCase()) !== "US" && <Chip>{COUNTRIES[countryOf(lead.state.toUpperCase())].short}</Chip>}
           {lead.channel && <span className="text-muted">{channelLabel(lead.channel)}</span>}
           {lead.heldBy !== null && lead.heldBy !== lead.owner && <Chip>{lead.pendingTo ? `With ${nameOf(lead.heldBy)}, not accepted yet` : `Now ${nameOf(lead.heldBy)}'s lead`}</Chip>}
           {lead.heldBy === null && <Chip>Unassigned</Chip>}

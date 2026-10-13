@@ -87,7 +87,7 @@ export interface Store {
   unhandedLeads(username: string): Promise<LeadView[]>;
 
   // Kits.
-  createKit(input: { category: string; device: "desktop" | "mobile"; state: string; city: string; cityIsFree: boolean; direction: string; title?: string }): Promise<KitRecord>;
+  createKit(input: { category: string; device: "desktop" | "mobile"; state: string; city: string; cityIsFree: boolean; direction: string; siteLang?: string; title?: string }): Promise<KitRecord>;
   listKits(): Promise<KitRecord[]>;
   getKit(owner: string, id: string): Promise<KitRecord | null>;
   updateKit(id: string, patch: { title?: string; status?: KitStatus }): Promise<KitRecord>;

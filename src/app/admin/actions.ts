@@ -6,6 +6,7 @@ import { isRole } from "@/lib/auth/roles";
 import { checkPerm } from "@/lib/auth/server";
 import { StoreError } from "@/lib/store/errors";
 import type { Team, Workspace } from "@/lib/store/types";
+import { cleanRates } from "@/lib/market/currency";
 
 /** The result of an account action. `credentials` is shown once, in the browser, and never stored or logged. */
 export type AccountState = { ok: boolean; message: string; credentials?: { fullName: string; username: string; password: string } } | null;
@@ -108,6 +109,7 @@ export async function saveWorkspaceAction(_prev: AccountState, fd: FormData): Pr
     studio: String(fd.get("studio") ?? "").trim().slice(0, 120),
     demoDomain: domain.slice(0, 200),
     basedLine: String(fd.get("basedLine") ?? "").trim().slice(0, 200),
+    markets: { rates: cleanRates({ CAD: Number(fd.get("rateCAD")), AED: Number(fd.get("rateAED")) }) },
   };
   try {
     await c.store.saveWorkspace(next);

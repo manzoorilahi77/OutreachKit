@@ -1,0 +1,891 @@
+{
+  "schemaVersion": 1,
+  "category": "Physiotherapy & rehab groups",
+  "slug": "physiotherapy-rehab-groups",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · expansion batch (healthcare + mid-size)",
+    "generatedAt": "2026-10-13",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Written for groups that grew to several clinics on one old site: a clinic finder, booking by location and therapist, condition pages, case-manager referrals and recruiting. Unsure on the integration-heavy ranges (booking sync, home exercise portal); they depend on the group's practice system."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Clinic finder and a page per physio clinic",
+      "contains": "A map and list of every clinic with hours, parking, accessible entrances, the therapists and services at each site, and booking that starts with the location",
+      "why": "Rehab patients come twice a week for weeks, so distance and parking decide the clinic. A group with one contact page for every site loses them to the clinic down the road."
+    },
+    {
+      "section": "Condition and injury library by body area",
+      "contains": "Pages for back and neck pain, knee and shoulder injuries, post-surgery rehab, concussion, pelvic health and vestibular problems: what an assessment involves and which clinics offer it, general information only",
+      "why": "Patients search for their problem, not for a physiotherapy brand. A condition page that names the nearest clinic offering it turns that search into a booking."
+    },
+    {
+      "section": "Therapist directory with condition and clinic filters",
+      "contains": "Every physiotherapist with their clinic, languages, areas of interest and training as published [registration number], filterable by condition, clinic and gender, each with their own booking",
+      "why": "Referrers and returning patients ask for a named therapist. Across many clinics, a filterable directory is the only way they find the right one."
+    },
+    {
+      "section": "Case manager and claims referral desk",
+      "contains": "A page for workplace injury and road accident case managers: how to refer, response times, report formats, which clinics take these cases and a secure referral form",
+      "why": "Case managers send steady volume to rehab groups that make referrals and reports easy. They judge that from this one page."
+    },
+    {
+      "section": "Classes and programmes across clinics",
+      "contains": "One timetable of clinical pilates, falls prevention, post-natal and return-to-run groups across all sites, filterable by clinic and day, with booking and class packs",
+      "why": "Classes keep discharged patients coming back. A single cross-clinic timetable fills sessions that a PDF per clinic never does."
+    },
+    {
+      "section": "Careers, graduate programme and mentoring",
+      "contains": "Open roles by clinic, what new graduates get in supervision and in-service training, career paths to senior and clinic lead roles, and a short application",
+      "why": "Physio groups grow only as fast as they hire. Candidates compare groups on mentoring and caseload, and a careers page is where they look."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C25",
+      "siteType": "local-conversion",
+      "name": "Nearest Clinic",
+      "heroLayout": "card-stack",
+      "mood": [
+        "bright",
+        "active",
+        "practical"
+      ],
+      "bestFor": "Rehab groups with a handful of clinics that need a clinic finder and a booking per site before anything else",
+      "pairsWithTier": "starter",
+      "headlineSample": "Physio near you in {City}, booked online",
+      "whyItFits": "Citrus brights and geometric display type feel energetic, like a clinic that gets people moving. Cards per clinic make the nearest location the first decision."
+    },
+    {
+      "id": "b",
+      "themeId": "C6",
+      "siteType": "booking-first",
+      "name": "Book by Clinic",
+      "heroLayout": "split-photo",
+      "mood": [
+        "organised",
+        "clear",
+        "dependable"
+      ],
+      "bestFor": "Physiotherapy groups with several clinics booking by location, therapist and appointment type from the practice system",
+      "pairsWithTier": "standard",
+      "headlineSample": "Physiotherapy across {City}, at the clinic nearest you",
+      "whyItFits": "Chosen over the family's Private Vault because a multi-clinic group sells convenience, not discretion. Cobalt and a neutral grotesque make a busy booking flow feel simple."
+    },
+    {
+      "id": "c",
+      "themeId": "C4",
+      "siteType": "editorial-trust",
+      "name": "Clinical Network",
+      "heroLayout": "type-led",
+      "mood": [
+        "expert",
+        "assured",
+        "serious"
+      ],
+      "bestFor": "Larger rehabilitation groups with specialist services, case-manager work and research or teaching ties",
+      "pairsWithTier": "premium",
+      "headlineSample": "Rehabilitation and physiotherapy across {City} and region",
+      "whyItFits": "Navy, brass and an editorial serif read like a serious clinical organisation. That suits referrers, surgeons and case managers deciding where to send complex rehab."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "One contact page for every clinic",
+      "line": "Your physiotherapy group lists all its clinics as addresses on one contact page with one phone number. Someone with a sore knee wants the nearest clinic's hours, parking and a booking.",
+      "hook": "Count the clinics on their contact page and listings. Check whether any clinic has its own page.",
+      "linkLine": "A clinic finder with a page per physio location: {demo-link}"
+    },
+    {
+      "angle": "Booking stops at a phone call",
+      "line": "Booking at your rehab clinics still means calling each front desk. Patients picking between several physio sites would rather choose the clinic and time themselves.",
+      "hook": "Try to book an appointment online from their site. Note where it stops and whether it asks for a location.",
+      "linkLine": "Online physio booking by clinic and therapist: {demo-link}"
+    },
+    {
+      "angle": "Heavy site on a phone",
+      "line": "I opened your physio group's site on my phone and the clinic list took a long time to appear, then the map covered the booking button. Patients often look it up in the car after an injury.",
+      "hook": "Load their locations page on mobile data. Note load time and what blocks the booking. Screenshot it for when they reply.",
+      "linkLine": "The physiotherapy group site, rebuilt for a phone: {demo-link}"
+    },
+    {
+      "angle": "Therapists listed by name only",
+      "line": "Your therapist page is a long list of names and headshots with no clinic or interests. A patient told to see someone for shoulder rehab can't tell who or where.",
+      "hook": "Look at their team page. Note whether therapists show a clinic, interests or booking. Never state training you didn't see published.",
+      "linkLine": "A physiotherapist directory filtered by condition and clinic: {demo-link}"
+    },
+    {
+      "angle": "Hiring with nowhere to send people",
+      "line": "Your rehab group posts physio roles for different clinics most weeks, but the site has no careers page. Graduates compare groups on mentoring and caseload before they apply.",
+      "hook": "Check their job posts and recent hiring posts. Note how many clinics are hiring and where applicants are sent.",
+      "linkLine": "A careers and graduate programme page for the physio group: {demo-link}"
+    },
+    {
+      "angle": "Conditions as a bullet list",
+      "line": "Your services page lists conditions as a short bullet list. Someone searching for concussion or vestibular rehab in {City} picks the clinic with a page about their exact problem.",
+      "hook": "Find their services page and count the conditions with their own page. Pick two they post about often.",
+      "linkLine": "Condition pages that name the nearest physio clinic: {demo-link}"
+    },
+    {
+      "angle": "Case managers without a page",
+      "line": "Your posts mention workplace injury and road accident rehab, but there's nothing for case managers on how to refer or what reports they'll get. They send volume to rehab groups that make it easy.",
+      "hook": "Only if they mention work injury, accident or claims rehab. Note which clinics seem to do it.",
+      "linkLine": "A case manager referral desk for the rehab group: {demo-link}"
+    },
+    {
+      "angle": "New clinic opening",
+      "line": "Congratulations on the new physio clinic opening. The site doesn't have a page for it yet, so people searching nearby won't find hours or a way to book before the doors open.",
+      "hook": "Only if they've announced a new location. Check whether the site mentions it.",
+      "linkLine": "A launch page for the new physiotherapy clinic: {demo-link}"
+    },
+    {
+      "angle": "Reviews split across clinics",
+      "line": "Each of your clinics has warm reviews about therapists who explained the exercises properly. None of them appear on the group site, where a patient choosing between physio locations would see them.",
+      "hook": "Read reviews on two of their clinic listings. Pick lines about care, never about recovery results.",
+      "linkLine": "Reviews shown on each physio clinic's page, with consent: {demo-link}"
+    },
+    {
+      "angle": "Class timetables as PDFs",
+      "line": "Your clinical pilates and falls prevention classes are in a separate PDF for each clinic. One timetable across all sites, with booking, would fill the quieter sessions.",
+      "hook": "Find their class timetable. Note whether it's a PDF, per clinic, and how people book.",
+      "linkLine": "One rehab class timetable across every clinic: {demo-link}"
+    },
+    {
+      "angle": "Acquired clinics on old sites",
+      "line": "A couple of your clinics still run the sites they had before joining the group, with different names and phone numbers. Patients and referrers aren't sure they're the same physio team.",
+      "hook": "Search each clinic name. Note which ones still lead to an old standalone site.",
+      "linkLine": "Every clinic under one physiotherapy group site: {demo-link}"
+    },
+    {
+      "angle": "Fees and cover unclear",
+      "line": "Nothing on your physio site says what an assessment costs, or what to check with an insurer or employer health plan first. People who can't find that often put rehab off.",
+      "hook": "Look for a fees or insurance page. Note what's missing, without guessing their prices.",
+      "linkLine": "Physio fees and cover questions on one clear page: {demo-link}"
+    },
+    {
+      "angle": "Virtual physio not offered online",
+      "line": "Your posts mention video physiotherapy appointments, but there's no way to book one on the site. Patients across a wide area would use it between clinic visits.",
+      "hook": "Only if they mention virtual or video sessions. Check whether the booking flow offers it.",
+      "linkLine": "Virtual physio appointments, bookable online: {demo-link}"
+    },
+    {
+      "angle": "Sports club partnerships",
+      "line": "Your physios are pitchside for local sports clubs most weekends, but the site never mentions it. Athletes and parents choose sports rehab from the clinic that already looks after their team.",
+      "hook": "Look for posts from games, tournaments or club partnerships. Note the clubs named.",
+      "linkLine": "A sports rehab and club partners page: {demo-link}"
+    },
+    {
+      "angle": "A specific recent post",
+      "line": "That {specific recent job} post from one of your physiotherapists explained a rehab step clearly. It belongs on the matching condition page, where patients across your clinics would find it.",
+      "hook": "Pick their newest educational post or video by a named therapist, never a patient story without consent.",
+      "linkLine": "That physio explainer, kept on a condition page: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, that {specific recent job} post from your team was a good plain explanation of a rehab step.\n\nI looked at {Business Name}'s site and noticed every clinic shares one contact page, and booking means calling each front desk. I sketched how a clinic finder with booking by location could work, with marked placeholders where your photos would go.\n\nAre you the right person for the website, or is it someone in operations?",
+    "dm2": "{Owner}, following up in case this got buried. Here's the sample for {Business Name}: {demo-link}\n\nIt has a clinic finder, a page per clinic, condition pages that name the nearest location, a therapist directory and online booking by clinic. Nothing makes a recovery promise, and your clinical lead approves every page. If it's not for you, just say so.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites and booking systems for physiotherapy groups. I sent a sample a few days ago, did it reach you?\"\n\nIF NO:\n\"No problem. Short version: I built a sample for {Business Name} with a clinic finder, a page per clinic, condition pages and booking by location, with marked placeholders where your photos would go. Can I email it so you can share it with your clinic leads?\"\n\nIF YES:\n\"What did your clinic leads think?\"\n → let them talk, then ask who else decides on the site and booking\n\"It's a group site you own, connected to the practice system you already use where it allows it. The build runs {Build Range} depending on how many clinics and integrations, then {Care Range} a month for hosting, security and edits. For a group your size I'd quote about {Build Price}.\"\n\"Could we take thirty minutes with you and your operations lead next week?\"\n\nCLOSE:\n\"I'll send a scope covering each clinic page, the booking integration and the review rounds, plus a deposit invoice. Your clinical lead approves the condition pages before launch.\"",
+    "objections": [
+      {
+        "objection": "Our practice system already has online booking.",
+        "handler": "\"Good, then I connect to it rather than replace it. The site's job is getting a patient to the right clinic and therapist before that booking screen. Right now they have to guess.\""
+      },
+      {
+        "objection": "Each clinic manages its own marketing.",
+        "handler": "\"That's common after a group grows. One site with a page per clinic lets each lead keep their local voice, while booking, branding and reporting stay the same everywhere.\""
+      },
+      {
+        "objection": "Most of our patients are referred by doctors.",
+        "handler": "\"Referred patients still choose which of your clinics to go to, and referrers want to know who to send them to. A clinic finder and therapist directory serve both.\""
+      },
+      {
+        "objection": "We're about to open more clinics, let's wait.",
+        "handler": "\"That's the best time. The site is built so a new clinic is a new page, not a rebuild. Launching with the new sites means they open with bookings, not just a sign.\""
+      },
+      {
+        "objection": "The owners and the operations director both have to agree.",
+        "handler": "\"Of course. I'll send a short scope both can read in five minutes, and I'm glad to do a call with everyone at once.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For a group your size about {Build Price}, covering the clinic finder, clinic and condition pages, the therapist directory and booking. The booking integration is scoped once I've seen your system.\""
+      }
+    ],
+    "email": {
+      "subject": "Clinic finder for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites and booking systems for physiotherapy and rehab groups. {Business Name} has grown to several clinics, but the site still has one contact page for all of them, and booking means calling a front desk.\n\nI built a sample rather than ask for your time: a clinic finder, a page per clinic, condition pages that name the nearest location, a therapist directory and online booking by clinic, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf it fits, I finish it on your domain for {Build Range}, plus {Care Range} a month for hosting, security and edits. Your clinical lead approves every page, and nothing promises a recovery outcome. If not, no problem, it comes down at the end of the month.\n\nWould thirty minutes with you and your operations lead be worth it?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"{Owner}, it's {Your Name}. I build websites for physiotherapy groups, and I made a sample for {Business Name} with a clinic finder and booking by location. I'll email the link so you can share it with your clinic leads. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm taking the {Business Name} clinic finder sample down on Friday.\n\nShould I keep it up while your team looks? One word is fine either way.",
+    "nurture": "Hi {Owner}, groups often plan new clinics and budgets around now, and the physio group sample came to mind.\n\nIt's still here if you'd like another look with your operations lead, same scope and price: {demo-link}"
+  },
+  "pricing": {
+    "bullets": [
+      "Price by clinic count and integrations, not pages. Each clinic page needs its own hours, team and booking rules.",
+      "Quote the booking integration separately after seeing the practice system; it's where multi-clinic builds overrun.",
+      "Condition pages need a clinical lead's review; never write recovery times as promises or anything that reads like treatment advice.",
+      "Charge for therapist profiles in batches, and include a way for clinic managers to update them, because physio teams change often.",
+      "Price the case manager desk on report formats and referral routing, not design; that's what case managers judge.",
+      "Include a new-clinic page in the care scope, so a group that adds sites doesn't need a new project each time."
+    ],
+    "lineItems": [
+      {
+        "item": "Clinic location page (each)",
+        "min": 400,
+        "max": 1000,
+        "unit": "per-page",
+        "description": "Max with accessible-entrance and parking notes, that clinic's therapists and classes, local reviews and booking preset to the site.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Condition or injury page (each)",
+        "min": 400,
+        "max": 1000,
+        "unit": "per-page",
+        "description": "Max with an assessment explainer, an FAQ, the clinics and therapists offering it and a clinical review round.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Therapist directory with filters",
+        "min": 2500,
+        "max": 7000,
+        "unit": "one-time",
+        "description": "Max with condition, clinic, language and gender filters, per-therapist booking and manager editing access.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Case manager referral desk",
+        "min": 2000,
+        "max": 6000,
+        "unit": "one-time",
+        "description": "Max with a secure referral form routed by clinic, sample report formats and response-time commitments the group sets.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Cross-clinic class timetable",
+        "min": 2000,
+        "max": 6000,
+        "unit": "one-time",
+        "description": "Max with booking, class packs, waitlists and filters by clinic, class type and day.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Careers and graduate programme pages",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "description": "Max with roles by clinic, mentoring details, a staff video and an application form sent to the right clinic lead.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Practice system booking integration",
+        "min": 5000,
+        "max": 16000,
+        "unit": "one-time",
+        "description": "Max when live availability shows by clinic, therapist and appointment type, with a request fallback when a site has no slots.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Acquired clinic migration (each)",
+        "min": 800,
+        "max": 2500,
+        "unit": "one-time",
+        "description": "Max when the old site's pages, redirects and listings move under the group site without losing their search history.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Accessibility review for patients with limited mobility",
+      "min": 2500,
+      "max": 7000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Rehab patients often book with one hand, a tremor or low vision. I review the physio booking flow, forms and clinic pages for accessibility and fix what fails.\"",
+      "when": "Month 2, after launch, and whenever booking changes."
+    },
+    {
+      "name": "Consent and patient-photo policy pages for the group",
+      "min": 1200,
+      "max": 3500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Physios love posting patients mid-exercise. A consent and photo policy page set, plus a simple release for each clinic, makes those posts safe across the whole group.\"",
+      "when": "At launch. Needs the clinic consent forms and the clinical lead's sign-off."
+    },
+    {
+      "name": "Advertising-approval-ready rehab content pack",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Health advertising can need sign-off where the regulator requires it. I prepare the physiotherapy group's ad and landing copy as a review-ready pack, with every claim checked against the clinic's own wording.\"",
+      "when": "Before a paid campaign or a new clinic launch."
+    },
+    {
+      "name": "Photo day across the physio clinics",
+      "min": 2000,
+      "max": 6000,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"One day moving through the clinics: therapist portraits, gyms and treatment rooms, and staff demonstrating exercises, so every clinic page looks like the real place.\"",
+      "when": "Month 2, or when a new clinic opens."
+    },
+    {
+      "name": "Google profile upkeep for every physio clinic",
+      "min": 400,
+      "max": 1500,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Each clinic's profile kept accurate on hours, services and photos, with a weekly rehab tip post, so a search for physio nearby shows the right location.\"",
+      "when": "Day 30, once clinic pages are live."
+    },
+    {
+      "name": "Monthly condition articles reviewed by a clinical lead",
+      "min": 1200,
+      "max": 3500,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Each month, plain articles on the conditions your physiotherapists see most, drafted from a short call and checked by a clinical lead before they go up.\"",
+      "when": "Month 3, once the condition pages are approved."
+    },
+    {
+      "name": "New clinic launch campaign",
+      "min": 1500,
+      "max": 4500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Before a new rehab clinic opens: a launch page, local posts, an open day sign-up and letters to nearby doctors, so the first weeks have patients booked.\"",
+      "when": "Six weeks before each opening."
+    },
+    {
+      "name": "Referrer outreach for doctors, surgeons and sports clubs",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A referrer page, a printed clinic map and a one-step referral form for the doctors, surgeons and sports clubs near each physio clinic.\"",
+      "when": "Month 3, when the group names its main referrers."
+    },
+    {
+      "name": "Physiotherapist recruiting campaign",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"When several clinics are hiring, a short campaign to graduates and experienced physios, with staff stories and the mentoring programme, sent to the careers page.\"",
+      "when": "Ahead of graduation season or when three roles are open at once."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Orthopaedic and sports medicine practices",
+        "whoPays": "The surgical or sports medicine practice",
+        "min": 5000,
+        "max": 14000,
+        "unit": "one-time",
+        "pitchLine": "\"The orthopaedic surgeons who send you post-surgery rehab often have dated sites. The physio group they refer to can introduce me.\"",
+        "whyItWorks": "Surgeons and rehab groups trade patients constantly, and both buy on credentials and easy booking."
+      },
+      {
+        "route": "Gyms and strength coaches who take discharged patients",
+        "whoPays": "The gym or coaching studio",
+        "min": 2000,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"When your physios discharge patients to a gym or coach for strength work, that gym needs a site that shows it can take them. Your introduction gets me in.\"",
+        "whyItWorks": "Gyms want rehab-group referrals and see the value of looking credible to them."
+      },
+      {
+        "route": "Orthotics, bracing and mobility equipment suppliers",
+        "whoPays": "The equipment supplier",
+        "min": 3000,
+        "max": 9000,
+        "unit": "one-time",
+        "pitchLine": "\"The supplier that fits your patients' braces and orthotics needs product pages and fitting bookings. The rehab group's word opens the conversation.\"",
+        "whyItWorks": "Suppliers depend on clinic referrals and usually run on a catalogue site that's years old."
+      },
+      {
+        "route": "Massage and remedial therapy practices",
+        "whoPays": "The massage practice",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"Remedial massage therapists who share patients with your physio clinics need a booking site. An introduction from the group is the warmest start.\"",
+        "whyItWorks": "Small practices built on referrals, with a clear booking need and no time to build."
+      },
+      {
+        "route": "Occupational health providers",
+        "whoPays": "The occupational health provider",
+        "min": 5000,
+        "max": 15000,
+        "unit": "one-time",
+        "pitchLine": "\"Occupational health firms that send injured workers to your rehab clinics need sites for the employers they serve. They'll take a call from a provider they trust.\"",
+        "whyItWorks": "They sell to employers on professionalism and already know the rehab group's work."
+      },
+      {
+        "route": "Local sports clubs and school sports programmes",
+        "whoPays": "The club or school",
+        "min": 1500,
+        "max": 5000,
+        "unit": "one-time",
+        "pitchLine": "\"The clubs your physios cover on match days need registration, fixtures and sponsor pages. Their team physio can introduce me.\"",
+        "whyItWorks": "Volunteer-run clubs need sites badly and trust the clinic that already looks after their players."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Post-op patient question assistant for surgical practices",
+        "whoPays": "The surgical practice, monthly",
+        "min": 400,
+        "max": 1200,
+        "unit": "monthly",
+        "pitchLine": "\"Orthopaedic patients call the surgeon's office with logistics questions after surgery. An assistant answers from the practice's approved sheet and hands anything clinical to a nurse.\"",
+        "whyItWorks": "It cuts the surgeon's phone load, and the physio group's introduction makes the first demo easy."
+      },
+      {
+        "route": "Programme intake assistant for gyms taking rehab clients",
+        "whoPays": "The gym, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"New clients discharged from physiotherapy answer the gym's intake questions with an assistant, and the coach gets a short summary with the physio's discharge notes attached.\"",
+        "whyItWorks": "Coaches want those clients set up properly, and the group benefits from a smooth handover."
+      },
+      {
+        "route": "Fitting question assistant for equipment suppliers",
+        "whoPays": "The equipment supplier, monthly",
+        "min": 200,
+        "max": 600,
+        "unit": "monthly",
+        "pitchLine": "\"Rehab patients sent for a knee brace or orthotics ring the supplier about sizes, delivery and funding forms. A chat helper covers those from the supplier's catalogue and schedules a fitting.\"",
+        "whyItWorks": "It saves staff time on a steady stream of rehab referrals."
+      },
+      {
+        "route": "Booking assistant for massage practices",
+        "whoPays": "The massage practice, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"Massage therapists can't answer the phone mid-session. An assistant handles booking and pricing questions and offers the next open slot.\"",
+        "whyItWorks": "Cheap, quick to show, and the physio group's recommendation gets the yes."
+      },
+      {
+        "route": "Injury report drafts for occupational health providers",
+        "whoPays": "The occupational health provider, monthly",
+        "min": 500,
+        "max": 1500,
+        "unit": "monthly",
+        "pitchLine": "\"Occupational health clinicians dictate a short note and get a draft employer update in the provider's format, which they check and send.\"",
+        "whyItWorks": "Report writing is their slowest task, and rehab clinics they work with already see the format."
+      },
+      {
+        "route": "Fixture and registration assistant for sports clubs",
+        "whoPays": "The sports club, monthly",
+        "min": 50,
+        "max": 200,
+        "unit": "monthly",
+        "pitchLine": "\"Parents ask the club about fixtures, training times and registration all week. An assistant answers from the club's own pages so volunteers get their evenings back.\"",
+        "whyItWorks": "A tiny monthly fee clubs can approve quickly, introduced by the team physio."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Missed-call text-back for every physio clinic",
+      "kind": "automation",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2500,
+      "monthlyMin": 200,
+      "monthlyMax": 600,
+      "pitchLine": "\"When a clinic's front desk is busy with a patient, the missed caller gets a text with that physio clinic's online booking link, so nobody drifts to the clinic down the road.\"",
+      "whenAndWhatItTakes": "Month 1. Needs each clinic's number forwarded and wording approved by operations."
+    },
+    {
+      "name": "Privacy-safe intake forms and hosting setup",
+      "kind": "software",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 300,
+      "monthlyMax": 800,
+      "pitchLine": "\"New patients complete their rehab history, consent and claim details online before the first visit, on privacy-safe hosting, and it lands in the right clinic's queue.\"",
+      "whenAndWhatItTakes": "Month 1 to 2. Needs their current forms, retention rules and sign-off from whoever owns patient privacy."
+    },
+    {
+      "name": "Online booking by clinic, therapist and visit type",
+      "kind": "software",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 16000,
+      "monthlyMin": 300,
+      "monthlyMax": 900,
+      "pitchLine": "\"Patients choose the nearest physio clinic, then a therapist and an assessment or follow-up, from live availability in the practice system.\"",
+      "whenAndWhatItTakes": "Month 2. Needs access to the practice system and booking rules per clinic and visit type."
+    },
+    {
+      "name": "Review reply drafts for each clinic",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 200,
+      "monthlyMax": 600,
+      "pitchLine": "\"Reviews across every physio clinic get a reply drafted in the group's voice, naming the clinic but never confirming treatment, for the clinic lead to approve.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the privacy rules and a few approved replies. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Rebooking prompts after each rehab visit",
+      "kind": "automation",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 6000,
+      "monthlyMin": 200,
+      "monthlyMax": 500,
+      "pitchLine": "\"Patients who leave a physio visit without their next appointment booked get a prompt with their therapist's open times, before the plan of care drifts.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the practice system's appointment export and approved message wording."
+    },
+    {
+      "name": "Cross-clinic class booking and packs",
+      "kind": "software",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 12000,
+      "monthlyMin": 200,
+      "monthlyMax": 600,
+      "pitchLine": "\"Clinical pilates and rehab classes at every site bookable from one timetable, with class packs usable at any clinic and waitlists that fill gaps.\"",
+      "whenAndWhatItTakes": "Month 3. Needs class schedules, pack rules and their payment processor."
+    },
+    {
+      "name": "Clinic finder question assistant",
+      "kind": "ai",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 12000,
+      "monthlyMin": 500,
+      "monthlyMax": 1500,
+      "pitchLine": "\"It answers 'which clinic near me does vestibular rehab' and 'is there parking' from the group's approved pages, never gives treatment advice, and offers a booking at the right site.\"",
+      "whenAndWhatItTakes": "Month 4. Needs approved clinic and condition pages and the clinical lead's sign-off. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Case manager referral portal",
+      "kind": "software",
+      "oneTimeMin": 8000,
+      "oneTimeMax": 22000,
+      "monthlyMin": 400,
+      "monthlyMax": 1000,
+      "pitchLine": "\"Case managers send workplace and accident referrals securely, see when the patient is booked, and download progress reports, instead of chasing each clinic by phone.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the referral process, report templates and the clinic leads who accept these cases."
+    },
+    {
+      "name": "Progress report drafts for case managers",
+      "kind": "ai",
+      "oneTimeMin": 8000,
+      "oneTimeMax": 20000,
+      "monthlyMin": 600,
+      "monthlyMax": 1800,
+      "pitchLine": "\"From the therapist's treatment notes, it drafts the progress report in the case manager's required format. The physiotherapist edits and signs every one.\"",
+      "whenAndWhatItTakes": "Month 5. Needs report templates and access rules for notes. Comes with the AI maintenance retainer; nothing is sent unsigned."
+    },
+    {
+      "name": "After-hours phone assistant for the physio group",
+      "kind": "ai",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 500,
+      "monthlyMax": 1500,
+      "pitchLine": "\"Evening and weekend callers to any clinic get booking help, clinic hours and directions, and a callback request for anything else, without the front desks working late.\"",
+      "whenAndWhatItTakes": "Month 5. Needs clinic details, booking access and an approved script. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Home exercise programme portal",
+      "kind": "software",
+      "oneTimeMin": 10000,
+      "oneTimeMax": 28000,
+      "monthlyMin": 500,
+      "monthlyMax": 1500,
+      "pitchLine": "\"Each patient sees the exercises their own physiotherapist set, with the group's demonstration videos, behind a private sign-in, instead of printed sheets.\"",
+      "whenAndWhatItTakes": "Month 6. Needs the group's exercise video library, therapist workflow and a privacy review."
+    },
+    {
+      "name": "Referral letter drafts back to doctors and surgeons",
+      "kind": "ai",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 400,
+      "monthlyMax": 1000,
+      "pitchLine": "\"After an assessment, the physio gets a draft update letter to the referring doctor in the clinic's format, to check and send, so referrers hear back every time.\"",
+      "whenAndWhatItTakes": "Month 6. Needs letter templates and note access rules. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Utilisation dashboard by clinic and therapist",
+      "kind": "software",
+      "oneTimeMin": 8000,
+      "oneTimeMax": 22000,
+      "monthlyMin": 400,
+      "monthlyMax": 1200,
+      "pitchLine": "\"See booked hours, open slots, cancellations and new patients for every rehab clinic and therapist on one screen, so the operations director knows where to add capacity.\"",
+      "whenAndWhatItTakes": "Month 6. Needs a daily export from the practice system and three months of history."
+    },
+    {
+      "name": "Cancellation fill across nearby clinics",
+      "kind": "automation",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 200,
+      "monthlyMax": 600,
+      "pitchLine": "\"When a physio slot opens, patients waiting at that clinic or the nearest other site get a text offer, first to reply books it.\"",
+      "whenAndWhatItTakes": "Month 7. Needs booking integration and a waitlist rule per clinic."
+    },
+    {
+      "name": "Physiotherapist applicant screener",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 300,
+      "monthlyMax": 800,
+      "pitchLine": "\"Physio and assistant applicants answer questions on registration, preferred clinics and caseload interests, and clinic leads get a draft shortlist to review.\"",
+      "whenAndWhatItTakes": "When three or more roles are open. Needs role requirements per clinic. Comes with the AI maintenance retainer; people decide every hire."
+    },
+    {
+      "name": "Condition page drafts with a claims check",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 300,
+      "monthlyMax": 800,
+      "pitchLine": "\"A therapist talks through a condition for ten minutes and gets a draft rehab page, with any line that sounds like a recovery promise or advice flagged for the clinical lead.\"",
+      "whenAndWhatItTakes": "Month 7. Needs the group's content rules. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Therapist caseload and room board",
+      "kind": "software",
+      "oneTimeMin": 8000,
+      "oneTimeMax": 20000,
+      "monthlyMin": 400,
+      "monthlyMax": 1000,
+      "pitchLine": "\"Clinic leads see each physiotherapist's caseload, gym and room bookings, and class cover across sites, so a therapist can pick up sessions at a busier clinic.\"",
+      "whenAndWhatItTakes": "Month 8. Needs rosters, room lists per clinic and the practice system export."
+    },
+    {
+      "name": "Discharge follow-up and class invitation",
+      "kind": "automation",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"When rehab ends, patients get a thank-you, a review request and an invitation to the right class at their clinic, so discharge isn't the end of the relationship.\"",
+      "whenAndWhatItTakes": "Month 8. Needs discharge status from the practice system and approved wording."
+    },
+    {
+      "name": "Weekly operations summary for the group",
+      "kind": "ai",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 400,
+      "monthlyMax": 900,
+      "pitchLine": "\"Every Monday the operations director gets a plain draft of last week across all physio clinics: new patients, cancellations, referral sources and anything unusual.\"",
+      "whenAndWhatItTakes": "Month 9, after the dashboard. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Group-wide patient and referrer data hub",
+      "kind": "software",
+      "oneTimeMin": 15000,
+      "oneTimeMax": 40000,
+      "monthlyMin": 800,
+      "monthlyMax": 2500,
+      "pitchLine": "\"Booking, intake, referrals, classes and reviews from every clinic in one place, so the rehab group reports on patients and referrers as one organisation.\"",
+      "whenAndWhatItTakes": "Month 12. Needs the earlier integrations live and agreement on what each clinic shares."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the clinic finder and booking front door",
+      "whoPays": "Physiotherapy groups, monthly per clinic",
+      "min": 150,
+      "max": 400,
+      "unit": "monthly",
+      "pitchLine": "\"Every growing physio group has the same problem: many clinics, one old site. The clinic finder and booking I built loads any group's locations.\"",
+      "whyItWorks": "The integration and finder logic are paid for once; each new group adds its clinics and therapists."
+    },
+    {
+      "route": "Physiotherapy association member template",
+      "whoPays": "The national or regional physiotherapy association",
+      "min": 5000,
+      "max": 18000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer members condition pages and consent policies already written carefully, ready for each clinic's own clinical review.\"",
+      "whyItWorks": "Associations fund member resources and want members advertising responsibly."
+    },
+    {
+      "route": "Rehab groups acquiring independent clinics",
+      "whoPays": "The acquiring group's central team",
+      "min": 15000,
+      "max": 60000,
+      "unit": "one-time",
+      "pitchLine": "\"Each physio clinic you acquire arrives with its own site and phone number. The migration I built moves them under one group site without losing their local searches.\"",
+      "whyItWorks": "Acquisition programmes repeat, and the migration playbook has already been run on the first group's clinics."
+    },
+    {
+      "route": "Insurers' and claims schemes' provider networks",
+      "whoPays": "The insurer's or scheme's provider network team",
+      "min": 10000,
+      "max": 35000,
+      "unit": "one-time",
+      "pitchLine": "\"Network teams need to direct claimants to approved rehab clinics. The clinic finder and referral portal become their provider directory.\"",
+      "whyItWorks": "They already pay to manage provider lists, and the referral structure exists."
+    },
+    {
+      "route": "Sports leagues and governing bodies",
+      "whoPays": "The league or governing body",
+      "min": 5000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Leagues want players to find approved sports rehab quickly after an injury. A finder of partner physio clinics, with booking, built on the same structure.\"",
+      "whyItWorks": "Player welfare budgets exist, and the group's club relationships open the door."
+    },
+    {
+      "route": "White-label for healthcare marketing agencies",
+      "whoPays": "The agency, per rehab group client",
+      "min": 5000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency runs campaigns for physio groups that land on one shared contact page. License the finder, clinic pages and booking and I deliver under your name.\"",
+      "whyItWorks": "Agencies own the relationship but can't build integrations; this gives them a finished product."
+    },
+    {
+      "route": "University physiotherapy programmes",
+      "whoPays": "The university's teaching clinic",
+      "min": 6000,
+      "max": 18000,
+      "unit": "one-time",
+      "pitchLine": "\"University teaching clinics run supervised physio sessions with booking and intake headaches. The group's booking and intake carry straight over.\"",
+      "whyItWorks": "Teaching clinics have budgets, repeat every term and value a builder that knows rehab workflows."
+    },
+    {
+      "route": "Rehab equipment makers' clinic locator",
+      "whoPays": "The equipment maker's clinic-support team",
+      "min": 8000,
+      "max": 25000,
+      "unit": "one-time",
+      "pitchLine": "\"Makers of rehab equipment want patients to find clinics that use it. The clinic finder becomes their locator across every physio clinic that bought the equipment.\"",
+      "whyItWorks": "Makers fund locator tools to support sales, and the finder is already built."
+    },
+    {
+      "route": "Physio franchise brands",
+      "whoPays": "The franchisor, per franchise clinic",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Franchise physio brands need a page and booking for every new franchisee, set up the same way. The multi-clinic template does exactly that.\"",
+      "whyItWorks": "Each new franchisee pays a setup fee, so the template earns again with every opening."
+    },
+    {
+      "route": "Case manager report format licence",
+      "whoPays": "Rehab clinics outside the group, monthly",
+      "min": 200,
+      "max": 600,
+      "unit": "monthly",
+      "pitchLine": "\"Any rehab clinic that takes claims work struggles with case manager reports. The report drafting and referral portal I built run for them too.\"",
+      "whyItWorks": "Claims rehab follows the same formats widely, and the drafting rules are already reviewed."
+    },
+    {
+      "route": "One physiotherapy group per region",
+      "whoPays": "A rehab group in another region",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"One rehab group per region gets this build. {City} is taken by you; a physio group several regions away can license the same structure without touching your patients.\"",
+      "whyItWorks": "Groups value exclusivity in their area, and the template moves between regions unchanged."
+    },
+    {
+      "route": "Rescue stalled multi-clinic site migrations",
+      "whoPays": "The rehab group with a half-merged site",
+      "min": 8000,
+      "max": 25000,
+      "unit": "one-time",
+      "pitchLine": "\"A merger left your physio clinics half on the old sites and half on the new one. I finish the migration on a structure built for many locations.\"",
+      "whyItWorks": "They've already committed budget, and a half-done migration costs them bookings every week."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Physiotherapy group site build plus care plan, one contract",
+      "min": 10000,
+      "max": 24000,
+      "unit": "one-time",
+      "trigger": "Operations and the clinical lead approve the scope.",
+      "line": "\"The physio group site and the care plan share one contract, so a new therapist or clinic hours change is a message, not a project.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Google profile upkeep for every physio clinic",
+      "min": 400,
+      "max": 1500,
+      "unit": "monthly",
+      "trigger": "Clinic pages are live and patients start choosing locations online.",
+      "line": "\"Patients now pick a clinic online. Keeping every clinic's profile accurate sends them to the right physio door.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "Photo day across the physio clinics",
+      "min": 2000,
+      "max": 6000,
+      "unit": "per-shoot",
+      "trigger": "Therapist profiles and clinic pages still show marked placeholders where photos go.",
+      "line": "\"The therapist directory is live but still waiting for portraits. One day across the clinics finishes it.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Online booking by clinic, therapist and visit type",
+      "min": 5000,
+      "max": 16000,
+      "unit": "one-time",
+      "trigger": "Sixty days of booking requests show front desks re-keying them into the practice system.",
+      "line": "\"Your front desks are re-typing every web request. Live booking by clinic and physiotherapist ends that.\""
+    },
+    {
+      "rung": 5,
+      "day": 120,
+      "offer": "Case manager referral portal",
+      "min": 8000,
+      "max": 22000,
+      "unit": "one-time",
+      "trigger": "Case managers start using the referral desk and ask for report status.",
+      "line": "\"Case managers are using the referral desk. A portal with booking status and reports keeps them sending rehab cases to you.\""
+    },
+    {
+      "rung": 6,
+      "day": 180,
+      "offer": "Utilisation dashboard by clinic and therapist",
+      "min": 8000,
+      "max": 22000,
+      "unit": "one-time",
+      "trigger": "Operations asks which clinics have spare capacity before hiring.",
+      "line": "\"Before the next hire, let's see which physio clinics are full and which have open hours.\""
+    },
+    {
+      "rung": 7,
+      "day": 270,
+      "offer": "Home exercise programme portal",
+      "min": 10000,
+      "max": 28000,
+      "unit": "one-time",
+      "trigger": "Therapists say patients lose printed exercise sheets between visits.",
+      "line": "\"Patients lose the printed sheets. A private rehab portal with your own exercise videos keeps the plan with them.\""
+    },
+    {
+      "rung": 8,
+      "day": 365,
+      "offer": "Group-wide patient and referrer data hub",
+      "min": 15000,
+      "max": 40000,
+      "unit": "one-time",
+      "trigger": "The group plans more clinics and wants one view of patients and referrers.",
+      "line": "\"A year in, with more clinics planned, let's see the whole physiotherapy group's patients and referrers in one place.\""
+    }
+  ]
+}

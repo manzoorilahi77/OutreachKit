@@ -1,0 +1,894 @@
+{
+  "schemaVersion": 1,
+  "category": "Training institutes & vocational centres",
+  "slug": "training-institutes-vocational-centres",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · expansion batch (healthcare + mid-size)",
+    "generatedAt": "2026-10-13",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Mid-size edu batch. Written for an institute director or marketing and admissions lead; leaned on the course catalogue with intake dates, enrolment with payment and the corporate training funnel. Corporate client portal and student portal ranges are the least certain."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Course catalogue with intake dates",
+      "contains": "Every course searchable by field, level, mode (classroom, online, blended), duration, campus and next intake, each with fees, seats left, entry requirements and an enrol button",
+      "why": "Learners compare institutes course by course, not by homepage. The one that shows the next intake date and price for the exact course gets the enquiry."
+    },
+    {
+      "section": "Corporate training and in-house programmes",
+      "contains": "Courses delivered at the client's site or online, custom programmes, group rates, trainer profiles, how attendance and completion are reported, and a training request form",
+      "why": "One company booking can fill a whole cohort. Learning and development managers need a page to forward internally and a way to request a proposal."
+    },
+    {
+      "section": "Entry requirements and placement test",
+      "contains": "Prerequisites per course, an online placement or language level test, recognition of prior learning, and what happens if a learner doesn't meet the bar yet",
+      "why": "Adult learners fear signing up for the wrong level. A placement test online turns that doubt into an enrolment on the right course."
+    },
+    {
+      "section": "Payment plans and employer sponsorship",
+      "contains": "Instalment options per course, employer-paid invoicing, a sponsorship letter template, refund and deferral terms, and funding schemes where the institute is eligible",
+      "why": "Many vocational learners can't pay a course fee in one go, and many have employers willing to pay. Both need the terms in writing before they enrol."
+    },
+    {
+      "section": "Certification exams and verification",
+      "contains": "Exam dates and booking, what the certificate is and who issues it, accreditation details as placeholders until confirmed, and a certificate verification page for employers",
+      "why": "Learners enrol for the certificate, and employers check it. Showing how certification works, and letting employers verify it, is the institute's credibility."
+    },
+    {
+      "section": "Careers support and hiring partners",
+      "contains": "Placement and careers support, employers who hire the institute's graduates where they agree to be named, and graduate stories shared with written consent",
+      "why": "Vocational learners are buying a job, not a course. They want to see the route into work without promises the institute can't keep."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C25",
+      "siteType": "local-conversion",
+      "name": "Next Intake",
+      "heroLayout": "type-led",
+      "mood": [
+        "optimistic",
+        "practical",
+        "direct"
+      ],
+      "bestFor": "Institutes with a few flagship courses where the job is the next intake date and an enquiry or enrol button",
+      "pairsWithTier": "starter",
+      "headlineSample": "Career courses in {City}. Next intake starts soon.",
+      "whyItFits": "Citrus Morning feels energetic and practical, and the type-led hero puts the next intake date and the enrol button where a learner looks first."
+    },
+    {
+      "id": "b",
+      "themeId": "C6",
+      "siteType": "catalog",
+      "name": "Course Catalogue",
+      "heroLayout": "card-stack",
+      "mood": [
+        "clear",
+        "organised",
+        "credible"
+      ],
+      "bestFor": "Institutes with many courses across fields and campuses that need a searchable catalogue with intakes and online enrolment",
+      "pairsWithTier": "standard",
+      "headlineSample": "Find your course and next intake in {City}",
+      "whyItFits": "Not the family combo: Sky Kite reads as a children's school, and these learners are adults. Cobalt Wire is crisp and businesslike, and cards carry each course."
+    },
+    {
+      "id": "c",
+      "themeId": "C4",
+      "siteType": "b2b-capability",
+      "name": "Corporate Academy",
+      "heroLayout": "split-photo",
+      "mood": [
+        "professional",
+        "assured",
+        "corporate"
+      ],
+      "bestFor": "Institutes where corporate training and in-house programmes bring in most of the revenue",
+      "pairsWithTier": "premium",
+      "headlineSample": "Training programmes for {City} teams and organisations",
+      "whyItFits": "Navy and brass read like a board report, which is who signs corporate training budgets, and the editorial serif gives proposals weight."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "Course list is a PDF",
+      "line": "Your course list is a PDF brochure, so someone searching a specific certification course in {City} can't land on a page for it with the fee and next intake.",
+      "hook": "Find the courses link. If it opens a PDF, or one page lists everything, the angle holds. Screenshot it for when they reply.",
+      "linkLine": "A course catalogue with a page per course and intake: {demo-link}"
+    },
+    {
+      "angle": "Intake dates out of date",
+      "line": "The intake dates on your institute's course pages are from an earlier term. A learner ready to enrol now assumes the course isn't running.",
+      "hook": "Compare intake dates on the site with their latest posts. Note one course where they disagree.",
+      "linkLine": "Course pages with intake dates that update themselves: {demo-link}"
+    },
+    {
+      "angle": "No online enrolment",
+      "line": "Enrolling on one of your courses means filling an enquiry form and waiting for an advisor to call. Working adults decide on a training course at night and want to secure the seat then.",
+      "hook": "Try to enrol on a course. Note where it stops: an enquiry form, a phone number, a visit-us line.",
+      "linkLine": "Online course enrolment with a seat held on payment: {demo-link}"
+    },
+    {
+      "angle": "Slow on a phone",
+      "line": "Your institute site was slow to open on my phone and the course search didn't fit the screen. Most learners browse courses on a phone during a commute or a break.",
+      "hook": "Load the homepage and a course page on mobile data. Note the seconds and what broke.",
+      "linkLine": "The same courses, quick and searchable on a phone: {demo-link}"
+    },
+    {
+      "angle": "No corporate training page",
+      "line": "Your posts mention training teams for local companies, but the site has no corporate training page. A learning and development manager needs something to forward internally.",
+      "hook": "Look for 'corporate', 'in-house' or 'for business' on the site. Note whether there's a page or just a line.",
+      "linkLine": "A corporate training page with a proposal request: {demo-link}"
+    },
+    {
+      "angle": "Course fees hidden",
+      "line": "I couldn't find fees for any of your courses, only 'contact us for pricing'. Learners comparing two institutes for the same certification shortlist the one that shows a price.",
+      "hook": "Check three course pages for a fee or 'from' price. If none, the angle holds.",
+      "linkLine": "Course pages with fees and payment plans: {demo-link}"
+    },
+    {
+      "angle": "Placement test by visit",
+      "line": "To find the right language or skill level at your institute I'd have to come in for a placement test. Adults choosing a course at night want to know their level before they visit.",
+      "hook": "Strongest for language institutes. Look for an online level test. If it's in-person only, the angle holds.",
+      "linkLine": "An online placement test that suggests the right course: {demo-link}"
+    },
+    {
+      "angle": "Graduate reviews off the site",
+      "line": "Your graduates' reviews mention trainers by name and how the course helped them at work, but none of it appears on the course pages new learners read.",
+      "hook": "Read their reviews and copy one phrase about a trainer or a course. Quote it if they reply.",
+      "linkLine": "Graduate reviews beside each course: {demo-link}"
+    },
+    {
+      "angle": "Campuses share one page",
+      "line": "Your institute has more than one campus, but courses don't say where they run. A learner across town needs to know which campus and which evenings.",
+      "hook": "Count their campuses from map listings, in words. Check whether course pages show the campus.",
+      "linkLine": "Courses filterable by campus and timetable: {demo-link}"
+    },
+    {
+      "angle": "Hiring trainers",
+      "line": "I saw you're looking for trainers for the institute, but the site has no page for them. Industry practitioners decide whether to teach with you from how you present the role.",
+      "hook": "Find their trainer or assessor job posts. Check the site for a teach-with-us page. Note the field.",
+      "linkLine": "A teach-with-us page for trainers and assessors: {demo-link}"
+    },
+    {
+      "angle": "Certificates can't be verified",
+      "line": "Your graduates list your certificate on their CVs, but employers have no way to check it on your site. A verification page makes every certificate you issue more credible.",
+      "hook": "Search the site for verification or certificate check. Note whether one exists.",
+      "linkLine": "A certificate verification page for employers: {demo-link}"
+    },
+    {
+      "angle": "Dated look",
+      "line": "Your classrooms and workshops look current in every post, but the institute's site looks older than the skills it teaches.",
+      "hook": "Compare a recent classroom or workshop post to the homepage. Note one dated thing.",
+      "linkLine": "A site that looks like the institute does now: {demo-link}"
+    },
+    {
+      "angle": "Next intake approaching",
+      "line": "Your next intake is a few weeks away, and the course pages still say 'enquire'. Learners deciding this month need to see seats left and how to secure one.",
+      "hook": "Find the next intake in their posts. Use in the weeks before it starts. Name the course.",
+      "linkLine": "An intake page with seats left and online enrolment: {demo-link}"
+    },
+    {
+      "angle": "Employer sponsorship unclear",
+      "line": "Many of your learners could get their employer to pay for the course, but nothing on the site explains invoicing or gives them a letter to take to their manager.",
+      "hook": "Look for 'employer-sponsored', 'company pays' or invoicing details. Note whether any exist.",
+      "linkLine": "An employer sponsorship page with a ready letter: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "That {specific recent job} at the institute looked like a proud day for the graduates. A cohort moment like that should live on the course pages, not only in a feed.",
+      "hook": "Pick their newest event: a graduation, a cohort completing, a new workshop opening. Name it exactly.",
+      "linkLine": "That institute moment, kept on the site: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, that {specific recent job} at the institute looked like a proud day for the graduates.\n\nI looked at the {Business Name} site and noticed the courses sit in a PDF and enrolling stops at an enquiry form. I put together a sample with a searchable course catalogue, intake dates, online enrolment and a corporate training page, with marked placeholders where your photos would go.\n\nWould it help if I sent it over?",
+    "dm2": "{Owner}, following up in case this got buried. Here's the sample for {Business Name}: {demo-link}\n\nIt has a course catalogue with fees and next intakes, an online placement test, enrolment with payment plans, a corporate training page and a certificate verification page. It feeds the student system you already use. If it's not the right time, say so and I won't message again.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites and software for training institutes in {City}. I sent a sample for {Business Name} a few days ago, did it reach you?\"\n\nIF NO:\n\"No problem. Short version: a page per course with intake dates and fees, online enrolment and a corporate training page. Who else should see it, admissions or the corporate sales lead?\"\n\nIF YES:\n\"What did you and the team make of it?\"\n → let them talk, don't fill the silence\n\"It works alongside your student and learning systems, it doesn't replace them. The build runs {Build Range} depending on the number of courses, campuses and integrations, then {Care Range} a month for hosting, intake updates and changes. For your institute I'd expect about {Build Price}.\"\n\"Could we do thirty minutes with you and whoever runs enrolments next week?\"\n\nCLOSE:\n\"I'll send a scope and a deposit invoice, timed so the catalogue is live before your next intake.\"",
+    "objections": [
+      {
+        "objection": "Our advisors close enrolments on the phone.",
+        "handler": "\"Keep them. The site books the advisor call with the learner's course, level and budget already filled in, and lets the ready ones enrol and pay straight away.\""
+      },
+      {
+        "objection": "We get most learners from education fairs and agents.",
+        "handler": "\"Those learners still check the course page before they pay. The catalogue is what confirms the fair conversation, and the corporate page opens a funnel agents don't reach.\""
+      },
+      {
+        "objection": "Our learning platform already has a course list.",
+        "handler": "\"It runs the teaching well. It doesn't rank a course page for someone searching that certification in {City}. The site sends enrolled learners straight into it.\""
+      },
+      {
+        "objection": "Fees change by intake, so we can't publish them.",
+        "handler": "\"Fees can update per intake from one place. Show the current one with a 'from' price for the next, and learners stop ruling you out for not knowing.\""
+      },
+      {
+        "objection": "We already have a website.",
+        "handler": "\"You do, and it describes the institute. The gap is the course: its own page, its fee, its next intake and a way to enrol. That's what people search for.\""
+      },
+      {
+        "objection": "Accreditation rules limit what we can say.",
+        "handler": "\"Good, that keeps it honest. Accreditation details go in exactly as issued, there are no job or pass promises, and nothing goes live without your sign-off.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For you about {Build Price}, because it's the course catalogue, enrolment and the corporate funnel. One company booking a cohort covers most of it.\""
+      }
+    ],
+    "email": {
+      "subject": "Course catalogue and enrolment for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites and software for training institutes and vocational centres around {City}. {Business Name} runs courses people search for by name, but the site lists them in a PDF and enrolling stops at an enquiry form.\n\nI built a sample rather than ask for a meeting first: a searchable course catalogue with fees and next intakes, an online placement test, enrolment with payment plans, a corporate training page and certificate verification, with marked placeholders where your photos would go. It feeds the student system you already use:\n\n{demo-link}\n\nIf it's useful, the build runs {Build Range}, plus {Care Range} a month for hosting, intake updates and changes. If not, no problem, the sample comes down at the end of the month.\n\nWorth thirty minutes before your next intake?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build websites for training institutes in {City}, and I made a sample for {Business Name} with a course catalogue, intake dates and online enrolment. I'll email you the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm taking the {Business Name} course catalogue sample down on Friday to free up the space.\n\nShould I keep it up for the team? One word is fine either way.",
+    "nurture": "Hi {Owner}, learners start comparing courses a month or two before each intake, and companies plan training budgets for the year ahead. Thought of you.\n\nThe course catalogue sample is still here if you want another look: {demo-link}"
+  },
+  "pricing": {
+    "bullets": [
+      "Price by the number of courses, campuses and integrations, not pages. Course pages are templated; enrolment with payment is the work.",
+      "Peg the build to a few course fees or one corporate cohort. That's how the director already measures a good month.",
+      "Quote the site as the front door to their student and learning systems, never as a replacement for either.",
+      "Price the corporate funnel separately. It's a different buyer, and it often justifies the whole build on its own.",
+      "Time launches to the intake calendar, live several weeks before the next intake, never in its final week.",
+      "Never write pass rates, job placement promises or accreditation claims. Use what the institute provides, in placeholders until confirmed."
+    ],
+    "lineItems": [
+      {
+        "item": "Course page with intake dates and fees",
+        "min": 250,
+        "max": 700,
+        "unit": "per-page",
+        "description": "Max with module outline, trainer profiles, campus and timetable options, seats left and an enrol button.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Online enrolment with payment and instalments",
+        "min": 3000,
+        "max": 8000,
+        "unit": "one-time",
+        "description": "Max with instalment plans, employer invoicing, document upload and handoff to the student system.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Online placement or level test",
+        "min": 1500,
+        "max": 5000,
+        "unit": "one-time",
+        "description": "Max when results suggest a course and intake, and an advisor gets the score with the learner's goals.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Corporate training section with proposal request",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "description": "Max with sector pages, in-house delivery options, group rate tables and routing to the corporate sales lead.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Certificate verification page",
+        "min": 1200,
+        "max": 3500,
+        "unit": "one-time",
+        "description": "Max when employers check a certificate by code against the institute's records, with an audit log.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Course search with filters across campuses",
+        "min": 1500,
+        "max": 4500,
+        "unit": "one-time",
+        "description": "Max with filters for field, level, mode, campus, evening or weekend timing and next intake.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Employer sponsorship pack and letter",
+        "min": 600,
+        "max": 1500,
+        "unit": "one-time",
+        "description": "Max with a letter generated per course and learner, plus an invoicing request form for the employer.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Second-language course pages",
+        "min": 1500,
+        "max": 4500,
+        "unit": "one-time",
+        "description": "Max when the catalogue, entry requirements, enrolment and payment terms are all translated.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Accessibility review of catalogue and enrolment",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "description": "Max when search, the placement test and enrolment are reviewed and fixed for keyboard and screen readers.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Intake campaigns by course",
+      "min": 800,
+      "max": 2500,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Search and social ads for the courses with seats left, pointing at each course page, timed to each intake and paused when the cohort fills.\"",
+      "when": "Six to eight weeks before each intake. Ad spend is on top."
+    },
+    {
+      "name": "Google profile management for each campus",
+      "min": 200,
+      "max": 600,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Each campus profile kept current with next intakes, open evenings and course news, so people searching for training nearby see an active institute.\"",
+      "when": "Day 30. Priced by the number of campuses."
+    },
+    {
+      "name": "Classroom and workshop photo and video day",
+      "min": 800,
+      "max": 2500,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A day filming practical training in the workshops and classrooms, only learners who sign a release, so each course page shows the real equipment.\"",
+      "when": "Month 2, on a practical training day, with releases collected first."
+    },
+    {
+      "name": "Graduate review and story programme",
+      "min": 199,
+      "max": 499,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Graduates are asked for a review when they receive their certificate, and longer stories go on the course pages only with written consent.\"",
+      "when": "After the first cohort enrolled through the site completes."
+    },
+    {
+      "name": "Corporate training sales deck and case pages",
+      "min": 1200,
+      "max": 3500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A deck and short case pages for the institute's corporate sales lead, written from client programmes with each client's permission.\"",
+      "when": "Month 3, once the corporate section is live."
+    },
+    {
+      "name": "Open evening and info session campaigns",
+      "min": 500,
+      "max": 1500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"An info session page, booking, reminders and a follow-up with the enrol link, for each training course's next open evening.\"",
+      "when": "Three to four weeks before each intake."
+    },
+    {
+      "name": "Course brochure redesign for web and print",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Course content written once and published as catalogue pages and a printed brochure for education fairs, so the two never disagree.\"",
+      "when": "Month 3, before the next fair season."
+    },
+    {
+      "name": "Monthly learner newsletter",
+      "min": 400,
+      "max": 1200,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A monthly email to past enquirers and graduates with upcoming intakes, next-level courses and short skill tips from the institute's trainers.\"",
+      "when": "Month 2, once the enquiry list is collected through the site."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Recruitment agencies placing the institute's graduates",
+        "whoPays": "The recruitment agency, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The agency that places your graduates in jobs takes CVs by email. A jobs board and candidate registration site would help them and your learners.\"",
+        "whyItWorks": "Agencies value the institute as a candidate source, and the institute's introduction is a warm one."
+      },
+      {
+        "route": "Student accommodation providers near the campus",
+        "whoPays": "The accommodation provider",
+        "min": 3000,
+        "max": 9000,
+        "unit": "one-time",
+        "pitchLine": "\"The residence your out-of-town learners stay in takes bookings by phone. Room booking by intake dates would fill it every course cycle.\"",
+        "whyItWorks": "Housing providers depend on the institute's intakes and would welcome its recommendation."
+      },
+      {
+        "route": "Employers who hire the graduates",
+        "whoPays": "Each employer, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The companies that hire your vocational graduates often have no careers page. The institute's introduction gets me in to build one.\"",
+        "whyItWorks": "Employers who recruit from the institute already trust it, and many hire without a careers page."
+      },
+      {
+        "route": "Training equipment and materials suppliers",
+        "whoPays": "The supplier",
+        "min": 4000,
+        "max": 12000,
+        "unit": "one-time",
+        "pitchLine": "\"The supplier that equips your workshops sells from a PDF catalogue. A trade catalogue with quote requests would win them other training centres.\"",
+        "whyItWorks": "Suppliers sell centre by centre, and the institute's workshop is their reference."
+      },
+      {
+        "route": "Exam and testing venue operators",
+        "whoPays": "The venue operator",
+        "min": 3000,
+        "max": 8000,
+        "unit": "one-time",
+        "pitchLine": "\"The testing centre where your learners sit certification exams books seats by email. Online exam booking with dates and fees would fix that.\"",
+        "whyItWorks": "Testing venues serve many institutes, and the institute's recommendation brings them more candidates."
+      },
+      {
+        "route": "Freelance trainers and subject experts",
+        "whoPays": "Each trainer, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The freelance trainers who teach your evening courses also run their own workshops. Each needs a booking page that mentions the institute.\"",
+        "whyItWorks": "Trainers see the institute's new site first-hand and want the same polish for their own work."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Candidate matching assistant for the recruitment agency",
+        "whoPays": "The agency, monthly",
+        "min": 199,
+        "max": 499,
+        "unit": "monthly",
+        "pitchLine": "\"Graduates of a given training course register, and the agency gets a short summary matched to open roles, with every decision left to recruiters.\"",
+        "whyItWorks": "Agencies screen by hand, and faster shortlists mean faster fees."
+      },
+      {
+        "route": "Booking assistant for the accommodation provider",
+        "whoPays": "The provider, monthly",
+        "min": 99,
+        "max": 299,
+        "unit": "monthly",
+        "pitchLine": "\"Learners ask about room types, prices and dates around their course intake, and get an answer and a booking request.\"",
+        "whyItWorks": "Questions come in bursts before each intake, when staff are busiest."
+      },
+      {
+        "route": "Job description writer for hiring employers",
+        "whoPays": "Each employer, monthly",
+        "min": 79,
+        "max": 199,
+        "unit": "monthly",
+        "pitchLine": "\"A hiring manager describes the vocational role, and gets a clear job post that names the certification and skills the institute trains.\"",
+        "whyItWorks": "Small employers write poor job posts, and better ones bring the right graduates."
+      },
+      {
+        "route": "Quote assistant for the equipment supplier",
+        "whoPays": "The supplier, monthly",
+        "min": 199,
+        "max": 499,
+        "unit": "monthly",
+        "pitchLine": "\"A training centre describes the courses and class size it runs, and the supplier gets a draft equipment list from its own catalogue to quote.\"",
+        "whyItWorks": "Turning a course outline into a quote takes a sales engineer's time."
+      },
+      {
+        "route": "Exam booking assistant for the testing venue",
+        "whoPays": "The venue, monthly",
+        "min": 99,
+        "max": 299,
+        "unit": "monthly",
+        "pitchLine": "\"Candidates ask which certification exam dates have seats and what ID to bring, and get answered and booked from the venue's own rules.\"",
+        "whyItWorks": "Venue staff answer the same questions every exam week."
+      },
+      {
+        "route": "Workshop enquiry assistant for freelance trainers",
+        "whoPays": "Each trainer, monthly",
+        "min": 49,
+        "max": 149,
+        "unit": "monthly",
+        "pitchLine": "\"Prospects ask a trainer about workshop dates, level and price, and get answered and booked while the trainer is teaching.\"",
+        "whyItWorks": "Trainers miss messages in class. A small monthly fee is less than one seat."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Enquiry follow-up and advisor call booking",
+      "kind": "automation",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 99,
+      "monthlyMax": 299,
+      "pitchLine": "\"Every course enquiry gets an instant reply with the fee and next intake, and a slot to book a call with an advisor for that course.\"",
+      "whenAndWhatItTakes": "Day 30. Needs the course list, advisor calendars and the reply wording."
+    },
+    {
+      "name": "Intake seat countdown reminders",
+      "kind": "automation",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Learners who enquired about a course get a reminder as its intake approaches with the seats left, and a final note before enrolment closes.\"",
+      "whenAndWhatItTakes": "Month 2. Needs intake dates and seat limits per course."
+    },
+    {
+      "name": "Course advisor assistant",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 299,
+      "monthlyMax": 799,
+      "pitchLine": "\"A learner describes their job and goal, and gets the right course, level and next intake from the institute's own catalogue, with a call booking for anything unsure.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the catalogue, entry rules and the director's approval of answers. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Instalment billing and payment reminders",
+      "kind": "automation",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"Learners on a course payment plan get reminders before each instalment, and the finance team sees who is behind without chasing.\"",
+      "whenAndWhatItTakes": "Month 3, once instalment enrolments arrive. Needs the payment plans and payment provider."
+    },
+    {
+      "name": "Corporate proposal drafting",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 199,
+      "monthlyMax": 499,
+      "pitchLine": "\"A company's training request becomes a draft proposal with matched courses, delivery options and group pricing, for the corporate lead to edit and send.\"",
+      "whenAndWhatItTakes": "Month 3, once requests come through the corporate page. Needs past proposals and rate cards. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Enquiry source and enrolment dashboard",
+      "kind": "software",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 15000,
+      "monthlyMin": 199,
+      "monthlyMax": 499,
+      "pitchLine": "\"Enquiries, advisor calls, enrolments and revenue by course, intake and source on one screen, so the institute knows which training campaign filled seats.\"",
+      "whenAndWhatItTakes": "Month 4, after one intake on the new site. Needs the student system's enrolment export."
+    },
+    {
+      "name": "Attendance and certificate issuing",
+      "kind": "software",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 14000,
+      "monthlyMin": 149,
+      "monthlyMax": 399,
+      "pitchLine": "\"Trainers mark attendance from a tablet, completion rules are checked automatically, and certificates are issued with a verification code.\"",
+      "whenAndWhatItTakes": "Month 4. Needs completion rules per course and the certificate design."
+    },
+    {
+      "name": "Corporate client portal",
+      "kind": "software",
+      "oneTimeMin": 10000,
+      "oneTimeMax": 30000,
+      "monthlyMin": 299,
+      "monthlyMax": 899,
+      "pitchLine": "\"Companies book training seats for staff, see attendance and completion, and download invoices and certificates themselves.\"",
+      "whenAndWhatItTakes": "Month 5, once several corporate clients book regularly. Needs the student system's integration options."
+    },
+    {
+      "name": "Trainer and room scheduling across campuses",
+      "kind": "software",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 18000,
+      "monthlyMin": 199,
+      "monthlyMax": 599,
+      "pitchLine": "\"Courses, trainers, workshops and rooms scheduled across campuses without double-booking, with the course timetable published to the site.\"",
+      "whenAndWhatItTakes": "Month 5. Needs trainer availability, room and workshop lists and the course timetable."
+    },
+    {
+      "name": "Enrolment document checker",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 199,
+      "monthlyMax": 499,
+      "pitchLine": "\"Uploaded IDs, transcripts and prior certificates are checked for completeness against each course's entry rules, and admissions makes every decision.\"",
+      "whenAndWhatItTakes": "Month 5. Needs entry rules and the privacy rules where they operate. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Learner feedback surveys by course",
+      "kind": "automation",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Learners rate each training module and trainer mid-course and at the end, and results go to the academic lead by course.\"",
+      "whenAndWhatItTakes": "Month 6. Needs the questions and the module list."
+    },
+    {
+      "name": "Next-level course offers for graduates",
+      "kind": "automation",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"Graduates get an offer for the next-level course or a related certification when they finish, timed to the next intake.\"",
+      "whenAndWhatItTakes": "Month 6. Needs the course progression map."
+    },
+    {
+      "name": "Review reply drafts for the institute",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 3500,
+      "monthlyMin": 149,
+      "monthlyMax": 399,
+      "pitchLine": "\"New reviews of the institute get a reply drafted in its voice that names the course where the reviewer did, ready to approve.\"",
+      "whenAndWhatItTakes": "Month 6, with the review programme. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Assessment marking assistant",
+      "kind": "ai",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 12000,
+      "monthlyMin": 299,
+      "monthlyMax": 799,
+      "pitchLine": "\"Written course assessments are pre-checked against the marking guide with draft feedback, and the trainer or assessor makes every final mark.\"",
+      "whenAndWhatItTakes": "Month 7. Needs marking guides and sample marked work. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Graduate jobs board",
+      "kind": "software",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 12000,
+      "monthlyMin": 149,
+      "monthlyMax": 399,
+      "pitchLine": "\"Hiring partners post roles for the institute's graduates, and graduates apply with their verified certificate attached to their profile.\"",
+      "whenAndWhatItTakes": "Month 7, once hiring partners are named. Needs the partners' agreement."
+    },
+    {
+      "name": "Learning platform and site single sign-in",
+      "kind": "software",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 20000,
+      "monthlyMin": 199,
+      "monthlyMax": 599,
+      "pitchLine": "\"Learners enrol on the site and land in their online course already signed in, with no second account to create.\"",
+      "whenAndWhatItTakes": "Month 8. Needs the learning platform's integration options and the IT lead."
+    },
+    {
+      "name": "Student portal",
+      "kind": "software",
+      "oneTimeMin": 12000,
+      "oneTimeMax": 35000,
+      "monthlyMin": 299,
+      "monthlyMax": 999,
+      "pitchLine": "\"One sign-in for learners: timetable, payments, documents, exam bookings, results and certificates across every course they take.\"",
+      "whenAndWhatItTakes": "Month 9, when learners juggle several tools. Needs the student system's integration options."
+    },
+    {
+      "name": "Course page and outline writer",
+      "kind": "ai",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 149,
+      "monthlyMax": 399,
+      "pitchLine": "\"A trainer's syllabus becomes a draft course page with outcomes, modules and entry requirements, which the academic lead edits and approves.\"",
+      "whenAndWhatItTakes": "Month 9, when new courses are added. Needs syllabus documents. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Corporate training needs survey",
+      "kind": "software",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 99,
+      "monthlyMax": 299,
+      "pitchLine": "\"A client company's staff answer a short skills survey, and the institute gets a summary by team to build the training plan from.\"",
+      "whenAndWhatItTakes": "Month 10, for corporate clients planning a full year. Needs the skill areas per course."
+    },
+    {
+      "name": "Enrolment forecast by course and intake",
+      "kind": "ai",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 15000,
+      "monthlyMin": 299,
+      "monthlyMax": 799,
+      "pitchLine": "\"Forecasts each course's next intake from enquiries, advisor calls and past cohorts, so the institute books trainers and rooms or cancels early.\"",
+      "whenAndWhatItTakes": "Month 12, after several intakes of data. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the course catalogue and enrolment for institutes",
+      "whoPays": "Other training institutes, monthly",
+      "min": 199,
+      "max": 599,
+      "unit": "monthly",
+      "pitchLine": "\"I built a course catalogue with intakes and online enrolment that feeds one institute's student system. Every training centre has the same PDF course list.\"",
+      "whyItWorks": "Institutes run on a few student systems and identical intake cycles, so one build serves many."
+    },
+    {
+      "route": "Education franchise and training brands",
+      "whoPays": "The franchisor, per centre",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Your licensees teach the same courses in different cities with different websites. A shared catalogue where each training centre posts its own intakes keeps the brand consistent.\"",
+      "whyItWorks": "Training brands open centres in new cities and want one standard site."
+    },
+    {
+      "route": "Training institutes in other cities",
+      "whoPays": "Each new institute",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"Institutes teaching different fields, or in other cities, can license the catalogue and corporate funnel we built for a vocational centre in {City}.\"",
+      "whyItWorks": "Institutes in other fields or cities aren't competitors, so the reference travels."
+    },
+    {
+      "route": "Agency white-label of the course catalogue",
+      "whoPays": "The agency, per institute",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"When an education client asks your agency for online enrolment that feeds their student system, resell my course catalogue instead of building it.\"",
+      "whyItWorks": "The enrolment integration is the hard part, and agencies would rather buy it."
+    },
+    {
+      "route": "Certification bodies' approved training centre finder",
+      "whoPays": "The certification body",
+      "min": 8000,
+      "max": 25000,
+      "unit": "one-time",
+      "pitchLine": "\"Learners look for centres approved to teach your certification. A finder fed by each centre's live intake dates sends them to your approved centres.\"",
+      "whyItWorks": "Certifiers grow by candidate numbers, and a finder that helps centres fill seats helps them."
+    },
+    {
+      "route": "Industry associations and chambers of commerce",
+      "whoPays": "The association",
+      "min": 5000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Your members need to train staff. A training calendar from member-approved institutes, with group booking, is a reason to renew membership.\"",
+      "whyItWorks": "Associations sell membership on practical benefits, and skills are a constant member need."
+    },
+    {
+      "route": "Public workforce and reskilling programmes",
+      "whoPays": "The programme operator, per tender",
+      "min": 15000,
+      "max": 60000,
+      "unit": "one-time",
+      "pitchLine": "\"Your reskilling programme sends learners to many providers. A course finder with eligibility checks and enrolment tracking is the build I already run for an institute.\"",
+      "whyItWorks": "Workforce programmes buy through tenders where a working reference matters most."
+    },
+    {
+      "route": "University continuing education departments",
+      "whoPays": "The department",
+      "min": 10000,
+      "max": 30000,
+      "unit": "one-time",
+      "pitchLine": "\"Your short courses sit inside a university site built for degrees. A course catalogue with intakes and online enrolment fits continuing education exactly.\"",
+      "whyItWorks": "Continuing education departments are run like institutes and fight their parent site's structure."
+    },
+    {
+      "route": "Corporate learning and development teams",
+      "whoPays": "The employer's L&D team, annually",
+      "min": 6000,
+      "max": 20000,
+      "unit": "per-year",
+      "pitchLine": "\"Your teams train with several outside providers. A training request and tracking portal across providers is the corporate portal I built for an institute.\"",
+      "whyItWorks": "L&D teams want one place to book and report on external training, and the software exists."
+    },
+    {
+      "route": "Equipment and software vendors' training partner networks",
+      "whoPays": "The vendor",
+      "min": 8000,
+      "max": 25000,
+      "unit": "one-time",
+      "pitchLine": "\"Your product needs certified operators. A training partner finder with each partner's course dates sends customers to the institutes teaching your equipment.\"",
+      "whyItWorks": "Vendors want trained users, and partner institutes happily list their intakes."
+    },
+    {
+      "route": "International student agents",
+      "whoPays": "The student agency",
+      "min": 4000,
+      "max": 12000,
+      "unit": "one-time",
+      "pitchLine": "\"You send learners to vocational institutes abroad. An application tracker where learners see each course offer and its status cuts your email back-and-forth.\"",
+      "whyItWorks": "Agents manage many applications to many institutes, and the institute-side build already exists."
+    },
+    {
+      "route": "Rescue a broken learning platform migration",
+      "whoPays": "The stuck institute",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"The institute moved to a new learning platform and enrolments from the site stopped creating accounts. I can reconnect them before the next intake.\"",
+      "whyItWorks": "An institute losing enrolments in the weeks before an intake pays to fix it fast."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Institute site and course catalogue plus care plan, one contract",
+      "min": 10000,
+      "max": 25000,
+      "unit": "one-time",
+      "trigger": "The director and the admissions or marketing lead approve the scope.",
+      "line": "\"The institute site and the care plan go on one contract, so a new course or intake date is one message to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Enquiry follow-up and advisor call booking",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "trigger": "Course enquiries from the site start waiting a day or more for an advisor reply.",
+      "line": "\"Every course enquiry can get the fee, next intake and a call slot in the first minute.\""
+    },
+    {
+      "rung": 3,
+      "day": 60,
+      "offer": "Intake campaigns by course",
+      "min": 800,
+      "max": 2500,
+      "unit": "monthly",
+      "trigger": "The next intake has courses with seats left a few weeks out.",
+      "line": "\"Let's point ads at the training courses with seats left and stop them when each cohort fills.\""
+    },
+    {
+      "rung": 4,
+      "day": 90,
+      "offer": "Corporate proposal drafting",
+      "min": 3000,
+      "max": 8000,
+      "unit": "one-time",
+      "trigger": "Corporate training requests arrive through the site faster than the sales lead can answer them.",
+      "line": "\"Each company request can arrive on the corporate lead's desk as a draft proposal, ready to edit.\""
+    },
+    {
+      "rung": 5,
+      "day": 150,
+      "offer": "Attendance and certificate issuing",
+      "min": 5000,
+      "max": 14000,
+      "unit": "one-time",
+      "trigger": "Certificates are still made by hand at the end of each course.",
+      "line": "\"Attendance marked once, completion checked automatically and a verifiable certificate issued the same day.\""
+    },
+    {
+      "rung": 6,
+      "day": 210,
+      "offer": "Corporate client portal",
+      "min": 10000,
+      "max": 30000,
+      "unit": "one-time",
+      "trigger": "Several companies book training regularly and ask for attendance reports.",
+      "line": "\"Your corporate clients can book seats and pull their own attendance and certificates, without emailing the office.\""
+    },
+    {
+      "rung": 7,
+      "day": 270,
+      "offer": "Student portal",
+      "min": 12000,
+      "max": 35000,
+      "unit": "one-time",
+      "trigger": "Learners complain about separate logins for payments, timetables and results.",
+      "line": "\"One learner sign-in for timetables, payments and certificates is the next thing every course will feel.\""
+    },
+    {
+      "rung": 8,
+      "day": 365,
+      "offer": "Enrolment forecast by course and intake",
+      "min": 6000,
+      "max": 15000,
+      "unit": "one-time",
+      "trigger": "A year of intakes is on record and the director plans next year's course calendar.",
+      "line": "\"A forecast per course and intake helps you book trainers or cancel early, from your own data.\""
+    }
+  ]
+}

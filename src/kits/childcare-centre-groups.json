@@ -1,0 +1,894 @@
+{
+  "schemaVersion": 1,
+  "category": "Childcare centre groups",
+  "slug": "childcare-centre-groups",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · expansion batch (healthcare + mid-size)",
+    "generatedAt": "2026-10-13",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Mid-size edu batch. Written for the operations director or founder of a group of centres; leaned on per-centre pages, a group-wide waitlist and educator recruiting. Parent app and billing-with-funding ranges are the least certain."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Centre finder with a page per centre",
+      "contains": "Every centre on a map, then a page each with address, opening hours, age rooms, current openings by room, the centre director, parking and drop-off notes and a tour booking for that centre",
+      "why": "Parents choose a childcare centre within a short drive of home or work. A page per centre is how a group shows up in each neighbourhood search."
+    },
+    {
+      "section": "Group-wide waitlist with centre preferences",
+      "contains": "One waitlist form where parents choose preferred centres, start date, days needed and age room, with status updates and an offer sent when a place opens at any chosen centre",
+      "why": "Parents join several waitlists at once. A group that lets them list several of its own centres keeps the family instead of losing them to a competitor."
+    },
+    {
+      "section": "Educator careers and study pathway",
+      "contains": "Open educator, room leader, cook and centre director roles by centre, qualifications needed, study and qualification support, pay bands where published, and an application form",
+      "why": "Staffing decides how many rooms a group can open. Early childhood educators compare employers by the careers page and the support for their study."
+    },
+    {
+      "section": "Daily fees and funding by centre",
+      "contains": "Daily or weekly fees by age room and centre, what's included such as meals and nappies, sibling discounts, and how fee assistance or government funding applies where available",
+      "why": "Fees vary by centre and room, and families need the net cost after help. A clear page stops repeated calls to every centre director."
+    },
+    {
+      "section": "Our approach and quality across centres",
+      "contains": "The early learning framework the group follows, how quality is kept the same in every centre, each centre's latest inspection or rating report, and the policies library",
+      "why": "Parents worry a group means a chain with no heart. Showing the shared approach and each centre's own report answers that before the tour."
+    },
+    {
+      "section": "Employer childcare partnerships",
+      "contains": "Priority places or reserved rooms for local employers' staff, how the arrangement works, which centres sit near business districts and hospitals, and an enquiry form",
+      "why": "One employer partnership can fill a nursery room. HR teams need a page to understand it and forward it internally."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C22",
+      "siteType": "local-conversion",
+      "name": "Book a Centre Tour",
+      "heroLayout": "split-photo",
+      "mood": [
+        "gentle",
+        "warm",
+        "reassuring"
+      ],
+      "bestFor": "Groups with a handful of centres whose first need is a centre picker and a tour booking that works from a phone",
+      "pairsWithTier": "starter",
+      "headlineSample": "Childcare centres across {City}. Book a tour near you.",
+      "whyItFits": "Peach Sorbet is made for family apps, soft without being babyish, and the split hero puts the centre picker beside a calm room."
+    },
+    {
+      "id": "b",
+      "themeId": "C26",
+      "siteType": "enrolment",
+      "name": "Centre Network",
+      "heroLayout": "card-stack",
+      "mood": [
+        "bright",
+        "organised",
+        "caring"
+      ],
+      "bestFor": "Groups with many centres that need per-centre openings, a shared waitlist and a strong educator careers path",
+      "pairsWithTier": "standard",
+      "headlineSample": "Early learning centres near home and work in {City}",
+      "whyItFits": "The family combo suits children's services, and the card stack gives each centre its own card with openings by age room."
+    },
+    {
+      "id": "c",
+      "themeId": "C40",
+      "siteType": "editorial-trust",
+      "name": "Early Learning Group",
+      "heroLayout": "type-led",
+      "mood": [
+        "considered",
+        "calm",
+        "trusted"
+      ],
+      "bestFor": "Established early learning groups selling a shared approach and higher daily fees across their centres",
+      "pairsWithTier": "premium",
+      "headlineSample": "A consistent early learning approach in every {City} centre",
+      "whyItFits": "Driftwood is quiet and natural, and its serif type lets the group's approach and inspection reports carry the page instead of bright colour."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "One page for every centre",
+      "line": "Your site lists all your childcare centres on one locations page, so a parent searching for a nursery near {Neighborhood} finds another group's centre page first.",
+      "hook": "Search 'childcare near' with two of their centre suburbs. Note whether a page of theirs ranks for that centre.",
+      "linkLine": "A page per childcare centre, each with its own tour booking: {demo-link}"
+    },
+    {
+      "angle": "Separate waitlist per centre",
+      "line": "Joining the waitlist for your centres means a separate form or email for each one. Parents want to list the three nearest centres in the group once and hear back when any has a place.",
+      "hook": "Try the waitlist from two centre pages. Note whether it's one form, one per centre, or an email address.",
+      "linkLine": "One group waitlist with centre preferences: {demo-link}"
+    },
+    {
+      "angle": "Hiring educators everywhere",
+      "line": "I saw you're hiring educators and room leaders at several centres, but the site has no careers section. Qualified early childhood staff choose between groups on exactly that page.",
+      "hook": "Find their job posts across centres. Check the site for careers. Count the centres hiring, in words.",
+      "linkLine": "An educator careers hub with roles by centre: {demo-link}"
+    },
+    {
+      "angle": "Slow on a phone",
+      "line": "Your childcare group's site was slow to load on my phone, and the centre list sat below a large banner. Parents look for care in snatched minutes between feeds and meetings.",
+      "hook": "Load the homepage and one centre page on mobile data. Note the seconds and what loaded last.",
+      "linkLine": "The same centres, quick to load on a phone: {demo-link}"
+    },
+    {
+      "angle": "Tours booked by phone",
+      "line": "Booking a tour at any of your centres means calling the centre director during the day. Working parents can only book the nursery visit in the evening.",
+      "hook": "Look for a tour booking on a centre page. If it's phone or email only, the angle holds.",
+      "linkLine": "Tour booking for every centre, any hour: {demo-link}"
+    },
+    {
+      "angle": "Fees by centre hidden",
+      "line": "I couldn't find daily fees for any of your centres, or how funding or fee assistance changes them. Parents comparing childcare groups shortlist the ones that show a net daily cost.",
+      "hook": "Look for fees by centre and age room, and any mention of funding or assistance. Note what's missing.",
+      "linkLine": "Daily fees and funding by centre and age room: {demo-link}"
+    },
+    {
+      "angle": "Inspection reports not linked",
+      "line": "Each of your centres has a published inspection report, but parents have to look them up elsewhere. A group that links every centre's report looks like it has nothing to hide.",
+      "hook": "Find a centre's public inspection or rating report. Note whether the site mentions it. Never quote a rating you haven't seen.",
+      "linkLine": "Centre pages with their own inspection reports linked: {demo-link}"
+    },
+    {
+      "angle": "New centre opening",
+      "line": "Congratulations on the new centre you're opening. Right now there's no page to take enrolment interest, so families who see the building have nowhere to register.",
+      "hook": "Look for 'coming soon' posts or a new site under construction. Name the suburb and roughly when it opens.",
+      "linkLine": "A pre-enrolment page for the new centre: {demo-link}"
+    },
+    {
+      "angle": "Centre reviews not shown",
+      "line": "Parents at your centres leave lovely reviews naming educators, but each review sits on that centre's map listing and never reaches the centre page new families read.",
+      "hook": "Read reviews for two centres and copy one phrase from each about educators. Quote them if they reply.",
+      "linkLine": "Parent reviews on each centre's page: {demo-link}"
+    },
+    {
+      "angle": "Dated look",
+      "line": "Your centres look bright and modern in every post, but the group's website looks several fit-outs older than the rooms parents actually tour.",
+      "hook": "Compare a recent room post to the homepage. Note one dated thing: layout, old room photos, stale news.",
+      "linkLine": "A site that matches the centres as they look now: {demo-link}"
+    },
+    {
+      "angle": "Parent app not explained",
+      "line": "Your centres seem to use a parent app for daily updates, but the site never says so. Showing parents they'll see photos and notes during the day is a reason to choose the group.",
+      "hook": "Look for posts or reviews mentioning daily updates or an app. Check whether the site explains it.",
+      "linkLine": "A page that shows parents how daily updates work: {demo-link}"
+    },
+    {
+      "angle": "Employer partnerships",
+      "line": "Several of your centres sit near big employers and a hospital. There's no page offering those employers priority childcare places for their staff.",
+      "hook": "Map their centres against business parks, hospitals or universities. Name one nearby employer type, not a company.",
+      "linkLine": "An employer childcare partnership page: {demo-link}"
+    },
+    {
+      "angle": "New year enrolment",
+      "line": "Families plan childcare months ahead of the new year intake, and the groups with openings shown by centre and age room fill their rooms before the rush ends.",
+      "hook": "Use in the months before the main intake in their area. Name the intake.",
+      "linkLine": "Openings by centre and room, ready for the intake: {demo-link}"
+    },
+    {
+      "angle": "Room openings not shown",
+      "line": "Your posts say some rooms have places, but no centre page shows which age rooms are open. Parents with a baby and parents with a pre-schooler need different answers.",
+      "hook": "Find a post announcing places. Check whether any centre page shows openings by age room.",
+      "linkLine": "Live openings by age room for every centre: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "That {specific recent job} across your centres looked like a joyful day for the children and educators. Shared with parent consent, it belongs on the group's site, not just in a feed.",
+      "hook": "Pick their newest event: a centre opening, a graduation day, a family afternoon. Name it exactly.",
+      "linkLine": "That centre moment, kept on the site: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, that {specific recent job} across your centres looked like a joyful day.\n\nI looked at the {Business Name} site and noticed all the centres share one page, and each waitlist is a separate form. I put together a sample with a page and tour booking for every centre, one group waitlist and an educator careers hub, with marked placeholders where your photos would go.\n\nWould it help if I sent it over?",
+    "dm2": "{Owner}, following up in case this got buried. Here's the sample for {Business Name}: {demo-link}\n\nIt has a centre finder, openings by age room, fees and funding by centre, one waitlist where parents pick several of your centres, and a careers hub with roles by centre. It feeds the childcare management system you already run. If it's not the right time, say so and I won't message again.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites and software for childcare groups in {City}. I sent a sample for {Business Name} a few days ago, did it reach you?\"\n\nIF NO:\n\"No problem. Short version: a page and tour booking per centre, one waitlist across the group and an educator careers hub. Who else should see it, operations or the area managers?\"\n\nIF YES:\n\"What did you and the team think?\"\n → let them talk, don't fill the silence\n\"It works alongside your childcare management system, it doesn't replace it. The build runs {Build Range} depending on the number of centres and the waitlist integration, then {Care Range} a month for hosting, openings updates and changes. For your group I'd expect about {Build Price}.\"\n\"Could we do thirty minutes with you and whoever runs enrolments next week?\"\n\nCLOSE:\n\"I'll send a scope with a centre-by-centre plan and a deposit invoice, timed so it's live before the next intake.\"",
+    "objections": [
+      {
+        "objection": "Our centres are full; we don't need more enquiries.",
+        "handler": "\"Then the waitlist and the careers page are the point. A group waitlist fills places the day they open, and the careers hub helps you staff the rooms you can't open yet.\""
+      },
+      {
+        "objection": "Our childcare software has an enrolment form.",
+        "handler": "\"It handles enrolment well. It doesn't rank a centre page for a parent searching nearby, or let them list several of your centres at once. The site sends families into it ready to enrol.\""
+      },
+      {
+        "objection": "Centre directors manage their own pages.",
+        "handler": "\"They still can. Each centre page is built from one template the group controls, and directors edit their openings, team and news without breaking anything.\""
+      },
+      {
+        "objection": "We can't show fees; they change with funding.",
+        "handler": "\"Show the daily fee by room and how funding applies, with a simple estimate. Parents understand it changes; they just want to know the group is in reach before they tour.\""
+      },
+      {
+        "objection": "Recruiting is our real problem, not the website.",
+        "handler": "\"That's why the careers hub is in the scope. Educators judge an employer by its careers page, and every application goes straight to the right centre director.\""
+      },
+      {
+        "objection": "Head office approves spend quarterly.",
+        "handler": "\"Then let's give them a phased scope: centre pages and the waitlist first, careers and the parent app page after they see the numbers.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For your group about {Build Price}, because it's a page per centre, the shared waitlist and careers. One filled room for a few months covers it.\""
+      }
+    ],
+    "email": {
+      "subject": "Centre pages and one waitlist for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites and software for childcare groups around {City}. {Business Name} looks wonderful in its posts, but the site puts every centre on one page and each waitlist is a separate form.\n\nI built a sample rather than ask for a meeting first: a centre finder with a page and tour booking for each centre, openings by age room, fees and funding by centre, one waitlist across the group and an educator careers hub, with marked placeholders where your photos would go. It feeds your childcare management system:\n\n{demo-link}\n\nIf it's useful, the build runs {Build Range}, plus {Care Range} a month for hosting, openings updates and changes. If not, no problem, the sample comes down at the end of the month.\n\nWorth thirty minutes with you and whoever runs enrolments?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build websites for childcare groups in {City}, and I made a sample for {Business Name} with a page and tour booking per centre and one waitlist across the group. I'll email you the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm taking the {Business Name} centres sample down on Friday to free up the space.\n\nShould I keep it up for the operations team to see? One word is fine either way.",
+    "nurture": "Hi {Owner}, families start planning childcare for the next intake months ahead, and openings by centre need to be live before they do. Thought of you.\n\nThe centres sample is still here if the team wants another look: {demo-link}"
+  },
+  "pricing": {
+    "bullets": [
+      "Price by the number of centres and the waitlist integration, not page count. Centre pages are templated; the shared waitlist is the work.",
+      "Peg the build to one empty room filled for a few months, which every operations director can work out on the spot.",
+      "Quote it as the front door to their childcare management system, never as a replacement for billing and attendance.",
+      "Put the careers hub on its own line. In a staff shortage it can be worth more to the group than the enrolment pages.",
+      "Phase the rollout: a pilot centre first when head office is cautious, then the rest from the same template.",
+      "Never write inspection ratings or quality claims yourself. Link each centre's own report and let the group sign off every word."
+    ],
+    "lineItems": [
+      {
+        "item": "Centre page with openings and tour booking",
+        "min": 400,
+        "max": 1000,
+        "unit": "per-page",
+        "description": "Max with openings by age room, the director's profile, a room-by-room walk-through and its own tour calendar.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Group waitlist with centre preferences",
+        "min": 3000,
+        "max": 8000,
+        "unit": "one-time",
+        "description": "Max with several centre choices, days and start date, status updates for parents and handoff to the childcare system.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Educator careers hub with roles by centre",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "description": "Max with a role feed by centre, study support details, qualification checks on the form and routing to each director.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Fees and funding estimator",
+        "min": 1500,
+        "max": 4500,
+        "unit": "one-time",
+        "description": "Max when it estimates net daily cost by centre, room and days with the funding rules the group provides.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "New centre pre-enrolment page",
+        "min": 1200,
+        "max": 3000,
+        "unit": "one-time",
+        "description": "Max with opening updates, room-by-room interest registration and a founding-family tour day booking.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Policies and inspection report library",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "description": "Max with every group policy as a page, each centre's report linked and a change log for updates.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Employer partnership page and enquiry routing",
+        "min": 900,
+        "max": 2500,
+        "unit": "one-time",
+        "description": "Max with a centre map near business districts, the partnership terms and routing to the group's partnerships lead.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Second-language parent pages",
+        "min": 1500,
+        "max": 4500,
+        "unit": "one-time",
+        "description": "Max when centre pages, fees, the waitlist and enrolment steps are all translated.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Accessibility review of waitlist and tour forms",
+        "min": 800,
+        "max": 2000,
+        "unit": "one-time",
+        "description": "Max when the waitlist, tour booking and careers forms are reviewed and fixed for keyboard and screen readers.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Google profile management for every centre",
+      "min": 300,
+      "max": 900,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Every centre's Google profile kept current with hours, openings by room and centre news, so parents searching for childcare nearby see an active centre.\"",
+      "when": "Day 30. Priced by the number of centres."
+    },
+    {
+      "name": "Room-by-room photo day per centre",
+      "min": 500,
+      "max": 1200,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Each centre's rooms, outdoor area and kitchen photographed set up and ready, with children only where parents have given written consent.\"",
+      "when": "Month 2, centre by centre, before opening hours or with the consent list checked first."
+    },
+    {
+      "name": "Educator recruitment campaigns",
+      "min": 800,
+      "max": 2500,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Local job ads for educators and room leaders pointed at the careers hub, aimed at the centres with the most open shifts.\"",
+      "when": "Month 2, when the careers hub is live. Ad spend is on top."
+    },
+    {
+      "name": "Intake season enrolment campaign by centre",
+      "min": 800,
+      "max": 2500,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Ads aimed at parents near each childcare centre with open rooms, pointing at that centre's tour booking and paused when the room fills.\"",
+      "when": "Two to three months before the main intake. Ad spend is on top."
+    },
+    {
+      "name": "Parent review programme across centres",
+      "min": 199,
+      "max": 499,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Parents are asked for a review of their own centre after settling in, so every centre page builds reviews that name its educators.\"",
+      "when": "Day 60, once families who enrolled through the site have settled."
+    },
+    {
+      "name": "New centre launch kit",
+      "min": 2000,
+      "max": 5000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Site hoarding with a scan code, flyers for local families and a founding-family tour day, all pointing at the new childcare centre's pre-enrolment page.\"",
+      "when": "Three to four months before a new centre opens."
+    },
+    {
+      "name": "Parent handbook and enrolment pack redesign for the group",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"One group handbook with a short insert per centre, readable on a phone, so policies match across centres and the site.\"",
+      "when": "Month 3, before the next intake."
+    },
+    {
+      "name": "Group family newsletter",
+      "min": 400,
+      "max": 1200,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A monthly newsletter for families across the group, with a section each centre director fills in, edited and sent for them.\"",
+      "when": "Month 3, if each centre currently writes its own."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Enrichment providers visiting the centres",
+        "whoPays": "Each provider, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The music, sport and language teachers who visit your centres each week sell to other nurseries by phone. Each needs a page and a booking calendar.\"",
+        "whyItWorks": "Visiting providers depend on the group's contract and would welcome an introduction to its other suppliers."
+      },
+      {
+        "route": "Early childhood training colleges",
+        "whoPays": "The training college",
+        "min": 4000,
+        "max": 12000,
+        "unit": "one-time",
+        "pitchLine": "\"The college that trains your trainee educators enrols by paper form. A course and placement page would bring them students, and you more graduates.\"",
+        "whyItWorks": "Colleges need placement partners, and a childcare group that hosts trainees is a strong introduction."
+      },
+      {
+        "route": "Childcare food suppliers and caterers",
+        "whoPays": "The caterer",
+        "min": 3000,
+        "max": 8000,
+        "unit": "one-time",
+        "pitchLine": "\"The caterer cooking for your centres has no site that shows menus and allergen handling to other childcare groups. I'll build it.\"",
+        "whyItWorks": "Caterers win contracts on trust, and a reference from a multi-centre group carries weight."
+      },
+      {
+        "route": "Commercial cleaners serving the centres",
+        "whoPays": "The cleaning contractor",
+        "min": 2500,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"The company cleaning your childcare centres each night quotes by phone. A page on childcare-safe cleaning and a quote form would win them more centres.\"",
+        "whyItWorks": "Childcare-specific cleaning is a niche, and the group's name is the proof."
+      },
+      {
+        "route": "Children's speech and occupational therapy practices",
+        "whoPays": "The practice, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The children's therapy practice your educators suggest to parents needs online appointment requests. Your recommendation makes the introduction.\"",
+        "whyItWorks": "Practices get referrals through educators and value a closer link with the group."
+      },
+      {
+        "route": "Nursery furniture and play equipment suppliers",
+        "whoPays": "The supplier",
+        "min": 4000,
+        "max": 12000,
+        "unit": "one-time",
+        "pitchLine": "\"The supplier fitting out your new centres sends PDF catalogues. A room-planning catalogue online would win them other childcare groups.\"",
+        "whyItWorks": "Suppliers sell centre by centre, and the group's fit-outs are their showroom."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Class booking assistant for enrichment providers",
+        "whoPays": "Each provider, monthly",
+        "min": 49,
+        "max": 149,
+        "unit": "monthly",
+        "pitchLine": "\"Centre directors elsewhere ask which days a music or sport session can visit their nursery, and get an answer and a booking.\"",
+        "whyItWorks": "Providers teach all day and miss enquiries. A low monthly fee is less than one session."
+      },
+      {
+        "route": "Placement matching assistant for the training college",
+        "whoPays": "The college, monthly",
+        "min": 199,
+        "max": 499,
+        "unit": "monthly",
+        "pitchLine": "\"Trainee educators enter their suburb and study stage, and get matched to a placement at a partner childcare centre.\"",
+        "whyItWorks": "Placement matching is a manual job every term, and the college can count the hours saved."
+      },
+      {
+        "route": "Allergen and menu assistant for the caterer",
+        "whoPays": "The caterer, monthly",
+        "min": 149,
+        "max": 399,
+        "unit": "monthly",
+        "pitchLine": "\"Centre cooks and parents ask whether today's childcare menu contains an allergen, and get the answer from the caterer's recipe sheets with a contact for anything unclear.\"",
+        "whyItWorks": "Allergen accuracy is the caterer's reputation and takes a manager's time daily."
+      },
+      {
+        "route": "Quote and scope assistant for the cleaning contractor",
+        "whoPays": "The contractor, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"A centre manager describes rooms, bathrooms and kitchen, and the cleaner gets a quote-ready scope for a childcare-safe clean.\"",
+        "whyItWorks": "Scoping visits are expensive. A good first estimate wins the job faster."
+      },
+      {
+        "route": "Appointment request assistant for the therapy practice",
+        "whoPays": "The practice, monthly",
+        "min": 149,
+        "max": 399,
+        "unit": "monthly",
+        "pitchLine": "\"Parents describe what an educator noticed and when they're free, and the practice gets a clean appointment request, never an assessment.\"",
+        "whyItWorks": "It only collects and books. Practices lose families to slow callbacks."
+      },
+      {
+        "route": "Room fit-out planner for the equipment supplier",
+        "whoPays": "The supplier, monthly",
+        "min": 199,
+        "max": 499,
+        "unit": "monthly",
+        "pitchLine": "\"A childcare operator enters room sizes and age groups, and gets a suggested fit-out list from the supplier's own catalogue to quote from.\"",
+        "whyItWorks": "Turning a floor plan into a quote is slow work that the supplier pays staff to do."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Tour booking reminders across centres",
+      "kind": "automation",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 99,
+      "monthlyMax": 299,
+      "pitchLine": "\"Parents who book a centre tour get directions and a reminder, then a follow-up from that centre director with the enrolment link.\"",
+      "whenAndWhatItTakes": "Day 30. Needs tour slots by centre and each director's follow-up wording."
+    },
+    {
+      "name": "Waitlist place offers by centre and room",
+      "kind": "automation",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 99,
+      "monthlyMax": 299,
+      "pitchLine": "\"When a place opens in any room at any centre, the next family on the group waitlist who chose that centre is offered it the same day.\"",
+      "whenAndWhatItTakes": "Month 2, once the group waitlist is live. Needs room capacities and the group's offer rules."
+    },
+    {
+      "name": "Enrolment question assistant for parents",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 299,
+      "monthlyMax": 799,
+      "pitchLine": "\"'Which centre has a baby room place in spring' and 'how does funding change the daily fee' get answered from the group's own rules, with a tour booking.\"",
+      "whenAndWhatItTakes": "Month 3. Needs fees, funding rules and openings. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Educator applicant pipeline",
+      "kind": "software",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 15000,
+      "monthlyMin": 149,
+      "monthlyMax": 499,
+      "pitchLine": "\"Every educator application across the childcare centres in one pipeline, with qualification checks and interview booking for each centre director.\"",
+      "whenAndWhatItTakes": "Month 3, once the careers hub has applications. Needs roles, qualification rules and director access."
+    },
+    {
+      "name": "Casual relief shift filling",
+      "kind": "automation",
+      "oneTimeMin": 2500,
+      "oneTimeMax": 6000,
+      "monthlyMin": 149,
+      "monthlyMax": 399,
+      "pitchLine": "\"When an educator calls in sick, the open shift goes to qualified relief staff across the group by text, and the first to accept is rostered.\"",
+      "whenAndWhatItTakes": "Month 3. Needs the relief pool, qualifications and the rostering rules."
+    },
+    {
+      "name": "Occupancy dashboard by centre and room",
+      "kind": "software",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 18000,
+      "monthlyMin": 199,
+      "monthlyMax": 599,
+      "pitchLine": "\"Occupancy, waitlist and upcoming leavers by room and centre on one screen, so operations sees which nursery needs an enrolment push.\"",
+      "whenAndWhatItTakes": "Month 4. Needs exports or access to the childcare management system."
+    },
+    {
+      "name": "Centre review reply drafts",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 3500,
+      "monthlyMin": 149,
+      "monthlyMax": 399,
+      "pitchLine": "\"Each centre's new reviews get a reply drafted in the group's voice that never mentions a child, sent to that director to approve.\"",
+      "whenAndWhatItTakes": "Month 4, with the review programme. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Staff qualification and certificate tracker",
+      "kind": "software",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 12000,
+      "monthlyMin": 149,
+      "monthlyMax": 399,
+      "pitchLine": "\"First aid, child protection and qualification expiry dates for every educator across the centres, with reminders before anything lapses.\"",
+      "whenAndWhatItTakes": "Month 4. Needs staff lists and current certificate dates."
+    },
+    {
+      "name": "Online enrolment with digital signing",
+      "kind": "software",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 14000,
+      "monthlyMin": 149,
+      "monthlyMax": 399,
+      "pitchLine": "\"A family offered a place completes enrolment, medical and authorised pick-up details and signs online, and the centre gets the file complete.\"",
+      "whenAndWhatItTakes": "Month 5. Needs the enrolment forms, policies and the childcare system's import format."
+    },
+    {
+      "name": "Ratio and roster planner across centres",
+      "kind": "software",
+      "oneTimeMin": 8000,
+      "oneTimeMax": 22000,
+      "monthlyMin": 199,
+      "monthlyMax": 599,
+      "pitchLine": "\"Each centre's roster checked against bookings by room and the ratios the group must keep, with gaps flagged before the week starts.\"",
+      "whenAndWhatItTakes": "Month 5. Needs the ratio rules where they operate, bookings and staff availability."
+    },
+    {
+      "name": "Daily learning story drafts for educators",
+      "kind": "ai",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 299,
+      "monthlyMax": 799,
+      "pitchLine": "\"An educator's quick notes become a draft learning story in the group's framework language, which the educator edits before any parent sees it.\"",
+      "whenAndWhatItTakes": "Month 6. Needs the learning framework and sample stories. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Room move-up planning",
+      "kind": "automation",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"Children due to move up a room are listed months ahead by centre, parents are told the plan, and the freed places go to the waitlist.\"",
+      "whenAndWhatItTakes": "Month 6. Needs birth months, room age bands and the move-up rules."
+    },
+    {
+      "name": "Incident and medication records",
+      "kind": "software",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 14000,
+      "monthlyMin": 149,
+      "monthlyMax": 399,
+      "pitchLine": "\"Educators record incidents and medication from a tablet, parents sign on their phone, and operations sees every open record across the centres.\"",
+      "whenAndWhatItTakes": "Month 6. Needs the group's current forms and the privacy rules where they operate."
+    },
+    {
+      "name": "Parent notice translation",
+      "kind": "ai",
+      "oneTimeMin": 2500,
+      "oneTimeMax": 6000,
+      "monthlyMin": 149,
+      "monthlyMax": 399,
+      "pitchLine": "\"Centre notices and closure messages are translated into the languages families speak, checked by a staff member before sending.\"",
+      "whenAndWhatItTakes": "Month 7, for centres with many home languages. Needs the language list. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Inspection readiness checklist by centre",
+      "kind": "software",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 99,
+      "monthlyMax": 299,
+      "pitchLine": "\"Each centre works through the group's own readiness checklist with evidence attached, and operations sees which nursery is ready before the visit.\"",
+      "whenAndWhatItTakes": "Month 7. Needs the group's quality checklist. It never says what an inspector will decide."
+    },
+    {
+      "name": "Fee billing and funding reconciliation",
+      "kind": "software",
+      "oneTimeMin": 10000,
+      "oneTimeMax": 30000,
+      "monthlyMin": 299,
+      "monthlyMax": 899,
+      "pitchLine": "\"Fees, funding claims and family balances matched by centre each cycle, so the finance team sees what's owed by whom without a spreadsheet.\"",
+      "whenAndWhatItTakes": "Month 8. Needs the childcare system's billing export and the funding rules where they operate."
+    },
+    {
+      "name": "Centre director weekly briefing",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 199,
+      "monthlyMax": 499,
+      "pitchLine": "\"Each Monday every centre director gets a short summary of occupancy, tours, open shifts and expiring certificates, with one thing to act on.\"",
+      "whenAndWhatItTakes": "Month 8, once the dashboard is live. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Group parent app and portal",
+      "kind": "software",
+      "oneTimeMin": 15000,
+      "oneTimeMax": 45000,
+      "monthlyMin": 399,
+      "monthlyMax": 1200,
+      "pitchLine": "\"One parent sign-in for bookings, extra days, invoices, enrolment forms and centre news, fed from the group's childcare system.\"",
+      "whenAndWhatItTakes": "Month 9, when parents juggle several tools. Needs the childcare system's integration options and the IT lead."
+    },
+    {
+      "name": "Lost enquiry and declined offer follow-up",
+      "kind": "automation",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"Families who toured or declined a place get a note when a room opens at another of the group's centres nearer to them.\"",
+      "whenAndWhatItTakes": "Month 9. Needs tour and offer history."
+    },
+    {
+      "name": "Occupancy forecast for new rooms and centres",
+      "kind": "ai",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 15000,
+      "monthlyMin": 299,
+      "monthlyMax": 799,
+      "pitchLine": "\"Forecasts each centre's room demand from waitlist, enquiries and move-ups, so the group decides where to open a room or a new nursery on its own data.\"",
+      "whenAndWhatItTakes": "Month 12, after a year of waitlist and occupancy data. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the group waitlist and centre pages",
+      "whoPays": "Other childcare groups, monthly per centre",
+      "min": 99,
+      "max": 299,
+      "unit": "monthly",
+      "pitchLine": "\"I built a waitlist across centres and a page per centre that feed one group's childcare system. Every growing group has the same separate forms.\"",
+      "whyItWorks": "Groups use a handful of childcare systems, so one integration serves many."
+    },
+    {
+      "route": "Early learning franchise brands",
+      "whoPays": "The franchisor, per centre",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"Each franchised childcare centre needs its own page, openings and pre-enrolment on one brand template. I build it once and roll it out per opening.\"",
+      "whyItWorks": "Franchisors open centres every year and budget for local pages."
+    },
+    {
+      "route": "Childcare groups in other cities",
+      "whoPays": "Each new group",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I only take one childcare group per city, so a group based elsewhere can have the shared waitlist and careers hub I built in {City}, adapted to its centres.\"",
+      "whyItWorks": "Groups in different cities don't compete, so the reference travels."
+    },
+    {
+      "route": "Agency white-label of the multi-centre build",
+      "whoPays": "The agency, per centre",
+      "min": 400,
+      "max": 1200,
+      "unit": "one-time",
+      "pitchLine": "\"When a childcare group asks your agency for centre pages and a shared waitlist, resell my build rather than wiring up the childcare system yourselves.\"",
+      "whyItWorks": "The integration is the hard part, and agencies prefer to buy it."
+    },
+    {
+      "route": "Employers offering childcare as a staff benefit",
+      "whoPays": "The employer's HR team, annually",
+      "min": 3000,
+      "max": 9000,
+      "unit": "per-year",
+      "pitchLine": "\"Your staff ask about childcare near the office. A priority-place portal with partner centres makes the benefit easy to use and to count.\"",
+      "whyItWorks": "Employers want benefits staff actually use, and the group client is the first partner."
+    },
+    {
+      "route": "Hospitals and universities with on-site childcare",
+      "whoPays": "The institution",
+      "min": 8000,
+      "max": 25000,
+      "unit": "one-time",
+      "pitchLine": "\"Your on-site childcare centres run waitlists by email for shift workers and students. The group waitlist and roster tools fit them directly.\"",
+      "whyItWorks": "Institutions run several centres with the same problems and buy on annual budgets."
+    },
+    {
+      "route": "Property developers including childcare centres",
+      "whoPays": "The developer",
+      "min": 3000,
+      "max": 8000,
+      "unit": "one-time",
+      "pitchLine": "\"Your new estates include a childcare centre that needs an operator and early enrolments. A pre-enrolment page shows operators the demand.\"",
+      "whyItWorks": "Developers need the centre leased and families moving in. Pre-enrolment numbers help both."
+    },
+    {
+      "route": "Childcare centre brokers",
+      "whoPays": "The broker, per listing",
+      "min": 300,
+      "max": 900,
+      "unit": "one-time",
+      "pitchLine": "\"You sell childcare centres to new operators. A listing page with occupancy and licensed places, presented properly, sells them faster.\"",
+      "whyItWorks": "Brokers sell on presentation, and you know exactly what a centre buyer looks for."
+    },
+    {
+      "route": "Childcare sector associations",
+      "whoPays": "The association",
+      "min": 5000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Your members all struggle to recruit educators. An association jobs board fed by members' careers pages would be a reason to join.\"",
+      "whyItWorks": "Associations sell membership on practical help, and recruiting is every member's top problem."
+    },
+    {
+      "route": "Outside-school-hours care operators",
+      "whoPays": "The operator",
+      "min": 6000,
+      "max": 18000,
+      "unit": "one-time",
+      "pitchLine": "\"Your before and after-school childcare runs at many schools with separate booking forms. The multi-centre build gives each site a page and one booking flow.\"",
+      "whyItWorks": "Outside-hours care runs many sites with the same waitlist and staffing problems."
+    },
+    {
+      "route": "Early childhood education recruitment agencies",
+      "whoPays": "The agency",
+      "min": 4000,
+      "max": 12000,
+      "unit": "one-time",
+      "pitchLine": "\"You place educators in childcare centres. The applicant pipeline and relief shift tools built for one group fit your whole client list.\"",
+      "whyItWorks": "Agencies sell speed of placement, and the software already exists."
+    },
+    {
+      "route": "Rescue a stalled childcare system switchover",
+      "whoPays": "The stuck group",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"The group moved to new childcare software and the waitlist forms on the site stopped reaching it. I can reconnect every centre before the next intake.\"",
+      "whyItWorks": "A group losing waitlist families during a switchover pays to fix it quickly."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Group site build plus care plan, one contract",
+      "min": 12000,
+      "max": 28000,
+      "unit": "one-time",
+      "trigger": "The founder and operations director approve the scope.",
+      "line": "\"The group site and the care plan go on one contract, so a new opening by room or a centre change is one message to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Tour booking reminders across centres",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "trigger": "Tours booked through the site start arriving at the centres.",
+      "line": "\"Those parents booked a centre visit. A reminder and a director's follow-up turns more tours into enrolments.\""
+    },
+    {
+      "rung": 3,
+      "day": 60,
+      "offer": "Educator recruitment campaigns",
+      "min": 800,
+      "max": 2500,
+      "unit": "monthly",
+      "trigger": "A centre director says a room can't open for lack of educators.",
+      "line": "\"Let's point local job ads at the careers hub for the centres short of educators.\""
+    },
+    {
+      "rung": 4,
+      "day": 90,
+      "offer": "Waitlist place offers by centre and room",
+      "min": 2000,
+      "max": 5000,
+      "unit": "one-time",
+      "trigger": "The group waitlist has families listed for several centres and places sit empty for days.",
+      "line": "\"A place that opens on Monday can be offered to the next family on the waitlist by Monday afternoon.\""
+    },
+    {
+      "rung": 5,
+      "day": 120,
+      "offer": "Occupancy dashboard by centre and room",
+      "min": 6000,
+      "max": 18000,
+      "unit": "one-time",
+      "trigger": "The operations director asks which centre has empty rooms next term and nobody can answer quickly.",
+      "line": "\"One screen with occupancy and waitlist by centre and room answers that every Monday.\""
+    },
+    {
+      "rung": 6,
+      "day": 180,
+      "offer": "Staff qualification and certificate tracker",
+      "min": 4000,
+      "max": 12000,
+      "unit": "one-time",
+      "trigger": "A centre finds an educator's certificate lapsed, or an inspection is on the calendar.",
+      "line": "\"Every educator's certificate dates across the centres in one place, with reminders before anything lapses.\""
+    },
+    {
+      "rung": 7,
+      "day": 270,
+      "offer": "Group parent app and portal",
+      "min": 15000,
+      "max": 45000,
+      "unit": "one-time",
+      "trigger": "Parents complain about separate tools for bookings, invoices and updates.",
+      "line": "\"One parent sign-in for bookings, invoices and centre news is the change families across the group will notice.\""
+    },
+    {
+      "rung": 8,
+      "day": 330,
+      "offer": "New centre launch kit and pre-enrolment page",
+      "min": 3000,
+      "max": 8000,
+      "unit": "one-time",
+      "trigger": "They sign a lease or announce the next centre.",
+      "line": "\"The next centre can open with families already registered. Let's put the pre-enrolment page up the week the lease is signed.\""
+    }
+  ]
+}

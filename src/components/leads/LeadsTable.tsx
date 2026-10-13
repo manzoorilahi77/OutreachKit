@@ -4,6 +4,9 @@ import Link from "next/link";
 import { DataTable, type Column } from "@/components/ui/DataTable";
 import { FLOW_RANK, stageLabel, channelLabel, type Channel, type Stage } from "@/lib/leads/stages";
 import { DueText } from "./DueText";
+import { SizeBadge } from "@/components/catalog/CatalogControls";
+import type { Size } from "@/lib/kit/extBoard";
+import { COUNTRIES, type Country } from "@/lib/market/regions";
 
 export interface LeadRowData {
   id: string;
@@ -12,6 +15,10 @@ export interface LeadRowData {
   category: string;
   /** City and state. */
   where: string;
+  /** The category's business size, when it is on the board. */
+  size?: Size | null;
+  /** Shown next to the place when it isn't the US. */
+  country?: Country | null;
   tier: "hot" | "warm" | "skip";
   score: number;
   stage: Stage;
@@ -33,8 +40,8 @@ const TIER_ORDER = { hot: 3, warm: 2, skip: 1 } as const;
 /** The leads list: S.No, sortable columns and pages. Sorted by next action by default, empty dates last. */
 export function LeadsTable({ rows, showHolder, holderLabel }: { rows: LeadRowData[]; showHolder: boolean; holderLabel: string }) {
   const columns: Column<LeadRowData>[] = [
-    { id: "business", label: "Business", sort: (r) => r.business, cell: (r) => (<><Link href={`/leads/${r.id}`} className="text-lg font-medium no-underline hover:underline">{r.business}</Link>{r.category && <span className="block text-sm text-muted">{r.category}</span>}</>) },
-    { id: "where", label: "Where", sort: (r) => r.where, cell: (r) => r.where },
+    { id: "business", label: "Business", sort: (r) => r.business, cell: (r) => (<><Link href={`/leads/${r.id}`} className="text-lg font-medium no-underline hover:underline">{r.business}</Link>{r.category && <span className="block text-sm text-muted">{r.category}</span>}{r.size === "mid" && <span className="mt-1 block"><SizeBadge size="mid" /></span>}</>) },
+    { id: "where", label: "Where", sort: (r) => r.where, cell: (r) => (r.country && r.country !== "US" ? `${r.where} · ${COUNTRIES[r.country].short}` : r.where) },
     { id: "tier", label: "Tier", sort: (r) => TIER_ORDER[r.tier], className: "whitespace-nowrap", cell: (r) => <TierText tier={r.tier} /> },
     { id: "score", label: "Score", sort: (r) => r.score, className: "tabular-nums whitespace-nowrap", cell: (r) => <>{r.score} <span className="text-muted">/ 10</span></> },
     { id: "stage", label: "Stage", sort: (r) => FLOW_RANK[r.stage] ?? 99, cell: (r) => stageLabel(r.stage) },

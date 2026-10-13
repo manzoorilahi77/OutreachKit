@@ -1,0 +1,877 @@
+{
+  "schemaVersion": 1,
+  "category": "Cosmetic surgery & aesthetic clinics",
+  "slug": "cosmetic-surgery-aesthetic-clinics",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · expansion batch (healthcare + mid-size)",
+    "generatedAt": "2026-10-13",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Leaned on procedure pages, surgeon profiles, a consent-led gallery and a consult funnel built for advertising review, with no result promises. Unsure on the patient journey portal and multi-location reporting ranges; both depend on the practice's existing systems."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Procedure pages by area of the body",
+      "contains": "Separate pages for face, nose, breast, body contouring and non-surgical treatments: what the procedure involves, anaesthesia type, typical recovery stages as general information, and a note that suitability is decided at consultation",
+      "why": "People researching cosmetic surgery search by procedure, not by clinic. A careful page per procedure answers the first question and books the consult."
+    },
+    {
+      "section": "Who operates: surgeon credentials and facility",
+      "contains": "Each surgeon's training and registrations as published, [registration number], [hospital or facility privileges], where surgery takes place, who gives anaesthesia and the facility's accreditation [as published]",
+      "why": "The careful patient's first question is who will operate and where. Showing it plainly separates a surgical practice from a salon offering the same names."
+    },
+    {
+      "section": "Results gallery rules and consent notice",
+      "contains": "A gallery sorted by procedure, shown only with written consent, unretouched and in matched lighting, each labelled with the procedure and a note that individual results differ",
+      "why": "Galleries are what patients look at most, and what regulators look at first. Clear rules make the gallery trustworthy and keep it within advertising limits."
+    },
+    {
+      "section": "Recovery planning and time off",
+      "contains": "Typical time away from work by procedure as general information, follow-up visit schedule, aftercare contacts, travel distance advice and what to arrange at home before surgery",
+      "why": "Patients plan surgery around work and family. A clinic that helps them plan the recovery feels safer than one that only talks about the result."
+    },
+    {
+      "section": "Virtual consultation and secure photo upload",
+      "contains": "How a video consultation works, a private upload for the patient's own photos with consent, what the surgeon can and cannot assess remotely, and the consult fee if there is one",
+      "why": "Many plastic surgery patients want a first opinion before travelling or taking time off. A private virtual consult is the lowest-pressure first step."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C10",
+      "siteType": "local-conversion",
+      "name": "Consult Ready",
+      "heroLayout": "split-photo",
+      "mood": [
+        "clean",
+        "clinical",
+        "direct"
+      ],
+      "bestFor": "Single-surgeon cosmetic surgery practices replacing an old site with procedure pages and a consult request",
+      "pairsWithTier": "starter",
+      "headlineSample": "Cosmetic surgery in {City}, starting with a consultation",
+      "whyItFits": "Steel neutrals and a plain grotesque read as a medical practice first, not a beauty brand. That restraint suits patients who are nervous about who operates."
+    },
+    {
+      "id": "b",
+      "themeId": "C35",
+      "siteType": "booking-first",
+      "name": "Rosewood Consult",
+      "heroLayout": "full-bleed-photo",
+      "mood": [
+        "refined",
+        "warm",
+        "assured"
+      ],
+      "bestFor": "Aesthetic clinics with several surgeons and a non-surgical wing, booking consults by surgeon, procedure and location",
+      "pairsWithTier": "standard",
+      "headlineSample": "Plastic surgery and aesthetics in {City}, by appointment",
+      "whyItFits": "Chosen over the family's Private Vault because this category sells on visual taste. Rosewood and a fashion serif feel considered without promising looks, and the booking stays front and centre."
+    },
+    {
+      "id": "c",
+      "themeId": "C48",
+      "siteType": "premium-brand",
+      "name": "Surgeon's Atelier",
+      "heroLayout": "type-led",
+      "mood": [
+        "discreet",
+        "exacting",
+        "quiet"
+      ],
+      "bestFor": "Established surgical practices with a reputation for one procedure, attracting travelling patients and private referrals",
+      "pairsWithTier": "premium",
+      "headlineSample": "Rhinoplasty and facial surgery in {City}",
+      "whyItFits": "A dark editorial frame with a high-contrast serif lets the surgeon's work and words carry the page. It suits a practice whose patients compare surgeons, not prices."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "Results only on social",
+      "line": "Your consented results posts sit between holiday notices and team news. A procedure-sorted gallery on the clinic site, with the consent rules shown, is where a rhinoplasty patient would actually compare.",
+      "hook": "Scroll their results posts. Note which procedures appear most. Never reuse their patient photos in anything you send.",
+      "linkLine": "A cosmetic surgery gallery layout sorted by procedure, with placeholders: {demo-link}"
+    },
+    {
+      "angle": "Procedure pages crawl on a phone",
+      "line": "I opened your breast and body procedure pages on my phone and they took a long time to load and kept shifting. Most cosmetic surgery research happens on a phone, in private.",
+      "hook": "Load two procedure pages on mobile data. Note load time and what jumps. Screenshot it for when they reply.",
+      "linkLine": "Your procedure pages, rebuilt to load fast on a phone: {demo-link}"
+    },
+    {
+      "angle": "No virtual consultation",
+      "line": "There's no way to start with a virtual consult at your plastic surgery clinic, only an in-person booking by phone. Many patients want a first opinion before they take a day off.",
+      "hook": "Check their site and bio links for a video consult option. If it's in-person only, the angle holds.",
+      "linkLine": "A private virtual consult with secure upload, for the aesthetic clinic: {demo-link}"
+    },
+    {
+      "angle": "Surgeons share one page",
+      "line": "Your surgeons share one team page with a short paragraph each. Patients choose the surgeon before the clinic, and want to read each one's training and focus on a page of their own.",
+      "hook": "Count the surgeons on their team page and check whether any has their own page. Never state a credential you didn't see published.",
+      "linkLine": "A page per surgeon with their own consult booking: {demo-link}"
+    },
+    {
+      "angle": "Contact us for pricing",
+      "line": "Every procedure page on your cosmetic surgery site says to contact the clinic for pricing. A fee range and what it includes lets a patient decide whether to book the consult.",
+      "hook": "Check three procedure pages for any fee information. Note the exact wording they use.",
+      "linkLine": "Procedure fee ranges shown carefully, with the consult as the next step: {demo-link}"
+    },
+    {
+      "angle": "Ads land on the home page",
+      "line": "Your liposuction ad sends people to the clinic's home page, where they have to hunt for the procedure. A landing page per campaign, approval-ready, keeps them on the subject they clicked.",
+      "hook": "Find their current ads in the platform's ad library. Click through and note where each lands.",
+      "linkLine": "A procedure landing page built for the aesthetic clinic's ads: {demo-link}"
+    },
+    {
+      "angle": "Non-surgical wing hidden",
+      "line": "Your clinic offers injectables and skin treatments alongside surgery, but they're a single line on the services page. Non-surgical patients are often your future surgical patients.",
+      "hook": "Look for non-surgical treatments in their posts or price list. Check whether the site gives them their own pages.",
+      "linkLine": "Non-surgical aesthetic pages beside the surgery side: {demo-link}"
+    },
+    {
+      "angle": "Second clinic, no page",
+      "line": "You've opened a second aesthetic clinic location, but the site still lists one address with the other in the footer. Patients book the location nearest home, and want its hours and parking.",
+      "hook": "Compare the addresses on their listings with their site's contact page.",
+      "linkLine": "A page for each cosmetic surgery location: {demo-link}"
+    },
+    {
+      "angle": "Travelling patients",
+      "line": "Your reviews mention patients who flew in for surgery. There's nothing on the site about how long to stay, where to recover nearby or which follow-ups can happen remotely.",
+      "hook": "Search their reviews for travel words like flew, drove in or hotel. Note where patients came from.",
+      "linkLine": "A travelling-patient page for the plastic surgery practice: {demo-link}"
+    },
+    {
+      "angle": "Hiring surgical nurses",
+      "line": "Saw your clinic is hiring surgical nurses and a patient coordinator, but there's no careers page. Experienced theatre staff check where surgery happens and who they'd work with before applying.",
+      "hook": "Only if they've posted job listings recently. Note the roles and dates.",
+      "linkLine": "A careers page for the cosmetic surgery team: {demo-link}"
+    },
+    {
+      "angle": "Reviews that never reach the site",
+      "line": "Your reviews describe a surgeon who never rushed the consult and a coordinator who called after surgery. Those are the reassurances a nervous plastic surgery patient looks for, and the site doesn't show them.",
+      "hook": "Pick two reviews about care and communication, never about how someone looks. Quote them back.",
+      "linkLine": "Patient reviews placed beside each procedure, with consent: {demo-link}"
+    },
+    {
+      "angle": "Financing mentioned, not explained",
+      "line": "Your posts mention monthly payments for cosmetic surgery, but the site doesn't say how to apply or what's covered. Patients who can't find that often stall before booking.",
+      "hook": "Only if they mention financing publicly. Quote where you saw it.",
+      "linkLine": "Cosmetic surgery payment options on one page: {demo-link}"
+    },
+    {
+      "angle": "Dated clinic design",
+      "line": "Your clinic site still has the stock photos and sliding banners of an older build. For a practice whose work is about care with appearance, the site is the first thing patients judge.",
+      "hook": "Look for stock photography, old copyright years or sliders. Note two specifics, politely.",
+      "linkLine": "A calmer, current design for the aesthetic clinic: {demo-link}"
+    },
+    {
+      "angle": "Holiday recovery planning",
+      "line": "Many cosmetic surgery patients plan their procedure around holiday time off so they can recover privately. A recovery planning page with consult booking catches them while they're deciding.",
+      "hook": "Use this a couple of months before major holidays where they practise. Check whether they already post about it.",
+      "linkLine": "A recovery planning page with consult booking: {demo-link}"
+    },
+    {
+      "angle": "A specific recent post",
+      "line": "That {specific recent job} post was an honest account of recovery, the kind cosmetic surgery patients look for and rarely find. On the matching procedure page it would keep answering them.",
+      "hook": "Pick their newest educational post or surgeon video, never a patient case without consent, and name it exactly.",
+      "linkLine": "That explainer, kept on the matching procedure page: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, that {specific recent job} post was one of the clearer recovery explanations I've seen from a cosmetic surgery practice.\n\nOn a phone, {Business Name}'s procedure pages are slow, the surgeons share one page and pricing says contact us. I sketched how procedure pages and a virtual consult could work, with marked placeholders where your photos would go.\n\nShould I send it to you, or to whoever runs marketing for the clinic?",
+    "dm2": "{Owner}, following up in case this got buried. Here's the sample for {Business Name}: {demo-link}\n\nIt has a page per procedure, a page per surgeon, a gallery layout with consent rules, fee ranges and a private virtual consult. It makes no result promises, and your surgeons approve every word before launch. If it's not for you, just say so.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites and patient software for cosmetic surgery practices. I sent a sample a few days ago, did it reach you?\"\n\nIF NO:\n\"No problem. Short version: I built a sample for {Business Name} with procedure pages, surgeon pages, a consent-led gallery layout and a virtual consult, with marked placeholders where your photos would go. Can I email it so you can share it with the surgeons?\"\n\nIF YES:\n\"What did the surgeons think?\"\n → let them talk, then ask who signs off on marketing copy\n\"It's a clinic site you own, built to pass advertising review where it's required: no result promises, consent on every gallery case, credentials shown as published. The build runs {Build Range} depending on procedures, surgeons and locations, then {Care Range} a month for hosting, security and edits. For a practice your size I'd quote about {Build Price}.\"\n\"Could we take thirty minutes with you and the lead surgeon next week?\"\n\nCLOSE:\n\"I'll send a scope listing every procedure page, the gallery rules and the review rounds, plus a deposit invoice. Surgeons approve each page before it goes live.\"",
+    "objections": [
+      {
+        "objection": "Advertising rules for cosmetic surgery are strict.",
+        "handler": "\"They are, which is why the site is built for review: no result promises, consent recorded for every gallery case, credentials only as published, and a review-ready pack where the regulator requires one.\""
+      },
+      {
+        "objection": "Our leads come from social media, not the website.",
+        "handler": "\"Social gets attention. Before booking a consult that costs real money, patients check the surgeon and the procedure on the clinic site. That's where the attention converts or leaks.\""
+      },
+      {
+        "objection": "We don't put prices online.",
+        "handler": "\"Many practices don't. A range with what's included, and a clear note that the consult sets the final fee, filters out people who were never going to book. You choose the wording.\""
+      },
+      {
+        "objection": "We already pay a marketing agency.",
+        "handler": "\"Keep them on campaigns. I build the procedure pages their ads land on. When ads stop converting, it's usually the landing page, not the ad.\""
+      },
+      {
+        "objection": "The surgeons are too busy to review copy.",
+        "handler": "\"I draft every procedure page from a short call and your existing consult notes. Each surgeon reviews for accuracy in an hour, not a weekend.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For a practice your size about {Build Price}, covering procedure and surgeon pages, the gallery rules, fee ranges and virtual consult. Integrations with your scheduling system are scoped once I've seen it.\""
+      }
+    ],
+    "email": {
+      "subject": "Procedure pages for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites and patient software for cosmetic surgery and aesthetic clinics. {Business Name} has strong work, but on a phone the procedure pages are slow, the surgeons share one page and pricing says contact us.\n\nI built a sample rather than ask for a meeting first: a page per procedure, a page per surgeon, a gallery layout with consent rules, fee ranges and a private virtual consult, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf it fits, I finish it on your domain for {Build Range}, plus {Care Range} a month for hosting, security and edits. It makes no result promises, and every page is approved by your surgeons before launch. If not, no problem, it comes down at the end of the month.\n\nWould thirty minutes with you and the lead surgeon be worth it?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"{Owner}, it's {Your Name}. I build websites for cosmetic surgery clinics, and I made a sample for {Business Name} with procedure pages, surgeon pages and a virtual consult. I'll email the link so the surgeons can see it. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm taking the {Business Name} procedure page sample down on Friday.\n\nWould you like me to keep it up while the surgeons look? One word is fine either way.",
+    "nurture": "Hi {Owner}, consult season before the holidays is when cosmetic surgery practices feel a slow site most, so you came to mind.\n\nThe sample is still here if the surgeons want another look, same scope and price: {demo-link}"
+  },
+  "pricing": {
+    "bullets": [
+      "Price by procedure family and surgeon count. Each procedure page needs a drafting call and the operating surgeon's review.",
+      "Quote the gallery by consented case sets, not by photo count; consent checking and matched-lighting edits are the real work.",
+      "Never write result promises, 'best surgeon' labels or comparisons with other clinics; the review round removes them, so don't draft them.",
+      "Build the advertising review round into every quote, and assume campaign landing pages need it too.",
+      "Separate surgical and non-surgical pages in the scope; the non-surgical side changes prices more often.",
+      "Scope scheduling and patient-system integrations only after seeing them, and price each location's page separately."
+    ],
+    "lineItems": [
+      {
+        "item": "Procedure page (each)",
+        "min": 600,
+        "max": 1500,
+        "unit": "per-page",
+        "description": "Max with recovery stages, anaesthesia notes, an FAQ, a fee range and two surgeon review rounds.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Surgeon profile with consult booking (each)",
+        "min": 400,
+        "max": 1000,
+        "unit": "per-page",
+        "description": "Max with a filmed introduction, published training and memberships, procedures they focus on and their own consult slots.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Consented results gallery build",
+        "min": 2000,
+        "max": 6000,
+        "unit": "one-time",
+        "description": "Max with filtering by procedure and surgeon, consent records linked to each case and a matched-lighting checklist for staff.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Campaign landing page (each)",
+        "min": 800,
+        "max": 2000,
+        "unit": "per-page",
+        "description": "Max when it carries a procedure-specific consult form, tracking and an advertising review round.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Non-surgical treatment page set",
+        "min": 2000,
+        "max": 6000,
+        "unit": "one-time",
+        "description": "Max with a page per treatment, price ranges by area and booking straight into the injector or therapist schedule.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Clinic location page (each)",
+        "min": 400,
+        "max": 1000,
+        "unit": "per-page",
+        "description": "Max with the procedures offered there, the surgical facility used, parking and recovery accommodation notes.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Recovery planning and travelling-patient pages",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "description": "Max with recovery stays nearby, remote follow-up options and checklists by procedure, reviewed by the nursing lead.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Scheduling system integration for consults",
+        "min": 5000,
+        "max": 16000,
+        "unit": "one-time",
+        "description": "Max when consults book into the practice system by surgeon and location, with deposits and a fallback request form.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Consent and patient-photo policy pages for the gallery",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Before any results go online, the clinic needs pages saying how patient photos are consented, stored, labelled and withdrawn. It protects patients and keeps the gallery defensible in review.\"",
+      "when": "At launch, before the gallery goes live. Needs the clinic's consent forms."
+    },
+    {
+      "name": "Accessibility review of procedure pages and consult forms",
+      "min": 2500,
+      "max": 7000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Galleries and sliders are where cosmetic surgery sites usually fail accessibility. I review the procedure pages, gallery and consult forms and fix what screen readers and keyboards can't use.\"",
+      "when": "Month 2, and after any redesign of the gallery."
+    },
+    {
+      "name": "Advertising-approval-ready procedure content pack",
+      "min": 3000,
+      "max": 9000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Cosmetic surgery ads face the strictest review of any clinic work. Each procedure's ad and landing copy goes into a pack the surgeon signs, so submission is quick where approval is needed.\"",
+      "when": "Before each new campaign or procedure launch."
+    },
+    {
+      "name": "Surgeon and clinic film and portrait day",
+      "min": 3000,
+      "max": 8000,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A day filming each surgeon explaining their approach to the procedures they do most, plus portraits and the clinic and theatre spaces, no patients in frame.\"",
+      "when": "Month 2, or when a surgeon joins."
+    },
+    {
+      "name": "Google profile upkeep for each aesthetic clinic location",
+      "min": 400,
+      "max": 1200,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Each clinic location gets accurate hours, procedures and a weekly educational post, written within advertising rules, so local searches for a plastic surgeon find the right door.\"",
+      "when": "Day 30, once location pages are live."
+    },
+    {
+      "name": "Monthly procedure explainer content",
+      "min": 1500,
+      "max": 4000,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Each month, a surgeon-reviewed article and short video on what a procedure involves and how recovery is planned, written for the patient comparing clinics, not for the ad.\"",
+      "when": "Month 3, after the procedure pages are approved."
+    },
+    {
+      "name": "Consult no-book follow-up campaign",
+      "min": 1000,
+      "max": 2500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Patients who had a cosmetic surgery consult but didn't book get a short, respectful series: recovery planning, financing questions and an easy way to ask the coordinator.\"",
+      "when": "Month 3, once the consult list is in one place."
+    },
+    {
+      "name": "Referral pack for dermatologists and cosmetic dentists",
+      "min": 1200,
+      "max": 3000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Dermatologists and cosmetic dentists get asked about surgery. A short referral page and a printed clinic card make your plastic surgeons the name they give.\"",
+      "when": "Month 4, when the clinic names its referral partners."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Aftercare nursing and recovery houses",
+        "whoPays": "The aftercare provider",
+        "min": 3000,
+        "max": 8000,
+        "unit": "one-time",
+        "pitchLine": "\"The aftercare nurses and recovery houses your surgery patients use need booking sites that look as careful as your clinic. Your recommendation opens the door.\"",
+        "whyItWorks": "They depend entirely on surgeon referrals and serve travelling patients who book online."
+      },
+      {
+        "route": "Lymphatic massage and post-op therapists",
+        "whoPays": "The therapy practice",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"Post-op massage therapists who see your liposuction and body contouring patients need a booking site. An introduction from the clinic they trust gets the first meeting.\"",
+        "whyItWorks": "Small practices built on clinic referrals, with a clear booking need and no time to build a site."
+      },
+      {
+        "route": "Compression garment and medical supply shops",
+        "whoPays": "The supply shop",
+        "min": 3000,
+        "max": 9000,
+        "unit": "one-time",
+        "pitchLine": "\"The shop that fits your patients' compression garments needs a site with sizing help, stock and ordering. The clinic's word makes me their first call.\"",
+        "whyItWorks": "Supply shops compete for the clinic's patients and want to look as professional as the surgeons who send them."
+      },
+      {
+        "route": "Surgical facilities used by the surgeons",
+        "whoPays": "The surgical facility operator",
+        "min": 6000,
+        "max": 18000,
+        "unit": "one-time",
+        "pitchLine": "\"The day-surgery facility your surgeons operate in needs a site for patients and for surgeons looking for theatre time. Your introduction carries weight there.\"",
+        "whyItWorks": "Facilities sell to surgeons and patients at once, the same two-audience structure already built for the clinic."
+      },
+      {
+        "route": "Cosmetic dentists and hair restoration clinics",
+        "whoPays": "The dental or hair restoration practice",
+        "min": 4000,
+        "max": 12000,
+        "unit": "one-time",
+        "pitchLine": "\"Cosmetic dentists and hair restoration clinics share your aesthetic patients. They need consult-led sites too, and a referral partner's recommendation is the warmest start.\"",
+        "whyItWorks": "Same buyer psychology, same advertising caution, and they already swap patients with the clinic."
+      },
+      {
+        "route": "Hotels and serviced apartments near the clinic",
+        "whoPays": "The hotel or apartment operator",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"Hotels where travelling surgery patients recover can add a quiet recovery-stay page with booking. The clinic's patient coordinator can introduce me.\"",
+        "whyItWorks": "A small, specific page earns them repeat bookings from a steady source, so the first sale is easy."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Visit scheduling assistant for aftercare nurses",
+        "whoPays": "The aftercare provider, monthly",
+        "min": 300,
+        "max": 800,
+        "unit": "monthly",
+        "pitchLine": "\"Aftercare nurses juggle home visits after cosmetic surgery. An assistant takes booking requests from patients and coordinators and drafts the day's route for the nurse to confirm.\"",
+        "whyItWorks": "Scheduling eats their evenings, and every surgeon that refers to them benefits."
+      },
+      {
+        "route": "Booking question assistant for post-op therapists",
+        "whoPays": "The therapy practice, monthly",
+        "min": 100,
+        "max": 300,
+        "unit": "monthly",
+        "pitchLine": "\"Therapists who treat after body contouring miss calls mid-session. An assistant answers booking and pricing questions and offers the next slot, and hands anything clinical back.\"",
+        "whyItWorks": "Cheap to run and easy to show, and the plastic surgery clinic's referral gets the yes."
+      },
+      {
+        "route": "Sizing question assistant for garment shops",
+        "whoPays": "The supply shop, monthly",
+        "min": 200,
+        "max": 600,
+        "unit": "monthly",
+        "pitchLine": "\"Patients ask garment shops the same sizing and wear-time questions. An assistant answers from the shop's own fitting guide and books a fitting when it can't.\"",
+        "whyItWorks": "It cuts phone time on a steady product line the clinic sends them."
+      },
+      {
+        "route": "Theatre time request assistant for surgical facilities",
+        "whoPays": "The surgical facility, monthly",
+        "min": 600,
+        "max": 1500,
+        "unit": "monthly",
+        "pitchLine": "\"Surgeons and their coordinators request theatre time in a chat, and the facility gets a drafted booking request with equipment and staffing needs to confirm.\"",
+        "whyItWorks": "Facilities fill theatre time through surgeons, and easier booking keeps the surgeons coming back."
+      },
+      {
+        "route": "Consult intake assistant for cosmetic dentists",
+        "whoPays": "The dental practice, monthly",
+        "min": 300,
+        "max": 800,
+        "unit": "monthly",
+        "pitchLine": "\"Smile-makeover patients answer the dentist's consult questions with an assistant before the visit, and the dentist gets a draft summary to review.\"",
+        "whyItWorks": "Dentists see the value immediately because the aesthetic clinic's version already works."
+      },
+      {
+        "route": "Recovery stay concierge for hotels",
+        "whoPays": "The hotel, monthly",
+        "min": 200,
+        "max": 600,
+        "unit": "monthly",
+        "pitchLine": "\"Recovering guests ask about quiet rooms, meals and transport to follow-up visits. An assistant answers from the hotel's own recovery-stay rules and books the room.\"",
+        "whyItWorks": "Hotels like a steady stream of longer stays, and the clinic's coordinator recommends them."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Missed-call text-back with the virtual consult link",
+      "kind": "automation",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"When the front desk is with a patient and a plastic surgery enquiry rings out, the caller gets a text offering a virtual consult, and a request to keep their photos off text messages.\"",
+      "whenAndWhatItTakes": "Month 1. Needs the clinic numbers forwarded and wording approved by the practice manager."
+    },
+    {
+      "name": "Privacy-safe virtual consult intake and hosting setup",
+      "kind": "software",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 14000,
+      "monthlyMin": 300,
+      "monthlyMax": 900,
+      "pitchLine": "\"Patients answer the surgeon's consult questions and upload their own photos with consent on privacy-safe hosting, encrypted, never by email or direct message.\"",
+      "whenAndWhatItTakes": "Month 1 to 2. Needs their consult questionnaire, photo-angle guide, retention rules and the privacy lead's sign-off."
+    },
+    {
+      "name": "Consult booking with deposit by surgeon and location",
+      "kind": "software",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 15000,
+      "monthlyMin": 300,
+      "monthlyMax": 800,
+      "pitchLine": "\"Patients pick a plastic surgeon, a location and in-person or video, then pay the consult deposit, so no-shows stop costing the surgeon a slot.\"",
+      "whenAndWhatItTakes": "Month 2. Needs consult slot rules per surgeon, the deposit policy and their scheduling system or a request fallback."
+    },
+    {
+      "name": "Review reply drafts that never discuss a procedure",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 200,
+      "monthlyMax": 500,
+      "pitchLine": "\"Reviews of the surgical practice get a gracious draft reply for the manager to approve. The draft thanks the writer without ever saying they had a procedure here.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the clinic's privacy rules and approved sample replies. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Post-op check-in messages in the surgeon's approved wording",
+      "kind": "automation",
+      "oneTimeMin": 2500,
+      "oneTimeMax": 7000,
+      "monthlyMin": 200,
+      "monthlyMax": 500,
+      "pitchLine": "\"After cosmetic surgery, patients get check-ins on the days the nursing team chooses, with the aftercare contact and clinic hours, in wording the surgeon has approved.\"",
+      "whenAndWhatItTakes": "Month 3. Needs check-in schedules by procedure and approved templates; replies go to the nursing line."
+    },
+    {
+      "name": "Procedure fee range estimator",
+      "kind": "software",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 12000,
+      "monthlyMin": 200,
+      "monthlyMax": 500,
+      "pitchLine": "\"Patients pick a procedure and see the clinic's own fee range, what's included and payment options, clearly marked as a range that the consult confirms.\"",
+      "whenAndWhatItTakes": "Month 3. Needs fee ranges by procedure and surgeon and a billing review of every line."
+    },
+    {
+      "name": "Site question assistant on procedures and recovery",
+      "kind": "ai",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 15000,
+      "monthlyMin": 600,
+      "monthlyMax": 1800,
+      "pitchLine": "\"Late-night visitors ask how long rhinoplasty recovery usually takes or whether the fee covers follow-ups, and it answers only from approved procedure pages. Suitability questions go to a consult.\"",
+      "whenAndWhatItTakes": "Month 4. Needs approved procedure and fee pages and surgeon sign-off on the answer set. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Consulted-but-not-booked follow-up sequence",
+      "kind": "automation",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 6000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Patients who had a consult and went quiet get a short, respectful sequence from their coordinator, with recovery planning and a way to ask questions, then nothing more.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the consult outcome list and approved message wording."
+    },
+    {
+      "name": "Coordinator pipeline board from consult to surgery date",
+      "kind": "software",
+      "oneTimeMin": 8000,
+      "oneTimeMax": 20000,
+      "monthlyMin": 400,
+      "monthlyMax": 1000,
+      "pitchLine": "\"Every enquiry, consult, quote and surgery date on one board for the patient coordinators, by surgeon and location, so nobody falls between them.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their current enquiry steps and the coordinators' spreadsheet or system export."
+    },
+    {
+      "name": "Consult summary drafts for the plastic surgeon",
+      "kind": "ai",
+      "oneTimeMin": 8000,
+      "oneTimeMax": 20000,
+      "monthlyMin": 600,
+      "monthlyMax": 1500,
+      "pitchLine": "\"Before each consult, the surgeon gets a one-page draft of the intake answers, goals in the patient's words and health questions flagged. The surgeon checks it; it never assesses anyone.\"",
+      "whenAndWhatItTakes": "Month 5. Needs the intake form and data rules. Comes with the AI maintenance retainer; surgeon review on every draft."
+    },
+    {
+      "name": "Ad and caption claims checker",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 300,
+      "monthlyMax": 800,
+      "pitchLine": "\"Paste a cosmetic surgery ad, caption or landing page and it flags result promises, comparative claims and missing consent notes for the marketing lead to fix before review.\"",
+      "whenAndWhatItTakes": "Month 5. Needs the clinic's advertising rules and examples of rejected copy. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Consent and photo release register",
+      "kind": "software",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 15000,
+      "monthlyMin": 300,
+      "monthlyMax": 800,
+      "pitchLine": "\"Every gallery case, video and story is linked to its signed consent, with expiry and withdrawal tracked, so marketing never publishes a case the patient didn't approve.\"",
+      "whenAndWhatItTakes": "Month 6. Needs their consent forms and who owns gallery approval."
+    },
+    {
+      "name": "Second-language enquiry drafts with coordinator review",
+      "kind": "ai",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 12000,
+      "monthlyMin": 400,
+      "monthlyMax": 1000,
+      "pitchLine": "\"Travelling patients often write in Arabic, French or Spanish. The coordinator sees a draft English summary of each cosmetic surgery enquiry and a suggested reply to check and send.\"",
+      "whenAndWhatItTakes": "Month 6, only where bilingual staff review. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Surgical nurse and coordinator applicant screener",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 300,
+      "monthlyMax": 700,
+      "pitchLine": "\"Theatre and recovery nurse candidates answer questions about surgical experience, shift patterns and registration status, and the plastic surgery practice interviews only those who fit.\"",
+      "whenAndWhatItTakes": "Whenever they hire. Needs role requirements. Comes with the AI maintenance retainer; people make every hiring decision."
+    },
+    {
+      "name": "Patient journey portal for surgery patients",
+      "kind": "software",
+      "oneTimeMin": 15000,
+      "oneTimeMax": 40000,
+      "monthlyMin": 800,
+      "monthlyMax": 2500,
+      "pitchLine": "\"Booked surgery patients see their pre-op instructions, documents to sign, appointments and aftercare contacts in one private place, instead of email chains with the coordinator.\"",
+      "whenAndWhatItTakes": "Month 8. Needs the pre-op checklists, e-sign process, scheduling integration and a privacy review."
+    },
+    {
+      "name": "Source-to-surgery reporting by location",
+      "kind": "software",
+      "oneTimeMin": 8000,
+      "oneTimeMax": 22000,
+      "monthlyMin": 400,
+      "monthlyMax": 1200,
+      "pitchLine": "\"See which campaigns, referral partners and locations produce consults and booked surgeries, by procedure, so the clinic's budget follows real bookings.\"",
+      "whenAndWhatItTakes": "Month 8. Needs six months of consult data and campaign tracking from launch."
+    },
+    {
+      "name": "Weekly lost-consult reasons summary",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 300,
+      "monthlyMax": 800,
+      "pitchLine": "\"Each week the clinic gets a plain draft summary of why consulted patients didn't book, drawn from coordinator notes: cost, timing, recovery worries, distance.\"",
+      "whenAndWhatItTakes": "Month 9, after the pipeline board. Needs coordinator notes in one place. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Non-surgical treatment membership billing",
+      "kind": "software",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 15000,
+      "monthlyMin": 300,
+      "monthlyMax": 800,
+      "pitchLine": "\"The aesthetic side's memberships and treatment packages billed monthly, with benefits and visits tracked, so the front desk stops doing it by hand.\"",
+      "whenAndWhatItTakes": "Month 10, if they run a non-surgical wing. Needs package rules and their payment processor."
+    },
+    {
+      "name": "Coordinator reply drafts for procedure enquiries",
+      "kind": "ai",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 400,
+      "monthlyMax": 1000,
+      "pitchLine": "\"Web and social enquiries about a procedure get a draft reply from the clinic's approved answers, ready for the coordinator to personalise and send.\"",
+      "whenAndWhatItTakes": "Month 10. Needs approved answers per procedure and the coordinators' tone. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Surgery date and paperwork reminder chain",
+      "kind": "automation",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 200,
+      "monthlyMax": 500,
+      "pitchLine": "\"Once a surgery date is booked, reminders for balance payments, unsigned documents and pre-op appointments go out on schedule, so nothing is missing on the day.\"",
+      "whenAndWhatItTakes": "Month 11, with the portal. Needs the pre-op timeline and payment rules."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the virtual consult intake for surgical practices",
+      "whoPays": "Independent cosmetic surgery practices, monthly",
+      "min": 400,
+      "max": 1200,
+      "unit": "monthly",
+      "pitchLine": "\"Every plastic surgery practice wants remote first opinions without photos arriving by direct message. The intake I built for one clinic loads any surgeon's questions.\"",
+      "whyItWorks": "The privacy and consent logic is the expensive part and is already built and reviewed."
+    },
+    {
+      "route": "Aesthetic surgery society member toolkit",
+      "whoPays": "The national aesthetic or plastic surgery society",
+      "min": 5000,
+      "max": 20000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer members procedure page and gallery templates already written within advertising rules, ready for each surgeon's own review.\"",
+      "whyItWorks": "Societies care about members' advertising conduct and fund resources that reduce complaints."
+    },
+    {
+      "route": "Aesthetic clinic groups adding practices",
+      "whoPays": "The group's central marketing team",
+      "min": 20000,
+      "max": 80000,
+      "unit": "one-time",
+      "pitchLine": "\"Your group keeps adding cosmetic surgery practices, each with its own site and gallery rules. One template rolls out to every clinic with consent tracking shared.\"",
+      "whyItWorks": "Groups need consistency and central compliance, and the first clinic's build is the template."
+    },
+    {
+      "route": "Device and implant makers' surgeon finder",
+      "whoPays": "The device maker's practice-support team",
+      "min": 10000,
+      "max": 35000,
+      "unit": "one-time",
+      "pitchLine": "\"Device makers want patients to find trained surgeons near them. The surgeon profile and location pages I built become a finder for their whole surgeon network.\"",
+      "whyItWorks": "Makers fund practice-support tools, and surgeon profiles are already structured for it."
+    },
+    {
+      "route": "Day-surgery facility operators",
+      "whoPays": "The facility operator, per facility",
+      "min": 6000,
+      "max": 18000,
+      "unit": "one-time",
+      "pitchLine": "\"Facility operators can give every visiting plastic surgeon a profile page and consult booking under the facility's site, built on this template.\"",
+      "whyItWorks": "Operators compete for surgeons, and a ready marketing benefit helps them sign more."
+    },
+    {
+      "route": "White-label for aesthetic marketing agencies",
+      "whoPays": "The agency, per clinic client",
+      "min": 5000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency runs cosmetic surgery campaigns that fail review at the landing page. License the procedure, gallery and consult pages and I deliver under your name.\"",
+      "whyItWorks": "Agencies own clinic relationships and lose campaigns to rejected landing pages; this fixes it."
+    },
+    {
+      "route": "Fellowship graduates opening practices",
+      "whoPays": "The newly qualified surgeon",
+      "min": 8000,
+      "max": 20000,
+      "unit": "one-time",
+      "pitchLine": "\"Surgeons finishing aesthetic fellowships need a careful practice site on day one. The template ships with consent, credentials and procedure pages ready for their review.\"",
+      "whyItWorks": "A new practice has a budget and a deadline, and every graduating year repeats."
+    },
+    {
+      "route": "Medical travel facilitators",
+      "whoPays": "The facilitation firm",
+      "min": 6000,
+      "max": 18000,
+      "unit": "one-time",
+      "pitchLine": "\"Facilitators who bring international patients to cosmetic surgeons need recovery-stay pages, a private intake and clinic profiles. The travelling-patient structure carries straight over.\"",
+      "whyItWorks": "They sell trust across borders, and the clinic-side pages already handle the hard parts."
+    },
+    {
+      "route": "Patient finance companies' practice resources",
+      "whoPays": "The patient finance provider",
+      "min": 5000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Finance providers want clinics to explain payment options clearly. A fee range and payment page module, built once, can be offered to every aesthetic practice they serve.\"",
+      "whyItWorks": "They grow when clinics present financing well, and the module is already built and reviewed."
+    },
+    {
+      "route": "Consent and gallery register licence",
+      "whoPays": "Aesthetic clinics and med spas, monthly",
+      "min": 150,
+      "max": 500,
+      "unit": "monthly",
+      "pitchLine": "\"Any aesthetic clinic publishing results needs consent tracked per case. The register I built for one plastic surgery practice runs for any of them.\"",
+      "whyItWorks": "Consent tracking is a universal pain, and it sells on risk, not on design taste."
+    },
+    {
+      "route": "One aesthetic practice per procedure focus per metro",
+      "whoPays": "A cosmetic surgery practice in another metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I build for one aesthetic practice per procedure focus in each metro. The facial surgery spot in {City} is yours; the next metro's gets the same structure.\"",
+      "whyItWorks": "Surgeons hate sharing a builder with a direct rival, and the template moves cleanly between metros."
+    },
+    {
+      "route": "Finishing abandoned aesthetic clinic sites",
+      "whoPays": "The practice with an unfinished site",
+      "min": 8000,
+      "max": 25000,
+      "unit": "one-time",
+      "pitchLine": "\"A designer started your aesthetic clinic's site, then the gallery stalled on consent questions. I finish it on a structure that already has the consent rules built in.\"",
+      "whyItWorks": "They already decided to spend, and the stalled part is exactly what this template solves."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Cosmetic surgery site build plus care plan, one contract",
+      "min": 12000,
+      "max": 30000,
+      "unit": "one-time",
+      "trigger": "The practice manager and lead surgeon approve the scope.",
+      "line": "\"The cosmetic surgery site and the care plan share one contract, so a new procedure page or fee change is a message, not a new project.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Consent and patient-photo policy pages for the gallery",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "trigger": "The surgeons ask to start adding results to the gallery.",
+      "line": "\"Before the first case goes in the plastic surgery gallery, the consent pages need to be live. Let's do them now.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "Surgeon and clinic film and portrait day",
+      "min": 3000,
+      "max": 8000,
+      "unit": "per-shoot",
+      "trigger": "Surgeon profiles still show marked placeholders where photos go.",
+      "line": "\"Patients choose the surgeon first. Their profiles are still waiting for portraits and a short film.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Privacy-safe virtual consult intake and hosting setup",
+      "min": 5000,
+      "max": 14000,
+      "unit": "one-time",
+      "trigger": "Patients keep sending photos by direct message to ask for an opinion.",
+      "line": "\"Patients are sending photos by direct message. A private virtual consult intake gets them to the surgeon safely.\""
+    },
+    {
+      "rung": 5,
+      "day": 90,
+      "offer": "Advertising-approval-ready procedure content pack",
+      "min": 3000,
+      "max": 9000,
+      "unit": "one-time",
+      "trigger": "The clinic plans a new campaign or launches a new procedure.",
+      "line": "\"Before the next aesthetic campaign, let's put the copy in a review-ready pack so approval doesn't stall the launch.\""
+    },
+    {
+      "rung": 6,
+      "day": 150,
+      "offer": "Coordinator pipeline board from consult to surgery date",
+      "min": 8000,
+      "max": 20000,
+      "unit": "one-time",
+      "trigger": "Coordinators mention losing track of consulted patients between locations.",
+      "line": "\"Consulted patients slip between coordinators. One board from enquiry to surgery date keeps every one of them followed up.\""
+    },
+    {
+      "rung": 7,
+      "day": 240,
+      "offer": "Patient journey portal for surgery patients",
+      "min": 15000,
+      "max": 40000,
+      "unit": "one-time",
+      "trigger": "Booked surgery patients keep emailing for pre-op instructions and documents.",
+      "line": "\"Pre-op emails fill the coordinators' week. A private portal for each surgery patient holds the instructions, documents and dates.\""
+    },
+    {
+      "rung": 8,
+      "day": 365,
+      "offer": "Source-to-surgery reporting by location",
+      "min": 8000,
+      "max": 22000,
+      "unit": "one-time",
+      "trigger": "Budget planning for the next year, when management asks which channels book surgery.",
+      "line": "\"A year in, let's see which channels and clinic locations turn into booked surgery, so the budget follows them.\""
+    }
+  ]
+}

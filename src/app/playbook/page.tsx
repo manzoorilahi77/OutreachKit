@@ -2,10 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Masthead } from "@/components/playbook/Masthead";
 import { PlaybookFooter } from "@/components/playbook/PlaybookFooter";
-import { SECTIONS } from "@/content/sections";
 import { Chip } from "@/components/ui/Chip";
 import { requirePerm, storeFor } from "@/lib/auth/server";
-import { sectionHref } from "@/lib/playbook";
+import { PLAYBOOK as SECTIONS, sectionHref } from "@/lib/playbook";
 import { START_HERE } from "@/lib/playbookPaths";
 
 export const metadata: Metadata = { title: "Playbook" };

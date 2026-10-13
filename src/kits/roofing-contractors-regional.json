@@ -1,0 +1,890 @@
+{
+  "schemaVersion": 1,
+  "category": "Roofing contractors (regional)",
+  "slug": "roofing-contractors-regional",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · expansion batch (healthcare + mid-size)",
+    "generatedAt": "2026-10-13",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Written for the GM or marketing director at a multi-office roofing company that runs storm campaigns. Leans on claim content, city pages, office routing, commercial roofing, sales and crew hiring. Never promises claim approval or deductible help. Carrier portal and consolidator prices are the least certain."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Storm damage and roof claim guide",
+      "contains": "What hail and wind damage looks like on shingles, metal and flat roofs, the free inspection, how the claim and adjuster meeting work, supplements, and a plain note that the homeowner pays their own deductible",
+      "why": "Storm buyers sign with the roofer who explains the claim honestly. Clear claim content separates a regional company from crews who leave town."
+    },
+    {
+      "section": "City pages tied to each roofing office",
+      "contains": "A page per city with finished roofs there, the office and project manager that cover it, recent storm dates in brackets for the office to confirm, local permit notes and an inspection request",
+      "why": "Homeowners search roofer plus their city. A page with roofs on nearby streets and a real local office wins over a generic ad page."
+    },
+    {
+      "section": "Commercial roofing division",
+      "contains": "Flat and low-slope systems, membranes, coatings, roof maintenance programmes, leak response for tenants, a bid request with drawings upload, and project examples by building type",
+      "why": "Property managers and owners buy commercial roofs on capability, references and maintenance terms, not on a homeowner sales page."
+    },
+    {
+      "section": "Warranty tiers and manufacturer certification",
+      "contains": "Workmanship warranty and material warranty side by side, what each covers, bracketed certification levels the office confirms, transfer on sale, and how to register a claim",
+      "why": "After a storm, many roofers promise the same thing. A clear warranty page is what a careful buyer compares."
+    },
+    {
+      "section": "Roofing sales and crew careers",
+      "contains": "Sales rep, project manager, crew lead and installer roles by office, how territories and pay structure work in plain words, safety training, and subcontract crew onboarding",
+      "why": "Regional roofers grow as fast as they can hire reps and crews. Candidates compare companies on how honestly the role is described."
+    },
+    {
+      "section": "Project gallery by city and roof type",
+      "contains": "Finished roofs filterable by city, material and residential or commercial, each with the scope, the storm or reason for replacement and the crew, with owner consent noted",
+      "why": "Roof buyers want proof nearby. Filtering by their city and roof type turns a long gallery into a shortlist."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C45",
+      "siteType": "local-conversion",
+      "name": "Storm Campaign Pages",
+      "heroLayout": "split-photo",
+      "mood": [
+        "bold",
+        "direct",
+        "timely"
+      ],
+      "bestFor": "Roofing companies running storm and replacement ads across many cities that need landing pages built to book inspections",
+      "pairsWithTier": "starter",
+      "headlineSample": "Storm damage roof inspection in {City}, booked with the local office",
+      "whyItFits": "A poster-style blue with a strong grotesque suits campaign pages that must load fast and push one action: book the roof inspection."
+    },
+    {
+      "id": "b",
+      "themeId": "C8",
+      "siteType": "editorial-trust",
+      "name": "Claim Guide",
+      "heroLayout": "type-led",
+      "mood": [
+        "honest",
+        "steady",
+        "explanatory"
+      ],
+      "bestFor": "Regional roofers whose replacements mostly run through insurance claims and who win by explaining the process",
+      "pairsWithTier": "standard",
+      "headlineSample": "Roof replacement after the storm in {City}, claim explained",
+      "whyItFits": "The family's own combo. Evergreen and a readable serif suit long, calm explanations of claims and warranties for buyers wary of storm crews."
+    },
+    {
+      "id": "c",
+      "themeId": "C19",
+      "siteType": "b2b-capability",
+      "name": "Commercial Roof Division",
+      "heroLayout": "full-bleed-photo",
+      "mood": [
+        "industrial",
+        "capable",
+        "precise"
+      ],
+      "bestFor": "Regional roofing companies building a commercial division for warehouses, retail and multi-unit buildings",
+      "pairsWithTier": "premium",
+      "headlineSample": "Commercial roofing and maintenance programmes across {City}",
+      "whyItFits": "A dark gunmetal palette with signal accents reads like an operations company, which is what facility managers want from a commercial roofer."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "Storm ads to a generic page",
+      "line": "Your storm damage ad lands on the general roofing homepage. Someone who just watched hail bounce off the driveway wants a page about roof claims and a way to book an inspection.",
+      "hook": "If their sponsored result shows for storm damage roofing, note where it lands. Don't click it more than once.",
+      "linkLine": "A storm damage roofing page built to follow the ad: {demo-link}"
+    },
+    {
+      "angle": "Hail just went through",
+      "line": "After the hail that went through {Neighborhood} this week, every roofing ad says free inspection. The company that explains what happens after the inspection, claim and all, gets the signed contract.",
+      "hook": "Use this within days of a hail or wind event in their area. Name the storm's date when you send it.",
+      "linkLine": "A hail and wind roofing page for this week's storm: {demo-link}"
+    },
+    {
+      "angle": "No claim content",
+      "line": "Most of your roof replacements seem to go through insurance, but the site never explains the claim. Homeowners want to know how the adjuster meeting works before they let a roofer up the ladder.",
+      "hook": "Look for claim or adjuster wording in their posts and reviews. Then check the site for a claim page.",
+      "linkLine": "A roof claim guide that stays honest about the deductible: {demo-link}"
+    },
+    {
+      "angle": "Several offices, one form",
+      "line": "You run roofing offices in more than one city, yet every inspection request goes into one form. A homeowner far from head office should hear from the roofing office that covers them.",
+      "hook": "Check the listings and site for more than one office address. If they share one form, the angle holds.",
+      "linkLine": "Roof inspection requests routed to the nearest office: {demo-link}"
+    },
+    {
+      "angle": "No city pages",
+      "line": "Your listing covers a wide region, but the roofing site has no page for any city in it. People type roofer plus their city, and a page with roofs on their streets is what they click.",
+      "hook": "Pick the biggest city they serve that has no page. Check their posts for roofs finished there.",
+      "linkLine": "A roofing page for each city your crews work in: {demo-link}"
+    },
+    {
+      "angle": "Commercial roofing buried",
+      "line": "Your crews are on flat roofs and warehouses in your posts, but the site is all shingles. Property managers looking for a commercial roofer want membranes, maintenance programmes and a bid request.",
+      "hook": "Find a commercial roof in their posts or 'commercial' on the trucks. Then look for a commercial roofing section.",
+      "linkLine": "A commercial roofing division with a bid request: {demo-link}"
+    },
+    {
+      "angle": "Hiring reps and crews",
+      "line": "You're hiring roofing sales reps and crew leads across offices, and there's no careers page. Good reps read how a company explains territories and pay before they leave the roofer they're with.",
+      "hook": "Find their job ads and note the roles and offices. Then check the site menu for Careers.",
+      "linkLine": "A roofing careers page for reps, crews and project managers: {demo-link}"
+    },
+    {
+      "angle": "Gallery stalls on a phone",
+      "line": "The roofing project gallery on your site stalls on my phone. That gallery is where homeowners decide, usually standing in the driveway looking up at their own roof.",
+      "hook": "Load the gallery on your phone with wifi off and note how long it takes. Screenshot it for when they reply.",
+      "linkLine": "A roof gallery that's quick on a phone and filters by city: {demo-link}"
+    },
+    {
+      "angle": "Reviews from many cities",
+      "line": "You have strong roofing reviews from several cities, but the site shows a handful on the homepage. A homeowner in {City} wants to read about roofs replaced near them.",
+      "hook": "Find a review that names a city or neighbourhood. Quote it back if they reply.",
+      "linkLine": "Roofing reviews sorted by the city they came from: {demo-link}"
+    },
+    {
+      "angle": "Financing in one line",
+      "line": "Roof replacement financing gets one line at the bottom of your page. A full replacement is a number most people want to see as a monthly figure before the roofer comes out.",
+      "hook": "Only if they mention financing somewhere. Note whether it's a line, a PDF or an outside link.",
+      "linkLine": "Roof replacement with monthly figures shown up front: {demo-link}"
+    },
+    {
+      "angle": "Warranty never explained",
+      "line": "Your trucks mention a manufacturer certification, but the roofing site doesn't explain what the warranty covers. After a storm, that's what separates a regional roofer from crews who leave town.",
+      "hook": "Check trucks and posts for a certification mark, but never claim one you didn't see. Then look for a warranty page.",
+      "linkLine": "A roof warranty page that compares the coverage plainly: {demo-link}"
+    },
+    {
+      "angle": "Local offices against storm crews",
+      "line": "Out-of-town storm crews will be knocking on doors in {City} soon. A roofing company with real local offices and finished roofs on each street has a story those crews can't tell.",
+      "hook": "Use this when a storm is forecast or door-knocking crews have arrived. Note their nearest office address.",
+      "linkLine": "Your offices and local roofs, front and centre: {demo-link}"
+    },
+    {
+      "angle": "Inspection form asks too little",
+      "line": "Your roof inspection form asks for a name and number and nothing else. Asking roof age, storm date and whether a claim is open lets the right office send the right person.",
+      "hook": "Open their inspection form and list the fields it asks for. Quote them back if they reply.",
+      "linkLine": "A roof inspection request that asks the useful questions: {demo-link}"
+    },
+    {
+      "angle": "Exterior trades on one page",
+      "line": "You do roofing, siding, gutters and windows, but they share one services page. After a hailstorm each of those is a separate claim item and a separate search.",
+      "hook": "Check the services menu. If several exterior trades share a page, list the ones that need their own.",
+      "linkLine": "Roofing, siding, gutters and windows each with a page: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "That {specific recent job} you posted is the kind of roof that should be a project page, with the city, the material and why it was replaced. On a feed it's gone in a day.",
+      "hook": "Pick the newest large residential or commercial roof they posted and name it exactly, with the city if tagged.",
+      "linkLine": "That roof written up as a project page: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, I was looking at roofing companies across the region and {Business Name} stood out: several offices, a lot of storm work and plenty of reviews. The site, though, sends every storm ad to the homepage, has no city pages and routes all inspection requests through one form.\n\nI put together a sample built for a company your size: a storm and claim guide, a page per city tied to its office, and a commercial roofing section, with marked placeholders where your photos would go.\n\nWho runs the website on your side?",
+    "dm2": "{Owner}, following up in case my note got lost in storm season. Here's the sample roofing site for {Business Name}: {demo-link}\n\nWorth a look: a claim guide that stays honest about the deductible, city pages tied to each office, inspection requests routed to the nearest office, a commercial division and a careers page for reps and crews. Happy to send it to your marketing lead too.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for roofing companies across the region around {City}. I sent you a sample site this week, did it reach you?\"\n\nIF NO:\n\"No problem, it's been a busy stretch. Short version: I rebuilt the {Business Name} site as a sample with a storm and claim guide, a page per city tied to each office, and a commercial roofing section, with marked placeholders where your photos would go. Who should I email it to?\"\n\nIF YES:\n\"What stood out?\"\n → let them talk, don't fill the silence\n\"This doesn't replace your agency or your sales software. It's the page set your storm ads land on, connected to the system your reps already use, and you own it. The build runs {Build Range} depending on how many cities and offices get pages and whether the commercial division is included, then {Care Range} a month for hosting, changes and storm pages. For a company your size I'd quote about {Build Price}.\"\n\"Can we do twenty minutes with you and your marketing lead before the next storm season?\"\n\nCLOSE:\n\"I'll send a one-page scope. We start with the cities your ads already target, so the next storm sends people to pages that book.\"",
+    "objections": [
+      {
+        "objection": "We get plenty of leads door-knocking after storms.",
+        "handler": "\"Every homeowner your reps knock on looks you up before they sign. The site is where that conversation finishes, so city pages and a claim guide back up the rep at the door.\""
+      },
+      {
+        "objection": "Our marketing agency handles all of this.",
+        "handler": "\"Keep them on the ads. I build the roofing pages those ads land on, city by city, and hand them clean tracking. Most agencies are glad to point their storm spend at better pages.\""
+      },
+      {
+        "objection": "We can't talk about insurance claims online.",
+        "handler": "\"You can explain the process without promising anything. The guide never says a claim will be approved and never offers to cover a deductible, and you approve every word. Rules differ by place, so your team checks the final wording.\""
+      },
+      {
+        "objection": "Our sales software already captures leads.",
+        "handler": "\"Good, then I send every inspection request straight into it, tagged with city, office, roof age and storm date. Your reps get better leads in the system they already use.\""
+      },
+      {
+        "objection": "It's storm season, nobody has time.",
+        "handler": "\"Then we scope now and build after the rush, so it's ready before the next season. I need about two hours of your team's time, mostly approving city pages and the claim guide.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}, depending on cities, offices and the commercial section. For your company I'd quote about {Build Price}, which is in the range of the margin on a single roof replacement.\""
+      }
+    ],
+    "email": {
+      "subject": "City pages and claim guide for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for roofing companies across the region around {City}. {Business Name} clearly runs a lot of storm and replacement work from several offices, but the site sends storm ads to the homepage, has no page for most of the cities you cover and routes every inspection request through one form.\n\nI built a sample rather than ask for a meeting: a storm and claim guide, a page per city tied to the office that covers it, inspection requests routed to the nearest office, a commercial roofing section and a careers page for reps and crews, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIt connects to the sales system your reps already use. The build runs {Build Range}, plus {Care Range} a month for hosting, changes and storm pages.\n\nWorth twenty minutes with you and your marketing lead?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build websites for regional roofing companies around {City}, and I've put together a sample for {Business Name} with city pages and a storm claim guide. I'll email the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm clearing sample sites on Friday, including the {Business Name} roofing one.\n\nWant me to keep it up for your team, or let it go? One word back is fine.",
+    "nurture": "Hi {Owner}, storm season is a few weeks off, which is when roofing companies want their city pages and claim guide ready rather than rushed.\n\nThe sample is still here if the timing suits now: {demo-link}. I can add any offices or cities you've expanded into since."
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to the margin on one roof replacement and to their storm ad spend, never to an hourly rate.",
+      "Price city pages per city, starting with the cities their ads already target and where they have finished roofs.",
+      "Office routing and the sales system connection are their own lines; the number of offices sets the work.",
+      "Commercial roofing is a separate section with its own bid request, priced as its own line.",
+      "Claim content needs the owner's sign-off on every line, so allow review time in the scope.",
+      "Storm pages are priced per event and kept ready in the care plan, not rebuilt from scratch."
+    ],
+    "lineItems": [
+      {
+        "item": "City page with local roofs (each)",
+        "min": 300,
+        "max": 700,
+        "unit": "per-page",
+        "description": "Max when each city page has its own finished roofs, a local review, bracketed permit notes and routing to its office.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Storm damage and roof claim guide",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "description": "Max with separate hail and wind sections, roof types, adjuster meeting steps and supplement wording the owner approves.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Office routing for inspection requests",
+        "min": 2000,
+        "max": 6000,
+        "unit": "one-time",
+        "description": "Max with address-based routing across many offices, round-robin by rep and a fallback for areas between offices.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Commercial roofing section with bid upload",
+        "min": 2000,
+        "max": 6000,
+        "unit": "one-time",
+        "description": "Max with system pages for membranes and coatings, a maintenance programme page and drawings upload on the bid form.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Storm event landing page (each)",
+        "min": 500,
+        "max": 1200,
+        "unit": "per-page",
+        "description": "Max when it launches within a day of the storm with the affected cities, its own inspection form and ad tracking.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Project gallery filtered by city and roof type",
+        "min": 1500,
+        "max": 4500,
+        "unit": "one-time",
+        "description": "Max with many projects, filters for city, material and building type, and a consent record for each owner.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Roof replacement financing pre-check",
+        "min": 800,
+        "max": 2500,
+        "unit": "one-time",
+        "description": "Max when it shows monthly examples by roof size and passes the result to the rep before the appointment.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Careers section for reps and crews",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "description": "Max with roles per office, a subcontract crew onboarding form and applications routed to each hiring manager.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Connection to the sales pipeline system",
+        "min": 2500,
+        "max": 7000,
+        "unit": "one-time",
+        "description": "Max when every request lands with city, office, roof age, storm date and campaign source filled in.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Drone video and photo day across offices",
+      "min": 1500,
+      "max": 4000,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A day flying finished roofs across two or three offices gives each city page real aerial roofing shots and short clips, with each owner's permission recorded.\"",
+      "when": "Month 2, once city pages are live."
+    },
+    {
+      "name": "Review program by office and city",
+      "min": 299,
+      "max": 699,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"After each finished roof the homeowner gets a review request tagged with the office and city, and the good ones land on that city's roofing page.\"",
+      "when": "Day 30, once city pages are booking inspections."
+    },
+    {
+      "name": "Storm-response campaign retainer",
+      "min": 800,
+      "max": 2500,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Storm pages, ad copy and listing posts kept ready all season, so when hail or high wind hits a city you cover, the roofing campaign is live the same day.\"",
+      "when": "Before storm season, kept for its length."
+    },
+    {
+      "name": "Monthly city page expansion",
+      "min": 500,
+      "max": 1500,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Each month we add city pages where your crews are already roofing, with finished jobs and reviews from there, so coverage on the map keeps growing.\"",
+      "when": "Month 2, once the first city pages are booking."
+    },
+    {
+      "name": "Office listings management",
+      "min": 300,
+      "max": 800,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Each roofing office keeps its own listing current with hours, cities covered, storm notices and new roof posts, so the map sends homeowners to the nearest office.\"",
+      "when": "Day 30, alongside the city pages."
+    },
+    {
+      "name": "Sales rep recruiting campaign",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A recruiting campaign for roofing sales reps and crew leads in each office's area, landing on a careers page that explains territories and the role plainly.\"",
+      "when": "Before storm season, or when they open a new office."
+    },
+    {
+      "name": "Facility manager roof maintenance campaign",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"An email sequence and one-page offer inviting facility managers to put their flat roofs on a maintenance programme before the next storm season.\"",
+      "when": "Once the commercial roofing section is live."
+    },
+    {
+      "name": "Job-site signs and branded leave-behinds",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Yard signs, dumpster banners and a leave-behind card for the neighbours, each pointing to that city's roofing page, so every tear-off advertises the local office.\"",
+      "when": "Right after launch, or when they rebrand."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Solar installer that needs roofs replaced first",
+        "whoPays": "The solar installer, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"Solar installers turn away homes whose roof is too old for panels. The one you partner with needs a site that explains roof-first, and sends those roofs to you.\"",
+        "whyItWorks": "Solar and roofing share the same buyer at the same moment, so the partnership is natural."
+      },
+      {
+        "route": "Siding and window partner after hail",
+        "whoPays": "The siding and window company",
+        "min": 3000,
+        "max": 8000,
+        "unit": "one-time",
+        "pitchLine": "\"Hail that totals a roof often dents siding and cracks windows. The partner who handles those needs a storm page as much as you do, and both sites refer each other.\"",
+        "whyItWorks": "Exterior storm claims usually include several trades, and the roofer controls the first conversation."
+      },
+      {
+        "route": "Dumpster and roll-off hauler",
+        "whoPays": "The roll-off dumpster company",
+        "min": 2500,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"The hauler that drops a dumpster at every roof tear-off needs a site with online booking for contractors and homeowners. Your volume makes the introduction easy.\"",
+        "whyItWorks": "Haulers serve every roofing and remodel crew in the region and often book by phone only."
+      },
+      {
+        "route": "Commercial property management firms",
+        "whoPays": "The commercial property management company",
+        "min": 4000,
+        "max": 10000,
+        "unit": "one-time",
+        "pitchLine": "\"The managers whose flat roofs you maintain need a tenant and vendor portal. I build it, and roof leak reports route to your commercial roofing desk.\"",
+        "whyItWorks": "Managers juggle many vendors and already trust the roofer that keeps their buildings dry."
+      },
+      {
+        "route": "Skylight and attic ventilation specialist",
+        "whoPays": "The skylight and ventilation contractor, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The specialist you call for skylights and attic ventilation on a reroof needs a proper site. Your roof replacement page can link to them and theirs back to you.\"",
+        "whyItWorks": "Small specialists live on roofer referrals and rarely have anyone building for them."
+      },
+      {
+        "route": "HOA management companies with roof standards",
+        "whoPays": "The community management company",
+        "min": 4000,
+        "max": 10000,
+        "unit": "one-time",
+        "pitchLine": "\"HOAs set approved roof colours and materials, and their managers field endless requests. A resident portal for approvals helps them, and points owners to approved roofers.\"",
+        "whyItWorks": "After a storm, whole communities reroof at once, and the manager decides which roofers residents hear about."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Community reroof planner for HOA managers",
+        "whoPays": "The community management company, monthly",
+        "min": 200,
+        "max": 600,
+        "unit": "monthly",
+        "pitchLine": "\"After a storm, the HOA manager sees which homes have filed roof claims, which colours are approved and which owners still need an approval letter drafted.\"",
+        "whyItWorks": "Community-wide reroofs are chaotic for managers, and the roofer behind the tool gets introduced to every owner."
+      },
+      {
+        "route": "Permit lookup assistant for the solar installer",
+        "whoPays": "The solar installer",
+        "min": 2000,
+        "max": 5000,
+        "unit": "one-time",
+        "pitchLine": "\"The solar partner types an address and gets the likely roof age from permit records and a note on whether the roof needs replacing before panels go on.\"",
+        "whyItWorks": "Solar teams waste site visits on roofs too old for panels, and every flagged roof is a lead for the roofing client."
+      },
+      {
+        "route": "Booking assistant for the dumpster hauler",
+        "whoPays": "The roll-off dumpster company, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Contractors text the hauler an address and a tear-off date and get a dumpster size and delivery window back, without a phone call.\"",
+        "whyItWorks": "Haulers lose bookings to slow callbacks, and roofing crews want answers in a text."
+      },
+      {
+        "route": "Roof condition summaries for property managers",
+        "whoPays": "The commercial property management company, monthly",
+        "min": 200,
+        "max": 600,
+        "unit": "monthly",
+        "pitchLine": "\"Inspection notes on every flat roof become a one-page summary per building with repairs ranked by urgency, ready for the manager's budget meeting.\"",
+        "whyItWorks": "Managers need roof budgets they can defend, and the roofer whose reports they use gets the repairs."
+      },
+      {
+        "route": "Claim paperwork organiser for insurance agencies",
+        "whoPays": "The independent insurance agency, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"After a hailstorm, agencies get flooded with roof claim questions. An assistant sorts policyholder messages and drafts replies from the agency's own guidance.\"",
+        "whyItWorks": "Agencies get swamped after every storm, and the roofing client's introduction makes the first demo easy."
+      },
+      {
+        "route": "Estimate drafts for the siding and window partner",
+        "whoPays": "The siding and window company",
+        "min": 2000,
+        "max": 5000,
+        "unit": "one-time",
+        "pitchLine": "\"The exterior partner walks a hail-damaged house, talks through the dents and cracked panes, and gets a draft estimate on their template, matched to the roof claim.\"",
+        "whyItWorks": "You've built storm tools for the roofer already, so this is configuration, and both companies share the claim."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Storm lead text-back by office",
+      "kind": "automation",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Every missed call or half-finished inspection request gets a text from the nearest roofing office asking the storm date and roof age, with a slot to book.\"",
+      "whenAndWhatItTakes": "Day 30. Needs their tracked numbers, office territories and approved wording."
+    },
+    {
+      "name": "Review replies by office and city",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Each review gets a reply drafted in the company voice naming the roof, the crew and the city, careful about claim details, for the office manager to approve.\"",
+      "whenAndWhatItTakes": "Month 2. Needs a set of past replies and an approver per office. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Lead-to-contract report by city and source",
+      "kind": "software",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"See which cities, campaigns and storm pages turn into signed roofing contracts, and what each signed roof cost to win, office by office.\"",
+      "whenAndWhatItTakes": "Month 3. Needs read access to their sales system, ad accounts and contract values."
+    },
+    {
+      "name": "Claim-ready inspection app for reps",
+      "kind": "software",
+      "oneTimeMin": 8000,
+      "oneTimeMax": 20000,
+      "monthlyMin": 300,
+      "monthlyMax": 800,
+      "pitchLine": "\"Reps walk the roof with a phone, mark hail hits and wind damage slope by slope, and leave with a clean report the homeowner can hand to the adjuster.\"",
+      "whenAndWhatItTakes": "Month 4, before storm season. Needs their inspection checklist and report format."
+    },
+    {
+      "name": "Storm-week call and chat agent",
+      "kind": "ai",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 15000,
+      "monthlyMin": 800,
+      "monthlyMax": 2000,
+      "pitchLine": "\"When a storm floods the phones, it answers calls and site chat, asks about roof leaks and damage, books inspections with the nearest office and flags active leaks for a tarp crew.\"",
+      "whenAndWhatItTakes": "Month 3. Needs office territories, inspection slots and approved claim wording. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Storm event map with past customer overlay",
+      "kind": "software",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 12000,
+      "monthlyMin": 200,
+      "monthlyMax": 600,
+      "pitchLine": "\"After hail or high wind, see the storm's path over past roofing customers and open leads, so each office plans canvassing and check-in calls street by street.\"",
+      "whenAndWhatItTakes": "Month 4. Needs a weather data feed and their customer addresses."
+    },
+    {
+      "name": "Post-inspection follow-up sequence",
+      "kind": "automation",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"After a roof inspection, the homeowner gets the claim steps, a reminder before the adjuster visit and a nudge if they go quiet, all from their local office.\"",
+      "whenAndWhatItTakes": "Month 3. Needs inspection data from their sales system and approved messages."
+    },
+    {
+      "name": "Inspection photo sorter and damage notes",
+      "kind": "ai",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 12000,
+      "monthlyMin": 300,
+      "monthlyMax": 800,
+      "pitchLine": "\"Reps take dozens of roof photos per inspection; it sorts them by slope and damage type and drafts notes, so the claim packet is built in minutes.\"",
+      "whenAndWhatItTakes": "Month 5. Needs a sample of past inspection photo sets. Comes with the AI maintenance retainer; the rep confirms every note."
+    },
+    {
+      "name": "Homeowner project tracker with claim stages",
+      "kind": "software",
+      "oneTimeMin": 10000,
+      "oneTimeMax": 25000,
+      "monthlyMin": 400,
+      "monthlyMax": 1000,
+      "pitchLine": "\"Homeowners log in to see where their roof stands: inspection, adjuster meeting, approval, colour chosen, materials ordered, install date and final walk.\"",
+      "whenAndWhatItTakes": "Month 5. Needs read access to their sales and production systems and their list of stages."
+    },
+    {
+      "name": "Coaching from recorded sales appointments",
+      "kind": "ai",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 12000,
+      "monthlyMin": 500,
+      "monthlyMax": 1500,
+      "pitchLine": "\"Recorded kitchen-table appointments are summarised against your roofing sales process, so managers see which reps skip the warranty or the claim explanation.\"",
+      "whenAndWhatItTakes": "Month 6. Needs recordings with homeowner consent and their sales process. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Production schedule across crews and offices",
+      "kind": "software",
+      "oneTimeMin": 10000,
+      "oneTimeMax": 25000,
+      "monthlyMin": 300,
+      "monthlyMax": 900,
+      "pitchLine": "\"Every signed roof on one board by office, crew and date, with material drops, dumpsters and weather holds, so production stops running on spreadsheets.\"",
+      "whenAndWhatItTakes": "Month 6. Needs their crews, offices and how they schedule installs today."
+    },
+    {
+      "name": "Commercial roof asset and maintenance portal",
+      "kind": "software",
+      "oneTimeMin": 10000,
+      "oneTimeMax": 30000,
+      "monthlyMin": 400,
+      "monthlyMax": 1200,
+      "pitchLine": "\"Facility managers see every flat roof they own, its age, system, inspection history, open leaks and maintenance visits, and raise a repair request in seconds.\"",
+      "whenAndWhatItTakes": "Month 8, once the commercial division has several accounts. Needs building lists and inspection records."
+    },
+    {
+      "name": "Commercial roofing bid writer",
+      "kind": "ai",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 15000,
+      "monthlyMin": 400,
+      "monthlyMax": 1000,
+      "pitchLine": "\"It reads the bid documents for a flat roof replacement and drafts the scope, exclusions and schedule on your template, for the estimator to price and check.\"",
+      "whenAndWhatItTakes": "Month 7. Needs past winning bids and their scope template. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Rep territory and commission tracker",
+      "kind": "software",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 15000,
+      "monthlyMin": 200,
+      "monthlyMax": 600,
+      "pitchLine": "\"Each roofing rep sees their territory, signed jobs, supplements pending and commission owed, so payday stops being an argument.\"",
+      "whenAndWhatItTakes": "Month 6. Needs their commission rules, territories and contract data."
+    },
+    {
+      "name": "Applicant screen for reps and crew leads",
+      "kind": "ai",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 200,
+      "monthlyMax": 500,
+      "pitchLine": "\"Applicants answer questions on roofing experience, travel for storms, ladders and heights, and sales history, and each office manager sees a ranked short list.\"",
+      "whenAndWhatItTakes": "With the careers section. Needs must-haves by role. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Material orders triggered from signed contracts",
+      "kind": "automation",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 200,
+      "monthlyMax": 500,
+      "pitchLine": "\"When a roof contract is signed and the colour chosen, the material order and delivery request go to the supplier automatically, with the office copied.\"",
+      "whenAndWhatItTakes": "Month 7. Needs their supplier's ordering method and contract data."
+    },
+    {
+      "name": "Warranty and roof questions assistant",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 300,
+      "monthlyMax": 800,
+      "pitchLine": "\"It answers questions about roof systems, warranty coverage and the claim process from your own pages at any hour, and books an inspection when it should.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their warranty terms and approved claim wording. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Subcontract crew onboarding and insurance tracker",
+      "kind": "software",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 12000,
+      "monthlyMin": 200,
+      "monthlyMax": 500,
+      "pitchLine": "\"Every subcontract roofing crew's insurance, licence, safety training and expiry dates in one place, with alerts before anything lapses.\"",
+      "whenAndWhatItTakes": "Month 7. Needs their crew list and the documents they collect."
+    },
+    {
+      "name": "Claim status reader for the office",
+      "kind": "ai",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 12000,
+      "monthlyMin": 400,
+      "monthlyMax": 1000,
+      "pitchLine": "\"It reads adjuster emails and claim letters and updates each roofing job's status, so the office sees which approvals, supplements and payments are stuck.\"",
+      "whenAndWhatItTakes": "Month 8. Needs access to the claims inbox and their job list. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Annual roof check reminders",
+      "kind": "automation",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"A year after each new roof, the homeowner gets a reminder offering a free roof check from their local office, which brings referrals and the next storm job.\"",
+      "whenAndWhatItTakes": "Month 9. Needs install dates and approved wording."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the claim-ready inspection app",
+      "whoPays": "Roofing companies, monthly per company",
+      "min": 199,
+      "max": 699,
+      "unit": "monthly",
+      "pitchLine": "\"I built an inspection app for one regional roofer. Every roofing company with storm reps needs claim-ready reports from a phone.\"",
+      "whyItWorks": "The first client paid to work out the workflow, and every storm roofer has the same report problem."
+    },
+    {
+      "route": "Group consolidating roofing companies",
+      "whoPays": "The holding group buying roofing companies",
+      "min": 30000,
+      "max": 90000,
+      "unit": "one-time",
+      "pitchLine": "\"Every roofing company you buy arrives with its own site and lead routing. One platform with city pages per brand and shared routing folds them in.\"",
+      "whyItWorks": "Consolidators repeat the same integration after every deal and pay for one that already works."
+    },
+    {
+      "route": "Roofing manufacturer's top-tier contractor programme",
+      "whoPays": "The roofing manufacturer's contractor programme",
+      "min": 20000,
+      "max": 80000,
+      "unit": "one-time",
+      "pitchLine": "\"Your top certified roofers need city pages, warranty pages and inspection booking. I've built that for one regional contractor and can roll it out.\"",
+      "whyItWorks": "Manufacturers fund their best contractors' marketing, and a working regional build is the proof."
+    },
+    {
+      "route": "Roofing distributor's contractor growth programme",
+      "whoPays": "The roofing distributor, annually",
+      "min": 10000,
+      "max": 40000,
+      "unit": "per-year",
+      "pitchLine": "\"Offer the roofing contractors on your books a storm page and city page kit. Busier roofers order more material from your yards.\"",
+      "whyItWorks": "Distributors spend on contractor loyalty and want their best customers growing."
+    },
+    {
+      "route": "Roofing association storm-response toolkit",
+      "whoPays": "The national or regional roofing association",
+      "min": 5000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer members an honest storm and claim page template. Associations fight storm-chasing reputations, and members want a way to stand apart.\"",
+      "whyItWorks": "Consumer trust after storms is already on association agendas, and a member benefit that addresses it gets used."
+    },
+    {
+      "route": "White-label storm pages for roofing agencies",
+      "whoPays": "The marketing agency, per roofing client",
+      "min": 2500,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency runs storm ads for roofers into thin pages. License my claim guide, city pages and office routing and launch each client in weeks.\"",
+      "whyItWorks": "Agencies hold many roofing accounts and want better landing pages without a dev team."
+    },
+    {
+      "route": "Roofing franchise territory pages",
+      "whoPays": "The franchise brand, per territory",
+      "min": 3000,
+      "max": 8000,
+      "unit": "one-time",
+      "pitchLine": "\"Every roofing franchisee needs city pages, a claim guide and requests routed to their own office. One template, rolled out territory by territory.\"",
+      "whyItWorks": "Franchise systems buy per territory, so one build becomes a stream of roll-outs."
+    },
+    {
+      "route": "Carrier's roof inspection vendor portal",
+      "whoPays": "The insurance carrier's claims operations team",
+      "min": 30000,
+      "max": 90000,
+      "unit": "one-time",
+      "pitchLine": "\"Roofers send you inspection reports in every format. A vendor portal with one report standard and photo set saves your desk adjusters hours after each storm.\"",
+      "whyItWorks": "Carriers spend heavily on storm claim handling and value consistent roof documentation."
+    },
+    {
+      "route": "Solar company's roof-ready partner network",
+      "whoPays": "The solar company",
+      "min": 10000,
+      "max": 30000,
+      "unit": "one-time",
+      "pitchLine": "\"Your sales team keeps finding roofs too old for panels. A partner portal that books a roof replacement with vetted roofers keeps the solar deal alive.\"",
+      "whyItWorks": "Solar companies lose deals to old roofs and will pay to keep them moving."
+    },
+    {
+      "route": "Commercial portfolio roof asset programme",
+      "whoPays": "The commercial real estate owner or REIT",
+      "min": 15000,
+      "max": 50000,
+      "unit": "one-time",
+      "pitchLine": "\"Across your buildings, roof ages and leak histories live in spreadsheets. One portal shows every roof, its condition and its budget, with the roofer's inspections attached.\"",
+      "whyItWorks": "Large owners plan capital spending on roofs years ahead and need data they can trust."
+    },
+    {
+      "route": "Regional roofer in another region",
+      "whoPays": "A roofing company in another region, at your normal rate",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I work with one regional roofing company per area. {City} is taken; the next region's leading roofer is open.\"",
+      "whyItWorks": "Roofing owners meet at trade shows and manufacturer events, and exclusivity speeds the decision."
+    },
+    {
+      "route": "Trade school roofing and sales training portal",
+      "whoPays": "The trade school or roofing training centre",
+      "min": 5000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Roofing students and sales trainees need one portal for courses, safety certificates and placement with roofing companies. The client already hires from you.\"",
+      "whyItWorks": "Training centres are measured on placements, and the roofing client is the warm introduction."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Roofing city pages, claim guide and routing plus care",
+      "min": 12000,
+      "max": 30000,
+      "unit": "one-time",
+      "trigger": "The GM and owner approve the one-page scope.",
+      "line": "\"The roofing site, city pages, claim guide, routing and care go on one contract, so a new office or storm page is an email to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Review program by office and city",
+      "min": 299,
+      "max": 699,
+      "unit": "monthly",
+      "trigger": "City pages start booking inspections and the first roofs from them are finished.",
+      "line": "\"City pages are booking roof inspections. Let's put a review from each finished roof on the page for its city.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "Storm lead text-back by office",
+      "min": 500,
+      "max": 1500,
+      "unit": "one-time",
+      "trigger": "Call tracking shows missed calls during a storm week.",
+      "line": "\"Storm week left missed calls on every office line. A text from the nearest roofing office brings most of them back.\""
+    },
+    {
+      "rung": 4,
+      "day": 75,
+      "offer": "Monthly city page expansion",
+      "min": 500,
+      "max": 1500,
+      "unit": "monthly",
+      "trigger": "Inspection requests arrive from cities that don't have a page yet.",
+      "line": "\"Requests are coming from cities without a page. Let's add those each month with the roofs you've finished there.\""
+    },
+    {
+      "rung": 5,
+      "day": 120,
+      "offer": "Claim-ready inspection app for reps",
+      "min": 8000,
+      "max": 20000,
+      "unit": "one-time",
+      "trigger": "They mention adjusters pushing back on inspection reports or reps using different formats.",
+      "line": "\"Your reps hand in roof reports in every format. One app gives every homeowner a claim-ready report from the roof itself.\""
+    },
+    {
+      "rung": 6,
+      "day": 180,
+      "offer": "Lead-to-contract report by city and source",
+      "min": 4000,
+      "max": 10000,
+      "unit": "one-time",
+      "trigger": "Leadership asks which storm campaigns or cities paid back.",
+      "line": "\"You're asking which storm campaigns sign roofs. This shows contracts and cost per signed roof for every city and source.\""
+    },
+    {
+      "rung": 7,
+      "day": 270,
+      "offer": "Commercial roof asset and maintenance portal",
+      "min": 10000,
+      "max": 30000,
+      "unit": "one-time",
+      "trigger": "The commercial division signs several maintenance programme accounts.",
+      "line": "\"Your commercial roofing accounts are growing. A portal showing every flat roof, leak and visit keeps those programmes renewing.\""
+    },
+    {
+      "rung": 8,
+      "day": 365,
+      "offer": "Production schedule across crews and offices",
+      "min": 10000,
+      "max": 25000,
+      "unit": "one-time",
+      "trigger": "They open another office or add crews faster than the spreadsheet can track.",
+      "line": "\"With another office and more crews, roofing production has outgrown the spreadsheet. Let's put every signed roof on one board.\""
+    }
+  ]
+}

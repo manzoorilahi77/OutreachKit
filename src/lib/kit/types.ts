@@ -1,5 +1,8 @@
-import type { Archetype, FamKey, StateCode } from "@/data";
+import type { Archetype, ArchKey, FamKey } from "@/data";
 import type { Inline } from "@/content/types";
+import type { Fit, GroupKey, Size } from "./extBoard";
+import type { Country, RegionCode } from "@/lib/market/regions";
+import type { SiteLang } from "@/lib/market/notes";
 
 export type Device = "desktop" | "mobile";
 
@@ -8,12 +11,15 @@ export interface KitInput {
   /** Category name exactly as it appears on the board. */
   cat: string;
   device: Device;
-  st: StateCode;
+  /** A US state, a Canadian province or a UAE emirate. The country follows from the code. */
+  st: RegionCode;
   /** A listed city, or any free-typed city. */
   city: string;
   you?: string;
   brand?: string;
   domain?: string;
+  /** UAE only: the prospect site's language, read by the market layer (src/lib/market). */
+  lang?: SiteLang;
 }
 
 export interface Category {
@@ -31,6 +37,21 @@ export interface Category {
   q: string[];
   t: string[];
   lic: boolean;
+  // ---- the catalogue layer (src/lib/kit/extBoard.ts). The port's 124 rows leave these unset except size and group. ----
+  /** Small business or mid-size. */
+  size: Size;
+  /** The family the Board and the console list it under. Equal to f except for healthcare. */
+  group: GroupKey;
+  /** True for categories beyond the port's board. */
+  ext?: boolean;
+  /** Site archetype override for a new category (the port's own overrides stay in ARCHOVER). */
+  arch?: ArchKey;
+  /** Care plan [min, max, recommended] override for a new category. */
+  care?: [number, number, number];
+  /** Where it sells. */
+  fit: Record<Country, Fit>;
+  /** For a mid-size version: the small category it grows out of. */
+  smallOf?: string;
 }
 
 export interface PriceModel {

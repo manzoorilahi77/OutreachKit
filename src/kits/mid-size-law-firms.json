@@ -1,0 +1,874 @@
+{
+  "schemaVersion": 1,
+  "category": "Mid-size law firms",
+  "slug": "mid-size-law-firms",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · expansion batch (healthcare + mid-size)",
+    "generatedAt": "2026-10-13",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Written for the managing partner, COO or marketing manager of a multi-practice firm. Leaned on practice groups, lawyer profiles, intake routing, insights and recruiting; no outcome claims or skill labels, admissions as bracketed placeholders. Unsure on the precedent search and extranet ranges."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Practice groups and industry teams",
+      "contains": "A page per practice group and per industry team, with the partners who lead it, the kind of matters it handles described in general terms, related insights and a route to that team's intake",
+      "why": "General counsel and business owners look for a team that knows their industry, not a list of legal disciplines. Group pages also give referrers a precise place to send someone."
+    },
+    {
+      "section": "Lawyer finder with filters",
+      "contains": "Every lawyer profile searchable by practice group, office, language and role, with [admissions and year of call as supplied by the firm], publications, speaking and a downloadable contact card",
+      "why": "Referring lawyers and clients usually arrive with a name or a need. A finder that filters by practice and language gets them to the right partner in seconds."
+    },
+    {
+      "section": "Insights and legal updates hub",
+      "contains": "Client alerts, articles and webinar recordings by practice group, an author on each, a plain note that they are general information, and subscription by topic",
+      "why": "In-house counsel judge a firm by what it publishes. A tidy insights hub shows depth in each practice and keeps the firm in their inbox."
+    },
+    {
+      "section": "Careers for students, associates and laterals",
+      "contains": "Training programme and practice rotations, associate development, life at each office, open roles, and a confidential enquiry for lateral partners and teams",
+      "why": "Mid-size firms compete with larger ones for talent. A careers section that shows training and a path to partner wins applicants the brochure never reached."
+    },
+    {
+      "section": "Offices and jurisdictions",
+      "contains": "Each office with its team, languages spoken, the courts and jurisdictions the firm's lawyers practise in as the firm states them, directions and meeting rooms",
+      "why": "Clients with matters in several places want to know which office and which lawyers cover their jurisdiction before they make the first call."
+    },
+    {
+      "section": "For referring counsel",
+      "contains": "How other law firms, foreign counsel and accountants refer work: a conflict-check-first referral form, named contacts by practice group, languages and fee arrangements for referred matters",
+      "why": "Referrals from other lawyers are a mid-size firm's best work. Making the referral easy, and conflict-safe, keeps the referrer coming back."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C10",
+      "siteType": "local-conversion",
+      "name": "Matter Intake",
+      "heroLayout": "split-photo",
+      "mood": [
+        "precise",
+        "efficient",
+        "calm"
+      ],
+      "bestFor": "Firms in one city with a few practice groups, where the job is routing new matters to the right team and getting the lawyer profiles right",
+      "pairsWithTier": "starter",
+      "headlineSample": "Business and employment lawyers in {City}",
+      "whyItFits": "Steel Invoice and a neutral grotesque feel modern and exact. The split hero pairs the firm's promise with an intake that asks for the practice area first."
+    },
+    {
+      "id": "b",
+      "themeId": "C2",
+      "siteType": "b2b-capability",
+      "name": "Practice Groups",
+      "heroLayout": "card-stack",
+      "mood": [
+        "established",
+        "discreet",
+        "warm"
+      ],
+      "bestFor": "Multi-practice firms with several offices selling to businesses, in-house counsel and referring lawyers",
+      "pairsWithTier": "standard",
+      "headlineSample": "A full-service law firm for {City} businesses",
+      "whyItFits": "The family's Private Vault combo. Cream and an old-style serif feel like a firm with history, and the card stack routes visitors by practice group and industry."
+    },
+    {
+      "id": "c",
+      "themeId": "C44",
+      "siteType": "editorial-trust",
+      "name": "The Firm Review",
+      "heroLayout": "type-led",
+      "mood": [
+        "learned",
+        "current",
+        "authoritative"
+      ],
+      "bestFor": "Firms that win work through published insight, webinars and recruiting, with partners who write",
+      "pairsWithTier": "premium",
+      "headlineSample": "Legal insight for {City} business, from our partners",
+      "whyItFits": "Vermilion Press is built for longform: an editorial serif and a sharp accent make client alerts and articles the face of the firm."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "Lawyer list with no filter",
+      "line": "Your site lists every lawyer alphabetically with no way to filter by practice group or office. A referring lawyer looking for your employment partner has to scroll and guess.",
+      "hook": "Open the people page and try to find one practice group's lawyers. Note how long it takes.",
+      "linkLine": "A lawyer finder by practice, office and language: {demo-link}"
+    },
+    {
+      "angle": "One inbox for every enquiry",
+      "line": "The contact form on your law firm's site doesn't ask what the matter is about, so a litigation enquiry and an employment question land in the same inbox and wait for someone to sort them.",
+      "hook": "Look at the contact form fields. Note if there's no practice area or conflict question.",
+      "linkLine": "Intake that routes each new matter to the right practice group: {demo-link}"
+    },
+    {
+      "angle": "Profiles slow on a phone",
+      "line": "I opened one of your partners' profiles on my phone and it took a long time to load, then the contact details sat at the very bottom. Referrers check a lawyer between meetings, on a phone.",
+      "hook": "Load two lawyer profiles on mobile data. Note load time and where the phone and email appear.",
+      "linkLine": "Lawyer profiles that load fast on a phone: {demo-link}"
+    },
+    {
+      "angle": "Insights gone quiet",
+      "line": "Your partners post sharp legal updates on their own profiles, but the insights page on the firm's site hasn't had a new article in a long while. In-house counsel judge the firm by that page.",
+      "hook": "Check the newest article date on the site and compare with partners' recent posts. Note one recent topic.",
+      "linkLine": "An insights hub that collects your lawyers' updates: {demo-link}"
+    },
+    {
+      "angle": "Hiring associates",
+      "line": "Saw your firm is hiring associates in two practice groups. The careers page is a single paragraph, and good law graduates compare training programmes before they apply.",
+      "hook": "Look for recent job posts or graduate recruitment notices. Note the practice groups hiring.",
+      "linkLine": "A careers section for students, associates and laterals: {demo-link}"
+    },
+    {
+      "angle": "New partner not on the site",
+      "line": "Saw the announcement that a new partner joined your firm's litigation team. Their profile isn't on the site yet, and clients following them over will look there first.",
+      "hook": "Only if the firm announced a lateral hire publicly. Check the people page for that lawyer.",
+      "linkLine": "A lawyer profile ready the day a partner joins: {demo-link}"
+    },
+    {
+      "angle": "Several offices, one contact page",
+      "line": "Your firm has offices in more than one city, but the site has a single contact page with one address. A client in your second office's city can't see who sits there.",
+      "hook": "Check listings for each office address. Note which offices have no page of their own.",
+      "linkLine": "A page for each office of the law firm: {demo-link}"
+    },
+    {
+      "angle": "Industry teams hidden",
+      "line": "Your lawyers clearly act for construction and healthcare businesses, judging by their profiles, but the site is organised only by legal discipline. General counsel search by their own industry.",
+      "hook": "Read three or four partner profiles. Note any industry that comes up more than once.",
+      "linkLine": "Industry team pages for your law firm: {demo-link}"
+    },
+    {
+      "angle": "Languages without pages",
+      "line": "Your lawyer profiles mention Arabic, French and Spanish, but the firm's site is only in English. Clients and foreign counsel choose a firm that explains itself in their language.",
+      "hook": "Note the languages listed on profiles. Adjust the line to the languages you actually see.",
+      "linkLine": "Key law firm pages in the languages your lawyers speak: {demo-link}"
+    },
+    {
+      "angle": "Seminars booked by email",
+      "line": "Your employment team runs breakfast seminars for HR managers, but registration is an email address in a post. A sign-up page with reminders fills the room and tells you who came.",
+      "hook": "Find seminar or webinar posts. Note the topic and how people register.",
+      "linkLine": "Seminar registration and follow-up for the law firm: {demo-link}"
+    },
+    {
+      "angle": "No client login",
+      "line": "There's no client login anywhere on your law firm's site. Corporate clients sending contracts and board papers by email notice when other firms give them a secure place instead.",
+      "hook": "Check the header and footer for any client portal or extranet link.",
+      "linkLine": "A secure client extranet for the firm: {demo-link}"
+    },
+    {
+      "angle": "Referring lawyers have no route",
+      "line": "Nothing on your site speaks to the lawyers and accountants who refer work to the firm. A referral page with a conflict check and named contacts makes their next referral easy.",
+      "hook": "Look for any referral, foreign counsel or partner firm page. If none, the angle holds.",
+      "linkLine": "A page for referring counsel, with a conflict check: {demo-link}"
+    },
+    {
+      "angle": "Outdated design",
+      "line": "Your firm's site still looks the way it did several partners ago, and the practice list doesn't match the work your lawyers post about. Referrers notice when a firm's site lags its reputation.",
+      "hook": "Check the footer date, the photos and whether practice groups on the site match recent posts.",
+      "linkLine": "Your law firm's site, rebuilt for the firm it is now: {demo-link}"
+    },
+    {
+      "angle": "New rules clients search",
+      "line": "When new employment or data rules take effect, business owners search for a plain explanation. A short update from your team, on your site, catches them before they call another firm.",
+      "hook": "Use this when a rule change in their practice area is in the news. Name the topic only, never a promise.",
+      "linkLine": "A client alert page ready for the next rule change: {demo-link}"
+    },
+    {
+      "angle": "A specific recent post",
+      "line": "That {specific recent job} your team posted explained a legal change in plain language. It belongs in the firm's insights hub, where general counsel and referrers can find it again.",
+      "hook": "Pick their newest article, talk or community post and name it exactly. Never reference a client matter.",
+      "linkLine": "That update, kept in your law firm's insights hub: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, that {specific recent job} your team posted was a clear piece of legal writing.\n\nI was looking at law firms in {City} and noticed {Business Name}'s site lists lawyers without a way to filter by practice, and every enquiry goes to one inbox. I sketched a sample site with practice group pages, a lawyer finder and intake that routes to the right team, with marked placeholders where your photos would go.\n\nWould it help to see it before your next partners' meeting?",
+    "dm2": "{Owner}, following up in case my note got buried. Here's the sample site for {Business Name}: {demo-link}\n\nIt has practice group and industry pages, a lawyer finder by practice, office and language, intake with a conflict question that routes to the right team, an insights hub and a careers section. Every page waits for the firm's approval. If it's not for you, just say so.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for law firms here in {City}. I sent a sample site for {Business Name} a few days ago, did it reach you?\"\n\nIF NO:\n\"No problem. Short version: practice group pages, a lawyer finder, intake that routes to the right team with a conflict question first, and an insights hub, with marked placeholders where your photos would go. Can I email it to you and your marketing lead?\"\n\nIF YES:\n\"What did you think?\"\n → let them talk, don't fill the silence\n\"Firms your size usually outgrow a site built for a smaller partnership. This one is built around practice groups and referrers. Every page follows the advertising rules where you practise, as your compliance partner instructs. The build runs {Build Range} depending on groups, offices and languages, then {Care Range} a month for hosting, profiles and insights. For your firm I'd quote about {Build Price}.\"\n\"Could I walk you and the marketing partner through it for twenty minutes this week?\"\n\nCLOSE:\n\"I'll send a scope listing the practice groups, offices and integrations, and a deposit invoice. The firm approves every page before launch.\"",
+    "objections": [
+      {
+        "objection": "Our work comes from referrals and relationships.",
+        "handler": "\"It should. Every referred client and every referring lawyer still opens the partner's profile before the first call. The site confirms the referral, so it has to be as good as the firm.\""
+      },
+      {
+        "objection": "Partners won't agree on anything to do with the website.",
+        "handler": "\"That's common. I work through one marketing contact and one approving partner, and each practice group signs off its own pages. Nobody has to agree on everything at once.\""
+      },
+      {
+        "objection": "Advertising rules make this risky.",
+        "handler": "\"Careless sites are risky. There are no outcome claims or skill labels, notices follow the rules where you practise, and your compliance partner approves every page before it publishes.\""
+      },
+      {
+        "objection": "We already pay a legal marketing agency.",
+        "handler": "\"Happy to work alongside them. They run campaigns and rankings submissions; I build the practice pages, finder and intake their work sends people to.\""
+      },
+      {
+        "objection": "Our lawyers don't have time to write profiles or articles.",
+        "handler": "\"They won't write from scratch. I draft each profile from a short call and their CV, and each update from their notes. A lawyer edits for accuracy, which takes minutes.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}, and for your firm about {Build Price}, covering practice group pages, the lawyer finder, routed intake, insights and careers. Monthly care is {Care Range}.\""
+      }
+    ],
+    "email": {
+      "subject": "Practice group pages for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for law firms around {City}. {Business Name} has a strong bench, but the site lists lawyers without a way to filter by practice or office, and every new enquiry lands in one inbox.\n\nI built a sample first rather than ask for your time: practice group and industry pages, a lawyer finder by practice, office and language, intake with a conflict question that routes to the right team, an insights hub and a careers section for students and laterals, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf you'd like it, I move it to your domain and finish it for {Build Range}, plus {Care Range} a month for hosting, new profiles and insights. The firm approves every page before launch. If not, no problem, it comes down at the end of the month.\n\nWorth twenty minutes with you and your marketing lead this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"{Owner}, it's {Your Name}. I build websites for law firms in {City}, and I made a sample for {Business Name} with practice group pages, a lawyer finder and routed intake. I'll email the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm taking the {Business Name} law firm sample down on Friday to free up the space.\n\nShould I keep it up for the partners to see? One word is fine either way.",
+    "nurture": "Hi {Owner}, the firm's planning season is usually when partners look at recruiting and business development for the year ahead. {Business Name} came to mind.\n\nThe sample with practice group pages and a careers section is still here, same price as before. {demo-link} if you'd like another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Price by practice group, office and language; each is a fixed add-on the managing partner can budget for.",
+      "Quote lawyer profiles in batches, with a drafting call per batch, never one by one.",
+      "Build a compliance review round into every quote; a named partner approves notices, profiles and insights.",
+      "Never write outcomes, rankings language or 'specialist' and 'expert' labels unless the firm confirms the rules allow it.",
+      "Portals and integrations with their practice management or document system are quoted after a look at that system.",
+      "Peg the build against one mid-size matter's fees, never against an hourly rate."
+    ],
+    "lineItems": [
+      {
+        "item": "Practice group or industry team page (each)",
+        "min": 600,
+        "max": 1500,
+        "unit": "per-page",
+        "description": "Max with team leads, general descriptions of typical matters, related insights and routing to that group's intake.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Lawyer profiles (batch of ten)",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "description": "Max with drafting calls, admissions supplied by each lawyer, publications, languages and contact cards.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Office page (each)",
+        "min": 500,
+        "max": 1200,
+        "unit": "per-page",
+        "description": "Max with the local team, languages, jurisdictions as the firm states them, meeting rooms and directions.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Intake routing with conflict question",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "description": "Max with routing by practice group and office, opposing-party fields, a no-confidential-details notice and referrer tracking.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Insights hub setup and migration",
+        "min": 1500,
+        "max": 5000,
+        "unit": "one-time",
+        "description": "Max when older articles are migrated, tagged by practice and author, and subscription by topic is added.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Careers section for students and laterals",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "description": "Max with training programme pages, associate stories, office life and a confidential lateral enquiry.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Additional language version",
+        "min": 2000,
+        "max": 6000,
+        "unit": "one-time",
+        "description": "Max when practice pages, notices and intake are translated and checked by a fluent lawyer at the firm.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Lawyer portrait days by office",
+      "min": 1200,
+      "max": 3500,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A day in each office photographing every lawyer in the same style and light, so the lawyer finder looks like one firm instead of a collection of old headshots.\"",
+      "when": "Month 1, office by office, and once a year for new joiners."
+    },
+    {
+      "name": "Client alert editing and publishing",
+      "min": 800,
+      "max": 2500,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Partners send rough notes; we turn them into clean client alerts, publish them in the right practice group and send them to subscribers, with a lawyer approving each one.\"",
+      "when": "Month 2, once the insights hub is live."
+    },
+    {
+      "name": "Partner profile refresh on professional networks",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Each partner's professional network profile rewritten to match the law firm site, with no skill labels the rules would object to, so referrers see one consistent story.\"",
+      "when": "Month 2, alongside the portrait days."
+    },
+    {
+      "name": "Seminar and webinar programme promotion",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"For each practice group's seminar or webinar: a registration page, invitations to the right client list, reminders and a recording page for those who missed it.\"",
+      "when": "Six weeks before each seminar."
+    },
+    {
+      "name": "Graduate recruitment campaign",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Before each graduate recruitment round, short associate videos, campus event pages and posts that show what training at the law firm looks like.\"",
+      "when": "Two months before the firm's graduate application window."
+    },
+    {
+      "name": "Practice group brochures matching the site",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Printed and digital capability statements for each practice group, drawn from the site's pages, for pitches, panels and client meetings.\"",
+      "when": "Month 3, once the practice group pages are approved."
+    },
+    {
+      "name": "Office Google profiles kept current",
+      "min": 200,
+      "max": 600,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Each office's Google profile kept accurate with hours, address, practice groups and a link to that office's page, so clients searching the firm's name find the right door.\"",
+      "when": "Day 30, once office pages are live."
+    },
+    {
+      "name": "Partner video explainers",
+      "min": 1500,
+      "max": 4000,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A half day filming partners answering the questions general counsel ask most, cut into short clips for each practice group page and the firm's social channels.\"",
+      "when": "Month 4, once the practice group pages have settled."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Expert witnesses and forensic consultants",
+        "whoPays": "The expert or consultancy",
+        "min": 3000,
+        "max": 8000,
+        "unit": "one-time",
+        "pitchLine": "\"The forensic accountants and engineers your litigation team instructs need sites that show their expertise to other law firms. Your introduction carries weight.\"",
+        "whyItWorks": "Experts win instructions through lawyers' recommendations and rarely have a good site."
+      },
+      {
+        "route": "Legal translation and interpreting agencies",
+        "whoPays": "The translation agency",
+        "min": 2500,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"The agency that translates your contracts and court documents sells to every law firm in the city. A reference from a firm they serve weekly opens the door.\"",
+        "whyItWorks": "Agencies depend on law firm accounts and want to look as careful as their clients."
+      },
+      {
+        "route": "Court reporting and transcription firms",
+        "whoPays": "The court reporting firm",
+        "min": 2500,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"The reporters at your depositions and hearings need online booking and secure transcript delivery pages. They'll take a call from a firm that books them often.\"",
+        "whyItWorks": "Reporting firms sell entirely to lawyers and value a firm's recommendation."
+      },
+      {
+        "route": "Mediators and arbitrators the firm uses",
+        "whoPays": "The mediation or arbitration practice",
+        "min": 2500,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"Independent mediators your lawyers choose need a calm site with availability and fees. A recommendation from counsel who books them is the best introduction.\"",
+        "whyItWorks": "Neutrals get appointed through lawyers and want to stay on their shortlists."
+      },
+      {
+        "route": "Litigation support and document review vendors",
+        "whoPays": "The litigation support company",
+        "min": 4000,
+        "max": 10000,
+        "unit": "one-time",
+        "pitchLine": "\"The document review and litigation support teams your firm hires need capability pages that speak to law firm buyers. You can make the introduction.\"",
+        "whyItWorks": "These vendors compete on trust and security, and a client firm's reference matters."
+      },
+      {
+        "route": "Business clients the firm forms or advises",
+        "whoPays": "Each client business, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"Companies your corporate team sets up need a website the same month. A line in the closing letter from the lawyer who formed them is all it takes.\"",
+        "whyItWorks": "New businesses buy everything at once and trust the lawyers who set them up."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Report formatting drafts for expert witnesses",
+        "whoPays": "The expert or consultancy, monthly",
+        "min": 200,
+        "max": 500,
+        "unit": "monthly",
+        "pitchLine": "\"Experts write reports in a structure courts expect. An assistant drafts the report skeleton and exhibit list from their notes for the expert to complete.\"",
+        "whyItWorks": "Report writing is slow, and the instructing law firm benefits from faster drafts."
+      },
+      {
+        "route": "Glossary-consistent translation drafts for agencies",
+        "whoPays": "The translation agency, monthly",
+        "min": 300,
+        "max": 800,
+        "unit": "monthly",
+        "pitchLine": "\"Translation agencies keep a glossary for each law firm client. An assistant drafts translations that follow it, for their linguists to check and certify.\"",
+        "whyItWorks": "Consistency across a firm's documents is what agencies sell, and drafts speed linguists up."
+      },
+      {
+        "route": "Transcript summary drafts for court reporters",
+        "whoPays": "The court reporting firm, monthly",
+        "min": 250,
+        "max": 600,
+        "unit": "monthly",
+        "pitchLine": "\"Court reporters can offer law firms a draft summary and topic index with each certified transcript, checked by their own staff.\"",
+        "whyItWorks": "It's a new line item the reporting firm sells to every firm it serves."
+      },
+      {
+        "route": "Scheduling and intake assistant for mediators",
+        "whoPays": "The mediation practice, monthly",
+        "min": 150,
+        "max": 400,
+        "unit": "monthly",
+        "pitchLine": "\"Before a mediation, each party's counsel gets dates, fees and a pre-session questionnaire from an assistant, and the mediator gets a neutral summary.\"",
+        "whyItWorks": "Mediators spend hours on logistics with law firms; this gives them back."
+      },
+      {
+        "route": "Document index drafts for litigation support firms",
+        "whoPays": "The litigation support company, monthly",
+        "min": 500,
+        "max": 1500,
+        "unit": "monthly",
+        "pitchLine": "\"Litigation support teams receive document dumps from law firms. An assistant drafts an index by date, author and topic for their reviewers to verify.\"",
+        "whyItWorks": "Faster indexing lets the vendor quote lower, and the law firm notices."
+      },
+      {
+        "route": "Policy handbook drafts for client HR consultancies",
+        "whoPays": "The HR consultancy, monthly",
+        "min": 200,
+        "max": 500,
+        "unit": "monthly",
+        "pitchLine": "\"The HR consultants your employment lawyers work with write handbooks for small employers. An assistant drafts each from their template for a lawyer at your firm to review.\"",
+        "whyItWorks": "It brings review work back to the employment team, and the consultancy ships faster."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Intake routing by practice group",
+      "kind": "automation",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"Each enquiry reaches the right practice group's intake contact with the matter type, office and other parties listed, and a confirmation goes to the person who wrote.\"",
+      "whenAndWhatItTakes": "Day 30. Needs practice group contacts and the firm's intake rules."
+    },
+    {
+      "name": "Client alert emails by subscriber topic",
+      "kind": "automation",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 99,
+      "monthlyMax": 299,
+      "pitchLine": "\"When a lawyer publishes an update, subscribers who chose that practice area get it by email, and the partner sees who opened it.\"",
+      "whenAndWhatItTakes": "Month 1, with the insights hub. Needs the topic list and existing subscriber consents."
+    },
+    {
+      "name": "Intake summary drafts for the practice group lead",
+      "kind": "ai",
+      "oneTimeMin": 2500,
+      "oneTimeMax": 6000,
+      "monthlyMin": 250,
+      "monthlyMax": 600,
+      "pitchLine": "\"Each new matter enquiry arrives with a one-page draft summary of the facts given, the other parties and open questions, for the group lead to read before any call.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the intake form and data-handling rules. Comes with the AI maintenance retainer; it never contacts the enquirer."
+    },
+    {
+      "name": "Conflicts request queue for new matters",
+      "kind": "software",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 9000,
+      "monthlyMin": 200,
+      "monthlyMax": 500,
+      "pitchLine": "\"Every new matter request lands with the parties listed in a queue the conflicts team works from, with status visible to the lawyer waiting to open the file.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the conflicts process and who clears requests at each office."
+    },
+    {
+      "name": "Seminar registration with reminders and follow-up",
+      "kind": "automation",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"Registrants for each law firm seminar get reminders and the recording afterwards, and the practice group gets a list of who attended to follow up.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the seminar calendar and follow-up wording."
+    },
+    {
+      "name": "Site assistant on how to instruct the firm",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 300,
+      "monthlyMax": 800,
+      "pitchLine": "\"It answers which practice group handles what, which office is nearest and how a first meeting works, from the firm's own pages, says it can't give legal advice and routes to intake.\"",
+      "whenAndWhatItTakes": "Month 3. Needs approved practice and process pages and partner sign-off on every answer. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Engagement letters by practice group with e-signature",
+      "kind": "automation",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 150,
+      "monthlyMax": 350,
+      "pitchLine": "\"When a matter is accepted, the right engagement letter for that practice group goes out for e-signature with the fee terms filled in and the file opens when it's signed.\"",
+      "whenAndWhatItTakes": "Month 3. Needs engagement templates per group and the signing tool they use."
+    },
+    {
+      "name": "Legal update drafts from a partner's notes",
+      "kind": "ai",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 200,
+      "monthlyMax": 500,
+      "pitchLine": "\"A partner dictates a few points on a new ruling or rule change and gets a draft client alert in the firm's style, ready to edit and approve.\"",
+      "whenAndWhatItTakes": "Month 3. Needs a few published alerts as style examples. Comes with the AI maintenance retainer; a lawyer approves every word."
+    },
+    {
+      "name": "Recruiting portal for students and laterals",
+      "kind": "software",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 12000,
+      "monthlyMin": 200,
+      "monthlyMax": 600,
+      "pitchLine": "\"Graduate applications, associate roles and confidential lateral enquiries in one place, with each application routed to the right practice group and recruiting partner.\"",
+      "whenAndWhatItTakes": "Month 4, before the next graduate round. Needs roles, application questions and reviewers."
+    },
+    {
+      "name": "Associate applicant screener",
+      "kind": "ai",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 200,
+      "monthlyMax": 500,
+      "pitchLine": "\"Applications are summarised against each practice group's criteria in a short draft for the recruiting partner, who decides who to interview.\"",
+      "whenAndWhatItTakes": "Month 4, with the recruiting portal. Needs criteria per role. Comes with the AI maintenance retainer; people make every decision."
+    },
+    {
+      "name": "Secure client extranet with matter documents",
+      "kind": "software",
+      "oneTimeMin": 8000,
+      "oneTimeMax": 25000,
+      "monthlyMin": 300,
+      "monthlyMax": 900,
+      "pitchLine": "\"Corporate clients log in to see their matters, upload documents and download the firm's work product, instead of sending board papers to a lawyer's inbox.\"",
+      "whenAndWhatItTakes": "Month 5. Needs the matter structure, security requirements and the document system they use."
+    },
+    {
+      "name": "Panel and tender response drafts",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 250,
+      "monthlyMax": 700,
+      "pitchLine": "\"When a company invites the firm to pitch for its legal panel, it drafts answers from the firm's approved capability text, team bios and past responses for the partner to finish.\"",
+      "whenAndWhatItTakes": "Month 5. Needs past tender responses and approved capability text. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Referral source and cross-selling tracker",
+      "kind": "software",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"See which law firms, accountants and clients send matters to each practice group, and which clients use only one group, so partners know where to introduce colleagues.\"",
+      "whenAndWhatItTakes": "Month 6. Needs a referral question on intake and an export of matters by client and group."
+    },
+    {
+      "name": "Lawyer bio and matter list drafts",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"From a lawyer's CV and the matters the firm may describe publicly, it drafts their profile and pitch bio in the firm's style, for the lawyer to correct.\"",
+      "whenAndWhatItTakes": "Month 6. Needs the firm's rules on describing matters. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Pitch and proposal library",
+      "kind": "software",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 9000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Every approved capability statement, team bio and fee proposal searchable by practice group and industry, so business development stops rewriting the same pitch.\"",
+      "whenAndWhatItTakes": "Month 7. Needs their past pitches and who maintains them."
+    },
+    {
+      "name": "Translation drafts of client alerts",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Each law firm update is drafted in the other languages the firm serves, for a fluent lawyer to check before it publishes.\"",
+      "whenAndWhatItTakes": "Month 7, only where a fluent lawyer reviews. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Time entry narrative drafts",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 300,
+      "monthlyMax": 800,
+      "pitchLine": "\"At the end of the day, each lawyer gets draft time entry narratives from their calendar and documents worked on, ready to correct before billing.\"",
+      "whenAndWhatItTakes": "Month 8. Needs calendar and document system access and the firm's narrative rules. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Alumni network portal",
+      "kind": "software",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"Former lawyers who are now in-house counsel stay connected through an alumni portal with news, events and job posts, which is often where the next instruction comes from.\"",
+      "whenAndWhatItTakes": "Month 9. Needs an alumni list and the events programme."
+    },
+    {
+      "name": "Precedent search across the firm's documents",
+      "kind": "ai",
+      "oneTimeMin": 10000,
+      "oneTimeMax": 35000,
+      "monthlyMin": 500,
+      "monthlyMax": 1500,
+      "pitchLine": "\"Lawyers ask in plain words for a clause or past memo and get the firm's own precedents back with sources, instead of emailing the whole practice group.\"",
+      "whenAndWhatItTakes": "Month 10. Needs document system access, permissions by group and a cleaned precedent set. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Business development dashboard by practice group",
+      "kind": "software",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 18000,
+      "monthlyMin": 300,
+      "monthlyMax": 900,
+      "pitchLine": "\"Enquiries, matters opened, referral sources and insight readership for each practice group on one screen, for the partners' meeting.\"",
+      "whenAndWhatItTakes": "Month 11. Needs six months of intake and matter data and agreement on each measure."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the practice-group law firm site",
+      "whoPays": "Other mid-size law firms, one-time plus monthly",
+      "min": 12000,
+      "max": 30000,
+      "unit": "one-time",
+      "pitchLine": "\"Practice group pages, a lawyer finder, routed intake and an insights hub are the same build for every firm with several practice groups. I set it up with their structure.\"",
+      "whyItWorks": "The intake routing, finder and insights structure are built once and reused."
+    },
+    {
+      "route": "Independent law firm networks and alliances",
+      "whoPays": "The network, per member firm",
+      "min": 6000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Networks of independent law firms want each member on a consistent, referral-ready site. One template, every member, with a shared referral page.\"",
+      "whyItWorks": "Networks sell cross-referral, and a common site standard makes it work."
+    },
+    {
+      "route": "Law society or bar practice management section",
+      "whoPays": "The section, as a member resource",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer member firms a compliant site structure with intake, notices and conflict-safe forms. Practice management sections need resources members actually use.\"",
+      "whyItWorks": "Sections run on member benefits, and website compliance is a constant member question."
+    },
+    {
+      "route": "Legal recruiters placing laterals",
+      "whoPays": "The legal recruitment firm",
+      "min": 4000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"Recruiters who place partners and associates need confidential candidate and firm pages. I know exactly what law firms look for from building their careers sections.\"",
+      "whyItWorks": "Recruiters compete on discretion and polish and pay for both."
+    },
+    {
+      "route": "White-label for legal marketing agencies",
+      "whoPays": "The agency, per law firm client",
+      "min": 5000,
+      "max": 12000,
+      "unit": "one-time",
+      "pitchLine": "\"Agencies that do rankings submissions and campaigns for law firms need a build partner for the site itself. I deliver under their name.\"",
+      "whyItWorks": "Agencies own the firm relationship and want reliable delivery."
+    },
+    {
+      "route": "Law firm mergers and rebrands",
+      "whoPays": "The merged firm",
+      "min": 15000,
+      "max": 40000,
+      "unit": "one-time",
+      "pitchLine": "\"When two firms merge, they need one site, one lawyer finder and one intake by a fixed date. The structure I built handles both firms' practice groups.\"",
+      "whyItWorks": "Mergers have deadlines and budgets, and the site is the first public proof of the combined firm."
+    },
+    {
+      "route": "Practice management consultants",
+      "whoPays": "The consultant, per firm engagement",
+      "min": 3000,
+      "max": 8000,
+      "unit": "one-time",
+      "pitchLine": "\"Consultants who restructure intake and business development at law firms can add the site and intake routing to their engagement. I deliver it.\"",
+      "whyItWorks": "Consultants want visible deliverables, and the site makes their process real."
+    },
+    {
+      "route": "In-house legal departments",
+      "whoPays": "The company's legal department",
+      "min": 8000,
+      "max": 25000,
+      "unit": "one-time",
+      "pitchLine": "\"In-house legal teams need an internal request portal so the business asks for legal help the right way. It's the intake I built for the firm, turned inward.\"",
+      "whyItWorks": "Legal departments have budget for request management, and alumni in-house open the door."
+    },
+    {
+      "route": "Lawyers' professional liability insurers",
+      "whoPays": "The insurer's risk management team",
+      "min": 8000,
+      "max": 25000,
+      "unit": "one-time",
+      "pitchLine": "\"Insurers want insured firms to run conflict-safe intake and clear notices. A template site built that way is a risk resource they can offer.\"",
+      "whyItWorks": "Insurers spend on risk management, and fewer intake mistakes mean fewer claims."
+    },
+    {
+      "route": "Law school career offices",
+      "whoPays": "The law school",
+      "min": 3000,
+      "max": 9000,
+      "unit": "one-time",
+      "pitchLine": "\"Law schools run employer pages and recruiting events for firms like yours. I build their employer directory and event booking from the recruiting side I know.\"",
+      "whyItWorks": "Career offices need firms to engage, and the tools repeat every recruiting season."
+    },
+    {
+      "route": "One firm per practice mix per city",
+      "whoPays": "A law firm in another city or with another practice mix",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I build for one mid-size law firm per practice mix in each city, so you never share a builder with a direct rival. Your place in {City} is open today.\"",
+      "whyItWorks": "Competing firms value not sharing a supplier who knows their intake."
+    },
+    {
+      "route": "Foreign firms opening a local office",
+      "whoPays": "The foreign law firm",
+      "min": 8000,
+      "max": 20000,
+      "unit": "one-time",
+      "pitchLine": "\"Foreign firms opening an office here need local pages, lawyer profiles and intake that follow local rules. Referral partners like you are how I meet them.\"",
+      "whyItWorks": "New offices have launch budgets and a fixed opening date."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Practice-group law firm site plus care plan, one contract",
+      "min": 15000,
+      "max": 40000,
+      "unit": "one-time",
+      "trigger": "The managing partner and compliance partner approve the scope.",
+      "line": "\"The law firm site and the care plan sit on one contract, so a new partner's profile or a client alert is a message to me, not a project.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Intake routing by practice group",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "trigger": "The first month of enquiries, and someone still forwards each one by hand.",
+      "line": "\"Your enquiries are coming in. Let each one reach the right practice group without anyone forwarding it.\""
+    },
+    {
+      "rung": 3,
+      "day": 45,
+      "offer": "Lawyer portrait days by office",
+      "min": 1200,
+      "max": 3500,
+      "unit": "per-shoot",
+      "trigger": "Lawyer profiles still show marked placeholders where photos go, or mixed old headshots.",
+      "line": "\"The lawyer finder is the most-used page. Let's make every profile look like the same firm.\""
+    },
+    {
+      "rung": 4,
+      "day": 60,
+      "offer": "Client alert editing and publishing",
+      "min": 800,
+      "max": 2500,
+      "unit": "monthly",
+      "trigger": "Partners post updates on their own profiles that never reach the insights hub.",
+      "line": "\"Your partners are already writing. Let's turn their notes into the firm's client alerts every month.\""
+    },
+    {
+      "rung": 5,
+      "day": 120,
+      "offer": "Recruiting portal for students and laterals",
+      "min": 4000,
+      "max": 12000,
+      "unit": "one-time",
+      "trigger": "The graduate round approaches or a lateral enquiry arrives through the careers page.",
+      "line": "\"Recruiting season is coming. Let every application reach the right partner in one place.\""
+    },
+    {
+      "rung": 6,
+      "day": 180,
+      "offer": "Secure client extranet with matter documents",
+      "min": 8000,
+      "max": 25000,
+      "unit": "one-time",
+      "trigger": "A major client asks for a secure way to share documents, or another firm offers one.",
+      "line": "\"Your biggest clients are emailing board papers. Give them a secure place the firm controls.\""
+    },
+    {
+      "rung": 7,
+      "day": 270,
+      "offer": "Precedent search across the firm's documents",
+      "min": 10000,
+      "max": 35000,
+      "unit": "one-time",
+      "trigger": "Associates keep emailing the whole practice group for the same clauses.",
+      "line": "\"Your lawyers keep asking colleagues for the same precedents. Let them search the firm's own work instead.\""
+    },
+    {
+      "rung": 8,
+      "day": 365,
+      "offer": "Business development dashboard by practice group",
+      "min": 6000,
+      "max": 18000,
+      "unit": "one-time",
+      "trigger": "The first anniversary, before the partners plan next year's business development.",
+      "line": "\"A year in, let's show each practice group where its matters come from before the partners set next year's plan.\""
+    }
+  ]
+}

@@ -24,6 +24,7 @@ export const SCHEMAS = {
   workspace: obj({
     name: str, studio: str, demoDomain: str, basedLine: str,
     features: obj({ leadFinder: bool, softwareTrack: bool }, ["leadFinder", "softwareTrack"]),
+    markets: obj({ rates: obj({ CAD: { type: "number", exclusiveMinimum: 0 }, AED: { type: "number", exclusiveMinimum: 0 } }, ["CAD", "AED"]) }, ["rates"]),
     outreachHealth: { type: "object" },
   }, ["name", "studio", "demoDomain", "basedLine", "features"]),
 
@@ -43,7 +44,7 @@ export const SCHEMAS = {
 
   kit: obj({
     id: str, owner: str, title: str, status: { enum: ["draft", "active", "paused", "archived"] }, category: str,
-    device: { enum: ["desktop", "mobile"] }, state: str, city: str, city_is_free: bool, direction: str, created_at: str, updated_at: str,
+    device: { enum: ["desktop", "mobile"] }, state: str, city: str, city_is_free: bool, direction: str, site_lang: { enum: ["en", "ar", "bi"] }, created_at: str, updated_at: str,
   }, ["id", "owner", "title", "status", "category", "device", "state", "city", "city_is_free", "direction", "created_at", "updated_at"]),
 
   lead: obj({

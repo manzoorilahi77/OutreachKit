@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/Button";
 import { Chip } from "@/components/ui/Chip";
 import { Field, Input, Select } from "@/components/ui/Field";
 import { AlertIcon, CheckIcon } from "@/components/ui/Icons";
-import { CATS } from "@/lib/kit/categories";
+import { ALL_CATS } from "@/lib/kit/categories";
 import { CHECK_LABELS, type CheckField } from "@/lib/leads/checks";
 import { scoreOf, verdictOf, VERDICT_LABEL } from "@/lib/leads/score";
 import { CHANNELS } from "@/lib/leads/stages";
@@ -49,11 +49,11 @@ export function LeadForm({ action, lead, kitId, defaults, submitLabel, restricte
           <Field id="owner_first_name" label="Owner first name"><Input id="owner_first_name" name="owner_first_name" defaultValue={v("owner_first_name")} autoComplete="off" /></Field>
           <Field id="category" label="Category">
             <Input id="category" name="category" list="categories" defaultValue={v("category", defaults?.category ?? "")} autoComplete="off" />
-            <datalist id="categories">{CATS.map((c) => <option key={c.i} value={c.n} />)}</datalist>
+            <datalist id="categories">{ALL_CATS.map((c) => <option key={c.i} value={c.n} />)}</datalist>
           </Field>
           <Field id="date_sourced" label="Date sourced"><Input id="date_sourced" name="date_sourced" type="date" defaultValue={v("date_sourced")} /></Field>
           <Field id="city" label="City"><Input id="city" name="city" defaultValue={v("city", defaults?.city ?? "")} autoComplete="off" /></Field>
-          <Field id="state" label="State" hint="Two-letter code, like TX."><Input id="state" name="state" maxLength={2} defaultValue={v("state", defaults?.state ?? "")} autoComplete="off" /></Field>
+          <Field id="state" label="State, province or emirate" hint="The code: TX, ON or DXB."><Input id="state" name="state" maxLength={3} defaultValue={v("state", defaults?.state ?? "")} autoComplete="off" /></Field>
         </div>
       </fieldset>
 

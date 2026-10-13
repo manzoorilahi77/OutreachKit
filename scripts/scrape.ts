@@ -1,6 +1,6 @@
 // pnpm scrape "<category>" "<city>" <ST> --as <username> --limit 50 [--headed]
 // Finds businesses on Google Maps that show no website and saves them to that person's folder, team/data/<username>/finder/.
-import { STATES } from "../src/data";
+import { isRegion } from "../src/lib/market/regions";
 import { createStore } from "../src/lib/store/fileStore";
 import { rootDir } from "../src/lib/store/paths";
 import { StoreError } from "../src/lib/store/errors";
@@ -28,7 +28,7 @@ const [category, city, stRaw] = args;
 const st = (stRaw ?? "").toUpperCase();
 const limit = limitArg === null ? DEFAULT_LIMIT : Number(limitArg);
 
-if (!category || !city || !(st in STATES) || args.length !== 3 || !Number.isInteger(limit) || limit < 1 || limit > 500) {
+if (!category || !city || !isRegion(st) || args.length !== 3 || !Number.isInteger(limit) || limit < 1 || limit > 500) {
   console.error(usage);
   process.exit(1);
 }

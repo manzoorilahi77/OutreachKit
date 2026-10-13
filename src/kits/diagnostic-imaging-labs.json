@@ -1,0 +1,875 @@
+{
+  "schemaVersion": 1,
+  "category": "Diagnostic imaging & labs",
+  "slug": "diagnostic-imaging-labs",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · expansion batch (healthcare + mid-size)",
+    "generatedAt": "2026-10-13",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Leaned on the two buyers of a scan or test: the referring doctor's office and the self-pay patient comparing price and time. Prep notes are always the director's wording. Unsure on the referring physician portal and radiologist dictation ranges; both depend on the imaging and lab systems."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Scan and test menu with self-pay prices",
+      "contains": "Every MRI, CT, ultrasound, x-ray and blood test offered, what each involves in plain words, how long the appointment takes, whether a referral is needed and [price] placeholders the centre confirms",
+      "why": "Self-pay patients shop on price and the next free slot. A clear menu lets them choose the imaging centre or lab before they phone anyone."
+    },
+    {
+      "section": "Scan and lab test preparation instructions",
+      "contains": "Fasting, what to wear, metal and implant questions before an MRI, a full bladder for some ultrasounds, and what to bring, all in the medical director's wording, printable and sent with every booking",
+      "why": "A patient who arrives unprepared loses their slot and the scanner sits idle. Clear prep pages protect the schedule and calm first-timers."
+    },
+    {
+      "section": "Referring doctor ordering and reports",
+      "contains": "Online or printable order forms, report turnaround as [placeholders], how reports and diagnostic images reach the referrer, and a direct line to the reading radiologist or lab lead",
+      "why": "Clinic staff send their patients wherever referring is easiest. This page is how the centre wins and keeps referring practices."
+    },
+    {
+      "section": "Collection centres and home sample collection",
+      "contains": "Every blood collection centre with early hours and walk-in or appointment rules, plus home and workplace collection areas, [fees] and booking for a phlebotomist visit",
+      "why": "Fasting blood tests happen before work. The lab with the nearest early collection centre, or a visit at home, gets the patient."
+    },
+    {
+      "section": "How results reach you and your doctor",
+      "contains": "When and how results are released, that the referring doctor explains them, how to access the patient portal, and who to call about a delayed report",
+      "why": "Waiting for results is the anxious part. A plain explanation cuts calls to the front desk and sets honest expectations."
+    },
+    {
+      "section": "Equipment, accreditation and radiologists",
+      "contains": "The scanner types the centre runs as it describes them, accreditation as [placeholders], radiologist and pathologist profiles with [licence number], and step-free access at each site",
+      "why": "Referring doctors and careful patients check who reads the scan and what it runs on. Facts, not claims, settle the choice."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C30",
+      "siteType": "local-conversion",
+      "name": "Book a Scan",
+      "heroLayout": "card-stack",
+      "mood": ["plain", "helpful", "steady"],
+      "bestFor": "Single-site imaging centres and labs that need a price list, prep notes and a booking request on every page",
+      "pairsWithTier": "starter",
+      "headlineSample": "MRI, ultrasound and blood tests in {City}",
+      "whyItFits": "Denim on a soft cream ground with geometric headings feels clear and unhurried. Each exam is a card with price, time and a book button."
+    },
+    {
+      "id": "b",
+      "themeId": "C2",
+      "siteType": "booking-first",
+      "name": "Prep and Book",
+      "heroLayout": "split-photo",
+      "mood": ["calm", "careful", "assured"],
+      "bestFor": "Imaging centres and lab networks booking self-pay and referred patients online with prep sent on confirmation",
+      "pairsWithTier": "standard",
+      "headlineSample": "Book your scan or blood test in {City}, ready on the day",
+      "whyItFits": "The family's Private Vault combo. A warm ground and a refined serif soften what can be a worrying appointment, while booking and prep stay in front."
+    },
+    {
+      "id": "c",
+      "themeId": "C14",
+      "siteType": "b2b-capability",
+      "name": "Referrer Desk",
+      "heroLayout": "type-led",
+      "mood": ["precise", "technical", "dependable"],
+      "bestFor": "Multi-site imaging groups and lab networks selling to referring practices, employers and insurers as much as to patients",
+      "pairsWithTier": "premium",
+      "headlineSample": "Diagnostic imaging and lab services for {City} doctors",
+      "whyItFits": "Dark navy with cyan and a mono face for numbers reads like a reporting system. It suits a referrer-facing front door with order forms, turnaround times and a portal."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "Call for pricing",
+      "line": "Your imaging centre's site says to call for pricing on every scan. Someone paying for an MRI themselves compares prices on their phone and books the centre that shows one.",
+      "hook": "Check their scan pages for any price or range. If every one says call, the angle holds.",
+      "linkLine": "Self-pay prices for every scan and test: {demo-link}"
+    },
+    {
+      "angle": "No online scan booking",
+      "line": "There's no way to book an ultrasound or x-ray slot at your centre online. A patient leaving the doctor with a referral in hand wants to pick a time before the paper gets lost.",
+      "hook": "Try booking any exam from their site. Note whether it ends at a phone number.",
+      "linkLine": "Online scan booking with referral upload: {demo-link}"
+    },
+    {
+      "angle": "Prep instructions missing",
+      "line": "I couldn't find preparation instructions for your scans or blood tests on the site. A patient who eats before a fasting test, or wears metal to an MRI, costs you the slot.",
+      "hook": "Search their site for 'fasting' or 'preparation'. Note which exams have nothing.",
+      "linkLine": "Prep instructions for each exam, sent with every booking: {demo-link}"
+    },
+    {
+      "angle": "No lab test menu",
+      "line": "Your lab's site says blood tests but doesn't list which ones or what they cost. Someone looking for a specific panel moves on to a lab that names it.",
+      "hook": "Look for a test list or menu. Note whether it shows names, prices or turnaround.",
+      "linkLine": "A searchable lab test menu with prices: {demo-link}"
+    },
+    {
+      "angle": "Nothing for referring doctors",
+      "line": "Your site has nothing for referring doctors: no order form, no report turnaround, no way to reach the radiologist. Clinic staff send patients wherever referring is easiest.",
+      "hook": "Look for a 'for physicians' or 'referrers' section. Note what's missing.",
+      "linkLine": "A referring doctor page for your diagnostic centre: {demo-link}"
+    },
+    {
+      "angle": "Collection centres not listed",
+      "line": "Your lab has several blood collection centres, but the site shows one address. Someone fasting before work needs the nearest one open early, not the head office.",
+      "hook": "Count their collection points on Maps and compare with the site. Note any missing.",
+      "linkLine": "Every lab collection centre with its early hours: {demo-link}"
+    },
+    {
+      "angle": "Walk-in or appointment unclear",
+      "line": "Reviews show people unsure whether they can walk in for blood work or need an appointment. One line on each lab location page would save a wasted morning.",
+      "hook": "Search reviews for 'walk in' or 'appointment'. Quote the clearest one.",
+      "linkLine": "Walk-in rules shown for each lab location: {demo-link}"
+    },
+    {
+      "angle": "Home collection hidden",
+      "line": "Your posts mention home blood collection, but the site has no way to book it. Older patients and parents with small children would book a lab visit at home straight from the page.",
+      "hook": "Only if they post about home or mobile collection. Note the areas they mention.",
+      "linkLine": "Home sample collection booking for the lab: {demo-link}"
+    },
+    {
+      "angle": "Wide-bore MRI not explained",
+      "line": "Your listing mentions a wide-bore MRI scanner. People who feel uneasy in a scanner search for exactly that, but the site doesn't describe it or let them book it.",
+      "hook": "Only if they mention a wide-bore or open MRI publicly. Use their wording, never your own claim.",
+      "linkLine": "An MRI page that describes your scanner in your words: {demo-link}"
+    },
+    {
+      "angle": "Calls about results",
+      "line": "Several reviews mention calling more than once to ask about results. A page explaining when results reach the patient and their doctor would cut those calls at the imaging centre.",
+      "hook": "Search reviews for 'results'. Note the pattern, never a patient's details.",
+      "linkLine": "A clear results page for imaging and lab patients: {demo-link}"
+    },
+    {
+      "angle": "Referral form as a PDF",
+      "line": "Your referral form is a PDF that clinics print, fill by hand and send back. An online order form gets the exam booked the same day the doctor requests it.",
+      "hook": "Find their referral or order form. Note its format and how it's returned.",
+      "linkLine": "An online imaging order form for referring clinics: {demo-link}"
+    },
+    {
+      "angle": "Hiring sonographers",
+      "line": "Saw you're hiring sonographers and radiographers. Technologists compare imaging centres on their careers pages and the equipment they'll work on.",
+      "hook": "Only if they've posted technologist or phlebotomist roles recently. Note which.",
+      "linkLine": "A careers page for the diagnostic centre: {demo-link}"
+    },
+    {
+      "angle": "Employer screening with no page",
+      "line": "Your listing mentions pre-employment and corporate health screening, but there's nothing on the site for an employer to set up an account with the lab.",
+      "hook": "Check the listing and site for employer or corporate screening wording. Note whether there's a form.",
+      "linkLine": "An employer screening page for the lab: {demo-link}"
+    },
+    {
+      "angle": "Desktop layout on a phone",
+      "line": "On my phone your imaging site opened a desktop layout with tiny text, and the phone number didn't tap to call. Most patients look up a scan appointment on their phone.",
+      "hook": "Load the site on a phone and try tapping the number. Screenshot it for when they reply.",
+      "linkLine": "The diagnostic centre site rebuilt for a phone: {demo-link}"
+    },
+    {
+      "angle": "A specific recent post",
+      "line": "That {specific recent job} post from your lab team showed the people behind the tests, which patients rarely see. It belongs on the site, next to the test menu.",
+      "hook": "Pick their newest team or community post and name it exactly. Never reference a patient.",
+      "linkLine": "Your lab team's story on the diagnostic site: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, I was comparing imaging centres and labs in {City} and noticed {Business Name} doesn't show self-pay prices, prep instructions or online booking for scans or tests.\n\nI build sites for diagnostic centres: a scan and test menu with prices, prep notes sent with every booking, booking with referral upload and a page for referring doctors. I've sketched a sample for you, with marked placeholders where your photos would go.\n\nWould it be useful if I sent it? Or is there someone in operations or marketing I should send it to?",
+    "dm2": "{Owner}, following up on my note about {Business Name}. Here's the sample: {demo-link}\n\nIt has a scan and test menu with self-pay prices, prep instructions for each exam, booking with referral upload, collection centres with early hours and a referring doctor page. Prices and prep wording are placeholders for your director to confirm. Nothing goes live without your sign-off.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for imaging centres and labs here in {City}. I sent a note a few days ago about {Business Name}, did it reach you?\"\n\nIF THE FRONT DESK ANSWERS:\n\"Thanks. Who looks after the website for the centre, operations or marketing? I'd like to send them a sample.\"\n\nIF NO:\n\"Short version: I built a sample site with your scan and test menu, prep instructions, online booking with referral upload and a page for referring doctors, with marked placeholders where your photos would go. Can I email it over?\"\n\nIF YES:\n\"What did you and the team think?\"\n → let them talk, don't fill the silence\n\"It connects to the scheduling and reporting systems you already use. The build runs {Build Range} depending on locations, exams and integrations, then {Care Range} a month for hosting, price changes and new prep pages. For your centre I'd quote about {Build Price}, phased so self-pay booking goes live first.\"\n\"Could we take twenty minutes with you and the medical director this week?\"\n\nCLOSE:\n\"I'll send a phased scope you can share. Prices and prep notes are your director's wording before anything publishes.\"",
+    "objections": [
+      {
+        "objection": "Most of our patients are referred; we don't need marketing.",
+        "handler": "\"Referred patients still choose where to go, and the referring clinic's staff choose where it's easiest to send them. The site works for both: booking for patients, ordering for clinics.\""
+      },
+      {
+        "objection": "We can't publish prices; insurance makes it messy.",
+        "handler": "\"We publish self-pay ranges only, labelled as estimates and approved by you. Insured patients see which networks you take and how pre-authorisation works.\""
+      },
+      {
+        "objection": "Booking a scan needs our staff to check the referral first.",
+        "handler": "\"Agreed. Patients upload the referral and choose preferred times; your schedulers confirm the exam and the slot. Nothing books blind.\""
+      },
+      {
+        "objection": "Our reporting system already has a doctor portal.",
+        "handler": "\"Good, we link to it rather than rebuild it. What's usually missing is the front door: order forms, turnaround, who to call. That's what wins new referring clinics.\""
+      },
+      {
+        "objection": "Prep instructions are clinical; we can't let marketing write them.",
+        "handler": "\"They won't. Your medical director or lab lead writes or approves every word. I lay them out clearly and make sure they reach the patient with every booking.\""
+      },
+      {
+        "objection": "We're a network; head office decides.",
+        "handler": "\"Then I'd like to show head office. Collection centre pages, prep and self-pay booking are usually where a central site is thinnest.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range} depending on locations, exams and integrations. For your centre about {Build Price}, plus {Care Range} a month for hosting, price updates and new prep pages.\""
+      }
+    ],
+    "email": {
+      "subject": "Scan menu and booking for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for imaging centres and labs around {City}. {Business Name} is well reviewed, but the site doesn't show self-pay prices, prep instructions or a way to book a scan or test online, and there's nothing for referring doctors.\n\nI built a sample first rather than ask for a meeting: a scan and test menu with self-pay prices, prep notes sent with every booking, booking with referral upload, collection centres with early hours and a referring doctor page, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf it's useful, I finish it in phases for {Build Range}, connected to your scheduling system, plus {Care Range} a month for hosting and updates. Your medical director approves every price and prep note before it publishes.\n\nWorth twenty minutes this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"{Owner}, it's {Your Name}. I build websites for imaging centres and labs in {City}, and I made a sample for {Business Name} with a scan menu, prep notes and online booking. I'll email the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm taking down the scan menu and booking sample I built for {Business Name} on Friday.\n\nShould I keep it up for your team? One word is fine either way.",
+    "nurture": "Hi {Owner}, the start of a new year is when many self-pay patients book scans and health screening, and you came to mind.\n\nThe sample with your test menu, prep notes and booking is still here for {Business Name}, same scope and price. {demo-link} if you'd like another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Price by exam types and locations, not pages. A test menu with prep notes is a small catalogue, and each item needs approval.",
+      "Sell the two front doors separately: self-pay patients first, referring doctors second. Different budget holders often sign each.",
+      "Quote the scheduling and reporting connections only after a technical call; referral upload alone is far cheaper than live slots.",
+      "Count the director's review time for prices and prep notes; nothing clinical publishes without it.",
+      "Home collection and employer screening are phases of their own with their own operations lead.",
+      "Never write claims about accuracy, detection or outcomes; describe equipment only in the centre's own approved words."
+    ],
+    "lineItems": [
+      {
+        "item": "Scan and test menu (per exam category)",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "description": "Max with search, filters by body area or test type, self-pay ranges, referral rules and a book button on each exam.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Exam preparation page (each)",
+        "min": 150,
+        "max": 400,
+        "unit": "per-page",
+        "description": "Max with printable version, translated text, a safety checklist and director sign-off tracked.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Online scan booking with referral upload",
+        "min": 4000,
+        "max": 12000,
+        "unit": "one-time",
+        "description": "Max when patients pick live slots from the scheduling system after staff confirm the referral and exam.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Collection centre or imaging site page (each)",
+        "min": 250,
+        "max": 600,
+        "unit": "per-page",
+        "description": "Max with early hours, walk-in rules, exams offered at that site, parking and step-free access.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Online order form for referring clinics",
+        "min": 2000,
+        "max": 6000,
+        "unit": "one-time",
+        "description": "Max with exam-specific questions, secure attachment of notes and routing to the right site's schedulers.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Home sample collection booking",
+        "min": 2000,
+        "max": 5000,
+        "unit": "one-time",
+        "description": "Max with area checks, time windows, fees and handoff to the phlebotomists' day list.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Translated prep instructions (per language)",
+        "min": 600,
+        "max": 2000,
+        "unit": "one-time",
+        "description": "Max when every prep page and booking message is translated and checked by fluent clinical staff.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Google profiles for every imaging site and lab",
+      "min": 300,
+      "max": 1000,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Each imaging site and collection centre keeps its own listing with early hours, exams offered and a booking link, so a fasting patient doesn't arrive at a locked door.\"",
+      "when": "Day 30, once the site pages are live."
+    },
+    {
+      "name": "Referring practice outreach kit",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Printed order pads, a one-page sheet on turnaround and exams, and a short visit plan for your liaison, all pointing clinic staff to the online imaging order form.\"",
+      "when": "Month 2, with the referring doctor page."
+    },
+    {
+      "name": "Self-pay and screening ad copy, approval-ready",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Ads for self-pay scans and lab screening are drafted without detection or accuracy claims and packed with everything a regulator asks for, in places where health advertising needs approval first.\"",
+      "when": "Month 2, before any screening promotion."
+    },
+    {
+      "name": "Protected hosting for bookings and referral uploads",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Referral letters and patient details uploaded to the diagnostic site are stored encrypted with limited staff access, set up to the rules where you operate, with a written record for your privacy officer.\"",
+      "when": "Before referral upload goes live."
+    },
+    {
+      "name": "Consent and photo-use policy pages",
+      "min": 600,
+      "max": 1500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Clear rules for the lab and imaging team on patient stories and photos: written consent first, scans and reports never published, and how consent is withdrawn.\"",
+      "when": "Month 1, with the privacy pages."
+    },
+    {
+      "name": "Accessibility testing of booking and prep pages",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Prep instructions only work if everyone can read them. I test the imaging and lab pages with screen readers and large text, fix the gaps and publish a statement.\"",
+      "when": "Month 3, after prep pages are approved."
+    },
+    {
+      "name": "Screening awareness campaigns",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Around awareness months, a general-information page and posts that explain which lab screening a doctor might suggest, with booking, approved by the medical director.\"",
+      "when": "Quarterly, planned a month ahead."
+    },
+    {
+      "name": "Feedback invitations after an imaging visit",
+      "min": 300,
+      "max": 900,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A day after the scan or blood draw, the patient is asked how the visit felt, with no mention of the exam, and happy patients are pointed to the public review page.\"",
+      "when": "Day 60, after privacy sign-off."
+    },
+    {
+      "name": "Centre and equipment photo shoot",
+      "min": 800,
+      "max": 2000,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A morning photographing the scanner rooms, collection centre and team, so nervous patients see where they'll be before they arrive. No patients in frame.\"",
+      "when": "Month 2, site by site."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Family practices that refer for scans and tests",
+        "whoPays": "The family medicine practice",
+        "min": 4000,
+        "max": 10000,
+        "unit": "one-time",
+        "pitchLine": "\"The family doctors whose patients fill your scan and lab lists often run tired sites. The diagnostic centre's liaison visits them anyway and can make the introduction.\"",
+        "whyItWorks": "Referring practices already trust the centre's team, and the liaison is in their office every month."
+      },
+      {
+        "route": "Orthopaedic and sports medicine clinics",
+        "whoPays": "The orthopaedic clinic",
+        "min": 4000,
+        "max": 9000,
+        "unit": "one-time",
+        "pitchLine": "\"Orthopaedic clinics send you a steady stream of MRI and x-ray orders. Their own booking and condition pages are usually thin, and your word carries weight.\"",
+        "whyItWorks": "They depend on fast imaging and value the centre that delivers it."
+      },
+      {
+        "route": "Occupational health providers",
+        "whoPays": "The occupational health company",
+        "min": 3000,
+        "max": 8000,
+        "unit": "one-time",
+        "pitchLine": "\"The occupational health firms that send workers to your lab for screening need an employer-facing site. Your corporate team already works with them.\"",
+        "whyItWorks": "They need a reliable lab and value the partner who handles their volume."
+      },
+      {
+        "route": "Medical courier companies that carry samples",
+        "whoPays": "The courier company",
+        "min": 2000,
+        "max": 5000,
+        "unit": "one-time",
+        "pitchLine": "\"The couriers who move your samples between collection centres sell to every clinic in the area. A pickup booking page with coverage maps suits them.\"",
+        "whyItWorks": "A small firm listens to its biggest lab customer."
+      },
+      {
+        "route": "Fertility clinics sending hormone blood work",
+        "whoPays": "The fertility clinic",
+        "min": 6000,
+        "max": 15000,
+        "unit": "one-time",
+        "pitchLine": "\"Fertility clinics rely on your lab for timed blood work. Their patients read every page before booking, and an introduction from the lab is a warm start.\"",
+        "whyItWorks": "Fertility clinics spend on content and booking, and they trust the lab they depend on."
+      },
+      {
+        "route": "Mobile phlebotomists and home nursing agencies",
+        "whoPays": "The mobile phlebotomy or nursing business",
+        "min": 2500,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"Independent phlebotomists who drop samples at your lab need a booking site of their own. You see them every day at the collection counter.\"",
+        "whyItWorks": "Small mobile operators depend on the lab's goodwill and take its advice."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Referral letter assistant for family practices",
+        "whoPays": "The family medicine practice, monthly",
+        "min": 149,
+        "max": 399,
+        "unit": "monthly",
+        "pitchLine": "\"Doctors' staff get a draft imaging referral with every field the centre needs, filled from the visit note, for the doctor to check and sign.\"",
+        "whyItWorks": "Incomplete referrals waste everyone's time, and the practice saves admin hours."
+      },
+      {
+        "route": "Route planner for sample couriers",
+        "whoPays": "The courier company, monthly",
+        "min": 149,
+        "max": 349,
+        "unit": "monthly",
+        "pitchLine": "\"Pickup requests from clinics and collection centres are grouped into a suggested route for each driver, with lab cut-off times built in.\"",
+        "whyItWorks": "Missed lab cut-offs cost couriers their contracts, and routing is daily guesswork."
+      },
+      {
+        "route": "Pre-visit questionnaire assistant for orthopaedic clinics",
+        "whoPays": "The orthopaedic clinic, monthly",
+        "min": 149,
+        "max": 399,
+        "unit": "monthly",
+        "pitchLine": "\"Before an orthopaedic consult, patients answer history questions with an assistant and the surgeon gets a summary, with any recent imaging reports attached.\"",
+        "whyItWorks": "Surgeons start consults informed, and the clinic orders the right scan sooner."
+      },
+      {
+        "route": "Visit scheduling for mobile phlebotomists",
+        "whoPays": "The mobile phlebotomy business, monthly",
+        "min": 149,
+        "max": 349,
+        "unit": "monthly",
+        "pitchLine": "\"Patients request a home blood draw and an assistant offers windows that fit the phlebotomist's route and the lab's drop-off times.\"",
+        "whyItWorks": "Solo operators lose bookings while they're with a patient; the assistant answers for them."
+      },
+      {
+        "route": "Timed blood test reminders for fertility clinics",
+        "whoPays": "The fertility clinic, monthly",
+        "min": 199,
+        "max": 499,
+        "unit": "monthly",
+        "pitchLine": "\"Patients get reminders for blood tests on the days their clinic scheduled, with the nearest collection centre's early hours, worded and approved by the clinic.\"",
+        "whyItWorks": "A missed timed test can delay a treatment plan, so the clinic values the reminder."
+      },
+      {
+        "route": "Screening invitation assistant for occupational health firms",
+        "whoPays": "The occupational health company, monthly",
+        "min": 149,
+        "max": 399,
+        "unit": "monthly",
+        "pitchLine": "\"Workers due for periodic screening get an invitation, pick a slot at a nearby lab collection centre, and the firm sees who has attended.\"",
+        "whyItWorks": "Chasing workers is the slow part of screening contracts, and attendance is what employers pay for."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Prep instruction texts after booking",
+      "kind": "automation",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 99,
+      "monthlyMax": 299,
+      "pitchLine": "\"Every booked scan or blood test triggers the right prep text and a reminder the evening before, so fewer patients arrive having eaten or wearing metal.\"",
+      "whenAndWhatItTakes": "Day 30. Needs approved prep wording per exam and a booking feed from their scheduler."
+    },
+    {
+      "name": "Unanswered-call text with the exam booking link",
+      "kind": "automation",
+      "oneTimeMin": 500,
+      "oneTimeMax": 1500,
+      "monthlyMin": 149,
+      "monthlyMax": 399,
+      "pitchLine": "\"When the imaging centre's line is busy, callers get a text with the scan menu, self-pay prices and a link to request a slot online.\"",
+      "whenAndWhatItTakes": "Day 30. Needs their number forwarded and wording the director approves."
+    },
+    {
+      "name": "Feedback reply drafts for imaging and lab reviews",
+      "kind": "ai",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 199,
+      "monthlyMax": 499,
+      "pitchLine": "\"Reviews about waits, staff or results get a careful suggested reply that never mentions an exam or confirms the reviewer was a patient at the lab.\"",
+      "whenAndWhatItTakes": "Month 2. Needs approved examples and privacy rules. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Self-pay estimator by scan and add-ons",
+      "kind": "software",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 150,
+      "monthlyMax": 500,
+      "pitchLine": "\"Patients pick an MRI or a blood panel, add contrast or extra tests where offered, and see a self-pay estimate before they book.\"",
+      "whenAndWhatItTakes": "Month 2. Needs their self-pay price list and add-on rules."
+    },
+    {
+      "name": "Website assistant for prep, prices and hours",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 400,
+      "monthlyMax": 1200,
+      "pitchLine": "\"It answers 'do I need to fast for this blood test' and 'which site does ultrasound on Saturday' from the centre's approved pages, and never interprets a result.\"",
+      "whenAndWhatItTakes": "Month 3. Needs approved prep notes, prices and site details. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Translated prep message drafts",
+      "kind": "ai",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 199,
+      "monthlyMax": 499,
+      "pitchLine": "\"New prep notes and booking messages are drafted in the patient's language and checked by fluent clinical staff, so every patient understands how to prepare for the scan.\"",
+      "whenAndWhatItTakes": "Month 4, where fluent staff can review. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Cancellation fill list for scanner slots",
+      "kind": "automation",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"When an MRI or CT slot frees up, patients on the waitlist for that exam get a text offering it, and the first to accept takes it.\"",
+      "whenAndWhatItTakes": "Month 3. Needs a waitlist in their scheduler and rules for who can take short notice."
+    },
+    {
+      "name": "Referral upload and slot matching",
+      "kind": "software",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 15000,
+      "monthlyMin": 300,
+      "monthlyMax": 800,
+      "pitchLine": "\"Patients upload their referral and preferred times; schedulers see it with matching free slots for that exam and confirm in one step.\"",
+      "whenAndWhatItTakes": "Month 3. Needs scheduler integration and privacy sign-off for uploads."
+    },
+    {
+      "name": "Referral reading assistant for schedulers",
+      "kind": "ai",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 15000,
+      "monthlyMin": 500,
+      "monthlyMax": 1500,
+      "pitchLine": "\"Uploaded referrals are read and the requested exam, body area and urgency are suggested for the scheduler to confirm, so imaging bookings don't wait on retyping.\"",
+      "whenAndWhatItTakes": "Month 4. Needs sample referrals, exam codes and privacy review. Comes with the AI maintenance retainer; staff confirm every booking."
+    },
+    {
+      "name": "MRI safety questionnaire assistant",
+      "kind": "ai",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 400,
+      "monthlyMax": 1200,
+      "pitchLine": "\"Before an MRI, patients answer the centre's safety questions about implants and metal online, and anything uncertain is flagged for a technologist to call them.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their safety questionnaire and escalation rules. Comes with the AI maintenance retainer; a technologist reviews every flag."
+    },
+    {
+      "name": "Hiring pipeline for technologists and phlebotomists",
+      "kind": "software",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 150,
+      "monthlyMax": 500,
+      "pitchLine": "\"Applicants for sonographer, radiographer and phlebotomist roles land on one board by site and stage, with licence status noted.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their roles, hiring steps and site managers."
+    },
+    {
+      "name": "Report-ready alerts to referring doctors",
+      "kind": "automation",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 150,
+      "monthlyMax": 400,
+      "pitchLine": "\"When a radiology or lab report is signed, the referring clinic gets a secure alert with a link, so their staff stop phoning to ask.\"",
+      "whenAndWhatItTakes": "Month 5. Needs report status from their reporting system and each clinic's contact."
+    },
+    {
+      "name": "Pre-authorisation request drafts for imaging orders",
+      "kind": "ai",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 12000,
+      "monthlyMin": 400,
+      "monthlyMax": 1200,
+      "pitchLine": "\"For scans needing insurer approval, a request is drafted from the referral in that insurer's format for the billing team to check and submit.\"",
+      "whenAndWhatItTakes": "Month 5. Needs insurer templates and privacy review. Comes with the AI maintenance retainer; staff submit every request."
+    },
+    {
+      "name": "Employer screening account portal",
+      "kind": "software",
+      "oneTimeMin": 8000,
+      "oneTimeMax": 20000,
+      "monthlyMin": 300,
+      "monthlyMax": 900,
+      "pitchLine": "\"Employers book screening for their workers, see attendance and download invoices from the lab without emailing the corporate desk.\"",
+      "whenAndWhatItTakes": "Month 6. Needs their screening packages, consent rules and billing setup."
+    },
+    {
+      "name": "Home collection scheduling and phlebotomist routes",
+      "kind": "software",
+      "oneTimeMin": 8000,
+      "oneTimeMax": 20000,
+      "monthlyMin": 400,
+      "monthlyMax": 1200,
+      "pitchLine": "\"Home blood draw bookings become a day list and route for each phlebotomist, with lab drop-off times built in and live status for the lab coordinator.\"",
+      "whenAndWhatItTakes": "Month 6. Needs their collection areas, staff rota and lab cut-off times."
+    },
+    {
+      "name": "Slot demand forecast by exam and site",
+      "kind": "ai",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 15000,
+      "monthlyMin": 400,
+      "monthlyMax": 1200,
+      "pitchLine": "\"Past bookings by exam, site and season become a forecast of where scanner time will run short, so operations can add sessions before waits grow.\"",
+      "whenAndWhatItTakes": "Month 8. Needs a year of booking data by exam and site. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Referring physician portal for orders and reports",
+      "kind": "software",
+      "oneTimeMin": 12000,
+      "oneTimeMax": 30000,
+      "monthlyMin": 500,
+      "monthlyMax": 1500,
+      "pitchLine": "\"Referring clinics place imaging and lab orders, track each patient's booking and open signed reports in one portal, in the centre's own brand.\"",
+      "whenAndWhatItTakes": "Month 7. Needs scheduler and reporting integration and a full privacy review."
+    },
+    {
+      "name": "Scanner and room utilisation dashboard",
+      "kind": "software",
+      "oneTimeMin": 10000,
+      "oneTimeMax": 25000,
+      "monthlyMin": 500,
+      "monthlyMax": 1500,
+      "pitchLine": "\"Booked, idle and lost time on each MRI, CT and ultrasound room, plus referral sources by clinic, on one screen for the operations lead.\"",
+      "whenAndWhatItTakes": "Month 9. Needs three months of schedule data per room and referral source tracking."
+    },
+    {
+      "name": "Report dictation drafts for radiologists",
+      "kind": "ai",
+      "oneTimeMin": 15000,
+      "oneTimeMax": 40000,
+      "monthlyMin": 1500,
+      "monthlyMax": 4000,
+      "pitchLine": "\"Radiologists dictate and get the report laid out in the centre's template with standard sections filled, ready to edit and sign. The radiologist writes the findings.\"",
+      "whenAndWhatItTakes": "Month 10. Needs report templates, reporting system access and privacy review. Comes with the AI maintenance retainer; radiologists sign every report."
+    },
+    {
+      "name": "Patient results portal with doctor-released reports",
+      "kind": "software",
+      "oneTimeMin": 15000,
+      "oneTimeMax": 45000,
+      "monthlyMin": 600,
+      "monthlyMax": 2000,
+      "pitchLine": "\"Patients sign in to see bookings, receipts and the scan or lab reports their doctor has released, instead of calling the centre.\"",
+      "whenAndWhatItTakes": "Month 12. Needs reporting integration, release rules agreed with referrers and a full privacy review."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the scan menu and booking for other imaging centres",
+      "whoPays": "Independent imaging centres, monthly per site",
+      "min": 399,
+      "max": 1200,
+      "unit": "monthly",
+      "pitchLine": "\"The exam menu, prep pages and booking with referral upload I built for one imaging centre fit any independent centre, loaded with their own exams.\"",
+      "whyItWorks": "The first centre paid for the structure; the next ones need only their prices and prep notes."
+    },
+    {
+      "route": "Lab networks with many collection centres",
+      "whoPays": "The lab network's central operations team",
+      "min": 20000,
+      "max": 60000,
+      "unit": "one-time",
+      "pitchLine": "\"Your collection centres each need a page, early hours, walk-in rules and home collection booking. One platform covers the whole lab network.\"",
+      "whyItWorks": "Networks buy centrally and roll out to every site, so one sale covers many locations."
+    },
+    {
+      "route": "Teleradiology reading groups",
+      "whoPays": "The teleradiology group",
+      "min": 8000,
+      "max": 20000,
+      "unit": "one-time",
+      "pitchLine": "\"Remote radiology groups sell reading services to imaging centres like yours. A clear capability site with turnaround and onboarding helps them win contracts.\"",
+      "whyItWorks": "They sell to the same buyers you've already built for and value the introduction."
+    },
+    {
+      "route": "Scanner dealers' new-site launch programme",
+      "whoPays": "The imaging equipment dealer, per new site",
+      "min": 3000,
+      "max": 8000,
+      "unit": "one-time",
+      "pitchLine": "\"When you install a scanner at a new imaging centre, bundle its exam menu and booking site so it opens with patients booked.\"",
+      "whyItWorks": "Dealers want new sites busy fast, and a site is a small, visible add to a large sale."
+    },
+    {
+      "route": "White-label for healthcare marketing agencies",
+      "whoPays": "The agency, per diagnostic client",
+      "min": 3000,
+      "max": 9000,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency runs ads for imaging centres but sends clicks to a phone number. I build exam menus and booking under your name.\"",
+      "whyItWorks": "Agencies keep the account and get a better landing page without hiring developers."
+    },
+    {
+      "route": "Imaging and lab association member template",
+      "whoPays": "The association, as a member benefit",
+      "min": 5000,
+      "max": 20000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer members a diagnostic site template with prep pages, privacy-safe referral upload and claim-free copy already built.\"",
+      "whyItWorks": "Associations want concrete benefits, and compliant websites are a common member question."
+    },
+    {
+      "route": "Employer benefit administrators",
+      "whoPays": "The benefits administrator",
+      "min": 10000,
+      "max": 30000,
+      "unit": "one-time",
+      "pitchLine": "\"Your members pay for scans and tests themselves more often now. A booking front door with partner imaging centres' self-pay prices makes that a benefit.\"",
+      "whyItWorks": "Administrators want to steer members to fair-priced providers, and the booking engine exists."
+    },
+    {
+      "route": "Veterinary diagnostic labs",
+      "whoPays": "Veterinary reference labs",
+      "min": 6000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Vet labs need the same test menu, sample prep notes and clinic order forms, sold to veterinary practices instead of doctors.\"",
+      "whyItWorks": "The structure carries over almost unchanged to a different market with few specialist builders."
+    },
+    {
+      "route": "Hospital outpatient imaging departments",
+      "whoPays": "The hospital's imaging or digital team",
+      "min": 30000,
+      "max": 90000,
+      "unit": "one-time",
+      "pitchLine": "\"Outpatient imaging is buried in the hospital site with no prep pages or self-pay prices. A dedicated front door is a contained project with clear results.\"",
+      "whyItWorks": "Hospitals face the same self-pay shoppers and budget in large central projects."
+    },
+    {
+      "route": "Investors consolidating imaging centres",
+      "whoPays": "The investment group's operations team",
+      "min": 20000,
+      "max": 80000,
+      "unit": "one-time",
+      "pitchLine": "\"Each imaging centre you buy arrives with its own site and booking. I bring them under one platform after every close.\"",
+      "whyItWorks": "Investors want acquisitions unified quickly, and a repeatable platform fits their plan."
+    },
+    {
+      "route": "One imaging centre per metro",
+      "whoPays": "An imaging centre in another metro",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"Referring clinics in a metro compare a handful of imaging centres. I take on only one of them per metro, and in {City} that slot is still open.\"",
+      "whyItWorks": "Centres value not sharing a builder with their nearest rival, and the build carries over."
+    },
+    {
+      "route": "Finishing stalled portal projects",
+      "whoPays": "The centre with a half-built portal or booking",
+      "min": 8000,
+      "max": 25000,
+      "unit": "one-time",
+      "pitchLine": "\"Your patient or referrer portal stalled at the reporting integration. I can finish it on a structure already running at another imaging centre.\"",
+      "whyItWorks": "They've already decided and budgeted; they need someone to finish the hard part."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Diagnostic site build plus care plan, one contract",
+      "min": 10000,
+      "max": 25000,
+      "unit": "one-time",
+      "trigger": "Operations and the medical director approve phase one: exam menu, prep pages and self-pay booking.",
+      "line": "\"With build and care on one agreement, a price change or a new prep note goes live in days, checked against your director's approval.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Prep instruction texts after booking",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "trigger": "Technologists report patients arriving unprepared for fasting tests or MRI.",
+      "line": "\"Patients are still arriving unprepared. A prep text after every booking protects your scanner time.\""
+    },
+    {
+      "rung": 3,
+      "day": 60,
+      "offer": "Google profiles for every imaging site and lab",
+      "min": 300,
+      "max": 1000,
+      "unit": "monthly",
+      "trigger": "Self-pay bookings start arriving, and a collection centre listing still shows the wrong early hours.",
+      "line": "\"Self-pay patients are booking. Keep every site's listing exact so they arrive at an open door.\""
+    },
+    {
+      "rung": 4,
+      "day": 90,
+      "offer": "Self-pay estimator by scan and add-ons",
+      "min": 3000,
+      "max": 8000,
+      "unit": "one-time",
+      "trigger": "Reception says most calls are price questions about contrast or extra tests.",
+      "line": "\"Price questions are still tying up the phones. An estimator answers them before the patient calls.\""
+    },
+    {
+      "rung": 5,
+      "day": 120,
+      "offer": "Referring physician portal for orders and reports",
+      "min": 12000,
+      "max": 30000,
+      "unit": "one-time",
+      "trigger": "Online orders from clinics grow, and staff still phone the centre to chase reports.",
+      "line": "\"Clinics are ordering online. A portal lets them track bookings and open reports without calling you.\""
+    },
+    {
+      "rung": 6,
+      "day": 180,
+      "offer": "Home collection scheduling and phlebotomist routes",
+      "min": 8000,
+      "max": 20000,
+      "unit": "one-time",
+      "trigger": "Home collection requests outgrow the coordinator's spreadsheet.",
+      "line": "\"Home collection is growing. Give each phlebotomist a route and the lab a live view of where samples are.\""
+    },
+    {
+      "rung": 7,
+      "day": 270,
+      "offer": "Scanner and room utilisation dashboard",
+      "min": 10000,
+      "max": 25000,
+      "unit": "one-time",
+      "trigger": "The partners discuss extending hours or adding a scanner.",
+      "line": "\"Before buying another scanner, see exactly where today's rooms sit idle and where they're full.\""
+    },
+    {
+      "rung": 8,
+      "day": 365,
+      "offer": "Patient results portal with doctor-released reports",
+      "min": 15000,
+      "max": 45000,
+      "unit": "one-time",
+      "trigger": "The first anniversary, when calls about results are the front desk's biggest load.",
+      "line": "\"A year in, results calls are the front desk's biggest job. A portal with doctor-released reports takes them off the phone.\""
+    }
+  ]
+}

@@ -1,0 +1,894 @@
+{
+  "schemaVersion": 1,
+  "category": "Private schools & academies",
+  "slug": "private-schools-academies",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · expansion batch (healthcare + mid-size)",
+    "generatedAt": "2026-10-13",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Mid-size edu batch. Written for a head of admissions or marketing director; leaned on the admissions funnel, fees transparency and the parent portal. Parent portal and application portal ranges are the least certain."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Admissions timeline and application portal",
+      "contains": "Key dates for each entry point: open days, application deadline, entrance assessment or interview, offers and acceptance, with the documents needed and an online application that saves and resumes",
+      "why": "Parents applying to several schools track deadlines in a spreadsheet. The school that shows every step and date plainly gets the complete applications."
+    },
+    {
+      "section": "Open mornings and private school tours",
+      "contains": "Upcoming open mornings by campus and age phase, private tour slots, a virtual tour for relocating families, what happens on the visit and who parents will meet",
+      "why": "The visit is where parents decide. Booking it online at night, from another city or country, is how an academy wins families who can't phone during the school day."
+    },
+    {
+      "section": "Curriculum pathways by age phase",
+      "contains": "Early years, primary, middle and senior school pathways, the curriculum and qualifications offered, subject choices, class sizes as the school states them, and leavers' destinations as the school reports them",
+      "why": "Parents choose a private school for the pathway to the next stage. They want the whole route, early years to graduation, before they book a tour."
+    },
+    {
+      "section": "Scholarships, bursaries and sibling discounts",
+      "contains": "Scholarship types and how to apply, means-tested bursary process, sibling and staff discounts, instalment options and the dates each application closes",
+      "why": "Many families rule a private school out on fees alone. Showing the help available keeps strong applicants in the funnel."
+    },
+    {
+      "section": "School bus routes and extended day",
+      "contains": "Bus routes and pick-up points by neighbourhood, transport fees, breakfast club, after-school clubs and late pick-up times",
+      "why": "For working parents the commute and the hours decide between two good schools. Route maps answer the question before the tour."
+    },
+    {
+      "section": "Teaching careers and relocation",
+      "contains": "Open teaching and support roles, the school's professional development, salary bands where published, relocation and housing help for overseas hires, and an application form",
+      "why": "Academies recruit teachers from other cities and countries. Candidates compare schools' careers pages the way parents compare admissions pages."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C26",
+      "siteType": "local-conversion",
+      "name": "Open Morning",
+      "heroLayout": "split-photo",
+      "mood": [
+        "bright",
+        "friendly",
+        "welcoming"
+      ],
+      "bestFor": "Primary-led academies and Montessori schools whose first job is getting parents booked onto an open morning",
+      "pairsWithTier": "starter",
+      "headlineSample": "Visit our school in {City}. Book an open morning.",
+      "whyItFits": "The family combo fits schools with younger children: Sky Kite is soft and bright, and the split hero keeps the open morning button beside the classroom."
+    },
+    {
+      "id": "b",
+      "themeId": "C8",
+      "siteType": "enrolment",
+      "name": "Admissions Office",
+      "heroLayout": "card-stack",
+      "mood": [
+        "trusted",
+        "orderly",
+        "reassuring"
+      ],
+      "bestFor": "Schools with several entry points and age phases that need the admissions timeline, fees and application in one path",
+      "pairsWithTier": "standard",
+      "headlineSample": "Admissions open at our {City} school for next year",
+      "whyItFits": "Older pupils and years of fees call for something steadier than the family combo. Evergreen Trust reads stable and long-term, and the cards hold each age phase."
+    },
+    {
+      "id": "c",
+      "themeId": "C2",
+      "siteType": "premium-brand",
+      "name": "Heritage Academy",
+      "heroLayout": "full-bleed-photo",
+      "mood": [
+        "established",
+        "refined",
+        "ambitious"
+      ],
+      "bestFor": "Established or international academies with boarding, scholarships and families comparing schools across countries",
+      "pairsWithTier": "premium",
+      "headlineSample": "An education that travels with your child, in {City}",
+      "whyItFits": "Private Vault is built for high-trust advisory, and its old-style serif carries the weight of a school with history and fees to match."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "Application is a PDF",
+      "line": "Applying to your school starts with a PDF form to print, sign and scan back. Parents applying to several private schools in one week finish the online applications first.",
+      "hook": "Click 'Apply' and note where it ends: a PDF, an email address, a form that doesn't save. Screenshot it for when they reply.",
+      "linkLine": "An online school application that saves and resumes: {demo-link}"
+    },
+    {
+      "angle": "Fees behind a form",
+      "line": "Your school's fees are only available by requesting a prospectus. Parents shortlisting academies cross off the ones that won't show a fee range.",
+      "hook": "Look for a fees page or a fee schedule. If it's 'contact admissions' or a gated download, the angle holds.",
+      "linkLine": "A fees page with tuition by age phase and the help available: {demo-link}"
+    },
+    {
+      "angle": "Open morning not bookable",
+      "line": "Your next open morning is announced in a post, but booking a place means emailing the admissions office. Parents decide which school visits to make on the evening they see the date.",
+      "hook": "Find the latest open day post. Check whether the site has a booking link for it.",
+      "linkLine": "Open morning booking with reminders: {demo-link}"
+    },
+    {
+      "angle": "Slow on a phone",
+      "line": "Your school site took a long time to open on my phone and the admissions menu was hard to reach. Most parents first look at a school from a phone after the children are in bed.",
+      "hook": "Load the homepage and admissions page on mobile data. Note the seconds and what was hard to tap.",
+      "linkLine": "The same school, quick and readable on a phone: {demo-link}"
+    },
+    {
+      "angle": "Prospectus as a download",
+      "line": "The school's prospectus is a large download rather than pages. Relocating parents reading on a phone abroad want the curriculum and fees without waiting for a file.",
+      "hook": "Find the prospectus link and note the file size or format. Check whether the same content exists as pages.",
+      "linkLine": "Your prospectus as fast, readable school pages: {demo-link}"
+    },
+    {
+      "angle": "Hiring teachers",
+      "line": "I saw you're recruiting teachers for next year, but the school site has no careers page. Strong candidates compare academies on how they present the job, the training and relocation help.",
+      "hook": "Find their teaching posts on job boards or social. Check the site for careers. Note the roles.",
+      "linkLine": "A teaching careers page with relocation details: {demo-link}"
+    },
+    {
+      "angle": "Parent reviews off the site",
+      "line": "Parents' reviews of your school talk about how the teachers know every child, but none of that appears on the admissions pages new families read.",
+      "hook": "Read their reviews and copy one phrase about teachers or pastoral care. Quote it if they reply.",
+      "linkLine": "Parent voices beside the admissions path: {demo-link}"
+    },
+    {
+      "angle": "Deadline approaching",
+      "line": "Your school's application deadline for next year is coming up, and the date is only in a news post. Parents who miss it usually find another school that day.",
+      "hook": "Find the deadline in their posts or news. Use from autumn into the new year. Name the date.",
+      "linkLine": "An admissions timeline with every date and a countdown: {demo-link}"
+    },
+    {
+      "angle": "Bus routes missing",
+      "line": "I couldn't find which neighbourhoods your school buses serve. Working parents choose between two good academies on the morning commute.",
+      "hook": "Search the site for transport or bus. Note whether there's a route list, a map or nothing.",
+      "linkLine": "School bus routes by neighbourhood with pick-up points: {demo-link}"
+    },
+    {
+      "angle": "Scholarships only in a post",
+      "line": "Your scholarship programme is announced on social media but there's no page explaining how to apply. Talented applicants who need help with fees won't find it.",
+      "hook": "Find any scholarship or bursary announcement. Check whether the site explains it.",
+      "linkLine": "A scholarships and bursaries page with the application: {demo-link}"
+    },
+    {
+      "angle": "Dated look",
+      "line": "Your school's campus and students look current in every post, but the website looks like it was designed for an earlier generation of parents.",
+      "hook": "Compare a recent post to the homepage. Note one dated thing: layout, old campus photos, a news page last updated long ago.",
+      "linkLine": "A school site that looks like the campus does now: {demo-link}"
+    },
+    {
+      "angle": "No virtual tour",
+      "line": "A lot of families moving to {City} choose a school before they arrive. Your school site has no way to see the campus or book a video call with admissions.",
+      "hook": "Check for a virtual tour or video call booking. Strongest for international schools and cities with relocating families.",
+      "linkLine": "A virtual school tour with a call booking for relocating families: {demo-link}"
+    },
+    {
+      "angle": "Age phases on one page",
+      "line": "Your early years, primary and senior school share one admissions page, so a parent of a toddler and a parent of a teenager read the same text.",
+      "hook": "Check whether each age phase has its own page with its own entry points and dates.",
+      "linkLine": "A page per age phase, each with its own admissions path: {demo-link}"
+    },
+    {
+      "angle": "Enquiries go unanswered",
+      "line": "I sent a general enquiry through your school's contact form last week and heard nothing back. During admissions season that's the parent who books a tour elsewhere.",
+      "hook": "Only use it if you actually sent an enquiry and waited several days. Note the date sent.",
+      "linkLine": "An enquiry flow that books the tour on the spot: {demo-link}"
+    },
+    {
+      "angle": "A specific recent job",
+      "line": "That {specific recent job} at the school looked like a proud day for students and staff. Moments like that should live on the academy's site, not just in a feed.",
+      "hook": "Pick their newest event: a production, a sports final, a graduation, a new building. Name it exactly.",
+      "linkLine": "That school moment, kept on the site: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, that {specific recent job} at the school looked like a proud day.\n\nI looked through the {Business Name} admissions pages and noticed the application is a PDF and the fees sit behind a prospectus request. I put together a sample admissions path with an open morning booking, a fees page by age phase and an online application, with marked placeholders where your photos would go.\n\nWould it help if I sent it over for you and the admissions team?",
+    "dm2": "{Owner}, following up in case this got buried in admissions season. Here's the sample for {Business Name}: {demo-link}\n\nIt has an admissions timeline with every date, open morning booking, fees and scholarships by age phase, bus routes and an application that saves and resumes. It feeds your school's management system rather than replacing it. If it's not the right time, say so and I won't message again.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build admissions websites and portals for private schools in {City}. I sent a sample for {Business Name} a few days ago, did it reach you?\"\n\nIF NO:\n\"No problem. Short version: open morning booking, fees by age phase and an online application that feeds your school system. Who else should see it, the head or the bursar?\"\n\nIF YES:\n\"What did you and the admissions team think?\"\n → let them talk, don't fill the silence\n\"It works alongside your school management system, it doesn't replace it. The build runs {Build Range} depending on the number of campuses and the application portal, then {Care Range} a month for hosting, admissions dates and updates. For your school I'd expect about {Build Price}, which is less than one family's fees for a year.\"\n\"Could we take thirty minutes with you, the head and whoever runs the school system?\"\n\nCLOSE:\n\"I'll send a scope with a timeline that has the admissions path live before your next open morning, and a deposit invoice.\"",
+    "objections": [
+      {
+        "objection": "Our families come through word of mouth.",
+        "handler": "\"The best ones do. Those parents still read every page before the tour, usually twice. The site is what confirms the recommendation, and the application is what converts it.\""
+      },
+      {
+        "objection": "We don't publish fees; we discuss them at the visit.",
+        "handler": "\"Keep the conversation. Publish a range by age phase and the help available. Parents who rule you out on fees without asking never reach the visit at all.\""
+      },
+      {
+        "objection": "Our school management system has an admissions module.",
+        "handler": "\"It manages applications well. It doesn't sell the school or book the open morning. The site sends families into that module with the application already started.\""
+      },
+      {
+        "objection": "The board approves anything like this, and that takes a term.",
+        "handler": "\"Then let's give the board a one-page scope with a pilot: the admissions timeline and open morning booking first, the portal after they see the numbers.\""
+      },
+      {
+        "objection": "We had a website redesign three years ago.",
+        "handler": "\"It looks fine on a laptop. The gap is the phone and the path from enquiry to application. I'd rebuild the admissions journey and keep what's working.\""
+      },
+      {
+        "objection": "We're full this year.",
+        "handler": "\"Good, then the waitlist is the asset. An online waitlist by year group lets you fill late places in a day and plan next year's classes earlier.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range}. For your school about {Build Price}, because it's the admissions path, fees pages and the application. One extra enrolment covers it.\""
+      }
+    ],
+    "email": {
+      "subject": "Admissions path for {Business Name}",
+      "body": "Hi {Owner},\n\nI build admissions websites and portals for private schools and academies around {City}. {Business Name} looks wonderful in its posts, but the application is a PDF and the fees sit behind a prospectus request.\n\nI built a sample rather than ask for a meeting first: an admissions timeline, open morning booking, a page per age phase, fees with scholarships and bursaries, bus routes and an online application that saves and resumes, with marked placeholders where your photos would go. It feeds your school management system:\n\n{demo-link}\n\nIf it's useful, the build runs {Build Range}, plus {Care Range} a month for hosting, admissions dates and updates. If not, no problem, the sample comes down at the end of the month.\n\nWould thirty minutes with you and the head be worthwhile before the next open morning?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"Hi {Owner}, it's {Your Name}. I build admissions websites for private schools in {City}, and I made a sample for {Business Name} with open morning booking, fees by age phase and an online application. I'll email you the link. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm taking the {Business Name} admissions sample down on Friday to free up the space.\n\nShould I keep it up for the head or the board to see? One word is fine either way.",
+    "nurture": "Hi {Owner}, families start shortlisting schools for next year in the autumn, and the open morning booking needs to be live before the first one. Thought of you.\n\nThe admissions sample is still here whenever the team wants another look: {demo-link}"
+  },
+  "pricing": {
+    "bullets": [
+      "Peg the build to one family's fees for a year. One extra enrolment pays for it, and the bursar thinks in exactly that unit.",
+      "Price by campuses, age phases and the application portal, not page count. A school has a lot of pages, few of them hard.",
+      "Quote the site as the front door to their school management system, never as its replacement.",
+      "Put portals on their own lines with their own monthly. Boards approve the site and the portal at different meetings.",
+      "Time the launch to the admissions calendar, live before the first autumn open morning, and sell in late spring.",
+      "Every outcome and leavers' destination shown comes from the school's own report, with their sign-off, never written by you."
+    ],
+    "lineItems": [
+      {
+        "item": "Online application with document upload",
+        "min": 3000,
+        "max": 8000,
+        "unit": "one-time",
+        "description": "Max with save-and-resume, sibling applications, reference requests, payment of the application fee and handoff to the school system.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Open morning and tour booking",
+        "min": 1200,
+        "max": 3000,
+        "unit": "one-time",
+        "description": "Max with per-campus slots, video calls for relocating families, reminders and attendance lists for admissions.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Age phase pages with entry points",
+        "min": 600,
+        "max": 1500,
+        "unit": "per-page",
+        "description": "Max with the curriculum pathway, subject choices, daily timetable, staff profiles and the phase's own admissions dates.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Fees, scholarships and bursaries section",
+        "min": 1000,
+        "max": 2500,
+        "unit": "one-time",
+        "description": "Max with an instalment calculator, sibling discounts and online scholarship and bursary applications.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Bus route finder by neighbourhood",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "description": "Max with a map, pick-up points and times, transport fees and a request form routed to the transport office.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Virtual campus tour",
+        "min": 1500,
+        "max": 5000,
+        "unit": "one-time",
+        "description": "Max with a guided video walk-through per age phase and a booked call with admissions at the end.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Teaching careers and relocation pages",
+        "min": 1200,
+        "max": 3500,
+        "unit": "one-time",
+        "description": "Max with role listings, relocation and housing details, a city guide for overseas hires and an application form.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Second-language admissions pages",
+        "min": 2000,
+        "max": 6000,
+        "unit": "one-time",
+        "description": "Max when the whole admissions path, fees pages and the application are translated.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Accessibility review of the admissions path",
+        "min": 1000,
+        "max": 3000,
+        "unit": "one-time",
+        "description": "Max when the application, booking and fees pages are all reviewed and fixed for keyboard and screen readers.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Admissions season campaign",
+      "min": 1500,
+      "max": 4000,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Local ads aimed at parents of children at each entry age, pointing at the open morning booking, from early autumn until the application deadline.\"",
+      "when": "Pitch in late spring for the autumn admissions season. Ad spend is on top."
+    },
+    {
+      "name": "Campus and classroom photo and film day",
+      "min": 1500,
+      "max": 4500,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A day across the school, only pupils whose parents have given written photo consent, so every age phase page shows real lessons.\"",
+      "when": "Month 2, on a normal teaching day agreed with the head, with the consent list checked first."
+    },
+    {
+      "name": "Google profile upkeep for each campus",
+      "min": 200,
+      "max": 600,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Each campus profile kept current with open mornings, term dates and news, so parents searching for a private school nearby see an active academy.\"",
+      "when": "Day 30. Priced by the number of campuses."
+    },
+    {
+      "name": "Parent review and testimonial programme",
+      "min": 199,
+      "max": 499,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Parents are asked for a review at the end of their child's first term, and written testimonials go on the school site only with their signed consent.\"",
+      "when": "End of the first term after launch."
+    },
+    {
+      "name": "Prospectus redesign as print and web",
+      "min": 2500,
+      "max": 7000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"One prospectus written once and published as school web pages and a printed booklet for open mornings, so the two never disagree.\"",
+      "when": "Month 3, before the next print run."
+    },
+    {
+      "name": "School newsletter and parent email design",
+      "min": 400,
+      "max": 1200,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"A weekly newsletter template and edit for current parents, with highlights that also feed the school's news page for prospective families.\"",
+      "when": "Month 2, if the newsletter is a document attached to an email."
+    },
+    {
+      "name": "Feeder nursery and relocation agent outreach pack",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A one-page school brief and a referral page for the nurseries and relocation agents who recommend academies to families.\"",
+      "when": "Month 4, once the admissions path is live."
+    },
+    {
+      "name": "Alumni and community events pages",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Reunions, school productions and community events with ticketing on the school site, so former students and families stay connected.\"",
+      "when": "Month 6, ahead of the next big school event."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "The school uniform supplier",
+        "whoPays": "The uniform supplier",
+        "min": 3000,
+        "max": 9000,
+        "unit": "one-time",
+        "pitchLine": "\"The shop that supplies your school uniform takes orders on paper at fitting days. I'll build ordering by school, age and size.\"",
+        "whyItWorks": "Uniform suppliers serve several schools and need online ordering. The school's recommendation decides who gets the contract."
+      },
+      {
+        "route": "School bus and transport contractors",
+        "whoPays": "The transport contractor",
+        "min": 3000,
+        "max": 8000,
+        "unit": "one-time",
+        "pitchLine": "\"The company running your school buses has no site for other schools to find them. A route and fleet page would win their next school contract.\"",
+        "whyItWorks": "Contractors bid for school routes, and a reference from a school they serve is their best evidence."
+      },
+      {
+        "route": "After-school club and holiday camp providers",
+        "whoPays": "Each provider, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The coding, sports and music clubs running after school on your campus take bookings by email. Each needs term booking of its own.\"",
+        "whyItWorks": "Providers depend on the school's permission to run on site, and they already share the parents."
+      },
+      {
+        "route": "The school catering contractor",
+        "whoPays": "The catering company",
+        "min": 3000,
+        "max": 8000,
+        "unit": "one-time",
+        "pitchLine": "\"Your school caterer posts menus as a PDF. A menu and allergen page by school, with meal pre-ordering, would sell them to other academies.\"",
+        "whyItWorks": "Caterers compete for school contracts on trust, and allergen information is what parents check."
+      },
+      {
+        "route": "Tutoring centres parents use",
+        "whoPays": "The tutoring centre, at your normal rate",
+        "min": 0,
+        "max": 0,
+        "unit": "one-time",
+        "pitchLine": "\"The tutoring centre your parents use for exam years needs subject booking by level. The school's goodwill makes the introduction.\"",
+        "whyItWorks": "Tutors depend on families from a few schools and value being seen as the school's trusted partner."
+      },
+      {
+        "route": "The parent association",
+        "whoPays": "The parent association, from fundraising",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "pitchLine": "\"Your school's parent association runs fundraisers on spreadsheets. A ticketing and volunteer sign-up site would raise more for the school.\"",
+        "whyItWorks": "Parent associations have their own budgets and decision-makers, and the head's nod is all they need."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Size and order assistant for the uniform supplier",
+        "whoPays": "The uniform supplier, monthly",
+        "min": 99,
+        "max": 299,
+        "unit": "monthly",
+        "pitchLine": "\"Parents enter their child's school, age and measurements, and get the correct uniform list and sizes to order.\"",
+        "whyItWorks": "Wrong sizes and missing items are the supplier's biggest cost at the start of term."
+      },
+      {
+        "route": "Route and delay notice assistant for the bus contractor",
+        "whoPays": "The transport contractor, monthly",
+        "min": 199,
+        "max": 499,
+        "unit": "monthly",
+        "pitchLine": "\"Parents ask where the school bus is or whether a stop has changed, and get an answer from the contractor's live route notes.\"",
+        "whyItWorks": "Bus offices drown in calls every morning. Fewer calls is a number they can see."
+      },
+      {
+        "route": "Club matching assistant for after-school providers",
+        "whoPays": "Each provider, monthly",
+        "min": 49,
+        "max": 149,
+        "unit": "monthly",
+        "pitchLine": "\"A parent says their child's age and interests, and gets the after-school clubs with places on the right school days.\"",
+        "whyItWorks": "Parents ask the same questions every term. Answering them fills places before the first week."
+      },
+      {
+        "route": "Allergen question assistant for the caterer",
+        "whoPays": "The catering company, monthly",
+        "min": 149,
+        "max": 399,
+        "unit": "monthly",
+        "pitchLine": "\"Parents ask whether this week's school lunch contains a given allergen, and the answer comes from the caterer's own recipe sheets, with a contact for anything unclear.\"",
+        "whyItWorks": "Allergen questions take a manager's time every day, and accuracy is the caterer's reputation."
+      },
+      {
+        "route": "Subject placement assistant for the tutoring centre",
+        "whoPays": "The tutoring centre, monthly",
+        "min": 99,
+        "max": 249,
+        "unit": "monthly",
+        "pitchLine": "\"Parents describe the subject and exam their child is preparing for, and get the right tutoring group and a trial lesson booked.\"",
+        "whyItWorks": "Enquiries arrive in the evening, when the centre is busy teaching."
+      },
+      {
+        "route": "Volunteer and event assistant for the parent association",
+        "whoPays": "The parent association, per event",
+        "min": 300,
+        "max": 900,
+        "unit": "one-time",
+        "pitchLine": "\"Parents ask about the school fair's times, tickets and volunteer slots, and the assistant answers and signs them up.\"",
+        "whyItWorks": "Committee members are volunteers with jobs. One big event pays for it."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Open morning reminders and follow-up",
+      "kind": "automation",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 99,
+      "monthlyMax": 299,
+      "pitchLine": "\"Parents who book an open morning get directions and a reminder, then a thank-you from admissions with the application link for their child's age phase.\"",
+      "whenAndWhatItTakes": "Day 30, before the first open morning. Needs the event dates and the admissions team's follow-up wording."
+    },
+    {
+      "name": "Lost enquiry win-back",
+      "kind": "automation",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"Families who enquired or toured but never applied get a short note before each school deadline with the next open morning.\"",
+      "whenAndWhatItTakes": "Month 2. Needs the enquiry list and the admissions calendar."
+    },
+    {
+      "name": "Admissions question assistant",
+      "kind": "ai",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 299,
+      "monthlyMax": 799,
+      "pitchLine": "\"'Is there a place for my child in the middle of the school year' and 'which bus serves our area' get answered from the school's own policies, with a tour booking.\"",
+      "whenAndWhatItTakes": "Month 3. Needs admissions policies, fees, routes and the head's approval of the answers. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Waitlist manager by year group",
+      "kind": "software",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 12000,
+      "monthlyMin": 149,
+      "monthlyMax": 399,
+      "pitchLine": "\"Every waitlisted family by year group and entry date, with a place offered to the next family the day a seat opens at the school.\"",
+      "whenAndWhatItTakes": "Month 3, when the school is full in some year groups. Needs current class sizes and waitlist rules."
+    },
+    {
+      "name": "Entrance assessment and interview scheduler",
+      "kind": "automation",
+      "oneTimeMin": 2500,
+      "oneTimeMax": 6000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"Applicants book their own assessment or interview slot, staff get the timetable and rooms, and parents get reminders and what to bring.\"",
+      "whenAndWhatItTakes": "Month 3, before the assessment season. Needs assessment days, rooms and staff availability."
+    },
+    {
+      "name": "Admissions funnel dashboard",
+      "kind": "software",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 18000,
+      "monthlyMin": 199,
+      "monthlyMax": 599,
+      "pitchLine": "\"Enquiries, tours, applications, offers and acceptances by age phase and source on one screen, so the school knows which open morning actually filled places.\"",
+      "whenAndWhatItTakes": "Month 4, after one admissions round on the new site. Needs the school system's admissions export."
+    },
+    {
+      "name": "Admissions enquiry pipeline",
+      "kind": "software",
+      "oneTimeMin": 8000,
+      "oneTimeMax": 25000,
+      "monthlyMin": 199,
+      "monthlyMax": 699,
+      "pitchLine": "\"Every family's enquiry, tour, application and offer in one pipeline the admissions team works from, instead of an inbox and a spreadsheet.\"",
+      "whenAndWhatItTakes": "Month 4. Needs the admissions stages, staff roles and the school system's import format."
+    },
+    {
+      "name": "Re-enrolment and fee deposit reminders",
+      "kind": "automation",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 99,
+      "monthlyMax": 249,
+      "pitchLine": "\"Current families confirm next year's place and pay the deposit online, with reminders, so the bursar knows who's leaving before the summer.\"",
+      "whenAndWhatItTakes": "Month 5, before the re-enrolment window. Needs deposit amounts, dates and the finance office's rules."
+    },
+    {
+      "name": "Parent notice translation and summary",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 199,
+      "monthlyMax": 499,
+      "pitchLine": "\"School letters are summarised and translated into the languages your families speak, checked by staff before sending.\"",
+      "whenAndWhatItTakes": "Month 5, for schools with many home languages. Needs the language list and a staff checker. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Scholarship and bursary application portal",
+      "kind": "software",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 15000,
+      "monthlyMin": 149,
+      "monthlyMax": 399,
+      "pitchLine": "\"Families apply for school scholarships and bursaries online with the documents uploaded securely, and the committee reviews them in one place.\"",
+      "whenAndWhatItTakes": "Month 5, before the next scholarship round. Needs criteria, documents required and the committee's process."
+    },
+    {
+      "name": "Teacher applicant screening summaries",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 199,
+      "monthlyMax": 499,
+      "pitchLine": "\"Each teaching application becomes a short summary of subjects, qualifications and visa or relocation needs for the head of department, with every decision left to the school.\"",
+      "whenAndWhatItTakes": "Month 6, before the recruitment season. Needs the role requirements. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "School event ticketing and payments",
+      "kind": "software",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 79,
+      "monthlyMax": 199,
+      "pitchLine": "\"Productions, trips and school fairs sold online with seat choice and payment, so the office stops counting envelopes of cash.\"",
+      "whenAndWhatItTakes": "Month 6, before the next production. Needs the event list and payment account."
+    },
+    {
+      "name": "Weekly newsletter drafting assistant",
+      "kind": "ai",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 149,
+      "monthlyMax": 399,
+      "pitchLine": "\"Notes from each age phase become a draft school newsletter in the head's voice, ready for the office to edit and approve each week.\"",
+      "whenAndWhatItTakes": "Month 6. Needs past newsletters and the head's style notes. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Fee payment and instalment portal",
+      "kind": "software",
+      "oneTimeMin": 10000,
+      "oneTimeMax": 30000,
+      "monthlyMin": 299,
+      "monthlyMax": 899,
+      "pitchLine": "\"Parents see school fees, extras and transport charges, choose an instalment plan and pay online, and the bursar sees who is behind.\"",
+      "whenAndWhatItTakes": "Month 7, before the next fee cycle. Needs the finance system's export, fee rules and payment provider."
+    },
+    {
+      "name": "Staff handbook and policy assistant",
+      "kind": "ai",
+      "oneTimeMin": 3000,
+      "oneTimeMax": 8000,
+      "monthlyMin": 199,
+      "monthlyMax": 499,
+      "pitchLine": "\"New teachers ask how the school handles cover, trips or parent meetings, and get the answer from the academy's own handbook, with the page cited.\"",
+      "whenAndWhatItTakes": "Month 8, after the September intake of staff. Needs the current handbook and the head's sign-off. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Alumni records and giving",
+      "kind": "software",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 18000,
+      "monthlyMin": 149,
+      "monthlyMax": 499,
+      "pitchLine": "\"Former students keep their details current, sign up for reunions and give to school appeals online, so the development office has one list.\"",
+      "whenAndWhatItTakes": "Month 9, if the school runs appeals or reunions. Needs existing alumni lists and the appeal plan."
+    },
+    {
+      "name": "Report comment drafting for teachers",
+      "kind": "ai",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 12000,
+      "monthlyMin": 299,
+      "monthlyMax": 799,
+      "pitchLine": "\"Teachers' notes and marks become draft report comments in the school's style, which every teacher edits and signs off before parents see them.\"",
+      "whenAndWhatItTakes": "Month 9, before the next report cycle. Needs the comment style guide and data-handling sign-off. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Parent portal for the whole school",
+      "kind": "software",
+      "oneTimeMin": 15000,
+      "oneTimeMax": 45000,
+      "monthlyMin": 399,
+      "monthlyMax": 1200,
+      "pitchLine": "\"One sign-in for parents: school calendar, reports, fees, permission slips, club bookings and bus changes, fed from the school's systems.\"",
+      "whenAndWhatItTakes": "Month 10, when the separate tools frustrate parents. Needs the school system's integration options and the IT lead."
+    },
+    {
+      "name": "School system and site data sync",
+      "kind": "automation",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 15000,
+      "monthlyMin": 149,
+      "monthlyMax": 499,
+      "pitchLine": "\"Term dates, staff lists and admissions dates flow from the school management system to the site, so nobody updates the same thing twice.\"",
+      "whenAndWhatItTakes": "Month 10. Needs read access to the school system and the IT lead's approval."
+    },
+    {
+      "name": "Enrolment forecast by year group",
+      "kind": "ai",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 15000,
+      "monthlyMin": 299,
+      "monthlyMax": 799,
+      "pitchLine": "\"Forecasts next year's class sizes by year group from enquiries, waitlists and re-enrolments, so the head plans teachers and classrooms early.\"",
+      "whenAndWhatItTakes": "Month 12, after a full admissions cycle of data. Comes with the AI maintenance retainer."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the admissions path for independent schools",
+      "whoPays": "Other private schools, monthly",
+      "min": 199,
+      "max": 599,
+      "unit": "monthly",
+      "pitchLine": "\"I built an admissions timeline, open morning booking and online application that feed one school's system. Every independent school runs the same admissions year.\"",
+      "whyItWorks": "Schools use a few management systems and identical admissions calendars, so one build serves many."
+    },
+    {
+      "route": "School groups and education companies",
+      "whoPays": "The group, per school",
+      "min": 6000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Each school in your group needs its own admissions path on one shared template. I build it once and roll it out school by school.\"",
+      "whyItWorks": "Groups open and acquire schools and want one standard. One contract becomes several schools."
+    },
+    {
+      "route": "Private schools in other cities",
+      "whoPays": "Each new school",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I work with one academy in {City}. Schools in other cities get the same admissions path and application portal with no local conflict.\"",
+      "whyItWorks": "Schools don't compete across cities, so the reference travels."
+    },
+    {
+      "route": "Agency white-label of the admissions build",
+      "whoPays": "The agency, per school",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "pitchLine": "\"When a school asks your agency for an online application that feeds their management system, resell mine instead of building that piece yourselves.\"",
+      "whyItWorks": "The integration is the slow part, and agencies would rather buy it than learn it."
+    },
+    {
+      "route": "Independent school associations",
+      "whoPays": "The association",
+      "min": 8000,
+      "max": 25000,
+      "unit": "one-time",
+      "pitchLine": "\"Parents search your association's member list for schools. A school finder with open morning dates from every member school makes it useful.\"",
+      "whyItWorks": "Associations sell membership on the value they send schools, and a finder they can show is that value."
+    },
+    {
+      "route": "Relocation and destination service firms",
+      "whoPays": "The relocation firm",
+      "min": 5000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Your consultants help relocating families pick schools from spreadsheets. A school comparison tool with tour booking makes that service look as good as it is.\"",
+      "whyItWorks": "Relocation firms sell to employers on service quality, and schools happily supply their data."
+    },
+    {
+      "route": "Corporate HR teams moving staff with families",
+      "whoPays": "The employer's mobility team",
+      "min": 3000,
+      "max": 9000,
+      "unit": "one-time",
+      "pitchLine": "\"Your transferees ask the same school questions every move. A schools guide for {City} with admissions dates answers them before HR has to.\"",
+      "whyItWorks": "Mobility teams are judged on how smoothly families settle, and schools are the first worry."
+    },
+    {
+      "route": "Early years nursery groups feeding private schools",
+      "whoPays": "The nursery group",
+      "min": 8000,
+      "max": 20000,
+      "unit": "one-time",
+      "pitchLine": "\"Your nurseries send children to private schools every year. The same admissions and tour booking build fits a nursery group's waitlist.\"",
+      "whyItWorks": "Nursery groups share families with schools and need waitlists and tours just the same."
+    },
+    {
+      "route": "Boarding and international student agents",
+      "whoPays": "The student agency",
+      "min": 4000,
+      "max": 12000,
+      "unit": "one-time",
+      "pitchLine": "\"You place students in boarding schools abroad. An application tracker where families see each school's status cuts your back-and-forth emails.\"",
+      "whyItWorks": "Agents manage many applications to many schools, and the school-side build already exists."
+    },
+    {
+      "route": "Exam boards and curriculum providers' school finders",
+      "whoPays": "The curriculum provider",
+      "min": 8000,
+      "max": 25000,
+      "unit": "one-time",
+      "pitchLine": "\"Parents look for schools that teach your curriculum. A finder fed by the schools' own admissions pages would send families to your accredited schools.\"",
+      "whyItWorks": "Curriculum providers grow by school numbers, and a finder that helps schools fill places helps them sign more."
+    },
+    {
+      "route": "School management system resellers",
+      "whoPays": "The reseller, per school",
+      "min": 1000,
+      "max": 3000,
+      "unit": "one-time",
+      "pitchLine": "\"Your schools keep asking for a public admissions site that feeds your system. Offer mine as the add-on you recommend.\"",
+      "whyItWorks": "Resellers want stickier customers, and a working admissions site makes their system look better."
+    },
+    {
+      "route": "Rescue a broken admissions system switchover",
+      "whoPays": "The stuck school",
+      "min": 3000,
+      "max": 10000,
+      "unit": "one-time",
+      "pitchLine": "\"The school moved to a new management system mid-admissions and the online application stopped reaching it. I can reconnect it before the deadline.\"",
+      "whyItWorks": "A school losing applications in admissions season pays to fix it the same week."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "School site and admissions path plus care plan, one contract",
+      "min": 15000,
+      "max": 40000,
+      "unit": "one-time",
+      "trigger": "The head, bursar and admissions lead approve the scope.",
+      "line": "\"The school site and the care plan go on one contract, so new admissions dates or a fees change are one message to me.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Open morning reminders and follow-up",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "trigger": "The first open morning bookings arrive through the site.",
+      "line": "\"Those families booked a school visit. A reminder and a follow-up with the application link turns more visits into applications.\""
+    },
+    {
+      "rung": 3,
+      "day": 60,
+      "offer": "Admissions season campaign",
+      "min": 1500,
+      "max": 4000,
+      "unit": "monthly",
+      "trigger": "Autumn open mornings are set and one age phase has places to fill.",
+      "line": "\"Let's point local ads at the open morning for the age phase with places, until the deadline.\""
+    },
+    {
+      "rung": 4,
+      "day": 120,
+      "offer": "Admissions enquiry pipeline",
+      "min": 8000,
+      "max": 25000,
+      "unit": "one-time",
+      "trigger": "The admissions team says families are slipping between the inbox and the spreadsheet.",
+      "line": "\"Every school enquiry, tour and application in one pipeline means nobody falls through the gap again.\""
+    },
+    {
+      "rung": 5,
+      "day": 180,
+      "offer": "Admissions funnel dashboard",
+      "min": 6000,
+      "max": 18000,
+      "unit": "one-time",
+      "trigger": "The board asks which open morning or campaign actually filled places.",
+      "line": "\"One screen from enquiry to acceptance by age phase gives the board that answer every term.\""
+    },
+    {
+      "rung": 6,
+      "day": 240,
+      "offer": "Re-enrolment and fee deposit reminders",
+      "min": 2000,
+      "max": 5000,
+      "unit": "one-time",
+      "trigger": "The bursar starts chasing next year's re-enrolment confirmations by email.",
+      "line": "\"Current families can confirm their place and pay the school deposit online, with reminders doing the chasing.\""
+    },
+    {
+      "rung": 7,
+      "day": 300,
+      "offer": "Fee payment and instalment portal",
+      "min": 10000,
+      "max": 30000,
+      "unit": "one-time",
+      "trigger": "Fee collection and instalment questions take up the finance office each term.",
+      "line": "\"Parents can see school fees, pick a plan and pay online, and the bursar sees who's behind without a phone call.\""
+    },
+    {
+      "rung": 8,
+      "day": 365,
+      "offer": "Parent portal for the whole school",
+      "min": 15000,
+      "max": 45000,
+      "unit": "one-time",
+      "trigger": "Parents complain about logging into several school tools for reports, fees and clubs.",
+      "line": "\"One parent sign-in for the calendar, reports, fees and clubs is the next step the school's families will notice.\""
+    }
+  ]
+}

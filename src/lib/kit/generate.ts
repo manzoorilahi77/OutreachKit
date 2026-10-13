@@ -1,6 +1,7 @@
 // Ported from the original's build handler (docs/source/territory-desk.html). Pure: no DOM, no globals.
 // Returns the kit as data; the console renders it and kit/text.ts flattens it for the golden tests.
-import { AICROSS, AIUP, CROSS, FAM, OPPS, STATES, STYLE, TPL, TONE } from "@/data";
+import { AICROSS, AIUP, CROSS, FAM, OPPS, STYLE, TPL, TONE } from "@/data";
+import { regionName } from "@/lib/market/regions";
 import type { Inline } from "@/content/types";
 import { sectionPlan, buildPromptText } from "./buildPrompt";
 import { findCategory } from "./categories";
@@ -20,7 +21,7 @@ const fee = (lo: number, hi: number, none: string) => (lo ? money(lo) + "–" + 
 export function buildContext(input: KitInput): KitContext {
   const c = findCategory(input.cat);
   if (!c) throw new Error(`Unknown category: ${input.cat}`);
-  const stName = STATES[input.st][0];
+  const stName = regionName(input.st);
   const [msLabel, msMult] = marketSize(input.st, input.city);
   const msShort = msLabel.split(" —")[0]!.toLowerCase();
   const fam = FAM[c.f];

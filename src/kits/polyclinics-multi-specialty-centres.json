@@ -1,0 +1,875 @@
+{
+  "schemaVersion": 1,
+  "category": "Polyclinics & multi-specialty centres",
+  "slug": "polyclinics-multi-specialty-centres",
+  "provenance": {
+    "generatedBy": "claude-opus-5-5 · expansion batch (healthcare + mid-size)",
+    "generatedAt": "2026-10-13",
+    "reviewStatus": "unreviewed",
+    "reviewedBy": null,
+    "notes": "Leaned on how patients choose a specialist at a large centre: doctor first, then insurance network, language and clinic days. Licence numbers are placeholders. Unsure on the insurer pre-approval tracker and patient app ranges; they swing with the clinic system's integration options."
+  },
+  "pageStructurePlus": [
+    {
+      "section": "Doctor directory with specialty and language filters",
+      "contains": "Every doctor at the polyclinic with photo slot, specialty, languages spoken, gender, clinic days and a book-with-this-doctor button, filterable on a phone",
+      "why": "At a multi-specialty centre, patients choose the doctor first and the building second. Filters by language and gender matter to many families."
+    },
+    {
+      "section": "A page for each specialty department",
+      "contains": "Per department: what kinds of visits it handles in general terms, its doctors, clinic days, equipment on site, insurance accepted and booking for that specialty only",
+      "why": "Someone searching for a paediatrician or a dermatologist needs that department's page, not the medical centre's home page. Each one also ranks on its own."
+    },
+    {
+      "section": "Health check packages",
+      "contains": "Each package with the tests included listed plainly, who it is designed for, preparation notes, [price] placeholders and online booking, with no claims about what it will find",
+      "why": "Packages are planned purchases, often for a parent or a whole family. A clear list of what's included is what turns a browser into a booking."
+    },
+    {
+      "section": "Insurance networks and direct billing",
+      "contains": "The insurance networks the centre belongs to as a list the billing team confirms, how direct billing works, what needs pre-approval and how long approval usually takes in plain words",
+      "why": "Network membership decides which polyclinic many patients can use at all. Answering it on the page saves reception a call per patient."
+    },
+    {
+      "section": "Doctor qualifications and licence display",
+      "contains": "Per doctor: qualifications, where trained, years in practice, languages and [licence number] as placeholders the medical director verifies before publishing",
+      "why": "Patients check a specialist's background before booking, and in some places the regulator expects licence details shown with the doctor's name."
+    },
+    {
+      "section": "Corporate and family health plans",
+      "contains": "Employer health check and clinic-access packages, family bundles, how an HR manager requests a proposal, and a contact for the corporate desk",
+      "why": "Employers and large families buy once for many people. A dedicated page puts the multi-specialty centre on the shortlist."
+    }
+  ],
+  "designDirections": [
+    {
+      "id": "a",
+      "themeId": "C10",
+      "siteType": "local-conversion",
+      "name": "Specialty Finder",
+      "heroLayout": "card-stack",
+      "mood": ["orderly", "clear", "direct"],
+      "bestFor": "Centres with several specialties that need one clean way to pick a department and request a visit",
+      "pairsWithTier": "starter",
+      "headlineSample": "Every specialty under one roof in {City}",
+      "whyItFits": "Steel blue and a neutral grotesque keep a long list of departments readable. The hero is a grid of specialty cards, so the visitor's first tap is the department they need."
+    },
+    {
+      "id": "b",
+      "themeId": "C2",
+      "siteType": "booking-first",
+      "name": "Doctor First",
+      "heroLayout": "split-photo",
+      "mood": ["reassuring", "refined", "personal"],
+      "bestFor": "Established polyclinics booking by doctor, specialty and insurance network, with a full doctor directory",
+      "pairsWithTier": "standard",
+      "headlineSample": "Book a {City} specialist by name, language or day",
+      "whyItFits": "The family's Private Vault combo. A warm cream ground and a refined serif feel like a private clinic, which suits families choosing a specialist they'll see for years."
+    },
+    {
+      "id": "c",
+      "themeId": "C4",
+      "siteType": "premium-brand",
+      "name": "Medical Centre Flagship",
+      "heroLayout": "full-bleed-photo",
+      "mood": ["prestigious", "assured", "polished"],
+      "bestFor": "Large multi-specialty centres with health check packages, corporate plans and patients who compare on reputation",
+      "pairsWithTier": "premium",
+      "headlineSample": "A {City} medical centre families trust for every specialty",
+      "whyItFits": "Navy with brass accents and an editorial serif carry a flagship feel without looking cold. It suits a centre selling packages and corporate plans alongside visits."
+    }
+  ],
+  "openers": [
+    {
+      "angle": "Departments behind one form",
+      "line": "Your medical centre lists many specialties on the home page, but each one leads to the same contact form. A parent looking for a paediatrician wants that department's doctors and clinic days.",
+      "hook": "Click three specialties on their site. If they all end at one general form, the angle holds.",
+      "linkLine": "A page and booking for each specialty department: {demo-link}"
+    },
+    {
+      "angle": "No doctor directory",
+      "line": "I couldn't find a list of your doctors with their specialty, languages and clinic days. At a polyclinic, most patients choose the doctor first and the centre second.",
+      "hook": "Look for a doctors or team page. Note whether it shows specialty, languages and days.",
+      "linkLine": "A doctor directory with specialty and language filters: {demo-link}"
+    },
+    {
+      "angle": "Call-back form instead of booking",
+      "line": "Booking at your polyclinic is a form that says someone will call back. A patient who wants an evening dermatology slot would rather pick the time than wait by the phone.",
+      "hook": "Try the booking path on their site. Note whether it ends at a request or a real time slot.",
+      "linkLine": "Booking by specialty, doctor and time: {demo-link}"
+    },
+    {
+      "angle": "Insurance network questions",
+      "line": "People keep asking in your comments whether the medical centre is in their insurance network. A page listing networks and direct billing would take those calls off reception.",
+      "hook": "Scroll their comments and reviews for insurance or network questions. Quote one.",
+      "linkLine": "Insurance networks and direct billing on one clinic page: {demo-link}"
+    },
+    {
+      "angle": "Health check packages in a PDF",
+      "line": "Your health check packages live in a PDF on social media. A package page with what's included, preparation notes and booking would sell them every week, not just after a post.",
+      "hook": "Find their latest package post. Note whether the site has the same packages with booking.",
+      "linkLine": "Health check packages people can book at the medical centre: {demo-link}"
+    },
+    {
+      "angle": "Credentials not shown",
+      "line": "Your doctor profiles show a name and specialty but no qualifications, languages or licence details. Someone choosing a specialist at a medical centre checks those before booking.",
+      "hook": "Open two doctor profiles. Note what's missing; never quote a licence number you didn't see.",
+      "linkLine": "Specialist profiles with verified qualifications: {demo-link}"
+    },
+    {
+      "angle": "One language on the site",
+      "line": "Your posts are written in two languages, but the polyclinic website is in one. Families choose a medical centre where they can read every page, including the doctor profiles.",
+      "hook": "Only if they post in more than one language. Note which language the site lacks.",
+      "linkLine": "A bilingual multi-specialty site: {demo-link}"
+    },
+    {
+      "angle": "New specialist joined",
+      "line": "Saw a new specialist joined the centre recently. A profile with their clinic days and booking would fill their first weeks faster than a single announcement post.",
+      "hook": "Only if they announced a new doctor. Note the name and specialty from the post.",
+      "linkLine": "A specialist profile ready to take bookings: {demo-link}"
+    },
+    {
+      "angle": "Heavy site on a phone",
+      "line": "Your medical centre site was slow on my phone and the specialties menu hid behind a second menu. Most patients look for a specialist on their phone between other things.",
+      "hook": "Load it on mobile data and count the taps to book any specialty. Screenshot it for when they reply.",
+      "linkLine": "The polyclinic site rebuilt for a phone: {demo-link}"
+    },
+    {
+      "angle": "Corporate plans with no page",
+      "line": "Your listing mentions corporate health plans, but there's no page where an HR manager can see the options or request a proposal from the medical centre.",
+      "hook": "Check the listing and site for corporate or employer wording. Note whether there's a contact for it.",
+      "linkLine": "A corporate health plan page for the centre: {demo-link}"
+    },
+    {
+      "angle": "Reviews that name doctors",
+      "line": "Many of your reviews thank a specific doctor by name. Those public comments belong on that doctor's profile, where a patient comparing specialists will read them.",
+      "hook": "Read recent reviews and list which doctors are named most. Quote the warmest one.",
+      "linkLine": "Doctor profiles with their public reviews: {demo-link}"
+    },
+    {
+      "angle": "Lab and pharmacy on site",
+      "line": "Your centre has its own lab and pharmacy, which saves patients a second trip after a specialist visit. The site barely mentions either.",
+      "hook": "Check their listing photos or posts for an on-site lab or pharmacy. Note whether the site mentions them.",
+      "linkLine": "Lab and pharmacy shown on the medical centre site: {demo-link}"
+    },
+    {
+      "angle": "Evening and weekend clinics",
+      "line": "Several of your specialties run evening or weekend clinics, but the site doesn't say which. Working patients choose the polyclinic that fits after office hours.",
+      "hook": "Find any post or listing note about late or weekend clinics. Note which departments.",
+      "linkLine": "Clinic days and evening hours by specialty: {demo-link}"
+    },
+    {
+      "angle": "Recruiting doctors and nurses",
+      "line": "Saw your centre is recruiting doctors and nurses. Clinicians who might relocate for a role study a medical centre's site and doctor profiles before they apply.",
+      "hook": "Only if they've posted vacancies recently. Note the roles and specialties.",
+      "linkLine": "A careers page for the multi-specialty centre: {demo-link}"
+    },
+    {
+      "angle": "A specific recent post",
+      "line": "That {specific recent job} post from your centre explained a specialty's service clearly without overselling it. It deserves to live on that department's page.",
+      "hook": "Pick their newest awareness-day or department post and name it exactly. Never reference a patient.",
+      "linkLine": "That department's page with your post on it: {demo-link}"
+    }
+  ],
+  "sequence": {
+    "dm1": "Hi {Owner}, I was looking at medical centres in {City} and noticed {Business Name} has many specialties, but no doctor directory and no way to book a specific department online.\n\nI build sites for polyclinics: a doctor directory with language and specialty filters, a page per department, booking by doctor and an insurance network page. I've sketched a sample for your centre, with marked placeholders where your photos would go.\n\nShall I send it? And is it best with you, or with your general manager or marketing lead?",
+    "dm2": "{Owner}, following up on my note about {Business Name}. Here's the sample: {demo-link}\n\nIt has a doctor directory, a page for each specialty, booking by doctor and time, health check packages, an insurance network page and a corporate plans page. Doctor licence details are placeholders for your medical director to verify. Nothing goes live without your approval.",
+    "call": "\"Hi, is this {Owner}? I'm {Your Name}, I build websites for multi-specialty medical centres here in {City}. I sent a note a few days ago about {Business Name}, did it reach you?\"\n\nIF RECEPTION ANSWERS:\n\"Thank you. Who looks after the website and marketing for the centre? I'd like to send them a sample.\"\n\nIF NO:\n\"Short version: I built a sample site with a doctor directory, a page for each department, booking by doctor and an insurance page, with marked placeholders where your photos would go. Can I email it to you and your medical director?\"\n\nIF YES:\n\"What did you and the medical director think?\"\n → let them talk, don't fill the silence\n\"It connects to the clinic system you already run, so doctors' real clinic days show on the site. The build runs {Build Range} depending on specialties, languages and integrations, then {Care Range} a month for hosting, new doctor profiles and updates. For a centre your size I'd quote about {Build Price}, phased by department.\"\n\"Could we take twenty minutes with you, the medical director and whoever handles insurance?\"\n\nCLOSE:\n\"I'll send a phased scope you can share. Doctors' details are verified by your medical director before anything publishes.\"",
+    "objections": [
+      {
+        "objection": "Every doctor will want their profile written differently.",
+        "handler": "\"They can. Each profile follows one structure, the doctor edits their own paragraph, and the medical director verifies qualifications. I chase the doctors so your team doesn't.\""
+      },
+      {
+        "objection": "Our clinic system's booking is clunky; we'd rather take calls.",
+        "handler": "\"Then the site books into the slots you choose to release, and everything else still comes to reception. Patients who want to pick a time can; the rest still call.\""
+      },
+      {
+        "objection": "The regulator has to approve our advertising.",
+        "handler": "\"Understood. Package and specialty pages are written without claims and organised so your team can submit them for approval where that's required. Nothing promotional goes live first.\""
+      },
+      {
+        "objection": "We already have a site from the group's IT team.",
+        "handler": "\"Fine, then let's see if it answers what patients ask: which doctor, which language, which insurance, which day. If it does, keep it. If not, I can build into it or replace it.\""
+      },
+      {
+        "objection": "We'd need it in two languages.",
+        "handler": "\"Planned from the start. Both languages share one structure, and a fluent staff member checks the translation before every page publishes.\""
+      },
+      {
+        "objection": "It's a big decision for the partners.",
+        "handler": "\"It should be. I'll send a one-page phased scope; phase one is the directory and two departments, so the partners see it working before committing to the rest.\""
+      },
+      {
+        "objection": "How much?",
+        "handler": "\"{Build Range} depending on specialties, languages and integrations. For your centre about {Build Price}, plus {Care Range} a month for hosting, new doctor profiles and updates.\""
+      }
+    ],
+    "email": {
+      "subject": "Doctor directory and booking for {Business Name}",
+      "body": "Hi {Owner},\n\nI build websites for multi-specialty medical centres around {City}. {Business Name} has a wide range of specialties, but the site has no doctor directory, no page per department and no way to book a specific doctor.\n\nI built a sample first rather than ask for a meeting: a doctor directory with language and specialty filters, a page for each department, booking by doctor and time, health check packages and an insurance network page, with marked placeholders where your photos would go:\n\n{demo-link}\n\nIf it's useful, I finish it in phases for {Build Range}, connected to your clinic system, plus {Care Range} a month for hosting and new doctor profiles. Your medical director verifies every doctor's details before they publish.\n\nWorth twenty minutes this week?\n\n{Your Name}\n{Your Studio} · {Your Phone}\n{Your Physical Address}\n\nReply \"stop\" and I won't contact you again."
+    },
+    "voicemail": "\"{Owner}, it's {Your Name}. I build websites for medical centres in {City}, and I made a sample for {Business Name} with a doctor directory and booking for each specialty. I'll email the link so you can share it with the medical director. {Your Phone}. Thanks.\"",
+    "takedown": "{Owner}, I'm taking down the doctor directory sample I built for {Business Name} on Friday.\n\nShould I keep it up for the partners to look at? One word is fine either way.",
+    "nurture": "Hi {Owner}, centres often add a specialty or a few doctors at the start of a new year, and you came to mind.\n\nThe sample with the doctor directory and department booking is still here for {Business Name}, same scope and price. {demo-link} if you'd like another look."
+  },
+  "pricing": {
+    "bullets": [
+      "Price by department and doctor count; a polyclinic with many specialties is many small sites sharing one booking engine.",
+      "Quote the clinic-system connection after a technical call; showing real clinic days is the hardest and most valuable part.",
+      "Charge for the second language as its own phase, with a fluent reviewer named in the scope.",
+      "Doctor profiles are cheap to build and slow to approve; price the chasing and verification, not the page.",
+      "Health check packages and corporate plans each need the medical director's sign-off and, in some places, regulator approval.",
+      "Never write diagnostic or outcome claims; testimonials and patient photos only with written consent on file."
+    ],
+    "lineItems": [
+      {
+        "item": "Doctor profile page (each)",
+        "min": 150,
+        "max": 400,
+        "unit": "per-page",
+        "description": "Max with verified qualifications, languages, clinic days, public reviews and a booking link straight to that doctor.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Specialty department page (each)",
+        "min": 400,
+        "max": 1000,
+        "unit": "per-page",
+        "description": "Max with its own doctors, equipment notes, insurance list, preparation guidance and specialty-only booking.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Clinic-system booking by doctor and specialty",
+        "min": 5000,
+        "max": 14000,
+        "unit": "one-time",
+        "description": "Max when real slots come from every doctor's schedule with visit types, insurance rules and deposits.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Health check package pages with booking",
+        "min": 1500,
+        "max": 4000,
+        "unit": "one-time",
+        "description": "Max with several packages, add-on tests, preparation notes and booking tied to lab availability.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Second-language version of the site",
+        "min": 3000,
+        "max": 9000,
+        "unit": "one-time",
+        "description": "Max when every doctor profile and department page is translated, right-to-left layout is needed, and fluent staff review all of it.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Insurance network and direct billing page",
+        "min": 500,
+        "max": 1500,
+        "unit": "one-time",
+        "description": "Max when networks differ by department and the pre-approval process is explained step by step.",
+        "scalesWithMarket": true
+      },
+      {
+        "item": "Corporate plan request form",
+        "min": 1200,
+        "max": 3000,
+        "unit": "one-time",
+        "description": "Max with headcount, package choice, billing details and routing to the corporate desk.",
+        "scalesWithMarket": true
+      }
+    ]
+  },
+  "whatElseYouSell": [
+    {
+      "name": "Google profiles for the centre and each doctor",
+      "min": 400,
+      "max": 1200,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Patients search a specialist's own name as often as the medical centre's. I keep the centre's profile and each doctor's listing accurate, with clinic days and a booking link.\"",
+      "when": "Day 30, once doctor profiles are live."
+    },
+    {
+      "name": "Doctor portrait sessions",
+      "min": 1000,
+      "max": 3000,
+      "unit": "per-shoot",
+      "scalesWithMarket": true,
+      "pitchLine": "\"One day of consistent portraits for every doctor and a few department shots, so the directory looks like one polyclinic, not a collage of passport photos.\"",
+      "when": "Month 2, or when several new doctors join."
+    },
+    {
+      "name": "Promotion approval file for packages and specialties",
+      "min": 2000,
+      "max": 5000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Health check offers and specialty promotions often need regulator sign-off in some countries. I write the polyclinic copy without claims and assemble the file your team submits.\"",
+      "when": "Month 2, before any package promotion runs."
+    },
+    {
+      "name": "Secure enquiry and booking forms with compliant hosting",
+      "min": 1500,
+      "max": 4000,
+      "unit": "one-time",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Department enquiries and doctor bookings carry health details. Forms ask only for what booking needs, sit on hosting set up for medical data, and your privacy officer gets the paperwork.\"",
+      "when": "Before booking opens."
+    },
+    {
+      "name": "Testimonial, consent and patient-photo policy",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A short policy every department follows: no patient story or photo without signed consent, how consent is stored, and how a patient withdraws it. The multi-specialty centre speaks with one voice.\"",
+      "when": "Month 1, with the privacy pages."
+    },
+    {
+      "name": "Accessibility audit in both site languages",
+      "min": 2000,
+      "max": 5000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Older patients and people with disabilities use a polyclinic more than most sites. I audit the directory and booking in each language, fix the failures and publish an access statement.\"",
+      "when": "Month 3, after the second language launches."
+    },
+    {
+      "name": "Health awareness calendar campaigns",
+      "min": 800,
+      "max": 2500,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"Awareness days give each department a reason to post. I plan the calendar, write general-information posts the specialists approve, and link each one to that department's booking.\"",
+      "when": "Quarterly, planned a month ahead."
+    },
+    {
+      "name": "Review invitations by doctor",
+      "min": 300,
+      "max": 900,
+      "unit": "monthly",
+      "scalesWithMarket": false,
+      "pitchLine": "\"Patients are invited to review the specialist they saw, not just the building, with wording the medical director approves. Doctors' profiles fill with real, public comments.\"",
+      "when": "Day 60, after privacy sign-off."
+    },
+    {
+      "name": "Corporate plan sales sheet and landing page",
+      "min": 800,
+      "max": 2000,
+      "unit": "one-time",
+      "scalesWithMarket": true,
+      "pitchLine": "\"A one-page sheet and a landing page for HR managers showing the centre's specialties, packages and direct billing, so the corporate desk has something to send after every call.\"",
+      "when": "Month 3, with the corporate plans page."
+    }
+  ],
+  "crossSell": {
+    "withoutAI": [
+      {
+        "route": "Home nursing providers the centre refers to",
+        "whoPays": "The home nursing company",
+        "min": 4000,
+        "max": 10000,
+        "unit": "one-time",
+        "pitchLine": "\"When your doctors arrange nursing at home after a clinic visit, families look up the provider. Those companies need a clear service and booking site, and your introduction helps.\"",
+        "whyItWorks": "Home nursing providers depend on clinic referrals and take a referring centre's suggestion seriously."
+      },
+      {
+        "route": "Medical supply and mobility shops nearby",
+        "whoPays": "The medical supply shop",
+        "min": 2500,
+        "max": 6000,
+        "unit": "one-time",
+        "pitchLine": "\"Patients leave your specialists with a list of braces, monitors or mobility aids. The medical supply shop down the road needs a catalogue with click-and-collect.\"",
+        "whyItWorks": "Supply shops live on clinic foot traffic and value the centre's goodwill."
+      },
+      {
+        "route": "Visiting specialists' own private practices",
+        "whoPays": "The specialist's private practice",
+        "min": 3000,
+        "max": 8000,
+        "unit": "one-time",
+        "pitchLine": "\"Some of your visiting consultants also run a practice elsewhere. Once they've seen their profile on your polyclinic site, they'll want the same for their own clinic.\"",
+        "whyItWorks": "Doctors who like their profile are the easiest introduction there is."
+      },
+      {
+        "route": "Insurance brokers selling corporate health plans",
+        "whoPays": "The insurance brokerage",
+        "min": 3000,
+        "max": 8000,
+        "unit": "one-time",
+        "pitchLine": "\"The brokers who place employers into your network need a plain site explaining plans and networks. Your corporate desk works with them weekly.\"",
+        "whyItWorks": "Brokers and the corporate desk send each other business and trust each other's recommendations."
+      },
+      {
+        "route": "Physiotherapy centres that take post-specialist referrals",
+        "whoPays": "The physiotherapy centre",
+        "min": 4000,
+        "max": 9000,
+        "unit": "one-time",
+        "pitchLine": "\"When your orthopaedic doctors refer patients for physio outside the centre, that clinic's booking page is the next step. A word from you opens the conversation.\"",
+        "whyItWorks": "Physio centres compete for specialist referrals and listen to the source."
+      },
+      {
+        "route": "Patient escort and medical translation services",
+        "whoPays": "The patient services company",
+        "min": 2000,
+        "max": 5000,
+        "unit": "one-time",
+        "pitchLine": "\"Patients travelling in for treatment use escort and translation services your centre already knows. They need a site that explains services and takes bookings in several languages.\"",
+        "whyItWorks": "These firms get their clients through clinics and value any introduction from one."
+      }
+    ],
+    "withAI": [
+      {
+        "route": "Visit scheduling assistant for home nursing providers",
+        "whoPays": "The home nursing company, monthly",
+        "min": 199,
+        "max": 499,
+        "unit": "monthly",
+        "pitchLine": "\"Families request home nursing visits by message; an assistant offers times that fit the nurses' rota and confirms them, passing anything clinical to a coordinator.\"",
+        "whyItWorks": "Coordinators spend hours on scheduling messages, and faster replies win the family."
+      },
+      {
+        "route": "Order and stock assistant for medical supply shops",
+        "whoPays": "The medical supply shop, monthly",
+        "min": 149,
+        "max": 349,
+        "unit": "monthly",
+        "pitchLine": "\"Patients leaving the medical centre ask whether a brace or monitor is in stock and in which size. An assistant answers from the shop's own stock list and holds the item for collection.\"",
+        "whyItWorks": "Small shops can't answer the phone all day, and each held item is a sale."
+      },
+      {
+        "route": "Plan comparison assistant for insurance brokers",
+        "whoPays": "The insurance brokerage, monthly",
+        "min": 199,
+        "max": 499,
+        "unit": "monthly",
+        "pitchLine": "\"Employers ask brokers which clinics are in which plan. An assistant answers from the broker's own network lists and books a call for anything about cover.\"",
+        "whyItWorks": "Brokers sell on responsiveness, and network questions are repetitive."
+      },
+      {
+        "route": "Home exercise reminders for physiotherapy centres",
+        "whoPays": "The physiotherapy centre, monthly",
+        "min": 149,
+        "max": 399,
+        "unit": "monthly",
+        "pitchLine": "\"Patients get reminders of the exercises their physiotherapist set, worded from the therapist's own notes and approved by them, with a link to book the next session.\"",
+        "whyItWorks": "Physio centres want patients to come back for the full course, and the reminders bring them."
+      },
+      {
+        "route": "Booking and profile assistant for visiting specialists",
+        "whoPays": "The specialist's private practice, monthly",
+        "min": 149,
+        "max": 399,
+        "unit": "monthly",
+        "pitchLine": "\"Patients message the specialist's private practice about fees, location and availability, and an assistant answers from the practice's own details and books a slot.\"",
+        "whyItWorks": "Solo specialists have thin front desks, and quick replies fill their clinic days."
+      },
+      {
+        "route": "Travel and document checklist assistant for escort services",
+        "whoPays": "The patient services company, monthly",
+        "min": 149,
+        "max": 399,
+        "unit": "monthly",
+        "pitchLine": "\"Travelling patients get a checklist of documents, appointment times and pickup details in their language, drafted by an assistant and checked by the coordinator.\"",
+        "whyItWorks": "Coordinators juggle many patients, and fewer missed documents mean fewer missed appointments."
+      }
+    ]
+  },
+  "softwareAI": [
+    {
+      "name": "Missed-call callback queue by department",
+      "kind": "automation",
+      "oneTimeMin": 800,
+      "oneTimeMax": 2000,
+      "monthlyMin": 149,
+      "monthlyMax": 399,
+      "pitchLine": "\"Unanswered calls are logged by the specialty the caller chose, texted a booking link for that department, and placed on reception's callback list in order.\"",
+      "whenAndWhatItTakes": "Day 30. Needs their phone menu options and wording the medical director approves."
+    },
+    {
+      "name": "Doctor-by-doctor review response suggestions",
+      "kind": "ai",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 2500,
+      "monthlyMin": 199,
+      "monthlyMax": 499,
+      "pitchLine": "\"When a review names one of your doctors, the patient relations team gets a suggested reply in the polyclinic's tone that thanks them without confirming any visit.\"",
+      "whenAndWhatItTakes": "Month 2. Needs approved reply examples and privacy rules. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Package booking confirmations with preparation notes",
+      "kind": "automation",
+      "oneTimeMin": 1000,
+      "oneTimeMax": 3000,
+      "monthlyMin": 149,
+      "monthlyMax": 399,
+      "pitchLine": "\"Anyone booking a health check package gets a confirmation with fasting and preparation notes for that package and a reminder the evening before.\"",
+      "whenAndWhatItTakes": "Month 2. Needs preparation notes per package approved by the lab and medical director."
+    },
+    {
+      "name": "Live clinic days from the scheduling system",
+      "kind": "software",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 16000,
+      "monthlyMin": 300,
+      "monthlyMax": 900,
+      "pitchLine": "\"Each doctor's real clinic days and next free slot show on their profile, pulled from the centre's schedule, so the directory is never out of date.\"",
+      "whenAndWhatItTakes": "Month 3. Needs integration access to their clinic system and a list of visit types."
+    },
+    {
+      "name": "Health check package checkout",
+      "kind": "software",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 200,
+      "monthlyMax": 600,
+      "pitchLine": "\"Patients choose a health check package, add tests, pick a date and pay online, and the lab sees the booking with everything they need.\"",
+      "whenAndWhatItTakes": "Month 3. Needs package prices, add-on rules and the payment account they already use."
+    },
+    {
+      "name": "Department finder assistant on the site",
+      "kind": "ai",
+      "oneTimeMin": 4000,
+      "oneTimeMax": 10000,
+      "monthlyMin": 500,
+      "monthlyMax": 1500,
+      "pitchLine": "\"A patient types what they need in plain words and the assistant suggests which polyclinic department books that kind of visit. It never diagnoses and sends urgent symptoms to emergency services.\"",
+      "whenAndWhatItTakes": "Month 4. Needs department descriptions, approved routing rules and the medical director's sign-off. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Insurance pre-approval tracker",
+      "kind": "software",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 15000,
+      "monthlyMin": 300,
+      "monthlyMax": 800,
+      "pitchLine": "\"Every procedure waiting on insurer approval sits on one board with its status and date, so the billing team chases the right ones and patients get told quickly.\"",
+      "whenAndWhatItTakes": "Month 4. Needs their approval workflow and the insurers they deal with most."
+    },
+    {
+      "name": "Pre-approval request drafts for doctor review",
+      "kind": "ai",
+      "oneTimeMin": 5000,
+      "oneTimeMax": 12000,
+      "monthlyMin": 400,
+      "monthlyMax": 1200,
+      "pitchLine": "\"The billing team gets a draft pre-approval request from the doctor's note in each insurer's format, which the doctor checks before it is submitted.\"",
+      "whenAndWhatItTakes": "Month 5, with the tracker. Needs insurer templates and privacy review. Comes with the AI maintenance retainer; doctors approve every request."
+    },
+    {
+      "name": "Corporate client portal",
+      "kind": "software",
+      "oneTimeMin": 10000,
+      "oneTimeMax": 25000,
+      "monthlyMin": 400,
+      "monthlyMax": 1200,
+      "pitchLine": "\"Employers book health checks for staff, track who has attended and download invoices, without emailing the polyclinic's corporate desk.\"",
+      "whenAndWhatItTakes": "Month 5. Needs corporate package rules, consent wording and billing setup."
+    },
+    {
+      "name": "Bilingual page drafts with medical review",
+      "kind": "ai",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 6000,
+      "monthlyMin": 300,
+      "monthlyMax": 900,
+      "pitchLine": "\"New department pages and doctor profiles are drafted in the second language and queued for a fluent clinician to check, so both versions of the medical centre site stay in step.\"",
+      "whenAndWhatItTakes": "Month 4, after the second language launches. Needs a named reviewer. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Recruitment pipeline for doctors and nurses",
+      "kind": "software",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 15000,
+      "monthlyMin": 300,
+      "monthlyMax": 800,
+      "pitchLine": "\"Applicants for every specialty land on one board with their licence status, interview stage and start date, shared by the medical director and HR.\"",
+      "whenAndWhatItTakes": "Month 5. Needs their hiring steps and who approves each role."
+    },
+    {
+      "name": "Licence and credential renewal reminders",
+      "kind": "automation",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 99,
+      "monthlyMax": 299,
+      "pitchLine": "\"Each doctor and nurse gets reminders before a licence or certificate expires, and HR sees who is overdue, so no one at the clinic practises on a lapsed licence.\"",
+      "whenAndWhatItTakes": "Month 5, with the pipeline. Needs current expiry dates for every clinician."
+    },
+    {
+      "name": "Clinician applicant summaries",
+      "kind": "ai",
+      "oneTimeMin": 2000,
+      "oneTimeMax": 5000,
+      "monthlyMin": 200,
+      "monthlyMax": 600,
+      "pitchLine": "\"For each doctor or nurse applicant, the medical director gets a one-page summary of training, licences and specialty experience drawn from the CV, with gaps flagged.\"",
+      "whenAndWhatItTakes": "Month 6. Needs must-haves per specialty. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Reception call summaries by department",
+      "kind": "ai",
+      "oneTimeMin": 6000,
+      "oneTimeMax": 14000,
+      "monthlyMin": 500,
+      "monthlyMax": 1500,
+      "pitchLine": "\"Calls to reception, recorded with consent, become a short summary filed to the right department with a task, so a patient's question reaches the specialist's team.\"",
+      "whenAndWhatItTakes": "Month 6. Needs call recording with consent notices and phone system access. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Internal referral routing between departments",
+      "kind": "software",
+      "oneTimeMin": 8000,
+      "oneTimeMax": 20000,
+      "monthlyMin": 300,
+      "monthlyMax": 900,
+      "pitchLine": "\"When one specialist refers a patient to another department, the referral and a booking request reach that team at once, and the patient gets a time before they leave.\"",
+      "whenAndWhatItTakes": "Month 7. Needs their referral rules and clinic system access."
+    },
+    {
+      "name": "Lab result cover note drafts for doctor sign-off",
+      "kind": "ai",
+      "oneTimeMin": 8000,
+      "oneTimeMax": 20000,
+      "monthlyMin": 600,
+      "monthlyMax": 1800,
+      "pitchLine": "\"A plain-language cover note for routine lab results is drafted for the doctor to edit and approve before the patient sees anything. The doctor's words, faster.\"",
+      "whenAndWhatItTakes": "Month 8. Needs result formats, note templates and a privacy review. Comes with the AI maintenance retainer; doctors approve every note."
+    },
+    {
+      "name": "Follow-up appointment nudges after a specialist visit",
+      "kind": "automation",
+      "oneTimeMin": 1500,
+      "oneTimeMax": 4000,
+      "monthlyMin": 149,
+      "monthlyMax": 399,
+      "pitchLine": "\"Patients whose specialist asked to see them again get a message with that doctor's next free slots, so follow-ups don't drift to another clinic.\"",
+      "whenAndWhatItTakes": "Month 6. Needs a follow-up flag in their clinic system and approved wording."
+    },
+    {
+      "name": "Department performance dashboard",
+      "kind": "software",
+      "oneTimeMin": 10000,
+      "oneTimeMax": 25000,
+      "monthlyMin": 500,
+      "monthlyMax": 1500,
+      "pitchLine": "\"Bookings, empty slots, no-shows and new patients by specialty and doctor on one screen, so the general manager sees which departments need marketing and which need doctors.\"",
+      "whenAndWhatItTakes": "Month 9. Needs three months of booking data by department."
+    },
+    {
+      "name": "Consultation note drafts from doctor dictation",
+      "kind": "ai",
+      "oneTimeMin": 12000,
+      "oneTimeMax": 30000,
+      "monthlyMin": 1000,
+      "monthlyMax": 3000,
+      "pitchLine": "\"Specialists talk through the consultation and a note is drafted in their department's template, ready for them to correct and sign before it is saved.\"",
+      "whenAndWhatItTakes": "Month 10. Needs templates per specialty, patient consent wording and privacy review. Comes with the AI maintenance retainer."
+    },
+    {
+      "name": "Patient app with results, bookings and family profiles",
+      "kind": "software",
+      "oneTimeMin": 25000,
+      "oneTimeMax": 70000,
+      "monthlyMin": 1000,
+      "monthlyMax": 3500,
+      "pitchLine": "\"Patients book any doctor, see reviewed results, pay and manage their children's and parents' appointments in the medical centre's own app.\"",
+      "whenAndWhatItTakes": "Month 12. Needs deep clinic-system integration, payments and a full privacy review."
+    }
+  ],
+  "routesToBiggerBuyer": [
+    {
+      "route": "Productise the doctor directory for other medical centres",
+      "whoPays": "Other polyclinics, monthly per centre",
+      "min": 499,
+      "max": 1500,
+      "unit": "monthly",
+      "pitchLine": "\"The doctor directory, department pages and booking I built for one polyclinic suit any multi-specialty centre, loaded with their own doctors.\"",
+      "whyItWorks": "The first centre paid for the schedule integration; the next ones need only content."
+    },
+    {
+      "route": "Hospital groups' outpatient clinics",
+      "whoPays": "The hospital group's marketing or digital team",
+      "min": 30000,
+      "max": 90000,
+      "unit": "one-time",
+      "pitchLine": "\"Your outpatient clinics are buried in the hospital site. A dedicated directory and department booking for them is a contained project with clear results.\"",
+      "whyItWorks": "Hospitals buy in large, central projects, and outpatient booking is a visible gap."
+    },
+    {
+      "route": "Medical travel facilitators",
+      "whoPays": "The facilitator, per partner centre",
+      "min": 2000,
+      "max": 6000,
+      "unit": "one-time",
+      "pitchLine": "\"You send travelling patients to partner centres. A partner page per centre with doctors and packages, in your clients' languages, makes your offer clearer.\"",
+      "whyItWorks": "Facilitators sell on clarity and trust, and the directory content already exists."
+    },
+    {
+      "route": "Insurers' network-provider page kits",
+      "whoPays": "The health insurer's provider relations team",
+      "min": 10000,
+      "max": 40000,
+      "unit": "one-time",
+      "pitchLine": "\"Your network clinics describe themselves badly. Offer them a standard page kit with directory, networks and direct billing explained the same way.\"",
+      "whyItWorks": "Insurers want members to find network providers easily, and a kit scales across their list."
+    },
+    {
+      "route": "White-label for healthcare marketing agencies",
+      "whoPays": "The agency, per medical centre",
+      "min": 3000,
+      "max": 9000,
+      "unit": "one-time",
+      "pitchLine": "\"Your agency handles ads for medical centres but can't build schedule-driven directories. I deliver it under your name.\"",
+      "whyItWorks": "Agencies own the account and need the integration skills they don't have."
+    },
+    {
+      "route": "Healthcare investors building clinic groups",
+      "whoPays": "The investor's operations team",
+      "min": 20000,
+      "max": 80000,
+      "unit": "one-time",
+      "pitchLine": "\"Each centre you acquire comes with its own site. One directory and booking platform across the group makes every acquisition look like part of a whole.\"",
+      "whyItWorks": "Investors want acquisitions unified quickly, and a repeatable platform fits that plan."
+    },
+    {
+      "route": "Private clinics association member template",
+      "whoPays": "The association, as a member benefit",
+      "min": 5000,
+      "max": 20000,
+      "unit": "one-time",
+      "pitchLine": "\"Offer member clinics a site template with doctor credential display, privacy-safe forms and approval-ready copy already built in.\"",
+      "whyItWorks": "Associations want concrete member benefits, and compliance is the question members keep asking."
+    },
+    {
+      "route": "Day-surgery centres",
+      "whoPays": "Day-surgery centre owners",
+      "min": 12000,
+      "max": 30000,
+      "unit": "one-time",
+      "pitchLine": "\"Day-surgery centres need the same surgeon directory, procedure pages and insurer approval tracking I built for a polyclinic.\"",
+      "whyItWorks": "Similar buyers with the same parts, so most of the build carries over."
+    },
+    {
+      "route": "Corporate wellness providers",
+      "whoPays": "The wellness provider",
+      "min": 6000,
+      "max": 15000,
+      "unit": "one-time",
+      "pitchLine": "\"Wellness companies sell health checks to employers and need clinics to deliver them. The corporate portal I built can carry their programmes across several centres.\"",
+      "whyItWorks": "They already buy employer-facing software and need partner clinics wired in."
+    },
+    {
+      "route": "Bilingual clinic template for other cities",
+      "whoPays": "Medical centres in other cities",
+      "min": 8000,
+      "max": 20000,
+      "unit": "one-time",
+      "pitchLine": "\"The two-language structure, translated policies and doctor profiles I built suit any multi-specialty centre serving families in two languages.\"",
+      "whyItWorks": "Translation and layout work is done once; each new centre needs its own content only."
+    },
+    {
+      "route": "One polyclinic per district",
+      "whoPays": "A polyclinic in another district",
+      "min": 0,
+      "max": 0,
+      "unit": "one-time",
+      "pitchLine": "\"I build for one multi-specialty centre per district. The centres competing with you in {City} won't get the same directory from me.\"",
+      "whyItWorks": "Centres value not sharing a builder with their nearest rival, and the structure carries over."
+    },
+    {
+      "route": "Finishing stalled directory and booking projects",
+      "whoPays": "The centre with a half-built site",
+      "min": 8000,
+      "max": 25000,
+      "unit": "one-time",
+      "pitchLine": "\"Your new site stalled at the doctor profiles or the booking connection. I can finish it on a structure already running at another medical centre.\"",
+      "whyItWorks": "They've already decided and budgeted; they need someone to finish the hard part."
+    }
+  ],
+  "upsellLadder": [
+    {
+      "rung": 1,
+      "day": 0,
+      "offer": "Medical centre site build plus care plan, one contract",
+      "min": 15000,
+      "max": 35000,
+      "unit": "one-time",
+      "trigger": "The general manager and medical director approve phase one: directory and first departments.",
+      "line": "\"Build and care plan together means a new doctor's profile or a changed clinic day is updated within the week, without a new quote.\""
+    },
+    {
+      "rung": 2,
+      "day": 30,
+      "offer": "Google profiles for the centre and each doctor",
+      "min": 400,
+      "max": 1200,
+      "unit": "monthly",
+      "trigger": "Bookings start arriving through doctor profiles, and patients still find old listings by searching a doctor's name.",
+      "line": "\"Patients are searching your doctors by name. Their listings should send them straight to the right profile.\""
+    },
+    {
+      "rung": 3,
+      "day": 60,
+      "offer": "Health check package checkout",
+      "min": 4000,
+      "max": 10000,
+      "unit": "one-time",
+      "trigger": "Package pages get visits, and reception is booking them by phone.",
+      "line": "\"People are reading the health check packages. Let them choose, add tests and pay without calling.\""
+    },
+    {
+      "rung": 4,
+      "day": 90,
+      "offer": "Live clinic days from the scheduling system",
+      "min": 6000,
+      "max": 16000,
+      "unit": "one-time",
+      "trigger": "Doctors' schedules change and reception updates profiles by hand.",
+      "line": "\"Doctor schedules change weekly. Pull them from the clinic system so the directory is always right.\""
+    },
+    {
+      "rung": 5,
+      "day": 120,
+      "offer": "Corporate client portal",
+      "min": 10000,
+      "max": 25000,
+      "unit": "one-time",
+      "trigger": "Corporate plan requests arrive through the site and the desk tracks attendance in spreadsheets.",
+      "line": "\"Employers are signing up. A portal lets them book staff and see attendance without emailing the corporate desk.\""
+    },
+    {
+      "rung": 6,
+      "day": 180,
+      "offer": "Insurance pre-approval tracker",
+      "min": 6000,
+      "max": 15000,
+      "unit": "one-time",
+      "trigger": "Billing mentions delays or lost approvals with a particular insurer.",
+      "line": "\"Approvals are slipping between emails. One board for every pending request gets patients their answer sooner.\""
+    },
+    {
+      "rung": 7,
+      "day": 270,
+      "offer": "Department performance dashboard",
+      "min": 10000,
+      "max": 25000,
+      "unit": "one-time",
+      "trigger": "The partners ask which specialties to grow or which need another doctor.",
+      "line": "\"Before adding a doctor, see which departments are full and which have empty slots.\""
+    },
+    {
+      "rung": 8,
+      "day": 365,
+      "offer": "Patient app with results, bookings and family profiles",
+      "min": 25000,
+      "max": 70000,
+      "unit": "one-time",
+      "trigger": "The first anniversary, with most bookings now online and families booking for several members.",
+      "line": "\"A year in, most bookings are online. An app for the whole family keeps them with your medical centre for every specialty.\""
+    }
+  ]
+}
