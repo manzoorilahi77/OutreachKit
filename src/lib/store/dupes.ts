@@ -1,5 +1,5 @@
 // The duplicate index. A business is "already someone's lead" when another lead shares its Maps place key,
-// its phone digits, or its normalised name + city. Built from every folder on this laptop, so it is as fresh as the last sync.
+// its phone digits, or its normalised name + city. The file Store builds it from every folder; the MySQL Store keeps the same keys in a unique index.
 import { placeKey } from "@/lib/scrape/placeKey";
 
 const SUFFIX = /\b(llc|l l c|inc|incorporated|co|corp|corporation|ltd|limited|the)\b/g;

@@ -1,19 +1,20 @@
 // pnpm a11y: axe-core on every screen, light and dark, at 390 and 1280 (WCAG 2.x A and AA), for every role, plus keyboard checks.
-// Runs the built app on a demo team (scripts/lib/demoTeam.ts); signed-in screens use a session cookie signed with the app's own secret.
+// Runs the built app on a demo team in a throwaway MySQL database (scripts/lib/demoTeam.ts); signed-in screens use a session cookie signed with the app's own secret.
 import AxeBuilder from "@axe-core/playwright";
 import { chromium } from "@playwright/test";
-import { mkdtempSync, rmSync } from "node:fs";
-import { tmpdir } from "node:os";
-import path from "node:path";
 import { ensureBuild, startApp } from "./lib/app";
 import { signInCookie } from "./lib/browserAuth";
 import { seedFullDemo } from "./lib/demoTeam";
+import { createScratchDb } from "../src/lib/db/scratch";
+import { createPool } from "../src/lib/db/pool";
+import { loadLocalEnv } from "./lib/loadEnv";
 
+loadLocalEnv();
 ensureBuild();
-const root = mkdtempSync(path.join(tmpdir(), "okit-a11y-"));
-process.env.OKIT_ROOT = root;
-const { plan } = await seedFullDemo(root);
-const app = await startApp({ root, port: Number(process.env.PORT ?? 3100) });
+const scratch = await createScratchDb("okit_a11y");
+const pool = createPool(scratch.config, 4);
+const { plan } = await seedFullDemo(pool);
+const app = await startApp({ db: scratch.config, port: Number(process.env.PORT ?? 5021) });
 const browser = await chromium.launch();
 
 const PUBLIC = ["/login"];
@@ -32,7 +33,7 @@ let checked = 0;
 try {
   for (const sc of screens) for (const width of [390, 1280]) for (const scheme of ["light", "dark"] as const) {
     const ctx = await browser.newContext({ viewport: { width, height: 900 } });
-    if (sc.user) await signInCookie(ctx, root, app.url, sc.user);
+    if (sc.user) await signInCookie(ctx, pool, app, sc.user);
     if (scheme === "dark") await ctx.addInitScript(() => localStorage.setItem("ok-theme", "dark"));
     const page = await ctx.newPage();
     await page.goto(app.url + sc.path, { waitUntil: "load" });
@@ -52,7 +53,7 @@ try {
   // Keyboard: every control reachable by Tab shows a visible focus indicator
   for (const user of ["ravi", "ada"]) {
     const ctx = await browser.newContext({ viewport: { width: 1280, height: 900 } });
-    await signInCookie(ctx, root, app.url, user);
+    await signInCookie(ctx, pool, app, user);
     const page = await ctx.newPage();
     await page.goto(app.url + (user === "ravi" ? "/today" : "/admin/users"), { waitUntil: "load" });
     await page.waitForTimeout(500);
@@ -73,7 +74,8 @@ try {
 } finally {
   await browser.close();
   await app.stop();
-  rmSync(root, { recursive: true, force: true });
+  await pool.end();
+  await scratch.drop();
 }
 console.log(bad ? `${bad} accessibility problem(s).` : `Accessibility: ${checked} screen/mode/width combinations pass axe (WCAG 2.1 A and AA); focus rings visible.`);
 process.exit(bad ? 1 : 0);

@@ -11,7 +11,7 @@ playwright-report
 .DS_Store
 .local-supabase
 
-# This laptop only: session secret, last-sync state, sign-in attempts. Never pushed.
+# Development only: the generated session secret. Never committed.
 .local/
 # A write that was interrupted
 team/**/*.tmp

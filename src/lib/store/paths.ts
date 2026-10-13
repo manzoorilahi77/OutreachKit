@@ -1,7 +1,7 @@
 // The team/ folder layout. Every path the Store touches is built here with path.join, so Mac and Windows agree.
 import path from "node:path";
 
-/** The repo root. OKIT_ROOT lets tests and the two-laptop e2e point the app at a clone. */
+/** Where team/ is, for the file Store and the migration into MySQL: the current folder, or OKIT_ROOT. */
 export const rootDir = (): string => (process.env.OKIT_ROOT ? path.resolve(process.env.OKIT_ROOT) : process.cwd());
 
 export const USERNAME_RE = /^[a-z0-9._]{3,30}$/;

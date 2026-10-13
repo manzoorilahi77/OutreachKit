@@ -1,9 +1,10 @@
 // A believable team for screenshots and the accessibility pass: accounts for every role with their own passwords set,
-// kits, leads at every stage, a queue, a pending hand-off, replies and a playbook read.
+// kits, leads at every stage, a queue, a pending hand-off, replies and a playbook read. Written into a MySQL database.
 import { hashPassword } from "../../src/lib/auth/password";
 import { todayIso } from "../../src/lib/clock";
-import { createStore } from "../../src/lib/store/fileStore";
-import { initTeam } from "../../src/lib/store/bootstrap";
+import type { Pool } from "mysql2/promise";
+import { createMySqlStore } from "../../src/lib/store/mysqlStore";
+import { initWorkspaceDb } from "../../src/lib/store/mysqlBootstrap";
 import type { Role } from "../../src/lib/auth/roles";
 import type { Store } from "../../src/lib/store/store";
 import type { Actor } from "../../src/lib/store/types";
@@ -29,19 +30,20 @@ const lead = (name: string, phone: string, over: Record<string, unknown> = {}) =
   demo_url: "", demo_built_date: null, first_contact_date: null, channel: null, notes: "", checks: ticks(7), ...over,
 });
 
-export async function seedDemoTeam(root: string, ownerPassword = DEMO_PASSWORD("owner")): Promise<void> {
+export async function seedDemoTeam(pool: Pool, ownerPassword = DEMO_PASSWORD("owner")): Promise<void> {
+  const createStore = (a: Actor | null) => createMySqlStore(a, pool);
   const cost = (pw: string) => hashPassword(pw);
-  await initTeam(root, {
+  await initWorkspaceDb(pool, {
     workspaceName: "Famysys", studio: "Famysys", demoDomain: "famysys.com", basedLine: "Based in Austin, TX", username: "owner", fullName: "Olive Owner",
     passwordHash: await cost(ownerPassword), unusableTempHash: await cost("nobody-knows-this"),
   });
   const ownerActor: Actor = { username: "owner", role: "super_admin", team: null };
-  const owner = createStore(ownerActor, root);
+  const owner = createStore(ownerActor);
   await owner.saveTeams({ teams: [{ id: "team-a", name: "Team A", managers: [] }, { id: "team-b", name: "Team B", managers: [] }] });
   const stores = new Map<string, Store>();
   for (const p of PEOPLE) {
     const u = await owner.createUser({ ...p, tempPasswordHash: await cost(`temp-${p.username}`) });
-    const s = createStore({ username: p.username, role: p.role, team: p.team }, root);
+    const s = createStore({ username: p.username, role: p.role, team: p.team });
     await s.setOwnPassword(await cost(DEMO_PASSWORD(p.username)), u.pwRev);
     stores.set(p.username, s);
   }
@@ -82,40 +84,18 @@ export async function seedDemoTeam(root: string, ownerPassword = DEMO_PASSWORD("
   await owner.addApproval({ kind: "category-kit", fileId: "roofing", version: "00000000", note: "" }).catch(() => {});
 }
 
-/** Makes the demo folder a git copy with a (local) remote and syncs once, so the Sync control reads "Synced just now". */
-export async function makeDemoRepo(root: string): Promise<void> {
-  const { execFileSync } = await import("node:child_process");
-  const { writeFileSync, mkdirSync } = await import("node:fs");
-  const path = await import("node:path");
-  const { runSync } = await import("../../src/lib/sync/engine");
-  const sh = (cwd: string, ...a: string[]) => execFileSync("git", a, { cwd, stdio: "ignore" });
-  const bare = root + "-origin.git";
-  mkdirSync(bare, { recursive: true });
-  sh(bare, "init", "--bare", "-b", "main");
-  sh(root, "init", "-b", "main");
-  sh(root, "config", "user.email", "demo@example.com");
-  sh(root, "config", "user.name", "demo");
-  writeFileSync(path.join(root, ".gitignore"), ".local/\nteam/**/*.tmp\n");
-  sh(root, "add", ".gitignore");
-  sh(root, "commit", "-m", "init");
-  sh(root, "remote", "add", "origin", bare);
-  sh(root, "push", "-u", "origin", "main");
-  for (const p of PEOPLE) await runSync({ root, username: p.username, role: p.role });
-  await runSync({ root, username: "owner", role: "super_admin" });
-}
-
-/** The demo team plus a paused account (zed), a brand-new one (newbie) and a git remote; returns every screen worth checking, by account. */
-export async function seedFullDemo(root: string): Promise<{ plan: [user: string, label: string, paths: string[]][] }> {
-  await seedDemoTeam(root);
-  const owner = createStore({ username: "owner", role: "super_admin", team: null }, root);
+/** The demo team plus a paused account (zed) and a brand-new one (newbie); returns every screen worth checking, by account. */
+export async function seedFullDemo(pool: Pool): Promise<{ plan: [user: string, label: string, paths: string[]][] }> {
+  await seedDemoTeam(pool);
+  const createStore = (a: Actor | null) => createMySqlStore(a, pool);
+  const owner = createStore({ username: "owner", role: "super_admin", team: null });
   await owner.createUser({ username: "zed", fullName: "Zed Zhao", role: "bd", team: "team-a", tempPasswordHash: await hashPassword("temp-zed") });
   await owner.createUser({ username: "newbie", fullName: "Nia Newbie", role: "bd", team: "team-a", tempPasswordHash: await hashPassword("temp-newbie") });
   await owner.changeUser("zed", { type: "suspend", reason: "On leave until the new quarter", until: "2099-01-31" });
-  await makeDemoRepo(root);
-  const ravi = createStore({ username: "ravi", role: "bd", team: "team-a" }, root);
+  const ravi = createStore({ username: "ravi", role: "bd", team: "team-a" });
   const kitId = (await ravi.listKits())[0]!.id;
   const leadId = (await ravi.listLeads()).find((l) => l.stage === "replied")!.id;
-  const meeraLead = (await createStore({ username: "meera", role: "researcher", team: "team-a" }, root).listLeads())[0]!.id;
+  const meeraLead = (await createStore({ username: "meera", role: "researcher", team: "team-a" }).listLeads())[0]!.id;
   return {
     plan: [
       ["owner", "super-admin", ["/platform", "/platform/users", "/platform/workspace", "/platform/content", "/platform/features", "/platform/audit"]],

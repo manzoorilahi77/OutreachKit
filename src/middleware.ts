@@ -1,6 +1,6 @@
 // The gate. Signed out, the only page is /login. Then, in order: a password still to set → /account/password;
 // a paused or turned-off account → /no-access; otherwise the route map's permission decides.
-// It runs on Node (it reads the user file to see the account's rev and status on every request). Pages and actions check again.
+// It runs on Node (it reads the account's rev and status from the database on every request). Pages and actions check again.
 import { NextResponse, type NextRequest } from "next/server";
 import { COOKIE_NAME } from "@/lib/auth/cookie";
 import { can } from "@/lib/auth/permissions";
@@ -8,8 +8,7 @@ import { ruleFor } from "@/lib/auth/routes";
 import { sessionSecret } from "@/lib/auth/secret";
 import { resolveSession } from "@/lib/auth/session";
 import { now } from "@/lib/clock";
-import { createStore } from "@/lib/store/fileStore";
-import { rootDir } from "@/lib/store/paths";
+import { createStore } from "@/lib/store";
 
 export async function middleware(request: NextRequest) {
   // Server actions and form posts are checked inside the action (checkPerm); the gate is for page and API loads.
@@ -22,9 +21,8 @@ export async function middleware(request: NextRequest) {
 
   if (rule === "public") return NextResponse.next();
 
-  const root = rootDir();
   const r = await resolveSession(request.cookies.get(COOKIE_NAME)?.value, {
-    store: createStore(null, root), forActor: (a) => createStore(a, root), secret: sessionSecret(root), now: now(),
+    store: createStore(null), forActor: (a) => createStore(a), secret: sessionSecret(), now: now(),
   });
 
   if (r.kind === "none") {

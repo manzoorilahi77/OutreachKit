@@ -1,15 +1,9 @@
-// The one place the app asks for the time. Sessions, suspensions and sync stamps all use it, so tests and the two-laptop e2e
-// can move the clock. The override is read from .local/clock.json and works only when OKIT_ALLOW_CLOCK_OVERRIDE=1.
-import { readFileSync } from "node:fs";
-import path from "node:path";
-import { rootDir } from "./store/paths";
-
+// The one place the app asks for the time. Sessions, suspensions and stamps all use it, so the end-to-end test can move the clock.
+// OKIT_CLOCK_OFFSET_MS shifts it, and only when OKIT_ALLOW_CLOCK_OVERRIDE=1, which only that test sets.
 export function now(): Date {
   if (process.env.OKIT_ALLOW_CLOCK_OVERRIDE === "1") {
-    try {
-      const j = JSON.parse(readFileSync(path.join(rootDir(), ".local", "clock.json"), "utf8")) as { offsetMs?: number };
-      if (typeof j.offsetMs === "number") return new Date(Date.now() + j.offsetMs);
-    } catch { /* no override */ }
+    const offset = Number(process.env.OKIT_CLOCK_OFFSET_MS ?? 0);
+    if (Number.isFinite(offset) && offset !== 0) return new Date(Date.now() + offset);
   }
   return new Date();
 }

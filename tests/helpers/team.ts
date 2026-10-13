@@ -8,6 +8,7 @@ import { createStore } from "@/lib/store/fileStore";
 import { initTeam } from "@/lib/store/bootstrap";
 import type { Store } from "@/lib/store/store";
 import type { Actor } from "@/lib/store/types";
+import type { Backend } from "../contract/backend";
 
 export const hash = (pw: string) => bcrypt.hashSync(pw, 4);
 export const OWNER: Actor = { username: "owner", role: "super_admin", team: null };
@@ -27,9 +28,9 @@ export async function initOwner(root: string) {
 export const asActor = (root: string, username: string, role: Role, team: string | null = null): Store => createStore({ username, role, team }, root);
 
 /** The standard cast: team-a (manager Mia, BDs Ravi and Asha, researcher Meera), team-b (manager Ben, BD Bo), viewer Vic, admin Ada. */
-export async function seedTeam(root: string) {
-  await initOwner(root);
-  const owner = createStore(OWNER, root);
+export async function seedCast(b: Backend) {
+  await b.initOwner();
+  const owner = b.storeFor(OWNER);
   await owner.saveTeams({ teams: [{ id: "team-a", name: "Team A", managers: [] }, { id: "team-b", name: "Team B", managers: [] }] });
   const mk = (username: string, fullName: string, role: Role, team: string | null) =>
     owner.createUser({ username, fullName, role, team, tempPasswordHash: hash(`temp-${username}`) });
@@ -41,18 +42,23 @@ export async function seedTeam(root: string) {
   await mk("ben", "Ben Brooks", "manager", "team-b");
   await mk("bryn", "Bryn Burns", "bd", "team-b");
   await mk("vic", "Vic Viewer", "viewer", null);
+  const as = (username: string, role: Role, team: string | null = null) => b.storeFor({ username, role, team });
   return {
     owner,
-    ada: asActor(root, "ada", "admin"),
-    mia: asActor(root, "mia", "manager", "team-a"),
-    ravi: asActor(root, "ravi", "bd", "team-a"),
-    asha: asActor(root, "asha", "bd", "team-a"),
-    meera: asActor(root, "meera", "researcher", "team-a"),
-    ben: asActor(root, "ben", "manager", "team-b"),
-    bryn: asActor(root, "bryn", "bd", "team-b"),
-    vic: asActor(root, "vic", "viewer"),
+    ada: as("ada", "admin"),
+    mia: as("mia", "manager", "team-a"),
+    ravi: as("ravi", "bd", "team-a"),
+    asha: as("asha", "bd", "team-a"),
+    meera: as("meera", "researcher", "team-a"),
+    ben: as("ben", "manager", "team-b"),
+    bryn: as("bryn", "bd", "team-b"),
+    vic: as("vic", "viewer"),
   };
 }
+
+/** The same cast over a team/ folder. */
+export const seedTeam = (root: string) =>
+  seedCast({ storeFor: (actor) => createStore(actor, root), initOwner: () => initOwner(root), cleanup: async () => {} });
 
 export const lead = (over: Record<string, unknown> = {}) => ({
   business_name: "Smith Roofing", owner_first_name: "", category: "Roofing", city: "Dallas", state: "TX", phone: "(214) 555-0101", email: "",

@@ -2,7 +2,7 @@ import { ROLES, ROLE_LABELS, canManage } from "@/lib/auth/roles";
 import { readSignIns } from "@/lib/auth/lastSignIn";
 import { requirePerm, storeFor } from "@/lib/auth/server";
 import { effectiveStatus } from "@/lib/auth/status";
-import { rootDir } from "@/lib/store/paths";
+import { getPool } from "@/lib/db/pool";
 import { todayIso } from "@/lib/clock";
 import { UsersAdmin, type UserRow } from "./UsersAdmin";
 
@@ -10,7 +10,7 @@ import { UsersAdmin, type UserRow } from "./UsersAdmin";
 export async function UsersScreen() {
   const s = await requirePerm("users.create");
   const store = storeFor(s);
-  const [users, teams, signIns, leads] = await Promise.all([store.listUsers(), store.getTeams(), readSignIns(rootDir()), store.listLeads()]);
+  const [users, teams, signIns, leads] = await Promise.all([store.listUsers(), store.getTeams(), readSignIns(getPool()), store.listLeads()]);
   const today = todayIso();
   const rows: UserRow[] = await Promise.all(users.map(async (u) => {
     const status = effectiveStatus(u, today);

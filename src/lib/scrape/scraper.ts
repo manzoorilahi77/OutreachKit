@@ -1,5 +1,5 @@
 // The Google Maps lead finder. One Chromium, one tab, no other site: it searches Maps, scrolls the results, opens each
-// listing that is not already saved (by anyone on this laptop) and not already known to have a website, and saves the ones that show no website.
+// listing that is not already saved (by anyone on the team) and not already known to have a website, and saves the ones that show no website.
 //
 // Politeness: a random 2–5 s pause before each listing it opens; nothing is retried. A CAPTCHA, an "unusual traffic" page or a
 // consent page that one normal click does not clear ends the run at once, with what was saved so far and the reason.

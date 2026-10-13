@@ -2,7 +2,7 @@ import { afterAll, beforeAll, describe, expect, it } from "vitest";
 import { SESSION_MS, signSession, verifySession } from "@/lib/auth/cookie";
 import { authenticate, LOCKED_ERROR, SIGNIN_ERROR } from "@/lib/auth/signin";
 import { generateTempPassword, hashPassword, passwordProblem, verifyPassword } from "@/lib/auth/password";
-import { fileStorage, SignInLimiter } from "@/lib/auth/rateLimit";
+import { memoryFailureLog, SignInLimiter } from "@/lib/auth/rateLimit";
 import { ruleFor } from "@/lib/auth/routes";
 import { resolveSession } from "@/lib/auth/session";
 import { effectiveStatus } from "@/lib/auth/status";
@@ -93,7 +93,7 @@ describe("the 14-day session", () => {
     expect(r).toMatchObject({ kind: "no_access", status: "suspended", reason: "On leave", until: "2026-12-31" });
   });
   it("lets a suspended person sign in again once the end date has passed", async () => {
-    const limiter = new SignInLimiter(fileStorage(root));
+    const limiter = new SignInLimiter(memoryFailureLog());
     const before = await authenticate({ store: auth, limiter, username: "meera", password: "temp-meera", now: new Date("2026-12-31T12:00:00Z") });
     expect(before).toEqual({ ok: false, message: SIGNIN_ERROR });
     const after = await authenticate({ store: auth, limiter, username: "meera", password: "temp-meera", now: new Date("2027-01-01T00:00:01Z") });
@@ -114,7 +114,8 @@ describe("the 14-day session", () => {
 });
 
 describe("sign-in", () => {
-  const limiter = () => new SignInLimiter(fileStorage(root));
+  const log = memoryFailureLog();
+  const limiter = () => new SignInLimiter(log);
   const go = (username: string, password: string, now = T0) => authenticate({ store: auth, limiter: limiter(), username, password, now });
 
   it("accepts the temporary password at first and asks for a new one", async () => {
@@ -166,6 +167,6 @@ describe("the route map", () => {
     ["/platform", "content.approve"], ["/platform/users", "content.approve"], ["/sourcing", "finder.run"], ["/reports", "reports.view"],
     ["/kits", "kits.view"], ["/kits/abc", "kits.view"], ["/leads", "leads.view"], ["/leads/new", "leads.add"], ["/leads/import", "leads.add"],
     ["/leads/export.csv", "leads.export"], ["/leads/abc", "leads.view"], ["/playbook", "playbook.read"], ["/playbook/math", "playbook.read"],
-    ["/playbook/progress", "playbook.required"], ["/review", "review.weekly"], ["/api/sync", "sync.run"], ["/api/leadfinder/run", "finder.run"], ["/team-x", "session"],
+    ["/playbook/progress", "playbook.required"], ["/review", "review.weekly"], ["/api/leadfinder/run", "finder.run"], ["/team-x", "session"],
   ])("%s needs %s", (p, rule) => expect(ruleFor(p)).toBe(rule));
 });

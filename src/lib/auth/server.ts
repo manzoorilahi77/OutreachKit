@@ -3,22 +3,21 @@ import { cache } from "react";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import { now } from "@/lib/clock";
-import { createStore } from "@/lib/store/fileStore";
-import { rootDir } from "@/lib/store/paths";
+import { createStore } from "@/lib/store";
 import type { Store } from "@/lib/store/store";
 import { COOKIE_NAME } from "./cookie";
 import { can, type PermissionKey } from "./permissions";
 import { sessionSecret } from "./secret";
 import { actorOf, resolveSession, type Resolved, type Session } from "./session";
 
-export const authStore = (): Store => createStore(null, rootDir());
+export const authStore = (): Store => createStore(null);
 
 /** The Store for the signed-in person: every read is scoped and every write guarded as them. */
-export const storeFor = (s: Session): Store => createStore(actorOf(s), rootDir());
+export const storeFor = (s: Session): Store => createStore(actorOf(s));
 
 export const getResolved = cache(async (): Promise<Resolved> => {
   const token = (await cookies()).get(COOKIE_NAME)?.value;
-  return resolveSession(token, { store: authStore(), forActor: (a) => createStore(a, rootDir()), secret: sessionSecret(), now: now() });
+  return resolveSession(token, { store: authStore(), forActor: (a) => createStore(a), secret: sessionSecret(), now: now() });
 });
 
 export async function getSession(): Promise<Session | null> {

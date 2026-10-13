@@ -1,9 +1,10 @@
-// Starting the built app for the browser scripts (a11y, shots, e2e). One build, any number of `next start` instances,
-// each pointed at its own repo folder with OKIT_ROOT.
+// Starting the built app for the browser scripts (a11y, shots, e2e). One build; each run gets its own throwaway database.
 import { execFileSync, spawn, type ChildProcess } from "node:child_process";
 import { existsSync, readdirSync, statSync } from "node:fs";
+import { randomBytes } from "node:crypto";
 import net from "node:net";
 import path from "node:path";
+import type { DbConfig } from "../../src/lib/db/config";
 
 export const REPO = process.cwd();
 export const DIST = ".next-e2e";
@@ -34,13 +35,22 @@ const free = (port: number) => new Promise<boolean>((resolve) => {
   const s = net.createServer().once("error", () => resolve(false)).once("listening", () => s.close(() => resolve(true))).listen(port);
 });
 
-export interface RunningApp { url: string; port: number; root: string; stop(): Promise<void> }
+export interface RunningApp { url: string; port: number; secret: string; stop(): Promise<void> }
 
-export async function startApp(o: { root: string; port: number; allowClock?: boolean; log?: boolean }): Promise<RunningApp> {
-  if (!(await free(o.port))) throw new Error(`Port ${o.port} is in use. Stop what is using it, or set E2E_OWNER_PORT / E2E_TEAMMATE_PORT / PORT.`);
-  const proc: ChildProcess = spawn(process.execPath, [nextBin, "start", "-p", String(o.port)], {
+/**
+ * `next start` over the build, on the database in `db`, with a session secret of its own. Cookies are Secure in production
+ * mode; browsers accept them on http://localhost. `clockOffsetMs` moves the app's clock (the end-to-end test uses it to age sessions).
+ */
+export async function startApp(o: { db: DbConfig; port: number; secret?: string; clockOffsetMs?: number; log?: boolean }): Promise<RunningApp> {
+  if (!(await free(o.port))) throw new Error(`Port ${o.port} is in use. Stop what is using it, or set PORT.`);
+  const secret = o.secret ?? randomBytes(32).toString("hex");
+  const proc: ChildProcess = spawn(process.execPath, [nextBin, "start", "-H", "127.0.0.1", "-p", String(o.port)], {
     cwd: REPO,
-    env: { ...process.env, OKIT_ROOT: o.root, OKIT_DIST_DIR: DIST, NODE_ENV: "production", NEXT_TELEMETRY_DISABLED: "1", ...(o.allowClock ? { OKIT_ALLOW_CLOCK_OVERRIDE: "1" } : {}) },
+    env: {
+      ...process.env, OKIT_DIST_DIR: DIST, NODE_ENV: "production", NEXT_TELEMETRY_DISABLED: "1", SESSION_SECRET: secret,
+      DB_HOST: o.db.host, DB_PORT: String(o.db.port), DB_USER: o.db.user, DB_PASSWORD: o.db.password, DB_NAME: o.db.database,
+      ...(o.clockOffsetMs ? { OKIT_ALLOW_CLOCK_OVERRIDE: "1", OKIT_CLOCK_OFFSET_MS: String(o.clockOffsetMs) } : {}),
+    },
     stdio: o.log ? "inherit" : ["ignore", "ignore", "pipe"],
   });
   let stderr = "";
@@ -54,7 +64,7 @@ export async function startApp(o: { root: string; port: number; allowClock?: boo
     await new Promise((r) => setTimeout(r, 500));
   }
   return {
-    url, port: o.port, root: o.root,
+    url, port: o.port, secret,
     stop: () => new Promise<void>((resolve) => {
       if (proc.exitCode !== null) return resolve();
       proc.once("exit", () => resolve());

@@ -1,54 +1,31 @@
 // Runs before `pnpm dev` (pnpm's predev hook). Node only: the same on Mac and Windows.
-//   1. create .local/ and the session secret if missing
-//   2. a quiet `git pull --rebase --autostash` when the repo has a remote (code and accounts arrive here)
-//   3. `pnpm install` when package.json or the lockfile changed since the last run
-//   4. `pnpm secrets:check`
-// Nothing here blocks the app for a network problem: a failed pull is a one-line note.
-import { execFileSync, spawnSync } from "node:child_process";
-import { createHash } from "node:crypto";
-import { mkdirSync, readFileSync, writeFileSync, existsSync } from "node:fs";
+//   1. load .env.local and apply any database migrations that haven't run yet (if the database is configured)
+//   2. `pnpm secrets:check`
+// Nothing here touches the network except the database named in .env.local.
+import { execFileSync } from "node:child_process";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { sessionSecret } from "../src/lib/auth/secret";
+import { dbConfigFromEnv, hasDbConfig } from "../src/lib/db/config";
+import { migrate } from "../src/lib/db/migrate";
+import { loadLocalEnv } from "./lib/loadEnv";
 
-const here = path.resolve(path.dirname(fileURLToPath(import.meta.url)), ".."); // where the app code is
-const root = process.env.OKIT_ROOT ? path.resolve(process.env.OKIT_ROOT) : process.cwd();
-const sha = (f: string) => { try { return createHash("sha1").update(readFileSync(path.join(root, f))).digest("hex"); } catch { return ""; } };
-const git = (...args: string[]) => spawnSync("git", args, { cwd: root, encoding: "utf8", timeout: 60_000, env: { ...process.env, GIT_TERMINAL_PROMPT: "0", LC_ALL: "C" } });
+const here = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+loadLocalEnv();
 
-mkdirSync(path.join(root, ".local"), { recursive: true });
-sessionSecret(root);
-
-// 2. Pull, quietly.
-if (git("rev-parse", "--is-inside-work-tree").status === 0 && git("remote").stdout.trim()) {
-  // On sales_outreach or feature_dev_main the shared copy is main, not this branch's own upstream.
-  const onWorkBranch = ["sales_outreach", "feature_dev_main"].includes(git("rev-parse", "--abbrev-ref", "HEAD").stdout.trim());
-  const pull = git("pull", "--rebase", "--autostash", "--quiet", ...(onWorkBranch ? ["origin", "main"] : []));
-  if (pull.status !== 0) {
-    git("rebase", "--abort");
-    console.log("predev: couldn't pull from GitHub just now (offline, or sign-in missing). Starting with what is here.");
-  }
-}
-
-// 3. Install when the dependency files changed.
-const stateFile = path.join(root, ".local", "install-state.json");
-const now = { pkg: sha("package.json"), lock: sha("pnpm-lock.yaml") };
-let before: { pkg?: string; lock?: string } = {};
-try { before = JSON.parse(readFileSync(stateFile, "utf8")); } catch { /* first run */ }
-const skipInstall = process.env.OKIT_SKIP_INSTALL === "1"; // the two-laptop e2e runs predev in folders that hold no app code
-if (!skipInstall && (!existsSync(path.join(root, "node_modules")) || before.pkg !== now.pkg || before.lock !== now.lock)) {
-  console.log("predev: dependencies changed. Running pnpm install…");
-  const r = spawnSync(process.platform === "win32" ? "pnpm.cmd" : "pnpm", ["install"], { cwd: root, stdio: "inherit", shell: process.platform === "win32" });
-  if (r.status !== 0) {
-    console.error("predev: pnpm install failed.");
+if (hasDbConfig()) {
+  try {
+    const applied = await migrate(dbConfigFromEnv());
+    if (applied.length) console.log(`predev: applied ${applied.length} database migration${applied.length === 1 ? "" : "s"}.`);
+  } catch (e) {
+    console.error(`predev: the database isn't reachable or a migration failed: ${e instanceof Error ? e.message : e}`);
     process.exit(1);
   }
+} else {
+  console.log("predev: DB_HOST, DB_USER, DB_PASSWORD and DB_NAME aren't set, so the app can't start. Copy .env.example to .env.local and fill them in.");
 }
-writeFileSync(stateFile, JSON.stringify(now, null, 2) + "\n");
 
-// 4. Secrets.
 try {
-  execFileSync(process.execPath, [path.join(here, "node_modules", "tsx", "dist", "cli.mjs"), path.join(here, "scripts", "secrets-check.ts")], { cwd: root, stdio: "inherit", env: { ...process.env, OKIT_ROOT: root } });
+  execFileSync(process.execPath, [path.join(here, "node_modules", "tsx", "dist", "cli.mjs"), path.join(here, "scripts", "secrets-check.ts")], { cwd: here, stdio: "inherit" });
 } catch {
   process.exit(1);
 }

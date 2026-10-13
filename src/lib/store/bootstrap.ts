@@ -1,4 +1,4 @@
-// pnpm team:init: the one place that writes team/ without an actor. It creates the workspace and the owner's account.
+// Creates a team/ folder with the workspace and the owner's account, for the file Store's tests. (The server's version is mysqlBootstrap.ts, run by `pnpm db:init-owner`.)
 import { randomUUID } from "node:crypto";
 import path from "node:path";
 import { listDir, readJson, writeJson, appendLine } from "./json";
@@ -32,7 +32,7 @@ export async function hasSuperAdmin(root: string): Promise<boolean> {
 }
 
 export async function initTeam(root: string, i: InitInput): Promise<UserFile> {
-  if (await hasSuperAdmin(root)) throw new Error("team/users already has a super admin. team:init runs once.");
+  if (await hasSuperAdmin(root)) throw new Error("team/users already has a super admin. this runs once.");
   const problem = usernameProblem(i.username);
   if (problem) throw new Error(problem);
   if (!i.fullName.trim()) throw new Error("Add your full name.");

@@ -21,7 +21,7 @@ export default async function QueuePage() {
   }));
   return (
     <div className="mx-auto max-w-6xl space-y-6 px-4 py-10 sm:px-6">
-      <SectionHead num="Hand-offs" title="Unassigned queue" sub="Leads your researchers have sourced. Give each one to a BD; the BD sees it as “Assigned to you” after the next sync and accepts it." />
+      <SectionHead num="Hand-offs" title="Unassigned queue" sub="Leads your researchers have sourced. Give each one to a BD; the BD sees it as “Assigned to you” and accepts it." />
       {!rows.length ? <Note tone="quiet"><p>The queue is empty.</p></Note> : !bds.length ? <Note tone="firm"><p>There is no active BD to give leads to yet. Create one in Users.</p></Note> : <AssignForm rows={rows} bds={bds} kind="assign" />}
       {can(s, "leads.handover") && <p>Someone leaving? <Link href="/handover">Hand over their leads</Link>.</p>}
     </div>

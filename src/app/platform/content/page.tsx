@@ -5,14 +5,13 @@ import { Chip } from "@/components/ui/Chip";
 import { TableWrap, td, th } from "@/components/ui/TableWrap";
 import { requirePerm, storeFor } from "@/lib/auth/server";
 import { kitFiles } from "@/lib/store/contentVersions";
-import { rootDir } from "@/lib/store/paths";
 
 export const metadata: Metadata = { title: "Content review" };
 
 export default async function PlatformContent() {
   const s = await requirePerm("content.approve");
   const approvals = await storeFor(s).listApprovals();
-  const files = kitFiles(rootDir());
+  const files = kitFiles();
   const approved = new Map<string, string>();
   for (const a of approvals) if (a.kind === "category-kit") approved.set(`${a.fileId}@${a.version}`, a.approvedAt.slice(0, 10));
   const done = files.filter((f) => approved.has(`${f.fileId}@${f.version}`)).length;

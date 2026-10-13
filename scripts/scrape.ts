@@ -1,13 +1,14 @@
 // pnpm scrape "<category>" "<city>" <ST> --as <username> --limit 50 [--headed]
-// Finds businesses on Google Maps that show no website and saves them to that person's folder, team/data/<username>/finder/.
+// Finds businesses on Google Maps that show no website and saves them to that person's finder list in the database.
 import { isRegion } from "../src/lib/market/regions";
-import { createStore } from "../src/lib/store/fileStore";
-import { rootDir } from "../src/lib/store/paths";
+import { createStore } from "../src/lib/store";
+import { loadLocalEnv } from "./lib/loadEnv";
 import { StoreError } from "../src/lib/store/errors";
 import { DEFAULT_LIMIT } from "../src/lib/scrape/limits";
 import { runScrape } from "../src/lib/scrape/scraper";
 import { progressLine } from "../src/lib/scrape/types";
 
+loadLocalEnv();
 const usage = `Usage: pnpm scrape "<category>" "<city>" <ST> --as <username> [--limit ${DEFAULT_LIMIT}] [--headed]
   Example: pnpm scrape "Roofers" "Dallas" TX --as ravi --limit 5`;
 
@@ -32,12 +33,12 @@ if (!category || !city || !isRegion(st) || args.length !== 3 || !Number.isIntege
   console.error(usage);
   process.exit(1);
 }
-const user = as ? await createStore(null, rootDir()).getUser(as.toLowerCase()) : null;
+const user = as ? await createStore(null).getUser(as.toLowerCase()) : null;
 if (!user || user.status !== "active") {
-  console.error(as ? `No active account called "${as}" in team/users.` : "Say who is running it: --as <username>.");
+  console.error(as ? `No active account called "${as}".` : "Say who is running it: --as <username>.");
   process.exit(1);
 }
-const finder = createStore({ username: user.username, role: user.role, team: user.team }, rootDir()).finder();
+const finder = createStore({ username: user.username, role: user.role, team: user.team }).finder();
 
 const ac = new AbortController();
 process.on("SIGINT", () => {

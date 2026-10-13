@@ -13,7 +13,7 @@ export function FeaturesForm({ leadFinder, softwareTrack }: { leadFinder: boolea
         <li>
           <label className="flex min-h-11 cursor-pointer gap-3 p-4">
             <input type="checkbox" name="leadFinder" defaultChecked={leadFinder} className="mt-1 size-6 shrink-0 accent-head" />
-            <span><strong className="block">Lead finder</strong><span className="block text-muted">Lets people with the role run the Google Maps finder from the console and the Lead finder page. Each laptop also needs Chromium installed.</span></span>
+            <span><strong className="block">Lead finder</strong><span className="block text-muted">Lets people with the role run the Google Maps finder from the console and the Lead finder page. The server also needs Chromium installed.</span></span>
           </label>
         </li>
         <li>

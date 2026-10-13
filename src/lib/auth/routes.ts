@@ -31,7 +31,6 @@ const RULES: [prefix: string, rule: RouteRule][] = [
   ["/playbook/progress", "playbook.required"],
   ["/playbook", "playbook.read"],
   ["/api/leadfinder", "finder.run"],
-  ["/api/sync", "sync.run"],
 ];
 
 const under = (path: string, prefix: string) => path === prefix || path.startsWith(prefix + "/");

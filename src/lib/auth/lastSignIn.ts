@@ -1,16 +1,12 @@
-// When each person last signed in on THIS laptop (shown on the Users page). Local only: .local/ is never pushed.
-import { mkdir, readFile, writeFile } from "node:fs/promises";
-import path from "node:path";
+// When each person last signed in (shown on the Users page), kept in the database.
+import type { Pool, RowDataPacket } from "mysql2/promise";
+import { fromDbTime, toDbTime } from "@/lib/db/time";
 
-const file = (root: string) => path.join(root, ".local", "signins.json");
-
-export async function readSignIns(root: string): Promise<Record<string, string>> {
-  try { return JSON.parse(await readFile(file(root), "utf8")) as Record<string, string>; } catch { return {}; }
+export async function readSignIns(pool: Pool): Promise<Record<string, string>> {
+  const [r] = await pool.query<RowDataPacket[]>("SELECT username, signed_in_at FROM user_signins");
+  return Object.fromEntries(r.map((x) => [x.username as string, fromDbTime(x.signed_in_at)]));
 }
 
-export async function recordSignIn(root: string, username: string, iso: string): Promise<void> {
-  const all = await readSignIns(root);
-  all[username] = iso;
-  await mkdir(path.dirname(file(root)), { recursive: true });
-  await writeFile(file(root), JSON.stringify(all, null, 2) + "\n", "utf8");
+export async function recordSignIn(pool: Pool, username: string, iso: string): Promise<void> {
+  await pool.query("INSERT INTO user_signins (username, signed_in_at) VALUES (?, ?) ON DUPLICATE KEY UPDATE signed_in_at = VALUES(signed_in_at)", [username, toDbTime(iso)]);
 }

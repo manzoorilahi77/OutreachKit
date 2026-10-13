@@ -11,6 +11,7 @@ import { SEQUENCE, stageChangePatch, touchPatch } from "@/lib/leads/sequence";
 import { FLOW_RANK, STAGES, type Channel, type Stage } from "@/lib/leads/stages";
 import { placeKey } from "@/lib/scrape/placeKey";
 import type { BusinessRow } from "@/lib/scrape/types";
+import { EMPTY_WORKSPACE } from "./defaults";
 import { DupIndex, KEY_LABEL, dupKeys, finderKeys, type DupCandidate } from "./dupes";
 import { StoreError } from "./errors";
 import { appendLine, listDir, readJson, readLines, stableStringify, writeJson } from "./json";
@@ -31,9 +32,7 @@ const ISO_DAY = /^\d{4}-\d{2}-\d{2}$/;
 const dayOr = (d: string | undefined) => (d && ISO_DAY.test(d) ? d : todayIso());
 const OPEN_EXCLUDED: Stage[] = ["won", "lost"];
 
-export const EMPTY_WORKSPACE: Workspace = {
-  name: "", studio: "", demoDomain: "", basedLine: "", features: { leadFinder: true, softwareTrack: false },
-};
+export { EMPTY_WORKSPACE };
 
 // ---- A short-lived picture of every folder on this laptop, for duplicate checks and team lists. Dropped on every local write and every sync.
 interface Snapshot {

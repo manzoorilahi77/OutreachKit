@@ -10,7 +10,7 @@ export default async function PlatformFeatures() {
   const ws = await storeFor(s).getWorkspace();
   return (
     <div className="mx-auto max-w-3xl space-y-6 px-4 py-10 sm:px-6">
-      <SectionHead num="Platform" title="Feature switches" sub="Stored in team/workspace.json. Each laptop picks a change up at its next sync." />
+      <SectionHead num="Platform" title="Feature switches" sub="Saved in the workspace settings. A change applies to everyone straight away." />
       <FeaturesForm leadFinder={ws.features.leadFinder} softwareTrack={ws.features.softwareTrack} />
     </div>
   );

@@ -1,6 +1,7 @@
-// The Store: the only code that touches team/. Pages and actions call it and never use fs.
-// A server database can later replace the file implementation without touching a screen.
-// Every read of another person's folder is filtered by scopeOf(); every write is checked against the caller's own folder.
+// The Store: the only code that touches stored data. Pages and actions call it and never use fs or SQL.
+// Two implementations: the file Store over team/ (fileStore.ts) and the MySQL Store the server runs on (mysqlStore.ts).
+// Both must pass the same contract tests (tests/contract). Every read of another person's data is filtered by scopeOf();
+// every write is checked against the caller's own records.
 import type { Role } from "@/lib/auth/roles";
 import type { PermissionKey } from "@/lib/auth/permissions";
 import type { StageEvent } from "@/lib/leads/ratios";
@@ -65,7 +66,6 @@ export interface FinderStore {
 }
 
 export interface Store {
-  readonly root: string;
   readonly actor: Actor | null;
 
   // Workspace and teams (read by anyone signed in; written by admins).
@@ -105,7 +105,7 @@ export interface Store {
   logTouch(id: string, channel: Channel, day: string): Promise<LeadView>;
   deleteLead(id: string): Promise<void>;
   findDuplicate(c: DupCandidate, opts?: { ignore?: { owner: string; id: string } }): Promise<DupResult | null>;
-  /** The contact keys of every lead on this laptop, for the CSV import's duplicate check. No other detail. */
+  /** The contact keys of every lead, for the CSV import's duplicate check. No other detail. */
   knownContacts(): Promise<{ email: string; phone: string; google_maps_url: string }[]>;
   addComment(owner: string, id: string, note: string, day: string): Promise<LeadEvent>;
   leadEvents(owner: string, id: string): Promise<LeadEvent[]>;

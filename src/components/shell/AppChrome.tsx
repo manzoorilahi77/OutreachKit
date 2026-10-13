@@ -8,10 +8,9 @@ import { Logo } from "@/components/ui/Logo";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
 import { MobileNav } from "./MobileNav";
 import { NavList } from "./NavList";
-import { SyncControl } from "./SyncControl";
 
 /**
- * The shell: a navy top bar, then (when signed in) a strip with the Sync control and who is signed in,
+ * The shell: a navy top bar, then (when signed in) a strip with who is signed in,
  * a sidebar from 1024px up, and a menu below that.
  */
 export async function AppChrome({ children }: { children: React.ReactNode }) {
@@ -38,8 +37,7 @@ export async function AppChrome({ children }: { children: React.ReactNode }) {
       </header>
       {session && !session.mustChangePassword && (
         <div className="border-b border-line bg-surface">
-          <div className="flex flex-wrap items-center justify-between gap-x-6 gap-y-2 px-4 py-2 sm:px-6">
-            <SyncControl />
+          <div className="flex flex-wrap items-center justify-end gap-x-6 gap-y-2 px-4 py-2 sm:px-6">
             <div className="flex items-center gap-3">
               <span className="text-muted">
                 {session.user.fullName} · {ROLE_LABELS[session.user.role]}

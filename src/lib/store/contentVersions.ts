@@ -5,8 +5,9 @@ import path from "node:path";
 
 export interface KitFileInfo { fileId: string; category: string; reviewStatus: string; version: string }
 
-export function kitFiles(root: string): KitFileInfo[] {
-  const dir = path.join(root, "src", "kits");
+/** The shipped category kits, read from the app folder (they are code, not team data). */
+export function kitFiles(appDir: string = process.cwd()): KitFileInfo[] {
+  const dir = path.join(appDir, "src", "kits");
   const out: KitFileInfo[] = [];
   for (const f of readdirSync(dir).filter((n) => n.endsWith(".json")).sort()) {
     const raw = readFileSync(path.join(dir, f));

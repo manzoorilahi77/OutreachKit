@@ -1,22 +1,24 @@
 // pnpm shots:13: screenshots for every role at 390 and 1280, light and dark, into docs/screenshots/phase-13/.
 // Runs the built app on a demo team (scripts/lib/demoTeam.ts). Also fails on horizontal page scroll.
 import { chromium, type Page } from "@playwright/test";
-import { mkdirSync, mkdtempSync, rmSync } from "node:fs";
-import { tmpdir } from "node:os";
-import path from "node:path";
+import { mkdirSync } from "node:fs";
 import { ensureBuild, startApp } from "./lib/app";
 import { signInCookie } from "./lib/browserAuth";
 import { seedFullDemo } from "./lib/demoTeam";
+import { createScratchDb } from "../src/lib/db/scratch";
+import { createPool } from "../src/lib/db/pool";
+import { loadLocalEnv } from "./lib/loadEnv";
 
 const dir = "docs/screenshots/phase-13";
 mkdirSync(dir, { recursive: true });
+loadLocalEnv();
 ensureBuild();
-const root = mkdtempSync(path.join(tmpdir(), "okit-shots13-"));
-process.env.OKIT_ROOT = root;
+const scratch = await createScratchDb("okit_shots");
+const pool = createPool(scratch.config, 4);
 
-const { plan: PLAN } = await seedFullDemo(root);
+const { plan: PLAN } = await seedFullDemo(pool);
 
-const app = await startApp({ root, port: Number(process.env.PORT ?? 3100) });
+const app = await startApp({ db: scratch.config, port: Number(process.env.PORT ?? 5021) });
 const browser = await chromium.launch();
 let overflow = 0;
 
@@ -31,7 +33,7 @@ try {
   for (const width of [390, 1280]) for (const scheme of ["light", "dark"] as const) {
     const fresh = async (user?: string) => {
       const ctx = await browser.newContext({ viewport: { width, height: 900 } });
-      if (user) await signInCookie(ctx, root, app.url, user);
+      if (user) await signInCookie(ctx, pool, app, user);
       if (scheme === "dark") await ctx.addInitScript(() => localStorage.setItem("ok-theme", "dark"));
       return { ctx, page: await ctx.newPage() };
     };
@@ -64,7 +66,8 @@ try {
 } finally {
   await browser.close();
   await app.stop();
-  rmSync(root, { recursive: true, force: true });
+  await pool.end();
+  await scratch.drop();
 }
 console.log(overflow ? `${overflow} overflow problem(s)` : `Screenshots in ${dir}. No horizontal page scroll at 390 or 1280.`);
 process.exit(overflow ? 1 : 0);

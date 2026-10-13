@@ -1,5 +1,7 @@
 # The `team/` folder format
 
+> **Legacy format.** The app now runs on MySQL (schema in `db/migrations/`). This format is still what `src/lib/store/fileStore.ts` reads and writes (the reference implementation the contract tests compare MySQL against), and what `pnpm db:import-team` copies into the database. Nobody syncs these files any more; "synced" and "laptop" below describe the old way of working.
+
 Everything the app stores is a file under `team/`, read and written only through the `Store` (`src/lib/store/`).
 Format version: **1** (`team/schema.json`). Files from an older version are migrated forward in memory when read; data from a newer version is refused until the code is updated.
 

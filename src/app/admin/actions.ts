@@ -35,7 +35,7 @@ export async function createUserAction(_prev: AccountState, fd: FormData): Promi
   return { ok: true, message: `Created ${fullName}.`, credentials: { fullName, username, password } };
 }
 
-/** Reset password, suspend, disable, enable, change role, move team. Each one bumps the account's rev, which ends its sessions at the next sync. */
+/** Reset password, suspend, disable, enable, change role, move team. Each one bumps the account's rev, which ends its sessions at the next request. */
 export async function changeUserAction(_prev: AccountState, fd: FormData): Promise<AccountState> {
   const c = await checkPerm("users.set_status");
   if (!c.ok) return { ok: false, message: c.message };
@@ -126,7 +126,7 @@ export async function saveFeaturesAction(_prev: AccountState, fd: FormData): Pro
   const cur = await c.store.getWorkspace();
   await c.store.saveWorkspace({ ...cur, features: { leadFinder: fd.get("leadFinder") === "on", softwareTrack: fd.get("softwareTrack") === "on" } });
   revalidatePath("/", "layout");
-  return { ok: true, message: "Saved. Teammates get the change at their next sync." };
+  return { ok: true, message: "Saved. Everyone gets the change now." };
 }
 
 export async function approveContentAction(_prev: AccountState, fd: FormData): Promise<AccountState> {

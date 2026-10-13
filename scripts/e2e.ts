@@ -1,13 +1,12 @@
-// pnpm e2e: two app instances on two clones of a temporary bare repo, driven in a real browser.
-//   owner laptop (port 3100) and teammate laptop (port 3101), both over one build (.next-e2e).
+// pnpm e2e: ONE running app (port 5021) on a throwaway MySQL database, driven by two people in a real browser.
 // Part 1 signs in as the owner and runs the Kit Console, board and theme checks.
-// Part 2 is the team: the owner creates a BD and syncs; the teammate's app pulls; the BD signs in, is forced to change the
-// temporary password, builds Roofing in Dallas, TX, saves it, adds a lead and syncs; the owner pulls and sees the lead in
-// Team; the owner resets the BD's password and syncs; the teammate's session ends after its next pull; and a clock
-// override shows a session open on day 13 and ended on day 14.
+// Part 2 is the team: the owner creates a BD; the BD signs in, is forced to change the temporary password, builds Roofing in
+// Dallas, TX, saves it and adds a lead; the owner sees the lead at once; the BD can't see the owner's private lead; the owner
+// resets the BD's password and the BD's session ends at the next click; five wrong passwords lock a name; the session cookie is
+// Secure; and a clock offset shows a session open on day 13 and ended on day 14.
 import assert from "node:assert/strict";
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
-import path from "node:path";
+import { randomBytes } from "node:crypto";
+import { existsSync, readFileSync } from "node:fs";
 import { chromium, type Page } from "@playwright/test";
 import { COLS } from "../src/data";
 import { CATS, catalogFor } from "../src/lib/kit/categories";
@@ -16,12 +15,18 @@ import { kitText } from "../src/lib/kit/text";
 import { applyCategoryKit } from "../src/lib/kit-v2/apply";
 import { kitSlug } from "../src/lib/kit-v2/types";
 import type { CategoryKit } from "../src/lib/kit-v2/types";
-import { SIGNIN_ERROR } from "../src/lib/auth/signin";
+import { COOKIE_NAME } from "../src/lib/auth/cookie";
+import { hashPassword } from "../src/lib/auth/password";
+import { LOCKED_ERROR, SIGNIN_ERROR } from "../src/lib/auth/signin";
+import { createPool } from "../src/lib/db/pool";
+import { createScratchDb } from "../src/lib/db/scratch";
+import { initWorkspaceDb } from "../src/lib/store/mysqlBootstrap";
+import { createMySqlStore } from "../src/lib/store/mysqlStore";
 import { ensureBuild, startApp, type RunningApp } from "./lib/app";
-import { createLab, git, runPredev } from "./lib/lab";
+import { loadLocalEnv } from "./lib/loadEnv";
 
-const OWNER_PORT = Number(process.env.E2E_OWNER_PORT ?? process.env.PORT ?? 3100);
-const TEAMMATE_PORT = Number(process.env.E2E_TEAMMATE_PORT ?? OWNER_PORT + 1);
+const PORT = Number(process.env.E2E_PORT ?? process.env.PORT ?? 5021);
+const OWNER_PASSWORD = "correct-horse-battery-1";
 
 // Fencing & gates has a category kit, so the console shows the v2 overlay; its goldens are golden/v2.
 // Step 4 starts from the account and the workspace, so the kit is built with the owner's name, the studio and the demo domain.
@@ -31,10 +36,16 @@ const fencingCk = JSON.parse(readFileSync("src/kits/fencing-gates.json", "utf8")
 const golden = kitText(applyCategoryKit(generateKit(fencingInput), buildContext(fencingInput), fencingCk, "b"));
 const genericCat = CATS.find((c) => !existsSync(`src/kits/${kitSlug(c.n)}.json`));
 
+loadLocalEnv();
 ensureBuild();
-const lab = await createLab();
-let owner: RunningApp | null = null;
-let teammate: RunningApp | null = null;
+const scratch = await createScratchDb("okit_e2e");
+const pool = createPool(scratch.config, 4);
+await initWorkspaceDb(pool, {
+  workspaceName: "Famysys", studio: "Famysys", demoDomain: "famysys.com", username: "owner", fullName: "Olive Owner",
+  passwordHash: await hashPassword(OWNER_PASSWORD), unusableTempHash: await hashPassword("nobody-knows-this"),
+});
+const SECRET = randomBytes(32).toString("hex");
+let app: RunningApp | null = null;
 const browser = await chromium.launch();
 const errors: string[] = [];
 
@@ -51,15 +62,9 @@ async function signIn(page: Page, base: string, username: string, password: stri
   await page.getByRole("button", { name: "Sign in" }).click();
 }
 
-async function syncNow(page: Page) {
-  const ctl = page.getByTestId("sync-control");
-  await ctl.getByRole("button", { name: "Sync now" }).click();
-  await ctl.getByText(/^Synced (just now|\d+ min ago)$/).waitFor({ timeout: 60000 });
-}
-
 try {
-  owner = await startApp({ root: lab.ownerRoot, port: OWNER_PORT, allowClock: true });
-  const ob = owner.url;
+  app = await startApp({ db: scratch.config, port: PORT, secret: SECRET });
+  const ob = app.url;
 
   // ---------------------------------------------------------------- Part 1: the console, board and theme (signed in as the owner)
   const octx = await browser.newContext({ viewport: { width: 1280, height: 900 }, permissions: ["clipboard-read", "clipboard-write"] });
@@ -69,10 +74,10 @@ try {
   // Signed out, the only page is /login.
   assert.equal((await op.request.get(ob + "/console", { maxRedirects: 0 })).status(), 307, "/console needs a sign-in");
   assert.match((await op.request.get(ob + "/leads", { maxRedirects: 0 })).headers()["location"] ?? "", /\/login/);
-  assert.equal((await op.request.get(ob + "/api/sync")).status(), 401, "the API needs a sign-in too");
+  assert.equal((await op.request.get(ob + "/api/leadfinder")).status(), 401, "the API needs a sign-in too");
   await signIn(op, ob, "owner", "wrong password");
   await op.getByText(SIGNIN_ERROR).waitFor();
-  await signIn(op, ob, "owner", lab.ownerPassword);
+  await signIn(op, ob, "owner", OWNER_PASSWORD);
   await op.waitForURL(ob + "/platform");
   console.log("sign-in: one error for a wrong password; the owner lands on /platform");
 
@@ -201,8 +206,8 @@ try {
   console.log("theme: light by default, manual dark toggle, remembered");
   assert.deepEqual(errors, [], "no console errors in part 1");
 
-  // ---------------------------------------------------------------- Part 2: two laptops
-  // The owner creates a team and a BD, and syncs.
+  // ---------------------------------------------------------------- Part 2: two people on one server
+  // The owner creates a team and a BD.
   await op.goto(ob + "/admin/teams", { waitUntil: "networkidle" });
   await op.getByRole("button", { name: "Add a team" }).click();
   await op.locator('input[name="name"]').last().fill("Team A");
@@ -219,12 +224,11 @@ try {
   const tempPassword = (await op.getByTestId("cred-password").innerText()).trim();
   assert.equal(username, "ravi.rao");
   assert.match(tempPassword, /^[A-Za-z2-9]{4}-[A-Za-z2-9]{4}-[A-Za-z2-9]{4}$/);
-  assert.match(await op.getByText("Sync, then add their GitHub account to the repo.").innerText(), /GitHub/);
   await op.getByRole("button", { name: "I've shared it" }).click();
   assert.equal(await op.getByTestId("cred-password").count(), 0, "the password is shown once");
-  assert.ok(!readFileSync(path.join(lab.ownerRoot, "team", "users", "ravi.rao.json"), "utf8").includes(tempPassword), "only the hash is saved");
-  await syncNow(op);
-  assert.match(git(lab.ownerRoot, "log", "-1", "--format=%s"), /^sync: owner /);
+  const [stored] = await pool.query<import("mysql2/promise").RowDataPacket[]>("SELECT temp_password_hash FROM users WHERE username = ?", [username]);
+  assert.match(stored[0]!.temp_password_hash as string, /^\$2[aby]\$/);
+  assert.notEqual(stored[0]!.temp_password_hash, tempPassword, "only the hash is saved");
   // A password typed in the form becomes the temporary one.
   await op.fill("#nu-name", "Tess Typed");
   await op.fill("#nu-password", "short");
@@ -234,23 +238,18 @@ try {
   await op.getByRole("button", { name: "Create user" }).click();
   assert.equal((await op.getByTestId("cred-password").innerText()).trim(), "Typed-Create-Pass-1", "the typed password is the one shown");
   await op.getByRole("button", { name: "I've shared it" }).click();
-  console.log("owner: created a BD, the password was shown once, a typed password is accepted, synced");
+  console.log("owner: created a BD, the password was shown once, a typed password is accepted");
 
-  // The teammate's laptop starts the app (predev pulls), and the BD signs in.
-  const early = await browser.newContext({ viewport: { width: 1280, height: 900 } });
-  teammate = await startApp({ root: lab.teammateRoot, port: TEAMMATE_PORT, allowClock: true });
-  const tb = teammate.url;
-  const ep = await early.newPage();
-  await signIn(ep, tb, username, tempPassword);
-  await ep.getByText(SIGNIN_ERROR).waitFor();
-  await early.close();
-  runPredev(lab.teammateRoot); // "pnpm dev": pulls the accounts
-  assert.ok(existsSync(path.join(lab.teammateRoot, "team", "users", "ravi.rao.json")));
+  // The BD signs in from another browser: no clone, no sync, just the address.
+  const tb = ob;
   const tctx = await browser.newContext({ viewport: { width: 1280, height: 900 } });
   const tp = await tctx.newPage();
   await signIn(tp, tb, username, tempPassword);
   await tp.waitForURL(tb + "/account/password");
-  assert.equal(await tp.getByTestId("sync-control").count(), 0, "no app shell until the password is set");
+  const cookie = (await tctx.cookies(tb)).find((c) => c.name === COOKIE_NAME);
+  assert.ok(cookie, "a session cookie was set");
+  assert.equal(cookie!.secure, true, "the session cookie is Secure");
+  assert.equal(cookie!.httpOnly, true, "the session cookie is HttpOnly");
   assert.equal((await tp.request.get(tb + "/today", { maxRedirects: 0 })).headers()["location"]?.endsWith("/account/password"), true, "every page redirects to the password page");
   await tp.fill("#new", "short");
   await tp.fill("#confirm", "short");
@@ -265,9 +264,10 @@ try {
   await tp.fill("#confirm", ownPassword);
   await tp.getByRole("button", { name: "Set my password" }).click();
   await tp.waitForURL(tb + "/today");
-  console.log("teammate: signed in with the temporary password, was forced to set their own, landed on /today");
-  assert.ok(readFileSync(path.join(lab.teammateRoot, "team", "data", "ravi.rao", "profile.json"), "utf8").includes("$2"), "own password stored as a hash");
-  assert.ok(!readFileSync(path.join(lab.teammateRoot, "team", "data", "ravi.rao", "profile.json"), "utf8").includes(ownPassword));
+  const [prof] = await pool.query<import("mysql2/promise").RowDataPacket[]>("SELECT password_hash FROM profiles WHERE username = ?", [username]);
+  assert.match(prof[0]!.password_hash as string, /^\$2[aby]\$/, "own password stored as a hash");
+  assert.notEqual(prof[0]!.password_hash, ownPassword);
+  console.log("teammate: signed in with the temporary password, was forced to set their own, landed on /today; the cookie is Secure and HttpOnly");
 
   // The BD builds Roofing in Dallas, TX, saves it and adds a lead.
   watch(tp);
@@ -278,7 +278,7 @@ try {
   assert.match(await strip.innerText(), /Roofing · Dallas, TX/);
   assert.match(await strip.innerText(), /Active/);
   assert.match(await strip.innerText(), /Team A/);
-  assert.match(await strip.innerText(), /Not synced yet/);
+  assert.doesNotMatch(await strip.innerText(), /sync/i, "there is no sync any more");
   assert.match(await strip.innerText(), /Nobody else has saved Roofing in Dallas, TX yet\. Duplicate businesses are blocked\./);
   await strip.getByRole("link", { name: "Add the first lead" }).click();
   await tp.waitForURL(/\/leads\/new\?kit=/);
@@ -326,7 +326,8 @@ try {
   assert.equal(lines[0]!.split(",").length, 28);
   assert.equal(lines.length, 2);
   assert.match(lines[1]!, /,8,Hot,/);
-  assert.match(readFileSync(path.join(lab.teammateRoot, "team", "data", "ravi.rao", "audit.jsonl"), "utf8"), /"action":"leads\.export"/);
+  const [audited] = await pool.query<import("mysql2/promise").RowDataPacket[]>("SELECT COUNT(*) AS n FROM audit_log WHERE actor = ? AND action = 'leads.export'", [username]);
+  assert.equal(Number(audited[0]!.n), 1, "the export is in the audit log");
 
   // Import: the two-row CSV is previewed and imported; a re-import is all duplicates.
   await tp.goto(tb + "/leads/import", { waitUntil: "load" });
@@ -364,27 +365,34 @@ try {
   }
   assert.deepEqual(errors, [], "no console errors for the BD");
 
-  await syncNow(tp);
-  assert.match(git(lab.teammateRoot, "log", "-1", "--format=%s"), /^sync: ravi\.rao /);
-  assert.equal(git(lab.teammateRoot, "show", "--name-only", "--format=", "HEAD").split("\n").filter(Boolean).every((l) => l.startsWith("team/data/ravi.rao/")), true, "the sync commit holds only the BD's own folder");
-  console.log("teammate: synced; the commit holds only team/data/ravi.rao/");
-
-  // The owner pulls and sees the lead in Team.
-  await op.goto(ob + "/team", { waitUntil: "networkidle" });
-  await syncNow(op);
+  // The owner sees the BD's lead at once: nobody syncs anything.
   await op.goto(ob + "/leads", { waitUntil: "networkidle" });
-  assert.equal(await op.getByRole("link", { name: "Smith Roofing" }).count(), 1, "the owner sees the BD's lead after pulling");
+  assert.equal(await op.getByRole("link", { name: "Smith Roofing" }).count(), 1, "the owner sees the BD's lead straight away");
   assert.equal(await op.getByRole("link", { name: "Cedar Line Fence Co" }).count(), 1);
   await op.goto(ob + "/team", { waitUntil: "networkidle" });
   assert.match(await op.locator('[role="region"][aria-label="Pipeline by BD"]').innerText(), /Ravi Rao/);
-  // And a second person is blocked from adding the same business, by name.
+  // A second person is blocked from adding the same business, by name.
   await op.goto(ob + "/leads/new", { waitUntil: "load" });
   await settle(op);
   await op.fill("#business_name", "Smith Roofing");
   await op.fill("#phone", "2145550101");
   await op.getByRole("button", { name: "Add lead" }).click();
   await op.getByText("Smith Roofing is already Ravi's lead.").waitFor();
-  console.log("owner: pulled, sees the lead in Team, and adding the same business is refused: “Smith Roofing is already Ravi's lead.”");
+  console.log("owner: sees the lead in Team at once, and adding the same business is refused: “Smith Roofing is already Ravi's lead.”");
+
+  // The BD cannot read the owner's lead: the server never sends it.
+  const secret = await createMySqlStore({ username: "owner", role: "super_admin", team: null }, pool).createLead({
+    business_name: "Owner Private Fencing", owner_first_name: "", category: "Fencing & gates", city: "Mesa", state: "AZ", phone: "4805550199", email: "", instagram_handle: "",
+    facebook_page: "", google_maps_url: "", website_found: null, website_url: "", site_verdict: "", google_review_count: null, google_rating: null, followers: null,
+    last_post_date: null, demo_url: "", demo_built_date: null, first_contact_date: null, channel: null, notes: "Only the owner should see this", checks: {},
+  });
+  assert.equal((await tp.request.get(`${tb}/leads/${secret.id}`)).status(), 404, "a BD asking for the owner's lead by its id gets a 404");
+  await tp.goto(tb + "/leads", { waitUntil: "load" });
+  assert.equal(await tp.getByText("Owner Private Fencing").count(), 0, "it isn't in the BD's list");
+  const bdCsv = await tp.request.get(tb + "/leads/export.csv");
+  assert.equal(bdCsv.status(), 200);
+  assert.ok(!(await bdCsv.text()).includes("Owner Private Fencing"), "nor in the BD's export");
+  console.log("isolation: a BD can't open, list or export the owner's lead");
 
   // The kit workspace shows who else works the territory.
   await op.goto(ob + "/console?cat=Roofing&st=TX&city=Dallas&build=1", { waitUntil: "networkidle" });
@@ -392,7 +400,16 @@ try {
   await op.getByRole("region", { name: "Saved kit" }).waitFor();
   assert.match(await op.getByRole("region", { name: "Saved kit" }).innerText(), /Also working Roofing in Dallas, TX: Ravi \(\d+ leads?\)/);
 
-  // The owner resets the BD's password and syncs.
+  // Five wrong passwords lock a name; the sixth try says so, even with the right password.
+  const brute = await browser.newContext();
+  const bp = await brute.newPage();
+  for (let i = 0; i < 5; i++) { await signIn(bp, tb, "nobody.here", "wrong password " + i); await bp.getByText(SIGNIN_ERROR).waitFor(); }
+  await signIn(bp, tb, "nobody.here", "wrong password 6");
+  await bp.getByText(LOCKED_ERROR).waitFor();
+  await brute.close();
+  console.log("sign-in: five wrong passwords lock the name for 15 minutes");
+
+  // The owner resets the BD's password: the BD's session ends at the next click.
   await op.goto(ob + "/platform/users", { waitUntil: "networkidle" });
   await op.getByRole("button", { name: "Manage Ravi Rao" }).click();
   await op.getByRole("button", { name: "Reset password" }).click();
@@ -402,15 +419,6 @@ try {
   const newTemp = (await op.getByTestId("cred-password").innerText()).trim();
   assert.equal(newTemp, "Typed-Reset-Pass-9", "the owner chose the new temporary password");
   await op.getByRole("button", { name: "I've shared it" }).click();
-  await syncNow(op);
-  console.log("owner: reset the BD's password and synced");
-
-  // The teammate's session ends after its next pull.
-  await tp.goto(tb + "/today", { waitUntil: "networkidle" });
-  assert.equal(new URL(tp.url()).pathname, "/today", "still signed in before the pull");
-  await tp.getByTestId("sync-control").getByRole("button", { name: "Sync now" }).click();
-  // The pull brings the new rev; the page refresh that follows a sync finds the session ended.
-  await tp.waitForURL(/\/login/, { timeout: 60000 });
   await tp.goto(tb + "/today", { waitUntil: "load" });
   await tp.waitForURL(/\/login/);
   await signIn(tp, tb, username, ownPassword);
@@ -421,31 +429,39 @@ try {
   await tp.fill("#confirm", "ravi-second-password");
   await tp.getByRole("button", { name: "Set my password" }).click();
   await tp.waitForURL(tb + "/today");
-  console.log("teammate: the reset ended the session at the next pull; the old password stopped working; the new temporary one works once");
+  console.log("owner: reset the BD's password; the BD's session ended at the next click; the old password stopped working; the new temporary one works once");
 
-  // Restart needed: the owner's code update changes package.json.
-  runPredev(lab.teammateRoot);
-  writeFileSync(path.join(lab.teammateRoot, "package.json"), '{"name":"outreach-kit-stub","version":"2"}\n');
-  await tp.getByTestId("sync-control").getByRole("button", { name: "Sync now" }).click();
-  await tp.getByText("Restart needed: ask Claude to restart the Outreach Kit.").waitFor();
-  git(lab.teammateRoot, "checkout", "--", "package.json");
-  console.log("teammate: a changed package.json shows “Restart needed”");
-
-  // A clock override: open on day 13, ended on day 14.
-  await tp.getByRole("button", { name: "Sign out" }).click();
+  // A suspension ends the session too, and lifting it brings the person back to the sign-in page.
+  await op.goto(ob + "/platform/users", { waitUntil: "networkidle" });
+  await op.getByRole("button", { name: "Manage Ravi Rao" }).click();
+  await op.getByRole("button", { name: "Pause" }).click();
+  await op.fill('[id="s-reason-ravi.rao"]', "On leave");
+  await op.getByRole("button", { name: "Yes, do it" }).click();
+  await op.getByText("Ravi Rao is paused.").waitFor();
+  await tp.goto(tb + "/today", { waitUntil: "load" });
+  await tp.waitForURL(/\/no-access/);
+  await op.goto(ob + "/platform/users", { waitUntil: "networkidle" });
+  await op.getByRole("button", { name: "Manage Ravi Rao" }).click();
+  await op.getByRole("button", { name: "Turn on" }).click();
+  await op.getByRole("button", { name: "Yes, do it" }).click();
+  await op.getByText("Ravi Rao can sign in again.").waitFor();
+  await tp.goto(tb + "/today", { waitUntil: "load" });
   await tp.waitForURL(/\/login/);
+  console.log("owner: paused the BD, who was refused at the next click; turned them back on, and they sign in again");
+
+  // The clock: a session is open on day 13 and ended on day 14. Same database, same secret, a new start with the clock moved.
   await signIn(tp, tb, username, "ravi-second-password");
   await tp.waitForURL(tb + "/today");
-  const clock = path.join(lab.teammateRoot, ".local", "clock.json");
-  mkdirSync(path.dirname(clock), { recursive: true });
+  const bdCookies = await tctx.cookies(tb);
   const DAY = 86_400_000;
-  writeFileSync(clock, JSON.stringify({ offsetMs: 13 * DAY + 23 * 3_600_000 }));
-  await tp.goto(tb + "/today", { waitUntil: "load" });
-  assert.equal(new URL(tp.url()).pathname, "/today", "open at 13 days 23 hours");
-  writeFileSync(clock, JSON.stringify({ offsetMs: 14 * DAY + 60_000 }));
-  await tp.goto(tb + "/today", { waitUntil: "load" });
-  assert.equal(new URL(tp.url()).pathname, "/login", "ended after 14 days");
-  writeFileSync(clock, JSON.stringify({ offsetMs: 0 }));
+  for (const [offset, expected] of [[13 * DAY + 23 * 3_600_000, "/today"], [14 * DAY + 60_000, "/login"]] as const) {
+    await app.stop();
+    app = await startApp({ db: scratch.config, port: PORT, secret: SECRET, clockOffsetMs: offset });
+    await tctx.clearCookies();
+    await tctx.addCookies(bdCookies);
+    await tp.goto(app.url + "/today", { waitUntil: "load" });
+    assert.equal(new URL(tp.url()).pathname, expected, `at +${(offset / DAY).toFixed(2)} days the BD lands on ${expected}`);
+  }
   console.log("sessions: open on day 13, ended on day 14");
 
   await tctx.close();
@@ -456,7 +472,7 @@ try {
   process.exitCode = 1;
 } finally {
   await browser.close();
-  await owner?.stop();
-  await teammate?.stop();
-  lab.cleanup();
+  await app?.stop();
+  await pool.end();
+  await scratch.drop();
 }

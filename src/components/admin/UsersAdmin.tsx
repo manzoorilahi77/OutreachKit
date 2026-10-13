@@ -60,7 +60,7 @@ export function UsersAdmin({ rows, teams, creatableRoles, assignableRoles }: {
           </tbody>
         </TableWrap>
         {!shown.length && <p className="text-muted">No one matches those filters.</p>}
-        <p className="text-sm text-muted">Changes reach each laptop at its next sync. A reset, pause, turn-off or role change signs that person out then. Removing someone for good also means removing their access to the repo on GitHub.</p>
+        <p className="text-sm text-muted">A reset, pause, turn-off or role change signs that person out at their next click.</p>
       </section>
     </div>
   );
@@ -152,7 +152,7 @@ function PersonRow({ r, teams, roles, onCreds }: { r: UserRow; teams: { id: stri
               </div>
               {choice === "reset_password" && (
                 <div className="space-y-3">
-                  <p>Reset {r.fullName}&apos;s password? They set their own at next sign-in, and any open session ends at their next sync.</p>
+                  <p>Reset {r.fullName}&apos;s password? They set their own at next sign-in, and any open session ends at their next click.</p>
                   <div className="max-w-md">
                     <Field id={`r-pw-${r.username}`} label="New temporary password (optional)" hint="At least 10 characters. Leave it blank and the app makes one.">
                       <Input id={`r-pw-${r.username}`} name="password" autoComplete="off" autoCapitalize="none" spellCheck={false} minLength={10} maxLength={72} />
@@ -168,7 +168,7 @@ function PersonRow({ r, teams, roles, onCreds }: { r: UserRow; teams: { id: stri
               )}
               {choice === "disable" && (r.openLeads > 0
                 ? <p role="alert" className="flex items-start gap-2"><AlertIcon className="mt-1 shrink-0" /><span>{r.fullName} has {r.openLeads} open lead{r.openLeads === 1 ? "" : "s"}. <Link href={`/handover?from=${r.username}`}>Hand them over first</Link>; then you can turn the account off.</span></p>
-                : <p>Turn off {r.fullName}&apos;s account? They are refused at sign-in on every laptop after its next sync. Nothing is deleted.</p>)}
+                : <p>Turn off {r.fullName}&apos;s account? They are refused at sign-in straight away. Nothing is deleted.</p>)}
               {choice === "enable" && <p>Let {r.fullName} sign in again?</p>}
               {choice === "change_role" && (
                 <div className="max-w-xs"><Field id={`c-role-${r.username}`} label="New role"><Select id={`c-role-${r.username}`} name="role" defaultValue={r.role}>{roles.map((x) => <option key={x.value} value={x.value}>{x.label}</option>)}</Select></Field></div>

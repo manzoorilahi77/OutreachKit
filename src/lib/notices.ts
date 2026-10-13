@@ -1,4 +1,4 @@
-// In-app notices, computed from synced events: a team lead reached Replied, Call booked, Proposal sent or Won. Nothing is emailed.
+// In-app notices, computed from lead events: a team lead reached Replied, Call booked, Proposal sent or Won. Nothing is emailed.
 import type { Stage } from "@/lib/leads/stages";
 import type { LeadEvent } from "@/lib/store/types";
 

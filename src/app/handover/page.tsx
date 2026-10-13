@@ -27,7 +27,7 @@ export default async function HandoverPage({ searchParams }: { searchParams: Pro
     : [];
   return (
     <div className="mx-auto max-w-6xl space-y-6 px-4 py-10 sm:px-6">
-      <SectionHead num="Hand-offs" title="Hand over leads" sub="Pick the person whose leads move, tick the leads and choose the BD who takes them. Each hand-off is a record in your folder; the new owner accepts it after the next sync. Nothing is deleted." />
+      <SectionHead num="Hand-offs" title="Hand over leads" sub="Pick the person whose leads move, tick the leads and choose the BD who takes them. The new owner accepts each one from their inbox. Nothing is deleted." />
       <form method="get" className="flex flex-wrap items-end gap-4">
         <div className="w-72">
           <Field id="from" label="Hand over the leads of">

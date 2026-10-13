@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState, useTransition } from "react";
+import { useState, useTransition } from "react";
 import { saveKit, type SaveKitResult } from "@/app/actions";
 import { Button } from "@/components/ui/Button";
 import { Chip } from "@/components/ui/Chip";
@@ -19,18 +19,7 @@ const plural = (n: number, one: string, many: string) => `${n} ${n === 1 ? one :
  */
 export function SavedStrip({ input, direction = "b", finderEnabled }: { input: KitInput; direction?: DirectionId; finderEnabled: boolean }) {
   const [result, setResult] = useState<SaveKitResult | null>(null);
-  const [synced, setSynced] = useState(false);
   const [pending, start] = useTransition();
-
-  useEffect(() => {
-    if (!result?.ok) return;
-    let live = true;
-    fetch("/api/sync", { cache: "no-store" })
-      .then((r) => (r.ok ? r.json() : null))
-      .then((j: { pending?: number } | null) => live && setSynced(!!j && j.pending === 0))
-      .catch(() => {});
-    return () => { live = false; };
-  }, [result]);
 
   if (!result?.ok) {
     return (
@@ -51,12 +40,11 @@ export function SavedStrip({ input, direction = "b", finderEnabled }: { input: K
   const where = `${input.cat} in ${input.city}, ${input.st}`;
   return (
     <section aria-label="Saved kit" className="w-full space-y-4 rounded-lg border-2 border-head bg-surface p-4">
-      <p className="flex items-center gap-2 text-sm text-muted" role="status"><CheckIcon /> Saved · syncs with your team</p>
+      <p className="flex items-center gap-2 text-sm text-muted" role="status"><CheckIcon /> Saved · your team can see it</p>
       <h4 className="text-2xl">{kit.title}</h4>
       <div className="flex flex-wrap gap-2">
         <Chip variant={kit.status === "active" ? "tier-a" : "plain"}>{KIT_STATUS_LABEL[kit.status]}</Chip>
         {team && <Chip>{team}</Chip>}
-        <Chip>{synced ? "Synced" : "Not synced yet"}</Chip>
       </div>
       <dl className="grid grid-cols-3 gap-3">
         {([["Leads", stats.leads], ["Contacted", stats.contacted], ["Replied", stats.replied]] as const).map(([label, n]) => (

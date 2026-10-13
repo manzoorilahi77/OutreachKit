@@ -27,7 +27,7 @@ export async function assignLeads(_prev: FormState, fd: FormData): Promise<FormS
   }
   revalidatePath("/", "layout");
   if (!done) return { ok: false, message: first };
-  return { ok: true, message: `${done} lead${done === 1 ? "" : "s"} assigned. Sync, and they show as “Assigned to you” on that BD's Today page.${first ? ` ${picked.length - done} could not be assigned: ${first}` : ""}` };
+  return { ok: true, message: `${done} lead${done === 1 ? "" : "s"} assigned. They show as “Assigned to you” on that BD's Today page.${first ? ` ${picked.length - done} could not be assigned: ${first}` : ""}` };
 }
 
 export async function acceptAssignment(assignmentId: string): Promise<FormState> {

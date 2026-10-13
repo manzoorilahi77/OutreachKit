@@ -6,7 +6,7 @@ import { revalidatePath } from "next/cache";
 import { COOKIE_NAME, SESSION_MS, signSession } from "@/lib/auth/cookie";
 import { recordSignIn } from "@/lib/auth/lastSignIn";
 import { hashPassword, passwordProblem, verifyPassword } from "@/lib/auth/password";
-import { fileStorage, SignInLimiter } from "@/lib/auth/rateLimit";
+import { dbFailureLog, SignInLimiter } from "@/lib/auth/rateLimit";
 import { ROLE_HOMES } from "@/lib/auth/roles";
 import { sessionSecret } from "@/lib/auth/secret";
 import { authStore, checkPerm, getSession } from "@/lib/auth/server";
@@ -16,7 +16,7 @@ import { validateKit } from "@/lib/kit/validate";
 import { isDirectionId } from "@/lib/kit-v2/themes";
 import { safeNext } from "@/lib/safe-next";
 import { StoreError } from "@/lib/store/errors";
-import { rootDir } from "@/lib/store/paths";
+import { getPool } from "@/lib/db/pool";
 import type { KitStats, TerritoryEntry } from "@/lib/store/store";
 import type { KitStatus } from "@/lib/store/types";
 import { KIT_STATUSES } from "@/lib/store/types";
@@ -24,17 +24,17 @@ import { KIT_STATUSES } from "@/lib/store/types";
 export type FormState = { ok: boolean; message: string } | null;
 
 export async function signIn(_prev: FormState, formData: FormData): Promise<FormState> {
-  const root = rootDir();
+  const pool = getPool();
   const username = String(formData.get("username") ?? "");
   const res = await authenticate({
-    store: authStore(), limiter: new SignInLimiter(fileStorage(root)), username, password: String(formData.get("password") ?? ""), now: now(),
+    store: authStore(), limiter: new SignInLimiter(dbFailureLog(pool)), username, password: String(formData.get("password") ?? ""), now: now(),
   });
   if (!res.ok) return { ok: false, message: res.message };
   const issuedAt = now().getTime();
-  (await cookies()).set(COOKIE_NAME, signSession({ username: res.user.username, issuedAt, rev: res.user.rev }, sessionSecret(root)), {
-    httpOnly: true, sameSite: "lax", path: "/", maxAge: Math.floor(SESSION_MS / 1000),
+  (await cookies()).set(COOKIE_NAME, signSession({ username: res.user.username, issuedAt, rev: res.user.rev }, sessionSecret()), {
+    httpOnly: true, secure: process.env.NODE_ENV === "production", sameSite: "lax", path: "/", maxAge: Math.floor(SESSION_MS / 1000),
   });
-  await recordSignIn(root, res.user.username, new Date(issuedAt).toISOString());
+  await recordSignIn(pool, res.user.username, new Date(issuedAt).toISOString());
   const home = ROLE_HOMES[res.user.role];
   const next = safeNext(String(formData.get("next") ?? ""), home);
   redirect(res.mustChangePassword ? "/account/password" : next === "/" ? home : next);

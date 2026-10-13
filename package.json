@@ -8,9 +8,9 @@
     "node": ">=22"
   },
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 5021",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -H 127.0.0.1 -p 5021",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "test": "tsx scripts/secrets-check.ts && vitest run",
@@ -29,14 +29,18 @@
     "scrape": "tsx scripts/scrape.ts",
     "roles:doc": "tsx scripts/roles-doc.ts",
     "predev": "tsx scripts/predev.ts",
-    "team:init": "tsx scripts/team-init.ts",
-    "sync:cycle": "tsx scripts/sync-cycle.ts",
+    "db:init-owner": "tsx scripts/db-init-owner.ts",
+    "db:reset-password": "tsx scripts/db-reset-password.ts",
+    "db:migrate": "tsx scripts/db-migrate.ts",
+    "db:import-team": "tsx scripts/import-team.ts",
+    "db:backup": "tsx scripts/db-backup.ts",
     "secrets:check": "tsx scripts/secrets-check.ts",
     "shots:13": "tsx scripts/shots-phase13.ts"
   },
   "dependencies": {
     "ajv": "^8.20.0",
     "bcryptjs": "^3.0.3",
+    "mysql2": "^3.24.5",
     "next": "15.5.27",
     "playwright": "^1.63.0",
     "react": "19.3.0",

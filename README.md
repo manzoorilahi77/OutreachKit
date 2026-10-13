@@ -4,105 +4,87 @@ A web app for selling websites and software to local service businesses in the U
 *The Territory Desk* (`docs/source/territory-desk.html`) and wraps it in a team system: accounts, six roles, saved kits,
 a lead tracker and a local lead finder.
 
-## What changed in Phase 13
+## How it runs
 
-The Outreach Kit used to be one person's tool: magic-link sign-in, every row private to its owner, data in Supabase, the lead finder in MySQL.
-Famysys now runs it as a team, with these constraints, so the app is now:
+One server, one MySQL database, one address. Teammates open the URL and sign in like any other web app: they never clone the repo,
+install anything, or sync. Only the owner has the code.
 
-- **No server and no database.** Every teammate runs the app on their own Mac or Windows laptop. Supabase and MySQL are gone from the app
-  (their files are kept for reference in `docs/archive/`, "Reference for a future server database. Not used by the app.").
-- **Files in the repo.** Each person's work is saved as plain files in `team/data/<username>/`; the account files, teams and company details are in
-  `team/`. The app's **Sync** button (and app start, and every 30 minutes) commits only the files that person may write and moves them
-  through the private GitHub repo with git. Because nobody writes another person's files, syncs don't conflict. See [docs/team-format.md](docs/team-format.md).
+- **One MySQL database** holds everything: accounts, teams, company details, kits, leads, events, hand-offs, the audit log, playbook reads, finder
+  results, sign-in attempts. Only the server can read it, so a BD can only ever receive their own leads: the `Store` filters every read by the caller's
+  role before a row leaves the database.
 - **Accounts the owner creates.** Username and password. The owner (and admins, below admin) create each account; the app shows a
-  temporary password once; the person sets their own at first sign-in. Sessions last 14 days.
+  temporary password once; the person sets their own at first sign-in. Sessions last 14 days, and a reset, pause, turn-off or role change ends that
+  person's session at their next click.
 - **Six roles**: super admin, admin, manager, BD, researcher, viewer. See [docs/roles.md](docs/roles.md) (generated from the permission map).
-  A BD sees only their own leads; a manager their team's; admins everyone's. Territories are shared; duplicate businesses are blocked.
-- **One `Store`** (`src/lib/store/`) is the only code that touches `team/`. A server database can later replace it without touching a screen.
+  A BD sees only their own leads; a manager their team's; admins everyone's. Territories are shared; duplicate businesses are blocked by a unique key in the
+  database, so two people adding the same business at once cannot both succeed.
+- **One `Store`** (`src/lib/store/`) is the only code that touches stored data. `mysqlStore.ts` is what the app runs on; `fileStore.ts` (the old `team/` files)
+  is kept as the reference implementation and as the source for the migration. Both pass the same contract tests (`tests/contract/`).
 - The Kit Console, the generators, `pnpm parity`, `pnpm golden:sweep` and `CHANGES.md` are untouched.
 
-## What this setup can't do
+## Owner setup
 
-- **Logins identify people; they don't protect data.** Every laptop that pulls has every folder. The app shows a BD only their own leads, but the files are
-  readable on disk in any text editor. The owner accepted this.
-- **Account changes reach a laptop at its next sync**, not instantly: at app start, within 30 minutes, or when someone presses Sync. A reset, pause,
-  turn-off or role change ends that person's session at that laptop's next sync.
-- **The real way to remove someone** is removing their GitHub access to the repo, then turning their account off. They keep whatever was already on their laptop.
-- **Duplicate checks are as fresh as the last sync.** Two people can add the same business in the same half hour; the second sync keeps both and the
-  duplicate index flags it from then on.
-- **Lead contact details stay in git history.** Business phone numbers and emails are in the repo's history for good. The repo must be private.
+The first-time install on the Hostinger VPS, step by step, is in [docs/hostinger-install.md](docs/hostinger-install.md). To run it on your own computer:
 
-## Owner setup (once)
-
-Needs Node 22 or newer, git and pnpm, and a **private** GitHub repo you can push to.
+Needs Node 22 or newer, pnpm and a MySQL 8.0 or newer you can create a database on.
 
 ```bash
 pnpm install
-pnpm team:init          # workspace name, studio, demo domain, your username, full name and password. Writes team/. Runs once.
-pnpm dev                # http://localhost:3000, then sign in
+cp .env.example .env.local     # then fill in DB_HOST, DB_PORT, DB_NAME, DB_USER, DB_PASSWORD
+pnpm db:migrate                # creates the tables (pnpm dev also applies new migrations on start)
+pnpm db:init-owner             # workspace name, studio, demo domain, your username, full name and password. Runs once.
+pnpm dev                       # http://localhost:5021, then sign in
 ```
 
 Then:
 
 1. **Users → Create user** for each teammate: full name, username, role, team (create teams under Teams first). The app shows
-   "Username … · Temporary password … · Ask your Claude to set up and run the Outreach Kit, then sign in at http://localhost:3000" once, with Copy.
-2. Press **Sync now** (the account file goes to GitHub), push your code the way you normally do, and **add each teammate's GitHub account as a collaborator** on the repo.
-3. Send each teammate their username and temporary password in chat.
-4. To bring back leads you exported before this phase, use **Leads → Import CSV**. Saved kits are re-saved from the console.
+   "Username … · Temporary password … · Sign in at …" once, with Copy. Send it to them in chat.
+2. To bring over the data from the old `team/` files: `pnpm db:import-team` is a dry run that prints counts; `pnpm db:import-team --apply` writes. It only reads `team/`
+   and can be run again safely. Or use **Leads → Import CSV** for leads exported earlier.
 
-The owner's code updates reach teammates by the same pull. `pnpm dev` hot reloads; if `package.json` or the lockfile changed the app shows
-"Restart needed: ask Claude to restart the Outreach Kit", and `pnpm dev` runs `pnpm install` when the lockfile changed.
-
-## Teammate setup
-
-Teammates are not technical. They clone the repo and tell their own Claude: **"Set up and run the Outreach Kit."** Everything their Claude needs, with Mac and
-Windows steps side by side, is in [CLAUDE.md](CLAUDE.md) ("Run the Outreach Kit (for a teammate's Claude)"), including the two sentences the app shows when a
-sync stops: "Fix the Outreach Kit sync" and "Set up GitHub sign-in for the Outreach Kit". Nobody installs, sees or manages a database.
+Local runs always use **port 5021**: `pnpm dev` and `pnpm start` both listen there.
 
 ## What the Kit Console does
 
 - **Kit Console** (`/console`): category → desktop or phone → state and city → your details. It builds the same field kit as the original: searches,
   hashtags, sources, site blueprint, build prompt, 15 openers, 8 messages, pricing, upsell, cross-sell and AI ladders, and the 60-minute block.
-  Saving a kit writes `kits/<id>.json` (inputs only, plus a title and a status) and shows the saved strip: status, counters, who else works the same
+  Saving a kit stores its inputs only (plus a title and a status) and shows the saved strip: status, counters, who else works the same
   category and city, and three next actions.
 - **Playbook** (`/playbook`): a card for each of the 11 sections, a "Start here" path per role, read receipts, and required reading set by managers and admins.
 - **Leads**: one row per business with the 28 sheet columns, the scorer, the 8 pipeline stages, next actions from the Day 0/2/5/9/14/45 sequence, live
   ratios, and a CSV export (own, team or all, by role; every export is logged) with the original's exact 28-column header.
 - **Hand-offs**: researchers' leads wait in an unassigned queue; a manager (their team) or an admin assigns each to a BD, who accepts it. A leaver's open leads
   are handed over the same way before their account is turned off.
-- **Lead finder** (optional, local): a Playwright-driven Chromium searches Google Maps for "category in city, ST", opens each listing and saves the ones that
+- **Lead finder** (optional): a Playwright-driven Chromium searches Google Maps for "category in city, ST", opens each listing and saves the ones that
   show no website into the runner's own folder. See below.
 
-The app never sends anything, sends no email, and never fetches a third-party site, except the optional **lead finder**, where a browser on your own computer reads Google Maps.
+The app sends no email and fetches no third-party site, except the optional **lead finder**, where a browser on the server reads Google Maps.
 
 ## Setup details
 
-Needs Node 22 and pnpm.
-
-```bash
-pnpm install
-pnpm dev            # http://localhost:3000
-```
-
 | Variable | What it is |
 |---|---|
+| `DB_HOST`, `DB_PORT`, `DB_NAME`, `DB_USER`, `DB_PASSWORD` | The MySQL database. Required. Set in `.env.local` locally, in the service's environment on the server. Never committed |
+| `SESSION_SECRET` | Signs session cookies. 32 or more characters; **required in production** (`NODE_ENV=production`). In development a random one is kept in `.local/session-secret` |
 | `SCRAPE_HEADED` | Optional: `1` shows the lead finder's browser window when started from the console |
-| `OKIT_ROOT` | Optional: use another folder as the repo root for `team/` and `.local/` (tests and the two-laptop e2e use it) |
+| `OKIT_ALLOW_CLOCK_OVERRIDE`, `OKIT_CLOCK_OFFSET_MS` | Test only (`pnpm e2e` sets them): move the app's clock. Never set these on the server |
 
-`.local/` holds this laptop's session secret, last-sync state and sign-in attempts. It is created on first run and never committed.
+Database commands: `pnpm db:migrate` (apply new migrations, safe to repeat), `pnpm db:init-owner` (once), `pnpm db:import-team [--from <folder>] [--apply]` (copy the old `team/` files in), `pnpm db:backup [--dir <folder>] [--keep <days>]` (a compressed `mysqldump`; deletes its own backups older than 14 days by default).
+The session cookie is `HttpOnly`, `SameSite=Lax`, and `Secure` whenever `NODE_ENV=production`.
 
 ### Local lead finder (optional)
 
-Finds local businesses that have no website, for free, on any laptop with Chromium installed. The super admin can switch it off for the workspace (Feature switches).
+Finds local businesses that have no website, for free, using Chromium on the machine the app runs on. The super admin can switch it off for the workspace (Feature switches). On a datacentre server (a VPS) Google may block or CAPTCHA the requests; see docs/hostinger-install.md step 7.
 
 ```bash
-pnpm exec playwright install chromium      # once
+pnpm exec playwright install chromium      # once (on a server: pnpm exec playwright install --with-deps chromium)
 pnpm dev
 ```
 
 In the console (or **Lead finder** for researchers), pick a category and a state and city. A "Find businesses without a website" section appears: choose
-**Today's limit** (20, 50, 70 or 100) and click **Find businesses**. Progress streams in as "Checked 23 · no website 9 · saved 7 · skipped 14 with a website". Results are written to
-`team/data/<you>/finder/businesses.jsonl`, and **Move to Leads** copies a row into your leads (a business that is already someone's lead is refused with their name).
+**Today's limit** (20, 50, 70 or 100) and click **Find businesses**. Progress streams in as "Checked 23 · no website 9 · saved 7 · skipped 14 with a website". Results are saved to
+your own finder list in the database, and **Move to Leads** copies a row into your leads (a business that is already someone's lead is refused with their name).
 From the terminal: `pnpm scrape "Roofing" "Dallas" TX --as ravi --limit 50` (add `--headed` to watch the browser).
 
 - **What it reads.** Google Maps only. For each listing it saves what the listing itself shows (name, phone, address, rating, review count when shown, email, Facebook,
@@ -118,13 +100,13 @@ From the terminal: `pnpm scrape "Roofing" "Dallas" TX --as ravi --limit 50` (add
 | Command | What it checks |
 |---|---|
 | `pnpm typecheck`, `pnpm lint`, `pnpm build` | TypeScript (strict), ESLint, production build |
-| `pnpm test` | `pnpm secrets:check`, then unit tests: the permission matrix, the Store, auth and sessions, sync against temporary bare repos and clones, the golden tests, and (with Chromium installed) the lead finder against a local stand-in for Maps (no request goes to Google) |
+| `pnpm test` | `pnpm secrets:check`, then unit tests: the permission matrix, the Store contract suite on both the file Store and the MySQL Store, the MySQL-only checks (unique keys, locks, sessions), the `team/` import, auth, the golden tests, and (with Chromium installed) the lead finder against a local stand-in for Maps (no request goes to Google). The MySQL tests need `DB_*` set (from `.env.local`); each makes and drops its own `okit_test_*` database, so the user needs CREATE and DROP on `okit_%`. Without `DB_*` they are skipped with a warning |
 | `pnpm secrets:check` | Fails if a session secret, a plain-text password field or a `.env` file is tracked |
 | `pnpm roles:doc` | Regenerates `docs/roles.md` from the permission map; a test fails if it is stale |
 | `pnpm parity` | Parses the original HTML and compares every extracted constant and all prose with `src/data` and `src/content`. Writes `docs/parity-report.md`. Exits non-zero on any mismatch |
 | `pnpm golden:sweep` | Builds the kit in the original page and in the TS port for all 124 categories × both devices and compares them |
 | `pnpm golden:record` | Re-records `golden/original/*.json` from the original page (needs Playwright's Chromium) |
-| `pnpm e2e` | Builds the app once, then runs **two copies of it on two clones of a temporary bare repo** (owner on port 3100, teammate on 3101): the console, board and theme; the owner creates a BD and syncs; the teammate's app pulls, the BD signs in, is forced to change the temporary password, builds Roofing in Dallas, TX, saves it, adds a lead and syncs; the owner pulls and sees it in Team; a reset ends the BD's session at the next pull; a clock override shows a session open on day 13 and ended on day 14 |
+| `pnpm e2e` | Builds the app once, then runs **one instance** (port 5021) on a throwaway MySQL database and drives it as two people: the console, board and theme; the owner creates a BD; the BD signs in from a second browser, is forced to change the temporary password, builds Roofing in Dallas, TX, saves it and adds a lead; the owner sees it at once; the BD can't open, list or export the owner's lead; five wrong passwords lock a name; a reset and a pause each end the BD's session at the next click; the session cookie is `Secure`; a clock offset shows a session open on day 13 and ended on day 14 |
 | `pnpm a11y` | axe-core (WCAG 2.1 A and AA) on every screen for every role, light and dark, at 390 and 1280, plus no-horizontal-scroll and visible-focus checks |
 | `pnpm brand` | No hex outside the four brand colours, no font but Jost, no weight above 500, no `<b>`, no “Jost Book” |
 | `pnpm shots N [--as user] path…`, `pnpm shots:13` | Screenshots at 390px and 1280px, light and dark, into `docs/screenshots/phase-NN/`; `shots:13` covers every role |
@@ -158,18 +140,20 @@ The per-family palettes in `src/data/style.ts` style the *client demo sites* the
 ## Layout
 
 ```
-team/               the data: one folder per person (see docs/team-format.md). Committed and synced
+db/migrations/      the database schema, numbered SQL files applied once each (pnpm db:migrate)
+team/               the old file data. Read only by pnpm db:import-team and the file Store's tests (see docs/team-format.md)
 src/app/            routes: /login, /today, /team, /admin, /platform, /sourcing, /reports, /console, /kits, /leads, /playbook, /account
-src/components/     ui/ (primitives), shell/ (header, sidebar, Sync), playbook/, console/, kit/, leads/, team/, admin/, scrape/
+src/components/     ui/ (primitives), shell/ (header, sidebar), playbook/, console/, kit/, leads/, team/, admin/, scrape/
 src/data/           the original's constants, typed
 src/content/        the original's prose as structured blocks
 src/lib/kit/        the kit generators (pure)
 src/lib/leads/      scorer, stages, sequence dates, ratios, form parsing, CSV
-src/lib/auth/       roles, the permission map, passwords, sessions, the route map, navigation
-src/lib/store/      the Store: the only code that touches team/ (types, JSON Schemas, atomic writes, duplicate index)
-src/lib/sync/       the git sync engine
+src/lib/auth/       roles, the permission map, passwords, sessions, the route map, sign-in limiter, navigation
+src/lib/db/         connection settings, the pool, time helpers, the migration runner
+src/lib/store/      the Store: mysqlStore.ts (the app), fileStore.ts (reference), the contract types, JSON Schemas, the team/ reader and importer
 src/lib/scrape/     lead finder: selectors.ts (Maps page layout), parser, duplicate key, daily limit, scraper
-scripts/            extraction, parity, golden, e2e, a11y, brand check, team:init, predev, secrets check
+scripts/            extraction, parity, golden, e2e, a11y, brand check, db:migrate, db:init-owner, db:import-team, predev, secrets check
+tests/contract/     the Store contract tests, run against both Stores
 golden/             fixtures, recorded snapshots of the original, the corrections
-docs/               source/ (the original and the Role System page), roles.md (generated), team-format.md, archive/, parity-report.md, screenshots/
+docs/               hostinger-install.md, source/ (the original and the Role System page), roles.md (generated), team-format.md, archive/, parity-report.md, screenshots/
 ```

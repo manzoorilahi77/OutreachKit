@@ -3,7 +3,7 @@ import { Note } from "@/components/ui/Note";
 import { stageLabel } from "@/lib/leads/stages";
 import type { Notice } from "@/lib/notices";
 
-/** "Meera's lead Smith Roofing reached Replied": in-app only, computed from the synced events. */
+/** "Meera's lead Smith Roofing reached Replied": in-app only, computed from the lead events. */
 export function Notices({ notices, names, limit = 8 }: { notices: Notice[]; names: Map<string, string>; limit?: number }) {
   if (!notices.length) return <Note tone="quiet"><p>No replies, calls booked, proposals or wins in the last 14 days.</p></Note>;
   return (
