@@ -39,7 +39,7 @@ The person needs a GitHub account that the owner has added to the private repo. 
 
 | | Mac | Windows |
 |---|---|---|
-| Sign in | `brew install gh` if missing, then `gh auth login` (GitHub.com, HTTPS, "Login with a web browser"), then `gh auth setup-git` | Nothing to install. Git Credential Manager opens a browser sign-in the first time git talks to GitHub (the clone below). |
+| Sign in | `brew install gh` if missing, then `gh auth login` (GitHub.com, HTTPS, "Login with a web browser"), then `gh auth setup-git` | `winget install GitHub.cli` (open a new terminal after), then `gh auth login` (GitHub.com, HTTPS, web browser), then `gh auth setup-git`. The sync needs `gh` to open its pull request. |
 | Clone | `git clone <repo address> OutreachKit` | `git clone <repo address> OutreachKit` |
 
 Then `cd OutreachKit`. Tell the person when the browser asks them to sign in to GitHub and approve.
@@ -60,7 +60,9 @@ pnpm dev
 
 Leave it running. It pulls the latest accounts and code first, then starts. Open **http://localhost:3000** and tell the person:
 
-> Sign in with the username and temporary password the owner sent you. The app will then ask you to choose your own password (10 or more characters). After that you land on your home page. Press **Sync now** at the top whenever you want your work to reach the team; it also syncs by itself every 30 minutes.
+> Sign in with the username and temporary password the owner sent you. The app will then ask you to choose your own password (10 or more characters). After that you land on your home page. Press **Sync now** at the top, or say **"Sync Data"** to me, whenever you want your work to reach the team; it also syncs by itself every 30 minutes.
+>
+> Your work is saved on a branch called `sales_outreach` on this laptop and reaches the team through `main` (see [Branches](#branches-and-the-sync-data-skill)). The first "Sync Data" sets that branch up; the `sync-data` skill does it.
 
 If the page says "Restart needed: ask Claude to restart the Outreach Kit", stop `pnpm dev` and run it again (the owner changed the code or its packages).
 
@@ -68,7 +70,7 @@ If sign-in says *"That username and password don't match, or the account is not 
 
 ### 5. "Fix the Outreach Kit sync"
 
-The Sync control shows this sentence when two changes clashed or something stopped the sync. **Nothing is lost**; the person's work is in files. Do these steps in order, from the repo folder. `<username>` is the person's username; `<branch>` is the output of `git rev-parse --abbrev-ref HEAD` (normally `main`).
+The Sync control shows this sentence when two changes clashed or something stopped the sync. **Nothing is lost**; the person's work is in files. Do these steps in order, from the repo folder. `<username>` is the person's username; `<branch>` is the work branch: `sales_outreach` for teammates, `feature_dev_main` for the owner.
 
 1. Stop any half-finished git operation. Ignore errors from these two:
    `git rebase --abort` and `git merge --abort`
@@ -76,11 +78,11 @@ The Sync control shows this sentence when two changes clashed or something stopp
    - Mac: `cp -R team/data/<username> ~/outreachkit-backup-<username>`
    - Windows: `Copy-Item -Recurse team\data\<username> $HOME\outreachkit-backup-<username>`
 3. `git fetch origin`
-4. Take everything from GitHub, including `team/users/` (the accounts) and the code: `git reset --hard origin/<branch>`
+4. Take everything from `main`, including `team/users/` (the accounts) and the code, and keep working on the work branch: `git checkout -B <branch>` then `git reset --hard origin/main`
 5. Put their own folder back over the top, so **their version wins**:
    - Mac: `cp -R ~/outreachkit-backup-<username>/. team/data/<username>/`
    - Windows: `Copy-Item -Recurse -Force $HOME\outreachkit-backup-<username>\* team\data\<username>\`
-6. Tell the person to press **Sync now** in the app. It commits their folder and pushes.
+6. Tell the person to press **Sync now** in the app, or say "Sync Data". It commits their folder and pushes.
 7. If the sync still fails, show them the message the app displays and tell the owner. Do not try other git commands.
 
 The safety copy stays on their computer; leave it there.
@@ -98,6 +100,19 @@ The sync was refused because this computer isn't signed in to GitHub (or the sig
 - Their leads, kits and notes are saved in `team/data/<their username>/` on this computer and shared with the team when they sync. Their leads are shown only to them, their manager and admins in the app, but the files are plain text on every laptop.
 - If they lose connection nothing is lost; the next sync catches up.
 - To stop the app, close the terminal window or press Ctrl+C in it. To start again, `cd OutreachKit` and `pnpm dev`.
+
+---
+
+## Branches and the Sync Data skill
+
+`main` is the shared copy; nobody commits to it directly. Each side works on a branch and reaches `main` through a pull request that merges at once (a merge commit, so the branch is always an ancestor of `main`).
+
+| Who | Branch | Say | Skill |
+|---|---|---|---|
+| Teammates | `sales_outreach` (one shared branch) | "Sync Data" | `.claude/skills/sync-data` |
+| Owner | `feature_dev_main` | "pull" (main in, nothing out) or "sync" (pull, then out) | `.claude/skills/owner-sync` |
+
+The same cycle is in `src/lib/sync/engine.ts` (`viaMain`), so the app's **Sync now** button, its 30-minute timer, and `pnpm sync:cycle` (which the skills run) agree. The cycle stops with the person's work intact on any clash. Code never goes out from a teammate laptop; the owner's code goes only after a yes (`--include-code`). Plain-words steps: `docs/bd-sync-steps.md`.
 
 ---
 
