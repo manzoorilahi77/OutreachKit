@@ -21,7 +21,9 @@ sessionSecret(root);
 
 // 2. Pull, quietly.
 if (git("rev-parse", "--is-inside-work-tree").status === 0 && git("remote").stdout.trim()) {
-  const pull = git("pull", "--rebase", "--autostash", "--quiet");
+  // On sales_outreach or feature_dev_main the shared copy is main, not this branch's own upstream.
+  const onWorkBranch = ["sales_outreach", "feature_dev_main"].includes(git("rev-parse", "--abbrev-ref", "HEAD").stdout.trim());
+  const pull = git("pull", "--rebase", "--autostash", "--quiet", ...(onWorkBranch ? ["origin", "main"] : []));
   if (pull.status !== 0) {
     git("rebase", "--abort");
     console.log("predev: couldn't pull from GitHub just now (offline, or sign-in missing). Starting with what is here.");
