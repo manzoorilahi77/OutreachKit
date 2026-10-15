@@ -25,7 +25,7 @@ export function buildLead(i: NewLeadInput, o: { id: string; owner: string; assig
     id: o.id, owner: o.owner, assignedTo: o.assignedTo, sourceRef: o.sourceRef ?? null, kit_id: i.kit_id ?? null,
     date_sourced: i.date_sourced ?? o.today,
     business_name: i.business_name, owner_first_name: i.owner_first_name, category: i.category, city: i.city, state: i.state,
-    phone: i.phone, email: i.email, instagram_handle: i.instagram_handle, facebook_page: i.facebook_page, google_maps_url: i.google_maps_url,
+    phone: i.phone, whatsapp: i.whatsapp ?? "", email: i.email, instagram_handle: i.instagram_handle, facebook_page: i.facebook_page, google_maps_url: i.google_maps_url,
     website_found: i.website_found, website_url: i.website_url, site_verdict: i.site_verdict,
     google_review_count: i.google_review_count, google_rating: i.google_rating, followers: i.followers, last_post_date: i.last_post_date,
     demo_url: i.demo_url, demo_built_date: i.demo_built_date, first_contact_date: i.first_contact_date, channel: i.channel,
@@ -37,7 +37,7 @@ export function buildLead(i: NewLeadInput, o: { id: string; owner: string; assig
 
 /** The fields a lead form edits. Everything else (stage, sequence, ownership) changes only through the Store's own methods. */
 const EDITABLE = [
-  "business_name", "owner_first_name", "category", "city", "state", "phone", "email", "instagram_handle", "facebook_page", "google_maps_url",
+  "business_name", "owner_first_name", "category", "city", "state", "phone", "whatsapp", "email", "instagram_handle", "facebook_page", "google_maps_url",
   "website_found", "website_url", "site_verdict", "google_review_count", "google_rating", "followers", "last_post_date",
   "demo_url", "demo_built_date", "first_contact_date", "channel", "notes", "date_sourced",
 ] as const;
@@ -50,7 +50,7 @@ export function applyForm(lead: Lead, i: NewLeadInput, opts: { withOutreach: boo
   const src = i as unknown as Record<string, unknown>;
   for (const k of EDITABLE) {
     if (!opts.withOutreach && (OUTREACH as readonly string[]).includes(k)) continue;
-    if (k === "date_sourced" && src[k] === undefined) continue;
+    if ((k === "date_sourced" || k === "whatsapp") && src[k] === undefined) continue;
     n[k] = src[k];
   }
   for (const f of CHECK_FIELDS) next[f] = i.checks[f] === true;

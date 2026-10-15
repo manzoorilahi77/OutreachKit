@@ -1,8 +1,10 @@
 // POST /api/leadfinder/run: starts a Google Maps run and streams its progress as Server-Sent Events.
 // The body is {category, state, city, limit}. Closing the connection (or the Stop button) ends the run, keeping what it saved.
-// Runs on this machine only: it launches Chromium. Results are saved to the signed-in person's folder.
+// Runs on this machine only: it launches Chromium. Results are saved to the signed-in person's finder list and each one becomes a lead.
+import { revalidatePath } from "next/cache";
 import { NextResponse } from "next/server";
 import { checkPerm } from "@/lib/auth/server";
+import { addBusinessToLeads } from "@/lib/scrape/addToLeads";
 import { parseRunRequest, sameOrigin, sseFrame } from "@/lib/scrape/http";
 
 export const runtime = "nodejs";
@@ -31,15 +33,18 @@ export async function POST(request: Request) {
     async start(controller) {
       const send = (frame: string) => { try { controller.enqueue(encoder.encode(frame)); } catch { /* the client has gone */ } };
       try {
+        const store = c.store;
         await runScrape({
-          finder: c.store.finder(), category: v.category, city: v.city, state: v.state, limit: v.limit, signal: ac.signal,
+          finder: store.finder(), category: v.category, city: v.city, state: v.state, limit: v.limit, signal: ac.signal,
+          addLead: (b) => addBusinessToLeads(store, b.id),
           headed: process.env.SCRAPE_HEADED === "1",
           onEvent: (e) => send(sseFrame(e)),
         });
       } catch {
-        send(sseFrame({ type: "failed", message: "The run couldn't save to your folder." }));
+        send(sseFrame({ type: "failed", message: "The run couldn't save to the database." }));
       } finally {
         g.__leadfinderRunning = false;
+        try { revalidatePath("/leads"); } catch { /* not in a request scope */ }
         try { controller.close(); } catch { /* already closed */ }
       }
     },

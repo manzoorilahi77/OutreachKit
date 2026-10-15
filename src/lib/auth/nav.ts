@@ -45,6 +45,17 @@ export function navFor(role: Role): NavItem[] {
   return NAV[role].filter((i) => i.perm === null || can(role, i.perm));
 }
 
+/** IT Prospects, a separate area: one entry, placed right after Kits, and only while the workspace's IT Prospects switch is on. */
+export const IT_NAV_ITEM: NavItem = I("IT Prospects", "/it", "it.view");
+
+export function withItNav(items: NavItem[], role: Role, itOn: boolean): NavItem[] {
+  if (!itOn || !can(role, "it.view")) return items;
+  const kitsAt = items.findIndex((i) => i.href === "/kits");
+  if (kitsAt >= 0) return [...items.slice(0, kitsAt + 1), IT_NAV_ITEM, ...items.slice(kitsAt + 1)];
+  const at = items.findIndex((i) => i.href === "/playbook");
+  return at < 0 ? [...items, IT_NAV_ITEM] : [...items.slice(0, at), IT_NAV_ITEM, ...items.slice(at)];
+}
+
 /** The item whose href is the longest prefix of the current path is the current page. */
 export function activeHref(items: { href: string }[], pathname: string): string | null {
   let best: string | null = null;

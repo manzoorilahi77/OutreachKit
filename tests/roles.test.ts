@@ -30,6 +30,13 @@ const MATRIX: Record<PermissionKey, string[]> = {
   "content.approve": ["all", "none", "none", "none", "none", "none"],
   "audit.view": ["all", "all", "none", "none", "none", "none"],
   "sync.run": ["own:accounts", "own:accounts", "own", "own", "own", "own"],
+  "it.view": ["all", "all:not_super_admin", "team", "own", "own", "none"],
+  "it.add": ["own", "own", "own", "own", "own", "none"],
+  "it.edit": ["own", "own", "own", "own", "own", "none"],
+  "it.assign": ["all", "all:not_super_admin", "team", "none", "none", "none"],
+  "it.comment": ["all", "all:not_super_admin", "team", "own", "own", "none"],
+  "it.export": ["all", "all:not_super_admin", "team", "own", "none", "none"],
+  "it.finder": ["own", "own", "own", "own", "own", "none"],
 };
 
 describe("permission matrix", () => {

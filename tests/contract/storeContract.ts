@@ -92,6 +92,14 @@ export function storeContract(name: string, make: BackendFactory, opts: { skip?:
         const seen = await t.asha.territory("Roofing", "TX", "Dallas");
         expect(seen).toEqual([{ username: "ravi", name: "Ravi", leads: 2 }]);
       });
+      it("keeps a lead's WhatsApp contact, and an update without the field leaves it alone", async () => {
+        const l = await t.ravi.createLead(lead({ business_name: "Chat Roofing", phone: "2145550881", whatsapp: "12145550881" }));
+        expect((await t.ravi.listLeads()).find((x) => x.id === l.id)).toMatchObject({ whatsapp: "12145550881" });
+        const plain = await t.ravi.createLead(lead({ business_name: "Quiet Roofing", phone: "2145550882" }));
+        expect((await t.ravi.listLeads()).find((x) => x.id === plain.id)!.whatsapp ?? "").toBe("");
+        const u = await t.ravi.updateLead(l.id, lead({ business_name: "Chat Roofing", phone: "2145550881", notes: "called" }) as never);
+        expect(u).toMatchObject({ whatsapp: "12145550881", notes: "called" });
+      });
       it("lists kits in scope: own, team, all", async () => {
         expect((await t.ravi.listKits()).every((k) => k.owner === "ravi")).toBe(true);
         expect(new Set((await t.mia.listKits()).map((k) => k.owner))).toEqual(new Set(["ravi", "asha"]));
@@ -290,7 +298,7 @@ export function storeContract(name: string, make: BackendFactory, opts: { skip?:
       const biz = (over: Partial<Parameters<ReturnType<typeof t.ravi.finder>["insertBusiness"]>[0]> = {}) => ({
         placeKey: "fid:0x1:0x2", scrapedOn: "2026-10-12", runId: null, query: "Roofing in Dallas, TX", category: "Roofing", city: "Dallas", state: "TX",
         name: "Finder Roofing", phone: "2145559001", address: "1 Main St", mapsCategory: "Roofing contractor", rating: 4.5, reviewCount: 12, email: "", facebookUrl: "",
-        instagramUrl: "", otherLinks: [], mapsUrl: "https://www.google.com/maps/place/Finder", ...over,
+        instagramUrl: "", otherLinks: [], mapsUrl: "https://www.google.com/maps/place/Finder", hasWebsite: false, websiteUrl: "", whatsapp: "", ...over,
       });
       it("saves to the runner's folder and skips what any folder already has", async () => {
         const f = t.ravi.finder();
@@ -306,6 +314,15 @@ export function storeContract(name: string, make: BackendFactory, opts: { skip?:
         expect(await f.markMoved(id!, "lead-2")).toBe(false);
         expect((await f.listBusinesses({ category: "Roofing", city: "Dallas", state: "TX" }))[0]).toMatchObject({ movedLeadId: "lead-1" });
         await rejects(t.vic.finder().countSavedOn("2026-10-12"), "forbidden");
+      });
+      it("keeps whether the listing showed a website, and its address", async () => {
+        const f = t.ravi.finder();
+        const withSite = await f.insertBusiness(biz({ placeKey: "fid:0x7:0x8", name: "Webbed Roofing", phone: "2145559002", hasWebsite: true, websiteUrl: "https://webbed.example/", whatsapp: "12145559002" }));
+        const without = await f.insertBusiness(biz({ placeKey: "fid:0xa:0xb", name: "Plain Roofing", phone: "2145559004" }));
+        expect(await f.getBusiness(withSite!)).toMatchObject({ hasWebsite: true, websiteUrl: "https://webbed.example/", whatsapp: "12145559002" });
+        expect(await f.getBusiness(without!)).toMatchObject({ hasWebsite: false, websiteUrl: "", whatsapp: "" });
+        const listed = await f.listBusinesses({ category: "Roofing", city: "Dallas", state: "TX" });
+        expect(listed.map((b) => [b.name, b.hasWebsite]).sort()).toEqual([["Finder Roofing", false], ["Plain Roofing", false], ["Webbed Roofing", true]]);
       });
       it("records runs", async () => {
         const f = t.ravi.finder();

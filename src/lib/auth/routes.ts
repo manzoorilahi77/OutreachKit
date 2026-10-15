@@ -31,6 +31,12 @@ const RULES: [prefix: string, rule: RouteRule][] = [
   ["/playbook/progress", "playbook.required"],
   ["/playbook", "playbook.read"],
   ["/api/leadfinder", "finder.run"],
+  ["/it", "it.view"],
+  ["/it/finder", "it.finder"],
+  ["/it/signals", "it.add"],
+  ["/it/prospects/new", "it.add"],
+  ["/it/export.csv", "it.export"],
+  ["/api/it/finder", "it.finder"],
 ];
 
 const under = (path: string, prefix: string) => path === prefix || path.startsWith(prefix + "/");

@@ -18,10 +18,11 @@ import { EMPTY_WORKSPACE } from "./defaults";
 import { KEY_LABEL, dupKeys, finderKeys, type DupCandidate } from "./dupes";
 import { StoreError } from "./errors";
 import { applyForm, buildLead, toView, type NewLeadInput } from "./leadModel";
+import { createMySqlItStore } from "./itMysql";
 import { isId, usernameProblem } from "./paths";
 import { assertValid } from "./schemas";
 import type {
-  DirectoryEntry, DupResult, FinderStore, Incoming, KitStats, LeadListItem, NewBusiness, NewUser, ScopeData, Store, TerritoryEntry, UserChange,
+  DirectoryEntry, DupResult, FinderStore, Incoming, ItStore, KitStats, LeadListItem, NewBusiness, NewUser, ScopeData, Store, TerritoryEntry, UserChange,
 } from "./store";
 import type {
   Actor, ApprovalRecord, Assignment, AuditEntry, KitRecord, KitStatus, Lead, LeadEvent, LeadView, PlaybookFile, Profile, TeamsFile, UserFile, Workspace,
@@ -82,7 +83,7 @@ const kitOf = (r: Row): KitRecord => ({
 
 export const LEAD_COLS = [
   "id", "owner", "assigned_to", "source_owner", "source_id", "kit_id", "date_sourced", "business_name", "owner_first_name", "category", "city", "state",
-  "phone", "email", "instagram_handle", "facebook_page", "google_maps_url", "website_found", "website_url", "site_verdict", "google_review_count",
+  "phone", "whatsapp", "email", "instagram_handle", "facebook_page", "google_maps_url", "website_found", "website_url", "site_verdict", "google_review_count",
   "google_rating", "followers", "last_post_date", "demo_url", "demo_built_date", "first_contact_date", "channel", "replied", "stage", "next_action_date",
   "notes", "sequence_step", ...CHECK_FIELDS, "created_at", "updated_at",
 ] as const;
@@ -92,7 +93,7 @@ const leadOf = (r: Row): Lead => {
   return {
     id: r.id, owner: r.owner, assignedTo: r.assigned_to, sourceRef: r.source_owner ? { owner: r.source_owner, id: r.source_id } : null, kit_id: r.kit_id,
     date_sourced: fromDbDate(r.date_sourced)!, business_name: r.business_name, owner_first_name: r.owner_first_name, category: r.category, city: r.city,
-    state: r.state, phone: r.phone, email: r.email, instagram_handle: r.instagram_handle, facebook_page: r.facebook_page, google_maps_url: r.google_maps_url,
+    state: r.state, phone: r.phone, whatsapp: r.whatsapp ?? "", email: r.email, instagram_handle: r.instagram_handle, facebook_page: r.facebook_page, google_maps_url: r.google_maps_url,
     website_found: nbool(r.website_found), website_url: r.website_url, site_verdict: r.site_verdict, google_review_count: nnum(r.google_review_count),
     google_rating: nnum(r.google_rating), followers: nnum(r.followers), last_post_date: fromDbDate(r.last_post_date), demo_url: r.demo_url,
     demo_built_date: fromDbDate(r.demo_built_date), first_contact_date: fromDbDate(r.first_contact_date), channel: r.channel as Channel | null,
@@ -113,6 +114,7 @@ export const leadValues = (l: Lead): unknown[] => {
       case "created_at": case "updated_at": return toDbTime(o[col] as string);
       case "website_found": return l.website_found === null ? null : l.website_found ? 1 : 0;
       case "replied": return l.replied ? 1 : 0;
+      case "whatsapp": return l.whatsapp ?? "";
       default: return typeof o[col] === "boolean" ? (o[col] ? 1 : 0) : o[col];
     }
   });
@@ -120,7 +122,7 @@ export const leadValues = (l: Lead): unknown[] => {
 
 /** A lead field that doesn't fit its column is refused in words instead of failing in SQL. */
 const LEAD_MAX: Partial<Record<keyof Lead, number>> = {
-  business_name: 255, owner_first_name: 200, category: 200, city: 200, state: 10, phone: 100, email: 255, instagram_handle: 255, facebook_page: 500,
+  business_name: 255, owner_first_name: 200, category: 200, city: 200, state: 10, phone: 100, whatsapp: 300, email: 255, instagram_handle: 255, facebook_page: 500,
   google_maps_url: 1000, website_url: 1000, site_verdict: 500, demo_url: 1000,
 };
 export function fits(l: Lead) {
@@ -142,7 +144,7 @@ const businessOf = (r: Row): BusinessRow => ({
   id: r.id, placeKey: r.place_key, scrapedOn: fromDbDate(r.scraped_on)!, scrapedAt: fromDbTime(r.scraped_at), query: r.query, category: r.category, city: r.city,
   state: r.state, name: r.name, phone: r.phone, address: r.address, mapsCategory: r.maps_category, rating: nnum(r.rating), reviewCount: nnum(r.review_count),
   email: r.email, facebookUrl: r.facebook_url, instagramUrl: r.instagram_url, otherLinks: parseJson<{ label: string; url: string }[]>(r.other_links) ?? [],
-  mapsUrl: r.maps_url, movedLeadId: r.moved_lead_id,
+  mapsUrl: r.maps_url, movedLeadId: r.moved_lead_id, hasWebsite: !!r.has_website, websiteUrl: r.website_url ?? "", whatsapp: r.whatsapp ?? "",
 });
 
 /**
@@ -775,7 +777,7 @@ export class MySqlStore implements Store {
     const events = (await rows(this.pool, "SELECT * FROM lead_events WHERE by_user IN (?) ORDER BY seq", [owners])).map(eventOf);
     // "Totals only" (a viewer) never gets phone, email, social handles or notes: they are removed before they leave the Store.
     if (grantOf(this.me(), key).limit === "totals") {
-      leads = leads.map((l) => ({ ...l, owner_first_name: "", phone: "", email: "", instagram_handle: "", facebook_page: "", google_maps_url: "", website_url: "", notes: "" }));
+      leads = leads.map((l) => ({ ...l, owner_first_name: "", phone: "", whatsapp: "", email: "", instagram_handle: "", facebook_page: "", google_maps_url: "", website_url: "", notes: "" }));
       return { leads, events: events.map((e) => ({ ...e, note: "" })), owners };
     }
     return { leads, events, owners };
@@ -994,10 +996,10 @@ export class MySqlStore implements Store {
             if ((await rows(c, "SELECT 1 FROM lead_keys WHERE key_value IN (?) AND live = 1 LIMIT 1", [keys])).length) throw new KeyClash();
             const id = randomUUID();
             await exec(c, `INSERT INTO finder_businesses (id, owner, place_key, scraped_on, scraped_at, run_id, query, category, city, state, name, phone, address, maps_category,
-              rating, review_count, email, facebook_url, instagram_url, other_links, maps_url) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+              rating, review_count, email, facebook_url, instagram_url, other_links, maps_url, has_website, website_url, whatsapp) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
             [id, me, b.placeKey.slice(0, 512), b.scrapedOn, toDbTime(nowIso()), b.runId, b.query.slice(0, 300), b.category, b.city, b.state, b.name.slice(0, 255), b.phone.slice(0, 60),
               b.address.slice(0, 500), b.mapsCategory.slice(0, 200), b.rating, b.reviewCount, b.email.slice(0, 255), b.facebookUrl.slice(0, 500), b.instagramUrl.slice(0, 500),
-              JSON.stringify(b.otherLinks), b.mapsUrl.slice(0, 1000)]);
+              JSON.stringify(b.otherLinks), b.mapsUrl.slice(0, 1000), b.hasWebsite ? 1 : 0, b.websiteUrl.slice(0, 1000), b.whatsapp.slice(0, 300)]);
             try {
               await exec(c, "INSERT INTO business_keys (business_id, key_value) VALUES ?", [keys.map((k) => [id, k])]);
             } catch (e) {
@@ -1043,6 +1045,14 @@ export class MySqlStore implements Store {
           [toDbTime(nowIso()), c.found, c.checked, c.skippedHasWebsite, c.skippedDuplicate, c.saved, stopReason.slice(0, 500), id, this.me().username]);
       },
     };
+  }
+
+  // ---------- IT Prospects (its own tables; see itMysql.ts) ----------
+  it(): ItStore {
+    return createMySqlItStore({
+      pool: this.pool, me: () => this.me(), need: (k) => this.need(k), owners: (k, c) => this.owners(k, c), tx: (fn) => this.tx(fn),
+      audit: (c, a, t, d) => this.audit(c, a, t, d), dbKey,
+    });
   }
 }
 

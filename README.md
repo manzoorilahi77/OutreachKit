@@ -56,8 +56,8 @@ Local runs always use **port 5021**: `pnpm dev` and `pnpm start` both listen the
   ratios, and a CSV export (own, team or all, by role; every export is logged) with the original's exact 28-column header.
 - **Hand-offs**: researchers' leads wait in an unassigned queue; a manager (their team) or an admin assigns each to a BD, who accepts it. A leaver's open leads
   are handed over the same way before their account is turned off.
-- **Lead finder** (optional): a Playwright-driven Chromium searches Google Maps for "category in city, ST", opens each listing and saves the ones that
-  show no website into the runner's own folder. See below.
+- **Lead finder** (optional): a Playwright-driven Chromium searches Google Maps for "category in city, ST", opens each listing and saves every business it
+  can read, with or without a website, then adds each as a lead. See below.
 
 The app sends no email and fetches no third-party site, except the optional **lead finder**, where a browser on the server reads Google Maps.
 
@@ -75,25 +75,43 @@ The session cookie is `HttpOnly`, `SameSite=Lax`, and `Secure` whenever `NODE_EN
 
 ### Local lead finder (optional)
 
-Finds local businesses that have no website, for free, using Chromium on the machine the app runs on. The super admin can switch it off for the workspace (Feature switches). On a datacentre server (a VPS) Google may block or CAPTCHA the requests; see docs/hostinger-install.md step 7.
+Finds local businesses on Google Maps, with or without a website, for free, using Chromium on the machine the app runs on. The super admin can switch it off for the workspace (Feature switches). On a datacentre server (a VPS) Google may block or CAPTCHA the requests; see docs/hostinger-install.md step 7.
 
 ```bash
 pnpm exec playwright install chromium      # once (on a server: pnpm exec playwright install --with-deps chromium)
 pnpm dev
 ```
 
-In the console (or **Lead finder** for researchers), pick a category and a state and city. A "Find businesses without a website" section appears: choose
-**Today's limit** (20, 50, 70 or 100) and click **Find businesses**. Progress streams in as "Checked 23 · no website 9 · saved 7 · skipped 14 with a website". Results are saved to
-your own finder list in the database, and **Move to Leads** copies a row into your leads (a business that is already someone's lead is refused with their name).
+Open **Lead finder** (the **Find leads** button on the Leads page), pick a category, a state and a city, choose **Today's limit** (20, 50, 70 or 100) and click **Find businesses**.
+Progress streams in as "Checked 23 · saved 7 · with website 5 · without website 2". Every business it can read is saved, with or without a website, and **added to your leads as it is saved**
+(a business that is already someone's lead is skipped). Results show in two tabs, **Without website** and **With website**; a business that has no lead yet (saved by an older version, or refused)
+has an **Add to leads** button. Runs take longer than before because every new listing is opened.
 From the terminal: `pnpm scrape "Roofing" "Dallas" TX --as ravi --limit 50` (add `--headed` to watch the browser).
 
 - **What it reads.** Google Maps only. For each listing it saves what the listing itself shows (name, phone, address, rating, review count when shown, email, Facebook,
-  Instagram, other social and booking links). A listing with a Website row is skipped, and so is one whose only link is a booking link on the business's own domain.
-- **Today's limit** is a ceiling on new businesses saved per local calendar day by that person. A business already found by anyone, or already a lead, is skipped and does not count.
+  Instagram, other social and booking links, and the website address when there is one). A booking link on the business's own domain counts as a website.
+- **Today's limit** is a ceiling on new businesses saved per local calendar day by that person, with or without a website. A business already found by anyone, or already a lead, is skipped and does not count.
 - **Politeness.** One browser, one tab, a random 2–5 second pause before each listing it opens. A CAPTCHA, "unusual traffic" page or consent page that one normal click does not clear ends the run at once.
   Nothing is retried. No proxies, no CAPTCHA solving, no stealth plugins.
 - **When Google changes its page**, the only file to fix is `src/lib/scrape/selectors.ts`. `tests/fixtures/maps/` holds saved panels the parser is tested on.
 - Google's terms restrict automated access to Maps. This is for light, personal use on your own machine.
+
+### IT Prospects (a separate area, off by default)
+
+A second area beside the local leads, for companies that pay for software work: open developer or IT roles, project posts and tenders (**buying signals**),
+digital agencies and IT firms that buy white-label capacity, and businesses with a visible IT need. The super admin turns it on under **Feature switches → IT Prospects**;
+everyone but the Viewer then gets an **IT Prospects** entry in the navigation. It has its own tables (`it_*`, `db/migrations/0004_it_prospects.sql`), its own
+permissions (`it.*`, see `docs/roles.md`) and its own pipeline; it never reads or writes the local leads.
+
+- **Signals inbox** (`/it/signals`): paste a post and its link; the app reads the company, date, place and kind of signal (plain rules, no network) for a person to check,
+  then saves a new prospect or adds the signal to the matching prospect you already work. **Import a CSV** there too (dry run, then apply).
+- **Search strings** (`/it/search`): ready-made searches for LinkedIn Jobs, Indeed, Google, SAM.gov, CanadaBuys and the UAE portals, opened in your own browser.
+  LinkedIn, Indeed, Upwork, Wellfound, Clutch, Reddit and Google forbid automated collection, so the app never fetches them.
+- **IT finder** (`/it/finder`): the lead finder's Google Maps scraper over twelve IT categories (web design agencies, digital marketing agencies, software companies…),
+  saved into IT Prospects only. Its daily limit is counted apart from the lead finder's; only one finder runs on the server at a time.
+- **Prospects** (`/it/prospects`): filters, a 6-question qualifier from The Outreach Reset (5–6 hot), stages, assignment within a team, comments and CSV export.
+
+Design and decisions: `docs/superpowers/specs/2026-10-15-it-prospects-design.md`. Playbook section 15, "Finding IT buyers".
 
 ## Tests and checks
 

@@ -12,7 +12,7 @@ import { lead, seedTeam, tempRoot } from "./helpers/team";
 const biz = (over: Record<string, unknown> = {}) => ({
   placeKey: "fid:0x1:0x2", scrapedOn: "2026-10-12", runId: null, query: "Roofing in Dallas, TX", category: "Roofing", city: "Dallas", state: "TX",
   name: "Finder Roofing", phone: "2145559001", address: "1 Main St", mapsCategory: "Roofing contractor", rating: 4.5, reviewCount: 12, email: "", facebookUrl: "",
-  instagramUrl: "", otherLinks: [{ label: "Booking", url: "https://x.example" }], mapsUrl: "https://www.google.com/maps/place/Finder", ...over,
+  instagramUrl: "", otherLinks: [{ label: "Booking", url: "https://x.example" }], mapsUrl: "https://www.google.com/maps/place/Finder", hasWebsite: false, websiteUrl: "", whatsapp: "", ...over,
 });
 
 /** Everything the screens read, per person, in a stable order, so two Stores can be compared. */

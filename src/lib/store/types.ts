@@ -96,6 +96,8 @@ export interface Lead extends LeadChecks {
   city: string;
   state: string;
   phone: string;
+  /** The lead's WhatsApp number (digits with country code) or wa.me link, "" when none. Absent on leads saved before the field existed. */
+  whatsapp?: string;
   email: string;
   instagram_handle: string;
   facebook_page: string;
@@ -197,6 +199,11 @@ export interface FinderBusiness {
   instagramUrl: string;
   otherLinks: { label: string; url: string }[];
   mapsUrl: string;
+  /** Absent on lines written before the finder kept businesses with a website: read as false and "". */
+  hasWebsite?: boolean;
+  websiteUrl?: string;
+  /** Absent on lines written before the finder read WhatsApp links: read as "". */
+  whatsapp?: string;
 }
 
 /** Lines of finder/businesses.jsonl are either a business or a record that it was moved to leads. */

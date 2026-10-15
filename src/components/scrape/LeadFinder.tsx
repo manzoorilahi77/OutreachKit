@@ -1,22 +1,25 @@
 "use client";
 
-import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { moveToLeads } from "@/components/scrape/actions";
+import { WebsiteTabs } from "@/components/scrape/WebsiteTabs";
 import { Button } from "@/components/ui/Button";
 import { Field, Select } from "@/components/ui/Field";
-import { AlertIcon, CheckIcon } from "@/components/ui/Icons";
+import { AlertIcon, ArrowRightIcon, CheckIcon, GlobeIcon, MapPinIcon } from "@/components/ui/Icons";
+import { IconLink } from "@/components/ui/IconLink";
+import { PhoneCell } from "@/components/ui/PhoneCell";
 import { Note } from "@/components/ui/Note";
 import { DataTable, type Column } from "@/components/ui/DataTable";
 import { createSseParser } from "@/lib/scrape/http";
 import { DEFAULT_LIMIT, LIMIT_OPTIONS, localDay, savedTodayLabel } from "@/lib/scrape/limits";
+import { splitByWebsite, type WebsiteTab } from "@/lib/scrape/tabs";
 import { progressLine, type BusinessRow, type RunEvent, type StopCode } from "@/lib/scrape/types";
 
 interface Props {
   cat: string | null;
   st: string;
   city: string;
-  /** The person can add leads, so Move to Leads is on. */
+  /** The person can add leads, so "Add to leads" is on. */
   canMove: boolean;
 }
 
@@ -27,8 +30,8 @@ const BLOCKED: StopCode[] = ["captcha", "consent", "blocked", "unresponsive", "e
 const enc = encodeURIComponent;
 
 /**
- * "Find businesses without a website": runs the local Google Maps lead finder for the chosen category and city and lists what
- * it saved. Renders nothing unless the server says the finder is on for this person (the workspace switch and their role).
+ * "Find businesses": runs the local Google Maps lead finder for the chosen category and city. It saves every business the listing
+ * shows, with or without a website, and adds each as a lead. Renders nothing unless the server says the finder is on for this person (the workspace switch and their role).
  */
 export function LeadFinder({ cat, st, city, canMove }: Props) {
   const [enabled, setEnabled] = useState<boolean | null>(null);
@@ -41,6 +44,7 @@ export function LeadFinder({ cat, st, city, canMove }: Props) {
   const [outcome, setOutcome] = useState<Outcome | null>(null);
   const [moving, setMoving] = useState<string | null>(null);
   const [moveError, setMoveError] = useState<string | null>(null);
+  const [tab, setTab] = useState<WebsiteTab>("without");
   const abortRef = useRef<AbortController | null>(null);
   const loadSeq = useRef(0);
 
@@ -152,10 +156,10 @@ export function LeadFinder({ cat, st, city, canMove }: Props) {
     else setMoveError(result.message);
   }
 
-  const columns: Column<BusinessRow>[] = [
+  const baseColumns: Column<BusinessRow>[] = [
     { id: "business", label: "Business", sort: (r) => r.name, cell: (r) => (<><span className="block font-medium">{r.name}</span>{r.mapsCategory && <span className="block text-sm text-muted">{r.mapsCategory}</span>}</>) },
     { id: "saved", label: "Saved", sort: (r) => r.scrapedAt, className: "whitespace-nowrap", cell: (r) => r.scrapedOn },
-    { id: "phone", label: "Phone", sort: (r) => r.phone, cell: (r) => r.phone || "—" },
+    { id: "phone", label: "Phone", sort: (r) => r.phone, cell: (r) => <PhoneCell phone={r.phone} whatsapp={r.whatsapp} name={r.name} /> },
     { id: "address", label: "Address", sort: (r) => r.address, cell: (r) => r.address || "—" },
     { id: "rating", label: "Rating", sort: (r) => r.rating, className: "whitespace-nowrap tabular-nums", cell: (r) => (r.rating === null ? "—" : `${r.rating}${r.reviewCount === null ? "" : ` (${r.reviewCount})`}`) },
     { id: "email", label: "Email", sort: (r) => r.email, cell: (r) => (r.email ? <a href={`mailto:${r.email}`}>{r.email}</a> : "—") },
@@ -170,36 +174,43 @@ export function LeadFinder({ cat, st, city, canMove }: Props) {
         </ul>
       ),
     },
-    { id: "maps", label: "Maps", cell: (r) => <ExternalLink href={r.mapsUrl}>Open in Maps</ExternalLink> },
-    {
-      id: "move", label: "Move to Leads", srOnlyHeader: true,
-      cell: (r) => r.movedLeadId ? (
-        <div className="space-y-1">
-          <Button variant="secondary" disabled>In your leads</Button>
-          <p><Link href={`/leads/${r.movedLeadId}`}>Open lead</Link></p>
-        </div>
-      ) : (
-        <Button variant="secondary" disabled={!canMove || moving === r.id} onClick={() => move(r)}>
-          {moving === r.id ? "Moving…" : "Move to Leads"}
-          <span className="sr-only"> {r.name}</span>
-        </Button>
-      ),
-    },
+    { id: "maps", label: "Maps", srOnlyHeader: true, cell: (r) => <IconLink href={r.mapsUrl} label={`Open ${r.name} in Maps`} external><MapPinIcon /></IconLink> },
   ];
+
+  const websiteColumn: Column<BusinessRow> = {
+    id: "website", label: "Website", sort: (r) => r.websiteUrl,
+    cell: (r) => (r.websiteUrl ? (
+      <IconLink href={r.websiteUrl} label={`Open the website of ${r.name}: ${hostOf(r.websiteUrl)}`} external><GlobeIcon /></IconLink>
+    ) : "—"),
+  };
+  const leadColumn: Column<BusinessRow> = {
+    id: "lead", label: "Lead", srOnlyHeader: true,
+    cell: (r) => r.movedLeadId ? (
+      <IconLink href={`/leads/${r.movedLeadId}`} label={`Open the lead for ${r.name}`}><ArrowRightIcon /></IconLink>
+    ) : (
+      <Button variant="secondary" disabled={!canMove || moving === r.id} onClick={() => move(r)}>
+        {moving === r.id ? "Adding…" : "Add to leads"}
+        <span className="sr-only"> {r.name}</span>
+      </Button>
+    ),
+  };
 
   if (!enabled || !ready) return null;
 
   const limitReached = savedToday >= limit;
+  const split = splitByWebsite(rows);
+  const shown = split[tab];
+  const columns = tab === "with" ? [...baseColumns, websiteColumn, leadColumn] : [...baseColumns, leadColumn];
 
   return (
     <section id="finder" aria-labelledby="lf-title" className="scroll-mt-20 space-y-4 p-4 sm:p-6">
       <div className="space-y-1">
         <span className="text-sm text-muted">Optional · runs on this computer</span>
-        <h3 id="lf-title" className="text-2xl">Find businesses without a website</h3>
+        <h3 id="lf-title" className="text-2xl">Find businesses</h3>
         <p className="max-w-3xl text-sm text-muted">
-          Searches Google Maps for “{cat} in {city}, {st}”, opens each listing and keeps only the ones that show no website, with every
-          contact detail the listing shows. It visits Google Maps and nothing else, one listing every few seconds. A run takes minutes;
-          closing this page stops it.
+          Searches Google Maps for “{cat} in {city}, {st}”, opens each listing and saves every business with every contact detail the
+          listing shows, whether or not it has a website. Each one is added to your leads as it is saved. It visits Google Maps and
+          nothing else, one listing every few seconds, so a run takes longer than it looks; closing this page stops it.
         </p>
       </div>
 
@@ -230,12 +241,19 @@ export function LeadFinder({ cat, st, city, canMove }: Props) {
 
       <div className="space-y-2">
         <h4 className="text-lg">Saved for {cat} in {city}, {st}</h4>
-        {!canMove && <p className="text-sm text-muted">Your role can’t add leads, so businesses can’t be moved to Leads.</p>}
-        {rows.length === 0 ? (
-          <p className="text-muted">Nothing saved yet for this category and city. Click “Find businesses”.</p>
-        ) : (
-          <DataTable label="Businesses without a website" rows={rows} columns={columns} rowKey={(r) => r.id} minWidth={1120} pageSize={10} />
-        )}
+        {!canMove && <p className="text-sm text-muted">Your role can’t add leads, so businesses that aren’t leads yet can’t be added.</p>}
+        <WebsiteTabs idBase="lf" value={tab} counts={{ without: split.without.length, with: split.with.length }} onChange={setTab} />
+        <div id="lf-panel" role="tabpanel" aria-labelledby={`lf-tab-${tab}`} className="space-y-2 pt-2">
+          {shown.length === 0 ? (
+            <p className="text-muted">
+              {rows.length === 0
+                ? "Nothing saved yet for this category and city. Click “Find businesses”."
+                : tab === "with" ? "No saved business with a website for this category and city." : "No saved business without a website for this category and city."}
+            </p>
+          ) : (
+            <DataTable key={tab} label={tab === "with" ? "Businesses with a website" : "Businesses without a website"} rows={shown} columns={columns} rowKey={(r) => r.id} minWidth={1120} pageSize={10} />
+          )}
+        </div>
         {moveError && <p role="alert" className="flex items-center gap-2"><AlertIcon /> {moveError}</p>}
       </div>
     </section>
@@ -244,4 +262,8 @@ export function LeadFinder({ cat, st, city, canMove }: Props) {
 
 function ExternalLink({ href, children }: { href: string; children: React.ReactNode }) {
   return <a href={href} target="_blank" rel="noopener noreferrer">{children}<span className="sr-only"> (opens in a new tab)</span></a>;
+}
+
+function hostOf(url: string): string {
+  try { return new URL(url).hostname.replace(/^www\./, ""); } catch { return url; }
 }

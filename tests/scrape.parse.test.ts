@@ -60,6 +60,11 @@ describe("listing parser (saved Maps panels)", () => {
     expect(l.otherLinks.map((o) => o.label)).toEqual(["Booking: calendly.com", "Yelp"]);
   });
 
+  it("reads the WhatsApp number from a WhatsApp link, and keeps it out of the other links (synthetic markup)", () => {
+    expect(parseListing(fixture("no-website-socials.synthetic.html"))!.whatsapp).toBe("12145550147");
+    expect(parseListing(fixture("no-website.html"))!.whatsapp).toBe("");
+  });
+
   it("returns null for a page with no listing name", () => {
     expect(parseListing("<div role=main><p>Results</p></div>")).toBeNull();
   });

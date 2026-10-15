@@ -43,6 +43,9 @@ How it fits together:
 - Sessions: 14 days from sign-in, signed cookie (`HttpOnly`, `SameSite=Lax`, `Secure` in production), re-checked against the user row on every request, so a reset, pause, turn-off or role change ends the session at the next click.
   The sign-in limiter (5 failures in 15 minutes lock a name) and the last sign-in time are in the database.
 - The `sync.run` permission and its row in `docs/roles.md` are kept unchanged but do nothing: the sync feature is gone. Removing the key is a separate decision.
+- IT Prospects (`/it`, behind the workspace switch `features.softwareTrack`) is a separate area: `src/lib/it/` (rules, parser, import, search strings, categories),
+  `store.it()` → `src/lib/store/itMysql.ts` over its own `it_*` tables, `it.*` permissions. MySQL only (the file Store's `it()` refuses). It never touches leads,
+  the lead finder's tables or the Board. Design: `docs/superpowers/specs/2026-10-15-it-prospects-design.md`.
 
 Guardrails:
 

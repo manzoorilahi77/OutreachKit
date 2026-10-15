@@ -10,7 +10,7 @@ const row: BusinessRow = {
   address: "1200 Example Ave Ste 4, Dallas, TX 75201, United States", mapsCategory: "Roofing contractor", rating: 4.8, reviewCount: 212,
   email: "hello@lonestarroofpros.example", facebookUrl: "https://www.facebook.com/lonestarroofpros",
   instagramUrl: "https://www.instagram.com/lonestar_roofpros/?hl=en", otherLinks: [{ label: "Yelp", url: "https://www.yelp.com/biz/lone-star" }],
-  mapsUrl: "https://www.google.com/maps/place/Lone+Star+Roof+Pros/data=!4m7!3m6!1s0x1:0x2", movedLeadId: null,
+  mapsUrl: "https://www.google.com/maps/place/Lone+Star+Roof+Pros/data=!4m7!3m6!1s0x1:0x2", movedLeadId: null, hasWebsite: false, websiteUrl: "", whatsapp: "",
 };
 
 describe("Move to Leads: saved business -> lead", () => {
@@ -64,5 +64,38 @@ describe("Move to Leads: saved business -> lead", () => {
     expect(instagramHandle("https://instagram.com/some.shop")).toBe("@some.shop");
     expect(instagramHandle("https://www.instagram.com/p/Cabc123/")).toBe("");
     expect(instagramHandle("https://example.com/some.shop")).toBe("");
+  });
+});
+
+describe("a business with a website", () => {
+  const withSite: BusinessRow = { ...row, hasWebsite: true, websiteUrl: "https://lonestarroofpros.example/" };
+
+  it("says a website was found, keeps its address, and does not tick the no-website check", () => {
+    const parsed = parseLeadForm(businessToLeadForm(withSite, "2026-10-09"));
+    expect(parsed.ok).toBe(true);
+    if (!parsed.ok) return;
+    expect(parsed.value).toMatchObject({ website_found: true, website_url: "https://lonestarroofpros.example/" });
+    expect(parsed.value.checks.check_no_real_website).toBe(false);
+    expect(Object.values(parsed.value.checks).some(Boolean)).toBe(false);
+  });
+
+  it("words the notes without claiming there is no website", () => {
+    const notes = businessToLeadFields(withSite, "2026-10-09").notes!;
+    expect(notes).toContain("Found with the Google Maps lead finder on 2026-10-09");
+    expect(notes).not.toContain("no website");
+  });
+
+  it("keeps a very long website address valid", () => {
+    const long = { ...withSite, websiteUrl: "https://example.com/" + "a".repeat(900) };
+    expect(parseLeadForm(businessToLeadForm(long, "2026-10-09")).ok).toBe(true);
+  });
+});
+
+describe("a business with a WhatsApp contact", () => {
+  it("carries it onto the lead, and a business without one gives an empty field", () => {
+    const withWa = parseLeadForm(businessToLeadForm({ ...row, whatsapp: "12145550147" }, "2026-10-09"));
+    expect(withWa.ok && withWa.value.whatsapp).toBe("12145550147");
+    const without = parseLeadForm(businessToLeadForm(row, "2026-10-09"));
+    expect(without.ok && without.value.whatsapp).toBe("");
   });
 });

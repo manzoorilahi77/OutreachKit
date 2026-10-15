@@ -505,7 +505,7 @@ Test it with the **smallest limit**:
 
 1. Sign in as the owner or a researcher/BD, open **Lead finder** (or the Kit Console, build a kit, and use the finder section).
 2. Pick a category and a city, set **Today's limit** to **20**, and press **Find businesses**.
-3. You should see progress like `Checked 23 · no website 9 · saved 7 · skipped 14 with a website`, and rows appear.
+3. You should see progress like `Checked 23 · saved 7 · with website 5 · without website 2`, and rows appear in the two tabs (each one is also added to your leads).
 4. If you see "captcha", "consent" or "blocked", that is Google refusing this IP. That is the datacentre-IP problem above, not a bug.
 
 Or from the terminal: `pnpm scrape "Roofing" "Dallas" TX --as <USERNAME> --limit 20`.

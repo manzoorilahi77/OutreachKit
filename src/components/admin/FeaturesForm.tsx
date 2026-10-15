@@ -19,7 +19,7 @@ export function FeaturesForm({ leadFinder, softwareTrack }: { leadFinder: boolea
         <li>
           <label className="flex min-h-11 cursor-pointer gap-3 p-4">
             <input type="checkbox" name="softwareTrack" defaultChecked={softwareTrack} className="mt-1 size-6 shrink-0 accent-head" />
-            <span><strong className="block">Software track</strong><span className="block text-muted">Turns on the software track (Phase 12) for the whole workspace once it is built.</span></span>
+            <span><strong className="block">IT Prospects</strong><span className="block text-muted">A separate area for IT buyers, digital agencies and IT firms: buying signals, the IT finder and its own pipeline. Turns it on for the whole workspace; the local leads are not affected.</span></span>
           </label>
         </li>
       </ul>

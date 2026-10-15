@@ -1,11 +1,12 @@
 // Usage: pnpm shots <phase-number> [--as <username>] <path> [<path>...]
 // Opens the paths as a demo account (default ravi, a BD) on a throwaway demo team, at 390px and 1280px, light and dark.
 // Writes docs/screenshots/phase-NN/<slug>-<width>-<theme>.png, plus a horizontal-overflow check.
+// A path under /it switches IT Prospects on with its demo prospects; ":it" in a path stands for the demo prospect's id.
 import { chromium } from "@playwright/test";
 import { mkdirSync } from "node:fs";
 import { ensureBuild, startApp } from "./lib/app";
 import { signInCookie } from "./lib/browserAuth";
-import { seedDemoTeam } from "./lib/demoTeam";
+import { seedDemoTeam, seedItProspects } from "./lib/demoTeam";
 import { createScratchDb } from "../src/lib/db/scratch";
 import { createPool } from "../src/lib/db/pool";
 import { loadLocalEnv } from "./lib/loadEnv";
@@ -23,12 +24,16 @@ ensureBuild();
 const scratch = await createScratchDb("okit_shots");
 const pool = createPool(scratch.config, 4);
 await seedDemoTeam(pool);
+if (paths.some((p) => p.startsWith("/it"))) {
+  const itId = await seedItProspects(pool);
+  paths.forEach((p, i) => { paths[i] = p.replace(":it", itId); });
+}
 const app = await startApp({ db: scratch.config, port: Number(process.env.PORT ?? 5021) });
 const browser = await chromium.launch();
 let overflow = 0;
 try {
   for (const p of paths) {
-    const slug = p === "/" ? "home" : p.replace(/^\//, "").replace(/[^a-z0-9]+/gi, "-");
+    const slug = p === "/" ? "home" : p.replace(/^\//, "").replace(/[0-9a-f]{8}-[0-9a-f-]{27}/, "id").replace(/[^a-z0-9]+/gi, "-");
     for (const width of [390, 1280]) {
       for (const scheme of ["light", "dark"] as const) {
         const ctx = await browser.newContext({ viewport: { width, height: 900 } });

@@ -18,7 +18,7 @@ type Row = readonly [Cell, Cell, Cell, Cell, Cell, Cell]; // super_admin, admin,
 
 const NONE = "none" as const;
 
-export const PERMISSION_GROUPS = ["People and workspace", "Kits (territories are shared)", "Leads", "Reviews, playbook and records"] as const;
+export const PERMISSION_GROUPS = ["People and workspace", "Kits (territories are shared)", "Leads", "Reviews, playbook and records", "IT Prospects (a separate area)"] as const;
 export type PermissionGroup = (typeof PERMISSION_GROUPS)[number];
 
 interface Def {
@@ -27,7 +27,7 @@ interface Def {
   row: Row;
 }
 
-const [PEOPLE, KITS, LEADS, REVIEWS] = PERMISSION_GROUPS;
+const [PEOPLE, KITS, LEADS, REVIEWS, IT] = PERMISSION_GROUPS;
 
 const DEFS = {
   "users.create": { group: PEOPLE, label: "Create accounts, share the login", row: ["all", "below", NONE, NONE, NONE, NONE] },
@@ -58,6 +58,15 @@ const DEFS = {
   "content.approve": { group: REVIEWS, label: "Approve category kits and segments", row: ["all", NONE, NONE, NONE, NONE, NONE] },
   "audit.view": { group: REVIEWS, label: "Audit log", row: ["all", "all", NONE, NONE, NONE, NONE] },
   "sync.run": { group: REVIEWS, label: "Sync with GitHub", row: [["own", "accounts"], ["own", "accounts"], "own", "own", "own", "own"] },
+
+  // IT Prospects: its own records, shown only while the workspace's IT Prospects switch is on.
+  "it.view": { group: IT, label: "See IT prospects and their signals", row: ["all", ["all", "not_super_admin"], "team", "own", "own", NONE] },
+  "it.add": { group: IT, label: "Add prospects and signals, import a CSV (duplicates blocked for everyone)", row: ["own", "own", "own", "own", "own", NONE] },
+  "it.edit": { group: IT, label: "Edit, qualify, move stage (owner or assignee)", row: ["own", "own", "own", "own", "own", NONE] },
+  "it.assign": { group: IT, label: "Assign a prospect to someone", row: ["all", ["all", "not_super_admin"], "team", NONE, NONE, NONE] },
+  "it.comment": { group: IT, label: "Comment on a prospect", row: ["all", ["all", "not_super_admin"], "team", "own", "own", NONE] },
+  "it.export": { group: IT, label: "Export prospects as CSV", row: ["all", ["all", "not_super_admin"], "team", "own", NONE, NONE] },
+  "it.finder": { group: IT, label: "Run the IT finder", row: ["own", "own", "own", "own", "own", NONE] },
 } as const satisfies Record<string, Def>;
 
 export type PermissionKey = keyof typeof DEFS;

@@ -42,11 +42,11 @@ describe("daily limit", () => {
 
   it("words the counter and the progress line", () => {
     expect(savedTodayLabel(7, 50)).toBe("Saved today: 7 of 50");
-    expect(progressLine({ ...emptyCounters(), checked: 23, noWebsite: 9, saved: 7, skippedHasWebsite: 14 })).toBe(
-      "Checked 23 · no website 9 · saved 7 · skipped 14 with a website",
+    expect(progressLine({ ...emptyCounters(), checked: 23, saved: 7, withWebsite: 5, withoutWebsite: 2 })).toBe(
+      "Checked 23 · saved 7 · with website 5 · without website 2",
     );
-    expect(progressLine({ ...emptyCounters(), checked: 5, skippedDuplicate: 2, unreadable: 1 })).toBe(
-      "Checked 5 · no website 0 · saved 0 · skipped 0 with a website · 2 already saved · 1 unreadable",
+    expect(progressLine({ ...emptyCounters(), checked: 5, skippedDuplicate: 2, unreadable: 1, leadsRefused: 3 })).toBe(
+      "Checked 5 · saved 0 · with website 0 · without website 0 · 2 already saved · 1 unreadable · 3 not added to leads",
     );
   });
 });

@@ -1,17 +1,19 @@
 // The Google Maps lead finder. One Chromium, one tab, no other site: it searches Maps, scrolls the results, opens each
-// listing that is not already saved (by anyone on the team) and not already known to have a website, and saves the ones that show no website.
+// listing that is not already saved (by anyone on the team) and saves every one it can read, with or without a website. Each saved
+// business becomes a lead through `addLead`.
 //
 // Politeness: a random 2–5 s pause before each listing it opens; nothing is retried. A CAPTCHA, an "unusual traffic" page or a
 // consent page that one normal click does not clear ends the run at once, with what was saved so far and the reason.
 import { chromium, type Browser, type Page } from "playwright";
 import type { FinderStore } from "../store/store";
+import type { MoveResult } from "./addToLeads";
 import { detectBlock, type Block } from "./blocks";
 import { DailyBudget, localDay } from "./limits";
 import { parseCards, parseListing, type Card } from "./parseListing";
 import { cleanMapsUrl, placeKey } from "./placeKey";
 import { BLOCK, SEL } from "./selectors";
 import { COUNTRIES, countryOf, isRegion, placeLabel } from "../market/regions";
-import { emptyCounters, progressLine, type Counters, type RunEvent, type StopCode } from "./types";
+import { emptyCounters, progressLine, type BusinessRow, type Counters, type RunEvent, type StopCode } from "./types";
 
 /** "Fencing & gates in Austin, TX"; outside the US the country is named too: "Dental practices in Business Bay, Dubai, UAE". */
 export function searchQuery(category: string, city: string, st: string): string {
@@ -35,6 +37,8 @@ export interface ScrapeOptions {
   baseUrl?: string;
   /** Milliseconds to wait before opening a listing. Only tests change it; the default is 2–5 s at random. */
   delayMs?: () => number;
+  /** Turns a saved business into a lead. The run calls it right after each save; a refusal is counted and the run goes on. */
+  addLead?: (b: BusinessRow) => Promise<MoveResult>;
   signal?: AbortSignal;
   onEvent?: (e: RunEvent) => void;
 }
@@ -160,7 +164,6 @@ export async function runScrape(o: ScrapeOptions): Promise<ScrapeResult> {
       c.checked++;
 
       if (known.has(key)) { c.skippedDuplicate++; progress(); continue; }
-      if (card.hasWebsiteButton) { c.skippedHasWebsite++; progress(); continue; }
 
       if (opened++ > 0) await sleep((o.delayMs ?? randomDelayMs)(), o.signal);
       if (aborted()) throw new Stop("cancelled", "Stopped.");
@@ -190,18 +193,23 @@ export async function runScrape(o: ScrapeOptions): Promise<ScrapeResult> {
       }
       failures = 0;
 
-      if (listing.hasWebsite) { c.skippedHasWebsite++; progress(); continue; }
-      c.noWebsite++;
       const id = await o.finder.insertBusiness({
         placeKey: key, scrapedOn: day, runId, query, category: o.category, city: o.city, state: o.state,
         name: listing.name, phone: listing.phone, address: listing.address, mapsCategory: listing.mapsCategory,
         rating: listing.rating, reviewCount: listing.reviewCount, email: listing.email, facebookUrl: listing.facebookUrl,
         instagramUrl: listing.instagramUrl, otherLinks: listing.otherLinks, mapsUrl: cleanMapsUrl(card.href),
+        hasWebsite: listing.hasWebsite, websiteUrl: listing.websiteUrl, whatsapp: listing.whatsapp,
       });
       if (id === null) { c.skippedDuplicate++; progress(); continue; } // another run saved it a moment ago
       budget.record();
       c.saved++;
-      const business = await o.finder.getBusiness(id);
+      if (listing.hasWebsite) c.withWebsite++; else c.withoutWebsite++;
+      let business = await o.finder.getBusiness(id);
+      if (business && o.addLead) {
+        const made = await o.addLead(business).catch((): MoveResult => ({ ok: false, message: "The lead couldn't be saved." }));
+        if (made.ok) business = { ...business, movedLeadId: made.leadId };
+        else c.leadsRefused++;
+      }
       if (business) emit({ type: "saved", business });
       progress();
     }
@@ -235,7 +243,7 @@ export async function runScrape(o: ScrapeOptions): Promise<ScrapeResult> {
     await browser?.close().catch(() => {});
   }
 
-  await o.finder.finishRun(runId, { found: c.found, checked: c.checked, skippedHasWebsite: c.skippedHasWebsite, skippedDuplicate: c.skippedDuplicate, saved: c.saved }, stop.reason).catch(() => {});
+  await o.finder.finishRun(runId, { found: c.found, checked: c.checked, skippedHasWebsite: 0, skippedDuplicate: c.skippedDuplicate, saved: c.saved }, stop.reason).catch(() => {});
   const result: ScrapeResult = { ...c, runId, stopCode: stop.code, stopReason: stop.reason, savedToday: budget.saved };
   emit({ type: "done", ...result, limit: o.limit });
   return result;

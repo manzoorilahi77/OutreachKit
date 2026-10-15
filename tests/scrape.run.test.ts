@@ -6,22 +6,28 @@ import type { AddressInfo } from "node:net";
 import { chromium } from "playwright";
 import { afterAll, beforeAll, beforeEach, describe, expect, it } from "vitest";
 import { runScrape, type ScrapeResult } from "@/lib/scrape/scraper";
+import { addBusinessToLeads, type MoveResult } from "@/lib/scrape/addToLeads";
 import { localDay } from "@/lib/scrape/limits";
-import type { FinderStore } from "@/lib/store/store";
+import type { BusinessRow } from "@/lib/scrape/types";
+import type { FinderStore, Store } from "@/lib/store/store";
 import { seedTeam, tempRoot } from "./helpers/team";
 
 const can = existsSync(chromium.executablePath());
 
 const fx = (n: string) => readFileSync(`tests/fixtures/maps/${n}`, "utf8").replace(/<img[^>]*>/g, "");
-const PLACES: Record<string, string> = { "Lone+Star+Roof+Pros": "no-website.html", "Gutter+Works+Dallas": "no-website-no-phone.html" };
+const PLACES: Record<string, string> = {
+  "Summit+Roofing": "website.html", "Lone+Star+Roof+Pros": "no-website.html", "Gutter+Works+Dallas": "no-website-no-phone.html",
+};
+const ALL = ["Summit Roofing", "Lone Star Roof Pros", "Gutter Works Dallas"];
 
 describe.skipIf(!can)("scraper against a stand-in Maps", () => {
   let server: Server;
   let base = "";
   let captchaOn: string | null = null; // a place whose page is the "unusual traffic" page
+  let store: Store;
   let finder: FinderStore;
   let cleanup: () => Promise<void>;
-  let fresh: () => Promise<FinderStore>;
+  let fresh: () => Promise<Store>;
 
   beforeAll(async () => {
     const tmp = await tempRoot("okit-run-");
@@ -31,7 +37,7 @@ describe.skipIf(!can)("scraper against a stand-in Maps", () => {
     fresh = async () => {
       const root = `${tmp.root}/t${++n}`;
       const t = await seedTeam(root);
-      return t.ravi.finder();
+      return t.ravi;
     };
 
     server = createServer((req, res) => {
@@ -60,26 +66,46 @@ describe.skipIf(!can)("scraper against a stand-in Maps", () => {
 
   beforeEach(async () => {
     captchaOn = null;
-    finder = await fresh();
+    store = await fresh();
+    finder = store.finder();
   });
 
-  const run = (limit: number): Promise<ScrapeResult> =>
-    runScrape({ finder, category: "Roofing", city: "Dallas", state: "TX", limit, baseUrl: base, delayMs: () => 0 });
-  const names = async () => (await finder.listBusinesses({ category: "Roofing", city: "Dallas", state: "TX" })).map((b) => b.name).reverse();
+  const run = (limit: number, addLead?: (b: BusinessRow) => Promise<MoveResult>): Promise<ScrapeResult> =>
+    runScrape({
+      finder, category: "Roofing", city: "Dallas", state: "TX", limit, baseUrl: base, delayMs: () => 0,
+      addLead: addLead ?? ((b) => addBusinessToLeads(store, b.id)),
+    });
+  const saved = () => finder.listBusinesses({ category: "Roofing", city: "Dallas", state: "TX" });
+  const names = async () => (await saved()).map((b) => b.name).reverse();
 
-  it("saves the listings with no website, skips the one with a website, and records the run", async () => {
+  it("saves every listing, with and without a website, makes each a lead, and records the run", async () => {
     const r = await run(20);
-    expect(r).toMatchObject({ found: 3, checked: 3, saved: 2, noWebsite: 2, skippedHasWebsite: 1, skippedDuplicate: 0, stopCode: "end_of_results", savedToday: 2 });
-    expect((await names()).sort()).toEqual(["Gutter Works Dallas", "Lone Star Roof Pros"]);
-    const saved = (await finder.listBusinesses({ category: "Roofing", city: "Dallas", state: "TX" })).find((b) => b.name === "Lone Star Roof Pros")!;
-    expect(saved).toMatchObject({ phone: "+1 214-555-0147", rating: 4.8, scrapedOn: localDay() });
+    expect(r).toMatchObject({ found: 3, checked: 3, saved: 3, withWebsite: 1, withoutWebsite: 2, leadsRefused: 0, skippedDuplicate: 0, stopCode: "end_of_results", savedToday: 3 });
+    expect((await names()).sort()).toEqual([...ALL].sort());
+    const rows = await saved();
+    expect(rows.every((b) => b.movedLeadId)).toBe(true);
+    expect(rows.find((b) => b.name === "Lone Star Roof Pros")).toMatchObject({ phone: "+1 214-555-0147", rating: 4.8, scrapedOn: localDay(), hasWebsite: false });
+    expect(rows.find((b) => b.name === "Summit Roofing")).toMatchObject({ hasWebsite: true });
+    expect(rows.find((b) => b.name === "Summit Roofing")!.websiteUrl).toContain("summitroofing.example");
+    const leads = (await store.listLeads()).filter((l) => ALL.includes(l.business_name));
+    expect(leads).toHaveLength(3);
+    expect(leads.find((l) => l.business_name === "Summit Roofing")).toMatchObject({ website_found: true });
+    expect(leads.find((l) => l.business_name === "Gutter Works Dallas")).toMatchObject({ website_found: false, check_no_real_website: true });
   }, 60000);
 
-  it("skips what is already saved when run again, and does not count it", async () => {
+  it("skips what is already saved when run again (websites included), and does not count it or duplicate the leads", async () => {
     await run(20);
     const again = await run(20);
-    expect(again).toMatchObject({ saved: 0, skippedDuplicate: 2, skippedHasWebsite: 1, stopCode: "end_of_results", savedToday: 2 });
-    expect(await names()).toHaveLength(2);
+    expect(again).toMatchObject({ saved: 0, skippedDuplicate: 3, withWebsite: 0, withoutWebsite: 0, stopCode: "end_of_results", savedToday: 3 });
+    expect(await names()).toHaveLength(3);
+    expect((await store.listLeads()).filter((l) => ALL.includes(l.business_name))).toHaveLength(3);
+  }, 60000);
+
+  it("keeps the business and carries on when a lead can't be made, and counts the refusal", async () => {
+    const r = await run(20, async () => ({ ok: false, message: "That business is already someone's lead." }));
+    expect(r).toMatchObject({ saved: 3, leadsRefused: 3, stopCode: "end_of_results" });
+    expect((await saved()).every((b) => b.movedLeadId === null)).toBe(true);
+    expect((await store.listLeads()).filter((l) => ALL.includes(l.business_name))).toHaveLength(0);
   }, 60000);
 
   it("stops when today's saved count reaches the limit", async () => {
@@ -102,7 +128,7 @@ describe.skipIf(!can)("scraper against a stand-in Maps", () => {
     const r = await run(20);
     expect(r.stopCode).toBe("captcha");
     expect(r.stopReason).toMatch(/CAPTCHA/);
-    expect(r.saved).toBe(1);
-    expect(await names()).toHaveLength(1);
+    expect(r.saved).toBe(2);
+    expect(await names()).toHaveLength(2);
   }, 60000);
 });

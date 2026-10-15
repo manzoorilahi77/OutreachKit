@@ -13,6 +13,8 @@ export interface ParsedListing {
   facebookUrl: string;
   instagramUrl: string;
   otherLinks: OtherLink[];
+  /** The WhatsApp number (digits) or wa.me link the listing shows, or "". Maps does not say whether the phone is on WhatsApp; only a WhatsApp link does. */
+  whatsapp: string;
   /** The listing links to a website of the business: a Website row, or a booking link on the business's own domain. */
   hasWebsite: boolean;
   websiteUrl: string;
@@ -40,6 +42,10 @@ export interface BusinessRow {
   instagramUrl: string;
   otherLinks: OtherLink[];
   mapsUrl: string;
+  hasWebsite: boolean;
+  websiteUrl: string;
+  /** The WhatsApp number (digits) or wa.me link the listing showed, or "". */
+  whatsapp: string;
   movedLeadId: string | null;
 }
 
@@ -50,15 +56,17 @@ export type StopCode =
 export interface Counters {
   /** Listings seen in the results. */
   found: number;
-  /** Listings looked at: opened, skipped from their card, or recognised as already saved. */
+  /** Listings looked at: opened, or recognised as already saved. */
   checked: number;
-  /** Opened listings that showed no website. */
-  noWebsite: number;
+  /** Businesses saved this run, with or without a website. */
   saved: number;
-  skippedHasWebsite: number;
+  withWebsite: number;
+  withoutWebsite: number;
   skippedDuplicate: number;
   /** Opened listings the parser could not read, or that failed to load. */
   unreadable: number;
+  /** Saved businesses the run could not turn into a lead (they stay in the list, with an "Add to leads" button). */
+  leadsRefused: number;
 }
 
 export interface RunInfo { query: string; limit: number; day: string; savedToday: number }
@@ -72,12 +80,13 @@ export type RunEvent =
   | { type: "failed"; message: string }
   | ({ type: "done"; runId: string; stopCode: StopCode; stopReason: string; savedToday: number; limit: number } & Counters);
 
-export const emptyCounters = (): Counters => ({ found: 0, checked: 0, noWebsite: 0, saved: 0, skippedHasWebsite: 0, skippedDuplicate: 0, unreadable: 0 });
+export const emptyCounters = (): Counters => ({ found: 0, checked: 0, saved: 0, withWebsite: 0, withoutWebsite: 0, skippedDuplicate: 0, unreadable: 0, leadsRefused: 0 });
 
-/** "Checked 23 · no website 9 · saved 7 · skipped 14 with a website" */
+/** "Checked 23 · saved 7 · with website 5 · without website 2" */
 export function progressLine(c: Counters): string {
-  const parts = [`Checked ${c.checked}`, `no website ${c.noWebsite}`, `saved ${c.saved}`, `skipped ${c.skippedHasWebsite} with a website`];
+  const parts = [`Checked ${c.checked}`, `saved ${c.saved}`, `with website ${c.withWebsite}`, `without website ${c.withoutWebsite}`];
   if (c.skippedDuplicate) parts.push(`${c.skippedDuplicate} already saved`);
   if (c.unreadable) parts.push(`${c.unreadable} unreadable`);
+  if (c.leadsRefused) parts.push(`${c.leadsRefused} not added to leads`);
   return parts.join(" · ");
 }

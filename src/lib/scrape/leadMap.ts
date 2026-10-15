@@ -10,11 +10,14 @@ export function leadNotes(b: BusinessRow, today: string): string {
   if (b.mapsCategory) lines.push(`Maps category: ${b.mapsCategory}`);
   if (b.instagramUrl && !instagramHandle(b.instagramUrl)) lines.push(`Instagram: ${b.instagramUrl}`);
   for (const l of b.otherLinks) lines.push(`${l.label}: ${l.url}`);
-  lines.push(`Found with the Google Maps lead finder on ${today} (no website shown on the listing).`);
+  lines.push(`Found with the Google Maps lead finder on ${today}${b.hasWebsite ? " (the listing shows a website)." : " (no website shown on the listing)."}`);
   return lines.join("\n");
 }
 
-/** The fields createLead's form would post for this business. website_found is "no" and the no-real-website check is on. */
+/**
+ * The fields createLead's form would post for this business. With no website, website_found is "no" and the no-real-website
+ * check is on; with one, website_found is "yes", the address goes in website_url and no check is ticked.
+ */
 export function businessToLeadFields(b: BusinessRow, today: string): Record<string, string> {
   return {
     date_sourced: today,
@@ -23,14 +26,16 @@ export function businessToLeadFields(b: BusinessRow, today: string): Record<stri
     city: b.city,
     state: b.state,
     phone: b.phone,
+    whatsapp: b.whatsapp,
     email: b.email,
     instagram_handle: instagramHandle(b.instagramUrl),
     facebook_page: b.facebookUrl,
     google_maps_url: b.mapsUrl,
     google_rating: b.rating === null ? "" : String(b.rating),
     google_review_count: b.reviewCount === null ? "" : String(b.reviewCount),
-    website_found: "no",
-    check_no_real_website: "on",
+    website_found: b.hasWebsite ? "yes" : "no",
+    website_url: b.hasWebsite ? b.websiteUrl : "",
+    ...(b.hasWebsite ? {} : { check_no_real_website: "on" }),
     notes: leadNotes(b, today),
   };
 }

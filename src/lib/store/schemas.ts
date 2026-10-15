@@ -52,7 +52,7 @@ export const SCHEMAS = {
     sourceRef: { anyOf: [{ type: "null" }, obj({ owner: str, id: str }, ["owner", "id"])] },
     kit_id: nstr, date_sourced: date,
     business_name: { type: "string", minLength: 1 }, owner_first_name: str, category: str, city: str, state: str,
-    phone: str, email: str, instagram_handle: str, facebook_page: str, google_maps_url: str,
+    phone: str, whatsapp: str, email: str, instagram_handle: str, facebook_page: str, google_maps_url: str,
     website_found: nbool, website_url: str, site_verdict: str,
     google_review_count: nint, google_rating: nnum, followers: nint, last_post_date: ndate,
     demo_url: str, demo_built_date: ndate, first_contact_date: ndate,

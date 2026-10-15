@@ -192,9 +192,9 @@ export async function importTeam(pool: Pool, src: TeamSource, o: { apply: boolea
     for (const b of [...src.businesses].sort((x, y) => x.scrapedAt.localeCompare(y.scrapedAt) || x.id.localeCompare(y.id))) {
       const inserted = await put("finder businesses", `finder business ${b.id} (${b.owner})`,
         `INSERT INTO finder_businesses (id, owner, place_key, scraped_on, scraped_at, run_id, query, category, city, state, name, phone, address, maps_category, rating, review_count, email,
-          facebook_url, instagram_url, other_links, maps_url, moved_lead_id, moved_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+          facebook_url, instagram_url, other_links, maps_url, has_website, website_url, whatsapp, moved_lead_id, moved_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
         [b.id, b.owner, b.placeKey, b.scrapedOn, toDbTime(b.scrapedAt), b.runId, b.query, b.category, b.city, b.state, b.name, b.phone, b.address, b.mapsCategory, b.rating, b.reviewCount,
-          b.email, b.facebookUrl, b.instagramUrl, JSON.stringify(b.otherLinks), b.mapsUrl, b.movedLeadId, b.movedAt ? toDbTime(b.movedAt) : null]);
+          b.email, b.facebookUrl, b.instagramUrl, JSON.stringify(b.otherLinks), b.mapsUrl, b.hasWebsite ? 1 : 0, (b.websiteUrl ?? "").slice(0, 1000), (b.whatsapp ?? "").slice(0, 300), b.movedLeadId, b.movedAt ? toDbTime(b.movedAt) : null]);
       if (!inserted) continue;
       for (const key of new Set(finderKeys(b))) {
         try {

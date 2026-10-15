@@ -61,6 +61,7 @@ export function LeadForm({ action, lead, kitId, defaults, submitLabel, restricte
         <Legend>How to reach them</Legend>
         <div className="grid gap-4 md:grid-cols-2">
           <Field id="phone" label="Phone"><Input id="phone" name="phone" type="tel" defaultValue={v("phone")} autoComplete="off" /></Field>
+          <Field id="whatsapp" label="WhatsApp number" hint="Digits with the country code, or a wa.me link. Leave empty if none."><Input id="whatsapp" name="whatsapp" type="tel" defaultValue={v("whatsapp")} autoComplete="off" /></Field>
           <Field id="email" label="Email"><Input id="email" name="email" type="email" defaultValue={v("email")} autoComplete="off" /></Field>
           <Field id="instagram_handle" label="Instagram handle"><Input id="instagram_handle" name="instagram_handle" defaultValue={v("instagram_handle")} autoComplete="off" /></Field>
           <Field id="facebook_page" label="Facebook page"><Input id="facebook_page" name="facebook_page" defaultValue={v("facebook_page")} autoComplete="off" /></Field>

@@ -1,7 +1,7 @@
 // What is specific to the file Store: the layout and format of team/. The behaviour every Store shares is in
 // tests/contract/storeContract.ts.
 import { afterAll, beforeAll, describe, expect, it } from "vitest";
-import { readFile, readdir } from "node:fs/promises";
+import { readFile, readdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { StoreError } from "@/lib/store/errors";
 import { stableStringify } from "@/lib/store/json";
@@ -86,7 +86,7 @@ describe("where the file Store puts things", () => {
     const id = await f.insertBusiness({
       placeKey: "fid:0x1:0x2", scrapedOn: "2026-10-12", runId: null, query: "Roofing in Dallas, TX", category: "Roofing", city: "Dallas", state: "TX",
       name: "Finder Roofing", phone: "2145559001", address: "", mapsCategory: "", rating: null, reviewCount: null, email: "", facebookUrl: "",
-      instagramUrl: "", otherLinks: [], mapsUrl: "https://www.google.com/maps/place/Finder",
+      instagramUrl: "", otherLinks: [], mapsUrl: "https://www.google.com/maps/place/Finder", hasWebsite: false, websiteUrl: "", whatsapp: "",
     });
     expect(id).toBeTruthy();
     expect(await readFile(path.join(root, "team/data/ravi/finder/businesses.jsonl"), "utf8")).toContain("Finder Roofing");
@@ -94,6 +94,22 @@ describe("where the file Store puts things", () => {
     await f.finishRun(run, { found: 3, checked: 3, skippedHasWebsite: 1, skippedDuplicate: 1, saved: 1 }, "Done");
     const lines = (await readFile(path.join(root, "team/data/ravi/finder/runs.jsonl"), "utf8")).trim().split("\n").map((l) => JSON.parse(l));
     expect(lines.map((l) => l.kind)).toEqual(["start", "finish"]);
+  });
+  it("reads a finder line written before the website fields existed as 'no website'", async () => {
+    const f = t.ravi.finder();
+    const id = await f.insertBusiness({
+      placeKey: "fid:0x5:0x6", scrapedOn: "2026-10-12", runId: null, query: "Roofing in Dallas, TX", category: "Roofing", city: "Dallas", state: "TX",
+      name: "Old Roofing", phone: "2145559003", address: "", mapsCategory: "", rating: null, reviewCount: null, email: "", facebookUrl: "",
+      instagramUrl: "", otherLinks: [], mapsUrl: "https://www.google.com/maps/place/Old", hasWebsite: false, websiteUrl: "", whatsapp: "",
+    });
+    const file = path.join(root, "team/data/ravi/finder/businesses.jsonl");
+    const rewritten = (await readFile(file, "utf8")).split("\n").filter(Boolean).map((l) => {
+      const o = JSON.parse(l);
+      delete o.hasWebsite; delete o.websiteUrl; delete o.whatsapp;
+      return JSON.stringify(o);
+    }).join("\n") + "\n";
+    await writeFile(file, rewritten);
+    expect(await t.ravi.finder().getBusiness(id!)).toMatchObject({ hasWebsite: false, websiteUrl: "", whatsapp: "" });
   });
   it("refuses to write outside the caller's folder", async () => {
     const e = await t.vic.createKit({ category: "Roofing", device: "desktop", state: "TX", city: "Dallas", cityIsFree: false, direction: "b" }).then(() => null, (x) => x);

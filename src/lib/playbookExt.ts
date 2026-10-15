@@ -1,7 +1,7 @@
 // Playbook sections beyond the ported eleven: mid-size companies, healthcare practices, and selling in Canada and the
 // UAE. Written for the expansion (docs/expansion/), not extracted from the original, so `pnpm parity` never sees them.
 // Every figure is a planning range, never a market fact.
-import type { Section } from "@/content/types";
+import type { Inline, Section } from "@/content/types";
 
 const midsize: Section = {
   id: "midsize",
@@ -138,4 +138,51 @@ const markets: Section = {
   ],
 };
 
-export const EXTRA_SECTIONS: Section[] = [midsize, healthcare, markets];
+
+// Section 15: IT Prospects, from The Outreach Reset (docs/source/outreach-reset.html, run 3 Oct 2026). Every number is the
+// Reset's, with its source; E is evidence, P a practitioner view.
+const L = (href: string, text: string): Inline => ({ link: { href, children: [text] } });
+
+const itbuyers: Section = {
+  id: "itbuyers",
+  num: "15",
+  title: "Finding IT buyers",
+  sub: "IT Prospects is a separate area for companies that already pay for development: agencies with more work than developers, companies hiring developers, and growing firms with an operations problem.",
+  blocks: [
+    { type: "p", inline: ["The Outreach Reset found the first round's buyer was wrong for software work, and moved the target to people who already buy it. In Clutch's survey of US small businesses, 45% use only internal teams and 13% only external partners (E, Clutch survey, Dec 2025, as cited in the Reset). Buyers who already pay for development are the ones to reach first."] },
+    {
+      type: "table",
+      head: [["Who"], ["How you find them"], ["What you offer first"]],
+      rows: [
+        [{ kind: "name", inline: ["Digital and web agencies"] }, { inline: ["The IT finder on Google Maps, and their own hiring or launch posts"] }, { inline: ["One paid test ticket, fixed price, under their brand; NDA first and they own the code"] }],
+        [{ kind: "name", inline: ["Companies with an open developer role"] }, { inline: ["Job posts: paste them into the signals inbox"] }, { inline: ["A 2-week trial developer, or one backlog feature at a fixed price"] }],
+        [{ kind: "name", inline: ["Growing businesses with an IT need"] }, { inline: ["Posts for IT support, data entry or an ops admin; agency partners"] }, { inline: ["A workflow audit or discovery sprint, then a fixed-price build"] }],
+      ],
+    },
+    { type: "h4", inline: ["A signal is your reason to write"] },
+    {
+      type: "list",
+      ordered: false,
+      items: [
+        ["Open the ", { strong: ["Search strings"] }, " page, run a search in your own browser, and read the posts. LinkedIn, Indeed, Upwork, Wellfound, Clutch and Reddit don't allow automated collection, so the app never fetches them."],
+        ["Paste a good post into the ", { strong: ["Signals inbox"] }, ". It reads the company, the date and the kind of signal; you check every field before saving."],
+        ["A signal goes stale: a project post after 14 days, a tender after 30, a job post after 60. Check a stale one is still open before you write."],
+        ["Write to the hiring manager or the founder, not the recruiter."],
+      ],
+    },
+    { type: "h4", inline: ["The first message"] },
+    {
+      type: "list",
+      ordered: false,
+      items: [
+        ["Under 90 words, one true trigger, one proof point, one easy question. No price, no link and no attachment in the first email."],
+        ["Pitching in a cold email cuts replies by up to 57% (P, ", L("https://www.gong.io/blog/does-cold-email-even-work-any-more-heres-what-the-data-says/", "Gong"), "). 58% of replies come from the first email (P, ", L("https://instantly.ai/cold-email-benchmark-report-2026", "Instantly"), ")."],
+        ["State your overlap hours with their time zone. Each extra hour of gap cuts live communication by about 11% (E, ", L("https://pubsonline.informs.org/doi/10.1287/orsc.2023.17558", "Organization Science"), ")."],
+        ["Never claim to be US-local. Say where the team works and who their US point of contact is."],
+      ],
+    },
+    { type: "note", tone: "warn", inline: ["The six qualifier questions and the category scores in the IT finder are judgement, not measured data. Judge a segment after about 300 delivered emails, not after the first 50."] },
+  ],
+};
+
+export const EXTRA_SECTIONS: Section[] = [midsize, healthcare, markets, itbuyers];

@@ -22,7 +22,7 @@ export default async function PlatformHome() {
       </div>
       <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
         {[["/platform/users", "Users", "Create accounts, reset passwords, pause, turn off."], ["/platform/workspace", "Workspace details", "Studio, demo domain and based line used in every kit."],
-          ["/platform/content", "Content review", "Approve category kits by file and version."], ["/platform/features", "Feature switches", "Lead finder and software track."],
+          ["/platform/content", "Content review", "Approve category kits by file and version."], ["/platform/features", "Feature switches", "Lead finder and IT Prospects."],
           ["/platform/audit", "Audit", "Everything logged, newest first."], ["/admin/teams", "Teams", "Teams and their managers."]].map(([href, title, sub]) => (
           <li key={href}>
             <Link href={href!} className="flex h-full flex-col gap-1 rounded-lg border border-line bg-surface p-5 no-underline hover:border-head">

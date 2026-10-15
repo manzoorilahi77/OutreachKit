@@ -1,6 +1,7 @@
 // Reads one opened Maps listing. Input is the outerHTML of the side panel (SEL.panel); output is plain data.
 // It only reads what the listing itself shows. It never follows a link.
 import { parseHtml, selectAll, selectOne, textOf, type El } from "./html";
+import { normalizeWhatsapp } from "../leads/whatsapp";
 import { classifyLink, isOwnSite, unwrapRedirect } from "./links";
 import { SEL } from "./selectors";
 import type { OtherLink, ParsedListing } from "./types";
@@ -48,6 +49,7 @@ export function parseListing(html: string): ParsedListing | null {
   let facebookUrl = "";
   let instagramUrl = "";
   const other: OtherLink[] = [];
+  let whatsapp = "";
   const seen = new Set<string>();
   const addOther = (l: OtherLink) => {
     if (!seen.has(l.url) && other.length < MAX_OTHER) { seen.add(l.url); other.push(l); }
@@ -66,6 +68,8 @@ export function parseListing(html: string): ParsedListing | null {
     }
     const url = unwrapRedirect(href);
     if (!/^https?:/i.test(url) || url === websiteHref || url === ownBooking?.url) continue;
+    const wa = normalizeWhatsapp(url);
+    if (wa) { if (!whatsapp) whatsapp = wa; continue; }
     const { kind, label: text } = classifyLink(url);
     if (kind === "facebook") { if (!facebookUrl) facebookUrl = url; else if (url !== facebookUrl) addOther({ label: text, url }); }
     else if (kind === "instagram") { if (!instagramUrl) instagramUrl = url; else if (url !== instagramUrl) addOther({ label: text, url }); }
@@ -84,13 +88,14 @@ export function parseListing(html: string): ParsedListing | null {
     facebookUrl,
     instagramUrl,
     otherLinks: other,
+    whatsapp,
     hasWebsite,
     websiteUrl: websiteHref || ownBooking?.url || "",
     websiteSource: websiteHref ? "website" : ownBooking ? "booking-link" : null,
   };
 }
 
-/** One result card in the feed. `hasWebsiteButton` is a shortcut only: a card without the button still gets opened. */
+/** One result card in the feed. `hasWebsiteButton` is no longer used to skip a card: every card not already saved is opened, because the card doesn't show the phone, address or links. */
 export interface Card { href: string; name: string; hasWebsiteButton: boolean }
 
 export function parseCards(feedHtml: string): Card[] {

@@ -1,10 +1,11 @@
 // pnpm scrape "<category>" "<city>" <ST> --as <username> --limit 50 [--headed]
-// Finds businesses on Google Maps that show no website and saves them to that person's finder list in the database.
+// Finds businesses on Google Maps, with or without a website, saves them to that person's finder list in the database and adds each as a lead.
 import { isRegion } from "../src/lib/market/regions";
 import { createStore } from "../src/lib/store";
 import { loadLocalEnv } from "./lib/loadEnv";
 import { StoreError } from "../src/lib/store/errors";
 import { DEFAULT_LIMIT } from "../src/lib/scrape/limits";
+import { addBusinessToLeads } from "../src/lib/scrape/addToLeads";
 import { runScrape } from "../src/lib/scrape/scraper";
 import { progressLine } from "../src/lib/scrape/types";
 
@@ -38,7 +39,8 @@ if (!user || user.status !== "active") {
   console.error(as ? `No active account called "${as}".` : "Say who is running it: --as <username>.");
   process.exit(1);
 }
-const finder = createStore({ username: user.username, role: user.role, team: user.team }).finder();
+const store = createStore({ username: user.username, role: user.role, team: user.team });
+const finder = store.finder();
 
 const ac = new AbortController();
 process.on("SIGINT", () => {
@@ -49,9 +51,10 @@ process.on("SIGINT", () => {
 try {
   const r = await runScrape({
     finder, category, city, state: st, limit, headed, signal: ac.signal,
+    addLead: (b) => addBusinessToLeads(store, b.id),
     onEvent(e) {
       if (e.type === "status") console.log(e.message);
-      else if (e.type === "saved") console.log(`  + ${e.business.name}${e.business.phone ? " · " + e.business.phone : ""}`);
+      else if (e.type === "saved") console.log(`  + ${e.business.name}${e.business.hasWebsite ? " (website)" : ""}${e.business.phone ? " · " + e.business.phone : ""}`);
       else if (e.type === "progress") process.stdout.write(`\r${e.message} · saved today ${e.savedToday} of ${e.limit}   `);
     },
   });

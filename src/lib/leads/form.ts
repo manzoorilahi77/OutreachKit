@@ -1,3 +1,4 @@
+import { normalizeWhatsapp } from "./whatsapp";
 import { isRegion } from "@/lib/market/regions";
 import type { Channel } from "./stages";
 import { CHECK_FIELDS } from "./checks";
@@ -22,6 +23,8 @@ export interface LeadInput {
   date_sourced?: string;
   business_name: string; owner_first_name: string; category: string; city: string; state: string;
   phone: string; email: string; instagram_handle: string; facebook_page: string; google_maps_url: string;
+  /** WhatsApp number (digits) or wa.me link. Optional so imported rows and older callers need not set it. */
+  whatsapp?: string;
   website_found: boolean | null; website_url: string; site_verdict: string;
   google_review_count: number | null; google_rating: number | null; followers: number | null; last_post_date: string | null;
   demo_url: string; demo_built_date: string | null; first_contact_date: string | null; channel: Channel | null; notes: string;
@@ -38,6 +41,10 @@ export function parseLeadForm(fd: FormData): Ok<LeadInput> | Bad {
 
   const dates = { date_sourced: date(fd, "date_sourced"), last_post_date: date(fd, "last_post_date"), demo_built_date: date(fd, "demo_built_date"), first_contact_date: date(fd, "first_contact_date") };
   for (const [k, v] of Object.entries(dates)) if (v === undefined) return { ok: false, error: `Check the date in ${k.replace(/_/g, " ")}.` };
+
+  const waRaw = text(fd, "whatsapp", 300);
+  const whatsapp = normalizeWhatsapp(waRaw);
+  if (waRaw && !whatsapp) return { ok: false, error: "The WhatsApp number doesn't look right. Use digits with the country code, like +1 214 555 0147, or a wa.me link." };
 
   const nums = { google_review_count: int(fd, "google_review_count"), followers: int(fd, "followers") };
   for (const [k, v] of Object.entries(nums)) if (v === undefined) return { ok: false, error: `${k.replace(/_/g, " ")} must be a whole number.` };
@@ -58,7 +65,7 @@ export function parseLeadForm(fd: FormData): Ok<LeadInput> | Bad {
     value: {
       ...(dates.date_sourced ? { date_sourced: dates.date_sourced } : {}),
       business_name, owner_first_name: text(fd, "owner_first_name", 100), category: text(fd, "category", 120), city: text(fd, "city", 120), state,
-      phone: text(fd, "phone", 60), email: text(fd, "email", 200), instagram_handle: text(fd, "instagram_handle", 100),
+      phone: text(fd, "phone", 60), ...(fd.has("whatsapp") ? { whatsapp } : {}), email: text(fd, "email", 200), instagram_handle: text(fd, "instagram_handle", 100),
       facebook_page: text(fd, "facebook_page", 300), google_maps_url: text(fd, "google_maps_url", 500),
       website_found: found === "yes" ? true : found === "no" ? false : null, website_url: text(fd, "website_url", 500), site_verdict: text(fd, "site_verdict", 300),
       google_review_count: nums.google_review_count ?? null, google_rating: rating, followers: nums.followers ?? null,

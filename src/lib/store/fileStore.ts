@@ -20,7 +20,7 @@ import { migrateData } from "./migrate";
 import { ID_RE, isId, isInside, layout, rootDir, usernameProblem, type Layout } from "./paths";
 import { assertValid, validateFile, type SchemaName } from "./schemas";
 import type {
-  DirectoryEntry, DupResult, FinderStore, Incoming, KitStats, LeadListItem, NewBusiness, NewUser, ScopeData, Store, TerritoryEntry, UserChange,
+  DirectoryEntry, DupResult, FinderStore, Incoming, ItStore, KitStats, LeadListItem, NewBusiness, NewUser, ScopeData, Store, TerritoryEntry, UserChange,
 } from "./store";
 import {
   SCHEMA_VERSION, type Actor, type ApprovalRecord, type ApprovalsFile, type Assignment, type AuditEntry, type FinderBusiness, type FinderLine,
@@ -702,7 +702,7 @@ class FileStore implements Store {
     for (const o of owners) for (const e of await readLines<LeadEvent>(this.L.events(o))) if (validateFile("event", e).ok) events.push(e);
     // "Totals only" (a viewer) never gets phone, email, social handles or notes: they are removed before they leave the Store.
     if (grantOf(this.me(), key).limit === "totals") {
-      leads = leads.map((l) => ({ ...l, owner_first_name: "", phone: "", email: "", instagram_handle: "", facebook_page: "", google_maps_url: "", website_url: "", notes: "" }));
+      leads = leads.map((l) => ({ ...l, owner_first_name: "", phone: "", whatsapp: "", email: "", instagram_handle: "", facebook_page: "", google_maps_url: "", website_url: "", notes: "" }));
       return { leads, events: events.map((e) => ({ ...e, note: "" })), owners };
     }
     return { leads, events, owners };
@@ -884,7 +884,7 @@ class FileStore implements Store {
     const row = (b: FinderBusiness & { movedLeadId: string | null; owner: string }): BusinessRow => {
       const { runId: _r, owner: _o, ...rest } = b;
       void _r; void _o;
-      return rest;
+      return { ...rest, hasWebsite: b.hasWebsite ?? false, websiteUrl: b.websiteUrl ?? "", whatsapp: b.whatsapp ?? "" };
     };
     return {
       countSavedOn: async (day) => {
@@ -914,6 +914,7 @@ class FileStore implements Store {
             city: b.city, state: b.state, name: b.name.slice(0, 255), phone: b.phone.slice(0, 60), address: b.address.slice(0, 500), mapsCategory: b.mapsCategory.slice(0, 200),
             rating: b.rating, reviewCount: b.reviewCount, email: b.email.slice(0, 255), facebookUrl: b.facebookUrl.slice(0, 500), instagramUrl: b.instagramUrl.slice(0, 500),
             otherLinks: b.otherLinks, mapsUrl: b.mapsUrl.slice(0, 1000),
+            hasWebsite: b.hasWebsite, websiteUrl: b.websiteUrl.slice(0, 1000), whatsapp: b.whatsapp.slice(0, 300),
           };
           await this.append("finderLine", this.L.finderBusinesses(a().username), line);
           return id;
@@ -958,6 +959,11 @@ class FileStore implements Store {
         });
       },
     };
+  }
+
+  /** IT Prospects lives only in MySQL: it was built after the team/ files were retired, so there is no file format for it. */
+  it(): ItStore {
+    throw new StoreError("IT Prospects needs the MySQL database. The team/ file Store doesn't hold it.", "invalid");
   }
 }
 

@@ -72,6 +72,18 @@ Logins identify people; they do not protect data. This map decides what the app 
 | Audit log | `audit.view` | all | all | — | — | — | — |
 | Sync with GitHub | `sync.run` | own (+ accounts) | own (+ accounts) | own | own | own | own |
 
+### IT Prospects (a separate area)
+
+| Action | Key | Super Admin | Admin | Manager | BD Executive | Lead Researcher | Viewer |
+|---|---|---|---|---|---|---|---|
+| See IT prospects and their signals | `it.view` | all | all (except the Super Admin's) | team | own | own | — |
+| Add prospects and signals, import a CSV (duplicates blocked for everyone) | `it.add` | own | own | own | own | own | — |
+| Edit, qualify, move stage (owner or assignee) | `it.edit` | own | own | own | own | own | — |
+| Assign a prospect to someone | `it.assign` | all | all (except the Super Admin's) | team | — | — | — |
+| Comment on a prospect | `it.comment` | all | all (except the Super Admin's) | team | own | own | — |
+| Export prospects as CSV | `it.export` | all | all (except the Super Admin's) | team | own | — | — |
+| Run the IT finder | `it.finder` | own | own | own | own | own | — |
+
 ## Who can act on whom
 
 Create, reset password, suspend, disable, enable, change role, move team. Nobody acts on themselves except to change their own password.

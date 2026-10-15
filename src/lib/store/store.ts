@@ -7,6 +7,8 @@ import type { PermissionKey } from "@/lib/auth/permissions";
 import type { StageEvent } from "@/lib/leads/ratios";
 import type { Channel, Stage } from "@/lib/leads/stages";
 import type { BusinessRow } from "@/lib/scrape/types";
+import type { ItEvent, ItProspectInput, ItProspectView, ItSignal, ItSignalInput, ItStage, ProspectSource, Qualifier } from "@/lib/it/model";
+import type { KeySource } from "@/lib/it/keys";
 import type { DupHit, DupCandidate } from "./dupes";
 import type { NewLeadInput } from "./leadModel";
 import type {
@@ -51,6 +53,7 @@ export interface NewBusiness {
   placeKey: string; scrapedOn: string; runId: string | null; query: string; category: string; city: string; state: string;
   name: string; phone: string; address: string; mapsCategory: string; rating: number | null; reviewCount: number | null;
   email: string; facebookUrl: string; instagramUrl: string; otherLinks: { label: string; url: string }[]; mapsUrl: string;
+  hasWebsite: boolean; websiteUrl: string; whatsapp: string;
 }
 
 /** What the lead finder reads and writes: the runner's own folder, plus a look at everyone's keys to skip duplicates. */
@@ -63,6 +66,33 @@ export interface FinderStore {
   markMoved(id: string, leadId: string): Promise<boolean>;
   startRun(r: { query: string; category: string; city: string; state: string; limit: number }): Promise<string>;
   finishRun(id: string, c: { found: number; checked: number; skippedHasWebsite: number; skippedDuplicate: number; saved: number }, stopReason: string): Promise<void>;
+}
+
+/** A prospect that already holds one of the keys: who has it, and whether the caller may add to it. */
+export interface ItDup { prospectId: string; company: string; holder: string; holderName: string; matchedOn: string; canEdit: boolean }
+
+/**
+ * IT Prospects (a separate area, docs/superpowers/specs/2026-10-15-it-prospects-design.md). Reads are scoped by the it.* keys;
+ * a prospect is edited by its owner or its assignee. `finder()` is the IT finder's own FinderStore over its own tables.
+ */
+export interface ItStore {
+  listProspects(): Promise<ItProspectView[]>;
+  getProspect(id: string): Promise<ItProspectView | null>;
+  createProspect(input: ItProspectInput, opts?: { signal?: ItSignalInput | null; source?: ProspectSource; finderBusinessId?: string }): Promise<ItProspectView>;
+  updateProspect(id: string, input: ItProspectInput): Promise<ItProspectView>;
+  setQualifier(id: string, q: Qualifier): Promise<ItProspectView>;
+  moveStage(id: string, to: ItStage): Promise<ItProspectView>;
+  assign(id: string, to: string | null): Promise<ItProspectView>;
+  deleteProspect(id: string): Promise<void>;
+  addSignal(id: string, s: ItSignalInput): Promise<ItSignal>;
+  deleteSignal(id: string, signalId: string): Promise<void>;
+  addComment(id: string, note: string): Promise<ItEvent>;
+  events(id: string): Promise<ItEvent[]>;
+  findDuplicate(c: KeySource, opts?: { ignoreId?: string }): Promise<ItDup | null>;
+  /** People the caller may hand a prospect to. */
+  assignable(): Promise<{ username: string; fullName: string; firstName: string }[]>;
+  exportProspects(): Promise<ItProspectView[]>;
+  finder(): FinderStore;
 }
 
 export interface Store {
@@ -131,6 +161,7 @@ export interface Store {
   addApproval(a: Omit<ApprovalRecord, "id" | "approvedAt">): Promise<ApprovalRecord>;
 
   finder(): FinderStore;
+  it(): ItStore;
 }
 
 export type { DupHit };

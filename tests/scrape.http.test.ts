@@ -32,7 +32,7 @@ describe("origin check", () => {
 describe("progress stream", () => {
   const events: RunEvent[] = [
     { type: "status", message: "Searching…" },
-    { type: "progress", found: 40, checked: 23, noWebsite: 9, saved: 7, skippedHasWebsite: 14, skippedDuplicate: 0, unreadable: 0, savedToday: 7, limit: 20, message: "Checked 23 · no website 9 · saved 7 · skipped 14 with a website" },
+    { type: "progress", found: 40, checked: 23, saved: 7, withWebsite: 5, withoutWebsite: 2, skippedDuplicate: 0, unreadable: 0, leadsRefused: 0, savedToday: 7, limit: 20, message: "Checked 23 · saved 7 · with website 5 · without website 2" },
     { type: "failed", message: "Can't reach MySQL." },
   ];
   it("round-trips events, even when a frame is split across chunks", () => {

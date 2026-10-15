@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { signOut } from "@/app/actions";
-import { getResolved } from "@/lib/auth/server";
-import { navFor } from "@/lib/auth/nav";
+import { getResolved, storeFor } from "@/lib/auth/server";
+import { navFor, withItNav } from "@/lib/auth/nav";
 import { ROLE_LABELS } from "@/lib/auth/roles";
 import { Button } from "@/components/ui/Button";
 import { Logo } from "@/components/ui/Logo";
@@ -17,7 +17,8 @@ export async function AppChrome({ children }: { children: React.ReactNode }) {
   const r = await getResolved();
   const session = r.kind === "ok" ? r.session : null;
   const signedIn = r.kind === "ok" || r.kind === "no_access";
-  const nav = session && !session.mustChangePassword ? navFor(session.user.role).map(({ label, href }) => ({ label, href })) : [];
+  const itOn = session && !session.mustChangePassword ? ((await storeFor(session).getWorkspace().catch(() => null))?.features.softwareTrack ?? false) : false;
+  const nav = session && !session.mustChangePassword ? withItNav(navFor(session.user.role), session.user.role, itOn).map(({ label, href }) => ({ label, href })) : [];
 
   return (
     <>

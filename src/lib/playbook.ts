@@ -2,7 +2,7 @@ import { SECTIONS } from "@/content/sections";
 import type { Section } from "@/content/types";
 import { EXTRA_SECTIONS } from "./playbookExt";
 
-/** The ported eleven sections, then the expansion's (mid-size, healthcare, Canada and the UAE). */
+/** The ported eleven sections, then the expansion's (mid-size, healthcare, Canada and the UAE, finding IT buyers). */
 export const PLAYBOOK: Section[] = [...SECTIONS, ...EXTRA_SECTIONS];
 
 /** Section 04 is the Kit Console, which is the home page. Every other section has its own page under /playbook. */

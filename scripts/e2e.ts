@@ -186,7 +186,7 @@ try {
   console.log("console: UAE, mid-size, Arabic build prompt, prices in AED");
 
   await op.goto(ob + "/playbook", { waitUntil: "load" });
-  assert.equal(await op.locator('main ul > li a[href^="/playbook/"]').count(), 13, "thirteen section cards plus the console card");
+  assert.equal(await op.locator('main ul > li a[href^="/playbook/"]').count(), 14, "fourteen section cards plus the console card");
   assert.equal(await op.locator('main ul > li a[href="/console"]').count(), 1);
   await op.getByRole("link", { name: /Read this section/ }).first().click();
   await op.waitForURL(/\/playbook\/math$/);
@@ -367,8 +367,8 @@ try {
 
   // The owner sees the BD's lead at once: nobody syncs anything.
   await op.goto(ob + "/leads", { waitUntil: "networkidle" });
-  assert.equal(await op.getByRole("link", { name: "Smith Roofing" }).count(), 1, "the owner sees the BD's lead straight away");
-  assert.equal(await op.getByRole("link", { name: "Cedar Line Fence Co" }).count(), 1);
+  assert.equal(await op.getByRole("link", { name: "Smith Roofing", exact: true }).count(), 1, "the owner sees the BD's lead straight away");
+  assert.equal(await op.getByRole("link", { name: "Cedar Line Fence Co", exact: true }).count(), 1);
   await op.goto(ob + "/team", { waitUntil: "networkidle" });
   assert.match(await op.locator('[role="region"][aria-label="Pipeline by BD"]').innerText(), /Ravi Rao/);
   // A second person is blocked from adding the same business, by name.
@@ -448,6 +448,90 @@ try {
   await tp.goto(tb + "/today", { waitUntil: "load" });
   await tp.waitForURL(/\/login/);
   console.log("owner: paused the BD, who was refused at the next click; turned them back on, and they sign in again");
+
+  // ---------------------------------------------------------------- Part 3: IT Prospects, a separate area behind its own switch
+  const itNav = (page: Page) => page.getByRole("navigation", { name: "Main" }).getByRole("link", { name: "IT Prospects" });
+  await op.goto(ob + "/platform", { waitUntil: "networkidle" });
+  assert.equal(await itNav(op).count(), 0, "IT Prospects is hidden while its switch is off");
+  await op.goto(ob + "/it", { waitUntil: "networkidle" });
+  await op.getByText("IT Prospects is switched off for this workspace.").waitFor();
+  assert.equal((await op.request.get(ob + "/api/it/finder")).status(), 404, "the IT finder answers 404 while switched off");
+  await op.goto(ob + "/platform/features", { waitUntil: "networkidle" });
+  await op.getByLabel(/IT Prospects/).check();
+  await op.getByRole("button", { name: "Save switches" }).click();
+  await op.getByText("Saved. Everyone gets the change now.").waitFor();
+  await op.goto(ob + "/platform", { waitUntil: "networkidle" });
+  await itNav(op).waitFor();
+  console.log("IT Prospects: hidden and refused while off; the super admin turned it on and it appears in the navigation");
+
+  await signIn(tp, tb, username, "ravi-second-password");
+  await tp.waitForURL(tb + "/today");
+  await itNav(tp).click();
+  await tp.waitForURL(tb + "/it");
+  await tp.getByRole("link", { name: "Signals inbox" }).click();
+  await tp.waitForURL(tb + "/it/signals");
+  const post = "Senior React Developer\nAcme Logistics · Austin, TX (Remote)\n3 days ago · 54 applicants\nWe're hiring a React developer to build our dispatch portal. Apply at https://acmelogistics.com/careers";
+  await tp.fill("#in-url", "https://www.linkedin.com/jobs/view/123");
+  await tp.fill("#in-text", post);
+  await tp.getByRole("button", { name: "Read it" }).click();
+  assert.equal(await tp.inputValue("#rv-company"), "Acme Logistics", "the company was read from the post");
+  assert.equal(await tp.inputValue("#rv-domain"), "acmelogistics.com", "the domain came from the careers link, not LinkedIn");
+  assert.equal(await tp.inputValue("#rv-type"), "dev_role");
+  assert.equal(await tp.inputValue("#rv-region"), "TX");
+  assert.match(await tp.inputValue("#rv-date"), /^\d{4}-\d{2}-\d{2}$/);
+  await tp.getByRole("button", { name: "Save the signal" }).click();
+  await tp.getByText("Saved “Acme Logistics” as a new prospect.").waitFor();
+  await tp.getByRole("link", { name: "Open the prospect" }).click();
+  await tp.getByRole("heading", { level: 1, name: "Acme Logistics" }).waitFor();
+  await tp.getByRole("region", { name: "Buying signals" }).locator("ol").getByText("Open developer role", { exact: true }).waitFor();
+  for (const label of ["Has budget", "Buys often", "Reachable", "Accepts an offshore team"]) await tp.getByLabel(label).check();
+  await tp.getByRole("button", { name: "Save the qualifier" }).click();
+  await tp.getByText("Qualifier saved.").waitFor();
+  await tp.reload({ waitUntil: "networkidle" });
+  await tp.getByText("5 / 6").waitFor();
+  await tp.selectOption("#it-stage", "qualified");
+  await tp.getByRole("button", { name: "Move", exact: true }).click();
+  await tp.getByText("Moved.").waitFor();
+  console.log("IT Prospects: a BD pasted a LinkedIn post, the inbox read company, domain, type, state and date; saved, qualified (5/6, hot) and moved");
+
+  await op.goto(ob + "/it/signals", { waitUntil: "networkidle" });
+  await op.fill("#in-url", "https://www.indeed.com/viewjob?jk=1");
+  await op.fill("#in-text", post);
+  await op.getByRole("button", { name: "Read it" }).click();
+  await op.getByRole("button", { name: "Save the signal" }).click();
+  await op.getByText("Already Ravi's prospect “Acme Logistics” (same website domain). Ask them to add this signal.").waitFor();
+  console.log("IT Prospects: the same company from the owner is refused, naming Ravi");
+
+  await tp.goto(tb + "/it/signals", { waitUntil: "networkidle" });
+  const itCsv = "Company,Website,Contact name,Title,Job URL,Date posted,State,Signal type\n" +
+    "Acme Logistics,acmelogistics.com,Dana Diaz,CTO,https://www.upwork.com/jobs/~9,2026-10-01,TX,Project post\n" +
+    "Bright Pixel Agency,brightpixel.agency,,,,,CO,\n";
+  await tp.setInputFiles("#it-csv", { name: "tracker.csv", mimeType: "text/csv", buffer: Buffer.from(itCsv) });
+  await tp.getByText("1 add · 1 add the signal · 0 skip: duplicate · 0 skip: error").waitFor();
+  await tp.getByRole("button", { name: "Apply: 2 rows" }).click();
+  await tp.getByText(/Added 1 prospect and 1 signal to existing ones/).waitFor();
+  await tp.goto(tb + "/it/prospects", { waitUntil: "networkidle" });
+  await tp.getByRole("link", { name: "Bright Pixel Agency" }).waitFor();
+  const itExport = await tp.request.get(tb + "/it/export.csv");
+  assert.equal(itExport.status(), 200);
+  const itText = await itExport.text();
+  assert.ok(itText.includes("Acme Logistics") && itText.includes("Bright Pixel Agency"), "both prospects are in the export");
+  assert.equal(await tp.locator("table").getByText("Owner Private Fencing").count(), 0);
+  await tp.goto(tb + "/it/search", { waitUntil: "networkidle" });
+  assert.ok((await tp.getByRole("link", { name: /Open the search/ }).count()) > 10, "search strings for every signal type");
+  await tp.goto(tb + "/leads", { waitUntil: "networkidle" });
+  assert.equal(await tp.getByText("Bright Pixel Agency").count(), 0, "IT prospects never show among the local leads");
+  console.log("IT Prospects: CSV dry run then apply (one new, one signal added to the existing prospect), list, export, search strings; leads untouched");
+
+  await op.goto(ob + "/platform/features", { waitUntil: "networkidle" });
+  await op.getByLabel(/IT Prospects/).uncheck();
+  await op.getByRole("button", { name: "Save switches" }).click();
+  await op.getByText("Saved. Everyone gets the change now.").waitFor();
+  await tp.goto(tb + "/it/prospects", { waitUntil: "networkidle" });
+  await tp.getByText("IT Prospects is switched off for this workspace.").waitFor();
+  assert.equal(await itNav(tp).count(), 0, "the navigation entry is gone again");
+  await tctx.clearCookies();
+  console.log("IT Prospects: switched off again; the area and its navigation entry disappear");
 
   // The clock: a session is open on day 13 and ended on day 14. Same database, same secret, a new start with the clock moved.
   await signIn(tp, tb, username, "ravi-second-password");

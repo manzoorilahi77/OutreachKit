@@ -1,4 +1,4 @@
-// "Today's limit": a ceiling on NEW no-website businesses saved per calendar day (local time), counted from MySQL.
+// "Today's limit": a ceiling on NEW businesses saved per calendar day (local time), with or without a website, counted from MySQL.
 
 export const LIMIT_OPTIONS = [20, 50, 70, 100] as const;
 export const DEFAULT_LIMIT = 50;

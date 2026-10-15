@@ -96,16 +96,40 @@ export async function seedFullDemo(pool: Pool): Promise<{ plan: [user: string, l
   const kitId = (await ravi.listKits())[0]!.id;
   const leadId = (await ravi.listLeads()).find((l) => l.stage === "replied")!.id;
   const meeraLead = (await createStore({ username: "meera", role: "researcher", team: "team-a" }).listLeads())[0]!.id;
+  const itId = await seedItProspects(pool);
   return {
     plan: [
       ["owner", "super-admin", ["/platform", "/platform/users", "/platform/workspace", "/platform/content", "/platform/features", "/platform/audit"]],
       ["ada", "admin", ["/admin", "/admin/users", "/admin/teams", "/admin/settings", "/admin/audit"]],
-      ["mia", "manager", ["/team", "/queue", "/handover?from=ravi", "/kits", "/leads", `/leads/${leadId}`, "/review", "/playbook/progress", "/reports"]],
-      ["ravi", "bd", ["/today", "/console", "/kits", `/kits/${kitId}`, `/kits/${kitId}?tab=leads`, `/kits/${kitId}?tab=activity`, `/kits/${kitId}?tab=settings`, "/leads", `/leads/${leadId}`, "/leads/new", "/leads/import", "/review", "/playbook", "/playbook/math", "/account", "/account/password"]],
-      ["meera", "researcher", ["/sourcing", "/sourcing/finder", "/leads", `/leads/${meeraLead}`, "/leads/new", "/console", "/reports"]],
+      ["mia", "manager", ["/team", "/queue", "/handover?from=ravi", "/kits", "/leads", `/leads/${leadId}`, "/review", "/playbook/progress", "/reports", "/it", "/it/prospects", `/it/prospects/${itId}`]],
+      ["ravi", "bd", ["/today", "/console", "/kits", `/kits/${kitId}`, `/kits/${kitId}?tab=leads`, `/kits/${kitId}?tab=activity`, `/kits/${kitId}?tab=settings`, "/leads", `/leads/${leadId}`, "/leads/new", "/leads/import", "/review", "/playbook", "/playbook/math", "/account", "/account/password", "/it", "/it/prospects", `/it/prospects/${itId}`, "/it/prospects/new", "/it/signals", "/it/finder", "/it/search"]],
+      ["meera", "researcher", ["/sourcing", "/sourcing/finder", "/leads", `/leads/${meeraLead}`, "/leads/new", "/console", "/reports", "/it", "/it/finder"]],
       ["vic", "viewer", ["/reports", "/playbook", "/kits"]],
       ["zed", "paused", ["/no-access"]],
       ["newbie", "first-sign-in", ["/account/password"]],
     ],
   };
+}
+
+/** IT Prospects switched on, with a few prospects: Ravi's buyer with a fresh signal (assigned to Asha), Meera's agency, an old signal. Returns Ravi's prospect. */
+export async function seedItProspects(pool: Pool): Promise<string> {
+  const createStore = (a: Actor | null) => createMySqlStore(a, pool);
+  const owner = createStore({ username: "owner", role: "super_admin", team: null });
+  const ws = await owner.getWorkspace();
+  await owner.saveWorkspace({ ...ws, features: { ...ws.features, softwareTrack: true } });
+  const today = todayIso();
+  const base = { companyDomain: "", websiteUrl: "", linkedinUrl: "", contactName: "", contactTitle: "", email: "", phone: "", whatsapp: "", city: "", region: "", country: "US" as const, teamSize: "", notes: "" };
+  const ravi = createStore({ username: "ravi", role: "bd", team: "team-a" }).it();
+  const acme = await ravi.createProspect({ ...base, segment: "buyer", company: "Acme Logistics", companyDomain: "acmelogistics.com", websiteUrl: "https://acmelogistics.com/", contactName: "Dana Diaz", contactTitle: "VP Engineering", city: "Austin", region: "TX", teamSize: "11–50" }, {
+    source: "signal", signal: { type: "dev_role", url: "https://www.linkedin.com/jobs/view/1", quote: "Senior React Developer (remote, US): build our dispatch portal.", signalDate: today, source: "LinkedIn" },
+  });
+  await ravi.setQualifier(acme.id, { budget: true, buys_often: true, reachable: true, offshore_ok: true, proof_fit: false, trigger: false });
+  await ravi.moveStage(acme.id, "qualified");
+  await ravi.createProspect({ ...base, segment: "buyer", company: "Harbor City Permits Office", city: "Tampa", region: "FL" }, {
+    source: "signal", signal: { type: "tender", url: "https://sam.gov/opp/1", quote: "RFP: permit tracking web application.", signalDate: "2026-01-05", source: "SAM.gov" },
+  });
+  const meera = createStore({ username: "meera", role: "researcher", team: "team-a" }).it();
+  await meera.createProspect({ ...base, segment: "agency", company: "Pixel Forge Studio", companyDomain: "pixelforge.dev", websiteUrl: "https://pixelforge.dev/", phone: "5125550199", city: "Austin", region: "TX" }, { source: "manual" });
+  await createStore({ username: "mia", role: "manager", team: "team-a" }).it().assign(acme.id, "asha");
+  return acme.id;
 }

@@ -151,5 +151,14 @@ describe("lead form", () => {
     [{ business_name: "x", google_rating: "9" }],
     [{ business_name: "x", followers: "-3" }],
     [{ business_name: "x", last_post_date: "10/01/2026" }],
+    [{ business_name: "x", whatsapp: "call me" }],
   ])("rejects %j", (bad) => expect(parseLeadForm(fd(bad)).ok).toBe(false));
+  it("keeps a WhatsApp number as digits, and leaves the field out when the form has none", () => {
+    const withWa = parseLeadForm(fd({ business_name: "x", whatsapp: "+1 (214) 555-0147" }));
+    expect(withWa.ok && withWa.value.whatsapp).toBe("12145550147");
+    const cleared = parseLeadForm(fd({ business_name: "x", whatsapp: "" }));
+    expect(cleared.ok && cleared.value.whatsapp).toBe("");
+    const absent = parseLeadForm(fd({ business_name: "x" }));
+    expect(absent.ok && "whatsapp" in absent.value).toBe(false);
+  });
 });

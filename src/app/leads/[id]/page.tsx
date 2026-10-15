@@ -21,7 +21,7 @@ import { isId } from "@/lib/store/paths";
 export const metadata: Metadata = { title: "Lead" };
 
 const FIELDS: [label: string, key: string][] = [
-  ["Owner first name", "owner_first_name"], ["Phone", "phone"], ["Email", "email"], ["Instagram", "instagram_handle"], ["Facebook", "facebook_page"],
+  ["Owner first name", "owner_first_name"], ["Phone", "phone"], ["WhatsApp", "whatsapp"], ["Email", "email"], ["Instagram", "instagram_handle"], ["Facebook", "facebook_page"],
   ["Google Maps", "google_maps_url"], ["Website", "website_url"], ["Site verdict", "site_verdict"], ["Google reviews", "google_review_count"],
   ["Google rating", "google_rating"], ["Followers", "followers"], ["Last post", "last_post_date"], ["Demo", "demo_url"], ["First contact", "first_contact_date"],
 ];

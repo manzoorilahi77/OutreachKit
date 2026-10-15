@@ -120,16 +120,16 @@ ol.steps li{margin-bottom:6px}
 </style>
 
 <header class="top"><div class="in">
-  <div class="eyebrow">Famysys Outreach Kit · design decision page · 11 Oct 2026</div>
+  <div class="eyebrow">Famysys Outreach Kit · design decision page · 11 Oct 2026 · updated 15 Oct 2026</div>
   <h1>Outreach Kit Role System</h1>
-  <p>Roles, permissions, the user flows and the after-save screens that wrap the Kit Console in a team system. Version 3: username and password accounts you create, a 14-day sign-in, and every teammate running the app on their own Mac or Windows laptop, with no database. Work moves between laptops as files through your private GitHub repo.</p>
+  <p>Roles, permissions, the user flows and the after-save screens that wrap the Kit Console in a team system. Originally scoped 11 Oct as "version 3": username and password accounts, a 14-day sign-in, every teammate running the app on their own laptop with no database, work moving between laptops as files through a private GitHub repo. That shipped, then was superseded two days later. This update rewrites every passage below to match what is actually running: <strong>one server, one MySQL database</strong>, on a Hostinger VPS.</p>
   <div class="rule"></div>
 </div></header>
 
 <div class="wrap">
 <nav class="idx" aria-label="On this page">
-  <a href="#today">What exists today</a>
-  <a href="#local">Files and GitHub sync</a>
+  <a href="#status">Status</a>
+  <a href="#server">One server, one database</a>
   <a href="#accounts">Accounts and sessions</a>
   <a href="#roles">The six roles</a>
   <a href="#matrix">Who can do what</a>
@@ -138,89 +138,55 @@ ol.steps li{margin-bottom:6px}
   <a href="#save">After you save a kit</a>
   <a href="#data">Where the data lives</a>
   <a href="#decide">Decisions</a>
-  <a href="#prompt">Prompt E</a>
+  <a href="#status-2">What shipped</a>
 </nav>
 <main>
 
-<section id="today">
-  <h2>What exists today</h2>
-  <p class="lead">From reading the repo at commit <code>8d465f2</code> plus the uncommitted lead finder. The Kit Console is solid; the gaps are all about people and ownership.</p>
+<section id="status">
+  <h2>Status: this page is updated to match production</h2>
+  <p class="lead">The sections below keep this page's original roles, flows and after-save screens, but every passage about files, laptops and GitHub Sync has been rewritten. Here is what actually happened, in order.</p>
   <div class="grid2">
-    <div class="find"><h4>Anyone can sign in</h4><p>Magic link to any email. No invite, no role, no team. Signed out, the console and playbook work with bracketed placeholders.</p><span class="where">src/app/actions.ts · requestSignIn</span></div>
-    <div class="find"><h4>Every row is a silo</h4><p>RLS is <code>owner_id = auth.uid()</code> on kits, leads and lead_events. A manager can't see a rep's pipeline, and nobody can hand over a leaver's leads.</p><span class="where">supabase/migrations/20261001000000_init.sql</span></div>
-    <div class="find"><h4>A saved kit is five inputs</h4><p>Category, device, state, city, direction and a date. No name, status, territory or progress. After saving, the only feedback is "Saved. Open it from your kits".</p><span class="where">src/components/kit/SaveKit.tsx · src/app/kits/page.tsx</span></div>
-    <div class="find"><h4>Two reps can work the same city</h4><p>Nothing stops two people saving Roofing in Dallas, TX and messaging the same businesses.</p><span class="where">kits table has no uniqueness or claim</span></div>
-    <div class="find"><h4>Company details live on each person</h4><p>Studio and demo domain are in <code>profiles</code>, so every rep types the company's details and they can drift.</p><span class="where">profiles.studio · profiles.demo_domain</span></div>
-    <div class="find"><h4>The lead finder has no owner</h4><p>MySQL <code>scraped_businesses</code> is global. "Move to Leads" puts the row in whoever clicked. It stays local-only.</p><span class="where">mysql/schema.sql · src/components/scrape/actions.ts</span></div>
+    <div class="find"><h4>11 Oct 2026 — this page written</h4><p>Proposed a no-database design: username/password accounts, 14-day sessions, each teammate running the app on their own Mac or Windows laptop, work moved between laptops as files through a private GitHub repo.</p><span class="where">docs/source/roles-system.html, first version</span></div>
+    <div class="find"><h4>Phase 13 — shipped as designed</h4><p>Store, Sync, roles and the six-role permission model built exactly as this page specified, on <code>team/</code> files.</p><span class="where">src/lib/store/fileStore.ts</span></div>
+    <div class="find"><h4>13 Oct 2026 — moved to MySQL on Hostinger</h4><p>The file-and-Sync layer was replaced: one server, one MySQL database. Teammates open a URL and sign in — they never clone the repo, install anything, pull, push or sync. <code>fileStore.ts</code> stays only as the reference implementation and the one-time import source (<code>pnpm db:import-team</code>); <code>mysqlStore.ts</code> is what the app runs on.</p><span class="where">commit 404840b · src/lib/store/mysqlStore.ts</span></div>
+    <div class="find"><h4>15 Oct 2026 — IT Prospects added</h4><p>A separate <code>/it</code> area with its own <code>it_*</code> MySQL tables and <code>it.*</code> permissions, behind the <code>features.softwareTrack</code> switch. It never touches leads, the lead finder's tables or the Board.</p><span class="where">src/lib/it/ · src/lib/store/itMysql.ts</span></div>
+    <div class="find"><h4>15 Oct 2026 — nav reordered</h4><p>IT Prospects moved from just-before-Playbook to right after Kits in every role's navigation, so it reads as a sourcing tool next to Kits rather than a reference item next to Playbook.</p><span class="where">src/lib/auth/nav.ts · withItNav</span></div>
   </div>
-  <p style="margin-top:14px">Prompt D (software track) is written but not run. It assumes Supabase tables, which is why the role phase runs first and amends it.</p>
+  <p class="sample">The <code>sync.run</code> permission is kept in the matrix below and in <code>docs/roles.md</code> but does nothing: the Sync feature described in the next section no longer exists. Removing the permission key is a separate decision nobody has made yet.</p>
 </section>
 
-<section id="local">
-  <h2>Running it on laptops: files and GitHub, no database</h2>
-  <p class="lead">Nobody installs a database. Each person's work is saved as plain files in their own folder inside the project, and the app's Sync button moves those files through your private GitHub repo. A teammate needs only Node, Git and a GitHub account, and their Claude sets those up.</p>
+<section id="server">
+  <h2>Running it: one server, one database</h2>
+  <p class="lead">No per-laptop installs and no GitHub sync. The app runs once, on a Hostinger VPS, behind Nginx or Caddy with HTTPS, under pm2 or systemd. You and every teammate open the same URL in a browser and sign in — only the owner has the code.</p>
   <figure><div class="dg"><pre class="mermaid">
 flowchart LR
-  subgraph OW["Your Mac: Super Admin"]
-    O1["App on localhost:3000"]
-    O2["team/users, teams, workspace"]
-    O3["team/data/you"]
+  subgraph VPS["Hostinger VPS"]
+    APP["Outreach Kit — one Node server"]
+    DB[("MySQL — one database")]
   end
-  subgraph GH["Private GitHub repo"]
-    R1["Code"]
-    R2["team folder: every person's files"]
-  end
-  subgraph BD["BD laptop, Mac or Windows"]
-    B1["App on localhost:3000"]
-    B3["team/data/ravi"]
-  end
-  subgraph RS["Researcher laptop"]
-    S1["App on localhost:3000"]
-    S3["team/data/meera"]
-  end
-  O1 -- "writes accounts" --> O2
-  O1 -- "writes own work" --> O3
-  O2 -- "Sync pushes" --> R2
-  O3 -- "Sync pushes" --> R2
-  R1 -- "pull: code updates" --> B1
-  R2 -- "pull: accounts, everyone's files" --> B1
-  B1 -- "writes only" --> B3
-  B3 -- "Sync pushes" --> R2
-  S1 -- "writes only" --> S3
-  S3 -- "Sync pushes" --> R2
-  R2 -- "pull: team's work" --> O1
+  O["You, browser"] -- "https://..." --> APP
+  B["BD, browser"] -- "https://..." --> APP
+  R["Researcher, browser"] -- "https://..." --> APP
+  APP -- "reads and writes" --> DB
 </pre></div>
-  <figcaption>Each app writes only its own person's folder, plus the account files for admins, so two people's syncs never collide. You push code the same way you do today, and teammates receive it with their next sync.</figcaption></figure>
-  <h3>Who writes which files</h3>
-  <div class="tw"><table>
-    <thead><tr><th scope="col">Path in the repo</th><th scope="col">Holds</th><th scope="col">Written by</th></tr></thead>
-    <tbody>
-      <tr><th scope="row"><code>team/users/&lt;username&gt;.json</code></th><td>Role, team, status, temporary password hash, revision number</td><td>Super Admin, Admin</td></tr>
-      <tr><th scope="row"><code>team/teams.json</code>, <code>team/workspace.json</code></th><td>Teams and managers; studio, demo domain, based line, feature switches</td><td>Super Admin, Admin</td></tr>
-      <tr><th scope="row"><code>team/data/&lt;username&gt;/</code></th><td>Their saved kits, leads, events, hand-offs, playbook reads, lead finder results, own password hash</td><td>Only that person's app</td></tr>
-      <tr><th scope="row"><code>.local/</code> (never pushed)</th><td>This laptop's session secret and sync status</td><td>The app</td></tr>
-    </tbody>
-  </table></div>
-  <h3>When it syncs</h3>
-  <p>When the app starts, every 30 minutes while someone is signed in, and when they press Sync. It pulls, saves their folder to git, and pushes. If GitHub sign-in is missing or two changes clash, it stops without losing anything and shows the sentence to say to Claude, such as "Fix the Outreach Kit sync". Sync never pushes code, so a teammate can't change the app by accident.</p>
-  <h3>What this setup can't do</h3>
+  <figcaption>The data lives only in the database, and the app returns each person only what their role allows. There is nothing on a teammate's machine to lose, sync or hand back.</figcaption></figure>
+  <h3>What changed from the files-and-Sync design</h3>
   <div class="grid2">
-    <div class="find"><h4>Logins identify people; they don't lock data</h4><p>Every laptop that pulls gets every folder. The app shows a BD only their own leads, but the files can be opened in any text editor. You accepted this.</p></div>
-    <div class="find"><h4>Changes arrive at the next sync</h4><p>A reset, suspension or new account reaches a teammate's laptop when it next syncs: at start, within 30 minutes, or on the button.</p></div>
-    <div class="find"><h4>Removing someone fully means GitHub</h4><p>Remove their access to the repo, then disable the account. They keep whatever was already on their laptop.</p></div>
-    <div class="find"><h4>Lead contacts stay in git history</h4><p>Business phone numbers and emails live in the repo's history for good. Keep the repo private.</p></div>
+    <div class="find"><h4>No more "every laptop has every file"</h4><p>The old design accepted that logins identify people but don't lock data, because every laptop pulled every folder. A single shared database removes that: a BD's browser is only ever shown their own leads by the server.</p></div>
+    <div class="find"><h4>Changes are immediate, not "next sync"</h4><p>A reset, suspension, role change or hand-off takes effect on a person's next click, not at a 30-minute sync or a button press.</p></div>
+    <div class="find"><h4>Removing someone is one action</h4><p>Disable the account. There's no separate "remove GitHub repo access" step, and nothing was ever copied onto a laptop to begin with.</p></div>
+    <div class="find"><h4>Store stays the seam</h4><p><code>src/lib/store/</code> is still the only code that touches stored data — pages and actions call <code>createStore(actor)</code>, never SQL or <code>fs</code> directly. That seam is why swapping files for MySQL didn't touch the screens below.</p></div>
   </div>
-  <p style="margin-top:12px">When you get a server later, a database takes the place of the file storage. All file reads and writes go through one Store module, so the screens don't change.</p>
 </section>
 
 <section id="accounts">
   <h2>Accounts and sessions</h2>
-  <p class="lead">There's no sign-up page and no email. You (or an admin) create every account, sync, and share the login in chat.</p>
+  <p class="lead">There's no sign-up page and no email. You (or an admin) create every account in Users and share the login in chat; it works for them at their very next sign-in.</p>
   <div class="grid2">
-    <div class="find"><h4>Username and password</h4><p>Usernames are 3–30 characters: lower-case letters, digits, dot and underscore. The username is also the name of that person's folder.</p></div>
+    <div class="find"><h4>Username and password</h4><p>Usernames are 3–30 characters: lower-case letters, digits, dot and underscore, unique in the database.</p></div>
     <div class="find"><h4>Temporary password, shown once</h4><p>The app makes it, saves only a scrambled hash of it, and shows it once with a Copy button. At first sign-in the person sets their own (10+ characters).</p></div>
-    <div class="find"><h4>Signed in for 14 days</h4><p>Counted from sign-in, then they sign in again. Signing out ends it at once.</p></div>
-    <div class="find"><h4>Admin actions end sessions</h4><p>Reset, suspend, disable, enable and role change raise the account's revision number. A laptop holding an older number signs that person out at its next sync.</p></div>
+    <div class="find"><h4>Signed in for 14 days</h4><p>Counted from sign-in, then they sign in again. Signing out ends it at once. The session is a signed, <code>HttpOnly</code> cookie, re-checked against the user row on every request.</p></div>
+    <div class="find"><h4>Admin actions end sessions at once</h4><p>Reset, suspend, disable, enable and role change are re-checked on the account's very next request — there's no laptop to wait on and nothing to sync.</p></div>
   </div>
   <h3>Account states</h3>
   <figure><div class="dg"><pre class="mermaid">
@@ -234,7 +200,7 @@ stateDiagram-v2
   Suspended --> Disabled: disable, after handover
   Disabled --> Active: enable
 </pre></div>
-  <figcaption>Suspended is a pause: the person keeps their leads. Disabled is for someone who has left: the app won't disable them until their open leads are handed over. Accounts are never deleted, so history stays. Every change reaches other laptops at their next sync.</figcaption></figure>
+  <figcaption>Suspended is a pause: the person keeps their leads. Disabled is for someone who has left: the app won't disable them until their open leads are handed over. Accounts are never deleted, so history stays. Every change takes effect at the account's next request — there's no sync to wait for.</figcaption></figure>
   <h3>Who can act on whom</h3>
   <div class="tw"><table>
     <thead><tr><th scope="col">Acting person</th><th scope="col">Create, reset password, suspend, disable, enable, change role</th><th scope="col">Never</th></tr></thead>
@@ -253,7 +219,7 @@ stateDiagram-v2
     <div class="role"><div class="rh"><h4>Super Admin</h4><span class="key">super_admin</span></div>
       <p>The owner: you. Sees and controls everything.</p>
       <dl><dt>Does</dt><dd>Creates every kind of account and shares the login, resets passwords, suspends, disables and enables anyone, approves category kits and segments, turns features on, reads the audit log.</dd>
-      <dt>Never</dt><dd>Gets created from the app. That's you, set up once with <code>pnpm team:init</code>.</dd>
+      <dt>Never</dt><dd>Gets created from the app. That's you, set up once with <code>pnpm db:init-owner</code>.</dd>
       <dt>Home</dt><dd><code>/platform</code></dd><dt>Typical</dt><dd>you only</dd></dl></div>
     <div class="role"><div class="rh"><h4>Admin</h4><span class="key">admin</span></div>
       <p>Runs the team day to day when you're not there.</p>
@@ -286,7 +252,7 @@ stateDiagram-v2
 
 <section id="matrix">
   <h2>Who can do what</h2>
-  <p class="lead">Each cell is a scope, not a yes/no. The same table becomes <code>permissions.ts</code>; every page and action checks it. With files on every laptop, this decides what the app shows and allows, not what's on disk.</p>
+  <p class="lead">Each cell is a scope, not a yes/no. The same table is <code>permissions.ts</code>; every page calls <code>requirePerm()</code> and every server action <code>checkPerm()</code> against it. The database holds everything; this decides what each request is allowed to read or write.</p>
   <div class="legend">
     <span><i class="s s-all">All</i> whole team</span>
     <span><i class="s s-team">Team</i> their team</span>
@@ -326,24 +292,32 @@ stateDiagram-v2
       <tr><th scope="row">Mark sections required, see who read them</th><td><i class="s s-all">All</i></td><td><i class="s s-all">All</i></td><td><i class="s s-team">Team</i></td><td><i class="s s-no">—</i></td><td><i class="s s-no">—</i></td><td><i class="s s-no">—</i></td></tr>
       <tr><th scope="row">Approve category kits and segments</th><td><i class="s s-all">All</i></td><td><i class="s s-no">—</i></td><td><i class="s s-no">—</i></td><td><i class="s s-no">—</i></td><td><i class="s s-no">—</i></td><td><i class="s s-no">—</i></td></tr>
       <tr><th scope="row">Audit log</th><td><i class="s s-all">All</i></td><td><i class="s s-all">All</i></td><td><i class="s s-no">—</i></td><td><i class="s s-no">—</i></td><td><i class="s s-no">—</i></td><td><i class="s s-no">—</i></td></tr>
-      <tr><th scope="row">Sync with GitHub</th><td><i class="s s-own">Own</i> + accounts</td><td><i class="s s-own">Own</i> + accounts</td><td><i class="s s-own">Own</i></td><td><i class="s s-own">Own</i></td><td><i class="s s-own">Own</i></td><td><i class="s s-own">Own</i></td></tr>
+      <tr><th scope="row">Sync with GitHub <em style="font-style:normal;color:var(--muted)">(kept, does nothing — the Sync feature is gone)</em></th><td><i class="s s-own">Own</i> + accounts</td><td><i class="s s-own">Own</i> + accounts</td><td><i class="s s-own">Own</i></td><td><i class="s s-own">Own</i></td><td><i class="s s-own">Own</i></td><td><i class="s s-own">Own</i></td></tr>
+      <tr class="grp"><th colspan="7">IT Prospects (a separate area, shown while its switch is on)</th></tr>
+      <tr><th scope="row">See IT prospects and their signals</th><td><i class="s s-all">All</i></td><td><i class="s s-all">All</i> except Super Admin's</td><td><i class="s s-team">Team</i></td><td><i class="s s-own">Own</i></td><td><i class="s s-own">Own</i></td><td><i class="s s-no">—</i></td></tr>
+      <tr><th scope="row">Add prospects and signals, import a CSV (duplicates blocked for everyone)</th><td><i class="s s-own">Own</i></td><td><i class="s s-own">Own</i></td><td><i class="s s-own">Own</i></td><td><i class="s s-own">Own</i></td><td><i class="s s-own">Own</i></td><td><i class="s s-no">—</i></td></tr>
+      <tr><th scope="row">Edit, qualify, move stage (owner or assignee)</th><td><i class="s s-own">Own</i></td><td><i class="s s-own">Own</i></td><td><i class="s s-own">Own</i></td><td><i class="s s-own">Own</i></td><td><i class="s s-own">Own</i></td><td><i class="s s-no">—</i></td></tr>
+      <tr><th scope="row">Assign a prospect to someone</th><td><i class="s s-all">All</i></td><td><i class="s s-all">All</i> except Super Admin's</td><td><i class="s s-team">Team</i></td><td><i class="s s-no">—</i></td><td><i class="s s-no">—</i></td><td><i class="s s-no">—</i></td></tr>
+      <tr><th scope="row">Comment on a prospect</th><td><i class="s s-all">All</i></td><td><i class="s s-all">All</i> except Super Admin's</td><td><i class="s s-team">Team</i></td><td><i class="s s-own">Own</i></td><td><i class="s s-own">Own</i></td><td><i class="s s-no">—</i></td></tr>
+      <tr><th scope="row">Export prospects as CSV</th><td><i class="s s-all">All</i></td><td><i class="s s-all">All</i> except Super Admin's</td><td><i class="s s-team">Team</i></td><td><i class="s s-own">Own</i></td><td><i class="s s-no">—</i></td><td><i class="s s-no">—</i></td></tr>
+      <tr><th scope="row">Run the IT finder</th><td><i class="s s-own">Own</i></td><td><i class="s s-own">Own</i></td><td><i class="s s-own">Own</i></td><td><i class="s s-own">Own</i></td><td><i class="s s-own">Own</i></td><td><i class="s s-no">—</i></td></tr>
     </tbody>
   </table></div>
-  <p class="sample">Super Admin and Admin can also sell: their own kits and leads sit in their own folder like anyone else's. An Admin sees everyone's leads and lead reports, including their own, except the ones the Super Admin created. A Manager's own leads reach a BD through Hand over leads; a Researcher's wait in the unassigned queue.</p>
+  <p class="sample">Super Admin and Admin can also sell: their own kits and leads are rows they own like anyone else's. An Admin sees everyone's leads and lead reports, including their own, except the ones the Super Admin created. A Manager's own leads reach a BD through Hand over leads; a Researcher's wait in the unassigned queue.</p>
 </section>
 
 <section id="nav">
   <h2>Screens per role</h2>
-  <p class="lead">The Kit Console, Playbook, Kits and Leads stay the same pages. What changes is which ones each person sees, what they land on, and how much data each one shows. Every role also has the Sync control in the header.</p>
+  <p class="lead">The Kit Console, Playbook, Kits and Leads stay the same pages. What changes is which ones each person sees, what they land on, and how much data each one shows. IT Prospects appears right after Kits, for every role with <code>it.view</code>, only while the workspace's IT Prospects switch is on.</p>
   <div class="tw"><table>
     <thead><tr><th scope="col">Role</th><th scope="col">Lands on</th><th scope="col">Navigation</th></tr></thead>
     <tbody>
-      <tr><th scope="row">Super Admin</th><td><code>/platform</code></td><td>Users · Workspace details · Content review · Feature switches · Audit · everything an Admin sees</td></tr>
-      <tr><th scope="row">Admin</th><td><code>/admin</code> overview</td><td>Overview · Kits · Leads · Unassigned queue · Users · Teams · Reports · Playbook · Settings · Audit</td></tr>
-      <tr><th scope="row">Manager</th><td><code>/team</code></td><td>Team today · Kit Console · Team kits · Team leads · Unassigned queue · Weekly review · Playbook progress · Playbook</td></tr>
-      <tr><th scope="row">BD</th><td><code>/today</code></td><td>Today · Kit Console · My kits · My leads · Weekly review · Playbook · My password</td></tr>
-      <tr><th scope="row">Researcher</th><td><code>/sourcing</code></td><td>Sourcing · Lead finder · Kit Console (build only) · My sourced leads · Playbook</td></tr>
-      <tr><th scope="row">Viewer</th><td><code>/reports</code></td><td>Reports · Playbook</td></tr>
+      <tr><th scope="row">Super Admin</th><td><code>/platform</code></td><td>Users · Workspace details · Content review · Feature switches · Audit · Overview · Kits · <strong style="font-weight:500;color:var(--head)">IT Prospects</strong> · Leads · Unassigned queue · Teams · Reports · Playbook</td></tr>
+      <tr><th scope="row">Admin</th><td><code>/admin</code> overview</td><td>Overview · Kits · <strong style="font-weight:500;color:var(--head)">IT Prospects</strong> · Leads · Unassigned queue · Users · Teams · Reports · Playbook · Settings · Audit</td></tr>
+      <tr><th scope="row">Manager</th><td><code>/team</code></td><td>Team today · Kit Console · Team kits · <strong style="font-weight:500;color:var(--head)">IT Prospects</strong> · Team leads · Unassigned queue · Weekly review · Playbook progress · Playbook</td></tr>
+      <tr><th scope="row">BD</th><td><code>/today</code></td><td>Today · Kit Console · My kits · <strong style="font-weight:500;color:var(--head)">IT Prospects</strong> · My leads · Weekly review · Playbook · My password</td></tr>
+      <tr><th scope="row">Researcher</th><td><code>/sourcing</code></td><td>Sourcing · Lead finder · Kit Console (build only) · My sourced leads · <strong style="font-weight:500;color:var(--head)">IT Prospects</strong> · Playbook</td></tr>
+      <tr><th scope="row">Viewer</th><td><code>/reports</code></td><td>Reports · Playbook — no <code>it.view</code>, so IT Prospects never appears</td></tr>
     </tbody>
   </table></div>
   <h3>The playbook, per role</h3>
@@ -361,57 +335,53 @@ stateDiagram-v2
 
 <section id="flows">
   <h2>User flows</h2>
-  <p class="lead">Seven flows cover the whole system. Each caption says what it settles.</p>
+  <p class="lead">Six flows cover the whole system — the original "Sync" flow no longer exists, folded into the others below. Each caption says what it settles.</p>
 
   <h3>1 · Your one-time setup and creating an account</h3>
   <figure><div class="dg"><pre class="mermaid">
 flowchart TD
-  A["pnpm team:init, once: workspace and your super admin login"] --> B["Sign in, open Users"]
+  A["pnpm db:migrate, once: create the schema"] --> A2["pnpm db:init-owner, once: your Super Admin login"]
+  A2 --> B["Sign in, open Users"]
   B --> C["Create user: name, username, role, team"]
   C --> D["Temporary password shown once, Copy"]
-  D --> E["Press Sync: account file goes to GitHub"]
-  E --> F["On GitHub, add their account to the private repo"]
-  F --> G["Send them: username, temporary password, and: ask Claude to set up and run the Outreach Kit"]
-  G --> H["Later accounts: create, Sync, send. No code push needed"]
+  D --> E["Send them: the app's URL, username, temporary password"]
+  E --> G["They open the URL and sign in. Nothing to install, nothing to clone"]
 </pre></div>
-  <figcaption>Creating an account changes files, not code, so Sync carries it. Teammates who already have the app get it at their next sync.</figcaption></figure>
+  <figcaption>Creating an account is one row written to MySQL. It's live for them the moment you create it — no push, no GitHub, no code change.</figcaption></figure>
 
-  <h3>2 · A teammate's first run, done by their Claude</h3>
+  <h3>2 · A teammate's first run</h3>
   <figure><div class="dg"><pre class="mermaid">
 sequenceDiagram
   actor T as Teammate
-  participant C as Their Claude
-  participant PC as Their Mac or Windows PC
-  participant GH as GitHub
-  T->>C: Set up and run the Outreach Kit
-  C->>C: Reads CLAUDE.md, teammate section
-  C->>PC: Install Git, Node, pnpm if missing
-  C->>GH: Clone the repo, GitHub sign-in in browser
-  C->>PC: pnpm install, Chromium if they use the finder
-  C->>PC: pnpm dev
-  PC->>GH: Pulls latest code and accounts
-  C-->>T: Open localhost:3000 and sign in
-  T->>PC: Username and temporary password
-  PC-->>T: Set your own password, then your home page
+  participant B as Their browser
+  participant APP as Outreach Kit (Hostinger VPS)
+  T->>B: Open the URL you sent
+  B->>APP: GET /login
+  T->>B: Username and temporary password
+  B->>APP: Sign in
+  APP-->>T: Set your own password, then your home page
 </pre></div>
-  <figcaption>The teammate types one sentence. Everything their Claude needs is in <code>CLAUDE.md</code>, with Mac and Windows steps side by side.</figcaption></figure>
+  <figcaption>No Git, no Node, no Claude, no clone. A teammate's "first run" is opening a bookmark.</figcaption></figure>
 
   <h3>3 · Sign-in and the 14-day session</h3>
   <figure><div class="dg"><pre class="mermaid">
 flowchart TD
-  A([Open localhost:3000]) --> S{"Signed in under 14 days ago, account unchanged?"}
-  S -- yes --> R
+  A([Open the app's URL]) --> S{"Valid signed session cookie?"}
+  S -- yes --> RQ["Re-check the user row on this request"]
   S -- no --> L["Login: username and password"]
-  L --> C{"Match, and account active?"}
+  L --> LIM{"5 failed sign-ins for this username in 15 min?"}
+  LIM -- yes --> LK["Locked: try again later"]
+  LIM -- no --> C{"Match, and account active?"}
   C -- no --> N["One message: don't match, or not active"]
   N --> L
-  C -- yes --> K["14-day session starts"]
-  K --> P{"Temporary password?"}
-  P -- yes --> CP["Set own password"]
-  CP --> R
-  P -- no --> R{"Account state"}
+  C -- yes --> K["14-day session cookie set"]
+  RQ --> R{"Account state, right now"}
+  K --> R
   R -- "suspended or disabled" --> NA["No-access page with the reason"]
-  R -- active --> H{Role}
+  R -- active --> P{"Temporary password?"}
+  P -- yes --> CP["Set own password"]
+  CP --> H
+  P -- no --> H{Role}
   H -- Super Admin --> P1["/platform"]
   H -- Admin --> AD["/admin"]
   H -- Manager --> TM["/team"]
@@ -419,48 +389,27 @@ flowchart TD
   H -- Researcher --> SR["/sourcing"]
   H -- Viewer --> RP["/reports"]
 </pre></div>
-  <figcaption>"Account unchanged" means the revision number in the synced account file matches the session's. A reset or suspension you sync ends their session when their laptop next syncs.</figcaption></figure>
+  <figcaption>Every request re-reads the user row, not just a cached session. A reset, pause, turn-off or role change ends the session at the viewer's next click — there's nothing to sync.</figcaption></figure>
 
-  <h3>4 · Sync</h3>
-  <figure><div class="dg"><pre class="mermaid">
-flowchart TD
-  T["App start, every 30 min, or Sync button"] --> P["Pull from GitHub"]
-  P --> PC{"Pulled cleanly?"}
-  PC -- no --> HELP["Stop, keep local files, show: say Fix the Outreach Kit sync to Claude"]
-  PC -- yes --> ST["Stage only my folder, plus account files if admin"]
-  ST --> CH{"Anything changed?"}
-  CH -- no --> OK["Synced just now"]
-  CH -- yes --> CM["Commit: sync, username, time"]
-  CM --> PU{"Push accepted?"}
-  PU -- yes --> OK
-  PU -- "rejected, someone pushed first" --> RT["Pull and push once more"]
-  RT --> PU2{"Accepted?"}
-  PU2 -- yes --> OK
-  PU2 -- no --> HELP
-  P --> NV{"Code changed in the pull?"}
-  NV -- "dependencies changed" --> RS["Banner: ask Claude to restart the Outreach Kit"]
-</pre></div>
-  <figcaption>Because each person only writes their own folder, the retry nearly always succeeds. The help path exists for the rare case, and it never throws away local work.</figcaption></figure>
-
-  <h3>5 · Build and save a kit, add a lead</h3>
+  <h3>4 · Build and save a kit, add a lead</h3>
   <figure><div class="dg"><pre class="mermaid">
 flowchart TD
   S["Kit Console steps 1 to 4, unchanged"] --> B[Build kit]
   B --> K["Kit shown, unchanged"]
   K --> SV["Save this kit"]
-  SV --> ROW["kits file in my folder: inputs, title, status Active"]
+  SV --> ROW["kits row in MySQL: inputs, title, status Active"]
   ROW --> STRIP["Saved strip: status, my counters, also working this city"]
   STRIP --> AL["Add the first lead"]
   STRIP --> LF["Find businesses"]
   STRIP --> KW["Open kit workspace"]
-  AL --> DUP{"Same business in any synced folder?"}
+  AL --> DUP{"lead_keys: this business already claimed?"}
   LF --> DUP
   DUP -- "yes" --> BLK["Blocked: Smith Roofing is already Ravi's lead"]
-  DUP -- no --> SAVE["Lead saved in my folder"]
+  DUP -- no --> SAVE["Lead row saved, owner = me"]
 </pre></div>
-  <figcaption>Territories are shared, so saving never blocks. The block happens one level down, on the business itself, using the Maps place, the phone digits, or the name plus city.</figcaption></figure>
+  <figcaption>Territories are shared, so saving a kit never blocks. The block happens one level down, on the business itself: a unique key (<code>lead_keys</code>) in the database, not just an app-side check.</figcaption></figure>
 
-  <h3>6 · A lead from researcher to BD to won</h3>
+  <h3>5 · A lead from researcher to BD to won</h3>
   <figure><div class="dg"><pre class="mermaid">
 flowchart LR
   subgraph RS["Lead Researcher"]
@@ -476,37 +425,36 @@ flowchart LR
     b5 -- yes --> b6[Call booked] --> b7[Proposal sent] --> b8{"Won or lost"}
     b5 -- "no by Day 45" --> b9[Nurture]
   end
-  r3 -- "Sync" --> m1
-  m2 -- "Sync" --> b1
-  b5 -- "yes, Sync" --> m3
+  r3 --> m1
+  m2 --> b1
+  b5 -- yes --> m3
   b7 --> m4
 </pre></div>
-  <figcaption>Every hand-off crosses one sync. Nobody writes another person's files: the assignment is a record in the manager's folder, and Accept copies the lead into the BD's.</figcaption></figure>
+  <figcaption>Every hand-off is one row changing owner in the same database — visible to the other side immediately, not at a hand-off's next sync.</figcaption></figure>
 
-  <h3>7 · Someone leaves</h3>
+  <h3>6 · Someone leaves</h3>
   <figure><div class="dg"><pre class="mermaid">
 flowchart TD
   A["Users page: Disable"] --> B["App lists their open leads"]
   B --> C["Hand over each group to a BD"]
-  C --> D["Hand-off records in your folder"]
-  D --> E["Account disabled, Sync"]
-  E --> F["On GitHub: remove their repo access"]
-  E --> G["New BD's laptop syncs: Accept"]
+  C --> D["Hand-off rows written, owner reassigned"]
+  D --> E["Account disabled"]
+  E --> F["They can no longer sign in — checked on their very next request"]
 </pre></div>
-  <figcaption>Nothing is deleted. Removing GitHub access is what stops future pulls; the disable stops sign-in on every laptop once synced.</figcaption></figure>
+  <figcaption>Nothing is deleted. Disabling the account is the whole action: there's no laptop to wipe and no GitHub access to separately revoke.</figcaption></figure>
 </section>
 
 <section id="save">
   <h2>After you save a kit</h2>
-  <p class="lead">Today a saved kit is a row of inputs with "Open" and "Delete". Here is what each screen shows now. Drawn in the app's own light theme; names and numbers are examples.</p>
+  <p class="lead">A saved kit is more than a row of inputs with "Open" and "Delete": a title, a status, progress counted from its leads, and who else is working the same city. Drawn in the app's own light theme; names and numbers are examples.</p>
 
   <h3>What gets saved</h3>
   <div class="tw"><table>
-    <thead><tr><th scope="col">Field</th><th scope="col">Today</th><th scope="col">After Phase 13</th></tr></thead>
+    <thead><tr><th scope="col">Field</th><th scope="col">Before Phase 13</th><th scope="col">Now</th></tr></thead>
     <tbody>
-      <tr><th scope="row">Where</th><td>Supabase table</td><td><code>team/data/&lt;you&gt;/kits/&lt;id&gt;.json</code>, pushed by Sync</td></tr>
+      <tr><th scope="row">Where</th><td>Supabase table</td><td>MySQL <code>kits</code> table (<code>db/migrations/</code>), written through <code>src/lib/store/mysqlStore.ts</code></td></tr>
       <tr><th scope="row">Inputs</th><td>category, device, state, city, direction</td><td>Same. Still rebuilt on view, never stored as text</td></tr>
-      <tr><th scope="row">Company details in the kit</th><td>from each rep's profile</td><td>from <code>team/workspace.json</code> (studio, demo domain, based line); rep's name from their account</td></tr>
+      <tr><th scope="row">Company details in the kit</th><td>from each rep's profile</td><td>from the workspace's settings (studio, demo domain, based line); rep's name from their account</td></tr>
       <tr><th scope="row">Title</th><td>—</td><td>"Roofing · Dallas, TX" by default, editable</td></tr>
       <tr><th scope="row">Status</th><td>—</td><td>Draft · Active · Paused · Archived</td></tr>
       <tr><th scope="row">Progress</th><td>—</td><td>counted from its leads: leads, contacted, replied, next due, last activity</td></tr>
@@ -520,9 +468,9 @@ flowchart TD
       <div class="mock">
         <div class="bar"><span>Kit Console · Field kit</span><span>Roofing · Dallas, TX · Desktop</span></div>
         <div class="body">
-          <span class="tag">Saved · syncs with your team</span>
+          <span class="tag">Saved · shared with your team</span>
           <div class="ttl">Roofing · Dallas, TX</div>
-          <div class="row"><span class="pill on">Active</span><span class="pill ring">Team A</span><span class="pill">Not synced yet</span></div>
+          <div class="row"><span class="pill on">Active</span><span class="pill ring">Team A</span></div>
           <div class="ctr"><div><b>0</b><span>Leads</span></div><div><b>0</b><span>Contacted</span></div><div><b>0</b><span>Replied</span></div></div>
           <div class="warn">Also working Roofing in Dallas, TX: Ravi (14 leads), Asha (3). Duplicate businesses are blocked.</div>
           <div class="row"><span class="btn pri">Add the first lead</span><span class="btn">Find businesses</span><span class="btn">Open kit workspace</span></div>
@@ -540,12 +488,12 @@ flowchart TD
           <div class="row"><span class="btn pri">Back to the list</span><span class="btn">Find businesses</span></div>
         </div>
       </div>
-      <p class="sample">The duplicate block: the owner's name only, nothing else about their lead. It covers leads and lead finder results in every synced folder.</p>
+      <p class="sample">The duplicate block: the owner's name only, nothing else about their lead. It's a database-level unique key (<code>lead_keys</code>), so it covers every lead and lead finder result in the workspace, not only yours.</p>
     </div>
   </div>
 
   <h3>Kits list (a BD's view)</h3>
-  <div class="mock"><div class="bar"><span>My kits</span><span>3 active · 1 draft · Synced 12 min ago</span></div><div class="body"><div class="tw"><table>
+  <div class="mock"><div class="bar"><span>My kits</span><span>3 active · 1 draft</span></div><div class="body"><div class="tw"><table>
     <thead><tr><th>Kit</th><th>Status</th><th>Leads</th><th>Contacted</th><th>Replied</th><th>Next due</th><th>Last activity</th></tr></thead>
     <tbody>
       <tr><td>Roofing · Dallas, TX</td><td><span class="pill on">Active</span></td><td>14</td><td>9</td><td>3</td><td>Today · 3</td><td>2 h ago</td></tr>
@@ -553,7 +501,7 @@ flowchart TD
       <tr><td>Med spas · Tampa, FL</td><td><span class="pill on">Active</span></td><td>3</td><td>0</td><td>0</td><td>—</td><td>4 days ago</td></tr>
       <tr><td>Roofing · Plano, TX</td><td><span class="pill">Draft</span></td><td>0</td><td>0</td><td>0</td><td>—</td><td>today</td></tr>
     </tbody></table></div></div></div>
-  <p class="sample">A manager sees the same table grouped by BD; an admin sees it grouped by team, from everyone's synced folders.</p>
+  <p class="sample">A manager sees the same table grouped by BD; an admin sees it grouped by team, read straight from the shared database.</p>
 
   <h3>Kit workspace (opening a saved kit)</h3>
   <div class="mock"><div class="bar"><span>Roofing · Dallas, TX</span><span>Asha · Team A</span></div><div class="body">
@@ -573,472 +521,55 @@ flowchart TD
 
 <section id="data">
   <h2>Where the data lives</h2>
-  <p class="lead">Every Supabase table becomes a file shape in a person's folder. The shapes keep today's column names, so moving to a server database later is a copy, not a redesign.</p>
+  <p class="lead">One MySQL database, on the Hostinger VPS. <code>src/lib/store/</code> is the only code that touches it: pages and actions call the <code>Store</code> (<code>createStore(actor)</code>), never SQL directly. <code>fileStore.ts</code> — the <code>team/</code> files this page originally specified — is kept only as the reference implementation and as the one-time source for <code>pnpm db:import-team</code>; both pass the same contract suite (<code>tests/contract/storeContract.ts</code>), so the two never drift apart in behaviour even though only one of them runs in production.</p>
   <div class="tw"><table>
-    <thead><tr><th scope="col">Today (Supabase / MySQL)</th><th scope="col">Now (files)</th><th scope="col">Notes</th></tr></thead>
+    <thead><tr><th scope="col">Originally specified (files)</th><th scope="col">Now (MySQL)</th><th scope="col">Notes</th></tr></thead>
     <tbody>
-      <tr><th scope="row">auth.users, profiles</th><td><code>team/users/&lt;u&gt;.json</code> + <code>team/data/&lt;u&gt;/profile.json</code></td><td>Admin-written account; own password hash and device in the person's folder</td></tr>
-      <tr><th scope="row">profiles.studio, demo_domain</th><td><code>team/workspace.json</code></td><td>One set of company details for every kit</td></tr>
-      <tr><th scope="row">kits</th><td><code>kits/&lt;id&gt;.json</code></td><td>Plus title and status</td></tr>
-      <tr><th scope="row">leads</th><td><code>leads/&lt;id&gt;.json</code></td><td>Same 28 columns and 10 checks; score and tier computed in code</td></tr>
-      <tr><th scope="row">lead_events</th><td><code>events.jsonl</code></td><td>One line per event, append-only; adds comments</td></tr>
-      <tr><th scope="row">(new)</th><td><code>assignments.jsonl</code></td><td>Researcher-to-BD assignments and handovers</td></tr>
-      <tr><th scope="row">(new)</th><td><code>audit.jsonl</code>, <code>playbook.json</code></td><td>Account and export actions; read receipts</td></tr>
-      <tr><th scope="row">MySQL scraped_businesses, scrape_runs</th><td><code>finder/businesses.jsonl</code>, <code>finder/runs.jsonl</code></td><td>No MySQL install; daily limit and duplicate key unchanged</td></tr>
+      <tr><th scope="row"><code>team/users/&lt;u&gt;.json</code></th><td><code>users</code> table</td><td>Role, team, status, password hash, sign-in limiter state</td></tr>
+      <tr><th scope="row"><code>team/workspace.json</code></th><td><code>workspace</code> table</td><td>Studio, demo domain, based line, feature switches (incl. <code>features.softwareTrack</code>)</td></tr>
+      <tr><th scope="row"><code>kits/&lt;id&gt;.json</code></th><td><code>kits</code> table</td><td>Inputs, title, status; territory visibility computed from it</td></tr>
+      <tr><th scope="row"><code>leads/&lt;id&gt;.json</code></th><td><code>leads</code> table + <code>lead_keys</code></td><td>Same 28 columns and 10 checks; duplicates stopped by a unique key, not only an app-side check</td></tr>
+      <tr><th scope="row"><code>events.jsonl</code></th><td><code>lead_events</code> table</td><td>One row per event; comments, touches, stage moves</td></tr>
+      <tr><th scope="row"><code>assignments.jsonl</code></th><td>assignment rows on <code>leads</code>/<code>lead_events</code></td><td>Researcher-to-BD assignments and handovers</td></tr>
+      <tr><th scope="row"><code>audit.jsonl</code>, <code>playbook.json</code></th><td><code>audit</code>, <code>playbook_reads</code> tables</td><td>Account and export actions; read receipts</td></tr>
+      <tr><th scope="row">MySQL <code>scraped_businesses</code>, <code>scrape_runs</code></th><td>Same, now owner-scoped</td><td>Daily limit and duplicate key unchanged; results now belong to whoever ran the finder</td></tr>
+      <tr><th scope="row">(new)</th><td><code>it_*</code> tables (own database namespace)</td><td>IT Prospects — a separate area, MySQL only; never joins leads, finder or Board tables</td></tr>
     </tbody>
   </table></div>
-  <p class="sample">One file per lead keeps git changes small and readable. A few thousand leads per person stays fast.</p>
+  <p class="sample">Timestamps are UTC <code>DATETIME(3)</code>, dates <code>DATE</code>; the app speaks ISO strings. A migration that has run anywhere is never edited — a change is a new numbered file in <code>db/migrations/</code>, and <code>pnpm db:migrate</code> refuses an edited one.</p>
 </section>
 
 <section id="decide">
   <h2>Decisions</h2>
-  <p class="lead">All settled by you. Prompt E uses exactly these.</p>
+  <p class="lead">The roles, territory and visibility decisions from 11 Oct all stand. One decision was reversed two days later, and one was added since.</p>
   <div class="dec"><span class="id">✓</span><div><h4>You are the owner and only Super Admin; one workspace</h4><p>You create every account and share the login. Admins can help manage accounts below admin.</p></div></div>
   <div class="dec"><span class="id">✓</span><div><h4>Username and password, 14-day sign-in</h4><p>Temporary password shown once and changed at first sign-in. Reset, suspend, disable and enable by you or an admin.</p></div></div>
-  <div class="dec"><span class="id">✓</span><div><h4>Runs on each laptop; no database</h4><p>Plain files in the project, one folder per person, synced through your private GitHub repo. Teammates on Mac and Windows; their Claude does the setup.</p></div></div>
-  <div class="dec"><span class="id">✓</span><div><h4>Every laptop has every file; the app hides others' leads</h4><p>You accepted that logins identify people rather than lock data.</p></div></div>
+  <div class="dec"><span class="id">↻</span><div><h4>Reversed 13 Oct: one server, one MySQL database — not files and GitHub sync</h4><p>The original decision was "runs on each laptop, no database, synced through a private GitHub repo." A Hostinger VPS made that unnecessary: one server, one database, teammates just sign in. <code>fileStore.ts</code> stays as the reference implementation and the one-time import source.</p></div></div>
+  <div class="dec"><span class="id">✓</span><div><h4>The app hides others' leads</h4><p>The server returns each person only what their role allows — a stronger guarantee than the old "every laptop has every file, the app hides the rest."</p></div></div>
   <div class="dec"><span class="id">D3</span><div><h4>Territories are shared</h4><p>Anyone can save a kit for any category and city; the app shows who else works it.</p></div></div>
   <div class="dec"><span class="id">D4</span><div><h4>A BD sees only their own leads</h4><p>Managers see their team's; admins see everyone's except yours; you see everyone's.</p></div></div>
-  <div class="dec"><span class="id">✓</span><div><h4>Duplicate businesses are blocked</h4><p>"Smith Roofing is already Ravi's lead." Checked against every synced folder.</p></div></div>
+  <div class="dec"><span class="id">✓</span><div><h4>Duplicate businesses are blocked</h4><p>"Smith Roofing is already Ravi's lead." Enforced by a unique key (<code>lead_keys</code>) in the database, not only an app-side check.</p></div></div>
   <div class="dec"><span class="id">D5</span><div><h4>Lead Researcher kept; a manager or admin assigns their leads</h4><p>Researcher leads wait in an unassigned queue until assigned to a BD.</p></div></div>
   <div class="dec"><span class="id">D6</span><div><h4>Export</h4><p>BD own, manager team, admin everyone's except yours, you all; every export logged.</p></div></div>
+  <div class="dec"><span class="id">D7</span><div><h4>Added 15 Oct: IT Prospects is a separate area</h4><p>Its own MySQL tables, its own <code>it.*</code> permissions, behind the <code>features.softwareTrack</code> switch. It never touches leads, the lead finder's tables or the Board — a parallel pipeline for IT services prospects, not a merge into the existing one.</p></div></div>
 </section>
 
-<section id="prompt">
-  <h2>Prompt E</h2>
-  <p class="lead">Written in the same shape as Prompts A–D: why, how it works, what it can't do, roles, decisions, accounts, guardrails, stop points, steps, done when. It names this page as its source of truth.</p>
-  <ol class="steps">
-    <li>Export your current leads with Export CSV, and commit the lead finder work (it is uncommitted today).</li>
-    <li>Save this page as <code>docs/source/roles-system.html</code>, then run Prompt E in Claude Code at the repo root. It stops three times for you.</li>
-    <li>Run <code>pnpm team:init</code> once, sign in, import your CSV, and create the team's accounts.</li>
-    <li>Sync, push the code, add each teammate's GitHub account to the private repo, and send them their login.</li>
-    <li>Each teammate clones the repo and tells their Claude: "Set up and run the Outreach Kit."</li>
-  </ol>
-  <div class="promptbox">
-    <div class="pb"><span>E-phase-13-roles-and-workspace.md</span><button class="copy" id="copyBtn" type="button">Copy prompt</button></div>
-    <pre id="promptText"># Phase 13 — Prompt E: Team accounts, roles and GitHub sync (no database)
 
-**Runs in:** Claude Code, at this repo's root, on the owner's Mac.
-**Prerequisite:** the local lead finder work is committed (today
-`src/lib/scrape/`, `src/lib/mysql/`, `src/app/api/leadfinder/`, `mysql/` and
-their tests are untracked). `pnpm typecheck`, `pnpm lint`, `pnpm test`,
-`pnpm parity`, `pnpm golden:sweep` and `pnpm brand` pass before you start.
-The owner has exported their current leads with **Export CSV** (they are
-re-imported in Step 12).
-**Source of truth:** `docs/source/roles-system.html`, a saved copy of the
-*Outreach Kit Role System* page (version 3: files and GitHub sync). The
-roles, the permission matrix, the folder layout, the account states, the
-flows and the after-save screens come from that file. Read it in full before
-Step 1. Where it and this prompt disagree, stop and ask. Don't invent roles,
-permissions, files or screens that aren't in it.
-**Run order:** run this phase **before** Prompt D. Step 14 amends D.
-
-## Why this phase exists
-
-Today the Outreach Kit is one person's tool: magic-link sign-in to any
-email, every row private to its owner, data in Supabase, the lead finder in
-MySQL. Famysys now runs it as a team, with constraints the owner has set:
-
-- **There is no server.** Every teammate runs the app on their own laptop,
-  Mac or Windows.
-- **Teammates are not technical.** They clone the repo and ask their own
-  Claude to run it. They must never install, see or manage a database.
-- **The owner creates every account** (username and temporary password),
-  pushes, and shares the login in chat. A teammate pulls and signs in.
-- **Team data moves through GitHub.** Each person's work is pushed to the
-  repo so the owner and managers can see it.
-
-So this phase removes Supabase and MySQL from the app and stores everything
-as files in the repo, one folder per person, synced by the app with git.
-
-## How it works (read before anything else)
-
-```
-team/
-  schema.json                 { "version": 1 }   file-format version
-  workspace.json              studio, demo domain, based line   (admins write)
-  teams.json                  teams and their managers          (admins write)
-  users/&lt;username&gt;.json       role, team, status, temp password hash, rev   (admins write)
-  data/&lt;username&gt;/            written ONLY by that person's app
-    profile.json              default device; own password hash + basedOnRev
-    kits/&lt;id&gt;.json            saved kit: inputs + title, status
-    leads/&lt;id&gt;.json           one lead: the 28 columns, checks, stage, sequence
-    events.jsonl              stage changes, touches, comments (append-only)
-    assignments.jsonl         hand-offs this person made (managers, admins)
-    audit.jsonl               account and export actions this person took
-    playbook.json             read receipts
-    finder/businesses.jsonl   lead finder results (replaces MySQL)
-    finder/runs.jsonl
-.local/                       gitignored: session secret, last-sync state
-```
-
-- **Each person writes only their own folder.** Admins and super admins
-  also write `team/users/`, `team/teams.json` and `team/workspace.json`.
-  Because nobody writes another person's files, syncs don't conflict.
-- **State that involves two people is derived, never cross-written.** A
-  manager assigning a researcher's lead to a BD appends to the manager's
-  `assignments.jsonl`; the BD's app shows it as "Assigned to you"; Accept
-  copies the lead into the BD's folder with a `sourceRef`. The researcher's
-  app shows "With Ravi" by reading the assignment. Same for handing over a
-  leaver's leads.
-- **Sync** (button, on app start, and every 30 minutes while signed in):
-  `git pull --rebase --autostash`, then stage **only** the paths this person
-  may write, commit `sync: &lt;username&gt; &lt;ISO time&gt;`, push. On a rejected push,
-  pull and retry once. On any conflict or missing GitHub sign-in: abort
-  cleanly, keep local files, and show the exact sentence the person should
-  say to their Claude ("Fix the Outreach Kit sync" / "Set up GitHub sign-in
-  for the Outreach Kit"). Sync never stages code, so a teammate can't push
-  code by accident.
-- **A `Store` interface** (`src/lib/store/`) is the only code that touches
-  `team/`. Pages and actions call the Store, never `fs`. A server database
-  later replaces the file Store without touching the screens.
-- **The owner's code updates arrive by the same pull.** `pnpm dev` hot
-  reloads; if `package.json` or the lockfile changed, the app shows "Restart
-  needed: ask Claude to restart the Outreach Kit", and `predev` runs
-  `pnpm install` when the lockfile changed.
-
-## What this setup can't do (state it in the README, don't hide it)
-
-- **Logins identify people; they don't protect data.** Every laptop that
-  pulls has every folder. The app shows a BD only their own leads, but the
-  files are readable on disk. The owner accepted this.
-- **Account changes reach a laptop at its next sync**, not instantly.
-- **The real way to remove someone** is removing their GitHub access to the
-  repo, then disabling the account. They keep whatever was already on their
-  laptop.
-- **Duplicate checks are as fresh as the last sync.**
-- **Lead contact details stay in git history.** The repo must be private.
-
-## Roles (exactly these six)
-
-| Role | Who | Home |
-|---|---|---|
-| `super_admin` | The owner. Creates every kind of account | `/platform` |
-| `admin` | Runs day to day: accounts below admin, teams, company details, all data | `/admin` |
-| `manager` | Leads a team: sees team pipelines, assigns researcher leads, hands over leads, weekly review | `/team` |
-| `bd` | BD executive: builds and saves kits, works **only their own leads** | `/today` |
-| `researcher` | Lead finder, adds and scores leads into the unassigned queue. Never contacts anyone | `/sourcing` |
-| `viewer` | Reports and the playbook. No contact fields, no export | `/reports` |
-
-Signed out, the only page is `/login`.
-
-## Decisions (settled by the owner)
-
-- **One workspace; the owner is the only super admin.**
-- **Territories are shared.** Any BD may build and save a kit for any
-  category and city. The save shows who else works it (names and lead
-  counts only).
-- **A BD sees only their own leads.**
-- **Duplicates are blocked.** Adding a business that is already someone's
-  lead (same Maps place key, same phone digits, or same normalised name +
-  city) is refused with "Smith Roofing is already Ravi's lead." Nothing else
-  about Ravi's lead is shown. Checked across every folder on the laptop.
-- **Researcher leads go to an unassigned queue**; a manager (their team) or
-  an admin assigns each one to a BD.
-- **Export:** BD own, manager team, admin and super admin all; researcher and
-  viewer none. Every export is written to the exporter's `audit.jsonl`.
-- **Teammates use Mac and Windows.** Every script is Node (`tsx`), no shell
-  scripts, no Mac-only tools, `path.join` everywhere.
-
-## Accounts and sessions
-
-- **Username and password.** Usernames: 3–30 characters, lower-case letters,
-  digits, dot and underscore, unique (they are also folder names).
-- **Creating an account** (super admin: any role; admin: manager, bd,
-  researcher, viewer) takes full name, username, role and team. The app
-  generates a temporary password, stores only its bcrypt hash
-  (`bcryptjs`, cost 12: pure JavaScript, nothing to compile on Windows) in `team/users/&lt;username&gt;.json`, and shows the
-  password **once** with Copy: "Username … · Temporary password … · Ask
-  your Claude to set up and run the Outreach Kit, then sign in at
-  http://localhost:3000".
-- **First sign-in forces a new password** (10+ characters), stored as a hash
-  in the person's own `profile.json` with `basedOnRev` = the user file's
-  `rev`. The password that works is the own one when `basedOnRev` equals
-  the current `rev`, otherwise the temporary one. That lets an admin reset a
-  password without writing into the person's folder.
-- **Reset password, suspend, disable, enable, change role, move team** bump
-  `rev` in the user file. Same rule as creation: super admin over everyone,
-  admin over the four roles below admin, nobody over themselves (except
-  their own password). The platform always keeps the owner as super admin;
-  the workspace always keeps one active admin or super admin.
-- **States:** `active`; `suspended` (reason, optional end date, keeps their
-  leads; lifts itself when the date passes); `disabled` (left: refused until
-  their open leads have handover records). No account is ever deleted.
-- **Sessions last a fixed 14 days from sign-in.** An httpOnly, `sameSite=lax`
-  cookie signed with HMAC-SHA256 holds `{ username, issuedAt, rev }`. The
-  secret is generated on first run into `.local/session-secret`. Every
-  request re-reads the user file: session ends if older than
-  `SESSION_DAYS = 14`, if `rev` changed, or if the account isn't active.
-  Signing out ends it at once.
-- **One error for every failed sign-in:** "That username and password don't
-  match, or the account is not active." After 5 failures in 15 minutes for a
-  username on this laptop, wait 15 minutes.
-
-## Guardrails (read twice)
-
-- **The port is untouched.** Don't edit `generateKit`, `openers`,
-  `messages`, `buildPromptText`, `src/data`, `src/content`, the local
-  `SEQUENCE`, `applyCategoryKit` or `src/kits/*.json`. `pnpm parity`,
-  `pnpm golden:sweep`, the goldens in `golden/` and `golden/v2/`, and
-  `CHANGES.md` pass with **no changes**.
-- **The Kit Console keeps its four steps and its output.** Only its props
-  change. `SaveKit` is replaced through the existing `actions` slot.
-  `KitView` is unchanged.
-- **A saved kit still stores inputs only** and is rebuilt on view.
-- **Score and tier stay computed** with `src/lib/leads/score.ts` (the SQL
-  generated columns go away). Stage-change events are written by the Store,
-  replacing the SQL trigger. `src/lib/leads/sequence.ts`, `ratios.ts`,
-  `csv.ts` and `import.ts` keep their behaviour; the CSV keeps the exact
-  28-column header.
-- **One permission map, no role names in components.** Code asks
-  `can(session, "users.reset_password")`, never `role === "admin"`. Every
-  server action and page calls `requirePerm()`. The Store refuses any write
-  outside the caller's own folder (and, for admins, the three team files).
-- **Writes are safe on Windows:** write to a temp file in the same folder,
-  then rename; retry the rename up to 5 times on `EPERM`/`EBUSY`. JSON is
-  written with sorted keys and a trailing newline so git diffs stay small.
-  Add `.gitattributes` with `team/** text eol=lf`.
-- **Passwords:** only bcrypt hashes are written; never logged, never in
-  `audit.jsonl`, never in a URL, never in a commit message.
-- **No secret is committed.** `.local/` is gitignored. `pnpm secrets:check`
-  (run by `predev` and `pnpm test`) fails if a session secret, a
-  plain-text password field, or a `.env` file is tracked.
-- **The app never sends outreach and sends no email.** Notifications are
-  in-app only.
-- **Brand rules bind every new screen.** Four colours, Jost 400/500 only, no
-  `&lt;b&gt;`, Electric Blue never for small text. `pnpm brand` passes with no new
-  exemptions.
-- **BD and researcher screens work at 390px.**
-
-## Stop points
-
-1. After **Step 1** (permission map and `docs/roles.md`).
-2. After **Step 3** (the Store, the folder format and the sync engine, with
-   their tests): show the file formats and a sample `team/` tree.
-3. After **Step 6** (sign-in, app shell, role homes): screenshots for each
-   role at 390 and 1280, light and dark, before the admin screens.
-
----
-
-## Step 1 — The permission map as code
-
-- `src/lib/auth/roles.ts`: the six roles, labels, and
-  `canManage(actorRole, targetRole)`.
-- `src/lib/auth/permissions.ts`: every permission key in the source page's
-  matrix with each role's scope (`all`, `below`, `team`, `own`, `queue`,
-  `none`), plus `can()` and `scopeOf()`.
-- `pnpm roles:doc` writes `docs/roles.md`; a test fails if it is stale.
-- Unit tests: every matrix row; `canManage` for all 36 pairs.
-
-**Stop.**
-
-## Step 2 — Remove Supabase and MySQL from the runtime
-
-- Remove `@supabase/*` and `mysql2` from dependencies, `src/lib/supabase/`,
-  `src/lib/mysql/`, `src/middleware.ts`'s Supabase session code,
-  `/auth/callback`, the magic-link form, `scripts/local-stack/`,
-  `pnpm stack`, `pnpm gen:types`, `pnpm mysql:init`, `tests/rls.test.ts`
-  and `tests/mysql.test.ts`.
-- Move `supabase/` and `mysql/schema.sql` to `docs/archive/` with a README
-  line: "Reference for a future server database. Not used by the app."
-- Nothing else changes in this step; the app builds with the Store stubbed.
-
-## Step 3 — The Store, the folder format and the sync engine
-
-- `src/lib/store/`: `Store` interface and the file implementation over the
-  layout above; a JSON schema for every file, validated with `ajv`
-  (already a devDependency: move it to dependencies, add no other
-  validator); `team/schema.json` version with
-  forward migrations run on load. Reads of other people's folders are
-  filtered by `scopeOf()` before they leave the Store.
-- Duplicate index: built from every folder's leads and finder results,
-  keyed by Maps place key, phone digits, and normalised name + city.
-- `src/lib/sync/`: the sync engine (pull, stage allowed paths only,
-  commit, push, retry once, abort cleanly) using `git` through
-  `child_process.execFile` (no shell). Status: last synced, pending
-  changes, error with the sentence to say to Claude.
-- Tests use a temporary bare repo and two or three clones as "laptops":
-  owner creates a user and syncs; the BD laptop pulls and signs in; the BD
-  adds a lead and syncs; the owner pulls and sees it in Team; a second BD
-  is blocked from adding the same business; a conflicting edit is aborted
-  without data loss; sync never stages a file outside the allowed paths.
-
-**Stop.** Show the file formats and a sample tree.
-
-## Step 4 — Auth and sessions
-
-`src/lib/auth/`: password check (own vs temporary by `rev`), signed cookie,
-`getSession()` returning `{ user, profile, team, perms }`, `requirePerm()`,
-the sign-in rate limit, and the middleware rules: no session → `/login`;
-`mustChangePassword` → `/account/password`; suspended or disabled →
-`/no-access` with the reason and end date; otherwise the route map's
-permission. Tests: a session open at 13 days 23 hours and ended at 14 days;
-ended by a `rev` bump; ended by suspension; a suspension past its end date
-signs in again.
-
-## Step 5 — Bootstrap and teammate setup
-
-- `pnpm team:init` (owner, once): asks for workspace name, studio, demo
-  domain, the owner's username, full name and password; writes `team/`;
-  refuses if `team/users/` already has a super admin.
-- `CLAUDE.md` at the repo root, section **"Run the Outreach Kit (for a
-  teammate's Claude)"**, written for a Claude that knows nothing about this
-  project, with Mac and Windows steps side by side:
-  1. Check `git`, Node 22 or newer, and pnpm. Install what's missing
-     (Mac: Xcode command line tools and Homebrew `node@22`; Windows:
-     `winget install Git.Git` and `winget install OpenJS.NodeJS.LTS`);
-     then `npm install -g pnpm`.
-  2. GitHub sign-in for pushing (Mac: `gh auth login`; Windows: Git
-     Credential Manager's browser sign-in on the first push).
-  3. `pnpm install`; `pnpm exec playwright install chromium` only if the
-     person's role uses the lead finder.
-  4. `pnpm dev`, open http://localhost:3000, and tell the person to sign in
-     with the username and temporary password the owner sent.
-  5. "Fix the Outreach Kit sync": the exact steps, keeping the person's own
-     folder and taking `team/users/` from the remote.
-  6. Never edit code or commit anything outside `team/data/&lt;username&gt;/`
-     on a teammate's machine.
-- `predev` (Node script): create `.local/` and the session secret if
-  missing, `pnpm install` if the lockfile changed since last run, run
-  `pnpm secrets:check`, then a quiet `git pull --rebase --autostash` when
-  the repo has a remote.
-
-## Step 6 — Sign-in, app shell and role homes
-
-- `/login` (username, password) and `/account/password`.
-- A role-aware shell: sidebar at 1024px and up, top bar with a menu below,
-  and a **Sync** control showing "Synced 12 min ago", pending changes, or
-  the error sentence. Navigation per role exactly as on the source page.
-- Role homes: `/today` (BD: due next actions, assigned-to-you leads, "Build
-  a kit"), `/team`, `/admin`, `/platform`, `/sourcing`, `/reports`. `/`
-  redirects by role. The Kit Console moves to `/console`, unchanged inside.
-
-**Stop.** Screenshots per role.
-
-## Step 7 — What saving a kit means now
-
-- Saving writes `kits/&lt;id&gt;.json` with title ("Roofing · Dallas, TX"),
-  status `draft|active|paused|archived` (default `active`) and the inputs.
-- After saving, the console shows the **saved strip**: title, status chip,
-  counters (leads, contacted, replied), "Also working Roofing in Dallas, TX:
-  Ravi (14 leads), Asha (3)" when others are, and three next actions: Add
-  the first lead, Find businesses, Open the kit workspace.
-- `/kits` lists kits in scope with Status, Leads, Contacted, Replied, Next
-  due, Last activity. Managers group by BD; admins by team.
-- `/kits/[id]`: tabs Kit (today's rebuilt view), Leads, Activity, Settings.
-
-## Step 8 — Leads with roles
-
-- Leads move to the Store; every existing leads screen keeps its behaviour.
-- Duplicate block on create, import and Move to Leads.
-- Researchers' leads have `assignedTo: null` and can't pass Qualified.
-  `/team` and `/admin` show the **unassigned queue**; Assign writes an
-  assignment record; the BD's `/today` shows "Assigned to you" with Accept.
-- **Hand over** (manager for their team, admin for all): pick leads, pick a
-  BD; same assignment record and Accept.
-- Managers and admins see team or all pipelines read-only, can comment
-  (comment events in their own folder, shown on the lead), and get in-app
-  notices when a team lead reaches Replied, Call booked, Proposal sent or
-  Won, computed from the synced events.
-- Ratios and CSV export follow scope; exports audited.
-
-## Step 9 — The lead finder on files
-
-Replace MySQL with `finder/businesses.jsonl` and `finder/runs.jsonl` in the
-runner's folder. The daily limit, the duplicate key, the politeness rules and
-`selectors.ts` stay as they are. The duplicate check also covers other
-people's finder results and leads. The finder runs on any laptop with
-Chromium installed; it no longer needs `MYSQL_URL`.
-
-## Step 10 — Account screens
-
-`/admin/users` and `/platform/users`, one component scoped by
-`canManage`:
-
-- Table: name, username, role, team, status chip, last sign-in on this
-  laptop, created by. Filters by role, team, status.
-- **Create user** → the once-only panel with Copy and "I've shared it", and
-  a reminder: "Sync, then add their GitHub account to the repo."
-- Row actions behind an in-page confirm step: Reset password (new temporary
-  password shown once), Suspend (reason, optional end date), Disable (opens
-  the handover), Enable, Change role, Move team.
-- `/admin/teams`, `/admin/settings` (studio, demo domain, based line used in
-  every kit) and `/admin/audit` (all `audit.jsonl` files, newest first).
-
-## Step 11 — Platform and playbook
-
-- `/platform`: users, workspace details, feature flags (lead finder,
-  software track) in `team/workspace.json`, the audit log, and content
-  review (approval records for category kits and segments by file id and
-  version, in the owner's folder; the JSON kit files are never edited at
-  runtime).
-- Playbook: the 11 sections and the board unchanged; a "Start here" path per
-  role (section lists on the source page); read receipts in `playbook.json`;
-  managers and admins mark sections required and see who has read them.
-
-## Step 12 — The owner's existing data
-
-After `pnpm team:init`, the owner signs in and uses the existing **Import
-CSV** to bring back the leads exported before this phase. Saved kits are
-re-saved from the console. Don't write a migration script.
-
-## Step 13 — Checks and docs
-
-- All of: `pnpm typecheck`, `pnpm lint`, `pnpm test`, `pnpm parity`,
-  `pnpm golden:sweep`, `pnpm brand`, `pnpm a11y` (new screens included),
-  `pnpm e2e`, `pnpm secrets:check`.
-- Rewrite `pnpm e2e` around two app instances on two clones of a temporary
-  bare repo (owner on port 3100, teammate on 3101): the owner creates a BD
-  and syncs; the teammate's app pulls, the BD signs in with the temporary
-  password, is forced to change it, builds Roofing in Dallas, TX, saves it,
-  adds a lead and syncs; the owner pulls and sees the lead in Team; the
-  owner resets the BD's password and syncs; the teammate's session ends
-  after its next pull; a clock override shows a session open on day 13 and
-  ended on day 14.
-- Screenshots per role into `docs/screenshots/phase-13/`.
-- README rewritten: what changed, the "can't do" list above, owner setup
-  (`pnpm team:init`, creating users, adding GitHub collaborators), teammate
-  setup (point to `CLAUDE.md`). `docs/roles.md` is generated.
-
-## Step 14 — Amend Prompt D
-
-In `docs/prompts/field-kit-v2/D-phase-12-software-track.md`: replace every
-Supabase table, migration and RLS instruction with "stored through the
-`Store` in the person's folder, scoped by `scopeOf()`". Outreach Health
-becomes workspace-level in `team/workspace.json` with per-person items in
-`profile.json`. The weekly review follows own/team/all scope. Change
-nothing else.
-
-## Done when
-
-- The owner runs `pnpm team:init`, creates accounts, syncs, and adds the
-  teammates on GitHub.
-- A non-technical teammate on Mac or Windows clones the repo, says "set up
-  and run the Outreach Kit" to their Claude, and signs in with the username
-  and temporary password the owner sent, with no database installed.
-- Each role sees exactly what the matrix allows; a BD sees only their own
-  leads; duplicates are blocked across synced folders; researcher leads
-  reach BDs through assignment.
-- A session lasts 14 days from sign-in, and a reset, suspension, disable or
-  role change ends it after the laptop's next sync.
-- The port checks (`parity`, `golden:sweep`, goldens, `CHANGES.md`) show no
-  changes.
-</pre>
+<section id="status-2">
+  <h2>What shipped, in order</h2>
+  <p class="lead">This page's original "Prompt E" was a one-time Claude Code migration prompt: export leads, run the prompt, <code>pnpm team:init</code>, sync, send logins. It ran, and the files-and-Sync system it built is kept only as <code>fileStore.ts</code>, the reference implementation. The timeline below is what actually happened after.</p>
+  <div class="grid2">
+    <div class="find"><h4>Phase 13 — team files, no database</h4><p>Store, Sync, roles and the six-role permission model, on <code>team/</code> files synced through a private GitHub repo, exactly as this page originally specified.</p></div>
+    <div class="find"><h4>13 Oct 2026 — Hostinger MySQL migration</h4><p>Commit <code>404840b</code>, "Move Outreach Kit from git-synced team files to MySQL for Hostinger." One server, one database; <code>pnpm db:migrate</code>, <code>pnpm db:init-owner</code>, <code>pnpm db:import-team</code> replace the old setup flow.</p></div>
+    <div class="find"><h4>15 Oct 2026 — IT Prospects</h4><p>A separate <code>/it</code> area behind <code>features.softwareTrack</code>, with its own MySQL tables and permissions; never touches leads or the Board.</p></div>
+    <div class="find"><h4>15 Oct 2026 — nav reordered</h4><p>IT Prospects moved to sit right after Kits in every role's navigation, instead of just before Playbook.</p></div>
+    <div class="find"><h4>15 Oct 2026 — this page updated</h4><p>Rewritten to describe the MySQL/Hostinger architecture in place of the original files-and-Sync design, kept as <code>docs/source/roles-system.html</code> for the next person who needs the roles and permissions story in one place.</p></div>
   </div>
+  <p class="sample">Current setup, for reference: <code>pnpm install</code>, copy <code>.env.example</code> to <code>.env.local</code> and fill in <code>DB_HOST</code>/<code>DB_PORT</code>/<code>DB_NAME</code>/<code>DB_USER</code>/<code>DB_PASSWORD</code>, then <code>pnpm db:migrate</code> and <code>pnpm db:init-owner</code> once. In production, <code>pnpm build</code> then <code>pnpm start</code> under pm2 or systemd behind Nginx or Caddy with HTTPS, with <code>SESSION_SECRET</code> (32+ characters) set — the app refuses to run without it. Full steps: <code>docs/hostinger-install.md</code>.</p>
 </section>
 
 </main>
 </div>
-<script>
-document.getElementById('copyBtn').addEventListener('click', function(){
-  var btn=this, txt=document.getElementById('promptText').textContent;
-  function done(m){btn.textContent=m;setTimeout(function(){btn.textContent='Copy prompt'},1800)}
-  try{
-    navigator.clipboard.writeText(txt).then(function(){done('Copied')},function(){sel()});
-  }catch(e){sel()}
-  function sel(){var r=document.createRange();r.selectNodeContents(document.getElementById('promptText'));var s=window.getSelection();s.removeAllRanges();s.addRange(r);done('Selected: press Ctrl/Cmd+C')}
-});
-</script>
 <!-- Opened outside claude.ai, the flow charts need Mermaid. The published page renders them natively. -->
 <script src="https://cdn.jsdelivr.net/npm/mermaid@11.4.1/dist/mermaid.min.js"></script>
 <script>if (window.mermaid) mermaid.initialize({ startOnLoad: true, theme: "neutral" });</script>

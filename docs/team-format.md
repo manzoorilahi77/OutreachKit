@@ -82,11 +82,15 @@ All JSON is written with sorted keys, two-space indent, LF line endings and a tr
 
 **`playbook.json`**: `{ "reads": { "<section id>": "<ISO time>" }, "required": ["<section id>"] }`. A manager's `required` list applies to their team, an admin's to everyone.
 
-**`finder/businesses.jsonl`**: `{ "kind": "business", … }` lines (one saved Maps listing each) and `{ "kind": "moved", "id", "leadId", "at" }` lines. **`finder/runs.jsonl`**: `start` and `finish` lines.
+**`finder/businesses.jsonl`**: `{ "kind": "business", … }` lines (one saved Maps listing each; `hasWebsite` (boolean) and `websiteUrl` (string) are optional, and a line without them is read as no website) and `{ "kind": "moved", "id", "leadId", "at" }` lines. **`finder/runs.jsonl`**: `start` and `finish` lines.
 
 ## Duplicates
 
 A business is "already someone's lead" when another lead shares its Maps place key (`m:`), its phone digits (`p:`), or its normalised name + city (`n:`). The index is built from every folder on the laptop, so it is as fresh as the last sync.
+
+## Not in this format: IT Prospects
+
+IT Prospects (`it_*` tables, added in `0004_it_prospects.sql`) was built after the files were retired and lives only in MySQL. The file Store's `it()` refuses with a clear message, and `pnpm db:import-team` has nothing to copy for it.
 
 ## Not in git
 
